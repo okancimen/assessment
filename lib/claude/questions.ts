@@ -91,10 +91,14 @@ Respond with ONLY valid JSON, no markdown fences, no extra text:
   if (content.type !== 'text') throw new Error('Unexpected response type from Claude')
 
   let jsonText = content.text.trim()
+  // Strip markdown fences if present
   if (jsonText.startsWith('```')) {
     jsonText = jsonText.replace(/^```(?:json)?\s*/, '').replace(/\s*```$/, '')
   }
-  const parsed = JSON.parse(jsonText.trim())
+  // Extract only the first {...} block — guards against trailing text after the JSON
+  const match = jsonText.match(/\{[\s\S]*\}/)
+  if (!match) throw new Error('No JSON object found in Claude response')
+  const parsed = JSON.parse(match[0])
 
   // Validate no duplicate option texts
   const optionTexts = (parsed.options as QuestionOption[]).map((o) => o.text.toLowerCase().trim())
