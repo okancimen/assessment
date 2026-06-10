@@ -89,10 +89,26 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center space-y-4">
-          <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mx-auto" />
-          <p className="text-gray-500 text-sm">Loading next question...</p>
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+        <div className="text-center space-y-5 max-w-sm">
+          {/* Animated rings */}
+          <div className="relative w-16 h-16 mx-auto">
+            <div className="absolute inset-0 rounded-full border-4 border-indigo-100" />
+            <div className="absolute inset-0 rounded-full border-4 border-indigo-600 border-t-transparent animate-spin" />
+            <div className="absolute inset-2 rounded-full border-2 border-indigo-300 border-b-transparent animate-spin [animation-direction:reverse] [animation-duration:0.8s]" />
+          </div>
+          <div className="space-y-1.5">
+            <p className="text-gray-800 font-semibold text-base">Crafting your next question</p>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              AI is analysing your performance and generating<br />
+              a personalised question calibrated to your level.
+            </p>
+          </div>
+          <div className="flex items-center justify-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:0ms]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:150ms]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:300ms]" />
+          </div>
         </div>
       </div>
     )
