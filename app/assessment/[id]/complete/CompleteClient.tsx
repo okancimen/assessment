@@ -40,12 +40,22 @@ export default function CompleteClient({ assessmentId, childName }: CompleteClie
       <div className="w-full max-w-md bg-white rounded-2xl border border-gray-100 shadow-sm p-8 text-center space-y-6">
         {submitting && !error ? (
           <>
-            <div className="w-16 h-16 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mx-auto" />
-            <div>
-              <h2 className="text-xl font-bold text-gray-900 mb-2">Computing results...</h2>
-              <p className="text-gray-500 text-sm">
-                Calculating {childName}&apos;s standardized scores and topic breakdown.
+            <div className="relative w-16 h-16 mx-auto">
+              <div className="absolute inset-0 rounded-full border-4 border-indigo-100" />
+              <div className="absolute inset-0 rounded-full border-4 border-indigo-600 border-t-transparent animate-spin" />
+              <div className="absolute inset-2 rounded-full border-2 border-indigo-300 border-b-transparent animate-spin [animation-direction:reverse] [animation-duration:0.8s]" />
+            </div>
+            <div className="space-y-1.5">
+              <h2 className="text-gray-800 font-semibold text-base">Computing your results</h2>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Applying Item Response Theory to {childName}&apos;s answers<br />
+                and calculating standardised scores across all subjects.
               </p>
+            </div>
+            <div className="flex items-center justify-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:0ms]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:150ms]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:300ms]" />
             </div>
           </>
         ) : (
