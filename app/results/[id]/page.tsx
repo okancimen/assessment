@@ -205,11 +205,11 @@ export default async function ResultsPage({
           <h3 className="font-semibold text-gray-900 mb-4">Score guide</h3>
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
             {[
-              { range: '120–130', label: 'Exceptional', color: 'text-emerald-600', bg: 'bg-emerald-50' },
-              { range: '110–119', label: 'Above Average', color: 'text-blue-600', bg: 'bg-blue-50' },
-              { range: '95–109', label: 'Average', color: 'text-indigo-600', bg: 'bg-indigo-50' },
-              { range: '85–94', label: 'Below Average', color: 'text-amber-600', bg: 'bg-amber-50' },
               { range: '70–84', label: 'Needs Support', color: 'text-red-600', bg: 'bg-red-50' },
+              { range: '85–94', label: 'Below Average', color: 'text-amber-600', bg: 'bg-amber-50' },
+              { range: '95–109', label: 'Average', color: 'text-indigo-600', bg: 'bg-indigo-50' },
+              { range: '110–119', label: 'Above Average', color: 'text-blue-600', bg: 'bg-blue-50' },
+              { range: '120–130', label: 'Exceptional', color: 'text-emerald-600', bg: 'bg-emerald-50' },
             ].map(({ range, label, color, bg }) => (
               <div key={range} className={`${bg} rounded-xl p-3 text-center`}>
                 <div className={`text-sm font-bold ${color}`}>{range}</div>
