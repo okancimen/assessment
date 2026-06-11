@@ -7,6 +7,7 @@ import { SUBJECT_LABELS, SUBJECTS, Subject } from '@/types'
 import { getScoreLabel, getScoreColor, getScoreBgColor } from '@/lib/assessment/adaptive'
 import { formatDate } from '@/lib/utils'
 import type { Recommendation } from '@/lib/claude/recommendations'
+import RegenRecommendations from './RegenRecommendations'
 
 export default async function ResultsPage({
   params,
@@ -215,9 +216,9 @@ export default async function ResultsPage({
         </section>
 
         {/* AI Recommendations */}
-        {recommendations && recommendations.length > 0 && (
-          <section>
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Personalised recommendations</h2>
+        <section>
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">Personalised recommendations</h2>
+          {recommendations && recommendations.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {recommendations.map((rec, i) => (
                 <div key={i} className="bg-white rounded-2xl border border-gray-100 p-5">
@@ -233,8 +234,10 @@ export default async function ResultsPage({
                 </div>
               ))}
             </div>
-          </section>
-        )}
+          ) : (
+            <RegenRecommendations assessmentId={id} />
+          )}
+        </section>
 
         {/* Score legend */}
         <div className="bg-white rounded-2xl border border-gray-100 p-5">
