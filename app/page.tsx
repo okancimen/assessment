@@ -1,7 +1,79 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SUBJECT_LABELS, SUBJECT_DESCRIPTIONS, SUBJECTS } from '@/types'
 import BellCurve from '@/components/landing/BellCurve'
 import Logo from '@/components/ui/Logo'
+
+export const metadata: Metadata = {
+  title: 'Eduentry — Free Academic Assessment for Children | Ages 7–16',
+  description:
+    'Free AI-powered adaptive test measuring English, Maths, Verbal and Non-Verbal Reasoning for children aged 7–16. Standardised IQ-style scores, percentile rankings, and personalised study recommendations.',
+  alternates: { canonical: 'https://eduentry.com' },
+  openGraph: {
+    url: 'https://eduentry.com',
+    title: 'Eduentry — Free Academic Assessment for Children',
+    description:
+      "Discover your child's true academic level with a free adaptive assessment. Standardised scores across 4 subjects for ages 7–16.",
+  },
+}
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How is Eduentry different from a school test?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "School tests give every child the same questions. Eduentry adapts in real time — if your child answers correctly, the next question gets harder. This means we can pinpoint their true ability level far more precisely than a fixed test.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is the score comparable to professional educational assessments?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "The scoring methodology is the same — 2PL Item Response Theory with MAP estimation, mean 100, SD 15 — as assessments used by professional educational psychologists. However, question content is AI-generated and not empirically calibrated with large populations, so results should be treated as indicative rather than diagnostic.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does the assessment take?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "The full assessment is 60 questions across 4 subjects (15 per subject). Most children complete it in 60–90 minutes. You can take breaks between subjects — progress is automatically saved.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What age groups is Eduentry suitable for?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Eduentry supports children aged 7 to 16. The AI adapts question content and vocabulary to the child's exact age, so a 7-year-old and a 15-year-old receive age-appropriate questions even within the same subject.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "Is my child's data private?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Yes. Data is stored securely via Supabase with row-level security — only you can see your child's results. We do not sell or share data with third parties.",
+      },
+    },
+  ],
+}
+
+const ORGANIZATION_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Eduentry',
+  url: 'https://eduentry.com',
+  logo: 'https://eduentry.com/logo.jpg',
+  description: 'AI-powered adaptive academic assessment for children aged 7–16.',
+  foundingDate: '2026',
+  contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
+}
 
 const subjectIcons: Record<string, string> = {
   english: '📚',
@@ -20,6 +92,9 @@ const subjectColors: Record<string, string> = {
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
+      {/* Structured data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
 
       {/* Nav */}
       <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-10">

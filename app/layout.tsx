@@ -8,9 +8,63 @@ const geist = Geist({
   subsets: ["latin"],
 });
 
+const BASE_URL = "https://eduentry.com";
+
 export const metadata: Metadata = {
-  title: "Eduentry — Academic Assessment for Children",
-  description: "Adaptive cognitive assessments for children aged 7-16. Discover academic strengths and get actionable insights.",
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: "Eduentry — Free Academic Assessment for Children",
+    template: "%s | Eduentry",
+  },
+  description:
+    "Free AI-powered adaptive assessment measuring English, Maths, Verbal and Non-Verbal Reasoning for children aged 7–16. Get standardised scores, percentile rankings and personalised AI recommendations.",
+  keywords: [
+    "academic assessment",
+    "children assessment",
+    "adaptive test",
+    "11 plus preparation",
+    "cognitive assessment",
+    "educational assessment",
+    "standardised score",
+    "IRT assessment",
+    "maths test for kids",
+    "English test for children",
+    "verbal reasoning test",
+    "non-verbal reasoning test",
+    "ages 7 to 16",
+  ],
+  authors: [{ name: "Eduentry" }],
+  creator: "Eduentry",
+  publisher: "Eduentry",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
+  alternates: {
+    canonical: BASE_URL,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    url: BASE_URL,
+    siteName: "Eduentry",
+    title: "Eduentry — Free Academic Assessment for Children",
+    description:
+      "Free AI-powered adaptive assessment for children aged 7–16. Standardised scores across English, Maths, Verbal and Non-Verbal Reasoning.",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Eduentry — Academic Assessment for Children" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Eduentry — Free Academic Assessment for Children",
+    description:
+      "AI-powered adaptive assessment for children aged 7–16. Standardised scores + personalised recommendations.",
+    images: ["/opengraph-image"],
+  },
+  icons: {
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
 };
 
 export default function RootLayout({
