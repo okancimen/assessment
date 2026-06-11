@@ -1,4 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk'
+import { jsonrepair } from 'jsonrepair'
 import { Subject, Question, QuestionOption, DifficultyLevel, SUBJECT_TOPICS } from '@/types'
 
 const client = new Anthropic()
@@ -99,12 +100,9 @@ Respond with ONLY valid JSON, no markdown fences, no extra text:
   const match = jsonText.match(/\{[\s\S]*\}/)
   if (!match) throw new Error('No JSON object found in Claude response')
 
-  // Sanitize: replace unescaped control characters inside JSON string values
-  // (Claude occasionally embeds literal newlines/tabs inside option text)
-  const sanitized = match[0].replace(/"(?:[^"\\]|\\.)*"/g, (str) =>
-    str.replace(/\n/g, '\\n').replace(/\r/g, '\\r').replace(/\t/g, '\\t')
-  )
-  const parsed = JSON.parse(sanitized)
+  // jsonrepair handles all malformed JSON: unescaped quotes, newlines,
+  // trailing commas, missing brackets, etc.
+  const parsed = JSON.parse(jsonrepair(match[0]))
 
   // Validate no duplicate option texts
   const optionTexts = (parsed.options as QuestionOption[]).map((o) => o.text.toLowerCase().trim())
