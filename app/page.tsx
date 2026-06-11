@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { SUBJECT_LABELS, SUBJECT_DESCRIPTIONS, SUBJECTS } from '@/types'
 import BellCurve from '@/components/landing/BellCurve'
+import Logo from '@/components/ui/Logo'
 
 const subjectIcons: Record<string, string> = {
   english: '📚',
@@ -23,7 +24,7 @@ export default function LandingPage() {
       {/* Nav */}
       <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <span className="text-xl font-bold text-indigo-600 tracking-tight">AcademIQ</span>
+          <Logo size="sm" />
           <div className="flex items-center gap-4">
             <Link href="/auth/login" className="text-sm text-gray-600 hover:text-gray-900 font-medium hidden sm:block">
               Sign in
@@ -151,7 +152,7 @@ export default function LandingPage() {
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Built on proven methodology</h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
-              AcademIQ uses the same psychometric models that power national and international
+              Eduentry uses the same psychometric models that power national and international
               standardised assessments — not a simple right/wrong percentage.
             </p>
           </div>
@@ -343,7 +344,7 @@ export default function LandingPage() {
           {[
             {
               q: 'How is this different from a school test?',
-              a: "School tests give every child the same questions. AcademIQ adapts in real time — if your child answers correctly, the next question gets harder. This means we can pinpoint their true ability level far more precisely than a fixed test.",
+              a: "School tests give every child the same questions. Eduentry adapts in real time — if your child answers correctly, the next question gets harder. This means we can pinpoint their true ability level far more precisely than a fixed test.",
             },
             {
               q: 'Is the score comparable to professional educational assessments?',
@@ -355,7 +356,7 @@ export default function LandingPage() {
             },
             {
               q: 'What age groups is this suitable for?',
-              a: "AcademIQ supports children aged 7 to 16. The AI adapts question content and vocabulary to the child's exact age, so a 7-year-old and a 15-year-old receive age-appropriate questions even within the same subject.",
+              a: "Eduentry supports children aged 7 to 16. The AI adapts question content and vocabulary to the child's exact age, so a 7-year-old and a 15-year-old receive age-appropriate questions even within the same subject.",
             },
             {
               q: 'Is my child\'s data private?',
@@ -397,7 +398,7 @@ export default function LandingPage() {
       <footer className="border-t border-gray-100 py-10">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-400">
           <div className="flex items-center gap-3">
-            <span className="font-bold text-gray-700 text-base">AcademIQ</span>
+            <Logo size="sm" href="/" />
             <span>·</span>
             <span>Adaptive academic assessment</span>
           </div>

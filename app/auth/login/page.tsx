@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 import Button from '@/components/ui/Button'
+import Logo from '@/components/ui/Logo'
 
 export default function LoginPage() {
   const router = useRouter()
@@ -35,7 +36,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <Link href="/" className="text-2xl font-bold text-indigo-600">AcademIQ</Link>
+          <Logo size="lg" className="justify-center" />
           <h1 className="text-2xl font-bold text-gray-900 mt-6 mb-2">Welcome back</h1>
           <p className="text-gray-500">Sign in to your parent account</p>
         </div>

@@ -9,7 +9,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "AcademIQ — Academic Assessment for Children",
+  title: "Eduentry — Academic Assessment for Children",
   description: "Adaptive cognitive assessments for children aged 7-16. Discover academic strengths and get actionable insights.",
 };
 
