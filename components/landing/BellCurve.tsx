@@ -29,11 +29,23 @@ const ZONE_LABELS = [
 
 const MEAN = 100, SD = 15
 const X_MIN = 62, X_MAX = 138
-const W = 420, H = 228
-const PAD_L = 10, PAD_R = 10, PAD_T = 40, PAD_B = 52
+const W = 420
+// CH and PAD_T are fixed — they define the curve shape and never change.
+// SVG total height is computed dynamically inside the component.
+const PAD_L = 10, PAD_R = 10, PAD_T = 40, CH = 136
 const CW = W - PAD_L - PAD_R
-const CH = H - PAD_T - PAD_B
-const baseY = PAD_T + CH
+const baseY = PAD_T + CH  // = 176, always fixed
+
+// Labels: 3 lines per subject, compact row spacing
+const LINE_H = 9   // px between text lines within a row
+const ROW_GAP = 14 // extra gap between row 0 and row 1
+const ROW0_Y1 = baseY + 11
+const ROW1_Y1 = ROW0_Y1 + 3 * LINE_H + ROW_GAP  // = baseY + 11 + 27 + 14 = baseY + 52
+const PAD_B_ONE = 3 * LINE_H + 14  // single row needs: baseY + 11 + 27 + 5 margin
+const PAD_B_TWO = 3 * LINE_H + ROW_GAP + 3 * LINE_H + 8  // two rows
+
+// Minimum pixel gap between adjacent label centers to avoid overlap
+const MIN_LABEL_GAP = 58
 
 function pdf(x: number) {
   return Math.exp(-0.5 * ((x - MEAN) / SD) ** 2)
@@ -62,6 +74,7 @@ function sy(ratio: number) {
 
 const STEP = 0.4
 
+// Pre-computed at module load — depends only on fixed CH/PAD_T
 const curvePoints = (() => {
   const pts: string[] = []
   for (let x = X_MIN; x <= X_MAX; x += STEP) {
@@ -88,11 +101,42 @@ function zonePath(from: number, to: number) {
   return `M ${pts.join(' L ')} Z`
 }
 
+/** Greedy 2-row assignment: sort by x, try row 0 first, spill to row 1 */
+function assignRows(subjects: BellCurveSubject[]): number[] {
+  const rows = new Array<number>(subjects.length).fill(0)
+  const lastX: number[] = [-Infinity, -Infinity]
+
+  // Work in sorted order so adjacency checks are meaningful
+  const order = subjects
+    .map((s, i) => ({ i, x: sx(s.score) }))
+    .sort((a, b) => a.x - b.x)
+
+  for (const { i, x } of order) {
+    if (x - lastX[0] >= MIN_LABEL_GAP) {
+      rows[i] = 0
+      lastX[0] = x
+    } else if (x - lastX[1] >= MIN_LABEL_GAP) {
+      rows[i] = 1
+      lastX[1] = x
+    } else {
+      // Both rows are tight — push to row 1 (accepts minor overlap as last resort)
+      rows[i] = 1
+      lastX[1] = x
+    }
+  }
+  return rows
+}
+
 const centerX = sx(MEAN)
 
 export default function BellCurve({ subjects, title }: BellCurveProps) {
   const displaySubjects = subjects ?? SAMPLE_SUBJECTS
   const cardTitle = title ?? 'Score distribution · Sample'
+
+  const rows = assignRows(displaySubjects)
+  const needsTwoRows = rows.some(r => r === 1)
+  const PAD_B = needsTwoRows ? PAD_B_TWO : PAD_B_ONE
+  const H = PAD_T + CH + PAD_B
 
   return (
     <div className="bg-white rounded-2xl border border-gray-100 shadow-xl p-5">
@@ -118,46 +162,46 @@ export default function BellCurve({ subjects, title }: BellCurveProps) {
 
         {/* Zone labels above curve */}
         {ZONE_LABELS.map(({ from, to, label, clr }) => (
-          <text
-            key={label}
-            x={sx((from + to) / 2)}
-            y={22}
-            textAnchor="middle"
-            fontSize="8"
-            fill={clr}
-            fontWeight="700"
-          >
+          <text key={label} x={sx((from + to) / 2)} y={22}
+            textAnchor="middle" fontSize="8" fill={clr} fontWeight="700">
             {label}
           </text>
         ))}
 
         {/* Subject markers */}
-        {displaySubjects.map(({ score, label, color, dotColor }) => {
+        {displaySubjects.map(({ score, label, color, dotColor }, i) => {
           const mx  = sx(score)
           const my  = sy(pdf(score))
           const pct = Math.round(cdf(score) * 100)
+          const row = rows[i]
+          const y1  = row === 0 ? ROW0_Y1 : ROW1_Y1
 
           return (
             <g key={label}>
-              <line x1={mx} y1={my + 5} x2={mx} y2={baseY} stroke={color} strokeWidth="1.5" strokeDasharray="3 2" strokeOpacity="0.7" />
+              {/* Dashed line from circle down to baseline */}
+              <line x1={mx} y1={my + 5} x2={mx} y2={baseY}
+                stroke={color} strokeWidth="1.5" strokeDasharray="3 2" strokeOpacity="0.7" />
+
+              {/* For row-1 labels: extend a thin line below the baseline */}
+              {row === 1 && (
+                <line x1={mx} y1={baseY + 1} x2={mx} y2={y1 - 4}
+                  stroke={color} strokeWidth="0.8" strokeOpacity="0.35" />
+              )}
+
+              {/* Circle on curve */}
               <circle cx={mx} cy={my} r="4" fill="white" stroke={dotColor} strokeWidth="2" />
 
-              <text x={mx} y={baseY + 12} textAnchor="middle" fontSize="8.5" fill={color} fontWeight="700">
-                {label}
-              </text>
-              <text x={mx} y={baseY + 23} textAnchor="middle" fontSize="8" fill="#6b7280">
-                {score}
-              </text>
-              <text x={mx} y={baseY + 34} textAnchor="middle" fontSize="8" fill={dotColor} fontWeight="600">
-                {pct}th%
-              </text>
+              {/* 3-line label block */}
+              <text x={mx} y={y1}             textAnchor="middle" fontSize="8.5" fill={color}    fontWeight="700">{label}</text>
+              <text x={mx} y={y1 + LINE_H}    textAnchor="middle" fontSize="8"   fill="#6b7280"              >{score}</text>
+              <text x={mx} y={y1 + LINE_H * 2} textAnchor="middle" fontSize="8"   fill={dotColor} fontWeight="600">{pct}th%</text>
             </g>
           )
         })}
 
-        {/* Axis extremes */}
-        <text x={sx(X_MIN + 3)} y={baseY + 12} textAnchor="start" fontSize="7.5" fill="#e5e7eb">70</text>
-        <text x={sx(X_MAX - 3)} y={baseY + 12} textAnchor="end"   fontSize="7.5" fill="#e5e7eb">130</text>
+        {/* Axis extremes — always at row-0 label height, far edges so no conflict */}
+        <text x={sx(X_MIN + 3)} y={ROW0_Y1}     textAnchor="start" fontSize="7.5" fill="#e5e7eb">70</text>
+        <text x={sx(X_MAX - 3)} y={ROW0_Y1}     textAnchor="end"   fontSize="7.5" fill="#e5e7eb">130</text>
       </svg>
     </div>
   )
