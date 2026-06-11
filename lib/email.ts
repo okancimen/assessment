@@ -10,7 +10,7 @@ export async function sendResultsEmail(opts: ResultsEmailOptions): Promise<void>
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) return
 
-  const from = process.env.EMAIL_FROM ?? 'AcademIQ <onboarding@resend.dev>'
+  const from = process.env.EMAIL_FROM ?? 'AcademIQ <noreply@edubot.com.tr>'
 
   await fetch('https://api.resend.com/emails', {
     method: 'POST',
