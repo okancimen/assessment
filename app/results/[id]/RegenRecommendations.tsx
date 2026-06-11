@@ -1,12 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
 
 export default function RegenRecommendations({ assessmentId }: { assessmentId: string }) {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
-  const router = useRouter()
 
   async function handleRegen() {
     setLoading(true)
@@ -18,7 +16,7 @@ export default function RegenRecommendations({ assessmentId }: { assessmentId: s
       setLoading(false)
       return
     }
-    router.refresh()
+    window.location.reload()
   }
 
   return (
