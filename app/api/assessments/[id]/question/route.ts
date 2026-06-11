@@ -67,6 +67,53 @@ export async function GET(
     return NextResponse.json({ subject_break: true, next_subject: nextSubject, age })
   }
 
+  // Check if a prefetched question is ready for this subject + difficulty
+  const prefetch = session.prefetched_question
+  if (
+    prefetch?.subject === session.current_subject &&
+    prefetch?.difficulty === session.difficulty_level
+  ) {
+    // Clear prefetch cache
+    await supabase
+      .from('assessment_sessions')
+      .update({ prefetched_question: null, updated_at: new Date().toISOString() })
+      .eq('assessment_id', id)
+
+    // Link prefetched question to assessment
+    await supabase
+      .from('assessment_questions')
+      .insert({
+        assessment_id: id,
+        question_id: prefetch.question.id,
+        subject: session.current_subject,
+        question_order: session.question_index,
+      })
+
+    if (assessment.status === 'pending') {
+      await supabase
+        .from('assessments')
+        .update({ status: 'in_progress', started_at: new Date().toISOString() })
+        .eq('id', id)
+    }
+
+    const age = Math.floor(
+      (Date.now() - new Date(child.date_of_birth).getTime()) / (365.25 * 24 * 60 * 60 * 1000)
+    )
+
+    return NextResponse.json({
+      question: prefetch.question,
+      session: {
+        current_subject: session.current_subject,
+        subject_index: session.subject_index,
+        question_index: session.question_index,
+        difficulty_level: session.difficulty_level,
+        completed_subjects: session.completed_subjects,
+      },
+      age,
+    })
+  }
+
+  // No prefetch available — generate question via Claude
   // Get topics used in current subject + all question texts used across the entire session
   const { data: subjectQuestions } = await supabase
     .from('assessment_questions')

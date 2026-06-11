@@ -63,6 +63,12 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
     fetchQuestion()
   }, [fetchQuestion])
 
+  // Fire-and-forget prefetch as soon as a question is displayed
+  useEffect(() => {
+    if (!question || !session) return
+    fetch(`/api/assessments/${assessmentId}/prefetch`, { method: 'POST' }).catch(() => {})
+  }, [question?.id, assessmentId])
+
   async function handleAnswer(selectedAnswer: string, timeTaken: number) {
     if (!question) return
 
