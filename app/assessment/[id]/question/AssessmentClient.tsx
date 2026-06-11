@@ -1,11 +1,13 @@
 'use client'
 
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import { Question, Subject, SUBJECT_LABELS, SUBJECTS, QUESTIONS_PER_SUBJECT } from '@/types'
 import ProgressBar from '@/components/assessment/ProgressBar'
 import QuestionCard from '@/components/assessment/QuestionCard'
 import Button from '@/components/ui/Button'
+
+// ── Loading screen (between questions) ────────────────────────────────────────
 
 const LOADING_FACTS = [
   'Did you know? Adaptive testing adjusts difficulty in real-time based on your answers.',
@@ -26,10 +28,7 @@ function LoadingQuestion() {
   useEffect(() => {
     timer.current = setInterval(() => {
       setFade(false)
-      setTimeout(() => {
-        setFactIndex((i) => (i + 1) % LOADING_FACTS.length)
-        setFade(true)
-      }, 400)
+      setTimeout(() => { setFactIndex((i) => (i + 1) % LOADING_FACTS.length); setFade(true) }, 400)
     }, 4000)
     return () => { if (timer.current) clearInterval(timer.current) }
   }, [])
@@ -65,6 +64,50 @@ function LoadingQuestion() {
   )
 }
 
+// ── Warmup countdown (first question only) ────────────────────────────────────
+
+function WarmupCountdown({ count }: { count: number }) {
+  return (
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+      <div className="text-center space-y-6 max-w-xs">
+        <div className="relative w-28 h-28 mx-auto">
+          {/* Animated ring */}
+          <svg className="w-28 h-28 -rotate-90 absolute inset-0" viewBox="0 0 112 112">
+            <circle cx="56" cy="56" r="50" fill="none" stroke="#e0e7ff" strokeWidth="6" />
+            <circle
+              cx="56" cy="56" r="50" fill="none"
+              stroke="#6366f1" strokeWidth="6"
+              strokeDasharray={`${2 * Math.PI * 50}`}
+              strokeDashoffset={`${2 * Math.PI * 50 * (count / 3)}`}
+              className="transition-all duration-700"
+            />
+          </svg>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span
+              key={count}
+              className="text-5xl font-bold text-indigo-600 animate-in zoom-in-50 duration-300"
+            >
+              {count > 0 ? count : '🚀'}
+            </span>
+          </div>
+        </div>
+        <div className="space-y-1">
+          <p className="text-lg font-semibold text-gray-800">
+            {count > 0 ? 'Get ready!' : "Let's go!"}
+          </p>
+          <p className="text-sm text-gray-400">
+            {count > 0
+              ? 'Your first question is being prepared…'
+              : 'Loading your question…'}
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// ── Types ─────────────────────────────────────────────────────────────────────
+
 interface SessionState {
   current_subject: Subject
   subject_index: number
@@ -73,80 +116,125 @@ interface SessionState {
   completed_subjects: Subject[]
 }
 
+type FetchResult =
+  | { type: 'question'; question: Question; session: SessionState }
+  | { type: 'break'; nextSubject: Subject }
+  | { type: 'complete' }
+  | { type: 'error'; message: string }
+
+// ── Main component ────────────────────────────────────────────────────────────
+
 export default function AssessmentClient({ assessmentId }: { assessmentId: string }) {
   const router = useRouter()
+
+  type Phase = 'warmup' | 'loading' | 'question' | 'break' | 'error'
+  const [phase, setPhase] = useState<Phase>('warmup')
+  const [warmupCount, setWarmupCount] = useState(3)
   const [question, setQuestion] = useState<Question | null>(null)
   const [session, setSession] = useState<SessionState | null>(null)
-  const [loading, setLoading] = useState(true)
+  const [subjectBreak, setSubjectBreak] = useState<Subject | null>(null)
   const [error, setError] = useState('')
-  const [subjectBreak, setSubjectBreak] = useState<{ nextSubject: Subject } | null>(null)
 
-  const fetchQuestion = useCallback(async () => {
-    setLoading(true)
-    setError('')
-    setQuestion(null)
-    setSubjectBreak(null)
+  // Stores fetch result while warmup countdown is still running
+  const pendingRef = useRef<FetchResult | null>(null)
+  const isFirstRef = useRef(true)
 
+  // Apply a fetch result to component state
+  function applyResult(result: FetchResult) {
+    if (result.type === 'complete') {
+      router.push(`/assessment/${assessmentId}/complete`)
+    } else if (result.type === 'error') {
+      setError(result.message)
+      setPhase('error')
+    } else if (result.type === 'break') {
+      setSubjectBreak(result.nextSubject)
+      setPhase('break')
+    } else {
+      setQuestion(result.question)
+      setSession(result.session)
+      setPhase('question')
+    }
+  }
+
+  // Fetch question from API
+  async function doFetch(): Promise<FetchResult> {
     try {
       const res = await fetch(`/api/assessments/${assessmentId}/question`)
       const data = await res.json()
-
-      if (!res.ok) {
-        setError(data.error || 'Failed to load question')
-        setLoading(false)
-        return
-      }
-
-      if (data.completed) {
-        router.push(`/assessment/${assessmentId}/complete`)
-        return
-      }
-
-      if (data.subject_break) {
-        setSubjectBreak({ nextSubject: data.next_subject })
-        setLoading(false)
-        return
-      }
-
-      setQuestion(data.question)
-      setSession(data.session)
+      if (!res.ok) return { type: 'error', message: data.error || 'Failed to load question' }
+      if (data.completed) return { type: 'complete' }
+      if (data.subject_break) return { type: 'break', nextSubject: data.next_subject }
+      return { type: 'question', question: data.question, session: data.session }
     } catch {
-      setError('Network error. Please try again.')
+      return { type: 'error', message: 'Network error. Please try again.' }
     }
+  }
 
-    setLoading(false)
-  }, [assessmentId, router])
+  // Subsequent question fetches (normal loading screen)
+  async function fetchNextQuestion() {
+    setPhase('loading')
+    setQuestion(null)
+    setSubjectBreak(null)
+    const result = await doFetch()
+    applyResult(result)
+  }
 
+  // On mount: start background fetch + countdown simultaneously
   useEffect(() => {
-    fetchQuestion()
-  }, [fetchQuestion])
+    let countdownDone = false
 
-  // Fire-and-forget prefetch as soon as a question is displayed
+    // 1. Kick off the API call immediately
+    doFetch().then((result) => {
+      if (countdownDone) {
+        // Countdown already finished — apply right away
+        applyResult(result)
+      } else {
+        // Still counting down — hold it
+        pendingRef.current = result
+      }
+    })
+
+    // 2. Run 3-2-1 countdown
+    let count = 3
+    const interval = setInterval(() => {
+      count -= 1
+      setWarmupCount(count)
+      if (count <= 0) {
+        clearInterval(interval)
+        countdownDone = true
+        isFirstRef.current = false
+        if (pendingRef.current) {
+          // Fetch already done — apply immediately
+          applyResult(pendingRef.current)
+        } else {
+          // Fetch still in progress — show loading screen
+          setPhase('loading')
+        }
+      }
+    }, 1000)
+
+    return () => clearInterval(interval)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  // Prefetch next question whenever a new question is displayed
   useEffect(() => {
-    if (!question || !session) return
+    if (!question) return
     fetch(`/api/assessments/${assessmentId}/prefetch`, { method: 'POST' }).catch(() => {})
   }, [question?.id, assessmentId])
 
   async function handleAnswer(selectedAnswer: string, timeTaken: number) {
     if (!question) return null
-
     const res = await fetch(`/api/assessments/${assessmentId}/answer`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        question_id: question.id,
-        selected_answer: selectedAnswer,
-        time_taken_seconds: timeTaken,
-      }),
+      body: JSON.stringify({ question_id: question.id, selected_answer: selectedAnswer, time_taken_seconds: timeTaken }),
     })
-
     const data = await res.json()
-
     if (data.all_complete) {
       router.push(`/assessment/${assessmentId}/complete`)
       return null
     }
-
     return {
       isCorrect: data.is_correct as boolean,
       correctAnswer: data.correct_answer as string,
@@ -155,27 +243,24 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
     }
   }
 
-  function handleNext() {
-    fetchQuestion()
-  }
+  // ── Render ──────────────────────────────────────────────────────────────────
 
-  if (loading) {
-    return <LoadingQuestion />
-  }
+  if (phase === 'warmup') return <WarmupCountdown count={warmupCount} />
+  if (phase === 'loading') return <LoadingQuestion />
 
-  if (error) {
+  if (phase === 'error') {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center space-y-4 max-w-sm">
           <p className="text-red-600">{error}</p>
-          <Button onClick={fetchQuestion}>Try again</Button>
+          <Button onClick={fetchNextQuestion}>Try again</Button>
         </div>
       </div>
     )
   }
 
-  if (subjectBreak) {
-    const subjectIndex = SUBJECTS.indexOf(subjectBreak.nextSubject)
+  if (phase === 'break' && subjectBreak) {
+    const subjectIndex = SUBJECTS.indexOf(subjectBreak)
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
         <div className="w-full max-w-md bg-white rounded-2xl border border-gray-100 shadow-sm p-8 text-center space-y-6">
@@ -188,15 +273,15 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
             <h2 className="text-xl font-bold text-gray-900 mb-2">Subject complete!</h2>
             <p className="text-gray-500 text-sm">
               Take a short break before continuing to{' '}
-              <strong className="text-gray-700">{SUBJECT_LABELS[subjectBreak.nextSubject]}</strong>
+              <strong className="text-gray-700">{SUBJECT_LABELS[subjectBreak]}</strong>
               {' '}(subject {subjectIndex + 1} of {SUBJECTS.length}).
             </p>
           </div>
           <div className="bg-gray-50 rounded-xl p-4 text-sm text-gray-600">
             Stretch, have some water, and come back when you&apos;re ready.
           </div>
-          <Button className="w-full" size="lg" onClick={fetchQuestion}>
-            Continue to {SUBJECT_LABELS[subjectBreak.nextSubject]}
+          <Button className="w-full" size="lg" onClick={fetchNextQuestion}>
+            Continue to {SUBJECT_LABELS[subjectBreak]}
           </Button>
         </div>
       </div>
@@ -216,12 +301,11 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
             completedSubjects={session.completed_subjects}
           />
         </div>
-
         <div className="bg-white rounded-2xl border border-gray-100 p-6">
           <QuestionCard
             question={question}
             onAnswer={handleAnswer}
-            onNext={handleNext}
+            onNext={fetchNextQuestion}
             questionNumber={session.question_index + 1}
             totalQuestions={QUESTIONS_PER_SUBJECT}
           />
