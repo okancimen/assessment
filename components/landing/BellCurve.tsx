@@ -17,8 +17,8 @@ const ZONE_LABELS = [
 
 const MEAN = 100, SD = 15
 const X_MIN = 62, X_MAX = 138
-const W = 420, H = 215
-const PAD_L = 10, PAD_R = 10, PAD_T = 28, PAD_B = 52
+const W = 420, H = 228
+const PAD_L = 10, PAD_R = 10, PAD_T = 40, PAD_B = 52
 const CW = W - PAD_L - PAD_R
 const CH = H - PAD_T - PAD_B
 const baseY = PAD_T + CH
@@ -98,24 +98,23 @@ export default function BellCurve() {
         {/* Baseline */}
         <line x1={sx(X_MIN)} y1={baseY} x2={sx(X_MAX)} y2={baseY} stroke="#e5e7eb" strokeWidth="1" />
 
-        {/* Mean dashed line */}
-        <line x1={centerX} y1={sy(1) - 4} x2={centerX} y2={baseY} stroke="#c7d2fe" strokeWidth="1" strokeDasharray="4 3" />
-        <text x={centerX} y={sy(1) - 8} textAnchor="middle" fontSize="9" fill="#a5b4fc" fontWeight="600">avg</text>
+        {/* Mean dashed line — no text, zone row above explains it */}
+        <line x1={centerX} y1={PAD_T} x2={centerX} y2={baseY} stroke="#c7d2fe" strokeWidth="1" strokeDasharray="4 3" />
 
-        {/* Zone labels inside fills with white backing */}
-        {ZONE_LABELS.map(({ from, to, label, clr }) => {
-          const cx   = sx((from + to) / 2)
-          const rw   = label.length * 4.7 + 10
-          const ty   = baseY - 9
-          return (
-            <g key={label}>
-              <rect x={cx - rw / 2} y={ty - 10} width={rw} height={14} rx="3" fill="white" fillOpacity="0.88" />
-              <text x={cx} y={ty} textAnchor="middle" fontSize="7.5" fill={clr} fontWeight="700">
-                {label}
-              </text>
-            </g>
-          )
-        })}
+        {/* Zone labels above curve in a single row */}
+        {ZONE_LABELS.map(({ from, to, label, clr }) => (
+          <text
+            key={label}
+            x={sx((from + to) / 2)}
+            y={22}
+            textAnchor="middle"
+            fontSize="8"
+            fill={clr}
+            fontWeight="700"
+          >
+            {label}
+          </text>
+        ))}
 
         {/* Subject markers */}
         {SAMPLE_SUBJECTS.map(({ score, label, color, dotColor }) => {
