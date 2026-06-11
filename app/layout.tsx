@@ -61,10 +61,6 @@ export const metadata: Metadata = {
       "AI-powered adaptive assessment for children aged 7–16. Standardised scores + personalised recommendations.",
     images: ["/opengraph-image"],
   },
-  icons: {
-    icon: "/logo.jpg",
-    apple: "/logo.jpg",
-  },
 };
 
 export default function RootLayout({
