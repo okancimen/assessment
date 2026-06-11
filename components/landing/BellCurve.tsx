@@ -20,15 +20,15 @@ const SAMPLE_SUBJECTS: BellCurveSubject[] = [
 ]
 
 const ZONE_LABELS = [
-  { from: 62,  to: 85,  label: 'Needs Support', clr: '#ef4444' },
+  { from: 55,  to: 85,  label: 'Needs Support', clr: '#ef4444' },
   { from: 85,  to: 95,  label: 'Below Avg',     clr: '#d97706' },
   { from: 95,  to: 110, label: 'Average',        clr: '#6366f1' },
   { from: 110, to: 120, label: 'Above Avg',      clr: '#3b82f6' },
-  { from: 120, to: 138, label: 'Exceptional',    clr: '#059669' },
+  { from: 120, to: 145, label: 'Exceptional',    clr: '#059669' },
 ]
 
 const MEAN = 100, SD = 15
-const X_MIN = 62, X_MAX = 138
+const X_MIN = 55, X_MAX = 145  // ±3σ so tails reach near-zero within the visible range
 const W = 420
 // CH and PAD_T are fixed — they define the curve shape and never change.
 // SVG total height is computed dynamically inside the component.
@@ -199,9 +199,9 @@ export default function BellCurve({ subjects, title }: BellCurveProps) {
           )
         })}
 
-        {/* Axis extremes — always at row-0 label height, far edges so no conflict */}
-        <text x={sx(X_MIN + 3)} y={ROW0_Y1}     textAnchor="start" fontSize="7.5" fill="#e5e7eb">70</text>
-        <text x={sx(X_MAX - 3)} y={ROW0_Y1}     textAnchor="end"   fontSize="7.5" fill="#e5e7eb">130</text>
+        {/* Score range anchors at the clamped extremes (70 and 130) */}
+        <text x={sx(70)}  y={ROW0_Y1} textAnchor="middle" fontSize="7.5" fill="#d1d5db">70</text>
+        <text x={sx(130)} y={ROW0_Y1} textAnchor="middle" fontSize="7.5" fill="#d1d5db">130</text>
       </svg>
     </div>
   )
