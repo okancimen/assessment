@@ -59,7 +59,7 @@ export default function LandingPage() {
         </div>
 
         {/* Sample results: score card + bell curve */}
-        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 text-left">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-[3fr_5fr] gap-5 text-left">
 
           {/* Mock result card */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-xl p-6">
