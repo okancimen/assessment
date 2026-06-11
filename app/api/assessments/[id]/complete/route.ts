@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
-import { computeResults, computeOverallScore } from '@/lib/assessment/adaptive'
+import { computeResults, computeOverallScore, getScoreLabel } from '@/lib/assessment/adaptive'
+import { generateRecommendations } from '@/lib/claude/recommendations'
+import { sendResultsEmail } from '@/lib/email'
 
 export async function POST(
   request: NextRequest,
@@ -20,7 +22,7 @@ export async function POST(
 
   if (!assessment) return NextResponse.json({ error: 'Not found' }, { status: 404 })
 
-  const child = assessment.children as { parent_id: string }
+  const child = assessment.children as { parent_id: string; name: string; date_of_birth: string }
   if (child.parent_id !== user.id) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
@@ -37,7 +39,25 @@ export async function POST(
   const subjectResults = computeResults(allScores)
   const { overall_score, standardized_score } = computeOverallScore(subjectResults)
 
-  // Upsert results
+  const age = Math.floor(
+    (Date.now() - new Date(child.date_of_birth).getTime()) / (365.25 * 24 * 60 * 60 * 1000)
+  )
+
+  // Generate AI recommendations in parallel with upsert
+  const [, recommendations] = await Promise.all([
+    supabase
+      .from('results')
+      .upsert({
+        assessment_id: id,
+        child_id: assessment.child_id,
+        overall_score,
+        standardized_score,
+        subject_scores: subjectResults,
+      }, { onConflict: 'assessment_id' }),
+    generateRecommendations(child.name, age, subjectResults).catch(() => null),
+  ])
+
+  // Save result with recommendations
   const { data: result, error: resultError } = await supabase
     .from('results')
     .upsert({
@@ -46,6 +66,7 @@ export async function POST(
       overall_score,
       standardized_score,
       subject_scores: subjectResults,
+      recommendations,
     }, { onConflict: 'assessment_id' })
     .select()
     .single()
@@ -57,6 +78,16 @@ export async function POST(
     .from('assessments')
     .update({ status: 'completed', completed_at: new Date().toISOString() })
     .eq('id', id)
+
+  // Send results email — fire-and-forget, never blocks the response
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://eduentry.com'
+  sendResultsEmail({
+    to: user.email!,
+    childName: child.name,
+    overallScore: standardized_score,
+    scoreLabel: getScoreLabel(standardized_score),
+    resultsUrl: `${siteUrl}/results/${id}`,
+  }).catch(() => {})
 
   return NextResponse.json({ result_id: result.id })
   } catch (err) {

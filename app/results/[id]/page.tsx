@@ -6,6 +6,7 @@ import PrintButton from './PrintButton'
 import { SUBJECT_LABELS, SUBJECTS, Subject } from '@/types'
 import { getScoreLabel, getScoreColor, getScoreBgColor } from '@/lib/assessment/adaptive'
 import { formatDate } from '@/lib/utils'
+import type { Recommendation } from '@/lib/claude/recommendations'
 
 export default async function ResultsPage({
   params,
@@ -54,8 +55,21 @@ export default async function ResultsPage({
 
   const overallLabel = getScoreLabel(result.standardized_score)
 
+  const recommendations = result.recommendations as Recommendation[] | null
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <style dangerouslySetInnerHTML={{ __html: `
+        @media print {
+          nav, .no-print { display: none !important; }
+          body { background: white; }
+          .shadow-sm { box-shadow: none !important; }
+          main { padding: 16px !important; }
+          h1 { font-size: 18px !important; }
+          .rounded-2xl { border-radius: 8px !important; }
+          @page { margin: 1cm; }
+        }
+      `}} />
       <Navbar />
       <main className="max-w-4xl mx-auto px-6 py-10 space-y-8">
         {/* Header */}
@@ -200,6 +214,28 @@ export default async function ResultsPage({
           </div>
         </section>
 
+        {/* AI Recommendations */}
+        {recommendations && recommendations.length > 0 && (
+          <section>
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Personalised recommendations</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {recommendations.map((rec, i) => (
+                <div key={i} className="bg-white rounded-2xl border border-gray-100 p-5">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-xs font-bold flex-shrink-0">
+                      {i + 1}
+                    </span>
+                    <span className="text-xs font-semibold text-indigo-600 uppercase tracking-wide">
+                      {SUBJECT_LABELS[rec.subject as Subject] ?? rec.subject}
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-700 leading-relaxed">{rec.tip}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Score legend */}
         <div className="bg-white rounded-2xl border border-gray-100 p-5">
           <h3 className="font-semibold text-gray-900 mb-4">Score guide</h3>
@@ -219,7 +255,7 @@ export default async function ResultsPage({
           </div>
         </div>
 
-        <div className="flex gap-3 flex-wrap">
+        <div className="flex gap-3 flex-wrap no-print">
           <Link href="/dashboard" className="px-5 py-2.5 rounded-xl border border-gray-200 text-sm font-medium text-gray-600 hover:bg-gray-50 transition-colors">
             Back to dashboard
           </Link>
