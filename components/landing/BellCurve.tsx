@@ -1,6 +1,18 @@
-// Server component — all maths run at build time, pure static SVG
+// Server component — all maths run at render time, pure static SVG
 
-const SAMPLE_SUBJECTS = [
+export interface BellCurveSubject {
+  score: number
+  label: string
+  color: string
+  dotColor: string
+}
+
+interface BellCurveProps {
+  subjects?: BellCurveSubject[]
+  title?: string
+}
+
+const SAMPLE_SUBJECTS: BellCurveSubject[] = [
   { score: 103, label: 'English',    color: '#3b82f6', dotColor: '#2563eb' },
   { score: 119, label: 'Maths',      color: '#8b5cf6', dotColor: '#7c3aed' },
   { score: 113, label: 'Verbal',     color: '#10b981', dotColor: '#059669' },
@@ -78,11 +90,14 @@ function zonePath(from: number, to: number) {
 
 const centerX = sx(MEAN)
 
-export default function BellCurve() {
+export default function BellCurve({ subjects, title }: BellCurveProps) {
+  const displaySubjects = subjects ?? SAMPLE_SUBJECTS
+  const cardTitle = title ?? 'Score distribution · Sample'
+
   return (
     <div className="bg-white rounded-2xl border border-gray-100 shadow-xl p-5">
       <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">
-        Score distribution · Sample
+        {cardTitle}
       </p>
 
       <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label="Bell curve showing score distribution">
@@ -98,10 +113,10 @@ export default function BellCurve() {
         {/* Baseline */}
         <line x1={sx(X_MIN)} y1={baseY} x2={sx(X_MAX)} y2={baseY} stroke="#e5e7eb" strokeWidth="1" />
 
-        {/* Mean dashed line — no text, zone row above explains it */}
+        {/* Mean dashed line */}
         <line x1={centerX} y1={PAD_T} x2={centerX} y2={baseY} stroke="#c7d2fe" strokeWidth="1" strokeDasharray="4 3" />
 
-        {/* Zone labels above curve in a single row */}
+        {/* Zone labels above curve */}
         {ZONE_LABELS.map(({ from, to, label, clr }) => (
           <text
             key={label}
@@ -117,7 +132,7 @@ export default function BellCurve() {
         ))}
 
         {/* Subject markers */}
-        {SAMPLE_SUBJECTS.map(({ score, label, color, dotColor }) => {
+        {displaySubjects.map(({ score, label, color, dotColor }) => {
           const mx  = sx(score)
           const my  = sy(pdf(score))
           const pct = Math.round(cdf(score) * 100)
@@ -127,7 +142,6 @@ export default function BellCurve() {
               <line x1={mx} y1={my + 5} x2={mx} y2={baseY} stroke={color} strokeWidth="1.5" strokeDasharray="3 2" strokeOpacity="0.7" />
               <circle cx={mx} cy={my} r="4" fill="white" stroke={dotColor} strokeWidth="2" />
 
-              {/* Labels below baseline */}
               <text x={mx} y={baseY + 12} textAnchor="middle" fontSize="8.5" fill={color} fontWeight="700">
                 {label}
               </text>

@@ -9,6 +9,7 @@ import { formatDate } from '@/lib/utils'
 import type { Recommendation } from '@/lib/claude/recommendations'
 import RegenRecommendations from './RegenRecommendations'
 import Confetti from './Confetti'
+import BellCurve, { type BellCurveSubject } from '@/components/landing/BellCurve'
 
 export default async function ResultsPage({
   params,
@@ -58,6 +59,22 @@ export default async function ResultsPage({
   const overallLabel = getScoreLabel(result.standardized_score)
 
   const recommendations = result.recommendations as Recommendation[] | null
+
+  const SUBJECT_CURVE_COLORS: Record<string, { color: string; dotColor: string; displayLabel: string }> = {
+    english:             { color: '#3b82f6', dotColor: '#2563eb', displayLabel: 'English'    },
+    mathematics:         { color: '#8b5cf6', dotColor: '#7c3aed', displayLabel: 'Maths'      },
+    verbal_reasoning:    { color: '#10b981', dotColor: '#059669', displayLabel: 'Verbal'     },
+    nonverbal_reasoning: { color: '#f59e0b', dotColor: '#d97706', displayLabel: 'Non-Verbal' },
+  }
+
+  const bellCurveSubjects: BellCurveSubject[] = SUBJECTS
+    .filter((s) => subjectScores[s]?.standardized_score)
+    .map((s) => ({
+      score:    subjectScores[s].standardized_score,
+      label:    SUBJECT_CURVE_COLORS[s]?.displayLabel ?? SUBJECT_LABELS[s],
+      color:    SUBJECT_CURVE_COLORS[s]?.color    ?? '#6366f1',
+      dotColor: SUBJECT_CURVE_COLORS[s]?.dotColor ?? '#4f46e5',
+    }))
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -132,6 +149,11 @@ export default async function ResultsPage({
             </div>
           </div>
         </div>
+
+        {/* Percentile bell curve */}
+        {bellCurveSubjects.length > 0 && (
+          <BellCurve subjects={bellCurveSubjects} title="Score distribution · Percentile ranking" />
+        )}
 
         {/* Subject scores */}
         <section>
