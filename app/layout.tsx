@@ -13,18 +13,20 @@ const BASE_URL = "https://eduentry.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Eduentry — Free Academic Assessment for Children",
+    default: "Eduentry — International Academic Benchmark for Children",
     template: "%s | Eduentry",
   },
   description:
-    "Free AI-powered adaptive assessment measuring English, Maths, Verbal and Non-Verbal Reasoning for children aged 7–16. Get standardised scores, percentile rankings and personalised AI recommendations.",
+    "Free adaptive assessment that shows how your child compares to international education standards — UK National Curriculum, US grade levels, PISA and IB benchmarks. Ages 7–16.",
   keywords: [
-    "academic assessment",
+    "international academic benchmark",
     "children assessment",
     "adaptive test",
+    "PISA benchmark children",
+    "UK national curriculum assessment",
     "11 plus preparation",
+    "IB readiness test",
     "cognitive assessment",
-    "educational assessment",
     "standardised score",
     "IRT assessment",
     "maths test for kids",
@@ -32,6 +34,7 @@ export const metadata: Metadata = {
     "verbal reasoning test",
     "non-verbal reasoning test",
     "ages 7 to 16",
+    "compare child internationally",
   ],
   authors: [{ name: "Eduentry" }],
   creator: "Eduentry",

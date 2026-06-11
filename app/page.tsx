@@ -5,15 +5,15 @@ import BellCurve from '@/components/landing/BellCurve'
 import Logo from '@/components/ui/Logo'
 
 export const metadata: Metadata = {
-  title: 'Eduentry — Free Academic Assessment for Children | Ages 7–16',
+  title: 'Eduentry — International Academic Benchmark for Children | Ages 7–16',
   description:
-    'Free AI-powered adaptive test measuring English, Maths, Verbal and Non-Verbal Reasoning for children aged 7–16. Standardised IQ-style scores, percentile rankings, and personalised study recommendations.',
+    'Free adaptive assessment that shows how your child compares to international education standards — UK National Curriculum, US grade levels, PISA and IB benchmarks. Ages 7–16.',
   alternates: { canonical: 'https://eduentry.com' },
   openGraph: {
     url: 'https://eduentry.com',
-    title: 'Eduentry — Free Academic Assessment for Children',
+    title: 'Eduentry — International Academic Benchmark for Children',
     description:
-      "Discover your child's true academic level with a free adaptive assessment. Standardised scores across 4 subjects for ages 7–16.",
+      "See where your child stands globally. A free adaptive test benchmarked against UK, US, PISA and IB standards for ages 7–16.",
   },
 }
 
@@ -23,10 +23,18 @@ const FAQ_SCHEMA = {
   mainEntity: [
     {
       '@type': 'Question',
+      name: 'How does the score compare to international education systems?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Every score is mapped against four international frameworks: the UK National Curriculum (including 11+ and GCSE readiness), US grade-level expectations, PISA proficiency levels, and IB programme readiness. A score of 110, for example, places a child above the expected standard in the UK and above grade level in the US — context that is difficult to get from a single school test.",
+      },
+    },
+    {
+      '@type': 'Question',
       name: 'How is Eduentry different from a school test?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "School tests give every child the same questions. Eduentry adapts in real time — if your child answers correctly, the next question gets harder. This means we can pinpoint their true ability level far more precisely than a fixed test.",
+        text: "School tests give every child the same questions and are graded against a local cohort. Eduentry adapts in real time and benchmarks results against international standards — showing not just how your child is doing at school, but how they compare to children in the UK, US, and globally.",
       },
     },
     {
@@ -34,7 +42,7 @@ const FAQ_SCHEMA = {
       name: 'Is the score comparable to professional educational assessments?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "The scoring methodology is the same — 2PL Item Response Theory with MAP estimation, mean 100, SD 15 — as assessments used by professional educational psychologists. However, question content is AI-generated and not empirically calibrated with large populations, so results should be treated as indicative rather than diagnostic.",
+        text: "The scoring methodology is the same — 2PL Item Response Theory with MAP estimation, mean 100, SD 15 — as assessments used in PISA, GCSE and by professional educational psychologists. Question content is AI-generated and not empirically calibrated with large populations, so results should be treated as indicative rather than diagnostic.",
       },
     },
     {
@@ -70,7 +78,7 @@ const ORGANIZATION_SCHEMA = {
   name: 'Eduentry',
   url: 'https://eduentry.com',
   logo: 'https://eduentry.com/logo.jpg',
-  description: 'AI-powered adaptive academic assessment for children aged 7–16.',
+  description: 'Free international academic benchmark for children aged 7–16, measuring performance against UK, US, PISA and IB standards.',
   foundingDate: '2026',
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
@@ -115,15 +123,15 @@ export default function LandingPage() {
       <section className="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
         <div className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 rounded-full px-4 py-1.5 text-sm font-medium mb-8">
           <span className="w-2 h-2 bg-indigo-500 rounded-full inline-block animate-pulse" />
-          AI-powered adaptive assessment · Ages 7–16
+          International academic benchmarking · Ages 7–16
         </div>
         <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 leading-tight mb-6 tracking-tight">
-          Understand your child&apos;s{' '}
-          <span className="text-indigo-600">true academic level</span>
+          How does your child compare{' '}
+          <span className="text-indigo-600">to the world?</span>
         </h1>
         <p className="text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-          A clinically-inspired adaptive test that measures English, Maths, and Reasoning ability
-          in real time — delivering the kind of insight once only available from professional tutors.
+          A free adaptive assessment benchmarked against UK, US, PISA and IB standards —
+          so you know exactly where your child stands, not just in their class, but internationally.
         </p>
         <div className="flex items-center justify-center gap-4 flex-wrap mb-12">
           <Link href="/auth/register" className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-indigo-700 transition-colors shadow-md shadow-indigo-100">
@@ -183,10 +191,10 @@ export default function LandingPage() {
       <section className="border-y border-gray-100 bg-gray-50 py-5">
         <div className="max-w-6xl mx-auto px-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-gray-500">
           {[
-            { icon: '🏛️', text: 'IRT methodology used in PISA, GCSE & 11+ assessments' },
+            { icon: '🌍', text: 'Benchmarked against UK, US, PISA & IB standards' },
+            { icon: '🏛️', text: 'IRT methodology used in PISA, GCSE & SAT' },
             { icon: '🤖', text: 'Questions generated by Claude AI (Anthropic)' },
             { icon: '🔒', text: 'GDPR-compliant · Data never sold' },
-            { icon: '📊', text: 'Standardised scoring · Mean 100, SD 15' },
           ].map(({ icon, text }) => (
             <div key={text} className="flex items-center gap-2">
               <span>{icon}</span>
@@ -200,10 +208,10 @@ export default function LandingPage() {
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Four core skill areas</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Four subjects, one global picture</h2>
             <p className="text-gray-500 max-w-xl mx-auto">
-              Each subject adapts in difficulty question by question, giving a precise picture of
-              ability at every level — not just a single overall grade.
+              The four domains tested by PISA, TIMSS, and the UK and US national curricula —
+              each adapting in difficulty question by question to pinpoint your child&apos;s exact level.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -225,10 +233,10 @@ export default function LandingPage() {
             <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-1.5 text-sm font-medium text-gray-600 mb-5">
               📐 The science behind the score
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Built on proven methodology</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Built on the same science as international assessments</h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
-              Eduentry uses the same psychometric models that power national and international
-              standardised assessments — not a simple right/wrong percentage.
+              Eduentry uses the same psychometric models that power PISA, GCSE and SAT —
+              so your child&apos;s results are directly comparable to international standards.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -259,9 +267,9 @@ export default function LandingPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 ),
-                title: 'Standardised Scoring',
-                desc: 'Scores use the same mean-100, SD-15 scale as professional cognitive assessments. Your child\'s result is benchmarked against their age group, not a global average.',
-                tag: 'Mean 100 · SD 15',
+                title: 'International Benchmarking',
+                desc: "Scores use the same mean-100, SD-15 scale as PISA and professional cognitive assessments. Results are mapped to UK National Curriculum levels, US grade expectations, PISA proficiency tiers, and IB programme readiness.",
+                tag: 'UK · US · PISA · IB',
               },
             ].map(({ icon, title, desc, tag }) => (
               <div key={title} className="bg-white rounded-2xl border border-gray-100 p-7 shadow-sm">
@@ -378,8 +386,8 @@ export default function LandingPage() {
             },
             {
               step: '03',
-              title: 'Receive detailed results',
-              desc: 'Standardised scores with topic breakdowns, AI-generated personalised recommendations, and a printable PDF report.',
+              title: 'See the global context',
+              desc: 'Standardised scores with topic breakdowns, international benchmarks across UK, US, PISA and IB frameworks, AI-generated recommendations, and a printable report.',
             },
           ].map(({ step, title, desc }) => (
             <div key={step} className="flex gap-5">
@@ -398,7 +406,7 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
           {[
             { value: '60', label: 'Adaptive questions' },
-            { value: '4', label: 'Subject areas' },
+            { value: '4', label: 'International frameworks' },
             { value: '10', label: 'Difficulty levels' },
             { value: '7–16', label: 'Age range' },
           ].map(({ value, label }) => (
@@ -418,12 +426,16 @@ export default function LandingPage() {
         <div className="space-y-3">
           {[
             {
+              q: 'How does the score compare to international education systems?',
+              a: "Every score is mapped against four frameworks: the UK National Curriculum (including 11+ and GCSE readiness), US grade-level expectations, PISA proficiency levels, and IB programme readiness. A score of 110, for example, places a child above the expected standard in the UK and above grade level in the US — context that is difficult to get from a single school test.",
+            },
+            {
               q: 'How is this different from a school test?',
-              a: "School tests give every child the same questions. Eduentry adapts in real time — if your child answers correctly, the next question gets harder. This means we can pinpoint their true ability level far more precisely than a fixed test.",
+              a: "School tests give every child the same questions and grade against a local cohort. Eduentry adapts in real time and benchmarks results against international standards — showing not just how your child is doing at school, but how they compare to children in the UK, US, and globally.",
             },
             {
               q: 'Is the score comparable to professional educational assessments?',
-              a: "The scoring methodology is the same — 2PL Item Response Theory with MAP estimation, mean 100, SD 15 — as assessments used by professional educational psychologists. However, question content is AI-generated and not empirically calibrated with large populations, so results should be treated as indicative rather than diagnostic.",
+              a: "The scoring methodology is the same — 2PL Item Response Theory with MAP estimation, mean 100, SD 15 — as assessments used in PISA, GCSE and by professional educational psychologists. Question content is AI-generated and should be treated as indicative rather than diagnostic.",
             },
             {
               q: 'How long does the assessment take?',
@@ -434,7 +446,7 @@ export default function LandingPage() {
               a: "Eduentry supports children aged 7 to 16. The AI adapts question content and vocabulary to the child's exact age, so a 7-year-old and a 15-year-old receive age-appropriate questions even within the same subject.",
             },
             {
-              q: 'Is my child\'s data private?',
+              q: "Is my child's data private?",
               a: "Yes. Data is stored securely via Supabase with row-level security — only you can see your child's results. We do not sell or share data with third parties.",
             },
           ].map(({ q, a }) => (
@@ -456,10 +468,10 @@ export default function LandingPage() {
       {/* CTA */}
       <section className="bg-indigo-600 py-24 text-center px-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-          Know your child&apos;s strengths today
+          Discover where your child stands — globally
         </h2>
         <p className="text-indigo-200 mb-10 max-w-xl mx-auto text-lg">
-          Free to use. No subscription. Full results in under 2 hours.
+          Free to use. No subscription. Full international context in under 2 hours.
         </p>
         <Link
           href="/auth/register"
@@ -475,7 +487,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-3">
             <Logo size="sm" href="/" />
             <span>·</span>
-            <span>Adaptive academic assessment</span>
+            <span>International academic benchmarking</span>
           </div>
           <div className="flex items-center gap-5">
             <Link href="/auth/login" className="hover:text-gray-600 transition-colors">Sign in</Link>

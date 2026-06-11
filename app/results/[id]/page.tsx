@@ -60,6 +60,50 @@ export default async function ResultsPage({
 
   const recommendations = result.recommendations as Recommendation[] | null
 
+  function getBand(score: number) {
+    if (score < 85) return 0
+    if (score < 95) return 1
+    if (score < 110) return 2
+    if (score < 120) return 3
+    return 4
+  }
+
+  const INTL_CONTEXT = [
+    {
+      uk: 'Below the expected standard for the year group. Additional learning support is recommended.',
+      us: 'Below grade level. May benefit from targeted intervention or support programmes.',
+      pisa: 'Below PISA Level 2 — foundational skills not yet fully consolidated.',
+      ib: 'Foundation coursework is recommended before pursuing IB Standard Level subjects.',
+    },
+    {
+      uk: 'Approaching the expected standard, working just below the national average for their age.',
+      us: 'Approaching grade level — in the lower quartile nationally.',
+      pisa: 'Around PISA Level 2 — meets basic proficiency, comparable to the OECD average in many countries.',
+      ib: 'Suitable for IB Middle Years Programme; IB Standard Level achievable with focused support.',
+    },
+    {
+      uk: 'Meeting national curriculum expectations, in line with the national average.',
+      us: 'At grade level, consistent with average performance across US school districts.',
+      pisa: 'PISA Level 3–4 — performing at or above the OECD international average.',
+      ib: 'Well-suited for IB Middle Years Programme; IB Standard Level courses achievable.',
+    },
+    {
+      uk: 'Working above the expected standard. Likely competitive for grammar school or selective independent school entry.',
+      us: 'Above grade level by approximately one year; top 15–20% nationally.',
+      pisa: 'PISA Level 4–5 — strong performer, above the OECD average.',
+      ib: 'Good candidate for the IB Diploma Programme including Higher Level subjects.',
+    },
+    {
+      uk: 'Highly able. At the level typically associated with grammar school and top independent school entry.',
+      us: 'Significantly above grade level (1–2+ years ahead); top 5–10% nationally.',
+      pisa: 'PISA Level 5–6 — top performer internationally.',
+      ib: 'Strong IB Diploma candidate; well-suited for Higher Level subjects across multiple disciplines.',
+    },
+  ]
+
+  const intlBand = getBand(result.standardized_score)
+  const intl = INTL_CONTEXT[intlBand]
+
   const SUBJECT_CURVE_COLORS: Record<string, { color: string; dotColor: string; displayLabel: string }> = {
     english:             { color: '#3b82f6', dotColor: '#2563eb', displayLabel: 'English'    },
     mathematics:         { color: '#8b5cf6', dotColor: '#7c3aed', displayLabel: 'Maths'      },
@@ -154,6 +198,30 @@ export default async function ResultsPage({
         {bellCurveSubjects.length > 0 && (
           <BellCurve subjects={bellCurveSubjects} title="Score distribution · Percentile ranking" />
         )}
+
+        {/* International context */}
+        <section>
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">International context</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { flag: '🇬🇧', system: 'UK National Curriculum', text: intl.uk, color: 'border-blue-100 bg-blue-50' },
+              { flag: '🇺🇸', system: 'US Grade Level',         text: intl.us, color: 'border-violet-100 bg-violet-50' },
+              { flag: '🌍', system: 'PISA (OECD)',             text: intl.pisa, color: 'border-emerald-100 bg-emerald-50' },
+              { flag: '🎓', system: 'IB Programme',            text: intl.ib, color: 'border-amber-100 bg-amber-50' },
+            ].map(({ flag, system, text, color }) => (
+              <div key={system} className={`rounded-2xl border p-5 ${color}`}>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-lg">{flag}</span>
+                  <span className="text-xs font-semibold text-gray-600 uppercase tracking-wide">{system}</span>
+                </div>
+                <p className="text-sm text-gray-700 leading-relaxed">{text}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-gray-400 mt-3 text-center">
+            Based on overall standardised score of {result.standardized_score} · indicative, not diagnostic
+          </p>
+        </section>
 
         {/* Subject scores */}
         <section>
