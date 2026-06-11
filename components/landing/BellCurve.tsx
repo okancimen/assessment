@@ -1,29 +1,32 @@
-// Server component — all maths run at build time, pure static SVG output
+// Server component — all maths run at build time, pure static SVG
 
-interface Subject {
-  score: number
-  label: string
-  shortLabel: string
-  color: string
-  dotColor: string
-}
-
-const SAMPLE_SUBJECTS: Subject[] = [
-  { score: 103, label: 'English',           shortLabel: 'EN', color: '#3b82f6', dotColor: '#2563eb' },
-  { score: 119, label: 'Mathematics',       shortLabel: 'MA', color: '#8b5cf6', dotColor: '#7c3aed' },
-  { score: 113, label: 'Verbal Reasoning',  shortLabel: 'VR', color: '#10b981', dotColor: '#059669' },
-  { score:  91, label: 'Non-Verbal',        shortLabel: 'NV', color: '#f59e0b', dotColor: '#d97706' },
+const SAMPLE_SUBJECTS = [
+  { score: 103, label: 'English',    color: '#3b82f6', dotColor: '#2563eb' },
+  { score: 119, label: 'Maths',      color: '#8b5cf6', dotColor: '#7c3aed' },
+  { score: 113, label: 'Verbal',     color: '#10b981', dotColor: '#059669' },
+  { score:  91, label: 'Non-Verbal', color: '#f59e0b', dotColor: '#d97706' },
 ]
 
-const MEAN = 100
-const SD   = 15
+const ZONE_LABELS = [
+  { from: 62,  to: 85,  label: 'Needs Support', clr: '#ef4444' },
+  { from: 85,  to: 95,  label: 'Below Avg',     clr: '#d97706' },
+  { from: 95,  to: 110, label: 'Average',        clr: '#6366f1' },
+  { from: 110, to: 120, label: 'Above Avg',      clr: '#3b82f6' },
+  { from: 120, to: 138, label: 'Exceptional',    clr: '#059669' },
+]
 
-// Normal PDF, normalised so peak = 1
+const MEAN = 100, SD = 15
+const X_MIN = 62, X_MAX = 138
+const W = 420, H = 215
+const PAD_L = 10, PAD_R = 10, PAD_T = 28, PAD_B = 52
+const CW = W - PAD_L - PAD_R
+const CH = H - PAD_T - PAD_B
+const baseY = PAD_T + CH
+
 function pdf(x: number) {
   return Math.exp(-0.5 * ((x - MEAN) / SD) ** 2)
 }
 
-// Approximate normal CDF (Abramowitz & Stegun 26.2.17)
 function cdf(x: number) {
   const z = (x - MEAN) / SD
   const t = 1 / (1 + 0.2316419 * Math.abs(z))
@@ -38,12 +41,6 @@ function cdf(x: number) {
   return z >= 0 ? p : 1 - p
 }
 
-const X_MIN = 62, X_MAX = 138
-const W = 420, H = 210
-const PAD_L = 10, PAD_R = 10, PAD_T = 28, PAD_B = 52
-const CW = W - PAD_L - PAD_R
-const CH = H - PAD_T - PAD_B
-
 function sx(x: number) {
   return PAD_L + ((x - X_MIN) / (X_MAX - X_MIN)) * CW
 }
@@ -53,7 +50,6 @@ function sy(ratio: number) {
 
 const STEP = 0.4
 
-// Full curve polyline
 const curvePoints = (() => {
   const pts: string[] = []
   for (let x = X_MIN; x <= X_MAX; x += STEP) {
@@ -62,13 +58,12 @@ const curvePoints = (() => {
   return pts.join(' ')
 })()
 
-// Colour-zone fills (one closed path per zone)
 const ZONES = [
-  { from: X_MIN, to: 85,  fill: '#fca5a5', opacity: 0.25 }, // red
-  { from: 85,    to: 95,  fill: '#fcd34d', opacity: 0.25 }, // amber
-  { from: 95,    to: 110, fill: '#a5b4fc', opacity: 0.25 }, // indigo
-  { from: 110,   to: 120, fill: '#93c5fd', opacity: 0.30 }, // blue
-  { from: 120,   to: X_MAX, fill: '#6ee7b7', opacity: 0.30 }, // emerald
+  { from: X_MIN, to: 85,    fill: '#fca5a5', opacity: 0.25 },
+  { from: 85,    to: 95,    fill: '#fcd34d', opacity: 0.25 },
+  { from: 95,    to: 110,   fill: '#a5b4fc', opacity: 0.25 },
+  { from: 110,   to: 120,   fill: '#93c5fd', opacity: 0.30 },
+  { from: 120,   to: X_MAX, fill: '#6ee7b7', opacity: 0.30 },
 ]
 
 function zonePath(from: number, to: number) {
@@ -81,8 +76,7 @@ function zonePath(from: number, to: number) {
   return `M ${pts.join(' L ')} Z`
 }
 
-const baseY    = sy(0)
-const centerX  = sx(MEAN)
+const centerX = sx(MEAN)
 
 export default function BellCurve() {
   return (
@@ -108,68 +102,50 @@ export default function BellCurve() {
         <line x1={centerX} y1={sy(1) - 4} x2={centerX} y2={baseY} stroke="#c7d2fe" strokeWidth="1" strokeDasharray="4 3" />
         <text x={centerX} y={sy(1) - 8} textAnchor="middle" fontSize="9" fill="#a5b4fc" fontWeight="600">avg</text>
 
+        {/* Zone labels inside fills with white backing */}
+        {ZONE_LABELS.map(({ from, to, label, clr }) => {
+          const cx   = sx((from + to) / 2)
+          const rw   = label.length * 4.7 + 10
+          const ty   = baseY - 9
+          return (
+            <g key={label}>
+              <rect x={cx - rw / 2} y={ty - 10} width={rw} height={14} rx="3" fill="white" fillOpacity="0.88" />
+              <text x={cx} y={ty} textAnchor="middle" fontSize="7.5" fill={clr} fontWeight="700">
+                {label}
+              </text>
+            </g>
+          )
+        })}
+
         {/* Subject markers */}
-        {SAMPLE_SUBJECTS.map(({ score, shortLabel, color, dotColor }) => {
+        {SAMPLE_SUBJECTS.map(({ score, label, color, dotColor }) => {
           const mx  = sx(score)
           const my  = sy(pdf(score))
           const pct = Math.round(cdf(score) * 100)
 
           return (
-            <g key={shortLabel}>
-              {/* Vertical dashed line from dot to baseline */}
+            <g key={label}>
               <line x1={mx} y1={my + 5} x2={mx} y2={baseY} stroke={color} strokeWidth="1.5" strokeDasharray="3 2" strokeOpacity="0.7" />
-
-              {/* Dot on the bell curve */}
               <circle cx={mx} cy={my} r="4" fill="white" stroke={dotColor} strokeWidth="2" />
 
-              {/* Labels below the baseline: abbreviation / score / percentile */}
-              <text x={mx} y={baseY + 12} textAnchor="middle" fontSize="9" fill={color} fontWeight="700">
-                {shortLabel}
+              {/* Labels below baseline */}
+              <text x={mx} y={baseY + 12} textAnchor="middle" fontSize="8.5" fill={color} fontWeight="700">
+                {label}
               </text>
-              <text x={mx} y={baseY + 22} textAnchor="middle" fontSize="8" fill="#6b7280">
+              <text x={mx} y={baseY + 23} textAnchor="middle" fontSize="8" fill="#6b7280">
                 {score}
               </text>
-              <text x={mx} y={baseY + 33} textAnchor="middle" fontSize="8" fill={dotColor} fontWeight="600">
+              <text x={mx} y={baseY + 34} textAnchor="middle" fontSize="8" fill={dotColor} fontWeight="600">
                 {pct}th%
               </text>
             </g>
           )
         })}
 
-        {/* Axis: just the extremes for context */}
-        <text x={sx(X_MIN + 3)} y={baseY + 12} textAnchor="start" fontSize="7.5" fill="#d1d5db">70</text>
-        <text x={sx(X_MAX - 3)} y={baseY + 12} textAnchor="end"   fontSize="7.5" fill="#d1d5db">130</text>
+        {/* Axis extremes */}
+        <text x={sx(X_MIN + 3)} y={baseY + 12} textAnchor="start" fontSize="7.5" fill="#e5e7eb">70</text>
+        <text x={sx(X_MAX - 3)} y={baseY + 12} textAnchor="end"   fontSize="7.5" fill="#e5e7eb">130</text>
       </svg>
-
-      {/* Legend */}
-      <div className="flex flex-wrap gap-x-4 gap-y-1.5 mt-3">
-        {SAMPLE_SUBJECTS.map(({ label, shortLabel, color, score }) => {
-          const pct = Math.round(cdf(score) * 100)
-          return (
-            <div key={shortLabel} className="flex items-center gap-1.5">
-              <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ background: color }} />
-              <span className="text-xs text-gray-500">{label}</span>
-              <span className="text-xs font-bold" style={{ color }}>{score}</span>
-              <span className="text-xs text-gray-400">({pct}th)</span>
-            </div>
-          )
-        })}
-      </div>
-
-      {/* Zone legend */}
-      <div className="flex justify-between mt-3 text-center">
-        {[
-          { label: 'Needs\nSupport', color: 'text-red-400' },
-          { label: 'Below\nAvg', color: 'text-amber-400' },
-          { label: 'Average', color: 'text-indigo-400' },
-          { label: 'Above\nAvg', color: 'text-blue-400' },
-          { label: 'Exceptional', color: 'text-emerald-400' },
-        ].map(({ label, color }) => (
-          <span key={label} className={`text-[9px] font-medium leading-tight ${color} whitespace-pre-line`}>
-            {label}
-          </span>
-        ))}
-      </div>
     </div>
   )
 }
