@@ -32,7 +32,7 @@ export async function POST(
   // Get the correct answer + item parameters
   const { data: question } = await supabase
     .from('questions')
-    .select('correct_answer, topic, difficulty, subject')
+    .select('correct_answer, topic, difficulty, subject, explanation')
     .eq('id', question_id)
     .single()
 
@@ -113,6 +113,7 @@ export async function POST(
   return NextResponse.json({
     is_correct,
     correct_answer: question.correct_answer,
+    explanation: question.explanation ?? null,
     subject_complete: subjectComplete,
     all_complete: allComplete,
     new_difficulty: newDifficulty,

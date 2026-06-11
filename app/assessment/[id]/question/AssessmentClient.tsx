@@ -128,7 +128,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   }, [question?.id, assessmentId])
 
   async function handleAnswer(selectedAnswer: string, timeTaken: number) {
-    if (!question) return
+    if (!question) return null
 
     const res = await fetch(`/api/assessments/${assessmentId}/answer`, {
       method: 'POST',
@@ -144,10 +144,18 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
     if (data.all_complete) {
       router.push(`/assessment/${assessmentId}/complete`)
-      return
+      return null
     }
 
-    // Auto-advance to next question
+    return {
+      isCorrect: data.is_correct as boolean,
+      correctAnswer: data.correct_answer as string,
+      explanation: (data.explanation ?? null) as string | null,
+      selectedAnswer,
+    }
+  }
+
+  function handleNext() {
     fetchQuestion()
   }
 
@@ -213,6 +221,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
           <QuestionCard
             question={question}
             onAnswer={handleAnswer}
+            onNext={handleNext}
             questionNumber={session.question_index + 1}
             totalQuestions={QUESTIONS_PER_SUBJECT}
           />

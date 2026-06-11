@@ -8,6 +8,7 @@ import { getScoreLabel, getScoreColor, getScoreBgColor } from '@/lib/assessment/
 import { formatDate } from '@/lib/utils'
 import type { Recommendation } from '@/lib/claude/recommendations'
 import RegenRecommendations from './RegenRecommendations'
+import Confetti from './Confetti'
 
 export default async function ResultsPage({
   params,
@@ -71,6 +72,7 @@ export default async function ResultsPage({
           @page { margin: 1cm; }
         }
       `}} />
+      <Confetti />
       <Navbar />
       <main className="max-w-4xl mx-auto px-6 py-10 space-y-8">
         {/* Header */}
