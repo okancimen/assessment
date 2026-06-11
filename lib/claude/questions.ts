@@ -98,7 +98,13 @@ Respond with ONLY valid JSON, no markdown fences, no extra text:
   // Extract only the first {...} block — guards against trailing text after the JSON
   const match = jsonText.match(/\{[\s\S]*\}/)
   if (!match) throw new Error('No JSON object found in Claude response')
-  const parsed = JSON.parse(match[0])
+
+  // Sanitize: replace unescaped control characters inside JSON string values
+  // (Claude occasionally embeds literal newlines/tabs inside option text)
+  const sanitized = match[0].replace(/"(?:[^"\\]|\\.)*"/g, (str) =>
+    str.replace(/\n/g, '\\n').replace(/\r/g, '\\r').replace(/\t/g, '\\t')
+  )
+  const parsed = JSON.parse(sanitized)
 
   // Validate no duplicate option texts
   const optionTexts = (parsed.options as QuestionOption[]).map((o) => o.text.toLowerCase().trim())
