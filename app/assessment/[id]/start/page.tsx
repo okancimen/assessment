@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect, notFound } from 'next/navigation'
-import Link from 'next/link'
 import { SUBJECTS, SUBJECT_LABELS, SUBJECT_DESCRIPTIONS, QUESTIONS_PER_SUBJECT } from '@/types'
+import StartActions from './StartActions'
 import { getAge } from '@/lib/utils'
 
 const subjectIcons: Record<string, string> = {
@@ -94,18 +94,8 @@ export default async function AssessmentStartPage({
             </div>
           </div>
 
-          {/* Actions */}
-          <div className="flex flex-col sm:flex-row gap-3">
-            <Link href="/dashboard" className="flex-1 text-center px-6 py-3 rounded-xl border border-gray-200 text-sm font-medium text-gray-600 hover:bg-gray-50 transition-colors">
-              Back to dashboard
-            </Link>
-            <Link
-              href={`/assessment/${id}/question`}
-              className="flex-1 text-center bg-indigo-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition-colors"
-            >
-              Begin assessment
-            </Link>
-          </div>
+          {/* Actions — also fires prefetch for first question in background */}
+          <StartActions assessmentId={id} />
         </div>
       </div>
     </div>

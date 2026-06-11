@@ -41,8 +41,8 @@ export default function AddChildPage() {
       return
     }
 
-    const child = await res.json()
-    router.push(`/children/${child.id}`)
+    await res.json()
+    router.push('/dashboard')
   }
 
   const today = new Date().toISOString().split('T')[0]

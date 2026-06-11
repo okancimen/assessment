@@ -1,11 +1,69 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import { Question, Subject, SUBJECT_LABELS, SUBJECTS, QUESTIONS_PER_SUBJECT } from '@/types'
 import ProgressBar from '@/components/assessment/ProgressBar'
 import QuestionCard from '@/components/assessment/QuestionCard'
 import Button from '@/components/ui/Button'
+
+const LOADING_FACTS = [
+  'Did you know? Adaptive testing adjusts difficulty in real-time based on your answers.',
+  'Fun fact: The IRT model used here is the same one behind many national standardised tests.',
+  'Tip: Read each question carefully — there\'s no time pressure, accuracy matters more.',
+  'Did you know? Your brain consolidates learning best after short breaks.',
+  'Fun fact: Verbal reasoning scores are strong predictors of academic potential.',
+  'Tip: For non-verbal questions, look for the rule in the pattern before guessing.',
+  'Did you know? A score of 100 is exactly average for your age group.',
+  'Fun fact: The difficulty range spans 10 levels — most students land between 4 and 7.',
+]
+
+function LoadingQuestion() {
+  const [factIndex, setFactIndex] = useState(0)
+  const [fade, setFade] = useState(true)
+  const timer = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  useEffect(() => {
+    timer.current = setInterval(() => {
+      setFade(false)
+      setTimeout(() => {
+        setFactIndex((i) => (i + 1) % LOADING_FACTS.length)
+        setFade(true)
+      }, 400)
+    }, 4000)
+    return () => { if (timer.current) clearInterval(timer.current) }
+  }, [])
+
+  return (
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+      <div className="text-center space-y-6 max-w-sm">
+        <div className="relative w-16 h-16 mx-auto">
+          <div className="absolute inset-0 rounded-full border-4 border-indigo-100" />
+          <div className="absolute inset-0 rounded-full border-4 border-indigo-600 border-t-transparent animate-spin" />
+          <div className="absolute inset-2 rounded-full border-2 border-indigo-300 border-b-transparent animate-spin [animation-direction:reverse] [animation-duration:0.8s]" />
+        </div>
+        <div className="space-y-1.5">
+          <p className="text-gray-800 font-semibold text-base">Crafting your next question</p>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            AI is analysing your performance and generating<br />
+            a personalised question calibrated to your level.
+          </p>
+        </div>
+        <div className="flex items-center justify-center gap-1.5">
+          <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:0ms]" />
+          <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:150ms]" />
+          <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:300ms]" />
+        </div>
+        <div
+          className="bg-white border border-gray-100 rounded-xl px-5 py-3.5 text-sm text-gray-500 leading-relaxed transition-opacity duration-400"
+          style={{ opacity: fade ? 1 : 0 }}
+        >
+          {LOADING_FACTS[factIndex]}
+        </div>
+      </div>
+    </div>
+  )
+}
 
 interface SessionState {
   current_subject: Subject
@@ -94,30 +152,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   }
 
   if (loading) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
-        <div className="text-center space-y-5 max-w-sm">
-          {/* Animated rings */}
-          <div className="relative w-16 h-16 mx-auto">
-            <div className="absolute inset-0 rounded-full border-4 border-indigo-100" />
-            <div className="absolute inset-0 rounded-full border-4 border-indigo-600 border-t-transparent animate-spin" />
-            <div className="absolute inset-2 rounded-full border-2 border-indigo-300 border-b-transparent animate-spin [animation-direction:reverse] [animation-duration:0.8s]" />
-          </div>
-          <div className="space-y-1.5">
-            <p className="text-gray-800 font-semibold text-base">Crafting your next question</p>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              AI is analysing your performance and generating<br />
-              a personalised question calibrated to your level.
-            </p>
-          </div>
-          <div className="flex items-center justify-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:0ms]" />
-            <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:150ms]" />
-            <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:300ms]" />
-          </div>
-        </div>
-      </div>
-    )
+    return <LoadingQuestion />
   }
 
   if (error) {
