@@ -39,25 +39,7 @@ export async function POST(
   const subjectResults = computeResults(allScores)
   const { overall_score, standardized_score } = computeOverallScore(subjectResults)
 
-  const age = Math.floor(
-    (Date.now() - new Date(child.date_of_birth).getTime()) / (365.25 * 24 * 60 * 60 * 1000)
-  )
-
-  // Generate AI recommendations in parallel with upsert
-  const [, recommendations] = await Promise.all([
-    supabase
-      .from('results')
-      .upsert({
-        assessment_id: id,
-        child_id: assessment.child_id,
-        overall_score,
-        standardized_score,
-        subject_scores: subjectResults,
-      }, { onConflict: 'assessment_id' }),
-    generateRecommendations(child.name, age, subjectResults).catch(() => null),
-  ])
-
-  // Save result with recommendations
+  // Step 1: Save scores (always succeeds regardless of recommendations column)
   const { data: result, error: resultError } = await supabase
     .from('results')
     .upsert({
@@ -66,7 +48,6 @@ export async function POST(
       overall_score,
       standardized_score,
       subject_scores: subjectResults,
-      recommendations,
     }, { onConflict: 'assessment_id' })
     .select()
     .single()
@@ -79,15 +60,36 @@ export async function POST(
     .update({ status: 'completed', completed_at: new Date().toISOString() })
     .eq('id', id)
 
-  // Send results email — fire-and-forget, never blocks the response
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://eduentry.com'
-  sendResultsEmail({
-    to: user.email!,
-    childName: child.name,
-    overallScore: standardized_score,
-    scoreLabel: getScoreLabel(standardized_score),
-    resultsUrl: `${siteUrl}/results/${id}`,
-  }).catch(() => {})
+  const age = Math.floor(
+    (Date.now() - new Date(child.date_of_birth).getTime()) / (365.25 * 24 * 60 * 60 * 1000)
+  )
+
+  // Step 2: Generate AI recommendations + send email in parallel (both are optional)
+  const [recommendations] = await Promise.all([
+    generateRecommendations(child.name, age, subjectResults).catch((err) => {
+      console.error('[recommendations]', err instanceof Error ? err.message : err)
+      return null
+    }),
+    // Email is fully fire-and-forget
+    (async () => {
+      const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://eduentry.com'
+      sendResultsEmail({
+        to: user.email!,
+        childName: child.name,
+        overallScore: standardized_score,
+        scoreLabel: getScoreLabel(standardized_score),
+        resultsUrl: `${siteUrl}/results/${id}`,
+      }).catch(() => {})
+    })(),
+  ])
+
+  // Step 3: Save recommendations separately — failure here never blocks the response
+  if (recommendations) {
+    await supabase
+      .from('results')
+      .update({ recommendations })
+      .eq('id', result.id)
+  }
 
   return NextResponse.json({ result_id: result.id })
   } catch (err) {
