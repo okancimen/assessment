@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { SUBJECT_LABELS, SUBJECT_DESCRIPTIONS, SUBJECTS } from '@/types'
+import BellCurve from '@/components/landing/BellCurve'
 
 const subjectIcons: Record<string, string> = {
   english: '📚',
@@ -57,40 +58,48 @@ export default function LandingPage() {
           </Link>
         </div>
 
-        {/* Mock result card */}
-        <div className="max-w-sm mx-auto bg-white rounded-2xl border border-gray-100 shadow-xl p-6 text-left">
-          <div className="flex items-center justify-between mb-4">
-            <div>
-              <p className="text-xs text-gray-400 font-medium uppercase tracking-wide">Sample result</p>
-              <p className="font-bold text-gray-900 mt-0.5">Emma · Age 11</p>
-            </div>
-            <div className="text-right">
-              <div className="text-3xl font-bold text-indigo-600">112</div>
-              <div className="text-xs text-blue-600 font-semibold">Above Average</div>
-            </div>
-          </div>
-          <div className="space-y-2.5">
-            {[
-              { label: 'English', score: 108, color: 'bg-blue-500', pct: 64 },
-              { label: 'Mathematics', score: 119, color: 'bg-violet-500', pct: 82 },
-              { label: 'Verbal Reasoning', score: 114, color: 'bg-emerald-500', pct: 73 },
-              { label: 'Non-Verbal Reasoning', score: 107, color: 'bg-amber-500', pct: 62 },
-            ].map((s) => (
-              <div key={s.label}>
-                <div className="flex justify-between text-xs text-gray-500 mb-1">
-                  <span>{s.label}</span>
-                  <span className="font-semibold text-gray-700">{s.score}</span>
-                </div>
-                <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-                  <div className={`h-full ${s.color} rounded-full`} style={{ width: `${s.pct}%` }} />
-                </div>
+        {/* Sample results: score card + bell curve */}
+        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 text-left">
+
+          {/* Mock result card */}
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-xl p-6">
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <p className="text-xs text-gray-400 font-medium uppercase tracking-wide">Sample result</p>
+                <p className="font-bold text-gray-900 mt-0.5">Emma · Age 11</p>
               </div>
-            ))}
+              <div className="text-right">
+                <div className="text-3xl font-bold text-indigo-600">109</div>
+                <div className="text-xs text-blue-600 font-semibold">Above Average</div>
+              </div>
+            </div>
+            <div className="space-y-2.5">
+              {[
+                { label: 'English',              score: 103, color: 'bg-blue-500',   pct: 58 },
+                { label: 'Mathematics',          score: 119, color: 'bg-violet-500', pct: 90 },
+                { label: 'Verbal Reasoning',     score: 113, color: 'bg-emerald-500',pct: 79 },
+                { label: 'Non-Verbal Reasoning', score:  91, color: 'bg-amber-500',  pct: 27 },
+              ].map((s) => (
+                <div key={s.label}>
+                  <div className="flex justify-between text-xs text-gray-500 mb-1">
+                    <span>{s.label}</span>
+                    <span className="font-semibold text-gray-700">{s.score}</span>
+                  </div>
+                  <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                    <div className={`h-full ${s.color} rounded-full`} style={{ width: `${s.pct}%` }} />
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-4 pt-4 border-t border-gray-50 flex items-center gap-2">
+              <span className="text-xs text-gray-400">Powered by</span>
+              <span className="text-xs font-semibold text-gray-600">Claude AI · Anthropic</span>
+            </div>
           </div>
-          <div className="mt-4 pt-4 border-t border-gray-50 flex items-center gap-2">
-            <span className="text-xs text-gray-400">Powered by</span>
-            <span className="text-xs font-semibold text-gray-600">Claude AI · Anthropic</span>
-          </div>
+
+          {/* Bell curve percentile visualisation */}
+          <BellCurve />
+
         </div>
       </section>
 
