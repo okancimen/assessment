@@ -165,7 +165,7 @@ export default async function ResultsPage({
 
         {/* Percentile bell curve */}
         {bellCurveSubjects.length > 0 && (
-          <BellCurve subjects={bellCurveSubjects} title="Score distribution · Percentile ranking" overallScore={result.standardized_score} />
+          <BellCurve subjects={bellCurveSubjects} title="Score distribution · Percentile ranking" />
         )}
 
         {/* International context */}
