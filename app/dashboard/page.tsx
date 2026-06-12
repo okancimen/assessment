@@ -145,13 +145,28 @@ export default async function DashboardPage() {
                         )}
                       </td>
                       <td className="px-5 py-3">
-                        <span className={`inline-flex px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                          a.status === 'completed' ? 'bg-emerald-50 text-emerald-700' :
-                          a.status === 'in_progress' ? 'bg-amber-50 text-amber-700' :
-                          'bg-gray-100 text-gray-600'
-                        }`}>
-                          {a.status === 'in_progress' ? 'In progress' : a.status === 'completed' ? 'Completed' : 'Pending'}
-                        </span>
+                        {a.status === 'completed' ? (
+                          <span title="Completed" className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
+                            <svg className="w-3.5 h-3.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                          </span>
+                        ) : a.status === 'in_progress' ? (
+                          <span title="In progress" className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-amber-100">
+                            <svg className="w-3.5 h-3.5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                              <circle cx="12" cy="12" r="9" />
+                              <polyline points="12 7 12 12 15 15" />
+                            </svg>
+                          </span>
+                        ) : (
+                          <span title="Pending" className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-100">
+                            <svg className="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                              <circle cx="12" cy="12" r="9" />
+                              <line x1="12" y1="8" x2="12" y2="12" />
+                              <line x1="12" y1="16" x2="12.01" y2="16" />
+                            </svg>
+                          </span>
+                        )}
                       </td>
                       <td className="px-5 py-3 text-right">
                         {a.status === 'completed' ? (
