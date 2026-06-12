@@ -141,7 +141,10 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
 
   const rows = assignRows(displaySubjects)
   const needsTwoRows = rows.some(r => r === 1)
-  const PAD_B = needsTwoRows ? PAD_B_TWO : PAD_B_ONE
+  const linesPerLabel = hideScores ? 1 : 3
+  const PAD_B = needsTwoRows
+    ? linesPerLabel * LINE_H + ROW_GAP + linesPerLabel * LINE_H + 8
+    : linesPerLabel * LINE_H + 14
   const H = PAD_T + CH + PAD_B
 
   return (
@@ -221,16 +224,16 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
               <circle cx={mx} cy={my} r="4" fill="white" stroke={dotColor} strokeWidth="2" />
 
               {/* label block */}
-              <text x={mx} y={y1}                                  textAnchor="middle" fontSize="8.5" fill={color}    fontWeight="700">{label}</text>
-              {!hideScores && <text x={mx} y={y1 + LINE_H}         textAnchor="middle" fontSize="8"   fill="#6b7280"              >{score}</text>}
-              <text x={mx} y={y1 + (hideScores ? LINE_H : LINE_H * 2)} textAnchor="middle" fontSize="8"   fill={dotColor} fontWeight="600">{pct}th%</text>
+              <text x={mx} y={y1}                          textAnchor="middle" fontSize="8.5" fill={color}    fontWeight="700">{label}</text>
+              {!hideScores && <text x={mx} y={y1 + LINE_H} textAnchor="middle" fontSize="8"   fill="#6b7280"              >{score}</text>}
+              {!hideScores && <text x={mx} y={y1 + LINE_H * 2} textAnchor="middle" fontSize="8" fill={dotColor} fontWeight="600">{pct}th%</text>}
             </g>
           )
         })}
 
         {/* Score range anchors at the clamped extremes (70 and 130) */}
-        <text x={sx(70)}  y={ROW0_Y1} textAnchor="middle" fontSize="7.5" fill="#d1d5db">70</text>
-        <text x={sx(130)} y={ROW0_Y1} textAnchor="middle" fontSize="7.5" fill="#d1d5db">130</text>
+        {!hideScores && <text x={sx(70)}  y={ROW0_Y1} textAnchor="middle" fontSize="7.5" fill="#d1d5db">70</text>}
+        {!hideScores && <text x={sx(130)} y={ROW0_Y1} textAnchor="middle" fontSize="7.5" fill="#d1d5db">130</text>}
       </svg>
     </div>
   )
