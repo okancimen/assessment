@@ -17,11 +17,13 @@ export const metadata: Metadata = {
     template: "%s | Eduentry",
   },
   description:
-    "Free adaptive assessment that shows how your child compares to international education standards — UK National Curriculum, US grade levels, PISA and IB benchmarks. Ages 6–17.",
+    "Free adaptive assessment for UK and international families — see your child's percentile ranking against global standards. UK National Curriculum, PISA and IB benchmarks. Ages 6–17.",
   keywords: [
+    "free children assessment",
+    "percentile ranking children",
     "international academic benchmark",
-    "children assessment",
-    "adaptive test",
+    "UK children assessment",
+    "adaptive test UK",
     "PISA benchmark children",
     "UK national curriculum assessment",
     "11 plus preparation",
@@ -35,6 +37,8 @@ export const metadata: Metadata = {
     "non-verbal reasoning test",
     "ages 6 to 17",
     "compare child internationally",
+    "free academic assessment",
+    "child percentile score",
   ],
   authors: [{ name: "Eduentry" }],
   creator: "Eduentry",
@@ -51,14 +55,14 @@ export const metadata: Metadata = {
     siteName: "Eduentry",
     title: "Eduentry — Free Academic Assessment for Children",
     description:
-      "Free AI-powered adaptive assessment for children aged 6–17. Standardised scores across English, Maths, Verbal and Non-Verbal Reasoning.",
+      "Free AI-powered adaptive assessment for UK and international families. Percentile rankings + standardised scores across English, Maths, Verbal and Non-Verbal Reasoning. Ages 6–17.",
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Eduentry — Academic Assessment for Children" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Eduentry — Free Academic Assessment for Children",
     description:
-      "AI-powered adaptive assessment for children aged 6–17. Standardised scores + personalised recommendations.",
+      "Free adaptive assessment for UK and international families. Percentile rankings + standardised scores for children aged 6–17.",
     images: ["/opengraph-image"],
   },
 };
