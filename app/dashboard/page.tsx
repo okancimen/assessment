@@ -125,9 +125,9 @@ export default async function DashboardPage() {
                   <tr className="border-b border-gray-100">
                     <th className="text-left px-5 py-3 text-gray-500 font-medium">Child</th>
                     <th className="text-left px-5 py-3 text-gray-500 font-medium hidden sm:table-cell">Date</th>
-                    <th className="text-left px-5 py-3 text-gray-500 font-medium hidden sm:table-cell">Score</th>
+                    <th className="text-right px-5 py-3 text-gray-500 font-medium hidden sm:table-cell">Score</th>
                     <th className="text-left px-5 py-3 text-gray-500 font-medium">Status</th>
-                    <th className="px-5 py-3" />
+                    <th className="text-right px-5 py-3 text-gray-500 font-medium">Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -135,7 +135,7 @@ export default async function DashboardPage() {
                     <tr key={a.id} className="border-b border-gray-50 last:border-0">
                       <td className="px-5 py-3 font-medium text-gray-900">{a.children?.name}</td>
                       <td className="px-5 py-3 text-gray-500 hidden sm:table-cell">{formatDate(a.created_at)}</td>
-                      <td className="px-5 py-3 hidden sm:table-cell">
+                      <td className="px-5 py-3 text-right hidden sm:table-cell">
                         {a.results ? (
                           <span className={`font-bold ${getScoreColor(a.results.standardized_score)}`}>
                             {a.results.standardized_score}
