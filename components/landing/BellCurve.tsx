@@ -141,7 +141,7 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
 
   const rows = assignRows(displaySubjects)
   const needsTwoRows = rows.some(r => r === 1)
-  const linesPerLabel = hideScores ? 1 : 3
+  const linesPerLabel = hideScores ? 2 : 3
   const PAD_B = needsTwoRows
     ? linesPerLabel * LINE_H + ROW_GAP + linesPerLabel * LINE_H + 8
     : linesPerLabel * LINE_H + 14
@@ -226,7 +226,7 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
               {/* label block */}
               <text x={mx} y={y1}                          textAnchor="middle" fontSize="8.5" fill={color}    fontWeight="700">{label}</text>
               {!hideScores && <text x={mx} y={y1 + LINE_H} textAnchor="middle" fontSize="8"   fill="#6b7280"              >{score}</text>}
-              {!hideScores && <text x={mx} y={y1 + LINE_H * 2} textAnchor="middle" fontSize="8" fill={dotColor} fontWeight="600">{pct}th%</text>}
+              <text x={mx} y={y1 + (hideScores ? LINE_H : LINE_H * 2)} textAnchor="middle" fontSize="8" fill={dotColor} fontWeight="600">{pct}th%</text>
             </g>
           )
         })}
