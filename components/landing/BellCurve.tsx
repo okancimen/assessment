@@ -162,6 +162,9 @@ export default function BellCurve({ subjects, title, overallScore }: BellCurvePr
               style={{ left: `${((overallScore - 70) / 60) * 100}%` }}
             />
           </div>
+          <div className="flex justify-between text-xs text-gray-400 mt-1">
+            {['Needs Support','Below Avg','Average','Above Avg','Exceptional'].map(l => <span key={l}>{l}</span>)}
+          </div>
         </div>
       )}
 
@@ -181,8 +184,8 @@ export default function BellCurve({ subjects, title, overallScore }: BellCurvePr
         {/* Mean dashed line */}
         <line x1={centerX} y1={PAD_T} x2={centerX} y2={baseY} stroke="#c7d2fe" strokeWidth="1" strokeDasharray="4 3" />
 
-        {/* Zone labels above curve */}
-        {ZONE_LABELS.map(({ from, to, label, clr }) => (
+        {/* Zone labels above curve — only when no score bar carries them */}
+        {overallScore === undefined && ZONE_LABELS.map(({ from, to, label, clr }) => (
           <text key={label} x={sx((from + to) / 2)} y={22}
             textAnchor="middle" fontSize="8" fill={clr} fontWeight="700">
             {label}
