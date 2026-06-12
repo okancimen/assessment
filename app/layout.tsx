@@ -44,9 +44,6 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
-  alternates: {
-    canonical: BASE_URL,
-  },
   openGraph: {
     type: "website",
     locale: "en_GB",
@@ -72,7 +69,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geist.variable} h-full antialiased`}>
+    <html lang="en-GB" className={`${geist.variable} h-full antialiased`}>
       <head>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-F60J3BHJDE" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">{`

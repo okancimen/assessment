@@ -72,6 +72,14 @@ const FAQ_SCHEMA = {
   ],
 }
 
+const WEBSITE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Eduentry',
+  url: 'https://eduentry.com',
+  description: 'Free adaptive assessment benchmarked against UK, US, PISA and IB standards for children aged 6–17.',
+}
+
 const ORGANIZATION_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -101,8 +109,9 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Structured data */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       {/* Nav */}
       <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
