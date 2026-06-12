@@ -604,6 +604,18 @@ export default function LandingPage() {
         <div className="space-y-3">
           {[
             {
+              q: 'Is Eduentry free to use?',
+              a: "Yes, Eduentry is completely free. There are no subscriptions, hidden fees, or premium tiers. Create a free account, add your child's profile, and start the assessment at no cost.",
+            },
+            {
+              q: 'What subjects does the assessment cover?',
+              a: "The assessment covers four subjects: English (reading comprehension, grammar, vocabulary), Mathematics (arithmetic, algebra, geometry, problem-solving), Verbal Reasoning (analogies, classifications, sequences), and Non-Verbal Reasoning (patterns, spatial reasoning, matrices). Each subject has 15 adaptive questions.",
+            },
+            {
+              q: 'What is a percentile ranking and what does it mean?',
+              a: "A percentile ranking shows how your child compares to all other children of the same age. A score in the 80th percentile means your child performed better than 80% of children at that age level. Eduentry uses a standardised scale with mean 100 and standard deviation 15 — the same scale used by professional cognitive assessments.",
+            },
+            {
               q: 'How does the score compare to international education systems?',
               a: "Every score is mapped against four frameworks: the UK National Curriculum (including 11+ and GCSE readiness), US grade-level expectations, PISA proficiency levels, and IB programme readiness. A score of 110, for example, places a child above the expected standard in the UK and above grade level in the US — context that is difficult to get from a single school test.",
             },
@@ -612,8 +624,24 @@ export default function LandingPage() {
               a: "School tests give every child the same questions and grade against a local cohort. Eduentry adapts in real time and benchmarks results against international standards — showing not just how your child is doing at school, but how they compare to children in the UK, US, and globally.",
             },
             {
+              q: 'How is Eduentry different from CAT4 or GL Assessment?',
+              a: "CAT4 and GL Assessment are professionally normed tests administered in schools with large calibration populations. Eduentry uses the same IRT methodology and scoring scale, but questions are AI-generated. Eduentry is free and available to any family instantly — CAT4 and GL tests require school administration and cost money. Eduentry results are best used as an indicative guide, not a formal diagnostic.",
+            },
+            {
+              q: 'How does the adaptive technology work?',
+              a: "Eduentry uses 2-Parameter Logistic (2PL) Item Response Theory with MAP estimation. After each answer, the system updates its estimate of the child's ability and selects the next question to maximise measurement precision at that level. This means fewer questions are needed to achieve the same accuracy as a fixed-length test.",
+            },
+            {
               q: 'Is the score comparable to professional educational assessments?',
               a: "The scoring methodology is the same — 2PL Item Response Theory with MAP estimation, mean 100, SD 15 — as assessments used in PISA, GCSE and by professional educational psychologists. Question content is AI-generated and should be treated as indicative rather than diagnostic.",
+            },
+            {
+              q: 'What score is considered good?',
+              a: "Scores are on a standardised scale: below 85 is Needs Support, 85–94 is Below Average, 95–109 is Average, 110–119 is Above Average, and 120+ is Exceptional. A score of 100 is exactly average. 68% of children score between 85 and 115. For 11+ grammar school entry, competitive scores are typically 115 and above.",
+            },
+            {
+              q: 'Can I use Eduentry to prepare for the 11+ exam?',
+              a: "Yes. The four subjects — English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning — directly mirror the 11+ exam structure used by grammar schools in England. Eduentry gives you a baseline score and percentile ranking, plus personalised recommendations showing which topics to focus on.",
             },
             {
               q: 'How long does the assessment take?',
@@ -622,6 +650,14 @@ export default function LandingPage() {
             {
               q: 'What age groups is this suitable for?',
               a: "Eduentry supports children aged 6 to 17. The AI adapts question content and vocabulary to the child's exact age, so a 6-year-old and a 17-year-old receive age-appropriate questions even within the same subject.",
+            },
+            {
+              q: 'How often can my child take the assessment?',
+              a: "You can run a new assessment at any time. We recommend waiting at least 4–6 weeks between assessments to allow meaningful progress to develop. Each assessment produces a new set of AI-generated questions, so repetition does not give an unfair advantage.",
+            },
+            {
+              q: 'What do the personalised recommendations include?',
+              a: "After the assessment, you can generate AI-powered personalised study recommendations for each subject. Recommendations identify specific weak areas and suggest targeted activities and practice approaches tailored to your child's age and ability level.",
             },
             {
               q: "Is my child's data private?",
