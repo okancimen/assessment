@@ -11,6 +11,7 @@ interface BellCurveProps {
   subjects?: BellCurveSubject[]
   title?: string
   overallScore?: number
+  hideScores?: boolean
 }
 
 const SAMPLE_SUBJECTS: BellCurveSubject[] = [
@@ -134,7 +135,7 @@ function assignRows(subjects: BellCurveSubject[]): number[] {
 
 const centerX = sx(MEAN)
 
-export default function BellCurve({ subjects, title, overallScore }: BellCurveProps) {
+export default function BellCurve({ subjects, title, overallScore, hideScores }: BellCurveProps) {
   const displaySubjects = subjects ?? SAMPLE_SUBJECTS
   const cardTitle = title ?? 'Score distribution · Sample'
 
@@ -219,10 +220,10 @@ export default function BellCurve({ subjects, title, overallScore }: BellCurvePr
               {/* Circle on curve */}
               <circle cx={mx} cy={my} r="4" fill="white" stroke={dotColor} strokeWidth="2" />
 
-              {/* 3-line label block */}
-              <text x={mx} y={y1}             textAnchor="middle" fontSize="8.5" fill={color}    fontWeight="700">{label}</text>
-              <text x={mx} y={y1 + LINE_H}    textAnchor="middle" fontSize="8"   fill="#6b7280"              >{score}</text>
-              <text x={mx} y={y1 + LINE_H * 2} textAnchor="middle" fontSize="8"   fill={dotColor} fontWeight="600">{pct}th%</text>
+              {/* label block */}
+              <text x={mx} y={y1}                                  textAnchor="middle" fontSize="8.5" fill={color}    fontWeight="700">{label}</text>
+              {!hideScores && <text x={mx} y={y1 + LINE_H}         textAnchor="middle" fontSize="8"   fill="#6b7280"              >{score}</text>}
+              <text x={mx} y={y1 + (hideScores ? LINE_H : LINE_H * 2)} textAnchor="middle" fontSize="8"   fill={dotColor} fontWeight="600">{pct}th%</text>
             </g>
           )
         })}

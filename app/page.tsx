@@ -191,7 +191,7 @@ export default function LandingPage() {
           </div>
 
           {/* Bell curve percentile visualisation */}
-          <BellCurve />
+          <BellCurve hideScores />
 
         </div>
       </section>
