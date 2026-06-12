@@ -22,11 +22,11 @@ const SAMPLE_SUBJECTS: BellCurveSubject[] = [
 ]
 
 const ZONE_LABELS = [
-  { from: 55,  to: 85,  label: 'Needs Support', clr: '#ef4444' },
+  { from: 70,  to: 85,  label: 'Needs Support', clr: '#ef4444' },
   { from: 85,  to: 95,  label: 'Below Avg',     clr: '#d97706' },
   { from: 95,  to: 110, label: 'Average',        clr: '#6366f1' },
   { from: 110, to: 120, label: 'Above Avg',      clr: '#3b82f6' },
-  { from: 120, to: 145, label: 'Exceptional',    clr: '#059669' },
+  { from: 120, to: 130, label: 'Exceptional',    clr: '#059669' },
 ]
 
 const MEAN = 100, SD = 15
@@ -90,11 +90,11 @@ const curvePoints = (() => {
 })()
 
 const ZONES = [
-  { from: X_MIN, to: 85,    fill: '#fca5a5', opacity: 0.25 },
-  { from: 85,    to: 95,    fill: '#fcd34d', opacity: 0.25 },
-  { from: 95,    to: 110,   fill: '#a5b4fc', opacity: 0.25 },
-  { from: 110,   to: 120,   fill: '#93c5fd', opacity: 0.30 },
-  { from: 120,   to: X_MAX, fill: '#6ee7b7', opacity: 0.30 },
+  { from: 70,  to: 85,  fill: '#fca5a5', opacity: 0.25 },
+  { from: 85,  to: 95,  fill: '#fcd34d', opacity: 0.25 },
+  { from: 95,  to: 110, fill: '#a5b4fc', opacity: 0.25 },
+  { from: 110, to: 120, fill: '#93c5fd', opacity: 0.30 },
+  { from: 120, to: 130, fill: '#6ee7b7', opacity: 0.30 },
 ]
 
 function zonePath(from: number, to: number) {
