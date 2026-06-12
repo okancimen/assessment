@@ -3,10 +3,9 @@ import { redirect, notFound } from 'next/navigation'
 import Link from 'next/link'
 import Navbar from '@/components/dashboard/Navbar'
 import PrintButton from './PrintButton'
-import { SUBJECT_LABELS, SUBJECTS, Subject } from '@/types'
+import { SUBJECT_LABELS, SUBJECTS } from '@/types'
 import { getScoreLabel, getScoreColor, getScoreBgColor } from '@/lib/assessment/adaptive'
 import { formatDate } from '@/lib/utils'
-import type { Recommendation } from '@/lib/claude/recommendations'
 import RegenRecommendations from './RegenRecommendations'
 import Confetti from './Confetti'
 import BellCurve, { type BellCurveSubject } from '@/components/landing/BellCurve'
@@ -58,7 +57,7 @@ export default async function ResultsPage({
 
   const overallLabel = getScoreLabel(result.standardized_score)
 
-  const recommendations = result.recommendations as Recommendation[] | null
+  const recommendations = result.recommendations as { subject: string; tip: string }[] | null
 
   function getBand(score: number) {
     if (score < 85) return 0
@@ -280,25 +279,7 @@ export default async function ResultsPage({
         {/* AI Recommendations */}
         <section>
           <h2 className="text-lg font-semibold text-gray-900 mb-4">Personalised recommendations</h2>
-          {recommendations && recommendations.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {recommendations.map((rec, i) => (
-                <div key={i} className="bg-white rounded-2xl border border-gray-100 p-5">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-xs font-bold flex-shrink-0">
-                      {i + 1}
-                    </span>
-                    <span className="text-xs font-semibold text-indigo-600 uppercase tracking-wide">
-                      {SUBJECT_LABELS[rec.subject as Subject] ?? rec.subject}
-                    </span>
-                  </div>
-                  <p className="text-sm text-gray-700 leading-relaxed">{rec.tip}</p>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <RegenRecommendations assessmentId={id} />
-          )}
+          <RegenRecommendations assessmentId={id} initialRecs={recommendations} />
         </section>
 
         {/* Score legend */}

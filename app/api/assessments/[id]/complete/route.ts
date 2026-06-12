@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
 import { computeResults, computeOverallScore, getScoreLabel } from '@/lib/assessment/adaptive'
-import { generateRecommendations } from '@/lib/claude/recommendations'
 import { sendResultsEmail } from '@/lib/email'
 
 export async function POST(
@@ -60,36 +59,15 @@ export async function POST(
     .update({ status: 'completed', completed_at: new Date().toISOString() })
     .eq('id', id)
 
-  const age = Math.floor(
-    (Date.now() - new Date(child.date_of_birth).getTime()) / (365.25 * 24 * 60 * 60 * 1000)
-  )
-
-  // Step 2: Generate AI recommendations + send email in parallel (both are optional)
-  const [recommendations] = await Promise.all([
-    generateRecommendations(child.name, age, subjectResults).catch((err) => {
-      console.error('[recommendations]', err instanceof Error ? err.message : err)
-      return null
-    }),
-    // Email is fully fire-and-forget
-    (async () => {
-      const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://eduentry.com'
-      sendResultsEmail({
-        to: user.email!,
-        childName: child.name,
-        overallScore: standardized_score,
-        scoreLabel: getScoreLabel(standardized_score),
-        resultsUrl: `${siteUrl}/results/${id}`,
-      }).catch(() => {})
-    })(),
-  ])
-
-  // Step 3: Save recommendations separately — failure here never blocks the response
-  if (recommendations) {
-    await supabase
-      .from('results')
-      .update({ recommendations })
-      .eq('id', result.id)
-  }
+  // Send results email (fire-and-forget)
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://eduentry.com'
+  sendResultsEmail({
+    to: user.email!,
+    childName: child.name,
+    overallScore: standardized_score,
+    scoreLabel: getScoreLabel(standardized_score),
+    resultsUrl: `${siteUrl}/results/${id}`,
+  }).catch(() => {})
 
   return NextResponse.json({ result_id: result.id })
   } catch (err) {
