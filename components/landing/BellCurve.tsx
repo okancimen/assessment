@@ -150,19 +150,17 @@ export default function BellCurve({ subjects, title, overallScore }: BellCurvePr
           <div className="flex justify-between text-xs text-gray-400 mb-1">
             {['70','85','100','115','130'].map(n => <span key={n}>{n}</span>)}
           </div>
+          {/* Segment widths are proportional to zone size within the 70–130 range */}
           <div className="relative h-3 rounded-full overflow-hidden flex">
-            <div className="flex-1 bg-red-100" />
-            <div className="flex-1 bg-amber-100" />
-            <div className="flex-1 bg-indigo-100" />
-            <div className="flex-1 bg-blue-100" />
-            <div className="flex-1 bg-emerald-100" />
+            <div style={{ width: '25%' }}    className="bg-red-100" />
+            <div style={{ width: '16.67%' }} className="bg-amber-100" />
+            <div style={{ width: '25%' }}    className="bg-indigo-100" />
+            <div style={{ width: '16.67%' }} className="bg-blue-100" />
+            <div style={{ width: '16.66%' }} className="bg-emerald-100" />
             <div
               className="absolute top-0 h-full w-1.5 bg-gray-700 rounded-full -translate-x-1/2"
               style={{ left: `${((overallScore - 70) / 60) * 100}%` }}
             />
-          </div>
-          <div className="flex justify-between text-xs text-gray-400 mt-1">
-            {['Needs Support','Below Avg','Average','Above Avg','Exceptional'].map(l => <span key={l}>{l}</span>)}
           </div>
         </div>
       )}
