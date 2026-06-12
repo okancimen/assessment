@@ -91,6 +91,32 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const EDUCATIONAL_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOrganization',
+  name: 'Eduentry',
+  url: 'https://eduentry.com',
+  description: 'Free AI-powered adaptive assessment platform providing percentile rankings and standardised scores for children aged 6–17 against international benchmarks.',
+  teaches: [
+    'English Language',
+    'Mathematics',
+    'Verbal Reasoning',
+    'Non-Verbal Reasoning',
+  ],
+  educationalLevel: 'Ages 6–17',
+  audience: {
+    '@type': 'EducationalAudience',
+    educationalRole: 'student',
+    audienceType: 'children aged 6 to 17',
+  },
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'GBP',
+    description: 'Free adaptive academic assessment with international benchmarking and percentile rankings',
+  },
+}
+
 const subjectIcons: Record<string, string> = {
   english: '📚',
   mathematics: '🔢',
@@ -111,6 +137,7 @@ export default function LandingPage() {
       {/* Structured data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(EDUCATIONAL_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       {/* Nav */}
