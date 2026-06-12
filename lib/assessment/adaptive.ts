@@ -88,7 +88,7 @@ export function optimalDifficulty(theta: number, currentDifficulty = 5): Difficu
 export function getInitialDifficulty(age: number): DifficultyLevel {
   // θ₀ assumed 0 for all ages; use Fisher-optimal difficulty at θ=0 (which is 5)
   // Slight upward adjustment for older children who face a harder expected baseline
-  const ageOffset = Math.round(((age - 7) / 9) * 2) // 0 for age 7, +2 for age 16
+  const ageOffset = Math.round(((age - 6) / 11) * 2) // 0 for age 6, +2 for age 17
   return Math.max(1, Math.min(10, 5 + ageOffset)) as DifficultyLevel
 }
 

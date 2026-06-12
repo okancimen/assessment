@@ -5,15 +5,15 @@ import BellCurve from '@/components/landing/BellCurve'
 import Logo from '@/components/ui/Logo'
 
 export const metadata: Metadata = {
-  title: 'Eduentry — International Academic Benchmark for Children | Ages 7–16',
+  title: 'Eduentry — International Academic Benchmark for Children | Ages 6–17',
   description:
-    'Free adaptive assessment that shows how your child compares to international education standards — UK National Curriculum, US grade levels, PISA and IB benchmarks. Ages 7–16.',
+    'Free adaptive assessment that shows how your child compares to international education standards — UK National Curriculum, US grade levels, PISA and IB benchmarks. Ages 6–17.',
   alternates: { canonical: 'https://eduentry.com' },
   openGraph: {
     url: 'https://eduentry.com',
     title: 'Eduentry — International Academic Benchmark for Children',
     description:
-      "See where your child stands globally. A free adaptive test benchmarked against UK, US, PISA and IB standards for ages 7–16.",
+      "See where your child stands globally. A free adaptive test benchmarked against UK, US, PISA and IB standards for ages 6–17.",
   },
 }
 
@@ -58,7 +58,7 @@ const FAQ_SCHEMA = {
       name: 'What age groups is Eduentry suitable for?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Eduentry supports children aged 7 to 16. The AI adapts question content and vocabulary to the child's exact age, so a 7-year-old and a 15-year-old receive age-appropriate questions even within the same subject.",
+        text: "Eduentry supports children aged 6 to 17. The AI adapts question content and vocabulary to the child's exact age, so a 6-year-old and a 17-year-old receive age-appropriate questions even within the same subject.",
       },
     },
     {
@@ -78,7 +78,7 @@ const ORGANIZATION_SCHEMA = {
   name: 'Eduentry',
   url: 'https://eduentry.com',
   logo: 'https://eduentry.com/logo.jpg',
-  description: 'Free international academic benchmark for children aged 7–16, measuring performance against UK, US, PISA and IB standards.',
+  description: 'Free international academic benchmark for children aged 6–17, measuring performance against UK, US, PISA and IB standards.',
   foundingDate: '2026',
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
@@ -123,7 +123,7 @@ export default function LandingPage() {
       <section className="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
         <div className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 rounded-full px-4 py-1.5 text-sm font-medium mb-8">
           <span className="w-2 h-2 bg-indigo-500 rounded-full inline-block animate-pulse" />
-          International academic benchmarking · Ages 7–16
+          International academic benchmarking · Ages 6–17
         </div>
         <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 leading-tight mb-6 tracking-tight">
           How does your child compare{' '}
@@ -408,7 +408,7 @@ export default function LandingPage() {
             { value: '60', label: 'Adaptive questions' },
             { value: '4', label: 'International frameworks' },
             { value: '10', label: 'Difficulty levels' },
-            { value: '7–16', label: 'Age range' },
+            { value: '6–17', label: 'Age range' },
           ].map(({ value, label }) => (
             <div key={label}>
               <div className="text-4xl font-bold mb-1">{value}</div>
@@ -443,7 +443,7 @@ export default function LandingPage() {
             },
             {
               q: 'What age groups is this suitable for?',
-              a: "Eduentry supports children aged 7 to 16. The AI adapts question content and vocabulary to the child's exact age, so a 7-year-old and a 15-year-old receive age-appropriate questions even within the same subject.",
+              a: "Eduentry supports children aged 6 to 17. The AI adapts question content and vocabulary to the child's exact age, so a 6-year-old and a 17-year-old receive age-appropriate questions even within the same subject.",
             },
             {
               q: "Is my child's data private?",

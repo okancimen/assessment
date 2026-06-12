@@ -5,11 +5,11 @@ import { Subject, Question, QuestionOption, DifficultyLevel, SUBJECT_TOPICS } fr
 const client = new Anthropic()
 
 function getAgeDescriptor(age: number): string {
-  if (age <= 8) return 'early primary (age 7-8)'
-  if (age <= 10) return 'primary (age 9-10)'
+  if (age <= 7) return 'early primary (age 6-7)'
+  if (age <= 10) return 'primary (age 8-10)'
   if (age <= 12) return 'upper primary (age 11-12)'
   if (age <= 14) return 'early secondary (age 13-14)'
-  return 'secondary (age 15-16)'
+  return 'secondary (age 15-17)'
 }
 
 function getDifficultyDescriptor(level: number): string {

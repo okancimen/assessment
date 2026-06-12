@@ -22,8 +22,8 @@ export default function AddChildPage() {
     const age = Math.floor(
       (Date.now() - new Date(dateOfBirth).getTime()) / (365.25 * 24 * 60 * 60 * 1000)
     )
-    if (age < 7 || age > 16) {
-      setError('Child must be between 7 and 16 years old')
+    if (age < 6 || age > 17) {
+      setError('Child must be between 6 and 17 years old')
       setLoading(false)
       return
     }
@@ -46,8 +46,8 @@ export default function AddChildPage() {
   }
 
   const today = new Date().toISOString().split('T')[0]
-  const minDate = new Date(Date.now() - 16 * 365.25 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
-  const maxDate = new Date(Date.now() - 7 * 365.25 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+  const minDate = new Date(Date.now() - 17 * 365.25 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+  const maxDate = new Date(Date.now() - 6 * 365.25 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -61,7 +61,7 @@ export default function AddChildPage() {
 
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
           <h1 className="text-xl font-bold text-gray-900 mb-1">Add a child</h1>
-          <p className="text-sm text-gray-500 mb-6">Children must be aged 7–16 to take the assessment.</p>
+          <p className="text-sm text-gray-500 mb-6">Children must be aged 6–17 to take the assessment.</p>
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
@@ -91,7 +91,7 @@ export default function AddChildPage() {
                 max={maxDate}
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-gray-900"
               />
-              <p className="text-xs text-gray-400 mt-1">Ages 7–16 only</p>
+              <p className="text-xs text-gray-400 mt-1">Ages 6–17 only</p>
             </div>
 
             {error && (

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Eduentry",
   },
   description:
-    "Free adaptive assessment that shows how your child compares to international education standards — UK National Curriculum, US grade levels, PISA and IB benchmarks. Ages 7–16.",
+    "Free adaptive assessment that shows how your child compares to international education standards — UK National Curriculum, US grade levels, PISA and IB benchmarks. Ages 6–17.",
   keywords: [
     "international academic benchmark",
     "children assessment",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "English test for children",
     "verbal reasoning test",
     "non-verbal reasoning test",
-    "ages 7 to 16",
+    "ages 6 to 17",
     "compare child internationally",
   ],
   authors: [{ name: "Eduentry" }],
@@ -54,14 +54,14 @@ export const metadata: Metadata = {
     siteName: "Eduentry",
     title: "Eduentry — Free Academic Assessment for Children",
     description:
-      "Free AI-powered adaptive assessment for children aged 7–16. Standardised scores across English, Maths, Verbal and Non-Verbal Reasoning.",
+      "Free AI-powered adaptive assessment for children aged 6–17. Standardised scores across English, Maths, Verbal and Non-Verbal Reasoning.",
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Eduentry — Academic Assessment for Children" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Eduentry — Free Academic Assessment for Children",
     description:
-      "AI-powered adaptive assessment for children aged 7–16. Standardised scores + personalised recommendations.",
+      "AI-powered adaptive assessment for children aged 6–17. Standardised scores + personalised recommendations.",
     images: ["/opengraph-image"],
   },
 };

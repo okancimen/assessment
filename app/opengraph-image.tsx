@@ -38,7 +38,7 @@ export default function Image() {
 
         {/* Sub */}
         <div style={{ fontSize: 26, color: '#6b7280', textAlign: 'center', marginBottom: 48 }}>
-          AI-powered adaptive testing · Ages 7–16 · Standardised scores
+          AI-powered adaptive testing · Ages 6–17 · Standardised scores
         </div>
 
         {/* Pillars */}
