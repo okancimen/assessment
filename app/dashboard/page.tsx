@@ -58,7 +58,7 @@ export default async function DashboardPage() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold text-gray-900">
-              Hello, {profile?.full_name?.split(' ')[0] || 'there'}
+              Hello, {(profile?.full_name || user.user_metadata?.full_name)?.split(' ')[0] || 'there'}
             </h1>
             <p className="text-gray-500 mt-1">Manage your children&apos;s assessments</p>
           </div>
