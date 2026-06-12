@@ -10,6 +10,7 @@ export interface BellCurveSubject {
 interface BellCurveProps {
   subjects?: BellCurveSubject[]
   title?: string
+  overallScore?: number
 }
 
 const SAMPLE_SUBJECTS: BellCurveSubject[] = [
@@ -129,7 +130,7 @@ function assignRows(subjects: BellCurveSubject[]): number[] {
 
 const centerX = sx(MEAN)
 
-export default function BellCurve({ subjects, title }: BellCurveProps) {
+export default function BellCurve({ subjects, title, overallScore }: BellCurveProps) {
   const displaySubjects = subjects ?? SAMPLE_SUBJECTS
   const cardTitle = title ?? 'Score distribution · Sample'
 
@@ -143,6 +144,28 @@ export default function BellCurve({ subjects, title }: BellCurveProps) {
       <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">
         {cardTitle}
       </p>
+
+      {overallScore !== undefined && (
+        <div className="mb-4">
+          <div className="flex justify-between text-xs text-gray-400 mb-1">
+            {['70','85','100','115','130'].map(n => <span key={n}>{n}</span>)}
+          </div>
+          <div className="relative h-3 rounded-full overflow-hidden flex">
+            <div className="flex-1 bg-red-100" />
+            <div className="flex-1 bg-amber-100" />
+            <div className="flex-1 bg-indigo-100" />
+            <div className="flex-1 bg-blue-100" />
+            <div className="flex-1 bg-emerald-100" />
+            <div
+              className="absolute top-0 h-full w-1.5 bg-gray-700 rounded-full -translate-x-1/2"
+              style={{ left: `${((overallScore - 70) / 60) * 100}%` }}
+            />
+          </div>
+          <div className="flex justify-between text-xs text-gray-400 mt-1">
+            {['Needs Support','Below Avg','Average','Above Avg','Exceptional'].map(l => <span key={l}>{l}</span>)}
+          </div>
+        </div>
+      )}
 
       <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label="Bell curve showing score distribution">
 

@@ -162,41 +162,11 @@ export default async function ResultsPage({
             </div>
           </div>
 
-          {/* Score bar */}
-          <div className="mt-6">
-            <div className="flex justify-between text-xs text-gray-400 mb-1">
-              <span>70</span>
-              <span>85</span>
-              <span>100</span>
-              <span>115</span>
-              <span>130</span>
-            </div>
-            <div className="relative h-4 bg-gray-100 rounded-full overflow-hidden">
-              <div className="absolute inset-0 flex">
-                <div className="flex-1 bg-red-100" />
-                <div className="flex-1 bg-amber-100" />
-                <div className="flex-1 bg-indigo-100" />
-                <div className="flex-1 bg-blue-100" />
-                <div className="flex-1 bg-emerald-100" />
-              </div>
-              <div
-                className="absolute top-0 h-full w-1.5 bg-gray-800 rounded-full transform -translate-x-1/2 transition-all"
-                style={{ left: `${((result.standardized_score - 70) / 60) * 100}%` }}
-              />
-            </div>
-            <div className="flex justify-between text-xs text-gray-400 mt-1">
-              <span>Needs Support</span>
-              <span>Below Avg</span>
-              <span>Average</span>
-              <span>Above Avg</span>
-              <span>Exceptional</span>
-            </div>
-          </div>
         </div>
 
         {/* Percentile bell curve */}
         {bellCurveSubjects.length > 0 && (
-          <BellCurve subjects={bellCurveSubjects} title="Score distribution · Percentile ranking" />
+          <BellCurve subjects={bellCurveSubjects} title="Score distribution · Percentile ranking" overallScore={result.standardized_score} />
         )}
 
         {/* International context */}
