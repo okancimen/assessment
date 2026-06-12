@@ -10,7 +10,7 @@ export async function sendResultsEmail(opts: ResultsEmailOptions): Promise<void>
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) return
 
-  const from = process.env.EMAIL_FROM ?? 'AcademIQ <noreply@edubot.com.tr>'
+  const from = process.env.EMAIL_FROM ?? 'Eduentry <noreply@eduentry.com>'
 
   await fetch('https://api.resend.com/emails', {
     method: 'POST',
@@ -40,7 +40,7 @@ export async function sendResultsEmail(opts: ResultsEmailOptions): Promise<void>
           </a>
 
           <p style="color:#9ca3af;font-size:11px;text-align:center;margin:0">
-            AcademIQ &middot; AI-powered adaptive academic assessment
+            Eduentry &middot; AI-powered adaptive academic assessment
           </p>
         </div>
       `,
