@@ -73,6 +73,10 @@ function sy(ratio: number) {
   return PAD_T + CH - ratio * CH
 }
 
+// Horizontal inset so score bar's 70 and 130 sit directly above sx(70)/sx(130) on the curve
+const BAR_L = `${(sx(70)  / W * 100).toFixed(3)}%`  // ≈ 18.254%
+const BAR_R = `${((W - sx(130)) / W * 100).toFixed(3)}%`
+
 const STEP = 0.4
 
 // Pre-computed at module load — depends only on fixed CH/PAD_T
@@ -146,7 +150,7 @@ export default function BellCurve({ subjects, title, overallScore }: BellCurvePr
       </p>
 
       {overallScore !== undefined && (
-        <div className="mb-4">
+        <div className="mb-4" style={{ paddingLeft: BAR_L, paddingRight: BAR_R }}>
           <div className="flex justify-between text-xs text-gray-400 mb-1">
             {['70','85','100','115','130'].map(n => <span key={n}>{n}</span>)}
           </div>
