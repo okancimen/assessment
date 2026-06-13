@@ -712,11 +712,13 @@ export default function LandingPage() {
             <span>·</span>
             <span>International academic benchmarking</span>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 flex-wrap justify-center sm:justify-end">
+            <Link href="/about" className="hover:text-gray-600 transition-colors">About</Link>
             <Link href="/methodology" className="hover:text-gray-600 transition-colors">Methodology</Link>
+            <Link href="/privacy" className="hover:text-gray-600 transition-colors">Privacy</Link>
+            <Link href="/terms" className="hover:text-gray-600 transition-colors">Terms</Link>
             <Link href="/auth/login" prefetch={false} className="hover:text-gray-600 transition-colors">Sign in</Link>
             <Link href="/auth/register" prefetch={false} className="hover:text-gray-600 transition-colors">Register</Link>
-            <a href="https://www.anthropic.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">Powered by Claude AI</a>
           </div>
         </div>
       </footer>
