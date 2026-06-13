@@ -271,6 +271,13 @@ const subjectColors: Record<string, string> = {
   nonverbal_reasoning: 'bg-amber-50 border-amber-100',
 }
 
+const subjectSlugs: Record<string, string> = {
+  english: 'english',
+  mathematics: 'maths',
+  verbal_reasoning: 'verbal-reasoning',
+  nonverbal_reasoning: 'non-verbal-reasoning',
+}
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -287,6 +294,9 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <Logo size="sm" />
           <div className="flex items-center gap-4">
+            <Link href="/11-plus" className="text-sm text-gray-500 hover:text-gray-900 font-medium hidden sm:block">
+              11+ Prep
+            </Link>
             <Link href="/methodology" className="text-sm text-gray-500 hover:text-gray-900 font-medium hidden sm:block">
               Methodology
             </Link>
@@ -397,11 +407,12 @@ export default function LandingPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {SUBJECTS.map((subject) => (
-              <div key={subject} className={`rounded-2xl p-6 border ${subjectColors[subject]}`}>
+              <Link key={subject} href={`/subjects/${subjectSlugs[subject]}`} className={`rounded-2xl p-6 border ${subjectColors[subject]} hover:shadow-sm transition-shadow`}>
                 <div className="text-3xl mb-4">{subjectIcons[subject]}</div>
                 <h3 className="font-semibold text-gray-900 mb-2">{SUBJECT_LABELS[subject]}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">{SUBJECT_DESCRIPTIONS[subject]}</p>
-              </div>
+                <span className="text-xs text-indigo-600 font-medium mt-3 block">Learn more →</span>
+              </Link>
             ))}
           </div>
         </div>

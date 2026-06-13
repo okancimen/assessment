@@ -122,6 +122,16 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
   const subject = SUBJECTS[slug as Slug]
   if (!subject) notFound()
 
+  const breadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://eduentry.com' },
+      { '@type': 'ListItem', position: 2, name: 'Subjects', item: 'https://eduentry.com/about' },
+      { '@type': 'ListItem', position: 3, name: subject.headline, item: `https://eduentry.com/subjects/${slug}` },
+    ],
+  }
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Course',
@@ -137,6 +147,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
 
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <nav className="border-b border-gray-100 py-4 px-6">

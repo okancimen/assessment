@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://eduentry.com/methodology' },
 }
 
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://eduentry.com' },
+    { '@type': 'ListItem', position: 2, name: 'Methodology', item: 'https://eduentry.com/methodology' },
+  ],
+}
+
 const METHODOLOGY_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -27,6 +36,7 @@ const METHODOLOGY_SCHEMA = {
 export default function MethodologyPage() {
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(METHODOLOGY_SCHEMA) }} />
 
       <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
