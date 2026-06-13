@@ -290,10 +290,10 @@ export default function LandingPage() {
             <Link href="/methodology" className="text-sm text-gray-500 hover:text-gray-900 font-medium hidden sm:block">
               Methodology
             </Link>
-            <Link href="/auth/login" className="text-sm text-gray-600 hover:text-gray-900 font-medium hidden sm:block">
+            <Link href="/auth/login" prefetch={false} className="text-sm text-gray-600 hover:text-gray-900 font-medium hidden sm:block">
               Sign in
             </Link>
-            <Link href="/auth/register" className="bg-indigo-600 text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-indigo-700 transition-colors">
+            <Link href="/auth/register" prefetch={false} className="bg-indigo-600 text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-indigo-700 transition-colors">
               Get started free
             </Link>
           </div>
@@ -315,7 +315,7 @@ export default function LandingPage() {
           so you know exactly where your child stands, not just in their class, but internationally.
         </p>
         <div className="flex items-center justify-center gap-4 flex-wrap mb-12">
-          <Link href="/auth/register" className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-indigo-700 transition-colors shadow-md shadow-indigo-100">
+          <Link href="/auth/register" prefetch={false} className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-indigo-700 transition-colors shadow-md shadow-indigo-100">
             Start free assessment
           </Link>
           <Link href="#methodology" className="text-gray-600 px-8 py-4 rounded-xl text-base font-semibold hover:text-gray-900 hover:bg-gray-50 transition-colors border border-gray-200">
@@ -714,8 +714,8 @@ export default function LandingPage() {
           </div>
           <div className="flex items-center gap-5">
             <Link href="/methodology" className="hover:text-gray-600 transition-colors">Methodology</Link>
-            <Link href="/auth/login" className="hover:text-gray-600 transition-colors">Sign in</Link>
-            <Link href="/auth/register" className="hover:text-gray-600 transition-colors">Register</Link>
+            <Link href="/auth/login" prefetch={false} className="hover:text-gray-600 transition-colors">Sign in</Link>
+            <Link href="/auth/register" prefetch={false} className="hover:text-gray-600 transition-colors">Register</Link>
             <a href="https://www.anthropic.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">Powered by Claude AI</a>
           </div>
         </div>
