@@ -55,11 +55,9 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           {subject.tagline} · Ages 6–17 · Standardised scores
         </div>
         <div style={{ display: 'flex', gap: 16 }}>
-          {subject.pills.map((pill) => (
-            <div key={pill} style={{ background: subject.pillBg, borderRadius: 12, padding: '10px 22px', fontSize: 18, color: subject.accent, fontWeight: 600 }}>
-              {pill}
-            </div>
-          ))}
+          <div style={{ background: subject.pillBg, borderRadius: 12, padding: '10px 22px', fontSize: 18, color: subject.accent, fontWeight: 600 }}>{subject.pills[0]}</div>
+          <div style={{ background: subject.pillBg, borderRadius: 12, padding: '10px 22px', fontSize: 18, color: subject.accent, fontWeight: 600 }}>{subject.pills[1]}</div>
+          <div style={{ background: subject.pillBg, borderRadius: 12, padding: '10px 22px', fontSize: 18, color: subject.accent, fontWeight: 600 }}>{subject.pills[2]}</div>
         </div>
         <div style={{ position: 'absolute', bottom: 32, right: 60, fontSize: 20, color: '#9ca3af' }}>eduentry.com</div>
       </div>

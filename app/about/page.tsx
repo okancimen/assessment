@@ -21,7 +21,7 @@ const ABOUT_SCHEMA = {
     name: 'Eduentry',
     url: 'https://eduentry.com',
     description: 'Free AI-powered adaptive academic assessment platform for children aged 6–17. Standardised scores and international percentile rankings across English, Maths, Verbal and Non-Verbal Reasoning.',
-    foundingDate: '2024',
+    foundingDate: '2026',
     areaServed: ['United Kingdom', 'International'],
     educationalCredentialAwarded: 'Standardised academic assessment report',
     hasOfferCatalog: {

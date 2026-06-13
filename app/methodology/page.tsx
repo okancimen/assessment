@@ -25,8 +25,16 @@ const METHODOLOGY_SCHEMA = {
   headline: 'Eduentry Assessment Methodology',
   description: 'Technical explanation of how Eduentry uses Item Response Theory to produce standardised academic scores and international percentile rankings for children aged 6–17.',
   url: 'https://eduentry.com/methodology',
+  datePublished: '2026-01-01',
+  dateModified: '2026-06-01',
+  image: 'https://eduentry.com/methodology/opengraph-image',
   author: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
-  publisher: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Eduentry',
+    url: 'https://eduentry.com',
+    logo: { '@type': 'ImageObject', url: 'https://eduentry.com/logo.jpg' },
+  },
   about: [
     { '@type': 'Thing', name: 'Item Response Theory' },
     { '@type': 'Thing', name: 'Adaptive Testing' },
