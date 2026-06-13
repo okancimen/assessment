@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Assessment Methodology — How Eduentry Works',
   description: 'How Eduentry measures academic ability: 2PL Item Response Theory, MAP estimation, standardised scoring (mean 100, SD 15), and international benchmarking against UK, PISA, US and IB frameworks.',
   alternates: { canonical: 'https://eduentry.com/methodology' },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 }
 
 const BREADCRUMB_SCHEMA = {

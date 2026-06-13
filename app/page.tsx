@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     'Free adaptive assessment that shows how your child compares to international education standards — UK National Curriculum, US grade levels, PISA and IB benchmarks. Ages 6–17.',
   alternates: { canonical: 'https://eduentry.com' },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     url: 'https://eduentry.com',
     title: 'Eduentry — International Academic Benchmark for Children',
