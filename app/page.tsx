@@ -287,6 +287,9 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <Logo size="sm" />
           <div className="flex items-center gap-4">
+            <Link href="/methodology" className="text-sm text-gray-500 hover:text-gray-900 font-medium hidden sm:block">
+              Methodology
+            </Link>
             <Link href="/auth/login" className="text-sm text-gray-600 hover:text-gray-900 font-medium hidden sm:block">
               Sign in
             </Link>
@@ -677,6 +680,12 @@ export default function LandingPage() {
             </details>
           ))}
         </div>
+        <p className="text-center text-sm text-gray-400 mt-6">
+          Want to understand the scoring methodology?{' '}
+          <Link href="/methodology" className="text-indigo-500 hover:text-indigo-700 font-medium">
+            Read how Eduentry works →
+          </Link>
+        </p>
       </section>
 
       {/* CTA */}
@@ -704,6 +713,7 @@ export default function LandingPage() {
             <span>International academic benchmarking</span>
           </div>
           <div className="flex items-center gap-5">
+            <Link href="/methodology" className="hover:text-gray-600 transition-colors">Methodology</Link>
             <Link href="/auth/login" className="hover:text-gray-600 transition-colors">Sign in</Link>
             <Link href="/auth/register" className="hover:text-gray-600 transition-colors">Register</Link>
             <a href="https://www.anthropic.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">Powered by Claude AI</a>
