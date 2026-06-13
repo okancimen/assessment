@@ -1,0 +1,91 @@
+User-agent: GPTBot
+Allow: /
+Disallow: /dashboard
+Disallow: /children/
+Disallow: /assessment/
+Disallow: /results/
+Disallow: /api/
+Disallow: /auth/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /dashboard
+Disallow: /children/
+Disallow: /assessment/
+Disallow: /results/
+Disallow: /api/
+Disallow: /auth/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /dashboard
+Disallow: /children/
+Disallow: /assessment/
+Disallow: /results/
+Disallow: /api/
+Disallow: /auth/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /dashboard
+Disallow: /children/
+Disallow: /assessment/
+Disallow: /results/
+Disallow: /api/
+Disallow: /auth/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /dashboard
+Disallow: /children/
+Disallow: /assessment/
+Disallow: /results/
+Disallow: /api/
+Disallow: /auth/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /dashboard
+Disallow: /children/
+Disallow: /assessment/
+Disallow: /results/
+Disallow: /api/
+Disallow: /auth/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /dashboard
+Disallow: /children/
+Disallow: /assessment/
+Disallow: /results/
+Disallow: /api/
+Disallow: /auth/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /dashboard
+Disallow: /children/
+Disallow: /assessment/
+Disallow: /results/
+Disallow: /api/
+Disallow: /auth/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /dashboard
+Disallow: /children/
+Disallow: /assessment/
+Disallow: /results/
+Disallow: /api/
+Disallow: /auth/
+
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /children/
+Disallow: /assessment/
+Disallow: /results/
+Disallow: /api/
+Disallow: /auth/
+
+Sitemap: https://eduentry.com/sitemap.xml
