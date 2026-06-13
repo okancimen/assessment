@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'How Eduentry collects, uses, and protects your personal data and your child\'s assessment information. GDPR compliant.',
   alternates: { canonical: 'https://eduentry.com/privacy' },
-  robots: { index: true, follow: true },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 }
 
 export default function PrivacyPage() {

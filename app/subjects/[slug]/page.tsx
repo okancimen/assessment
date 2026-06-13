@@ -114,7 +114,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: subject.description,
     alternates: { canonical: `https://eduentry.com/subjects/${slug}` },
     keywords: subject.longTailKeywords,
-    robots: { index: true, follow: true },
+    robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   }
 }
 

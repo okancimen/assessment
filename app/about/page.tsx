@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'About Eduentry — Free Academic Assessment for Children',
   description: 'Eduentry provides free adaptive academic assessments for children aged 6–17, benchmarked against UK, PISA, and IB standards. Built on Item Response Theory and powered by Claude AI.',
   alternates: { canonical: 'https://eduentry.com/about' },
-  robots: { index: true, follow: true },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 }
 
 const ABOUT_SCHEMA = {

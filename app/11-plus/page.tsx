@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Free 11+ practice tests for verbal reasoning, non-verbal reasoning, English and maths. Adaptive questions, standardised scores, and percentile rankings. Used by UK families preparing for grammar school and independent school entry.',
   keywords: '11 plus practice test free, 11+ verbal reasoning test, 11+ non-verbal reasoning free, free 11 plus test online, grammar school entrance test free, 11+ preparation UK',
   alternates: { canonical: 'https://eduentry.com/11-plus' },
-  robots: { index: true, follow: true },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 }
 
 const BREADCRUMB_SCHEMA = {
