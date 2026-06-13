@@ -75,6 +75,9 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={`${geist.variable} h-full antialiased`}>
       <head>
+        <link rel="preconnect" href="https://xronkbdtsnjibwhuelni.supabase.co" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-F60J3BHJDE" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
