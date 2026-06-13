@@ -307,8 +307,8 @@ export default function LandingPage() {
           International academic benchmarking · Ages 6–17
         </div>
         <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 leading-tight mb-6 tracking-tight">
-          How does your child compare{' '}
-          <span className="text-indigo-600">to the world?</span>
+          Free academic assessment —{' '}
+          <span className="text-indigo-600">how does your child compare?</span>
         </h1>
         <p className="text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
           A free adaptive assessment benchmarked against UK, US, PISA and IB standards —

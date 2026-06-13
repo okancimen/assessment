@@ -43,11 +43,10 @@ export default function Image() {
 
         {/* Pillars */}
         <div style={{ display: 'flex', gap: 20 }}>
-          {['English', 'Mathematics', 'Verbal Reasoning', 'Non-Verbal Reasoning'].map((s) => (
-            <div key={s} style={{ background: '#eef2ff', borderRadius: 12, padding: '10px 20px', fontSize: 20, color: '#4f46e5', fontWeight: 600 }}>
-              {s}
-            </div>
-          ))}
+          <div style={{ background: '#eef2ff', borderRadius: 12, padding: '10px 20px', fontSize: 20, color: '#4f46e5', fontWeight: 600 }}>English</div>
+          <div style={{ background: '#eef2ff', borderRadius: 12, padding: '10px 20px', fontSize: 20, color: '#4f46e5', fontWeight: 600 }}>Mathematics</div>
+          <div style={{ background: '#eef2ff', borderRadius: 12, padding: '10px 20px', fontSize: 20, color: '#4f46e5', fontWeight: 600 }}>Verbal Reasoning</div>
+          <div style={{ background: '#eef2ff', borderRadius: 12, padding: '10px 20px', fontSize: 20, color: '#4f46e5', fontWeight: 600 }}>Non-Verbal Reasoning</div>
         </div>
 
         {/* URL */}
