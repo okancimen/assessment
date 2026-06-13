@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Eduentry — International Academic Benchmark for Children | Ages 6–17',
   description:
     'Free adaptive assessment that shows how your child compares to international education standards — UK National Curriculum, US grade levels, PISA and IB benchmarks. Ages 6–17.',
-  alternates: { canonical: 'https://eduentry.com' },
+  alternates: { canonical: 'https://eduentry.com', languages: { 'en-GB': 'https://eduentry.com', 'x-default': 'https://eduentry.com' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     url: 'https://eduentry.com',
@@ -219,6 +219,14 @@ const WEBSITE_SCHEMA = {
   name: 'Eduentry',
   url: 'https://eduentry.com',
   description: 'Free adaptive assessment benchmarked against UK, US, PISA and IB standards for children aged 6–17.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://eduentry.com/search?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
 }
 
 const ORGANIZATION_SCHEMA = {

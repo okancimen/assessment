@@ -6,7 +6,7 @@ import PublicFooter from '@/components/layout/PublicFooter'
 export const metadata: Metadata = {
   title: 'Terms of Service',
   description: 'Terms and conditions for using the Eduentry academic assessment platform.',
-  alternates: { canonical: 'https://eduentry.com/terms' },
+  alternates: { canonical: 'https://eduentry.com/terms', languages: { 'en-GB': 'https://eduentry.com/terms', 'x-default': 'https://eduentry.com/terms' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 }
 
