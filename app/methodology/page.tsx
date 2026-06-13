@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Logo from '@/components/ui/Logo'
+import PublicNav from '@/components/layout/PublicNav'
+import PublicFooter from '@/components/layout/PublicFooter'
 
 export const metadata: Metadata = {
   title: 'Assessment Methodology — How Eduentry Works',
@@ -40,14 +41,7 @@ export default function MethodologyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(METHODOLOGY_SCHEMA) }} />
 
-      <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
-        <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Logo size="sm" href="/" />
-          <Link href="/auth/register" className="text-sm font-medium bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors">
-            Free Assessment
-          </Link>
-        </div>
-      </nav>
+      <PublicNav />
 
       <main className="max-w-4xl mx-auto px-6 py-16">
         <div className="mb-12">
@@ -264,17 +258,7 @@ export default function MethodologyPage() {
         </div>
       </main>
 
-      <footer className="border-t border-gray-100 py-8 mt-8">
-        <div className="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-          <Logo size="sm" href="/" />
-          <div className="flex gap-6">
-            <Link href="/" className="hover:text-gray-600 transition-colors">Home</Link>
-            <Link href="/methodology" className="hover:text-gray-600 transition-colors">Methodology</Link>
-            <Link href="/auth/register" className="hover:text-gray-600 transition-colors">Free Assessment</Link>
-          </div>
-          <p>© 2026 Eduentry</p>
-        </div>
-      </footer>
+      <PublicFooter />
     </div>
   )
 }

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import Logo from '@/components/ui/Logo'
+import PublicNav from '@/components/layout/PublicNav'
+import PublicFooter from '@/components/layout/PublicFooter'
 
 const SUBJECTS = {
   english: {
@@ -150,14 +151,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <nav className="border-b border-gray-100 py-4 px-6">
-        <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <Logo href="/" size="sm" />
-          <Link href="/auth/register" prefetch={false} className="bg-indigo-600 text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-indigo-700 transition-colors">
-            Start free assessment
-          </Link>
-        </div>
-      </nav>
+      <PublicNav />
 
       <main className="max-w-4xl mx-auto px-6 py-16">
 
@@ -285,16 +279,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
 
       </main>
 
-      <footer className="border-t border-gray-100 py-8 mt-8">
-        <div className="max-w-4xl mx-auto px-6 flex items-center justify-between text-sm text-gray-400">
-          <span>© 2026 Eduentry</span>
-          <div className="flex gap-5">
-            <Link href="/methodology" className="hover:text-gray-600">Methodology</Link>
-            <Link href="/about" className="hover:text-gray-600">About</Link>
-            <Link href="/privacy" className="hover:text-gray-600">Privacy</Link>
-          </div>
-        </div>
-      </footer>
+      <PublicFooter />
     </div>
   )
 }

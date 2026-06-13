@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Logo from '@/components/ui/Logo'
+import PublicNav from '@/components/layout/PublicNav'
+import PublicFooter from '@/components/layout/PublicFooter'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
@@ -12,11 +13,7 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-white">
-      <nav className="border-b border-gray-100 py-4 px-6">
-        <div className="max-w-3xl mx-auto">
-          <Logo href="/" size="sm" />
-        </div>
-      </nav>
+      <PublicNav />
 
       <main className="max-w-3xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-3">Privacy Policy</h1>
@@ -157,15 +154,7 @@ export default function PrivacyPage() {
         </div>
       </main>
 
-      <footer className="border-t border-gray-100 py-8 mt-8">
-        <div className="max-w-3xl mx-auto px-6 flex items-center justify-between text-sm text-gray-400">
-          <span>© 2026 Eduentry</span>
-          <div className="flex gap-5">
-            <Link href="/terms" className="hover:text-gray-600">Terms</Link>
-            <Link href="/" className="hover:text-gray-600">Home</Link>
-          </div>
-        </div>
-      </footer>
+      <PublicFooter />
     </div>
   )
 }
