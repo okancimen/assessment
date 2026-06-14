@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     description: '2PL Item Response Theory, MAP estimation, standardised scoring (mean 100, SD 15) and international benchmarking against UK National Curriculum, PISA, US and IB frameworks.',
     url: 'https://eduentry.com/methodology',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Eduentry Works — IRT Adaptive Assessment Methodology',
+    description: '2PL Item Response Theory, MAP estimation and international benchmarking against UK, PISA, US and IB frameworks. Ages 6–17.',
+  },
 }
 
 const BREADCRUMB_SCHEMA = {
@@ -60,7 +65,7 @@ export default function MethodologyPage() {
       <main className="max-w-4xl mx-auto px-6 py-16">
         <div className="mb-12">
           <p className="text-sm font-semibold text-indigo-600 uppercase tracking-wide mb-3">Methodology</p>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">How Eduentry Works</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">How Eduentry&rsquo;s Adaptive Assessment Works</h1>
           <p className="text-xl text-gray-500 leading-relaxed">
             Eduentry uses the same psychometric methodology as professional cognitive assessments —
             Item Response Theory with adaptive questioning — to produce accurate, internationally

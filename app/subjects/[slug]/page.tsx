@@ -120,6 +120,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: subject.description,
       url: `https://eduentry.com/subjects/${slug}`,
     },
+    twitter: {
+      card: 'summary_large_image' as const,
+      title: subject.title,
+      description: subject.description,
+    },
   }
 }
 

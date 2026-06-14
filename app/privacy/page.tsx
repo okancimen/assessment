@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     description: 'How Eduentry collects, uses, and protects your personal data and your child\'s assessment results. GDPR compliant.',
     url: 'https://eduentry.com/privacy',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy — Eduentry',
+    description: 'How Eduentry protects your data and your child\'s assessment results. GDPR and UK GDPR compliant.',
+  },
 }
 
 export default function PrivacyPage() {

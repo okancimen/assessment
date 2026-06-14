@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     description: 'Terms and conditions for using Eduentry\'s free academic assessment platform.',
     url: 'https://eduentry.com/terms',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms of Service — Eduentry',
+    description: 'Terms and conditions for using Eduentry\'s free academic assessment platform.',
+  },
 }
 
 export default function TermsPage() {

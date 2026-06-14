@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     description: 'Free adaptive academic assessments benchmarked against UK, PISA, and IB standards. Standardised scores and international percentile rankings for children aged 6–17.',
     url: 'https://eduentry.com/about',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Eduentry — Free Academic Assessment for Children Ages 6–17',
+    description: 'Free adaptive academic assessments benchmarked against UK, PISA, and IB standards. Standardised scores and international percentile rankings for children aged 6–17.',
+  },
 }
 
 const ABOUT_SCHEMA = {
@@ -61,7 +66,7 @@ export default function AboutPage() {
             Free for all families
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Academic benchmarking built<br />
+            Free academic assessment<br />
             <span className="text-indigo-600">for every child, everywhere</span>
           </h1>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
