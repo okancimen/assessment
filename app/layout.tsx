@@ -72,8 +72,6 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#4f46e5" />
         <meta name="yandex-verification" content="f8b17ecde6325153" />
-        <link rel="preconnect" href="https://xronkbdtsnjibwhuelni.supabase.co" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-F60J3BHJDE" strategy="lazyOnload" />
         <Script id="google-analytics" strategy="lazyOnload">{`

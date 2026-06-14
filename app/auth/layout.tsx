@@ -5,5 +5,10 @@ export const metadata: Metadata = {
 }
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+  return (
+    <>
+      <link rel="preconnect" href="https://xronkbdtsnjibwhuelni.supabase.co" />
+      {children}
+    </>
+  )
 }
