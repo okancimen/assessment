@@ -29,7 +29,18 @@ export async function proxy(request: NextRequest) {
 
   const isAuthRoute = request.nextUrl.pathname.startsWith('/auth')
   const isPublicRoute =
-    request.nextUrl.pathname === '/' || isAuthRoute || request.nextUrl.pathname.startsWith('/api')
+    request.nextUrl.pathname === '/' ||
+    isAuthRoute ||
+    request.nextUrl.pathname.startsWith('/api') ||
+    request.nextUrl.pathname.startsWith('/methodology') ||
+    request.nextUrl.pathname.startsWith('/about') ||
+    request.nextUrl.pathname.startsWith('/11-plus') ||
+    request.nextUrl.pathname.startsWith('/subjects') ||
+    request.nextUrl.pathname.startsWith('/privacy') ||
+    request.nextUrl.pathname.startsWith('/terms') ||
+    request.nextUrl.pathname.startsWith('/search') ||
+    request.nextUrl.pathname === '/robots.txt' ||
+    request.nextUrl.pathname === '/sitemap.xml'
 
   if (!user && !isPublicRoute) {
     const url = request.nextUrl.clone()
