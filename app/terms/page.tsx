@@ -4,10 +4,16 @@ import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service',
-  description: 'Terms and conditions for using the Eduentry academic assessment platform.',
+  title: 'Terms of Service — Eduentry',
+  description: 'Terms and conditions for using Eduentry\'s free academic assessment platform. Read about eligibility, acceptable use, intellectual property, and your rights.',
+  keywords: 'Eduentry terms of service, assessment platform terms, children assessment terms and conditions',
   alternates: { canonical: 'https://eduentry.com/terms', languages: { 'en-GB': 'https://eduentry.com/terms', 'x-default': 'https://eduentry.com/terms' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  openGraph: {
+    title: 'Terms of Service — Eduentry',
+    description: 'Terms and conditions for using Eduentry\'s free academic assessment platform.',
+    url: 'https://eduentry.com/terms',
+  },
 }
 
 export default function TermsPage() {

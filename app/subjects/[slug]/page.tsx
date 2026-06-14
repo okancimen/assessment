@@ -115,6 +115,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: { canonical: `https://eduentry.com/subjects/${slug}`, languages: { 'en-GB': `https://eduentry.com/subjects/${slug}`, 'x-default': `https://eduentry.com/subjects/${slug}` } },
     keywords: subject.longTailKeywords,
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+    openGraph: {
+      title: subject.title,
+      description: subject.description,
+      url: `https://eduentry.com/subjects/${slug}`,
+    },
   }
 }
 
@@ -170,7 +175,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
             Free assessment · Ages 6–17
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-            {subject.headline}
+            {subject.title}
           </h1>
           <p className="text-xl text-gray-500 leading-relaxed max-w-2xl">{subject.tagline}</p>
         </div>

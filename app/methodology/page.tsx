@@ -6,8 +6,14 @@ import PublicFooter from '@/components/layout/PublicFooter'
 export const metadata: Metadata = {
   title: 'Assessment Methodology — How Eduentry Works',
   description: 'How Eduentry measures academic ability: 2PL Item Response Theory, MAP estimation, standardised scoring (mean 100, SD 15), and international benchmarking against UK, PISA, US and IB frameworks.',
+  keywords: 'Item Response Theory children, IRT adaptive assessment, standardised score children, MAP estimation, educational benchmarking methodology, adaptive testing UK',
   alternates: { canonical: 'https://eduentry.com/methodology', languages: { 'en-GB': 'https://eduentry.com/methodology', 'x-default': 'https://eduentry.com/methodology' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  openGraph: {
+    title: 'How Eduentry Works — IRT Adaptive Assessment Methodology',
+    description: '2PL Item Response Theory, MAP estimation, standardised scoring (mean 100, SD 15) and international benchmarking against UK National Curriculum, PISA, US and IB frameworks.',
+    url: 'https://eduentry.com/methodology',
+  },
 }
 
 const BREADCRUMB_SCHEMA = {

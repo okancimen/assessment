@@ -4,10 +4,16 @@ import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 
 export const metadata: Metadata = {
-  title: 'About Eduentry — Free Academic Assessment for Children',
-  description: 'Eduentry provides free adaptive academic assessments for children aged 6–17, benchmarked against UK, PISA, and IB standards. Built on Item Response Theory and powered by Claude AI.',
+  title: 'About Eduentry — Free Academic Assessment for Children Ages 6–17',
+  description: 'Eduentry provides free adaptive academic assessments for children aged 6–17, benchmarked against UK National Curriculum, PISA, and IB standards. Standardised scores and international percentile rankings.',
+  keywords: 'about Eduentry, free children assessment platform, international academic benchmark, adaptive testing children, UK PISA IB benchmark ages 6-17',
   alternates: { canonical: 'https://eduentry.com/about', languages: { 'en-GB': 'https://eduentry.com/about', 'x-default': 'https://eduentry.com/about' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  openGraph: {
+    title: 'About Eduentry — Free Academic Assessment for Children Ages 6–17',
+    description: 'Free adaptive academic assessments benchmarked against UK, PISA, and IB standards. Standardised scores and international percentile rankings for children aged 6–17.',
+    url: 'https://eduentry.com/about',
+  },
 }
 
 const ABOUT_SCHEMA = {
