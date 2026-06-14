@@ -142,6 +142,30 @@ const FAQ_SCHEMA = {
         text: "Yes. Data is stored securely via Supabase with row-level security — only you can see your child's results. We do not sell or share data with third parties.",
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Can I add more than one child?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Yes. A single parent account supports multiple child profiles. Each child has their own assessment history, scores, and personalised recommendations. You can switch between children from your dashboard.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What countries is Eduentry available in?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Eduentry is available worldwide. There is no geographic restriction — families in the UK, US, Europe, the Middle East, Asia, and elsewhere can use it. The assessment content is benchmarked against UK, US, PISA, and IB standards, making results meaningful regardless of where your child goes to school.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I need to download an app or install anything?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "No. Eduentry runs entirely in any modern web browser on desktop, tablet, or mobile. There is nothing to download or install.",
+      },
+    },
   ],
 }
 
@@ -685,6 +709,18 @@ export default function LandingPage() {
             {
               q: "Is my child's data private?",
               a: "Yes. Data is stored securely via Supabase with row-level security — only you can see your child's results. We do not sell or share data with third parties.",
+            },
+            {
+              q: 'Can I add more than one child?',
+              a: "Yes. A single parent account supports multiple child profiles. Each child has their own assessment history, scores, and personalised recommendations. You can switch between children from your dashboard.",
+            },
+            {
+              q: 'What countries is Eduentry available in?',
+              a: "Eduentry is available worldwide — families in the UK, US, Europe, the Middle East, Asia, and elsewhere can use it. Results are benchmarked against UK, US, PISA, and IB standards, making them meaningful regardless of where your child goes to school.",
+            },
+            {
+              q: 'Do I need to download an app or install anything?',
+              a: "No. Eduentry runs entirely in any modern web browser on desktop, tablet, or mobile. There is nothing to download or install.",
             },
           ].map(({ q, a }) => (
             <details key={q} className="group bg-white border border-gray-100 rounded-2xl overflow-hidden">

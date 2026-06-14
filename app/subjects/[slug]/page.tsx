@@ -266,7 +266,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
         </section>
 
         {/* Other subjects */}
-        <section className="mb-14">
+        <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Other subjects</h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {(Object.keys(SUBJECTS) as Slug[]).filter(s => s !== slug).map((s) => (
@@ -276,6 +276,17 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
               </Link>
             ))}
           </div>
+        </section>
+
+        {/* 11+ link */}
+        <section className="mb-14">
+          <Link href="/11-plus" className="flex items-center justify-between bg-indigo-50 border border-indigo-100 rounded-xl px-6 py-4 hover:bg-indigo-100/60 transition-colors group">
+            <div>
+              <div className="font-semibold text-indigo-900 mb-0.5">Preparing for the 11+?</div>
+              <div className="text-sm text-indigo-600">See how {subject.headline} fits into the full 11+ practice test →</div>
+            </div>
+            <svg className="w-5 h-5 text-indigo-400 flex-shrink-0 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+          </Link>
         </section>
 
         {/* CTA */}

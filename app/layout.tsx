@@ -70,6 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={`${geist.variable} h-full antialiased`}>
       <head>
+        <meta name="theme-color" content="#4f46e5" />
         <meta name="yandex-verification" content="f8b17ecde6325153" />
         <link rel="preconnect" href="https://xronkbdtsnjibwhuelni.supabase.co" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
