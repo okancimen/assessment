@@ -78,7 +78,7 @@ function WarmupCountdown({ count }: { count: number }) {
               cx="56" cy="56" r="50" fill="none"
               stroke="#6366f1" strokeWidth="6"
               strokeDasharray={`${2 * Math.PI * 50}`}
-              strokeDashoffset={`${2 * Math.PI * 50 * (count / 3)}`}
+              strokeDashoffset={`${2 * Math.PI * 50 * (count / 4)}`}
               className="transition-all duration-700"
             />
           </svg>
@@ -129,7 +129,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
   type Phase = 'warmup' | 'loading' | 'question' | 'break' | 'error'
   const [phase, setPhase] = useState<Phase>('warmup')
-  const [warmupCount, setWarmupCount] = useState(3)
+  const [warmupCount, setWarmupCount] = useState(4)
   const [question, setQuestion] = useState<Question | null>(null)
   const [session, setSession] = useState<SessionState | null>(null)
   const [subjectBreak, setSubjectBreak] = useState<Subject | null>(null)
@@ -194,8 +194,8 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
       }
     })
 
-    // 2. Run 3-2-1 countdown
-    let count = 3
+    // 2. Run 4-3-2-1 countdown
+    let count = 4
     const interval = setInterval(() => {
       count -= 1
       setWarmupCount(count)
