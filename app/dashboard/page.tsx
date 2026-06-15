@@ -2,6 +2,8 @@ import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import Navbar from '@/components/dashboard/Navbar'
+import PublicFooter from '@/components/layout/PublicFooter'
+import StartAssessmentButton from '@/app/children/[id]/StartAssessmentButton'
 import { getAge, formatDate } from '@/lib/utils'
 import { Child, Assessment } from '@/types'
 import { getScoreLabel, getScoreColor } from '@/lib/assessment/adaptive'
@@ -85,8 +87,8 @@ export default async function DashboardPage() {
               {(children as Child[]).map((child) => {
                 const latest = latestScores[child.id]
                 return (
-                  <Link key={child.id} href={`/children/${child.id}`}>
-                    <div className="bg-white rounded-2xl border border-gray-100 p-5 hover:border-indigo-200 hover:shadow-sm transition-all cursor-pointer h-full">
+                  <div key={child.id} className="bg-white rounded-2xl border border-gray-100 hover:border-indigo-200 hover:shadow-sm transition-all flex flex-col">
+                    <Link href={`/children/${child.id}`} className="p-5 flex-1 block">
                       <div className="flex items-start justify-between mb-3">
                         <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold text-lg">
                           {child.name[0].toUpperCase()}
@@ -107,8 +109,11 @@ export default async function DashboardPage() {
                       {latest && (
                         <p className="text-xs text-gray-400 mt-2">Latest assessment score</p>
                       )}
+                    </Link>
+                    <div className="px-5 pb-5">
+                      <StartAssessmentButton childId={child.id} size="sm" className="w-full" />
                     </div>
-                  </Link>
+                  </div>
                 )
               })}
             </div>
@@ -187,6 +192,7 @@ export default async function DashboardPage() {
           </section>
         )}
       </main>
+      <PublicFooter />
     </div>
   )
 }

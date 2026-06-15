@@ -4,7 +4,15 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Button from '@/components/ui/Button'
 
-export default function StartAssessmentButton({ childId }: { childId: string }) {
+export default function StartAssessmentButton({
+  childId,
+  size = 'md',
+  className,
+}: {
+  childId: string
+  size?: 'sm' | 'md' | 'lg'
+  className?: string
+}) {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
 
@@ -26,8 +34,8 @@ export default function StartAssessmentButton({ childId }: { childId: string }) 
   }
 
   return (
-    <Button onClick={handleStart} loading={loading}>
-      Start new assessment
+    <Button onClick={handleStart} loading={loading} size={size} className={className}>
+      Start assessment
     </Button>
   )
 }
