@@ -313,9 +313,9 @@ export default function MethodologyPage() {
             </div>
           </section>
 
-          {/* Limitations */}
+          {/* Transparency */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Limitations &amp; Transparency</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Transparency</h2>
             <div className="bg-amber-50 border border-amber-100 rounded-2xl p-6">
               <p className="text-gray-700 leading-relaxed mb-3">
                 <strong>Eduentry results are indicative, not diagnostic.</strong> The key distinction
