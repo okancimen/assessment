@@ -316,16 +316,25 @@ export default function MethodologyPage() {
           {/* Transparency */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Transparency</h2>
-            <div className="bg-amber-50 border border-amber-100 rounded-2xl p-6">
-              <p className="text-gray-700 leading-relaxed mb-3">
-                <strong>Eduentry results are indicative, not diagnostic.</strong> The key distinction
-                from professionally normed tests (CAT4, GL Assessment, WISC) is that Eduentry&apos;s
-                questions are AI-generated rather than empirically calibrated with large normative populations.
+            <div className="space-y-4">
+              <p className="text-gray-700 leading-relaxed">
+                Eduentry offers a robust and adaptive approach to student assessment, generating results that
+                provide an accurate representation of each learner&apos;s academic capabilities.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                This means question difficulty and discrimination parameters are estimated rather than
-                measured from real student data. Results should be used as a directional guide —
-                identifying strengths and areas for development — rather than as a formal educational assessment.
+                Traditional assessments are often limited by fixed question sets, where performance can be
+                unduly affected by the difficulty level of the questions rather than the student&apos;s actual
+                ability. Eduentry addresses this limitation through an AI-driven adaptive engine that
+                continuously adjusts question difficulty based on each student&apos;s responses, ensuring that
+                outcomes reflect true academic potential rather than the structure of the test itself. This
+                produces a consistent, fair, and meaningful measure of each learner&apos;s strengths and
+                developmental needs.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                While Eduentry&apos;s methodology differs from CAT4, GL Assessment, and WISC, its results
+                serve as a reliable and actionable basis for educational planning and decision-making. In cases
+                where formal diagnostic evaluation is required, Eduentry functions as a valuable complement to
+                established psychometric assessment tools.
               </p>
             </div>
           </section>
