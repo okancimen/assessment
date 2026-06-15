@@ -91,7 +91,7 @@ export default function MethodologyPage() {
             <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6">
               <p className="text-sm font-semibold text-indigo-700 mb-2">Key benefit</p>
               <p className="text-gray-700 text-sm leading-relaxed">
-                A 15-question adaptive test can match the accuracy of a 40–60 question fixed test,
+                A 15-question adaptive test can match the accuracy of a 100 question fixed test,
                 because every question is chosen to be maximally informative for that specific child.
               </p>
             </div>
