@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Button from '@/components/ui/Button'
 import Navbar from '@/components/dashboard/Navbar'
+import PublicFooter from '@/components/layout/PublicFooter'
 
 export default function AddChildPage() {
   const router = useRouter()
@@ -50,7 +51,7 @@ export default function AddChildPage() {
   const maxDate = new Date(Date.now() - 6 * 365.25 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
       <main className="max-w-lg mx-auto px-6 py-10">
         <div className="mb-6">
@@ -106,6 +107,7 @@ export default function AddChildPage() {
           </form>
         </div>
       </main>
+      <PublicFooter />
     </div>
   )
 }
