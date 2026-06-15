@@ -227,6 +227,71 @@ export default function MethodologyPage() {
             </div>
           </section>
 
+          {/* What You Learn from the Results */}
+          <section>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">What You Learn from the Results</h2>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Unlike a traditional school test that grades a child against a local cohort, a student and their parent
+              who complete the Eduentry assessment will receive a comprehensive results screen and a printable report
+              showing exactly where the child stands globally.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4 font-medium">Here is exactly what they will learn from the results:</p>
+            <ul className="space-y-4 mb-6">
+              <li className="flex gap-3">
+                <span className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-indigo-100 flex items-center justify-center">
+                  <span className="w-2 h-2 rounded-full bg-indigo-500 block" />
+                </span>
+                <span className="text-gray-700 leading-relaxed">
+                  <strong>Standardised Score and Performance Category</strong> — a score on the mean-100, SD-15 scale,
+                  placed into one of five bands: Needs Support (70–84), Below Average (85–94), Average (95–109),
+                  Above Average (110–119), or Exceptional (120+).
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-indigo-100 flex items-center justify-center">
+                  <span className="w-2 h-2 rounded-full bg-indigo-500 block" />
+                </span>
+                <span className="text-gray-700 leading-relaxed">
+                  <strong>Global Percentile Ranking</strong> — how the child performs compared to same-age peers
+                  worldwide, expressed as a percentile (e.g. top 10%, top 25%).
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-indigo-100 flex items-center justify-center">
+                  <span className="w-2 h-2 rounded-full bg-indigo-500 block" />
+                </span>
+                <span className="text-gray-700 leading-relaxed">
+                  <strong>Detailed Subject Breakdowns</strong> — individual scores and performance bands for
+                  English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning, so parents and children can
+                  see exactly where strengths and gaps lie.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-indigo-100 flex items-center justify-center">
+                  <span className="w-2 h-2 rounded-full bg-indigo-500 block" />
+                </span>
+                <span className="text-gray-700 leading-relaxed">
+                  <strong>International Benchmarking</strong> — the score mapped to UK National Curriculum levels,
+                  US grade-level equivalents, PISA proficiency levels, and IB programme readiness.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-indigo-100 flex items-center justify-center">
+                  <span className="w-2 h-2 rounded-full bg-indigo-500 block" />
+                </span>
+                <span className="text-gray-700 leading-relaxed">
+                  <strong>AI-Generated Personalised Recommendations</strong> — targeted study recommendations
+                  based on the child&apos;s specific performance profile, highlighting the areas most likely to
+                  improve their overall score.
+                </span>
+              </li>
+            </ul>
+            <p className="text-gray-700 leading-relaxed">
+              Together, these five outputs give families a clear picture of their child&apos;s global standing,
+              specific weaknesses, and actionable steps to improve — all from a single 90-minute assessment.
+            </p>
+          </section>
+
           {/* Subjects */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Subjects Assessed</h2>
