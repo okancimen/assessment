@@ -17,6 +17,7 @@ export default function PublicFooter() {
             <Link href="/subjects/verbal-reasoning" className="hover:text-gray-600 transition-colors">Verbal Reasoning</Link>
             <Link href="/subjects/non-verbal-reasoning" className="hover:text-gray-600 transition-colors">Non-Verbal Reasoning</Link>
             <Link href="/methodology" className="hover:text-gray-600 transition-colors">Methodology</Link>
+            <Link href="/blog" className="hover:text-gray-600 transition-colors">Blog</Link>
             <Link href="/about" className="hover:text-gray-600 transition-colors">About</Link>
             <Link href="/privacy" className="hover:text-gray-600 transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-gray-600 transition-colors">Terms</Link>

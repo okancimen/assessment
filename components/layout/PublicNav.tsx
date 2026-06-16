@@ -11,6 +11,7 @@ export default function PublicNav() {
             <Link href="/11-plus" className="hover:text-gray-900 transition-colors">11+ Prep</Link>
             <Link href="/methodology" className="hover:text-gray-900 transition-colors">Methodology</Link>
             <Link href="/about" className="hover:text-gray-900 transition-colors">About</Link>
+            <Link href="/blog" className="hover:text-gray-900 transition-colors">Blog</Link>
           </div>
         </div>
         <Link
