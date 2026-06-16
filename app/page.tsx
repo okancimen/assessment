@@ -258,7 +258,7 @@ const ORGANIZATION_SCHEMA = {
   '@type': 'Organization',
   name: 'Eduentry',
   url: 'https://eduentry.com',
-  logo: 'https://eduentry.com/logo.jpg',
+  logo: 'https://eduentry.com/logo.png',
   description: 'Free international academic benchmark for children aged 6–17, measuring performance against UK, US, PISA and IB standards.',
   foundingDate: '2026',
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },

@@ -44,7 +44,7 @@ const METHODOLOGY_SCHEMA = {
     '@type': 'Organization',
     name: 'Eduentry',
     url: 'https://eduentry.com',
-    logo: { '@type': 'ImageObject', url: 'https://eduentry.com/logo.jpg' },
+    logo: { '@type': 'ImageObject', url: 'https://eduentry.com/logo.png' },
   },
   about: [
     { '@type': 'Thing', name: 'Item Response Theory' },

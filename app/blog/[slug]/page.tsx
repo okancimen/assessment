@@ -68,7 +68,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     publisher: {
       '@type': 'Organization',
       name: 'Eduentry',
-      logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.jpg` },
+      logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png` },
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
   }

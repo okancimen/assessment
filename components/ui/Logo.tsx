@@ -18,10 +18,10 @@ export default function Logo({ href = '/', size = 'md', className = '' }: LogoPr
   const inner = (
     <span className={`inline-flex items-center gap-2 ${className}`}>
       <Image
-        src="/logo.jpg"
+        src="/logo.png"
         alt="Eduentry logo"
         width={img}
-        height={Math.round(img * 1.43)}
+        height={img}
         className="object-contain"
         priority
       />
