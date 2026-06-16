@@ -3,103 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
-
-const SUBJECTS = {
-  english: {
-    title: 'Free English Assessment for Children',
-    headline: 'English',
-    tagline: 'Comprehension, grammar, spelling and vocabulary — benchmarked internationally',
-    description: 'Free adaptive English assessment for children aged 6–17. Covers comprehension, grammar, spelling, punctuation, and vocabulary. Standardised scores benchmarked to UK National Curriculum and Cambridge IGCSE.',
-    color: 'bg-rose-50 text-rose-700 border-rose-100',
-    accent: 'text-rose-600',
-    skills: [
-      { name: 'Reading comprehension', detail: 'Understanding and interpreting written passages across fiction and non-fiction genres' },
-      { name: 'Grammar', detail: 'Parts of speech, sentence structure, tenses, and clause types' },
-      { name: 'Spelling', detail: 'Common and complex spelling patterns, homophones, prefixes and suffixes' },
-      { name: 'Punctuation', detail: 'Commas, apostrophes, speech marks, colons, and semicolons' },
-      { name: 'Vocabulary', detail: 'Word meanings, synonyms, antonyms, and contextual usage' },
-    ],
-    benchmarks: ['UK National Curriculum KS1–KS4', 'Cambridge IGCSE English', 'PISA reading literacy', 'IB English Language & Literature'],
-    ageGroups: [
-      { range: 'Ages 6–7 (KS1)', focus: 'Phonics, simple sentences, basic punctuation' },
-      { range: 'Ages 8–11 (KS2)', focus: 'Reading comprehension, paragraphing, complex punctuation' },
-      { range: 'Ages 11–14 (KS3)', focus: 'Literary analysis, formal writing, advanced grammar' },
-      { range: 'Ages 14–17 (KS4)', focus: 'Critical analysis, rhetoric, GCSE-level language skills' },
-    ],
-    longTailKeywords: 'free English test for children UK, English comprehension test for kids, KS2 English assessment free',
-  },
-  maths: {
-    title: 'Free Maths Assessment for Children',
-    headline: 'Mathematics',
-    tagline: 'Number, algebra, geometry and data handling — from KS1 to GCSE level',
-    description: 'Free adaptive maths assessment for children aged 6–17. Covers number operations, algebra, geometry, fractions, and data handling. Standardised scores benchmarked to UK National Curriculum and PISA numeracy.',
-    color: 'bg-amber-50 text-amber-700 border-amber-100',
-    accent: 'text-amber-600',
-    skills: [
-      { name: 'Number operations', detail: 'Addition, subtraction, multiplication, division, order of operations' },
-      { name: 'Algebra', detail: 'Equations, expressions, sequences, functions, and simultaneous equations' },
-      { name: 'Geometry', detail: 'Shape properties, angles, area, perimeter, volume, and transformations' },
-      { name: 'Fractions & percentages', detail: 'Equivalent fractions, operations with fractions, decimals, and percentages' },
-      { name: 'Data handling', detail: 'Mean, median, mode, probability, charts, and statistical interpretation' },
-    ],
-    benchmarks: ['UK National Curriculum KS1–KS4', 'PISA mathematical literacy', 'US Common Core Mathematics', 'IB Mathematics'],
-    ageGroups: [
-      { range: 'Ages 6–7 (KS1)', focus: 'Counting, basic addition and subtraction, simple shapes' },
-      { range: 'Ages 8–11 (KS2)', focus: 'Times tables, fractions, written methods, basic algebra' },
-      { range: 'Ages 11–14 (KS3)', focus: 'Algebra, ratio, geometry, statistics, negative numbers' },
-      { range: 'Ages 14–17 (KS4)', focus: 'Quadratics, trigonometry, probability, GCSE-level problem solving' },
-    ],
-    longTailKeywords: 'free maths test for children UK, KS2 maths assessment, free numeracy test for kids',
-  },
-  'verbal-reasoning': {
-    title: 'Free Verbal Reasoning Test for Children',
-    headline: 'Verbal Reasoning',
-    tagline: 'Problem-solving with words — essential for 11+, grammar school, and independent school entry',
-    description: 'Free adaptive verbal reasoning test for children aged 7–16. Covers analogies, word relationships, sequencing, classification, and logic. Used in 11+ and grammar school entrance examinations across the UK.',
-    color: 'bg-indigo-50 text-indigo-700 border-indigo-100',
-    accent: 'text-indigo-600',
-    skills: [
-      { name: 'Word analogies', detail: 'Identifying relationships between pairs of words (e.g. hot : cold :: up : __)' },
-      { name: 'Classification', detail: 'Identifying the odd word out from a group based on meaning or category' },
-      { name: 'Word sequences', detail: 'Completing sequences of words following a logical pattern' },
-      { name: 'Codes', detail: 'Decoding letter and number codes based on given examples' },
-      { name: 'Logic and deduction', detail: 'Drawing conclusions from sets of statements' },
-    ],
-    benchmarks: ['GL Assessment 11+', 'CEM 11+ (Durham University)', 'Independent school entrance exams (ISEB)', 'Cognitive Abilities Test (CAT4)'],
-    ageGroups: [
-      { range: 'Ages 7–8', focus: 'Simple word relationships, basic analogies' },
-      { range: 'Ages 9–10', focus: 'Word codes, classification, sequences' },
-      { range: 'Ages 11–12', focus: 'Full 11+ verbal reasoning — analogies, codes, logic' },
-      { range: 'Ages 13–16', focus: 'Advanced logic, abstract verbal reasoning, CAT4 level' },
-    ],
-    longTailKeywords: 'free verbal reasoning test 11+ UK, verbal reasoning practice test children, free 11+ verbal reasoning',
-  },
-  'non-verbal-reasoning': {
-    title: 'Free Non-Verbal Reasoning Test for Children',
-    headline: 'Non-Verbal Reasoning',
-    tagline: 'Pattern recognition, spatial reasoning, and abstract thinking — language-independent',
-    description: 'Free adaptive non-verbal reasoning test for children aged 7–16. Covers pattern recognition, matrices, sequences, and spatial reasoning. Assesses cognitive ability independently of language skills.',
-    color: 'bg-emerald-50 text-emerald-700 border-emerald-100',
-    accent: 'text-emerald-600',
-    skills: [
-      { name: 'Pattern completion', detail: 'Identifying and continuing visual patterns using shapes and symbols' },
-      { name: 'Matrix reasoning', detail: 'Completing a 3×3 grid of shapes where one piece is missing' },
-      { name: 'Sequences', detail: 'Identifying the next shape in a visual sequence' },
-      { name: 'Spatial reasoning', detail: 'Mental rotation and folding of 2D and 3D shapes' },
-      { name: 'Figure series', detail: 'Identifying which shape or figure does not fit a series' },
-    ],
-    benchmarks: ['GL Assessment 11+', 'Cognitive Abilities Test (CAT4)', 'ISEB Common Pre-Test', 'Cognitive Abilities Test (NFER)'],
-    ageGroups: [
-      { range: 'Ages 7–8', focus: 'Simple pattern matching, basic shape sequences' },
-      { range: 'Ages 9–10', focus: 'Matrix puzzles, rotation, figure series' },
-      { range: 'Ages 11–12', focus: 'Full 11+ non-verbal reasoning standard' },
-      { range: 'Ages 13–16', focus: 'Advanced spatial reasoning and abstract matrices (CAT4 level)' },
-    ],
-    longTailKeywords: 'free non-verbal reasoning test children, 11+ non-verbal reasoning practice, spatial reasoning test kids UK',
-  },
-} as const
-
-type Slug = keyof typeof SUBJECTS
+import { SUBJECTS, type Slug } from '../data'
 
 export function generateStaticParams() {
   return Object.keys(SUBJECTS).map((slug) => ({ slug }))
@@ -138,7 +42,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://eduentry.com' },
-      { '@type': 'ListItem', position: 2, name: 'Subjects', item: 'https://eduentry.com/about' },
+      { '@type': 'ListItem', position: 2, name: 'Subjects', item: 'https://eduentry.com/subjects' },
       { '@type': 'ListItem', position: 3, name: subject.headline, item: `https://eduentry.com/subjects/${slug}` },
     ],
   }
@@ -169,7 +73,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
         <nav className="text-sm text-gray-400 mb-8">
           <Link href="/" className="hover:text-gray-600">Home</Link>
           <span className="mx-2">›</span>
-          <Link href="/about" className="hover:text-gray-600">Subjects</Link>
+          <Link href="/subjects" className="hover:text-gray-600">Subjects</Link>
           <span className="mx-2">›</span>
           <span className="text-gray-700">{subject.headline}</span>
         </nav>
