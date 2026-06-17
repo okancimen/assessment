@@ -73,6 +73,7 @@ Eduentry uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A
 - [ACER Scholarship Exam Guide](https://eduentry.com/blog/australia-acer-scholarship-exam): How Australia's most widely used independent school entrance test works and how to prepare.
 - [NSW Opportunity Class (OC) Test Guide](https://eduentry.com/blog/australia-oc-test-guide): OC classes, the three-component test, placement process and preparation.
 - [Western Australia GATE Programme Guide](https://eduentry.com/blog/australia-gate-gifted-program): Two-stage GATE assessment, Perth Modern School and PEAC explained.
+- [NAPLAN Guide for Parents](https://eduentry.com/blog/australia-naplan-guide): What NAPLAN is, how the four-level proficiency scale works, and what results can and cannot tell you.
 
 ## Score interpretation
 

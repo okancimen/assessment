@@ -688,6 +688,34 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: 'australia-naplan-guide',
+    title: 'NAPLAN Guide for Parents: What It Is, How Scores Work and What to Do With the Results',
+    shortTitle: 'NAPLAN Guide for Parents',
+    description:
+      'A complete parent\'s guide to NAPLAN — Australia\'s national literacy and numeracy assessment for Years 3, 5, 7 and 9. How the band scoring works, what results mean, and how to use them.',
+    date: '2026-06-18',
+    readTime: '7 min read',
+    tags: ['Australia', 'NAPLAN', 'Literacy', 'Numeracy', 'National Assessment'],
+    faqs: [
+      {
+        q: 'What is NAPLAN?',
+        a: 'NAPLAN (National Assessment Program — Literacy and Numeracy) is Australia\'s national standardised assessment sat by all students in Years 3, 5, 7, and 9 at government and most non-government schools. It tests Reading, Writing, Language Conventions (spelling, grammar, punctuation), and Numeracy. It is administered online each year in March.',
+      },
+      {
+        q: 'What do NAPLAN scores mean?',
+        a: 'NAPLAN results are reported on a proficiency scale with four levels: Needs Additional Support, Developing, Strong, and Exceeding. Results show whether a student is meeting national minimum standards and how they compare to students nationally. The national average sits in the Strong band for most year levels.',
+      },
+      {
+        q: 'Can my child opt out of NAPLAN?',
+        a: 'Yes. Parents can withdraw their child from NAPLAN by notifying the school in writing before the test window. Withdrawal is a parental right and will not negatively affect the child\'s school standing. However, the child will receive no result, which removes a useful data point for tracking progress over time.',
+      },
+      {
+        q: 'Do selective schools use NAPLAN results?',
+        a: 'Some selective government high schools and independent schools consider NAPLAN results as part of their admissions process, particularly for Year 7 entry. However, NAPLAN is not a selective entry test — it is a broad national assessment. For competitive selective entry (NSW Selective, ACER Scholarship, WA GATE), purpose-built preparation is more effective than NAPLAN practice.',
+      },
+    ],
+  },
 ]
 
 export function getPostBySlug(slug: string) {

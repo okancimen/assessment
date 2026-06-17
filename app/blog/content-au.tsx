@@ -499,4 +499,195 @@ export const AU_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'australia-naplan-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        NAPLAN — the National Assessment Program: Literacy and Numeracy — is the assessment
+        every Australian parent encounters, whether they seek it out or not. It is sat by all
+        students in Years 3, 5, 7 and 9 at government and most non-government schools across
+        Australia. Despite its ubiquity, NAPLAN results are widely misunderstood: what the
+        scores actually mean, how to interpret them, and — crucially — what they cannot tell you.
+        This guide covers all of it.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What NAPLAN Tests</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NAPLAN assesses four domains across all year levels:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Domain</th>
+                <th className="text-left p-4 font-semibold text-gray-700">What it covers</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Year levels</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Reading', 'Comprehension of fiction, non-fiction, and informational texts. Inference, interpretation, and vocabulary in context.', 'Years 3, 5, 7, 9'],
+                ['Writing', 'One extended writing task — either persuasive or narrative. Marked on ideas, structure, vocabulary, and conventions.', 'Years 3, 5, 7, 9'],
+                ['Language Conventions', 'Spelling, grammar, and punctuation. Multiple choice and short answer format.', 'Years 3, 5, 7, 9'],
+                ['Numeracy', 'Number and algebra, measurement and geometry, statistics and probability. Non-calculator and calculator sections.', 'Years 3, 5, 7, 9'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  {row.slice(1).map((cell, i) => (
+                    <td key={i} className="p-4 text-gray-600 text-sm">{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout color="indigo">
+          NAPLAN is a <strong>curriculum achievement test</strong>, not an ability or IQ test.
+          It measures what a child has learned against the Australian Curriculum — not their
+          underlying reasoning ability. This distinction matters when interpreting results.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How NAPLAN Scoring Works</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          From 2023, NAPLAN moved to a new four-level proficiency scale, replacing the
+          previous Band 1–10 system. Results are now reported as:
+        </p>
+        <div className="space-y-3 mb-6">
+          {[
+            { level: 'Exceeding', color: 'bg-emerald-50 border-emerald-200 text-emerald-800', desc: 'The student is working above the challenging learning standards expected for the year level.' },
+            { level: 'Strong', color: 'bg-indigo-50 border-indigo-200 text-indigo-800', desc: 'The student has a thorough understanding of the expected learning standards for the year level. This is where most students sit.' },
+            { level: 'Developing', color: 'bg-amber-50 border-amber-200 text-amber-800', desc: 'The student is working towards the challenging learning standards expected for the year level.' },
+            { level: 'Needs Additional Support', color: 'bg-rose-50 border-rose-200 text-rose-800', desc: 'The student is not yet demonstrating the literacy and numeracy skills expected for the year level. Schools must contact families to discuss support.' },
+          ].map(({ level, color, desc }) => (
+            <div key={level} className={`p-4 rounded-xl border ${color}`}>
+              <div className="font-semibold mb-1">{level}</div>
+              <p className="text-sm leading-relaxed opacity-90">{desc}</p>
+            </div>
+          ))}
+        </div>
+        <Callout color="amber">
+          <strong>Important context:</strong> The national average sits in the <strong>Strong</strong> band
+          for most domains and year levels. A &ldquo;Strong&rdquo; result is not a middling outcome —
+          it means your child is meeting the expected standard.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">When Is NAPLAN?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NAPLAN is held in March each year across a two-week testing window. Since 2022,
+          all year levels sit NAPLAN online (paper-based available for exempted schools).
+        </p>
+        <div className="space-y-3 mb-6">
+          <Bullet>Tests are sat at school during normal hours — no special venue or registration required.</Bullet>
+          <Bullet>Writing is usually held first, followed by Reading, Language Conventions, and Numeracy.</Bullet>
+          <Bullet>Results are released to schools and families in June–July, approximately 3–4 months later.</Bullet>
+          <Bullet>Parents receive an Individual Student Report showing results across all four domains with national comparison data.</Bullet>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What NAPLAN Results Can and Cannot Tell You</h2>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          <div className="p-5 rounded-xl border border-emerald-100 bg-emerald-50/40">
+            <div className="font-semibold text-emerald-800 mb-3">What NAPLAN can tell you</div>
+            <div className="space-y-2">
+              <Check>Whether your child is meeting curriculum expectations for their year level</Check>
+              <Check>How your child compares to students nationally</Check>
+              <Check>Which domains are stronger or weaker (Reading vs Numeracy)</Check>
+              <Check>Progress over time — comparing Year 3, Year 5, and Year 7 results</Check>
+            </div>
+          </div>
+          <div className="p-5 rounded-xl border border-rose-100 bg-rose-50/40">
+            <div className="font-semibold text-rose-800 mb-3">What NAPLAN cannot tell you</div>
+            <div className="space-y-2">
+              <Cross>How your child will perform on selective entry tests (OC, ACER, GATE)</Cross>
+              <Cross>Your child&apos;s underlying reasoning or intellectual ability</Cross>
+              <Cross>Whether your child is suited for a gifted programme</Cross>
+              <Cross>How your child compares internationally — NAPLAN is Australia-only</Cross>
+            </div>
+          </div>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Families preparing for the{' '}
+          <Link href="/blog/australia-oc-test-guide" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">NSW OC Test</Link>,{' '}
+          <Link href="/blog/australia-acer-scholarship-exam" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">ACER Scholarship Exam</Link>, or{' '}
+          <Link href="/blog/australia-gate-gifted-program" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">WA GATE assessment</Link>{' '}
+          should use purpose-built preparation for those tests rather than NAPLAN practice materials.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Can You Opt Out of NAPLAN?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yes. Parents can withdraw their child by notifying the school in writing before
+          the test window. Withdrawal has no academic consequences and schools cannot
+          penalise a student for not sitting.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          However, opting out removes a useful longitudinal data point. NAPLAN is most
+          valuable when viewed as a series — comparing Year 3, Year 5, and Year 7 results
+          shows whether a child is maintaining, improving, or falling relative to peers
+          over time. A single result is a snapshot; the trend is the insight.
+        </p>
+        <Callout color="indigo">
+          <strong>On anxiety:</strong> The evidence suggests well-prepared children with
+          low-stakes framing (&ldquo;it&apos;s just to see what you know — you can&apos;t fail NAPLAN&rdquo;)
+          experience minimal test anxiety. Over-preparation and high parental expectations
+          are more consistently associated with anxiety than the test itself.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Do Schools Use NAPLAN for Selective Entry?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Some independent schools reference NAPLAN results as a supporting data point in
+          admissions — not as the primary criterion. The main selective entry tests in
+          Australia are entirely separate:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Test</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Uses NAPLAN?</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Primary selection tool</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['NSW Selective High School', 'No', 'NSW Selective Placement Test (separate)'],
+                ['NSW OC Test', 'No', 'OC Placement Test (separate)'],
+                ['WA GATE', 'No', 'Two-stage cognitive assessment (separate)'],
+                ['ACER Scholarship', 'No', 'ACER Scholarship Exam (separate)'],
+                ['Some independent schools', 'Sometimes', 'School-designed or ACER assessment'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900 text-sm">{row[0]}</td>
+                  {row.slice(1).map((cell, i) => (
+                    <td key={i} className="p-4 text-gray-600 text-sm">{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Support Your Child Around NAPLAN</h2>
+        <div className="space-y-3 mb-6">
+          <Check>Frame NAPLAN as a snapshot — not a test they can pass or fail.</Check>
+          <Check>Ensure good sleep and a normal breakfast on test days.</Check>
+          <Check>Read the Individual Student Report carefully — look at domain-level detail, not just the headline level.</Check>
+          <Check>Use results to identify whether any area (e.g. numeracy) warrants targeted support before the next year level.</Check>
+          <Cross>Don&apos;t buy NAPLAN &ldquo;preparation books&rdquo; for Year 2 students — broad reading and number fluency is more effective than test-specific drilling at this age.</Cross>
+          <Cross>Don&apos;t compare NAPLAN results between children publicly — results are private and heavily context-dependent.</Cross>
+        </div>
+      </section>
+    </>
+  ),
+
 }
