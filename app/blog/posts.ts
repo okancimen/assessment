@@ -59,6 +59,46 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     readTime: '7 min read',
     tags: ['Grammar Schools', '11+', 'Entry Requirements', '2026'],
   },
+  {
+    slug: 'gifted-program-testing-guide',
+    title: 'Gifted Program Testing Guide: How US Gifted Identification Works and How to Prepare',
+    shortTitle: 'US Gifted Program Testing Guide',
+    description:
+      'How US gifted and talented programs identify students — CogAT, WISC-V, NWEA MAP, and OLSAT explained, with score thresholds by program type and a practical preparation guide for families.',
+    date: '2026-06-17',
+    readTime: '9 min read',
+    tags: ['Gifted Testing', 'CogAT', 'WISC', 'US Education', 'Gifted Programs'],
+  },
+  {
+    slug: 'nwea-map-scores-explained',
+    title: 'NWEA MAP Scores Explained: What RIT Scores Mean and How to Interpret Your Child\'s Results',
+    shortTitle: 'NWEA MAP Scores Explained',
+    description:
+      'A complete parent\'s guide to NWEA MAP Growth scores — what RIT scores mean, grade-level benchmarks, percentile comparison, growth norms, and how high MAP scores relate to gifted identification.',
+    date: '2026-06-17',
+    readTime: '7 min read',
+    tags: ['NWEA MAP', 'RIT Scores', 'US Education', 'Gifted Programs', 'Assessment'],
+  },
+  {
+    slug: 'isee-ssat-private-school-guide',
+    title: 'ISEE vs SSAT: The Complete Guide to Private School Entrance Exams in the US',
+    shortTitle: 'ISEE vs SSAT Private School Guide',
+    description:
+      'Everything you need to know about the ISEE and SSAT — how each test works, score reporting, key differences, which to choose for your target schools, and how to prepare effectively.',
+    date: '2026-06-17',
+    readTime: '8 min read',
+    tags: ['ISEE', 'SSAT', 'Private School', 'US Education', 'Entrance Exam'],
+  },
+  {
+    slug: 'how-to-prepare-gifted-test',
+    title: 'How to Prepare Your Child for a Gifted Test: A Practical Guide for US Families',
+    shortTitle: 'How to Prepare for a Gifted Test',
+    description:
+      'A practical, evidence-based guide for US families preparing for gifted identification testing — what each test measures, what is and isn\'t preparation-responsive, and how to build the right skills over time.',
+    date: '2026-06-17',
+    readTime: '8 min read',
+    tags: ['Gifted Testing', 'CogAT', 'NNAT', 'US Education', 'Preparation'],
+  },
 ]
 
 export function getPostBySlug(slug: string) {
