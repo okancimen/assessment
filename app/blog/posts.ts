@@ -19,6 +19,46 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     readTime: '9 min read',
     tags: ['Standardised Testing', 'International Benchmarks', '11+', 'Digital SAT', 'PISA'],
   },
+  {
+    slug: 'how-to-prepare-for-11-plus',
+    title: 'How to Prepare for the 11+ at Home: A Complete Parent\'s Guide',
+    shortTitle: 'How to Prepare for the 11+ at Home',
+    description:
+      'A practical guide for parents on preparing children for the 11+ exam at home — covering verbal reasoning, non-verbal reasoning, maths and English, with a recommended 18-month practice timeline.',
+    date: '2026-06-17',
+    readTime: '8 min read',
+    tags: ['11+', 'Grammar Schools', 'Preparation', 'Parent Guide'],
+  },
+  {
+    slug: 'what-is-a-standardised-score',
+    title: 'What Is a Standardised Score? A Clear Guide for Parents',
+    shortTitle: 'What Is a Standardised Score?',
+    description:
+      'Standardised scores, percentile rankings and Standardised Age Scores (SAS) explained in plain language — what the numbers mean, what counts as a good score, and how Eduentry uses the same scale as professional assessments.',
+    date: '2026-06-17',
+    readTime: '6 min read',
+    tags: ['Standardised Testing', 'Scores', 'Percentile', 'Parent Guide'],
+  },
+  {
+    slug: 'verbal-reasoning-11-plus-guide',
+    title: 'Verbal Reasoning for the 11+: Question Types, Examples and Practice Tips',
+    shortTitle: 'Verbal Reasoning for the 11+',
+    description:
+      'A complete guide to the verbal reasoning questions your child will face in the 11+ — covering all major question types with worked examples, common mistakes to avoid, and tips for effective home practice.',
+    date: '2026-06-17',
+    readTime: '7 min read',
+    tags: ['Verbal Reasoning', '11+', 'Practice', 'Question Types'],
+  },
+  {
+    slug: 'grammar-school-entry-requirements-2026',
+    title: 'Grammar School Entry Requirements 2026: Scores, Percentiles and How to Qualify',
+    shortTitle: 'Grammar School Entry Requirements 2026',
+    description:
+      'What score does your child need for a grammar school place in 2026? This guide covers the SAS thresholds, percentile benchmarks and entry requirements across England\'s key grammar school areas.',
+    date: '2026-06-17',
+    readTime: '7 min read',
+    tags: ['Grammar Schools', '11+', 'Entry Requirements', '2026'],
+  },
 ]
 
 export function getPostBySlug(slug: string) {

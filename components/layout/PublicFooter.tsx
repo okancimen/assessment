@@ -12,6 +12,8 @@ export default function PublicFooter() {
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-400">
             <Link href="/11-plus" className="hover:text-gray-600 transition-colors">11+ Prep</Link>
+            <Link href="/grammar-schools" className="hover:text-gray-600 transition-colors">Grammar Schools</Link>
+            <Link href="/demo" className="hover:text-gray-600 transition-colors">Try a Sample</Link>
             <Link href="/subjects/english" className="hover:text-gray-600 transition-colors">English</Link>
             <Link href="/subjects/maths" className="hover:text-gray-600 transition-colors">Maths</Link>
             <Link href="/subjects/verbal-reasoning" className="hover:text-gray-600 transition-colors">Verbal Reasoning</Link>

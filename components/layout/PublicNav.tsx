@@ -9,8 +9,8 @@ export default function PublicNav() {
           <Logo href="/" size="sm" />
           <div className="hidden sm:flex items-center gap-5 text-sm text-gray-500">
             <Link href="/11-plus" className="hover:text-gray-900 transition-colors">11+ Prep</Link>
+            <Link href="/grammar-schools" className="hover:text-gray-900 transition-colors">Grammar Schools</Link>
             <Link href="/methodology" className="hover:text-gray-900 transition-colors">Methodology</Link>
-            <Link href="/about" className="hover:text-gray-900 transition-colors">About</Link>
             <Link href="/blog" className="hover:text-gray-900 transition-colors">Blog</Link>
           </div>
         </div>
