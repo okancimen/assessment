@@ -13,13 +13,10 @@ export default function PublicFooter() {
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-400">
             <Link href="/11-plus" className="hover:text-gray-600 transition-colors">11+ Prep</Link>
             <Link href="/grammar-schools" className="hover:text-gray-600 transition-colors">Grammar Schools</Link>
+            <Link href="/subjects" className="hover:text-gray-600 transition-colors">Subjects</Link>
             <Link href="/demo" className="hover:text-gray-600 transition-colors">Try a Sample</Link>
-            <Link href="/subjects/english" className="hover:text-gray-600 transition-colors">English</Link>
-            <Link href="/subjects/maths" className="hover:text-gray-600 transition-colors">Maths</Link>
-            <Link href="/subjects/verbal-reasoning" className="hover:text-gray-600 transition-colors">Verbal Reasoning</Link>
-            <Link href="/subjects/non-verbal-reasoning" className="hover:text-gray-600 transition-colors">Non-Verbal Reasoning</Link>
-            <Link href="/methodology" className="hover:text-gray-600 transition-colors">Methodology</Link>
             <Link href="/blog" className="hover:text-gray-600 transition-colors">Blog</Link>
+            <Link href="/methodology" className="hover:text-gray-600 transition-colors">Methodology</Link>
             <Link href="/about" className="hover:text-gray-600 transition-colors">About</Link>
             <Link href="/privacy" className="hover:text-gray-600 transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-gray-600 transition-colors">Terms</Link>

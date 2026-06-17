@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { SUBJECT_LABELS, SUBJECT_DESCRIPTIONS, SUBJECTS } from '@/types'
 import BellCurve from '@/components/landing/BellCurve'
 import Logo from '@/components/ui/Logo'
+import PublicNav from '@/components/layout/PublicNav'
+import PublicFooter from '@/components/layout/PublicFooter'
 
 export const metadata: Metadata = {
   title: 'Eduentry — International Academic Benchmark for Children | Ages 6–17',
@@ -322,26 +324,7 @@ export default function LandingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(HOWTO_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
-      {/* Nav */}
-      <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Logo size="sm" />
-          <div className="flex items-center gap-4">
-            <Link href="/11-plus" className="text-sm text-gray-500 hover:text-gray-900 font-medium hidden sm:block">
-              11+ Prep
-            </Link>
-            <Link href="/methodology" className="text-sm text-gray-500 hover:text-gray-900 font-medium hidden sm:block">
-              Methodology
-            </Link>
-            <Link href="/auth/login" prefetch={false} className="text-sm text-gray-600 hover:text-gray-900 font-medium hidden sm:block">
-              Sign in
-            </Link>
-            <Link href="/auth/register" prefetch={false} className="bg-indigo-600 text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-indigo-700 transition-colors">
-              Get started free
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <PublicNav />
 
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
@@ -760,24 +743,7 @@ export default function LandingPage() {
         </Link>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-100 py-10">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-          <div className="flex items-center gap-3">
-            <Logo size="sm" href="/" />
-            <span>·</span>
-            <span>International academic benchmarking</span>
-          </div>
-          <div className="flex items-center gap-5 flex-wrap justify-center sm:justify-end">
-            <Link href="/about" className="hover:text-gray-600 transition-colors">About</Link>
-            <Link href="/methodology" className="hover:text-gray-600 transition-colors">Methodology</Link>
-            <Link href="/privacy" className="hover:text-gray-600 transition-colors">Privacy</Link>
-            <Link href="/terms" className="hover:text-gray-600 transition-colors">Terms</Link>
-            <Link href="/auth/login" prefetch={false} className="hover:text-gray-600 transition-colors">Sign in</Link>
-            <Link href="/auth/register" prefetch={false} className="hover:text-gray-600 transition-colors">Register</Link>
-          </div>
-        </div>
-      </footer>
+      <PublicFooter />
     </div>
   )
 }
