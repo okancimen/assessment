@@ -42,9 +42,24 @@ export default function BlogIndexPage() {
     ],
   }
 
+  const itemList = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Eduentry Blog — Academic Assessment Guides',
+    url: `${BASE_URL}/blog`,
+    numberOfItems: BLOG_POSTS.length,
+    itemListElement: BLOG_POSTS.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${BASE_URL}/blog/${p.slug}`,
+      name: p.title,
+    })),
+  }
+
   return (
     <div className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
 
       <PublicNav />
 

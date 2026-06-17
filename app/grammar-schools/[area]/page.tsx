@@ -42,11 +42,39 @@ export default async function GrammarAreaPage({ params }: { params: Promise<{ ar
     ],
   }
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `How many grammar schools are there in ${area.name}?`,
+        acceptedAnswer: { '@type': 'Answer', text: `There are ${area.schoolCount} grammar school${area.schoolCount > 1 ? 's' : ''} in ${area.name}. ${area.description}` },
+      },
+      {
+        '@type': 'Question',
+        name: `What score do you need for grammar school in ${area.name}?`,
+        acceptedAnswer: { '@type': 'Answer', text: `The indicative competitive Standardised Age Score (SAS) range for grammar schools in ${area.name} is ${area.targetSAS}. Individual school cut-offs vary — always check directly with your target school. The exam is set by ${area.examBoard}.` },
+      },
+      {
+        '@type': 'Question',
+        name: `When should I register for the 11+ in ${area.name}?`,
+        acceptedAnswer: { '@type': 'Answer', text: area.registrationNote },
+      },
+      {
+        '@type': 'Question',
+        name: `Which exam board sets the 11+ in ${area.name}?`,
+        acceptedAnswer: { '@type': 'Answer', text: `The 11+ in ${area.name} is set by ${area.examBoard}. The subjects tested include: ${area.subjects.join(', ')}.` },
+      },
+    ],
+  }
+
   const otherAreas = GRAMMAR_AREAS.filter((a) => a.slug !== slug).slice(0, 4)
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <PublicNav />
 

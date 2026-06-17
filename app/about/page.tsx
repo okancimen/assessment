@@ -21,6 +21,19 @@ export const metadata: Metadata = {
   },
 }
 
+const ORGANIZATION_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Eduentry',
+  url: 'https://eduentry.com',
+  logo: 'https://eduentry.com/icon.png',
+  description: 'Free AI-powered adaptive academic assessment platform for children aged 6–17. Standardised scores and international percentile rankings across English, Maths, Verbal and Non-Verbal Reasoning.',
+  foundingDate: '2026',
+  areaServed: ['United Kingdom', 'United States', 'Netherlands', 'United Arab Emirates', 'Canada', 'Australia', 'International'],
+  sameAs: [],
+  contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', url: 'https://eduentry.com/about' },
+}
+
 const ABOUT_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
@@ -51,10 +64,8 @@ const ABOUT_SCHEMA = {
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(ABOUT_SCHEMA) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ABOUT_SCHEMA) }} />
 
       <PublicNav />
 

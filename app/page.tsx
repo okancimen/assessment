@@ -5,6 +5,7 @@ import BellCurve from '@/components/landing/BellCurve'
 import Logo from '@/components/ui/Logo'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
+import { BLOG_POSTS } from '@/app/blog/posts'
 
 export const metadata: Metadata = {
   title: 'Eduentry — International Academic Benchmark for Children | Ages 6–17',
@@ -725,6 +726,33 @@ export default function LandingPage() {
             Read how Eduentry works →
           </Link>
         </p>
+      </section>
+
+      {/* Latest from the blog */}
+      <section className="py-20 max-w-6xl mx-auto px-6">
+        <div className="flex items-center justify-between mb-10">
+          <h2 className="text-2xl font-bold text-gray-900">Latest from the blog</h2>
+          <Link href="/blog" className="text-sm text-indigo-600 hover:underline font-medium">View all articles →</Link>
+        </div>
+        <div className="grid sm:grid-cols-3 gap-6">
+          {BLOG_POSTS.slice(1, 4).map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="group border border-gray-100 rounded-2xl p-6 hover:border-indigo-200 hover:shadow-sm transition-all flex flex-col"
+            >
+              <div className="flex flex-wrap gap-1.5 mb-4">
+                {post.tags.slice(0, 2).map((tag) => (
+                  <span key={tag} className="text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full px-2.5 py-0.5">{tag}</span>
+                ))}
+              </div>
+              <h3 className="font-semibold text-gray-900 text-sm leading-snug mb-3 group-hover:text-indigo-700 transition-colors flex-1">
+                {post.shortTitle}
+              </h3>
+              <div className="text-xs text-gray-400">{post.readTime}</div>
+            </Link>
+          ))}
+        </div>
       </section>
 
       {/* CTA */}
