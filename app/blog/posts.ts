@@ -99,6 +99,129 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     readTime: '8 min read',
     tags: ['Gifted Testing', 'CogAT', 'NNAT', 'US Education', 'Preparation'],
   },
+  // Netherlands
+  {
+    slug: 'netherlands-cito-toets-guide',
+    title: 'Cito Toets & Doorstroomtoets Guide: What Dutch Primary School Scores Mean',
+    shortTitle: 'Netherlands Cito / Doorstroomtoets Guide',
+    description:
+      'A complete guide for parents to the Dutch Doorstroomtoets (formerly Cito toets) — how scores work, what they mean for secondary school placement, and how to support your child through group 8.',
+    date: '2026-06-17',
+    readTime: '7 min read',
+    tags: ['Netherlands', 'Cito', 'Doorstroomtoets', 'Dutch Education', 'VWO'],
+  },
+  {
+    slug: 'netherlands-vwo-gymnasium-guide',
+    title: 'VWO and Gymnasium in the Netherlands: Entry Requirements and How to Qualify',
+    shortTitle: 'Netherlands VWO & Gymnasium Guide',
+    description:
+      'Everything parents need to know about VWO and Gymnasium in the Netherlands — the highest level of Dutch secondary education, how entry works, and how Tweetalig VWO programmes compare.',
+    date: '2026-06-17',
+    readTime: '7 min read',
+    tags: ['Netherlands', 'VWO', 'Gymnasium', 'Dutch Education', 'Secondary School'],
+  },
+  {
+    slug: 'netherlands-gifted-education-hoogbegaafd',
+    title: 'Gifted Education in the Netherlands: Hoogbegaafdheid, WISC-V and What Schools Offer',
+    shortTitle: 'Gifted Education in the Netherlands',
+    description:
+      'How giftedness (hoogbegaafdheid) is identified and supported in Dutch schools — WISC-V assessment, plusklas provision, Leonardoscholen, and what to do if your child is underachieving.',
+    date: '2026-06-17',
+    readTime: '8 min read',
+    tags: ['Netherlands', 'Gifted Education', 'Hoogbegaafd', 'WISC-V', 'Dutch Schools'],
+  },
+  {
+    slug: 'netherlands-international-school-admissions',
+    title: 'International School Admissions in the Netherlands: CAT4, IB and How Entry Works',
+    shortTitle: 'Netherlands International School Admissions',
+    description:
+      'A guide for expat families to international school admissions in the Netherlands — CAT4 assessment, IB vs British curriculum schools, EAL considerations, and how to navigate waiting lists.',
+    date: '2026-06-17',
+    readTime: '7 min read',
+    tags: ['Netherlands', 'International Schools', 'CAT4', 'Expat', 'Amsterdam'],
+  },
+  // UAE
+  {
+    slug: 'uae-cat4-test-guide',
+    title: 'CAT4 Test Guide for UAE Parents: What the Test Measures and How Scores Work',
+    shortTitle: 'UAE CAT4 Test Guide',
+    description:
+      'A complete guide to the CAT4 cognitive abilities test for parents at British-curriculum schools in Dubai and Abu Dhabi — four batteries explained, SAS scoring, stanines, and how UAE schools use results.',
+    date: '2026-06-17',
+    readTime: '8 min read',
+    tags: ['UAE', 'CAT4', 'Dubai', 'British Curriculum', 'Cognitive Testing'],
+  },
+  {
+    slug: 'uae-british-curriculum-school-admissions',
+    title: 'British Curriculum School Admissions in Dubai and Abu Dhabi: A Complete Guide',
+    shortTitle: 'UAE British School Admissions Guide',
+    description:
+      'How admissions work at the most sought-after British-curriculum schools in the UAE — GEMS Wellington, JESS, Dubai College, BSAK — including waiting lists, assessment process, and KHDA ratings.',
+    date: '2026-06-17',
+    readTime: '8 min read',
+    tags: ['UAE', 'Dubai', 'British Schools', 'Admissions', 'KHDA'],
+  },
+  {
+    slug: 'uae-gifted-programs-guide',
+    title: 'Gifted Education in the UAE: How International Schools Identify and Support High-Ability Students',
+    shortTitle: 'UAE Gifted Programs Guide',
+    description:
+      'How gifted and more-able students are identified and supported in UAE international schools — CAT4 thresholds, KHDA expectations, Al Mawhiba programme, and what to do when school provision falls short.',
+    date: '2026-06-17',
+    readTime: '7 min read',
+    tags: ['UAE', 'Gifted Education', 'CAT4', 'KHDA', 'Dubai Schools'],
+  },
+  {
+    slug: 'uae-international-school-entrance-exams',
+    title: 'UAE International School Entrance Exams: CAT4, ISEE, IB and What Each Curriculum Uses',
+    shortTitle: 'UAE International School Entrance Exams',
+    description:
+      'A curriculum-by-curriculum guide to entrance assessments at international schools in the UAE — British (CAT4), American (ISEE/SSAT), IB, and Indian (CBSE/ICSE) school admissions explained.',
+    date: '2026-06-17',
+    readTime: '7 min read',
+    tags: ['UAE', 'Entrance Exams', 'CAT4', 'ISEE', 'International Schools'],
+  },
+  // Canada
+  {
+    slug: 'canada-gifted-program-identification',
+    title: 'Gifted Program Identification in Canada: A Province-by-Province Guide',
+    shortTitle: 'Canada Gifted Program Identification',
+    description:
+      'How gifted education works across Canadian provinces — different identification processes, WISC-V assessment, CCAT screening, wait times, and what happens when families move between provinces.',
+    date: '2026-06-17',
+    readTime: '8 min read',
+    tags: ['Canada', 'Gifted Education', 'WISC-V', 'Ontario', 'Provincial Education'],
+  },
+  {
+    slug: 'canada-ontario-gifted-testing-guide',
+    title: 'Ontario Gifted Testing Guide: IPRC, WISC-V and How the Identification Process Works',
+    shortTitle: 'Ontario Gifted Testing Guide',
+    description:
+      'A detailed guide to Ontario\'s formal Gifted exceptionality process — WISC-V assessment, the IPRC committee, CCAT screening, self-contained Gifted classes, and parent rights under the Education Act.',
+    date: '2026-06-17',
+    readTime: '8 min read',
+    tags: ['Canada', 'Ontario', 'Gifted', 'IPRC', 'WISC-V'],
+  },
+  {
+    slug: 'canada-private-school-entrance-exams',
+    title: 'Canadian Private School Entrance Exams: ISEE, SSAT and How Top Schools Select Students',
+    shortTitle: 'Canada Private School Entrance Exams',
+    description:
+      'How admissions work at Canada\'s top independent schools — Upper Canada College, Havergal, Ridley — including ISEE and SSAT requirements, competitive score ranges, and the full application timeline.',
+    date: '2026-06-17',
+    readTime: '8 min read',
+    tags: ['Canada', 'Private Schools', 'ISEE', 'SSAT', 'Independent Schools'],
+  },
+  {
+    slug: 'canada-french-immersion-selective-programs',
+    title: 'French Immersion and Selective Public Programs in Canada: What Families Need to Know',
+    shortTitle: 'Canada French Immersion & Selective Programs',
+    description:
+      'A guide to French Immersion, magnet schools, IB public programmes, and other selective pathways in Canadian public education — how each works, how to access them, and how to combine them.',
+    date: '2026-06-17',
+    readTime: '7 min read',
+    tags: ['Canada', 'French Immersion', 'Public Schools', 'IB', 'Gifted'],
+  },
 ]
 
 export function getPostBySlug(slug: string) {
