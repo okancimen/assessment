@@ -1,50 +1,95 @@
 # Eduentry
 
-> Eduentry is a free AI-powered adaptive assessment platform that measures how children aged 6–17 perform against international education standards, providing percentile rankings and standardised scores.
+> Eduentry is a free AI-powered adaptive assessment platform that measures how children aged 6–17 perform against international education standards, providing standardised scores (mean 100, SD 15) and percentile rankings across English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning.
 
-Eduentry uses 2PL Item Response Theory (IRT) with MAP estimation — the same methodology as PISA, GCSE, and professional educational psychologists — to produce standardised scores (mean 100, SD 15) across four subjects. Results are benchmarked against four international frameworks to give families a global context for their child's academic standing.
+Eduentry uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posteriori (MAP) estimation — the same psychometric methodology as PISA, GCSE, and professional cognitive assessments — to produce scores benchmarked against four international frameworks.
 
-## What Eduentry does
+## Core pages
 
-- Adaptive academic assessment for children aged 6–17
-- Four subjects: English, Mathematics, Verbal Reasoning, Non-Verbal Reasoning
-- 15 questions per subject (60 total), adapting in real time to the child's ability level
-- Standardised scores with percentile rankings on a mean-100, SD-15 scale
-- International benchmarking against: UK National Curriculum, US grade levels, PISA (OECD), IB Programme
-- AI-generated personalised study recommendations per subject
-- Free to use — no subscription required
+- [Homepage](https://eduentry.com): Overview of the free adaptive assessment platform for children aged 6–17.
+- [11+ Preparation](https://eduentry.com/11-plus): Guide to using Eduentry for UK 11+ grammar school preparation, covering all four subjects.
+- [Grammar Schools](https://eduentry.com/grammar-schools): Entry requirements, SAS score benchmarks and 11+ preparation by English grammar school area.
+- [Subjects](https://eduentry.com/subjects): Overview of the four assessed subjects: English, Mathematics, Verbal Reasoning, Non-Verbal Reasoning.
+- [Methodology](https://eduentry.com/methodology): Technical explanation of the 2PL IRT adaptive scoring model and international benchmarking approach.
+- [About](https://eduentry.com/about): Background on Eduentry's mission, technology, and target audience.
+- [Try a Sample](https://eduentry.com/demo): Four free sample questions (one per subject) with no account required.
+- [Blog](https://eduentry.com/blog): Research and guides on international academic benchmarks, standardised testing, and school admissions.
+
+## Grammar school areas
+
+- [Kent Grammar Schools](https://eduentry.com/grammar-schools/kent): 32 grammar schools, GL Assessment, target SAS 115–121.
+- [Buckinghamshire Grammar Schools](https://eduentry.com/grammar-schools/buckinghamshire): 13 schools, CEM, target SAS 118+.
+- [Birmingham Grammar Schools](https://eduentry.com/grammar-schools/birmingham): King Edward's Foundation schools, target SAS 119+.
+- [North London (Barnet) Grammar Schools](https://eduentry.com/grammar-schools/london-barnet): QE Boys and Henrietta Barnett, target SAS 121–132.
+- [South London (Sutton) Grammar Schools](https://eduentry.com/grammar-schools/london-sutton): Nonsuch, Wallington, Wilson's, target SAS 118–125.
+- [Hertfordshire Grammar Schools](https://eduentry.com/grammar-schools/hertfordshire): GL Assessment, target SAS 111+.
+- [Essex Grammar Schools](https://eduentry.com/grammar-schools/essex): GL Assessment, target SAS 112+.
+- [Gloucestershire Grammar Schools](https://eduentry.com/grammar-schools/gloucestershire): GL Assessment, target SAS 111+.
+
+## Subject assessments
+
+- [English Assessment](https://eduentry.com/subjects/english): Comprehension, grammar, spelling, punctuation and vocabulary for ages 6–17.
+- [Mathematics Assessment](https://eduentry.com/subjects/maths): Number, algebra, geometry, fractions and data handling benchmarked to PISA numeracy.
+- [Verbal Reasoning Assessment](https://eduentry.com/subjects/verbal-reasoning): Analogies, word relationships, sequencing and logic — tested in 11+ and grammar school exams.
+- [Non-Verbal Reasoning Assessment](https://eduentry.com/subjects/non-verbal-reasoning): Pattern recognition, matrices, sequences and spatial reasoning.
+
+## Blog — UK
+
+- [How to Prepare for the 11+ at Home](https://eduentry.com/blog/how-to-prepare-for-11-plus): 18-month preparation timeline and subject-by-subject guide for parents.
+- [What Is a Standardised Score?](https://eduentry.com/blog/what-is-a-standardised-score): SAS, percentile rankings, and what scores mean for grammar school entry.
+- [Verbal Reasoning for the 11+](https://eduentry.com/blog/verbal-reasoning-11-plus-guide): Question types, worked examples, and preparation tips.
+- [Grammar School Entry Requirements 2026](https://eduentry.com/blog/grammar-school-entry-requirements-2026): SAS thresholds and percentile benchmarks by area.
+
+## Blog — US
+
+- [US Gifted Program Testing Guide](https://eduentry.com/blog/gifted-program-testing-guide): CogAT, WISC-V, NWEA MAP and OLSAT explained.
+- [NWEA MAP Scores Explained](https://eduentry.com/blog/nwea-map-scores-explained): RIT scores, grade-level benchmarks, and gifted identification thresholds.
+- [ISEE vs SSAT Private School Guide](https://eduentry.com/blog/isee-ssat-private-school-guide): Differences, score reporting, and which test to choose.
+- [How to Prepare for a Gifted Test](https://eduentry.com/blog/how-to-prepare-gifted-test): Evidence-based preparation guide for US families.
+
+## Blog — Netherlands
+
+- [Netherlands Cito / Doorstroomtoets Guide](https://eduentry.com/blog/netherlands-cito-toets-guide): How Dutch primary school scores work and what they mean for secondary placement.
+- [Netherlands VWO and Gymnasium Guide](https://eduentry.com/blog/netherlands-vwo-gymnasium-guide): Entry requirements for the highest levels of Dutch secondary education.
+- [Gifted Education in the Netherlands](https://eduentry.com/blog/netherlands-gifted-education-hoogbegaafd): Hoogbegaafdheid, WISC-V, plusklas and Leonardoscholen explained.
+- [Netherlands International School Admissions](https://eduentry.com/blog/netherlands-international-school-admissions): CAT4, IB, British curriculum schools and waiting lists for expat families.
+
+## Blog — UAE
+
+- [UAE CAT4 Test Guide](https://eduentry.com/blog/uae-cat4-test-guide): What CAT4 measures, SAS scoring, and how UAE schools use results.
+- [UAE British Curriculum School Admissions](https://eduentry.com/blog/uae-british-curriculum-school-admissions): GEMS Wellington, JESS, Dubai College, BSAK and KHDA ratings.
+- [UAE Gifted Programs Guide](https://eduentry.com/blog/uae-gifted-programs-guide): Al Mawhiba, CAT4 thresholds, and KHDA gifted provision expectations.
+- [UAE International School Entrance Exams](https://eduentry.com/blog/uae-international-school-entrance-exams): CAT4, ISEE, SSAT and curriculum-by-curriculum admissions guide.
+
+## Blog — Canada
+
+- [Canada Gifted Program Identification](https://eduentry.com/blog/canada-gifted-program-identification): Province-by-province guide to gifted identification processes.
+- [Ontario Gifted Testing Guide](https://eduentry.com/blog/canada-ontario-gifted-testing-guide): IPRC, WISC-V, CCAT and self-contained Gifted class placement.
+- [Canada Private School Entrance Exams](https://eduentry.com/blog/canada-private-school-entrance-exams): ISEE and SSAT at UCC, Havergal and other top Canadian independent schools.
+- [Canada French Immersion and Selective Programs](https://eduentry.com/blog/canada-french-immersion-selective-programs): EFI, LFI, public IB programmes and gifted+immersion combinations.
+
+## Blog — Australia
+
+- [ACER Scholarship Exam Guide](https://eduentry.com/blog/australia-acer-scholarship-exam): How Australia's most widely used independent school entrance test works and how to prepare.
+- [NSW Opportunity Class (OC) Test Guide](https://eduentry.com/blog/australia-oc-test-guide): OC classes, the three-component test, placement process and preparation.
+- [Western Australia GATE Programme Guide](https://eduentry.com/blog/australia-gate-gifted-program): Two-stage GATE assessment, Perth Modern School and PEAC explained.
 
 ## Score interpretation
 
-- Below 85: Needs Support (below -1 SD)
-- 85–94: Below Average (-1 SD to -0.33 SD)
-- 95–109: Average (within ±0.33 SD of mean)
-- 110–119: Above Average (+0.67 SD to +1.33 SD)
-- 120 and above: Exceptional (above +1.33 SD)
+Scores use a standardised scale (mean 100, SD 15):
 
-## International benchmarks
+- Below 85: Needs Support
+- 85–94: Below Average
+- 95–109: Average
+- 110–119: Above Average
+- 120 and above: Exceptional
 
-Scores map to:
-- **UK National Curriculum**: below expected standard / approaching / meeting / above / highly able
-- **US grade levels**: below / approaching / at / above / significantly above grade level
-- **PISA proficiency**: Levels 2 through 6 (OECD scale)
-- **IB Programme**: Foundation / MYP / Diploma Standard Level / Diploma Higher Level readiness
+A score of 115 corresponds to the 84th percentile and is the competitive entry threshold for most English grammar schools outside London.
 
-## Methodology
+## Technical notes
 
-The assessment uses 2-Parameter Logistic (2PL) IRT with Maximum A Posteriori (MAP) estimation. Each question is generated by AI and calibrated to a difficulty and discrimination parameter. The adaptive engine selects questions to maximise information at the child's estimated ability level. Final scores are reported on a standardised scale (mean=100, SD=15) equivalent to the scale used by professional cognitive assessments such as CAT4 and the 11+ standardised tests.
+Assessment uses 2PL IRT with MAP estimation. Questions are AI-generated by Claude (Anthropic) and calibrated to difficulty and discrimination parameters. Results are indicative, not diagnostic — question content is not empirically normed with large populations.
 
-Note: question content is AI-generated and not empirically calibrated with large normative populations. Results are indicative, not diagnostic.
+## Sitemap
 
-## Target audience
-
-- Parents of children aged 6–17 in the UK, internationally, and expatriate families
-- Families preparing for 11+, grammar school entry, selective independent school admission
-- Families considering IB schools or international school admission
-- Parents seeking to understand how their child compares globally (not just locally)
-
-## Website
-
-- Homepage: https://eduentry.com
-- Free assessment: https://eduentry.com (requires account creation)
-- Sitemap: https://eduentry.com/sitemap.xml
+- [Full sitemap](https://eduentry.com/sitemap.xml): All indexed pages in XML format.
