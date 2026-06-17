@@ -34,9 +34,24 @@ export default function GrammarSchoolsIndexPage() {
     ],
   }
 
+  const itemList = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Grammar Schools in England by Area',
+    url: `${BASE_URL}/grammar-schools`,
+    numberOfItems: GRAMMAR_AREAS.length,
+    itemListElement: GRAMMAR_AREAS.map((a, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${BASE_URL}/grammar-schools/${a.slug}`,
+      name: `Grammar Schools in ${a.name}`,
+    })),
+  }
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
 
       <PublicNav />
 

@@ -28,9 +28,22 @@ export default function DemoPage() {
     ],
   }
 
+  const softwareSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Eduentry Sample Assessment',
+    url: `${BASE_URL}/demo`,
+    applicationCategory: 'EducationalApplication',
+    operatingSystem: 'Web',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
+    description: 'Try four sample adaptive questions — one from each subject — to see how the Eduentry assessment works before registering.',
+    provider: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
+  }
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
 
       <PublicNav />
 

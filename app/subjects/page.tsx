@@ -35,9 +35,31 @@ export default function SubjectsIndexPage() {
 
   const slugs = Object.keys(SUBJECTS) as Slug[]
 
+  const subjectSlugs: Record<string, string> = {
+    english: 'english',
+    mathematics: 'maths',
+    verbal_reasoning: 'verbal-reasoning',
+    nonverbal_reasoning: 'non-verbal-reasoning',
+  }
+
+  const itemList = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Free Adaptive Assessments by Subject — Eduentry',
+    url: `${BASE_URL}/subjects`,
+    numberOfItems: slugs.length,
+    itemListElement: slugs.map((slug, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${BASE_URL}/subjects/${subjectSlugs[slug] ?? slug}`,
+      name: SUBJECTS[slug].headline,
+    })),
+  }
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
 
       <PublicNav />
 
