@@ -3,6 +3,7 @@ import { US_CONTENT } from './content-us'
 import { NL_CONTENT } from './content-nl'
 import { UAE_CONTENT } from './content-uae'
 import { CA_CONTENT } from './content-ca'
+import { AU_CONTENT } from './content-au'
 
 export function getBlogContent(slug: string): React.ReactNode {
   return (
@@ -11,6 +12,7 @@ export function getBlogContent(slug: string): React.ReactNode {
     NL_CONTENT[slug] ??
     UAE_CONTENT[slug] ??
     CA_CONTENT[slug] ??
+    AU_CONTENT[slug] ??
     null
   )
 }

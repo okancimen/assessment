@@ -603,6 +603,91 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
     ],
   },
+  // Australia
+  {
+    slug: 'australia-acer-scholarship-exam',
+    title: 'ACER Scholarship Exam Guide: How It Works, Scores and How to Prepare',
+    shortTitle: 'ACER Scholarship Exam Guide',
+    description:
+      'A complete guide to the ACER Scholarship Examination — how Australia\'s most widely used independent school entrance test works, how scores are reported, and how to prepare across all three components.',
+    date: '2026-06-17',
+    readTime: '9 min read',
+    tags: ['Australia', 'ACER', 'Scholarship Exam', 'Private Schools', 'Independent Schools'],
+    faqs: [
+      {
+        q: 'What is the ACER Scholarship Examination?',
+        a: 'The ACER Scholarship Examination is a standardised test run by the Australian Council for Educational Research (ACER), used by over 700 independent and Catholic schools across Australia to award scholarships and assess general academic aptitude for entry. It measures reasoning ability through Written Expression, Humanities (reading and verbal reasoning), and Mathematics (numerical reasoning).',
+      },
+      {
+        q: 'What is a good score on the ACER Scholarship Exam?',
+        a: 'ACER scores range from 0–100 with a mean of 50. A score of 68–74 (95th–98th percentile) makes a child a strong scholarship candidate at most schools. Scores of 75+ are scholarship-competitive at top independent schools. The comparison group is other independent school applicants — already an academically above-average pool.',
+      },
+      {
+        q: 'When is the ACER Scholarship Exam held?',
+        a: 'The main ACER Scholarship Exam for Year 7 entry is held in June of the preceding year — so a child entering Year 7 in 2027 would sit the exam in June 2026 while in Year 6. Applications open from March and close in May. Registration is through individual schools, not through ACER directly.',
+      },
+      {
+        q: 'How long should you prepare for the ACER Scholarship Exam?',
+        a: 'For meaningful score improvement, start ACER preparation 12–18 months before the exam. The last 8–10 weeks before the exam should include full timed practice tests under exam conditions. The Written Expression component benefits most from structured weekly writing practice over an extended period.',
+      },
+    ],
+  },
+  {
+    slug: 'australia-oc-test-guide',
+    title: 'NSW Opportunity Class (OC) Test Guide: How It Works and How to Prepare',
+    shortTitle: 'NSW OC Test Guide',
+    description:
+      'A complete guide to the NSW Opportunity Class Placement Test — what OC classes are, how the test works, how offers are made, score thresholds, and how to prepare your Year 4 child for selection.',
+    date: '2026-06-17',
+    readTime: '8 min read',
+    tags: ['Australia', 'NSW', 'Opportunity Class', 'OC Test', 'Gifted Education'],
+    faqs: [
+      {
+        q: 'What is an Opportunity Class (OC) in NSW?',
+        a: 'An Opportunity Class is a selective Year 5–6 gifted education setting within a mainstream NSW government primary school. OC classes follow an accelerated and enriched curriculum and draw students from a wide geographic catchment. There are approximately 76 OC schools across NSW with 30 places each, and around 14,000 students apply annually for roughly 2,100 places.',
+      },
+      {
+        q: 'What does the OC Placement Test measure?',
+        a: 'The OC Placement Test has three components: Reading (27.5%), Mathematical Reasoning (27.5%), and Thinking Skills (45%). Thinking Skills — the largest component — covers verbal reasoning, abstract reasoning, and logical sequences. It is an "IQ-style" component that most Year 4 students have never encountered at school, making specific preparation highly valuable.',
+      },
+      {
+        q: 'When do children sit the OC test?',
+        a: 'The OC Placement Test is sat in July of Year 4. Applications open in Term 1 (February–March) and close in mid-March. Results and offers are released in October of Year 4, and the OC programme begins in February of Year 5. The entire process runs approximately 12 months before the child starts their OC class.',
+      },
+      {
+        q: 'What score do you need to get into an OC class?',
+        a: 'NSW Education does not publish minimum score thresholds. The effective threshold varies by school — popular inner-city OC schools (such as those in Chatswood or Epping) are more competitive than regional OC schools. Preparation and performance in Thinking Skills (the highest-weighted component) has the most impact on placement score.',
+      },
+    ],
+  },
+  {
+    slug: 'australia-gate-gifted-program',
+    title: 'GATE Western Australia: How the Gifted and Talented Programme Works',
+    shortTitle: 'Western Australia GATE Programme Guide',
+    description:
+      'Everything WA families need to know about GATE — Western Australia\'s Gifted and Talented Education programme. How the two-stage assessment works, PEAC, Perth Modern School, and how to prepare.',
+    date: '2026-06-17',
+    readTime: '8 min read',
+    tags: ['Australia', 'Western Australia', 'GATE', 'Gifted Education', 'Perth Modern'],
+    faqs: [
+      {
+        q: 'What is the GATE programme in Western Australia?',
+        a: 'GATE (Gifted and Talented Education) is WA\'s state government programme identifying students with high intellectual ability and placing them in enriched programmes at designated GATE schools. Unlike NSW\'s competitive ranked system, WA GATE identifies all students who meet an ability threshold (approximately the 98th percentile) and places them at GATE schools based on preference and proximity.',
+      },
+      {
+        q: 'How does the GATE assessment work in WA?',
+        a: 'The GATE assessment has two stages. Stage 1 is a group-administered reasoning test at the child\'s school covering verbal, numerical, and abstract reasoning. Students who pass Stage 1 proceed to Stage 2, an individually administered cognitive assessment providing a comprehensive measure of intellectual ability. Final GATE eligibility is determined from Stage 2 results.',
+      },
+      {
+        q: 'What is Perth Modern School?',
+        a: 'Perth Modern School is the most selective GATE school in Western Australia — it admits only GATE-eligible students and is routinely ranked the highest-performing government school in Australia. Demand exceeds places; proximity is a tiebreaker. It is located in Subiaco, Perth, and draws GATE-identified students from across the metropolitan area.',
+      },
+      {
+        q: 'Can you prepare for the WA GATE assessment?',
+        a: 'Stage 1 is moderately preparation-responsive. Practising abstract reasoning, verbal reasoning, and numerical reasoning question formats 6–9 months before the test removes the disadvantage of unfamiliarity and genuinely improves Stage 1 scores. Stage 2 is an individually administered assessment and is substantially less preparation-responsive — focus on reducing anxiety and ensuring your child is well-rested.',
+      },
+    ],
+  },
 ]
 
 export function getPostBySlug(slug: string) {
