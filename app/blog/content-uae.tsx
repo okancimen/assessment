@@ -168,6 +168,13 @@ export const UAE_CONTENT: Record<string, React.ReactNode> = {
           <Check>For the spatial battery, building toys (Lego, Magformers), paper folding activities, and 3D spatial puzzles build the underlying skill over time.</Check>
           <Check>Do not attempt to &quot;prepare&quot; for the verbal battery through vocabulary drilling if English is not your child&apos;s first language. Schools should account for EAL status in interpreting verbal battery scores.</Check>
         </ul>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          For more on how UAE schools use CAT4 scores in admissions and what to expect from the
+          process, see our guide to{' '}
+          <Link href="/blog/uae-british-curriculum-school-admissions" className="text-indigo-600 hover:underline">
+            British curriculum school admissions in Dubai and Abu Dhabi
+          </Link>.
+        </p>
       </section>
     </>
   ),
@@ -287,7 +294,15 @@ export const UAE_CONTENT: Record<string, React.ReactNode> = {
           how much progress students make relative to their prior attainment (including CAT4
           scores on entry). A school that achieves strong results with a highly selective intake
           is performing differently from one that achieves similar results while taking a much
-          broader ability range.
+          broader ability range. For a full explanation of the CAT4 assessment used throughout
+          this process, see our{' '}
+          <Link href="/blog/uae-cat4-test-guide" className="text-indigo-600 hover:underline">
+            UAE CAT4 test guide
+          </Link>. Once your child is enrolled, our{' '}
+          <Link href="/blog/uae-gifted-programs-guide" className="text-indigo-600 hover:underline">
+            guide to gifted programs in UAE schools
+          </Link>{' '}
+          explains how high-ability students are identified and supported.
         </p>
       </section>
     </>

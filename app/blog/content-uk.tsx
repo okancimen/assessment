@@ -521,8 +521,12 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed">
           Eduentry covers all four 11+ subjects (English, Mathematics, Verbal Reasoning, Non-Verbal
           Reasoning) and produces a standardised score on the same scale (mean 100, SD 15) used
-          by GL Assessment. Retesting every 3–4 months tracks real progress over time. It takes
-          around 60–90 minutes and is completely free.
+          by GL Assessment. Not sure what a standardised score means?{' '}
+          <Link href="/blog/what-is-a-standardised-score" className="text-indigo-600 hover:underline">
+            Our guide to standardised scores
+          </Link>{' '}
+          explains exactly how to read and use your child&apos;s results. Retesting every 3–4 months
+          tracks real progress over time.
         </p>
       </section>
     </>
@@ -749,7 +753,11 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           Use the score diagnostically. A child scoring below 95 in verbal reasoning and above 115 in
           mathematics needs a completely different preparation plan than a child scoring 108 across
           all four subjects. The percentile tells you where they are. The subject breakdown tells
-          you what to work on.
+          you what to work on. For a subject-by-subject breakdown of verbal reasoning specifically,
+          see our{' '}
+          <Link href="/blog/verbal-reasoning-11-plus-guide" className="text-indigo-600 hover:underline">
+            verbal reasoning question types guide
+          </Link>.
         </p>
         <p className="text-gray-700 leading-relaxed">
           Re-test every 3–4 months to measure genuine progress. Month-to-month variation is largely noise.
@@ -887,11 +895,17 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           Twenty minutes a day, maintained for 12 months, produces more measurable improvement in
           verbal reasoning scores than any dedicated vocabulary workbook.
         </p>
-        <p className="text-gray-700 leading-relaxed">
+        <p className="text-gray-700 leading-relaxed mb-4">
           Supplementary strategies: a &quot;word of the day&quot; notebook (5 new words per week,
           each used in two sentences); word family trees (elate → elated → elation → elating);
           and deliberate use of unfamiliar words in conversation. Word games — Scrabble, Boggle,
           crosswords — build vocabulary engagement without the pressure of formal study.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          For a complete preparation timeline and strategy covering all four 11+ subjects, see our{' '}
+          <Link href="/blog/how-to-prepare-for-11-plus" className="text-indigo-600 hover:underline">
+            full guide to preparing for the 11+ at home
+          </Link>.
         </p>
       </section>
 
@@ -1106,7 +1120,14 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           The key caveat: Eduentry&apos;s questions are AI-generated and have not been empirically
           normed on large populations. The score reflects the standardised scale, not a precise
           GL Assessment SAS equivalent. Use Eduentry scores as a directional benchmark and a
-          progress-tracking tool — not as a definitive prediction of 11+ performance.
+          progress-tracking tool — not as a definitive prediction of 11+ performance. For a full
+          explanation of how standardised scores work and what percentiles mean,{' '}
+          <Link href="/blog/what-is-a-standardised-score" className="text-indigo-600 hover:underline">
+            read our standardised score guide
+          </Link>. For a step-by-step home preparation plan, see our{' '}
+          <Link href="/blog/how-to-prepare-for-11-plus" className="text-indigo-600 hover:underline">
+            complete guide to preparing for the 11+ at home
+          </Link>.
         </p>
       </section>
     </>

@@ -183,7 +183,14 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           Many children who do not qualify initially for GT programs at age 6 or 7 qualify on
           re-evaluation at age 8 or 9. Some of the most accomplished students in gifted programs
           were initially borderline. Focus on building the underlying skills and a love of learning —
-          test scores will follow.
+          test scores will follow. For a practical breakdown of how to build those skills systematically,
+          see our{' '}
+          <Link href="/blog/how-to-prepare-gifted-test" className="text-indigo-600 hover:underline">
+            guide to preparing your child for gifted testing
+          </Link>, and for more on how NWEA MAP scores factor into gifted referrals,{' '}
+          <Link href="/blog/nwea-map-scores-explained" className="text-indigo-600 hover:underline">
+            read our MAP scores guide
+          </Link>.
         </p>
       </section>
     </>
@@ -354,7 +361,11 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           If your child scores at the 95th+ percentile on MAP, they are performing at a level
           significantly above their grade-level peers. This is strong evidence for gifted services
           — and if your district is not automatically acting on this, it is entirely reasonable
-          to advocate proactively for evaluation.
+          to advocate proactively for evaluation. For a full overview of how that evaluation
+          process works and which other tests are used alongside MAP, see our{' '}
+          <Link href="/blog/gifted-program-testing-guide" className="text-indigo-600 hover:underline">
+            gifted program testing guide
+          </Link>.
         </p>
       </section>
 

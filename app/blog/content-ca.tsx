@@ -123,7 +123,12 @@ export const CA_CONTENT: Record<string, React.ReactNode> = {
           When relocating, bring copies of all assessment reports, IEP or identification
           documents, and any programme reports from the previous province. Contact the
           receiving school board&apos;s special education department before the child starts
-          school to understand what additional steps may be required.
+          school to understand what additional steps may be required. For the most detailed
+          breakdown of the Ontario process specifically — the largest and most formalised
+          system in Canada — see our{' '}
+          <Link href="/blog/canada-ontario-gifted-testing-guide" className="text-indigo-600 hover:underline">
+            Ontario gifted testing guide
+          </Link>.
         </p>
       </section>
     </>
@@ -237,7 +242,11 @@ export const CA_CONTENT: Record<string, React.ReactNode> = {
           school (with an IEP where appropriate) or apply to specialised arts and science
           programmes. There is no dedicated secondary-level Gifted track equivalent to the
           elementary self-contained model, though many gifted students access enriched or
-          Advanced Placement (AP) courses within their secondary school.
+          Advanced Placement (AP) courses within their secondary school. Families considering
+          independent school as an alternative should read our{' '}
+          <Link href="/blog/canada-private-school-entrance-exams" className="text-indigo-600 hover:underline">
+            guide to Canadian private school entrance exams
+          </Link>.
         </p>
       </section>
     </>

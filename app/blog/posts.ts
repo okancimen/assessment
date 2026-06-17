@@ -227,3 +227,17 @@ export const BLOG_POSTS: BlogPostMeta[] = [
 export function getPostBySlug(slug: string) {
   return BLOG_POSTS.find((p) => p.slug === slug)
 }
+
+export function getRelatedPosts(slug: string, count = 3): BlogPostMeta[] {
+  const post = getPostBySlug(slug)
+  if (!post) return []
+  const others = BLOG_POSTS.filter((p) => p.slug !== slug)
+  return others
+    .map((p) => ({
+      post: p,
+      score: p.tags.filter((t) => post.tags.includes(t)).length,
+    }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, count)
+    .map((s) => s.post)
+}

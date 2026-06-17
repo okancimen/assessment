@@ -150,7 +150,14 @@ export const NL_CONTENT: Record<string, React.ReactNode> = {
           systematically underestimates your child&apos;s potential. This is particularly
           relevant for children who may have a learning difference (dyslexia, attention
           difficulties) that has affected their classroom performance but not their
-          underlying cognitive ability.
+          underlying cognitive ability. For more on gifted identification and cognitive
+          assessment in the Netherlands, see our{' '}
+          <Link href="/blog/netherlands-gifted-education-hoogbegaafd" className="text-indigo-600 hover:underline">
+            guide to gifted education (hoogbegaafd) in the Netherlands
+          </Link>. If your child is heading to VWO, read our{' '}
+          <Link href="/blog/netherlands-vwo-gymnasium-guide" className="text-indigo-600 hover:underline">
+            VWO and Gymnasium entry guide
+          </Link>.
         </p>
       </section>
     </>
@@ -290,7 +297,11 @@ export const NL_CONTENT: Record<string, React.ReactNode> = {
           programmes (like the University College liberal arts programmes at UvA, Utrecht,
           Groningen, and Maastricht) that require a VWO diploma specifically. Gymnasium graduates
           additionally qualify for classical studies programmes that require the classical
-          language background.
+          language background. To understand what Doorstroomtoets score your child needs to
+          receive a VWO schooladvies, read our{' '}
+          <Link href="/blog/netherlands-cito-toets-guide" className="text-indigo-600 hover:underline">
+            complete guide to the Doorstroomtoets and Cito toets
+          </Link>.
         </p>
       </section>
     </>
@@ -407,6 +418,10 @@ export const NL_CONTENT: Record<string, React.ReactNode> = {
           strengths and challenges can cancel each other out, leading teachers and parents
           to see a &quot;average&quot; child when the reality is a complex profile.
           Private psychodiagnostisch assessment is often the only way to identify this profile accurately.
+          If your family attends an international school in the Netherlands, see also our guide to{' '}
+          <Link href="/blog/netherlands-international-school-admissions" className="text-indigo-600 hover:underline">
+            international school admissions in the Netherlands
+          </Link>, which covers the CAT4 cognitive assessment that most British-curriculum schools use.
         </p>
       </section>
     </>

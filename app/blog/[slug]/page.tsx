@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
-import { BLOG_POSTS, getPostBySlug } from '../posts'
+import { BLOG_POSTS, getPostBySlug, getRelatedPosts } from '../posts'
 import { getBlogContent } from '../content'
 
 const BASE_URL = 'https://eduentry.com'
@@ -59,20 +59,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: post.title,
     description: post.description,
+    keywords: post.tags.join(', '),
     datePublished: post.date,
     dateModified: post.date,
+    url,
     image: `${BASE_URL}/blog/${slug}/opengraph-image`,
     author: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
     publisher: {
       '@type': 'Organization',
       name: 'Eduentry',
-      logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png` },
+      logo: { '@type': 'ImageObject', url: `${BASE_URL}/icon.png` },
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
   }
+
+  const related = getRelatedPosts(slug)
 
   return (
     <div className="min-h-screen bg-white">
@@ -117,16 +121,31 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           {getBlogContent(slug)}
         </article>
 
-        {/* Internal links */}
-        <section className="mt-14 mb-14">
-          <Link href="/methodology" className="flex items-center justify-between bg-indigo-50 border border-indigo-100 rounded-xl px-6 py-4 hover:bg-indigo-100/60 transition-colors group">
-            <div>
-              <div className="font-semibold text-indigo-900 mb-0.5">How does Eduentry calculate standardised scores?</div>
-              <div className="text-sm text-indigo-600">Read the full scoring methodology and international benchmarks →</div>
+        {/* Related articles */}
+        {related.length > 0 && (
+          <section className="mt-16 mb-12">
+            <h2 className="text-xl font-bold text-gray-900 mb-6">Related articles</h2>
+            <div className="grid sm:grid-cols-3 gap-4">
+              {related.map((p) => (
+                <Link
+                  key={p.slug}
+                  href={`/blog/${p.slug}`}
+                  className="group border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/40 transition-colors flex flex-col"
+                >
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    {p.tags.slice(0, 2).map((tag) => (
+                      <span key={tag} className="text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full px-2.5 py-0.5">{tag}</span>
+                    ))}
+                  </div>
+                  <div className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-indigo-700 transition-colors flex-1">
+                    {p.shortTitle}
+                  </div>
+                  <div className="text-xs text-gray-400">{p.readTime}</div>
+                </Link>
+              ))}
             </div>
-            <svg className="w-5 h-5 text-indigo-400 flex-shrink-0 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-          </Link>
-        </section>
+          </section>
+        )}
 
         {/* CTA */}
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
