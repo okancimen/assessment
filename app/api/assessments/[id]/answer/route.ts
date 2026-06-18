@@ -61,6 +61,11 @@ export async function POST(
 
   if (!session) return NextResponse.json({ error: 'Session not found' }, { status: 404 })
 
+  // Guard against duplicate/late submissions — subject is already complete
+  if (session.question_index >= QUESTIONS_PER_SUBJECT) {
+    return NextResponse.json({ error: 'Subject already complete' }, { status: 409 })
+  }
+
   // Update subject scores — including the IRT response array
   const currentSubject = session.current_subject as Subject
   const subjectScores = session.subject_scores || {}
