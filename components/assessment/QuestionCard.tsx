@@ -25,11 +25,8 @@ interface QuestionCardProps {
 export default function QuestionCard({ question, onAnswer, onNext, questionNumber, totalQuestions }: QuestionCardProps) {
   const [selected, setSelected] = useState<string | null>(null)
   const [submitting, setSubmitting] = useState(false)
-  const [feedback, setFeedback] = useState<FeedbackData | null>(null)
-  const [countdown, setCountdown] = useState(0)
   const [timeLeft, setTimeLeft] = useState(QUESTION_TIME_LIMIT)
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
-  const cdRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const selectedRef = useRef<string | null>(null)
   const submittingRef = useRef(false)
   selectedRef.current = selected
@@ -41,17 +38,15 @@ export default function QuestionCard({ question, onAnswer, onNext, questionNumbe
     const answer = selectedRef.current ?? question.options[0].id
     submittingRef.current = true
     setSubmitting(true)
-    const result = await onAnswer(answer, QUESTION_TIME_LIMIT)
-    if (result) showFeedback(result)
+    await onAnswer(answer, QUESTION_TIME_LIMIT)
+    onNext()
   }
 
   useEffect(() => {
     setSelected(null)
     setSubmitting(false)
-    setFeedback(null)
     setTimeLeft(QUESTION_TIME_LIMIT)
     if (timerRef.current) clearInterval(timerRef.current)
-    if (cdRef.current) clearInterval(cdRef.current)
 
     timerRef.current = setInterval(() => {
       setTimeLeft((t) => {
@@ -62,29 +57,16 @@ export default function QuestionCard({ question, onAnswer, onNext, questionNumbe
 
     return () => {
       if (timerRef.current) clearInterval(timerRef.current!)
-      if (cdRef.current) clearInterval(cdRef.current!)
     }
   }, [question.id])
 
-  function showFeedback(data: FeedbackData) {
-    setFeedback(data)
-    const delay = data.isCorrect ? 2 : 3
-    setCountdown(delay)
-    cdRef.current = setInterval(() => {
-      setCountdown((c) => {
-        if (c <= 1) { clearInterval(cdRef.current!); onNext(); return 0 }
-        return c - 1
-      })
-    }, 1000)
-  }
-
   async function handleSubmit() {
-    if (!selected || submitting || feedback) return
+    if (!selected || submitting) return
     if (timerRef.current) clearInterval(timerRef.current)
     setSubmitting(true)
     const timeTaken = QUESTION_TIME_LIMIT - timeLeft
-    const result = await onAnswer(selected, timeTaken)
-    if (result) showFeedback(result)
+    await onAnswer(selected, timeTaken)
+    onNext()
   }
 
   const minutes = Math.floor(timeLeft / 60)
@@ -92,64 +74,6 @@ export default function QuestionCard({ question, onAnswer, onNext, questionNumbe
   const isWarning = timeLeft <= 30
   const isCritical = timeLeft <= 10
   const timerPct = (timeLeft / QUESTION_TIME_LIMIT) * 100
-
-  // ── Feedback overlay ─────────────────────────────────────────────────────────
-  if (feedback) {
-    return (
-      <div className="space-y-5">
-        <div className="flex items-center justify-between text-sm text-gray-500">
-          <span>Question {questionNumber} of {totalQuestions}</span>
-        </div>
-
-        <p className="text-lg font-medium text-gray-900 leading-relaxed">{question.question_text}</p>
-
-        <div className="space-y-2.5">
-          {question.options.map((option) => {
-            const isSelected = option.id === feedback.selectedAnswer
-            const isCorrect = option.id === feedback.correctAnswer
-            return (
-              <div key={option.id} className={cn(
-                'w-full px-4 py-3.5 rounded-xl border-2 flex items-center gap-3 font-medium text-sm sm:text-base',
-                isCorrect ? 'border-emerald-500 bg-emerald-50 text-emerald-800' :
-                isSelected ? 'border-red-400 bg-red-50 text-red-800' :
-                'border-gray-100 text-gray-400',
-              )}>
-                <span className={cn(
-                  'w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0',
-                  isCorrect ? 'bg-emerald-500 text-white' :
-                  isSelected ? 'bg-red-400 text-white' :
-                  'bg-gray-100 text-gray-400',
-                )}>
-                  {isCorrect ? '✓' : isSelected ? '✗' : option.id}
-                </span>
-                {option.text}
-              </div>
-            )
-          })}
-        </div>
-
-        <div className={cn(
-          'rounded-xl p-4 space-y-1',
-          feedback.isCorrect ? 'bg-emerald-50 border border-emerald-200' : 'bg-amber-50 border border-amber-200',
-        )}>
-          <p className={cn('font-semibold text-sm', feedback.isCorrect ? 'text-emerald-700' : 'text-amber-700')}>
-            {feedback.isCorrect ? '✓ Correct!' : '✗ Incorrect'}
-          </p>
-          {feedback.explanation && (
-            <p className="text-sm text-gray-600 leading-relaxed">{feedback.explanation}</p>
-          )}
-        </div>
-
-        <button
-          onClick={() => { if (cdRef.current) clearInterval(cdRef.current); onNext() }}
-          className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3.5 rounded-xl transition-colors text-sm flex items-center justify-center gap-2"
-        >
-          Next question
-          <span className="text-indigo-300 text-xs font-normal">({countdown}s)</span>
-        </button>
-      </div>
-    )
-  }
 
   // ── Question view ─────────────────────────────────────────────────────────────
   return (
