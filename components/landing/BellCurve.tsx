@@ -40,11 +40,8 @@ const baseY = PAD_T + CH  // = 176, always fixed
 
 // Labels: 3 lines per subject, compact row spacing
 const LINE_H = 9   // px between text lines within a row
-const ROW_GAP = 14 // extra gap between row 0 and row 1
+const ROW_GAP = 14 // extra gap between rows
 const ROW0_Y1 = baseY + 11
-const ROW1_Y1 = ROW0_Y1 + 3 * LINE_H + ROW_GAP  // = baseY + 11 + 27 + 14 = baseY + 52
-const PAD_B_ONE = 3 * LINE_H + 14  // single row needs: baseY + 11 + 27 + 5 margin
-const PAD_B_TWO = 3 * LINE_H + ROW_GAP + 3 * LINE_H + 8  // two rows
 
 // Minimum pixel gap between adjacent label centers to avoid overlap
 const MIN_LABEL_GAP = 58
@@ -107,27 +104,28 @@ function zonePath(from: number, to: number) {
   return `M ${pts.join(' L ')} Z`
 }
 
-/** Greedy 2-row assignment: sort by x, try row 0 first, spill to row 1 */
+/** Greedy N-row assignment: opens a new row whenever all existing rows are too tight */
 function assignRows(subjects: BellCurveSubject[]): number[] {
   const rows = new Array<number>(subjects.length).fill(0)
-  const lastX: number[] = [-Infinity, -Infinity]
+  const lastX: number[] = []
 
-  // Work in sorted order so adjacency checks are meaningful
   const order = subjects
     .map((s, i) => ({ i, x: sx(s.score) }))
     .sort((a, b) => a.x - b.x)
 
   for (const { i, x } of order) {
-    if (x - lastX[0] >= MIN_LABEL_GAP) {
-      rows[i] = 0
-      lastX[0] = x
-    } else if (x - lastX[1] >= MIN_LABEL_GAP) {
-      rows[i] = 1
-      lastX[1] = x
-    } else {
-      // Both rows are tight — push to row 1 (accepts minor overlap as last resort)
-      rows[i] = 1
-      lastX[1] = x
+    let placed = false
+    for (let r = 0; r < lastX.length; r++) {
+      if (x - lastX[r] >= MIN_LABEL_GAP) {
+        rows[i] = r
+        lastX[r] = x
+        placed = true
+        break
+      }
+    }
+    if (!placed) {
+      rows[i] = lastX.length
+      lastX.push(x)
     }
   }
   return rows
@@ -140,11 +138,9 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
   const cardTitle = title ?? 'Score distribution · Sample'
 
   const rows = assignRows(displaySubjects)
-  const needsTwoRows = rows.some(r => r === 1)
+  const numRows = displaySubjects.length > 0 ? Math.max(...rows) + 1 : 1
   const linesPerLabel = hideScores ? 2 : 3
-  const PAD_B = needsTwoRows
-    ? linesPerLabel * LINE_H + ROW_GAP + linesPerLabel * LINE_H + 8
-    : linesPerLabel * LINE_H + 14
+  const PAD_B = numRows * linesPerLabel * LINE_H + (numRows - 1) * ROW_GAP + 8
   const H = PAD_T + CH + PAD_B
 
   return (
@@ -206,7 +202,7 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
           const my  = sy(pdf(score))
           const pct = Math.round(cdf(score) * 100)
           const row = rows[i]
-          const y1  = row === 0 ? ROW0_Y1 : ROW1_Y1
+          const y1  = ROW0_Y1 + row * (linesPerLabel * LINE_H + ROW_GAP)
 
           return (
             <g key={label}>
@@ -214,8 +210,8 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
               <line x1={mx} y1={my + 5} x2={mx} y2={baseY}
                 stroke={color} strokeWidth="1.5" strokeDasharray="3 2" strokeOpacity="0.7" />
 
-              {/* For row-1 labels: extend a thin line below the baseline */}
-              {row === 1 && (
+              {/* For labels below row 0: extend a thin line below the baseline */}
+              {row >= 1 && (
                 <line x1={mx} y1={baseY + 1} x2={mx} y2={y1 - 4}
                   stroke={color} strokeWidth="0.8" strokeOpacity="0.35" />
               )}
