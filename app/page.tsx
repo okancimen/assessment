@@ -367,10 +367,10 @@ export default function LandingPage() {
             </div>
             <div className="space-y-2.5">
               {[
-                { label: 'English',              score: 103, color: 'bg-blue-500',   pct: 58 },
-                { label: 'Mathematics',          score: 119, color: 'bg-violet-500', pct: 90 },
-                { label: 'Verbal Reasoning',     score: 113, color: 'bg-emerald-500',pct: 79 },
-                { label: 'Non-Verbal Reasoning', score:  91, color: 'bg-amber-500',  pct: 27 },
+                { label: 'English',              score: 103, color: 'bg-indigo-600', pct: 58 },
+                { label: 'Mathematics',          score: 119, color: 'bg-teal-600',   pct: 90 },
+                { label: 'Verbal Reasoning',     score: 113, color: 'bg-violet-600', pct: 79 },
+                { label: 'Non-Verbal Reasoning', score:  91, color: 'bg-pink-600',   pct: 27 },
               ].map((s) => (
                 <div key={s.label}>
                   <div className="flex justify-between text-xs text-gray-500 mb-1">
@@ -499,11 +499,11 @@ export default function LandingPage() {
             <h3 className="font-bold text-gray-900 mb-5 text-center">What the score means</h3>
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
               {[
-                { range: '70–84', label: 'Needs Support', color: 'text-red-600', bg: 'bg-red-50' },
-                { range: '85–94', label: 'Below Average', color: 'text-amber-600', bg: 'bg-amber-50' },
-                { range: '95–109', label: 'Average', color: 'text-indigo-600', bg: 'bg-indigo-50' },
-                { range: '110–119', label: 'Above Average', color: 'text-blue-600', bg: 'bg-blue-50' },
-                { range: '120–130', label: 'Exceptional', color: 'text-emerald-600', bg: 'bg-emerald-50' },
+                { range: '70–84', label: 'Needs Support', color: 'text-red-500',    bg: 'bg-red-50'    },
+                { range: '85–94', label: 'Below Average', color: 'text-orange-500', bg: 'bg-orange-50' },
+                { range: '95–109', label: 'Average',      color: 'text-yellow-500', bg: 'bg-yellow-50' },
+                { range: '110–119', label: 'Above Average', color: 'text-green-500', bg: 'bg-green-50' },
+                { range: '120–130', label: 'Exceptional', color: 'text-blue-500',   bg: 'bg-blue-50'   },
               ].map(({ range, label, color, bg }) => (
                 <div key={range} className={`${bg} rounded-xl p-3 text-center`}>
                   <div className={`text-sm font-bold ${color}`}>{range}</div>
