@@ -15,18 +15,18 @@ interface BellCurveProps {
 }
 
 const SAMPLE_SUBJECTS: BellCurveSubject[] = [
-  { score: 103, label: 'English',    color: '#3b82f6', dotColor: '#2563eb' },
-  { score: 119, label: 'Maths',      color: '#8b5cf6', dotColor: '#7c3aed' },
-  { score: 113, label: 'Verbal',     color: '#10b981', dotColor: '#059669' },
-  { score:  91, label: 'Non-Verbal', color: '#f59e0b', dotColor: '#d97706' },
+  { score: 103, label: 'English',    color: '#4F46E5', dotColor: '#4F46E5' },
+  { score: 119, label: 'Maths',      color: '#0D9488', dotColor: '#0D9488' },
+  { score: 113, label: 'Verbal',     color: '#7C3AED', dotColor: '#7C3AED' },
+  { score:  91, label: 'Non-Verbal', color: '#DB2777', dotColor: '#DB2777' },
 ]
 
 const ZONE_LABELS = [
-  { from: 70,  to: 85,  label: 'Needs Support', clr: '#ef4444' },
-  { from: 85,  to: 95,  label: 'Below Avg',     clr: '#d97706' },
-  { from: 95,  to: 110, label: 'Average',        clr: '#6366f1' },
-  { from: 110, to: 120, label: 'Above Avg',      clr: '#3b82f6' },
-  { from: 120, to: 130, label: 'Exceptional',    clr: '#059669' },
+  { from: 70,  to: 85,  label: 'Needs Support', clr: '#EF4444' },
+  { from: 85,  to: 95,  label: 'Below Avg',     clr: '#F97316' },
+  { from: 95,  to: 110, label: 'Average',        clr: '#EAB308' },
+  { from: 110, to: 120, label: 'Above Avg',      clr: '#22C55E' },
+  { from: 120, to: 130, label: 'Exceptional',    clr: '#3B82F6' },
 ]
 
 const MEAN = 100, SD = 15
@@ -87,11 +87,11 @@ const curvePoints = (() => {
 })()
 
 const ZONES = [
-  { from: 70,  to: 85,  fill: '#fca5a5', opacity: 0.25 },
-  { from: 85,  to: 95,  fill: '#fcd34d', opacity: 0.25 },
-  { from: 95,  to: 110, fill: '#a5b4fc', opacity: 0.25 },
-  { from: 110, to: 120, fill: '#93c5fd', opacity: 0.30 },
-  { from: 120, to: 130, fill: '#6ee7b7', opacity: 0.30 },
+  { from: 70,  to: 85,  fill: '#EF4444', opacity: 0.15 },
+  { from: 85,  to: 95,  fill: '#F97316', opacity: 0.15 },
+  { from: 95,  to: 110, fill: '#EAB308', opacity: 0.12 },
+  { from: 110, to: 120, fill: '#22C55E', opacity: 0.15 },
+  { from: 120, to: 130, fill: '#3B82F6', opacity: 0.15 },
 ]
 
 function zonePath(from: number, to: number) {
@@ -157,10 +157,10 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
           {/* Segment widths are proportional to zone size within the 70–130 range */}
           <div className="relative h-3 rounded-full overflow-hidden flex">
             <div style={{ width: '25%' }}    className="bg-red-100" />
-            <div style={{ width: '16.67%' }} className="bg-amber-100" />
-            <div style={{ width: '25%' }}    className="bg-indigo-100" />
-            <div style={{ width: '16.67%' }} className="bg-blue-100" />
-            <div style={{ width: '16.66%' }} className="bg-emerald-100" />
+            <div style={{ width: '16.67%' }} className="bg-orange-100" />
+            <div style={{ width: '25%' }}    className="bg-yellow-100" />
+            <div style={{ width: '16.67%' }} className="bg-green-100" />
+            <div style={{ width: '16.66%' }} className="bg-blue-100" />
             <div
               className="absolute top-0 h-full w-1.5 bg-gray-700 rounded-full -translate-x-1/2"
               style={{ left: `${((overallScore - 70) / 60) * 100}%` }}

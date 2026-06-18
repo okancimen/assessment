@@ -158,17 +158,17 @@ export function getScoreLabel(standardizedScore: number): string {
 }
 
 export function getScoreColor(standardizedScore: number): string {
-  if (standardizedScore >= 120) return 'text-emerald-600'
-  if (standardizedScore >= 110) return 'text-blue-600'
-  if (standardizedScore >= 95) return 'text-indigo-600'
-  if (standardizedScore >= 85) return 'text-amber-600'
-  return 'text-red-600'
+  if (standardizedScore >= 120) return 'text-blue-500'
+  if (standardizedScore >= 110) return 'text-green-500'
+  if (standardizedScore >= 95)  return 'text-yellow-500'
+  if (standardizedScore >= 85)  return 'text-orange-500'
+  return 'text-red-500'
 }
 
 export function getScoreBgColor(standardizedScore: number): string {
-  if (standardizedScore >= 120) return 'bg-emerald-50 border-emerald-200'
-  if (standardizedScore >= 110) return 'bg-blue-50 border-blue-200'
-  if (standardizedScore >= 95) return 'bg-indigo-50 border-indigo-200'
-  if (standardizedScore >= 85) return 'bg-amber-50 border-amber-200'
+  if (standardizedScore >= 120) return 'bg-blue-50 border-blue-200'
+  if (standardizedScore >= 110) return 'bg-green-50 border-green-200'
+  if (standardizedScore >= 95)  return 'bg-yellow-50 border-yellow-200'
+  if (standardizedScore >= 85)  return 'bg-orange-50 border-orange-200'
   return 'bg-red-50 border-red-200'
 }

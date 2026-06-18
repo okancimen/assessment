@@ -104,10 +104,10 @@ export default async function ResultsPage({
   const intl = INTL_CONTEXT[intlBand]
 
   const SUBJECT_CURVE_COLORS: Record<string, { color: string; dotColor: string; displayLabel: string }> = {
-    english:             { color: '#3b82f6', dotColor: '#2563eb', displayLabel: 'English'    },
-    mathematics:         { color: '#8b5cf6', dotColor: '#7c3aed', displayLabel: 'Maths'      },
-    verbal_reasoning:    { color: '#10b981', dotColor: '#059669', displayLabel: 'Verbal'     },
-    nonverbal_reasoning: { color: '#f59e0b', dotColor: '#d97706', displayLabel: 'Non-Verbal' },
+    english:             { color: '#4F46E5', dotColor: '#4F46E5', displayLabel: 'English'    },
+    mathematics:         { color: '#0D9488', dotColor: '#0D9488', displayLabel: 'Maths'      },
+    verbal_reasoning:    { color: '#7C3AED', dotColor: '#7C3AED', displayLabel: 'Verbal'     },
+    nonverbal_reasoning: { color: '#DB2777', dotColor: '#DB2777', displayLabel: 'Non-Verbal' },
   }
 
   const bellCurveSubjects: BellCurveSubject[] = SUBJECTS
