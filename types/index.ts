@@ -124,7 +124,7 @@ export const SUBJECT_DESCRIPTIONS: Record<Subject, string> = {
   nonverbal_reasoning: 'Pattern recognition using shapes and abstract visuals',
 }
 
-export const QUESTIONS_PER_SUBJECT = 1
+export const QUESTIONS_PER_SUBJECT = 2
 
 export const SUBJECT_TOPICS: Record<Subject, string[]> = {
   english: ['comprehension', 'grammar', 'spelling', 'punctuation', 'vocabulary'],
