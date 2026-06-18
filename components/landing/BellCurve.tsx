@@ -39,8 +39,8 @@ const CW = W - PAD_L - PAD_R
 const baseY = PAD_T + CH  // = 176, always fixed
 
 // Labels: 3 lines per subject, compact row spacing
-const LINE_H = 9   // px between text lines within a row
-const ROW_GAP = 14 // extra gap between rows
+const LINE_H = 7   // px between text lines within a row
+const ROW_GAP = 6  // extra gap between rows
 const ROW0_Y1 = baseY + 11
 
 // Minimum pixel gap between adjacent label centers to avoid overlap
