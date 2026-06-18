@@ -301,10 +301,10 @@ const subjectIcons: Record<string, string> = {
 }
 
 const subjectColors: Record<string, string> = {
-  english: 'bg-blue-50 border-blue-100',
-  mathematics: 'bg-violet-50 border-violet-100',
-  verbal_reasoning: 'bg-emerald-50 border-emerald-100',
-  nonverbal_reasoning: 'bg-amber-50 border-amber-100',
+  english: 'bg-indigo-50 border-indigo-100',
+  mathematics: 'bg-teal-50 border-teal-100',
+  verbal_reasoning: 'bg-violet-50 border-violet-100',
+  nonverbal_reasoning: 'bg-pink-50 border-pink-100',
 }
 
 const subjectSlugs: Record<string, string> = {

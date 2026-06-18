@@ -18,10 +18,10 @@ export default function Image() {
           Verbal & Non-Verbal Reasoning · English · Maths · Standardised scores
         </div>
         <div style={{ display: 'flex', gap: 16 }}>
-          <div style={{ background: '#eef2ff', borderRadius: 12, padding: '10px 22px', fontSize: 18, color: '#4f46e5', fontWeight: 600 }}>Verbal Reasoning</div>
-          <div style={{ background: '#ecfdf5', borderRadius: 12, padding: '10px 22px', fontSize: 18, color: '#059669', fontWeight: 600 }}>Non-Verbal Reasoning</div>
-          <div style={{ background: '#fff1f2', borderRadius: 12, padding: '10px 22px', fontSize: 18, color: '#e11d48', fontWeight: 600 }}>English</div>
-          <div style={{ background: '#fffbeb', borderRadius: 12, padding: '10px 22px', fontSize: 18, color: '#d97706', fontWeight: 600 }}>Maths</div>
+          <div style={{ background: '#f5f3ff', borderRadius: 12, padding: '10px 22px', fontSize: 18, color: '#7C3AED', fontWeight: 600 }}>Verbal Reasoning</div>
+          <div style={{ background: '#fce7f3', borderRadius: 12, padding: '10px 22px', fontSize: 18, color: '#DB2777', fontWeight: 600 }}>Non-Verbal Reasoning</div>
+          <div style={{ background: '#eef2ff', borderRadius: 12, padding: '10px 22px', fontSize: 18, color: '#4F46E5', fontWeight: 600 }}>English</div>
+          <div style={{ background: '#f0fdfa', borderRadius: 12, padding: '10px 22px', fontSize: 18, color: '#0D9488', fontWeight: 600 }}>Maths</div>
         </div>
         <div style={{ position: 'absolute', bottom: 32, right: 60, fontSize: 20, color: '#9ca3af' }}>eduentry.com/11-plus</div>
       </div>
