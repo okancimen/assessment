@@ -102,6 +102,9 @@ export default async function AdminPage({
     funnelChildrenRows,
     funnelStartedRows,
     funnelCompletedRows,
+    allProfiles,
+    allChildren,
+    allResults,
   ] = await Promise.all([
     // Daily breakdown rows (for charts)
     db.from('profiles').select('created_at').gte('created_at', fromISO).lte('created_at', toISO),
@@ -112,6 +115,10 @@ export default async function AdminPage({
     db.from('children').select('parent_id').gte('created_at', fromISO).lte('created_at', toISO),
     db.from('assessments').select('children(parent_id)').gte('created_at', fromISO).lte('created_at', toISO),
     db.from('results').select('children(parent_id)').gte('created_at', fromISO).lte('created_at', toISO),
+    // Registered users table (all-time, newest first)
+    db.from('profiles').select('id, email, full_name, created_at').order('created_at', { ascending: false }).limit(500),
+    db.from('children').select('parent_id'),
+    db.from('results').select('children(parent_id)'),
   ])
 
   // Growth totals
@@ -146,6 +153,26 @@ export default async function AdminPage({
     { label: 'Started assessment',   count: funnelStartedF,   color: '#7C3AED' },
     { label: 'Completed assessment', count: funnelCompletedF, color: '#22C55E' },
   ]
+
+  // Registered users table data
+  const childrenByParent: Record<string, number> = {}
+  for (const c of allChildren.data ?? []) {
+    const pid = c.parent_id as string
+    childrenByParent[pid] = (childrenByParent[pid] ?? 0) + 1
+  }
+  const completedByParent: Record<string, number> = {}
+  for (const r of allResults.data ?? []) {
+    const pid = ((r.children as unknown as { parent_id: string } | null)?.parent_id)
+    if (pid) completedByParent[pid] = (completedByParent[pid] ?? 0) + 1
+  }
+  const registeredUsers = (allProfiles.data ?? []).map((p) => ({
+    id:         p.id as string,
+    email:      p.email as string,
+    full_name:  p.full_name as string | null,
+    created_at: p.created_at as string,
+    children:   childrenByParent[p.id as string] ?? 0,
+    completed:  completedByParent[p.id as string] ?? 0,
+  }))
 
   const periodLabel = `${new Date(fromISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })} – ${new Date(toISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`
 
@@ -201,6 +228,53 @@ export default async function AdminPage({
           <h2 className="text-sm font-semibold text-[#1d1d1f] mb-1">Conversion funnel</h2>
           <p className="text-xs text-[#6e6e73] mb-5">Unique users at each step within the selected period</p>
           <FunnelChart steps={funnelSteps} />
+        </div>
+
+        {/* Registered users */}
+        <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
+          <div className="px-6 py-5 border-b border-[#f5f5f7]">
+            <h2 className="text-sm font-semibold text-[#1d1d1f]">Registered users</h2>
+            <p className="text-xs text-[#6e6e73] mt-0.5">{registeredUsers.length.toLocaleString()} total — all time</p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-[#f5f5f7]">
+                  {['Name', 'Email', 'Registered', 'Children', 'Completed'].map((h) => (
+                    <th key={h} className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide whitespace-nowrap">
+                      {h}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {registeredUsers.map((u) => (
+                  <tr key={u.id} className="border-b border-[#f5f5f7] last:border-0 hover:bg-[#f5f5f7] transition-colors">
+                    <td className="px-5 py-3 font-medium text-[#1d1d1f] text-xs whitespace-nowrap">
+                      {u.full_name || <span className="text-[#d2d2d7]">—</span>}
+                    </td>
+                    <td className="px-5 py-3 text-xs text-[#6e6e73] whitespace-nowrap">{u.email}</td>
+                    <td className="px-5 py-3 text-xs text-[#6e6e73] whitespace-nowrap">
+                      {new Date(u.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                    </td>
+                    <td className="px-5 py-3 text-xs tabular-nums text-[#1d1d1f] text-center">
+                      {u.children > 0 ? u.children : <span className="text-[#d2d2d7]">0</span>}
+                    </td>
+                    <td className="px-5 py-3 text-xs tabular-nums text-center">
+                      {u.completed > 0
+                        ? <span className="font-semibold text-[#22C55E]">{u.completed}</span>
+                        : <span className="text-[#d2d2d7]">0</span>}
+                    </td>
+                  </tr>
+                ))}
+                {registeredUsers.length === 0 && (
+                  <tr>
+                    <td colSpan={5} className="px-5 py-10 text-center text-xs text-[#6e6e73]">No users registered yet</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
         </div>
 
       </main>
