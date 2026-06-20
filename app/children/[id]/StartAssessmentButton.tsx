@@ -34,7 +34,7 @@ export default function StartAssessmentButton({
   }
 
   return (
-    <Button onClick={handleStart} loading={loading} size={size} className={className}>
+    <Button onClick={handleStart} loading={loading} size={size} className={`bg-[#4F46E5] hover:bg-[#4338CA] text-white ${className ?? ''}`}>
       Start assessment
     </Button>
   )

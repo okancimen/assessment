@@ -3,23 +3,23 @@ import Logo from '@/components/ui/Logo'
 
 export default function PublicNav() {
   return (
-    <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
-      <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-        <div className="flex items-center gap-6">
+    <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.85)] backdrop-blur-xl border-b border-[#d2d2d7]/60">
+      <div className="max-w-6xl mx-auto px-6 h-12 flex items-center justify-between">
+        <div className="flex items-center gap-8">
           <Logo href="/" size="sm" />
-          <div className="hidden sm:flex items-center gap-5 text-sm text-gray-500">
-            <Link href="/11-plus" className="hover:text-gray-900 transition-colors">11+ Prep</Link>
-            <Link href="/grammar-schools" className="hover:text-gray-900 transition-colors">Grammar Schools</Link>
-            <Link href="/subjects" className="hover:text-gray-900 transition-colors">Subjects</Link>
-            <Link href="/blog" className="hover:text-gray-900 transition-colors">Blog</Link>
+          <div className="hidden md:flex items-center gap-7 text-xs font-medium text-[#1d1d1f]">
+            <Link href="/11-plus" className="hover:text-[#4F46E5] transition-colors">11+ Prep</Link>
+            <Link href="/grammar-schools" className="hover:text-[#4F46E5] transition-colors">Grammar Schools</Link>
+            <Link href="/subjects" className="hover:text-[#4F46E5] transition-colors">Subjects</Link>
+            <Link href="/blog" className="hover:text-[#4F46E5] transition-colors">Blog</Link>
           </div>
         </div>
         <Link
           href="/auth/register"
           prefetch={false}
-          className="bg-indigo-600 text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-indigo-700 transition-colors"
+          className="bg-[#4F46E5] text-white px-4 py-1.5 rounded-full text-xs font-semibold hover:bg-[#4338CA] transition-colors"
         >
-          Start free assessment
+          Start free
         </Link>
       </div>
     </nav>

@@ -36,40 +36,40 @@ export default async function AssessmentStartPage({
   if (assessment.status === 'in_progress') redirect(`/assessment/${id}/question`)
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center px-4">
       <div className="w-full max-w-2xl">
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8 space-y-8">
+        <div className="bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-8 space-y-8">
           {/* Header */}
           <div className="text-center">
-            <div className="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold text-2xl mx-auto mb-4">
+            <div className="w-16 h-16 rounded-full bg-[#eef2ff] flex items-center justify-center text-[#4F46E5] font-bold text-2xl mx-auto mb-4">
               {child.name[0].toUpperCase()}
             </div>
-            <h1 className="text-2xl font-bold text-gray-900 mb-2">
+            <h1 className="text-2xl font-bold text-[#1d1d1f] mb-2 tracking-tight">
               {child.name}&apos;s Assessment
             </h1>
-            <p className="text-gray-500">
+            <p className="text-sm text-[#6e6e73]">
               Age {getAge(child.date_of_birth)} · Adaptive difficulty
             </p>
           </div>
 
           {/* What to expect */}
-          <div className="bg-indigo-50 rounded-xl p-5 space-y-3">
-            <h2 className="font-semibold text-indigo-900">What to expect</h2>
-            <ul className="space-y-2 text-sm text-indigo-800">
+          <div className="bg-[#eef2ff] rounded-2xl p-5 space-y-3">
+            <h2 className="font-semibold text-[#1d1d1f] text-sm">What to expect</h2>
+            <ul className="space-y-2 text-sm text-[#4338CA]">
               <li className="flex items-start gap-2">
-                <span className="mt-0.5">✓</span>
+                <span className="mt-0.5 text-[#4F46E5]">✓</span>
                 <span><strong>{SUBJECTS.length} subjects</strong>, {QUESTIONS_PER_SUBJECT} questions each — {SUBJECTS.length * QUESTIONS_PER_SUBJECT} questions total</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="mt-0.5">✓</span>
+                <span className="mt-0.5 text-[#4F46E5]">✓</span>
                 <span>Questions <strong>adapt in difficulty</strong> based on each answer</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="mt-0.5">✓</span>
+                <span className="mt-0.5 text-[#4F46E5]">✓</span>
                 <span>Takes approximately <strong>60–90 minutes</strong> with breaks between subjects</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="mt-0.5">✓</span>
+                <span className="mt-0.5 text-[#4F46E5]">✓</span>
                 <span>Find a <strong>quiet space</strong> and ensure a stable internet connection</span>
               </li>
             </ul>
@@ -77,24 +77,23 @@ export default async function AssessmentStartPage({
 
           {/* Subjects */}
           <div>
-            <h2 className="font-semibold text-gray-900 mb-3">Subjects covered</h2>
+            <h2 className="font-semibold text-[#1d1d1f] mb-3 text-sm">Subjects covered</h2>
             <div className="grid grid-cols-2 gap-3">
               {SUBJECTS.map((subject, i) => (
-                <div key={subject} className="flex items-start gap-3 p-3 rounded-xl bg-gray-50">
+                <div key={subject} className="flex items-start gap-3 p-4 rounded-2xl bg-[#f5f5f7] border border-[#d2d2d7]">
                   <span className="text-xl">{subjectIcons[subject]}</span>
                   <div>
                     <div className="flex items-center gap-1.5">
-                      <span className="text-xs font-medium text-gray-400">{i + 1}</span>
-                      <span className="text-sm font-semibold text-gray-800">{SUBJECT_LABELS[subject]}</span>
+                      <span className="text-[10px] font-semibold text-[#6e6e73]">{i + 1}</span>
+                      <span className="text-sm font-semibold text-[#1d1d1f]">{SUBJECT_LABELS[subject]}</span>
                     </div>
-                    <p className="text-xs text-gray-500 mt-0.5">{SUBJECT_DESCRIPTIONS[subject]}</p>
+                    <p className="text-xs text-[#6e6e73] mt-0.5">{SUBJECT_DESCRIPTIONS[subject]}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Actions — also fires prefetch for first question in background */}
           <StartActions assessmentId={id} />
         </div>
       </div>

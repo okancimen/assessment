@@ -34,27 +34,27 @@ function LoadingQuestion() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center px-4">
       <div className="text-center space-y-6 max-w-sm">
         <div className="relative w-16 h-16 mx-auto">
-          <div className="absolute inset-0 rounded-full border-4 border-indigo-100" />
-          <div className="absolute inset-0 rounded-full border-4 border-indigo-600 border-t-transparent animate-spin" />
-          <div className="absolute inset-2 rounded-full border-2 border-indigo-300 border-b-transparent animate-spin [animation-direction:reverse] [animation-duration:0.8s]" />
+          <div className="absolute inset-0 rounded-full border-4 border-[#e0e7ff]" />
+          <div className="absolute inset-0 rounded-full border-4 border-[#4F46E5] border-t-transparent animate-spin" />
+          <div className="absolute inset-2 rounded-full border-2 border-[#a5b4fc] border-b-transparent animate-spin [animation-direction:reverse] [animation-duration:0.8s]" />
         </div>
         <div className="space-y-1.5">
-          <p className="text-gray-800 font-semibold text-base">Crafting your next question</p>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-[#1d1d1f] font-semibold text-base">Crafting your next question</p>
+          <p className="text-[#6e6e73] text-sm leading-relaxed">
             AI is analysing your performance and generating<br />
             a personalised question calibrated to your level.
           </p>
         </div>
         <div className="flex items-center justify-center gap-1.5">
-          <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:0ms]" />
-          <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:150ms]" />
-          <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:300ms]" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#4F46E5] animate-bounce [animation-delay:0ms]" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#4F46E5] animate-bounce [animation-delay:150ms]" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#4F46E5] animate-bounce [animation-delay:300ms]" />
         </div>
         <div
-          className="bg-white border border-gray-100 rounded-xl px-5 py-3.5 text-sm text-gray-500 leading-relaxed transition-opacity duration-400"
+          className="bg-white border border-[#d2d2d7] rounded-2xl px-5 py-3.5 text-sm text-[#6e6e73] leading-relaxed transition-opacity duration-400"
           style={{ opacity: fade ? 1 : 0 }}
         >
           {LOADING_FACTS[factIndex]}
@@ -68,15 +68,14 @@ function LoadingQuestion() {
 
 function WarmupCountdown({ count }: { count: number }) {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center px-4">
       <div className="text-center space-y-6 max-w-xs">
         <div className="relative w-28 h-28 mx-auto">
-          {/* Animated ring */}
           <svg className="w-28 h-28 -rotate-90 absolute inset-0" viewBox="0 0 112 112">
             <circle cx="56" cy="56" r="50" fill="none" stroke="#e0e7ff" strokeWidth="6" />
             <circle
               cx="56" cy="56" r="50" fill="none"
-              stroke="#6366f1" strokeWidth="6"
+              stroke="#4F46E5" strokeWidth="6"
               strokeDasharray={`${2 * Math.PI * 50}`}
               strokeDashoffset={`${2 * Math.PI * 50 * (count / 4)}`}
               className="transition-all duration-700"
@@ -85,17 +84,17 @@ function WarmupCountdown({ count }: { count: number }) {
           <div className="absolute inset-0 flex items-center justify-center">
             <span
               key={count}
-              className="text-5xl font-bold text-indigo-600 animate-in zoom-in-50 duration-300"
+              className="text-5xl font-bold text-[#4F46E5] animate-in zoom-in-50 duration-300"
             >
               {count > 0 ? count : '🚀'}
             </span>
           </div>
         </div>
         <div className="space-y-1">
-          <p className="text-lg font-semibold text-gray-800">
+          <p className="text-lg font-semibold text-[#1d1d1f]">
             {count > 0 ? 'Get ready!' : "Let's go!"}
           </p>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-[#6e6e73]">
             {count > 0
               ? 'Your first question is being prepared…'
               : 'Loading your question…'}
@@ -250,9 +249,9 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
   if (phase === 'error') {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center">
         <div className="text-center space-y-4 max-w-sm">
-          <p className="text-red-600">{error}</p>
+          <p className="text-red-600 text-sm">{error}</p>
           <Button onClick={fetchNextQuestion}>Try again</Button>
         </div>
       </div>
@@ -262,25 +261,25 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   if (phase === 'break' && subjectBreak) {
     const subjectIndex = SUBJECTS.indexOf(subjectBreak)
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
-        <div className="w-full max-w-md bg-white rounded-2xl border border-gray-100 shadow-sm p-8 text-center space-y-6">
+      <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center px-4">
+        <div className="w-full max-w-md bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-8 text-center space-y-6">
           <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto">
             <svg className="w-8 h-8 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
           </div>
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-2">Subject complete!</h2>
-            <p className="text-gray-500 text-sm">
+            <h2 className="text-xl font-bold text-[#1d1d1f] mb-2 tracking-tight">Subject complete!</h2>
+            <p className="text-[#6e6e73] text-sm">
               Take a short break before continuing to{' '}
-              <strong className="text-gray-700">{SUBJECT_LABELS[subjectBreak]}</strong>
+              <strong className="text-[#1d1d1f]">{SUBJECT_LABELS[subjectBreak]}</strong>
               {' '}(subject {subjectIndex + 1} of {SUBJECTS.length}).
             </p>
           </div>
-          <div className="bg-gray-50 rounded-xl p-4 text-sm text-gray-600">
+          <div className="bg-[#f5f5f7] rounded-2xl p-4 text-sm text-[#6e6e73]">
             Stretch, have some water, and come back when you&apos;re ready.
           </div>
-          <Button className="w-full" size="lg" onClick={fetchNextQuestion}>
+          <Button className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white" size="lg" onClick={fetchNextQuestion}>
             Continue to {SUBJECT_LABELS[subjectBreak]}
           </Button>
         </div>
@@ -291,9 +290,9 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   if (!question || !session) return null
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-2xl mx-auto px-4 py-8 space-y-6">
-        <div className="bg-white rounded-2xl border border-gray-100 p-5">
+    <div className="min-h-screen bg-[#f5f5f7]">
+      <div className="max-w-2xl mx-auto px-4 py-8 space-y-4">
+        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-5">
           <ProgressBar
             subjectIndex={session.subject_index}
             questionIndex={session.question_index}
@@ -301,7 +300,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
             completedSubjects={session.completed_subjects}
           />
         </div>
-        <div className="bg-white rounded-2xl border border-gray-100 p-6">
+        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6">
           <QuestionCard
             question={question}
             onAnswer={handleAnswer}

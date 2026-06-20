@@ -16,17 +16,17 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         disabled={disabled || loading}
         className={cn(
-          'inline-flex items-center justify-center font-medium rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed',
+          'inline-flex items-center justify-center font-medium rounded-full transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed',
           {
-            'bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-indigo-500 shadow-sm': variant === 'primary',
-            'bg-white text-gray-700 border border-gray-200 hover:bg-gray-50 focus:ring-indigo-500 shadow-sm': variant === 'secondary',
-            'text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:ring-indigo-500': variant === 'ghost',
-            'bg-red-600 text-white hover:bg-red-700 focus:ring-red-500': variant === 'danger',
+            'bg-[#1d1d1f] text-white hover:bg-[#3a3a3c] focus-visible:ring-[#1d1d1f]': variant === 'primary',
+            'bg-white text-[#1d1d1f] border border-[#d2d2d7] hover:bg-[#f5f5f7] focus-visible:ring-[#1d1d1f]': variant === 'secondary',
+            'text-[#6e6e73] hover:text-[#1d1d1f] hover:bg-[#f5f5f7] focus-visible:ring-[#1d1d1f]': variant === 'ghost',
+            'bg-red-600 text-white hover:bg-red-700 focus-visible:ring-red-500': variant === 'danger',
           },
           {
-            'px-3 py-1.5 text-sm': size === 'sm',
+            'px-4 py-1.5 text-xs': size === 'sm',
             'px-5 py-2.5 text-sm': size === 'md',
-            'px-7 py-3.5 text-base': size === 'lg',
+            'px-8 py-3.5 text-base': size === 'lg',
           },
           className
         )}

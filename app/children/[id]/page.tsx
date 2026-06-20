@@ -13,10 +13,10 @@ interface AssessmentWithResult extends Assessment {
 }
 
 const AVATAR_COLORS = [
-  { bg: 'bg-indigo-100', text: 'text-indigo-600' },
-  { bg: 'bg-emerald-100', text: 'text-emerald-600' },
-  { bg: 'bg-violet-100', text: 'text-violet-600' },
-  { bg: 'bg-amber-100', text: 'text-amber-600' },
+  { bg: '#eef2ff', text: '#4F46E5' },
+  { bg: '#f0fdfa', text: '#0D9488' },
+  { bg: '#f5f3ff', text: '#7C3AED' },
+  { bg: '#fff7ed', text: '#EA580C' },
 ]
 
 function getAvatarColor(name: string) {
@@ -106,29 +106,32 @@ export default async function ChildPage({ params }: { params: Promise<{ id: stri
   const avatar = getAvatarColor(child.name)
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
       <Navbar />
-      <main className="flex-1 max-w-4xl mx-auto w-full px-6 py-10 space-y-8">
+      <main className="flex-1 max-w-4xl mx-auto w-full px-6 py-10 space-y-6">
         <div>
-          <Link href="/dashboard" className="text-sm text-gray-500 hover:text-gray-700">
+          <Link href="/dashboard" className="text-xs font-medium text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">
             ← Back to dashboard
           </Link>
         </div>
 
         {/* Child header */}
-        <div className="bg-white rounded-2xl border border-gray-100 p-6 flex items-center justify-between gap-4">
+        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6 flex items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            <div className={`w-14 h-14 rounded-full ${avatar.bg} flex items-center justify-center ${avatar.text} font-bold text-2xl flex-shrink-0`}>
+            <div
+              className="w-14 h-14 rounded-full flex items-center justify-center font-bold text-2xl flex-shrink-0"
+              style={{ background: avatar.bg, color: avatar.text }}
+            >
               {child.name[0].toUpperCase()}
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">{child.name}</h1>
-              <p className="text-gray-500 text-sm">
+              <h1 className="text-xl font-bold text-[#1d1d1f] tracking-tight">{child.name}</h1>
+              <p className="text-[#6e6e73] text-sm">
                 Age {getAge(child.date_of_birth)} · Born {formatDate(child.date_of_birth)}
               </p>
               {latestCompleted?.results && (
-                <p className="text-xs text-gray-400 mt-0.5">
-                  Latest score: <span className={`font-semibold ${getScoreColor(latestCompleted.results.standardized_score)}`}>
+                <p className="text-xs text-[#6e6e73] mt-0.5">
+                  Latest: <span className={`font-semibold ${getScoreColor(latestCompleted.results.standardized_score)}`}>
                     {getScoreLabel(latestCompleted.results.standardized_score)}
                   </span>
                 </p>
@@ -142,7 +145,7 @@ export default async function ChildPage({ params }: { params: Promise<{ id: stri
             {inProgress ? (
               <Link
                 href={`/assessment/${inProgress.id}/question`}
-                className="bg-amber-500 text-white px-4 py-2.5 rounded-xl text-sm font-medium hover:bg-amber-600 transition-colors whitespace-nowrap"
+                className="bg-amber-500 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-amber-600 transition-colors whitespace-nowrap"
               >
                 Continue assessment
               </Link>
@@ -154,28 +157,27 @@ export default async function ChildPage({ params }: { params: Promise<{ id: stri
 
         {/* Assessment history */}
         <section>
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">Assessment history</h2>
+          <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">Assessment history</h2>
           {typedAssessments.length === 0 ? (
-            <div className="bg-white rounded-2xl border border-dashed border-gray-200 p-10 text-center">
-              <div className="w-12 h-12 rounded-full bg-indigo-50 flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+            <div className="bg-white rounded-3xl border border-dashed border-[#d2d2d7] p-10 text-center">
+              <div className="w-12 h-12 rounded-full bg-[#eef2ff] flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-[#4F46E5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
                   <rect x="9" y="3" width="6" height="4" rx="1" />
-                  <line x1="9" y1="12" x2="15" y2="12" />
-                  <line x1="9" y1="16" x2="13" y2="16" />
+                  <line x1="9" y1="12" x2="15" y2="12" /><line x1="9" y1="16" x2="13" y2="16" />
                 </svg>
               </div>
-              <p className="text-gray-700 font-medium mb-1">No assessments yet</p>
-              <p className="text-sm text-gray-400">Use the button above to start {child.name}&apos;s first assessment.</p>
+              <p className="text-[#1d1d1f] font-medium text-sm mb-1">No assessments yet</p>
+              <p className="text-xs text-[#6e6e73]">Use the button above to start {child.name}&apos;s first assessment.</p>
             </div>
           ) : (
-            <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden">
+            <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-gray-100">
-                    <th className="text-left px-5 py-3 text-gray-500 font-medium">Date</th>
-                    <th className="text-left px-5 py-3 text-gray-500 font-medium">Status</th>
-                    <th className="text-left px-5 py-3 text-gray-500 font-medium">Score</th>
+                  <tr className="border-b border-[#f5f5f7]">
+                    <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">Date</th>
+                    <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">Status</th>
+                    <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">Score</th>
                     <th className="px-5 py-3" />
                   </tr>
                 </thead>
@@ -183,13 +185,13 @@ export default async function ChildPage({ params }: { params: Promise<{ id: stri
                   {typedAssessments.map((a) => {
                     const trend = a.status === 'completed' ? getTrend(a) : null
                     return (
-                      <tr key={a.id} className="border-b border-gray-50 last:border-0">
-                        <td className="px-5 py-3 text-gray-700">{formatDate(a.created_at)}</td>
+                      <tr key={a.id} className="border-b border-[#f5f5f7] last:border-0 hover:bg-[#f5f5f7] transition-colors">
+                        <td className="px-5 py-3 text-sm text-[#1d1d1f]">{formatDate(a.created_at)}</td>
                         <td className="px-5 py-3">
-                          <span className={`inline-flex px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                          <span className={`inline-flex px-2.5 py-0.5 rounded-full text-xs font-semibold ${
                             a.status === 'completed' ? 'bg-emerald-50 text-emerald-700' :
                             a.status === 'in_progress' ? 'bg-amber-50 text-amber-700' :
-                            'bg-gray-100 text-gray-600'
+                            'bg-[#f5f5f7] text-[#6e6e73]'
                           }`}>
                             {a.status === 'in_progress' ? 'In progress' :
                              a.status === 'completed' ? 'Completed' : 'Pending'}
@@ -201,25 +203,25 @@ export default async function ChildPage({ params }: { params: Promise<{ id: stri
                               <span className={`font-bold text-base ${getScoreColor(a.results.standardized_score)}`}>
                                 {a.results.standardized_score}
                               </span>
-                              <span className="text-xs text-gray-400">
+                              <span className="text-xs text-[#6e6e73]">
                                 {getScoreLabel(a.results.standardized_score)}
                               </span>
                               {trend === 'up' && <span className="text-emerald-500 text-sm font-bold">↑</span>}
                               {trend === 'down' && <span className="text-red-500 text-sm font-bold">↓</span>}
-                              {trend === 'same' && <span className="text-gray-400 text-sm">→</span>}
+                              {trend === 'same' && <span className="text-[#6e6e73] text-sm">→</span>}
                             </div>
                           ) : (
-                            <span className="text-gray-300">—</span>
+                            <span className="text-[#d2d2d7]">—</span>
                           )}
                         </td>
                         <td className="px-5 py-3 text-right">
                           {a.status === 'completed' && (
-                            <Link href={`/results/${a.id}`} className="text-indigo-600 hover:underline text-xs font-medium">
+                            <Link href={`/results/${a.id}`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
                               View results
                             </Link>
                           )}
                           {a.status === 'in_progress' && (
-                            <Link href={`/assessment/${a.id}/question`} className="text-indigo-600 hover:underline text-xs font-medium">
+                            <Link href={`/assessment/${a.id}/question`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
                               Continue
                             </Link>
                           )}

@@ -51,22 +51,22 @@ export default function AddChildPage() {
   const maxDate = new Date(Date.now() - 6 * 365.25 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
       <Navbar />
-      <main className="max-w-lg mx-auto px-6 py-10">
+      <main className="max-w-sm mx-auto px-6 py-10 w-full">
         <div className="mb-6">
-          <Link href="/dashboard" className="text-sm text-gray-500 hover:text-gray-700">
+          <Link href="/dashboard" className="text-xs font-medium text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">
             ← Back to dashboard
           </Link>
         </div>
 
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
-          <h1 className="text-xl font-bold text-gray-900 mb-1">Add a child</h1>
-          <p className="text-sm text-gray-500 mb-6">Children must be aged 6–17 to take the assessment.</p>
+        <div className="bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-8">
+          <h1 className="text-xl font-bold text-[#1d1d1f] mb-1 tracking-tight">Add a child</h1>
+          <p className="text-xs text-[#6e6e73] mb-6">Children must be aged 6–17 to take the assessment.</p>
 
-          <form onSubmit={handleSubmit} className="space-y-5">
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1.5">
+              <label className="block text-xs font-semibold text-[#1d1d1f] mb-2 uppercase tracking-wide">
                 Child&apos;s name
               </label>
               <input
@@ -74,13 +74,13 @@ export default function AddChildPage() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-gray-900 placeholder-gray-400"
+                className="w-full px-4 py-3 rounded-2xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-[#f5f5f7]"
                 placeholder="e.g. Emma"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1.5">
+              <label className="block text-xs font-semibold text-[#1d1d1f] mb-2 uppercase tracking-wide">
                 Date of birth
               </label>
               <input
@@ -90,18 +90,18 @@ export default function AddChildPage() {
                 required
                 min={minDate}
                 max={maxDate}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-gray-900"
+                className="w-full px-4 py-3 rounded-2xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent text-[#1d1d1f] text-sm bg-[#f5f5f7]"
               />
-              <p className="text-xs text-gray-400 mt-1">Ages 6–17 only</p>
+              <p className="text-xs text-[#6e6e73] mt-1.5">Ages 6–17 only</p>
             </div>
 
             {error && (
-              <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3 text-sm text-red-600">
+              <div className="bg-red-50 border border-red-100 rounded-2xl px-4 py-3 text-xs text-red-600">
                 {error}
               </div>
             )}
 
-            <Button type="submit" className="w-full" size="lg" loading={loading}>
+            <Button type="submit" className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white" size="lg" loading={loading}>
               Add child
             </Button>
           </form>

@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
-import Button from '@/components/ui/Button'
 import Logo from '@/components/ui/Logo'
 
 export default function Navbar() {
@@ -17,18 +16,21 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-white border-b border-gray-100 sticky top-0 z-10">
-      <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-        <div className="flex items-center gap-6">
+    <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.85)] backdrop-blur-xl border-b border-[#d2d2d7]/60">
+      <div className="max-w-5xl mx-auto px-6 h-12 flex items-center justify-between">
+        <div className="flex items-center gap-7">
           <Logo href="/" size="sm" />
-          <div className="hidden sm:flex items-center gap-5 text-sm text-gray-500">
-            <Link href="/dashboard" className="hover:text-gray-900 transition-colors">Dashboard</Link>
-            <Link href="/children/new" className="hover:text-gray-900 transition-colors">Add child</Link>
+          <div className="hidden sm:flex items-center gap-6 text-xs font-medium text-[#1d1d1f]">
+            <Link href="/dashboard" className="hover:text-[#4F46E5] transition-colors">Dashboard</Link>
+            <Link href="/children/new" className="hover:text-[#4F46E5] transition-colors">Add child</Link>
           </div>
         </div>
-        <Button variant="ghost" size="sm" onClick={handleSignOut}>
+        <button
+          onClick={handleSignOut}
+          className="text-xs font-medium text-[#6e6e73] hover:text-[#1d1d1f] transition-colors px-3 py-1.5 rounded-full hover:bg-[#f5f5f7]"
+        >
           Sign out
-        </Button>
+        </button>
       </div>
     </nav>
   )

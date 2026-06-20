@@ -19,13 +19,13 @@ export default function StartActions({ assessmentId }: { assessmentId: string })
     <div className="flex flex-col sm:flex-row gap-3">
       <Link
         href="/dashboard"
-        className="flex-1 text-center px-6 py-3 rounded-xl border border-gray-200 text-sm font-medium text-gray-600 hover:bg-gray-50 transition-colors"
+        className="flex-1 text-center px-6 py-3 rounded-full border border-[#d2d2d7] text-sm font-medium text-[#6e6e73] hover:bg-[#f5f5f7] hover:text-[#1d1d1f] transition-colors"
       >
         Back to dashboard
       </Link>
       <Link
         href={`/assessment/${assessmentId}/question`}
-        className="flex-1 text-center bg-indigo-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition-colors"
+        className="flex-1 text-center bg-[#4F46E5] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
       >
         Begin assessment
       </Link>

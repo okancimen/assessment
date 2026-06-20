@@ -70,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={`${geist.variable} h-full antialiased`}>
       <head>
-        <meta name="theme-color" content="#4f46e5" />
+        <meta name="theme-color" content="#1d1d1f" />
         <meta name="yandex-verification" content="f8b17ecde6325153" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-F60J3BHJDE" strategy="lazyOnload" />
@@ -81,7 +81,7 @@ export default function RootLayout({
           gtag('config', 'G-F60J3BHJDE');
         `}</Script>
       </head>
-      <body className="min-h-full flex flex-col bg-gray-50 font-[family-name:var(--font-geist-sans)]">
+      <body className="min-h-full flex flex-col bg-white font-[family-name:var(--font-geist-sans)]">
         {children}
       </body>
     </html>
