@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Button from '@/components/ui/Button'
+import { trackEvent } from '@/lib/analytics'
 
 interface CompleteClientProps {
   assessmentId: string
@@ -28,7 +29,8 @@ export default function CompleteClient({ assessmentId, childName }: CompleteClie
         return
       }
 
-      const { result_id } = await res.json()
+      const data = await res.json()
+      trackEvent('assessment_complete', { assessment_id: assessmentId, standardized_score: data.standardized_score })
       router.push(`/results/${assessmentId}`)
     }
 

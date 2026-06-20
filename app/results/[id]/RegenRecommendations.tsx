@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { SUBJECT_LABELS, Subject } from '@/types'
 import type { Recommendation } from '@/lib/claude/recommendations'
+import { trackEvent } from '@/lib/analytics'
 
 interface Props {
   assessmentId: string
@@ -30,6 +31,7 @@ export default function RegenRecommendations({ assessmentId, initialRecs }: Prop
       return
     }
     setRecs(data.recommendations)
+    trackEvent('recommendation_generate', { assessment_id: assessmentId })
     setLoading(false)
   }
 

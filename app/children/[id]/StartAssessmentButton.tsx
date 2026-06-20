@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Button from '@/components/ui/Button'
+import { trackEvent } from '@/lib/analytics'
 
 export default function StartAssessmentButton({
   childId,
@@ -30,6 +31,7 @@ export default function StartAssessmentButton({
     }
 
     const assessment = await res.json()
+    trackEvent('assessment_start', { child_id: childId, assessment_id: assessment.id })
     router.push(`/assessment/${assessment.id}/start`)
   }
 

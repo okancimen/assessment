@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 import Button from '@/components/ui/Button'
 import Logo from '@/components/ui/Logo'
+import { trackEvent } from '@/lib/analytics'
 
 export default function RegisterPage() {
   const router = useRouter()
@@ -39,6 +40,7 @@ export default function RegisterPage() {
       return
     }
 
+    trackEvent('sign_up', { method: 'email' })
     router.push('/dashboard')
     router.refresh()
   }

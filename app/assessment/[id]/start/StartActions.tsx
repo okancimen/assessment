@@ -3,6 +3,7 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import { trackEvent } from '@/lib/analytics'
 
 export default function StartActions({ assessmentId }: { assessmentId: string }) {
   const router = useRouter()
@@ -26,6 +27,7 @@ export default function StartActions({ assessmentId }: { assessmentId: string })
       <Link
         href={`/assessment/${assessmentId}/question`}
         className="flex-1 text-center bg-[#4F46E5] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
+        onClick={() => trackEvent('assessment_begin', { assessment_id: assessmentId })}
       >
         Begin assessment
       </Link>

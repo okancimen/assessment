@@ -9,6 +9,7 @@ import { formatDate } from '@/lib/utils'
 import RegenRecommendations from './RegenRecommendations'
 import Confetti from './Confetti'
 import BellCurve, { type BellCurveSubject } from '@/components/landing/BellCurve'
+import TrackResultsView from './TrackResultsView'
 
 export default async function ResultsPage({
   params,
@@ -121,6 +122,7 @@ export default async function ResultsPage({
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <TrackResultsView assessmentId={id} standardizedScore={result.standardized_score} />
       <style dangerouslySetInnerHTML={{ __html: `
         @media print {
           nav, .no-print { display: none !important; }

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Button from '@/components/ui/Button'
 import Navbar from '@/components/dashboard/Navbar'
 import PublicFooter from '@/components/layout/PublicFooter'
+import { trackEvent } from '@/lib/analytics'
 
 export default function AddChildPage() {
   const router = useRouter()
@@ -43,6 +44,7 @@ export default function AddChildPage() {
     }
 
     await res.json()
+    trackEvent('add_child')
     router.push('/dashboard?success=child-added')
   }
 

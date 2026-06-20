@@ -6,6 +6,7 @@ import Logo from '@/components/ui/Logo'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import { BLOG_POSTS } from '@/app/blog/posts'
+import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
   title: 'Eduentry — International Academic Benchmark for Children | Ages 6–17',
@@ -102,13 +103,13 @@ export default function LandingPage() {
             so you know exactly where your child stands internationally.
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap mb-14">
-            <Link
+            <CtaLink
               href="/auth/register"
-              prefetch={false}
+              label="hero_start_free"
               className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
             >
               Start free assessment
-            </Link>
+            </CtaLink>
             <Link
               href="#how-it-works"
               className="text-[#f5f5f7] border border-[#424245] px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors"
@@ -369,12 +370,13 @@ export default function LandingPage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link
+            <CtaLink
               href="/auth/register"
+              label="how_it_works_cta"
               className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
             >
               Start free assessment →
-            </Link>
+            </CtaLink>
           </div>
         </div>
       </section>
@@ -478,12 +480,13 @@ export default function LandingPage() {
         <p className="text-[#86868b] mb-10 max-w-xl mx-auto text-lg">
           Full international context in under 2 hours.
         </p>
-        <Link
+        <CtaLink
           href="/auth/register"
+          label="bottom_cta"
           className="inline-block bg-[#4F46E5] text-white px-12 py-4 rounded-full text-base font-semibold hover:bg-[#4338CA] transition-colors"
         >
           Start free assessment →
-        </Link>
+        </CtaLink>
       </section>
 
       <PublicFooter />
