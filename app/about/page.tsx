@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
+import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
   title: 'About Eduentry — Free Academic Assessment for Children Ages 6–17',
@@ -182,9 +183,9 @@ export default function AboutPage() {
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Start your child&rsquo;s free assessment</h2>
           <p className="text-indigo-200 mb-8 text-lg">Takes 20–30 minutes. No payment required. Results immediately.</p>
-          <Link href="/auth/register" prefetch={false} className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
+          <CtaLink href="/auth/register" label="about_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
             Get started free
-          </Link>
+          </CtaLink>
         </section>
 
       </main>

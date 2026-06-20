@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
+import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
   title: 'Assessment Methodology — How Eduentry Works',
@@ -345,9 +346,9 @@ export default function MethodologyPage() {
         <div className="mt-16 text-center bg-indigo-50 rounded-2xl border border-indigo-100 p-10">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">See your child&apos;s percentile ranking</h2>
           <p className="text-gray-500 mb-6">Free assessment · Ages 6–17 · Results in 90 minutes</p>
-          <Link href="/auth/register" className="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-xl hover:bg-indigo-700 transition-colors">
+          <CtaLink href="/auth/register" label="methodology_cta" className="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-xl hover:bg-indigo-700 transition-colors">
             Start Free Assessment
-          </Link>
+          </CtaLink>
         </div>
       </main>
 

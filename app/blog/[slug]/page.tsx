@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
+import CtaLink from '@/components/ui/CtaLink'
 import { BLOG_POSTS, getPostBySlug, getRelatedPosts } from '../posts'
 import { getBlogContent } from '../content'
 
@@ -164,9 +165,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">See where your child stands today</h2>
           <p className="text-indigo-200 mb-8">Free adaptive assessment with an instant standardised score and percentile ranking.</p>
-          <Link href="/auth/register" prefetch={false} className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
+          <CtaLink href="/auth/register" label="blog_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
             Start free assessment
-          </Link>
+          </CtaLink>
         </section>
       </main>
 

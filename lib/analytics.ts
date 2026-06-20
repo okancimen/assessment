@@ -13,6 +13,7 @@ type GaEventName =
   | 'assessment_complete'
   | 'results_view'
   | 'recommendation_generate'
+  | 'print_results'
   | 'cta_click'
 
 interface GaEventParams {

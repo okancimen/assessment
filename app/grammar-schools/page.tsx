@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
+import CtaLink from '@/components/ui/CtaLink'
 import { GRAMMAR_AREAS } from './data'
 
 const BASE_URL = 'https://eduentry.com'
@@ -101,16 +102,16 @@ export default function GrammarSchoolsIndexPage() {
             Take Eduentry&apos;s free adaptive assessment to get a standardised score on the same scale (mean 100, SD 15)
             used by GL Assessment in the 11+. Instantly see where your child stands relative to grammar school entry benchmarks.
           </p>
-          <Link
+          <CtaLink
             href="/auth/register"
-            prefetch={false}
+            label="grammar_schools_cta"
             className="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors"
           >
             Get a free baseline score
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
-          </Link>
+          </CtaLink>
         </div>
 
         <div className="grid sm:grid-cols-3 gap-4">

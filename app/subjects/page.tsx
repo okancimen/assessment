@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
+import CtaLink from '@/components/ui/CtaLink'
 import { SUBJECTS, type Slug } from './data'
 
 const BASE_URL = 'https://eduentry.com'
@@ -101,9 +102,9 @@ export default function SubjectsIndexPage() {
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Try a free assessment today</h2>
           <p className="text-indigo-200 mb-8">Takes 5–8 minutes per subject. Instant standardised score and percentile ranking.</p>
-          <Link href="/auth/register" prefetch={false} className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
+          <CtaLink href="/auth/register" label="subjects_index_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
             Start free assessment
-          </Link>
+          </CtaLink>
         </section>
       </main>
 

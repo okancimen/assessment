@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
+import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
   title: 'Free 11+ Practice Test — Verbal & Non-Verbal Reasoning for Children',
@@ -182,9 +183,9 @@ export default function ElevenPlusPage() {
             Adaptive 11+ practice tests for verbal reasoning, non-verbal reasoning, English, and maths. Get a standardised score and percentile ranking — not just a percentage.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/auth/register" prefetch={false} className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors text-lg shadow-md shadow-indigo-100">
+            <CtaLink href="/auth/register" label="11plus_hero_cta" className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors text-lg shadow-md shadow-indigo-100">
               Start free 11+ test
-            </Link>
+            </CtaLink>
             <Link href="/methodology" className="text-gray-600 px-8 py-4 rounded-xl font-semibold hover:text-gray-900 hover:bg-gray-50 transition-colors border border-gray-200 text-lg">
               How scoring works
             </Link>
@@ -298,9 +299,9 @@ export default function ElevenPlusPage() {
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Start your child&rsquo;s free 11+ practice test</h2>
           <p className="text-indigo-200 mb-8 text-lg">Verbal reasoning, non-verbal reasoning, English and maths. Instant standardised score.</p>
-          <Link href="/auth/register" prefetch={false} className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
+          <CtaLink href="/auth/register" label="11plus_bottom_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
             Start free 11+ test
-          </Link>
+          </CtaLink>
         </section>
 
       </main>
