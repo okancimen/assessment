@@ -10,14 +10,18 @@ import Button from '@/components/ui/Button'
 // ── Loading screen (between questions) ────────────────────────────────────────
 
 const LOADING_FACTS = [
-  'Did you know? Adaptive testing adjusts difficulty in real-time based on your answers.',
-  'Fun fact: The IRT model used here is the same one behind many national standardised tests.',
-  'Tip: Read each question carefully — there\'s no time pressure, accuracy matters more.',
-  'Did you know? Your brain consolidates learning best after short breaks.',
-  'Fun fact: Verbal reasoning scores are strong predictors of academic potential.',
-  'Tip: For non-verbal questions, look for the rule in the pattern before guessing.',
-  'Did you know? A score of 100 is exactly average for your age group.',
-  'Fun fact: The difficulty range spans 10 levels — most students land between 4 and 7.',
+  'Did you know? Adaptive testing adjusts difficulty in real-time based on your answers, so every question is personally calibrated to challenge you at exactly the right level.',
+  'Fun fact: The IRT model used here is the same one behind many national standardised tests, including PISA, which measures academic ability across more than 80 countries.',
+  'Tip: Read each question carefully — there\'s no time pressure, so accuracy matters far more than speed. A thoughtful wrong answer still helps calibrate your score.',
+  'Did you know? Your brain consolidates learning best after short breaks. Even a few seconds of pause between questions can improve recall and focus.',
+  'Fun fact: Verbal reasoning scores are strong predictors of academic potential and are used by grammar schools and independent schools as a key entry criterion.',
+  'Tip: For non-verbal questions, look for the rule governing the pattern before you guess. Common rules include rotation, reflection, size change, and number of sides.',
+  'Did you know? A score of 100 is exactly average for your age group. Scores above 115 place a child in the top 16%, and above 130 in the top 2%.',
+  'Fun fact: The difficulty range spans 10 levels — most students land between 4 and 7. Reaching level 8 or above puts you well ahead of your peers nationally.',
+  'Tip: If you\'re unsure between two answers, trust your first instinct. Research shows that initial responses are correct more often than second-guessed ones.',
+  'Did you know? This assessment covers four subjects — English, Maths, Verbal Reasoning, and Non-Verbal Reasoning — the same four tested in most 11+ and grammar school exams.',
+  'Fun fact: Standardised scores stay comparable across different age groups, so a score of 110 means the same thing whether you\'re 8 or 14 years old.',
+  'Tip: Non-verbal reasoning is the one subject where extra practice makes the biggest difference in a short time. Pattern recognition improves quickly with repetition.',
 ]
 
 function LoadingQuestion() {
@@ -29,7 +33,7 @@ function LoadingQuestion() {
     timer.current = setInterval(() => {
       setFade(false)
       setTimeout(() => { setFactIndex((i) => (i + 1) % LOADING_FACTS.length); setFade(true) }, 400)
-    }, 4000)
+    }, 5000)
     return () => { if (timer.current) clearInterval(timer.current) }
   }, [])
 
