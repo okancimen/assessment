@@ -7,6 +7,8 @@ import ProgressBar from '@/components/assessment/ProgressBar'
 import QuestionCard from '@/components/assessment/QuestionCard'
 import Button from '@/components/ui/Button'
 
+const SECTION_TIME = QUESTIONS_PER_SUBJECT * 120 // seconds per subject
+
 // ── Loading screen (between questions) ────────────────────────────────────────
 
 const LOADING_FACTS = [
@@ -109,6 +111,14 @@ function WarmupCountdown({ count }: { count: number }) {
   )
 }
 
+// ── Section timer helper ──────────────────────────────────────────────────────
+
+function formatSectionTime(secs: number) {
+  const m = Math.floor(secs / 60)
+  const s = secs % 60
+  return `${m}:${s.toString().padStart(2, '0')}`
+}
+
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 interface SessionState {
@@ -131,18 +141,38 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   const router = useRouter()
 
   type Phase = 'warmup' | 'loading' | 'question' | 'break' | 'error'
-  const [phase, setPhase] = useState<Phase>('warmup')
-  const [warmupCount, setWarmupCount] = useState(4)
-  const [question, setQuestion] = useState<Question | null>(null)
-  const [session, setSession] = useState<SessionState | null>(null)
+  const [phase, setPhase]               = useState<Phase>('warmup')
+  const [warmupCount, setWarmupCount]   = useState(4)
+  const [question, setQuestion]         = useState<Question | null>(null)
+  const [session, setSession]           = useState<SessionState | null>(null)
   const [subjectBreak, setSubjectBreak] = useState<Subject | null>(null)
-  const [error, setError] = useState('')
+  const [error, setError]               = useState('')
 
-  // Stores fetch result while warmup countdown is still running
-  const pendingRef = useRef<FetchResult | null>(null)
-  const isFirstRef = useRef(true)
+  // Section timer
+  const [sectionTimeLeft, setSectionTimeLeft] = useState(SECTION_TIME)
+  const prevSubjectRef = useRef<string | null>(null)
 
-  // Apply a fetch result to component state
+  // Reset section timer when subject changes
+  useEffect(() => {
+    if (!session) return
+    if (prevSubjectRef.current !== session.current_subject) {
+      prevSubjectRef.current = session.current_subject
+      setSectionTimeLeft(SECTION_TIME)
+    }
+  }, [session?.current_subject])
+
+  // Count down section timer while actively answering (question + loading phases)
+  useEffect(() => {
+    if (phase !== 'question' && phase !== 'loading') return
+    const interval = setInterval(() => {
+      setSectionTimeLeft((t) => Math.max(0, t - 1))
+    }, 1000)
+    return () => clearInterval(interval)
+  }, [phase])
+
+  const pendingRef  = useRef<FetchResult | null>(null)
+  const isFirstRef  = useRef(true)
+
   function applyResult(result: FetchResult) {
     if (result.type === 'complete') {
       router.push(`/assessment/${assessmentId}/complete`)
@@ -159,7 +189,6 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
     }
   }
 
-  // Fetch question from API
   async function doFetch(): Promise<FetchResult> {
     try {
       const res = await fetch(`/api/assessments/${assessmentId}/question`)
@@ -173,7 +202,6 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
     }
   }
 
-  // Subsequent question fetches (normal loading screen)
   async function fetchNextQuestion() {
     setPhase('loading')
     setQuestion(null)
@@ -182,22 +210,34 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
     applyResult(result)
   }
 
-  // On mount: start background fetch + countdown simultaneously
+  // Back to previous question
+  async function handleBack() {
+    setPhase('loading')
+    setQuestion(null)
+    try {
+      const res = await fetch(`/api/assessments/${assessmentId}/back`, { method: 'POST' })
+      const data = await res.json()
+      if (!res.ok) { setError(data.error || 'Could not go back'); setPhase('error'); return }
+      setQuestion(data.question)
+      setSession(data.session)
+      setPhase('question')
+    } catch {
+      setError('Network error. Please try again.')
+      setPhase('error')
+    }
+  }
+
   useEffect(() => {
     let countdownDone = false
 
-    // 1. Kick off the API call immediately
     doFetch().then((result) => {
       if (countdownDone) {
-        // Countdown already finished — apply right away
         applyResult(result)
       } else {
-        // Still counting down — hold it
         pendingRef.current = result
       }
     })
 
-    // 2. Run 4-3-2-1 countdown
     let count = 4
     const interval = setInterval(() => {
       count -= 1
@@ -207,10 +247,8 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
         countdownDone = true
         isFirstRef.current = false
         if (pendingRef.current) {
-          // Fetch already done — apply immediately
           applyResult(pendingRef.current)
         } else {
-          // Fetch still in progress — show loading screen
           setPhase('loading')
         }
       }
@@ -220,7 +258,6 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // Prefetch next question whenever a new question is displayed
   useEffect(() => {
     if (!question) return
     fetch(`/api/assessments/${assessmentId}/prefetch`, { method: 'POST' }).catch(() => {})
@@ -293,6 +330,8 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
   if (!question || !session) return null
 
+  const sectionIsLow = sectionTimeLeft <= 300 // 5 min warning
+
   return (
     <div className="min-h-screen bg-[#f5f5f7]">
       <div className="max-w-2xl mx-auto px-4 py-8 space-y-4">
@@ -303,12 +342,20 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
             currentSubject={session.current_subject}
             completedSubjects={session.completed_subjects}
           />
+          {/* Section timer */}
+          <div className="mt-3 pt-3 border-t border-[#f5f5f7] flex items-center justify-between">
+            <span className="text-xs text-[#6e6e73]">Section time remaining</span>
+            <span className={`text-xs font-mono font-semibold tabular-nums ${sectionIsLow ? 'text-red-500 animate-pulse' : 'text-[#1d1d1f]'}`}>
+              {formatSectionTime(sectionTimeLeft)}
+            </span>
+          </div>
         </div>
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6">
           <QuestionCard
             question={question}
             onAnswer={handleAnswer}
             onNext={fetchNextQuestion}
+            onBack={session.question_index > 0 ? handleBack : undefined}
             questionNumber={session.question_index + 1}
             totalQuestions={QUESTIONS_PER_SUBJECT}
           />
