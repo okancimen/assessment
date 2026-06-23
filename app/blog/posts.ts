@@ -9,6 +9,7 @@ export interface BlogPostMeta {
   shortTitle: string
   description: string
   date: string
+  dateModified?: string
   readTime: string
   tags: string[]
   faqs?: Faq[]

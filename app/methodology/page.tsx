@@ -6,7 +6,7 @@ import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
   title: 'Assessment Methodology — How Eduentry Works',
-  description: 'How Eduentry measures academic ability: 2PL Item Response Theory, MAP estimation, standardised scoring (mean 100, SD 15), and international benchmarking against UK, PISA, US and IB frameworks.',
+  description: 'How Eduentry uses 2PL Item Response Theory and MAP estimation to produce standardised academic scores for children aged 6–17, benchmarked internationally.',
   keywords: 'Item Response Theory children, IRT adaptive assessment, standardised score children, MAP estimation, educational benchmarking methodology, adaptive testing UK',
   alternates: { canonical: 'https://eduentry.com/methodology', languages: { 'en-GB': 'https://eduentry.com/methodology', 'x-default': 'https://eduentry.com/methodology' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -40,13 +40,8 @@ const METHODOLOGY_SCHEMA = {
   datePublished: '2026-01-01',
   dateModified: '2026-06-01',
   image: 'https://eduentry.com/methodology/opengraph-image',
-  author: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Eduentry',
-    url: 'https://eduentry.com',
-    logo: { '@type': 'ImageObject', url: 'https://eduentry.com/logo.png' },
-  },
+  author: { '@id': 'https://eduentry.com/#organization' },
+  publisher: { '@id': 'https://eduentry.com/#organization' },
   about: [
     { '@type': 'Thing', name: 'Item Response Theory' },
     { '@type': 'Thing', name: 'Adaptive Testing' },

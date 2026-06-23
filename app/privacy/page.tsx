@@ -5,7 +5,7 @@ import PublicFooter from '@/components/layout/PublicFooter'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy — Eduentry',
-  description: 'How Eduentry collects, uses, and protects your personal data and your child\'s assessment results. GDPR and UK GDPR compliant. Your child\'s data is never sold or shared.',
+  description: 'How Eduentry collects and protects your personal data and your child\'s assessment results. GDPR and UK GDPR compliant. Data is never sold or shared.',
   keywords: 'Eduentry privacy policy, children data protection, GDPR assessment platform, UK GDPR',
   alternates: { canonical: 'https://eduentry.com/privacy', languages: { 'en-GB': 'https://eduentry.com/privacy', 'x-default': 'https://eduentry.com/privacy' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },

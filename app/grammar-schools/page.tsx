@@ -9,7 +9,7 @@ const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
   title: 'Grammar Schools in England: Entry Requirements by Area',
-  description: 'Entry requirements, SAS score benchmarks and 11+ preparation advice for grammar schools across England — Kent, Buckinghamshire, Birmingham, London, Essex, Hertfordshire and more.',
+  description: 'Entry requirements and 11+ preparation advice for grammar schools across England — Kent, Buckinghamshire, Birmingham, London, Essex and Hertfordshire.',
   alternates: { canonical: `${BASE_URL}/grammar-schools`, languages: { 'en-GB': `${BASE_URL}/grammar-schools`, 'x-default': `${BASE_URL}/grammar-schools` } },
   keywords: 'grammar schools England, 11 plus entry requirements, grammar school score, SAS score grammar school, 11+ preparation',
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },

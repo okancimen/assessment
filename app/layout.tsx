@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Eduentry",
   },
   description:
-    "Free adaptive assessment for UK and international families — see your child's percentile ranking against global standards. UK National Curriculum, PISA and IB benchmarks. Ages 6–17.",
+    "Free adaptive assessment for children aged 6–17 — standardised scores and percentile rankings against UK National Curriculum, PISA and IB standards.",
   keywords: [
     "free children assessment",
     "percentile ranking children",
@@ -72,6 +72,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#1d1d1f" />
         <meta name="yandex-verification" content="f8b17ecde6325153" />
+        <link rel="preconnect" href="https://xronkbdtsnjibwhuelni.supabase.co" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-F60J3BHJDE" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">{`

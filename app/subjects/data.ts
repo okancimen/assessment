@@ -3,7 +3,7 @@ export const SUBJECTS = {
     title: 'Free English Assessment for Children',
     headline: 'English',
     tagline: 'Comprehension, grammar, spelling and vocabulary — benchmarked internationally',
-    description: 'Free adaptive English assessment for children aged 6–17. Covers comprehension, grammar, spelling, punctuation, and vocabulary. Standardised scores benchmarked to UK National Curriculum and Cambridge IGCSE.',
+    description: 'Free adaptive English assessment for children aged 6–17. Covers reading comprehension, grammar, spelling, punctuation and vocabulary. Standardised scores.',
     color: 'bg-rose-50 text-rose-700 border-rose-100',
     accent: 'text-rose-600',
     skills: [
@@ -26,7 +26,7 @@ export const SUBJECTS = {
     title: 'Free Maths Assessment for Children',
     headline: 'Mathematics',
     tagline: 'Number, algebra, geometry and data handling — from KS1 to GCSE level',
-    description: 'Free adaptive maths assessment for children aged 6–17. Covers number operations, algebra, geometry, fractions, and data handling. Standardised scores benchmarked to UK National Curriculum and PISA numeracy.',
+    description: 'Free adaptive maths assessment for children aged 6–17. Covers number operations, algebra, geometry, fractions and data handling. Standardised scores.',
     color: 'bg-amber-50 text-amber-700 border-amber-100',
     accent: 'text-amber-600',
     skills: [
@@ -49,7 +49,7 @@ export const SUBJECTS = {
     title: 'Free Verbal Reasoning Test for Children',
     headline: 'Verbal Reasoning',
     tagline: 'Problem-solving with words — essential for 11+, grammar school, and independent school entry',
-    description: 'Free adaptive verbal reasoning test for children aged 7–16. Covers analogies, word relationships, sequencing, classification, and logic. Used in 11+ and grammar school entrance examinations across the UK.',
+    description: 'Free adaptive verbal reasoning test for children aged 7–16. Covers word analogies, codes, classification and logic puzzles. Used in UK 11+ entrance exams.',
     color: 'bg-indigo-50 text-indigo-700 border-indigo-100',
     accent: 'text-indigo-600',
     skills: [
@@ -72,7 +72,7 @@ export const SUBJECTS = {
     title: 'Free Non-Verbal Reasoning Test for Children',
     headline: 'Non-Verbal Reasoning',
     tagline: 'Pattern recognition, spatial reasoning, and abstract thinking — language-independent',
-    description: 'Free adaptive non-verbal reasoning test for children aged 7–16. Covers pattern recognition, matrices, sequences, and spatial reasoning. Assesses cognitive ability independently of language skills.',
+    description: 'Free adaptive non-verbal reasoning test for children aged 7–16, covering pattern recognition, matrix reasoning, sequences and spatial reasoning.',
     color: 'bg-emerald-50 text-emerald-700 border-emerald-100',
     accent: 'text-emerald-600',
     skills: [

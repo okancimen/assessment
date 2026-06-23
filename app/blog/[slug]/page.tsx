@@ -82,20 +82,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
+    '@id': `${url}#article`,
     headline: post.title,
     description: post.description,
     keywords: post.tags.join(', '),
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.dateModified ?? post.date,
     url,
     image: `${BASE_URL}/blog/${slug}/opengraph-image`,
-    author: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Eduentry',
-      logo: { '@type': 'ImageObject', url: `${BASE_URL}/icon.png` },
-    },
+    author: { '@id': 'https://eduentry.com/#organization' },
+    publisher: { '@id': 'https://eduentry.com/#organization' },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    isPartOf: { '@id': 'https://eduentry.com/#website' },
   }
 
   const related = getRelatedPosts(slug)

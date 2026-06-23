@@ -11,7 +11,7 @@ import CtaLink from '@/components/ui/CtaLink'
 export const metadata: Metadata = {
   title: 'Eduentry — International Academic Benchmark for Children',
   description:
-    'Free adaptive assessment that shows how your child compares to international education standards — UK National Curriculum, US grade levels, PISA and IB benchmarks. Ages 6–17.',
+    'Free adaptive assessment benchmarked against UK National Curriculum, PISA and IB — see your child\'s standardised score and percentile ranking. Ages 6–17.',
   alternates: { canonical: 'https://eduentry.com', languages: { 'en-GB': 'https://eduentry.com', 'x-default': 'https://eduentry.com' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
@@ -47,18 +47,22 @@ const SOFTWARE_SCHEMA = {
 const WEBSITE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
+  '@id': 'https://eduentry.com/#website',
   name: 'Eduentry',
   url: 'https://eduentry.com',
+  publisher: { '@id': 'https://eduentry.com/#organization' },
   potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: 'https://eduentry.com/search?q={search_term_string}' }, 'query-input': 'required name=search_term_string' },
 }
 
 const ORGANIZATION_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': 'https://eduentry.com/#organization',
   name: 'Eduentry',
   url: 'https://eduentry.com',
-  logo: 'https://eduentry.com/logo.png',
+  logo: { '@type': 'ImageObject', url: 'https://eduentry.com/logo.png', width: 200, height: 60 },
   foundingDate: '2026',
+  sameAs: [],
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 

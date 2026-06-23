@@ -8,7 +8,7 @@ const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
   title: 'Try a Free Sample Assessment — See How Eduentry Works',
-  description: 'Try four sample questions — one from each subject (English, Maths, Verbal Reasoning, Non-Verbal Reasoning). No account needed. See exactly what the Eduentry assessment looks like before you register.',
+  description: 'Try four sample questions — English, Maths, Verbal and Non-Verbal Reasoning. No account required. See how Eduentry\'s adaptive assessment works before you register.',
   alternates: { canonical: `${BASE_URL}/demo`, languages: { 'en-GB': `${BASE_URL}/demo`, 'x-default': `${BASE_URL}/demo` } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
