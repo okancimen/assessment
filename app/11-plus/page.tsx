@@ -5,7 +5,7 @@ import PublicFooter from '@/components/layout/PublicFooter'
 import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
-  title: 'Free 11+ Practice Test — Verbal & Non-Verbal Reasoning for Children',
+  title: 'Free 11+ Practice Test — Verbal & Non-Verbal Reasoning',
   description: 'Free 11+ practice tests for verbal reasoning, non-verbal reasoning, English and maths. Adaptive questions, standardised scores, and percentile rankings. Used by UK families preparing for grammar school and independent school entry.',
   keywords: '11 plus practice test free, 11+ verbal reasoning test, 11+ non-verbal reasoning free, free 11 plus test online, grammar school entrance test free, 11+ preparation UK',
   alternates: { canonical: 'https://eduentry.com/11-plus', languages: { 'en-GB': 'https://eduentry.com/11-plus', 'x-default': 'https://eduentry.com/11-plus' } },

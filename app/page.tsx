@@ -9,7 +9,7 @@ import { BLOG_POSTS } from '@/app/blog/posts'
 import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
-  title: 'Eduentry — International Academic Benchmark for Children | Ages 6–17',
+  title: 'Eduentry — International Academic Benchmark for Children',
   description:
     'Free adaptive assessment that shows how your child compares to international education standards — UK National Curriculum, US grade levels, PISA and IB benchmarks. Ages 6–17.',
   alternates: { canonical: 'https://eduentry.com', languages: { 'en-GB': 'https://eduentry.com', 'x-default': 'https://eduentry.com' } },

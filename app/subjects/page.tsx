@@ -8,7 +8,7 @@ import { SUBJECTS, type Slug } from './data'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Free Assessments by Subject — English, Maths, Verbal & Non-Verbal Reasoning',
+  title: 'Free Assessments by Subject — Eduentry',
   description: 'Free adaptive assessments for children aged 6–17 across English, Maths, Verbal Reasoning, and Non-Verbal Reasoning. Standardised scores benchmarked internationally.',
   alternates: { canonical: `${BASE_URL}/subjects`, languages: { 'en-GB': `${BASE_URL}/subjects`, 'x-default': `${BASE_URL}/subjects` } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
