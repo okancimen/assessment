@@ -52,6 +52,24 @@ Focus areas: completing sequences described in words, identifying the odd shape 
 The pattern or rule must be unambiguous — there must be exactly one valid completion or answer.`,
 }
 
+async function withOverloadRetry<T>(fn: () => Promise<T>, maxRetries = 3): Promise<T> {
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      return await fn()
+    } catch (err) {
+      const isOverloaded =
+        err instanceof Error &&
+        (err.message.includes('overloaded') || err.message.includes('529'))
+      if (isOverloaded && attempt < maxRetries) {
+        await new Promise((r) => setTimeout(r, 1000 * 2 ** attempt))
+        continue
+      }
+      throw err
+    }
+  }
+  throw new Error('unreachable')
+}
+
 async function attemptGenerate(
   subject: Subject,
   age: number,
@@ -97,12 +115,14 @@ Respond with ONLY valid JSON, no markdown fences, no extra text:
   "topic": "${topic}"
 }`
 
-  const message = await client.messages.create({
-    model: 'claude-sonnet-4-6',
-    max_tokens: 1024,
-    system: SUBJECT_PROMPTS[subject],
-    messages: [{ role: 'user', content: prompt }],
-  })
+  const message = await withOverloadRetry(() =>
+    client.messages.create({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 1024,
+      system: SUBJECT_PROMPTS[subject],
+      messages: [{ role: 'user', content: prompt }],
+    })
+  )
 
   const content = message.content[0]
   if (content.type !== 'text') throw new Error('Unexpected response type from Claude')
