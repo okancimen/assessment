@@ -21,25 +21,35 @@ function getDifficultyDescriptor(level: number): string {
 }
 
 function shuffleOptions(options: QuestionOption[], correctId: string): { options: QuestionOption[]; correct_answer: string } {
-  const correctText = options.find((o) => o.id === correctId)?.text ?? ''
+  const correctText = options.find((o) => o.id === correctId)?.text?.trim() ?? ''
   const shuffled = [...options].sort(() => Math.random() - 0.5)
   const ids = ['A', 'B', 'C', 'D']
   const reindexed = shuffled.map((opt, i) => ({ id: ids[i], text: opt.text }))
-  const newCorrectId = reindexed.find((o) => o.text === correctText)?.id ?? ids[0]
+  const newCorrectId = reindexed.find((o) => o.text.trim() === correctText)?.id
+  if (!newCorrectId) throw new Error('shuffleOptions: correct option not found after shuffle')
   return { options: reindexed, correct_answer: newCorrectId }
 }
 
 const SUBJECT_PROMPTS: Record<Subject, string> = {
-  english: `You are generating an English comprehension/language question for a standardized academic assessment.
-Focus areas rotate among: reading comprehension, grammar, spelling, punctuation, and vocabulary.`,
-  mathematics: `You are generating a Mathematics question for a standardized academic assessment.
-Focus areas rotate among: number operations, algebra, geometry, data handling, and fractions/decimals.`,
-  verbal_reasoning: `You are generating a Verbal Reasoning question for a standardized academic assessment.
-These test critical thinking using words — not memorized knowledge.
-Focus areas: word analogies (A:B::C:?), odd-one-out, word sequences, logical deduction, and classification.`,
-  nonverbal_reasoning: `You are generating a Non-Verbal Reasoning question for a standardized academic assessment.
-These test pattern recognition using descriptions of shapes/diagrams (since we can't show images).
-Focus areas: completing sequences described in words, identifying the odd shape out, matrix reasoning described textually, and spatial relationships.`,
+  english: `You are an expert question writer for standardised academic assessments (UK National Curriculum, Cambridge IGCSE level).
+Your task is to generate English comprehension and language questions.
+Focus areas rotate among: reading comprehension, grammar, spelling, punctuation, and vocabulary.
+Every question must have exactly one correct answer that any qualified teacher would agree on.`,
+
+  mathematics: `You are an expert question writer for standardised academic assessments (UK National Curriculum, PISA level).
+Your task is to generate Mathematics questions.
+Focus areas rotate among: number operations, algebra, geometry, data handling, and fractions/decimals.
+Every question must have exactly one numerically correct answer. Verify your arithmetic before finalising.`,
+
+  verbal_reasoning: `You are an expert question writer for 11+ and grammar school entrance assessments.
+Your task is to generate Verbal Reasoning questions that test logical thinking with words — not knowledge recall.
+Focus areas: word analogies (A:B::C:?), odd-one-out, word sequences, logical deduction, and classification.
+The correct answer must be the only defensible choice; distractors must be clearly wrong.`,
+
+  nonverbal_reasoning: `You are an expert question writer for 11+ and cognitive ability assessments.
+Your task is to generate Non-Verbal Reasoning questions expressed in text (no images available).
+Focus areas: completing sequences described in words, identifying the odd shape out, matrix reasoning described textually, and spatial relationships.
+The pattern or rule must be unambiguous — there must be exactly one valid completion or answer.`,
 }
 
 async function attemptGenerate(
@@ -53,9 +63,7 @@ async function attemptGenerate(
     ? `\nDo NOT generate any of these questions (already used in this assessment):\n${usedQuestionTexts.map((t, i) => `${i + 1}. ${t}`).join('\n')}\n`
     : ''
 
-  const prompt = `${SUBJECT_PROMPTS[subject]}
-
-Student age: ${age} years old (${getAgeDescriptor(age)})
+  const prompt = `Student age: ${age} years old (${getAgeDescriptor(age)})
 Difficulty: ${difficulty}/10 — ${getDifficultyDescriptor(difficulty)}
 Topic: ${topic.replace(/_/g, ' ')}
 ${avoidSection}
@@ -64,9 +72,16 @@ Generate ONE multiple-choice question with exactly 4 options. The question must 
 - At difficulty level ${difficulty}/10
 - Clearly worded with one unambiguously correct answer
 - 4 options with distinct, non-overlapping answer texts (no duplicates)
-- Plausible distractors (wrong answers that test understanding)
+- Plausible distractors (wrong answers that test understanding, but are clearly incorrect)
 
 For Non-Verbal Reasoning: describe shapes/patterns using clear text (e.g., "circle, square, triangle, circle, square, ___")
+
+Before writing the JSON, verify:
+- Exactly one option is correct — not zero, not two.
+- Each wrong option is clearly incorrect and cannot be reasonably argued as right.
+- For maths: recheck your arithmetic.
+- For verbal reasoning: confirm the relationship holds for the correct pair and fails for all distractors.
+- For non-verbal reasoning: confirm the pattern has exactly one valid completion.
 
 Respond with ONLY valid JSON, no markdown fences, no extra text:
 {
@@ -78,13 +93,14 @@ Respond with ONLY valid JSON, no markdown fences, no extra text:
     {"id": "D", "text": "Fourth option"}
   ],
   "correct_answer": "A",
-  "explanation": "Brief explanation of why this is correct",
+  "explanation": "Brief explanation of why this is correct and why each other option is wrong",
   "topic": "${topic}"
 }`
 
   const message = await client.messages.create({
-    model: 'claude-haiku-4-5-20251001',
-    max_tokens: 600,
+    model: 'claude-sonnet-4-6',
+    max_tokens: 1024,
+    system: SUBJECT_PROMPTS[subject],
     messages: [{ role: 'user', content: prompt }],
   })
 
