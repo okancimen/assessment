@@ -55,11 +55,44 @@ const METHODOLOGY_SCHEMA = {
   ],
 }
 
+const METHODOLOGY_FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is Item Response Theory (IRT)?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Item Response Theory (IRT) is a statistical framework that models the relationship between a person\'s latent ability and the probability of answering a question correctly. Unlike classical test theory, IRT accounts for question difficulty, discrimination, and guessing. Eduentry uses a 2-Parameter Logistic (2PL) model — the same model used in PISA, CAT4, and NFER standardised assessments.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How does Eduentry calculate a standardised score?',
+      acceptedAnswer: { '@type': 'Answer', text: 'After each session, Eduentry applies Maximum A Posteriori (MAP) estimation — a Bayesian method — to estimate a child\'s latent ability (θ) from their pattern of responses. This θ is then linearly transformed to a standardised scale with mean 100 and standard deviation 15, matching the scale used by NFER, GL Assessment, CAT4, and WISC-V.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How does Eduentry select question difficulty?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Questions are chosen adaptively so that each item difficulty matches the child\'s current estimated ability. This targets the point of maximum information gain — the same principle used in computer-adaptive tests like the Digital SAT and GRE. The result is a shorter, more precise assessment than a fixed-form test.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How accurate is Eduentry\'s standardised score?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Over 15 adaptive questions per subject, the Standard Error of Measurement (SEM) is approximately ±5–7 standardised score points. This is comparable to a short-form professional assessment. Scores should be interpreted as a meaningful diagnostic estimate rather than a single definitive number, and retesting after a period of practice will track genuine progress.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How does Eduentry compare to CAT4, NFER, or GL Assessment?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Eduentry uses the same IRT methodology and standardised scoring scale as professional tools including CAT4 and GL Assessment. It is a free, accessible diagnostic designed to identify strengths and gaps and track progress. It is not a replacement for invigilated assessments used in formal school selection, but the standardised score is directly interpretable alongside professional results.' },
+    },
+  ],
+}
+
 export default function MethodologyPage() {
   return (
     <div className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(METHODOLOGY_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(METHODOLOGY_FAQ_SCHEMA) }} />
 
       <PublicNav />
 

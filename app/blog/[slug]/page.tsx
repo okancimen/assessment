@@ -9,6 +9,20 @@ import { getBlogContent } from '../content'
 
 const BASE_URL = 'https://eduentry.com'
 
+const COUNTRY_LANG: Record<string, string> = {
+  'netherlands-': 'en-NL',
+  'uae-':         'en-AE',
+  'canada-':      'en-CA',
+  'australia-':   'en-AU',
+}
+
+function getCountryLang(slug: string): string | null {
+  for (const [prefix, lang] of Object.entries(COUNTRY_LANG)) {
+    if (slug.startsWith(prefix)) return lang
+  }
+  return null
+}
+
 export function generateStaticParams() {
   return BLOG_POSTS.map((p) => ({ slug: p.slug }))
 }
@@ -22,7 +36,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: post.shortTitle,
     description: post.description,
     keywords: post.tags,
-    alternates: { canonical: url, languages: { 'en-GB': url, 'x-default': url } },
+    alternates: {
+      canonical: url,
+      languages: {
+        'en-GB': url,
+        'x-default': url,
+        ...(getCountryLang(slug) ? { [getCountryLang(slug)!]: url } : {}),
+      },
+    },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
     openGraph: {
       type: 'article',

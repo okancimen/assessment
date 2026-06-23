@@ -5,6 +5,43 @@ import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import CtaLink from '@/components/ui/CtaLink'
 import { SUBJECTS, type Slug } from '../data'
+import { BLOG_POSTS } from '@/app/blog/posts'
+
+const SUBJECT_FAQS: Record<string, Array<{ q: string; a: string }>> = {
+  english: [
+    { q: 'Is the English assessment free?', a: 'Yes, completely free for all families — no subscriptions, hidden charges, or premium tiers. Every family receives the full adaptive assessment and standardised score report at no cost.' },
+    { q: 'What English skills does the assessment cover?', a: 'The assessment covers reading comprehension, grammar, spelling, punctuation, and vocabulary. Questions are adaptively calibrated to your child\'s age and level using Item Response Theory.' },
+    { q: 'How long does the English assessment take?', a: 'The English section contains 15 adaptive questions with a 30-minute total section time limit (2 minutes per question). Most children complete the section in 20–25 minutes.' },
+    { q: 'What score will my child receive?', a: 'Your child receives a standardised score with a mean of 100 and standard deviation of 15 — the same scale used by NFER, GL Assessment, and CAT4. A score of 115 places your child in the top 16%; 130 in the top 2%.' },
+  ],
+  maths: [
+    { q: 'Is the Maths assessment free?', a: 'Yes, completely free for all families. Every family receives the full adaptive Maths assessment and standardised score report at no cost.' },
+    { q: 'What maths topics does the assessment cover?', a: 'The assessment covers number operations, algebra, geometry, fractions and percentages, and data handling. Questions span KS1 to GCSE level and are adaptively calibrated to your child\'s age and current ability.' },
+    { q: 'How long does the Maths assessment take?', a: 'The Maths section contains 15 adaptive questions with a 30-minute total section time limit. Most children complete it in 20–25 minutes.' },
+    { q: 'How does the Maths score relate to the 11+?', a: 'Eduentry\'s standardised score (mean 100, SD 15) is directly comparable to GL Assessment SAS scores used in the 11+. A score of 111+ is broadly equivalent to the selective register threshold in most 11+ areas.' },
+  ],
+  'verbal-reasoning': [
+    { q: 'Is the Verbal Reasoning assessment free?', a: 'Yes, completely free. The full adaptive test and standardised score report with topic-level breakdown are included at no cost.' },
+    { q: 'Is verbal reasoning the same as English?', a: 'No. Verbal reasoning tests logical thinking using words — not reading comprehension or writing. Questions involve analogies, word codes, sequencing, and classification. Strong English helps, but verbal reasoning requires separate practice.' },
+    { q: 'How long does the Verbal Reasoning assessment take?', a: 'The Verbal Reasoning section contains 15 adaptive questions with a 30-minute total section time limit. Most children complete it in 20–25 minutes.' },
+    { q: 'Can verbal reasoning be improved with practice?', a: 'Yes — verbal reasoning is highly practice-responsive. The question types are finite (analogies, codes, classification, sequences, logic), and systematic practice produces genuine improvement. Wide reading to build vocabulary provides the strongest foundation.' },
+  ],
+  'non-verbal-reasoning': [
+    { q: 'Is the Non-Verbal Reasoning assessment free?', a: 'Yes, completely free for all families. The full adaptive test and standardised score report are included at no cost.' },
+    { q: 'What is non-verbal reasoning and why does it matter?', a: 'Non-verbal reasoning tests pattern recognition and abstract thinking using shapes — no reading required. It is included in most 11+ exams, the CAT4, and gifted identification tests because it measures cognitive ability independently of language background, making it fair for multilingual children.' },
+    { q: 'How long does the Non-Verbal Reasoning assessment take?', a: 'The Non-Verbal Reasoning section contains 15 adaptive questions with a 30-minute total section time limit. Most children complete it in 15–25 minutes.' },
+    { q: 'Which exams test non-verbal reasoning?', a: 'Non-verbal reasoning appears in GL Assessment 11+ papers, the CEM 11+, CAT4, ISEB Common Pre-Test, and US gifted tests including the NNAT and CogAT Nonverbal battery. It is also a significant component of independent school entrance exams.' },
+  ],
+}
+
+const SUBJECT_BLOG_TAGS: Record<string, string[]> = {
+  english:              ['Standardised Testing', 'Scores', 'Parent Guide', 'Grammar Schools'],
+  maths:                ['Standardised Testing', 'PISA', '11+'],
+  'verbal-reasoning':   ['Verbal Reasoning', '11+', 'Grammar Schools', 'Preparation'],
+  'non-verbal-reasoning': ['11+', 'Grammar Schools', 'Preparation', 'Entry Requirements'],
+}
+
+const COUNTRY_TAGS = ['Netherlands', 'UAE', 'Canada', 'Australia', 'US Education', 'Dutch Education', 'Dutch Schools', 'ISEE', 'SSAT', 'Private School']
 
 export function generateStaticParams() {
   return Object.keys(SUBJECTS).map((slug) => ({ slug }))
@@ -61,10 +98,30 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
     availableLanguage: 'English',
   }
 
+  const subjectFaqs = SUBJECT_FAQS[slug] ?? []
+  const faqSchema = subjectFaqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: subjectFaqs.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  } : null
+
+  const subjectBlogTags = SUBJECT_BLOG_TAGS[slug] ?? []
+  const relatedPosts = BLOG_POSTS
+    .filter(p =>
+      p.tags.some(t => subjectBlogTags.includes(t)) &&
+      !p.tags.some(t => COUNTRY_TAGS.includes(t))
+    )
+    .slice(0, 3)
+
   return (
     <div className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
       <PublicNav />
 
@@ -193,6 +250,47 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
             <svg className="w-5 h-5 text-indigo-400 flex-shrink-0 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
           </Link>
         </section>
+
+        {/* Related blog posts */}
+        {relatedPosts.length > 0 && (
+          <section className="mb-14">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Related reading</h2>
+            <div className="grid sm:grid-cols-3 gap-4">
+              {relatedPosts.map((p) => (
+                <Link
+                  key={p.slug}
+                  href={`/blog/${p.slug}`}
+                  className="group border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/40 transition-colors flex flex-col"
+                >
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    {p.tags.slice(0, 2).map((tag) => (
+                      <span key={tag} className="text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full px-2.5 py-0.5">{tag}</span>
+                    ))}
+                  </div>
+                  <div className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-indigo-700 transition-colors flex-1">
+                    {p.shortTitle}
+                  </div>
+                  <div className="text-xs text-gray-400">{p.readTime}</div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* FAQ */}
+        {subjectFaqs.length > 0 && (
+          <section className="mb-14">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently asked questions</h2>
+            <div className="space-y-4">
+              {subjectFaqs.map(({ q, a }) => (
+                <div key={q} className="border border-gray-100 rounded-xl p-6">
+                  <h3 className="font-semibold text-gray-900 mb-2">{q}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* CTA */}
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
