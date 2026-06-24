@@ -67,7 +67,7 @@ Focus areas: completing sequences described in words, identifying the odd shape 
 The pattern or rule must be unambiguous — there must be exactly one valid completion or answer.`,
 }
 
-async function withOverloadRetry<T>(fn: () => Promise<T>, maxRetries = 3): Promise<T> {
+export async function withOverloadRetry<T>(fn: () => Promise<T>, maxRetries = 3): Promise<T> {
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
     try {
       return await fn()
