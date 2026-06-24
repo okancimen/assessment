@@ -31,8 +31,8 @@ export default async function AdminInternshipPage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/auth/login')
 
-  const { data: profile } = await supabase.from('profiles').select('is_admin').eq('id', user.id).single()
-  if (!profile?.is_admin) redirect('/dashboard')
+  const allowed = (process.env.ADMIN_EMAIL ?? '').split(',').map((e) => e.trim().toLowerCase())
+  if (!allowed.includes(user.email?.toLowerCase() ?? '')) redirect('/dashboard')
 
   const { data: profiles } = await supabase
     .from('internship_profiles')

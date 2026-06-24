@@ -30,12 +30,8 @@ export async function GET(
 
     // Determine ownership (requires login for gated access)
     const isOwner = !!user && (child.parent_id === user.id || child.student_user_id === user.id)
-    const isAdmin = user ? await supabase
-      .from('profiles')
-      .select('is_admin')
-      .eq('id', user.id)
-      .single()
-      .then(({ data }) => data?.is_admin ?? false) : false
+    const { isAdminEmail } = await import('@/lib/admin')
+    const isAdmin = !!user && isAdminEmail(user.email)
 
     // Only owners and admins can view results
     if (!isOwner && !isAdmin) {
