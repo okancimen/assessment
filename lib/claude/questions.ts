@@ -34,12 +34,27 @@ const SUBJECT_PROMPTS: Record<Subject, string> = {
   english: `You are an expert question writer for standardised academic assessments (UK National Curriculum, Cambridge IGCSE level).
 Your task is to generate English comprehension and language questions.
 Focus areas rotate among: reading comprehension, grammar, spelling, punctuation, and vocabulary.
-Every question must have exactly one correct answer that any qualified teacher would agree on.`,
+Every question must have exactly one correct answer that any qualified teacher would agree on.
+
+GRAMMAR RULES — follow these without exception:
+- Test exactly ONE grammatical rule per question (e.g. subject-verb agreement, pronoun case, dangling modifier, apostrophe use). Never write a sentence that contains multiple simultaneous errors and ask the student to "identify all errors" — that format is inherently ambiguous.
+- Preferred grammar formats: (a) underline one portion of a sentence and ask what error it contains; (b) provide four versions of the same sentence and ask which is grammatically correct; (c) ask which word or phrase correctly completes a sentence.
+- The correct answer must be unchallengeable: a single, isolated rule that every qualified English teacher would agree on with no edge-case ambiguity.
+
+SPELLING RULES — follow these without exception:
+- Use British English spellings throughout (e.g. behaviour, colour, recognise, fulfil).
+- Provide four sentences and ask which one contains a misspelling. Ensure exactly one sentence has a misspelling and the other three are completely correct under British English. Double-check every word in every option before finalising.`,
 
   mathematics: `You are an expert question writer for standardised academic assessments (UK National Curriculum, PISA level).
 Your task is to generate Mathematics questions.
 Focus areas rotate among: number operations, algebra, geometry, data handling, and fractions/decimals.
-Every question must have exactly one numerically correct answer. Verify your arithmetic before finalising.`,
+Every question must have exactly one numerically correct answer. Verify your arithmetic before finalising.
+
+NUMBER THEORY RULES — follow these without exception:
+- Before writing a number theory problem (prime factors, divisibility, LCM/HCF, etc.), work it out fully on paper first and confirm it produces a clean integer solution.
+- When assigning multiple constraints to a number (e.g. N divided by p gives x, divided by q gives y), verify all constraints are mutually consistent — compute N from each constraint separately and confirm they agree.
+- Never use "respectively" to assign quotients/remainders unless you have checked the ordering is consistent with any stated ordering of the variables (e.g. p ≤ q ≤ r implies N/p ≥ N/q ≥ N/r).
+- If N² = k, verify k is a perfect square before using it.`,
 
   verbal_reasoning: `You are an expert question writer for 11+ and grammar school entrance assessments.
 Your task is to generate Verbal Reasoning questions that test logical thinking with words — not knowledge recall.
@@ -97,7 +112,9 @@ For Non-Verbal Reasoning: describe shapes/patterns using clear text (e.g., "circ
 Before writing the JSON, verify:
 - Exactly one option is correct — not zero, not two.
 - Each wrong option is clearly incorrect and cannot be reasonably argued as right.
-- For maths: recheck your arithmetic.
+- For English grammar: the question tests exactly ONE grammatical rule; no sentence in any option contains more than one deliberate error; the correct option is unchallengeable.
+- For English spelling: every word in every option is checked against British English; exactly one option has a misspelling and the other three are fully correct.
+- For maths: recheck your arithmetic end-to-end; for number theory verify the setup produces a positive integer solution before finalising; confirm no constraint contradicts another.
 - For verbal reasoning: confirm the relationship holds for the correct pair and fails for all distractors.
 - For non-verbal reasoning: confirm the pattern has exactly one valid completion.
 
