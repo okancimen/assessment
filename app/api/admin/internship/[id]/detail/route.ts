@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 
 export async function GET(
   _request: NextRequest,
@@ -15,7 +16,8 @@ export async function GET(
     if (!isAdminEmail(user.email)) return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
 
     // id is the assessment_id
-    const { data: internProfile } = await supabase
+    const db = createAdminClient()
+    const { data: internProfile } = await db
       .from('internship_profiles')
       .select('*, assessments(id, status), children(name), cohorts(id, name)')
       .eq('assessment_id', id)
@@ -23,13 +25,13 @@ export async function GET(
 
     if (!internProfile) return NextResponse.json({ error: 'Not found' }, { status: 404 })
 
-    const { data: result } = await supabase
+    const { data: result } = await db
       .from('results')
       .select('subject_scores, ai_summary')
       .eq('assessment_id', id)
       .maybeSingle()
 
-    const { data: allCohorts } = await supabase.from('cohorts').select('id, name').order('start_date', { ascending: false })
+    const { data: allCohorts } = await db.from('cohorts').select('id, name').order('start_date', { ascending: false })
 
     const scores = result?.subject_scores as Record<string, unknown> | null
 

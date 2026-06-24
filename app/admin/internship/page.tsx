@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import Navbar from '@/components/dashboard/Navbar'
@@ -34,7 +35,9 @@ export default async function AdminInternshipPage() {
   const allowed = (process.env.ADMIN_EMAIL ?? '').split(',').map((e) => e.trim().toLowerCase())
   if (!allowed.includes(user.email?.toLowerCase() ?? '')) redirect('/dashboard')
 
-  const { data: profiles } = await supabase
+  const db = createAdminClient()
+
+  const { data: profiles } = await db
     .from('internship_profiles')
     .select('*, assessments(id, status, created_at), children(name), cohorts(name)')
     .order('created_at', { ascending: false })
@@ -42,7 +45,7 @@ export default async function AdminInternshipPage() {
   const assessmentIds = (profiles ?? []).map((p) => (p.assessments as { id: string } | null)?.id).filter(Boolean) as string[]
 
   const { data: results } = assessmentIds.length > 0
-    ? await supabase.from('results').select('assessment_id, subject_scores, overall_score').in('assessment_id', assessmentIds)
+    ? await db.from('results').select('assessment_id, subject_scores, overall_score').in('assessment_id', assessmentIds)
     : { data: [] }
 
   const resultsMap: Record<string, { subject_scores: Record<string, number>; overall_score: number }> = {}

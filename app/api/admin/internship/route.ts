@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { isAdminEmail } from '@/lib/admin'
 
 async function requireAdmin(supabase: Awaited<ReturnType<typeof createClient>>) {
@@ -14,7 +15,8 @@ export async function GET(_request: NextRequest) {
     const admin = await requireAdmin(supabase)
     if (!admin) return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
 
-    const { data, error } = await supabase
+    const db = createAdminClient()
+    const { data, error } = await db
       .from('internship_profiles')
       .select(`
         *,
@@ -28,7 +30,7 @@ export async function GET(_request: NextRequest) {
 
     // Enrich with results (scores)
     const assessmentIds = (data ?? []).map((p) => (p.assessments as { id: string })?.id).filter(Boolean)
-    const { data: results } = await supabase
+    const { data: results } = await db
       .from('results')
       .select('assessment_id, subject_scores, overall_score')
       .in('assessment_id', assessmentIds)
