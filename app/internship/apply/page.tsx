@@ -134,7 +134,7 @@ export default function InternshipApplyPage() {
       sessionStorage.removeItem('intern_dob')
       sessionStorage.removeItem('intern_name')
       sessionStorage.removeItem('intern_parent_email')
-      router.push(`/internship/assessment/${data.assessment_id}/question`)
+      router.push(`/assessment/${data.assessment_id}/question`)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Submission failed')
     } finally {
