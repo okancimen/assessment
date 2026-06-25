@@ -95,20 +95,19 @@ export default async function AdminPage({
 
   // Fetch all data in parallel
   const [
-    profilesRange,
+    allProfiles,
     childrenRange,
     assessmentsRange,
     resultsRange,
     funnelChildrenRows,
     funnelStartedRows,
     funnelCompletedRows,
-    allProfiles,
     allChildren,
     allResults,
     allAssessmentTypes,
   ] = await Promise.all([
-    // Daily breakdown rows (for charts)
-    db.from('profiles').select('created_at').gte('created_at', fromISO).lte('created_at', toISO),
+    // All users from auth.users (used for both stats and table)
+    db.auth.admin.listUsers({ perPage: 1000 }),
     db.from('children').select('created_at').gte('created_at', fromISO).lte('created_at', toISO),
     db.from('assessments').select('created_at').gte('created_at', fromISO).lte('created_at', toISO),
     db.from('results').select('created_at').gte('created_at', fromISO).lte('created_at', toISO),
@@ -116,22 +115,24 @@ export default async function AdminPage({
     db.from('children').select('parent_id').gte('created_at', fromISO).lte('created_at', toISO),
     db.from('assessments').select('children(parent_id)').gte('created_at', fromISO).lte('created_at', toISO),
     db.from('results').select('children(parent_id)').gte('created_at', fromISO).lte('created_at', toISO),
-    // Registered users table (all-time, from auth.users directly)
-    db.auth.admin.listUsers({ perPage: 1000 }),
     db.from('children').select('parent_id, student_user_id'),
     db.from('results').select('children(parent_id)'),
     // Assessment types per parent
     db.from('assessments').select('assessment_type, children(parent_id, student_user_id)'),
   ])
 
+  // Filter auth users by date range for stats
+  const allAuthUsers = (allProfiles as Awaited<ReturnType<typeof db.auth.admin.listUsers>>).data?.users ?? []
+  const usersInRange = allAuthUsers.filter((u) => u.created_at >= fromISO && u.created_at <= toISO)
+
   // Growth totals
-  const newUsers      = profilesRange.data?.length ?? 0
+  const newUsers      = usersInRange.length
   const newChildren   = childrenRange.data?.length ?? 0
   const newStarted    = assessmentsRange.data?.length ?? 0
   const newCompleted  = resultsRange.data?.length ?? 0
 
-  // Daily chart data
-  const usersByDay      = groupByDay(profilesRange.data    ?? [])
+  // Daily chart data (users from auth.users)
+  const usersByDay      = groupByDay(usersInRange.map((u) => ({ created_at: u.created_at })))
   const startedByDay    = groupByDay(assessmentsRange.data ?? [])
   const completedByDay  = groupByDay(resultsRange.data     ?? [])
   const dailyData = buildDailyData(from, to, usersByDay, startedByDay, completedByDay)
@@ -184,8 +185,7 @@ export default async function AdminPage({
     }
   }
 
-  const authUsers = (allProfiles as Awaited<ReturnType<typeof db.auth.admin.listUsers>>).data?.users ?? []
-  const registeredUsers = authUsers
+  const registeredUsers = allAuthUsers
     .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
     .map((u) => ({
       id:           u.id,
