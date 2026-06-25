@@ -18,6 +18,7 @@ export async function POST(request: NextRequest) {
       personal_statement,
       cv_url,
       track_preferences,
+      cohort_id,
       parent_email,
       gdpr_consent,
     } = await request.json()
@@ -158,6 +159,7 @@ export async function POST(request: NextRequest) {
       personal_statement: personal_statement ?? null,
       cv_url: cv_url ?? null,
       track_preferences,
+      cohort_id: cohort_id ?? null,
     })
 
     if (profileError) return NextResponse.json({ error: profileError.message }, { status: 500 })

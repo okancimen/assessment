@@ -7,6 +7,8 @@ import { INTERNSHIP_TRACKS, INTERNSHIP_TRACK_LABELS, InternshipTrack } from '@/t
 
 const YEAR_GROUPS = ['Year 9', 'Year 10', 'Year 11', 'Year 12', 'Year 13 / Sixth Form']
 
+interface Cohort { id: string; name: string; start_date: string }
+
 function wordCount(text: string): number {
   return text.trim() === '' ? 0 : text.trim().split(/\s+/).length
 }
@@ -25,6 +27,8 @@ export default function InternshipApplyPage() {
   const [cvFile, setCvFile] = useState<File | null>(null)
   const [cvUrl, setCvUrl] = useState('')
   const [cvUploading, setCvUploading] = useState(false)
+  const [cohortId, setCohortId] = useState('')
+  const [cohorts, setCohorts] = useState<Cohort[]>([])
   const [gdprConsent, setGdprConsent] = useState(false)
   const [error, setError] = useState('')
   const [submitting, setSubmitting] = useState(false)
@@ -33,6 +37,14 @@ export default function InternshipApplyPage() {
     ? Math.floor((Date.now() - new Date(dob).getTime()) / (365.25 * 24 * 60 * 60 * 1000))
     : null
   const needsConsent = age !== null && age < 16
+
+  // Load available cohorts
+  useEffect(() => {
+    fetch('/api/internship/cohorts')
+      .then((r) => r.json())
+      .then(({ cohorts }) => { if (Array.isArray(cohorts)) setCohorts(cohorts) })
+      .catch(() => {})
+  }, [])
 
   // Restore from sessionStorage set during registration
   useEffect(() => {
@@ -124,6 +136,7 @@ export default function InternshipApplyPage() {
           personal_statement: statement || null,
           cv_url: cvUrl || null,
           track_preferences: trackPrefs,
+          cohort_id: cohortId || null,
           parent_email: parentEmail || null,
           gdpr_consent: gdprConsent,
         }),
@@ -194,6 +207,26 @@ export default function InternshipApplyPage() {
               {YEAR_GROUPS.map((y) => <option key={y} value={y}>{y}</option>)}
             </select>
           </div>
+
+          {/* Cohort */}
+          {cohorts.length > 0 && (
+            <div>
+              <label className="block text-sm font-medium text-[#1d1d1f] mb-1.5">
+                Cohort <span className="text-[#6e6e73] font-normal">(optional)</span>
+              </label>
+              <select
+                value={cohortId} onChange={(e) => setCohortId(e.target.value)}
+                className="w-full border border-[#d2d2d7] rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent bg-white"
+              >
+                <option value="">No preference</option>
+                {cohorts.map((c) => (
+                  <option key={c.id} value={c.id}>
+                    {c.name} — {new Date(c.start_date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
 
           {/* Track preferences */}
           <div>
