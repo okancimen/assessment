@@ -12,6 +12,7 @@ export default function PublicNav() {
             <Link href="/grammar-schools" className="hover:text-[#4F46E5] transition-colors">Grammar Schools</Link>
             <Link href="/subjects" className="hover:text-[#4F46E5] transition-colors">Subjects</Link>
             <Link href="/blog" className="hover:text-[#4F46E5] transition-colors">Blog</Link>
+            <Link href="/internship" className="hover:text-[#4F46E5] transition-colors">Internship</Link>
           </div>
         </div>
         <Link

@@ -402,6 +402,40 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ── Internship ───────────────────────────────────────────────────── */}
+      <section className="py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="bg-gradient-to-br from-[#eef2ff] to-[#f5f5f7] rounded-3xl p-10 md:p-14 flex flex-col md:flex-row items-center gap-10">
+            <div className="flex-1 space-y-5">
+              <span className="inline-block text-xs font-semibold text-[#4F46E5] uppercase tracking-widest bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1 rounded-full">New — Internship Programme</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#1d1d1f] tracking-tight leading-tight">
+                For students aged 14–18:<br />find your readiness for work.
+              </h2>
+              <p className="text-[#6e6e73] text-sm leading-relaxed max-w-md">
+                A 34-question adaptive assessment across four phases — aptitude, domain knowledge, workplace skills, and interest profile. Get a personalised readiness report and AI-generated career insights.
+              </p>
+              <div className="flex flex-wrap gap-3 pt-1">
+                {['General Aptitude', 'Domain Knowledge', 'Workplace Skills', 'Interest Profile'].map((phase) => (
+                  <span key={phase} className="text-xs font-medium text-[#4F46E5] bg-white border border-[#c7d2fe] px-3 py-1 rounded-full">{phase}</span>
+                ))}
+              </div>
+            </div>
+            <div className="flex-shrink-0 text-center space-y-4">
+              <Link
+                href="/internship"
+                className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-8 py-3.5 rounded-full font-semibold text-sm hover:bg-[#4338CA] transition-colors"
+              >
+                Learn about the programme
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+              <p className="text-xs text-[#6e6e73]">Free · No account needed to read</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
       <section className="py-24 bg-[#f5f5f7]">
         <div className="max-w-3xl mx-auto px-6">
