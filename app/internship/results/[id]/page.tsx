@@ -139,7 +139,6 @@ export default function InternshipResultsPage() {
           <h1 className="text-2xl font-bold text-[#1d1d1f] tracking-tight">
             {data.is_owner ? data.child_name : data.child_initials}
           </h1>
-          <TierBadge tier={data.tier} />
         </div>
 
         {/* AI Summary */}
