@@ -201,22 +201,31 @@ Respond with ONLY valid JSON, no markdown fences, no extra text:
   "topic": "short_topic_slug"
 }`
 
-  const message = await withOverloadRetry(() =>
-    client.messages.create({
-      model: 'claude-sonnet-4-6',
-      max_tokens: 1024,
-      system: systemPrompt,
-      messages: [{ role: 'user', content: prompt }],
-    })
-  )
-
-  const content = message.content[0]
-  if (content.type !== 'text') throw new Error('Unexpected response type')
-
-  let jsonText = content.text.trim()
-  if (jsonText.startsWith('```')) jsonText = jsonText.replace(/^```(?:json)?\s*/, '').replace(/\s*```$/, '')
-  const match = jsonText.match(/\{[\s\S]*\}/)
-  if (!match) throw new Error('No JSON in internship question response')
+  let message
+  let match: RegExpMatchArray | null = null
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      message = await withOverloadRetry(() =>
+        client.messages.create({
+          model: 'claude-sonnet-4-6',
+          max_tokens: 1024,
+          system: systemPrompt,
+          messages: [{ role: 'user', content: prompt }],
+        })
+      )
+      const content = message.content[0]
+      if (content.type !== 'text') throw new Error('Unexpected response type')
+      let jsonText = content.text.trim()
+      if (jsonText.startsWith('```')) jsonText = jsonText.replace(/^```(?:json)?\s*/, '').replace(/\s*```$/, '')
+      match = jsonText.match(/\{[\s\S]*\}/)
+      if (!match) throw new Error('No JSON in internship question response')
+      break
+    } catch (err) {
+      if (attempt === 2) throw err
+      await new Promise((r) => setTimeout(r, 500 * (attempt + 1)))
+    }
+  }
+  if (!match) throw new Error('Failed to generate question after retries')
 
   const parsed = JSON.parse(jsonrepair(match[0]))
 
@@ -224,13 +233,28 @@ Respond with ONLY valid JSON, no markdown fences, no extra text:
   const texts = (parsed.options as QuestionOption[]).map((o) => o.text.toLowerCase().trim())
   if (new Set(texts).size < parsed.options.length) throw new Error('Duplicate option texts')
 
-  // Shuffle options (not for interest_profile — handled separately)
-  const correctText = (parsed.options as QuestionOption[]).find((o: QuestionOption) => o.id === parsed.correct_answer)?.text?.trim() ?? ''
-  const shuffled = [...(parsed.options as QuestionOption[])].sort(() => Math.random() - 0.5)
+  // Shuffle options using reference equality to avoid text-encoding mismatches
+  const opts = parsed.options as QuestionOption[]
+  const correctOpt = opts.find((o: QuestionOption) => o.id === parsed.correct_answer)
   const ids = ['A', 'B', 'C', 'D']
-  const reindexed = shuffled.map((opt, i) => ({ id: ids[i], text: opt.text }))
-  const newCorrectId = reindexed.find((o) => o.text.trim() === correctText)?.id
-  if (!newCorrectId) throw new Error('shuffleOptions: correct option not found after shuffle')
+  let reindexed: QuestionOption[]
+  let newCorrectId: string
+  if (!correctOpt) {
+    reindexed = opts.map((o, i) => ({ id: ids[i], text: o.text }))
+    newCorrectId = parsed.correct_answer
+  } else {
+    const shuffled = [...opts].sort(() => Math.random() - 0.5)
+    newCorrectId = ''
+    reindexed = shuffled.map((opt, i) => {
+      const id = ids[i]
+      if (opt === correctOpt) newCorrectId = id
+      return { id, text: opt.text }
+    })
+    if (!newCorrectId) {
+      reindexed = opts.map((o, i) => ({ id: ids[i], text: o.text }))
+      newCorrectId = ids[opts.indexOf(correctOpt)]
+    }
+  }
 
   return {
     question_text: parsed.question_text,

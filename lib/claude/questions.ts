@@ -21,12 +21,25 @@ function getDifficultyDescriptor(level: number): string {
 }
 
 function shuffleOptions(options: QuestionOption[], correctId: string): { options: QuestionOption[]; correct_answer: string } {
-  const correctText = options.find((o) => o.id === correctId)?.text?.trim() ?? ''
+  const correctOpt = options.find((o) => o.id === correctId)
+  if (!correctOpt) {
+    // correctId not found — return as-is with sequential IDs
+    const ids = ['A', 'B', 'C', 'D']
+    return { options: options.map((o, i) => ({ id: ids[i], text: o.text })), correct_answer: correctId }
+  }
   const shuffled = [...options].sort(() => Math.random() - 0.5)
   const ids = ['A', 'B', 'C', 'D']
-  const reindexed = shuffled.map((opt, i) => ({ id: ids[i], text: opt.text }))
-  const newCorrectId = reindexed.find((o) => o.text.trim() === correctText)?.id
-  if (!newCorrectId) throw new Error('shuffleOptions: correct option not found after shuffle')
+  let newCorrectId = ''
+  const reindexed = shuffled.map((opt, i) => {
+    const id = ids[i]
+    if (opt === correctOpt) newCorrectId = id  // reference equality — immune to text encoding issues
+    return { id, text: opt.text }
+  })
+  if (!newCorrectId) {
+    // Fallback: skip shuffle, assign by original index
+    const fallback = options.map((o, i) => ({ id: ids[i], text: o.text }))
+    return { options: fallback, correct_answer: ids[options.indexOf(correctOpt)] }
+  }
   return { options: reindexed, correct_answer: newCorrectId }
 }
 
@@ -193,16 +206,25 @@ export async function generateQuestion(
     ? availableTopics[Math.floor(Math.random() * availableTopics.length)]
     : topics[Math.floor(Math.random() * topics.length)]
 
-  // Retry up to 3 times to handle duplicate options or duplicate question texts
-  for (let attempt = 0; attempt < 3; attempt++) {
-    const result = await attemptGenerate(subject, age, difficulty, topic, usedQuestionTexts)
-
-    const isDuplicate = usedQuestionTexts.some(
-      (t) => t.toLowerCase().trim() === result.question_text.toLowerCase().trim()
-    )
-    if (!isDuplicate) return result
+  // Retry up to 4 times — covers parse errors, shuffle errors, and duplicate questions
+  let lastError: unknown
+  for (let attempt = 0; attempt < 4; attempt++) {
+    try {
+      const result = await attemptGenerate(subject, age, difficulty, topic, usedQuestionTexts)
+      const isDuplicate = usedQuestionTexts.some(
+        (t) => t.toLowerCase().trim() === result.question_text.toLowerCase().trim()
+      )
+      if (!isDuplicate) return result
+    } catch (err) {
+      lastError = err
+      // Short pause before retry to avoid hammering the API
+      await new Promise((r) => setTimeout(r, 500 * (attempt + 1)))
+    }
   }
 
-  // Fall back to final attempt without the avoid list if all retries matched (very unlikely)
+  // Final attempt without the used-texts constraint
+  if (lastError) {
+    return attemptGenerate(subject, age, difficulty, topic, [])
+  }
   return attemptGenerate(subject, age, difficulty, topic, [])
 }
