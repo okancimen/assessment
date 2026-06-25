@@ -105,6 +105,27 @@ export default async function DashboardPage() {
   const hasChildren = children && children.length > 0
   const hasAssessments = assessments && assessments.length > 0
 
+  // Self-registered student: find their own children record
+  const { data: selfChild } = await supabase
+    .from('children')
+    .select('*')
+    .eq('student_user_id', user.id)
+    .maybeSingle()
+
+  const { data: selfInternship } = selfChild
+    ? await supabase
+        .from('assessments')
+        .select('id, status, results(subject_scores)')
+        .eq('child_id', selfChild.id)
+        .eq('assessment_type', 'internship')
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .maybeSingle()
+    : { data: null }
+
+  const selfInternshipScores = (selfInternship?.results as { subject_scores?: Record<string, number> } | null)?.subject_scores
+  const selfInternshipOverall = selfInternshipScores?.overall
+
   // Internship: only for children aged 14+
   const eligibleChildren = (children || []).filter((c: Child) => getAge(c.date_of_birth) >= 14)
   const eligibleIds = eligibleChildren.map((c: Child) => c.id)
@@ -284,6 +305,46 @@ export default async function DashboardPage() {
             )}
           </section>
         )}
+        {/* Self-registered student: own internship status */}
+        {selfChild && (
+          <section>
+            <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">Your internship</h2>
+            <div className="bg-white rounded-3xl border border-[#d2d2d7] p-5 flex items-center justify-between gap-4">
+              <div>
+                <p className="font-semibold text-[#1d1d1f]">{selfChild.name}</p>
+                {!selfInternship ? (
+                  <p className="text-xs text-[#6e6e73] mt-0.5">Not applied yet</p>
+                ) : selfInternship.status === 'completed' && selfInternshipOverall != null ? (
+                  <p className={`text-sm font-semibold mt-0.5 ${internshipTier(selfInternshipOverall).color}`}>
+                    {internshipTier(selfInternshipOverall).label}
+                  </p>
+                ) : selfInternship.status === 'in_progress' ? (
+                  <p className="text-xs text-amber-600 font-medium mt-0.5">Assessment in progress</p>
+                ) : (
+                  <p className="text-xs text-[#6e6e73] mt-0.5">Assessment pending</p>
+                )}
+              </div>
+              {!selfInternship ? (
+                <Link href="/internship/apply" className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors flex-shrink-0">
+                  Apply now
+                </Link>
+              ) : selfInternship.status === 'completed' ? (
+                <Link href={`/internship/results/${selfInternship.id}`} className="inline-flex items-center justify-center border border-[#4F46E5] text-[#4F46E5] text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#eef2ff] transition-colors flex-shrink-0">
+                  View report
+                </Link>
+              ) : selfInternship.status === 'in_progress' ? (
+                <Link href={`/internship/assessment/${selfInternship.id}/question`} className="inline-flex items-center justify-center bg-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amber-600 transition-colors flex-shrink-0">
+                  Continue
+                </Link>
+              ) : (
+                <Link href={`/internship/assessment/${selfInternship.id}/question`} className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors flex-shrink-0">
+                  Start assessment
+                </Link>
+              )}
+            </div>
+          </section>
+        )}
+
         {/* Internship Programme — for children aged 14+ */}
         {eligibleChildren.length > 0 && (
           <section>
