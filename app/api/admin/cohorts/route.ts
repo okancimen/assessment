@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { isAdminEmail } from '@/lib/admin'
 
 async function requireAdmin(supabase: Awaited<ReturnType<typeof createClient>>) {
@@ -14,7 +15,7 @@ export async function GET(_request: NextRequest) {
     const admin = await requireAdmin(supabase)
     if (!admin) return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
 
-    const { data, error } = await supabase
+    const { data, error } = await createAdminClient()
       .from('cohorts')
       .select('*, internship_profiles(id)')
       .order('start_date', { ascending: false })
@@ -43,7 +44,7 @@ export async function POST(request: NextRequest) {
     const { name, start_date, description } = await request.json()
     if (!name || !start_date) return NextResponse.json({ error: 'name and start_date are required' }, { status: 400 })
 
-    const { data, error } = await supabase
+    const { data, error } = await createAdminClient()
       .from('cohorts')
       .insert({ name, start_date, description: description ?? null, created_by: admin.id })
       .select()

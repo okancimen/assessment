@@ -69,23 +69,27 @@ export default function AdminCandidateDetailPage() {
 
   async function assignTrack() {
     setSaving('track')
-    await fetch(`/api/admin/internship/${id}/assign-track`, {
+    const res = await fetch(`/api/admin/internship/${id}/assign-track`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ track: selectedTrack || null }),
     })
+    const json = await res.json()
     setSaving('')
+    if (!res.ok) { alert(json.error ?? 'Save failed'); return }
     if (data) setData({ ...data, admin_assigned_track: selectedTrack || null })
   }
 
   async function assignCohort() {
     setSaving('cohort')
-    await fetch(`/api/admin/internship/${id}/assign-cohort`, {
+    const res = await fetch(`/api/admin/internship/${id}/assign-cohort`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ cohort_id: selectedCohort || null }),
     })
+    const json = await res.json()
     setSaving('')
+    if (!res.ok) { alert(json.error ?? 'Save failed'); return }
     if (data) setData({ ...data, cohort_id: selectedCohort || null })
   }
 

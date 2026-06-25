@@ -10,6 +10,12 @@ import { getScoreLabel, getScoreColor } from '@/lib/assessment/adaptive'
 import { Suspense } from 'react'
 import ToastFromUrl from '@/components/ui/ToastFromUrl'
 
+function internshipTier(overall: number): { label: string; color: string } {
+  if (overall >= 70) return { label: 'Internship Ready', color: 'text-emerald-600' }
+  if (overall >= 45) return { label: 'Developing', color: 'text-amber-600' }
+  return { label: 'Needs Support', color: 'text-red-600' }
+}
+
 interface AssessmentWithResult extends Omit<Assessment, 'children'> {
   children: { name: string }
   results: { standardized_score: number } | null
@@ -97,6 +103,27 @@ export default async function DashboardPage() {
 
   const hasChildren = children && children.length > 0
   const hasAssessments = assessments && assessments.length > 0
+
+  // Internship: only for children aged 14+
+  const eligibleChildren = (children || []).filter((c: Child) => getAge(c.date_of_birth) >= 14)
+  const eligibleIds = eligibleChildren.map((c: Child) => c.id)
+
+  const { data: internshipAssessments } = eligibleIds.length > 0
+    ? await supabase
+        .from('assessments')
+        .select('id, status, child_id, results(subject_scores)')
+        .in('child_id', eligibleIds)
+        .eq('assessment_type', 'internship')
+        .order('created_at', { ascending: false })
+    : { data: [] }
+
+  const internshipMap: Record<string, { id: string; status: string; overall?: number }> = {}
+  for (const a of (internshipAssessments || [])) {
+    if (!internshipMap[a.child_id]) {
+      const scores = (a.results as { subject_scores?: Record<string, number> } | null)?.subject_scores
+      internshipMap[a.child_id] = { id: a.id, status: a.status, overall: scores?.overall }
+    }
+  }
 
   return (
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
@@ -254,6 +281,85 @@ export default async function DashboardPage() {
                 <p className="text-xs text-[#6e6e73]">Start an assessment from any child card above.</p>
               </div>
             )}
+          </section>
+        )}
+        {/* Internship Programme — for children aged 14+ */}
+        {eligibleChildren.length > 0 && (
+          <section>
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <h2 className="text-base font-semibold text-[#1d1d1f]">Internship Programme</h2>
+                <p className="text-xs text-[#6e6e73] mt-0.5">For children aged 14 and above</p>
+              </div>
+              <Link href="/internship" className="text-sm text-[#4F46E5] font-semibold hover:underline">
+                Learn more →
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {eligibleChildren.map((child: Child) => {
+                const ia = internshipMap[child.id]
+                const avatar = getAvatarColor(child.name)
+                return (
+                  <div key={child.id} className="bg-white rounded-3xl border border-[#d2d2d7] p-5 flex flex-col gap-3">
+                    <div className="flex items-center gap-3">
+                      <div
+                        className="w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0"
+                        style={{ background: avatar.bg, color: avatar.text }}
+                      >
+                        {child.name[0].toUpperCase()}
+                      </div>
+                      <div className="min-w-0">
+                        <p className="font-semibold text-[#1d1d1f] text-sm truncate">{child.name}</p>
+                        <p className="text-xs text-[#6e6e73]">Age {getAge(child.date_of_birth)}</p>
+                      </div>
+                    </div>
+                    {!ia ? (
+                      <>
+                        <p className="text-xs text-[#6e6e73]">Not applied yet</p>
+                        <Link
+                          href="/internship/apply"
+                          className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors"
+                        >
+                          Apply now
+                        </Link>
+                      </>
+                    ) : ia.status === 'completed' && ia.overall != null ? (
+                      <>
+                        <p className={`text-sm font-semibold ${internshipTier(ia.overall).color}`}>
+                          {internshipTier(ia.overall).label}
+                        </p>
+                        <Link
+                          href={`/internship/results/${ia.id}`}
+                          className="inline-flex items-center justify-center border border-[#4F46E5] text-[#4F46E5] text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#eef2ff] transition-colors"
+                        >
+                          View report
+                        </Link>
+                      </>
+                    ) : ia.status === 'in_progress' ? (
+                      <>
+                        <p className="text-xs text-amber-600 font-medium">Assessment in progress</p>
+                        <Link
+                          href={`/internship/assessment/${ia.id}/question`}
+                          className="inline-flex items-center justify-center bg-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amber-600 transition-colors"
+                        >
+                          Continue
+                        </Link>
+                      </>
+                    ) : (
+                      <>
+                        <p className="text-xs text-[#6e6e73]">Assessment pending</p>
+                        <Link
+                          href={`/internship/assessment/${ia.id}/question`}
+                          className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors"
+                        >
+                          Start assessment
+                        </Link>
+                      </>
+                    )}
+                  </div>
+                )
+              })}
+            </div>
           </section>
         )}
       </main>

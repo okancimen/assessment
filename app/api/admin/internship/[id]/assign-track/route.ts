@@ -16,11 +16,12 @@ export async function POST(
     if (!isAdminEmail(user.email)) return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
 
     const { track } = await request.json()
-    if (!INTERNSHIP_TRACKS.includes(track as InternshipTrack)) {
+    if (track !== null && !INTERNSHIP_TRACKS.includes(track as InternshipTrack)) {
       return NextResponse.json({ error: 'Invalid track' }, { status: 400 })
     }
 
-    const { error } = await supabase
+    const { createAdminClient } = await import('@/lib/supabase/admin')
+    const { error } = await createAdminClient()
       .from('internship_profiles')
       .update({ admin_assigned_track: track })
       .eq('assessment_id', id)

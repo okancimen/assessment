@@ -15,7 +15,10 @@ export async function POST(
     const { isAdminEmail } = await import('@/lib/admin')
     if (!isAdminEmail(user.email)) return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
 
-    const { data: internProfile } = await supabase
+    const { createAdminClient } = await import('@/lib/supabase/admin')
+    const db = createAdminClient()
+
+    const { data: internProfile } = await db
       .from('internship_profiles')
       .select('assessment_id, track_preferences, admin_assigned_track')
       .eq('assessment_id', id)
@@ -23,17 +26,17 @@ export async function POST(
 
     if (!internProfile) return NextResponse.json({ error: 'Not found' }, { status: 404 })
 
-    await supabase.from('assessment_sessions').delete().eq('assessment_id', id)
-    await supabase.from('results').delete().eq('assessment_id', id)
-    await supabase.from('assessment_questions').delete().eq('assessment_id', id)
-    await supabase.from('assessments')
+    await db.from('assessment_sessions').delete().eq('assessment_id', id)
+    await db.from('results').delete().eq('assessment_id', id)
+    await db.from('assessment_questions').delete().eq('assessment_id', id)
+    await db.from('assessments')
       .update({ status: 'pending', completed_at: null, retake_unlocked: false })
       .eq('id', id)
 
     const track = (internProfile.admin_assigned_track ?? internProfile.track_preferences?.[0]) as InternshipTrack
     const subjects = getInternshipSubjects(track)
 
-    await supabase.from('assessment_sessions').insert({
+    await db.from('assessment_sessions').insert({
       assessment_id: id,
       current_subject: subjects[0],
       subject_index: 0,

@@ -16,7 +16,8 @@ export async function POST(
 
     const { cohort_id } = await request.json()
 
-    const { error } = await supabase
+    const { createAdminClient } = await import('@/lib/supabase/admin')
+    const { error } = await createAdminClient()
       .from('internship_profiles')
       .update({ cohort_id: cohort_id ?? null })
       .eq('assessment_id', id)
