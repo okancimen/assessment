@@ -216,7 +216,7 @@ export default async function ChildPage({ params }: { params: Promise<{ id: stri
                         </td>
                         <td className="px-5 py-3 text-right">
                           {a.status === 'completed' && (
-                            <Link href={`/results/${a.id}`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
+                            <Link href={`/assessment/${a.id}/results`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
                               View results
                             </Link>
                           )}
