@@ -115,8 +115,8 @@ export default async function AdminPage({
     db.from('children').select('parent_id').gte('created_at', fromISO).lte('created_at', toISO),
     db.from('assessments').select('children(parent_id)').gte('created_at', fromISO).lte('created_at', toISO),
     db.from('results').select('children(parent_id)').gte('created_at', fromISO).lte('created_at', toISO),
-    // Registered users table (all-time, newest first)
-    db.from('profiles').select('id, email, full_name, created_at').order('created_at', { ascending: false }).limit(500),
+    // Registered users table (all-time, from auth.users directly)
+    db.auth.admin.listUsers({ perPage: 1000 }),
     db.from('children').select('parent_id'),
     db.from('results').select('children(parent_id)'),
   ])
@@ -165,14 +165,17 @@ export default async function AdminPage({
     const pid = ((r.children as unknown as { parent_id: string } | null)?.parent_id)
     if (pid) completedByParent[pid] = (completedByParent[pid] ?? 0) + 1
   }
-  const registeredUsers = (allProfiles.data ?? []).map((p) => ({
-    id:         p.id as string,
-    email:      p.email as string,
-    full_name:  p.full_name as string | null,
-    created_at: p.created_at as string,
-    children:   childrenByParent[p.id as string] ?? 0,
-    completed:  completedByParent[p.id as string] ?? 0,
-  }))
+  const authUsers = (allProfiles as Awaited<ReturnType<typeof db.auth.admin.listUsers>>).data?.users ?? []
+  const registeredUsers = authUsers
+    .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+    .map((u) => ({
+      id:         u.id,
+      email:      u.email ?? '',
+      full_name:  (u.user_metadata?.full_name as string | undefined) ?? null,
+      created_at: u.created_at,
+      children:   childrenByParent[u.id] ?? 0,
+      completed:  completedByParent[u.id] ?? 0,
+    }))
 
   const periodLabel = `${new Date(fromISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })} – ${new Date(toISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`
 
