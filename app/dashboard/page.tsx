@@ -9,6 +9,7 @@ import { Child, Assessment } from '@/types'
 import { getScoreLabel, getScoreColor } from '@/lib/assessment/adaptive'
 import { Suspense } from 'react'
 import ToastFromUrl from '@/components/ui/ToastFromUrl'
+import InviteInternshipButton from '@/components/dashboard/InviteInternshipButton'
 
 function internshipTier(overall: number): { label: string; color: string } {
   if (overall >= 70) return { label: 'Internship Ready', color: 'text-emerald-600' }
@@ -286,14 +287,17 @@ export default async function DashboardPage() {
         {/* Internship Programme — for children aged 14+ */}
         {eligibleChildren.length > 0 && (
           <section>
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex items-start justify-between mb-4 gap-4">
               <div>
                 <h2 className="text-base font-semibold text-[#1d1d1f]">Internship Programme</h2>
                 <p className="text-xs text-[#6e6e73] mt-0.5">For children aged 14 and above</p>
               </div>
-              <Link href="/internship" className="text-sm text-[#4F46E5] font-semibold hover:underline">
-                Learn more →
-              </Link>
+              <div className="flex items-center gap-3 flex-shrink-0">
+                <InviteInternshipButton />
+                <Link href="/internship" className="text-sm text-[#4F46E5] font-semibold hover:underline whitespace-nowrap">
+                  Learn more →
+                </Link>
+              </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {eligibleChildren.map((child: Child) => {
