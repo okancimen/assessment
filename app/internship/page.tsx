@@ -63,6 +63,38 @@ export default function InternshipLandingPage() {
           </div>
         </section>
 
+        {/* Insights */}
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-12">
+          <h2 className="text-xl font-bold text-[#1d1d1f] mb-2 tracking-tight">Why it matters</h2>
+          <p className="text-sm text-[#6e6e73] mb-5">Evidence from longitudinal research on early work experience.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-5">
+            {[
+              { stat: '5×', desc: 'less likely to be NEET at 19 for students with 4+ employer encounters before age 16', source: 'Education and Employers, 2018' },
+              { stat: '73%', desc: 'of UK graduate recruiters rate prior work experience as the top factor at interview', source: 'Prospects, 2022' },
+              { stat: '70%', desc: 'higher rate of receiving a job offer before graduation for students with internship experience', source: 'NACE, 2020' },
+            ].map(({ stat, desc, source }) => (
+              <div key={stat} className="bg-white rounded-3xl border border-[#d2d2d7] p-6 space-y-2">
+                <div className="text-3xl font-bold text-[#4F46E5]">{stat}</div>
+                <p className="text-sm text-[#1d1d1f] leading-snug">{desc}</p>
+                <p className="text-xs text-[#6e6e73]">{source}</p>
+              </div>
+            ))}
+          </div>
+          <div className="bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] px-6 py-5 flex items-start gap-4">
+            <svg className="w-5 h-5 text-[#4F46E5] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+            <div>
+              <p className="text-sm text-[#1d1d1f] leading-relaxed">
+                Russell Group universities explicitly cite work experience in admissions guidance for competitive courses. For medicine, law, and technology programmes it is treated as a near-requirement — not a nice-to-have.
+              </p>
+              <Link href="/blog/high-school-internship-benefits-university" className="text-xs font-semibold text-[#4F46E5] hover:underline mt-2 inline-block">
+                Read the full research breakdown →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Assessment phases */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
           <h2 className="text-xl font-bold text-[#1d1d1f] mb-5 tracking-tight">What to expect</h2>
