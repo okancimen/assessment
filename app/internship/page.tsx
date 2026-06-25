@@ -84,9 +84,8 @@ export default function InternshipLandingPage() {
                 </div>
               </div>
             ))}
-            <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-6 py-3 flex items-center justify-between">
+            <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-6 py-3">
               <span className="text-xs text-[#6e6e73]">Total: 34 questions · ~35 minutes · Fully resumable</span>
-              <span className="text-xs text-[#6e6e73]">2 min per question</span>
             </div>
           </div>
         </section>
