@@ -32,6 +32,29 @@ function TierBadge({ tier }: { tier: ReadinessTier }) {
   )
 }
 
+function renderBold(text: string) {
+  const parts = text.split(/\*\*(.+?)\*\*/g)
+  return parts.map((part, i) =>
+    i % 2 === 1 ? <strong key={i} className="font-semibold text-[#1d1d1f]">{part}</strong> : part
+  )
+}
+
+function AISummary({ text }: { text: string }) {
+  const paragraphs = text.split(/\n\n+/).filter(Boolean)
+  return (
+    <div className="space-y-3">
+      {paragraphs.map((para, i) => {
+        const isHeading = para.startsWith('**') && para.endsWith('**')
+        return (
+          <p key={i} className={`leading-relaxed ${isHeading ? 'text-base font-semibold text-[#1d1d1f]' : 'text-sm text-[#1d1d1f]'}`}>
+            {renderBold(para)}
+          </p>
+        )
+      })}
+    </div>
+  )
+}
+
 function PhaseCard({ title, bullets }: { title: string; bullets: string[] }) {
   return (
     <div className="bg-white rounded-2xl border border-[#d2d2d7] p-5">
@@ -129,7 +152,7 @@ export default function InternshipResultsPage() {
             </div>
             <span className="text-xs font-semibold text-[#4F46E5] uppercase tracking-wider">AI-generated summary</span>
           </div>
-          <p className="text-[#1d1d1f] text-sm leading-relaxed">{data.ai_summary}</p>
+          <AISummary text={data.ai_summary} />
         </div>
 
         {/* Phase insight cards */}
