@@ -63,6 +63,15 @@ Your task is to generate Mathematics questions.
 Focus areas rotate among: number operations, algebra, geometry, data handling, and fractions/decimals.
 Every question must have exactly one numerically correct answer. Verify your arithmetic before finalising.
 
+OPERATOR SYMBOLS — use these exact Unicode characters, never HTML entities or LaTeX:
+- Multiplication: × (not * or \\times or &times;)
+- Division: ÷ (not / or \\div or &divide;)
+- Less than or equal: ≤ (not <= or \\leq)
+- Greater than or equal: ≥ (not >= or \\geq)
+- Not equal: ≠ (not != or \\neq)
+- Pi: π (not \\pi)
+- Square root: √ (not \\sqrt)
+
 NUMBER THEORY RULES — follow these without exception:
 - Before writing a number theory problem (prime factors, divisibility, LCM/HCF, etc.), work it out fully on paper first and confirm it produces a clean integer solution.
 - When assigning multiple constraints to a number (e.g. N divided by p gives x, divided by q gives y), verify all constraints are mutually consistent — compute N from each constraint separately and confirm they agree.
@@ -169,6 +178,21 @@ Respond with ONLY valid JSON, no markdown fences, no extra text:
   // jsonrepair handles all malformed JSON: unescaped quotes, newlines,
   // trailing commas, missing brackets, etc.
   const parsed = JSON.parse(jsonrepair(match[0]))
+
+  // Normalise math operator encodings so they always render correctly in JSX
+  const fixOperators = (s: string) => s
+    .replace(/&divide;/gi, '÷').replace(/&times;/gi, '×')
+    .replace(/&minus;/gi, '−').replace(/&plus;/gi, '+')
+    .replace(/&le;/gi, '≤').replace(/&ge;/gi, '≥')
+    .replace(/&ne;/gi, '≠').replace(/&pi;/gi, 'π')
+    .replace(/\\div\b/g, '÷').replace(/\\times\b/g, '×')
+    .replace(/\\leq\b/g, '≤').replace(/\\geq\b/g, '≥')
+    .replace(/\\neq\b/g, '≠').replace(/\\pi\b/g, 'π')
+    .replace(/\\sqrt\{([^}]+)\}/g, '√($1)')
+  if (typeof parsed.question_text === 'string') parsed.question_text = fixOperators(parsed.question_text)
+  if (Array.isArray(parsed.options)) {
+    parsed.options = parsed.options.map((o: QuestionOption) => ({ ...o, text: fixOperators(o.text) }))
+  }
 
   // Validate no duplicate option texts
   const optionTexts = (parsed.options as QuestionOption[]).map((o) => o.text.toLowerCase().trim())

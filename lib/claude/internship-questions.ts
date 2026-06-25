@@ -18,7 +18,16 @@ Every question must have exactly one defensible correct answer. Distractors must
 const APTITUDE_MATH_PROMPT = `You are an expert question writer for standardised aptitude assessments.
 Your task is to generate Numerical Reasoning questions for a 16-year-old internship applicant.
 Focus areas: percentages, ratios, basic algebra, number sequences, data interpretation from simple tables.
-Every question must have exactly one numerically correct answer. Verify your arithmetic before finalising.`
+Every question must have exactly one numerically correct answer. Verify your arithmetic before finalising.
+
+OPERATOR SYMBOLS — use these exact Unicode characters, never HTML entities or LaTeX:
+- Multiplication: × (not * or \\times or &times;)
+- Division: ÷ (not / or \\div or &divide;)
+- Less than or equal: ≤ (not <= or \\leq)
+- Greater than or equal: ≥ (not >= or \\geq)
+- Not equal: ≠ (not != or \\neq)
+- Pi: π (not \\pi)
+- Square root: √ (not \\sqrt)`
 
 const SOFT_SKILLS_PROMPT = `You are an expert HR assessment designer writing Situational Judgement Test (SJT) questions.
 Each question describes a realistic workplace scenario for a high school internship applicant.
@@ -122,6 +131,15 @@ Respond with ONLY valid JSON, no markdown fences:
   if (!match) throw new Error('No JSON in interest question response')
 
   const parsed = JSON.parse(jsonrepair(match[0]))
+
+  const fixOp = (s: string) => s
+    .replace(/&divide;/gi, '÷').replace(/&times;/gi, '×')
+    .replace(/&minus;/gi, '−').replace(/&le;/gi, '≤').replace(/&ge;/gi, '≥')
+    .replace(/\\div\b/g, '÷').replace(/\\times\b/g, '×')
+  if (typeof parsed.question_text === 'string') parsed.question_text = fixOp(parsed.question_text)
+  if (Array.isArray(parsed.options)) {
+    parsed.options = parsed.options.map((o: QuestionOption) => ({ ...o, text: fixOp(o.text) }))
+  }
 
   // Fixed track map: A=tech, B=business, C=data_analytics, D=digital_marketing
   const track_map: Record<string, InternshipTrack> = {
@@ -228,6 +246,21 @@ Respond with ONLY valid JSON, no markdown fences, no extra text:
   if (!match) throw new Error('Failed to generate question after retries')
 
   const parsed = JSON.parse(jsonrepair(match[0]))
+
+  // Normalise math operator encodings
+  const fixOperators = (s: string) => s
+    .replace(/&divide;/gi, '÷').replace(/&times;/gi, '×')
+    .replace(/&minus;/gi, '−').replace(/&plus;/gi, '+')
+    .replace(/&le;/gi, '≤').replace(/&ge;/gi, '≥')
+    .replace(/&ne;/gi, '≠').replace(/&pi;/gi, 'π')
+    .replace(/\\div\b/g, '÷').replace(/\\times\b/g, '×')
+    .replace(/\\leq\b/g, '≤').replace(/\\geq\b/g, '≥')
+    .replace(/\\neq\b/g, '≠').replace(/\\pi\b/g, 'π')
+    .replace(/\\sqrt\{([^}]+)\}/g, '√($1)')
+  if (typeof parsed.question_text === 'string') parsed.question_text = fixOperators(parsed.question_text)
+  if (Array.isArray(parsed.options)) {
+    parsed.options = parsed.options.map((o: QuestionOption) => ({ ...o, text: fixOperators(o.text) }))
+  }
 
   // Validate no duplicate option texts
   const texts = (parsed.options as QuestionOption[]).map((o) => o.text.toLowerCase().trim())
