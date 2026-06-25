@@ -105,6 +105,7 @@ export default async function AdminPage({
     allProfiles,
     allChildren,
     allResults,
+    allAssessmentTypes,
   ] = await Promise.all([
     // Daily breakdown rows (for charts)
     db.from('profiles').select('created_at').gte('created_at', fromISO).lte('created_at', toISO),
@@ -119,6 +120,8 @@ export default async function AdminPage({
     db.auth.admin.listUsers({ perPage: 1000 }),
     db.from('children').select('parent_id'),
     db.from('results').select('children(parent_id)'),
+    // Assessment types per parent
+    db.from('assessments').select('assessment_type, children(parent_id, student_user_id)'),
   ])
 
   // Growth totals
@@ -165,16 +168,29 @@ export default async function AdminPage({
     const pid = ((r.children as unknown as { parent_id: string } | null)?.parent_id)
     if (pid) completedByParent[pid] = (completedByParent[pid] ?? 0) + 1
   }
+  // Assessment types per user (parent or self-registered student)
+  const assessmentTypesByUser: Record<string, Set<string>> = {}
+  for (const a of (allAssessmentTypes.data ?? [])) {
+    const child = a.children as unknown as { parent_id: string | null; student_user_id: string | null } | null
+    const type = (a.assessment_type as string) || 'academic'
+    const uids = [child?.parent_id, child?.student_user_id].filter(Boolean) as string[]
+    for (const uid of uids) {
+      if (!assessmentTypesByUser[uid]) assessmentTypesByUser[uid] = new Set()
+      assessmentTypesByUser[uid].add(type)
+    }
+  }
+
   const authUsers = (allProfiles as Awaited<ReturnType<typeof db.auth.admin.listUsers>>).data?.users ?? []
   const registeredUsers = authUsers
     .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
     .map((u) => ({
-      id:         u.id,
-      email:      u.email ?? '',
-      full_name:  (u.user_metadata?.full_name as string | undefined) ?? null,
-      created_at: u.created_at,
-      children:   childrenByParent[u.id] ?? 0,
-      completed:  completedByParent[u.id] ?? 0,
+      id:           u.id,
+      email:        u.email ?? '',
+      full_name:    (u.user_metadata?.full_name as string | undefined) ?? null,
+      created_at:   u.created_at,
+      children:     childrenByParent[u.id] ?? 0,
+      completed:    completedByParent[u.id] ?? 0,
+      assessmentTypes: Array.from(assessmentTypesByUser[u.id] ?? []),
     }))
 
   const periodLabel = `${new Date(fromISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })} – ${new Date(toISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`
@@ -243,7 +259,7 @@ export default async function AdminPage({
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#f5f5f7]">
-                  {['Name', 'Email', 'Registered', 'Children', 'Completed'].map((h) => (
+                  {['Name', 'Email', 'Registered', 'Assessment', 'Children', 'Completed'].map((h) => (
                     <th key={h} className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide whitespace-nowrap">
                       {h}
                     </th>
@@ -259,6 +275,21 @@ export default async function AdminPage({
                     <td className="px-5 py-3 text-xs text-[#6e6e73] whitespace-nowrap">{u.email}</td>
                     <td className="px-5 py-3 text-xs text-[#6e6e73] whitespace-nowrap">
                       {new Date(u.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                    </td>
+                    <td className="px-5 py-3">
+                      <div className="flex flex-wrap gap-1">
+                        {u.assessmentTypes.length === 0 ? (
+                          <span className="text-[#d2d2d7] text-xs">—</span>
+                        ) : u.assessmentTypes.map((t) => (
+                          <span key={t} className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold ${
+                            t === 'internship'
+                              ? 'bg-purple-100 text-purple-700'
+                              : 'bg-[#eef2ff] text-[#4F46E5]'
+                          }`}>
+                            {t === 'internship' ? 'Internship' : 'Academic'}
+                          </span>
+                        ))}
+                      </div>
                     </td>
                     <td className="px-5 py-3 text-xs tabular-nums text-[#1d1d1f] text-center">
                       {u.children > 0 ? u.children : <span className="text-[#d2d2d7]">0</span>}
