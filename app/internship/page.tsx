@@ -1,7 +1,74 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Navbar from '@/components/dashboard/Navbar'
 import PublicFooter from '@/components/layout/PublicFooter'
 import { INTERNSHIP_TRACKS, INTERNSHIP_TRACK_LABELS, INTERNSHIP_TRACK_DESCRIPTIONS } from '@/types'
+
+const BASE_URL = 'https://eduentry.com'
+
+export const metadata: Metadata = {
+  title: 'Internship Readiness Assessment for High School Students',
+  description:
+    'Free 34-question adaptive assessment for high school students aged 14+. Discover your readiness for a tech, business, data analytics or digital marketing internship — results in 35 minutes.',
+  keywords: [
+    'internship readiness assessment',
+    'high school internship',
+    'work experience assessment',
+    'internship aptitude test',
+    'career readiness test high school',
+    'tech internship readiness',
+    'business internship assessment',
+    'digital marketing internship test',
+    'data analytics internship',
+    'year 9 10 11 12 13 internship UK',
+    'adaptive internship assessment',
+    'university admissions work experience',
+    'free internship assessment',
+    'student internship placement test',
+  ],
+  alternates: {
+    canonical: `${BASE_URL}/internship`,
+    languages: { 'en-GB': `${BASE_URL}/internship`, 'x-default': `${BASE_URL}/internship` },
+  },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  openGraph: {
+    type: 'website',
+    url: `${BASE_URL}/internship`,
+    siteName: 'Eduentry',
+    title: 'Internship Readiness Assessment — Eduentry',
+    description:
+      'Free adaptive assessment for high school students aged 14+. Measure aptitude, domain knowledge, and workplace skills across tech, business, data analytics, and digital marketing tracks.',
+    images: [{ url: `${BASE_URL}/internship/opengraph-image`, width: 1200, height: 630, alt: 'Internship Readiness Assessment — Eduentry' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Internship Readiness Assessment — Eduentry',
+    description: 'Free 34-question adaptive assessment for high school students aged 14+. Find your internship track in 35 minutes.',
+    images: [`${BASE_URL}/internship/opengraph-image`],
+  },
+}
+
+const SERVICE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${BASE_URL}/internship#service`,
+  name: 'Internship Readiness Assessment',
+  description:
+    'A free 34-question adaptive assessment for high school students aged 14 and above. Evaluates general aptitude, domain knowledge, workplace skills, and interest profile across four internship tracks: Technology, Business, Data Analytics, and Digital Marketing.',
+  provider: { '@type': 'Organization', '@id': `${BASE_URL}/#organization`, name: 'Eduentry', url: BASE_URL },
+  url: `${BASE_URL}/internship`,
+  audience: { '@type': 'EducationalAudience', audienceType: 'High school students aged 14 and above' },
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
+}
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Internship Assessment', item: `${BASE_URL}/internship` },
+  ],
+}
 
 const TRACK_ICONS: Record<string, string> = {
   tech: '💻',
@@ -20,6 +87,8 @@ const PHASES = [
 export default function InternshipLandingPage() {
   return (
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
       <Navbar />
       <main className="flex-1">
         {/* Hero */}

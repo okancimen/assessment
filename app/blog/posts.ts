@@ -13,6 +13,7 @@ export interface BlogPostMeta {
   readTime: string
   tags: string[]
   faqs?: Faq[]
+  cta?: { heading: string; body: string; label: string; href: string }
 }
 
 export const BLOG_POSTS: BlogPostMeta[] = [
@@ -43,6 +44,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'A personal statement written by a student with real work experience contains specific observations, contributions, and reflections — evidence, not assertion. Admissions readers are trained to distinguish between a student who describes what they hope a career will be like versus one who describes what they actually observed and learned. The latter is considerably more persuasive, particularly for competitive courses receiving 10+ applications per place.',
       },
     ],
+    cta: {
+      heading: 'Is your student internship-ready?',
+      body: 'Free adaptive assessment for high school students aged 14+. Get a personalised readiness report across aptitude, domain knowledge, and workplace skills.',
+      label: 'Take the free assessment',
+      href: '/internship',
+    },
   },
   {
     slug: 'global-academic-benchmarks-report-2026',
