@@ -27,7 +27,11 @@ OPERATOR SYMBOLS — use these exact Unicode characters, never HTML entities or 
 - Greater than or equal: ≥ (not >= or \\geq)
 - Not equal: ≠ (not != or \\neq)
 - Pi: π (not \\pi)
-- Square root: √ (not \\sqrt)`
+- Square root: √ (not \\sqrt)
+
+QUESTION RULES:
+- Ask exactly ONE question per question_text — never two sub-questions combined into one.
+- Do not use markdown tables in question_text. Present data inline (e.g. "A costs £12, B costs £18, C costs £9") or in a short numbered list.`
 
 const SOFT_SKILLS_PROMPT = `You are an expert HR assessment designer writing Situational Judgement Test (SJT) questions.
 Each question describes a realistic workplace scenario for a high school internship applicant.

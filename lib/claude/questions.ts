@@ -72,6 +72,10 @@ OPERATOR SYMBOLS — use these exact Unicode characters, never HTML entities or 
 - Pi: π (not \\pi)
 - Square root: √ (not \\sqrt)
 
+QUESTION RULES:
+- Ask exactly ONE question per question_text — never two sub-questions combined into one.
+- Do not use markdown tables in question_text. Present data inline or in a short numbered list.
+
 NUMBER THEORY RULES — follow these without exception:
 - Before writing a number theory problem (prime factors, divisibility, LCM/HCF, etc.), work it out fully on paper first and confirm it produces a clean integer solution.
 - When assigning multiple constraints to a number (e.g. N divided by p gives x, divided by q gives y), verify all constraints are mutually consistent — compute N from each constraint separately and confirm they agree.

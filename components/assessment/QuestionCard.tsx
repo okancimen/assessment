@@ -6,6 +6,71 @@ import { cn } from '@/lib/utils'
 
 const QUESTION_TIME_LIMIT = 120
 
+function renderInline(text: string): React.ReactNode[] {
+  const parts = text.split(/\*\*(.+?)\*\*/g)
+  return parts.map((p, i) =>
+    i % 2 === 1 ? <strong key={i}>{p}</strong> : p
+  )
+}
+
+function QuestionText({ text }: { text: string }) {
+  const lines = text.split('\n')
+  const result: React.ReactNode[] = []
+  let i = 0
+  while (i < lines.length) {
+    const line = lines[i]
+    if (line.trim().startsWith('|')) {
+      // Collect all consecutive table lines
+      const tableLines: string[] = []
+      while (i < lines.length && lines[i].trim().startsWith('|')) {
+        tableLines.push(lines[i])
+        i++
+      }
+      // Parse: first row = header, second row = separator, rest = body
+      const rows = tableLines
+        .filter(l => !/^\s*\|[-\s|:]+\|\s*$/.test(l))
+        .map(l => l.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim()))
+      const [header, ...body] = rows
+      result.push(
+        <div key={`table-${i}`} className="overflow-x-auto my-3">
+          <table className="text-sm border-collapse w-full">
+            <thead>
+              <tr>
+                {header.map((cell, ci) => (
+                  <th key={ci} className="border border-[#d2d2d7] bg-[#f5f5f7] px-3 py-1.5 text-left font-semibold text-[#1d1d1f]">
+                    {renderInline(cell)}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {body.map((row, ri) => (
+                <tr key={ri} className={ri % 2 === 0 ? '' : 'bg-[#fafafa]'}>
+                  {row.map((cell, ci) => (
+                    <td key={ci} className="border border-[#d2d2d7] px-3 py-1.5 text-[#1d1d1f]">
+                      {renderInline(cell)}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )
+    } else {
+      if (line.trim()) {
+        result.push(
+          <p key={`p-${i}`} className="text-base sm:text-lg font-medium text-[#1d1d1f] leading-relaxed">
+            {renderInline(line)}
+          </p>
+        )
+      }
+      i++
+    }
+  }
+  return <>{result}</>
+}
+
 interface FeedbackData {
   isCorrect: boolean
   correctAnswer: string
@@ -122,7 +187,7 @@ export default function QuestionCard({ question, onAnswer, onNext, onBack, quest
         </span>
       </div>
 
-      <p className="text-base sm:text-lg font-medium text-[#1d1d1f] leading-relaxed">{question.question_text}</p>
+      <QuestionText text={question.question_text} />
 
       <div className="space-y-2.5">
         {question.options.map((option) => (
