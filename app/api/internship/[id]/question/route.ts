@@ -113,17 +113,29 @@ export async function GET(
     // Generate via Claude
     const { data: allQuestions } = await supabase
       .from('assessment_questions')
-      .select('questions(question_text)')
+      .select('questions(question_text, options, subject)')
       .eq('assessment_id', id)
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const usedTexts = allQuestions?.map((q: any) => q.questions?.question_text).filter(Boolean) as string[] ?? []
 
+    // For interest profile questions pass the previously used option texts so Claude
+    // doesn't repeat similar activities across questions
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const usedInterestOptions: string[][] = currentSubject === 'interest_profile'
+      ? (allQuestions ?? [])
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          .filter((q: any) => q.questions?.subject === 'interest_profile' && Array.isArray(q.questions?.options))
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          .map((q: any) => (q.questions.options as { text: string }[]).map((o) => o.text))
+      : []
+
     const questionData = await generateInternshipQuestion(
       currentSubject,
       track,
       session.difficulty_level,
-      usedTexts
+      usedTexts,
+      usedInterestOptions
     )
 
     const { data: question, error: qError } = await supabase

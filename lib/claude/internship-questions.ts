@@ -87,12 +87,17 @@ export interface InternshipQuestion {
   track_map?: Record<string, InternshipTrack>  // only for interest_profile
 }
 
-async function generateInterestQuestion(usedTexts: string[]): Promise<InternshipQuestion> {
+async function generateInterestQuestion(usedTexts: string[], usedOptions: string[][] = []): Promise<InternshipQuestion> {
   const avoidSection = usedTexts.length > 0
     ? `\nDo NOT generate any of these questions (already used):\n${usedTexts.map((t, i) => `${i + 1}. ${t}`).join('\n')}\n`
     : ''
 
-  const prompt = `${avoidSection}
+  const usedActivities = usedOptions.flat()
+  const avoidActivities = usedActivities.length > 0
+    ? `\nAvoid activities similar to these already-used options (each maps to a track — generate distinctly different scenarios):\n${usedActivities.map((a) => `- ${a}`).join('\n')}\n`
+    : ''
+
+  const prompt = `${avoidSection}${avoidActivities}
 Generate ONE interest-mapping question with exactly 4 options.
 Option A must map to Technology, B to Business, C to Data Analytics, D to Digital Marketing.
 Keep the options in this exact order — do not reorder them.
@@ -166,10 +171,11 @@ export async function generateInternshipQuestion(
   subject: InternshipSubject,
   track: InternshipTrack,
   difficulty: number,
-  usedTexts: string[] = []
+  usedTexts: string[] = [],
+  usedInterestOptions: string[][] = []
 ): Promise<InternshipQuestion> {
   if (subject === 'interest_profile') {
-    return generateInterestQuestion(usedTexts)
+    return generateInterestQuestion(usedTexts, usedInterestOptions)
   }
 
   let systemPrompt: string

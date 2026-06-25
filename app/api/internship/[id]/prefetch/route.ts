@@ -72,13 +72,22 @@ export async function POST(
 
     const { data: usedData } = await supabase
       .from('assessment_questions')
-      .select('questions(question_text)')
+      .select('questions(question_text, options, subject)')
       .eq('assessment_id', id)
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const usedTexts = usedData?.map((q: any) => q.questions?.question_text).filter(Boolean) as string[] ?? []
 
-    const questionData = await generateInternshipQuestion(targetSubject, track, targetDifficulty, usedTexts)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const usedInterestOptions: string[][] = targetSubject === 'interest_profile'
+      ? (usedData ?? [])
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          .filter((q: any) => q.questions?.subject === 'interest_profile' && Array.isArray(q.questions?.options))
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          .map((q: any) => (q.questions.options as { text: string }[]).map((o) => o.text))
+      : []
+
+    const questionData = await generateInternshipQuestion(targetSubject, track, targetDifficulty, usedTexts, usedInterestOptions)
 
     const { data: question } = await supabase
       .from('questions')
