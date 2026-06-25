@@ -32,7 +32,7 @@ export default async function AssessmentStartPage({
   const child = assessment.children as { name: string; date_of_birth: string; parent_id: string }
   if (child.parent_id !== user.id) redirect('/dashboard')
 
-  if (assessment.status === 'completed') redirect(`/results/${id}`)
+  if (assessment.status === 'completed') redirect(`/assessment/${id}/results`)
   if (assessment.status === 'in_progress') redirect(`/assessment/${id}/question`)
 
   return (

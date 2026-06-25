@@ -31,7 +31,7 @@ export default function CompleteClient({ assessmentId, childName }: CompleteClie
 
       const data = await res.json()
       trackEvent('assessment_complete', { assessment_id: assessmentId, standardized_score: data.standardized_score })
-      router.push(`/results/${assessmentId}`)
+      router.push(`/assessment/${assessmentId}/results`)
     }
 
     finalize()
