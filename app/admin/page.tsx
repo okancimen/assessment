@@ -118,7 +118,7 @@ export default async function AdminPage({
     db.from('results').select('children(parent_id)').gte('created_at', fromISO).lte('created_at', toISO),
     // Registered users table (all-time, from auth.users directly)
     db.auth.admin.listUsers({ perPage: 1000 }),
-    db.from('children').select('parent_id'),
+    db.from('children').select('parent_id, student_user_id'),
     db.from('results').select('children(parent_id)'),
     // Assessment types per parent
     db.from('assessments').select('assessment_type, children(parent_id, student_user_id)'),
@@ -159,9 +159,13 @@ export default async function AdminPage({
 
   // Registered users table data
   const childrenByParent: Record<string, number> = {}
+  const parentIds = new Set<string>()
+  const studentIds = new Set<string>()
   for (const c of allChildren.data ?? []) {
     const pid = c.parent_id as string
     childrenByParent[pid] = (childrenByParent[pid] ?? 0) + 1
+    if (pid) parentIds.add(pid)
+    if (c.student_user_id) studentIds.add(c.student_user_id as string)
   }
   const completedByParent: Record<string, number> = {}
   for (const r of allResults.data ?? []) {
@@ -191,6 +195,11 @@ export default async function AdminPage({
       children:     childrenByParent[u.id] ?? 0,
       completed:    completedByParent[u.id] ?? 0,
       assessmentTypes: Array.from(assessmentTypesByUser[u.id] ?? []),
+      role: parentIds.has(u.id) && studentIds.has(u.id)
+        ? 'both'
+        : parentIds.has(u.id) ? 'parent'
+        : studentIds.has(u.id) ? 'student'
+        : 'none',
     }))
 
   const periodLabel = `${new Date(fromISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })} – ${new Date(toISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`
@@ -259,7 +268,7 @@ export default async function AdminPage({
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#f5f5f7]">
-                  {['Name', 'Email', 'Registered', 'Assessment', 'Children', 'Completed'].map((h) => (
+                  {['Name', 'Email', 'Registered', 'Role', 'Assessment', 'Children', 'Completed'].map((h) => (
                     <th key={h} className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide whitespace-nowrap">
                       {h}
                     </th>
@@ -275,6 +284,12 @@ export default async function AdminPage({
                     <td className="px-5 py-3 text-xs text-[#6e6e73] whitespace-nowrap">{u.email}</td>
                     <td className="px-5 py-3 text-xs text-[#6e6e73] whitespace-nowrap">
                       {new Date(u.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                    </td>
+                    <td className="px-5 py-3">
+                      {u.role === 'parent' && <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-100 text-blue-700">Parent</span>}
+                      {u.role === 'student' && <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-100 text-emerald-700">Student</span>}
+                      {u.role === 'both' && <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-100 text-amber-700">Both</span>}
+                      {u.role === 'none' && <span className="text-[#d2d2d7] text-xs">—</span>}
                     </td>
                     <td className="px-5 py-3">
                       <div className="flex flex-wrap gap-1">
