@@ -31,7 +31,7 @@ export default function InternshipLandingPage() {
             Discover your internship<br />readiness
           </h1>
           <p className="text-lg text-[#6e6e73] max-w-xl mx-auto mb-8 leading-relaxed">
-            A 34-question adaptive assessment designed for Year 9–13 students. Takes around 35 minutes and generates a personalised readiness report.
+            A 34-question adaptive assessment designed for high school students aged 14 and above. Takes around 35 minutes and generates a personalised readiness report.
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link

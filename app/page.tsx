@@ -409,7 +409,7 @@ export default function LandingPage() {
             <div className="flex-1 space-y-5">
               <span className="inline-block text-xs font-semibold text-[#4F46E5] uppercase tracking-widest bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1 rounded-full">New — Internship Programme</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-[#1d1d1f] tracking-tight leading-tight">
-                For students aged 14–18:<br />find your readiness for work.
+                For high school students:<br />find your readiness for work.
               </h2>
               <p className="text-[#6e6e73] text-sm leading-relaxed max-w-md">
                 A 34-question adaptive assessment across four phases — aptitude, domain knowledge, workplace skills, and interest profile. Get a personalised readiness report and AI-generated career insights.
