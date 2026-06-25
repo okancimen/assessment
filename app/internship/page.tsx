@@ -35,13 +35,13 @@ export default function InternshipLandingPage() {
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link
-              href="/internship/register"
+              href="/internship/apply"
               className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full font-semibold text-base hover:bg-[#4338CA] transition-colors"
             >
               Apply now — it&apos;s free
             </Link>
             <Link
-              href="/auth/login"
+              href="/auth/login?redirect=/internship/apply"
               className="text-[#4F46E5] font-semibold text-base hover:underline"
             >
               Already registered? Sign in
