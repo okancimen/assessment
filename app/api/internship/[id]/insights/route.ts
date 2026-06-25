@@ -49,13 +49,12 @@ export async function POST(
       soft_skills?: number
       overall?: number
       tier?: string
+      track_fit?: Record<string, number>
     }
 
-    const phases = [
-      { key: 'aptitude', label: INTERNSHIP_PHASE_LABELS.aptitude, score: scores.aptitude },
-      { key: 'domain', label: INTERNSHIP_PHASE_LABELS.domain, score: scores.domain },
-      { key: 'soft_skills', label: INTERNSHIP_PHASE_LABELS.soft_skills, score: scores.soft_skills },
-    ]
+    const trackFitSummary = scores.track_fit
+      ? Object.entries(scores.track_fit).map(([t, v]) => `${t.replace('_', ' ')}: ${v}%`).join(', ')
+      : 'not available'
 
     const prompt = `You are writing personalised phase insight cards for a high school student's internship assessment report.
 
@@ -65,19 +64,23 @@ Overall readiness tier: ${scores.tier ?? 'Developing'}
 For each phase below, write exactly 2-3 bullet points: 1-2 strength observations and exactly 1 growth area. Keep each bullet under 20 words. Tone: encouraging, honest, professional. Suitable for both student and parent.
 
 Phases:
-${phases.map((p) => `- ${p.label}: score ${p.score ?? 0}/100`).join('\n')}
+- ${INTERNSHIP_PHASE_LABELS.aptitude}: score ${scores.aptitude ?? 0}/100
+- ${INTERNSHIP_PHASE_LABELS.domain}: score ${scores.domain ?? 0}/100
+- ${INTERNSHIP_PHASE_LABELS.soft_skills}: score ${scores.soft_skills ?? 0}/100
+- ${INTERNSHIP_PHASE_LABELS.interest}: track fit — ${trackFitSummary}
 
 Respond with ONLY valid JSON:
 {
   "aptitude": { "title": "General Aptitude", "bullets": ["...", "...", "..."] },
   "domain": { "title": "Domain Knowledge", "bullets": ["...", "...", "..."] },
-  "soft_skills": { "title": "Workplace Skills", "bullets": ["...", "...", "..."] }
+  "soft_skills": { "title": "Workplace Skills", "bullets": ["...", "...", "..."] },
+  "interest": { "title": "Interest Profile", "bullets": ["...", "...", "..."] }
 }`
 
     const msg = await withOverloadRetry(() =>
       ai.messages.create({
         model: 'claude-sonnet-4-6',
-        max_tokens: 600,
+        max_tokens: 800,
         messages: [{ role: 'user', content: prompt }],
       })
     )
