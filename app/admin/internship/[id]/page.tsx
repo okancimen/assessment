@@ -299,7 +299,7 @@ export default function AdminCandidateDetailPage() {
 
         {/* Full results link */}
         <div className="text-center">
-          <Link href={`/internship/results/${id}`} className="text-sm text-[#4F46E5] hover:underline font-medium">
+          <Link href={`/assessment/${id}/results`} className="text-sm text-[#4F46E5] hover:underline font-medium">
             View student-facing results report →
           </Link>
         </div>

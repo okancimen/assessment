@@ -185,7 +185,7 @@ export default function InternshipClient({ assessmentId }: { assessmentId: strin
 
   function applyResult(result: FetchResult) {
     if (result.type === 'complete') {
-      router.push(`/internship/assessment/${assessmentId}/complete`)
+      router.push(`/assessment/${assessmentId}/complete`)
     } else if (result.type === 'error') {
       setError(result.message)
       setPhase('error')
@@ -203,7 +203,7 @@ export default function InternshipClient({ assessmentId }: { assessmentId: strin
 
   async function doFetch(retries = 2): Promise<FetchResult> {
     try {
-      const res = await fetch(`/api/internship/${assessmentId}/question`)
+      const res = await fetch(`/api/assessment/${assessmentId}/question`)
       const data = await res.json()
       if (!res.ok) {
         const isOverloaded = typeof data.error === 'string' && data.error.includes('overloaded')
@@ -258,12 +258,12 @@ export default function InternshipClient({ assessmentId }: { assessmentId: strin
   // Prefetch next question in background after each question loads
   useEffect(() => {
     if (!question) return
-    fetch(`/api/internship/${assessmentId}/prefetch`, { method: 'POST' }).catch(() => {})
+    fetch(`/api/assessment/${assessmentId}/prefetch`, { method: 'POST' }).catch(() => {})
   }, [question?.id, assessmentId])
 
   async function handleAnswer(selectedAnswer: string, timeTaken: number) {
     if (!question) return null
-    const res = await fetch(`/api/internship/${assessmentId}/answer`, {
+    const res = await fetch(`/api/assessment/${assessmentId}/answer`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question_id: question.id, selected_answer: selectedAnswer, time_taken_seconds: timeTaken }),
@@ -271,8 +271,8 @@ export default function InternshipClient({ assessmentId }: { assessmentId: strin
     const data = await res.json()
     if (data.all_complete) {
       // Trigger complete endpoint before redirecting
-      await fetch(`/api/internship/${assessmentId}/complete`, { method: 'POST' })
-      router.push(`/internship/assessment/${assessmentId}/complete`)
+      await fetch(`/api/assessment/${assessmentId}/complete`, { method: 'POST' })
+      router.push(`/assessment/${assessmentId}/complete`)
       return null
     }
     return {

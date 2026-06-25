@@ -1,6 +1,25 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/internship/assessment/:id/question',
+        destination: '/assessment/:id/question',
+        permanent: true,
+      },
+      {
+        source: '/internship/assessment/:id/complete',
+        destination: '/assessment/:id/complete',
+        permanent: true,
+      },
+      {
+        source: '/internship/results/:id',
+        destination: '/assessment/:id/results',
+        permanent: true,
+      },
+    ]
+  },
   compress: true,
   env: {
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL ?? 'https://xronkbdtsnjibwhuelni.supabase.co',

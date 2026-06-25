@@ -191,7 +191,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
   async function doFetch(retries = 2): Promise<FetchResult> {
     try {
-      const res = await fetch(`/api/assessments/${assessmentId}/question`)
+      const res = await fetch(`/api/assessment/${assessmentId}/question`)
       const data = await res.json()
       if (!res.ok) {
         const isOverloaded = typeof data.error === 'string' && data.error.includes('overloaded')
@@ -225,7 +225,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
     setPhase('loading')
     setQuestion(null)
     try {
-      const res = await fetch(`/api/assessments/${assessmentId}/back`, { method: 'POST' })
+      const res = await fetch(`/api/assessment/${assessmentId}/back`, { method: 'POST' })
       const data = await res.json()
       if (!res.ok) { setError(data.error || 'Could not go back'); setPhase('error'); return }
       setQuestion(data.question)
@@ -270,12 +270,12 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
   useEffect(() => {
     if (!question) return
-    fetch(`/api/assessments/${assessmentId}/prefetch`, { method: 'POST' }).catch(() => {})
+    fetch(`/api/assessment/${assessmentId}/prefetch`, { method: 'POST' }).catch(() => {})
   }, [question?.id, assessmentId])
 
   async function handleAnswer(selectedAnswer: string, timeTaken: number) {
     if (!question) return null
-    const res = await fetch(`/api/assessments/${assessmentId}/answer`, {
+    const res = await fetch(`/api/assessment/${assessmentId}/answer`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question_id: question.id, selected_answer: selectedAnswer, time_taken_seconds: timeTaken }),

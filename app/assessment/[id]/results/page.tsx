@@ -5,7 +5,10 @@ import { useParams } from 'next/navigation'
 import Link from 'next/link'
 import { ReadinessTier } from '@/types'
 
-interface ResultData {
+// ── Internship results ────────────────────────────────────────────────────────
+
+interface InternshipData {
+  assessment_type: 'internship'
   tier: ReadinessTier
   ai_summary: string
   phase_insights: Record<string, { title: string; bullets: string[] }> | null
@@ -21,9 +24,7 @@ function TierBadge({ tier }: { tier: ReadinessTier }) {
     'Needs Support': 'bg-red-100 text-red-700 border-red-200',
   }
   const icons: Record<ReadinessTier, string> = {
-    'Internship Ready': '✓',
-    'Developing': '◎',
-    'Needs Support': '○',
+    'Internship Ready': '✓', 'Developing': '◎', 'Needs Support': '○',
   }
   return (
     <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border font-semibold text-sm ${colors[tier]}`}>
@@ -62,8 +63,7 @@ function PhaseCard({ title, bullets }: { title: string; bullets: string[] }) {
       <ul className="space-y-2">
         {bullets.map((b, i) => (
           <li key={i} className="flex items-start gap-2 text-sm text-[#6e6e73]">
-            <span className="text-[#4F46E5] mt-0.5 flex-shrink-0">•</span>
-            {b}
+            <span className="text-[#4F46E5] mt-0.5 flex-shrink-0">•</span>{b}
           </li>
         ))}
       </ul>
@@ -71,26 +71,11 @@ function PhaseCard({ title, bullets }: { title: string; bullets: string[] }) {
   )
 }
 
-export default function InternshipResultsPage() {
-  const { id } = useParams<{ id: string }>()
-  const [data, setData] = useState<ResultData | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState('')
+function InternshipResults({ id, data: initial }: { id: string; data: InternshipData }) {
+  const [data] = useState(initial)
   const [insightLoading, setInsightLoading] = useState(false)
-  const [insights, setInsights] = useState<Record<string, { title: string; bullets: string[] }> | null>(null)
+  const [insights, setInsights] = useState(initial.phase_insights)
   const [copied, setCopied] = useState(false)
-
-  useEffect(() => {
-    fetch(`/api/internship/${id}/results`)
-      .then((r) => r.json())
-      .then((d) => {
-        if (d.error) { setError(d.error); return }
-        setData(d)
-        if (d.phase_insights) setInsights(d.phase_insights)
-      })
-      .catch(() => setError('Failed to load results'))
-      .finally(() => setLoading(false))
-  }, [id])
 
   async function handleGetInsights() {
     setInsightLoading(true)
@@ -98,11 +83,7 @@ export default function InternshipResultsPage() {
       const res = await fetch(`/api/internship/${id}/insights`, { method: 'POST' })
       const d = await res.json()
       if (d.insights) setInsights(d.insights)
-    } catch {
-      // silent
-    } finally {
-      setInsightLoading(false)
-    }
+    } catch { /* silent */ } finally { setInsightLoading(false) }
   }
 
   function handleCopyLink() {
@@ -111,29 +92,9 @@ export default function InternshipResultsPage() {
     setTimeout(() => setCopied(false), 2000)
   }
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center">
-        <div className="w-8 h-8 border-4 border-[#4F46E5] border-t-transparent rounded-full animate-spin" />
-      </div>
-    )
-  }
-
-  if (error || !data) {
-    return (
-      <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center">
-        <div className="text-center space-y-3">
-          <p className="text-red-600 text-sm">{error || 'Results not found'}</p>
-          <Link href="/dashboard" className="text-[#4F46E5] text-sm hover:underline">Back to dashboard</Link>
-        </div>
-      </div>
-    )
-  }
-
   return (
     <div className="min-h-screen bg-[#f5f5f7]">
       <div className="max-w-2xl mx-auto px-4 py-10 space-y-6">
-        {/* Header */}
         <div className="text-center space-y-3">
           <div className="text-sm text-[#6e6e73]">Internship Readiness Report</div>
           <h1 className="text-2xl font-bold text-[#1d1d1f] tracking-tight">
@@ -141,7 +102,6 @@ export default function InternshipResultsPage() {
           </h1>
         </div>
 
-        {/* AI Summary */}
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6 space-y-3">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 rounded-full bg-[#eef2ff] flex items-center justify-center">
@@ -154,7 +114,6 @@ export default function InternshipResultsPage() {
           <AISummary text={data.ai_summary} />
         </div>
 
-        {/* Phase insight cards */}
         {insights ? (
           <div className="space-y-3">
             <h2 className="text-base font-semibold text-[#1d1d1f]">Phase insights</h2>
@@ -176,8 +135,7 @@ export default function InternshipResultsPage() {
               <p className="text-xs text-[#6e6e73]">AI will analyse each phase and highlight your strengths and one growth area per section.</p>
             </div>
             <button
-              onClick={handleGetInsights}
-              disabled={insightLoading}
+              onClick={handleGetInsights} disabled={insightLoading}
               className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] disabled:opacity-60 transition-colors"
             >
               {insightLoading ? 'Generating…' : 'Get personalised insights'}
@@ -185,15 +143,9 @@ export default function InternshipResultsPage() {
           </div>
         )}
 
-        {/* Share */}
         <div className="flex items-center justify-between pt-2">
-          <Link href="/dashboard" className="text-sm text-[#4F46E5] hover:underline font-medium">
-            ← Back to dashboard
-          </Link>
-          <button
-            onClick={handleCopyLink}
-            className="flex items-center gap-2 text-sm text-[#6e6e73] hover:text-[#4F46E5] transition-colors"
-          >
+          <Link href="/dashboard" className="text-sm text-[#4F46E5] hover:underline font-medium">← Back to dashboard</Link>
+          <button onClick={handleCopyLink} className="flex items-center gap-2 text-sm text-[#6e6e73] hover:text-[#4F46E5] transition-colors">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
             </svg>
@@ -203,4 +155,55 @@ export default function InternshipResultsPage() {
       </div>
     </div>
   )
+}
+
+// ── Page shell — fetches data, dispatches to type-specific view ───────────────
+
+export default function AssessmentResultsPage() {
+  const { id } = useParams<{ id: string }>()
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [data, setData] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
+
+  useEffect(() => {
+    fetch(`/api/assessment/${id}/results`)
+      .then((r) => r.json())
+      .then((d) => {
+        if (d.error) { setError(d.error); return }
+        setData(d)
+      })
+      .catch(() => setError('Failed to load results'))
+      .finally(() => setLoading(false))
+  }, [id])
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center">
+        <div className="w-8 h-8 border-4 border-[#4F46E5] border-t-transparent rounded-full animate-spin" />
+      </div>
+    )
+  }
+
+  if (error || !data) {
+    return (
+      <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center">
+        <div className="text-center space-y-3">
+          <p className="text-red-600 text-sm">{error || 'Results not found'}</p>
+          <Link href="/dashboard" className="text-[#4F46E5] text-sm hover:underline">Back to dashboard</Link>
+        </div>
+      </div>
+    )
+  }
+
+  if (data.assessment_type === 'internship') {
+    return <InternshipResults id={id} data={data as InternshipData} />
+  }
+
+  // Academic: redirect to the existing full results page (server component)
+  // We use window.location to avoid importing the heavy server-only results page
+  if (typeof window !== 'undefined') {
+    window.location.replace(`/results/${id}`)
+  }
+  return null
 }

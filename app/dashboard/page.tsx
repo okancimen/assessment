@@ -276,7 +276,7 @@ export default async function DashboardPage() {
                         </td>
                         <td className="px-5 py-3 text-right">
                           {a.status === 'completed' ? (
-                            <Link href={`/results/${a.id}`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
+                            <Link href={`/assessment/${a.id}/results`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
                               View results
                             </Link>
                           ) : a.status === 'in_progress' ? (
@@ -329,15 +329,15 @@ export default async function DashboardPage() {
                   Apply now
                 </Link>
               ) : selfInternship.status === 'completed' ? (
-                <Link href={`/internship/results/${selfInternship.id}`} className="inline-flex items-center justify-center border border-[#4F46E5] text-[#4F46E5] text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#eef2ff] transition-colors flex-shrink-0">
+                <Link href={`/assessment/${selfInternship.id}/results`} className="inline-flex items-center justify-center border border-[#4F46E5] text-[#4F46E5] text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#eef2ff] transition-colors flex-shrink-0">
                   View report
                 </Link>
               ) : selfInternship.status === 'in_progress' ? (
-                <Link href={`/internship/assessment/${selfInternship.id}/question`} className="inline-flex items-center justify-center bg-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amber-600 transition-colors flex-shrink-0">
+                <Link href={`/assessment/${selfInternship.id}/question`} className="inline-flex items-center justify-center bg-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amber-600 transition-colors flex-shrink-0">
                   Continue
                 </Link>
               ) : (
-                <Link href={`/internship/assessment/${selfInternship.id}/question`} className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors flex-shrink-0">
+                <Link href={`/assessment/${selfInternship.id}/question`} className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors flex-shrink-0">
                   Start assessment
                 </Link>
               )}
@@ -394,7 +394,7 @@ export default async function DashboardPage() {
                           {internshipTier(ia.overall).label}
                         </p>
                         <Link
-                          href={`/internship/results/${ia.id}`}
+                          href={`/assessment/${ia.id}/results`}
                           className="inline-flex items-center justify-center border border-[#4F46E5] text-[#4F46E5] text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#eef2ff] transition-colors"
                         >
                           View report
@@ -404,7 +404,7 @@ export default async function DashboardPage() {
                       <>
                         <p className="text-xs text-amber-600 font-medium">Assessment in progress</p>
                         <Link
-                          href={`/internship/assessment/${ia.id}/question`}
+                          href={`/assessment/${ia.id}/question`}
                           className="inline-flex items-center justify-center bg-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amber-600 transition-colors"
                         >
                           Continue
@@ -414,7 +414,7 @@ export default async function DashboardPage() {
                       <>
                         <p className="text-xs text-[#6e6e73]">Assessment pending</p>
                         <Link
-                          href={`/internship/assessment/${ia.id}/question`}
+                          href={`/assessment/${ia.id}/question`}
                           className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors"
                         >
                           Start assessment
