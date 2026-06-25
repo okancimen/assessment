@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 
 function toInitials(name: string): string {
   return name
@@ -17,7 +18,12 @@ export async function GET(
     const supabase = await createClient()
     const { data: { user } } = await supabase.auth.getUser()
 
-    const { data: assessment } = await supabase
+    const { isAdminEmail } = await import('@/lib/admin')
+    const isAdmin = !!user && isAdminEmail(user.email)
+
+    const db = createAdminClient()
+
+    const { data: assessment } = await db
       .from('assessments')
       .select('*, children(parent_id, student_user_id, name)')
       .eq('id', id)
@@ -28,17 +34,13 @@ export async function GET(
 
     const child = assessment.children as { parent_id: string; student_user_id: string | null; name: string }
 
-    // Determine ownership (requires login for gated access)
     const isOwner = !!user && (child.parent_id === user.id || child.student_user_id === user.id)
-    const { isAdminEmail } = await import('@/lib/admin')
-    const isAdmin = !!user && isAdminEmail(user.email)
 
-    // Only owners and admins can view results
     if (!isOwner && !isAdmin) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    const { data: result } = await supabase
+    const { data: result } = await db
       .from('results')
       .select('subject_scores, ai_summary, phase_insights')
       .eq('assessment_id', id)
