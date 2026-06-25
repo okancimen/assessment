@@ -38,9 +38,10 @@ export async function POST(
 
     if (!result) return NextResponse.json({ error: 'Results not found' }, { status: 404 })
 
-    // Idempotent — return cached insights if already generated
+    // Idempotent — return cached insights if already generated with all 4 phases
     if (result.phase_insights) {
-      return NextResponse.json({ insights: result.phase_insights })
+      const cached = result.phase_insights as Record<string, unknown>
+      if (cached.interest) return NextResponse.json({ insights: result.phase_insights })
     }
 
     const scores = result.subject_scores as {
