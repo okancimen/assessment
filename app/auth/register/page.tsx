@@ -41,6 +41,7 @@ export default function RegisterPage() {
     }
 
     trackEvent('sign_up', { method: 'email' })
+    void fetch('/api/user/update-location', { method: 'POST' })
     router.push('/dashboard')
     router.refresh()
   }

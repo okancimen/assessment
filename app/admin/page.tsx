@@ -105,6 +105,7 @@ export default async function AdminPage({
     allChildren,
     allResults,
     allAssessmentTypes,
+    allLocationProfiles,
   ] = await Promise.all([
     // All users from auth.users (used for both stats and table)
     db.auth.admin.listUsers({ perPage: 1000 }),
@@ -119,6 +120,7 @@ export default async function AdminPage({
     db.from('results').select('children(parent_id)'),
     // Assessment types per parent
     db.from('assessments').select('assessment_type, children(parent_id, student_user_id)'),
+    db.from('profiles').select('id, country, city'),
   ])
 
   // Filter auth users by date range for stats
@@ -173,6 +175,12 @@ export default async function AdminPage({
     const pid = ((r.children as unknown as { parent_id: string } | null)?.parent_id)
     if (pid) completedByParent[pid] = (completedByParent[pid] ?? 0) + 1
   }
+  // Location map from profiles
+  const locationMap: Record<string, { country: string | null; city: string | null }> = {}
+  for (const p of (allLocationProfiles.data ?? [])) {
+    locationMap[p.id as string] = { country: p.country as string | null, city: p.city as string | null }
+  }
+
   // Assessment types per user (parent or self-registered student)
   const assessmentTypesByUser: Record<string, Set<string>> = {}
   for (const a of (allAssessmentTypes.data ?? [])) {
@@ -195,6 +203,7 @@ export default async function AdminPage({
       children:     childrenByParent[u.id] ?? 0,
       completed:    completedByParent[u.id] ?? 0,
       assessmentTypes: Array.from(assessmentTypesByUser[u.id] ?? []),
+      location: locationMap[u.id] ?? null,
       role: parentIds.has(u.id) && studentIds.has(u.id)
         ? 'both'
         : parentIds.has(u.id) ? 'parent'
@@ -268,7 +277,7 @@ export default async function AdminPage({
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#f5f5f7]">
-                  {['Name', 'Email', 'Registered', 'Role', 'Assessment', 'Children', 'Completed'].map((h) => (
+                  {['Name', 'Email', 'Registered', 'Location', 'Role', 'Assessment', 'Children', 'Completed'].map((h) => (
                     <th key={h} className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide whitespace-nowrap">
                       {h}
                     </th>
@@ -284,6 +293,11 @@ export default async function AdminPage({
                     <td className="px-5 py-3 text-xs text-[#6e6e73] whitespace-nowrap">{u.email}</td>
                     <td className="px-5 py-3 text-xs text-[#6e6e73] whitespace-nowrap">
                       {new Date(u.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                    </td>
+                    <td className="px-5 py-3 text-xs text-[#6e6e73] whitespace-nowrap">
+                      {u.location?.city && u.location?.country
+                        ? `${u.location.city}, ${u.location.country}`
+                        : u.location?.country ?? <span className="text-[#d2d2d7]">—</span>}
                     </td>
                     <td className="px-5 py-3">
                       {u.role === 'parent' && <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-100 text-blue-700">Parent</span>}

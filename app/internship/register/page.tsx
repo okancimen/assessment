@@ -75,6 +75,7 @@ function RegisterForm() {
 
       sessionStorage.setItem('intern_dob', form.date_of_birth)
       sessionStorage.setItem('intern_name', form.full_name)
+      void fetch('/api/user/update-location', { method: 'POST' })
       router.push('/internship/apply')
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong')
@@ -103,6 +104,7 @@ function RegisterForm() {
       sessionStorage.setItem('intern_dob', form.date_of_birth)
       sessionStorage.setItem('intern_name', form.full_name)
       if (form.parent_email) sessionStorage.setItem('intern_parent_email', form.parent_email)
+      void fetch('/api/user/update-location', { method: 'POST' })
       router.push('/internship/apply')
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Registration failed')
