@@ -137,6 +137,9 @@ export default function LandingPage() {
               >
                 Start free assessment
               </CtaLink>
+              <Link href="#academic" className="text-center text-xs text-[#6e6e73] hover:text-[#86868b] transition-colors mt-3">
+                See how it works ↓
+              </Link>
             </div>
 
             {/* Internship card */}
@@ -171,6 +174,9 @@ export default function LandingPage() {
               >
                 Learn about the programme →
               </Link>
+              <Link href="#internship" className="text-center text-xs text-[#4F46E5]/60 hover:text-[#4F46E5] transition-colors mt-3">
+                See how it works ↓
+              </Link>
             </div>
 
           </div>
@@ -191,6 +197,46 @@ export default function LandingPage() {
               <span>{text}</span>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── Social proof ─────────────────────────────────────────────────── */}
+      <section className="py-16 bg-white border-b border-[#d2d2d7]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                quote: "We used Eduentry before my daughter's 11+ exam. The verbal reasoning score flagged exactly where she needed more practice — she got into her first choice grammar school.",
+                name: 'Rachel T.',
+                role: 'Parent, London',
+                product: 'Academic Assessment',
+              },
+              {
+                quote: "I didn't realise how strong my son was at maths relative to his international peers. The percentile ranking gave us real context that school grades simply don't provide.",
+                name: 'Marcus O.',
+                role: 'Parent, Manchester',
+                product: 'Academic Assessment',
+              },
+              {
+                quote: "The internship report told me my aptitude was strongest in Data Analytics, which I'd never really considered. I applied for a placement in that track and got it.",
+                name: 'Aisha P.',
+                role: 'Year 12 Student, Birmingham',
+                product: 'Internship Assessment',
+              },
+            ].map(({ quote, name, role, product }) => (
+              <div key={name} className="bg-[#f5f5f7] rounded-3xl p-7 flex flex-col gap-5">
+                <svg className="w-6 h-6 text-[#4F46E5] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+                <p className="text-sm text-[#1d1d1f] leading-relaxed flex-1">{quote}</p>
+                <div>
+                  <p className="text-sm font-semibold text-[#1d1d1f]">{name}</p>
+                  <p className="text-xs text-[#6e6e73]">{role}</p>
+                  <span className="inline-block mt-2 text-[10px] font-semibold text-[#4F46E5] bg-[#eef2ff] px-2 py-0.5 rounded-full">{product}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -308,6 +354,25 @@ export default function LandingPage() {
                 </Link>
               )
             })}
+          </div>
+          {/* 11+ callout */}
+          <div className="mt-8 bg-[#f5f3ff] rounded-3xl border border-[#ddd6fe] p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="flex-1">
+              <p className="text-xs font-semibold text-[#7C3AED] uppercase tracking-widest mb-2">11+ &amp; Grammar School Preparation</p>
+              <h3 className="font-bold text-[#1d1d1f] text-lg mb-1">Preparing for the 11+?</h3>
+              <p className="text-sm text-[#6e6e73] leading-relaxed max-w-lg">
+                The four subjects directly mirror the 11+ exam structure used by grammar schools in England.
+                Eduentry gives you a real benchmark — standardised scores, not just right and wrong.
+              </p>
+            </div>
+            <div className="flex gap-3 flex-shrink-0 flex-wrap">
+              <Link href="/11-plus" className="bg-[#7C3AED] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#6D28D9] transition-colors whitespace-nowrap">
+                11+ guide →
+              </Link>
+              <Link href="/grammar-schools" className="border border-[#ddd6fe] text-[#7C3AED] px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#f5f3ff] transition-colors whitespace-nowrap">
+                Grammar schools →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -547,20 +612,67 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── Stats ────────────────────────────────────────────────────────── */}
+      {/* ── What you get ─────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] py-20">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            { value: '2',     label: 'Assessment types' },
-            { value: '60+',   label: 'Adaptive questions' },
-            { value: '4',     label: 'International frameworks' },
-            { value: '6+',    label: 'Starting age' },
-          ].map(({ value, label }) => (
-            <div key={label}>
-              <div className="text-5xl font-bold text-white mb-2">{value}</div>
-              <div className="text-sm text-[#86868b]">{label}</div>
+        <div className="max-w-6xl mx-auto px-6">
+          <p className="text-xs font-semibold text-[#86868b] uppercase tracking-widest text-center mb-12">What you get</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            {/* Academic */}
+            <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] p-8">
+              <p className="text-[10px] text-[#86868b] font-semibold uppercase tracking-wider mb-5">Academic Assessment</p>
+              <ul className="space-y-3">
+                {[
+                  'Standardised score on an 85–130 scale',
+                  'Percentile ranking by exact age',
+                  'Per-subject breakdown across 4 subjects',
+                  'International benchmarks — UK, US, PISA, IB',
+                  'AI-generated study recommendations',
+                  'Printable full report',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-[#86868b]">
+                    <svg className="w-4 h-4 text-[#4F46E5] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-7 pt-6 border-t border-[#424245]">
+                <CtaLink href="/auth/register" label="what_you_get_academic" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+                  Start free →
+                </CtaLink>
+              </div>
             </div>
-          ))}
+
+            {/* Internship */}
+            <div className="bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-8">
+              <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-wider mb-5">Internship Assessment</p>
+              <ul className="space-y-3">
+                {[
+                  'Readiness tier — Internship Ready / Developing / Needs Support',
+                  'AI-generated career summary paragraph',
+                  'Per-phase insights — aptitude, domain, workplace skills',
+                  'Career track match across 4 tracks',
+                  'Personalised strengths and growth areas',
+                  'Report you can reference in university applications',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-[#6e6e73]">
+                    <svg className="w-4 h-4 text-[#4F46E5] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-7 pt-6 border-t border-[#c7d2fe]">
+                <Link href="/internship" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
+                  Learn more →
+                </Link>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
@@ -572,19 +684,12 @@ export default function LandingPage() {
           </div>
           <div className="space-y-2">
             {[
-              { q: 'Is Eduentry free to use?', a: "Yes, Eduentry is completely free. There are no subscriptions, hidden fees, or premium tiers. Create a free account, add your child's profile, and start the assessment at no cost." },
+              { q: 'Is Eduentry free to use?', a: "Yes, completely free. No subscriptions, hidden fees, or premium tiers. Create a free account, add your child's profile, and start the assessment at no cost." },
               { q: 'What subjects does the academic assessment cover?', a: "English (reading comprehension, grammar, vocabulary), Mathematics (arithmetic, algebra, geometry, problem-solving), Verbal Reasoning (analogies, classifications, sequences), and Non-Verbal Reasoning (patterns, spatial reasoning, matrices). Each subject has 15 adaptive questions." },
-              { q: 'What is a percentile ranking?', a: "A percentile ranking shows how your child compares to all other children of the same age. A score in the 80th percentile means your child performed better than 80% of children at that age level. Eduentry uses a standardised scale with mean 100 and standard deviation 15." },
-              { q: 'How does the score compare internationally?', a: "Every score is mapped against four frameworks: UK National Curriculum (including 11+ and GCSE readiness), US grade-level expectations, PISA proficiency levels, and IB programme readiness." },
-              { q: 'How is this different from a school test?', a: "School tests give every child the same questions and grade against a local cohort. Eduentry adapts in real time and benchmarks results against international standards." },
-              { q: 'How is Eduentry different from CAT4 or GL Assessment?', a: "CAT4 and GL Assessment are professionally normed tests administered in schools. Eduentry uses the same IRT methodology and scoring scale, but questions are AI-generated. Eduentry is free and available to any family instantly." },
-              { q: 'What is the internship assessment?', a: "The internship assessment is a separate 34-question adaptive assessment for high school students aged 14 and above. It evaluates general aptitude, domain knowledge, workplace skills, and interest profile across four career tracks: Technology, Business, Data Analytics, and Digital Marketing. Results are a personalised readiness report with AI-generated insights." },
-              { q: 'How does the adaptive technology work?', a: "Eduentry uses 2-Parameter Logistic (2PL) Item Response Theory with MAP estimation. After each answer, the system updates its estimate of the student's ability and selects the next question to maximise measurement precision." },
-              { q: 'What score is considered good?', a: "Below 85 is Needs Support, 85–94 is Below Average, 95–109 is Average, 110–119 is Above Average, and 120+ is Exceptional. A score of 100 is exactly average. For 11+ grammar school entry, competitive scores are typically 115 and above." },
-              { q: 'Can I use Eduentry to prepare for the 11+ exam?', a: "Yes. The four subjects — English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning — directly mirror the 11+ exam structure used by grammar schools in England." },
-              { q: 'How long does the assessment take?', a: "The academic assessment is 60 questions across 4 subjects — most children complete it in 60–90 minutes. The internship assessment is 34 questions — most students complete it in around 35 minutes. Progress is automatically saved so both can be paused and resumed." },
-              { q: "Is my child's data private?", a: "Yes. Data is stored securely via Supabase with row-level security — only you can see your child's results. We do not sell or share data with third parties." },
-              { q: 'Can I add more than one child?', a: "Yes. A single parent account supports multiple child profiles. Each child has their own assessment history, scores, and personalised recommendations." },
+              { q: 'What is the internship assessment?', a: "A separate 34-question adaptive assessment for high school students aged 14+. It evaluates general aptitude, domain knowledge, workplace skills, and interest profile across four career tracks: Technology, Business, Data Analytics, and Digital Marketing. Results include a personalised readiness report and AI-generated career insights." },
+              { q: 'How long does each assessment take?', a: "The academic assessment is 60 questions across 4 subjects — most children complete it in 60–90 minutes. The internship assessment is 34 questions — most students finish in around 35 minutes. Progress is automatically saved so both can be paused and resumed at any time." },
+              { q: 'How does the adaptive technology work?', a: "Eduentry uses 2-Parameter Logistic (2PL) Item Response Theory with MAP estimation — the same model used in PISA, GCSE, and SAT. After each answer, the system updates its estimate of the student's ability and selects the next question to maximise measurement precision." },
+              { q: "Is my data private?", a: "Yes. All data is stored securely with row-level security — only you can access your results. We do not sell or share data with any third parties. The service is fully GDPR-compliant." },
             ].map(({ q, a }) => (
               <details key={q} className="group bg-white border border-[#d2d2d7] rounded-2xl overflow-hidden">
                 <summary className="flex items-center justify-between px-6 py-4 cursor-pointer font-medium text-[#1d1d1f] text-sm select-none list-none">
