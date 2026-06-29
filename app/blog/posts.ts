@@ -18,6 +18,40 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: 'early-internship-child-development-career',
+    title: 'Why Internships at Early Ages Matter: Child Development, Maturity, and the Career Advantage That Compounds',
+    shortTitle: 'Internships at Early Age: Development & Career Benefits',
+    description:
+      'The developmental and career case for professional experience at 14–16, not 17–18. Neuroscience, university admissions data, and labour market research show early internship experience produces measurably better outcomes — and the gap widens over time.',
+    date: '2026-06-29',
+    readTime: '10 min read',
+    tags: ['Internship', 'Career Development', 'Child Development', 'University Admissions', 'Work Experience'],
+    faqs: [
+      {
+        q: 'What age is best to start an internship?',
+        a: 'Developmental research consistently identifies 14–16 as the optimal window for a first structured professional placement. Starting at this age gives students time to reflect on the experience, build on it, and arrive at their university application with a developed professional narrative. A first internship at 17 or 18 is still valuable — but leaves less time to compound the benefit before UCAS applications close.',
+      },
+      {
+        q: 'How do internships help child development?',
+        a: 'Structured work experience during secondary school builds executive function (planning, impulse control, goal-setting), social maturity (professional communication, managing hierarchy, conflict navigation), and self-efficacy (the belief in one\'s own capability). These are not taught effectively in classroom settings — they require the productive discomfort of a real professional environment with real consequences.',
+      },
+      {
+        q: 'Do internships really improve university acceptance chances?',
+        a: 'Yes. Russell Group universities explicitly reference work experience in admissions guidance for competitive courses. Medicine, law, and technology programmes treat relevant placement experience as a near-requirement. A personal statement written by a student with genuine work experience contains specific observations and reflections — evidence, not assertion — which admissions readers are trained to recognise and reward.',
+      },
+      {
+        q: 'How does early internship experience affect job search outcomes?',
+        a: 'Significantly. NACE\'s 2023 survey found that 83% of employers consider internship experience "somewhat" or "very" important when hiring new graduates. Students with prior internship experience receive job offers at a 70% higher rate before graduation than those without (NACE, 2020). The advantage is greatest for students who started building professional experience early — their networks, references, and track record are more developed than peers who waited until final year.',
+      },
+    ],
+    cta: {
+      heading: 'Is your student ready for a first internship?',
+      body: 'Free adaptive assessment for high school students aged 14+. Discover readiness across aptitude, domain knowledge, and workplace skills — with a personalised AI report.',
+      label: 'Take the free assessment',
+      href: '/internship',
+    },
+  },
+  {
     slug: 'high-school-internship-benefits-university',
     title: 'Why High School Internships Matter: Personality, Readiness, and University Acceptance',
     shortTitle: 'High School Internship Benefits',
