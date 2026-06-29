@@ -8,8 +8,13 @@ export async function proxy(request: NextRequest) {
 
   if (isAI) {
     const { pathname } = request.nextUrl
-    // Marketing + blog → /ai/*
-    if (pathname === '/' || pathname.startsWith('/blog')) {
+    // Marketing, blog, sitemap, robots → /ai/*
+    if (
+      pathname === '/' ||
+      pathname.startsWith('/blog') ||
+      pathname === '/sitemap.xml' ||
+      pathname === '/robots.txt'
+    ) {
       return NextResponse.rewrite(new URL(`/ai${pathname}`, request.url))
     }
     // Functional routes → reuse existing internship/shared pages
