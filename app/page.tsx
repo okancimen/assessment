@@ -11,6 +11,20 @@ export const metadata: Metadata = {
   title: 'Eduentry — Academic Assessment & Internship Readiness Platform',
   description:
     'Free adaptive assessments for students at every stage — international academic benchmarking for ages 6–17, and internship readiness assessment for high school students 14+.',
+  keywords: [
+    'free children academic assessment',
+    'international benchmark children UK',
+    'standardised score percentile ranking',
+    'adaptive assessment PISA GCSE SAT',
+    '11 plus preparation free test',
+    'academic benchmark ages 6 17',
+    'internship readiness assessment high school',
+    'high school internship aptitude test',
+    'work readiness assessment students 14+',
+    'career readiness test UK',
+    'free online assessment children',
+    'verbal reasoning non-verbal reasoning test',
+  ],
   alternates: { canonical: 'https://eduentry.com', languages: { 'en-GB': 'https://eduentry.com', 'x-default': 'https://eduentry.com' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
@@ -18,6 +32,13 @@ export const metadata: Metadata = {
     title: 'Eduentry — Academic Assessment & Internship Readiness Platform',
     description:
       'Free adaptive assessments built on the same science as PISA, GCSE and SAT. Academic benchmarking for ages 6–17 and internship readiness for high school students 14+.',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eduentry — Academic Assessment & Internship Readiness Platform' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Eduentry — Academic Assessment & Internship Readiness Platform',
+    description: 'Free adaptive assessments built on the same science as PISA, GCSE and SAT. For ages 6–17 (academic) and 14+ (internship readiness).',
+    images: ['/opengraph-image'],
   },
 }
 
@@ -61,7 +82,6 @@ const ORGANIZATION_SCHEMA = {
   url: 'https://eduentry.com',
   logo: { '@type': 'ImageObject', url: 'https://eduentry.com/logo.png', width: 200, height: 60 },
   foundingDate: '2026',
-  sameAs: [],
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 

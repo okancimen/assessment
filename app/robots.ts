@@ -1,6 +1,16 @@
 import type { MetadataRoute } from 'next'
 
-const PRIVATE = ['/dashboard', '/children/', '/assessment/', '/results/', '/api/', '/auth/']
+const PRIVATE = [
+  '/dashboard',
+  '/children/',
+  '/assessment/',
+  '/results/',
+  '/api/',
+  '/auth/',
+  '/admin/',
+  '/internship/apply',
+  '/internship/register',
+]
 
 const AI_BOTS = [
   'GPTBot', 'ClaudeBot', 'Google-Extended', 'PerplexityBot',
