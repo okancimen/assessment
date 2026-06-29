@@ -8,10 +8,14 @@ export async function proxy(request: NextRequest) {
 
   if (isAI) {
     const { pathname } = request.nextUrl
-    // Marketing, blog, sitemap, robots → /ai/*
+    // Marketing, blog, track pages, sitemap, robots → /ai/*
     if (
       pathname === '/' ||
       pathname.startsWith('/blog') ||
+      pathname === '/tech' ||
+      pathname === '/business' ||
+      pathname === '/data-analytics' ||
+      pathname === '/digital-marketing' ||
       pathname === '/sitemap.xml' ||
       pathname === '/robots.txt'
     ) {

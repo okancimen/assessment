@@ -48,6 +48,13 @@ const TRACK_ICONS: Record<string, string> = {
   digital_marketing: '📣',
 }
 
+const TRACK_SLUGS: Record<string, string> = {
+  tech: '/tech',
+  business: '/business',
+  data_analytics: '/data-analytics',
+  digital_marketing: '/digital-marketing',
+}
+
 const PHASES = [
   { label: 'General Aptitude',  qs: 10, desc: 'Verbal & numerical reasoning',        icon: '🧠' },
   { label: 'Domain Knowledge',  qs: 10, desc: 'Track-specific applied knowledge',     icon: '📚' },
@@ -159,11 +166,16 @@ export default function AIHomePage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {INTERNSHIP_TRACKS.map((track) => (
-              <div key={track} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
+              <Link
+                key={track}
+                href={TRACK_SLUGS[track]}
+                className="group bg-white rounded-3xl border border-[#d2d2d7] p-8 hover:border-[#4F46E5]/40 hover:shadow-sm transition-all"
+              >
                 <div className="text-4xl mb-4">{TRACK_ICONS[track]}</div>
-                <h3 className="font-bold text-[#1d1d1f] text-xl mb-2">{INTERNSHIP_TRACK_LABELS[track]}</h3>
-                <p className="text-sm text-[#6e6e73] leading-relaxed">{INTERNSHIP_TRACK_DESCRIPTIONS[track]}</p>
-              </div>
+                <h3 className="font-bold text-[#1d1d1f] text-xl mb-2 group-hover:text-[#4F46E5] transition-colors">{INTERNSHIP_TRACK_LABELS[track]}</h3>
+                <p className="text-sm text-[#6e6e73] leading-relaxed mb-4">{INTERNSHIP_TRACK_DESCRIPTIONS[track]}</p>
+                <span className="text-sm font-semibold text-[#4F46E5] opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</span>
+              </Link>
             ))}
           </div>
         </div>

@@ -154,6 +154,32 @@ export default async function AIBlogPostPage({ params }: { params: Promise<{ slu
           </section>
         )}
 
+        {/* Track picker */}
+        <section className="mt-16 mb-8 border border-[#d2d2d7] rounded-2xl p-8">
+          <h2 className="text-xl font-bold text-[#1d1d1f] mb-2">Ready to apply? Pick your track.</h2>
+          <p className="text-sm text-[#6e6e73] mb-6">Free 34-question assessment — takes 35 minutes. Choose the track that fits where you want to go.</p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { href: '/tech',              icon: '💻', label: 'Technology',        desc: 'Coding logic · Algorithms · Cybersecurity · UX' },
+              { href: '/business',          icon: '📈', label: 'Business',          desc: 'Market analysis · Financial literacy · Strategy' },
+              { href: '/data-analytics',    icon: '📊', label: 'Data Analytics',    desc: 'Charts · Statistics · SQL · Insights' },
+              { href: '/digital-marketing', icon: '📣', label: 'Digital Marketing', desc: 'SEO · Social media · Analytics · Campaigns' },
+            ].map(({ href, icon, label, desc }) => (
+              <Link
+                key={href}
+                href={href}
+                className="group flex items-start gap-3 p-4 rounded-xl border border-[#d2d2d7] hover:border-[#4F46E5]/50 hover:bg-[#f5f5f7] transition-all"
+              >
+                <span className="text-2xl mt-0.5">{icon}</span>
+                <div>
+                  <div className="font-semibold text-[#1d1d1f] text-sm group-hover:text-[#4F46E5] transition-colors">{label}</div>
+                  <div className="text-xs text-[#6e6e73] mt-0.5">{desc}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'Ready for your first internship?'}</h2>
           <p className="text-indigo-200 mb-8">{post.cta?.body ?? 'Free 34-question adaptive assessment. Get your personalised readiness report in 35 minutes.'}</p>

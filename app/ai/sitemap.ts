@@ -6,8 +6,12 @@ const INTERNSHIP_TAGS = ['Internship', 'Career Development', 'Work Experience']
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
-    { url: BASE,           lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 1.0 },
-    { url: `${BASE}/blog`, lastModified: new Date().toISOString().slice(0, 10), changeFrequency: 'weekly', priority: 0.8 },
+    { url: BASE,                                lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 1.0 },
+    { url: `${BASE}/tech`,                      lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/business`,                  lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/data-analytics`,            lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/digital-marketing`,         lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/blog`,                      lastModified: new Date().toISOString().slice(0, 10), changeFrequency: 'weekly', priority: 0.8 },
   ]
 
   const blogPages: MetadataRoute.Sitemap = BLOG_POSTS
