@@ -2,6 +2,30 @@ import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
 export async function proxy(request: NextRequest) {
+  // ── eduentry.ai hostname routing ──────────────────────────────────────
+  const hostname = request.headers.get('host') ?? ''
+  const isAI = hostname === 'eduentry.ai' || hostname === 'www.eduentry.ai'
+
+  if (isAI) {
+    const { pathname } = request.nextUrl
+    // Marketing + blog → /ai/*
+    if (pathname === '/' || pathname.startsWith('/blog')) {
+      return NextResponse.rewrite(new URL(`/ai${pathname}`, request.url))
+    }
+    // Functional routes → reuse existing internship/shared pages
+    const rewrites: [string, string][] = [
+      ['/register', '/internship/register'],
+      ['/apply',    '/internship/apply'],
+    ]
+    for (const [from, to] of rewrites) {
+      if (pathname === from || pathname.startsWith(from + '/')) {
+        return NextResponse.rewrite(new URL(to + pathname.slice(from.length), request.url))
+      }
+    }
+    // /assessment/*, /auth/*, /dashboard, /admin/*, /api/* pass through
+  }
+  // ─────────────────────────────────────────────────────────────────────
+
   let supabaseResponse = NextResponse.next({ request })
 
   const supabase = createServerClient(
@@ -42,6 +66,8 @@ export async function proxy(request: NextRequest) {
     request.nextUrl.pathname.startsWith('/privacy') ||
     request.nextUrl.pathname.startsWith('/terms') ||
     request.nextUrl.pathname.startsWith('/search') ||
+    request.nextUrl.pathname.startsWith('/internship') ||
+    request.nextUrl.pathname.startsWith('/ai') ||
     request.nextUrl.pathname === '/robots.txt' ||
     request.nextUrl.pathname === '/sitemap.xml'
 
