@@ -9,8 +9,36 @@ export const metadata: Metadata = {
   title: 'Get Placed in a Real Internship — Free Readiness Assessment',
   description:
     'Free AI-powered internship readiness assessment for high school students aged 14+. 34 questions, 35 minutes. Tech, Business, Data Analytics, and Digital Marketing tracks.',
-  alternates: { canonical: BASE_URL },
-  openGraph: { url: BASE_URL, title: 'Get Placed in a Real Internship — Eduentry.ai' },
+  keywords: [
+    'internship readiness assessment UK',
+    'free internship test high school students',
+    'get placed in internship',
+    'tech internship year 10 11 12',
+    'business internship students',
+    'data analytics internship high school',
+    'digital marketing internship students',
+    'work experience assessment 14 16 18',
+    'AI internship readiness report',
+    'voluntary internship students UK',
+    'career readiness assessment year 9 10 11',
+    'UCAS work experience personal statement',
+  ],
+  alternates: { canonical: BASE_URL, languages: { 'en-GB': BASE_URL, 'x-default': BASE_URL } },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  openGraph: {
+    type: 'website',
+    url: BASE_URL,
+    siteName: 'Eduentry.ai',
+    title: 'Get Placed in a Real Internship — Eduentry.ai',
+    description: 'Free AI-powered internship readiness assessment for high school students aged 14+. 34 questions across aptitude, domain knowledge, workplace skills and interest profile.',
+    images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — Internship Readiness Assessment' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Get Placed in a Real Internship — Eduentry.ai',
+    description: 'Free AI-powered internship readiness assessment for high school students aged 14+. 34 questions, 35 minutes.',
+    images: [`${BASE_URL}/opengraph-image`],
+  },
 }
 
 const TRACK_ICONS: Record<string, string> = {
@@ -40,21 +68,56 @@ const internshipPosts = BLOG_POSTS
   .filter(p => p.tags.some(t => INTERNSHIP_TAGS.includes(t)))
   .slice(0, 3)
 
+const ORGANIZATION_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': `${BASE_URL}/#organization`,
+  name: 'Eduentry',
+  url: BASE_URL,
+  foundingDate: '2026',
+  contactPoint: { '@type': 'ContactPoint', contactType: 'partnerships', email: 'partnerships@eduentry.ai' },
+}
+
+const WEBSITE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${BASE_URL}/#website`,
+  name: 'Eduentry.ai',
+  url: BASE_URL,
+  publisher: { '@id': `${BASE_URL}/#organization` },
+}
+
 const SERVICE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Service',
+  '@id': `${BASE_URL}/#service`,
   name: 'Internship Readiness Assessment',
   url: BASE_URL,
-  description: 'Free AI-powered 34-question adaptive assessment for high school students aged 14+.',
-  provider: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
+  description: 'Free AI-powered 34-question adaptive assessment for high school students aged 14+. Evaluates aptitude, domain knowledge, workplace skills, and interest profile across four career tracks.',
+  provider: { '@id': `${BASE_URL}/#organization` },
   audience: { '@type': 'EducationalAudience', audienceType: 'High school students aged 14 and above' },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
+  serviceType: 'Educational Assessment',
+  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+}
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
 }
 
 export default function AIHomePage() {
   return (
     <main className="flex-1">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="py-32 bg-white text-center px-6">

@@ -25,7 +25,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: post.shortTitle,
     description: post.description,
     keywords: post.tags,
-    alternates: { canonical: url },
+    alternates: { canonical: url, languages: { 'en-GB': url, 'x-default': url } },
+    robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
     openGraph: {
       type: 'article',
       title: post.title,

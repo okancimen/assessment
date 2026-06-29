@@ -18,11 +18,19 @@ export const metadata: Metadata = {
     'early internship benefits',
     'student career guides',
   ],
-  alternates: { canonical: `${BASE_URL}/blog` },
+  alternates: { canonical: `${BASE_URL}/blog`, languages: { 'en-GB': `${BASE_URL}/blog`, 'x-default': `${BASE_URL}/blog` } },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
+    type: 'website',
     title: 'Eduentry.ai Blog — Internship & Career Development',
     description: 'Research and guides on early internship experience and career development for high school students.',
     url: `${BASE_URL}/blog`,
+    siteName: 'Eduentry.ai',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Eduentry.ai Blog — Internship & Career Development',
+    description: 'Research and guides on early internship experience, career development, and university admissions for high school students.',
   },
 }
 
@@ -36,9 +44,24 @@ export default function AIBlogPage() {
     ],
   }
 
+  const itemList = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Eduentry.ai Blog — Internship & Career Development',
+    url: `${BASE_URL}/blog`,
+    numberOfItems: posts.length,
+    itemListElement: posts.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${BASE_URL}/blog/${p.slug}`,
+      name: p.title,
+    })),
+  }
+
   return (
     <main className="flex-1">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
 
       <div className="max-w-4xl mx-auto px-6 py-16">
         <nav className="text-sm text-[#6e6e73] mb-8">

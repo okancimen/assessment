@@ -30,6 +30,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Eduentry' }],
   creator: 'Eduentry',
   publisher: 'Eduentry',
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
