@@ -1,24 +1,22 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SUBJECT_LABELS, SUBJECT_DESCRIPTIONS, SUBJECTS } from '@/types'
-import BellCurve from '@/components/landing/BellCurve'
-import Logo from '@/components/ui/Logo'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import { BLOG_POSTS } from '@/app/blog/posts'
 import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
-  title: 'Eduentry — International Academic Benchmark for Children',
+  title: 'Eduentry — Academic Assessment & Internship Readiness Platform',
   description:
-    'Free adaptive assessment benchmarked against UK National Curriculum, PISA and IB — see your child\'s standardised score and percentile ranking. Ages 6–17.',
+    'Free adaptive assessments for students at every stage — international academic benchmarking for ages 6–17, and internship readiness assessment for high school students 14+.',
   alternates: { canonical: 'https://eduentry.com', languages: { 'en-GB': 'https://eduentry.com', 'x-default': 'https://eduentry.com' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     url: 'https://eduentry.com',
-    title: 'Eduentry — International Academic Benchmark for Children',
+    title: 'Eduentry — Academic Assessment & Internship Readiness Platform',
     description:
-      "See where your child stands globally. A free adaptive test benchmarked against UK, US, PISA and IB standards for ages 6–17.",
+      'Free adaptive assessments built on the same science as PISA, GCSE and SAT. Academic benchmarking for ages 6–17 and internship readiness for high school students 14+.',
   },
 }
 
@@ -40,7 +38,7 @@ const SOFTWARE_SCHEMA = {
   url: 'https://eduentry.com',
   applicationCategory: 'EducationalApplication',
   operatingSystem: 'Web Browser',
-  description: 'Free AI-powered adaptive assessment for children aged 6–17.',
+  description: 'Free AI-powered adaptive assessments for students aged 6 and above.',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Free — no subscription required' },
 }
 
@@ -93,77 +91,87 @@ export default function LandingPage() {
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] text-white">
-        <div className="max-w-6xl mx-auto px-6 pt-24 pb-16 text-center">
+        <div className="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
           <p className="text-xs font-semibold text-[#86868b] uppercase tracking-widest mb-5">
-            International academic benchmarking · Ages 6–17
+            Assessments for every stage of learning
           </p>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6 max-w-4xl mx-auto">
-            How does your child
+            The right assessment,
             <br />
-            <span className="text-[#4F46E5]">compare globally?</span>
+            <span className="text-[#4F46E5]">at the right stage.</span>
           </h1>
-          <p className="text-lg sm:text-xl text-[#86868b] max-w-2xl mx-auto mb-10 leading-relaxed">
-            A free adaptive assessment benchmarked against UK, US, PISA and IB standards —
-            so you know exactly where your child stands internationally.
+          <p className="text-lg sm:text-xl text-[#86868b] max-w-2xl mx-auto mb-14 leading-relaxed">
+            Free adaptive assessments built on the same psychometric science as PISA, GCSE and SAT.
+            Choose the assessment that fits where your student is today.
           </p>
-          <div className="flex items-center justify-center gap-4 flex-wrap mb-14">
-            <CtaLink
-              href="/auth/register"
-              label="hero_start_free"
-              className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
-            >
-              Start free assessment
-            </CtaLink>
-            <Link
-              href="#how-it-works"
-              className="text-[#f5f5f7] border border-[#424245] px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors"
-            >
-              How it works
-            </Link>
-          </div>
 
-          {/* Hero visual: score card + bell curve */}
-          <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-[3fr_5fr] gap-4 text-left">
-            {/* Mock result card */}
-            <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] p-6">
-              <div className="flex items-center justify-between mb-5">
-                <div>
-                  <p className="text-[10px] text-[#86868b] font-semibold uppercase tracking-wider">Sample result</p>
-                  <p className="font-bold text-white mt-1">Emma · Age 11</p>
-                </div>
-                <div className="text-right">
-                  <div className="text-3xl font-bold text-[#4F46E5]">109</div>
-                  <div className="text-[11px] text-[#0D9488] font-semibold">Above Average</div>
-                </div>
+          {/* Two product cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-4xl mx-auto text-left">
+
+            {/* Academic card */}
+            <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] p-8 flex flex-col">
+              <p className="text-[10px] text-[#86868b] font-semibold uppercase tracking-wider mb-5">
+                Academic Assessment
+              </p>
+              <h2 className="text-2xl font-bold text-white mb-3 leading-snug">
+                How does your child compare globally?
+              </h2>
+              <p className="text-[#86868b] text-sm leading-relaxed mb-6 flex-1">
+                Benchmarked against UK, US, PISA and IB standards — standardised scores and percentile
+                rankings across English, Maths, Verbal and Non-Verbal Reasoning.
+              </p>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73] mb-7">
+                <span>60 adaptive questions</span>
+                <span>·</span>
+                <span>4 subjects</span>
+                <span>·</span>
+                <span>Ages 6–17</span>
+                <span>·</span>
+                <span>Free</span>
               </div>
-              <div className="space-y-3">
-                {[
-                  { label: 'English',              score: 103, color: '#4F46E5', pct: 58 },
-                  { label: 'Mathematics',          score: 119, color: '#0D9488', pct: 90 },
-                  { label: 'Verbal Reasoning',     score: 113, color: '#7C3AED', pct: 79 },
-                  { label: 'Non-Verbal Reasoning', score:  91, color: '#DB2777', pct: 27 },
-                ].map((s) => (
-                  <div key={s.label}>
-                    <div className="flex justify-between text-xs text-[#86868b] mb-1">
-                      <span>{s.label}</span>
-                      <span className="font-semibold text-white">{s.score}</span>
-                    </div>
-                    <div className="h-1.5 bg-[#424245] rounded-full overflow-hidden">
-                      <div className="h-full rounded-full transition-all" style={{ width: `${s.pct}%`, background: s.color }} />
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-5 pt-4 border-t border-[#424245] flex items-center gap-2">
-                <span className="text-[10px] text-[#6e6e73]">Powered by</span>
-                <span className="text-[10px] font-semibold text-[#86868b]">Claude AI · Anthropic</span>
-              </div>
+              <CtaLink
+                href="/auth/register"
+                label="hero_academic"
+                className="bg-[#4F46E5] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors text-center"
+              >
+                Start free assessment
+              </CtaLink>
             </div>
 
-            {/* Bell curve */}
-            <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] overflow-hidden">
-              <BellCurve hideScores />
+            {/* Internship card */}
+            <div className="bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-8 flex flex-col">
+              <div className="flex items-center gap-2 mb-5">
+                <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-wider">
+                  Internship Assessment
+                </p>
+                <span className="text-[10px] bg-[#4F46E5] text-white font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                  New
+                </span>
+              </div>
+              <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3 leading-snug">
+                Is your student ready for the workplace?
+              </h2>
+              <p className="text-[#6e6e73] text-sm leading-relaxed mb-6 flex-1">
+                A 34-question adaptive assessment across aptitude, domain knowledge, workplace skills,
+                and interest profile. Personalised readiness report and AI career insights. For students aged 14+.
+              </p>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73] mb-7">
+                <span>34 adaptive questions</span>
+                <span>·</span>
+                <span>4 career tracks</span>
+                <span>·</span>
+                <span>Ages 14+</span>
+                <span>·</span>
+                <span>Free</span>
+              </div>
+              <Link
+                href="/internship"
+                className="bg-[#1d1d1f] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors text-center"
+              >
+                Learn about the programme →
+              </Link>
             </div>
+
           </div>
         </div>
       </section>
@@ -182,6 +190,13 @@ export default function LandingPage() {
               <span>{text}</span>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── Academic Assessment detail ─────────────────────────────────── */}
+      <section className="py-6 border-b border-[#d2d2d7] bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <p className="text-[10px] font-semibold text-[#6e6e73] uppercase tracking-widest text-center">Academic Assessment</p>
         </div>
       </section>
 
@@ -305,22 +320,22 @@ export default function LandingPage() {
           <p className="text-[11px] font-semibold text-[#6e6e73] uppercase tracking-widest mb-10">Powered by</p>
           <div className="flex flex-wrap items-center justify-center gap-12">
             {[
-              { label: 'Claude AI', sub: 'by Anthropic', bg: '#D97706', icon: (
+              { label: 'Claude AI', sub: 'by Anthropic', icon: (
                 <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
                   <path d="M12 2L2 19.5h20L12 2z" fill="#D97706" />
                 </svg>
               )},
-              { label: '2PL IRT', sub: 'Psychometric model', bg: '#4F46E5', icon: (
+              { label: '2PL IRT', sub: 'Psychometric model', icon: (
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#4F46E5" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               )},
-              { label: 'MAP Estimation', sub: 'Bayesian scoring', bg: '#0D9488', icon: (
+              { label: 'MAP Estimation', sub: 'Bayesian scoring', icon: (
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#0D9488" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               )},
-              { label: 'Supabase', sub: 'Secure storage', bg: '#22C55E', icon: (
+              { label: 'Supabase', sub: 'Secure storage', icon: (
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="#22C55E">
                   <path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C.09 12.888.917 14.05 1.932 13.8l9.94-2.483a.972.972 0 00.734-.94L11.9 1.036zM12.1 22.964c.015.986 1.26 1.41 1.874.637l9.262-11.651c.673-.838-.154-2-.169-1.75l-9.94 2.483a.972.972 0 00-.734.94L12.1 22.964z" />
                 </svg>
@@ -342,7 +357,7 @@ export default function LandingPage() {
       <section id="how-it-works" className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-widest mb-4">Simple to start</p>
+            <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-widest mb-4">Academic Assessment · Simple to start</p>
             <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               From signup to results
               <br />in under two hours.
@@ -389,50 +404,16 @@ export default function LandingPage() {
       <section className="bg-[#1d1d1f] py-20">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
-            { value: '60', label: 'Adaptive questions' },
-            { value: '4',  label: 'International frameworks' },
-            { value: '10', label: 'Difficulty levels' },
-            { value: '6–17', label: 'Age range' },
+            { value: '2',     label: 'Assessment types' },
+            { value: '60+',   label: 'Adaptive questions' },
+            { value: '4',     label: 'International frameworks' },
+            { value: '6+',    label: 'Starting age' },
           ].map(({ value, label }) => (
             <div key={label}>
               <div className="text-5xl font-bold text-white mb-2">{value}</div>
               <div className="text-sm text-[#86868b]">{label}</div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* ── Internship ───────────────────────────────────────────────────── */}
-      <section className="py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="bg-gradient-to-br from-[#eef2ff] to-[#f5f5f7] rounded-3xl p-10 md:p-14 flex flex-col md:flex-row items-center gap-10">
-            <div className="flex-1 space-y-5">
-              <span className="inline-block text-xs font-semibold text-[#4F46E5] uppercase tracking-widest bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1 rounded-full">New — Internship Programme</span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#1d1d1f] tracking-tight leading-tight">
-                For high school students:<br />find your readiness for work.
-              </h2>
-              <p className="text-[#6e6e73] text-sm leading-relaxed max-w-md">
-                A 34-question adaptive assessment across four phases — aptitude, domain knowledge, workplace skills, and interest profile. Get a personalised readiness report and AI-generated career insights.
-              </p>
-              <div className="flex flex-wrap gap-3 pt-1">
-                {['General Aptitude', 'Domain Knowledge', 'Workplace Skills', 'Interest Profile'].map((phase) => (
-                  <span key={phase} className="text-xs font-medium text-[#4F46E5] bg-white border border-[#c7d2fe] px-3 py-1 rounded-full">{phase}</span>
-                ))}
-              </div>
-            </div>
-            <div className="flex-shrink-0 text-center space-y-4">
-              <Link
-                href="/internship"
-                className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-8 py-3.5 rounded-full font-semibold text-sm hover:bg-[#4338CA] transition-colors"
-              >
-                Learn about the programme
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-              <p className="text-xs text-[#6e6e73]">Free · No account needed to read</p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -445,15 +426,16 @@ export default function LandingPage() {
           <div className="space-y-2">
             {[
               { q: 'Is Eduentry free to use?', a: "Yes, Eduentry is completely free. There are no subscriptions, hidden fees, or premium tiers. Create a free account, add your child's profile, and start the assessment at no cost." },
-              { q: 'What subjects does the assessment cover?', a: "English (reading comprehension, grammar, vocabulary), Mathematics (arithmetic, algebra, geometry, problem-solving), Verbal Reasoning (analogies, classifications, sequences), and Non-Verbal Reasoning (patterns, spatial reasoning, matrices). Each subject has 15 adaptive questions." },
+              { q: 'What subjects does the academic assessment cover?', a: "English (reading comprehension, grammar, vocabulary), Mathematics (arithmetic, algebra, geometry, problem-solving), Verbal Reasoning (analogies, classifications, sequences), and Non-Verbal Reasoning (patterns, spatial reasoning, matrices). Each subject has 15 adaptive questions." },
               { q: 'What is a percentile ranking?', a: "A percentile ranking shows how your child compares to all other children of the same age. A score in the 80th percentile means your child performed better than 80% of children at that age level. Eduentry uses a standardised scale with mean 100 and standard deviation 15." },
               { q: 'How does the score compare internationally?', a: "Every score is mapped against four frameworks: UK National Curriculum (including 11+ and GCSE readiness), US grade-level expectations, PISA proficiency levels, and IB programme readiness." },
               { q: 'How is this different from a school test?', a: "School tests give every child the same questions and grade against a local cohort. Eduentry adapts in real time and benchmarks results against international standards." },
               { q: 'How is Eduentry different from CAT4 or GL Assessment?', a: "CAT4 and GL Assessment are professionally normed tests administered in schools. Eduentry uses the same IRT methodology and scoring scale, but questions are AI-generated. Eduentry is free and available to any family instantly." },
-              { q: 'How does the adaptive technology work?', a: "Eduentry uses 2-Parameter Logistic (2PL) Item Response Theory with MAP estimation. After each answer, the system updates its estimate of the child's ability and selects the next question to maximise measurement precision." },
+              { q: 'What is the internship assessment?', a: "The internship assessment is a separate 34-question adaptive assessment for high school students aged 14 and above. It evaluates general aptitude, domain knowledge, workplace skills, and interest profile across four career tracks: Technology, Business, Data Analytics, and Digital Marketing. Results are a personalised readiness report with AI-generated insights." },
+              { q: 'How does the adaptive technology work?', a: "Eduentry uses 2-Parameter Logistic (2PL) Item Response Theory with MAP estimation. After each answer, the system updates its estimate of the student's ability and selects the next question to maximise measurement precision." },
               { q: 'What score is considered good?', a: "Below 85 is Needs Support, 85–94 is Below Average, 95–109 is Average, 110–119 is Above Average, and 120+ is Exceptional. A score of 100 is exactly average. For 11+ grammar school entry, competitive scores are typically 115 and above." },
               { q: 'Can I use Eduentry to prepare for the 11+ exam?', a: "Yes. The four subjects — English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning — directly mirror the 11+ exam structure used by grammar schools in England." },
-              { q: 'How long does the assessment take?', a: "The full assessment is 60 questions across 4 subjects (15 per subject). Most children complete it in 60–90 minutes. You can take breaks between subjects — progress is automatically saved." },
+              { q: 'How long does the assessment take?', a: "The academic assessment is 60 questions across 4 subjects — most children complete it in 60–90 minutes. The internship assessment is 34 questions — most students complete it in around 35 minutes. Progress is automatically saved so both can be paused and resumed." },
               { q: "Is my child's data private?", a: "Yes. Data is stored securely via Supabase with row-level security — only you can see your child's results. We do not sell or share data with third parties." },
               { q: 'Can I add more than one child?', a: "Yes. A single parent account supports multiple child profiles. Each child has their own assessment history, scores, and personalised recommendations." },
             ].map(({ q, a }) => (
@@ -487,7 +469,7 @@ export default function LandingPage() {
             <Link href="/blog" className="text-xs font-semibold text-[#4F46E5] hover:underline">View all →</Link>
           </div>
           <div className="grid sm:grid-cols-3 gap-4">
-            {BLOG_POSTS.slice(1, 4).map((post) => (
+            {BLOG_POSTS.slice(0, 3).map((post) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
@@ -509,22 +491,32 @@ export default function LandingPage() {
       </section>
 
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
-      <section className="bg-[#1d1d1f] py-28 text-center px-6">
-        <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-widest mb-6">Free · No subscription</p>
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6 max-w-3xl mx-auto">
-          Discover where your child
-          <br />stands — globally.
-        </h2>
-        <p className="text-[#86868b] mb-10 max-w-xl mx-auto text-lg">
-          Full international context in under 2 hours.
-        </p>
-        <CtaLink
-          href="/auth/register"
-          label="bottom_cta"
-          className="inline-block bg-[#4F46E5] text-white px-12 py-4 rounded-full text-base font-semibold hover:bg-[#4338CA] transition-colors"
-        >
-          Start free assessment →
-        </CtaLink>
+      <section className="bg-[#1d1d1f] py-28 px-6">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
+            <p className="text-[10px] text-[#86868b] font-semibold uppercase tracking-widest mb-4">Academic Assessment</p>
+            <h2 className="text-2xl font-bold text-white mb-3">Discover where your child stands — globally.</h2>
+            <p className="text-[#86868b] text-sm mb-8">Full international context in under 2 hours.</p>
+            <CtaLink
+              href="/auth/register"
+              label="bottom_cta_academic"
+              className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
+            >
+              Start free assessment →
+            </CtaLink>
+          </div>
+          <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
+            <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Internship Assessment</p>
+            <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Find your student&apos;s internship readiness.</h2>
+            <p className="text-[#6e6e73] text-sm mb-8">Personalised report and AI insights in 35 minutes.</p>
+            <Link
+              href="/internship"
+              className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors"
+            >
+              Learn about the programme →
+            </Link>
+          </div>
+        </div>
       </section>
 
       <PublicFooter />
