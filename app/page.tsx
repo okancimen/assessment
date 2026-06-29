@@ -92,36 +92,35 @@ export default function LandingPage() {
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] text-white">
-        <div className="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
-          <p className="text-xs font-semibold text-[#86868b] uppercase tracking-widest mb-5">
+        <div className="max-w-6xl mx-auto px-6 pt-28 pb-20 text-center">
+          <p className="text-xs font-medium text-[#86868b] uppercase tracking-[0.15em] mb-6">
             Assessments for every stage of learning
           </p>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6 max-w-4xl mx-auto">
+          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
             The right assessment,
             <br />
             <span className="text-[#4F46E5]">at the right stage.</span>
           </h1>
-          <p className="text-lg sm:text-xl text-[#86868b] max-w-2xl mx-auto mb-14 leading-relaxed">
-            Free adaptive assessments built on the same psychometric science as PISA, GCSE and SAT.
-            Choose the assessment that fits where your student is today.
+          <p className="text-xl sm:text-2xl text-[#86868b] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
+            Free adaptive assessments built on the same science as PISA, GCSE and SAT.
           </p>
 
           {/* Two product cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-4xl mx-auto text-left">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-4xl mx-auto text-left">
 
             {/* Academic card */}
-            <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] p-8 flex flex-col">
-              <p className="text-[10px] text-[#86868b] font-semibold uppercase tracking-wider mb-5">
+            <div className="bg-[#2d2d2f] rounded-[28px] border border-[#424245] p-10 flex flex-col">
+              <p className="text-[11px] text-[#86868b] font-medium uppercase tracking-[0.12em] mb-6">
                 Academic Assessment
               </p>
-              <h2 className="text-2xl font-bold text-white mb-3 leading-snug">
+              <h2 className="text-3xl font-bold text-white mb-4 leading-snug tracking-tight">
                 How does your child compare globally?
               </h2>
-              <p className="text-[#86868b] text-sm leading-relaxed mb-6 flex-1">
+              <p className="text-[#86868b] text-sm leading-relaxed mb-8 flex-1">
                 Benchmarked against UK, US, PISA and IB standards — standardised scores and percentile
                 rankings across English, Maths, Verbal and Non-Verbal Reasoning.
               </p>
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73] mb-7">
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73] mb-8">
                 <span>60 adaptive questions</span>
                 <span>·</span>
                 <span>4 subjects</span>
@@ -133,33 +132,33 @@ export default function LandingPage() {
               <CtaLink
                 href="/auth/register"
                 label="hero_academic"
-                className="bg-[#4F46E5] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors text-center"
+                className="bg-[#4F46E5] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#4338CA] transition-colors text-center"
               >
                 Start free assessment
               </CtaLink>
-              <Link href="#academic" className="text-center text-xs text-[#6e6e73] hover:text-[#86868b] transition-colors mt-3">
-                See how it works ↓
+              <Link href="#academic" className="text-center text-xs text-[#6e6e73] hover:text-[#86868b] transition-colors mt-4">
+                Learn more ↓
               </Link>
             </div>
 
             {/* Internship card */}
-            <div className="bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-8 flex flex-col">
-              <div className="flex items-center gap-2 mb-5">
-                <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-wider">
+            <div className="bg-[#eef2ff] rounded-[28px] border border-[#c7d2fe] p-10 flex flex-col">
+              <div className="flex items-center gap-2.5 mb-6">
+                <p className="text-[11px] text-[#4F46E5] font-medium uppercase tracking-[0.12em]">
                   Internship Assessment
                 </p>
                 <span className="text-[10px] bg-[#4F46E5] text-white font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">
                   New
                 </span>
               </div>
-              <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3 leading-snug">
+              <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4 leading-snug tracking-tight">
                 Is your student ready for the workplace?
               </h2>
-              <p className="text-[#6e6e73] text-sm leading-relaxed mb-6 flex-1">
+              <p className="text-[#6e6e73] text-sm leading-relaxed mb-8 flex-1">
                 A 34-question adaptive assessment across aptitude, domain knowledge, workplace skills,
-                and interest profile. Personalised readiness report and AI career insights. For students aged 14+.
+                and interest profile. Personalised readiness report and AI career insights.
               </p>
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73] mb-7">
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73] mb-8">
                 <span>34 adaptive questions</span>
                 <span>·</span>
                 <span>4 career tracks</span>
@@ -170,12 +169,12 @@ export default function LandingPage() {
               </div>
               <Link
                 href="/internship"
-                className="bg-[#1d1d1f] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors text-center"
+                className="bg-[#1d1d1f] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#2d2d2f] transition-colors text-center"
               >
-                Learn about the programme →
+                Learn about the programme
               </Link>
-              <Link href="#internship" className="text-center text-xs text-[#4F46E5]/60 hover:text-[#4F46E5] transition-colors mt-3">
-                See how it works ↓
+              <Link href="#internship" className="text-center text-xs text-[#4F46E5]/60 hover:text-[#4F46E5] transition-colors mt-4">
+                Learn more ↓
               </Link>
             </div>
 
@@ -183,25 +182,15 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── Trust strip ───────────────────────────────────────────────────── */}
-      <section className="border-b border-[#d2d2d7] bg-[#f5f5f7] py-4">
-        <div className="max-w-6xl mx-auto px-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-2.5 text-xs text-[#6e6e73]">
-          {[
-            { icon: '🌍', text: 'Benchmarked against UK, US, PISA & IB' },
-            { icon: '🏛️', text: 'IRT methodology used in PISA, GCSE & SAT' },
-            { icon: '🤖', text: 'Questions generated by Claude AI' },
-            { icon: '🔒', text: 'GDPR-compliant · Data never sold' },
-          ].map(({ icon, text }) => (
-            <div key={text} className="flex items-center gap-2">
-              <span>{icon}</span>
-              <span>{text}</span>
-            </div>
-          ))}
-        </div>
+      {/* ── Trust line ────────────────────────────────────────────────────── */}
+      <section className="border-b border-[#d2d2d7] bg-[#f5f5f7] py-3">
+        <p className="text-center text-[11px] text-[#6e6e73] tracking-wide">
+          Built on the same science as PISA, GCSE &amp; SAT &nbsp;·&nbsp; GDPR-compliant &nbsp;·&nbsp; Free
+        </p>
       </section>
 
       {/* ── Social proof ─────────────────────────────────────────────────── */}
-      <section className="py-16 bg-white border-b border-[#d2d2d7]">
+      <section className="py-24 bg-white border-b border-[#d2d2d7]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -259,14 +248,14 @@ export default function LandingPage() {
       </section>
 
       {/* ── Academic section header + sample result ───────────────────── */}
-      <section id="academic" className="py-24 bg-white">
+      <section id="academic" className="py-32 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
 
             {/* Text */}
             <div className="flex-1">
               <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-widest mb-4">Academic Assessment · Ages 6–17</p>
-              <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
                 See where your child<br />stands internationally.
               </h2>
               <p className="text-[#6e6e73] text-lg leading-relaxed mb-8 max-w-lg">
@@ -337,10 +326,10 @@ export default function LandingPage() {
       </section>
 
       {/* ── Subjects ──────────────────────────────────────────────────────── */}
-      <section className="bg-white pb-24">
+      <section className="bg-white pb-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Four subjects. One global picture.
             </h2>
             <p className="text-[#6e6e73] max-w-xl mx-auto text-lg">
@@ -396,11 +385,11 @@ export default function LandingPage() {
       </section>
 
       {/* ── Methodology ───────────────────────────────────────────────────── */}
-      <section id="methodology" className="bg-[#f5f5f7] py-24">
+      <section id="methodology" className="bg-[#f5f5f7] py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-widest mb-4">The science behind the score</p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <p className="text-xs font-medium text-[#6e6e73] uppercase tracking-[0.15em] mb-5">The science behind the score</p>
+            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Built on the same science as
               <br />international assessments.
             </h2>
@@ -469,51 +458,12 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── Technology strip ─────────────────────────────────────────────── */}
-      <section className="py-16 border-b border-[#d2d2d7]">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="text-[11px] font-semibold text-[#6e6e73] uppercase tracking-widest mb-10">Powered by</p>
-          <div className="flex flex-wrap items-center justify-center gap-12">
-            {[
-              { label: 'Claude AI', sub: 'by Anthropic', icon: (
-                <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
-                  <path d="M12 2L2 19.5h20L12 2z" fill="#D97706" />
-                </svg>
-              )},
-              { label: '2PL IRT', sub: 'Psychometric model', icon: (
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#4F46E5" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              )},
-              { label: 'MAP Estimation', sub: 'Bayesian scoring', icon: (
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#0D9488" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              )},
-              { label: 'Supabase', sub: 'Secure storage', icon: (
-                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="#22C55E">
-                  <path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C.09 12.888.917 14.05 1.932 13.8l9.94-2.483a.972.972 0 00.734-.94L11.9 1.036zM12.1 22.964c.015.986 1.26 1.41 1.874.637l9.262-11.651c.673-.838-.154-2-.169-1.75l-9.94 2.483a.972.972 0 00-.734.94L12.1 22.964z" />
-                </svg>
-              )},
-            ].map(({ label, sub, icon }) => (
-              <div key={label} className="flex flex-col items-center gap-2">
-                <div className="w-12 h-12 bg-[#f5f5f7] rounded-2xl border border-[#d2d2d7] flex items-center justify-center">
-                  {icon}
-                </div>
-                <div className="text-sm font-semibold text-[#1d1d1f]">{label}</div>
-                <div className="text-xs text-[#6e6e73]">{sub}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── How it works ─────────────────────────────────────────────────── */}
-      <section id="how-it-works" className="py-24">
+      <section id="how-it-works" className="py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-widest mb-4">Academic Assessment · Simple to start</p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <p className="text-xs font-medium text-[#6e6e73] uppercase tracking-[0.15em] mb-5">Academic Assessment · Simple to start</p>
+            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               From signup to results
               <br />in under two hours.
             </h2>
@@ -556,15 +506,15 @@ export default function LandingPage() {
       </section>
 
       {/* ── Internship section ───────────────────────────────────────────── */}
-      <section id="internship" className="bg-[#f5f5f7] py-24">
+      <section id="internship" className="bg-[#f5f5f7] py-32">
         <div className="max-w-6xl mx-auto px-6">
 
           {/* Header */}
           <div className="text-center mb-14">
-            <span className="inline-block text-xs font-semibold text-[#4F46E5] uppercase tracking-widest bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1.5 rounded-full mb-5">
+            <span className="inline-block text-xs font-medium text-[#4F46E5] uppercase tracking-[0.15em] bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1.5 rounded-full mb-5">
               Internship Assessment · New
             </span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
               Find your internship readiness.
             </h2>
             <p className="text-[#6e6e73] text-lg max-w-2xl mx-auto leading-relaxed">
@@ -631,9 +581,9 @@ export default function LandingPage() {
       </section>
 
       {/* ── What you get ─────────────────────────────────────────────────── */}
-      <section className="bg-[#1d1d1f] py-20">
+      <section className="bg-[#1d1d1f] py-32">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-xs font-semibold text-[#86868b] uppercase tracking-widest text-center mb-12">What you get</p>
+          <p className="text-xs font-medium text-[#86868b] uppercase tracking-[0.15em] text-center mb-14">What you get</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             {/* Academic */}
@@ -695,10 +645,10 @@ export default function LandingPage() {
       </section>
 
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
-      <section className="py-24 bg-[#f5f5f7]">
+      <section className="py-32 bg-[#f5f5f7]">
         <div className="max-w-3xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#1d1d1f] tracking-tight">Frequently asked questions</h2>
+          <div className="text-center mb-14">
+            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">Questions.</h2>
           </div>
           <div className="space-y-2">
             {[
@@ -736,10 +686,10 @@ export default function LandingPage() {
       </section>
 
       {/* ── Blog ─────────────────────────────────────────────────────────── */}
-      <section className="py-24">
+      <section className="py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-end justify-between mb-10">
-            <h2 className="text-3xl font-bold text-[#1d1d1f] tracking-tight">Latest from the blog</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight">Latest from the blog</h2>
             <Link href="/blog" className="text-xs font-semibold text-[#4F46E5] hover:underline">View all →</Link>
           </div>
           <div className="grid sm:grid-cols-3 gap-4">
@@ -765,7 +715,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
-      <section className="bg-[#1d1d1f] py-28 px-6">
+      <section className="bg-[#1d1d1f] py-32 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#86868b] font-semibold uppercase tracking-widest mb-4">Academic Assessment</p>
