@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Navbar from '@/components/dashboard/Navbar'
+import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import { INTERNSHIP_TRACKS, INTERNSHIP_TRACK_LABELS, INTERNSHIP_TRACK_DESCRIPTIONS } from '@/types'
 
@@ -89,7 +89,7 @@ export default function InternshipLandingPage() {
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
-      <Navbar />
+      <PublicNav />
       <main className="flex-1">
         {/* Hero */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 pt-16 pb-12 text-center">
