@@ -33,11 +33,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: post.description,
       url,
       publishedTime: post.date,
+      images: [{ url: `/blog/${slug}/opengraph-image`, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
+      images: [`/blog/${slug}/opengraph-image`],
     },
   }
 }

@@ -75,6 +75,7 @@ const ORGANIZATION_SCHEMA = {
   name: 'Eduentry',
   url: BASE_URL,
   foundingDate: '2026',
+  sameAs: ['https://eduentry.com'],
   contactPoint: { '@type': 'ContactPoint', contactType: 'partnerships', email: 'partnerships@eduentry.ai' },
 }
 
