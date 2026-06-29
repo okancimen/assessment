@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Free Assessments by Subject — Eduentry',
   description: 'Free adaptive assessments for children aged 6–17 across English, Maths, Verbal Reasoning and Non-Verbal Reasoning. Instant standardised scores.',
   alternates: { canonical: `${BASE_URL}/subjects`, languages: { 'en-GB': `${BASE_URL}/subjects`, 'x-default': `${BASE_URL}/subjects` } },
+  keywords: ['free English assessment children', 'free maths test children', 'verbal reasoning test free', 'non-verbal reasoning test free', 'children assessment by subject', 'standardised score by subject UK'],
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     title: 'Free Assessments by Subject — Eduentry',

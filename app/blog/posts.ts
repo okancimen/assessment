@@ -74,6 +74,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'The UK typically scores around 495–510 in PISA Mathematics, above the OECD average of 472 but below top-performing countries such as Singapore (575), Japan (536), and South Korea (527). In Reading, the UK scores approximately 494, broadly in line with the OECD average.',
       },
     ],
+    cta: {
+      heading: 'See where your child stands internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'how-to-prepare-for-11-plus',
@@ -102,6 +108,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'In the early preparation phase (12–18 months out), 3–4 hours per week spread across 5–6 short daily sessions is sufficient. In the final 3 months, this can increase to 5–7 hours per week. More than 10 hours per week is counterproductive and increases anxiety without meaningful score improvement.',
       },
     ],
+    cta: {
+      heading: 'Get your child\'s 11+ benchmark today',
+      body: 'Free adaptive assessment across English, Maths, Verbal and Non-Verbal Reasoning — with a standardised score, percentile ranking, and AI-generated recommendations.',
+      label: 'Start free 11+ practice test',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'what-is-a-standardised-score',
@@ -130,6 +142,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'A standardised score of 115 means your child scored better than approximately 84% of children their age on that assessment. It sits one standard deviation above the mean of 100, which is described as "above average" on most cognitive and academic assessments. For grammar school purposes, 115 is within the competitive range for most areas outside London.',
       },
     ],
+    cta: {
+      heading: 'Get your child\'s standardised score',
+      body: 'Free adaptive assessment on the same mean-100, SD-15 scale used by PISA, GL Assessment, and professional cognitive tests.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'verbal-reasoning-11-plus-guide',
@@ -158,6 +176,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'For most children, verbal reasoning is more challenging than maths in the 11+ because it is an unfamiliar skill. Children who are strong at English sometimes underperform initially because verbal reasoning is logic-based, not literacy-based. The good news is that verbal reasoning is highly learnable — the question types are finite and respond well to systematic practice.',
       },
     ],
+    cta: {
+      heading: 'Test your child\'s verbal reasoning today',
+      body: 'Free adaptive assessment across Verbal Reasoning, Non-Verbal Reasoning, English and Maths — with a standardised score and percentile ranking.',
+      label: 'Start free 11+ practice test',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'grammar-school-entry-requirements-2026',
@@ -186,6 +210,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Children who do not pass the 11+ attend non-selective state secondary schools, which educate the vast majority of children and include many outstanding schools. Some areas allow appeals if a child\'s score is in the borderline band or if there were extenuating circumstances on the test day. Children who narrowly miss a grammar school place can also reapply at 13+ where schools offer it.',
       },
     ],
+    cta: {
+      heading: 'Know your child\'s grammar school chances',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking — the same scale used by grammar school entrance exams across England.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   // US
   {
@@ -215,6 +245,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Gifted education is not federally mandated in the United States. Each state sets its own policies, and provision varies dramatically. Some states (like Texas and Georgia) have strong mandated gifted programs; others provide minimal or no funding. Even within states, individual school districts differ significantly in the quality and availability of gifted services.',
       },
     ],
+    cta: {
+      heading: 'See how your child compares internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking — the same scale used by cognitive assessments internationally.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'nwea-map-scores-explained',
@@ -243,6 +279,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Most schools administer MAP Growth two or three times per year — typically in fall, winter, and spring. This allows teachers and parents to track growth over time, not just current achievement level. The growth trajectory (how many RIT points a student gains per year) is often as important as the absolute score when identifying academically advanced students.',
       },
     ],
+    cta: {
+      heading: 'See how your child compares internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking — the same scale used by cognitive assessments internationally.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'isee-ssat-private-school-guide',
@@ -271,6 +313,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Most academically selective independent schools require either the ISEE or SSAT, particularly for middle and upper school admission. However, some schools — especially at the elementary level or those that do not select primarily on academic ability — use school-designed assessments or no formal test. Always check your specific target school\'s requirements.',
       },
     ],
+    cta: {
+      heading: 'See how your child compares internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'how-to-prepare-gifted-test',
@@ -299,6 +347,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'For preparation-responsive tests like the CogAT or NNAT, a 6–12 month horizon of consistent skill-building produces the best results. This includes daily reading, weekly reasoning puzzles, and monthly timed practice sessions. For IQ tests like the WISC-V, focus on reducing anxiety and familiarising your child with the testing environment rather than content preparation.',
       },
     ],
+    cta: {
+      heading: 'See how your child compares internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking — the same benchmarks used in gifted identification worldwide.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   // Netherlands
   {
@@ -328,6 +382,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'The Doorstroomtoets measures Taal (language — reading comprehension, vocabulary, spelling), Rekenen (mathematics — operations, fractions, percentages, applied problems), and in some versions Lezen (reading fluency). It does not test history, geography, science, or creative subjects. It is an achievement test measuring curriculum knowledge, not an ability or IQ test.',
       },
     ],
+    cta: {
+      heading: 'Benchmark your child internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking — directly comparable to Cito and international PISA and IB benchmarks.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'netherlands-vwo-gymnasium-guide',
@@ -356,6 +416,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'The schooladvies is the primary factor for VWO entry. A child with a VWO or HAVO/VWO schooladvies from their group 8 teacher, confirmed by a Doorstroomtoets score in the VWO range (Cito 545+), can apply to VWO. The most prestigious schools (Gymnasium, TTO programmes) may also run additional entrance procedures including an intake interview.',
       },
     ],
+    cta: {
+      heading: 'Benchmark your child internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'netherlands-gifted-education-hoogbegaafd',
@@ -384,6 +450,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'There is no universal screening in the Netherlands. Identification happens through teacher referral, parent referral, or school-based screening using tools like the NSCCT. A formal diagnosis requires a private or school-arranged psychodiagnostisch onderzoek (WISC-V NL) administered by an orthopedagoog or psycholoog. Wait times for school-arranged assessments can be long; private assessments are faster.',
       },
     ],
+    cta: {
+      heading: 'Benchmark your child internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'netherlands-international-school-admissions',
@@ -412,6 +484,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'No. International schools in the Netherlands are private fee-paying institutions. Annual fees typically range from €10,000–€25,000 for IB and British curriculum schools. Some multinational employers provide school fee allowances as part of expat packages. There are also international streams within some Dutch state schools (ISK programmes) that are free.',
       },
     ],
+    cta: {
+      heading: 'Benchmark your child internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   // UAE
   {
@@ -441,6 +519,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'CAT4 and IQ tests like the WISC-V both measure cognitive reasoning, but they are not identical. CAT4 is a group-administered screening tool that takes about 2.5 hours and covers four specific reasoning batteries. The WISC-V is individually administered by a psychologist, takes 60–90 minutes, and produces a comprehensive IQ profile including working memory and processing speed. CAT4 SAS scores are comparable in scale to WISC-V IQ scores.',
       },
     ],
+    cta: {
+      heading: 'How does your child compare internationally?',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking — directly comparable to the CAT4 scale used in UAE international schools.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'uae-british-curriculum-school-admissions',
@@ -469,6 +553,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Most British-curriculum schools in Dubai use the CAT4 (Cognitive Abilities Test 4) as part of their admissions process, alongside previous school reports and a writing sample. Some schools also administer the PiRA (reading) and PUMA (mathematics) standardised assessments. At secondary level, a taster day or interview is common. Dubai College uses its own selective admissions test.',
       },
     ],
+    cta: {
+      heading: 'How does your child compare internationally?',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking — directly comparable to the CAT4 scale used in UAE international schools.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'uae-gifted-programs-guide',
@@ -497,6 +587,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Gifted provision in Dubai international schools includes differentiated classroom instruction, ability grouping (setting) in core subjects, subject acceleration (early GCSE), enrichment clubs and competitions (Maths Olympiad, STEM clubs), and in some schools a formal gifted register with a personalised enrichment plan. The KHDA inspection framework requires schools to demonstrate that high-ability students are stretched and making strong progress.',
       },
     ],
+    cta: {
+      heading: 'How does your child compare internationally?',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking — directly comparable to the CAT4 scale used in UAE international schools.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'uae-international-school-entrance-exams',
@@ -525,6 +621,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Yes. Both the ISEE and SSAT have registered test centres in Dubai and Abu Dhabi. The ISEE can be sat at American-curriculum schools with Flex testing arrangements or at official ERB test centres. The SSAT has test centres at several international schools in the UAE. Check the ISEE and SSAT official websites for current UAE test dates and centre locations.',
       },
     ],
+    cta: {
+      heading: 'How does your child compare internationally?',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   // Canada
   {
@@ -554,6 +656,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Gifted education exists in all Canadian provinces, but provision varies enormously. Ontario has the most formalised system, with gifted as a legal exceptionality and self-contained Gifted classes in many school boards. Other provinces offer pull-out enrichment, in-class differentiation, or itinerant gifted teacher support. Some rural school boards have minimal gifted-specific provision.',
       },
     ],
+    cta: {
+      heading: 'Benchmark your child against international standards',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'canada-ontario-gifted-testing-guide',
@@ -582,6 +690,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Self-contained Gifted classes are dedicated classrooms where identified Gifted students spend the majority of their school day together, following an accelerated and enriched curriculum. The Toronto District School Board (TDSB) operates these from Grade 4 at designated schools across the city. Students must be formally identified as Gifted through the IPRC process to access these placements.',
       },
     ],
+    cta: {
+      heading: 'Benchmark your child against international standards',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'canada-private-school-entrance-exams',
@@ -610,6 +724,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Most Canadian independent schools follow a similar timeline: open houses in September–November, applications and ISEE/SSAT testing from October–January, student interviews in January–February, and offers issued in February–March for September entry. The most competitive schools fill quickly — begin researching and attending open houses a full year before your desired entry date.',
       },
     ],
+    cta: {
+      heading: 'Benchmark your child against international standards',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'canada-french-immersion-selective-programs',
@@ -638,6 +758,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Yes. The International Baccalaureate Diploma Programme (IBDP) is offered at many Canadian public secondary schools at no additional cost beyond regular school fees. Admission is typically based on strong Grade 9–10 marks rather than a separate entrance test. Public IB programmes exist in Toronto (TDSB), Vancouver (VSB), Ottawa (OCDSB), and most other major cities.',
       },
     ],
+    cta: {
+      heading: 'Benchmark your child against international standards',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   // Australia
   {
@@ -667,6 +793,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'For meaningful score improvement, start ACER preparation 12–18 months before the exam. The last 8–10 weeks before the exam should include full timed practice tests under exam conditions. The Written Expression component benefits most from structured weekly writing practice over an extended period.',
       },
     ],
+    cta: {
+      heading: 'See where your child stands internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking — benchmarked against UK, US, PISA and IB standards for international context.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'australia-oc-test-guide',
@@ -695,6 +827,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'NSW Education does not publish minimum score thresholds. The effective threshold varies by school — popular inner-city OC schools (such as those in Chatswood or Epping) are more competitive than regional OC schools. Preparation and performance in Thinking Skills (the highest-weighted component) has the most impact on placement score.',
       },
     ],
+    cta: {
+      heading: 'See where your child stands internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking — benchmarked against UK, US, PISA and IB standards for international context.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'australia-gate-gifted-program',
@@ -723,6 +861,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Stage 1 is moderately preparation-responsive. Practising abstract reasoning, verbal reasoning, and numerical reasoning question formats 6–9 months before the test removes the disadvantage of unfamiliarity and genuinely improves Stage 1 scores. Stage 2 is an individually administered assessment and is substantially less preparation-responsive — focus on reducing anxiety and ensuring your child is well-rested.',
       },
     ],
+    cta: {
+      heading: 'See where your child stands internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking — benchmarked against UK, US, PISA and IB standards for international context.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
   {
     slug: 'australia-naplan-guide',
@@ -751,6 +895,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Some selective government high schools and independent schools consider NAPLAN results as part of their admissions process, particularly for Year 7 entry. However, NAPLAN is not a selective entry test — it is a broad national assessment. For competitive selective entry (NSW Selective, ACER Scholarship, WA GATE), purpose-built preparation is more effective than NAPLAN practice.',
       },
     ],
+    cta: {
+      heading: 'See where your child stands internationally',
+      body: 'Free adaptive assessment with a standardised score and percentile ranking — benchmarked against UK, US, PISA and IB standards for international context.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
   },
 ]
 
