@@ -188,12 +188,12 @@ export default function LandingPage() {
                 <span>·</span>
                 <span>Free</span>
               </div>
-              <Link
-                href="/internship"
+              <a
+                href="https://eduentry.ai"
                 className="bg-[#1d1d1f] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#2d2d2f] transition-colors text-center"
               >
                 Learn about the programme
-              </Link>
+              </a>
               <Link href="#internship" className="text-center text-xs text-[#4F46E5]/60 hover:text-[#4F46E5] transition-colors mt-4">
                 Learn more ↓
               </Link>
@@ -539,12 +539,12 @@ export default function LandingPage() {
           </div>
 
           <div className="text-center mt-10">
-            <Link
-              href="/internship"
+            <a
+              href="https://eduentry.ai"
               className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
             >
               Learn about the programme →
-            </Link>
+            </a>
           </div>
 
         </div>
@@ -604,9 +604,9 @@ export default function LandingPage() {
                 ))}
               </ul>
               <div className="mt-7 pt-6 border-t border-[#c7d2fe]">
-                <Link href="/internship" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
+                <a href="https://eduentry.ai" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
                   Learn more →
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -703,12 +703,12 @@ export default function LandingPage() {
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Internship Assessment</p>
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Find your student&apos;s internship readiness.</h2>
             <p className="text-[#6e6e73] text-sm mb-8">Personalised report and AI insights in 35 minutes.</p>
-            <Link
-              href="/internship"
+            <a
+              href="https://eduentry.ai"
               className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors"
             >
               Learn about the programme →
-            </Link>
+            </a>
           </div>
         </div>
       </section>

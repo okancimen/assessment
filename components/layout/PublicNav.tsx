@@ -11,7 +11,7 @@ export default function PublicNav() {
           <Link href="/11-plus"          className="hover:opacity-50 transition-opacity">11+ Prep</Link>
           <Link href="/grammar-schools"  className="hover:opacity-50 transition-opacity">Grammar Schools</Link>
           <Link href="/subjects"         className="hover:opacity-50 transition-opacity">Subjects</Link>
-          <Link href="/internship"       className="hover:opacity-50 transition-opacity">Internship</Link>
+          <a href="https://eduentry.ai"   className="hover:opacity-50 transition-opacity">Internship</a>
           <Link href="/blog"             className="hover:opacity-50 transition-opacity">Blog</Link>
         </div>
 
