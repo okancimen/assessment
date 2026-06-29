@@ -223,6 +223,24 @@ export default function LandingPage() {
                 role: 'Year 12 Student, Birmingham',
                 product: 'Internship Assessment',
               },
+              {
+                quote: "My son is only 9 but I wanted to know where he stood internationally before secondary school. The PISA benchmarking was exactly what I needed — clear, no-nonsense, and completely free.",
+                name: 'Daniel F.',
+                role: 'Parent, Edinburgh',
+                product: 'Academic Assessment',
+              },
+              {
+                quote: "The non-verbal reasoning score was the biggest surprise. My daughter had never been formally tested on spatial reasoning — seeing she was in the 88th percentile gave us real confidence going into school selection.",
+                name: 'Priya K.',
+                role: 'Parent, Bristol',
+                product: 'Academic Assessment',
+              },
+              {
+                quote: "I used the internship assessment as part of my UCAS prep. The AI summary gave me specific language for my personal statement — my school counsellor said it was one of the strongest she'd seen.",
+                name: 'Tom W.',
+                role: 'Year 13 Student, Leeds',
+                product: 'Internship Assessment',
+              },
             ].map(({ quote, name, role, product }) => (
               <div key={name} className="bg-[#f5f5f7] rounded-3xl p-7 flex flex-col gap-5">
                 <svg className="w-6 h-6 text-[#4F46E5] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -686,9 +704,13 @@ export default function LandingPage() {
             {[
               { q: 'Is Eduentry free to use?', a: "Yes, completely free. No subscriptions, hidden fees, or premium tiers. Create a free account, add your child's profile, and start the assessment at no cost." },
               { q: 'What subjects does the academic assessment cover?', a: "English (reading comprehension, grammar, vocabulary), Mathematics (arithmetic, algebra, geometry, problem-solving), Verbal Reasoning (analogies, classifications, sequences), and Non-Verbal Reasoning (patterns, spatial reasoning, matrices). Each subject has 15 adaptive questions." },
+              { q: 'What is a percentile ranking?', a: "A percentile ranking shows how your child compares to all other children of the same age. A score in the 80th percentile means your child performed better than 80% of children at that age level. Eduentry uses a standardised scale with a mean of 100 and a standard deviation of 15 — the same scale used by PISA and most professional assessments." },
               { q: 'What is the internship assessment?', a: "A separate 34-question adaptive assessment for high school students aged 14+. It evaluates general aptitude, domain knowledge, workplace skills, and interest profile across four career tracks: Technology, Business, Data Analytics, and Digital Marketing. Results include a personalised readiness report and AI-generated career insights." },
+              { q: 'Can I use Eduentry to prepare for the 11+?', a: "Yes. The four subjects — English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning — directly mirror the 11+ exam structure used by grammar schools in England. Eduentry gives you a standardised score and percentile ranking so you know exactly where your child stands before sitting the real exam." },
+              { q: 'What score is considered good?', a: "A score of 100 is exactly average. 95–109 is the average range, 110–119 is Above Average, and 120+ is Exceptional. For 11+ grammar school entry, competitive scores are typically 115 and above — though the most selective schools in areas like London require 127+. The full score guide is shown in the Methodology section." },
               { q: 'How long does each assessment take?', a: "The academic assessment is 60 questions across 4 subjects — most children complete it in 60–90 minutes. The internship assessment is 34 questions — most students finish in around 35 minutes. Progress is automatically saved so both can be paused and resumed at any time." },
               { q: 'How does the adaptive technology work?', a: "Eduentry uses 2-Parameter Logistic (2PL) Item Response Theory with MAP estimation — the same model used in PISA, GCSE, and SAT. After each answer, the system updates its estimate of the student's ability and selects the next question to maximise measurement precision." },
+              { q: 'Can I add more than one child?', a: "Yes. A single parent account supports multiple child profiles. Each child has their own assessment history, scores, and personalised recommendations. There is no limit on the number of children you can add." },
               { q: "Is my data private?", a: "Yes. All data is stored securely with row-level security — only you can access your results. We do not sell or share data with any third parties. The service is fully GDPR-compliant." },
             ].map(({ q, a }) => (
               <details key={q} className="group bg-white border border-[#d2d2d7] rounded-2xl overflow-hidden">
