@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SUBJECT_LABELS, SUBJECT_DESCRIPTIONS, SUBJECTS } from '@/types'
+import BellCurve from '@/components/landing/BellCurve'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import { BLOG_POSTS } from '@/app/blog/posts'
@@ -193,15 +194,86 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── Academic Assessment detail ─────────────────────────────────── */}
-      <section className="py-6 border-b border-[#d2d2d7] bg-white">
+      {/* ── Academic section header + sample result ───────────────────── */}
+      <section id="academic" className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-[10px] font-semibold text-[#6e6e73] uppercase tracking-widest text-center">Academic Assessment</p>
+          <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
+
+            {/* Text */}
+            <div className="flex-1">
+              <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-widest mb-4">Academic Assessment · Ages 6–17</p>
+              <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+                See where your child<br />stands internationally.
+              </h2>
+              <p className="text-[#6e6e73] text-lg leading-relaxed mb-8 max-w-lg">
+                A free adaptive benchmark measuring English, Maths, Verbal and Non-Verbal Reasoning
+                against UK, US, PISA and IB standards. Results include a standardised score,
+                percentile ranking, and AI-generated recommendations.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <CtaLink
+                  href="/auth/register"
+                  label="academic_section_cta"
+                  className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
+                >
+                  Start free assessment
+                </CtaLink>
+                <Link href="/methodology" className="text-sm font-semibold text-[#4F46E5] hover:underline flex items-center gap-1.5 px-2">
+                  How scoring works →
+                </Link>
+              </div>
+            </div>
+
+            {/* Sample result visual */}
+            <div className="flex-shrink-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_1fr] lg:grid-cols-1 xl:grid-cols-[300px_1fr] gap-4">
+              {/* Score card */}
+              <div className="bg-[#1d1d1f] rounded-3xl border border-[#424245] p-6 w-full lg:w-[300px]">
+                <div className="flex items-center justify-between mb-5">
+                  <div>
+                    <p className="text-[10px] text-[#86868b] font-semibold uppercase tracking-wider">Sample result</p>
+                    <p className="font-bold text-white mt-1">Emma · Age 11</p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-3xl font-bold text-[#4F46E5]">109</div>
+                    <div className="text-[11px] text-[#0D9488] font-semibold">Above Average</div>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  {[
+                    { label: 'English',              score: 103, color: '#4F46E5', pct: 58 },
+                    { label: 'Mathematics',          score: 119, color: '#0D9488', pct: 90 },
+                    { label: 'Verbal Reasoning',     score: 113, color: '#7C3AED', pct: 79 },
+                    { label: 'Non-Verbal Reasoning', score:  91, color: '#DB2777', pct: 27 },
+                  ].map((s) => (
+                    <div key={s.label}>
+                      <div className="flex justify-between text-xs text-[#86868b] mb-1">
+                        <span>{s.label}</span>
+                        <span className="font-semibold text-white">{s.score}</span>
+                      </div>
+                      <div className="h-1.5 bg-[#424245] rounded-full overflow-hidden">
+                        <div className="h-full rounded-full" style={{ width: `${s.pct}%`, background: s.color }} />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-5 pt-4 border-t border-[#424245] flex items-center gap-2">
+                  <span className="text-[10px] text-[#6e6e73]">Powered by</span>
+                  <span className="text-[10px] font-semibold text-[#86868b]">Claude AI · Anthropic</span>
+                </div>
+              </div>
+
+              {/* Bell curve */}
+              <div className="bg-[#1d1d1f] rounded-3xl border border-[#424245] overflow-hidden w-full lg:w-[300px] xl:w-auto min-h-[200px]">
+                <BellCurve hideScores />
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
       {/* ── Subjects ──────────────────────────────────────────────────────── */}
-      <section className="py-24">
+      <section className="bg-white pb-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
@@ -397,6 +469,81 @@ export default function LandingPage() {
               Start free assessment →
             </CtaLink>
           </div>
+        </div>
+      </section>
+
+      {/* ── Internship section ───────────────────────────────────────────── */}
+      <section id="internship" className="bg-[#f5f5f7] py-24">
+        <div className="max-w-6xl mx-auto px-6">
+
+          {/* Header */}
+          <div className="text-center mb-14">
+            <span className="inline-block text-xs font-semibold text-[#4F46E5] uppercase tracking-widest bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1.5 rounded-full mb-5">
+              Internship Assessment · New
+            </span>
+            <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              Find your internship readiness.
+            </h2>
+            <p className="text-[#6e6e73] text-lg max-w-2xl mx-auto leading-relaxed">
+              A 34-question adaptive assessment for high school students aged 14+. Discover your aptitude,
+              domain strengths, workplace skills, and ideal career track — with a personalised AI report.
+            </p>
+          </div>
+
+          {/* Steps */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                step: '01',
+                title: 'Create a free student account',
+                desc: 'Register yourself or accept a parent invite. Fill in your school, year group, career track preferences, and a short personal statement about your goals.',
+              },
+              {
+                step: '02',
+                title: 'Complete 4 assessment phases',
+                desc: 'General aptitude, domain knowledge, workplace skills (SJT), and interest profile — 34 adaptive questions in total. Fully resumable, takes around 35 minutes.',
+              },
+              {
+                step: '03',
+                title: 'Receive your readiness report',
+                desc: 'Get your internship-ready tier, an AI-generated summary of your strengths, and personalised phase insights across aptitude, domain, and workplace skills.',
+              },
+            ].map(({ step, title, desc }) => (
+              <div key={step} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
+                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
+                <p className="text-[#6e6e73] text-sm leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Track pills */}
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            {[
+              { label: 'Technology', color: '#4F46E5' },
+              { label: 'Business', color: '#0D9488' },
+              { label: 'Data Analytics', color: '#7C3AED' },
+              { label: 'Digital Marketing', color: '#DB2777' },
+            ].map(({ label, color }) => (
+              <span
+                key={label}
+                className="text-xs font-semibold px-4 py-2 rounded-full border"
+                style={{ color, background: color + '12', borderColor: color + '33' }}
+              >
+                {label}
+              </span>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href="/internship"
+              className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
+            >
+              Learn about the programme →
+            </Link>
+          </div>
+
         </div>
       </section>
 
