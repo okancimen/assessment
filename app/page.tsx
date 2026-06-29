@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SUBJECT_LABELS, SUBJECT_DESCRIPTIONS, SUBJECTS } from '@/types'
 import BellCurve from '@/components/landing/BellCurve'
+import TestimonialsCarousel from '@/components/landing/TestimonialsCarousel'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import { BLOG_POSTS } from '@/app/blog/posts'
@@ -212,58 +213,7 @@ export default function LandingPage() {
       {/* ── Social proof ─────────────────────────────────────────────────── */}
       <section className="py-24 bg-white border-b border-[#d2d2d7]">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                quote: "We used Eduentry before my daughter's 11+ exam. The verbal reasoning score flagged exactly where she needed more practice — she got into her first choice grammar school.",
-                name: 'Rachel T.',
-                role: 'Parent, London',
-                product: 'Academic Assessment',
-              },
-              {
-                quote: "I didn't realise how strong my son was at maths relative to his international peers. The percentile ranking gave us real context that school grades simply don't provide.",
-                name: 'Marcus O.',
-                role: 'Parent, Manchester',
-                product: 'Academic Assessment',
-              },
-              {
-                quote: "The internship report told me my aptitude was strongest in Data Analytics, which I'd never really considered. I applied for a placement in that track and got it.",
-                name: 'Aisha P.',
-                role: 'Year 12 Student, Birmingham',
-                product: 'Internship Assessment',
-              },
-              {
-                quote: "My son is only 9 but I wanted to know where he stood internationally before secondary school. The PISA benchmarking was exactly what I needed — clear, no-nonsense, and completely free.",
-                name: 'Daniel F.',
-                role: 'Parent, Edinburgh',
-                product: 'Academic Assessment',
-              },
-              {
-                quote: "The non-verbal reasoning score was the biggest surprise. My daughter had never been formally tested on spatial reasoning — seeing she was in the 88th percentile gave us real confidence going into school selection.",
-                name: 'Priya K.',
-                role: 'Parent, Bristol',
-                product: 'Academic Assessment',
-              },
-              {
-                quote: "I used the internship assessment as part of my UCAS prep. The AI summary gave me specific language for my personal statement — my school counsellor said it was one of the strongest she'd seen.",
-                name: 'Tom W.',
-                role: 'Year 13 Student, Leeds',
-                product: 'Internship Assessment',
-              },
-            ].map(({ quote, name, role, product }) => (
-              <div key={name} className="bg-[#f5f5f7] rounded-3xl p-7 flex flex-col gap-5">
-                <svg className="w-6 h-6 text-[#4F46E5] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                </svg>
-                <p className="text-sm text-[#1d1d1f] leading-relaxed flex-1">{quote}</p>
-                <div>
-                  <p className="text-sm font-semibold text-[#1d1d1f]">{name}</p>
-                  <p className="text-xs text-[#6e6e73]">{role}</p>
-                  <span className="inline-block mt-2 text-[10px] font-semibold text-[#4F46E5] bg-[#eef2ff] px-2 py-0.5 rounded-full">{product}</span>
-                </div>
-              </div>
-            ))}
-          </div>
+          <TestimonialsCarousel />
         </div>
       </section>
 
