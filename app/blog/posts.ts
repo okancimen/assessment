@@ -86,6 +86,82 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'business-work-experience-high-school-uk',
+    title: 'Business Work Experience at High School in the UK: What It Is, How to Get It, and Why It Matters',
+    shortTitle: 'Business Work Experience at High School UK',
+    description:
+      'Everything UK secondary school students need to know about business work experience — what it involves, where to find placements, how to secure one, and why a verified assessment score strengthens every application.',
+    date: '2026-06-30',
+    readTime: '10 min read',
+    tags: ['Internship', 'Career Development', 'Work Experience', 'Business'],
+    faqs: [
+      {
+        q: 'What age can you do business work experience in the UK?',
+        a: 'There is no legal minimum for work experience in the UK beyond general child employment rules. Most formal business work experience programmes accept students from Year 10 (age 14–15) upward. Many FTSE 100 companies run dedicated Spring Insight and Summer work experience schemes for Year 12 and Year 13 students specifically. Starting at 14–15 gives you more time to reflect on the experience and build on it before your UCAS application.',
+      },
+      {
+        q: 'What do you actually do on a business work experience placement?',
+        a: 'It depends on the organisation and role, but typically: shadow team members across different functions, attend team meetings and take notes, complete a defined project or analysis task, present findings to a manager or team, and ask questions about how the business operates. The most valuable placements give you a structured brief with a real deliverable — not just observation. This is why organisations that use prior assessment data to match students to placements tend to produce better outcomes.',
+      },
+      {
+        q: 'Do you need business A-levels to get business work experience?',
+        a: 'No. Most organisations value curiosity, commercial awareness, and communication skills over specific qualifications. Many students who complete successful business placements are studying GCSE or A-level subjects that are not explicitly "business" — history, mathematics, and English are all common. What matters is the ability to engage professionally and demonstrate genuine interest in how organisations work.',
+      },
+      {
+        q: 'How do I find business work experience as a student?',
+        a: 'Four main channels: direct applications to local businesses (particularly effective for SMEs, which often take students informally), structured programmes run by large organisations (Barclays, KPMG, Deloitte, and similar run dedicated schemes — dates are usually announced 3–6 months in advance), school career advisor referrals (many schools have employer relationships that students underuse), and platforms like Springpod, Bright Network, and Virtual Work Experience. For competitive placements at large firms, applying early and having an assessment report to support your application gives you a structural advantage.',
+      },
+      {
+        q: 'How does business work experience help university applications?',
+        a: 'In three ways: it gives your personal statement specific, evidence-based content instead of generic assertions about interest in business; it demonstrates commercial maturity — the ability to operate in a professional environment — which admissions teams value for competitive business, economics, law, and finance courses; and it reduces your risk of choosing the wrong course, since you will know from direct experience whether a business environment suits you before committing to a three-year degree.',
+      },
+    ],
+    cta: {
+      heading: 'Ready to prove your business readiness?',
+      body: 'Free 34-question adaptive assessment for students aged 14+. Get a personalised readiness report — and something concrete to reference in every application.',
+      label: 'Apply free — Business track',
+      href: '/business',
+    },
+  },
+  {
+    slug: 'how-to-get-tech-internship-before-university',
+    title: 'How to Get a Tech Internship Before University: A Complete Guide for UK Students',
+    shortTitle: 'How to Get a Tech Internship Before University',
+    description:
+      'A practical guide for UK secondary school students on securing a technology internship or work experience placement before starting university — covering where to look, how to apply without a portfolio, and what actually gets you shortlisted.',
+    date: '2026-06-30',
+    readTime: '11 min read',
+    tags: ['Internship', 'Career Development', 'Work Experience'],
+    faqs: [
+      {
+        q: 'Do I need to know how to code to get a tech internship at school?',
+        a: 'No — but it helps to understand computational thinking. The tech industry covers a wide range of roles: not just software development, but UX design, cybersecurity, IT support, product management, data analysis, and QA testing. Many of these roles value problem-solving and logical reasoning more than programming fluency. If you can demonstrate you think clearly about systems and problems, and you have genuine curiosity about how technology works, you are competitive for a wide range of technology placements.',
+      },
+      {
+        q: 'What year should I apply for a tech internship?',
+        a: 'Applications for competitive tech schemes typically open in September–November for the following summer. Year 10 students (age 14–15) are eligible for many open work experience programmes; Year 12 students (age 16–17) have access to formal Spring Insight weeks and Summer internship programmes at larger technology companies. The earlier you start, the more options you have — a Year 10 placement gives you material for your personal statement and a second chance to deepen your experience in Year 12.',
+      },
+      {
+        q: 'What tech companies offer internships to school students in the UK?',
+        a: 'Larger organisations with formal schemes include Google, Microsoft, Amazon, IBM, BT Group, Sky, and the BBC\'s technology division. KPMG, Deloitte, PwC, and EY all have technology-specific student programmes. Beyond these household names, thousands of UK tech scale-ups and SMEs take on student interns — often with more hands-on responsibility and better learning outcomes than large corporates. The most effective route for smaller firms is a direct, personalised approach.',
+      },
+      {
+        q: 'How does an assessment score help a tech internship application?',
+        a: 'A credible third-party assessment score solves the experience paradox — you need experience to get experience, but you need an opportunity to build experience in the first place. An Eduentry readiness report gives employers verifiable evidence of your computational thinking, problem-solving ability, and domain knowledge before they have met you. It replaces the absence of a GitHub portfolio or prior internship with measured aptitude data that organisations can act on.',
+      },
+      {
+        q: 'What should I do during a tech internship to get the most out of it?',
+        a: 'Four things: arrive with specific questions prepared for each person you shadow (people remember interns who are curious, not passive); ask for a defined deliverable on day one — a report, a presentation, a small piece of code, anything with a deadline; seek feedback actively, not just at the end; and document what you learned as you go, not retrospectively. The students who walk away with the strongest reference and the best personal statement material are almost always those who treated the placement as a performance, not a holiday.',
+      },
+    ],
+    cta: {
+      heading: 'Ready to apply for a tech internship?',
+      body: 'Free 34-question adaptive assessment. Get your Technology readiness report and something concrete to put in every application.',
+      label: 'Apply free — Technology track',
+      href: '/tech',
+    },
+  },
+  {
     slug: 'global-academic-benchmarks-report-2026',
     title: 'Global Academic Benchmarks Report: 2026 International Scoring and Assessment Trends',
     shortTitle: 'Global Academic Benchmarks Report 2026',

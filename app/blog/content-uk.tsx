@@ -1416,4 +1416,226 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'business-work-experience-high-school-uk': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        The Confederation of British Industry surveys UK employers every year on what they look for when hiring. The answer has been consistent for a decade: work experience is the most important hiring factor, cited by 68% of employers — ahead of degree classification, university brand, and even A-level grades. For business roles specifically, the premium on prior commercial exposure is even higher. Yet fewer than one in three UK secondary school students complete a structured business work experience placement before their UCAS application closes. That gap is an opportunity — but only for students who close it first.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        This guide covers everything you need to know about business work experience as a secondary school student in the UK: what it actually involves, the different types of placement available, how to find and secure one, how to perform well once you are there, and how a verified assessment score strengthens every application you make.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Business Work Experience Actually Involves</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          &ldquo;Business work experience&rdquo; covers a wide range of placements — from a one-week school-organised scheme at a local firm to a structured six-week Summer internship at a FTSE 100 company. What makes a placement genuinely valuable is not its length or its brand name but its structure: whether it gives you real tasks with real consequences and real feedback from professionals who know what good performance looks like.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          In practice, a business placement might involve any of the following: attending and taking notes in team meetings; conducting market or competitor research and presenting findings; supporting a finance team with a reporting or reconciliation task; drafting internal communications or customer-facing copy; analysing a business problem and proposing solutions to a manager; or shadowing professionals across multiple functions to understand how different parts of an organisation connect. The most valuable placements give you a defined brief on day one — a deliverable with a deadline — rather than an unstructured invitation to observe.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">What separates a good placement from a great one:</strong> A great business work experience placement treats you as a contributor with something to deliver, not a visitor to be shown around. If you are given a brief, a deadline, and access to ask questions of real professionals — that is the environment that builds commercial maturity fastest.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Commercial Awareness Gap — and Why It Matters</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Commercial awareness is the term employers use for the ability to understand how organisations work: how they make money, who their customers are, what pressures they face, and how individual roles connect to overall business performance. It is consistently rated as one of the most underdeveloped skills in school leavers and first-year undergraduates — and it cannot be developed in a classroom, because classrooms do not operate under the commercial pressures that make commercial awareness necessary.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The Graduate Management Admissions Council&apos;s 2023 employer survey found that 71% of business hiring managers consider &ldquo;understanding of business fundamentals&rdquo; to be among the top three attributes they look for in candidates — but fewer than 40% of recent graduates demonstrate it at a satisfactory level at the point of hire. The students who bridge this gap are almost universally those with prior work experience in commercial environments.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Commercial awareness is not about memorising business vocabulary or reading the Financial Times (though both help). It is about understanding causality in business contexts: why a company makes a particular decision, what the trade-offs are, who is affected, and what success looks like from different stakeholders&apos; perspectives. This understanding comes from sitting in environments where these decisions are being made — which is what business work experience provides.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Types of Business Work Experience Available to UK Students</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The range of business work experience options for UK secondary school students is broader than most students — and many career advisors — realise. The categories below are not exhaustive, but they cover the main routes:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>School-arranged work experience weeks</strong> — Most UK secondary schools organise a one- or two-week work experience block for Year 10 students. Quality varies enormously depending on the school&apos;s employer relationships. If your school offers this, treat it as your minimum, not your ceiling — supplement it with a more structured placement in Year 12 or 13.
+          </Bullet>
+          <Bullet>
+            <strong>Spring Insight programmes</strong> — Major professional services firms (KPMG, Deloitte, PwC, EY, Goldman Sachs, Morgan Stanley) run Spring Insight weeks specifically for Year 12 students from underrepresented backgrounds. These are competitive, selective, and extremely valuable — they often lead directly to Summer internship offers in Year 13. Applications typically open in October for the following Spring.
+          </Bullet>
+          <Bullet>
+            <strong>Virtual work experience</strong> — Platforms including Springpod, Forage, and Bright Network offer structured virtual programmes run by major employers. These are less immersive than in-person placements but highly accessible, free, and increasingly recognised by employers and university admissions teams. A Springpod virtual programme at a firm like Unilever or Barclays demonstrates genuine initiative.
+          </Bullet>
+          <Bullet>
+            <strong>Direct approaches to local businesses</strong> — This route is underused and often more productive than competitive formal programmes for Year 10–11 students. A professional, specific email to the managing director of a local SME — explaining who you are, what you want to learn, and what you could contribute — has a surprisingly high success rate. Local accounting practices, marketing agencies, solicitors&apos; firms, and retail businesses regularly accommodate motivated students.
+          </Bullet>
+          <Bullet>
+            <strong>Family and network connections</strong> — Use them, without embarrassment. Every professional you can access through your parents&apos; contacts, your teachers&apos; connections, or your local community is a legitimate route to a placement. The goal is the experience and what you learn from it, not how you found your way in.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Secure a Business Work Experience Placement</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For structured programmes at large organisations, the application process is similar to a graduate job application: a short written application or covering letter, often a numerical or verbal reasoning test, sometimes a video interview. Applying early (within the first two weeks of the application window opening) gives you a practical advantage — programmes are often oversubscribed, and reviewers&apos; attention is highest when the pile is smallest.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For direct approaches to smaller organisations, the quality of your initial email is everything. The emails that get responses are short, specific, and credible: they explain who you are, what stage of school you are at, what area of the business interests you and why, what dates you are available, and — critically — what you hope to contribute. An email that says &ldquo;I would like to shadow your finance team for one week in July, and I am particularly interested in how you approach financial forecasting&rdquo; is ten times more likely to get a reply than one that says &ldquo;I am looking for work experience in business.&rdquo;
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">The competitive edge:</strong> An assessed readiness score from a third party — demonstrating your commercial thinking, numerical reasoning, and domain knowledge — gives smaller employers immediate confidence in what they are getting. Attaching your Eduentry report to a direct outreach email is one of the most effective ways to differentiate yourself from students who approach the same firm without any verified evidence of readiness.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Perform Well During Your Placement</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The quality of what you get from a business placement is almost entirely a function of how you show up. Students who perform well — and who walk away with strong references, valuable contacts, and compelling personal statement material — consistently do four things that students who coast do not:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Prepare specific questions.</strong> Before each day or meeting, write down three things you want to understand by the end of it. People remember interns who ask intelligent, specific questions — not passive observers who wait to be told things.</Check>
+          <Check><strong>Ask for a deliverable.</strong> On your first day, ask your supervisor what a successful week looks like from their perspective. If there is no defined project, propose one — a short competitor analysis, a market sizing exercise, a process improvement suggestion. Having something to deliver makes you a contributor, not a visitor.</Check>
+          <Check><strong>Seek feedback actively.</strong> At the end of each day, ask one person: &ldquo;Is there one thing I could have done differently or better today?&rdquo; Most people will not volunteer critical feedback — you have to request it. The students who improve fastest during placements are the ones who collect feedback proactively.</Check>
+          <Check><strong>Document as you go.</strong> Keep a daily log — five minutes at the end of each day. What did you observe? What surprised you? What would you do differently if you were running that team? This material is the foundation of the specific, evidence-based personal statement that impresses university admissions teams.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How Business Work Experience Strengthens University Applications</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Business management is the most popular degree subject in the UK, with approximately 85,000 students starting business or management programmes each year. That popularity creates intense competition for places at the most respected institutions — Warwick, Bath, LSE, and King&apos;s College London routinely receive 10–15 applications per place for their flagship programmes.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          In this environment, the quality of your personal statement — specifically, the specificity of its evidence — is one of the most powerful differentiators available to you. Admissions readers are trained to distinguish between a student who asserts &ldquo;I am passionate about business&rdquo; and one who can say &ldquo;During my week at [firm], I observed that the marketing team&apos;s segmentation strategy was not reflecting the shift in customer demographics visible in the data — I raised this in a team meeting and was asked to build a one-page analysis, which the team used in their quarterly planning session.&rdquo; These two statements describe very different levels of commercial maturity.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Beyond the personal statement, business work experience serves a second admissions function: it reduces the risk of course regret. The UK Department for Education estimates that approximately one in six students who begin a degree do not complete it, and course mismatch — choosing a subject that turns out to be nothing like the career you imagined — is a significant contributing factor. A student who has spent time in a real business environment before applying knows whether the day-to-day reality of commercial work suits them. That certainty is itself a competitive advantage.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Role of Assessment in Business Placement Success</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The practical barrier most students face is not motivation — it is credibility. When you approach an employer for a business work experience placement, you are asking them to invest time and resource in someone they do not know, with no demonstrated track record. A strong email helps. School references help. But a verified assessment score — measuring your commercial reasoning, numerical literacy, and situational judgement against a standardised scale — gives employers something concrete to act on.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry&apos;s Business track assessment tests exactly the skills business employers care about: market analysis, financial literacy, stakeholder reasoning, business case evaluation, and professional communication. A high score on the Business domain tells a prospective employer, in verifiable terms, that you can think commercially — before you have set foot in their office.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          The students who secure the most competitive business work experience placements are not always the ones with the highest predicted grades. They are the ones who can demonstrate, credibly, that they are ready to contribute — and who apply that evidence strategically across every route available to them.
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-to-get-tech-internship-before-university': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        The UK tech sector employs 1.7 million people and is growing faster than any other major industry. Tech Nation&apos;s 2023 report identified skills shortages across every technical discipline — software development, cybersecurity, data engineering, UX design, and IT infrastructure — with 72% of UK technology employers reporting difficulty filling junior roles. This is not an abstract statistic for the sector. It is a structural opportunity for any secondary school student willing to pursue technology work experience before their peers think to start. This guide is for that student.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Whether you have been coding since Year 7 or you have never written a line of code but find yourself genuinely curious about how software and systems work — this guide covers exactly what it takes to secure a meaningful technology internship or work experience placement as a UK student, before you start university.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why a Tech Internship Before University Is Different</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Most careers advice tells students to focus on internships during university. In technology, this advice is increasingly outdated — and following it comes at a measurable cost. The technology labour market has shifted dramatically in the past decade: the pathway from school to technology role is now direct enough that students who build professional credentials before university arrive at graduation with advantages that university-only interns cannot close in three years.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A pre-university tech internship achieves three things simultaneously. It gives you a concrete professional context for everything you study in computer science, mathematics, or physics — turning abstract concepts into applied tools you have actually used. It gives you a professional reference and a verifiable track record before your degree begins. And it gives you the clarity to choose your degree subject and institution with the confidence of someone who already knows what a technology environment feels like from the inside.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Computer Science applications at Russell Group universities receive approximately 8–12 applications per place. For programmes at top departments — Imperial, Oxford, UCL, Edinburgh — the competition is significantly higher. At this level, predicted grades are a threshold, not a differentiator. What distinguishes shortlisted applicants is the specificity and credibility of their engagement with the field: what they have built, what they have observed, what they understand about how technology actually works in professional contexts. A pre-university internship provides exactly this material.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What You Actually Need — Less Than You Think</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most common reason technology-curious students do not pursue tech internships is a belief that they are not &ldquo;technical enough.&rdquo; This belief is almost always wrong — and it reflects a misunderstanding of what technology roles actually require at the entry level.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Technology is a broad field. Software development is one part of it — and even software development, at intern level, rewards logical thinking and learning pace far more than pre-existing coding fluency. But technology also encompasses UX and product design, cybersecurity, IT support and infrastructure, data analysis, QA and testing, technical project management, and business analysis. Many of these disciplines require no code at all. What they all require is systematic thinking — the ability to break a complex problem into components, identify dependencies, and reason about outcomes.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Computational thinking</strong> — Can you reason about sequences, conditions, and loops? Can you trace the logic of a process and predict what happens if you change one variable? This is what technology employers actually assess at intern level.</Check>
+          <Check><strong>Intellectual curiosity</strong> — Do you read about technology? Do you notice how software behaves and find yourself wondering why? Do you solve problems by experimenting? This trait is more predictive of technology internship success than prior coding experience.</Check>
+          <Check><strong>Attention to detail</strong> — Technology work rewards people who catch what others miss. Debugging, testing, security analysis, and data validation all require precision. If you tend to notice errors that others overlook, that is a directly applicable skill.</Check>
+          <Check><strong>Collaborative communication</strong> — Modern technology development is a team sport. The ability to explain what you are doing, ask for help at the right moment, and give clear updates is valued at every level from intern to CTO.</Check>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">The experience paradox:</strong> The most common barrier to a first tech internship is the catch-22 — organisations want experience, but you need an opportunity to get experience. A verified assessment score that demonstrates computational thinking, problem-solving ability, and domain knowledge replaces the experience you have not had yet with evidence of the potential you already have.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Where to Find Tech Internships and Work Experience as a UK Student</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The landscape of technology work experience opportunities for secondary school students is more developed than most students — and many careers advisors — realise. The routes below are ordered roughly by competitiveness and access:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Large tech company formal programmes</strong> — Google, Microsoft, Amazon, IBM, Meta, and Apple all run student outreach programmes. In the UK, BT Group, Sky, and the BBC&apos;s technology division run structured school-age placements. These programmes are competitive, selective, and high-quality — and they are worth applying to even if your chances are uncertain, because the application process itself is valuable practice.
+          </Bullet>
+          <Bullet>
+            <strong>Professional services technology divisions</strong> — KPMG, Deloitte, PwC, EY, and Accenture all run technology-specific Spring Insight weeks for Year 12 students. These are less well-known than the firm&apos;s main programmes but significantly less competitive, and they offer exposure to enterprise-scale technology implementation — a different and equally valuable perspective from pure tech firms.
+          </Bullet>
+          <Bullet>
+            <strong>UK tech start-ups and scale-ups</strong> — The UK has one of Europe&apos;s most active technology start-up ecosystems, concentrated in London but with significant clusters in Manchester, Bristol, Edinburgh, and Cambridge. Start-ups are often more willing than large organisations to take on motivated school-age students, and the breadth of exposure is typically greater — you will see a wider range of technical and commercial functions in one placement than you would in a large firm.
+          </Bullet>
+          <Bullet>
+            <strong>Virtual programmes</strong> — Springpod, Forage, and similar platforms offer structured virtual technology work experience programmes run by real employers. These are free, accessible from anywhere in the UK, and increasingly referenced in applications and interviews as evidence of initiative. A Forage programme from Goldman Sachs Engineering or Microsoft is more credible than most students expect.
+          </Bullet>
+          <Bullet>
+            <strong>Direct outreach to local technology businesses</strong> — Local digital agencies, software development houses, managed service providers, and SaaS companies often take on school students for week-long placements when approached professionally and directly. The success rate of a well-crafted cold email to a local tech company is higher than students expect — particularly if you can demonstrate assessed aptitude in your outreach.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Write a Strong Application Without a Portfolio</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most common tech internship application mistake is leading with what you do not have: &ldquo;I don&apos;t have much experience but I am keen to learn.&rdquo; This framing damages your credibility before you have made a single positive point. A strong tech internship application leads with what you do have: evidence of how you think, what interests you about technology specifically, and why this organisation&apos;s work is relevant to that interest.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For formal programme applications, the written component is almost always evaluated for three things: specificity of interest (can you articulate exactly what draws you to technology and to this organisation, beyond generic enthusiasm?), evidence of engagement (have you done anything to develop your technical interest — a course, a project, a book, a competition?), and professional maturity (is the writing clear, confident, and error-free?). The students who are shortlisted for competitive tech placements are almost universally those who have researched the organisation carefully and can connect their specific interest to the firm&apos;s specific work.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For direct approaches to smaller organisations, the covering email is the filter. The structure that works: one sentence on who you are and what stage of school you are at; one sentence on what specifically interests you about technology (not &ldquo;technology in general&rdquo; but a specific domain — cybersecurity, UX, data, software development); one sentence on what interests you about their company or product; one sentence on what you could contribute (even at student level, you can offer research, documentation, testing, or analysis support); and a clear ask — specific dates, specific duration. Attach your CV and, if you have one, your assessed readiness report.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Assessment as application evidence:</strong> An Eduentry Technology track readiness report provides a third-party verification of your computational thinking, logical reasoning, and domain knowledge. Submitting it alongside a covering letter replaces the absence of a GitHub portfolio with measured, credible evidence of your technical aptitude — which is what technology organisations actually care about at student level.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Do During Your Tech Internship</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The quality of what you learn from a technology placement is largely within your control. The students who get the most from a tech internship — and who leave with a strong reference, a personal statement full of specific observations, and a clearer sense of what they want to do next — are those who approach the placement as an active investigation rather than a passive observation.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Ask about the technology stack on day one.</strong> What languages, tools, and frameworks does the team use? Why did they choose them over alternatives? What would they do differently if they were starting again? These questions signal professional curiosity and give you concrete, specific material to reference later.</Check>
+          <Check><strong>Request to sit in on a code review, sprint planning session, or incident review.</strong> These meetings reveal how professional technologists actually think — the trade-offs they make, the standards they apply, the language they use. Observation of these processes is more educational than a week of passive shadowing.</Check>
+          <Check><strong>Ask for a task with a real deliverable.</strong> A bug report, a test case, a piece of documentation, a security review checklist — anything you can complete and hand over. The internship students who are offered return placements or referrals are almost always those who delivered something, however small.</Check>
+          <Check><strong>Document what surprises you.</strong> The gap between what you expected a technology organisation to be like and what it actually is like is the most valuable content in your future personal statement and interviews. Write it down as you go. &ldquo;I expected software development to be mostly writing code. I was surprised to find that the team spent approximately 40% of their time in meetings discussing requirements and reviewing each other&apos;s work.&rdquo; That is a specific, credible observation — exactly what admissions readers and future employers want to hear.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Turning Your Internship Into a University Application Advantage</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A technology internship before university is not just a line on a CV — it is evidence that your interest in technology is genuine and grounded in real-world exposure. This distinction matters enormously at the application stage. Personal statements for competitive Computer Science, Engineering, and Technology Management programmes receive hundreds of submissions from students who say they love computing. The applications that stand out are those that describe specific professional encounters: what a student actually observed, what surprised them, what they did, and what they concluded.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Beyond the personal statement, a pre-university tech internship produces three tangible outputs that compound over time: a professional reference from someone who has observed your performance in a technical environment (significantly more powerful than a school teacher reference for technical programmes); a verified track record that demonstrates your interest is active, not passive; and the confidence that comes from knowing you can navigate a professional technology environment — which changes how you present yourself in every subsequent interview.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          The UK technology sector is growing faster than the pipeline of qualified candidates can keep pace with. The students who understand this — and who begin building professional credentials in secondary school rather than waiting for university — arrive at the graduate labour market with advantages that are structurally very difficult for late starters to close. The time to start is before you think you are ready.
+        </p>
+      </section>
+    </>
+  ),
 }

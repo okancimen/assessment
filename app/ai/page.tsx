@@ -109,6 +109,20 @@ const SERVICE_SCHEMA = {
   areaServed: { '@type': 'Country', name: 'United Kingdom' },
 }
 
+const HOWTO_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to get placed in a UK internship with Eduentry.ai',
+  description: 'Free 34-question adaptive assessment for high school students aged 14+. Four steps from registration to internship placement match.',
+  totalTime: 'PT35M',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Register', text: 'Create your free Eduentry.ai account in under a minute — no payment details required.' },
+    { '@type': 'HowToStep', position: 2, name: 'Apply', text: 'Tell us about yourself, your school year, and your track preferences across Technology, Business, Data Analytics, or Digital Marketing.' },
+    { '@type': 'HowToStep', position: 3, name: 'Take the assessment', text: '34 adaptive questions across four phases: General Aptitude, Domain Knowledge, Workplace Skills, and Interest Profile. Takes approximately 35 minutes. Resume any time.' },
+    { '@type': 'HowToStep', position: 4, name: 'Get your report', text: 'Receive an AI-written personalised readiness report with a readiness tier, phase-by-phase breakdown, and internship placement match.' },
+  ],
+}
+
 const FAQ_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -125,6 +139,7 @@ export default function AIHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(HOWTO_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}

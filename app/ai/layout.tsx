@@ -50,6 +50,9 @@ export const metadata: Metadata = {
 export default function AILayout({ children }: { children: React.ReactNode }) {
   return (
     <>
+      {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+      <link rel="preconnect" href="https://www.googletagmanager.com" />
+      <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-K6M6LHTTR7" strategy="afterInteractive" />
       <Script id="google-analytics-ai" strategy="afterInteractive">{`
         window.dataLayer = window.dataLayer || [];

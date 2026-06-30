@@ -16,6 +16,7 @@ export async function proxy(request: NextRequest) {
       pathname === '/business' ||
       pathname === '/data-analytics' ||
       pathname === '/digital-marketing' ||
+      pathname === '/organisations' ||
       pathname === '/sitemap.xml' ||
       pathname === '/robots.txt'
     ) {
