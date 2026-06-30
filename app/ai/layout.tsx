@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   creator: 'Eduentry',
   publisher: 'Eduentry',
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  verification: { google: 'WZAglbmjRhu4WRnkuOzX_C0vSSPSXirLjVX0kDRp-Fw' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
