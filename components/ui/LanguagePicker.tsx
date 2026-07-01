@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 const LANGUAGES = [
   { code: 'EN', label: 'English',   flag: '🇬🇧', href: '/en' },
@@ -11,7 +12,20 @@ const LANGUAGES = [
   { code: 'ZH', label: '中文',      flag: '🇨🇳', href: '/zh' },
 ]
 
-export default function LanguagePicker({ current = 'EN' }: { current?: string }) {
+const PATH_TO_CODE: Record<string, string> = {
+  '/tr': 'TR', '/fr': 'FR', '/es': 'ES', '/ar': 'AR', '/zh': 'ZH', '/en': 'EN',
+}
+
+function detectLang(pathname: string): string {
+  for (const [prefix, code] of Object.entries(PATH_TO_CODE)) {
+    if (pathname === prefix || pathname.startsWith(prefix + '/')) return code
+  }
+  return 'EN'
+}
+
+export default function LanguagePicker() {
+  const pathname = usePathname()
+  const current = detectLang(pathname)
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
