@@ -180,26 +180,28 @@ export default function AIHomePage() {
           <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16 leading-tight">
             Four paths.<br />One assessment.
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
             {INTERNSHIP_TRACKS.map((track) => (
               <Link
                 key={track}
                 href={TRACK_SLUGS[track]}
                 className="group bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden hover:border-[#4F46E5]/40 hover:shadow-sm transition-all"
               >
-                <div className="relative w-full aspect-square">
-                  <Image
-                    src={TRACK_IMAGES[track]}
-                    alt={INTERNSHIP_TRACK_LABELS[track]}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, 50vw"
-                  />
+                <div className="flex justify-center pt-6 pb-2">
+                  <div className="relative w-24 h-24">
+                    <Image
+                      src={TRACK_IMAGES[track]}
+                      alt={INTERNSHIP_TRACK_LABELS[track]}
+                      fill
+                      className="object-contain"
+                      sizes="96px"
+                    />
+                  </div>
                 </div>
-                <div className="p-8">
-                  <h3 className="font-bold text-[#1d1d1f] text-xl mb-2 group-hover:text-[#4F46E5] transition-colors">{INTERNSHIP_TRACK_LABELS[track]}</h3>
-                  <p className="text-sm text-[#6e6e73] leading-relaxed mb-4">{INTERNSHIP_TRACK_DESCRIPTIONS[track]}</p>
-                  <span className="text-sm font-semibold text-[#4F46E5] opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</span>
+                <div className="p-5">
+                  <h3 className="font-bold text-[#1d1d1f] text-base mb-1.5 group-hover:text-[#4F46E5] transition-colors">{INTERNSHIP_TRACK_LABELS[track]}</h3>
+                  <p className="text-xs text-[#6e6e73] leading-relaxed mb-3">{INTERNSHIP_TRACK_DESCRIPTIONS[track]}</p>
+                  <span className="text-xs font-semibold text-[#4F46E5] opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</span>
                 </div>
               </Link>
             ))}
