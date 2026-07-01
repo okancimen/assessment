@@ -1,6 +1,24 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
+const SUPPORTED_LANGS = ['tr', 'fr', 'es', 'ar', 'zh'] as const
+
+function detectLanguage(acceptLanguage: string | null): string {
+  if (!acceptLanguage) return 'en'
+  const langs = acceptLanguage
+    .split(',')
+    .map(part => {
+      const [tag, q] = part.trim().split(';q=')
+      return { code: tag.trim().toLowerCase().split('-')[0], q: q ? parseFloat(q) : 1.0 }
+    })
+    .sort((a, b) => b.q - a.q)
+  for (const { code } of langs) {
+    if ((SUPPORTED_LANGS as readonly string[]).includes(code)) return code
+    if (code === 'en') return 'en'
+  }
+  return 'en'
+}
+
 export async function proxy(request: NextRequest) {
   // ── eduentry.ai hostname routing ──────────────────────────────────────
   const hostname = request.headers.get('host') ?? ''
@@ -8,9 +26,15 @@ export async function proxy(request: NextRequest) {
 
   if (isAI) {
     const { pathname } = request.nextUrl
+
+    // Root: redirect to the browser's preferred language
+    if (pathname === '/') {
+      const lang = detectLanguage(request.headers.get('accept-language'))
+      return NextResponse.redirect(new URL(`/${lang}`, request.url))
+    }
+
     // Marketing, blog, track pages, sitemap, robots → /ai/*
     if (
-      pathname === '/' ||
       pathname.startsWith('/blog') ||
       pathname === '/tech' ||
       pathname === '/business' ||
