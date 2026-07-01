@@ -83,7 +83,9 @@ const FAQS = [
   { q: 'Kimler için?',                        a: 'Profesyonel deneyim kazanmak isteyen 14–18 yaş arası lise öğrencileri (9. sınıftan 12. sınıfa kadar).' },
   { q: 'Ne kadar sürer?',                     a: 'Dört aşamada 34 soru, yaklaşık 35 dakika. Değerlendirme tamamen devam ettirilebilir — istediğin zaman durdurup devam edebilirsin.' },
   { q: 'Hangi alanı seçmeliyim?',             a: 'Başvururken en fazla üç alan tercihini sıralarsın. İlgi Profili aşaması da en uygun olduğun yeri belirlemeye yardımcı olur — raporun bunu yansıtır.' },
-  { q: 'Okullar ve işverenler nasıl başlar?', a: 'partnerships@eduentry.ai adresinden bizimle iletişime geçin. Kohortunuz için değerlendirme, kısa liste ve raporlamayı biz üstleniriz.' },
+  { q: 'Hazırlık raporum ne zaman gelir?',    a: 'Değerlendirmeyi tamamladıktan hemen sonra. 34 sorunun tamamını bitirdiğinde yapay zeka puanlama anında çalışır ve raporun hesabında hazır olur — bekleme süresi yoktur.' },
+  { q: 'Değerlendirmemi özgeçmişimde kullanabilir miyim?', a: 'Evet. Hazırlık raporun, başvurularında doğrudan referans gösterebileceğin ölçülebilir bir puan ve alan bazlı beceri dökümü içerir. Pek çok öğrencimiz bunu kişisel beyanlara ve işe alım görüşmelerine taşıyor.' },
+  { q: 'İngilizcem yeterli olmasa da başvurabilir miyim?', a: 'Değerlendirme şu an İngilizce olarak sunulmaktadır; ancak İngiltere iş dünyasının gerçek ortamında kullanılan dil budur. Sorular sade ve anlaşılır bir dille yazılmıştır. İngilizce anlama düzeyin günlük konuşma seviyesindeyse değerlendirmeyi rahatlıkla tamamlayabilirsin.' },
 ]
 
 const internshipPosts = BLOG_POSTS_TR.slice(0, 3)
