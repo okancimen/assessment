@@ -124,7 +124,7 @@ Respond with ONLY valid JSON, no markdown fences:
 
   const message = await withOverloadRetry(() =>
     client.messages.create({
-      model: 'claude-sonnet-4-6',
+      model: 'claude-haiku-4-5-20251001',
       max_tokens: 800,
       system: INTEREST_PROFILE_PROMPT,
       messages: [{ role: 'user', content: prompt }],
@@ -235,7 +235,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text:
     try {
       message = await withOverloadRetry(() =>
         client.messages.create({
-          model: 'claude-sonnet-4-6',
+          model: 'claude-haiku-4-5-20251001',
           max_tokens: 1024,
           system: systemPrompt,
           messages: [{ role: 'user', content: prompt }],
