@@ -19,11 +19,25 @@ const TRACKS_TR = [
   { href: '/digital-marketing',label: 'Dijital Pazarlama', desc: 'SEO · Sosyal Medya · Kampanyalar' },
 ]
 
+const TRACKS_ES = [
+  { href: '/tech',              label: 'Tecnología',        desc: 'Programación · Algoritmos · Ciberseguridad' },
+  { href: '/business',         label: 'Empresa',           desc: 'Estrategia · Finanzas · Operaciones' },
+  { href: '/data-analytics',   label: 'Análisis de datos', desc: 'Gráficos · SQL · Insights' },
+  { href: '/digital-marketing',label: 'Marketing digital', desc: 'SEO · Redes sociales · Campañas' },
+]
+
 const NAV_TR = {
   howItWorks: 'Nasıl çalışır',
   tracks: 'Alanlar',
   signIn: 'Giriş yap',
   applyFree: 'Ücretsiz başvur',
+}
+
+const NAV_ES = {
+  howItWorks: 'Cómo funciona',
+  tracks: 'Áreas',
+  signIn: 'Iniciar sesión',
+  applyFree: 'Solicitar gratis',
 }
 
 const NAV_EN = {
@@ -36,18 +50,19 @@ const NAV_EN = {
 export default function PublicNavAI() {
   const pathname = usePathname()
   const isTR = pathname === '/tr' || pathname.startsWith('/tr/')
-  const nav = isTR ? NAV_TR : NAV_EN
-  const tracks = isTR ? TRACKS_TR : TRACKS_EN
+  const isES = pathname === '/es' || pathname.startsWith('/es/')
+  const nav = isTR ? NAV_TR : isES ? NAV_ES : NAV_EN
+  const tracks = isTR ? TRACKS_TR : isES ? TRACKS_ES : TRACKS_EN
 
   return (
     <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.82)] backdrop-blur-2xl border-b border-black/[0.08]">
       <div className="max-w-[1024px] mx-auto px-6 h-11 flex items-center justify-between relative">
-        <Link href={isTR ? '/tr' : '/'}>
+        <Link href={isTR ? '/tr' : isES ? '/es' : '/'}>
           <Image src="/logo-ai.png" alt="Eduentry.ai" width={64} height={64} className="object-contain" priority />
         </Link>
 
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-xs text-[#1d1d1f]">
-          <Link href={isTR ? '/tr#how-it-works' : '/#how-it-works'} className="hover:opacity-50 transition-opacity">
+          <Link href={isTR ? '/tr#how-it-works' : isES ? '/es#how-it-works' : '/#how-it-works'} className="hover:opacity-50 transition-opacity">
             {nav.howItWorks}
           </Link>
 
@@ -75,7 +90,7 @@ export default function PublicNavAI() {
             </div>
           </div>
 
-          <Link href="/blog" className="hover:opacity-50 transition-opacity">Blog</Link>
+          <Link href={isTR ? '/tr/blog' : isES ? '/es/blog' : '/blog'} className="hover:opacity-50 transition-opacity">Blog</Link>
         </div>
 
         <div className="flex items-center gap-5">

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import PublicNavAI from '@/components/layout/PublicNavAI'
-import PublicFooter from '@/components/layout/PublicFooter'
+import PublicFooterAI from '@/components/layout/PublicFooterAI'
 
 const BASE_URL = 'https://eduentry.ai'
 
@@ -63,7 +63,7 @@ export default function AILayout({ children }: { children: React.ReactNode }) {
       `}</Script>
       <PublicNavAI />
       {children}
-      <PublicFooter />
+      <PublicFooterAI />
     </>
   )
 }

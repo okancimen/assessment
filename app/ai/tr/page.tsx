@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { INTERNSHIP_TRACKS } from '@/types'
-import { BLOG_POSTS } from '@/app/blog/posts'
+import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
 
 const BASE_URL = 'https://eduentry.ai'
 const PAGE_URL = `${BASE_URL}/tr`
@@ -86,10 +86,7 @@ const FAQS = [
   { q: 'Okullar ve işverenler nasıl başlar?', a: 'partnerships@eduentry.ai adresinden bizimle iletişime geçin. Kohortunuz için değerlendirme, kısa liste ve raporlamayı biz üstleniriz.' },
 ]
 
-const INTERNSHIP_TAGS = ['Internship', 'Career Development', 'Work Experience']
-const internshipPosts = BLOG_POSTS
-  .filter(p => p.tags.some(t => INTERNSHIP_TAGS.includes(t)))
-  .slice(0, 3)
+const internshipPosts = BLOG_POSTS_TR.slice(0, 3)
 
 const ORGANIZATION_SCHEMA = {
   '@context': 'https://schema.org',
@@ -295,7 +292,7 @@ export default function TurkishHomePage() {
               {internshipPosts.map((post) => (
                 <Link
                   key={post.slug}
-                  href={`/blog/${post.slug}`}
+                  href={`/tr/blog/${post.slug}`}
                   className="block border border-[#d2d2d7] rounded-2xl p-7 hover:border-[#4F46E5]/40 hover:shadow-sm transition-all"
                 >
                   <div className="flex items-center gap-3 text-xs text-[#6e6e73] mb-3">
