@@ -49,9 +49,9 @@ export default function PublicNavAI() {
         </div>
 
         <div className="flex items-center gap-5">
-          <LanguagePicker />
           <Link href="/auth/login" className="text-xs text-[#1d1d1f] hover:opacity-50 transition-opacity hidden sm:block">Sign in</Link>
           <Link href="/apply" prefetch={false} className="text-xs font-medium text-[#4F46E5] hover:opacity-70 transition-opacity">Apply free</Link>
+          <LanguagePicker />
         </div>
       </div>
     </nav>
