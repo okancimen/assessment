@@ -16,7 +16,6 @@ export async function proxy(request: NextRequest) {
       pathname === '/business' ||
       pathname === '/data-analytics' ||
       pathname === '/digital-marketing' ||
-      pathname === '/organisations' ||
       pathname === '/about' ||
       pathname === '/en' || pathname.startsWith('/en/') ||
       pathname === '/fr' || pathname.startsWith('/fr/') ||

@@ -179,10 +179,6 @@ export default function AboutPage() {
                 <strong className="text-[#1d1d1f]">Students:</strong>{' '}
                 <Link href="/apply" className="text-[#4F46E5] hover:underline">Apply free →</Link>
               </p>
-              <p>
-                <strong className="text-[#1d1d1f]">For organisations:</strong>{' '}
-                <Link href="/organisations" className="text-[#4F46E5] hover:underline">See how cohort assessment works →</Link>
-              </p>
             </div>
           </section>
 

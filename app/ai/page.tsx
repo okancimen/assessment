@@ -162,12 +162,6 @@ export default function AIHomePage() {
             >
               Apply free →
             </Link>
-            <Link
-              href="/#organisations"
-              className="text-[#1d1d1f] font-semibold text-base hover:opacity-60 transition-opacity"
-            >
-              Partner with us
-            </Link>
           </div>
           <p className="text-xs text-[#86868b] mt-6">Free for students · No card required · Results in 35 min</p>
         </div>
@@ -371,35 +365,6 @@ export default function AIHomePage() {
           </div>
         </section>
       )}
-
-      {/* ── For organisations ────────────────────────────────────────────── */}
-      <section id="organisations" className="py-32 bg-[#1d1d1f]">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="max-w-2xl">
-            <p className="text-xs font-medium tracking-[0.15em] text-[#86868b] uppercase mb-5">For schools &amp; employers</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-white tracking-tight mb-6 leading-tight">
-              Bring your students.<br />We handle the rest.
-            </h2>
-            <p className="text-lg text-[#86868b] leading-relaxed mb-10">
-              We assess your cohort, shortlist candidates by track and readiness, and give you a full scoring dashboard. No setup fee. No per-student charge. Contact us to get started.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="mailto:partnerships@eduentry.ai"
-                className="bg-white text-[#1d1d1f] px-8 py-4 rounded-full font-semibold text-base hover:bg-[#f5f5f7] transition-colors"
-              >
-                Contact us →
-              </a>
-              <Link
-                href="/apply"
-                className="border border-white/20 text-white px-8 py-4 rounded-full font-semibold text-base hover:border-white/40 transition-colors"
-              >
-                Student? Apply free
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
       <section className="py-32 bg-[#f5f5f7]">

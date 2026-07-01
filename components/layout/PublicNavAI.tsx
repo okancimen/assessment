@@ -44,8 +44,7 @@ export default function PublicNavAI() {
             </div>
           </div>
 
-          <Link href="/blog"            className="hover:opacity-50 transition-opacity">Blog</Link>
-          <Link href="/organisations"  className="hover:opacity-50 transition-opacity">For Organisations</Link>
+          <Link href="/blog" className="hover:opacity-50 transition-opacity">Blog</Link>
         </div>
 
         <div className="flex items-center gap-5">
