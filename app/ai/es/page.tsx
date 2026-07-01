@@ -83,7 +83,9 @@ const FAQS = [
   { q: '¿Para quién es?',                       a: 'Para estudiantes de instituto de 14 a 18 años (de 3.º de ESO a 2.º de Bachillerato) que quieran adquirir experiencia profesional.' },
   { q: '¿Cuánto tiempo lleva?',                 a: '34 preguntas en cuatro fases, aproximadamente 35 minutos. La evaluación es completamente reanudable — puedes pausarla y continuarla cuando quieras.' },
   { q: '¿Qué área debo elegir?',                a: 'Al solicitar, puedes ordenar hasta tres preferencias de área. La fase de Perfil de intereses también ayuda a identificar dónde encajas mejor — el informe lo refleja.' },
-  { q: '¿Cómo empiezan los colegios y empresas?', a: 'Escríbenos a partnerships@eduentry.ai. Nos encargamos de la evaluación, la selección de candidatos y los informes para vuestro grupo.' },
+  { q: '¿Cuándo recibo mi informe de preparación?', a: 'Inmediatamente después de terminar. Una vez que completas las 34 preguntas, la puntuación con IA se ejecuta al instante y el informe queda disponible en tu cuenta — sin esperas.' },
+  { q: '¿Puedo usar la evaluación en mi CV?',   a: 'Sí. Tu informe de preparación incluye una puntuación medible y un desglose de habilidades por área que puedes mencionar directamente en tus solicitudes. Muchos de nuestros estudiantes lo incluyen en sus cartas de presentación y entrevistas de trabajo.' },
+  { q: '¿Necesito residir en el Reino Unido?',  a: 'La evaluación está abierta a cualquier estudiante de 14 a 18 años. Las prácticas son actualmente en el Reino Unido, por lo que necesitarás poder trabajar allí para la colocación en sí — pero la evaluación y el informe están disponibles para todos.' },
 ]
 
 const internshipPosts = BLOG_POSTS_ES.slice(0, 3)

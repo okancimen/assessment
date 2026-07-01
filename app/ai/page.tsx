@@ -68,7 +68,9 @@ const FAQS = [
   { q: 'Who is it for?',                       a: 'High school students aged 14–18 (Year 9 to Sixth Form) who want to gain professional experience.' },
   { q: 'How long does it take?',               a: 'Around 35 minutes across 34 questions in four phases. The assessment is fully resumable — you can stop and continue later.' },
   { q: 'What track should I choose?',          a: 'You rank up to three track preferences when you apply. The Interest Profile phase also helps identify where you fit best — your report reflects this.' },
-  { q: 'How do schools and employers start?',  a: 'Contact us at partnerships@eduentry.ai. We handle assessment, shortlisting, and reporting for your cohort.' },
+  { q: 'When do I get my readiness report?',   a: 'Immediately after you finish. Once you complete all 34 questions, the AI scoring runs instantly and your report is ready in your account — no waiting.' },
+  { q: 'Can I use my assessment in my CV?',    a: 'Yes. Your readiness report includes a measurable score and a skill breakdown by track that you can reference directly in applications. Many of our students carry it into personal statements and job interviews.' },
+  { q: 'Do I need to be a UK resident?',       a: 'The assessment is open to any student aged 14–18. Internship placements are currently UK-based, so you will need to be able to work in the UK for the placement itself — but the assessment and report are available to everyone.' },
 ]
 
 const INTERNSHIP_TAGS = ['Internship', 'Career Development', 'Work Experience']
