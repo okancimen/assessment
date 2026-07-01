@@ -239,45 +239,23 @@ export default function TurkishHomePage() {
           <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">
             Neler alacaksın.
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-[#f5f5f7] rounded-3xl p-8">
-              <div className="text-xs font-semibold text-[#4F46E5] tracking-wider uppercase mb-6">Öğrenciler için</div>
-              <ul className="space-y-4">
-                {[
-                  'Hazırlık seviyesi — Staja Hazır, Gelişmekte ya da Destek Gerekiyor',
-                  'Yapay zeka tarafından yazılmış kişiselleştirilmiş özet paragraf',
-                  'Her aşama için güçlü yönler ve gelişim alanları içeren içgörü kartları',
-                  'En yüksek puan aldığın alanı gösteren alan uyum profili',
-                  'Başvurular ve kişisel ifadeler için paylaşılabilir rapor bağlantısı',
-                ].map(item => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-[#1d1d1f] leading-relaxed">
-                    <svg className="w-5 h-5 text-[#4F46E5] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-[#1d1d1f] rounded-3xl p-8 text-white">
-              <div className="text-xs font-semibold text-[#86868b] tracking-wider uppercase mb-6">Okullar ve işverenler için</div>
-              <ul className="space-y-4">
-                {[
-                  'Dört değerlendirme aşamasının tamamındaki sayısal puanlar',
-                  'Her staj alanı için alan uyum yüzdesi',
-                  'Genel hazırlık puanına göre sıralanan aday kısa listesi',
-                  'Özgeçmiş indirme ve aday başına tam başvuru profili',
-                  'Kohort yönetimi — alan atama, grup yönetimi',
-                ].map(item => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-[#f5f5f7] leading-relaxed">
-                    <svg className="w-5 h-5 text-[#4F46E5] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="bg-[#f5f5f7] rounded-3xl p-8">
+            <ul className="space-y-4">
+              {[
+                'Hazırlık seviyesi — Staja Hazır, Gelişmekte ya da Destek Gerekiyor',
+                'Yapay zeka tarafından yazılmış kişiselleştirilmiş özet paragraf',
+                'Her aşama için güçlü yönler ve gelişim alanları içeren içgörü kartları',
+                'En yüksek puan aldığın alanı gösteren alan uyum profili',
+                'Başvurular ve kişisel ifadeler için paylaşılabilir rapor bağlantısı',
+              ].map(item => (
+                <li key={item} className="flex items-start gap-3 text-sm text-[#1d1d1f] leading-relaxed">
+                  <svg className="w-5 h-5 text-[#4F46E5] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
