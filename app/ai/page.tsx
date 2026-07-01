@@ -57,10 +57,10 @@ const TRACK_SLUGS: Record<string, string> = {
 }
 
 const PHASES = [
-  { label: 'General Aptitude',  qs: 10, desc: 'Verbal & numerical reasoning',        icon: '🧠' },
-  { label: 'Domain Knowledge',  qs: 10, desc: 'Track-specific applied knowledge',     icon: '📚' },
-  { label: 'Workplace Skills',  qs: 8,  desc: 'Real workplace scenarios (SJT)',       icon: '🤝' },
-  { label: 'Interest Profile',  qs: 6,  desc: 'Work style & preference mapping',      icon: '🎯' },
+  { label: 'General Aptitude',  qs: 10, desc: 'Verbal & numerical reasoning',        img: '/phases/general-aptitude.jpg' },
+  { label: 'Domain Knowledge',  qs: 10, desc: 'Track-specific applied knowledge',    img: '/phases/domain-knowledge.jpg' },
+  { label: 'Workplace Skills',  qs: 8,  desc: 'Real workplace scenarios (SJT)',      img: '/phases/workplace-skills.jpg' },
+  { label: 'Interest Profile',  qs: 6,  desc: 'Work style & preference mapping',     img: '/phases/interest-profile.jpg' },
 ]
 
 const FAQS = [
@@ -243,8 +243,8 @@ export default function AIHomePage() {
           <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
             {PHASES.map((phase, i) => (
               <div key={phase.label} className={`flex items-center gap-6 p-7 ${i < PHASES.length - 1 ? 'border-b border-[#f5f5f7]' : ''}`}>
-                <div className="w-12 h-12 rounded-2xl bg-[#eef2ff] flex items-center justify-center text-2xl flex-shrink-0">
-                  {phase.icon}
+                <div className="w-12 h-12 rounded-2xl overflow-hidden flex-shrink-0">
+                  <Image src={phase.img} alt={phase.label} width={48} height={48} className="object-cover w-full h-full" />
                 </div>
                 <div className="flex-1">
                   <div className="font-bold text-[#1d1d1f]">{phase.label}</div>
