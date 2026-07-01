@@ -3,12 +3,12 @@
 import { useState, useRef, useEffect } from 'react'
 
 const LANGUAGES = [
-  { code: 'EN', label: 'English',   flag: '🇬🇧', href: '/' },
-  { code: 'FR', label: 'Français',  flag: '🇫🇷', href: '#' },
-  { code: 'ES', label: 'Español',   flag: '🇪🇸', href: '#' },
-  { code: 'TR', label: 'Türkçe',    flag: '🇹🇷', href: '#' },
-  { code: 'AR', label: 'العربية',   flag: '🇸🇦', href: '#' },
-  { code: 'ZH', label: '中文',      flag: '🇨🇳', href: '#' },
+  { code: 'EN', label: 'English',   flag: '🇬🇧', href: '/en' },
+  { code: 'FR', label: 'Français',  flag: '🇫🇷', href: '/fr' },
+  { code: 'ES', label: 'Español',   flag: '🇪🇸', href: '/es' },
+  { code: 'TR', label: 'Türkçe',    flag: '🇹🇷', href: '/tr' },
+  { code: 'AR', label: 'العربية',   flag: '🇸🇦', href: '/ar' },
+  { code: 'ZH', label: '中文',      flag: '🇨🇳', href: '/zh' },
 ]
 
 export default function LanguagePicker({ current = 'EN' }: { current?: string }) {

@@ -18,6 +18,12 @@ export async function proxy(request: NextRequest) {
       pathname === '/digital-marketing' ||
       pathname === '/organisations' ||
       pathname === '/about' ||
+      pathname === '/en' || pathname.startsWith('/en/') ||
+      pathname === '/fr' || pathname.startsWith('/fr/') ||
+      pathname === '/es' || pathname.startsWith('/es/') ||
+      pathname === '/tr' || pathname.startsWith('/tr/') ||
+      pathname === '/ar' || pathname.startsWith('/ar/') ||
+      pathname === '/zh' || pathname.startsWith('/zh/') ||
       pathname === '/sitemap.xml' ||
       pathname === '/robots.txt'
     ) {
