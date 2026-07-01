@@ -13,17 +13,17 @@ const TRACKS_EN = [
 ]
 
 const TRACKS_TR = [
-  { href: '/tech',              label: 'Teknoloji',         desc: 'Kodlama · Algoritmalar · Siber Güvenlik' },
-  { href: '/business',         label: 'İş Dünyası',        desc: 'Strateji · Finans · Operasyon' },
-  { href: '/data-analytics',   label: 'Veri Analitiği',    desc: 'Grafikler · SQL · İçgörüler' },
-  { href: '/digital-marketing',label: 'Dijital Pazarlama', desc: 'SEO · Sosyal Medya · Kampanyalar' },
+  { href: '/tr/tech',              label: 'Teknoloji',         desc: 'Kodlama · Algoritmalar · Siber Güvenlik' },
+  { href: '/tr/business',         label: 'İş Dünyası',        desc: 'Strateji · Finans · Operasyon' },
+  { href: '/tr/data-analytics',   label: 'Veri Analitiği',    desc: 'Grafikler · SQL · İçgörüler' },
+  { href: '/tr/digital-marketing',label: 'Dijital Pazarlama', desc: 'SEO · Sosyal Medya · Kampanyalar' },
 ]
 
 const TRACKS_ES = [
-  { href: '/tech',              label: 'Tecnología',        desc: 'Programación · Algoritmos · Ciberseguridad' },
-  { href: '/business',         label: 'Empresa',           desc: 'Estrategia · Finanzas · Operaciones' },
-  { href: '/data-analytics',   label: 'Análisis de datos', desc: 'Gráficos · SQL · Insights' },
-  { href: '/digital-marketing',label: 'Marketing digital', desc: 'SEO · Redes sociales · Campañas' },
+  { href: '/es/tech',              label: 'Tecnología',        desc: 'Programación · Algoritmos · Ciberseguridad' },
+  { href: '/es/business',         label: 'Empresa',           desc: 'Estrategia · Finanzas · Operaciones' },
+  { href: '/es/data-analytics',   label: 'Análisis de datos', desc: 'Gráficos · SQL · Insights' },
+  { href: '/es/digital-marketing',label: 'Marketing digital', desc: 'SEO · Redes sociales · Campañas' },
 ]
 
 const NAV_TR = {

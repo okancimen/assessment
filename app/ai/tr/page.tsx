@@ -308,7 +308,7 @@ export default function TurkishHomePage() {
               ))}
             </div>
             <div className="mt-8">
-              <Link href="/blog" className="text-sm font-semibold text-[#4F46E5] hover:underline">
+              <Link href="/tr/blog" className="text-sm font-semibold text-[#4F46E5] hover:underline">
                 Tüm staj makalelerini görüntüle →
               </Link>
             </div>

@@ -19,6 +19,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/blog`,                      lastModified: new Date().toISOString().slice(0, 10), changeFrequency: 'weekly', priority: 0.8 },
     { url: `${BASE}/tr/blog`,                   lastModified: new Date().toISOString().slice(0, 10), changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE}/es/blog`,                   lastModified: new Date().toISOString().slice(0, 10), changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${BASE}/tr/tech`,                   lastModified: '2026-07-02', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/tr/business`,               lastModified: '2026-07-02', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/tr/data-analytics`,         lastModified: '2026-07-02', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/tr/digital-marketing`,      lastModified: '2026-07-02', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/es/tech`,                   lastModified: '2026-07-02', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/es/business`,               lastModified: '2026-07-02', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/es/data-analytics`,         lastModified: '2026-07-02', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/es/digital-marketing`,      lastModified: '2026-07-02', changeFrequency: 'monthly', priority: 0.8 },
   ]
 
   const blogPages: MetadataRoute.Sitemap = BLOG_POSTS
