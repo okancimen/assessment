@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { INTERNSHIP_TRACKS, INTERNSHIP_TRACK_LABELS, INTERNSHIP_TRACK_DESCRIPTIONS } from '@/types'
 import { BLOG_POSTS } from '@/app/blog/posts'
 
@@ -41,11 +42,11 @@ export const metadata: Metadata = {
   },
 }
 
-const TRACK_ICONS: Record<string, string> = {
-  tech: '💻',
-  business: '📈',
-  data_analytics: '📊',
-  digital_marketing: '📣',
+const TRACK_IMAGES: Record<string, string> = {
+  tech: '/tracks/tech.jpg',
+  business: '/tracks/business.jpg',
+  data_analytics: '/tracks/data-analytics.jpg',
+  digital_marketing: '/tracks/digital-marketing.jpg',
 }
 
 const TRACK_SLUGS: Record<string, string> = {
@@ -184,12 +185,22 @@ export default function AIHomePage() {
               <Link
                 key={track}
                 href={TRACK_SLUGS[track]}
-                className="group bg-white rounded-3xl border border-[#d2d2d7] p-8 hover:border-[#4F46E5]/40 hover:shadow-sm transition-all"
+                className="group bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden hover:border-[#4F46E5]/40 hover:shadow-sm transition-all"
               >
-                <div className="text-4xl mb-4">{TRACK_ICONS[track]}</div>
-                <h3 className="font-bold text-[#1d1d1f] text-xl mb-2 group-hover:text-[#4F46E5] transition-colors">{INTERNSHIP_TRACK_LABELS[track]}</h3>
-                <p className="text-sm text-[#6e6e73] leading-relaxed mb-4">{INTERNSHIP_TRACK_DESCRIPTIONS[track]}</p>
-                <span className="text-sm font-semibold text-[#4F46E5] opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</span>
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src={TRACK_IMAGES[track]}
+                    alt={INTERNSHIP_TRACK_LABELS[track]}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="font-bold text-[#1d1d1f] text-xl mb-2 group-hover:text-[#4F46E5] transition-colors">{INTERNSHIP_TRACK_LABELS[track]}</h3>
+                  <p className="text-sm text-[#6e6e73] leading-relaxed mb-4">{INTERNSHIP_TRACK_DESCRIPTIONS[track]}</p>
+                  <span className="text-sm font-semibold text-[#4F46E5] opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</span>
+                </div>
               </Link>
             ))}
           </div>
