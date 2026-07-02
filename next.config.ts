@@ -3,21 +3,19 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
-      {
-        source: '/internship/assessment/:id/question',
-        destination: '/assessment/:id/question',
-        permanent: true,
-      },
-      {
-        source: '/internship/assessment/:id/complete',
-        destination: '/assessment/:id/complete',
-        permanent: true,
-      },
-      {
-        source: '/internship/results/:id',
-        destination: '/assessment/:id/results',
-        permanent: true,
-      },
+      { source: '/internship/assessment/:id/question', destination: '/assessment/:id/question', permanent: true },
+      { source: '/internship/assessment/:id/complete', destination: '/assessment/:id/complete', permanent: true },
+      { source: '/internship/results/:id',             destination: '/assessment/:id/results',  permanent: true },
+      // TR locale track slug redirects (old English slugs → Turkish slugs)
+      { source: '/tr/tech',              destination: '/tr/teknoloji',         permanent: true },
+      { source: '/tr/business',          destination: '/tr/is-dunyasi',        permanent: true },
+      { source: '/tr/data-analytics',    destination: '/tr/veri-analitigi',    permanent: true },
+      { source: '/tr/digital-marketing', destination: '/tr/dijital-pazarlama', permanent: true },
+      // ES locale track slug redirects (old English slugs → Spanish slugs)
+      { source: '/es/tech',              destination: '/es/tecnologia',         permanent: true },
+      { source: '/es/business',          destination: '/es/empresa',            permanent: true },
+      { source: '/es/data-analytics',    destination: '/es/analisis-de-datos',  permanent: true },
+      { source: '/es/digital-marketing', destination: '/es/marketing-digital',  permanent: true },
     ]
   },
   compress: true,

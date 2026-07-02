@@ -9,10 +9,25 @@ interface Props {
   locale: Locale
 }
 
+const LOCALE_SLUGS: Record<Locale, Record<TrackId, string>> = {
+  tr: {
+    tech: 'teknoloji',
+    business: 'is-dunyasi',
+    'data-analytics': 'veri-analitigi',
+    'digital-marketing': 'dijital-pazarlama',
+  },
+  es: {
+    tech: 'tecnologia',
+    business: 'empresa',
+    'data-analytics': 'analisis-de-datos',
+    'digital-marketing': 'marketing-digital',
+  },
+}
+
 export default function TrackPageTemplate({ track, locale }: Props) {
   const d = TRACK_I18N[locale][track]
   const BASE_URL = 'https://eduentry.ai'
-  const TRACK_URL = `${BASE_URL}/${locale}/${track}`
+  const TRACK_URL = `${BASE_URL}/${locale}/${LOCALE_SLUGS[locale][track]}`
   const EN_URL = `${BASE_URL}/${track}`
   const posts = (locale === 'tr' ? BLOG_POSTS_TR : BLOG_POSTS_ES).slice(0, 2)
   const ctaLabel = `${locale}_${track}_cta`

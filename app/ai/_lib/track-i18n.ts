@@ -105,9 +105,9 @@ const TR: Record<TrackId, TrackData> = {
     otherTracks: {
       heading: 'Diğer staj alanları',
       list: [
-        { href: '/tr/business',          label: 'İş Dünyası',        desc: 'Strateji, finans, operasyon' },
-        { href: '/tr/data-analytics',    label: 'Veri Analitiği',    desc: 'Veri, istatistik, içgörüler' },
-        { href: '/tr/digital-marketing', label: 'Dijital Pazarlama', desc: 'SEO, sosyal medya, kampanyalar' },
+        { href: '/tr/is-dunyasi',          label: 'İş Dünyası',        desc: 'Strateji, finans, operasyon' },
+        { href: '/tr/veri-analitigi',    label: 'Veri Analitiği',    desc: 'Veri, istatistik, içgörüler' },
+        { href: '/tr/dijital-pazarlama', label: 'Dijital Pazarlama', desc: 'SEO, sosyal medya, kampanyalar' },
       ],
     },
     blog: { heading: 'Daha fazla okuma' },
@@ -199,9 +199,9 @@ const TR: Record<TrackId, TrackData> = {
     otherTracks: {
       heading: 'Diğer staj alanları',
       list: [
-        { href: '/tr/tech',              label: 'Teknoloji',         desc: 'Kodlama, algoritmalar, siber güvenlik' },
-        { href: '/tr/data-analytics',    label: 'Veri Analitiği',    desc: 'Veri, istatistik, içgörüler' },
-        { href: '/tr/digital-marketing', label: 'Dijital Pazarlama', desc: 'SEO, sosyal medya, kampanyalar' },
+        { href: '/tr/teknoloji',              label: 'Teknoloji',         desc: 'Kodlama, algoritmalar, siber güvenlik' },
+        { href: '/tr/veri-analitigi',    label: 'Veri Analitiği',    desc: 'Veri, istatistik, içgörüler' },
+        { href: '/tr/dijital-pazarlama', label: 'Dijital Pazarlama', desc: 'SEO, sosyal medya, kampanyalar' },
       ],
     },
     blog: { heading: 'Daha fazla okuma' },
@@ -293,9 +293,9 @@ const TR: Record<TrackId, TrackData> = {
     otherTracks: {
       heading: 'Diğer staj alanları',
       list: [
-        { href: '/tr/tech',              label: 'Teknoloji',         desc: 'Kodlama, algoritmalar, siber güvenlik' },
-        { href: '/tr/business',          label: 'İş Dünyası',        desc: 'Strateji, finans, operasyon' },
-        { href: '/tr/digital-marketing', label: 'Dijital Pazarlama', desc: 'SEO, sosyal medya, kampanyalar' },
+        { href: '/tr/teknoloji',              label: 'Teknoloji',         desc: 'Kodlama, algoritmalar, siber güvenlik' },
+        { href: '/tr/is-dunyasi',          label: 'İş Dünyası',        desc: 'Strateji, finans, operasyon' },
+        { href: '/tr/dijital-pazarlama', label: 'Dijital Pazarlama', desc: 'SEO, sosyal medya, kampanyalar' },
       ],
     },
     blog: { heading: 'Daha fazla okuma' },
@@ -387,9 +387,9 @@ const TR: Record<TrackId, TrackData> = {
     otherTracks: {
       heading: 'Diğer staj alanları',
       list: [
-        { href: '/tr/tech',           label: 'Teknoloji',      desc: 'Kodlama, algoritmalar, siber güvenlik' },
-        { href: '/tr/business',       label: 'İş Dünyası',     desc: 'Strateji, finans, operasyon' },
-        { href: '/tr/data-analytics', label: 'Veri Analitiği', desc: 'Veri, istatistik, içgörüler' },
+        { href: '/tr/teknoloji',           label: 'Teknoloji',      desc: 'Kodlama, algoritmalar, siber güvenlik' },
+        { href: '/tr/is-dunyasi',       label: 'İş Dünyası',     desc: 'Strateji, finans, operasyon' },
+        { href: '/tr/veri-analitigi', label: 'Veri Analitiği', desc: 'Veri, istatistik, içgörüler' },
       ],
     },
     blog: { heading: 'Daha fazla okuma' },
@@ -485,9 +485,9 @@ const ES: Record<TrackId, TrackData> = {
     otherTracks: {
       heading: 'Otras áreas de prácticas',
       list: [
-        { href: '/es/business',          label: 'Empresa',           desc: 'Estrategia, finanzas, operaciones' },
-        { href: '/es/data-analytics',    label: 'Análisis de datos', desc: 'Datos, estadística, insights' },
-        { href: '/es/digital-marketing', label: 'Marketing digital', desc: 'SEO, redes sociales, campañas' },
+        { href: '/es/empresa',          label: 'Empresa',           desc: 'Estrategia, finanzas, operaciones' },
+        { href: '/es/analisis-de-datos',    label: 'Análisis de datos', desc: 'Datos, estadística, insights' },
+        { href: '/es/marketing-digital', label: 'Marketing digital', desc: 'SEO, redes sociales, campañas' },
       ],
     },
     blog: { heading: 'Lecturas recomendadas' },
@@ -579,9 +579,9 @@ const ES: Record<TrackId, TrackData> = {
     otherTracks: {
       heading: 'Otras áreas de prácticas',
       list: [
-        { href: '/es/tech',              label: 'Tecnología',        desc: 'Programación, algoritmos, ciberseguridad' },
-        { href: '/es/data-analytics',    label: 'Análisis de datos', desc: 'Datos, estadística, insights' },
-        { href: '/es/digital-marketing', label: 'Marketing digital', desc: 'SEO, redes sociales, campañas' },
+        { href: '/es/tecnologia',              label: 'Tecnología',        desc: 'Programación, algoritmos, ciberseguridad' },
+        { href: '/es/analisis-de-datos',    label: 'Análisis de datos', desc: 'Datos, estadística, insights' },
+        { href: '/es/marketing-digital', label: 'Marketing digital', desc: 'SEO, redes sociales, campañas' },
       ],
     },
     blog: { heading: 'Lecturas recomendadas' },
@@ -673,9 +673,9 @@ const ES: Record<TrackId, TrackData> = {
     otherTracks: {
       heading: 'Otras áreas de prácticas',
       list: [
-        { href: '/es/tech',              label: 'Tecnología',        desc: 'Programación, algoritmos, ciberseguridad' },
-        { href: '/es/business',          label: 'Empresa',           desc: 'Estrategia, finanzas, operaciones' },
-        { href: '/es/digital-marketing', label: 'Marketing digital', desc: 'SEO, redes sociales, campañas' },
+        { href: '/es/tecnologia',              label: 'Tecnología',        desc: 'Programación, algoritmos, ciberseguridad' },
+        { href: '/es/empresa',          label: 'Empresa',           desc: 'Estrategia, finanzas, operaciones' },
+        { href: '/es/marketing-digital', label: 'Marketing digital', desc: 'SEO, redes sociales, campañas' },
       ],
     },
     blog: { heading: 'Lecturas recomendadas' },
@@ -767,9 +767,9 @@ const ES: Record<TrackId, TrackData> = {
     otherTracks: {
       heading: 'Otras áreas de prácticas',
       list: [
-        { href: '/es/tech',           label: 'Tecnología',        desc: 'Programación, algoritmos, ciberseguridad' },
-        { href: '/es/business',       label: 'Empresa',           desc: 'Estrategia, finanzas, operaciones' },
-        { href: '/es/data-analytics', label: 'Análisis de datos', desc: 'Datos, estadística, insights' },
+        { href: '/es/tecnologia',           label: 'Tecnología',        desc: 'Programación, algoritmos, ciberseguridad' },
+        { href: '/es/empresa',       label: 'Empresa',           desc: 'Estrategia, finanzas, operaciones' },
+        { href: '/es/analisis-de-datos', label: 'Análisis de datos', desc: 'Datos, estadística, insights' },
       ],
     },
     blog: { heading: 'Lecturas recomendadas' },

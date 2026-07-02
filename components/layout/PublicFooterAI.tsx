@@ -12,10 +12,10 @@ const TRACKS_EN = [
 ]
 
 const TRACKS_TR = [
-  { href: '/tr/tech',               label: 'Teknoloji' },
-  { href: '/tr/business',           label: 'İş Dünyası' },
-  { href: '/tr/data-analytics',     label: 'Veri Analitiği' },
-  { href: '/tr/digital-marketing',  label: 'Dijital Pazarlama' },
+  { href: '/tr/teknoloji',          label: 'Teknoloji' },
+  { href: '/tr/is-dunyasi',         label: 'İş Dünyası' },
+  { href: '/tr/veri-analitigi',     label: 'Veri Analitiği' },
+  { href: '/tr/dijital-pazarlama',  label: 'Dijital Pazarlama' },
 ]
 
 const LABELS_EN = {
@@ -33,10 +33,10 @@ const LABELS_EN = {
 }
 
 const TRACKS_ES = [
-  { href: '/es/tech',               label: 'Tecnología' },
-  { href: '/es/business',           label: 'Empresa' },
-  { href: '/es/data-analytics',     label: 'Análisis de datos' },
-  { href: '/es/digital-marketing',  label: 'Marketing digital' },
+  { href: '/es/tecnologia',         label: 'Tecnología' },
+  { href: '/es/empresa',            label: 'Empresa' },
+  { href: '/es/analisis-de-datos',  label: 'Análisis de datos' },
+  { href: '/es/marketing-digital',  label: 'Marketing digital' },
 ]
 
 const LABELS_TR = {
