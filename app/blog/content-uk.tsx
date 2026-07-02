@@ -1638,4 +1638,182 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'how-does-your-child-compare-globally': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Most parents know roughly where their child sits in their class. A few know where they rank in their year group. Almost none know where their child sits in the global distribution of academic ability — and that gap in understanding can quietly cost children opportunities they deserved to have.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        This matters because the institutions that shape a child&apos;s future — selective schools, university admissions offices, scholarship committees, and increasingly employers — do not evaluate children against their classmates. They evaluate them against everyone. Understanding global context is not about fuelling anxiety. It is about making decisions with accurate information.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Problem with National Grades</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A Grade 7 in GCSE Mathematics sounds excellent — and within a UK context, it is. But it tells you nothing about how that student performs relative to a 15-year-old in Singapore, Finland, or Canada. National grades are calibrated against national peers. They are not designed for global comparison.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The problem becomes concrete when children begin competing for internationally contested opportunities: university places with strong overseas applicant pools, scholarships assessed by global ranking, or graduate schemes at multinational employers who recruit from dozens of countries simultaneously. At every one of these decision points, the question is not &ldquo;how does this student compare to other UK students?&rdquo; It is &ldquo;how does this student compare to the global pool?&rdquo;
+        </p>
+        <Callout color="indigo">
+          The OECD&apos;s PISA study — the largest global comparison of 15-year-old academic performance — consistently shows that students in top-performing countries outperform UK peers by the equivalent of two to three school years. A student performing at the UK national average in Mathematics is, by PISA standards, performing at roughly the 46th global percentile.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What the Global Benchmarks Actually Show</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Several internationally standardised frameworks give families a reliable read on global position. They are not perfectly comparable — they test different things, at different ages, with different scoring scales — but together they paint a clear picture.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>PISA (Programme for International Student Assessment):</strong> Tests 15-year-olds in Mathematics, Reading, and Science across 80+ countries. OECD mean is 472 (Mathematics). Singapore leads at 575. The UK average sits at approximately 495–510 — above the OECD mean, but roughly 65–80 points below top-performing Asian systems. Each 30–40 PISA points represents roughly one school year of learning. That gap is real.
+          </Bullet>
+          <Bullet>
+            <strong>TIMSS (Trends in International Mathematics and Science Study):</strong> Tests Years 4 and 8. The international average is set at 500. England typically scores around 520–540 in Mathematics at Year 4 and Year 8 — respectable, but well below Singapore (618), South Korea (600), and Chinese Taipei (594). England&apos;s Year 4 results have improved notably since 2015, but the performance gap with the very top systems remains substantial.
+          </Bullet>
+          <Bullet>
+            <strong>The IB Diploma Programme:</strong> Taken by students aged 16–19 in 160+ countries. The worldwide average score is approximately 29–30 out of 45. Top UK universities expect 38–42 points for competitive courses. A score of 40+ places a student comfortably above the 90th percentile globally, competing directly with high-achievers from Singapore, the US, and continental Europe.
+          </Bullet>
+          <Bullet>
+            <strong>Digital SAT (US College Boards):</strong> Increasingly used as a global benchmark for pre-university ability. The median score for the top 10% of global applicants is approximately 1480+ out of 1600. For UK students considering US universities or international scholarships that reference SAT scores, this provides a useful external calibration.
+          </Bullet>
+          <Bullet>
+            <strong>Cognitive Assessment (CAT4 / CogAT):</strong> Used widely in UK independent schools, international schools, and selective state schools. Standardised Age Scores (SAS) have a mean of 100 and a standard deviation of 15. An SAS of 115 corresponds to approximately the 84th percentile; 130 to the 98th. These assessments test reasoning ability rather than curriculum knowledge — making them one of the cleanest cross-border comparators available.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What &ldquo;Above Average&rdquo; Means in Practice</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Parents frequently receive feedback that their child is &ldquo;doing well&rdquo; or is &ldquo;above average&rdquo;. This is almost always true relative to classmates. The more useful question is: above average in which population?
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left py-3 px-4 font-semibold text-gray-900">Performance level</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-900">UK school grade equivalent</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-900">Global PISA percentile (approx.)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              <tr>
+                <td className="py-3 px-4 text-gray-700">Top 5% globally</td>
+                <td className="py-3 px-4 text-gray-700">Grade 8–9 GCSE / A* A-level</td>
+                <td className="py-3 px-4 text-gray-700">95th percentile+</td>
+              </tr>
+              <tr>
+                <td className="py-3 px-4 text-gray-700">Top 10% globally</td>
+                <td className="py-3 px-4 text-gray-700">Grade 7–8 GCSE / A A-level</td>
+                <td className="py-3 px-4 text-gray-700">90th percentile+</td>
+              </tr>
+              <tr>
+                <td className="py-3 px-4 text-gray-700">Above OECD average</td>
+                <td className="py-3 px-4 text-gray-700">Grade 5–6 GCSE / B A-level</td>
+                <td className="py-3 px-4 text-gray-700">~55th–65th percentile</td>
+              </tr>
+              <tr>
+                <td className="py-3 px-4 text-gray-700">UK national average</td>
+                <td className="py-3 px-4 text-gray-700">Grade 4–5 GCSE</td>
+                <td className="py-3 px-4 text-gray-700">~46th–52nd percentile</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          These are approximations — PISA, GCSE, and cognitive assessments measure overlapping but not identical constructs. But the table illustrates the key point: a child performing strongly by UK standards may be performing at or slightly above the global middle. For families considering selective schools, international scholarships, or top university applications, this context is essential.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Countries Your Child Is Actually Competing With</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          When a UK student applies to study Medicine at UCL, Economics at LSE, or Computer Science at Imperial, they are not competing primarily with other UK students. They are competing with students from:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>Singapore and Hong Kong,</strong> where the average 15-year-old performs at the 75th–80th global percentile in Mathematics — the equivalent of what the UK produces only in its top 20–25%.</Check>
+          <Check><strong>China (participating regions),</strong> where top-city cohorts average PISA Mathematics scores above 590 — nearly 100 points above the UK mean.</Check>
+          <Check><strong>South Korea and Japan,</strong> where consistent academic culture produces national averages (535–545) that would rank a student in the top 20% of UK cohorts.</Check>
+          <Check><strong>The United States,</strong> which has a lower national average than the UK (465–470 in Mathematics) but produces the highest concentration of top-tier performers globally at the 95th+ percentile through its selective private and magnet school pipeline.</Check>
+          <Check><strong>India and Eastern Europe,</strong> which do not participate fully in PISA but contribute very large numbers of high-achieving applicants to UK universities, particularly in STEM subjects.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          None of this is a reason for alarm. But it is a reason for informed perspective. The child who is top of their year group in a UK comprehensive school may be performing at the 60th global percentile. The child who consistently achieves above 70th in their class at a selective independent may be performing at the 85th percentile globally. These distinctions matter for life planning.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Hidden Achievement Gap Parents Rarely See</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          One of the most consistent findings in international education research is that high-ability children in less-stimulating environments are systematically underperforming their potential — and neither they nor their parents know it. This is sometimes called the &ldquo;invisible ceiling&rdquo; effect: a bright child in an average school rises to the top of their available peer group and receives positive feedback that stops them pushing harder.
+        </p>
+        <Callout color="amber">
+          A 2022 study by the Education Policy Institute found that the most able 10% of pupils in England — those who score in the top decile of KS2 assessments — make significantly less academic progress between ages 11 and 16 than equivalently talented peers in other high-performing OECD countries. The gap is largest in Mathematics. The children at risk are not low achievers — they are high achievers in low-challenge environments.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Standardised global benchmarking is one of the most effective ways to identify this pattern early. A child who scores in the 80th UK percentile on a national test, but in the 60th percentile on an internationally normed assessment, is showing exactly this pattern — national context flattering their position relative to what a truly global comparison reveals.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What You Can Do with This Information</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Understanding global position is only useful if it leads to action. The actionable responses depend entirely on what the benchmarking reveals:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>If your child is performing above the 85th global percentile:</strong> The priority is challenge, not remediation. Look for extension material, advanced problem-solving programmes, subject olympiads, academic enrichment, and eventually — scholarship applications and university programmes that will stretch them appropriately. These children need harder problems, not more of the same.
+          </Bullet>
+          <Bullet>
+            <strong>If your child is performing between the 50th–85th global percentile:</strong> This is the largest group — and the group for whom focused, targeted intervention produces the largest returns. Subject-specific tutoring, structured practice in weak areas, and deliberate exposure to harder material can realistically shift a child from the 65th to the 80th+ percentile within 12–18 months of consistent work.
+          </Bullet>
+          <Bullet>
+            <strong>If your child is performing below the 50th global percentile:</strong> This is not a crisis — it is a data point. Most children in this position are performing appropriately for their age and learning environment. The question is whether their trajectory is improving or stalling. An improving 45th percentile child who gains 5–8 points per year will reach global competitiveness before age 18.
+          </Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          The intervention that matters most is almost never the most dramatic one. It is consistent, well-targeted practice in the specific domains where the benchmark reveals a gap — combined with a challenge-rich environment that prevents the invisible ceiling from forming.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How Eduentry Helps You Understand Your Child&apos;s Position</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          School reports tell you grades. Standardised assessments tell you where those grades sit in the real distribution. <Link href="https://eduentry.com" className="text-indigo-600 hover:underline font-medium">Eduentry</Link> provides free adaptive assessments for children and students that produce standardised scores with full percentile context — not just within the UK, but referenced against international benchmarks including PISA, IB, and CAT4 standards.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The assessment covers verbal reasoning, numerical reasoning, and non-verbal / spatial reasoning — the three domains that international cognitive research identifies as the strongest predictors of academic potential across subjects. Unlike a school exam, which tests curriculum knowledge, a reasoning assessment tests underlying ability: how a child thinks, not just what they have been taught.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The result is a personalised report that shows:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check>A standardised score (SAS-equivalent) for each reasoning domain</Check>
+          <Check>A percentile rank within a UK-normed cohort</Check>
+          <Check>International context: how the score maps against PISA performance bands and IB score equivalents</Check>
+          <Check>An AI-written summary identifying specific strengths and where targeted effort would produce the greatest return</Check>
+          <Check>A readiness assessment for selective school entry, scholarship programmes, or academic enrichment</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          For parents who have always wondered where their child genuinely stands — not against their class, but against the world — <Link href="https://eduentry.com" className="text-indigo-600 hover:underline font-medium">Eduentry</Link>&apos;s assessment is the most direct answer currently available for free.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Right Frame for This Conversation</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Global comparison can feel anxiety-inducing when it is framed as competition. It is more useful when framed as calibration. The question &ldquo;how does my child compare globally?&rdquo; is not &ldquo;is my child good enough?&rdquo; It is &ldquo;what opportunities are realistically available, and what does it take to access them?&rdquo;
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A child performing at the 65th global percentile has a clear, achievable path to the 80th within two years of focused work — if the right interventions are applied to the right gaps at the right time. A child already performing at the 90th percentile benefits from challenge and acceleration, not the remediation-focused tutoring that most academic support defaults to.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          In both cases, the starting point is the same: an honest, standardised read on where the child actually stands. Everything useful follows from that.
+        </p>
+      </section>
+    </>
+  ),
 }
