@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   description: d.meta.description,
   alternates: {
     canonical: TRACK_URL,
-    languages: { es: TRACK_URL, en: `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },
+    languages: { es: TRACK_URL, tr: `${BASE_URL}/tr/dijital-pazarlama`, en: `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },
   },
-  robots: { index: true, follow: true },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     type: 'website',
     title: d.meta.title,
@@ -21,7 +21,10 @@ export const metadata: Metadata = {
     url: TRACK_URL,
     siteName: 'Eduentry.ai',
     locale: 'es_ES',
+    alternateLocale: ['en_GB', 'tr_TR'],
+    images: [{ url: `${TRACK_URL}/opengraph-image`, width: 1200, height: 630, alt: d.meta.title }],
   },
+  twitter: { card: 'summary_large_image' as const, title: d.meta.title, description: d.meta.description },
 }
 
 export default function DigitalMarketingTrackES() {
