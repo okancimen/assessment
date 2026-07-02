@@ -8,37 +8,44 @@ const BASE_URL = 'https://eduentry.ai'
 const PAGE_URL = `${BASE_URL}/es`
 
 export const metadata: Metadata = {
-  title: 'Consigue unas prácticas reales — Evaluación de preparación gratuita',
+  title: 'Evaluación de prácticas Reino Unido — Informe de IA gratuito | Eduentry.ai',
   description:
-    'Evaluación de preparación para prácticas gratuita con inteligencia artificial para estudiantes de instituto mayores de 14 años. 34 preguntas, 35 minutos. Áreas: Tecnología, Empresa, Análisis de datos y Marketing digital.',
+    'Evaluación de prácticas gratuita con IA para estudiantes de 14 a 18 años. 34 preguntas adaptativas en Tecnología, Empresa, Datos y Marketing. Informe personalizado al instante.',
   keywords: [
-    'evaluación preparación prácticas',
+    'evaluación preparación prácticas Reino Unido',
     'prácticas gratis estudiantes instituto',
-    'colocación en prácticas',
-    'prácticas tecnología instituto',
-    'prácticas empresa estudiantes',
-    'prácticas análisis de datos',
-    'prácticas marketing digital',
-    'informe preparación inteligencia artificial',
-    'evaluación orientación profesional',
+    'informe IA preparación prácticas',
+    'prácticas tecnología instituto España',
+    'prácticas empresa estudiantes 14 15 16 17 18 años',
+    'prácticas análisis de datos instituto',
+    'prácticas marketing digital estudiantes',
+    'evaluación adaptativa orientación profesional',
+    'test aptitud estudiantes gratis',
+    'experiencia laboral evaluación instituto',
+    'colocación prácticas estudiantes',
+    'carta de presentación prácticas estudiantes',
+    'prácticas verano jóvenes Reino Unido',
+    'evaluación habilidades profesionales adolescentes',
+    'informe preparación personalizado estudiantes',
   ],
   alternates: {
     canonical: PAGE_URL,
-    languages: { es: PAGE_URL, 'en-GB': BASE_URL, 'x-default': BASE_URL },
+    languages: { es: PAGE_URL, 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, 'x-default': BASE_URL },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     type: 'website',
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
-    title: 'Consigue unas prácticas reales — Eduentry.ai',
-    description: 'Evaluación de preparación para prácticas gratuita con IA para estudiantes de instituto mayores de 14 años. 34 preguntas, aptitud, conocimientos del sector, habilidades profesionales y perfil de intereses.',
+    locale: 'es_ES',
+    title: 'Evaluación de prácticas Reino Unido — Informe de IA gratuito | Eduentry.ai',
+    description: 'Evaluación de preparación para prácticas gratuita con IA para estudiantes de 14 a 18 años. 34 preguntas adaptativas en 4 áreas. Informe personalizado al instante.',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — Evaluación de preparación para prácticas' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Consigue unas prácticas reales — Eduentry.ai',
-    description: 'Evaluación de preparación para prácticas gratuita con IA para estudiantes de instituto mayores de 14 años. 34 preguntas, 35 minutos.',
+    title: 'Evaluación de prácticas Reino Unido — Informe de IA gratuito | Eduentry.ai',
+    description: 'Evaluación de prácticas gratuita con IA para estudiantes de 14 a 18 años. 34 preguntas, informe personalizado al instante.',
     images: [`${BASE_URL}/opengraph-image`],
   },
 }
@@ -51,10 +58,10 @@ const TRACK_IMAGES: Record<string, string> = {
 }
 
 const TRACK_SLUGS: Record<string, string> = {
-  tech: '/tech',
-  business: '/business',
-  data_analytics: '/data-analytics',
-  digital_marketing: '/digital-marketing',
+  tech: '/es/tech',
+  business: '/es/business',
+  data_analytics: '/es/data-analytics',
+  digital_marketing: '/es/digital-marketing',
 }
 
 const TRACK_LABELS_ES: Record<string, string> = {
@@ -98,7 +105,58 @@ const ORGANIZATION_SCHEMA = {
   url: BASE_URL,
   foundingDate: '2026',
   sameAs: ['https://eduentry.com'],
-  contactPoint: { '@type': 'ContactPoint', contactType: 'partnerships', email: 'partnerships@eduentry.ai' },
+}
+
+const WEBSITE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${BASE_URL}/#website`,
+  name: 'Eduentry.ai',
+  url: BASE_URL,
+  inLanguage: 'es',
+  publisher: { '@id': `${BASE_URL}/#organization` },
+}
+
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${PAGE_URL}/#webpage`,
+  url: PAGE_URL,
+  name: 'Evaluación de prácticas Reino Unido — Informe de IA gratuito | Eduentry.ai',
+  description: 'Evaluación de preparación para prácticas gratuita con IA para estudiantes de 14 a 18 años. 34 preguntas adaptativas en 4 áreas. Informe personalizado al instante.',
+  inLanguage: 'es',
+  isPartOf: { '@id': `${BASE_URL}/#website` },
+  about: { '@id': `${BASE_URL}/#service` },
+}
+
+const SERVICE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${BASE_URL}/#service`,
+  name: 'Evaluación de preparación para prácticas',
+  url: PAGE_URL,
+  description: 'Evaluación adaptativa gratuita de 34 preguntas con IA para estudiantes de instituto de 14 a 18 años. Evalúa aptitud, conocimientos del sector, habilidades profesionales y perfil de intereses en cuatro áreas: Tecnología, Empresa, Análisis de datos y Marketing digital.',
+  inLanguage: 'es',
+  provider: { '@id': `${BASE_URL}/#organization` },
+  audience: { '@type': 'EducationalAudience', audienceType: 'Estudiantes de instituto de 14 a 18 años' },
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
+  serviceType: 'Evaluación educativa',
+  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+}
+
+const HOWTO_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Cómo conseguir unas prácticas en el Reino Unido con Eduentry.ai',
+  description: 'Evaluación adaptativa gratuita de 34 preguntas para estudiantes de instituto de 14 a 18 años. Cuatro pasos desde el registro hasta la asignación de prácticas.',
+  inLanguage: 'es',
+  totalTime: 'PT35M',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Regístrate', text: 'Crea tu cuenta gratuita de Eduentry.ai en menos de un minuto — sin datos de pago.' },
+    { '@type': 'HowToStep', position: 2, name: 'Solicita', text: 'Cuéntanos quién eres, tu instituto y tus preferencias de área entre Tecnología, Empresa, Análisis de datos o Marketing digital.' },
+    { '@type': 'HowToStep', position: 3, name: 'Completa la evaluación', text: '34 preguntas adaptativas en cuatro fases: Aptitud general, Conocimientos del sector, Habilidades profesionales y Perfil de intereses. Aproximadamente 35 minutos. Reanúdala cuando quieras.' },
+    { '@type': 'HowToStep', position: 4, name: 'Recibe tu informe', text: 'Obtén tu informe de preparación personalizado redactado por IA con tu nivel de preparación, desglose por fases y asignación de prácticas.' },
+  ],
 }
 
 const FAQ_SCHEMA = {
@@ -115,6 +173,10 @@ export default function SpanishHomePage() {
   return (
     <main className="flex-1" lang="es">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(HOWTO_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}

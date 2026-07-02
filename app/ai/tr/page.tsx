@@ -8,37 +8,44 @@ const BASE_URL = 'https://eduentry.ai'
 const PAGE_URL = `${BASE_URL}/tr`
 
 export const metadata: Metadata = {
-  title: 'Gerçek Bir Staja Yerleş — Ücretsiz Hazırlık Değerlendirmesi',
+  title: 'İngiltere Staj Değerlendirmesi — Ücretsiz Yapay Zeka Raporu | Eduentry.ai',
   description:
-    '14 yaş üstü lise öğrencileri için ücretsiz yapay zeka destekli staj hazırlık değerlendirmesi. 34 soru, 35 dakika. Teknoloji, İş Dünyası, Veri Analitiği ve Dijital Pazarlama alanları.',
+    '14–18 yaş lise öğrencileri için ücretsiz yapay zeka destekli staj hazırlık değerlendirmesi. 34 uyarlanabilir soru, 35 dakika. Teknoloji, İş, Veri ve Pazarlama alanları. Anında kişiselleştirilmiş rapor.',
   keywords: [
-    'staj hazırlık değerlendirmesi',
-    'ücretsiz staj testi lise öğrencisi',
-    'staja yerleştirme',
-    'teknoloji stajı lise',
-    'iş dünyası stajı öğrenci',
-    'veri analitiği stajı',
-    'dijital pazarlama stajı',
-    'yapay zeka hazırlık raporu',
+    'İngiltere staj değerlendirmesi',
+    'ücretsiz staj hazırlık testi lise öğrencisi',
+    'yapay zeka staj hazırlık raporu',
+    'lise öğrencisi staj İngiltere',
+    'teknoloji stajı 14 15 16 17 18 yaş',
+    'iş dünyası stajı lise öğrencisi',
+    'veri analitiği stajı lise',
+    'dijital pazarlama stajı öğrenci',
+    'staj yerleştirme öğrenci',
     'kariyer hazırlığı değerlendirmesi',
+    'iş deneyimi değerlendirme lise',
+    'ücretsiz yetenek testi öğrenci',
+    'staj başvurusu kişisel beyan',
+    'uyarlanabilir değerlendirme öğrenci kariyer',
+    'lise staj fırsatları İngiltere',
   ],
   alternates: {
     canonical: PAGE_URL,
-    languages: { tr: PAGE_URL, 'en-GB': BASE_URL, 'x-default': BASE_URL },
+    languages: { tr: PAGE_URL, 'en-GB': BASE_URL, es: `${BASE_URL}/es`, 'x-default': BASE_URL },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     type: 'website',
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
-    title: 'Gerçek Bir Staja Yerleş — Eduentry.ai',
-    description: '14 yaş üstü lise öğrencileri için ücretsiz yapay zeka destekli staj hazırlık değerlendirmesi. 34 soru, yetenek, alan bilgisi, iş yeri becerileri ve ilgi profili.',
+    locale: 'tr_TR',
+    title: 'İngiltere Staj Değerlendirmesi — Ücretsiz Yapay Zeka Raporu | Eduentry.ai',
+    description: '14–18 yaş lise öğrencileri için ücretsiz yapay zeka destekli staj hazırlık değerlendirmesi. 34 soru, 4 aşama. Anında kişiselleştirilmiş hazırlık raporu.',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — Staj Hazırlık Değerlendirmesi' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Gerçek Bir Staja Yerleş — Eduentry.ai',
-    description: '14 yaş üstü lise öğrencileri için ücretsiz yapay zeka destekli staj hazırlık değerlendirmesi. 34 soru, 35 dakika.',
+    title: 'İngiltere Staj Değerlendirmesi — Ücretsiz Yapay Zeka Raporu | Eduentry.ai',
+    description: '14–18 yaş öğrenciler için ücretsiz staj hazırlık değerlendirmesi. 34 soru, anında kişiselleştirilmiş rapor.',
     images: [`${BASE_URL}/opengraph-image`],
   },
 }
@@ -51,10 +58,10 @@ const TRACK_IMAGES: Record<string, string> = {
 }
 
 const TRACK_SLUGS: Record<string, string> = {
-  tech: '/tech',
-  business: '/business',
-  data_analytics: '/data-analytics',
-  digital_marketing: '/digital-marketing',
+  tech: '/tr/tech',
+  business: '/tr/business',
+  data_analytics: '/tr/data-analytics',
+  digital_marketing: '/tr/digital-marketing',
 }
 
 const TRACK_LABELS_TR: Record<string, string> = {
@@ -98,7 +105,58 @@ const ORGANIZATION_SCHEMA = {
   url: BASE_URL,
   foundingDate: '2026',
   sameAs: ['https://eduentry.com'],
-  contactPoint: { '@type': 'ContactPoint', contactType: 'partnerships', email: 'partnerships@eduentry.ai' },
+}
+
+const WEBSITE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${BASE_URL}/#website`,
+  name: 'Eduentry.ai',
+  url: BASE_URL,
+  inLanguage: 'tr',
+  publisher: { '@id': `${BASE_URL}/#organization` },
+}
+
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${PAGE_URL}/#webpage`,
+  url: PAGE_URL,
+  name: 'İngiltere Staj Değerlendirmesi — Ücretsiz Yapay Zeka Raporu | Eduentry.ai',
+  description: '14–18 yaş lise öğrencileri için ücretsiz yapay zeka destekli staj hazırlık değerlendirmesi. 34 soru, 4 aşama. Anında kişiselleştirilmiş hazırlık raporu.',
+  inLanguage: 'tr',
+  isPartOf: { '@id': `${BASE_URL}/#website` },
+  about: { '@id': `${BASE_URL}/#service` },
+}
+
+const SERVICE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${BASE_URL}/#service`,
+  name: 'Staj Hazırlık Değerlendirmesi',
+  url: PAGE_URL,
+  description: '14–18 yaş lise öğrencileri için ücretsiz yapay zeka destekli 34 soruluk uyarlanabilir değerlendirme. Teknoloji, İş Dünyası, Veri Analitiği ve Dijital Pazarlama alanlarında yetenek, alan bilgisi, iş yeri becerileri ve ilgi profili ölçülür.',
+  inLanguage: 'tr',
+  provider: { '@id': `${BASE_URL}/#organization` },
+  audience: { '@type': 'EducationalAudience', audienceType: '14–18 yaş lise öğrencileri' },
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
+  serviceType: 'Eğitim Değerlendirmesi',
+  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+}
+
+const HOWTO_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: "Eduentry.ai ile İngiltere'de staja nasıl yerleşilir",
+  description: '14–18 yaş lise öğrencileri için ücretsiz 34 soruluk uyarlanabilir değerlendirme. Kayıttan staj yerleştirme eşleşmesine dört adım.',
+  inLanguage: 'tr',
+  totalTime: 'PT35M',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Kayıt ol', text: 'Ücretsiz Eduentry.ai hesabını bir dakikadan kısa sürede oluştur — ödeme bilgisi gerekmez.' },
+    { '@type': 'HowToStep', position: 2, name: 'Başvur', text: 'Kendin, okulun ve Teknoloji, İş Dünyası, Veri Analitiği veya Dijital Pazarlama alanlarındaki tercihlerini bize anlat.' },
+    { '@type': 'HowToStep', position: 3, name: 'Değerlendirmeyi tamamla', text: 'Dört aşamada 34 uyarlanabilir soru: Genel Yetenek, Alan Bilgisi, İş Yeri Becerileri ve İlgi Profili. Yaklaşık 35 dakika. İstediğin zaman devam et.' },
+    { '@type': 'HowToStep', position: 4, name: 'Raporunu al', text: 'Hazırlık seviyesi, aşama bazlı döküm ve staj yerleştirme eşleşmesi içeren yapay zeka tarafından yazılmış kişiselleştirilmiş hazırlık raporunu al.' },
+  ],
 }
 
 const FAQ_SCHEMA = {
@@ -115,6 +173,10 @@ export default function TurkishHomePage() {
   return (
     <main className="flex-1" lang="tr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(HOWTO_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}

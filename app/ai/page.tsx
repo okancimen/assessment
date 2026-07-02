@@ -7,37 +7,44 @@ import { BLOG_POSTS } from '@/app/blog/posts'
 const BASE_URL = 'https://eduentry.ai'
 
 export const metadata: Metadata = {
-  title: 'Get Placed in a Real Internship — Free Readiness Assessment',
+  title: 'Internship Readiness Assessment UK — Free AI Report | Eduentry.ai',
   description:
-    'Free AI-powered internship readiness assessment for high school students aged 14+. 34 questions, 35 minutes. Tech, Business, Data Analytics, and Digital Marketing tracks.',
+    'Free AI-powered internship assessment for high school students aged 14–18 in the UK. 34 adaptive questions across Tech, Business, Data and Marketing. Instant personalised readiness report.',
   keywords: [
     'internship readiness assessment UK',
-    'free internship test high school students',
-    'get placed in internship',
-    'tech internship year 10 11 12',
-    'business internship students',
-    'data analytics internship high school',
-    'digital marketing internship students',
-    'work experience assessment 14 16 18',
+    'free internship assessment high school students',
+    'work experience assessment students UK',
     'AI internship readiness report',
-    'voluntary internship students UK',
-    'career readiness assessment year 9 10 11',
+    'tech internship year 10 11 12 13',
+    'business internship sixth form students',
+    'data analytics internship high school UK',
+    'digital marketing internship students UK',
+    'internship for 14 15 16 17 18 year olds',
+    'career readiness assessment year 9 10 11 12 13',
     'UCAS work experience personal statement',
+    'free aptitude test students UK',
+    'high school internship placement UK',
+    'adaptive assessment students career',
+    'summer internship school leavers UK',
   ],
-  alternates: { canonical: BASE_URL, languages: { 'en-GB': BASE_URL, 'x-default': BASE_URL } },
+  alternates: {
+    canonical: BASE_URL,
+    languages: { 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, 'x-default': BASE_URL },
+  },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     type: 'website',
     url: BASE_URL,
     siteName: 'Eduentry.ai',
-    title: 'Get Placed in a Real Internship — Eduentry.ai',
-    description: 'Free AI-powered internship readiness assessment for high school students aged 14+. 34 questions across aptitude, domain knowledge, workplace skills and interest profile.',
+    locale: 'en_GB',
+    title: 'Internship Readiness Assessment UK — Free AI Report | Eduentry.ai',
+    description: 'Free AI-powered internship assessment for high school students aged 14–18. 34 adaptive questions across Tech, Business, Data Analytics, and Digital Marketing. Instant personalised report.',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — Internship Readiness Assessment' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Get Placed in a Real Internship — Eduentry.ai',
-    description: 'Free AI-powered internship readiness assessment for high school students aged 14+. 34 questions, 35 minutes.',
+    title: 'Internship Readiness Assessment UK — Free AI Report | Eduentry.ai',
+    description: 'Free AI-powered internship readiness assessment for students aged 14–18. 34 questions, instant personalised report.',
     images: [`${BASE_URL}/opengraph-image`],
   },
 }
@@ -86,7 +93,6 @@ const ORGANIZATION_SCHEMA = {
   url: BASE_URL,
   foundingDate: '2026',
   sameAs: ['https://eduentry.com'],
-  contactPoint: { '@type': 'ContactPoint', contactType: 'partnerships', email: 'partnerships@eduentry.ai' },
 }
 
 const WEBSITE_SCHEMA = {
@@ -95,7 +101,20 @@ const WEBSITE_SCHEMA = {
   '@id': `${BASE_URL}/#website`,
   name: 'Eduentry.ai',
   url: BASE_URL,
+  inLanguage: 'en-GB',
   publisher: { '@id': `${BASE_URL}/#organization` },
+}
+
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${BASE_URL}/#webpage`,
+  url: BASE_URL,
+  name: 'Internship Readiness Assessment UK — Free AI Report | Eduentry.ai',
+  description: 'Free AI-powered internship assessment for high school students aged 14–18. 34 adaptive questions. Instant personalised readiness report.',
+  inLanguage: 'en-GB',
+  isPartOf: { '@id': `${BASE_URL}/#website` },
+  about: { '@id': `${BASE_URL}/#service` },
 }
 
 const SERVICE_SCHEMA = {
@@ -104,9 +123,10 @@ const SERVICE_SCHEMA = {
   '@id': `${BASE_URL}/#service`,
   name: 'Internship Readiness Assessment',
   url: BASE_URL,
-  description: 'Free AI-powered 34-question adaptive assessment for high school students aged 14+. Evaluates aptitude, domain knowledge, workplace skills, and interest profile across four career tracks.',
+  description: 'Free AI-powered 34-question adaptive assessment for high school students aged 14–18. Evaluates aptitude, domain knowledge, workplace skills, and interest profile across Tech, Business, Data Analytics, and Digital Marketing tracks.',
+  inLanguage: 'en-GB',
   provider: { '@id': `${BASE_URL}/#organization` },
-  audience: { '@type': 'EducationalAudience', audienceType: 'High school students aged 14 and above' },
+  audience: { '@type': 'EducationalAudience', audienceType: 'High school students aged 14–18' },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
   serviceType: 'Educational Assessment',
   areaServed: { '@type': 'Country', name: 'United Kingdom' },
@@ -116,7 +136,8 @@ const HOWTO_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'How to get placed in a UK internship with Eduentry.ai',
-  description: 'Free 34-question adaptive assessment for high school students aged 14+. Four steps from registration to internship placement match.',
+  description: 'Free 34-question adaptive assessment for high school students aged 14–18. Four steps from registration to internship placement match.',
+  inLanguage: 'en-GB',
   totalTime: 'PT35M',
   step: [
     { '@type': 'HowToStep', position: 1, name: 'Register', text: 'Create your free Eduentry.ai account in under a minute — no payment details required.' },
@@ -141,6 +162,7 @@ export default function AIHomePage() {
     <main className="flex-1">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(HOWTO_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
