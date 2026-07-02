@@ -5,6 +5,7 @@ export interface Faq {
 
 export interface BlogPostMeta {
   slug: string
+  contentSlug?: string
   title: string
   shortTitle: string
   description: string

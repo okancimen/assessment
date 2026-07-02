@@ -11,7 +11,7 @@ const BASE_URL = 'https://eduentry.ai'
 const COM_URL = 'https://eduentry.com'
 const INTERNSHIP_TAGS = ['Internship', 'Career Development', 'Work Experience']
 const internshipSlugs = new Set(BLOG_POSTS.filter(p => p.tags.some(t => INTERNSHIP_TAGS.includes(t))).map(p => p.slug))
-const trSlugs = new Set(BLOG_POSTS_TR.map(p => p.slug))
+const contentSlugToTrSlug = Object.fromEntries(BLOG_POSTS_TR.map(p => [p.contentSlug ?? p.slug, p.slug]))
 
 export function generateStaticParams() {
   return BLOG_POSTS_ES.map((p) => ({ slug: p.slug }))
@@ -28,12 +28,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     keywords: post.tags,
     alternates: {
       canonical: url,
-      languages: {
-        es: url,
-        en: internshipSlugs.has(slug) ? `${BASE_URL}/blog/${slug}` : `${COM_URL}/blog/${slug}`,
-        ...(trSlugs.has(slug) ? { tr: `${BASE_URL}/tr/blog/${slug}` } : {}),
-        'x-default': internshipSlugs.has(slug) ? `${BASE_URL}/blog/${slug}` : `${COM_URL}/blog/${slug}`,
-      },
+      languages: (() => {
+        const enSlug = post.contentSlug ?? slug
+        const trSlug = contentSlugToTrSlug[enSlug]
+        const enUrl = internshipSlugs.has(enSlug) ? `${BASE_URL}/blog/${enSlug}` : `${COM_URL}/blog/${enSlug}`
+        return {
+          es: url,
+          en: enUrl,
+          ...(trSlug ? { tr: `${BASE_URL}/tr/blog/${trSlug}` } : {}),
+          'x-default': enUrl,
+        }
+      })(),
     },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
     openGraph: {
@@ -144,7 +149,7 @@ export default async function ESBlogPostPage({ params }: { params: Promise<{ slu
       </div>
 
       <article className="prose prose-gray max-w-none space-y-12">
-        {getSpanishBlogContent(slug)}
+        {getSpanishBlogContent(post.contentSlug ?? slug)}
       </article>
 
       {related.length > 0 && (
@@ -177,10 +182,10 @@ export default async function ESBlogPostPage({ params }: { params: Promise<{ slu
         <p className="text-sm text-gray-400 mb-6">Evaluación gratuita de 34 preguntas — 35 minutos. Elige el área donde quieres crecer.</p>
         <div className="grid sm:grid-cols-2 gap-3">
           {[
-            { href: '/es/tech',              icon: '💻', label: 'Tecnología',        desc: 'Programación · Algoritmos · Ciberseguridad' },
-            { href: '/es/business',          icon: '📈', label: 'Empresa',           desc: 'Estrategia · Finanzas · Operaciones' },
-            { href: '/es/data-analytics',    icon: '📊', label: 'Análisis de datos', desc: 'Gráficos · SQL · Insights' },
-            { href: '/es/digital-marketing', icon: '📣', label: 'Marketing digital', desc: 'SEO · Redes sociales · Campañas' },
+            { href: '/es/tecnologia',        icon: '💻', label: 'Tecnología',        desc: 'Programación · Algoritmos · Ciberseguridad' },
+            { href: '/es/empresa',           icon: '📈', label: 'Empresa',           desc: 'Estrategia · Finanzas · Operaciones' },
+            { href: '/es/analisis-de-datos', icon: '📊', label: 'Análisis de datos', desc: 'Gráficos · SQL · Insights' },
+            { href: '/es/marketing-digital', icon: '📣', label: 'Marketing digital', desc: 'SEO · Redes sociales · Campañas' },
           ].map(({ href, icon, label, desc }) => (
             <Link
               key={href}

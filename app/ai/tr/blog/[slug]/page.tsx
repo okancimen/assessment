@@ -11,7 +11,7 @@ const BASE_URL = 'https://eduentry.ai'
 const COM_URL = 'https://eduentry.com'
 const INTERNSHIP_TAGS = ['Internship', 'Career Development', 'Work Experience']
 const internshipSlugs = new Set(BLOG_POSTS.filter(p => p.tags.some(t => INTERNSHIP_TAGS.includes(t))).map(p => p.slug))
-const esSlugs = new Set(BLOG_POSTS_ES.map(p => p.slug))
+const contentSlugToEsSlug = Object.fromEntries(BLOG_POSTS_ES.map(p => [p.contentSlug ?? p.slug, p.slug]))
 
 export function generateStaticParams() {
   return BLOG_POSTS_TR.map((p) => ({ slug: p.slug }))
@@ -28,12 +28,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     keywords: post.tags,
     alternates: {
       canonical: url,
-      languages: {
-        tr: url,
-        en: internshipSlugs.has(slug) ? `${BASE_URL}/blog/${slug}` : `${COM_URL}/blog/${slug}`,
-        ...(esSlugs.has(slug) ? { es: `${BASE_URL}/es/blog/${slug}` } : {}),
-        'x-default': internshipSlugs.has(slug) ? `${BASE_URL}/blog/${slug}` : `${COM_URL}/blog/${slug}`,
-      },
+      languages: (() => {
+        const enSlug = post.contentSlug ?? slug
+        const esSlug = contentSlugToEsSlug[enSlug]
+        const enUrl = internshipSlugs.has(enSlug) ? `${BASE_URL}/blog/${enSlug}` : `${COM_URL}/blog/${enSlug}`
+        return {
+          tr: url,
+          en: enUrl,
+          ...(esSlug ? { es: `${BASE_URL}/es/blog/${esSlug}` } : {}),
+          'x-default': enUrl,
+        }
+      })(),
     },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
     openGraph: {
@@ -144,7 +149,7 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
       </div>
 
       <article className="prose prose-gray max-w-none space-y-12">
-        {getTurkishBlogContent(slug)}
+        {getTurkishBlogContent(post.contentSlug ?? slug)}
       </article>
 
       {related.length > 0 && (
@@ -177,10 +182,10 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
         <p className="text-sm text-gray-400 mb-6">Ücretsiz 34 soruluk değerlendirme — 35 dakika sürer. Devam edebileceğin bir alan seç.</p>
         <div className="grid sm:grid-cols-2 gap-3">
           {[
-            { href: '/tr/tech',              icon: '💻', label: 'Teknoloji',         desc: 'Kodlama · Algoritmalar · Siber Güvenlik' },
-            { href: '/tr/business',          icon: '📈', label: 'İş Dünyası',        desc: 'Strateji · Finans · Operasyon' },
-            { href: '/tr/data-analytics',    icon: '📊', label: 'Veri Analitiği',    desc: 'Grafikler · SQL · İçgörüler' },
-            { href: '/tr/digital-marketing', icon: '📣', label: 'Dijital Pazarlama', desc: 'SEO · Sosyal Medya · Kampanyalar' },
+            { href: '/tr/teknoloji',         icon: '💻', label: 'Teknoloji',         desc: 'Kodlama · Algoritmalar · Siber Güvenlik' },
+            { href: '/tr/is-dunyasi',        icon: '📈', label: 'İş Dünyası',        desc: 'Strateji · Finans · Operasyon' },
+            { href: '/tr/veri-analitigi',    icon: '📊', label: 'Veri Analitiği',    desc: 'Grafikler · SQL · İçgörüler' },
+            { href: '/tr/dijital-pazarlama', icon: '📣', label: 'Dijital Pazarlama', desc: 'SEO · Sosyal Medya · Kampanyalar' },
           ].map(({ href, icon, label, desc }) => (
             <Link
               key={href}

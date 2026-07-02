@@ -2,7 +2,8 @@ import type { BlogPostMeta } from './posts'
 
 export const BLOG_POSTS_ES: BlogPostMeta[] = [
   {
-    slug: 'early-internship-child-development-career',
+    slug: 'practicas-tempranas-desarrollo-infantil-carrera',
+    contentSlug: 'early-internship-child-development-career',
     title: 'Por qué empezar antes importa: desarrollo infantil, madurez y la ventaja profesional acumulada de las prácticas tempranas',
     shortTitle: 'Prácticas tempranas: desarrollo y ventaja profesional',
     description:
@@ -36,7 +37,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     },
   },
   {
-    slug: 'high-school-internship-benefits-university',
+    slug: 'practicas-instituto-beneficios-universidad',
+    contentSlug: 'high-school-internship-benefits-university',
     title: 'Prácticas en el instituto: por qué importan para el desarrollo personal, la preparación y el acceso a la universidad',
     shortTitle: 'Prácticas en el instituto: beneficios y acceso universitario',
     description:
@@ -70,7 +72,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     },
   },
   {
-    slug: 'business-work-experience-high-school-uk',
+    slug: 'experiencia-empresarial-instituto-reino-unido',
+    contentSlug: 'business-work-experience-high-school-uk',
     title: 'Experiencia laboral en el sector empresarial durante el instituto: qué es, cómo encontrarla y por qué importa',
     shortTitle: 'Experiencia empresarial en el instituto',
     description:
@@ -108,7 +111,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     },
   },
   {
-    slug: 'how-to-get-tech-internship-before-university',
+    slug: 'practicas-tecnologia-antes-universidad',
+    contentSlug: 'how-to-get-tech-internship-before-university',
     title: 'Cómo conseguir prácticas tecnológicas antes de la universidad: guía completa para estudiantes',
     shortTitle: 'Cómo conseguir prácticas tecnológicas antes de la universidad',
     description:
@@ -146,7 +150,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     },
   },
   {
-    slug: 'how-does-your-child-compare-globally',
+    slug: 'como-se-compara-tu-hijo-a-nivel-mundial',
+    contentSlug: 'how-does-your-child-compare-globally',
     title: '¿Cómo se compara tu hijo a nivel mundial? Guía para padres sobre benchmarks académicos internacionales',
     shortTitle: '¿Cómo se compara tu hijo a nivel mundial?',
     description:

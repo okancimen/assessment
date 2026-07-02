@@ -2,7 +2,8 @@ import type { BlogPostMeta } from './posts'
 
 export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
-    slug: 'early-internship-child-development-career',
+    slug: 'erken-yas-staj-cocuk-gelisimi-kariyer',
+    contentSlug: 'early-internship-child-development-career',
     title: 'Erken Yaşta Stajın Önemi: Çocuk Gelişimi, Olgunluk ve Biriken Kariyer Avantajı',
     shortTitle: 'Erken Yaşta Staj: Gelişim ve Kariyer Faydaları',
     description:
@@ -36,7 +37,8 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     },
   },
   {
-    slug: 'high-school-internship-benefits-university',
+    slug: 'lise-staji-faydalari-universite',
+    contentSlug: 'high-school-internship-benefits-university',
     title: 'Lise Stajlarının Önemi: Kişilik, Hazırlık ve Üniversite Kabulü',
     shortTitle: 'Lise Stajının Faydaları',
     description:
@@ -70,7 +72,8 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     },
   },
   {
-    slug: 'business-work-experience-high-school-uk',
+    slug: 'is-deneyimi-lise-ingiltere',
+    contentSlug: 'business-work-experience-high-school-uk',
     title: 'Lisede İş Dünyası Deneyimi: Nedir, Nasıl Bulunur ve Neden Önemlidir',
     shortTitle: 'Lisede İş Dünyası Deneyimi',
     description:
@@ -108,7 +111,8 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     },
   },
   {
-    slug: 'how-to-get-tech-internship-before-university',
+    slug: 'universiteden-once-teknoloji-staji',
+    contentSlug: 'how-to-get-tech-internship-before-university',
     title: 'Üniversite Öncesi Teknoloji Stajı Nasıl Bulunur: İngiliz Öğrencileri için Kapsamlı Rehber',
     shortTitle: 'Üniversite Öncesi Teknoloji Stajı Nasıl Bulunur',
     description:
@@ -146,7 +150,8 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     },
   },
   {
-    slug: 'how-does-your-child-compare-globally',
+    slug: 'cocugunuz-dunyada-nerede-duruyor',
+    contentSlug: 'how-does-your-child-compare-globally',
     title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor? Uluslararası Akademik Kıyaslama Rehberi',
     shortTitle: 'Çocuğunuz Dünya Genelinde Nerede Duruyor?',
     description:
