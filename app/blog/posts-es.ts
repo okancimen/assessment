@@ -152,6 +152,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     description:
       'La mayoría de los padres solo saben cómo se sitúa su hijo a nivel nacional. Pero los colegios selectivos, los comités de becas y las mejores universidades piensan en percentiles globales. Aquí está lo que muestran realmente los datos internacionales — y lo que significa para el futuro de tu hijo.',
     date: '2026-07-02',
+    dateModified: '2026-07-02',
     readTime: '10 min de lectura',
     tags: ['Benchmarks internacionales', 'PISA', 'Guía para padres', 'Pruebas estandarizadas', 'Desarrollo infantil'],
     faqs: [

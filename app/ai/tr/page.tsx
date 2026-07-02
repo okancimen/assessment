@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
     locale: 'tr_TR',
+    alternateLocale: ['en_GB', 'es_ES'],
     title: 'İngiltere Staj Değerlendirmesi — Ücretsiz Yapay Zeka Raporu | Eduentry.ai',
     description: '14–18 yaş lise öğrencileri için ücretsiz yapay zeka destekli staj hazırlık değerlendirmesi. 34 soru, 4 aşama. Anında kişiselleştirilmiş hazırlık raporu.',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — Staj Hazırlık Değerlendirmesi' }],

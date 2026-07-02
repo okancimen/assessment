@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
     locale: 'es_ES',
+    alternateLocale: ['en_GB', 'tr_TR'],
     title: 'Evaluación de prácticas Reino Unido — Informe de IA gratuito | Eduentry.ai',
     description: 'Evaluación de preparación para prácticas gratuita con IA para estudiantes de 14 a 18 años. 34 preguntas adaptativas en 4 áreas. Informe personalizado al instante.',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — Evaluación de preparación para prácticas' }],

@@ -57,7 +57,7 @@ export default function PublicNavAI() {
   return (
     <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.82)] backdrop-blur-2xl border-b border-black/[0.08]">
       <div className="max-w-[1024px] mx-auto px-6 h-11 flex items-center justify-between relative">
-        <Link href={isTR ? '/tr' : isES ? '/es' : '/'}>
+        <Link href={isTR ? '/tr' : isES ? '/es' : '/'} aria-label="Eduentry.ai — Home">
           <Image src="/logo-ai.png" alt="Eduentry.ai" width={64} height={64} className="object-contain" priority />
         </Link>
 

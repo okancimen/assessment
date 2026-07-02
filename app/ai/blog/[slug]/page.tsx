@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation'
 import CtaLink from '@/components/ui/CtaLink'
 import { BLOG_POSTS, getPostBySlug, getRelatedPosts } from '@/app/blog/posts'
 import { getBlogContent } from '@/app/blog/content'
+import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
+import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
 
 const BASE_URL = 'https://eduentry.ai'
 const INTERNSHIP_TAGS = ['Internship', 'Career Development', 'Work Experience']
@@ -11,6 +13,8 @@ const INTERNSHIP_TAGS = ['Internship', 'Career Development', 'Work Experience']
 const internshipSlugs = new Set(
   BLOG_POSTS.filter(p => p.tags.some(t => INTERNSHIP_TAGS.includes(t))).map(p => p.slug)
 )
+const trSlugs = new Set(BLOG_POSTS_TR.map(p => p.slug))
+const esSlugs = new Set(BLOG_POSTS_ES.map(p => p.slug))
 
 export function generateStaticParams() {
   return Array.from(internshipSlugs).map(slug => ({ slug }))
@@ -25,7 +29,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: post.shortTitle,
     description: post.description,
     keywords: post.tags,
-    alternates: { canonical: url, languages: { 'en-GB': url, 'x-default': url } },
+    alternates: {
+      canonical: url,
+      languages: {
+        'en-GB': url,
+        ...(trSlugs.has(slug) ? { tr: `${BASE_URL}/tr/blog/${slug}` } : {}),
+        ...(esSlugs.has(slug) ? { es: `${BASE_URL}/es/blog/${slug}` } : {}),
+        'x-default': url,
+      },
+    },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
     openGraph: {
       type: 'article',
@@ -71,7 +83,12 @@ export default async function AIBlogPostPage({ params }: { params: Promise<{ slu
     dateModified: post.dateModified ?? post.date,
     url,
     author: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
-    publisher: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Eduentry',
+      url: BASE_URL,
+      logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo-ai.png`, width: 200, height: 60 },
+    },
   }
 
   const faqSchema = post.faqs && post.faqs.length > 0

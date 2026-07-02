@@ -152,6 +152,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Çoğu ebeveyn çocuğunun yalnızca ulusal sıralamadaki yerini biliyor. Ama seçici okullar, burs komiteleri ve önde gelen üniversiteler küresel yüzdelik dilimlerle düşünüyor. İşte uluslararası verilerin gerçekte gösterdiği — ve bunun çocuğunuzun geleceği için ne anlama geldiği.',
     date: '2026-07-02',
+    dateModified: '2026-07-02',
     readTime: '10 dk okuma',
     tags: ['Uluslararası Kıyaslama', 'PISA', 'Ebeveyn Rehberi', 'Standartlaştırılmış Test', 'Çocuk Gelişimi'],
     faqs: [

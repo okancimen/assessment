@@ -1019,6 +1019,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'Most parents only know how their child ranks nationally. But selective schools, scholarship committees, and top universities think in global percentiles. Here\'s what the international data actually shows — and what it means for your child\'s future.',
     date: '2026-07-02',
+    dateModified: '2026-07-02',
     readTime: '10 min read',
     tags: ['International Benchmarks', 'PISA', 'Parent Guide', 'Standardised Testing', 'Child Development'],
     faqs: [

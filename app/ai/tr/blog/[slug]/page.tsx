@@ -3,9 +3,15 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import CtaLink from '@/components/ui/CtaLink'
 import { BLOG_POSTS_TR, getTurkishPostBySlug } from '@/app/blog/posts-tr'
+import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
+import { BLOG_POSTS } from '@/app/blog/posts'
 import { getTurkishBlogContent } from '@/app/blog/content-tr'
 
 const BASE_URL = 'https://eduentry.ai'
+const COM_URL = 'https://eduentry.com'
+const INTERNSHIP_TAGS = ['Internship', 'Career Development', 'Work Experience']
+const internshipSlugs = new Set(BLOG_POSTS.filter(p => p.tags.some(t => INTERNSHIP_TAGS.includes(t))).map(p => p.slug))
+const esSlugs = new Set(BLOG_POSTS_ES.map(p => p.slug))
 
 export function generateStaticParams() {
   return BLOG_POSTS_TR.map((p) => ({ slug: p.slug }))
@@ -24,8 +30,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       canonical: url,
       languages: {
         tr: url,
-        en: `${BASE_URL}/blog/${slug}`,
-        'x-default': `${BASE_URL}/blog/${slug}`,
+        en: internshipSlugs.has(slug) ? `${BASE_URL}/blog/${slug}` : `${COM_URL}/blog/${slug}`,
+        ...(esSlugs.has(slug) ? { es: `${BASE_URL}/es/blog/${slug}` } : {}),
+        'x-default': internshipSlugs.has(slug) ? `${BASE_URL}/blog/${slug}` : `${COM_URL}/blog/${slug}`,
       },
     },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -36,11 +43,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url,
       publishedTime: post.date,
       locale: 'tr_TR',
+      alternateLocale: ['en_GB', 'es_ES'],
+      images: [{ url: `/tr/blog/${slug}/opengraph-image`, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
+      images: [`/tr/blog/${slug}/opengraph-image`],
     },
   }
 }
@@ -72,8 +82,13 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
     datePublished: post.date,
     url,
     inLanguage: 'tr',
-    author: { '@id': `${BASE_URL}/#organization` },
-    publisher: { '@id': `${BASE_URL}/#organization` },
+    author: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Eduentry',
+      url: BASE_URL,
+      logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo-ai.png`, width: 200, height: 60 },
+    },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     isPartOf: { '@id': `${BASE_URL}/#website` },
   }
@@ -156,6 +171,31 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
           </div>
         </section>
       )}
+
+      <section className="mt-16 mb-8 border border-gray-100 rounded-2xl p-8">
+        <h2 className="text-xl font-bold text-gray-900 mb-2">Başlamaya hazır mısın? Alanını seç.</h2>
+        <p className="text-sm text-gray-400 mb-6">Ücretsiz 34 soruluk değerlendirme — 35 dakika sürer. Devam edebileceğin bir alan seç.</p>
+        <div className="grid sm:grid-cols-2 gap-3">
+          {[
+            { href: '/tr/tech',              icon: '💻', label: 'Teknoloji',         desc: 'Kodlama · Algoritmalar · Siber Güvenlik' },
+            { href: '/tr/business',          icon: '📈', label: 'İş Dünyası',        desc: 'Strateji · Finans · Operasyon' },
+            { href: '/tr/data-analytics',    icon: '📊', label: 'Veri Analitiği',    desc: 'Grafikler · SQL · İçgörüler' },
+            { href: '/tr/digital-marketing', icon: '📣', label: 'Dijital Pazarlama', desc: 'SEO · Sosyal Medya · Kampanyalar' },
+          ].map(({ href, icon, label, desc }) => (
+            <Link
+              key={href}
+              href={href}
+              className="group flex items-start gap-3 p-4 rounded-xl border border-gray-100 hover:border-indigo-300 hover:bg-indigo-50/40 transition-all"
+            >
+              <span className="text-2xl mt-0.5">{icon}</span>
+              <div>
+                <div className="font-semibold text-gray-900 text-sm group-hover:text-indigo-700 transition-colors">{label}</div>
+                <div className="text-xs text-gray-400 mt-0.5">{desc}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
 
       <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'Staj hazırlığını keşfet'}</h2>

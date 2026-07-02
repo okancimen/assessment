@@ -6,8 +6,14 @@ import PublicFooter from '@/components/layout/PublicFooter'
 import CtaLink from '@/components/ui/CtaLink'
 import { BLOG_POSTS, getPostBySlug, getRelatedPosts } from '../posts'
 import { getBlogContent } from '../content'
+import { BLOG_POSTS_TR } from '../posts-tr'
+import { BLOG_POSTS_ES } from '../posts-es'
 
 const BASE_URL = 'https://eduentry.com'
+const AI_URL = 'https://eduentry.ai'
+
+const trSlugs = new Set(BLOG_POSTS_TR.map(p => p.slug))
+const esSlugs = new Set(BLOG_POSTS_ES.map(p => p.slug))
 
 const COUNTRY_LANG: Record<string, string> = {
   'netherlands-': 'en-NL',
@@ -40,6 +46,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       canonical: url,
       languages: {
         'en-GB': url,
+        ...(trSlugs.has(slug) ? { tr: `${AI_URL}/tr/blog/${slug}` } : {}),
+        ...(esSlugs.has(slug) ? { es: `${AI_URL}/es/blog/${slug}` } : {}),
         'x-default': url,
         ...(getCountryLang(slug) ? { [getCountryLang(slug)!]: url } : {}),
       },
@@ -90,8 +98,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     dateModified: post.dateModified ?? post.date,
     url,
     image: `${BASE_URL}/blog/${slug}/opengraph-image`,
-    author: { '@id': 'https://eduentry.com/#organization' },
-    publisher: { '@id': 'https://eduentry.com/#organization' },
+    author: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Eduentry',
+      url: BASE_URL,
+      logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
+    },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     isPartOf: { '@id': 'https://eduentry.com/#website' },
   }

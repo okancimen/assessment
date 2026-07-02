@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     url: BASE_URL,
     siteName: 'Eduentry.ai',
     locale: 'en_GB',
+    alternateLocale: ['tr_TR', 'es_ES'],
     title: 'Internship Readiness Assessment UK — Free AI Report | Eduentry.ai',
     description: 'Free AI-powered internship assessment for high school students aged 14–18. 34 adaptive questions across Tech, Business, Data Analytics, and Digital Marketing. Instant personalised report.',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — Internship Readiness Assessment' }],
