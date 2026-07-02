@@ -18,7 +18,15 @@ export const metadata: Metadata = {
     'early internship benefits',
     'student career guides',
   ],
-  alternates: { canonical: `${BASE_URL}/blog`, languages: { 'en-GB': `${BASE_URL}/blog`, 'x-default': `${BASE_URL}/blog` } },
+  alternates: {
+    canonical: `${BASE_URL}/blog`,
+    languages: {
+      'en-GB': `${BASE_URL}/blog`,
+      tr: `${BASE_URL}/tr/blog`,
+      es: `${BASE_URL}/es/blog`,
+      'x-default': `${BASE_URL}/blog`,
+    },
+  },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     type: 'website',
@@ -26,6 +34,8 @@ export const metadata: Metadata = {
     description: 'Research and guides on early internship experience and career development for high school students.',
     url: `${BASE_URL}/blog`,
     siteName: 'Eduentry.ai',
+    locale: 'en_GB',
+    alternateLocale: ['tr_TR', 'es_ES'],
   },
   twitter: {
     card: 'summary_large_image',
