@@ -145,6 +145,44 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tech',
     },
   },
+  {
+    slug: 'how-does-your-child-compare-globally',
+    title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor? Uluslararası Akademik Kıyaslama Rehberi',
+    shortTitle: 'Çocuğunuz Dünya Genelinde Nerede Duruyor?',
+    description:
+      'Çoğu ebeveyn çocuğunun yalnızca ulusal sıralamadaki yerini biliyor. Ama seçici okullar, burs komiteleri ve önde gelen üniversiteler küresel yüzdelik dilimlerle düşünüyor. İşte uluslararası verilerin gerçekte gösterdiği — ve bunun çocuğunuzun geleceği için ne anlama geldiği.',
+    date: '2026-07-02',
+    readTime: '10 dk okuma',
+    tags: ['Uluslararası Kıyaslama', 'PISA', 'Ebeveyn Rehberi', 'Standartlaştırılmış Test', 'Çocuk Gelişimi'],
+    faqs: [
+      {
+        q: 'Çocuğumun dünya genelinde akademik olarak nerede durduğunu nasıl öğrenebilirim?',
+        a: "En doğrudan yol, küresel veya büyük ulusal bir kohortla karşılaştırılmış bir yüzdelik dilim puanı üreten standartlaştırılmış bir değerlendirmedir. Eduentry'nin uyarlanabilir değerlendirmesi, raporuna yerleşik PISA ve IB bağlamıyla birlikte İngiltere normlarına göre kalibre edilmiş bir standartlaştırılmış puan üretir. Ulusal okul notları çocuğunuzun sınıf veya yıl grubu içindeki yerini gösterir — standartlaştırılmış bir puan ise küresel dağılımdaki yerini ortaya koyar.",
+      },
+      {
+        q: "Çocuğumun yaşı için 'iyi' bir PISA puanı nedir?",
+        a: "PISA, 80'den fazla ülkede 15 yaşındaki öğrencileri test eder. OECD ortalaması Matematikte 472'dir. 500'ün üzerinde bir puan öğrenciyi OECD ortalamasının üzerine taşır; 550'nin üzerinde yaklaşık küresel ilk %20'ye; 600'ün üzerinde ise kabaca ilk %5'e yerleştirir. Birleşik Krallık ulusal ortalaması yaklaşık 495–510'da seyreder; bu da ulusal ortalamasında olan bir Türk öğrencinin OECD ortalamasının biraz üzerinde olduğu — ancak Singapur (575) ve Japonya (536) gibi en yüksek performans gösteren ülkelerin oldukça gerisinde kaldığı anlamına gelir.",
+      },
+      {
+        q: "Çocuğumun okulunun sıralaması onun küresel konumunu gösterir mi?",
+        a: 'Okul sıralamaları bir göstergedir, ölçüm aracı değil. Kaynakları iyi kullanılan yüksek sıralı bir okulda okuyan bir çocuk, uluslararası standartlaştırılmış bir testte yine de ortalama çıkabilir; çünkü sıralamalar kurumsal kaynakları yansıtır, bireysel başarıyı değil. Tek güvenilir küresel karşılaştırma, okul fark etmeksizin öğrenciler arasında aynı ölçüm aracını kullanan standartlaştırılmış bir değerlendirmeden gelir.',
+      },
+      {
+        q: "Çocuğumun küresel akademik konumunu hangi yaştan itibaren takip etmeye başlamalıyım?",
+        a: "Anlamlı kıyaslama 7–8 yaşından itibaren bilişsel değerlendirmelerle (CAT4, CogAT) mümkündür. En politika açısından kritik pencere 10–16 yaştır; bu dönemde seçici okul kabulü, burs başvuruları ve GCSE tercihleri yapılmaktadır. Küresel konumu 10 yaşından itibaren takip etmek, ailelere gerektiğinde bilinçli müdahale için yeterli zaman tanır.",
+      },
+      {
+        q: "İngiltere küresel eğitim sıralamalarında diğer ülkelerle nasıl karşılaştırılır?",
+        a: "İngiltere, Okuma ve Fen Bilimlerinde OECD ortalamasının üzerinde, Matematikte ise ortalama civarında veya biraz üzerinde performans gösterir. En yüksek performans gösteren Asya eğitim sistemleri — Singapur, Hong Kong, Güney Kore, Japonya — İngiltere'yi 60–100 PISA puanı geride bırakır. Uygulamada bu, Matematikte ulusal ortalamasında olan bir Türk öğrencinin Japonya veya Güney Kore'deki bir öğrencinin en alt çeyreğindekiyle yaklaşık aynı düzeyde performans gösterdiği anlamına gelir.",
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun gerçekte nerede durduğunu öğrenin',
+      body: "Eduentry'nin ücretsiz uyarlanabilir değerlendirmesi, bir okul notu değil standartlaştırılmış bir puan ve küresel yüzdelik dilim karşılaştırması üretir. 35 dakikadan kısa sürede çocuğunuzun gerçek konumunu anlayın.",
+      label: 'Ücretsiz değerlendirmeye başla',
+      href: '/auth/register',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

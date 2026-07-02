@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Bullet, Callout, Check } from './blog-components'
 
 export const ES_CONTENT: Record<string, React.ReactNode> = {
@@ -412,6 +413,187 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         </p>
         <p className="text-gray-700 leading-relaxed">
           El sector tecnológico del Reino Unido crece más rápido de lo que el flujo de candidatos cualificados puede seguir. Los estudiantes que lo entienden — y empiezan a construir una identidad profesional durante el instituto en lugar de esperar a la universidad — llegan al mercado laboral de recién graduados con ventajas que sus compañeros tardíos no pueden cerrar en tres años. El momento de empezar es antes de que creas que estás listo.
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-does-your-child-compare-globally': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        La mayoría de los padres saben aproximadamente dónde se sitúa su hijo en su clase. Algunos saben dónde está en su año escolar. Casi ninguno sabe dónde se sitúa en la distribución global de capacidad académica — y esa brecha de comprensión puede costarles a los niños oportunidades que merecían tener.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Esto importa porque las instituciones que dan forma al futuro de un niño — colegios selectivos, oficinas de admisión universitaria, comités de becas y cada vez más los empleadores — no evalúan a los niños frente a sus compañeros de clase. Los evalúan frente a todos. Entender el contexto global no es para alimentar la ansiedad. Es para tomar decisiones con información precisa.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">El problema con las notas nacionales</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un 7 en el GCSE de Matemáticas suena excelente — y dentro del contexto del Reino Unido, lo es. Pero no dice nada sobre cómo rinde ese estudiante frente a un joven de 15 años de Singapur, Finlandia o Canadá. Las notas nacionales se calibran frente a los compañeros nacionales. No están diseñadas para la comparación global.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El problema se vuelve concreto cuando los niños empiezan a competir por oportunidades disputadas internacionalmente: plazas universitarias con grandes grupos de solicitantes extranjeros, becas evaluadas por ranking global, o programas de graduados en empresas multinacionales que contratan simultáneamente en docenas de países. En cada uno de esos momentos de decisión, la pregunta no es «¿cómo se compara este estudiante con otros estudiantes del Reino Unido?» Es «¿cómo se compara con el grupo global?»
+        </p>
+        <Callout color="indigo">
+          El estudio PISA de la OCDE — la mayor comparación global del rendimiento académico de estudiantes de 15 años — muestra de forma consistente que los estudiantes de los países con mejor desempeño superan a sus pares del Reino Unido en el equivalente de dos a tres años escolares. Un estudiante en la media nacional del Reino Unido en Matemáticas se sitúa, según los estándares PISA, en torno al percentil 46 global.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lo que realmente muestran los benchmarks globales</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Varios marcos estandarizados internacionalmente ofrecen una lectura fiable de la posición global. No son perfectamente comparables — evalúan cosas distintas, a edades diferentes, con escalas de puntuación distintas — pero juntos ofrecen un cuadro claro.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>PISA (Programa para la Evaluación Internacional de Alumnos):</strong> Evalúa a estudiantes de 15 años en Matemáticas, Lectura y Ciencias en más de 80 países. La media de la OCDE es 472 (Matemáticas). Singapur lidera con 575. La media del Reino Unido ronda 495–510. Cada 30–40 puntos PISA representa aproximadamente un año escolar de aprendizaje. La brecha es real.
+          </Bullet>
+          <Bullet>
+            <strong>TIMSS (Estudio Internacional de Tendencias en Matemáticas y Ciencias):</strong> Evalúa los cursos equivalentes a 4.º y 8.º. La media internacional se fija en 500. Inglaterra suele puntuar alrededor de 520–540 en Matemáticas — respetable, pero muy por debajo de Singapur (618), Corea del Sur (600) y Taiwán (594).
+          </Bullet>
+          <Bullet>
+            <strong>El Programa del Diploma del IB:</strong> Realizado por estudiantes de 16 a 19 años en más de 160 países. La puntuación media mundial es de aproximadamente 29–30 sobre 45. Las principales universidades del Reino Unido esperan 38–42 puntos para los cursos más competitivos. Una puntuación de 40 o más sitúa cómodamente a un estudiante por encima del percentil 90 global.
+          </Bullet>
+          <Bullet>
+            <strong>SAT Digital (Pruebas universitarias de EE. UU.):</strong> Usado cada vez más como referencia global de capacidad preuniversitaria. La mediana del 10% superior de los solicitantes globales es de aproximadamente 1480 sobre 1600.
+          </Bullet>
+          <Bullet>
+            <strong>Evaluación cognitiva (CAT4 / CogAT):</strong> Utilizado ampliamente en colegios independientes e internacionales del Reino Unido. Las Puntuaciones de Edad Estandarizadas (SAS) tienen una media de 100 y una desviación estándar de 15. Una SAS de 115 corresponde aproximadamente al percentil 84; 130, al percentil 98. Estas evaluaciones miden la capacidad de razonamiento, no el conocimiento curricular — lo que las convierte en uno de los comparadores más limpios entre países.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lo que significa «por encima de la media» en la práctica</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los padres reciben con frecuencia comentarios de que su hijo «va bien» o está «por encima de la media». Esto es casi siempre cierto respecto a sus compañeros de clase. La pregunta más útil es: ¿por encima de la media de qué población?
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left py-3 px-4 font-semibold text-gray-900">Nivel de rendimiento</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-900">Equivalente en nota escolar UK</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-900">Percentil PISA global (aprox.)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              <tr>
+                <td className="py-3 px-4 text-gray-700">Top 5% global</td>
+                <td className="py-3 px-4 text-gray-700">GCSE 8–9 / A-level A*</td>
+                <td className="py-3 px-4 text-gray-700">Percentil 95 o superior</td>
+              </tr>
+              <tr>
+                <td className="py-3 px-4 text-gray-700">Top 10% global</td>
+                <td className="py-3 px-4 text-gray-700">GCSE 7–8 / A-level A</td>
+                <td className="py-3 px-4 text-gray-700">Percentil 90 o superior</td>
+              </tr>
+              <tr>
+                <td className="py-3 px-4 text-gray-700">Por encima de la media OCDE</td>
+                <td className="py-3 px-4 text-gray-700">GCSE 5–6 / A-level B</td>
+                <td className="py-3 px-4 text-gray-700">~Percentil 55–65</td>
+              </tr>
+              <tr>
+                <td className="py-3 px-4 text-gray-700">Media nacional UK</td>
+                <td className="py-3 px-4 text-gray-700">GCSE 4–5</td>
+                <td className="py-3 px-4 text-gray-700">~Percentil 46–52</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Son aproximaciones — PISA, GCSE y las evaluaciones cognitivas miden constructos que se solapan pero no son idénticos. Pero la tabla ilustra el punto clave: un niño que rinde bien según los estándares del Reino Unido puede estar en la mitad global o ligeramente por encima. Para las familias que consideran colegios selectivos, becas internacionales o solicitudes a universidades de primer nivel, este contexto es esencial.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Los países con los que tu hijo compite realmente</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cuando un estudiante del Reino Unido solicita estudiar Medicina en UCL, Economía en LSE o Informática en Imperial, no compite principalmente con otros estudiantes del Reino Unido. Compite con estudiantes de:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>Singapur y Hong Kong,</strong> donde el estudiante medio de 15 años rinde en el percentil 75–80 global en Matemáticas — el equivalente a lo que el Reino Unido solo produce en su 20–25% superior.</Check>
+          <Check><strong>China (regiones participantes),</strong> donde las cohortes de las principales ciudades promedian puntuaciones PISA de Matemáticas por encima de 590 — casi 100 puntos por encima de la media del Reino Unido.</Check>
+          <Check><strong>Corea del Sur y Japón,</strong> cuyas medias nacionales (535–545) equivaldrían a situarse en el 20% superior de las cohortes del Reino Unido.</Check>
+          <Check><strong>India y Europa del Este,</strong> que no participan plenamente en PISA pero aportan un número muy elevado de solicitantes de alto rendimiento a las universidades del Reino Unido, especialmente en materias STEM.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Nada de esto es motivo de alarma. Pero sí es motivo para tener una perspectiva informada. El niño que está a la cabeza de su año en un instituto comprensivo del Reino Unido puede estar rindiendo en el percentil 60 global. Estas distinciones importan para la planificación vital.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La brecha de rendimiento oculta que los padres raramente ven</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Uno de los hallazgos más consistentes en la investigación educativa internacional es que los niños con alta capacidad en entornos menos estimulantes rinden sistemáticamente por debajo de su potencial — y ni ellos ni sus padres lo saben. A veces se llama el efecto del «techo invisible»: un niño brillante asciende a la cima de su grupo de pares disponible y recibe comentarios positivos que le impiden esforzarse más.
+        </p>
+        <Callout color="amber">
+          Un estudio de 2022 del Education Policy Institute encontró que el 10% de alumnos más capaces de Inglaterra — los que puntúan en el decil superior en las evaluaciones KS2 — progresa académicamente entre los 11 y los 16 años de forma significativamente menor que pares igualmente talentosos en otros países de la OCDE con alto rendimiento. La brecha es mayor en Matemáticas. Los niños en riesgo no son los de bajo rendimiento — son los de alto rendimiento en entornos de bajo desafío.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          La comparación estandarizada global es una de las formas más eficaces de identificar este patrón a tiempo. Un niño que puntúa en el percentil 80 del Reino Unido en una prueba nacional, pero en el percentil 60 en una evaluación con normas internacionales, está mostrando exactamente este patrón.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué puedes hacer con esta información</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Entender la posición global solo es útil si conduce a la acción. Las respuestas concretas dependen de lo que revele la comparación:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Si tu hijo rinde por encima del percentil 85 global:</strong> La prioridad es el desafío, no la corrección. Busca material de ampliación, programas avanzados de resolución de problemas, olimpiadas de materias y enriquecimiento académico. Estos niños necesitan problemas más difíciles, no más de lo mismo.
+          </Bullet>
+          <Bullet>
+            <strong>Si tu hijo rinde entre el percentil 50 y 85 global:</strong> Este es el grupo más grande — y el grupo donde la intervención dirigida produce los mayores retornos. El apoyo específico por materia, la práctica estructurada en las áreas más débiles y la exposición deliberada a material más difícil pueden desplazar de manera realista a un niño del percentil 65 al 80 o superior en 12–18 meses de trabajo consistente.
+          </Bullet>
+          <Bullet>
+            <strong>Si tu hijo rinde por debajo del percentil 50 global:</strong> Esto no es una crisis — es un dato. La mayoría de los niños en esta posición están rindiendo de forma apropiada para su edad y entorno de aprendizaje. La pregunta es si su trayectoria mejora o se estanca. Un niño en el percentil 45 que mejora 5–8 puntos al año alcanzará la competitividad global antes de los 18.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo te ayuda Eduentry a entender la posición de tu hijo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los boletines escolares te dan notas. Las evaluaciones estandarizadas te dicen dónde se sitúan esas notas en la distribución real. <Link href="https://eduentry.com" className="text-indigo-600 hover:underline font-medium">Eduentry</Link> ofrece evaluaciones adaptativas gratuitas para niños y estudiantes que producen puntuaciones estandarizadas con pleno contexto de percentiles — no solo dentro del Reino Unido, sino referenciadas frente a benchmarks internacionales incluidos PISA, IB y los estándares CAT4.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La evaluación cubre razonamiento verbal, razonamiento numérico y razonamiento no verbal / espacial — los tres dominios que la investigación cognitiva internacional identifica como los predictores más sólidos del potencial académico entre materias. A diferencia de un examen escolar, que evalúa el conocimiento curricular, una evaluación de razonamiento evalúa la capacidad subyacente: cómo piensa un niño, no solo lo que le han enseñado.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check>Puntuación estandarizada (equivalente SAS) para cada dominio de razonamiento</Check>
+          <Check>Rango de percentil dentro de una cohorte con normas del Reino Unido</Check>
+          <Check>Contexto internacional: cómo se relaciona la puntuación con las bandas de rendimiento PISA y los equivalentes de puntuación IB</Check>
+          <Check>Resumen redactado por IA que identifica fortalezas concretas y dónde el esfuerzo dirigido produciría mayor retorno</Check>
+          <Check>Evaluación de preparación para la admisión en colegios selectivos, programas de becas o enriquecimiento académico</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Para los padres que siempre se han preguntado dónde se sitúa realmente su hijo — no frente a su clase, sino frente al mundo — la evaluación de <Link href="https://eduentry.com" className="text-indigo-600 hover:underline font-medium">Eduentry</Link> es la respuesta más directa disponible actualmente de forma gratuita.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Elegir el colegio internacional adecuado</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Para las familias que se plantean un colegio internacional — ya sea por una reubicación en el extranjero o por buscar un currículo con acreditación internacional en casa — saber dónde se sitúa tu hijo globalmente es solo la mitad de la ecuación. La otra mitad es encontrar el entorno escolar que lo desafíe al nivel adecuado. Un niño en el percentil 80 global colocado en un colegio orientado al percentil 50 se estancará; un niño en el percentil 60 colocado en un entorno hiper-selectivo puede sufrir innecesariamente. El encaje importa tanto como la aspiración.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <Link href="https://edualist.com" className="text-indigo-600 hover:underline font-medium">Edualist</Link> se especializa exactamente en esto: emparejar a las familias con colegios internacionales basándose en el perfil académico del niño, su estilo de aprendizaje y su rendimiento en benchmarks globales — no solo en la geografía y las cuotas. Si estás realizando una búsqueda de colegios internacionales, sus asesores utilizan los mismos datos de benchmarks estandarizados tratados en este artículo para identificar colegios donde tu hijo florecerá, no solo sobrevivirá.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">El marco adecuado para esta conversación</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La comparación global puede resultar angustiante cuando se enmarca como competición. Es más útil cuando se enmarca como calibración. La pregunta «¿cómo se compara mi hijo globalmente?» no es «¿es suficientemente bueno mi hijo?» Es «¿qué oportunidades están disponibles de manera realista y qué se necesita para acceder a ellas?»
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un niño en el percentil 65 global tiene un camino claro y alcanzable hacia el percentil 80 en dos años de trabajo enfocado — si se aplican las intervenciones correctas en los déficits correctos en el momento correcto. Un niño que ya rinde en el percentil 90 se beneficia del desafío y la aceleración, no del apoyo centrado en la corrección al que la mayoría del refuerzo académico recurre por defecto.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          En ambos casos, el punto de partida es el mismo: una lectura honesta y estandarizada de dónde se sitúa realmente el niño. Todo lo útil parte de ahí.
         </p>
       </section>
     </>

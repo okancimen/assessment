@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Bullet, Callout, Check } from './blog-components'
 
 export const TR_CONTENT: Record<string, React.ReactNode> = {
@@ -412,6 +413,187 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         </p>
         <p className="text-gray-700 leading-relaxed">
           Birleşik Krallık teknoloji sektörü nitelikli adayların hattının ayak uydurabileceğinden daha hızlı büyüyor. Bunu anlayan — ve üniversiteyi beklemek yerine lise yıllarında profesyonel kimlik oluşturmaya başlayan — öğrenciler, mezun iş gücü piyasasına geç başlayanların üç yılda kapatamayacağı avantajlarla geliyor. Başlamanın zamanı, hazır olduğunuzu düşünmeden öncedir.
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-does-your-child-compare-globally': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Çoğu ebeveyn, çocuğunun sınıfındaki yaklaşık yerini biliyor. Bazıları yıl grubu içindeki sıralamasını da biliyor. Neredeyse hiçbiri çocuğunun akademik yetenek açısından küresel dağılımdaki yerini bilmiyor — ve bu anlayış boşluğu, çocukların hak ettikleri fırsatları sessiz sedasız kaçırmasına yol açabiliyor.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu önemli; çünkü bir çocuğun geleceğini şekillendiren kurumlar — seçici okullar, üniversite kabul ofisleri, burs komiteleri ve giderek artan biçimde işverenler — çocukları sınıf arkadaşlarına göre değerlendirmiyor. Herkese göre değerlendiriyorlar. Küresel bağlamı anlamak kaygı yaratmak için değil; doğru bilgiyle karar vermek için gereklidir.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ulusal Notların Sorunu</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          GCSE Matematikte 7 notu mükemmel görünüyor — ve Birleşik Krallık bağlamında öyle. Ama bu notun Singapurlu, Finlandiyalı ya da Kanadalı bir 15 yaşlıya kıyasla ne ifade ettiğini söylemiyor. Ulusal notlar ulusal akranlarla kalibre edilir. Küresel karşılaştırma için tasarlanmamışlardır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu sorun, çocuklar uluslararası rekabeti olan fırsatlara talip olduğunda somutlaşıyor: yüksek sayıda yabancı başvurusu olan üniversite yerleşmeleri, küresel sıralamaya göre değerlendirilen burslar ya da düzinelerce ülkeden aynı anda işe alan çok uluslu şirketlerin mezun programları. Bu karar noktalarının hepsinde soru şu: "Bu öğrenci diğer İngiltere öğrencilerine kıyasla nasıl?" değil, "Bu öğrenci küresel havuza kıyasla nasıl?"
+        </p>
+        <Callout color="indigo">
+          OECD&apos;nin PISA araştırması — 15 yaşındaki akademik performansın en büyük küresel karşılaştırması — en yüksek performans gösteren ülkelerin öğrencilerinin İngiltere&apos;deki akranlarını iki ila üç okul yılı kadar geride bıraktığını tutarlı biçimde gösteriyor. Matematikte ulusal ortalamasında olan bir öğrenci, PISA standartlarına göre yaklaşık 46. küresel yüzdelikte yer alıyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Küresel Kıyaslamalar Gerçekte Ne Gösteriyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Küresel konumu güvenilir biçimde ölçen birkaç uluslararası standartlaştırılmış çerçeve mevcuttur. Bunlar mükemmel şekilde karşılaştırılabilir değil — farklı şeyleri, farklı yaşlarda, farklı puanlama ölçekleriyle test ediyorlar — ama bir arada net bir tablo ortaya koyuyorlar.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>PISA (Uluslararası Öğrenci Değerlendirme Programı):</strong> 80&apos;den fazla ülkede 15 yaşındakileri Matematik, Okuma ve Fen alanlarında test eder. OECD ortalaması 472 (Matematik). Singapur 575 ile önde. İngiltere ortalaması yaklaşık 495–510. Her 30–40 PISA puanı yaklaşık bir okul yılını temsil eder. Bu fark gerçektir.
+          </Bullet>
+          <Bullet>
+            <strong>TIMSS (Matematik ve Fen Eğilimlerinin Uluslararası Araştırması):</strong> 4. ve 8. sınıfları test eder. Uluslararası ortalama 500 olarak belirlenir. İngiltere genellikle 4. ve 8. sınıflarda Matematikte 520–540 aralığında puan alır — saygın bir sonuç; ancak Singapur (618), Güney Kore (600) ve Çin Tayvanı&apos;nın (594) oldukça gerisinde.
+          </Bullet>
+          <Bullet>
+            <strong>IB Diploma Programı:</strong> 160&apos;tan fazla ülkede 16–19 yaş arası öğrenciler tarafından alınır. Dünya geneli ortalama puan 45 üzerinden yaklaşık 29–30&apos;dur. Önde gelen İngiltere üniversiteleri rekabetçi bölümler için 38–42 puan bekler. 40 üzeri puan öğrenciyi küresel olarak 90. yüzdeliğin rahatça üzerine taşır.
+          </Bullet>
+          <Bullet>
+            <strong>Dijital SAT (ABD Üniversite Sınavları):</strong> Üniversite öncesi yetenek için giderek artan biçimde kullanılan bir küresel kıyaslama. Küresel başvurucuların en iyi %10&apos;unun medyan puanı 1600 üzerinden yaklaşık 1480&apos;dir.
+          </Bullet>
+          <Bullet>
+            <strong>Bilişsel Değerlendirme (CAT4 / CogAT):</strong> İngiltere&apos;deki bağımsız okullar, uluslararası okullar ve seçici devlet okullarında yaygın olarak kullanılır. Standartlaştırılmış Yaş Puanları (SAS) ortalama 100, standart sapma 15 olacak şekilde belirlenir. 115 SAS yaklaşık 84. yüzdeliğe; 130 ise 98. yüzdeliğe karşılık gelir.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">"Ortalamanın Üzerinde" Olmak Pratikte Ne Anlama Gelir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ebeveynler çoğunlukla çocuklarının "iyi gidiyor" ya da "ortalamanın üzerinde" olduğu geri bildirimini alır. Bu neredeyse her zaman sınıf arkadaşlarına göre doğrudur. Daha kullanışlı soru şudur: Hangi popülasyonun ortalamasının üzerinde?
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left py-3 px-4 font-semibold text-gray-900">Performans düzeyi</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-900">İngiltere okul notu eşdeğeri</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-900">Küresel PISA yüzdeliği (yaklaşık)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              <tr>
+                <td className="py-3 px-4 text-gray-700">Küresel ilk %5</td>
+                <td className="py-3 px-4 text-gray-700">GCSE 8–9 / A-level A*</td>
+                <td className="py-3 px-4 text-gray-700">95. yüzdelik ve üstü</td>
+              </tr>
+              <tr>
+                <td className="py-3 px-4 text-gray-700">Küresel ilk %10</td>
+                <td className="py-3 px-4 text-gray-700">GCSE 7–8 / A-level A</td>
+                <td className="py-3 px-4 text-gray-700">90. yüzdelik ve üstü</td>
+              </tr>
+              <tr>
+                <td className="py-3 px-4 text-gray-700">OECD ortalamasının üzerinde</td>
+                <td className="py-3 px-4 text-gray-700">GCSE 5–6 / A-level B</td>
+                <td className="py-3 px-4 text-gray-700">~55–65. yüzdelik</td>
+              </tr>
+              <tr>
+                <td className="py-3 px-4 text-gray-700">İngiltere ulusal ortalaması</td>
+                <td className="py-3 px-4 text-gray-700">GCSE 4–5</td>
+                <td className="py-3 px-4 text-gray-700">~46–52. yüzdelik</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Bunlar yaklaşımlardır — PISA, GCSE ve bilişsel değerlendirmeler örtüşen ancak özdeş olmayan kavramları ölçer. Ama tablo temel noktayı gösteriyor: İngiltere standartlarına göre güçlü performans gösteren bir çocuk, küresel ortanın az üzerinde yer alıyor olabilir. Seçici okulları, uluslararası bursları veya önde gelen üniversiteleri hedefleyen aileler için bu bağlam son derece önemlidir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzun Gerçekte Rekabet Ettiği Ülkeler</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bir İngiliz öğrenci UCL&apos;de Tıp, LSE&apos;de Ekonomi ya da Imperial&apos;da Bilgisayar Bilimi okumak için başvurduğunda, esas olarak diğer İngiliz öğrencilerle rekabet etmiyor. Şunlardan gelen öğrencilerle rekabet ediyor:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>Singapur ve Hong Kong:</strong> Ortalama 15 yaşındaki öğrenci Matematikte küresel 75–80. yüzdelikte performans gösteriyor — İngiltere&apos;nin yalnızca en iyi %20–25&apos;inin ürettiği düzeyde.</Check>
+          <Check><strong>Çin (katılımcı bölgeler):</strong> Başlıca şehir kohortları ortalama 590&apos;ın üzerinde PISA Matematik puanı alıyor — İngiltere ortalamasının neredeyse 100 puan üzerinde.</Check>
+          <Check><strong>Güney Kore ve Japonya:</strong> Ulusal ortalamaları (535–545) İngiltere&apos;deki öğrencilerin yalnızca en iyi %20&apos;sinin seviyesine karşılık geliyor.</Check>
+          <Check><strong>Hindistan ve Doğu Avrupa:</strong> PISA&apos;ya tam olarak katılmıyor; ancak özellikle STEM alanlarında İngiliz üniversitelerine çok sayıda yüksek başarılı aday gönderiyor.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Bunların hiçbiri alarm sebebi değil. Ama bilinçli bir perspektif için sebep. İngiliz devlet okulunda yıl grubunun zirvesinde olan çocuk, küresel 60. yüzdelikte performans gösteriyor olabilir. Bu ayrımlar, hayat planlaması için önemlidir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ebeveynlerin Nadiren Gördüğü Gizli Başarı Açığı</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Uluslararası eğitim araştırmalarının en tutarlı bulgularından biri şu: daha az uyarıcı ortamlardaki yüksek yetenekli çocuklar sistematik olarak potansiyellerinin altında performans gösteriyor — ve ne çocuklar ne de aileleri bunun farkında. Buna bazen "görünmez tavan" etkisi deniyor: parlak bir çocuk, mevcut akran grubunun zirvesine yükseliyor ve daha fazla çabalamayı durduran olumlu geri bildirimler alıyor.
+        </p>
+        <Callout color="amber">
+          Eğitim Politikası Enstitüsü&apos;nün 2022 çalışması, İngiltere&apos;nin en yetenekli %10&apos;luk öğrencisinin — KS2 değerlendirmelerinde en üst onda birde yer alanların — 11–16 yaş arasında diğer yüksek performanslı OECD ülkelerindeki eşdeğer yetenekli akranlarına kıyasla belirgin biçimde daha az akademik ilerleme kaydettiğini buldu. Açık en büyük Matematik&apos;te. Risk altındaki çocuklar düşük başarılılar değil — düşük zorluklu ortamlardaki yüksek başarılılar.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Standartlaştırılmış küresel kıyaslama bu kalıbı erken tespit etmenin en etkili yollarından biridir. Ulusal testte İngiltere&apos;nin 80. yüzdeliğinde, ancak uluslararası normlarda 60. yüzdelikte puan alan bir çocuk tam olarak bu kalıbı gösteriyor.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bu Bilgiyle Ne Yapabilirsiniz?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Küresel konumu anlamak yalnızca harekete yol açtığında faydalıdır. Yapılacaklar kıyaslamanın ortaya koyduğuna göre değişir:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Çocuğunuz küresel 85. yüzdeliğin üzerindeyse:</strong> Öncelik zorluk, düzeltme değil. Ek materyaller, ileri düzey problem çözme programları, konu olimpiyatları ve akademik zenginleştirme arayın. Bu çocukların daha zor problemlere, aynı şeyin fazlasına değil, ihtiyacı var.
+          </Bullet>
+          <Bullet>
+            <strong>Çocuğunuz küresel 50–85. yüzdelik arasındaysa:</strong> Bu en büyük grup — ve odaklanmış, hedefli müdahalenin en büyük getiriyi ürettiği grup. Konuya özgü destek, zayıf alanlarda yapılandırılmış pratik ve daha zor materyale bilinçli maruz kalma, 12–18 aylık tutarlı çalışmayla bir çocuğu gerçekçi biçimde 65. yüzdelikten 80. yüzdelik üzerine taşıyabilir.
+          </Bullet>
+          <Bullet>
+            <strong>Çocuğunuz küresel 50. yüzdeliğin altındaysa:</strong> Bu bir kriz değil — bir veri noktası. Bu konumdaki çoğu çocuk, yaşına ve öğrenme ortamına uygun biçimde performans gösteriyor. Asıl soru, yörüngesinin iyileşip iyileşmediğidir. Yılda 5–8 puan kazanan ve gelişen bir 45. yüzdelik çocuk, 18 yaşına gelene kadar küresel rekabetçiliğe ulaşacaktır.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Eduentry Çocuğunuzun Konumunu Anlamanıza Nasıl Yardımcı Olur?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okul karneleri notları söyler. Standartlaştırılmış değerlendirmeler o notların gerçek dağılımdaki yerini söyler. <Link href="https://eduentry.com" className="text-indigo-600 hover:underline font-medium">Eduentry</Link>, çocuklar ve öğrenciler için tam uluslararası kıyaslama bağlamıyla ücretsiz uyarlanabilir değerlendirmeler sunuyor; sonuçlar yalnızca İngiltere ile sınırlı kalmayıp PISA, IB ve CAT4 standartlarına da referans veriyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Değerlendirme sözel muhakeme, sayısal muhakeme ve sözel olmayan / uzamsal muhakemeyi kapsar — uluslararası bilişsel araştırmanın konular genelinde akademik potansiyelin en güçlü öngörücüleri olarak belirlediği üç alan. Bir okul sınavından farklı olarak, bir muhakeme değerlendirmesi altta yatan yeteneği test eder: çocuğun nasıl düşündüğünü, ne öğretildiğini değil.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check>Her muhakeme alanı için standartlaştırılmış puan (SAS eşdeğeri)</Check>
+          <Check>İngiltere normlu bir kohortta yüzdelik sıra</Check>
+          <Check>Uluslararası bağlam: puanın PISA performans bantları ve IB puan eşdeğerleriyle nasıl örtüştüğü</Check>
+          <Check>Güçlü yönleri ve hedefli çabanın en büyük getiriyi nerede üreteceğini belirleyen yapay zeka tarafından yazılmış özet</Check>
+          <Check>Seçici okul girişi, burs programları veya akademik zenginleştirme için hazırlık değerlendirmesi</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Çocuklarının gerçekte nerede durduğunu merak eden — sınıfa göre değil, dünyaya göre — ebeveynler için <Link href="https://eduentry.com" className="text-indigo-600 hover:underline font-medium">Eduentry</Link>&apos;nin değerlendirmesi şu an ücretsiz olarak mevcut en doğrudan yanıttır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Uluslararası Okul Seçimi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yurt dışına taşınan ya da yurt içinde uluslararası akreditasyonlu bir müfredat arayan aileler için çocuğunuzun küresel konumunu bilmek sadece denklemin yarısıdır. Diğer yarısı, onu doğru düzeyde zorlayacak okul ortamını bulmaktır. Küresel 80. yüzdelikte olan bir çocuğu 50. yüzdeliğe yönelik bir okula yerleştirirseniz o çocuk durağanlaşır; 60. yüzdelikte olan bir çocuğu aşırı seçici bir ortama koyarsanız gereksiz yere zorlanabilir. Eşleşme, hedef kadar önemlidir.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <Link href="https://edualist.com" className="text-indigo-600 hover:underline font-medium">Edualist</Link>, tam olarak bunda uzmanlaşmıştır: coğrafya ve ücretlerle değil, çocuğun akademik profili, öğrenme stili ve küresel kıyaslama verisiyle aileleri uluslararası okullara eşleştirmek. Uluslararası okul araştırması yapıyorsanız, danışmanları bu makalede ele alınan standartlaştırılmış kıyaslama verilerini çocuğunuzun gelişeceği — yalnızca hayatta kalmayacağı — okulları belirlemek için kullanıyor.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bu Konuşma İçin Doğru Çerçeve</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Küresel karşılaştırma, rekabet olarak çerçevelendiğinde kaygı verici hissettiriyor. Kalibrasyon olarak çerçevelendiğinde daha kullanışlı. "Çocuğum dünya genelinde nerede duruyor?" sorusu "Çocuğum yeterince iyi mi?" değil, "Gerçekçi olarak hangi fırsatlar mevcut ve bunlara erişmek ne gerektiriyor?" sorusudur.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Küresel 65. yüzdelikte olan bir çocuğun, doğru alanlara doğru zamanda doğru müdahaleler uygulanırsa iki yıl içinde 80. yüzdeliğe ulaşmak için net, ulaşılabilir bir yolu var. Halihazırda 90. yüzdelikte olan bir çocuk, varsayılan akademik desteğin öndeki pek çok çocuğa sunduğu düzeltme odaklı destekten değil, zorluk ve ivmeden yararlanır.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Her iki durumda da başlangıç noktası aynı: çocuğun gerçekte nerede durduğuna dair dürüst, standartlaştırılmış bir okuma. Her şey faydalı olan buradan çıkıyor.
         </p>
       </section>
     </>

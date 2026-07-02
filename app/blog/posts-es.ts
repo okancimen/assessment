@@ -145,6 +145,44 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: '/tech',
     },
   },
+  {
+    slug: 'how-does-your-child-compare-globally',
+    title: '¿Cómo se compara tu hijo a nivel mundial? Guía para padres sobre benchmarks académicos internacionales',
+    shortTitle: '¿Cómo se compara tu hijo a nivel mundial?',
+    description:
+      'La mayoría de los padres solo saben cómo se sitúa su hijo a nivel nacional. Pero los colegios selectivos, los comités de becas y las mejores universidades piensan en percentiles globales. Aquí está lo que muestran realmente los datos internacionales — y lo que significa para el futuro de tu hijo.',
+    date: '2026-07-02',
+    readTime: '10 min de lectura',
+    tags: ['Benchmarks internacionales', 'PISA', 'Guía para padres', 'Pruebas estandarizadas', 'Desarrollo infantil'],
+    faqs: [
+      {
+        q: '¿Cómo puedo saber dónde se sitúa mi hijo académicamente en comparación con estudiantes de todo el mundo?',
+        a: 'La forma más directa es una evaluación estandarizada que produce una puntuación en percentil relativa a una cohorte global o nacional amplia. La evaluación adaptativa de Eduentry produce una puntuación estandarizada calibrada con normas del Reino Unido, con contexto de PISA e IB incorporado en el informe. Las notas escolares nacionales te dicen dónde está tu hijo en su clase o año — una puntuación estandarizada te dice dónde se sitúa en la distribución global.',
+      },
+      {
+        q: "¿Qué es una puntuación PISA 'buena' para la edad de mi hijo?",
+        a: 'PISA evalúa a estudiantes de 15 años en más de 80 países. La media de la OCDE es 472 en Matemáticas. Una puntuación por encima de 500 sitúa al estudiante sobre la media de la OCDE; por encima de 550, en aproximadamente el 20% superior mundial; por encima de 600, en torno al 5% superior. La media nacional del Reino Unido ronda 495–510, lo que significa que un estudiante en la media nacional ya está ligeramente por encima de la media de la OCDE — pero muy por detrás de países líderes como Singapur (575) y Japón (536).',
+      },
+      {
+        q: '¿El ranking del colegio de mi hijo me dice cómo se compara globalmente?',
+        a: 'Los rankings escolares son indicadores, no medidas. Un niño en un colegio bien valorado con buenos recursos puede salir como promedio en una prueba estandarizada internacional — porque los rankings reflejan recursos institucionales, no rendimiento individual. La única comparación global fiable proviene de una evaluación estandarizada que utiliza el mismo instrumento de medida entre estudiantes independientemente del colegio.',
+      },
+      {
+        q: '¿A qué edad debería empezar a hacer seguimiento de la posición académica global de mi hijo?',
+        a: 'Una comparación significativa es posible desde los 7–8 años usando evaluaciones cognitivas (CAT4, CogAT). La ventana más relevante desde el punto de vista de las políticas educativas es entre los 10 y los 16 años, cuando se toman decisiones sobre admisión en colegios selectivos, solicitud de becas y elección de asignaturas. Hacer seguimiento de la posición global desde los 10 años da a las familias tiempo suficiente para intervenir con propósito si es necesario.',
+      },
+      {
+        q: '¿Cómo se compara el Reino Unido con otros países en los rankings educativos globales?',
+        a: 'El Reino Unido rinde por encima de la media de la OCDE en Lectura y Ciencias, y alrededor de la media en Matemáticas. Los sistemas educativos asiáticos de mayor rendimiento — Singapur, Hong Kong, Corea del Sur, Japón — superan al Reino Unido en 60–100 puntos PISA. En términos prácticos, un estudiante en la media nacional del Reino Unido en Matemáticas rinde aproximadamente al mismo nivel que un estudiante del cuartil inferior en Japón o Corea del Sur.',
+      },
+    ],
+    cta: {
+      heading: 'Descubre dónde está realmente tu hijo',
+      body: 'La evaluación adaptativa gratuita de Eduentry produce una puntuación estandarizada y una comparación en percentil global — no una nota escolar. Entiende la posición real de tu hijo en menos de 35 minutos.',
+      label: 'Empezar la evaluación gratuita',
+      href: '/auth/register',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {
