@@ -114,13 +114,12 @@ const HOWTO_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'How to get placed in a UK internship with Eduentry.ai',
-  description: 'Free 34-question adaptive assessment for high school students aged 14+. Four steps from registration to internship placement match.',
+  description: 'Free 34-question adaptive assessment for high school students aged 14+. Three steps from registration to internship placement match.',
   totalTime: 'PT35M',
   step: [
-    { '@type': 'HowToStep', position: 1, name: 'Register', text: 'Create your free Eduentry.ai account in under a minute — no payment details required.' },
-    { '@type': 'HowToStep', position: 2, name: 'Apply', text: 'Tell us about yourself, your school year, and your track preferences across Technology, Business, Data Analytics, or Digital Marketing.' },
-    { '@type': 'HowToStep', position: 3, name: 'Take the assessment', text: '34 adaptive questions across four phases: General Aptitude, Domain Knowledge, Workplace Skills, and Interest Profile. Takes approximately 35 minutes. Resume any time.' },
-    { '@type': 'HowToStep', position: 4, name: 'Get your report', text: 'Receive an AI-written personalised readiness report with a readiness tier, phase-by-phase breakdown, and internship placement match.' },
+    { '@type': 'HowToStep', position: 1, name: 'Register & apply', text: 'Create your free Eduentry.ai account and tell us about yourself, your school year, and your track preferences across Technology, Business, Data Analytics, or Digital Marketing.' },
+    { '@type': 'HowToStep', position: 2, name: 'Take the assessment', text: '34 adaptive questions across four phases: General Aptitude, Domain Knowledge, Workplace Skills, and Interest Profile. Takes approximately 35 minutes. Resume any time.' },
+    { '@type': 'HowToStep', position: 3, name: 'Get your report', text: 'Receive an AI-written personalised readiness report with a readiness tier, phase-by-phase breakdown, and internship placement match.' },
   ],
 }
 
@@ -144,7 +143,7 @@ export default function AIHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="py-32 bg-white text-center px-6">
+      <section className="py-16 bg-white text-center px-6">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-[#eef2ff] text-[#4F46E5] text-xs font-semibold px-3 py-1.5 rounded-full mb-8 tracking-[0.1em] uppercase">
             AI-Powered · Free · 35 Minutes
@@ -168,10 +167,10 @@ export default function AIHomePage() {
       </section>
 
       {/* ── Tracks ───────────────────────────────────────────────────────── */}
-      <section id="tracks" className="py-32 bg-[#f5f5f7]">
+      <section id="tracks" className="py-16 bg-[#f5f5f7]">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Available tracks</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16 leading-tight">
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8 leading-tight">
             Four paths.<br />One assessment.
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
@@ -204,18 +203,17 @@ export default function AIHomePage() {
       </section>
 
       {/* ── How it works ─────────────────────────────────────────────────── */}
-      <section id="how-it-works" className="py-32 bg-white">
+      <section id="how-it-works" className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Process</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">
-            Four steps to placement.
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
+            Three steps to placement.
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {[
-              { n: '01', title: 'Register',          desc: 'Create your free account in under a minute.' },
-              { n: '02', title: 'Apply',             desc: 'Tell us about yourself, your school, and your track preferences.' },
-              { n: '03', title: 'Take the assessment', desc: '34 adaptive questions across four phases. Resume any time.' },
-              { n: '04', title: 'Get your report',   desc: 'Receive an AI-written readiness report and placement match.' },
+              { n: '01', title: 'Register & apply',    desc: 'Create your free account and tell us about yourself, your school, and your track preferences.' },
+              { n: '02', title: 'Take the assessment', desc: '34 adaptive questions across four phases. Resume any time.' },
+              { n: '03', title: 'Get your report',     desc: 'Receive an AI-written readiness report and placement match.' },
             ].map(({ n, title, desc }) => (
               <div key={n}>
                 <div className="text-4xl font-bold text-[#d2d2d7] mb-4">{n}</div>
@@ -228,10 +226,10 @@ export default function AIHomePage() {
       </section>
 
       {/* ── Assessment breakdown ──────────────────────────────────────────── */}
-      <section className="py-32 bg-[#f5f5f7]">
+      <section className="py-16 bg-[#f5f5f7]">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Assessment</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
             What to expect.
           </h2>
           <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
@@ -258,10 +256,10 @@ export default function AIHomePage() {
       </section>
 
       {/* ── What you get ─────────────────────────────────────────────────── */}
-      <section className="py-32 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Results</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
             What you get.
           </h2>
           <div className="bg-[#f5f5f7] rounded-3xl p-8">
@@ -286,10 +284,10 @@ export default function AIHomePage() {
       </section>
 
       {/* ── Stats ────────────────────────────────────────────────────────── */}
-      <section className="py-32 bg-[#f5f5f7]">
+      <section className="py-16 bg-[#f5f5f7]">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Evidence</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
             Why early experience matters.
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -310,10 +308,10 @@ export default function AIHomePage() {
 
       {/* ── Blog preview ─────────────────────────────────────────────────── */}
       {internshipPosts.length > 0 && (
-        <section className="py-32 bg-white">
+        <section className="py-16 bg-white">
           <div className="max-w-5xl mx-auto px-6">
             <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Research</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">
+            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
               Latest from the blog.
             </h2>
             <div className="space-y-5">
@@ -345,9 +343,9 @@ export default function AIHomePage() {
       )}
 
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
-      <section className="py-32 bg-[#f5f5f7]">
+      <section className="py-16 bg-[#f5f5f7]">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">Questions.</h2>
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">Questions.</h2>
           <div className="space-y-px">
             {FAQS.map(({ q, a }) => (
               <details key={q} className="group bg-white first:rounded-t-3xl last:rounded-b-3xl border-b border-[#f5f5f7] last:border-0">
@@ -365,7 +363,7 @@ export default function AIHomePage() {
       </section>
 
       {/* ── Final CTA ────────────────────────────────────────────────────── */}
-      <section className="py-32 bg-white text-center px-6">
+      <section className="py-16 bg-white text-center px-6">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-6">
             Apply now.<br />It&apos;s free.
