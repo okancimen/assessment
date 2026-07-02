@@ -1803,6 +1803,16 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Choosing the Right International School</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For families considering an international school — whether relocating abroad or seeking an internationally accredited curriculum at home — understanding where your child sits globally is only half the equation. The other half is finding the school environment that will challenge them at the right level. A child performing at the 80th global percentile placed in a school pitched at the 50th will plateau; a child at the 60th percentile placed in a hyper-selective environment may struggle unnecessarily. Match matters as much as aspiration.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <Link href="https://edualist.com" className="text-indigo-600 hover:underline font-medium">Edualist</Link> specialises in exactly this: matching families to international schools based on a child&apos;s academic profile, learning style, and global benchmarked performance — not just geography and fees. If you are navigating an international school search, their advisors use the same standardised benchmark data covered in this article to identify schools where your child will thrive, not just survive.
+        </p>
+      </section>
+
+      <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">The Right Frame for This Conversation</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Global comparison can feel anxiety-inducing when it is framed as competition. It is more useful when framed as calibration. The question &ldquo;how does my child compare globally?&rdquo; is not &ldquo;is my child good enough?&rdquo; It is &ldquo;what opportunities are realistically available, and what does it take to access them?&rdquo;
