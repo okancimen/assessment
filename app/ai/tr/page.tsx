@@ -181,7 +181,7 @@ export default function TurkishHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="py-32 bg-white text-center px-6">
+      <section className="py-16 bg-white text-center px-6">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-[#eef2ff] text-[#4F46E5] text-xs font-semibold px-3 py-1.5 rounded-full mb-8 tracking-[0.1em] uppercase">
             Yapay Zeka Destekli · Ücretsiz · 35 Dakika
@@ -205,10 +205,10 @@ export default function TurkishHomePage() {
       </section>
 
       {/* ── Tracks ───────────────────────────────────────────────────────── */}
-      <section id="tracks" className="py-32 bg-[#f5f5f7]">
+      <section id="tracks" className="py-16 bg-[#f5f5f7]">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Mevcut alanlar</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16 leading-tight">
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8 leading-tight">
             Dört yol.<br />Tek değerlendirme.
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
@@ -241,18 +241,17 @@ export default function TurkishHomePage() {
       </section>
 
       {/* ── How it works ─────────────────────────────────────────────────── */}
-      <section id="how-it-works" className="py-32 bg-white">
+      <section id="how-it-works" className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Süreç</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">
-            Dört adımda yerleştirme.
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
+            Üç adımda yerleştirme.
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {[
-              { n: '01', title: 'Kayıt ol',                  desc: 'Ücretsiz hesabını bir dakikadan kısa sürede oluştur.' },
-              { n: '02', title: 'Başvur',                     desc: 'Kendin, okulun ve alan tercihlerinin hakkında bilgi ver.' },
-              { n: '03', title: 'Değerlendirmeyi tamamla',   desc: 'Dört aşamada 34 uyarlanabilir soru. İstediğin zaman devam et.' },
-              { n: '04', title: 'Raporunu al',                desc: 'Yapay zeka tarafından yazılmış kişiselleştirilmiş hazırlık raporu ve yerleştirme eşleşmeni al.' },
+              { n: '01', title: 'Kayıt ol ve başvur',         desc: 'Ücretsiz hesabını oluştur ve kendin, okulun ile alan tercihlerin hakkında bilgi ver.' },
+              { n: '02', title: 'Değerlendirmeyi tamamla',    desc: 'Dört aşamada 34 uyarlanabilir soru. İstediğin zaman devam et.' },
+              { n: '03', title: 'Raporunu al',                 desc: 'Yapay zeka tarafından yazılmış kişiselleştirilmiş hazırlık raporu ve yerleştirme eşleşmeni al.' },
             ].map(({ n, title, desc }) => (
               <div key={n}>
                 <div className="text-4xl font-bold text-[#d2d2d7] mb-4">{n}</div>
@@ -265,10 +264,10 @@ export default function TurkishHomePage() {
       </section>
 
       {/* ── Assessment breakdown ──────────────────────────────────────────── */}
-      <section className="py-32 bg-[#f5f5f7]">
+      <section className="py-16 bg-[#f5f5f7]">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Değerlendirme</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
             Neler beklediğini öğren.
           </h2>
           <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
@@ -295,10 +294,10 @@ export default function TurkishHomePage() {
       </section>
 
       {/* ── What you get ─────────────────────────────────────────────────── */}
-      <section className="py-32 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Sonuçlar</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
             Neler alacaksın.
           </h2>
           <div className="bg-[#f5f5f7] rounded-3xl p-8">
@@ -323,10 +322,10 @@ export default function TurkishHomePage() {
       </section>
 
       {/* ── Stats ────────────────────────────────────────────────────────── */}
-      <section className="py-32 bg-[#f5f5f7]">
+      <section className="py-16 bg-[#f5f5f7]">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Kanıt</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
             Erken deneyimin neden önemi var.
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -347,10 +346,10 @@ export default function TurkishHomePage() {
 
       {/* ── Blog preview ─────────────────────────────────────────────────── */}
       {internshipPosts.length > 0 && (
-        <section className="py-32 bg-white">
+        <section className="py-16 bg-white">
           <div className="max-w-5xl mx-auto px-6">
             <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Araştırma</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">
+            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
               Blogdan son yazılar.
             </h2>
             <div className="space-y-5">
@@ -382,9 +381,9 @@ export default function TurkishHomePage() {
       )}
 
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
-      <section className="py-32 bg-[#f5f5f7]">
+      <section className="py-16 bg-[#f5f5f7]">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-16">Sorular.</h2>
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">Sorular.</h2>
           <div className="space-y-px">
             {FAQS.map(({ q, a }) => (
               <details key={q} className="group bg-white first:rounded-t-3xl last:rounded-b-3xl border-b border-[#f5f5f7] last:border-0">
@@ -402,7 +401,7 @@ export default function TurkishHomePage() {
       </section>
 
       {/* ── Final CTA ────────────────────────────────────────────────────── */}
-      <section className="py-32 bg-white text-center px-6">
+      <section className="py-16 bg-white text-center px-6">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-6">
             Hemen başvur.<br />Ücretsiz.
