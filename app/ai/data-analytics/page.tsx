@@ -133,12 +133,33 @@ export default function DataAnalyticsTrackPage() {
     })),
   }
 
+  const programSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOccupationalProgram',
+    name: 'Data Analytics Internship Readiness Assessment',
+    description: 'AI-powered adaptive assessment for high school students aged 14–18 seeking data analytics internships in the UK. 34 questions across 4 phases, AI-scored, personalised readiness report.',
+    url: TRACK_URL,
+    provider: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
+    educationalCredentialAwarded: {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'Data Analytics Internship Readiness Report',
+      credentialCategory: 'certificate',
+    },
+    occupationalCategory: 'Data Analytics',
+    timeToComplete: 'PT35M',
+    educationalProgramMode: 'online',
+    inLanguage: 'en-GB',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Free for all students aged 14–18' },
+    programPrerequisites: 'Secondary school student aged 14–18',
+  }
+
   return (
     <main className="flex-1">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(programSchema) }} />
 
       {/* Hero */}
       <section className="pt-24 pb-20 px-6 max-w-5xl mx-auto">

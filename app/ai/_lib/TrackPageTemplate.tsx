@@ -64,6 +64,33 @@ export default function TrackPageTemplate({ track, locale }: Props) {
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP' },
   }
 
+  const PROGRAM_NAMES: Record<TrackId, { en: string; credential: string; occupation: string }> = {
+    tech:               { en: 'Technology Internship Readiness Assessment',       credential: 'Technology Internship Readiness Report',       occupation: 'Technology' },
+    business:           { en: 'Business Internship Readiness Assessment',          credential: 'Business Internship Readiness Report',          occupation: 'Business' },
+    'data-analytics':   { en: 'Data Analytics Internship Readiness Assessment',   credential: 'Data Analytics Internship Readiness Report',   occupation: 'Data Analytics' },
+    'digital-marketing':{ en: 'Digital Marketing Internship Readiness Assessment', credential: 'Digital Marketing Internship Readiness Report', occupation: 'Digital Marketing' },
+  }
+
+  const programSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOccupationalProgram',
+    name: d.meta.title,
+    description: d.meta.description,
+    url: TRACK_URL,
+    provider: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
+    educationalCredentialAwarded: {
+      '@type': 'EducationalOccupationalCredential',
+      name: PROGRAM_NAMES[track].credential,
+      credentialCategory: 'certificate',
+    },
+    occupationalCategory: PROGRAM_NAMES[track].occupation,
+    timeToComplete: 'PT35M',
+    educationalProgramMode: 'online',
+    inLanguage: locale === 'tr' ? 'tr' : 'es',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: lang === 'tr' ? '14–18 yaş tüm öğrenciler için ücretsiz' : 'Gratis para todos los estudiantes de 14 a 18 años' },
+    programPrerequisites: lang === 'tr' ? '14–18 yaş arası lise öğrencisi' : 'Estudiante de instituto de 14 a 18 años',
+  }
+
   const homePath = `/${locale}`
   const blogPath = `/${locale}/blog`
 
@@ -72,6 +99,7 @@ export default function TrackPageTemplate({ track, locale }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(programSchema) }} />
 
       {/* hreflang */}
       <link rel="alternate" hrefLang={lang} href={TRACK_URL} />
