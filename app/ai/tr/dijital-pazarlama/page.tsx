@@ -9,6 +9,7 @@ const TRACK_URL = `${BASE_URL}/tr/dijital-pazarlama`
 export const metadata: Metadata = {
   title: d.meta.title,
   description: d.meta.description,
+  keywords: ['dijital pazarlama stajı', 'pazarlama stajı hazırlığı', 'dijital pazarlama değerlendirmesi öğrenci', 'SEO stajı lise', 'sosyal medya stajı değerlendirmesi', 'içerik pazarlama stajı', 'dijital pazarlama iş deneyimi'],
   alternates: {
     canonical: TRACK_URL,
     languages: { tr: TRACK_URL, es: `${BASE_URL}/es/marketing-digital`, en: `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },

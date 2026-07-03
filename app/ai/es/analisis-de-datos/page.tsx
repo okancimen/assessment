@@ -9,6 +9,7 @@ const TRACK_URL = `${BASE_URL}/es/analisis-de-datos`
 export const metadata: Metadata = {
   title: d.meta.title,
   description: d.meta.description,
+  keywords: ['prácticas análisis de datos', 'evaluación datos instituto', 'prácticas ciencia de datos estudiantes', 'test SQL bachillerato', 'prácticas estadística estudiantes', 'experiencia laboral datos', 'evaluación análisis datos'],
   alternates: {
     canonical: TRACK_URL,
     languages: { es: TRACK_URL, tr: `${BASE_URL}/tr/veri-analitigi`, en: `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },

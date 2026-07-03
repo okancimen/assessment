@@ -9,6 +9,7 @@ const TRACK_URL = `${BASE_URL}/es/marketing-digital`
 export const metadata: Metadata = {
   title: d.meta.title,
   description: d.meta.description,
+  keywords: ['prácticas marketing digital', 'evaluación marketing instituto', 'prácticas SEO estudiantes', 'test redes sociales bachillerato', 'prácticas contenido digital', 'experiencia laboral marketing', 'evaluación marketing digital'],
   alternates: {
     canonical: TRACK_URL,
     languages: { es: TRACK_URL, tr: `${BASE_URL}/tr/dijital-pazarlama`, en: `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },

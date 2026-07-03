@@ -9,6 +9,7 @@ const TRACK_URL = `${BASE_URL}/tr/teknoloji`
 export const metadata: Metadata = {
   title: d.meta.title,
   description: d.meta.description,
+  keywords: ['teknoloji stajı', 'staj değerlendirmesi lise', 'teknoloji staj hazırlığı', 'kodlama stajı öğrenci', 'yazılım stajı değerlendirmesi', 'siber güvenlik stajı lise', 'UX stajı öğrenci', 'teknoloji iş deneyimi'],
   alternates: {
     canonical: TRACK_URL,
     languages: { tr: TRACK_URL, es: `${BASE_URL}/es/tecnologia`, en: `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },

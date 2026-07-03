@@ -9,6 +9,7 @@ const TRACK_URL = `${BASE_URL}/es/empresa`
 export const metadata: Metadata = {
   title: d.meta.title,
   description: d.meta.description,
+  keywords: ['prácticas empresa instituto', 'evaluación prácticas empresa', 'prácticas business estudiantes', 'test aptitud empresarial', 'prácticas finanzas bachillerato', 'experiencia laboral empresa', 'evaluación comercial estudiantes'],
   alternates: {
     canonical: TRACK_URL,
     languages: { es: TRACK_URL, tr: `${BASE_URL}/tr/is-dunyasi`, en: `${BASE_URL}/business`, 'x-default': `${BASE_URL}/business` },

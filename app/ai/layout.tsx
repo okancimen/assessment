@@ -40,6 +40,7 @@ export const metadata: Metadata = {
     title: 'Eduentry.ai — Internship Readiness Assessment',
     description:
       'Free AI-powered internship readiness assessment for high school students. Get placed in Tech, Business, Data Analytics, or Digital Marketing.',
+    images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — Internship Readiness Assessment' }],
   },
   twitter: {
     card: 'summary_large_image',
