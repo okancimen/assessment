@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     siteName: 'Eduentry.ai',
     locale: 'en_GB',
     alternateLocale: ['tr_TR', 'es_ES'],
+    images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai Blog' }],
   },
   twitter: {
     card: 'summary_large_image',

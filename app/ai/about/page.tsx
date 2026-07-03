@@ -23,6 +23,13 @@ export const metadata: Metadata = {
     description: 'Free adaptive internship assessment for UK students aged 14–18. We measure what matters — then match students to real opportunities.',
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
+    locale: 'en_GB',
+    images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — About' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Eduentry.ai',
+    description: 'Free adaptive internship assessment for UK students aged 14–18. We measure what matters — then match students to real opportunities.',
   },
 }
 

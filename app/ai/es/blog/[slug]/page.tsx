@@ -85,6 +85,8 @@ export default async function ESBlogPostPage({ params }: { params: Promise<{ slu
     description: post.description,
     keywords: post.tags.join(', '),
     datePublished: post.date,
+    dateModified: post.dateModified ?? post.date,
+    image: { '@type': 'ImageObject', url: `${url}/opengraph-image`, width: 1200, height: 630 },
     url,
     inLanguage: 'es',
     author: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
