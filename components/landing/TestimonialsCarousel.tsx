@@ -87,7 +87,7 @@ export default function TestimonialsCarousel() {
                 <p className="text-sm text-[#1d1d1f] leading-relaxed flex-1">{t.quote}</p>
                 <div>
                   <p className="text-sm font-semibold text-[#1d1d1f]">{t.name}</p>
-                  <p className="text-xs text-[#6e6e73]">{t.role}</p>
+                  <p className="text-xs text-[#636366]">{t.role}</p>
                   <span className="inline-block mt-2 text-[10px] font-semibold text-[#4F46E5] bg-[#eef2ff] px-2 py-0.5 rounded-full">
                     {t.product}
                   </span>
