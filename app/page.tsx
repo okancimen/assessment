@@ -189,7 +189,7 @@ export default function LandingPage() {
                 Benchmarked against UK, US, PISA and IB standards — standardised scores and percentile
                 rankings across English, Maths, Verbal and Non-Verbal Reasoning.
               </p>
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73] mb-8">
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
                 <span>60 adaptive questions</span>
                 <span>·</span>
                 <span>4 subjects</span>
@@ -205,7 +205,7 @@ export default function LandingPage() {
               >
                 Start free assessment
               </CtaLink>
-              <Link href="#academic" aria-label="Learn more about Academic Assessment" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-2">
+              <Link href="#academic" aria-label="Learn more about Academic Assessment" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
                 Learn more ↓
               </Link>
             </div>
@@ -223,11 +223,11 @@ export default function LandingPage() {
               <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4 leading-snug tracking-tight">
                 Is your student ready for the workplace?
               </h2>
-              <p className="text-[#6e6e73] text-sm leading-relaxed mb-8 flex-1">
+              <p className="text-[#636366] text-sm leading-relaxed mb-8 flex-1">
                 A 34-question adaptive assessment across aptitude, domain knowledge, workplace skills,
                 and interest profile. Personalised readiness report and AI career insights.
               </p>
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73] mb-8">
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#636366] mb-8">
                 <span>34 adaptive questions</span>
                 <span>·</span>
                 <span>4 career tracks</span>
@@ -242,7 +242,7 @@ export default function LandingPage() {
               >
                 Learn about the programme
               </a>
-              <Link href="#internship" aria-label="Learn more about Internship Assessment" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-2">
+              <Link href="#internship" aria-label="Learn more about Internship Assessment" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
                 Learn more ↓
               </Link>
             </div>
@@ -253,7 +253,7 @@ export default function LandingPage() {
 
       {/* ── Trust line ────────────────────────────────────────────────────── */}
       <section className="border-b border-[#d2d2d7] bg-[#f5f5f7] py-3">
-        <p className="text-center text-[11px] text-[#6e6e73] tracking-wide">
+        <p className="text-center text-[11px] text-[#636366] tracking-wide">
           Built on the same science as PISA, GCSE &amp; SAT &nbsp;·&nbsp; GDPR-compliant &nbsp;·&nbsp; Free
         </p>
       </section>
@@ -272,11 +272,11 @@ export default function LandingPage() {
 
             {/* Text */}
             <div className="flex-1">
-              <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-widest mb-4">Academic Assessment · Ages 6–17</p>
+              <p className="text-xs font-semibold text-[#636366] uppercase tracking-widest mb-4">Academic Assessment · Ages 6–17</p>
               <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
                 See where your child<br />stands internationally.
               </h2>
-              <p className="text-[#6e6e73] text-lg leading-relaxed mb-8 max-w-lg">
+              <p className="text-[#636366] text-lg leading-relaxed mb-8 max-w-lg">
                 A free adaptive benchmark measuring English, Maths, Verbal and Non-Verbal Reasoning
                 against UK, US, PISA and IB standards. Results include a standardised score,
                 percentile ranking, and AI-generated recommendations.
@@ -328,7 +328,7 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <div className="mt-5 pt-4 border-t border-[#424245] flex items-center gap-2">
-                  <span className="text-[10px] text-[#6e6e73]">Powered by</span>
+                  <span className="text-[10px] text-[#a1a1a7]">Powered by</span>
                   <span className="text-[10px] font-semibold text-[#a1a1a7]">Claude AI · Anthropic</span>
                 </div>
               </div>
@@ -350,7 +350,7 @@ export default function LandingPage() {
             <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Four subjects. One global picture.
             </h2>
-            <p className="text-[#6e6e73] max-w-xl mx-auto text-lg">
+            <p className="text-[#636366] max-w-xl mx-auto text-lg">
               The four domains tested by PISA, TIMSS, and the UK and US national curricula —
               each adapting in difficulty to pinpoint your child&apos;s exact level.
             </p>
@@ -374,7 +374,7 @@ export default function LandingPage() {
                     </svg>
                   </div>
                   <h3 className="font-bold text-[#1d1d1f] mb-2">{SUBJECT_LABELS[subject]}</h3>
-                  <p className="text-sm text-[#6e6e73] leading-relaxed">{SUBJECT_DESCRIPTIONS[subject]}</p>
+                  <p className="text-sm text-[#636366] leading-relaxed">{SUBJECT_DESCRIPTIONS[subject]}</p>
                   <span className="text-xs font-semibold mt-4 block" style={{ color: c.accent }}>Learn more →</span>
                 </Link>
               )
@@ -385,7 +385,7 @@ export default function LandingPage() {
             <div className="flex-1">
               <p className="text-xs font-semibold text-[#7C3AED] uppercase tracking-widest mb-2">11+ &amp; Grammar School Preparation</p>
               <h3 className="font-bold text-[#1d1d1f] text-lg mb-1">Preparing for the 11+?</h3>
-              <p className="text-sm text-[#6e6e73] leading-relaxed max-w-lg">
+              <p className="text-sm text-[#636366] leading-relaxed max-w-lg">
                 The four subjects directly mirror the 11+ exam structure used by grammar schools in England.
                 Eduentry gives you a real benchmark — standardised scores, not just right and wrong.
               </p>
@@ -406,12 +406,12 @@ export default function LandingPage() {
       <section id="methodology" className="bg-[#f5f5f7] py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-xs font-medium text-[#6e6e73] uppercase tracking-[0.15em] mb-5">The science behind the score</p>
+            <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">The science behind the score</p>
             <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Built on the same science as
               <br />international assessments.
             </h2>
-            <p className="text-[#6e6e73] max-w-2xl mx-auto text-lg">
+            <p className="text-[#636366] max-w-2xl mx-auto text-lg">
               Eduentry uses the same psychometric models that power PISA, GCSE and SAT —
               so your child&apos;s results are directly comparable to international standards.
             </p>
@@ -444,7 +444,7 @@ export default function LandingPage() {
                   </svg>
                 </div>
                 <h3 className="font-bold text-[#1d1d1f] mb-3">{title}</h3>
-                <p className="text-sm text-[#6e6e73] leading-relaxed mb-5">{desc}</p>
+                <p className="text-sm text-[#636366] leading-relaxed mb-5">{desc}</p>
                 <span className="inline-block text-[11px] font-semibold px-3 py-1 rounded-full" style={{ color, background: color + '18' }}>
                   {tag}
                 </span>
@@ -465,11 +465,11 @@ export default function LandingPage() {
               ].map(({ range, label, color, bg }) => (
                 <div key={range} className="rounded-2xl p-3 text-center" style={{ background: bg }}>
                   <div className="text-sm font-bold" style={{ color }}>{range}</div>
-                  <div className="text-xs text-[#6e6e73] mt-0.5">{label}</div>
+                  <div className="text-xs text-[#636366] mt-0.5">{label}</div>
                 </div>
               ))}
             </div>
-            <p className="text-[11px] text-[#6e6e73] text-center mt-4">
+            <p className="text-[11px] text-[#636366] text-center mt-4">
               68% of children score between 85–115 (within 1 standard deviation of the mean)
             </p>
           </div>
@@ -480,7 +480,7 @@ export default function LandingPage() {
       <section id="how-it-works" className="py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-xs font-medium text-[#6e6e73] uppercase tracking-[0.15em] mb-5">Academic Assessment · Simple to start</p>
+            <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">Academic Assessment · Simple to start</p>
             <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               From signup to results
               <br />in under two hours.
@@ -507,7 +507,7 @@ export default function LandingPage() {
               <div key={step} className="bg-[#f5f5f7] rounded-3xl p-8">
                 <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
-                <p className="text-[#6e6e73] text-sm leading-relaxed">{desc}</p>
+                <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -535,7 +535,7 @@ export default function LandingPage() {
             <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
               Find your internship readiness.
             </h2>
-            <p className="text-[#6e6e73] text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
               A 34-question adaptive assessment for high school students aged 14+. Discover your aptitude,
               domain strengths, workplace skills, and ideal career track — with a personalised AI report.
             </p>
@@ -563,7 +563,7 @@ export default function LandingPage() {
               <div key={step} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
                 <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
-                <p className="text-[#6e6e73] text-sm leading-relaxed">{desc}</p>
+                <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -643,7 +643,7 @@ export default function LandingPage() {
                   'Personalised strengths and growth areas',
                   'Report you can reference in university applications',
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-[#6e6e73]">
+                  <li key={item} className="flex items-start gap-3 text-sm text-[#636366]">
                     <svg className="w-4 h-4 text-[#4F46E5] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
@@ -684,17 +684,17 @@ export default function LandingPage() {
               <details key={q} className="group bg-white border border-[#d2d2d7] rounded-2xl overflow-hidden">
                 <summary className="flex items-center justify-between px-6 py-4 cursor-pointer font-medium text-[#1d1d1f] text-sm select-none list-none">
                   {q}
-                  <svg className="w-4 h-4 text-[#6e6e73] flex-shrink-0 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4 text-[#636366] flex-shrink-0 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-5 text-sm text-[#6e6e73] leading-relaxed border-t border-[#f5f5f7] pt-4">
+                <div className="px-6 pb-5 text-sm text-[#636366] leading-relaxed border-t border-[#f5f5f7] pt-4">
                   {a}
                 </div>
               </details>
             ))}
           </div>
-          <p className="text-center text-xs text-[#6e6e73] mt-8">
+          <p className="text-center text-xs text-[#636366] mt-8">
             Want to understand the scoring methodology?{' '}
             <Link href="/methodology" className="text-[#4F46E5] hover:underline font-medium">
               Read how Eduentry works →
@@ -725,7 +725,7 @@ export default function LandingPage() {
                 <h3 className="font-semibold text-[#1d1d1f] text-sm leading-snug mb-3 group-hover:text-[#4F46E5] transition-colors flex-1">
                   {post.shortTitle}
                 </h3>
-                <div className="text-xs text-[#6e6e73]">{post.readTime}</div>
+                <div className="text-xs text-[#636366]">{post.readTime}</div>
               </Link>
             ))}
           </div>
@@ -750,7 +750,7 @@ export default function LandingPage() {
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Internship Assessment</p>
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Find your student&apos;s internship readiness.</h2>
-            <p className="text-[#6e6e73] text-sm mb-8">Personalised report and AI insights in 35 minutes.</p>
+            <p className="text-[#636366] text-sm mb-8">Personalised report and AI insights in 35 minutes.</p>
             <a
               href="https://eduentry.ai"
               className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors"
