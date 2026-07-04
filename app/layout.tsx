@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import Script from "next/script";
-import { headers } from "next/headers";
+import ConditionalAnalytics from "@/components/ConditionalAnalytics";
 import "./globals.css";
 
 const geist = Geist({
@@ -67,36 +66,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const headersList = await headers()
-  const host = headersList.get('host') ?? ''
-  const isAI = host === 'eduentry.ai' || host === 'www.eduentry.ai'
-
   return (
     <html lang="en-GB" className={`${geist.variable} h-full antialiased`}>
       <head>
         <meta name="theme-color" content="#1d1d1f" />
         <meta name="yandex-verification" content="f8b17ecde6325153" />
-        {!isAI && <link rel="preconnect" href="https://xronkbdtsnjibwhuelni.supabase.co" />}
-        {!isAI && <link rel="dns-prefetch" href="https://www.googletagmanager.com" />}
-        {!isAI && (
-          <>
-            <Script src="https://www.googletagmanager.com/gtag/js?id=G-F60J3BHJDE" strategy="afterInteractive" />
-            <Script id="google-analytics" strategy="afterInteractive">{`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-F60J3BHJDE');
-            `}</Script>
-          </>
-        )}
+        <link rel="preconnect" href="https://xronkbdtsnjibwhuelni.supabase.co" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>
       <body className="min-h-full flex flex-col bg-white font-[family-name:var(--font-geist-sans)]">
         {children}
+        <ConditionalAnalytics />
       </body>
     </html>
   );
