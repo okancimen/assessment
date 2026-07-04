@@ -1,5 +1,10 @@
-import { redirect } from 'next/navigation'
+import type { Metadata } from 'next'
 
-export default function EnPage() {
-  redirect('/')
+const BASE_URL = 'https://eduentry.ai'
+
+export const metadata: Metadata = {
+  alternates: { canonical: BASE_URL },
+  robots: { index: false, follow: false },
 }
+
+export { default } from '../page'
