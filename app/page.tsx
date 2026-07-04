@@ -86,6 +86,52 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const ACADEMIC_PROGRAM_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Adaptive Academic Assessment — Ages 6–17',
+  description: 'Free adaptive benchmark measuring English, Maths, Verbal and Non-Verbal Reasoning against UK, US, PISA and IB standards. Standardised scores, percentile rankings, and AI-generated recommendations.',
+  url: 'https://eduentry.com',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: {
+    '@type': 'EducationalOccupationalCredential',
+    name: 'Academic Assessment Report',
+    credentialCategory: 'certificate',
+  },
+  timeToComplete: 'PT90M',
+  educationalProgramMode: 'online',
+  inLanguage: 'en-GB',
+  typicalAgeRange: '6-17',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'No prerequisites required',
+  hasCourse: [
+    { '@type': 'Course', name: 'English', description: 'Reading comprehension, grammar, vocabulary — 15 adaptive questions' },
+    { '@type': 'Course', name: 'Mathematics', description: 'Arithmetic, algebra, geometry, problem-solving — 15 adaptive questions' },
+    { '@type': 'Course', name: 'Verbal Reasoning', description: 'Analogies, classifications, sequences — 15 adaptive questions' },
+    { '@type': 'Course', name: 'Non-Verbal Reasoning', description: 'Patterns, spatial reasoning, matrices — 15 adaptive questions' },
+  ],
+}
+
+const INTERNSHIP_PROGRAM_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Internship Readiness Assessment',
+  description: 'A 34-question adaptive assessment for high school students aged 14+ evaluating general aptitude, domain knowledge, workplace skills, and career interest profile across Technology, Business, Data Analytics, and Digital Marketing tracks.',
+  url: 'https://eduentry.ai',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: {
+    '@type': 'EducationalOccupationalCredential',
+    name: 'Internship Readiness Report',
+    credentialCategory: 'certificate',
+  },
+  timeToComplete: 'PT35M',
+  educationalProgramMode: 'online',
+  inLanguage: 'en-GB',
+  typicalAgeRange: '14-18',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'No prerequisites required',
+}
+
 const subjectColors: Record<string, { border: string; accent: string; bg: string }> = {
   english:            { border: '#c7d2fe', accent: '#4F46E5', bg: '#eef2ff' },
   mathematics:        { border: '#99f6e4', accent: '#0D9488', bg: '#f0fdfa' },
@@ -108,6 +154,8 @@ export default function LandingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA) }} />
 
       <PublicNav />
 
@@ -157,7 +205,7 @@ export default function LandingPage() {
               >
                 Start free assessment
               </CtaLink>
-              <Link href="#academic" aria-label="Learn more about Academic Assessment" className="text-center text-xs text-[#6e6e73] hover:text-[#a1a1a7] transition-colors mt-4 py-2">
+              <Link href="#academic" aria-label="Learn more about Academic Assessment" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-2">
                 Learn more ↓
               </Link>
             </div>
@@ -194,7 +242,7 @@ export default function LandingPage() {
               >
                 Learn about the programme
               </a>
-              <Link href="#internship" aria-label="Learn more about Internship Assessment" className="text-center text-xs text-[#4F46E5]/60 hover:text-[#4F46E5] transition-colors mt-4 py-2">
+              <Link href="#internship" aria-label="Learn more about Internship Assessment" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-2">
                 Learn more ↓
               </Link>
             </div>
