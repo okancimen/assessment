@@ -187,7 +187,7 @@ export default function AIHomePage() {
               Apply free →
             </Link>
           </div>
-          <p className="text-xs text-[#86868b] mt-6">Free for students · No card required · Results in 35 min</p>
+          <p className="text-xs text-[#6e6e73] mt-6">Free for students · No card required · Results in 35 min</p>
         </div>
       </section>
 
@@ -199,7 +199,7 @@ export default function AIHomePage() {
             Four paths.<br />One assessment.
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
-            {INTERNSHIP_TRACKS.map((track) => (
+            {INTERNSHIP_TRACKS.map((track, i) => (
               <Link
                 key={track}
                 href={TRACK_SLUGS[track]}
@@ -213,6 +213,7 @@ export default function AIHomePage() {
                       fill
                       className="object-contain"
                       sizes="96px"
+                      priority={i < 2}
                     />
                   </div>
                 </div>

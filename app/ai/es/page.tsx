@@ -200,7 +200,7 @@ export default function SpanishHomePage() {
               Solicitar gratis →
             </Link>
           </div>
-          <p className="text-xs text-[#86868b] mt-6">Gratuita para estudiantes · Sin tarjeta · Resultados en 35 minutos</p>
+          <p className="text-xs text-[#6e6e73] mt-6">Gratuita para estudiantes · Sin tarjeta · Resultados en 35 minutos</p>
         </div>
       </section>
 
@@ -212,7 +212,7 @@ export default function SpanishHomePage() {
             Cuatro caminos.<br />Una evaluación.
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
-            {INTERNSHIP_TRACKS.map((track) => (
+            {INTERNSHIP_TRACKS.map((track, i) => (
               <Link
                 key={track}
                 href={TRACK_SLUGS[track]}
@@ -226,6 +226,7 @@ export default function SpanishHomePage() {
                       fill
                       className="object-contain"
                       sizes="96px"
+                      priority={i < 2}
                     />
                   </div>
                 </div>

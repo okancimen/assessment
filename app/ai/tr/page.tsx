@@ -200,7 +200,7 @@ export default function TurkishHomePage() {
               Ücretsiz başvur →
             </Link>
           </div>
-          <p className="text-xs text-[#86868b] mt-6">Öğrenciler için ücretsiz · Kart gerekmez · 35 dakikada sonuç</p>
+          <p className="text-xs text-[#6e6e73] mt-6">Öğrenciler için ücretsiz · Kart gerekmez · 35 dakikada sonuç</p>
         </div>
       </section>
 
@@ -212,7 +212,7 @@ export default function TurkishHomePage() {
             Dört yol.<br />Tek değerlendirme.
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
-            {INTERNSHIP_TRACKS.map((track) => (
+            {INTERNSHIP_TRACKS.map((track, i) => (
               <Link
                 key={track}
                 href={TRACK_SLUGS[track]}
@@ -226,6 +226,7 @@ export default function TurkishHomePage() {
                       fill
                       className="object-contain"
                       sizes="96px"
+                      priority={i < 2}
                     />
                   </div>
                 </div>

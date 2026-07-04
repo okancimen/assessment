@@ -218,7 +218,7 @@ export default function DigitalMarketingTrackPage() {
           ].map(({ stat, label }) => (
             <div key={stat}>
               <div className="text-4xl font-bold text-white mb-2">{stat}</div>
-              <div className="text-[#86868b] text-sm leading-snug">{label}</div>
+              <div className="text-[#a1a1a7] text-sm leading-snug">{label}</div>
             </div>
           ))}
         </div>
