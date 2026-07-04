@@ -102,7 +102,7 @@ const subjectSlugs: Record<string, string> = {
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white">
       {/* Structured data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
@@ -114,7 +114,7 @@ export default function LandingPage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] text-white">
         <div className="max-w-6xl mx-auto px-6 pt-28 pb-20 text-center">
-          <p className="text-xs font-medium text-[#86868b] uppercase tracking-[0.15em] mb-6">
+          <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] mb-6">
             Assessments for every stage of learning
           </p>
           <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
@@ -122,7 +122,7 @@ export default function LandingPage() {
             <br />
             <span className="text-[#4F46E5]">at the right stage.</span>
           </h1>
-          <p className="text-xl sm:text-2xl text-[#86868b] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
+          <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
             Free adaptive assessments built on the same science as PISA, GCSE and SAT.
           </p>
 
@@ -131,13 +131,13 @@ export default function LandingPage() {
 
             {/* Academic card */}
             <div className="bg-[#2d2d2f] rounded-[28px] border border-[#424245] p-10 flex flex-col">
-              <p className="text-[11px] text-[#86868b] font-medium uppercase tracking-[0.12em] mb-6">
+              <p className="text-[11px] text-[#a1a1a7] font-medium uppercase tracking-[0.12em] mb-6">
                 Academic Assessment
               </p>
               <h2 className="text-3xl font-bold text-white mb-4 leading-snug tracking-tight">
                 How does your child compare globally?
               </h2>
-              <p className="text-[#86868b] text-sm leading-relaxed mb-8 flex-1">
+              <p className="text-[#a1a1a7] text-sm leading-relaxed mb-8 flex-1">
                 Benchmarked against UK, US, PISA and IB standards — standardised scores and percentile
                 rankings across English, Maths, Verbal and Non-Verbal Reasoning.
               </p>
@@ -157,7 +157,7 @@ export default function LandingPage() {
               >
                 Start free assessment
               </CtaLink>
-              <Link href="#academic" className="text-center text-xs text-[#6e6e73] hover:text-[#86868b] transition-colors mt-4">
+              <Link href="#academic" aria-label="Learn more about Academic Assessment" className="text-center text-xs text-[#6e6e73] hover:text-[#a1a1a7] transition-colors mt-4 py-2">
                 Learn more ↓
               </Link>
             </div>
@@ -194,7 +194,7 @@ export default function LandingPage() {
               >
                 Learn about the programme
               </a>
-              <Link href="#internship" className="text-center text-xs text-[#4F46E5]/60 hover:text-[#4F46E5] transition-colors mt-4">
+              <Link href="#internship" aria-label="Learn more about Internship Assessment" className="text-center text-xs text-[#4F46E5]/60 hover:text-[#4F46E5] transition-colors mt-4 py-2">
                 Learn more ↓
               </Link>
             </div>
@@ -253,7 +253,7 @@ export default function LandingPage() {
               <div className="bg-[#1d1d1f] rounded-3xl border border-[#424245] p-6 w-full lg:w-[300px]">
                 <div className="flex items-center justify-between mb-5">
                   <div>
-                    <p className="text-[10px] text-[#86868b] font-semibold uppercase tracking-wider">Sample result</p>
+                    <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-wider">Sample result</p>
                     <p className="font-bold text-white mt-1">Emma · Age 11</p>
                   </div>
                   <div className="text-right">
@@ -269,7 +269,7 @@ export default function LandingPage() {
                     { label: 'Non-Verbal Reasoning', score:  91, color: '#DB2777', pct: 27 },
                   ].map((s) => (
                     <div key={s.label}>
-                      <div className="flex justify-between text-xs text-[#86868b] mb-1">
+                      <div className="flex justify-between text-xs text-[#a1a1a7] mb-1">
                         <span>{s.label}</span>
                         <span className="font-semibold text-white">{s.score}</span>
                       </div>
@@ -281,7 +281,7 @@ export default function LandingPage() {
                 </div>
                 <div className="mt-5 pt-4 border-t border-[#424245] flex items-center gap-2">
                   <span className="text-[10px] text-[#6e6e73]">Powered by</span>
-                  <span className="text-[10px] font-semibold text-[#86868b]">Claude AI · Anthropic</span>
+                  <span className="text-[10px] font-semibold text-[#a1a1a7]">Claude AI · Anthropic</span>
                 </div>
               </div>
 
@@ -553,12 +553,12 @@ export default function LandingPage() {
       {/* ── What you get ─────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] py-32">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-xs font-medium text-[#86868b] uppercase tracking-[0.15em] text-center mb-14">What you get</p>
+          <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] text-center mb-14">What you get</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             {/* Academic */}
             <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] p-8">
-              <p className="text-[10px] text-[#86868b] font-semibold uppercase tracking-wider mb-5">Academic Assessment</p>
+              <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-wider mb-5">Academic Assessment</p>
               <ul className="space-y-3">
                 {[
                   'Standardised score on an 85–130 scale',
@@ -568,7 +568,7 @@ export default function LandingPage() {
                   'AI-generated study recommendations',
                   'Printable full report',
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-[#86868b]">
+                  <li key={item} className="flex items-start gap-3 text-sm text-[#a1a1a7]">
                     <svg className="w-4 h-4 text-[#4F46E5] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
@@ -688,9 +688,9 @@ export default function LandingPage() {
       <section className="bg-[#1d1d1f] py-32 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
-            <p className="text-[10px] text-[#86868b] font-semibold uppercase tracking-widest mb-4">Academic Assessment</p>
+            <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">Academic Assessment</p>
             <h2 className="text-2xl font-bold text-white mb-3">Discover where your child stands — globally.</h2>
-            <p className="text-[#86868b] text-sm mb-8">Full international context in under 2 hours.</p>
+            <p className="text-[#a1a1a7] text-sm mb-8">Full international context in under 2 hours.</p>
             <CtaLink
               href="/auth/register"
               label="bottom_cta_academic"
@@ -714,6 +714,6 @@ export default function LandingPage() {
       </section>
 
       <PublicFooter />
-    </div>
+    </main>
   )
 }
