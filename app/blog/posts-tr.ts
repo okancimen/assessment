@@ -150,6 +150,40 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'en-iyi-okul-hayat-okuludur',
+    title: 'En İyi Okul, Hayat Okuludur: Erken Yaşta İş Deneyiminin Çocuk Gelişimine Katkısı',
+    shortTitle: 'En İyi Okul, Hayat Okuludur',
+    description:
+      'Warren Buffett\'tan Sakıp Sabancı\'ya, Almanya\'nın mesleki eğitim sisteminden Montessori pedagojisine — neden en kalıcı dersler sınıfın dışında, gerçek sorumlulukların içinde öğreniliyor? Erken yaşta iş deneyiminin çocuk gelişimine katkılarını araştırma ve gerçek örneklerle ele alıyoruz.',
+    date: '2026-07-08',
+    readTime: '15 dk okuma',
+    tags: ['Çocuk Gelişimi', 'İş Deneyimi', 'Eğitim', 'Kariyer Gelişimi', 'Girişimcilik'],
+    faqs: [
+      {
+        q: '"Hayat okulu" derken ne kastedilmektedir?',
+        a: 'Hayat okulu, resmi eğitime karşı bir duruş değil; okulun veremediği derslerin — belirsizlikle baş etmek, gerçek sorumluluklar üstlenmek, para ile emeği ilişkilendirmek — ancak doğrudan deneyimle öğrenilebildiği gerçeğinin kabulüdür. Çocuklar sınıfın dışında, gerçek sonuçları olan sorumluluklarla karşılaştıklarında çok boyutlu bir olgunluğa erişiyorlar.',
+      },
+      {
+        q: 'Erken yaşta iş deneyimi çocuk gelişimine nasıl katkı sağlar?',
+        a: 'Araştırmalar beş temel alana işaret ediyor: sonuç-sorumluluk ilişkisini içselleştirme, para ile emeği ilişkilendirme, reddedilme ve belirsizlikle başa çıkma becerisi, sosyal zeka ve iletişim becerileri, öz-yeterlilik. Minnesota Üniversitesi\'nden Jeylan Mortimer\'ın boylamsal çalışması, haftada 15–20 saati aşmayan ölçülü düzeyde çalışma deneyiminin öz-yeterlilik, zaman yönetimi ve iş etiğini güçlendirdiğini ortaya koyuyor.',
+      },
+      {
+        q: 'Bu düşünce çocuk işçiliğini savunmak mı demek?',
+        a: 'Kesinlikle hayır. Burada savunulan, çocukların temel eğitim hakkından mahrum bırakılması ya da ağır ve tehlikeli işlerde çalıştırılması değildir. Bahsedilen, ailenin, okulun ve toplumun gözetiminde, çocuğun yaşına uygun, güvenli, gönüllü ve öğretici sorumluluklarla erken tanışmasıdır. Warren Buffett\'ın gazete dağıtması ile madende çalıştırılan bir çocuğun durumu arasında hiçbir ortak nokta yoktur.',
+      },
+      {
+        q: 'Hangi yaştan itibaren iş deneyimine başlanabilir?',
+        a: 'Altı yaşındaki bir çocuğa evde küçük sorumluluklar (bitkileri sulamak, küçük bir "dükkan" oyunuyla para saymayı öğrenmek) verilebilir. On iki–on üç yaşındaki bir çocuk komşu çocuklarına bakıcılık yapabilir ya da aile işletmesinde basit bir görev üstlenebilir. On beş yaşından itibaren ise yasal çerçeveye uygun şekilde gerçek bir yarı zamanlı deneyim düşünülebilir. Önemli olan kademeliliktir.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun güçlü yönlerini keşfedin',
+      body: '6–17 yaş arası çocuklar için ücretsiz uyarlanabilir değerlendirme. Uluslararası kıyaslamalı standartlaştırılmış puan ve konu bazlı detaylı rapor.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/auth/register',
+    },
+  },
+  {
     slug: 'cocugunuz-dunyada-nerede-duruyor',
     contentSlug: 'how-does-your-child-compare-globally',
     title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor? Uluslararası Akademik Kıyaslama Rehberi',
