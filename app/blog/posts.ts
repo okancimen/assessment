@@ -1014,6 +1014,78 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'digital-marketing-work-experience-student-reviews',
+    title: 'Digital Marketing Work Experience: Student Reviews and What to Expect',
+    shortTitle: 'Digital Marketing Work Experience: Student Reviews',
+    description:
+      'What is digital marketing work experience actually like? Students share what they did, what surprised them, and what they wish they\'d known — plus how to find and secure a placement in the UK.',
+    date: '2026-07-09',
+    readTime: '9 min read',
+    tags: ['Internship', 'Career Development', 'Work Experience', 'Digital Marketing'],
+    faqs: [
+      {
+        q: 'What do you actually do on a digital marketing work experience placement?',
+        a: 'Day-to-day tasks typically include writing social media copy, analysing campaign performance in Google Analytics or Meta Ads Manager, researching competitors, assisting with email marketing, sitting in on client or strategy meetings, and producing content for blogs or social channels. The most valuable placements give you a specific project — a content calendar, a campaign report, a keyword research document — with a real deadline and real feedback. Students consistently report that having a tangible deliverable made the experience far more useful for their CV and personal statement.',
+      },
+      {
+        q: 'What do students say about digital marketing as a career after their placement?',
+        a: 'Most students discover aspects they hadn\'t expected — the volume of data analysis, the pace of creative iteration, the importance of writing clearly and quickly. Students who enjoy problem-solving and seeing fast results tend to find digital marketing more compelling than they anticipated. Those hoping for purely creative work sometimes find the analytical side more dominant than expected. Both outcomes are valuable: knowing what a career actually involves before committing to a degree is exactly what work experience is for.',
+      },
+      {
+        q: 'Is digital marketing work experience useful for university applications?',
+        a: 'Yes — particularly for business, marketing, communications, and data science degrees. A personal statement written by a student who has run a real social media campaign, interpreted a Google Analytics report, or managed a content calendar contains specific, evidenced observations rather than generic interest claims. Admissions readers deal with hundreds of applications from students who assert they are "passionate about marketing" — far fewer who can describe what a CPM or bounce rate actually tells you.',
+      },
+      {
+        q: 'How do I find digital marketing work experience as a student?',
+        a: 'Four main routes: direct applications to digital marketing agencies (most accept school-age students for one- or two-week placements, particularly in summer), in-house marketing departments at larger companies, virtual work experience programmes (Springpod and Forage both offer structured digital marketing programmes from real employers), and platforms like Bright Network or RateMyPlacement. Agencies tend to offer the broadest exposure — a week at a small agency can involve SEO, paid media, content, and analytics in one placement.',
+      },
+    ],
+    cta: {
+      heading: 'Ready for digital marketing work experience?',
+      body: 'Free 34-question adaptive assessment. Get your Digital Marketing readiness report and something concrete to reference in every application.',
+      label: 'Apply free — Digital Marketing track',
+      href: '/digital-marketing',
+    },
+  },
+  {
+    slug: 'business-work-experience-year-12',
+    title: 'Business Work Experience in Year 12: The Complete UK Guide by Age (12 to 18)',
+    shortTitle: 'Business Work Experience: Year 12 Guide (Ages 12–18)',
+    description:
+      'Everything UK students need to know about business work experience from age 12 to 18 — what\'s available in each year group, the major employer schemes, how to apply, and what makes an application stand out.',
+    date: '2026-07-09',
+    readTime: '10 min read',
+    tags: ['Internship', 'Career Development', 'Work Experience', 'Business', 'University Admissions'],
+    faqs: [
+      {
+        q: 'What is business work experience in Year 12?',
+        a: 'Year 12 business work experience (age 16–17) typically involves a one- or two-week placement in a company, or a structured programme run by a large employer across several weeks in summer. Tasks range from shadowing across departments and completing an analytical project to attending team meetings and presenting findings. Many FTSE 100 companies run dedicated "Spring Insight" days and summer schemes specifically for Year 12 students, with application windows typically opening in September–November.',
+      },
+      {
+        q: 'What year group should I start looking for business work experience?',
+        a: 'The earlier the better. Year 10 (age 14–15) is the standard first entry point for formal schemes. Students who start in Year 12 (age 16–17) still have significant value to gain — particularly from large employer programmes designed specifically for that year group. The key difference is compounding: a Year 10 student who completes a placement and builds on it arrives at Year 12 applications with a developed professional story. A Year 12 student completing their first placement can still use it effectively in UCAS if they complete it in the autumn or spring term.',
+      },
+      {
+        q: 'What large companies offer Year 12 business work experience?',
+        a: 'Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey (Insight programme), BCG, and most major UK banks and professional services firms run Spring Insight or Summer Insight schemes specifically for Year 12. Applications typically open September–November for the following year. These programmes are competitive — often 10–20 applications per place — so a clear professional interest, a well-prepared application, and an assessment score demonstrating commercial aptitude all improve shortlisting odds.',
+      },
+      {
+        q: 'Does business work experience help with UCAS applications?',
+        a: 'Significantly. For competitive business, economics, finance, and law courses at Russell Group universities, work experience is treated as near-essential context. A personal statement that includes specific professional observations — what you noticed about how a team makes decisions, what a P&L statement actually measures — is structurally more persuasive than one that describes theoretical interest. The difference is between asserting interest and demonstrating it.',
+      },
+      {
+        q: 'What should I do during business work experience to get the most from it?',
+        a: 'Three things matter most: arrive with questions (specific questions for each person you shadow show curiosity; people remember interns who prepared), ask for a deliverable on day one — a report, a piece of analysis, anything with a deadline — and document what you learned each day rather than retrospectively. The most common student regret is not writing down observations in real time — the detail that makes a personal statement memorable fades quickly.',
+      },
+    ],
+    cta: {
+      heading: 'Strengthen your business work experience applications',
+      body: 'Free 34-question adaptive assessment for students aged 14+. Get a personalised business readiness report — and something credible to put in every application.',
+      label: 'Apply free — Business track',
+      href: '/business',
+    },
+  },
+  {
     slug: 'how-does-your-child-compare-globally',
     title: 'How Does Your Child Compare Globally? A Parent\'s Guide to International Academic Benchmarks',
     shortTitle: 'How Does Your Child Compare Globally?',
