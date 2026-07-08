@@ -20,7 +20,34 @@ export const SUBJECTS = {
       { range: 'Ages 11–14 (KS3)', focus: 'Literary analysis, formal writing, advanced grammar' },
       { range: 'Ages 14–17 (KS4)', focus: 'Critical analysis, rhetoric, GCSE-level language skills' },
     ],
-    longTailKeywords: 'free English test for children UK, English comprehension test for kids, KS2 English assessment free',
+    sampleQuestions: [
+      {
+        type: 'Reading comprehension',
+        question: 'The ancient temple was shrouded in mystery, its stones worn smooth by centuries of rain. What does "shrouded" most likely mean in this sentence?',
+        options: ['A) lit up brightly', 'B) surrounded or hidden', 'C) recently constructed', 'D) carefully decorated'],
+        answer: 'B — "Shrouded" means surrounded or hidden, as in covered by mist or secrecy.',
+      },
+      {
+        type: 'Grammar',
+        question: 'Choose the correctly punctuated sentence.',
+        options: ["A) The children, who were tired went home early.", "B) The children, who were tired, went home early.", "C) The children who, were tired went home early.", "D) The children who were tired, went home early."],
+        answer: "B — The non-restrictive clause 'who were tired' must be enclosed in commas on both sides.",
+      },
+      {
+        type: 'Vocabulary',
+        question: 'Which word is closest in meaning to "benevolent"?',
+        options: ['A) hostile', 'B) cautious', 'C) kind', 'D) energetic'],
+        answer: 'C — Benevolent means well-meaning and kind.',
+      },
+    ],
+    prepTips: [
+      'Read a mix of genres daily — fiction, news, and non-fiction. PISA research shows reading for pleasure is the single strongest predictor of reading scores.',
+      'Learn the grammar terms: noun, verb, adjective, adverb, conjunction, clause. Most comprehension questions use them in their wording.',
+      'Build vocabulary systematically: one new word per day, used in a sentence. Apps like Anki work well for spaced repetition.',
+      'Practise spotting punctuation rules — apostrophes for possession vs. contraction are the most commonly tested.',
+      'Time yourself on reading passages: 2 minutes to read, 1 minute per question. Speed matters at KS3 and above.',
+    ],
+    longTailKeywords: ['free English test for children UK', 'English comprehension test for kids', 'KS2 English assessment free', 'reading comprehension test children', 'free grammar test primary school UK', '11+ English practice questions free'],
   },
   maths: {
     title: 'Free Maths Assessment for Children',
@@ -43,7 +70,34 @@ export const SUBJECTS = {
       { range: 'Ages 11–14 (KS3)', focus: 'Algebra, ratio, geometry, statistics, negative numbers' },
       { range: 'Ages 14–17 (KS4)', focus: 'Quadratics, trigonometry, probability, GCSE-level problem solving' },
     ],
-    longTailKeywords: 'free maths test for children UK, KS2 maths assessment, free numeracy test for kids',
+    sampleQuestions: [
+      {
+        type: 'Fractions',
+        question: 'What is ¾ of 160?',
+        options: ['A) 80', 'B) 100', 'C) 120', 'D) 140'],
+        answer: 'C — ¾ × 160 = 120. Divide by 4 first (= 40), then multiply by 3.',
+      },
+      {
+        type: 'Algebra',
+        question: 'Solve for x: 3x + 7 = 22',
+        options: ['A) x = 3', 'B) x = 5', 'C) x = 7', 'D) x = 9'],
+        answer: 'B — Subtract 7 from both sides: 3x = 15. Divide by 3: x = 5.',
+      },
+      {
+        type: 'Geometry',
+        question: 'A rectangle has a length of 9 cm and a perimeter of 26 cm. What is its width?',
+        options: ['A) 3 cm', 'B) 4 cm', 'C) 5 cm', 'D) 8 cm'],
+        answer: 'B — Perimeter = 2(length + width). 26 = 2(9 + w), so 13 = 9 + w, giving w = 4 cm.',
+      },
+    ],
+    prepTips: [
+      'Secure the times tables up to 12×12 first — almost every maths topic from fractions to algebra runs faster with instant recall.',
+      'Show all working, even on practice papers. Marks are often given for method, and errors are much easier to trace and correct.',
+      'Target the specific topics where marks are lost most frequently at KS2: fractions, percentages, and word problems.',
+      'Use past KS2 SAT papers (freely available on gov.uk) to practise under timed conditions — 45 minutes per paper.',
+      'For 11+ preparation: the GL Assessment maths paper emphasises problem-solving and multi-step reasoning, not just calculation.',
+    ],
+    longTailKeywords: ['free maths test for children UK', 'KS2 maths assessment', 'free numeracy test for kids', 'primary school maths test online free', 'free 11+ maths practice questions', 'maths test for 10 year olds UK free'],
   },
   'verbal-reasoning': {
     title: 'Free Verbal Reasoning Test for Children',
@@ -66,7 +120,34 @@ export const SUBJECTS = {
       { range: 'Ages 11–12', focus: 'Full 11+ verbal reasoning — analogies, codes, logic' },
       { range: 'Ages 13–16', focus: 'Advanced logic, abstract verbal reasoning, CAT4 level' },
     ],
-    longTailKeywords: 'free verbal reasoning test 11+ UK, verbal reasoning practice test children, free 11+ verbal reasoning',
+    sampleQuestions: [
+      {
+        type: 'Word analogy',
+        question: 'Hot is to Cold as Fast is to ___.',
+        options: ['A) Speed', 'B) Slow', 'C) Run', 'D) Quick'],
+        answer: 'B — The relationship is antonym (opposite). The opposite of Fast is Slow.',
+      },
+      {
+        type: 'Classification (odd one out)',
+        question: 'Which word does not belong? Apple · Banana · Carrot · Mango · Grape',
+        options: ['A) Apple', 'B) Banana', 'C) Carrot', 'D) Mango'],
+        answer: 'C — Carrot is a vegetable. All others are fruits.',
+      },
+      {
+        type: 'Letter code',
+        question: 'If CAT = DBU, what does DOG equal using the same code?',
+        options: ['A) EPH', 'B) CNF', 'C) EPH', 'D) FQI'],
+        answer: 'A — Each letter shifts one forward in the alphabet: D→E, O→P, G→H = EPH.',
+      },
+    ],
+    prepTips: [
+      'Practise one question type at a time before mixing them. There are 21 standard verbal reasoning question types — mastering each individually is faster than jumping between them.',
+      'Wide reading builds the vocabulary that underpins analogy, classification, and odd-one-out questions. Aim for 20 minutes of reading per day.',
+      'Bond Verbal Reasoning Assessment Papers (ages 9–10+) are the closest match to GL Assessment 11+ format. Work through one paper per week, then review errors carefully.',
+      'For letter codes: write the alphabet with numbers 1–26 beneath it. Most code questions use simple shifts (A+1=B, A+2=C, etc.).',
+      'Timed practice matters: the GL Assessment gives approximately 50 seconds per verbal reasoning question. Practise answering quickly and moving on when stuck.',
+    ],
+    longTailKeywords: ['free verbal reasoning test 11+ UK', 'verbal reasoning practice test children', 'free 11+ verbal reasoning', 'GL assessment verbal reasoning practice', 'verbal reasoning sample questions KS2', 'how to prepare for 11+ verbal reasoning'],
   },
   'non-verbal-reasoning': {
     title: 'Free Non-Verbal Reasoning Test for Children',
@@ -89,7 +170,34 @@ export const SUBJECTS = {
       { range: 'Ages 11–12', focus: 'Full 11+ non-verbal reasoning standard' },
       { range: 'Ages 13–16', focus: 'Advanced spatial reasoning and abstract matrices (CAT4 level)' },
     ],
-    longTailKeywords: 'free non-verbal reasoning test children, 11+ non-verbal reasoning practice, spatial reasoning test kids UK',
+    sampleQuestions: [
+      {
+        type: 'Figure series',
+        question: 'A sequence shows a square containing 1 dot, then 2 dots, then 3 dots. What comes next?',
+        options: ['A) A square with 4 dots', 'B) A circle with 3 dots', 'C) A square with 5 dots', 'D) An empty square'],
+        answer: 'A — The pattern adds one dot per step, and the shape (square) stays constant.',
+      },
+      {
+        type: 'Matrix reasoning',
+        question: 'A 3×3 grid shows large shapes in row 1, medium shapes in row 2, and small shapes in row 3. Columns show circle, triangle, square. The bottom-right cell is missing. What goes there?',
+        options: ['A) A large square', 'B) A small triangle', 'C) A small square', 'D) A medium circle'],
+        answer: 'C — Row 3 = small shapes. Column 3 = squares. Therefore: small square.',
+      },
+      {
+        type: 'Spatial reasoning',
+        question: 'A flat cross-shaped net is folded into a cube. Which face will be opposite the top face?',
+        options: ['A) The face directly below it in the net', 'B) The face directly above it in the net', 'C) The face two positions below it', 'D) Any face — it is random'],
+        answer: 'C — On a standard cross net, the face opposite the top is found two positions below in the vertical column.',
+      },
+    ],
+    prepTips: [
+      'Non-verbal reasoning is highly practice-responsive — unlike verbal or maths, children often show rapid improvement after targeted practice because the question types are finite.',
+      'Bond Non-Verbal Reasoning Assessment Papers and CGP NVR books are the most widely used. Start with the 9–10 age bracket regardless of your child\'s actual age to build confidence.',
+      'Practise paper folding physically: take a piece of A4, fold it, and predict where holes will appear when unfolded. This builds the spatial intuition that matrix and rotation questions require.',
+      'For matrix questions: always check both the row pattern AND the column pattern. The correct answer must satisfy both simultaneously.',
+      'Timed practice is critical — aim for 45–50 seconds per question. Many children know the answer but run out of time because they are not accustomed to the pace.',
+    ],
+    longTailKeywords: ['free non-verbal reasoning test children', '11+ non-verbal reasoning practice', 'spatial reasoning test kids UK', 'matrix reasoning test free children', 'how to prepare for 11+ non-verbal reasoning', 'GL assessment non-verbal reasoning sample questions'],
   },
 } as const
 

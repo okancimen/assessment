@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: subject.title,
     description: subject.description,
     alternates: { canonical: `https://eduentry.com/subjects/${slug}`, languages: { 'en-GB': `https://eduentry.com/subjects/${slug}`, 'x-default': `https://eduentry.com/subjects/${slug}` } },
-    keywords: subject.longTailKeywords,
+    keywords: [...subject.longTailKeywords],
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
     openGraph: {
       title: subject.title,
@@ -193,6 +193,33 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
           </p>
         </section>
 
+        {/* Sample questions */}
+        {'sampleQuestions' in subject && subject.sampleQuestions.length > 0 && (
+          <section className="mb-14">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Sample questions</h2>
+            <p className="text-gray-500 mb-6 text-sm">Click any question to reveal the answer.</p>
+            <div className="space-y-3">
+              {subject.sampleQuestions.map((q, i) => (
+                <details key={i} className="border border-gray-100 rounded-xl overflow-hidden group">
+                  <summary className="flex items-start gap-4 p-5 cursor-pointer list-none select-none hover:bg-gray-50 transition-colors">
+                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-full flex-shrink-0 mt-0.5 ${subject.color}`}>{q.type}</span>
+                    <span className="text-sm font-medium text-gray-900 flex-1">{q.question}</span>
+                    <svg className="w-4 h-4 text-gray-400 flex-shrink-0 mt-0.5 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                  </summary>
+                  <div className="px-5 pb-5 pt-2 border-t border-gray-50">
+                    <ul className="space-y-1.5 mb-4">
+                      {q.options.map((opt) => (
+                        <li key={opt} className="text-sm text-gray-600">{opt}</li>
+                      ))}
+                    </ul>
+                    <p className="text-sm font-medium text-green-700 bg-green-50 rounded-lg px-4 py-2.5">{q.answer}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Score table */}
         <section className="mb-14">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">How scores work</h2>
@@ -289,6 +316,21 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
                 </div>
               ))}
             </div>
+          </section>
+        )}
+
+        {/* How to prepare */}
+        {'prepTips' in subject && subject.prepTips.length > 0 && (
+          <section className="mb-14">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">How to prepare</h2>
+            <ol className="space-y-4">
+              {subject.prepTips.map((tip, i) => (
+                <li key={i} className="flex gap-4">
+                  <span className={`w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold mt-0.5 ${subject.color}`}>{i + 1}</span>
+                  <p className="text-sm text-gray-700 leading-relaxed">{tip}</p>
+                </li>
+              ))}
+            </ol>
           </section>
         )}
 
