@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
     }
 
     const adminClient = createAdminClient()
-    const { data: existingUsers } = await adminClient.auth.admin.listUsers()
+    const { data: existingUsers } = await adminClient.auth.admin.listUsers({ page: 1, perPage: 1000 })
     const existingStudent = existingUsers?.users?.find((u) => u.email === student_email)
 
     if (existingStudent) {
