@@ -8,6 +8,7 @@ import { INTERNSHIP_TRACKS, INTERNSHIP_TRACK_LABELS, InternshipTrack, ReadinessT
 interface CandidateDetail {
   assessment_id: string
   child_name: string
+  student_email: string | null
   school_name: string
   year_group: string
   personal_statement: string | null
@@ -140,6 +141,11 @@ export default function AdminCandidateDetailPage() {
             <div>
               <h1 className="text-xl font-bold text-[#1d1d1f]">{data.child_name}</h1>
               <p className="text-sm text-[#6e6e73]">{data.school_name} · {data.year_group}</p>
+              {data.student_email && (
+                <a href={`mailto:${data.student_email}`} className="text-xs text-[#4F46E5] hover:underline mt-0.5 inline-block">
+                  {data.student_email}
+                </a>
+              )}
             </div>
             <span className={`px-3 py-1 rounded-full text-xs font-medium ${
               data.assessment_status === 'completed' ? 'bg-emerald-100 text-emerald-700' :

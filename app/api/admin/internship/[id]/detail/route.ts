@@ -19,7 +19,7 @@ export async function GET(
     const db = createAdminClient()
     const { data: internProfile } = await db
       .from('internship_profiles')
-      .select('*, assessments(id, status), children(name), cohorts(id, name)')
+      .select('*, assessments(id, status), children(name, student_email), cohorts(id, name)')
       .eq('assessment_id', id)
       .single()
 
@@ -37,7 +37,8 @@ export async function GET(
 
     return NextResponse.json({
       assessment_id: id,
-      child_name: (internProfile.children as { name: string } | null)?.name ?? '',
+      child_name: (internProfile.children as { name: string; student_email?: string } | null)?.name ?? '',
+      student_email: (internProfile.children as { student_email?: string } | null)?.student_email ?? null,
       school_name: internProfile.school_name,
       year_group: internProfile.year_group,
       personal_statement: internProfile.personal_statement ?? null,

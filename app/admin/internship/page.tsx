@@ -2,7 +2,9 @@ import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
+import { Suspense } from 'react'
 import Navbar from '@/components/dashboard/Navbar'
+import InternshipFilterBar from '@/components/admin/InternshipFilterBar'
 import { INTERNSHIP_TRACK_LABELS, InternshipTrack } from '@/types'
 
 export const dynamic = 'force-dynamic'
@@ -27,7 +29,15 @@ function StatusBadge({ status }: { status: string }) {
   )
 }
 
-export default async function AdminInternshipPage() {
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
+}
+
+export default async function AdminInternshipPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ status?: string; track?: string; cohort_id?: string }>
+}) {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/auth/login')
@@ -45,31 +55,86 @@ export default async function AdminInternshipPage() {
   const assessmentIds = (profiles ?? []).map((p) => (p.assessments as { id: string } | null)?.id).filter(Boolean) as string[]
 
   const { data: results } = assessmentIds.length > 0
-    ? await db.from('results').select('assessment_id, subject_scores, overall_score').in('assessment_id', assessmentIds)
+    ? await db.from('results').select('assessment_id, subject_scores').in('assessment_id', assessmentIds)
     : { data: [] }
 
-  const resultsMap: Record<string, { subject_scores: Record<string, number>; overall_score: number }> = {}
+  const resultsMap: Record<string, Record<string, number>> = {}
   for (const r of results ?? []) {
-    resultsMap[r.assessment_id] = r
+    resultsMap[r.assessment_id] = r.subject_scores as Record<string, number>
   }
+
+  const { data: allCohorts } = await db.from('cohorts').select('id, name').order('start_date', { ascending: false })
+
+  // Stats (over all candidates, before filtering)
+  const all = profiles ?? []
+  const stats = {
+    total: all.length,
+    completed: all.filter((p) => (p.assessments as { status: string } | null)?.status === 'completed').length,
+    in_progress: all.filter((p) => (p.assessments as { status: string } | null)?.status === 'in_progress').length,
+    pending: all.filter((p) => {
+      const s = (p.assessments as { status: string } | null)?.status
+      return !s || s === 'pending'
+    }).length,
+  }
+
+  // Apply filters
+  const { status: filterStatus, track: filterTrack, cohort_id: filterCohort } = await searchParams
+
+  const filtered = all.filter((p) => {
+    const status = (p.assessments as { status: string } | null)?.status ?? 'pending'
+    const effectiveTrack = (p.admin_assigned_track ?? p.track_preferences?.[0]) as string | undefined
+    const cohortId = p.cohort_id as string | null
+
+    if (filterStatus && status !== filterStatus) return false
+    if (filterTrack && effectiveTrack !== filterTrack) return false
+    if (filterCohort === 'none' && cohortId != null) return false
+    if (filterCohort && filterCohort !== 'none' && cohortId !== filterCohort) return false
+    return true
+  })
+
+  const hasFilters = filterStatus || filterTrack || filterCohort
 
   return (
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
       <Navbar />
       <main className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 py-10 space-y-6">
+        {/* Header */}
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold text-[#1d1d1f] tracking-tight">Internship Candidates</h1>
-            <p className="text-sm text-[#6e6e73] mt-1">{(profiles ?? []).length} total applicant{(profiles ?? []).length !== 1 ? 's' : ''}</p>
+            <p className="text-sm text-[#6e6e73] mt-1">{stats.total} total applicant{stats.total !== 1 ? 's' : ''}</p>
           </div>
           <Link href="/admin/cohorts" className="text-sm text-[#4F46E5] font-semibold hover:underline">
             Manage cohorts →
           </Link>
         </div>
 
+        {/* Stats */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {[
+            { label: 'Total', value: stats.total, color: 'text-[#1d1d1f]' },
+            { label: 'Completed', value: stats.completed, color: 'text-emerald-600' },
+            { label: 'In progress', value: stats.in_progress, color: 'text-amber-600' },
+            { label: 'Pending', value: stats.pending, color: 'text-[#6e6e73]' },
+          ].map(({ label, value, color }) => (
+            <div key={label} className="bg-white rounded-2xl border border-[#d2d2d7] px-5 py-4">
+              <p className="text-xs text-[#6e6e73] font-medium">{label}</p>
+              <p className={`text-2xl font-bold mt-1 ${color}`}>{value}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Filters */}
+        <Suspense>
+          <InternshipFilterBar cohorts={allCohorts ?? []} />
+        </Suspense>
+
+        {/* Table */}
         <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
-          {!(profiles?.length) ? (
-            <div className="p-14 text-center text-[#6e6e73] text-sm">No applications yet.</div>
+          {filtered.length === 0 ? (
+            <div className="p-14 text-center text-[#6e6e73] text-sm">
+              {hasFilters ? 'No candidates match the selected filters.' : 'No applications yet.'}
+            </div>
           ) : (
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
@@ -79,18 +144,20 @@ export default async function AdminInternshipPage() {
                     <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden md:table-cell">School / Year</th>
                     <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">Track</th>
                     <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden lg:table-cell">Cohort</th>
+                    <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden xl:table-cell">Applied</th>
                     <th className="text-right px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">Score</th>
                     <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">Status</th>
                     <th className="text-right px-5 py-3"></th>
                   </tr>
                 </thead>
                 <tbody>
-                  {profiles.map((p) => {
+                  {filtered.map((p) => {
                     const aId = (p.assessments as { id: string } | null)?.id
+                    const createdAt = (p.assessments as { created_at: string } | null)?.created_at
                     const status = (p.assessments as { status: string } | null)?.status ?? 'pending'
                     const effectiveTrack = (p.admin_assigned_track ?? p.track_preferences?.[0]) as InternshipTrack | undefined
-                    const r = aId ? resultsMap[aId] : null
-                    const overall = (r?.subject_scores as Record<string, number> | undefined)?.overall
+                    const scores = aId ? resultsMap[aId] : null
+                    const overall = scores?.overall
                     return (
                       <tr key={p.id} className="border-b border-[#f5f5f7] last:border-0 hover:bg-[#f5f5f7] transition-colors">
                         <td className="px-5 py-3 font-medium text-[#1d1d1f]">{(p.children as { name: string } | null)?.name ?? '—'}</td>
@@ -103,6 +170,9 @@ export default async function AdminInternshipPage() {
                         </td>
                         <td className="px-5 py-3 text-[#6e6e73] hidden lg:table-cell">
                           {(p.cohorts as { name: string } | null)?.name ?? '—'}
+                        </td>
+                        <td className="px-5 py-3 text-[#6e6e73] text-xs hidden xl:table-cell">
+                          {createdAt ? formatDate(createdAt) : '—'}
                         </td>
                         <td className={`px-5 py-3 text-right font-bold ${tierColor(overall)}`}>
                           {overall != null ? overall : '—'}
