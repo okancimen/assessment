@@ -184,6 +184,44 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'siber-guvenlik-staji-nasil-bulunur',
+    title: 'Siber Güvenlik Stajı Nasıl Bulunur: Lise Öğrencileri için Kapsamlı Rehber',
+    shortTitle: 'Siber Güvenlik Stajı Nasıl Bulunur',
+    description:
+      'Kodlama bilmeden bile siber güvenlik stajı alınabilir mi? Hangi firmalar lise öğrencisi kabul ediyor, nasıl başvurulur, yerleştirmede neler beklenmeli? İngiliz öğrencilere yönelik eksiksiz rehber.',
+    date: '2026-07-09',
+    readTime: '11 dk okuma',
+    tags: ['Siber Güvenlik', 'Staj', 'Kariyer Gelişimi', 'Teknoloji', 'İş Deneyimi'],
+    faqs: [
+      {
+        q: 'Siber güvenlik stajı için kodlama bilmek şart mı?',
+        a: 'Hayır. Siber güvenlik, yazılım geliştirmenin çok ötesine geçen geniş bir alandır. SOC analizi, tehdit istihbaratı, uyumluluk denetimi, güvenlik farkındalığı eğitimi ve teknik yazarlık gibi roller programlama akıcılığından çok analitik düşünce, dikkat ve iletişim becerisi gerektiriyor. Temel ağ kavramları (IP, DNS, HTTP nasıl çalışır) ve siber tehditlerin genel mantığını bilmek, çoğu lise düzeyi staj başvurusu için yeterli bir başlangıç noktası.',
+      },
+      {
+        q: 'Lise öğrencisi olarak siber güvenlik stajı nasıl bulunur?',
+        a: 'Dört kanal işe yarıyor: GCHQ ve NCSC\'nin genç yeteneklere yönelik açık programları (yılda birkaç kez duyuruluyor), büyük danışmanlık firmalarının teknoloji şemaları (KPMG, Deloitte, PwC, BT Group), yerel KOBİ ve siber güvenlik start-up\'larına doğrudan başvuru — bu firmalar resmi programı olan büyük şirketlerden genellikle daha esnek, ve CyberFirst, Cyber Discovery gibi İngiltere hükümeti destekli programlar (bunlar hem ağ kurmak hem de staj kapısı açmak için çok değerli).',
+      },
+      {
+        q: 'Siber güvenlik stajında neler yapılır?',
+        a: 'Role göre değişir, ancak lise düzeyi yerleştirmelerde yaygın görevler şunlar: güvenlik ekibini gözlemleme ve toplantılara katılma, düşük riskli log ve alarm analizine yardım etme, kimlik avı simülasyonlarını veya güvenlik farkındalığı materyallerini hazırlama, yamaların, açıkların veya standart ihlallerin araştırılması ve raporlanması, CTF (Capture the Flag) etkinliklerine ekiple katılma. Gerçek saldırı sistemlerine erişim verilmez, ama gerçek analistlerin nasıl düşündüğünü yakından görürsünüz.',
+      },
+      {
+        q: 'Siber güvenlik stajı üniversite başvurusunu nasıl güçlendirir?',
+        a: 'Bilgisayar bilimi, siber güvenlik, yazılım mühendisliği ve veri bilimi programlarına başvuruda kişisel beyandaki en büyük ayrıştırıcılardan biri spesifik teknik deneyimdir. Güvenlik operasyon merkezinde geçirilen bir haftayı, gerçek bir tehdit istihbaratı raporunu veya katıldığınız bir CTF\'i anlatabilmek, soyut "siber güvenliğe ilgi duyuyorum" ifadelerinden kategorik olarak daha güçlü. Imperial, UCL ve Edinburgh gibi üniversitelerin bilgisayar bilimi bölümleri başvuru kılavuzlarında iş deneyimini açıkça öne çıkarıyor.',
+      },
+      {
+        q: 'Lise öğrencisine uygun siber güvenlik sertifikaları var mı?',
+        a: 'Evet. CompTIA Security+ teorik olarak herkes tarafından alınabilir ve sektörde tanınan bir temel giriş noktasıdır. Daha da erişilebilir seçenekler: Google Cybersecurity Certificate (Coursera\'da ücretsiz denetlenebilir), TryHackMe ve Hack The Box platformlarının ücretsiz öğrenme yolları, ve NCSC\'nin CyberFirst programı. Bu sertifikalar stajın yerini tutmaz, ama başvuru öncesi güvenilirlik inşa etmeye yardımcı olur ve staj görüşmelerinde konuşabileceğiniz somut bir şey sağlar.',
+      },
+    ],
+    cta: {
+      heading: 'Teknoloji alanında staja hazır mısın?',
+      body: 'Siber güvenlik dahil tüm teknoloji rollerini kapsayan ücretsiz uyarlanabilir değerlendirme. Kişiselleştirilmiş hazırlık raporu al ve her başvuruda somut bir şey sun.',
+      label: 'Ücretsiz başvur — Teknoloji alanı',
+      href: '/tech',
+    },
+  },
+  {
     slug: 'cocugunuz-dunyada-nerede-duruyor',
     contentSlug: 'how-does-your-child-compare-globally',
     title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor? Uluslararası Akademik Kıyaslama Rehberi',

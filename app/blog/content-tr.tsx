@@ -767,6 +767,126 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'siber-guvenlik-staji-nasil-bulunur': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Siber güvenlik, dünyanın en hızlı büyüyen kariyer alanlarından biri. İngiltere&apos;de siber güvenlik uzmanlarına olan talep her yıl yaklaşık %13 artıyor ve nitelikli eleman açığı 10.000&apos;in üzerinde. Bu tablo, doğru hazırlığı yapan lise öğrencileri için olağanüstü bir fırsat penceresi anlamına geliyor. Peki bu alana ilk adım nasıl atılır?
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu rehber, siber güvenlik stajını hedefleyen İngiliz lise öğrencilerine yöneliktir. Kodlama bilmeden başvurulabilir mi, hangi firmalar öğrenci kabul ediyor, yerleştirmede ne beklenmeli ve bu deneyim üniversite başvurusunu nasıl güçlendirir — tüm bunları ele alıyoruz.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Siber Güvenlik Neden Bu Kadar Geniş Bir Alan?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Birçok öğrenci &quot;siber güvenlik&quot; dendiğinde gece yarısı bilgisayar başında kod yazan bir hacker figürü hayal ediyor. Gerçek çok daha renkli ve çeşitli. Siber güvenlik, farklı beceri setleri gerektiren onlarca uzmanlık alanını kapsıyor:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>SOC Analizi (Güvenlik Operasyon Merkezi)</strong> — Ağ trafiğini ve uyarıları izleme, anormallikleri tespit etme. Analitik düşünce gerektiriyor, mutlaka kodlama değil.</Bullet>
+          <Bullet><strong>Tehdit İstihbaratı</strong> — Siber tehditleri araştırma, raporlama ve bağlam oluşturma. İyi araştırma ve yazma becerileri şart.</Bullet>
+          <Bullet><strong>Uyumluluk ve Risk</strong> — Şirketlerin GDPR, ISO 27001 gibi düzenlemelere uygunluğunu değerlendirme. Hukuk ve süreç analizi ağır basıyor.</Bullet>
+          <Bullet><strong>Güvenlik Farkındalığı Eğitimi</strong> — Çalışanlara kimlik avı, sosyal mühendislik konularında eğitim materyali hazırlama. İletişim odaklı.</Bullet>
+          <Bullet><strong>Penetrasyon Testi (Pentest)</strong> — Sistemlerdeki zayıflıkları etik saldırılarla test etme. Daha teknik, ama giriş seviyesi için ekiple çalışmak yeterli.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lise düzeyi bir stajda genellikle ilk dört alanın birleşimine maruz kalırsınız. Bu da alanı, sadece &quot;kodlamacılar&quot; için değil, meraklı, dikkatli ve analitik düşünebilen herkes için erişilebilir kılıyor.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Başvurmadan Önce: Gerçekten Ne Bilmeniz Gerekiyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Deneyim paradoksu siber güvenlikte de geçerli: staj almak için deneyim, deneyim kazanmak için staj gerekiyor. Ama bu çemberi kırmak mümkün. Çoğu lise düzeyi işveren üç şey arıyor:
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">İşverenler ne arıyor:</strong> (1) Siber güvenliğe gerçek merak — &quot;neden bu alan?&quot; sorusuna spesifik bir cevap verebilmek. (2) Temel dijital okuryazarlık — ağların, e-postanın ve internet güvenliğinin nasıl çalıştığına dair genel bir fikir. (3) Profesyonel iletişim — toplantılarda not alabilmek, e-posta yazabilmek, soruları açıkça ifade edebilmek.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Buna ek olarak, başvuru öncesi birkaç hafta yatırım yaparak öne çıkabilirsiniz:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>TryHackMe</strong> — Ücretsiz, tarayıcı tabanlı, başlangıç seviyesi siber güvenlik öğrenme platformu. &quot;Pre-Security&quot; yolunu tamamlamak 10–15 saat sürüyor ve başvuruda güvenilirlik inşa ediyor.</Bullet>
+          <Bullet><strong>Google Cybersecurity Certificate</strong> — Coursera üzerinden denetlenebilir (ücretsiz). Sektörün temellerini sistematik biçimde öğretiyor.</Bullet>
+          <Bullet><strong>CyberFirst</strong> — NCSC (İngiltere Ulusal Siber Güvenlik Merkezi) tarafından desteklenen, 13–17 yaş arası öğrencilere yönelik program. Hem bilgi hem de ağ sağlıyor.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Nerede Staj Bulunur: Dört Ana Kanal</h2>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-3 mt-6">1. NCSC ve Hükümet Programları</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NCSC&apos;nin <strong>CyberFirst</strong> programı, 14–17 yaş arası öğrencileri hedefliyor. Kurslar, burslar ve kariyer etkinliklerini kapsayan bu program, sektörle ilk bağlantıyı kurmak için en güvenilir yol. Ayrıca GCHQ ve ordu bağlantılı kurumlar zaman zaman genç yeteneklere açık gözlemleme programları duyuruyor — NCSC&apos;nin web sitesini ve sosyal medya hesaplarını takip etmek önemli.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-3 mt-6">2. Büyük Danışmanlık ve Teknoloji Firmaları</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          KPMG, Deloitte, PwC ve EY&apos;nin siber güvenlik bölümleri öğrencilere açık şemalar düzenliyor. BT Group, BAE Systems Applied Intelligence ve QinetiQ da lise öğrencisi kabul eden yapılandırılmış programlara sahip. Bu programlar genellikle Eylül–Kasım arasında bir sonraki yaz için duyuruluyor — erken takip şart.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-3 mt-6">3. Siber Güvenlik KOBİ ve Start-up&apos;ları</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İngiltere&apos;nin siber güvenlik ekosistemi Cheltenham, Londra, Bristol ve Manchester&apos;da yoğunlaşmış yüzlerce küçük-orta ölçekli firmadan oluşuyor. Bu firmalar büyük şirketler kadar rekabetçi değil ve genellikle doğrudan başvurulara daha açık. LinkedIn&apos;de &quot;cybersecurity&quot; + şehriniz araması ve kısa, özgün bir e-posta ile teklif sunmak — neden bu firmayı seçtiğinizi, ne öğrenmek istediğinizi açıklayan — şaşırtıcı biçimde işe yarıyor.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-3 mt-6">4. CTF Etkinlikleri ve Topluluklar</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Capture the Flag (CTF) yarışmaları, hem öğrenmek hem de sektörle tanışmak için güçlü bir araç. Cyber Discovery (NCSC destekli, 13–18 yaş), PicoCTF ve CyberChef gibi platformlar başlangıç için uygun. CTF&apos;lerde başarılı olmak staj başvurularında somut bir referans noktası sağlıyor ve sektördeki profesyonellerle ağ kurma fırsatı doğuruyor.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yerleştirmede Ne Beklenmeli?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lise düzeyi siber güvenlik yerleştirmelerinde karşılaşacağınız tipik görevler:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet>Güvenlik analistlerini gözlemleme ve soru sorma — en değerli öğrenme kaynağı bu.</Bullet>
+          <Bullet>Log ve uyarı analizine düşük riskli düzeyde katılım: &quot;bu trafikte anormal bir şey var mı?&quot; sorusunu yanıtlamaya çalışmak.</Bullet>
+          <Bullet>Kimlik avı e-postası örneklerini inceleme ve raporlama — dikkat gerektiren ama teknik bilgi şart olmayan bir görev.</Bullet>
+          <Bullet>Güvenlik farkındalığı eğitim materyali veya sunum hazırlama.</Bullet>
+          <Bullet>Bir güvenlik açığı veya yamanın araştırılıp belgelenmesi.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gerçek üretim sistemlerine veya hassas verilere erişim verilmez — bu beklenti yerleştirme öncesinde açıkça netleştirilmeli. Ama gerçek analistlerin nasıl düşündüğünü, hangi araçları kullandığını ve günlük operasyonların nasıl yürüdüğünü birinci elden gözlemlemek, herhangi bir kursun verebileceğinden çok daha değerli.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Yerleştirmeden en çok kazananlar:</strong> İlk günden belirli bir öğrenme hedefi belirleyen, her gözlemledikleri için soru hazırlayan ve öğrendiklerini not eden öğrenciler. Pasif gözlemci olarak geçen bir haftadan aktif meraklı olarak geçen üç gün çok daha değerli.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Üniversite Başvurusundaki Etkisi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bilgisayar bilimi, siber güvenlik, yazılım mühendisliği ve veri bilimi programlarına başvurularda kişisel beyan kritik. Bu alanlarda başvuran adayların büyük çoğunluğu benzer akademik profillere sahip; ayrıştırıcı faktör spesifik deneyim ve yansıma.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Güvenlik operasyon merkezinde bir hafta geçirmiş, SOC analistinin nasıl çalıştığını gözlemlemiş ve kimlik avı saldırısı tespitinde nasıl karar verildiğini anlatan bir öğrenci, yalnızca &quot;siber güvenliğe ilgi duyuyorum&quot; yazan bir öğrenciden kategorik olarak daha güçlü. Imperial, UCL, Edinburgh ve Manchester gibi üniversitelerin bilgisayar bilimi bölümleri başvuru kılavuzlarında iş deneyimini açıkça öncelikli faktör olarak belirtiyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ayrıca üçüncü taraf bir değerlendirme puanı, deneyim paradoksunu kısmen çözüyor: kapı açılmadan önce analitik düşüncenizi ve alan bilginizi kanıtlamak için güvenilir bir referans noktası sağlıyor.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Başvuru Zaman Çizelgesi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Büyük firmaların yaz programları için başvurular genellikle Eylül–Kasım arasında açılıyor. Bu, çoğu öğrencinin düşündüğünden altı ay daha erken. Zaman çizelgesi kabaca şöyle:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>Eylül–Ekim:</strong> TryHackMe veya Cyber Discovery&apos;ye başlayın, CyberFirst programını araştırın, büyük firmaların başvuru açılışlarını takip edin.</Bullet>
+          <Bullet><strong>Ekim–Kasım:</strong> Büyük firma programlarına başvurun. Aynı dönemde yerel KOBİ&apos;lere de özgün e-postalar gönderin.</Bullet>
+          <Bullet><strong>Kasım–Şubat:</strong> Mülakat süreçleri ve değerlendirme merkezleri.</Bullet>
+          <Bullet><strong>Nisan–Temmuz:</strong> Yaz yerleştirmeleri. Okul tatillerinde kısa gözlemleme programları için daha esnek tarihler mümkün.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Doğrudan KOBİ başvuruları için sabit bir sezon yok — yıl boyunca deneyebilirsiniz, ama Ocak–Şubat ve Mayıs–Haziran en verimli dönemler.
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
