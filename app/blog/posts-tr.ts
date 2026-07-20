@@ -222,6 +222,82 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'a-level-programlari-nedir',
+    title: 'A Level Programları Nedir? İngiltere\'de Lise Son Sınıf Rehberi',
+    shortTitle: 'A Level Programları Nedir?',
+    description:
+      'A Level programları nedir, nasıl çalışır, hangi dersler seçilmeli? İngiltere\'de lise son sınıf sistemini üniversite başvuruları ve kariyer hedefleri açısından Türk aileler için kapsamlı biçimde açıklıyoruz.',
+    date: '2026-07-20',
+    readTime: '10 dk okuma',
+    tags: ['A Level', 'İngiltere Eğitim Sistemi', 'Üniversite Kabulü', 'Kariyer Gelişimi', 'İş Deneyimi'],
+    faqs: [
+      {
+        q: 'A Level ne zaman alınır ve kaç ders seçilmeli?',
+        a: 'A Level\'lar genellikle İngiltere\'de 16–18 yaş arası, yani 12. ve 13. Sınıf düzeyinde alınır. Öğrencilerin büyük çoğunluğu üç A Level seçer; bazıları dördüncü dersi de ekler ancak bu zorunlu değildir. Dersler Eylül\'de başlar, iki yıl sürer ve Mayıs–Haziran\'da yapılan sınavlarla tamamlanır.',
+      },
+      {
+        q: 'A Level ile GCSE arasındaki fark nedir?',
+        a: 'GCSE\'ler (14–16 yaş) geniş tabanlı bir müfredatı kapsar ve çoğu öğrenci 8–10 ders alır. A Level\'lar ise çok daha derindir: öğrenciler yalnızca 3 konuya odaklanır ve içerik üniversite düzeyine yaklaşır. GCSE\'deki B notu ortalaması olan bir öğrenci A Level\'da ciddi bir yoğunlukla karşılaşabilir; doğru konu seçimi kritik önem taşır.',
+      },
+      {
+        q: 'A Level notları üniversite kabulünü nasıl etkiler?',
+        a: 'İngiliz üniversiteleri (UCAS sistemi) öğrencileri önce tahmin edilen A Level notlarına göre koşullu kabul eder, ardından gerçek sonuçlara göre kesin kabulü onaylar. Oxford, Cambridge ve Imperial gibi üst düzey üniversiteler genellikle A*AA veya AAA koşulu koyar. Ders seçimi de önem taşır: tıp için Biyoloji + Kimya, mühendislik için Matematik + Fizik, hukuk için ise genellikle herhangi üç güçlü A Level kabul edilebilir.',
+      },
+      {
+        q: 'A Level mi IB mi daha iyi?',
+        a: 'Her iki program da İngiliz ve uluslararası üniversiteler tarafından geniş çapta kabul görmektedir. A Level, derinliğe odaklanır: az sayıda konuda uzmanlaşma. IB ise genişliğe: altı konuda dengeli bir müfredat sunar. Güçlü odaklanma kapasitesi ve net kariyer hedefi olan öğrenciler için A Level avantajlıdır; çok yönlü bir profil isteyen öğrenciler için IB daha uygun olabilir.',
+      },
+      {
+        q: 'A Level öğrencileri staj yapabilir mi?',
+        a: 'Evet — ve bunu yapanlar üniversite başvurularında ciddi bir avantaj kazanıyor. A Level yılları (16–18 yaş) çoğu büyük şirketin Bahar Insight haftaları ve yaz staj programlarına uygunluk yaşıdır. Kişisel beyanda A Level derslerini gerçek iş deneyimiyle ilişkilendirmek, kabul ekiplerinin değer verdiği somut kanıt sağlar.',
+      },
+    ],
+    cta: {
+      heading: 'A Level\'dan sonra staja hazır mısın?',
+      body: '16 yaş üstü öğrenciler için ücretsiz uyarlanabilir değerlendirme. Yetenek, alan bilgisi ve iş yeri becerileri açısından kişiselleştirilmiş hazırlık raporu al.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/apply',
+    },
+  },
+  {
+    slug: 'dubai-egitim-sistemi-rehberi',
+    title: 'Dubai\'de Eğitim Sistemi: Türk Aileler için Kapsamlı Rehber',
+    shortTitle: 'Dubai\'de Eğitim Sistemi',
+    description:
+      'Dubai\'de hangi müfredat sistemleri var, okul seçimi nasıl yapılır, maliyetler nelerdir? Dubai\'ye yerleşen veya taşınmayı düşünen Türk aileler için BAE eğitim sistemini tüm yönleriyle açıklıyoruz.',
+    date: '2026-07-20',
+    readTime: '11 dk okuma',
+    tags: ['Dubai', 'BAE Eğitim Sistemi', 'Uluslararası Okul', 'Ebeveyn Rehberi', 'İş Deneyimi'],
+    faqs: [
+      {
+        q: 'Dubai\'de devlet okulları mı yoksa özel okullar mı tercih edilmeli?',
+        a: 'Dubai devlet okulları Arapça eğitim verir ve büyük ölçüde BAE vatandaşlarına yöneliktir. İngilizce, Türkçe veya uluslararası müfredat isteyen expatriate aileler için özel uluslararası okullar tek pratik seçenektir. Dubai\'de 200\'ü aşkın KHDA lisanslı özel okul bulunmakta olup farklı müfredat ve fiyat seçenekleri sunmaktadır.',
+      },
+      {
+        q: 'Dubai\'deki uluslararası okullarda hangi müfredatlar var?',
+        a: 'En yaygın müfredatlar: İngiliz müfredatı (GCSE + A Level), Amerikan müfredatı (Diploma + AP), IB (Uluslararası Bakalorya), Hint CBSE ve ICSE müfredatları. Türk aileler için genellikle İngiliz veya IB müfredatı tercih edilir çünkü her ikisi de Türkiye dahil küresel üniversitelere açık kapılar sunmaktadır.',
+      },
+      {
+        q: 'Dubai\'de okul maliyetleri ne kadar?',
+        a: 'Yıllık okul ücretleri okul düzeyine ve müfredata göre büyük farklılık göstermektedir: Düşük segment 15.000–35.000 AED (yaklaşık 4.000–9.500 USD), orta segment 35.000–80.000 AED, üst segment ise 80.000–120.000 AED ve üzeri olabilmektedir. Türk ailelerin dikkat etmesi gereken ek maliyetler arasında kayıt ücreti, üniforma, ders kitapları ve ulaşım yer almaktadır.',
+      },
+      {
+        q: 'Dubai\'de Türk okulu veya Türkçe eğitim veren okul var mı?',
+        a: 'Dubai\'de resmi Türk devlet okulu bulunmamaktadır. Ancak bazı özel okullar Türkçe dil seçeneği veya Türk öğrencilere yönelik destek programları sunmaktadır. Türk ailelerin çoğu çocuklarını İngiliz veya IB müfredatlı uluslararası okullara göndermekte, Türkçe eğitimi ise çevrimiçi kaynaklar veya özel derslerle desteklemektedir.',
+      },
+      {
+        q: 'Dubai\'deki bir okulu mezun olan öğrenci Türkiye\'de üniversiteye başvurabilir mi?',
+        a: 'Evet. Türkiye\'deki üniversiteler uluslararası diplomanın denkliğini YÖK aracılığıyla değerlendirir. İngiliz A Level veya IB diploması olan öğrenciler, ÖSYM sınavına girmek yerine uluslararası öğrenci kontenjanlarından Türk üniversitelerine başvurabilir. Bu süreç için okul seçiminde YÖK tanınırlığını ve gerekli belgeleri önceden araştırmak önemlidir.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun dünya genelinde nerede durduğunu öğrenin',
+      body: 'Dubai dahil dünyanın herhangi bir yerindeki öğrenciler için ücretsiz uyarlanabilir değerlendirme. Uluslararası kıyaslamalı standartlaştırılmış puan ve konu bazlı detaylı rapor.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/auth/register',
+    },
+  },
+  {
     slug: 'cocugunuz-dunyada-nerede-duruyor',
     contentSlug: 'how-does-your-child-compare-globally',
     title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor? Uluslararası Akademik Kıyaslama Rehberi',

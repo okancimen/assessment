@@ -887,6 +887,213 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'a-level-programlari-nedir': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        İngiltere eğitim sistemine yeni tanışan Türk aileler için A Level terimi çoğunlukla gizemini korur. Türkiye'deki lise sisteminden temel olarak farklılaşan bu yapı, üniversite başvurusu açısından belirleyici bir aşamayı oluşturuyor. Bu rehberde A Level programlarının nasıl çalıştığını, ders seçiminin ne kadar kritik olduğunu ve öğrencinin kariyerine nasıl etki ettiğini açıklıyoruz.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">A Level Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A Level (Advanced Level), İngiliz eğitim sisteminde 16–18 yaş aralığını kapsayan lise son evre niteliklerdir. Öğrenciler 10. Sınıf sonunda GCSE sınavlarını tamamladıktan sonra genellikle üç veya dört A Level dersi seçerek altıncı forma geçer. Bu iki yıllık süre (Year 12 ve Year 13) bütünüyle A Level müfredatına ayrılır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye'deki lise sisteminden temel fark şudur: İngiliz öğrenciler 12. Sınıftan itibaren yalnızca seçtikleri 3 konuya odaklanır. Diğer tüm dersler müfredattan düşer. Bu derinlik odağı, A Level'ı dünya genelinde en zorlayıcı lise son programlarından biri hâline getirir ve büyük üniversitelerin başvuranlardan beklediği hazırlık düzeyini karşılar.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Kıyaslama notu:</strong> Türkiye'deki Anadolu Lisesi öğrencileri 12. Sınıfta 10+ ders alırken, A Level öğrencileri aynı yaşta yalnızca 3 konuya odaklanır. Derinlik karşılığında genişlikten vazgeçilir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">A Level Derecelendirme Sistemi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A Level notları A*'dan E'ye kadar uzanır: A*, A, B, C, D, E. U (Ungraded) sınav başarısızlığını gösterir. Oxford, Cambridge, Imperial ve UCL gibi üst düzey kurumlar genellikle en az A*AA veya AAA talep eder. Rekabetçi olmayan programlar için BBB veya BCC koşulları standart kabul edilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İngiliz üniversite başvurusu UCAS sistemi üzerinden yürür. Öğrenciler Year 12'deyken üniversitelere başvurur; üniversiteler ise o anki akademik performansa ve öğretmen tahminlerine bakarak koşullu kabul (Conditional Offer) verir. Year 13 sonunda A Level sınavlarından alınan gerçek notlar koşulu karşılıyorsa kabul kesinleşir.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>A* notu</strong> — yalnızca en rekabetçi adaylara verilir; yaklaşık öğrencilerin %8'i A* alır.</Check>
+          <Check><strong>AAA ve üzeri</strong> — Russell Group üniversitelerindeki çoğu rekabetçi programın minimum koşulu.</Check>
+          <Check><strong>BBB</strong> — çoğu iyi üniversitede kabul için yeterli; uygulamalı ve sanat programlarında yaygın.</Check>
+          <Check><strong>Koşullu kabul</strong> — başvuru sonrası verilen, sınav sonucuna bağlı teklif; İngiliz sisteminin özgün özelliği.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Hangi A Level Dersleri Seçilmeli?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ders seçimi, A Level'da alınan notlar kadar — bazen ondan daha fazla — önem taşır. Üniversite programlarının ön koşul gereksinimleri büyük farklılık gösterir ve yanlış ders kombinasyonu, öğrencinin hedef programına başvurusunu engelleyebilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Başlıca kariyer yolları için yaygın gereksinimler şöyle özetlenebilir:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Tıp:</strong> Biyoloji + Kimya zorunlu; üçüncü ders Matematik veya Fizik tercih edilir. Tıp fakülteleri çoğunlukla A*AA koşulu koyar.</Bullet>
+          <Bullet><strong>Mühendislik:</strong> Matematik + Fizik zorunlu kombinasyondur. İleri Matematik (Further Maths) üst düzey mühendislik programlarında sıklıkla beklenir.</Bullet>
+          <Bullet><strong>Bilgisayar Bilimi:</strong> Matematik zorunlu; Fizik veya Bilgisayar Bilimi dersi avantajlı. Bazı programlar Kimya da kabul eder.</Bullet>
+          <Bullet><strong>Hukuk:</strong> Hukuk özel bir A Level dersi değildir. Tarih, İngilizce, Felsefe veya Sosyoloji gibi beşeri bilimler sıklıkla tercih edilir.</Bullet>
+          <Bullet><strong>İşletme ve Ekonomi:</strong> Matematik güçlü bir tercih, Ekonomi ve İşletme dersleri A Level'da mevcuttur ancak ön koşul olarak zorunlu değildir.</Bullet>
+        </ul>
+        <Callout color="amber">
+          <strong className="text-amber-900">Dikkat:</strong> Bazı A Level kombinasyonları "kolaylaştırıcı" (facilitating) olarak adlandırılır ve en geniş üniversite kapılarını açar: Matematik, Daha İleri Matematik, Fizik, Biyoloji, Kimya, Tarih, Coğrafya, İngilizce Edebiyat, Klasik Diller ve Modern Diller. Russell Group, bu derslere açıkça değer verdiğini belirtmektedir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">A Level ve IB: Hangisi Daha İyi?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Uluslararası okullarda eğitim alan Türk aileler çoğunlukla bu soruyla yüzleşir. Her iki program da İngiltere ve dünya genelindeki üniversiteler tarafından kabul görmektedir; fark, odak noktasında ve yapıda yatmaktadır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>A Level</strong>, üç konuda derin uzmanlaşma sağlar. Matematiği veya bilimleri güçlü olan, hedef programını net biçimde belirlemiş öğrenciler için ciddi bir avantaj sunar. <strong>IB (Uluslararası Bakalorya)</strong> ise altı konuyu kapsar, Türkçe dahil ana dil eğitimini içerir ve bilgi teorisi, uzatılmış deneme gibi ek bileşenler içerir. Henüz kariyer tercihini netleştirmemiş, çok yönlü bir akademik profil isteyen öğrenciler için IB daha uygun olabilir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">A Level Yıllarında Staj ve İş Deneyimi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A Level döneminin (16–18 yaş) önemli bir avantajı, büyük şirketlerin yapılandırılmış giriş programları için tam uygunluk yaşıdır. Barclays, KPMG, Google, Amazon ve benzeri şirketler bu yaş grubunu hedefleyen Spring Insight haftaları ve yaz iş deneyimi programları düzenler.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu yerleştirmeler iki açıdan kritik önem taşır. Birincisi, UCAS kişisel beyanını güçlendirir: A Level derslerini seçme nedenini gerçek mesleki gözlemlerle destekleyen bir adayın başvurusu, yalnızca "bu alana ilgi duyuyorum" yazan bir adayın başvurusundan yapısal olarak daha güçlüdür. İkincisi, konu seçimini doğrular: Finansa ilgi duyan bir öğrenci, A Level'da Ekonomi ve Matematik seçmeden önce bir yaz KPMG'de zaman geçirerek gerçekten bu alanı isteyip istemediğini anlayabilir.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Kişisel beyan avantajı:</strong> UCAS başvurusundaki kişisel beyan yalnızca 4.000 karakterden oluşur. Akademik hazırlığı somut iş deneyimiyle destekleyen öğrenciler bu sınırlı alanda daha etkili bir anlatı oluşturabilir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türk Aileler İçin Pratik Notlar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İngiltere'deki veya Dubai, Singapur gibi İngiliz müfredatı uygulayan ülkelerdeki uluslararası okullarda okuyan Türk öğrenciler için A Level, İngiliz ve uluslararası üniversitelere açılan ana kapıdır. Türkiye'deki üniversitelere başvuru açısından ise YÖK denklik süreci devreye girer.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>YÖK, A Level diplomasını tanır; ancak denklik belgesi başvurusu gerektirir ve bazı programlar için ek değerlendirme yapılabilir.</Bullet>
+          <Bullet>ÖSYM'nin Yabancı Uyruklu Öğrenci Sınavı (YÖS), A Level diplomasıyla Türk üniversitelerine başvurmak isteyen öğrenciler için alternatif bir yol sunar.</Bullet>
+          <Bullet>Aile İngiltere'ye geri dönmeyi planlıyorsa, Türkiye'deki üniversite yerine İngiliz üniversitelerini hedeflemek A Level öğrencisi için çok daha doğrusal bir yoldur.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sonuç</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A Level programları, İngiliz eğitim sisteminin kalbi ve dünya genelindeki seçici üniversitelere açılan ana kapıdır. Ders seçimi, üniversite hedefleriyle örtüşecek biçimde planlanmalı; akademik hazırlık mümkün olduğunca erken yaşta iş deneyimiyle desteklenmelidir. A Level döneminde alınan kararlar — hangi derslerin seçildiğinden hangi üniversitelere başvurulacağına kadar — uzun vadeli kariyer trajektörünü belirleyen kararlar arasında yer alır.
+        </p>
+      </section>
+    </>
+  ),
+
+  'dubai-egitim-sistemi-rehberi': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Dubai her yıl on binlerce yeni expatriate aileyi ağırlar. Bu aileler için en kritik sorulardan biri genellikle aynıdır: Çocuğumu nereye okutacağım? BAE'nin eğitim sistemi, Türkiye'deki sistemden kökten farklılaşır. Bu rehberde Dubai'deki okul yapısını, müfredat seçeneklerini, maliyetleri ve Türk aileler için önemli pratik noktaları ele alıyoruz.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dubai'de Eğitim Sistemine Genel Bakış</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          BAE'de eğitim sistemi federal düzeyde Eğitim Bakanlığı (MoE) tarafından yönetilir. Dubai'de ise Bilgi ve İnsani Gelişim Kurumu (KHDA) özel okulları denetler, derecelendirir ve lisanslar. Devlet okulları teorik olarak mevcut olmakla birlikte büyük çoğunlukla BAE vatandaşlarına yöneliktir ve Arapça eğitim verir. Bu nedenle Dubai'deki expatriate aileler için tek pratik seçenek KHDA lisanslı özel uluslararası okullardır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dubai'de 200'den fazla KHDA lisanslı özel okul faaliyet göstermektedir. KHDA her yıl okulları dört kategoride değerlendirir: Olağanüstü (Outstanding), İyi (Good), Kabul Edilebilir (Acceptable) ve Yetersiz (Weak/Unsatisfactory). Bu derecelendirme, Türk aileler dahil tüm expatriate aileler için okul seçiminde kullanılabilecek en güvenilir kamuya açık kaynaktır.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Pratik not:</strong> KHDA'nın resmi web sitesi (khda.gov.ae), her okulun yıllık derecelendirme raporuna, öğrenci sayısına, müfredatına ve ücret aralığına erişim imkânı sunar. Okul ziyaretinden önce bu raporları incelemek değerli bir başlangıç noktasıdır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Hangi Müfredatlar Mevcut?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dubai'deki uluslararası okullarda başlıca beş müfredat sistemi uygulanmaktadır:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>İngiliz Müfredatı (GCSE + A Level):</strong> Dubai'deki en yaygın müfredat. İngilizce eğitim, lise sonunda A Level veya IGCSE nitelikleri ve İngiliz ile uluslararası üniversitelere geniş erişim sunar.</Bullet>
+          <Bullet><strong>Amerikan Müfredatı:</strong> ABD üniversiteleri hedefleniyor veya ileride ABD'ye taşınma planlanıyorsa tercih edilir. AP (Advanced Placement) dersleri ile güçlü bir lise diploması sunulur.</Bullet>
+          <Bullet><strong>IB (Uluslararası Bakalorya):</strong> Küresel olarak geniş kabul gören, çok yönlü bir müfredat. Hem İngiliz hem de Amerikan üniversitelerine kapı açar. Türkçe dahil ana dil eğitimini destekler.</Bullet>
+          <Bullet><strong>Hint Müfredatları (CBSE / ICSE):</strong> Hint topluluğuna yönelik okullarda uygulanır. Türk aileler için genellikle tercih edilmez.</Bullet>
+          <Bullet><strong>Fransız ve diğer Avrupa müfredatları:</strong> Fransız Lisesi ve benzeri kurumlar, belirli ülkelerden expatriate ailelere yönelik çalışmaktadır.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türk aileler için en sık tercih edilen sistemler İngiliz müfredatı ve IB'dir. Her ikisi de Türkiye dahil dünya genelindeki üniversitelere kapı açmaktadır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dubai'de Okul Maliyetleri</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dubai'deki okul ücretleri yıldan yıla ve okuldan okula ciddi farklılık göstermektedir. KHDA, ücret artışlarını düzenlemekte olup en iyi derecelendirmeye sahip okullar en yüksek ücret artışı iznine sahiptir.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Düşük segment (15.000–35.000 AED/yıl):</strong> Genellikle Kabul Edilebilir veya İyi kategorisinde değerlendirilen okullar. Hint müfredatı veya küçük ölçekli İngiliz müfredatı okulları bu aralıkta yer alır.</Bullet>
+          <Bullet><strong>Orta segment (35.000–80.000 AED/yıl):</strong> İyi veya Olağanüstü derecelendirmeli İngiliz ve IB okullarının büyük bölümü. Çoğu Türk ailenin değerlendireceği aralık budur.</Bullet>
+          <Bullet><strong>Üst segment (80.000–120.000+ AED/yıl):</strong> Regiis, GEMS World Academy, Dubai College gibi prestijli kurumlar. Olağanüstü KHDA derecelendirmesi ve üniversite hazırlık sicili güçlüdür.</Bullet>
+        </ul>
+        <Callout color="amber">
+          <strong className="text-amber-900">Ek maliyetler:</strong> Yıllık ücrete ek olarak kayıt ücreti (genellikle 1.000–5.000 AED), üniforma seti, ders kitapları, okul gezileri ve servis ücretlerini hesaba katmak gerekir. Gerçek yıllık eğitim maliyeti, liste ücretinin %15–25 üzerinde olabilir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türkçe Eğitim ve Türk Kültürel Kimlik</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dubai'de resmi bir Türk devlet okulu bulunmamaktadır. Türkiye Milli Eğitim Bakanlığı'nın yurt dışı okulları ağı Dubai'yi kapsamamaktadır. Bu durum, Dubai'deki Türk aileler için çocuğun Türkçe eğitimini ve kültürel kimliğini koruma konusunu ayrı bir planlama gerektiren bir alana dönüştürür.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türk ailelerin bu konuda benimsediği yaygın yaklaşımlar şunlardır:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>IB okulu seçimi: IB müfredatı ana dil (Group 1) olarak Türkçeyi destekleyebilir; okulun Türkçe öğretmen kadrosu olup olmadığı kontrol edilmelidir.</Bullet>
+          <Bullet>Özel Türkçe ders: Çocukların okul dışında haftada 2–3 saat Türkçe okuryazarlık ve dilbilgisi dersi alması yaygın bir pratiktir.</Bullet>
+          <Bullet>Çevrimiçi Türkçe eğitim platformları ve Türkiye tabanlı uzaktan özel dersler giderek yaygınlaşmaktadır.</Bullet>
+          <Bullet>Dubai Türk topluluğu etkinlikleri: Dubai'de aktif bir Türk iş insanları ve aile ağı bulunmaktadır; bu topluluk hem sosyal hem de eğitimsel destek sağlar.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dubai'den Türkiye veya İngiltere'de Üniversite</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dubai'deki bir uluslararası okulu tamamlayan öğrencilerin üniversite seçenekleri geniştir; ancak diploma türü önemli ölçüde belirleyicidir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>İngiliz üniversiteleri için:</strong> A Level veya IB diploması ile UCAS sistemi üzerinden doğrudan başvuru yapılabilir. Dubai'deki iyi derecelendirmeli okul mezunları bu başvuru sürecinde Birleşik Krallık'taki okulların mezunlarıyla aynı değerlendirme standartlarına tabidir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Türk üniversiteleri için:</strong> YÖK yabancı diploma denkliği süreci gereklidir. A Level veya IB diploması yüksek üniversiteler için kabul görmektedir; ancak öğrencinin almak istediği programın ön koşullarını konu bazında doğrulaması ve YÖK denklik başvurusunu mezuniyet öncesinde planlaması önerilir.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check>İngiliz müfredatı veya IB, İngiltere ve küresel üniversitelere geniş erişim sağlar.</Check>
+          <Check>YÖK denklik belgesi Türkiye'deki devlet ve vakıf üniversitelerine başvuruyu mümkün kılar.</Check>
+          <Check>YÖS (Yabancı Uyruklu Öğrenci Sınavı) ek bir başvuru yolu sunar; özellikle tıp, hukuk ve mühendislik programlarına erişim için değerlidir.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dubai'de Okul Seçiminde Dikkat Edilmesi Gerekenler</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okul seçimi aile için en kritik kararlardan biridir ve sadece fiyat veya müfredatla sınırlı tutulmamalıdır. Türk ailelerin değerlendirmesi gereken başlıca kriterler:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>KHDA derecelendirmesi:</strong> Olağanüstü veya İyi dereceli okulları tercih edin; Kabul Edilebilir kategorisindeki okullarda akademik kalite değişkenlik gösterebilir.</Bullet>
+          <Bullet><strong>Üniversite kabul sicili:</strong> Okulun son yıllarda mezunlarının hangi üniversitelere yerleştiğini araştırın; açık gün ziyaretlerinde bu veriyi isteyin.</Bullet>
+          <Bullet><strong>Sınıf büyüklükleri:</strong> Dubai'deki bazı büyük okullarda sınıf başına 30+ öğrenci bulunabilir; bu durum bireysel ilgi açısından sınırlayıcı olabilir.</Bullet>
+          <Bullet><strong>Toplu taşıma ve güvenlik:</strong> Dubai'de trafik ve sıcaklık göz önünde bulundurulduğunda okul servisinin güvenilirliği ve klima kapasitesi önemlidir.</Bullet>
+          <Bullet><strong>Arapça dil gereksinimleri:</strong> BAE'deki birçok okul Arapçayı zorunlu ders olarak sunar. Bu, aile Dubai'de uzun vadeli kalmayı planlıyorsa avantaj; kısa vadeli ise dikkate alınması gereken ek bir yük olabilir.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sonuç</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dubai, eğitim açısından dünya genelinde en zengin seçenek yelpazesine sahip şehirler arasındadır. İngiliz müfredatı veya IB tercih eden Türk aileler için yüksek kaliteli ve küresel üniversitelere kapı açan okullara erişim mümkündür — ancak ücretler yüksektir ve doğru seçim için KHDA raporlarını, okul ziyaretlerini ve üniversite sicillerini dikkate almak gerekir. Çocuğun Türkçe eğitimini ve kültürel bağını korumak ise ailenin ayrıca plan yapması gereken bir konudur; IB okulları veya özel Türkçe eğitim bu ihtiyacı karşılayabilir.
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
