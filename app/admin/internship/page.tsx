@@ -5,9 +5,40 @@ import Link from 'next/link'
 import { Suspense } from 'react'
 import Navbar from '@/components/dashboard/Navbar'
 import InternshipFilterBar from '@/components/admin/InternshipFilterBar'
-import { INTERNSHIP_TRACK_LABELS, InternshipTrack } from '@/types'
+import { INTERNSHIP_TRACK_LABELS, INTERNSHIP_QUESTIONS_PER_SUBJECT, InternshipTrack, InternshipSubject } from '@/types'
 
 export const dynamic = 'force-dynamic'
+
+const TOTAL_QUESTIONS = 34 // 5+5+10+8+6
+
+function completionPct(
+  status: string,
+  session: { completed_subjects: string[]; question_index: number } | null,
+): number {
+  if (status === 'completed') return 100
+  if (!session || status === 'pending') return 0
+  const completedQ = (session.completed_subjects ?? []).reduce(
+    (sum, s) => sum + (INTERNSHIP_QUESTIONS_PER_SUBJECT[s as InternshipSubject] ?? 0),
+    0,
+  )
+  return Math.min(100, Math.round(((completedQ + (session.question_index ?? 0)) / TOTAL_QUESTIONS) * 100))
+}
+
+function ProgressBar({ pct, status }: { pct: number; status: string }) {
+  const color =
+    status === 'completed' ? '#22C55E' :
+    status === 'in_progress' ? '#F59E0B' : '#d2d2d7'
+  return (
+    <div className="flex items-center gap-2 min-w-[80px]">
+      <div className="flex-1 h-1.5 bg-[#f5f5f7] rounded-full overflow-hidden">
+        <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: color }} />
+      </div>
+      <span className="text-xs font-medium tabular-nums" style={{ color: pct === 0 ? '#d2d2d7' : color }}>
+        {pct}%
+      </span>
+    </div>
+  )
+}
 
 function tierColor(overall: number | undefined) {
   if (overall == null) return 'text-[#6e6e73]'
@@ -54,18 +85,29 @@ export default async function AdminInternshipPage({
 
   const assessmentIds = (profiles ?? []).map((p) => (p.assessments as { id: string } | null)?.id).filter(Boolean) as string[]
 
-  const { data: results } = assessmentIds.length > 0
-    ? await db.from('results').select('assessment_id, subject_scores').in('assessment_id', assessmentIds)
-    : { data: [] }
+  const [{ data: results }, { data: sessions }, { data: allCohorts }] = await Promise.all([
+    assessmentIds.length > 0
+      ? db.from('results').select('assessment_id, subject_scores').in('assessment_id', assessmentIds)
+      : { data: [] },
+    assessmentIds.length > 0
+      ? db.from('assessment_sessions')
+          .select('assessment_id, completed_subjects, question_index')
+          .in('assessment_id', assessmentIds)
+      : { data: [] },
+    db.from('cohorts').select('id, name').order('start_date', { ascending: false }),
+  ])
 
   const resultsMap: Record<string, Record<string, number>> = {}
   for (const r of results ?? []) {
     resultsMap[r.assessment_id] = r.subject_scores as Record<string, number>
   }
 
-  const { data: allCohorts } = await db.from('cohorts').select('id, name').order('start_date', { ascending: false })
+  const sessionsMap: Record<string, { completed_subjects: string[]; question_index: number }> = {}
+  for (const s of sessions ?? []) {
+    sessionsMap[s.assessment_id] = s
+  }
 
-  // Stats (over all candidates, before filtering)
+  // Stats (all candidates, before filtering)
   const all = profiles ?? []
   const stats = {
     total: all.length,
@@ -84,7 +126,6 @@ export default async function AdminInternshipPage({
     const status = (p.assessments as { status: string } | null)?.status ?? 'pending'
     const effectiveTrack = (p.admin_assigned_track ?? p.track_preferences?.[0]) as string | undefined
     const cohortId = p.cohort_id as string | null
-
     if (filterStatus && status !== filterStatus) return false
     if (filterTrack && effectiveTrack !== filterTrack) return false
     if (filterCohort === 'none' && cohortId != null) return false
@@ -145,6 +186,7 @@ export default async function AdminInternshipPage({
                     <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">Track</th>
                     <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden lg:table-cell">Cohort</th>
                     <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden xl:table-cell">Applied</th>
+                    <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">Progress</th>
                     <th className="text-right px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">Score</th>
                     <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">Status</th>
                     <th className="text-right px-5 py-3"></th>
@@ -158,6 +200,8 @@ export default async function AdminInternshipPage({
                     const effectiveTrack = (p.admin_assigned_track ?? p.track_preferences?.[0]) as InternshipTrack | undefined
                     const scores = aId ? resultsMap[aId] : null
                     const overall = scores?.overall
+                    const session = aId ? sessionsMap[aId] ?? null : null
+                    const pct = completionPct(status, session)
                     return (
                       <tr key={p.id} className="border-b border-[#f5f5f7] last:border-0 hover:bg-[#f5f5f7] transition-colors">
                         <td className="px-5 py-3 font-medium text-[#1d1d1f]">{(p.children as { name: string } | null)?.name ?? '—'}</td>
@@ -173,6 +217,9 @@ export default async function AdminInternshipPage({
                         </td>
                         <td className="px-5 py-3 text-[#6e6e73] text-xs hidden xl:table-cell">
                           {createdAt ? formatDate(createdAt) : '—'}
+                        </td>
+                        <td className="px-5 py-3 hidden sm:table-cell">
+                          <ProgressBar pct={pct} status={status} />
                         </td>
                         <td className={`px-5 py-3 text-right font-bold ${tierColor(overall)}`}>
                           {overall != null ? overall : '—'}
