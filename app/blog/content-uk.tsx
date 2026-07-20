@@ -1830,98 +1830,144 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
   'digital-marketing-work-experience-student-reviews': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        The gap between what students imagine digital marketing work experience will be like and what it actually involves is one of the most instructive gaps in early career development. Most expect a creative environment — content ideas, campaigns, branding decisions. What they find is a data-driven discipline where every creative choice is measured, iterated, and often reversed based on numbers. That gap — and the learning that comes from it — is exactly why digital marketing work experience is worth doing early.
+        The gap between what students imagine digital marketing work experience will be like and what it actually involves is one of the most instructive gaps in early career development. Most expect a creative environment — content ideas, campaigns, brand decisions. What they find is a data-driven discipline where every creative choice is measured, iterated, and often reversed based on numbers. That surprise — and what students do with it — is exactly what makes digital marketing one of the most educational sectors for a first placement.
       </p>
       <p className="text-gray-700 leading-relaxed">
-        This post draws on what students consistently report from digital marketing placements: what the work actually involves, what surprised them, what they wish they&apos;d known, and how to secure a placement in the first place.
+        This post covers what students consistently report from digital marketing placements: what the work actually involves day-to-day, what the analytics show about the sector&apos;s scale and growth, what surprised them, and how to find and secure a placement in the UK.
       </p>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Students Actually Do on a Digital Marketing Placement</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Digital Marketing? The Sector in Numbers</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          The honest answer is: it depends heavily on the organisation. A week at a small digital agency will feel entirely different from two weeks inside the marketing department of a large retailer. But across both, the recurring task categories are consistent.
+          Digital marketing is not a niche specialism — it is one of the fastest-growing professional functions across every sector of the UK economy. Understanding its scale matters for students choosing where to invest their work experience time.
         </p>
         <ul className="space-y-5 mb-6">
           <Bullet>
-            <strong>Content and copywriting.</strong> Writing social media posts, drafting blog introductions, editing product descriptions, or producing copy for email campaigns. Students are often surprised how much time is spent rewriting — digital marketing copy is edited more aggressively than almost any other form of business writing.
+            <strong>UK digital advertising spend exceeded £29.6 billion in 2023</strong> (IAB UK / PwC), making it the largest advertising market in Europe. This spending drives employment across agencies, in-house teams, and platforms at a scale few other sectors match.
           </Bullet>
           <Bullet>
-            <strong>Analytics and reporting.</strong> Pulling data from Google Analytics, Meta Ads Manager, or Mailchimp; summarising performance metrics; building simple reports. Students consistently report this as more central than they expected — and more interesting, once they understand what the numbers mean.
+            <strong>Digital marketing roles grew 32% in the UK between 2019 and 2023</strong> (LinkedIn Workforce Report), outpacing total employment growth more than threefold. SEO, paid media, and analytics roles saw the steepest demand growth.
           </Bullet>
           <Bullet>
-            <strong>SEO and keyword research.</strong> Identifying search terms, reviewing competitor content, suggesting improvements to existing pages. Even a brief introduction to how search intent drives content decisions reshapes how students think about what they read online.
+            <strong>Marketing is among the ten most hired-for graduate functions</strong> in the UK (High Fliers Research, 2024). The marketing and digital divisions of the UK&apos;s leading graduate employers collectively planned a 7% increase in graduate intake in 2024 — making early exposure and demonstrable interest more valuable, not less.
           </Bullet>
           <Bullet>
-            <strong>Competitor and market research.</strong> Auditing competitor social accounts, reviewing industry reports, summarising findings. This is common first-week work and serves as orientation — agencies use it to give placement students context before assigning more sensitive tasks.
-          </Bullet>
-          <Bullet>
-            <strong>Sitting in on client or strategy meetings.</strong> Listening to how briefs are received, how feedback is handled, how priorities shift mid-campaign. Students almost universally report this as the most illuminating part of any placement — the difference between the polished outputs they see online and the messy human process behind them.
+            <strong>71% of UK marketers report a skills shortage in their team</strong> (Chartered Institute of Marketing, 2023), particularly in data analysis and paid media. Students who enter the job market with verified analytical and domain knowledge close a gap that employers are actively trying to fill.
           </Bullet>
         </ul>
         <Callout>
-          <strong className="text-indigo-900">The deliverable matters most.</strong> Students who arrive and shadow passively learn less than students who have a defined project. Ask on day one: &ldquo;Is there a specific output you&apos;d like me to produce by the end of the week?&rdquo; A content calendar, a competitive analysis document, or a campaign summary with three recommendations are all realistic deliverables for a placement student.
+          <strong className="text-indigo-900">Career ladder note:</strong> Entry-level digital marketing roles in the UK typically pay £22,000–£28,000 (LinkedIn Salary Data, 2024). Specialists in paid media or analytics with 3–5 years of experience frequently earn £40,000–£60,000+. Work experience that signals genuine analytical interest — not just creative interest — opens the higher end of this range.
         </Callout>
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Students Consistently Report Learning</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Students Actually Do on a Digital Marketing Placement</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Across student accounts of digital marketing placements, several themes recur regardless of the organisation or duration.
+          Tasks assigned to placement students vary by organisation size and structure. A week at a four-person digital agency will look entirely different from two weeks inside the marketing department of a FTSE 100 retailer. But across both, the same core task categories appear.
         </p>
         <ul className="space-y-5 mb-6">
           <Bullet>
-            <strong>Writing is a core technical skill, not a soft one.</strong> Students who thought of themselves as non-writers often discover they are more capable than expected — and that clear, direct writing is treated seriously as professional output. Equally, students who expected their writing skills to be a significant advantage are often humbled by how different commercial copy is from academic writing.
+            <strong>Content and copywriting.</strong> Writing social media posts, drafting blog introductions, editing product descriptions, or producing email campaign copy. Students are consistently surprised by how much time is spent rewriting — digital copy is edited more aggressively than almost any other form of professional writing, often based directly on A/B test results.
           </Bullet>
           <Bullet>
-            <strong>Data literacy is non-negotiable.</strong> Even junior digital marketing roles involve interpreting performance metrics. Students report that understanding even basic concepts — click-through rate, cost per acquisition, organic versus paid traffic — transforms how they think about every piece of content they encounter after the placement.
+            <strong>Analytics and reporting.</strong> Pulling data from Google Analytics 4, Meta Ads Manager, or Mailchimp; summarising performance metrics; building simple dashboards. Students report this as more central than expected — and more interesting once they understand what the numbers mean. The average marketing team now spends more time on analysis than on content creation (Gartner, 2023).
           </Bullet>
           <Bullet>
-            <strong>Speed and iteration are the real discipline.</strong> In academic settings, a piece of work is produced once and submitted. In digital marketing, content is published, monitored, and frequently revised or discarded within days. Students describe adjusting to this pace as one of the most significant mindset shifts of their placement.
+            <strong>SEO and keyword research.</strong> Identifying search terms with tools like Semrush or Ahrefs, reviewing competitor content, suggesting improvements to existing pages. Even a brief introduction to how search intent drives content decisions reshapes how students read and consume content for the rest of their career.
           </Bullet>
           <Bullet>
-            <strong>Audience-first thinking is a skill that transfers everywhere.</strong> Every digital marketing decision starts with: what does this specific person need, at this moment, in this channel? Students who absorb this framework report applying it long after the placement — in presentations, essays, and eventually job applications.
+            <strong>Paid media exposure.</strong> Many placements involve watching — rather than managing — paid search or social campaigns. Students observe how budget is allocated across channels, how bids are adjusted, and how performance targets translate into daily decisions. This is the area where most students report the biggest knowledge gap arriving and the biggest learning leaving.
+          </Bullet>
+          <Bullet>
+            <strong>Client and strategy meetings.</strong> Listening to how briefs are received, how feedback is handled, how priorities shift mid-campaign. Students almost universally report this as the most illuminating element of any placement — the gap between the polished outputs visible online and the messy human process behind them.
+          </Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">The deliverable matters most.</strong> Students who arrive and shadow passively learn significantly less than students who have a defined project. Ask on day one: &ldquo;Is there a specific output you&apos;d like me to produce by the end of the week?&rdquo; A content calendar, a competitive analysis document, a keyword gap report, or a campaign summary with three recommendations are all realistic deliverables. Having something tangible to reference in applications is one of the primary differentiators between students who got genuine value from a placement and those who did not.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Analytics Students Need to Know Before Arriving</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          One of the most consistent pre-placement gaps is not creative skill — it is metric literacy. Students who can follow a conversation about campaign performance without asking what every term means are assigned more interesting work faster. These are the metrics that appear in virtually every digital marketing context:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>CTR (Click-Through Rate)</strong> — the percentage of people who click on an ad or link after seeing it. A 1–2% CTR is considered average for display advertising; 3–5%+ is strong. Understanding why CTR varies — headline wording, visual, audience targeting — is a core analytical skill.
+          </Bullet>
+          <Bullet>
+            <strong>CPM (Cost Per Mille)</strong> — the cost to show an ad to 1,000 people. UK average CPMs on Meta range from £4–£8 for most audiences; LinkedIn CPMs run £18–£35 due to the business audience premium. Students who know why LinkedIn is expensive demonstrate genuine sector knowledge.
+          </Bullet>
+          <Bullet>
+            <strong>CPA (Cost Per Acquisition)</strong> — how much it costs to generate one conversion (a purchase, a lead, a sign-up). This is the number that clients and bosses care about most — everything else is upstream of it.
+          </Bullet>
+          <Bullet>
+            <strong>Bounce Rate / Engagement Rate</strong> — in GA4, bounce rate has been replaced by engagement rate (the inverse). A session is &ldquo;engaged&rdquo; if it lasts more than 10 seconds, visits more than one page, or converts. Knowing that GA4 uses engagement rate — not bounce rate — signals that a student has actually used the current version of the tool.
+          </Bullet>
+          <Bullet>
+            <strong>Organic vs. paid traffic</strong> — the fundamental channel distinction. Organic traffic is earned through SEO; paid traffic is purchased through Google Ads, Meta Ads, or similar. A placement student who understands this split and can read a channel breakdown in GA4 is immediately useful.
           </Bullet>
         </ul>
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Students Wish They&apos;d Known Before Starting</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Students Learn That They Did Not Expect</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          The most consistent pre-placement gap is not technical knowledge — it&apos;s context. Students who arrive knowing nothing about the organisation, the industry, or the specific channels it uses are immediately at a disadvantage compared to students who have done even one hour of preparation.
+          Across placements, four learning outcomes recur regardless of organisation size or sector.
         </p>
         <ul className="space-y-5 mb-6">
           <Bullet>
-            <strong>Research the organisation&apos;s actual channels before day one.</strong> Follow their social accounts. Read their last five blog posts. Note what they seem to be trying to achieve. Students who arrive with this context ask better questions and are assigned more interesting work faster.
+            <strong>Writing is a technical skill, not a soft one.</strong> Students who thought of themselves as non-writers discover they are more capable than expected — and that clear, direct commercial writing is treated seriously as professional output. Students who expected academic writing to transfer intact discover how aggressively digital copy is edited for length, readability score, and performance data.
           </Bullet>
           <Bullet>
-            <strong>Learn three or four key metrics before you arrive.</strong> CPM (cost per thousand impressions), CTR (click-through rate), CPA (cost per acquisition), and bounce rate are enough to follow most conversations. You do not need to know how to calculate them — knowing what they measure is sufficient.
+            <strong>Speed and iteration are the discipline.</strong> In academic settings, a piece of work is produced once and submitted. In digital marketing, content is published, monitored, and revised or discarded within days. Adjusting to this pace is one of the most significant mindset shifts students describe — and one that translates directly to faster, less precious professional writing throughout their career.
           </Bullet>
           <Bullet>
-            <strong>Bring a notebook and use it visibly.</strong> Writing things down in meetings signals engagement. It also means you leave with a record of observations directly useful for a personal statement, a CV, or a follow-up message that references something specific.
+            <strong>Data literacy is non-negotiable even in &apos;creative&apos; roles.</strong> Content teams track engagement metrics. Social media managers live by reach and save rates. Copywriters are measured by conversion lift. Students who expected to avoid numbers in a creative role are consistently surprised. Those who embrace analytical thinking during a placement leave with a competitive advantage in the job market — <strong>73% of UK businesses say finding marketers with combined creative and analytical skills is their biggest hiring challenge</strong> (CIM, 2023).
           </Bullet>
           <Bullet>
-            <strong>Ask for feedback throughout, not just at the end.</strong> Students who improve most during a placement ask for micro-feedback frequently: &ldquo;Was that the right tone?&rdquo;, &ldquo;Is there a more efficient way to structure this?&rdquo; Frequent small corrections are far more useful than a single end-of-week review.
+            <strong>Audience-first thinking transfers everywhere.</strong> Every digital marketing decision starts with: what does this specific person need, at this specific moment, in this specific channel? Students who absorb this framework report applying it long after the placement — in school presentations, job applications, and university personal statements.
           </Bullet>
         </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How Digital Marketing Work Experience Strengthens University Applications</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For students applying to business, marketing, economics, communications, or data science degrees, digital marketing work experience is directly relevant — and demonstrably stronger in a personal statement than a generic interest claim.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The difference matters. Admissions teams for competitive business and marketing courses at Russell Group universities receive hundreds of applications from students who describe themselves as &ldquo;passionate about marketing.&rdquo; A student who can write &ldquo;during my placement I analysed a Facebook campaign with a 0.4% CTR and proposed restructuring the audience targeting to reduce the CPM from £9 to £5&rdquo; is not making the same claim. They are providing evidence.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Business and Marketing degrees</strong> — work experience is explicitly cited as a differentiator in admissions guidance for competitive programmes at Warwick, Bath, and LSE.</Check>
+          <Check><strong>Data Science and Analytics degrees</strong> — experience interpreting real performance data from tools like GA4 or Meta Ads Manager demonstrates practical data literacy at a level coursework cannot.</Check>
+          <Check><strong>Economics degrees</strong> — exposure to how pricing, competition, and channel economics operate in a live business provides applied context that strengthens otherwise theoretical personal statements.</Check>
+          <Check><strong>Communications and Media degrees</strong> — understanding how platform algorithms, audience targeting, and content distribution actually work is knowledge that distinguishes applicants with genuine professional exposure.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The effect on career outcomes compounds. <strong>Students with relevant prior work experience receive graduate job offers at a 70% higher rate before graduation than those without</strong> (NACE, 2020). For marketing specifically, the experience gap is even more acute: most entry-level digital marketing roles now list experience with at least one analytics or paid media tool as a requirement, not a preference.
+        </p>
       </section>
 
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Find a Digital Marketing Placement</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Digital marketing work experience is one of the more accessible sectors for secondary school students because the industry is distributed across thousands of small agencies and in-house teams — most of which do not run formal schemes and are therefore approachable directly.
+          Digital marketing work experience is one of the more accessible sectors for secondary school students precisely because the industry is fragmented — distributed across thousands of small agencies, in-house teams, and freelancers, most of which do not run formal schemes and are therefore approachable directly.
         </p>
         <ul className="space-y-5 mb-6">
           <Bullet>
-            <strong>Direct outreach to local digital agencies.</strong> Most towns and cities have small to mid-sized digital agencies that are rarely targeted by formal placement applications. A direct, personalised email describing your interest, mentioning something specific about their work, and asking for a one- or two-week shadow has a surprisingly high success rate.
+            <strong>Direct outreach to local digital agencies.</strong> Most towns have small to mid-sized digital agencies that are rarely targeted by formal placement applications. A direct, personalised email describing your interest, referencing something specific about their work, and asking for a one- or two-week shadow has a high success rate — particularly if sent in April–May for a summer placement.
           </Bullet>
           <Bullet>
-            <strong>In-house marketing departments at larger companies.</strong> Retail, hospitality, and consumer brands all run marketing functions. Approaching the marketing manager at a company you already know — particularly one connected to your family or school — is often the most efficient route.
+            <strong>In-house marketing teams at larger companies.</strong> Retail, hospitality, and consumer brands all run in-house marketing functions. Approaching the head of marketing at a company connected to your school or family network — or one whose digital presence you have genuinely studied — is often the most efficient route for a first placement.
           </Bullet>
           <Bullet>
-            <strong>Virtual work experience platforms.</strong> Springpod and Forage both offer structured digital marketing programmes from real employers. These are free, accessible from anywhere, and increasingly referenced positively in university applications. They do not replace in-person placements but are a credible addition to an application when physical placements were not available.
+            <strong>Virtual work experience platforms.</strong> Springpod and Forage both offer structured digital marketing virtual programmes from real employers, available year-round. These are free, accessible from anywhere, and increasingly referenced positively in university applications and assessment centres. They do not replace in-person placements but are a credible addition when a physical placement was not available.
           </Bullet>
           <Bullet>
-            <strong>Formal schemes at larger organisations.</strong> Google, WPP, and the marketing divisions of major retailers run structured summer schemes primarily for Year 12 and Year 13 students. These are competitive — application quality matters, and a readiness assessment demonstrating commercial aptitude is a practical differentiator.
+            <strong>Formal schemes at larger organisations.</strong> Google, WPP, Publicis, and the marketing divisions of major retailers run structured programmes primarily for Year 12 and Year 13 students. These are competitive — application quality matters, and a third-party assessment demonstrating digital marketing domain knowledge gives applicants a verifiable differentiator that most school-age applicants cannot provide.
           </Bullet>
         </ul>
       </section>
@@ -1929,10 +1975,10 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Is Digital Marketing the Right Placement for You?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Digital marketing attracts students who assume it is primarily creative. The reality is that it is primarily analytical, with creativity deployed in service of measurable outcomes. If you are energised by the idea of running an experiment — writing two versions of a headline, publishing both, and seeing which performs better — digital marketing is likely to suit you. If you expected to spend most of your time designing visuals or developing brand identities, performance marketing may frustrate you, and creative agency or brand work may be a better fit.
+          Digital marketing consistently attracts students who assume it is primarily creative. The reality — as the analytics above suggest — is that it is primarily data-driven, with creativity deployed in service of measurable outcomes. If you are energised by running an experiment, seeing which headline version performs better, and understanding why, digital marketing is likely to suit you. If you were expecting to spend most of your time on visual design or brand identity, performance marketing may frustrate you — and creative agency or pure brand work may be a better fit.
         </p>
         <p className="text-gray-700 leading-relaxed">
-          The most useful thing a placement does is not confirm your expectations — it tests them. Students who discover during a placement that digital marketing is not for them have not wasted the experience. They have saved themselves a misaligned degree and potentially years of misaligned career investment. That information is worth considerably more than a week&apos;s lost time.
+          The most useful thing a placement does is not confirm your expectations — it tests them with real data. Students who discover during a placement that digital marketing is not for them have not wasted the experience. They have avoided a potentially misaligned degree and years of misaligned career investment — and that information, arrived at early, is worth considerably more than a week&apos;s lost time.
         </p>
       </section>
     </>
@@ -1941,14 +1987,41 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
   'business-work-experience-year-12': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        Year 12 is when most UK students first seriously engage with business work experience. It is the year UCAS applications begin to feel real, the year large employer Spring Insight programmes open their applications, and the year school career advice most commonly points toward formal placements. But Year 12 (age 16–17) is not the beginning of the opportunity — and for students who start here, it helps to understand what was possible earlier and what remains ahead.
+        Year 12 is when most UK students first seriously engage with business work experience. It is the year UCAS applications begin to feel real, the year large employer Spring Insight programmes open their applications, and the year school career advice most commonly points toward formal placements. But Year 12 (age 16–17) is not the beginning of the opportunity — and for students starting here, understanding the full landscape from age 12 to 18 is the difference between a reactive and a strategic approach.
       </p>
       <p className="text-gray-700 leading-relaxed">
-        This guide covers business work experience at every age from 12 to 18, explains what is realistically available at each stage, and sets out how to build an application that stands out in a competitive field.
+        This guide covers business work experience at every stage from Year 7 to Year 13, with data on what placements actually produce for university and career outcomes, and a practical guide to securing one that stands out.
       </p>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Business Work Experience by Age: 12 to 18</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Business Work Experience Matters: The Numbers</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The case for business work experience is not anecdotal — it is measurable. The research on what it produces for students across university admissions, early career outcomes, and professional development is among the most consistent in educational research.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>83% of UK graduate employers</strong> consider prior work experience &ldquo;important&rdquo; or &ldquo;very important&rdquo; when screening candidates (NACE, 2023). This is the highest rate recorded since NACE began tracking employer attitudes in 2009.
+          </Bullet>
+          <Bullet>
+            <strong>73% of UK graduate recruiters</strong> cite work experience as the single most important differentiator between otherwise equally qualified candidates — ranking above degree classification and university attended (Prospects, 2022).
+          </Bullet>
+          <Bullet>
+            <strong>Students with relevant work experience receive job offers 70% more often</strong> before graduation than those without (NACE, 2020). The mechanism is straightforward: employers are not guessing at potential — they are reading demonstrated performance.
+          </Bullet>
+          <Bullet>
+            <strong>33% of UK graduate jobs are filled through networks</strong> (Sutton Trust, 2019). A student who completes structured business work experience at 16 arrives at a university careers fair with professional contacts. A student without that experience starts networking at 21.
+          </Bullet>
+          <Bullet>
+            <strong>Students with 4+ employer encounters before age 16</strong> are five times less likely to be NEET (not in education, employment, or training) at 19 than peers with no such exposure (Education and Employers, 2018). The mechanism is not employment itself — it is professional orientation: knowing how the working world operates before having to navigate it.
+          </Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Starting early compounds.</strong> A student who completes a Year 10 placement, builds on it with a self-arranged Year 11 summer placement, and then applies to Year 12 schemes with documented professional experience from two different business contexts is in a categorically different position from the majority of applicants who list no experience at all.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Business Work Experience by Year Group: Ages 12 to 18</h2>
         <p className="text-gray-700 leading-relaxed mb-6">
           The type of business work experience available — and what it is worth to future applications — changes significantly by year group. Here is what is realistic and advisable at each stage.
         </p>
@@ -1957,93 +2030,136 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           <div className="border border-gray-100 rounded-xl p-6">
             <div className="font-bold text-gray-900 mb-1">Age 12 · Year 7</div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              No formal schemes exist at this age. The most useful exposure is observational: visiting a parent&apos;s workplace, sitting in on a family business conversation, or helping organise a school fundraiser. The goal is not a CV entry but early pattern recognition — what does a business actually do, and who does what inside it? Children who encounter real commercial decisions at 12 build mental models that accelerate formal learning years later.
+              No formal schemes exist at this age. The most useful exposure is observational: visiting a workplace with a parent, sitting in on a family business conversation, or taking responsibility for a school fundraiser. The goal is not a CV entry but pattern recognition — what does a business actually do, and who does what inside it? Children who encounter real commercial decisions early build mental models that accelerate learning years later when formal experience becomes available.
             </p>
           </div>
 
           <div className="border border-gray-100 rounded-xl p-6">
             <div className="font-bold text-gray-900 mb-1">Age 13 · Year 8</div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Still below the threshold for formal schemes, but increasingly capable of structured participation. Volunteering in a coordinating or administrative role for a community organisation, helping manage a school business or enterprise club, or taking on a small freelance task (design, writing, data entry) builds both practical experience and the self-directed discipline that formal schemes later reward. Students who arrive at Year 10 with two years of informal initiative behind them move through placement applications considerably faster.
+              Still below the threshold for formal schemes, but increasingly capable of structured participation. Volunteering in a coordinating role for a community organisation, managing a school enterprise club, or taking on a small freelance task (design, writing, data entry) builds both practical experience and the self-directed discipline that formal schemes later reward. Students who arrive at Year 10 with two years of informal initiative behind them move through placement applications considerably faster than those starting from scratch.
             </p>
           </div>
 
           <div className="border border-gray-100 rounded-xl p-6">
             <div className="font-bold text-gray-900 mb-1">Age 14 · Year 9</div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Year 9 is the GCSE choices year. It is also the year to identify which sector of business most interests you — finance, operations, strategy, marketing, consulting — so that Year 10 placement applications can be targeted rather than generic. Some local businesses and SMEs will accept Year 9 students for informal half-day or one-day visits, particularly when approached with a specific question: &ldquo;I am interested in how financial reporting works — could I spend a morning with your finance team?&rdquo; Targeted curiosity opens doors that generic requests for &ldquo;work experience&rdquo; do not.
+              Year 9 is the GCSE choices year — and also the year to identify which area of business interests you most. Finance, operations, strategy, marketing, consulting: narrowing early means Year 10 placement applications can be targeted rather than generic. Some SMEs will accept Year 9 students for informal half-day or full-day visits, particularly when approached with a specific question rather than a generic request for &ldquo;work experience.&rdquo; Targeted curiosity opens doors that general requests rarely do.
             </p>
           </div>
 
           <div className="border border-gray-100 rounded-xl p-6">
             <div className="font-bold text-gray-900 mb-1">Age 15 · Year 10</div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Year 10 is the standard first entry point for formal business work experience in the UK. Most secondary schools organise a compulsory one- or two-week block placement in Year 10. The quality of these placements varies enormously — a student placed at a family connection&apos;s small business will typically learn more than one assigned to a large firm where placement students are poorly managed. Regardless of the placement, the skill to practise at this stage is documentation: write down what you observe, what surprised you, and what you would do differently. This material is directly usable in Year 12 and 13 applications.
+              Year 10 is the standard first entry point for formal business work experience in the UK. Most secondary schools organise a compulsory one- or two-week block placement at this stage. The quality of these placements varies enormously — a student placed at a well-run SME will typically learn more than one filed away at a large firm where placement students are under-managed. Regardless of the placement, the non-negotiable practice at this stage is documentation: record what you observed, what surprised you, and what you would do differently. This material is directly reusable in Year 12 applications and UCAS personal statements.
             </p>
           </div>
 
           <div className="border border-gray-100 rounded-xl p-6">
             <div className="font-bold text-gray-900 mb-1">Age 16 · Year 11</div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Year 11 is dominated by GCSE revision and exams. Most formal schemes are not aimed at this year group. However, this is an excellent time for a self-arranged summer placement — a two-week placement at a local business or professional services firm, organised independently via direct outreach. Students who complete a self-organised Year 11 placement demonstrate exactly the initiative that competitive Year 12 schemes look for: they did not wait to be placed, they created an opportunity themselves. This is a meaningful differentiator in Year 12 scheme applications.
+              Year 11 is dominated by GCSE revision. Most formal schemes are not aimed at this year group. However, this is an excellent time for a self-arranged summer placement — two weeks at a local business or professional services firm, secured through direct outreach after exams. Students who complete a self-organised Year 11 summer placement demonstrate exactly the initiative that competitive Year 12 schemes look for: they did not wait to be placed, they created an opportunity. This is a meaningful differentiator in any subsequent application.
             </p>
           </div>
 
           <div className="border border-gray-100 rounded-xl p-6">
             <div className="font-bold text-gray-900 mb-1">Age 16–17 · Year 12</div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Year 12 is the prime window for structured business work experience. The major employer Spring Insight and Summer Insight schemes are specifically designed for this year group. Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey (Insight programme), BCG, and most large UK banks and professional services firms open applications in September–November for the following year. These programmes are competitive — 10 to 20 applications per place is common for top-tier schemes — but they are the most structured and most directly useful for UCAS personal statements. A Year 12 student who secures a recognisable placement and documents it carefully has the most immediately valuable work experience narrative of any year group.
+              Year 12 is the prime window. The major employer Spring Insight and Summer Insight programmes are specifically designed for this year group. Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey, BCG, and most large UK banks and professional services firms open applications in September–November for the following year. These programmes are competitive — 10 to 20 applications per place is typical for top-tier schemes — but they are the most structured, the most directly useful for UCAS, and the most likely to produce professional contacts and references. A Year 12 student who secures and documents a recognisable placement well has the most immediately valuable work experience profile of any year group.
             </p>
           </div>
 
           <div className="border border-gray-100 rounded-xl p-6">
             <div className="font-bold text-gray-900 mb-1">Age 17–18 · Year 13</div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Year 13 is the UCAS application year. Most students applying to competitive business, economics, finance, or law courses will have already completed their primary placement by this point. However, a Year 13 student who has not yet done anything formal still has options: many organisations accept short summer placements from pre-university students, and virtual work experience programmes (Forage, Springpod) can be completed in days. Any experience completed and documented before January can be referenced in a UCAS personal statement. It is late — but acting in September or October of Year 13 still leaves four to six months before most decisions are made.
+              Year 13 is the UCAS application year. Most students applying to competitive business, economics, finance, or law courses will have already completed their primary placement. A Year 13 student who has not yet done anything formal still has options: many organisations accept short summer placements from pre-university students, and virtual work experience programmes (Forage, Springpod) can be completed in days and referenced in applications. Any experience completed and documented before January can appear in a UCAS personal statement. Acting in September or October of Year 13 still leaves four to six months before most decisions are made.
             </p>
           </div>
         </div>
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Happens on a Business Work Experience Placement</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Year 12 Schemes: Who Runs Them and When to Apply</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Tasks assigned to placement students vary by organisation, but the most common activities across business placements are consistent.
+          The structured Year 12 programmes at large UK employers represent the most professionally valuable business work experience available to secondary school students. These are not informal placements — they are competitive, structured, and directly referenced by their sponsors as a graduate pipeline.
         </p>
         <ul className="space-y-5 mb-6">
           <Bullet>
-            <strong>Shadowing across functions.</strong> Finance, operations, sales, HR, strategy — most structured placements rotate students across departments. Understanding how different parts of a business depend on each other is knowledge that cannot be acquired from a textbook.
+            <strong>Professional services firms</strong> — KPMG, Deloitte, PwC, EY, and Grant Thornton all run Summer Insight programmes for Year 12 students across functions including audit, consulting, tax, and technology. Applications typically open in September–October. Places are limited and filled fast; early application is a documented advantage.
           </Bullet>
           <Bullet>
-            <strong>A defined project with a real deliverable.</strong> The best placements assign a specific task — a competitive analysis, a process improvement recommendation, a market sizing exercise — with a deadline and a reviewer. This structure is what separates a meaningful placement from a passive observation exercise.
+            <strong>Investment banking and financial services</strong> — Goldman Sachs, Barclays, HSBC, Lloyds, and JP Morgan run Spring Insight weeks (typically March–April) and Summer Analyst programmes. Some also run virtual insight days throughout the year. These are among the most competitive schemes — Goldman Sachs Spring Insight typically receives 15–20 applications per place.
           </Bullet>
           <Bullet>
-            <strong>Attendance at meetings.</strong> Client meetings, team stand-ups, budget reviews. Observing how decisions are actually made in a business — the negotiation, the uncertainty, the tradeoffs — is the most direct education available in how organisations function.
+            <strong>Management consulting</strong> — McKinsey (Insight Programme), BCG, Bain, and Oliver Wyman recruit Year 12 students for insight programmes and open days. Places are limited but the learning density is high — and the network value extends years forward.
           </Bullet>
           <Bullet>
-            <strong>Networking with professionals.</strong> Most structured schemes include informal access to professionals across seniority levels. Students who use this time to ask specific, prepared questions leave with contacts, insight, and occasionally references directly useful in future applications.
+            <strong>Technology and e-commerce</strong> — Amazon, Google, and the major UK retailers all run marketing and commercial insight programmes for Year 12 students. These are increasingly relevant for students interested in the commercial rather than technical side of business.
+          </Bullet>
+          <Bullet>
+            <strong>SMEs and direct outreach</strong> — The UK has approximately 5.5 million SMEs. They do not run formal schemes, which means they receive almost no placement applications — and frequently say yes to a well-written direct approach. A two-week placement at a well-run local professional services firm or scale-up often produces more hands-on experience than a large firm&apos;s structured programme.
+          </Bullet>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Application window:</strong> For September–March scheme applications, set a reminder for the first week of September. Students who apply in the first two weeks of the application window have a structural advantage — reviewers are less fatigued, more places remain available, and the bar has not yet risen as the pool fills.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Happens on a Business Work Experience Placement</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tasks assigned to placement students vary by organisation size and sector, but the core activities across business placements are consistent.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Rotation across functions.</strong> Finance, operations, sales, HR, strategy — most structured placements rotate students across departments to show how a business is connected. Understanding how a finance team&apos;s decisions constrain the marketing team&apos;s activity is knowledge that no textbook delivers as efficiently.
+          </Bullet>
+          <Bullet>
+            <strong>A defined project with a real deliverable.</strong> The most valuable placements assign a specific task — a competitive analysis, a market sizing exercise, a process improvement recommendation — with a deadline and a reviewer who gives real feedback. This structure separates a meaningful placement from a passive observation exercise.
+          </Bullet>
+          <Bullet>
+            <strong>Attendance at meetings.</strong> Client meetings, budget reviews, team stand-ups. Observing how commercial decisions are actually made — the negotiation, the uncertainty, the tradeoffs — is the most direct education available in how organisations function at ground level.
+          </Bullet>
+          <Bullet>
+            <strong>Networking with professionals across seniority levels.</strong> Most structured schemes include informal access to professionals at different career stages. Students who arrive with specific, prepared questions leave with contacts, insight, and occasionally a reference that is directly useful in future applications. One professional contact who will speak genuinely about your work is worth more than five LinkedIn connections.
           </Bullet>
         </ul>
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Build a Strong Application for Year 12 Schemes</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How Business Work Experience Strengthens University Applications</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          For competitive Year 12 schemes at large employers, the difference between students who are shortlisted and those who are not typically comes down to three things.
+          For competitive business, economics, finance, and law courses at Russell Group universities, work experience is treated as near-essential context for a strong personal statement. The mechanism is structural: a personal statement written by a student with genuine professional observation contains specific evidence, not assertion.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          &ldquo;I am interested in how businesses make financial decisions&rdquo; is an assertion. &ldquo;During my placement at [firm], I attended a quarterly planning meeting where the commercial director explained the tension between revenue growth targets and the cash flow constraints the finance team had modelled — and I wanted to understand how that tradeoff is formalised&rdquo; is evidence. Admissions readers at Warwick, LSE, and Bath process hundreds of the former; the latter is a category of one.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Business and Economics degrees</strong> — Russell Group admissions guides for these programmes consistently reference commercial exposure as a differentiating factor for competitive applicants.</Check>
+          <Check><strong>Law degrees</strong> — any business-facing legal or professional services placement provides applied context for commercial law interests that strengthens otherwise theoretical personal statements.</Check>
+          <Check><strong>Finance and Accounting degrees</strong> — direct exposure to financial reporting, budgeting, or client relationships at a professional services firm or bank is among the most directly referenced experiences in competitive finance programme admissions.</Check>
+          <Check><strong>Management and Strategy degrees</strong> — exposure to how strategic decisions are actually made in organisations gives students the observational material that distinguishes analytically mature candidates from those who describe interest without evidence.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Build an Application That Gets Shortlisted</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For competitive Year 12 schemes at large employers — typically receiving 10–20 applications per place — the difference between shortlisted students and those who are not comes down to three things, and almost nothing else.
         </p>
         <ul className="space-y-5 mb-6">
           <Bullet>
-            <strong>A specific, evidenced interest in business.</strong> &ldquo;I am interested in finance&rdquo; is not an application. &ldquo;After my Year 10 placement at [firm], I became interested in how capital allocation decisions are made at the divisional level&rdquo; is an application. The more specific and evidenced your stated interest, the more credible it reads to a reviewer processing hundreds of generic applications.
+            <strong>A specific, evidenced interest.</strong> &ldquo;I am interested in finance&rdquo; is not an application. &ldquo;After my Year 10 placement at [firm], I noticed that capital allocation decisions were made differently at divisional level versus central finance — and I want to understand that difference more formally&rdquo; is an application. Reviewers processing hundreds of generic expressions of interest are not looking for enthusiasm; they are looking for evidence of prior engagement.
           </Bullet>
           <Bullet>
-            <strong>Prior experience, however informal.</strong> Any prior work exposure — a school enterprise project, a family business, a self-arranged local placement — is relevant and should be mentioned. The purpose is not to imply extensive experience but to demonstrate that you have already tested your interest in the real world.
+            <strong>Prior experience, however informal.</strong> Any prior business exposure — a school enterprise project, a family business, a self-arranged local placement — is relevant and should be mentioned. The purpose is not to imply extensive experience but to demonstrate that you have already tested your interest in real conditions rather than imagined ones.
           </Bullet>
           <Bullet>
-            <strong>A third-party readiness assessment.</strong> An Eduentry Business readiness report gives recruiters verifiable evidence of your commercial aptitude and business knowledge before they have met you — addressing the core selection problem of how to differentiate between applicants with similar school profiles and no professional track record.
+            <strong>A verifiable aptitude signal.</strong> An Eduentry Business readiness report gives recruiters third-party evidence of commercial aptitude and business knowledge before they have met you — directly addressing the core selection problem of how to differentiate between applicants with identical school profiles and no professional track record.
           </Bullet>
         </ul>
         <Callout color="emerald">
-          <strong className="text-emerald-900">Application timing matters.</strong> Applications for major Year 12 summer schemes open in September–November of Year 12. Students who apply in the first two weeks of the window have a structural advantage — reviewers are less fatigued, more places remain, and the quality bar has not yet risen as the pool fills. Set a calendar reminder for the first week of September.
+          <strong className="text-emerald-900">The compounding argument in one sentence.</strong> A Year 12 student with a documented Year 10 placement, a self-arranged Year 11 summer placement at a different firm, and a verified readiness score has a professional profile that the vast majority of UCAS applicants in business, economics, and finance cannot match — not because they are more talented, but because they started earlier and documented consistently.
         </Callout>
       </section>
     </>
