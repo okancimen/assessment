@@ -1639,6 +1639,220 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'how-to-start-business-at-16': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Most 16-year-olds are told to focus on GCSEs, wait for a placement to come along, and think about earning money after university. That advice is increasingly outdated — and the students who ignore it are building something the majority of their peers cannot replicate: a real commercial track record before the age of 18.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        This is not about becoming the next teenage tech founder. It is about understanding the practical options available to a 16-year-old in the UK right now — the platforms, the realistic earnings, the legal basics, and how early business experience changes what universities see in an application. The data on all four of these is clear and largely ignored by the students who would benefit most from it.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Scale of the Opportunity — and Why Most Students Miss It</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The UK has approximately 5.5 million small and medium-sized businesses. The freelance economy grew by 46% between 2008 and 2023, with approximately 4.2 million people now working as sole traders (ONS, 2023). The platforms that enable independent work — tutoring marketplaces, freelancing platforms, e-commerce sites, content networks — were not available to previous generations of 16-year-olds in any meaningful form. They exist now, and most teenagers use them as consumers while almost none use them as providers.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The participation gap is significant. A 2023 survey by the Princes Trust found that <strong>57% of 16–25-year-olds in the UK want to start their own business</strong>, but fewer than 4% had taken any concrete step toward doing so. The barriers students cite most frequently — not enough money, not old enough, not sure how — are largely misconceptions. Starting a service business in the UK at 16 requires almost no capital, is entirely legal, and can be structured around school hours without any impact on academic performance.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">The compounding argument:</strong> A student who starts earning at 16, builds a client base or platform following over two years, and arrives at a university interview able to describe managing revenue, handling client relationships, and scaling a service has a professional maturity profile that most 21-year-old graduates cannot match.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What the Law Actually Says: Can a 16-Year-Old Run a Business in the UK?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          There is no minimum age for starting a business as a sole trader in the UK. A 16-year-old can legally earn money, invoice clients, and register as self-employed with HMRC. The legal picture is straightforward once you know it:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Sole trader registration:</strong> Anyone can register as self-employed with HMRC from age 16. Registration is free and takes around 10 minutes online. Self-employed individuals must complete a Self Assessment tax return for each tax year in which they earn above £1,000 (the trading allowance).
+          </Bullet>
+          <Bullet>
+            <strong>Income tax:</strong> The personal allowance for 2024/25 is £12,570. A 16-year-old who earns below this threshold pays no income tax on their earnings. A student tutoring 5 hours per week at £20 per hour throughout the school year earns approximately £3,600 — well below the threshold, with nothing to pay.
+          </Bullet>
+          <Bullet>
+            <strong>Limited companies:</strong> Under-18s cannot be appointed as a company director, which means formal limited company structures are not available until 18. For most teenage business activity, sole trader status is simpler and perfectly adequate.
+          </Bullet>
+          <Bullet>
+            <strong>Contracts:</strong> Contracts entered into by under-18s are voidable under UK law — the minor can choose to exit. In practice, most freelance and tutoring arrangements are informal and this creates no meaningful problem. Service agreements with clients are common, but enforce themselves through reputation rather than litigation.
+          </Bullet>
+          <Bullet>
+            <strong>Bank accounts:</strong> Several UK banks offer business accounts for under-18s with parental oversight, including Starling Bank and Monzo (through their teen account variants). A dedicated account for business income is good practice from day one — it makes tax calculation trivial.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Online Tutoring: The Highest-Return Starting Point</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Online tutoring is the most immediately viable business option for most 16-year-olds because the product — subject knowledge they already have — costs nothing to produce. A student who received a grade 8 or 9 in GCSE Maths can tutor Year 9 and 10 students. The knowledge transfer is genuine, the demand is high, and the platforms that connect tutors with students handle the marketing and payment infrastructure.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The UK private tutoring market was valued at approximately <strong>£6.5 billion in 2023</strong> (Technavio), driven by growing competition for grammar school places, GCSE grade inflation concerns, and pandemic-related learning gaps that have not fully closed. Demand consistently outpaces supply, particularly for GCSE and A-level subjects in STEM.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Tutorful</strong> — one of the UK&apos;s largest tutoring platforms, accepting tutors from age 16. Tutors set their own rates; most secondary school student tutors price between £15–25 per hour. Tutorful charges a commission on the first booking with each new student (around 20%), reducing to zero on repeat sessions. A tutor with five regular weekly students at £20 per hour earns approximately £400 per month before commission.
+          </Bullet>
+          <Bullet>
+            <strong>MyTutor</strong> — specialises in GCSE and A-level subjects, with a formal application and interview process. Tutors typically earn £18–22 per hour starting, rising to £30–40 for highly-rated tutors. MyTutor&apos;s vetting process means accepted tutors carry an implicit quality signal — worth pursuing even though the application is more demanding.
+          </Bullet>
+          <Bullet>
+            <strong>Superprof</strong> — a global platform accepting tutors from 16. Tutors pay a monthly subscription (around £19–29) rather than commissions, which means earnings are fully retained after the first month. Works best for tutors who can generate their own first few student reviews through personal networks.
+          </Bullet>
+          <Bullet>
+            <strong>Direct client outreach</strong> — many established tutors earn entirely through word-of-mouth referrals from satisfied parents. Starting with one or two students from a school community, delivering excellent results, and letting referrals compound is the most sustainable model. No platform fees, no commission, full rate retained.
+          </Bullet>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Realistic earnings benchmark:</strong> 4 regular weekly students × 1 hour each × £20/hour = £80/week, £3,200/term, approximately £6,400/year working around school hours. Below the income tax threshold. Equivalent to a significant part-time job without the commute, shift requirements, or minimum wage constraints.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Freelancing: Selling Skills Online</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tutoring requires subject knowledge. Freelancing requires a marketable skill — and 16-year-olds frequently have skills that professional markets will pay for: graphic design, video editing, social media content creation, copywriting, coding, and data entry are all in consistent demand from small businesses that cannot afford full-time employees.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The UK freelance market is large and growing. The Freelancer Club estimates that <strong>over 2 million people in the UK freelance as their primary income source</strong>, with a further estimated 1.5 million using freelancing as a secondary income. For 16-year-olds, the secondary income model — servicing 2–5 clients per month alongside school — is the realistic and sustainable starting point.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Fiverr (age 13+)</strong> — the world&apos;s largest freelance marketplace by listing volume. Services are listed as &ldquo;gigs&rdquo; starting at any price point. Most successful new Fiverr sellers in design and writing charge £20–60 per project initially, building reviews to justify higher rates. Fiverr takes 20% commission. A student completing two projects per week at £30 each earns approximately £192 per month after fees — modest but entirely real.
+          </Bullet>
+          <Bullet>
+            <strong>Social media management for local businesses</strong> — arguably the most underexplored opportunity for 16-year-olds. Most local businesses — restaurants, independent retailers, tradespeople — know they need a social media presence and have no time to manage it. A student offering to manage an Instagram account for £100–200 per month (posting 4–5 times per week, writing captions, basic graphic creation in Canva) is offering genuine value at a price local businesses will consider. Three clients generates £300–600 per month.
+          </Bullet>
+          <Bullet>
+            <strong>Video editing</strong> — YouTube, TikTok, and Instagram Reels have created a persistent demand for video editing from content creators who cannot edit their own footage. Rates on Fiverr range from £20 for a short edit to £150+ for long-form YouTube videos. Students comfortable with DaVinci Resolve or Premiere Pro can convert screen time into billable hours.
+          </Bullet>
+          <Bullet>
+            <strong>Graphic design (Canva and beyond)</strong> — small businesses consistently need logos, social graphics, pitch deck designs, and print materials. Canva has lowered the barrier to entry but not eliminated the market — business owners without design experience or time will pay £30–100 for a professionally composed social set or brand kit.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">E-Commerce and Product Businesses</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Product-based businesses require more upfront capital and time than service businesses, but they offer something service businesses do not: passive income potential and scalability beyond trading hours for money.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Depop and Vinted (reselling)</strong> — buying items cheaply at charity shops, car boot sales, or clearance events and reselling them at a profit is one of the oldest businesses in existence. Depop charges 10% on sales; Vinted charges the buyer rather than the seller. A student spending £50 at a charity shop on a Saturday and reselling items across the week at a 2–3× markup is doing legitimate retail arbitrage. The skills — stock selection, photography, pricing, customer service — are identical to those used in professional retail buying.
+          </Bullet>
+          <Bullet>
+            <strong>Etsy (handmade and digital products)</strong> — digital products (printable planners, revision notes, design templates) have zero marginal cost after creation. A set of GCSE revision flashcards, priced at £3–5 and listed on Etsy, can sell indefinitely with no additional effort. This is a genuinely scalable model: the work is done once, income is earned repeatedly. Etsy charges £0.16 per listing and 6.5% on transactions. A student who creates 10 digital products and generates 50 sales per month at an average of £4 earns approximately £170 per month passively.
+          </Bullet>
+          <Bullet>
+            <strong>Print-on-demand</strong> — services like Printful and Printify connect to an Etsy shop and print and ship custom-designed products (T-shirts, mugs, phone cases) only when an order is placed. No inventory, no upfront cost. Margins are thinner than traditional retail (typically 20–35%) but the capital risk is zero. A student who sells 20 custom T-shirts per month at a £5 margin earns £100 with no stock risk.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Structured Programmes: Young Enterprise and the Prince&apos;s Trust</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Independent business activity is valuable but unverified — an admissions reader has no way to assess whether the business was real, whether the student actually ran it, or what they genuinely learned. Structured programmes solve this by providing documented, school-endorsed evidence of entrepreneurial activity.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Young Enterprise Company Programme</strong> — active in over 5,500 UK schools, reaching approximately 250,000 students per year. Student teams form a real company, elect directors, raise share capital (typically £50–200 through share sales to parents and teachers), produce and sell a product or service, and compete at regional and national levels. The programme is free to participate in, runs across an academic year, and produces a formal certificate. For university applications, it is the gold standard of school-age business experience: structured, measurable, and widely recognised by admissions teams.
+          </Bullet>
+          <Bullet>
+            <strong>Prince&apos;s Trust Enterprise Programme</strong> — available to 18–30-year-olds, so not immediately accessible at 16, but an important target for post-school entrepreneurship. The Trust provides grants of up to £5,000 for young people starting businesses, alongside mentoring and business support. Planning at 16 to apply at 18 with two years of evidence behind you is a strategic approach to this resource.
+          </Bullet>
+          <Bullet>
+            <strong>EDGE Foundation Entrepreneurship Award</strong> — a qualification-linked programme for students aged 14–19, run through schools. It provides formal recognition of entrepreneurial activity and project work — relevant for students who are running independent businesses but want a documented credential to reference in applications.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Universities Actually Think of It</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The university admissions data on entrepreneurship and early business experience is consistent: it matters, it is valued, and it is rare enough to be a genuine differentiator.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>83% of UK graduate employers</strong> consider prior work experience important when assessing candidates (NACE, 2023). Independently run business activity — where the student was the employer, not the employee — is weighted more heavily by some admissions readers precisely because it requires more initiative than securing a placement at a firm. Running a tutoring business for two years demonstrates the same commercial competencies as a Year 12 placement, plus initiative, self-direction, and execution.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Business and Economics degrees</strong> — admissions guidance from LSE, Warwick, and Bath explicitly values commercial initiative. A personal statement that describes pricing a service, managing clients, handling complaints, and tracking revenue month-over-month gives an admissions reader specific evidence of commercial understanding that most applicants cannot provide.
+          </Check>
+          <Check>
+            <strong>Law degrees</strong> — client relationship management, contract awareness, and commercial judgment are all developed by running a real business. Students who have navigated client disputes, managed expectations, or made pricing decisions have applied legal-adjacent thinking in a way that directly strengthens a law school application.
+          </Check>
+          <Check>
+            <strong>Engineering and Technology degrees</strong> — a student who has freelanced in web development, app design, or data analysis has demonstrated technical application beyond coursework. This is increasingly valued in a sector where portfolio evidence is taken seriously at every level.
+          </Check>
+          <Check>
+            <strong>Medicine and healthcare</strong> — tutoring, particularly tutoring students with learning differences, demonstrates communication, patience, and a teaching-oriented relationship with knowledge. Students who have tutored consistently reference it effectively in medical school personal statements.
+          </Check>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">How to write about it in a personal statement:</strong> Do not say &ldquo;I started a tutoring business.&rdquo; Say: &ldquo;Over two years of running a tutoring practice for GCSE Maths students, I managed eight regular clients, developed structured lesson plans tailored to individual gaps, and tracked student progress against exam objectives — an experience that taught me more about how learning actually works than any classroom module.&rdquo; The specifics are the evidence. The evidence is what separates the application from the pile.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Honest Trade-offs</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Starting a business at 16 is not without real costs, and being clear-eyed about them is part of treating this as a genuine commercial decision rather than a motivational exercise.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Time is the primary constraint.</strong> A student in Year 11 or 12 facing GCSE or A-level examinations cannot run a business on a scale that compromises study time. The right model for most students is 4–8 hours per week maximum — enough to generate income and experience without academic impact. Students who attempt more in exam years almost universally report regret.
+          </Bullet>
+          <Bullet>
+            <strong>Income is not guaranteed.</strong> The platforms and models described above have genuine earnings potential, but none guarantee it. Building a client base in tutoring takes time; building Etsy traffic takes months of SEO effort; Fiverr gigs sit unread without active promotion. Students should expect an unprofitable first month and plan for a three-month ramp before consistent income appears.
+          </Bullet>
+          <Bullet>
+            <strong>Tax and admin are real responsibilities.</strong> Earning above £1,000 per year requires registering as self-employed and completing a Self Assessment return. This is simple — most 16-year-olds can complete it unaided — but ignoring it creates legal and financial exposure. Set a reminder for the October 31st paper deadline or January 31st online deadline each year.
+          </Bullet>
+          <Bullet>
+            <strong>Not all experience is equal.</strong> A tutoring business that generates eight regular clients and documented, measurable student improvement is university-application gold. A Depop account that turned over £200 is real but thin. The depth and sustainability of the business matters more than the category — one well-run service, maintained over two years, outweighs three brief experiments in application terms.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Where to Start This Week</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most common reason students do not start is the gap between knowing it is possible and knowing what the first concrete step is. Here it is:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Identify one subject or skill you are genuinely good at.</strong> Not competent — good. A grade 8 in GCSE Biology, a portfolio of graphic design work, a YouTube channel you already run. That is your product.
+          </Bullet>
+          <Bullet>
+            <strong>Choose one platform and create a profile this week.</strong> Tutorful for tutoring. Fiverr for design or writing. Depop for resale. One profile, not five. Spreading across platforms before you have any reviews or track record guarantees mediocrity on all of them.
+          </Bullet>
+          <Bullet>
+            <strong>Get your first client through your network, not the platform.</strong> The first client from a platform requires reviews; the first client from your network requires a conversation. Tell five people what you are doing and ask if they know anyone who needs it. One referral breaks the cold-start problem.
+          </Bullet>
+          <Bullet>
+            <strong>Document from day one.</strong> Keep a simple spreadsheet: date, client, hours, earnings, what you learned. This takes three minutes per session and produces the raw material for a compelling UCAS personal statement two years later. The students who most regret early business activity are almost always the ones who cannot remember the specifics when applications come around.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Conclusion</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The window between 16 and 18 is one of the most underused periods of commercial development in a person&apos;s life. The platforms exist, the legal framework permits it, the tax situation is favourable, and universities — particularly competitive programmes in business, law, economics, and technology — actively reward the evidence it produces.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          The students who take this seriously do not all become entrepreneurs. Most of them become more employable graduates, stronger UCAS applicants, and professionals who understand how commercial decisions are made at ground level before they are ever asked to make them in a formal role. That understanding — built at 16 rather than 22 — is worth considerably more than the income it generates while you are still in school.
+        </p>
+      </section>
+    </>
+  ),
+
   'how-does-your-child-compare-globally': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">

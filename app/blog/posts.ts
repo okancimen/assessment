@@ -1086,6 +1086,44 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'how-to-start-business-at-16',
+    title: 'How to Start Business Life at 16: Platforms, Rates, and What Universities Think of It',
+    shortTitle: 'How to Start Business Life at 16',
+    description:
+      'Can a 16-year-old actually run a business in the UK? Yes — and universities notice. From online tutoring to freelancing and e-commerce, here are the platforms, realistic earnings, and exactly how early business experience changes university applications.',
+    date: '2026-09-06',
+    readTime: '11 min read',
+    tags: ['Internship', 'Career Development', 'Work Experience', 'Business'],
+    faqs: [
+      {
+        q: 'Can a 16-year-old legally run a business in the UK?',
+        a: 'Yes. There is no minimum age to start a business in the UK. A 16-year-old can register as a sole trader, open a business bank account with some providers, and earn income legally. However, under-18s cannot form a limited company as a director, cannot enter binding contracts without parental consent in certain situations, and earnings above the personal allowance (£12,570 for 2024/25) are subject to income tax. Most 16-year-old earners will stay well below the threshold. National Insurance contributions begin at £12,570 too, so most teenage freelancers owe nothing.',
+      },
+      {
+        q: 'How much can a 16-year-old realistically earn from online tutoring?',
+        a: 'On MyTutor, new tutors typically start at £18–22 per hour; experienced tutors with strong reviews reach £30–40 per hour. On Tutorful, rates are self-set — most student tutors price between £15–25 per hour. Tutoring 5 hours per week at £20 per hour generates approximately £400 per month, or £4,800 per year — meaningful income that stays well below the UK income tax threshold.',
+      },
+      {
+        q: 'What platforms can a 16-year-old use to earn money online in the UK?',
+        a: 'Tutoring: MyTutor (minimum age 18 to apply independently, but 16 with parental consent in some cases), Tutorful (16+), Superprof (16+). Freelancing: Fiverr (13+), PeoplePerHour (18+ — use with parental oversight), Upwork (18+). E-commerce: Etsy (18+ account, but parents can run the account on behalf of a minor), Depop (13+). Content: YouTube (13+), TikTok Creator Fund (18+). Most platforms have age-gating at 18 for payment processing — a parent can hold the account while the student does the work.',
+      },
+      {
+        q: 'Does starting a business at 16 help university applications?',
+        a: 'Significantly — particularly for business, economics, law, and entrepreneurship programmes. A personal statement that describes running a real business (managing clients, pricing services, handling feedback, tracking revenue) is categorically more persuasive than one describing theoretical interest. Russell Group admissions guides for competitive programmes explicitly value evidence of commercial initiative. The Young Enterprise Company Programme also provides a structured, school-endorsed version of this experience with formal recognition.',
+      },
+      {
+        q: 'What is the Young Enterprise Company Programme?',
+        a: 'Young Enterprise is a UK charity that runs the Company Programme in secondary schools — students form a real company, elect roles, raise share capital, produce and sell a product or service, and compete at regional and national levels. It is the most widely recognised school-age business programme in the UK, active in over 5,500 schools. Participation counts as documented entrepreneurial experience and is explicitly referenced in some Russell Group university admissions guidance as evidence of commercial initiative.',
+      },
+    ],
+    cta: {
+      heading: 'Ready to prove your business readiness?',
+      body: 'Free 34-question adaptive assessment for students aged 14+. Get a personalised business readiness report — and something concrete to put in every university application.',
+      label: 'Apply free — Business track',
+      href: '/business',
+    },
+  },
+  {
     slug: 'how-does-your-child-compare-globally',
     title: 'How Does Your Child Compare Globally? A Parent\'s Guide to International Academic Benchmarks',
     shortTitle: 'How Does Your Child Compare Globally?',
