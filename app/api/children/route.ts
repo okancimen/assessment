@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
-  const { name, date_of_birth } = await request.json()
+  const { name, date_of_birth, goals, subjects, outcome_goal } = await request.json()
 
   if (!name || !date_of_birth) {
     return NextResponse.json({ error: 'Name and date of birth are required' }, { status: 400 })
@@ -29,7 +29,12 @@ export async function POST(request: NextRequest) {
 
   const { data, error } = await supabase
     .from('children')
-    .insert({ parent_id: user.id, name, date_of_birth })
+    .insert({
+      parent_id: user.id, name, date_of_birth,
+      goals: goals ?? [],
+      subjects: subjects ?? [],
+      outcome_goal: outcome_goal ?? null,
+    })
     .select()
     .single()
 
