@@ -80,7 +80,7 @@ export default function BlogIndexPage() {
         </div>
 
         <div className="space-y-6">
-          {BLOG_POSTS.map((post) => (
+          {[...BLOG_POSTS].sort((a, b) => b.date.localeCompare(a.date)).map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
