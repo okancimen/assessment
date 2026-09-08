@@ -24,8 +24,8 @@ export default function PublicFooterES() {
           <div>
             <p className="text-xs font-semibold text-[#1d1d1f] uppercase tracking-wider mb-1">Cuenta</p>
             <ul>
-              <li><Link href="/auth/login"    className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Iniciar sesión</Link></li>
-              <li><Link href="/auth/register" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Crear cuenta</Link></li>
+              <li><Link href="/es/auth/login"    className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Iniciar sesión</Link></li>
+              <li><Link href="/es/auth/register" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Crear cuenta</Link></li>
               <li><Link href="/dashboard"     className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Panel de control</Link></li>
             </ul>
           </div>

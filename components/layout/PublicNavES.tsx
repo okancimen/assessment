@@ -18,8 +18,8 @@ export default function PublicNavES() {
         </div>
 
         <div className="flex items-center gap-5">
-          <Link href="/auth/login"          className="text-xs text-[#1d1d1f] hover:opacity-50 transition-opacity hidden sm:block">Iniciar sesión</Link>
-          <Link href="/internship/apply" prefetch={false} className="text-xs font-medium text-[#4F46E5] hover:opacity-70 transition-opacity">Empezar gratis</Link>
+          <Link href="/es/auth/login"       className="text-xs text-[#1d1d1f] hover:opacity-50 transition-opacity hidden sm:block">Iniciar sesión</Link>
+          <Link href="/es/auth/register" prefetch={false} className="text-xs font-medium text-[#4F46E5] hover:opacity-70 transition-opacity">Empezar gratis</Link>
           <LanguagePickerMain />
         </div>
       </div>

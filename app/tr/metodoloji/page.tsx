@@ -223,7 +223,7 @@ export default function MetodolojiPage() {
       <div className="mt-16 text-center bg-[#eef2ff] rounded-2xl border border-[#c7d2fe] p-10">
         <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Çocuğunuzun yüzdelik dilimini görün</h2>
         <p className="text-[#6e6e73] mb-6">Ücretsiz değerlendirme · 6–17 yaş · 90 dakikada sonuçlar</p>
-        <Link href="/auth/register" className="inline-block bg-[#4F46E5] text-white font-semibold px-8 py-3 rounded-xl hover:bg-[#4338CA] transition-colors">
+        <Link href="/tr/auth/register" className="inline-block bg-[#4F46E5] text-white font-semibold px-8 py-3 rounded-xl hover:bg-[#4338CA] transition-colors">
           Ücretsiz değerlendirmeyi başlat
         </Link>
       </div>

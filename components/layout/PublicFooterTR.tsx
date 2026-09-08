@@ -24,8 +24,8 @@ export default function PublicFooterTR() {
           <div>
             <p className="text-xs font-semibold text-[#1d1d1f] uppercase tracking-wider mb-1">Hesap</p>
             <ul>
-              <li><Link href="/auth/login"    className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Giriş yap</Link></li>
-              <li><Link href="/auth/register" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Hesap oluştur</Link></li>
+              <li><Link href="/tr/auth/login"    className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Giriş yap</Link></li>
+              <li><Link href="/tr/auth/register" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Hesap oluştur</Link></li>
               <li><Link href="/dashboard"     className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Kontrol paneli</Link></li>
             </ul>
           </div>

@@ -124,7 +124,7 @@ export default function TurkishHomePage() {
                 <span>Ücretsiz</span>
               </div>
               <CtaLink
-                href="/auth/register"
+                href="/tr/auth/register"
                 label="hero_academic_tr"
                 className="bg-[#4F46E5] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#4338CA] transition-colors text-center"
               >
@@ -207,7 +207,7 @@ export default function TurkishHomePage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <CtaLink
-                  href="/auth/register"
+                  href="/tr/auth/register"
                   label="academic_section_tr"
                   className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
                 >
@@ -379,7 +379,7 @@ export default function TurkishHomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <CtaLink href="/auth/register" label="how_it_works_tr" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+            <CtaLink href="/tr/auth/register" label="how_it_works_tr" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Ücretsiz değerlendirmeyi başlat →
             </CtaLink>
           </div>
@@ -463,7 +463,7 @@ export default function TurkishHomePage() {
                 ))}
               </ul>
               <div className="mt-7 pt-6 border-t border-[#424245]">
-                <CtaLink href="/auth/register" label="what_you_get_academic_tr" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+                <CtaLink href="/tr/auth/register" label="what_you_get_academic_tr" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
                   Ücretsiz başla →
                 </CtaLink>
               </div>
@@ -563,7 +563,7 @@ export default function TurkishHomePage() {
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">Akademik Değerlendirme</p>
             <h2 className="text-2xl font-bold text-white mb-3">Çocuğunuzun küresel konumunu keşfedin.</h2>
             <p className="text-[#a1a1a7] text-sm mb-8">2 saatten kısa sürede eksiksiz uluslararası bağlam.</p>
-            <CtaLink href="/auth/register" label="bottom_cta_academic_tr" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+            <CtaLink href="/tr/auth/register" label="bottom_cta_academic_tr" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Ücretsiz değerlendirmeyi başlat →
             </CtaLink>
           </div>
