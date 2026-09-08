@@ -70,6 +70,43 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Is the internship readiness assessment free?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, the assessment is completely free for all students. There are no subscriptions, hidden charges, or premium tiers.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Who is the internship assessment for?',
+      acceptedAnswer: { '@type': 'Answer', text: 'The assessment is designed for high school students aged 14 and above who are preparing for work experience or internship placements in Tech, Business, Data Analytics, or Digital Marketing.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does the internship assessment take?',
+      acceptedAnswer: { '@type': 'Answer', text: 'The assessment consists of 34 adaptive questions across four phases and takes approximately 35 minutes to complete. It is fully resumable, so students can pause and continue across sessions.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What tracks are available?',
+      acceptedAnswer: { '@type': 'Answer', text: 'There are four internship tracks: Technology, Business, Data Analytics, and Digital Marketing. The assessment adapts to the student\'s chosen track, testing relevant domain knowledge alongside general aptitude and workplace skills.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What does the readiness report include?',
+      acceptedAnswer: { '@type': 'Answer', text: 'The personalised readiness report includes a readiness tier (Internship Ready, Developing, or Needs Support), an AI-generated summary of the student\'s performance, and on-demand phase insights covering strengths and one growth area per assessment phase.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does the internship assessment help with university applications?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. The assessment gives students a structured way to understand their readiness for professional environments, identify strengths, and gain insight they can articulate in personal statements. Russell Group universities explicitly cite work experience in admissions guidance for competitive courses.' },
+    },
+  ],
+}
+
 const TRACK_ICONS: Record<string, string> = {
   tech: '💻',
   business: '📈',
@@ -89,6 +126,7 @@ export default function InternshipLandingPage() {
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <PublicNav />
       <main className="flex-1">
         {/* Hero */}

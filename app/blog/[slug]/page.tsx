@@ -159,7 +159,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <span>·</span>
             <span>{post.readTime}</span>
             <span>·</span>
-            <span>Eduentry Research Team</span>
+            <span>Eduentry Editorial</span>
           </div>
         </div>
 
