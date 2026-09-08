@@ -100,6 +100,7 @@ function InternshipResults({ id, data: initial }: { id: string; data: Internship
           <h1 className="text-2xl font-bold text-[#1d1d1f] tracking-tight">
             {data.is_owner ? data.child_name : data.child_initials}
           </h1>
+          <TierBadge tier={data.tier} />
         </div>
 
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6 space-y-3">
