@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 
 const LANGUAGES = [
   { code: 'EN', label: 'English',  flag: '🇬🇧', href: 'https://eduentry.com' },
-  { code: 'ES', label: 'Español',  flag: '🇪🇸', href: 'https://eduentry.ai/es' },
+  { code: 'ES', label: 'Español',  flag: '🇪🇸', href: '/es' },
   { code: 'TR', label: 'Türkçe',   flag: '🇹🇷', href: 'https://eduentry.ai/tr' },
 ]
 

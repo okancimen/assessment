@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { BLOG_POSTS } from './blog/posts'
+import { BLOG_POSTS_ES } from './blog/posts-es'
 import { GRAMMAR_AREAS } from './grammar-schools/data'
 
 const BASE = 'https://eduentry.com'
@@ -42,5 +43,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...subjectPages, ...grammarPages, ...blogPages]
+  const esPages: MetadataRoute.Sitemap = [
+    { url: `${BASE}/es`,      lastModified: '2026-09-09', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/es/blog`, lastModified: '2026-09-09', changeFrequency: 'weekly',  priority: 0.7 },
+    ...BLOG_POSTS_ES.map((post) => ({
+      url: `${BASE}/es/blog/${post.slug}`,
+      lastModified: post.dateModified ?? post.date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
+  ]
+
+  return [...staticPages, ...subjectPages, ...grammarPages, ...blogPages, ...esPages]
 }
