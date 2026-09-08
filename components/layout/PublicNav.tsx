@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
 import Logo from '@/components/ui/Logo'
+import LanguagePickerMain from '@/components/ui/LanguagePickerMain'
 
 export default function PublicNav() {
   return (
@@ -11,13 +14,14 @@ export default function PublicNav() {
           <Link href="/11-plus"          className="hover:opacity-50 transition-opacity">11+ Prep</Link>
           <Link href="/grammar-schools"  className="hover:opacity-50 transition-opacity">Grammar Schools</Link>
           <Link href="/subjects"         className="hover:opacity-50 transition-opacity">Subjects</Link>
-          <a href="https://eduentry.ai"   className="hover:opacity-50 transition-opacity">Internship</a>
+          <a href="https://eduentry.ai"  className="hover:opacity-50 transition-opacity">Internship</a>
           <Link href="/blog"             className="hover:opacity-50 transition-opacity">Blog</Link>
         </div>
 
         <div className="flex items-center gap-5">
           <Link href="/auth/login"    className="text-xs text-[#1d1d1f] hover:opacity-50 transition-opacity hidden sm:block">Sign in</Link>
           <Link href="/auth/register" prefetch={false} className="text-xs font-medium text-[#4F46E5] hover:opacity-70 transition-opacity">Get started</Link>
+          <LanguagePickerMain />
         </div>
       </div>
     </nav>
