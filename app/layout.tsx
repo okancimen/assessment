@@ -78,6 +78,12 @@ export default function RootLayout({
         <meta name="yandex-verification" content="f8b17ecde6325153" />
         <link rel="preconnect" href="https://xronkbdtsnjibwhuelni.supabase.co" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yf8qhuzltg");`,
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col bg-white font-[family-name:var(--font-geist-sans)]">
         {children}
