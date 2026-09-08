@@ -1,12 +1,12 @@
-import PublicNav from '@/components/layout/PublicNav'
-import PublicFooter from '@/components/layout/PublicFooter'
+import PublicNavES from '@/components/layout/PublicNavES'
+import PublicFooterES from '@/components/layout/PublicFooterES'
 
 export default function EsLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <PublicNav />
+      <PublicNavES />
       {children}
-      <PublicFooter />
+      <PublicFooterES />
     </div>
   )
 }

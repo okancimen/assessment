@@ -44,8 +44,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   const esPages: MetadataRoute.Sitemap = [
-    { url: `${BASE}/es`,      lastModified: '2026-09-09', changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE}/es/blog`, lastModified: '2026-09-09', changeFrequency: 'weekly',  priority: 0.7 },
+    { url: `${BASE}/es`,                    lastModified: '2026-09-09', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/es/blog`,               lastModified: '2026-09-09', changeFrequency: 'weekly',  priority: 0.7 },
+    { url: `${BASE}/es/sobre-nosotros`,     lastModified: '2026-09-09', changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE}/es/metodologia`,        lastModified: '2026-09-09', changeFrequency: 'monthly', priority: 0.6 },
     ...BLOG_POSTS_ES.map((post) => ({
       url: `${BASE}/es/blog/${post.slug}`,
       lastModified: post.dateModified ?? post.date,

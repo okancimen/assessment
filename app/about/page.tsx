@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'About Eduentry — Free Academic Assessment for Children',
   description: 'Eduentry is a free adaptive assessment for children aged 6–17. Standardised scores benchmarked against UK National Curriculum, PISA and IB standards.',
   keywords: ['about Eduentry', 'free children assessment platform', 'international academic benchmark', 'adaptive testing children', 'UK PISA IB benchmark', 'free academic assessment ages 6 17'],
-  alternates: { canonical: 'https://eduentry.com/about', languages: { 'en-GB': 'https://eduentry.com/about', 'x-default': 'https://eduentry.com/about' } },
+  alternates: { canonical: 'https://eduentry.com/about', languages: { 'en-GB': 'https://eduentry.com/about', es: 'https://eduentry.com/es/sobre-nosotros', 'x-default': 'https://eduentry.com/about' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     title: 'About Eduentry — Free Academic Assessment for Children',
