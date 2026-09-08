@@ -60,12 +60,6 @@ const subjectColors: Record<string, { border: string; accent: string; bg: string
   nonverbal_reasoning: { border: '#fbcfe8', accent: '#DB2777', bg: '#fce7f3' },
 }
 
-const subjectSlugs: Record<string, string> = {
-  english:             'english',
-  mathematics:         'maths',
-  verbal_reasoning:    'verbal-reasoning',
-  nonverbal_reasoning: 'non-verbal-reasoning',
-}
 
 const BELL_SUBJECTS_TR = [
   { score: 103, label: 'İngilizce', color: '#4F46E5', dotColor: '#4F46E5' },
@@ -287,10 +281,9 @@ export default function TurkishHomePage() {
             {SUBJECTS.map((subject) => {
               const c = subjectColors[subject]
               return (
-                <Link
+                <div
                   key={subject}
-                  href={`/subjects/${subjectSlugs[subject]}`}
-                  className="rounded-3xl p-6 border hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
+                  className="rounded-3xl p-6 border"
                   style={{ background: c.bg, borderColor: c.border }}
                 >
                   <div className="w-10 h-10 rounded-2xl flex items-center justify-center mb-4" style={{ background: c.accent + '22' }}>
@@ -300,30 +293,9 @@ export default function TurkishHomePage() {
                   </div>
                   <h3 className="font-bold text-[#1d1d1f] mb-2">{SUBJECT_LABELS_TR[subject]}</h3>
                   <p className="text-sm text-[#636366] leading-relaxed">{SUBJECT_DESCRIPTIONS_TR[subject]}</p>
-                  <span className="text-xs font-semibold mt-4 block" style={{ color: c.accent }}>Daha fazla bilgi →</span>
-                </Link>
+                </div>
               )
             })}
-          </div>
-
-          {/* 11+ callout */}
-          <div className="mt-8 bg-[#f5f3ff] rounded-3xl border border-[#ddd6fe] p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <div className="flex-1">
-              <p className="text-xs font-semibold text-[#7C3AED] uppercase tracking-widest mb-2">11+ &amp; Gramer Okulları</p>
-              <h3 className="font-bold text-[#1d1d1f] text-lg mb-1">11+ sınavına hazırlanıyor musunuz?</h3>
-              <p className="text-sm text-[#636366] leading-relaxed max-w-lg">
-                Dört ders, İngiltere\'deki gramer okullarının kullandığı 11+ sınav yapısını doğrudan yansıtır.
-                Eduentry size gerçek bir kıyaslama sunar — standartlaştırılmış puanlar, yalnızca doğru/yanlış sayısı değil.
-              </p>
-            </div>
-            <div className="flex gap-3 flex-shrink-0 flex-wrap">
-              <Link href="/11-plus" className="bg-[#7C3AED] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#6D28D9] transition-colors whitespace-nowrap">
-                11+ Rehberi →
-              </Link>
-              <Link href="/grammar-schools" className="border border-[#ddd6fe] text-[#7C3AED] px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#f5f3ff] transition-colors whitespace-nowrap">
-                Gramer okulları →
-              </Link>
-            </div>
           </div>
         </div>
       </section>
