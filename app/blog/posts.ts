@@ -1086,6 +1086,40 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'how-to-differentiate-yourself-at-15',
+    title: 'Grades Are No Longer Enough: How Students Actually Differentiate Themselves at 15',
+    shortTitle: 'How to Differentiate Yourself at 15',
+    description:
+      'More students than ever are hitting top grades — which makes academic results a weaker differentiator than at any point in the last two decades. Here is what actually separates competitive university applicants, and why starting to build it at 15 changes the outcome.',
+    date: '2026-09-08',
+    readTime: '11 min read',
+    tags: ['Internship', 'Career Development', 'Work Experience', 'University Admissions'],
+    faqs: [
+      {
+        q: 'Are grades still important for university applications?',
+        a: 'Yes — grades are the floor, not the ceiling. A-level offers from competitive universities (typically AAA–A*AA) must be met or the place is withdrawn. The problem is not that grades stopped mattering; it is that they stopped differentiating. When 26–27% of all A-level entries receive A or A* grades, and the most oversubscribed courses at Russell Group universities receive 10–15 applications per place, grades become a filter rather than a selector. What selects between candidates who all meet the grade threshold is everything else.',
+      },
+      {
+        q: 'Why is 15 the right age to start differentiating?',
+        a: 'Year 10 and 11 (age 14–16) is the optimal window for two compounding reasons. First, it is the earliest point at which formal work experience placements are available and expected — most secondary schools run a Year 10 placement week, and many large employer schemes accept Year 10 students. Second, it is early enough to compound: a student who starts building a professional track record at 15 arrives at a UCAS application with two years of documented experience rather than two weeks. The same work done at 17 produces a weaker application because there is no time to build on it.',
+      },
+      {
+        q: 'What actually differentiates a strong university applicant in 2026?',
+        a: 'In order of impact, based on admissions data and employer research: (1) Specific, documented work experience in a relevant field — not generic, but evidenced with observations and outcomes; (2) Verified domain knowledge, particularly for STEM, law, and business programmes where aptitude assessment is increasingly common; (3) Sustained personal projects with a measurable output — a business, a portfolio, a publication, a competition result; (4) A professional network built through real placements, not LinkedIn connections; (5) Intellectual engagement beyond the syllabus — reading, competitions, online courses referenced with specific insight rather than title-dropping.',
+      },
+      {
+        q: 'How much does work experience actually affect a personal statement?',
+        a: 'Significantly — and the mechanism is structural, not impressionistic. Admissions readers at competitive universities assess personal statements for evidence of genuine engagement with a field. A student who describes specific professional observations (what they noticed about how a finance team makes budget decisions, what they learned about how a marketing campaign fails) is providing evidence. A student who describes theoretical interest is making an assertion. Admissions readers are trained to distinguish between the two, and at courses receiving thousands of applications, the ones that contain evidence get read twice.',
+      },
+    ],
+    cta: {
+      heading: 'Start building a profile that stands out.',
+      body: 'Free 34-question adaptive assessment for students aged 14+. Get a verified readiness report across aptitude, domain knowledge, and workplace skills — the kind of evidence that strengthens every application.',
+      label: 'Take the free assessment',
+      href: '/apply',
+    },
+  },
+  {
     slug: 'how-to-start-business-at-16',
     title: 'How to Start Business Life at 16: Platforms, Rates, and What Universities Think of It',
     shortTitle: 'How to Start Business Life at 16',
