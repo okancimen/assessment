@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   keywords: 'Teoría de Respuesta al Ítem niños, evaluación adaptativa TRI, puntuación estandarizada niños, estimación MAP, metodología evaluación educativa, prueba adaptativa',
   alternates: {
     canonical: `${BASE_URL}/es/metodologia`,
-    languages: { es: `${BASE_URL}/es/metodologia`, 'en-GB': `${BASE_URL}/methodology`, 'x-default': `${BASE_URL}/methodology` },
+    languages: { es: `${BASE_URL}/es/metodologia`, 'en-GB': `${BASE_URL}/methodology`, tr: `${BASE_URL}/tr/metodoloji`, 'x-default': `${BASE_URL}/methodology` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

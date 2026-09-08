@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   keywords: ['sobre Eduentry', 'plataforma evaluación niños gratuita', 'referencia académica internacional', 'prueba adaptativa niños', 'evaluación académica 6 17 años', 'evaluación prácticas instituto'],
   alternates: {
     canonical: `${BASE_URL}/es/sobre-nosotros`,
-    languages: { es: `${BASE_URL}/es/sobre-nosotros`, 'en-GB': `${BASE_URL}/about`, 'x-default': `${BASE_URL}/about` },
+    languages: { es: `${BASE_URL}/es/sobre-nosotros`, 'en-GB': `${BASE_URL}/about`, tr: `${BASE_URL}/tr/hakkimizda`, 'x-default': `${BASE_URL}/about` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

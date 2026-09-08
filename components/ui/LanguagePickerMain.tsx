@@ -18,14 +18,65 @@ const ES_TO_EN: Record<string, string> = {
   '/es/metodologia': '/methodology',
 }
 
+const EN_TO_TR: Record<string, string> = {
+  '/': '/tr',
+  '/internship': '/tr',
+  '/blog': '/tr/blog',
+  '/about': '/tr/hakkimizda',
+  '/methodology': '/tr/metodoloji',
+}
+
+const TR_TO_EN: Record<string, string> = {
+  '/tr': '/',
+  '/tr/blog': '/blog',
+  '/tr/hakkimizda': '/about',
+  '/tr/metodoloji': '/methodology',
+}
+
+const ES_TO_TR: Record<string, string> = {
+  '/es': '/tr',
+  '/es/blog': '/tr/blog',
+  '/es/sobre-nosotros': '/tr/hakkimizda',
+  '/es/metodologia': '/tr/metodoloji',
+}
+
+const TR_TO_ES: Record<string, string> = {
+  '/tr': '/es',
+  '/tr/blog': '/es/blog',
+  '/tr/hakkimizda': '/es/sobre-nosotros',
+  '/tr/metodoloji': '/es/metodologia',
+}
+
 function getEsHref(pathname: string): string {
   if (pathname.startsWith('/es')) return pathname
+  if (pathname.startsWith('/tr')) {
+    if (TR_TO_ES[pathname]) return TR_TO_ES[pathname]
+    if (pathname.startsWith('/tr/blog/')) return '/es/blog'
+    return '/es'
+  }
   if (EN_TO_ES[pathname]) return EN_TO_ES[pathname]
   if (pathname.startsWith('/blog/')) return '/es/blog'
   return '/es'
 }
 
+function getTrHref(pathname: string): string {
+  if (pathname.startsWith('/tr')) return pathname
+  if (pathname.startsWith('/es')) {
+    if (ES_TO_TR[pathname]) return ES_TO_TR[pathname]
+    if (pathname.startsWith('/es/blog/')) return '/tr/blog'
+    return '/tr'
+  }
+  if (EN_TO_TR[pathname]) return EN_TO_TR[pathname]
+  if (pathname.startsWith('/blog/')) return '/tr/blog'
+  return '/tr'
+}
+
 function getEnHref(pathname: string): string {
+  if (pathname.startsWith('/tr')) {
+    if (TR_TO_EN[pathname]) return TR_TO_EN[pathname]
+    if (pathname.startsWith('/tr/blog/')) return '/blog'
+    return '/'
+  }
   if (!pathname.startsWith('/es')) return pathname === '/' ? '/' : pathname
   if (ES_TO_EN[pathname]) return ES_TO_EN[pathname]
   if (pathname.startsWith('/es/blog/')) return '/blog'
@@ -61,7 +112,7 @@ export default function LanguagePickerMain() {
   const languages = [
     { code: 'EN' as const, href: getEnHref(pathname) },
     { code: 'ES' as const, href: getEsHref(pathname) },
-    { code: 'TR' as const, href: 'https://eduentry.ai/tr' },
+    { code: 'TR' as const, href: getTrHref(pathname) },
   ]
 
   const active = LANG_META[activeLang]

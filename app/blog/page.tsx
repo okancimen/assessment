@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     '11+ exam trends',
     'adaptive testing research',
   ],
-  alternates: { canonical: `${BASE_URL}/blog`, languages: { 'en-GB': `${BASE_URL}/blog`, es: `${BASE_URL}/es/blog`, 'x-default': `${BASE_URL}/blog` } },
+  alternates: { canonical: `${BASE_URL}/blog`, languages: { 'en-GB': `${BASE_URL}/blog`, es: `${BASE_URL}/es/blog`, tr: `${BASE_URL}/tr/blog`, 'x-default': `${BASE_URL}/blog` } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     title: 'Eduentry Blog — Academic Benchmarks & Assessment Insights',
