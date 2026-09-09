@@ -7,7 +7,7 @@ import "./globals.css";
 const geist = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-  display: "optional",
+  display: "swap",
 });
 
 const BASE_URL = "https://eduentry.com";
@@ -78,6 +78,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#1d1d1f" />
         <meta name="yandex-verification" content="f8b17ecde6325153" />
         <link rel="preconnect" href="https://xronkbdtsnjibwhuelni.supabase.co" />
+        <link rel="preconnect" href="https://www.clarity.ms" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>
       <body className="min-h-full flex flex-col bg-white font-[family-name:var(--font-geist-sans)]">
