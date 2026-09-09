@@ -81,6 +81,16 @@ const FAQ_TR = [
   { q: 'Verilerim gizli mi?', a: 'Evet. Tüm veriler satır düzeyi güvenlikle güvenli biçimde saklanır — yalnızca siz sonuçlarınıza erişebilirsiniz. Verileri üçüncü taraflarla satmaz veya paylaşmayız. Hizmet GDPR ile tam uyumludur.' },
 ]
 
+const FAQ_SCHEMA_TR = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_TR.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
 const WEBSITE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
@@ -107,6 +117,7 @@ export default function TurkishHomePage() {
     <main className="min-h-screen bg-white" lang="tr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_TR) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] text-white">

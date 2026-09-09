@@ -220,6 +220,22 @@ export default function MetodologiaPage() {
 
       </div>
 
+      {/* Artículos del blog */}
+      <div className="mt-16 mb-10">
+        <h2 className="text-2xl font-bold text-[#1d1d1f] mb-6">Del blog</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/es/blog/como-se-compara-tu-hijo-a-nivel-mundial', label: '¿Cómo se compara tu hijo a nivel mundial?', desc: 'Guía sobre benchmarks internacionales: PISA, currículo UK e IB explicados para padres.' },
+            { href: '/es/blog/practicas-instituto-beneficios-universidad', label: 'Prácticas en el instituto y la universidad', desc: 'Por qué las puntuaciones estandarizadas importan en el acceso universitario.' },
+          ].map(({ href, label, desc }) => (
+            <Link key={href} href={href} className="group border border-[#d2d2d7] rounded-xl p-5 hover:border-[#4F46E5]/40 hover:bg-[#eef2ff]/40 transition-colors flex flex-col">
+              <div className="font-semibold text-[#1d1d1f] text-sm leading-snug mb-2 group-hover:text-[#4F46E5] transition-colors">{label}</div>
+              <div className="text-xs text-[#6e6e73] leading-relaxed">{desc}</div>
+            </Link>
+          ))}
+        </div>
+      </div>
+
       {/* CTA */}
       <div className="mt-16 text-center bg-[#eef2ff] rounded-2xl border border-[#c7d2fe] p-10">
         <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Ver el percentil de tu hijo</h2>

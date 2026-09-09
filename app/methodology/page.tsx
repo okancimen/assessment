@@ -370,6 +370,22 @@ export default function MethodologyPage() {
 
         </div>
 
+        {/* Further reading */}
+        <div className="mt-16 mb-10">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">From the blog</h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {[
+              { href: '/blog/what-is-a-standardised-score', label: 'What Is a Standardised Score?', desc: 'How mean-100, SD-15 scales work and what percentiles actually tell you.' },
+              { href: '/blog/global-academic-benchmarks-report-2026', label: 'Global Academic Benchmarks 2026', desc: 'How IRT-based scores compare across PISA, UK National Curriculum, and US grade levels.' },
+            ].map(({ href, label, desc }) => (
+              <Link key={href} href={href} className="group border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/40 transition-colors flex flex-col">
+                <div className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-indigo-700 transition-colors">{label}</div>
+                <div className="text-xs text-gray-500 leading-relaxed">{desc}</div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="mt-16 text-center bg-indigo-50 rounded-2xl border border-indigo-100 p-10">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">See your child&apos;s percentile ranking</h2>

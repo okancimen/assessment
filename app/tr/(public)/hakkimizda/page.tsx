@@ -148,6 +148,22 @@ export default function HakkimizdaPage() {
         </Link>
       </section>
 
+      {/* Blog bağlantıları */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-bold text-[#1d1d1f] mb-6">Blogdan</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', label: 'Çocuğunuz Dünyada Nerede Duruyor?', desc: 'PISA, İngiltere müfredatı ve IB standartlarına göre uluslararası kıyaslama rehberi.' },
+            { href: '/tr/blog/lise-staji-faydalari-universite', label: 'Lise Stajının Faydaları ve Üniversite', desc: 'İş deneyiminin üniversite kabullerine ve kariyer gelişimine etkisi.' },
+          ].map(({ href, label, desc }) => (
+            <Link key={href} href={href} className="group border border-[#d2d2d7] rounded-xl p-5 hover:border-[#4F46E5]/40 hover:bg-[#eef2ff]/40 transition-colors flex flex-col">
+              <div className="font-semibold text-[#1d1d1f] text-sm leading-snug mb-2 group-hover:text-[#4F46E5] transition-colors">{label}</div>
+              <div className="text-xs text-[#6e6e73] leading-relaxed">{desc}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">Çocuğunuzun ücretsiz değerlendirmesini başlatın</h2>

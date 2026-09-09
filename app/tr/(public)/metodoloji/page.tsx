@@ -219,6 +219,22 @@ export default function MetodolojiPage() {
 
       </div>
 
+      {/* Blog bağlantıları */}
+      <div className="mt-16 mb-10">
+        <h2 className="text-2xl font-bold text-[#1d1d1f] mb-6">Blogdan</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', label: 'Çocuğunuz Dünyada Nerede Duruyor?', desc: 'PISA, İngiltere ve IB kıyaslamaları hakkında ebeveyn rehberi.' },
+            { href: '/tr/blog/lise-staji-faydalari-universite', label: 'Lise Stajının Faydaları ve Üniversite', desc: 'Standartlaştırılmış puanların lise deneyimleriyle nasıl kesiştiği.' },
+          ].map(({ href, label, desc }) => (
+            <Link key={href} href={href} className="group border border-[#d2d2d7] rounded-xl p-5 hover:border-[#4F46E5]/40 hover:bg-[#eef2ff]/40 transition-colors flex flex-col">
+              <div className="font-semibold text-[#1d1d1f] text-sm leading-snug mb-2 group-hover:text-[#4F46E5] transition-colors">{label}</div>
+              <div className="text-xs text-[#6e6e73] leading-relaxed">{desc}</div>
+            </Link>
+          ))}
+        </div>
+      </div>
+
       {/* CTA */}
       <div className="mt-16 text-center bg-[#eef2ff] rounded-2xl border border-[#c7d2fe] p-10">
         <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Çocuğunuzun yüzdelik dilimini görün</h2>

@@ -179,6 +179,23 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Further reading */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">From the blog</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              { href: '/blog/what-is-a-standardised-score', label: 'What Is a Standardised Score?', desc: 'How to read percentile rankings and what they mean for your child.' },
+              { href: '/blog/global-academic-benchmarks-report-2026', label: 'Global Academic Benchmarks 2026', desc: 'How children in the UK compare against PISA, US, and IB standards.' },
+              { href: '/blog/how-to-prepare-for-11-plus', label: 'How to Prepare for the 11+', desc: 'A parent\'s guide to grammar school entry and what scores are competitive.' },
+            ].map(({ href, label, desc }) => (
+              <Link key={href} href={href} className="group border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/40 transition-colors flex flex-col">
+                <div className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-indigo-700 transition-colors flex-1">{label}</div>
+                <div className="text-xs text-gray-500 leading-relaxed">{desc}</div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Start your child&rsquo;s free assessment</h2>

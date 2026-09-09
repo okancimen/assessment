@@ -148,6 +148,22 @@ export default function SobreNosotrosPage() {
         </Link>
       </section>
 
+      {/* Artículos del blog */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-bold text-[#1d1d1f] mb-6">Del blog</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/es/blog/como-se-compara-tu-hijo-a-nivel-mundial', label: '¿Cómo se compara tu hijo a nivel mundial?', desc: 'Guía para padres sobre comparativas internacionales: PISA, currículo del Reino Unido e IB.' },
+            { href: '/es/blog/practicas-instituto-beneficios-universidad', label: 'Prácticas en el instituto y la universidad', desc: 'Cómo la experiencia laboral temprana mejora las solicitudes universitarias.' },
+          ].map(({ href, label, desc }) => (
+            <Link key={href} href={href} className="group border border-[#d2d2d7] rounded-xl p-5 hover:border-[#4F46E5]/40 hover:bg-[#eef2ff]/40 transition-colors flex flex-col">
+              <div className="font-semibold text-[#1d1d1f] text-sm leading-snug mb-2 group-hover:text-[#4F46E5] transition-colors">{label}</div>
+              <div className="text-xs text-[#6e6e73] leading-relaxed">{desc}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">Empieza la evaluación gratuita de tu hijo</h2>

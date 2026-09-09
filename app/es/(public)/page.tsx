@@ -81,6 +81,16 @@ const FAQ_ES = [
   { q: '¿Son privados mis datos?', a: 'Sí. Todos los datos se almacenan de forma segura con seguridad a nivel de fila — solo tú puedes acceder a tus resultados. No vendemos ni compartimos datos con terceros. El servicio cumple plenamente con el RGPD.' },
 ]
 
+const FAQ_SCHEMA_ES = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_ES.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
 const WEBSITE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
@@ -107,6 +117,7 @@ export default function SpanishHomePage() {
     <main className="min-h-screen bg-white" lang="es">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_ES) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] text-white">
