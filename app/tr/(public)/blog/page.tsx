@@ -23,6 +23,7 @@ export const metadata: Metadata = {
       tr: `${BASE_URL}/tr/blog`,
       es: `${BASE_URL}/es/blog`,
       'en-GB': `${BASE_URL}/blog`,
+      fr: `${BASE_URL}/fr/blog`,
       'x-default': `${BASE_URL}/blog`,
     },
   },

@@ -1,56 +1,56 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import BellCurve from '@/components/landing/BellCurve'
-import TestimonialsCarouselTR from '@/components/landing/TestimonialsCarouselTR'
+import TestimonialsCarouselES from '@/components/landing/TestimonialsCarouselES'
 import CtaLink from '@/components/ui/CtaLink'
 import { SUBJECTS } from '@/types'
-import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
+import { BLOG_POSTS_FR } from '@/app/blog/posts-fr'
 
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Eduentry — Akademik ve Staj Değerlendirme Platformu',
+  title: 'Eduentry — Plateforme d\'évaluation académique et de stage',
   description:
-    'Tüm öğrenim aşamalarındaki öğrenciler için ücretsiz uyarlanabilir değerlendirmeler — 6–17 yaş arası çocuklar için uluslararası akademik kıyaslama ve 14 yaş üstü lise öğrencileri için staj değerlendirmesi.',
+    'Évaluations adaptatives gratuites pour les élèves à toutes les étapes — comparaison académique internationale pour les 6–17 ans, et évaluation de stage pour les lycéens de plus de 14 ans.',
   keywords: [
-    'ücretsiz akademik değerlendirme çocuklar',
-    'uluslararası kıyaslama çocuklar İngiltere',
-    'standartlaştırılmış puan yüzdelik dilim',
-    'uyarlanabilir değerlendirme PISA GCSE',
-    '11+ hazırlık ücretsiz test',
-    'akademik kıyaslama 6 17 yaş',
-    'lise staj değerlendirmesi hazırlık',
-    'staj yetenek testi lise',
-    'kariyer rehberliği değerlendirme öğrenci',
-    'ücretsiz çocuk değerlendirme testi',
-    'sözel sözel olmayan akıl yürütme test',
+    'évaluation académique gratuite enfants',
+    'référence internationale enfants France',
+    'score standardisé percentile',
+    'évaluation adaptive PISA GCSE',
+    'préparation 11+ test gratuit',
+    'référence académique 6 17 ans',
+    'évaluation préparation stage lycée',
+    'test aptitude stage lycée',
+    'évaluation orientation professionnelle élèves',
+    'test gratuit évaluation enfants',
+    'raisonnement verbal non verbal test',
   ],
   alternates: {
-    canonical: `${BASE_URL}/tr`,
-    languages: { tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, 'en-GB': BASE_URL, fr: `${BASE_URL}/fr`, 'x-default': BASE_URL },
+    canonical: `${BASE_URL}/fr`,
+    languages: { fr: `${BASE_URL}/fr`, 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, 'x-default': BASE_URL },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
-    url: `${BASE_URL}/tr`,
-    title: 'Eduentry — Akademik ve Staj Değerlendirme Platformu',
-    description: 'PISA, GCSE ve SAT ile aynı bilime dayalı ücretsiz uyarlanabilir değerlendirmeler. 6–17 yaş için akademik kıyaslama ve 14 yaş üstü için staj değerlendirmesi.',
-    locale: 'tr_TR',
-    images: [{ url: `${BASE_URL}/tr/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — Akademik ve Staj Değerlendirme Platformu' }],
+    url: `${BASE_URL}/fr`,
+    title: 'Eduentry — Plateforme d\'évaluation académique et de stage',
+    description: 'Évaluations adaptatives gratuites fondées sur la même science que PISA, GCSE et SAT. Comparaison académique pour les 6–17 ans et évaluation de stage pour les 14+.',
+    locale: 'fr_FR',
+    images: [{ url: `${BASE_URL}/fr/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — Plateforme d\'évaluation académique et de stage' }],
   },
 }
 
-const SUBJECT_LABELS_TR: Record<string, string> = {
-  english:             'İngilizce',
-  mathematics:         'Matematik',
-  verbal_reasoning:    'Sözel Akıl Yürütme',
-  nonverbal_reasoning: 'Sözel Olmayan Akıl Yürütme',
+const SUBJECT_LABELS_FR: Record<string, string> = {
+  english:             'Anglais',
+  mathematics:         'Mathématiques',
+  verbal_reasoning:    'Raisonnement Verbal',
+  nonverbal_reasoning: 'Raisonnement Non Verbal',
 }
 
-const SUBJECT_DESCRIPTIONS_TR: Record<string, string> = {
-  english:             'Okuduğunu anlama, dilbilgisi, yazım ve noktalama',
-  mathematics:         'Sayı işlemleri, cebir, geometri ve veri işleme',
-  verbal_reasoning:    'Kelimelerle problem çözme ve eleştirel düşünme',
-  nonverbal_reasoning: 'Soyut şekil ve görsel unsurlar kullanarak örüntü tanıma',
+const SUBJECT_DESCRIPTIONS_FR: Record<string, string> = {
+  english:             'Compréhension, grammaire, orthographe et ponctuation',
+  mathematics:         'Opérations numériques, algèbre, géométrie et traitement des données',
+  verbal_reasoning:    'Résolution de problèmes avec des mots et pensée critique',
+  nonverbal_reasoning: 'Reconnaissance de modèles à l\'aide de formes et d\'éléments visuels abstraits',
 }
 
 const subjectColors: Record<string, { border: string; accent: string; bg: string }> = {
@@ -60,31 +60,28 @@ const subjectColors: Record<string, { border: string; accent: string; bg: string
   nonverbal_reasoning: { border: '#fbcfe8', accent: '#DB2777', bg: '#fce7f3' },
 }
 
-
-const BELL_SUBJECTS_TR = [
-  { score: 103, label: 'İngilizce', color: '#4F46E5', dotColor: '#4F46E5' },
-  { score: 119, label: 'Matematik', color: '#0D9488', dotColor: '#0D9488' },
-  { score: 113, label: 'Sözel',     color: '#7C3AED', dotColor: '#7C3AED' },
-  { score:  91, label: 'S.Olmayan', color: '#DB2777', dotColor: '#DB2777' },
+const BELL_SUBJECTS_FR = [
+  { score: 103, label: 'Anglais',    color: '#4F46E5', dotColor: '#4F46E5' },
+  { score: 119, label: 'Maths',      color: '#0D9488', dotColor: '#0D9488' },
+  { score: 113, label: 'Verbal',     color: '#7C3AED', dotColor: '#7C3AED' },
+  { score:  91, label: 'Non-Verb.',  color: '#DB2777', dotColor: '#DB2777' },
 ]
 
-const FAQ_TR = [
-  { q: 'Eduentry ücretsiz mi?', a: 'Evet, tamamen ücretsiz. Abonelik, gizli ücret veya premium seviye yok. Ücretsiz bir hesap oluşturun, çocuğunuzun profilini ekleyin ve değerlendirmeye ücretsiz başlayın.' },
-  { q: 'Akademik değerlendirme hangi dersleri kapsıyor?', a: 'İngilizce (okuduğunu anlama, dilbilgisi, kelime bilgisi), Matematik (aritmetik, cebir, geometri, problem çözme), Sözel Akıl Yürütme (analoglar, sınıflandırmalar, diziler) ve Sözel Olmayan Akıl Yürütme (örüntüler, uzamsal akıl yürütme, matrisler). Her derste 15 uyarlanabilir soru bulunur.' },
-  { q: 'Yüzdelik dilim sıralaması nedir?', a: 'Yüzdelik dilim sıralaması, çocuğunuzun aynı yaştaki tüm çocuklarla nasıl karşılaştırıldığını gösterir. 80. yüzdelik dilim puanı, çocuğunuzun o yaş grubundaki çocukların %80\'inden daha iyi performans sergilediği anlamına gelir. Eduentry, ortalama 100 ve standart sapma 15 olan standartlaştırılmış bir ölçek kullanır — PISA ve çoğu profesyonel değerlendirmenin kullandığı ölçeğin aynısı.' },
-  { q: 'Staj değerlendirmesi nedir?', a: '14 yaş üstü lise öğrencileri için 34 soruluk ayrı bir uyarlanabilir değerlendirme. Dört alanda genel yetenek, alan bilgisi, iş yeri becerileri ve ilgi profilini ölçer: Teknoloji, İş Dünyası, Veri Analitiği ve Dijital Pazarlama. Sonuçlar kişiselleştirilmiş hazırlık raporu ve yapay zeka tarafından oluşturulan kariyer içgörüleri içerir.' },
-  { q: 'Eduentry\'yi 11+ hazırlığı için kullanabilir miyim?', a: 'Evet. Dört ders — İngilizce, Matematik, Sözel Akıl Yürütme ve Sözel Olmayan Akıl Yürütme — İngiltere\'deki gramer okullarının kullandığı 11+ sınav yapısını doğrudan yansıtır. Eduentry size standartlaştırılmış bir puan ve yüzdelik dilim sıralaması verir; böylece gerçek sınav öncesinde çocuğunuzun tam olarak nerede durduğunu bilirsiniz.' },
-  { q: 'Hangi puan iyi sayılır?', a: '100 tam ortalamasıdır. 95–109 ortalama aralığıdır, 110–119 ortalamanın üstündedir ve 120+ olağanüstüdür. 11+ aracılığıyla gramer okuluna erişim için rekabetçi puanlar genellikle 115 veya daha yüksektir — ancak Londra gibi bölgelerdeki daha seçici okullar 127+ gerektirebilir.' },
-  { q: 'Her değerlendirme ne kadar sürer?', a: 'Akademik değerlendirmede 4 derste 60 soru bulunur — çocukların çoğu 60–90 dakikada tamamlar. Staj değerlendirmesinde 34 soru bulunur — öğrencilerin çoğu yaklaşık 35 dakikada bitirir. İlerleme otomatik olarak kaydedilir, bu nedenle her ikisi de istenildiğinde duraklatılıp devam ettirilebilir.' },
-  { q: 'Uyarlanabilir teknoloji nasıl çalışır?', a: 'Eduentry, 2 Parametreli Lojistik MYT (2PL) ile MAP tahmini kullanır — PISA, GCSE ve SAT\'ta kullanılan modelin aynısı. Her yanıtın ardından sistem, öğrencinin yetenek tahmini günceller ve ölçüm hassasiyetini en üst düzeye çıkarmak için bir sonraki soruyu seçer.' },
-  { q: 'Birden fazla çocuk ekleyebilir miyim?', a: 'Evet. Tek bir ebeveyn hesabı birden fazla çocuk profili içerebilir. Her çocuğun kendi değerlendirme geçmişi, puanları ve kişiselleştirilmiş önerileri bulunur. Ekleyebileceğiniz çocuk sayısında herhangi bir sınır yoktur.' },
-  { q: 'Verilerim gizli mi?', a: 'Evet. Tüm veriler satır düzeyi güvenlikle güvenli biçimde saklanır — yalnızca siz sonuçlarınıza erişebilirsiniz. Verileri üçüncü taraflarla satmaz veya paylaşmayız. Hizmet GDPR ile tam uyumludur.' },
+const FAQ_FR = [
+  { q: 'Eduentry est-il gratuit ?', a: 'Oui, entièrement gratuit. Pas d\'abonnement, pas de frais cachés, pas de niveaux premium. Créez un compte gratuit, ajoutez le profil de votre enfant et commencez l\'évaluation sans aucun frais.' },
+  { q: 'Quelles matières couvre l\'évaluation académique ?', a: 'Anglais (compréhension de lecture, grammaire, vocabulaire), Mathématiques (arithmétique, algèbre, géométrie, résolution de problèmes), Raisonnement Verbal (analogies, classifications, séquences) et Raisonnement Non Verbal (motifs, raisonnement spatial, matrices). Chaque matière comporte 15 questions adaptatives.' },
+  { q: 'Qu\'est-ce qu\'un classement par percentile ?', a: 'Un classement par percentile montre comment votre enfant se compare à tous les enfants du même âge. Un score au percentile 80 signifie que votre enfant a obtenu de meilleurs résultats que 80 % des enfants de cet âge. Eduentry utilise une échelle standardisée avec une moyenne de 100 et un écart-type de 15 — la même échelle utilisée par PISA et la plupart des évaluations professionnelles.' },
+  { q: 'Qu\'est-ce que l\'évaluation de stage ?', a: 'Une évaluation adaptative distincte de 34 questions pour les lycéens de plus de 14 ans. Elle évalue l\'aptitude générale, les connaissances sectorielles, les compétences professionnelles et le profil d\'intérêts dans quatre domaines : Technologie, Entreprise, Analyse de données et Marketing digital. Les résultats comprennent un rapport de préparation personnalisé et des insights de carrière générés par IA.' },
+  { q: 'Combien de temps dure chaque évaluation ?', a: 'L\'évaluation académique comporte 60 questions en 4 matières — la plupart des enfants la complètent en 60–90 minutes. L\'évaluation de stage comporte 34 questions — la plupart des élèves la terminent en environ 35 minutes. La progression est sauvegardée automatiquement, les deux peuvent donc être mises en pause et reprises à tout moment.' },
+  { q: 'Comment fonctionne la technologie adaptative ?', a: 'Eduentry utilise la Théorie de Réponse à l\'Item Logistique à 2 Paramètres (2PL) avec estimation MAP — le même modèle utilisé dans PISA, GCSE et SAT. Après chaque réponse, le système met à jour son estimation du niveau de l\'élève et sélectionne la question suivante pour maximiser la précision de mesure.' },
+  { q: 'Puis-je ajouter plusieurs enfants ?', a: 'Oui. Un seul compte parent peut inclure plusieurs profils d\'enfants. Chaque enfant dispose de son propre historique d\'évaluations, de ses scores et de recommandations personnalisées. Il n\'y a pas de limite au nombre d\'enfants que vous pouvez ajouter.' },
+  { q: 'Mes données sont-elles privées ?', a: 'Oui. Toutes les données sont stockées en toute sécurité avec une sécurité au niveau des lignes — seul vous pouvez accéder à vos résultats. Nous ne vendons ni ne partageons les données avec des tiers. Le service est entièrement conforme au RGPD.' },
 ]
 
-const FAQ_SCHEMA_TR = {
+const FAQ_SCHEMA_FR = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: FAQ_TR.map(({ q, a }) => ({
+  mainEntity: FAQ_FR.map(({ q, a }) => ({
     '@type': 'Question',
     name: q,
     acceptedAnswer: { '@type': 'Answer', text: a },
@@ -112,26 +109,26 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
-export default function TurkishHomePage() {
+export default function FrenchHomePage() {
   return (
-    <main className="min-h-screen bg-white" lang="tr">
+    <main className="min-h-screen bg-white" lang="fr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_TR) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_FR) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] text-white">
         <div className="max-w-6xl mx-auto px-6 pt-28 pb-20 text-center">
           <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] mb-6">
-            Her öğrenim aşaması için değerlendirmeler
+            Évaluations pour chaque étape de l&apos;apprentissage
           </p>
           <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
-            Doğru değerlendirme,
+            La bonne évaluation,
             <br />
-            <span className="text-[#4F46E5]">doğru zamanda.</span>
+            <span className="text-[#4F46E5]">au bon moment.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
-            PISA, GCSE ve SAT ile aynı bilime dayalı ücretsiz uyarlanabilir değerlendirmeler.
+            Évaluations adaptatives gratuites fondées sur la même science que PISA, GCSE et SAT.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-4xl mx-auto text-left">
@@ -139,33 +136,33 @@ export default function TurkishHomePage() {
             {/* Academic card */}
             <div className="bg-[#2d2d2f] rounded-[28px] border border-[#424245] p-10 flex flex-col">
               <p className="text-[11px] text-[#a1a1a7] font-medium uppercase tracking-[0.12em] mb-6">
-                Akademik Değerlendirme
+                Évaluation Académique
               </p>
               <h2 className="text-3xl font-bold text-white mb-4 leading-snug tracking-tight">
-                Çocuğunuz dünya genelinde nerede duruyor?
+                Comment votre enfant se compare-t-il à l&apos;échelle mondiale ?
               </h2>
               <p className="text-[#a1a1a7] text-sm leading-relaxed mb-8 flex-1">
-                İngiltere, ABD, PISA ve IB standartlarıyla karşılaştırmalı — İngilizce, Matematik,
-                Sözel ve Sözel Olmayan Akıl Yürütme alanlarında standartlaştırılmış puanlar ve yüzdelik dilim sıralamaları.
+                Comparé aux standards britanniques, américains, PISA et IB — scores standardisés
+                et classements par percentile en Anglais, Mathématiques, Raisonnement Verbal et Non Verbal.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
-                <span>60 uyarlanabilir soru</span>
+                <span>60 questions adaptatives</span>
                 <span>·</span>
-                <span>4 ders</span>
+                <span>4 matières</span>
                 <span>·</span>
-                <span>6–17 yaş</span>
+                <span>6–17 ans</span>
                 <span>·</span>
-                <span>Ücretsiz</span>
+                <span>Gratuit</span>
               </div>
               <CtaLink
-                href="/tr/auth/register"
-                label="hero_academic_tr"
+                href="/fr/auth/register"
+                label="hero_academic_fr"
                 className="bg-[#4F46E5] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#4338CA] transition-colors text-center"
               >
-                Ücretsiz değerlendirmeyi başlat
+                Commencer l&apos;évaluation gratuite
               </CtaLink>
-              <Link href="#akademik" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
-                Daha fazla bilgi ↓
+              <Link href="#academique" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
+                En savoir plus ↓
               </Link>
             </div>
 
@@ -173,36 +170,36 @@ export default function TurkishHomePage() {
             <div className="bg-[#eef2ff] rounded-[28px] border border-[#c7d2fe] p-10 flex flex-col">
               <div className="flex items-center gap-2.5 mb-6">
                 <p className="text-[11px] text-[#4F46E5] font-medium uppercase tracking-[0.12em]">
-                  Staj Değerlendirmesi
+                  Évaluation de Stage
                 </p>
                 <span className="text-[10px] bg-[#4F46E5] text-white font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">
-                  Yeni
+                  Nouveau
                 </span>
               </div>
               <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4 leading-snug tracking-tight">
-                Öğrenciniz iş dünyasına hazır mı?
+                Votre lycéen est-il prêt pour le monde professionnel ?
               </h2>
               <p className="text-[#636366] text-sm leading-relaxed mb-8 flex-1">
-                Yetenek, alan bilgisi, iş yeri becerileri ve ilgi profili üzerine 34 soruluk uyarlanabilir değerlendirme.
-                Kişiselleştirilmiş hazırlık raporu ve yapay zeka kariyer içgörüleri.
+                Une évaluation adaptative de 34 questions sur l&apos;aptitude, les connaissances sectorielles, les compétences
+                professionnelles et le profil d&apos;intérêts. Rapport de préparation personnalisé et insights IA sur la carrière.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#636366] mb-8">
-                <span>34 uyarlanabilir soru</span>
+                <span>34 questions adaptatives</span>
                 <span>·</span>
-                <span>4 kariyer alanı</span>
+                <span>4 domaines professionnels</span>
                 <span>·</span>
-                <span>14 yaş+</span>
+                <span>14+ ans</span>
                 <span>·</span>
-                <span>Ücretsiz</span>
+                <span>Gratuit</span>
               </div>
               <a
-                href="https://eduentry.ai/tr"
+                href="https://eduentry.ai/fr"
                 className="bg-[#1d1d1f] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#2d2d2f] transition-colors text-center"
               >
-                Programı incele
+                Découvrir le programme
               </a>
-              <Link href="#staj" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
-                Daha fazla bilgi ↓
+              <Link href="#stages" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
+                En savoir plus ↓
               </Link>
             </div>
 
@@ -213,42 +210,42 @@ export default function TurkishHomePage() {
       {/* ── Trust line ────────────────────────────────────────────────────── */}
       <section className="border-b border-[#d2d2d7] bg-[#f5f5f7] py-3">
         <p className="text-center text-[11px] text-[#636366] tracking-wide">
-          PISA, GCSE &amp; SAT ile aynı bilime dayalı &nbsp;·&nbsp; GDPR uyumlu &nbsp;·&nbsp; Ücretsiz
+          Fondée sur la même science que PISA, GCSE &amp; SAT &nbsp;·&nbsp; Conforme au RGPD &nbsp;·&nbsp; Gratuite
         </p>
       </section>
 
       {/* ── Social proof ──────────────────────────────────────────────────── */}
       <section className="py-24 bg-white border-b border-[#d2d2d7]">
         <div className="max-w-6xl mx-auto px-6">
-          <TestimonialsCarouselTR />
+          <TestimonialsCarouselES />
         </div>
       </section>
 
       {/* ── Academic section ──────────────────────────────────────────────── */}
-      <section id="akademik" className="py-32 bg-white">
+      <section id="academique" className="py-32 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
 
             <div className="flex-1">
-              <p className="text-xs font-semibold text-[#636366] uppercase tracking-widest mb-4">Akademik Değerlendirme · 6–17 Yaş</p>
+              <p className="text-xs font-semibold text-[#636366] uppercase tracking-widest mb-4">Évaluation Académique · 6–17 ans</p>
               <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
-                Çocuğunuzun uluslararası<br />konumunu keşfedin.
+                Découvrez où se situe votre enfant<br />à l&apos;échelle internationale.
               </h2>
               <p className="text-[#636366] text-lg leading-relaxed mb-8 max-w-lg">
-                İngiltere, ABD, PISA ve IB standartlarıyla karşılaştırmalı İngilizce, Matematik, Sözel ve Sözel Olmayan
-                Akıl Yürütme alanlarını ölçen ücretsiz uyarlanabilir değerlendirme. Sonuçlar standartlaştırılmış puan,
-                yüzdelik dilim sıralaması ve yapay zeka önerilerini içerir.
+                Une évaluation adaptative gratuite qui mesure l&apos;Anglais, les Mathématiques, le Raisonnement Verbal et Non Verbal
+                comparé aux standards britanniques, américains, PISA et IB. Les résultats incluent un score standardisé,
+                un classement par percentile et des recommandations générées par IA.
               </p>
               <div className="flex flex-wrap gap-4">
                 <CtaLink
-                  href="/tr/auth/register"
-                  label="academic_section_tr"
+                  href="/fr/auth/register"
+                  label="academic_section_fr"
                   className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
                 >
-                  Ücretsiz değerlendirmeyi başlat
+                  Commencer l&apos;évaluation gratuite
                 </CtaLink>
-                <Link href="/tr/metodoloji" className="text-sm font-semibold text-[#4F46E5] hover:underline flex items-center gap-1.5 px-2">
-                  Puanlama nasıl çalışır →
+                <Link href="/fr/methodologie" className="text-sm font-semibold text-[#4F46E5] hover:underline flex items-center gap-1.5 px-2">
+                  Comment fonctionne le score →
                 </Link>
               </div>
             </div>
@@ -258,20 +255,20 @@ export default function TurkishHomePage() {
               <div className="bg-[#1d1d1f] rounded-3xl border border-[#424245] p-6 w-full lg:w-[300px]">
                 <div className="flex items-center justify-between mb-5">
                   <div>
-                    <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-wider">Örnek sonuç</p>
-                    <p className="font-bold text-white mt-1">Emma · 11 yaşında</p>
+                    <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-wider">Exemple de résultat</p>
+                    <p className="font-bold text-white mt-1">Emma · 11 ans</p>
                   </div>
                   <div className="text-right">
                     <div className="text-3xl font-bold text-[#4F46E5]">109</div>
-                    <div className="text-[11px] text-[#0D9488] font-semibold">Ortalamanın üstünde</div>
+                    <div className="text-[11px] text-[#0D9488] font-semibold">Au-dessus de la moyenne</div>
                   </div>
                 </div>
                 <div className="space-y-3">
                   {[
-                    { label: 'İngilizce',   score: 103, color: '#4F46E5', pct: 58 },
-                    { label: 'Matematik',    score: 119, color: '#0D9488', pct: 90 },
-                    { label: 'Sözel',        score: 113, color: '#7C3AED', pct: 79 },
-                    { label: 'S.Olmayan',    score:  91, color: '#DB2777', pct: 27 },
+                    { label: 'Anglais',           score: 103, color: '#4F46E5', pct: 58 },
+                    { label: 'Mathématiques',      score: 119, color: '#0D9488', pct: 90 },
+                    { label: 'Raz. Verbal',        score: 113, color: '#7C3AED', pct: 79 },
+                    { label: 'Raz. Non Verbal',    score:  91, color: '#DB2777', pct: 27 },
                   ].map((s) => (
                     <div key={s.label}>
                       <div className="flex justify-between text-xs text-[#a1a1a7] mb-1">
@@ -285,13 +282,13 @@ export default function TurkishHomePage() {
                   ))}
                 </div>
                 <div className="mt-5 pt-4 border-t border-[#424245] flex items-center gap-2">
-                  <span className="text-[10px] text-[#a1a1a7]">Tarafından desteklenmektedir</span>
+                  <span className="text-[10px] text-[#a1a1a7]">Développé par</span>
                   <span className="text-[10px] font-semibold text-[#a1a1a7]">Claude AI · Anthropic</span>
                 </div>
               </div>
 
               <div className="bg-[#1d1d1f] rounded-3xl border border-[#424245] overflow-hidden w-full lg:w-[300px] xl:w-auto min-h-[200px]">
-                <BellCurve subjects={BELL_SUBJECTS_TR} hideScores />
+                <BellCurve subjects={BELL_SUBJECTS_FR} hideScores />
               </div>
             </div>
 
@@ -304,11 +301,11 @@ export default function TurkishHomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
-              Dört ders. Küresel bir tablo.
+              Quatre matières. Une vision globale.
             </h2>
             <p className="text-[#636366] max-w-xl mx-auto text-lg">
-              PISA, TIMSS ve İngiltere ile ABD ulusal müfredatları tarafından değerlendirilen dört alan —
-              her biri çocuğunuzun tam seviyesini belirlemek için zorluğa uyum sağlar.
+              Les quatre domaines évalués par PISA, TIMSS et les programmes nationaux britanniques et américains —
+              chacun s&apos;adapte en difficulté pour identifier le niveau exact de votre enfant.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -325,8 +322,8 @@ export default function TurkishHomePage() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
                   </div>
-                  <h3 className="font-bold text-[#1d1d1f] mb-2">{SUBJECT_LABELS_TR[subject]}</h3>
-                  <p className="text-sm text-[#636366] leading-relaxed">{SUBJECT_DESCRIPTIONS_TR[subject]}</p>
+                  <h3 className="font-bold text-[#1d1d1f] mb-2">{SUBJECT_LABELS_FR[subject]}</h3>
+                  <p className="text-sm text-[#636366] leading-relaxed">{SUBJECT_DESCRIPTIONS_FR[subject]}</p>
                 </div>
               )
             })}
@@ -335,23 +332,23 @@ export default function TurkishHomePage() {
       </section>
 
       {/* ── Methodology ───────────────────────────────────────────────────── */}
-      <section id="metodoloji" className="bg-[#f5f5f7] py-32">
+      <section id="methodologie" className="bg-[#f5f5f7] py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">Puanlamanın arkasındaki bilim</p>
+            <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">La science derrière le score</p>
             <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
-              Uluslararası değerlendirmelerle<br />aynı bilime dayalı.
+              Fondée sur la même science que<br />les évaluations internationales.
             </h2>
             <p className="text-[#636366] max-w-2xl mx-auto text-lg">
-              Eduentry, PISA, GCSE ve SAT ile aynı psikometrik modelleri kullanır —
-              bu sayede çocuğunuzun sonuçları uluslararası standartlarla doğrudan karşılaştırılabilir.
+              Eduentry utilise les mêmes modèles psychométriques que PISA, GCSE et SAT —
+              pour que les résultats de votre enfant soient directement comparables aux standards internationaux.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { title: '2 Parametreli MYT Modeli', desc: 'Her sorunun kalibre edilmiş güçlük ve ayırt edicilik değeri vardır. Puanlar yalnızca ham sayıyı değil, doğru yanıtlanan soruların zorluğunu yansıtır.', tag: 'PISA · SAT · GCSE\'de kullanılır', color: '#4F46E5' },
-              { title: 'Gerçek Zamanlı Uyarlanabilir Algoritma', desc: 'Sorular ölçüm hassasiyetini en üst düzeye çıkarmak için Fisher Bilgisi kullanılarak seçilir. Her yanıt yetenek tahminini günceller ve optimal sonraki soruyu seçer.', tag: 'Bilgisayar Uyarlamalı Değerlendirme', color: '#0D9488' },
-              { title: 'Uluslararası Karşılaştırma', desc: 'Puanlar PISA ile aynı ortalama-100, SS-15 ölçeğini kullanır. Sonuçlar İngiltere Ulusal Müfredatı, ABD sınıf seviyesi, PISA yeterlilik seviyeleri ve IB programı hazırlığına eşlenir.', tag: 'İngiltere · ABD · PISA · IB', color: '#7C3AED' },
+              { title: 'Modèle TRI à 2 Paramètres', desc: 'Chaque question a une difficulté et une discrimination calibrées. Les scores reflètent la difficulté des questions répondues correctement — pas seulement le total brut.', tag: 'Utilisé dans PISA · SAT · GCSE', color: '#4F46E5' },
+              { title: 'Algorithme Adaptatif en Temps Réel', desc: 'Les questions sont sélectionnées en utilisant l\'Information de Fisher pour maximiser la précision de mesure. Chaque réponse met à jour l\'estimation de compétence et sélectionne la question optimale suivante.', tag: 'Évaluation Adaptative par Ordinateur', color: '#0D9488' },
+              { title: 'Comparaison Internationale', desc: 'Les scores utilisent la même échelle moyenne-100, ET-15 que PISA. Les résultats sont mappés au Programme National britannique, aux attentes de niveau américain, aux niveaux de compétence PISA et à la préparation IB.', tag: 'UK · US · PISA · IB', color: '#7C3AED' },
             ].map(({ title, desc, tag, color }) => (
               <div key={title} className="bg-white rounded-3xl border border-[#d2d2d7] p-7">
                 <div className="w-10 h-10 rounded-2xl flex items-center justify-center mb-5" style={{ background: color + '18' }}>
@@ -368,14 +365,14 @@ export default function TurkishHomePage() {
 
           {/* Score guide */}
           <div className="mt-6 bg-white rounded-3xl border border-[#d2d2d7] p-7">
-            <h3 className="font-bold text-[#1d1d1f] mb-6 text-center text-lg">Puan ne anlama gelir</h3>
+            <h3 className="font-bold text-[#1d1d1f] mb-6 text-center text-lg">Ce que signifie le score</h3>
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
               {[
-                { range: '70–84',   label: 'Destek gerekiyor',      color: '#EF4444', bg: '#fef2f2' },
-                { range: '85–94',   label: 'Ortalamanın altında',   color: '#F97316', bg: '#fff7ed' },
-                { range: '95–109',  label: 'Ortalama',              color: '#EAB308', bg: '#fefce8' },
-                { range: '110–119', label: 'Ortalamanın üstünde',   color: '#22C55E', bg: '#f0fdf4' },
-                { range: '120–130', label: 'Olağanüstü',            color: '#3B82F6', bg: '#eff6ff' },
+                { range: '70–84',   label: 'Nécessite un soutien',      color: '#EF4444', bg: '#fef2f2' },
+                { range: '85–94',   label: 'En dessous de la moyenne',  color: '#F97316', bg: '#fff7ed' },
+                { range: '95–109',  label: 'Dans la moyenne',           color: '#EAB308', bg: '#fefce8' },
+                { range: '110–119', label: 'Au-dessus de la moyenne',   color: '#22C55E', bg: '#f0fdf4' },
+                { range: '120–130', label: 'Exceptionnel',              color: '#3B82F6', bg: '#eff6ff' },
               ].map(({ range, label, color, bg }) => (
                 <div key={range} className="rounded-2xl p-3 text-center" style={{ background: bg }}>
                   <div className="text-sm font-bold" style={{ color }}>{range}</div>
@@ -384,26 +381,26 @@ export default function TurkishHomePage() {
               ))}
             </div>
             <p className="text-[11px] text-[#636366] text-center mt-4">
-              Çocukların %68'i 85–115 arasında puan alır (ortalamanın 1 standart sapma dahilinde)
+              68% des enfants obtiennent un score entre 85 et 115 (dans 1 écart-type de la moyenne)
             </p>
           </div>
         </div>
       </section>
 
       {/* ── How it works ──────────────────────────────────────────────────── */}
-      <section id="nasil-calisir" className="py-32">
+      <section id="comment-ca-marche" className="py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">Akademik Değerlendirme · Başlamak kolay</p>
+            <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">Évaluation Académique · Simple à démarrer</p>
             <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
-              Kayıttan sonuçlara<br />iki saatten kısa sürede.
+              De l&apos;inscription aux résultats<br />en moins de deux heures.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { step: '01', title: 'Ücretsiz hesap oluşturun', desc: 'Ebeveyn olarak kaydolun ve çocuğunuzun adı ile doğum tarihini ekleyin. Değerlendirme tam yaşına göre otomatik olarak uyum sağlar.' },
-              { step: '02', title: 'Çocuğunuz 4 uyarlanabilir test yapar', desc: 'Dört derste 60 soru, evde kendi hızında tamamlanır. Her soru uyum sağlar — doğru yanıtlarda daha zor, yanlışlarda daha kolay.' },
-              { step: '03', title: 'Küresel bağlamı keşfedin', desc: 'Standartlaştırılmış puanlar, İngiltere, ABD, PISA ve IB için uluslararası kıyaslamalar, yapay zeka önerileri ve yazdırılabilir rapor.' },
+              { step: '01', title: 'Créez un compte gratuit', desc: 'Inscrivez-vous en tant que parent et ajoutez le nom et la date de naissance de votre enfant. L\'évaluation s\'adapte automatiquement à son âge exact.' },
+              { step: '02', title: 'Votre enfant passe 4 tests adaptatifs', desc: '60 questions en quatre matières, réalisées à la maison à son propre rythme. Chaque question s\'adapte — plus difficile en cas de bonne réponse, plus facile en cas d\'erreur.' },
+              { step: '03', title: 'Découvrez le contexte mondial', desc: 'Scores standardisés, références internationales pour le UK, US, PISA et IB, recommandations générées par IA et rapport imprimable.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-[#f5f5f7] rounded-3xl p-8">
                 <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
@@ -413,34 +410,34 @@ export default function TurkishHomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <CtaLink href="/tr/auth/register" label="how_it_works_tr" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
-              Ücretsiz değerlendirmeyi başlat →
+            <CtaLink href="/fr/auth/register" label="how_it_works_fr" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+              Commencer l&apos;évaluation gratuite →
             </CtaLink>
           </div>
         </div>
       </section>
 
       {/* ── Internship section ────────────────────────────────────────────── */}
-      <section id="staj" className="bg-[#f5f5f7] py-32">
+      <section id="stages" className="bg-[#f5f5f7] py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <span className="inline-block text-xs font-medium text-[#4F46E5] uppercase tracking-[0.15em] bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1.5 rounded-full mb-5">
-              Staj Değerlendirmesi · Yeni
+              Évaluation de Stage · Nouveau
             </span>
             <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
-              Staj hazırlığını keşfet.
+              Découvrez votre niveau de préparation au stage.
             </h2>
             <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
-              14 yaş üstü lise öğrencileri için 34 soruluk uyarlanabilir değerlendirme. Yeteneğini, alan bazlı güçlü yönlerini,
-              iş yeri becerilerini ve sana en uygun alanı keşfet — kişiselleştirilmiş yapay zeka raporu ile.
+              Une évaluation adaptative de 34 questions pour les lycéens de plus de 14 ans. Découvrez votre aptitude,
+              vos points forts par domaine, vos compétences professionnelles et le secteur le plus adapté — avec un rapport IA personnalisé.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { step: '01', title: 'Ücretsiz öğrenci hesabı oluşturun', desc: 'Kendiniz kaydolun veya ebeveynlerinizin davetini kabul edin. Okulunuzu, sınıfınızı, alan tercihlerinizi ve hedefleriniz hakkında kısa bir kişisel beyan doldurun.' },
-              { step: '02', title: '4 değerlendirme aşamasını tamamlayın', desc: 'Genel yetenek, alan bilgisi, iş yeri becerileri (SJT) ve ilgi profili — toplamda 34 uyarlanabilir soru. Tamamen devam ettirilebilir, yaklaşık 35 dakika sürer.' },
-              { step: '03', title: 'Hazırlık raporunuzu alın', desc: 'Staj hazırlık seviyenizi, yapay zeka tarafından oluşturulan güçlü yönler özetini ve yetenek, alan ve iş yeri becerileri üzerine kişiselleştirilmiş aşama içgörülerini alın.' },
+              { step: '01', title: 'Créez un compte étudiant gratuit', desc: 'Inscrivez-vous vous-même ou acceptez l\'invitation de vos parents. Renseignez votre lycée, votre classe, vos préférences de domaine et une brève déclaration personnelle sur vos objectifs.' },
+              { step: '02', title: 'Complétez 4 phases d\'évaluation', desc: 'Aptitude générale, connaissances sectorielles, compétences professionnelles (SJT) et profil d\'intérêts — 34 questions adaptatives au total. Entièrement reprendable, dure environ 35 minutes.' },
+              { step: '03', title: 'Recevez votre rapport de préparation', desc: 'Obtenez votre niveau de préparation au stage, un résumé de vos points forts généré par IA et des insights personnalisés par phase sur l\'aptitude, le domaine et les compétences professionnelles.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
                 <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
@@ -452,10 +449,10 @@ export default function TurkishHomePage() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {[
-              { label: 'Teknoloji',        color: '#4F46E5' },
-              { label: 'İş Dünyası',       color: '#0D9488' },
-              { label: 'Veri Analitiği',   color: '#7C3AED' },
-              { label: 'Dijital Pazarlama',color: '#DB2777' },
+              { label: 'Technologie',        color: '#4F46E5' },
+              { label: 'Entreprise',         color: '#0D9488' },
+              { label: 'Analyse de données', color: '#7C3AED' },
+              { label: 'Marketing digital',  color: '#DB2777' },
             ].map(({ label, color }) => (
               <span key={label} className="text-xs font-semibold px-4 py-2 rounded-full border" style={{ color, background: color + '12', borderColor: color + '33' }}>
                 {label}
@@ -464,8 +461,8 @@ export default function TurkishHomePage() {
           </div>
 
           <div className="text-center mt-10">
-            <a href="https://eduentry.ai/tr" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
-              Staj değerlendirmesine başvur →
+            <a href="https://eduentry.ai/fr" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+              Demander l&apos;évaluation de stage →
             </a>
           </div>
         </div>
@@ -474,19 +471,19 @@ export default function TurkishHomePage() {
       {/* ── What you get ──────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] py-32">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] text-center mb-14">Ne elde edersiniz</p>
+          <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] text-center mb-14">Ce que vous obtenez</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] p-8">
-              <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-wider mb-5">Akademik Değerlendirme</p>
+              <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-wider mb-5">Évaluation Académique</p>
               <ul className="space-y-3">
                 {[
-                  '85–130 ölçeğinde standartlaştırılmış puan',
-                  'Tam yaşa göre yüzdelik dilim sıralaması',
-                  '4 alanda derse göre döküm',
-                  'Uluslararası kıyaslamalar — İngiltere, ABD, PISA, IB',
-                  'Yapay zeka tarafından oluşturulan çalışma önerileri',
-                  'Yazdırılabilir tam rapor',
+                  'Score standardisé sur une échelle de 85–130',
+                  'Classement par percentile pour l\'âge exact',
+                  'Détail par matière dans les 4 domaines',
+                  'Références internationales — UK, US, PISA, IB',
+                  'Recommandations d\'étude générées par IA',
+                  'Rapport complet imprimable',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-[#a1a1a7]">
                     <svg className="w-4 h-4 text-[#4F46E5] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -497,22 +494,22 @@ export default function TurkishHomePage() {
                 ))}
               </ul>
               <div className="mt-7 pt-6 border-t border-[#424245]">
-                <CtaLink href="/tr/auth/register" label="what_you_get_academic_tr" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
-                  Ücretsiz başla →
+                <CtaLink href="/fr/auth/register" label="what_you_get_academic_fr" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+                  Commencer gratuitement →
                 </CtaLink>
               </div>
             </div>
 
             <div className="bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-8">
-              <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-wider mb-5">Staj Değerlendirmesi</p>
+              <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-wider mb-5">Évaluation de Stage</p>
               <ul className="space-y-3">
                 {[
-                  'Hazırlık seviyesi — Staja Hazır / Gelişiyor / Destek Gerekiyor',
-                  'Yapay zeka tarafından oluşturulan kariyer özet paragrafı',
-                  'Aşama içgörüleri — yetenek, alan, iş yeri becerileri',
-                  '4 kariyer alanında alan eşleşmesi',
-                  'Kişiselleştirilmiş güçlü yönler ve gelişim alanları',
-                  'Üniversite başvurularınızda kullanabileceğiniz rapor',
+                  'Niveau de préparation — Prêt / En développement / Nécessite un soutien',
+                  'Paragraphe de résumé de carrière généré par IA',
+                  'Insights par phase — aptitude, domaine, compétences professionnelles',
+                  'Correspondance de domaine dans les 4 secteurs professionnels',
+                  'Points forts personnalisés et axes d\'amélioration',
+                  'Rapport utilisable dans votre candidature universitaire',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-[#636366]">
                     <svg className="w-4 h-4 text-[#4F46E5] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -523,8 +520,8 @@ export default function TurkishHomePage() {
                 ))}
               </ul>
               <div className="mt-7 pt-6 border-t border-[#c7d2fe]">
-                <a href="https://eduentry.ai/tr" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
-                  Değerlendirmeye başvur →
+                <a href="https://eduentry.ai/fr" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
+                  Demander l&apos;évaluation →
                 </a>
               </div>
             </div>
@@ -537,10 +534,10 @@ export default function TurkishHomePage() {
       <section className="py-32 bg-[#f5f5f7]">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">Sorular.</h2>
+            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">Questions.</h2>
           </div>
           <div className="space-y-2">
-            {FAQ_TR.map(({ q, a }) => (
+            {FAQ_FR.map(({ q, a }) => (
               <details key={q} className="group bg-white border border-[#d2d2d7] rounded-2xl overflow-hidden">
                 <summary className="flex items-center justify-between px-6 py-4 cursor-pointer font-medium text-[#1d1d1f] text-sm select-none list-none">
                   {q}
@@ -553,9 +550,9 @@ export default function TurkishHomePage() {
             ))}
           </div>
           <p className="text-center text-xs text-[#636366] mt-8">
-            Puanlama metodolojisini anlamak ister misiniz?{' '}
-            <Link href="/tr/metodoloji" className="text-[#4F46E5] hover:underline font-medium">
-              Eduentry nasıl çalışır →
+            Vous voulez comprendre la méthodologie de scoring ?{' '}
+            <Link href="/fr/methodologie" className="text-[#4F46E5] hover:underline font-medium">
+              Lisez comment fonctionne Eduentry →
             </Link>
           </p>
         </div>
@@ -565,14 +562,14 @@ export default function TurkishHomePage() {
       <section className="py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-end justify-between mb-10">
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight">Blogdan son yazılar</h2>
-            <Link href="/tr/blog" className="text-xs font-semibold text-[#4F46E5] hover:underline">Tümünü gör →</Link>
+            <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight">Derniers articles</h2>
+            <Link href="/fr/blog" className="text-xs font-semibold text-[#4F46E5] hover:underline">Voir tout →</Link>
           </div>
           <div className="grid sm:grid-cols-3 gap-4">
-            {BLOG_POSTS_TR.slice(0, 3).map((post) => (
+            {BLOG_POSTS_FR.slice(0, 3).map((post) => (
               <Link
                 key={post.slug}
-                href={`/tr/blog/${post.slug}`}
+                href={`/fr/blog/${post.slug}`}
                 className="group border border-[#d2d2d7] rounded-3xl p-6 hover:border-[#4F46E5] hover:shadow-sm transition-all flex flex-col bg-white"
               >
                 <div className="flex flex-wrap gap-1.5 mb-4">
@@ -594,19 +591,19 @@ export default function TurkishHomePage() {
       <section className="bg-[#1d1d1f] py-32 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
-            <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">Akademik Değerlendirme</p>
-            <h2 className="text-2xl font-bold text-white mb-3">Çocuğunuzun küresel konumunu keşfedin.</h2>
-            <p className="text-[#a1a1a7] text-sm mb-8">2 saatten kısa sürede eksiksiz uluslararası bağlam.</p>
-            <CtaLink href="/tr/auth/register" label="bottom_cta_academic_tr" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
-              Ücretsiz değerlendirmeyi başlat →
+            <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">Évaluation Académique</p>
+            <h2 className="text-2xl font-bold text-white mb-3">Découvrez où se situe votre enfant — à l&apos;échelle mondiale.</h2>
+            <p className="text-[#a1a1a7] text-sm mb-8">Contexte international complet en moins de 2 heures.</p>
+            <CtaLink href="/fr/auth/register" label="bottom_cta_academic_fr" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+              Commencer l&apos;évaluation gratuite →
             </CtaLink>
           </div>
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
-            <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Staj Değerlendirmesi</p>
-            <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Öğrencinizin staj hazırlığını keşfedin.</h2>
-            <p className="text-[#636366] text-sm mb-8">35 dakikada kişiselleştirilmiş rapor ve yapay zeka içgörüleri.</p>
-            <a href="https://eduentry.ai/tr" className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors">
-              Değerlendirmeye başvur →
+            <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Évaluation de Stage</p>
+            <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Découvrez le niveau de préparation au stage de votre lycéen.</h2>
+            <p className="text-[#636366] text-sm mb-8">Rapport personnalisé et insights IA en 35 minutes.</p>
+            <a href="https://eduentry.ai/fr" className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors">
+              Demander l&apos;évaluation →
             </a>
           </div>
         </div>
