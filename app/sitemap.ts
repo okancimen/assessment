@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       alternates: { languages: { 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, 'x-default': `${BASE}/methodology` } },
     },
-    { url: `${BASE}/internship`, lastModified: '2026-09-08', changeFrequency: 'monthly', priority: 0.9, alternates: { languages: { 'en-GB': `${BASE}/internship`, es: `${BASE}/internship`, tr: `${BASE}/internship`, 'x-default': `${BASE}/internship` } } },
+    { url: `${BASE}/internship`, lastModified: '2026-09-08', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/demo`,            lastModified: '2026-06-17', changeFrequency: 'monthly', priority: 0.7 },
     {
       url: `${BASE}/blog`,

@@ -194,6 +194,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         </div>
 
+        {/* Cross-locale links */}
+        {(trByContentSlug.has(slug) || esByContentSlug.has(slug)) && (
+          <div className="mb-10 flex items-center gap-2 text-xs text-gray-400 flex-wrap">
+            <span>Also available in:</span>
+            {esByContentSlug.has(slug) && (
+              <Link href={`/es/blog/${esByContentSlug.get(slug)}`} className="inline-flex items-center gap-1 text-indigo-500 hover:text-indigo-700 font-medium">
+                <span>🇪🇸</span> Español
+              </Link>
+            )}
+            {trByContentSlug.has(slug) && esByContentSlug.has(slug) && <span>·</span>}
+            {trByContentSlug.has(slug) && (
+              <Link href={`/tr/blog/${trByContentSlug.get(slug)}`} className="inline-flex items-center gap-1 text-indigo-500 hover:text-indigo-700 font-medium">
+                <span>🇹🇷</span> Türkçe
+              </Link>
+            )}
+          </div>
+        )}
+
         <article className="prose prose-gray max-w-none space-y-12">
           {getBlogContent(slug)}
         </article>
