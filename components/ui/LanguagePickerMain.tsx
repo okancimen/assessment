@@ -90,6 +90,63 @@ const FR_TO_TR: Record<string, string> = {
   '/fr/methodologie': '/tr/metodoloji',
 }
 
+const EN_TO_AR: Record<string, string> = {
+  '/': '/ar',
+  '/internship': '/ar',
+  '/blog': '/ar/blog',
+  '/about': '/ar/hawlana',
+  '/methodology': '/ar/manhajiyya',
+}
+
+const AR_TO_EN: Record<string, string> = {
+  '/ar': '/',
+  '/ar/blog': '/blog',
+  '/ar/hawlana': '/about',
+  '/ar/manhajiyya': '/methodology',
+}
+
+const ES_TO_AR: Record<string, string> = {
+  '/es': '/ar',
+  '/es/blog': '/ar/blog',
+  '/es/sobre-nosotros': '/ar/hawlana',
+  '/es/metodologia': '/ar/manhajiyya',
+}
+
+const AR_TO_ES: Record<string, string> = {
+  '/ar': '/es',
+  '/ar/blog': '/es/blog',
+  '/ar/hawlana': '/es/sobre-nosotros',
+  '/ar/manhajiyya': '/es/metodologia',
+}
+
+const TR_TO_AR: Record<string, string> = {
+  '/tr': '/ar',
+  '/tr/blog': '/ar/blog',
+  '/tr/hakkimizda': '/ar/hawlana',
+  '/tr/metodoloji': '/ar/manhajiyya',
+}
+
+const AR_TO_TR: Record<string, string> = {
+  '/ar': '/tr',
+  '/ar/blog': '/tr/blog',
+  '/ar/hawlana': '/tr/hakkimizda',
+  '/ar/manhajiyya': '/tr/metodoloji',
+}
+
+const FR_TO_AR: Record<string, string> = {
+  '/fr': '/ar',
+  '/fr/blog': '/ar/blog',
+  '/fr/a-propos': '/ar/hawlana',
+  '/fr/methodologie': '/ar/manhajiyya',
+}
+
+const AR_TO_FR: Record<string, string> = {
+  '/ar': '/fr',
+  '/ar/blog': '/fr/blog',
+  '/ar/hawlana': '/fr/a-propos',
+  '/ar/manhajiyya': '/fr/methodologie',
+}
+
 function getEsHref(pathname: string): string {
   if (pathname.startsWith('/es')) return pathname
   if (pathname.startsWith('/fr')) {
@@ -100,6 +157,11 @@ function getEsHref(pathname: string): string {
   if (pathname.startsWith('/tr')) {
     if (TR_TO_ES[pathname]) return TR_TO_ES[pathname]
     if (pathname.startsWith('/tr/blog/')) return '/es/blog'
+    return '/es'
+  }
+  if (pathname.startsWith('/ar')) {
+    if (AR_TO_ES[pathname]) return AR_TO_ES[pathname]
+    if (pathname.startsWith('/ar/blog/')) return '/es/blog'
     return '/es'
   }
   if (EN_TO_ES[pathname]) return EN_TO_ES[pathname]
@@ -119,6 +181,11 @@ function getTrHref(pathname: string): string {
     if (pathname.startsWith('/es/blog/')) return '/tr/blog'
     return '/tr'
   }
+  if (pathname.startsWith('/ar')) {
+    if (AR_TO_TR[pathname]) return AR_TO_TR[pathname]
+    if (pathname.startsWith('/ar/blog/')) return '/tr/blog'
+    return '/tr'
+  }
   if (EN_TO_TR[pathname]) return EN_TO_TR[pathname]
   if (pathname.startsWith('/blog/')) return '/tr/blog'
   return '/tr'
@@ -133,6 +200,11 @@ function getEnHref(pathname: string): string {
   if (pathname.startsWith('/tr')) {
     if (TR_TO_EN[pathname]) return TR_TO_EN[pathname]
     if (pathname.startsWith('/tr/blog/')) return '/blog'
+    return '/'
+  }
+  if (pathname.startsWith('/ar')) {
+    if (AR_TO_EN[pathname]) return AR_TO_EN[pathname]
+    if (pathname.startsWith('/ar/blog/')) return '/blog'
     return '/'
   }
   if (!pathname.startsWith('/es')) return pathname === '/' ? '/' : pathname
@@ -153,15 +225,43 @@ function getFrHref(pathname: string): string {
     if (pathname.startsWith('/tr/blog/')) return '/fr/blog'
     return '/fr'
   }
+  if (pathname.startsWith('/ar')) {
+    if (AR_TO_FR[pathname]) return AR_TO_FR[pathname]
+    if (pathname.startsWith('/ar/blog/')) return '/fr/blog'
+    return '/fr'
+  }
   if (EN_TO_FR[pathname]) return EN_TO_FR[pathname]
   if (pathname.startsWith('/blog/')) return '/fr/blog'
   return '/fr'
 }
 
-function detectLang(pathname: string): 'EN' | 'ES' | 'TR' | 'FR' {
+function getArHref(pathname: string): string {
+  if (pathname.startsWith('/ar')) return pathname
+  if (pathname.startsWith('/es')) {
+    if (ES_TO_AR[pathname]) return ES_TO_AR[pathname]
+    if (pathname.startsWith('/es/blog/')) return '/ar/blog'
+    return '/ar'
+  }
+  if (pathname.startsWith('/tr')) {
+    if (TR_TO_AR[pathname]) return TR_TO_AR[pathname]
+    if (pathname.startsWith('/tr/blog/')) return '/ar/blog'
+    return '/ar'
+  }
+  if (pathname.startsWith('/fr')) {
+    if (FR_TO_AR[pathname]) return FR_TO_AR[pathname]
+    if (pathname.startsWith('/fr/blog/')) return '/ar/blog'
+    return '/ar'
+  }
+  if (EN_TO_AR[pathname]) return EN_TO_AR[pathname]
+  if (pathname.startsWith('/blog/')) return '/ar/blog'
+  return '/ar'
+}
+
+function detectLang(pathname: string): 'EN' | 'ES' | 'TR' | 'FR' | 'AR' {
   if (pathname.startsWith('/es')) return 'ES'
   if (pathname.startsWith('/tr')) return 'TR'
   if (pathname.startsWith('/fr')) return 'FR'
+  if (pathname.startsWith('/ar')) return 'AR'
   return 'EN'
 }
 
@@ -170,6 +270,7 @@ const LANG_META = {
   ES: { flag: '🇪🇸', label: 'Español' },
   TR: { flag: '🇹🇷', label: 'Türkçe' },
   FR: { flag: '🇫🇷', label: 'Français' },
+  AR: { flag: '🇦🇪', label: 'العربية' },
 }
 
 export default function LanguagePickerMain() {
@@ -191,6 +292,7 @@ export default function LanguagePickerMain() {
     { code: 'ES' as const, href: getEsHref(pathname) },
     { code: 'TR' as const, href: getTrHref(pathname) },
     { code: 'FR' as const, href: getFrHref(pathname) },
+    { code: 'AR' as const, href: getArHref(pathname) },
   ]
 
   const active = LANG_META[activeLang]
