@@ -76,14 +76,10 @@ export default async function ESBlogPostPage({ params }: { params: Promise<{ slu
     dateModified: post.dateModified ?? post.date,
     url,
     inLanguage: 'es',
-    author: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Eduentry',
-      url: BASE_URL,
-      logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-    },
+    author: { '@id': 'https://eduentry.com/#organization' },
+    publisher: { '@id': 'https://eduentry.com/#organization' },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    isPartOf: { '@id': 'https://eduentry.com/#website' },
   }
 
   const faqSchema = post.faqs && post.faqs.length > 0
