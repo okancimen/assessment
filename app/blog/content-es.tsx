@@ -887,6 +887,389 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'practicas-marketing-digital-instituto': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        El marketing digital es uno de los sectores con mayor demanda de jóvenes con talento en el Reino Unido, y una de las pocas áreas donde un estudiante de instituto puede demostrar aptitud real antes de tener un título universitario. Las herramientas son accesibles, las barreras de entrada son bajas y los empleadores valoran la proactividad sobre los títulos — especialmente a nivel de prácticas. Este artículo explica cómo navegar el proceso de principio a fin.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        La mayoría de estudiantes que buscan prácticas en marketing digital cometen el mismo error: buscan programas formales de grandes marcas y se desaniman cuando no los encuentran o no los consiguen. El mercado real de prácticas en marketing digital es mucho más amplio — y significativamente más accesible — de lo que parece desde fuera.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué hace realmente alguien en prácticas de marketing digital</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las prácticas de marketing digital a nivel de instituto implican un conjunto de tareas más concreto de lo que el nombre sugiere. En una agencia o empresa pequeña, un estudiante en prácticas puede esperar: redactar contenido para redes sociales y blogs, analizar métricas básicas de rendimiento en Google Analytics, apoyar campañas de email marketing, investigar palabras clave para SEO, y preparar informes semanales de rendimiento.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lo más valioso no son las tareas individuales — es la observación del proceso de toma de decisiones de marketing. Por qué se elige un canal sobre otro, cómo se mide el éxito, qué ocurre cuando una campaña no rinde como se esperaba. Esta comprensión contextual es lo que distingue a los candidatos universitarios que han tenido prácticas reales de los que solo han leído sobre marketing digital.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Para la declaración personal:</strong> Poder describir por qué una campaña específica generó un 34% más de clics que otra — o por qué una estrategia de contenido no funcionó como se esperaba — es significativamente más persuasivo que afirmar interés en el marketing digital.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué habilidades demostrar antes de solicitar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los empleadores de marketing digital buscan cuatro señales de aptitud en candidatos sin experiencia laboral previa: comprensión básica de cómo funciona el SEO (no hace falta ser experto — con entender qué es la intención de búsqueda y cómo Google indexa el contenido es suficiente), familiaridad con al menos una plataforma de análisis (Google Analytics 4 tiene una certificación gratuita), capacidad de escribir con claridad y brevedad, y actitud de aprendizaje demostrable.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Google Analytics 4</strong> — certificación gratuita disponible en Google Skillshop. Añadir esta certificación a una solicitud demuestra proactividad que la mayoría de candidatos no muestra.</Check>
+          <Check><strong>Google Ads</strong> — otra certificación gratuita de Skillshop. Especialmente útil para agencias de performance marketing.</Check>
+          <Check><strong>Canva o Adobe Express</strong> — capacidad básica de diseño visual. La mayoría de roles de contenido implican crear algún material visual.</Check>
+          <Check><strong>Excel o Google Sheets</strong> — para organizar y presentar datos de rendimiento. Las tablas dinámicas básicas son suficientes.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dónde buscar prácticas de marketing digital siendo estudiante</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El canal más efectivo que la mayoría de estudiantes ignora: el contacto directo con agencias pequeñas y medianas. El Reino Unido tiene miles de agencias de marketing digital de 5-30 personas. La mayoría no organizan programas formales — lo que significa que casi nunca reciben solicitudes de colocación. Un correo bien redactado, personalizado y dirigido al socio fundador o director tiene una tasa de respuesta significativamente más alta que solicitar en portales de empleo competitivos.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Otras vías de búsqueda: Springpod tiene experiencias de trabajo virtuales en marketing digital de empresas reales; Bright Network organiza eventos y colocaciones para estudiantes de instituto; y LinkedIn permite identificar profesionales locales de marketing que podrían estar abiertos a recibir a un estudiante en observación.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo construir un portfolio mínimo sin experiencia previa</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un portfolio de marketing digital para un estudiante de 16 años no necesita ser extenso — necesita ser específico. Tres proyectos bien documentados superan a diez proyectos vagos. Las opciones más accesibles: gestionar una cuenta de redes sociales durante 3 meses con métricas antes/después, crear una estrategia de contenido para un negocio local (incluso si no se implementa), o escribir tres artículos de blog optimizados para SEO sobre un tema específico.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">El punto diferenciador real:</strong> Un informe de evaluación de Eduentry que muestra aptitud verificada en marketing digital — antes de que el reclutador te conozca — resuelve directamente el problema principal de selección: cómo diferenciar entre candidatos sin historial profesional.
+        </Callout>
+      </section>
+    </>
+  ),
+
+  'practicas-analitica-datos-estudiantes': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        La analítica de datos es el área de mayor crecimiento en el mercado laboral del Reino Unido y la que presenta el desequilibrio más pronunciado entre demanda de talento y oferta de candidatos preparados. Para un estudiante de instituto con aptitud cuantitativa e interés en resolver problemas concretos, esto representa una oportunidad real — y las prácticas tempranas son el camino más efectivo para construir una ventaja duradera.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Este artículo explica qué implican realmente las prácticas en analítica de datos, qué habilidades necesitas desarrollar antes de solicitar, y dónde encontrar oportunidades accesibles siendo estudiante de instituto.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué se hace en prácticas de analítica de datos</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A nivel de prácticas de estudiante, las tareas más frecuentes son: limpieza y estructuración de datasets (más importante de lo que parece — ocupa el 60-80% del tiempo de trabajo en analítica real), creación de visualizaciones y dashboards para comunicar hallazgos, análisis de métricas específicas bajo supervisión, y presentación de resultados a un supervisor o equipo.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lo más valioso no es la tarea técnica — es la observación del proceso analítico: cómo el equipo formula preguntas de negocio en términos de datos, qué métricas importan realmente versus cuáles simplemente existen, y cómo se comunican los hallazgos a personas no técnicas. Esta comprensión contextual es lo que distingue a los candidatos con experiencia real de los que solo han hecho cursos online.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Para la solicitud universitaria:</strong> Poder describir cómo un equipo de analítica diagnosticó la caída en una métrica específica y qué pasos siguió para identificar la causa — con tu rol en ese proceso — es material de declaración personal de una calidad que ningún proyecto de clase puede producir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué aprender antes de solicitar prácticas en datos</h2>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Excel o Google Sheets (nivel intermedio)</strong> — fórmulas básicas, tablas dinámicas, gráficos. Imprescindible en cualquier rol de analítica.</Check>
+          <Check><strong>Estadística descriptiva básica</strong> — medias, medianas, distribuciones, correlación. Khan Academy tiene módulos gratuitos específicos.</Check>
+          <Check><strong>SQL básico</strong> — consultas SELECT, filtros WHERE, JOINs básicos. SQLZoo y Mode Analytics tienen ejercicios gratuitos.</Check>
+          <Check><strong>Google Analytics 4</strong> — certificación gratuita. Demuestra interés en analítica digital de forma verificable.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Con estas cuatro habilidades en un nivel funcional, ya estás por delante de la mayoría de solicitantes de prácticas sin experiencia previa. Python es una ventaja adicional pero no es un requisito para la mayoría de posiciones de prácticas a nivel de instituto.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo construir un portfolio de analítica de datos sin experiencia</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Kaggle ofrece datasets públicos gratuitos con los que puedes realizar un análisis real y documentar los hallazgos. Google Data Studio permite crear dashboards gratuitos que puedes compartir como enlace. Un análisis de 3-5 páginas de un dataset público — con pregunta de negocio definida, metodología, hallazgos y limitaciones — es un portfolio mínimo viable que la mayoría de candidatos de tu edad no tiene.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">La ventaja de la evaluación verificada:</strong> En analítica de datos más que en cualquier otra área, los empleadores quieren señales de aptitud cuantitativa objetivas. Un informe de evaluación de Eduentry con perfil de aptitud numérica proporciona exactamente eso — evidencia de terceros antes del primer contacto.
+        </Callout>
+      </section>
+    </>
+  ),
+
+  'cv-para-practicas-con-16-anos': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        El CV para prácticas a los 16 años resuelve un problema aparente: cómo demostrar valor cuando no tienes historial laboral. La respuesta no está en inflar lo que tienes ni en inventar lo que no tienes — está en estructurar lo que realmente eres de una forma que un reclutador pueda evaluar en 30 segundos.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Este artículo explica exactamente qué incluir, cómo estructurarlo, y los errores específicos que cuestan la oportunidad antes de llegar a la entrevista.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La estructura que funciona: una página, seis secciones</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un CV de prácticas para estudiante de instituto tiene seis secciones en orden específico: (1) Datos de contacto, (2) Declaración personal de 3-4 líneas, (3) Educación con notas relevantes, (4) Experiencia relevante —no necesariamente laboral—, (5) Habilidades verificables, y (6) Intereses con conexión al área de prácticas.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet><strong>Datos de contacto:</strong> nombre, email profesional (nombre.apellido@gmail.com, no nicknames), número de móvil y — si es relevante — enlace a LinkedIn o portfolio. Sin foto, sin dirección completa.</Bullet>
+          <Bullet><strong>Declaración personal:</strong> 3-4 líneas que responden quién eres, qué buscas y qué puedes aportar. Específica al sector, no genérica. Máximo 60 palabras.</Bullet>
+          <Bullet><strong>Educación:</strong> nombre del colegio, años, y las 3-4 asignaturas más relevantes con nota. Incluye predicciones si las conoces.</Bullet>
+          <Bullet><strong>Experiencia relevante:</strong> cualquier responsabilidad real con resultados medibles. Proyectos escolares, trabajos informales, voluntariado.</Bullet>
+          <Bullet><strong>Habilidades:</strong> solo habilidades verificables — herramientas específicas, idiomas con nivel, certificaciones.</Bullet>
+          <Bullet><strong>Intereses:</strong> uno o dos intereses genuinamente conectados al área de prácticas, con un detalle específico que los haga creíbles.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo convertir experiencia "no laboral" en contenido de CV</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El error más frecuente es pensar que si no has tenido un trabajo remunerado, la sección de experiencia debe quedar vacía. La realidad es que cualquier responsabilidad real con resultados reales es material de CV — independientemente de si fue pagada.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un proyecto de clase con un resultado específico, la organización de un evento escolar, ayudar en el negocio de un familiar, dar clases particulares a un compañero, o gestionar el perfil de Instagram de un club local — todos son experiencias que pueden describirse en lenguaje de CV si se cuantifican y se articulan en términos de acción y resultado.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">La regla de oro:</strong> Nunca describas una responsabilidad sin un resultado. "Organicé el evento de recaudación de fondos del colegio" no aporta nada. "Coordiné un evento de 150 asistentes que recaudó 800£ para la asociación de padres" dice mucho sobre tu capacidad de ejecución.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo compensar la falta de experiencia con señales verificables</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dos estrategias específicas funcionan para estudiantes sin historial laboral: las certificaciones gratuitas verificables (Google Analytics, Google Ads, Coursera, etc.) demuestran proactividad que los reclutadores valoran explícitamente, y un informe de evaluación de aptitud de terceros proporciona datos objetivos sobre capacidad que el CV por sí mismo no puede demostrar.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">El argumento de la evaluación:</strong> Para puestos de prácticas donde todos los candidatos tienen el mismo nivel de experiencia —ninguno—, la señal que diferencia es la aptitud demostrable. Un informe de preparación de Eduentry proporciona exactamente eso: evidencia objetiva antes de la entrevista.
+        </Callout>
+      </section>
+    </>
+  ),
+
+  'como-superar-entrevista-practicas': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        La entrevista de prácticas para estudiantes de instituto es menos aterradora de lo que parece — y más preparable de lo que la mayoría de candidatos cree. Los entrevistadores de prácticas a nivel de estudiante no esperan un candidato pulido y con años de experiencia. Esperan uno que ha pensado seriamente en por qué está allí, que tiene algo específico que decir, y que demuestra capacidad de aprender.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Este artículo cubre las categorías de preguntas más frecuentes, cómo estructurar respuestas sin experiencia laboral previa, y los errores concretos que cuestan la plaza.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Las cinco categorías de preguntas que cubrirán el 80% de tu entrevista</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet><strong>Motivación:</strong> "¿Por qué esta empresa / este sector?" Requiere investigación previa específica. "Me interesa el marketing digital" no es suficiente. "Leí que vuestra agencia especializa en SEO para e-commerce y quiero entender cómo se construye una estrategia de contenido para conversión" es una respuesta. Prepara una respuesta específica a esta pregunta antes que cualquier otra.</Bullet>
+          <Bullet><strong>Autoconocimiento:</strong> "¿Cuál es tu mayor fortaleza / debilidad?" Para la fortaleza: une una cualidad a un ejemplo específico. Para la debilidad: usa una debilidad real pero que no sea crítica para el rol, y añade cómo estás trabajando en ella.</Bullet>
+          <Bullet><strong>Comportamiento:</strong> "Cuéntame de una vez que..." Usa la estructura STAR (Situación, Tarea, Acción, Resultado) con ejemplos del colegio o actividades extraescolares si no tienes experiencia laboral.</Bullet>
+          <Bullet><strong>Conocimiento del sector:</strong> Preguntas básicas sobre el área de prácticas. Prepara cinco conceptos clave del sector que puedas explicar con tus propias palabras.</Bullet>
+          <Bullet><strong>Preguntas del candidato:</strong> Siempre prepara 2-3 preguntas genuinas para el entrevistador. Los candidatos que no preguntan nada transmiten desinterés.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo responder preguntas de comportamiento sin experiencia laboral</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La estructura STAR funciona con cualquier tipo de experiencia — no solo laboral. Los entrevistadores de prácticas de instituto saben perfectamente que el candidato no tiene historial profesional. Lo que evalúan es la calidad del pensamiento y la capacidad de aprender de la experiencia, no el tipo de experiencia en sí.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ejemplos de contextos válidos: un proyecto en grupo donde hubo un conflicto de opiniones, organizar un evento escolar con presupuesto limitado, aprender una habilidad nueva para completar un proyecto, o gestionar múltiples compromisos simultáneamente. La clave es ser específico: nombres reales, fechas aproximadas, acciones concretas, y resultados medibles.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">El error más frecuente:</strong> Respuestas genéricas sin evidencia. "Soy muy buena trabajando en equipo" no ayuda. "En el proyecto de ciencias del trimestre pasado, cuando surgió un desacuerdo sobre la metodología, propuse dividir el experimento en dos aproximaciones y comparar resultados — lo que resolvió el bloqueo y produjo datos más ricos de lo esperado" demuestra exactamente lo que afirmas.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">El día de la entrevista: qué diferencia a los candidatos que consiguen la plaza</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tres comportamientos concretos separan a los candidatos que los entrevistadores recuerdan: llegan con preguntas específicas preparadas (no genéricas), escuchan activamente y conectan sus respuestas con lo que el entrevistador acaba de decir, y son capaces de decir "no sé, pero me interesa aprender" sobre temas técnicos específicos — la honestidad calibrada comunica madurez, no debilidad.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">La ventaja de la preparación cuantificada:</strong> Llevar a la entrevista un informe de evaluación de Eduentry con tu perfil de aptitud por área te proporciona material concreto para responder preguntas de autoconocimiento con datos en lugar de afirmaciones — y transmite un nivel de seriedad que la mayoría de candidatos de tu edad no demuestra.
+        </Callout>
+      </section>
+    </>
+  ),
+
+  'practicas-verano-reino-unido-estudiantes': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Las prácticas de verano en el Reino Unido representan la oportunidad más concentrada del año para que un estudiante de instituto construya experiencia profesional real. Con 4 a 6 semanas disponibles entre julio y agosto, y un mercado de empleadores que varía desde grandes firmas del FTSE 100 hasta startups de una persona, las opciones son mucho más amplias — y accesibles — de lo que la mayoría de estudiantes conoce.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Este artículo cubre cuándo solicitar, cómo encontrar las mejores oportunidades, qué esperar durante las prácticas y cómo documentar la experiencia para que cuente en solicitudes universitarias.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cuándo y cómo solicitar prácticas de verano</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Para programas formales de grandes empleadores — bancos, consultoras, firmas de tecnología — las solicitudes abren en septiembre y cierran en diciembre del curso anterior. Los estudiantes que solicitan en las primeras dos semanas de la ventana tienen una ventaja estructural: los evaluadores están menos saturados, hay más plazas disponibles y los criterios de selección aún no se han endurecido con la experiencia acumulada.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Para prácticas autoorganizadas en pymes o contacto directo con empresas locales, el plazo óptimo es marzo-abril para el verano siguiente. Antes de este período, muchos responsables no han confirmado si podrán acoger a un estudiante. Después de mayo, la mayoría ya ha cubierto sus necesidades estivales.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">La regla del septiembre:</strong> Pon un recordatorio para la primera semana de septiembre. La diferencia entre solicitar en la primera semana versus la última puede ser significativa en programas que seleccionan de forma continua.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Tipos de prácticas de verano disponibles para estudiantes de instituto</h2>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Programas formales de grandes empleadores</strong> — Goldman Sachs, JP Morgan, KPMG, Deloitte, Google, Microsoft y similares organizan semanas de "Spring Insight" o programas de verano para estudiantes de 16-17 años. Competitivos (10-20 solicitudes por plaza) pero remunerados y con alta densidad de aprendizaje.</Check>
+          <Check><strong>Prácticas en pymes por contacto directo</strong> — el canal más accesible y subestimado. Una empresa local de 10-50 personas en tu área de interés, contactada directamente con una propuesta bien elaborada, tiene una tasa de respuesta significativamente más alta que los portales competitivos.</Check>
+          <Check><strong>Experiencias virtuales de trabajo</strong> — Springpod, Forage y Bright Network ofrecen programas de trabajo virtual con empresas reales. No sustituyen las prácticas presenciales pero son un punto de partida válido para construir vocabulario y referencias.</Check>
+          <Check><strong>Voluntariado con responsabilidad real</strong> — organizaciones sin ánimo de lucro frecuentemente ofrecen responsabilidades más sustanciales que las prácticas corporativas formales a un nivel equivalente.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo documentar las prácticas de verano para que cuenten</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La diferencia entre unas prácticas que transforman una solicitud universitaria y unas que apenas se mencionan está en la documentación durante el proceso, no después. Llevar un diario de aprendizaje desde el primer día — observaciones específicas, situaciones donde algo te sorprendió, decisiones que tomó el equipo y sus razones — produce material de una calidad que la memoria sola no puede reproducir tres meses después.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Tres preguntas para cada semana de prácticas:</strong> ¿Qué observé que no esperaba? ¿Qué pregunta hice que generó una conversación significativa? ¿Qué haría diferente si volviera a empezar esta semana? Responder estas tres preguntas cada viernes produce el material exacto que la declaración personal necesita.
+        </Callout>
+      </section>
+    </>
+  ),
+
+  'inteligencia-artificial-futuro-trabajo-jovenes': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        La inteligencia artificial está cambiando el mercado laboral más rápido de lo que ningún sistema educativo puede adaptar sus programas. Para los estudiantes de instituto que tomarán sus primeras decisiones profesionales reales en los próximos 3-5 años, esto plantea una pregunta práctica: ¿qué tipo de preparación resulta más valiosa en este contexto?
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Este artículo no especula sobre el futuro distante — se centra en lo que la evidencia actual sobre IA y mercado laboral implica para las decisiones que un estudiante de 15-17 años debe tomar hoy.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lo que la IA está cambiando realmente (y lo que no)</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los estudios de Oxford Economics, McKinsey y el Instituto de Brookings son convergentes en su caracterización de qué tareas son más vulnerables a la automatización: las repetitivas y predecibles — procesamiento rutinario de datos, transcripción, clasificación de documentos estándar, generación de reportes estructurados — ya están siendo automatizadas o lo serán en los próximos 5 años.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las tareas menos vulnerables tienen una característica común: requieren juicio sobre situaciones nuevas. Gestionar una conversación con un cliente que tiene un problema no estándar, tomar una decisión estratégica con información incompleta, construir confianza en una relación profesional, crear algo genuinamente original. Estas son también las habilidades que los empleadores citan sistemáticamente como las más subdesarrolladas en los jóvenes que se incorporan al mercado laboral.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">La paradoja de la IA:</strong> Las habilidades más resistentes a la automatización son precisamente las que la experiencia profesional temprana desarrolla más directamente. La IA está haciendo que las prácticas sean más valiosas, no menos.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué habilidades desarrollar antes de los 18 años</h2>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Razonamiento crítico aplicado</strong> — la capacidad de evaluar información de múltiples fuentes y formular un juicio propio. No buscada por la IA sino requerida para usarla bien.</Check>
+          <Check><strong>Comunicación interpersonal compleja</strong> — negociación, gestión de conflictos, construcción de relaciones de confianza. Imposible de automatizar.</Check>
+          <Check><strong>Criterio sobre el uso de herramientas de IA</strong> — saber cuándo la IA añade valor, cuándo no, y cómo verificar sus outputs. Más valioso que la simple capacidad de usar IA.</Check>
+          <Check><strong>Adaptabilidad demostrada</strong> — historial de haber aprendido cosas nuevas en contextos reales, no solo académicos.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Por qué la experiencia de prácticas es más valiosa en un mundo con IA</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Si la IA automatiza las partes mecánicas del trabajo — procesamiento de información, redacción estándar, análisis rutinario — el valor humano se concentra en el juicio contextual, las relaciones y la creatividad aplicada. Estas son exactamente las capacidades que un entorno de trabajo real desarrolla y que ningún sistema de IA puede replicar o enseñar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un estudiante de 16 años que completa unas prácticas reales en 2026 no solo gana observación profesional — gana experiencia en navegar la incertidumbre, adaptarse a contextos cambiantes y trabajar con personas en situaciones no definidas de antemano. Estas son las habilidades que el mercado laboral de 2030-2035 pagará más — y que los sistemas educativos actuales, con o sin IA, tienen más dificultad para desarrollar.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">La conclusión práctica:</strong> La pregunta no es "¿debería preocuparme por la IA?" sino "¿qué tipo de preparación me hace más valioso en un mundo donde la IA maneja las tareas mecánicas?" La respuesta apunta directamente a la experiencia profesional temprana.
+        </Callout>
+      </section>
+    </>
+  ),
+
+  'emprender-con-16-anos': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Emprender con 16 años no requiere una idea revolucionaria, capital de inversión ni ninguna de las cosas que el ecosistema de startup populariza como necesarias. Requiere una responsabilidad real, consecuencias reales y la disposición de aprender de ambas. Este artículo explica qué significa emprender siendo estudiante de instituto, qué tipos de proyectos generan aprendizaje real, y cómo documentar la experiencia de forma que cuente.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        La mayoría de los consejos sobre emprendimiento juvenil están diseñados para hacer parecer el proceso más simple o más heroico de lo que es. Este artículo está diseñado para ser honesto sobre lo que realmente funciona — y sobre lo que no.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Por qué el emprendimiento a los 16 años tiene un valor diferente al de las prácticas</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las prácticas desarrollan comprensión de cómo funcionan las organizaciones desde dentro — invaluable para entender contexto profesional real. El emprendimiento desarrolla algo diferente: responsabilidad directa sobre resultados, tolerancia a la incertidumbre, y la capacidad de actuar sin instrucciones claras.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un estudiante que ha gestionado un proyecto con clientes reales, ingresos reales y problemas inesperados reales — aunque sean a pequeña escala — tiene un tipo de madurez que ni las prácticas más estructuradas ni los proyectos académicos más exigentes producen. Para las solicitudes universitarias a programas de empresa, economía y derecho, la combinación de ambas experiencias es significativamente más poderosa que cualquiera de ellas por separado.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué tipo de proyecto emprendedor tiene sentido a los 16 años</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los proyectos más valiosos para un estudiante de 16 años comparten tres características: pueden operar dentro del tiempo disponible fuera del colegio, requieren inversión inicial mínima o nula, y desarrollan habilidades genuinamente transferibles.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Servicios a negocios locales</strong> — diseño gráfico, gestión de redes sociales, fotografía, redacción de contenido. Clientes reales, pago real, feedback real.</Check>
+          <Check><strong>Tutorías académicas</strong> — uno de los modelos más accesibles. Desarrolla comunicación, gestión de expectativas y capacidad de explicar conceptos complejos.</Check>
+          <Check><strong>Producto digital</strong> — una guía, plantilla o recurso que resuelve un problema específico. La distribución digital elimina los costes de inventario.</Check>
+          <Check><strong>Organización de eventos pequeños</strong> — conciertos locales, mercadillos, eventos deportivos. Gestión de múltiples partes, presupuesto real, consecuencias reales.</Check>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Lo que no importa:</strong> La facturación total. Lo que importa es la calidad del aprendizaje y la especificidad con que puedes describirlo. Un proyecto que generó 200£ con tres lecciones concretas sobre adquisición de clientes es más valioso para una solicitud universitaria que un proyecto que generó 2.000£ sin reflexión documentada.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo documentar la experiencia emprendedora para que cuente en solicitudes</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La declaración personal universitaria tiene aproximadamente 650 palabras. Un estudiante que puede describir un fracaso específico en su proyecto — por qué ocurrió, qué cambió como consecuencia, y qué haría diferente — demuestra una madurez analítica que los evaluadores de admisiones identifican inmediatamente.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lleva un diario desde el primer día del proyecto. Anota decisiones tomadas y sus resultados, expectativas que no se cumplieron y por qué, y lo que aprendiste sobre clientes, mercado o tu propia capacidad de ejecución. Este material — no la facturación — es lo que convierte una experiencia emprendedora en contenido de solicitud universitaria de alta calidad.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">La combinación más poderosa:</strong> Experiencia emprendedora documentada + prácticas en una empresa del sector de interés + evaluación de aptitud verificada. Juntos, demuestran iniciativa (el proyecto), capacidad de funcionar en estructuras organizativas (las prácticas) y aptitud medible (la evaluación). Es un perfil que la gran mayoría de solicitantes universitarios no puede igualar.
+        </Callout>
+      </section>
+    </>
+  ),
+
+  'practicas-finanzas-banca-instituto': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Las finanzas y la banca representan uno de los sectores más competitivos para prácticas de estudiante en el Reino Unido — y también uno de los mejor estructurados para recibirlos. Desde Goldman Sachs hasta una firma de contabilidad local, el espectro de oportunidades para un estudiante de 15-17 años es más amplio de lo que parece desde fuera. Este artículo explica qué existe, cómo solicitar, y qué aprenderás realmente.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        La reputación de exclusividad de las finanzas disuade a muchos candidatos que en realidad tendrían posibilidades. La mayoría de programas competitivos de grandes empleadores seleccionan principalmente por aptitud, curiosidad y seriedad demostrable — no por contactos familiares ni historial de escuelas privadas.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué programas de prácticas en finanzas están disponibles para estudiantes de instituto</h2>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Programas de "Spring Insight" en banca de inversión</strong> — Goldman Sachs, JP Morgan, Deutsche Bank, Credit Suisse y UBS organizan programas de 1-2 semanas en spring break para estudiantes de primer año de bachillerato (16-17 años). Remunerados, selectivos y con alta densidad de contenido.</Check>
+          <Check><strong>Programas de firmas de servicios profesionales</strong> — KPMG, Deloitte, PwC y EY tienen esquemas específicos para estudiantes de bachillerato en sus divisiones de asesoría y auditoría. Solicitudes abren en septiembre-noviembre.</Check>
+          <Check><strong>Speakers for Schools</strong> — programa gratuito del Reino Unido que conecta a estudiantes con profesionales del sector financiero para visitas, conferencias y en algunos casos observaciones de trabajo. Accesible desde 14 años.</Check>
+          <Check><strong>Contacto directo con firmas locales</strong> — asesores financieros independientes, firmas de contabilidad medianas y gestores de patrimonio locales frecuentemente aceptan estudiantes sin programa formal cuando se les contacta directamente con una propuesta personalizada.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué aprenderás realmente en prácticas de finanzas siendo estudiante</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A nivel de prácticas de estudiante de instituto, no gestionarás dinero real ni tomarás decisiones de inversión. Lo que sí obtendrás: observar cómo funciona una reunión de equipo en un entorno financiero profesional, asistir a presentaciones de analistas o gestores de cartera, trabajar en un pequeño proyecto analítico con datos reales (bajo supervisión), y tener conversaciones one-to-one con profesionales del sector sobre sus trayectorias.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El valor más duradero no está en las tareas específicas — está en adquirir el vocabulario y el marco conceptual del sector financiero desde dentro. Un estudiante que ha pasado dos semanas en una firma de servicios financieros entiende la diferencia entre mercados primarios y secundarios, renta fija y variable, o riesgo y rendimiento, de una forma que ningún libro de texto produce.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Para la declaración personal de economía o finanzas:</strong> Poder describir una observación específica de cómo se toman decisiones financieras reales — con el contexto, las personas y la tensión concreta involucrada — es material de declaración personal de primera categoría que los evaluadores de LSE, Warwick o Bath distinguen inmediatamente.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo construir una solicitud competitiva sin conexiones del sector</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los programas más selectivos de banca e inversión usan ejercicios de capacidad numérica y razonamiento lógico en su proceso de selección — herramientas diseñadas precisamente para identificar aptitud independientemente del colegio de procedencia. La preparación para estos ejercicios, combinada con demostración de conciencia comercial básica (leer el FT o BBC Business durante 15 minutos diarios durante seis semanas produce una base sólida), construye una solicitud competitiva desde cero.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">La señal que diferencia:</strong> Un informe de evaluación de Eduentry con perfil de aptitud cuantitativa proporciona a los reclutadores evidencia de terceros sobre capacidad analítica — exactamente el tipo de señal que los programas financieros competitivos buscan en candidatos sin historial laboral previo.
+        </Callout>
+      </section>
+    </>
+  ),
+
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

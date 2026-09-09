@@ -1407,6 +1407,185 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'dijital-pazarlama-staji-nasil-bulunur': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Dijital pazarlama, Birleşik Krallık iş piyasasında genç yeteneklere en açık alanlardan biridir. Araçlar erişilebilir, giriş bariyerleri düşük ve işverenler — özellikle staj düzeyinde — deneyim yerine proaktifliği değerlendiriyor. Bu makale, lise öğrencisinin dijital pazarlama stajını nasıl bulacağını ve başvuru sürecini nasıl yöneteceğini adım adım açıklıyor.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Çoğu öğrenci dijital pazarlama stajı ararken aynı hatayı yapıyor: büyük markaların resmi programlarına başvuruyor ve sonuç alamayınca vazgeçiyor. Asıl pazar çok daha geniş ve çok daha erişilebilir.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dijital Pazarlama Stajında Gerçekte Ne Yapılır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lise düzeyinde dijital pazarlama stajı şu görevleri içerebilir: sosyal medya ve blog içeriği hazırlamak, Google Analytics'te temel performans metrikleri analiz etmek, e-posta pazarlama kampanyalarını desteklemek, SEO için anahtar kelime araştırması yapmak ve haftalık performans raporları hazırlamak. Bu görevlerin ötesinde asıl değerli olan, pazarlama karar süreçlerini gözlemlemek — hangi kanalın neden seçildiğini, başarının nasıl ölçüldüğünü ve kampanya beklentileri karşılamadığında ne yapıldığını anlamak.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Kişisel Beyan İçin:</strong> Belirli bir kampanyanın neden %34 daha fazla tıklama ürettiğini açıklayabilmek — ya da bir içerik stratejisinin neden beklenen sonucu vermediğini — soyut dijital pazarlama ilgisini dile getirmekten çok daha ikna edici.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Başvurmadan Önce Hangi Beceriler Geliştirilmeli?</h2>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Google Analytics 4</strong> — Google Skillshop üzerinden ücretsiz sertifika. Çoğu adayın göstermediği proaktifliği kanıtlar.</Check>
+          <Check><strong>Google Ads Temelleri</strong> — Yine Skillshop üzerinden ücretsiz. Performans pazarlama ajansları için özellikle değerli.</Check>
+          <Check><strong>Canva veya Adobe Express</strong> — Temel görsel tasarım becerisi. İçerik rolleri genellikle görsel üretimi gerektirir.</Check>
+          <Check><strong>Excel veya Google Sheets</strong> — Performans verilerini düzenlemek ve sunmak için. Temel pivot tablo yeterliliği yeterli.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dijital Pazarlama Stajı Nerede Bulunur?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En etkili ve en çok göz ardı edilen kanal: küçük ve orta ölçekli ajanslarla doğrudan temas. Birleşik Krallık'ta 5-30 kişilik binlerce dijital pazarlama ajansı var. Büyük çoğunluğu resmi staj programı düzenlemez — bu da neredeyse hiç başvuru almadıkları anlamına gelir. Kurucu ortağa veya direktöre kişiselleştirilmiş, iyi yazılmış bir e-posta, rekabetçi portallardaki başvurulara kıyasla çok daha yüksek yanıt oranı üretir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Diğer arama kanalları: Springpod gerçek şirketlerden dijital deneyimler sunuyor; Bright Network lise öğrencileri için etkinlikler ve yerleştirmeler düzenliyor; LinkedIn ise yerel pazarlama profesyonellerini tespit etmek için kullanılabilir.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Fark Yaratan Sinyal:</strong> Başvurunuza Eduentry hazırlık raporunu eklemek, işverenin sizi tanımadan önce üçüncü taraf yeterlilik kanıtı sunuyor — geçmişi olmayan adaylar arasında en kritik seçim sorununu doğrudan çözüyor.
+        </Callout>
+      </section>
+    </>
+  ),
+
+  'veri-analitigi-kariyer-rehberi': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Veri analitiği, Birleşik Krallık iş piyasasında en hızlı büyüyen ve yetenek-talep dengesizliğinin en keskin olduğu alanlardan biri. Sayısal yeteneği olan ve somut problem çözmeye ilgi duyan bir lise öğrencisi için bu durum gerçek bir fırsat anlamına geliyor — erken başlanan stajlar ise kalıcı bir avantaj inşa etmenin en etkili yolu.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu makale, veri analitiği stajının gerçekte ne anlama geldiğini, başvurmadan önce hangi becerileri geliştirmeniz gerektiğini ve lise öğrencisi olarak erişilebilir fırsatları nerede bulacağınızı açıklıyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Veri Analitiği Stajında Gerçekte Ne Yapılır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Öğrenci düzeyinde en sık karşılaşılan görevler şunlardır: veri setlerini temizlemek ve yapılandırmak (bu gerçek analitik çalışmanın %60-80'ini oluşturur), bulguları iletmek için görselleştirme ve dashboard oluşturmak, gözetim altında belirli metrikleri analiz etmek ve sonuçları bir süpervizöre ya da ekibe sunmak.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Kişisel Beyan İçin:</strong> Bir analizin belirli bir metrikteki düşüşü nasıl teşhis ettiğini — kendi rolünüzle birlikte — anlatabilmek, hiçbir sınıf projesinin üretemeyeceği kalitede materyal.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Başvurmadan Önce Neler Öğrenilmeli?</h2>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Excel veya Google Sheets (orta düzey)</strong> — temel formüller, pivot tablolar, grafikler. Her analitik rolde zorunlu.</Check>
+          <Check><strong>Temel tanımlayıcı istatistik</strong> — ortalama, medyan, dağılım, korelasyon. Khan Academy ücretsiz modüller sunuyor.</Check>
+          <Check><strong>Temel SQL</strong> — SELECT sorguları, WHERE filtreleri, temel JOIN'lar. SQLZoo ve Mode Analytics ücretsiz alıştırmalar içeriyor.</Check>
+          <Check><strong>Google Analytics 4</strong> — ücretsiz sertifika. Dijital analitiğe ilgiyi kanıtlanabilir şekilde gösteriyor.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu dört beceri işlevsel düzeyde edinildiğinde, önceden deneyimi olmayan staj adaylarının büyük çoğunluğunun önüne geçilmiş olur. Python ek bir avantaj sağlar ancak lise düzeyindeki pozisyonların çoğu için zorunlu değil.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Deneyim Olmadan Nasıl Portfolio Oluşturulur?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Kaggle ücretsiz halka açık veri setleri sunuyor — bunlarla gerçek bir analiz yapıp bulgularınızı belgeleyin. Google Looker Studio ücretsiz dashboard'lar oluşturmanıza ve paylaşmanıza izin veriyor. İş sorusu tanımlanmış, metodoloji, bulgular ve sınırlamalar içeren 3-5 sayfalık bir analiz — yaşıtlarının büyük çoğunluğunun sahip olmadığı minimum geçerli bir portfolyo.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Doğrulanmış Değerlendirmenin Avantajı:</strong> Veri analitiğinde işverenler sayısal yetenek için objektif sinyaller arıyor. Eduentry değerlendirme raporu tam bunu sağlıyor — ilk temastan önce üçüncü taraf kanıtı.
+        </Callout>
+      </section>
+    </>
+  ),
+
+  'staj-icin-cv-nasil-yazilir': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        16 yaşında staj CV'si hazırlamak görünürde bir sorun gibi durur: iş geçmişi olmadan nasıl değer gösterilir? Yanıt, olmayanı şişirmek ya da olmadığını icat etmekte değil — gerçekte kim olduğunuzu bir işe alım uzmanının 30 saniyede değerlendirebileceği şekilde yapılandırmakta yatıyor.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu makale tam olarak ne ekleneceğini, nasıl yapılandırılacağını ve görüşmeye ulaşmadan önce fırsatı kılan spesifik hataları açıklıyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İşleyen Yapı: Bir Sayfa, Altı Bölüm</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lise öğrencisi staj CV'si belirli bir sırayla altı bölümden oluşur: (1) İletişim bilgileri, (2) 3-4 satırlık kişisel beyan, (3) İlgili notlarla eğitim bilgisi, (4) İlgili deneyim — mutlaka ücretli iş olmak zorunda değil —, (5) Doğrulanabilir beceriler ve (6) Staj alanıyla bağlantılı ilgi alanları.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet><strong>İletişim Bilgileri:</strong> Ad, profesyonel e-posta (ad.soyad@gmail.com formatında, takma ad değil), cep telefonu ve varsa LinkedIn veya portfolio bağlantısı. Fotoğraf veya tam adres eklemeyin.</Bullet>
+          <Bullet><strong>Kişisel Beyan:</strong> Kim olduğunuzu, ne aradığınızı ve ne sunabileceğinizi yanıtlayan 3-4 satır. Sektöre özgü, genel değil. Maksimum 60 kelime.</Bullet>
+          <Bullet><strong>Eğitim:</strong> Okul adı, yıllar ve en ilgili 3-4 ders ile notlar. Tahminler biliniyorsa ekleyin.</Bullet>
+          <Bullet><strong>İlgili Deneyim:</strong> Ölçülebilir sonuçlarla herhangi bir gerçek sorumluluk. Okul projeleri, gayri resmi işler, gönüllülük.</Bullet>
+          <Bullet><strong>Beceriler:</strong> Yalnızca doğrulanabilir beceriler — belirli araçlar, dil seviyeleri, sertifikalar.</Bullet>
+          <Bullet><strong>İlgi Alanları:</strong> Staj alanıyla gerçekten bağlantılı bir veya iki ilgi alanı, inandırıcı kılacak spesifik bir detayla.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">"İş Dışı" Deneyim CV İçeriğine Nasıl Dönüştürülür?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En sık yapılan hata, ücretli iş geçmişi yoksa deneyim bölümünü boş bırakmak. Gerçekte, ücret alınıp alınmadığından bağımsız olarak ölçülebilir sonuçları olan herhangi bir gerçek sorumluluk CV materyalidir. Eylem-sonuç dili kullanılarak ifade edilebilen bir okul projesi, okul etkinliği organizasyonu, aile işine yardım, bir arkadaşa ders verme ya da yerel bir kulübün Instagram hesabını yönetme — bunların hepsi CV'de yer alabilir.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Altın Kural:</strong> Bir sorumluluğu hiçbir zaman sonucu olmadan tanımlamayın. "Okul yardım kampanyasını organize ettim" hiçbir şey ifade etmiyor. "Vakıf için 800£ toplayan, 150 katılımcılı bir etkinliği koordine ettim" yürütme kapasitesi hakkında çok şey söylüyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Deneyim Eksikliği Doğrulanabilir Sinyallerle Nasıl Telafi Edilir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İki spesifik strateji iş geçmişi olmayan öğrenciler için işe yarıyor: doğrulanabilir ücretsiz sertifikalar (Google Analytics, Google Ads, Coursera vb.) işe alım uzmanlarının açıkça değerlendirdiği proaktifliği gösteriyor; üçüncü taraf bir yetenek değerlendirme raporu ise CV'nin tek başına kanıtlayamadığı kapasite hakkında objektif veri sunuyor.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Değerlendirmenin Gerekçesi:</strong> Tüm adayların aynı deneyim düzeyine sahip olduğu staj pozisyonlarında — hiç —, fark yaratan sinyal kanıtlanabilir yetenek. Eduentry hazırlık raporu tam bunu sağlıyor: görüşmeden önce objektif kanıt.
+        </Callout>
+      </section>
+    </>
+  ),
+
+  'staj-mulakati-hazirlik-rehberi': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Lise öğrencileri için staj mülakatı göründüğünden daha az korkutucu ve çoğu adayın sandığından çok daha hazırlanabilir bir süreç. Öğrenci düzeyinde staj görüşmecileri cilalı, yıllarca deneyimli bir aday beklemez. Neden orada olduğunu ciddiye almış, söyleyecek somut bir şeyi olan ve öğrenme kapasitesini gösteren birini bekler.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu makale en sık sorulan soru kategorilerini, iş geçmişi olmadan yanıtları nasıl yapılandıracağınızı ve pozisyonu kaybettiren somut hataları ele alıyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Mülakatın %80'ini Kapsayan Beş Soru Kategorisi</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet><strong>Motivasyon:</strong> "Bu şirketi / bu sektörü neden seçtiniz?" Önceden spesifik araştırma gerektirir. "Dijital pazarlamaya ilgi duyuyorum" yetmez. "Ajansınızın e-ticaret için SEO'da uzmanlaştığını öğrendim ve dönüşüme yönelik içerik stratejisinin nasıl oluşturulduğunu anlamak istiyorum" bir yanıttır. Bu soruyu diğer her şeyden önce hazırlayın.</Bullet>
+          <Bullet><strong>Öz Farkındalık:</strong> "En büyük güçlü/zayıf yönün nedir?" Güçlü yönler için bir niteliği spesifik örnekle ilişkilendirin. Zayıf yönler için rol için kritik olmayan gerçek bir zayıflık kullanın ve bunu nasıl geliştirdiğinizi ekleyin.</Bullet>
+          <Bullet><strong>Davranışsal Sorular:</strong> "Bana bir zamanki hakkında anlat..." İş geçmişi yoksa okul veya ders dışı aktivitelerden örnek vererek STAR yapısını (Durum, Görev, Eylem, Sonuç) kullanın.</Bullet>
+          <Bullet><strong>Sektör Bilgisi:</strong> Staj alanıyla ilgili temel sorular. Kendi kelimelerinizle açıklayabileceğiniz beş temel sektör kavramı hazırlayın.</Bullet>
+          <Bullet><strong>Aday Soruları:</strong> Görüşmeci için her zaman 2-3 gerçek soru hazırlayın. Hiçbir şey sormayan adaylar ilgisizlik mesajı veriyor.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İş Geçmişi Olmadan Davranışsal Sorular Nasıl Yanıtlanır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          STAR yapısı her türlü deneyimle işler — yalnızca iş deneyimiyle değil. Öğrenci stajı görüşmecileri adayın profesyonel geçmişi olmadığını gayet iyi biliyor. Değerlendirdikleri şey deneyimin türü değil, düşüncenin kalitesi ve deneyimden öğrenme kapasitesi.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Geçerli bağlam örnekleri: fikir ayrılığı yaşanan bir grup projesi, sınırlı bütçeyle okul etkinliği organizasyonu, projeyi tamamlamak için yeni bir beceri öğrenme ya da eş zamanlı birden fazla taahhüdü yönetme. Anahtar nokta spesifik olmak: gerçek isimler, yaklaşık tarihler, somut eylemler ve ölçülebilir sonuçlar.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">En Sık Yapılan Hata:</strong> Kanıtsız genel yanıtlar. "Takım çalışmasında iyiyim" hiçbir şey ifade etmiyor. "Geçen dönem fen projesinde metodoloji konusunda bir görüş ayrılığı çıktığında, deneyi iki yaklaşıma bölüp sonuçları karşılaştırmayı önerdim — bu hem çıkmazı çözdü hem beklenenden daha zengin veri üretti" tam olarak iddia ettiğinizi kanıtlıyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Mülakat Günü: Pozisyonu Kazanan Adayları Ayıran Üç Davranış</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Görüşmecilerin hatırladığı adayları ayıran üç somut davranış: önceden hazırlanmış spesifik sorularla geliyor (genel değil), aktif dinliyor ve yanıtlarını görüşmecinin az önce söyledikleriyle bağlantılandırıyor, ve spesifik teknik konularda "bilmiyorum, ama öğrenmek istiyorum" diyebiliyor — kalibre dürüstlük olgunluk gösteriyor, zayıflık değil.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Hazırlığın Somut Avantajı:</strong> Mülakata Eduentry değerlendirme raporunuzu getirmek, öz farkındalık sorularını iddialar yerine verilerle yanıtlamanızı sağlıyor — ve yaşıtlarınızın büyük çoğunluğunun göstermediği bir ciddiyet düzeyi iletiliyor.
+        </Callout>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
