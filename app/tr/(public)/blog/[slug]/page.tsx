@@ -98,7 +98,12 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
       }
     : null
 
-  const related = BLOG_POSTS_TR.filter((p) => p.slug !== slug).slice(0, 3)
+  const related = BLOG_POSTS_TR
+    .filter((p) => p.slug !== slug)
+    .map((p) => ({ post: p, score: p.tags.filter((t: string) => post.tags.includes(t)).length }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map((s) => s.post)
 
   return (
     <main lang="tr" className="max-w-3xl mx-auto px-6 py-16">
