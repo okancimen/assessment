@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   keywords: ['Eduentry hakkında', 'çocuklar için ücretsiz değerlendirme platformu', 'uluslararası akademik kıyaslama', 'uyarlanabilir test çocuklar', 'akademik değerlendirme 6 17 yaş', 'lise staj değerlendirmesi'],
   alternates: {
     canonical: `${BASE_URL}/tr/hakkimizda`,
-    languages: { tr: `${BASE_URL}/tr/hakkimizda`, 'en-GB': `${BASE_URL}/about`, 'x-default': `${BASE_URL}/about` },
+    languages: { tr: `${BASE_URL}/tr/hakkimizda`, es: `${BASE_URL}/es/sobre-nosotros`, 'en-GB': `${BASE_URL}/about`, 'x-default': `${BASE_URL}/about` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

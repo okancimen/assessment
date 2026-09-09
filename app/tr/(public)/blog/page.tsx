@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     canonical: `${BASE_URL}/tr/blog`,
     languages: {
       tr: `${BASE_URL}/tr/blog`,
+      es: `${BASE_URL}/es/blog`,
       'en-GB': `${BASE_URL}/blog`,
       'x-default': `${BASE_URL}/blog`,
     },
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/tr/blog`,
     siteName: 'Eduentry',
     locale: 'tr_TR',
-    alternateLocale: ['en_GB'],
+    alternateLocale: ['en_GB', 'es_ES'],
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry Blog — Staj ve Kariyer Rehberleri' }],
   },
 }
@@ -48,9 +49,23 @@ export default function TRBlogIndexPage() {
     ],
   }
 
+  const itemList = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Staj ve Kariyer Rehberleri',
+    url: `${BASE_URL}/tr/blog`,
+    itemListElement: BLOG_POSTS_TR.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: p.title,
+      url: `${BASE_URL}/tr/blog/${p.slug}`,
+    })),
+  }
+
   return (
     <main lang="tr" className="flex-1">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
 
       <div className="max-w-4xl mx-auto px-6 py-16">
         <nav className="text-sm text-[#6e6e73] mb-8">

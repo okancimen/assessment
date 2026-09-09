@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/es/blog`,
     siteName: 'Eduentry',
     locale: 'es_ES',
-    alternateLocale: ['en_GB'],
+    alternateLocale: ['en_GB', 'tr_TR'],
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry Blog — Guías de Prácticas y Carrera' }],
   },
 }
@@ -49,9 +49,23 @@ export default function ESBlogIndexPage() {
     ],
   }
 
+  const itemList = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Guías de Prácticas y Desarrollo Profesional',
+    url: `${BASE_URL}/es/blog`,
+    itemListElement: BLOG_POSTS_ES.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: p.title,
+      url: `${BASE_URL}/es/blog/${p.slug}`,
+    })),
+  }
+
   return (
     <main lang="es" className="flex-1">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
 
       <div className="max-w-4xl mx-auto px-6 py-16">
         <nav className="text-sm text-[#6e6e73] mb-8">

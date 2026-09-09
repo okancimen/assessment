@@ -37,13 +37,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       publishedTime: post.date,
       locale: 'tr_TR',
       alternateLocale: ['en_GB'],
-      images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: post.title }],
+      images: [{ url: `${BASE_URL}/tr/blog/${slug}/opengraph-image`, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      images: [`${BASE_URL}/opengraph-image`],
+      images: [`${BASE_URL}/tr/blog/${slug}/opengraph-image`],
     },
   }
 }
