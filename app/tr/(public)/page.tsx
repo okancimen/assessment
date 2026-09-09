@@ -195,12 +195,12 @@ export default function TurkishHomePage() {
                 <span>·</span>
                 <span>Ücretsiz</span>
               </div>
-              <Link
-                href="/tr"
+              <a
+                href="https://eduentry.ai/tr"
                 className="bg-[#1d1d1f] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#2d2d2f] transition-colors text-center"
               >
                 Programı incele
-              </Link>
+              </a>
               <Link href="#staj" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
                 Daha fazla bilgi ↓
               </Link>
@@ -464,9 +464,9 @@ export default function TurkishHomePage() {
           </div>
 
           <div className="text-center mt-10">
-            <Link href="/internship/apply" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+            <a href="https://eduentry.ai/tr" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Staj değerlendirmesine başvur →
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -523,9 +523,9 @@ export default function TurkishHomePage() {
                 ))}
               </ul>
               <div className="mt-7 pt-6 border-t border-[#c7d2fe]">
-                <Link href="/internship/apply" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
+                <a href="https://eduentry.ai/tr" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
                   Değerlendirmeye başvur →
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -605,9 +605,9 @@ export default function TurkishHomePage() {
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Staj Değerlendirmesi</p>
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Öğrencinizin staj hazırlığını keşfedin.</h2>
             <p className="text-[#636366] text-sm mb-8">35 dakikada kişiselleştirilmiş rapor ve yapay zeka içgörüleri.</p>
-            <Link href="/internship/apply" className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors">
+            <a href="https://eduentry.ai/tr" className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors">
               Değerlendirmeye başvur →
-            </Link>
+            </a>
           </div>
         </div>
       </section>
