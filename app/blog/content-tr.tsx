@@ -1094,6 +1094,319 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'how-to-differentiate-yourself-at-15': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        2019'da İngiltere'deki A Level girişlerinin %25,2'si A veya A* notu aldı. 2021'de bu oran %44,8'e ulaştı. 2023'te yaklaşık %27'ye geriledi ve o civarda istikrar kazandı — ancak en yüksek notların sinyal değerine verilen hasar kalıcı oldu. Tüm A Level girişlerinin dörtte birinden fazlası en yüksek notları alırken ve en rekabetçi üniversite bölümleri mevcut yer başına 10 ila 20 başvuru alırken akademik sonuçlar tek başına seçim yapamaz. Giriş kapısı haline geldiler, kabul nedeni değil.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu makale notların ötesinde neler olduğunu ve neden 17 değil 15 yaşında bunu anlayan öğrencilerin UCAS başvurusuna emsallerinin kısa sürede telafi edemeyeceği bir profille ulaştıklarını ele alıyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Not Enflasyonu Sorunu: Rakamlar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pandemi yıllarındaki not enflasyonu aşırıydı, ancak temel eğilim 2020 öncesinde zaten görünürdü. 2010 ile 2019 arasında A Level girişlerinde A veya üzeri alan öğrencilerin oranı %22,6'dan %25,5'e yükseldi. Pandemi sonrası yeniden kalibrasyon puanları 2019 taban çizgisine yaklaştırdı — ancak üniversite yeri rekabeti aynı oranda kalibre olmadı.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Oxford, 2024'te 3.286 lisans yeri için 24.598 başvuru aldı</strong> — tüm bölümlerde yer başına yaklaşık 7,5 başvuru. En rekabetçi bölümlerde (Tıp, PPE, Hukuk) oran 10:1'i aşıyor. Bu havuzdaki her başvurucu mükemmel notlara sahip. Teklif alan %13'ü ayırt eden notlar değil.
+          </Bullet>
+          <Bullet>
+            <strong>Russell Group genelinde 2024 döngüsünde yaklaşık 100.000 yer için yaklaşık 750.000 başvuru alındı</strong> (UCAS verileri). Ortalama 7,5 başvurucu/yer — en rekabetçi bölümler çok daha yüksek. Bu 750.000 başvurucunun büyük çoğunluğu not eşiklerini karşıladı veya karşılaması beklendi. Farklılaştırıcı akademik sonuçlar değildi.
+          </Bullet>
+          <Bullet>
+            <strong>Rekabetçi bölümlerde not tabanı yükseldi.</strong> On yıl önce AAB, Russell Group'taki birçok işletme ve iktisat programı için rekabetçi bir teklifti. Bugün AAA–A*AA standart, bazı programlar bunun üstüne bölüme özgü gereksinimler ekliyor. Notların iletebileceği tavan daraldı — kabul edilen neredeyse herkesin bunları var, reddedilen neredeyse herkesin de.
+          </Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Seçim sorunu:</strong> Rekabetçi üniversitelerdeki kabul ekipleri iyi notlu öğrenci aramıyor — zaten çok fazlası var. İyi notları olan <em>ve</em> başka bir şeyi olan öğrencileri arıyorlar. O "başka şey" bu makalenin konusu.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">15 Yaş Neden Farklılaşma Penceresidir</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çoğu öğrenci farklılaşmayı Yıl 12 veya 13'te düşünmeye başlar — UCAS başvuruları yaklaştığında ve "biraz iş deneyimi edinin" tavsiyesi acilleştiğinde. O noktada seçenekler kısıtlıdır: iki haftalık bir yaz yerleştirmesi, sanal bir program ya da öğrencinin hiç çalışmadığı bir alanla teorik ilgiyi anlatan bir kişisel beyan.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          15 yaşında başlayan öğrencilerin farklı bir sorunu var: çok fazla seçenek ve çok fazla zaman. Bu aslında bir sorun değil — neredeyse kimsenin kullanmadığı bir avantaj.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Araştırma bu konuda spesifik. İngiltere'de okul çağı işveren katılımı üzerine en kapsamlı boylamsal çalışmaları yürüten Education and Employers, <strong>16 yaşından önce dört veya daha fazla anlamlı işveren temasına sahip olan öğrencilerin 19 yaşında NEET (Eğitim, İstihdam veya Mesleki Eğitim Dışı) olma olasılığının bu tür deneyimi olmayan akranlarına göre beş kat daha düşük</strong> olduğunu ortaya koydu. Mekanizma istihdam değil, yönelim: profesyonel dünyanın nasıl işlediğini bağımsız olarak ona adım atmadan önce bilmek.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bileşim mantığı üniversite başvurularına doğrudan uygulanır. 15 yaşında bir yerleştirme tamamlayan, üzerine düşünen, Yıl 11'de alanı araştıran ve 16 yaşında ilgili ya da farklı bir alanda ikinci bir yerleştirme tamamlayan öğrenci, Yıl 12 kişisel beyanına iki yıllık belgelenmiş profesyonel maruziyetle ulaşır. 17 yaşında ilk yerleştirmesini tamamlayan öğrenci ise iki haftayla.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Gerçekte Ne Farklılaştırıyor: Kanıt Hiyerarşisi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tüm farklılaştırma eşit değildir. Kabul görevlileri ve mezun işe alım uzmanları, gerçek katılımı temsil eden faaliyetler ile özgeçmiş doldurmayı birbirinden ayırt etme konusunda deneyimlidir. Aşağıdaki hiyerarşi, araştırmanın sonuçları gerçekten etkileyen şeyleri gösteriyor.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">1. Spesifik, Belgelenmiş İş Deneyimi</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İş deneyimi, hem üniversite kabul verileri hem de mezun işveren anketlerinde en tutarlı biçimde atıfta bulunulan farklılaştırıcıdır. <strong>İngiliz mezun işe alım uzmanlarının %73'ü, eşit nitelikteki adaylar arasında iş deneyimini en önemli tek farklılaştırıcı olarak</strong> belirliyor — derece sınıfının ve mezun olunan üniversitenin önünde (Prospects, 2022). 15 yaşında bunun ilgili versiyonu herhangi bir yapılandırılmış profesyonel çevre maruziyet: formal okul yerleştirmesi, yerel bir firmada kendi düzenlediği gözlem, aile işletmesinde geçirilen bir hafta ya da yapılandırılmış bir programa katılım.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Anahtar kelime <em>belgelenmiş</em>. Belirsizce hatırlanan ve kişisel beyanda genel biçimde tarif edilen iş deneyimi ("bir hukuk bürosunda iş deneyimi tamamladım ve faydalı buldum") neredeyse hiçbir işe yaramaz. Spesifik biçimde belgelenen — spesifik gözlemler, spesifik sürprizler, öğrencinin farklı yapacağı spesifik şeyler — iş deneyimi ise iddia değil kanıt üretir.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">2. Doğrulanmış Alan Bilgisi</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Akademik notlar öğrencinin standartlaştırılmış bir sınavda nasıl performans gösterdiğini ölçer. Bir iş modelinin nasıl işlediğini anlayıp anlamadığını, bir veri setini yorumlayıp yorumlayamadığını ya da profesyonel bir ortamda faaliyet göstermek için ticari farkındalığa sahip olup olmadığını ölçmez. Bu boşluklar kabul ekiplerinde ve işverenlerde giderek daha görünür hale geliyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>CBI'ın 2023 Eğitim ve Beceriler Anketi</strong>, İngiliz işverenlerinin %61'inin okul mezunlarının öz yönetim becerileri konusunda tatminsiz olduğunu, %44'ünün ise iş ve ticari farkındalık konusunda endişelerini dile getirdiğini ortaya koydu. Üçüncü taraf bir değerlendirmeyle alan yetkinliği gösteren öğrenci, büyük çoğunluğun sağlayamadığı bir şey sunuyor.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">3. Ölçülebilir Çıktısı Olan Sürdürülebilir Kişisel Proje</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Kişisel beyanda "ekonomi hakkında bir blog başlattım" diyen öğrenci, ekonomi hakkında blog başlatan binlerce başka öğrenciyle rekabet ediyor. 18 ay boyunca özel ders veren, sekiz düzenli öğrenci yöneten, öğrencilerinin sınav hedeflerine göre ilerlemesini takip eden ve ikinci dereceden denklemlerin nasıl öğretildiğine dair tutarlı bir yanlış anlaşılmayı tespit eden öğrenci ise kategorik olarak farklı bir şey yapıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Kişisel projeyi farklılaştıran unsur kategori değil, spesifiklik, süre ve ölçülebilir çıktı. Gerçek bir ürün üreten, hisse sermayesi toplayan ve bölgesel düzeyde yarışan bir Young Enterprise şirketi spesifik ve ölçülebilir. Üç bölüm yayınlanan bir güncel olaylar podcast'i değil.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">4. Gerçek Yerleştirmelerden Oluşturulan Profesyonel Ağ</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sutton Trust, <strong>İngiliz mezun işlerinin yaklaşık %33'ünün formal başvurular yerine gayri resmi ağlar ve kişisel bağlantılar aracılığıyla doldurulduğunu</strong> tahmin ediyor. 15 ve 16 yaşında gerçek iş yerleştirmeleri tamamlayan öğrenci, üniversiteye başlamadan önce profesyonel bağlantılara sahip. Bu bağlantılar istihdamı garanti etmez, ancak soğuk başlangıç sorununu önemli ölçüde azaltır.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">5. Müfredatın Ötesinde Entelektüel Meşguliyet</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Her Russell Group üniversitesinin her kabul kılavuzu A Level müfredatının ötesinde okumanın öneminden bahseder. Bu tavsiye o kadar yaygın ki gürültüye dönüştü. Gerçekten bu yoldan farklılaşan öğrenciler daha fazla kitap okuyanlar değil; okuduklarını profesyonel olarak deneyimledikleri şeylerle spesifik bağlantılar kuranlar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          "Daniel Kahneman'ın <em>Hızlı ve Yavaş Düşünme</em>'sini okudum" diyen bir kişisel beyan yaygın. "Kahneman'ın Sistem 1 ve Sistem 2 düşünme ayrımını okumak, [şirketteki] yerleştirmem sırasında gözlemlediğim karar alma sürecini yorumlama biçimimi değiştirdi" diyen bir kişisel beyan ise nadir. Fark kitap değil. Okumanın bağlanacağı bir şey sağlayan profesyonel deneyim.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">15 Yaşında Katılmaya Değer Yapılandırılmış Programlar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bağımsız faaliyet değerli ama doğrulanmamış. Yapılandırılmış programlar dışarıdan tanınan belgelenmiş kanıtlar sunar — öğrencinin tek başına şişiremeyeceği veya uyduramayacağı için kabul görevlileri açısından daha güvenilir.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Young Enterprise Şirket Programı</strong> — 5.500'den fazla okulda aktif, en yaygın tanınan okul çağı iş programı. Öğrenciler gerçek bir şirket kurar, direktör seçer, hisse sermayesi toplar ve bir akademik yıl boyunca bölgesel ve ulusal düzeyde yarışır.
+          </Bullet>
+          <Bullet>
+            <strong>UK Mathematics Trust (UKMT) Matematik Yarışmaları</strong> — Gold sertifika veya ileriki tura geçiş (Matematik Olimpiyatı) gerçekten farklılaştırır; katılımcıların %7'sinden azı Gold alır.
+          </Bullet>
+          <Bullet>
+            <strong>British Science Association CREST Ödülleri</strong> — proje tabanlı bilim ödül programı (Bronz, Gümüş, Altın). 15 yaşında Altın CREST Ödülü tıp, mühendislik ve doğa bilimleri başvuruları için doğrudan ilgilidir.
+          </Bullet>
+          <Bullet>
+            <strong>CyberFirst (NCSC)</strong> — İngiliz hükümetinin siber güvenlik yetenek geliştirme programı, 14 yaşından itibaren açık. Teknoloji ve bilgisayar bilimleri programları başvurularını doğrudan destekler.
+          </Bullet>
+          <Bullet>
+            <strong>Duke of Edinburgh Ödülü</strong> — 14'te Bronz, 15'te Gümüş, altıncı sınıfta Altın tamamlama, sürdürülebilir taahhüdün dışarıdan doğrulanmış bir kaydı. Önemli olan ödülün kendisi değil; gönüllülük ve beceri bölümlerinin kalitesi.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bu Kişisel Beyanda Nasıl Görünür</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          UCAS kişisel beyanı yaklaşık 650 kelime. 15 yaşında farklılaşmış bir profil oluşturan öğrenci bu 650 kelimeyi çok farklı kullanır.
+        </p>
+        <div className="space-y-4 mb-6">
+          <div className="border border-red-100 rounded-xl p-6 bg-red-50/30">
+            <p className="text-xs font-semibold text-red-500 uppercase tracking-wide mb-2">Farklılaşmamış (kanıtsız iddia)</p>
+            <p className="text-sm text-gray-700 leading-relaxed italic">"Her zaman ekonomi ve piyasaların nasıl işlediğiyle ilgilendim. Güncel ekonomik gelişmeleri okumaktan zevk alıyorum ve bu fikirleri daha derin araştırabileceğim bir üniversite ortamında başarılı olacağıma inanıyorum. Yerel bir muhasebe firmasında finansal raporlamanın önemini öğrendiğim iş deneyimi tamamladım."</p>
+          </div>
+          <div className="border border-emerald-100 rounded-xl p-6 bg-emerald-50/30">
+            <p className="text-xs font-semibold text-emerald-600 uppercase tracking-wide mb-2">Farklılaşmış (spesifik kanıt)</p>
+            <p className="text-sm text-gray-700 leading-relaxed italic">"Yıl 10 yerleştirmem sırasında [şirkette] finans direktörünün müşterinin gelir büyüme hedefleri ile ekibin üçüncü çeyrek için modellediği nakit akışı kısıtları arasındaki gerilimi açıkladığı bir bütçe değerlendirmesine katıldım. O sırada kârlı bir şirketin neden nakit akışı sorunuyla karşılaşabileceğini anlayamadım — Aswath Damodaran'ın kazançlar ile serbest nakit akışı arasındaki ayrıma dair çalışmasını okumak bu soruyu yanıtladı ve şirketin üç aylık kararlarını anlama biçimimi yeniden çerçeveledi."</p>
+          </div>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          İkinci versiyon yalnızca öğrenci 15 yaşında iş deneyimi geçirdiği ve yerleştirme ile kişisel beyan arasındaki iki yılda okuduklarını deneyimlediği şeylerle ilişkilendirdiği için mümkün. 17 yaşında ilk yerleştirmesini tamamlayan ve kişisel beyanını üç ay sonra yazan öğrenci bu derinliği üretemez.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">15 Yaşında Pratik Başlangıç Noktası</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Farklılaşmanın önemini bilmek ile bu hafta ne yapacağını bilmek arasındaki boşluk, çoğu öğrencinin takılı kaldığı yerdir. Pratik yol göründüğünden daha basit.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Önümüzdeki on iki ayda bir yerleştirme sağla.</strong> Büyük marka firmasında rekabetçi bir program değil — yerel bir avukat, küçük bir muhasebe bürosu, bir dijital ajans, aile bağlantılı bir işletme. Her gün sonunda not defterine yazılan bir haftalık gerçek profesyonel maruziyet, büyük bir firmada pasif geçirilen iki haftadan daha değerli kişisel beyan malzemesi üretir.
+          </Bullet>
+          <Bullet>
+            <strong>Bu akademik yılda katılacak bir yapılandırılmış program belirle.</strong> Young Enterprise, UKMT, CREST, CyberFirst — hangisi düşündüğün alana en uygunsa. Birini seç ve yılın tamamına taahhüt et. Derinlik olmadan geniş katılım, farklılaşmış bir başvuru profili oluşturmada en yaygın hata.
+          </Bullet>
+          <Bullet>
+            <strong>Hedeflediğin alanda bir kitap oku ve gözlemlediğin şeylerle bağlantılandır.</strong> Kabul kılavuzları böyle söylüyor diye değil, bu alışkanlık kişisel beyanı unutulmaz kılan spesifik gözlemleri ürettiği için. Profesyonel gözlem ile teorik çerçeve arasındaki bağlantı — aklına geldiği gün not defterine yazılmış — ikna edici bir başvurunun ham maddesi.
+          </Bullet>
+          <Bullet>
+            <strong>Mevcut alan bilgisi taban çizgini belirlemek için doğrulanmış bir değerlendirme al.</strong> Gerçekte nerede durduğunu bilmek — bir konuyu nasıl hissettiğini değil — yetkinlik yerine yetkinlik güveni inşa etmek yerine gerçek yetkinlik inşa etmenin ilk adımı.
+          </Bullet>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Tek cümlede farklılaşma zaman çizelgesi:</strong> 15 yaşında belgelenmiş profesyonel deneyim, doğrulanmış alan bilgisi ve sürdürülebilir proje kanıtı oluşturmaya başlayan öğrenci, iki yıl sonra UCAS'a emsallerinin büyük çoğunluğunun — ne kadar iyi notlu olurlarsa olsunlar — Yıl 12'de üç ayda inşa etmeye çalışacağı bir profille ulaşır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sonuç</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Notlar gerekli. Her rekabetçi üniversite başvurusunun geçmesi gereken eşik olmayı sürdürüyor. Ancak İngiltere'deki en rekabetçi programlarda — ve giderek Russell Group'un tamamında — soru öğrencinin notlarının olup olmadığı değil. Soru sınav dışında zamanını ne yaptığı.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Bunu 17 değil 15 yaşında anlayan öğrenciler farklı insanlar olmaz. İki yıl daha fazla belgelenmiş profesyonel deneyime, daha derin alan bilgisine, zaten iki yıllık profesyonel bir ağa ve iddia değil kanıt içeren kişisel beyan materyaline sahip öğrenciler olurlar. Not tabanının neredeyse herkesin onu karşıladığı noktaya yükseldiği bir seçim sürecinde, bu farklılaştıran şey.
+        </p>
+      </section>
+    </>
+  ),
+
+  'business-work-experience-year-12': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Yıl 12, çoğu İngiliz öğrencinin iş dünyası deneyimiyle ilk ciddi şekilde ilgilendiği yıldır. UCAS başvurularının gerçek hissettirmeye başladığı, büyük işveren Bahar Insight programlarının başvurularını açtığı ve okul kariyer tavsiyesinin en sık formal yerleştirmelere yönlendirdiği yıl. Ancak Yıl 12 (16–17 yaş) fırsatın başlangıcı değil — ve buradan başlayanlar için 12 ila 18 yaş arasındaki tam manzarayı anlamak, reaktif ile stratejik yaklaşım arasındaki fark.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu rehber, Yıl 7'den Yıl 13'e kadar her aşamada iş dünyası deneyimini ele alıyor; yerleştirmelerin üniversite ve kariyer sonuçları için gerçekte ne ürettiğine dair veriler ve öne çıkan bir tane edinmeye yönelik pratik kılavuzla birlikte.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İş Dünyası Deneyimi Neden Önemli: Rakamlar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İş dünyası deneyimi davası anekdot değil — ölçülebilir. Bunun üniversite kabulü, erken kariyer sonuçları ve mesleki gelişim açısından öğrenciler için ne ürettiğine dair araştırma, eğitim araştırmalarındaki en tutarlılar arasında.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>İngiliz mezun işverenlerinin %83'ü</strong> adayları taramada önceki iş deneyimini "önemli" veya "çok önemli" buluyor (NACE, 2023). Bu, NACE'nin 2009'dan bu yana işveren tutumlarını takip ettiğinden bu yana kayıtlı en yüksek oran.
+          </Bullet>
+          <Bullet>
+            <strong>İngiliz mezun işe alım uzmanlarının %73'ü</strong> iş deneyimini, eşit nitelikteki adaylar arasında en önemli tek farklılaştırıcı olarak belirliyor — derece sınıfının ve mezun olunan üniversitenin önünde (Prospects, 2022).
+          </Bullet>
+          <Bullet>
+            <strong>İlgili iş deneyimine sahip öğrenciler mezuniyetten önce %70 daha sık iş teklifi alıyor</strong> (NACE, 2020). Mekanizma basit: işverenler potansiyeli tahmin etmiyorlar — gösterilmiş performansı okuyorlar.
+          </Bullet>
+          <Bullet>
+            <strong>İngiliz mezun işlerinin %33'ü ağlar aracılığıyla dolduruluyor</strong> (Sutton Trust, 2019). 16 yaşında yapılandırılmış iş deneyimi tamamlayan öğrenci üniversite kariyer fuarına profesyonel bağlantılarla ulaşır.
+          </Bullet>
+          <Bullet>
+            <strong>16 yaşından önce 4 veya daha fazla işveren temasına sahip öğrenciler</strong>, bu tür maruziyeti olmayan akranlarına göre 19 yaşında NEET olma olasılığı beş kat daha düşük (Education and Employers, 2018).
+          </Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Erken başlamak bileşir.</strong> Yıl 10 yerleştirmesi tamamlayan, ardından Yıl 11 yazında kendi düzenlediği ikinci bir yerleştirmeyle bunu geliştiren ve farklı iki iş bağlamından belgelenmiş deneyimle Yıl 12 programlarına başvuran öğrenci, hiç deneyim listelemeyen büyük çoğunluğun kategorik olarak farklı bir konumunda.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yıl Grubuna Göre İş Deneyimi: 12–18 Yaş</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Mevcut iş deneyiminin türü — ve gelecekteki başvurular için değeri — yıl grubuna göre önemli ölçüde değişiyor. Her aşamada gerçekçi ve tavsiye edilen şey.
+        </p>
+
+        <div className="space-y-5 mb-6">
+          <div className="border border-gray-100 rounded-xl p-6">
+            <div className="font-bold text-gray-900 mb-1">12 Yaş · Yıl 7</div>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Bu yaşta formal program yok. En değerli maruziyet gözlemsel: ebeveynle birlikte iş yeri ziyareti, aile işletmesi konuşmasında bulunma ya da okul bağış etkinliği organize etme. Amaç özgeçmiş girişi değil, örüntü tanıma — bir işletme gerçekte ne yapar ve içinde kim ne yapar? Gerçek ticari kararlarla erken karşılaşan çocuklar, yıllar sonra formal deneyim mevcut olduğunda öğrenmeyi hızlandıracak zihinsel modeller oluşturur.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <div className="font-bold text-gray-900 mb-1">14 Yaş · Yıl 9</div>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Yıl 9 GCSE seçim yılıdır — ve hangi iş alanının en çok ilgi çektiğini belirleme yılı. Finans, operasyon, strateji, pazarlama, danışmanlık: erken daraltmak, Yıl 10 yerleştirme başvurularının genel değil hedeflenmiş olabileceği anlamına gelir. Bazı KOBİ'ler, özellikle genel bir "iş deneyimi" talebi yerine spesifik bir soruyla yaklaşıldığında Yıl 9 öğrencilerini yarım günlük veya tam günlük gayri resmi ziyaretler için kabul eder.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <div className="font-bold text-gray-900 mb-1">15 Yaş · Yıl 10</div>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Yıl 10, İngiltere'de formal iş deneyimi için standart ilk giriş noktası. Çoğu ortaöğretim okulu bu aşamada zorunlu bir veya iki haftalık blok yerleştirme düzenler. Bu yerleştirmelerin kalitesi büyük ölçüde değişiyor. Bu aşamada müzakeresi mümkün olmayan uygulama belgeleme: gözlemlediğini, seni neyin şaşırttığını ve farklı yapacaklarını kayıt et. Bu materyal iki yıl sonra doğrudan Yıl 12 başvurularında ve UCAS kişisel beyanında kullanılabilir.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <div className="font-bold text-gray-900 mb-1">16–17 Yaş · Yıl 12</div>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Yıl 12 ana pencere. Büyük işveren Bahar Insight ve Yaz Insight programları özellikle bu yıl grubu için tasarlandı. Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey, BCG ve çoğu büyük İngiliz bankası ve profesyonel hizmetler firması Eylül–Kasım'da takip eden yıl için başvuruları açar. Bu programlar rekabetçi — yer başına 10 ila 20 başvuru tipiktir; ancak bunlar en yapılandırılmış, UCAS için en doğrudan yararlı ve profesyonel bağlantı ile referanslar üretme olasılığı en yüksek olanlardır.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <div className="font-bold text-gray-900 mb-1">17–18 Yaş · Yıl 13</div>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Yıl 13 UCAS başvuru yılı. Rekabetçi iş, iktisat, finans veya hukuk bölümlerine başvuran çoğu öğrencinin birincil yerleştirmesini zaten tamamlamış olması gerekir. Henüz formal bir şey yapmamış öğrencinin seçenekleri hâlâ var: birçok kuruluş üniversite öncesi öğrencilerden kısa yaz yerleştirmeleri kabul eder ve sanal iş deneyimi programları (Forage, Springpod) günler içinde tamamlanabilir ve başvurularda referans gösterilebilir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yıl 12 Programları: Kimler Yürütüyor ve Ne Zaman Başvurulur</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Büyük İngiliz işverenlerdeki yapılandırılmış Yıl 12 programları, ortaöğretim öğrencilerine sunulan en profesyonel açıdan değerli iş deneyimini temsil ediyor.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Profesyonel hizmetler firmaları</strong> — KPMG, Deloitte, PwC, EY ve Grant Thornton, denetim, danışmanlık, vergi ve teknoloji dahil olmak üzere çeşitli fonksiyonlarda Yıl 12 öğrencileri için Yaz Insight programları yürütür. Başvurular genellikle Eylül–Ekim'de açılır. Yerler sınırlı ve hızla dolar; erken başvuru kayıtlı bir avantaj.
+          </Bullet>
+          <Bullet>
+            <strong>Yatırım bankacılığı ve finansal hizmetler</strong> — Goldman Sachs, Barclays, HSBC, Lloyds ve JP Morgan Bahar Insight haftalığı (genellikle Mart–Nisan) ve Yaz Analist programları yürütür. Goldman Sachs Bahar Insight tipik olarak yer başına 15–20 başvuru alır.
+          </Bullet>
+          <Bullet>
+            <strong>Yönetim danışmanlığı</strong> — McKinsey (Insight Programı), BCG, Bain ve Oliver Wyman Yıl 12 öğrencilerini insight programlarına ve açık günlere davet eder. Yerler sınırlı ama öğrenme yoğunluğu yüksek ve ağ değeri yıllar ileriye taşınır.
+          </Bullet>
+          <Bullet>
+            <strong>KOBİ'ler ve doğrudan iletişim</strong> — İngiltere'de yaklaşık 5,5 milyon KOBİ var. Formal program yürütmüyorlar, bu da neredeyse hiç yerleştirme başvurusu almadıkları anlamına gelir — ve iyi yazılmış doğrudan bir yaklaşıma sıklıkla evet diyorlar. İyi yönetilen yerel bir profesyonel hizmetler firmasında veya büyüme aşamasındaki şirkette iki haftalık yerleştirme genellikle büyük bir firmanın yapılandırılmış programından daha fazla uygulamalı deneyim üretir.
+          </Bullet>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Başvuru penceresi:</strong> Eylül–Mart program başvuruları için Eylül'ün ilk haftasına hatırlatıcı ayarla. Başvuru penceresinin ilk iki haftasında başvuran öğrenciler yapısal bir avantaja sahip — değerlendiriciler daha az yorgun, daha fazla yer mevcut ve havuz dolmadan bar henüz yükselmedi.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İş Dünyası Deneyimi Üniversite Başvurularını Nasıl Güçlendirir</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Russell Group üniversitelerindeki rekabetçi iş, iktisat, finans ve hukuk programları için iş deneyimi, güçlü bir kişisel beyanda neredeyse zorunlu bağlam olarak görülüyor. Mekanizma yapısal: gerçek profesyonel gözlemi olan bir öğrencinin yazdığı kişisel beyan iddia değil spesifik kanıt içeriyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          "İşletmelerin finansal kararlarla nasıl ilgilendiği beni ilgilendiriyor" iddia. "[Şirketteki] yerleştirmem sırasında ticari direktörün gelir büyüme hedefleri ile finans ekibinin nakit akışı kısıtları arasındaki gerilimi açıkladığı üç aylık bir planlama toplantısına katıldım ve bu dengeyi nasıl formüle ettiğini anlamak istedim" kanıt. Warwick, LSE ve Bath'taki kabul görevlileri birincisinin yüzlercesini işler; ikincisi kendi kategorisinde.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>İşletme ve İktisat dereceleri</strong> — Russell Group kabul kılavuzları bu programlar için tutarlı biçimde ticari maruziyet farklılaştırıcı faktör olarak atıfta bulunuyor.</Check>
+          <Check><strong>Hukuk dereceleri</strong> — herhangi bir iş odaklı hukuki veya profesyonel hizmetler yerleştirmesi, aksi takdirde teorik kalan ticari hukuk ilgisi için uygulamalı bağlam sağlıyor.</Check>
+          <Check><strong>Finans ve Muhasebe dereceleri</strong> — profesyonel hizmetler firması veya bankada finansal raporlama, bütçeleme veya müşteri ilişkilerine doğrudan maruziyet, rekabetçi finans programı başvurularında en doğrudan atıfta bulunulan deneyimler arasında.</Check>
+          <Check><strong>Yönetim ve Strateji dereceleri</strong> — organizasyonlarda stratejik kararların gerçekte nasıl alındığını görmek, analitik olarak olgun adayları teorik ilgiyi tarif edenlerden ayırt eden gözlem materyali sağlıyor.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Elemeye Alınan Başvuru Nasıl Oluşturulur</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Büyük işverenlerdeki rekabetçi Yıl 12 programları için — tipik olarak yer başına 10–20 başvuru alıyor — elemeye alınan öğrenciler ile alınmayanlar arasındaki fark üç şeye indirgenebilir.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Spesifik, kanıtlanmış ilgi.</strong> "Finansla ilgileniyorum" başvuru değil. "Yıl 10 yerleştirmemden sonra, bölüm düzeyi ile merkezi finans arasında sermaye tahsisi kararlarının farklı biçimde alındığını fark ettim — ve bu farkı daha formal biçimde anlamak istiyorum" başvuru. Genel ilgi ifadelerinin yüzlercesini işleyen değerlendiriciler coşku değil, önceki katılımın kanıtını arıyor.
+          </Bullet>
+          <Bullet>
+            <strong>Önceki deneyim, ne kadar gayri resmi olursa olsun.</strong> Herhangi bir önceki iş maruziyeti — okul girişimcilik projesi, aile işletmesi, kendi düzenlenen yerel yerleştirme — ilgili ve belirtilmeli. Amaç kapsamlı deneyim ima etmek değil, ilgini hayali değil gerçek koşullarda test ettiğini göstermek.
+          </Bullet>
+          <Bullet>
+            <strong>Doğrulanabilir yetenek sinyali.</strong> Eduentry İş hazırlık raporu, işe alım uzmanlarına seni daha tanımadan ticari yetenek ve iş bilgisine dair üçüncü taraf kanıtı sağlar — aynı okul profili ve profesyonel sicili olmayan adaylar arasında farklılaştırmanın temel seçim sorununu doğrudan ele alarak.
+          </Bullet>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Bileşim argümanı tek cümlede.</strong> Belgelenmiş Yıl 10 yerleştirmesi, farklı bir firmada kendi düzenlediği Yıl 11 yaz yerleştirmesi ve doğrulanmış bir hazırlık puanı olan Yıl 12 öğrencisi, büyük çoğunluğun iş, iktisat ve finans UCAS başvurularında eşleştiremeyeceği profesyonel bir profile sahip — daha yetenekli oldukları için değil, daha erken başladıkları ve tutarlı biçimde belgeledikleri için.
+        </Callout>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

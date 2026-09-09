@@ -337,6 +337,76 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/auth/register',
     },
   },
+  {
+    slug: 'notlar-artik-yeterli-degil',
+    contentSlug: 'how-to-differentiate-yourself-at-15',
+    title: 'Notlar Artık Yeterli Değil: Öğrenciler 15 Yaşında Kendilerini Gerçekte Nasıl Farklılaştırıyor',
+    shortTitle: '15 Yaşında Nasıl Farklılaşılır',
+    description:
+      'Her zamankinden daha fazla öğrenci en yüksek notları alıyor — bu da akademik sonuçları son yirmi yılın en zayıf farklılaştırıcısı haline getiriyor. Rekabetçi üniversite başvurularını gerçekte ne ayırt ediyor ve neden 15 yaşında başlamak sonucu değiştiriyor.',
+    date: '2026-09-08',
+    readTime: '11 dk okuma',
+    tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Üniversite Kabulü'],
+    faqs: [
+      {
+        q: 'Notlar üniversite başvuruları için hâlâ önemli mi?',
+        a: 'Evet — notlar taban çıta, tavan değil. A Level teklifleri karşılanmazsa yer iptal edilir. Sorun notların önem kazanması değil; farklılaştırma gücünü yitirmesidir. Tüm A Level girişlerinin %26–27\'si A veya A* alırken ve Russell Group\'taki en rekabetçi bölümler yerleşim başına 10–15 başvuru alırken notlar filtre işlevi görür, seçici değil. Eşdeğer not eşiğini geçen adaylar arasında seçimi yapan şey başka her şeydir.',
+      },
+      {
+        q: 'Farklılaşmak için neden 15 yaş doğru zamandır?',
+        a: 'Yıl 10 ve 11 (14–16 yaş) iki bileşik nedenle optimal penceredir. Birincisi, formal iş deneyimi yerleştirmelerinin mevcut ve beklenen olduğu en erken nokta: çoğu ortaöğretim okulu Yıl 10\'da zorunlu bir yerleştirme haftası düzenler. İkincisi, bileşim için yeterince erkendir: 15 yaşında anlamlı bir yerleştirme tamamlayan öğrenci UCAS başvurusuna iki haftalık deneyimle değil iki yıllık belgelenmiş deneyimle ulaşır.',
+      },
+      {
+        q: '2026\'da güçlü bir üniversite adayını gerçekte ne ayırt ediyor?',
+        a: 'Etki sırasına göre: (1) Spesifik, belgelenmiş iş deneyimi — genel değil, gözlemler ve sonuçlarla kanıtlanmış; (2) Özellikle STEM, hukuk ve iş programları için doğrulanmış alan bilgisi; (3) Ölçülebilir çıktısı olan sürdürülebilir kişisel projeler; (4) Gerçek yerleştirmelerden oluşturulan profesyonel ağ; (5) Müfredatın ötesinde entelektüel meşguliyet — sadece başlık değil, spesifik içgörülerle desteklenen okuma ve araştırma.',
+      },
+      {
+        q: 'Erken başlamak üniversite kişisel beyanını nasıl etkiler?',
+        a: 'UCAS kişisel beyanı yaklaşık 650 kelimedir. 15 yaşında bir yerleştirme tamamlayan ve iki yıl boyunca bu deneyimin üzerine inşa eden öğrenci, soyut iddialar değil kanıt içeren spesifik gözlemlerle dolu bir beyan yazar. "Hukuka her zaman ilgi duydum" iddia; "yerleştirmem sırasında [şirkette] şunu gözlemledim" kanıt. Kabul görevlileri bu farkı tespit etmek ve ödüllendirmek üzere eğitiliyor.',
+      },
+    ],
+    cta: {
+      heading: '15 yaşında staja ne kadar hazırsın?',
+      body: 'Eduentry\'nin ücretsiz uyarlanabilir değerlendirmesi yetenek, alan bilgisi ve iş yeri becerilerini ölçer. Güçlü ve gelişim alanlarını kişiselleştirilmiş bir raporla öğren.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/internship',
+    },
+  },
+  {
+    slug: '12-sinifta-is-deneyimi',
+    contentSlug: 'business-work-experience-year-12',
+    title: '12. Sınıfta İş Dünyası Deneyimi: Yaşa Göre Kapsamlı İngiltere Rehberi (12–18 Yaş)',
+    shortTitle: '12. Sınıf İş Deneyimi Rehberi (12–18 Yaş)',
+    description:
+      'İngiltere\'de 12 ila 18 yaş arası iş dünyası deneyimi hakkında her şey — her yıl grubu için mevcut olanlar, büyük işveren programları, nasıl başvurulur ve başvurunun öne çıkmasını ne sağlar.',
+    date: '2026-07-09',
+    readTime: '10 dk okuma',
+    tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'İş Dünyası', 'Üniversite Kabulü'],
+    faqs: [
+      {
+        q: '12. sınıfta iş dünyası deneyimi nedir?',
+        a: 'Yıl 12 iş deneyimi (16–17 yaş) genellikle bir şirkette bir veya iki haftalık yerleştirme ya da büyük bir işverenin yaz boyunca yürüttüğü yapılandırılmış programı kapsar. Görevler departmanları dolaşmaktan analitik proje tamamlamaya, ekip toplantılarına katılmaya ve bulgular sunmaya kadar uzanır. Birçok FTSE 100 şirketi özellikle 12. sınıf öğrencilerine yönelik "Bahar Insight" günleri ve yaz programları düzenler.',
+      },
+      {
+        q: 'İş dünyası deneyimi aramaya hangi yıl grubundan başlamalıyım?',
+        a: 'Ne kadar erken o kadar iyi. Yıl 10 (14–15 yaş) formal programlar için standart ilk giriş noktasıdır. Yıl 12\'de başlayan öğrenciler hâlâ önemli değer kazanabilir — özellikle o yıl grubuna özgü tasarlanmış büyük işveren programlarından. Temel fark bileşimdir: Yıl 10\'da başlayan ve deneyimini geliştiren öğrenci Yıl 12 başvurularına gelişmiş bir profesyonel hikâyeyle ulaşır.',
+      },
+      {
+        q: 'Hangi büyük şirketler 12. sınıf iş deneyimi sunuyor?',
+        a: 'Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey (Insight programı), BCG ve çoğu büyük İngiliz bankası ile profesyonel hizmetler firması 12. sınıfa özgü Bahar Insight veya Yaz Insight programları yürütür. Başvurular genellikle Eylül–Kasım\'da açılır. Bu programlar rekabetçidir — yer başına 10–20 başvuru tipiktir.',
+      },
+      {
+        q: 'İş deneyimi üniversite başvurularına nasıl katkı sağlar?',
+        a: 'Russell Group\'taki rekabetçi iş, iktisat, finans ve hukuk programları için iş deneyimi kişisel beyanda güçlü kanıt oluşturur. "İş kararlarıyla ilgileniyorum" iddia; "yerleştirmem sırasında [şirkette] gelir hedefleri ile nakit akışı kısıtları arasındaki gerilimi gözlemledim" kanıt. Warwick, LSE ve Bath\'taki kabul görevlileri birincisinin yüzlercesini işler, ikincisi ise sürçünden biri.',
+      },
+    ],
+    cta: {
+      heading: 'İş dünyasına hazırlık seviyeni ölç',
+      body: 'Lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. İş dünyası alanında yetenek, alan bilgisi ve iş yeri becerilerini ölç — 35 dakikadan kısa sürede.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/internship',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

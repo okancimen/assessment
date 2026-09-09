@@ -189,6 +189,76 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: '/auth/register',
     },
   },
+  {
+    slug: 'las-notas-ya-no-son-suficientes',
+    contentSlug: 'how-to-differentiate-yourself-at-15',
+    title: 'Las notas ya no son suficientes: cómo se diferencian realmente los estudiantes a los 15',
+    shortTitle: 'Cómo diferenciarte a los 15',
+    description:
+      'Más estudiantes que nunca obtienen las mejores notas, lo que convierte los resultados académicos en el diferenciador más débil de las últimas dos décadas. Qué distingue realmente las solicitudes universitarias competitivas y por qué empezar a los 15 cambia el resultado.',
+    date: '2026-09-08',
+    readTime: '11 min de lectura',
+    tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral', 'Acceso universitario'],
+    faqs: [
+      {
+        q: '¿Las notas siguen siendo importantes para las solicitudes universitarias?',
+        a: 'Sí: las notas son el suelo, no el techo. Las ofertas de A-level de las universidades competitivas (normalmente AAA–A*AA) deben cumplirse o la plaza se retira. El problema no es que las notas hayan dejado de importar; es que han dejado de diferenciar. Cuando el 26–27% de todas las entradas de A-level reciben A o A*, y los cursos más demandados del Russell Group reciben entre 10 y 15 solicitudes por plaza, las notas se convierten en un filtro, no en un selector.',
+      },
+      {
+        q: '¿Por qué los 15 años es el momento adecuado para empezar a diferenciarse?',
+        a: 'El curso 4.º de ESO y 1.º de Bachillerato (14–16 años) es la ventana óptima por dos razones acumulativas. En primer lugar, es el primer momento en que las prácticas formales están disponibles y son esperadas. En segundo lugar, es lo suficientemente temprano para acumular experiencia: un estudiante que completa prácticas con 15 años llega a su solicitud universitaria con dos años de exposición profesional documentada, no con dos semanas.',
+      },
+      {
+        q: '¿Qué diferencia realmente a un candidato universitario sólido en 2026?',
+        a: 'Por orden de impacto: (1) Experiencia laboral específica y documentada — no genérica, sino evidenciada con observaciones y resultados; (2) Conocimiento de dominio verificado, especialmente para programas STEM, derecho y empresa; (3) Proyectos personales sostenidos con un resultado medible; (4) Una red profesional construida a partir de prácticas reales; (5) Implicación intelectual más allá del temario — lecturas referenciadas con ideas específicas, no solo títulos mencionados.',
+      },
+      {
+        q: '¿Cómo afecta empezar pronto a la carta de motivación universitaria?',
+        a: 'La declaración personal de UCAS tiene unas 650 palabras. Un estudiante que completa prácticas con 15 años y construye sobre esa experiencia durante dos años escribe una declaración con observaciones específicas y evidencias, no afirmaciones abstractas. "Siempre me ha interesado el derecho" es una afirmación; "durante mis prácticas en [empresa] observé esto" es evidencia. Los evaluadores están formados para detectar y valorar la diferencia.',
+      },
+    ],
+    cta: {
+      heading: '¿Cuál es tu nivel de preparación para prácticas a los 15?',
+      body: 'La evaluación adaptativa gratuita de Eduentry mide aptitud, conocimiento de dominio y habilidades en el entorno laboral. Obtén un informe personalizado con tus puntos fuertes y áreas de mejora.',
+      label: 'Empezar la evaluación gratuita',
+      href: '/internship',
+    },
+  },
+  {
+    slug: 'experiencia-laboral-empresarial-guia-completa',
+    contentSlug: 'business-work-experience-year-12',
+    title: 'Experiencia laboral en empresa: guía completa del Reino Unido por edad (12 a 18)',
+    shortTitle: 'Experiencia laboral en empresa: guía por edades (12–18)',
+    description:
+      'Todo lo que los estudiantes del Reino Unido necesitan saber sobre experiencia laboral en empresa de los 12 a los 18 años — qué está disponible en cada curso, los principales programas de empleadores, cómo solicitar y qué hace destacar una solicitud.',
+    date: '2026-07-09',
+    readTime: '10 min de lectura',
+    tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral', 'Empresa', 'Acceso universitario'],
+    faqs: [
+      {
+        q: '¿Qué es la experiencia laboral en empresa en 1.º de Bachillerato?',
+        a: 'La experiencia laboral en empresa en 1.º de Bachillerato (16–17 años) suele consistir en una colocación de una o dos semanas en una empresa, o un programa estructurado de varias semanas en verano organizado por un gran empleador. Las tareas van desde rotar por departamentos y completar un proyecto analítico hasta asistir a reuniones de equipo y presentar conclusiones. Muchas empresas del FTSE 100 organizan jornadas de "Spring Insight" y programas de verano específicamente para estudiantes de 1.º de Bachillerato.',
+      },
+      {
+        q: '¿En qué curso debería empezar a buscar experiencia laboral en empresa?',
+        a: 'Cuanto antes, mejor. El curso de 4.º de ESO (14–15 años) es el primer punto de entrada estándar para los programas formales. Los estudiantes que empiezan en 1.º de Bachillerato (16–17 años) aún pueden obtener un valor significativo, especialmente de los programas de grandes empleadores diseñados específicamente para ese curso. La diferencia clave es la acumulación: un estudiante de 4.º de ESO que completa prácticas y construye sobre ellas llega a las solicitudes de 1.º de Bachillerato con una historia profesional desarrollada.',
+      },
+      {
+        q: '¿Qué grandes empresas ofrecen experiencia laboral para 1.º de Bachillerato?',
+        a: 'Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey (programa Insight), BCG y la mayoría de los grandes bancos y firmas de servicios profesionales del Reino Unido organizan programas Spring Insight o Summer Insight específicamente para 1.º de Bachillerato. Las solicitudes suelen abrirse en septiembre–noviembre. Estos programas son competitivos — entre 10 y 20 solicitudes por plaza es lo habitual.',
+      },
+      {
+        q: '¿Cómo fortalece la experiencia laboral en empresa las solicitudes universitarias?',
+        a: 'Para los programas competitivos de empresa, economía, finanzas y derecho en universidades del Russell Group, la experiencia laboral aporta evidencia concreta a la declaración personal. "Me interesa cómo las empresas toman decisiones financieras" es una afirmación. "Durante mis prácticas en [empresa], asistí a una reunión en la que el director comercial explicó la tensión entre los objetivos de crecimiento de ingresos y las restricciones de liquidez" es evidencia. Los evaluadores de Warwick, LSE y Bath procesan cientos de lo primero; lo segundo es una categoría propia.',
+      },
+    ],
+    cta: {
+      heading: 'Mide tu preparación para el mundo empresarial',
+      body: 'Evaluación adaptativa gratuita para estudiantes de instituto. Mide aptitud, conocimiento de dominio empresarial y habilidades en el entorno laboral en menos de 35 minutos.',
+      label: 'Empezar la evaluación gratuita',
+      href: '/internship',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

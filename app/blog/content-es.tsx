@@ -598,6 +598,295 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'how-to-differentiate-yourself-at-15': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        En 2019, el 25,2% de las entradas de A-level en Inglaterra recibió la calificación A o A*. En 2021, esa cifra alcanzó el 44,8%. Ha vuelto a bajar hasta aproximadamente el 27% en 2023 y desde entonces se ha estabilizado — pero el daño al valor señalizador de las notas más altas ya estaba hecho. Cuando más de una cuarta parte de todas las entradas de A-level obtiene las calificaciones más altas, y los cursos universitarios más competitivos reciben entre 10 y 20 solicitudes por plaza disponible, los resultados académicos por sí solos no pueden hacer el trabajo de selección. Se han convertido en el precio de entrada, no en la razón de la aceptación.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Este artículo trata de lo que ocurre después de las notas — y por qué los estudiantes que entienden esto a los 15 años, no a los 17, llegan a UCAS con algo que la mayoría de sus compañeros no puede replicar en el tiempo que les queda.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">El problema de la inflación de notas en cifras</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La inflación de notas de los años de pandemia fue extrema, pero la tendencia subyacente ya era visible antes de 2020. Entre 2010 y 2019, la proporción de entradas de A-level calificadas con A o superior aumentó de manera constante del 22,6% al 25,5%. La recalibración post-pandemia ha devuelto las puntuaciones más cerca de la línea base de 2019 — pero la competencia por plazas universitarias no se ha recalibrado al mismo ritmo.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Oxford recibió 24.598 solicitudes para 3.286 plazas de grado en 2024</strong> — una proporción de aproximadamente 7,5 solicitudes por plaza en todas las materias. Para los cursos más competitivos (Medicina, PPE, Derecho), la proporción supera 10:1. Todos los solicitantes de ese grupo tienen excelentes notas. Las notas no son lo que distingue al 13% que recibe oferta.
+          </Bullet>
+          <Bullet>
+            <strong>El Russell Group en conjunto recibió aproximadamente 750.000 solicitudes</strong> para unas 100.000 plazas en el ciclo 2024 (datos UCAS). Eso es 7,5 solicitantes por plaza de media — con los cursos más competitivos significativamente más altos. La mayoría de esos solicitantes cumplía o esperaba cumplir los umbrales de notas. El diferenciador no fueron los resultados académicos.
+          </Bullet>
+          <Bullet>
+            <strong>En materias competitivas, el suelo de notas ha subido.</strong> Hace una década, AAB era una oferta competitiva para muchos programas de empresa y economía del Russell Group. Hoy, AAA–A*AA es estándar, con algunos programas añadiendo requisitos específicos de materias encima. El techo de lo que las notas pueden comunicar se ha comprimido — casi todos los candidatos aceptados las tienen, lo que significa que casi todos los rechazados también.
+          </Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">El problema de selección:</strong> Los equipos de admisión en universidades competitivas no buscan estudiantes con buenas notas — tienen demasiados. Buscan estudiantes con buenas notas <em>y</em> algo más. Ese algo más es de lo que trata este artículo.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Por qué los 15 años es la ventana de diferenciación</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La mayoría de los estudiantes empieza a pensar en diferenciarse en 1.º o 2.º de Bachillerato — cuando las solicitudes a UCAS se vuelven inminentes y el consejo de &ldquo;conseguir algo de experiencia laboral&rdquo; se vuelve urgente. En ese punto, las opciones son limitadas: una colocación de dos semanas en verano, un programa virtual, o una declaración personal que describe un interés teórico en un campo en el que el estudiante nunca ha trabajado realmente.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los estudiantes que empiezan a los 15 tienen un problema diferente: demasiadas opciones y demasiado tiempo. Eso no es realmente un problema — es una ventaja que casi nadie aprovecha.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La investigación al respecto es específica. Education and Employers, la organización benéfica del Reino Unido que realiza los estudios longitudinales más completos sobre la implicación de empleadores en edad escolar, encontró que <strong>los estudiantes que tuvieron cuatro o más encuentros significativos con empleadores antes de los 16 años tenían cinco veces menos probabilidades de estar NEET (sin empleo, educación o formación) a los 19 años</strong> que aquellos sin esa experiencia. El mecanismo no es el empleo en sí — es la orientación: saber cómo funciona el mundo profesional antes de tener que navegarlo de forma independiente.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La lógica de acumulación se aplica directamente a las solicitudes universitarias. Un estudiante que completa unas prácticas a los 15, reflexiona sobre ellas, lee sobre el campo durante 4.º de ESO y completa unas segundas prácticas a los 16 en un área relacionada o de contraste llega a su declaración personal de 1.º de Bachillerato con dos años de exposición profesional documentada. Un estudiante que completa sus primeras prácticas a los 17 tiene dos semanas.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué diferencia realmente: la jerarquía de evidencias</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          No toda diferenciación es igual. Los evaluadores de admisiones y los reclutadores de graduados son expertos en distinguir entre actividades que representan un compromiso genuino y aquellas que representan relleno de CV. La jerarquía siguiente refleja lo que la investigación demuestra que realmente mueve los resultados.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">1. Experiencia laboral específica y documentada</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La experiencia laboral es el diferenciador citado de manera más consistente tanto en los datos de admisiones universitarias como en las encuestas de empleadores de graduados. <strong>El 73% de los reclutadores de graduados del Reino Unido citan la experiencia laboral como el diferenciador más importante entre candidatos igualmente cualificados</strong> — por encima de la clasificación de la carrera y de la universidad asistida (Prospects, 2022). A los 15 años, la versión relevante es cualquier exposición estructurada a un entorno profesional.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La palabra clave es <em>documentada</em>. La experiencia laboral que se recuerda vagamente y se describe genéricamente en una declaración personal no hace casi nada. La experiencia laboral documentada específicamente — observaciones específicas, sorpresas específicas, cosas que el estudiante haría de manera diferente — produce evidencia en lugar de afirmación.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">2. Conocimiento de dominio verificado</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las notas académicas miden qué tan bien rindió un estudiante en un examen estandarizado. No miden si entiende cómo funciona un modelo de negocio, si puede interpretar un conjunto de datos, o si tiene la conciencia comercial para operar en un entorno profesional. Estas brechas son cada vez más visibles para los equipos de admisiones y empleadores por igual.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>La Encuesta de Educación y Habilidades del CBI de 2023</strong> encontró que el 61% de los empleadores del Reino Unido no estaba satisfecho con las habilidades de autogestión de los titulados de bachillerato, y el 44% reportó preocupaciones sobre la conciencia empresarial y comercial. Un estudiante que demuestra competencia de dominio mediante una evaluación verificada proporciona algo que la gran mayoría de los solicitantes no puede.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">3. Un proyecto personal sostenido con un resultado medible</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El estudiante que menciona en una declaración personal que &ldquo;empezó un blog sobre economía&rdquo; compite con varios miles de otros estudiantes que también empezaron blogs sobre economía. El estudiante que describe haber gestionado un negocio de tutoría durante 18 meses, con ocho clientes regulares, siguiendo el progreso de sus alumnos frente a objetivos de examen — ese estudiante está haciendo algo categóricamente diferente.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El elemento diferenciador de un proyecto personal no es la categoría — es la especificidad, la duración y el resultado medible. Una empresa de Young Enterprise que produjo un producto real, recaudó capital en acciones y compitió a nivel regional es específica y medible. Un podcast sobre actualidad que emitió tres episodios no lo es.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">4. Una red profesional construida desde prácticas reales</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El Sutton Trust estima que <strong>aproximadamente el 33% de los empleos de graduados del Reino Unido se cubren a través de redes informales y contactos personales</strong> en lugar de solicitudes formales. Un estudiante que ha completado prácticas reales a los 15 y 16 años tiene contactos profesionales antes de comenzar la universidad. Esos contactos no garantizan empleo, pero reducen significativamente el problema del arranque en frío.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">5. Implicación intelectual más allá del temario</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cada guía de admisiones de cada universidad del Russell Group hace referencia a la importancia de leer más allá del temario de A-level. Este consejo es tan común que se ha convertido en ruido. Los estudiantes que realmente se diferencian a través de esta vía no son los que leen más libros; son los que establecen conexiones específicas entre lo que han leído y lo que han experimentado profesionalmente.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Una declaración personal que dice &ldquo;leí <em>Pensar rápido, pensar despacio</em> de Daniel Kahneman&rdquo; es común. Una que dice &ldquo;leer la distinción de Kahneman entre el pensamiento Sistema 1 y Sistema 2 cambió cómo interpreté el proceso de toma de decisiones que observé durante mis prácticas en [empresa]&rdquo; es rara. La diferencia no es el libro. Es la experiencia profesional que da a la lectura algo con lo que conectarse.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué aspecto tiene esto en una declaración personal</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La declaración personal de UCAS tiene aproximadamente 650 palabras. Un estudiante que ha construido un perfil diferenciado a los 15 usa esas 650 palabras de manera muy diferente.
+        </p>
+        <div className="space-y-4 mb-6">
+          <div className="border border-red-100 rounded-xl p-6 bg-red-50/30">
+            <p className="text-xs font-semibold text-red-500 uppercase tracking-wide mb-2">No diferenciado (afirmación sin evidencia)</p>
+            <p className="text-sm text-gray-700 leading-relaxed italic">&ldquo;Siempre me ha interesado la economía y cómo funcionan los mercados. Disfruto leyendo sobre los eventos económicos actuales y creo que prosperaría en un entorno universitario donde puedo explorar estas ideas más a fondo. Completé experiencia laboral en una firma de contabilidad local donde aprendí sobre la importancia de los informes financieros.&rdquo;</p>
+          </div>
+          <div className="border border-emerald-100 rounded-xl p-6 bg-emerald-50/30">
+            <p className="text-xs font-semibold text-emerald-600 uppercase tracking-wide mb-2">Diferenciado (evidencia específica)</p>
+            <p className="text-sm text-gray-700 leading-relaxed italic">&ldquo;Durante mis prácticas de 4.º de ESO en [empresa], asistí a una revisión presupuestaria donde el director financiero explicó la tensión entre los objetivos de crecimiento de ingresos del cliente y las restricciones de liquidez que el equipo había modelado para el tercer trimestre. En ese momento no entendía por qué una empresa rentable podía enfrentar un problema de flujo de caja — leer el trabajo de Aswath Damodaran sobre la distinción entre ganancias y flujo de caja libre respondió esa pregunta y reencuadró cómo entendí las decisiones trimestrales de la empresa.&rdquo;</p>
+          </div>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          La segunda versión solo es posible porque el estudiante tuvo las prácticas a los 15 y los dos años entre la colocación y la declaración personal para leer sobre lo que observó. Un estudiante que completa sus primeras prácticas a los 17 y escribe su declaración personal tres meses después no puede producir esta profundidad.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">El punto de partida práctico a los 15</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La brecha entre saber que la diferenciación importa y saber qué hacer esta semana es donde la mayoría de los estudiantes se estanca. El camino práctico es más sencillo de lo que parece.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Asegura una colocación en los próximos doce meses.</strong> No un programa competitivo en una firma de marca reconocida — un abogado local, una pequeña firma de contabilidad, una agencia digital, un negocio familiar. Una semana de exposición profesional genuina, documentada en un cuaderno al final de cada día, produce más material útil para la declaración personal que dos semanas pasivas en una gran firma.
+          </Bullet>
+          <Bullet>
+            <strong>Identifica un programa estructurado al que unirte este año académico.</strong> Young Enterprise, UKMT, CREST, CyberFirst — el que sea más relevante para el campo que estás considerando. Elige uno y comprométete con él durante todo el año. La amplitud de participación sin profundidad de compromiso es el error más común al construir un perfil de solicitud diferenciado.
+          </Bullet>
+          <Bullet>
+            <strong>Lee un libro en tu campo previsto y conéctalo con lo que observas.</strong> No porque las guías de admisiones lo digan, sino porque este es el hábito que produce las observaciones específicas que hacen memorable una declaración personal. La conexión entre una observación profesional y un marco teórico — escrita en un cuaderno el día en que se te ocurre — es la materia prima de una solicitud convincente.
+          </Bullet>
+          <Bullet>
+            <strong>Realiza una evaluación verificada para establecer tu base de conocimiento de dominio actual.</strong> Saber dónde estás realmente — no solo cómo te sientes sobre una materia — es el primer paso para construir competencia genuina en lugar de confianza en la competencia.
+          </Bullet>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">La cronología de diferenciación en una frase:</strong> Un estudiante que empieza a construir experiencia profesional documentada, conocimiento de dominio verificado y evidencia de proyectos sostenidos a los 15 llega a UCAS dos años después con un perfil que la mayoría de sus compañeros — sin importar sus notas — pasará tres meses en 1.º de Bachillerato intentando construir desde cero.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Conclusión</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las notas son necesarias. Siguen siendo el umbral por el que debe pasar cada solicitud universitaria competitiva. Pero en los programas más competitivos del Reino Unido — e incresantemente en todo el Russell Group — la pregunta no es si un estudiante tiene las notas. Es qué ha hecho con el tiempo que no ha estado dedicando a los exámenes.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Los estudiantes que entienden esto a los 15 en lugar de a los 17 no se convierten en personas diferentes. Se convierten en estudiantes con dos años más de experiencia profesional documentada, conocimiento de dominio más profundo, una red profesional que ya tiene dos años de antigüedad, y material para la declaración personal que contiene evidencia en lugar de afirmación.
+        </p>
+      </section>
+    </>
+  ),
+
+  'business-work-experience-year-12': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        El primer año de Bachillerato (16–17 años) es cuando la mayoría de los estudiantes del Reino Unido se implican seriamente por primera vez con la experiencia laboral en empresa. Es el año en que las solicitudes a UCAS empiezan a sentirse reales, el año en que los programas Spring Insight de los grandes empleadores abren sus solicitudes, y el año en que el consejo de orientación laboral escolar apunta con más frecuencia hacia colocaciones formales. Pero 1.º de Bachillerato no es el comienzo de la oportunidad — y para quienes empiezan aquí, entender el panorama completo de los 12 a los 18 años es la diferencia entre un enfoque reactivo y uno estratégico.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Esta guía cubre la experiencia laboral en empresa en cada etapa desde 1.º de ESO hasta 2.º de Bachillerato, con datos sobre lo que las colocaciones realmente producen para los resultados universitarios y profesionales, y una guía práctica para conseguir una que destaque.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Por qué importa la experiencia laboral en empresa: los números</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El caso de la experiencia laboral en empresa no es anecdótico — es medible. La investigación sobre lo que produce para los estudiantes en términos de admisiones universitarias, resultados en las primeras etapas de la carrera y desarrollo profesional se encuentra entre las más consistentes de la investigación educativa.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>El 83% de los empleadores de graduados del Reino Unido</strong> consideran la experiencia laboral previa &ldquo;importante&rdquo; o &ldquo;muy importante&rdquo; al cribar candidatos (NACE, 2023). Esta es la tasa más alta registrada desde que NACE comenzó a rastrear las actitudes de los empleadores en 2009.
+          </Bullet>
+          <Bullet>
+            <strong>El 73% de los reclutadores de graduados del Reino Unido</strong> citan la experiencia laboral como el diferenciador más importante entre candidatos igualmente cualificados — por encima de la clasificación de la carrera y de la universidad asistida (Prospects, 2022).
+          </Bullet>
+          <Bullet>
+            <strong>Los estudiantes con experiencia laboral relevante reciben ofertas de trabajo un 70% más a menudo</strong> antes de graduarse que aquellos sin ella (NACE, 2020). El mecanismo es sencillo: los empleadores no están adivinando el potencial — están leyendo el rendimiento demostrado.
+          </Bullet>
+          <Bullet>
+            <strong>El 33% de los empleos de graduados del Reino Unido se cubren a través de redes</strong> (Sutton Trust, 2019). Un estudiante que completa experiencia laboral estructurada en empresa a los 16 llega a una feria de empleo universitaria con contactos profesionales.
+          </Bullet>
+          <Bullet>
+            <strong>Los estudiantes con 4 o más encuentros con empleadores antes de los 16</strong> tienen cinco veces menos probabilidades de estar NEET a los 19 que sus compañeros sin esa exposición (Education and Employers, 2018).
+          </Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Empezar pronto se acumula.</strong> Un estudiante que completa una colocación en 4.º de ESO, la complementa con una colocación estival autoorganizada en 3.º de ESO y luego solicita los programas de 1.º de Bachillerato con experiencia profesional documentada de dos contextos empresariales diferentes, está en una posición categóricamente diferente a la mayoría de solicitantes que no listan ninguna experiencia.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Experiencia laboral en empresa por curso: de los 12 a los 18 años</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          El tipo de experiencia laboral en empresa disponible — y lo que vale para futuras solicitudes — cambia significativamente por curso. Esto es lo que es realista y recomendable en cada etapa.
+        </p>
+
+        <div className="space-y-5 mb-6">
+          <div className="border border-gray-100 rounded-xl p-6">
+            <div className="font-bold text-gray-900 mb-1">12 años · 1.º de ESO</div>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              No existen programas formales a esta edad. La exposición más útil es observacional: visitar un lugar de trabajo con un padre, participar en una conversación de negocio familiar, o asumir la responsabilidad de una recaudación de fondos escolar. El objetivo no es una entrada en el CV sino el reconocimiento de patrones — ¿qué hace realmente una empresa y quién hace qué dentro de ella?
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <div className="font-bold text-gray-900 mb-1">14 años · 3.º de ESO</div>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              3.º de ESO es el año de elección de optativas — y también el año para identificar qué área de empresa te interesa más. Finanzas, operaciones, estrategia, marketing, consultoría: acotar temprano significa que las solicitudes de colocación de 4.º de ESO pueden ser dirigidas en lugar de genéricas. Algunas pymes aceptarán a estudiantes de 3.º de ESO para visitas informales de medio día o día completo, particularmente cuando se les aborda con una pregunta específica en lugar de una solicitud genérica de &ldquo;experiencia laboral&rdquo;.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <div className="font-bold text-gray-900 mb-1">15 años · 4.º de ESO</div>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              4.º de ESO es el primer punto de entrada estándar para la experiencia laboral formal en empresa en el Reino Unido. La mayoría de los centros de secundaria organiza una semana de colocación obligatoria de una o dos semanas en esta etapa. La calidad de estas colocaciones varía enormemente. Independientemente de la colocación, la práctica innegociable en esta etapa es la documentación: registra lo que observaste, lo que te sorprendió y lo que harías de manera diferente. Este material se puede reutilizar directamente en las solicitudes de 1.º de Bachillerato y en las declaraciones personales de UCAS.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <div className="font-bold text-gray-900 mb-1">16–17 años · 1.º de Bachillerato</div>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              1.º de Bachillerato es la ventana principal. Los programas Spring Insight y Summer Insight de los grandes empleadores están diseñados específicamente para este grupo de edad. Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey, BCG y la mayoría de los grandes bancos y firmas de servicios profesionales del Reino Unido abren solicitudes en septiembre–noviembre para el año siguiente. Estos programas son competitivos — entre 10 y 20 solicitudes por plaza es lo habitual para los esquemas de primer nivel — pero son los más estructurados, los más directamente útiles para UCAS, y los más propensos a producir contactos y referencias profesionales.
+            </p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <div className="font-bold text-gray-900 mb-1">17–18 años · 2.º de Bachillerato</div>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              2.º de Bachillerato es el año de solicitud a UCAS. La mayoría de los estudiantes que solicitan programas competitivos de empresa, economía, finanzas o derecho ya habrán completado su colocación principal. Un estudiante de 2.º que todavía no ha hecho nada formal aún tiene opciones: muchas organizaciones aceptan colocaciones cortas de verano de estudiantes pre-universitarios, y los programas de experiencia laboral virtual (Forage, Springpod) se pueden completar en días y referenciar en solicitudes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Los programas de 1.º de Bachillerato: quién los gestiona y cuándo solicitar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los programas estructurados de 1.º de Bachillerato en los grandes empleadores del Reino Unido representan la experiencia laboral en empresa más valiosa profesionalmente disponible para los estudiantes de secundaria.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Firmas de servicios profesionales</strong> — KPMG, Deloitte, PwC, EY y Grant Thornton organizan programas Summer Insight para estudiantes de 1.º de Bachillerato en funciones como auditoría, consultoría, fiscalidad y tecnología. Las solicitudes suelen abrirse en septiembre–octubre. Las plazas son limitadas y se cubren rápido; solicitar pronto es una ventaja documentada.
+          </Bullet>
+          <Bullet>
+            <strong>Banca de inversión y servicios financieros</strong> — Goldman Sachs, Barclays, HSBC, Lloyds y JP Morgan organizan semanas de Spring Insight (normalmente marzo–abril) y programas de Analista de Verano. Goldman Sachs Spring Insight recibe típicamente 15–20 solicitudes por plaza.
+          </Bullet>
+          <Bullet>
+            <strong>Consultoría de gestión</strong> — McKinsey (Programa Insight), BCG, Bain y Oliver Wyman reclutan a estudiantes de 1.º de Bachillerato para programas de insight y jornadas de puertas abiertas. Las plazas son limitadas pero la densidad de aprendizaje es alta.
+          </Bullet>
+          <Bullet>
+            <strong>Pymes y contacto directo</strong> — El Reino Unido tiene aproximadamente 5,5 millones de pymes. No organizan programas formales, lo que significa que casi no reciben solicitudes de colocación — y frecuentemente dicen que sí a un enfoque directo bien redactado. Una colocación de dos semanas en una firma de servicios profesionales local bien gestionada o en una empresa en crecimiento a menudo produce más experiencia práctica que el programa estructurado de una gran firma.
+          </Bullet>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Ventana de solicitud:</strong> Para solicitudes de programas de septiembre a marzo, pon un recordatorio para la primera semana de septiembre. Los estudiantes que solicitan en las primeras dos semanas de la ventana de solicitud tienen una ventaja estructural — los evaluadores están menos fatigados, hay más plazas disponibles y el listón no ha subido todavía.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo fortalece la experiencia laboral en empresa las solicitudes universitarias</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Para los cursos competitivos de empresa, economía, finanzas y derecho en universidades del Russell Group, la experiencia laboral se trata como contexto casi esencial para una declaración personal sólida. El mecanismo es estructural: una declaración personal escrita por un estudiante con observación profesional genuina contiene evidencia específica, no afirmación.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          &ldquo;Me interesa cómo las empresas toman decisiones financieras&rdquo; es una afirmación. &ldquo;Durante mis prácticas en [empresa], asistí a una reunión de planificación trimestral donde el director comercial explicó la tensión entre los objetivos de crecimiento de ingresos y las restricciones de flujo de caja que el equipo de finanzas había modelado — y quería entender cómo se formaliza esa compensación&rdquo; es evidencia. Los evaluadores de admisiones en Warwick, LSE y Bath procesan cientos de lo primero; lo segundo es una categoría de uno.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Carreras de Empresa y Economía</strong> — las guías de admisiones del Russell Group para estos programas referencian consistentemente la exposición comercial como factor diferenciador para candidatos competitivos.</Check>
+          <Check><strong>Carreras de Derecho</strong> — cualquier colocación legal o de servicios profesionales orientada a los negocios proporciona contexto aplicado para intereses en derecho comercial que fortalece declaraciones personales de otro modo teóricas.</Check>
+          <Check><strong>Carreras de Finanzas y Contabilidad</strong> — la exposición directa a informes financieros, presupuestación o relaciones con clientes en una firma de servicios profesionales o banco se encuentra entre las experiencias más directamente referenciadas en las admisiones a programas de finanzas competitivos.</Check>
+          <Check><strong>Carreras de Gestión y Estrategia</strong> — ver cómo se toman realmente las decisiones estratégicas en las organizaciones proporciona el material de observación que distingue a los candidatos analíticamente maduros de aquellos que describen interés sin evidencia.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo construir una solicitud que llegue a la fase de selección</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Para los programas competitivos de 1.º de Bachillerato en grandes empleadores — típicamente recibiendo 10–20 solicitudes por plaza — la diferencia entre los estudiantes preseleccionados y los que no lo son se reduce a tres cosas.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Un interés específico y evidenciado.</strong> &ldquo;Me interesa las finanzas&rdquo; no es una solicitud. &ldquo;Después de mis prácticas de 4.º de ESO en [empresa], noté que las decisiones de asignación de capital se tomaban de manera diferente a nivel divisional frente al de finanzas central — y quiero entender esa diferencia de forma más formal&rdquo; sí lo es. Los evaluadores que procesan cientos de expresiones genéricas de interés no buscan entusiasmo; buscan evidencia de compromiso previo.
+          </Bullet>
+          <Bullet>
+            <strong>Experiencia previa, por informal que sea.</strong> Cualquier exposición empresarial previa — un proyecto de empresa escolar, un negocio familiar, una colocación local autoorganizada — es relevante y debe mencionarse. El propósito no es implicar una experiencia extensa sino demostrar que ya has probado tu interés en condiciones reales en lugar de imaginadas.
+          </Bullet>
+          <Bullet>
+            <strong>Una señal de aptitud verificable.</strong> Un informe de preparación empresarial de Eduentry proporciona a los reclutadores evidencia de terceros sobre aptitud comercial y conocimiento empresarial antes de haberte conocido — abordando directamente el problema central de selección de cómo diferenciar entre solicitantes con perfiles escolares idénticos y sin historial profesional.
+          </Bullet>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">El argumento de acumulación en una frase.</strong> Un estudiante de 1.º de Bachillerato con una colocación documentada de 4.º de ESO, una colocación estival autoorganizada de 3.º de ESO en una empresa diferente, y una puntuación de preparación verificada tiene un perfil profesional que la gran mayoría de los solicitantes de UCAS en empresa, economía y finanzas no puede igualar — no porque sean más talentosos, sino porque empezaron antes y documentaron de manera consistente.
+        </Callout>
+      </section>
+    </>
+  ),
+
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {
