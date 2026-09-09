@@ -20,9 +20,19 @@ export const metadata: Metadata = {
   },
 }
 
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://eduentry.com/tr' },
+    { '@type': 'ListItem', position: 2, name: 'Hakkımızda', item: 'https://eduentry.com/tr/hakkimizda' },
+  ],
+}
+
 export default function HakkimizdaPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16" lang="tr">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
 
       <nav className="text-sm text-[#6e6e73] mb-10">
         <Link href="/tr" className="hover:text-[#1d1d1f]">Ana Sayfa</Link>

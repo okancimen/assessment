@@ -3,6 +3,9 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS_TR, getTurkishPostBySlug } from '@/app/blog/posts-tr'
 import { getTurkishBlogContent } from '@/app/blog/content-tr'
+import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
+
+const esByContentSlug = new Map(BLOG_POSTS_ES.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -16,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!post) return {}
   const url = `${BASE_URL}/tr/blog/${slug}`
   const enSlug = post.contentSlug ?? slug
+  const esSlug = esByContentSlug.get(enSlug)
   return {
     title: post.shortTitle,
     description: post.description,
@@ -25,6 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languages: {
         tr: url,
         'en-GB': `${BASE_URL}/blog/${enSlug}`,
+        ...(esSlug ? { es: `${BASE_URL}/es/blog/${esSlug}` } : {}),
         'x-default': `${BASE_URL}/blog/${enSlug}`,
       },
     },

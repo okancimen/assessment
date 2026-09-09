@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: 'Eduentry',
     locale: 'tr_TR',
     alternateLocale: ['en_GB', 'es_ES'],
-    images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry Blog — Staj ve Kariyer Rehberleri' }],
+    images: [{ url: `${BASE_URL}/tr/blog/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry Blog — Staj ve Kariyer Rehberleri' }],
   },
 }
 
