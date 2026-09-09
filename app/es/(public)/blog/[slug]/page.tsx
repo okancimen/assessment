@@ -146,6 +146,28 @@ export default async function ESBlogPostPage({ params }: { params: Promise<{ slu
         {getSpanishBlogContent(post.contentSlug ?? slug)}
       </article>
 
+      {/* Internal service links */}
+      <section className="mt-12 border border-[#d2d2d7] rounded-2xl p-6 bg-[#f5f5f7]/50">
+        <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-4">De Eduentry</p>
+        <div className="space-y-4">
+          {[
+            { href: 'https://eduentry.ai/es', title: 'Evaluación de Preparación para Prácticas', desc: 'Test adaptativo gratuito de 34 preguntas para estudiantes de 14+. Informe personalizado e información de IA sobre tu carrera.' },
+            { href: '/es/metodologia', title: 'Nuestra Metodología de Evaluación', desc: 'Puntuación IRT adaptativa en la misma escala de 100 puntos que usa PISA, GCSE y CAT4.' },
+            { href: '/es', title: 'Evaluación Académica', desc: 'De matemáticas a inglés, de razonamiento verbal a no verbal — test adaptativo gratuito para edades 6-17.' },
+          ].map((link) => (
+            <a key={link.href} href={link.href} className="flex items-start gap-3 group">
+              <svg className="w-4 h-4 text-[#4F46E5] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+              <div>
+                <div className="text-sm font-semibold text-[#1d1d1f] group-hover:text-[#4F46E5] transition-colors">{link.title}</div>
+                <div className="text-xs text-[#6e6e73] mt-0.5">{link.desc}</div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
       {related.length > 0 && (
         <section className="mt-16 mb-12">
           <h2 className="text-xl font-bold text-[#1d1d1f] mb-6">Artículos relacionados</h2>
@@ -174,12 +196,12 @@ export default async function ESBlogPostPage({ params }: { params: Promise<{ slu
       <section className="mt-16 mb-8 bg-[#4F46E5] rounded-2xl p-12 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'Descubre tu nivel de preparación'}</h2>
         <p className="text-indigo-200 mb-8">{post.cta?.body ?? 'Evaluación adaptativa gratuita para estudiantes de instituto mayores de 14 años.'}</p>
-        <Link
-          href="/internship/apply"
+        <a
+          href={post.cta?.href ?? 'https://eduentry.ai/es'}
           className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg"
         >
           {post.cta?.label ?? 'Iniciar evaluación gratuita'}
-        </Link>
+        </a>
       </section>
     </main>
   )

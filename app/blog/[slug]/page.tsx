@@ -11,6 +11,43 @@ import { BLOG_POSTS_ES } from '../posts-es'
 
 const BASE_URL = 'https://eduentry.com'
 
+const SERVICE_LINKS = [
+  {
+    tags: ['Internship', 'Work Experience', 'Career Development'],
+    href: '/internship',
+    title: 'Internship Readiness Assessment',
+    desc: 'Free 34-question adaptive test for students aged 14+. Personalised readiness report and AI career insights.',
+  },
+  {
+    tags: ['11+', 'Verbal Reasoning', 'Non-Verbal Reasoning'],
+    href: '/11-plus',
+    title: 'Free 11+ Practice Assessment',
+    desc: 'Adaptive 11+ test covering English, Maths, Verbal and Non-Verbal Reasoning. Standardised scores and percentile rankings.',
+  },
+  {
+    tags: ['Grammar Schools', 'Entry Requirements'],
+    href: '/grammar-schools',
+    title: 'Grammar School Guides by Area',
+    desc: 'Entry requirements, pass marks, and preparation guides for grammar schools across England.',
+  },
+  {
+    tags: ['Standardised Testing', 'International Benchmarks', 'PISA', 'Scores', 'Percentile'],
+    href: '/methodology',
+    title: 'Our Assessment Methodology',
+    desc: 'Adaptive IRT scoring on the same 100-point scale used by PISA, GCSE, and CAT4.',
+  },
+  {
+    tags: ['CogAT', 'NWEA MAP', 'ISEE', 'SSAT', 'Gifted Testing', 'Netherlands', 'UAE', 'Canada', 'Australia'],
+    href: '/subjects',
+    title: 'Academic Subjects Covered',
+    desc: 'English, Maths, Verbal Reasoning and Non-Verbal Reasoning — sample questions and what each subject tests.',
+  },
+]
+
+function getServiceLinks(tags: string[]) {
+  return SERVICE_LINKS.filter((s) => s.tags.some((t) => tags.includes(t))).slice(0, 3)
+}
+
 const trByContentSlug = new Map(BLOG_POSTS_TR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 const esByContentSlug = new Map(BLOG_POSTS_ES.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 
@@ -160,6 +197,30 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <article className="prose prose-gray max-w-none space-y-12">
           {getBlogContent(slug)}
         </article>
+
+        {/* Internal service links */}
+        {(() => {
+          const links = getServiceLinks(post.tags)
+          if (!links.length) return null
+          return (
+            <section className="mt-12 border border-gray-100 rounded-2xl p-6 bg-gray-50/50">
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">From Eduentry</p>
+              <div className="space-y-4">
+                {links.map((link) => (
+                  <Link key={link.href} href={link.href} className="flex items-start gap-3 group">
+                    <svg className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                    <div>
+                      <div className="text-sm font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors">{link.title}</div>
+                      <div className="text-xs text-gray-500 mt-0.5">{link.desc}</div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )
+        })()}
 
         {/* Related articles */}
         {related.length > 0 && (
