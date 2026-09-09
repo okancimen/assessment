@@ -38,9 +38,6 @@ const nextConfig: NextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
-  experimental: {
-    inlineCss: true,
-  },
 };
 
 export default nextConfig;

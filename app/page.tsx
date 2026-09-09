@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import { SUBJECT_LABELS, SUBJECT_DESCRIPTIONS, SUBJECTS } from '@/types'
 import BellCurve from '@/components/landing/BellCurve'
-import TestimonialsCarousel from '@/components/landing/TestimonialsCarousel'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import { BLOG_POSTS } from '@/app/blog/posts'
 import CtaLink from '@/components/ui/CtaLink'
+
+const TestimonialsCarousel = dynamic(() => import('@/components/landing/TestimonialsCarousel'), { ssr: false })
 
 export const metadata: Metadata = {
   title: 'Eduentry — Academic Assessment & Internship Readiness Platform',
