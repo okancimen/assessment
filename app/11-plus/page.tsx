@@ -295,6 +295,23 @@ export default function ElevenPlusPage() {
           </div>
         </section>
 
+        {/* Related reading */}
+        <section className="mb-14">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Related guides</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+ at Home' },
+              { href: '/blog/verbal-reasoning-11-plus-guide', tag: 'Guide', title: 'Verbal Reasoning 11+ Complete Guide' },
+              { href: '/blog/what-is-a-standardised-score', tag: 'Explainer', title: 'What Is a Standardised Score?' },
+            ].map((link) => (
+              <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
+                <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+                <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Start your child&rsquo;s free 11+ practice test</h2>

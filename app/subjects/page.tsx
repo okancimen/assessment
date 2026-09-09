@@ -100,6 +100,22 @@ export default function SubjectsIndexPage() {
           })}
         </div>
 
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Related guides</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              { href: '/blog/what-is-a-standardised-score', tag: 'Explainer', title: 'What Is a Standardised Score?' },
+              { href: '/blog/global-academic-benchmarks-report-2026', tag: 'Research', title: 'Global Academic Benchmarks Report 2026' },
+              { href: '/blog/how-does-your-child-compare-globally', tag: 'Guide', title: 'How Does Your Child Compare Globally?' },
+            ].map((link) => (
+              <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
+                <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+                <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Try a free assessment today</h2>
           <p className="text-indigo-200 mb-8">Takes 5–8 minutes per subject. Instant standardised score and percentile ranking.</p>

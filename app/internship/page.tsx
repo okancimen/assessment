@@ -202,6 +202,23 @@ export default function InternshipLandingPage() {
           </div>
         </section>
 
+        {/* Related reading */}
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-10">
+          <h2 className="text-xl font-bold text-[#1d1d1f] mb-5 tracking-tight">Related guides</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              { href: '/blog/early-internship-child-development-career', tag: 'Research', title: 'Why Early Internships Matter for Career Development' },
+              { href: '/blog/business-work-experience-high-school-uk', tag: 'Guide', title: 'Business Work Experience for UK High School Students' },
+              { href: '/blog/how-to-get-tech-internship-before-university', tag: 'Guide', title: 'How to Get a Tech Internship Before University' },
+            ].map((link) => (
+              <Link key={link.href} href={link.href} className="border border-[#d2d2d7] rounded-xl p-5 hover:border-[#4F46E5]/40 hover:bg-[#eef2ff]/40 transition-colors">
+                <div className="text-xs font-semibold text-[#4F46E5] mb-2">{link.tag}</div>
+                <div className="font-semibold text-[#1d1d1f] text-sm leading-snug">{link.title}</div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* Assessment phases */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
           <h2 className="text-xl font-bold text-[#1d1d1f] mb-5 tracking-tight">What to expect</h2>
