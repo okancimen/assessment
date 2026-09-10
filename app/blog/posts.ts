@@ -1252,6 +1252,82 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/auth/register',
     },
   },
+  {
+    slug: 'nsw-opportunity-class-test-guide',
+    title: 'NSW Opportunity Class Test: Complete Guide for Parents (2026)',
+    shortTitle: 'NSW OC Test: Complete Parent Guide',
+    description: 'Everything parents need to know about the NSW Opportunity Class Placement Test — what it is, how it works, what OC classes involve, the test format, scores, and how to prepare your Year 3 child.',
+    date: '2026-09-11',
+    dateModified: '2026-09-11',
+    readTime: '11 min read',
+    tags: ['NSW Education', 'OC Test', 'Selective Schools', 'Australia', 'Academic Assessment'],
+    faqs: [
+      {
+        q: 'What is the NSW Opportunity Class Placement Test?',
+        a: 'The Opportunity Class (OC) Placement Test is a selective assessment run by NSW Department of Education that determines entry into Opportunity Class programs — special academically enriched classes within regular primary schools for Years 5 and 6. Students sit the test in Year 3 (aged 8–9) for Year 5 entry.',
+      },
+      {
+        q: 'What does the OC test assess?',
+        a: 'The OC Placement Test has three components: Thinking Skills (abstract and spatial reasoning, pattern recognition), Reading (comprehension and vocabulary), and Mathematical Reasoning (applied maths and number sense). The test is designed to assess potential and learning ability rather than curriculum knowledge alone.',
+      },
+      {
+        q: 'How is the OC test scored and what score do I need?',
+        a: 'Each student receives a placement score based on their combined results across the three components. The Department of Education does not publish official cut-off scores as they vary by school and year. In general, high-demand schools in Sydney require scores in the top 5–10% of applicants. The test is norm-referenced, so your child\'s score is relative to all other applicants.',
+      },
+      {
+        q: 'How is OC preparation different from 11+ preparation in the UK?',
+        a: 'The two tests are closely related in structure. Both assess abstract reasoning, reading comprehension and mathematical reasoning — which is why tools like Eduentry, built on the same adaptive IRT methodology, are effective for both. The main difference is timing: the OC test is sat in Year 3, whereas the UK 11+ is sat in Year 6. The earlier age means building foundational reasoning skills matters more than drilling test-specific formats.',
+      },
+      {
+        q: 'How can I practise for the OC test?',
+        a: 'The most effective preparation combines: adaptive reasoning practice that adjusts to your child\'s level (like Eduentry), targeted reading comprehension with varied text types, and mathematical reasoning through word problems rather than rote arithmetic. Start 12–18 months before the test date for meaningful results. Focus on the weakest component first — use a benchmark assessment to identify gaps.',
+      },
+    ],
+    cta: {
+      heading: 'Benchmark your child\'s reasoning ability — free',
+      body: 'Eduentry\'s adaptive assessment covers the same skills as the OC test — abstract reasoning, verbal reasoning and maths — for ages 6–17. Get a standardised score and percentile rank in 20 minutes.',
+      label: 'Start Free Assessment',
+      href: 'https://eduentry.com',
+    },
+  },
+  {
+    slug: 'non-verbal-reasoning-11-plus-guide',
+    title: 'Non-Verbal Reasoning for the 11+: Question Types, Techniques and Free Practice',
+    shortTitle: 'Non-Verbal Reasoning 11+ Guide',
+    description: 'A complete guide to non-verbal reasoning for the 11+ — question types (matrices, series, analogies, codes), proven techniques for each, common mistakes and how to practise effectively online for free.',
+    date: '2026-09-11',
+    dateModified: '2026-09-11',
+    readTime: '10 min read',
+    tags: ['11 Plus', 'Non-Verbal Reasoning', 'Grammar Schools', 'UK Education', 'Academic Assessment'],
+    faqs: [
+      {
+        q: 'What is non-verbal reasoning and why is it in the 11+?',
+        a: 'Non-verbal reasoning (NVR) measures the ability to analyse visual information, recognise patterns, and solve problems using shapes and diagrams — without relying on language. It is included in the 11+ because it assesses underlying cognitive ability independently of English language proficiency or curriculum knowledge, making it a fairer measure of potential for children from diverse backgrounds.',
+      },
+      {
+        q: 'What are the main question types in 11+ non-verbal reasoning?',
+        a: 'The six main NVR question types are: figure matrices (complete a 2x2 or 3x3 grid), series (find the next shape in a sequence), analogies (shape A is to shape B as shape C is to ?), figure classification (find the odd one out), figure codes (decode a letter-shape system), and spatial rotation (identify a rotated or reflected shape). GL Assessment and CEM use slightly different mixes of these types.',
+      },
+      {
+        q: 'How can I help my child improve at non-verbal reasoning?',
+        a: 'The most effective approaches are: regular adaptive practice that adjusts to your child\'s level, deliberate focus on the specific question types they find hardest, and developing a systematic approach to each question type rather than guessing. Spatial reasoning can also be improved through everyday activities — puzzles, building games, origami and pattern-based games all build the underlying skills.',
+      },
+      {
+        q: 'Is non-verbal reasoning something you can practise for, or is it innate?',
+        a: 'NVR ability is partly innate but significantly trainable. Research consistently shows that children who practise NVR question types with systematic feedback improve substantially — typically by 8–15 standardised score points with dedicated preparation over 6–12 months. The key is adaptive practice (questions that adjust to the child\'s level) rather than working through fixed-difficulty papers.',
+      },
+      {
+        q: 'What is a good non-verbal reasoning score for the 11+?',
+        a: 'Most 11+ papers report NVR scores as standardised age scores (SAS) with a mean of 100 and standard deviation of 15. Grammar schools typically require SAS 111–120+ for competitive entry, with the most selective schools wanting 120+. A score of 100 is exactly average for age; 115 is approximately the 84th percentile; 130 is the 98th percentile.',
+      },
+    ],
+    cta: {
+      heading: 'Test your child\'s non-verbal reasoning — free',
+      body: 'Eduentry\'s adaptive 11+ assessment includes non-verbal reasoning alongside verbal reasoning, maths and English. Get an instant standardised score showing exactly where your child stands.',
+      label: 'Start Free 11+ Assessment',
+      href: 'https://eduentry.com',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

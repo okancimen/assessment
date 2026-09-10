@@ -2762,4 +2762,329 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'nsw-opportunity-class-test-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        If you have a child in Year 2 or Year 3 in New South Wales, you have probably heard the phrase &ldquo;OC test&rdquo; mentioned by other parents — often with a mix of urgency and confusion. The NSW Opportunity Class Placement Test is one of the most consequential academic assessments in Australian primary education, yet many families approach it without a clear understanding of what it involves, how it is scored, or what preparation actually works. This guide covers all of it.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        OC classes are, in many ways, Australia&apos;s equivalent of grammar schools — highly selective, academically enriched programs that operate within regular primary schools rather than as separate institutions. The test is sat by Year 3 students (typically aged 8–9) for entry into Year 5, giving families a narrow window to prepare. The stakes are meaningful: research consistently shows that OC placement correlates strongly with later selective high school admission and long-term academic outcomes. Understanding the test — and preparing effectively — is not about gaming the system. It is about giving your child a fair opportunity to show what they are actually capable of.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Are OC Classes?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Opportunity Classes are Year 5 and Year 6 programs run by the NSW Department of Education within regular primary schools. Unlike selective high schools, which are entirely separate institutions, OC classes exist as special streams inside schools that also run mainstream classes. This means a child in an OC class attends the same school as students in regular classes — but follows an enriched curriculum, moves at a faster pace, and is taught alongside other high-ability students.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The program exists across metropolitan Sydney and regional NSW, covering areas including the Central Coast, Hunter Valley, Illawarra, and New England. Approximately 4,200 OC places are made available annually, spread across around 80 schools statewide. Each school hosts one OC class per year level, typically with around 28 students.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The intent of the OC program is to group academically gifted students together so that teachers can pitch the curriculum at a level that challenges rather than bores them. The evidence base for this kind of ability grouping at primary level is positive: students in enriched programs show stronger academic growth than peers of similar ability in mainstream classes, and report higher levels of academic engagement. The two years in an OC class also serve as a bridge between primary school and selective high school — students who succeed in OC are better positioned, on average, for the Year 6 Selective High School Placement Test.
+        </p>
+        <Callout color="indigo">
+          About 4,200 OC places are available annually across approximately 80 NSW schools. Each school hosts one OC class per year level of around 28 students. Competition is highest in metropolitan Sydney, where the ratio of applicants to places can exceed 10:1 at popular schools.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Test Format</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The OC Placement Test is administered once per year, typically in March, when students are in Year 3. Applications open in July of the year before the test — meaning families of current Year 2 students need to be aware of the timeline and submit an application before the test year begins. The test itself is held at a central location, not at the child&apos;s home school.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The test has three components, each separately timed:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet>
+            <strong>Thinking Skills</strong> — Abstract reasoning, spatial pattern recognition, and logical sequences. This component closely resembles non-verbal reasoning tests used in the UK&apos;s 11+, assessing cognitive potential rather than curriculum knowledge. Questions involve identifying rules in shape sequences, completing matrices, and reasoning about spatial relationships.
+          </Bullet>
+          <Bullet>
+            <strong>Reading</strong> — Comprehension passages drawn from a range of text types, including narrative, informational, and persuasive texts. Questions test literal comprehension, inference, vocabulary in context, and the ability to identify an author&apos;s purpose or tone. The passages are pitched above the average Year 3 reading level.
+          </Bullet>
+          <Bullet>
+            <strong>Mathematical Reasoning</strong> — Applied mathematics and number sense, presented through word problems and pattern-based questions rather than straightforward computation. The emphasis is on reasoning through unfamiliar problems rather than recalling practised procedures. Topics include number patterns, measurement, data interpretation, and spatial mathematics.
+          </Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Results are typically released around June or July, several months after the test. Successful applicants receive an offer for Year 5 entry. Families can nominate preferences among OC schools in their area, and placement is allocated by ranked score within geographic catchment zones.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How Scoring Works</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The OC Placement Test is norm-referenced, not criterion-referenced. This is one of the most commonly misunderstood aspects of the test — and it matters enormously for how families should interpret results and set preparation goals.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A criterion-referenced test has a fixed pass mark: if you answer 70% correctly, you pass, regardless of what everyone else scores. A norm-referenced test measures your performance relative to the entire cohort who sat the test. There is no fixed cut-off score. The question is not &ldquo;did my child get enough right?&rdquo; but &ldquo;where does my child rank among all applicants?&rdquo;
+        </p>
+        <Callout color="amber">
+          The NSW Department of Education does not publish official cut-off scores for OC entry, because cut-offs are not fixed — they shift each year based on the performance of that year&apos;s applicant cohort. A score that would have secured an OC place in one year might not in another. What determines placement is your child&apos;s rank relative to other applicants, within their geographic catchment.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4 mb-4">
+          In practical terms, the general guidance from families who have navigated the process is as follows: for most OC schools across NSW, a score placing a child in approximately the top 10% of applicants is competitive. For high-demand schools in metropolitan Sydney — particularly in inner western suburbs, the north shore, and the eastern suburbs — the effective threshold is often closer to the top 5%. These are rough guides only, not official figures.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          What this norm-referenced structure means practically is that preparation aimed at reaching a fixed score misses the point. The goal is to ensure your child performs closer to their genuine cognitive ceiling on test day — which requires systematic preparation, not just familiarity with the test format.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How It Compares to the UK 11+</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Families who have experience with the UK&apos;s 11+ grammar school admissions test will find the OC test structurally familiar. Both assessments test the same three cognitive domains — abstract and non-verbal reasoning, reading comprehension, and mathematical reasoning. Both are heavily norm-referenced, with placement determined by ranked performance rather than a fixed pass mark. Both reward sustained preparation over months rather than last-minute cramming.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The key difference is timing. The OC test is sat in Year 3, when children are typically 8–9 years old. The UK 11+ is sat in Year 6, when children are typically 10–11. This two-to-three-year difference has significant implications for how preparation should be approached. At 8–9, children are still building foundational reasoning skills. Drilling test-specific formats — the approach that can work for older children who already have solid underlying skills — is less effective at this age and can be counterproductive if it replaces genuine cognitive development with surface-level familiarity.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The implication: preparation for the OC test should focus on building the underlying skills — spatial reasoning, logical thinking, reading fluency across varied text types, and flexible mathematical thinking — rather than memorising question formats. The skills transfer directly to the 11+, and indeed to any academically selective assessment. Families who have prepared a child for one often find the other more familiar than expected.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Preparation Strategy</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Effective OC preparation starts earlier than most families expect. Given that the test is sat in March of Year 3, meaningful preparation should ideally begin in Year 2 — at least 12 to 18 months before the test. This is not about spending that entire time drilling practice papers. It is about building the reasoning skills that the test measures, which take time to develop and cannot be rushed in the final weeks.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The first step is identifying where your child&apos;s skills currently stand. Without a baseline, preparation is unfocused — you end up spending equal time on strengths and weaknesses, which is inefficient. A standardised benchmark assessment early in the preparation period tells you which of the three components needs the most attention.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check>
+            <strong>Thinking Skills preparation:</strong> Build spatial reasoning through non-verbal puzzles, pattern games, and visual reasoning exercises. Use adaptive practice tools that adjust difficulty in real time — fixed-difficulty workbooks quickly become either too easy or too hard. Avoid rote drilling of specific question formats; the test changes enough year to year that pattern recognition of question types is less valuable than genuine abstract reasoning ability.
+          </Check>
+          <Check>
+            <strong>Reading preparation:</strong> Wide, varied reading is more valuable than targeted comprehension worksheets. Children who read non-fiction — newspaper articles, science texts, history books, nature writing — develop the inferential and vocabulary skills the OC Reading component tests. Fiction alone is insufficient. Aim for a mix of text types, and discuss what your child has read: ask &ldquo;why do you think the author wrote this?&rdquo; and &ldquo;what does this word tell you about how the character is feeling?&rdquo;
+          </Check>
+          <Check>
+            <strong>Mathematical Reasoning preparation:</strong> Word problems, number puzzles, and mental arithmetic exercises develop the flexible mathematical thinking the OC test requires. Pure worksheet arithmetic does not. Focus on problems that require reading carefully, identifying what is being asked, and choosing the right approach — rather than recognising a procedure and applying it mechanically.
+          </Check>
+          <Check>
+            <strong>Use adaptive digital tools:</strong> Eduentry&apos;s adaptive assessment platform covers abstract reasoning and mathematical reasoning with difficulty that adjusts to your child&apos;s actual level in real time. This produces a more accurate picture of ability than fixed-difficulty practice papers, and ensures your child is always working at the productive edge of their capability rather than marking time on questions that are too easy.
+          </Check>
+          <Check>
+            <strong>Consistent short sessions beat occasional long sessions:</strong> Twenty to thirty minutes of focused practice four or five times per week produces better outcomes than two-hour sessions on weekends. Cognitive skill development is cumulative and benefits from regular, spaced practice.
+          </Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Happens If They Don&apos;t Get In?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          It is worth framing this clearly. The OC test is not the last train. Many students who do not receive an OC offer go on to succeed in the NSW Selective High School Placement Test at Year 6 — which is, for most academic and career pathways, the more consequential of the two assessments. Selective high schools offer six years of academic enrichment, compared to two years in an OC class. The Year 6 selective test is a second opportunity, and often a more significant one.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Families who benchmark their child early — in Year 2 or Year 3 — regardless of the OC test outcome, gain something valuable: they know exactly where their child stands relative to the selective cohort. If the OC test result is not successful, that information reframes the situation constructively. There are now three years before the Year 6 selective test. Three years is a meaningful amount of time. Knowing where the gaps are in Year 3 and addressing them systematically gives a child a genuinely stronger preparation for Year 6 than most of their peers will have.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The families who struggle most are not those whose children miss the OC cut-off — they are the ones who discover the gap at Year 5 or 6, when time for systematic preparation has largely elapsed.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Conclusion: Early Benchmarking Changes Outcomes</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most useful thing a parent can do — before buying workbooks, enrolling in tutoring, or worrying about cut-off scores — is to understand where their child actually stands. Not relative to their class, not relative to their school, but relative to the population of children who sit the OC test. That information shapes every subsequent decision: how much preparation is needed, which component to prioritise, whether OC is a realistic goal, and what to do if it is not.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A standardised assessment in Year 2 or early Year 3 produces a reasoning profile — not a prediction, but a current picture of abstract reasoning, verbal comprehension, and mathematical thinking. That picture, revisited every few months during the preparation period, tells you whether the preparation is working and where to redirect effort.
+        </p>
+        <Callout color="emerald">
+          The OC test assesses the same reasoning skills as international benchmarks like PISA and CAT4. Eduentry&apos;s adaptive assessment is designed around the same framework — giving you a PISA-aligned percentile for your child in 20 minutes, free. You will know which of the three OC components needs the most attention before you spend a day on preparation.
+        </Callout>
+      </section>
+    </>
+  ),
+
+  'non-verbal-reasoning-11-plus-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Many parents find non-verbal reasoning the most confusing part of 11+ preparation. There are no words to read, no equations to solve — just grids of shapes, sequences of patterns, and abstract figures that seem to follow no obvious rule. It looks unlike anything children encounter at school, which makes it feel unteachable. It is not. Non-verbal reasoning is one of the most systematically improvable 11+ skills, and children who practise with the right approach make significant, measurable gains. This guide covers every question type, the technique that works for each, the mistakes that hold children back, and how to build effective practice that actually transfers to real test performance.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is Non-Verbal Reasoning?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Non-verbal reasoning (NVR) is the ability to analyse visual information, identify patterns, and solve problems using shapes, diagrams, and spatial relationships — without relying on written or spoken language. It is a measure of fluid intelligence: the capacity to reason through novel problems rather than recall learned knowledge.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NVR is included in the 11+ because it offers a more equitable measure of cognitive potential than verbal or mathematical tests alone. A child from a home where English is not the first language, or one who has had less exposure to books and formal academic preparation, is not disadvantaged in NVR in the same way they might be in a verbal reasoning test. It levels the playing field — or at least tilts it less steeply.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The 11+ NVR paper is used by both major exam boards: GL Assessment and CEM. GL Assessment tends to use a dedicated NVR paper as part of its multi-paper format. CEM integrates NVR questions within a mixed reasoning paper. Both formats assess the same underlying skills, but the experience of the test — and the weighting of NVR in the final score — differs between exam boards.
+        </p>
+        <Callout color="indigo">
+          Non-verbal reasoning is one of the most trainable 11+ skills. Studies consistently show that children who practise NVR question types with systematic, adaptive feedback improve by 8–15 standardised score points — a meaningful gain that can move a child from below a grammar school threshold to comfortably above it.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Six Question Types</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          There are six main question types in 11+ NVR. Each type follows its own internal logic and responds best to a specific technique. Children who learn the technique for each type — rather than approaching every question by intuition — improve faster and make fewer errors under time pressure.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Figure Matrices</h3>
+        <p className="text-gray-700 leading-relaxed mb-3">
+          A 2×2 or 3×3 grid of shapes with one cell missing. The task is to identify the missing shape from a set of options. The grid follows a consistent rule — each row and column relates to the others in a specific way.
+        </p>
+        <ul className="space-y-2 mb-6">
+          <Bullet>Identify the rule operating in the top row first: is the shape rotating? Gaining or losing elements? Changing shading? Changing size?</Bullet>
+          <Bullet>Check that the same rule operates in the second row. If it does, the rule is confirmed.</Bullet>
+          <Bullet>Apply the confirmed rule to complete the missing cell, then verify your answer also satisfies the column relationships.</Bullet>
+          <Bullet>If two rules seem possible, test both against all rows and columns — only one will be consistent throughout the whole grid.</Bullet>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Figure Series</h3>
+        <p className="text-gray-700 leading-relaxed mb-3">
+          A sequence of four or five shapes in which each shape relates to the next by a consistent rule. The task is to identify what comes next in the sequence.
+        </p>
+        <ul className="space-y-2 mb-6">
+          <Bullet>Look for ONE change between each consecutive pair of shapes rather than trying to see the whole pattern simultaneously.</Bullet>
+          <Bullet>Common changes: rotation (clockwise or anticlockwise by a consistent number of degrees), addition or subtraction of elements, change in shading, change in size.</Bullet>
+          <Bullet>Once you identify the change between shapes 1 and 2, check it holds between shapes 2 and 3, then 3 and 4. If it does, apply it to predict shape 5.</Bullet>
+          <Bullet>Watch for alternating patterns — the rule may apply to every other shape rather than every consecutive pair.</Bullet>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Figure Analogies</h3>
+        <p className="text-gray-700 leading-relaxed mb-3">
+          Shape A relates to shape B in a specific way. Shape C is given; the task is to find shape D that relates to C in the same way that B relates to A.
+        </p>
+        <ul className="space-y-2 mb-6">
+          <Bullet>Describe the transformation from A to B in plain language before looking at the answer options: &ldquo;It rotated 90 degrees clockwise, and the shading changed from black to white.&rdquo;</Bullet>
+          <Bullet>Apply that exact transformation to shape C. The answer should follow mechanically from your description.</Bullet>
+          <Bullet>If your predicted answer does not appear in the options, revisit your description of the A→B transformation — you have missed an element of the rule.</Bullet>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Figure Classification (Odd One Out)</h3>
+        <p className="text-gray-700 leading-relaxed mb-3">
+          Five shapes are shown. Four share a common property; one does not. The task is to identify the odd one out.
+        </p>
+        <ul className="space-y-2 mb-6">
+          <Bullet>Do not try to identify the odd one out by intuition. Instead, find what the majority (four shapes) have in common.</Bullet>
+          <Bullet>Check systematically: number of sides, presence and type of shading, orientation, inner elements, symmetry.</Bullet>
+          <Bullet>The common property must apply to exactly four shapes and exclude exactly one.</Bullet>
+          <Bullet>If you find a property shared by only three shapes, keep looking — the grouping must be four, not three.</Bullet>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">5. Figure Codes</h3>
+        <p className="text-gray-700 leading-relaxed mb-3">
+          Each of three or four shapes is paired with a two-letter code. A new shape is given; the task is to identify its code from the options provided. Each letter in the code corresponds to one property of the shape.
+        </p>
+        <ul className="space-y-2 mb-6">
+          <Bullet>Decode each letter separately. Never try to decode both letters simultaneously.</Bullet>
+          <Bullet>For the first letter: look at what all shapes sharing the same first letter have in common. This is what the first letter encodes (usually the outer shape or basic form).</Bullet>
+          <Bullet>For the second letter: look at what shapes sharing the same second letter have in common (usually shading, inner element, or pattern).</Bullet>
+          <Bullet>Apply both decoded rules to the new shape to construct its code. Never guess figure codes — always decode systematically.</Bullet>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">6. Spatial Rotation</h3>
+        <p className="text-gray-700 leading-relaxed mb-3">
+          A shape is shown alongside three or four answer options, some of which are rotations of the original and some of which are reflections or entirely different shapes. The task is to identify the correctly rotated version.
+        </p>
+        <ul className="space-y-2 mb-6">
+          <Bullet>Identify one distinctive feature of the original shape — a notch, a protruding element, a dot, an asymmetry — before looking at the options.</Bullet>
+          <Bullet>Track where that distinctive feature moves under the stated rotation. Use this as your anchor point rather than trying to visualise the whole shape rotating.</Bullet>
+          <Bullet>Eliminate options where the distinctive feature is in the wrong position. Usually only one option survives.</Bullet>
+          <Bullet>Remember that rotation preserves the shape; reflection reverses it. If an answer option looks like a mirror image, it is a reflection — not a rotation — and should be eliminated.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Common Mistakes and How to Fix Them</h2>
+        <ul className="space-y-3 mb-4">
+          <Check>
+            <strong>Rushing figure matrices without identifying the rule first</strong> — leads to guessing from the options rather than predicting the answer. Fix: always articulate the rule in words before consulting the answer options. If you cannot state the rule, you have not found it yet.
+          </Check>
+          <Check>
+            <strong>Confusing rotation with reflection</strong> — these look similar when a shape has partial symmetry. Fix: practise with physical objects; hold a shape up to a mirror and observe the difference between what you see in the mirror and what you see when you rotate the object. The distinction becomes intuitive with practice.
+          </Check>
+          <Check>
+            <strong>Spending too long on figure series questions</strong> — series questions that require tracking multiple simultaneous changes can be very time-consuming. Fix: if you have not identified the rule within approximately 30 seconds, mark the question and return to it at the end. Running out of time on easy questions because you were stuck on a hard one is a preventable error.
+          </Check>
+          <Check>
+            <strong>Guessing figure codes</strong> — more than any other question type, codes reward systematic decoding and punish guessing. A child who guesses codes will score at chance (20% with five options). Fix: drill the decode-each-letter-separately technique until it is automatic, even under time pressure.
+          </Check>
+          <Check>
+            <strong>Not verifying the answer against all options</strong> — finding an answer that seems to fit and immediately marking it, without checking whether another option fits better. Fix: always apply your rule to your chosen answer and confirm it is consistent before moving on. This takes five seconds and prevents a significant fraction of errors.
+          </Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">GL Assessment vs CEM: What&apos;s the Difference?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The two major 11+ exam boards in England handle non-verbal reasoning differently, and knowing which your area uses is important before you invest in practice materials.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          GL Assessment — used by grammar schools in Kent, Buckinghamshire, Hertfordshire, Lincolnshire, and most other selective areas — typically uses a dedicated NVR paper as part of a multi-paper format. The NVR paper contains questions across all six types described above, with clear section breaks. The time per question is predictable and preparation materials are widely available. If your area uses GL Assessment, purchasing dedicated GL NVR practice papers is straightforward and effective.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          CEM (Centre for Evaluation and Monitoring) — used by some grammar schools in Birmingham, Durham, and parts of the North East — integrates NVR questions within a mixed verbal and non-verbal paper, with no advance warning of which type of question comes next. This means children need to be comfortable switching between verbal and non-verbal tasks rapidly. CEM also tends to use a narrower range of NVR question types than GL, with matrices and series featuring most prominently. Check with your target school or local grammar school association which exam board they use before selecting practice materials.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Practise Effectively</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most common preparation mistake is treating all six NVR question types as equally important and practising them in equal proportion. They are not equally important — and, more relevantly, your child is almost certainly stronger in some types than others. Effective preparation starts with a diagnostic.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check>
+            <strong>Start with a diagnostic assessment:</strong> Before buying workbooks or starting a practice schedule, find out which question types your child finds hardest. A good adaptive tool (like Eduentry) will surface this automatically. A manual diagnostic can be done by working through one set of each question type and noting accuracy and time per type.
+          </Check>
+          <Check>
+            <strong>Prioritise adaptive practice over fixed-difficulty papers:</strong> Fixed-difficulty practice papers quickly become too easy as a child improves — they stop producing the cognitive challenge needed for continued gains. Adaptive tools adjust difficulty in real time, keeping your child in the productive zone of challenge. Eduentry adjusts NVR question difficulty automatically and reports scores on the same standardised age score (SAS) scale as GL Assessment.
+          </Check>
+          <Check>
+            <strong>Short daily sessions outperform long weekend sessions:</strong> Twenty to thirty minutes of focused NVR practice five days per week produces better results than a two-hour session on Saturday. Cognitive skill consolidation happens between practice sessions, not just during them. Spacing matters.
+          </Check>
+          <Check>
+            <strong>Use physical and everyday activities to build spatial skills:</strong> Tangrams, Rubik&apos;s cube, tessellation puzzles, origami, and construction toys all develop the spatial reasoning that underlies NVR performance. These are not substitutes for test practice, but they build the foundational capacity that makes test practice effective.
+          </Check>
+          <Check>
+            <strong>Track scores over time and expect gradual improvement:</strong> NVR gains are rarely sudden. Expect measurable improvement within four to six weeks of consistent practice, with significant gains over three to six months. If scores are not improving after six weeks of consistent practice, the question difficulty may be pitched incorrectly — either too easy (not challenging enough to drive improvement) or too hard (producing frustration and guessing rather than learning).
+          </Check>
+        </ul>
+        <Callout color="emerald">
+          Eduentry&apos;s adaptive 11+ assessment includes non-verbal reasoning with automatic difficulty adjustment. It reports a standardised age score (SAS) on the same scale as GL Assessment — so you know exactly where your child stands before the real test. The full benchmark assessment is free and takes approximately 20 minutes.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Score Do You Need?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Most 11+ NVR papers are reported as standardised age scores (SAS) — a scale where 100 is the population mean for age and each 15 points represents one standard deviation. This allows direct comparison between children of different ages, and between scores across different test sittings.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Grammar school entry benchmarks, as a general guide:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>SAS 111+</strong> — competitive for most grammar schools; approximately the 77th percentile for age</Bullet>
+          <Bullet><strong>SAS 115</strong> — approximately the 84th percentile; comfortably above threshold for most grammar schools</Bullet>
+          <Bullet><strong>SAS 120</strong> — approximately the 91st percentile; competitive for selective grammar schools</Bullet>
+          <Bullet><strong>SAS 130+</strong> — approximately the 98th percentile; highly competitive for the most selective schools</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          It is important to note that most 11+ systems use a combined score across all papers — verbal reasoning, non-verbal reasoning, maths, and (in some areas) English. A strong NVR score can compensate for a weaker verbal score in systems that average across all components. Knowing your child&apos;s relative strengths across all domains — not just NVR — allows you to identify where targeted effort will produce the biggest improvement in their overall profile.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Conclusion</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Non-verbal reasoning rewards systematic preparation in a way that few other academic skills do. Unlike English or mathematics, it does not require extensive background knowledge or years of curriculum study. What it requires is trained pattern recognition — knowing the six question types, applying the right technique for each, and practising consistently at the right level of difficulty.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The practical framework is straightforward: measure first (use a standardised benchmark to identify which question types are weakest), focus preparation on those types (not the ones your child already finds easy), practise adaptively (ensure difficulty tracks your child&apos;s improving level), and track progress (expect meaningful improvement within six weeks of consistent practice).
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The children who sit the 11+ and find the NVR paper manageable are not more gifted — they are better prepared. That preparation is available to any child who starts early enough and practises with the right approach.
+        </p>
+      </section>
+    </>
+  ),
 }
