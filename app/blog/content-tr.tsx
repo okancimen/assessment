@@ -1586,6 +1586,163 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Eylül 2026&apos;da OECD, PISA 2025 — Uluslararası Öğrenci Değerlendirme Programı — sonuçlarını yayımladı ve bu sonuçlar eğitim bakanlarını, okul yöneticilerini ve ebeveynleri şoke etti. Değerlendirme tarihinde ilk kez, OECD ülkeleri üç temel alanda aynı anda en düşük ortalama performansı kaydetti: matematik, okuma ve fen bilimleri. 91 ülke ve ekonomide 760.000&apos;den fazla öğrenci katıldı; bu sonuçlar dünya genelinde 33 milyon 15 yaşlı genci temsil ediyor. Çalışmanın bu ölçeği, sonuçları istatistiksel gürültü olarak geçiştirmeyi imkânsız kılıyor.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu geçici bir dip değil. Art arda gelen PISA döngülerinde biriken, pandemi yıllarıyla şiddetlenen ve gençlerin okuma, öğrenme ve teknolojiyle etkileşim biçimlerindeki yapısal değişimlerle derinleşen on yıllık bir eğilimin hızlanmasıdır. OECD&apos;nin kendi araştırmacıları, bu sonuçları dikkat dağınıklığına, yüzeysel katılıma ve eleştirel olmayan yapay zeka kullanımına izin vererek her çocuğun yetişkin yaşamında başarılı olmak için ihtiyaç duyduğu temel becerileri aşındıran eğitim sistemleri için bir &ldquo;uyarı işareti&rdquo; olarak nitelendiriyor.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Ebeveynler için anlık soru soyut değildir. Kişiseldir. Bu sonuçlar çocuğunuz için ne anlama geliyor? Ulusal ortalamalar düşüyorsa, çocuğunuz bu ortalamalar içinde nerede duruyor — ve ne yapabilirsiniz? Bu makale PISA 2025 bulgularını alan alan inceliyor, verilerin aileler için gerçekte ne anlama geldiğini açıklıyor ve çocuğunuzun bireysel konumunu anlamanın neden şu anda her zamankinden daha önemli olduğunu ortaya koyuyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Nedir ve Neden Önemlidir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA, 2000 yılından bu yana her üç yılda bir gerçekleştirilen OECD&apos;nin Uluslararası Öğrenci Değerlendirme Programı&apos;dır. Çoğu gelişmiş ülkede zorunlu eğitimin sonuna yaklaşmakta olan 15 yaşındaki öğrencileri matematik, okuma okuryazarlığı ve fen bilimlerinde test eder. 2025&apos;te 91 ülke ve ekonomi katıldı; sonuçlar dünya genelinde yaklaşık 33 milyon öğrenciyi temsil ediyor. Hiçbir eğitim araştırması bu ölçeğe veya metodolojik titizliğe yaklaşamıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA önemlidir çünkü tek gerçek küresel ölçüttür. Ulusal sınavlar size çocukların bir ülkenin kendi sistemi içinde nasıl karşılaştığını söyler — faydalı ama sınırlı. PISA, her öğrenciye aynı koşullarda aynı soruları sorar ve her puanı aynı uluslararası ölçeğe yerleştirir. Singapur hesaplamalı problem çözmede 563 aldığında ve OECD ortalaması 500 olduğunda, bu fark gerçek ve ölçülebilirdir. Eğitim kararları alan ebeveynler için PISA, ulusal bir sistemin — ve dolayısıyla çocuklarının eğitiminin — küresel bağlamda nerede durduğu için tek güvenilir referans noktasını sunuyor.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Matematik Krizi: On Yılda 22 Puan Kayıp</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD ortalama matematik puanları 2015-2025 arasında 22 puan düştü. Bunun pratik anlamını kavramak için: araştırmacılar, yaklaşık 20 PISA puan puanının yaklaşık bir yıllık okula gitmeye karşılık geldiğini tahmin ediyor. 22 puanlık bir düşüş, OECD ülkelerinde ortalama 15 yaşlı bir öğrencinin, on yıl önceki muadilinin gerisinde, bir yılı aşan bir matematiksel düzeyde performans sergilediği anlamına geliyor. Bu bir ölçüm hatası değildir. Matematiksel başarıda sistemik, çok uluslu bir çöküştür ve her çocuğunun sayısal akıcılığı ödüllendiren bir iş piyasasına gireceğini düşünen her ebeveyn için endişe verici olmalıdır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En iyi performans gösterenler Doğu Asya&apos;da yoğunlaşmaya devam ediyor. Çin yetki alanları — Pekin, Şanghay, Jiangsu ve Zhejiang, topluca B-S-J-Z olarak bilinir — ve Singapur, OECD ortalamasının çok üzerinde bir farkla dünyaya liderlik etmeyi sürdürüyor. Estonya, Japonya, Güney Kore, Makao (Çin), Çin Taipei ve Birleşik Krallık da küresel ilk onda yer alıyor. Bu eğitim sistemleri yüksek beklentiler, güçlü öğretmen kalitesi, matematiği ciddiye alan bir kültür ve özellikle okul saatlerinde görece sınırlı dijital dikkat dağınıklığıyla karakterize ediliyor.
+        </p>
+        <Callout color="amber">
+          <strong>Bir yıllık okul ölçütü:</strong> Her 20 PISA puanı yaklaşık bir yıllık okula gitmeye eşit. OECD&apos;nin 2015&apos;ten bu yana 22 puanlık matematik düşüşü, ortalama bir çocuğun bugün yetişkinliğe 2015&apos;teki ortalama çocuktan bir yılı aşan matematiksel kapasiteyle girdiği anlamına geliyor — okula aynı sayıda yıl gitmesine rağmen.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Okuma Çöküşü: 28 Puan — ve Yeni Bir Okuma Körlüğü</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okuma düşüşü matematikten daha dik ve sonuçları daha geniş kapsamlıdır. OECD ortalama okuma puanları 2015-2025 arasında 28 puan düştü — yaklaşık bir buçuk yıllık okul eğitimine eşdeğer. Ancak ham sayı sorunu eksik yansıtıyor çünkü PISA 2025 aynı zamanda gençlerin nasıl okuduğunda nitel bir değişimi de ortaya koydu. &ldquo;Aceleci okuma&rdquo; gösteren öğrencilerin payı — hızı kavramanın önüne koyarak hızlı ama hatalı okumak — 2018-2025 arasında neredeyse iki katına çıkarak OECD öğrencilerinin %9&apos;una ulaştı. Bunlar teknik olarak okuryazar hale gelen ama anlamlı herhangi bir anlamda etkili okuyucu olmayan çocuklardır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA öğrencilere karşılaştıkları bilgileri nasıl değerlendirdiklerini sorduğunda, yalnızca %46&apos;sı kaynak güvenilirliğini kontrol ETTİKLERİNİ VE iddiaları değerlendirirken bilimsel kanıtı tercih ettiklerini bildirdi. Ek %37 kaynakları kontrol eder ama nihayetinde bilimsel kanıt yerine sağduyuya dayanır. %11 kaynakları kontrol etmeksizin bilimsel otoriteye güvenir. Ve %5 her ikisini de yapmaz. Başka bir deyişle, OECD ülkelerindeki 15 yaşlıların yarısından azı, yapay zeka çıktıları ve viral dezenformasyonun hâkim olduğu bir bilgi ortamında gezinmek için gereken değerlendirme alışkanlıklarına sahip.
+        </p>
+        <Callout color="rose">
+          <strong>OECD öğrencilerinin yalnızca %46&apos;sı</strong> hem kaynak güvenilirliğini kontrol eder hem de bilgi değerlendirmede bilimsel kanıtı tercih eder. Yapay zekanın saniyeler içinde ikna edici ama tamamen uydurma metin ürettiği bir çağda, bu en yüksek bahislere sahip temel beceri açığıdır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Fen Bilimleri: Karışık Bir Tablo, Gerçek Parlak Noktalarla</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Fen bilimleri, 2015&apos;ten bu yana OECD ülkelerinde daha ılımlı bir genel düşüş gösterdi; bu da onu üç temel alan arasında en az zarar gören alan haline getirdi — genel eğilim düşük olduğunda &ldquo;en az zarar gören&rdquo; övgüsünün sınırlı olmasına rağmen. Ülke düzeyinde daha ilginç bir tablo var. Dört ülke — Türkiye, Birleşik Krallık, Slovak Cumhuriyeti ve Kosta Rika — 2022 PISA döngüsünden bu yana fen puanlarında ölçülebilir bir iyileşme gösterdi. Bu, belirtilen ülkelerde eğitimin doğru yönde ilerlediğini gösteren gerçek bir olumlu sinyaldir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 ayrıca ilk kez yeni bir alan tanıttı: hesaplamalı problem çözme. Bu, öğrencilerin algoritmalar, veriler ve mantıksal dizileri içeren problemler hakkında sistematik düşünme becerilerini değerlendirdi. OECD öğrencilerinin yaklaşık üçte ikisi Seviye 3 veya üzerine ulaşırken, yaklaşık dörtte biri Seviye 5-6&apos;ya ulaşarak yüksek düzey yetkinlik gösterdi. En yüksek puanı alan yetki alanları Makao (Çin) 572, Singapur 563 ve Çin B-S-J-Z 560 olurken OECD ortalaması 500 oldu.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sınıfta Yapay Zeka: Çift Kenarlı Bir Kılıç</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025, öğrenciler arasındaki yapay zeka kullanımını sistematik olarak inceleyen ilk döngüdür ve bulgular, çoğu yorumcunun önerdiğinden daha nüanslı — ve daha endişe vericidir. OECD öğrencilerinin %46&apos;sı haftalık veya daha sık yapay zeka sohbet robotları kullandığını bildiriyor. Bu, gelişmiş dünyadaki 15 yaşlıların neredeyse yarısının yapay zeka araçlarına rutin olarak başvurduğu anlamına geliyor. PISA yapay zeka kullanımı ile akademik performans arasındaki ilişkiyi incelediğinde, belirli bir kullanım kategorisi için çarpıcı bir olumsuz ilişki buldu: belirli okul görevleri için yapay zeka kullanmak.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Metinleri özetlemek, yazılı çalışmalar yazmak veya araştırma yapmak için düzenli olarak yapay zeka kullanan öğrenciler, bu görevler için yapay zeka kullanmayan öğrencilere kıyasla fen bilimlerinde yaklaşık 20 puan daha az alıyor. Bu, aynı görevleri kendi bilişsel çabaları aracılığıyla gerçekleştiren akranlarının yaklaşık bir tam yıl gerisinde. Mekanizmanın anlaşılması zor değil: yapay zeka bilgi ve beceriyi oluşturan bilişsel çalışmayı yaptığında, öğrenci devre dışı bırakılıyor. Görev tamamlanıyor ama öğrenme gerçekleşmiyor.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>OECD öğrencilerinin %46&apos;sı</strong> haftalık veya daha sık yapay zeka sohbet robotları kullanıyor — yapay zekayı ergen akademik yaşamının standart bir özelliği haline getiriyor.
+          </Bullet>
+          <Bullet>
+            <strong>~20 puan daha düşük fen puanları</strong>, özetleme, taslak oluşturma ve araştırma gibi belirli okul görevleri için yapay zeka kullanımıyla ilişkilendiriliyor — yapmayan akranların yaklaşık bir yıl gerisinde.
+          </Bullet>
+          <Bullet>
+            <strong>Genel yapay zeka kullanımı</strong> öğrenme keşfi için önemli olumsuz bir performans ilişkisi göstermiyor — zarar kullanımın kendisinde değil, ikamede yatıyor.
+          </Bullet>
+          <Bullet>
+            <strong>Öğrencilerin %28&apos;i</strong> sınıf arkadaşlarının fen derslerinin çoğunda veya tamamında dijital cihazlarla dikkatlerinin dağıldığını bildiriyor.
+          </Bullet>
+        </ul>
+        <Callout color="amber">
+          <strong>Yapay zeka ev ödevi tuzağı:</strong> PISA 2025, belirli okul görevleri için yapay zeka kullanmanın — özetleme, taslak oluşturma, araştırma — işi kendileri yapan akranların tam bir yıl gerisinde kalmakla ilişkili olduğunu ortaya koydu. Kısayol verimli hissettiriyor. Bilişsel maliyet görünmez — ta ki bir sınav puanında ortaya çıkana kadar.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Aidiyet Duygusu: Okul Başarısının Gizli Faktörü</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025&apos;teki puan düşüşlerinden daha az medya ilgisi gören ama ebeveynlerin anlaması için eşdeğer öneme sahip bir bulgu var: aidiyetin akademik sonuçlardaki rolü. OECD öğrencilerinin %76&apos;sı okullarına ait hissettiklerini bildiriyor — ve bu rakam 2022&apos;den bu yana iyileşmiş durumda. İspanya, %90 ile OECD&apos;de en yüksek aidiyet duygusunu kaydederken, Danimarka, Polonya, İtalya ve Litvanya en düşük oranları bildirdi; öğrencilerin %64 veya daha azı ait hissettiğini ifade etti.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cinsiyet farkı dikkat çekici: kızlar OECD ülkelerinde tutarlı olarak erkeklerden daha zayıf bir okul aidiyeti duygusu bildiriyor. Okuluna ait hissetmeyen bir öğrenci, öğrenmeyle derinlemesine meşgul olma, zorlandığında yardım isteme veya güçlükle mücadele etme konusunda önemli ölçüde daha az istekli oluyor — bunların tümü akademik büyümeyle güçlü biçimde ilişkilendirilen davranışlar.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bu Aileler İçin Ne Anlama Geliyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025&apos;in genel tablo, Türkiye için hem iyi hem de dikkat gerektiren haberler içeriyor. İyi haber gerçek: Türkiye, 2022 PISA döngüsünden bu yana fen puanlarını iyileştiren dört OECD ülkesinden biri. Bu, Türk eğitiminin bu alanda doğru yönde ilerlediğinin anlamlı bir göstergesi.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ama dikkat gerektiren konular da gerçek. Okuma ve matematik puanları küresel eğilimlerle uyumlu olarak düşmeye devam etti. Yapay zeka performans açığı özellikle ilgili: akıllı telefon kullanımının yüksek olduğu ve yapay zeka araçlarının okul çalışmalarında yaygınca kullanıldığı günümüzde, en fazla düşen beceriler — eleştirel okuma, kaynak değerlendirme, sürdürülen matematiksel akıl yürütme — tam da çocukların yapay zeka dolu bir dünyada en çok ihtiyaç duydukları becerilerdir. Ebeveynler için pratik çıkarım şudur: ülke sıralamaları ulusal başarılardır, bireysel garantiler değil. Bir ülkedeki öğrenciler arasındaki çeşitlilik muazzamdır — on yıllık okul eğitimine eşdeğer 200 veya daha fazla PISA puanı farkı — ve ulusal sonuçlar tek tek çocuklar hakkında size neredeyse hiçbir şey söylemez.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzu Değerlendirmek Neden Hiç Bu Kadar Önemli Olmadı</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA ulusal ortalamaları gösterir. Bireysel çocuklar hakkında size hiçbir şey söyleyemez. Bir ebeveyn olarak, OECD genelindeki 22 puanlık matematik düşüşü bağlamdır, cevap değil. Aileniz için önemli olan soru, çocuğunuzun bu dağılım içinde nerede durduğu ve aldıkları eğitimin PISA 2025&apos;in en risk altında gösterdiği becerileri inşa edip etmediğidir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bireysel değerlendirme olmadan, tüm önemli eğitim kararları — özel dersler, okul seçimi, ders seçimi, üniversite hedefleri — en önemli bilgi olmadan alınır: çocuğunuzun gerçekte nerede durduğu.
+        </p>
+        <Callout color="indigo">
+          PISA size sistemler hakkında bilgi verir. Eduentry size çocuğunuz hakkında bilgi verir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Eduentry ile Çocuğunuzu Değerlendirin: Ücretsiz, Bilime Dayalı Kıyaslama</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry, PISA&apos;nın sağlayamadığı bireysel düzeyde bilgiyi ebeveynlere vermek için özel olarak tasarlanmış uyarlanabilir bir değerlendirme platformudur. Her çocuğu, önemli olan testlerle aynı uluslararası ölçeğe yerleştirmek için PISA&apos;nın ve büyük uluslararası değerlendirmelerin altında yatan psikometrik metodoloji olan Madde Yanıt Teorisi&apos;ni (MYT) kullanır. Değerlendirme her çocuğun yanıtlarına gerçek zamanlı olarak uyum sağlar; performansa göre daha zor veya daha kolay sorular sorar, böylece 6-17 yaş aralığında tam yetenek spektrumunda doğru biçimde kalibre eder.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check>
+            <strong>Matematik</strong> — PISA matematik çerçevesiyle uyumlu sayısal akıl yürütme ve problem çözme
+          </Check>
+          <Check>
+            <strong>İngilizce</strong> — PISA okuma çerçevesiyle aynı değerlendirici çerçeveyi kullanan okuma anlama ve dil becerileri
+          </Check>
+          <Check>
+            <strong>Sözel akıl yürütme</strong> — dile uygulanan mantıksal düşünme, tüm derslerde akademik potansiyelin güçlü bir öngörücüsü
+          </Check>
+          <Check>
+            <strong>Sözel olmayan akıl yürütme</strong> — dil geçmişinden bağımsız soyut ve uzamsal akıl yürütme
+          </Check>
+          <Check>
+            <strong>Küresel yüzdelik dilim sıralaması</strong> — çocuğunuzu PISA ile aynı uluslararası ölçeğe yerleştirir
+          </Check>
+          <Check>
+            <strong>Ücretsiz, kayıt gerekmez</strong> — tam kıyaslama değerlendirmesi yaklaşık 20 dakika sürer
+          </Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sonuç: Bir Uyarı İşareti, Umutsuzluk Rehberi Değil</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 sonuçları düşündürücüdür. Üç temel alanda aynı anda düşüş, &ldquo;aceleci okuma&rdquo;nın neredeyse iki katına çıkması, yapay zeka performans açığı, ergenlerin dezenformasyon karşısındaki savunmasızlığı — bir arada ele alındığında, bu bulgular temel becerileri gerçek baskı altında olan bir genç kuşağı tarif ediyor. Ancak krizi tespit eden aynı veriler neyin işe yaradığını da ortaya koyuyor: güçlü öğretmen-öğrenci ilişkileri, yüksek akademik beklentiler, derin ve eleştirel okumanın değer gördüğü bir kültür ve becerileri yer değiştirmek yerine inşa eden bir teknoloji yaklaşımı.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bir ebeveyn olarak şu anda yapabileceğiniz en güçlü eylem, ulusal istatistiklerden kendi çocuğunuzun bireysel konumuna geçmektir. PISA küresel hikâyeyi anlatır. Bilmeniz gereken kendi bölümünüzdür. Eduentry&apos;nin uyarlanabilir değerlendirmesi 20 dakika sürer, tamamen ücretsizdir ve çocuğunuzu PISA&apos;nın kullandığı uluslararası ölçeğe yerleştirir. Çocuğunuzun nerede durduğunu öğrendikten sonra, kaygıyla değil, kesinlikle hareket edebilirsiniz.
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

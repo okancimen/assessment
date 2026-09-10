@@ -387,6 +387,27 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     ],
     cta: { heading: 'Demuestra tu aptitud financiera antes de la entrevista', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Incluye tu informe de preparación en cada solicitud de prácticas en finanzas.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/es' },
   },
+  {
+    slug: 'pisa-2025-crisis-educativa-mundial-que-deben-saber-los-padres',
+    title: 'PISA 2025: Crisis Educativa Mundial — Lo Que Todo Padre Necesita Saber',
+    shortTitle: 'PISA 2025: La Crisis Educativa Global',
+    description: 'PISA 2025 revela las puntuaciones más bajas jamás registradas en matemáticas, lectura y ciencias en los países de la OCDE. Analizamos qué significan los resultados para las familias y por qué nunca ha sido tan importante evaluar a tu hijo.',
+    date: '2026-09-10',
+    readTime: '12 min de lectura',
+    tags: ['PISA', 'Educación Global', 'Evaluación Académica', 'Matemáticas', 'Lectura'],
+    faqs: [
+      { q: '¿Qué es PISA y por qué importa?', a: 'PISA (Programa para la Evaluación Internacional de Alumnos) evalúa a estudiantes de 15 años en 91 países en matemáticas, lectura y ciencias cada tres años. Es el estudio educativo más grande del mundo y la medida más autorizada para comparar sistemas educativos a nivel global.' },
+      { q: '¿Por qué han bajado tanto las puntuaciones en matemáticas y lectura?', a: 'Los investigadores señalan múltiples factores: pérdida de aprendizaje relacionada con la pandemia, mayor distracción digital (el 28% de los estudiantes dice que sus compañeros se distraen con dispositivos durante las clases), y el aumento de la "lectura apresurada": escanear contenido rápidamente sin comprensión real. Esta tasa casi se duplicó entre 2018 y 2025.' },
+      { q: '¿Usar IA para los deberes perjudica el aprendizaje de mi hijo?', a: 'PISA 2025 encontró que los estudiantes que usan IA para tareas específicas como resumir textos, redactar o investigar obtienen alrededor de 20 puntos menos en ciencias que sus compañeros que no lo hacen — equivalente a aproximadamente un año de escolarización. El uso general de la IA con fines de aprendizaje no mostró efecto negativo cuando se combina con educación en alfabetización digital.' },
+      { q: '¿Cómo puedo saber si mi hijo está al nivel internacional?', a: 'Eduentry ofrece una evaluación adaptativa gratuita alineada con la misma escala internacional que PISA. Evalúa a niños de 6 a 17 años en matemáticas, inglés, razonamiento verbal y no verbal, y ofrece a los padres una clasificación percentil que muestra exactamente cómo se compara su hijo con sus pares a nivel mundial.' },
+    ],
+    cta: {
+      heading: 'Descubre dónde está tu hijo — gratis',
+      body: 'La evaluación adaptativa de Eduentry evalúa a niños de 6 a 17 años en matemáticas, inglés, razonamiento verbal y no verbal en la misma escala internacional que PISA. Obtén un percentil global en 20 minutos.',
+      label: 'Comenzar evaluación gratuita',
+      href: 'https://eduentry.com/es',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

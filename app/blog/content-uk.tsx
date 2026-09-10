@@ -2575,4 +2575,191 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'pisa-2025-global-education-crisis-what-parents-need-to-know': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        In September 2026, the OECD released the results of PISA 2025 — the Programme for International Student Assessment — and the headline stopped education ministers, school leaders, and parents in their tracks. For the first time in the assessment&apos;s history, OECD countries recorded their lowest ever average performance simultaneously across all three core domains: mathematics, reading, and science. More than 760,000 students across 91 countries and economies participated, representing 33 million 15-year-olds worldwide. The sheer scale of the assessment makes it impossible to dismiss as statistical noise.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        This is not a blip. It is the acceleration of a decade-long trend that has been building through successive PISA cycles, amplified by the pandemic years and compounded by structural changes in how young people read, learn, and interact with technology. The OECD&apos;s own researchers describe the results as a &ldquo;wake-up call&rdquo; for education systems that have allowed distraction, surface-level engagement, and uncritical AI use to erode the foundational skills that every child needs to succeed in adult life.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        For parents, the immediate question is not abstract. It is personal. What do these results mean for your child? If national averages are falling, where does your child sit within those averages — and what can you do about it? This article works through the PISA 2025 findings domain by domain, unpacks what the data actually means for UK families specifically, and explains why understanding your individual child&apos;s position has never mattered more than it does right now.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is PISA and Why Does It Matter?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA is the OECD&apos;s Programme for International Student Assessment, conducted every three years since 2000. It tests 15-year-olds — the age at which most students in developed countries are approaching the end of compulsory schooling — in mathematics, reading literacy, and science. In 2025, 91 countries and economies participated, and the results represent an estimated 33 million students globally. No other educational study comes close to this scale or methodological rigour.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA matters because it is the only genuine global yardstick. National exams tell you how children compare within a country&apos;s own system — useful, but limited. PISA asks every student the same questions under the same conditions and places every score on the same international scale. When Singapore scores 563 in computational problem-solving and the OECD average is 500, that gap is real and measurable. For parents making decisions about education, PISA provides the only reliable reference point for where a national system, and therefore their child&apos;s education, sits in a global context. It is also the assessment that selective universities, scholarship committees, and international schools use when they refer to &ldquo;international standards.&rdquo;
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Mathematics Crisis: 22 Points Lost in a Decade</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD average mathematics scores fell 22 points between 2015 and 2025. To understand what that means in practical terms: researchers estimate that approximately 20 PISA score points correspond to roughly one year of schooling. A 22-point decline means the average 15-year-old across OECD countries is now performing at a mathematical level equivalent to more than a year behind where their counterpart stood a decade ago. This is not a measurement error. It is a systemic, cross-national collapse in mathematical attainment that should concern every parent whose child will enter a labour market that increasingly rewards quantitative fluency.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The top performers remain concentrated in East Asia. Chinese jurisdictions — Beijing, Shanghai, Jiangsu, and Zhejiang, collectively known as B-S-J-Z — and Singapore continue to lead the world by a considerable margin, performing at levels that represent multiple years of learning advantage over the OECD average. Estonia, Japan, South Korea, Macao (China), Chinese Taipei, and the United Kingdom also sit in the global top ten. These are education systems characterised by high expectations, strong teacher quality, a culture that takes mathematics seriously, and — notably — relatively limited digital distraction during school hours.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The United Kingdom features in the global top ten in mathematics despite seeing its scores decline in line with broad global trends. This is a genuinely ambiguous result: it means the UK has performed better than most, but it also means that even UK students — who are relatively well-served by their education system — are sitting at a lower mathematical level than the generation before them. For parents whose children are preparing for GCSEs and A-levels in mathematics-intensive subjects such as physics, economics, or computer science, that context matters for how much additional support is appropriate.
+        </p>
+        <Callout color="amber">
+          <strong>The year-of-schooling yardstick:</strong> Every 20 PISA points approximately equals one year of schooling. The OECD&apos;s 22-point maths decline since 2015 means the average child today is entering adulthood with more than a year&apos;s less mathematical capability than the average child in 2015 — despite spending the same number of years in school.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Reading Collapse: 28 Points — and a New Kind of Illiteracy</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The reading decline is steeper than mathematics, and its implications are more far-reaching. OECD average reading scores fell 28 points between 2015 and 2025 — equivalent to approximately one and a half years of schooling. But the raw number understates the problem, because what PISA 2025 also found is a qualitative shift in how young people are reading. The share of students who exhibit &ldquo;hasty reading&rdquo; — reading quickly but inaccurately, prioritising speed over comprehension — nearly doubled between 2018 and 2025, reaching 9% of OECD students. These are children who have become technically literate but effectively non-readers in any meaningful sense.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This matters enormously in 2026, because critical reading — the ability to evaluate what you are reading, identify the source, assess the argument, detect bias, and form a considered judgment — is not a supplementary academic skill. It is the foundational capability for participating meaningfully in a world saturated with AI-generated content, algorithmically curated information, and deliberate misinformation. PISA 2025 tested students on exactly this capacity for epistemic evaluation, and the results are alarming.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          When PISA asked students how they evaluate information they encounter, only 46% reported checking source credibility AND preferring scientific evidence when evaluating claims. A further 37% check sources but ultimately rely on common sense over scientific evidence. Eleven percent trust scientific authority without checking sources at all. And 5% do neither — they neither check sources nor apply scientific reasoning. In other words, fewer than half of 15-year-olds in OECD countries have the evaluative habits needed to navigate an information environment dominated by AI outputs and viral misinformation. This is an epistemic crisis as much as a literacy one, and it has profound implications for how children engage with homework, social media, and eventually civic life.
+        </p>
+        <Callout color="rose">
+          <strong>Only 46% of OECD students</strong> both check source credibility and prefer scientific evidence when evaluating information. In an era when AI can generate convincing but entirely fabricated text in seconds, this is the foundational skill gap that carries the highest stakes — not just for education, but for democracy.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Science: A Mixed Picture With Genuine Bright Spots</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Science showed a more modest overall decline across OECD countries since 2015, making it the least damaged of the three core domains — though &ldquo;least damaged&rdquo; is faint praise when the overall trajectory is downward. The more interesting story in science is at the country level. Four countries — the United Kingdom, T&uuml;rkiye, the Slovak Republic, and Costa Rica — demonstrated measurable improvement in science scores since the 2022 PISA cycle. For UK parents, this is a genuinely positive signal: the UK&apos;s science education has been moving in the right direction even as its peers have slipped.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 also introduced a new domain for the first time: computational problem-solving. This assessed students&apos; ability to think systematically about problems involving algorithms, data, and logical sequences — skills increasingly central to modern work and citizenship. Approximately two-thirds of OECD students reached Level 3 or above in computational problem-solving, and around one-quarter reached Levels 5 or 6, indicating high-level proficiency. The top-scoring jurisdictions were Macao (China) at 572, Singapore at 563, and Chinese B-S-J-Z at 560 — well above the OECD average of 500. As computational problem-solving becomes a standard PISA component in future cycles, the gap between top performers and the OECD average in this domain will be one of the most strategically important numbers in education policy.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">AI in the Classroom: The Double-Edged Sword</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 is the first cycle to systematically examine AI use among students, and the findings are more nuanced — and more concerning — than most commentators have suggested. Forty-six percent of OECD students report using AI chatbots weekly or more often. That is almost half of all 15-year-olds in the developed world routinely consulting AI tools. On the surface, this might seem like a positive sign of technological fluency. The data tells a more complicated story.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          When PISA examined the relationship between AI use and academic performance, it found a striking negative association for one specific category of use: using AI for particular schoolwork tasks. Students who regularly use AI to summarise texts, draft written work, or conduct research score approximately 20 points lower in science than students who do not use AI for these tasks. That is roughly one full year of schooling behind their peers who do the same tasks through their own cognitive effort. The mechanism is not difficult to understand: when AI does the cognitive work that builds knowledge and skill, the student is bypassed. The task is completed but the learning does not happen.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          But the picture is not uniformly negative. Students who use AI for general learning purposes — exploration, explanation, answering questions — show similar performance to students who do not use AI at all. And crucially, students who receive AI literacy education at school and use AI generally perform slightly better than comparable peers. The problem is not AI itself. The problem is substitution: using AI to avoid the cognitive effort that produces learning. There is also a troubling equity dimension: AI literacy education is disproportionately available to students from socioeconomically advantaged backgrounds, creating a new &ldquo;AI divide&rdquo; that could amplify existing inequalities in educational outcomes.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>46% of OECD students</strong> use AI chatbots weekly or more — making AI a standard feature of adolescent academic life, not an edge case.
+          </Bullet>
+          <Bullet>
+            <strong>~20 points lower science scores</strong> are associated with using AI for specific schoolwork tasks like summarising, drafting, and research — equivalent to roughly one year of schooling behind peers who do not.
+          </Bullet>
+          <Bullet>
+            <strong>General AI use</strong> for learning exploration shows no significant negative performance association — the harm is in substitution, not in use itself.
+          </Bullet>
+          <Bullet>
+            <strong>AI literacy education</strong> at school is associated with slightly better performance among AI users — but this education is disproportionately available to socioeconomically advantaged students, creating a new &ldquo;AI divide.&rdquo;
+          </Bullet>
+          <Bullet>
+            <strong>28% of students</strong> report that classmates are distracted by digital devices during most or every science lesson — suggesting the classroom AI problem extends beyond homework into active instructional time.
+          </Bullet>
+        </ul>
+        <Callout color="amber">
+          <strong>The AI homework trap:</strong> PISA 2025 found that using AI to complete specific schoolwork tasks — summarising, drafting, researching — is associated with scoring a full year of schooling below peers who do the work themselves. The shortcut feels efficient. The cognitive cost is invisible until it shows up in a test score.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sense of Belonging: The Hidden Factor in School Success</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          One finding from PISA 2025 that receives less media attention than the score declines is equally important for parents to understand: the role of belonging in academic outcomes. Seventy-six percent of OECD students report feeling that they belong at school — and this figure has actually improved since 2022, suggesting that schools&apos; relationships with students are, in this respect at least, getting better even as academic outcomes slip. Spain recorded the highest sense of belonging in the OECD at 90%, while Denmark, Poland, Italy, and Lithuania reported the lowest rates, at 64% or fewer students feeling they belonged.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The gender gap is notable: girls consistently report a weaker sense of school belonging than boys across OECD countries, a pattern that intersects with and compounds the well-documented differences in subject confidence and STEM engagement between girls and boys. A student who does not feel they belong at school is significantly less likely to engage deeply with learning, seek help when struggling, or persist through difficulty — all behaviours strongly associated with academic growth. For parents concerned about their daughter&apos;s engagement with challenging subjects, this dimension is worth exploring directly with the school. Belonging is not a soft metric; it is a leading indicator of academic engagement.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What This Means for UK Families Specifically</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The United Kingdom&apos;s PISA 2025 results deserve careful interpretation, because they contain both genuine good news and significant caveats. The good news is real: the UK ranks in the global top ten across the assessed domains, and is one of only four OECD countries to have improved its science score since the 2022 cycle. For a major, highly diverse education system serving millions of students across four nations with varying curricula and resources, this is a meaningful achievement.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The caveats are also real. UK reading and mathematics scores have still fallen in line with global trends, meaning that even the UK&apos;s above-average performance masks a decline from previous cycles. The 20-point AI performance gap is especially relevant in the UK context, where smartphone use among teenagers is among the highest in the OECD and where AI tools are widely accessible and heavily used for schoolwork. The skills that have fallen most sharply — critical reading, evaluating sources, sustained mathematical reasoning — are precisely the skills that children in an AI-saturated environment most need, and most struggle to develop when AI is completing their cognitive work for them.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For UK parents, the practical implication is this: the UK&apos;s top-ten position is a national achievement, not an individual guarantee. A child whose school happens to be in the UK is not automatically on track. The variation within countries is enormous — often 200 or more PISA score points between the highest and lowest-performing students within a single country, equivalent to ten years of schooling. Knowing that the UK average is above the OECD mean tells you almost nothing about where your specific child sits within that distribution.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Benchmarking Your Child Has Never Mattered More</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA shows national averages. It does not — and cannot — tell you about individual children. As a parent, the 22-point mathematics decline across the OECD is context, not answer. The question that matters for your family is where your child sits within that distribution, and whether the education they are receiving is building the skills that PISA 2025 shows are most at risk: mathematical reasoning, critical reading, and the evaluative habits that allow a person to navigate an information landscape full of AI-generated content.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The within-country variation is the number most parents do not know about, and it is the number that matters most. In a typical OECD country, the gap between the highest and lowest-performing students is more than 200 PISA score points — equivalent to more than ten years of schooling in a single age cohort. A child at the 70th percentile in the UK is performing very differently from a child at the 30th percentile in the same year group, even though both are nominally British students in a &ldquo;top ten&rdquo; PISA country. The national ranking gives parents almost no useful information about their individual child&apos;s position.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This matters for every consequential educational decision a family makes. Private tutoring — do you need it, in which subject, at what intensity? School choice — does the school your child attends serve students at their actual level? Subject selection for GCSEs and A-levels — is your child genuinely prepared for the mathematical demands of chemistry, economics, or computer science? University aspirations — are the targets your family is discussing calibrated to where your child actually stands? Without individual benchmarking, all of these decisions are made without the most important piece of information.
+        </p>
+        <Callout color="indigo">
+          The PISA average tells you about systems. Eduentry tells you about your child.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4 mb-4">
+          The PISA data also makes clear which skills are under the most pressure: critical reading, mathematical reasoning, and the ability to evaluate sources and evidence. An individual benchmark that tests these same domains — and gives parents a percentile rank on the same international scale as PISA — provides exactly the information needed to move from national statistics to personal action.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Introducing Eduentry: Free, Science-Backed Benchmarking for Ages 6–17</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry is an adaptive assessment platform built specifically to give parents the individual-level information that PISA cannot. It uses Item Response Theory (IRT) — the same psychometric methodology underlying PISA and the major international assessments — to place every child on the same international scale as the tests that matter. The assessment adapts in real time to each child&apos;s responses, asking harder or easier questions based on performance, so it calibrates accurately across the full ability range from ages 6 to 17. A child at the 20th percentile gets an accurate score just as a child at the 95th percentile does.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The assessment covers four domains: mathematics, English literacy, verbal reasoning, and non-verbal reasoning. It takes approximately 20 minutes to complete. At the end, parents receive a standardised score and a global percentile rank — not a school grade or a teacher&apos;s impression, but a precise position in the international distribution. The first assessment is completely free, with no registration required.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check>
+            <strong>Mathematics</strong> — tests numerical reasoning, problem-solving and quantitative thinking aligned to the PISA mathematics framework
+          </Check>
+          <Check>
+            <strong>English literacy</strong> — assesses reading comprehension and language skills using the same evaluative framework as PISA reading
+          </Check>
+          <Check>
+            <strong>Verbal reasoning</strong> — measures logical thinking applied to language, a strong predictor of academic potential across all subjects
+          </Check>
+          <Check>
+            <strong>Non-verbal reasoning</strong> — assesses abstract and spatial reasoning independent of language background
+          </Check>
+          <Check>
+            <strong>Global percentile rank</strong> — places your child on the same international scale as PISA, so you know exactly where they stand relative to peers worldwide
+          </Check>
+          <Check>
+            <strong>Adaptive technology</strong> — calibrates to your child&apos;s level in real time, providing an accurate score across the full ability range
+          </Check>
+          <Check>
+            <strong>Free, no registration required</strong> — the full benchmark assessment costs nothing and takes approximately 20 minutes
+          </Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Conclusion: A Wake-Up Call, Not a Counsel of Despair</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The PISA 2025 results are sobering. The simultaneous decline in all three core domains, the near-doubling of &ldquo;hasty reading&rdquo;, the AI performance gap, the misinformation vulnerability of teenagers — taken together, these findings describe a generation of young people whose foundational skills are under real pressure. That is not alarmism. It is what the most rigorous education research in the world shows, published by the organisation that exists specifically to measure and improve education outcomes globally.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          But the same data that identifies the crisis also identifies what works. The countries doing best in PISA 2025 share recognisable traits: strong, trusted relationships between teachers and students; high academic expectations combined with genuine support; a culture in which reading — deep, slow, critical reading — is valued and practised at home and at school; and an approach to technology that builds skills rather than bypassing them. These are not mysterious advantages available only to Singapore or Estonia. They are choices that schools and families can make, starting today.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          As a parent, the most powerful action you can take right now is to move from national statistics to your own child&apos;s individual position. PISA tells the global story. What you need to know is your chapter. Eduentry&apos;s adaptive assessment takes 20 minutes, is completely free, and places your child on the same international scale that PISA uses. Once you know where your child stands, you can act with precision rather than anxiety — and that precision is the most valuable thing any parent can have.
+        </p>
+      </section>
+    </>
+  ),
 }

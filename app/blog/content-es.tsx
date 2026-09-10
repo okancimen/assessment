@@ -1270,6 +1270,134 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'pisa-2025-crisis-educativa-mundial-que-deben-saber-los-padres': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        En septiembre de 2026, la OCDE publicó los resultados de PISA 2025 — el Programa para la Evaluación Internacional de Alumnos — y el titular paralizó a ministros de educación, directores de colegios y padres por igual. Por primera vez en la historia de la evaluación, los países de la OCDE registraron sus puntuaciones medias más bajas en los tres dominios principales simultáneamente: matemáticas, lectura y ciencias. Más de 760.000 estudiantes de 91 países y economías participaron, representando a 33 millones de jóvenes de 15 años en todo el mundo. La escala del estudio hace imposible descartarlo como ruido estadístico.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Esto no es una anomalía puntual. Es la aceleración de una tendencia de diez años que se ha ido construyendo a través de ciclos PISA sucesivos, amplificada por los años de pandemia y agravada por los cambios estructurales en cómo los jóvenes leen, aprenden e interactúan con la tecnología. Los propios investigadores de la OCDE describen los resultados como un &ldquo;toque de atención&rdquo; para los sistemas educativos que han permitido que la distracción, el aprendizaje superficial y el uso acrítico de la IA erosionen las habilidades fundamentales que todo niño necesita para tener éxito en la vida adulta.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Para los padres, la pregunta inmediata no es abstracta. Es personal. ¿Qué significan estos resultados para tu hijo? ¿Dónde se sitúa tu hijo dentro de esas medias? ¿Y qué puedes hacer al respecto? Este artículo analiza los hallazgos de PISA 2025 dominio por dominio, explica lo que los datos realmente significan para las familias y por qué entender la posición individual de tu hijo nunca ha importado tanto como ahora.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué es PISA y por qué importa?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA es el Programa para la Evaluación Internacional de Alumnos de la OCDE, que se realiza cada tres años desde el año 2000. Evalúa a estudiantes de 15 años en matemáticas, comprensión lectora y ciencias. En 2025, participaron 91 países y economías, y los resultados representan a unos 33 millones de estudiantes en todo el mundo. PISA importa porque es el único termómetro global genuino: hace las mismas preguntas a todos los estudiantes en las mismas condiciones y sitúa cada puntuación en la misma escala internacional. Para los padres que toman decisiones sobre educación, proporciona el único punto de referencia fiable para saber dónde se sitúa el sistema educativo de un país en un contexto global.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La crisis de matemáticas: 22 puntos perdidos en una década</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las puntuaciones medias de matemáticas de la OCDE cayeron 22 puntos entre 2015 y 2025. Los investigadores estiman que aproximadamente 20 puntos PISA corresponden a un año de escolarización. Un descenso de 22 puntos significa que el joven de 15 años medio en los países de la OCDE ahora funciona en un nivel matemático equivalente a más de un año por detrás de donde estaba su contraparte hace una década. No se trata de un error de medición — es un colapso sistémico e internacional del rendimiento matemático.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los mejores intérpretes siguen concentrados en el Este de Asia. Las jurisdicciones chinas — Pekín, Shanghái, Jiangsu y Zhejiang — y Singapur continúan liderando el mundo por un margen considerable. Estonia, Japón, Corea del Sur, Macao (China), Taipéi Chino y el Reino Unido también se sitúan en el top diez mundial. Estos sistemas educativos se caracterizan por altas expectativas, una sólida calidad docente, una cultura que toma las matemáticas en serio y una distracción digital relativamente limitada durante el horario escolar.
+        </p>
+        <Callout color="amber">
+          <strong>La regla del año de escolarización:</strong> Cada 20 puntos PISA equivalen aproximadamente a un año de escolarización. El descenso de 22 puntos en matemáticas de la OCDE desde 2015 significa que el niño medio actual entra en la vida adulta con más de un año menos de capacidad matemática que el niño medio de 2015 — a pesar de pasar el mismo número de años en la escuela.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">El colapso de la lectura: 28 puntos — y un nuevo tipo de analfabetismo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El descenso en lectura es más pronunciado que en matemáticas. Las puntuaciones medias de lectura de la OCDE cayeron 28 puntos entre 2015 y 2025 — equivalente a aproximadamente año y medio de escolarización. Pero la cifra bruta subestima el problema, porque PISA 2025 también encontró un cambio cualitativo en cómo los jóvenes leen. La proporción de estudiantes que exhiben &ldquo;lectura apresurada&rdquo; — leer rápidamente pero de forma inexacta, priorizando la velocidad sobre la comprensión — casi se duplicó entre 2018 y 2025, alcanzando el 9% de los estudiantes de la OCDE.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cuando PISA preguntó a los estudiantes cómo evalúan la información que encuentran, solo el 46% informó verificar la credibilidad de la fuente Y preferir la evidencia científica al evaluar afirmaciones. Un 37% adicional verifica las fuentes pero en última instancia se basa en el sentido común. El 11% confía en la autoridad científica sin verificar las fuentes en absoluto. Y el 5% no hace ninguna de las dos cosas. En otras palabras, menos de la mitad de los jóvenes de 15 años en los países de la OCDE tienen los hábitos evaluativos necesarios para navegar un entorno de información dominado por resultados de IA y desinformación viral.
+        </p>
+        <Callout color="rose">
+          <strong>Solo el 46% de los estudiantes de la OCDE</strong> verifican la credibilidad de las fuentes Y prefieren la evidencia científica al evaluar información. En una era en que la IA puede generar texto convincente pero completamente fabricado en segundos, esta es la brecha de habilidades fundamental con las apuestas más altas.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ciencias: Un panorama mixto con puntos positivos</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las ciencias mostraron un descenso general más moderado en los países de la OCDE desde 2015. La historia más interesante está a nivel de país: el Reino Unido, T&uuml;rkiye, la República Eslovaca y Costa Rica demostraron una mejora medible en las puntuaciones de ciencias desde el ciclo PISA 2022. PISA 2025 también introdujo un nuevo dominio: resolución computacional de problemas. Aproximadamente dos tercios de los estudiantes de la OCDE alcanzaron el Nivel 3 o superior. Las jurisdicciones con mejor puntuación fueron Macao (China) con 572, Singapur con 563 y el B-S-J-Z chino con 560, frente a la media de la OCDE de 500.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La IA en el aula: una espada de doble filo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El 46% de los estudiantes de la OCDE afirman usar chatbots de IA semanalmente o con más frecuencia. Cuando PISA examinó la relación entre el uso de la IA y el rendimiento académico, encontró una asociación negativa significativa para una categoría específica: usar la IA para tareas escolares particulares. Los estudiantes que usan regularmente la IA para resumir textos, redactar trabajos escritos o realizar investigaciones obtienen aproximadamente 20 puntos menos en ciencias — equivalente a un año completo de escolarización por detrás de sus compañeros que realizan estas tareas por su propio esfuerzo cognitivo.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sin embargo, los estudiantes que usan la IA para exploración y aprendizaje general muestran un rendimiento similar a quienes no la usan. Y los estudiantes que reciben educación en alfabetización en IA en la escuela y la usan de forma general rinden ligeramente mejor. El problema no es la IA en sí misma. El problema es la sustitución: usar la IA para evitar el esfuerzo cognitivo que produce el aprendizaje. Además, la educación en alfabetización en IA está desproporcionadamente disponible para estudiantes de entornos socioeconómicos aventajados, creando una nueva &ldquo;brecha de IA&rdquo;.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>El 46% de los estudiantes de la OCDE</strong> usa chatbots de IA semanalmente o con más frecuencia.
+          </Bullet>
+          <Bullet>
+            <strong>~20 puntos menos en ciencias</strong> se asocian con el uso de la IA para tareas escolares específicas — equivalente a un año de escolarización.
+          </Bullet>
+          <Bullet>
+            <strong>El uso general de la IA</strong> para exploración del aprendizaje no muestra ninguna asociación negativa significativa.
+          </Bullet>
+          <Bullet>
+            <strong>El 28% de los estudiantes</strong> informan que sus compañeros se distraen con dispositivos digitales durante la mayoría o todas las clases de ciencias.
+          </Bullet>
+        </ul>
+        <Callout color="amber">
+          <strong>La trampa de los deberes con IA:</strong> Usar IA para resumir, redactar e investigar está asociado con obtener un año de escolarización completo por debajo de los compañeros que hacen el trabajo ellos mismos. El coste cognitivo es invisible hasta que aparece en una puntuación de examen.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Por qué evaluar a tu hijo nunca ha importado tanto</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA muestra medias nacionales. No puede decirte nada sobre los niños individualmente. La pregunta que importa para tu familia es dónde se sitúa tu hijo dentro de esa distribución. La variación dentro de los países es el número que la mayoría de los padres no conocen: en un país típico de la OCDE, la diferencia entre los estudiantes de mayor y menor rendimiento supera los 200 puntos PISA — equivalente a más de diez años de escolarización en una sola cohorte de edad. Conocer que la media de un país está por encima de la media de la OCDE no te dice casi nada sobre dónde se sitúa tu hijo específico.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sin una evaluación individual, todas las decisiones educativas importantes — tutorías privadas, elección de escuela, selección de asignaturas, aspiraciones universitarias — se toman sin la información más importante: dónde está realmente tu hijo.
+        </p>
+        <Callout color="indigo">
+          La media de PISA te habla de sistemas. Eduentry te habla de tu hijo.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Evalúa a tu hijo con Eduentry</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry es una plataforma de evaluación adaptativa que utiliza la Teoría de Respuesta al Ítem (TRI) — la misma metodología psicométrica que subyace a PISA — para situar a cada niño de 6 a 17 años en la misma escala internacional. La evaluación se adapta en tiempo real, tarda aproximadamente 20 minutos, y proporciona una puntuación estandarizada y un rango percentil global. Es completamente gratuita, sin registro requerido.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check>
+            <strong>Matemáticas</strong> — razonamiento numérico y resolución de problemas alineados con PISA
+          </Check>
+          <Check>
+            <strong>Lengua inglesa</strong> — comprensión lectora y habilidades lingüísticas
+          </Check>
+          <Check>
+            <strong>Razonamiento verbal</strong> — pensamiento lógico aplicado al lenguaje
+          </Check>
+          <Check>
+            <strong>Razonamiento no verbal</strong> — razonamiento abstracto y espacial
+          </Check>
+          <Check>
+            <strong>Rango percentil global</strong> — en la misma escala internacional que PISA
+          </Check>
+          <Check>
+            <strong>Gratuito, sin registro requerido</strong> — tarda aproximadamente 20 minutos
+          </Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Conclusión</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los resultados de PISA 2025 son aleccionadores, pero no son un motivo de desesperación. Los mismos datos que identifican la crisis también identifican lo que funciona: altas expectativas, relaciones sólidas entre profesores y alumnos, una cultura de lectura profunda, y un enfoque de la tecnología que construye habilidades en lugar de reemplazarlas. Como padre, la acción más poderosa que puedes tomar ahora mismo es pasar de las estadísticas nacionales a la posición individual de tu propio hijo. Eduentry hace exactamente eso — de forma gratuita, en 20 minutos, con un resultado en la misma escala internacional que PISA.
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

@@ -471,6 +471,27 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: { heading: 'Mülakata gerçek aptitude verileriyle gir', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Güçlü ve gelişim alanlarını kişiselleştirilmiş raporla öğren — mülakatından önce.', label: 'Ücretsiz değerlendirmeyi başlat', href: 'https://eduentry.ai/tr' },
   },
+  {
+    slug: 'pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler',
+    title: 'PISA 2025 Sonuçları: Küresel Eğitim Krizi — Her Ebeveynin Bilmesi Gerekenler',
+    shortTitle: 'PISA 2025: Küresel Eğitim Krizi',
+    description: 'PISA 2025, OECD ülkelerinde matematik, okuma ve fen bilimlerinde şimdiye kadar kaydedilen en düşük puanları ortaya koyuyor. Sonuçların aileler için ne anlama geldiğini ve çocuğunuzu değerlendirmenin neden hiç bu kadar önemli olmadığını açıklıyoruz.',
+    date: '2026-09-10',
+    readTime: '12 dakika okuma',
+    tags: ['PISA', 'Küresel Eğitim', 'Akademik Değerlendirme', 'Matematik', 'Okuma'],
+    faqs: [
+      { q: 'PISA nedir ve neden önemlidir?', a: 'PISA (Uluslararası Öğrenci Değerlendirme Programı), her üç yılda bir 91 ülkede 15 yaşındaki öğrencileri matematik, okuma ve fen bilimleri alanlarında sınavdan geçirir. Dünyanın en büyük standart eğitim kıyaslaması ve eğitim sistemlerini küresel ölçekte karşılaştıran en yetkili ölçüttür.' },
+      { q: 'Matematik ve okuma puanları neden bu kadar düştü?', a: 'Araştırmacılar birden fazla faktöre dikkat çekiyor: pandemi kaynaklı öğrenme kayıpları, artan dijital dikkat dağınıklığı (öğrencilerin %28\'i sınıf arkadaşlarının fen derslerinde dijital cihazlarla dikkat dağıttığını söylüyor) ve "hızlı okuma"nın yükselişi — içeriği hızla tarayıp gerçek anlayış olmadan ilerlemek. Bu oran 2018-2025 arasında neredeyse iki katına çıktı.' },
+      { q: 'Yapay zeka kullanımı çocuğumun öğrenmesine zarar verir mi?', a: 'PISA 2025, metin özetleme, taslak oluşturma veya araştırma gibi belirli ödev görevleri için yapay zeka kullanan öğrencilerin fen bilimlerinde, kullanmayan akranlarından yaklaşık 20 puan daha düşük puan aldığını ortaya koydu — bu yaklaşık bir yıllık okul eğitimine eşdeğer. Yapay zeka okuryazarlığı eğitimiyle birleştirildiğinde genel öğrenme amaçlı yapay zeka kullanımı olumsuz bir etki göstermedi.' },
+      { q: 'Çocuğumun uluslararası düzeyde nerede durduğunu nasıl öğrenebilirim?', a: 'Eduentry, PISA ile aynı uluslararası ölçeğe hizalanmış ücretsiz uyarlanabilir bir değerlendirme sunar. 6-17 yaş arası çocukları matematik, İngilizce, sözel ve sözel olmayan akıl yürütme alanlarında test eder ve ebeveynlere çocuklarının küresel düzeydeki akranlarıyla karşılaştırmasını gösteren bir yüzdelik dilim sıralaması sağlar.' },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun nerede durduğunu öğrenin — ücretsiz',
+      body: 'Eduentry\'nin uyarlanabilir değerlendirmesi, 6-17 yaş arası çocukları PISA ile aynı uluslararası ölçekte matematik, İngilizce, sözel ve sözel olmayan akıl yürütme alanlarında sınar. 20 dakikada küresel yüzdelik dilim sıralaması alın.',
+      label: 'Ücretsiz Değerlendirmeyi Başlat',
+      href: 'https://eduentry.com/tr',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

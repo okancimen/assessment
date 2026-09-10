@@ -1158,6 +1158,28 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'pisa-2025-global-education-crisis-what-parents-need-to-know',
+    title: 'PISA 2025 Results: Global Education Is in Crisis — What Every Parent Needs to Know',
+    shortTitle: 'PISA 2025: The Global Education Crisis',
+    description: 'PISA 2025 reveals the lowest ever scores in maths, reading and science across OECD countries. We break down what the results mean for UK families and why benchmarking your child has never mattered more.',
+    date: '2026-09-10',
+    readTime: '14 min read',
+    tags: ['PISA', 'Academic Benchmarking', 'Global Education', 'UK Education', 'Maths', 'Reading'],
+    faqs: [
+      { q: 'What is PISA and why does it matter?', a: 'PISA (Programme for International Student Assessment) tests 15-year-olds in 91 countries on maths, reading and science every three years. It is the world\'s largest standardised education benchmark and the most authoritative measure of how education systems compare globally.' },
+      { q: 'How did UK students perform in PISA 2025?', a: 'The United Kingdom ranked in the top 10 globally in PISA 2025, making it one of only four OECD countries to improve its science score since 2022. However, UK students still saw declines in reading and mathematics, reflecting the global trend.' },
+      { q: 'Why did maths and reading scores fall so much?', a: 'Researchers point to multiple factors: pandemic-related learning loss, increased digital distraction (28% of students say classmates disrupt science lessons with devices), and the rise of "hasty reading" — skimming content quickly without full comprehension. The hasty reading rate nearly doubled between 2018 and 2025.' },
+      { q: 'How can I find out if my child is on track internationally?', a: 'Eduentry offers a free adaptive assessment aligned to the same international scale as PISA. It tests children aged 6–17 in maths, English, verbal reasoning and non-verbal reasoning, and gives parents a percentile rank showing exactly how their child compares to peers globally.' },
+      { q: 'Does using AI for homework hurt my child\'s learning?', a: 'PISA 2025 found that students who use AI for specific tasks like summarising texts, drafting or research score around 20 points lower in science than peers who don\'t — equivalent to roughly one year of schooling. General AI use for learning purposes showed no negative effect when paired with AI literacy education.' },
+    ],
+    cta: {
+      heading: 'Find out where your child stands — for free',
+      body: 'Eduentry\'s adaptive assessment tests ages 6–17 across maths, English, verbal and non-verbal reasoning on the same international scale as PISA. Get a global percentile rank in 20 minutes.',
+      label: 'Start Free Assessment',
+      href: 'https://eduentry.com',
+    },
+  },
+  {
     slug: 'how-does-your-child-compare-globally',
     title: 'How Does Your Child Compare Globally? A Parent\'s Guide to International Academic Benchmarks',
     shortTitle: 'How Does Your Child Compare Globally?',
