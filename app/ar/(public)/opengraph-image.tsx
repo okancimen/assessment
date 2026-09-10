@@ -1,7 +1,6 @@
 import { ImageResponse } from 'next/og'
 
-export const runtime = 'edge'
-export const alt = 'Eduentry — منصة التقييم الأكاديمي والمهني'
+export const alt = 'Eduentry — Academic & Internship Assessment'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -12,24 +11,24 @@ export default function Image() {
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 6, background: '#4f46e5', display: 'flex' }} />
 
         <div style={{ fontSize: 22, color: '#86868b', fontWeight: 700, marginBottom: 24, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-          تقييمات لكل مرحلة من مراحل التعلم
+          Assessments for Every Stage of Learning
         </div>
 
         <div style={{ fontSize: 56, fontWeight: 800, color: '#f5f5f7', textAlign: 'center', lineHeight: 1.15, marginBottom: 16, maxWidth: 900 }}>
-          التقييم الصحيح،
+          The Right Assessment,
         </div>
         <div style={{ fontSize: 56, fontWeight: 800, color: '#4f46e5', textAlign: 'center', lineHeight: 1.15, marginBottom: 40 }}>
-          في الوقت المناسب.
+          At the Right Time.
         </div>
 
         <div style={{ display: 'flex', gap: 20 }}>
           <div style={{ background: '#2d2d2f', border: '1px solid #424245', borderRadius: 20, padding: '18px 32px', display: 'flex', flexDirection: 'column', gap: 8, minWidth: 280 }}>
-            <div style={{ fontSize: 11, color: '#86868b', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'flex' }}>التقييم الأكاديمي</div>
-            <div style={{ fontSize: 18, color: '#f5f5f7', fontWeight: 600, display: 'flex' }}>6–17 عاماً · مرجع دولي</div>
+            <div style={{ fontSize: 11, color: '#86868b', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'flex' }}>ACADEMIC ASSESSMENT</div>
+            <div style={{ fontSize: 18, color: '#f5f5f7', fontWeight: 600, display: 'flex' }}>Ages 6-17 · International Benchmark</div>
           </div>
           <div style={{ background: '#eef2ff', border: '1px solid #c7d2fe', borderRadius: 20, padding: '18px 32px', display: 'flex', flexDirection: 'column', gap: 8, minWidth: 280 }}>
-            <div style={{ fontSize: 11, color: '#4f46e5', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'flex' }}>تقييم التدريب</div>
-            <div style={{ fontSize: 18, color: '#1d1d1f', fontWeight: 600, display: 'flex' }}>14+ عاماً · الاستعداد المهني</div>
+            <div style={{ fontSize: 11, color: '#4f46e5', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'flex' }}>INTERNSHIP ASSESSMENT</div>
+            <div style={{ fontSize: 18, color: '#1d1d1f', fontWeight: 600, display: 'flex' }}>Ages 14+ · Career Readiness</div>
           </div>
         </div>
 

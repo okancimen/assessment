@@ -12,8 +12,7 @@ export function generateStaticParams() {
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const post = getArabicPostBySlug(slug)
-  const title = post?.shortTitle ?? 'Eduentry Blog'
-  const tag = post?.tags[0] ?? 'Eduentry'
+  const tags = post?.tags ?? ['Eduentry']
 
   return new ImageResponse(
     (
@@ -21,10 +20,12 @@ export default async function Image({ params }: { params: Promise<{ slug: string
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 6, background: '#4f46e5', display: 'flex' }} />
         <div style={{ fontSize: 22, color: '#4f46e5', fontWeight: 700, marginBottom: 24 }}>Eduentry Blog</div>
         <div style={{ fontSize: 52, fontWeight: 800, color: '#111827', lineHeight: 1.15, marginBottom: 28, maxWidth: 980 }}>
-          {title}
+          Internship &amp; Academic Guides for UAE Students
         </div>
-        <div style={{ display: 'flex' }}>
-          <div style={{ background: '#e0e7ff', borderRadius: 12, padding: '10px 22px', fontSize: 18, color: '#4f46e5', fontWeight: 600, display: 'flex' }}>{tag}</div>
+        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+          {tags.slice(0, 3).map((t) => (
+            <div key={t} style={{ background: '#e0e7ff', borderRadius: 12, padding: '10px 22px', fontSize: 18, color: '#4f46e5', fontWeight: 600, display: 'flex' }}>{t}</div>
+          ))}
         </div>
         <div style={{ position: 'absolute', bottom: 32, right: 60, fontSize: 20, color: '#9ca3af' }}>eduentry.com</div>
       </div>
