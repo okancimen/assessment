@@ -84,7 +84,7 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
     author: {
       '@type': 'Person',
       '@id': 'https://edualist.com/#ozlem-cimen',
-      name: 'Özlem Cimen',
+      name: 'Ozlem Cimen',
       jobTitle: 'Education Professional, co-founder of Edualist.com',
       url: 'https://edualist.com',
     },
@@ -146,7 +146,7 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
           <span>{post.readTime}</span>
           <span>·</span>
           <a href="https://edualist.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#1d1d1f] transition-colors">
-            Özlem Cimen
+            Ozlem Cimen
           </a>
           <span>·</span>
           <span>Education Professional</span>
