@@ -103,6 +103,21 @@ export default async function AdminUserDetailPage({
     assessmentsByChild[cid]!.push(a)
   }
 
+  const inProgressIds = (assessmentsResult.data ?? [])
+    .filter((a) => a.status === 'in_progress')
+    .map((a) => a.id as string)
+
+  const sessionsResult = inProgressIds.length > 0
+    ? await db.from('assessment_sessions')
+        .select('assessment_id, subject_index, question_index')
+        .in('assessment_id', inProgressIds)
+    : { data: [] as { assessment_id: string; subject_index: number; question_index: number }[] }
+
+  const sessionsByAssessment: Record<string, { subject_index: number; question_index: number }> = {}
+  for (const s of sessionsResult.data ?? []) {
+    sessionsByAssessment[s.assessment_id] = s
+  }
+
   const fullName = (targetUser.user_metadata?.full_name as string | undefined) ?? null
 
   return (
@@ -195,6 +210,13 @@ export default async function AdminUserDetailPage({
                             const scores = (a.results as { overall_score?: number; subject_scores?: Record<string, number> }[] | null)?.[0]
                             const overall = scores?.overall_score
                             const isInternship = a.assessment_type === 'internship'
+                            const session = a.status === 'in_progress' ? sessionsByAssessment[a.id as string] : null
+                            const INTERNSHIP_CUMULATIVE = [0, 5, 10, 20, 28, 34]
+                            const progressText = session
+                              ? isInternship
+                                ? `${(INTERNSHIP_CUMULATIVE[session.subject_index] ?? 0) + session.question_index} / 34`
+                                : `${session.subject_index * 15 + session.question_index} / 60`
+                              : null
                             return (
                               <div key={a.id as string} className="flex items-center justify-between bg-[#f5f5f7] rounded-xl px-4 py-2.5">
                                 <div className="flex items-center gap-2">
@@ -208,6 +230,9 @@ export default async function AdminUserDetailPage({
                                   }`}>
                                     {(a.status as string).replace('_', ' ')}
                                   </span>
+                                  {progressText && (
+                                    <span className="text-[10px] text-[#6e6e73] font-medium">{progressText} questions</span>
+                                  )}
                                 </div>
                                 <div className="flex items-center gap-3">
                                   {overall != null && (
