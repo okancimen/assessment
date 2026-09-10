@@ -81,7 +81,13 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
     dateModified: post.dateModified ?? post.date,
     url,
     inLanguage: 'tr',
-    author: { '@id': 'https://eduentry.com/#organization' },
+    author: {
+      '@type': 'Person',
+      '@id': 'https://edualist.com/#ozlem-cimen',
+      name: 'Özlem Cimen',
+      jobTitle: 'Education Professional, co-founder of Edualist.com',
+      url: 'https://edualist.com',
+    },
     publisher: { '@id': 'https://eduentry.com/#organization' },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     isPartOf: { '@id': 'https://eduentry.com/#website' },
@@ -139,7 +145,11 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
           <span>·</span>
           <span>{post.readTime}</span>
           <span>·</span>
-          <span>Eduentry Editoryal Ekibi</span>
+          <a href="https://edualist.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#1d1d1f] transition-colors">
+            Özlem Cimen
+          </a>
+          <span>·</span>
+          <span>Education Professional</span>
         </div>
       </div>
 
