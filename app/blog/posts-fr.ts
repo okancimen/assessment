@@ -9,6 +9,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Une analyse fondée sur des données des stages au lycée — comment l\'expérience professionnelle structurée entre 14 et 18 ans développe la confiance, la résilience et l\'identité professionnelle, et améliore les candidatures universitaires.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '9 min de lecture',
     tags: ['Internship', 'University Admissions', 'Career Development', 'Work Experience'],
     faqs: [
@@ -44,6 +45,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Tout ce que les lycéens doivent savoir sur l\'expérience professionnelle en entreprise — ce que cela implique, où trouver un stage, comment l\'obtenir et comment un score d\'évaluation vérifié renforce chaque candidature.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '10 min de lecture',
     tags: ['Internship', 'Career Development', 'Work Experience', 'Business'],
     faqs: [
@@ -79,6 +81,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Un guide pratique pour les lycéens qui veulent se distinguer dans leurs candidatures universitaires et professionnelles — bien avant que leurs pairs ne commencent à y penser.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '8 min de lecture',
     tags: ['Career Development', 'University Admissions', 'Internship'],
     faqs: [
@@ -114,6 +117,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Comment lancer une première activité entrepreneuriale à 16 ans — de l\'idée à la première vente, avec des conseils sur les aspects légaux, le financement et la gestion du temps avec le lycée.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '9 min de lecture',
     tags: ['Career Development', 'Business', 'Internship'],
     faqs: [
@@ -149,6 +153,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Un guide pour les parents sur les comparaisons académiques internationales — comment interpréter les scores PISA, les référentiels britanniques et les niveaux IB pour comprendre la position de votre enfant.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '8 min de lecture',
     tags: ['Academic Assessment', 'Child Development', 'PISA'],
     faqs: [
@@ -183,6 +188,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Guide complet pour les lycéens français qui cherchent un stage significatif — plateformes, candidatures directes, réseaux, et comment se démarquer sans expérience préalable.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '10 min de lecture',
     tags: ['Internship', 'Career Development', 'Work Experience', 'France'],
     faqs: [
@@ -217,6 +223,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Comment rédiger un CV convaincant pour un stage quand on est lycéen — structure, contenu, formulations, et comment compenser le manque d\'expérience professionnelle par d\'autres atouts.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '8 min de lecture',
     tags: ['Career Development', 'Work Experience', 'Internship'],
     faqs: [
@@ -251,6 +258,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Comment se préparer et réussir un entretien pour un stage en tant que lycéen — les questions les plus fréquentes, les erreurs à éviter, et comment paraître confiant sans surjouer.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '7 min de lecture',
     tags: ['Career Development', 'Internship', 'Work Experience'],
     faqs: [
@@ -285,6 +293,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Comment obtenir un stage en marketing digital en tant que lycéen — ce que font les équipes marketing, quelles compétences développer, où postuler et comment convaincre sans expérience.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '9 min de lecture',
     tags: ['Internship', 'Digital Marketing', 'Career Development', 'Work Experience'],
     faqs: [
@@ -319,6 +328,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Guide pour les lycéens attirés par la data science et l\'analyse de données — quelles compétences acquérir, où trouver un premier stage, et comment ce secteur ouvre des portes exceptionnelles.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '8 min de lecture',
     tags: ['Internship', 'Data Analysis', 'Career Development', 'Technology'],
     faqs: [
@@ -353,6 +363,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Comment l\'intelligence artificielle va transformer le marché du travail d\'ici 2030 — quels métiers sont menacés, lesquels vont émerger, et quelles compétences les lycéens doivent développer dès maintenant.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '10 min de lecture',
     tags: ['Career Development', 'Technology', 'Future of Work'],
     faqs: [
@@ -387,6 +398,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Tout ce qu\'il faut savoir pour trouver et réussir un stage d\'été en tant que lycéen en France — calendrier, secteurs, candidatures et comment valoriser l\'expérience pour la suite.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '8 min de lecture',
     tags: ['Internship', 'Work Experience', 'Career Development', 'France'],
     faqs: [
@@ -421,6 +433,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Guide pour les lycéens attirés par la finance et la banque — ce que font vraiment les équipes financières, quelles compétences développer, et comment postuler à des stages dans ce secteur sélectif.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '9 min de lecture',
     tags: ['Internship', 'Business', 'Career Development', 'Finance'],
     faqs: [
@@ -455,6 +468,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Analyse des résultats PISA 2022 de la France — où se situe la France par rapport aux autres pays, quelles compétences sont évaluées, et comment interpréter ces résultats pour votre enfant.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '9 min de lecture',
     tags: ['PISA', 'Academic Assessment', 'Child Development', 'France'],
     faqs: [
@@ -489,6 +503,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     description:
       'Comment choisir entre les grandes écoles et l\'université en France — différences de cursus, de culture, de débouchés professionnels, et comment se préparer dès le lycée pour les deux voies.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '10 min de lecture',
     tags: ['University Admissions', 'Career Development', 'France', 'Academic Assessment'],
     faqs: [
@@ -522,6 +537,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'PISA 2025 : La Crise de l\'Éducation Mondiale',
     description: 'PISA 2025 révèle les scores les plus bas jamais enregistrés en mathématiques, lecture et sciences dans les pays de l\'OCDE. Nous décryptons ce que ces résultats signifient pour les familles et pourquoi évaluer son enfant n\'a jamais été aussi crucial.',
     date: '2026-09-10',
+    dateModified: '2026-09-10',
     readTime: '12 min de lecture',
     tags: ['PISA', 'Éducation Mondiale', 'Évaluation Académique', 'Mathématiques', 'Lecture'],
     faqs: [

@@ -106,6 +106,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
   const related = BLOG_POSTS_FR
     .filter((p) => p.slug !== slug)
     .map((p) => ({ post: p, score: p.tags.filter((t: string) => post.tags.includes(t)).length }))
+    .filter(({ score }) => score > 0)
     .sort((a, b) => b.score - a.score)
     .slice(0, 3)
     .map((s) => s.post)

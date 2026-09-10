@@ -25,6 +25,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'The developmental and career case for professional experience at 14–16, not 17–18. Neuroscience, university admissions data, and labour market research show early internship experience produces measurably better outcomes — and the gap widens over time.',
     date: '2026-06-29',
+    dateModified: '2026-09-10',
     readTime: '10 min read',
     tags: ['Internship', 'Career Development', 'Child Development', 'University Admissions', 'Work Experience'],
     faqs: [
@@ -59,6 +60,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'The evidence-based case for high school internships — how structured work experience at 14–18 builds self-efficacy, resilience, and professional identity, and measurably improves university application outcomes.',
     date: '2026-06-25',
+    dateModified: '2026-09-10',
     readTime: '9 min read',
     tags: ['Internship', 'University Admissions', 'Career Development', 'High School', 'Work Experience'],
     faqs: [
@@ -93,6 +95,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'Everything UK secondary school students need to know about business work experience — what it involves, where to find placements, how to secure one, and why a verified assessment score strengthens every application.',
     date: '2026-06-30',
+    dateModified: '2026-09-10',
     readTime: '10 min read',
     tags: ['Internship', 'Career Development', 'Work Experience', 'Business'],
     faqs: [
@@ -131,6 +134,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A practical guide for UK secondary school students on securing a technology internship or work experience placement before starting university — covering where to look, how to apply without a portfolio, and what actually gets you shortlisted.',
     date: '2026-06-30',
+    dateModified: '2026-09-10',
     readTime: '11 min read',
     tags: ['Internship', 'Career Development', 'Work Experience'],
     faqs: [
@@ -169,6 +173,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A 2026 breakdown of international standardised testing trends — SAS scores, PISA/TIMSS benchmarks, Digital SAT adaptive testing, and the percentile thresholds families need to track for selective admissions.',
     date: '2026-06-16',
+    dateModified: '2026-09-10',
     readTime: '9 min read',
     tags: ['Standardised Testing', 'International Benchmarks', '11+', 'Digital SAT', 'PISA'],
     faqs: [
@@ -199,6 +204,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A practical guide for parents on preparing children for the 11+ exam at home — covering verbal reasoning, non-verbal reasoning, maths and English, with a recommended 18-month practice timeline.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '8 min read',
     tags: ['11+', 'Grammar Schools', 'Preparation', 'Parent Guide'],
     faqs: [
@@ -233,6 +239,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'Standardised scores, percentile rankings and Standardised Age Scores (SAS) explained in plain language — what the numbers mean, what counts as a good score, and how Eduentry uses the same scale as professional assessments.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '6 min read',
     tags: ['Standardised Testing', 'Scores', 'Percentile', 'Parent Guide'],
     faqs: [
@@ -267,6 +274,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A complete guide to the verbal reasoning questions your child will face in the 11+ — covering all major question types with worked examples, common mistakes to avoid, and tips for effective home practice.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '7 min read',
     tags: ['Verbal Reasoning', '11+', 'Practice', 'Question Types'],
     faqs: [
@@ -301,6 +309,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'What score does your child need for a grammar school place in 2026? This guide covers the SAS thresholds, percentile benchmarks and entry requirements across England\'s key grammar school areas.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '7 min read',
     tags: ['Grammar Schools', '11+', 'Entry Requirements', '2026'],
     faqs: [
@@ -336,6 +345,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'How US gifted and talented programs identify students — CogAT, WISC-V, NWEA MAP, and OLSAT explained, with score thresholds by program type and a practical preparation guide for families.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '9 min read',
     tags: ['Gifted Testing', 'CogAT', 'WISC', 'US Education', 'Gifted Programs'],
     faqs: [
@@ -370,6 +380,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A complete parent\'s guide to NWEA MAP Growth scores — what RIT scores mean, grade-level benchmarks, percentile comparison, growth norms, and how high MAP scores relate to gifted identification.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '7 min read',
     tags: ['NWEA MAP', 'RIT Scores', 'US Education', 'Gifted Programs', 'Assessment'],
     faqs: [
@@ -404,6 +415,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'Everything you need to know about the ISEE and SSAT — how each test works, score reporting, key differences, which to choose for your target schools, and how to prepare effectively.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '8 min read',
     tags: ['ISEE', 'SSAT', 'Private School', 'US Education', 'Entrance Exam'],
     faqs: [
@@ -438,6 +450,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A practical, evidence-based guide for US families preparing for gifted identification testing — what each test measures, what is and isn\'t preparation-responsive, and how to build the right skills over time.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '8 min read',
     tags: ['Gifted Testing', 'CogAT', 'NNAT', 'US Education', 'Preparation'],
     faqs: [
@@ -473,6 +486,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A complete guide for parents to the Dutch Doorstroomtoets (formerly Cito toets) — how scores work, what they mean for secondary school placement, and how to support your child through group 8.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '7 min read',
     tags: ['Netherlands', 'Cito', 'Doorstroomtoets', 'Dutch Education', 'VWO'],
     faqs: [
@@ -507,6 +521,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'Everything parents need to know about VWO and Gymnasium in the Netherlands — the highest level of Dutch secondary education, how entry works, and how Tweetalig VWO programmes compare.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '7 min read',
     tags: ['Netherlands', 'VWO', 'Gymnasium', 'Dutch Education', 'Secondary School'],
     faqs: [
@@ -541,6 +556,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'How giftedness (hoogbegaafdheid) is identified and supported in Dutch schools — WISC-V assessment, plusklas provision, Leonardoscholen, and what to do if your child is underachieving.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '8 min read',
     tags: ['Netherlands', 'Gifted Education', 'Hoogbegaafd', 'WISC-V', 'Dutch Schools'],
     faqs: [
@@ -575,6 +591,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A guide for expat families to international school admissions in the Netherlands — CAT4 assessment, IB vs British curriculum schools, EAL considerations, and how to navigate waiting lists.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '7 min read',
     tags: ['Netherlands', 'International Schools', 'CAT4', 'Expat', 'Amsterdam'],
     faqs: [
@@ -610,6 +627,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A complete guide to the CAT4 cognitive abilities test for parents at British-curriculum schools in Dubai and Abu Dhabi — four batteries explained, SAS scoring, stanines, and how UAE schools use results.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '8 min read',
     tags: ['UAE', 'CAT4', 'Dubai', 'British Curriculum', 'Cognitive Testing'],
     faqs: [
@@ -644,6 +662,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'How admissions work at the most sought-after British-curriculum schools in the UAE — GEMS Wellington, JESS, Dubai College, BSAK — including waiting lists, assessment process, and KHDA ratings.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '8 min read',
     tags: ['UAE', 'Dubai', 'British Schools', 'Admissions', 'KHDA'],
     faqs: [
@@ -678,6 +697,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'How gifted and more-able students are identified and supported in UAE international schools — CAT4 thresholds, KHDA expectations, Al Mawhiba programme, and what to do when school provision falls short.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '7 min read',
     tags: ['UAE', 'Gifted Education', 'CAT4', 'KHDA', 'Dubai Schools'],
     faqs: [
@@ -712,6 +732,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A curriculum-by-curriculum guide to entrance assessments at international schools in the UAE — British (CAT4), American (ISEE/SSAT), IB, and Indian (CBSE/ICSE) school admissions explained.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '7 min read',
     tags: ['UAE', 'Entrance Exams', 'CAT4', 'ISEE', 'International Schools'],
     faqs: [
@@ -747,6 +768,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'How gifted education works across Canadian provinces — different identification processes, WISC-V assessment, CCAT screening, wait times, and what happens when families move between provinces.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '8 min read',
     tags: ['Canada', 'Gifted Education', 'WISC-V', 'Ontario', 'Provincial Education'],
     faqs: [
@@ -781,6 +803,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A detailed guide to Ontario\'s formal Gifted exceptionality process — WISC-V assessment, the IPRC committee, CCAT screening, self-contained Gifted classes, and parent rights under the Education Act.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '8 min read',
     tags: ['Canada', 'Ontario', 'Gifted', 'IPRC', 'WISC-V'],
     faqs: [
@@ -815,6 +838,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'How admissions work at Canada\'s top independent schools — Upper Canada College, Havergal, Ridley — including ISEE and SSAT requirements, competitive score ranges, and the full application timeline.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '8 min read',
     tags: ['Canada', 'Private Schools', 'ISEE', 'SSAT', 'Independent Schools'],
     faqs: [
@@ -849,6 +873,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A guide to French Immersion, magnet schools, IB public programmes, and other selective pathways in Canadian public education — how each works, how to access them, and how to combine them.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '7 min read',
     tags: ['Canada', 'French Immersion', 'Public Schools', 'IB', 'Gifted'],
     faqs: [
@@ -884,6 +909,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A complete guide to the ACER Scholarship Examination — how Australia\'s most widely used independent school entrance test works, how scores are reported, and how to prepare across all three components.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '9 min read',
     tags: ['Australia', 'ACER', 'Scholarship Exam', 'Private Schools', 'Independent Schools'],
     faqs: [
@@ -918,6 +944,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A complete guide to the NSW Opportunity Class Placement Test — what OC classes are, how the test works, how offers are made, score thresholds, and how to prepare your Year 4 child for selection.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '8 min read',
     tags: ['Australia', 'NSW', 'Opportunity Class', 'OC Test', 'Gifted Education'],
     faqs: [
@@ -952,6 +979,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'Everything WA families need to know about GATE — Western Australia\'s Gifted and Talented Education programme. How the two-stage assessment works, PEAC, Perth Modern School, and how to prepare.',
     date: '2026-06-17',
+    dateModified: '2026-09-10',
     readTime: '8 min read',
     tags: ['Australia', 'Western Australia', 'GATE', 'Gifted Education', 'Perth Modern'],
     faqs: [
@@ -986,6 +1014,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'A complete parent\'s guide to NAPLAN — Australia\'s national literacy and numeracy assessment for Years 3, 5, 7 and 9. How the band scoring works, what results mean, and how to use them.',
     date: '2026-06-18',
+    dateModified: '2026-09-10',
     readTime: '7 min read',
     tags: ['Australia', 'NAPLAN', 'Literacy', 'Numeracy', 'National Assessment'],
     faqs: [
@@ -1020,6 +1049,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'What is digital marketing work experience actually like? Students share what they did, what surprised them, and what they wish they\'d known — plus how to find and secure a placement in the UK.',
     date: '2026-07-09',
+    dateModified: '2026-09-10',
     readTime: '9 min read',
     tags: ['Internship', 'Career Development', 'Work Experience', 'Digital Marketing'],
     faqs: [
@@ -1054,6 +1084,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'Everything UK students need to know about business work experience from age 12 to 18 — what\'s available in each year group, the major employer schemes, how to apply, and what makes an application stand out.',
     date: '2026-07-09',
+    dateModified: '2026-09-10',
     readTime: '10 min read',
     tags: ['Internship', 'Career Development', 'Work Experience', 'Business', 'University Admissions'],
     faqs: [
@@ -1092,6 +1123,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'More students than ever are hitting top grades — which makes academic results a weaker differentiator than at any point in the last two decades. Here is what actually separates competitive university applicants, and why starting to build it at 15 changes the outcome.',
     date: '2026-09-08',
+    dateModified: '2026-09-10',
     readTime: '11 min read',
     tags: ['Internship', 'Career Development', 'Work Experience', 'University Admissions'],
     faqs: [
@@ -1126,6 +1158,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description:
       'Can a 16-year-old actually run a business in the UK? Yes — and universities notice. From online tutoring to freelancing and e-commerce, here are the platforms, realistic earnings, and exactly how early business experience changes university applications.',
     date: '2026-09-06',
+    dateModified: '2026-09-10',
     readTime: '11 min read',
     tags: ['Internship', 'Career Development', 'Work Experience', 'Business'],
     faqs: [
@@ -1163,6 +1196,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'PISA 2025: The Global Education Crisis',
     description: 'PISA 2025 reveals the lowest ever scores in maths, reading and science across OECD countries. We break down what the results mean for UK families and why benchmarking your child has never mattered more.',
     date: '2026-09-10',
+    dateModified: '2026-09-10',
     readTime: '14 min read',
     tags: ['PISA', 'Academic Benchmarking', 'Global Education', 'UK Education', 'Maths', 'Reading'],
     faqs: [
@@ -1233,6 +1267,7 @@ export function getRelatedPosts(slug: string, count = 3): BlogPostMeta[] {
       post: p,
       score: p.tags.filter((t) => post.tags.includes(t)).length,
     }))
+    .filter(({ score }) => score > 0)
     .sort((a, b) => b.score - a.score)
     .slice(0, count)
     .map((s) => s.post)

@@ -9,6 +9,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       '14–16 yaşında profesyonel deneyim edinmenin gelişimsel ve kariyer açısından önemi. Nörobilim, üniversite kabul verileri ve iş gücü piyasası araştırmaları, erken staj deneyiminin ölçülebilir biçimde daha iyi sonuçlar ürettiğini ve bu farkın zamanla büyüdüğünü ortaya koyuyor.',
     date: '2026-06-29',
+    dateModified: '2026-09-10',
     readTime: '10 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'Çocuk Gelişimi', 'Üniversite Kabulü', 'İş Deneyimi'],
     faqs: [
@@ -44,6 +45,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Lise stajları için kanıta dayalı değerlendirme — 14–18 yaşında yapılandırılmış iş deneyiminin öz yeterliliği, dayanıklılığı ve profesyonel kimliği nasıl geliştirdiği ve üniversite başvuru sonuçlarını ölçülebilir biçimde nasıl iyileştirdiği.',
     date: '2026-06-25',
+    dateModified: '2026-09-10',
     readTime: '9 dk okuma',
     tags: ['Staj', 'Üniversite Kabulü', 'Kariyer Gelişimi', 'Lise', 'İş Deneyimi'],
     faqs: [
@@ -79,6 +81,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'İngiliz lise öğrencilerinin iş dünyası deneyimi hakkında bilmesi gereken her şey — neleri kapsadığı, nerede yerleştirme bulunacağı, nasıl güvence altına alınacağı ve doğrulanmış bir değerlendirme puanının her başvuruyu nasıl güçlendirdiği.',
     date: '2026-06-30',
+    dateModified: '2026-09-10',
     readTime: '10 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'İş Dünyası'],
     faqs: [
@@ -118,6 +121,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'İngiliz lise öğrencilerinin üniversiteye başlamadan önce teknoloji stajı veya iş deneyimi yerleştirmesi güvence altına alması için pratik bir rehber — nerede aranacağı, portföy olmadan nasıl başvurulacağı ve gerçekten kısa listeye girmenin yolları.',
     date: '2026-06-30',
+    dateModified: '2026-09-10',
     readTime: '11 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi'],
     faqs: [
@@ -156,6 +160,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Warren Buffett\'tan Sakıp Sabancı\'ya, Almanya\'nın mesleki eğitim sisteminden Montessori pedagojisine — neden en kalıcı dersler sınıfın dışında, gerçek sorumlulukların içinde öğreniliyor? Erken yaşta iş deneyiminin çocuk gelişimine katkılarını araştırma ve gerçek örneklerle ele alıyoruz.',
     date: '2026-07-08',
+    dateModified: '2026-09-10',
     readTime: '15 dk okuma',
     tags: ['Çocuk Gelişimi', 'İş Deneyimi', 'Eğitim', 'Kariyer Gelişimi', 'Girişimcilik'],
     faqs: [
@@ -190,6 +195,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Kodlama bilmeden bile siber güvenlik stajı alınabilir mi? Hangi firmalar lise öğrencisi kabul ediyor, nasıl başvurulur, yerleştirmede neler beklenmeli? İngiliz öğrencilere yönelik eksiksiz rehber.',
     date: '2026-07-09',
+    dateModified: '2026-09-10',
     readTime: '11 dk okuma',
     tags: ['Siber Güvenlik', 'Staj', 'Kariyer Gelişimi', 'Teknoloji', 'İş Deneyimi'],
     faqs: [
@@ -228,6 +234,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'A Level programları nedir, nasıl çalışır, hangi dersler seçilmeli? İngiltere\'de lise son sınıf sistemini üniversite başvuruları ve kariyer hedefleri açısından Türk aileler için kapsamlı biçimde açıklıyoruz.',
     date: '2026-07-20',
+    dateModified: '2026-09-10',
     readTime: '10 dk okuma',
     tags: ['A Level', 'İngiltere Eğitim Sistemi', 'Üniversite Kabulü', 'Kariyer Gelişimi', 'İş Deneyimi'],
     faqs: [
@@ -266,6 +273,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Dubai\'de hangi müfredat sistemleri var, okul seçimi nasıl yapılır, maliyetler nelerdir? Dubai\'ye yerleşen veya taşınmayı düşünen Türk aileler için BAE eğitim sistemini tüm yönleriyle açıklıyoruz.',
     date: '2026-07-20',
+    dateModified: '2026-09-10',
     readTime: '11 dk okuma',
     tags: ['Dubai', 'BAE Eğitim Sistemi', 'Uluslararası Okul', 'Ebeveyn Rehberi', 'İş Deneyimi'],
     faqs: [
@@ -345,6 +353,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Her zamankinden daha fazla öğrenci en yüksek notları alıyor — bu da akademik sonuçları son yirmi yılın en zayıf farklılaştırıcısı haline getiriyor. Rekabetçi üniversite başvurularını gerçekte ne ayırt ediyor ve neden 15 yaşında başlamak sonucu değiştiriyor.',
     date: '2026-09-08',
+    dateModified: '2026-09-10',
     readTime: '11 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Üniversite Kabulü'],
     faqs: [
@@ -380,6 +389,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'İngiltere\'de 12 ila 18 yaş arası iş dünyası deneyimi hakkında her şey — her yıl grubu için mevcut olanlar, büyük işveren programları, nasıl başvurulur ve başvurunun öne çıkmasını ne sağlar.',
     date: '2026-07-09',
+    dateModified: '2026-09-10',
     readTime: '10 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'İş Dünyası', 'Üniversite Kabulü'],
     faqs: [
@@ -413,6 +423,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Dijital Pazarlama Stajı Nasıl Bulunur',
     description: 'Lise öğrencileri için dijital pazarlama stajı bulma rehberi — hangi firmalara başvurulacağı, hangi becerilerin öne çıkarılacağı, portfolio olmadan nasıl başvurulacağı ve doğrulanmış bir değerlendirme puanının süreci nasıl hızlandırdığı.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '9 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Dijital Pazarlama'],
     faqs: [
@@ -429,6 +440,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Veri Analitiği Kariyer Rehberi',
     description: 'Veri analitiğine lise yıllarından itibaren nasıl başlanır — hangi matematiksel temel gerekli, hangi araçlar öğrenilmeli, staj nasıl bulunur ve bu alandaki kariyer yolları nelerdir.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '10 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi'],
     faqs: [
@@ -445,6 +457,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Staj İçin CV Nasıl Yazılır',
     description: 'İş deneyimi olmayan 16-18 yaş öğrencileri için staj başvurusuna yönelik CV yazma rehberi — ne dahil edilmeli, nasıl yapılandırılmalı, hangi hatalardan kaçınılmalı ve deneyim eksikliği kanıtlanabilir becerilerle nasıl telafi edilmeli.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Lise'],
     faqs: [
@@ -461,6 +474,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Staj Mülakatına Nasıl Hazırlanılır',
     description: 'Bir staj mülakatını hazırlamak ve başarıyla geçmek için her şey — en sık sorulan sorular, önceki iş deneyimi olmadan nasıl cevap verilir, mülakat gününde hangi hatalar plası kaybettirir ve nasıl farklılaşılır.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '9 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi'],
     faqs: [
@@ -477,6 +491,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'PISA 2025: Küresel Eğitim Krizi',
     description: 'PISA 2025, OECD ülkelerinde matematik, okuma ve fen bilimlerinde şimdiye kadar kaydedilen en düşük puanları ortaya koyuyor. Sonuçların aileler için ne anlama geldiğini ve çocuğunuzu değerlendirmenin neden hiç bu kadar önemli olmadığını açıklıyoruz.',
     date: '2026-09-10',
+    dateModified: '2026-09-10',
     readTime: '12 dakika okuma',
     tags: ['PISA', 'Küresel Eğitim', 'Akademik Değerlendirme', 'Matematik', 'Okuma'],
     faqs: [

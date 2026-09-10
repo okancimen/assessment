@@ -9,6 +9,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     description:
       'La importancia del desarrollo cognitivo y profesional de las prácticas a los 14–16 años. La neurociencia, los datos de admisión universitaria y la investigación del mercado laboral demuestran que la experiencia profesional temprana produce resultados mediblemente mejores que se acumulan con el tiempo.',
     date: '2026-06-29',
+    dateModified: '2026-09-10',
     readTime: '10 min de lectura',
     tags: ['Prácticas', 'Desarrollo profesional', 'Desarrollo infantil', 'Admisión universitaria', 'Experiencia laboral'],
     faqs: [
@@ -44,6 +45,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     description:
       'Una evaluación basada en evidencias de las prácticas en el instituto — cómo la experiencia laboral estructurada entre los 14 y los 18 años desarrolla la autoeficacia, la resiliencia y la identidad profesional, y mejora mediblemente los resultados de las solicitudes universitarias.',
     date: '2026-06-25',
+    dateModified: '2026-09-10',
     readTime: '9 min de lectura',
     tags: ['Prácticas', 'Acceso universitario', 'Desarrollo profesional', 'Instituto', 'Experiencia laboral'],
     faqs: [
@@ -79,6 +81,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     description:
       'Todo lo que los estudiantes de instituto en el Reino Unido necesitan saber sobre la experiencia laboral en empresas — qué implica, dónde encontrar una colocación, cómo conseguirla y cómo una puntuación de evaluación verificada refuerza cada solicitud.',
     date: '2026-06-30',
+    dateModified: '2026-09-10',
     readTime: '10 min de lectura',
     tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral', 'Empresa'],
     faqs: [
@@ -118,6 +121,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     description:
       'Una guía práctica para que los estudiantes de instituto consigan prácticas tecnológicas o una colocación de experiencia laboral antes de empezar la universidad — dónde buscar, cómo solicitar sin portfolio y qué hace que realmente te incluyan en la lista de candidatos.',
     date: '2026-06-30',
+    dateModified: '2026-09-10',
     readTime: '11 min de lectura',
     tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral'],
     faqs: [
@@ -197,6 +201,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     description:
       'Más estudiantes que nunca obtienen las mejores notas, lo que convierte los resultados académicos en el diferenciador más débil de las últimas dos décadas. Qué distingue realmente las solicitudes universitarias competitivas y por qué empezar a los 15 cambia el resultado.',
     date: '2026-09-08',
+    dateModified: '2026-09-10',
     readTime: '11 min de lectura',
     tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral', 'Acceso universitario'],
     faqs: [
@@ -232,6 +237,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     description:
       'Todo lo que los estudiantes del Reino Unido necesitan saber sobre experiencia laboral en empresa de los 12 a los 18 años — qué está disponible en cada curso, los principales programas de empleadores, cómo solicitar y qué hace destacar una solicitud.',
     date: '2026-07-09',
+    dateModified: '2026-09-10',
     readTime: '10 min de lectura',
     tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral', 'Empresa', 'Acceso universitario'],
     faqs: [
@@ -265,6 +271,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Prácticas de marketing digital para estudiantes',
     description: 'Guía práctica para estudiantes de instituto que quieren hacer prácticas en marketing digital — dónde buscar, qué habilidades demostrar, cómo construir un portfolio mínimo y por qué empezar antes de los 17 marca la diferencia.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '9 min de lectura',
     tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral', 'Marketing digital'],
     faqs: [
@@ -281,6 +288,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Prácticas en analítica de datos: guía para estudiantes',
     description: 'Todo lo que un estudiante de instituto necesita saber para conseguir prácticas en analítica de datos — qué se hace realmente, qué habilidades valorar, dónde buscar y cómo demostrar aptitud cuantitativa sin tener experiencia previa.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '10 min de lectura',
     tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral'],
     faqs: [
@@ -297,6 +305,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'CV para prácticas con 16 años',
     description: 'Guía paso a paso para escribir un CV de prácticas con 16 años cuando no se tiene experiencia laboral previa — qué incluir, cómo estructurarlo, qué errores evitar y cómo compensar la falta de experiencia con habilidades demostrables.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '8 min de lectura',
     tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral', 'Instituto'],
     faqs: [
@@ -313,6 +322,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Cómo superar una entrevista de prácticas',
     description: 'Todo lo que un estudiante necesita saber para preparar y superar una entrevista de prácticas — las preguntas más frecuentes, cómo estructurar respuestas sin experiencia previa, los errores que cuestan la plaza y cómo diferenciarse el día de la entrevista.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '9 min de lectura',
     tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral'],
     faqs: [
@@ -329,6 +339,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Prácticas de verano en el Reino Unido',
     description: 'Todo lo que los estudiantes de instituto necesitan saber sobre las prácticas de verano en el Reino Unido — los mejores programas, cuándo solicitar, qué esperar y cómo aprovechar las 4–6 semanas para construir una ventaja real.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '10 min de lectura',
     tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral', 'Instituto'],
     faqs: [
@@ -345,6 +356,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'IA y el futuro del trabajo para jóvenes',
     description: 'Cómo la inteligencia artificial está transformando el mercado laboral y qué significa para los estudiantes de instituto que empiezan a construir su trayectoria profesional ahora — qué habilidades serán más valiosas, qué roles desaparecerán y cómo prepararse.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '10 min de lectura',
     tags: ['Desarrollo profesional', 'Experiencia laboral', 'Desarrollo infantil'],
     faqs: [
@@ -361,6 +373,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Emprender con 16 años: guía práctica',
     description: 'Qué significa realmente emprender siendo estudiante de instituto, por qué la mayoría de los consejos populares son contraproducentes, qué tipos de proyectos generan aprendizaje real a los 16 años y cómo documentar la experiencia para que cuente en solicitudes universitarias.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '11 min de lectura',
     tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral', 'Acceso universitario'],
     faqs: [
@@ -377,6 +390,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Prácticas en finanzas para estudiantes de instituto',
     description: 'Guía completa para estudiantes de instituto que quieren hacer prácticas en finanzas o banca — qué programas existen, qué buscan los reclutadores, cómo preparar una solicitud competitiva y qué aprenderás realmente durante la colocación.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '10 min de lectura',
     tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral', 'Empresa'],
     faqs: [
@@ -393,6 +407,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'PISA 2025: La Crisis Educativa Global',
     description: 'PISA 2025 revela las puntuaciones más bajas jamás registradas en matemáticas, lectura y ciencias en los países de la OCDE. Analizamos qué significan los resultados para las familias y por qué nunca ha sido tan importante evaluar a tu hijo.',
     date: '2026-09-10',
+    dateModified: '2026-09-10',
     readTime: '12 min de lectura',
     tags: ['PISA', 'Educación Global', 'Evaluación Académica', 'Matemáticas', 'Lectura'],
     faqs: [

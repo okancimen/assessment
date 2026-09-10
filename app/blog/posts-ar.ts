@@ -9,6 +9,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'كل ما يحتاجه أولياء الأمور والطلاب في الإمارات لفهم اختبار CAT4 — هيكل الاختبار، والتسجيل، والمدارس التي تستخدمه، وكيفية التحضير للحصول على أفضل النتائج.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '8 دقائق للقراءة',
     tags: ['CAT4', 'UAE Schools', 'Academic Assessment', 'School Admissions'],
     faqs: [
@@ -32,6 +33,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'دليل شامل للتقديم للمدارس البريطانية في دبي وأبوظبي — متطلبات القبول، والاختبارات المطلوبة، والمواعيد النهائية، وكيفية إعداد طفلك بنجاح.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '9 دقائق للقراءة',
     tags: ['UAE Schools', 'British Curriculum', 'School Admissions', 'Dubai'],
     faqs: [
@@ -55,6 +57,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'كل ما تحتاج معرفته عن برامج رعاية الموهوبين في الإمارات — من معايير التأهل والاختبارات المطلوبة إلى أفضل البرامج في دبي وأبوظبي والشارقة.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '7 دقائق للقراءة',
     tags: ['UAE Schools', 'Gifted Programs', 'Academic Assessment', 'Abu Dhabi'],
     faqs: [
@@ -78,6 +81,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'دليل تفصيلي لاختبارات القبول في أبرز المدارس الدولية في الإمارات — ما تتوقعه، وكيف تستعد، وما الفرق بين الاختبارات المختلفة.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '8 دقائق للقراءة',
     tags: ['UAE Schools', 'School Admissions', 'International Schools', 'Academic Assessment'],
     faqs: [
@@ -101,6 +105,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'الأبحاث تثبت أن التدريب المبكر في سن المراهقة يُحدث فرقاً جوهرياً في المسيرة المهنية. اكتشف لماذا وكيف تبدأ مبكراً.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '7 دقائق للقراءة',
     tags: ['Career Development', 'Internship', 'Work Experience'],
     faqs: [
@@ -123,6 +128,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'دليل عملي لطلاب الثانوية في دبي الراغبين في الحصول على تدريب مهني — أين تبحث، وكيف تُقدم طلبك، وما الذي تتوقعه.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '6 دقائق للقراءة',
     tags: ['Internship', 'Dubai', 'Career Development', 'Work Experience'],
     faqs: [
@@ -145,6 +151,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'دليل خطوة بخطوة لكتابة سيرة ذاتية احترافية للتدريب المهني لطلاب الثانوية الذين لا يمتلكون خبرة عمل سابقة.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '7 دقائق للقراءة',
     tags: ['Career Development', 'Internship', 'Work Experience'],
     faqs: [
@@ -167,6 +174,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'دليل شامل للتحضير لمقابلة التدريب المهني — الأسئلة الشائعة، وكيف تجيب عنها، وآداب المقابلة في بيئة العمل الخليجية.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '6 دقائق للقراءة',
     tags: ['Internship', 'Career Development', 'UAE', 'Work Experience'],
     faqs: [
@@ -189,6 +197,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'دليل خاص بتدريب قطاع التكنولوجيا لطلاب الثانوية في دبي وأبوظبي — المهارات المطلوبة، والشركات المناسبة، وكيفية البداية.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '7 دقائق للقراءة',
     tags: ['Technology', 'Internship', 'UAE', 'Career Development'],
     faqs: [
@@ -211,6 +220,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'كيف يُمكن لطلاب الثانوية الطموحين في الإمارات الحصول على تدريب في البنوك وشركات الاستثمار والمؤسسات المالية.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '7 دقائق للقراءة',
     tags: ['Business', 'Internship', 'UAE', 'Finance', 'Career Development'],
     faqs: [
@@ -233,6 +243,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'كيف سيُشكّل الذكاء الاصطناعي سوق العمل في منطقة الشرق الأوسط وشمال أفريقيا، وما المهارات التي يحتاجها طلاب الثانوية اليوم للتأهل لوظائف الغد.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '8 دقائق للقراءة',
     tags: ['Technology', 'Career Development', 'MENA', 'Future of Work'],
     faqs: [
@@ -255,6 +266,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'دليل شامل لبرامج التدريب الصيفي للطلاب في الإمارات — أفضل البرامج، ومواعيد التقديم، وكيفية الاستعداد للحصول على قبول.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '7 دقائق للقراءة',
     tags: ['Internship', 'UAE', 'Summer Programs', 'Career Development'],
     faqs: [
@@ -277,6 +289,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'كيف يبدأ طلاب الثانوية في الشرق الأوسط مسيرتهم في التسويق الرقمي — المهارات المطلوبة وأين تجد الفرص وكيف تثبت جدارتك.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '6 دقائق للقراءة',
     tags: ['Digital Marketing', 'Internship', 'MENA', 'Career Development'],
     faqs: [
@@ -299,6 +312,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'لماذا يُعدّ تحليل البيانات من أكثر المسارات المهنية طلباً في الإمارات، وكيف يبدأ طلاب الثانوية تعلم هذه المهارة.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '7 دقائق للقراءة',
     tags: ['Data Analytics', 'Internship', 'UAE', 'Career Development', 'Technology'],
     faqs: [
@@ -321,6 +335,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     description:
       'دليل عملي لطلاب الثانوية في الإمارات الراغبين في بدء مشروع تجاري صغير — الأفكار المناسبة، والإجراءات القانونية، وكيف توازن بين الدراسة والعمل.',
     date: '2026-09-09',
+    dateModified: '2026-09-10',
     readTime: '8 دقائق للقراءة',
     tags: ['Business', 'Career Development', 'UAE', 'Entrepreneurship'],
     faqs: [
@@ -342,6 +357,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
     shortTitle: 'بيزا 2025: أزمة التعليم العالمية',
     description: 'كشف بيزا 2025 عن أدنى درجات سُجّلت على الإطلاق في الرياضيات والقراءة والعلوم في دول منظمة التعاون الاقتصادي والتنمية. نستعرض ما تعنيه هذه النتائج للأسر ولماذا لم يكن تقييم طفلك أهم مما هو عليه الآن.',
     date: '2026-09-10',
+    dateModified: '2026-09-10',
     readTime: '12 دقائق للقراءة',
     tags: ['PISA', 'Global Education', 'Academic Assessment', 'Mathematics', 'Reading'],
     faqs: [
