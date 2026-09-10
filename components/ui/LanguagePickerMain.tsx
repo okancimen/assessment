@@ -270,7 +270,7 @@ const LANG_META = {
   ES: { flag: '🇪🇸', label: 'Español' },
   TR: { flag: '🇹🇷', label: 'Türkçe' },
   FR: { flag: '🇫🇷', label: 'Français' },
-  AR: { flag: '🇦🇪', label: 'العربية' },
+  AR: { flag: '🇸🇦', label: 'العربية' },
 }
 
 export default function LanguagePickerMain() {
