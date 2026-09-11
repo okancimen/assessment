@@ -9,11 +9,12 @@ const LANGUAGES = [
   { code: 'ES', label: 'Español',   flag: '🇪🇸', href: '/es' },
   { code: 'TR', label: 'Türkçe',    flag: '🇹🇷', href: '/tr' },
   { code: 'AR', label: 'العربية',   flag: '🇸🇦', href: '/ar' },
+  { code: 'RU', label: 'Русский',   flag: '🇷🇺', href: '/ru' },
   { code: 'ZH', label: '中文',      flag: '🇨🇳', href: '/zh' },
 ]
 
 const PATH_TO_CODE: Record<string, string> = {
-  '/tr': 'TR', '/fr': 'FR', '/es': 'ES', '/ar': 'AR', '/zh': 'ZH', '/en': 'EN',
+  '/tr': 'TR', '/fr': 'FR', '/es': 'ES', '/ar': 'AR', '/ru': 'RU', '/zh': 'ZH', '/en': 'EN',
 }
 
 function detectLang(pathname: string): string {

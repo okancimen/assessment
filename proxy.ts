@@ -1,7 +1,7 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
-const SUPPORTED_LANGS = ['tr', 'fr', 'es', 'ar', 'zh'] as const
+const SUPPORTED_LANGS = ['tr', 'fr', 'es', 'ar', 'ru', 'zh'] as const
 
 function detectLanguage(acceptLanguage: string | null): string {
   if (!acceptLanguage) return 'en'
@@ -57,6 +57,7 @@ export async function proxy(request: NextRequest) {
       pathname === '/es' || pathname.startsWith('/es/') ||
       pathname === '/tr' || pathname.startsWith('/tr/') ||
       pathname === '/ar' || pathname.startsWith('/ar/') ||
+      pathname === '/ru' || pathname.startsWith('/ru/') ||
       pathname === '/zh' || pathname.startsWith('/zh/') ||
       pathname === '/sitemap.xml' ||
       pathname === '/robots.txt'
@@ -111,6 +112,7 @@ export async function proxy(request: NextRequest) {
     request.nextUrl.pathname.startsWith('/es') ||
     request.nextUrl.pathname.startsWith('/fr') ||
     request.nextUrl.pathname.startsWith('/ar') ||
+    request.nextUrl.pathname.startsWith('/ru') ||
     request.nextUrl.pathname.startsWith('/methodology') ||
     request.nextUrl.pathname.startsWith('/about') ||
     request.nextUrl.pathname.startsWith('/11-plus') ||
