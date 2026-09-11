@@ -1404,6 +1404,39 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/auth/register',
     },
   },
+  {
+    slug: 'pisa-2025-work-experience-student-readiness',
+    title: 'PISA 2025 Says Grades Are Falling — Here\'s Why Work Experience Is the Missing Answer',
+    shortTitle: 'PISA 2025 & Work Experience: The Student Readiness Gap',
+    description: 'OECD\'s PISA 2025 report reveals the lowest academic scores ever recorded. But the data also points to a solution: students who engage with the real world develop the skills schools can\'t teach. Here\'s what the evidence says about early work experience and internships.',
+    date: '2026-09-11',
+    readTime: '13 min read',
+    tags: ['Work Experience', 'Internship', 'Student Skills', 'Future of Education', 'Career Development'],
+    faqs: [
+      {
+        q: 'What did PISA 2025 find about student performance?',
+        a: 'PISA 2025 tested over 760,000 students across 91 countries and found that OECD average scores in reading, maths and science are at their lowest levels ever recorded. Reading fell 28 points and maths fell 22 points between 2015 and 2025 across OECD countries. The report also found that students who use AI for schoolwork (summarising, researching) score around 20 points lower than those who do not — equivalent to one year of schooling.',
+      },
+      {
+        q: 'Why is early work experience important for students?',
+        a: 'Early work experience gives students the skills that PISA tests but schools increasingly struggle to teach: critical thinking, problem-solving, communication and real-world decision-making. Research consistently shows that students who gain professional exposure before the age of 16 develop stronger motivation, higher self-efficacy and better university and career outcomes than peers who start later. The skills compound — the earlier the exposure, the more time students have to build on it.',
+      },
+      {
+        q: 'At what age should students start work experience?',
+        a: 'Most research points to 14–16 as the optimal window for a first structured work experience or internship. This age is late enough for students to engage meaningfully with professional tasks, and early enough to leave time to reflect, repeat and build on the experience before university applications. Starting at 17 or 18 is still valuable, but gives much less time for the experience to compound into a clear professional narrative.',
+      },
+      {
+        q: 'How can students do an internship while still at school?',
+        a: 'Eduentry\'s internship assessment programme is designed specifically for students aged 14–18 who are still in secondary school. Students complete a 34-question adaptive assessment covering professional readiness, communication and problem-solving skills, then receive a personalised readiness report and are matched with relevant work experience opportunities — all without needing to find a placement independently.',
+      },
+    ],
+    cta: {
+      heading: 'Is your student ready for work experience?',
+      body: 'Eduentry\'s free internship readiness assessment takes 25 minutes and gives students a personalised report — skills breakdown, readiness score, and matched opportunities.',
+      label: 'Start internship assessment',
+      href: '/internship',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

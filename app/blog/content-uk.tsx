@@ -3373,4 +3373,173 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'pisa-2025-work-experience-student-readiness': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        In December 2025, the OECD published the most comprehensive snapshot of global student performance ever compiled. More than 760,000 fifteen-year-olds across 91 countries sat the PISA science, mathematics and reading assessments — representing approximately 33 million students worldwide. The headline finding was stark: OECD average scores in all three domains are now at their lowest levels ever recorded. Reading has fallen 28 points since 2015. Mathematics has fallen 22 points. The report is titled <em>Future-Ready Students</em> — and its central argument is that the current path is not producing them.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        For parents and educators, the instinctive response to falling scores is to push harder on academics. More revision, more tutoring, more test preparation. But buried in the PISA 2025 data is a more uncomfortable finding: the students who are falling furthest behind are not simply working less hard — they are disengaged, uncertain about the point of school, and missing the real-world connections that give academic learning its purpose. The solution PISA points to is not more of the same. It is a fundamentally different kind of learning — one that connects the classroom to the world of work while students are still young enough for the experience to shape who they become.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What PISA 2025 Actually Found</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The scale of the PISA 2025 results is worth pausing on. A 28-point drop in reading across OECD countries over ten years is not a rounding error — it is equivalent to nearly three-quarters of a year of schooling. In practical terms, the average fifteen-year-old in an OECD country can read less well today than their counterpart could in 2015. And the declines are not evenly distributed: the biggest drops have occurred in the highest-order skills — evaluating information, making connections across multiple sources, and thinking critically about what is read.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          One data point captures the trend particularly vividly. PISA 2025 found that the rate of &ldquo;hasty reading&rdquo; — in which students read quickly but inaccurately — nearly doubled between 2018 and 2025, from around 4.5% to 9% of students. These are students who move through text at speed but retain and comprehend very little of it. In an age when AI can generate unlimited readable content in seconds, the ability to read with genuine understanding and critical judgement is more valuable than ever. The data suggests we are moving in the wrong direction.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The AI finding deserves particular attention. PISA 2025 is the first cycle to systematically measure how students use AI tools. The finding that students who use AI for specific schoolwork tasks — summarising texts, drafting essays, conducting research — score around 20 points lower in science than students who do not use AI for these tasks is striking. Twenty points is equivalent to approximately one year of schooling. The mechanism appears to be that AI-assisted shortcuts reduce the effortful processing that builds deep understanding and the retrieval practice that builds durable memory. The convenience of AI is producing students who feel productive but are learning less.
+        </p>
+        <Callout color="indigo">
+          Students who use AI for schoolwork tasks (summarising, drafting, researching) score approximately 20 points lower in PISA science than students who do not — equivalent to one year of schooling behind their peers. (PISA 2025)
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The misinformation data is equally sobering. Only 46% of fifteen-year-olds across OECD countries reported both checking the credibility of information sources and placing greater trust in scientific evidence than in common sense. A further 37% said they check sources but rely on common sense over evidence — a position that sounds reasonable but leaves students vulnerable to well-sourced but misleading content. Eleven percent trust scientific evidence without verifying sources, and 5% do neither. This means more than half of fifteen-year-olds globally are poorly equipped to navigate a digital information environment that is increasingly saturated with AI-generated content, disinformation, and algorithmically amplified falsehoods.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          There are positive findings too. Students&apos; sense of belonging at school has improved since 2022: 76% of OECD students now report feeling that they belong at school, up from lower levels in the immediate post-pandemic period. Computational problem-solving skills are relatively strong — around two-thirds of OECD students perform at Level 3 or above, and a quarter reach the two highest proficiency levels. And a handful of countries have bucked the overall trend: Turkey, for example, has seen meaningful improvements in science scores since 2022, one of only a small number of OECD countries to do so.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          But the headline picture is unmistakeable. The OECD&apos;s own summary describes a situation in which &ldquo;setbacks in academic performance have coincided with weakening engagement among students&rdquo; across many education systems. Schools that focus purely on test scores while neglecting student motivation, real-world connection and a sense of purpose are not just failing educationally — they are producing the conditions for further decline.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Skills Employers Actually Want — and PISA Measures</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA is not, at heart, an academic exam. It is designed to measure whether students are ready to participate fully in adult life — as workers, citizens and lifelong learners. The skills it tests are precisely the ones that employers consistently identify as most scarce among young applicants.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The World Economic Forum&apos;s annual Future of Jobs report consistently places critical thinking, complex problem-solving and communication at the top of employer skills priorities. A 2024 survey by the Confederation of British Industry found that 70% of employers believe school leavers are inadequately prepared for the workplace — not because of gaps in academic knowledge, but because of gaps in real-world application. Students know facts but struggle to use them under pressure, in unfamiliar contexts, or in collaboration with other people.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025&apos;s new computational problem-solving assessment — which tests students&apos; ability to use modelling tools, conduct experiments and build digital products — captures exactly this gap. The assessment does not test whether students can define what an algorithm is. It tests whether they can use algorithmic thinking to solve a problem they have never seen before. Two-thirds of OECD students can do this at a basic level, but only a quarter reach the higher proficiency levels where real innovation happens.
+        </p>
+        <Callout color="amber">
+          70% of UK employers say school leavers are inadequately prepared for the workplace — not because of academic gaps, but because they lack real-world problem-solving experience. (CBI Education and Skills Survey, 2024)
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The gap between academic performance and workplace readiness is not new. But the PISA 2025 results suggest it is widening. As academic scores fall and AI handles more routine cognitive tasks, the human skills that remain valuable — judgement, resilience, communication, the ability to work with ambiguous information in a professional context — are precisely the skills that schools are least equipped to teach and that assessment systems least often measure.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This is where early work experience becomes not just valuable but essential.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Early Work Experience Changes Everything</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          There is a substantial body of research on what happens when students gain structured professional experience during secondary school. The findings are consistent across countries, age groups and sectors — and they point in a direction that PISA 2025 data strongly supports.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A 2022 study published in the <em>Journal of Vocational Behavior</em> followed students across seven OECD countries who completed structured work placements during secondary school. The researchers found that students with early work experience showed significantly higher levels of what psychologists call &ldquo;career adaptability&rdquo; — the ability to manage transitions, handle uncertainty and take initiative in novel professional situations. Crucially, this effect was strongest for students who began their work experience between the ages of 14 and 16, and weakest for those who started at 18 or older. The researchers concluded that early adolescence is a particularly sensitive period for professional identity formation: the brain is highly plastic, habits are still forming, and the experience of doing real work for the first time has an outsized developmental impact.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The academic outcomes are also stronger than most people expect. A review of studies on school-based work experience programmes, published by the Education Endowment Foundation, found that students who participated in structured placements showed modest but consistent improvements in academic motivation and attendance. The mechanism is straightforward: students who can see a clear connection between their school learning and a real professional environment have stronger reasons to engage with that learning. The abstract question &ldquo;why do I need to know this?&rdquo; has a concrete answer when students have spent time in a workplace where that knowledge is used.
+        </p>
+        <Callout color="emerald">
+          Students with structured work experience between ages 14–16 show significantly higher career adaptability, stronger academic motivation, and better long-term employment outcomes than peers who started work experience at 18 or older. (Journal of Vocational Behavior, 2022)
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The long-term employment data is perhaps the most striking. NACE&apos;s annual employer survey in the United States consistently finds that 83% of employers consider prior internship or work experience &ldquo;somewhat&rdquo; or &ldquo;very&rdquo; important when hiring recent graduates — even when those graduates have strong academic records. Students who completed at least one internship or work placement before graduation receive job offers at a 70% higher rate than those without work experience, and at significantly higher starting salaries. The advantage is compounding: students who start building professional experience early have more of it to show by the time they graduate, and each placement makes the next one easier to secure.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The skills that work experience builds are exactly the skills that PISA 2025 found are declining in schools. Real work demands critical reading — you have to actually understand the document, not skim it. Real work demands information verification — you cannot afford to act on misinformation when there are real consequences. Real work demands computational thinking, communication under pressure, and the ability to handle ambiguous instructions without a teacher to ask. Every day of professional exposure builds the muscles that PISA tests — and that schools are increasingly finding it difficult to develop in classroom settings alone.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Engagement Crisis — and How Real Work Solves It</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          One of the most important findings in PISA 2025 is the relationship between student engagement and academic performance. The OECD authors are explicit: across many education systems, declining academic scores have coincided with declining student engagement. Students who do not see the point of school, who feel disconnected from their learning, and who are going through the motions without genuine investment in what they are being asked to do — these students are falling behind not just motivationally but academically.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The PISA data shows that students are more likely to succeed when they feel a sense of belonging, value the role of schooling, and have strong relationships with teachers and families. But it also implicitly raises a question that schools find uncomfortable: what would make students value the role of schooling more? The honest answer is that school becomes more valuable when students can see its connection to a life they want to live and a world they want to participate in.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Work experience provides this connection directly. A student who has spent two weeks in a marketing agency understands why writing clearly matters. A student who has shadowed a software engineer understands why mathematics is not just an abstract puzzle. A student who has observed a medical professional at work understands why biology and chemistry have real stakes. These connections do not need to be made through inspiring speeches or career fairs — they are made through direct experience, and they stick.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          International evidence supports this. Finland — consistently one of the highest-performing PISA countries — integrates real-world learning into the school curriculum from an early age. German-speaking countries, with their long tradition of apprenticeship and vocational pathways beginning in early secondary school, consistently outperform comparable economies in workforce readiness metrics. Singapore — which topped the PISA 2025 rankings alongside China&apos;s leading provinces — has an explicit national strategy for connecting secondary students with professional environments. The highest-performing education systems in PISA 2025 are not systems that focus exclusively on academic drilling. They are systems that take the whole student seriously, including their need to see how learning connects to real life.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Age Window That Matters Most</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The research on when work experience is most impactful converges on a clear answer: the earlier, the better — within reason. The most developmentally productive window appears to be 14 to 16 years old.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          At 14, students are old enough to engage meaningfully with professional tasks, to observe and absorb workplace norms, and to have genuine conversations with working adults about their careers. They are also at the age when identity formation is most active: adolescents are intensely focused on the question of who they are and who they might become. Professional exposure at this age feeds directly into that identity work in productive ways — giving students concrete reference points for their aspirations rather than leaving them abstract.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The argument for starting at 16 or later — that students are not ready, or should focus on GCSEs first — misunderstands the relationship between engagement and academic performance. Students who have a richer sense of their own future are better motivated to do the academic work required to get there. A student who has spent time in a real working environment is more likely to understand why their GCSEs matter, not less.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Starting work experience at 14 also means that by the time a student reaches their university application, they have two or more years of professional development to reflect on and write about. Admissions tutors and employers alike are interested not just in the fact of work experience, but in evidence that the student has thought about it, learned from it, and built on it. That narrative is only possible if there is enough time between the first experience and the application for genuine development to have occurred.
+        </p>
+        <Callout color="indigo">
+          A student who completes their first work experience at 14 has four years to build on it before university applications close. A student who starts at 17 has months. The compounding advantage of early exposure is not incremental — it is structural.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What PISA 2025 Means for Families Right Now</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For parents reading the PISA 2025 headlines, the instinct to respond by adding more tutoring or academic pressure is understandable but likely counterproductive. The data suggests that the students who are doing well — in PISA terms and in life — are those who have a rich variety of experiences, strong engagement with learning, and clear connections between school and the world beyond it.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          There are practical steps that families can take right now. Encouraging students to read widely — not just for school but from genuine curiosity — builds exactly the deep reading skills that PISA found are declining. Teaching students to check information sources, to ask &ldquo;how do I know this is true?&rdquo; before sharing or acting on something, builds the critical thinking skills that the PISA misinformation data shows are lacking. And providing structured professional exposure — through internships, work experience, or vocational assessments — builds the real-world readiness that no amount of academic tuition alone can substitute for.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The PISA 2025 report concludes that education systems need to adopt a &ldquo;holistic approach to learning, one that values both proficiency and engagement.&rdquo; For individual families, this means recognising that academic scores are not the whole picture — and that the student who has meaningful professional experience, genuine curiosity, and a developed sense of direction will likely do better in the long run than the student who has optimised purely for exam performance.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How Eduentry Makes Internship Experience Accessible at School Age</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          One of the barriers families face when trying to give students early professional exposure is logistics. Finding a work placement requires contacts, time, geographic luck, and the confidence to approach employers. Not every family has these things — and the result is that early work experience, like many educational advantages, tends to cluster among students from more privileged backgrounds. This is a structural inequality that the evidence suggests has real consequences for long-term outcomes.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry&apos;s internship programme is designed to remove these barriers. Available at <Link href="/internship" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">eduentry.com/internship</Link>, it is built specifically for students aged 14–18 who are still in secondary school. Students begin with a 34-question adaptive assessment that measures professional readiness across the dimensions that employers actually evaluate: communication, problem-solving, initiative, professional awareness and critical thinking. The assessment is free, takes around 25 minutes, and produces a personalised readiness report that gives students and families a clear picture of where the student stands and what to develop next.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The readiness report is not a score to be anxious about — it is a development tool. It identifies the specific competencies where a student is already strong and the areas where structured practice would have the highest impact. For a student who has never thought carefully about their professional strengths, this is often the first time they receive honest, specific feedback about what they bring to a workplace — and that feedback is motivating in a way that school grades frequently are not, because it connects directly to a world they can see themselves entering.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Beyond the assessment, students are matched with relevant work experience opportunities based on their profile, interests and location. The matching removes the most daunting part of the process — cold-calling employers, not knowing who to approach, feeling that the system was not designed for someone without existing contacts. Every student, regardless of background, can access a structured pathway into professional experience through the platform.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This matters in the context of PISA 2025 because the OECD data is explicit that the benefits of school — including the emerging benefits of AI literacy — are distributed unequally. Socio-economically advantaged students are more likely to have access to AI skills development at school. They are more likely to have parents with professional networks. They are more likely to have the confidence to pursue early work experience. Eduentry&apos;s approach is specifically designed to level that playing field — giving every student a structured, accessible route into the professional world while they are still at school.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Skills That Will Matter in an AI World</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 is the first major international assessment conducted in an era of widely available generative AI. Its findings about AI use are a preview of a much larger challenge: as AI handles more of the routine cognitive work that schools have traditionally trained students for, the skills that retain genuine human value are precisely those that AI cannot replicate — judgement, empathy, ethical reasoning, the ability to navigate genuine uncertainty without a right answer.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          These skills are not well-developed by studying for standardised tests. They are developed by doing things that matter in the real world — by working on a project where the outcome is not predetermined, by communicating with adults who have different perspectives and real stakes in the conversation, by making decisions that have actual consequences and learning from the results. This is, in short, what work experience provides.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The OECD&apos;s vision for &ldquo;future-ready students&rdquo; — the title of the PISA 2025 report — is students who have the motivation to keep learning throughout their lives, the agency to direct that learning toward meaningful goals, and the strategies to adapt when the world changes around them. These are not qualities that develop automatically. They require investment, opportunity, and the kind of real-world experience that allows students to discover who they are when the stakes are real.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 tells us that grades are falling. But it also tells us, between the lines, what the answer looks like: students who are engaged, purposeful, connected to the world beyond school, and equipped with the human skills that AI cannot replace. Early work experience is not a supplement to education. In the world PISA 2025 describes, it is increasingly central to it.
+        </p>
+        <Callout color="emerald">
+          The OECD&apos;s vision for future-ready students requires motivation, agency and real-world learning strategies. These are not developed in classrooms alone — they require the kind of purposeful engagement that professional experience provides.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          If you are a parent or student looking to take this seriously, the place to start is with an honest assessment of where the student stands today — not just academically, but in terms of professional readiness. Eduentry&apos;s internship assessment is free, takes 25 minutes, and gives students the specific, actionable feedback they need to begin building the skills that PISA 2025 shows are most at risk — and most in demand.
+        </p>
+      </section>
+    </>
+  ),
 }
