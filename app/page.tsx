@@ -69,6 +69,7 @@ const SOFTWARE_SCHEMA = {
   operatingSystem: 'Web Browser',
   description: 'Free AI-powered adaptive assessments for students aged 6 and above.',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Free — no subscription required' },
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', reviewCount: '6', bestRating: '5', worstRating: '1' },
 }
 
 const WEBSITE_SCHEMA = {
