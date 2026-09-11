@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     'free online assessment children',
     'verbal reasoning non-verbal reasoning test',
   ],
-  alternates: { canonical: 'https://eduentry.com', languages: { 'en-GB': 'https://eduentry.com', es: 'https://eduentry.com/es', tr: 'https://eduentry.com/tr', fr: 'https://eduentry.com/fr', 'x-default': 'https://eduentry.com' } },
+  alternates: { canonical: 'https://eduentry.com', languages: { 'en-GB': 'https://eduentry.com', es: 'https://eduentry.com/es', tr: 'https://eduentry.com/tr', fr: 'https://eduentry.com/fr', ar: 'https://eduentry.com/ar', ru: 'https://eduentry.com/ru', 'x-default': 'https://eduentry.com' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     url: 'https://eduentry.com',

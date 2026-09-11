@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Assessment Methodology — How Eduentry Works',
   description: 'How Eduentry uses 2PL Item Response Theory and MAP estimation to produce standardised academic scores for children aged 6–17, benchmarked internationally.',
   keywords: 'Item Response Theory children, IRT adaptive assessment, standardised score children, MAP estimation, educational benchmarking methodology, adaptive testing UK',
-  alternates: { canonical: 'https://eduentry.com/methodology', languages: { 'en-GB': 'https://eduentry.com/methodology', es: 'https://eduentry.com/es/metodologia', tr: 'https://eduentry.com/tr/metodoloji', fr: 'https://eduentry.com/fr/methodologie', 'x-default': 'https://eduentry.com/methodology' } },
+  alternates: { canonical: 'https://eduentry.com/methodology', languages: { 'en-GB': 'https://eduentry.com/methodology', es: 'https://eduentry.com/es/metodologia', tr: 'https://eduentry.com/tr/metodoloji', fr: 'https://eduentry.com/fr/methodologie', ar: 'https://eduentry.com/ar/manhajiyya', ru: 'https://eduentry.com/ru/metodologiya', 'x-default': 'https://eduentry.com/methodology' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     title: 'How Eduentry Works — IRT Adaptive Assessment Methodology',

@@ -5,9 +5,13 @@ import { BLOG_POSTS_FR, getFrenchPostBySlug } from '@/app/blog/posts-fr'
 import { getFrenchBlogContent } from '@/app/blog/content-fr'
 import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
 import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
+import { BLOG_POSTS_AR } from '@/app/blog/posts-ar'
+import { BLOG_POSTS_RU } from '@/app/blog/posts-ru'
 
 const esByContentSlug = new Map(BLOG_POSTS_ES.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 const trByContentSlug = new Map(BLOG_POSTS_TR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const arByContentSlug = new Map(BLOG_POSTS_AR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const ruByContentSlug = new Map(BLOG_POSTS_RU.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -32,8 +36,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languages: {
         fr: url,
         'en-GB': `${BASE_URL}/blog/${enSlug}`,
-        ...(esSlug ? { es: `${BASE_URL}/es/blog/${esSlug}` } : {}),
-        ...(trSlug ? { tr: `${BASE_URL}/tr/blog/${trSlug}` } : {}),
+        ...(esByContentSlug.has(enSlug) ? { es: `${BASE_URL}/es/blog/${esByContentSlug.get(enSlug)}` } : {}),
+        ...(trByContentSlug.has(enSlug) ? { tr: `${BASE_URL}/tr/blog/${trByContentSlug.get(enSlug)}` } : {}),
+        ...(arByContentSlug.has(enSlug) ? { ar: `${BASE_URL}/ar/blog/${arByContentSlug.get(enSlug)}` } : {}),
+        ...(ruByContentSlug.has(enSlug) ? { ru: `${BASE_URL}/ru/blog/${ruByContentSlug.get(enSlug)}` } : {}),
         'x-default': `${BASE_URL}/blog/${enSlug}`,
       },
     },
@@ -44,6 +50,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: post.description,
       url,
       publishedTime: post.date,
+      modifiedTime: post.dateModified ?? post.date,
       locale: 'fr_FR',
       alternateLocale: ['en_GB'],
       images: [{ url: `${BASE_URL}/fr/blog/${slug}/opengraph-image`, width: 1200, height: 630, alt: post.title }],

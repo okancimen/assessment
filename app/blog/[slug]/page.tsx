@@ -8,6 +8,9 @@ import { BLOG_POSTS, getPostBySlug, getRelatedPosts } from '../posts'
 import { getBlogContent } from '../content'
 import { BLOG_POSTS_TR } from '../posts-tr'
 import { BLOG_POSTS_ES } from '../posts-es'
+import { BLOG_POSTS_FR } from '../posts-fr'
+import { BLOG_POSTS_AR } from '../posts-ar'
+import { BLOG_POSTS_RU } from '../posts-ru'
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -50,6 +53,9 @@ function getServiceLinks(tags: string[]) {
 
 const trByContentSlug = new Map(BLOG_POSTS_TR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 const esByContentSlug = new Map(BLOG_POSTS_ES.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const frByContentSlug = new Map(BLOG_POSTS_FR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const arByContentSlug = new Map(BLOG_POSTS_AR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const ruByContentSlug = new Map(BLOG_POSTS_RU.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 
 const COUNTRY_LANG: Record<string, string> = {
   'netherlands-': 'en-NL',
@@ -84,6 +90,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         'en-GB': url,
         ...(trByContentSlug.has(slug) ? { tr: `${BASE_URL}/tr/blog/${trByContentSlug.get(slug)}` } : {}),
         ...(esByContentSlug.has(slug) ? { es: `${BASE_URL}/es/blog/${esByContentSlug.get(slug)}` } : {}),
+        ...(frByContentSlug.has(slug) ? { fr: `${BASE_URL}/fr/blog/${frByContentSlug.get(slug)}` } : {}),
+        ...(arByContentSlug.has(slug) ? { ar: `${BASE_URL}/ar/blog/${arByContentSlug.get(slug)}` } : {}),
+        ...(ruByContentSlug.has(slug) ? { ru: `${BASE_URL}/ru/blog/${ruByContentSlug.get(slug)}` } : {}),
         'x-default': url,
         ...(getCountryLang(slug) ? { [getCountryLang(slug)!]: url } : {}),
       },
@@ -95,6 +104,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: post.description,
       url,
       publishedTime: post.date,
+      modifiedTime: post.dateModified ?? post.date,
+      authors: ['https://eduentry.com/about'],
       images: [{ url: `/blog/${slug}/opengraph-image`, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
@@ -134,10 +145,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     dateModified: post.dateModified ?? post.date,
     url,
     image: `${BASE_URL}/blog/${slug}/opengraph-image`,
-    author: { '@id': 'https://eduentry.com/#organization' },
+    author: {
+      '@type': 'Person',
+      name: 'Ozlem Cimen',
+      url: 'https://edualist.com',
+      jobTitle: 'Education Professional',
+    },
     publisher: { '@id': 'https://eduentry.com/#organization' },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     isPartOf: { '@id': 'https://eduentry.com/#website' },
+    wordCount: Math.round((post.readTime?.match(/\d+/)?.[0] ?? 8) as number * 200),
+    inLanguage: 'en-GB',
   }
 
   const related = getRelatedPosts(slug)
@@ -195,20 +213,23 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
 
         {/* Cross-locale links */}
-        {(trByContentSlug.has(slug) || esByContentSlug.has(slug)) && (
+        {(esByContentSlug.has(slug) || trByContentSlug.has(slug) || frByContentSlug.has(slug) || arByContentSlug.has(slug) || ruByContentSlug.has(slug)) && (
           <div className="mb-10 flex items-center gap-2 text-xs text-gray-400 flex-wrap">
             <span>Also available in:</span>
-            {esByContentSlug.has(slug) && (
-              <Link href={`/es/blog/${esByContentSlug.get(slug)}`} className="inline-flex items-center gap-1 text-indigo-500 hover:text-indigo-700 font-medium">
-                <span>🇪🇸</span> Español
-              </Link>
-            )}
-            {trByContentSlug.has(slug) && esByContentSlug.has(slug) && <span>·</span>}
-            {trByContentSlug.has(slug) && (
-              <Link href={`/tr/blog/${trByContentSlug.get(slug)}`} className="inline-flex items-center gap-1 text-indigo-500 hover:text-indigo-700 font-medium">
-                <span>🇹🇷</span> Türkçe
-              </Link>
-            )}
+            {[
+              esByContentSlug.has(slug) && { href: `/es/blog/${esByContentSlug.get(slug)}`, flag: '🇪🇸', label: 'Español' },
+              trByContentSlug.has(slug) && { href: `/tr/blog/${trByContentSlug.get(slug)}`, flag: '🇹🇷', label: 'Türkçe' },
+              frByContentSlug.has(slug) && { href: `/fr/blog/${frByContentSlug.get(slug)}`, flag: '🇫🇷', label: 'Français' },
+              arByContentSlug.has(slug) && { href: `/ar/blog/${arByContentSlug.get(slug)}`, flag: '🇸🇦', label: 'العربية' },
+              ruByContentSlug.has(slug) && { href: `/ru/blog/${ruByContentSlug.get(slug)}`, flag: '🇷🇺', label: 'Русский' },
+            ].filter(Boolean).map((loc, i, arr) => (
+              <>
+                {i > 0 && <span key={`sep-${i}`}>·</span>}
+                <Link key={(loc as {href:string}).href} href={(loc as {href:string}).href} className="inline-flex items-center gap-1 text-indigo-500 hover:text-indigo-700 font-medium">
+                  <span>{(loc as {flag:string}).flag}</span> {(loc as {label:string}).label}
+                </Link>
+              </>
+            ))}
           </div>
         )}
 

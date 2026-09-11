@@ -1410,6 +1410,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'PISA 2025 & Work Experience: The Student Readiness Gap',
     description: 'OECD\'s PISA 2025 report reveals the lowest academic scores ever recorded. But the data also points to a solution: students who engage with the real world develop the skills schools can\'t teach. Here\'s what the evidence says about early work experience and internships.',
     date: '2026-09-11',
+    dateModified: '2026-09-11',
     readTime: '13 min read',
     tags: ['Work Experience', 'Internship', 'Student Skills', 'Future of Education', 'Career Development'],
     faqs: [
