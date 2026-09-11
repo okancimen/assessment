@@ -25,8 +25,8 @@ export const metadata: Metadata = {
 const CHILD_NAME = 'Alex'
 const CHILD_AGE  = 10
 const COMPLETED_DATE = '14 September 2026'
-const OVERALL_SAS    = 116
-const PERCENTILE     = 86
+const OVERALL_SAS    = 107
+const PERCENTILE     = 68
 
 const SUBJECTS = [
   {
@@ -182,10 +182,10 @@ const RECOMMENDATIONS = [
 ]
 
 const INTL = {
-  uk:   'Working above the expected standard. Likely competitive for grammar school or selective independent school entry.',
-  us:   'Above grade level by approximately one year; top 15–20% nationally.',
-  pisa: 'PISA Level 4–5 — strong performer, above the OECD average.',
-  ib:   'Good candidate for the IB Diploma Programme including Higher Level subjects.',
+  uk:   'Working at the expected standard overall, with a notably uneven profile — Verbal at grammar-school level, Maths below expected for age.',
+  us:   'Broadly on grade level; top 30–35% nationally, with significant variation across subjects.',
+  pisa: 'PISA Level 3 — solid performer in most areas, with specific gaps to address.',
+  ib:   'Likely suitable for IB, but Maths foundations would need strengthening before selecting Higher Level Mathematics.',
 }
 
 // ── Page ──────────────────────────────────────────────────────────────────────
@@ -243,8 +243,8 @@ export default function SampleReportPage() {
               <div className="flex flex-col items-center gap-2">
                 <div className="relative w-28 h-28">
                   <svg className="w-28 h-28 -rotate-90" viewBox="0 0 112 112">
-                    <circle cx="56" cy="56" r="48" fill="none" stroke="#f0fdf4" strokeWidth="8" />
-                    <circle cx="56" cy="56" r="48" fill="none" stroke="#22c55e" strokeWidth="8"
+                    <circle cx="56" cy="56" r="48" fill="none" stroke="#fefce8" strokeWidth="8" />
+                    <circle cx="56" cy="56" r="48" fill="none" stroke="#eab308" strokeWidth="8"
                       strokeDasharray={`${2 * Math.PI * 48}`}
                       strokeDashoffset={`${2 * Math.PI * 48 * (1 - (OVERALL_SAS - 70) / 60)}`}
                       strokeLinecap="round"
@@ -256,7 +256,7 @@ export default function SampleReportPage() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-sm font-semibold text-emerald-600">Above Average</div>
+                  <div className="text-sm font-semibold text-yellow-600">Average</div>
                   <div className="text-xs text-gray-400">Top {100 - PERCENTILE}% for age {CHILD_AGE}</div>
                 </div>
               </div>
@@ -268,10 +268,10 @@ export default function SampleReportPage() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
             {
-              icon: '🎯',
-              label: 'Grammar school ready',
-              text: 'Score of 116 exceeds the SAS 111 threshold for most grammar school areas in England.',
-              bg: 'bg-emerald-50 border-emerald-100',
+              icon: '📊',
+              label: 'Mixed profile',
+              text: 'Strong Verbal Reasoning (122) lifts the overall score, but Maths (84) is pulling it down — the profile shows clear highs and lows.',
+              bg: 'bg-blue-50 border-blue-100',
             },
             {
               icon: '⚡',
