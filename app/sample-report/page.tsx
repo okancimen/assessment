@@ -129,6 +129,23 @@ const RECOMMENDATIONS = [
     ],
   },
   {
+    subject: 'Verbal Reasoning',
+    subjectColor: 'text-violet-700',
+    subjectBg: 'bg-violet-50',
+    priority: 'Maintain & Extend',
+    priorityColor: 'text-violet-700 bg-violet-50 border border-violet-200',
+    currentSAS: 122,
+    targetSAS: 126,
+    scorePotential: '+3–5 SAS',
+    headline: 'Channel this strength into competitive reading and puzzles',
+    rationale: 'SAS 122 is already Exceptional and in the top 8% nationally. The goal here is not remediation but extension — keeping the skill sharp under pressure and stretching toward the very top of the scale.',
+    actions: [
+      'Enter a school or national word puzzle competition (e.g. UK Junior Vocabulary Challenge) — competitive pressure sharpens performance beyond normal practice',
+      'Read books one or two years above age level — this forces genuine vocabulary inference rather than comfortable recognition',
+      'Try timed verbal reasoning papers with a 10% time reduction to build the speed margin that separates SAS 122 from SAS 126+',
+    ],
+  },
+  {
     subject: 'Non-Verbal Reasoning',
     subjectColor: 'text-pink-700',
     subjectBg: 'bg-pink-50',
