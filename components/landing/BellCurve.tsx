@@ -30,18 +30,16 @@ const ZONE_LABELS = [
 ]
 
 const MEAN = 100, SD = 15
-const X_MIN = 55, X_MAX = 145  // ±3σ so tails reach near-zero within the visible range
+const X_MIN = 55, X_MAX = 145
 const W = 420
-// CH and PAD_T are fixed — they define the curve shape and never change.
-// SVG total height is computed dynamically inside the component.
-const PAD_L = 10, PAD_R = 10, PAD_T = 40, CH = 136
+const PAD_L = 10, PAD_R = 10, PAD_T = 44, CH = 136
 const CW = W - PAD_L - PAD_R
-const baseY = PAD_T + CH  // = 176, always fixed
+const baseY = PAD_T + CH
 
-// Labels: 3 lines per subject, compact row spacing
-const LINE_H = 7   // px between text lines within a row
-const ROW_GAP = 6  // extra gap between rows
-const ROW0_Y1 = baseY + 11
+// Label geometry
+const LINE_H = 8
+const ROW_GAP = 6
+const ROW0_Y1 = baseY + 14
 
 // Minimum pixel gap between adjacent label centers to avoid overlap
 const MIN_LABEL_GAP = 58
@@ -71,13 +69,11 @@ function sy(ratio: number) {
   return PAD_T + CH - ratio * CH
 }
 
-// Horizontal inset so score bar's 70 and 130 sit directly above sx(70)/sx(130) on the curve
-const BAR_L = `${(sx(70)  / W * 100).toFixed(3)}%`  // ≈ 18.254%
+const BAR_L = `${(sx(70)  / W * 100).toFixed(3)}%`
 const BAR_R = `${((W - sx(130)) / W * 100).toFixed(3)}%`
 
 const STEP = 0.4
 
-// Pre-computed at module load — depends only on fixed CH/PAD_T
 const curvePoints = (() => {
   const pts: string[] = []
   for (let x = X_MIN; x <= X_MAX; x += STEP) {
@@ -87,12 +83,15 @@ const curvePoints = (() => {
 })()
 
 const ZONES = [
-  { from: 70,  to: 85,  fill: '#EF4444', opacity: 0.15 },
-  { from: 85,  to: 95,  fill: '#F97316', opacity: 0.15 },
-  { from: 95,  to: 110, fill: '#EAB308', opacity: 0.12 },
-  { from: 110, to: 120, fill: '#22C55E', opacity: 0.15 },
-  { from: 120, to: 130, fill: '#3B82F6', opacity: 0.15 },
+  { from: 70,  to: 85,  fill: '#EF4444', opacity: 0.12 },
+  { from: 85,  to: 95,  fill: '#F97316', opacity: 0.12 },
+  { from: 95,  to: 110, fill: '#EAB308', opacity: 0.10 },
+  { from: 110, to: 120, fill: '#22C55E', opacity: 0.13 },
+  { from: 120, to: 130, fill: '#3B82F6', opacity: 0.13 },
 ]
+
+// X-axis reference ticks
+const X_TICKS = [70, 85, 100, 115, 130]
 
 function zonePath(from: number, to: number) {
   const pts: string[] = [`${sx(from).toFixed(1)},${sy(0).toFixed(1)}`]
@@ -104,7 +103,6 @@ function zonePath(from: number, to: number) {
   return `M ${pts.join(' L ')} Z`
 }
 
-/** Greedy N-row assignment: opens a new row whenever all existing rows are too tight */
 function assignRows(subjects: BellCurveSubject[]): number[] {
   const rows = new Array<number>(subjects.length).fill(0)
   const lastX: number[] = []
@@ -140,8 +138,13 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
   const rows = assignRows(displaySubjects)
   const numRows = displaySubjects.length > 0 ? Math.max(...rows) + 1 : 1
   const linesPerLabel = hideScores ? 2 : 3
-  const PAD_B = numRows * linesPerLabel * LINE_H + (numRows - 1) * ROW_GAP + 8
+  const PAD_B = numRows * linesPerLabel * LINE_H + (numRows - 1) * ROW_GAP + 20
   const H = PAD_T + CH + PAD_B
+
+  // Overall score bar marker position (0–100%)
+  const overallPct = overallScore !== undefined
+    ? ((overallScore - 70) / 60) * 100
+    : null
 
   return (
     <div className="bg-white rounded-2xl border border-gray-100 shadow-xl p-5">
@@ -150,50 +153,92 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
       </p>
 
       {overallScore !== undefined && (
-        <div className="mb-4" style={{ paddingLeft: BAR_L, paddingRight: BAR_R }}>
-          <div className="flex justify-between text-xs text-gray-400 mb-1">
-            {['70','85','100','115','130'].map(n => <span key={n}>{n}</span>)}
-          </div>
-          {/* Segment widths are proportional to zone size within the 70–130 range */}
-          <div className="relative h-3 rounded-full overflow-hidden flex">
-            <div style={{ width: '25%' }}    className="bg-red-100" />
-            <div style={{ width: '16.67%' }} className="bg-orange-100" />
-            <div style={{ width: '25%' }}    className="bg-yellow-100" />
-            <div style={{ width: '16.67%' }} className="bg-green-100" />
-            <div style={{ width: '16.66%' }} className="bg-blue-100" />
+        <div className="mb-5" style={{ paddingLeft: BAR_L, paddingRight: BAR_R }}>
+          {/* Score value callout */}
+          <div className="relative mb-1.5" style={{ height: '20px' }}>
             <div
-              className="absolute top-0 h-full w-1.5 bg-gray-700 rounded-full -translate-x-1/2"
-              style={{ left: `${((overallScore - 70) / 60) * 100}%` }}
+              className="absolute -translate-x-1/2"
+              style={{ left: `${overallPct}%` }}
+            >
+              <span className="inline-block bg-gray-800 text-white text-[10px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">
+                {overallScore}
+              </span>
+            </div>
+          </div>
+          {/* Bar */}
+          <div className="relative h-3.5 rounded-full overflow-hidden flex">
+            <div style={{ width: '25%' }}    className="bg-red-200" />
+            <div style={{ width: '16.67%' }} className="bg-orange-200" />
+            <div style={{ width: '25%' }}    className="bg-yellow-200" />
+            <div style={{ width: '16.67%' }} className="bg-green-200" />
+            <div style={{ width: '16.66%' }} className="bg-blue-200" />
+            <div
+              className="absolute top-0 h-full w-2 bg-gray-800 rounded-full -translate-x-1/2 shadow"
+              style={{ left: `${overallPct}%` }}
             />
           </div>
-          <div className="flex justify-between text-xs text-gray-400 mt-1">
-            {['Needs Support','Below Avg','Average','Above Avg','Exceptional'].map(l => <span key={l}>{l}</span>)}
+          {/* Zone name ticks */}
+          <div className="flex justify-between mt-1">
+            {['Needs Support','Below Avg','Average','Above Avg','Exceptional'].map((l, i) => (
+              <span key={l} style={{ width: i === 0 ? '25%' : i === 2 ? '25%' : '16.67%' }}
+                className="text-[9px] text-gray-400 text-center leading-tight">
+                {l}
+              </span>
+            ))}
           </div>
         </div>
       )}
 
       <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label="Bell curve showing score distribution">
 
+        {/* Gradient defs */}
+        <defs>
+          <linearGradient id="curveGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%"   stopColor="#818cf8" />
+            <stop offset="50%"  stopColor="#6366f1" />
+            <stop offset="100%" stopColor="#818cf8" />
+          </linearGradient>
+          <filter id="dotShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="1" stdDeviation="1.5" floodOpacity="0.25" />
+          </filter>
+        </defs>
+
         {/* Zone fills */}
         {ZONES.map((z) => (
           <path key={z.from} d={zonePath(z.from, z.to)} fill={z.fill} fillOpacity={z.opacity} />
         ))}
 
-        {/* Bell curve */}
-        <polyline points={curvePoints} fill="none" stroke="#6366f1" strokeWidth="2" strokeLinejoin="round" />
+        {/* Subtle vertical grid lines at zone boundaries */}
+        {[85, 95, 110, 120].map((v) => (
+          <line key={v}
+            x1={sx(v)} y1={PAD_T + 8} x2={sx(v)} y2={baseY}
+            stroke="#e5e7eb" strokeWidth="0.75" strokeDasharray="3 3" />
+        ))}
+
+        {/* Bell curve with gradient stroke */}
+        <polyline points={curvePoints} fill="none" stroke="url(#curveGrad)" strokeWidth="2.5" strokeLinejoin="round" />
 
         {/* Baseline */}
         <line x1={sx(X_MIN)} y1={baseY} x2={sx(X_MAX)} y2={baseY} stroke="#e5e7eb" strokeWidth="1" />
 
-        {/* Mean dashed line */}
-        <line x1={centerX} y1={PAD_T} x2={centerX} y2={baseY} stroke="#c7d2fe" strokeWidth="1" strokeDasharray="4 3" />
+        {/* Mean dashed centre line */}
+        <line x1={centerX} y1={PAD_T + 4} x2={centerX} y2={baseY}
+          stroke="#c7d2fe" strokeWidth="1.2" strokeDasharray="4 3" />
 
-        {/* Zone labels above curve — only when no score bar carries them */}
-        {overallScore === undefined && ZONE_LABELS.map(({ from, to, label, clr }) => (
-          <text key={label} x={sx((from + to) / 2)} y={22}
-            textAnchor="middle" fontSize="8" fill={clr} fontWeight="700">
+        {/* Zone labels — always visible */}
+        {ZONE_LABELS.map(({ from, to, label, clr }) => (
+          <text key={label} x={sx((from + to) / 2)} y={20}
+            textAnchor="middle" fontSize="8" fill={clr} fontWeight="700" letterSpacing="0.3">
             {label}
           </text>
+        ))}
+
+        {/* X-axis scale ticks */}
+        {X_TICKS.map((v) => (
+          <g key={v}>
+            <line x1={sx(v)} y1={baseY} x2={sx(v)} y2={baseY + 4} stroke="#d1d5db" strokeWidth="1" />
+            <text x={sx(v)} y={baseY + 11} textAnchor="middle" fontSize="7.5" fill="#9ca3af">{v}</text>
+          </g>
         ))}
 
         {/* Subject markers */}
@@ -202,34 +247,60 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
           const my  = sy(pdf(score))
           const pct = Math.round(cdf(score) * 100)
           const row = rows[i]
-          const y1  = ROW0_Y1 + row * (linesPerLabel * LINE_H + ROW_GAP)
+          const y1  = ROW0_Y1 + row * (linesPerLabel * LINE_H + ROW_GAP) + 14
+
+          // Background pill for label group
+          const pillH = linesPerLabel * LINE_H + 6
+          const pillW = 50
 
           return (
             <g key={label}>
-              {/* Dashed line from circle down to baseline */}
-              <line x1={mx} y1={my + 5} x2={mx} y2={baseY}
-                stroke={color} strokeWidth="1.5" strokeDasharray="3 2" strokeOpacity="0.7" />
+              {/* Dashed drop line from dot to baseline */}
+              <line x1={mx} y1={my + 7} x2={mx} y2={baseY}
+                stroke={color} strokeWidth="1.5" strokeDasharray="3 2" strokeOpacity="0.6" />
 
-              {/* For labels below row 0: extend a thin line below the baseline */}
+              {/* Extension below baseline to pill */}
               {row >= 1 && (
-                <line x1={mx} y1={baseY + 1} x2={mx} y2={y1 - 4}
-                  stroke={color} strokeWidth="0.8" strokeOpacity="0.35" />
+                <line x1={mx} y1={baseY + 1} x2={mx} y2={y1 - 8}
+                  stroke={color} strokeWidth="0.8" strokeOpacity="0.3" />
               )}
 
-              {/* Circle on curve */}
-              <circle cx={mx} cy={my} r="4" fill="white" stroke={dotColor} strokeWidth="2" />
+              {/* Dot on curve — filled with color, white ring */}
+              <circle cx={mx} cy={my} r="5.5" fill="white" />
+              <circle cx={mx} cy={my} r="5.5" fill={dotColor} fillOpacity="0.15" />
+              <circle cx={mx} cy={my} r="4" fill={dotColor} filter="url(#dotShadow)" />
+              <circle cx={mx} cy={my} r="1.8" fill="white" />
 
-              {/* label block */}
-              <text x={mx} y={y1}                          textAnchor="middle" fontSize="8.5" fill={color}    fontWeight="700">{label}</text>
-              {!hideScores && <text x={mx} y={y1 + LINE_H} textAnchor="middle" fontSize="8"   fill="#6b7280"              >{score}</text>}
-              <text x={mx} y={y1 + (hideScores ? LINE_H : LINE_H * 2)} textAnchor="middle" fontSize="8" fill={dotColor} fontWeight="600">{pct}th%</text>
+              {/* Label pill background */}
+              <rect
+                x={mx - pillW / 2} y={y1 - LINE_H - 1}
+                width={pillW} height={pillH}
+                rx="5" ry="5"
+                fill={dotColor} fillOpacity="0.08"
+                stroke={dotColor} strokeOpacity="0.2" strokeWidth="0.8"
+              />
+
+              {/* Subject name */}
+              <text x={mx} y={y1} textAnchor="middle" fontSize="9" fill={color} fontWeight="700">
+                {label}
+              </text>
+              {/* SAS score */}
+              {!hideScores && (
+                <text x={mx} y={y1 + LINE_H} textAnchor="middle" fontSize="8.5" fill="#374151" fontWeight="600">
+                  {score}
+                </text>
+              )}
+              {/* Percentile */}
+              <text
+                x={mx} y={y1 + (hideScores ? LINE_H : LINE_H * 2)}
+                textAnchor="middle" fontSize="8" fill={dotColor} fontWeight="700"
+              >
+                {pct}th%
+              </text>
             </g>
           )
         })}
 
-        {/* Score range anchors at the clamped extremes (70 and 130) */}
-        {!hideScores && <text x={sx(70)}  y={ROW0_Y1} textAnchor="middle" fontSize="7.5" fill="#d1d5db">70</text>}
-        {!hideScores && <text x={sx(130)} y={ROW0_Y1} textAnchor="middle" fontSize="7.5" fill="#d1d5db">130</text>}
       </svg>
     </div>
   )

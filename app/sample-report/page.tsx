@@ -280,7 +280,7 @@ export default function SampleReportPage() {
         {/* ── Bell curve ── */}
         <div className="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
           <div className="p-6">
-            <BellCurve subjects={BELL_SUBJECTS} title="Score distribution · Percentile ranking" hideScores />
+            <BellCurve subjects={BELL_SUBJECTS} title="Score distribution · Percentile ranking" overallScore={OVERALL_SAS} />
           </div>
         </div>
 
