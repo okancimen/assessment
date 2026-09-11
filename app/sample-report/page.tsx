@@ -50,19 +50,19 @@ const SUBJECTS = [
   {
     key: 'mathematics',
     label: 'Mathematics',
-    sas: 118,
-    raw: 24,
+    sas: 84,
+    raw: 14,
     total: 30,
-    pct: 80,
-    labelScore: 'Above Average',
-    scoreColor: 'text-emerald-600',
+    pct: 47,
+    labelScore: 'Needs Support',
+    scoreColor: 'text-red-600',
     borderColor: 'border-t-teal-400',
     dotColor: 'bg-teal-400',
-    avgDifficulty: '6.4',
+    avgDifficulty: '5.2',
     topics: [
-      { name: 'Arithmetic & number', correct: 9, total: 10, pct: 90 },
-      { name: 'Fractions & decimals', correct: 7, total: 10, pct: 70 },
-      { name: 'Word problems',        correct: 8, total: 10, pct: 80 },
+      { name: 'Arithmetic & number', correct: 6, total: 10, pct: 60 },
+      { name: 'Fractions & decimals', correct: 4, total: 10, pct: 40 },
+      { name: 'Word problems',        correct: 4, total: 10, pct: 40 },
     ],
   },
   {
@@ -105,7 +105,7 @@ const SUBJECTS = [
 
 const BELL_SUBJECTS = [
   { score: 109, label: 'English',    color: '#4F46E5', dotColor: '#4F46E5' },
-  { score: 118, label: 'Maths',      color: '#0D9488', dotColor: '#0D9488' },
+  { score: 84,  label: 'Maths',      color: '#0D9488', dotColor: '#0D9488' },
   { score: 122, label: 'Verbal',     color: '#7C3AED', dotColor: '#7C3AED' },
   { score: 114, label: 'Non-Verbal', color: '#DB2777', dotColor: '#DB2777' },
 ]
@@ -149,17 +149,17 @@ const RECOMMENDATIONS = [
     subject: 'Mathematics',
     subjectColor: 'text-teal-700',
     subjectBg: 'bg-teal-50',
-    priority: 'Stretch Goal',
-    priorityColor: 'text-blue-700 bg-blue-50 border border-blue-200',
-    currentSAS: 118,
-    targetSAS: 124,
-    scorePotential: '+4–6 SAS',
-    headline: 'Push fractions & word problems to reach Exceptional',
-    rationale: 'Arithmetic is excellent at 90%. Fractions (70%) and word problems (80%) are the remaining gaps. Both are trainable — improving them unlocks SAS 124+.',
+    priority: 'Focus Area',
+    priorityColor: 'text-red-700 bg-red-50 border border-red-200',
+    currentSAS: 84,
+    targetSAS: 95,
+    scorePotential: '+8–12 SAS',
+    headline: 'Build number foundations before moving to harder topics',
+    rationale: 'All three topics are below 60% — fractions and word problems at 40% show that gaps in core number sense are blocking progress. The priority is strengthening fundamentals, not drilling harder questions.',
     actions: [
-      'Practise multi-step word problems daily: read the question twice and underline exactly what is being asked before calculating',
-      'Drill mixed fraction operations — adding, subtracting and multiplying fractions with unlike denominators',
-      'Run one timed maths section per month to check whether speed or accuracy is the limiting factor',
+      'Spend 15 minutes daily on times tables and mental arithmetic until all facts to 12×12 are instant — this unlocks fractions and word problems',
+      'Use visual fraction models (fraction bars, pizza diagrams) before introducing written procedures — the concept must come before the algorithm',
+      'Solve one word problem daily: circle the numbers, underline what is being asked, draw a picture before writing any calculation',
     ],
   },
 ]
@@ -210,7 +210,7 @@ export default function SampleReportPage() {
                 <div className="flex flex-wrap gap-4 mt-6">
                   {[
                     { label: 'Verbal Reasoning', value: '122', note: 'Exceptional', color: 'text-violet-600' },
-                    { label: 'Mathematics',      value: '118', note: 'Above Average', color: 'text-teal-600' },
+                    { label: 'Mathematics',      value: '84',  note: 'Needs Support', color: 'text-red-600'  },
                     { label: 'Non-Verbal',        value: '114', note: 'Above Average', color: 'text-emerald-600' },
                     { label: 'English',           value: '109', note: 'Average',       color: 'text-indigo-600' },
                   ].map((s) => (
@@ -263,10 +263,10 @@ export default function SampleReportPage() {
               bg: 'bg-violet-50 border-violet-100',
             },
             {
-              icon: '📈',
-              label: 'Biggest opportunity',
-              text: 'English vocabulary (60%) is the one weak spot — addressing it could add 5–7 SAS points overall.',
-              bg: 'bg-amber-50 border-amber-100',
+              icon: '⚠️',
+              label: 'Maths needs attention',
+              text: 'SAS 84 in Mathematics is in the Needs Support band. Fractions and word problems scored 40% — focused daily practice can close this gap.',
+              bg: 'bg-red-50 border-red-100',
             },
           ].map((c) => (
             <div key={c.label} className={`rounded-2xl border p-5 ${c.bg}`}>
