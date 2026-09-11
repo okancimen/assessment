@@ -85,7 +85,7 @@ export default function ESBlogIndexPage() {
         </div>
 
         <div className="space-y-6">
-          {BLOG_POSTS_ES.map((post) => (
+          {[...BLOG_POSTS_ES].sort((a, b) => b.date.localeCompare(a.date)).map((post) => (
             <Link
               key={post.slug}
               href={`/es/blog/${post.slug}`}

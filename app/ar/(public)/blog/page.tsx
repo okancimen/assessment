@@ -86,7 +86,7 @@ export default function ARBlogIndexPage() {
         </div>
 
         <div className="space-y-6">
-          {BLOG_POSTS_AR.map((post) => (
+          {[...BLOG_POSTS_AR].sort((a, b) => b.date.localeCompare(a.date)).map((post) => (
             <Link
               key={post.slug}
               href={`/ar/blog/${post.slug}`}
