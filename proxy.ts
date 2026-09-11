@@ -24,6 +24,14 @@ export async function proxy(request: NextRequest) {
   const hostname = request.headers.get('host') ?? ''
   const isAI = hostname === 'eduentry.ai' || hostname === 'www.eduentry.ai'
 
+  // eduentry.com homepage: redirect to browser's preferred language (non-English only)
+  if (!isAI && request.nextUrl.pathname === '/') {
+    const lang = detectLanguage(request.headers.get('accept-language'))
+    if (lang !== 'en') {
+      return NextResponse.redirect(new URL(`/${lang}`, request.url))
+    }
+  }
+
   if (isAI) {
     const { pathname } = request.nextUrl
 
