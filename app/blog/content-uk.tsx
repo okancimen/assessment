@@ -3087,4 +3087,290 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'free-11-plus-practice-test-online': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Most free 11+ resources online are either low-quality PDFs, outdated papers, or tools that charge after a free trial. What parents actually need is a real practice test — scored, adaptive, and benchmarked against the actual scale grammar schools use. This post explains what to look for in a free 11+ practice test, why adaptive testing produces better results than paper practice, and how to use a practice score to guide preparation.
+      </p>
+      <Callout color="indigo">
+        Eduentry&apos;s 11+ practice test is free, adaptive, and produces a Standardised Age Score on the same scale as GL Assessment — the exam board used by most grammar schools in England.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What a Good Free 11+ Practice Test Should Cover</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The 11+ examination in England assesses four distinct subject areas. A practice test that covers only one or two of these is not an adequate preparation tool — it gives an incomplete picture of a child&apos;s readiness and misses the subjects that many grammar schools weight heavily in their selection process. A good practice test should include all four:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>English</strong> — comprehension, grammar, vocabulary (15 questions). This section assesses reading accuracy and breadth of language knowledge. It closely mirrors the English component of GL Assessment papers used by most selective schools.</Bullet>
+          <Bullet><strong>Mathematics</strong> — arithmetic, fractions, word problems, geometry (15 questions). Speed and accuracy across the full KS2 curriculum, with questions pitched at the difficulty level of actual 11+ papers rather than standard school tests.</Bullet>
+          <Bullet><strong>Verbal Reasoning</strong> — analogies, letter sequences, word relationships (15 questions). Tests the ability to think logically with language — a subject most children have never studied at school and which requires specific preparation to perform well on.</Bullet>
+          <Bullet><strong>Non-Verbal Reasoning</strong> — matrices, series, figure analogies (15 questions). Tests logical thinking with shapes and patterns rather than language. Often described as the purest measure of underlying cognitive ability because it is least affected by prior teaching.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Some grammar schools weight these subjects differently — certain schools in Buckinghamshire and Kent, for example, place particular emphasis on verbal reasoning. However, most GL Assessment papers cover all four areas, and a child who is strong in only one or two subjects will find their combined score pulled down significantly. A practice test that covers all four gives the only honest baseline.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Beyond subject coverage, a good practice test should report results in the same metric that grammar schools use: the Standardised Age Score (SAS). A percentage correct score or a raw mark is meaningless without reference to national norms — it tells you nothing about how the child compares to other 10 and 11-year-olds taking the same exam.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Adaptive Is Better Than Paper Practice</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Fixed-difficulty practice papers — whether photocopied from a book or downloaded as a PDF — have two structural problems that limit their usefulness as assessment tools.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The first is a <strong>ceiling problem</strong>. A child who answers 90% or more of the questions correctly has demonstrated that the paper is too easy for them — but the paper cannot tell you how much stronger they actually are. Two children can both score 90% on a fixed paper while having very different true ability levels. The paper simply cannot distinguish between them because it ran out of difficult enough questions.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The second is a <strong>floor problem</strong>. A child who is struggling at difficulty level 3 in a subject does not benefit from being confronted with difficulty level 7 questions — it is demoralising, produces no useful measurement information, and tells you nothing you can act on. A fixed paper treats every child the same regardless of where they are.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          An adaptive test solves both problems by adjusting question difficulty in real time. When a child answers correctly, the next question is slightly harder. When they answer incorrectly, the next question is slightly easier. The algorithm converges on the child&apos;s true ability level — wherever that level is — and takes the majority of measurements there. The result is a more accurate score at every ability level, and an experience that is appropriately challenging rather than frustrating or unchallenging.
+        </p>
+        <Callout color="amber">
+          A child who scores 85% on a fixed practice paper might actually be performing anywhere from SAS 105 to 125 — the paper can&apos;t distinguish. An adaptive test narrows that uncertainty to within 3–5 SAS points.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The practical implication for preparation is significant. A fixed paper score tells you the child got X% right. An adaptive score tells you exactly which difficulty band their knowledge has reached in each subject — and therefore exactly which difficulty band to target in practice. That is a qualitatively more useful piece of information.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How the Standardised Age Score Works</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The Standardised Age Score (SAS) is the reporting scale used by GL Assessment, the exam board that produces 11+ papers for the majority of grammar schools in England. It is designed with a mean of 100 and a standard deviation of 15, meaning that the average 10 or 11-year-old should score 100, and approximately 68% of all children will score between 85 and 115.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Grammar school entry benchmarks vary by area and school, but the following serves as a general guide to how SAS scores translate into selectivity:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>SAS 100</strong> — 50th percentile; exactly average for age</Bullet>
+          <Bullet><strong>SAS 111</strong> — approximately the 77th percentile; competitive threshold for most grammar schools</Bullet>
+          <Bullet><strong>SAS 115</strong> — approximately the 84th percentile; comfortably above threshold for most grammar schools</Bullet>
+          <Bullet><strong>SAS 118</strong> — approximately the 88th percentile; required for many selective grammar schools</Bullet>
+          <Bullet><strong>SAS 121</strong> — approximately the 92nd percentile; required for highly selective schools such as those in Buckinghamshire and Kent</Bullet>
+          <Bullet><strong>SAS 125</strong> — approximately the 95th percentile; competitive for the most selective grammar schools in the country</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Crucially, the SAS is <strong>age-adjusted</strong>. A 10-year-old and an 11-year-old answering exactly the same number of questions correctly will receive different SAS scores — the younger child scores higher because the same performance is more impressive relative to their peer group. This means the SAS is always a fair comparison, even when comparing children tested at different points in the school year.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Because Eduentry&apos;s practice test reports on the same SAS scale, you can compare your child&apos;s score directly to the published entry benchmarks for your target school — without any conversion or translation.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">When to Start and How Often to Test</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most common timing mistake families make is starting preparation too late — typically six to eight weeks before the exam, which is not enough time to close meaningful gaps. Starting at least 12 months before the exam (in Year 4 or early Year 5) gives preparation enough room to work.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Within that preparation period, the recommended cadence for full practice tests is:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Check>Start with a baseline test as early as possible — before doing any preparation — to find the gap between where your child is and where they need to be</Check>
+          <Check>Take a full practice test once every 4–6 weeks during the preparation period to track progress against the baseline</Check>
+          <Check>Do weekly subject-level practice between full tests — focusing on the weakest subject areas identified by each test</Check>
+          <Check>Review topic-level performance within each subject to identify the specific areas needing the most work</Check>
+          <Check>Avoid testing more frequently than monthly — scores need time to reflect genuine learning, and over-testing creates test fatigue without producing useful new information</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Daily subject practice of 20–30 minutes is more effective than occasional long sessions. The goal during preparation is not to sit the full test repeatedly — it is to build skills in weak areas through targeted practice, then verify progress through periodic full assessments.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Use the Results</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The overall SAS score tells you where your child stands relative to grammar school benchmarks. But the subject breakdown is often more useful than the headline number — especially early in preparation, when there is still time to close significant gaps.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A child with an overall SAS of 115 but a Verbal Reasoning score of 105 has a clear and actionable target. The 10-point gap in VR is exactly where preparation effort should be concentrated — not on English or Maths where the child is already performing well. Without the subject breakdown, a parent might spread effort evenly across all four subjects, which is far less efficient.
+        </p>
+        <Callout color="emerald">
+          Eduentry&apos;s report shows topic-level performance within each subject — so if your child scores 80% on arithmetic but 40% on word problems, you know exactly where to focus.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Going deeper than the subject level to topic-level performance within each subject is the most powerful use of practice test data. Arithmetic and word problems are both &quot;Maths&quot; — but they require completely different preparation. A child who is weak on word problems but strong on arithmetic needs targeted word problem practice, not more arithmetic drills.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Use each practice test result to update the preparation plan: check whether the weakest topics have improved since last time, decide whether to continue focusing on the same area or shift to a new one, and set a specific target for the next test. Preparation without this feedback loop is much less efficient than preparation guided by real data.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Conclusion</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The best 11+ preparation starts with an honest baseline. Weeks spent working on the wrong subjects — because you guessed at the gaps rather than measuring them — are weeks that could have been spent closing the gaps that actually matter. A free adaptive practice test gives you that baseline in 90 minutes, with a score on the same scale grammar schools use and a subject breakdown that tells you exactly where to focus.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          There is no reason to delay. The earlier you know where your child stands, the more time you have to act on it. Start today.
+        </p>
+      </section>
+    </>
+  ),
+
+  '11-plus-maths-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Of the four 11+ subjects, Maths is often the one where preparation makes the biggest difference. Unlike Verbal Reasoning — which is largely unfamiliar to children regardless of their school performance — or Non-Verbal Reasoning, which looks strange to everyone at first, Maths is a subject children study every day at school. They have years of experience with it. The problem: school maths and 11+ maths are not the same thing. Speed, difficulty, and question style all differ significantly from what children encounter in Year 5 and Year 6 lessons. This guide covers every topic tested, the techniques that work, and how to build the fluency the 11+ actually demands.
+      </p>
+      <Callout color="indigo">
+        Children who score in the top 10% for 11+ Maths are typically one year ahead of the curriculum AND have strong mental arithmetic fluency — accuracy at speed, not just accuracy.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What the 11+ Maths Paper Covers</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The 11+ Maths paper draws from the full KS2 curriculum — Years 3 through 6 — but with questions pitched at greater difficulty and speed than standard school tests. There are eight main topic areas. A typical 15-question practice section will weight them approximately as follows:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>Number &amp; arithmetic</strong> — place value, times tables, factors, primes, HCF, LCM (~4 questions). The largest single area and the one that underpins performance in every other section. Children who lack fluent recall of times tables and factor relationships slow down significantly across the whole paper.</Bullet>
+          <Bullet><strong>Fractions, decimals &amp; percentages</strong> — converting between forms, operations, percentage of amounts (~3 questions). Questions often involve multi-step conversions. A common error is applying percentage calculations incorrectly when the base quantity changes between steps.</Bullet>
+          <Bullet><strong>Ratio &amp; proportion</strong> — simplifying ratios, sharing a quantity in a given ratio, direct proportion (~2 questions). Ratio questions frequently appear as word problems, requiring children to extract the ratio relationship from context before calculating.</Bullet>
+          <Bullet><strong>Algebra &amp; sequences</strong> — finding the nth term of a sequence, solving simple equations, using function machines (~2 questions). Sequence questions are common and reward children who can identify both arithmetic and geometric patterns quickly.</Bullet>
+          <Bullet><strong>Geometry</strong> — area and perimeter of standard shapes, angles in polygons, properties of 2D and 3D shapes (~2 questions). Children need to know the formulas for common shapes and be able to apply them quickly — not derive them from first principles.</Bullet>
+          <Bullet><strong>Measurement</strong> — unit conversions, time problems, reading scales (~1 question). Often the most straightforward section for well-prepared children, but a source of errors for those who confuse metric and imperial units or misread time calculations.</Bullet>
+          <Bullet><strong>Data handling</strong> — mean, median, mode, and range; reading bar charts, pie charts, and tables (~1 question). Data handling questions typically combine reading a chart or table with a statistical calculation, requiring accuracy at both steps.</Bullet>
+          <Bullet><strong>Word problems</strong> — multi-step problems combining topics from two or more of the above areas (~3 questions). The hardest questions on the paper for most children. Require reading comprehension as well as mathematical skill — the question is always about identifying what is being asked before starting to calculate.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">GL Assessment vs CEM: What&apos;s Different?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The two main 11+ exam boards — GL Assessment and CEM (Centre for Evaluation and Monitoring) — take different approaches to testing maths. Knowing which exam board your target school uses is essential, because the preparation is not identical.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>GL Assessment</strong> has a dedicated Maths paper, typically 25–50 questions completed in 25–45 minutes. Questions are clearly labelled by topic, presented individually, and tend to emphasise number work, arithmetic, and standard curriculum topics. Children familiar with maths textbooks will recognise the question style.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>CEM</strong> integrates maths as a &quot;Numerical Reasoning&quot; section within a combined paper. It features fewer dedicated maths questions but presents them in more varied formats, often under a stricter time limit. CEM tends to favour real-world data interpretation tasks over pure arithmetic.
+        </p>
+        <Callout color="amber">
+          CEM numerical reasoning questions are often presented as real-world data interpretation tasks — reading graphs, interpreting tables — rather than pure arithmetic. GL Assessment leans more heavily on number work.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          If your target school uses CEM, ensure practice includes data interpretation tasks and mixed-format questions — not just standard arithmetic papers. If it uses GL Assessment, prioritise number fluency and timed arithmetic drills alongside the full topic list above. Most preparation resources are designed for GL Assessment by default; CEM preparation requires more deliberate sourcing of the right material.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Speed Problem</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          School maths teaching prioritises accuracy. Children are taught to work through problems carefully, showing their working, and to check answers before moving on. These are excellent habits for learning — but they produce children who are accurate and slow. The 11+ requires children to be accurate and fast.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The target pace in a competitive 11+ paper is approximately 60–90 seconds per question. Most children beginning preparation are working at 2–3 minutes per question on harder questions, and the time pressure of a real exam makes them slower still. Closing this gap requires deliberate speed training — not just more practice papers.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most effective approach is timed drills on individual question types, not full papers. A child who takes 3 minutes to complete a ratio word problem needs to practise ratio word problems specifically, under a 90-second target, until the time drops. Working through a full paper with a slow section buried in it produces much less improvement than targeted drilling of the exact question type causing the delay.
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Check>Start each new question type with a 2-minute target per question — generous, but not unlimited</Check>
+          <Check>Reduce the target to 90 seconds after the child can consistently achieve 2-minute accuracy</Check>
+          <Check>Reduce to 60 seconds as the target approaches exam pace — this is the maintenance goal</Check>
+          <Check>Use a visible timer during drills — children who cannot see the time cannot manage it</Check>
+          <Check>Do not accept slow and right in practice — accuracy without speed is not exam readiness</Check>
+          <Check>Run timed drills over a 6–8 week period per question type before re-testing full-paper pace</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Mental Arithmetic: The Foundation</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Times tables, factor pairs, percentage shortcuts, and number bonds are not 11+ questions in their own right — they are the sub-skills that determine how fast every other question can be answered. A child who must calculate 7 × 8 during a word problem loses several seconds and a significant amount of working memory to a step that should take no conscious effort at all.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The following mental maths facts should be fully automatic — recalled instantly, without calculation — before a child sits any timed practice:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>Times tables to 12×12</strong> — every product, in any order, in under 2 seconds. The standard school expectation (times tables by end of Year 4) is the minimum; the 11+ demands genuine instant recall, not counting-up strategies.</Bullet>
+          <Bullet><strong>Factor pairs of numbers up to 100</strong> — knowing that 72 = 8×9 = 6×12 = 4×18 instantly is the difference between a 30-second HCF question and a 3-minute one.</Bullet>
+          <Bullet><strong>Percentage shortcuts</strong> — 10%, 25%, 50%, and 75% of any 2 or 3-digit number without calculation. These appear in percentage questions, ratio questions, and data handling questions.</Bullet>
+          <Bullet><strong>Doubling and halving chains</strong> — doubling or halving a number up to 200 instantly. Used constantly in fraction simplification and mental multiplication.</Bullet>
+          <Bullet><strong>Square numbers to 15²</strong> — 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225. These appear in geometry, sequences, and number problems.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Mental arithmetic drills should be short and daily — 5 minutes every morning is far more effective than 30 minutes once a week. Fluency is built through frequency of retrieval, not duration of sessions. Apps, flashcards, or simple verbal quizzes from a parent all work equally well. The goal is not understanding — it is instant, automatic recall.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Word Problems: The Hardest Questions</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Word problems consistently cause the most difficulty in 11+ Maths — not because they require more advanced mathematics, but because they require children to do two things simultaneously: read carefully enough to understand what is being asked, and then solve a 2 or 3-step maths problem quickly under time pressure. Most errors are reading errors, not calculation errors.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A reliable 4-step technique works for the majority of word problems:
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Step 1 — Read once for the scenario.</strong> Understand the context: what are we buying, measuring, or comparing? Do not attempt any calculation yet.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Step 2 — Read again underlining numbers and the question.</strong> Underline every number. Underline or circle the question being asked. This step prevents the most common error: answering a related but different question from the one actually asked.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Step 3 — Identify the topic(s) involved.</strong> Is this a ratio problem? A percentage of an amount? A multi-step arithmetic problem? Identifying the type before calculating prevents applying the wrong method.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Step 4 — Solve step by step, writing every intermediate answer.</strong> Never combine two steps into one mental leap. Each intermediate answer written down is a recovery point if a mistake is made, and writing intermediates prevents arithmetic errors from compounding.
+        </p>
+        <Callout color="emerald">
+          Underlining the question being asked — literally with a pencil — reduces wrong-question errors by a large margin. Teach this as a non-negotiable habit from the first week of preparation.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Common Mistakes and How to Fix Them</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The same errors appear repeatedly across children of all ability levels. Knowing them in advance and building habits to prevent them is much more efficient than waiting to encounter them through failed practice papers.
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Check><strong>Not reading the units required</strong> — the question asks for the answer in centimetres, the child gives metres, or vice versa. Fix: circle the required unit before beginning any calculation.</Check>
+          <Check><strong>Arithmetic errors under pressure</strong> — particularly in multiplication and fraction addition. Fix: write every step down; never attempt two operations in one mental step.</Check>
+          <Check><strong>Spending too long on a single hard question</strong> — running out of time at the end of the paper. Fix: after 90 seconds on any question, move on and mark it to return to. Unanswered easy questions later in the paper are more valuable than extra time on one hard question.</Check>
+          <Check><strong>Fraction errors in addition and subtraction</strong> — adding numerators and denominators separately instead of finding a common denominator. Fix: always write the common denominator explicitly as the first step of any fraction addition or subtraction.</Check>
+          <Check><strong>Forgetting to simplify the final answer</strong> — giving a fraction answer that is not in its lowest terms when the question expects a simplified form. Fix: build simplification into the final step of every fraction and ratio answer as a non-negotiable check.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Practise Effectively</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Daily 20-minute sessions produce significantly better results than weekly 2-hour sessions for maths preparation. This is because mathematical fluency is built through repeated retrieval, and the spacing between daily sessions consolidates learning more effectively than massed practice. A child who practises maths for 20 minutes every day will outperform a child who practises for 2 hours every Saturday, even if the weekly totals are similar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A practical structure for each 20-minute session:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>5 minutes — mental arithmetic drill.</strong> Times tables, factor pairs, percentage shortcuts. Use flashcards or a timer. Keep a record of which facts are still slow.</Bullet>
+          <Bullet><strong>10 minutes — topic focus.</strong> Work on the weakest topic area identified by the most recent practice test. Do timed questions of that specific type only, starting with 2-minute targets and reducing over weeks.</Bullet>
+          <Bullet><strong>5 minutes — mixed timed questions.</strong> Three to five questions from a mix of topic types at exam pace. This builds the ability to switch between topics quickly — a skill the full paper requires.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Every four weeks, replace a regular session with a timed full maths paper under exam conditions. This measures real progress, identifies any new weaknesses that have emerged, and maintains familiarity with the pace and format of the actual assessment.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Use Eduentry&apos;s adaptive assessment to identify the weakest topic areas before choosing where to direct the topic focus sessions. The adaptive engine locates the exact difficulty band where errors begin — this is the productive zone for practice. Drilling questions that are too easy produces no improvement; drilling questions that are far too hard produces frustration and no improvement. The right difficulty level is just above the current reliable accuracy level.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Conclusion</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Maths is the most improvable 11+ subject with structured preparation. Many children reach SAS 120+ with 6 months of consistent, targeted work — but only if the preparation is focused on the right things: the weakest topic areas, at the right difficulty level, with a deliberate emphasis on speed as well as accuracy.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The formula is straightforward: find the gaps with a baseline score, fix the foundations with daily mental arithmetic, build topic fluency through targeted timed drills, and track progress with monthly full tests. The ceiling is high — but it requires starting with an honest picture of where your child currently stands.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Start with a free baseline assessment to find out exactly where your child&apos;s maths score stands today.
+        </p>
+      </section>
+    </>
+  ),
 }

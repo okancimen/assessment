@@ -1328,6 +1328,82 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: 'https://eduentry.com',
     },
   },
+  {
+    slug: 'free-11-plus-practice-test-online',
+    title: 'Free 11+ Practice Test Online: Adaptive, Scored and Instant',
+    shortTitle: 'Free 11+ Practice Test Online',
+    description: 'Take a free adaptive 11+ practice test online — English, Maths, Verbal Reasoning and Non-Verbal Reasoning. Get an instant standardised score (SAS) showing exactly where your child stands for grammar school entry.',
+    date: '2026-09-11',
+    dateModified: '2026-09-11',
+    readTime: '8 min read',
+    tags: ['11 Plus', 'Practice Test', 'Grammar Schools', 'Free Assessment', 'UK Education'],
+    faqs: [
+      {
+        q: 'Is there a genuinely free 11+ practice test online?',
+        a: 'Yes — Eduentry offers a full adaptive 11+ practice test covering all four subjects (English, Maths, Verbal Reasoning and Non-Verbal Reasoning) completely free. The test produces a standardised age score (SAS) on the same scale as GL Assessment, so you can compare results directly to grammar school entry benchmarks. No payment, no trial period.',
+      },
+      {
+        q: 'How is an adaptive 11+ test different from a standard practice paper?',
+        a: 'A standard practice paper gives every child the same questions regardless of their ability level. An adaptive test adjusts question difficulty in real time based on each answer — harder questions when the child is doing well, easier ones when they struggle. This means the test is measuring ability more accurately at every level, rather than being too easy for strong students or too discouraging for those who need support.',
+      },
+      {
+        q: 'What score does my child need to pass the 11+?',
+        a: 'There is no single pass mark — it varies by area and school. Most grammar schools require a Standardised Age Score (SAS) of 111–121+. Highly selective schools in areas like Buckinghamshire or Kent often require 118+. Your child\'s SAS from the Eduentry practice test is on the same scale, so you can compare directly to the published benchmarks for your target school.',
+      },
+      {
+        q: 'How long does the Eduentry 11+ practice test take?',
+        a: 'The full assessment covers 60 questions across 4 subjects and typically takes 60–90 minutes. Progress is automatically saved, so it can be paused and resumed at any time. Most children complete it in one sitting.',
+      },
+      {
+        q: 'How often should my child take the practice test?',
+        a: 'Once every 4–6 weeks during preparation is a good cadence. This gives enough time for meaningful improvement between tests, while tracking progress consistently. Avoid over-testing — daily practice on individual subjects is more effective than repeatedly sitting the full test.',
+      },
+    ],
+    cta: {
+      heading: 'Start your child\'s free 11+ practice test',
+      body: 'Adaptive questions across all four subjects. Instant standardised score. No account needed to see a sample — register free to get your child\'s full results.',
+      label: 'Start free 11+ test',
+      href: '/auth/register',
+    },
+  },
+  {
+    slug: '11-plus-maths-guide',
+    title: '11+ Maths: Topics, Question Types and How to Practise',
+    shortTitle: '11+ Maths Guide',
+    description: 'Complete guide to 11+ Maths — every topic tested, question types by exam board (GL Assessment and CEM), common mistakes and how to practise effectively for a top standardised score.',
+    date: '2026-09-11',
+    dateModified: '2026-09-11',
+    readTime: '10 min read',
+    tags: ['11 Plus', 'Mathematics', 'Grammar Schools', 'UK Education', 'Academic Assessment'],
+    faqs: [
+      {
+        q: 'What maths topics are in the 11+?',
+        a: 'The 11+ maths paper covers: number and arithmetic (place value, times tables, factors, primes), fractions, decimals and percentages, ratio and proportion, algebra and sequences, geometry (area, perimeter, angles, properties of shapes), measurement and units, data handling (averages, charts, tables), and word problems. GL Assessment tends to include more arithmetic and number work; CEM integrates maths into a mental arithmetic-style paper.',
+      },
+      {
+        q: 'What level of maths is needed for the 11+?',
+        a: 'The 11+ maths paper tests KS2 curriculum content (Years 3–6) but at higher difficulty. Questions go beyond standard Year 6 curriculum in speed and complexity — children who have only covered the basic curriculum will struggle with the harder questions. Most successful candidates are working approximately one year ahead of their school year group in maths.',
+      },
+      {
+        q: 'How is 11+ maths different from school maths?',
+        a: 'Speed is the key difference. In school, children have time to work through problems carefully. In the 11+, they need to answer questions in 60–90 seconds on average under timed conditions. This requires fluency with mental maths, quick recall of times tables and number facts, and efficient problem-solving strategies — not just the ability to get the right answer eventually.',
+      },
+      {
+        q: 'What are the most common mistakes in 11+ maths?',
+        a: 'The four most common mistakes are: (1) not reading the question fully — misses the unit required or the specific calculation asked; (2) arithmetic errors under pressure — particularly with multiplication and fractions; (3) running out of time — spending too long on hard questions instead of moving on; (4) not checking answers — easy marks lost to simple errors that a 10-second check would catch.',
+      },
+      {
+        q: 'How long should my child practise maths for the 11+?',
+        a: 'Daily practice of 20–30 minutes is more effective than longer weekend sessions. Focus on the weakest topic for 2-3 weeks before moving on. Mental arithmetic drills (times tables, factor pairs, percentage calculations) should be done little and often — 5 minutes daily compounds over months into significant fluency gains.',
+      },
+    ],
+    cta: {
+      heading: 'See your child\'s 11+ Maths score — free',
+      body: 'Eduentry\'s adaptive assessment includes a full 15-question Maths section with instant standardised scoring. Find out exactly where your child stands before the real test.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {
