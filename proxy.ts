@@ -24,9 +24,12 @@ export async function proxy(request: NextRequest) {
   const hostname = request.headers.get('host') ?? ''
   const isAI = hostname === 'eduentry.ai' || hostname === 'www.eduentry.ai'
 
-  // eduentry.com homepage: redirect to browser's preferred language (non-English only)
+  // eduentry.com homepage: redirect to preferred language
+  // Cookie lang_pref (set by language picker) takes precedence over Accept-Language
   if (!isAI && request.nextUrl.pathname === '/') {
-    const lang = detectLanguage(request.headers.get('accept-language'))
+    const cookie = request.cookies.get('lang_pref')?.value
+    const valid = [...SUPPORTED_LANGS, 'en'] as string[]
+    const lang = (cookie && valid.includes(cookie)) ? cookie : detectLanguage(request.headers.get('accept-language'))
     if (lang !== 'en') {
       return NextResponse.redirect(new URL(`/${lang}`, request.url))
     }

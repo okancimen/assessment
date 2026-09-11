@@ -324,7 +324,10 @@ export default function LanguagePickerMain() {
                 <a
                   key={code}
                   href={href}
-                  onClick={() => setOpen(false)}
+                  onClick={() => {
+                    document.cookie = `lang_pref=${code.toLowerCase()}; path=/; max-age=31536000; SameSite=Lax`
+                    setOpen(false)
+                  }}
                   className="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-[#f5f5f7] transition-colors"
                 >
                   <span className="flex items-center gap-2">
