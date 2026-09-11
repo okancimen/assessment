@@ -36,6 +36,12 @@ export const metadata: Metadata = {
     locale: 'ar_AE',
     images: [{ url: `${BASE_URL}/ar/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — منصة التقييم الأكاديمي واستعداد التدريب' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Eduentry — منصة التقييم الأكاديمي واستعداد التدريب',
+    description: 'تقييمات تكيفية مجانية مبنية على نفس العلم المستخدم في PISA وGCSE وSAT. مقارنة أكاديمية للأعمار 6-17 وتقييم التدريب للطلاب فوق 14 عاماً.',
+    images: [`${BASE_URL}/ar/opengraph-image`],
+  },
 }
 
 const SUBJECT_LABELS_AR: Record<string, string> = {

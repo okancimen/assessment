@@ -37,6 +37,12 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [{ url: `${BASE_URL}/fr/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — Plateforme d\'évaluation académique et de stage' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Eduentry — Plateforme d\'évaluation académique et de stage',
+    description: 'Évaluations adaptatives gratuites fondées sur la même science que PISA, GCSE et SAT. Comparaison académique pour les 6–17 ans et évaluation de stage pour les 14+.',
+    images: [`${BASE_URL}/fr/opengraph-image`],
+  },
 }
 
 const SUBJECT_LABELS_FR: Record<string, string> = {

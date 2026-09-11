@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/ar/hawlana`,
     locale: 'ar_AE',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'من نحن — Eduentry | تقييم أكاديمي مجاني للأطفال',
+    description: 'تقييمات أكاديمية تكيفية مجانية مقارنةً بالمعايير البريطانية وPISA وIB. درجات معيارية وترتيبات مئينية دولية.',
+    images: [`${BASE_URL}/ar/hawlana/opengraph-image`],
+  },
 }
 
 const BREADCRUMB_SCHEMA = {

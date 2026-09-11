@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/es/metodologia`,
     locale: 'es_ES',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cómo funciona Eduentry — Metodología de evaluación adaptativa IRT',
+    description: 'TRI de 2 parámetros, estimación MAP, puntuación estandarizada (media 100, DT 15) y comparación internacional con el currículo del Reino Unido, PISA, EE.UU. e IB.',
+    images: [`${BASE_URL}/es/metodologia/opengraph-image`],
+  },
 }
 
 const BREADCRUMB_SCHEMA = {

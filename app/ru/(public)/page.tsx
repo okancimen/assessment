@@ -37,6 +37,12 @@ export const metadata: Metadata = {
     locale: 'ru_RU',
     images: [{ url: `${BASE_URL}/ru/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — Платформа академической оценки и готовности к стажировке' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Eduentry — Платформа академической оценки и готовности к стажировке',
+    description: 'Бесплатные адаптивные оценки на основе той же науки, что PISA, GCSE и SAT. Академический бенчмаркинг для детей 6–17 лет и оценка стажировки для учеников от 14 лет.',
+    images: [`${BASE_URL}/ru/opengraph-image`],
+  },
 }
 
 const SUBJECT_LABELS_RU: Record<string, string> = {

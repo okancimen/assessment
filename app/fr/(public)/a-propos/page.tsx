@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/fr/a-propos`,
     locale: 'fr_FR',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'À propos d\'Eduentry — Évaluation académique gratuite pour les enfants',
+    description: 'Évaluations académiques adaptatives gratuites comparées aux standards britanniques, PISA et IB. Scores standardisés et classements percentiles internationaux.',
+    images: [`${BASE_URL}/fr/a-propos/opengraph-image`],
+  },
 }
 
 const BREADCRUMB_SCHEMA = {

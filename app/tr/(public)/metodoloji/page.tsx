@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/tr/metodoloji`,
     locale: 'tr_TR',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Eduentry nasıl çalışır — Uyarlanabilir IRT değerlendirme metodolojisi',
+    description: '2 parametreli MYT, MAP tahmini, standartlaştırılmış puan (ortalama 100, SS 15) ve İngiltere müfredatı, PISA, ABD ve IB ile uluslararası karşılaştırma.',
+    images: [`${BASE_URL}/tr/metodoloji/opengraph-image`],
+  },
 }
 
 const BREADCRUMB_SCHEMA = {

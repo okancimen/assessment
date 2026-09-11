@@ -37,6 +37,12 @@ export const metadata: Metadata = {
     locale: 'tr_TR',
     images: [{ url: `${BASE_URL}/tr/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — Akademik ve Staj Değerlendirme Platformu' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Eduentry — Akademik ve Staj Değerlendirme Platformu',
+    description: 'PISA, GCSE ve SAT ile aynı bilime dayalı ücretsiz uyarlanabilir değerlendirmeler. 6–17 yaş için akademik kıyaslama ve 14 yaş üstü için staj değerlendirmesi.',
+    images: [`${BASE_URL}/tr/opengraph-image`],
+  },
 }
 
 const SUBJECT_LABELS_TR: Record<string, string> = {

@@ -39,6 +39,12 @@ export const metadata: Metadata = {
     alternateLocale: ['en_GB', 'tr_TR'],
     images: [{ url: `${BASE_URL}/ru/blog/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry Blog — Руководства по стажировке и карьере' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Руководства по стажировке и карьере — Блог Eduentry',
+    description: 'Доказательные руководства по раннему опыту работы, карьерному развитию и поступлению в университет.',
+    images: [`${BASE_URL}/ru/blog/opengraph-image`],
+  },
 }
 
 export default function RUBlogIndexPage() {

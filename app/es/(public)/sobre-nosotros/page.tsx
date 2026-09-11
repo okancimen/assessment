@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/es/sobre-nosotros`,
     locale: 'es_ES',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sobre Eduentry — Evaluación académica gratuita para niños',
+    description: 'Evaluaciones académicas adaptativas gratuitas comparadas con los estándares del Reino Unido, PISA e IB. Puntuaciones estandarizadas y clasificaciones percentiles internacionales.',
+    images: [`${BASE_URL}/es/sobre-nosotros/opengraph-image`],
+  },
 }
 
 const BREADCRUMB_SCHEMA = {

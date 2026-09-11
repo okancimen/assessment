@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/ru/o-nas`,
     locale: 'ru_RU',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'О нас — Бесплатная академическая оценка для детей',
+    description: 'Бесплатные адаптивные академические оценки, сравниваемые со стандартами Великобритании, PISA и IB. Стандартизированные баллы и международные процентильные рейтинги.',
+    images: [`${BASE_URL}/ru/o-nas/opengraph-image`],
+  },
 }
 
 const BREADCRUMB_SCHEMA = {

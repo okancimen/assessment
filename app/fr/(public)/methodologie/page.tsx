@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/fr/methodologie`,
     locale: 'fr_FR',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Comment fonctionne Eduentry — Méthodologie d\'évaluation adaptative TRI',
+    description: 'TRI à 2 paramètres, estimation MAP, score standardisé (moyenne 100, ET 15) et comparaison internationale avec le programme britannique, PISA, US et IB.',
+    images: [`${BASE_URL}/fr/methodologie/opengraph-image`],
+  },
 }
 
 const BREADCRUMB_SCHEMA = {

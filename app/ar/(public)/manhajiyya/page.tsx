@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/ar/manhajiyya`,
     locale: 'ar_AE',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'كيف يعمل Eduentry — منهجية التقييم التكيفي IRT',
+    description: 'IRT ثنائي المعلمة، تقدير MAP، درجة معيارية (متوسط 100، الانحراف المعياري 15) ومقارنة دولية مع المنهج البريطاني وPISA والأمريكي وIB.',
+    images: [`${BASE_URL}/ar/manhajiyya/opengraph-image`],
+  },
 }
 
 const BREADCRUMB_SCHEMA = {

@@ -38,6 +38,12 @@ export const metadata: Metadata = {
     alternateLocale: ['en_GB', 'es_ES'],
     images: [{ url: `${BASE_URL}/tr/blog/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry Blog — Staj ve Kariyer Rehberleri' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Staj ve Kariyer Rehberleri — Eduentry Blog',
+    description: 'Erken yaşta staj, iş deneyimi ve üniversite kabulü üzerine kanıta dayalı rehberler.',
+    images: [`${BASE_URL}/tr/blog/opengraph-image`],
+  },
 }
 
 export default function TRBlogIndexPage() {

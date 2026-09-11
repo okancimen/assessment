@@ -39,6 +39,12 @@ export const metadata: Metadata = {
     alternateLocale: ['en_GB', 'tr_TR', 'es_ES', 'fr_FR'],
     images: [{ url: `${BASE_URL}/ar/blog/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry Blog — أدلة التدريب والمهنة' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'أدلة التدريب والمهنة — مدونة Eduentry',
+    description: 'أبحاث وتحليلات حول الاستعداد للتدريب والخبرة المهنية في المرحلة الثانوية والوصول إلى الجامعة.',
+    images: [`${BASE_URL}/ar/blog/opengraph-image`],
+  },
 }
 
 export default function ARBlogIndexPage() {

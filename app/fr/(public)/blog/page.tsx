@@ -38,6 +38,12 @@ export const metadata: Metadata = {
     alternateLocale: ['en_GB', 'tr_TR', 'es_ES'],
     images: [{ url: `${BASE_URL}/fr/blog/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry Blog — Guides de Stage & Carrière' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guides de stage & carrière — Blog Eduentry',
+    description: 'Recherches et analyses sur la préparation aux stages, l\'expérience professionnelle au lycée et l\'accès à l\'université.',
+    images: [`${BASE_URL}/fr/blog/opengraph-image`],
+  },
 }
 
 export default function FRBlogIndexPage() {

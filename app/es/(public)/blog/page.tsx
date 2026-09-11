@@ -38,6 +38,12 @@ export const metadata: Metadata = {
     alternateLocale: ['en_GB', 'tr_TR'],
     images: [{ url: `${BASE_URL}/es/blog/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry Blog — Guías de Prácticas y Carrera' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guías de prácticas y desarrollo profesional — Blog de Eduentry',
+    description: 'Investigación y análisis sobre preparación para prácticas, experiencia laboral en el instituto y acceso a la universidad.',
+    images: [`${BASE_URL}/es/blog/opengraph-image`],
+  },
 }
 
 export default function ESBlogIndexPage() {

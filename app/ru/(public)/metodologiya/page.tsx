@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/ru/metodologiya`,
     locale: 'ru_RU',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Как работает Eduentry — Методология адаптивной IRT оценки',
+    description: 'Двухпараметрическая IRT, оценивание MAP, стандартизированный балл (среднее 100, СО 15) и международное сравнение с программой Великобритании, PISA, США и IB.',
+    images: [`${BASE_URL}/ru/metodologiya/opengraph-image`],
+  },
 }
 
 const BREADCRUMB_SCHEMA = {

@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/tr/hakkimizda`,
     locale: 'tr_TR',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hakkımızda — Çocuklar için ücretsiz akademik değerlendirme',
+    description: 'Ücretsiz uyarlanabilir akademik değerlendirmeler İngiltere, PISA ve IB standartlarıyla karşılaştırılır. Standartlaştırılmış puanlar ve uluslararası yüzdelik dilim sıralamaları.',
+    images: [`${BASE_URL}/tr/hakkimizda/opengraph-image`],
+  },
 }
 
 const BREADCRUMB_SCHEMA = {
