@@ -532,6 +532,36 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'pisa-2025-experience-professionnelle-etudiants',
+    contentSlug: 'pisa-2025-work-experience-student-readiness',
+    title: 'PISA 2025 : Les Notes Chutent Partout — Pourquoi l\'Expérience Professionnelle est la Réponse',
+    shortTitle: 'PISA 2025 et Expérience Professionnelle',
+    description: 'Le rapport PISA 2025 de l\'OCDE révèle les résultats académiques les plus bas jamais enregistrés. Mais les données pointent aussi vers une solution : les élèves qui s\'engagent dans le monde réel développent les compétences que les écoles ne peuvent pas enseigner.',
+    date: '2026-09-11',
+    readTime: '13 min de lecture',
+    tags: ['Work Experience', 'Internship', 'Student Skills', 'Future of Education', 'Career Development'],
+    faqs: [
+      {
+        q: 'Que révèle PISA 2025 sur les performances des élèves ?',
+        a: 'PISA 2025 a évalué plus de 760 000 élèves dans 91 pays et a constaté que les scores moyens de l\'OCDE en lecture, mathématiques et sciences sont à leurs niveaux les plus bas jamais enregistrés. La lecture a chuté de 28 points et les mathématiques de 22 points entre 2015 et 2025. Les élèves qui utilisent l\'IA pour les devoirs obtiennent environ 20 points de moins que ceux qui ne l\'utilisent pas.',
+      },
+      {
+        q: 'Pourquoi l\'expérience professionnelle précoce est-elle importante ?',
+        a: 'L\'expérience professionnelle précoce développe les compétences que PISA mesure mais que les écoles peinent à enseigner : pensée critique, résolution de problèmes, communication et prise de décision dans le monde réel. Les recherches montrent que les élèves qui acquièrent une expérience professionnelle avant 16 ans développent une motivation plus forte et de meilleurs résultats à long terme.',
+      },
+      {
+        q: 'Comment les élèves peuvent-ils faire un stage tout en étant au lycée ?',
+        a: 'Le programme d\'évaluation de stage d\'Eduentry est conçu pour les élèves de 14 à 18 ans encore au lycée. Les élèves complètent une évaluation adaptative de 34 questions mesurant la préparation professionnelle en communication, résolution de problèmes et conscience professionnelle.',
+      },
+    ],
+    cta: {
+      heading: 'Votre élève est-il prêt pour l\'expérience professionnelle ?',
+      body: 'L\'évaluation gratuite de préparation au stage d\'Eduentry prend 25 minutes et fournit aux élèves un rapport personnalisé — bilan des compétences, score de préparation et opportunités adaptées.',
+      label: 'Commencer l\'évaluation de stage',
+      href: 'https://eduentry.com/internship',
+    },
+  },
+  {
     slug: 'pisa-2025-crise-education-mondiale-ce-que-les-parents-doivent-savoir',
     title: 'PISA 2025 : Crise de l\'Éducation Mondiale — Ce Que Chaque Parent Doit Savoir',
     shortTitle: 'PISA 2025 : La Crise de l\'Éducation Mondiale',

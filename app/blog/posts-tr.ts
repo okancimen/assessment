@@ -554,6 +554,36 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'pisa-2025-is-deneyimi-ogrenci-hazirliginin-anahtari',
+    contentSlug: 'pisa-2025-work-experience-student-readiness',
+    title: 'PISA 2025 Sonuçları: Notlar Düşüyor — Ama İş Deneyimi Cevap Olabilir',
+    shortTitle: 'PISA 2025 ve İş Deneyimi: Öğrenci Hazırlığı',
+    description: 'OECD\'nin PISA 2025 raporu rekor düşük akademik puanlar ortaya koyuyor. Veriler ise bir çözüme işaret ediyor: gerçek dünyayla erken yaşta temas kuran öğrenciler okulların öğretemediği becerileri geliştiriyor.',
+    date: '2026-09-11',
+    readTime: '13 dk okuma',
+    tags: ['Work Experience', 'Internship', 'Student Skills', 'Future of Education', 'Career Development'],
+    faqs: [
+      {
+        q: 'PISA 2025 öğrenci performansı hakkında ne buldu?',
+        a: '91 ülkede 760.000\'den fazla öğrencinin katıldığı PISA 2025, OECD ortalama puanlarının okuma, matematik ve fen bilimlerinde şimdiye kadar kaydedilen en düşük seviyelerde olduğunu ortaya koydu. Okuma puanları 2015\'ten 2025\'e 28 puan, matematik ise 22 puan düştü. Rapor ayrıca yapay zekayı ödev için kullanan (özetleme, araştırma) öğrencilerin kullanmayanlara göre yaklaşık 20 puan daha düşük puan aldığını gösteriyor.',
+      },
+      {
+        q: 'Erken yaşta iş deneyimi neden önemlidir?',
+        a: 'Erken iş deneyimi, okulların giderek daha zor öğrettiği becerileri — eleştirel düşünme, problem çözme, iletişim ve gerçek dünya karar verme — kazandırır. Araştırmalar, 16 yaşından önce mesleki deneyim kazanan öğrencilerin daha güçlü motivasyon, daha yüksek öz-yeterlilik ve daha iyi uzun vadeli kariyer sonuçları geliştirdiğini tutarlı biçimde göstermektedir.',
+      },
+      {
+        q: 'Öğrenciler okuldayken staj nasıl yapabilir?',
+        a: 'Eduentry\'nin staj değerlendirme programı, lise çağındaki 14-18 yaş arası öğrenciler için tasarlanmıştır. Öğrenciler iletişim, problem çözme ve mesleki farkındalık alanlarını ölçen 34 soruluk adaptif bir değerlendirme tamamlar, ardından kişiselleştirilmiş bir hazırlık raporu alırlar.',
+      },
+    ],
+    cta: {
+      heading: 'Öğrenciniz iş deneyimine hazır mı?',
+      body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi 25 dakika sürer ve öğrencilere kişiselleştirilmiş bir rapor sunar — beceri dökümü, hazırlık puanı ve eşleştirilmiş fırsatlar.',
+      label: 'Staj değerlendirmesini başlat',
+      href: 'https://eduentry.com/internship',
+    },
+  },
+  {
     slug: 'erken-yasta-is-tecrubesi-kazanmak',
     title: 'Erken Yaşta İş Tecrübesi Kazanmak: Neden Önemli ve Nasıl Başlanır?',
     shortTitle: 'Erken Yaşta İş Tecrübesi',

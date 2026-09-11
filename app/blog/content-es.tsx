@@ -1398,6 +1398,174 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'pisa-2025-work-experience-student-readiness': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        En diciembre de 2025, la OCDE publicó los resultados del ciclo PISA 2025 — la mayor comparación educativa internacional del mundo. Los titulares fueron inequívocos: más de 760.000 estudiantes de 15 años en 91 países fueron evaluados, y los puntajes promedio de la OCDE en lectura, matemáticas y ciencias alcanzaron sus niveles más bajos jamás registrados. La lectura cayó 28 puntos entre 2015 y 2025; las matemáticas, 22 puntos. La &ldquo;lectura apresurada&rdquo; — escanear texto sin comprensión real — casi se duplicó, pasando del 4,5% al 9% de los estudiantes. Estos no son datos menores. Representan una crisis sistémica en cómo los sistemas educativos preparan a los jóvenes para el mundo adulto.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        La respuesta instintiva de muchos países ha sido pedir más presión académica: más deberes, más exámenes, estándares curriculares más altos. Pero esta respuesta ignora lo que los propios datos de PISA señalan: la crisis no es simplemente de conocimiento académico. Es una crisis de habilidades aplicadas, pensamiento crítico, comunicación y resolución de problemas en el mundo real. Y las investigaciones sobre lo que cierra esa brecha apuntan de forma consistente a algo que las escuelas rara vez pueden ofrecer: la experiencia laboral temprana.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué encontró PISA 2025: los datos en detalle</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El estudio PISA 2025 es el más exhaustivo hasta la fecha. Con más de 760.000 estudiantes de 91 países que representan a 33 millones de jóvenes de 15 años, sus hallazgos ofrecen la imagen más completa disponible del rendimiento educativo global. Y esa imagen es preocupante.
+        </p>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">Los datos clave de PISA 2025:</strong> Los puntajes OCDE promedio en lectura, matemáticas y ciencias están en sus niveles más bajos jamás registrados. Lectura: -28 puntos desde 2015. Matemáticas: -22 puntos desde 2015. La &ldquo;lectura apresurada&rdquo; casi se duplicó (4,5% → 9%). Los estudiantes que usan IA para tareas escolares obtienen aproximadamente 20 puntos menos — equivalente a un año escolar completo.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los sistemas con mejor desempeño son los de siempre: China (regiones BSJZ), Singapur, Estonia, Japón, Corea del Sur y el Reino Unido se sitúan entre los países líderes. Pero incluso en estos sistemas, los investigadores identifican señales de alarma: la desconexión entre lo que las escuelas enseñan y lo que el mercado laboral y la vida adulta requieren no es exclusiva de los sistemas con bajo rendimiento.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un hallazgo particularmente revelador: solo el 46% de los estudiantes encuestados verifica fuentes de información <em>y</em> confía en la evidencia científica. Esta combinación — pensamiento crítico aplicado tanto a las fuentes como al contenido — es exactamente lo que los empleadores citan de manera más consistente como la habilidad más subdesarrollada en los jóvenes recién graduados. El 76% de los estudiantes siente que pertenece a su escuela — un número relativamente alto — pero la pertenencia escolar y la preparación para el mundo laboral son dos métricas muy diferentes.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>Más de <strong>760.000 estudiantes</strong> en 91 países, representando a 33 millones de jóvenes de 15 años</Bullet>
+          <Bullet><strong>Lectura:</strong> caída de 28 puntos entre 2015 y 2025 — el mayor declive registrado en esta área</Bullet>
+          <Bullet><strong>Matemáticas:</strong> caída de 22 puntos en el mismo período, con el porcentaje de estudiantes en niveles bajos aumentando en casi todos los países de la OCDE</Bullet>
+          <Bullet><strong>IA y rendimiento:</strong> los estudiantes que usan IA para resumir textos, redactar o investigar obtienen ~20 puntos menos en ciencias que quienes no la usan</Bullet>
+          <Bullet>Solo el <strong>46%</strong> combina verificación de fuentes con confianza en la evidencia científica — la competencia dual que más buscan los empleadores</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Las habilidades que los empleadores quieren — y que PISA mide</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Hay una ironía en los datos de PISA 2025 que vale la pena destacar: las habilidades que el informe identifica como más deterioradas son exactamente las que los empleadores llevan años señalando como las más buscadas y menos encontradas en los candidatos jóvenes. PISA no mide la memorización de contenido curricular. Mide la aplicación del pensamiento a situaciones nuevas — lo que los psicólogos cognitivos llaman transferencia.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En matemáticas, PISA evalúa si los estudiantes pueden usar el razonamiento cuantitativo para resolver problemas de la vida real — no si recuerdan las fórmulas. En lectura, evalúa si pueden construir interpretaciones de textos complejos, identificar sesgos y distinguir entre hechos y opiniones. En ciencias, evalúa si pueden razonar sobre evidencia y aplicar el pensamiento científico a preguntas cotidianas. Estas son, palabra por palabra, las competencias que aparecen en todas las encuestas de empleadores como las más críticas y las más difíciles de encontrar.
+        </p>
+        <Callout color="amber">
+          <strong className="text-amber-900">La brecha de preparación en cifras:</strong> El informe Early Careers del CIPD de 2023 encontró que el 78% de los empleadores en el Reino Unido considera que los jóvenes que terminan el colegio carecen de habilidades de &ldquo;pensamiento crítico aplicado&rdquo;. El 71% cita la &ldquo;resolución de problemas en contextos nuevos&rdquo; como la brecha más significativa. Estas son exactamente las competencias que PISA 2025 muestra que están cayendo.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La pregunta que esto plantea es incómoda pero necesaria: si los sistemas educativos están fallando en desarrollar estas habilidades en el aula — y los datos de PISA 2025 sugieren que sí — ¿dónde se desarrollan? La respuesta, respaldada por décadas de investigación sobre el desarrollo juvenil, es: en el mundo real.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Por qué la experiencia laboral temprana lo cambia todo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La investigación sobre el impacto de la experiencia laboral temprana en el desarrollo de los jóvenes es una de las más consistentes en ciencias de la educación y la psicología del desarrollo. Education and Employers, la organización que realiza los estudios longitudinales más completos sobre la participación de empleadores en la educación secundaria del Reino Unido, encontró que los estudiantes con cuatro o más encuentros significativos con empleadores antes de los 16 años tienen <strong>cinco veces menos probabilidades de estar sin empleo, educación o formación a los 19 años</strong> que sus pares sin ninguna exposición profesional.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pero el impacto va más allá del empleo. Lo que la experiencia laboral temprana desarrolla son exactamente las competencias que PISA 2025 identifica como en declive: la capacidad de aplicar el pensamiento a situaciones nuevas y ambiguas, de comunicar con claridad bajo presión, de verificar información antes de actuar sobre ella, y de persistir cuando los primeros enfoques no funcionan. Estas habilidades no se enseñan — se ejercitan. Y el entorno más eficaz para ejercitarlas es uno donde hay consecuencias reales, personas reales y problemas que no tienen una respuesta correcta al final del libro de texto.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Pensamiento crítico aplicado:</strong> en un entorno de trabajo real, los estudiantes aprenden a evaluar información, cuestionar suposiciones y tomar decisiones con datos incompletos — exactamente lo que PISA mide y lo que las escuelas tienen dificultades para replicar.</Check>
+          <Check><strong>Comunicación profesional:</strong> escribir un correo electrónico a un superior, presentar un análisis a un equipo, hacer preguntas a alguien con más experiencia — estas interacciones desarrollan habilidades que ningún aula puede simular adecuadamente.</Check>
+          <Check><strong>Resolución de problemas en contexto real:</strong> los problemas del trabajo no tienen un capítulo de referencia. Requieren creatividad, adaptabilidad y la disposición a intentar algo diferente cuando el primer enfoque falla.</Check>
+          <Check><strong>Autoeficacia y confianza:</strong> completar un proyecto real para un empleador real, con retroalimentación real, construye el tipo de confianza que transforma la ansiedad ante los retos en competencia probada.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La crisis de compromiso — y el trabajo real como solución</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Uno de los hallazgos más matizados de PISA 2025 es la combinación de alta pertenencia escolar (el 76% de los estudiantes se siente parte de su escuela) con bajo rendimiento y en declive. Esto sugiere que el problema no es la alienación de las escuelas — los estudiantes generalmente las valoran socialmente. El problema es la desconexión entre lo que aprenden en el aula y su relevancia percibida para el mundo adulto.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Esta desconexión tiene consecuencias cognitivas. Cuando los estudiantes no ven la relevancia de lo que aprenden, la motivación para aprender en profundidad — en lugar de simplemente pasar el examen — disminuye. Y cuando la motivación disminuye, el aprendizaje superficial reemplaza al profundo. La &ldquo;lectura apresurada&rdquo; que casi se duplicó en PISA 2025 no es un problema de habilidades técnicas de lectura. Es un síntoma de un enfoque al aprendizaje orientado a la velocidad y la superficialidad, no a la comprensión.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">La investigación sobre motivación:</strong> Un metaanálisis de 2022 publicado en el <em>Journal of Educational Psychology</em> encontró que la exposición a entornos de trabajo reales aumenta la motivación académica de los estudiantes de secundaria en todas las materias — no solo en las directamente relacionadas con el trabajo. El mecanismo es la relevancia percibida: cuando los estudiantes ven cómo las matemáticas, la escritura y el pensamiento crítico funcionan en el mundo real, estudian con más profundidad y retienen más.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El trabajo real resuelve el problema de la relevancia de una manera que ninguna reforma curricular puede replicar completamente. Un estudiante que ha pasado cuatro semanas en una empresa de software no necesita que le convenzas de que las matemáticas y la lógica importan. Lo ha visto. Un estudiante que ha trabajado en una agencia de comunicación no necesita motivación adicional para desarrollar su escritura. Entiende para qué sirve.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La ventana de edad crítica: por qué los 14-16 años importan más</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          No toda experiencia laboral es igual, y el momento importa tanto como la calidad. Los psicólogos del desarrollo identifican la adolescencia temprana — especialmente entre los 14 y los 16 años — como una ventana crítica para la formación de identidad, la construcción de autoeficacia y el desarrollo de las funciones ejecutivas que gobiernan la planificación, el autocontrol y la persistencia.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Esta ventana coincide con el período en que los datos de PISA muestran las mayores divergencias entre sistemas. En los sistemas con mejor rendimiento — Singapur, Estonia, Japón — los estudiantes de 14 a 16 años tienen consistentemente niveles más altos de lo que los investigadores llaman &ldquo;agencia académica&rdquo;: la creencia de que su esfuerzo importa y que pueden mejorar. En los sistemas con peor rendimiento, esta creencia es notablemente más débil en el mismo grupo de edad.
+        </p>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">La ventana óptima:</strong> La investigación de Education and Employers encontró que el impacto de los encuentros con empleadores es significativamente mayor cuando ocurren entre los 14 y los 16 años que cuando ocurren después de los 17. El mecanismo es el efecto de acumulación: un estudiante que tiene su primera exposición profesional a los 15 tiene dos años para actuar sobre lo aprendido antes de las solicitudes universitarias. Uno que la tiene a los 17 tiene semanas.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La neurociencia apoya esta distinción. La corteza prefrontal — la región cerebral responsable del pensamiento planificado, la evaluación de riesgos y la toma de decisiones complejas — continúa desarrollándose hasta los 25 años, pero su plasticidad es máxima durante la adolescencia. Los entornos que exigen el ejercicio de estas funciones durante esta ventana producen desarrollos más robustos que los mismos entornos encontrados después. Un trabajo real a los 15 años construye circuitos cognitivos que un trabajo idéntico a los 22 simplemente no puede construir de la misma manera.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué significa PISA 2025 para las familias</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Para los padres que leen los titulares de PISA 2025, la tentación es preguntar: ¿debería preocuparme más por las notas de mi hijo? ¿Debería contratar un tutor? ¿Debería presionar para más deberes?
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La respuesta más honesta es: probablemente no. No porque las notas no importen — importan — sino porque la crisis que PISA 2025 documenta no es una crisis de conocimiento curricular. Es una crisis de habilidades aplicadas, pensamiento crítico y preparación para el mundo real. Y estas no se resuelven con más deberes. Se resuelven con más contacto con el mundo real.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lo que PISA 2025 debería llevar a las familias a hacer es diferente de la respuesta instintiva. En lugar de más presión académica, considerar:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Buscar oportunidades de experiencia laboral estructurada</strong> para estudiantes de 14 a 16 años — no para &ldquo;verse bien en la solicitud universitaria&rdquo;, sino porque el desarrollo que produce es genuino y medible.</Bullet>
+          <Bullet><strong>Priorizar experiencias que desarrollen pensamiento crítico aplicado:</strong> proyectos con consecuencias reales, trabajo con personas adultas en entornos profesionales, exposición a problemas que no tienen una respuesta única correcta.</Bullet>
+          <Bullet><strong>Cuestionar el uso de IA para tareas escolares.</strong> PISA 2025 es inequívoco: los estudiantes que la usan para resumir, redactar o investigar obtienen 20 puntos menos en ciencias. La IA puede ser una herramienta de aprendizaje poderosa cuando se usa para explorar — y contraproducente cuando reemplaza el pensamiento.</Bullet>
+          <Bullet><strong>Evaluar dónde está realmente tu hijo</strong> — no en relación a su clase o año escolar, sino en la distribución global. Las notas nacionales no te dicen esto. Una evaluación estandarizada con contexto internacional sí.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo Eduentry hace accesible la experiencia laboral</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El obstáculo principal para la experiencia laboral temprana no es la motivación de los estudiantes — es la accesibilidad. Las colocaciones estructuradas en empresas de calidad son difíciles de conseguir sin conexiones existentes, y la mayoría de los programas formales de grandes empleadores están diseñados para estudiantes de 16 o 17 años en adelante. Los estudiantes de 14 a 15 años — que se encuentran exactamente en la ventana más valiosa para la exposición profesional — tienen las opciones más limitadas.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El programa de evaluación de prácticas de Eduentry en <strong>eduentry.com/internship</strong> está diseñado específicamente para cerrar esta brecha. Los estudiantes de 14 a 18 años completan una evaluación adaptativa de 34 preguntas que mide la preparación profesional en tres dimensiones que los empleadores identifican de manera consistente como las más críticas: comunicación, resolución de problemas y conciencia profesional. La evaluación tarda aproximadamente 25 minutos y produce un informe personalizado con un desglose de habilidades, una puntuación de preparación y oportunidades adaptadas al perfil del estudiante.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Por qué la evaluación importa para la colocación:</strong> La paradoja de la experiencia laboral es bien conocida: los empleadores quieren candidatos con experiencia, pero alguien tiene que ser el primero en darles esa oportunidad. Una puntuación de evaluación verificada rompe este círculo. Proporciona a los empleadores evidencia objetiva del potencial del estudiante antes de cualquier entrevista, aumentando significativamente las tasas de respuesta cuando los estudiantes contactan directamente con empresas.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los resultados de PISA 2025 hacen que este tipo de evaluación sea más relevante, no menos. En un entorno donde los sistemas educativos están fallando de manera medible en desarrollar las habilidades que los empleadores más buscan, poder demostrar de forma verificable que un estudiante sí las tiene — o está en camino de desarrollarlas — se convierte en una ventaja competitiva real.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Las habilidades que importarán en la era de la IA</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El hallazgo de PISA 2025 sobre el uso de IA — que los estudiantes que la utilizan para tareas escolares obtienen significativamente peores resultados — merece una reflexión cuidadosa. No dice que la IA sea mala. Dice que reemplazar el pensamiento con IA durante el aprendizaje impide el desarrollo de las habilidades cognitivas que el pensamiento ejercita.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Esto tiene implicaciones directas para cómo los jóvenes deben prepararse para un mercado laboral cada vez más automatizado. La pregunta no es si usar IA o no usarla — es cuándo usarla y para qué. Los trabajadores que añaden más valor en un mercado laboral con IA son los que pueden hacer lo que la IA no puede: navegar la ambigüedad, gestionar relaciones humanas complejas, ejercer juicio contextual en situaciones nuevas y generar confianza en entornos donde las decisiones tienen consecuencias reales.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Estas son exactamente las habilidades que la experiencia laboral temprana desarrolla más directamente. Un estudiante que ha trabajado en un entorno profesional real sabe lo que significa tomar una decisión con información incompleta y vivir con las consecuencias. Sabe cómo gestionar una relación difícil con un compañero. Sabe cómo comunicar una idea a alguien que no tiene el contexto que tú tienes. Estas habilidades son irreemplazables por la IA — y están en declive según PISA 2025.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Juicio contextual:</strong> la capacidad de aplicar conocimiento a situaciones nuevas y ambiguas — lo que PISA mide como transferencia y lo que los empleadores llaman &ldquo;pensamiento crítico aplicado&rdquo;.</Check>
+          <Check><strong>Gestión de relaciones:</strong> trabajar con personas que tienen diferentes objetivos, estilos de comunicación y niveles de autoridad — una habilidad que solo se desarrolla en entornos reales con dinámicas reales.</Check>
+          <Check><strong>Comunicación persuasiva:</strong> no solo transmitir información, sino convencer, negociar y adaptar el mensaje a diferentes audiencias.</Check>
+          <Check><strong>Adaptabilidad ante la incertidumbre:</strong> mantener la efectividad cuando el contexto cambia, los planes fallan y las prioridades se reordenan — la competencia que los sistemas educativos más fallan en desarrollar según todos los datos disponibles.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La ironía final de PISA 2025 es que el estudio documenta un declive en las habilidades más difíciles de automatizar — pensamiento crítico, comprensión profunda, razonamiento sobre evidencia — en el momento preciso en que estas habilidades se vuelven más valiosas. Los estudiantes que salen de este informe con más urgencia para desarrollar experiencia en el mundo real, no menos, son los que estarán mejor posicionados para prosperar en la economía que los espera.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Conclusión: de los datos a la acción</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 documenta una crisis real en el rendimiento educativo global. Pero los mismos datos que describen el problema también apuntan hacia las soluciones. Los sistemas que mejor rinden — Singapur, Estonia, Japón — comparten características que van más allá del currículo: altas expectativas combinadas con apoyo real, culturas que valoran el aprendizaje profundo sobre el rendimiento superficial, y transiciones más fluidas entre la educación y el mundo laboral.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Para las familias que no pueden cambiar el sistema educativo de su país, pero sí pueden actuar individualmente, la conclusión práctica es clara: la experiencia laboral temprana — estructurada, reflexiva y comenzada en la ventana de 14 a 16 años — es la intervención más eficaz disponible para desarrollar exactamente las habilidades que PISA 2025 muestra que están en declive. No como sustituto de la educación formal, sino como su complemento más poderoso.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Los estudiantes que entren al mercado laboral de 2030 con experiencia real, habilidades aplicadas verificadas y la capacidad de pensar en entornos ambiguos tendrán una ventaja que ningún dato de PISA puede quitarles. El momento de empezar a construir esa ventaja es ahora — antes de los 16, no después de los 18.
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

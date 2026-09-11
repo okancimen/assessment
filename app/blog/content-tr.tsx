@@ -2122,6 +2122,183 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'pisa-2025-work-experience-student-readiness': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        OECD, 2025 yılında yayımladığı PISA raporunda küresel eğitim sistemi için ciddi bir uyarı niteliği taşıyan veriler sundu. 91 ülkede 760.000&apos;den fazla öğrencinin katıldığı bu değerlendirme, okuma, matematik ve fen bilimlerinde şimdiye kadar kaydedilen en düşük OECD ortalama puanlarını ortaya koydu. Akademisyenler, politika yapıcılar ve ebeveynler bu sonuçların nedenlerini tartışırken, veriler içinde gizlenen başka bir hikâye dikkat çekiyor: gerçek dünyayla erken yaşta temas kuran öğrenciler, yalnızca sınıf notlarına odaklananlara kıyasla çok daha güçlü bir zemine sahip.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Sınav puanlarının düşmesine ebeveynlerin verdiği refleks yanıt çoğunlukla akademik baskıyı artırmak oluyor: daha fazla ders, daha fazla ödev, daha fazla sınav pratiği. Ancak PISA 2025 verileri farklı bir yönü işaret ediyor. Asıl sorun, öğrencilerin ezberlediği bilgi miktarı değil; bu bilgiyi gerçek bağlamlarda kullanma kapasitesinin giderek zayıflaması. Ve bu kapasiteyi geliştirecek en etkili ortam sınıf değil, iş dünyasıdır.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA 2025 Ne Buldu?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025&apos;in bulguları sadece akademik bir düşüşü değil, derinleşen bir yapısal krizi yansıtıyor. 2015&apos;ten 2025&apos;e okuma puanları 28 puan, matematik puanları ise 22 puan geriledi. Her 30–40 PISA puanı yaklaşık bir yıllık okul eğitimine eşdeğer olduğu düşünüldüğünde, bu kayıp son derece önemli. Küresel ölçekte bakıldığında, ortalama bir OECD öğrencisi bugün on yıl öncesine kıyasla neredeyse bir okul yılı kadar geride.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Rapordaki bir başka dikkat çekici veri &ldquo;aceleci okuma&rdquo; oranlarıyla ilgili. İçeriği yeterince anlamadan hızla tarayan öğrencilerin oranı 2018&apos;den 2025&apos;e yaklaşık iki katına çıktı: yüzde 4,5&apos;ten yüzde 9&apos;a. Bu, derin düşünme ve analitik okuma becerilerinde ciddi bir erozyon anlamına geliyor. Yüzeysel işleme yetenekleri gelişirken gerçek anlama kapasitesi körleşiyor.
+        </p>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">Temel veri:</strong> PISA 2025 — 91 ülkede 760.000 öğrenci, 33 milyon 15 yaşındakiyi temsil eden örneklem. Okuma&apos;da 28 puan, Matematik&apos;te 22 puanlık on yıllık gerileme. OECD ülkelerinde tüm zamanlara ait en düşük ortalama puanlar.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yapay zeka kullanımıyla ilgili bulgular da önemli. Ödev süreçlerinde yapay zekayı özetleme, taslak oluşturma veya araştırma gibi amaçlarla kullanan öğrenciler, kullanmayanlara kıyasla fen bilimlerinde yaklaşık 20 puan daha düşük puan aldı. Bu fark yaklaşık bir yıllık okul eğitimine denk geliyor. Öte yandan genel öğrenme amacıyla yapay zeka kullanan öğrencilerde benzer bir olumsuz etki gözlemlenmedi; bu da kritik noktanın yapay zekanın kendisi değil, öğrenme sürecini kısa devre yapmasına izin vermek olduğuna işaret ediyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye için de özel bir not düşmek gerekiyor: ülkemiz 2022&apos;den bu yana fen bilimlerinde ölçülebilir bir gelişme kaydetti. Bu, doğru politika müdahalelerinin sonuç verdiğini ve Türk öğrencilerin zorluğun üstesinden gelebileceğini gösteren önemli bir veri. Küresel düşüşün ortasında bu olumlu trend, umudu canlı tutmak açısından anlamlı.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Üst performans sergileyen ülkeler listesi ise alışılmış şüphelilerden oluşuyor: Çin&apos;in katılımcı bölgeleri (BŞCZ), Singapur, Estonya, Japonya, Kore ve İngiltere. Bu ülkelerin ortak paydası yalnızca yoğun akademik hazırlık değil; problem çözme, eleştirel düşünme ve uygulamalı öğrenmeye verdikleri ağırlık.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İşverenler Hangi Becerileri İstiyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA temelde ölçülebilir bilişsel becerileri değerlendiriyor: matematiksel akıl yürütme, okuma anlama, bilimsel okuryazarlık. Ancak iş dünyasının talep ettiği beceriler bu üçgen üzerine inşa edilmiş çok daha geniş bir mimari. Dünya Ekonomik Forumu&apos;nun 2025 İş&apos;in Geleceği raporu, işverenlerin en kritik olarak değerlendirdiği becerileri şu şekilde sıralıyor: analitik düşünme, yaratıcı problem çözme, eleştirel değerlendirme, dayanıklılık ve uyum yeteneği, liderlik, merak ve öğrenmeye açıklık.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu becerilerin ortak özelliği dikkat çekici: hiçbiri sınıfta pasif bir şekilde oturarak öğrenilemez. Bunlar, gerçek kararlar alınarak, gerçek geri bildirim alınarak ve gerçek sonuçlarla yüzleşilerek geliştirilen beceriler. PISA&apos;nın ölçtüğü matematiksel akıl yürütme yeteneği, iş yerindeki karar alma becerisi için gerekli ama yeterli değil. Eksik olan köprü, gerçek dünya deneyimi.
+        </p>
+        <Callout color="amber">
+          <strong className="text-amber-900">Düşündürücü veri:</strong> Öğrencilerin yalnızca %46&apos;sı hem bilgi kaynaklarını eleştirel biçimde sorguluyor hem de bilimi güveniyor. Bu oran, bilgi okuryazarlığının — işverenlerin en çok aradıkları becerilerden biri — ne kadar zayıf olduğunu gözler önüne seriyor.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Confederation of British Industry&apos;nin yıllık işveren anketleri bir on yıl boyunca tutarlı bir mesaj veriyor: iş deneyimi, işe alım kararlarında derece sınıfından, üniversite markasından ve hatta A-level notlarından daha belirleyici bir faktör. İşverenlerin aradığı, not defterinde parlayan öğrenci değil; gerçek bir ortamda gerçek bir sorunu çözebilecek insan.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Erken İş Deneyimi Neden Her Şeyi Değiştirir</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Erken yaşta iş deneyiminin faydalarını belgeleyen araştırma literatürü artık tartışılmaz bir kütleye ulaştı. Education and Employers kuruluşunun 20.000&apos;den fazla genci kapsayan boylamsal çalışması en çarpıcı veriyi sunuyor: 16 yaşından önce dört veya daha fazla anlamlı işveren teması yaşayan öğrencilerin 19 yaşında NEET (Eğitim, İstihdam veya Mesleki Eğitim Dışı) olma olasılığı, bu deneyimden yoksun akranlarına kıyasla beş kat daha düşük.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu dramatik farkın ardında ne var? Mekanizma birkaç kanaldan işliyor. Birincisi, öz-yeterlilik: gerçek bir iş ortamında gerçek bir görevi tamamlayan öğrenci, kendi kapasitesine dair somut kanıt biriktiriyor. Bu, sınıf notlarının veremeyeceği türde bir özgüven inşa ediyor. İkincisi, kariyer netliği: bir alanda fiilen çalışmak, o alanın kendine uygun olup olmadığını doğrudan deneyimle anlamayı sağlıyor. Bu netlik, üniversite bölüm seçiminde kritik yanlışları önlüyor. Üçüncüsü, profesyonel ağ: erken başlanan iş deneyimi, zaman içinde değer kazanan bağlantılar, referanslar ve bir sicil oluşturuyor.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>16 yaşından önce dört veya daha fazla işveren teması yaşayan öğrenciler <strong>19 yaşında NEET olma olasılığı 5 kat daha düşük</strong> (Education and Employers, 2018).</Bullet>
+          <Bullet>İngiliz mezun işe alım yetkililerinin <strong>%73&apos;ü</strong> iş deneyimini mülakatta en önemli farklılaştırıcı olarak değerlendiriyor (Prospects, 2022).</Bullet>
+          <Bullet>Staj deneyimi olan öğrencilerin <strong>mezuniyetten önce iş teklifi alma oranı %70 daha yüksek</strong> (NACE, 2020).</Bullet>
+          <Bullet>Yapılandırılmış yerleştirmeler, kontrol grubuna kıyasla ölçülebilir biçimde daha güçlü <strong>yürütücü işlev gelişimi</strong> üretiyor (Developmental Psychology, 2020).</Bullet>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Araştırma sonucu:</strong> Lise döneminde işveren katılımı, hem eğitimdeki sürekliliğin hem de erken kariyer başarısının en güçlü tek öngörücülerinden biri — pek çok okul içi müdahaleyi geride bırakıyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bağlılık Krizi ve Gerçek Çalışma Hayatı</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025&apos;in belki de en umut verici verisi bağlılıkla ilgili: öğrencilerin %76&apos;sı okula ait hissediyor. Bu, insan bağlantısının hâlâ güçlü olduğunu gösteriyor. Ancak aynı öğrenciler giderek daha az şeyi merak ediyor, giderek daha az şeyle derin biçimde ilgileniyor. Yüzeysel bilgi edinme çoğalırken merak ve keşif azalıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu paradoksu çözmenin en güçlü yollarından biri, öğrencilere öğrendiklerinin neden önemli olduğunu fiilen göstermek. Matematik formüllerini ezberleyen bir öğrenci, aynı formülleri gerçek bir veri analizinde kullandığında bambaşka bir anlama uyanıyor. İletişim derslerinde öğrenilen kavramlar, gerçek bir iş yerindeki toplantıda anlık uygulanma gerektirdiğinde somutlaşıyor. İş deneyimi, sınıfta öğrenilenlerin neden önemli olduğunu göstermenin en güçlü mekanizması.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          CIPD&apos;nin 2023 <em>Early Careers</em> raporu, dayanıklılığı işverenlerin okul mezunlarında ve birinci sınıf üniversite öğrencilerinde en sık eksik gördükleri özellik olarak belirledi. Dayanıklılık, belirsizlikle başa çıkabilme, planlar işe yaramadığında pes etmeme ve gerçek geri bildirimden ders çıkarma kapasitesi — bunlar sınıfta değil, gerçek iş ortamlarında gelişen özellikler. Eğitim sistemi bu becerileri ne kadar az üretirse, iş dünyası onları dışarıda bulmakta o kadar zorlanıyor.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">En Kritik Yaş Penceresi: 14–16</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gelişim araştırmacıları, erken yaşta iş deneyimi için optimal pencere konusunda dikkat çekici bir fikir birliği içinde: 14–16 yaş. Bu pencere birkaç nedenden dolayı kritik önem taşıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Birincisi, beyin gelişimiyle örtüşüyor. Prefrontal korteks — planlama, dürtü kontrolü, risk değerlendirmesi ve hedef yönelimli davranıştan sorumlu bölge — ergenlik döneminde en yüksek esneklik kapasitesinde. Bu dönemde profesyonel bir ortamın talepleriyle karşılaşmak, yürütücü işlev becerilerini güçlendiriyor. <em>Developmental Psychology</em> dergisinde (2020) yayımlanan araştırma, lise yıllarında yapılandırılmış profesyonel ortamlara maruz kalan ergenlerin ölçülebilir biçimde daha güçlü yürütücü işlev performansı sergilediğini ve bu etkinin 14–16 yaş başlangıcında en belirgin olduğunu ortaya koydu.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İkincisi, zaman avantajı sağlıyor. 15 yaşında anlamlı bir yerleştirme tamamlayan öğrenci, UCAS başvurusuna iki haftalık deneyimle değil iki yıllık belgelenmiş ve yansıtılmış deneyimle ulaşıyor. Bu, kabul ekiplerinin gördüğü en güçlü farklılaştırıcılardan biri.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Üçüncüsü, kimlik oluşumuyla örtüşüyor. Erik Erikson&apos;ın kimlik teorisi 12–18 yaşını, bireylerin benlik duygularını ve gelecek yönelimlerini aktif olarak inşa ettiği dönem olarak tanımlıyor. Bu pencerede profesyonel dünyayla kurulan temas, kariyere dair sorulara soyut değil somut yanıtlar üretiyor. &ldquo;Bu alan bana uyuyor mu?&rdquo; sorusunun yanıtını doğrudan deneyimle almak, sonradan yaşanabilecek maliyetli yön değişikliklerini önlüyor.
+        </p>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">Gelişim penceresi:</strong> 14–16 yaş, hem nörobilimsel açıdan hem de kimlik oluşumu açısından profesyonel deneyimin en yüksek dönüşüm değeri ürettiği dönem. Bu pencerede başlamak, 17–18 yaşında başlamaktan ölçülebilir biçimde daha güçlü sonuçlar üretiyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA 2025 Aileler İçin Ne Anlama Geliyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025&apos;i okuyan bir ebeveyn için ilk tepki paniğe kapılmak veya çocuğuna daha fazla ders aldırmak olabilir. Ancak veriler bu yanıtın işe yaramayacağına işaret ediyor. Düşen puanlar, ders saatlerinin yetersizliğinden değil; öğrencilerin öğrendiklerini anlamlandırma ve uygulama kapasitesindeki zayıflamadan kaynaklanıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Aileler için daha üretken sorular şunlar: Çocuğum gerçek bir problem çözdü mü son altı ayda? Gerçek bir geri bildirim aldı mı, öğretmeninin not verdiği geri bildirim dışında? Kendi kararlarını vererek ve bu kararların sonuçlarıyla yüzleşerek bir şey yaptı mı? Bu sorulara verilen yanıtlar çoğunlukla çocuğun akademik performansından daha fazlasını söylüyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yapay zeka bulgusu da dikkatli bir yorum gerektiriyor. Yapay zekayı öğrenmeyi kısa devre yapmak için değil, düşünmeyi derinleştirmek için kullanan öğrenciler farklı bir profil çiziyor. Soru şu: Çocuğunuz yapay zekayı cevap almak için mi yoksa soruyu daha iyi anlamak için mi kullanıyor? Bu ayrım, PISA 2025&apos;in en kritik mesajlarından biri.
+        </p>
+        <Callout color="amber">
+          <strong className="text-amber-900">Dikkat:</strong> Yapay zekayı ödev için kullanan öğrenciler fen bilimlerinde yaklaşık 20 puan daha düşük puan aldı — yaklaşık bir yıllık okul eğitimine eşdeğer fark. Sorun yapay zeka değil; düşünme sürecini dışarıya devretmek.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ebeveynlerin yapabileceği en değerli şey, çocuklarına gerçek dünya ile temas fırsatları yaratmak. Bu bazen bir aile işletmesinde küçük bir sorumluluk, bazen gönüllü çalışma, bazen yapılandırılmış bir staj olabilir. Önemli olan, öğrenmenin gerçek sonuçları olan ortamlarda da gerçekleştiğini deneyimlemek.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Eduentry Stajı Nasıl Erişilebilir Kılıyor</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Erken yaşta staj yapmanın önündeki en yaygın engel motivasyon eksikliği değil, erişim. Çoğu 14–16 yaşındaki öğrenci nereden başlayacağını, neye hazır olduğunu ve hangi sektörün kendisine uyduğunu bilmiyor. Ebeveynler ise çocuklarını doğru yere yönlendirme konusunda belirsizlik içinde.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry bu boşluğu kapatmak için tasarlandı. Platforma giriş noktası, 14–18 yaş arası lise öğrencileri için hazırlanmış 34 soruluk adaptif bir değerlendirme. Bu değerlendirme üç boyutu ölçüyor: genel aptitude ve problem çözme kapasitesi, hedef sektörle ilgili temel alan bilgisi, ve iletişim ile işyeri becerileri. Yaklaşık 25 dakika süren değerlendirme tamamlandığında, öğrenci kişiselleştirilmiş bir hazırlık raporu alıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu rapor üç temel soruyu yanıtlıyor: Hangi alanlarda güçlüm, hangi alanlarda gelişmem gerekiyor? Hangi sektör benim profilime en uygun? Ve şu an staj için ne kadar hazırım? Bu bilgilerle donanmış bir öğrenci, belirsizliğe değil netliğe dayalı bir adım atıyor. Değerlendirme sonuçları aynı zamanda staj başvurularında işverenlere sunulabilecek somut bir kanıt işlevi görüyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry&apos;nin yaklaşımı, stajı seçkin bir azınlık için değil, hazır olan her öğrenci için erişilebilir kılmak. Teknoloji, iş dünyası, dijital pazarlama veya veri analitiği — farklı ilgi alanları ve profiller için farklı yollar mevcut. Başlangıç noktası ise her zaman aynı: nesnel bir değerlendirme, dürüst bir rapor, net bir sonraki adım.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Nasıl başlanır:</strong> <Link href="https://eduentry.com/internship" className="text-emerald-700 underline hover:text-emerald-900">eduentry.com/internship</Link> adresindeki ücretsiz değerlendirme 25 dakika sürer. Öğrenci, raporu aldığında hangi sektörde ne düzeyde hazır olduğunu ve hangi alanlarda gelişmesi gerektiğini somut olarak görüyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yapay Zeka Çağında Önem Kazanan Beceriler</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025&apos;in yapay zeka bulgularını doğru perspektife oturtmak gerekiyor. Sorun yapay zekanın varlığı değil; öğrencilerin onu nasıl kullandığı. Ödevini yapay zekaya yaptıran öğrenci bir beceri kazanmıyor — bir süreci atlıyor. Ama yapay zekayı düşüncesini sınamak, argümanlarını güçlendirmek ve anlayışını derinleştirmek için kullanan öğrenci farklı bir şey yapıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İş dünyasının yapay zeka çağında en değerli bulduğu beceriler paradoks gibi görünüyor: yapay zekanın kolayca üretemeyeceği şeyler. Eleştirel sorgulama — bir yapay zeka çıktısının nerede yanlış, eksik veya yüzeysel olduğunu tespit etme. Etik karar verme — veri değil değer gerektiren seçimler. Duygusal zeka — ekip dinamiklerini okuma, çatışmayı yönetme, güven inşa etme. Belirsizlikte hareket etme — tüm veriler mevcut olmadığında bile ilerleyebilme.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu becerilerin tamamı, gerçek iş ortamlarında gelişiyor. Yapay zeka asistan olarak işlev gördüğünde ancak insan muhakemesi hâlâ merkezdeyken en değerli öğrenme gerçekleşiyor. Staj, tam olarak bu ortamı sunuyor: gerçek araçlar, gerçek insanlar, gerçek kararlar. Yapay zekanın çıktılarını eleştiren, onları geliştiren ve sonuçlarından sorumlu olan bir öğrenci, yalnızca yapay zekayı kullanan birinden radikal biçimde farklı bir beceri seti geliştiriyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dünya Ekonomik Forumu&apos;nun 2025 verileri, en hızlı büyüyen beceri kategorisinin &ldquo;insan odaklı beceriler&rdquo; olduğunu ortaya koyuyor: yaratıcılık, eleştirel düşünme, empati, liderlik. Bunlar tam olarak bir stajın geliştirebileceği ve bir sınavın ölçemeyeceği beceriler. PISA 2025&apos;in ortaya koyduğu tablo, okulların bu becerileri giderek daha az ürettiğini; iş dünyasının ise onları giderek daha fazla aradığını gösteriyor.
+        </p>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">Yapay zeka çağı paradoksu:</strong> Yapay zeka ne kadar güçlenirse, <em>insan</em> becerilerine olan talep o kadar artıyor: eleştirel muhakeme, etik yargı, duygusal zeka ve belirsizlikte karar verme. Bunların hepsi iş deneyimiyle — sınıfta değil — gelişiyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sonuç: Doğru Yanıt Akademik Baskı Değil</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 verileri karşısında akademik baskıyı artırmak cazip bir yanıt. Ama veriler bu yolun işe yaramayacağını gösteriyor. Öğrenciler zaten yoğun bir akademik baskı altında; bu baskı yükseliyor ve puanlar düşüyor. Sorun bilgi miktarı değil, bu bilgiyi anlamlandırma ve uygulama kapasitesi.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gerçek çözüm, öğrencilere öğrendiklerinin neden önemli olduğunu gösterecek ortamlar yaratmak. Gerçek problemler, gerçek geri bildirim, gerçek sorumluluk. Bu ortamı en verimli biçimde yaratan araç iş deneyimi. 14–16 yaş penceresi, bu deneyimin en yüksek gelişimsel değer ürettiği dönem. Ve başlamak için doğru zaman, hazır hissedilmeden önce.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye&apos;nin fen bilimlerindeki olumlu trendi, doğru müdahalelerin fark yaratabildiğini kanıtlıyor. Bireysel düzeyde de aynı ilke geçerli: doğru zamanda, doğru bağlamda, doğru destekle atılan bir adım, yıllarca sürecek birikim için zemin hazırlıyor. PISA 2025&apos;in asıl mesajı bu: puanları düşüren nedenler anlaşılırsa, çözüm de görünür hale geliyor.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Akademik bilgi gerekli ama yeterli değil</strong> — PISA 2025 puanları düşerken işveren beklentileri yükseliyor. Aradaki boşluk gerçek dünya deneyimiyle kapanıyor.</Check>
+          <Check><strong>14–16 yaş penceresi kaçırılmamalı</strong> — Hem nörobilimsel hem kimlik gelişimi açısından bu yaş, profesyonel deneyimin en yüksek dönüşüm değeri ürettiği dönem.</Check>
+          <Check><strong>Yapay zeka aracı, ikame değil</strong> — Düşünme sürecini destekleyen yapay zeka kullanımı faydalı; düşünme sürecini atlayan kullanım ise ölçülebilir zarar veriyor.</Check>
+          <Check><strong>Türkiye ilerleme kaydediyor</strong> — Fen bilimlerindeki olumlu trend, Türk öğrencilerinin küresel rekabette yer alabildiğini gösteriyor. Bu ivmeyi bireysel düzeyde sürdürmek mümkün.</Check>
+          <Check><strong>Başlamak için doğru zaman bugün</strong> — Değerlendirme, yönlendirme ve doğru fırsat bir araya geldiğinde, bir adım on yıllık bir avantajın başlangıcı olabilir.</Check>
+        </ul>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

@@ -423,6 +423,36 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: 'https://eduentry.com/es',
     },
   },
+  {
+    slug: 'pisa-2025-experiencia-laboral-preparacion-estudiantes',
+    contentSlug: 'pisa-2025-work-experience-student-readiness',
+    title: 'PISA 2025: Las Notas Caen en Todo el Mundo — Por Qué la Experiencia Laboral es la Respuesta',
+    shortTitle: 'PISA 2025 y Experiencia Laboral: La Brecha de Preparación',
+    description: 'El informe PISA 2025 de la OCDE revela los puntajes académicos más bajos jamás registrados. Pero los datos también señalan una solución: los estudiantes que se conectan con el mundo real desarrollan las habilidades que las escuelas no pueden enseñar.',
+    date: '2026-09-11',
+    readTime: '13 min de lectura',
+    tags: ['Work Experience', 'Internship', 'Student Skills', 'Future of Education', 'Career Development'],
+    faqs: [
+      {
+        q: '¿Qué encontró PISA 2025 sobre el rendimiento de los estudiantes?',
+        a: 'PISA 2025 evaluó a más de 760.000 estudiantes en 91 países y encontró que los puntajes promedio de la OCDE en lectura, matemáticas y ciencias están en sus niveles más bajos jamás registrados. La lectura cayó 28 puntos y las matemáticas 22 puntos entre 2015 y 2025. El informe también encontró que los estudiantes que usan IA para tareas escolares obtienen aproximadamente 20 puntos menos que los que no la usan.',
+      },
+      {
+        q: '¿Por qué es importante la experiencia laboral temprana para los estudiantes?',
+        a: 'La experiencia laboral temprana brinda las habilidades que PISA mide pero que las escuelas tienen cada vez más dificultades para enseñar: pensamiento crítico, resolución de problemas, comunicación y toma de decisiones en el mundo real. La investigación muestra consistentemente que los estudiantes que obtienen exposición profesional antes de los 16 años desarrollan mayor motivación y mejores resultados laborales a largo plazo.',
+      },
+      {
+        q: '¿Cómo pueden los estudiantes hacer prácticas mientras están en el colegio?',
+        a: 'El programa de evaluación de prácticas de Eduentry está diseñado específicamente para estudiantes de 14 a 18 años que todavía están en secundaria. Los estudiantes completan una evaluación adaptativa de 34 preguntas que mide la preparación profesional en comunicación, resolución de problemas y conciencia profesional.',
+      },
+    ],
+    cta: {
+      heading: '¿Está tu estudiante listo para la experiencia laboral?',
+      body: 'La evaluación gratuita de preparación para prácticas de Eduentry toma 25 minutos y proporciona a los estudiantes un informe personalizado — desglose de habilidades, puntuación de preparación y oportunidades adaptadas.',
+      label: 'Comenzar evaluación de prácticas',
+      href: 'https://eduentry.com/internship',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

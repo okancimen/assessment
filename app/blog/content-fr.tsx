@@ -681,6 +681,189 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'pisa-2025-experience-professionnelle-etudiants': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        En septembre 2026, l&apos;OCDE a publié les résultats de PISA 2025 — et le monde de l&apos;éducation a reçu un signal d&apos;alarme sans précédent. Plus de 760 000 élèves dans 91 pays, représentant 33 millions de jeunes de 15 ans, ont participé à la plus grande évaluation éducative internationale jamais organisée. Le verdict est sans appel : les scores moyens de l&apos;OCDE en lecture, en mathématiques et en sciences sont à leurs niveaux les plus bas depuis la création du programme. La lecture a reculé de 28 points depuis 2015. Les mathématiques ont perdu 22 points. Ces chiffres ne sont pas des variations statistiques mineures — ils représentent plus d&apos;une année scolaire perdue par génération.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        La réaction instinctive des systèmes éducatifs face à de tels résultats est prévisible : plus de cours, plus de devoirs, plus d&apos;examens. Plus de pression académique. Mais PISA 2025 lui-même suggère que cette réponse est non seulement insuffisante — elle est potentiellement contre-productive. Car les données révèlent quelque chose de plus profond qu&apos;une simple baisse de performances scolaires : une déconnexion croissante entre ce que l&apos;école enseigne et les compétences dont les jeunes ont réellement besoin pour réussir dans la vie adulte. Et parmi les solutions que les recherches internationales identifient avec constance, une ressort avec une clarté particulière&nbsp;: l&apos;expérience professionnelle précoce.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Cet article examine ce que PISA 2025 révèle vraiment sur la préparation des élèves, pourquoi les compétences que les employeurs demandent et celles que les écoles développent divergent de plus en plus, et comment l&apos;expérience professionnelle structurée — accessible dès 14 ans — peut combler cet écart de façon mesurable.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce que PISA 2025 a trouvé : au-delà des gros titres</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les chiffres globaux de PISA 2025 sont frappants, mais les données sous-jacentes révèlent des dynamiques encore plus préoccupantes. La baisse de 28 points en lecture entre 2015 et 2025 masque un changement qualitatif dans la façon dont les jeunes lisent. La proportion d&apos;élèves pratiquant la &laquo;&nbsp;lecture rapide&nbsp;&raquo; — parcourir les textes en privilégiant la vitesse à la compréhension profonde — a presque doublé, passant de 4,5 % à 9 % des élèves de l&apos;OCDE. Ce n&apos;est pas simplement lire moins bien. C&apos;est développer des habitudes cognitives fondamentalement différentes.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le résultat le plus révélateur concerne l&apos;intelligence artificielle. PISA 2025 est le premier cycle à examiner systématiquement l&apos;utilisation de l&apos;IA par les élèves. La découverte centrale : les élèves qui utilisent l&apos;IA pour des tâches scolaires spécifiques — résumer des textes, rédiger des travaux, faire des recherches — obtiennent environ 20 points de moins en sciences que leurs pairs qui effectuent ces tâches par leur propre effort cognitif. Vingt points PISA correspondent approximativement à une année scolaire complète. En d&apos;autres termes, déléguer le travail cognitif à l&apos;IA pour les devoirs coûte aux élèves l&apos;équivalent d&apos;une année d&apos;apprentissage.
+        </p>
+        <Callout color="amber">
+          <strong>Les chiffres clés de PISA 2025 :</strong> 760 000 élèves, 91 pays, 33 millions de jeunes représentés. Lecture&nbsp;: &minus;28 points depuis 2015. Mathématiques&nbsp;: &minus;22 points depuis 2015. Utiliser l&apos;IA pour les devoirs&nbsp;: &minus;20 points en sciences. Seulement 46 % des élèves vérifient les sources ET privilégient les preuves scientifiques.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La dimension géographique des résultats est également instructive. Les meilleurs performeurs — la Chine (BSJZ), Singapour, l&apos;Estonie, le Japon, la Corée du Sud, le Royaume-Uni — partagent des caractéristiques communes&nbsp;: des attentes académiques élevées, une forte culture de l&apos;effort, et des environnements scolaires qui limitent la distraction numérique pendant les heures de cours. 28 % des élèves de l&apos;OCDE déclarent que leurs camarades sont distraits par des appareils numériques pendant la plupart ou la totalité des cours de sciences. Dans les pays les mieux classés, ce chiffre est significativement plus bas.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Il y a néanmoins des résultats positifs. 76 % des élèves de l&apos;OCDE déclarent se sentir appartenir à leur école — un chiffre en légère amélioration depuis 2022. Et les élèves qui bénéficient d&apos;une éducation à la littératie en IA obtiennent de légèrement meilleures performances que leurs pairs. La technologie n&apos;est pas le problème en soi. La façon dont elle est utilisée — pour remplacer la réflexion plutôt que pour la stimuler — l&apos;est.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les compétences que les employeurs veulent — et que PISA mesure</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Il existe une convergence remarquable entre ce que PISA évalue et ce que les employeurs déclarent rechercher. Ce n&apos;est pas une coïncidence — PISA a été conçu pour mesurer non pas la maîtrise du programme scolaire, mais la capacité à appliquer les connaissances dans des contextes réels et non structurés. C&apos;est précisément la définition de ce que les entreprises appellent &laquo;&nbsp;employabilité&nbsp;&raquo;.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les enquêtes auprès des employeurs — du Forum Économique Mondial aux grandes associations patronales européennes — identifient systématiquement les mêmes priorités&nbsp;: pensée critique et résolution de problèmes complexes, communication claire et persuasive, capacité à apprendre de façon autonome, collaboration et travail en équipe, et conscience professionnelle — comprendre comment fonctionnent les organisations. Ces compétences ne sont pas enseignées explicitement dans la plupart des curricula scolaires. Elles se développent par la pratique, dans des contextes réels.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check>Pensée critique&nbsp;: évaluer des informations contradictoires et prendre des décisions fondées sur des preuves</Check>
+          <Check>Résolution de problèmes&nbsp;: identifier et résoudre des problèmes non structurés sans réponse prédéfinie</Check>
+          <Check>Communication&nbsp;: transmettre des idées clairement à des publics variés, à l&apos;écrit et à l&apos;oral</Check>
+          <Check>Conscience professionnelle&nbsp;: comprendre comment les organisations fonctionnent et créent de la valeur</Check>
+          <Check>Résilience et adaptabilité&nbsp;: faire face à l&apos;échec, s&apos;adapter aux changements imprévus, persévérer</Check>
+          <Check>Maîtrise des outils numériques&nbsp;: utiliser la technologie de façon critique et productive</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La baisse des scores PISA en lecture et en mathématiques n&apos;est pas qu&apos;une statistique abstraite. Elle signifie concrètement que les élèves arrivent à 18 ans avec une capacité réduite à comprendre des textes complexes, à raisonner quantitativement, et à évaluer la fiabilité de l&apos;information — les fondations mêmes de l&apos;employabilité dans l&apos;économie du XXIe siècle.
+        </p>
+        <Callout color="indigo">
+          <strong>La convergence cruciale&nbsp;:</strong> Les compétences que PISA mesure — raisonnement appliqué, compréhension de l&apos;écrit dans des contextes réels, pensée scientifique — sont exactement celles que les employeurs placent en tête de leurs priorités. Les deux mesurent la même chose&nbsp;: la capacité à fonctionner efficacement dans le monde réel.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi l&apos;expérience professionnelle précoce change tout</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La recherche sur les effets de l&apos;expérience professionnelle précoce sur les jeunes est cohérente sur plusieurs décennies et dans plusieurs contextes culturels. Organisation Education and Employers, basée au Royaume-Uni, a suivi des milliers de jeunes et constaté que ceux qui ont eu au moins quatre contacts significatifs avec des professionnels avant l&apos;âge de 16 ans ont cinq fois moins de risques de ne pas être en emploi, formation ou éducation à 19 ans. Cinq fois moins.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          D&apos;autres recherches montrent que l&apos;expérience professionnelle structurée développe précisément les compétences que PISA identifie comme déficitaires. La lecture critique s&apos;améliore quand les jeunes lisent des documents professionnels réels avec des enjeux réels — des e-mails, des rapports, des propositions. La résolution de problèmes se développe quand les problèmes ont des conséquences réelles et ne comportent pas de solution prédéfinie. La communication s&apos;affine quand elle doit convaincre de vraies personnes plutôt que satisfaire un correcteur.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Il y a aussi une dimension motivationnelle que les données PISA confirment indirectement. La désengagement scolaire — visible dans la baisse du sentiment d&apos;appartenance chez certaines catégories d&apos;élèves — est l&apos;un des facteurs identifiés dans le déclin des performances. Les jeunes qui voient comment leurs apprentissages s&apos;appliquent dans le monde réel développent une motivation intrinsèque que l&apos;école seule peine à générer.
+        </p>
+        <Callout color="emerald">
+          <strong>Données Education and Employers (2024)&nbsp;:</strong> Les lycéens qui ont eu au moins quatre contacts significatifs avec des professionnels avant 16 ans ont cinq fois moins de risques de se retrouver sans emploi, formation ou éducation à 19 ans. L&apos;effet est encore plus marqué pour les élèves de milieux défavorisés.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La crise d&apos;engagement et le travail réel comme solution</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;une des révélations les moins commentées de PISA 2025 concerne non pas les performances brutes mais l&apos;engagement. La quasi-disparition des performances de haut niveau dans certains pays, combinée à la montée de la &laquo;&nbsp;lecture rapide&nbsp;&raquo; et à la dépendance à l&apos;IA pour le travail cognitif, pointe vers un problème d&apos;engagement profond — pas simplement de capacité.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les élèves qui n&apos;utilisent pas l&apos;IA pour leurs devoirs et qui maintiennent de bonnes performances ne sont pas nécessairement plus intelligents. Ils sont souvent plus engagés — ils trouvent une raison intrinsèque de faire l&apos;effort cognitif que l&apos;apprentissage exige. Cette motivation intrinsèque a une source connue&nbsp;: la perception de la pertinence. Quand un jeune comprend pourquoi une compétence compte dans le monde réel, il est infiniment plus disposé à faire l&apos;effort de l&apos;acquérir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;expérience professionnelle crée cette pertinence de façon directe et irréfutable. Un lycéen qui passe deux semaines dans une équipe de communication d&apos;une entreprise et rédige de vrais textes pour de vrais lecteurs comprend immédiatement pourquoi la clarté, la précision et la capacité à évaluer l&apos;information importent. Ce n&apos;est plus théorique. C&apos;est opérationnel.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet>L&apos;expérience professionnelle rend les apprentissages scolaires pertinents et motivants</Bullet>
+          <Bullet>Elle développe la motivation intrinsèque — la condition nécessaire à un apprentissage profond</Bullet>
+          <Bullet>Elle expose les jeunes à des problèmes non structurés que les manuels scolaires n&apos;offrent jamais</Bullet>
+          <Bullet>Elle construit la résilience face à l&apos;échec dans des contextes à faibles enjeux</Bullet>
+          <Bullet>Elle donne un contexte concret aux compétences académiques, rendant leur développement significatif</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La fenêtre d&apos;âge critique&nbsp;: 14-16 ans</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La recherche sur le développement adolescent identifie une fenêtre particulièrement féconde pour la première expérience professionnelle&nbsp;: entre 14 et 16 ans. À cet âge, plusieurs facteurs se combinent de façon unique. Le cerveau adolescent est en pleine période de restructuration des circuits de motivation et de récompense — une période d&apos;une plasticité exceptionnelle. Les expériences vécues à cet âge ont tendance à laisser des empreintes durables sur les orientations professionnelles et les valeurs du travail.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          De plus, commencer à 14-16 ans laisse le temps d&apos;exploiter l&apos;expérience. Un élève qui fait un premier stage à 15 ans a devant lui deux à trois ans pour approfondir ce qu&apos;il a découvert, explorer d&apos;autres secteurs, développer des compétences spécifiques, et construire un récit professionnel cohérent avant ses candidatures universitaires. Un élève qui commence à 17-18 ans n&apos;a pas ce temps de maturation.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          C&apos;est également l&apos;âge auquel l&apos;écart entre les élèves engagés et désengagés commence à se creuser de façon mesurable. Les données PISA montrent que le sentiment d&apos;appartenance scolaire — l&apos;un des prédicteurs les plus forts de la performance — est particulièrement fragile entre 14 et 16 ans, surtout pour les filles. L&apos;expérience professionnelle peut jouer un rôle de réancrage en donnant aux jeunes une identité compétente en dehors du cadre scolaire.
+        </p>
+        <Callout color="indigo">
+          <strong>La fenêtre optimale&nbsp;:</strong> La recherche sur le développement adolescent identifie 14-16 ans comme la période la plus fertile pour une première expérience professionnelle structurée. C&apos;est l&apos;âge auquel le gap entre l&apos;école et le monde du travail est maximal — et donc l&apos;apprentissage potentiel aussi.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce que PISA 2025 signifie pour les familles</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pour les parents qui lisent les résultats de PISA 2025, la tentation naturelle est de réagir en ajoutant de la pression académique — plus de cours particuliers, plus de temps d&apos;étude, plus de préparation aux examens. Cette réaction est compréhensible mais insuffisante. Car PISA ne mesure pas la maîtrise du programme — il mesure la capacité à mobiliser des connaissances dans des situations réelles. Et aucun cours particulier ne peut enseigner cette capacité aussi efficacement que de vivre de vraies situations professionnelles.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ce que les données suggèrent pour les familles est différent&nbsp;: maintenir des attentes académiques élevées, certainement — mais les combiner avec des expériences qui rendent ces attentes significatives. Un jeune qui comprend pourquoi les mathématiques comptent parce qu&apos;il a vu comment une équipe financière les utilise est bien plus motivé à les maîtriser qu&apos;un jeune à qui on dit simplement qu&apos;elles seront importantes &laquo;&nbsp;plus tard&nbsp;&raquo;.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Il y a aussi la question de la position individuelle. PISA mesure des moyennes nationales. Ce qui compte pour votre famille, c&apos;est de savoir où votre enfant se situe dans cette distribution — et si les compétences qu&apos;il développe à l&apos;école le préparent réellement aux exigences du monde professionnel. Cette information individuelle ne peut pas venir de PISA. Elle doit venir d&apos;une évaluation personnalisée.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check>Encouragez une première expérience professionnelle dès 14-15 ans, même courte</Check>
+          <Check>Privilégiez les expériences avec de vraies responsabilités plutôt que l&apos;observation passive</Check>
+          <Check>Discutez régulièrement de ce que votre enfant observe dans ses expériences professionnelles</Check>
+          <Check>Évaluez objectivement les compétences de préparation professionnelle de votre enfant</Check>
+          <Check>Combinez les attentes académiques avec des expériences qui les rendent concrètes</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment Eduentry rend l&apos;expérience professionnelle accessible</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;un des obstacles les plus fréquents à l&apos;expérience professionnelle précoce est la crédibilité. Comment un lycéen de 14 ou 15 ans, sans CV ni références, peut-il convaincre une organisation de lui confier une vraie responsabilité ? C&apos;est précisément le problème qu&apos;Eduentry a conçu pour résoudre.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;évaluation de préparation au stage d&apos;Eduentry — disponible sur <strong>eduentry.com/internship</strong> — est conçue spécifiquement pour les élèves de 14 à 18 ans encore au lycée. En 25 minutes, l&apos;évaluation adaptative mesure trois dimensions de la préparation professionnelle&nbsp;: la communication (capacité à transmettre des idées clairement et de façon professionnelle), la résolution de problèmes (approche face à des défis non structurés), et la conscience professionnelle (compréhension du fonctionnement des organisations et des attentes professionnelles).
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          À l&apos;issue de l&apos;évaluation, chaque élève reçoit un rapport personnalisé comprenant un score de préparation, un bilan détaillé des compétences, et des recommandations adaptées aux opportunités de stage correspondant à son profil. Ce rapport peut être partagé avec des employeurs potentiels — fournissant une preuve objective d&apos;aptitude là où un lycéen n&apos;a pas encore de CV à montrer.
+        </p>
+        <Callout color="emerald">
+          <strong>Ce que mesure l&apos;évaluation Eduentry Internship&nbsp;:</strong> Communication professionnelle, résolution de problèmes dans des contextes réels, conscience organisationnelle et professionnelle. 34 questions adaptatives, 25 minutes, rapport personnalisé immédiat. Accessible à partir de 14 ans, entièrement gratuit.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le modèle d&apos;Eduentry s&apos;inscrit directement dans ce que les données PISA 2025 recommandent&nbsp;: objectiver la préparation individuelle plutôt que se fier uniquement aux notes scolaires, et créer des ponts entre les compétences scolaires et les attentes professionnelles réelles. L&apos;évaluation ne remplace pas l&apos;expérience — elle crée les conditions pour qu&apos;elle devienne accessible.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les compétences qui compteront à l&apos;ère de l&apos;IA</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 introduit pour la première fois l&apos;évaluation de la &laquo;&nbsp;résolution computationnelle de problèmes&nbsp;&raquo; — la capacité à raisonner de façon algorithmique, à manipuler des séquences logiques, à comprendre comment les systèmes d&apos;information fonctionnent. C&apos;est une reconnaissance explicite que les compétences numériques ne sont plus optionnelles. Elles font partie de la littératie de base du XXIe siècle.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Mais les données sur l&apos;IA dans PISA 2025 ajoutent une nuance cruciale. Ce n&apos;est pas la maîtrise des outils numériques qui importe le plus — c&apos;est le jugement sur comment et quand les utiliser. Les élèves qui obtiennent les meilleurs résultats dans les pays leaders ne sont pas ceux qui évitent l&apos;IA. Ce sont ceux qui l&apos;utilisent de façon critique et sélective, pour amplifier leur propre pensée plutôt que pour la remplacer.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cette distinction — utiliser l&apos;IA pour penser mieux plutôt que pour ne pas penser — est précisément ce que l&apos;expérience professionnelle enseigne naturellement. Dans un environnement professionnel réel, utiliser l&apos;IA pour ne pas réfléchir a des conséquences immédiates et visibles&nbsp;: les erreurs coûtent, les clients remarquent, les managers évaluent. Le feedback professionnel enseigne la responsabilité cognitive que l&apos;environnement scolaire, avec sa tolérance pour l&apos;erreur anonyme, peine à inculquer.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet>La pensée critique — évaluer, comparer, synthétiser — est la compétence la moins automatisable</Bullet>
+          <Bullet>La communication interpersonnelle authentique reste irremplaçable par les systèmes d&apos;IA actuels</Bullet>
+          <Bullet>Le jugement situationnel — savoir quoi faire dans des contextes ambigu et à forts enjeux — exige l&apos;expérience réelle</Bullet>
+          <Bullet>La créativité transgressive — trouver des solutions inédites — se développe face à de vrais problèmes</Bullet>
+          <Bullet>La maîtrise critique de l&apos;IA — savoir quand et comment l&apos;utiliser — est une compétence professionnelle en soi</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le paradoxe que PISA 2025 met en lumière est le suivant&nbsp;: à l&apos;époque où l&apos;IA est la plus puissante qu&apos;elle n&apos;ait jamais été, les compétences fondamentales que PISA mesure — lire profondément, raisonner quantitativement, penser scientifiquement — n&apos;ont jamais été aussi importantes. Ce n&apos;est pas parce que l&apos;IA ne peut pas les faire. C&apos;est parce que sans ces fondations, on ne peut pas évaluer ce que l&apos;IA produit, corriger ses erreurs, ou prendre les décisions que la machine ne peut pas prendre.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les élèves qui entrent dans la vie adulte avec une expérience professionnelle réelle, une capacité à lire et raisonner de façon critique, et un jugement sur l&apos;utilisation responsable des outils numériques sont les mieux équipés pour naviguer dans cette économie. Ces compétences ne s&apos;acquièrent pas en ajoutant des heures de cours. Elles s&apos;acquièrent en faisant — en assumant de vraies responsabilités, dans de vrais contextes, avec de vraies conséquences.
+        </p>
+        <Callout color="indigo">
+          <strong>La compétence de l&apos;ère IA&nbsp;:</strong> Ce n&apos;est pas savoir utiliser l&apos;IA. C&apos;est savoir quand ne pas la laisser penser à sa place. Cette distinction — qui exige un jugement, une expérience et une conscience de ses propres compétences — est précisément ce que l&apos;expérience professionnelle développe que l&apos;école ne peut pas.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 est un signal d&apos;alarme. Mais c&apos;est aussi une carte. Il indique précisément les compétences qui font défaut et celles qui sont le plus précieuses dans l&apos;économie du XXIe siècle. La réponse adaptée n&apos;est pas de travailler plus sur les mêmes exercices scolaires. C&apos;est de créer les conditions dans lesquelles les jeunes développent les compétences que l&apos;école seule ne peut pas enseigner — par l&apos;expérience réelle, par la responsabilité, par le contact avec le monde professionnel.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Pour les familles qui lisent ces lignes&nbsp;: la question n&apos;est pas de savoir si votre enfant a besoin d&apos;expérience professionnelle précoce. Les données PISA et les recherches sur le développement adolescent répondent unanimement par l&apos;affirmative. La question est de savoir quand commencer — et pour la grande majorité des élèves, la réponse est&nbsp;: maintenant, et avec les outils qui rendent cette expérience accessible dès 14 ans.
+        </p>
+      </section>
+    </>
+  ),
+
   'pisa-2025-crise-education-mondiale-ce-que-les-parents-doivent-savoir': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
