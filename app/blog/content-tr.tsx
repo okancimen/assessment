@@ -1743,6 +1743,385 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'is-deneyimine-nasil-hazirlanilir': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Çocuğunuz yakında okul hayatını bitirip gerçek dünyanın kapısına dayanacak. Ama o kapı açıldığında ne bulacak? Günümüz iş piyasasında yalnızca diploma taşıyan adaylar giderek zorlu bir rekabet ortamıyla karşılaşıyor. İşverenler artık sadece not ortalaması değil, somut deneyim, iletişim gücü ve gerçek ortamlarda sorumluluk üstlenme becerisi arıyor. İşte tam bu noktada iş deneyimi devreye giriyor. Lise yıllarında elde edilen birkaç haftalık bile olsa anlamlı bir iş deneyimi, çocuğunuzun gelecek başvurularında onu öne çıkaran en güçlü kartlardan birine dönüşebilir.
+      </p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        Bir ebeveyn olarak bu süreci nasıl destekleyebileceğinizi bilmek, çocuğunuza verebileceğiniz en değerli hediyelerden biridir. Bu rehber; doğru sektörü seçmekten CV yazmaya, başvuru sürecinden deneyim sonrası adımlara kadar her aşamayı kapsamlı biçimde ele alıyor.
+      </p>
+      <Callout color="indigo">
+        İngiltere&apos;deki üniversitelerin %78&apos;i, başvurularında iş deneyimine yer veren adayları daha güçlü değerlendirdiğini belirtmektedir.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İş Deneyimi Neden Bu Kadar Önemli?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bir üniversite mülakatında öğrenciden "kendinizden bahsedin" demesi istendiğinde, en güçlü cevaplar her zaman somut deneyimlerden doğar. "Geçen yaz bir pazarlama ajansında iki hafta geçirdim ve müşteri raporlarını nasıl hazırladıklarını gözlemledim" diyen bir aday ile yalnızca "çok çalışkan ve meraklıyım" diyen bir aday arasındaki fark, seçim komitelerinin gözünde çok belirgindir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ama iş deneyiminin önemi yalnızca üniversite başvurusuyla sınırlı değil. İşte üç temel nedeni:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>Üniversite başvurusunda ayrışma:</strong> Rekabetçi programlara başvuran onlarca benzer not ortalamasına sahip aday arasından sıyrılmak için farklılaştırıcı bir unsura ihtiyaç vardır. Pratik deneyim, kişisel beyanınıza yazmaya değer gerçek bir hikâye kazandırır; seçim komitesine motivasyonun gerçek olduğunu kanıtlar.
+          </Bullet>
+          <Bullet>
+            <strong>Sektör gerçekliğini erken keşfetmek:</strong> Pek çok genç, üniversiteye gidene kadar seçtiği mesleğin günlük pratiği hakkında hiçbir fikri olmadığını fark eder. Lise yıllarında yapılan iş deneyimi, çocuğunuzun "bu gerçekten benim için mi?" sorusunu çok daha erken sormasına imkân tanır — yanlış bir üniversite bölümüne yıllar ve büyük miktarda para harcamadan önce.
+          </Bullet>
+          <Bullet>
+            <strong>Yumuşak beceriler ve özgüven:</strong> Profesyonel bir ortamda zaman yönetimi, iletişim, geri bildirim almak ve ekiple çalışmak gibi beceriler sınıfta öğrenilemez. Bu beceriler ancak gerçek iş deneyimiyle kazanılır; ve bu becerilere sahip gençler iş hayatlarına çok daha güçlü bir zemin üzerinden başlarlar.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Doğru Sektörü Nasıl Seçersiniz?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sektör seçimi, iş deneyiminin verimliliğini doğrudan belirler. Rastgele seçilmiş bir yer değil, çocuğunuzun ilgi alanları ve güçlü yönleriyle örtüşen bir alan çok daha anlamlı bir deneyim sunar. Aşağıdaki dört adımlı süreci birlikte uygulayabilirsiniz:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check>
+            <strong>Güçlü dersleri belirleyin:</strong> Çocuğunuzun en başarılı olduğu ve en keyif aldığı dersler hangileri? Matematik ve veri analizi yeteneği güçlüyse finans veya veri odaklı roller; İngilizce ve yaratıcı yazma güçlüyse pazarlama veya medya sektörü uygun başlangıç noktaları olabilir.
+          </Check>
+          <Check>
+            <strong>Hobileri ve kişisel ilgi alanlarını listeleyin:</strong> Teknoloji, sosyal medya, müzik, spor, girişimcilik — hangi alanlar çocuğunuzu heyecanlandırıyor? Hobiyle örtüşen bir iş deneyimi, motivasyonu çok daha yüksek tutar.
+          </Check>
+          <Check>
+            <strong>Meslek araştırması yapın:</strong> Birlikte LinkedIn veya Glassdoor üzerinde ilgili alanların nasıl göründüğünü inceleyin. Bir veri analistinin ya da dijital pazarlamacının günlük işi ne içeriyor? Bu araştırma gerçekçi beklentiler oluşturur.
+          </Check>
+          <Check>
+            <strong>Birden fazla seçenek belirleyin:</strong> Tek bir sektöre odaklanmak yerine 2-3 alternatif seçenek listesi oluşturun. Başvurular reddedildiğinde alternatif seçenekler moralinizin bozulmamasını sağlar.
+          </Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bugünün en değerli iş deneyimi alanları arasında <strong>teknoloji</strong> (yazılım, web tasarım, uygulama geliştirme), <strong>iş dünyası</strong> (proje yönetimi, finans, müşteri ilişkileri), <strong>veri analitiği</strong> (Excel, raporlama, iş zekâsı) ve <strong>dijital pazarlama</strong> (sosyal medya, içerik üretimi, SEO) öne çıkmaktadır. Bu alanlarda edinilen deneyimler hem üniversite başvurularında hem de erken kariyer döneminde güçlü bir avantaj sağlar.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">CV ve Motivasyon Mektubu</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lise öğrencileri için CV yazmak, deneyim eksikliği nedeniyle zorlu görünebilir. Ama bu engel düşündüğünüzden çok daha kolay aşılabilir. Çünkü işverenler lise öğrencisinden büyük bir kariyer geçmişi beklemiyor; potansiyel, istek ve öğrenmeye açıklık arıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İyi bir lise CV&apos;si şu bölümleri içermelidir: iletişim bilgileri, kısa bir profesyonel özet (2-3 cümle), eğitim bilgileri (okul, sınıf, öne çıkan dersler ve varsa notlar), ilgili deneyimler (gönüllülük, okul projeleri, kulüp liderliği), beceriler (hem teknik hem yumuşak beceriler) ve referanslar. CV bir sayfayı geçmemeli ve mümkünse başvurulan pozisyona göre ufak düzenlemeler yapılmalıdır.
+        </p>
+        <Callout color="amber">
+          Motivasyon mektubunun ilk cümlesi en kritik bölümdür. &ldquo;Ben çok çalışkan bir öğrenciyim&rdquo; yerine özgün bir açılış tercih edin — örneğin neden bu sektörün sizi heyecanlandırdığını anlatan kısa ve özgün bir cümle çok daha güçlü bir ilk izlenim bırakır.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4 mb-4">
+          Motivasyon mektubu CV&apos;nin tamamlayıcısıdır; orada yazılanları tekrarlamak yerine kişiliği, motivasyonu ve bu fırsatı neden istediğinizi anlatmalıdır. Üç paragraf yeterlidir: neden bu şirket ve sektör, bu deneyimden ne öğrenmek istiyorsunuz ve bu deneyimin size nasıl katkı sağlayacağını düşündüğünüz.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Başvuru Süreci</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Başvuru sürecini üç kanalla yürütebilirsiniz. Birincisi <strong>LinkedIn</strong>: şirketlerin iş deneyimi ve staj ilanlarını yayımladığı en aktif platform. Profil oluşturmak ücretsiz ve çoğu şirket LinkedIn üzerinden başvuru kabul ediyor. İkincisi <strong>şirket web siteleri</strong>: kariyer sayfalarında özellikle lise öğrencisi iş deneyimi programlarına yer veren şirketler çok sayıda. Üçüncüsü ise <strong>okul rehberlik servisi</strong>: okulun yerel şirketlerle kurduğu köprüler sayesinde çok daha erişilebilir fırsatlar ortaya çıkabiliyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Reddedilmeler kaçınılmazdır ve sürecin doğal bir parçasıdır. Her red, CV&apos;yi ve motivasyon mektubunu gözden geçirmek için bir fırsattır. Çocuğunuzu cesaretlendirin: başarılı profesyonellerin büyük çoğunluğu kariyerlerinin başında onlarca reddiyle karşılaştığını anlatır. Kalıcılık, bu süreçte en değerli beceridir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İş Deneyimi Sırasında Neler Beklenir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İlk gün kaygısı tamamen normaldir. Yeni bir ortam, tanımadığı insanlar ve belirsizlik — bu durum her yaştan insanı gerer. Çocuğunuza şunu hatırlatın: kimse ondan ilk günden mükemmel olmasını beklemiyor. Asıl beklenti; zamanında gelmek, dikkatli dinlemek ve öğrenmeye açık olmaktır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dakiklik, profesyonel dünyada son derece önemlidir. Çocuğunuzun belirlenen saatte işte olmasını sağlayın; gecikme kaçınılmazsa önceden haber vermesini öğretin. Her gün bir not defteri taşıyıp öğrendiklerini, gözlemlediklerini ve sorularını yazması, deneyimden çok daha fazla verim almasını sağlar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ebeveyn olarak sizi düşündürecek anlar mutlaka olacak. "Bugün sıkıcıydı" ya da "kimse benimle konuşmadı" gibi şikâyetler gelebilir. Bu anlarda aşırı müdahaleci olmak yerine dinleyin, sonra birlikte bir sonraki gün için küçük bir strateji geliştirin. Sorun ciddi değilse sabır göstermesini destekleyin.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İş Deneyimi Sonrasında</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İş deneyiminin değeri, deneyimin son günüyle bitmez. Deneyim tamamlandıktan sonraki adımlar, çoğu zaman deneyimin kendisi kadar önemlidir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Deneyim bitişinin hemen ardından çalıştığı kişilere kişiselleştirilmiş bir teşekkür e-postası göndermek, çocuğunuzun profesyonel izlenimini güçlü tutar. Bu e-postada ne öğrendiğini, hangi deneyimin en değerli olduğunu ve gelecekte bu alanla bağını sürdürmek istediğini kısaca belirtmesi yeterlidir.
+        </p>
+        <Callout color="emerald">
+          Teşekkür e-postası, öğrencilerin %90&apos;ının atladığı ama fark yaratan bir adımdır. Bu küçük jestle çocuğunuz, geri kalan %10&apos;un içinde yer alır ve akılda kalır.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4 mb-4">
+          LinkedIn profiline deneyimi eklemesi, bir referans mektubu talep etmesi ve CV&apos;sini güncellemesi bu sürecin diğer önemli adımlarıdır. Deneyim sırasında tanıştığı kişilerle bağlantı kurmak, ileride kariyer yolculuğuna gerçek bir katkı sağlayabilir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sonuç</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuzun iş deneyimine hazırlanması, onun gelecekteki özgüveninin, kariyer vizyonunun ve başarısının temel taşlarından birini döşemektir. Bu süreç bazen çetrefilli, bazen hayal kırıklığı yaratıcı olabilir — ama her adım bir öğrenme fırsatıdır. Ebeveyn olarak yapabileceğiniz en güçlü şey; süreci birlikte planlamak, yanında olmak ve başardığı her küçük adımı büyük bir gönülle kutlamaktır. Çünkü bugün attığı bu adımlar, yarın onu gerçekten farklı bir yere taşıyacak.
+        </p>
+      </section>
+    </>
+  ),
+
+  'is-hayatina-hazir-misin': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        &ldquo;Çocuğum daha çok küçük, staj için erken&rdquo; — bu cümleyi pek çok ebeveynden duyuyoruz. Anlaşılır bir düşünce. Ama veriler çok farklı bir hikâye anlatıyor. İş hayatına hazırlık, üniversite mezuniyetiyle başlayan bir süreç değil; lise yıllarında şekillenen, birikimli bir yolculuktur. Ve bu yolculuğa erken başlayan gençler, ileride çok daha güçlü bir konumdan işe başlıyorlar.
+      </p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        Bu rehber, çocuğunuzun gerçekten staja hazır olup olmadığını anlamak ve hazır değilse nasıl hazırlanacağını planlamak için tasarlandı. Hem pratik göstergeler hem de ebeveyn olarak alabileceğiniz somut adımlar içeriyor.
+      </p>
+      <Callout color="indigo">
+        Staj deneyimi olan lise mezunları, iş hayatlarının ilk iki yılında %40 daha yüksek maaş almaktadır.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Hazır Olmanın 5 Göstergesi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Staj hazırlığı yalnızca akademik başarıyla ölçülmez. Aşağıdaki beş göstergeyi değerlendirmek için çocuğunuzu yakından gözlemleyin:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check>
+            <strong>Zaman yönetimi:</strong> Ev ödevlerini ve okul projelerini kendi başına takip edebiliyor mu? Randevularını veya etkinliklerini hatırlıyor mu? Bu, profesyonel bir ortamda son derece değerli bir beceridir. Ebeveyn ipucu: Onu her küçük şeyde hatırlatmak zorunda kalıyor musunuz? Bu yanıt size çok şey söyler.
+          </Check>
+          <Check>
+            <strong>Duygusal dayanıklılık:</strong> Bir ders sınavında veya proje sunumunda olumsuz geri bildirim aldığında nasıl tepki veriyor? Eleştiriyle yüzleşmek ve yıkılmadan devam edebilmek iş ortamlarının temel gereksinimidir. Ebeveyn ipucu: Küçük başarısızlıklardan nasıl toparlandığını gözlemleyin — bu, staj sırasında karşılaşacağı zorlukları da aşabileceğinin işaretidir.
+          </Check>
+          <Check>
+            <strong>İletişim becerisi:</strong> Tanımadığı yetişkinlerle rahatça konuşabiliyor mu? E-posta yazabilir mi, telefon görüşmesi yapabilir mi? Ebeveyn ipucu: Bir randevu almak veya bir soru sormak gibi günlük görevleri kendiniz mi yapıyorsunuz, yoksa onu yönlendiriyor musunuz? Bağımsız iletişim becerisini erken geliştirmek çok önemlidir.
+          </Check>
+          <Check>
+            <strong>Sorumluluk bilinci:</strong> Söz verdiği şeyleri yapıyor mu? Bir sorumluluğu üstlendiğinde sonuna kadar götürüyor mu? Bu, iş ortamlarında güvenilirliğin temel göstergesidir. Ebeveyn ipucu: Okul kulüplerinde, takım sporlarında veya aile içi görevlerde gösterdiği kararlılık bu becerinin habercisidir.
+          </Check>
+          <Check>
+            <strong>Büyüme zihniyeti:</strong> Bilmediği bir şeyle karşılaştığında merak mı ediyor yoksa korkuyor mu? Yeni beceriler öğrenmekten zevk alıyor mu? Büyüme zihniyeti olan gençler staj ortamlarında çok daha hızlı ilerler. Ebeveyn ipucu: &ldquo;Bilmiyorum ama öğrenebilirim&rdquo; cümlesi onun için doğal bir tepki mi?
+          </Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Hangi Staj Türü Uygun?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Her çocuk farklı bir profille staj arayışına girer. Aşağıdaki alanlardan hangisinin çocuğunuza daha uygun olduğuna birlikte karar verebilirsiniz:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>Teknoloji:</strong> Yazılım, uygulama geliştirme, web tasarım veya bilişim sistemleri. Çocuğunuz buna uygun olabilir eğer: ekran başında saatlerce keyifle vakit geçiriyor, bir şeylerin &ldquo;nasıl çalıştığını&rdquo; merak ediyor veya kendi başına küçük projeler deniyor.
+          </Bullet>
+          <Bullet>
+            <strong>İş dünyası:</strong> Proje koordinasyonu, müşteri ilişkileri, finans, insan kaynakları. Çocuğunuz buna uygun olabilir eğer: organize olmayı seviyor, insanlarla iletişim kurmaktan keyif alıyor ve büyük resmi görmek istiyor.
+          </Bullet>
+          <Bullet>
+            <strong>Veri ve analitik:</strong> Veri analizi, raporlama, iş zekâsı araçları. Çocuğunuz buna uygun olabilir eğer: sayılarla rahat bir ilişkisi var, kalıplar ve örüntüler fark etmekten zevk alıyor ve Excel veya benzer araçlara ilgi duyuyor.
+          </Bullet>
+          <Bullet>
+            <strong>Dijital pazarlama:</strong> Sosyal medya yönetimi, içerik üretimi, SEO, e-posta kampanyaları. Çocuğunuz buna uygun olabilir eğer: yaratıcı bir sesi var, sosyal medyayı iyi anlıyor ve insanları etkilemek için hikâye anlatmayı seviyor.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Hazırlık Sürecinde Ebeveynin Rolü</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ebeveyn desteği, staj sürecinde belirleyici bir fark yaratır. Ama bu desteğin nasıl sunulduğu en az ne kadar sunulduğu kadar önemlidir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Yapılacaklar:</strong> Birlikte hedef belirleyin. Hangi sektör, hangi şirketler, hangi zaman dilimi? Sürecin her aşamasında yanında olun — sorularını dinleyin, geri bildirimlerinizi paylaşın. Deneyim boyunca düzenli kısa sohbetler yapın: "Bugün ne öğrendin?" sorusu her şeyi değiştirir.
+        </p>
+        <Callout color="amber">
+          En büyük hata, başvuruyu ebeveynin yazmasıdır. CV ve motivasyon mektubu çocuğun sesi ve diliyle yazılmalıdır — ne kadar mükemmel olmasa da. Kendi kelimeleriyle yazan çocuk, bir gün kendi kararlarını da verebilecek.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4 mb-4">
+          <strong>Yapılmayacaklar:</strong> Her adımı kontrol etmeye çalışmak. Reddedildiğinde hemen şirketi aramak. Çocuğun adına konuşmak veya karar vermek. Staj sürecinin en büyük kazanımlarından biri bağımsızlık duygusudur — ve bu yalnızca bağımsız hareket etmeyle kazanılır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Değerlendirme: Çocuğunuz Nerede Duruyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Hazırlık düzeyini nesnel olarak ölçmek, sezgilerden çok daha güvenilir bir başlangıç noktası sunar. Çocuğunuzun staja ne kadar hazır olduğunu değerlendirmek için dört temel boyutu göz önünde bulundurmanız gerekir: aptitude (genel düşünme ve problem çözme kapasitesi), domain bilgisi (hedef sektörle ilgili temel kavramlar), iletişim becerileri ve işyeri tutumları.
+        </p>
+        <Callout color="emerald">
+          Eduentry&apos;nin adaptif değerlendirmesi bu dört boyutu 34 soru ve yaklaşık 35 dakikayla ölçer; her çocuk için kişiselleştirilmiş bir staj hazırlık raporu sunar. Güçlü yönler ve gelişim alanları net biçimde görünür — böylece hazırlığı rastgele değil, hedefe yönelik planlayabilirsiniz.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Reddedilme Korkusunu Yenmek</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Staj başvurularında red, istisnai değil kuraldır. Çoğu pozisyon için onlarca başvuru gelir ve pek çoğu yanıtsız kalır. Bu gerçeği çocuğunuzla dürüstçe paylaşmak, hayal kırıklıklarına hazırlıklı olmasını sağlar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dünyanın en başarılı iş insanlarının biyografilerine bakıldığında, hepsinin bir ortak noktası var: erken dönemde ciddi redlerle yüzleştiler ve bu redleri birer öğrenme fırsatına dönüştürdüler. Reddedilen her başvuru, bir sonrakini güçlendirmek için değerli bir veriye dönüşür: CV&apos;de ne değiştirilmeli, motivasyon mektubu nasıl geliştirilmeli, başvuru yapılan şirketlerin listesi genişletilmeli mi?
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuzu bu süreçte motive tutmak için küçük başarıları büyük kutlamalarla karşılayın. Davet aldığı bir mülakat, yanıt veren bir şirket, geri bildirim içeren bir ret e-postası — bunların hepsini ilerleme olarak çerçevelendirin. Çünkü gerçekten öyleler.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İlk Günden Kalıcı İzlenim Bırakmak</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Staj kazanıldıktan sonra esas iş başlar: kalıcı ve olumlu bir izlenim bırakmak. Bunun için çocuğunuza şu temel prensipleri hatırlatın:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check>
+            <strong>Dakiklik:</strong> Her zaman belirlenen saatten 5-10 dakika erken gelin. Profesyonel dünyada dakiklik güvenilirliğin ilk göstergesidir.
+          </Check>
+          <Check>
+            <strong>Kıyafet:</strong> Önceden ortamı araştırın ve uygun giyinin. Tereddüt ettiğinizde daha resmi tercih etmek her zaman daha güvenlidir.
+          </Check>
+          <Check>
+            <strong>Beden dili:</strong> Göz teması kurun, sıkı el sıkışın, telefonu cebinizde tutun. Fiziksel dil, kelimelerin söylemediği şeyleri anlatır.
+          </Check>
+          <Check>
+            <strong>Proaktiflik:</strong> Bir görev tamamlandığında "başka yardımcı olabileceğim bir şey var mı?" diye sorun. Kendi başına iş arayanlar, her ortamda öne çıkar.
+          </Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sonuç</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuz iş hayatına hazır mı? Belki tam olarak değil. Ama bu tamamen normal — ve bu rehberdeki adımlarla o hazırlığı birlikte inşa edebilirsiniz. Staj süreci bir hedefe ulaşmak değil, bir karakteri şekillendirmektir. Sorumluluk, dayanıklılık, iletişim ve öğrenme isteği — bunlar sınıfta değil, gerçek iş ortamlarında kazanılır. Ve bu yolculukta yanlarında olan ebeveynler, çocuklarına en kalıcı hediyeyi vermiş olur.
+        </p>
+      </section>
+    </>
+  ),
+
+  'erken-yasta-is-tecrubesi-kazanmak': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Çocuğunuz her gün okula gidiyor, ödevlerini yapıyor, sınavlara hazırlanıyor. Ama günümüz iş piyasasında diploma artık tek başına yeterli değil. İşverenler benzer eğitim seviyesine sahip adaylar arasında seçim yaparken giderek daha fazla iş tecrübesine bakıyor. Ve bu tecrübeye erken yaşta başlamak, ileride açık bir avantaja dönüşüyor.
+      </p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        Bu rehber, erken yaşta iş tecrübesi kazanmanın neden bu kadar önemli olduğunu, hangi adımlarla başlanabileceğini ve ebeveyn olarak bu süreçte nasıl bir yol arkadaşı olabileceğinizi ele alıyor.
+      </p>
+      <Callout color="indigo">
+        LinkedIn verilerine göre işverenler, aynı eğitim seviyesindeki adaylar arasında seçim yaparken %67 oranında iş tecrübesine öncelik vermektedir.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Erken Başlamanın 4 Büyük Avantajı</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pek çok ebeveyn çocuğunun iş tecrübesine "zamanı gelince" başlamasının daha doğru olduğunu düşünür. Ama araştırmalar ve gerçek dünya deneyimleri bunun aksini gösteriyor. İşte erken başlamanın dört büyük avantajı:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>Üniversite başvurusunda somut hikâye:</strong> Üniversite kişisel beyanları (personal statement), başvurucuların kalabalıktan ayrışmasının en kritik aracıdır. İş tecrübesi olan bir öğrenci, somut gözlemler ve gerçek deneyimlerden beslenen özgün bir hikâye anlatabilir. &ldquo;Bu alanı seçiyorum çünkü geçen yaz bir teknoloji şirketinde iki hafta geçirdim ve veri analizinin şirket kararlarını nasıl şekillendirdiğini bizzat gördüm&rdquo; — bu cümle, &ldquo;bu alanı seviyorum çünkü ilgi çekici buluyorum&rdquo; cümlesinden çok daha güçlüdür.
+          </Bullet>
+          <Bullet>
+            <strong>Sektör netliği:</strong> Lise yıllarında iş tecrübesi edinen gençler, üniversite bölümü seçerken çok daha bilinçli kararlar alıyor. &ldquo;Muhasebe yapmak istiyorum&rdquo; ile &ldquo;Bir muhasebe firmasında iki hafta geçirdim, gerçek iş nasıl görünüyor biliyorum ve hâlâ bu alanda ilerlemek istiyorum&rdquo; arasındaki fark, yıllarca doğru yolda ilerleme ile yanlış bölümde vakit kaybetme arasındaki farktır.
+          </Bullet>
+          <Bullet>
+            <strong>Network:</strong> Profesyonel bağlantılar lise yıllarında kurulmaya başlandığında, üniversiteye gelindiğinde anlamlı bir ağ zaten oluşmuştur. Bu ağ; tavsiye mektubu isteği, staj fırsatlarına erişim ve kariyer tavsiyesi açısından değer biçilmez bir kaynaktır.
+          </Bullet>
+          <Bullet>
+            <strong>Özgüven birikimi:</strong> Her iş deneyimi, çocuğun &ldquo;bunu yapabilirim&rdquo; hissini güçlendirir. Tanımadığı ortamlara adım atma, sorular sorma, görevleri tamamlama — bu deneyimler birikir ve zaman içinde gerçek bir özgüven zemini oluşturur. Bu özgüven okul notlarından değil, gerçek deneyimden doğar.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türk Aileler İçin: Kültürel Engeller</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türk aileler arasında yaygın bir inanç var: &ldquo;Çocuk önce okusun, iş sonra gelir.&rdquo; Bu bakış açısı akademik başarıya verilen yüksek değeri yansıtıyor ve saygıdeğer. Ama küresel iş piyasasının bugünkü gerçeklikleriyle tam olarak örtüşmüyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Günümüz işverenleri, yalnızca iyi not almış değil; aynı zamanda bir iş ortamında nasıl davranacağını, nasıl iletişim kuracağını ve nasıl sorumluluk üstleneceğini gösteren adaylar arıyor. Bu beceriler sınıfta öğrenilmiyor. Ve bu becerileri geliştirmek için erken yaşta iş deneyimi en etkili araç.
+        </p>
+        <Callout color="amber">
+          Türk aileler çocuklarını akademik açıdan en iyi şekilde destekleme eğilimindedir — bu çok değerli. Aynı desteği kariyer keşfine de yönlendirmek, çocuğun önünü çok daha net açar. Akademik başarı ile pratik deneyim birbirinin rakibi değil, tamamlayıcısıdır.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4 mb-4">
+          İngiltere&apos;deki pek çok Türk aile, çocuklarının yabancı bir kültürde iş tecrübesi edinmesinin ekstra zorluklar içerdiğini düşünüyor. Oysa özellikle dijital pazarlama ve yazılım gibi alanlarda uzaktan staj imkânları bu engeli büyük ölçüde ortadan kaldırıyor. Çocuğunuz evden, kendi güvenli ortamından başlayarak uluslararası bir deneyim kazanabilir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım Adım Başlangıç Planı</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yaşa göre uygun iş tecrübesi adımları şöyle planlanabilir:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check>
+            <strong>12-13 yaş:</strong> Gönüllü çalışmalar ve okul projeleri. Bir hayır kurumuna, okul kulübüne veya topluluk etkinliğine katkıda bulunmak. Sorumluluk bilinci ve zaman yönetiminin temelini atmak için mükemmel bir başlangıç.
+          </Check>
+          <Check>
+            <strong>14 yaş:</strong> Birleşik Krallık&apos;ta yasal olarak staj başvurularının kabul edildiği yaş. Küçük yerel işletmeler, aile tanıdıkları veya okul koordineli programlar bu dönemin başlangıç noktasıdır.
+          </Check>
+          <Check>
+            <strong>15 yaş:</strong> Daha yapılandırılmış iş deneyimi programları. Year 10 okulları genellikle bu dönemde koordineli iş deneyimi haftaları düzenler. Uzaktan ve sanal iş deneyimi platformlarını da bu dönemde keşfetmeye başlayın.
+          </Check>
+          <Check>
+            <strong>16 yaş:</strong> Daha ciddi staj başvuruları. Şirket web siteleri, LinkedIn ve staj platformları üzerinden doğrudan başvuru. CV ve motivasyon mektubu artık standart bir araç haline gelmeli.
+          </Check>
+          <Check>
+            <strong>17-18 yaş:</strong> Yaz stajları ve daha uzun süreli programlar. Üniversite başvurusu için kişisel beyana yazılacak güçlü deneyimler bu dönemde biriktirilir. Referans mektupları talep etmek ve LinkedIn ağını büyütmek bu aşamanın temel hedefleridir.
+          </Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dijital Dünyada Staj Fırsatları</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Teknolojinin sunduğu en büyük fırsatlardan biri, coğrafi sınırların artık iş tecrübesi önünde bir engel olmamasıdır. Uzaktan stajlar, özellikle dijital ve yaratıcı sektörlerde lise öğrencilerine dünya genelinde fırsatlar sunuyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Aşağıdaki platformları birlikte inceleyin:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>LinkedIn:</strong> Şirketlerin iş deneyimi ve staj ilanlarının en geniş çeşitliliğe sahip platformu. &ldquo;Work experience&rdquo; veya &ldquo;internship&rdquo; arama terimleriyle başlayın; &ldquo;Remote&rdquo; filtresiyle uzaktan fırsatları bulun.
+          </Bullet>
+          <Bullet>
+            <strong>Indeed:</strong> Ücretli ve ücretsiz staj ilanları için geniş bir veritabanı. Lise öğrencisi filtresiyle arama yapmak işe arama sürecini hızlandırır.
+          </Bullet>
+          <Bullet>
+            <strong>Springpod:</strong> Özellikle Birleşik Krallık&apos;ta lise öğrencilerine yönelik sanal iş deneyimi programları sunan bir platform. Büyük şirketlerin yapılandırılmış programlarına erişim imkânı sağlar.
+          </Bullet>
+          <Bullet>
+            <strong>Şirket web siteleri:</strong> Hedeflediğiniz şirketlerin kariyer sayfalarını doğrudan inceleyin. Pek çok şirket, web sitelerinde lise öğrencilerine yönelik programları ayrıca listeler.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ebeveyn Olarak Yol Arkadaşı Olmak</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuzun iş tecrübesi yolculuğunda üstlenebileceğiniz en değerli rol, rehber olmaktır — kontrolcü değil. Bu iki kavram arasındaki fark hayati önemdedir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Rehber ebeveyn: yönlendiren, sorular soran, seçenekleri birlikte değerlendiren, başarısızlıkları normalleştiren ve her adımı destekleyen kişidir. Kontrolcü ebeveyn ise başvuruları yazan, kararları veren, her şeyi takip eden ve çocuğun bağımsız hareket alanını daraltan kişidir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Günlük konuşmalarınızda &ldquo;nasıldı?&rdquo; yerine &ldquo;ne öğrendin?&rdquo; sorusunu tercih edin. Bu küçük fark, deneyimi bir rutinden gerçek öğrenmeye dönüştürür. Çocuğunuz hem ne yaptığını hem de bu deneyimin ona ne kattığını düşünmeye başlar.
+        </p>
+        <Callout color="emerald">
+          Küçük günlük başarıları büyük coşkuyla kutlayın. İlk e-postayı göndermek, ilk mülakat davetini almak, ilk iş gününü tamamlamak — bunlar gerçek dönüm noktalarıdır. Bu kutlamalar çocuğunuza &ldquo;bu süreçte seninleyim ve başarılarını görüyorum&rdquo; mesajını verir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Değerlendirme ile Doğru Başlamak</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Doğru başlamak, her şeyi değiştirir. Çocuğunuzun güçlü yönlerini, hangi sektöre yatkın olduğunu ve hazırlık düzeyini nesnel olarak ölçmek, süreci rastlantılara bırakmak yerine hedefli bir şekilde planlamanızı sağlar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry&apos;nin adaptif değerlendirmesi dört boyutu ölçer: genel düşünme ve problem çözme kapasitesi (aptitude), hedef sektörle ilgili temel bilgi düzeyi (domain knowledge), iletişim becerileri ve işyeri tutumları. 35 dakika ve 34 soru sonunda kişiselleştirilmiş bir staj profili çıkar — hangi sektör en uygun, güçlü yönler neler, neyin üzerinde çalışılması gerekiyor.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sonuç</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Erken yaşta iş tecrübesi kazanmak, çocuğunuza diploma yerine gerçek bir avantaj kazandırır. Bu yolculuk bazen karmaşık, bazen hayal kırıklığı yaratıcı olabilir — ama her adım bir birikim, her deneyim bir kazanımdır. Bugün atmaya karar verdiğiniz ilk adım, ileride çocuğunuzun büyük bir minnetle hatırlayacağı en önemli kararlardan biri olabilir. Ve başlamak için her zaman doğru zaman, bugündür.
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
