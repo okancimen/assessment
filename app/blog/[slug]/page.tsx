@@ -268,10 +268,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
         {/* CTA */}
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
-          <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'See where your child stands today'}</h2>
-          <p className="text-indigo-200 mb-8">{post.cta?.body ?? 'Free adaptive assessment with an instant standardised score and percentile ranking.'}</p>
-          <CtaLink href={post.cta?.href ?? '/auth/register'} label="blog_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
-            {post.cta?.label ?? 'Start free assessment'}
+          <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'See what your child\'s report looks like'}</h2>
+          <p className="text-indigo-200 mb-8">{post.cta?.body ?? 'View a sample report — standardised score, subject breakdown and personalised recommendations. No account needed.'}</p>
+          <CtaLink href={post.cta?.href ?? '/sample-report'} label="blog_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
+            {post.cta?.label ?? 'See a sample report'}
           </CtaLink>
         </section>
       </main>
