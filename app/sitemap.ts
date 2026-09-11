@@ -48,6 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${BASE}/internship`, lastModified: '2026-09-08', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/demo`,            lastModified: '2026-06-17', changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/sample-report`,   lastModified: '2026-09-11', changeFrequency: 'monthly', priority: 0.8 },
     {
       url: `${BASE}/blog`,
       lastModified: latestEN,
