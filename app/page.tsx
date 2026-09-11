@@ -298,6 +298,9 @@ export default function LandingPage() {
                 <Link href="/methodology" className="text-sm font-semibold text-[#4F46E5] hover:underline flex items-center gap-1.5 px-2">
                   How scoring works →
                 </Link>
+                <Link href="/sample-report" className="text-sm font-semibold text-[#636366] hover:text-[#1d1d1f] flex items-center gap-1.5 px-2">
+                  See a sample report →
+                </Link>
               </div>
             </div>
 

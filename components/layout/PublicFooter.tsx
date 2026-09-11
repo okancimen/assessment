@@ -13,6 +13,7 @@ export default function PublicFooter() {
               <li><Link href="/11-plus" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">11+ Prep</Link></li>
               <li><Link href="/grammar-schools" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Grammar Schools</Link></li>
               <li><Link href="/demo" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Try a Sample</Link></li>
+              <li><Link href="/sample-report" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Sample Report</Link></li>
             </ul>
           </div>
           <div>

@@ -189,6 +189,9 @@ export default function ElevenPlusPage() {
             <Link href="/methodology" className="text-gray-600 px-8 py-4 rounded-xl font-semibold hover:text-gray-900 hover:bg-gray-50 transition-colors border border-gray-200 text-lg">
               How scoring works
             </Link>
+            <Link href="/sample-report" className="text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors border border-indigo-200 text-lg">
+              See a sample report
+            </Link>
           </div>
         </div>
 
