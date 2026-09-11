@@ -7,7 +7,7 @@ import { INTERNSHIP_TRACKS, INTERNSHIP_TRACK_LABELS, INTERNSHIP_TRACK_DESCRIPTIO
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Internship Readiness Assessment for High School Students',
+  title: 'Free Internship Readiness Assessment — Ages 14+',
   description:
     'Free 34-question adaptive assessment for high school students aged 14+. Discover your readiness for a tech, business, data analytics or digital marketing internship — results in 35 minutes.',
   keywords: [

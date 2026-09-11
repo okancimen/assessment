@@ -5,7 +5,7 @@ import PublicFooter from '@/components/layout/PublicFooter'
 import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
-  title: 'About Eduentry — Free Academic Assessment for Children',
+  title: { absolute: 'About Eduentry — Free Academic Assessment for Children' },
   description: 'Eduentry is a free adaptive assessment for children aged 6–17. Standardised scores benchmarked against UK National Curriculum, PISA and IB standards.',
   keywords: ['about Eduentry', 'free children assessment platform', 'international academic benchmark', 'adaptive testing children', 'UK PISA IB benchmark', 'free academic assessment ages 6 17'],
   alternates: { canonical: 'https://eduentry.com/about', languages: { 'en-GB': 'https://eduentry.com/about', es: 'https://eduentry.com/es/sobre-nosotros', tr: 'https://eduentry.com/tr/hakkimizda', fr: 'https://eduentry.com/fr/a-propos', ar: 'https://eduentry.com/ar/hawlana', ru: 'https://eduentry.com/ru/o-nas', 'x-default': 'https://eduentry.com/about' } },

@@ -17,7 +17,34 @@ export const metadata: Metadata = {
     title: 'Sample Assessment Report — Eduentry',
     description: 'See exactly what your child\'s report looks like — standardised score, subject breakdown and personalised recommendations.',
     url: `${BASE_URL}/sample-report`,
+    images: [{ url: `${BASE_URL}/sample-report/opengraph-image`, width: 1200, height: 630, alt: 'Sample Assessment Report — Eduentry' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sample Assessment Report — Eduentry',
+    description: 'See exactly what your child\'s report looks like — standardised score, subject breakdown and personalised recommendations.',
+    images: [`${BASE_URL}/sample-report/opengraph-image`],
+  },
+}
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Sample Report', item: `${BASE_URL}/sample-report` },
+  ],
+}
+
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${BASE_URL}/sample-report#webpage`,
+  name: 'Sample Assessment Report',
+  description: 'A worked example of an Eduentry academic assessment report showing standardised scores, percentile rankings, subject breakdowns, and personalised recommendations.',
+  url: `${BASE_URL}/sample-report`,
+  isPartOf: { '@id': `${BASE_URL}/#website` },
+  inLanguage: 'en-GB',
 }
 
 // ── Data ──────────────────────────────────────────────────────────────────────
@@ -193,6 +220,8 @@ const INTL = {
 export default function SampleReportPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
       <PublicNav />
 
       {/* Sample banner */}
