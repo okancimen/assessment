@@ -137,8 +137,7 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
 
   const rows = assignRows(displaySubjects)
   const numRows = displaySubjects.length > 0 ? Math.max(...rows) + 1 : 1
-  const linesPerLabel = hideScores ? 2 : 3
-  const PAD_B = numRows * linesPerLabel * LINE_H + (numRows - 1) * ROW_GAP + 20
+  const PAD_B = numRows * 2 * LINE_H + (numRows - 1) * ROW_GAP + 20
   const H = PAD_T + CH + PAD_B
 
   // Overall score bar marker position (0–100%)
@@ -225,10 +224,10 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
         <line x1={centerX} y1={PAD_T + 4} x2={centerX} y2={baseY}
           stroke="#c7d2fe" strokeWidth="1.2" strokeDasharray="4 3" />
 
-        {/* Zone labels — always visible */}
-        {ZONE_LABELS.map(({ from, to, label, clr }) => (
-          <text key={label} x={sx((from + to) / 2)} y={20}
-            textAnchor="middle" fontSize="8" fill={clr} fontWeight="700" letterSpacing="0.3">
+        {/* Zone labels — staggered, only when no score bar (score bar already lists them) */}
+        {overallScore === undefined && ZONE_LABELS.map(({ from, to, label, clr }, idx) => (
+          <text key={label} x={sx((from + to) / 2)} y={idx % 2 === 0 ? 13 : 25}
+            textAnchor="middle" fontSize="7.5" fill={clr} fontWeight="700" letterSpacing="0.2">
             {label}
           </text>
         ))}
@@ -247,10 +246,10 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
           const my  = sy(pdf(score))
           const pct = Math.round(cdf(score) * 100)
           const row = rows[i]
-          const y1  = ROW0_Y1 + row * (linesPerLabel * LINE_H + ROW_GAP) + 14
+          const y1  = ROW0_Y1 + row * (2 * LINE_H + ROW_GAP) + 14
 
           // Background pill for label group
-          const pillH = linesPerLabel * LINE_H + 6
+          const pillH = 2 * LINE_H + 6
           const pillW = 50
 
           return (
@@ -284,17 +283,8 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
               <text x={mx} y={y1} textAnchor="middle" fontSize="9" fill={color} fontWeight="700">
                 {label}
               </text>
-              {/* SAS score */}
-              {!hideScores && (
-                <text x={mx} y={y1 + LINE_H} textAnchor="middle" fontSize="8.5" fill="#374151" fontWeight="600">
-                  {score}
-                </text>
-              )}
               {/* Percentile */}
-              <text
-                x={mx} y={y1 + (hideScores ? LINE_H : LINE_H * 2)}
-                textAnchor="middle" fontSize="8" fill={dotColor} fontWeight="700"
-              >
+              <text x={mx} y={y1 + LINE_H} textAnchor="middle" fontSize="8" fill={dotColor} fontWeight="700">
                 {pct}th%
               </text>
             </g>
