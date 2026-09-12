@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free 11+ Practice Test — Verbal & Non-Verbal Reasoning',
     description: 'Adaptive 11+ practice tests with standardised scores and percentile rankings. Free — no subscription required.',
-    images: [`${BASE_URL}/11-plus/opengraph-image`],
+    images: ['https://eduentry.com/11-plus/opengraph-image'],
   },
 }
 
