@@ -9,7 +9,7 @@ const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
   title: 'Sample Assessment Report — See What Your Child Gets',
-  description: 'See a real example of an Eduentry assessment report — standardised score, percentile ranking, subject breakdown, topic analysis and personalised recommendations. No account needed.',
+  description: 'See a real Eduentry assessment report — standardised score, percentile ranking, subject breakdown, topic analysis and personalised recommendations.',
   alternates: { canonical: `${BASE_URL}/sample-report`, languages: { 'en-GB': `${BASE_URL}/sample-report`, 'x-default': `${BASE_URL}/sample-report` } },
   keywords: ['sample assessment report', 'what does eduentry report look like', 'free 11 plus results example', 'child assessment report example', 'standardised score report'],
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },

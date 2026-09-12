@@ -11,7 +11,7 @@ import CtaLink from '@/components/ui/CtaLink'
 export const metadata: Metadata = {
   title: 'Eduentry — Academic Assessment & Internship Readiness Platform',
   description:
-    'Free adaptive assessments for students at every stage — international academic benchmarking for ages 6–17, and internship readiness assessment for high school students 14+.',
+    'Free adaptive academic assessments for ages 6–17 and internship readiness for students 14+. Standardised scores and percentile rankings — free forever.',
   keywords: [
     'free children academic assessment',
     'international benchmark children UK',
@@ -30,6 +30,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     url: 'https://eduentry.com',
+    siteName: 'Eduentry',
     title: 'Eduentry — Academic Assessment & Internship Readiness Platform',
     description:
       'Free adaptive assessments built on the same science as PISA, GCSE and SAT. Academic benchmarking for ages 6–17 and internship readiness for high school students 14+.',

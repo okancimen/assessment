@@ -32,6 +32,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     url: `${BASE_URL}/ru`,
+    siteName: 'Eduentry',
     title: 'Eduentry — Платформа академической оценки и готовности к стажировке',
     description: 'Бесплатные адаптивные оценки на основе той же науки, что PISA, GCSE и SAT. Академический бенчмаркинг для детей 6–17 лет и оценка стажировки для учеников от 14 лет.',
     locale: 'ru_RU',

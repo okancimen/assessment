@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image' as const,
     title: 'Free Assessments by Subject — Eduentry',
     description: 'Free adaptive assessments for children aged 6–17 across English, Maths, Verbal Reasoning, and Non-Verbal Reasoning.',
+    images: [`${BASE_URL}/subjects/opengraph-image`],
   },
 }
 

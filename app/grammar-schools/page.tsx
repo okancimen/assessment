@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Grammar Schools in England: Entry Requirements by Area',
     description: 'SAS score benchmarks and 11+ entry requirements for grammar schools across England.',
+    images: [`${BASE_URL}/grammar-schools/opengraph-image`],
   },
 }
 

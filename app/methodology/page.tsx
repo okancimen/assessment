@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'How Eduentry Works — IRT Adaptive Assessment Methodology',
     description: '2PL Item Response Theory, MAP estimation and international benchmarking against UK, PISA, US and IB frameworks. Ages 6–17.',
+    images: ['https://eduentry.com/methodology/opengraph-image'],
   },
 }
 

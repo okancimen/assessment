@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Eduentry Blog — Academic Benchmarks & Assessment Insights',
     description: 'Research and analysis on international academic benchmarks and adaptive assessment trends.',
+    images: [`${BASE_URL}/blog/opengraph-image`],
   },
 }
 

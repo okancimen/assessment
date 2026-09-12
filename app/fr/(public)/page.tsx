@@ -32,6 +32,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     url: `${BASE_URL}/fr`,
+    siteName: 'Eduentry',
     title: 'Eduentry — Plateforme d\'évaluation académique et de stage',
     description: 'Évaluations adaptatives gratuites fondées sur la même science que PISA, GCSE et SAT. Comparaison académique pour les 6–17 ans et évaluation de stage pour les 14+.',
     locale: 'fr_FR',

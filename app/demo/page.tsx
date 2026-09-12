@@ -16,6 +16,13 @@ export const metadata: Metadata = {
     title: 'Try a Free Sample Assessment — Eduentry',
     description: 'Four sample questions — one per subject. No account needed. See Eduentry in action before you register.',
     url: `${BASE_URL}/demo`,
+    images: [{ url: `${BASE_URL}/demo/opengraph-image`, width: 1200, height: 630, alt: 'Try a Free Sample Assessment — Eduentry' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Try a Free Sample Assessment — Eduentry',
+    description: 'Four sample questions — one per subject. No account needed. See Eduentry in action before you register.',
+    images: [`${BASE_URL}/demo/opengraph-image`],
   },
 }
 

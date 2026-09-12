@@ -32,6 +32,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     url: `${BASE_URL}/tr`,
+    siteName: 'Eduentry',
     title: 'Eduentry — Akademik ve Staj Değerlendirme Platformu',
     description: 'PISA, GCSE ve SAT ile aynı bilime dayalı ücretsiz uyarlanabilir değerlendirmeler. 6–17 yaş için akademik kıyaslama ve 14 yaş üstü için staj değerlendirmesi.',
     locale: 'tr_TR',

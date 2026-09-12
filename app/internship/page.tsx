@@ -9,7 +9,7 @@ const BASE_URL = 'https://eduentry.com'
 export const metadata: Metadata = {
   title: 'Free Internship Readiness Assessment — Ages 14+',
   description:
-    'Free 34-question adaptive assessment for high school students aged 14+. Discover your readiness for a tech, business, data analytics or digital marketing internship — results in 35 minutes.',
+    'Free 34-question assessment for students aged 14+. Discover your readiness for tech, business, data or digital marketing internships — results in 35 minutes.',
   keywords: [
     'internship readiness assessment',
     'high school internship',

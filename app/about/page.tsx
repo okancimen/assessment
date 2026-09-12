@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Eduentry — Free Academic Assessment for Children',
     description: 'Free adaptive academic assessments benchmarked against UK, PISA, and IB standards. Standardised scores and international percentile rankings for children aged 6–17.',
+    images: ['https://eduentry.com/about/opengraph-image'],
   },
 }
 
