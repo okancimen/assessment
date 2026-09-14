@@ -2299,6 +2299,210 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'pisa-nedir-cocugunuz-nasil-hazirlanir': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Her üç yılda bir 91 ülkede gerçekleştirilen PISA sınavı, dünyanın en büyük eğitim kıyaslaması haline gelmiştir. Türk aileler için bu sınav çifte öneme sahiptir: hem Türkiye'nin uluslararası eğitim sistemindeki konumunu ortaya koyar, hem de bireysel çocuğun gerçek akademik seviyesini anlamak için güvenilir bir referans çerçevesi sunar. Bu yazıda PISA'yı, 2025 sonuçlarını ve çocuğunuzun bu standarda göre nerede durduğunu nasıl öğrenebileceğinizi açıklıyoruz.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Nedir — Kısa ve Net Tanım</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA, Programme for International Student Assessment'ın kısaltmasıdır. Türkçede "Uluslararası Öğrenci Değerlendirme Programı" olarak bilinir. OECD (Ekonomik İşbirliği ve Kalkınma Örgütü) tarafından 2000 yılından bu yana üç yılda bir uygulanmaktadır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA, müfredat bilgisini değil; edinilmiş bilgiyi gerçek yaşam problemlerine uygulama becerisini ölçer. Bu ayrım kritiktir: ezberden yüksek not alan bir öğrenci, PISA türü sorularda zayıf kalabilir. Tersine, okul notları ortalama olan ama pratik düşünme becerisi güçlü olan bir öğrenci PISA'da üst dilimde yer alabilir.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">PISA üç temel alanı ölçer:</strong> Matematik (sayısal akıl yürütme, problem çözme), Okuma (anlama, çıkarım, eleştirel okuma) ve Fen Bilimleri (bilimsel düşünme, veri yorumlama). Her alan için uluslararası ortalama puan 500 olarak belirlenmiştir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA 2025 Sonuçları: Ne Gösteriyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025, OECD ülkelerinde şimdiye kadar kaydedilen en düşük ortalama puanları ortaya koydu. Okuma puanları 2015'ten bu yana 28 puan, matematik ise 22 puan geriledi. OECD'nin analizi, pandemi kaynaklı öğrenme kayıplarını ve dijital dikkat dağınıklığını başlıca nedenler olarak gösteriyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye 2025'te yaklaşık 453 matematik puanıyla OECD ortalamasının (472) altında yer almaya devam etti. Fen bilimlerindeki olumlu eğilim ise dikkat çekicidir: Türkiye 2018-2025 arasında fen puanını iyileştiren az sayıda ülke arasında yer almaktadır. En yüksek performanslı ülkeler Singapur (575), Japonya (536) ve Güney Kore (527) oldu.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu rakamlar ne anlama gelir? Türkiye'de ulusal ortalamasında olan bir öğrenci, Singapur'daki akranının en alt çeyreğiyle yaklaşık aynı matematik düzeyindedir. Bu karşılaştırma kaygılandırıcı değil, bilgilendiricidir — çünkü boşluğu bilmek, onu kapatmanın ilk adımıdır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuz PISA'ya Göre Nerede Duruyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 15 yaşındaki öğrencileri hedefler — ancak bu, hazırlığın 15 yaşında başlaması gerektiği anlamına gelmez. Aksine, PISA düzeyindeki düşünme becerileri 6-14 yaş arasında şekillenir. Bu dönemde çocuğunuzun gerçek akademik konumunu bilmek, hangi alanlara daha fazla dikkat etmeniz gerektiğini netleştirir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Standartlaştırılmış bir değerlendirme olmadan, ebeveynlerin elinde yalnızca okul notu bulunur. Okul notu sınıf içi bir kıyaslamadır — öğrencinin ülke genelindeki ya da uluslararası akranlarıyla karşılaştırmasını göstermez. "A notu olan çocuğum iyi yapıyor" cümlesi, hangi referansa göre iyi yapıldığını belirtmez.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Pratik örnek:</strong> İstanbul'daki seçkin bir özel okulda "A" alan bir öğrenci, uluslararası standartlaştırılmış bir değerlendirmede ilk %30'a girebilir. Anadolu'daki devlet okulunda "B" alan bir öğrenci, aynı değerlendirmede ilk %15'e yerleşebilir. Sınıf notu bunu göstermez; standartlaştırılmış puan gösterir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Düzeyinde Hazırlık İçin Evde Ne Yapılabilir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA ezber değil uygulama ölçtüğü için, hazırlık da aynı mantıkla yürütülmelidir. Araştırmalar, en etkili hazırlığın şu dört alışkanlıktan oluştuğunu gösteriyor:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Günlük düzenli okuma:</strong> Her gün 20-30 dakika, çocuğun ilgisini çeken ama biraz zorlayan metinler. Gazete köşe yazısı, bilim dergisi, tarihsel roman — içerik önemli değil; anlayarak okuma alışkanlığı önemli.</Bullet>
+          <Bullet><strong>Hesap makinesi olmadan problem çözme:</strong> Günlük hayattaki matematik problemleri — alışveriş indirimi, yolculuk süresi, bütçe hesabı — okul problemlerinden çok daha güçlü PISA hazırlığı sağlar.</Bullet>
+          <Bullet><strong>Açık uçlu soru tartışması:</strong> "Bu neden böyle oldu sence?" ya da "Farklı nasıl yapılabilirdi?" gibi sorular, PISA'nın ölçtüğü eleştirel düşünme becerisini doğrudan geliştirir.</Bullet>
+          <Bullet><strong>Mevcut düzeyi tespit etmek:</strong> Hangisine odaklanmanız gerektiğini bilmeden çalışmak verimsizdir. Standartlaştırılmış bir değerlendirme, matematik mi, okuma mı yoksa mantıksal akıl mı geliştirileceğini somut biçimde gösterir.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ücretsiz PISA Düzeyi Değerlendirmesi Nasıl Yapılır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye'de bireysel öğrenciler PISA'ya katılamaz — sınav yalnızca devlet tarafından uygulanan örneklem üzerinden yürütülür. Ancak ebeveynler, PISA ile aynı metodolojiye dayanan bağımsız araçlarla çocuklarının tahmini düzeyini öğrenebilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry'nin uyarlanabilir değerlendirmesi, PISA'nın kullandığı madde tepki teorisini (IRT) temel alır. Sınav, çocuğun verdiği yanıtlara göre gerçek zamanlı olarak zorluk düzeyini ayarlar — tıpkı PISA'nın bilgisayar uyumlu versiyonu gibi. Sonuçta ebeveyn; standartlaştırılmış puan, yüzdelik dilim sıralaması ve konu bazlı güçlü/zayıf alan analizi içeren bir rapor alır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sınav tamamen ücretsizdir, kayıt gerektirmez ve 20-30 dakika sürer. 6-17 yaş arasındaki tüm öğrenciler için uygundur.
+        </p>
+      </section>
+    </>
+  ),
+
+  'lise-staji-nasil-bulunur': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Lise yıllarında staj yapmak isteyen öğrencilerin karşılaştığı ilk engel genellikle aynıdır: "Nereden başlayayım?" Bu rehber, hem Türkiye'de hem yurt dışında staj arayan lise öğrencilerine ve ebeveynlerine adım adım bir yol haritası sunuyor — teorik tavsiyeler değil, işe yarayan pratik yaklaşımlar.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ne Zaman Başlanmalı?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Araştırmalar tutarlı biçimde 14-16 yaşını optimal pencere olarak işaret ediyor. Bu yaşta başlamanın iki temel avantajı var: birincisi, deneyimi sindirmek ve üzerine yeni deneyimler eklemek için yeterli zaman kalıyor; ikincisi, üniversite başvurularına çok daha güçlü bir profille ulaşılıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ancak "geç başlandı" diye vazgeçmek gerekmez. 17-18 yaşında yapılan bir staj, hiç yapılmamış olana göre her zaman avantajlıdır. Anahtar mesaj şudur: ne kadar erken, o kadar çok seçenek ve o kadar çok bileşik fayda.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">İngiliz veri noktası:</strong> Education and Employers kuruluşunun 20.000 genci kapsayan araştırması, 16 yaşından önce dört veya daha fazla yapılandırılmış işveren teması yaşayan öğrencilerin 19 yaşında işsiz kalma olasılığının bu deneyimi hiç olmayanlara göre beş kat daha düşük olduğunu göstermiştir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türkiye'de Lise Stajı: Hangi Yollar İşe Yarıyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye'de lise öğrencileri için formal bir staj piyasası henüz gelişmemiş durumda. Bu durum, aslında bir fırsat içerir: rekabet düşük olduğu için iyi hazırlanmış bir başvuru öne çıkıyor.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Aile ve okul çevresi:</strong> En hızlı sonuç veren yol. Ebeveynlerin çalıştığı sektör, akrabaların işletmeleri veya okul kariyer koordinatörünün bağlantıları ilk hedef olmalıdır. Küçük ve orta ölçekli işletmeler genellikle resmi süreç olmaksızın öğrenci kabul eder.</Bullet>
+          <Bullet><strong>Doğrudan başvuru e-postası:</strong> Çalışmak istediğiniz şirketi araştırın, İK bölümüne ya da genel müdüre kısa ve özgün bir e-posta gönderin. Neden o şirketi seçtiğinizi bir cümleyle açıklayın. Yanıt oranı düşük olabilir — ama on e-posta göndermek, biri olumlu yanıt verirse yeterlidir.</Bullet>
+          <Bullet><strong>LinkedIn:</strong> 16 yaş üstü öğrenciler profil oluşturabilir. "Lise öğrencisi — iş deneyimi arıyorum" başlıklı bir profil, ağınızdaki bağlantılardan öngörülemeyen kapılar açabilir.</Bullet>
+          <Bullet><strong>Yaz programları:</strong> Bazı büyük Türk şirketleri (bankalar, holdingler) yaz aylarında öğrenci gözlem programları düzenler. Kurumsal web sitelerinin kariyer sayfaları Ocak-Mart arasında düzenli kontrol edilmelidir.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yurt Dışında Staj: Fiziksel ve Uzaktan Seçenekler</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İngiltere'de "work experience" kültürü çok daha gelişmiştir. Büyük şirketlerin çoğu (KPMG, Deloitte, Google, Microsoft, Barclays) 14-17 yaş öğrencilere yönelik yapılandırılmış programlar sunar. Bu programlar ücretsizdir ve başvurular genellikle Eylül-Kasım arasında açılır — bir sonraki yazın programları için.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye'deki öğrenciler için en erişilebilir yol ise uzaktan stajlardır:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Springpod:</strong> İngiliz şirketleriyle çevrimiçi iş deneyimi programları. Türkiye'den erişim mümkün, İngilizce bilgisi gerekli.</Bullet>
+          <Bullet><strong>Virtual Work Experience (Forage):</strong> Goldman Sachs, JP Morgan, Accenture gibi büyük şirketlerin kendi platformlarında sundukları simüle iş deneyimi modülleri. Ücretsiz, kendi hızında ilerlenebilir.</Bullet>
+          <Bullet><strong>Bright Network:</strong> İngiliz üniversite öğrencilerine yönelik ama lise öğrencilerinin de faydalanabileceği kaynaklar içeriyor.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Uzaktan stajların avantajı: seyahat maliyeti yok, vize sorunu yok ve uluslararası şirket adı CV'de yer alıyor. Dezavantajı: yüz yüze dinamikler ve profesyonel ağ kurmak zor. İkisi birlikte yapılırsa ideal.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Başvuruyu Öne Çıkaran Şey: Doğrulanmış Yetenek</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Deneyim olmadan deneyim kazanmak paradoksu lise öğrencilerinin en sık karşılaştığı sorundur. "Deneyimim yok ama yetenekliyim" iddiası, işverenler için yetersizdir — ama aynı iddianın nesnel bir değerlendirme puanıyla desteklenmesi durumu değiştirir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Doğrulanmış bir hazırlık raporu, işverenlere önceden tanımadığınız birinin aptitude puanını, problem çözme profilini ve alan bilgisini gösterir. Bu, portfolyosu olmayan bir lise öğrencisinin ölçülebilir veriyle öne çıkmasının en pratik yoludur.
+        </p>
+      </section>
+    </>
+  ),
+
+  'cocugunuzun-akademik-seviyesi-nasil-olculur': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Çocuğunuzun karnesi "iyi" görünüyor — ama gerçekte nerede duruyor? Okul notları sınıf içi bir kıyaslamadır; ülke genelindeki ya da uluslararası standartlardaki gerçek konumu göstermez. Bu rehber, çocuğunuzun akademik seviyesini güvenilir biçimde ölçmenin yollarını ve bu ölçümü nasıl yorumlayacağınızı açıklıyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Okul Notu Neden Yeterli Bir Ölçüt Değildir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okul notları bağlama bağımlıdır. Aynı "A" notu, öğrencinin sınıfının en iyisi mi, okulunun ortalaması mı yoksa ulusal ilk yüzde birlik mi olduğunu göstermez. Bu belirsizlik hem ebeveynleri hem de öğrencilerin kendisini yanıltabilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Somut bir örnek: İstanbul'daki seçkin bir özel okulda tüm derslerden A alan bir öğrenci, uluslararası standartlaştırılmış bir değerlendirmede matematikten ilk %40'a girebilir. Aynı şehirde tüm derslerden B/C alan başka bir öğrenci ise sözel akıl yürütmede ilk %10'da yer alabilir. Okul notu bu farkı göstermez; standartlaştırılmış puan gösterir.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Araştırma bulgusu:</strong> PISA 2025 verileri, yüksek okul notları ile PISA performansı arasındaki korelasyonun ülkeden ülkeye önemli ölçüde farklılaştığını göstermektedir. Türkiye dahil birçok ülkede okul notu enflasyonu — gerçek öğrenme düzeyi artmadan notların yükselmesi — belgelenmiş bir olgudur.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Güvenilir Ölçüm: Standartlaştırılmış Değerlendirme Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Standartlaştırılmış değerlendirme, tüm öğrencilere aynı ölçüm aracını uygulayarak karşılaştırılabilir sonuçlar üretir. Okul, öğretmen ya da sınıf değişkenlerini dışarıda bırakır. Bu nedenle seçici okul sınavları (11+, İngiltere'de grammar school sınavları), PISA, SAT ve CAT4 gibi araçlar standartlaştırılmış formattadır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Modern standartlaştırılmış değerlendirmeler "uyarlanabilir" (adaptive) tasarıma geçmiştir. Bu sistemde sınav, öğrencinin verdiği yanıtlara göre gerçek zamanlı olarak zorluk düzeyini ayarlar. Sonuç: daha kısa sürede daha hassas bir ölçüm. Hem PISA'nın bilgisayar uyumlu versiyonu hem de MAP (Measures of Academic Progress) bu tekniği kullanmaktadır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">6-17 Yaş İçin Ücretsiz Değerlendirme Nasıl Yapılır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye'de bağımsız standartlaştırılmış değerlendirme imkânları oldukça sınırlıdır ve genellikle ücretlidir. Ancak çevrimiçi platformlar bu boşluğu kapatmaktadır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry, 6-17 yaş arası çocuklar için tamamen ücretsiz bir uyarlanabilir değerlendirme sunar. Dört alan ölçülür:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Matematik:</strong> Aritmetik, cebir, geometri ve veri işleme — PISA sayısal akıl yürütme standartlarına göre kalibre edilmiş.</Bullet>
+          <Bullet><strong>İngilizce:</strong> Okuma anlama, dil bilgisi, kelime bilgisi — İngiltere Ulusal Müfredatı KS1-KS4 ve Cambridge IGCSE'ye hizalanmış.</Bullet>
+          <Bullet><strong>Sözel Akıl Yürütme:</strong> Analojiler, kelime ilişkileri, sınıflandırma ve mantık — 11+ ve CAT4 gibi sınavlarda ölçülen beceriler.</Bullet>
+          <Bullet><strong>Sayısal Akıl Yürütme:</strong> Örüntü tanıma, matrisler, uzamsal düşünme — dilden bağımsız problem çözme kapasitesi.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sınav 20-30 dakika sürer. Kayıt gerekmez. Sonuçlar anında görüntülenir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sonuçlar Nasıl Yorumlanır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry puanı, 100 ortalama ve 15 standart sapmalı bir ölçekte sunulur — PISA, CAT4 ve MAP ile aynı format. Bu ne anlama gelir?
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>85-115 arası puan:</strong> Uluslararası ortalama bandı (yaklaşık %68'lik çocuk bu aralıkta yer alır).</Bullet>
+          <Bullet><strong>115 ve üzeri:</strong> Uluslararası ortalamanın bir standart sapma üzerinde — yaklaşık ilk %16.</Bullet>
+          <Bullet><strong>130 ve üzeri:</strong> İki standart sapma üzerinde — yaklaşık ilk %2.</Bullet>
+          <Bullet><strong>85'in altı:</strong> Ortalamanın bir standart sapma altı — geliştirilmesi gereken alanları belirlemeye odaklanılmalı.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tek bir toplam puana ek olarak, dört konu alanı için ayrı alt puanlar verilir. Bu profil, "genel olarak iyi mi?" sorusundan çok daha değerli bir bilgi sağlar: "Matematikte güçlü ama sözel akıl yürütmede gelişim alanı var" gibi spesifik bir yönlendirme.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Pratik kullanım:</strong> Sonuçları tek seferlik bir fotoğraf değil, tekrar edilebilir bir ölçüm olarak kullanın. Altı ayda bir yapılan değerlendirme, ilerlemeyi veya dikkate alınması gereken duraksamaları somut biçimde gösterir.
+        </Callout>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
