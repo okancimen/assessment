@@ -115,6 +115,21 @@ const FAQ_SCHEMA = {
       name: 'Lise öğrencisi olarak staj için kaç yaşında başvurmalıyım?',
       acceptedAnswer: { '@type': 'Answer', text: 'Araştırmalar, ilk yapılandırılmış staj için 14–16 yaşını optimal pencere olarak gösteriyor. Bu erken başlangıç, deneyimi pekiştirme, üstüne inşa etme ve üniversite başvurusuna gelişmiş bir profesyonel anlatıyla ulaşma zamanı tanıyor.' },
     },
+    {
+      '@type': 'Question',
+      name: 'Stajyer maaşı ne kadar?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Stajyer maaşı şirkete, sektöre ve stajın ücretli olup olmadığına göre değişir. Türkiye\'de birçok şirket artık stajyerlerine ücret ödüyor. Ulusal Staj Programı kapsamındaki pozisyonlar genellikle asgari ücretle orantılı ödeme yapar.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Staj sigortası zorunlu mu?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Üniversite zorunlu stajlarında staj sigortası okul tarafından sağlanır ve iş kazası ile meslek hastalığına karşı öğrenciyi güvence altına alır. Lise gönüllü stajlarında sigorta yükümlülüğü şirkete göre değişir.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Staj defteri nedir?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Staj defteri, üniversite zorunlu stajlarında öğrencilerin günlük olarak doldurmak zorunda olduğu resmi belgedir. Stajda yapılan çalışmalar gün gün kaydedilir ve staj sonunda iş yeri tarafından onaylanıp okula teslim edilmeden zorunlu staj tamamlanmış sayılmaz.' },
+    },
   ],
 }
 
@@ -130,6 +145,45 @@ const PHASES = [
   { label: 'Alan Bilgisi', desc: '10 soru · İze özgü uygulamalı bilgi', icon: '📚' },
   { label: 'İş Yeri Becerileri', desc: '8 soru · Gerçek iş yeri senaryoları (SJT)', icon: '🤝' },
   { label: 'İlgi Profili', desc: '6 soru · Çalışma tarzı ve tercih haritalama', icon: '🎯' },
+]
+
+const STAJ_TURLERI = [
+  {
+    icon: '☀️',
+    title: 'Yaz Stajı',
+    desc: 'Yaz tatilinde bir şirkette mesleki bilgini artırmak için yapılan kısa dönemli staj. Genellikle 2–8 hafta sürer ve tam zamanlı çalışma deneyimi sunar. Lise öğrencileri için en erişilebilir başlangıç noktasıdır.',
+    link: '/tr/blog/yaz-staji-lise-ogrencisi',
+  },
+  {
+    icon: '💻',
+    title: 'Online Staj',
+    desc: 'Stajyerin iş yerine fiziksel olarak gitmeden uzaktan çalıştığı staj modeli. Teknoloji, dijital pazarlama ve veri analitiği alanlarında yaygındır. Coğrafi kısıtlama olmadan global şirketlere erişim sağlar.',
+    link: null,
+  },
+  {
+    icon: '📅',
+    title: 'Uzun Dönem Staj',
+    desc: 'En az 6 ay ile 1 yıl arasında süren, şirketin ihtiyacına göre planlanan staj türü. Üniversite öğrencileri ve yeni mezunlara yönelik olup gerçek proje sorumluluğu ve derinlemesine sektör deneyimi sunar.',
+    link: null,
+  },
+  {
+    icon: '🇹🇷',
+    title: 'Ulusal Staj Programı (USP)',
+    desc: 'Türkiye\'de devlet destekli ulusal staj programları kapsamında sunulan fırsatlar. Büyük ölçekli şirketler ve kamu kurumlarının aynı anda çok sayıda stajyer aldığı, yapılandırılmış programlardır.',
+    link: null,
+  },
+  {
+    icon: '🤝',
+    title: 'Gönüllü Staj',
+    desc: 'Üniversite tarafından zorunlu kılınmayan, öğrencinin kendi inisiyatifiyle yaptığı staj türü. Zorunlu stajdan farklı olarak notu etkilemez ancak kariyer gelişimi ve üniversite başvuruları için son derece değerlidir.',
+    link: null,
+  },
+  {
+    icon: '🎓',
+    title: 'Zorunlu Staj',
+    desc: 'Üniversite tarafından bölümün gereği olarak belirlenen dönemde yaptırılan, not sistemine dahil edilen staj. Staj sigortası genellikle okul tarafından sağlanır. Staj defteri tutmak zorunludur.',
+    link: '/tr/blog/staj-defteri-nasil-doldurulur',
+  },
 ]
 
 const RELATED_POSTS = BLOG_POSTS_TR
@@ -222,6 +276,26 @@ export default function TRStajLandingPage() {
           </div>
         </section>
 
+        {/* Staj Türleri */}
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-12">
+          <h2 className="text-xl font-bold text-[#1d1d1f] mb-2 tracking-tight">Staj türleri</h2>
+          <p className="text-sm text-[#6e6e73] mb-5">Yaz stajından uzun dönem staja, online stajdan zorunlu staja — her türün kendine özgü özellikleri var.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {STAJ_TURLERI.map((t) => (
+              <div key={t.title} className="bg-white rounded-3xl border border-[#d2d2d7] p-6 flex flex-col gap-3">
+                <div className="text-2xl">{t.icon}</div>
+                <h3 className="font-semibold text-[#1d1d1f] text-sm">{t.title}</h3>
+                <p className="text-xs text-[#6e6e73] leading-relaxed flex-1">{t.desc}</p>
+                {t.link && (
+                  <Link href={t.link} className="text-xs font-semibold text-[#4F46E5] hover:underline">
+                    Daha fazla oku →
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Assessment phases */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-12">
           <h2 className="text-xl font-bold text-[#1d1d1f] mb-5 tracking-tight">Değerlendirme nasıl işler?</h2>
@@ -260,6 +334,10 @@ export default function TRStajLandingPage() {
               { q: 'Hazırlık raporum ne zaman hazır olur?', a: 'Değerlendirmeyi tamamlar tamamlamaz anında. Rapor, hazırlık seviyeni (Staja Hazır, Gelişiyor veya Destek Gerekiyor), yapay zeka tarafından oluşturulan bir özeti ve her aşamaya ait güçlü yönleri ve bir gelişim alanını içerir.' },
               { q: 'Bu değerlendirme üniversite başvurularıma yardımcı olur mu?', a: 'Evet. Değerlendirme, güçlü yönlerini belirleme, hangi profesyonel ortamlarda öne çıktığını anlama ve kişisel beyanında spesifik olarak dile getirebileceğin içgörüler kazanma imkânı sunar.' },
               { q: 'Değerlendirmeyi kesmem gerekirse ne olur?', a: 'İlerleme otomatik olarak kaydedilir. Kaldığın yerden dilediğin zaman devam edebilirsin — yeniden başlaman gerekmiyor.' },
+              { q: 'Stajyer maaşı ne kadar?', a: 'Stajyer maaşı, şirkete, sektöre ve stajın ücretli olup olmadığına göre büyük farklılık gösterir. Türkiye\'de birçok şirket artık stajyerlerine ücret ödüyor. Ulusal Staj Programı (USP) kapsamındaki pozisyonlar genellikle asgari ücretle orantılı ödeme yapar. Lise stajları çoğunlukla gönüllü veya sembolik ödemeli olurken üniversite zorunlu stajlarında ücret daha yaygındır.' },
+              { q: 'Staj sigortası zorunlu mu?', a: 'Üniversite zorunlu stajlarında staj sigortası okul tarafından sağlanır ve iş kazası ile meslek hastalığına karşı öğrenciyi güvence altına alır. Lise gönüllü stajlarında sigorta yükümlülüğü şirkete göre değişir. Herhangi bir staj başlamadan önce sigortanın kimin tarafından yapıldığını netleştirmek önemlidir.' },
+              { q: 'Staj seferberliği nedir?', a: 'Staj seferberliği, devletin ve özel sektörün iş birliğiyle lise ve üniversite öğrencilerine daha fazla staj imkânı sunmayı hedeflediği kampanya ve programların genel adıdır. Bu kapsamda büyük şirketler aynı anda çok sayıda stajyer alarak yapılandırılmış programlar düzenler. Ulusal Staj Programı (USP) bu seferberliğin en bilinen örneğidir.' },
+              { q: 'Staj defteri nedir, zorunlu mu?', a: 'Staj defteri, üniversite zorunlu stajlarında öğrencilerin günlük olarak doldurmak zorunda olduğu resmi belgedir. Stajda yapılan çalışmalar, öğrenilenler ve çalışılan kişiler gün gün kaydedilir. Staj sonunda iş yeri tarafından onaylanıp okula teslim edilmeden zorunlu staj tamamlanmış sayılmaz. Lise gönüllü stajlarında staj defteri zorunlu olmasa da deneyimi belgelemek için tutulması önerilir.' },
             ].map(({ q, a }) => (
               <details key={q} className="group">
                 <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer list-none">

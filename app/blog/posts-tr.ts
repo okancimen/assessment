@@ -676,6 +676,72 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'stajyer-maasi-ne-kadar',
+    title: 'Stajyer Maaşı Ne Kadar? 2026 Türkiye ve İngiltere Karşılaştırması',
+    shortTitle: 'Stajyer Maaşı 2026',
+    description:
+      'Stajyerler ne kadar maaş alıyor? Türkiye\'deki stajyer ücretleri, Ulusal Staj Programı ödemeleri ve İngiltere\'deki burslu staj fırsatları hakkında güncel bilgiler.',
+    date: '2026-09-15',
+    dateModified: '2026-09-15',
+    readTime: '7 dk okuma',
+    tags: ['Staj', 'Stajyer Maaşı', 'Kariyer Rehberi', 'Ulusal Staj', 'Lise'],
+    faqs: [
+      { q: 'Stajyer maaşı almak zorunlu mu?', a: 'Hayır. Türkiye\'de ve İngiltere\'de lise gönüllü stajları çoğunlukla ücretsizdir. Ancak üniversite zorunlu stajlarında ve Ulusal Staj Programı kapsamındaki pozisyonlarda ücret daha yaygındır. Staj başvurusundan önce ücret durumunu netleştirmek her zaman önerilir.' },
+      { q: 'Staj ücreti almadan staj değerli mi?', a: 'Evet. Özellikle lise yaşında yapılan gönüllü stajlar, stajyer maaşından bağımsız olarak kariyer, kişisel gelişim ve üniversite başvuruları açısından büyük değer taşır. Kazanılan deneyim ve profesyonel ağ uzun vadede maddi kazancı aşar.' },
+      { q: 'Staj ücreti vergi ödenmesi gerekiyor mu?', a: 'Türkiye\'de staj ücreti 18 yaşını doldurmamış öğrenciler için asgari ücretin yüzde seksenine kadar gelir vergisinden muaftır. Detaylı bilgi için bir mali müşavirle görüşmek önerilir.' },
+    ],
+    cta: {
+      heading: 'Staja başvurmadan önce hazırlığını ölç',
+      body: 'Hangi ize uygunsun? Ücretsiz 34 soruluk değerlendirmemiz 35 dakikada kişiselleştirilmiş staj hazırlık raporu sunar.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/staj',
+    },
+  },
+  {
+    slug: 'staj-defteri-nasil-doldurulur',
+    title: 'Staj Defteri Nasıl Doldurulur? Örnek ve Açıklama',
+    shortTitle: 'Staj Defteri Rehberi',
+    description:
+      'Staj defteri nedir, nasıl doldurulur, nereden alınır? Üniversite zorunlu stajı için günlük staj defteri tutmanın adım adım rehberi ve örnek bölümler.',
+    date: '2026-09-15',
+    dateModified: '2026-09-15',
+    readTime: '8 dk okuma',
+    tags: ['Staj', 'Staj Defteri', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi'],
+    faqs: [
+      { q: 'Staj defteri zorunlu mu?', a: 'Üniversite zorunlu stajlarında evet, zorunludur. Staj defteri olmadan zorunlu staj tamamlanmış sayılmaz ve not verilmez. Lise gönüllü stajlarında yasal bir zorunluluk yoktur ancak tutulması tavsiye edilir.' },
+      { q: 'Staj defteri nereden alınır?', a: 'Bağlı olunan fakülte veya yüksekokul, okul çevresindeki kırtasiyeler, SMMM (Serbest Muhasebeci Mali Müşavirler) odaları ve bazı okullarda dijital (elektronik staj defteri) sistemleri aracılığıyla temin edilebilir.' },
+      { q: 'Staj defteri kaç günde bir doldurulur?', a: 'Staj defteri her çalışma günü doldurulur. Günlük notların detaylı olması beklenir: sabah ne yapıldı, öğrenilen yeni bilgi veya beceri, kimlerle çalışıldı. Hafta sonu ve resmi tatil günlerine ait bölüm bırakılmaz.' },
+    ],
+    cta: {
+      heading: 'Staja hazır olduğundan emin misin?',
+      body: 'Zorunlu stajdan önce güçlü yönlerini ve gelişim alanlarını bil. 35 dakikalık ücretsiz değerlendirme kişiselleştirilmiş bir hazırlık raporu sunar.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/staj',
+    },
+  },
+  {
+    slug: 'staj-sigortasi-nedir',
+    title: 'Staj Sigortası Nedir? Lise ve Üniversite Öğrencileri İçin Rehber',
+    shortTitle: 'Staj Sigortası Rehberi',
+    description:
+      'Staj sigortası nedir, kim öder, neyi kapsar? Zorunlu stajda ve gönüllü stajda staj sigortası uygulaması, emeklilik hesabına etkisi ve pratik bilgiler.',
+    date: '2026-09-15',
+    dateModified: '2026-09-15',
+    readTime: '7 dk okuma',
+    tags: ['Staj', 'Staj Sigortası', 'Zorunlu Staj', 'Kariyer Rehberi', 'Lise'],
+    faqs: [
+      { q: 'Staj sigortası emekliliği etkiler mi?', a: 'Evet, bir avantaj söz konusu. Staj döneminde kısa vadeli sigorta kollarına (iş kazası ve meslek hastalığı) prim ödenir. Ancak uzun vadeli sigorta kollarına (yaşlılık, malullük, ölüm) prim yatırılmadığından staj tarihi sigorta başlangıcı olarak sayılmaz. Yine de özellikle kadınlar için emeklilik yaşı hesabında dolaylı bir avantaj sağlayabilir.' },
+      { q: 'Staj sigortasını kim yaptırır?', a: 'Üniversite zorunlu stajlarında sigorta okul tarafından yaptırılır. Lise gönüllü stajlarında yükümlülük firmaya aittir. Staj başlamadan önce sigorta durumunu yazılı olarak netleştirmen her zaman önerilir.' },
+      { q: 'Staj sigortası hangi riskleri kapsar?', a: 'Staj sigortası iş kazası ve meslek hastalığı sigortasını kapsar. Stajyer, staj süresince iş yerinde ya da iş yolunda geçirdiği kazalarda bu güvenceden yararlanır. Emeklilik, hastalık yardımı ve işsizlik sigortası kapsamında değildir.' },
+    ],
+    cta: {
+      heading: 'Staj başvurusuna hazır mısın?',
+      body: 'Hangi sektöre en uygunsun? Güçlü yönlerini 35 dakikada öğren — tamamen ücretsiz.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/staj',
+    },
+  },
+  {
     slug: 'staj-nasil-bulunur',
     title: 'Staj Nasıl Bulunur? Lise Öğrencisi İçin Adım Adım Başvuru Rehberi',
     shortTitle: 'Staj Nasıl Bulunur?',

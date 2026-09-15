@@ -2503,6 +2503,210 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'stajyer-maasi-ne-kadar': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        "Staj ücreti alacak mıyım?" sorusu, pek çok lise ve üniversite öğrencisinin staj başvurusunda sorduğu ilk sorulardan biridir. Cevap basit değil — şirkete, sektöre, ülkeye ve stajın türüne göre önemli ölçüde farklılık gösteriyor. Bu rehber, Türkiye ve İngiltere özelinde güncel stajyer maaşı bilgilerini, Ulusal Staj Programı ödemelerini ve ücret almadan yapılan stajların değerini ele alıyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türkiye'de Stajyer Maaşı: Genel Tablo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye'de staj ücreti yasal bir zorunluluk olmakla birlikte uygulamada büyük farklılıklar görülüyor. Temel durum şu:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>Üniversite zorunlu stajları:</strong> Kanun kapsamında, 10 veya daha fazla çalışana sahip işyerlerinde yapılan zorunlu stajlarda ücret ödenmesi zorunludur. Bu ücret asgari ücretin en az yüzde ellisi olmak zorunda.</Bullet>
+          <Bullet><strong>Ulusal Staj Programı (USP):</strong> Devlet destekli bu program kapsamında alınan stajyerlere genellikle asgari ücretle orantılı ödeme yapılır ve staj sigortası işveren tarafından karşılanır.</Bullet>
+          <Bullet><strong>Gönüllü ve lise stajları:</strong> Yasal zorunluluk dışında kalan bu stajlar çoğunlukla ücretsizdir ya da sembolik bir "harcırah" ödenir. Büyük teknoloji ve finans şirketleri bu kurala istisna olup lise öğrencilerine de ücretli programlar sunabilir.</Bullet>
+          <Bullet><strong>Startup ve KOBİ'ler:</strong> Yasal minimumun üzerinde ödeme yapabilirler, ancak tahmin edilebilirlik düşüktür. Başvuru sırasında ücret durumunu doğrudan sorman önerilir.</Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Vergi muafiyeti:</strong> 18 yaşını doldurmamış öğrencilere ödenen staj ücreti asgari ücretin yüzde seksenine kadar gelir vergisinden muaftır. Bu, lise stajyerlerinin net ücret açısından avantajlı olduğu anlamına gelir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İngiltere'de Stajyer Maaşı: Sektörel Karşılaştırma</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İngiltere'de lise öğrencileri için "work experience" olarak adlandırılan kısa stajlar genellikle ücretsizdir. Ancak üniversite öğrencilerine yönelik "placement year" ve "summer internship" programları farklı bir tabloya sahiptir.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>Teknoloji (Google, Meta, Microsoft):</strong> Aylık 2.000–4.000 GBP arasında ücret ödenebilen sektörün en rekabetçi programları. Başvurular bir yıl öncesinde açılır ve binlerce aday arasından seçim yapılır.</Bullet>
+          <Bullet><strong>Finans (Goldman Sachs, KPMG, Deloitte):</strong> Yaz stajları için genellikle 1.500–3.000 GBP aylık ödeme. Bu şirketlerin lise öğrencilerine yönelik "insight week" programları ise ücretsiz veya sembolik ödemellidir.</Bullet>
+          <Bullet><strong>Medya ve pazarlama:</strong> Geniş bir yelpaze — ücretsizden 1.500 GBP/ay'a kadar. Yerel ajanslar ve küçük şirketler daha az ödeme yapar ancak daha hızlı sorumluluk verir.</Bullet>
+          <Bullet><strong>Kamu sektörü (NHS, belediyeler):</strong> Lise öğrencilerine yönelik programlar genellikle ücretsizdir ancak güçlü yapılandırılmış deneyim sunar.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ücret Almadan Staj Değer mi?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu soru sık sorulur ve cevap koşullara bağlıdır. Ücretsiz stajın kabul edilmesini mantıklı kılan durumlar:
+        </p>
+        <ul className="space-y-2 mb-6">
+          <Bullet>Staj, hedeflediğin kariyer için spesifik ve değerli bir deneyim sunuyorsa</Bullet>
+          <Bullet>2–4 haftayı geçmeyen, lise döneminde yapılan kısa bir deneyimse</Bullet>
+          <Bullet>İşveren referans mektubu veya resmi bir tamamlama belgesi sunuyorsa</Bullet>
+          <Bullet>Ulaşım ve öğle yemeği masrafları karşılanıyorsa</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Öte yandan uzun süreli, tam zamanlı bir ücretsiz staj — özellikle üniversitede — yasal ve etik açıdan sorgulanabilir bir durumdur. İş Kanunu kapsamındaki haklarını bilmek önemlidir.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Uzun vadeli perspektif:</strong> NACE'nin araştırmasına göre, staj deneyimi olan öğrenciler mezuniyet öncesi iş teklifi alma oranında yüzde yetmiş daha yüksek performans gösteriyor. Bu fark, kısa dönemli ücret farkını çoğu durumda aşar.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ulusal Staj Programı (USP) Hakkında</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye'de Cumhurbaşkanlığı İnsan Kaynakları Ofisi koordinasyonuyla yürütülen Ulusal Staj Programı, üniversite öğrencilerine büyük şirketlerde yapılandırılmış staj fırsatları sunuyor.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>Kimler başvurabilir?</strong> Türkiye'deki üniversitelerde okuyan öğrenciler. Lise öğrencileri doğrudan USP'ye başvuramaz ancak USP kapsamındaki şirketlerin kendi gençlik programlarına başvurabilir.</Bullet>
+          <Bullet><strong>Ödeme:</strong> Asgari ücretle orantılı aylık ödeme yapılır ve staj sigortası işveren tarafından karşılanır.</Bullet>
+          <Bullet><strong>Başvuru:</strong> Staj.gov.tr platformu üzerinden yapılır. Başvuru dönemleri akademik takvime göre belirlenir.</Bullet>
+        </ul>
+      </section>
+    </>
+  ),
+
+  'staj-defteri-nasil-doldurulur': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Üniversitede zorunlu staj yapan her öğrencinin karşılaştığı pratik bir zorunluluk: staj defteri. Birçok öğrenci staj defterini nasıl dolduracağını, nereden alacağını ve hangi bilgileri kaydetmesi gerektiğini merak eder. Bu rehber, staj defteri hakkında bilmen gereken her şeyi açıklar — ve lise öğrencileri için gönüllü stajda nasıl kullanılacağını da ele alır.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Defteri Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Staj defteri, üniversite öğrencilerinin zorunlu stajları sırasında her çalışma günü doldurmaları gereken resmi bir belgedir. İşlevi, staj deneyimini günlük bazda kayıt altına almaktır: o gün yapılan işler, öğrenilenler, çalışılan kişiler ve gözlemler.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Staj defteri olmadan veya eksik doldurulmuş bir staj defteri ile zorunlu staj tamamlanmış sayılmaz. Pek çok üniversitede bu belge, staj notunun verilmesinde ve mezuniyet koşullarının karşılanmasında doğrudan belirleyicidir.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Lise öğrencileri için not:</strong> Lise gönüllü stajlarında staj defteri yasal olarak zorunlu değildir. Ancak deneyimi belgelemek — kişisel bir günlük biçiminde bile olsa — üniversite kişisel beyanını ve mülakat hazırlığını önemli ölçüde güçlendirir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Defteri Nereden Alınır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Staj defteri birkaç farklı kanaldan temin edilebilir:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>Fakülte veya yüksekokul:</strong> Birçok üniversite öğrencisine staj defterini bölüm sekreteryası veya öğrenci işleri aracılığıyla ücretsiz dağıtır. Staj başlamadan önce bölümünle iletişime geç.</Bullet>
+          <Bullet><strong>SMMM Odaları:</strong> Muhasebe ve işletme gibi belirli bölümlerde staj yapan öğrenciler için Serbest Muhasebeci Mali Müşavirler Odası'ndan temin edilebilir. Belirli bir ücrete tabi olabilir.</Bullet>
+          <Bullet><strong>Okul çevresindeki kırtasiyeler:</strong> Üniversite kampüslerine yakın kırtasiyeler genellikle ilgili bölümlerin standart staj defterlerini stoklar.</Bullet>
+          <Bullet><strong>Elektronik staj defteri (e-staj):</strong> Bazı üniversiteler artık fiziksel defter yerine dijital platformlar kullanıyor. Üniversiteni YÖKSİS veya kendi sistemleri üzerinden bu seçeneği sunup sunmadığını kontrol et.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Defteri Nasıl Doldurulur?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Staj defterleri üniversiteden üniversiteye farklılık gösterse de temel bölümler genellikle aynıdır. İşte standart bir staj defterinin bölümleri ve doldurma rehberi:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>Kapak sayfası:</strong> Adın, okul numarann, bölümün, staj yapılan kurumun adı ve adresi, staj başlangıç ve bitiş tarihleri. Bu bilgilerin eksiksiz ve doğru olması kritiktir.
+          </Bullet>
+          <Bullet>
+            <strong>Günlük faaliyet bölümü (günlük sayfalar):</strong> Her çalışma günü için ayrı bir sayfa doldurulur. Tarih, gün ve staj saatlerini (giriş-çıkış) belirt. Günün ana faaliyetlerini yaz — "toplantıya katıldım" yeterli değil, "Pazarlama ekibinin aylık performans değerlendirme toplantısına katılarak reklam harcaması analizi sürecini gözlemledim" gibi spesifik ifadeler kullan.
+          </Bullet>
+          <Bullet>
+            <strong>Haftalık özet bölümü:</strong> Bazı defterler haftalık özet içerir. O hafta öğrenilen en önemli 2–3 beceri veya bilgiyi yaz; hem kendine hem de okula anlamlı bir rapor sunar.
+          </Bullet>
+          <Bullet>
+            <strong>İşyeri yetkilisi imzası:</strong> Her gün veya her hafta (defterin formatına göre) staj sorumlusu ya da bağlı olduğun yönetici imza atar. İmzaları güncel tut — biriktirme genellikle soruna yol açar.
+          </Bullet>
+          <Bullet>
+            <strong>Bitiş onayı:</strong> Staj sonunda kurum yetkilisi genel değerlendirme ve onay bölümünü doldurur; kaşe ve imza atar. Bu bölüm eksik kalırsa staj geçersiz sayılır.
+          </Bullet>
+        </ul>
+        <Check>Staj bitiminde defterin bir fotokopisini veya dijital kopyasını sakla. Bazı üniversiteler orijinali iade etmez; ileride ihtiyaç duyduğunda referans olarak kullanabilirsin.</Check>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sık Yapılan Hatalar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Staj defteri sürecinde en yaygın hatalar ve nasıl önlenecekleri:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>Günleri biriktirmek:</strong> Her günü o gün doldurmak hem daha kolaydır hem de gözlemlerin tazedir. Birden fazla günü retrospektif doldurmak fark edilir ve gerçekliği yitirmiş olur.</Bullet>
+          <Bullet><strong>Jenerik ifadeler kullanmak:</strong> "Ofis çalışması yaptım" gibi muğlak ifadeler yerine spesifik görevleri, araçları ve katkıları yazmak hem daha doğrudur hem de daha güçlü bir referans belgesi oluşturur.</Bullet>
+          <Bullet><strong>İmzaları unutmak:</strong> Günlük veya haftalık imzaları zamanında almak, staj sonunda telafisi güç bir sorun yaratmaz.</Bullet>
+          <Bullet><strong>Tatil günlerini boş bırakmak:</strong> Resmi tatil ve hafta sonları için staj defterinde genellikle "tatil" veya "çalışılmadı" notu düşülür. Tamamen boş bırakmak formata uymadığı için sorun yaratabilir.</Bullet>
+        </ul>
+      </section>
+    </>
+  ),
+
+  'staj-sigortasi-nedir': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Staj sigortası, birçok öğrencinin yeterince bilmeden staja başladığı ancak ne olduğunu anlamak için bir kaza ya da sorun yaşamak zorunda kaldığı bir konudur. Bu rehber, staj sigortasının ne olduğunu, kimin ödemesini yaptığını, neyi kapsadığını ve emekliliğe etkisini açıklar.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Sigortası Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Staj sigortası, stajyeri iş kazası ve meslek hastalığına karşı güvence altına almak için yapılan kısa vadeli sigorta koludur. Türkiye'de 5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu kapsamında düzenlenmektedir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Temel işlevi şudur: Stajyer, staj süresi boyunca iş yerinde ya da iş yolunda geçirdiği bir kaza veya mesleğe bağlı bir hastalık durumunda, tam çalışanların yararlandığı iş kazası sigortasından benzer haklara sahip olur — tedavi giderleri karşılanır, gerekirse iş göremezlik ödeneği verilir.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Önemli ayrım:</strong> Staj sigortası yalnızca <em>kısa vadeli sigorta kollarını</em> (iş kazası, meslek hastalığı) kapsar. Emeklilik, hastalık yardımı ve işsizlik sigortasını kapsayan uzun vadeli sigorta kollarına staj döneminde prim yatırılmaz.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Sigortasını Kim Öder?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Stajın türüne göre sigorta yükümlülüğü farklılaşır:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet>
+            <strong>Üniversite zorunlu stajı:</strong> Sigorta yükümlülüğü okula aittir. Üniversite, staj süresince öğrencinin primini SGK'ya öder. Öğrencinin herhangi bir ödeme yapması gerekmez.
+          </Bullet>
+          <Bullet>
+            <strong>Ulusal Staj Programı (USP) kapsamındaki stajlar:</strong> Sigorta işveren tarafından karşılanır. USP'nin avantajlarından biri de budur.
+          </Bullet>
+          <Bullet>
+            <strong>Gönüllü ve lise stajları:</strong> Yasal zorunluluk olmadığından sigorta yükümlülüğü belirsizdir. Bazı firmalar gönüllü olarak sigorta yaptırır; bazıları yaptırmaz. Staj başlamadan önce bu durumu yazılı olarak netleştirmek — bir e-posta bile yeterlidir — olası sorunların önüne geçer.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Sigortası Emekliliği Etkiliyor mu?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu soru özellikle uzun vadeli hesaplar yapanlar için önemlidir. Kısa cevap: staj sigortası sigorta başlangıç tarihi olarak sayılmaz — çünkü emekliliği belirleyen uzun vadeli sigorta kollarına prim yatırılmaz.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ancak bir istisna mevcuttur: <strong>Kadınlar için emeklilik koşulları</strong> bağlamında, bazı hesaplamalarda staj süresinin dolaylı bir etkisi olabileceğine dair yorumlar mevcuttur. Bu konu bireysel koşullara bağlı olduğundan, spesifik bir soru varsa SGK danışma hattını veya mali müşaviri aramak en doğru bilgiye ulaştırır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Başlamadan Önce: Kontrol Listesi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Herhangi bir staja başlamadan önce aşağıdaki noktaları netleştirmek, olası sorunları önler:
+        </p>
+        <ul className="space-y-2 mb-6">
+          <Bullet>Sigorta kimin tarafından yapılıyor? (Okul mu, işveren mi?)</Bullet>
+          <Bullet>Sigorta başlangıç tarihi staj başlangıcınla örtüşüyor mu?</Bullet>
+          <Bullet>Staj ücreti ödenecek mi, ödenecekse ne zaman?</Bullet>
+          <Bullet>Staj defteri zorunlu mu ve kim onaylayacak?</Bullet>
+          <Bullet>Staj süresi ve çalışma saatleri yazılı olarak belirlendi mi?</Bullet>
+        </ul>
+        <Check>Bu sorular e-posta yoluyla sormak ve cevapları kayıt altına almak, ilerleyen dönemde yaşanabilecek anlaşmazlıklarda seni korur.</Check>
+      </section>
+    </>
+  ),
+
   'staj-nasil-bulunur': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
