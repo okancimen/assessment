@@ -113,6 +113,7 @@ export async function proxy(request: NextRequest) {
     request.nextUrl.pathname.startsWith('/fr') ||
     request.nextUrl.pathname.startsWith('/ar') ||
     request.nextUrl.pathname.startsWith('/ru') ||
+    request.nextUrl.pathname.startsWith('/zh') ||
     request.nextUrl.pathname.startsWith('/methodology') ||
     request.nextUrl.pathname.startsWith('/about') ||
     request.nextUrl.pathname.startsWith('/11-plus') ||
