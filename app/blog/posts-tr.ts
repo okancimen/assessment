@@ -677,10 +677,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'stajyer-maasi-ne-kadar',
-    title: 'Stajyer Maaşı Ne Kadar? 2026 Türkiye ve İngiltere Karşılaştırması',
+    title: 'Stajyer Maaşı Ne Kadar? Türkiye\'de Sektöre Göre Stajyer Ücretleri 2026',
     shortTitle: 'Stajyer Maaşı 2026',
     description:
-      'Stajyerler ne kadar maaş alıyor? Türkiye\'deki stajyer ücretleri, Ulusal Staj Programı ödemeleri ve İngiltere\'deki burslu staj fırsatları hakkında güncel bilgiler.',
+      'Stajyerler ne kadar maaş alıyor? Türkiye\'deki stajyer ücretleri, sektöre göre örnekler, Ulusal Staj Programı ödemeleri ve vergi muafiyeti hakkında güncel bilgiler.',
     date: '2026-09-15',
     dateModified: '2026-09-15',
     readTime: '7 dk okuma',

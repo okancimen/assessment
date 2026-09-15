@@ -2506,19 +2506,19 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
   'stajyer-maasi-ne-kadar': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        "Staj ücreti alacak mıyım?" sorusu, pek çok lise ve üniversite öğrencisinin staj başvurusunda sorduğu ilk sorulardan biridir. Cevap basit değil — şirkete, sektöre, ülkeye ve stajın türüne göre önemli ölçüde farklılık gösteriyor. Bu rehber, Türkiye ve İngiltere özelinde güncel stajyer maaşı bilgilerini, Ulusal Staj Programı ödemelerini ve ücret almadan yapılan stajların değerini ele alıyor.
+        "Staj ücreti alacak mıyım?" sorusu, pek çok lise ve üniversite öğrencisinin staj başvurusunda sorduğu ilk sorulardan biridir. Cevap basit değil — şirkete, sektöre ve stajın türüne göre önemli ölçüde farklılık gösteriyor. Bu rehber, Türkiye'deki güncel stajyer maaşı bilgilerini, sektörel örnekleri, Ulusal Staj Programı ödemelerini ve ücret almadan yapılan stajların değerini ele alıyor.
       </p>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türkiye'de Stajyer Maaşı: Genel Tablo</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Türüne Göre Ücret Tablosu</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Türkiye'de staj ücreti yasal bir zorunluluk olmakla birlikte uygulamada büyük farklılıklar görülüyor. Temel durum şu:
         </p>
         <ul className="space-y-3 mb-6">
-          <Bullet><strong>Üniversite zorunlu stajları:</strong> Kanun kapsamında, 10 veya daha fazla çalışana sahip işyerlerinde yapılan zorunlu stajlarda ücret ödenmesi zorunludur. Bu ücret asgari ücretin en az yüzde ellisi olmak zorunda.</Bullet>
-          <Bullet><strong>Ulusal Staj Programı (USP):</strong> Devlet destekli bu program kapsamında alınan stajyerlere genellikle asgari ücretle orantılı ödeme yapılır ve staj sigortası işveren tarafından karşılanır.</Bullet>
+          <Bullet><strong>Üniversite zorunlu stajları:</strong> 5510 sayılı Kanun kapsamında, 10 veya daha fazla çalışana sahip işyerlerinde yapılan zorunlu stajlarda ücret ödenmesi zorunludur. Bu ücret asgari ücretin en az yüzde ellisi olmak zorundadır. 2026 itibarıyla bu rakam yaklaşık 10.000–11.000 TL aralığında seyretmektedir.</Bullet>
+          <Bullet><strong>Ulusal Staj Programı (USP):</strong> Devlet destekli bu program kapsamında alınan stajyerlere asgari ücretle orantılı ödeme yapılır ve staj sigortası işveren tarafından karşılanır.</Bullet>
           <Bullet><strong>Gönüllü ve lise stajları:</strong> Yasal zorunluluk dışında kalan bu stajlar çoğunlukla ücretsizdir ya da sembolik bir "harcırah" ödenir. Büyük teknoloji ve finans şirketleri bu kurala istisna olup lise öğrencilerine de ücretli programlar sunabilir.</Bullet>
-          <Bullet><strong>Startup ve KOBİ'ler:</strong> Yasal minimumun üzerinde ödeme yapabilirler, ancak tahmin edilebilirlik düşüktür. Başvuru sırasında ücret durumunu doğrudan sorman önerilir.</Bullet>
+          <Bullet><strong>Startup ve KOBİ'ler:</strong> Yasal minimumun üzerinde ödeme yapabilirler, ancak tutarlılık düşüktür. Başvuru sırasında ücret durumunu doğrudan sormak önerilir.</Bullet>
         </ul>
         <Callout>
           <strong className="text-indigo-900">Vergi muafiyeti:</strong> 18 yaşını doldurmamış öğrencilere ödenen staj ücreti asgari ücretin yüzde seksenine kadar gelir vergisinden muaftır. Bu, lise stajyerlerinin net ücret açısından avantajlı olduğu anlamına gelir.
@@ -2526,15 +2526,26 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">İngiltere'de Stajyer Maaşı: Sektörel Karşılaştırma</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sektöre Göre Stajyer Maaşı: Türkiye Örnekleri</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          İngiltere'de lise öğrencileri için "work experience" olarak adlandırılan kısa stajlar genellikle ücretsizdir. Ancak üniversite öğrencilerine yönelik "placement year" ve "summer internship" programları farklı bir tabloya sahiptir.
+          Staj ücreti sektörden sektöre ciddi farklılık gösterir. Türkiye'deki üniversite zorunlu stajları için sektörel ortalamalara yakın örnekler:
         </p>
-        <ul className="space-y-3 mb-6">
-          <Bullet><strong>Teknoloji (Google, Meta, Microsoft):</strong> Aylık 2.000–4.000 GBP arasında ücret ödenebilen sektörün en rekabetçi programları. Başvurular bir yıl öncesinde açılır ve binlerce aday arasından seçim yapılır.</Bullet>
-          <Bullet><strong>Finans (Goldman Sachs, KPMG, Deloitte):</strong> Yaz stajları için genellikle 1.500–3.000 GBP aylık ödeme. Bu şirketlerin lise öğrencilerine yönelik "insight week" programları ise ücretsiz veya sembolik ödemellidir.</Bullet>
-          <Bullet><strong>Medya ve pazarlama:</strong> Geniş bir yelpaze — ücretsizden 1.500 GBP/ay'a kadar. Yerel ajanslar ve küçük şirketler daha az ödeme yapar ancak daha hızlı sorumluluk verir.</Bullet>
-          <Bullet><strong>Kamu sektörü (NHS, belediyeler):</strong> Lise öğrencilerine yönelik programlar genellikle ücretsizdir ancak güçlü yapılandırılmış deneyim sunar.</Bullet>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>Teknoloji ve yazılım (Turkcell, Arçelik, Insider, Trendyol vb.):</strong> Büyük teknoloji şirketleri genellikle asgari ücretin çok üzerinde ödeme yapar. Aylık 15.000–25.000 TL aralığı bu sektörde yaygındır. Stajyer programları yapılandırılmıştır ve mentorluk içerir.
+          </Bullet>
+          <Bullet>
+            <strong>Finans ve bankacılık (Garanti BBVA, Yapı Kredi, İş Bankası vb.):</strong> Büyük bankalar ve finans kuruluşları 12.000–20.000 TL aralığında ücret öder. Bazı kurumların yaz stajyeri programları son derece rekabetçidir ve erken başvuru gerektirir.
+          </Bullet>
+          <Bullet>
+            <strong>Üretim ve sanayi (Bosch, Ford Otosan, Vestel vb.):</strong> Büyük sanayi kuruluşları yasal minimuma yakın ücret öder; ancak yemek ve ulaşım gibi yan haklar toplam paketi anlamlı biçimde artırır.
+          </Bullet>
+          <Bullet>
+            <strong>Dijital ajanslar ve pazarlama:</strong> Küçük ve orta ölçekli dijital ajanslar genellikle yasal minimumda kalır (10.000–12.000 TL). Buna karşın yaratıcı sektördeki stajlar portföy geliştirme açısından yüksek değer taşır.
+          </Bullet>
+          <Bullet>
+            <strong>Kamu kurumları ve belediyeler:</strong> Ücret yasak ücretin alt sınırında tutulur. Ancak kariyer gelişimi ve CV değeri açısından anlamlı deneyimler sunulabilir.
+          </Bullet>
         </ul>
       </section>
 
