@@ -50,7 +50,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       alternates: { languages: { 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
-    { url: `${BASE}/internship`, lastModified: '2026-09-09', changeFrequency: 'monthly', priority: 0.9 },
+    {
+      url: `${BASE}/internship`,
+      lastModified: '2026-09-09',
+      changeFrequency: 'monthly',
+      priority: 0.9,
+      alternates: { languages: { 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, 'x-default': `${BASE}/internship` } },
+    },
     { url: `${BASE}/demo`,            lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/sample-report`,   lastModified: '2026-09-11', changeFrequency: 'monthly', priority: 0.8 },
     {
@@ -150,6 +156,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { tr: `${BASE}/tr/metodoloji`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, 'x-default': `${BASE}/methodology` } },
+    },
+    {
+      url: `${BASE}/tr/staj`,
+      lastModified: '2026-09-15',
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+      alternates: { languages: { tr: `${BASE}/tr/staj`, 'en-GB': `${BASE}/internship`, 'x-default': `${BASE}/internship` } },
     },
     ...BLOG_POSTS_TR.map((post) => ({
       url: `${BASE}/tr/blog/${post.slug}`,

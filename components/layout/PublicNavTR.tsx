@@ -10,7 +10,7 @@ export default function PublicNavTR() {
         <Logo href="/tr" size="sm" />
 
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-xs text-[#1d1d1f]">
-          <Link href="/tr"                className="hover:opacity-50 transition-opacity">Staj</Link>
+          <Link href="/tr/staj"            className="hover:opacity-50 transition-opacity">Staj</Link>
           <Link href="/tr/hakkimizda"     className="hover:opacity-50 transition-opacity">Hakkımızda</Link>
           <Link href="/tr/metodoloji"     className="hover:opacity-50 transition-opacity">Metodoloji</Link>
           <Link href="/tr/blog"           className="hover:opacity-50 transition-opacity">Blog</Link>

@@ -675,6 +675,75 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: 'https://eduentry.com/internship',
     },
   },
+  {
+    slug: 'staj-nasil-bulunur',
+    title: 'Staj Nasıl Bulunur? Lise Öğrencisi İçin Adım Adım Başvuru Rehberi',
+    shortTitle: 'Staj Nasıl Bulunur?',
+    description:
+      'Staj bulmak için hangi platformlara bakmalı, nasıl başvuru yapmalı ve işverene nasıl yaklaşmalısın? Lise öğrencileri için pratik, adım adım bir başvuru rehberi.',
+    date: '2026-09-15',
+    dateModified: '2026-09-15',
+    readTime: '9 dk okuma',
+    tags: ['Staj', 'Staj Başvurusu', 'Kariyer Rehberi', 'Lise', 'İş Dünyası'],
+    faqs: [
+      { q: 'Staj için nereye başvurabilirim?', a: 'Şirketlerin kendi kariyer sayfaları, LinkedIn, Indeed, Glassdoor gibi iş arama platformları ve Springpod, Ratemyplacement, Inspiring the Future gibi staj odaklı siteler başlangıç için en verimli kaynaklardır. Ayrıca okul kariyer danışmanın ve yerel ticaret odalarının sana yönlendirebileceği programlar da bulunabilir.' },
+      { q: 'Hiç iş deneyimim yokken nasıl başvurabilirim?', a: 'Birçok lise stajı deneyim gerektirmez — zaten bu fırsatların amacı da bu. Başvurunda merakını, neden bu sektörü seçtiğini ve öğrenmeye olan istekliğini net biçimde ortaya koy. Özgün motivasyon, birçok deneyimli adaydan daha etkilidir.' },
+      { q: 'E-posta ile doğrudan şirkete ulaşabilir miyim?', a: 'Kesinlikle. "Soğuk e-posta" olarak bilinen bu yöntem, özellikle küçük ve orta ölçekli şirketler için oldukça işe yarar. Kısa, net ve kişisel bir e-posta — şirketin ne yaptığını araştırdığını gösteren iki cümle ve net bir istek — büyük bir fark yaratır.' },
+      { q: 'Başvurularımı reddedilirse ne yapmalıyım?', a: 'Ret, sürecin normal bir parçasıdır. Geri bildirim iste (çoğu zaman işe yarar), bir sonraki başvuruna göre CV\'ni güncelle ve aramaya devam et. Ortalama olarak 10-15 başvurudan biri olumlu sonuç verir.' },
+    ],
+    cta: {
+      heading: 'Hangi staja en uygunsun?',
+      body: 'Başvurmadan önce güçlü yönlerini ve ilgi alanını bil. Eduentry\'nin ücretsiz değerlendirmesi 35 dakikada sana en uygun izi gösterir.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/staj',
+    },
+  },
+  {
+    slug: 'yaz-staji-lise-ogrencisi',
+    title: 'Yaz Stajı 2026: Lise Öğrencileri İçin Fırsatlar ve Başvuru Taktikleri',
+    shortTitle: 'Yaz Stajı 2026 Rehberi',
+    description:
+      'Yaz tatilini staj fırsatına çevirmek isteyenler için: başvuru takvimleri, hangi sektörler yaz programı sunuyor, uzaktan seçenekler ve pratik başvuru taktikleri.',
+    date: '2026-09-15',
+    dateModified: '2026-09-15',
+    readTime: '8 dk okuma',
+    tags: ['Staj', 'Yaz Stajı', 'Kariyer Rehberi', 'Lise', 'İş Deneyimi'],
+    faqs: [
+      { q: 'Yaz stajı için ne zaman başvurmalıyım?', a: 'Büyük şirketlerin yaz programları için başvurular genellikle Ocak-Mart aylarında açılır ve hızla dolup taşar. Daha küçük şirketler yıl boyunca başvuru kabul eder. İdeal yaklaşım: büyük programlar için 6-8 ay öncesinden başvurmak, yerel şirketler için ise Mart-Mayıs penceresi kullanmak.' },
+      { q: 'Kaç haftalık bir yaz stajı anlamlıdır?', a: 'Araştırmalar en az 2 haftalık yapılandırılmış stajların ölçülebilir gelişimsel etki bıraktığını gösteriyor. 4 hafta ise bir projeye katkı sağlama ve gerçek referans geliştirme açısından ideal süredir.' },
+      { q: 'Uzaktan yaz stajı gerçek staj sayılır mı?', a: 'Evet. Özellikle teknoloji, dijital pazarlama ve veri analitiği alanlarında uzaktan stajlar işverenler tarafından giderek daha fazla değer görüyor. Yönetilen bir proje, gerçek geri bildirim ve düzenli toplantılar içeriyorsa uzaktan ya da yüz yüze olması önemini değiştirmiyor.' },
+      { q: 'Yurt dışında yaz stajı yapabilir miyim?', a: 'Evet, özellikle İngiltere ve AB ülkelerinde lise öğrencilerine yönelik programlar mevcuttur. Vizeler ve yasal gereklilikler ülkeye göre değişir, bu nedenle öncesinde araştırma yapman önemlidir.' },
+    ],
+    cta: {
+      heading: 'Yaz stajına hazır mısın?',
+      body: 'Hangi ize başvuracağını bilmiyorsan, önce güçlü yönlerini ölç. 35 dakikalık ücretsiz değerlendirmemiz hangi sektöre uygun olduğunu net biçimde gösterir.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/staj',
+    },
+  },
+  {
+    slug: 'staja-hazirlik-guclu-yonlerini-bul',
+    title: 'Staja Başvurmadan Önce: Güçlü Yönlerini Nasıl Keşfedersin?',
+    shortTitle: 'Staj İçin Güçlü Yönlerini Keşfet',
+    description:
+      'En çok hangi sektöre uygunsun? İşverenlerin gerçekten aradığı beceriler neler? Staj başvurusuna geçmeden önce kendinini değerlendirmenin sistematik yolu.',
+    date: '2026-09-15',
+    dateModified: '2026-09-15',
+    readTime: '7 dk okuma',
+    tags: ['Staj', 'Öz Değerlendirme', 'Kariyer Rehberi', 'Staj Hazırlığı', 'Lise'],
+    faqs: [
+      { q: 'Hangi staj izinin bana uygun olduğunu nasıl bilebilirim?', a: 'Kendi kendine sormaya başlayabileceğin üç soru: Boş zamanımda hangi tür problemleri çözmeyi seviyorum? Okulda hangi dersler bana en anlamlı geliyor? Bir iş yerinde hangi tür görevler enerjimi artırır? Bu sorulara dürüst cevaplar çoğunlukla sektörü işaret eder. Bunu sistematik hale getirmek için Eduentry\'nin uyarlanabilir değerlendirmesini kullanabilirsin.' },
+      { q: 'İşverenler lise öğrencisinden hangi becerileri bekler?', a: 'İşverenler birincil teknik bilgi değil, öğrenmeye hazır olma ve temel iş yeri becerilerini arar: dakiklik ve sorumluluk alma, yazılı iletişim (net e-posta yazmak), soru sorma cesareti ve görevleri teslim etme güvenilirliği. Bu beceriler eğitimle geliştirilebilir.' },
+      { q: 'Değerlendirme sonuçlarımı staj başvurumda kullanabilir miyim?', a: 'Evet. Hazırlık raporun, başvuru mektubunda veya mülakatta spesifik biçimde atıfta bulunabileceğin somut veriler içerir. İşverenler kendi güçlü yönlerini bilinçli olarak ifade edebilen adayları tercih ediyor.' },
+      { q: 'Değerlendirme sonucum düşük çıkarsa ne yapmalıyım?', a: 'Düşük bir sonuç bir engel değil, bir yol haritasıdır. Rapordaki gelişim alanlarını görün ve başvurmadan önce o alanlarda kasıtlı pratik yapın. Birçok öğrenci ikinci bir değerlendirmede belirgin ilerleme kaydediyor.' },
+    ],
+    cta: {
+      heading: 'Güçlü yönlerini ölç, doğru staja başvur',
+      body: '34 soruluk ücretsiz uyarlanabilir değerlendirme. Hangi ize uygun olduğunu, nerede güçlü nerede gelişim alanın olduğunu anında öğren.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/staj',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

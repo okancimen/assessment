@@ -2503,6 +2503,239 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'staj-nasil-bulunur': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Staj başvurusu, birçok lise öğrencisi için düşündüğünden çok daha ulaşılabilir bir süreçtir. Engel, fırsat azlığı değil; nereye bakacağını bilmemek ve nasıl başvuracağından emin olamamaktır. Bu rehber, adım adım pratik bir yol haritası sunar: doğru kaynakları bulmaktan ilk e-postayı yazmaya, ret mektuplarını nasıl değerlendireceğine kadar.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 1: Hangi Alana Başvurduğunu Bil</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Staj arama sürecinin en yaygın hatası, ne aradığını bilmeden arama yapmaktır. Geniş arama terimleri ile başvuran öğrenciler, genellikle ilgisiz pozisyonlara başvurarak motivasyonlarını erken kaybeder.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Başlamadan önce kendine sor: Teknoloji, iş dünyası, veri ya da pazarlama alanlarından hangisi seni daha çok çekiyor? Bu sorunun cevabı aramanı hem daraltır hem de daha odaklı hale getirir. Henüz emin değilsen, Eduentry&apos;nin ücretsiz staj değerlendirmesi hangi ize en uygun olduğunu somut verilerle gösterir.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Önemli:</strong> Bir alan seçmek, diğer alanlara sonsuza dek kapıları kapatmak değildir. İlk stajın, ileride farklı bir yönde gitmeye karar versen bile değerlidir — işverenlere öğrenmeye istekli biri olduğunu gösterir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 2: Doğru Platformları Kullan</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lise öğrencileri için staj arama platformları, genel iş arama sitelerinden farklıdır. İşte en verimli kaynaklar:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>Springpod:</strong> Birleşik Krallık&apos;taki en büyük lise staj platformlarından biri. Büyük şirketlerin sanal iş deneyimi programlarına ev sahipliği yapar.</Bullet>
+          <Bullet><strong>Ratemyplacement.co.uk:</strong> Staj arayanlar için değerlendirmeler ve açık pozisyonlar içerir.</Bullet>
+          <Bullet><strong>Inspiring the Future:</strong> Okul koordineli programlar aracılığıyla öğrencileri işverenlerle buluşturur.</Bullet>
+          <Bullet><strong>LinkedIn:</strong> Profil oluştur ve "internship" + "work experience" ile ara. Lise öğrencisi olduğunu profilinde belirt — bu seni dezavantajlı kılmaz, aksine işverene beklenti yönetimi sağlar.</Bullet>
+          <Bullet><strong>Şirket web siteleri:</strong> İlgilendiğin şirketin kariyer sayfasını doğrudan ziyaret et. Küçük ve orta ölçekli şirketlerin staj fırsatları büyük platformlara düşmez.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 3: Doğrudan Ulaşmanın Gücü</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          "Soğuk e-posta" birçok öğrenci için göz ardı edilen, ancak son derece etkili bir yöntemdir. Küçük ve orta ölçekli şirketler, özellikle yerel işletmeler, genellikle staj ilanı vermez — ancak motive bir öğrencinin kendiliğinden gönderdiği bir e-postaya açık olurlar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Etkili bir doğrudan başvuru e-postası şu unsurları içerir:
+        </p>
+        <ul className="space-y-2 mb-6">
+          <Bullet><strong>Kısa kişisel tanıtım:</strong> Kim olduğunu, hangi okulda okuduğunu ve kaç yaşında olduğunu iki cümlede belirt.</Bullet>
+          <Bullet><strong>Neden bu şirketi seçtiğin:</strong> Şirketi araştırdığını gösteren bir veya iki spesifik cümle — "web sitenizde X projenizi gördüm" gibi.</Bullet>
+          <Bullet><strong>Net istek:</strong> Ne arıyorsun? Bir iki haftalık iş deneyimi mi, yazlık program mı? Bunu açıkça belirt.</Bullet>
+          <Bullet><strong>CV eki:</strong> Kısa, bir sayfalık bir CV. Okul projeleri ve hobiler bile bu aşamada değerli içeriklerdir.</Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Gerçekçi beklenti:</strong> 10-15 doğrudan e-postadan 1-2 olumlu yanıt almak başarı sayılır. Yanıt gelmemesi kişisel bir ret değildir — işverenin zamanı ve kapasitesiyle ilgilidir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 4: Başvuru Materyallerini Hazırla</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İyi hazırlanmış iki belge, neredeyse tüm lise staj başvurularını kapsar:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>CV (Özgeçmiş):</strong> Bir sayfa, açık yazı tipi, net bölümler. Okul bilgileri, ilgi alanları, gönüllü çalışmalar, okul projeleri. Deneyim bölümü boşsa endişelenme — bu yaşta herkes için böyledir.</Bullet>
+          <Bullet><strong>Kapak mektubu veya e-posta:</strong> Neden bu şirketi seçtiğini ve stajdan ne umduğunu anlatan kısa bir metin. Jenerik şablonlar fark edilir — kişiselleştirilmiş bir paragraf çok daha etkilidir.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 5: Takip Et ve Devam Et</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Başvurduğun şirketten 10 iş günü içinde yanıt gelmezse, kibarca bir hatırlatma e-postası gönderebilirsin. Tek cümlelik bir mesaj yeterli: "Başvurumun ulaşıp ulaşmadığını kontrol etmek istedim, gösterim için teşekkürler."
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ret aldığında geri bildirim istemek hem profesyonel hem de son derece yararlıdır. "Gelecekteki başvurularım için geri bildirim alabilir miyim?" sorusu işverenler tarafından olumlu karşılanır ve gelişimine somut katkı sağlar.
+        </p>
+        <Check>Başvurduğun şirketleri, tarihlerini ve iletişim geçmişini takip etmek için basit bir tablo tut. Bu organizasyon, hem süreci yönetmeni kolaylaştırır hem de mülakatlarda hazırlıklı olmanı sağlar.</Check>
+      </section>
+    </>
+  ),
+
+  'yaz-staji-lise-ogrencisi': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Yaz tatili, lise öğrencileri için en verimli staj penceresidir — okul yükümlülükleri yoktur, dikkat dağıtıcı faktörler en az düzeydedir ve işverenler yaz programlarına hazırlıklıdır. Ancak bu fırsattan gerçekten yararlanabilmek için doğru zamanda doğru adımları atmak gerekir. Bu rehber, 2026 yaz stajı fırsatlarını, başvuru takvimlerini ve en etkili stratejileri ele alır.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Neden Yaz Stajı?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yaz stajlarının diğer dönemlerden farkı yoğunluk ve sürekliliktir. 2-4 haftalık tam zamanlı bir yaz stajı, yarı zamanlı bir döneme yayılan stajdan çok daha derin öğrenme sağlar. Proje takip eder, sonuçları görürsün, ekibe gerçek anlamda dahil olursun.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Birleşik Krallık&apos;ta büyük şirketlerin büyük çoğunluğu yaz programlarını Haziran-Ağustos aylarında yürütür. Daha küçük şirketler ise esnek davranarak Temmuz-Ağustos başlangıçlı programlar sunar.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Araştırma bulgusu:</strong> Education and Employers tarafından yürütülen boylamsal çalışmalar, yaz döneminde gerçekleştirilen yapılandırılmış yerleştirmelerin — en az iki hafta süren — akademik yıl boyunca yapılan kısa temaslardan ölçülebilir biçimde daha güçlü gelişimsel etki bıraktığını ortaya koyuyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Başvuru Takvimi: Ne Zaman Harekete Geçmeli?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yaz stajı başvuruları için zamanlama kritiktir. İşte şirket büyüklüğüne göre başvuru takvimleri:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>Büyük şirketler ve kurumsal programlar (Tesco, Deloitte, NHS vb.):</strong> Başvurular Kasım-Ocak arası açılır. Haziran başlangıçlı bir program için en geç Şubat sonuna kadar başvurman gerekir.</Bullet>
+          <Bullet><strong>Orta ölçekli şirketler:</strong> Ocak-Mart arası başvurular için en aktif dönemdir. Nisan&apos;a kalan fırsatlar giderek azalır.</Bullet>
+          <Bullet><strong>Küçük işletmeler ve startuplar:</strong> Yıl boyunca başvuru kabul ederler. Mart-Mayıs, yerel şirketlere doğrudan ulaşmak için ideal penceredir.</Bullet>
+          <Bullet><strong>Uzaktan ve sanal programlar:</strong> Daha kısa hazırlık süreleriyle çalışır; bazı programlar 4-6 hafta öncesinde hâlâ açık olabilir.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">2026 Yaz Stajı Fırsatları: Hangi Sektörler Öne Çıkıyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Her sektörün yaz programlarına yaklaşımı farklıdır. İşte lise öğrencileri için en erişilebilir alanlar:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>Teknoloji:</strong> Google, Microsoft, Amazon gibi büyük şirketlerin lise programları son derece rekabetçidir ve binlerce başvuru alır. Ancak yerel yazılım şirketleri ve startuplar çok daha erişilebilir seçenekler sunar. Springpod&apos;daki sanal teknoloji deneyimleri iyi bir başlangıç noktasıdır.
+          </Bullet>
+          <Bullet>
+            <strong>Finans ve iş dünyası:</strong> Birçok muhasebe firması (KPMG, PwC, EY) lise öğrencilerine yönelik sanal iş deneyimi programları sunuyor. Bu programlar ücretli olmasa da CV&apos;ne büyük değer katıyor.
+          </Bullet>
+          <Bullet>
+            <strong>Medya ve dijital pazarlama:</strong> Yerel ajanslar, sosyal medya yönetimi veya içerik üretiminde yaz stajcısı arar. Portföy oluşturma açısından son derece değerli.
+          </Bullet>
+          <Bullet>
+            <strong>Sağlık ve kamu sektörü:</strong> NHS ve yerel belediyeler gönüllü ya da yapılandırılmış iş deneyimi programları sunar — ücretli olmayabilir ancak kariyer açısından güçlü bir referans oluşturur.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Uzaktan Yaz Stajı: Gerçek mi, Taklidi mi?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          COVID sonrasında uzaktan stajlar kalıcı hale geldi. Teknoloji ve dijital sektörlerdeki işverenler, coğrafi kısıtlamalar olmadan yetenekli öğrencilere ulaşabilmek için uzaktan programları artık standart olarak sunuyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Uzaktan stajın "gerçek" olup olmadığını şu kriterlerle değerlendir:
+        </p>
+        <ul className="space-y-2 mb-6">
+          <Bullet>Düzenli video toplantılar ve mentorluk var mı?</Bullet>
+          <Bullet>Sana özgü, tamamlaman beklenen gerçek bir proje var mı?</Bullet>
+          <Bullet>Süre sonunda değerlendirme veya referans mektubu sunuluyor mu?</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Bu kriterleri karşılayan bir uzaktan staj, yüz yüze stajdan hiçbir biçimde daha az değil.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yaz Stajından En Fazla Verimi Almak</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Stajı tamamlamak yeterli değil — stajdan aktif olarak öğrenmek gerekir. Deneyimi gerçek bir kazanıma dönüştüren pratik adımlar:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>Günlük not tut:</strong> Her gün üç cümle: bugün ne yaptım, ne öğrendim, bir sonraki adım ne? Bu notlar üniversite kişisel beyanında somut malzeme olacak.</Bullet>
+          <Bullet><strong>Soru sormaktan çekinme:</strong> İşverenler soru soran stajyerleri değer verir — bu ilgi ve öğrenme isteğinin göstergesidir.</Bullet>
+          <Bullet><strong>Küçük bir proje öner:</strong> İkinci haftanın sonunda, fark ettiğin bir problemi veya iyileştirme fırsatını ekibine sunabilirsin. Bu inisiyatif çoğu zaman güçlü bir referansa dönüşür.</Bullet>
+          <Bullet><strong>LinkedIn bağlantısı kur:</strong> Staj sonunda, birlikte çalıştığın kişilerle LinkedIn bağlantısı kurmak profesyonel ağını erken oluşturur.</Bullet>
+        </ul>
+      </section>
+    </>
+  ),
+
+  'staja-hazirlik-guclu-yonlerini-bul': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Staj başvurusu yapmadan önce kendini tanımak — hangi alanlarda güçlü olduğunu, hangi ortamlarda öne çıktığını ve nerede gelişim alanın olduğunu bilmek — hem doğru izi seçmeni hem de işverene daha ikna edici biçimde kendini ifade etmeni sağlar. Bu rehber, öz değerlendirmenin neden kritik olduğunu ve bunu sistematik biçimde nasıl yapabileceğini açıklar.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Neden Öz Değerlendirme?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İşverenler, staj başvurularını değerlendirirken en çok iki şeye bakıyor: motivasyon ve öz farkındalık. Kendi güçlü yönlerini bilinçli olarak ifade edebilen bir aday, benzer özgeçmişe sahip onlarca adaydan ayrışır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          CIPD&apos;nin (2023) araştırması, İngiliz işverenlerinin yeni başlayanlarda en çok eksikliğini hissettikleri özelliğin teknik bilgi değil, öz değerlendirme yetkinliği olduğunu ortaya koydu: kendi güçlü ve zayıf yönlerini gerçekçi biçimde tanımlamak.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Pratik sonuç:</strong> "Güçlü yönlerim neler?" sorusuna veren "çalışkanlık ve ekip ruhu" gibi jenerik cevaplar, işvereni ikna etmiyor. "Sayısal analizde güçlüyüm ve belirsiz verileri görselleştirme konusunda pratik yapıyorum" gibi spesifik bir ifade çok daha etkilidir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İşverenler Gerçekte Ne Arıyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lise yaşındaki stajyerlerde işverenlerin aradığı beş özellik araştırmalarda tutarlı biçimde öne çıkıyor:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>Sorumluluk alma:</strong> Verilen görevi sonuna kadar tamamlamak ve zamanında teslim etmek. Bu basit görünür ama işverenlerin en çok değer verdiği özelliktir.</Bullet>
+          <Bullet><strong>Merak ve öğrenme isteği:</strong> Soru sormak, araştırmak ve bağlamı anlamaya çalışmak. Teknik bilgi sonradan öğrenilebilir; merak öğretilemez.</Bullet>
+          <Bullet><strong>Yazılı iletişim:</strong> Net, kısa ve düzgün bir e-posta yazmak. Bu beceri çoğu lise öğrencisinde gelişime açıktır.</Bullet>
+          <Bullet><strong>Geribildirim alabilmek:</strong> Eleştiriyi kişisel algılamadan, gelişim için kullanmak. İşverenler bunu hem gözlemler hem de değer verir.</Bullet>
+          <Bullet><strong>Proaktiflik:</strong> Görev bittikten sonra "başka yardımcı olabileceğim bir şey var mı?" diyebilmek. Bu basit bir soru, stajyeri sıradan bir katılımcıdan ayırır.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Hangi Staj İzine Uygunsun?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dört temel staj izinin her biri farklı bir beceri ve ilgi profiline hitap eder. Hangisin?
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>Teknoloji:</strong> Mantıksal problem çözme, sistemlerin nasıl çalıştığını merak etme ve belirli bir hedefe ulaşmak için adım adım düşünme. Matematik veya bilgisayar derslerinde soyut kavramları seviyorsan bu iz sana uygun olabilir.
+          </Bullet>
+          <Bullet>
+            <strong>İş Dünyası:</strong> İnsanları nasıl etkileyeceğini düşünme, organizasyonel dinamikleri okuma ve büyük resmi görme. Liderlik, ikna ve strateji ilgi alanlarınsa bu iz öne çıkar.
+          </Bullet>
+          <Bullet>
+            <strong>Veri Analitiği:</strong> Sayılarla rahat olmak, örüntüler aramak ve kanıta dayalı sonuçlara ulaşmak. İstatistik, ekonomi veya veri görselleştirmede doğal bir ilgin varsa bu iz sana uygun.
+          </Bullet>
+          <Bullet>
+            <strong>Dijital Pazarlama:</strong> İnsan psikolojisini anlamak, yaratıcı içerik üretmek ve kitlelerin neden bir şeyle ilgilendiğini merak etmek. Sosyal medya, yazma ve hikaye anlatımı ilgini çekiyorsa bu iz değerlendir.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Değerlendirme Sonuçlarını Başvurunda Nasıl Kullanırsın?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry&apos;nin staj değerlendirmesi, hazırlık seviyeni ve güçlü yönlerini somut verilerle ortaya koyar. Bu bilgileri iki biçimde başvuruna yansıtabilirsin:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>Kapak mektubunda:</strong> "Veri analitiği alanında güçlü yönlerim olduğunu bağımsız bir değerlendirmeyle doğruladım; özellikle nicel akıl yürütme ve veri yorumlamada yüksek puan aldım." gibi spesifik ifadeler, jenerik iddiaların önüne geçer.</Bullet>
+          <Bullet><strong>Mülakatta:</strong> Güçlü yönlerini açıklarken değerlendirme sonuçlarına atıfta bulunmak, öz değerlendirmeni güvenilir bir kaynakla destekler. Bu, işverenlerin dikkat ettiği öz farkındalık göstergesidir.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Değerlendirme sonucun beklediğinden düşük çıkarsa paniğe kapılma. Rapordaki gelişim alanları, başvurmadan önce odaklanman gereken konuları gösterir. Birçok öğrenci 4-6 haftalık kasıtlı çalışmanın ardından belirgin ilerleme kaydediyor.
+        </p>
+        <Check>Değerlendirmeyi staj başvurusu öncesinde yapmak, hem doğru izi seçmene hem de başvurunu kişiselleştirmene yardımcı olur. Ücretsiz ve 35 dakika sürer.</Check>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
