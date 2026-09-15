@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import PublicNavTR from '@/components/layout/PublicNavTR'
-import PublicFooterTR from '@/components/layout/PublicFooterTR'
 import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
 
 const BASE_URL = 'https://eduentry.com'
@@ -192,12 +190,11 @@ const RELATED_POSTS = BLOG_POSTS_TR
 
 export default function TRStajLandingPage() {
   return (
-    <div className="min-h-screen bg-[#f5f5f7] flex flex-col" lang="tr">
+    <div className="bg-[#f5f5f7]" lang="tr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
-      <PublicNavTR />
-      <main className="flex-1">
+      <main>
 
         {/* Hero */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 pt-16 pb-12 text-center">
@@ -387,7 +384,6 @@ export default function TRStajLandingPage() {
           </div>
         </section>
       </main>
-      <PublicFooterTR />
     </div>
   )
 }
