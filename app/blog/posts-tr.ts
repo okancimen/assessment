@@ -432,7 +432,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Dijital pazarlama stajı başvurusu için nasıl portfolio oluşturulur?', a: 'Üç pratik yol: (1) Kendi bir sosyal medya hesabını tutarlı bir temayla yönet ve büyüme verilerini belgele; (2) Bir aile işletmesi veya yerel bir kuruma sosyal medya veya SEO danışmanlığı yap; (3) Hayali bir marka için bir kampanya stratejisi hazırla ve sunum formatında belgele. Bu üçünden herhangi biri, mülakatta konuşulacak somut bir şey sağlar.' },
       { q: 'Dijital pazarlama stajı sunan şirketler nasıl bulunur?', a: 'En erişilebilir yol küçük ve orta ölçekli dijital ajanslar — formal program olmadığı için neredeyse hiç başvuru almıyorlar ve iyi hazırlanmış doğrudan bir mesaja genellikle olumlu yanıt veriyorlar. Bunun dışında: İngiliz şirketlerinin LinkedIn sayfaları, Springpod ve Bright Network platformları, ve okulun kariyer koordinatörü aracılığıyla ulaşılabilecek işveren ilişkileri.' },
     ],
-    cta: { heading: 'Dijital pazarlama alanındaki hazırlık seviyeni ölç', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Dijital pazarlama alanındaki yetenek ve alan bilgisi profilini al.', label: 'Ücretsiz başvur — Dijital Pazarlama', href: 'https://eduentry.ai/tr' },
+    cta: { heading: 'Dijital pazarlama alanındaki hazırlık seviyeni ölç', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Dijital pazarlama alanındaki yetenek ve alan bilgisi profilini al.', label: 'Ücretsiz başvur — Dijital Pazarlama', href: '/tr/staj' },
   },
   {
     slug: 'veri-analitigi-kariyer-rehberi',
@@ -449,7 +449,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Veri analitiği stajında ne yapılır?', a: 'Lise stajyer düzeyinde: veri temizleme ve düzenleme, dashboard ve rapor hazırlama, spesifik metrikler üzerinde analiz ekibine destek, ve bulgular sunumu. En değerli kısım teknik görevlerin kendisi değil — ekibin soruları nasıl formüle ettiğini ve hangi verilerin hangi kararları desteklediğini gözlemleme fırsatı.' },
       { q: 'Veri analitiğini ücretsiz olarak nereden öğrenebilirim?', a: 'Google Data Analytics Sertifikası (Coursera\'da ücretsiz denetlenebilir), Khan Academy istatistik modülü, ve YouTube\'daki Excel ve Google Sheets eğitimleri sağlam bir başlangıç sağlar. SQL için Mode Analytics ve SQLZoo platformlarının ücretsiz alıştırmaları var. 40-60 saatlik öz yönelimli öğrenmeyle minimum viable portfolio oluşturulabilir.' },
     ],
-    cta: { heading: 'Sayısal yeteneğini nesnel biçimde ölç', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Veri analitiği alanındaki aptitude ve alan bilgisi profilini al.', label: 'Ücretsiz başvur — Veri Analitiği', href: 'https://eduentry.ai/tr' },
+    cta: { heading: 'Sayısal yeteneğini nesnel biçimde ölç', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Veri analitiği alanındaki aptitude ve alan bilgisi profilini al.', label: 'Ücretsiz başvur — Veri Analitiği', href: '/tr/staj' },
   },
   {
     slug: 'staj-icin-cv-nasil-yazilir',
@@ -466,7 +466,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'CV\'de notlarımı belirtmeli miyim?', a: 'İyiyse evet (7 üzeri ortalama veya eşdeğeri), vasat ise hayır. Teknik stajlar (teknoloji, veri, finans) için ilgili dersleri ayrıca belirt. Matematik veya fen sonuçlarından özel bir atıf, birçok bağlamda genel not ortalamasından daha fazla şey söylüyor.' },
       { q: 'Öğrenci CV\'lerindeki en yaygın hata nedir?', a: 'Sonuçsuz sorumluluk tanımları. "Okul yıl sonu etkinliği organizasyonuna yardım ettim" zayıf. "200 katılımcılı bir etkinliğin lojistiğini koordine ettim, 500£ bütçe yönettim ve katılımcı başına maliyeti bir önceki yıla göre %15 düşürdüm" güçlü. Sayılar mütevazı olsa bile her zaman ölçtür.' },
     ],
-    cta: { heading: 'Başvuruna doğrulanmış bir değerlendirme ekle', body: 'Eduentry hazırlık raporu, işe alım uzmanlarına seni tanımadan önce yeteneğini kanıtlar. Deneyim eksikliğini ölçülmüş yetenek verileriyle telafi et.', label: 'Ücretsiz değerlendirmeyi başlat', href: 'https://eduentry.ai/tr' },
+    cta: { heading: 'Başvuruna doğrulanmış bir değerlendirme ekle', body: 'Eduentry hazırlık raporu, işe alım uzmanlarına seni tanımadan önce yeteneğini kanıtlar. Deneyim eksikliğini ölçülmüş yetenek verileriyle telafi et.', label: 'Ücretsiz değerlendirmeyi başlat', href: '/tr/staj' },
   },
   {
     slug: 'staj-mulakati-hazirlik-rehberi',
@@ -483,7 +483,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Mülakata hazırlanırken şirket hakkında ne araştırmalıyım?', a: 'Minimum: şirketin tam olarak ne yaptığı, hangi pazarda rekabet ettiği, başlıca müşterileri veya ürünleri, ve varsa son dönem haberleri. Staj düzeyinde derin bir analiz beklenmiyor, ancak şirketin değer önerisini bilmek ve bunu kendi ilginle ilişkilendirmek, çoğu adayın sergilemediği bir ciddiyeti gösteriyor.' },
       { q: 'Staj mülakatlarında en sık yapılan hata nedir?', a: 'Spesifik örnek içermeyen belirsiz yanıtlar. "Çok çalışkanım" veya "Bu sektöre tutkuyla bağlıyım" hiçbir şey anlatmıyor. Niteliklerle ilgili her iddia hemen somut bir örnek içermeli — ne kadar mütevazı olursa olsun. Mülakatçıların hatırladığı adaylar genel iddialar öne sürenler değil, spesifik bir durumu tarif edenler.' },
     ],
-    cta: { heading: 'Mülakata gerçek aptitude verileriyle gir', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Güçlü ve gelişim alanlarını kişiselleştirilmiş raporla öğren — mülakatından önce.', label: 'Ücretsiz değerlendirmeyi başlat', href: 'https://eduentry.ai/tr' },
+    cta: { heading: 'Mülakata gerçek aptitude verileriyle gir', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Güçlü ve gelişim alanlarını kişiselleştirilmiş raporla öğren — mülakatından önce.', label: 'Ücretsiz değerlendirmeyi başlat', href: '/tr/staj' },
   },
   {
     slug: 'pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler',

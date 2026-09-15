@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const enSlug = post.contentSlug ?? slug
   const esSlug = esByContentSlug.get(enSlug)
   return {
-    title: post.shortTitle,
+    title: `${post.shortTitle} | Eduentry`,
     description: post.description,
     keywords: post.tags,
     alternates: {
@@ -172,7 +172,7 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
         <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-4">Eduentry&apos;den</p>
         <div className="space-y-4">
           {[
-            { href: 'https://eduentry.ai/tr', title: 'Staj Hazırlık Değerlendirmesi', desc: '14 yaş üstü lise öğrencileri için ücretsiz 34 soruluk adaptif test. Kişiselleştirilmiş rapor ve yapay zeka kariyer içgörüleri.' },
+            { href: '/tr/staj', title: 'Staj Hazırlık Değerlendirmesi', desc: '14 yaş üstü lise öğrencileri için ücretsiz 34 soruluk adaptif test. Kişiselleştirilmiş rapor ve yapay zeka kariyer içgörüleri.' },
             { href: '/tr/metodoloji', title: 'Değerlendirme Metodolojimiz', desc: 'PISA, GCSE ve CAT4 ile aynı 100 puanlık ölçekte adaptif IRT puanlaması.' },
             { href: '/tr', title: 'Akademik Değerlendirme', desc: 'Matematikten İngilizceye, sözlü akıldan sayısal akıla — 6-17 yaş arası için ücretsiz adaptif test.' },
           ].map((link) => (
@@ -218,7 +218,7 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
         <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'Staj hazırlığını keşfet'}</h2>
         <p className="text-indigo-200 mb-8">{post.cta?.body ?? '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme.'}</p>
         <a
-          href={post.cta?.href ?? 'https://eduentry.ai/tr'}
+          href={post.cta?.href ?? '/tr/staj'}
           className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg"
         >
           {post.cta?.label ?? 'Ücretsiz değerlendirmeyi başlat'}
