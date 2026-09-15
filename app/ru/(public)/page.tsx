@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: `${BASE_URL}/ru`,
-    languages: { ru: `${BASE_URL}/ru`, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, 'en-GB': BASE_URL, fr: `${BASE_URL}/fr`, 'x-default': BASE_URL },
+    languages: { ru: `${BASE_URL}/ru`, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, 'en-GB': BASE_URL, fr: `${BASE_URL}/fr`, zh: `${BASE_URL}/zh`, 'x-default': BASE_URL },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

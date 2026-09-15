@@ -5,6 +5,7 @@ import { BLOG_POSTS_TR } from './blog/posts-tr'
 import { BLOG_POSTS_FR } from './blog/posts-fr'
 import { BLOG_POSTS_AR } from './blog/posts-ar'
 import { BLOG_POSTS_RU } from './blog/posts-ru'
+import { BLOG_POSTS_ZH } from './blog/posts-zh'
 import { GRAMMAR_AREAS } from './grammar-schools/data'
 
 const BASE = 'https://eduentry.com'
@@ -21,6 +22,7 @@ const latestTR = maxDate(...BLOG_POSTS_TR.map((p) => p.dateModified ?? p.date))
 const latestFR = maxDate(...BLOG_POSTS_FR.map((p) => p.dateModified ?? p.date))
 const latestAR = maxDate(...BLOG_POSTS_AR.map((p) => p.dateModified ?? p.date))
 const latestRU = maxDate(...BLOG_POSTS_RU.map((p) => p.dateModified ?? p.date))
+const latestZH = maxDate(...BLOG_POSTS_ZH.map((p) => p.dateModified ?? p.date))
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -29,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: '2026-09-11',
       changeFrequency: 'monthly',
       priority: 1.0,
-      alternates: { languages: { 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, 'x-default': BASE } },
+      alternates: { languages: { 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
     },
     { url: `${BASE}/11-plus`,         lastModified: '2026-09-11', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/grammar-schools`, lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.8 },
@@ -39,14 +41,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: '2026-09-11',
       changeFrequency: 'monthly',
       priority: 0.7,
-      alternates: { languages: { 'en-GB': `${BASE}/about`, es: `${BASE}/es/sobre-nosotros`, tr: `${BASE}/tr/hakkimizda`, fr: `${BASE}/fr/a-propos`, ar: `${BASE}/ar/hawlana`, ru: `${BASE}/ru/o-nas`, 'x-default': `${BASE}/about` } },
+      alternates: { languages: { 'en-GB': `${BASE}/about`, es: `${BASE}/es/sobre-nosotros`, tr: `${BASE}/tr/hakkimizda`, fr: `${BASE}/fr/a-propos`, ar: `${BASE}/ar/hawlana`, ru: `${BASE}/ru/o-nas`, zh: `${BASE}/zh/guanyu-women`, 'x-default': `${BASE}/about` } },
     },
     {
       url: `${BASE}/methodology`,
       lastModified: '2026-09-11',
       changeFrequency: 'monthly',
       priority: 0.8,
-      alternates: { languages: { 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, 'x-default': `${BASE}/methodology` } },
+      alternates: { languages: { 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
     { url: `${BASE}/internship`, lastModified: '2026-09-09', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/demo`,            lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.7 },
@@ -56,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: latestEN,
       changeFrequency: 'weekly',
       priority: 0.7,
-      alternates: { languages: { 'en-GB': `${BASE}/blog`, es: `${BASE}/es/blog`, tr: `${BASE}/tr/blog`, fr: `${BASE}/fr/blog`, ar: `${BASE}/ar/blog`, ru: `${BASE}/ru/blog`, 'x-default': `${BASE}/blog` } },
+      alternates: { languages: { 'en-GB': `${BASE}/blog`, es: `${BASE}/es/blog`, tr: `${BASE}/tr/blog`, fr: `${BASE}/fr/blog`, ar: `${BASE}/ar/blog`, ru: `${BASE}/ru/blog`, zh: `${BASE}/zh/blog`, 'x-default': `${BASE}/blog` } },
     },
     { url: `${BASE}/privacy`,         lastModified: '2026-06-14', changeFrequency: 'yearly',  priority: 0.3 },
     { url: `${BASE}/terms`,           lastModified: '2026-06-14', changeFrequency: 'yearly',  priority: 0.3 },
@@ -268,5 +270,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ]
 
-  return [...staticPages, ...subjectPages, ...grammarPages, ...blogPages, ...esPages, ...trPages, ...frPages, ...arPages, ...ruPages]
+  const zhPages: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE}/zh`,
+      lastModified: '2026-09-15',
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+      alternates: { languages: { zh: `${BASE}/zh`, 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, 'x-default': BASE } },
+    },
+    {
+      url: `${BASE}/zh/blog`,
+      lastModified: latestZH,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+      alternates: { languages: { zh: `${BASE}/zh/blog`, 'en-GB': `${BASE}/blog`, es: `${BASE}/es/blog`, tr: `${BASE}/tr/blog`, fr: `${BASE}/fr/blog`, ar: `${BASE}/ar/blog`, ru: `${BASE}/ru/blog`, 'x-default': `${BASE}/blog` } },
+    },
+    {
+      url: `${BASE}/zh/guanyu-women`,
+      lastModified: '2026-09-15',
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+      alternates: { languages: { zh: `${BASE}/zh/guanyu-women`, 'en-GB': `${BASE}/about`, es: `${BASE}/es/sobre-nosotros`, tr: `${BASE}/tr/hakkimizda`, fr: `${BASE}/fr/a-propos`, ar: `${BASE}/ar/hawlana`, ru: `${BASE}/ru/o-nas`, 'x-default': `${BASE}/about` } },
+    },
+    {
+      url: `${BASE}/zh/fangfalun`,
+      lastModified: '2026-09-15',
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+      alternates: { languages: { zh: `${BASE}/zh/fangfalun`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, 'x-default': `${BASE}/methodology` } },
+    },
+    ...BLOG_POSTS_ZH.map((post) => ({
+      url: `${BASE}/zh/blog/${post.slug}`,
+      lastModified: post.dateModified ?? post.date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
+  ]
+
+  return [...staticPages, ...subjectPages, ...grammarPages, ...blogPages, ...esPages, ...trPages, ...frPages, ...arPages, ...ruPages, ...zhPages]
 }

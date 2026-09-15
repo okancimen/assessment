@@ -162,6 +162,21 @@ const RU_TO_EN: Record<string, string> = {
   '/ru/metodologiya': '/methodology',
 }
 
+const EN_TO_ZH: Record<string, string> = {
+  '/': '/zh',
+  '/internship': '/zh',
+  '/blog': '/zh/blog',
+  '/about': '/zh/guanyu-women',
+  '/methodology': '/zh/fangfalun',
+}
+
+const ZH_TO_EN: Record<string, string> = {
+  '/zh': '/',
+  '/zh/blog': '/blog',
+  '/zh/guanyu-women': '/about',
+  '/zh/fangfalun': '/methodology',
+}
+
 const ES_TO_RU: Record<string, string> = {
   '/es': '/ru',
   '/es/blog': '/ru/blog',
@@ -293,6 +308,11 @@ function getEnHref(pathname: string): string {
     if (pathname.startsWith('/ru/blog/')) return '/blog'
     return '/'
   }
+  if (pathname.startsWith('/zh')) {
+    if (ZH_TO_EN[pathname]) return ZH_TO_EN[pathname]
+    if (pathname.startsWith('/zh/blog/')) return '/blog'
+    return '/'
+  }
   if (!pathname.startsWith('/es')) return pathname === '/' ? '/' : pathname
   if (ES_TO_EN[pathname]) return ES_TO_EN[pathname]
   if (pathname.startsWith('/es/blog/')) return '/blog'
@@ -375,17 +395,55 @@ function getRuHref(pathname: string): string {
     if (pathname.startsWith('/ar/blog/')) return '/ru/blog'
     return '/ru'
   }
+  if (pathname.startsWith('/zh')) {
+    if (ZH_TO_EN[pathname]) return EN_TO_RU[ZH_TO_EN[pathname]] ?? '/ru'
+    if (pathname.startsWith('/zh/blog/')) return '/ru/blog'
+    return '/ru'
+  }
   if (EN_TO_RU[pathname]) return EN_TO_RU[pathname]
   if (pathname.startsWith('/blog/')) return '/ru/blog'
   return '/ru'
 }
 
-function detectLang(pathname: string): 'EN' | 'ES' | 'TR' | 'FR' | 'AR' | 'RU' {
+function getZhHref(pathname: string): string {
+  if (pathname.startsWith('/zh')) return pathname
+  if (pathname.startsWith('/es')) {
+    if (ES_TO_EN[pathname] && EN_TO_ZH[ES_TO_EN[pathname]]) return EN_TO_ZH[ES_TO_EN[pathname]]
+    if (pathname.startsWith('/es/blog/')) return '/zh/blog'
+    return '/zh'
+  }
+  if (pathname.startsWith('/tr')) {
+    if (TR_TO_EN[pathname] && EN_TO_ZH[TR_TO_EN[pathname]]) return EN_TO_ZH[TR_TO_EN[pathname]]
+    if (pathname.startsWith('/tr/blog/')) return '/zh/blog'
+    return '/zh'
+  }
+  if (pathname.startsWith('/fr')) {
+    if (FR_TO_EN[pathname] && EN_TO_ZH[FR_TO_EN[pathname]]) return EN_TO_ZH[FR_TO_EN[pathname]]
+    if (pathname.startsWith('/fr/blog/')) return '/zh/blog'
+    return '/zh'
+  }
+  if (pathname.startsWith('/ar')) {
+    if (AR_TO_EN[pathname] && EN_TO_ZH[AR_TO_EN[pathname]]) return EN_TO_ZH[AR_TO_EN[pathname]]
+    if (pathname.startsWith('/ar/blog/')) return '/zh/blog'
+    return '/zh'
+  }
+  if (pathname.startsWith('/ru')) {
+    if (RU_TO_EN[pathname] && EN_TO_ZH[RU_TO_EN[pathname]]) return EN_TO_ZH[RU_TO_EN[pathname]]
+    if (pathname.startsWith('/ru/blog/')) return '/zh/blog'
+    return '/zh'
+  }
+  if (EN_TO_ZH[pathname]) return EN_TO_ZH[pathname]
+  if (pathname.startsWith('/blog/')) return '/zh/blog'
+  return '/zh'
+}
+
+function detectLang(pathname: string): 'EN' | 'ES' | 'TR' | 'FR' | 'AR' | 'RU' | 'ZH' {
   if (pathname.startsWith('/es')) return 'ES'
   if (pathname.startsWith('/tr')) return 'TR'
   if (pathname.startsWith('/fr')) return 'FR'
   if (pathname.startsWith('/ar')) return 'AR'
   if (pathname.startsWith('/ru')) return 'RU'
+  if (pathname.startsWith('/zh')) return 'ZH'
   return 'EN'
 }
 
@@ -396,6 +454,7 @@ const LANG_META = {
   FR: { flag: '🇫🇷', label: 'Français' },
   AR: { flag: '🇸🇦', label: 'العربية' },
   RU: { flag: '🇷🇺', label: 'Русский' },
+  ZH: { flag: '🇨🇳', label: '中文' },
 }
 
 export default function LanguagePickerMain() {
@@ -419,6 +478,7 @@ export default function LanguagePickerMain() {
     { code: 'FR' as const, href: getFrHref(pathname) },
     { code: 'AR' as const, href: getArHref(pathname) },
     { code: 'RU' as const, href: getRuHref(pathname) },
+    { code: 'ZH' as const, href: getZhHref(pathname) },
   ]
 
   const active = LANG_META[activeLang]
