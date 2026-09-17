@@ -488,7 +488,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler',
     title: 'PISA 2025 Sonuçları: Küresel Eğitim Krizi — Her Ebeveynin Bilmesi Gerekenler',
-    shortTitle: 'PISA 2025: Küresel Eğitim Krizi',
+    shortTitle: 'PISA 2025 Nedir? Sonuçlar ve Türkiye Analizi',
     description: 'PISA 2025, OECD ülkelerinde matematik, okuma ve fen bilimlerinde şimdiye kadar kaydedilen en düşük puanları ortaya koyuyor. Sonuçların aileler için ne anlama geldiğini ve çocuğunuzu değerlendirmenin neden hiç bu kadar önemli olmadığını açıklıyoruz.',
     date: '2026-09-10',
     dateModified: '2026-09-10',
@@ -556,7 +556,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'pisa-nedir-cocugunuz-nasil-hazirlanir',
     title: 'PISA Nedir? 2025 Sonuçları ve Çocuğunuzu Hazırlamanın Yolları',
-    shortTitle: 'PISA Nedir? Hazırlık Rehberi',
+    shortTitle: 'PISA Nedir, Neyi Ölçer? Ebeveyn Rehberi',
     description:
       'PISA testi nedir, nasıl yapılır, hangi ülkeler katılır? 2025 sonuçları Türkiye\'yi nasıl etkiledi ve çocuğunuz uluslararası standartlarda nerede duruyor? Türk aileler için kapsamlı rehber.',
     date: '2026-09-14',
@@ -630,7 +630,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description: 'OECD\'nin PISA 2025 raporu rekor düşük akademik puanlar ortaya koyuyor. Veriler ise bir çözüme işaret ediyor: gerçek dünyayla erken yaşta temas kuran öğrenciler okulların öğretemediği becerileri geliştiriyor.',
     date: '2026-09-11',
     readTime: '13 dk okuma',
-    tags: ['Work Experience', 'Internship', 'Student Skills', 'Future of Education', 'Career Development'],
+    tags: ['PISA', 'Akademik Değerlendirme', 'İş Deneyimi', 'Staj', 'Kariyer Gelişimi'],
     faqs: [
       {
         q: 'PISA 2025 öğrenci performansı hakkında ne buldu?',
