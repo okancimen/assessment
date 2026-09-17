@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: `${BASE_URL}/internship`,
-    languages: { 'en-GB': `${BASE_URL}/internship`, tr: `${BASE_URL}/tr/staj`, 'x-default': `${BASE_URL}/internship` },
+    languages: { 'en-GB': `${BASE_URL}/internship`, tr: `${BASE_URL}/tr/staj`, fr: `${BASE_URL}/fr/stage`, 'x-default': `${BASE_URL}/internship` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

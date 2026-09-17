@@ -123,12 +123,30 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const BASE = 'https://eduentry.com'
+const FEATURED_BLOG_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Son Blog Yazıları — Eduentry',
+  url: `${BASE}/tr/blog`,
+  itemListElement: [...BLOG_POSTS_TR]
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 6)
+    .map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: p.title,
+      url: `${BASE}/tr/blog/${p.slug}`,
+    })),
+}
+
 export default function TurkishHomePage() {
   return (
     <main className="min-h-screen bg-white" lang="tr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_TR) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FEATURED_BLOG_SCHEMA) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] text-white">

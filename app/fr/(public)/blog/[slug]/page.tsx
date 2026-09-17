@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const url = `${BASE_URL}/fr/blog/${slug}`
   const enSlug = post.contentSlug
   return {
-    title: post.shortTitle,
+    title: `${post.shortTitle} | Eduentry`,
     description: post.description,
     keywords: post.tags,
     alternates: {

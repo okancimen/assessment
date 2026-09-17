@@ -34,7 +34,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Öğrenciniz ilk staja hazır mı?',
       body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Yetenek, alan bilgisi ve iş yeri becerileri açısından hazırlık düzeyini keşfet — kişiselleştirilmiş yapay zeka raporu ile.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/apply',
+      href: '/tr/staj',
     },
   },
   {
@@ -45,7 +45,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Lise stajları için kanıta dayalı değerlendirme — 14–18 yaşında yapılandırılmış iş deneyiminin öz yeterliliği, dayanıklılığı ve profesyonel kimliği nasıl geliştirdiği ve üniversite başvuru sonuçlarını ölçülebilir biçimde nasıl iyileştirdiği.',
     date: '2026-06-25',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-18',
     readTime: '9 dk okuma',
     tags: ['Staj', 'Üniversite Kabulü', 'Kariyer Gelişimi', 'Lise', 'İş Deneyimi'],
     faqs: [
@@ -65,12 +65,16 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
         q: 'İş deneyimi bir üniversite kişisel beyanını nasıl güçlendirir?',
         a: 'Gerçek iş deneyimi olan bir öğrencinin yazdığı kişisel beyan; spesifik gözlemler, katkılar ve yansımalar içerir — iddia değil, kanıt. Kabul görevlileri, bir kariyer\'in nasıl olacağını umduklarını anlatan bir öğrenci ile gözlemlediği ve öğrendiğini anlatan bir öğrenci arasındaki farkı ayırt etmek üzere eğitilmiştir. Rekabetçi programlarda bu ayrım belirleyicidir.',
       },
+      {
+        q: 'Lise stajı kişisel beyana nasıl yansıtılır?',
+        a: 'En etkili yapı şu üç unsuru kapsar: (1) Stajın bağlamı — nerede, ne kadar süre, hangi alan; (2) Spesifik bir gözlem veya öğrenme anı — soyut değil, somut; (3) Bu deneyimin başvurulan programla nasıl bağlandığı. Örnek: "X firmasında bir hafta boyunca [alanda] çalışırken [spesifik gözlem]i fark ettim. Bu beni [konuyu] daha derinden anlamak istemeye yöneltti." Üç cümle yeterli — özlülük, genel anlatıdan her zaman daha güçlü.',
+      },
     ],
     cta: {
       heading: 'Öğrenciniz staja hazır mı?',
       body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Yetenek, alan bilgisi ve iş yeri becerileri genelinde kişiselleştirilmiş hazırlık raporu al.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/apply',
+      href: '/tr/staj',
     },
   },
   {
@@ -263,7 +267,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'A Level\'dan sonra staja hazır mısın?',
       body: '16 yaş üstü öğrenciler için ücretsiz uyarlanabilir değerlendirme. Yetenek, alan bilgisi ve iş yeri becerileri açısından kişiselleştirilmiş hazırlık raporu al.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/apply',
+      href: '/tr/staj',
     },
   },
   {
@@ -353,7 +357,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Her zamankinden daha fazla öğrenci en yüksek notları alıyor — bu da akademik sonuçları son yirmi yılın en zayıf farklılaştırıcısı haline getiriyor. Rekabetçi üniversite başvurularını gerçekte ne ayırt ediyor ve neden 15 yaşında başlamak sonucu değiştiriyor.',
     date: '2026-09-08',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-18',
     readTime: '11 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Üniversite Kabulü'],
     faqs: [
@@ -373,12 +377,16 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
         q: 'Erken başlamak üniversite kişisel beyanını nasıl etkiler?',
         a: 'UCAS kişisel beyanı yaklaşık 650 kelimedir. 15 yaşında bir yerleştirme tamamlayan ve iki yıl boyunca bu deneyimin üzerine inşa eden öğrenci, soyut iddialar değil kanıt içeren spesifik gözlemlerle dolu bir beyan yazar. "Hukuka her zaman ilgi duydum" iddia; "yerleştirmem sırasında [şirkette] şunu gözlemledim" kanıt. Kabul görevlileri bu farkı tespit etmek ve ödüllendirmek üzere eğitiliyor.',
       },
+      {
+        q: 'Üniversite başvurusu için kişisel beyanı güçlendirmenin en pratik yolu nedir?',
+        a: 'Tek bir kural: iddia değil kanıt. Her nitelik iddiasının yanında spesifik bir örnek olmalı — okul, staj, proje veya kişisel deneyimden. Güçlü bir kişisel beyan genellikle iki somut deneyimden oluşur: biri akademik merak (ilgilendiğin alanı derinlemesine araştırdığın bir an), diğeri pratik bağlam (bir staj, proje veya görev). Bu ikisini bağlayan bir "neden bu program, neden şimdi" cümlesi gerisini tamamlar.',
+      },
     ],
     cta: {
       heading: '15 yaşında staja ne kadar hazırsın?',
       body: 'Eduentry\'nin ücretsiz uyarlanabilir değerlendirmesi yetenek, alan bilgisi ve iş yeri becerilerini ölçer. Güçlü ve gelişim alanlarını kişiselleştirilmiş bir raporla öğren.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/internship',
+      href: '/tr/staj',
     },
   },
   {
@@ -389,7 +397,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'İngiltere\'de 12 ila 18 yaş arası iş dünyası deneyimi hakkında her şey — her yıl grubu için mevcut olanlar, büyük işveren programları, nasıl başvurulur ve başvurunun öne çıkmasını ne sağlar.',
     date: '2026-07-09',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-18',
     readTime: '10 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'İş Dünyası', 'Üniversite Kabulü'],
     faqs: [
@@ -409,12 +417,16 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
         q: 'İş deneyimi üniversite başvurularına nasıl katkı sağlar?',
         a: 'Russell Group\'taki rekabetçi iş, iktisat, finans ve hukuk programları için iş deneyimi kişisel beyanda güçlü kanıt oluşturur. "İş kararlarıyla ilgileniyorum" iddia; "yerleştirmem sırasında [şirkette] gelir hedefleri ile nakit akışı kısıtları arasındaki gerilimi gözlemledim" kanıt. Warwick, LSE ve Bath\'taki kabul görevlileri birincisinin yüzlercesini işler, ikincisi ise sürçünden biri.',
       },
+      {
+        q: '12. sınıfta okul ve iş deneyimi arasındaki dengeyi nasıl kurulur?',
+        a: 'Yoğunluğu akademik takvime göre planla. Yaz tatili ve sömestr araları yoğun staj için idealdir; okul dönemi ise haftada birkaç saatlik sanal programlar için uygundur. Springpod ve Bright Network gibi platformların birçok programı tatil dönemine denk getirilmiştir. Bir haftalık yüz yüze iş deneyimi, zaman açısından en verimli formattır — akademik takvimle çakışma riski en düşük.',
+      },
     ],
     cta: {
       heading: 'İş dünyasına hazırlık seviyeni ölç',
       body: 'Lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. İş dünyası alanında yetenek, alan bilgisi ve iş yeri becerilerini ölç — 35 dakikadan kısa sürede.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/internship',
+      href: '/tr/staj',
     },
   },
   {
@@ -423,7 +435,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Dijital Pazarlama Stajı Nasıl Bulunur',
     description: 'Lise öğrencileri için dijital pazarlama stajı bulma rehberi — hangi firmalara başvurulacağı, hangi becerilerin öne çıkarılacağı, portfolio olmadan nasıl başvurulacağı ve doğrulanmış bir değerlendirme puanının süreci nasıl hızlandırdığı.',
     date: '2026-09-09',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-18',
     readTime: '9 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Dijital Pazarlama'],
     faqs: [
@@ -431,6 +443,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Kodlama bilmeden dijital pazarlama stajı bulunabilir mi?', a: 'Evet. Dijital pazarlamanın büyük çoğunluğu — sosyal medya yönetimi, içerik üretimi, email pazarlama, SEO içerik yazımı ve ücretli reklam yönetimi — programlama gerektirmiyor. HTML ve CSS temellerini bilmek avantaj sağlar ama temel gereklilik değil. Analitik düşünce, yazılı iletişim becerisi ve hızlı öğrenme kapasitesi çok daha önemli.' },
       { q: 'Dijital pazarlama stajı başvurusu için nasıl portfolio oluşturulur?', a: 'Üç pratik yol: (1) Kendi bir sosyal medya hesabını tutarlı bir temayla yönet ve büyüme verilerini belgele; (2) Bir aile işletmesi veya yerel bir kuruma sosyal medya veya SEO danışmanlığı yap; (3) Hayali bir marka için bir kampanya stratejisi hazırla ve sunum formatında belgele. Bu üçünden herhangi biri, mülakatta konuşulacak somut bir şey sağlar.' },
       { q: 'Dijital pazarlama stajı sunan şirketler nasıl bulunur?', a: 'En erişilebilir yol küçük ve orta ölçekli dijital ajanslar — formal program olmadığı için neredeyse hiç başvuru almıyorlar ve iyi hazırlanmış doğrudan bir mesaja genellikle olumlu yanıt veriyorlar. Bunun dışında: İngiliz şirketlerinin LinkedIn sayfaları, Springpod ve Bright Network platformları, ve okulun kariyer koordinatörü aracılığıyla ulaşılabilecek işveren ilişkileri.' },
+      { q: 'Sosyal medya içerik üretimi dijital pazarlama stajında ne kadar önemli?', a: 'Çok önemli. Çoğu küçük ve orta ölçekli şirket, stajyerden ilk günden itibaren sosyal medya takvimine katkı sağlamasını bekler. Instagram ve LinkedIn içerikleri, Reels veya kısa video formatlarını anlamak ve temel görsel tasarım (Canva düzeyinde) bugün hemen hemen her dijital pazarlama stajı başvurusunda avantaj sağlıyor. Kendi kanalını yönetmiş olmak, teorik bilgiden çok daha etkili bir referans.' },
     ],
     cta: { heading: 'Dijital pazarlama alanındaki hazırlık seviyeni ölç', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Dijital pazarlama alanındaki yetenek ve alan bilgisi profilini al.', label: 'Ücretsiz başvur — Dijital Pazarlama', href: '/tr/staj' },
   },
@@ -440,7 +453,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Veri Analitiği Kariyer Rehberi',
     description: 'Veri analitiğine lise yıllarından itibaren nasıl başlanır — hangi matematiksel temel gerekli, hangi araçlar öğrenilmeli, staj nasıl bulunur ve bu alandaki kariyer yolları nelerdir.',
     date: '2026-09-09',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-18',
     readTime: '10 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi'],
     faqs: [
@@ -448,6 +461,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Veri analitiği stajı için hangi matematik bilgisi gerekli?', a: 'Staj düzeyinde orta seviye GCSE matematiği (istatistik, olasılık temelleri, cebir) yeterli başlangıç noktası. Excel veya Google Sheets\'te formüller ve pivot tablolar işlevsel düzeyde bilinmeli. Python veya SQL bilgisi avantaj sağlar ama çoğu öğrenci staj sırasında öğreniyor — işverenler potansiyeli deneyimden çok daha fazla değerlendiriyor.' },
       { q: 'Veri analitiği stajında ne yapılır?', a: 'Lise stajyer düzeyinde: veri temizleme ve düzenleme, dashboard ve rapor hazırlama, spesifik metrikler üzerinde analiz ekibine destek, ve bulgular sunumu. En değerli kısım teknik görevlerin kendisi değil — ekibin soruları nasıl formüle ettiğini ve hangi verilerin hangi kararları desteklediğini gözlemleme fırsatı.' },
       { q: 'Veri analitiğini ücretsiz olarak nereden öğrenebilirim?', a: 'Google Data Analytics Sertifikası (Coursera\'da ücretsiz denetlenebilir), Khan Academy istatistik modülü, ve YouTube\'daki Excel ve Google Sheets eğitimleri sağlam bir başlangıç sağlar. SQL için Mode Analytics ve SQLZoo platformlarının ücretsiz alıştırmaları var. 40-60 saatlik öz yönelimli öğrenmeyle minimum viable portfolio oluşturulabilir.' },
+      { q: 'Veri analitiğinde en çok hangi araçlar kullanılıyor?', a: 'Staj düzeyinde en yaygın araçlar: Excel / Google Sheets (pivot tablo, VLOOKUP, temel formüller), Python (özellikle pandas ve matplotlib kütüphaneleri), SQL (veritabanı sorgulama), ve Tableau veya Power BI (görselleştirme). Başlamak için önce Excel, ardından Python sıralaması en mantıklısı — ilki hızlı sonuç, ikincisi kalıcı kariyer altyapısı sağlar.' },
     ],
     cta: { heading: 'Sayısal yeteneğini nesnel biçimde ölç', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Veri analitiği alanındaki aptitude ve alan bilgisi profilini al.', label: 'Ücretsiz başvur — Veri Analitiği', href: '/tr/staj' },
   },
@@ -457,7 +471,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Staj İçin CV Nasıl Yazılır',
     description: 'İş deneyimi olmayan 16-18 yaş öğrencileri için staj başvurusuna yönelik CV yazma rehberi — ne dahil edilmeli, nasıl yapılandırılmalı, hangi hatalardan kaçınılmalı ve deneyim eksikliği kanıtlanabilir becerilerle nasıl telafi edilmeli.',
     date: '2026-09-09',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-18',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Lise'],
     faqs: [
@@ -465,6 +479,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Hiç iş deneyimim yoksa CV\'ye ne yazarım?', a: '"Deneyim" bölümünü "İlgili Deneyim" olarak yeniden adlandır ve şunları dahil et: ölçülebilir sonuçları olan okul projeleri, gayri resmi işler (komşu çocuklarına bakıcılık, ders verme, aile işletmesine yardım), başvurulan alanla ilgili kişisel projeler, ve gönüllülük çalışması. Ücretli olup olmadığına bakılmaksızın gerçek bir sorumluluk CV materyalidir.' },
       { q: 'CV\'de notlarımı belirtmeli miyim?', a: 'İyiyse evet (7 üzeri ortalama veya eşdeğeri), vasat ise hayır. Teknik stajlar (teknoloji, veri, finans) için ilgili dersleri ayrıca belirt. Matematik veya fen sonuçlarından özel bir atıf, birçok bağlamda genel not ortalamasından daha fazla şey söylüyor.' },
       { q: 'Öğrenci CV\'lerindeki en yaygın hata nedir?', a: 'Sonuçsuz sorumluluk tanımları. "Okul yıl sonu etkinliği organizasyonuna yardım ettim" zayıf. "200 katılımcılı bir etkinliğin lojistiğini koordine ettim, 500£ bütçe yönettim ve katılımcı başına maliyeti bir önceki yıla göre %15 düşürdüm" güçlü. Sayılar mütevazı olsa bile her zaman ölçtür.' },
+      { q: 'Staj başvurusunda kapak mektubu (motivasyon mektubu) gerekli mi?', a: 'Büyük şirketlerin yapılandırılmış programlarında genellikle evet. Küçük ve orta ölçekli şirketlere doğrudan başvurularda ise kapak mektubu yerine kişisel bir e-posta çok daha etkili. Kapak mektubu yazarken tek bir amaca odaklan: "Bu şirket için neden bu staj?" — genel bir "kendimi geliştirmek istiyorum" değil, o şirkete veya sektöre özgü bir neden.' },
     ],
     cta: { heading: 'Başvuruna doğrulanmış bir değerlendirme ekle', body: 'Eduentry hazırlık raporu, işe alım uzmanlarına seni tanımadan önce yeteneğini kanıtlar. Deneyim eksikliğini ölçülmüş yetenek verileriyle telafi et.', label: 'Ücretsiz değerlendirmeyi başlat', href: '/tr/staj' },
   },
@@ -474,7 +489,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Staj Mülakatına Nasıl Hazırlanılır',
     description: 'Bir staj mülakatını hazırlamak ve başarıyla geçmek için her şey — en sık sorulan sorular, önceki iş deneyimi olmadan nasıl cevap verilir, mülakat gününde hangi hatalar plası kaybettirir ve nasıl farklılaşılır.',
     date: '2026-09-09',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-18',
     readTime: '9 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi'],
     faqs: [
@@ -482,6 +497,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'İş deneyimim yoksa davranışsal sorulara nasıl cevap veririm?', a: 'Okul, okul dışı etkinlikler, kişisel projeler veya gönüllülük örneklerini kullan. STAR yapısı (Durum, Görev, Eylem, Sonuç) herhangi bir bağlam için işe yarıyor — yalnızca iş deneyimi için değil. "Biyoloji grup projem sırasında, başlangıç planı başarısız olduğunda..." eylem ve sonuç spesifikse tamamen geçerli bir örnek.' },
       { q: 'Mülakata hazırlanırken şirket hakkında ne araştırmalıyım?', a: 'Minimum: şirketin tam olarak ne yaptığı, hangi pazarda rekabet ettiği, başlıca müşterileri veya ürünleri, ve varsa son dönem haberleri. Staj düzeyinde derin bir analiz beklenmiyor, ancak şirketin değer önerisini bilmek ve bunu kendi ilginle ilişkilendirmek, çoğu adayın sergilemediği bir ciddiyeti gösteriyor.' },
       { q: 'Staj mülakatlarında en sık yapılan hata nedir?', a: 'Spesifik örnek içermeyen belirsiz yanıtlar. "Çok çalışkanım" veya "Bu sektöre tutkuyla bağlıyım" hiçbir şey anlatmıyor. Niteliklerle ilgili her iddia hemen somut bir örnek içermeli — ne kadar mütevazı olursa olsun. Mülakatçıların hatırladığı adaylar genel iddialar öne sürenler değil, spesifik bir durumu tarif edenler.' },
+      { q: 'Online (video) staj mülakatında dikkat edilmesi gerekenler neler?', a: 'Dört pratik kural: (1) Arka planın düzenli ve aydınlık olsun — ev değil profesyonel bir çalışma ortamı izlenimi versin; (2) Kamerana bak, ekranındaki görüntüye değil — bu "göz teması" sağlar; (3) Ses kalitesi video kalitesinden önemli — sessiz bir oda ve varsa harici mikrofon kullan; (4) Teknik sorun ihtimaline karşı platformu önceden test et ve mülakatçının iletişim bilgisini hazırda bulundur.' },
     ],
     cta: { heading: 'Mülakata gerçek aptitude verileriyle gir', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Güçlü ve gelişim alanlarını kişiselleştirilmiş raporla öğren — mülakatından önce.', label: 'Ücretsiz değerlendirmeyi başlat', href: '/tr/staj' },
   },
@@ -491,7 +507,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'PISA 2025 Nedir? Sonuçlar ve Türkiye Analizi',
     description: 'PISA 2025, OECD ülkelerinde matematik, okuma ve fen bilimlerinde şimdiye kadar kaydedilen en düşük puanları ortaya koyuyor. Sonuçların aileler için ne anlama geldiğini ve çocuğunuzu değerlendirmenin neden hiç bu kadar önemli olmadığını açıklıyoruz.',
     date: '2026-09-10',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-18',
     readTime: '12 dakika okuma',
     tags: ['PISA', 'Küresel Eğitim', 'Akademik Değerlendirme', 'Matematik', 'Okuma'],
     faqs: [
@@ -499,12 +515,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Matematik ve okuma puanları neden bu kadar düştü?', a: 'Araştırmacılar birden fazla faktöre dikkat çekiyor: pandemi kaynaklı öğrenme kayıpları, artan dijital dikkat dağınıklığı (öğrencilerin %28\'i sınıf arkadaşlarının fen derslerinde dijital cihazlarla dikkat dağıttığını söylüyor) ve "hızlı okuma"nın yükselişi — içeriği hızla tarayıp gerçek anlayış olmadan ilerlemek. Bu oran 2018-2025 arasında neredeyse iki katına çıktı.' },
       { q: 'Yapay zeka kullanımı çocuğumun öğrenmesine zarar verir mi?', a: 'PISA 2025, metin özetleme, taslak oluşturma veya araştırma gibi belirli ödev görevleri için yapay zeka kullanan öğrencilerin fen bilimlerinde, kullanmayan akranlarından yaklaşık 20 puan daha düşük puan aldığını ortaya koydu — bu yaklaşık bir yıllık okul eğitimine eşdeğer. Yapay zeka okuryazarlığı eğitimiyle birleştirildiğinde genel öğrenme amaçlı yapay zeka kullanımı olumsuz bir etki göstermedi.' },
       { q: 'Çocuğumun uluslararası düzeyde nerede durduğunu nasıl öğrenebilirim?', a: 'Eduentry, PISA ile aynı uluslararası ölçeğe hizalanmış ücretsiz uyarlanabilir bir değerlendirme sunar. 6-17 yaş arası çocukları matematik, İngilizce, sözel ve sözel olmayan akıl yürütme alanlarında test eder ve ebeveynlere çocuklarının küresel düzeydeki akranlarıyla karşılaştırmasını gösteren bir yüzdelik dilim sıralaması sağlar.' },
+      { q: 'PISA 2025\'e göre en başarılı eğitim sistemleri hangileri ve Türkiye bu ülkelerden neler öğrenebilir?', a: 'PISA 2025\'te Singapur (575), Japonya (536) ve Güney Kore (524) matematik sıralamasında zirvede yer almaktadır. Bu ülkelerin ortak noktaları: yoğun bireysel çalışma kültürü, güçlü problem çözme müfredatı ve ders dışı akademik destekten yüksek yararlanma oranı. Türkiye açısından en uygulanabilir ders: öğrencilerin gerçek yaşam bağlamında matematiksel akıl yürütme pratiklerini artırmak ve okuma anlama için yapılandırılmış günlük alışkanlıklar oluşturmak.' },
     ],
     cta: {
       heading: 'Çocuğunuzun nerede durduğunu öğrenin — ücretsiz',
       body: 'Eduentry\'nin uyarlanabilir değerlendirmesi, 6-17 yaş arası çocukları PISA ile aynı uluslararası ölçekte matematik, İngilizce, sözel ve sözel olmayan akıl yürütme alanlarında sınar. 20 dakikada küresel yüzdelik dilim sıralaması alın.',
       label: 'Ücretsiz Değerlendirmeyi Başlat',
-      href: 'https://eduentry.com/tr',
+      href: '/tr',
     },
   },
   {
@@ -596,7 +613,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Staj başvuruna doğrulanmış bir değerlendirme ekle',
       body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi, yetenek ve alan bilginizi nesnel biçimde ölçer — deneyim eksikliğini somut verilerle telafi etmenizi sağlar.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/internship',
+      href: '/tr/staj',
     },
   },
   {

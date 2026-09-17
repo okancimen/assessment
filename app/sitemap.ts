@@ -162,7 +162,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: '2026-09-15',
       changeFrequency: 'monthly' as const,
       priority: 0.9,
-      alternates: { languages: { tr: `${BASE}/tr/staj`, 'en-GB': `${BASE}/internship`, 'x-default': `${BASE}/internship` } },
+      alternates: { languages: { tr: `${BASE}/tr/staj`, 'en-GB': `${BASE}/internship`, fr: `${BASE}/fr/stage`, 'x-default': `${BASE}/internship` } },
     },
     ...BLOG_POSTS_TR.map((post) => ({
       url: `${BASE}/tr/blog/${post.slug}`,
@@ -200,6 +200,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { fr: `${BASE}/fr/methodologie`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, ar: `${BASE}/ar/manhajiyya`, 'x-default': `${BASE}/methodology` } },
+    },
+    {
+      url: `${BASE}/fr/stage`,
+      lastModified: '2026-09-18',
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+      alternates: { languages: { fr: `${BASE}/fr/stage`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, 'x-default': `${BASE}/internship` } },
     },
     ...BLOG_POSTS_FR.map((post) => ({
       url: `${BASE}/fr/blog/${post.slug}`,
