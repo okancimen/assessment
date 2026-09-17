@@ -10,7 +10,7 @@ export default function PublicNavAR() {
         <Logo href="/ar" size="sm" />
 
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-[14px] font-medium text-[#1d1d1f]">
-          <Link href="/ar"            className="hover:text-[#4F46E5] transition-colors">التدريب</Link>
+          <Link href="/ar#tadrib"     className="hover:text-[#4F46E5] transition-colors">التدريب</Link>
           <Link href="/ar/hawlana"    className="hover:text-[#4F46E5] transition-colors">من نحن</Link>
           <Link href="/ar/manhajiyya" className="hover:text-[#4F46E5] transition-colors">المنهجية</Link>
           <Link href="/ar/blog"       className="hover:text-[#4F46E5] transition-colors flex items-center gap-1.5">
