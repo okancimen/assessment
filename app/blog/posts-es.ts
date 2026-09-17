@@ -280,7 +280,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       { q: '¿Cómo puedo demostrar experiencia en marketing digital sin haberla tenido nunca?', a: 'Tres vías: (1) Crea y gestiona una cuenta de redes sociales con un enfoque temático consistente durante 2-3 meses y documenta el crecimiento. (2) Ayuda a un negocio local o familiar con su presencia digital. (3) Completa un proyecto de marketing ficticio con un brief real y presenta los resultados. Cualquiera de estos proporciona material concreto para la entrevista.' },
       { q: '¿Qué tipo de empresas ofrecen prácticas de marketing digital a estudiantes de instituto?', a: 'Las agencias de marketing digital pequeñas y medianas son la fuente más accesible — muchas aceptan estudiantes con iniciativa aunque no tengan programas formales. Las startups tecnológicas también contratan estudiantes para tareas de redes sociales y contenido. Las grandes marcas tienen programas estivales más competitivos. El contacto directo y bien personalizado a una agencia pequeña tiene una tasa de respuesta mucho más alta que solicitar a los programas formales de empresas grandes.' },
     ],
-    cta: { heading: '¿Listo para demostrar tu aptitud en marketing digital?', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Obtén tu informe de preparación en el área de marketing digital.', label: 'Solicitar gratis — Marketing Digital', href: 'https://eduentry.ai/es' },
+    cta: { heading: '¿Listo para demostrar tu aptitud en marketing digital?', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Obtén tu informe de preparación en el área de marketing digital.', label: 'Solicitar gratis — Marketing Digital', href: 'https://eduentry.ai/' },
   },
   {
     slug: 'practicas-analitica-datos-estudiantes',
@@ -297,7 +297,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       { q: '¿Dónde puedo aprender analítica de datos de forma gratuita antes de solicitar prácticas?', a: 'Google Data Analytics Certificate (gratuito en modalidad audit en Coursera), Khan Academy para estadística básica, y los tutoriales de Google Sheets o Excel de YouTube. Para SQL, Mode Analytics y SQLZoo tienen ejercicios gratuitos. Con 40-60 horas de aprendizaje autodirigido puedes construir un portfolio mínimo viable.' },
       { q: '¿Qué empresas ofrecen prácticas en analítica de datos a estudiantes de instituto?', a: 'Empresas con grandes volúmenes de datos y equipos de analítica: retail (El Corte Inglés, Inditex, Amazon), banca (BBVA, Santander tienen programas estivales), startups de tecnología y SaaS, y consultoras de datos pequeñas y medianas. El contacto directo es efectivo especialmente con empresas de 20-100 personas que tienen datos pero carecen de recursos humanos formales en analítica.' },
     ],
-    cta: { heading: '¿Cuánta aptitud cuantitativa tienes?', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Descubre tu perfil de aptitud en el área de analítica de datos.', label: 'Solicitar gratis — Analítica de Datos', href: 'https://eduentry.ai/es' },
+    cta: { heading: '¿Cuánta aptitud cuantitativa tienes?', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Descubre tu perfil de aptitud en el área de analítica de datos.', label: 'Solicitar gratis — Analítica de Datos', href: 'https://eduentry.ai/' },
   },
   {
     slug: 'cv-para-practicas-con-16-anos',
@@ -314,7 +314,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       { q: '¿Debo incluir mis notas en el CV de prácticas?', a: 'Sí si son buenas (media superior a 7 o equivalente), no si son mediocres. Para prácticas técnicas (tecnología, datos, finanzas), incluye específicamente las asignaturas relevantes. Una mención a resultados en matemáticas o ciencias dice más que una nota global en muchos contextos.' },
       { q: '¿Cuál es el error más común en CVs de estudiantes de 16 años?', a: 'Describir responsabilidades sin resultados. "Ayudé a organizar el evento de fin de curso" es débil. "Coordiné la logística de un evento para 200 asistentes, gestioné un presupuesto de 500€ y reduje el coste por asistente en un 15% respecto al año anterior" es fuerte. Cuantifica siempre que sea posible, aunque los números sean modestos.' },
     ],
-    cta: { heading: 'Añade una evaluación verificada a tu solicitud', body: 'Un informe de preparación de Eduentry demuestra aptitud a los reclutadores antes de conocerte. Sustituye la falta de experiencia previa con datos de talento medido.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/es' },
+    cta: { heading: 'Añade una evaluación verificada a tu solicitud', body: 'Un informe de preparación de Eduentry demuestra aptitud a los reclutadores antes de conocerte. Sustituye la falta de experiencia previa con datos de talento medido.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/' },
   },
   {
     slug: 'como-superar-entrevista-practicas',
@@ -331,7 +331,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       { q: '¿Qué debo investigar sobre la empresa antes de la entrevista de prácticas?', a: 'Lo mínimo: qué hace exactamente la empresa, en qué mercado compite, quiénes son sus principales clientes o productos, y cualquier noticia reciente relevante. Para prácticas de estudiante no se espera un análisis profundo, pero conocer la propuesta de valor de la empresa y poder conectarla con tu interés demuestra una seriedad que la mayoría de candidatos no muestra.' },
       { q: '¿Cuál es el error más frecuente en entrevistas de prácticas para estudiantes?', a: 'Respuestas vagas sin ejemplos específicos. "Soy muy trabajador/a" o "Me apasiona este sector" sin evidencia no aporta nada al entrevistador. Cada afirmación sobre tus cualidades debe ir seguida inmediatamente de un ejemplo concreto — por modesto que sea. Los candidatos que recuerdan los entrevistadores son los que describieron una situación específica, no los que hicieron afirmaciones generales.' },
     ],
-    cta: { heading: 'Prepara tu entrevista con datos reales sobre tu aptitud', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Obtén un informe de preparación con tus puntos fuertes por área antes de tu entrevista.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/es' },
+    cta: { heading: 'Prepara tu entrevista con datos reales sobre tu aptitud', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Obtén un informe de preparación con tus puntos fuertes por área antes de tu entrevista.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/' },
   },
   {
     slug: 'practicas-verano-reino-unido-estudiantes',
@@ -348,7 +348,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       { q: '¿Se pagan las prácticas de verano para estudiantes de instituto en el Reino Unido?', a: 'Varía. Los programas formales de grandes empleadores (Goldman Sachs, KPMG, Deloitte) generalmente pagan a los estudiantes, aunque las tarifas son variables. Las colocaciones en pymes frecuentemente son no remuneradas pero ofrecen más responsabilidad práctica. Legalmente, si realizas trabajo genuino en el Reino Unido, el empleador debe pagarte el salario mínimo o justificar por qué la colocación es observacional.' },
       { q: '¿Qué hago si no encuentro un programa formal de prácticas de verano?', a: 'El contacto directo con pymes locales es significativamente más efectivo de lo que la mayoría de estudiantes cree. Una carta de presentación personalizada, bien escrita y dirigida al responsable correcto de una empresa de 10-50 personas tiene una tasa de respuesta mucho más alta que una solicitud en un portal competitivo. Identifica 20-30 empresas locales en tu área de interés y contacta directamente.' },
     ],
-    cta: { heading: 'Refuerza tu solicitud de prácticas de verano', body: 'Un informe de preparación de Eduentry demuestra aptitud verificada a los empleadores. Obtén el tuyo antes de enviar solicitudes este verano.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/es' },
+    cta: { heading: 'Refuerza tu solicitud de prácticas de verano', body: 'Un informe de preparación de Eduentry demuestra aptitud verificada a los empleadores. Obtén el tuyo antes de enviar solicitudes este verano.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/' },
   },
   {
     slug: 'inteligencia-artificial-futuro-trabajo-jovenes',
@@ -365,7 +365,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       { q: '¿Debería un estudiante de instituto aprender a usar herramientas de IA?', a: 'Sí, pero con criterio. No se trata de aprender a usar ChatGPT para hacer deberes — se trata de entender cuándo la IA añade valor, cuándo no, y cómo integrar herramientas de IA en flujos de trabajo reales. Los estudiantes que entran al mercado laboral con criterio sobre el uso de IA — no solo capacidad de usarla — tienen una ventaja real sobre quienes la usan sin reflexión o no la usan en absoluto.' },
       { q: '¿La IA hace más o menos valiosa la experiencia de prácticas?', a: 'Más valiosa, no menos. Las habilidades que la IA no puede replicar — juicio contextual, gestión de relaciones profesionales, adaptabilidad ante incertidumbre — son precisamente las que se desarrollan en entornos de trabajo reales. La experiencia profesional temprana hace a un joven más valioso en un mercado laboral donde la IA está asumiendo las partes más mecánicas del trabajo.' },
     ],
-    cta: { heading: 'Descubre tus puntos fuertes antes de que el mercado cambie', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Perfil de aptitud y conocimiento de dominio en las áreas que más importarán en el mercado laboral de los próximos años.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/es' },
+    cta: { heading: 'Descubre tus puntos fuertes antes de que el mercado cambie', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Perfil de aptitud y conocimiento de dominio en las áreas que más importarán en el mercado laboral de los próximos años.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/' },
   },
   {
     slug: 'emprender-con-16-anos',
@@ -382,7 +382,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       { q: '¿Cómo documenta un estudiante su experiencia emprendedora para las solicitudes universitarias?', a: 'Lo clave no es el éxito económico del proyecto — es la calidad de la reflexión sobre lo aprendido. Un negocio que facturó 500£ con observaciones específicas sobre adquisición de clientes, gestión de tiempo y fracasos concretos es mucho más valioso en una solicitud universitaria que un negocio "exitoso" descrito en términos vagos. Lleva un diario de aprendizaje desde el primer día.' },
       { q: '¿Es mejor hacer prácticas o emprender a los 16 años?', a: 'No son mutuamente excluyentes y ambos tienen valor diferente. Las prácticas ofrecen observación de cómo funcionan las organizaciones desde dentro — invaluable para entender contexto profesional real. El emprendimiento desarrolla responsabilidad directa sobre resultados y tolerancia a la incertidumbre. Para solicitudes universitarias a programas de empresa, economía o derecho, la combinación de ambos es más poderosa que cualquiera de ellos por separado.' },
     ],
-    cta: { heading: '¿Cuál es tu perfil emprendedor?', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Descubre tus puntos fuertes en aptitud, conocimiento de dominio empresarial y habilidades en el entorno laboral.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/es' },
+    cta: { heading: '¿Cuál es tu perfil emprendedor?', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Descubre tus puntos fuertes en aptitud, conocimiento de dominio empresarial y habilidades en el entorno laboral.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/' },
   },
   {
     slug: 'practicas-finanzas-banca-instituto',
@@ -399,7 +399,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       { q: '¿Qué se hace en prácticas en finanzas siendo estudiante de instituto?', a: 'A nivel de prácticas de estudiante (1-2 semanas): rotación por departamentos (trading, banca de inversión, gestión de riesgos, operaciones), asistencia a presentaciones internas, un pequeño proyecto analítico con presentación de resultados, y reuniones one-to-one con profesionales del sector. El objetivo principal es observación e inmersión — no se gestiona dinero real ni se toman decisiones de inversión.' },
       { q: '¿Cómo preparo una solicitud para prácticas en finanzas sin experiencia previa?', a: 'Cuatro elementos diferencian solicitudes: (1) Conciencia comercial demostrable — lee el FT o BBC Business regularmente y entiende los términos básicos; (2) Una conexión específica entre el programa y tus intereses — "quiero entender cómo el banco gestiona el riesgo de tipo de cambio" es mejor que "me interesan las finanzas"; (3) Cualquier evidencia de aptitud cuantitativa; (4) Un informe de evaluación verificado que muestra tu perfil de aptitud de forma objetiva.' },
     ],
-    cta: { heading: 'Demuestra tu aptitud financiera antes de la entrevista', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Incluye tu informe de preparación en cada solicitud de prácticas en finanzas.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/es' },
+    cta: { heading: 'Demuestra tu aptitud financiera antes de la entrevista', body: 'Evaluación adaptativa gratuita para estudiantes mayores de 14 años. Incluye tu informe de preparación en cada solicitud de prácticas en finanzas.', label: 'Empezar la evaluación gratuita', href: 'https://eduentry.ai/' },
   },
   {
     slug: 'pisa-2025-crisis-educativa-mundial-que-deben-saber-los-padres',

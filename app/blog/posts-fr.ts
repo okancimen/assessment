@@ -34,7 +34,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -70,7 +70,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -106,7 +106,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -142,7 +142,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -178,7 +178,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -213,7 +213,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -248,7 +248,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -283,7 +283,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -318,7 +318,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -353,7 +353,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -388,7 +388,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -423,7 +423,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -458,7 +458,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -493,7 +493,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {
@@ -528,7 +528,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez votre niveau de préparation',
       body: 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.',
       label: 'Commencer l\'évaluation gratuite',
-      href: 'https://eduentry.ai/fr',
+      href: 'https://eduentry.ai/',
     },
   },
   {

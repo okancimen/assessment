@@ -200,7 +200,7 @@ export default function FrenchHomePage() {
                 <span>Gratuit</span>
               </div>
               <a
-                href="https://eduentry.ai/fr"
+                href="https://eduentry.ai/"
                 className="bg-[#1d1d1f] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#2d2d2f] transition-colors text-center"
               >
                 Découvrir le programme
@@ -468,7 +468,7 @@ export default function FrenchHomePage() {
           </div>
 
           <div className="text-center mt-10">
-            <a href="https://eduentry.ai/fr" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+            <a href="https://eduentry.ai/" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Demander l&apos;évaluation de stage →
             </a>
           </div>
@@ -527,7 +527,7 @@ export default function FrenchHomePage() {
                 ))}
               </ul>
               <div className="mt-7 pt-6 border-t border-[#c7d2fe]">
-                <a href="https://eduentry.ai/fr" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
+                <a href="https://eduentry.ai/" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
                   Demander l&apos;évaluation →
                 </a>
               </div>
@@ -609,7 +609,7 @@ export default function FrenchHomePage() {
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Évaluation de Stage</p>
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Découvrez le niveau de préparation au stage de votre lycéen.</h2>
             <p className="text-[#636366] text-sm mb-8">Rapport personnalisé et insights IA en 35 minutes.</p>
-            <a href="https://eduentry.ai/fr" className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors">
+            <a href="https://eduentry.ai/" className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors">
               Demander l&apos;évaluation →
             </a>
           </div>

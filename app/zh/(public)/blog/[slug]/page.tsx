@@ -169,7 +169,7 @@ export default async function ZHBlogPostPage({ params }: { params: Promise<{ slu
         <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-4">来自Eduentry</p>
         <div className="space-y-4">
           {[
-            { href: 'https://eduentry.ai/zh', title: '实习准备评估', desc: '面向14岁以上高中生的免费34题自适应评估。个性化报告和AI职业洞察。' },
+            { href: 'https://eduentry.ai/', title: '实习准备评估', desc: '面向14岁以上高中生的免费34题自适应评估。个性化报告和AI职业洞察。' },
             { href: '/zh/fangfalun', title: '我们的评估方法论', desc: '使用与PISA、GCSE和CAT4相同100分量表的自适应IRT评估。' },
             { href: '/zh', title: '学术评估', desc: '从数学到英语，从语言推理到非语言推理——面向6–17岁儿童的免费自适应评估。' },
           ].map((link) => (

@@ -100,7 +100,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '证明你已准备好实习',
       body: '面向14岁以上高中生的免费34题自适应评估。获取个性化的准备情况报告，为每份申请提供具体的能力数据。',
       label: '开始免费实习评估',
-      href: 'https://eduentry.ai/zh',
+      href: 'https://eduentry.ai/',
     },
   },
 ]

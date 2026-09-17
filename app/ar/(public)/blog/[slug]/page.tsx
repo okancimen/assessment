@@ -161,7 +161,7 @@ export default async function ARBlogPostPage({ params }: { params: Promise<{ slu
         <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-4">من Eduentry</p>
         <div className="space-y-4">
           {[
-            { href: 'https://eduentry.ai/ar', title: 'تقييم الاستعداد للتدريب', desc: 'اختبار تكيفي مجاني من 34 سؤالاً لطلاب الثانوية فوق 14 عاماً. تقرير شخصي ورؤى مهنية بالذكاء الاصطناعي.' },
+            { href: 'https://eduentry.ai/', title: 'تقييم الاستعداد للتدريب', desc: 'اختبار تكيفي مجاني من 34 سؤالاً لطلاب الثانوية فوق 14 عاماً. تقرير شخصي ورؤى مهنية بالذكاء الاصطناعي.' },
             { href: '/ar/manhajiyya', title: 'منهجية التقييم لدينا', desc: 'تقييم IRT تكيفي على نفس مقياس 100 نقطة المستخدم في PISA وGCSE.' },
             { href: '/ar', title: 'التقييم الأكاديمي', desc: 'من الرياضيات إلى الإنجليزية، من الاستدلال اللفظي إلى غير اللفظي — اختبار تكيفي مجاني للأعمار 6-17.' },
           ].map((link) => (
@@ -207,7 +207,7 @@ export default async function ARBlogPostPage({ params }: { params: Promise<{ slu
         <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'اكتشف مستوى استعدادك'}</h2>
         <p className="text-indigo-200 mb-8">{post.cta?.body ?? 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.'}</p>
         <a
-          href={post.cta?.href ?? 'https://eduentry.ai/ar'}
+          href={post.cta?.href ?? 'https://eduentry.ai/'}
           className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg"
         >
           {post.cta?.label ?? 'ابدأ التقييم المجاني'}

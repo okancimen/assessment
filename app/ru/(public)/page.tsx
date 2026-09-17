@@ -201,7 +201,7 @@ export default function RussianHomePage() {
                 <span>Бесплатно</span>
               </div>
               <a
-                href="https://eduentry.ai/ru"
+                href="https://eduentry.ai/"
                 className="bg-[#1d1d1f] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#2d2d2f] transition-colors text-center"
               >
                 Узнать о программе
@@ -469,7 +469,7 @@ export default function RussianHomePage() {
           </div>
 
           <div className="text-center mt-10">
-            <a href="https://eduentry.ai/ru" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+            <a href="https://eduentry.ai/" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Подать заявку на оценку стажировки →
             </a>
           </div>
@@ -528,7 +528,7 @@ export default function RussianHomePage() {
                 ))}
               </ul>
               <div className="mt-7 pt-6 border-t border-[#c7d2fe]">
-                <a href="https://eduentry.ai/ru" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
+                <a href="https://eduentry.ai/" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
                   Подать заявку на оценку →
                 </a>
               </div>
@@ -610,7 +610,7 @@ export default function RussianHomePage() {
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Оценка стажировки</p>
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Узнайте готовность вашего ученика к стажировке.</h2>
             <p className="text-[#636366] text-sm mb-8">Персонализированный отчёт и инсайты ИИ за 35 минут.</p>
-            <a href="https://eduentry.ai/ru" className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors">
+            <a href="https://eduentry.ai/" className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors">
               Подать заявку на оценку →
             </a>
           </div>

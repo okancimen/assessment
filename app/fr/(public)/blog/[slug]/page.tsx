@@ -161,7 +161,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
         <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-4">De Eduentry</p>
         <div className="space-y-4">
           {[
-            { href: 'https://eduentry.ai/fr', title: 'Évaluation de Préparation au Stage', desc: 'Test adaptatif gratuit de 34 questions pour lycéens de 14+. Rapport personnalisé et insights IA sur votre carrière.' },
+            { href: 'https://eduentry.ai/', title: 'Évaluation de Préparation au Stage', desc: 'Test adaptatif gratuit de 34 questions pour lycéens de 14+. Rapport personnalisé et insights IA sur votre carrière.' },
             { href: '/fr/methodologie', title: 'Notre Méthodologie d\'Évaluation', desc: 'Score IRT adaptatif sur la même échelle de 100 points que PISA, GCSE et CAT4.' },
             { href: '/fr', title: 'Évaluation Académique', desc: 'Des maths à l\'anglais, du raisonnement verbal au non-verbal — test adaptatif gratuit pour 6–17 ans.' },
           ].map((link) => (
@@ -207,7 +207,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
         <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'Découvrez votre niveau de préparation'}</h2>
         <p className="text-indigo-200 mb-8">{post.cta?.body ?? 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.'}</p>
         <a
-          href={post.cta?.href ?? 'https://eduentry.ai/fr'}
+          href={post.cta?.href ?? 'https://eduentry.ai/'}
           className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg"
         >
           {post.cta?.label ?? 'Commencer l\'évaluation gratuite'}
