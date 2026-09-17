@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getChinesePostBySlug(slug)
   if (!post) return {}
   const url = `${BASE_URL}/zh/blog/${slug}`
-  const enSlug = post.contentSlug ?? slug
+  const enSlug = post.contentSlug
   return {
     title: post.shortTitle,
     description: post.description,
@@ -33,12 +33,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       canonical: url,
       languages: {
         zh: url,
-        'en-GB': `${BASE_URL}/blog/${enSlug}`,
-        ...(trByContentSlug.has(enSlug) ? { tr: `${BASE_URL}/tr/blog/${trByContentSlug.get(enSlug)}` } : {}),
-        ...(esByContentSlug.has(enSlug) ? { es: `${BASE_URL}/es/blog/${esByContentSlug.get(enSlug)}` } : {}),
-        ...(frByContentSlug.has(enSlug) ? { fr: `${BASE_URL}/fr/blog/${frByContentSlug.get(enSlug)}` } : {}),
-        ...(ruByContentSlug.has(enSlug) ? { ru: `${BASE_URL}/ru/blog/${ruByContentSlug.get(enSlug)}` } : {}),
-        'x-default': `${BASE_URL}/blog/${enSlug}`,
+        ...(enSlug ? { 'en-GB': `${BASE_URL}/blog/${enSlug}` } : {}),
+        ...(enSlug && trByContentSlug.has(enSlug) ? { tr: `${BASE_URL}/tr/blog/${trByContentSlug.get(enSlug)}` } : {}),
+        ...(enSlug && esByContentSlug.has(enSlug) ? { es: `${BASE_URL}/es/blog/${esByContentSlug.get(enSlug)}` } : {}),
+        ...(enSlug && frByContentSlug.has(enSlug) ? { fr: `${BASE_URL}/fr/blog/${frByContentSlug.get(enSlug)}` } : {}),
+        ...(enSlug && ruByContentSlug.has(enSlug) ? { ru: `${BASE_URL}/ru/blog/${ruByContentSlug.get(enSlug)}` } : {}),
+        'x-default': enSlug ? `${BASE_URL}/blog/${enSlug}` : url,
       },
     },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },

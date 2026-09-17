@@ -24,8 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getTurkishPostBySlug(slug)
   if (!post) return {}
   const url = `${BASE_URL}/tr/blog/${slug}`
-  const enSlug = post.contentSlug ?? slug
-  const esSlug = esByContentSlug.get(enSlug)
+  const enSlug = post.contentSlug
   return {
     title: `${post.shortTitle} | Eduentry`,
     description: post.description,
@@ -34,12 +33,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       canonical: url,
       languages: {
         tr: url,
-        'en-GB': `${BASE_URL}/blog/${enSlug}`,
-        ...(esByContentSlug.has(enSlug) ? { es: `${BASE_URL}/es/blog/${esByContentSlug.get(enSlug)}` } : {}),
-        ...(frByContentSlug.has(enSlug) ? { fr: `${BASE_URL}/fr/blog/${frByContentSlug.get(enSlug)}` } : {}),
-        ...(arByContentSlug.has(enSlug) ? { ar: `${BASE_URL}/ar/blog/${arByContentSlug.get(enSlug)}` } : {}),
-        ...(ruByContentSlug.has(enSlug) ? { ru: `${BASE_URL}/ru/blog/${ruByContentSlug.get(enSlug)}` } : {}),
-        'x-default': `${BASE_URL}/blog/${enSlug}`,
+        ...(enSlug ? { 'en-GB': `${BASE_URL}/blog/${enSlug}` } : {}),
+        ...(enSlug && esByContentSlug.has(enSlug) ? { es: `${BASE_URL}/es/blog/${esByContentSlug.get(enSlug)}` } : {}),
+        ...(enSlug && frByContentSlug.has(enSlug) ? { fr: `${BASE_URL}/fr/blog/${frByContentSlug.get(enSlug)}` } : {}),
+        ...(enSlug && arByContentSlug.has(enSlug) ? { ar: `${BASE_URL}/ar/blog/${arByContentSlug.get(enSlug)}` } : {}),
+        ...(enSlug && ruByContentSlug.has(enSlug) ? { ru: `${BASE_URL}/ru/blog/${ruByContentSlug.get(enSlug)}` } : {}),
+        'x-default': enSlug ? `${BASE_URL}/blog/${enSlug}` : url,
       },
     },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
