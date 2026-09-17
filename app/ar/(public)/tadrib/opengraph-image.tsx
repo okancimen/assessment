@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og'
 
-export const alt = 'تقييم استعداد التدريب — Eduentry'
+export const alt = 'Internship Readiness Assessment — Eduentry'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -18,20 +18,19 @@ export default function OGImage() {
           justifyContent: 'center',
           fontFamily: 'system-ui, -apple-system, sans-serif',
           padding: '60px',
-          direction: 'rtl',
         }}
       >
-        <div style={{ color: '#a5b4fc', fontSize: 18, fontWeight: 600, marginBottom: 24, letterSpacing: 1 }}>
-          Eduentry · منصة تقييم التدريب المهني
+        <div style={{ color: '#a5b4fc', fontSize: 18, fontWeight: 600, marginBottom: 24, letterSpacing: 2, textTransform: 'uppercase' }}>
+          Eduentry · Internship Readiness Platform
         </div>
-        <div style={{ color: '#ffffff', fontSize: 52, fontWeight: 800, textAlign: 'center', lineHeight: 1.2, marginBottom: 28, maxWidth: 800 }}>
-          اكتشف استعدادك للتدريب المهني
+        <div style={{ color: '#ffffff', fontSize: 52, fontWeight: 800, textAlign: 'center', lineHeight: 1.15, marginBottom: 28, maxWidth: 800 }}>
+          Discover Your Internship Readiness
         </div>
         <div style={{ color: '#c7d2fe', fontSize: 22, textAlign: 'center', marginBottom: 48, maxWidth: 640, lineHeight: 1.5 }}>
-          34 سؤالاً مجانياً · 35 دقيقة · تقرير شخصي فوري
+          34 free questions · 35 minutes · Instant personalised report
         </div>
         <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center' }}>
-          {['💻 التقنية', '📈 الأعمال', '📊 تحليل البيانات', '📣 التسويق الرقمي'].map((track) => (
+          {['💻 Technology', '📈 Business', '📊 Data Analytics', '📣 Digital Marketing'].map((track) => (
             <div
               key={track}
               style={{
