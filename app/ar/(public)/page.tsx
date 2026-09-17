@@ -204,8 +204,8 @@ export default function ArabicHomePage() {
               >
                 اكتشف البرنامج
               </a>
-              <Link href="#tadrib" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
-                اعرف المزيد ↓
+              <Link href="/ar/tadrib" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
+                اعرف المزيد ←
               </Link>
             </div>
 
@@ -475,10 +475,13 @@ export default function ArabicHomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-10 flex items-center justify-center gap-4 flex-wrap">
             <a href="https://eduentry.ai/" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               ابدأ تقييم التدريب ←
             </a>
+            <Link href="/ar/tadrib" className="text-sm font-semibold text-[#4F46E5] hover:underline">
+              تفاصيل كاملة ←
+            </Link>
           </div>
         </div>
       </section>

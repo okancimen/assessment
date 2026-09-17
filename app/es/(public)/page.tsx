@@ -470,10 +470,13 @@ export default function SpanishHomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-10 flex items-center justify-center gap-4 flex-wrap">
             <a href="https://eduentry.ai/" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Solicitar evaluación de prácticas →
             </a>
+            <Link href="/es/practicas" className="text-sm font-semibold text-[#4F46E5] hover:underline">
+              Ver detalles completos →
+            </Link>
           </div>
         </div>
       </section>

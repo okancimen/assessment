@@ -55,7 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: '2026-09-18',
       changeFrequency: 'monthly',
       priority: 0.9,
-      alternates: { languages: { 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, 'x-default': `${BASE}/internship` } },
+      alternates: { languages: { 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
     { url: `${BASE}/demo`,            lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/sample-report`,   lastModified: '2026-09-11', changeFrequency: 'monthly', priority: 0.8 },
@@ -125,7 +125,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: '2026-09-18',
       changeFrequency: 'monthly' as const,
       priority: 0.9,
-      alternates: { languages: { es: `${BASE}/es/practicas`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, ar: `${BASE}/ar/tadrib`, 'x-default': `${BASE}/internship` } },
+      alternates: { languages: { es: `${BASE}/es/practicas`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
     ...BLOG_POSTS_ES.map((post) => ({
       url: `${BASE}/es/blog/${post.slug}`,
@@ -169,7 +169,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: '2026-09-18',
       changeFrequency: 'monthly' as const,
       priority: 0.9,
-      alternates: { languages: { tr: `${BASE}/tr/staj`, 'en-GB': `${BASE}/internship`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, 'x-default': `${BASE}/internship` } },
+      alternates: { languages: { tr: `${BASE}/tr/staj`, 'en-GB': `${BASE}/internship`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
     ...BLOG_POSTS_TR.map((post) => ({
       url: `${BASE}/tr/blog/${post.slug}`,
@@ -213,7 +213,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: '2026-09-18',
       changeFrequency: 'monthly' as const,
       priority: 0.9,
-      alternates: { languages: { fr: `${BASE}/fr/stage`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, 'x-default': `${BASE}/internship` } },
+      alternates: { languages: { fr: `${BASE}/fr/stage`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
     ...BLOG_POSTS_FR.map((post) => ({
       url: `${BASE}/fr/blog/${post.slug}`,
@@ -257,7 +257,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: '2026-09-18',
       changeFrequency: 'monthly' as const,
       priority: 0.9,
-      alternates: { languages: { ar: `${BASE}/ar/tadrib`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, 'x-default': `${BASE}/internship` } },
+      alternates: { languages: { ar: `${BASE}/ar/tadrib`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
     ...BLOG_POSTS_AR.map((post) => ({
       url: `${BASE}/ar/blog/${post.slug}`,
@@ -296,6 +296,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
       alternates: { languages: { ru: `${BASE}/ru/metodologiya`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, 'x-default': `${BASE}/methodology` } },
     },
+    {
+      url: `${BASE}/ru/stazhirovka`,
+      lastModified: '2026-09-18',
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+      alternates: { languages: { ru: `${BASE}/ru/stazhirovka`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
+    },
     ...BLOG_POSTS_RU.map((post) => ({
       url: `${BASE}/ru/blog/${post.slug}`,
       lastModified: post.dateModified ?? post.date,
@@ -332,6 +339,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { zh: `${BASE}/zh/fangfalun`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, 'x-default': `${BASE}/methodology` } },
+    },
+    {
+      url: `${BASE}/zh/shixi`,
+      lastModified: '2026-09-18',
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+      alternates: { languages: { zh: `${BASE}/zh/shixi`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, 'x-default': `${BASE}/internship` } },
     },
     ...BLOG_POSTS_ZH.map((post) => ({
       url: `${BASE}/zh/blog/${post.slug}`,

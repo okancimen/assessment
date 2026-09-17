@@ -1037,6 +1037,12 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
           <strong className="text-emerald-900">El argumento de la evaluación:</strong> Para puestos de prácticas donde todos los candidatos tienen el mismo nivel de experiencia —ninguno—, la señal que diferencia es la aptitud demostrable. Un informe de preparación de Eduentry proporciona exactamente eso: evidencia objetiva antes de la entrevista.
         </Callout>
       </section>
+
+      <section>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">¿Listo para dar el siguiente paso?</strong> Antes de enviar tu CV, conoce exactamente tu nivel de preparación. <a href="/es/practicas" className="underline font-semibold">La evaluación gratuita de Eduentry</a> — 34 preguntas en 35 minutos — mide tu aptitud, conocimiento sectorial y habilidades profesionales, y genera un informe personalizado que puedes adjuntar a tus solicitudes de prácticas.
+        </Callout>
+      </section>
     </>
   ),
 
@@ -1124,6 +1130,12 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         </p>
         <Callout color="emerald">
           <strong className="text-emerald-900">Tres preguntas para cada semana de prácticas:</strong> ¿Qué observé que no esperaba? ¿Qué pregunta hice que generó una conversación significativa? ¿Qué haría diferente si volviera a empezar esta semana? Responder estas tres preguntas cada viernes produce el material exacto que la declaración personal necesita.
+        </Callout>
+      </section>
+
+      <section>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">¿Sabes cuál es tu nivel de preparación real?</strong> <a href="/es/practicas" className="underline font-semibold">La evaluación gratuita de Eduentry</a> te da un informe objetivo en 35 minutos — aptitud general, conocimiento del sector y habilidades profesionales — que puedes usar directamente en tu solicitud universitaria o de prácticas.
         </Callout>
       </section>
     </>

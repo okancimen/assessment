@@ -350,6 +350,12 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
           <Bullet>بنِ علاقات مهنية حقيقية مع زملائك في التدريب والموظفين</Bullet>
         </ul>
       </section>
+
+      <section>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">اكتشف مجالك المثالي أولاً.</strong> قبل البحث عن فرص التدريب، <a href="/ar/tadrib" className="underline font-semibold">قيّم استعدادك عبر Eduentry</a> — تقييم مجاني من 34 سؤالاً يحدد هل مجالك التقنية، الأعمال، البيانات أم التسويق الرقمي. مع تقرير شخصي يمكنك إرفاقه مع طلبات التدريب.
+        </Callout>
+      </section>
     </>
   ),
 
@@ -395,6 +401,12 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
           <Bullet>Google Analytics و Google Ads (شهادات مجانية)</Bullet>
           <Bullet>مهارات تحليل البيانات الأساسية: Sheets و Excel</Bullet>
         </ul>
+      </section>
+
+      <section>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">هل أنت مستعد للتدريب؟</strong> قبل إرسال أي سيرة ذاتية، تعرف على مستوى استعدادك الفعلي. <a href="/ar/tadrib" className="underline font-semibold">تقييم Eduentry المجاني</a> — 34 سؤالاً في 35 دقيقة — يقيس قدراتك ومعرفتك المتخصصة ومهاراتك المهنية، ويمنحك تقريراً شخصياً يمكنك الإشارة إليه في طلبات التدريب.
+        </Callout>
       </section>
     </>
   ),
