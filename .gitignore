@@ -44,3 +44,4 @@ next-env.d.ts
 demo_60q.mjs
 debug_*.png
 demo_result*.png
+.claude/
