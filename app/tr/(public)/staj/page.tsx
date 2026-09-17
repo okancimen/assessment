@@ -223,10 +223,10 @@ export default function TRStajLandingPage() {
             Staj Değerlendirme Platformu
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
-            Staj hazırlığını<br />keşfet
+            İş hayatını keşfetmek için<br />20 yaşını bekleme
           </h1>
           <p className="text-lg text-[#6e6e73] max-w-xl mx-auto mb-8 leading-relaxed">
-            14 yaş ve üstü lise öğrencileri için tasarlanmış 34 soruluk uyarlanabilir değerlendirme. Yaklaşık 35 dakika sürer ve kişiselleştirilmiş bir hazırlık raporu oluşturur.
+            Profesyonel bir kariyer deneyimi yaşamak için liseyi bitirmene gerek yok. Hangi alana yatkın olduğunu bul, gerçek bir stajla iş dünyasına ilk adımını şimdi at.
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link
