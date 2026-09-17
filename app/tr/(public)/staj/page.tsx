@@ -128,6 +128,16 @@ const FAQ_SCHEMA = {
       name: 'Staj defteri nedir?',
       acceptedAnswer: { '@type': 'Answer', text: 'Staj defteri, üniversite zorunlu stajlarında öğrencilerin günlük olarak doldurmak zorunda olduğu resmi belgedir. Stajda yapılan çalışmalar gün gün kaydedilir ve staj sonunda iş yeri tarafından onaylanıp okula teslim edilmeden zorunlu staj tamamlanmış sayılmaz.' },
     },
+    {
+      '@type': 'Question',
+      name: 'Staj nasıl bulunur?',
+      acceptedAnswer: { '@type': 'Answer', text: 'LinkedIn, Indeed ve şirketlerin kendi kariyer sayfaları ile Springpod ve Ratemyplacement gibi staj odaklı siteler en iyi kaynaklardır. Hiç deneyimin olmasa bile şirketlere kısa ve özgün bir motivasyon e-postasıyla doğrudan ulaşabilirsin — bu yöntem özellikle küçük ve orta ölçekli şirketlerde sıklıkla işe yarar.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Yaz stajı başvuruları ne zaman açılır?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Büyük şirketlerin yaz programları için başvurular genellikle Ocak–Mart aylarında açılır ve hızla dolup taşar. Yerel ve küçük ölçekli şirketler ise yıl boyunca, özellikle Mart–Mayıs döneminde başvuru kabul eder.' },
+    },
   ],
 }
 
@@ -168,13 +178,13 @@ const STAJ_TURLERI = [
     icon: '🇹🇷',
     title: 'Ulusal Staj Programı (USP)',
     desc: 'Türkiye\'de devlet destekli ulusal staj programları kapsamında sunulan fırsatlar. Büyük ölçekli şirketler ve kamu kurumlarının aynı anda çok sayıda stajyer aldığı, yapılandırılmış programlardır.',
-    link: null,
+    link: '/tr/blog/stajyer-maasi-ne-kadar',
   },
   {
     icon: '🤝',
     title: 'Gönüllü Staj',
     desc: 'Üniversite tarafından zorunlu kılınmayan, öğrencinin kendi inisiyatifiyle yaptığı staj türü. Zorunlu stajdan farklı olarak notu etkilemez ancak kariyer gelişimi ve üniversite başvuruları için son derece değerlidir.',
-    link: null,
+    link: '/tr/blog/staja-hazirlik-guclu-yonlerini-bul',
   },
   {
     icon: '🎓',
@@ -183,6 +193,17 @@ const STAJ_TURLERI = [
     link: '/tr/blog/staj-defteri-nasil-doldurulur',
   },
 ]
+
+const STAJ_REHBERLERI_SLUGS = [
+  'staj-nasil-bulunur',
+  'yaz-staji-lise-ogrencisi',
+  'staja-hazirlik-guclu-yonlerini-bul',
+  'stajyer-maasi-ne-kadar',
+  'staj-defteri-nasil-doldurulur',
+  'staj-sigortasi-nedir',
+]
+const STAJ_REHBERLERI = BLOG_POSTS_TR.filter(p => STAJ_REHBERLERI_SLUGS.includes(p.slug))
+  .sort((a, b) => STAJ_REHBERLERI_SLUGS.indexOf(a.slug) - STAJ_REHBERLERI_SLUGS.indexOf(b.slug))
 
 const RELATED_POSTS = BLOG_POSTS_TR
   .filter(p => ['erken-yas-staj-cocuk-gelisimi-kariyer', 'staj-icin-cv-nasil-yazilir', 'staj-mulakati-hazirlik-rehberi'].includes(p.slug))
@@ -320,6 +341,25 @@ export default function TRStajLandingPage() {
           </div>
         </section>
 
+        {/* Staj Rehberleri */}
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-12">
+          <h2 className="text-xl font-bold text-[#1d1d1f] mb-2 tracking-tight">Staj rehberleri</h2>
+          <p className="text-sm text-[#6e6e73] mb-5">Başvurudan maaşa, staj defterinden sigortaya — bilmen gereken her şey.</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {STAJ_REHBERLERI.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/tr/blog/${post.slug}`}
+                className="group bg-white border border-[#d2d2d7] rounded-2xl p-5 hover:border-[#4F46E5]/40 hover:bg-[#eef2ff]/30 transition-colors flex flex-col"
+              >
+                <div className="text-xs font-semibold text-[#4F46E5] bg-[#eef2ff] rounded-full px-2.5 py-0.5 self-start mb-3">{post.tags[0]}</div>
+                <div className="font-semibold text-[#1d1d1f] text-sm leading-snug group-hover:text-[#4F46E5] transition-colors flex-1">{post.shortTitle}</div>
+                <div className="text-xs text-[#6e6e73] mt-2">{post.readTime}</div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* FAQ accordion */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-12">
           <h2 className="text-xl font-bold text-[#1d1d1f] mb-5 tracking-tight">Sık sorulan sorular</h2>
@@ -335,6 +375,8 @@ export default function TRStajLandingPage() {
               { q: 'Staj sigortası zorunlu mu?', a: 'Üniversite zorunlu stajlarında staj sigortası okul tarafından sağlanır ve iş kazası ile meslek hastalığına karşı öğrenciyi güvence altına alır. Lise gönüllü stajlarında sigorta yükümlülüğü şirkete göre değişir. Herhangi bir staj başlamadan önce sigortanın kimin tarafından yapıldığını netleştirmek önemlidir.' },
               { q: 'Staj seferberliği nedir?', a: 'Staj seferberliği, devletin ve özel sektörün iş birliğiyle lise ve üniversite öğrencilerine daha fazla staj imkânı sunmayı hedeflediği kampanya ve programların genel adıdır. Bu kapsamda büyük şirketler aynı anda çok sayıda stajyer alarak yapılandırılmış programlar düzenler. Ulusal Staj Programı (USP) bu seferberliğin en bilinen örneğidir.' },
               { q: 'Staj defteri nedir, zorunlu mu?', a: 'Staj defteri, üniversite zorunlu stajlarında öğrencilerin günlük olarak doldurmak zorunda olduğu resmi belgedir. Stajda yapılan çalışmalar, öğrenilenler ve çalışılan kişiler gün gün kaydedilir. Staj sonunda iş yeri tarafından onaylanıp okula teslim edilmeden zorunlu staj tamamlanmış sayılmaz. Lise gönüllü stajlarında staj defteri zorunlu olmasa da deneyimi belgelemek için tutulması önerilir.' },
+              { q: 'Staj nasıl bulunur, nereden başvuru yapılır?', a: 'LinkedIn, Indeed ve Glassdoor gibi iş arama platformları ile Springpod ve Ratemyplacement gibi staj odaklı siteler başlangıç için en iyi kaynaklardır. Bunların yanında şirketlerin kendi kariyer sayfaları ve okulun kariyer danışmanı da değerli birer kaynak. Hiç deneyimin olmasa bile kısa ve özgün bir motivasyon e-postasıyla şirketlere doğrudan ulaşabilirsin — özellikle küçük ve orta ölçekli şirketlerde bu yöntem sıklıkla işe yarar.' },
+              { q: 'Yaz stajı başvuruları ne zaman açılır?', a: 'Büyük şirketlerin yaz programları için başvurular genellikle Ocak–Mart aylarında açılır ve hızla dolup taşar. Yerel ve küçük ölçekli şirketler ise yıl boyunca, özellikle Mart–Mayıs döneminde başvuru kabul eder. İdeal yaklaşım: hedeflediğin şirketin büyüklüğüne göre 3–6 ay öncesinden başvuru takibine başlamak.' },
             ].map(({ q, a }) => (
               <details key={q} className="group">
                 <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer list-none">

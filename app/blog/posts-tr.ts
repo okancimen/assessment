@@ -513,9 +513,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'İş Deneyimine Nasıl Hazırlanılır?',
     description: 'Lise öğrencilerinin iş deneyimine en iyi şekilde hazırlanması için ebeveynlere kapsamlı rehber — CV hazırlama, doğru sektörü seçme, özgüveni geliştirme ve kalıcı izlenim bırakma.',
     date: '2026-09-11',
-    dateModified: '2026-09-11',
+    dateModified: '2026-09-17',
     readTime: '11 dk okuma',
-    tags: ['Work Experience', 'Internship', 'High School', 'Career Development', 'UK Education'],
+    tags: ['İş Deneyimi', 'Staj', 'Lise', 'Kariyer Gelişimi', 'Staj Hazırlığı'],
     faqs: [
       { q: 'İş deneyimi için en uygun yaş kaçtır?', a: 'Çoğu lise öğrencisi iş deneyimine 14-16 yaşları arasında başlar. Birleşik Krallık\'ta Year 10 ve Year 11 öğrencileri genellikle okul koordineli iş deneyimi programlarına katılır. Ancak 14 yaşından itibaren gönüllü ve kişisel başvurularla bu süreci erkenden başlatmak mümkündür.' },
       { q: 'Çocuğum hangi sektörü seçmeli?', a: 'Sektör seçimi, çocuğunuzun güçlü yönlerine ve ilgi alanlarına göre şekillenmelidir. Teknoloji, iş dünyası, veri analitiği ve dijital pazarlama gibi alanlarda iş deneyimi, hem üniversite başvurularında hem de gelecek kariyer yolunda güçlü bir avantaj sağlar.' },
@@ -527,7 +527,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuz iş dünyasına hazır mı?',
       body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi ile çocuğunuzun güçlü yönlerini ve gelişim alanlarını 35 dakikada keşfedin.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: 'https://eduentry.com/internship',
+      href: '/tr/staj',
     },
   },
   {
@@ -536,9 +536,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'İş Hayatına Hazır mısın?',
     description: 'Çocuğunuz gerçekten iş hayatına hazır mı? Staj için doğru zamanı, gerekli becerileri ve ebeveyn olarak yapabileceklerinizi anlatan kapsamlı rehber.',
     date: '2026-09-11',
-    dateModified: '2026-09-11',
+    dateModified: '2026-09-17',
     readTime: '12 dk okuma',
-    tags: ['Internship', 'Career Readiness', 'High School', 'Work Experience', 'Student Skills'],
+    tags: ['Staj', 'Staj Hazırlığı', 'Lise', 'İş Deneyimi', 'Kariyer Gelişimi'],
     faqs: [
       { q: 'Çocuğumun staja hazır olduğunu nasıl anlarım?', a: 'Staj hazırlığı sadece akademik başarıyla ölçülmez. İletişim kurabilme, zamanı yönetebilme, yeni ortamlara uyum sağlayabilme ve sorumluluk üstlenebilme becerileri staj hazırlığının temel göstergeleridir.' },
       { q: 'Staj ile iş deneyimi arasındaki fark nedir?', a: 'İş deneyimi genellikle 1-2 haftalık gözlemci pozisyonları ifade ederken, staj daha uzun süreli ve daha aktif katılım gerektiren pozisyonlardır. Her ikisi de CV için değerlidir.' },
@@ -550,7 +550,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Staj hazırlığını ölç — ücretsiz',
       body: '34 soruluk adaptif değerlendirme ile çocuğunuzun aptitude, domain bilgisi ve işyeri becerilerini ölçün. Kişiselleştirilmiş hazırlık raporu 35 dakikada hazır.',
       label: 'Değerlendirmeyi başlat',
-      href: 'https://eduentry.com/internship',
+      href: '/tr/staj',
     },
   },
   {
@@ -649,7 +649,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Öğrenciniz iş deneyimine hazır mı?',
       body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi 25 dakika sürer ve öğrencilere kişiselleştirilmiş bir rapor sunar — beceri dökümü, hazırlık puanı ve eşleştirilmiş fırsatlar.',
       label: 'Staj değerlendirmesini başlat',
-      href: 'https://eduentry.com/internship',
+      href: '/tr/staj',
     },
   },
   {
@@ -658,9 +658,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Erken Yaşta İş Tecrübesi',
     description: 'Lise yıllarında iş tecrübesi kazanmak neden bu kadar önemli? Erken başlamanın avantajları, doğru yaklaşım ve çocuğunuzu desteklemek için ebeveyn rehberi.',
     date: '2026-09-11',
-    dateModified: '2026-09-11',
+    dateModified: '2026-09-17',
     readTime: '11 dk okuma',
-    tags: ['Work Experience', 'Career Development', 'High School', 'Internship', 'Youth Employment'],
+    tags: ['İş Deneyimi', 'Kariyer Gelişimi', 'Lise', 'Staj', 'Kariyer Rehberi'],
     faqs: [
       { q: 'Kaç yaşında iş tecrübesi başlamalı?', a: '14 yaş, Birleşik Krallık\'ta yasal olarak staj başvurularının kabul edildiği başlangıç yaşıdır. Ancak iş tecrübesine hazırlık çok daha erken başlayabilir: gönüllü çalışmalar ve okul projeleri bu hazırlığın önemli parçalarıdır.' },
       { q: 'Erken yaşta iş tecrübesi akademik başarıyı olumsuz etkiler mi?', a: 'Aksine, araştırmalar iş tecrübesinin akademik motivasyonu artırdığını göstermektedir. Gençler öğrenmenin anlamını somut olarak gördükçe derslerine daha istekli yaklaşırlar.' },
@@ -672,7 +672,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun staj profilini keşfedin',
       body: 'Hangi sektör en uygun? Hazırlık düzeyi nerede? Eduentry\'nin ücretsiz adaptif değerlendirmesi 35 dakikada kişiselleştirilmiş bir staj profili çıkarır.',
       label: 'Ücretsiz değerlendirme',
-      href: 'https://eduentry.com/internship',
+      href: '/tr/staj',
     },
   },
   {
@@ -682,7 +682,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Stajyerler ne kadar maaş alıyor? Türkiye\'deki stajyer ücretleri, sektöre göre örnekler, Ulusal Staj Programı ödemeleri ve vergi muafiyeti hakkında güncel bilgiler.',
     date: '2026-09-15',
-    dateModified: '2026-09-15',
+    dateModified: '2026-09-17',
     readTime: '7 dk okuma',
     tags: ['Staj', 'Stajyer Maaşı', 'Kariyer Rehberi', 'Ulusal Staj', 'Lise'],
     faqs: [
@@ -704,7 +704,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Staj defteri nedir, nasıl doldurulur, nereden alınır? Üniversite zorunlu stajı için günlük staj defteri tutmanın adım adım rehberi ve örnek bölümler.',
     date: '2026-09-15',
-    dateModified: '2026-09-15',
+    dateModified: '2026-09-17',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Staj Defteri', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi'],
     faqs: [
@@ -726,7 +726,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Staj sigortası nedir, kim öder, neyi kapsar? Zorunlu stajda ve gönüllü stajda staj sigortası uygulaması, emeklilik hesabına etkisi ve pratik bilgiler.',
     date: '2026-09-15',
-    dateModified: '2026-09-15',
+    dateModified: '2026-09-17',
     readTime: '7 dk okuma',
     tags: ['Staj', 'Staj Sigortası', 'Zorunlu Staj', 'Kariyer Rehberi', 'Lise'],
     faqs: [
@@ -748,7 +748,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Staj bulmak için hangi platformlara bakmalı, nasıl başvuru yapmalı ve işverene nasıl yaklaşmalısın? Lise öğrencileri için pratik, adım adım bir başvuru rehberi.',
     date: '2026-09-15',
-    dateModified: '2026-09-15',
+    dateModified: '2026-09-17',
     readTime: '9 dk okuma',
     tags: ['Staj', 'Staj Başvurusu', 'Kariyer Rehberi', 'Lise', 'İş Dünyası'],
     faqs: [
@@ -771,7 +771,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Yaz tatilini staj fırsatına çevirmek isteyenler için: başvuru takvimleri, hangi sektörler yaz programı sunuyor, uzaktan seçenekler ve pratik başvuru taktikleri.',
     date: '2026-09-15',
-    dateModified: '2026-09-15',
+    dateModified: '2026-09-17',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Yaz Stajı', 'Kariyer Rehberi', 'Lise', 'İş Deneyimi'],
     faqs: [
@@ -794,7 +794,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'En çok hangi sektöre uygunsun? İşverenlerin gerçekten aradığı beceriler neler? Staj başvurusuna geçmeden önce kendinini değerlendirmenin sistematik yolu.',
     date: '2026-09-15',
-    dateModified: '2026-09-15',
+    dateModified: '2026-09-17',
     readTime: '7 dk okuma',
     tags: ['Staj', 'Öz Değerlendirme', 'Kariyer Rehberi', 'Staj Hazırlığı', 'Lise'],
     faqs: [
