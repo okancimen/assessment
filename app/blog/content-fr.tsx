@@ -681,7 +681,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
-  'pisa-2025-experience-professionnelle-etudiants': (
+  'pisa-2025-work-experience-student-readiness': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
         En septembre 2026, l&apos;OCDE a publié les résultats de PISA 2025 — et le monde de l&apos;éducation a reçu un signal d&apos;alarme sans précédent. Plus de 760 000 élèves dans 91 pays, représentant 33 millions de jeunes de 15 ans, ont participé à la plus grande évaluation éducative internationale jamais organisée. Le verdict est sans appel : les scores moyens de l&apos;OCDE en lecture, en mathématiques et en sciences sont à leurs niveaux les plus bas depuis la création du programme. La lecture a reculé de 28 points depuis 2015. Les mathématiques ont perdu 22 points. Ces chiffres ne sont pas des variations statistiques mineures — ils représentent plus d&apos;une année scolaire perdue par génération.
