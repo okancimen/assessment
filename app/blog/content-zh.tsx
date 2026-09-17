@@ -161,6 +161,271 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'shixi-jianlixie-zhinan': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        大多数高中生在写简历时犯同一个错误：试图"填满"页面，把每一行空白都塞进内容。招聘实习生的招聘官每天看几十份申请，他们需要的不是篇幅，而是清晰度和真实感。没有工作经验也能写出有说服力的简历——前提是你知道该展示什么。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">高中生简历的基本结构</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          一份有效的实习简历应包含以下几个模块，按重要性排列：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>联系方式</strong>——姓名、专业邮箱、手机号。使用正式的邮件地址（firstname.lastname@gmail.com），而非昵称邮箱。</Check>
+          <Check><strong>个人简介（可选）</strong>——2-3句话，说明你是谁、正在寻找什么类型的机会，以及你能为雇主带来什么。</Check>
+          <Check><strong>教育背景</strong>——学校名称、年级/毕业年份、GPA或主要科目成绩（如果优秀的话）。</Check>
+          <Check><strong>技能</strong>——技术技能（软件、编程语言、语言能力）。使用具体名称而非笼统描述。</Check>
+          <Check><strong>项目与活动</strong>——课外活动、学生组织、志愿服务、个人项目。</Check>
+          <Check><strong>证书与荣誉</strong>——竞赛奖项、在线课程证书、评估报告等。</Check>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">黄金法则：</strong>严格控制在一页以内。内容密度低但清晰的一页，远优于塞满内容的一页半。空白是设计工具，不是需要填满的空间。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">没有工作经验时写什么</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          "没有经验"是一个误区。你可能没有正式工作经历，但你有比你意识到的更多可以展示的内容：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>担任过实质性职责的角色</strong>——班长、社团干部、学生会成员、运动队队长。写明你的职责，而非仅仅是头衔。</Bullet>
+          <Bullet><strong>个人项目</strong>——自学编程并做了一个小工具？为学校活动制作了宣传设计？这些都是项目，请写进去。</Bullet>
+          <Bullet><strong>志愿服务</strong>——如果有实质性职责（不只是"帮忙"），注明你具体做了什么、服务了多少人或达成了什么结果。</Bullet>
+          <Bullet><strong>竞赛参与</strong>——学科竞赛、黑客马拉松、创业大赛，即使未获奖，参与本身也证明了主动性。</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">用行动动词让描述更有力</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          简历中最常见的弱点之一是被动和模糊的描述。把"负责社交媒体"改成"管理学校官方微信公众号，粉丝增长至3,200人"。把"参与了项目"改成"独立完成数据清洗模块，缩短数据处理时间30%"。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          优秀的行动动词包括：主导、开发、创建、分析、协调、设计、提升、实施、推出、撰写。每条经历用一到两个具体动词开头，后跟可量化的结果（如果有的话）。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">评估分数的用法：</strong>如果你完成了Eduentry实习准备评估，可以在"证书"部分这样写：「Eduentry实习准备评估 — 数字营销方向，准备级别：[你的级别]（2026年）」。这为招聘官提供了第三方的客观能力参考。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">最常见的简历错误</h2>
+        <ul className="space-y-3 mb-4">
+          <Bullet><strong>使用通用模板照搬</strong>——招聘官见过太多相同格式，个性化的设计更令人印象深刻。</Bullet>
+          <Bullet><strong>拼写或语法错误</strong>——仔细检查，并让别人帮你校对。一个错别字可能直接导致淘汰。</Bullet>
+          <Bullet><strong>使用"responsible for"（负责……）开头</strong>——改用主动动词，展示你做了什么，而非你的职责范围。</Bullet>
+          <Bullet><strong>联系邮箱不专业</strong>——确保邮箱地址正式，最好是"姓名+数字"格式。</Bullet>
+        </ul>
+      </section>
+    </>
+  ),
+
+  'shixi-mianshi-zhunbei-jiqiao': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        面试焦虑是正常的——对任何年龄的人都是如此。但大多数面试失败不是因为焦虑，而是因为准备不足。对于实习面试来说，招聘官的期望值本来就不高：他们招的是学生，不是职场老手。你真正需要的是展示好奇心、准备充分，以及基本的专业意识。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">面试前的准备清单</h2>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>研究公司</strong>——了解他们做什么、他们的主要产品或服务、最近有什么新闻，以及你对哪个项目或方向感兴趣。这5分钟的研究在面试中价值巨大。</Check>
+          <Check><strong>练习高声回答</strong>——在心里想答案和真正说出来感觉完全不同。至少对着镜子或对家人练习三到五遍。</Check>
+          <Check><strong>准备2-3个问题</strong>——"面试结束时你有什么问题吗？"——这是测试你是否真正感兴趣的机会。好问题例子：「实习生通常会参与哪些实际项目？」「这个岗位最成功的实习生通常有哪些特质？」</Check>
+          <Check><strong>确认细节</strong>——地点（或视频链接）、时间、面试官姓名。提前10分钟到达现场，或提前测试视频设备。</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">最常见的面试问题及回答思路</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>「请介绍一下你自己。」</strong>——不要从出生地或小学开始说。结构：我是谁（学校、年级）→ 我的兴趣和技能 → 为什么我对这个实习感兴趣。控制在60-90秒。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>「你的优势是什么？」</strong>——选1-2个与实习直接相关的优势，并用具体例子说明，而非自我标榜。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>「你的待提升之处是什么？」</strong>——诚实说一个真实的弱点，但随即说明你正在如何改进。避免伪装成优点的答案（"我太完美主义了"）。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">STAR方法：</strong>回答行为类问题（「举例说明你解决过的一个困难」）时，用情境（Situation）→ 任务（Task）→ 行动（Action）→ 结果（Result）的框架组织答案。即使例子来自学校项目，这个框架也能让回答听起来清晰、有力。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">着装与仪态建议</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          大多数实习面试场合，商务休闲装（Business Casual）是最稳妥的选择：整洁的裤子或裙子、衬衫或上衣、正式鞋。避免破洞牛仔裤、帽衫和运动装。有疑问时宁可正式一点。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          视频面试时，额外注意：背景干净整洁、光线从正面打（避免逆光）、摄像头与眼睛平齐、音频测试无回声。这些细节展示了你的专业意识。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">面试后该做什么</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          面试结束后24小时内发送感谢邮件。内容简短：感谢对方时间，提到面试中令你印象深刻的一点（具体说明），并重申你的热情。这一步骤90%的申请者都会跳过——这正是你的机会。
+        </p>
+      </section>
+    </>
+  ),
+
+  'shuzi-yingxiao-shixi-rumen': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        数字营销是高中生最容易进入的热门职业领域之一。原因很简单：大多数数字营销技能不需要专业学历，只需要创造力、数据好奇心和基本的互联网直觉——而这些是很多高中生天然就有的。对于想在15-18岁积累真实职业经验的学生来说，这个领域提供了极佳的切入点。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">数字营销实习中你会做什么</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          与普遍认知不同，数字营销实习生通常不只是"转发帖子"。一个设计良好的实习项目会让你接触多个真实工作流程：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>内容创作</strong>——为微信公众号、微博、小红书或Instagram撰写和排版内容，理解不同平台的语气和格式差异。</Bullet>
+          <Bullet><strong>数据分析</strong>——使用Google Analytics或平台自带的数据后台，查看哪些内容表现更好、为什么，并提出改进建议。</Bullet>
+          <Bullet><strong>SEO调研</strong>——研究关键词、分析竞争对手的内容策略，了解搜索引擎如何决定内容排名。</Bullet>
+          <Bullet><strong>邮件营销</strong>——协助撰写营销邮件、测试不同标题的打开率，学习如何用数据优化沟通效果。</Bullet>
+          <Bullet><strong>竞品分析</strong>——系统整理竞争对手的营销策略，为团队的决策提供依据。</Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">行业现实：</strong>根据LinkedIn的数据，数字营销是2024-2025年增长最快的职位类别之一，需求远超供给。在高中阶段建立这方面的经验，相当于在人才竞争真正开始前就建立了优势。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">你需要具备哪些基础能力</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          数字营销的门槛比多数人想象的低，但有几个基础能力能让你在申请时更有竞争力：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>清晰的书面表达</strong>——营销本质上是沟通。能够写出简洁、有说服力的文字，是这个领域最核心的能力。</Check>
+          <Check><strong>社交媒体直觉</strong>——对不同平台的受众、格式和语气有直观感知。这不是天赋，是主动观察养成的习惯。</Check>
+          <Check><strong>数据意识</strong>——不需要会统计，但需要对数字有基本的好奇心：为什么这条帖子的转发量是那条的三倍？</Check>
+          <Check><strong>基础工具使用</strong>——Canva（视觉设计）、Google Docs/表格、任何一个社交平台的后台数据工具。这些可以在1-2周内自学。</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">在哪里找数字营销实习机会</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          数字营销实习的最佳机会通常不在大公司的官方招聘页面上，而在：
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Bullet><strong>本地初创公司和数字代理公司</strong>——他们资源有限，最需要有动力的实习生，也最愿意给实习生真实的责任。</Bullet>
+          <Bullet><strong>直接邮件申请</strong>——找到你感兴趣的公司的市场/运营部门负责人，发一封简短、个性化的邮件。说明你注意到了他们的哪个具体内容，以及你能如何贡献。</Bullet>
+          <Bullet><strong>学校或社区组织</strong>——帮助学校活动、非盈利机构或本地商户管理社交媒体，积累有据可查的实战经验。</Bullet>
+          <Bullet><strong>招聘平台</strong>——领英、智联招聘、Boss直聘都有实习岗位，但竞争更激烈，通常需要简历和求职信。</Bullet>
+        </ul>
+      </section>
+    </>
+  ),
+
+  'shuju-fenxi-shixi-gaoxiaosheng': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        数据分析正在成为21世纪最普遍需要的工作技能之一——不只是在科技公司，而是在医疗、零售、金融、教育、政府几乎每个领域。对于一个有分析思维的高中生来说，这是一个极为有价值的方向：门槛相对较低，学习路径清晰，而市场需求持续增长。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">数据分析师实际上在做什么</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在实习层面，数据分析的工作通常包括：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>数据清洗</strong>——将杂乱、不一致的原始数据整理成可用格式。这是数据分析80%的实际工作内容，也是入门最容易学的技能。</Bullet>
+          <Bullet><strong>数据可视化</strong>——用图表、仪表盘展示数据规律，让非技术人员也能理解。常用工具：Excel、Google表格、Tableau（免费版）。</Bullet>
+          <Bullet><strong>报告撰写</strong>——将数据分析结果转化为清晰的书面结论和建议。这需要结合分析能力和沟通能力。</Bullet>
+          <Bullet><strong>数据收集</strong>——设计调查问卷、整理数据库、从网站或API获取数据（入门级）。</Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">市场数据：</strong>世界经济论坛《未来就业报告》将数据分析师列为未来五年需求增长最快的职位之一。现在开始建立这项技能，意味着你在这个浪潮真正到来之前就已经站在浪尖。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">高中生需要学习哪些工具</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          按优先级排列，高中生应该依次学习：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>Excel / Google表格</strong>——数据透视表、VLOOKUP、基本函数。这是数据分析的基础，也是大多数实习中实际使用的工具。自学时间：1-2周。</Check>
+          <Check><strong>Python基础</strong>——Pandas库用于数据处理，Matplotlib用于可视化。Kaggle Learn提供免费的入门课程，5天可完成基础部分。</Check>
+          <Check><strong>SQL基础</strong>——查询数据库是数据分析师最频繁的操作。MODE Analytics和SQLZoo提供免费练习平台，入门只需2-3天。</Check>
+          <Check><strong>Tableau或Power BI</strong>——数据可视化工具，有免费版本。这是一个加分项，在申请时能立即展示可见成果。</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如何在没有经验的情况下展示数据能力</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          对于高中生来说，关键是用你已有的材料展示分析思维：
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Bullet>用Excel分析你喜欢的体育项目或游戏的统计数据，制作一份可视化报告，放到GitHub或个人网页上。</Bullet>
+          <Bullet>完成Kaggle上的入门比赛，将你的代码和分析过程记录下来。</Bullet>
+          <Bullet>为学校活动、社团或班级设计一个小型数据收集项目（问卷+分析报告）。</Bullet>
+          <Bullet>将Eduentry评估结果加入简历——它包含你在定量推理和分析思维方向的客观测评数据。</Bullet>
+        </ul>
+      </section>
+    </>
+  ),
+
+  'ruhe-zai-15-sui-tuocying': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        15岁是一个奇特的年龄：你已经足够成熟，可以开始做那些在职业和学业上真正有分量的事情；但大多数同龄人还没有意识到这一点。这个认知差距就是你的优势。如果你现在开始，等到大学申请或求职时，你将面对的不只是比你成绩好一点的人——而是几乎所有人都没有你的经历深度。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">为什么15岁是最佳起点</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          发展心理学研究表明，青少年时期是身份认同形成最活跃的阶段。在这一时期接触真实的职业世界，能够加速自我认知的发展——你更快地知道自己擅长什么、对什么有真实兴趣，而不是依赖假设。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">研究数据：</strong>英国Education and Employers的研究显示，在16岁前有4次以上雇主接触经历的青少年，到19岁成为NEET（未接受教育、就业或培训）的风险降低5倍。这不是小幅改善，而是量级差异。
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          15岁开始的另一个实际优势是时间。你有2-3年的时间，可以先做一次普通实习，反思经历，调整方向，再做一次更好的实习——到提交大学申请时，你已经有了完整的成长轨迹，而不只是一个孤立的经历。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">最有含金量的四类活动</h2>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>工作经验或实习</strong>——即使是2周的观察实习也比任何课外活动更有说服力。它证明你能在非学校环境中运作，与真实的成年人合作，并处理真实的责任。</Check>
+          <Check><strong>有实质责任的领导角色</strong>——不只是"成员"，而是有决策权、要承担结果的角色：社团主席、学校刊物主编、竞赛队队长。</Check>
+          <Check><strong>可展示的技术项目</strong>——一个有GitHub链接的代码项目、一份有数据支撑的研究报告、一个有真实用户的产品——比任何证书更有说服力。</Check>
+          <Check><strong>竞赛经历</strong>——学科奥林匹克、编程竞赛、商业计划书比赛。重要的不只是获奖，而是参与本身展示了主动性和对该领域的真实投入。</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如何在没有人脉的情况下找到第一份实习</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          大多数15岁的学生认为找实习需要父母的关系网络。这是一个可以打破的限制：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>直接邮件</strong>——找到你感兴趣的本地中小企业的负责人或HR邮箱，发一封简短、个性化的邮件。说明你是谁、你为什么对他们的业务感兴趣，以及你能做什么。中小企业对这类邮件的回应率远超大公司。</Bullet>
+          <Bullet><strong>学校渠道</strong>——班主任、职业顾问或某些科目老师往往有你不知道的资源和联系人。直接去问。</Bullet>
+          <Bullet><strong>线上实习平台</strong>——Springpod、Virtual Work Experience等平台提供远程工作体验项目，无需地理位置，且专门面向学生。</Bullet>
+          <Bullet><strong>从身边的小项目开始</strong>——帮助家族朋友的小生意做社交媒体、为邻居设计一个简单的网站。这些经历如果有可量化的结果，也可以写进简历。</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">评估分数如何解决可信度问题</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          15岁申请实习面临一个根本性的挑战：你的简历很薄，而招聘官无法确认你是否真的有能力。Eduentry这类评估工具的作用正在于此——它提供了第三方的客观数据，展示你在逻辑推理、领域知识和职业情境判断上的实际水平，填补了"没有工作经验"留下的信任空白。
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {
