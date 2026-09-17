@@ -9,7 +9,7 @@ export default function PublicFooterRU() {
           <div>
             <p className="text-xs font-semibold text-[#1d1d1f] uppercase tracking-wider mb-1">Стажировка</p>
             <ul>
-              <li><Link href="/ru"               className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Оценка стажировки</Link></li>
+              <li><Link href="/ru/stazhirovka"   className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Оценка стажировки</Link></li>
               <li><Link href="/internship/apply"  className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Подать заявку</Link></li>
               <li><Link href="/ru/blog"           className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Блог</Link></li>
             </ul>

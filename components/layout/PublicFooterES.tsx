@@ -9,7 +9,7 @@ export default function PublicFooterES() {
           <div>
             <p className="text-xs font-semibold text-[#1d1d1f] uppercase tracking-wider mb-1">Prácticas</p>
             <ul>
-              <li><Link href="/es"                className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Evaluación de prácticas</Link></li>
+              <li><Link href="/es/practicas"      className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Evaluación de prácticas</Link></li>
               <li><Link href="/internship/apply"  className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Solicitar ahora</Link></li>
               <li><Link href="/es/blog"           className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Blog</Link></li>
             </ul>

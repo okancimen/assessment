@@ -9,7 +9,7 @@ export default function PublicFooterTR() {
           <div>
             <p className="text-xs font-semibold text-[#1d1d1f] uppercase tracking-wider mb-1">Staj</p>
             <ul>
-              <li><Link href="/tr"              className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Staj Değerlendirmesi</Link></li>
+              <li><Link href="/tr/staj"        className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Staj Değerlendirmesi</Link></li>
               <li><Link href="/internship/apply" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Hemen başvur</Link></li>
               <li><Link href="/tr/blog"         className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Blog</Link></li>
             </ul>

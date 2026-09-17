@@ -9,7 +9,7 @@ export default function PublicFooterZH() {
           <div>
             <p className="text-xs font-semibold text-[#1d1d1f] uppercase tracking-wider mb-1">实习评估</p>
             <ul>
-              <li><Link href="/zh"               className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">实习评估</Link></li>
+              <li><Link href="/zh/shixi"         className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">实习评估</Link></li>
               <li><Link href="/internship/apply"  className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">申请实习</Link></li>
               <li><Link href="/zh/blog"           className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">博客</Link></li>
             </ul>

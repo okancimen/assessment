@@ -158,6 +158,12 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
           工作经验以三种具体方式强化大学申请。首先，它为您的个人陈述添加具体、有据可查的内容，说明您对某个领域的兴趣——"我观察到财务职能是如何运作的"远比"我对金融感兴趣"更有说服力。其次，它展示了商业成熟度——在专业环境中运作的能力，这是竞争性商业和经济学项目招生官所看重的。第三，它降低了选择错误课程的风险，让您能够首先直接评估某个商业环境是否适合您。
         </p>
       </section>
+
+      <section>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">找到实习前，先了解你的准备度。</strong> <a href="/zh/shixi" className="underline font-semibold">Eduentry免费评估</a> — 34题35分钟 — 测量你的综合能力、专业知识和职场技能，生成个性化报告，帮你明确最适合申请的实习赛道。
+        </Callout>
+      </section>
     </>
   ),
 

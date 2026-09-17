@@ -9,7 +9,7 @@ export default function PublicFooterAR() {
           <div>
             <p className="text-xs font-semibold text-[#1d1d1f] uppercase tracking-wider mb-1">التدريب</p>
             <ul>
-              <li><Link href="/ar"               className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">تقييم التدريب</Link></li>
+              <li><Link href="/ar/tadrib"        className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">تقييم التدريب</Link></li>
               <li><Link href="/internship/apply"  className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">تقديم طلب</Link></li>
               <li><Link href="/ar/blog"           className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">المدونة</Link></li>
             </ul>

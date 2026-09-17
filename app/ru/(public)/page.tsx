@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: `${BASE_URL}/ru`,
-    languages: { ru: `${BASE_URL}/ru`, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, 'en-GB': BASE_URL, fr: `${BASE_URL}/fr`, zh: `${BASE_URL}/zh`, 'x-default': BASE_URL },
+    languages: { ru: `${BASE_URL}/ru`, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, 'en-GB': BASE_URL, fr: `${BASE_URL}/fr`, ar: `${BASE_URL}/ar`, zh: `${BASE_URL}/zh`, 'x-default': BASE_URL },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
@@ -206,7 +206,7 @@ export default function RussianHomePage() {
               >
                 Узнать о программе
               </a>
-              <Link href="#stazhirovka" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
+              <Link href="/ru/stazhirovka" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
                 Узнать больше ↓
               </Link>
             </div>
@@ -468,10 +468,13 @@ export default function RussianHomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-10 flex items-center justify-center gap-4 flex-wrap">
             <a href="https://eduentry.ai/" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Подать заявку на оценку стажировки →
             </a>
+            <Link href="/ru/stazhirovka" className="text-sm font-semibold text-[#4F46E5] hover:underline">
+              Подробнее →
+            </Link>
           </div>
         </div>
       </section>

@@ -833,6 +833,12 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
           <Bullet><strong>Общий шаблон</strong> — рекрутеры узнают стандартные шаблоны. Персонализированное оформление запоминается.</Bullet>
         </ul>
       </section>
+
+      <section>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">Готово резюме — теперь проверь готовность.</strong> <a href="/ru/stazhirovka" className="underline font-semibold">Бесплатная оценка Eduentry</a> — 34 вопроса за 35 минут — измеряет твои способности, специальные знания и профессиональные навыки. Персональный отчёт, который можно приложить к заявке на стажировку.
+        </Callout>
+      </section>
     </>
   ),
 

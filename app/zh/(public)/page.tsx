@@ -212,7 +212,7 @@ export default function ChineseHomePage() {
               >
                 了解项目详情
               </a>
-              <Link href="#shixi-pinggu" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
+              <Link href="/zh/shixi" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
                 了解更多 ↓
               </Link>
             </div>
@@ -469,10 +469,13 @@ export default function ChineseHomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-10 flex items-center justify-center gap-4 flex-wrap">
             <a href="https://eduentry.ai/" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               申请实习评估 →
             </a>
+            <Link href="/zh/shixi" className="text-sm font-semibold text-[#4F46E5] hover:underline">
+              了解更多 →
+            </Link>
           </div>
         </div>
       </section>
