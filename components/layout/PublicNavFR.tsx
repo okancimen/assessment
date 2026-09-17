@@ -10,7 +10,7 @@ export default function PublicNavFR() {
       <div className="max-w-[1024px] mx-auto px-6 h-11 flex items-center justify-between relative">
         <Logo href="/fr" size="sm" />
 
-        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-[13px] font-medium text-[#1d1d1f]">
+        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-[14px] font-medium text-[#1d1d1f]">
           <Link href="/fr/stage"        className="hover:text-[#4F46E5] transition-colors">Stages</Link>
           <Link href="/fr/a-propos"     className="hover:text-[#4F46E5] transition-colors">À propos</Link>
           <Link href="/fr/methodologie" className="hover:text-[#4F46E5] transition-colors">Méthodologie</Link>

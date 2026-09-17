@@ -10,7 +10,7 @@ export default function PublicNavTR() {
       <div className="max-w-[1024px] mx-auto px-6 h-11 flex items-center justify-between relative">
         <Logo href="/tr" size="sm" />
 
-        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-[13px] font-medium text-[#1d1d1f]">
+        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-[14px] font-medium text-[#1d1d1f]">
           <Link href="/tr/staj"        className="hover:text-[#4F46E5] transition-colors">Staj</Link>
           <Link href="/tr/hakkimizda"  className="hover:text-[#4F46E5] transition-colors">Hakkımızda</Link>
           <Link href="/tr/metodoloji"  className="hover:text-[#4F46E5] transition-colors">Metodoloji</Link>

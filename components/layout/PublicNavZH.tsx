@@ -10,7 +10,7 @@ export default function PublicNavZH() {
       <div className="max-w-[1024px] mx-auto px-6 h-11 flex items-center justify-between relative">
         <Logo href="/zh" size="sm" />
 
-        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-[13px] font-medium text-[#1d1d1f]">
+        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-[14px] font-medium text-[#1d1d1f]">
           <Link href="/zh"              className="hover:text-[#4F46E5] transition-colors">实习评估</Link>
           <Link href="/zh/guanyu-women" className="hover:text-[#4F46E5] transition-colors">关于我们</Link>
           <Link href="/zh/fangfalun"    className="hover:text-[#4F46E5] transition-colors">方法论</Link>
