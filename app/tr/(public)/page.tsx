@@ -140,11 +140,32 @@ const FEATURED_BLOG_SCHEMA = {
     })),
 }
 
+const SOFTWARE_SCHEMA_TR = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Eduentry',
+  url: 'https://eduentry.com',
+  applicationCategory: 'EducationalApplication',
+  operatingSystem: 'Web Browser',
+  description: 'Yapay zeka destekli ücretsiz uyarlanabilir değerlendirmeler — 6 yaş ve üzeri öğrenciler için.',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Ücretsiz — abonelik gerekmez' },
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
+  review: [
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Rachel T.' }, reviewBody: '11+ sınavından önce Eduentry\'yi kullandık. Sözel akıl yürütme puanı tam olarak nerede daha fazla çalışması gerektiğini işaret etti — ilk tercihindeki gramer okuluna girdi.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Marcus O.' }, reviewBody: 'Oğlumun uluslararası akranlarına göre matematikte ne kadar iyi olduğunu fark etmemiştim. Yüzdelik dilim sıralaması, okul notlarının sağlayamadığı gerçek bir bağlam sundu.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Aisha P.' }, reviewBody: 'Staj raporu, Veri Analitiği alanındaki yeteneğimin en güçlü olduğunu söyledi — bunu hiç düşünmemiştim. O alanda bir yerleştirme için başvurdum ve kabul edildim.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Daniel F.' }, reviewBody: 'Oğlum henüz 9 yaşında ama ortaokul öncesinde uluslararası arenada nerede durduğunu öğrenmek istedim. PISA kıyaslaması tam ihtiyacım olan şeydi — net, doğrudan ve tamamen ücretsiz.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Priya K.' }, reviewBody: 'Sözel olmayan akıl yürütme puanı en büyük sürprizdi. Kızım hiç uzamsal akıl yürütme üzerine resmi bir test yapmamıştı — 88. yüzdelik dilimde olduğunu görmek okul seçimi sürecinde gerçek bir güven verdi.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Tom W.' }, reviewBody: 'Üniversite başvurumu hazırlarken staj değerlendirmesini kullandım. Yapay zeka özeti, kişisel beyanım için spesifik bir dil sağladı — okul danışmanım gördüğü en güçlülerden biri olduğunu söyledi.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+  ],
+}
+
 export default function TurkishHomePage() {
   return (
     <main className="min-h-screen bg-white" lang="tr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_TR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_TR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FEATURED_BLOG_SCHEMA) }} />
 

@@ -117,11 +117,32 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const SOFTWARE_SCHEMA_RU = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Eduentry',
+  url: 'https://eduentry.com',
+  applicationCategory: 'EducationalApplication',
+  operatingSystem: 'Web Browser',
+  description: 'Бесплатные адаптивные оценки на базе ИИ для учащихся от 6 лет.',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Бесплатно — без подписки' },
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
+  review: [
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Rachel T.' }, reviewBody: 'Мы использовали Eduentry перед экзаменом 11+ дочери. Оценка по вербальному мышлению показала именно те области, где нужна была практика — она поступила в грамматическую школу своего первого выбора.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Marcus O.' }, reviewBody: 'Я не понимал, насколько сильно мой сын в математике по сравнению с международными сверстниками. Процентильный рейтинг дал нам реальный контекст, которого просто не могут дать школьные оценки.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Aisha P.' }, reviewBody: 'Отчёт о стажировке показал, что мои способности наиболее сильны в области аналитики данных — о чём я никогда серьёзно не задумывалась. Я подала заявку на стажировку в этой сфере и получила её.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Daniel F.' }, reviewBody: 'Моему сыну всего 9 лет, но я хотел знать, где он стоит на международном уровне перед средней школой. Сравнение по PISA было именно тем, что мне нужно — чётким, прямым и совершенно бесплатным.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Priya K.' }, reviewBody: 'Оценка по невербальному мышлению стала самым большим сюрпризом. Дочь никогда не проходила официального теста на пространственное мышление — увидеть, что она в 88-м перцентиле, дало нам настоящую уверенность при выборе школы.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Tom W.' }, reviewBody: 'Я использовал оценку стажировки как часть подготовки к поступлению в университет. Резюме от ИИ дало мне конкретные формулировки для личного заявления — мой школьный консультант сказал, что это одно из лучших, что он видел.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+  ],
+}
+
 export default function RussianHomePage() {
   return (
     <main className="min-h-screen bg-white" lang="ru">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_RU) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_RU) }} />
 
       {/* Hero */}

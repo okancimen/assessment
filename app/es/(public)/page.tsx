@@ -119,11 +119,32 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const SOFTWARE_SCHEMA_ES = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Eduentry',
+  url: 'https://eduentry.com',
+  applicationCategory: 'EducationalApplication',
+  operatingSystem: 'Web Browser',
+  description: 'Evaluaciones adaptativas gratuitas con IA para estudiantes de 6 años en adelante.',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Gratuito — sin suscripción' },
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
+  review: [
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Rachel T.' }, reviewBody: 'Usamos Eduentry antes del examen 11+ de mi hija. La puntuación de razonamiento verbal señaló exactamente dónde necesitaba más práctica — entró en la escuela de gramática de su primera opción.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Marcus O.' }, reviewBody: 'No me había dado cuenta de lo fuerte que era mi hijo en matemáticas respecto a sus compañeros internacionales. El percentil nos dio un contexto real que las notas del colegio simplemente no proporcionan.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Aisha P.' }, reviewBody: 'El informe de prácticas me dijo que mi aptitud era más fuerte en Análisis de Datos, algo que nunca había considerado. Solicité una plaza en ese área y la conseguí.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Daniel F.' }, reviewBody: 'Mi hijo solo tiene 9 años pero quería saber dónde estaba internacionalmente antes de la secundaria. La referencia PISA era exactamente lo que necesitaba — clara, sin rodeos y completamente gratis.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Priya K.' }, reviewBody: 'La puntuación de razonamiento no verbal fue la mayor sorpresa. Mi hija nunca había sido evaluada formalmente en razonamiento espacial — ver que estaba en el percentil 88 nos dio una confianza real de cara a la elección de colegio.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Tom W.' }, reviewBody: 'Usé la evaluación de prácticas como parte de mi preparación universitaria. El resumen de IA me dio un lenguaje específico para mi carta de motivación — mi orientador dijo que era una de las más sólidas que había visto.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+  ],
+}
+
 export default function SpanishHomePage() {
   return (
     <main className="min-h-screen bg-white" lang="es">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_ES) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_ES) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}

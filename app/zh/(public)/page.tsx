@@ -125,11 +125,32 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const SOFTWARE_SCHEMA_ZH = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Eduentry',
+  url: 'https://eduentry.com',
+  applicationCategory: 'EducationalApplication',
+  operatingSystem: 'Web Browser',
+  description: '免费AI自适应评估平台，适合6岁及以上学生。',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: '免费 — 无需订阅' },
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
+  review: [
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Rachel T.' }, reviewBody: '我们在女儿参加11+考试前使用了Eduentry。语言推理评分准确指出了她需要加强练习的地方——她考入了第一志愿的文法学校。', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Marcus O.' }, reviewBody: '我没有意识到儿子在数学上相比国际同龄人有多出色。百分位排名给了我们学校成绩无法提供的真实参照。', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Aisha P.' }, reviewBody: '实习报告告诉我，我在数据分析方面的能力最强——这是我从未认真考虑过的方向。我申请了该领域的实习岗位，并成功获录。', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Daniel F.' }, reviewBody: '儿子才9岁，但我想在他升入中学前了解他的国际水平。PISA标准测评正是我需要的——清晰、直接、完全免费。', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Priya K.' }, reviewBody: '非语言推理得分是最大的惊喜。女儿从未接受过正式的空间推理测试——看到她处于第88百分位，在选校过程中给了我们真正的信心。', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Tom W.' }, reviewBody: '我在准备大学申请时使用了实习评估。AI摘要为我的个人陈述提供了具体的表达语言——学校辅导员说这是她见过的最优秀的陈述之一。', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+  ],
+}
+
 export default function ChineseHomePage() {
   return (
     <main className="min-h-screen bg-white" lang="zh">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_ZH) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_ZH) }} />
 
       {/* Hero */}

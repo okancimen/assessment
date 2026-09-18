@@ -116,11 +116,32 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const SOFTWARE_SCHEMA_FR = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Eduentry',
+  url: 'https://eduentry.com',
+  applicationCategory: 'EducationalApplication',
+  operatingSystem: 'Web Browser',
+  description: 'Évaluations adaptatives gratuites alimentées par l\'IA pour les élèves à partir de 6 ans.',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Gratuit — sans abonnement' },
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
+  review: [
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Rachel T.' }, reviewBody: 'Nous avons utilisé Eduentry avant le 11+ de ma fille. Le score en raisonnement verbal a identifié exactement là où elle devait s\'améliorer — elle a intégré l\'école de grammaire de son premier choix.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Marcus O.' }, reviewBody: 'Je n\'avais pas réalisé à quel point mon fils était fort en maths par rapport à ses pairs internationaux. Le classement centile nous a donné un contexte réel que les notes scolaires ne fournissent tout simplement pas.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Aisha P.' }, reviewBody: 'Le rapport de stage m\'a dit que mon aptitude était la plus forte en Analyse de données, ce que je n\'avais jamais vraiment envisagé. J\'ai postulé pour un stage dans ce domaine et j\'ai été acceptée.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Daniel F.' }, reviewBody: 'Mon fils n\'a que 9 ans, mais je voulais savoir où il en était au niveau international avant le secondaire. La référence PISA était exactement ce dont j\'avais besoin — claire, sans détour et entièrement gratuite.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Priya K.' }, reviewBody: 'Le score de raisonnement non-verbal a été la plus grande surprise. Ma fille n\'avait jamais été évaluée formellement en raisonnement spatial — la voir au 88e centile nous a vraiment rassurés pour le choix de l\'école.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Tom W.' }, reviewBody: 'J\'ai utilisé l\'évaluation de stage dans le cadre de ma préparation universitaire. Le résumé IA m\'a fourni un langage précis pour ma lettre de motivation — mon conseiller scolaire a dit que c\'était l\'une des plus solides qu\'il ait vues.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+  ],
+}
+
 export default function FrenchHomePage() {
   return (
     <main className="min-h-screen bg-white" lang="fr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_FR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_FR) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}

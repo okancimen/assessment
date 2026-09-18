@@ -117,11 +117,32 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const SOFTWARE_SCHEMA_AR = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Eduentry',
+  url: 'https://eduentry.com',
+  applicationCategory: 'EducationalApplication',
+  operatingSystem: 'Web Browser',
+  description: 'تقييمات تكيفية مجانية مدعومة بالذكاء الاصطناعي للطلاب من عمر 6 سنوات فأكثر.',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'مجاني — لا يتطلب اشتراكاً' },
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
+  review: [
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Rachel T.' }, reviewBody: 'استخدمنا Eduentry قبل امتحان 11+ لابنتي. كشف درجة التفكير اللفظي بالضبط أين تحتاج إلى مزيد من التدريب — وقبلت في مدرسة القواعد التي كانت خيارها الأول.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Marcus O.' }, reviewBody: 'لم أكن أدرك مدى تفوق ابني في الرياضيات مقارنة بأقرانه على المستوى الدولي. أعطانا تصنيف المئيني سياقاً حقيقياً لا توفره درجات المدرسة ببساطة.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Aisha P.' }, reviewBody: 'أخبرني تقرير التدريب أن كفاءتي كانت الأقوى في تحليل البيانات، وهو مجال لم أفكر فيه قط. تقدمت لمنصب تدريبي في هذا المجال وقبلت.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Daniel F.' }, reviewBody: 'عمر ابني 9 سنوات فقط، لكنني أردت معرفة مكانته على المستوى الدولي قبل المرحلة الثانوية. كان معيار PISA هو بالضبط ما احتجته — واضح وصريح ومجاني تماماً.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Priya K.' }, reviewBody: 'كانت درجة التفكير غير اللفظي هي المفاجأة الأكبر. لم تخضع ابنتي قط لاختبار رسمي في التفكير المكاني — رؤيتها في المئين 88 منحنا ثقة حقيقية في اختيار المدرسة.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+    { '@type': 'Review', author: { '@type': 'Person', name: 'Tom W.' }, reviewBody: 'استخدمت تقييم التدريب كجزء من إعدادي لطلبات الجامعة. زودني ملخص الذكاء الاصطناعي بلغة محددة لبياني الشخصي — قال مستشاري المدرسي إنه من أقوى ما رآه.', reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 } },
+  ],
+}
+
 export default function ArabicHomePage() {
   return (
     <main className="min-h-screen bg-white" lang="ar" dir="rtl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_AR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_AR) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
