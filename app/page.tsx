@@ -70,7 +70,7 @@ const SOFTWARE_SCHEMA = {
   operatingSystem: 'Web Browser',
   description: 'Free AI-powered adaptive assessments for students aged 6 and above.',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Free — no subscription required' },
-  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', reviewCount: '6', bestRating: '5', worstRating: '1' },
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
 }
 
 const WEBSITE_SCHEMA = {
@@ -150,7 +150,7 @@ const REVIEWS_SCHEMA = {
       position: 1,
       author: { '@type': 'Person', name: 'Rachel T.' },
       reviewBody: "We used Eduentry before my daughter's 11+ exam. The verbal reasoning score flagged exactly where she needed more practice — she got into her first choice grammar school.",
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
       itemReviewed: { '@type': 'SoftwareApplication', name: 'Eduentry Academic Assessment' },
     },
     {
@@ -158,7 +158,7 @@ const REVIEWS_SCHEMA = {
       position: 2,
       author: { '@type': 'Person', name: 'Marcus O.' },
       reviewBody: "I didn't realise how strong my son was at maths relative to his international peers. The percentile ranking gave us real context that school grades simply don't provide.",
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
       itemReviewed: { '@type': 'SoftwareApplication', name: 'Eduentry Academic Assessment' },
     },
     {
@@ -166,7 +166,7 @@ const REVIEWS_SCHEMA = {
       position: 3,
       author: { '@type': 'Person', name: 'Aisha P.' },
       reviewBody: "The internship report told me my aptitude was strongest in Data Analytics, which I'd never really considered. I applied for a placement in that track and got it.",
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
       itemReviewed: { '@type': 'SoftwareApplication', name: 'Eduentry Internship Assessment' },
     },
     {
@@ -174,7 +174,7 @@ const REVIEWS_SCHEMA = {
       position: 4,
       author: { '@type': 'Person', name: 'Daniel F.' },
       reviewBody: "My son is only 9 but I wanted to know where he stood internationally before secondary school. The PISA benchmarking was exactly what I needed — clear, no-nonsense, and completely free.",
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
       itemReviewed: { '@type': 'SoftwareApplication', name: 'Eduentry Academic Assessment' },
     },
     {
@@ -182,7 +182,7 @@ const REVIEWS_SCHEMA = {
       position: 5,
       author: { '@type': 'Person', name: 'Priya K.' },
       reviewBody: "The non-verbal reasoning score was the biggest surprise. My daughter had never been formally tested on spatial reasoning — seeing she was in the 88th percentile gave us real confidence going into school selection.",
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
       itemReviewed: { '@type': 'SoftwareApplication', name: 'Eduentry Academic Assessment' },
     },
     {
@@ -190,7 +190,7 @@ const REVIEWS_SCHEMA = {
       position: 6,
       author: { '@type': 'Person', name: 'Tom W.' },
       reviewBody: "I used the internship assessment as part of my UCAS prep. The AI summary gave me specific language for my personal statement — my school counsellor said it was one of the strongest she'd seen.",
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
       itemReviewed: { '@type': 'SoftwareApplication', name: 'Eduentry Internship Assessment' },
     },
   ],
