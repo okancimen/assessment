@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    inlineCss: true,
+  },
   async redirects() {
     return [
       { source: '/internship/assessment/:id/question', destination: '/assessment/:id/question', permanent: true },
