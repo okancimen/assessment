@@ -940,6 +940,9 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         <Callout color="emerald">
           <strong className="text-emerald-900">El punto diferenciador real:</strong> Un informe de evaluación de Eduentry que muestra aptitud verificada en marketing digital — antes de que el reclutador te conozca — resuelve directamente el problema principal de selección: cómo diferenciar entre candidatos sin historial profesional.
         </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Antes de enviar cualquier solicitud, prepara un <a href="/es/blog/cv-para-practicas-con-16-anos" className="text-indigo-600 hover:underline font-medium">CV sólido para prácticas</a> y repasa nuestro <a href="/es/blog/como-superar-entrevista-practicas" className="text-indigo-600 hover:underline font-medium">guía de entrevistas para instituto</a> — las entrevistas en marketing suelen incluir preguntas prácticas sobre plataformas y métricas.
+        </p>
       </section>
     </>
   ),
@@ -997,7 +1000,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         El CV para prácticas a los 16 años resuelve un problema aparente: cómo demostrar valor cuando no tienes historial laboral. La respuesta no está en inflar lo que tienes ni en inventar lo que no tienes — está en estructurar lo que realmente eres de una forma que un reclutador pueda evaluar en 30 segundos.
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Este artículo explica exactamente qué incluir, cómo estructurarlo, y los errores específicos que cuestan la oportunidad antes de llegar a la entrevista.
+        Este artículo explica exactamente qué incluir, cómo estructurarlo, y los errores específicos que cuestan la oportunidad antes de llegar a la entrevista. Una vez listo el CV, consulta nuestro <a href="/es/blog/como-superar-entrevista-practicas" className="text-indigo-600 hover:underline font-medium">guía completo de entrevistas de prácticas</a> — la preparación oral es igual de importante que el documento.
       </p>
 
       <section>
@@ -1049,7 +1052,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
   'como-superar-entrevista-practicas': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        La entrevista de prácticas para estudiantes de instituto es menos aterradora de lo que parece — y más preparable de lo que la mayoría de candidatos cree. Los entrevistadores de prácticas a nivel de estudiante no esperan un candidato pulido y con años de experiencia. Esperan uno que ha pensado seriamente en por qué está allí, que tiene algo específico que decir, y que demuestra capacidad de aprender.
+        La entrevista de prácticas para estudiantes de instituto es menos aterradora de lo que parece — y más preparable de lo que la mayoría de candidatos cree. Antes de la entrevista, asegúrate de tener tu <a href="/es/blog/cv-para-practicas-con-16-anos" className="text-indigo-600 hover:underline font-medium">CV de prácticas</a> listo — los entrevistadores lo revisan durante la conversación. Los entrevistadores de prácticas a nivel de estudiante no esperan un candidato pulido y con años de experiencia. Esperan uno que ha pensado seriamente en por qué está allí, que tiene algo específico que decir, y que demuestra capacidad de aprender.
       </p>
       <p className="text-gray-700 leading-relaxed">
         Este artículo cubre las categorías de preguntas más frecuentes, cómo estructurar respuestas sin experiencia laboral previa, y los errores concretos que cuestan la plaza.

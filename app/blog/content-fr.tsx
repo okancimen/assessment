@@ -288,7 +288,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Rédiger un e-mail de candidature qui obtient une réponse</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          La clé est la personnalisation. Un e-mail générique envoyé à cent entreprises obtient moins de réponses qu'un e-mail spécifique envoyé à dix entreprises soigneusement choisies.
+          La clé est la personnalisation. Un e-mail générique envoyé à cent entreprises obtient moins de réponses qu'un e-mail spécifique envoyé à dix entreprises soigneusement choisies. Cet e-mail doit toujours être accompagné d'un <a href="/fr/blog/cv-stage-lyceen-16-ans" className="text-indigo-600 hover:underline font-medium">CV lycéen bien structuré</a> — notre guide complet vous explique exactement quoi y inclure, même sans expérience professionnelle.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           Structure efficace : ouvrez avec une phrase montrant que vous connaissez l'entreprise ("J'ai découvert votre travail sur [projet spécifique]..."), expliquez en deux phrases pourquoi ce secteur vous intéresse genuinement, précisez les dates souhaitées et la durée, et demandez un entretien téléphonique ou une visite pour en discuter.
@@ -301,7 +301,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment objectiver votre profil</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          À 16 ans, vous n'avez pas encore de CV élaboré. Mais vous pouvez démontrer votre aptitude de façon crédible avec un score d'évaluation professionnel. L'évaluation Eduentry mesure votre aptitude générale, vos connaissances sectorielles et vos compétences professionnelles — et produit un rapport que vous pouvez partager avec les entreprises.
+          À 16 ans, vous n'avez pas encore de CV élaboré. Mais vous pouvez démontrer votre aptitude de façon crédible avec un score d'évaluation professionnel. L'évaluation Eduentry mesure votre aptitude générale, vos connaissances sectorielles et vos compétences professionnelles — et produit un rapport que vous pouvez partager avec les entreprises. Si vous décrochez un entretien, notre <a href="/fr/blog/entretien-stage-lyceen-conseils" className="text-indigo-600 hover:underline font-medium">guide de préparation à l'entretien de stage</a> vous aidera à aborder cette étape avec confiance.
         </p>
       </section>
     </>
@@ -341,7 +341,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">La lettre de motivation : là où tout se joue</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Un CV lycéen bien structuré ouvre la porte. La lettre de motivation fait entrer. Elle doit être personnalisée pour chaque entreprise, d'une demi-page maximum, et doit répondre à trois questions : Pourquoi cette entreprise ? Pourquoi ce secteur ? Qu'est-ce que vous pouvez apporter pendant ce stage ?
+          Un CV lycéen bien structuré ouvre la porte. La lettre de motivation fait entrer. Elle doit être personnalisée pour chaque entreprise, d'une demi-page maximum, et doit répondre à trois questions : Pourquoi cette entreprise ? Pourquoi ce secteur ? Qu'est-ce que vous pouvez apporter pendant ce stage ? Une fois votre dossier complet, la prochaine étape est de <a href="/fr/blog/entretien-stage-lyceen-conseils" className="text-indigo-600 hover:underline font-medium">vous préparer à l'entretien</a> — notre guide couvre les questions incontournables et comment y répondre efficacement.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           Évitez les formules toutes faites. Montrez que vous avez fait des recherches. Mentionnez un projet, un produit, ou un aspect de l'activité de l'entreprise qui vous intéresse genuinement. Cette spécificité est ce qui distingue les candidatures sélectionnées des candidatures éliminées.
@@ -359,7 +359,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">La préparation : l'anti-stress le plus efficace</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Le stress d'un entretien vient principalement de l'impréparation. Plus vous avez répondu à voix haute aux questions prévisibles, moins l'entretien vous semblera intimidant. Pratiquez avec un parent, un ami, ou devant un miroir — la répétition à voix haute est fondamentale.
+          Le stress d'un entretien vient principalement de l'impréparation. Assurez-vous d'abord que votre <a href="/fr/blog/cv-stage-lyceen-16-ans" className="text-indigo-600 hover:underline font-medium">CV lycéen</a> est finalisé — les recruteurs y font souvent référence pendant l'entretien. Ensuite, plus vous avez répondu à voix haute aux questions prévisibles, moins l'entretien vous semblera intimidant. Pratiquez avec un parent, un ami, ou devant un miroir — la répétition à voix haute est fondamentale.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           Avant l'entretien, consacrez 30 minutes à rechercher l'entreprise : leur site web, leurs réseaux sociaux, un article récent sur eux. Préparez deux ou trois questions spécifiques à poser sur leur activité. Cela montre de l'intérêt réel et vous distingue des candidats qui n'ont fait aucune recherche.
@@ -433,7 +433,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
           Les agences de marketing digital (petites structures de 5-20 personnes) sont les employeurs les plus ouverts aux lycéens stagiaires. Elles ont besoin d'aide pour la production de contenu et apprécient les candidats curieux et autonomes. Cherchez des agences locales, contactez-les directement.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Les startups e-commerce sont également d'excellents terrains de stage — elles ont souvent de petites équipes où chaque membre porte plusieurs casquettes, ce qui vous permettra de toucher à de nombreux aspects du marketing digital.
+          Les startups e-commerce sont également d'excellents terrains de stage — elles ont souvent de petites équipes où chaque membre porte plusieurs casquettes, ce qui vous permettra de toucher à de nombreux aspects du marketing digital. Avant de postuler, préparez un <a href="/fr/blog/cv-stage-lyceen-16-ans" className="text-indigo-600 hover:underline font-medium">CV lycéen adapté</a> et entraînez-vous pour <a href="/fr/blog/entretien-stage-lyceen-conseils" className="text-indigo-600 hover:underline font-medium">l'entretien</a>.
         </p>
         <Callout color="amber">
           <strong>Conseil :</strong> Avant de postuler, créez un mini-portfolio. Analysez les réseaux sociaux d'une marque que vous admirez et rédigez trois suggestions d'amélioration concrètes. Joindre ce document à votre candidature montre de l'initiative et du jugement — deux qualités très recherchées.

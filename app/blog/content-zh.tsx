@@ -144,6 +144,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed mb-4">
           找到高质量实习机会有四个主要渠道，各有其权衡。
         </p>
+        <p className="text-gray-700 leading-relaxed mb-4">找到机会后，下一步是准备好<a href="/zh/blog/shixi-jianlixie-zhinan" className="text-indigo-600 hover:underline font-medium">实习简历</a>和<a href="/zh/blog/shixi-mianshi-zhunbei-jiqiao" className="text-indigo-600 hover:underline font-medium">面试技巧</a>——我们的专题指南涵盖高中生的完整申请准备。</p>
         <ul className="space-y-4 mb-6">
           <Check><strong>直接申请本地企业</strong>——对中小企业尤为有效。一封精心撰写的申请邮件往往会得到回应。提供具体日期，解释您在寻找什么，并说明任何相关经历。</Check>
           <Check><strong>大型机构的结构化项目</strong>——巴克莱、毕马威、德勤、高盛和大多数大型专业服务公司为12年级和13年级学生提供春季和夏季洞察项目。申请通常在9月至11月开放。</Check>
@@ -170,7 +171,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
   'shixi-jianlixie-zhinan': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        大多数高中生在写简历时犯同一个错误：试图"填满"页面，把每一行空白都塞进内容。招聘实习生的招聘官每天看几十份申请，他们需要的不是篇幅，而是清晰度和真实感。没有工作经验也能写出有说服力的简历——前提是你知道该展示什么。
+        大多数高中生在写简历时犯同一个错误：试图"填满"页面，把每一行空白都塞进内容。招聘实习生的招聘官每天看几十份申请，他们需要的不是篇幅，而是清晰度和真实感。没有工作经验也能写出有说服力的简历——前提是你知道该展示什么。简历完成后，建议同步进行<a href="/zh/blog/shixi-mianshi-zhunbei-jiqiao" className="text-indigo-600 hover:underline font-medium">面试准备</a>；还没找到机会的话，先看<a href="/zh/blog/gaozhong-shixi-ruhe-xunzhao" className="text-indigo-600 hover:underline font-medium">高中生实习完整指南</a>。
       </p>
 
       <section>
@@ -232,7 +233,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
   'shixi-mianshi-zhunbei-jiqiao': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        面试焦虑是正常的——对任何年龄的人都是如此。但大多数面试失败不是因为焦虑，而是因为准备不足。对于实习面试来说，招聘官的期望值本来就不高：他们招的是学生，不是职场老手。你真正需要的是展示好奇心、准备充分，以及基本的专业意识。
+        面试焦虑是正常的——对任何年龄的人都是如此。但大多数面试失败不是因为焦虑，而是因为准备不足。面试前，先确认你的<a href="/zh/blog/shixi-jianlixie-zhinan" className="text-indigo-600 hover:underline font-medium">实习简历</a>已经就绪——面试官通常会在谈话中参考你的简历。对于实习面试来说，招聘官的期望值本来就不高：他们招的是学生，不是职场老手。你真正需要的是展示好奇心、准备充分，以及基本的专业意识。
       </p>
 
       <section>
@@ -274,7 +275,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">面试后该做什么</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          面试结束后24小时内发送感谢邮件。内容简短：感谢对方时间，提到面试中令你印象深刻的一点（具体说明），并重申你的热情。这一步骤90%的申请者都会跳过——这正是你的机会。
+          面试结束后24小时内发送感谢邮件。内容简短：感谢对方时间，提到面试中令你印象深刻的一点（具体说明），并重申你的热情。这一步骤90%的申请者都会跳过——这正是你的机会。如果还在寻找合适机会，参考<a href="/zh/blog/gaozhong-shixi-ruhe-xunzhao" className="text-indigo-600 hover:underline font-medium">高中生实习完整指南</a>了解最有效的寻找渠道。
         </p>
       </section>
     </>
@@ -327,6 +328,9 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
           <Bullet><strong>学校或社区组织</strong>——帮助学校活动、非盈利机构或本地商户管理社交媒体，积累有据可查的实战经验。</Bullet>
           <Bullet><strong>招聘平台</strong>——领英、智联招聘、Boss直聘都有实习岗位，但竞争更激烈，通常需要简历和求职信。</Bullet>
         </ul>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          申请前，准备好你的<a href="/zh/blog/shixi-jianlixie-zhinan" className="text-indigo-600 hover:underline font-medium">实习简历</a>，并了解<a href="/zh/blog/shixi-mianshi-zhunbei-jiqiao" className="text-indigo-600 hover:underline font-medium">面试准备技巧</a>——数字营销面试通常会测试你对具体平台和数据的理解。
+        </p>
       </section>
     </>
   ),

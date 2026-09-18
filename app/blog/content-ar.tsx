@@ -311,7 +311,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">كيف تكتب طلب تدريب مقنع؟</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          رسالة طلب التدريب يجب أن تكون قصيرة (فقرتان أو ثلاث) ومحددة:
+          رسالة طلب التدريب يجب أن تكون قصيرة (فقرتان أو ثلاث) ومحددة، وتُرفق دائماً مع <a href="/ar/blog/sirat-dhatiyya-staj-16" className="text-indigo-600 hover:underline font-medium">سيرة ذاتية قوية</a> — دليلنا يوضح ما تضمّنه حتى بدون خبرة عملية:
         </p>
         <ul className="space-y-3 mb-6">
           <Bullet>الفقرة الأولى: من أنت ولماذا اخترت هذه الشركة تحديداً (اذكر شيئاً محدداً عن الشركة)</Bullet>
@@ -362,7 +362,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
   'sirat-dhatiyya-staj-16': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        كتابة سيرة ذاتية وعمرك 16 عاماً تبدو مهمة شبه مستحيلة — لا خبرة عمل، لا إنجازات مهنية. لكن الواقع مختلف: لديك ما يكفي لكتابة سيرة ذاتية قوية إذا عرفت كيف تُقدم ما لديك بشكل فعّال.
+        كتابة سيرة ذاتية وعمرك 16 عاماً تبدو مهمة شبه مستحيلة — لا خبرة عمل، لا إنجازات مهنية. لكن الواقع مختلف: لديك ما يكفي لكتابة سيرة ذاتية قوية إذا عرفت كيف تُقدم ما لديك بشكل فعّال. بعد تجهيز سيرتك، اطّلع على كيفية <a href="/ar/blog/muqabala-staj-nasayih" className="text-indigo-600 hover:underline font-medium">التحضير لمقابلة التدريب</a> — الخطوة الحاسمة التالية.
       </p>
 
       <section>
@@ -414,7 +414,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
   'muqabala-staj-nasayih': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        مقابلة التدريب هي أول مقابلة عمل حقيقية في حياتك على الأغلب. الجيد في الأمر أن المعيار المطلوب منك منخفض نسبياً — لكن التحضير الجيد يُحدث فرقاً هائلاً بين القبول والرفض.
+        مقابلة التدريب هي أول مقابلة عمل حقيقية في حياتك على الأغلب. الجيد في الأمر أن المعيار المطلوب منك منخفض نسبياً — لكن التحضير الجيد يُحدث فرقاً هائلاً بين القبول والرفض. تأكد أن <a href="/ar/blog/sirat-dhatiyya-staj-16" className="text-indigo-600 hover:underline font-medium">سيرتك الذاتية</a> جاهزة أولاً — المحاورون كثيراً ما يرجعون إليها خلال المقابلة. وإذا لم تجد فرصة بعد، <a href="/ar/blog/kayfa-tajid-staj-dubai" className="text-indigo-600 hover:underline font-medium">دليل البحث عن تدريب في دبي</a> يقدم خطوات عملية للعثور على الفرصة المناسبة.
       </p>
 
       <section>

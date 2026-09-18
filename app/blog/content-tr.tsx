@@ -1537,6 +1537,9 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <Callout color="emerald">
           <strong className="text-emerald-900">Değerlendirmenin Gerekçesi:</strong> Tüm adayların aynı deneyim düzeyine sahip olduğu staj pozisyonlarında — hiç —, fark yaratan sinyal kanıtlanabilir yetenek. Eduentry hazırlık raporu tam bunu sağlıyor: görüşmeden önce objektif kanıt.
         </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          CV hazır olduğunda, bir sonraki adım <a href="/tr/blog/staj-mulakati-hazirlik-rehberi" className="text-indigo-600 hover:underline font-medium">mülakat hazırlığı</a>dır — rehberimiz iş geçmişi olmadan etkili yanıtlar vermeyi adım adım anlatıyor. Henüz staj bulmadıysanız, <a href="/tr/blog/staj-nasil-bulunur" className="text-indigo-600 hover:underline font-medium">staj nasıl bulunur</a> yazımız pratik adım adım yol haritası sunuyor.
+        </p>
       </section>
     </>
   ),
@@ -1544,7 +1547,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
   'staj-mulakati-hazirlik-rehberi': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        Lise öğrencileri için staj mülakatı göründüğünden daha az korkutucu ve çoğu adayın sandığından çok daha hazırlanabilir bir süreç. Öğrenci düzeyinde staj görüşmecileri cilalı, yıllarca deneyimli bir aday beklemez. Neden orada olduğunu ciddiye almış, söyleyecek somut bir şeyi olan ve öğrenme kapasitesini gösteren birini bekler.
+        Lise öğrencileri için staj mülakatı göründüğünden daha az korkutucu ve çoğu adayın sandığından çok daha hazırlanabilir bir süreç. Mülakata gitmeden önce <a href="/tr/blog/staj-icin-cv-nasil-yazilir" className="text-indigo-600 hover:underline font-medium">güçlü bir staj CV'si</a> hazırlamış olduğunuzdan emin olun — görüşmeciler CV'yi mülakat sırasında sık sık referans alır. Öğrenci düzeyinde staj görüşmecileri cilalı, yıllarca deneyimli bir aday beklemez. Neden orada olduğunu ciddiye almış, söyleyecek somut bir şeyi olan ve öğrenme kapasitesini gösteren birini bekler.
       </p>
       <p className="text-gray-700 leading-relaxed">
         Bu makale en sık sorulan soru kategorilerini, iş geçmişi olmadan yanıtları nasıl yapılandıracağınızı ve pozisyonu kaybettiren somut hataları ele alıyor.
@@ -1582,6 +1585,9 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <Callout color="emerald">
           <strong className="text-emerald-900">Hazırlığın Somut Avantajı:</strong> Mülakata Eduentry değerlendirme raporunuzu getirmek, öz farkındalık sorularını iddialar yerine verilerle yanıtlamanızı sağlıyor — ve yaşıtlarınızın büyük çoğunluğunun göstermediği bir ciddiyet düzeyi iletiliyor.
         </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Henüz staj bulmadıysanız, <a href="/tr/blog/staj-nasil-bulunur" className="text-indigo-600 hover:underline font-medium">staj nasıl bulunur rehberimiz</a> platformlardan soğuk e-postaya pratik adım adım yol haritası sunuyor.
+        </p>
       </section>
     </>
   ),
@@ -2776,7 +2782,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           İyi hazırlanmış iki belge, neredeyse tüm lise staj başvurularını kapsar:
         </p>
         <ul className="space-y-3 mb-6">
-          <Bullet><strong>CV (Özgeçmiş):</strong> Bir sayfa, açık yazı tipi, net bölümler. Okul bilgileri, ilgi alanları, gönüllü çalışmalar, okul projeleri. Deneyim bölümü boşsa endişelenme — bu yaşta herkes için böyledir.</Bullet>
+          <Bullet><strong>CV (Özgeçmiş):</strong> Bir sayfa, açık yazı tipi, net bölümler. Okul bilgileri, ilgi alanları, gönüllü çalışmalar, okul projeleri. Deneyim bölümü boşsa endişelenme — bu yaşta herkes için böyledir. <a href="/tr/blog/staj-icin-cv-nasil-yazilir" className="text-indigo-600 hover:underline font-medium">Staj CV'si nasıl yazılır rehberimiz</a> tam olarak ne ekleneceğini adım adım açıklıyor.</Bullet>
           <Bullet><strong>Kapak mektubu veya e-posta:</strong> Neden bu şirketi seçtiğini ve stajdan ne umduğunu anlatan kısa bir metin. Jenerik şablonlar fark edilir — kişiselleştirilmiş bir paragraf çok daha etkilidir.</Bullet>
         </ul>
       </section>
@@ -2790,6 +2796,9 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Ret aldığında geri bildirim istemek hem profesyonel hem de son derece yararlıdır. "Gelecekteki başvurularım için geri bildirim alabilir miyim?" sorusu işverenler tarafından olumlu karşılanır ve gelişimine somut katkı sağlar.
         </p>
         <Check>Başvurduğun şirketleri, tarihlerini ve iletişim geçmişini takip etmek için basit bir tablo tut. Bu organizasyon, hem süreci yönetmeni kolaylaştırır hem de mülakatlarda hazırlıklı olmanı sağlar.</Check>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Başvurun olumlu yanıt alırsa, <a href="/tr/blog/staj-mulakati-hazirlik-rehberi" className="text-indigo-600 hover:underline font-medium">mülakat hazırlık rehberimiz</a> lise öğrencisi olarak etkili yanıtlar vermeyi adım adım anlatıyor.
+        </p>
       </section>
     </>
   ),
