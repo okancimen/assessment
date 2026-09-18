@@ -97,6 +97,8 @@ export default async function ZHBlogPostPage({ params }: { params: Promise<{ slu
       jobTitle: 'Education Professional, co-founder of Edualist.com',
       url: 'https://edualist.com',
     },
+    image: `${BASE_URL}/zh/blog/${slug}/opengraph-image`,
+    wordCount: Math.round(Number(post.readTime?.match(/\d+/)?.[0] ?? 8) * 200),
     publisher: { '@id': 'https://eduentry.com/#organization' },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     isPartOf: { '@id': 'https://eduentry.com/#website' },
