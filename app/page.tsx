@@ -176,6 +176,12 @@ const INTERNSHIP_PROGRAM_SCHEMA = {
   typicalAgeRange: '14-18',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'No prerequisites required',
+  hasCourse: [
+    { '@type': 'Course', name: 'Technology', description: 'Aptitude, domain knowledge and workplace skills for technology and software internships — adaptive questions' },
+    { '@type': 'Course', name: 'Business', description: 'Aptitude, domain knowledge and workplace skills for business and finance internships — adaptive questions' },
+    { '@type': 'Course', name: 'Data Analytics', description: 'Aptitude, domain knowledge and workplace skills for data analytics internships — adaptive questions' },
+    { '@type': 'Course', name: 'Digital Marketing', description: 'Aptitude, domain knowledge and workplace skills for digital marketing internships — adaptive questions' },
+  ],
 }
 
 

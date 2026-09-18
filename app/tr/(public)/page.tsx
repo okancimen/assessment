@@ -140,6 +140,50 @@ const FEATURED_BLOG_SCHEMA = {
     })),
 }
 
+const ACADEMIC_PROGRAM_SCHEMA_TR = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Uyarlanabilir Akademik Değerlendirme — 6–17 Yaş',
+  description: 'İngilizce, Matematik, Sözel ve Sözel Olmayan Akıl Yürütme alanlarında UK, ABD, PISA ve IB standartlarıyla karşılaştırmalı ücretsiz uyarlanabilir değerlendirme.',
+  url: 'https://eduentry.com/tr',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Akademik Değerlendirme Raporu', credentialCategory: 'certificate' },
+  timeToComplete: 'PT90M',
+  educationalProgramMode: 'online',
+  inLanguage: 'tr',
+  typicalAgeRange: '6-17',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'Ön koşul gerekmez',
+  hasCourse: [
+    { '@type': 'Course', name: 'İngilizce', description: 'Okuduğunu anlama, dilbilgisi, kelime bilgisi — 15 uyarlanabilir soru' },
+    { '@type': 'Course', name: 'Matematik', description: 'Aritmetik, cebir, geometri, problem çözme — 15 uyarlanabilir soru' },
+    { '@type': 'Course', name: 'Sözel Akıl Yürütme', description: 'Analoglar, sınıflandırmalar, diziler — 15 uyarlanabilir soru' },
+    { '@type': 'Course', name: 'Sözel Olmayan Akıl Yürütme', description: 'Örüntüler, uzamsal akıl yürütme, matrisler — 15 uyarlanabilir soru' },
+  ],
+}
+
+const INTERNSHIP_PROGRAM_SCHEMA_TR = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Staj Hazırlık Değerlendirmesi',
+  description: '14 yaş üstü lise öğrencileri için 34 soruluk uyarlanabilir değerlendirme — Teknoloji, İş Dünyası, Veri Analitiği ve Dijital Pazarlama alanlarında genel yetenek, alan bilgisi ve iş yeri becerilerini ölçer.',
+  url: 'https://eduentry.com/tr/staj',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Staj Hazırlık Raporu', credentialCategory: 'certificate' },
+  timeToComplete: 'PT35M',
+  educationalProgramMode: 'online',
+  inLanguage: 'tr',
+  typicalAgeRange: '14-18',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'Ön koşul gerekmez',
+  hasCourse: [
+    { '@type': 'Course', name: 'Teknoloji', description: 'Teknoloji ve yazılım stajları için yetenek, alan bilgisi ve iş yeri becerileri' },
+    { '@type': 'Course', name: 'İş Dünyası', description: 'İş ve finans stajları için yetenek, alan bilgisi ve iş yeri becerileri' },
+    { '@type': 'Course', name: 'Veri Analitiği', description: 'Veri analitiği stajları için yetenek, alan bilgisi ve iş yeri becerileri' },
+    { '@type': 'Course', name: 'Dijital Pazarlama', description: 'Dijital pazarlama stajları için yetenek, alan bilgisi ve iş yeri becerileri' },
+  ],
+}
+
 const SOFTWARE_SCHEMA_TR = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
@@ -166,6 +210,8 @@ export default function TurkishHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_TR) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA_TR) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA_TR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_TR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FEATURED_BLOG_SCHEMA) }} />
 

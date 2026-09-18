@@ -117,6 +117,50 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const ACADEMIC_PROGRAM_SCHEMA_RU = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Адаптивная академическая оценка — от 6 до 17 лет',
+  description: 'Бесплатная адаптивная оценка по английскому языку, математике, вербальному и невербальному мышлению с международным сравнением по стандартам UK, США, PISA и IB.',
+  url: 'https://eduentry.com/ru',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Академический отчёт об оценке', credentialCategory: 'certificate' },
+  timeToComplete: 'PT90M',
+  educationalProgramMode: 'online',
+  inLanguage: 'ru',
+  typicalAgeRange: '6-17',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'RUB', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'Предварительные требования отсутствуют',
+  hasCourse: [
+    { '@type': 'Course', name: 'Английский язык', description: 'Понимание текста, грамматика, лексика — 15 адаптивных вопросов' },
+    { '@type': 'Course', name: 'Математика', description: 'Арифметика, алгебра, геометрия, решение задач — 15 адаптивных вопросов' },
+    { '@type': 'Course', name: 'Вербальное мышление', description: 'Аналогии, классификации, последовательности — 15 адаптивных вопросов' },
+    { '@type': 'Course', name: 'Невербальное мышление', description: 'Паттерны, пространственное мышление, матрицы — 15 адаптивных вопросов' },
+  ],
+}
+
+const INTERNSHIP_PROGRAM_SCHEMA_RU = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Оценка готовности к стажировке',
+  description: 'Адаптивная оценка из 34 вопросов для школьников от 14 лет — измеряет общие способности, знания предметной области и профессиональные навыки в сферах технологий, бизнеса, аналитики данных и цифрового маркетинга.',
+  url: 'https://eduentry.com/ru/stazhirovka',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Отчёт о готовности к стажировке', credentialCategory: 'certificate' },
+  timeToComplete: 'PT35M',
+  educationalProgramMode: 'online',
+  inLanguage: 'ru',
+  typicalAgeRange: '14-18',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'RUB', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'Предварительные требования отсутствуют',
+  hasCourse: [
+    { '@type': 'Course', name: 'Технологии', description: 'Способности, знания и навыки для стажировок в сфере технологий и программного обеспечения' },
+    { '@type': 'Course', name: 'Бизнес', description: 'Способности, знания и навыки для стажировок в сфере бизнеса и финансов' },
+    { '@type': 'Course', name: 'Аналитика данных', description: 'Способности, знания и навыки для стажировок в сфере аналитики данных' },
+    { '@type': 'Course', name: 'Цифровой маркетинг', description: 'Способности, знания и навыки для стажировок в сфере цифрового маркетинга' },
+  ],
+}
+
 const SOFTWARE_SCHEMA_RU = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
@@ -143,6 +187,8 @@ export default function RussianHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_RU) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA_RU) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA_RU) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_RU) }} />
 
       {/* Hero */}

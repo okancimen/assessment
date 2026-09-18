@@ -119,6 +119,50 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const ACADEMIC_PROGRAM_SCHEMA_ES = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Evaluación Académica Adaptativa — 6 a 17 años',
+  description: 'Evaluación adaptativa gratuita en Inglés, Matemáticas, Razonamiento Verbal y No Verbal comparada con estándares del Reino Unido, EE.UU., PISA e IB.',
+  url: 'https://eduentry.com/es',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Informe de Evaluación Académica', credentialCategory: 'certificate' },
+  timeToComplete: 'PT90M',
+  educationalProgramMode: 'online',
+  inLanguage: 'es',
+  typicalAgeRange: '6-17',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'Sin requisitos previos',
+  hasCourse: [
+    { '@type': 'Course', name: 'Inglés', description: 'Comprensión lectora, gramática, vocabulario — 15 preguntas adaptativas' },
+    { '@type': 'Course', name: 'Matemáticas', description: 'Aritmética, álgebra, geometría, resolución de problemas — 15 preguntas adaptativas' },
+    { '@type': 'Course', name: 'Razonamiento Verbal', description: 'Analogías, clasificaciones, secuencias — 15 preguntas adaptativas' },
+    { '@type': 'Course', name: 'Razonamiento No Verbal', description: 'Patrones, razonamiento espacial, matrices — 15 preguntas adaptativas' },
+  ],
+}
+
+const INTERNSHIP_PROGRAM_SCHEMA_ES = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Evaluación de Preparación para Prácticas',
+  description: 'Evaluación adaptativa de 34 preguntas para estudiantes de instituto mayores de 14 años — mide aptitud, conocimientos del sector y habilidades profesionales en Tecnología, Empresa, Análisis de Datos y Marketing Digital.',
+  url: 'https://eduentry.com/es/practicas',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Informe de Preparación para Prácticas', credentialCategory: 'certificate' },
+  timeToComplete: 'PT35M',
+  educationalProgramMode: 'online',
+  inLanguage: 'es',
+  typicalAgeRange: '14-18',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'Sin requisitos previos',
+  hasCourse: [
+    { '@type': 'Course', name: 'Tecnología', description: 'Aptitud, conocimientos y habilidades para prácticas en tecnología y software' },
+    { '@type': 'Course', name: 'Empresa', description: 'Aptitud, conocimientos y habilidades para prácticas en empresa y finanzas' },
+    { '@type': 'Course', name: 'Análisis de Datos', description: 'Aptitud, conocimientos y habilidades para prácticas en análisis de datos' },
+    { '@type': 'Course', name: 'Marketing Digital', description: 'Aptitud, conocimientos y habilidades para prácticas en marketing digital' },
+  ],
+}
+
 const SOFTWARE_SCHEMA_ES = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
@@ -145,6 +189,8 @@ export default function SpanishHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_ES) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA_ES) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA_ES) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_ES) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}

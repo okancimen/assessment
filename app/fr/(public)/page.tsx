@@ -116,6 +116,50 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const ACADEMIC_PROGRAM_SCHEMA_FR = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Évaluation Académique Adaptative — de 6 à 17 ans',
+  description: 'Évaluation adaptative gratuite en Anglais, Mathématiques, Raisonnement Verbal et Non-Verbal, comparée aux standards du Royaume-Uni, des États-Unis, de PISA et de l\'IB.',
+  url: 'https://eduentry.com/fr',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Rapport d\'Évaluation Académique', credentialCategory: 'certificate' },
+  timeToComplete: 'PT90M',
+  educationalProgramMode: 'online',
+  inLanguage: 'fr',
+  typicalAgeRange: '6-17',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'Aucun prérequis',
+  hasCourse: [
+    { '@type': 'Course', name: 'Anglais', description: 'Compréhension, grammaire, vocabulaire — 15 questions adaptatives' },
+    { '@type': 'Course', name: 'Mathématiques', description: 'Arithmétique, algèbre, géométrie, résolution de problèmes — 15 questions adaptatives' },
+    { '@type': 'Course', name: 'Raisonnement Verbal', description: 'Analogies, classifications, séquences — 15 questions adaptatives' },
+    { '@type': 'Course', name: 'Raisonnement Non-Verbal', description: 'Patterns, raisonnement spatial, matrices — 15 questions adaptatives' },
+  ],
+}
+
+const INTERNSHIP_PROGRAM_SCHEMA_FR = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Évaluation de Préparation aux Stages',
+  description: 'Évaluation adaptative de 34 questions pour lycéens de plus de 14 ans — mesure l\'aptitude, les connaissances du secteur et les compétences professionnelles en Technologie, Entreprise, Analyse de données et Marketing digital.',
+  url: 'https://eduentry.com/fr/stage',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Rapport de Préparation aux Stages', credentialCategory: 'certificate' },
+  timeToComplete: 'PT35M',
+  educationalProgramMode: 'online',
+  inLanguage: 'fr',
+  typicalAgeRange: '14-18',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'Aucun prérequis',
+  hasCourse: [
+    { '@type': 'Course', name: 'Technologie', description: 'Aptitude, connaissances et compétences pour les stages en technologie et logiciels' },
+    { '@type': 'Course', name: 'Entreprise', description: 'Aptitude, connaissances et compétences pour les stages en entreprise et finance' },
+    { '@type': 'Course', name: 'Analyse de Données', description: 'Aptitude, connaissances et compétences pour les stages en analyse de données' },
+    { '@type': 'Course', name: 'Marketing Digital', description: 'Aptitude, connaissances et compétences pour les stages en marketing digital' },
+  ],
+}
+
 const SOFTWARE_SCHEMA_FR = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
@@ -142,6 +186,8 @@ export default function FrenchHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_FR) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA_FR) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA_FR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_FR) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}

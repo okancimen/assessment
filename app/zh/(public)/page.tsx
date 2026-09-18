@@ -125,6 +125,50 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const ACADEMIC_PROGRAM_SCHEMA_ZH = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: '自适应学术评估 — 6至17岁',
+  description: '免费自适应评估，涵盖英语、数学、语言推理和非语言推理，与英国、美国、PISA和IB标准进行国际对标。',
+  url: 'https://eduentry.com/zh',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: '学术评估报告', credentialCategory: 'certificate' },
+  timeToComplete: 'PT90M',
+  educationalProgramMode: 'online',
+  inLanguage: 'zh',
+  typicalAgeRange: '6-17',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'CNY', availability: 'https://schema.org/InStock' },
+  programPrerequisites: '无需任何前提条件',
+  hasCourse: [
+    { '@type': 'Course', name: '英语', description: '阅读理解、语法、词汇 — 15道自适应题目' },
+    { '@type': 'Course', name: '数学', description: '算术、代数、几何、解题 — 15道自适应题目' },
+    { '@type': 'Course', name: '语言推理', description: '类比、分类、序列 — 15道自适应题目' },
+    { '@type': 'Course', name: '非语言推理', description: '图案、空间推理、矩阵 — 15道自适应题目' },
+  ],
+}
+
+const INTERNSHIP_PROGRAM_SCHEMA_ZH = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: '实习准备评估',
+  description: '针对14岁以上高中生的34题自适应评估 — 测量科技、商业、数据分析和数字营销方向的综合能力、专业知识和职场技能。',
+  url: 'https://eduentry.com/zh/shixi',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: '实习准备报告', credentialCategory: 'certificate' },
+  timeToComplete: 'PT35M',
+  educationalProgramMode: 'online',
+  inLanguage: 'zh',
+  typicalAgeRange: '14-18',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'CNY', availability: 'https://schema.org/InStock' },
+  programPrerequisites: '无需任何前提条件',
+  hasCourse: [
+    { '@type': 'Course', name: '科技', description: '科技与软件实习所需的能力、知识与职场技能' },
+    { '@type': 'Course', name: '商业', description: '商业与金融实习所需的能力、知识与职场技能' },
+    { '@type': 'Course', name: '数据分析', description: '数据分析实习所需的能力、知识与职场技能' },
+    { '@type': 'Course', name: '数字营销', description: '数字营销实习所需的能力、知识与职场技能' },
+  ],
+}
+
 const SOFTWARE_SCHEMA_ZH = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
@@ -151,6 +195,8 @@ export default function ChineseHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_ZH) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA_ZH) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA_ZH) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_ZH) }} />
 
       {/* Hero */}

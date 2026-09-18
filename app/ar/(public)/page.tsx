@@ -117,6 +117,50 @@ const ORGANIZATION_SCHEMA = {
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
 }
 
+const ACADEMIC_PROGRAM_SCHEMA_AR = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'التقييم الأكاديمي التكيفي — من 6 إلى 17 سنة',
+  description: 'تقييم تكيفي مجاني في اللغة الإنجليزية والرياضيات والتفكير اللفظي وغير اللفظي مقارنةً بمعايير المملكة المتحدة والولايات المتحدة وPISA وIB.',
+  url: 'https://eduentry.com/ar',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'تقرير التقييم الأكاديمي', credentialCategory: 'certificate' },
+  timeToComplete: 'PT90M',
+  educationalProgramMode: 'online',
+  inLanguage: 'ar',
+  typicalAgeRange: '6-17',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'AED', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'لا توجد متطلبات مسبقة',
+  hasCourse: [
+    { '@type': 'Course', name: 'اللغة الإنجليزية', description: 'الفهم القرائي والقواعد والمفردات — 15 سؤالاً تكيفياً' },
+    { '@type': 'Course', name: 'الرياضيات', description: 'الحساب والجبر والهندسة وحل المسائل — 15 سؤالاً تكيفياً' },
+    { '@type': 'Course', name: 'التفكير اللفظي', description: 'القياسات والتصنيفات والتسلسلات — 15 سؤالاً تكيفياً' },
+    { '@type': 'Course', name: 'التفكير غير اللفظي', description: 'الأنماط والتفكير المكاني والمصفوفات — 15 سؤالاً تكيفياً' },
+  ],
+}
+
+const INTERNSHIP_PROGRAM_SCHEMA_AR = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'تقييم الاستعداد للتدريب',
+  description: 'تقييم تكيفي من 34 سؤالاً لطلاب الثانوية فوق 14 عاماً — يقيس الاستعداد العام والمعرفة المتخصصة والمهارات المهنية في مجالات التكنولوجيا والأعمال وتحليل البيانات والتسويق الرقمي.',
+  url: 'https://eduentry.com/ar/tadrib',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'تقرير الاستعداد للتدريب', credentialCategory: 'certificate' },
+  timeToComplete: 'PT35M',
+  educationalProgramMode: 'online',
+  inLanguage: 'ar',
+  typicalAgeRange: '14-18',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'AED', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'لا توجد متطلبات مسبقة',
+  hasCourse: [
+    { '@type': 'Course', name: 'التكنولوجيا', description: 'الاستعداد والمعرفة والمهارات لفرص التدريب في التكنولوجيا والبرمجيات' },
+    { '@type': 'Course', name: 'الأعمال', description: 'الاستعداد والمعرفة والمهارات لفرص التدريب في الأعمال والمالية' },
+    { '@type': 'Course', name: 'تحليل البيانات', description: 'الاستعداد والمعرفة والمهارات لفرص التدريب في تحليل البيانات' },
+    { '@type': 'Course', name: 'التسويق الرقمي', description: 'الاستعداد والمعرفة والمهارات لفرص التدريب في التسويق الرقمي' },
+  ],
+}
+
 const SOFTWARE_SCHEMA_AR = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
@@ -143,6 +187,8 @@ export default function ArabicHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_AR) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA_AR) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA_AR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_AR) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
