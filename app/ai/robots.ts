@@ -1,8 +1,17 @@
 import type { MetadataRoute } from 'next'
 
 const AI_BOTS = [
-  'GPTBot', 'ClaudeBot', 'Google-Extended', 'PerplexityBot',
-  'Amazonbot', 'anthropic-ai', 'cohere-ai', 'Meta-ExternalAgent', 'Bytespider',
+  'GPTBot', 'ChatGPT-User', 'OAI-SearchBot',
+  'ClaudeBot', 'anthropic-ai',
+  'Google-Extended',
+  'PerplexityBot',
+  'Amazonbot',
+  'cohere-ai',
+  'Meta-ExternalAgent',
+  'Bytespider',
+  'Applebot-Extended',
+  'CCBot',
+  'YouBot',
 ]
 
 const PRIVATE = ['/apply', '/register', '/dashboard', '/admin/']

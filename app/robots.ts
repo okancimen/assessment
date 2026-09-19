@@ -13,8 +13,17 @@ const PRIVATE = [
 ]
 
 const AI_BOTS = [
-  'GPTBot', 'ClaudeBot', 'Google-Extended', 'PerplexityBot',
-  'Amazonbot', 'anthropic-ai', 'cohere-ai', 'Meta-ExternalAgent', 'Bytespider',
+  'GPTBot', 'ChatGPT-User', 'OAI-SearchBot',
+  'ClaudeBot', 'anthropic-ai',
+  'Google-Extended',
+  'PerplexityBot',
+  'Amazonbot',
+  'cohere-ai',
+  'Meta-ExternalAgent',
+  'Bytespider',
+  'Applebot-Extended',
+  'CCBot',
+  'YouBot',
 ]
 
 export default function robots(): MetadataRoute.Robots {
