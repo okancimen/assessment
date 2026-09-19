@@ -2,6 +2,92 @@ import { type NextRequest } from 'next/server'
 import { GRAMMAR_AREAS } from '@/app/grammar-schools/data'
 import { BLOG_POSTS } from '@/app/blog/posts'
 
+const ASSESSMENT_PHASES = [
+  { phase: 'General Aptitude',   questions: 10, measures: 'Verbal reasoning, numerical reasoning, pattern recognition' },
+  { phase: 'Domain Knowledge',   questions: 10, measures: 'Track-specific applied knowledge (varies by track)' },
+  { phase: 'Workplace Skills',   questions: 8,  measures: 'Situational judgement, communication, teamwork under pressure' },
+  { phase: 'Interest Profile',   questions: 6,  measures: 'Track alignment, motivation, learning style, role fit' },
+]
+
+const TRACKS = [
+  {
+    id: 'tech',
+    name: 'Technology',
+    url: 'https://eduentry.ai/tech',
+    description: 'For students interested in software, IT, cybersecurity, UX, or data engineering internships.',
+    domainTopics: [
+      'Algorithm & Computational Thinking',
+      'Data Types & Variables',
+      'Loops & Conditionals',
+      'Debugging & Error Analysis',
+      'Software Development Lifecycle',
+      'Cybersecurity Fundamentals',
+      'Networking Basics',
+      'UX & Interface Design',
+      'Technology Tool Selection',
+      'Tech Ethics & Digital Citizenship',
+    ],
+    sampleRoles: ['Junior Software Developer', 'IT Support Analyst', 'Cybersecurity Analyst', 'UX/UI Designer', 'Data Engineer'],
+  },
+  {
+    id: 'business',
+    name: 'Business',
+    url: 'https://eduentry.ai/business',
+    description: 'For students interested in finance, strategy, operations, or management internships.',
+    domainTopics: [
+      'Market Analysis',
+      'Financial Literacy',
+      'Business Case Reasoning',
+      'SWOT & Competitive Analysis',
+      'Customer & Stakeholder Thinking',
+      'Operations & Process Thinking',
+      'Business Strategy',
+      'Negotiation & Influence',
+      'Ethics & Corporate Responsibility',
+      'Entrepreneurial Thinking',
+    ],
+    sampleRoles: ['Business Analyst', 'Junior Financial Analyst', 'Operations Coordinator', 'Strategy & Planning Analyst', 'HR Administrator'],
+  },
+  {
+    id: 'data-analytics',
+    name: 'Data Analytics',
+    url: 'https://eduentry.ai/data-analytics',
+    description: 'For students interested in data, statistics, SQL, and insight generation internships.',
+    domainTopics: [
+      'Chart & Graph Reading',
+      'Descriptive Statistics',
+      'Data Quality & Errors',
+      'SQL & Querying Logic',
+      'Correlation vs Causation',
+      'A/B Testing Concepts',
+      'Business Metric Interpretation',
+      'Data Storytelling',
+      'Predictive Thinking',
+      'Data Ethics & Privacy',
+    ],
+    sampleRoles: ['Junior Data Analyst', 'Business Intelligence Analyst', 'Data Quality Analyst', 'Reporting Analyst'],
+  },
+  {
+    id: 'digital-marketing',
+    name: 'Digital Marketing',
+    url: 'https://eduentry.ai/digital-marketing',
+    description: 'For students interested in SEO, social media, content, and campaign internships.',
+    domainTopics: [
+      'SEO Fundamentals',
+      'Social Media Strategy',
+      'Content Marketing',
+      'Paid Advertising (PPC)',
+      'Email Marketing',
+      'Analytics & Conversion',
+      'Brand Positioning',
+      'Influencer & Community Marketing',
+      'Campaign Planning',
+      'Marketing Ethics & Compliance',
+    ],
+    sampleRoles: ['Digital Marketing Assistant', 'Social Media Coordinator', 'SEO Analyst', 'Content Marketing Intern', 'PPC Analyst'],
+  },
+]
+
 const SERVER_INFO = { name: 'Eduentry', version: '1.0' }
 const PROTOCOL_VERSION = '2024-11-05'
 
@@ -104,6 +190,33 @@ function callTool(name: string, args: Record<string, unknown>): string {
       return JSON.stringify(SUBJECTS, null, 2)
     }
 
+    case 'list_tracks': {
+      const trackId = typeof args.track === 'string' ? args.track : null
+      const tracks = trackId ? TRACKS.filter((t) => t.id === trackId) : TRACKS
+
+      if (tracks.length === 0) {
+        return `No track found with id "${trackId}". Available: ${TRACKS.map((t) => t.id).join(', ')}`
+      }
+
+      const result = {
+        assessment: {
+          totalQuestions: 34,
+          duration: '~35 minutes',
+          phases: ASSESSMENT_PHASES,
+        },
+        tracks: tracks.map((t) => ({
+          id: t.id,
+          name: t.name,
+          url: t.url,
+          description: t.description,
+          domainTopics: t.domainTopics,
+          sampleRoles: t.sampleRoles,
+        })),
+      }
+
+      return JSON.stringify(result, null, 2)
+    }
+
     case 'list_blog_posts': {
       const tag = typeof args.tag === 'string' ? args.tag.toLowerCase() : null
       const posts = tag
@@ -168,6 +281,20 @@ const TOOLS = [
     inputSchema: {
       type: 'object',
       properties: {},
+    },
+  },
+  {
+    name: 'list_tracks',
+    description:
+      'List the four Eduentry.ai internship readiness tracks (Technology, Business, Data Analytics, Digital Marketing) with domain topics, sample roles, and assessment phase structure. Optionally retrieve a single track by id.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        track: {
+          type: 'string',
+          description: 'Optional track id to retrieve a single track. Available: tech, business, data-analytics, digital-marketing',
+        },
+      },
     },
   },
   {

@@ -6,6 +6,12 @@
       "transport": "http",
       "name": "Eduentry",
       "description": "Academic assessment data for children aged 6–17 — grammar school entry requirements, standardised score interpretation, assessed subjects, and research blog posts."
+    },
+    {
+      "url": "https://eduentry.ai/api/mcp",
+      "transport": "http",
+      "name": "Eduentry.ai",
+      "description": "Internship readiness assessment for UK high school students aged 14–18 — track details (Technology, Business, Data Analytics, Digital Marketing), assessment phases, and career guidance."
     }
   ]
 }
