@@ -164,6 +164,8 @@ function callTool(name: string, args: Record<string, unknown>): string {
     case 'explain_scoring': {
       const raw = args.score
       const score = typeof raw === 'number' ? raw : Number(raw)
+      const locale = typeof args.locale === 'string' ? args.locale : 'en'
+      const isEN = locale === 'en'
       if (isNaN(score) || score < 70 || score > 130) {
         return 'Score must be a number between 70 and 130. Eduentry uses a standardised scale with mean 100 and SD 15.'
       }
@@ -175,17 +177,25 @@ function callTool(name: string, args: Record<string, unknown>): string {
       else if (score < 120) band = 'Above Average'
       else band = 'Exceptional'
 
-      let grammarNote = ''
+      const base = `Score: ${score}\nBand: ${band}\nPercentile: approximately ${percentile}th\n\nEduentry scores use a standardised scale (mean 100, SD 15).`
+
+      if (!isEN) return base
+
+      let grammarNote: string
       if (score >= 130) grammarNote = 'Comfortably exceeds entry thresholds for the most selective grammar schools in England (North London, South London Sutton area).'
       else if (score >= 120) grammarNote = 'Exceeds competitive entry thresholds for most grammar schools in England.'
       else if (score >= 115) grammarNote = 'At or above the 84th percentile — the competitive entry threshold for most grammar schools outside London (Kent, Hertfordshire, Essex, Gloucestershire).'
       else if (score >= 110) grammarNote = 'Above average but below the typical competitive grammar school entry threshold of 115.'
       else grammarNote = 'Below the typical competitive grammar school entry threshold of 115 (84th percentile).'
 
-      return `Score: ${score}\nBand: ${band}\nPercentile: approximately ${percentile}th\n\n${grammarNote}\n\nEduentry scores use a standardised scale (mean 100, SD 15) aligned with GL Assessment SAS scoring. A score of 115 = 84th percentile, the competitive threshold for most English grammar schools outside London.`
+      return `${base} A score of 115 = 84th percentile, the competitive threshold for most English grammar schools outside London.\n\n${grammarNote}`
     }
 
     case 'list_grammar_areas': {
+      const locale = typeof args.locale === 'string' ? args.locale : 'en'
+      if (locale !== 'en') {
+        return 'Grammar school areas are UK-specific and only relevant for the English (en) locale.'
+      }
       const areaSlug = typeof args.area === 'string' ? args.area : null
       const areas = areaSlug
         ? GRAMMAR_AREAS.filter((a) => a.slug === areaSlug)
@@ -213,7 +223,12 @@ function callTool(name: string, args: Record<string, unknown>): string {
     }
 
     case 'list_subjects': {
-      return JSON.stringify(SUBJECTS, null, 2)
+      const locale = typeof args.locale === 'string' ? args.locale : 'en'
+      const isEN = locale === 'en'
+      const subjects = SUBJECTS.map(({ relevance, ...rest }) =>
+        isEN ? { ...rest, relevance } : rest
+      )
+      return JSON.stringify(subjects, null, 2)
     }
 
     case 'list_tracks': {
@@ -278,13 +293,17 @@ const TOOLS = [
   {
     name: 'explain_scoring',
     description:
-      'Explain what a standardised score means on Eduentry — percentile rank, performance band, and grammar school entry implications.',
+      'Explain what a standardised score means on Eduentry — percentile rank and performance band. UK grammar school entry context is included for locale=en only.',
     inputSchema: {
       type: 'object',
       properties: {
         score: {
           type: 'number',
           description: 'Standardised score between 70 and 130 (mean 100, SD 15)',
+        },
+        locale: {
+          type: 'string',
+          description: 'Locale of the page context. One of: en, es, tr, fr, ar, ru, zh. Defaults to en.',
         },
       },
       required: ['score'],
@@ -293,10 +312,14 @@ const TOOLS = [
   {
     name: 'list_grammar_areas',
     description:
-      'List UK grammar school areas with entry requirements, exam boards, and target SAS scores. Optionally filter to one area by slug.',
+      'List UK grammar school areas with entry requirements, exam boards, and target SAS scores. UK-specific — only returns data for locale=en.',
     inputSchema: {
       type: 'object',
       properties: {
+        locale: {
+          type: 'string',
+          description: 'Locale of the page context. Must be "en" to receive data; other locales return a not-applicable message.',
+        },
         area: {
           type: 'string',
           description:
@@ -308,10 +331,15 @@ const TOOLS = [
   {
     name: 'list_subjects',
     description:
-      'List the four assessment subjects on Eduentry.com — English, Mathematics, Verbal Reasoning, Non-Verbal Reasoning — with descriptions and 11+ relevance.',
+      'List the four assessment subjects on Eduentry.com — English, Mathematics, Verbal Reasoning, Non-Verbal Reasoning. UK/11+ relevance notes are included for locale=en only.',
     inputSchema: {
       type: 'object',
-      properties: {},
+      properties: {
+        locale: {
+          type: 'string',
+          description: 'Locale of the page context. One of: en, es, tr, fr, ar, ru, zh. UK relevance notes only shown for en.',
+        },
+      },
     },
   },
   {
