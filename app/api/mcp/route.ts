@@ -1,6 +1,32 @@
 import { type NextRequest } from 'next/server'
 import { GRAMMAR_AREAS } from '@/app/grammar-schools/data'
 import { BLOG_POSTS } from '@/app/blog/posts'
+import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
+import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
+import { BLOG_POSTS_FR } from '@/app/blog/posts-fr'
+import { BLOG_POSTS_AR } from '@/app/blog/posts-ar'
+import { BLOG_POSTS_RU } from '@/app/blog/posts-ru'
+import { BLOG_POSTS_ZH } from '@/app/blog/posts-zh'
+
+const LOCALE_POSTS: Record<string, typeof BLOG_POSTS> = {
+  en: BLOG_POSTS,
+  es: BLOG_POSTS_ES,
+  tr: BLOG_POSTS_TR,
+  fr: BLOG_POSTS_FR,
+  ar: BLOG_POSTS_AR,
+  ru: BLOG_POSTS_RU,
+  zh: BLOG_POSTS_ZH,
+}
+
+const LOCALE_BLOG_BASE: Record<string, string> = {
+  en: 'https://eduentry.com/blog',
+  es: 'https://eduentry.com/es/blog',
+  tr: 'https://eduentry.com/tr/blog',
+  fr: 'https://eduentry.com/fr/blog',
+  ar: 'https://eduentry.com/ar/blog',
+  ru: 'https://eduentry.com/ru/blog',
+  zh: 'https://eduentry.com/zh/blog',
+}
 
 const ASSESSMENT_PHASES = [
   { phase: 'General Aptitude',   questions: 10, measures: 'Verbal reasoning, numerical reasoning, pattern recognition' },
@@ -218,15 +244,20 @@ function callTool(name: string, args: Record<string, unknown>): string {
     }
 
     case 'list_blog_posts': {
+      const locale = typeof args.locale === 'string' && args.locale in LOCALE_POSTS
+        ? args.locale
+        : 'en'
       const tag = typeof args.tag === 'string' ? args.tag.toLowerCase() : null
+      const allPosts = LOCALE_POSTS[locale]
       const posts = tag
-        ? BLOG_POSTS.filter((p) => p.tags.some((t) => t.toLowerCase().includes(tag)))
-        : BLOG_POSTS
+        ? allPosts.filter((p) => p.tags.some((t) => t.toLowerCase().includes(tag)))
+        : allPosts
+      const base = LOCALE_BLOG_BASE[locale]
 
       return JSON.stringify(
         posts.map((p) => ({
           slug: p.slug,
-          url: `https://eduentry.com/blog/${p.slug}`,
+          url: `${base}/${p.slug}`,
           title: p.title,
           description: p.description,
           date: p.dateModified ?? p.date,
@@ -299,10 +330,14 @@ const TOOLS = [
   },
   {
     name: 'list_blog_posts',
-    description: 'List Eduentry blog posts (English). Optionally filter by tag keyword.',
+    description: 'List Eduentry blog posts. Supports all 7 locales (en, es, tr, fr, ar, ru, zh). Optionally filter by tag keyword.',
     inputSchema: {
       type: 'object',
       properties: {
+        locale: {
+          type: 'string',
+          description: 'Locale code. One of: en (default), es, tr, fr, ar, ru, zh',
+        },
         tag: {
           type: 'string',
           description: 'Optional tag keyword to filter posts (e.g. "grammar", "internship", "gifted")',
