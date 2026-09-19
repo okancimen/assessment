@@ -137,7 +137,7 @@ export default function TrackPageTemplate({ track, locale }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(programSchema) }} />
 
       {/* hreflang */}
-      <link rel="alternate" hrefLang={lang} href={TRACK_URL} />
+      <link rel="alternate" hrefLang={locale} href={TRACK_URL} />
       <link rel="alternate" hrefLang="en" href={EN_URL} />
       <link rel="alternate" hrefLang="x-default" href={EN_URL} />
 
