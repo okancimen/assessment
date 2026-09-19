@@ -26,6 +26,10 @@ export const metadata: Metadata = {
       fr: `${BASE_URL}/fr/stage`,
       'en-GB': `${BASE_URL}/internship`,
       tr: `${BASE_URL}/tr/staj`,
+      es: `${BASE_URL}/es/practicas`,
+      ar: `${BASE_URL}/ar/tadrib`,
+      ru: `${BASE_URL}/ru/stazhirovka`,
+      zh: `${BASE_URL}/zh/shixi`,
       'x-default': `${BASE_URL}/internship`,
     },
   },
@@ -62,6 +66,18 @@ const BREADCRUMB_SCHEMA = {
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${BASE_URL}/fr` },
     { '@type': 'ListItem', position: 2, name: 'Stage', item: `${BASE_URL}/fr/stage` },
   ],
+}
+
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${BASE_URL}/fr/stage#webpage`,
+  url: `${BASE_URL}/fr/stage`,
+  name: 'Évaluation Stage Lycéen Gratuite — Eduentry',
+  description: 'Évaluation adaptative gratuite de 34 questions pour lycéens dès 14 ans. Découvre ta filière idéale — Tech, Entreprise, Data ou Marketing Digital — en 35 minutes.',
+  inLanguage: 'fr',
+  isPartOf: { '@id': `${BASE_URL}/#website` },
+  about: { '@id': `${BASE_URL}/fr/stage#service` },
 }
 
 const FAQ_SCHEMA = {
@@ -180,6 +196,7 @@ export default function FRStageLandingPage() {
     <div className="bg-[#f5f5f7]" lang="fr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <main>
 

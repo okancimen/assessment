@@ -27,6 +27,9 @@ export const metadata: Metadata = {
       'en-GB': `${BASE_URL}/internship`,
       tr: `${BASE_URL}/tr/staj`,
       fr: `${BASE_URL}/fr/stage`,
+      ar: `${BASE_URL}/ar/tadrib`,
+      ru: `${BASE_URL}/ru/stazhirovka`,
+      zh: `${BASE_URL}/zh/shixi`,
       'x-default': `${BASE_URL}/internship`,
     },
   },
@@ -62,6 +65,18 @@ const BREADCRUMB_SCHEMA = {
     { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${BASE_URL}/es` },
     { '@type': 'ListItem', position: 2, name: 'Prácticas', item: `${BASE_URL}/es/practicas` },
   ],
+}
+
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${BASE_URL}/es/practicas#webpage`,
+  url: `${BASE_URL}/es/practicas`,
+  name: 'Prácticas de Instituto Gratuitas — Evaluación de Preparación | Eduentry',
+  description: 'Evaluación adaptativa gratuita de 34 preguntas para estudiantes de instituto desde 14 años. Descubre tu área ideal — Tecnología, Empresa, Datos o Marketing Digital — en 35 minutos.',
+  inLanguage: 'es',
+  isPartOf: { '@id': `${BASE_URL}/#website` },
+  about: { '@id': `${BASE_URL}/es/practicas#service` },
 }
 
 const FAQ_SCHEMA = {
@@ -118,6 +133,7 @@ export default function ESPracticasLandingPage() {
     <div className="bg-[#f5f5f7]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <main>
 

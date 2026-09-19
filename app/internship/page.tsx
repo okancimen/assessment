@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: `${BASE_URL}/internship`,
-    languages: { 'en-GB': `${BASE_URL}/internship`, tr: `${BASE_URL}/tr/staj`, fr: `${BASE_URL}/fr/stage`, 'x-default': `${BASE_URL}/internship` },
+    languages: { 'en-GB': `${BASE_URL}/internship`, tr: `${BASE_URL}/tr/staj`, fr: `${BASE_URL}/fr/stage`, es: `${BASE_URL}/es/practicas`, ar: `${BASE_URL}/ar/tadrib`, ru: `${BASE_URL}/ru/stazhirovka`, zh: `${BASE_URL}/zh/shixi`, 'x-default': `${BASE_URL}/internship` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
@@ -68,6 +68,18 @@ const BREADCRUMB_SCHEMA = {
     { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
     { '@type': 'ListItem', position: 2, name: 'Internship Assessment', item: `${BASE_URL}/internship` },
   ],
+}
+
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${BASE_URL}/internship#webpage`,
+  url: `${BASE_URL}/internship`,
+  name: 'Free Internship Readiness Assessment — Ages 14+',
+  description: 'Free 34-question adaptive assessment for high school students aged 14+. Discover your readiness for tech, business, data or digital marketing internships — results in 35 minutes.',
+  inLanguage: 'en-GB',
+  isPartOf: { '@id': `${BASE_URL}/#website` },
+  about: { '@id': `${BASE_URL}/internship#service` },
 }
 
 const FAQ_SCHEMA = {
@@ -126,6 +138,7 @@ export default function InternshipLandingPage() {
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <PublicNav />
       <main className="flex-1">

@@ -2,6 +2,10 @@ import Link from 'next/link'
 import CtaLink from '@/components/ui/CtaLink'
 import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
 import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
+import { BLOG_POSTS_FR } from '@/app/blog/posts-fr'
+import { BLOG_POSTS_AR } from '@/app/blog/posts-ar'
+import { BLOG_POSTS_ZH } from '@/app/blog/posts-zh'
+import { BLOG_POSTS_RU } from '@/app/blog/posts-ru'
 import { TRACK_I18N, type TrackId, type Locale } from './track-i18n'
 
 interface Props {
@@ -22,6 +26,30 @@ const LOCALE_SLUGS: Record<Locale, Record<TrackId, string>> = {
     'data-analytics': 'analisis-de-datos',
     'digital-marketing': 'marketing-digital',
   },
+  fr: {
+    tech: 'technologie',
+    business: 'entreprise',
+    'data-analytics': 'analyse-de-donnees',
+    'digital-marketing': 'marketing-digital',
+  },
+  ar: {
+    tech: 'taqniya',
+    business: 'aamal',
+    'data-analytics': 'bayanat',
+    'digital-marketing': 'tawiq',
+  },
+  zh: {
+    tech: 'keji',
+    business: 'shangye',
+    'data-analytics': 'shuju',
+    'digital-marketing': 'yingxiao',
+  },
+  ru: {
+    tech: 'tekhnologii',
+    business: 'biznes',
+    'data-analytics': 'analiz-dannykh',
+    'digital-marketing': 'tsifrovoy-marketing',
+  },
 }
 
 export default function TrackPageTemplate({ track, locale }: Props) {
@@ -29,9 +57,16 @@ export default function TrackPageTemplate({ track, locale }: Props) {
   const BASE_URL = 'https://eduentry.ai'
   const TRACK_URL = `${BASE_URL}/${locale}/${LOCALE_SLUGS[locale][track]}`
   const EN_URL = `${BASE_URL}/${track}`
-  const posts = (locale === 'tr' ? BLOG_POSTS_TR : BLOG_POSTS_ES).slice(0, 2)
+  const BLOG_POSTS_BY_LOCALE: Record<string, typeof BLOG_POSTS_TR> = {
+    tr: BLOG_POSTS_TR,
+    es: BLOG_POSTS_ES,
+    fr: BLOG_POSTS_FR,
+    ar: BLOG_POSTS_AR,
+    zh: BLOG_POSTS_ZH,
+    ru: BLOG_POSTS_RU,
+  }
+  const posts = (BLOG_POSTS_BY_LOCALE[locale] ?? BLOG_POSTS_TR).slice(0, 2)
   const ctaLabel = `${locale}_${track}_cta`
-  const lang = locale
 
   const breadcrumb = {
     '@context': 'https://schema.org',
@@ -60,7 +95,7 @@ export default function TrackPageTemplate({ track, locale }: Props) {
     url: TRACK_URL,
     provider: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
     areaServed: { '@type': 'Country', name: 'United Kingdom' },
-    audience: { '@type': 'Audience', audienceType: lang === 'tr' ? '14–18 yaş öğrenciler' : 'Estudiantes de 14 a 18 años' },
+    audience: { '@type': 'Audience', audienceType: d.ui.audience },
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP' },
   }
 
@@ -86,16 +121,16 @@ export default function TrackPageTemplate({ track, locale }: Props) {
     occupationalCategory: PROGRAM_NAMES[track].occupation,
     timeToComplete: 'PT35M',
     educationalProgramMode: 'online',
-    inLanguage: locale === 'tr' ? 'tr' : 'es',
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: lang === 'tr' ? '14–18 yaş tüm öğrenciler için ücretsiz' : 'Gratis para todos los estudiantes de 14 a 18 años' },
-    programPrerequisites: lang === 'tr' ? '14–18 yaş arası lise öğrencisi' : 'Estudiante de instituto de 14 a 18 años',
+    inLanguage: locale,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: d.ui.offerDesc },
+    programPrerequisites: d.ui.prerequisite,
   }
 
   const homePath = `/${locale}`
   const blogPath = `/${locale}/blog`
 
   return (
-    <main className="flex-1" lang={lang}>
+    <main className="flex-1" lang={locale} dir={locale === 'ar' ? 'rtl' : undefined}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
@@ -242,13 +277,13 @@ export default function TrackPageTemplate({ track, locale }: Props) {
               <thead>
                 <tr className="border-b border-[#d2d2d7]">
                   <th className="text-left py-4 pr-8 font-semibold text-[#1d1d1f]">
-                    {lang === 'tr' ? 'Aşama' : 'Fase'}
+                    {d.ui.phaseLabel}
                   </th>
                   <th className="text-left py-4 pr-8 font-semibold text-[#1d1d1f]">
-                    {lang === 'tr' ? 'Soru' : 'Preguntas'}
+                    {d.ui.questionsLabel}
                   </th>
                   <th className="text-left py-4 font-semibold text-[#1d1d1f]">
-                    {lang === 'tr' ? 'Ne ölçüyoruz' : 'Qué evaluamos'}
+                    {d.ui.measuresLabel}
                   </th>
                 </tr>
               </thead>
@@ -270,7 +305,7 @@ export default function TrackPageTemplate({ track, locale }: Props) {
               label={`${ctaLabel}_phases`}
               className="inline-block bg-[#4F46E5] text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors text-lg"
             >
-              {lang === 'tr' ? 'Ücretsiz değerlendirmeye başla →' : 'Hacer la evaluación gratis →'}
+              {d.ui.startCta}
             </CtaLink>
           </div>
         </div>

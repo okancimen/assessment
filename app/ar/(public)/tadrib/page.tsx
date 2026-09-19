@@ -28,6 +28,8 @@ export const metadata: Metadata = {
       tr: `${BASE_URL}/tr/staj`,
       fr: `${BASE_URL}/fr/stage`,
       es: `${BASE_URL}/es/practicas`,
+      ru: `${BASE_URL}/ru/stazhirovka`,
+      zh: `${BASE_URL}/zh/shixi`,
       'x-default': `${BASE_URL}/internship`,
     },
   },
@@ -65,6 +67,18 @@ const BREADCRUMB_SCHEMA = {
     { '@type': 'ListItem', position: 1, name: 'الرئيسية', item: `${BASE_URL}/ar` },
     { '@type': 'ListItem', position: 2, name: 'التدريب', item: `${BASE_URL}/ar/tadrib` },
   ],
+}
+
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${BASE_URL}/ar/tadrib#webpage`,
+  url: `${BASE_URL}/ar/tadrib`,
+  name: 'تقييم استعداد التدريب المجاني — Eduentry',
+  description: 'تقييم تكيفي مجاني من 34 سؤالاً لطلاب المرحلة الثانوية من عمر 14 عاماً. اكتشف مجالك المثالي في 35 دقيقة.',
+  inLanguage: 'ar',
+  isPartOf: { '@id': `${BASE_URL}/#website` },
+  about: { '@id': `${BASE_URL}/ar/tadrib#service` },
 }
 
 const FAQ_SCHEMA = {
@@ -121,6 +135,7 @@ export default function ARTadribLandingPage() {
     <div className="bg-[#f5f5f7]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <main>
 

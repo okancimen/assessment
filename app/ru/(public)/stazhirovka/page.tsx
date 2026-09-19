@@ -66,6 +66,18 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${BASE_URL}/ru/stazhirovka#webpage`,
+  url: `${BASE_URL}/ru/stazhirovka`,
+  name: 'Бесплатная оценка готовности к стажировке — Eduentry',
+  description: 'Бесплатная адаптивная оценка из 34 вопросов для школьников от 14 лет. Узнай своё идеальное направление за 35 минут.',
+  inLanguage: 'ru',
+  isPartOf: { '@id': `${BASE_URL}/#website` },
+  about: { '@id': `${BASE_URL}/ru/stazhirovka#service` },
+}
+
 const FAQ_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -120,6 +132,7 @@ export default function RUStagzhirovkaLandingPage() {
     <div className="bg-[#f5f5f7]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <main>
 

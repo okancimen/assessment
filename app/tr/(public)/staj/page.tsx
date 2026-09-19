@@ -29,6 +29,11 @@ export const metadata: Metadata = {
     languages: {
       tr: `${BASE_URL}/tr/staj`,
       'en-GB': `${BASE_URL}/internship`,
+      fr: `${BASE_URL}/fr/stage`,
+      es: `${BASE_URL}/es/practicas`,
+      ar: `${BASE_URL}/ar/tadrib`,
+      ru: `${BASE_URL}/ru/stazhirovka`,
+      zh: `${BASE_URL}/zh/shixi`,
       'x-default': `${BASE_URL}/internship`,
     },
   },
@@ -72,6 +77,18 @@ const BREADCRUMB_SCHEMA = {
     { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: `${BASE_URL}/tr` },
     { '@type': 'ListItem', position: 2, name: 'Staj Değerlendirmesi', item: `${BASE_URL}/tr/staj` },
   ],
+}
+
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${BASE_URL}/tr/staj#webpage`,
+  url: `${BASE_URL}/tr/staj`,
+  name: 'Ücretsiz Staj Değerlendirmesi — 14 Yaş ve Üstü Lise Öğrencileri',
+  description: 'Lise öğrencileri için ücretsiz 34 soruluk uyarlanabilir staj değerlendirmesi. Teknoloji, İş Dünyası, Veri Analitiği veya Dijital Pazarlama alanlarında staj hazırlığını 35 dakikada keşfet.',
+  inLanguage: 'tr',
+  isPartOf: { '@id': `${BASE_URL}/#website` },
+  about: { '@id': `${BASE_URL}/tr/staj#service` },
 }
 
 const FAQ_SCHEMA = {
@@ -214,6 +231,7 @@ export default function TRStajLandingPage() {
     <div className="bg-[#f5f5f7]" lang="tr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <main>
 

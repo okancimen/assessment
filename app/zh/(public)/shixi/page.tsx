@@ -29,6 +29,7 @@ export const metadata: Metadata = {
       fr: `${BASE_URL}/fr/stage`,
       es: `${BASE_URL}/es/practicas`,
       ar: `${BASE_URL}/ar/tadrib`,
+      ru: `${BASE_URL}/ru/stazhirovka`,
       'x-default': `${BASE_URL}/internship`,
     },
   },
@@ -66,6 +67,18 @@ const BREADCRUMB_SCHEMA = {
     { '@type': 'ListItem', position: 1, name: '首页', item: `${BASE_URL}/zh` },
     { '@type': 'ListItem', position: 2, name: '实习评估', item: `${BASE_URL}/zh/shixi` },
   ],
+}
+
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${BASE_URL}/zh/shixi#webpage`,
+  url: `${BASE_URL}/zh/shixi`,
+  name: '免费实习准备度评估 — Eduentry',
+  description: '免费34题自适应评估，面向14岁以上高中生。发现你的最佳赛道——技术、商业、数据分析或数字营销——35分钟获得个性化报告。',
+  inLanguage: 'zh',
+  isPartOf: { '@id': `${BASE_URL}/#website` },
+  about: { '@id': `${BASE_URL}/zh/shixi#service` },
 }
 
 const FAQ_SCHEMA = {
@@ -130,6 +143,7 @@ export default function ZHShixiLandingPage() {
     <div className="bg-[#f5f5f7]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <main>
 

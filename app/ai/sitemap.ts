@@ -40,6 +40,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/es/empresa`,                 lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/es/analisis-de-datos`,       lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/es/marketing-digital`,       lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/fr/technologie`,             lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/fr/entreprise`,              lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/fr/analyse-de-donnees`,      lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/fr/marketing-digital`,       lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/ar/taqniya`,                 lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/ar/aamal`,                   lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/ar/bayanat`,                 lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/ar/tawiq`,                   lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/zh/keji`,                    lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/zh/shangye`,                 lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/zh/shuju`,                   lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/zh/yingxiao`,                lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/ru/tekhnologii`,             lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/ru/biznes`,                  lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/ru/analiz-dannykh`,          lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/ru/tsifrovoy-marketing`,     lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
   ]
 
   const blogPages: MetadataRoute.Sitemap = BLOG_POSTS

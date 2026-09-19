@@ -57,10 +57,10 @@ const TRACK_IMAGES: Record<string, string> = {
 }
 
 const TRACK_SLUGS: Record<string, string> = {
-  tech: '/tech',
-  business: '/business',
-  data_analytics: '/data-analytics',
-  digital_marketing: '/digital-marketing',
+  tech: '/fr/technologie',
+  business: '/fr/entreprise',
+  data_analytics: '/fr/analyse-de-donnees',
+  digital_marketing: '/fr/marketing-digital',
 }
 
 const TRACK_LABELS_FR: Record<string, string> = {

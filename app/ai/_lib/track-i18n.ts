@@ -1,5 +1,5 @@
 export type TrackId = 'tech' | 'business' | 'data-analytics' | 'digital-marketing'
-export type Locale = 'tr' | 'es'
+export type Locale = 'tr' | 'es' | 'fr' | 'ar' | 'zh' | 'ru'
 
 interface Role { title: string; skills: string; salary: string }
 interface DomainTopic { n: string; topic: string; detail: string }
@@ -21,6 +21,7 @@ export interface TrackData {
   blog: { heading: string }
   finalCta: { h2: string; p: string; btn: string; footnote: string }
   breadcrumb: { home: string; track: string }
+  ui: { phaseLabel: string; questionsLabel: string; measuresLabel: string; startCta: string; audience: string; offerDesc: string; prerequisite: string }
 }
 
 // ─── TURKISH ────────────────────────────────────────────────────────────────
@@ -118,6 +119,7 @@ const TR: Record<TrackId, TrackData> = {
       footnote: '14–18 yaş tüm öğrenciler için ücretsiz · 35 dakika · Anında sonuç',
     },
     breadcrumb: { home: 'Ana Sayfa', track: 'Teknoloji Alanı' },
+    ui: { phaseLabel: 'Aşama', questionsLabel: 'Soru', measuresLabel: 'Ne ölçüyoruz', startCta: 'Ücretsiz değerlendirmeye başla →', audience: '14–18 yaş öğrenciler', offerDesc: '14–18 yaş tüm öğrenciler için ücretsiz', prerequisite: '14–18 yaş arası lise öğrencisi' },
   },
 
   'business': {
@@ -212,6 +214,7 @@ const TR: Record<TrackId, TrackData> = {
       footnote: '14–18 yaş tüm öğrenciler için ücretsiz · 35 dakika · Anında sonuç',
     },
     breadcrumb: { home: 'Ana Sayfa', track: 'İş Dünyası Alanı' },
+    ui: { phaseLabel: 'Aşama', questionsLabel: 'Soru', measuresLabel: 'Ne ölçüyoruz', startCta: 'Ücretsiz değerlendirmeye başla →', audience: '14–18 yaş öğrenciler', offerDesc: '14–18 yaş tüm öğrenciler için ücretsiz', prerequisite: '14–18 yaş arası lise öğrencisi' },
   },
 
   'data-analytics': {
@@ -306,6 +309,7 @@ const TR: Record<TrackId, TrackData> = {
       footnote: '14–18 yaş tüm öğrenciler için ücretsiz · 35 dakika · Anında sonuç',
     },
     breadcrumb: { home: 'Ana Sayfa', track: 'Veri Analitiği Alanı' },
+    ui: { phaseLabel: 'Aşama', questionsLabel: 'Soru', measuresLabel: 'Ne ölçüyoruz', startCta: 'Ücretsiz değerlendirmeye başla →', audience: '14–18 yaş öğrenciler', offerDesc: '14–18 yaş tüm öğrenciler için ücretsiz', prerequisite: '14–18 yaş arası lise öğrencisi' },
   },
 
   'digital-marketing': {
@@ -400,6 +404,7 @@ const TR: Record<TrackId, TrackData> = {
       footnote: '14–18 yaş tüm öğrenciler için ücretsiz · 35 dakika · Anında sonuç',
     },
     breadcrumb: { home: 'Ana Sayfa', track: 'Dijital Pazarlama Alanı' },
+    ui: { phaseLabel: 'Aşama', questionsLabel: 'Soru', measuresLabel: 'Ne ölçüyoruz', startCta: 'Ücretsiz değerlendirmeye başla →', audience: '14–18 yaş öğrenciler', offerDesc: '14–18 yaş tüm öğrenciler için ücretsiz', prerequisite: '14–18 yaş arası lise öğrencisi' },
   },
 }
 
@@ -498,6 +503,7 @@ const ES: Record<TrackId, TrackData> = {
       footnote: 'Gratuita para todos los estudiantes de 14 a 18 años · 35 minutos · Resultados instantáneos',
     },
     breadcrumb: { home: 'Inicio', track: 'Área Tecnología' },
+    ui: { phaseLabel: 'Fase', questionsLabel: 'Preguntas', measuresLabel: 'Qué evaluamos', startCta: 'Hacer la evaluación gratis →', audience: 'Estudiantes de 14 a 18 años', offerDesc: 'Gratis para todos los estudiantes de 14 a 18 años', prerequisite: 'Estudiante de instituto de 14 a 18 años' },
   },
 
   'business': {
@@ -592,6 +598,7 @@ const ES: Record<TrackId, TrackData> = {
       footnote: 'Gratuita para todos los estudiantes de 14 a 18 años · 35 minutos · Resultados instantáneos',
     },
     breadcrumb: { home: 'Inicio', track: 'Área Empresa' },
+    ui: { phaseLabel: 'Fase', questionsLabel: 'Preguntas', measuresLabel: 'Qué evaluamos', startCta: 'Hacer la evaluación gratis →', audience: 'Estudiantes de 14 a 18 años', offerDesc: 'Gratis para todos los estudiantes de 14 a 18 años', prerequisite: 'Estudiante de instituto de 14 a 18 años' },
   },
 
   'data-analytics': {
@@ -686,6 +693,7 @@ const ES: Record<TrackId, TrackData> = {
       footnote: 'Gratuita para todos los estudiantes de 14 a 18 años · 35 minutos · Resultados instantáneos',
     },
     breadcrumb: { home: 'Inicio', track: 'Área Análisis de datos' },
+    ui: { phaseLabel: 'Fase', questionsLabel: 'Preguntas', measuresLabel: 'Qué evaluamos', startCta: 'Hacer la evaluación gratis →', audience: 'Estudiantes de 14 a 18 años', offerDesc: 'Gratis para todos los estudiantes de 14 a 18 años', prerequisite: 'Estudiante de instituto de 14 a 18 años' },
   },
 
   'digital-marketing': {
@@ -780,7 +788,13 @@ const ES: Record<TrackId, TrackData> = {
       footnote: 'Gratuita para todos los estudiantes de 14 a 18 años · 35 minutos · Resultados instantáneos',
     },
     breadcrumb: { home: 'Inicio', track: 'Área Marketing digital' },
+    ui: { phaseLabel: 'Fase', questionsLabel: 'Preguntas', measuresLabel: 'Qué evaluamos', startCta: 'Hacer la evaluación gratis →', audience: 'Estudiantes de 14 a 18 años', offerDesc: 'Gratis para todos los estudiantes de 14 a 18 años', prerequisite: 'Estudiante de instituto de 14 a 18 años' },
   },
 }
 
-export const TRACK_I18N: Record<Locale, Record<TrackId, TrackData>> = { tr: TR, es: ES }
+import FR from './track-i18n-fr'
+import AR from './track-i18n-ar'
+import ZH from './track-i18n-zh'
+import RU from './track-i18n-ru'
+
+export const TRACK_I18N: Record<Locale, Record<TrackId, TrackData>> = { tr: TR, es: ES, fr: FR, ar: AR, zh: ZH, ru: RU }
