@@ -1,0 +1,11 @@
+{
+  "mcpVersion": "0.1",
+  "servers": [
+    {
+      "url": "https://eduentry.com/api/mcp",
+      "transport": "http",
+      "name": "Eduentry",
+      "description": "Academic assessment data for children aged 6–17 — grammar school entry requirements, standardised score interpretation, assessed subjects, and research blog posts."
+    }
+  ]
+}

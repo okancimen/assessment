@@ -1,0 +1,301 @@
+import { type NextRequest } from 'next/server'
+import { GRAMMAR_AREAS } from '@/app/grammar-schools/data'
+import { BLOG_POSTS } from '@/app/blog/posts'
+
+const SERVER_INFO = { name: 'Eduentry', version: '1.0' }
+const PROTOCOL_VERSION = '2024-11-05'
+
+// Approximate normal CDF for percentile calculation (mean 100, SD 15)
+function scoreToPercentile(score: number): number {
+  const z = (score - 100) / 15
+  // Abramowitz and Stegun approximation
+  const t = 1 / (1 + 0.2316419 * Math.abs(z))
+  const poly =
+    t * (0.319381530 + t * (-0.356563782 + t * (1.781477937 + t * (-1.821255978 + t * 1.330274429))))
+  const phi = 1 - (1 / Math.sqrt(2 * Math.PI)) * Math.exp(-0.5 * z * z) * poly
+  return z >= 0 ? Math.round(phi * 100) : Math.round((1 - phi) * 100)
+}
+
+const SUBJECTS = [
+  {
+    id: 'english',
+    name: 'English',
+    url: 'https://eduentry.com/subjects/english',
+    description: 'Comprehension, grammar, spelling, punctuation and vocabulary for ages 6–17.',
+    relevance: 'Core UK 11+ subject. Tests reading comprehension, written language, vocabulary range, and grammar accuracy.',
+  },
+  {
+    id: 'maths',
+    name: 'Mathematics',
+    url: 'https://eduentry.com/subjects/maths',
+    description: 'Number, algebra, geometry, fractions and data handling benchmarked to PISA numeracy.',
+    relevance: 'Core UK 11+ and grammar school subject. PISA-benchmarked, covers all National Curriculum strands for ages 6–17.',
+  },
+  {
+    id: 'verbal-reasoning',
+    name: 'Verbal Reasoning',
+    url: 'https://eduentry.com/subjects/verbal-reasoning',
+    description: 'Analogies, word relationships, sequencing and logic — tested in 11+ and grammar school exams.',
+    relevance: 'Required by GL Assessment and most grammar school exams. Tests language-based logical thinking.',
+  },
+  {
+    id: 'non-verbal-reasoning',
+    name: 'Non-Verbal Reasoning',
+    url: 'https://eduentry.com/subjects/non-verbal-reasoning',
+    description: 'Pattern recognition, matrices, sequences and spatial reasoning.',
+    relevance: 'Required by CEM (Buckinghamshire) and GL Assessment. Measures spatial intelligence independently of language.',
+  },
+]
+
+function callTool(name: string, args: Record<string, unknown>): string {
+  switch (name) {
+    case 'explain_scoring': {
+      const raw = args.score
+      const score = typeof raw === 'number' ? raw : Number(raw)
+      if (isNaN(score) || score < 70 || score > 130) {
+        return 'Score must be a number between 70 and 130. Eduentry uses a standardised scale with mean 100 and SD 15.'
+      }
+      const percentile = scoreToPercentile(score)
+      let band: string
+      if (score < 85) band = 'Needs Support'
+      else if (score < 95) band = 'Below Average'
+      else if (score < 110) band = 'Average'
+      else if (score < 120) band = 'Above Average'
+      else band = 'Exceptional'
+
+      let grammarNote = ''
+      if (score >= 130) grammarNote = 'Comfortably exceeds entry thresholds for the most selective grammar schools in England (North London, South London Sutton area).'
+      else if (score >= 120) grammarNote = 'Exceeds competitive entry thresholds for most grammar schools in England.'
+      else if (score >= 115) grammarNote = 'At or above the 84th percentile — the competitive entry threshold for most grammar schools outside London (Kent, Hertfordshire, Essex, Gloucestershire).'
+      else if (score >= 110) grammarNote = 'Above average but below the typical competitive grammar school entry threshold of 115.'
+      else grammarNote = 'Below the typical competitive grammar school entry threshold of 115 (84th percentile).'
+
+      return `Score: ${score}\nBand: ${band}\nPercentile: approximately ${percentile}th\n\n${grammarNote}\n\nEduentry scores use a standardised scale (mean 100, SD 15) aligned with GL Assessment SAS scoring. A score of 115 = 84th percentile, the competitive threshold for most English grammar schools outside London.`
+    }
+
+    case 'list_grammar_areas': {
+      const areaSlug = typeof args.area === 'string' ? args.area : null
+      const areas = areaSlug
+        ? GRAMMAR_AREAS.filter((a) => a.slug === areaSlug)
+        : GRAMMAR_AREAS
+
+      if (areas.length === 0) {
+        return `No grammar area found with slug "${areaSlug}". Available: ${GRAMMAR_AREAS.map((a) => a.slug).join(', ')}`
+      }
+
+      return JSON.stringify(
+        areas.map((a) => ({
+          area: a.name,
+          slug: a.slug,
+          url: `https://eduentry.com/grammar-schools/${a.slug}`,
+          schoolCount: a.schoolCount,
+          examBoard: a.examBoard,
+          targetSAS: a.targetSAS,
+          subjects: a.subjects,
+          keyFact: a.keyFact,
+          registrationNote: a.registrationNote,
+        })),
+        null,
+        2,
+      )
+    }
+
+    case 'list_subjects': {
+      return JSON.stringify(SUBJECTS, null, 2)
+    }
+
+    case 'list_blog_posts': {
+      const tag = typeof args.tag === 'string' ? args.tag.toLowerCase() : null
+      const posts = tag
+        ? BLOG_POSTS.filter((p) => p.tags.some((t) => t.toLowerCase().includes(tag)))
+        : BLOG_POSTS
+
+      return JSON.stringify(
+        posts.map((p) => ({
+          slug: p.slug,
+          url: `https://eduentry.com/blog/${p.slug}`,
+          title: p.title,
+          description: p.description,
+          date: p.dateModified ?? p.date,
+          readTime: p.readTime,
+          tags: p.tags,
+        })),
+        null,
+        2,
+      )
+    }
+
+    default:
+      return `Unknown tool: ${name}`
+  }
+}
+
+const TOOLS = [
+  {
+    name: 'explain_scoring',
+    description:
+      'Explain what a standardised score means on Eduentry — percentile rank, performance band, and grammar school entry implications.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        score: {
+          type: 'number',
+          description: 'Standardised score between 70 and 130 (mean 100, SD 15)',
+        },
+      },
+      required: ['score'],
+    },
+  },
+  {
+    name: 'list_grammar_areas',
+    description:
+      'List UK grammar school areas with entry requirements, exam boards, and target SAS scores. Optionally filter to one area by slug.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        area: {
+          type: 'string',
+          description:
+            'Optional area slug to retrieve a single area. Available: kent, buckinghamshire, birmingham, london-barnet, london-sutton, hertfordshire, essex, gloucestershire',
+        },
+      },
+    },
+  },
+  {
+    name: 'list_subjects',
+    description:
+      'List the four assessment subjects on Eduentry.com — English, Mathematics, Verbal Reasoning, Non-Verbal Reasoning — with descriptions and 11+ relevance.',
+    inputSchema: {
+      type: 'object',
+      properties: {},
+    },
+  },
+  {
+    name: 'list_blog_posts',
+    description: 'List Eduentry blog posts (English). Optionally filter by tag keyword.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        tag: {
+          type: 'string',
+          description: 'Optional tag keyword to filter posts (e.g. "grammar", "internship", "gifted")',
+        },
+      },
+    },
+  },
+]
+
+function handleMessage(msg: Record<string, unknown>): Record<string, unknown> | null {
+  const { id, method, params } = msg as {
+    id?: unknown
+    method: string
+    params?: Record<string, unknown>
+  }
+
+  // Notifications (no id) — acknowledge but return nothing
+  if (id === undefined) return null
+
+  switch (method) {
+    case 'initialize':
+      return {
+        jsonrpc: '2.0',
+        id,
+        result: {
+          protocolVersion: PROTOCOL_VERSION,
+          capabilities: { tools: {} },
+          serverInfo: SERVER_INFO,
+        },
+      }
+    case 'ping':
+      return { jsonrpc: '2.0', id, result: {} }
+    case 'tools/list':
+      return { jsonrpc: '2.0', id, result: { tools: TOOLS } }
+    case 'tools/call': {
+      const { name, arguments: toolArgs = {} } = (params ?? {}) as {
+        name: string
+        arguments?: Record<string, unknown>
+      }
+      const text = callTool(name, toolArgs)
+      return {
+        jsonrpc: '2.0',
+        id,
+        result: { content: [{ type: 'text', text }] },
+      }
+    }
+    default:
+      return {
+        jsonrpc: '2.0',
+        id,
+        error: { code: -32601, message: 'Method not found' },
+      }
+  }
+}
+
+function toSSE(data: unknown): string {
+  return `data: ${JSON.stringify(data)}\n\n`
+}
+
+export async function POST(request: NextRequest) {
+  let body: unknown
+  try {
+    body = await request.json()
+  } catch {
+    return Response.json(
+      { jsonrpc: '2.0', id: null, error: { code: -32700, message: 'Parse error' } },
+      { status: 400 },
+    )
+  }
+
+  const acceptSSE = request.headers.get('accept')?.includes('text/event-stream') ?? false
+  const messages = Array.isArray(body) ? body : [body]
+  const responses = messages
+    .map((m) => handleMessage(m as Record<string, unknown>))
+    .filter(Boolean) as Record<string, unknown>[]
+
+  const single = !Array.isArray(body)
+  const payload = single ? (responses[0] ?? null) : responses
+
+  if (acceptSSE) {
+    const encoder = new TextEncoder()
+    const stream = new ReadableStream({
+      start(controller) {
+        if (payload !== null) {
+          const items = Array.isArray(payload) ? payload : [payload]
+          for (const item of items) {
+            controller.enqueue(encoder.encode(toSSE(item)))
+          }
+        }
+        controller.close()
+      },
+    })
+    return new Response(stream, {
+      headers: {
+        'Content-Type': 'text/event-stream',
+        'Cache-Control': 'no-cache, no-transform',
+        Connection: 'keep-alive',
+      },
+    })
+  }
+
+  if (payload === null) return new Response(null, { status: 202 })
+  return Response.json(payload)
+}
+
+// GET: SSE endpoint for server-initiated messages (stateless — we have none)
+export async function GET() {
+  const stream = new ReadableStream({
+    start(controller) {
+      controller.close()
+    },
+  })
+  return new Response(stream, {
+    headers: {
+      'Content-Type': 'text/event-stream',
+      'Cache-Control': 'no-cache, no-transform',
+    },
+  })
+}
+
+export async function DELETE() {
+  return new Response(null, { status: 200 })
+}
