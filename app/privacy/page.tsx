@@ -21,9 +21,21 @@ export const metadata: Metadata = {
   },
 }
 
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://eduentry.com/privacy#webpage',
+  url: 'https://eduentry.com/privacy',
+  name: 'Privacy Policy — Eduentry',
+  description: 'How Eduentry collects, uses, and protects your personal data and your child\'s assessment results. GDPR and UK GDPR compliant.',
+  inLanguage: 'en-GB',
+  isPartOf: { '@id': 'https://eduentry.com/#website' },
+}
+
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
       <PublicNav />
 
       <main className="max-w-3xl mx-auto px-6 py-16">

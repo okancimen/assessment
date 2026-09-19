@@ -21,9 +21,21 @@ export const metadata: Metadata = {
   },
 }
 
+const WEBPAGE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://eduentry.com/terms#webpage',
+  url: 'https://eduentry.com/terms',
+  name: 'Terms of Service — Eduentry',
+  description: 'Terms and conditions for using Eduentry\'s free academic assessment platform. Read about eligibility, acceptable use, intellectual property, and your rights.',
+  inLanguage: 'en-GB',
+  isPartOf: { '@id': 'https://eduentry.com/#website' },
+}
+
 export default function TermsPage() {
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
       <PublicNav />
 
       <main className="max-w-3xl mx-auto px-6 py-16">

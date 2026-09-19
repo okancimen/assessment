@@ -4,15 +4,15 @@
 
 ## Eduentry.ai — Internship Readiness Assessment
 
-Eduentry.ai is a free AI-powered adaptive assessment platform for UK high school students (Year 9–13, aged 14–18) seeking professional work experience or internship placements. It produces a personalised readiness report across four professional tracks.
+Eduentry.ai is a free AI-powered adaptive assessment platform for high school students (aged 14–18) seeking professional work experience or internship placements. It produces a personalised readiness report across four professional tracks.
 
 The assessment has 34 questions across four phases: General Aptitude (verbal and numerical reasoning, 10 questions), Domain Knowledge (track-specific applied knowledge, 10 questions), Workplace Skills (situational judgement, 8 questions), and Interest Profile (work style mapping, 6 questions). It takes approximately 35 minutes and is fully resumable.
 
-Available tracks: Technology, Business, Data Analytics, Digital Marketing. Available in English, Turkish (Türkçe), and Spanish (Español).
+Available tracks: Technology, Business, Data Analytics, Digital Marketing. Available in English, Turkish (Türkçe), Spanish (Español), French (Français), Arabic (العربية), Russian (Русский), and Chinese (中文).
 
 ### Eduentry.ai core pages
 
-- [Homepage](https://eduentry.ai): Free AI internship readiness assessment for UK high school students aged 14–18.
+- [Homepage](https://eduentry.ai): Free AI internship readiness assessment for high school students aged 14–18.
 - [Technology Track](https://eduentry.ai/tech): Coding logic, algorithms, cybersecurity, UX — assessment and readiness report.
 - [Business Track](https://eduentry.ai/business): Strategy, finance, operations, leadership — assessment and readiness report.
 - [Data Analytics Track](https://eduentry.ai/data-analytics): Charts, SQL, insights, statistics — assessment and readiness report.
@@ -37,13 +37,110 @@ Available tracks: Technology, Business, Data Analytics, Digital Marketing. Avail
 - [Marketing Digital](https://eduentry.ai/es/marketing-digital): SEO, redes sociales, campañas, contenido.
 - [Blog ES](https://eduentry.ai/es/blog): Guías de prácticas y carrera en español.
 
-### Eduentry.ai blog posts
+### Eduentry.ai — French (Français)
+
+- [Accueil FR](https://eduentry.ai/fr): Évaluation gratuite par IA pour lycéens de 14 à 18 ans — rapport de préparation au stage personnalisé.
+- [Blog FR](https://eduentry.ai/fr/blog): Guides sur les stages, carrières et expérience professionnelle en français.
+
+### Eduentry.ai — Arabic (العربية)
+
+- [الصفحة الرئيسية AR](https://eduentry.ai/ar): تقييم مجاني بالذكاء الاصطناعي لطلاب الثانوية 14–18 عاماً — تقرير جاهزية تدريب شخصي.
+- [Blog AR](https://eduentry.ai/ar/blog): مقالات التدريب والمسار المهني باللغة العربية.
+
+### Eduentry.ai — Chinese (中文)
+
+- [首页 ZH](https://eduentry.ai/zh): 面向14至18岁高中生的免费AI实习准备评估 — 即时生成个性化报告。
+- [Blog ZH](https://eduentry.ai/zh/blog): 实习与职业发展中文指南。
+
+### Eduentry.ai blog posts — English
 
 - [Why Early Internships Matter](https://eduentry.ai/blog/early-internship-child-development-career): Child development, maturity, and the career advantage that compounds.
 - [High School Internship Benefits](https://eduentry.ai/blog/high-school-internship-benefits-university): How work experience builds character, readiness, and university admissions outcomes.
 - [Business Work Experience UK](https://eduentry.ai/blog/business-work-experience-high-school-uk): What it is, how to find it, and why it matters for UK high school students.
 - [How to Get a Tech Internship Before University](https://eduentry.ai/blog/how-to-get-tech-internship-before-university): Practical guide for UK students seeking technology work experience.
 - [How Does Your Child Compare Globally](https://eduentry.ai/blog/how-does-your-child-compare-globally): International academic benchmarking guide for parents.
+
+### Eduentry.ai blog posts — French (Français)
+
+- [Stages lycée et université](https://eduentry.ai/fr/blog/stages-lycee-avantages-universite): Stages au lycée — pourquoi ils comptent pour le développement personnel et l'accès à l'université.
+- [Expérience professionnelle lycée](https://eduentry.ai/fr/blog/stage-experience-professionnelle-lycee): Expérience en entreprise au lycée — tout ce que vous devez savoir.
+- [Se démarquer à 15 ans](https://eduentry.ai/fr/blog/se-demarquer-a-15-ans): Guide complet pour lycéens ambitieux.
+- [Créer son entreprise à 16 ans](https://eduentry.ai/fr/blog/creer-son-entreprise-a-16-ans): Guide pratique pour lycéens entrepreneurs.
+- [Comparer votre enfant à l'échelle mondiale](https://eduentry.ai/fr/blog/comment-se-compare-votre-enfant): Guide pour les parents sur le comparatif académique international.
+- [Trouver un stage lycéen en France](https://eduentry.ai/fr/blog/stage-lyceen-france-comment-trouver): Comment trouver un stage de qualité en tant que lycéen en France.
+- [CV stage lycéen](https://eduentry.ai/fr/blog/cv-stage-lyceen-16-ans): Rédiger un CV de stage percutant à 16 ans — guide étape par étape.
+- [Entretien de stage lycéen](https://eduentry.ai/fr/blog/entretien-stage-lyceen-conseils): Réussir son entretien de stage lycéen — conseils et questions fréquentes.
+- [Stage marketing digital](https://eduentry.ai/fr/blog/stage-marketing-digital-lyceen): Stage en marketing digital pour lycéens — guide complet 2026.
+- [Stage data analyse](https://eduentry.ai/fr/blog/stage-data-analyse-lyceen): Stage en analyse de données pour lycéens — par où commencer ?
+- [IA et futur de l'emploi](https://eduentry.ai/fr/blog/intelligence-artificielle-futur-emploi-jeunes): Intelligence artificielle et futur de l'emploi pour les jeunes.
+- [Stage d'été lycéen France](https://eduentry.ai/fr/blog/stage-ete-france-lyceen): Stage d'été pour lycéens en France — guide 2026.
+- [Stage finance et banque](https://eduentry.ai/fr/blog/stage-finance-banque-lyceen): Stage en finance et banque pour lycéens.
+- [Scores PISA France](https://eduentry.ai/fr/blog/score-pisa-france-analyse): Scores PISA France 2022 — analyse et implications pour votre enfant.
+- [Grandes écoles vs université](https://eduentry.ai/fr/blog/grandes-ecoles-orientation-lyceen): Guide d'orientation pour lycéens et leurs parents.
+- [PISA 2025 expérience professionnelle](https://eduentry.ai/fr/blog/pisa-2025-experience-professionnelle-etudiants): PISA 2025 — Les Notes Chutent Partout — Pourquoi l'Expérience Professionnelle est la Réponse.
+- [PISA 2025 crise éducation mondiale](https://eduentry.ai/fr/blog/pisa-2025-crise-education-mondiale-ce-que-les-parents-doivent-savoir): PISA 2025 — Crise de l'Éducation Mondiale — Ce Que Chaque Parent Doit Savoir.
+
+### Eduentry.ai blog posts — Arabic (العربية)
+
+- [دليل CAT4 الإمارات](https://eduentry.ai/ar/blog/cat4-dalil-shamil): دليل شامل لاختبار CAT4 في الإمارات العربية المتحدة.
+- [المدارس البريطانية دبي أبوظبي](https://eduentry.ai/ar/blog/madaras-britaniya-dubai-abu-dhabi): القبول في المدارس البريطانية في دبي وأبوظبي — الدليل الكامل.
+- [برامج الموهوبين الإمارات](https://eduentry.ai/ar/blog/baramij-mawhubin-imarat): برامج الموهوبين والمتفوقين في الإمارات — دليل أولياء الأمور.
+- [اختبارات القبول المدارس الدولية](https://eduentry.ai/ar/blog/imtihanat-qabul-madaras-dawliyya): اختبارات القبول في المدارس الدولية بالإمارات — دليل شامل.
+- [التدريب المبكر وتطور الطفل](https://eduentry.ai/ar/blog/staj-mubakir-tatawwur-mahni): كيف تُبنى المسيرة المهنية في سن مبكرة.
+- [إيجاد تدريب في دبي](https://eduentry.ai/ar/blog/kayfa-tajid-staj-dubai): كيف تجد تدريباً مهنياً في دبي وهو طالب ثانوي.
+- [السيرة الذاتية للتدريب 16 سنة](https://eduentry.ai/ar/blog/sirat-dhatiyya-staj-16): كيف تكتب سيرة ذاتية مميزة للتدريب وعمرك 16 عاماً.
+- [مقابلة التدريب](https://eduentry.ai/ar/blog/muqabala-staj-nasayih): كيف تنجح في مقابلة التدريب — نصائح عملية للطلاب في الخليج.
+- [تدريب التكنولوجيا الإمارات](https://eduentry.ai/ar/blog/staj-taqniya-imarat): تدريب التكنولوجيا للطلاب في الإمارات — كيف تبدأ وما تتوقعه.
+- [تدريب القطاع المالي الإمارات](https://eduentry.ai/ar/blog/staj-tamwil-imarat): تدريب القطاع المالي في الإمارات — الفرص والمتطلبات.
+- [الذكاء الاصطناعي ومستقبل العمل](https://eduentry.ai/ar/blog/dhakaa-istinai-mustaqbal-amal): ما الذي يحتاج طلاب الثانوية أن يعرفوه.
+- [برامج التدريب الصيفي الإمارات](https://eduentry.ai/ar/blog/staj-sayf-imarat): برامج التدريب الصيفي للطلاب في الإمارات.
+- [تدريب التسويق الرقمي](https://eduentry.ai/ar/blog/staj-tadwiq-raqmi): التدريب في التسويق الرقمي — دليل الطلاب في الشرق الأوسط.
+- [تحليل البيانات كمسار مهني](https://eduentry.ai/ar/blog/staj-tahlil-bayanat): دليل طلاب الثانوية في الإمارات.
+- [مشروع تجاري في 16 سنة](https://eduentry.ai/ar/blog/mashruik-tijarik-16): كيف تبدأ مشروعاً تجارياً صغيراً في الإمارات.
+- [PISA 2025 خبرة عملية](https://eduentry.ai/ar/blog/pisa-2025-khibra-amaliya-istidad-talab): نتائج بيزا 2025 — الدرجات تتراجع ولماذا الخبرة العملية هي الإجابة.
+- [PISA 2025 أزمة التعليم](https://eduentry.ai/ar/blog/pisa-2025-azmat-talim-alami-ma-yahtaj-marifatuh-awaliyaa-al-umur): أزمة التعليم العالمية — ما يحتاج كل ولي أمر أن يعرفه.
+
+### Eduentry.ai blog posts — Russian (Русский)
+
+- [Ранняя стажировка](https://eduentry.ai/ru/blog/ranniy-stazh-razvitie-rebyonka-karera): Развитие ребёнка, зрелость и накопленное карьерное преимущество.
+- [Стажировка в старшей школе](https://eduentry.ai/ru/blog/preimushchestva-stazha-v-shkole): Личностный рост, готовность и поступление в университет.
+- [Опыт работы в школе](https://eduentry.ai/ru/blog/rabochiy-opyt-starshaya-shkola-uk): Что это, как найти и почему это важно.
+- [Международное сравнение](https://eduentry.ai/ru/blog/kak-vash-rebyonok-sravnivaetsya-globalno): Руководство по международному академическому сравнению.
+- [Как выделиться в 15 лет](https://eduentry.ai/ru/blog/kak-vydelytsya-v-15-let): Как школьники реально выделяются в 15 лет.
+- [Бизнес в 16 лет](https://eduentry.ai/ru/blog/kak-nachat-biznes-v-16-let): Как начать свой бизнес в 16 лет — практическое руководство.
+- [PISA 2025 образовательный кризис](https://eduentry.ai/ru/blog/pisa-2025-globalnyy-obrazovatelnyy-krizis): Глобальный образовательный кризис — что нужно знать родителям.
+- [PISA 2025 опыт работы](https://eduentry.ai/ru/blog/pisa-2025-rabochiy-opyt-gotovnost-uchashchikhsya): Оценки падают — но опыт работы может стать ответом.
+- [Резюме для стажировки](https://eduentry.ai/ru/blog/kak-napisat-rezyume-dlya-stazha): Полное руководство для старшеклассников.
+- [Собеседование на стажировку](https://eduentry.ai/ru/blog/kak-proyti-sobesedovanie-na-stazh): Подготовка и советы для школьников.
+- [Стажировка в цифровом маркетинге](https://eduentry.ai/ru/blog/tsifrovoy-marketing-stazh-shkola): С чего начать для школьников.
+- [Найти стажировку без опыта](https://eduentry.ai/ru/blog/kak-nayti-stazh-bez-svyazey): Практическое руководство для школьников.
+- [Сопроводительное письмо](https://eduentry.ai/ru/blog/kak-napisat-soprovoditelnoe-pismo-dlya-stazha): Шаблон и примеры для стажировки.
+- [Удалённая стажировка](https://eduentry.ai/ru/blog/udalennaya-stazh-dlya-shkolnikov): Как найти, подготовиться и получить максимум.
+- [IT-стажировка](https://eduentry.ai/ru/blog/it-stazh-dlya-shkolnikov): Как начать без опыта программирования.
+- [Первый день на стажировке](https://eduentry.ai/ru/blog/pervyy-den-na-stazhirovke): Что нужно знать и как произвести правильное впечатление.
+- [Рекомендательное письмо](https://eduentry.ai/ru/blog/kak-poluchit-rekomendatelnoe-pismo-posle-stazha): Как получить рекомендательное письмо после стажировки.
+- [Стажировка в стартапе](https://eduentry.ai/ru/blog/startap-stazh-shkolniki): Что это даёт и стоит ли оно того.
+
+### Eduentry.ai blog posts — Chinese (中文)
+
+- [PISA 2025中国家长](https://eduentry.ai/zh/blog/pisa-2025-zhongguo-jiazhang-zhinan): PISA 2025成绩解读——每位家长需要了解的信息。
+- [评估孩子学术水平](https://eduentry.ai/zh/blog/haizi-xueshu-shuiping-ruhe-celiang): 如何评估孩子的学术水平——免费测评指南。
+- [高中生找实习](https://eduentry.ai/zh/blog/gaozhong-shixi-ruhe-xunzhao): 高中生如何找到实习机会——完整指南。
+- [实习简历写作](https://eduentry.ai/zh/blog/shixi-jianlixie-zhinan): 高中生实习简历写作完整指南——没有经验也能脱颖而出。
+- [实习面试准备](https://eduentry.ai/zh/blog/shixi-mianshi-zhunbei-jiqiao): 实习面试完整准备指南——高中生如何自信应对每一个问题。
+- [数字营销实习入门](https://eduentry.ai/zh/blog/shuzi-yingxiao-shixi-rumen): 高中生如何进入这个高需求领域。
+- [数据分析实习](https://eduentry.ai/zh/blog/shuju-fenxi-shixi-gaoxiaosheng): 高中生如何踏入这个最有前景的领域。
+- [如何在15岁脱颖而出](https://eduentry.ai/zh/blog/ruhe-zai-15-sui-tuocying): 有志向的高中生完整行动指南。
+- [没有背景找实习](https://eduentry.ai/zh/blog/ruhe-zhaodao-shixi-mei-you-guanxi): 没有背景和人脉，如何找到实习机会——高中生实战指南。
+- [实习求职信写作](https://eduentry.ai/zh/blog/shixi-qiuzhixin-xiezuo-zhinan): 高中生版本完整指南。
+- [远程实习指南](https://eduentry.ai/zh/blog/yuancheng-zaixian-shixi-zhinan): 高中生如何找到并完成线上实习。
+- [IT科技实习](https://eduentry.ai/zh/blog/IT-keji-shixi-gaoxiao): 高中生如何在没有编程基础的情况下入行。
+- [金融实习入门](https://eduentry.ai/zh/blog/jinrong-shixi-rumen): 高中生如何进入金融行业积累早期经验。
+- [设计与创意实习](https://eduentry.ai/zh/blog/sheji-chuangyi-shixi): 高中生如何开始积累设计行业经验。
+- [创业公司实习](https://eduentry.ai/zh/blog/chuangye-gongsi-shixi): 值不值得——高中生的完整分析。
+- [实习推荐信](https://eduentry.ai/zh/blog/tuijianxin-zenme-yao): 实习后如何获得推荐信——完整指南。
+- [实习第一天](https://eduentry.ai/zh/blog/shixi-di-yi-tian): 如何给人留下好印象（以及绝对不能做的事）。
+- [实习vs兼职](https://eduentry.ai/zh/blog/shixi-vs-jianzhang): 高中生应该选哪个？
 
 ---
 
