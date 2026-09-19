@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: PAGE_URL,
-    languages: { zh: PAGE_URL, 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, fr: `${BASE_URL}/fr`, ar: `${BASE_URL}/ar`, 'x-default': BASE_URL },
+    languages: { 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, fr: `${BASE_URL}/fr`, ar: `${BASE_URL}/ar`, ru: `${BASE_URL}/ru`, zh: PAGE_URL, 'x-default': BASE_URL },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
     locale: 'zh_CN',
-    alternateLocale: ['en_GB', 'tr_TR', 'es_ES', 'fr_FR', 'ar_AE'],
+    alternateLocale: ['en_GB', 'tr_TR', 'es_ES', 'fr_FR', 'ar_AE', 'ru_RU'],
     title: '实习准备评估 — 免费AI报告 | Eduentry.ai',
     description: '面向14至18岁高中生的免费AI评估，34道自适应题目，4个专业方向，即时生成个性化报告。',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — 实习准备评估' }],

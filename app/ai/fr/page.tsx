@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: PAGE_URL,
-    languages: { fr: PAGE_URL, 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, 'x-default': BASE_URL },
+    languages: { 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, fr: PAGE_URL, ar: `${BASE_URL}/ar`, ru: `${BASE_URL}/ru`, zh: `${BASE_URL}/zh`, 'x-default': BASE_URL },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
     locale: 'fr_FR',
-    alternateLocale: ['en_GB', 'tr_TR', 'es_ES'],
+    alternateLocale: ['en_GB', 'tr_TR', 'es_ES', 'ar_AE', 'ru_RU', 'zh_CN'],
     title: 'Évaluation de stage — Rapport IA gratuit | Eduentry.ai',
     description: 'Évaluation gratuite par IA pour lycéens de 14 à 18 ans. 34 questions adaptatives en 4 domaines. Rapport personnalisé immédiat.',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — Évaluation de préparation au stage' }],

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: PAGE_URL,
-    languages: { es: PAGE_URL, 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, 'x-default': BASE_URL },
+    languages: { 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, es: PAGE_URL, fr: `${BASE_URL}/fr`, ar: `${BASE_URL}/ar`, ru: `${BASE_URL}/ru`, zh: `${BASE_URL}/zh`, 'x-default': BASE_URL },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
     locale: 'es_ES',
-    alternateLocale: ['en_GB', 'tr_TR'],
+    alternateLocale: ['en_GB', 'tr_TR', 'fr_FR', 'ar_AE', 'ru_RU', 'zh_CN'],
     title: 'Evaluación de prácticas Reino Unido — Informe de IA gratuito | Eduentry.ai',
     description: 'Evaluación de preparación para prácticas gratuita con IA para estudiantes de 14 a 18 años. 34 preguntas adaptativas en 4 áreas. Informe personalizado al instante.',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — Evaluación de preparación para prácticas' }],

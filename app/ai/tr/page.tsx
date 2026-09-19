@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: PAGE_URL,
-    languages: { tr: PAGE_URL, 'en-GB': BASE_URL, es: `${BASE_URL}/es`, 'x-default': BASE_URL },
+    languages: { 'en-GB': BASE_URL, tr: PAGE_URL, es: `${BASE_URL}/es`, fr: `${BASE_URL}/fr`, ar: `${BASE_URL}/ar`, ru: `${BASE_URL}/ru`, zh: `${BASE_URL}/zh`, 'x-default': BASE_URL },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
     locale: 'tr_TR',
-    alternateLocale: ['en_GB', 'es_ES'],
+    alternateLocale: ['en_GB', 'es_ES', 'fr_FR', 'ar_AE', 'ru_RU', 'zh_CN'],
     title: 'İngiltere Staj Değerlendirmesi — Ücretsiz Yapay Zeka Raporu | Eduentry.ai',
     description: '14–18 yaş lise öğrencileri için ücretsiz yapay zeka destekli staj hazırlık değerlendirmesi. 34 soru, 4 aşama. Anında kişiselleştirilmiş hazırlık raporu.',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — Staj Hazırlık Değerlendirmesi' }],

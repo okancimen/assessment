@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: BASE_URL,
-    languages: { 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, 'x-default': BASE_URL },
+    languages: { 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, fr: `${BASE_URL}/fr`, ar: `${BASE_URL}/ar`, ru: `${BASE_URL}/ru`, zh: `${BASE_URL}/zh`, 'x-default': BASE_URL },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: BASE_URL,
     siteName: 'Eduentry.ai',
     locale: 'en_GB',
-    alternateLocale: ['tr_TR', 'es_ES'],
+    alternateLocale: ['tr_TR', 'es_ES', 'fr_FR', 'ar_AE', 'ru_RU', 'zh_CN'],
     title: 'Internship Readiness Assessment UK — Free AI Report | Eduentry.ai',
     description: 'Free AI-powered internship assessment for high school students aged 14–18. 34 adaptive questions across Tech, Business, Data Analytics, and Digital Marketing. Instant personalised report.',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — Internship Readiness Assessment' }],

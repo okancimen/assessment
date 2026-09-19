@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: PAGE_URL,
-    languages: { ar: PAGE_URL, 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, fr: `${BASE_URL}/fr`, 'x-default': BASE_URL },
+    languages: { 'en-GB': BASE_URL, tr: `${BASE_URL}/tr`, es: `${BASE_URL}/es`, fr: `${BASE_URL}/fr`, ar: PAGE_URL, ru: `${BASE_URL}/ru`, zh: `${BASE_URL}/zh`, 'x-default': BASE_URL },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
     locale: 'ar_AE',
-    alternateLocale: ['en_GB', 'tr_TR', 'es_ES', 'fr_FR'],
+    alternateLocale: ['en_GB', 'tr_TR', 'es_ES', 'fr_FR', 'ru_RU', 'zh_CN'],
     title: 'تقييم التدريب المهني — تقرير ذكاء اصطناعي مجاني | Eduentry.ai',
     description: 'تقييم مجاني بالذكاء الاصطناعي لطلاب الثانوية من 14 إلى 18 عاماً. 34 سؤالاً تكيفياً في 4 مجالات. تقرير شخصي فوري.',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai — تقييم جاهزية التدريب المهني' }],

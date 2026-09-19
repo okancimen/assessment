@@ -10,12 +10,17 @@ export const metadata: Metadata = {
       'en-GB': PAGE_URL,
       tr: `${BASE_URL}/tr`,
       es: `${BASE_URL}/es`,
+      fr: `${BASE_URL}/fr`,
+      ar: `${BASE_URL}/ar`,
+      ru: `${BASE_URL}/ru`,
+      zh: `${BASE_URL}/zh`,
       'x-default': PAGE_URL,
     },
   },
   openGraph: {
     url: PAGE_URL,
     locale: 'en_GB',
+    alternateLocale: ['tr_TR', 'es_ES', 'fr_FR', 'ar_AE', 'ru_RU', 'zh_CN'],
   },
 }
 
