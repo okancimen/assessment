@@ -1,4 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { isAdminEmail } from '@/lib/admin'
 import { redirect, notFound } from 'next/navigation'
 import Link from 'next/link'
 import CompleteClient from './CompleteClient'
@@ -13,7 +15,10 @@ export default async function CompletePage({
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/auth/login')
 
-  const { data: assessment } = await supabase
+  const adminMode = isAdminEmail(user.email)
+  const db = adminMode ? createAdminClient() : supabase
+
+  const { data: assessment } = await db
     .from('assessments')
     .select('status, assessment_type, children(parent_id, student_user_id, name)')
     .eq('id', id)
@@ -24,9 +29,9 @@ export default async function CompletePage({
   const child = assessment.children as unknown as { parent_id: string; student_user_id: string | null; name: string }
   const isInternship = assessment.assessment_type === 'internship'
 
-  const authorized = isInternship
+  const authorized = adminMode || (isInternship
     ? child.parent_id === user.id || child.student_user_id === user.id
-    : child.parent_id === user.id
+    : child.parent_id === user.id)
 
   if (!authorized) redirect('/dashboard')
 
