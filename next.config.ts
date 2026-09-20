@@ -4,6 +4,18 @@ const nextConfig: NextConfig = {
   experimental: {
     inlineCss: true,
   },
+  turbopack: {
+    rules: {
+      // All features in polyfill-module.js (trimStart/End, Array.flat/flatMap/at,
+      // Object.fromEntries/hasOwn, Promise.finally, URL.canParse) have been
+      // baseline in Chrome 111+ / Safari 16.4+ / Firefox 111+ since 2021-2022.
+      // Replacing with empty output removes 13 KiB of dead code from every page.
+      '**/next/dist/build/polyfills/polyfill-module.js': {
+        loaders: [{ loader: './lib/empty-loader.cjs' }],
+        as: '*.js',
+      },
+    },
+  },
   async redirects() {
     return [
       { source: '/internship/assessment/:id/question', destination: '/assessment/:id/question', permanent: true },
