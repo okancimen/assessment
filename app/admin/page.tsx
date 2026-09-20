@@ -4,10 +4,8 @@ import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
 import Navbar from '@/components/dashboard/Navbar'
 import DateRangePicker from '@/components/admin/DateRangePicker'
-import GrowthLineChart from '@/components/admin/GrowthLineChart'
-import AssessmentsBarChart from '@/components/admin/AssessmentsBarChart'
-import FunnelChart from '@/components/admin/FunnelChart'
 import UsersTable from '@/components/admin/UsersTable'
+import { AdminGrowthChart, AdminAssessmentsChart, AdminFunnelChart } from '@/components/admin/AdminCharts'
 import type { DailyPoint } from '@/components/admin/GrowthLineChart'
 
 // ── Helpers ────────────────────────────────────────────────────────────────
@@ -252,20 +250,20 @@ export default async function AdminPage({
         {/* Line chart — daily new users */}
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6">
           <h2 className="text-sm font-semibold text-[#1d1d1f] mb-4">Daily new registrations</h2>
-          <GrowthLineChart data={dailyData} />
+          <AdminGrowthChart data={dailyData} />
         </div>
 
         {/* Bar chart — assessments */}
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6">
           <h2 className="text-sm font-semibold text-[#1d1d1f] mb-4">Daily assessments — started vs completed</h2>
-          <AssessmentsBarChart data={dailyData} />
+          <AdminAssessmentsChart data={dailyData} />
         </div>
 
         {/* Funnel */}
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6">
           <h2 className="text-sm font-semibold text-[#1d1d1f] mb-1">Conversion funnel</h2>
           <p className="text-xs text-[#6e6e73] mb-5">Unique users at each step within the selected period</p>
-          <FunnelChart steps={funnelSteps} />
+          <AdminFunnelChart steps={funnelSteps} />
         </div>
 
         {/* Registered users */}
