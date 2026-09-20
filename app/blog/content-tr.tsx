@@ -3060,6 +3060,39 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuz PISA&#39;ya Girmiş Olsaydı Dünya Sıralamasında Nerede Olurdu?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA bireysel öğrencileri sınavdan geçirmez — ulusal düzeyde seçilen temsili bir örnekle çalışır. Yani çocuğunuzun &quot;PISA puanı&quot; hiçbir zaman resmi olarak hesaplanmaz. Ama şu soruyu sormak mümkün: <em>eğer girmiş olsaydı, 91 ülkedeki 690.000 yaşıt arasında nerede dururdu?</em>
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu soruyu cevaplamak için bir çocuğun PISA ile aynı metodolojiye — Madde Tepki Teorisi (IRT) — dayanan bir değerlendirmeden geçmesi gerekir. IRT, soruları öğrencinin verdiği yanıtlara göre anlık olarak ayarlayan uyarlanabilir bir ölçüm sistemidir. PISA&#39;nın bu yöntemi tercih etmesinin nedeni, hem çok zayıf hem de çok güçlü öğrencileri aynı ölçekte doğru biçimde konumlandırabilmesidir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry&#39;nin akademik değerlendirmesi tam olarak bu metodoloji üzerine kurulu. 6–17 yaş arası çocuklara matematik, sözel akıl yürütme, sayısal akıl yürütme ve İngilizce alanlarında uyarlanabilir sorular yöneltiyor; sonuçta PISA ile aynı uluslararası ölçeğe hizalanmış standartlaştırılmış bir puan üretiyor. Bu puan, çocuğunuzun kendi okul içindeki konumunu değil — küresel dağılımdaki yerini gösteriyor.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Ölçeği okumak:</strong> Puan 100 ise uluslararası ortalama. 115, yaklaşık küresel ilk %16. 130, yaklaşık ilk %2. Türkiye&#39;deki bir öğrenci okulunda &quot;iyi&quot; olabilir ama uluslararası ölçekte gerçekte nerede durduğunu ancak bu tür kalibre edilmiş bir değerlendirmeyle öğrenebilir.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bence her ebeveynin bu soruyu en az bir kez sormaya hakkı var. Not karnesi okulun içine bakıyor; bu değerlendirme dışarıya — dünyaya — bakıyor. Ve iki tablo her zaman aynı hikayeyi anlatmıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Değerlendirme 20–35 dakika sürüyor, tamamen ücretsiz ve herhangi bir kayıt olmadan başlatılabiliyor. Sonuçlar anında görüntüleniyor; dört alan için ayrı alt puanlar ve küresel yüzdelik dilim karşılaştırması içeriyor.
+        </p>
+        <div className="mt-6 mb-2">
+          <a
+            href="/tr#akademik"
+            className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#4338CA] transition-colors"
+          >
+            Çocuğunuzun dünya sıralamasını öğrenin — ücretsiz
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA&#39;nın Ölçtüğünü Gerçek Hayatta Geliştirmenin Yolu</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Ailelere her zaman şunu söylerim: PISA&#39;ya hazırlanmak için PISA kitabı çözmek gerekmez. PISA&#39;nın ölçtüğü yetkinlikler — bilgiyi bağlama uygulama, kritik okuma, problem çözme süreci — ancak gerçek bağlamlarda gelişir. Ve bu bağlamların en güçlüsü iş deneyimidir.
