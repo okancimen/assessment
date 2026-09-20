@@ -805,6 +805,44 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'pisa-nedir-is-hayatini-sekillendiren-sinav',
+    title: 'PISA Nedir? 2025 Sonuçları, "PISA 2026" Sorusu ve İş Hayatındaki Gizli Bağ',
+    shortTitle: 'PISA Nedir? 2025 Sonuçları ve İş Hayatıyla Bağı',
+    description:
+      'PISA nedir, nasıl yapılır, PISA 2025 Türkiye\'yi nasıl değerlendirdi? "PISA 2026" diye bir sınav var mı? Ve en önemlisi: PISA\'da başarılı olmak iş hayatında gerçekten fark yaratıyor mu? Deneyimli bir eğitmenin gözünden dürüst bir analiz.',
+    date: '2026-09-21',
+    readTime: '11 dk okuma',
+    tags: ['PISA', 'Kariyer Gelişimi', 'Akademik Değerlendirme', 'Staj', 'Ebeveyn Rehberi'],
+    faqs: [
+      {
+        q: 'PISA nedir, kaç yılda bir yapılır?',
+        a: 'PISA (Programme for International Student Assessment — Uluslararası Öğrenci Değerlendirme Programı), OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan küresel bir değerlendirmedir. Matematik, okuma ve fen bilimleri alanlarını ölçer; 2025 itibarıyla hesaplamalı problem çözme de eklenmiştir. PISA bir yarışma değil; ülkelerin eğitim sistemlerini uluslararası ölçekte kıyaslamasına olanak tanıyan en yetkili araçtır.',
+      },
+      {
+        q: 'PISA 2025 nedir ve Türkiye nasıl bir sonuç aldı?',
+        a: 'PISA 2025, 91 ülkede yaklaşık 690.000 öğrencinin katıldığı en güncel değerlendirme döngüsüdür. Sonuçlar 2026 başında açıklandı. Türkiye bu döngüde matematik, okuma ve fen bilimlerinin üçünde de 2022\'ye kıyasla ilerleme kaydetti — bu başarıyı gösteren az sayıda ülkeden biri. Okuma ve fen bilimlerinde OECD ortalamasının üzerinde, matematikte ise OECD ortalamasına yakın puan aldı. Bununla birlikte hesaplamalı problem çözme alanında OECD ortalamasının altında kaldı.',
+      },
+      {
+        q: 'PISA 2026 nedir?',
+        a: 'PISA 2026 diye bir sınav yoktur. PISA üç yılda bir yapılır: önceki döngü PISA 2022, sonuncusu PISA 2025\'tir. PISA 2025 sonuçları 2026 yılında kamuoyuyla paylaşıldığından "PISA 2026" araması yapan birçok kişi aslında bu sonuçlara ulaşmaya çalışıyor. Bir sonraki döngü PISA 2028 olacak.',
+      },
+      {
+        q: 'PISA başarısı iş hayatında gerçekten fark yaratıyor mu?',
+        a: 'Doğrudan değil, dolaylı ama güçlü biçimde. PISA\'nın ölçtüğü beceriler — bilgiyi gerçek sorunlara uygulama, metin anlama ve kritik düşünme — tam olarak işverenlerin aradığı yetkinliklerdir. Araştırmalar, PISA\'da daha yüksek puan alan ülkelerin ortalama iş gücü verimliliğinin ve bireysel kazançların da daha yüksek olduğunu gösteriyor. PISA puanı kariyer garantisi değil; çocuğunuzun ne kadar sağlam bir temel üzerine inşa ettiğinin bir ölçüsü.',
+      },
+      {
+        q: 'Çocuğumu PISA\'ya nasıl hazırlayabilirim?',
+        a: 'PISA bilgi ezberini değil, bilginin uygulanmasını ölçer. Bu yüzden en etkili hazırlık günlük okuma alışkanlığı, hesap makinesi olmadan gerçek yaşam matematik problemleri ve açık uçlu tartışmalardır. Bunların ötesinde: gerçek dünya bağlamında problem çözme deneyimi — yani staj ve iş deneyimi — PISA\'nın ölçtüğü yetkinlikleri en doğal biçimde geliştiren ortamdır.',
+      },
+    ],
+    cta: {
+      heading: 'PISA\'nın ölçtüğü becerileri hayata geçirin',
+      body: 'Lise öğrencileri için ücretsiz 34 soruluk uyarlanabilir staj hazırlık değerlendirmesi. Aptitude, alan bilgisi ve iş yeri becerileri açısından kişiselleştirilmiş rapor — PISA\'nın önemsediği yetkinliklerin gerçek dünyadaki karşılığı.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/staj',
+    },
+  },
+  {
     slug: 'staja-hazirlik-guclu-yonlerini-bul',
     title: 'Staja Başvurmadan Önce: Güçlü Yönlerini Nasıl Keşfedersin?',
     shortTitle: 'Staj İçin Güçlü Yönlerini Keşfet',

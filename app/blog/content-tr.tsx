@@ -2960,6 +2960,145 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'pisa-nedir-is-hayatini-sekillendiren-sinav': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Yirmi yılı aşkın süredir öğrencilerle çalışıyorum. Bu sürede bir şeyi fark ettim: aileler çocuklarının okul notlarını yakından takip ediyor, ama çocuklarının gerçek dünyaya ne kadar hazır olduğunu nadiren biliyor. İşte PISA tam bu boşluğu doldurmak için tasarlanmış — ve sonuçları her zaman rahatlatıcı değil.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu yazıyı bir istatistik raporu olarak yazmıyorum. Sizi endişelendirmek için de değil. Ama bir eğitmen olarak dürüst olmak zorundayım: PISA&#39;nın ölçtüğü şeyler ile çocuklarımızın hayata çıktığındaki gerçek hazırlık düzeyi arasında hâlâ önemli bir mesafe var. Bu mesafeyi görmek, kapatmanın ilk adımı.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA, İngilizce açılımıyla <em>Programme for International Student Assessment</em> — Uluslararası Öğrenci Değerlendirme Programı. OECD (Ekonomik İşbirliği ve Kalkınma Örgütü) tarafından her üç yılda bir düzenlenen bu değerlendirme, 91 ülkede yaklaşık 690.000 öğrenciyi aynı metodoloji ile ölçüyor. Katılımcılar 15 yaşındaki öğrenciler — lise döneminin tam ortasındaki gençler.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA&#39;yı sıradan bir sınavdan ayıran şey şu: öğrencileri ne bildikleri için değil, bildiklerini gerçek yaşam sorunlarına uygulayıp uygulayamadıkları için değerlendiriyor. Bir matematik sorusu sormak yerine, bir alışveriş listesini en verimli şekilde nasıl planlayacağınızı soruyor. Bir fen bilgisi sorusu sormak yerine, bir gazete haberindeki bilimsel iddiayı nasıl değerlendireceğinizi soruyor. PISA 2025&#39;ten itibaren hesaplamalı problem çözme de tabloya eklendi — dijital çağda giderek daha kritik bir yetkinlik.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye ilk kez 2003 yılında PISA&#39;ya katıldı. O tarihten bu yana her döngüde ülkenin eğitim sistemindeki ilerleme veya gerileme net biçimde görünür hale geliyor.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Önemli not:</strong> PISA bir sıralama yarışması değil. Hiçbir öğrenci bireysel olarak PISA&#39;ya girmez; sınav, ulusal eğitim sistemlerini değerlendirmek için tasarlanmış temsili bir örnekleme dayanır. Ama bu, sonuçların bireysel çocuklar için önemsiz olduğu anlamına gelmiyor — tam tersine.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA 2025 Nedir? Türkiye Ne Elde Etti?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025, 91 ülkedeki öğrencilerin 2024–2025 öğretim yılında katıldığı en güncel değerlendirme döngüsüdür. Sonuçlar 2026 yılında kamuoyuyla paylaşıldı. Türkiye açısından haberler genel olarak iyi — ve bunu içtenlikle söylüyorum.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye, PISA 2025&#39;te matematik, okuma ve fen bilimlerinin <strong>üçünde birden 2022 döngüsüne kıyasla ilerleme kaydetti</strong>. Bu başarıyı gösteren az sayıda ülkeden biri. Okuma ve fen bilimlerinde OECD ortalamasının üzerine çıktı; matematikte de OECD ortalamasına yakın bir konuma geldi. Minimum yeterlilik düzeyi olan Seviye 2&#39;nin üzerindeki öğrenci oranı da artış gösterdi: fen bilimlerinde öğrencilerin yüzde seksen biri bu eşiği aştı — OECD ortalamasının yedi puan üzerinde.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          2015&#39;ten bu yana bakıldığında tablo daha da etkileyici: matematikte düşük performanslı öğrenci oranı 16 puan, okumada 16 puan, fen bilimlerinde ise 25 puan azaldı. Bu, on yıllık gerçek bir sistemik ilerleme.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Peki neden hâlâ kaygı duyuyorum? Çünkü bu tablo, bütün resmi göstermiyor.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Fen bilimleri</strong> — Öğrencilerin %81&#39;i Seviye 2 veya üzerinde. OECD ortalaması: %74. İyi haber.</Check>
+          <Check><strong>Okuma</strong> — Öğrencilerin %76&#39;sı Seviye 2 veya üzerinde. OECD ortalaması: %69. İyi haber.</Check>
+          <Check><strong>Matematik</strong> — Öğrencilerin %64&#39;ü Seviye 2 veya üzerinde. OECD ortalaması: %65. Neredeyse eşit — ama bu, her üç öğrenciden birinin hâlâ minimum düzeyin altında olduğu anlamına geliyor.</Check>
+          <Bullet><strong>Hesaplamalı problem çözme</strong> — OECD ortalamasının <em>altında</em>. Dijital ekonomi için en kritik alan burada zayıf.</Bullet>
+          <Bullet><strong>Üst performanslılar</strong> — Seviye 5 veya 6&#39;ya ulaşan öğrenci oranı fen ve matematikte yalnızca %7–8. Uluslararası rekabette öne çıkabilecek öğrenci havuzu henüz yeterince geniş değil.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA 2026 Nedir? Bu Sorunun Cevabı Sizi Şaşırtabilir</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bana sık sık &quot;PISA 2026 sonuçları ne zaman açıklanacak?&quot; diye soruyorlar. Anlayışla karşılıyorum — çünkü PISA 2025&#39;in sonuçları 2026 yılında yayımlandı. Bu zaman farkı doğal bir kafa karışıklığı yaratıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gerçek şu: <strong>PISA 2026 diye bir değerlendirme yoktur.</strong> PISA üç yılda bir yapılır. Sıradaki döngüler: PISA 2022, PISA 2025, PISA 2028. 2026 yılında kamuoyuyla paylaşılan sonuçlar, 2025&#39;te yapılan sınava aittir. Dolayısıyla bu yıl &quot;PISA 2026 sonuçları&quot; arayanlar aslında PISA 2025 verilerine ulaşmaya çalışıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bir sonraki değerlendirme PISA 2028 olacak. Sonuçları ise 2029 yılında açıklanacak. Bugün lise öğrencisi olan bir çocuk bu döngüde artık değerlendirme dışında kalacak — şu anki hazırlık penceresinin kapanmadan önce kullanılması gereken nedenlerinden biri bu.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Başarısı İş Hayatında Başarıdır — Ama Nasıl?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu iddiayı duyduğunuzda belki &quot;abartıyor&quot; diye düşündünüz. Haklısınız — doğrudan bir nedensellik yok. PISA&#39;da yüksek puan almak, otomatik olarak iyi bir kariyer garantisi vermiyor. Ama bağlantı, düşündüğünüzden çok daha derine gidiyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA&#39;nın ölçtüğü şeye yakından bakın: <em>bilgiyi gerçek yaşam bağlamına uygulama, karmaşık metinleri anlama ve yorumlama, problem çözme süreçlerini planlama.</em> Şimdi modern işverenlerin aradığı yetkinliklere bakın: analitik düşünme, karmaşık bilgiyi işleme, belirsiz koşullarda karar alma. İkisi aynı liste.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD&#39;nin uzun vadeli araştırmaları tutarlı biçimde gösteriyor: PISA puanları yüksek olan ülkelerde bireysel gelir seviyeleri, üretkenlik ve iş piyasasına entegrasyon oranları da daha yüksek. Bu bir korelasyon — ama boşuna değil. PISA&#39;nın ölçtüğü yetkinlikler, iş hayatının gerçekten talep ettiği yetkinliklerle örtüşüyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA Seviye 2 — minimum yeterlilik eşiği — şunu tanımlar: öğrenci, &quot;basit bir durumu matematiksel olarak nasıl temsil edebileceğini doğrudan talimat almadan yorumlayabilir ve tanıyabilir.&quot; Bu tanımı okuyunca aklıma hep şu geliyor: bir bütçe hesabı yapacak, bir raporu okuyup karar verecek, bir müşteriyle iletişim kuracak bir genç için bu minimum bile yetmez. İş hayatı Seviye 2&#39;yi çok hızlı aşıyor.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Eğitmen notu:</strong> PISA&#39;nın hesaplamalı problem çözme alanını 2025&#39;te tabloya eklemesi tesadüf değil. Yapay zekanın iş süreçlerine entegre olduğu bir dünyada, algoritmik düşünme ve dijital problem çözme artık temel okuryazarlık kapsamına girdi. Türkiye&#39;nin bu alanda OECD ortalamasının altında kalması, gelecek 10 yılın iş piyasası açısından en kritik endişe noktası.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Beni Asıl Kaygılandıran: Sayıların Arkasındaki Tutumlar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bir öğrencinin tutumu, puanından çok daha fazla şeyi anlatır. PISA 2025, Türkiye&#39;deki öğrencilerin tutumlarına ilişkin bazı bulgular da paylaştı — ve bu bulgular, puanlardan daha dikkat gerektiriyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Güzel olan: Türk öğrencilerin yüzde altmış sekizi zorlu bir çalışmayla karşılaştığında ek çaba harcadığını belirtiyor. Bu oran OECD ortalamasının sekiz puan üzerinde. Öğrencilerimiz motive — bu gerçek ve değerli.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Kaygı verici olan: Öğrencilerin yüzde yirmi sekizi &quot;okul beni yetişkin hayata hazırlamak için pek az şey yaptı&quot; ifadesine katıldığını söylüyor. OECD ortalaması yüzde yirmi dört. Türkiye bu oranın dört puan üzerinde.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bunu somutlaştırayım: her dört öğrenciden biri, geçirdiği yıllar sonunda okulun kendisini hayata hazırlamadığını hissediyor. Bu hem bir tutum sorunu hem de bir sistem sinyali. Ve bu his yanlış değil — çünkü PISA&#39;nın ölçtüğü yetkinlikler ile günlük okul deneyimi arasında gerçek bir boşluk var.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İş hayatı bu boşluğu tolere etmiyor. Bir öğrenci ne kadar iyi not alırsa alsın, bilgiyi gerçek problemlere uygulama pratiği yapmamışsa, mülakatlarda ve ilk iş yıllarında bu eksiklik kendini gösteriyor.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA&#39;nın Ölçtüğünü Gerçek Hayatta Geliştirmenin Yolu</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ailelere her zaman şunu söylerim: PISA&#39;ya hazırlanmak için PISA kitabı çözmek gerekmez. PISA&#39;nın ölçtüğü yetkinlikler — bilgiyi bağlama uygulama, kritik okuma, problem çözme süreci — ancak gerçek bağlamlarda gelişir. Ve bu bağlamların en güçlüsü iş deneyimidir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bir lise öğrencisi gerçek bir ortamda çalışırken ne oluyor? Belirsiz talimatlarla başa çıkmayı öğreniyor — PISA&#39;nın ölçtüğü problem çözme sürecinin tam kendisi. Bir rapor yazıyor, bir sunum yapıyor — okuma ve iletişim yetkinliği pratikte gelişiyor. Rakamları anlıyor, kararların hesabını tutuyor — matematiksel akıl yürütme sınıftan çok daha anlamlı bir bağlam kazanıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu yüzden PISA başarısı ile iş hayatı başarısı arasındaki bağ şu: ikisi de aynı temel yetkinlikleri gerektiriyor. Ve bu yetkinlikleri en etkili biçimde geliştiren ortam, gerçek işin içinde olmak.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Okuma anlama</strong> — Müşteri e-postasını doğru yorumlamak, bir raporu özetlemek. Sınıfta öğretilir, iş yerinde pekişir.</Bullet>
+          <Bullet><strong>Matematiksel akıl yürütme</strong> — Bütçe hesabı, veri yorumlama, maliyet analizi. Rakamların anlam kazandığı yer iş hayatıdır.</Bullet>
+          <Bullet><strong>Problem çözme</strong> — Beklenmedik durumla başa çıkma, alternatif üretme. Bunun pratiği ancak gerçek sonuçların olduğu ortamlarda yapılır.</Bullet>
+          <Bullet><strong>Hesaplamalı düşünme</strong> — Veri okuma, süreç tasarlama, dijital araçları anlama. Türkiye&#39;nin OECD ortalamasının altında kaldığı bu alan, iş dünyasının en hızlı büyüyen talebi.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye&#39;nin PISA 2025&#39;teki ilerlemesi gerçek ve övünülecek. Ama yüksek not alan öğrencilerimizin bir kısmı, bu notları gerçek dünya bağlamında henüz test etmemiş. İş hayatına geçişte öğrencilerin en çok zorlandığı nokta bu: sınıftaki başarı ile çalışma hayatının talepleri arasındaki köprüyü kuramamak.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Pratik öneri:</strong> PISA&#39;nın ölçtüğü yetkinlikleri geliştirmenin en doğal yolu, lise döneminde yapılandırılmış bir iş deneyimi veya staj programına katılmaktır. Bu hem sınıf bilgisini bağlama oturttur, hem de PISA&#39;nın ölçmekte güçlük çektiği tutum ve iş yeri yetkinliklerini gerçek koşullarda geliştirir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Son Söz: Rakamlar Soğuk, Ama Anlattıkları Gerçek</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA verilerini her okuduğumda şunu hatırlıyorum: bu yüzdeler soğuk rakamlar değil. Her yüzde birinin arkasında yüz binlerce öğrenci var. Ve bu öğrencilerin her biri, bir gün iş başvurusu yapacak, bir mülakatta kendini anlatmaya çalışacak, kariyer seçimleri yapacak.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye PISA 2025&#39;te gerçekten ilerledi. Bu çabayı küçümsemek haksızlık olur. Ama ilerlemenin sürmesi için öğrencilerin okuldaki başarıyı gerçek dünya bağlamına taşıması gerekiyor. Sınıf notu ile işe hazırlık arasındaki köprüyü kurmak, ne devletin ne de okulun tek başına yapabileceği bir şey. Bu köprüyü inşa eden — çoğunlukla — aile desteği ve erken iş deneyimidir.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Çocuğunuz hâlâ lise dönemindeyse, bu pencere açık. PISA 2028&#39;e hazırlık teorik değil; pratik, gerçek ve ulaşılabilir. Nereden başlayacağınızı bilmiyorsanız, aşağıdaki değerlendirme iyi bir başlangıç noktası.
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
