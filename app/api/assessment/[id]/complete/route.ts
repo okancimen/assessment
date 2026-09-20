@@ -25,7 +25,12 @@ export async function POST(
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
-    const { data: assessment } = await supabase
+    const isAdmin = isAdminEmail(user.email)
+
+    // Use admin client for data fetching so RLS doesn't block admins
+    const db = isAdmin ? createAdminClient() : supabase
+
+    const { data: assessment } = await db
       .from('assessments')
       .select('*, children(parent_id, student_user_id, name, date_of_birth)')
       .eq('id', id)
@@ -38,20 +43,19 @@ export async function POST(
     }
     const isInternship = assessment.assessment_type === 'internship'
 
-    const isAdmin = isAdminEmail(user.email)
     const authorized = isAdmin || (isInternship
       ? child.parent_id === user.id || child.student_user_id === user.id
       : child.parent_id === user.id)
     if (!authorized) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
-    const { data: session } = await supabase
+    const { data: session } = await db
       .from('assessment_sessions').select('*').eq('assessment_id', id).single()
     if (!session) return NextResponse.json({ error: 'Session not found' }, { status: 404 })
 
     if (isInternship) {
-      return handleInternshipComplete(id, supabase, assessment, child, session, user)
+      return handleInternshipComplete(id, db, assessment, child, session, user)
     }
-    return handleAcademicComplete(id, supabase, assessment, child, session, user)
+    return handleAcademicComplete(id, db, assessment, child, session, user)
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err)
     console.error('[assessment/complete]', message)
