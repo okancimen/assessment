@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { isAdminEmail } from '@/lib/admin'
 import { withOverloadRetry } from '@/lib/claude/questions'
 import { INTERNSHIP_PHASE_LABELS } from '@/types'
 import Anthropic from '@anthropic-ai/sdk'
@@ -16,7 +18,10 @@ export async function POST(
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
-    const { data: assessment } = await supabase
+    const adminMode = isAdminEmail(user.email)
+    const db = adminMode ? createAdminClient() : supabase
+
+    const { data: assessment } = await db
       .from('assessments')
       .select('*, children(parent_id, student_user_id, name)')
       .eq('id', id)
@@ -26,11 +31,11 @@ export async function POST(
     if (!assessment) return NextResponse.json({ error: 'Not found' }, { status: 404 })
 
     const child = assessment.children as { parent_id: string; student_user_id: string | null; name: string }
-    if (child.parent_id !== user.id && child.student_user_id !== user.id) {
+    if (!adminMode && child.parent_id !== user.id && child.student_user_id !== user.id) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    const { data: result } = await supabase
+    const { data: result } = await db
       .from('results')
       .select('subject_scores, phase_insights')
       .eq('assessment_id', id)
@@ -95,7 +100,7 @@ Respond with ONLY valid JSON:
       insights = {}
     }
 
-    await supabase
+    await db
       .from('results')
       .update({ phase_insights: insights })
       .eq('assessment_id', id)
