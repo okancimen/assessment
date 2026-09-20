@@ -30,11 +30,11 @@ export default async function CompletePage({
 
   if (!authorized) redirect('/dashboard')
 
+  if (assessment.status === 'completed') redirect(`/assessment/${id}/results`)
+
   if (isInternship) {
-    if (assessment.status !== 'completed') {
-      const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
-      await fetch(`${siteUrl}/api/assessment/${id}/complete`, { method: 'POST' }).catch(() => {})
-    }
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
+    await fetch(`${siteUrl}/api/assessment/${id}/complete`, { method: 'POST' }).catch(() => {})
     const name = child.name?.split(' ')[0] ?? 'there'
     return (
       <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center px-4">
