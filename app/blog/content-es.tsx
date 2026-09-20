@@ -1581,6 +1581,157 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'pisa-que-es-resultados-2025-exito-profesional': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Llevo más de veinte años trabajando con estudiantes. En ese tiempo he observado algo constante: las familias siguen muy de cerca las notas del colegio, pero raramente saben dónde se sitúa su hijo en comparación con el resto del mundo. PISA existe precisamente para responder esa pregunta — y las respuestas no siempre son cómodas.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Este artículo no pretende asustar a nadie. Pero como educador tengo la obligación de ser honesto: hay una distancia real entre lo que los sistemas educativos enseñan y lo que PISA mide. Y esa distancia, si se ignora, tiene consecuencias profesionales concretas. Verla con claridad es el primer paso para cerrarla.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué es PISA?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA son las siglas de <em>Programme for International Student Assessment</em> — Programa para la Evaluación Internacional de Alumnos. Es una evaluación diseñada y coordinada por la OCDE (Organización para la Cooperación y el Desarrollo Económicos) que se aplica cada tres años en 91 países a estudiantes de 15 años. Participan aproximadamente 690.000 jóvenes por ciclo, seleccionados mediante muestras representativas de cada sistema educativo.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lo que distingue a PISA de un examen ordinario es su enfoque: no mide lo que los estudiantes han memorizado, sino su capacidad para <em>aplicar</em> ese conocimiento a situaciones del mundo real. Un problema de matemáticas PISA no pregunta cuánto es 327 × 14; pregunta cómo calcular el coste más eficiente de un trayecto en tren usando una tarifa con tramos. Un ejercicio de lectura no pide resumir un texto literario; pide evaluar la credibilidad de dos fuentes contradictorias sobre un tema científico.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA mide tres dominios principales: matemáticas, comprensión lectora y ciencias. En el ciclo de 2025 se incorporó un cuarto dominio: la resolución de problemas computacionales, que refleja la creciente demanda del mercado laboral de pensamiento algorítmico y manejo de entornos digitales.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Nota importante:</strong> PISA no evalúa a estudiantes individuales. Trabaja con muestras representativas para comparar sistemas educativos nacionales. Ningún niño obtiene un &quot;resultado PISA&quot; oficial — aunque sí es posible estimar dónde se situaría si lo hiciera, como explicaremos más adelante.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué es PISA 2025?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 es el ciclo más reciente de la evaluación. Los estudiantes fueron evaluados durante el curso 2024–2025 y los resultados se publicaron en 2026. A nivel global, los datos muestran una tendencia preocupante: las puntuaciones medias de la OCDE en lectura y matemáticas han descendido respecto a ciclos anteriores. La caída acumulada desde 2015 supera los 20 puntos en ambas materias — una diferencia equivalente a casi un año completo de aprendizaje.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los sistemas educativos de Asia Oriental continúan liderando con claridad: Singapur, Japón y Corea del Sur ocupan de forma consistente los primeros puestos en matemáticas, lectura y ciencias. La distancia entre estos países y la media de la OCDE se ha ampliado en 2025.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La novedad más relevante de este ciclo es la incorporación de la resolución de problemas computacionales. Los resultados en este dominio revelan diferencias significativas entre países — y una señal clara sobre cuáles sistemas están preparando a sus estudiantes para la economía digital y cuáles no.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Lectura</strong> — La media OCDE ha descendido respecto a 2022. El 69% de los estudiantes alcanza el Nivel 2 (mínimo de competencia). Uno de cada tres está por debajo.</Check>
+          <Check><strong>Matemáticas</strong> — El 65% de los estudiantes OCDE alcanza el Nivel 2. Aproximadamente uno de cada tres queda por debajo del mínimo funcional.</Check>
+          <Bullet><strong>Resolución de problemas computacionales</strong> — Dominio nuevo en 2025. Diferencias muy marcadas entre países. Los sistemas con menor integración digital acusan el gap de forma especialmente visible.</Bullet>
+          <Bullet><strong>Alto rendimiento (Nivel 5–6)</strong> — Solo el 8% de los estudiantes OCDE en matemáticas. La competitividad global en este segmento está muy concentrada en Asia Oriental.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Existe PISA 2026?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          No. No existe PISA 2026. La confusión es comprensible y muy frecuente: los resultados de PISA 2025 se publicaron en 2026, lo que lleva a mucha gente a buscar &quot;PISA 2026&quot; creyendo que es el ciclo más reciente.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA sigue un ciclo trienal: PISA 2019, PISA 2022, PISA 2025. El próximo ciclo será <strong>PISA 2028</strong>, con resultados previstos para 2029. Si tu hijo tiene hoy entre 12 y 15 años, será parte de la cohorte evaluada en ese ciclo — o habrá ya terminado el instituto cuando se publiquen los resultados. La ventana para influir en su preparación está abierta ahora.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA y éxito profesional: el vínculo que nadie explica</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cuando digo que el rendimiento en PISA está vinculado con el éxito profesional, no lo digo de forma intuitiva. Lo digo a partir de los datos — y el vínculo es más preciso de lo que podría esperarse.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La clave está en lo que PISA mide: no memorización de contenidos, sino <em>aplicación de conocimiento a contextos nuevos</em>. Compara esa definición con lo que dicen los empleadores que más les falta en los jóvenes recién graduados: pensamiento analítico, capacidad de resolver problemas ambiguos, comprensión de información compleja, razonamiento sobre evidencia. Son la misma lista.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La investigación de la OCDE muestra de forma consistente que los países con puntuaciones PISA más altas presentan también mayor productividad laboral por hora trabajada y mejores salarios medios ajustados por poder adquisitivo. La correlación no es perfecta — intervienen muchos factores — pero la tendencia es robusta y se mantiene cuando se controla por otros indicadores.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El Nivel 2 de PISA — considerado el umbral mínimo de competencia — define a un estudiante que &quot;puede interpretar y reconocer, sin instrucciones directas, cómo una situación simple puede representarse matemáticamente.&quot; Cuando leo esa definición pienso siempre en el mercado laboral: gestionar un presupuesto, leer un contrato, interpretar un gráfico de ventas. Nivel 2 es el mínimo para sobrevivir profesionalmente — y los empleos más interesantes exigen mucho más.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">La señal más preocupante de 2025:</strong> La resolución de problemas computacionales. En un mercado laboral donde la IA está asumiendo las tareas más mecánicas, la capacidad de pensar algorítmicamente — diseñar procesos, interpretar datos, entender cómo funcionan los sistemas digitales — se convierte en un diferenciador fundamental. Los sistemas educativos que no desarrollan esta competencia están poniendo a sus estudiantes en desventaja para los empleos que existirán en 2030.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lo que realmente me preocupa</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los datos de PISA 2025 que más me preocupan no son los titulares sobre el descenso de la media. Son los percentiles internos.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En matemáticas, la media OCDE de estudiantes que alcanza el Nivel 2 —el mínimo funcional— es el 65%. Eso significa que aproximadamente uno de cada tres estudiantes de 15 años en los países de la OCDE no puede realizar operaciones matemáticas básicas aplicadas a situaciones cotidianas. No es un problema marginal; es estructural.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En el extremo opuesto, solo el 8% de los estudiantes alcanza el Nivel 5 o 6 en matemáticas — los niveles desde los que se puede competir en los sectores más exigentes del mercado laboral global. La concentración de este talento en Asia Oriental no es una anomalía estadística; es el resultado de sistemas educativos que priorizan sistemáticamente la aplicación del conocimiento.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Y aquí está la paradoja central que veo en mi trabajo cotidiano: los colegios enseñan conocimiento, pero no siempre enseñan a <em>usar</em> ese conocimiento. Los exámenes tradicionales recompensan la reproducción fiel del contenido. PISA recompensa la transferencia. El mercado laboral, como PISA, recompensa la transferencia — y el sistema educativo, en muchos países, sigue optimizando para la reproducción.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿En qué posición mundial estaría tu hijo si hubiera hecho PISA?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA no evalúa estudiantes individuales: trabaja con muestras representativas a nivel nacional. Esto significa que tu hijo nunca tendrá un &quot;resultado PISA&quot; oficial. Pero es una pregunta legítima y, con las herramientas adecuadas, respondible: <em>si hubiera participado, ¿en qué percentil global se situaría?</em>
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Para responderla es necesario usar la misma metodología que PISA: la Teoría de Respuesta al Ítem (TRI o IRT en inglés). La TRI es un sistema de medición adaptativo que ajusta las preguntas en tiempo real según las respuestas del estudiante, permitiendo posicionar con precisión tanto a los estudiantes muy por debajo como muy por encima de la media en la misma escala internacional.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La evaluación académica de Eduentry está construida exactamente sobre esta metodología. Para niños de 6 a 17 años, presenta preguntas adaptativas en matemáticas, comprensión lectora y razonamiento; al final genera una puntuación estandarizada alineada con la escala internacional de PISA. El resultado no dice dónde está tu hijo respecto a su clase — dice dónde está respecto a los 690.000 estudiantes evaluados en 91 países.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Cómo leer la puntuación:</strong> Una puntuación de 100 equivale a la media internacional. 115 corresponde aproximadamente al percentil 84 global (top 16%). 130 corresponde aproximadamente al percentil 98 (top 2%). La nota del boletín escolar mira hacia adentro — hacia el aula. Esta evaluación mira hacia afuera — hacia el mundo.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La evaluación dura entre 20 y 30 minutos, es completamente gratuita y no requiere registro previo. Los resultados incluyen puntuaciones por dominio y comparativa en percentil global.
+        </p>
+        <div className="mt-6 mb-2">
+          <a href="/es#academica" className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#4338CA] transition-colors">
+            Descubre dónde se sitúa tu hijo — gratis
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo desarrollar lo que mide PISA</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A las familias siempre les digo lo mismo: no hay que preparar a un hijo para PISA haciendo simulacros de PISA. Las competencias que evalúa —aplicar conocimiento a contextos nuevos, razonar sobre evidencia, resolver problemas con información incompleta— se desarrollan en entornos reales, no en libros de ejercicios.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El entorno más poderoso para desarrollar esas competencias es la experiencia laboral real. Un estudiante que pasa cuatro semanas trabajando en una empresa está practicando exactamente lo que PISA mide: gestionar tareas con instrucciones ambiguas, interpretar información de múltiples fuentes, comunicar ideas a personas con diferentes niveles de conocimiento, tomar decisiones con datos incompletos. El contexto escolar no puede simular esto de forma efectiva.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Comprensión lectora aplicada</strong> — Leer un correo de un cliente, interpretar un brief, resumir una reunión. Se aprende en clase; se consolida en el trabajo.</Bullet>
+          <Bullet><strong>Razonamiento matemático</strong> — Analizar datos de ventas, calcular márgenes, comparar presupuestos. Los números cobran significado cuando tienen consecuencias reales.</Bullet>
+          <Bullet><strong>Resolución de problemas</strong> — Enfrentarse a una situación no prevista, buscar alternativas, decidir bajo incertidumbre. Solo se practica en entornos con consecuencias reales.</Bullet>
+          <Bullet><strong>Pensamiento computacional</strong> — Entender procesos, interpretar datos, usar herramientas digitales con criterio. La brecha más preocupante de PISA 2025 se cierra aquí.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Si quieres que tu hijo desarrolle las competencias que PISA mide — y que el mercado laboral exige — las prácticas tempranas son la intervención más directa disponible. Para estudiantes de 14 a 17 años, el programa de prácticas de Eduentry está diseñado específicamente para conectar el aprendizaje escolar con el mundo profesional real.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Recomendación práctica:</strong> La experiencia laboral estructurada antes de los 17 años no compite con el estudio académico — lo complementa. Los estudiantes que han trabajado en entornos profesionales entienden <em>para qué</em> sirve lo que aprenden en clase. Esa conexión es el catalizador más potente del aprendizaje profundo. Puedes explorar el programa de prácticas en{' '}
+          <a href="/es/practicas" className="text-indigo-600 underline hover:text-indigo-800">eduentry.ai/es/practicas</a>.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Conclusión</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 documenta una realidad que los educadores llevamos años observando en el aula: los sistemas educativos enseñan bien los contenidos, pero tienen dificultades para desarrollar la capacidad de aplicarlos. Esa brecha importa — no como abstracción estadística, sino porque define la diferencia entre un joven que entra al mercado laboral con herramientas funcionales y uno que entra con conocimiento sin anclar.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Las familias que comprenden esto tienen una ventaja real: pueden actuar antes de que la brecha sea costosa. Conocer dónde se sitúa tu hijo en la escala internacional, desarrollar las competencias que el mercado valora, y conectar el aprendizaje académico con experiencia profesional real — esas tres cosas juntas son la preparación más sólida para 2030. Y las tres están al alcance ahora, mientras la ventana sigue abierta.
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

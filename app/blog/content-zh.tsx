@@ -740,6 +740,165 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'pisa-shi-shenme-2025-chengji-yu-zhiye-fazhan': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        从事教育工作二十余年，我见过无数家长关注孩子的学校成绩，却很少有人真正了解孩子在全球同龄人中处于什么位置。每次PISA结果发布，总有一种复杂的感受：数据令人警醒，但它揭示的现实，远比一张排行榜更值得认真对待。这篇文章不是为了制造焦虑，而是为了帮助您看清楚真正重要的事情。
+      </p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        作为一名教育者，我有责任诚实地说：PISA所衡量的能力与孩子们走入真实世界时的准备程度之间，仍然存在一道不容忽视的鸿沟。认识这道鸿沟，是弥合它的第一步。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA是什么？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA是<em>Programme for International Student Assessment</em>（国际学生评估项目）的缩写，由经合组织（OECD）主导，每三年在91个国家和地区对15岁学生进行一次大规模评估。参与人数超过69万名青少年，涵盖数学、阅读和科学三大核心领域。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA与普通考试的本质区别在于：它评估的不是学生<em>记住了什么</em>，而是他们能否将所学知识<strong>应用于真实情境</strong>。一道数学题不会直接考公式，而是问你如何规划一份购物清单最省钱；一道阅读题不考背诵，而是让你判断一篇新闻报道中科学论断的可靠性。这正是PISA最有价值的地方——也是最令教育者深思的地方。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          2025年，PISA新增了计算问题解决能力（Computational Problem Solving）测试，正式将数字时代最核心的技能纳入评估体系。这一变化绝非偶然——在人工智能深度融入工作场所的今天，算法思维已经成为基础素养的一部分。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">重要说明：</strong>PISA不是针对个别学生的竞赛。没有任何一个孩子会"参加PISA"并获得个人排名。它通过代表性抽样来评估各国教育系统的整体水平。但这并不意味着结果与您的孩子无关——恰恰相反。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA 2025是什么？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025是最新一轮评估周期，学生于2024–2025学年参加测试，结果于2026年正式发布。这是迄今为止规模最大、覆盖最广的一轮PISA评估。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          主要发现包括以下几点：
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>经合组织平均分持续下滑。</strong>阅读和数学均分较历史高点明显回落，延续了自2018年以来的下降趋势。</Bullet>
+          <Bullet><strong>东亚教育体系一枝独秀。</strong>新加坡（数学575分）、日本、韩国持续领跑。与经合组织平均水平之间的差距进一步扩大。</Bullet>
+          <Bullet><strong>计算问题解决能力首次纳入评估。</strong>各国在这一新增维度上的差距显著，揭示了数字经济时代的教育准备程度鸿沟。</Bullet>
+          <Bullet><strong>学习态度数据令人深思。</strong>超过四分之一的学生表示"学校为我进入成人世界所做的准备很少"。这不仅是一个数字，更是一个系统信号。</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          对于在国际化环境中成长的孩子的家庭而言，这些数据指向一个核心问题：您的孩子掌握的，是应对未来真实挑战所需的能力，还是仅仅擅长应试？
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA 2026存在吗？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          不存在。这是一个非常普遍的误解，值得直接澄清。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA每<strong>三年</strong>举行一次。完整的时间线是：PISA 2022 → PISA 2025 → PISA 2028。很多人搜索"PISA 2026"，是因为PISA 2025的结果恰好在2026年对外发布，造成了名称上的混淆。2026年发布的内容，是PISA 2025的数据，而不是一个新的评估周期。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          下一轮评估将是<strong>PISA 2028</strong>，预计结果于2029年公布。今天还在读高中的学生，将不会再参与PISA评估——这也意味着，当下的准备窗口比很多家长意识到的更加有限。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA与职业成功：比你想象的更深的关联</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          有人会说：PISA不过是一场考试，与孩子未来的职业成功关系不大。我理解这种直觉，但数据告诉我们一个更复杂的故事。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          关联不是直接的——PISA高分不等于职业保障。但请仔细看PISA实际在测量什么：<em>将知识应用于真实情境的能力、理解并分析复杂文本、在模糊条件下进行数学推理。</em>再看雇主最看重的核心技能：分析思维、复杂信息处理、在不确定环境中做决策。两份清单，高度重叠。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          经合组织的长期追踪研究一致表明：PISA分数较高的国家，个人生产力、平均薪资和劳动力市场融入程度也更高。这是相关性，但绝非偶然——因为PISA衡量的，正是现代职场真正需要的底层能力。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA设定的<strong>第二级（Level 2）</strong>是最低能力基准，定义为：学生能够在无直接指导的情况下，识别并将一个简单情境用数学方式表达和解释。请想象一下：一个需要核对预算、阅读合同、与客户沟通的年轻人，仅靠这个最低水平根本无法应对职场的基本要求。现实的工作环境很快就会超越Level 2的边界。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">教育者注记：</strong>PISA 2025将计算问题解决能力纳入评估，是一个重要信号。在人工智能重塑各行各业的时代，算法逻辑、数字推理和数据判断能力已成为基础素养。那些在这一维度落后于经合组织平均水平的国家，面临的不仅是教育差距，更是未来十年劳动力竞争力的结构性挑战。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">真正令我担忧的是什么</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          数据本身并不令人担忧——令我担忧的是数据背后的含义。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在经合组织层面，约有<strong>35%的学生在数学上未能达到Level 2最低能力基准</strong>。这意味着超过三分之一的15岁学生，无法在没有明确指导的情况下处理基本的数学情境——而这正是几乎所有职业都会要求的能力。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          与此同时，达到最高水平（Level 5或6）的学生仅占约<strong>8%</strong>。这个数字意味着，在全球劳动力市场上真正具备顶尖竞争力的年轻人，远比我们以为的稀少。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          但令我最感忧虑的，不是这些统计数字本身，而是一个更基本的现象：学校里的知识与真实世界对这些知识的应用之间，存在一道持续扩大的鸿沟。孩子们能记住公式，却不一定能用公式解决问题；能通过考试，却在面对模糊的现实情境时手足无措。PISA的设计初衷，正是要测量这道鸿沟。而结果告诉我们，它依然存在。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如果您的孩子参加了PISA，会在全球排名中处于什么位置？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA不测试个别学生——它通过具有代表性的样本来评估教育系统。这意味着您的孩子永远不会得到一个"官方PISA分数"。但这个问题依然可以被回答：<em>如果参加了，他们会在91个国家的690,000名同龄人中处于什么位置？</em>
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          要回答这个问题，需要一个基于相同方法论的评估——<strong>项目反应理论（IRT）</strong>。IRT是一种自适应测量系统，根据学生的实时作答动态调整题目难度。PISA采用IRT的原因在于：它能够在同一个量表上精确定位能力极强和极弱的学生，而不会因为题目太难或太简单而失去测量精度。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry的学业评估正是建立在这一方法论之上。它为6至17岁的孩子提供数学、阅读理解和逻辑推理方面的自适应题目，最终生成与PISA国际量表对齐的标准化分数。这个分数反映的，不是孩子在班级里的位置，而是在全球分布中的坐标。
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">如何解读分数：</strong>100分代表国际平均水平；115分约处于全球前16%；130分约处于全球前2%。一个在本地学校表现"良好"的孩子，在国际量表上可能处于非常不同的位置——而这两种信息所揭示的，是完全不同的两幅图景。
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          我认为每一位家长都有权至少问一次这个问题。成绩单告诉您孩子在班级里的位置；这项评估告诉您孩子在世界上的位置。这两幅图景，并不总是讲述同一个故事。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          评估全程约20-30分钟，完全免费，无需注册账号即可开始。结果即时呈现，包含各科目的详细子分数和全球百分位对比。
+        </p>
+        <div className="mt-6 mb-2">
+          <a href="/zh#xueshu-pinggu" className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#4338CA] transition-colors">
+            免费了解孩子的全球位置
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如何培养PISA所衡量的能力</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          我常对家长说：培养PISA所测量的能力，不需要去刷PISA题库。PISA衡量的核心能力——将知识应用于真实情境、批判性阅读、在不确定条件下解决问题——只能在真实的情境中生长。而这类情境中，最有效的一种，是工作经历。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          当一个高中生在真实的工作环境中实习时，会发生什么？他面对的是没有标准答案的任务——这正是PISA问题解决能力考察的核心。他需要阅读并理解真实的工作文件——阅读理解能力在实践中得到锻炼。他需要分析数据、制作报告——数学推理在有意义的情境下变得鲜活。他需要与团队协作、应对意外——这些都是课堂无法完全复制的真实训练场。
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>阅读理解</strong> — 准确理解客户邮件、提炼报告要点。课堂上学习，职场中深化。</Bullet>
+          <Bullet><strong>数学推理</strong> — 预算核算、数据解读、成本分析。数字在真实决策中才有重量。</Bullet>
+          <Bullet><strong>问题解决</strong> — 面对模糊指令、产生备选方案、处理突发情况。只有在结果真实存在的环境中才能真正练习。</Bullet>
+          <Bullet><strong>计算思维</strong> — 数据阅读、流程设计、理解数字工具的逻辑。这是PISA 2025新增的维度，也是雇主需求增长最快的能力。</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          这正是PISA成绩与职业成功之间深层联系的本质：两者都需要同一套底层能力，而培养这套能力最有效的途径，是让孩子在真实的工作场景中实践。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          如果您想了解适合高中生的实习机会，可以参考我们的<a href="/zh/shixi" className="text-indigo-600 hover:text-indigo-800 underline">高中生实习完整指南</a>——从如何寻找机会到如何在没有经验的情况下脱颖而出，都有详细介绍。
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">实践建议：</strong>培养PISA能力最直接的方法，是让孩子在高中阶段参与结构化的工作经历或实习项目。这不仅能将课堂知识置于真实情境，还能发展PISA难以直接测量、但职场高度重视的态度能力——主动性、适应力和协作精神。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">结语</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA的数字是冷静的，但它们讲述的故事是真实的。每一个百分点背后，都是数以万计的年轻人——他们将面对求职、面试、职业选择，以及用所受教育应对真实世界挑战的时刻。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          如果您的孩子仍在高中阶段，这扇窗口还是开着的。不需要等到下一轮PISA，不需要等到大学申请季。从了解孩子真实的全球学业位置开始，从创造真实的应用情境开始，就是在做PISA最想看到的那件事：为孩子的未来打下真正扎实的基础。
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

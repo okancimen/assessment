@@ -583,6 +583,43 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: 'https://eduentry.com/fr',
     },
   },
+  {
+    slug: 'pisa-c-est-quoi-resultats-2025-reussite-professionnelle',
+    title: 'PISA, c\'est quoi ? Résultats 2025, la question sur « PISA 2026 » et le lien avec la réussite professionnelle',
+    shortTitle: 'PISA : résultats 2025 et réussite professionnelle',
+    description: 'Qu\'est-ce que PISA, comment ça marche, que mesure-t-il ? PISA 2026 existe-t-il ? Et surtout : la performance au PISA prédit-elle le succès dans la vie professionnelle ? Une analyse honnête d\'un éducateur expérimenté.',
+    date: '2026-09-21',
+    readTime: '11 min de lecture',
+    tags: ['PISA', 'Développement professionnel', 'Évaluation académique', 'Stage', 'Guide parents'],
+    faqs: [
+      {
+        q: 'Qu\'est-ce que PISA et à quelle fréquence se déroule-t-il ?',
+        a: 'PISA (Programme for International Student Assessment) est une évaluation de l\'OCDE menée tous les trois ans dans 91 pays auprès d\'élèves de 15 ans. Il mesure les mathématiques, la lecture et les sciences ; en 2025, la résolution de problèmes computationnels a été ajoutée. Ce n\'est pas un concours : c\'est l\'outil de référence mondial pour comparer les systèmes éducatifs à l\'échelle internationale.',
+      },
+      {
+        q: 'Qu\'est-ce que PISA 2025 et quels ont été les résultats ?',
+        a: 'PISA 2025 est le cycle le plus récent, dont les résultats ont été publiés en 2026. Les scores moyens de l\'OCDE en lecture et en mathématiques ont baissé par rapport aux cycles précédents. Les systèmes éducatifs d\'Asie orientale (Singapour, Japon, Corée) dominent largement. La résolution de problèmes computationnels — nouvelle en 2025 — révèle des écarts significatifs entre pays dans une compétence de plus en plus exigée sur le marché du travail.',
+      },
+      {
+        q: 'PISA 2026 existe-t-il ?',
+        a: 'Non. PISA se déroule tous les trois ans : le cycle précédent était PISA 2022, le plus récent est PISA 2025. Beaucoup cherchent « PISA 2026 » parce que les résultats de PISA 2025 ont été publiés en 2026, ce qui crée une confusion. Le prochain cycle sera PISA 2028, avec des résultats prévus en 2029.',
+      },
+      {
+        q: 'La performance au PISA prédit-elle le succès professionnel ?',
+        a: 'Pas directement, mais la corrélation est solide. Les compétences que mesure PISA — appliquer des connaissances à des problèmes réels, compréhension de lecture complexe, raisonnement mathématique — sont exactement celles que recherchent les employeurs. Les pays avec de meilleures performances PISA affichent une productivité individuelle et des salaires moyens plus élevés. Le PISA ne garantit pas une carrière, mais il mesure la solidité des fondations sur lesquelles l\'élève construira son avenir.',
+      },
+      {
+        q: 'Comment savoir où se situerait mon enfant au classement mondial s\'il avait passé le PISA ?',
+        a: 'Le PISA n\'évalue pas les élèves individuellement : il travaille avec des échantillons représentatifs. Mais il existe un moyen d\'obtenir un score équivalent : l\'évaluation adaptative d\'Eduentry, basée sur la même méthodologie (Théorie de Réponse à l\'Item), génère un score standardisé aligné sur l\'échelle internationale du PISA. Vous pouvez voir dans quel percentile mondial se situe votre enfant en mathématiques, compréhension de lecture et raisonnement, en 20-30 minutes et gratuitement.',
+      },
+    ],
+    cta: {
+      heading: 'Découvrez où se situe votre enfant à l\'échelle mondiale — gratuitement',
+      body: 'L\'évaluation adaptative d\'Eduentry génère un score standardisé aligné sur le PISA pour les enfants de 6 à 17 ans : mathématiques, compréhension de lecture et raisonnement. 20-30 minutes, sans inscription préalable.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: '/fr#academique',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {
