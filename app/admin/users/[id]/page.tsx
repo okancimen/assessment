@@ -3,6 +3,7 @@ import { createClient } from '@supabase/supabase-js'
 import { redirect, notFound } from 'next/navigation'
 import Link from 'next/link'
 import Navbar from '@/components/dashboard/Navbar'
+import ForceCompleteButton from './ForceCompleteButton'
 
 const GOAL_LABELS: Record<string, string> = {
   '11plus': '11+ / Grammar school',
@@ -262,6 +263,13 @@ export default async function AdminUserDetailPage({
                                     >
                                       Full report →
                                     </Link>
+                                  )}
+                                  {a.status === 'in_progress' && session && (
+                                    isInternship
+                                      ? ((INTERNSHIP_CUMULATIVE[session.subject_index] ?? 0) + session.question_index) >= 34
+                                      : session.subject_index * 15 + session.question_index >= 60
+                                  ) && (
+                                    <ForceCompleteButton assessmentId={a.id as string} />
                                   )}
                                 </div>
 

@@ -18,7 +18,7 @@ export default function CompleteClient({ assessmentId, childName }: CompleteClie
   useEffect(() => {
     async function finalize() {
       setSubmitting(true)
-      const res = await fetch(`/api/assessments/${assessmentId}/complete`, {
+      const res = await fetch(`/api/assessment/${assessmentId}/complete`, {
         method: 'POST',
       })
 

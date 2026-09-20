@@ -6,6 +6,7 @@ import { withOverloadRetry } from '@/lib/claude/questions'
 import { sendResultsEmail, sendInternshipAdminAlertEmail } from '@/lib/email'
 import { getReadinessTier, InternshipTrack } from '@/types'
 import { createAdminClient } from '@/lib/supabase/admin'
+import { isAdminEmail } from '@/lib/admin'
 import Anthropic from '@anthropic-ai/sdk'
 
 const ai = new Anthropic()
@@ -37,9 +38,10 @@ export async function POST(
     }
     const isInternship = assessment.assessment_type === 'internship'
 
-    const authorized = isInternship
+    const isAdmin = isAdminEmail(user.email)
+    const authorized = isAdmin || (isInternship
       ? child.parent_id === user.id || child.student_user_id === user.id
-      : child.parent_id === user.id
+      : child.parent_id === user.id)
     if (!authorized) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
     const { data: session } = await supabase
