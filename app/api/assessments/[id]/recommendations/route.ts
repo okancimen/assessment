@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { isAdminEmail } from '@/lib/admin'
 import { generateRecommendations } from '@/lib/claude/recommendations'
 
 // POST: regenerate recommendations for a completed assessment
@@ -13,8 +15,11 @@ export async function POST(
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
+    const adminMode = isAdminEmail(user.email)
+    const db = adminMode ? createAdminClient() : supabase
+
     // Fetch result + assessment + child
-    const { data: result, error: fetchError } = await supabase
+    const { data: result, error: fetchError } = await db
       .from('results')
       .select('*, assessments(*, children(*))')
       .eq('assessment_id', id)
@@ -27,7 +32,7 @@ export async function POST(
     const assessment = result.assessments as { children: { name: string; date_of_birth: string; parent_id: string } }
     const child = assessment.children
 
-    if (child.parent_id !== user.id) {
+    if (!adminMode && child.parent_id !== user.id) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
@@ -43,7 +48,7 @@ export async function POST(
 
     console.log('[regen-recs] generated:', JSON.stringify(recommendations))
 
-    const { error: updateError } = await supabase
+    const { error: updateError } = await db
       .from('results')
       .update({ recommendations })
       .eq('id', result.id)
