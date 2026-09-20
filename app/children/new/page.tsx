@@ -85,28 +85,32 @@ export default function AddChildPage() {
       return
     }
 
-    const res = await fetch('/api/children', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name,
-        date_of_birth: dateOfBirth,
-        goals,
-        subjects,
-        outcome_goal: outcomeGoal.trim() || null,
-      }),
-    })
+    try {
+      const res = await fetch('/api/children', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          date_of_birth: dateOfBirth,
+          goals,
+          subjects,
+          outcome_goal: outcomeGoal.trim() || null,
+        }),
+      })
 
-    if (!res.ok) {
-      const data = await res.json()
-      setError(data.error || 'Something went wrong')
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        setError(data.error || 'Something went wrong. Please try again.')
+        setLoading(false)
+        return
+      }
+
+      trackEvent('add_child')
+      router.push('/dashboard?success=child-added')
+    } catch {
+      setError('Network error. Please check your connection and try again.')
       setLoading(false)
-      return
     }
-
-    await res.json()
-    trackEvent('add_child')
-    router.push('/dashboard?success=child-added')
   }
 
   const minDate = new Date(Date.now() - 17 * 365.25 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
