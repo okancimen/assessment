@@ -1,4 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { isAdminEmail } from '@/lib/admin'
 import { redirect, notFound } from 'next/navigation'
 import Link from 'next/link'
 import Navbar from '@/components/dashboard/Navbar'
@@ -21,13 +23,16 @@ export default async function ResultsPage({
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/auth/login')
 
+  const adminMode = isAdminEmail(user.email)
+  const db = adminMode ? createAdminClient() : supabase
+
   const [{ data: result }, { data: session }] = await Promise.all([
-    supabase
+    db
       .from('results')
       .select('*, assessments(*, children(*))')
       .eq('assessment_id', id)
       .single(),
-    supabase
+    db
       .from('assessment_sessions')
       .select('subject_scores')
       .eq('assessment_id', id)
@@ -41,7 +46,7 @@ export default async function ResultsPage({
     completed_at: string
   }
 
-  if (assessment.children.parent_id !== user.id) redirect('/dashboard')
+  if (!adminMode && assessment.children.parent_id !== user.id) redirect('/dashboard')
 
   const child = assessment.children
   const subjectScores = result.subject_scores as Record<string, {
