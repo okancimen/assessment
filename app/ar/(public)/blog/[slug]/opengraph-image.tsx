@@ -12,7 +12,8 @@ export function generateStaticParams() {
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const post = getArabicPostBySlug(slug)
-  const tags = post?.tags ?? ['Eduentry']
+  // Filter to ASCII-only tags to avoid Satori Arabic rendering failures
+  const tags = (post?.tags ?? ['Eduentry']).filter((t) => /^[\x00-\x7F]+$/.test(t))
 
   return new ImageResponse(
     (
