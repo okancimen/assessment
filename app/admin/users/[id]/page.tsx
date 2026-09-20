@@ -91,10 +91,10 @@ export default async function AdminUserDetailPage({
   const childIds = children.map((c) => c.id)
   const assessmentsResult = childIds.length > 0
     ? await db.from('assessments')
-        .select('id, child_id, assessment_type, status, created_at, completed_at, results(overall_score, subject_scores)')
+        .select('id, child_id, assessment_type, status, created_at, completed_at, results(overall_score, standardized_score, subject_scores)')
         .in('child_id', childIds)
         .order('created_at', { ascending: false })
-    : { data: [] as { id: string; child_id: string; assessment_type: string; status: string; created_at: string; completed_at: string | null; results: { overall_score: number | null; subject_scores: Record<string, number> | null }[] }[] }
+    : { data: [] as { id: string; child_id: string; assessment_type: string; status: string; created_at: string; completed_at: string | null; results: { overall_score: number | null; standardized_score: number | null; subject_scores: Record<string, number> | null }[] }[] }
 
   const assessmentsByChild: Record<string, typeof assessmentsResult.data> = {}
   for (const a of assessmentsResult.data ?? []) {
@@ -205,10 +205,9 @@ export default async function AdminUserDetailPage({
                     {childAssessments.length > 0 && (
                       <div>
                         <p className="text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide mb-2">Assessments</p>
-                        <div className="space-y-2">
+                        <div className="space-y-3">
                           {childAssessments.map((a) => {
-                            const scores = (a.results as { overall_score?: number; subject_scores?: Record<string, number> }[] | null)?.[0]
-                            const overall = scores?.overall_score
+                            const resultRow = (a.results as { overall_score?: number | null; standardized_score?: number | null; subject_scores?: Record<string, number> | null }[] | null)?.[0]
                             const isInternship = a.assessment_type === 'internship'
                             const session = a.status === 'in_progress' ? sessionsByAssessment[a.id as string] : null
                             const INTERNSHIP_CUMULATIVE = [0, 5, 10, 20, 28, 34]
@@ -217,37 +216,120 @@ export default async function AdminUserDetailPage({
                                 ? `${(INTERNSHIP_CUMULATIVE[session.subject_index] ?? 0) + session.question_index} / 34`
                                 : `${session.subject_index * 15 + session.question_index} / 60`
                               : null
+
+                            // Academic scores
+                            const stdScore = resultRow?.standardized_score
+                            const subjectScores = resultRow?.subject_scores as Record<string, number> | null | undefined
+
+                            // Internship scores
+                            const internshipScores = isInternship ? (subjectScores as {
+                              tier?: string; overall?: number; aptitude?: number; domain?: number
+                              soft_skills?: number; track_fit?: Record<string, number>
+                            } | null) : null
+                            const internshipTierLabel = internshipScores?.tier
+
+                            const ACADEMIC_SUBJECT_LABELS: Record<string, string> = {
+                              english: 'English', mathematics: 'Maths',
+                              verbal_reasoning: 'Verbal', nonverbal_reasoning: 'Non-verbal',
+                            }
+
                             return (
-                              <div key={a.id as string} className="flex items-center justify-between bg-[#f5f5f7] rounded-xl px-4 py-2.5">
-                                <div className="flex items-center gap-2">
-                                  <Badge color={isInternship ? 'purple' : 'indigo'}>
-                                    {isInternship ? 'Internship' : 'Academic'}
-                                  </Badge>
-                                  <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${
-                                    a.status === 'completed' ? 'bg-emerald-100 text-emerald-700'
-                                    : a.status === 'in_progress' ? 'bg-amber-100 text-amber-700'
-                                    : 'bg-[#e5e5ea] text-[#6e6e73]'
-                                  }`}>
-                                    {(a.status as string).replace('_', ' ')}
-                                  </span>
-                                  {progressText && (
-                                    <span className="text-[10px] text-[#6e6e73] font-medium">{progressText} questions</span>
-                                  )}
-                                </div>
-                                <div className="flex items-center gap-3">
-                                  {overall != null && (
-                                    <span className="text-xs font-bold text-[#1d1d1f]">{overall}/100</span>
-                                  )}
+                              <div key={a.id as string} className="bg-[#f5f5f7] rounded-xl px-4 py-3 space-y-2.5">
+                                {/* Header row */}
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center gap-2">
+                                    <Badge color={isInternship ? 'purple' : 'indigo'}>
+                                      {isInternship ? 'Internship' : 'Academic'}
+                                    </Badge>
+                                    <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${
+                                      a.status === 'completed' ? 'bg-emerald-100 text-emerald-700'
+                                      : a.status === 'in_progress' ? 'bg-amber-100 text-amber-700'
+                                      : 'bg-[#e5e5ea] text-[#6e6e73]'
+                                    }`}>
+                                      {(a.status as string).replace('_', ' ')}
+                                    </span>
+                                    {progressText && (
+                                      <span className="text-[10px] text-[#6e6e73] font-medium">{progressText} questions</span>
+                                    )}
+                                    <span className="text-[10px] text-[#6e6e73]">
+                                      {new Date(a.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                                    </span>
+                                  </div>
                                   {a.status === 'completed' && (
                                     <Link
                                       href={`/assessment/${a.id}/results`}
                                       className="text-[10px] text-[#4F46E5] font-semibold hover:underline"
-                                      onClick={(e) => e.stopPropagation()}
                                     >
-                                      View report →
+                                      Full report →
                                     </Link>
                                   )}
                                 </div>
+
+                                {/* Academic results */}
+                                {!isInternship && stdScore != null && (
+                                  <div>
+                                    <p className="text-[10px] text-[#6e6e73] mb-1.5">
+                                      Standardised score: <span className="font-bold text-[#1d1d1f]">{stdScore}</span>
+                                    </p>
+                                    {subjectScores && (
+                                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
+                                        {Object.entries(ACADEMIC_SUBJECT_LABELS).map(([key, label]) => {
+                                          const s = subjectScores[key]
+                                          if (s == null) return null
+                                          return (
+                                            <div key={key} className="bg-white rounded-lg px-2.5 py-1.5 text-center">
+                                              <p className="text-[9px] text-[#6e6e73] font-medium">{label}</p>
+                                              <p className="text-sm font-bold text-[#1d1d1f]">{Math.round(s)}</p>
+                                            </div>
+                                          )
+                                        })}
+                                      </div>
+                                    )}
+                                  </div>
+                                )}
+
+                                {/* Internship results */}
+                                {isInternship && internshipScores && (
+                                  <div className="space-y-1.5">
+                                    {internshipTierLabel && (
+                                      <p className={`text-xs font-bold ${
+                                        internshipTierLabel === 'Internship Ready' ? 'text-emerald-600'
+                                        : internshipTierLabel === 'Developing' ? 'text-amber-600'
+                                        : 'text-red-600'
+                                      }`}>{internshipTierLabel}</p>
+                                    )}
+                                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
+                                      {[
+                                        { key: 'overall', label: 'Overall' },
+                                        { key: 'aptitude', label: 'Aptitude' },
+                                        { key: 'domain', label: 'Domain' },
+                                        { key: 'soft_skills', label: 'Soft skills' },
+                                      ].map(({ key, label }) => {
+                                        const val = internshipScores[key as keyof typeof internshipScores] as number | undefined
+                                        if (val == null) return null
+                                        return (
+                                          <div key={key} className="bg-white rounded-lg px-2.5 py-1.5 text-center">
+                                            <p className="text-[9px] text-[#6e6e73] font-medium">{label}</p>
+                                            <p className="text-sm font-bold text-[#1d1d1f]">{Math.round(val)}</p>
+                                          </div>
+                                        )
+                                      })}
+                                    </div>
+                                    {internshipScores.track_fit && (
+                                      <div>
+                                        <p className="text-[9px] text-[#6e6e73] font-medium uppercase tracking-wide mb-1">Track fit</p>
+                                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
+                                          {Object.entries(internshipScores.track_fit).map(([track, score]) => (
+                                            <div key={track} className="bg-white rounded-lg px-2.5 py-1.5 text-center">
+                                              <p className="text-[9px] text-[#6e6e73] font-medium capitalize">{track.replace(/_/g, ' ')}</p>
+                                              <p className="text-sm font-bold text-[#1d1d1f]">{Math.round(score as number)}</p>
+                                            </div>
+                                          ))}
+                                        </div>
+                                      </div>
+                                    )}
+                                  </div>
+                                )}
                               </div>
                             )
                           })}
