@@ -22,7 +22,7 @@ export default function UsersTable({ users }: { users: AdminUser[] }) {
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b border-[#f5f5f7]">
-            {['Name', 'Email', 'Registered', 'Location', 'Role', 'Assessment', 'Children', 'Completed'].map((h) => (
+            {['Name', 'Registered', 'Location', 'Assessment', 'Children', 'Completed'].map((h) => (
               <th key={h} className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide whitespace-nowrap">
                 {h}
               </th>
@@ -39,7 +39,6 @@ export default function UsersTable({ users }: { users: AdminUser[] }) {
               <td className="px-5 py-3 font-medium text-[#1d1d1f] text-xs whitespace-nowrap">
                 {u.full_name || <span className="text-[#d2d2d7]">—</span>}
               </td>
-              <td className="px-5 py-3 text-xs text-[#6e6e73] whitespace-nowrap">{u.email}</td>
               <td className="px-5 py-3 text-xs text-[#6e6e73] whitespace-nowrap">
                 {new Date(u.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
               </td>
@@ -47,12 +46,6 @@ export default function UsersTable({ users }: { users: AdminUser[] }) {
                 {u.location?.city && u.location?.country
                   ? `${u.location.city}, ${u.location.country}`
                   : u.location?.country ?? <span className="text-[#d2d2d7]">—</span>}
-              </td>
-              <td className="px-5 py-3">
-                {u.role === 'parent' && <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-100 text-blue-700">Parent</span>}
-                {u.role === 'student' && <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-100 text-emerald-700">Student</span>}
-                {u.role === 'both' && <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-100 text-amber-700">Both</span>}
-                {u.role === 'none' && <span className="text-[#d2d2d7] text-xs">—</span>}
               </td>
               <td className="px-5 py-3">
                 <div className="flex flex-wrap gap-1">
@@ -79,7 +72,7 @@ export default function UsersTable({ users }: { users: AdminUser[] }) {
           ))}
           {users.length === 0 && (
             <tr>
-              <td colSpan={8} className="px-5 py-10 text-center text-xs text-[#6e6e73]">No users registered yet</td>
+              <td colSpan={6} className="px-5 py-10 text-center text-xs text-[#6e6e73]">No users registered yet</td>
             </tr>
           )}
         </tbody>
