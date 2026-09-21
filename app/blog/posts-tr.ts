@@ -9,7 +9,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       '14–16 yaşında profesyonel deneyim edinmenin gelişimsel ve kariyer açısından önemi. Nörobilim, üniversite kabul verileri ve iş gücü piyasası araştırmaları, erken staj deneyiminin ölçülebilir biçimde daha iyi sonuçlar ürettiğini ve bu farkın zamanla büyüdüğünü ortaya koyuyor.',
     date: '2026-06-29',
-    dateModified: '2026-09-10',
+    dateModified: '2026-06-29',
     readTime: '10 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'Çocuk Gelişimi', 'Üniversite Kabulü', 'İş Deneyimi'],
     faqs: [
@@ -45,7 +45,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Lise stajları için kanıta dayalı değerlendirme — 14–18 yaşında yapılandırılmış iş deneyiminin öz yeterliliği, dayanıklılığı ve profesyonel kimliği nasıl geliştirdiği ve üniversite başvuru sonuçlarını ölçülebilir biçimde nasıl iyileştirdiği.',
     date: '2026-06-25',
-    dateModified: '2026-09-18',
+    dateModified: '2026-06-27',
     readTime: '9 dk okuma',
     tags: ['Staj', 'Üniversite Kabulü', 'Kariyer Gelişimi', 'Lise', 'İş Deneyimi'],
     faqs: [
@@ -85,7 +85,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'İngiliz lise öğrencilerinin iş dünyası deneyimi hakkında bilmesi gereken her şey — neleri kapsadığı, nerede yerleştirme bulunacağı, nasıl güvence altına alınacağı ve doğrulanmış bir değerlendirme puanının her başvuruyu nasıl güçlendirdiği.',
     date: '2026-06-30',
-    dateModified: '2026-09-10',
+    dateModified: '2026-06-30',
     readTime: '10 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'İş Dünyası'],
     faqs: [
@@ -125,7 +125,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'İngiliz lise öğrencilerinin üniversiteye başlamadan önce teknoloji stajı veya iş deneyimi yerleştirmesi güvence altına alması için pratik bir rehber — nerede aranacağı, portföy olmadan nasıl başvurulacağı ve gerçekten kısa listeye girmenin yolları.',
     date: '2026-06-30',
-    dateModified: '2026-09-10',
+    dateModified: '2026-07-03',
     readTime: '11 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi'],
     faqs: [
@@ -164,7 +164,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Warren Buffett\'tan Sakıp Sabancı\'ya, Almanya\'nın mesleki eğitim sisteminden Montessori pedagojisine — neden en kalıcı dersler sınıfın dışında, gerçek sorumlulukların içinde öğreniliyor? Erken yaşta iş deneyiminin çocuk gelişimine katkılarını araştırma ve gerçek örneklerle ele alıyoruz.',
     date: '2026-07-08',
-    dateModified: '2026-09-10',
+    dateModified: '2026-07-08',
     readTime: '15 dk okuma',
     tags: ['Çocuk Gelişimi', 'İş Deneyimi', 'Eğitim', 'Kariyer Gelişimi', 'Girişimcilik'],
     faqs: [
@@ -199,7 +199,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Kodlama bilmeden bile siber güvenlik stajı alınabilir mi? Hangi firmalar lise öğrencisi kabul ediyor, nasıl başvurulur, yerleştirmede neler beklenmeli? İngiliz öğrencilere yönelik eksiksiz rehber.',
     date: '2026-07-09',
-    dateModified: '2026-09-10',
+    dateModified: '2026-07-09',
     readTime: '11 dk okuma',
     tags: ['Siber Güvenlik', 'Staj', 'Kariyer Gelişimi', 'Teknoloji', 'İş Deneyimi'],
     faqs: [
@@ -238,7 +238,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'A Level programları nedir, nasıl çalışır, hangi dersler seçilmeli? İngiltere\'de lise son sınıf sistemini üniversite başvuruları ve kariyer hedefleri açısından Türk aileler için kapsamlı biçimde açıklıyoruz.',
     date: '2026-07-20',
-    dateModified: '2026-09-10',
+    dateModified: '2026-07-20',
     readTime: '10 dk okuma',
     tags: ['A Level', 'İngiltere Eğitim Sistemi', 'Üniversite Kabulü', 'Kariyer Gelişimi', 'İş Deneyimi'],
     faqs: [
@@ -277,7 +277,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Dubai\'de hangi müfredat sistemleri var, okul seçimi nasıl yapılır, maliyetler nelerdir? Dubai\'ye yerleşen veya taşınmayı düşünen Türk aileler için BAE eğitim sistemini tüm yönleriyle açıklıyoruz.',
     date: '2026-07-20',
-    dateModified: '2026-09-10',
+    dateModified: '2026-07-20',
     readTime: '11 dk okuma',
     tags: ['Dubai', 'BAE Eğitim Sistemi', 'Uluslararası Okul', 'Ebeveyn Rehberi', 'İş Deneyimi'],
     faqs: [
@@ -317,7 +317,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Çoğu ebeveyn çocuğunun yalnızca ulusal sıralamadaki yerini biliyor. Ama seçici okullar, burs komiteleri ve önde gelen üniversiteler küresel yüzdelik dilimlerle düşünüyor. İşte uluslararası verilerin gerçekte gösterdiği — ve bunun çocuğunuzun geleceği için ne anlama geldiği.',
     date: '2026-07-02',
-    dateModified: '2026-07-02',
+    dateModified: '2026-07-18',
     readTime: '10 dk okuma',
     tags: ['Uluslararası Kıyaslama', 'PISA', 'Ebeveyn Rehberi', 'Standartlaştırılmış Test', 'Çocuk Gelişimi'],
     faqs: [
@@ -357,7 +357,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Her zamankinden daha fazla öğrenci en yüksek notları alıyor — bu da akademik sonuçları son yirmi yılın en zayıf farklılaştırıcısı haline getiriyor. Rekabetçi üniversite başvurularını gerçekte ne ayırt ediyor ve neden 15 yaşında başlamak sonucu değiştiriyor.',
     date: '2026-09-08',
-    dateModified: '2026-09-18',
+    dateModified: '2026-09-08',
     readTime: '11 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Üniversite Kabulü'],
     faqs: [
@@ -397,7 +397,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'İngiltere\'de 12 ila 18 yaş arası iş dünyası deneyimi hakkında her şey — her yıl grubu için mevcut olanlar, büyük işveren programları, nasıl başvurulur ve başvurunun öne çıkmasını ne sağlar.',
     date: '2026-07-09',
-    dateModified: '2026-09-18',
+    dateModified: '2026-07-24',
     readTime: '10 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'İş Dünyası', 'Üniversite Kabulü'],
     faqs: [
@@ -435,7 +435,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Dijital Pazarlama Stajı Nasıl Bulunur',
     description: 'Lise öğrencileri için dijital pazarlama stajı bulma rehberi — hangi firmalara başvurulacağı, hangi becerilerin öne çıkarılacağı, portfolio olmadan nasıl başvurulacağı ve doğrulanmış bir değerlendirme puanının süreci nasıl hızlandırdığı.',
     date: '2026-09-09',
-    dateModified: '2026-09-18',
+    dateModified: '2026-09-09',
     readTime: '9 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Dijital Pazarlama'],
     faqs: [
@@ -453,7 +453,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Veri Analitiği Kariyer Rehberi',
     description: 'Veri analitiğine lise yıllarından itibaren nasıl başlanır — hangi matematiksel temel gerekli, hangi araçlar öğrenilmeli, staj nasıl bulunur ve bu alandaki kariyer yolları nelerdir.',
     date: '2026-09-09',
-    dateModified: '2026-09-18',
+    dateModified: '2026-09-09',
     readTime: '10 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi'],
     faqs: [
@@ -471,7 +471,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Staj İçin CV Nasıl Yazılır',
     description: 'İş deneyimi olmayan 16-18 yaş öğrencileri için staj başvurusuna yönelik CV yazma rehberi — ne dahil edilmeli, nasıl yapılandırılmalı, hangi hatalardan kaçınılmalı ve deneyim eksikliği kanıtlanabilir becerilerle nasıl telafi edilmeli.',
     date: '2026-09-09',
-    dateModified: '2026-09-18',
+    dateModified: '2026-09-09',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Lise'],
     faqs: [
@@ -489,7 +489,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Staj Mülakatına Nasıl Hazırlanılır',
     description: 'Bir staj mülakatını hazırlamak ve başarıyla geçmek için her şey — en sık sorulan sorular, önceki iş deneyimi olmadan nasıl cevap verilir, mülakat gününde hangi hatalar plası kaybettirir ve nasıl farklılaşılır.',
     date: '2026-09-09',
-    dateModified: '2026-09-18',
+    dateModified: '2026-09-09',
     readTime: '9 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi'],
     faqs: [
@@ -507,7 +507,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'PISA 2025 Nedir? Sonuçlar ve Türkiye Analizi',
     description: 'PISA 2025, OECD ülkelerinde matematik, okuma ve fen bilimlerinde şimdiye kadar kaydedilen en düşük puanları ortaya koyuyor. Sonuçların aileler için ne anlama geldiğini ve çocuğunuzu değerlendirmenin neden hiç bu kadar önemli olmadığını açıklıyoruz.',
     date: '2026-09-10',
-    dateModified: '2026-09-18',
+    dateModified: '2026-09-10',
     readTime: '12 dakika okuma',
     tags: ['PISA', 'Küresel Eğitim', 'Akademik Değerlendirme', 'Matematik', 'Okuma'],
     faqs: [
@@ -530,7 +530,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'İş Deneyimine Nasıl Hazırlanılır?',
     description: 'Lise öğrencilerinin iş deneyimine en iyi şekilde hazırlanması için ebeveynlere kapsamlı rehber — CV hazırlama, doğru sektörü seçme, özgüveni geliştirme ve kalıcı izlenim bırakma.',
     date: '2026-09-11',
-    dateModified: '2026-09-17',
+    dateModified: '2026-09-11',
     readTime: '11 dk okuma',
     tags: ['İş Deneyimi', 'Staj', 'Lise', 'Kariyer Gelişimi', 'Staj Hazırlığı'],
     faqs: [
@@ -553,7 +553,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'İş Hayatına Hazır mısın?',
     description: 'Çocuğunuz gerçekten iş hayatına hazır mı? Staj için doğru zamanı, gerekli becerileri ve ebeveyn olarak yapabileceklerinizi anlatan kapsamlı rehber.',
     date: '2026-09-11',
-    dateModified: '2026-09-17',
+    dateModified: '2026-09-11',
     readTime: '12 dk okuma',
     tags: ['Staj', 'Staj Hazırlığı', 'Lise', 'İş Deneyimi', 'Kariyer Gelişimi'],
     faqs: [
@@ -646,6 +646,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'PISA 2025 ve İş Deneyimi: Öğrenci Hazırlığı',
     description: 'OECD\'nin PISA 2025 raporu rekor düşük akademik puanlar ortaya koyuyor. Veriler ise bir çözüme işaret ediyor: gerçek dünyayla erken yaşta temas kuran öğrenciler okulların öğretemediği becerileri geliştiriyor.',
     date: '2026-09-11',
+    dateModified: '2026-09-11',
     readTime: '13 dk okuma',
     tags: ['PISA', 'Akademik Değerlendirme', 'İş Deneyimi', 'Staj', 'Kariyer Gelişimi'],
     faqs: [
@@ -675,7 +676,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Erken Yaşta İş Tecrübesi',
     description: 'Lise yıllarında iş tecrübesi kazanmak neden bu kadar önemli? Erken başlamanın avantajları, doğru yaklaşım ve çocuğunuzu desteklemek için ebeveyn rehberi.',
     date: '2026-09-11',
-    dateModified: '2026-09-17',
+    dateModified: '2026-09-11',
     readTime: '11 dk okuma',
     tags: ['İş Deneyimi', 'Kariyer Gelişimi', 'Lise', 'Staj', 'Kariyer Rehberi'],
     faqs: [
@@ -699,7 +700,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Stajyerler ne kadar maaş alıyor? Türkiye\'deki stajyer ücretleri, sektöre göre örnekler, Ulusal Staj Programı ödemeleri ve vergi muafiyeti hakkında güncel bilgiler.',
     date: '2026-09-15',
-    dateModified: '2026-09-17',
+    dateModified: '2026-09-15',
     readTime: '7 dk okuma',
     tags: ['Staj', 'Stajyer Maaşı', 'Kariyer Rehberi', 'Ulusal Staj', 'Lise'],
     faqs: [
@@ -721,7 +722,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Staj defteri nedir, nasıl doldurulur, nereden alınır? Üniversite zorunlu stajı için günlük staj defteri tutmanın adım adım rehberi ve örnek bölümler.',
     date: '2026-09-15',
-    dateModified: '2026-09-17',
+    dateModified: '2026-09-15',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Staj Defteri', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi'],
     faqs: [
@@ -743,7 +744,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Staj sigortası nedir, kim öder, neyi kapsar? Zorunlu stajda ve gönüllü stajda staj sigortası uygulaması, emeklilik hesabına etkisi ve pratik bilgiler.',
     date: '2026-09-15',
-    dateModified: '2026-09-17',
+    dateModified: '2026-09-15',
     readTime: '7 dk okuma',
     tags: ['Staj', 'Staj Sigortası', 'Zorunlu Staj', 'Kariyer Rehberi', 'Lise'],
     faqs: [
@@ -765,7 +766,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Staj bulmak için hangi platformlara bakmalı, nasıl başvuru yapmalı ve işverene nasıl yaklaşmalısın? Lise öğrencileri için pratik, adım adım bir başvuru rehberi.',
     date: '2026-09-15',
-    dateModified: '2026-09-17',
+    dateModified: '2026-09-15',
     readTime: '9 dk okuma',
     tags: ['Staj', 'Staj Başvurusu', 'Kariyer Rehberi', 'Lise', 'İş Dünyası'],
     faqs: [
@@ -788,7 +789,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'Yaz tatilini staj fırsatına çevirmek isteyenler için: başvuru takvimleri, hangi sektörler yaz programı sunuyor, uzaktan seçenekler ve pratik başvuru taktikleri.',
     date: '2026-09-15',
-    dateModified: '2026-09-17',
+    dateModified: '2026-09-15',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Yaz Stajı', 'Kariyer Rehberi', 'Lise', 'İş Deneyimi'],
     faqs: [
@@ -811,6 +812,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'PISA nedir, nasıl yapılır, PISA 2025 Türkiye\'yi nasıl değerlendirdi? "PISA 2026" diye bir sınav var mı? Ve en önemlisi: PISA\'da başarılı olmak iş hayatında gerçekten fark yaratıyor mu? Deneyimli bir eğitmenin gözünden dürüst bir analiz.',
     date: '2026-09-21',
+    dateModified: '2026-09-21',
     readTime: '11 dk okuma',
     tags: ['PISA', 'Kariyer Gelişimi', 'Akademik Değerlendirme', 'Staj', 'Ebeveyn Rehberi'],
     faqs: [
@@ -849,7 +851,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       'En çok hangi sektöre uygunsun? İşverenlerin gerçekten aradığı beceriler neler? Staj başvurusuna geçmeden önce kendinini değerlendirmenin sistematik yolu.',
     date: '2026-09-15',
-    dateModified: '2026-09-17',
+    dateModified: '2026-09-19',
     readTime: '7 dk okuma',
     tags: ['Staj', 'Öz Değerlendirme', 'Kariyer Rehberi', 'Staj Hazırlığı', 'Lise'],
     faqs: [
@@ -873,7 +875,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description:
       '2026 yılında Türk lise ve üniversite öğrencileri için yurt dışı staj programları, Erasmus+ başvurusu, gerekli belgeler ve staj başlatma sınavı rehberi. Hangi programlar var, nasıl başvurulur, değerlendirme sınavı neden kritik?',
     date: '2026-09-21',
-    dateModified: '2026-09-21',
+    dateModified: '2026-09-22',
     readTime: '11 dk okuma',
     tags: ['Uluslararası Staj', 'Erasmus', 'Staj Başvurusu', 'Yurt Dışı Staj', 'Kariyer Gelişimi'],
     faqs: [
