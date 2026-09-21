@@ -12,6 +12,16 @@ const BASE = 'https://eduentry.com'
 
 const SUBJECTS = ['english', 'maths', 'verbal-reasoning', 'non-verbal-reasoning']
 
+// contentSlug → slug maps for cross-language hreflang
+const trByContentSlug = new Map(BLOG_POSTS_TR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const esByContentSlug = new Map(BLOG_POSTS_ES.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const frByContentSlug = new Map(BLOG_POSTS_FR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const arByContentSlug = new Map(BLOG_POSTS_AR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const ruByContentSlug = new Map(BLOG_POSTS_RU.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const zhByContentSlug = new Map(BLOG_POSTS_ZH.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+// EN slug → slug maps (for translating from non-EN post's contentSlug back to other locales)
+const enByContentSlug = new Map(BLOG_POSTS.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+
 function maxDate(...dates: (string | undefined)[]): string {
   return dates.filter(Boolean).sort().at(-1) as string
 }
@@ -84,12 +94,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
-    url: `${BASE}/blog/${post.slug}`,
-    lastModified: post.dateModified ?? post.date,
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }))
+  const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => {
+    const s = post.slug
+    const langs: Record<string, string> = { 'en-GB': `${BASE}/blog/${s}`, 'x-default': `${BASE}/blog/${s}` }
+    if (trByContentSlug.has(s)) langs.tr = `${BASE}/tr/blog/${trByContentSlug.get(s)}`
+    if (esByContentSlug.has(s)) langs.es = `${BASE}/es/blog/${esByContentSlug.get(s)}`
+    if (frByContentSlug.has(s)) langs.fr = `${BASE}/fr/blog/${frByContentSlug.get(s)}`
+    if (arByContentSlug.has(s)) langs.ar = `${BASE}/ar/blog/${arByContentSlug.get(s)}`
+    if (ruByContentSlug.has(s)) langs.ru = `${BASE}/ru/blog/${ruByContentSlug.get(s)}`
+    if (zhByContentSlug.has(s)) langs.zh = `${BASE}/zh/blog/${zhByContentSlug.get(s)}`
+    return {
+      url: `${BASE}/blog/${s}`,
+      lastModified: post.dateModified ?? post.date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+      alternates: { languages: langs },
+    }
+  })
 
   const esPages: MetadataRoute.Sitemap = [
     {
@@ -127,12 +148,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { es: `${BASE}/es/practicas`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
-    ...BLOG_POSTS_ES.map((post) => ({
-      url: `${BASE}/es/blog/${post.slug}`,
-      lastModified: post.dateModified ?? post.date,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    })),
+    ...BLOG_POSTS_ES.map((post) => {
+      const cs = post.contentSlug
+      const langs: Record<string, string> = { es: `${BASE}/es/blog/${post.slug}` }
+      if (cs) {
+        langs['en-GB'] = `${BASE}/blog/${cs}`
+        langs['x-default'] = `${BASE}/blog/${cs}`
+        if (trByContentSlug.has(cs)) langs.tr = `${BASE}/tr/blog/${trByContentSlug.get(cs)}`
+        if (frByContentSlug.has(cs)) langs.fr = `${BASE}/fr/blog/${frByContentSlug.get(cs)}`
+        if (arByContentSlug.has(cs)) langs.ar = `${BASE}/ar/blog/${arByContentSlug.get(cs)}`
+        if (ruByContentSlug.has(cs)) langs.ru = `${BASE}/ru/blog/${ruByContentSlug.get(cs)}`
+        if (zhByContentSlug.has(cs)) langs.zh = `${BASE}/zh/blog/${zhByContentSlug.get(cs)}`
+      }
+      return { url: `${BASE}/es/blog/${post.slug}`, lastModified: post.dateModified ?? post.date, changeFrequency: 'monthly' as const, priority: 0.6, alternates: { languages: langs } }
+    }),
   ]
 
   const trPages: MetadataRoute.Sitemap = [
@@ -171,12 +200,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { tr: `${BASE}/tr/staj`, 'en-GB': `${BASE}/internship`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
-    ...BLOG_POSTS_TR.map((post) => ({
-      url: `${BASE}/tr/blog/${post.slug}`,
-      lastModified: post.dateModified ?? post.date,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    })),
+    ...BLOG_POSTS_TR.map((post) => {
+      const cs = post.contentSlug
+      const langs: Record<string, string> = { tr: `${BASE}/tr/blog/${post.slug}` }
+      if (cs) {
+        langs['en-GB'] = `${BASE}/blog/${cs}`
+        langs['x-default'] = `${BASE}/blog/${cs}`
+        if (esByContentSlug.has(cs)) langs.es = `${BASE}/es/blog/${esByContentSlug.get(cs)}`
+        if (frByContentSlug.has(cs)) langs.fr = `${BASE}/fr/blog/${frByContentSlug.get(cs)}`
+        if (arByContentSlug.has(cs)) langs.ar = `${BASE}/ar/blog/${arByContentSlug.get(cs)}`
+        if (ruByContentSlug.has(cs)) langs.ru = `${BASE}/ru/blog/${ruByContentSlug.get(cs)}`
+        if (zhByContentSlug.has(cs)) langs.zh = `${BASE}/zh/blog/${zhByContentSlug.get(cs)}`
+      }
+      return { url: `${BASE}/tr/blog/${post.slug}`, lastModified: post.dateModified ?? post.date, changeFrequency: 'monthly' as const, priority: 0.6, alternates: { languages: langs } }
+    }),
   ]
 
   const frPages: MetadataRoute.Sitemap = [
@@ -215,12 +252,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { fr: `${BASE}/fr/stage`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
-    ...BLOG_POSTS_FR.map((post) => ({
-      url: `${BASE}/fr/blog/${post.slug}`,
-      lastModified: post.dateModified ?? post.date,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    })),
+    ...BLOG_POSTS_FR.map((post) => {
+      const cs = post.contentSlug
+      const langs: Record<string, string> = { fr: `${BASE}/fr/blog/${post.slug}` }
+      if (cs) {
+        langs['en-GB'] = `${BASE}/blog/${cs}`
+        langs['x-default'] = `${BASE}/blog/${cs}`
+        if (trByContentSlug.has(cs)) langs.tr = `${BASE}/tr/blog/${trByContentSlug.get(cs)}`
+        if (esByContentSlug.has(cs)) langs.es = `${BASE}/es/blog/${esByContentSlug.get(cs)}`
+        if (arByContentSlug.has(cs)) langs.ar = `${BASE}/ar/blog/${arByContentSlug.get(cs)}`
+        if (ruByContentSlug.has(cs)) langs.ru = `${BASE}/ru/blog/${ruByContentSlug.get(cs)}`
+        if (zhByContentSlug.has(cs)) langs.zh = `${BASE}/zh/blog/${zhByContentSlug.get(cs)}`
+      }
+      return { url: `${BASE}/fr/blog/${post.slug}`, lastModified: post.dateModified ?? post.date, changeFrequency: 'monthly' as const, priority: 0.6, alternates: { languages: langs } }
+    }),
   ]
 
   const arPages: MetadataRoute.Sitemap = [
@@ -259,12 +304,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { ar: `${BASE}/ar/tadrib`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
-    ...BLOG_POSTS_AR.map((post) => ({
-      url: `${BASE}/ar/blog/${post.slug}`,
-      lastModified: post.dateModified ?? post.date,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    })),
+    ...BLOG_POSTS_AR.map((post) => {
+      const cs = post.contentSlug
+      const langs: Record<string, string> = { ar: `${BASE}/ar/blog/${post.slug}` }
+      if (cs) {
+        langs['en-GB'] = `${BASE}/blog/${cs}`
+        langs['x-default'] = `${BASE}/blog/${cs}`
+        if (trByContentSlug.has(cs)) langs.tr = `${BASE}/tr/blog/${trByContentSlug.get(cs)}`
+        if (esByContentSlug.has(cs)) langs.es = `${BASE}/es/blog/${esByContentSlug.get(cs)}`
+        if (frByContentSlug.has(cs)) langs.fr = `${BASE}/fr/blog/${frByContentSlug.get(cs)}`
+        if (ruByContentSlug.has(cs)) langs.ru = `${BASE}/ru/blog/${ruByContentSlug.get(cs)}`
+        if (zhByContentSlug.has(cs)) langs.zh = `${BASE}/zh/blog/${zhByContentSlug.get(cs)}`
+      }
+      return { url: `${BASE}/ar/blog/${post.slug}`, lastModified: post.dateModified ?? post.date, changeFrequency: 'monthly' as const, priority: 0.6, alternates: { languages: langs } }
+    }),
   ]
 
   const ruPages: MetadataRoute.Sitemap = [
@@ -303,12 +356,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { ru: `${BASE}/ru/stazhirovka`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
-    ...BLOG_POSTS_RU.map((post) => ({
-      url: `${BASE}/ru/blog/${post.slug}`,
-      lastModified: post.dateModified ?? post.date,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    })),
+    ...BLOG_POSTS_RU.map((post) => {
+      const cs = post.contentSlug
+      const langs: Record<string, string> = { ru: `${BASE}/ru/blog/${post.slug}` }
+      if (cs) {
+        langs['en-GB'] = `${BASE}/blog/${cs}`
+        langs['x-default'] = `${BASE}/blog/${cs}`
+        if (trByContentSlug.has(cs)) langs.tr = `${BASE}/tr/blog/${trByContentSlug.get(cs)}`
+        if (esByContentSlug.has(cs)) langs.es = `${BASE}/es/blog/${esByContentSlug.get(cs)}`
+        if (frByContentSlug.has(cs)) langs.fr = `${BASE}/fr/blog/${frByContentSlug.get(cs)}`
+        if (arByContentSlug.has(cs)) langs.ar = `${BASE}/ar/blog/${arByContentSlug.get(cs)}`
+        if (zhByContentSlug.has(cs)) langs.zh = `${BASE}/zh/blog/${zhByContentSlug.get(cs)}`
+      }
+      return { url: `${BASE}/ru/blog/${post.slug}`, lastModified: post.dateModified ?? post.date, changeFrequency: 'monthly' as const, priority: 0.6, alternates: { languages: langs } }
+    }),
   ]
 
   const zhPages: MetadataRoute.Sitemap = [
@@ -347,12 +408,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { zh: `${BASE}/zh/shixi`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, 'x-default': `${BASE}/internship` } },
     },
-    ...BLOG_POSTS_ZH.map((post) => ({
-      url: `${BASE}/zh/blog/${post.slug}`,
-      lastModified: post.dateModified ?? post.date,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    })),
+    ...BLOG_POSTS_ZH.map((post) => {
+      const cs = post.contentSlug
+      const langs: Record<string, string> = { zh: `${BASE}/zh/blog/${post.slug}` }
+      if (cs) {
+        langs['en-GB'] = `${BASE}/blog/${cs}`
+        langs['x-default'] = `${BASE}/blog/${cs}`
+        if (trByContentSlug.has(cs)) langs.tr = `${BASE}/tr/blog/${trByContentSlug.get(cs)}`
+        if (esByContentSlug.has(cs)) langs.es = `${BASE}/es/blog/${esByContentSlug.get(cs)}`
+        if (frByContentSlug.has(cs)) langs.fr = `${BASE}/fr/blog/${frByContentSlug.get(cs)}`
+        if (arByContentSlug.has(cs)) langs.ar = `${BASE}/ar/blog/${arByContentSlug.get(cs)}`
+        if (ruByContentSlug.has(cs)) langs.ru = `${BASE}/ru/blog/${ruByContentSlug.get(cs)}`
+      }
+      return { url: `${BASE}/zh/blog/${post.slug}`, lastModified: post.dateModified ?? post.date, changeFrequency: 'monthly' as const, priority: 0.6, alternates: { languages: langs } }
+    }),
   ]
 
   return [...staticPages, ...subjectPages, ...grammarPages, ...blogPages, ...esPages, ...trPages, ...frPages, ...arPages, ...ruPages, ...zhPages]

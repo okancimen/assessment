@@ -130,6 +130,10 @@ const ORGANIZATION_SCHEMA = {
   logo: { '@type': 'ImageObject', url: 'https://eduentry.com/logo.png', width: 200, height: 60 },
   foundingDate: '2026',
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
+  sameAs: [
+    'https://www.linkedin.com/company/eduentry',
+    'https://x.com/eduentry',
+  ],
 }
 
 const ACADEMIC_PROGRAM_SCHEMA = {
