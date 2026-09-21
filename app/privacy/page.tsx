@@ -40,14 +40,14 @@ export default function PrivacyPage() {
 
       <main className="max-w-3xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-3">Privacy Policy</h1>
-        <p className="text-sm text-gray-400 mb-10">Last updated: 13 June 2026</p>
+        <p className="text-sm text-gray-400 mb-10">Last updated: 22 September 2026</p>
 
         <div className="prose prose-gray max-w-none space-y-10">
 
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-3">1. Who we are</h2>
             <p className="text-gray-600 leading-relaxed">
-              Eduentry (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) is an online academic assessment platform for children aged 6–17. We are operated by the Eduentry team and can be reached at{' '}
+              Eduentry (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) operates two assessment products: an <strong>academic benchmarking assessment</strong> for children aged 6–17 (managed by a parent or guardian) and a <strong>free internship readiness assessment</strong> for students aged 14 and above (used directly by students). We can be reached at{' '}
               <a href="mailto:privacy@eduentry.com" className="text-indigo-600 hover:underline">privacy@eduentry.com</a>.
               This policy explains what personal data we collect, why, and how you can exercise your rights under the UK GDPR and EU GDPR.
             </p>
@@ -57,15 +57,15 @@ export default function PrivacyPage() {
             <h2 className="text-xl font-semibold text-gray-900 mb-3">2. Data we collect</h2>
             <div className="space-y-4">
               <div>
-                <h3 className="font-medium text-gray-800 mb-1">Parent / guardian account</h3>
+                <h3 className="font-medium text-gray-800 mb-1">Account registration (all products)</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
-                  <li>Email address and password (hashed)</li>
+                  <li>Email address and password (hashed — never stored in plain text)</li>
                   <li>Full name (provided at registration)</li>
                   <li>Account creation date and last login</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-medium text-gray-800 mb-1">Child profiles</h3>
+                <h3 className="font-medium text-gray-800 mb-1">Academic assessment — child profiles</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
                   <li>Child&rsquo;s first name and date of birth (to calculate age-appropriate questions)</li>
                   <li>Assessment responses, standardised scores, and percentile rankings</li>
@@ -73,10 +73,18 @@ export default function PrivacyPage() {
                 </ul>
               </div>
               <div>
+                <h3 className="font-medium text-gray-800 mb-1">Internship readiness assessment — student data</h3>
+                <ul className="list-disc list-inside text-gray-600 space-y-1">
+                  <li>Selected internship track (Technology, Business, Data Analytics, or Digital Marketing)</li>
+                  <li>Assessment responses across four phases</li>
+                  <li>Readiness tier, phase scores, and AI-generated report text</li>
+                </ul>
+              </div>
+              <div>
                 <h3 className="font-medium text-gray-800 mb-1">Usage data</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
-                  <li>Pages visited, session duration, browser type (via Google Analytics)</li>
-                  <li>IP address (anonymised after 14 days by Google Analytics)</li>
+                  <li>Pages visited and session duration (via Google Analytics 4, with IP anonymisation)</li>
+                  <li>Heatmaps and session replays (via Microsoft Clarity, anonymised)</li>
                 </ul>
               </div>
             </div>
@@ -85,10 +93,10 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-3">3. How we use your data</h2>
             <ul className="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
-              <li>To create and manage your account and child profiles</li>
-              <li>To generate adaptive questions appropriate for your child&rsquo;s age and ability</li>
-              <li>To calculate standardised scores and percentile rankings</li>
-              <li>To improve the accuracy of our Item Response Theory models</li>
+              <li>To create and manage your account and (where applicable) child profiles</li>
+              <li>To deliver adaptive assessments and generate personalised reports</li>
+              <li>To calculate standardised scores, percentile rankings, and readiness tiers</li>
+              <li>To improve the accuracy of our assessment models</li>
               <li>To send essential service emails (password reset, assessment completion)</li>
               <li>To analyse aggregate usage patterns and improve the platform</li>
             </ul>
@@ -98,21 +106,23 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-3">4. Children&rsquo;s data</h2>
-            <p className="text-gray-600 leading-relaxed">
-              Eduentry is designed for use by parents and guardians on behalf of their children. We do not knowingly allow children to create their own accounts. All child profiles must be created and managed by a verified parent or guardian aged 18 or over.
-            </p>
-            <p className="text-gray-600 leading-relaxed mt-3">
-              Assessment responses and scores are linked to the child&rsquo;s profile and are accessible only to the parent or guardian account holder. We retain this data for as long as the parent account is active, or for 3 years after the last login — whichever comes first.
-            </p>
+            <h2 className="text-xl font-semibold text-gray-900 mb-3">4. Children&rsquo;s data and minimum age</h2>
+            <div className="space-y-3 text-gray-600">
+              <p><strong className="text-gray-800">Academic assessment (ages 6–17):</strong> This product is designed for use by parents and guardians on behalf of their children. All child profiles must be created and managed by a verified parent or guardian aged 18 or over. Children do not create their own accounts for this product.</p>
+              <p><strong className="text-gray-800">Internship readiness assessment (ages 14+):</strong> Students aged 14 and above may register and use this product directly. Users under 18 are encouraged to inform a parent or guardian before registering. We do not knowingly allow anyone under 14 to register for any Eduentry product.</p>
+              <p><strong className="text-gray-800">Users under 13 (COPPA):</strong> Eduentry does not knowingly collect personal data from children under 13. If we become aware that a user under 13 has registered, we will delete their account and all associated data promptly. If you believe a child under 13 has registered, please contact us at <a href="mailto:privacy@eduentry.com" className="text-indigo-600 hover:underline">privacy@eduentry.com</a>.</p>
+              <p>Assessment responses and scores are accessible only to the account holder. We retain this data for as long as the account is active, or for 3 years after the last login — whichever comes first.</p>
+            </div>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-3">5. Third parties</h2>
             <div className="space-y-3 text-gray-600">
               <p><strong className="text-gray-800">Supabase</strong> — our database and authentication provider. Data is stored on EU-region servers. <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Supabase Privacy Policy</a>.</p>
-              <p><strong className="text-gray-800">Anthropic Claude API</strong> — used to generate assessment questions. Question prompts include the child&rsquo;s age and subject only — no names or personally identifiable information are sent. <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Anthropic Privacy Policy</a>.</p>
-              <p><strong className="text-gray-800">Google Analytics 4</strong> — anonymised usage analytics. IP addresses are anonymised. You can opt out via <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Google&rsquo;s opt-out browser add-on</a>.</p>
+              <p><strong className="text-gray-800">Anthropic Claude API</strong> — used to generate AI-powered assessment report summaries. Only anonymised performance data (scores and track) is sent — no names, email addresses, or personally identifiable information. <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Anthropic Privacy Policy</a>.</p>
+              <p><strong className="text-gray-800">Google Analytics 4</strong> — anonymised usage analytics. IP addresses are anonymised before storage. You can opt out via <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Google&rsquo;s opt-out browser add-on</a>.</p>
+              <p><strong className="text-gray-800">Microsoft Clarity</strong> — anonymised heatmap and session behaviour analytics. Clarity is configured to mask all input fields and does not record keystrokes or personal data. <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Microsoft Privacy Statement</a>.</p>
+              <p><strong className="text-gray-800">Vercel</strong> — our hosting provider. Handles HTTPS termination and CDN delivery. <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Vercel Privacy Policy</a>.</p>
             </div>
           </section>
 
