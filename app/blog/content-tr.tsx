@@ -52,6 +52,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Çocuğunuz hazır mı — rakamlarla görün</p>
+          <p className="text-sm text-gray-600">14 yaş üstü öğrenciler için ücretsiz adaptif değerlendirme. Yetenek, alan bilgisi ve iş yeri becerileri — kişiselleştirilmiş rapor ile.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz başla
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Üniversite Kabulü: Rakamlar Ne Gösteriyor</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Profesyonel deneyim ile üniversite kabulü arasındaki bağlantı hem açık hem de ölçülebilir. Russell Group genelinde, rekabetçi programlar için kabul kılavuzları iş deneyimini tutarlı biçimde belirleyici bir faktör olarak — bir avantaj olarak değil — tanımlıyor.
@@ -181,6 +191,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Kişisel beyanına somut kanıt ekle</p>
+          <p className="text-sm text-gray-600">Doğrulanmış bir hazırlık skoru "yetkinim" iddiasını kanıta dönüştürür. Ücretsiz, 35 dakika, anında rapor.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Değerlendirmeyi başlat
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Üniversite Kabulü: Kanıtlar</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Lise iş deneyimi ile üniversite kabulü arasındaki bağlantı anekdot niteliğinde değil. Rekabetçi üniversitelerdeki kabul ekipleri, sınıfların ötesinde ne aradıklarını açıkça belirtiyor.
@@ -287,6 +307,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">İş dünyası alanında nerede durduğunu öğren</p>
+          <p className="text-sm text-gray-600">Ticari farkındalık, sayısal akıl yürütme ve iş yeri becerileri — 34 soruluk ücretsiz değerlendirme ile ölçülür.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz başla
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Yerleştirme Sırasında Nasıl İyi Performans Gösterilir</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Bir iş yerleştirmesinden elde ettiklerinizin kalitesi, hemen hemen tamamen nasıl yaklaştığınıza bağlı. İyi performans gösteren — ve güçlü referanslar, değerli kişiler ve zorlayıcı kişisel beyan materyaliyle ayrılan — öğrenciler tutarlı biçimde dört şey yapıyor:
@@ -360,6 +390,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Başvurmadan önce teknik hazırlığını doğrula</p>
+          <p className="text-sm text-gray-600">Teknoloji alanında aptitude ve domain bilgisi değerlendirmesi — ücretsiz, anında rapor, CV'ne eklenebilir skor.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Teknoloji izini dene
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">İngiliz Öğrenci Olarak Teknoloji Stajı ve İş Deneyimi Nerede Bulunur</h2>
         <ul className="space-y-5 mb-6">
           <Bullet>
@@ -508,6 +548,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Çocuğunuzu uluslararası standartla kıyaslayın</p>
+          <p className="text-sm text-gray-600">Sınıf notu ulusal sıralamayı gösterir — global rekabet için bağımsız bir ölçüm gerekir. 6–17 yaş, ücretsiz.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Global konumunu öğren
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzun Gerçekte Rekabet Ettiği Ülkeler</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Bir İngiliz öğrenci UCL&apos;de Tıp, LSE&apos;de Ekonomi ya da Imperial&apos;da Bilgisayar Bilimi okumak için başvurduğunda, esas olarak diğer İngiliz öğrencilerle rekabet etmiyor. Şunlardan gelen öğrencilerle rekabet ediyor:
@@ -656,6 +706,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">İş hayatına ilk adımı ücretsiz değerlendirmeyle at</p>
+          <p className="text-sm text-gray-600">Hangi alan sana en uygun? Staj hazırlık raporun güçlü yanlarını ve gelişim alanlarını net biçimde gösterir.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz başla
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Gerçek Hayattan Örnekler</h2>
         <p className="text-gray-700 leading-relaxed mb-6">
           Tarihin ve iş dünyasının en tanınmış isimlerinden bazılarının çocukluk hikayelerine bakalım. Bu isimlerin ortak noktası, hepsinin çok erken yaşta gerçek iş deneyimiyle tanışmış olması.
@@ -837,6 +897,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Siber güvenlik stajına hazırlığını test et</p>
+          <p className="text-sm text-gray-600">Analitik akıl yürütme ve alan bilgisi değerlendirmesi — başvurmadan önce nerede durduğunu bil.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Teknoloji izini dene
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Yerleştirmede Ne Beklenmeli?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Lise düzeyi siber güvenlik yerleştirmelerinde karşılaşacağınız tipik görevler:
@@ -941,6 +1011,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <strong className="text-amber-900">Dikkat:</strong> Bazı A Level kombinasyonları "kolaylaştırıcı" (facilitating) olarak adlandırılır ve en geniş üniversite kapılarını açar: Matematik, Daha İleri Matematik, Fizik, Biyoloji, Kimya, Tarih, Coğrafya, İngilizce Edebiyat, Klasik Diller ve Modern Diller. Russell Group, bu derslere açıkça değer verdiğini belirtmektedir.
         </Callout>
       </section>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">A Level yıllarında staj avantajını yakala</p>
+          <p className="text-sm text-gray-600">Akademik hazırlığa paralel iş yeri becerilerini ölç — kişisel beyanda gösterebileceğin doğrulanmış bir skor edin.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Değerlendirmeyi başlat
+        </Link>
+      </div>
 
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">A Level ve IB: Hangisi Daha İyi?</h2>
@@ -1054,6 +1134,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Dubai'deki çocuğun global hazırlık seviyesini ölç</p>
+          <p className="text-sm text-gray-600">Hangi müfredatta olursa olsun, uluslararası standartla kıyaslayan bağımsız bir değerlendirme — ücretsiz.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz değerlendir
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Dubai'den Türkiye veya İngiltere'de Üniversite</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Dubai'deki bir uluslararası okulu tamamlayan öğrencilerin üniversite seçenekleri geniştir; ancak diploma türü önemli ölçüde belirleyicidir.
@@ -1185,6 +1275,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">15 yaşında fark yaratmanın ilk adımı</p>
+          <p className="text-sm text-gray-600">Hangi alanda güçlüsün, hangisinde gelişmeye ihtiyaç var? Doğrulanmış bir skor rakiplerinden önce adım atmanı sağlar.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Hemen başla
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">15 Yaşında Katılmaya Değer Yapılandırılmış Programlar</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Bağımsız faaliyet değerli ama doğrulanmamış. Yapılandırılmış programlar dışarıdan tanınan belgelenmiş kanıtlar sunar — öğrencinin tek başına şişiremeyeceği veya uyduramayacağı için kabul görevlileri açısından daha güvenilir.
@@ -1345,6 +1445,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">12. sınıf programlarına hazırlıklı gir</p>
+          <p className="text-sm text-gray-600">Rekabetçi şema başvurularında üçüncü taraf yetenek kanıtı — aptitude ve domain skoru — sıradan bir başvuruyu öne çıkarır.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Değerlendirmeyi başlat
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Yıl 12 Programları: Kimler Yürütüyor ve Ne Zaman Başvurulur</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Büyük İngiliz işverenlerdeki yapılandırılmış Yıl 12 programları, ortaöğretim öğrencilerine sunulan en profesyonel açıdan değerli iş deneyimini temsil ediyor.
@@ -1427,6 +1537,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Dijital pazarlama alanında hazırlık skorunu gör</p>
+          <p className="text-sm text-gray-600">İçerik stratejisi, analitik okuma ve ticari farkındalık — başvurmadan önce güçlü yanlarını ve gelişim alanlarını öğren.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Dijital iz değerlendirmesi
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Başvurmadan Önce Hangi Beceriler Geliştirilmeli?</h2>
         <ul className="space-y-5 mb-6">
           <Check><strong>Google Analytics 4</strong> — Google Skillshop üzerinden ücretsiz sertifika. Çoğu adayın göstermediği proaktifliği kanıtlar.</Check>
@@ -1484,6 +1604,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Veri analitiğine hazırlık seviyeni ölç</p>
+          <p className="text-sm text-gray-600">Sayısal akıl yürütme ve veri yorumlama — işverenlerin aradığı sinyalleri başvuru dosyana ekle.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Veri iz değerlendirmesi
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Deneyim Olmadan Nasıl Portfolio Oluşturulur?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Kaggle ücretsiz halka açık veri setleri sunuyor — bunlarla gerçek bir analiz yapıp bulgularınızı belgeleyin. Google Looker Studio ücretsiz dashboard'lar oluşturmanıza ve paylaşmanıza izin veriyor. İş sorusu tanımlanmış, metodoloji, bulgular ve sınırlamalar içeren 3-5 sayfalık bir analiz — yaşıtlarının büyük çoğunluğunun sahip olmadığı minimum geçerli bir portfolyo.
@@ -1530,6 +1660,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">CV'ne güçlü bir sinyal ekle</p>
+          <p className="text-sm text-gray-600">İş geçmişi olmadan işvereni ikna etmenin en etkili yolu: bağımsız bir kurum tarafından doğrulanmış yetenek skoru.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz değerlendirme al
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Deneyim Eksikliği Doğrulanabilir Sinyallerle Nasıl Telafi Edilir?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           İki spesifik strateji iş geçmişi olmayan öğrenciler için işe yarıyor: doğrulanabilir ücretsiz sertifikalar (Google Analytics, Google Ads, Coursera vb.) işe alım uzmanlarının açıkça değerlendirdiği proaktifliği gösteriyor; üçüncü taraf bir yetenek değerlendirme raporu ise CV'nin tek başına kanıtlayamadığı kapasite hakkında objektif veri sunuyor.
@@ -1565,6 +1705,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Mülakatta bahsedebileceğin somut bir skora sahip ol</p>
+          <p className="text-sm text-gray-600">Aptitude ve alan bilgisi değerlendirmesi — "bunu neden bildiğinizi kanıtlayabilir misiniz?" sorusuna en güçlü yanıt.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz değerlendirme
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">İş Geçmişi Olmadan Davranışsal Sorular Nasıl Yanıtlanır?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           STAR yapısı her türlü deneyimle işler — yalnızca iş deneyimiyle değil. Öğrenci stajı görüşmecileri adayın profesyonel geçmişi olmadığını gayet iyi biliyor. Değerlendirdikleri şey deneyimin türü değil, düşüncenin kalitesi ve deneyimden öğrenme kapasitesi.
@@ -1807,6 +1957,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Başvurmadan önce hangi sektörde güçlü olduğunu bil</p>
+          <p className="text-sm text-gray-600">Sektör seçimi ve CV hazırlığını doğru bilgiyle yap — doğrulanmış staj hazırlık raporu ile.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz başla
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">CV ve Motivasyon Mektubu</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Lise öğrencileri için CV yazmak, deneyim eksikliği nedeniyle zorlu görünebilir. Ama bu engel düşündüğünüzden çok daha kolay aşılabilir. Çünkü işverenler lise öğrencisinden büyük bir kariyer geçmişi beklemiyor; potansiyel, istek ve öğrenmeye açıklık arıyor.
@@ -1907,6 +2067,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Hangi alana yatkın olduğunu önce ölç</p>
+          <p className="text-sm text-gray-600">İlgi profili + domain bilgisi değerlendirmesi — çocuğunuzun hangi staj türüne en hazır olduğunu verilerle görün.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          İz uyum testi
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Hangi Staj Türü Uygun?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Her çocuk farklı bir profille staj arayışına girer. Aşağıdaki alanlardan hangisinin çocuğunuza daha uygun olduğuna birlikte karar verebilirsiniz:
@@ -2046,6 +2216,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Erken başlamanın en somut ilk adımı</p>
+          <p className="text-sm text-gray-600">Ücretsiz değerlendirme — hangi alan için ne kadar hazır olunduğunu ve nereden başlanması gerektiğini gösterir.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          İlk adımı at
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım Adım Başlangıç Planı</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Yaşa göre uygun iş tecrübesi adımları şöyle planlanabilir:
@@ -2160,6 +2340,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">İşverenlerin aradığı becerilere ne kadar yakınsın?</p>
+          <p className="text-sm text-gray-600">Aptitude, domain bilgisi, iş yeri becerileri — standart bir değerlendirmede nerede durduğunu şimdi gör.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Hazırlık skorunu öğren
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">İşverenler Hangi Becerileri İstiyor?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           PISA temelde ölçülebilir bilişsel becerileri değerlendiriyor: matematiksel akıl yürütme, okuma anlama, bilimsel okuryazarlık. Ancak iş dünyasının talep ettiği beceriler bu üçgen üzerine inşa edilmiş çok daha geniş bir mimari. Dünya Ekonomik Forumu&apos;nun 2025 İş&apos;in Geleceği raporu, işverenlerin en kritik olarak değerlendirdiği becerileri şu şekilde sıralıyor: analitik düşünme, yaratıcı problem çözme, eleştirel değerlendirme, dayanıklılık ve uyum yeteneği, liderlik, merak ve öğrenmeye açıklık.
@@ -2195,6 +2385,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Çocuğunuz gerçek iş hayatına ne kadar hazır?</p>
+          <p className="text-sm text-gray-600">PISA akademik becerileri ölçer — staj değerlendirmemiz iş yeri hazırlığını ölçer. İkisi birlikte tam bir tablo verir.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          İş yeri hazırlık testi
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Bağlılık Krizi ve Gerçek Çalışma Hayatı</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           PISA 2025&apos;in belki de en umut verici verisi bağlılıkla ilgili: öğrencilerin %76&apos;sı okula ait hissediyor. Bu, insan bağlantısının hâlâ güçlü olduğunu gösteriyor. Ancak aynı öğrenciler giderek daha az şeyi merak ediyor, giderek daha az şeyle derin biçimde ilgileniyor. Yüzeysel bilgi edinme çoğalırken merak ve keşif azalıyor.
@@ -2325,6 +2525,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">PISA verisinin ötesine geç — kişisel skorunu öğren</p>
+          <p className="text-sm text-gray-600">Ülke ortalamaları genel eğilimi gösterir. Çocuğunuzun bireysel konumu için bağımsız bir değerlendirme gerekir.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz değerlendir
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA 2025 Sonuçları: Ne Gösteriyor?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           PISA 2025, OECD ülkelerinde şimdiye kadar kaydedilen en düşük ortalama puanları ortaya koydu. Okuma puanları 2015'ten bu yana 28 puan, matematik ise 22 puan geriledi. OECD'nin analizi, pandemi kaynaklı öğrenme kayıplarını ve dijital dikkat dağınıklığını başlıca nedenler olarak gösteriyor.
@@ -2411,6 +2621,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Yurt içi ya da yurt dışı — her iki başvuruya da hazır ol</p>
+          <p className="text-sm text-gray-600">Staj bulmadan önce hangi iz için ne kadar hazır olduğunu ölç. Hem ulusal hem uluslararası başvurularda işe yarar.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz başla
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Yurt Dışında Staj: Fiziksel ve Uzaktan Seçenekler</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           İngiltere'de "work experience" kültürü çok daha gelişmiştir. Büyük şirketlerin çoğu (KPMG, Deloitte, Google, Microsoft, Barclays) 14-17 yaş öğrencilere yönelik yapılandırılmış programlar sunar. Bu programlar ücretsizdir ve başvurular genellikle Eylül-Kasım arasında açılır — bir sonraki yazın programları için.
@@ -2460,6 +2680,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Sınıf notu değil, standart ölçüm</p>
+          <p className="text-sm text-gray-600">Çocuğunuzun gerçek akademik seviyesini uluslararası standarda göre ölçen ücretsiz adaptif değerlendirme — 6–17 yaş.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Seviye testi başlat
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Güvenilir Ölçüm: Standartlaştırılmış Değerlendirme Nedir?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Standartlaştırılmış değerlendirme, tüm öğrencilere aynı ölçüm aracını uygulayarak karşılaştırılabilir sonuçlar üretir. Okul, öğretmen ya da sınıf değişkenlerini dışarıda bırakır. Bu nedenle seçici okul sınavları (11+, İngiltere'de grammar school sınavları), PISA, SAT ve CAT4 gibi araçlar standartlaştırılmış formattadır.
@@ -2532,6 +2762,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Daha iyi ücretli stajlara daha güçlü başvur</p>
+          <p className="text-sm text-gray-600">Ücretli pozisyonlar daha rekabetçidir. Doğrulanmış bir hazırlık skoru başvurunu kalabalıktan ayırır.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Hazırlık skorunu al
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Sektöre Göre Stajyer Maaşı: Türkiye Örnekleri</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Staj ücreti sektörden sektöre ciddi farklılık gösterir. Türkiye'deki üniversite zorunlu stajları için sektörel ortalamalara yakın örnekler:
@@ -2621,6 +2861,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Staj defterini doldurmadan önce stajı kazan</p>
+          <p className="text-sm text-gray-600">Doğrulanmış bir hazırlık skoru ile staj başvurunu güçlendir — işverene hazır olduğunu göster.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz değerlendirme
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Defteri Nasıl Doldurulur?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Staj defterleri üniversiteden üniversiteye farklılık gösterse de temel bölümler genellikle aynıdır. İşte standart bir staj defterinin bölümleri ve doldurma rehberi:
@@ -2680,6 +2930,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Staj hakkını bilen öğrenci daha güçlü başvurur</p>
+          <p className="text-sm text-gray-600">Staj sigortasını öğrendin — şimdi stajı kazan. Hazırlık değerlendirmesi ile başvuruna somut güç katmanı ekle.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz başla
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Sigortasını Kim Öder?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Stajın türüne göre sigorta yükümlülüğü farklılaşır:
@@ -2758,6 +3018,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Şirkete ulaşmadan önce hazırlığını göster</p>
+          <p className="text-sm text-gray-600">Doğrudan e-posta ile en iyi sonucu alan başvurular somut bir yetenek kanıtı içerir. Hazırlık raporun tam bunu sağlar.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz hazırlık testi
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 3: Doğrudan Ulaşmanın Gücü</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           "Soğuk e-posta" birçok öğrenci için göz ardı edilen, ancak son derece etkili bir yöntemdir. Küçük ve orta ölçekli şirketler, özellikle yerel işletmeler, genellikle staj ilanı vermez — ancak motive bir öğrencinin kendiliğinden gönderdiği bir e-postaya açık olurlar.
@@ -2823,6 +3093,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Başvuru döneminden önce hazırlığını tamamla</p>
+          <p className="text-sm text-gray-600">Yaz stajı başvuruları hızlı dolar. Hazırlık skorunu şimdi al, dönem açıldığında hazır başvur.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Hazırlık skorunu al
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Başvuru Takvimi: Ne Zaman Harekete Geçmeli?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Yaz stajı başvuruları için zamanlama kritiktir. İşte şirket büyüklüğüne göre başvuru takvimleri:
@@ -2923,6 +3203,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Güçlü yanlarını bilerek doğru ize başvur</p>
+          <p className="text-sm text-gray-600">Teknoloji mi, iş dünyası mı, veri mi? Değerlendirme, ilgi profilini ve alan hazırlığını birlikte ölçer.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          İz uyum testini başlat
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Hangi Staj İzine Uygunsun?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Dört temel staj izinin her biri farklı bir beceri ve ilgi profiline hitap eder. Hangisin?
@@ -3022,6 +3312,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">PISA'nın ölçtüğü becerileri iş hayatında kanıtla</p>
+          <p className="text-sm text-gray-600">Analitik düşünme ve problem çözme — staj değerlendirmemiz aynı becerileri iş yeri bağlamında ölçer.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz başla
+        </Link>
+      </div>
+
         <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Başarısı İş Hayatında Başarıdır — Ama Nasıl?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Bu iddiayı duyduğunuzda belki &quot;abartıyor&quot; diye düşündünüz. Haklısınız — doğrudan bir nedensellik yok. PISA&#39;da yüksek puan almak, otomatik olarak iyi bir kariyer garantisi vermiyor. Ama bağlantı, düşündüğünüzden çok daha derine gidiyor.
