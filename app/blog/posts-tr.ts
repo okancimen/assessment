@@ -865,6 +865,50 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr/staj',
     },
   },
+  {
+    slug: 'uluslararasi-staj-programlari',
+    contentSlug: 'international-internship-programs-tr',
+    title: 'Uluslararası Staj Programları: Türk Lise Öğrencileri için 2026 Rehberi',
+    shortTitle: 'Uluslararası Staj Programları Rehberi',
+    description:
+      '2026 yılında Türk lise ve üniversite öğrencileri için yurt dışı staj programları, Erasmus+ başvurusu, gerekli belgeler ve staj başlatma sınavı rehberi. Hangi programlar var, nasıl başvurulur, değerlendirme sınavı neden kritik?',
+    date: '2026-09-21',
+    dateModified: '2026-09-21',
+    readTime: '11 dk okuma',
+    tags: ['Uluslararası Staj', 'Erasmus', 'Staj Başvurusu', 'Yurt Dışı Staj', 'Kariyer Gelişimi'],
+    faqs: [
+      {
+        q: 'Uluslararası staj başvurusu nasıl yapılır?',
+        a: 'Programa göre değişir. Erasmus+ için üniversitenizin Erasmus ofisine başvurarak motivasyon mektubu, transkript ve dil sertifikası sunmanız gerekir. Asgari GPA genellikle 2.5–3.0 bandındadır. IAESTE ve AIESEC gibi öğrenci örgütleri ise çevrimiçi başvuru, mülakat ve eşleştirme süreciyle işler. Tüm programlarda ortak unsur: başvuru öncesi hazırlanmış bir CV, motivasyon mektubu ve yetkinlik kanıtı.',
+      },
+      {
+        q: 'Erasmus staj bursuna kimler başvurabilir?',
+        a: 'Erasmus+ KA131 staj hareketliliğinden yararlanmak için Türkiye\'de bir yükseköğretim kurumuna kayıtlı olmak, en az birinci sınıfı tamamlamış olmak ve kurumun Erasmus Beyannamesi sahibi olması gerekir. Lise öğrencileri Erasmus+ KA131\'e doğrudan başvuramaz; ancak KA210 proje tabanlı programları ve bazı AB pilot şemaları 16 yaş üstü öğrencilere açık olabilir.',
+      },
+      {
+        q: 'Yurt dışı staj için hangi belgeler gerekir?',
+        a: 'Temel belgeler: geçerli pasaport (staj bitiş tarihinden en az 6 ay geçerli), güncel CV (Europass formatı tercih edilir), motivasyon mektubu, akademik transkript, dil sertifikası (IELTS/TOEFL veya eşdeğeri), referans mektubu ve varsa staj anlaşması (Learning Agreement). Sağlık sigortası ve vize bazı ülkeler için zorunludur.',
+      },
+      {
+        q: 'Lise öğrencileri yurt dışında staj yapabilir mi?',
+        a: 'Evet. Erasmus+ KA131 doğrudan lise öğrencilerine kapalı olsa da birkaç alternatif yol var: AIESEC\'in lise programları, British Council\'ın değişim şemaları, uluslararası okul ortaklıkları ve özel sektör programları (örneğin Magenta Networks gibi şirketlerin Global Career Fellowship gibi uzaktan staj programları). 14–17 yaş arası için bu özel programlar genellikle tek yapılandırılmış seçenektir.',
+      },
+      {
+        q: 'Uluslararası staj için İngilizce seviyesi ne olmalı?',
+        a: 'Çoğu yurt dışı staj için B2 seviyesi (IELTS 5.5–6.0 veya eşdeğeri) minimum kabul görür. İngiltere, ABD ve Avustralya\'daki finans ve teknoloji şirketleri C1 talep eder. Ancak bazı Avrupa ülkelerinde (Almanya, Hollanda, İskandinav ülkeleri) İngilizce ile B2 düzeyinde çalışmak mümkündür. Başvurmadan önce hedef şirketin dil gereksinimini doğrulayın.',
+      },
+      {
+        q: 'Staj değerlendirmesi uluslararası başvurulara nasıl katkı sağlar?',
+        a: 'Uluslararası staj programlarında rekabet yüksektir ve çoğu başvuru motivasyon mektubuna dayanır. Doğrulanmış bir değerlendirme skoru — yetenek, alan bilgisi ve iş yeri becerilerini ölçen — başvuru dosyasına somut bir kanıt katmanı ekler. "Yetkinim" demek yerine bağımsız bir kurum tarafından ölçüldüğünü göstermiş olursunuz.',
+      },
+    ],
+    cta: {
+      heading: 'Uluslararası staja hazır mısın?',
+      body: '34 soruluk ücretsiz uyarlanabilir değerlendirme ile yetkinliklerini ölç. Yurt dışı başvuru dosyana somut bir güç katmanı ekle — kişiselleştirilmiş hazırlık raporu ile.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/staj',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

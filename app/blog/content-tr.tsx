@@ -3132,6 +3132,112 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'international-internship-programs-tr': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Türkiye'de "staj" kelimesi arama motorlarında her yıl milyonlarca kez sorgulanıyor. Ancak son dönemde tabloda belirgin bir kayma var: aramaların giderek artan bir kısmı ulusal programların değil, <strong>uluslararası staj programlarının</strong> peşinde. Bu değişim tesadüf değil — iş piyasasının globalleşmesi, üniversite kabul kriterlerinin sertleşmesi ve CV'de "yurt dışı deneyim" satırının yarattığı somut avantaj bu ilgiyi besliyor.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu rehber, Türk lise ve üniversite öğrencilerine yönelik olarak 2026 yılı itibarıyla mevcut uluslararası staj seçeneklerini, Erasmus+ başvuru sürecini, lise öğrencilerine açık yolları ve — sıklıkla göz ardı edilen — bir değerlendirme sınavının başvuru dosyasına kattığı somut avantajı ele alıyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Uluslararası staj programı nedir</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Uluslararası staj, öğrencinin kendi ülkesinin dışındaki bir kuruluşta — fiziksel olarak veya uzaktan — yapılandırılmış mesleki deneyim edindiği programdır. Ulusal stajdan temel farkları şunlardır: çalışma dili genellikle İngilizcedir, değerlendirme kriterleri uluslararası standartlara göre belirlenir ve elde edilen referansın küresel tanınırlığı vardır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          2026 itibarıyla Türk öğrencilere açık başlıca uluslararası staj kanalları şunlardır:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Erasmus+ KA131</strong> — AB üyesi veya ortak ülkelerdeki şirket ve kurumlarda 2–12 aylık ücretli staj. Türkiye'deki üniversiteler Erasmus Beyannamesi kapsamında bu programdan yararlanabiliyor. Burs katkısı ülkeye ve süriye göre değişmekle birlikte ortalama aylık 300–600 € bandındadır.</Check>
+          <Check><strong>IAESTE</strong> — Mühendislik, fen bilimleri, BT ve mimarlık öğrencileri için teknik staj değişim programı. 80'den fazla ülkede geçerli, başvurular üniversite IAESTE komitesi üzerinden yapılır.</Check>
+          <Check><strong>AIESEC</strong> — Genç profesyonellere yönelik küresel staj ve gönüllülük platformu. Türkiye'deki üniversitelerde aktif komiteleri bulunan AIESEC, hem inbound hem outbound staj bağlantısı sağlıyor.</Check>
+          <Check><strong>Özel sektör uzaktan programları</strong> — Magenta Networks Global Career Fellowship gibi doğrudan şirket programları, coğrafi kısıtlama olmaksızın yapılandırılmış uzaktan staj deneyimi sunuyor. Lise öğrencileri için bu genellikle tek erişilebilir seçenektir.</Check>
+          <Check><strong>LinkedIn ve doğrudan başvuru</strong> — Özellikle teknoloji ve dijital pazarlama alanında faaliyet gösteren küçük ve orta ölçekli uluslararası şirketler, güçlü bir profil ve portföyle kendi ağları üzerinden stajyer kabul ediyor.</Check>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Önemli not:</strong> Erasmus+ ve IAESTE üniversite öğrencilerine yönelik programlardır. Lise öğrencileri için en erişilebilir yollar özel sektör uzaktan programları ve British Council değişim şemalarıdır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Erasmus staj başvurusu nasıl yapılır</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Erasmus+ KA131 staj hareketliliği Türkiye'deki üniversite öğrencilerinin en çok tercih ettiği uluslararası staj kanalıdır. Başvuru süreci doğrudan AB'ye değil, üniversiteniz aracılığıyla yürür. Adım adım süreç şöyledir:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>1. Adım — Üniversitenizin Erasmus ofisini ziyaret edin.</strong> Her üniversitenin farklı takvimi ve kontenjanı vardır. Başvuru dönemleri genellikle Kasım–Ocak (güz dönemi) ve Mart–Mayıs (bahar dönemi) arasındadır. Takvimi kaçırmak bir yıl kaybetmek anlamına gelir.</Check>
+          <Check><strong>2. Adım — Staj yapacağınız kuruluşu kendiniz bulun.</strong> Erasmus+ genellikle yerleştirme garantisi sunmaz; eşleştirme sizin sorumluluğunuzdadır. LinkedIn, EURES ve şirket kariyer sayfaları başlangıç noktaları. Kuruluş, AB üye ya da ortak ülkesinde kayıtlı olmalı ve yükseköğretim kurumu ya da devlet kurumu olmamalıdır.</Check>
+          <Check><strong>3. Adım — Learning Agreement'ı imzalayın.</strong> Öğrenci, üniversite ve ev sahibi kuruluş arasındaki bu üçlü belge; staj görevlerini, süresini ve elde edilecek yetkinlikleri tanımlar. Burs ödemesinin başlaması için bu belge şarttır.</Check>
+          <Check><strong>4. Adım — Dil sertifikanızı hazırlayın.</strong> Çoğu program B2 İngilizce (veya ev sahibi ülkenin dili) bekler. Kuruluşun Almanya'da olduğunu biliyorsanız A2/B1 düzeyinde Almanca belgesi de avantaj sağlar.</Check>
+          <Check><strong>5. Adım — Motivasyon mektubunu güçlendirin.</strong> Erasmus staj başvurularının zayıf halkası çoğunlukla motivasyon mektubundadır. "Uluslararası deneyim kazanmak istiyorum" yerine spesifik bir yetkinlik boşluğunu ve bu stajın onu nasıl kapattığını anlatın. Doğrulanmış bir değerlendirme skoru burada somut bir referans noktası oluşturur.</Check>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Pratik ipucu:</strong> Erasmus+ bursunun kesilmemesi için staj süresince aylık rapor zorunluluğunuz olabilir. Başlamadan önce üniversitenizin özel şartlarını teyit edin.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lise öğrencileri için yurt dışı staj programları</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Erasmus+ ve IAESTE gibi büyük AB programları üniversite öğrencilerine yöneliktir. Ancak bu, lise döneminde uluslararası deneyimin imkânsız olduğu anlamına gelmiyor — sadece kanallar farklıdır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          14–18 yaş arasındaki öğrenciler için 2026 itibarıyla gerçekçi seçenekler şunlardır:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Uzaktan staj programları.</strong> Coğrafi kısıtlama olmaksızın çalışmayı mümkün kılan bu programlar, lise öğrencilerinin uluslararası deneyime en hızlı eriştiği kanaldır. Teknoloji, dijital pazarlama ve veri analitiği alanlarında faaliyet gösteren şirketler bu modeli aktif olarak kullanıyor.</Bullet>
+          <Bullet><strong>British Council değişim programları.</strong> İngiltere ile Türkiye arasındaki eğitim ortaklıkları kapsamında lise öğrencilerine yönelik kısa dönemli değişim ve çalışma ziyareti şemaları bulunuyor. Başvurular okul aracılığıyla yapılıyor.</Bullet>
+          <Bullet><strong>AIESEC lise programları.</strong> AIESEC'in Global Volunteer ve Global Talent programları 18 yaş üstü için tasarlanmış olsa da bazı ülkelerdeki yerel komiteler 16–17 yaş grubuna proje tabanlı deneyim sunuyor.</Bullet>
+          <Bullet><strong>Yurt dışı yaz okulları + proje stajları.</strong> Üniversitelerin ve bağımsız kurumların düzenlediği yaz okulları kısmen işveren katılımını içerebilir. Bu programlar tam anlamıyla "staj" değildir ancak uluslararası iş ortamına erken maruziyet sağlar.</Bullet>
+          <Bullet><strong>Doğrudan şirket başvurusu.</strong> Özellikle startup ekosistemi ve uzaktan çalışma kültürü güçlü şirketlerde güçlü bir portföy + İngilizce CV ile yaz stajı kazanmak mümkün. LinkedIn'de "summer intern remote high school" araması bu fırsatları filtreler.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lise döneminde uluslararası deneyim edinmenin iki somut avantajı vardır. Birincisi, üniversite başvurusunda kişisel beyanı güçlendirir — "yurt dışı deneyim" satırı hem Türkiye hem İngiltere/ABD üniversiteleri için dikkat çekicidir. İkincisi, İngilizce iş ortamına erken maruziyetle dil pratiği akademik öğrenimden çok daha hızlı ilerler.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj başlatma sınavına nasıl hazırlanılır</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Uluslararası staj süreçlerinde giderek yaygınlaşan bir eleman var: başvuru öncesi veya sürecinde uygulanan yetkinlik değerlendirmesi. Bazı şirketler bunu resmi bir "staj başlatma sınavı" olarak adlandırırken diğerleri aptitude test, sözel/sayısal akıl yürütme değerlendirmesi veya domain knowledge testi olarak uygular.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu değerlendirmelerde ölçülen dört temel alan ve bunlara hazırlık yolları:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Sözel ve sayısal akıl yürütme (Aptitude).</strong> Mantık soruları, kelime analogileri, grafik yorumlama ve sayısal problem çözme. En etkili hazırlık yöntemi: timed practice. Soruları doğru çözmek değil, belirli bir sürede doğru çözmek ölçülür. UKCAT, Verbal Reasoning ve Watson-Glaser pratik testleri bu beceriyi geliştirir.</Check>
+          <Check><strong>Alan bilgisi (Domain knowledge).</strong> Seçilen staj alanına özgü teknik kavramlar. Teknoloji için temel algoritma ve yazılım mantığı; iş dünyası için finansal okuryazarlık ve pazar analizi; veri için istatistiksel yorumlama. Bu alan için en iyi hazırlık: seçtiğiniz ize yönelik kısa online kurs tamamlamak (Coursera, Khan Academy, Google Career Certificates).</Check>
+          <Check><strong>İş yeri becerileri — SJT (Situational Judgement Test).</strong> Gerçek iş yeri senaryolarında en uygun tepkiyi seçme. Doğru/yanlış yok — "en iyi" ve "en kötü" seçenekler var. Hazırlık için SJT soru bankaları ve gerçek iş yeri vaka analizleri kullanılır. Temel ilke: bireysel çıkar yerine ekip ve organizasyon çıkarını önceliklendirmek.</Check>
+          <Check><strong>İngilizce dil yetkinliği.</strong> Profesyonel bağlamlarda okuma anlama, kelime, dilbilgisi ve iş e-postası yazımı. B2+ hedefliyorsanız Cambridge Business English sertifika hazırlık materyalleri en uygun kaynaktır.</Check>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Stratejik not:</strong> Uluslararası staj başvurusu yapmadan önce bir değerlendirme testi tamamlamak iki somut fayda sağlar: gerçek sınav deneyimi kazanırsınız ve hazırlık raporunuz hangi alanda güçlü, hangisinde gelişime ihtiyaç duyduğunuzu somut verilerle gösterir. Motivasyon mektubunuzda bu sonuçlara atıfta bulunabilirsiniz.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Değerlendirme sınavına hazırlıkta en sık yapılan hata içeriği ezberlemektir. Sınavlar bilgi değil, <em>uygulama</em> ölçer. Tüm alan bilgisini bilmek değil, sınırlı sürede baskı altında doğru çıkarımı yapmak kritiktir. Bu nedenle timed mock test rutini, konu çalışmasından önce gelir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Uluslararası stajda CV ve motivasyon mektubu</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Uluslararası başvurularda Türkiye'deki ulusal başvurulardan farklılaşan iki belge var: CV formatı ve motivasyon mektubunun yapısı.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>CV için:</strong> Europass formatı AB programlarında (Erasmus+, IAESTE) standart kabul görür. Fotoğraf eklemek Almanya ve İngiltere'de gereksizdir, Fransa'da nötr. Türkçe eğitim bilgilerini İngilizce eşdeğerleriyle açıklayın — "Anadolu Lisesi" tek başına yabancı bir değerlendirici için anlam ifade etmez, "Anatolian High School (selective state school, top 5% national entrance exam)" gibi bir parantez açıklaması değer katar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Motivasyon mektubu için:</strong> Uluslararası işverenler "neden bu şirket, neden bu pozisyon, neden şu an" üçlüsünü arar. Genel "uluslararası deneyim kazanmak istiyorum" ifadesinden kaçının. Şirketin son dönem projesine veya ürününe spesifik bir referans verin, değerlendirme sonuçlarınızı somut bir yetkinlik kanıtı olarak konumlandırın ve staj sonrası kariyer planınızı bir cümleyle bağlayın.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Örnek cümle:</strong> "Completing a standardised readiness assessment prior to this application — scoring in the top quartile for domain knowledge and workplace skills — confirmed both my preparation for a structured professional environment and the gaps I intend to address during this placement."
+        </Callout>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
