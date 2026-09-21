@@ -3161,6 +3161,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         </Callout>
       </section>
 
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Başvurmadan önce hazırlığını ölç</p>
+          <p className="text-sm text-gray-600">Erasmus ve uluslararası staj başvuruları rekabetçidir. Doğrulanmış bir değerlendirme skoru, motivasyon mektubuna somut bir yetkinlik kanıtı ekler.</p>
+        </div>
+        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz değerlendirmeyi başlat
+        </Link>
+      </div>
+
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Erasmus staj başvurusu nasıl yapılır</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
