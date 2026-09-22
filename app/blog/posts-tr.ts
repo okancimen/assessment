@@ -609,7 +609,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'pisa-nedir-cocugunuz-nasil-hazirlanir',
     title: 'PISA Nedir? 2025 Sonuçları ve Çocuğunuzu Hazırlamanın Yolları',
-    shortTitle: 'PISA Nedir, Neyi Ölçer? Ebeveyn Rehberi',
+    shortTitle: 'PISA Nedir? 2025 Sonuçları, Türkiye Sıralaması ve Hazırlık Rehberi',
     description:
       'PISA testi nedir, nasıl yapılır, hangi ülkeler katılır? 2025 sonuçları Türkiye\'yi nasıl etkiledi ve çocuğunuz uluslararası standartlarda nerede duruyor? Türk aileler için kapsamlı rehber.',
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2022\'de matematikte 453, okumada 440 ve fen bilimlerinde 452 puan alarak OECD ortalamasının altında kaldı.',

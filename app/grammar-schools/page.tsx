@@ -8,20 +8,20 @@ import { GRAMMAR_AREAS } from './data'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Grammar Schools in England — Entry Requirements',
-  description: 'Entry requirements and 11+ preparation advice for grammar schools across England — Kent, Buckinghamshire, Birmingham, London, Essex and Hertfordshire.',
+  title: 'Grammar Schools in England 2026: 11+ SAS Score Thresholds by Area',
+  description: 'What SAS score does your child need? Kent, Buckinghamshire, Birmingham, London Sutton, Hertfordshire and Essex — 11+ score thresholds, catchment areas, and selective school entry requirements for 2026.',
   alternates: { canonical: `${BASE_URL}/grammar-schools`, languages: { 'en-GB': `${BASE_URL}/grammar-schools`, 'x-default': `${BASE_URL}/grammar-schools` } },
-  keywords: ['grammar schools England', '11 plus entry requirements', 'grammar school score', 'SAS score grammar school', '11+ preparation', 'grammar school areas England'],
+  keywords: ['grammar schools England', '11 plus entry requirements', 'grammar school score', 'SAS score grammar school', '11+ preparation', 'grammar school areas England', 'grammar school SAS threshold 2026'],
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
-    title: 'Grammar Schools in England: Entry Requirements by Area',
-    description: 'SAS score benchmarks and 11+ entry requirements for grammar schools across England.',
+    title: 'Grammar Schools in England 2026: 11+ SAS Score Thresholds by Area',
+    description: 'What SAS score does your child need? Score thresholds, catchment areas, and 11+ entry requirements for Kent, Bucks, Birmingham, Sutton, Hertfordshire and Essex.',
     url: `${BASE_URL}/grammar-schools`,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Grammar Schools in England: Entry Requirements by Area',
-    description: 'SAS score benchmarks and 11+ entry requirements for grammar schools across England.',
+    title: 'Grammar Schools in England 2026: 11+ SAS Score Thresholds by Area',
+    description: 'What SAS score does your child need? Score thresholds, catchment areas, and 11+ entry requirements for Kent, Bucks, Birmingham, Sutton, Hertfordshire and Essex.',
     images: [`${BASE_URL}/grammar-schools/opengraph-image`],
   },
 }
