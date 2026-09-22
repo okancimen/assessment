@@ -36,9 +36,9 @@ const SUBJECT_FAQS: Record<string, Array<{ q: string; a: string }>> = {
 
 const SUBJECT_BLOG_TAGS: Record<string, string[]> = {
   english:              ['Standardised Testing', 'Scores', 'Parent Guide', 'Grammar Schools'],
-  maths:                ['Standardised Testing', 'PISA', '11+'],
-  'verbal-reasoning':   ['Verbal Reasoning', '11+', 'Grammar Schools', 'Preparation'],
-  'non-verbal-reasoning': ['11+', 'Grammar Schools', 'Preparation', 'Entry Requirements'],
+  maths:                ['Standardised Testing', 'PISA', '11+', '11 Plus', 'Mathematics'],
+  'verbal-reasoning':   ['Verbal Reasoning', '11+', '11 Plus', 'Grammar Schools', 'Preparation'],
+  'non-verbal-reasoning': ['11+', '11 Plus', 'Non-Verbal Reasoning', 'Grammar Schools', 'Preparation'],
 }
 
 const COUNTRY_TAGS = ['Netherlands', 'UAE', 'Canada', 'Australia', 'US Education', 'Dutch Education', 'Dutch Schools', 'ISEE', 'SSAT', 'Private School']
