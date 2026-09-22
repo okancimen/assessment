@@ -171,6 +171,9 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 - [Hertfordshire Grammar Schools](https://eduentry.com/grammar-schools/hertfordshire): GL Assessment, target SAS 111+.
 - [Essex Grammar Schools](https://eduentry.com/grammar-schools/essex): GL Assessment, target SAS 112+.
 - [Gloucestershire Grammar Schools](https://eduentry.com/grammar-schools/gloucestershire): GL Assessment, target SAS 111+.
+- [Berkshire Grammar Schools (Slough)](https://eduentry.com/grammar-schools/berkshire): GL Assessment, target SAS 114–120.
+- [Trafford Grammar Schools](https://eduentry.com/grammar-schools/trafford): GL Assessment, target SAS 116–124. Only grammar schools in Greater Manchester.
+- [Wiltshire Grammar Schools](https://eduentry.com/grammar-schools/wiltshire): GL Assessment, target SAS 111–116. Two Church of England schools in Salisbury.
 
 ## Subject assessments
 
