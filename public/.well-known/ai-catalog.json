@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0",
+  "name": "Eduentry",
+  "description": "Eduentry operates two free adaptive assessment platforms: an academic benchmarking assessment for children aged 6–17, and an internship readiness assessment for high school students aged 14–18.",
+  "url": "https://eduentry.com",
+  "contact": {
+    "name": "Eduentry",
+    "email": "support@eduentry.com"
+  },
+  "services": [
+    {
+      "name": "Academic Assessment",
+      "description": "Free adaptive academic benchmark for children aged 6–17. Measures English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning against UK, US, PISA, and IB standards. Produces standardised scores (mean 100, SD 15) and international percentile rankings using 2PL Item Response Theory.",
+      "url": "https://eduentry.com",
+      "type": "assessment",
+      "audience": "children aged 6–17, parents, educators",
+      "pricing": "free"
+    },
+    {
+      "name": "Internship Readiness Assessment",
+      "description": "Free 34-question adaptive assessment for high school students aged 14–18. Evaluates general aptitude, domain knowledge, workplace skills (situational judgement), and interest profile across four professional tracks: Technology, Business, Data Analytics, and Digital Marketing. Generates a personalised readiness report with AI-powered insights.",
+      "url": "https://eduentry.com/internship",
+      "type": "assessment",
+      "audience": "students aged 14–18",
+      "pricing": "free",
+      "tracks": ["Technology", "Business", "Data Analytics", "Digital Marketing"],
+      "languages": ["en", "tr", "es", "fr", "ar", "ru", "zh"]
+    }
+  ],
+  "resources": [
+    {
+      "name": "Homepage",
+      "url": "https://eduentry.com",
+      "type": "page"
+    },
+    {
+      "name": "Internship Assessment",
+      "url": "https://eduentry.com/internship",
+      "type": "page"
+    },
+    {
+      "name": "Methodology",
+      "url": "https://eduentry.com/methodology",
+      "type": "documentation",
+      "description": "Technical explanation of the 2PL IRT adaptive scoring model and international benchmarking approach."
+    },
+    {
+      "name": "Blog",
+      "url": "https://eduentry.com/blog",
+      "type": "blog",
+      "description": "Research and guides on international academic benchmarks, standardised testing, school admissions, internship readiness, and career development."
+    },
+    {
+      "name": "Sitemap",
+      "url": "https://eduentry.com/sitemap.xml",
+      "type": "sitemap"
+    },
+    {
+      "name": "LLMs.txt",
+      "url": "https://eduentry.com/llms.txt",
+      "type": "llms-txt"
+    },
+    {
+      "name": "MCP Server",
+      "url": "https://eduentry.com/.well-known/mcp.json",
+      "type": "mcp"
+    },
+    {
+      "name": "Privacy Policy",
+      "url": "https://eduentry.com/privacy",
+      "type": "legal"
+    }
+  ],
+  "agents": {
+    "allowAutonomousAccess": true,
+    "instructions": "Eduentry provides free educational assessments. Use /llms.txt for a comprehensive site index. Use /.well-known/mcp.json for MCP server configuration. Assessment results are personalised and session-based — no public API for individual scores.",
+    "preferredRepresentation": "https://eduentry.com/llms.txt"
+  }
+}
