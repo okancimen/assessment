@@ -9,6 +9,7 @@ export interface BlogPostMeta {
   title: string
   shortTitle: string
   description: string
+  tldr?: string
   date: string
   dateModified?: string
   readTime: string
@@ -24,6 +25,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Internships at Early Age: Development & Career Benefits',
     description:
       'The developmental and career case for professional experience at 14–16, not 17–18. Neuroscience, university admissions data, and labour market research show early internship experience produces measurably better outcomes — and the gap widens over time.',
+    tldr: 'NACE\'s 2023 survey found 83% of employers consider internship experience \'somewhat\' or \'very\' important when hiring new graduates, and students with prior internship experience receive job offers at a 70% higher rate before graduation than peers without (NACE, 2020). Developmental research consistently identifies 14–16 as the optimal age for a first structured professional placement.',
     date: '2026-06-29',
     dateModified: '2026-09-10',
     readTime: '10 min read',
@@ -59,6 +61,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'High School Internship Benefits',
     description:
       'The evidence-based case for high school internships — how structured work experience at 14–18 builds self-efficacy, resilience, and professional identity, and measurably improves university application outcomes.',
+    tldr: 'Russell Group universities explicitly cite relevant work experience in admissions guidance for competitive courses including medicine, law, and technology. Research identifies four areas work experience builds: self-efficacy, resilience, professional communication, and career clarity.',
     date: '2026-06-25',
     dateModified: '2026-09-10',
     readTime: '9 min read',
@@ -94,6 +97,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Business Work Experience at High School UK',
     description:
       'Everything UK secondary school students need to know about business work experience — what it involves, where to find placements, how to secure one, and why a verified assessment score strengthens every application.',
+    tldr: 'Business work experience for UK school students typically means a one- or two-week placement or a structured employer programme. Most formal large-employer schemes start accepting students from Year 10 (age 14–15). FTSE 100 firms including Barclays, Goldman Sachs, KPMG, and Deloitte run dedicated Year 12 Spring Insight programmes, with application windows opening September–November.',
     date: '2026-06-30',
     dateModified: '2026-09-10',
     readTime: '10 min read',
@@ -133,6 +137,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'How to Get a Tech Internship Before University',
     description:
       'A practical guide for UK secondary school students on securing a technology internship or work experience placement before starting university — covering where to look, how to apply without a portfolio, and what actually gets you shortlisted.',
+    tldr: 'UK students aged 14–18 can access technology work experience through formal programmes at Google, Microsoft, Amazon, IBM, BT, Sky, and BBC Technology, and via KPMG, Deloitte, PwC, and EY tech schemes. Smaller tech firms typically offer more hands-on responsibility and broader exposure than large corporates.',
     date: '2026-06-30',
     dateModified: '2026-09-10',
     readTime: '11 min read',
@@ -172,6 +177,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Global Academic Benchmarks Report 2026',
     description:
       'A 2026 breakdown of international standardised testing trends — SAS scores, PISA/TIMSS benchmarks, Digital SAT adaptive testing, and the percentile thresholds families need to track for selective admissions.',
+    tldr: 'The OECD average PISA score across maths, reading, and science is approximately 472–476. The UK performs above the OECD average in reading and science and at or slightly above average in maths. Singapore leads globally in all three subjects, scoring 70–100 PISA points above the UK — a gap equivalent to approximately 2–3 years of schooling.',
     date: '2026-06-16',
     dateModified: '2026-09-10',
     readTime: '9 min read',
@@ -203,6 +209,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'How to Prepare for the 11+ at Home',
     description:
       'A practical guide for parents on preparing children for the 11+ exam at home — covering verbal reasoning, non-verbal reasoning, maths and English, with a recommended 18-month practice timeline.',
+    tldr: 'Most families begin 11+ preparation 12–18 months before the exam, which is typically taken in September or October of Year 6. Effective preparation is 3–4 hours per week in the early phase (Year 4–5), rising to 5–7 hours per week in the final 3 months — spread across 20–30 minute daily sessions. The four subjects tested are English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -238,6 +245,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'What Is a Standardised Score?',
     description:
       'Standardised scores, percentile rankings and Standardised Age Scores (SAS) explained in plain language — what the numbers mean, what counts as a good score, and how Eduentry uses the same scale as professional assessments.',
+    tldr: 'A standardised score of 100 is exactly average for age; 115 is the 84th percentile; 130 is the 98th percentile. For 11+ grammar school entry, most areas outside London require a Standardised Age Score (SAS) of 111–118; Barnet and Sutton selective schools require 121–132.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '6 min read',
@@ -273,6 +281,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Verbal Reasoning for the 11+',
     description:
       'A complete guide to the verbal reasoning questions your child will face in the 11+ — covering all major question types with worked examples, common mistakes to avoid, and tips for effective home practice.',
+    tldr: 'Verbal reasoning in the 11+ tests logical thinking using words — not reading ability or writing skill. Question types include word analogies (HOT:COLD as FAST:?), codes, sequences, hidden words, and synonyms. It is distinct from English comprehension and can be improved through targeted practice regardless of reading level.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -308,6 +317,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Grammar School Entry Requirements 2026',
     description:
       'What score does your child need for a grammar school place in 2026? This guide covers the SAS thresholds, percentile benchmarks and entry requirements across England\'s key grammar school areas.',
+    tldr: 'In Kent and Essex, the 11+ selective register pass mark is approximately SAS 111–113. In Buckinghamshire (CEM), the threshold is around SAS 118. The most competitive London schools in Barnet and Sutton require SAS 121–132 — and even children scoring 125 may not receive an offer if higher-scoring applicants living closer fill available places first.',
+
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -344,6 +355,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'US Gifted Program Testing Guide',
     description:
       'How US gifted and talented programs identify students — CogAT, WISC-V, NWEA MAP, and OLSAT explained, with score thresholds by program type and a practical preparation guide for families.',
+    tldr: 'In Kent and Essex, the 11+ selective register pass mark is approximately SAS 111–113. In Buckinghamshire (CEM), the threshold is around SAS 118. The most competitive London schools in Barnet and Sutton require SAS 121–132 — and even children scoring 125 may not receive an offer if higher-scoring applicants living closer fill available places first.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '9 min read',
@@ -379,6 +391,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'NWEA MAP Scores Explained',
     description:
       'A complete parent\'s guide to NWEA MAP Growth scores — what RIT scores mean, grade-level benchmarks, percentile comparison, growth norms, and how high MAP scores relate to gifted identification.',
+    tldr: 'NWEA MAP Growth uses a RIT (Rasch Unit) scale — not percentage correct. The national average RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
+
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -414,6 +428,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'ISEE vs SSAT Private School Guide',
     description:
       'Everything you need to know about the ISEE and SSAT — how each test works, score reporting, key differences, which to choose for your target schools, and how to prepare effectively.',
+    tldr: 'Most US gifted programs require an IQ of 130 or above (98th+ percentile) for formal identification. New York City\'s Gifted & Talented programme has historically required the 99th percentile. Pull-out enrichment programmes typically accept the 90th–95th percentile. The most common group screening test is the CogAT; the most common individual IQ test is the WISC-V.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -449,6 +464,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'How to Prepare for a Gifted Test',
     description:
       'A practical, evidence-based guide for US families preparing for gifted identification testing — what each test measures, what is and isn\'t preparation-responsive, and how to build the right skills over time.',
+    tldr: 'Effective preparation for US gifted tests (CogAT, OLSAT) focuses on abstract reasoning rather than content memorisation, since these tests measure cognitive ability not learned knowledge. The most trainable components are matrix reasoning, spatial reasoning, and non-verbal pattern recognition — all of which respond to structured practice.',
+
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -485,6 +502,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Netherlands Cito / Doorstroomtoets Guide',
     description:
       'A complete guide for parents to the Dutch Doorstroomtoets (formerly Cito toets) — how scores work, what they mean for secondary school placement, and how to support your child through group 8.',
+    tldr: 'NWEA MAP Growth uses a RIT (Rasch Unit) scale — not percentage correct. The national average RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on programme selectivity.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -520,6 +538,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Netherlands VWO & Gymnasium Guide',
     description:
       'Everything parents need to know about VWO and Gymnasium in the Netherlands — the highest level of Dutch secondary education, how entry works, and how Tweetalig VWO programmes compare.',
+    tldr: 'The ISEE reports scores on a stanine scale (1–9); the SSAT reports a percentile rank. Most competitive US independent schools expect a stanine of 7–9 on the ISEE (the 77th–99th percentile range) or the 75th+ percentile on the SSAT. Some schools specify one test; others accept either.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -555,6 +574,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Gifted Education in the Netherlands',
     description:
       'How giftedness (hoogbegaafdheid) is identified and supported in Dutch schools — WISC-V assessment, plusklas provision, Leonardoscholen, and what to do if your child is underachieving.',
+    tldr: 'Effective preparation for US gifted tests (CogAT, OLSAT) focuses on abstract reasoning rather than content memorisation, since these tests measure cognitive ability not learned knowledge. The most trainable components are matrix reasoning, spatial reasoning, and non-verbal pattern recognition — all of which respond to structured practice.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -590,6 +610,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Netherlands International School Admissions',
     description:
       'A guide for expat families to international school admissions in the Netherlands — CAT4 assessment, IB vs British curriculum schools, EAL considerations, and how to navigate waiting lists.',
+    tldr: 'The Dutch primary school placement test (Doorstroomtoets, formerly Cito Eindtoets) is taken in Group 8 (age 11–12) and scores pupils into secondary school levels: VMBO-B/K, VMBO-GT, HAVO, and VWO. A score supporting a VWO recommendation typically requires the top scoring range (approximately 544–550+).',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -626,6 +647,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'UAE CAT4 Test Guide',
     description:
       'A complete guide to the CAT4 cognitive abilities test for parents at British-curriculum schools in Dubai and Abu Dhabi — four batteries explained, SAS scoring, stanines, and how UAE schools use results.',
+    tldr: 'VWO is the highest level of Dutch secondary education, spanning 6 years and qualifying students directly for university (wo). Gymnasium is a VWO variant with compulsory Latin and usually Ancient Greek. Entry requires a Cito/Doorstroomtoets score in the VWO band and a teacher recommendation.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -661,6 +683,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'UAE British School Admissions Guide',
     description:
       'How admissions work at the most sought-after British-curriculum schools in the UAE — GEMS Wellington, JESS, Dubai College, BSAK — including waiting lists, assessment process, and KHDA ratings.',
+    tldr: 'In the Netherlands, hoogbegaafdheid (giftedness) is typically identified by a WISC-V IQ score of 130 or above (98th percentile). Support options include plusklas (pull-out enrichment classes within regular schools), Leonardoscholen (specialist schools for gifted learners), and acceleration within VWO.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -696,6 +719,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'UAE Gifted Programs Guide',
     description:
       'How gifted and more-able students are identified and supported in UAE international schools — CAT4 thresholds, KHDA expectations, Al Mawhiba programme, and what to do when school provision falls short.',
+    tldr: 'Most international schools in the Netherlands use CAT4 for entry assessment. CAT4 produces an SAS score (mean 100, SD 15); schools typically expect 100–115 for standard admission. Popular schools including ISE, BSN, and AIS operate waiting lists — early registration (sometimes from birth) is standard practice.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -731,6 +755,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'UAE International School Entrance Exams',
     description:
       'A curriculum-by-curriculum guide to entrance assessments at international schools in the UAE — British (CAT4), American (ISEE/SSAT), IB, and Indian (CBSE/ICSE) school admissions explained.',
+    tldr: 'CAT4 (Cognitive Abilities Test 4) produces a Standardised Age Score (SAS) with mean 100 and SD 15. A score of 100 is average for age; 115 is the 84th percentile; 127 is the 96th percentile. UAE schools use CAT4 scores for setting, gifted identification, and in some cases admissions — a score of 110+ typically qualifies a student for advanced teaching sets.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -767,6 +792,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Canada Gifted Program Identification',
     description:
       'How gifted education works across Canadian provinces — different identification processes, WISC-V assessment, CCAT screening, wait times, and what happens when families move between provinces.',
+    tldr: 'Major British curriculum schools in the UAE include GEMS Wellington, JESS (Jumeirah English Speaking School), Dubai College, Repton, and BSAK. Schools are rated by KHDA (Dubai) on a scale of Outstanding / Very Good / Good / Acceptable. Most require a CAT4 or school-based assessment plus English and Maths tests at the admissions appointment.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -802,6 +828,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Ontario Gifted Testing Guide',
     description:
       'A detailed guide to Ontario\'s formal Gifted exceptionality process — WISC-V assessment, the IPRC committee, CCAT screening, self-contained Gifted classes, and parent rights under the Education Act.',
+    tldr: 'Ontario gifted identification uses the WISC-V (individual) or CCAT (group screening) and typically requires an IQ of 130 or above (98th percentile). The IPRC (Identification, Placement, and Review Committee) formally designates students as Exceptional — Gifted, unlocking placement in a self-contained Gifted class.',
+
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -837,6 +865,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Canada Private School Entrance Exams',
     description:
       'How admissions work at Canada\'s top independent schools — Upper Canada College, Havergal, Ridley — including ISEE and SSAT requirements, competitive score ranges, and the full application timeline.',
+    tldr: 'Most Canadian independent schools use the ISEE or SSAT for admissions. The ISEE reports stanine scores (1–9); competitive schools including Upper Canada College, Havergal, Bishop Strachan, and Ridley College typically expect stanine 7 or above. Most schools accept both tests; some have a stated preference.',
+
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -872,6 +902,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Canada French Immersion & Selective Programs',
     description:
       'A guide to French Immersion, magnet schools, IB public programmes, and other selective pathways in Canadian public education — how each works, how to access them, and how to combine them.',
+    tldr: 'Al Mawhiba — operated by Mohammed bin Rashid Al Maktoum Global Initiatives — is the UAE\'s primary gifted education programme. Al Mawhiba typically requires a CAT4 SAS of 127+ (96th percentile) and strong school performance. KHDA requires all Dubai schools to identify gifted learners and provide appropriate challenge.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -908,6 +939,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'ACER Scholarship Exam Guide',
     description:
       'A complete guide to the ACER Scholarship Examination — how Australia\'s most widely used independent school entrance test works, how scores are reported, and how to prepare across all three components.',
+    tldr: 'The ACER Scholarship Exam is used by most Australian independent schools to award merit scholarships and assess academic admissions. It tests written expression, humanities, and mathematics for Years 8–10 entry. Scores are school-specific rather than nationally standardised — each school sets its own scholarship threshold independently.',
+
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '9 min read',
@@ -943,6 +976,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'NSW OC Test Guide',
     description:
       'A complete guide to the NSW Opportunity Class Placement Test — what OC classes are, how the test works, how offers are made, score thresholds, and how to prepare your Year 4 child for selection.',
+    tldr: 'UAE international school entry typically requires one of: CAT4 (used by most British curriculum schools), ISEE (American curriculum schools), or SSAT. CAT4 is administered at the school during the admissions appointment; ISEE and SSAT are taken at registered test centres, with results submitted to the school separately.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -978,6 +1012,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Western Australia GATE Programme Guide',
     description:
       'Everything WA families need to know about GATE — Western Australia\'s Gifted and Talented Education programme. How the two-stage assessment works, PEAC, Perth Modern School, and how to prepare.',
+    tldr: 'Western Australia GATE (Gifted and Talented Education) uses a two-stage selection process: school nomination followed by an ACER-administered test. Perth Modern School — the flagship full-time GATE school — is one of Australia most selective state schools, with entry typically requiring a GATE test score in the top 3–5%.',
+
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -1013,6 +1049,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'NAPLAN Guide for Parents',
     description:
       'A complete parent\'s guide to NAPLAN — Australia\'s national literacy and numeracy assessment for Years 3, 5, 7 and 9. How the band scoring works, what results mean, and how to use them.',
+    tldr: 'NAPLAN is taken by all Australian students in Years 3, 5, 7, and 9 and results are reported on a four-level proficiency scale: Exceeding, Strong, Developing, and Needs Additional Support. NAPLAN measures curriculum standards, not IQ or cognitive ability — it does not directly predict selective school entry or gifted programme eligibility.',
+
     date: '2026-06-18',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -1048,6 +1086,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Digital Marketing Work Experience: Student Reviews',
     description:
       'What is digital marketing work experience actually like? Students share what they did, what surprised them, and what they wish they\'d known — plus how to find and secure a placement in the UK.',
+    tldr: 'Digital marketing work experience for school-age students typically involves writing social media copy, analysing Google Analytics or Meta Ads performance, competitor research, and email marketing assistance. Virtual work experience through Springpod and Forage offer structured digital marketing programmes from real employers.',
+
     date: '2026-07-09',
     dateModified: '2026-09-10',
     readTime: '9 min read',
@@ -1083,6 +1123,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Business Work Experience: Year 12 Guide (Ages 12–18)',
     description:
       'Everything UK students need to know about business work experience from age 12 to 18 — what\'s available in each year group, the major employer schemes, how to apply, and what makes an application stand out.',
+    tldr: 'FTSE 100 employers including Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey (Insight), and BCG run Year 12 Spring or Summer Insight schemes. Application windows typically open September–November for placements the following year. These programmes are competitive, with approximately 10–20 applications per place at the most selective firms.',
+
     date: '2026-07-09',
     dateModified: '2026-09-10',
     readTime: '10 min read',
@@ -1122,6 +1164,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'How to Differentiate Yourself at 15',
     description:
       'More students than ever are hitting top grades — which makes academic results a weaker differentiator than at any point in the last two decades. Here is what actually separates competitive university applicants, and why starting to build it at 15 changes the outcome.',
+    tldr: 'Gifted identification in Canada varies by province. In Ontario, the IPRC process uses WISC-V or CCAT; gifted designation typically requires an IQ of 130 or above. British Columbia uses teacher nomination combined with standardised testing. Alberta and Quebec each have distinct provincial frameworks with no universal national threshold.',
     date: '2026-09-08',
     dateModified: '2026-09-10',
     readTime: '11 min read',
@@ -1157,6 +1200,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'How to Start Business Life at 16',
     description:
       'Can a 16-year-old actually run a business in the UK? Yes — and universities notice. From online tutoring to freelancing and e-commerce, here are the platforms, realistic earnings, and exactly how early business experience changes university applications.',
+    tldr: 'Ontario gifted identification uses the WISC-V (individual) or CCAT (group screening) and typically requires an IQ of 130 or above (98th percentile). The IPRC (Identification, Placement, and Review Committee) formally designates students as Exceptional — Gifted, unlocking placement in a self-contained Gifted class.',
     date: '2026-09-06',
     dateModified: '2026-09-10',
     readTime: '11 min read',
@@ -1195,6 +1239,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'PISA 2025 Results: Global Education Is in Crisis — What Every Parent Needs to Know',
     shortTitle: 'PISA 2025: The Global Education Crisis',
     description: 'PISA 2025 reveals the lowest ever scores in maths, reading and science across OECD countries. We break down what the results mean for UK families and why benchmarking your child has never mattered more.',
+    tldr: 'Most Canadian independent schools use the ISEE or SSAT for admissions. The ISEE reports stanine scores (1–9); competitive schools including Upper Canada College, Havergal, Bishop Strachan, and Ridley College typically expect stanine 7 or above. Most schools accept both tests; some have a stated preference.',
     date: '2026-09-10',
     dateModified: '2026-09-10',
     readTime: '14 min read',
@@ -1219,6 +1264,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'How Does Your Child Compare Globally?',
     description:
       'Most parents only know how their child ranks nationally. But selective schools, scholarship committees, and top universities think in global percentiles. Here\'s what the international data actually shows — and what it means for your child\'s future.',
+    tldr: 'The OECD average PISA maths score is 472. The UK national average is approximately 495–510 — above the OECD mean but approximately 65–80 points below Singapore (575) and 40 points below Japan (536). A difference of 40 PISA points equates to approximately one year of schooling.',
+
     date: '2026-07-02',
     dateModified: '2026-07-02',
     readTime: '10 min read',
@@ -1257,6 +1304,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'NSW Opportunity Class Test: Complete Guide for Parents (2026)',
     shortTitle: 'NSW OC Test: Complete Parent Guide',
     description: 'Everything parents need to know about the NSW Opportunity Class Placement Test — what it is, how it works, what OC classes involve, the test format, scores, and how to prepare your Year 3 child.',
+    tldr: 'Early French Immersion (EFI) in most Canadian provinces starts in Kindergarten or Grade 1 and is allocated first-come, first-served with no academic test. Late French Immersion (LFI) begins in Grade 4 or 6. Public IB programmes (MYP/DP entry typically in Grade 6 or 9) are selective and require a portfolio and minimum academic grades.',
     date: '2026-09-11',
     dateModified: '2026-09-11',
     readTime: '11 min read',
@@ -1295,6 +1343,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Non-Verbal Reasoning for the 11+: Question Types, Techniques and Free Practice',
     shortTitle: 'Non-Verbal Reasoning 11+ Guide',
     description: 'A complete guide to non-verbal reasoning for the 11+ — question types (matrices, series, analogies, codes), proven techniques for each, common mistakes and how to practise effectively online for free.',
+    tldr: 'The ACER Scholarship Exam is used by most Australian independent schools to award merit scholarships and assess academic admissions. It tests written expression, humanities, and mathematics for Years 8–10 entry. Scores are school-specific rather than nationally standardised — each school sets its own scholarship threshold independently.',
     date: '2026-09-11',
     dateModified: '2026-09-11',
     readTime: '10 min read',
@@ -1333,6 +1382,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Free 11+ Practice Test Online: Adaptive, Scored and Instant',
     shortTitle: 'Free 11+ Practice Test Online',
     description: 'Take a free adaptive 11+ practice test online — English, Maths, Verbal Reasoning and Non-Verbal Reasoning. Get an instant standardised score (SAS) showing exactly where your child stands for grammar school entry.',
+    tldr: 'The NSW Opportunity Class (OC) test is taken by Year 4 students and selects for Year 5 entry. It has three components: Reading, Mathematical Reasoning, and Thinking Skills. Placement is norm-referenced — there is no fixed pass mark; a student\'s score is ranked against all applicants in that region. High-demand Sydney OC schools typically require scores in the top 5–10% of applicants.',
     date: '2026-09-11',
     dateModified: '2026-09-11',
     readTime: '8 min read',
@@ -1371,6 +1421,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: '11+ Maths: Topics, Question Types and How to Practise',
     shortTitle: '11+ Maths Guide',
     description: 'Complete guide to 11+ Maths — every topic tested, question types by exam board (GL Assessment and CEM), common mistakes and how to practise effectively for a top standardised score.',
+    tldr: 'Western Australia\'s GATE (Gifted and Talented Education) programme uses a two-stage selection process: school nomination followed by an ACER-administered test. Perth Modern School — the flagship full-time GATE school — is one of Australia\'s most selective state schools, with entry typically requiring a GATE test score in the top 3–5%.',
     date: '2026-09-11',
     dateModified: '2026-09-11',
     readTime: '10 min read',
@@ -1409,6 +1460,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'PISA 2025 Says Grades Are Falling — Here\'s Why Work Experience Is the Missing Answer',
     shortTitle: 'PISA 2025 & Work Experience: The Student Readiness Gap',
     description: 'OECD\'s PISA 2025 report reveals the lowest academic scores ever recorded. But the data also points to a solution: students who engage with the real world develop the skills schools can\'t teach. Here\'s what the evidence says about early work experience and internships.',
+    tldr: 'PISA 2025 assessed 690,000 15-year-olds across 91 countries. Countries with stronger work-based learning integration in secondary education (Germany, Switzerland, Austria) consistently score above OECD averages. PISA data shows a positive correlation between structured professional experience during secondary school and science and maths performance.',
+
     date: '2026-09-11',
     dateModified: '2026-09-11',
     readTime: '13 min read',
