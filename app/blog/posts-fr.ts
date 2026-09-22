@@ -8,6 +8,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Stages au lycée : bénéfices et université',
     description:
       'Une analyse fondée sur des données des stages au lycée — comment l\'expérience professionnelle structurée entre 14 et 18 ans développe la confiance, la résilience et l\'identité professionnelle, et améliore les candidatures universitaires.',
+    tldr: 'Les universités du Groupe Russell citent explicitement l\'expérience professionnelle dans leurs guides d\'admission pour les filières compétitives (médecine, droit, technologie). La recherche identifie quatre domaines que développent les stages : l\'auto-efficacité, la résilience, la communication professionnelle et la clarté de carrière.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '9 min de lecture',
@@ -44,6 +46,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Expérience professionnelle en entreprise au lycée',
     description:
       'Tout ce que les lycéens doivent savoir sur l\'expérience professionnelle en entreprise — ce que cela implique, où trouver un stage, comment l\'obtenir et comment un score d\'évaluation vérifié renforce chaque candidature.',
+    tldr: 'L\'expérience professionnelle pour les lycéens au Royaume-Uni consiste généralement en un stage d\'une à deux semaines ou un programme structuré chez un employeur. La plupart des grands employeurs acceptent des candidatures dès la Year 10 (14–15 ans). Des entreprises du FTSE 100 comme Barclays, Goldman Sachs, KPMG et Deloitte proposent des programmes Spring Insight pour la Year 12, avec des candidatures ouvertes en septembre–novembre.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '10 min de lecture',
@@ -80,6 +84,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Comment se démarquer à 15 ans',
     description:
       'Un guide pratique pour les lycéens qui veulent se distinguer dans leurs candidatures universitaires et professionnelles — bien avant que leurs pairs ne commencent à y penser.',
+    tldr: 'Les universités utilisent les activités extrascolaires et l\'expérience professionnelle pour distinguer les candidats avec des notes similaires. À 15–16 ans, les différenciateurs les plus crédibles pour les dossiers universitaires compétitifs sont : les stages structurés, les concours disciplinaires, les projets indépendants avec des résultats mesurables et les évaluations tierces fournissant des preuves vérifiables d\'aptitude.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '8 min de lecture',
@@ -116,6 +122,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Créer son entreprise à 16 ans',
     description:
       'Comment lancer une première activité entrepreneuriale à 16 ans — de l\'idée à la première vente, avec des conseils sur les aspects légaux, le financement et la gestion du temps avec le lycée.',
+    tldr: 'Au Royaume-Uni, toute personne de 16 ans peut légalement exercer comme auto-entrepreneur sans créer de société. Les moins de 18 ans ne peuvent pas être directeur d\'entreprise, signer des contrats contraignants de façon indépendante, ni emprunter d\'argent à leur nom. L\'inscription à l\'HMRC est requise dès que les revenus annuels dépassent l\'abattement commercial de 1 000 livres.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '9 min de lecture',
@@ -152,6 +160,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Comment se compare votre enfant à l\'échelle mondiale ?',
     description:
       'Un guide pour les parents sur les comparaisons académiques internationales — comment interpréter les scores PISA, les référentiels britanniques et les niveaux IB pour comprendre la position de votre enfant.',
+    tldr: 'La moyenne PISA en mathématiques de l\'OCDE est de 472 points. La France a obtenu 474 points en maths lors de PISA 2022 — légèrement au-dessus de la moyenne OCDE, mais environ 100 points en dessous de Singapour (575). Une différence de 40 points PISA équivaut à environ un an de scolarisation.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '8 min de lecture',
@@ -187,6 +197,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Trouver un stage de qualité lycéen en France',
     description:
       'Guide complet pour les lycéens français qui cherchent un stage significatif — plateformes, candidatures directes, réseaux, et comment se démarquer sans expérience préalable.',
+    tldr: 'Les principales voies pour trouver un stage en France en tant que lycéen : candidature spontanée auprès de PME locales (taux d\'acceptation le plus élevé), plateformes spécialisées (HelloWork, Indeed), PFMP dans les lycées professionnels et journées d\'immersion chez de grandes entreprises. En France, une convention de stage signée entre l\'élève, l\'école et l\'entreprise est obligatoire pour tout stage.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '10 min de lecture',
@@ -222,6 +234,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'CV de stage lycéen : guide pratique',
     description:
       'Comment rédiger un CV convaincant pour un stage quand on est lycéen — structure, contenu, formulations, et comment compenser le manque d\'expérience professionnelle par d\'autres atouts.',
+    tldr: 'Le CV de stage d\'un lycéen de 16 ans doit tenir sur une page et inclure : coordonnées, formation (lycée, classe, mention), matières et projets pertinents, compétences (langues, logiciels) et professeurs comme références. Sans expérience professionnelle, mettre en avant les projets scolaires et les activités extrascolaires est l\'approche la plus efficace.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '8 min de lecture',
@@ -257,6 +271,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Entretien de stage lycéen : conseils',
     description:
       'Comment se préparer et réussir un entretien pour un stage en tant que lycéen — les questions les plus fréquentes, les erreurs à éviter, et comment paraître confiant sans surjouer.',
+    tldr: 'Les questions les plus fréquentes lors d\'un entretien de stage lycéen : \'Présentez-vous\', \'Pourquoi ce secteur ?\' et \'Comment travaillez-vous en équipe ?\' Les candidats qui ont préparé des questions précises sur l\'entreprise obtiennent systématiquement de meilleures appréciations.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '7 min de lecture',
@@ -292,6 +308,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Stage marketing digital pour lycéens',
     description:
       'Comment obtenir un stage en marketing digital en tant que lycéen — ce que font les équipes marketing, quelles compétences développer, où postuler et comment convaincre sans expérience.',
+    tldr: 'Un stage en marketing digital pour lycéens comprend généralement : rédaction de contenus pour les réseaux sociaux, analyse de performance sur Google Analytics ou Meta Ads, recherche concurrentielle et aide à l\'emailing. Des plateformes comme Springpod et Forage proposent des programmes de marketing digital virtuels et structurés auprès de vrais employeurs.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '9 min de lecture',
@@ -327,6 +345,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Stage data et analyse pour lycéens',
     description:
       'Guide pour les lycéens attirés par la data science et l\'analyse de données — quelles compétences acquérir, où trouver un premier stage, et comment ce secteur ouvre des portes exceptionnelles.',
+    tldr: 'Les outils les plus utilisés en stage data sont Excel, SQL, Python et Power BI. Les lycéens sans base en programmation peuvent accéder à des stages data via des programmes virtuels (Forage — Accenture, JPMorgan) ou par candidature directe auprès de start-ups et de PME.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '8 min de lecture',
@@ -362,6 +382,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'IA et futur de l\'emploi pour les jeunes',
     description:
       'Comment l\'intelligence artificielle va transformer le marché du travail d\'ici 2030 — quels métiers sont menacés, lesquels vont émerger, et quelles compétences les lycéens doivent développer dès maintenant.',
+    tldr: 'Le Forum Économique Mondial estime que l\'IA automatisera entre 25 et 40 % des tâches actuelles d\'ici 2030, tout en créant un solde net positif d\'emplois. Les compétences les plus recherchées dans un marché transformé par l\'IA sont la pensée critique, la résolution de problèmes complexes et la communication — aucune ne pouvant être automatisée.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '10 min de lecture',
@@ -397,6 +419,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Stage d\'été lycéen France 2026',
     description:
       'Tout ce qu\'il faut savoir pour trouver et réussir un stage d\'été en tant que lycéen en France — calendrier, secteurs, candidatures et comment valoriser l\'expérience pour la suite.',
+    tldr: 'Les stages d\'été pour lycéens en France se déroulent de juillet à août. Une convention de stage tripartite (lycéen, établissement, entreprise) est obligatoire — sans elle, le stage est illégal. Les PME locales et les associations sont les employeurs les plus accessibles ; les grandes entreprises ouvrent leurs candidatures dès septembre–novembre pour l\'été suivant.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '8 min de lecture',
@@ -432,6 +456,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Stage finance et banque pour lycéens',
     description:
       'Guide pour les lycéens attirés par la finance et la banque — ce que font vraiment les équipes financières, quelles compétences développer, et comment postuler à des stages dans ce secteur sélectif.',
+    tldr: 'Les principales banques françaises qui accueillent des lycéens en stage sont BNP Paribas, Société Générale, Crédit Agricole et AXA. Les dossiers sont attendus 3 à 6 mois à l\'avance. La concurrence est forte — souvent 15 à 20 candidatures par place dans les grandes banques.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '9 min de lecture',
@@ -467,6 +493,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Scores PISA France : ce que ça veut dire',
     description:
       'Analyse des résultats PISA 2022 de la France — où se situe la France par rapport aux autres pays, quelles compétences sont évaluées, et comment interpréter ces résultats pour votre enfant.',
+    tldr: 'La France a obtenu en 2022 une moyenne PISA de 474 en mathématiques, 474 en lecture et 487 en sciences — légèrement en dessous de la moyenne OCDE dans les deux premières matières. La France se classe derrière l\'Estonie, le Japon, la Corée du Sud et le Canada dans les trois domaines.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '9 min de lecture',
@@ -502,6 +530,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: 'Grandes écoles vs université : guide d\'orientation',
     description:
       'Comment choisir entre les grandes écoles et l\'université en France — différences de cursus, de culture, de débouchés professionnels, et comment se préparer dès le lycée pour les deux voies.',
+    tldr: 'Les grandes écoles françaises (Polytechnique, HEC, ENS) comptent parmi les établissements les plus sélectifs au monde — le taux d\'admission à l\'X est inférieur à 5 %. L\'accès se fait par concours après deux ans de classes préparatoires (CPGE). Les universités sont moins sélectives à l\'entrée mais peuvent être très compétitives dans certaines filières (médecine PASS, droit).',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '10 min de lecture',
@@ -537,6 +567,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'PISA 2025 : Les Notes Chutent Partout — Pourquoi l\'Expérience Professionnelle est la Réponse',
     shortTitle: 'PISA 2025 et Expérience Professionnelle',
     description: 'Le rapport PISA 2025 de l\'OCDE révèle les résultats académiques les plus bas jamais enregistrés. Mais les données pointent aussi vers une solution : les élèves qui s\'engagent dans le monde réel développent les compétences que les écoles ne peuvent pas enseigner.',
+    tldr: 'PISA 2025 a évalué 690 000 élèves de 15 ans dans 91 pays. Les pays qui intègrent davantage l\'apprentissage en milieu professionnel dans l\'enseignement secondaire (Allemagne, Suisse, Autriche) obtiennent systématiquement des scores supérieurs aux moyennes OCDE. Les données PISA montrent une corrélation positive entre l\'expérience professionnelle structurée au lycée et les performances en sciences et en mathématiques.',
+
     date: '2026-09-11',
     readTime: '13 min de lecture',
     tags: ['Work Experience', 'Internship', 'Student Skills', 'Future of Education', 'Career Development'],
@@ -566,6 +598,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'PISA 2025 : Crise de l\'Éducation Mondiale — Ce Que Chaque Parent Doit Savoir',
     shortTitle: 'PISA 2025 : La Crise de l\'Éducation Mondiale',
     description: 'PISA 2025 révèle les scores les plus bas jamais enregistrés en mathématiques, lecture et sciences dans les pays de l\'OCDE. Nous décryptons ce que ces résultats signifient pour les familles et pourquoi évaluer son enfant n\'a jamais été aussi crucial.',
+    tldr: 'PISA 2025 a enregistré les moyennes les plus basses en mathématiques, lecture et sciences depuis la création du programme à l\'échelle des pays OCDE. PISA 2025 révèle que les élèves qui utilisent l\'IA pour des tâches spécifiques (résumer, rédiger, rechercher) obtiennent environ 20 points de moins en sciences que ceux qui ne l\'utilisent pas — l\'équivalent d\'environ un an de scolarisation.',
+
     date: '2026-09-10',
     dateModified: '2026-09-10',
     readTime: '12 min de lecture',
@@ -588,6 +622,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'PISA, c\'est quoi ? Résultats 2025, la question sur « PISA 2026 » et le lien avec la réussite professionnelle',
     shortTitle: 'PISA : résultats 2025 et réussite professionnelle',
     description: 'Qu\'est-ce que PISA, comment ça marche, que mesure-t-il ? PISA 2026 existe-t-il ? Et surtout : la performance au PISA prédit-elle le succès dans la vie professionnelle ? Une analyse honnête d\'un éducateur expérimenté.',
+    tldr: 'PISA (Programme International pour le Suivi des Acquis des élèves) évalue les compétences de jeunes de 15 ans dans 91 pays tous les trois ans. Il mesure les mathématiques, la lecture et les sciences ; la moyenne OCDE est d\'environ 472–476 points par matière. Les compétences mesurées par PISA — raisonnement quantitatif, compréhension en lecture, résolution de problèmes — correspondent aux aptitudes les plus demandées par les employeurs.',
+
     date: '2026-09-21',
     readTime: '11 min de lecture',
     tags: ['PISA', 'Développement professionnel', 'Évaluation académique', 'Stage', 'Guide parents'],

@@ -8,6 +8,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Prácticas tempranas: desarrollo y ventaja profesional',
     description:
       'La importancia del desarrollo cognitivo y profesional de las prácticas a los 14–16 años. La neurociencia, los datos de admisión universitaria y la investigación del mercado laboral demuestran que la experiencia profesional temprana produce resultados mediblemente mejores que se acumulan con el tiempo.',
+    tldr: 'La encuesta NACE de 2023 revela que el 83% de los empleadores considera la experiencia en prácticas \'importante\' o \'muy importante\' al contratar nuevos graduados, y los estudiantes con prácticas previas reciben ofertas de empleo a una tasa un 70% más alta antes de graduarse (NACE, 2020). La investigación sobre el desarrollo identifica los 14–16 años como la franja óptima para una primera práctica profesional.',
+
     date: '2026-06-29',
     dateModified: '2026-09-10',
     readTime: '10 min de lectura',
@@ -44,6 +46,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Prácticas en el instituto: beneficios y acceso universitario',
     description:
       'Una evaluación basada en evidencias de las prácticas en el instituto — cómo la experiencia laboral estructurada entre los 14 y los 18 años desarrolla la autoeficacia, la resiliencia y la identidad profesional, y mejora mediblemente los resultados de las solicitudes universitarias.',
+    tldr: 'Las universidades del Grupo Russell citan explícitamente la experiencia laboral en sus guías de admisión para carreras competitivas como medicina, derecho y tecnología. La investigación identifica cuatro áreas que desarrollan las prácticas: autoeficacia, resiliencia, comunicación profesional y claridad de carrera.',
+
     date: '2026-06-25',
     dateModified: '2026-09-10',
     readTime: '9 min de lectura',
@@ -80,6 +84,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Experiencia empresarial en el instituto',
     description:
       'Todo lo que los estudiantes de instituto en el Reino Unido necesitan saber sobre la experiencia laboral en empresas — qué implica, dónde encontrar una colocación, cómo conseguirla y cómo una puntuación de evaluación verificada refuerza cada solicitud.',
+    tldr: 'La experiencia laboral empresarial para estudiantes de instituto en el Reino Unido suele consistir en una práctica de una o dos semanas o un programa estructurado de empresa. La mayoría de los grandes empleadores empiezan a aceptar estudiantes desde Year 10 (14–15 años). Empresas del FTSE 100 como Barclays, Goldman Sachs, KPMG y Deloitte ofrecen programas Spring Insight para Year 12, con convocatorias abiertas en septiembre–noviembre.',
+
     date: '2026-06-30',
     dateModified: '2026-09-10',
     readTime: '10 min de lectura',
@@ -120,6 +126,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Cómo conseguir prácticas tecnológicas antes de la universidad',
     description:
       'Una guía práctica para que los estudiantes de instituto consigan prácticas tecnológicas o una colocación de experiencia laboral antes de empezar la universidad — dónde buscar, cómo solicitar sin portfolio y qué hace que realmente te incluyan en la lista de candidatos.',
+    tldr: 'Los estudiantes de 14 a 18 años en el Reino Unido pueden acceder a experiencia laboral en tecnología a través de programas de Google, Microsoft, Amazon, IBM, BT, Sky y BBC Technology, así como de KPMG, Deloitte, PwC y EY. Las empresas tecnológicas más pequeñas suelen ofrecer mayor responsabilidad práctica que las grandes corporaciones.',
+
     date: '2026-06-30',
     dateModified: '2026-09-10',
     readTime: '11 min de lectura',
@@ -160,6 +168,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: '¿Cómo se compara tu hijo a nivel mundial?',
     description:
       'La mayoría de los padres solo saben cómo se sitúa su hijo a nivel nacional. Pero los colegios selectivos, los comités de becas y las mejores universidades piensan en percentiles globales. Aquí está lo que muestran realmente los datos internacionales — y lo que significa para el futuro de tu hijo.',
+    tldr: 'La puntuación media PISA en matemáticas de la OCDE es 472. España obtuvo una media de 474 en matemáticas en PISA 2022 — ligeramente por encima de la media OCDE, pero aproximadamente 100 puntos por debajo de Singapur (575). Una diferencia de 40 puntos PISA equivale a aproximadamente un año de escolarización.',
+
     date: '2026-07-02',
     dateModified: '2026-07-02',
     readTime: '10 min de lectura',
@@ -200,6 +210,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Cómo diferenciarte a los 15',
     description:
       'Más estudiantes que nunca obtienen las mejores notas, lo que convierte los resultados académicos en el diferenciador más débil de las últimas dos décadas. Qué distingue realmente las solicitudes universitarias competitivas y por qué empezar a los 15 cambia el resultado.',
+    tldr: 'Las universidades utilizan actividades extracurriculares y experiencia laboral para distinguir entre candidatos con notas similares. A los 15–16 años, los diferenciadores más sólidos para solicitudes universitarias competitivas son: prácticas estructuradas, competiciones por materias, proyectos independientes con resultados medibles y evaluaciones de terceros que aporten evidencia verificable de aptitud.',
+
     date: '2026-09-08',
     dateModified: '2026-09-10',
     readTime: '11 min de lectura',
@@ -236,6 +248,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Experiencia laboral en empresa: guía por edades (12–18)',
     description:
       'Todo lo que los estudiantes del Reino Unido necesitan saber sobre experiencia laboral en empresa de los 12 a los 18 años — qué está disponible en cada curso, los principales programas de empleadores, cómo solicitar y qué hace destacar una solicitud.',
+    tldr: 'Empresas del FTSE 100 como Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey Insight y BCG ofrecen programas Spring o Summer Insight para alumnos de Year 12. Las convocatorias se abren en septiembre–noviembre para plazas del año siguiente. Son muy competitivos — con aproximadamente 10–20 solicitudes por plaza en las empresas más selectivas.',
+
     date: '2026-07-09',
     dateModified: '2026-09-10',
     readTime: '10 min de lectura',
@@ -270,6 +284,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Cómo conseguir prácticas de marketing digital siendo estudiante de instituto',
     shortTitle: 'Prácticas de marketing digital para estudiantes',
     description: 'Guía práctica para estudiantes de instituto que quieren hacer prácticas en marketing digital — dónde buscar, qué habilidades demostrar, cómo construir un portfolio mínimo y por qué empezar antes de los 17 marca la diferencia.',
+    tldr: 'Las prácticas de marketing digital para estudiantes de instituto incluyen habitualmente: redacción de contenidos para redes sociales, análisis de datos en Google Analytics o Meta Ads, investigación de competidores y asistencia en campañas de email. Plataformas como Springpod y Forage ofrecen programas virtuales estructurados de marketing digital.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '9 min de lectura',
@@ -287,6 +303,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Prácticas en analítica de datos para estudiantes: guía completa',
     shortTitle: 'Prácticas en analítica de datos: guía para estudiantes',
     description: 'Todo lo que un estudiante de instituto necesita saber para conseguir prácticas en analítica de datos — qué se hace realmente, qué habilidades valorar, dónde buscar y cómo demostrar aptitud cuantitativa sin tener experiencia previa.',
+    tldr: 'Las herramientas más utilizadas en prácticas de análisis de datos son Excel, SQL, Python y Power BI. Los estudiantes sin experiencia en programación pueden acceder a prácticas en datos a través de programas virtuales como Forage (Accenture, JPMorgan) o mediante candidatura directa a startups y pymes.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '10 min de lectura',
@@ -304,6 +322,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Cómo escribir un CV para prácticas con 16 años (sin experiencia previa)',
     shortTitle: 'CV para prácticas con 16 años',
     description: 'Guía paso a paso para escribir un CV de prácticas con 16 años cuando no se tiene experiencia laboral previa — qué incluir, cómo estructurarlo, qué errores evitar y cómo compensar la falta de experiencia con habilidades demostrables.',
+    tldr: 'El currículum para prácticas de un estudiante de 16 años debe ocupar una sola página e incluir: datos de contacto, formación (centro, curso, nota media), materias y proyectos relevantes, competencias (idiomas, software) y profesores como referencias. Sin experiencia laboral, destacar proyectos escolares y actividades extracurriculares es el enfoque más efectivo.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '8 min de lectura',
@@ -321,6 +341,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Cómo superar una entrevista de prácticas siendo estudiante: guía completa',
     shortTitle: 'Cómo superar una entrevista de prácticas',
     description: 'Todo lo que un estudiante necesita saber para preparar y superar una entrevista de prácticas — las preguntas más frecuentes, cómo estructurar respuestas sin experiencia previa, los errores que cuestan la plaza y cómo diferenciarse el día de la entrevista.',
+    tldr: 'Las preguntas más frecuentes en entrevistas de prácticas son: \'Preséntate\', \'¿Por qué este sector?\' y \'¿Cómo trabajas en equipo?\' Los candidatos que investigan la empresa con antelación y llegan con preguntas concretas obtienen sistemáticamente mejores evaluaciones.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '9 min de lectura',
@@ -338,6 +360,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Prácticas de verano en el Reino Unido: guía completa para estudiantes de instituto',
     shortTitle: 'Prácticas de verano en el Reino Unido',
     description: 'Todo lo que los estudiantes de instituto necesitan saber sobre las prácticas de verano en el Reino Unido — los mejores programas, cuándo solicitar, qué esperar y cómo aprovechar las 4–6 semanas para construir una ventaja real.',
+    tldr: 'Las prácticas de verano en el Reino Unido para estudiantes de instituto suelen durar una o dos semanas y tienen lugar de junio a agosto. Los grandes empleadores (Goldman Sachs, KPMG, Deloitte) abren las convocatorias en septiembre–noviembre del año anterior. Las agencias pequeñas y las pymes aceptan solicitudes con mayor flexibilidad.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '10 min de lectura',
@@ -355,6 +379,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Inteligencia artificial y el futuro del trabajo: lo que los jóvenes necesitan saber hoy',
     shortTitle: 'IA y el futuro del trabajo para jóvenes',
     description: 'Cómo la inteligencia artificial está transformando el mercado laboral y qué significa para los estudiantes de instituto que empiezan a construir su trayectoria profesional ahora — qué habilidades serán más valiosas, qué roles desaparecerán y cómo prepararse.',
+    tldr: 'El Foro Económico Mundial estima que la IA automatizará entre el 25 y el 40% de las tareas actuales antes de 2030, pero creará un saldo neto positivo de empleo. Las habilidades más demandadas en un mercado transformado por la IA son el pensamiento crítico, la resolución de problemas complejos y la comunicación — ninguna de ellas es automatizable.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '10 min de lectura',
@@ -372,6 +398,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Emprender con 16 años: lo que nadie te cuenta (y lo que sí funciona)',
     shortTitle: 'Emprender con 16 años: guía práctica',
     description: 'Qué significa realmente emprender siendo estudiante de instituto, por qué la mayoría de los consejos populares son contraproducentes, qué tipos de proyectos generan aprendizaje real a los 16 años y cómo documentar la experiencia para que cuente en solicitudes universitarias.',
+    tldr: 'En España, los menores de 18 años no pueden constituir una empresa ni firmar contratos vinculantes de forma independiente sin autorización de sus padres o tutores. En el Reino Unido, cualquier persona de 16 años puede operar como empresario individual sin necesidad de registrar una sociedad, aunque tampoco puede ser director de empresa ni endeudarse de forma independiente.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '11 min de lectura',
@@ -389,6 +417,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Prácticas en finanzas y banca para estudiantes de instituto: cómo conseguirlas y qué esperar',
     shortTitle: 'Prácticas en finanzas para estudiantes de instituto',
     description: 'Guía completa para estudiantes de instituto que quieren hacer prácticas en finanzas o banca — qué programas existen, qué buscan los reclutadores, cómo preparar una solicitud competitiva y qué aprenderás realmente durante la colocación.',
+    tldr: 'Las principales entidades financieras en España que ofrecen prácticas para estudiantes de bachillerato incluyen Santander, BBVA, CaixaBank y Deloitte. Las convocatorias se abren en septiembre–noviembre. La competencia es alta — entre 10 y 20 solicitudes por plaza en los bancos más grandes — por lo que contar con evidencia verificable de aptitud numérica mejora las probabilidades de selección.',
+
     date: '2026-09-09',
     dateModified: '2026-09-10',
     readTime: '10 min de lectura',
@@ -406,6 +436,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'PISA 2025: Crisis Educativa Mundial — Lo Que Todo Padre Necesita Saber',
     shortTitle: 'PISA 2025: La Crisis Educativa Global',
     description: 'PISA 2025 revela las puntuaciones más bajas jamás registradas en matemáticas, lectura y ciencias en los países de la OCDE. Analizamos qué significan los resultados para las familias y por qué nunca ha sido tan importante evaluar a tu hijo.',
+    tldr: 'PISA 2025 registró las puntuaciones medias más bajas en matemáticas, lectura y ciencias de la historia del programa. España se situó por debajo de la media OCDE en matemáticas y lectura. El informe PISA 2025 reveló que los estudiantes que utilizan IA para tareas específicas (resumir, redactar, investigar) obtienen aproximadamente 20 puntos menos en ciencias que quienes no lo hacen.',
+
     date: '2026-09-10',
     dateModified: '2026-09-10',
     readTime: '12 min de lectura',
@@ -428,6 +460,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: '¿Qué es PISA? Resultados 2025, la pregunta sobre "PISA 2026" y su vínculo con el éxito profesional',
     shortTitle: '¿Qué es PISA? Resultados 2025 y vida profesional',
     description: '¿Qué es PISA, cómo funciona, qué mide? ¿Existe PISA 2026? Y lo más importante: ¿el rendimiento en PISA predice el éxito en la vida profesional? Un análisis honesto desde la perspectiva de un educador con experiencia.',
+    tldr: 'PISA (Programa para la Evaluación Internacional de Alumnos) es una evaluación trienal que examina a jóvenes de 15 años en 91 países. Mide matemáticas, lectura y ciencias; la media OCDE ronda los 472–476 puntos en las tres materias. Las habilidades que evalúa PISA — razonamiento cuantitativo, comprensión lectora y resolución de problemas — coinciden con las más demandadas por los empleadores.',
+
     date: '2026-09-21',
     readTime: '11 min de lectura',
     tags: ['PISA', 'Desarrollo profesional', 'Evaluación académica', 'Prácticas', 'Guía para padres'],
@@ -466,6 +500,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'PISA 2025: Las Notas Caen en Todo el Mundo — Por Qué la Experiencia Laboral es la Respuesta',
     shortTitle: 'PISA 2025 y Experiencia Laboral: La Brecha de Preparación',
     description: 'El informe PISA 2025 de la OCDE revela los puntajes académicos más bajos jamás registrados. Pero los datos también señalan una solución: los estudiantes que se conectan con el mundo real desarrollan las habilidades que las escuelas no pueden enseñar.',
+    tldr: 'PISA 2025 evaluó a 690.000 estudiantes de 15 años en 91 países. Los países con mayor integración del aprendizaje basado en trabajo en la educación secundaria (Alemania, Suiza, Austria) puntúan sistemáticamente por encima de las medias OCDE. Los datos PISA muestran una correlación positiva entre la experiencia profesional estructurada durante el bachillerato y el rendimiento en ciencias y matemáticas.',
+
     date: '2026-09-11',
     readTime: '13 min de lectura',
     tags: ['Work Experience', 'Internship', 'Student Skills', 'Future of Education', 'Career Development'],

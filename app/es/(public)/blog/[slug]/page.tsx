@@ -160,6 +160,13 @@ export default async function ESBlogPostPage({ params }: { params: Promise<{ slu
         </div>
       </div>
 
+      {post.tldr && (
+        <div className="mb-10 border-l-4 border-indigo-400 bg-indigo-50 rounded-r-xl px-5 py-4">
+          <p className="text-xs font-semibold text-indigo-500 uppercase tracking-wider mb-1">Respuesta rápida</p>
+          <p className="text-sm text-gray-700 leading-relaxed">{post.tldr}</p>
+        </div>
+      )}
+
       <article className="prose prose-gray max-w-none space-y-12">
         {getSpanishBlogContent(post.contentSlug ?? slug)}
       </article>
