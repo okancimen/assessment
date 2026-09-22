@@ -43,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
       alternates: { languages: { 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
     },
-    { url: `${BASE}/11-plus`,         lastModified: '2026-09-11', changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/11-plus`,         lastModified: '2026-09-23', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/grammar-schools`, lastModified: '2026-09-23', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/subjects`,        lastModified: '2026-09-09', changeFrequency: 'monthly', priority: 0.8 },
     {
@@ -82,7 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const subjectPages: MetadataRoute.Sitemap = SUBJECTS.map((slug) => ({
     url: `${BASE}/subjects/${slug}`,
-    lastModified: '2026-06-14',
+    lastModified: '2026-09-23',
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))

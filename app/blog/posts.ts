@@ -355,7 +355,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'US Gifted Program Testing 2026: CogAT, MAP and WISC Score Thresholds',
     description:
       'How US gifted and talented programs identify students — CogAT, WISC-V, NWEA MAP, and OLSAT explained, with score thresholds by program type and a practical preparation guide for families.',
-    tldr: 'In Kent and Essex, the 11+ selective register pass mark is approximately SAS 111–113. In Buckinghamshire (CEM), the threshold is around SAS 118. The most competitive London schools in Barnet and Sutton require SAS 121–132 — and even children scoring 125 may not receive an offer if higher-scoring applicants living closer fill available places first.',
+    tldr: 'Most US gifted programs require an IQ of 130 or above (98th+ percentile) for formal identification. New York City\'s Gifted & Talented programme has historically required the 99th percentile. Pull-out enrichment programmes typically accept the 90th–95th percentile. The most common group screening test is the CogAT; the most common individual IQ test is the WISC-V.',
     date: '2026-06-17',
     dateModified: '2026-09-23',
     readTime: '9 min read',
@@ -428,7 +428,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'ISEE vs SSAT Private School Guide',
     description:
       'Everything you need to know about the ISEE and SSAT — how each test works, score reporting, key differences, which to choose for your target schools, and how to prepare effectively.',
-    tldr: 'Most US gifted programs require an IQ of 130 or above (98th+ percentile) for formal identification. New York City\'s Gifted & Talented programme has historically required the 99th percentile. Pull-out enrichment programmes typically accept the 90th–95th percentile. The most common group screening test is the CogAT; the most common individual IQ test is the WISC-V.',
+    tldr: 'The ISEE reports scores on a stanine scale (1–9); the SSAT reports a percentile rank. Most competitive US independent schools expect a stanine of 7–9 on the ISEE (the 77th–99th percentile range) or the 75th+ percentile on the SSAT. Some schools specify one test; others accept either.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -502,7 +502,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Netherlands Doorstroomtoets 2026: Score Ranges and School Placement Guide',
     description:
       'Doorstroomtoets 2026 score ranges explained — what score gets a VWO, HAVO or VMBO advice? How the Dutch primary school exit test replaced the Cito toets and what the numbers mean.',
-    tldr: 'NWEA MAP Growth uses a RIT (Rasch Unit) scale — not percentage correct. The national average RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on programme selectivity.',
+    tldr: 'The Dutch primary school placement test (Doorstroomtoets, formerly Cito Eindtoets) is taken in Group 8 (age 11–12) and scores pupils into secondary school levels: VMBO-B/K, VMBO-GT, HAVO, and VWO. A score supporting a VWO recommendation typically requires the top scoring range (approximately 544–550+).',
     date: '2026-06-17',
     dateModified: '2026-09-23',
     readTime: '7 min read',
@@ -538,7 +538,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Netherlands VWO & Gymnasium Guide',
     description:
       'Everything parents need to know about VWO and Gymnasium in the Netherlands — the highest level of Dutch secondary education, how entry works, and how Tweetalig VWO programmes compare.',
-    tldr: 'The ISEE reports scores on a stanine scale (1–9); the SSAT reports a percentile rank. Most competitive US independent schools expect a stanine of 7–9 on the ISEE (the 77th–99th percentile range) or the 75th+ percentile on the SSAT. Some schools specify one test; others accept either.',
+    tldr: 'VWO is the highest level of Dutch secondary education, spanning 6 years and qualifying students directly for university (wo). Gymnasium is a VWO variant with compulsory Latin and usually Ancient Greek. Entry requires a Cito/Doorstroomtoets score in the VWO band and a teacher recommendation.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -610,7 +610,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Netherlands International School Admissions',
     description:
       'A guide for expat families to international school admissions in the Netherlands — CAT4 assessment, IB vs British curriculum schools, EAL considerations, and how to navigate waiting lists.',
-    tldr: 'The Dutch primary school placement test (Doorstroomtoets, formerly Cito Eindtoets) is taken in Group 8 (age 11–12) and scores pupils into secondary school levels: VMBO-B/K, VMBO-GT, HAVO, and VWO. A score supporting a VWO recommendation typically requires the top scoring range (approximately 544–550+).',
+    tldr: 'Most international schools in the Netherlands use CAT4 for entry assessment. CAT4 produces an SAS score (mean 100, SD 15); schools typically expect 100–115 for standard admission. Popular schools including ISE, BSN, and AIS operate waiting lists — early registration (sometimes from birth) is standard practice.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -647,7 +647,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'UAE CAT4 Test Guide 2026: SAS Bands, Percentiles and School Requirements',
     description:
       'CAT4 SAS bands and percentile thresholds for UAE British-curriculum schools — what score qualifies for gifted programmes, advanced sets, and selective school admissions in Dubai and Abu Dhabi.',
-    tldr: 'VWO is the highest level of Dutch secondary education, spanning 6 years and qualifying students directly for university (wo). Gymnasium is a VWO variant with compulsory Latin and usually Ancient Greek. Entry requires a Cito/Doorstroomtoets score in the VWO band and a teacher recommendation.',
+    tldr: 'CAT4 (Cognitive Abilities Test 4) produces a Standardised Age Score (SAS) with mean 100 and SD 15. A score of 100 is average for age; 115 is the 84th percentile; 127 is the 96th percentile. UAE schools use CAT4 scores for setting, gifted identification, and in some cases admissions — a score of 110+ typically qualifies a student for advanced teaching sets.',
     date: '2026-06-17',
     dateModified: '2026-09-23',
     readTime: '8 min read',
@@ -683,7 +683,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'UAE British School Admissions Guide',
     description:
       'How admissions work at the most sought-after British-curriculum schools in the UAE — GEMS Wellington, JESS, Dubai College, BSAK — including waiting lists, assessment process, and KHDA ratings.',
-    tldr: 'In the Netherlands, hoogbegaafdheid (giftedness) is typically identified by a WISC-V IQ score of 130 or above (98th percentile). Support options include plusklas (pull-out enrichment classes within regular schools), Leonardoscholen (specialist schools for gifted learners), and acceleration within VWO.',
+    tldr: 'British-curriculum schools in Dubai and Abu Dhabi — GEMS Wellington, JESS, Dubai College, BSAK — are rated Outstanding or Very Good by KHDA. Waiting lists at the most popular schools extend 12–24 months or longer. CAT4 is used for admissions screening at most schools alongside previous school reports; Dubai College uses its own selective test.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -719,7 +719,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'UAE Gifted Programs Guide',
     description:
       'How gifted and more-able students are identified and supported in UAE international schools — CAT4 thresholds, KHDA expectations, Al Mawhiba programme, and what to do when school provision falls short.',
-    tldr: 'Most international schools in the Netherlands use CAT4 for entry assessment. CAT4 produces an SAS score (mean 100, SD 15); schools typically expect 100–115 for standard admission. Popular schools including ISE, BSN, and AIS operate waiting lists — early registration (sometimes from birth) is standard practice.',
+    tldr: 'UAE international schools identify gifted students using CAT4 SAS 112+ (stanine 7+) as the primary threshold. The KHDA requires Outstanding-rated schools to demonstrate measurable progress for high-ability students. Al Mawhiba is the UAE national programme for gifted Emirati students; expat families should focus on their school\'s internal gifted provision.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -755,7 +755,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'UAE International School Entry Tests 2026: CAT4, ISEE, IB and What Schools Require',
     description:
       'Which test does your UAE school use? British-curriculum schools use CAT4, American schools use ISEE or SSAT, IB schools vary. Score requirements and admissions timelines for Dubai and Abu Dhabi international schools.',
-    tldr: 'CAT4 (Cognitive Abilities Test 4) produces a Standardised Age Score (SAS) with mean 100 and SD 15. A score of 100 is average for age; 115 is the 84th percentile; 127 is the 96th percentile. UAE schools use CAT4 scores for setting, gifted identification, and in some cases admissions — a score of 110+ typically qualifies a student for advanced teaching sets.',
+    tldr: 'UAE international school entry typically requires one of: CAT4 (used by most British curriculum schools), ISEE (American curriculum schools), or SSAT. CAT4 is administered at the school during the admissions appointment; ISEE and SSAT are taken at registered test centres, with results submitted to the school separately.',
     date: '2026-06-17',
     dateModified: '2026-09-23',
     readTime: '7 min read',
@@ -976,7 +976,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'NSW OC Test Guide',
     description:
       'A complete guide to the NSW Opportunity Class Placement Test — what OC classes are, how the test works, how offers are made, score thresholds, and how to prepare your Year 4 child for selection.',
-    tldr: 'UAE international school entry typically requires one of: CAT4 (used by most British curriculum schools), ISEE (American curriculum schools), or SSAT. CAT4 is administered at the school during the admissions appointment; ISEE and SSAT are taken at registered test centres, with results submitted to the school separately.',
+    tldr: 'NSW Opportunity Classes run from Year 5 in public primary schools across NSW. The entry test is taken in Year 4 and covers three components: Reading, Mathematical Reasoning, and Thinking Skills. Placement is norm-referenced — there is no fixed pass mark; scores are ranked against all applicants within each placement group region.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '8 min read',
@@ -1164,7 +1164,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'How to Differentiate Yourself at 15',
     description:
       'More students than ever are hitting top grades — which makes academic results a weaker differentiator than at any point in the last two decades. Here is what actually separates competitive university applicants, and why starting to build it at 15 changes the outcome.',
-    tldr: 'Gifted identification in Canada varies by province. In Ontario, the IPRC process uses WISC-V or CCAT; gifted designation typically requires an IQ of 130 or above. British Columbia uses teacher nomination combined with standardised testing. Alberta and Quebec each have distinct provincial frameworks with no universal national threshold.',
+    tldr: 'Grades no longer differentiate competitive university applicants — over 26% of A-level entries receive A or A*. The strongest differentiators for Russell Group courses are specific documented work experience, verified domain knowledge, and sustained personal projects with measurable outcomes. Students who start building this profile at 15 arrive at UCAS with two years of compounding evidence rather than two weeks.',
     date: '2026-09-08',
     dateModified: '2026-09-10',
     readTime: '11 min read',
@@ -1200,7 +1200,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'How to Start Business Life at 16',
     description:
       'Can a 16-year-old actually run a business in the UK? Yes — and universities notice. From online tutoring to freelancing and e-commerce, here are the platforms, realistic earnings, and exactly how early business experience changes university applications.',
-    tldr: 'Ontario gifted identification uses the WISC-V (individual) or CCAT (group screening) and typically requires an IQ of 130 or above (98th percentile). The IPRC (Identification, Placement, and Review Committee) formally designates students as Exceptional — Gifted, unlocking placement in a self-contained Gifted class.',
+    tldr: 'A 16-year-old in the UK can legally trade as a sole trader without incorporating. Accessible platforms include MyTutor, Tutorful, Etsy and Depop; earnings below the £12,570 personal allowance are tax-free. Running a real business — even part-time — is explicitly valued in Russell Group admissions for business, economics, and law programmes.',
     date: '2026-09-06',
     dateModified: '2026-09-10',
     readTime: '11 min read',
@@ -1343,7 +1343,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Non-Verbal Reasoning for the 11+: Question Types, Techniques and Free Practice',
     shortTitle: 'Non-Verbal Reasoning 11+ Guide',
     description: 'A complete guide to non-verbal reasoning for the 11+ — question types (matrices, series, analogies, codes), proven techniques for each, common mistakes and how to practise effectively online for free.',
-    tldr: 'The ACER Scholarship Exam is used by most Australian independent schools to award merit scholarships and assess academic admissions. It tests written expression, humanities, and mathematics for Years 8–10 entry. Scores are school-specific rather than nationally standardised — each school sets its own scholarship threshold independently.',
+    tldr: 'Non-verbal reasoning (NVR) in the 11+ tests logical thinking using shapes and patterns — independent of English language skill or curriculum knowledge. The main question types are figure matrices, series, analogies, codes, classification, and spatial rotation. NVR ability responds strongly to targeted practice: most children improve by 8–15 SAS points with 6–12 months of systematic preparation.',
     date: '2026-09-11',
     dateModified: '2026-09-11',
     readTime: '10 min read',
@@ -1382,7 +1382,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Free 11+ Practice Test Online: Adaptive, Scored and Instant',
     shortTitle: 'Free 11+ Practice Test Online',
     description: 'Take a free adaptive 11+ practice test online — English, Maths, Verbal Reasoning and Non-Verbal Reasoning. Get an instant standardised score (SAS) showing exactly where your child stands for grammar school entry.',
-    tldr: 'The NSW Opportunity Class (OC) test is taken by Year 4 students and selects for Year 5 entry. It has three components: Reading, Mathematical Reasoning, and Thinking Skills. Placement is norm-referenced — there is no fixed pass mark; a student\'s score is ranked against all applicants in that region. High-demand Sydney OC schools typically require scores in the top 5–10% of applicants.',
+    tldr: 'A free adaptive 11+ practice test covering all four subjects (English, Maths, Verbal Reasoning, Non-Verbal Reasoning) produces a Standardised Age Score (SAS) on the same mean-100, SD-15 scale as GL Assessment. Most grammar school entry thresholds are SAS 111–121+. Adaptive tests adjust question difficulty in real time, measuring ability more accurately than fixed-difficulty practice papers.',
     date: '2026-09-11',
     dateModified: '2026-09-11',
     readTime: '8 min read',
@@ -1421,7 +1421,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: '11+ Maths: Topics, Question Types and How to Practise',
     shortTitle: '11+ Maths Guide',
     description: 'Complete guide to 11+ Maths — every topic tested, question types by exam board (GL Assessment and CEM), common mistakes and how to practise effectively for a top standardised score.',
-    tldr: 'Western Australia\'s GATE (Gifted and Talented Education) programme uses a two-stage selection process: school nomination followed by an ACER-administered test. Perth Modern School — the flagship full-time GATE school — is one of Australia\'s most selective state schools, with entry typically requiring a GATE test score in the top 3–5%.',
+    tldr: 'The 11+ maths paper tests KS2 curriculum content at higher speed and complexity than standard school work. Key topics include number and arithmetic, fractions, decimals, percentages, ratio, algebra, geometry, and data handling. Most successful candidates are working approximately one year ahead of their school year group in maths, with rapid mental arithmetic recall essential under time pressure.',
     date: '2026-09-11',
     dateModified: '2026-09-11',
     readTime: '10 min read',
