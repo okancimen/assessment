@@ -89,7 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const grammarPages: MetadataRoute.Sitemap = GRAMMAR_AREAS.map((area) => ({
     url: `${BASE}/grammar-schools/${area.slug}`,
-    lastModified: '2026-06-17',
+    lastModified: '2026-09-23',
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))

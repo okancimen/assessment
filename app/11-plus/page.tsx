@@ -5,20 +5,20 @@ import PublicFooter from '@/components/layout/PublicFooter'
 import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
-  title: 'Free 11+ Practice Test — Reasoning & English',
-  description: 'Free 11+ practice tests for English, Maths, Verbal and Non-Verbal Reasoning. Standardised scores and percentile rankings for grammar school preparation.',
-  keywords: '11 plus practice test free, 11+ verbal reasoning test, 11+ non-verbal reasoning free, free 11 plus test online, grammar school entrance test free, 11+ preparation UK',
+  title: 'Free 11+ Practice Tests 2026: Standardised Scores for Grammar School Prep',
+  description: 'Adaptive 11+ practice tests with instant standardised scores on the same scale as GL Assessment (mean 100, SD 15). Verbal reasoning, non-verbal reasoning, English and maths — free, no subscription required.',
+  keywords: '11 plus practice test free, 11+ verbal reasoning test, 11+ non-verbal reasoning free, free 11 plus test online, grammar school entrance test free, 11+ preparation UK, 11+ standardised score',
   alternates: { canonical: 'https://eduentry.com/11-plus', languages: { 'en-GB': 'https://eduentry.com/11-plus', 'x-default': 'https://eduentry.com/11-plus' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
-    title: 'Free 11+ Practice Test — Verbal & Non-Verbal Reasoning',
-    description: 'Adaptive 11+ practice tests with standardised scores and percentile rankings. Verbal reasoning, non-verbal reasoning, English and maths. Free — no subscription required.',
+    title: 'Free 11+ Practice Tests 2026: Standardised Scores for Grammar School Prep',
+    description: 'Adaptive 11+ practice tests with instant GL Assessment-scale standardised scores. Verbal reasoning, non-verbal reasoning, English and maths — free, no subscription.',
     url: 'https://eduentry.com/11-plus',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Free 11+ Practice Test — Verbal & Non-Verbal Reasoning',
-    description: 'Adaptive 11+ practice tests with standardised scores and percentile rankings. Free — no subscription required.',
+    title: 'Free 11+ Practice Tests 2026: Standardised Scores for Grammar School Prep',
+    description: 'Adaptive 11+ practice tests with instant GL Assessment-scale standardised scores. Free — no subscription required.',
     images: ['https://eduentry.com/11-plus/opengraph-image'],
   },
 }

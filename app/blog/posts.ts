@@ -571,12 +571,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'netherlands-gifted-education-hoogbegaafd',
     title: 'Gifted Education in the Netherlands: Hoogbegaafdheid, WISC-V and What Schools Offer',
-    shortTitle: 'Gifted Education in the Netherlands',
+    shortTitle: 'Gifted Education in the Netherlands 2026: Hoogbegaafdheid, WISC-V and Plusklas',
     description:
-      'How giftedness (hoogbegaafdheid) is identified and supported in Dutch schools — WISC-V assessment, plusklas provision, Leonardoscholen, and what to do if your child is underachieving.',
-    tldr: 'Effective preparation for US gifted tests (CogAT, OLSAT) focuses on abstract reasoning rather than content memorisation, since these tests measure cognitive ability not learned knowledge. The most trainable components are matrix reasoning, spatial reasoning, and non-verbal pattern recognition — all of which respond to structured practice.',
+      'How giftedness (hoogbegaafdheid) is identified in Dutch schools — WISC-V IQ 130+ threshold, plusklas enrichment classes, leonardoscholen and what options parents have in 2026.',
+    tldr: 'In the Netherlands, giftedness (hoogbegaafdheid) is identified through a WISC-V assessment (IQ 130+). State schools offer plusklas enrichment but are not legally required to. A growing number of dedicated gifted schools (leonardoscholen) operate independently. Parents can request assessment through the school or privately via an educational psychologist.',
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '8 min read',
     tags: ['Netherlands', 'Gifted Education', 'Hoogbegaafd', 'WISC-V', 'Dutch Schools'],
     faqs: [
@@ -789,12 +789,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'canada-gifted-program-identification',
     title: 'Gifted Program Identification in Canada: A Province-by-Province Guide',
-    shortTitle: 'Canada Gifted Program Identification',
+    shortTitle: 'Canada Gifted Program Identification 2026: WISC-V, CCAT and Provincial Processes',
     description:
-      'How gifted education works across Canadian provinces — different identification processes, WISC-V assessment, CCAT screening, wait times, and what happens when families move between provinces.',
-    tldr: 'Major British curriculum schools in the UAE include GEMS Wellington, JESS (Jumeirah English Speaking School), Dubai College, Repton, and BSAK. Schools are rated by KHDA (Dubai) on a scale of Outstanding / Very Good / Good / Acceptable. Most require a CAT4 or school-based assessment plus English and Maths tests at the admissions appointment.',
+      'How gifted program identification works across Canadian provinces — Ontario IPRC process, WISC-V and CAS2 assessments, CCAT screening, IQ thresholds, and how to request an assessment for your child.',
+    tldr: 'Canadian gifted identification varies by province. Ontario uses the IPRC process with WISC-V or CAS2 (IQ 130+ threshold). Alberta and BC use district screening tests. Most provinces target approximately the 98th percentile. Parents can formally request an educational assessment through their child's school board.',
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '8 min read',
     tags: ['Canada', 'Gifted Education', 'WISC-V', 'Ontario', 'Provincial Education'],
     faqs: [

@@ -1,6 +1,6 @@
 export const SUBJECTS = {
   english: {
-    title: 'Free English Assessment for Children',
+    title: 'Free English Assessment for Children 2026: Comprehension, Grammar and Standardised Score',
     headline: 'English',
     tagline: 'Comprehension, grammar, spelling and vocabulary — benchmarked internationally',
     description: 'Free adaptive English assessment for children aged 6–17. Covers reading comprehension, grammar, spelling, punctuation and vocabulary. Standardised scores.',
@@ -50,7 +50,7 @@ export const SUBJECTS = {
     longTailKeywords: ['free English test for children UK', 'English comprehension test for kids', 'KS2 English assessment free', 'reading comprehension test children', 'free grammar test primary school UK', '11+ English practice questions free'],
   },
   maths: {
-    title: 'Free Maths Assessment for Children',
+    title: 'Free Maths Assessment for Children 2026: KS1–GCSE Adaptive Test with Standardised Score',
     headline: 'Mathematics',
     tagline: 'Number, algebra, geometry and data handling — from KS1 to GCSE level',
     description: 'Free adaptive maths assessment for children aged 6–17. Covers number operations, algebra, geometry, fractions and data handling. Standardised scores.',
@@ -100,7 +100,7 @@ export const SUBJECTS = {
     longTailKeywords: ['free maths test for children UK', 'KS2 maths assessment', 'free numeracy test for kids', 'primary school maths test online free', 'free 11+ maths practice questions', 'maths test for 10 year olds UK free'],
   },
   'verbal-reasoning': {
-    title: 'Free Verbal Reasoning Test for Children',
+    title: 'Free Verbal Reasoning Test for Children 2026: 11+ Practice with Standardised Score',
     headline: 'Verbal Reasoning',
     tagline: 'Problem-solving with words — essential for 11+, grammar school, and independent school entry',
     description: 'Free adaptive verbal reasoning test for children aged 7–16. Covers word analogies, codes, classification and logic puzzles. Used in UK 11+ entrance exams.',
@@ -150,7 +150,7 @@ export const SUBJECTS = {
     longTailKeywords: ['free verbal reasoning test 11+ UK', 'verbal reasoning practice test children', 'free 11+ verbal reasoning', 'GL assessment verbal reasoning practice', 'verbal reasoning sample questions KS2', 'how to prepare for 11+ verbal reasoning'],
   },
   'non-verbal-reasoning': {
-    title: 'Free Non-Verbal Reasoning Test for Children',
+    title: 'Free Non-Verbal Reasoning Test for Children 2026: 11+ Practice with Standardised Score',
     headline: 'Non-Verbal Reasoning',
     tagline: 'Pattern recognition, spatial reasoning, and abstract thinking — language-independent',
     description: 'Free adaptive non-verbal reasoning test for children aged 7–16, covering pattern recognition, matrix reasoning, sequences and spatial reasoning.',
