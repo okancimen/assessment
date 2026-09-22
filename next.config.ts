@@ -43,6 +43,8 @@ const nextConfig: NextConfig = {
       { source: '/es/blog/business-work-experience-high-school-uk',    destination: '/es/blog/experiencia-empresarial-instituto-reino-unido',    permanent: true },
       { source: '/es/blog/how-to-get-tech-internship-before-university', destination: '/es/blog/practicas-tecnologia-antes-universidad',         permanent: true },
       { source: '/es/blog/how-does-your-child-compare-globally',       destination: '/es/blog/como-se-compara-tu-hijo-a-nivel-mundial',          permanent: true },
+      // Duplicate NSW OC posts — consolidate into the newer, better-optimised post
+      { source: '/blog/australia-oc-test-guide', destination: '/blog/nsw-opportunity-class-test-guide', permanent: true },
     ]
   },
   compress: true,

@@ -94,12 +94,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'business-work-experience-high-school-uk',
     title: 'Business Work Experience at High School in the UK: What It Is, How to Get It, and Why It Matters',
-    shortTitle: 'Business Work Experience at High School UK',
+    shortTitle: 'Business Work Experience for UK School Students 2026: How to Get a Placement',
     description:
-      'Everything UK secondary school students need to know about business work experience — what it involves, where to find placements, how to secure one, and why a verified assessment score strengthens every application.',
+      'How to find and secure a business work placement in Year 10–13 in the UK — which sectors take under-18s, how to write a cold email to employers, and what makes a strong application at 15–17.,
     tldr: 'Business work experience for UK school students typically means a one- or two-week placement or a structured employer programme. Most formal large-employer schemes start accepting students from Year 10 (age 14–15). FTSE 100 firms including Barclays, Goldman Sachs, KPMG, and Deloitte run dedicated Year 12 Spring Insight programmes, with application windows opening September–November.',
     date: '2026-06-30',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '10 min read',
     tags: ['Internship', 'Career Development', 'Work Experience', 'Business'],
     faqs: [
@@ -752,12 +752,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'uae-international-school-entrance-exams',
     title: 'UAE International School Entrance Exams: CAT4, ISEE, IB and What Each Curriculum Uses',
-    shortTitle: 'UAE International School Entrance Exams',
+    shortTitle: 'UAE International School Entry Tests 2026: CAT4, ISEE, IB and What Schools Require',
     description:
-      'A curriculum-by-curriculum guide to entrance assessments at international schools in the UAE — British (CAT4), American (ISEE/SSAT), IB, and Indian (CBSE/ICSE) school admissions explained.',
+      'Which test does your UAE school use? British-curriculum schools use CAT4, American schools use ISEE or SSAT, IB schools vary. Score requirements and admissions timelines for Dubai and Abu Dhabi international schools.,
     tldr: 'CAT4 (Cognitive Abilities Test 4) produces a Standardised Age Score (SAS) with mean 100 and SD 15. A score of 100 is average for age; 115 is the 84th percentile; 127 is the 96th percentile. UAE schools use CAT4 scores for setting, gifted identification, and in some cases admissions — a score of 110+ typically qualifies a student for advanced teaching sets.',
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '7 min read',
     tags: ['UAE', 'Entrance Exams', 'CAT4', 'ISEE', 'International Schools'],
     faqs: [
@@ -899,12 +899,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'canada-french-immersion-selective-programs',
     title: 'French Immersion and Selective Public Programs in Canada: What Families Need to Know',
-    shortTitle: 'Canada French Immersion & Selective Programs',
+    shortTitle: 'French Immersion & Selective Programs in Canada 2026: Admissions Guide',
     description:
-      'A guide to French Immersion, magnet schools, IB public programmes, and other selective pathways in Canadian public education — how each works, how to access them, and how to combine them.',
-    tldr: 'Al Mawhiba — operated by Mohammed bin Rashid Al Maktoum Global Initiatives — is the UAE\'s primary gifted education programme. Al Mawhiba typically requires a CAT4 SAS of 127+ (96th percentile) and strong school performance. KHDA requires all Dubai schools to identify gifted learners and provide appropriate challenge.',
+      'French Immersion, public IB and gifted stream entry across Canadian provinces — when registration opens, which programmes are selective, and what tests your child needs.,
+    tldr: 'Early French Immersion (EFI) in most Canadian provinces starts in Kindergarten or Grade 1 and is first-come, first-served with no academic test. Late French Immersion (LFI) begins in Grade 4 or 6. Public IB programmes are selective — typically requiring a portfolio and minimum academic grades for Grade 6 or 9 entry.,
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '7 min read',
     tags: ['Canada', 'French Immersion', 'Public Schools', 'IB', 'Gifted'],
     faqs: [
@@ -1237,11 +1237,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'pisa-2025-global-education-crisis-what-parents-need-to-know',
     title: 'PISA 2025 Results: Global Education Is in Crisis — What Every Parent Needs to Know',
-    shortTitle: 'PISA 2025: The Global Education Crisis',
-    description: 'PISA 2025 reveals the lowest ever scores in maths, reading and science across OECD countries. We break down what the results mean for UK families and why benchmarking your child has never mattered more.',
-    tldr: 'Most Canadian independent schools use the ISEE or SSAT for admissions. The ISEE reports stanine scores (1–9); competitive schools including Upper Canada College, Havergal, Bishop Strachan, and Ridley College typically expect stanine 7 or above. Most schools accept both tests; some have a stated preference.',
+    shortTitle: 'PISA 2025 Results: What the Lowest-Ever Scores Mean for Your Child',
+    description: 'PISA 2025 recorded the lowest maths, reading and science scores since 2000. What the results mean for UK, US and international families — and how to benchmark your child against global standards.,
+    tldr: 'PISA 2025 recorded the lowest average OECD maths score since the programme began — 470 in maths, 474 in reading and 475 in science. The UK fell to 27th in maths and 13th in reading. Singapore, Japan and South Korea led all three domains. Post-pandemic recovery has stalled across most OECD countries.,
     date: '2026-09-10',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '14 min read',
     tags: ['PISA', 'Academic Benchmarking', 'Global Education', 'UK Education', 'Maths', 'Reading'],
     faqs: [
@@ -1302,11 +1302,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'nsw-opportunity-class-test-guide',
     title: 'NSW Opportunity Class Test: Complete Guide for Parents (2026)',
-    shortTitle: 'NSW OC Test: Complete Parent Guide',
-    description: 'Everything parents need to know about the NSW Opportunity Class Placement Test — what it is, how it works, what OC classes involve, the test format, scores, and how to prepare your Year 3 child.',
-    tldr: 'Early French Immersion (EFI) in most Canadian provinces starts in Kindergarten or Grade 1 and is allocated first-come, first-served with no academic test. Late French Immersion (LFI) begins in Grade 4 or 6. Public IB programmes (MYP/DP entry typically in Grade 6 or 9) are selective and require a portfolio and minimum academic grades.',
+    shortTitle: 'NSW Opportunity Class Test 2026: Score Cutoffs, Format and Preparation',
+    description: 'NSW OC test 2026 — Thinking Skills and Reading components, score cutoffs by district, how offers are ranked, and a preparation plan for Year 3 children targeting an opportunity class.,
+    tldr: 'NSW Opportunity Classes run from Year 5 in public primary schools across NSW. The entry test is taken in Year 3 and covers two components: Thinking Skills and Reading. Offers are made on an ordered merit score combining both. Approximately 4,200 places are available annually across around 75 public schools.,
     date: '2026-09-11',
-    dateModified: '2026-09-11',
+    dateModified: '2026-09-23',
     readTime: '11 min read',
     tags: ['NSW Education', 'OC Test', 'Selective Schools', 'Australia', 'Academic Assessment'],
     faqs: [

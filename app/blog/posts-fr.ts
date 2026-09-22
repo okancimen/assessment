@@ -231,9 +231,9 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
   {
     slug: 'cv-stage-lyceen-16-ans',
     title: 'Rédiger un CV de stage percutant à 16 ans : guide étape par étape',
-    shortTitle: 'CV de stage lycéen : guide pratique',
+    shortTitle: 'CV de Stage Lycéen 2026 : Modèle Complet et Conseils Pratiques',
     description:
-      'Comment rédiger un CV convaincant pour un stage quand on est lycéen — structure, contenu, formulations, et comment compenser le manque d\'expérience professionnelle par d\'autres atouts.',
+      'Comment rédiger un CV percutant pour décrocher un stage lycéen en 2026 — structure, formulations adaptées, centres d\'intérêt et comment compenser l\'absence d\'expérience professionnelle.',
     tldr: 'Le CV de stage d\'un lycéen de 16 ans doit tenir sur une page et inclure : coordonnées, formation (lycée, classe, mention), matières et projets pertinents, compétences (langues, logiciels) et professeurs comme références. Sans expérience professionnelle, mettre en avant les projets scolaires et les activités extrascolaires est l\'approche la plus efficace.',
 
     date: '2026-09-09',
