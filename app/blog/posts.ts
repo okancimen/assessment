@@ -247,7 +247,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       'Standardised scores, percentile rankings and Standardised Age Scores (SAS) explained in plain language — what the numbers mean, what counts as a good score, and how Eduentry uses the same scale as professional assessments.',
     tldr: 'A standardised score of 100 is exactly average for age; 115 is the 84th percentile; 130 is the 98th percentile. For 11+ grammar school entry, most areas outside London require a Standardised Age Score (SAS) of 111–118; Barnet and Sutton selective schools require 121–132.',
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '6 min read',
     tags: ['Standardised Testing', 'Scores', 'Percentile', 'Parent Guide'],
     faqs: [
@@ -320,7 +320,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     tldr: 'In Kent and Essex, the 11+ selective register pass mark is approximately SAS 111–113. In Buckinghamshire (CEM), the threshold is around SAS 118. The most competitive London schools in Barnet and Sutton require SAS 121–132 — and even children scoring 125 may not receive an offer if higher-scoring applicants living closer fill available places first.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '7 min read',
     tags: ['Grammar Schools', '11+', 'Entry Requirements', '2026'],
     faqs: [
@@ -357,7 +357,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       'How US gifted and talented programs identify students — CogAT, WISC-V, NWEA MAP, and OLSAT explained, with score thresholds by program type and a practical preparation guide for families.',
     tldr: 'In Kent and Essex, the 11+ selective register pass mark is approximately SAS 111–113. In Buckinghamshire (CEM), the threshold is around SAS 118. The most competitive London schools in Barnet and Sutton require SAS 121–132 — and even children scoring 125 may not receive an offer if higher-scoring applicants living closer fill available places first.',
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '9 min read',
     tags: ['Gifted Testing', 'CogAT', 'WISC', 'US Education', 'Gifted Programs'],
     faqs: [
@@ -394,7 +394,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     tldr: 'NWEA MAP Growth uses a RIT (Rasch Unit) scale — not percentage correct. The national average RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '7 min read',
     tags: ['NWEA MAP', 'RIT Scores', 'US Education', 'Gifted Programs', 'Assessment'],
     faqs: [
@@ -504,7 +504,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       'Doorstroomtoets 2026 score ranges explained — what score gets a VWO, HAVO or VMBO advice? How the Dutch primary school exit test replaced the Cito toets and what the numbers mean.',
     tldr: 'NWEA MAP Growth uses a RIT (Rasch Unit) scale — not percentage correct. The national average RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on programme selectivity.',
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '7 min read',
     tags: ['Netherlands', 'Cito', 'Doorstroomtoets', 'Dutch Education', 'VWO'],
     faqs: [
@@ -649,7 +649,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       'CAT4 SAS bands and percentile thresholds for UAE British-curriculum schools — what score qualifies for gifted programmes, advanced sets, and selective school admissions in Dubai and Abu Dhabi.',
     tldr: 'VWO is the highest level of Dutch secondary education, spanning 6 years and qualifying students directly for university (wo). Gymnasium is a VWO variant with compulsory Latin and usually Ancient Greek. Entry requires a Cito/Doorstroomtoets score in the VWO band and a teacher recommendation.',
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '8 min read',
     tags: ['UAE', 'CAT4', 'Dubai', 'British Curriculum', 'Cognitive Testing'],
     faqs: [
@@ -831,7 +831,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     tldr: 'Ontario gifted identification uses the WISC-V (individual) or CCAT (group screening) and typically requires an IQ of 130 or above (98th percentile). The IPRC (Identification, Placement, and Review Committee) formally designates students as Exceptional — Gifted, unlocking placement in a self-contained Gifted class.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '8 min read',
     tags: ['Canada', 'Ontario', 'Gifted', 'IPRC', 'WISC-V'],
     faqs: [
@@ -1015,7 +1015,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     tldr: 'Western Australia GATE (Gifted and Talented Education) uses a two-stage selection process: school nomination followed by an ACER-administered test. Perth Modern School — the flagship full-time GATE school — is one of Australia most selective state schools, with entry typically requiring a GATE test score in the top 3–5%.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '8 min read',
     tags: ['Australia', 'Western Australia', 'GATE', 'Gifted Education', 'Perth Modern'],
     faqs: [

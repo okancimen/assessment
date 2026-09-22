@@ -736,7 +736,10 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           <Link href="/blog/grammar-school-entry-requirements-2026" className="text-indigo-600 hover:underline">
             Grammar School Entry Requirements 2026
           </Link>{' '}
-          guide, which covers every major grammar school area in England with specific score benchmarks.
+          guide. For school-by-school details including exam boards and target SAS scores, visit our{' '}
+          <Link href="/grammar-schools" className="text-indigo-600 hover:underline">
+            grammar school area guides
+          </Link>.
         </p>
       </section>
 
@@ -1127,6 +1130,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           </Link>. For a step-by-step home preparation plan, see our{' '}
           <Link href="/blog/how-to-prepare-for-11-plus" className="text-indigo-600 hover:underline">
             complete guide to preparing for the 11+ at home
+          </Link>. For school-specific details for your area, browse our{' '}
+          <Link href="/grammar-schools" className="text-indigo-600 hover:underline">
+            grammar school area guides
           </Link>.
         </p>
       </section>

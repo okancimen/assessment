@@ -615,7 +615,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2022\'de matematikte 453, okumada 440 ve fen bilimlerinde 452 puan alarak OECD ortalamasının altında kaldı.',
 
     date: '2026-09-14',
-    dateModified: '2026-09-14',
+    dateModified: '2026-09-23',
     readTime: '10 dk okuma',
     tags: ['PISA', 'Uluslararası Kıyaslama', 'Akademik Değerlendirme', 'Ebeveyn Rehberi'],
     faqs: [
