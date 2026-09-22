@@ -223,12 +223,13 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 ## Blog — Australia
 
 - [ACER Scholarship Exam Guide](https://eduentry.com/blog/australia-acer-scholarship-exam): Test structure, score reporting, and preparation approach for Australia's primary independent school entrance assessment.
-- [NSW Opportunity Class (OC) Test Guide](https://eduentry.com/blog/australia-oc-test-guide): Three-component test structure, OC placement scoring, eligibility, and preparation timeline.
+- [NSW Opportunity Class Test 2026](https://eduentry.com/blog/nsw-opportunity-class-test-guide): Thinking Skills and Reading components, score cutoffs by district, how offers are ranked, and preparation plan for Year 3 children.
 - [Western Australia GATE Programme Guide](https://eduentry.com/blog/australia-gate-gifted-program): Two-stage GATE assessment process, Perth Modern School entry, and PEAC programme details.
 - [NAPLAN Guide for Parents](https://eduentry.com/blog/australia-naplan-guide): Test structure, four-level proficiency scale, how results are reported, and what they do and do not indicate.
 
 ## Blog — Global
 
+- [Global Academic Benchmarks Report 2026](https://eduentry.com/blog/global-academic-benchmarks-report-2026): 2026 breakdown of international standardised testing trends — SAS scores, PISA/TIMSS benchmarks, Digital SAT adaptive testing, and percentile thresholds for selective admissions.
 - [PISA 2025 Results: Global Education Crisis](https://eduentry.com/blog/pisa-2025-global-education-crisis-what-parents-need-to-know): PISA 2025 scores by country, causes of decline (learning loss, device distraction, hasty reading), UK ranking, and AI homework findings.
 - [How Does Your Child Compare Globally](https://eduentry.com/blog/how-does-your-child-compare-globally): PISA country rankings, UK vs Singapore/Japan/South Korea score gaps, and standardised score vs school grade comparison.
 - [PISA 2025 and Work Experience](https://eduentry.com/blog/pisa-2025-work-experience-student-readiness): PISA 2025 data on student readiness gaps and the relationship between work experience and academic outcomes.
