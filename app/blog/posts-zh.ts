@@ -3,6 +3,7 @@ import type { BlogPostMeta } from './posts'
 export const BLOG_POSTS_ZH: BlogPostMeta[] = [
   {
     slug: 'pisa-2025-zhongguo-jiazhang-zhinan',
+    contentSlug: 'pisa-2025-global-education-crisis-what-parents-need-to-know',
     title: 'PISA 2025成绩解读：每位家长需要了解的信息',
     shortTitle: 'PISA 2025成绩解读：家长必读',
     description:
@@ -39,6 +40,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
   },
   {
     slug: 'haizi-xueshu-shuiping-ruhe-celiang',
+    contentSlug: 'how-does-your-child-compare-globally',
     title: '如何评估孩子的学术水平？免费测评指南',
     shortTitle: '如何评估孩子的学术水平？',
     description:
@@ -157,6 +159,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
   },
   {
     slug: 'shuzi-yingxiao-shixi-rumen',
+    contentSlug: 'digital-marketing-work-experience-student-reviews',
     title: '数字营销实习入门：高中生如何进入这个高需求领域',
     shortTitle: '数字营销实习：高中生入门指南',
     description: '数字营销实习是高中生最容易进入的热门领域之一。本文介绍你在实习中会做什么、需要具备哪些技能，以及如何找到第一份数字营销实习机会。',
@@ -203,6 +206,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
   },
   {
     slug: 'ruhe-zai-15-sui-tuocying',
+    contentSlug: 'how-to-differentiate-yourself-at-15',
     title: '如何在15岁脱颖而出：有志向的高中生完整行动指南',
     shortTitle: '如何在15岁脱颖而出',
     description: '15岁是开始建立竞争优势的最佳时机——比大多数同龄人早得多。本文提供具体可操作的策略，帮助高中生在大学申请和职业起步上真正拉开差距。',
@@ -295,6 +299,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
   },
   {
     slug: 'IT-keji-shixi-gaoxiao',
+    contentSlug: 'how-to-get-tech-internship-before-university',
     title: 'IT与科技实习：高中生如何在没有编程基础的情况下入行',
     shortTitle: 'IT科技实习：高中生入门指南',
     description: '进入科技行业不一定需要会写代码。本文介绍高中生可以胜任的IT相关实习岗位、需要准备什么技能，以及如何找到第一个科技行业机会。',
@@ -456,6 +461,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
   },
   {
     slug: 'pisa-shi-shenme-2025-chengji-yu-zhiye-fazhan',
+    contentSlug: 'pisa-2025-work-experience-student-readiness',
     title: 'PISA是什么？2025年成绩、"PISA 2026"的疑问与职业成功的关联',
     shortTitle: 'PISA是什么？2025年成绩与职业发展',
     description: 'PISA是什么，如何运作，测量哪些内容？PISA 2026存在吗？最重要的是：PISA成绩能预测职业成功吗？一位资深教育者的诚实分析。',

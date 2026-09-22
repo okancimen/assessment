@@ -11,6 +11,7 @@ import { BLOG_POSTS_ES } from '../posts-es'
 import { BLOG_POSTS_FR } from '../posts-fr'
 import { BLOG_POSTS_AR } from '../posts-ar'
 import { BLOG_POSTS_RU } from '../posts-ru'
+import { BLOG_POSTS_ZH } from '../posts-zh'
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -56,6 +57,7 @@ const esByContentSlug = new Map(BLOG_POSTS_ES.filter(p => p.contentSlug).map(p =
 const frByContentSlug = new Map(BLOG_POSTS_FR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 const arByContentSlug = new Map(BLOG_POSTS_AR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 const ruByContentSlug = new Map(BLOG_POSTS_RU.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const zhByContentSlug = new Map(BLOG_POSTS_ZH.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 
 const COUNTRY_LANG: Record<string, string> = {
   'netherlands-': 'en-NL',
@@ -93,6 +95,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         ...(frByContentSlug.has(slug) ? { fr: `${BASE_URL}/fr/blog/${frByContentSlug.get(slug)}` } : {}),
         ...(arByContentSlug.has(slug) ? { ar: `${BASE_URL}/ar/blog/${arByContentSlug.get(slug)}` } : {}),
         ...(ruByContentSlug.has(slug) ? { ru: `${BASE_URL}/ru/blog/${ruByContentSlug.get(slug)}` } : {}),
+        ...(zhByContentSlug.has(slug) ? { zh: `${BASE_URL}/zh/blog/${zhByContentSlug.get(slug)}` } : {}),
         'x-default': url,
         ...(getCountryLang(slug) ? { [getCountryLang(slug)!]: url } : {}),
       },
@@ -213,7 +216,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
 
         {/* Cross-locale links */}
-        {(esByContentSlug.has(slug) || trByContentSlug.has(slug) || frByContentSlug.has(slug) || arByContentSlug.has(slug) || ruByContentSlug.has(slug)) && (
+        {(esByContentSlug.has(slug) || trByContentSlug.has(slug) || frByContentSlug.has(slug) || arByContentSlug.has(slug) || ruByContentSlug.has(slug) || zhByContentSlug.has(slug)) && (
           <div className="mb-10 flex items-center gap-2 text-xs text-gray-400 flex-wrap">
             <span>Also available in:</span>
             {[
@@ -222,6 +225,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               frByContentSlug.has(slug) && { href: `/fr/blog/${frByContentSlug.get(slug)}`, flag: '🇫🇷', label: 'Français' },
               arByContentSlug.has(slug) && { href: `/ar/blog/${arByContentSlug.get(slug)}`, flag: '🇸🇦', label: 'العربية' },
               ruByContentSlug.has(slug) && { href: `/ru/blog/${ruByContentSlug.get(slug)}`, flag: '🇷🇺', label: 'Русский' },
+              zhByContentSlug.has(slug) && { href: `/zh/blog/${zhByContentSlug.get(slug)}`, flag: '🇨🇳', label: '中文' },
             ].filter(Boolean).map((loc, i, arr) => (
               <>
                 {i > 0 && <span key={`sep-${i}`}>·</span>}

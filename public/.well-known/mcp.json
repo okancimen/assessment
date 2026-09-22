@@ -1,17 +1,73 @@
 {
-  "mcpVersion": "0.1",
+  "mcpVersion": "2024-11-05",
   "servers": [
     {
       "url": "https://eduentry.com/api/mcp",
       "transport": "http",
       "name": "Eduentry",
-      "description": "Academic assessment data for children aged 6–17 — grammar school entry requirements, standardised score interpretation, assessed subjects, and research blog posts."
+      "description": "Academic assessment data for children aged 6–17 — grammar school entry requirements, standardised score interpretation, assessed subjects, and multilingual blog posts.",
+      "tools": [
+        {
+          "name": "explain_scoring",
+          "description": "Explain what a standardised score means on Eduentry — percentile rank and performance band. UK grammar school entry context included for locale=en.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "score": { "type": "number", "description": "Standardised score between 70 and 130 (mean 100, SD 15)" },
+              "locale": { "type": "string", "description": "One of: en, es, tr, fr, ar, ru, zh. Defaults to en." }
+            },
+            "required": ["score"]
+          }
+        },
+        {
+          "name": "list_grammar_areas",
+          "description": "List UK grammar school areas with entry requirements, exam boards, and target SAS scores. UK-specific — locale must be 'en'.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "locale": { "type": "string", "description": "Must be 'en' to receive data." },
+              "area": { "type": "string", "description": "Optional slug: kent, buckinghamshire, birmingham, london-barnet, london-sutton, hertfordshire, essex, gloucestershire" }
+            }
+          }
+        },
+        {
+          "name": "list_subjects",
+          "description": "List the four assessment subjects: English, Mathematics, Verbal Reasoning, Non-Verbal Reasoning. UK/11+ relevance notes for locale=en.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "locale": { "type": "string", "description": "One of: en, es, tr, fr, ar, ru, zh." }
+            }
+          }
+        },
+        {
+          "name": "list_tracks",
+          "description": "List the four internship readiness tracks (Technology, Business, Data Analytics, Digital Marketing) with domain topics, sample roles, and assessment phases.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "track": { "type": "string", "description": "Optional track id: tech, business, data-analytics, digital-marketing" }
+            }
+          }
+        },
+        {
+          "name": "list_blog_posts",
+          "description": "List Eduentry blog posts across all 7 locales (en, es, tr, fr, ar, ru, zh). Optionally filter by tag keyword.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "locale": { "type": "string", "description": "One of: en (default), es, tr, fr, ar, ru, zh" },
+              "tag": { "type": "string", "description": "Optional tag keyword, e.g. 'grammar', 'internship', 'pisa', 'gifted'" }
+            }
+          }
+        }
+      ]
     },
     {
       "url": "https://eduentry.ai/api/mcp",
       "transport": "http",
       "name": "Eduentry.ai",
-      "description": "Internship readiness assessment for UK high school students aged 14–18 — track details (Technology, Business, Data Analytics, Digital Marketing), assessment phases, and career guidance."
+      "description": "Internship readiness assessment for high school students aged 14–18 — track details (Technology, Business, Data Analytics, Digital Marketing), assessment phases, and career guidance."
     }
   ]
 }
