@@ -150,9 +150,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     image: `${BASE_URL}/blog/${slug}/opengraph-image`,
     author: {
       '@type': 'Person',
-      name: 'Ozlem Cimen',
-      url: 'https://edualist.com',
+      '@id': 'https://eduentry.com/about#ozlem-cimen',
+      name: 'Özlem Çimen',
+      url: 'https://eduentry.com/about#ozlem-cimen',
       jobTitle: 'Education Professional',
+      sameAs: ['https://edualist.com', 'https://www.edualist.com/neden-biz/#about'],
     },
     publisher: { '@id': 'https://eduentry.com/#organization' },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },

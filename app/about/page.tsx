@@ -32,6 +32,34 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const PERSON_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': 'https://eduentry.com/about#ozlem-cimen',
+  name: 'Özlem Çimen',
+  jobTitle: 'Founder & Education Professional',
+  description: '20+ years as English teacher, department head, and school administrator at TED Istanbul College, ENKA Schools, and Istanbul International Community School (IICS). MBA in International Marketing, Harvard Graduate School of Education Certificate (Differentiating Instruction, 2008), IB Training Certification (Zurich International School, 2002).',
+  url: 'https://eduentry.com/about',
+  sameAs: [
+    'https://edualist.com',
+    'https://www.edualist.com/neden-biz/#about',
+  ],
+  knowsAbout: [
+    'Academic assessment',
+    'International school admissions',
+    'English language teaching',
+    'IB curriculum',
+    '11+ preparation',
+    'Grammar school admissions',
+    'Expatriate education',
+    'EAL support',
+  ],
+  alumniOf: [
+    { '@type': 'EducationalOrganization', name: 'Harvard Graduate School of Education' },
+  ],
+  worksFor: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+}
+
 const ORGANIZATION_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -78,6 +106,7 @@ export default function AboutPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ABOUT_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }} />
 
       <PublicNav />
 
@@ -204,6 +233,44 @@ export default function AboutPage() {
                 <div className="text-xs text-gray-500 leading-relaxed">{desc}</div>
               </Link>
             ))}
+          </div>
+        </section>
+
+        {/* Author */}
+        <section className="mb-16" id="ozlem-cimen">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Written by</h2>
+          <div className="border border-gray-100 rounded-2xl p-8">
+            <div className="flex flex-col sm:flex-row gap-6">
+              <div className="flex-1">
+                <div className="flex items-start gap-4 mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Özlem Çimen</h3>
+                    <p className="text-sm text-indigo-600 font-medium mt-0.5">Founder &amp; Education Professional</p>
+                  </div>
+                </div>
+                <div className="space-y-3 text-gray-600 leading-relaxed text-sm">
+                  <p>
+                    Özlem has 20+ years of experience as an English teacher, department head, and school administrator across TED Istanbul College, ENKA Schools, and Istanbul International Community School (IICS), where she served as Middle School Vice Principal and Head of Foreign Languages.
+                  </p>
+                  <p>
+                    She holds an MBA in International Marketing, a Harvard Graduate School of Education Certificate in Differentiating Instruction (2008), and an IB Training Certification from Zurich International School (2002).
+                  </p>
+                  <p>
+                    As an expatriate mother who raised two children across Singapore, Myanmar, France, Azerbaijan, and Dubai — navigating British, French, and IB curricula — she writes from direct experience of international school transitions and academic benchmarking across systems.
+                  </p>
+                </div>
+                <div className="mt-4 flex flex-wrap gap-3 text-xs">
+                  {['IB Curriculum', 'EAL Support', 'International Schools', '11+ Preparation', 'Academic Benchmarking'].map(tag => (
+                    <span key={tag} className="bg-gray-100 text-gray-600 rounded-full px-3 py-1">{tag}</span>
+                  ))}
+                </div>
+                <div className="mt-4">
+                  <a href="https://www.edualist.com" target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline">
+                    edualist.com →
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
