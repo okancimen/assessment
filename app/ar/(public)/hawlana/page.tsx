@@ -180,6 +180,30 @@ export default function HawlanaPage() {
         </div>
       </section>
 
+      {/* Author */}
+      <section className="mb-16" id="ozlem-cimen">
+        <h2 className="text-2xl font-bold text-gray-900 mb-8">بقلم</h2>
+        <div className="border border-gray-100 rounded-2xl p-8" dir="rtl">
+          <h3 className="text-xl font-bold text-gray-900">أوزلم تشيمن</h3>
+          <p className="text-sm text-indigo-600 font-medium mt-0.5 mb-4">المؤسسة ومختصة في التعليم</p>
+          <div className="space-y-3 text-gray-600 leading-relaxed text-sm">
+            <p>أكثر من 20 عامًا من الخبرة معلمةً للغة الإنجليزية، ورئيسةً للقسم، ومديرةً للمدارس في TED Istanbul College وENKA Schools وIstanbul International Community School (IICS).</p>
+            <p>ماجستير في إدارة الأعمال تخصص تسويق دولي، وشهادة من كلية هارفارد للدراسات العليا في التربية (التدريس المتمايز، 2008)، وشهادة IB من مدرسة زيورخ الدولية (2002).</p>
+            <p>أم مغتربة ربّت طفلَيها في خمس دول — سنغافورة وميانمار وفرنسا وأذربيجان ودبي — مرورًا بالمناهج البريطانية والفرنسية وIB.</p>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-3 text-xs">
+            {['منهج IB', 'دعم EAL', 'المدارس الدولية', 'التقييم الأكاديمي'].map(tag => (
+              <span key={tag} className="bg-gray-100 text-gray-600 rounded-full px-3 py-1">{tag}</span>
+            ))}
+          </div>
+          <div className="mt-4">
+            <a href="https://www.edualist.com" target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline">
+              edualist.com →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">ابدأ تقييم طفلك المجاني</h2>

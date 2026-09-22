@@ -180,6 +180,30 @@ export default function SobreNosotrosPage() {
         </div>
       </section>
 
+      {/* Author */}
+      <section className="mb-16" id="ozlem-cimen">
+        <h2 className="text-2xl font-bold text-gray-900 mb-8">Escrito por</h2>
+        <div className="border border-gray-100 rounded-2xl p-8">
+          <h3 className="text-xl font-bold text-gray-900">Özlem Çimen</h3>
+          <p className="text-sm text-indigo-600 font-medium mt-0.5 mb-4">Fundadora y Profesional de la Educación</p>
+          <div className="space-y-3 text-gray-600 leading-relaxed text-sm">
+            <p>Más de 20 años como profesora de inglés, jefa de departamento y administradora escolar en TED Istanbul College, ENKA Schools e Istanbul International Community School (IICS), donde fue Vicedirectora de Educación Secundaria y Jefa del Departamento de Lenguas Extranjeras.</p>
+            <p>MBA en Marketing Internacional, Certificado de la Harvard Graduate School of Education en Diferenciación de la Instrucción (2008) y Certificación IB del Colegio Internacional de Zúrich (2002).</p>
+            <p>Madre expatriada que crió a dos hijos en cinco países — Singapur, Myanmar, Francia, Azerbaiyán y Dubái — navegando currículos británico, francés e IB.</p>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-3 text-xs">
+            {['Currículo IB', 'Apoyo EAL', 'Escuelas Internacionales', 'Evaluación Académica'].map(tag => (
+              <span key={tag} className="bg-gray-100 text-gray-600 rounded-full px-3 py-1">{tag}</span>
+            ))}
+          </div>
+          <div className="mt-4">
+            <a href="https://www.edualist.com" target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline">
+              edualist.com →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">Empieza la evaluación gratuita de tu hijo</h2>

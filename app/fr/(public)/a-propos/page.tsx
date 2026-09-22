@@ -180,6 +180,30 @@ export default function AProposPage() {
         </div>
       </section>
 
+      {/* Author */}
+      <section className="mb-16" id="ozlem-cimen">
+        <h2 className="text-2xl font-bold text-gray-900 mb-8">Écrit par</h2>
+        <div className="border border-gray-100 rounded-2xl p-8">
+          <h3 className="text-xl font-bold text-gray-900">Özlem Çimen</h3>
+          <p className="text-sm text-indigo-600 font-medium mt-0.5 mb-4">Fondatrice et professionnelle de l'éducation</p>
+          <div className="space-y-3 text-gray-600 leading-relaxed text-sm">
+            <p>Plus de 20 ans d'expérience en tant qu'enseignante d'anglais, chef de département et administratrice scolaire au TED Istanbul College, ENKA Schools et à l'Istanbul International Community School (IICS).</p>
+            <p>MBA en Marketing International, Certificat de la Harvard Graduate School of Education (Différenciation pédagogique, 2008) et Certification IB de l'École internationale de Zurich (2002).</p>
+            <p>Mère expatriée ayant élevé deux enfants dans cinq pays — Singapour, Myanmar, France, Azerbaïdjan et Dubaï — en naviguant entre les systèmes britannique, français et IB.</p>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-3 text-xs">
+            {['Programme IB', 'Soutien EAL', 'Écoles internationales', 'Évaluation académique'].map(tag => (
+              <span key={tag} className="bg-gray-100 text-gray-600 rounded-full px-3 py-1">{tag}</span>
+            ))}
+          </div>
+          <div className="mt-4">
+            <a href="https://www.edualist.com" target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline">
+              edualist.com →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">Commencez l&apos;évaluation gratuite de votre enfant</h2>

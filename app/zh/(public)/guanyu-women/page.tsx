@@ -115,6 +115,29 @@ export default function GuanyuWomenPage() {
 
       </div>
 
+      <section className="mb-16" id="ozlem-cimen">
+        <h2 className="text-2xl font-bold text-gray-900 mb-8">作者</h2>
+        <div className="border border-gray-100 rounded-2xl p-8">
+          <h3 className="text-xl font-bold text-gray-900">Özlem Çimen</h3>
+          <p className="text-sm text-indigo-600 font-medium mt-0.5 mb-4">创始人及教育专家</p>
+          <div className="space-y-3 text-gray-600 leading-relaxed text-sm">
+            <p>在TED伊斯坦布尔学院、ENKA学校和伊斯坦布尔国际社区学校(IICS)担任英语教师、部门主任及学校管理者超过20年，曾任初中副校长及外语部门主任。</p>
+            <p>拥有国际市场营销MBA学位、哈佛大学教育学院差异化教学证书（2008年）及苏黎世国际学校IB培训认证（2002年）。</p>
+            <p>作为在新加坡、缅甸、法国、阿塞拜疆和迪拜五个国家抚养两个孩子的外籍妈妈，亲历了英国、法国和IB三种课程体系下国际学校转学的全过程。</p>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-3 text-xs">
+            {['IB课程', 'EAL支持', '国际学校', '学术评估'].map(tag => (
+              <span key={tag} className="bg-gray-100 text-gray-600 rounded-full px-3 py-1">{tag}</span>
+            ))}
+          </div>
+          <div className="mt-4">
+            <a href="https://www.edualist.com" target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline">
+              edualist.com →
+            </a>
+          </div>
+        </div>
+      </section>
+
       <div className="mt-20 border-t border-[#d2d2d7] pt-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div>
           <p className="font-semibold text-[#1d1d1f] mb-1">准备好了解孩子的真实水平了吗？</p>

@@ -180,6 +180,30 @@ export default function ONasPage() {
         </div>
       </section>
 
+      {/* Author */}
+      <section className="mb-16" id="ozlem-cimen">
+        <h2 className="text-2xl font-bold text-gray-900 mb-8">Автор</h2>
+        <div className="border border-gray-100 rounded-2xl p-8">
+          <h3 className="text-xl font-bold text-gray-900">Озлем Чимен</h3>
+          <p className="text-sm text-indigo-600 font-medium mt-0.5 mb-4">Основатель и специалист в области образования</p>
+          <div className="space-y-3 text-gray-600 leading-relaxed text-sm">
+            <p>Более 20 лет работы учителем английского языка, руководителем отдела и администратором в TED Istanbul College, ENKA Schools и Istanbul International Community School (IICS).</p>
+            <p>MBA по международному маркетингу, сертификат Гарвардской высшей школы образования (дифференцированное обучение, 2008), сертификат IB Цюрихской международной школы (2002).</p>
+            <p>Мать-экспат, воспитавшая двух детей в пяти странах — Сингапуре, Мьянме, Франции, Азербайджане и Дубае — в британской, французской и IB системах образования.</p>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-3 text-xs">
+            {['Программа IB', 'Поддержка EAL', 'Международные школы', 'Академическая оценка'].map(tag => (
+              <span key={tag} className="bg-gray-100 text-gray-600 rounded-full px-3 py-1">{tag}</span>
+            ))}
+          </div>
+          <div className="mt-4">
+            <a href="https://www.edualist.com" target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline">
+              edualist.com →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">Начните бесплатную оценку вашего ребёнка</h2>

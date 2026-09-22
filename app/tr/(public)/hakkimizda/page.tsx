@@ -180,6 +180,30 @@ export default function HakkimizdaPage() {
         </div>
       </section>
 
+      {/* Author */}
+      <section className="mb-16" id="ozlem-cimen">
+        <h2 className="text-2xl font-bold text-gray-900 mb-8">Yazar Hakkında</h2>
+        <div className="border border-gray-100 rounded-2xl p-8">
+          <h3 className="text-xl font-bold text-gray-900">Özlem Çimen</h3>
+          <p className="text-sm text-indigo-600 font-medium mt-0.5 mb-4">Kurucu &amp; Eğitim Uzmanı</p>
+          <div className="space-y-3 text-gray-600 leading-relaxed text-sm">
+            <p>TED İstanbul Koleji, ENKA Okulları ve İstanbul Uluslararası Toplum Okulu'nda (IICS) 20+ yıl İngilizce öğretmeni, bölüm başkanı ve okul yöneticisi olarak görev yaptı. IICS'de Ortaokul Müdür Yardımcısı ve Yabancı Diller Bölüm Başkanı olarak çalıştı.</p>
+            <p>Uluslararası Pazarlama alanında MBA, Harvard Eğitim Lisansüstü Okulu Sertifikası (Farklılaştırılmış Öğretim, 2008) ve Zürih Uluslararası Okulu'ndan IB Eğitim Sertifikası (2002) sahibidir.</p>
+            <p>Singapur, Myanmar, Fransa, Azerbaycan ve Dubai'de iki çocuğunu yetiştiren bir gurbetçi anne olarak İngiliz, Fransız ve IB müfredatlarında uluslararası okul geçişlerini bizzat deneyimledi.</p>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-3 text-xs">
+            {['IB Müfredatı', 'EAL Desteği', 'Uluslararası Okullar', '11+ Hazırlık', 'Akademik Kıyaslama'].map(tag => (
+              <span key={tag} className="bg-gray-100 text-gray-600 rounded-full px-3 py-1">{tag}</span>
+            ))}
+          </div>
+          <div className="mt-4">
+            <a href="https://www.edualist.com" target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline">
+              edualist.com →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">Çocuğunuzun ücretsiz değerlendirmesini başlatın</h2>
