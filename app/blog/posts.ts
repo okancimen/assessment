@@ -792,7 +792,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Canada Gifted Program Identification 2026: WISC-V, CCAT and Provincial Processes',
     description:
       'How gifted program identification works across Canadian provinces — Ontario IPRC process, WISC-V and CAS2 assessments, CCAT screening, IQ thresholds, and how to request an assessment for your child.',
-    tldr: 'Canadian gifted identification varies by province. Ontario uses the IPRC process with WISC-V or CAS2 (IQ 130+ threshold). Alberta and BC use district screening tests. Most provinces target approximately the 98th percentile. Parents can formally request an educational assessment through their child's school board.',
+    tldr: 'Canadian gifted identification varies by province. Ontario uses the IPRC process with WISC-V or CAS2 (IQ 130+ threshold). Alberta and BC use district screening tests. Most provinces target approximately the 98th percentile. Parents can formally request an educational assessment through their child\'s school board.',
     date: '2026-06-17',
     dateModified: '2026-09-23',
     readTime: '8 min read',
