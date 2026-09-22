@@ -152,7 +152,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: 'How does an assessment score help a tech internship application?',
-        a: 'A credible third-party assessment score solves the experience paradox — you need experience to get experience, but you need an opportunity to build experience in the first place. An Eduentry readiness report gives employers verifiable evidence of your computational thinking, problem-solving ability, and domain knowledge before they have met you. It replaces the absence of a GitHub portfolio or prior internship with measured aptitude data that organisations can act on.',
+        a: 'A third-party aptitude or readiness assessment score solves the experience paradox — you need prior experience to get experience, but you need an opportunity to build experience in the first place. A credible score demonstrating computational thinking, problem-solving, and domain knowledge gives recruiters verifiable evidence before they meet you. For students without a GitHub portfolio or prior internship, measured aptitude data is the most concrete signal an employer can act on at the shortlisting stage.',
       },
       {
         q: 'What should I do during a tech internship to get the most out of it?',
@@ -214,7 +214,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: 'Is it possible to prepare for the 11+ at home without a tutor?',
-        a: 'Yes. Many children successfully prepare for the 11+ entirely at home using practice books, free online resources, and adaptive assessments like Eduentry. The key is consistency — 20–30 minutes of focused practice per day is more effective than occasional intensive sessions. A structured plan covering all four subjects (English, Maths, Verbal Reasoning, Non-Verbal Reasoning) is essential.',
+        a: 'Yes. Many children successfully prepare for the 11+ entirely at home using practice books, free online resources, and online adaptive assessment platforms. The key is consistency — 20–30 minutes of focused practice per day is more effective than occasional intensive sessions. A structured plan covering all four subjects (English, Maths, Verbal Reasoning, Non-Verbal Reasoning) is essential.',
       },
       {
         q: 'What subjects are covered in the 11+ exam?',
@@ -1203,7 +1203,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       { q: 'What is PISA and why does it matter?', a: 'PISA (Programme for International Student Assessment) tests 15-year-olds in 91 countries on maths, reading and science every three years. It is the world\'s largest standardised education benchmark and the most authoritative measure of how education systems compare globally.' },
       { q: 'How did UK students perform in PISA 2025?', a: 'The United Kingdom ranked in the top 10 globally in PISA 2025, making it one of only four OECD countries to improve its science score since 2022. However, UK students still saw declines in reading and mathematics, reflecting the global trend.' },
       { q: 'Why did maths and reading scores fall so much?', a: 'Researchers point to multiple factors: pandemic-related learning loss, increased digital distraction (28% of students say classmates disrupt science lessons with devices), and the rise of "hasty reading" — skimming content quickly without full comprehension. The hasty reading rate nearly doubled between 2018 and 2025.' },
-      { q: 'How can I find out if my child is on track internationally?', a: 'Eduentry offers a free adaptive assessment aligned to the same international scale as PISA. It tests children aged 6–17 in maths, English, verbal reasoning and non-verbal reasoning, and gives parents a percentile rank showing exactly how their child compares to peers globally.' },
+      { q: 'How can I find out if my child is on track internationally?', a: 'The most reliable method is a standardised adaptive assessment that benchmarks your child against a large national or international cohort. Look for one that reports a score on the mean-100, SD-15 scale used by PISA, GL Assessment, and CAT4 — this lets you compare results over time and across different tests. National school grades only show your child\'s position within their class; a standardised score shows their position in the wider distribution.' },
       { q: 'Does using AI for homework hurt my child\'s learning?', a: 'PISA 2025 found that students who use AI for specific tasks like summarising texts, drafting or research score around 20 points lower in science than peers who don\'t — equivalent to roughly one year of schooling. General AI use for learning purposes showed no negative effect when paired with AI literacy education.' },
     ],
     cta: {
@@ -1226,7 +1226,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     faqs: [
       {
         q: 'How can I find out where my child stands academically compared to students worldwide?',
-        a: 'The most direct way is a standardised assessment that produces a percentile score relative to a global or large national cohort. Eduentry\'s adaptive assessment produces a standardised score benchmarked against UK norms, with PISA and IB context built into the report. National school grades tell you where your child sits in their class or year group — a standardised score tells you where they sit in the global distribution.',
+        a: 'The most direct approach is a standardised assessment that produces a percentile score relative to a national or international cohort. PISA itself only tests 15-year-olds, but assessments aligned to the same mean-100, SD-15 scale — such as CAT4, CogAT, or adaptive benchmark platforms — give younger children a comparable global context. National school grades tell you where your child sits in their class or year group; a standardised score tells you where they sit in the broader distribution.',
       },
       {
         q: 'What is a "good" PISA score for my child\'s age?',
@@ -1276,11 +1276,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: 'How is OC preparation different from 11+ preparation in the UK?',
-        a: 'The two tests are closely related in structure. Both assess abstract reasoning, reading comprehension and mathematical reasoning — which is why tools like Eduentry, built on the same adaptive IRT methodology, are effective for both. The main difference is timing: the OC test is sat in Year 3, whereas the UK 11+ is sat in Year 6. The earlier age means building foundational reasoning skills matters more than drilling test-specific formats.',
+        a: 'The two tests are closely related in structure. Both assess abstract reasoning, reading comprehension and mathematical reasoning — which is why adaptive assessment tools built on Item Response Theory methodology prepare students effectively for both. The main difference is timing: the OC test is sat in Year 3, whereas the UK 11+ is sat in Year 6. The earlier age means building foundational reasoning skills matters more than drilling test-specific formats.',
       },
       {
         q: 'How can I practise for the OC test?',
-        a: 'The most effective preparation combines: adaptive reasoning practice that adjusts to your child\'s level (like Eduentry), targeted reading comprehension with varied text types, and mathematical reasoning through word problems rather than rote arithmetic. Start 12–18 months before the test date for meaningful results. Focus on the weakest component first — use a benchmark assessment to identify gaps.',
+        a: 'The most effective preparation combines: adaptive reasoning practice that adjusts to your child\'s level, targeted reading comprehension with varied text types, and mathematical reasoning through word problems rather than rote arithmetic. Start 12–18 months before the test date for meaningful results. Focus on the weakest component first — use a benchmark assessment to identify gaps.',
       },
     ],
     cta: {
@@ -1428,7 +1428,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: 'How can students do an internship while still at school?',
-        a: 'Eduentry\'s internship assessment programme is designed specifically for students aged 14–18 who are still in secondary school. Students complete a 34-question adaptive assessment covering professional readiness, communication and problem-solving skills, then receive a personalised readiness report and are matched with relevant work experience opportunities — all without needing to find a placement independently.',
+        a: 'Several routes are available to students still in secondary school. Direct applications to small and medium-sized businesses often yield one- or two-week summer placements. Large employers — particularly FTSE 100 companies in finance, consulting, and technology — run Year 10 and Year 12 insight programmes with structured tasks and mentoring. Virtual work experience through platforms like Springpod or Forage offers flexible, employer-led programmes that can be completed remotely around the school timetable. Internship readiness assessments also help students identify the right track and present credible aptitude evidence before applying.',
       },
     ],
     cta: {
