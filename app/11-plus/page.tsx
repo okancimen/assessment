@@ -302,8 +302,10 @@ export default function ElevenPlusPage() {
         {/* Related reading */}
         <section className="mb-14">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Related guides</h2>
-          <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
+              { href: '/blog/free-11-plus-practice-test-online', tag: 'Free Test', title: 'Free 11+ Practice Test Online — Instant SAS Score' },
+              { href: '/grammar-schools', tag: 'Hub', title: 'Grammar Schools in England: SAS Thresholds by Area' },
               { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+ at Home' },
               { href: '/blog/verbal-reasoning-11-plus-guide', tag: 'Guide', title: 'Verbal Reasoning 11+ Complete Guide' },
               { href: '/blog/what-is-a-standardised-score', tag: 'Explainer', title: 'What Is a Standardised Score?' },

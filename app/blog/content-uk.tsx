@@ -327,7 +327,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">When to Start — and When Not To</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Most educational specialists recommend beginning structured preparation 12–18 months before the
-          exam. For most grammar schools, the 11+ is taken in September or October of Year 6, meaning
+          exam. For most <Link href="/grammar-schools" className="text-indigo-600 hover:underline">grammar schools</Link>, the 11+ is taken in September or October of Year 6, meaning
           serious preparation should begin in Year 4 or early Year 5. Starting before 18 months is usually
           counter-productive: children experience burnout well before the exam, and early preparation
           is forgotten if not regularly maintained.
@@ -908,7 +908,8 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           For a complete preparation timeline and strategy covering all four 11+ subjects, see our{' '}
           <Link href="/blog/how-to-prepare-for-11-plus" className="text-indigo-600 hover:underline">
             full guide to preparing for the 11+ at home
-          </Link>.
+          </Link>. For SAS score thresholds by area, see the{' '}
+          <Link href="/grammar-schools" className="text-indigo-600 hover:underline">grammar schools hub</Link>.
         </p>
       </section>
 
@@ -3026,7 +3027,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           The two major 11+ exam boards in England handle non-verbal reasoning differently, and knowing which your area uses is important before you invest in practice materials.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          GL Assessment — used by grammar schools in Kent, Buckinghamshire, Hertfordshire, Lincolnshire, and most other selective areas — typically uses a dedicated NVR paper as part of a multi-paper format. The NVR paper contains questions across all six types described above, with clear section breaks. The time per question is predictable and preparation materials are widely available. If your area uses GL Assessment, purchasing dedicated GL NVR practice papers is straightforward and effective.
+          GL Assessment — used by <Link href="/grammar-schools" className="text-indigo-600 hover:underline">grammar schools</Link> in Kent, Buckinghamshire, Hertfordshire, Lincolnshire, and most other selective areas — typically uses a dedicated NVR paper as part of a multi-paper format. The NVR paper contains questions across all six types described above, with clear section breaks. The time per question is predictable and preparation materials are widely available. If your area uses GL Assessment, purchasing dedicated GL NVR practice papers is straightforward and effective.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           CEM (Centre for Evaluation and Monitoring) — used by some grammar schools in Birmingham, Durham, and parts of the North East — integrates NVR questions within a mixed verbal and non-verbal paper, with no advance warning of which type of question comes next. This means children need to be comfortable switching between verbal and non-verbal tasks rapidly. CEM also tends to use a narrower range of NVR question types than GL, with matrices and series featuring most prominently. Check with your target school or local grammar school association which exam board they use before selecting practice materials.
@@ -3150,7 +3151,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           The Standardised Age Score (SAS) is the reporting scale used by GL Assessment, the exam board that produces 11+ papers for the majority of grammar schools in England. It is designed with a mean of 100 and a standard deviation of 15, meaning that the average 10 or 11-year-old should score 100, and approximately 68% of all children will score between 85 and 115.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Grammar school entry benchmarks vary by area and school, but the following serves as a general guide to how SAS scores translate into selectivity:
+          <Link href="/grammar-schools" className="text-indigo-600 hover:underline">Grammar school</Link> entry benchmarks vary by area and school, but the following serves as a general guide to how SAS scores translate into selectivity:
         </p>
         <ul className="space-y-2 mb-4">
           <Bullet><strong>SAS 100</strong> — 50th percentile; exactly average for age</Bullet>

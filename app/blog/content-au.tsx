@@ -175,7 +175,7 @@ export const AU_CONTENT: Record<string, React.ReactNode> = {
         <div className="space-y-3 mb-6">
           <Check>ACER Scholarship Exam — used by independent/Catholic schools for scholarships and general entry assessment</Check>
           <Check>NSW Selective High School Placement Test — state government selective high schools in New South Wales</Check>
-          <Check><Link href="/blog/australia-oc-test-guide" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">OC Test</Link> — NSW Opportunity Class placement (Year 5 entry)</Check>
+          <Check><Link href="/blog/nsw-opportunity-class-test-guide" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">OC Test</Link> — NSW Opportunity Class placement (Year 5 entry)</Check>
           <Check><Link href="/blog/australia-gate-gifted-program" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">GATE Assessment</Link> — Western Australia&apos;s gifted and talented programme</Check>
         </div>
         <p className="text-gray-700 leading-relaxed mb-4">
@@ -612,7 +612,7 @@ export const AU_CONTENT: Record<string, React.ReactNode> = {
         </div>
         <p className="text-gray-700 leading-relaxed">
           Families preparing for the{' '}
-          <Link href="/blog/australia-oc-test-guide" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">NSW OC Test</Link>,{' '}
+          <Link href="/blog/nsw-opportunity-class-test-guide" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">NSW OC Test</Link>,{' '}
           <Link href="/blog/australia-acer-scholarship-exam" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">ACER Scholarship Exam</Link>, or{' '}
           <Link href="/blog/australia-gate-gifted-program" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">WA GATE assessment</Link>{' '}
           should use purpose-built preparation for those tests rather than NAPLAN practice materials.

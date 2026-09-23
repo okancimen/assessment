@@ -115,7 +115,11 @@ export default function GrammarSchoolsIndexPage() {
           </CtaLink>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <Link href="/blog/free-11-plus-practice-test-online" className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+            <div className="text-xs font-semibold text-indigo-600 mb-2">Free Test</div>
+            <div className="font-semibold text-gray-900 text-sm">Free 11+ Practice Test — Instant SAS Score</div>
+          </Link>
           <Link href="/blog/grammar-school-entry-requirements-2026" className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
             <div className="text-xs font-semibold text-indigo-600 mb-2">Blog</div>
             <div className="font-semibold text-gray-900 text-sm">Grammar School Entry Requirements 2026</div>
