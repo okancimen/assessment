@@ -2969,17 +2969,13 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
 
   'staj-sigortasi-nedir': (
     <>
-      <p className="text-lg text-gray-600 leading-relaxed">
-        Staj sigortası, birçok öğrencinin yeterince bilmeden staja başladığı ancak ne olduğunu anlamak için bir kaza ya da sorun yaşamak zorunda kaldığı bir konudur. Bu rehber, staj sigortasının ne olduğunu, kimin ödemesini yaptığını, neyi kapsadığını ve emekliliğe etkisini açıklar.
-      </p>
-
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Sigortası Nedir?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Staj sigortası, stajyeri iş kazası ve meslek hastalığına karşı güvence altına almak için yapılan kısa vadeli sigorta koludur. Türkiye'de 5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu kapsamında düzenlenmektedir.
+          Staj sigortası, Türkiye'de 5510 sayılı Kanun kapsamında stajyeri iş kazası ve meslek hastalığına karşı güvence altına alan kısa vadeli bir sigorta koludur. Stajyer, staj süresi boyunca iş yerinde ya da iş yolunda geçirdiği kaza ya da mesleğe bağlı hastalık durumunda tedavi giderlerini ve gerekirse iş göremezlik ödeneğini bu sigorta kapsamında alır. Prim ödemeleri okul aracılığıyla yürütülen zorunlu stajlarda devlete aittir.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Temel işlevi şudur: Stajyer, staj süresi boyunca iş yerinde ya da iş yolunda geçirdiği bir kaza veya mesleğe bağlı bir hastalık durumunda, tam çalışanların yararlandığı iş kazası sigortasından benzer haklara sahip olur — tedavi giderleri karşılanır, gerekirse iş göremezlik ödeneği verilir.
+          Staj sigortası, birçok öğrencinin yeterince bilmeden başladığı ama bir kaza ya da sorun yaşayınca öğrenmek zorunda kaldığı bir konudur. Bu rehber kimin ödemesini yaptığını, neyi kapsadığını ve emekliliğe etkisini açıklar.
         </p>
         <Callout>
           <strong className="text-indigo-900">Önemli ayrım:</strong> Staj sigortası yalnızca <em>kısa vadeli sigorta kollarını</em> (iş kazası, meslek hastalığı) kapsar. Emeklilik, hastalık yardımı ve işsizlik sigortasını kapsayan uzun vadeli sigorta kollarına staj döneminde prim yatırılmaz.

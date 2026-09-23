@@ -534,13 +534,15 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
 
   'what-is-a-standardised-score': (
     <>
-      <p className="text-lg text-gray-600 leading-relaxed">
-        If your child has sat an educational assessment recently — an 11+ mock, a CAT4 test at school,
-        or an online diagnostic — you have probably encountered a &ldquo;standardised score&rdquo; alongside
-        the raw percentage. Most parents ignore the standardised score and focus on the percentage.
-        That is the wrong instinct. Here is what a standardised score actually means, why it tells you
-        far more than a percentage, and how to interpret it for decisions about your child&apos;s education.
-      </p>
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is a Standardised Score?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A standardised score is a number that shows how a child performed relative to a large reference group of children the same age, rather than as a percentage of questions answered correctly. Most educational assessments — including the 11+, CAT4, CogAT, and NWEA MAP — report results on a scale with a mean of 100 and a standard deviation of 15, so a score of 115 always means the same thing regardless of which test was taken or how hard it was.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          If your child has sat an educational assessment recently — an 11+ mock, a CAT4 test at school, or an online diagnostic — you have probably encountered a standardised score alongside the raw percentage. Most parents ignore the standardised score and focus on the percentage. That is the wrong instinct.
+        </p>
+      </section>
 
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">The Problem with Raw Scores</h2>

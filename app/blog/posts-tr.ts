@@ -796,13 +796,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'staj-sigortasi-nedir',
     title: 'Staj Sigortası Nedir? Lise ve Üniversite Öğrencileri İçin Rehber',
-    shortTitle: 'Staj Sigortası Rehberi',
+    shortTitle: 'Staj Sigortası Nedir? Kim Öder, Neyi Kapsar, Emekliliğe Etkisi',
     description:
       'Staj sigortası nedir, kim öder, neyi kapsar? Zorunlu stajda ve gönüllü stajda staj sigortası uygulaması, emeklilik hesabına etkisi ve pratik bilgiler.',
     tldr: 'Türkiye\'de stajyerler 5510 sayılı Kanun kapsamında iş kazası ve meslek hastalığı sigortası güvencesinden yararlanır. Prim ödemeleri okul aracılığıyla yapılan stajlarda devlete aittir. Stajyerler standart işçi haklarından yararlanamaz; ancak SGK güvencesi kapsamındadır.',
 
     date: '2026-09-15',
-    dateModified: '2026-09-15',
+    dateModified: '2026-09-24',
     readTime: '7 dk okuma',
     tags: ['Staj', 'Staj Sigortası', 'Zorunlu Staj', 'Kariyer Rehberi', 'Lise'],
     faqs: [

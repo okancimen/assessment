@@ -247,7 +247,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       'Standardised scores explained for parents: a score of 100 is average for age, 115 is the 84th percentile, 130 is the 98th. Covers SAS bands, what counts as a good score, and how grammar school and gifted programme thresholds work.',
     tldr: 'A standardised score of 100 is exactly average for age; 115 is the 84th percentile; 130 is the 98th percentile. For 11+ grammar school entry, most areas outside London require a Standardised Age Score (SAS) of 111–118; Barnet and Sutton selective schools require 121–132.',
     date: '2026-06-17',
-    dateModified: '2026-09-23',
+    dateModified: '2026-09-24',
     readTime: '6 min read',
     tags: ['Standardised Testing', 'Scores', 'Percentile', 'Parent Guide'],
     faqs: [
@@ -357,7 +357,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       'How US gifted and talented programs identify students — CogAT, WISC-V, NWEA MAP, and OLSAT explained, with score thresholds by program type and a practical preparation guide for families.',
     tldr: 'Most US gifted programs require an IQ of 130 or above (98th+ percentile) for formal identification. New York City\'s Gifted & Talented programme has historically required the 99th percentile. Pull-out enrichment programmes typically accept the 90th–95th percentile. The most common group screening test is the CogAT; the most common individual IQ test is the WISC-V.',
     date: '2026-06-17',
-    dateModified: '2026-09-23',
+    dateModified: '2026-09-24',
     readTime: '9 min read',
     tags: ['Gifted Testing', 'CogAT', 'WISC', 'US Education', 'Gifted Programs'],
     faqs: [
@@ -394,7 +394,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     tldr: 'NWEA MAP Growth uses a RIT (Rasch Unit) scale — not percentage correct. The national average RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-23',
+    dateModified: '2026-09-24',
     readTime: '7 min read',
     tags: ['NWEA MAP', 'RIT Scores', 'US Education', 'Gifted Programs', 'Assessment'],
     faqs: [

@@ -5,20 +5,16 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
 
   'gifted-program-testing-guide': (
     <>
-      <p className="text-lg text-gray-600 leading-relaxed">
-        Gifted and Talented (GT) programs are among the most sought-after placements in US public education —
-        and the process for qualifying can be confusing for families navigating it for the first time.
-        Unlike standardised academic tests where the highest score simply means the best grade, gifted
-        identification typically involves multiple criteria, specific score thresholds, and decisions made
-        by placement committees rather than a single number. This guide explains exactly how gifted programs
-        work, what tests are used, what scores children need, and how to prepare effectively.
-      </p>
-
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is a Gifted Program?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Gifted programs in the United States exist in several formats, and the differences matter
-          for how your child is identified and what placement looks like. The main types are:
+          A gifted program is a structured educational placement for children identified as academically advanced or cognitively exceptional, typically through ability and achievement tests such as CogAT, WISC-V, OLSAT, or NNAT. In the United States, gifted identification occurs at the district level and generally requires meeting score thresholds in the top 2–5% across multiple criteria — not a single test result.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          GT programs are among the most sought-after placements in US public education, and the qualification process can be confusing for families navigating it for the first time. This guide explains how gifted programs work, what tests are used, what scores children need, and how to prepare effectively.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gifted programs exist in several formats, and the differences matter for how your child is identified and what placement looks like. The main types are:
         </p>
         <div className="grid sm:grid-cols-2 gap-4 mb-6">
           {[
@@ -198,31 +194,13 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
 
   'nwea-map-scores-explained': (
     <>
-      <p className="text-lg text-gray-600 leading-relaxed">
-        If your child&apos;s school uses NWEA MAP Growth tests, you have probably received a report
-        showing a &quot;RIT score&quot; and a percentile — and wondered what these numbers actually mean.
-        NWEA MAP is one of the most widely used adaptive assessments in US K–12 education, and the
-        RIT score is genuinely useful information about your child&apos;s academic development.
-        This guide explains what MAP tests measure, how to interpret RIT scores, what counts as
-        on track or advanced, and how to use the results to support your child&apos;s learning.
-      </p>
-
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is the NWEA MAP Growth Test?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          NWEA MAP (Measures of Academic Progress) Growth is a computer-adaptive achievement test
-          developed by the Northwest Evaluation Association. It is used by more than 9 million
-          students across the United States in grades K–12, and it measures academic performance
-          in Reading, Mathematics, Language Usage, and (for some grades) Science.
+          NWEA MAP (Measures of Academic Progress) Growth is a computer-adaptive achievement test developed by the Northwest Evaluation Association. Used by more than 9 million students across US grades K–12, it measures Reading, Mathematics, Language Usage, and Science. Unlike fixed tests, MAP adapts in real time — each question adjusts to your child&apos;s level based on their previous answer, so the test is always accurately calibrated without questions that are uniformly too easy or too hard.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          MAP Growth is administered on a computer and adapts in real time — if your child answers
-          a question correctly, the next question is harder; if they answer incorrectly, the next
-          question is easier. This adaptive format means the test is always calibrated to each
-          individual child&apos;s level, rather than giving every student the same fixed questions.
-          A third grader and a sixth grader can both take a MAP Reading test, and the test adapts
-          to produce an accurate score for each — without either child facing questions that are
-          uniformly too easy or too hard.
+          If your child&apos;s school uses NWEA MAP Growth tests, you have probably received a report showing a &quot;RIT score&quot; and a percentile — and wondered what these numbers actually mean. This guide explains how to interpret RIT scores, what counts as on track or advanced, and how to use the results to support your child&apos;s learning.
         </p>
         <p className="text-gray-700 leading-relaxed">
           Most schools administer MAP Growth two or three times a year — typically in the fall,
