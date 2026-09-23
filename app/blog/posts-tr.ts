@@ -246,13 +246,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'a-level-programlari-nedir',
     title: 'A Level Programları Nedir? İngiltere\'de Lise Son Sınıf Rehberi',
-    shortTitle: 'A Level Programları Nedir?',
+    shortTitle: 'A Level Nedir? 2026 Rehberi: Dersler, GCSE Farkı ve Üniversite Etkileri',
     description:
-      'A Level programları nedir, nasıl çalışır, hangi dersler seçilmeli? İngiltere\'de lise son sınıf sistemini üniversite başvuruları ve kariyer hedefleri açısından Türk aileler için kapsamlı biçimde açıklıyoruz.',
+      'A Level nedir? İngiltere\'de 16–18 yaş öğrencilerinin üniversiteye hazırlandığı iki yıllık program: hangi dersler seçilmeli, GCSE\'den ne farkı var, IB ile kıyaslaması nasıl ve Türk öğrenciler nasıl başvurabilir?',
     tldr: 'A-Level, İngiltere\'de 16–18 yaş arası öğrencilerin üniversite öncesinde aldığı iki yıllık bir yeterlilik programıdır. Öğrenciler tipik olarak 3 veya 4 ders seçer; her ders bağımsız sınav ve değerlendirmelerle belirlenir. Önde gelen sınav kurulları Cambridge, Edexcel ve OCR\'dır.',
 
     date: '2026-07-20',
-    dateModified: '2026-07-20',
+    dateModified: '2026-09-24',
     readTime: '10 dk okuma',
     tags: ['A Level', 'İngiltere Eğitim Sistemi', 'Üniversite Kabulü', 'Kariyer Gelişimi', 'İş Deneyimi'],
     faqs: [
@@ -625,6 +625,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'PISA 2026 ne zaman yapılacak?', a: 'PISA her üç yılda bir düzenlenir. 2025 döngüsü tamamlandığına göre bir sonraki PISA 2028 yılında gerçekleşecektir. "PISA 2026" olarak yapılan aramalar büyük olasılıkla 2025 sonuçlarını kastetmektedir — OECD, verileri sınav yılından yaklaşık bir yıl sonra yayımlar. 2025 sınavı Nisan–Haziran 2025\'te uygulanmış; sonuçlar 2025 yılı sonunda açıklanmıştır.' },
       { q: 'Türkiye PISA 2025\'te nasıl bir performans sergiledi?', a: 'Türkiye, PISA 2025\'te OECD ortalamasının altında kalmaya devam etmiştir. Matematik puanı yaklaşık 453 (OECD ortalaması 472), okuma puanı ise 456 (OECD ortalaması 476) olarak gerçekleşmiştir. Bu sonuçlar, Türkiye\'nin Singapur (575) ve Japonya (536) gibi en yüksek performanslı ülkelerin önemli ölçüde gerisinde olduğunu, ancak bazı AB ülkeleriyle benzer düzeyde yer aldığını göstermektedir.' },
       { q: 'PISA\'ya hazırlanmak için evde ne yapılabilir?', a: 'PISA bir bilgi sınavı değil; edinilmiş bilgiyi gerçek yaşam problemlerine uygulama sınavıdır. Bu nedenle PISA\'ya en etkili hazırlık: günlük matematik problemleri çözmek (hesap makinesi olmadan), her gün düzenli okuma alışkanlığı oluşturmak, açık uçlu ve mantık gerektiren sorular üzerinde tartışmak ve standartlaştırılmış bir değerlendirme ile mevcut düzeyi tespit etmektir. Çocuğunuzun gerçek düzeyini bilmek, hangi alanlara odaklanmanız gerektiğini netleştirir.' },
+      { q: 'PISA tarzı sorular ne demek?', a: 'PISA tarzı sorular, öğrencinin ezberden bilgi aktarması yerine bu bilgiyi gerçek yaşam bağlamına uygulamasını bekleyen sorulardır. Örneğin "6 × 7 = ?" yerine "Bir markette 6 adet ürün alan bir müşteri..." şeklinde kurgulanan alışveriş veya grafik yorumlama soruları. Bu format Türkiye\'nin ulusal sınavlarından (LGS/YKS) farklıdır; PISA\'da doğru cevap yanıtın nasıl gerekçelendirildiğine bağlıdır.' },
       { q: 'Çocuğumun PISA düzeyini ücretsiz nasıl ölçebilirim?', a: 'Eduentry, PISA ile aynı metodolojiye — madde tepki teorisi (IRT) — dayanan ücretsiz bir uyarlanabilir değerlendirme sunmaktadır. 6-17 yaş arası çocuklar matematik, İngilizce, sözel akıl yürütme ve sayısal akıl yürütme alanlarında test edilir ve ebeveynlere uluslararası kıyaslamalı bir yüzdelik dilim puanı iletilir. Kayıt gerekmez, sınav 20-30 dakika sürer.' },
     ],
     cta: {
@@ -769,9 +770,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'staj-defteri-nasil-doldurulur',
     title: 'Staj Defteri Nasıl Doldurulur? Örnek ve Açıklama',
-    shortTitle: 'Staj Defteri Nasıl Doldurulur? (2025–26) Adım Adım Rehber ve Örnekler',
+    shortTitle: 'Staj Defteri Nedir, Nereden Alınır ve Nasıl Doldurulur? (2025–26)',
     description:
-      'Staj defteri nasıl doldurulur? Günlük faaliyet kaydından haftalık özete, öğrenilen becerilerden yönetici onayına kadar her bölümü adım adım açıklıyoruz. Üniversite zorunlu stajı için örnek ifadeler ve sık yapılan hatalar.',
+      'Staj defteri nedir, nereden alınır ve nasıl doldurulur? Günlük faaliyet kaydından haftalık özete, yönetici onayına kadar her bölümü adım adım açıklıyoruz. Gönüllü staj ve üniversite zorunlu stajı için örnek ifadeler.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
@@ -782,6 +783,8 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Staj defteri zorunlu mu?', a: 'Üniversite zorunlu stajlarında evet, zorunludur. Staj defteri olmadan zorunlu staj tamamlanmış sayılmaz ve not verilmez. Lise gönüllü stajlarında yasal bir zorunluluk yoktur ancak tutulması tavsiye edilir.' },
       { q: 'Staj defteri nereden alınır?', a: 'Bağlı olunan fakülte veya yüksekokul, okul çevresindeki kırtasiyeler, SMMM (Serbest Muhasebeci Mali Müşavirler) odaları ve bazı okullarda dijital (elektronik staj defteri) sistemleri aracılığıyla temin edilebilir.' },
       { q: 'Staj defteri kaç günde bir doldurulur?', a: 'Staj defteri her çalışma günü doldurulur. Günlük notların detaylı olması beklenir: sabah ne yapıldı, öğrenilen yeni bilgi veya beceri, kimlerle çalışıldı. Hafta sonu ve resmi tatil günlerine ait bölüm bırakılmaz.' },
+      { q: 'Gönüllü stajda staj defteri doldurulur mu?', a: 'Yasal olarak zorunlu değildir. Ancak gönüllü stajda da bir staj defteri tutmak, deneyimi belgelemek ve ileride üniversite veya iş başvurularında kanıt sunmak açısından büyük avantaj sağlar. Format resmi olmak zorunda değildir; günlük bir çalışma günlüğü yeterlidir.' },
+      { q: 'Staj defteri ne zaman teslim edilir?', a: 'Üniversite zorunlu stajlarında teslim tarihi genellikle staj bitiminden 2–4 hafta sonrasıdır. Birçok fakültede ekim sonu veya güz dönemi başı teslimi geçerlidir. Kesin tarih bölüm staj koordinatöründen öğrenilmelidir; geç teslim notu düşürebilir ya da stajın geçersiz sayılmasına yol açabilir.' },
     ],
     cta: {
       heading: 'Staja hazır olduğundan emin misin?',
