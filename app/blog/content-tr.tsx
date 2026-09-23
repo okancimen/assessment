@@ -2537,17 +2537,13 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
 
   'pisa-nedir-cocugunuz-nasil-hazirlanir': (
     <>
-      <p className="text-lg text-gray-600 leading-relaxed">
-        Her üç yılda bir 91 ülkede gerçekleştirilen PISA sınavı, dünyanın en büyük eğitim kıyaslaması haline gelmiştir. Türk aileler için bu sınav çifte öneme sahiptir: hem Türkiye'nin uluslararası eğitim sistemindeki konumunu ortaya koyar, hem de bireysel çocuğun gerçek akademik seviyesini anlamak için güvenilir bir referans çerçevesi sunar. Bu yazıda PISA'yı, 2025 sonuçlarını ve çocuğunuzun bu standarda göre nerede durduğunu nasıl öğrenebileceğinizi açıklıyoruz.
-      </p>
-
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Nedir — Kısa ve Net Tanım</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Nedir?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          PISA, Programme for International Student Assessment'ın kısaltmasıdır. Türkçede "Uluslararası Öğrenci Değerlendirme Programı" olarak bilinir. OECD (Ekonomik İşbirliği ve Kalkınma Örgütü) tarafından 2000 yılından bu yana üç yılda bir uygulanmaktadır.
+          PISA (Programme for International Student Assessment — Uluslararası Öğrenci Değerlendirme Programı), OECD tarafından 2000 yılından bu yana her üç yılda bir 91 ülkede uygulanan uluslararası bir akademik kıyaslama programıdır. 15 yaşındaki öğrencilerin matematik, okuma ve fen bilimlerinde edindiği bilgiyi gerçek yaşam problemlerine uygulama becerisini ölçer; müfredat ezberini değil, pratik düşünme yetkinliğini kıyaslar.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          PISA, müfredat bilgisini değil; edinilmiş bilgiyi gerçek yaşam problemlerine uygulama becerisini ölçer. Bu ayrım kritiktir: ezberden yüksek not alan bir öğrenci, PISA türü sorularda zayıf kalabilir. Tersine, okul notları ortalama olan ama pratik düşünme becerisi güçlü olan bir öğrenci PISA'da üst dilimde yer alabilir.
+          Her üç yılda bir 91 ülkede gerçekleştirilen PISA, dünyanın en büyük eğitim kıyaslaması haline gelmiştir. Türk aileler için çifte öneme sahiptir: hem Türkiye'nin uluslararası eğitim sistemindeki konumunu ortaya koyar, hem de bireysel çocuğun gerçek akademik seviyesini anlamak için güvenilir bir referans çerçevesi sunar.
         </p>
         <Callout>
           <strong className="text-indigo-900">PISA üç temel alanı ölçer:</strong> Matematik (sayısal akıl yürütme, problem çözme), Okuma (anlama, çıkarım, eleştirel okuma) ve Fen Bilimleri (bilimsel düşünme, veri yorumlama). Her alan için uluslararası ortalama puan 500 olarak belirlenmiştir.
