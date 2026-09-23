@@ -785,6 +785,42 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/auth/register',
     },
   },
+  {
+    slug: 'dubai-gifted-schools-2026',
+    title: 'Finding a School in Dubai for Gifted Children: Top Programs and How to Apply in 2026',
+    shortTitle: 'Dubai Gifted Schools 2026: Top Programs, CAT4 Thresholds and How to Apply',
+    description:
+      'Which Dubai schools have the strongest programs for gifted and talented children? This guide covers the top British-curriculum and IB schools, how KHDA inspection ratings reflect gifted provision, CAT4 score requirements and the 2026 application process.',
+    tldr: 'Dubai\'s most recognised schools for gifted students include Dubai College, JESS Arabia, GEMS Wellington International, Repton School Dubai and Kings\' School Dubai. All use CAT4 for admissions and academic monitoring. KHDA Outstanding-rated schools are required to demonstrate measurable progress for their highest-ability students. A CAT4 mean SAS of 112+ (stanine 7+) typically qualifies a child for the school\'s gifted register.',
+    date: '2026-09-24',
+    dateModified: '2026-09-24',
+    readTime: '10 min read',
+    tags: ['UAE', 'Dubai Schools', 'Gifted Education', 'CAT4', 'KHDA'],
+    faqs: [
+      {
+        q: 'Which schools in Dubai are best for gifted children?',
+        a: 'The Dubai schools most consistently recognised for strong gifted and high-ability provision — based on KHDA Outstanding ratings and academic outcomes — include Dubai College (Year 7 entry, extremely selective), JESS Arabia (Jumeirah English Speaking School), GEMS Wellington International School, Repton School Dubai, and Kings\' School Dubai. All are British-curriculum schools that use CAT4 for admissions screening and ongoing academic monitoring.',
+      },
+      {
+        q: 'What CAT4 score does my child need for Dubai school admissions?',
+        a: 'For most British-curriculum schools in Dubai, a CAT4 mean SAS of 100–110 is sufficient for standard admission. Selective schools including Dubai College require significantly higher scores — SAS 120+ across batteries. For gifted register placement within a school, the typical threshold is SAS 112+ (stanine 7+) on CAT4. Dubai College selects only the top ~2–3% of applicants; expect to need SAS 125+ to be competitive.',
+      },
+      {
+        q: 'How do I check a Dubai school\'s gifted provision before applying?',
+        a: 'The most reliable method is to read the school\'s most recent KHDA inspection report, available free on the KHDA website (khda.gov.ae). Look specifically for the rating given to provision for "more able" and "gifted and talented" students. An Outstanding school should show evidence of enrichment programmes, subject acceleration, differentiated planning, and measurable above-expected progress for its highest-ability students.',
+      },
+      {
+        q: 'What is the school application timeline in Dubai?',
+        a: 'Most Dubai international schools open applications for the following September in October–December of the preceding year, with offers made by January–March. Popular Outstanding-rated schools fill quickly. For September 2027 entry, begin researching and visiting schools in September 2026, submit applications by November 2026, and expect CAT4 testing appointments in November–January. Schools will not hold places: submit strong, complete applications early.',
+      },
+    ],
+    cta: {
+      heading: 'Benchmark your child before applying',
+      body: 'Our free adaptive assessment gives your child a standardised score on the same mean-100, SD-15 scale as CAT4 — so you know exactly where they stand before the admissions round.',
+      label: 'Start free assessment',
+      href: '/tr#akademik',
+    },
+  },
   // Canada
   {
     slug: 'canada-gifted-program-identification',

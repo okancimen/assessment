@@ -527,4 +527,158 @@ export const UAE_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'dubai-gifted-schools-2026': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Dubai has one of the most competitive international school markets in the world, and for families
+        with academically able children, choosing the right school is a significant decision. Not all
+        Outstanding-rated schools are equally strong at stretching their highest-ability students.
+        This guide identifies the Dubai schools with the strongest track records for gifted and
+        high-ability learners, explains what to look for in a KHDA inspection report, and walks
+        through the 2026 admissions process.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Makes a Dubai School Good for Gifted Children?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          KHDA inspection reports rate schools across multiple categories. When evaluating a school
+          for a gifted child, the specific section to read is the rating for <strong>"provision for
+          students of determination and those with SEND"</strong> and separately the comments on
+          <strong>"more able and gifted students."</strong> Outstanding schools are expected to show:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check>A formal gifted register with students identified using objective data (typically CAT4 stanine 7+ and academic attainment in the top decile)</Check>
+          <Check>Subject acceleration or early examination entry where appropriate (e.g. GCSE in Year 9, A-level early)</Check>
+          <Check>Enrichment programmes beyond the standard curriculum — Maths Olympiad preparation, debating, research projects, competitive science</Check>
+          <Check>Above-expected academic progress for the most able group, measured across academic years</Check>
+          <Check>Qualified SENCO/G&T coordinator who tracks gifted students individually</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A school can be KHDA Outstanding overall and still receive a weaker rating for high-ability
+          provision. Always read the full report, not just the headline rating.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Top Dubai Schools for Gifted Students</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The following British-curriculum schools have the strongest combination of KHDA Outstanding
+          ratings, academic outcomes, and documented gifted provision. All use CAT4 as their primary
+          admissions and monitoring tool.
+        </p>
+
+        <div className="space-y-6 mb-6">
+          <div className="border border-gray-100 rounded-xl p-6">
+            <div className="flex items-start justify-between mb-2">
+              <h3 className="font-bold text-gray-900 text-lg">Dubai College</h3>
+              <span className="text-xs font-semibold bg-indigo-50 text-indigo-700 rounded-full px-3 py-1 flex-shrink-0 ml-3">Most selective</span>
+            </div>
+            <p className="text-gray-600 text-sm mb-2">Year 7 entry only. Consistently rated Outstanding by KHDA and widely regarded as Dubai&apos;s most academically selective school. Accepts approximately 90–100 students per year from several hundred applicants. The admissions process involves CAT4 testing and a school visit; competitive applicants typically score SAS 120–130+ across batteries. A-level results place it among the top schools in the region.</p>
+            <p className="text-sm text-gray-500">Curriculum: A-levels · Location: Al Quoz · Year 7–13 only</p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <h3 className="font-bold text-gray-900 text-lg mb-2">JESS Arabia (Jumeirah English Speaking School)</h3>
+            <p className="text-gray-600 text-sm mb-2">Two campuses: Jumeirah (FS–Year 13) and Arabian Ranches (FS–Year 9). Consistently Outstanding and known for rigorous academic standards and strong gifted and talented tracking from primary. Uses CAT4 throughout; students on the gifted register receive differentiated planning and enrichment. Strong Sixth Form outcomes and university destinations.</p>
+            <p className="text-sm text-gray-500">Curriculum: British (GCSE + A-level) · Locations: Jumeirah and Arabian Ranches</p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <h3 className="font-bold text-gray-900 text-lg mb-2">GEMS Wellington International School</h3>
+            <p className="text-gray-600 text-sm mb-2">Outstanding KHDA rating. One of the largest British-curriculum schools in Dubai with strong academic tracking from Year 1. Offers a broad range of enrichment including competitive Maths, Science Olympiad preparation and an extensive extracurricular programme. Accepts from FS1; admissions assessments include CAT4 from Year 3 upwards.</p>
+            <p className="text-sm text-gray-500">Curriculum: British (GCSE + A-level) · Location: Al Sufouh</p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <h3 className="font-bold text-gray-900 text-lg mb-2">Repton School Dubai</h3>
+            <p className="text-gray-600 text-sm mb-2">The UAE campus of the UK independent school Repton. Outstanding KHDA rating. Selective at Sixth Form but accepts wider ability range in lower years. Known for strong pastoral provision alongside academics. Uses CAT4 for admissions from Year 3. Good track record for subject acceleration and early GCSE entry for academically advanced students.</p>
+            <p className="text-sm text-gray-500">Curriculum: British (GCSE + A-level/IB) · Location: Nad Al Sheba</p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <h3 className="font-bold text-gray-900 text-lg mb-2">Kings&apos; School Dubai / Kings&apos; School Al Barsha</h3>
+            <p className="text-gray-600 text-sm mb-2">Primary-focused Outstanding schools (FS1–Year 6) with a strong academic reputation and structured G&T programme. Uses CAT4 from Year 2 for monitoring and parent reporting. Consistently produces students who go on to competitive secondary schools including Dubai College. Good choice for younger gifted children where primary-level provision quality matters most.</p>
+            <p className="text-sm text-gray-500">Curriculum: British · Locations: Umm Suqeim and Al Barsha · FS1–Year 6</p>
+          </div>
+        </div>
+
+        <Callout>
+          <strong className="text-indigo-900">Abu Dhabi note:</strong> For families in Abu Dhabi, BSAK (British School Al Khubairat) and Brighton College Abu Dhabi offer comparable gifted provision under the ADEK inspection framework. Both are Outstanding-rated and use CAT4 for admissions.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Read a KHDA Inspection Report</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          All KHDA inspection reports are available free at <strong>khda.gov.ae</strong>. Each school
+          is inspected every 1–3 years. When reviewing a report for gifted suitability, look for:
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Bullet><strong>Overall effectiveness rating</strong> — Outstanding, Very Good, Good, Acceptable, Weak or Very Weak. Only Outstanding and Very Good schools are worth considering for a gifted child.</Bullet>
+          <Bullet><strong>Students&apos; achievement section</strong> — look for "high achievers" or "most able" references. Are they described as making "strong" or "outstanding" progress, or just "acceptable"?</Bullet>
+          <Bullet><strong>Teaching and learning quality</strong> — does the report mention that teachers plan differentiated work for high-ability students? Generic praise is less useful than specific evidence.</Bullet>
+          <Bullet><strong>Leadership commentary</strong> — does the school have a strategy for gifted students? Is it mentioned as a strength or an area for development?</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A school rated Outstanding four years ago may have changed significantly. Check the date
+          of the most recent inspection and, if it is more than two years old, ask the school directly
+          about any KHDA visits since then.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The 2026 Admissions Process</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Most Dubai British-curriculum schools follow a similar admissions calendar:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>September–October 2026:</strong> Applications open for September 2027 entry. Visit school open days and submit enquiry forms. Popular schools receive more applications than they can interview.</Bullet>
+          <Bullet><strong>November–January:</strong> CAT4 assessment appointments offered. The test takes approximately 45–60 minutes and is administered at the school. Bring school reports from the previous two years.</Bullet>
+          <Bullet><strong>January–March 2027:</strong> Offers issued. Selective schools (Dubai College) make offers on strict merit rank order. Most other schools offer on availability and profile fit.</Bullet>
+          <Bullet><strong>March–April 2027:</strong> Acceptance deadline. Places not accepted by the deadline are reallocated.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Apply to 3–4 schools simultaneously. Do not wait for one result before applying to another
+          — popular schools close waiting lists quickly. For Dubai College, the application window is
+          strictly limited; missing it means waiting another full year.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Benchmarking Before the Admissions Round</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          CAT4 is a timed cognitive ability test covering verbal, quantitative, non-verbal and spatial
+          reasoning. It is not a subject knowledge test — preparation in the traditional sense is
+          limited. However, knowing your child&apos;s likely CAT4 performance in advance allows you
+          to target schools realistically: applying to Dubai College with a child likely to score SAS
+          100 will end in disappointment; applying to GEMS Wellington or Repton with SAS 115 is a
+          strong position.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A standardised assessment before the admissions round gives you objective data to work with.
+          Eduentry&apos;s free adaptive test produces a score on the same mean-100, SD-15 scale as CAT4
+          — directly comparable. It takes 20–30 minutes and requires no registration. Use it as a
+          starting point for realistic school targeting and to identify any cognitive areas worth
+          developing before the formal assessment.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/uae-cat4-test-guide', tag: 'Guide', title: 'UAE CAT4 Test Guide 2026: SAS Bands and School Requirements' },
+            { href: '/blog/uae-gifted-programs-guide', tag: 'Guide', title: 'Gifted Programs in UAE International Schools' },
+            { href: '/blog/uae-british-curriculum-school-admissions', tag: 'Guide', title: 'British Curriculum School Admissions in Dubai and Abu Dhabi' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
