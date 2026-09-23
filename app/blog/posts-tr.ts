@@ -329,13 +329,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'cocugunuz-dunyada-nerede-duruyor',
     contentSlug: 'how-does-your-child-compare-globally',
     title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor? Uluslararası Akademik Kıyaslama Rehberi',
-    shortTitle: 'Çocuğunuz Dünya Genelinde Nerede Duruyor?',
+    shortTitle: 'Çocuğunuz Dünyada Nerede? PISA 2025 Uluslararası Akademik Kıyaslama',
     description:
-      'Çoğu ebeveyn çocuğunun yalnızca ulusal sıralamadaki yerini biliyor. Ama seçici okullar, burs komiteleri ve önde gelen üniversiteler küresel yüzdelik dilimlerle düşünüyor. İşte uluslararası verilerin gerçekte gösterdiği — ve bunun çocuğunuzun geleceği için ne anlama geldiği.',
+      'Çocuğunuzun yalnızca sınıf sıralamasını değil, küresel yüzdelik dilimini öğrenin. PISA 2025 verileri, Türkiye ile Singapur, İngiltere ve OECD ortalaması arasındaki farkı net biçimde ortaya koyuyor. Uluslararası standartlarda çocuğunuz nerede duruyor?',
     tldr: 'OECD PISA matematik ortalaması 472 puandır. Türkiye, PISA 2022\'de matematikte 453 puan alarak OECD ortalamasının altında kaldı. Singapur (575 puan) ile Türkiye arasındaki yaklaşık 120 puanlık fark, yaklaşık 3 yıllık okul eğitimine karşılık geliyor.',
 
     date: '2026-07-02',
-    dateModified: '2026-07-18',
+    dateModified: '2026-09-23',
     readTime: '10 dk okuma',
     tags: ['Uluslararası Kıyaslama', 'PISA', 'Ebeveyn Rehberi', 'Standartlaştırılmış Test', 'Çocuk Gelişimi'],
     faqs: [
@@ -766,13 +766,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'staj-defteri-nasil-doldurulur',
     title: 'Staj Defteri Nasıl Doldurulur? Örnek ve Açıklama',
-    shortTitle: 'Staj Defteri Rehberi',
+    shortTitle: 'Staj Defteri Nasıl Doldurulur? (2025–26) Adım Adım Rehber ve Örnekler',
     description:
-      'Staj defteri nedir, nasıl doldurulur, nereden alınır? Üniversite zorunlu stajı için günlük staj defteri tutmanın adım adım rehberi ve örnek bölümler.',
+      'Staj defteri nasıl doldurulur? Günlük faaliyet kaydından haftalık özete, öğrenilen becerilerden yönetici onayına kadar her bölümü adım adım açıklıyoruz. Üniversite zorunlu stajı için örnek ifadeler ve sık yapılan hatalar.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
-    dateModified: '2026-09-15',
+    dateModified: '2026-09-23',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Staj Defteri', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi'],
     faqs: [

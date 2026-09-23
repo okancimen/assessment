@@ -390,7 +390,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'NWEA MAP Scores Explained: What RIT Scores Mean and How to Interpret Your Child\'s Results',
     shortTitle: 'NWEA MAP Scores Explained (2026): RIT Ranges by Grade',
     description:
-      'NWEA MAP RIT score benchmarks by grade for reading, maths and science — what is a good MAP score? 2025–26 national norm percentiles, growth targets, and what scores qualify for gifted programmes.',
+      'NWEA MAP RIT score benchmarks by grade for reading, math and science — is your child\'s score good? 2025–26 national norm percentiles, grade-level averages, and the RIT thresholds that qualify for gifted programs.',
     tldr: 'NWEA MAP Growth uses a RIT (Rasch Unit) scale — not percentage correct. The national average RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
@@ -461,13 +461,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'how-to-prepare-gifted-test',
     title: 'How to Prepare Your Child for a Gifted Test: A Practical Guide for US Families',
-    shortTitle: 'How to Prepare for a Gifted Test',
+    shortTitle: 'How to Prepare for a Gifted Test (2026): CogAT, OLSAT & NNAT',
     description:
-      'A practical, evidence-based guide for US families preparing for gifted identification testing — what each test measures, what is and isn\'t preparation-responsive, and how to build the right skills over time.',
+      'Can you prepare for a gifted test? Yes — but it depends on the test. This guide covers what\'s trainable for CogAT, OLSAT and NNAT, the specific skills that respond to practice, and how to build them without undermining the test\'s validity.',
     tldr: 'Effective preparation for US gifted tests (CogAT, OLSAT) focuses on abstract reasoning rather than content memorisation, since these tests measure cognitive ability not learned knowledge. The most trainable components are matrix reasoning, spatial reasoning, and non-verbal pattern recognition — all of which respond to structured practice.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '8 min read',
     tags: ['Gifted Testing', 'CogAT', 'NNAT', 'US Education', 'Preparation'],
     faqs: [
@@ -571,9 +571,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'netherlands-gifted-education-hoogbegaafd',
     title: 'Gifted Education in the Netherlands: Hoogbegaafdheid, WISC-V and What Schools Offer',
-    shortTitle: 'Gifted Education in the Netherlands 2026: Hoogbegaafdheid, WISC-V and Plusklas',
+    shortTitle: 'Gifted Education Netherlands 2026: Hoogbegaafd, WISC-V and Plusklas',
     description:
-      'How giftedness (hoogbegaafdheid) is identified in Dutch schools — WISC-V IQ 130+ threshold, plusklas enrichment classes, leonardoscholen and what options parents have in 2026.',
+      'Is your child hoogbegaafd? Dutch schools identify giftedness via WISC-V (IQ 130+). This guide covers plusklas pull-out enrichment, leonardoscholen entry, how to request an assessment, and what the 2026 process looks like for families.',
     tldr: 'In the Netherlands, giftedness (hoogbegaafdheid) is identified through a WISC-V assessment (IQ 130+). State schools offer plusklas enrichment but are not legally required to. A growing number of dedicated gifted schools (leonardoscholen) operate independently. Parents can request assessment through the school or privately via an educational psychologist.',
     date: '2026-06-17',
     dateModified: '2026-09-23',
@@ -1458,12 +1458,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'pisa-2025-work-experience-student-readiness',
     title: 'PISA 2025 Says Grades Are Falling — Here\'s Why Work Experience Is the Missing Answer',
-    shortTitle: 'PISA 2025 & Work Experience: The Student Readiness Gap',
-    description: 'OECD\'s PISA 2025 report reveals the lowest academic scores ever recorded. But the data also points to a solution: students who engage with the real world develop the skills schools can\'t teach. Here\'s what the evidence says about early work experience and internships.',
+    shortTitle: 'PISA 2025 Scores Are Falling — Why Work Experience Is the Answer',
+    description: 'PISA 2025 recorded the lowest academic scores ever. Countries with strong work-based learning (Germany, Switzerland) consistently outperform. Here\'s what the OECD data says about early work experience and why it builds the skills schools can\'t teach.',
     tldr: 'PISA 2025 assessed 690,000 15-year-olds across 91 countries. Countries with stronger work-based learning integration in secondary education (Germany, Switzerland, Austria) consistently score above OECD averages. PISA data shows a positive correlation between structured professional experience during secondary school and science and maths performance.',
 
     date: '2026-09-11',
-    dateModified: '2026-09-11',
+    dateModified: '2026-09-23',
     readTime: '13 min read',
     tags: ['Work Experience', 'Internship', 'Student Skills', 'Future of Education', 'Career Development'],
     faqs: [
