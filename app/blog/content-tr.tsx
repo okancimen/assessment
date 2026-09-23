@@ -646,6 +646,21 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Her iki durumda da başlangıç noktası aynı: çocuğun gerçekte nerede durduğuna dair dürüst, standartlaştırılmış bir okuma. Her şey faydalı olan buradan çıkıyor.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir', tag: 'Rehber', title: 'PISA Nedir? 2025 Sonuçları, Türkiye Sıralaması ve Hazırlık Rehberi' },
+            { href: '/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur', tag: 'Rehber', title: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -1896,6 +1911,21 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Bir ebeveyn olarak şu anda yapabileceğiniz en güçlü eylem, ulusal istatistiklerden kendi çocuğunuzun bireysel konumuna geçmektir. PISA küresel hikâyeyi anlatır. Bilmeniz gereken kendi bölümünüzdür. Eduentry&apos;nin uyarlanabilir değerlendirmesi 20 dakika sürer, tamamen ücretsizdir ve çocuğunuzu PISA&apos;nın kullandığı uluslararası ölçeğe yerleştirir. Çocuğunuzun nerede durduğunu öğrendikten sonra, kaygıyla değil, kesinlikle hareket edebilirsiniz.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir', tag: 'Rehber', title: 'PISA Nedir? 2025 Sonuçları, Türkiye Sıralaması ve Hazırlık Rehberi' },
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Kıyaslama', title: 'Çocuğunuz Dünyada Nerede? PISA 2025 Uluslararası Kıyaslama' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -2585,6 +2615,22 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Sınav tamamen ücretsizdir, kayıt gerektirmez ve 20-30 dakika sürer. 6-17 yaş arasındaki tüm öğrenciler için uygundur.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Kıyaslama', title: 'Çocuğunuz Dünyada Nerede? PISA 2025 Uluslararası Kıyaslama' },
+            { href: '/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur', tag: 'Rehber', title: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?' },
+            { href: '/tr/blog/pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler', tag: 'Analiz', title: 'PISA 2025: Ebeveynlerin Bilmesi Gerekenler' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -2735,6 +2781,21 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <Callout>
           <strong className="text-indigo-900">Pratik kullanım:</strong> Sonuçları tek seferlik bir fotoğraf değil, tekrar edilebilir bir ölçüm olarak kullanın. Altı ayda bir yapılan değerlendirme, ilerlemeyi veya dikkate alınması gereken duraksamaları somut biçimde gösterir.
         </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir', tag: 'Rehber', title: 'PISA Nedir? 2025 Sonuçları, Türkiye Sıralaması ve Hazırlık Rehberi' },
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Kıyaslama', title: 'Çocuğunuz Dünyada Nerede? PISA 2025 Uluslararası Kıyaslama' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
