@@ -396,7 +396,7 @@ export const NL_CONTENT: Record<string, React.ReactNode> = {
           <Bullet><strong>Plusklas (enrichment class):</strong> Many basisscholen offer a plusklas — a pull-out group for high-ability children that provides enrichment activities (usually 1–2 half-days per week) beyond the regular curriculum. The quality and depth of plusklas provision varies enormously between schools.</Bullet>
           <Bullet><strong>Compacten en verrijken (curriculum compaction):</strong> The regular curriculum is compacted for a gifted child (they complete core work in less time) and the freed-up time is used for deepening or extension work. This happens within the regular classroom.</Bullet>
           <Bullet><strong>Versnelling (grade skipping):</strong> Some children are accelerated one or more grade levels. This is done in consultation with the school, an orthopedagoog, and the parents. It is more accepted in the Netherlands than in some other countries.</Bullet>
-          <Bullet><strong>Leonardoscholen:</strong> A small number of dedicated primary schools for gifted children (IQ 130+) operate in the Netherlands, often privately funded. The most notable is the Leonardo network in Amsterdam and other cities. Entry requires formal psychodiagnostisch assessment confirming IQ 130+.</Bullet>
+          <Bullet><strong>Leonardoscholen:</strong> A small number of dedicated primary schools for gifted children (IQ 130+) operate in the Netherlands, often privately funded. The most notable is the Leonardo network in Amsterdam and other cities. Entry requires formal psychodiagnostisch assessment confirming IQ 130+. Leonardoscholen charge no additional tuition beyond normal Dutch school costs — they are publicly funded specialist schools, not private fee-paying institutions.</Bullet>
           <Bullet><strong>VWO with enrichment:</strong> At secondary level, many schools offering VWO have a specific programme for exceptionally able students (often called Campus or Honours streams) that provides deepening beyond the standard VWO curriculum.</Bullet>
         </ul>
       </section>
@@ -422,6 +422,19 @@ export const NL_CONTENT: Record<string, React.ReactNode> = {
           <Link href="/blog/netherlands-international-school-admissions" className="text-indigo-600 hover:underline">
             international school admissions in the Netherlands
           </Link>, which covers the CAT4 cognitive assessment that most British-curriculum schools use.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Is Gifted Education in the Netherlands Expensive?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The short answer is: the publicly funded options are free. Plusklas provision within a regular basisschool costs nothing beyond normal school attendance. Leonardoscholen — dedicated schools for children with IQ 130+ — are publicly funded specialist schools in the Netherlands, not private fee-paying institutions. Families pay the standard Dutch school contribution (vrijwillige ouderbijdrage, typically €50–€150 per year) rather than independent school tuition.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Where costs do arise is in assessment. A private psychodiagnostisch onderzoek (WISC-V NL) for gifted identification typically costs €600–€1,200 in the Netherlands. School-arranged assessments are free but can have waiting times of 6–18 months depending on the municipality. If you want to establish your child's cognitive profile quickly — whether for school discussions, Leonardoschool entry, or your own planning — a private assessment is the fastest route, not necessarily the cheapest.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          An alternative starting point is a benchmarked online assessment. Eduentry's free adaptive test gives children aged 6–17 a standardised score on the same mean-100, SD-15 scale used in formal assessments — a useful first data point before committing to a formal psychodiagnostisch onderzoek.
         </p>
       </section>
     </>

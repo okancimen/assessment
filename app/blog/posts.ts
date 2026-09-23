@@ -1302,8 +1302,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'nsw-opportunity-class-test-guide',
     title: 'NSW Opportunity Class Test: Complete Guide for Parents (2026)',
-    shortTitle: 'NSW Opportunity Class Test 2026: Score Cutoffs, Format and Preparation',
-    description: 'NSW OC test 2026 — Thinking Skills and Reading components, score cutoffs by district, how offers are ranked, and a preparation plan for Year 3 children targeting an opportunity class.',
+    shortTitle: 'NSW Opportunity Classes 2026: What They Are, OC Test and How to Get In',
+    description: 'What are NSW Opportunity Classes? OC classes are academically enriched Year 5–6 programs in NSW public primary schools. This guide covers the OC test format, score cutoffs by district, how places are ranked and how to prepare.',
     tldr: 'NSW Opportunity Classes run from Year 5 in public primary schools across NSW. The entry test is taken in Year 3 and covers two components: Thinking Skills and Reading. Offers are made on an ordered merit score combining both. Approximately 4,200 places are available annually across around 75 public schools.',
     date: '2026-09-11',
     dateModified: '2026-09-23',
