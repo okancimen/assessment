@@ -244,7 +244,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'What Is a Standardised Score? A Clear Guide for Parents',
     shortTitle: 'What Is a Standardised Score? Mean 100, Percentiles and SAS Bands Explained',
     description:
-      'Standardised scores, percentile rankings and Standardised Age Scores (SAS) explained in plain language — what the numbers mean, what counts as a good score, and how Eduentry uses the same scale as professional assessments.',
+      'Standardised scores explained for parents: a score of 100 is average for age, 115 is the 84th percentile, 130 is the 98th. Covers SAS bands, what counts as a good score, and how grammar school and gifted programme thresholds work.',
     tldr: 'A standardised score of 100 is exactly average for age; 115 is the 84th percentile; 130 is the 98th percentile. For 11+ grammar school entry, most areas outside London require a Standardised Age Score (SAS) of 111–118; Barnet and Sutton selective schools require 121–132.',
     date: '2026-06-17',
     dateModified: '2026-09-23',
@@ -862,13 +862,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'canada-private-school-entrance-exams',
     title: 'Canadian Private School Entrance Exams: ISEE, SSAT and How Top Schools Select Students',
-    shortTitle: 'Canada Private School Entrance Exams',
+    shortTitle: 'Canada Private School Entrance Exams (2026): ISEE, SSAT and Top Schools',
     description:
       'How admissions work at Canada\'s top independent schools — Upper Canada College, Havergal, Ridley — including ISEE and SSAT requirements, competitive score ranges, and the full application timeline.',
     tldr: 'Most Canadian independent schools use the ISEE or SSAT for admissions. The ISEE reports stanine scores (1–9); competitive schools including Upper Canada College, Havergal, Bishop Strachan, and Ridley College typically expect stanine 7 or above. Most schools accept both tests; some have a stated preference.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-09-23',
     readTime: '8 min read',
     tags: ['Canada', 'Private Schools', 'ISEE', 'SSAT', 'Independent Schools'],
     faqs: [
@@ -1419,11 +1419,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: '11-plus-maths-guide',
     title: '11+ Maths: Topics, Question Types and How to Practise',
-    shortTitle: '11+ Maths Guide',
+    shortTitle: '11+ Maths (2026): Topics, Question Types and GL vs CEM Differences',
     description: 'Complete guide to 11+ Maths — every topic tested, question types by exam board (GL Assessment and CEM), common mistakes and how to practise effectively for a top standardised score.',
     tldr: 'The 11+ maths paper tests KS2 curriculum content at higher speed and complexity than standard school work. Key topics include number and arithmetic, fractions, decimals, percentages, ratio, algebra, geometry, and data handling. Most successful candidates are working approximately one year ahead of their school year group in maths, with rapid mental arithmetic recall essential under time pressure.',
     date: '2026-09-11',
-    dateModified: '2026-09-11',
+    dateModified: '2026-09-23',
     readTime: '10 min read',
     tags: ['11 Plus', 'Mathematics', 'Grammar Schools', 'UK Education', 'Academic Assessment'],
     faqs: [
