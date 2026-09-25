@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import CtaLink from '@/components/ui/CtaLink'
@@ -123,7 +123,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const post = getPostBySlug(slug)
-  if (!post) notFound()
+  if (!post) {
+    if (BLOG_POSTS_TR.some(p => p.slug === slug)) redirect(`/tr/blog/${slug}`)
+    if (BLOG_POSTS_ES.some(p => p.slug === slug)) redirect(`/es/blog/${slug}`)
+    if (BLOG_POSTS_FR.some(p => p.slug === slug)) redirect(`/fr/blog/${slug}`)
+    if (BLOG_POSTS_AR.some(p => p.slug === slug)) redirect(`/ar/blog/${slug}`)
+    if (BLOG_POSTS_RU.some(p => p.slug === slug)) redirect(`/ru/blog/${slug}`)
+    if (BLOG_POSTS_ZH.some(p => p.slug === slug)) redirect(`/zh/blog/${slug}`)
+    notFound()
+  }
 
   const url = `${BASE_URL}/blog/${slug}`
 
