@@ -656,6 +656,171 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: '/fr#academique',
     },
   },
+  {
+    slug: 'qu-est-ce-qu-un-score-standardise',
+    contentSlug: 'what-is-a-standardised-score',
+    title: 'Qu\'est-ce qu\'un score standardisé ? Guide pour les parents sur l\'évaluation éducative',
+    shortTitle: 'Qu\'est-ce qu\'un score standardisé ?',
+    description:
+      'Qu\'est-ce qu\'un score standardisé et pourquoi est-il important ? Explication de l\'échelle avec une moyenne de 100 et un écart-type de 15, utilisée dans les tests 11+, CAT4, CogAT et NWEA MAP.',
+    tldr: 'Un score standardisé mesure comment votre enfant performe par rapport à d\'autres enfants du même âge, sur une échelle avec une moyenne de 100 et un écart-type de 15. Cette échelle commune est utilisée par le CAT4, GL Assessment 11+, le CogAT et Eduentry, ce qui permet des comparaisons significatives entre tests différents. Un score de 115 correspond au 84e percentile — au-dessus de la moyenne — quel que soit le test utilisé.',
+    date: '2026-09-26',
+    dateModified: '2026-09-26',
+    readTime: '7 min de lecture',
+    tags: ['academic-testing'],
+    faqs: [
+      {
+        q: 'Qu\'est-ce qu\'un score standardisé et pourquoi est-il plus utile qu\'un pourcentage ?',
+        a: 'Un score standardisé compare votre enfant à d\'autres enfants du même âge, plutôt que de simplement indiquer le pourcentage de bonnes réponses. Un score de 100 signifie exactement dans la moyenne, 115 correspond au 84e percentile. Deux enfants qui répondent correctement à 70 % des questions peuvent recevoir des scores standardisés très différents si le test avait des niveaux de difficulté différents — le score standardisé tient compte de cela.',
+      },
+      {
+        q: 'Quelle est la différence entre un score standardisé et un percentile ?',
+        a: 'Le percentile est dérivé du score standardisé. Un score standardisé de 115 correspond au 84e percentile, ce qui signifie que votre enfant a fait mieux que 84 % des enfants du même âge. Les deux sont utiles : le score standardisé vous permet de comparer des tests différents, le percentile vous permet d\'expliquer facilement le résultat.',
+      },
+      {
+        q: 'Qu\'est-ce que le SAS dans le contexte du 11+ britannique ?',
+        a: 'Le SAS (Standard Age Score) est le format de score standardisé utilisé par GL Assessment pour le 11+. Il introduit un ajustement supplémentaire pour l\'âge exact en mois de l\'enfant au moment du test. Cela compense le fait que les enfants les plus âgés d\'une cohorte ont un avantage développemental sur les plus jeunes — le SAS met chaque enfant sur un pied d\'égalité avec ceux nés dans la même plage de mois.',
+      },
+    ],
+    cta: {
+      heading: 'Découvrez le niveau de votre enfant — gratuitement',
+      body: 'L\'évaluation adaptative Eduentry génère un score standardisé sur la même échelle que le CAT4 et le 11+, pour les enfants de 6 à 17 ans. 20 minutes, sans inscription préalable.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: 'https://eduentry.com/fr',
+    },
+  },
+  {
+    slug: 'scores-nwea-map-expliques',
+    contentSlug: 'nwea-map-scores-explained',
+    title: 'Scores NWEA MAP : comprendre les résultats de votre enfant',
+    shortTitle: 'Scores NWEA MAP : guide complet',
+    description:
+      'Qu\'est-ce que le NWEA MAP et comment interpréter les résultats du test ? Guide sur l\'échelle RIT, les percentiles et les objectifs de progression pour les parents.',
+    tldr: 'Le NWEA MAP Growth est un test adaptatif utilisé dans les écoles américaines et certains établissements internationaux. Les scores RIT (Rasch Unit) mesurent le niveau absolu de l\'enfant sur une échelle continue de la maternelle à la terminale. Un élève de CM2 avec un RIT de mathématiques de 216 se situe au 75e percentile pour son niveau. La progression typique est de 6 à 8 points RIT par an au primaire.',
+    date: '2026-09-26',
+    dateModified: '2026-09-26',
+    readTime: '7 min de lecture',
+    tags: ['academic-testing'],
+    faqs: [
+      {
+        q: 'Qu\'est-ce qu\'un bon score RIT au NWEA MAP ?',
+        a: 'Un « bon » score RIT dépend du niveau scolaire et de la matière. En CM2 (Grade 5 américain), la moyenne nationale en mathématiques est d\'environ 205 en automne. Un score de 216 correspond au 75e percentile. Ce qui est plus important que le score absolu, c\'est la progression : un enfant qui gagne 10 points RIT dans une année où la norme est 7 montre une croissance accélérée.',
+      },
+      {
+        q: 'La différence entre le score RIT et le percentile ?',
+        a: 'Le score RIT est une mesure absolue — il indique où se situe votre enfant sur la progression des connaissances de la maternelle au lycée, quel que soit son niveau. Un RIT de 215 en mathématiques signifie toujours le même niveau. Le percentile est relatif — il compare votre enfant aux élèves du même niveau à la même période de l\'année. Utilisez le RIT pour comprendre le contenu que votre enfant est prêt à apprendre ; utilisez le percentile pour la comparaison avec les pairs.',
+      },
+      {
+        q: 'Un score MAP élevé déclenche-t-il automatiquement une évaluation pour les programmes surdoués ?',
+        a: 'Cela dépend du district scolaire. Certains districts déclenchent automatiquement une orientation vers les programmes EHP (Gifted and Talented) lorsqu\'un enfant score au 95e percentile ou plus sur MAP. D\'autres nécessitent qu\'un parent ou un enseignant initie le processus. Si votre enfant score à ce niveau et que vous n\'avez pas reçu d\'information sur les programmes EHP, il vaut la peine de demander explicitement au directeur ou à l\'enseignant.',
+      },
+    ],
+    cta: {
+      heading: 'Découvrez le niveau de votre enfant — gratuitement',
+      body: 'L\'évaluation adaptative Eduentry génère un score standardisé sur la même échelle internationale, pour les enfants de 6 à 17 ans. 20 minutes, sans inscription préalable.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: 'https://eduentry.com/fr',
+    },
+  },
+  {
+    slug: 'guide-evaluation-programmes-surdoues',
+    contentSlug: 'gifted-program-testing-guide',
+    title: 'Programmes pour enfants surdoués : guide complet d\'évaluation et d\'accès',
+    shortTitle: 'Guide d\'évaluation pour les programmes surdoués',
+    description:
+      'Comment fonctionnent les tests d\'accès aux programmes pour élèves à haut potentiel. CogAT, OLSAT, NWEA MAP et les scores requis pour être admis.',
+    tldr: 'Les programmes EHP (Gifted and Talented) aux États-Unis utilisent principalement le CogAT, le WISC-V et le NWEA MAP pour l\'identification. La plupart des programmes de retrait partiel exigent le 90e–95e percentile ; les écoles magnet spécialisées exigent le 97e–99e percentile. L\'identification n\'est pas basée sur un seul test mais sur une combinaison de scores, d\'évaluations enseignants et de portfolio.',
+    date: '2026-09-26',
+    dateModified: '2026-09-26',
+    readTime: '8 min de lecture',
+    tags: ['academic-testing'],
+    faqs: [
+      {
+        q: 'Quel score mon enfant doit-il obtenir pour accéder à un programme surdoué ?',
+        a: 'Cela dépend du type de programme et du district. Pour la plupart des programmes de retrait partiel, un score au 90e–95e percentile sur un test comme le CogAT est typiquement requis. Pour les écoles magnet spécialisées comme NYC Gifted & Talented, il faut atteindre le 97e–99e percentile. L\'équivalent en score standardisé (échelle 100, écart-type 15) est environ 120–125 pour les programmes standards, et 128–135 pour les plus sélectifs.',
+      },
+      {
+        q: 'Mon enfant peut-il préparer les tests EHP ?',
+        a: 'Cela dépend du test. Le WISC-V (test de QI individuel) ne peut pas vraiment être préparé — il mesure l\'aptitude cognitive, pas les connaissances. En revanche, le CogAT, le NNAT et l\'OLSAT répondent à la pratique car ils testent des compétences de raisonnement influencées par l\'exposition. La méthode la plus efficace : pratique du format spécifique du test, puzzles de matrices et de raisonnement non verbal, et lecture extensive sur 12 mois.',
+      },
+      {
+        q: 'Mon enfant n\'a pas été sélectionné. Que faire ?',
+        a: 'Ne pas se qualifier initalement n\'est pas un plafond permanent. De nombreux enfants qui ne se qualifient pas à 6 ou 7 ans le font lors d\'une réévaluation à 8 ou 9 ans. Si votre enfant était à la limite du seuil, demandez une réunion avec le coordinateur EHP pour comprendre exactement ce qui a manqué et quelles compétences développer avant une nouvelle évaluation. Concentrez-vous sur les aptitudes sous-jacentes plutôt que sur la préparation intensive au test.',
+      },
+    ],
+    cta: {
+      heading: 'Découvrez le niveau de votre enfant — gratuitement',
+      body: 'L\'évaluation adaptative Eduentry génère un score standardisé sur la même échelle que le CogAT et les tests EHP, pour les enfants de 6 à 17 ans. 20 minutes, sans inscription préalable.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: 'https://eduentry.com/fr',
+    },
+  },
+  {
+    slug: 'ecoles-selectionnees-uk-2026',
+    contentSlug: 'grammar-school-entry-requirements-2026',
+    title: 'Écoles sélectives au Royaume-Uni : critères d\'admission 2026',
+    shortTitle: 'Écoles sélectives UK : critères 2026',
+    description:
+      'Scores et critères requis pour les grammar schools au Royaume-Uni en 2026. Seuils par région, différences entre comtés et conseils pour les candidatures.',
+    tldr: 'Les grammar schools en Angleterre sélectionnent leurs élèves par l\'examen 11+ (SAS : Standard Age Score, échelle 100 / écart-type 15). Les seuils varient selon la région : de SAS 111–115 dans les zones moins compétitives (Hertfordshire, Essex) à SAS 121–132 pour les écoles londoniennes les plus sélectives. Dans les zones très compétitives, le score compétitif réel est significativement au-dessus du seuil officiel de réussite.',
+    date: '2026-09-26',
+    dateModified: '2026-09-26',
+    readTime: '8 min de lecture',
+    tags: ['academic-testing'],
+    faqs: [
+      {
+        q: 'Quel score SAS faut-il pour intégrer une grammar school au Royaume-Uni ?',
+        a: 'Cela dépend fortement de la région. Dans le Hertfordshire et certaines parties de l\'Essex, un SAS de 111–115 peut suffire pour obtenir une place. Dans le Kent, les seuils compétitifs sont de 115–121. À Londres (Barnet, Sutton), les écoles les plus sélectives exigent 118–132. Il y a une différence importante entre le seuil formel de réussite (qui donne accès au registre sélectif) et le score compétitif réel qui obtient une place dans une école surdemandée.',
+      },
+      {
+        q: 'Quelle est la différence entre GL Assessment et CEM pour le 11+ ?',
+        a: 'GL Assessment (utilisé dans le Kent, l\'Essex, le Hertfordshire et la plupart des écoles individuelles) teste le raisonnement verbal, non verbal, l\'anglais et les mathématiques dans des épreuves séparées et clairement labellisées. CEM (utilisé dans le Buckinghamshire et certaines écoles de Birmingham) mélange différents types de raisonnement sans labellisation par matière et est délibérément plus difficile à préparer avec les cahiers d\'exercices classiques. La préparation doit être adaptée au format spécifique du test utilisé par chaque école.',
+      },
+      {
+        q: 'Mon enfant peut-il faire appel s\'il n\'obtient pas de place ?',
+        a: 'Oui. Les familles ont le droit de faire appel auprès d\'un panel indépendant. Un appel peut réussir sur deux bases : une erreur procédurale de l\'autorité d\'admission dans l\'application de ses critères publiés, ou la démonstration que l\'intérêt de l\'enfant à fréquenter l\'école l\'emporte sur l\'intérêt de l\'école à limiter les effectifs. Une évaluation standardisée indépendante montrant un score plus élevé que le résultat officiel du 11+ est l\'un des éléments de preuve les plus utiles dans un recours.',
+      },
+    ],
+    cta: {
+      heading: 'Découvrez le niveau de votre enfant — gratuitement',
+      body: 'L\'évaluation adaptative Eduentry utilise la même échelle standardisée que GL Assessment (moyenne 100, écart-type 15) pour les enfants de 6 à 17 ans. 20 minutes, sans inscription préalable.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: 'https://eduentry.com/fr',
+    },
+  },
+  {
+    slug: 'test-cat4-guide-complet',
+    contentSlug: 'uae-cat4-test-guide',
+    title: 'Test CAT4 : guide complet pour les parents',
+    shortTitle: 'Test CAT4 : guide complet',
+    description:
+      'Qu\'est-ce que le test CAT4, que mesure-t-il et comment interpréter les résultats ? Guide complet pour les parents sur l\'évaluation cognitive dans les écoles britanniques et internationales.',
+    tldr: 'Le CAT4 mesure le raisonnement verbal, quantitatif, non verbal et spatial sur une échelle SAS (moyenne 100, écart-type 15). Utilisé dans plus de 3 000 écoles au Moyen-Orient et dans les écoles britanniques internationales, il évalue les aptitudes cognitives indépendamment des connaissances scolaires. Un SAS moyen de 90–95 est le seuil en dessous duquel certaines écoles considèrent qu\'un enfant pourrait avoir du mal avec leur programme.',
+    date: '2026-09-26',
+    dateModified: '2026-09-26',
+    readTime: '8 min de lecture',
+    tags: ['academic-testing'],
+    faqs: [
+      {
+        q: 'Qu\'est-ce que le CAT4 et pourquoi les écoles britanniques l\'utilisent-elles ?',
+        a: 'Le CAT4 (Cognitive Abilities Test 4) est publié par GL Assessment et mesure les aptitudes cognitives dans quatre domaines : verbal, quantitatif, non verbal et spatial. Les écoles l\'utilisent car il évalue le potentiel de raisonnement indépendamment des connaissances scolaires — un enfant qui vient d\'un autre pays ou dont l\'anglais n\'est pas la langue maternelle peut être évalué équitablement. Les résultats aident les écoles à identifier leur groupe de niveau, à détecter la sous-réussite et à planifier le soutien pédagogique.',
+      },
+      {
+        q: 'Qu\'est-ce qu\'un bon score CAT4 ?',
+        a: 'Sur l\'échelle SAS (moyenne 100, écart-type 15), un score de 100 est exactement dans la moyenne. 112–118 correspond au stanine 7 (au-dessus de la moyenne). 119–126 au stanine 8 (élevé). 127+ au stanine 9 (très élevé, top 4 %). Pour les admissions dans les écoles les plus sélectives, un SAS moyen de 112+ est souvent attendu. Pour les groupes de niveau supérieur dans les matières principales, un SAS de 104–111 dans la matière concernée est généralement le seuil.',
+      },
+      {
+        q: 'Mon enfant peut-il préparer le CAT4 ?',
+        a: 'Partiellement. Le CAT4 est un test de raisonnement, pas de connaissances, ce qui limite les possibilités de préparation. Cependant, les batteries non verbale et spatiale répondent à la pratique : les puzzles de matrices de figures, les activités de pliage de papier et les jeux de construction spatiaux (Lego, tangrams) améliorent modestement les performances. La batterie verbale est difficile à préparer si l\'anglais n\'est pas la langue maternelle — les écoles le savent et interprètent les scores verbaux en tenant compte du statut EAL.',
+      },
+    ],
+    cta: {
+      heading: 'Découvrez le niveau de votre enfant — gratuitement',
+      body: 'L\'évaluation adaptative Eduentry utilise la même échelle standardisée que le CAT4 (moyenne 100, écart-type 15) pour les enfants de 6 à 17 ans. 20 minutes, sans inscription préalable.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: 'https://eduentry.com/fr',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

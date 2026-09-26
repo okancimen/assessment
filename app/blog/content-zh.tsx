@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Bullet, Callout, Check } from './blog-components'
 
 export const ZH_CONTENT: Record<string, React.ReactNode> = {
@@ -894,6 +895,597 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           如果您的孩子仍在高中阶段，这扇窗口还是开着的。不需要等到下一轮PISA，不需要等到大学申请季。从了解孩子真实的全球学业位置开始，从创造真实的应用情境开始，就是在做PISA最想看到的那件事：为孩子的未来打下真正扎实的基础。
+        </p>
+      </section>
+    </>
+  ),
+
+  'what-is-a-standardised-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        如果您的孩子最近参加了某项学术测评——英国11+模拟考、CAT4认知能力测试或在线诊断评估——您很可能在结果报告中看到了一个"标准化分数"，旁边还有一个原始答对率。大多数家长会直接看答对率，而忽略标准化分数。这是一个常见但代价不小的误区。本文将解释什么是标准化分数、为什么它比原始分更重要，以及如何正确解读孩子的测评报告。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">什么是标准化分数？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          标准化分数并不是孩子答对了多少道题，而是孩子的成绩相对于同龄参照群体的位置。绝大多数教育评估工具——包括英国11+入学考试、GL Assessment、CAT4、美国CogAT和NWEA MAP——都采用同一套量表：均值100、标准差15。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          这意味着，无论哪次测试、无论题目难度如何，115分始终代表同一个含义：该孩子的成绩处于同龄人中的第84百分位，超过了84%的同龄孩子。这种跨测试的可比性，正是标准化分数最核心的价值所在。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">为什么原始分数会误导家长？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          原始分数（比如60题中答对43题）只告诉您一件事：孩子在这次特定考试中答对了72%的题目。它无法告诉您这次考试难不难、其他同龄孩子表现如何、72%对这个年龄段的孩子来说是强还是弱，以及三个月后孩子进步了多少。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          对于正在准备升学考试或希望了解孩子学术发展轨迹的家庭来说，这些才是最重要的问题。原始分数无法回答它们，标准化分数可以。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">关键原则：</strong>两个孩子都答对43道题，但如果一个比另一个大18个月，或者参加了不同难度的测试，他们的标准化分数可能差异显著。标准化分数消除了年龄和题目难度的干扰，让每个孩子只与同年龄段的孩子进行比较。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">标准化量表：均值100，标准差15</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          几乎所有主流标准化测评都使用同一套量表：均值（平均分）100，标准差15。这套量表与韦氏智力测验、斯坦福-比内量表以及大多数专业心理测量工具所使用的完全一致。因此，Eduentry评估中的115分与CAT4测试中的115分，代表的是同等的相对位置。
+        </p>
+        <div className="rounded-xl border border-gray-100 overflow-hidden mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">分数区间</th>
+                <th className="text-left p-4 font-semibold text-gray-700">分类描述</th>
+                <th className="text-left p-4 font-semibold text-gray-700">大致百分位</th>
+                <th className="text-left p-4 font-semibold text-gray-700">人群占比</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['130+', '极优秀', '前2%', '约2%'],
+                ['120–129', '优秀', '第91–98百分位', '约7%'],
+                ['110–119', '高于平均', '第75–91百分位', '约16%'],
+                ['95–109', '平均水平', '第37–63百分位', '约25%'],
+                ['85–94', '略低于平均', '第16–36百分位', '约16%'],
+                ['70–84', '偏低/需要支持', '第2–15百分位', '约14%'],
+              ].map(([range, label, pct, pop]) => (
+                <tr key={range} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono font-semibold text-gray-900">{range}</td>
+                  <td className="p-4 text-gray-700">{label}</td>
+                  <td className="p-4 text-gray-500">{pct}</td>
+                  <td className="p-4 text-gray-400">{pop}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          由于标准差为15，每提高15分就代表高出一个标准差。115分（均值上方一个标准差）约等于第84百分位；130分（均值上方两个标准差）约等于第98百分位。这些换算关系在所有使用该量表的测评中是一致的。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">百分位是什么意思？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          百分位是解读标准化分数最直观的方式。孩子的百分位排名告诉您：他/她的成绩超过了同龄人中的多大比例。第84百分位意味着孩子超过了84%的同龄孩子，并被16%的孩子超过。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          两个常见误解值得澄清。第一：第50百分位不是"差"，它恰好意味着中等水平——优于一半同龄人，也被另一半超过。很多家长看到50百分位就以为孩子有问题，实际上孩子的表现完全正常。第二：百分位不等于答题正确率。在一套难题中答对70%可能达到第85百分位；在一套简单题中答对70%可能只有第30百分位。
+        </p>
+        <ul className="mt-4 space-y-2 text-sm text-gray-700 mb-4">
+          {[
+            ['标准化分数 130', '第98百分位', '同龄人前2%'],
+            ['标准化分数 120', '第91百分位', '前9%'],
+            ['标准化分数 115', '第84百分位', '文法学校竞争线'],
+            ['标准化分数 110', '第75百分位', '高于平均水平'],
+            ['标准化分数 100', '第50百分位', '恰好平均'],
+            ['标准化分数 90', '第25百分位', '低于平均水平'],
+          ].map(([score, pct, note]) => (
+            <li key={score} className="flex justify-between items-center border-b border-gray-50 pb-2">
+              <span className="font-medium">{score}</span>
+              <span className="text-indigo-600 font-medium">{pct}</span>
+              <span className="text-gray-400 text-xs">{note}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">在不同考试中的应用</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          标准化分数的跨测试可比性对于在多个国家之间迁移的华人家庭尤为重要：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>英国11+（GL Assessment）：</strong>采用标准化年龄分数（SAS），大多数文法学校的录取竞争线在115–121之间，伦敦最热门学校要求128+。</Bullet>
+          <Bullet><strong>CAT4（认知能力测试）：</strong>迪拜、英国私立学校广泛使用，同样采用均值100、标准差15的量表。迪拜College等顶尖学校要求SAS 120–130+。</Bullet>
+          <Bullet><strong>CogAT（美国认知能力测试）：</strong>美国英才项目（Gifted）筛选常用，第90或第95百分位及以上通常触发英才项目推荐。</Bullet>
+          <Bullet><strong>NWEA MAP：</strong>美国K-12学校广泛采用，使用RIT分数而非标准化分数，但同样提供百分位排名供横向比较。详见我们的<Link href="/zh/blog/nwea-map-chengji-jiexi" className="text-indigo-600 hover:underline">NWEA MAP成绩解析指南</Link>。</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          详细了解英国文法学校各地区的具体分数要求，请参阅我们的{' '}
+          <Link href="/zh/blog/yingguo-wenfa-xuexiao-2026" className="text-indigo-600 hover:underline">
+            英国文法学校2026年入学要求指南
+          </Link>。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如何正确使用孩子的标准化分数</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          收到标准化分数后，最重要的是不要将其视为孩子能力的固定标签。今天处于第65百分位，不代表12个月后仍然如此。在这个年龄段，标准化分数对有针对性的训练是真实响应的——尤其是语言推理和数学，提升空间相当明显。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          把分数当成诊断工具。一个语言推理低于95分、数学高于115分的孩子，需要的备考方案与四科均在108分左右的孩子完全不同。百分位告诉您孩子在哪里；各科分项告诉您应该重点提升什么。
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          建议每3至4个月重测一次，以衡量真实进步。月度波动大多是随机误差。3到4个月的间隔足以让真实进步体现在分数上，也足以验证备考策略是否有效。
+        </p>
+      </section>
+    </>
+  ),
+
+  'nsw-opportunity-class-test-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        如果您的孩子正在新南威尔士州（NSW）就读二年级或三年级，您可能已经从其他家长那里听说过"OC班考试"，有时候带着一种紧张又困惑的情绪。新南威尔士州机会班（Opportunity Class，简称OC班）入学考试是澳大利亚小学阶段最具竞争性的学术评估之一，但很多家庭在毫无准备的情况下就面对了它。本文涵盖您需要了解的一切：考什么、怎么打分、如何备考，以及如果第一次没有通过该怎么办。
+      </p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        OC班在某种程度上相当于澳大利亚版的英国文法学校——专门面向学术能力突出的学生，提供更高强度的课程内容，只是它设置在普通小学内部，而非独立机构。对于澳大利亚的华人家庭来说，OC班既是对孩子能力的客观检验，也是通往精英中学的重要跳板。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">什么是OC班？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          机会班是由新南威尔士州教育部在普通公立小学内设立的五年级和六年级精英班项目。全州约有80所学校设立了OC班，每年约提供4,200个名额，每个OC班通常有约28名学生。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OC班的核心优势在于：学生与能力相当的同伴一起学习，教师能够将课程难度和节奏调整到真正具有挑战性的水平。研究表明，进入精英项目的学生比留在普通班的同等能力学生，在学术成绩上有更显著的进步，而且对学习的投入度也更高。
+        </p>
+        <Callout color="indigo">
+          OC班的另一个重要价值：OC两年的学习经历为六年级的精英高中入学考试（Selective High School Placement Test）提供了明显更好的准备基础。OC班毕业生在精英高中入学考试中的成功率显著高于普通班学生。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">考试格式</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OC班入学考试通常在每年三月举行，参加考试的是三年级学生（一般7-9岁）。报名时间在考试前一年的7月开放，也就是说，现在二年级的孩子的家长就需要开始关注报名时间节点。考试在集中考场进行，不在孩子就读的学校。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          考试包含三个独立计时的部分：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet>
+            <strong>思维技能（Thinking Skills）：</strong>抽象推理、空间图形识别和逻辑序列。这个部分与英国11+的非语言推理测试高度相似，考察的是认知潜能，而非课本知识。题目包括图形规律识别、矩阵补全和空间关系推理。
+          </Bullet>
+          <Bullet>
+            <strong>阅读（Reading）：</strong>包括叙事文、信息文和说服性文本等多种体裁的阅读理解。考察字面理解、推理、语境词汇理解，以及判断作者意图和语气的能力。文章难度高于三年级平均阅读水平。
+          </Bullet>
+          <Bullet>
+            <strong>数学推理（Mathematical Reasoning）：</strong>以应用题和规律题形式呈现的数学，而非直接计算。重点在于推理和解决陌生问题的能力，涵盖数字规律、测量、数据分析和空间数学。
+          </Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          成绩通常在考试后的6至7月公布。获得名额的学生将收到五年级入学录取通知。家庭可在所在地区范围内填报志愿学校，录取按分数排名和地理区域分配。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如何评分：常模参照，没有固定分数线</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OC班考试采用常模参照（norm-referenced）评分，而非标准参照（criterion-referenced）。这是理解考试最容易被误解的一点，却至关重要。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          标准参照考试有固定的及格线：答对70%就过关，无论别人考多少。常模参照考试衡量的是您孩子相对于全体考生的位置。没有固定及格分数——关键问题不是"孩子答对了多少题"，而是"孩子在所有考生中排第几"。
+        </p>
+        <Callout color="amber">
+          新南威尔士州教育部不公布OC班入学的官方分数线，因为分数线每年随当年考生群体的整体表现而变化。决定录取的是孩子在地理区域内的相对排名，而非绝对分数。
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4 mb-4">
+          从过往经验来看，对于全州大多数OC学校，成绩进入所有考生前10%左右是有竞争力的。在悉尼内西区、北岸和东区等热门区域，实际竞争门槛往往接近前5%。这只是参考，不是官方数据。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">与英国11+的比较：适合有跨国经历的家庭</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          有英国11+考试经历的华人家庭会发现OC班考试在结构上相当熟悉。两者都考察同三个认知维度——抽象和非语言推理、阅读理解、数学推理——都采用常模参照评分，录取都以排名而非固定分数线为准，都需要数月的系统备考而非临时抱佛脚。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          关键区别在于时间：OC班考试在三年级（7-9岁）参加，而11+在六年级（10-11岁）参加。这2到3年的差距对备考策略有重要影响。在8-9岁阶段，孩子的基础推理能力仍在建立中，题型强化训练的效果远不如真正的认知能力发展。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">备考策略：越早开始越好</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          有效的OC班备考比大多数家庭预期的要早。考试在三年级三月举行，理想的备考时间应从二年级开始，也就是考前12到18个月。这不是要求孩子从一开始就做题，而是要建立考试所考察的推理能力——这需要时间积累。
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet>
+            <strong>思维技能备考：</strong>通过非语言拼图、图形规律游戏和视觉推理练习建立空间推理能力。使用自适应练习工具，避免固定难度的题册——后者很快会变得要么太简单要么太难。重点是发展真正的抽象推理能力，而非熟记题型格式。
+          </Bullet>
+          <Bullet>
+            <strong>阅读备考：</strong>广泛多样的阅读比专项理解练习题更有价值。读非虚构类文章（科学、历史、时事）的孩子，能发展出OC阅读题所需的推理能力和词汇积累。虚构类阅读单独并不够用，还需要在阅读后讨论："你觉得作者为什么这样写？这个词告诉我们人物有什么感受？"
+          </Bullet>
+          <Bullet>
+            <strong>数学推理备考：</strong>应用题、数字谜题和心算练习能发展OC考试所需的灵活数学思维，单纯的计算题无法达到同等效果。重点训练：读清题目、找出问题所在、选择正确方法——而不是机械套用程序。
+          </Bullet>
+          <Bullet>
+            <strong>短时高频练习优于偶尔长时练习：</strong>每周4到5次、每次20到30分钟的专注练习，比周末两小时的集中训练效果更好。认知能力发展需要规律的间隔练习。
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如果没有获得名额怎么办？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OC班不是终点站，也不是唯一的出路。许多没有进入OC班的学生，后来在六年级的精英高中入学考试中依然取得了成功——而精英高中提供的是六年的学术精英教育，相比OC班的两年更具决定性意义。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在二或三年级进行早期评估的家庭，无论OC结果如何，都获得了一件宝贵的东西：准确了解孩子目前在精英考生群体中的位置。如果OC未能录取，这些信息可以建设性地重新定义接下来的方向——距离六年级的精英高中考试还有三年，知道差距在哪里、有足够时间系统性地弥补，这本身就是一个巨大的优势。
+        </p>
+        <Callout color="emerald">
+          OC班考试考察的推理能力与PISA、CAT4等国际基准测试是相同的。Eduentry自适应评估基于同样的框架，20分钟内即可免费获得孩子的全球百分位排名，以及各科分项表现——让您在开始备考之前就知道该重点关注哪一部分。
+        </Callout>
+      </section>
+    </>
+  ),
+
+  'nwea-map-scores-explained': (
+    <>
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">什么是NWEA MAP成长测试？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NWEA MAP（学业进步测量）成长测试是由西北评估协会开发的计算机自适应学业成就测试，被美国超过900万名K-12学生使用，考察阅读、数学、语言使用和科学四个领域。与固定难度测试不同，MAP会实时根据孩子的上一道题目答案调整下一道题的难度，始终保持精准校准——不会出现整体太简单或太难的问题。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          如果您孩子的学校使用NWEA MAP成长测试，您可能收到过一份显示"RIT分数"和百分位排名的报告，却不知道这些数字到底代表什么。本文将帮助您解读RIT分数、了解什么水平算优秀，以及如何利用这些结果支持孩子的学习。
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          大多数学校每年进行两到三次MAP测试——通常在秋季、冬季和春季。这意味着您不仅能了解孩子目前的位置，还能追踪孩子的成长速度——这往往是理解孩子学术发展轨迹最有价值的信息。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">什么是RIT分数？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP成长测试产生的分数称为RIT分数（Rasch Unit的缩写）。它既不是答题正确率，也不是年级等级换算值。它是一个等距量表上的位置，这个量表横跨整个K-12课程体系——从幼儿园到12年级使用同一套连续量表。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          幼儿园学生秋季学期的数学RIT分数通常在140-150左右。五年级结束时，平均学生约在210-215。十年级结束时，平均约在220-225。这个量表是连续且一致的：数学RIT分数210，无论属于四年级还是二年级学生，代表的都是完全相同的数学知识水平。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">RIT分数的核心价值：</strong>由于量表跨年级一致，您可以直接将孩子的RIT分数与年级常模进行比较——不仅能看出是否达到年级水平，还能看到超前或落后多少。一个数学RIT为220的三年级学生，其表现水平相当于典型的六年级学生。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">各年级RIT分数基准</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          下表显示NWEA 2020年全国常模——美国学生各年级秋季学期开始时的平均RIT分数，以及代表优秀表现的大致第75百分位分数。
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">年级</th>
+                <th className="text-left p-4 font-semibold text-gray-700">数学（平均）</th>
+                <th className="text-left p-4 font-semibold text-gray-700">数学（第75百分位）</th>
+                <th className="text-left p-4 font-semibold text-gray-700">阅读（平均）</th>
+                <th className="text-left p-4 font-semibold text-gray-700">阅读（第75百分位）</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['幼儿园（秋季）', '144', '154', '139', '150'],
+                ['一年级（秋季）', '163', '173', '158', '170'],
+                ['二年级（秋季）', '178', '188', '169', '181'],
+                ['三年级（秋季）', '188', '199', '177', '191'],
+                ['四年级（秋季）', '197', '208', '185', '199'],
+                ['五年级（秋季）', '205', '216', '191', '206'],
+                ['六年级（秋季）', '211', '222', '197', '212'],
+                ['七年级（秋季）', '215', '226', '201', '217'],
+                ['八年级（秋季）', '218', '229', '204', '220'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  {row.slice(1).map((cell, i) => (
+                    <td key={i} className="p-4 text-gray-600">{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-400">来源：NWEA 2020年MAP成长测试学生与学校成就状态及成长常模。</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">RIT分数与百分位排名：有什么区别？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          孩子的MAP报告同时显示RIT分数和百分位排名。两者衡量的是相关但不同的维度。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>RIT分数</strong>是绝对指标——它告诉您孩子在K-12知识连续体上的位置，与年级无关。数学RIT 215始终代表相同的数学理解水平，不因孩子的年级而改变。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>百分位排名</strong>是相对指标——它将孩子的RIT分数与同年级、同学期全国常模进行比较。五年级学生数学RIT为220，约处于五年级的第80百分位。
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          两者都有价值，但用途不同。用RIT分数了解孩子准备学习什么内容（下一步应该学什么）；用百分位排名了解孩子与同龄人相比的位置（是否达到年级水平）。对于英才项目（Gifted Program）的资格认定，百分位排名是更常用的指标。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如何解读成长数据</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP最有价值的功能之一是成长追踪。NWEA不仅发布当前水平常模，还发布成长速度常模。数学RIT的典型年度成长量：
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>幼儿园至二年级：</strong>每年约增长10-12个RIT点（早期识字和数学阶段的快速增长）</Bullet>
+          <Bullet><strong>三至五年级：</strong>每年约增长6-8个RIT点（随着内容复杂度提升，增速放缓）</Bullet>
+          <Bullet><strong>六至八年级：</strong>每年约增长3-5个RIT点（初中阶段增速明显减缓）</Bullet>
+          <Bullet><strong>九至十二年级：</strong>每年约增长1-3个RIT点（优秀学生接近量表上限）</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          当平均增长为7点时，一个孩子增长了12点，说明他/她在加速成长。当平均增长为7点时，孩子只增长了2点，则可能需要针对该科目的额外支持——即便绝对分数仍在年级平均水平之上。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP高分与英才项目资格</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在许多学区，MAP成长测试的高分是触发英才（Gifted）转介评估的关键指标之一。常见门槛是一科或多科达到第90或第95百分位。如果孩子的MAP分数达到或超过这些门槛，值得主动询问学校是否应该进行英才评估转介。有些学区会自动启动这个流程，但另一些则需要家长或教师主动提出。
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          在美国读书的华人家庭需要了解：英才项目的筛选通常还结合其他认知能力测试，MAP只是其中一个数据点。如果孩子在MAP中表现突出，但学校迟迟没有主动跟进，家长完全有权利主动要求启动评估流程。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP分数偏低：该怎么办？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP分数低于第25百分位，或成长轨迹明显低于常模，提示孩子可能需要额外的学业支持。第一步是与孩子的老师沟通，了解MAP结果是否与课堂表现一致。MAP只是一个数据点——如果课堂表现良好但MAP分数偏低，这种差异本身值得深入了解。
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          阅读MAP分数偏低，通常与语音、流利度或词汇方面的基础问题有关，而非理解能力本身的问题。数学MAP分数偏低，通常与特定知识点的缺口（分数、位值、运算）有关，而非广泛的数学能力问题。NWEA网站上的MAP学习连续体（MAP Learning Continuum）将每个RIT分数区间对应到具体技能，可以帮助家长精准定位需要补强的内容。
+        </p>
+      </section>
+    </>
+  ),
+
+  'grammar-school-entry-requirements-2026': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        "我的孩子需要考多少分？"这是每个备战11+的英国华人家庭最想得到答案的问题。诚实的回答是：取决于地区、具体学校和当年的考生竞争程度。但有清晰的参考基准——本文将全面覆盖：每个地区使用哪家考试机构、不同学校对应的SAS分数区间要求，以及申请过程中需要了解的每一个关键细节。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">英国文法学校选拔如何运作</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          英国文法学校在法律上（依据1998年《学校标准和框架法》）被允许按学术能力录取全部学生，这是所有其他公立学校没有的特权。大多数文法学校以11+考试作为主要选拔工具，通常在六年级的9月或10月举行。分数高于学校正式合格线的孩子将被列入"精英名册"（selective register）。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          进入精英名册是必要条件，但不足以保证录取。在竞争激烈的地区，超出学校容量的申请者会按照次级条件排名，通常依次是：受关照儿童（looked-after children）、已有兄弟姐妹在校、距学校的直线距离。在伦敦最热门的学校，SAS 125分的孩子可能因为比SAS 128分的孩子住得远一些而未获录取。
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          这正是为什么在竞争激烈地区（尤其是伦敦）的家庭，必须理解"合格线"和"竞争线"是两个不同的数字。合格线是入场门槛；竞争线才是真正能拿到特定学校录取名额的分数。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">各地区使用的考试机构</h2>
+        <div className="grid sm:grid-cols-2 gap-4 mb-4">
+          {[
+            { board: 'GL Assessment', areas: '肯特郡、埃塞克斯、赫特福德郡及大多数独立学校', notes: '产生标准化年龄分数（SAS），根据孩子考试时的月龄进行调整。分别考察语言推理、非语言推理、英语和数学四个独立试卷。是英国使用最广泛的11+格式。' },
+            { board: 'CEM（杜伦大学）', areas: '白金汉郡、部分伯明翰学校', notes: '产生年龄标准化分数。题目混合了语言能力、数字推理和空间推理，不按科目标注。刻意设计成更难用标准VR题库备考的格式。' },
+            { board: 'ISEB通用预备测试', areas: '私立学校和部分精英学院', notes: '分别考察英语、数学、语言推理和非语言推理。用于私立学校的11+和13+入学。计算机自适应格式。' },
+            { board: '学校自主命题', areas: '国王爱德华基金会学校（伯明翰）、部分伦敦学校', notes: '由学校自行出题。通常考察远高于全国课程水平的英语和数学。因为没有官方练习材料，备考难度更高。' },
+          ].map(({ board, areas, notes }) => (
+            <div key={board} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-1">{board}</div>
+              <div className="text-xs font-medium text-indigo-600 mb-2">{areas}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{notes}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">2026年各地区分数基准</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          以下区间基于典型合格线和历史竞争程度，仅供参考。各学校的具体录取线每年因考生群体而变化。请务必直接查看目标学校的官方招生政策。
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">地区</th>
+                <th className="text-left p-4 font-semibold text-gray-700">考试机构</th>
+                <th className="text-left p-4 font-semibold text-gray-700">目标SAS</th>
+                <th className="text-left p-4 font-semibold text-gray-700">备注</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['肯特郡', 'GL Assessment', '115–121', '共32所文法学校，各学校和各城镇的分数线有差异。Judd和Tonbridge Grammar竞争最激烈。'],
+                ['白金汉郡', 'CEM', '118+', '共13所学校，全郡完全选拔制。CEM考试比GL Assessment更难通过题库备考。'],
+                ['伦敦（巴内特）', 'GL Assessment', '121–132', 'QE Boys和Henrietta Barnett是英国竞争最激烈的公立学校之一。'],
+                ['伦敦（萨顿）', 'GL Assessment', '118–125', 'Nonsuch、Wallington、Wilson\'s、Sutton Grammar。萨顿联合考试共用一套试卷。'],
+                ['伯明翰（KE基金会）', '自主命题', '119+', '国王爱德华基金会学校高度选拔制，采用学校自主命题的英语和数学考试。'],
+                ['埃塞克斯', 'GL Assessment', '112–118', 'Colchester Royal Grammar、Westcliff High。竞争度低于伦敦或肯特郡。'],
+                ['赫特福德郡', 'GL Assessment', '111–115', 'Dame Alice Owen\'s、Watford Grammar（男女校）。距离是重要的决胜条件。'],
+                ['格洛斯特郡', 'GL Assessment', '113–118', 'Pate\'s Grammar竞争最激烈。四所学校均采用GL Assessment。'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 font-mono font-semibold text-indigo-700">{row[2]}</td>
+                  <td className="p-4 text-gray-500 text-xs leading-relaxed">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">合格与有竞争力的区别</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          通过11+（达到正式合格线）和在特定学校具有竞争力（实际能拿到名额）之间有重要区别。通过意味着孩子学术上适合文法学校教育；有竞争力意味着在特定超员学校的次级条件下，分数足够高以确保录取。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在竞争较低的地区（部分埃塞克斯、赫特福德郡、格洛斯特郡），合格和有竞争力基本是一回事：大多数达到合格线且住在合理距离内的孩子都能获得名额。在高度竞争的地区（伦敦、肯特郡顶尖学校、白金汉郡），竞争线明显高于公布的合格线。以Queen Elizabeth&apos;s Boys为例，合格线可能是SAS 111，但实际被录取的学生中位分数接近127-130。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">边界区间与申诉</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          大多数学校都有一个非正式的边界区间——通常是合格线两侧各2-4个SAS分数。处于边界区间的孩子并非自动失败；如果住得足够近，他们仍可能通过次级条件（距离、兄弟姐妹）获得名额。值得研究每所目标学校的距离标准——有些学校会公布上一年获录名额的最远距离。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          如果孩子未获文法学校名额，可以提起申诉。申诉可以在两个基础上提出：招生机构在执行已公布标准时出现程序错误，或孩子就读该学校的利益超过学校控制班额规模的利益。提供孩子在11+前后参加的独立标准化评估报告——显示高于官方结果的分数——是申诉中最有说服力的证据之一，能够客观表明当天的考试结果属于低水平发挥。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Eduentry分数与11+的关系</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry使用与GL Assessment完全相同的标准化量表（均值100，标准差15）。Eduentry分数115对应第84百分位——这相当于英格兰大多数文法学校（伦敦以外）的竞争入学区间。Eduentry分数121对应约第92百分位——在英格兰大多数精英学校具有竞争力。
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          重要说明：Eduentry的题目由AI生成，尚未在大规模人群中进行经验性标准化。分数反映的是标准化量表上的位置，而非精确的GL Assessment SAS等效值。请将Eduentry分数作为方向性基准和进步追踪工具使用——而非11+成绩的精确预测。了解标准化分数如何运作，请参阅我们的{' '}
+          <Link href="/zh/blog/shenme-shi-biaozhunhua-fenshu" className="text-indigo-600 hover:underline">
+            标准化分数完全指南
+          </Link>。
+        </p>
+      </section>
+    </>
+  ),
+
+  'dubai-gifted-schools-2026': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        迪拜拥有全球竞争最激烈的国际学校市场之一，对于孩子学业能力突出的家庭来说，择校是一个重要决策。并非所有KHDA"优秀"评级的学校都同样擅长培养最高能力的学生。本文识别出迪拜在天才和高能力学习者方面最具口碑的学校，解释如何解读KHDA督查报告，并梳理2026年的招生流程。
+      </p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        对于在迪拜定居的华人家庭来说，这里的英国课程学校体系与英国本土既相似又有所不同——它们使用相同的学术框架（GCSE、A-Level），但在中东环境下运作，学生群体国际化程度更高。了解这套体系的运作规则，是为孩子争取最佳教育资源的前提。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">什么样的学校适合天才儿童？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          KHDA督查报告从多个维度评级学校。评估一所学校是否适合天才儿童，需要重点查看"对有特殊需求学生和天才学生的教学安排"部分。顶级学校应展示：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check>建立有客观数据支撑的正式天才学生名册（通常为CAT4 stanine 7+，且学业成绩位于前10%）</Check>
+          <Check>适当情况下提供科目加速或提前备考安排（如九年级参加GCSE、提前参加A-Level）</Check>
+          <Check>超出标准课程的丰富课程——数学奥林匹克备考、辩论、研究项目、竞技科学</Check>
+          <Check>最优秀学生群体在各学年均有超出预期的学术进步</Check>
+          <Check>有资质的SENCO/天才与才华协调员，对每位天才学生进行个别追踪</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          一所学校整体可以获得KHDA"优秀"评级，但在高能力学生教学安排方面仍可能较弱。请务必阅读完整报告，而非只看总体评级。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">迪拜顶尖天才学生学校</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          以下英国课程学校在KHDA"优秀"评级、学术成果和天才学生教学安排三个维度上综合表现最强。所有学校均使用CAT4作为主要招生和监测工具。
+        </p>
+
+        <div className="space-y-6 mb-6">
+          <div className="border border-gray-100 rounded-xl p-6">
+            <div className="flex items-start justify-between mb-2">
+              <h3 className="font-bold text-gray-900 text-lg">Dubai College</h3>
+              <span className="text-xs font-semibold bg-indigo-50 text-indigo-700 rounded-full px-3 py-1 flex-shrink-0 ml-3">竞争最激烈</span>
+            </div>
+            <p className="text-gray-600 text-sm mb-2">仅接受七年级入学。持续获得KHDA"优秀"评级，被广泛认为是迪拜学术选拔性最强的学校。每年从数百名申请者中录取约90-100名学生。招生流程包括CAT4测试和学校参观；有竞争力的申请者通常在各项测试中获得SAS 120-130+。A-Level成绩使其位居该地区顶尖学校之列。</p>
+            <p className="text-sm text-gray-500">课程：A-Level · 位置：Al Quoz · 仅招收七至十三年级</p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <h3 className="font-bold text-gray-900 text-lg mb-2">JESS Arabia（朱美拉英语学校）</h3>
+            <p className="text-gray-600 text-sm mb-2">两个校区：Jumeirah（幼儿至十三年级）和阿拉伯牧场（幼儿至九年级）。持续获"优秀"评级，以严格的学术标准和小学阶段即系统追踪天才与才华学生著称。全程使用CAT4；天才名册上的学生获得差异化教学规划和丰富课程。高中阶段成绩优异，大学升学方向广泛。</p>
+            <p className="text-sm text-gray-500">课程：英国（GCSE + A-Level） · 位置：Jumeirah及阿拉伯牧场</p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <h3 className="font-bold text-gray-900 text-lg mb-2">GEMS Wellington国际学校</h3>
+            <p className="text-gray-600 text-sm mb-2">KHDA"优秀"评级。迪拜规模最大的英国课程学校之一，从一年级起即进行系统学术追踪。提供丰富课程，包括竞技数学、科学奥林匹克备考和广泛的课外项目。从幼儿园一年级开始招生；三年级及以上的招生评估包含CAT4。</p>
+            <p className="text-sm text-gray-500">课程：英国（GCSE + A-Level） · 位置：Al Sufouh</p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <h3 className="font-bold text-gray-900 text-lg mb-2">Repton School Dubai</h3>
+            <p className="text-gray-600 text-sm mb-2">英国独立学校Repton的UAE校区。KHDA"优秀"评级。低年级招收较广泛能力范围的学生，高年级则更具选拔性。以扎实的学术与综合发展并重著称。从三年级起使用CAT4进行招生。在科目加速和优秀学生提前参加GCSE方面有良好记录。</p>
+            <p className="text-sm text-gray-500">课程：英国（GCSE + A-Level/IB） · 位置：Nad Al Sheba</p>
+          </div>
+
+          <div className="border border-gray-100 rounded-xl p-6">
+            <h3 className="font-bold text-gray-900 text-lg mb-2">Kings&apos; School Dubai / Kings&apos; School Al Barsha</h3>
+            <p className="text-gray-600 text-sm mb-2">专注小学阶段（幼儿至六年级）的"优秀"学校，学术声誉良好，设有系统化的天才与才华项目。从二年级起使用CAT4进行监测和家长报告。持续为学生进入Dubai College等竞争性中学打下坚实基础。对于最看重小学阶段天才教育质量的家庭是首选。</p>
+            <p className="text-sm text-gray-500">课程：英国 · 位置：Umm Suqeim及Al Barsha · 幼儿至六年级</p>
+          </div>
+        </div>
+
+        <Callout>
+          <strong className="text-indigo-900">阿布扎比说明：</strong>在阿布扎比的家庭，BSAK（英国学校Al Khubairat）和Brighton College Abu Dhabi在ADEK督查框架下提供相当水平的天才学生教学安排。两所学校均获"优秀"评级，并使用CAT4进行招生。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如何解读KHDA督查报告</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          所有KHDA督查报告可在<strong>khda.gov.ae</strong>免费查阅。每所学校每1-3年接受一次督查。评估一所学校对天才学生的适合性时，重点查看：
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Bullet><strong>整体效能评级</strong>——优秀、非常好、好、可接受、弱或非常弱。对于天才儿童，只考虑"优秀"和"非常好"评级的学校。</Bullet>
+          <Bullet><strong>学生成就部分</strong>——寻找"高成就者"或"最优秀学生"的相关描述。他们被描述为取得"强劲"或"突出"进步，还是仅为"可接受"进步？</Bullet>
+          <Bullet><strong>教学质量</strong>——报告是否提到教师为高能力学生制定差异化教学内容？宽泛的表扬远不如具体证据有参考价值。</Bullet>
+          <Bullet><strong>领导层评述</strong>——学校是否有针对天才学生的专项策略？这被列为优势还是待改进领域？</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          四年前获得"优秀"评级的学校可能已经发生了显著变化。请注意最近一次督查的日期，如果已超过两年，建议直接向学校询问此后是否有新的KHDA访问。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">2026年招生流程</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          迪拜大多数英国课程学校遵循相似的招生日程：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>2026年9至10月：</strong>2027年9月入学的申请开放。参加学校开放日，提交咨询表格。热门学校收到的申请数量超出面试容量。</Bullet>
+          <Bullet><strong>11月至1月：</strong>安排CAT4评估预约。测试约需45-60分钟，在学校进行。需携带近两年的学校成绩报告。</Bullet>
+          <Bullet><strong>2027年1至3月：</strong>发放录取通知。选拔性学校（如Dubai College）严格按分数排名顺序发放录取。大多数其他学校根据空位和综合评估提供录取。</Bullet>
+          <Bullet><strong>2027年3至4月：</strong>接受录取截止日期。未在截止日期前接受的名额将重新分配。</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          建议同时申请3至4所学校。不要等到一所学校的结果出来后再申请另一所——热门学校的候补名单关闭很快。对于Dubai College，申请窗口严格有限；错过意味着再等整整一年。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">在招生季前进行基准评估</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          CAT4是一项计时认知能力测试，考察语言、数量、非语言和空间推理四个维度，不是学科知识测试。提前了解孩子可能的CAT4表现，可以帮助您切实地定位目标学校：带着可能得SAS 100的孩子申请Dubai College只会让双方失望；而以SAS 115申请GEMS Wellington或Repton则具有相当竞争力。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry免费自适应测试采用与CAT4完全相同的均值100、标准差15量表，结果直接可比。测试仅需20-30分钟，无需注册。在正式招生季前，用它作为现实选校的起点，并找出在正式评估前值得重点培养的认知能力领域。
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          更多关于UAE国际学校入学评估的信息，也可参阅{' '}
+          <Link href="/zh/blog/shenme-shi-biaozhunhua-fenshu" className="text-indigo-600 hover:underline">
+            标准化分数完全指南
+          </Link>，了解CAT4分数如何解读。
         </p>
       </section>
     </>

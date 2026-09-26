@@ -1732,6 +1732,655 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+
+  'what-is-a-standardised-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Si tu hijo ha realizado recientemente una prueba de admisión selectiva — el examen 11+ en el Reino Unido, el CAT4 en el colegio, o una evaluación diagnóstica online — es probable que hayas recibido un informe con una puntuación estandarizada junto al porcentaje de respuestas correctas. La mayoría de los padres ignoran la puntuación estandarizada y se fijan solo en el porcentaje. Es un error.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        La puntuación estandarizada es la medida que importa para comparar a tu hijo con otros niños de su misma edad — y es la que utilizan los colegios selectivos, los programas de superdotados y las comisiones de becas para tomar decisiones de admisión.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué es exactamente una puntuación estandarizada?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Una puntuación estandarizada es un número que muestra cómo rindió tu hijo en comparación con un grupo de referencia grande de niños de la misma edad — no como un porcentaje de preguntas correctas, sino como una posición dentro de la distribución de resultados de su grupo de edad.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La mayoría de las evaluaciones educativas estandarizadas — incluyendo el 11+ del Reino Unido, el CAT4, el CogAT y el NWEA MAP — presentan sus resultados en una escala con una media de 100 y una desviación típica de 15. Esto significa que una puntuación de 115 siempre tiene el mismo significado, independientemente del test concreto o de su dificultad.
+        </p>
+        <div className="grid sm:grid-cols-3 gap-4 mb-6">
+          <div className="bg-indigo-50 rounded-xl p-5 text-center">
+            <div className="text-3xl font-bold text-indigo-700 mb-1">100</div>
+            <div className="text-sm text-indigo-600 font-medium">Media (promedio)</div>
+            <div className="text-xs text-gray-500 mt-1">Percentil 50</div>
+          </div>
+          <div className="bg-indigo-50 rounded-xl p-5 text-center">
+            <div className="text-3xl font-bold text-indigo-700 mb-1">15</div>
+            <div className="text-sm text-indigo-600 font-medium">Desviación típica</div>
+            <div className="text-xs text-gray-500 mt-1">la unidad de dispersión</div>
+          </div>
+          <div className="bg-indigo-50 rounded-xl p-5 text-center">
+            <div className="text-3xl font-bold text-indigo-700 mb-1">68%</div>
+            <div className="text-sm text-indigo-600 font-medium">Puntuación entre 85–115</div>
+            <div className="text-xs text-gray-500 mt-1">dentro de una desviación típica</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">El problema con las puntuaciones brutas</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Una puntuación bruta — por ejemplo, 43 de 60 — solo te dice una cosa: tu hijo respondió correctamente el 72% de las preguntas en este test concreto este día concreto. No te dice si el test era fácil o difícil. No te dice cómo rindieron otros niños de la misma edad. No te dice si ese 72% representa un buen o mal resultado para un niño de esa edad.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Una puntuación estandarizada transforma esa puntuación bruta en un número que tiene en cuenta la edad, la dificultad del test y el rendimiento de la población de referencia. Dos niños que responden correctamente 43 de 60 preguntas pueden recibir puntuaciones estandarizadas muy diferentes si uno tiene 18 meses más que el otro, o si realizaron tests de distinta dificultad. La puntuación estandarizada los pone en igualdad de condiciones.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Clave para padres:</strong> Para acceder a colegios selectivos, programas de altas capacidades o becas académicas, los comités de admisión utilizan puntuaciones estandarizadas — no porcentajes de respuestas correctas. Entender esta escala es el primer paso para interpretar los resultados de tu hijo correctamente.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Tabla de interpretación: qué significa cada rango</h2>
+        <div className="rounded-xl border border-gray-100 overflow-hidden mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Rango de puntuación</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Clasificación</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Percentil aprox.</th>
+                <th className="text-left p-4 font-semibold text-gray-700">% de la población</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['130+', 'Muy superior', 'Top 2%', '~2%'],
+                ['120–129', 'Superior', '91º–98º', '~7%'],
+                ['110–119', 'Por encima de la media', '75º–91º', '~16%'],
+                ['95–109', 'Media', '37º–63º', '~25%'],
+                ['85–94', 'Por debajo de la media', '16º–36º', '~16%'],
+                ['70–84', 'Bajo / Necesita apoyo', '2º–15º', '~14%'],
+              ].map(([range, label, pct, pop]) => (
+                <tr key={range} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono font-semibold text-gray-900">{range}</td>
+                  <td className="p-4 text-gray-700">{label}</td>
+                  <td className="p-4 text-gray-500">{pct}</td>
+                  <td className="p-4 text-gray-400">{pop}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Una propiedad importante de esta escala: como la desviación típica es 15, cada paso de 15 puntos representa exactamente una desviación típica. Una puntuación de 115 (una desviación típica por encima de la media) equivale aproximadamente al percentil 84. Una puntuación de 130 (dos desviaciones típicas por encima de la media) equivale al percentil 98. Estas relaciones son constantes en todos los tests que usan esta escala.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué es el percentil y cómo se interpreta?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El percentil es la forma más intuitiva de interpretar una puntuación estandarizada. El percentil de tu hijo te dice qué porcentaje de niños de su misma edad rindió peor que él. Un percentil 84 significa que tu hijo rindió mejor que el 84% de los niños de su edad — y peor que el 16% restante.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Hay dos errores frecuentes al interpretar percentiles. Primero: el percentil 50 no es un resultado malo — significa exactamente la media, mejor que la mitad y peor que la otra mitad. Segundo: el percentil no es lo mismo que el porcentaje de respuestas correctas. Un niño que responde el 70% de las preguntas puede estar en el percentil 85 si el test era difícil, o en el percentil 30 si el test era fácil.
+        </p>
+        <ul className="mt-4 space-y-2 text-sm text-gray-700 mb-4">
+          {[
+            ['Puntuación 130', 'Percentil 98', 'Top 2% de niños de la misma edad'],
+            ['Puntuación 120', 'Percentil 91', 'Top 9%'],
+            ['Puntuación 115', 'Percentil 84', 'Rango competitivo para colegios selectivos'],
+            ['Puntuación 110', 'Percentil 75', 'Por encima de la media'],
+            ['Puntuación 100', 'Percentil 50', 'Exactamente la media'],
+            ['Puntuación 90', 'Percentil 25', 'Por debajo de la media'],
+          ].map(([score, pct, note]) => (
+            <li key={score} className="flex justify-between items-center border-b border-gray-50 pb-2">
+              <span className="font-medium">{score}</span>
+              <span className="text-indigo-600 font-medium">{pct}</span>
+              <span className="text-gray-400 text-xs">{note}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La puntuación estandarizada según la edad (SAS)</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El SAS (Standardised Age Score) es el formato específico de puntuación estandarizada que utiliza GL Assessment en el examen 11+ del Reino Unido. Introduce un ajuste adicional: la edad exacta del niño en meses en el momento del test.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Esto importa porque los niños que realizan el 11+ en septiembre del año 6 tienen edades que oscilan entre aproximadamente los 10 años y 2 meses y los 11 años y 1 mes — una diferencia de desarrollo significativa a esta edad. El SAS compara a cada niño solo con otros nacidos en el mismo rango de meses. Un niño nacido en agosto que responde 43 preguntas correctamente puede recibir un SAS más alto que un niño nacido en septiembre que también acertó 43, porque el baremo se establece en relación con los niños nacidos en agosto.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Para familias hispanohablantes en el Reino Unido:</strong> Si tu hijo nació entre junio y agosto, no te alarmes si un compañero nacido en septiembre parece rendir mejor en los ensayos. El SAS corrige esta diferencia. Lo que importa es el rendimiento de tu hijo en relación con niños nacidos en el mismo rango de meses.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué hacer con la puntuación de tu hijo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cuando recibas una puntuación estandarizada, lo más importante es no interpretarla como una característica fija de tu hijo. Una puntuación en el percentil 65 hoy no significa que seguirá en el percentil 65 dentro de 12 meses. Las puntuaciones estandarizadas a estas edades responden genuinamente a la preparación específica — especialmente en razonamiento verbal y matemáticas.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Usa la puntuación de forma diagnóstica. Un niño que puntúa por debajo de 95 en razonamiento verbal y por encima de 115 en matemáticas necesita un plan de preparación completamente diferente al de un niño que puntúa 108 en todas las materias. El percentil te dice dónde está. El desglose por materia te dice en qué trabajar.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Repite la evaluación cada 3–4 meses para medir el progreso real. La variación mes a mes es en gran parte ruido estadístico. Un intervalo de 3–4 meses permite que los cambios reales en el rendimiento se reflejen en la puntuación. Para familias que se preparan para el{' '}
+          <Link href="/es/blog/requisitos-escuelas-selectivas-uk-2026" className="text-indigo-600 hover:underline">
+            ingreso en escuelas selectivas en el Reino Unido
+          </Link>, conocer la puntuación estandarizada actual es el punto de partida de cualquier estrategia de preparación efectiva.
+        </p>
+      </section>
+    </>
+  ),
+
+  'nwea-map-scores-explained': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Si tu hijo estudia en un colegio estadounidense o en un colegio internacional que utiliza el sistema educativo norteamericano, es probable que hayas recibido un informe con una puntuación RIT y un percentil del test NWEA MAP. La mayoría de los padres — especialmente los de familias hispanohablantes recién llegadas a Estados Unidos — no saben qué significan estos números. Esta guía lo explica con claridad.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué es el test NWEA MAP Growth?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NWEA MAP Growth (Measures of Academic Progress) es un test de rendimiento académico adaptativo desarrollado por la Northwest Evaluation Association. Lo utilizan más de 9 millones de estudiantes en colegios de EE. UU. de kínder a 12.º grado, y mide Lectura, Matemáticas, Uso del Lenguaje y Ciencias.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A diferencia de los tests fijos, el MAP se adapta en tiempo real: cada pregunta se ajusta al nivel de tu hijo basándose en su respuesta anterior. Esto significa que el test siempre está calibrado con precisión — sin preguntas demasiado fáciles ni demasiado difíciles para el nivel del niño.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          La mayoría de los colegios administran el MAP dos o tres veces al año — generalmente en otoño, invierno y primavera. Esto permite no solo ver dónde está tu hijo ahora, sino también qué tan rápido está progresando, que es a menudo la información más útil para entender su trayectoria académica.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué es la puntuación RIT?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La puntuación que produce el MAP Growth se llama puntuación RIT (abreviatura de Rasch Unit). No es un porcentaje ni un equivalente de nivel escolar. Es una posición en una escala de intervalos iguales que abarca todo el currículo de kínder a 12.º grado.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un alumno típico de kínder empieza el año con una puntuación RIT de Matemáticas de unos 140–150. Al final de 5.º grado, la media es de unos 210–215. La escala es continua y coherente: una puntuación RIT de 210 en Matemáticas significa el mismo nivel de conocimiento matemático tanto si corresponde a un alumno de 4.º grado como a uno de 2.º grado.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">La clave sobre las puntuaciones RIT:</strong> Como la escala es coherente en todos los cursos, puedes comparar directamente la puntuación RIT de tu hijo con las normas de su nivel — y ver no solo si está al nivel esperado, sino cuánto por encima o por debajo. Un alumno de 3.º grado con un RIT de Matemáticas de 220 está rindiendo al nivel típico de un alumno de 6.º grado.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Puntuaciones RIT de referencia por curso</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          La siguiente tabla muestra las normas nacionales de NWEA de 2020: las puntuaciones RIT medias de los estudiantes estadounidenses al inicio de cada curso, más lo que representa un rendimiento sólido (aproximadamente el percentil 75).
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Curso</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Matemáticas (media)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Matemáticas (perc. 75)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Lectura (media)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Lectura (perc. 75)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Kínder (otoño)', '144', '154', '139', '150'],
+                ['1.º grado (otoño)', '163', '173', '158', '170'],
+                ['2.º grado (otoño)', '178', '188', '169', '181'],
+                ['3.º grado (otoño)', '188', '199', '177', '191'],
+                ['4.º grado (otoño)', '197', '208', '185', '199'],
+                ['5.º grado (otoño)', '205', '216', '191', '206'],
+                ['6.º grado (otoño)', '211', '222', '197', '212'],
+                ['7.º grado (otoño)', '215', '226', '201', '217'],
+                ['8.º grado (otoño)', '218', '229', '204', '220'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  {row.slice(1).map((cell, i) => (
+                    <td key={i} className="p-4 text-gray-600">{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-400">Fuente: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Percentil vs. RIT: ¿cuál es la diferencia?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El informe MAP de tu hijo muestra tanto una puntuación RIT como un percentil. Miden cosas relacionadas pero distintas.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La <strong>puntuación RIT</strong> es una medida absoluta — te dice dónde está tu hijo en el continuo de conocimientos de kínder a 12.º grado, independientemente del curso. Un RIT de 215 en Matemáticas siempre significa el mismo nivel de comprensión matemática.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El <strong>percentil</strong> es una medida relativa — compara la puntuación RIT de tu hijo con el grupo de normas nacionales de estudiantes del mismo curso en el mismo momento del año escolar. Un niño de 5.º grado con un RIT de Matemáticas de 220 está aproximadamente en el percentil 80 de 5.º grado.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Ambas son útiles, pero para preguntas distintas. Usa el RIT para entender el nivel de contenido que tu hijo está listo para aprender a continuación. Usa el percentil para entender cómo se compara con sus compañeros. Para la identificación de altas capacidades, el percentil es la métrica más utilizada. Para más información sobre cómo las puntuaciones MAP se relacionan con los{' '}
+          <Link href="/es/blog/guia-evaluacion-programas-superdotados" className="text-indigo-600 hover:underline">
+            programas de superdotados
+          </Link>, consulta nuestra guía completa.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Entender el crecimiento</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Una de las características más valiosas del MAP es el seguimiento del crecimiento. El crecimiento típico en RIT de Matemáticas de otoño a primavera:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>Cursos K–2:</strong> aproximadamente 10–12 puntos RIT por año (crecimiento rápido en lectura y numeración tempranas)</Bullet>
+          <Bullet><strong>Cursos 3–5:</strong> aproximadamente 6–8 puntos RIT por año (el crecimiento se ralentiza a medida que el contenido se vuelve más complejo)</Bullet>
+          <Bullet><strong>Cursos 6–8:</strong> aproximadamente 3–5 puntos RIT por año (el crecimiento se ralentiza significativamente en la escuela media)</Bullet>
+          <Bullet><strong>Cursos 9–12:</strong> aproximadamente 1–3 puntos RIT por año (cerca del techo de la escala para estudiantes avanzados)</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Un niño que crece más que estas normas típicas — que gana 12 puntos RIT en Matemáticas cuando la media es 7 — muestra un crecimiento acelerado. Un niño que solo gana 2 puntos en un año en que 7 es lo típico puede necesitar apoyo adicional en esa materia, aunque su puntuación absoluta aún esté por encima de la media del nivel escolar.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Puntuaciones MAP altas e identificación de altas capacidades</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En muchos distritos escolares de EE. UU., una puntuación MAP Growth alta es uno de los principales indicadores que activa una derivación para evaluación de altas capacidades. Los umbrales habituales son el percentil 90 o 95 en una o más materias. Si la puntuación MAP de tu hijo está en ese rango o por encima, merece la pena preguntar explícitamente al colegio si es adecuada una derivación para evaluación.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Si tu hijo puntúa en el percentil 95 o superior en MAP, está rindiendo a un nivel significativamente por encima de sus compañeros de curso. Para una descripción completa de cómo funciona ese proceso de evaluación y qué otros tests se usan junto al MAP, consulta nuestra{' '}
+          <Link href="/es/blog/guia-evaluacion-programas-superdotados" className="text-indigo-600 hover:underline">
+            guía de evaluación para programas de superdotados
+          </Link>.
+        </p>
+      </section>
+    </>
+  ),
+
+  'gifted-program-testing-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Los programas para alumnos con altas capacidades son algunos de los recursos educativos más buscados en los sistemas escolares de Estados Unidos y cada vez más en colegios internacionales de España y Latinoamérica. El proceso de identificación puede resultar confuso para las familias que lo afrontan por primera vez — especialmente para las familias hispanohablantes que navegan un sistema diferente al que conocen. Esta guía explica cómo funcionan estos programas, qué tests se usan, qué puntuaciones se necesitan y cómo preparar a tu hijo de forma efectiva.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué es un programa para alumnos superdotados?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un programa para alumnos con altas capacidades (en inglés, <em>gifted program</em> o GT program) es una modalidad educativa estructurada para niños identificados como académicamente avanzados o cognitivamente excepcionales, generalmente a través de tests de aptitud y rendimiento como el CogAT, WISC-V, OLSAT o NWEA MAP. En Estados Unidos, la identificación se realiza a nivel de distrito escolar y generalmente requiere alcanzar umbrales en el 2–5% superior en múltiples criterios — no solo un resultado en un test.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En España y Latinoamérica, los sistemas de identificación y atención a altas capacidades varían mucho por región. En España, la identificación oficial suele realizarla el departamento de orientación del colegio, y el acceso a programas de enriquecimiento depende tanto de la normativa autonómica como de los recursos del centro. En el contexto internacional, las evaluaciones estandarizadas como las que usa Eduentry ofrecen una medida comparable a nivel global.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los programas GT existen en varios formatos:
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          {[
+            { type: 'Enriquecimiento por grupos de extracción', desc: 'Los alumnos permanecen en su clase ordinaria pero salen para recibir instrucción especializada GT un número determinado de horas semanales. El formato más habitual en educación primaria.' },
+            { type: 'Clase GT diferenciada', desc: 'Una clase o agrupación GT dedicada dentro de un colegio convencional, donde los alumnos identificados pasan toda la jornada escolar juntos. Más intensiva en la separación del alumnado general.' },
+            { type: 'Colegio o magnet GT', desc: 'Un centro dedicado exclusivamente a alumnos con altas capacidades, que normalmente requiere solicitud y test de admisión separados. La entrada suele ser la más competitiva y exige las puntuaciones más altas.' },
+            { type: 'Servicios GT dentro de la educación general', desc: 'Algunos distritos ofrecen enriquecimiento a través de instrucción diferenciada en vez de una agrupación separada. La identificación se produce igualmente pero no resulta en una designación GT formal.' },
+          ].map(({ type, desc }) => (
+            <div key={type} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{type}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Principales tests de identificación</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los distintos distritos y colegios utilizan evaluaciones diferentes. Estos son los tests que tu hijo tiene más probabilidades de encontrar:
+        </p>
+        <div className="space-y-5">
+          {[
+            {
+              name: 'CogAT (Cognitive Abilities Test)',
+              publisher: 'Riverside Insights',
+              detail: 'El test de screening de superdotados administrado en grupo más utilizado en EE. UU. Mide razonamiento verbal (analogías de palabras, completar oraciones, clasificación verbal), razonamiento cuantitativo (analogías numéricas, series de números) y razonamiento no verbal (matrices de figuras, plegado de papel, clasificación de figuras). Para elegibilidad GT, la mayoría de los distritos requieren una puntuación compuesta en el percentil 95 o superior.',
+            },
+            {
+              name: 'NWEA MAP Growth',
+              publisher: 'Northwest Evaluation Association',
+              detail: 'Test de rendimiento académico adaptativo que mide Lectura, Matemáticas, Uso del Lenguaje y Ciencias. Las puntuaciones se informan como puntuaciones RIT. El MAP se usa ampliamente para derivaciones de enriquecimiento e identificación GT en muchos distritos. Una puntuación en el percentil 95 o superior en una materia específica a menudo activa la derivación GT en distritos que usan MAP como herramienta principal.',
+            },
+            {
+              name: 'WISC-V (Wechsler Intelligence Scale for Children)',
+              publisher: 'Pearson',
+              detail: 'Una evaluación de CI administrada individualmente por un psicólogo escolar o clínico autorizado. Produce un CI de Escala Completa (FSIQ) y varias puntuaciones compuestas. No puede prepararse de la misma manera que los tests de rendimiento. La mayoría de los programas GT requieren un FSIQ ≥ 130 (percentil 98 o superior) para la identificación más rigurosa.',
+            },
+            {
+              name: 'OLSAT (Otis-Lennon School Ability Test)',
+              publisher: 'NCS Pearson',
+              detail: 'Usado principalmente en el programa de Superdotados y Dotados de Nueva York y algunos otros distritos. Mide razonamiento verbal y no verbal. El programa GT de NYC históricamente ha requerido una puntuación compuesta en el percentil 97 o superior para programas de todo el distrito, y en el percentil 99 o superior para los programas de toda la ciudad.',
+            },
+            {
+              name: 'NNAT (Naglieri Nonverbal Ability Test)',
+              publisher: 'Pearson',
+              detail: 'Test de razonamiento no verbal que usa matrices de patrones abstractos. Se usa frecuentemente junto al OLSAT o CogAT. Las puntuaciones son independientes del idioma, lo que lo hace útil para la población de estudiantes de inglés como segunda lengua — especialmente relevante para familias hispanohablantes recién llegadas.',
+            },
+          ].map(({ name, publisher, detail }) => (
+            <div key={name} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-0.5">{name}</div>
+              <div className="text-xs text-indigo-600 font-medium mb-3">{publisher}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué puntuación necesita tu hijo?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El umbral varía significativamente según el tipo de programa y el distrito. Como guía general:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Tipo de programa</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Umbral de percentil típico</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Puntuación estandarizada equivalente</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Enriquecimiento por extracción (distrito típico)', 'Percentil 90–95', '120–125'],
+                ['Clase GT diferenciada', 'Percentil 95–97', '125–128'],
+                ['Colegio magnet GT competitivo', 'Percentil 97–99', '128–135'],
+                ['GT de Nueva York (programa de toda la ciudad)', 'Percentil 99 o superior', '135+'],
+                ['Altamente superdotados / tipo Davidson Academy', 'Percentil 99,9', '145+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900 text-sm">{row[0]}</td>
+                  <td className="p-4 text-indigo-700 font-medium">{row[1]}</td>
+                  <td className="p-4 text-gray-600">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">Importante:</strong> Muchos distritos usan criterios múltiples — las puntuaciones del test son una entrada, no la única. Algunos niños que no alcanzan el umbral numérico por poco son colocados en programas GT basándose en valoraciones del profesor, evidencia de portfolio u otros criterios. Si tu hijo está en el límite, vale la pena solicitar una reunión con el coordinador GT para entender el panorama completo.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo preparar a tu hijo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La preparación para los tests de superdotados es un tema matizado. Las evaluaciones de CI como el WISC-V no son entrenables de forma significativa — miden capacidad cognitiva, no conocimiento aprendido. Intentar "preparar" al niño para el WISC-V es poco probable que ayude y puede contraproducir si el niño se pone ansioso ante un test para el que no puede estudiar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El CogAT, el NNAT y el OLSAT responden más a la preparación — porque evalúan habilidades de razonamiento influidas por la exposición y la práctica. Los niños que han practicado razonamiento matricial, completar patrones y analogías verbales rendirán mejor en estas pruebas que los niños que las encuentran por primera vez.
+        </p>
+        <ul className="space-y-4 mb-4">
+          <Check><strong>Comienza con un diagnóstico.</strong> Usa una evaluación estandarizada gratuita (como Eduentry) para establecer el percentil actual de tu hijo antes de invertir en materiales de preparación. Esto te dice cuánto dista del umbral objetivo y si la identificación GT es un objetivo realista a corto plazo.</Check>
+          <Check><strong>Practica el formato específico del test.</strong> Diferentes tests usan diferentes formatos de preguntas. Las analogías verbales del CogAT se ven diferentes a las preguntas matriciales del NNAT. Usa materiales de práctica oficiales para el test específico que usa tu distrito.</Check>
+          <Check><strong>Desarrolla las habilidades subyacentes a largo plazo.</strong> La lectura amplia (para vocabulario y batería verbal), los puzzles matemáticos (para la batería cuantitativa) y los puzzles espaciales como Lego, tangrams y ajedrez (para la batería no verbal) desarrollan las habilidades subyacentes que alimentan el rendimiento en los tests. Estos son más efectivos a un horizonte de 12 meses que un atiborramiento intensivo en las 4 semanas previas al test.</Check>
+          <Check><strong>Practica en ordenador.</strong> La mayoría de los tests actuales de screening de superdotados se administran por ordenador. Los niños que solo han practicado en papel a veces tienen dificultades con el tiempo y la interfaz de los tests digitales.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Si tu hijo no clasifica</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          No clasificar para un programa GT no significa que tu hijo no sea inteligente, curioso o capaz de un rendimiento académico excepcional. La identificación GT a los 5 o 7 años es una instantánea del rendimiento de un niño en tests específicos en un momento concreto — no es un techo permanente.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Muchos niños que no califican inicialmente para programas GT a los 6 o 7 años califican en la reevaluación a los 8 o 9. Concéntrate en desarrollar las habilidades subyacentes y el amor por el aprendizaje — las puntuaciones seguirán. Para una guía práctica sobre cómo preparar esas habilidades de forma sistemática, consulta nuestra{' '}
+          <Link href="/es/blog/como-preparar-prueba-superdotados" className="text-indigo-600 hover:underline">
+            guía para preparar los tests de superdotados
+          </Link>, y para más información sobre cómo las puntuaciones NWEA MAP influyen en las derivaciones para GT, consulta nuestra{' '}
+          <Link href="/es/blog/puntuaciones-nwea-map-explicadas" className="text-indigo-600 hover:underline">
+            guía de puntuaciones MAP
+          </Link>.
+        </p>
+      </section>
+    </>
+  ),
+
+  'grammar-school-entry-requirements-2026': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        "¿Qué puntuación necesita mi hijo?" es la primera pregunta de toda familia que se prepara para el 11+ en el Reino Unido. La respuesta honesta es: depende de la zona, del colegio concreto y de lo competitiva que sea la cohorte de ese año. Pero existen referencias claras — y esta guía las recoge todas. Para familias hispanohablantes en el Reino Unido, entender el sistema de escuelas selectivas y los umbrales de puntuación es fundamental antes de iniciar cualquier preparación.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo funciona la selección en las grammar schools</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las grammar schools (escuelas selectivas estatales) en Inglaterra están autorizadas legalmente para seleccionar a todo su alumnado por capacidad académica en virtud de la School Standards and Framework Act 1998. Esto las diferencia de todos los demás colegios estatales, que deben admitir sin selección por capacidad. La mayoría de las grammar schools utilizan el examen 11+ — realizado en septiembre u octubre del Year 6 — como instrumento principal de selección.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un niño que supera la nota de corte formal del colegio queda inscrito en el "registro selectivo". Estar en el registro selectivo es necesario pero no suficiente para obtener plaza. Los colegios con más solicitudes que plazas — que son la mayoría en zonas competitivas — clasifican después a los aspirantes selectivos por criterios secundarios: niños en acogida, hermanos ya matriculados y proximidad al colegio.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Por eso las familias en zonas competitivas — especialmente Londres — deben entender que la nota de corte y la puntuación competitiva son dos números diferentes. La nota de corte es el suelo mínimo. La puntuación competitiva es la que realmente asegura plaza en un colegio concreto con exceso de solicitudes.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué organismos examinadores se utilizan?</h2>
+        <div className="grid sm:grid-cols-2 gap-4 mb-4">
+          {[
+            { board: 'GL Assessment', areas: 'Kent, Essex, Hertfordshire, mayoría de colegios individuales', notes: 'Produce una Puntuación Estandarizada según la Edad (SAS), ajustada por edad en meses. Evalúa Razonamiento Verbal, Razonamiento No Verbal, Inglés y Matemáticas en pruebas separadas. El formato de 11+ más utilizado en Inglaterra.' },
+            { board: 'CEM (Universidad de Durham)', areas: 'Buckinghamshire, algunos colegios de Birmingham', notes: 'Produce una puntuación estandarizada según la edad. Las preguntas combinan aptitud verbal, razonamiento numérico y razonamiento espacial sin etiquetarlos por materia. Es deliberadamente más difícil de preparar con los ejercicios estándar de razonamiento verbal.' },
+            { board: 'ISEB Common Pre-Test', areas: 'Colegios independientes y algunas academias selectivas', notes: 'Evalúa Inglés, Matemáticas, Razonamiento Verbal y No Verbal por separado. Se usa tanto para el ingreso a los 11 como a los 13 años en colegios independientes. Formato adaptativo por ordenador.' },
+            { board: 'Exámenes propios del colegio', areas: 'Fundación King Edward\'s (Birmingham), algunos colegios de Londres', notes: 'Redactados por el propio colegio. Típicamente evalúan Inglés y Matemáticas a un nivel significativamente por encima del Currículo Nacional. Más difíciles de preparar porque no hay materiales oficiales de práctica.' },
+          ].map(({ board, areas, notes }) => (
+            <div key={board} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-1">{board}</div>
+              <div className="text-xs font-medium text-indigo-600 mb-2">{areas}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{notes}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Puntuaciones de referencia por zona — 2026</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Los siguientes rangos son orientativos, basados en las notas de corte típicas y los niveles históricos de competencia. Las notas de corte individuales de cada colegio cambian año a año según la cohorte. Consulta siempre directamente la política de admisiones publicada por tu colegio objetivo.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Zona</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Organismo examinador</th>
+                <th className="text-left p-4 font-semibold text-gray-700">SAS objetivo</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Notas</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Kent', 'GL Assessment', '115–121', '32 grammar schools. Las notas de corte varían por colegio y localidad. Judd y Tonbridge Grammar son de los más competitivos.'],
+                ['Buckinghamshire', 'CEM', '118+', '13 colegios. Condado totalmente selectivo. El test es más difícil de preparar que los ejercicios estándar de GL Assessment.'],
+                ['Londres (Barnet)', 'GL Assessment', '121–132', 'QE Boys y Henrietta Barnett se encuentran entre los colegios estatales más selectivos de Inglaterra.'],
+                ['Londres (Sutton)', 'GL Assessment', '118–125', 'Nonsuch, Wallington, Wilson\'s, Sutton Grammar. El consorcio de Sutton comparte un test.'],
+                ['Birmingham (Fundación KE)', 'Exámenes propios', '119+', 'Los colegios de la Fundación King Edward\'s son muy selectivos con exámenes propios de Inglés y Matemáticas.'],
+                ['Essex', 'GL Assessment', '112–118', 'Colchester Royal Grammar, Westcliff High. Menor competencia que Londres o Kent.'],
+                ['Hertfordshire', 'GL Assessment', '111–115', 'Dame Alice Owen\'s, Watford Grammar. La distancia es un factor clave en caso de empate.'],
+                ['Gloucestershire', 'GL Assessment', '113–118', 'El Pate\'s Grammar es el más selectivo. Los cuatro colegios usan GL Assessment.'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 font-mono font-semibold text-indigo-700">{row[2]}</td>
+                  <td className="p-4 text-gray-500 text-xs leading-relaxed">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué se considera una puntuación competitiva?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Existe una distinción importante entre superar el 11+ y ser competitivo para obtener plaza. Superar el examen — puntuar por encima de la nota de corte formal — significa que el niño es académicamente apto para la educación en una grammar school. Ser competitivo significa puntuar lo suficientemente alto para asegurar realmente una plaza en un colegio concreto con exceso de solicitudes, dados los criterios secundarios.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En zonas menos competitivas (partes de Essex, Hertfordshire, Gloucestershire), superar el examen y ser competitivo son prácticamente lo mismo. En zonas muy competitivas (Londres, los mejores colegios de Kent, Buckinghamshire), la puntuación competitiva es significativamente más alta que la nota de corte publicada. En el Queen Elizabeth's Boys, por ejemplo, la nota de corte puede ser SAS 111, pero el aspirante mediano al que se le ofrece plaza puntúa más cerca de 127–130.
+        </p>
+        <Callout color="amber">
+          <strong className="text-amber-900">Para familias hispanohablantes en el Reino Unido:</strong> Si te estás planteando solicitar plaza en una grammar school de Londres, ten en cuenta que la distancia al colegio es un criterio de desempate determinante. Muchos niños con puntuaciones en el rango 121–126 no consiguen plaza en colegios del Barnet o Sutton sencillamente porque niños con puntuaciones de 127–130 viven más cerca.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La zona fronteriza</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La mayoría de los colegios operan una banda fronteriza informal — típicamente 2–4 puntos SAS a cada lado de la nota de corte publicada. Los niños que caen dentro de esta banda son considerados "limítrofes" y pueden obtener plaza a través del proceso normal de criterios secundarios (hermanos, distancia) si viven suficientemente cerca del colegio.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Estar en la zona fronteriza no es lo mismo que suspender. Muchos niños en este rango obtienen plaza en su colegio de primera opción porque sus criterios secundarios son fuertes. Vale la pena investigar el criterio de distancia de cada colegio objetivo: algunos colegios publican datos sobre la distancia máxima a la que se ofreció plaza en el año anterior.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">El proceso de apelación</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Si a tu hijo no se le ofrece plaza en una grammar school para la que realizó el 11+, tienes derecho a recurrir. Las apelaciones son escuchadas por un panel independiente y pueden prosperar por dos motivos: que la autoridad de admisiones cometió un error al aplicar sus criterios publicados, o que los intereses del niño en asistir al colegio superan el interés del colegio en limitar el tamaño de las clases.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En la práctica, las apelaciones en grammar schools son más difíciles de ganar que en colegios no selectivos porque el colegio puede argumentar legítimamente que la puntuación del niño significa que no es adecuado para el currículo. Sin embargo, las apelaciones pueden prosperar — especialmente cuando hay evidencia convincente de que el resultado no fue representativo de la verdadera capacidad del niño: por ejemplo, si estuvo enfermo el día del examen y puede aportar justificante médico.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Para entender mejor la escala de puntuaciones y lo que significa cada resultado, consulta nuestra{' '}
+          <Link href="/es/blog/que-es-una-puntuacion-estandarizada" className="text-indigo-600 hover:underline">
+            guía sobre puntuaciones estandarizadas
+          </Link>.
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-to-prepare-gifted-test': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Pocos aspectos de la educación generan más ansiedad entre los padres que un test de identificación para programas de superdotados. La presión por rendir bien, combinada con el panorama complejo de los diferentes tests que usan los distintos distritos, hace que la preparación parezca abrumadora — especialmente para familias hispanohablantes que navegan un sistema diferente al que conocen. Esta guía clarifica qué miden realmente los tests de superdotados, cuáles responden a la preparación y cuáles no, y qué aspecto tiene un plan de preparación realista y efectivo en casa.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué miden realmente los tests de superdotados</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          No todos los tests de superdotados miden lo mismo, y esto importa enormemente para saber cómo enfocar la preparación. En términos generales, los tests usados para la identificación GT se dividen en dos categorías:
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          <div className="border border-gray-100 rounded-xl p-5">
+            <div className="font-semibold text-gray-900 mb-2">Tests de capacidad cognitiva</div>
+            <p className="text-sm text-gray-500 leading-relaxed mb-3">Tests como el WISC-V, Stanford-Binet y Woodcock-Johnson miden la inteligencia fluida — la capacidad de razonar de forma abstracta, mantener información en la memoria de trabajo y resolver problemas nuevos sin apoyarse en conocimiento previo. Se acercan más a los tests de CI.</p>
+            <div className="text-xs font-semibold text-amber-700 bg-amber-50 rounded-lg px-3 py-2">Respuesta limitada a la preparación — la mejora solo es posible a través de la familiaridad y la reducción de la ansiedad</div>
+          </div>
+          <div className="border border-gray-100 rounded-xl p-5">
+            <div className="font-semibold text-gray-900 mb-2">Tests de razonamiento académico</div>
+            <p className="text-sm text-gray-500 leading-relaxed mb-3">Tests como el CogAT, NNAT, OLSAT y MAP Growth miden habilidades de razonamiento influidas tanto por la capacidad innata como por el conocimiento acumulado. No son tests de CI puros — la exposición previa a analogías, series numéricas y matrices genuinamente importa.</p>
+            <div className="text-xs font-semibold text-emerald-700 bg-emerald-50 rounded-lg px-3 py-2">Respuesta moderada a la preparación — la práctica específica produce mejoras reales</div>
+          </div>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Entender qué tipo de test usa tu distrito determina cuánta y qué clase de preparación tiene sentido. Si tu hijo será evaluado con el WISC-V, la gestión de la ansiedad y la familiaridad con el proceso de evaluación son más importantes que el trabajo de contenido. Si tu hijo realizará el CogAT o el NNAT, la práctica estructurada con los formatos específicos de preguntas producirá una mejora genuina en la puntuación.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Paso 1: Obtén un diagnóstico antes de hacer nada más</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Antes de comprar cualquier material de preparación, realiza una evaluación estandarizada gratuita para entender dónde está tu hijo actualmente. Esto cumple dos propósitos: te dice cuánto dista tu hijo del umbral objetivo (y si la identificación GT es un objetivo realista a corto plazo), e identifica qué materias específicas necesitan más trabajo.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry abarca razonamiento verbal, razonamiento no verbal, inglés y matemáticas — los mismos dominios que evalúan el CogAT y el NWEA MAP — y produce una puntuación estandarizada en la misma escala (media 100, DT 15) que usan la mayoría de las evaluaciones de superdotados en EE. UU. Un niño que puntúa 120 en Eduentry (percentil 84) y necesita alcanzar el percentil 95 (SAS ~125) tiene una brecha medible que cerrar en un horizonte de preparación realista de 6–12 meses.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Regla general:</strong> Un niño que ya está en el percentil 90 o superior en un diagnóstico puede aspirar razonablemente a alcanzar el percentil 95 o superior con 6 meses de preparación específica. Un niño en el percentil 70 que aspira al percentil 99 o superior requerido por los programas más competitivos tiene pocas probabilidades de cerrar esa brecha solo con preparación.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Paso 2: Conoce exactamente qué test realizará tu hijo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los distintos tests requieren preparaciones completamente diferentes. Usar materiales de preparación del CogAT cuando tu hijo en realidad va a realizar el NNAT no es útil — y puede inducirte a error sobre su preparación.
+        </p>
+        <div className="space-y-4">
+          {[
+            {
+              test: 'CogAT (Cognitive Abilities Test)',
+              battery: 'Verbal, Cuantitativa, No Verbal',
+              prepApproach: 'Batería verbal: vocabulario, analogías de palabras, completar oraciones. Batería cuantitativa: series numéricas, construcción de ecuaciones, analogías numéricas. Batería no verbal: matrices de figuras, plegado de papel, clasificación de figuras. Usa materiales de práctica oficiales del CogAT (Riverside Insights) o libros recomendados por el editor.',
+            },
+            {
+              test: 'NNAT (Naglieri Nonverbal Ability Test)',
+              battery: 'Solo no verbal (matrices de patrones)',
+              prepApproach: 'Practica la completar patrones visuales, series de figuras y razonamiento espacial. Los libros y aplicaciones centrados en el razonamiento matricial abstracto son directamente relevantes. El NNAT es 100% no verbal — no hay componente verbal ni matemático para preparar.',
+            },
+            {
+              test: 'OLSAT (Otis-Lennon School Ability Test)',
+              battery: 'Verbal y No Verbal',
+              prepApproach: 'Sección verbal: seguir instrucciones, antónimos, ordenar oraciones, selección lógica. Sección no verbal: series de patrones, inferencia numérica, razonamiento figural. La sección verbal del OLSAT es notablemente diferente de la del CogAT — prepárate con materiales específicos del OLSAT.',
+            },
+            {
+              test: 'WISC-V (Wechsler Intelligence Scale)',
+              battery: 'ICV, IVE, IRF, IMT, IVP',
+              prepApproach: 'El WISC-V es administrado individualmente por un psicólogo y mide la capacidad cognitiva subyacente. No se recomienda la preparación formal — puede aumentar la ansiedad sin mejorar el rendimiento. Céntrate en asegurarte de que tu hijo esté bien descansado, cómodo con el entorno de evaluación y que entienda qué esperar del proceso.',
+            },
+          ].map(({ test, battery, prepApproach }) => (
+            <div key={test} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-bold text-gray-900 mb-0.5">{test}</div>
+              <div className="text-xs font-medium text-indigo-600 mb-3">Baterías: {battery}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{prepApproach}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Paso 3: Desarrolla habilidades subyacentes a lo largo del tiempo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Para los tests que responden a la preparación (CogAT, NNAT, OLSAT), la preparación más efectiva trabaja en un horizonte de 6–18 meses desarrollando las habilidades cognitivas subyacentes — no memorizando formatos de preguntas en las últimas 4 semanas.
+        </p>
+        <div className="space-y-5">
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-2">Para el rendimiento en la batería verbal</h3>
+            <p className="text-gray-700 leading-relaxed">
+              La lectura amplia es la palanca más poderosa. Los niños que leen ampliamente a través de ficción, no ficción y textos complejos desde una edad temprana desarrollan vocabulario, razonamiento analógico y comprensión a nivel de oración que alimentan directamente el rendimiento en la batería verbal. La lectura diaria durante 20–30 minutos, mantenida de forma constante, supera cualquier programa de tarjetas de vocabulario a un horizonte de 12 meses. Para las familias hispanohablantes: fomentar la lectura tanto en español como en inglés potencia el desarrollo del vocabulario en ambos idiomas.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-2">Para el rendimiento en la batería cuantitativa</h3>
+            <p className="text-gray-700 leading-relaxed">
+              La batería cuantitativa evalúa el razonamiento matemático, no el cálculo. El cálculo mental diario, los libros de puzzles numéricos (como KenKen, Sudoku y hojas de trabajo de series numéricas) y los juegos matemáticos que requieren deducción lógica desarrollan las habilidades de razonamiento cuantitativo que evalúa el CogAT. Los juegos de mesa matemáticos — Blokus, SET, Sequence, Prime Climb — son especialmente efectivos porque desarrollan el razonamiento en un entorno motivador y sin presión.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-2">Para el rendimiento en la batería no verbal/espacial</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Las habilidades de razonamiento espacial se desarrollan a través de la manipulación práctica de objetos físicos y visuales. Lego (especialmente los sets técnicos complejos), puzzles de tangrams, juguetes de formas 3D, ajedrez, origami y actividades de patrones visuales desarrollan el razonamiento espacial. Estas actividades son especialmente efectivas para los niños más pequeños (5–9 años) cuyas habilidades espaciales aún están desarrollándose rápidamente.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Paso 4: Practica en condiciones reales</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los tests de superdotados se administran en entornos desconocidos — a menudo una oficina del colegio o una sala de evaluación — bajo condiciones cronometradas, con un adulto que el niño puede no conocer. Los niños pequeños en particular pueden rendir significativamente por debajo de su nivel cuando el entorno de evaluación les resulta nuevo. Reducir la novedad del entorno y el formato es una de las estrategias de preparación más efectivas.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Practica el formato específico al que se enfrentará tu hijo — en ordenador si el test se administra por ordenador, en papel si es en papel. Siéntate con tu hijo durante unas sesiones para establecer la comodidad con la práctica cronometrada, y luego pasa a la práctica independiente con tiempo real.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Para los niños muy pequeños (4–6 años), la gestión de la ansiedad es la preparación más importante de todas. Un niño tranquilo, bien descansado y seguro de sí mismo superará de forma constante su preparación ansiosa el día del test. Enfatiza que el test son "puzzles divertidos" y que no hay un resultado correcto o incorrecto — es solo una oportunidad para que el colegio entienda cómo funciona su mente. Para más información sobre los programas de superdotados y los umbrales de puntuación, consulta nuestra{' '}
+          <Link href="/es/blog/guia-evaluacion-programas-superdotados" className="text-indigo-600 hover:underline">
+            guía completa de evaluación para programas de superdotados
+          </Link>.
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

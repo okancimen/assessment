@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { Bullet, Callout, Check } from './blog-components'
 
 export const FR_CONTENT: Record<string, React.ReactNode> = {
@@ -1160,6 +1161,659 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
         </p>
         <p className="text-gray-700 leading-relaxed">
           Les familles qui comprennent cela ont un avantage réel : elles peuvent agir avant que l&apos;écart ne devienne coûteux. Savoir où se situe votre enfant sur l&apos;échelle internationale, développer les compétences que le marché valorise, et connecter l&apos;apprentissage académique à une expérience professionnelle réelle — ces trois choses ensemble constituent la préparation la plus solide pour 2030. Et les trois sont accessibles maintenant, pendant que la fenêtre est encore ouverte.
+        </p>
+      </section>
+    </>
+  ),
+
+  'what-is-a-standardised-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Si votre enfant a récemment passé une évaluation scolaire — un test CAT4 à l'école, un exercice de préparation au 11+, ou un bilan diagnostique en ligne — vous avez probablement vu apparaître un « score standardisé » à côté du pourcentage de bonnes réponses. La plupart des parents ignorent le score standardisé et se concentrent sur le pourcentage. C'est pourtant le score standardisé qui vous dit quelque chose de réel sur la position de votre enfant.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qu'est-ce qu'un score standardisé ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un score standardisé indique comment votre enfant s'est comporté par rapport à un grand groupe de référence d'enfants du même âge — et non pas simplement quel pourcentage de questions il a réussi. La plupart des évaluations éducatives utilisent une échelle avec une moyenne de 100 et un écart-type de 15. Un score de 115 signifie donc toujours la même chose, quel que soit le test passé ou son niveau de difficulté.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les tests qui utilisent cette échelle incluent le CAT4 (très répandu dans les écoles britanniques et internationales), le CogAT (États-Unis), le NWEA MAP, les tests 11+ GL Assessment au Royaume-Uni, ainsi que l'évaluation Eduentry. Cette standardisation commune permet des comparaisons significatives entre tests différents.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Le problème des scores bruts</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un score brut — par exemple 43 bonnes réponses sur 60 — ne vous dit qu'une chose : votre enfant a répondu correctement à 72 % des questions de ce test particulier ce jour-là. Il ne vous dit pas si le test était facile ou difficile. Il ne vous dit pas comment les autres enfants du même âge ont performé. Il ne vous permet pas de comparer ce résultat avec un test différent passé trois mois plus tard.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le score standardisé, lui, tient compte de l'âge, de la difficulté du test et des performances du groupe de référence. Deux enfants qui répondent correctement à 43 questions sur 60 peuvent recevoir des scores standardisés très différents s'ils ont un écart d'âge de 18 mois ou s'ils ont passé des tests de difficulté différente.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">L'essentiel à retenir :</strong> Le score standardisé place votre enfant sur un pied d'égalité avec d'autres enfants exactement du même âge, indépendamment de la difficulté du test. C'est une mesure comparative juste ; le score brut ne l'est pas.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">L'échelle standardisée : repères essentiels</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Presque toutes les évaluations standardisées utilisées dans les écoles britanniques et internationales utilisent la même échelle : une moyenne de 100 et un écart-type de 15. Cette échelle est commune au CAT4, au GL Assessment 11+, au NFER, aux tests WISC-V et à Eduentry.
+        </p>
+        <div className="grid sm:grid-cols-3 gap-4 mb-6">
+          <div className="bg-indigo-50 rounded-xl p-5 text-center">
+            <div className="text-3xl font-bold text-indigo-700 mb-1">100</div>
+            <div className="text-sm text-indigo-600 font-medium">Moyenne</div>
+            <div className="text-xs text-gray-500 mt-1">50e percentile</div>
+          </div>
+          <div className="bg-indigo-50 rounded-xl p-5 text-center">
+            <div className="text-3xl font-bold text-indigo-700 mb-1">15</div>
+            <div className="text-sm text-indigo-600 font-medium">Écart-type</div>
+            <div className="text-xs text-gray-500 mt-1">unité de dispersion</div>
+          </div>
+          <div className="bg-indigo-50 rounded-xl p-5 text-center">
+            <div className="text-3xl font-bold text-indigo-700 mb-1">68 %</div>
+            <div className="text-sm text-indigo-600 font-medium">Entre 85 et 115</div>
+            <div className="text-xs text-gray-500 mt-1">dans un écart-type</div>
+          </div>
+        </div>
+        <div className="rounded-xl border border-gray-100 overflow-hidden mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Plage de scores</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Classification</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Percentile approx.</th>
+                <th className="text-left p-4 font-semibold text-gray-700">% de la population</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['130+', 'Très supérieur', 'Top 2 %', '~2 %'],
+                ['120–129', 'Supérieur', '91e–98e', '~7 %'],
+                ['110–119', 'Au-dessus de la moyenne', '75e–91e', '~16 %'],
+                ['95–109', 'Dans la moyenne', '37e–63e', '~25 %'],
+                ['85–94', 'En dessous de la moyenne', '16e–36e', '~16 %'],
+                ['70–84', 'Faible / nécessite un soutien', '2e–15e', '~14 %'],
+              ].map(([range, label, pct, pop]) => (
+                <tr key={range} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono font-semibold text-gray-900">{range}</td>
+                  <td className="p-4 text-gray-700">{label}</td>
+                  <td className="p-4 text-gray-500">{pct}</td>
+                  <td className="p-4 text-gray-400">{pop}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Propriété importante de cette échelle : chaque pas de 15 points représente exactement un écart-type. Un score de 115 (un écart-type au-dessus de la moyenne) correspond à environ le 84e percentile. Un score de 130 (deux écarts-types) correspond à environ le 98e percentile. Ces correspondances sont constantes sur tous les tests qui utilisent cette échelle.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qu'est-ce qu'un percentile ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le percentile est la façon la plus intuitive d'interpréter un score standardisé. Le percentile de votre enfant indique le pourcentage d'enfants du même âge qu'il a dépassés. Un score au <strong>84e percentile</strong> signifie que votre enfant a fait mieux que 84 % des enfants de son âge.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Deux idées reçues à corriger. Première : le 50e percentile n'est pas un « mauvais » score — il signifie exactement dans la moyenne, ni mieux ni moins bien que la moitié des enfants du même âge. Beaucoup de parents voient un score au 50e percentile et pensent que leur enfant est en difficulté. Deuxième : le percentile n'est pas la même chose que le pourcentage de bonnes réponses. Un enfant qui répond correctement à 70 % des questions peut se retrouver au 85e percentile si le test était difficile, ou au 30e si le test était facile.
+        </p>
+        <ul className="mt-4 space-y-2 text-sm text-gray-700 mb-4">
+          {[
+            ['Score standardisé 130', '98e percentile', 'Top 2 % des enfants du même âge'],
+            ['Score standardisé 120', '91e percentile', 'Top 9 %'],
+            ['Score standardisé 115', '84e percentile', 'Plage compétitive grammar school'],
+            ['Score standardisé 110', '75e percentile', 'Au-dessus de la moyenne'],
+            ['Score standardisé 100', '50e percentile', 'Exactement dans la moyenne'],
+            ['Score standardisé 90', '25e percentile', 'En dessous de la moyenne'],
+          ].map(([score, pct, note]) => (
+            <li key={score} className="flex justify-between items-center border-b border-gray-50 pb-2">
+              <span className="font-medium">{score}</span>
+              <span className="text-indigo-600 font-medium">{pct}</span>
+              <span className="text-gray-400 text-xs">{note}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Le score standardisé selon l'âge (SAS)</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le SAS (Standard Age Score) est le format spécifique utilisé par GL Assessment pour le 11+ au Royaume-Uni. Il introduit un ajustement supplémentaire : l'âge exact de l'enfant en mois au moment du test.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cela est important car les enfants qui passent le 11+ en septembre de la Year 6 ont des âges qui vont d'environ 10 ans et 2 mois à 11 ans et 1 mois — une différence de développement significative à cet âge. Les recherches montrent constamment que les enfants les plus âgés d'une cohorte surpassent les plus jeunes aux tests standardisés, non pas en raison d'une plus grande aptitude, mais d'un avantage développemental.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Implication pratique pour les parents :</strong> Si votre enfant est né en été, ne paniquez pas quand un camarade né en septembre semble mieux performer. Le SAS compense cet écart en comparant chaque enfant uniquement avec des enfants nés dans la même plage de mois — pas avec toute la cohorte.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment utiliser le score de votre enfant</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lorsque vous recevez un score standardisé, l'erreur la plus courante est de l'interpréter comme une caractéristique fixe de votre enfant. Un score au 65e percentile aujourd'hui ne signifie pas que votre enfant sera au 65e percentile dans 12 mois. Les scores standardisés à cet âge sont réellement sensibles à la préparation ciblée — en particulier en raisonnement verbal et en mathématiques.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Utilisez le score de façon diagnostique. Un enfant qui score en dessous de 95 en raisonnement verbal et au-dessus de 115 en mathématiques a besoin d'un plan de préparation très différent d'un enfant qui score 108 dans les quatre domaines. Le percentile vous dit où il en est. Le détail par matière vous dit sur quoi travailler. Pour explorer les niveaux requis dans les écoles sélectives britanniques, consultez notre guide sur les{' '}
+          <Link href="/fr/blog/ecoles-selectionnees-uk-2026" className="text-indigo-600 hover:underline">
+            critères d'admission des écoles sélectives UK 2026
+          </Link>.
+        </p>
+      </section>
+    </>
+  ),
+
+  'nwea-map-scores-explained': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Si l'école de votre enfant utilise les tests NWEA MAP Growth, vous avez probablement reçu un rapport affichant un « score RIT » et un percentile — et vous vous êtes demandé ce que ces chiffres signifient vraiment. Ce guide explique comment interpréter les scores RIT, ce qui est considéré comme dans la norme ou avancé, et comment utiliser les résultats pour soutenir l'apprentissage de votre enfant.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qu'est-ce que le test NWEA MAP Growth ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NWEA MAP (Measures of Academic Progress) Growth est un test d'évaluation adaptatif informatisé développé par la Northwest Evaluation Association. Utilisé par plus de 9 millions d'élèves aux États-Unis de la maternelle à la terminale, il mesure la lecture, les mathématiques, l'usage de la langue et les sciences. Contrairement aux tests fixes, MAP s'adapte en temps réel — chaque question s'ajuste au niveau de l'enfant en fonction de sa réponse précédente, de sorte que le test est toujours calibré avec précision.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ce test est particulièrement répandu dans les écoles américaines et dans certains établissements bilingues et internationaux du Canada, de la Belgique et de la Suisse. La plupart des écoles administrent le MAP Growth deux à trois fois par an — généralement en automne, en hiver et au printemps. Cela permet de suivre non seulement le niveau actuel de l'enfant, mais aussi sa progression, qui est souvent l'information la plus utile.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Atout majeur du MAP :</strong> Contrairement à la plupart des tests scolaires, MAP vous dit non seulement où se situe votre enfant, mais aussi à quelle vitesse il progresse — et si cette progression est dans la norme, au-dessus ou en dessous par rapport aux élèves de son niveau dans le pays.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qu'est-ce qu'un score RIT ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le score produit par MAP Growth s'appelle un score RIT (abréviation de Rasch Unit). Ce n'est pas un pourcentage et ce n'est pas un équivalent de niveau scolaire. C'est une position sur une échelle à intervalles égaux qui couvre l'ensemble du cursus de la maternelle à la terminale — la même échelle continue de la petite enfance jusqu'au lycée.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un enfant typique en début de maternelle commence avec un score RIT en mathématiques d'environ 140–150. À la fin du CM2 (Grade 5 américain), la moyenne se situe autour de 210–215. En fin de 4e (Grade 8), la moyenne est d'environ 218–222. L'échelle est continue et cohérente : un score RIT de 210 en mathématiques représente exactement le même niveau de connaissances qu'il appartienne à un élève de CM1 ou de 6e.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">L'atout clé du score RIT :</strong> Comme l'échelle est cohérente entre tous les niveaux, vous pouvez directement comparer le score RIT d'un enfant aux normes de son niveau — et voir non seulement s'il est au niveau, mais de combien il est en avance ou en retard. Un élève de CE2 avec un RIT de mathématiques de 220 performe au niveau d'un élève de 5e.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Repères de scores RIT par niveau scolaire</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Le tableau suivant présente les normes nationales NWEA 2020 — les scores RIT moyens pour les élèves américains en début d'année, ainsi que ce qui représente une performance solide (environ le 75e percentile). Les équivalences françaises sont approximatives.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Niveau (équiv. France)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Maths (moy.)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Maths (75e %ile)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Lecture (moy.)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Lecture (75e %ile)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Maternelle', '144', '154', '139', '150'],
+                ['CP', '163', '173', '158', '170'],
+                ['CE1', '178', '188', '169', '181'],
+                ['CE2', '188', '199', '177', '191'],
+                ['CM1', '197', '208', '185', '199'],
+                ['CM2', '205', '216', '191', '206'],
+                ['6e', '211', '222', '197', '212'],
+                ['5e', '215', '226', '201', '217'],
+                ['4e', '218', '229', '204', '220'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  {row.slice(1).map((cell, i) => (
+                    <td key={i} className="p-4 text-gray-600">{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-400">Source : NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">RIT et percentile : quelle différence ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le rapport MAP de votre enfant affiche à la fois un score RIT et un percentile. Ces deux mesures sont liées mais mesurent des choses différentes.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le <strong>score RIT</strong> est une mesure absolue — il indique où se situe votre enfant sur la progression des connaissances de la maternelle au lycée, quel que soit son niveau scolaire. Un RIT de 215 en mathématiques signifie toujours le même niveau de compréhension mathématique.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le <strong>percentile</strong> est une mesure relative — il compare le score RIT de votre enfant aux normes nationales pour les élèves du même niveau à la même période de l'année. Utilisez le RIT pour comprendre le niveau de contenu que votre enfant est prêt à aborder. Utilisez le percentile pour comprendre comment votre enfant se compare à ses pairs.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comprendre la progression</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L'une des fonctionnalités les plus précieuses du MAP est le suivi de la progression dans le temps. La progression typique du score RIT de mathématiques entre l'automne et le printemps :
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>Maternelle–CE1 :</strong> environ 10–12 points RIT par an (croissance rapide en début de littératie et numératie)</Bullet>
+          <Bullet><strong>CE2–CM2 :</strong> environ 6–8 points RIT par an (la progression ralentit à mesure que le contenu devient plus complexe)</Bullet>
+          <Bullet><strong>6e–4e :</strong> environ 3–5 points RIT par an (la progression ralentit significativement au collège)</Bullet>
+          <Bullet><strong>Lycée :</strong> environ 1–3 points RIT par an (proche du plafond de l'échelle pour les élèves avancés)</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Un enfant qui progresse davantage que ces normes affiche une croissance accélérée. Un enfant qui ne gagne que 2 points RIT dans une année où 7 est la norme peut avoir besoin d'un soutien supplémentaire, même si son score absolu est encore au-dessus de la moyenne de son niveau.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Scores MAP élevés et identification des élèves à haut potentiel</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dans de nombreux districts scolaires américains, un score MAP Growth élevé est l'un des indicateurs clés qui déclenchent une orientation vers un programme pour élèves à haut potentiel. Les seuils courants sont le 90e ou le 95e percentile dans une ou plusieurs matières. Si votre enfant se situe à ces niveaux, demandez explicitement à l'école si une évaluation pour ces programmes est appropriée — certains districts déclenchent automatiquement ce processus, d'autres nécessitent une initiative parentale.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Pour une vue d'ensemble complète du processus d'évaluation et des autres tests utilisés aux côtés du MAP dans le cadre des programmes surdoués, consultez notre{' '}
+          <Link href="/fr/blog/guide-evaluation-programmes-surdoues" className="text-indigo-600 hover:underline">
+            guide d'évaluation pour les programmes surdoués
+          </Link>.
+        </p>
+      </section>
+    </>
+  ),
+
+  'gifted-program-testing-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Les programmes pour élèves à haut potentiel (EHP) comptent parmi les placements les plus recherchés dans l'éducation publique américaine — et le processus de qualification peut être déroutant pour les familles qui y font face pour la première fois. Ce guide explique comment fonctionnent ces programmes, quels tests sont utilisés, quels scores sont nécessaires et comment préparer votre enfant efficacement. Il s'adresse particulièrement aux familles francophones résidant aux États-Unis, au Canada ou dans des établissements internationaux utilisant ces évaluations.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qu'est-ce qu'un programme pour élèves à haut potentiel ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un programme EHP (Gifted and Talented en anglais) est un placement éducatif structuré pour les enfants identifiés comme exceptionnellement avancés sur le plan académique ou cognitif. L'identification se fait généralement par des tests d'aptitude et de compétences tels que le CogAT, le WISC-V, l'OLSAT ou le NNAT. Aux États-Unis, l'identification se fait au niveau du district scolaire et nécessite généralement d'atteindre des seuils de score dans les 2 à 5 % supérieurs selon plusieurs critères — et non pas un seul résultat de test.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          {[
+            { type: 'Programme de retrait partiel', desc: 'Les élèves restent dans leur classe ordinaire mais sont retirés pour un enseignement spécialisé EHP quelques heures par semaine. Le format le plus courant à l\'école primaire.' },
+            { type: 'Classe EHP dédiée', desc: 'Une classe entièrement consacrée aux élèves EHP, au sein d\'une école ordinaire. Les élèves identifiés passent toute la journée ensemble. Format plus intensif que le retrait partiel.' },
+            { type: 'École EHP spécialisée (magnet school)', desc: 'Une école entièrement dédiée aux élèves surdoués, nécessitant généralement une candidature et un test d\'admission séparé. L\'entrée y est la plus compétitive.' },
+            { type: 'Différenciation en classe ordinaire', desc: 'Certains districts fournissent un enrichissement via l\'enseignement différencié plutôt qu\'un placement séparé. L\'identification existe mais ne résulte pas en une désignation EHP formelle.' },
+          ].map(({ type, desc }) => (
+            <div key={type} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{type}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{desc}</p>
+            </div>
+          ))}
+        </div>
+        <Callout color="amber">
+          <strong className="text-amber-800">Particularité américaine :</strong> L'éducation des élèves surdoués n'est pas mandatée au niveau fédéral aux États-Unis. Chaque État définit ses propres critères, et les processus varient significativement d'un district à l'autre. Vérifiez toujours les critères spécifiques de votre district en premier lieu.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment les enfants sont-ils identifiés ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La plupart des districts utilisent un processus d'identification multi-critères plutôt qu'un seul score de test. Un processus typique se déroule en quatre étapes :
+        </p>
+        <div className="space-y-4 mb-6">
+          {[
+            { step: '1', title: 'Orientation', detail: 'Un enseignant, un parent ou l\'élève lui-même initie une demande d\'évaluation EHP. De nombreux districts ont une fenêtre formelle d\'orientation chaque année — généralement en automne.' },
+            { step: '2', title: 'Évaluation de présélection', detail: 'Le district administre un test de présélection collectif (CogAT, NNAT ou OLSAT) pour identifier les élèves susceptibles de se qualifier pour une évaluation plus approfondie.' },
+            { step: '3', title: 'Évaluation formelle', detail: 'Les élèves qui dépassent le seuil de présélection reçoivent une évaluation plus complète — souvent un test de QI individuel (WISC-V ou Stanford-Binet) administré par un psychologue scolaire.' },
+            { step: '4', title: 'Comité de placement', detail: 'Un comité examine les résultats des tests avec les évaluations des enseignants, les performances académiques, le portfolio et d\'autres critères pour formuler une recommandation de placement.' },
+          ].map(({ step, title, detail }) => (
+            <div key={step} className="flex gap-4 p-5 rounded-xl border border-gray-100">
+              <div className="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 font-bold flex items-center justify-center flex-shrink-0">{step}</div>
+              <div>
+                <div className="font-semibold text-gray-900 mb-1">{title}</div>
+                <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les principaux tests utilisés pour l'identification</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Voici les tests que votre enfant est le plus susceptible de rencontrer dans ce processus, et ce que chacun mesure :
+        </p>
+        <div className="space-y-5">
+          {[
+            {
+              name: 'CogAT (Cognitive Abilities Test)',
+              publisher: 'Riverside Insights',
+              detail: 'Le test de présélection collectif le plus utilisé aux États-Unis. Mesure le raisonnement verbal (analogies, classification), le raisonnement quantitatif (séries de nombres) et le raisonnement non verbal (matrices de figures). Pour l\'admissibilité EHP, la plupart des districts exigent un score composite au 95e percentile ou plus.',
+            },
+            {
+              name: 'NWEA MAP Growth',
+              publisher: 'Northwest Evaluation Association',
+              detail: 'Test adaptatif mesurant la lecture, les mathématiques, l\'usage de la langue et les sciences. Les scores sont reportés en unités RIT. Un score au 95e percentile ou plus dans une matière spécifique déclenche souvent une orientation EHP dans les districts qui utilisent MAP comme principal outil de présélection.',
+            },
+            {
+              name: 'WISC-V (Wechsler Intelligence Scale for Children)',
+              publisher: 'Pearson',
+              detail: 'Évaluation de QI individuelle administrée par un psychologue scolaire ou clinique agréé. Produit un QI total (FSIQ) et plusieurs scores composites. La plupart des programmes EHP rigoureux exigent un FSIQ ≥ 130 (98e percentile ou plus). Ne peut pas être préparé de la même façon que les tests de compétences.',
+            },
+            {
+              name: 'OLSAT (Otis-Lennon School Ability Test)',
+              publisher: 'NCS Pearson',
+              detail: 'Utilisé principalement dans le programme Gifted & Talented de New York et certains autres districts. Mesure le raisonnement verbal et non verbal. Le programme EHP de NYC exige historiquement un score composite au 97e percentile ou plus pour les programmes de district, et au 99e percentile pour les programmes à l\'échelle de la ville.',
+            },
+            {
+              name: 'NNAT (Naglieri Nonverbal Ability Test)',
+              publisher: 'Pearson',
+              detail: 'Test de raisonnement non verbal utilisant des matrices de motifs abstraits. Souvent utilisé avec l\'OLSAT ou le CogAT. Les scores sont indépendants de la langue, ce qui le rend particulièrement utile pour les élèves dont l\'anglais n\'est pas la langue maternelle — notamment les familles francophones récemment arrivées aux États-Unis.',
+            },
+          ].map(({ name, publisher, detail }) => (
+            <div key={name} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-0.5">{name}</div>
+              <div className="text-xs text-indigo-600 font-medium mb-3">{publisher}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Quel score votre enfant doit-il atteindre ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le seuil varie considérablement selon le type de programme et le district. À titre indicatif général :
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Type de programme</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Seuil percentile typique</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Score standardisé équivalent</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Programme de retrait partiel (district typique)', '90e–95e percentile', '120–125'],
+                ['Classe EHP dédiée', '95e–97e percentile', '125–128'],
+                ['École magnet EHP compétitive', '97e–99e percentile', '128–135'],
+                ['NYC Gifted & Talented (programme municipal)', '99e percentile+', '135+'],
+                ['Programmes très surdoués (type Davidson Academy)', '99,9e percentile', '145+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900 text-sm">{row[0]}</td>
+                  <td className="p-4 text-indigo-700 font-medium">{row[1]}</td>
+                  <td className="p-4 text-gray-600">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">Important :</strong> De nombreux districts utilisent des critères multiples — les scores de tests ne sont qu'un élément, pas le seul. Certains enfants qui manquent de peu le seuil numérique sont placés dans des programmes EHP sur la base d'évaluations solides des enseignants ou d'un portfolio. Si votre enfant est à la limite, il vaut la peine de demander une réunion avec le coordinateur EHP.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment préparer votre enfant</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La préparation aux tests EHP est un sujet nuancé. Les évaluations de QI comme le WISC-V ne peuvent pas être préparées de façon significative — elles mesurent l'aptitude cognitive, pas les connaissances acquises. En revanche, le CogAT, le NNAT et l'OLSAT sont plus sensibles à la pratique, car ils testent des compétences de raisonnement influencées par l'exposition et la répétition.
+        </p>
+        <ul className="space-y-4 mb-4">
+          <Check><strong>Commencez par un bilan diagnostique.</strong> Utilisez une évaluation standardisée gratuite (comme Eduentry) pour établir le niveau percentile actuel de votre enfant avant d'investir dans des matériaux de préparation. Cela vous dit à quelle distance du seuil vous vous situez et si l'identification EHP est un objectif réaliste à court terme.</Check>
+          <Check><strong>Pratiquez le format spécifique du test utilisé.</strong> Différents tests utilisent différents formats. Les analogies verbales du CogAT sont différentes des matrices du NNAT. Utilisez des matériaux de pratique officiels pour le test spécifique de votre district.</Check>
+          <Check><strong>Développez les compétences sous-jacentes sur la durée.</strong> La lecture extensive (pour le vocabulaire), les puzzles mathématiques (pour la batterie quantitative) et les puzzles spatiaux comme les Lego et tangrams (pour les batteries non verbales) sont plus efficaces sur 12 mois que le bachotage intensif les semaines précédant le test.</Check>
+          <Check><strong>Pratiquez sur ordinateur.</strong> La plupart des tests EHP actuels sont administrés sur ordinateur. Les enfants qui n'ont pratiqué que sur papier peuvent avoir du mal avec le timing et l'interface des tests numériques.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Si votre enfant ne se qualifie pas</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ne pas se qualifier pour un programme EHP ne signifie pas que votre enfant n'est pas brillant ou capable d'une performance académique exceptionnelle. L'identification EHP à 5 ou 7 ans est un instantané des performances d'un enfant sur des tests spécifiques à un moment précis — ce n'est pas un plafond permanent.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          De nombreux enfants qui ne se qualifient pas initialement à 6 ou 7 ans se qualifient lors d'une réévaluation à 8 ou 9 ans. Concentrez-vous sur le développement des compétences sous-jacentes et de la curiosité intellectuelle. Pour comprendre comment les scores NWEA MAP s'inscrivent dans les orientations EHP, consultez notre{' '}
+          <Link href="/fr/blog/scores-nwea-map-expliques" className="text-indigo-600 hover:underline">
+            guide sur les scores NWEA MAP
+          </Link>.
+        </p>
+      </section>
+    </>
+  ),
+
+  'grammar-school-entry-requirements-2026': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        « Quel score mon enfant doit-il obtenir ? » est la première question que se posent toutes les familles qui préparent le 11+ au Royaume-Uni. La réponse honnête est : cela dépend de la région, de l'école spécifique et du niveau de compétition de l'année. Mais il existe des repères clairs — et ce guide les couvre tous. Pour les familles francophones vivant au Royaume-Uni ou envisageant d'y scolariser leur enfant, comprendre ce système est indispensable.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment fonctionne la sélection dans les grammar schools ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les grammar schools en Angleterre sont légalement autorisées à sélectionner la totalité de leurs élèves sur la base des aptitudes académiques. La plupart utilisent l'examen 11+ — passé en septembre ou octobre de la Year 6 (environ 10-11 ans) — comme instrument de sélection principal. Un enfant qui score au-dessus du seuil formel de réussite de l'école est placé sur le « registre sélectif ».
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Être sur le registre sélectif est nécessaire mais pas suffisant pour obtenir une place. Les écoles surdemandées classent ensuite les candidats sélectifs selon des critères secondaires, généralement dans cet ordre : enfants pris en charge (looked-after children) ; frères et sœurs déjà scolarisés dans l'école ; proximité géographique de l'école.
+        </p>
+        <Callout color="amber">
+          <strong className="text-amber-800">Distinction essentielle :</strong> Le seuil de réussite et le score compétitif sont deux chiffres différents. Le seuil est le plancher. Le score compétitif est ce qui obtient réellement une place dans une école spécifique surdemandée. À Londres, un enfant peut scorer 125 au SAS et ne pas obtenir de place parce que d'autres enfants ayant scoré 128 habitent plus près.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Quels organismes d'examens sont utilisés ?</h2>
+        <div className="grid sm:grid-cols-2 gap-4 mb-4">
+          {[
+            { board: 'GL Assessment', areas: 'Kent, Essex, Hertfordshire, la plupart des écoles individuelles', notes: 'Produit un Score Standardisé selon l\'Âge (SAS), ajusté pour l\'âge exact en mois. Teste le raisonnement verbal, non verbal, l\'anglais et les mathématiques dans des épreuves séparées. Le format 11+ le plus répandu en Angleterre.' },
+            { board: 'CEM (Université de Durham)', areas: 'Buckinghamshire, certaines écoles de Birmingham', notes: 'Produit un score standardisé selon l\'âge. Les questions mélangent aptitude verbale, raisonnement numérique et raisonnement spatial sans labellisation par matière. Délibérément plus difficile à préparer avec les cahiers d\'exercices classiques.' },
+            { board: 'ISEB Common Pre-Test', areas: 'Écoles indépendantes et certaines académies sélectives', notes: 'Teste l\'anglais, les mathématiques, le raisonnement verbal et non verbal séparément. Utilisé pour les admissions à 11 et 13 ans dans les écoles indépendantes. Format adaptatif informatisé.' },
+            { board: 'Épreuves propres à l\'école', areas: 'Fondation King Edward\'s (Birmingham), certaines écoles de Londres', notes: 'Rédigées par l\'école elle-même. Teste généralement l\'anglais et les mathématiques à un niveau significativement au-dessus du programme national. Plus difficile à préparer, car il n\'y a pas de matériaux de pratique officiels.' },
+          ].map(({ board, areas, notes }) => (
+            <div key={board} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-1">{board}</div>
+              <div className="text-xs font-medium text-indigo-600 mb-2">{areas}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{notes}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Repères de scores par région — 2026</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Les plages suivantes sont indicatives sur la base des seuils de réussite typiques et des niveaux de compétition historiques. Les seuils individuels des écoles changent d'une année à l'autre selon la cohorte. Vérifiez toujours directement la politique d'admission publiée par l'école cible.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Région</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Organisme d'examen</th>
+                <th className="text-left p-4 font-semibold text-gray-700">SAS cible</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Notes</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Kent', 'GL Assessment', '115–121', '32 grammar schools. Les seuils varient selon l\'école et la ville. Judd et Tonbridge Grammar sont parmi les plus compétitives.'],
+                ['Buckinghamshire', 'CEM', '118+', '13 écoles. Comté entièrement sélectif. Le test CEM est plus difficile à préparer que les épreuves GL Assessment.'],
+                ['Londres (Barnet)', 'GL Assessment', '121–132', 'QE Boys et Henrietta Barnett sont parmi les écoles publiques les plus sélectives d\'Angleterre.'],
+                ['Londres (Sutton)', 'GL Assessment', '118–125', 'Nonsuch, Wallington, Wilson\'s, Sutton Grammar partagent un seul test via le Sutton Consortium.'],
+                ['Birmingham (Fondation KE)', 'Épreuves propres', '119+', 'Les écoles de la Fondation King Edward\'s sont très sélectives avec des épreuves d\'anglais et de mathématiques propres.'],
+                ['Essex', 'GL Assessment', '112–118', 'Colchester Royal Grammar, Westcliff High. Moins de compétition qu\'à Londres ou dans le Kent.'],
+                ['Hertfordshire', 'GL Assessment', '111–115', 'Dame Alice Owen\'s, Watford Grammar. La distance est un facteur clé de départage.'],
+                ['Gloucestershire', 'GL Assessment', '113–118', 'Pate\'s Grammar est la plus sélective. Les quatre écoles utilisent GL Assessment.'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 font-mono font-semibold text-indigo-700">{row[2]}</td>
+                  <td className="p-4 text-gray-500 text-xs leading-relaxed">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Score de réussite vs score compétitif</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Il existe une distinction importante entre réussir le 11+ et être compétitif pour une place. Réussir — scorer au-dessus du seuil formel — signifie qu'un enfant est académiquement apte à un enseignement de grammar school. Être compétitif signifie scorer assez haut pour effectivement obtenir une place dans une école spécifique surdemandée, compte tenu des critères secondaires.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Dans les zones moins compétitives (une partie de l'Essex, du Hertfordshire, du Gloucestershire), réussir et être compétitif sont à peu près équivalents. Dans les zones très compétitives (Londres, les meilleures écoles du Kent), le score compétitif est significativement au-dessus du seuil publié. À Queen Elizabeth's Boys, le seuil officiel peut être SAS 111, mais le candidat médian admis score plutôt 127–130.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La zone frontière et le recours</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La plupart des écoles opèrent une bande frontière informelle — typiquement 2 à 4 points SAS de chaque côté du seuil formel. Les enfants dans cette bande peuvent se voir offrir une place via les critères secondaires normaux s'ils habitent suffisamment près.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Si votre enfant ne se voit pas offrir une place, vous avez le droit de faire appel. Une évaluation standardisée indépendante passée autour de la date du 11+ — montrant un score plus élevé que le résultat officiel — est l'une des pièces de preuve les plus utiles dans un recours. Elle fournit un repère objectif suggérant que le résultat de l'examen était une sous-performance.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Pour comprendre comment les scores standardisés fonctionnent et ce que signifient les percentiles, consultez notre{' '}
+          <Link href="/fr/blog/qu-est-ce-qu-un-score-standardise" className="text-indigo-600 hover:underline">
+            guide sur les scores standardisés
+          </Link>.
+        </p>
+      </section>
+    </>
+  ),
+
+  'uae-cat4-test-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Le CAT4 (Cognitive Abilities Test 4) est l'évaluation académique la plus répandue dans les écoles de programme britannique aux Émirats arabes unis et dans les établissements britanniques internationaux du monde entier. Si votre enfant fréquente une école internationale britannique à Dubaï, Abu Dhabi, Sharjah, ou dans n'importe quel autre pays utilisant le programme anglais, il sera presque certainement amené à passer le CAT4. Ce guide explique ce que mesure le CAT4, comment les scores sont rapportés et comment les écoles utilisent les résultats.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qu'est-ce que le CAT4 ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le Cognitive Abilities Test 4 (CAT4) est publié par GL Assessment, le principal éditeur britannique d'évaluations éducatives. Il est conçu pour mesurer le raisonnement dans quatre domaines cognitifs distincts — verbal, quantitatif, non verbal et spatial — plutôt que les connaissances académiques dans des matières spécifiques. Parce qu'il ne s'agit pas d'un test de connaissances, un enfant qui a fréquenté différentes écoles dans différents pays peut être évalué avec précision, ce qui le rend particulièrement adapté aux familles expatriées.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le CAT4 est utilisé dans plus de 3 000 écoles aux Émirats arabes unis, en Arabie Saoudite et dans toute la région Moyen-Orient et Afrique du Nord. Il est également présent dans les écoles britanniques internationales d'Europe, d'Asie et d'Afrique. Le test est administré sur papier ou sur ordinateur (CAT4 Digital), prend environ 2h30 réparties en deux sessions, et les résultats sont corrigés centralement par GL Assessment contre un groupe de référence britannique.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Les écoles reçoivent des rapports détaillés montrant les scores individuels de chaque élève et comment chacun se compare aux élèves britanniques du même âge. C'est ce groupe de référence qui rend les résultats particulièrement utiles pour les familles francophones envisageant une scolarisation au Royaume-Uni ou dans d'autres établissements britanniques.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les quatre batteries expliquées</h2>
+        <div className="space-y-5 mb-6">
+          {[
+            {
+              battery: 'Batterie verbale',
+              tests: 'Classification verbale, Analogies verbales',
+              measures: 'La capacité à raisonner avec des mots, des concepts de langage et des relations verbales. Un enfant qui score bien sur la batterie verbale peut identifier des schémas dans la façon dont les mots se rapportent les uns aux autres — par exemple, reconnaître que « médecin : hôpital » a la même relation que « pilote : cockpit ».',
+              note: 'Dépendante de la langue. Les locuteurs non natifs d\'anglais scorent généralement moins bien sur cette batterie. Les écoles doivent en tenir compte pour les élèves dont l\'anglais n\'est pas la langue maternelle, notamment les élèves francophones.',
+            },
+            {
+              battery: 'Batterie quantitative',
+              tests: 'Séries de nombres, Analogies numériques',
+              measures: 'La capacité à raisonner avec des nombres et des relations numériques. Ce n\'est pas un test de connaissances mathématiques — il ne teste pas l\'arithmétique ni l\'algèbre. Il teste si un enfant peut identifier et prolonger des schémas numériques.',
+              note: 'Moins dépendante de la langue que la batterie verbale. Un enfant faible en anglais mais fort en raisonnement mathématique performe souvent mieux ici que sur la batterie verbale.',
+            },
+            {
+              battery: 'Batterie non verbale',
+              tests: 'Classification de figures, Matrices de figures',
+              measures: 'La capacité à raisonner avec des formes et des motifs abstraits. Les questions montrent des séquences ou des groupes de figures géométriques et demandent à l\'enfant d\'identifier quelle figure complète le motif. Complètement indépendante de la langue.',
+              note: 'Souvent la batterie la plus équitable pour les élèves dont l\'anglais n\'est pas la langue maternelle. Un score non verbal élevé par rapport au score verbal peut indiquer une forte aptitude au raisonnement partiellement masquée par des facteurs linguistiques.',
+            },
+            {
+              battery: 'Batterie spatiale',
+              tests: 'Analyse de figures (pliage de papier), Reconnaissance de figures',
+              measures: 'La capacité à raisonner sur l\'espace 2D et 3D — à faire mentalement pivoter, plier ou manipuler des formes. Cette batterie est unique au CAT4 parmi les principaux tests cognitifs et mesure une dimension du raisonnement non capturée par les autres tests.',
+              note: 'L\'aptitude spatiale est associée au succès dans les matières STEM, en particulier les mathématiques, la physique et l\'ingénierie. Un score spatial élevé avec des scores verbaux plus faibles peut indiquer un élève qui excellera dans les matières techniques.',
+            },
+          ].map(({ battery, tests, measures, note }) => (
+            <div key={battery} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-bold text-gray-900 mb-1">{battery}</div>
+              <div className="text-xs text-indigo-600 font-medium mb-3">Tests : {tests}</div>
+              <p className="text-sm text-gray-600 leading-relaxed mb-3">{measures}</p>
+              <div className="bg-gray-50 rounded-lg px-4 py-3 text-xs text-gray-500 leading-relaxed">{note}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment les scores sont-ils rapportés ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le CAT4 rapporte des Scores Standardisés selon l'Âge (SAS) pour chaque batterie et un SAS moyen global. L'échelle SAS a une moyenne de 100 et un écart-type de 15 — la même échelle utilisée par les tests de QI et la plupart des évaluations cognitives professionnelles. Cette échelle commune rend les scores directement comparables à d'autres évaluations standardisées.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Plage SAS</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Stanine</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Description</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Approx. %</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['127+', '9', 'Très élevé', '4 %'],
+                ['119–126', '8', 'Élevé', '7 %'],
+                ['112–118', '7', 'Au-dessus de la moyenne', '12 %'],
+                ['104–111', '6', 'Légèrement au-dessus de la moyenne', '17 %'],
+                ['96–103', '5', 'Dans la moyenne', '20 %'],
+                ['89–95', '4', 'Légèrement en dessous de la moyenne', '17 %'],
+                ['81–88', '3', 'En dessous de la moyenne', '12 %'],
+                ['74–80', '2', 'Faible', '7 %'],
+                ['<74', '1', 'Très faible', '4 %'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono text-indigo-700 font-medium">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-center">{row[1]}</td>
+                  <td className="p-4 font-semibold text-gray-900 text-sm">{row[2]}</td>
+                  <td className="p-4 text-gray-500">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          En plus du SAS et du stanine, le CAT4 produit un profil CAT4 — une représentation visuelle des quatre scores de batteries les uns par rapport aux autres. Un profil plat (les quatre batteries similaires) est courant. Un profil irrégulier (différences significatives entre batteries) peut indiquer des forces ou des défis d'apprentissage spécifiques et constitue un bon point de départ pour une conversation avec l'école.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment les écoles utilisent les résultats CAT4</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dans les écoles britanniques internationales (aux Émirats comme ailleurs), le CAT4 est utilisé de trois façons principales :
+        </p>
+        <ul className="space-y-4 mb-4">
+          <Bullet><strong>Sélection à l'admission :</strong> Certaines écoles utilisent le CAT4 dans leur processus d'admission, en particulier pour les candidatures en Year 7+ (entrée au secondaire). Un SAS moyen en dessous d'un certain seuil — typiquement autour de 90–95 — peut indiquer qu'un enfant aura du mal avec le programme académique de l'école.</Bullet>
+          <Bullet><strong>Groupes de niveau :</strong> De nombreuses écoles britanniques utilisent le CAT4 pour former des groupes de niveau dans les matières principales, en particulier en Year 7 et Year 8. Le profil CAT4 d'un enfant peut informer dans quel groupe il est placé pour les mathématiques, l'anglais et les sciences.</Bullet>
+          <Bullet><strong>Identifier la sous-réussite :</strong> L'une des utilisations les plus puissantes du CAT4 est l'identification des élèves qui performent en dessous de leur potentiel cognitif. Si un enfant score un SAS élevé au CAT4 mais sous-performe académiquement, cet écart (parfois appelé « écart potentiel-performance ») déclenche une investigation — y a-t-il une différence d'apprentissage, un problème de bien-être ou une barrière linguistique ?</Bullet>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Contexte KHDA :</strong> La KHDA (Knowledge and Human Development Authority) — qui supervise les écoles privées à Dubaï — utilise les données des évaluations standardisées incluant le CAT4 dans son cadre d'inspection scolaire. Les écoles qui utilisent efficacement les données CAT4 pour combler les écarts potentiel-performance tendent à recevoir de meilleures notes d'inspection. Comprendre les scores CAT4 de votre enfant vous permet de mieux dialoguer avec l'équipe pédagogique.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment préparer votre enfant au CAT4</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le CAT4 est un test de raisonnement, pas un test de connaissances, ce qui limite les possibilités de préparation. Cependant, la familiarité avec les formats de questions — en particulier les batteries non verbale et spatiale — produit de modestes améliorations de score.
+        </p>
+        <ul className="space-y-3">
+          <Check>Exposez votre enfant aux puzzles de matrices de figures et de classification de figures (les livres de raisonnement non verbal de type QI sont largement disponibles en ligne). Ces puzzles reflètent directement la batterie non verbale du CAT4.</Check>
+          <Check>Pratiquez les séries de nombres et les questions d'analogies numériques pour renforcer la batterie quantitative.</Check>
+          <Check>Pour la batterie spatiale, les jouets de construction (Lego, Magformers), les activités de pliage de papier et les puzzles spatiaux 3D développent la compétence sous-jacente progressivement.</Check>
+          <Check>Ne tentez pas de « préparer » la batterie verbale par des exercices de vocabulaire anglais intensifs si l'anglais n'est pas la langue maternelle de votre enfant. Les écoles doivent tenir compte du statut EAL (English as Additional Language) dans l'interprétation des scores de la batterie verbale.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Pour comprendre comment les scores standardisés comme le SAS fonctionnent et ce que signifient les percentiles, consultez notre{' '}
+          <Link href="/fr/blog/qu-est-ce-qu-un-score-standardise" className="text-indigo-600 hover:underline">
+            guide complet sur les scores standardisés
+          </Link>.
         </p>
       </section>
     </>
