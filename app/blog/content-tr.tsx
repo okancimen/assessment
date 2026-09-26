@@ -2907,6 +2907,9 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Defteri Nereden Alınır?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
+          Staj defterini en kolay ve ücretsiz olarak üniversitenin bölüm sekreteryasından veya öğrenci işlerinden alabilirsin. Muhasebe/işletme bölümlerinde SMMM Odası'ndan, bazı üniversitelerde ise dijital e-staj platformu üzerinden temin edilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
           Staj defteri birkaç farklı kanaldan temin edilebilir:
         </p>
         <ul className="space-y-3 mb-6">
