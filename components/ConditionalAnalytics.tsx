@@ -31,8 +31,6 @@ export default function ConditionalAnalytics() {
     <>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-F60J3BHJDE" strategy="lazyOnload" />
       <Script id="google-analytics" strategy="lazyOnload">{`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-F60J3BHJDE');
       `}</Script>

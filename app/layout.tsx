@@ -79,6 +79,7 @@ export default function RootLayout({
         <meta name="yandex-verification" content="f8b17ecde6325153" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <Script id="gtag-queue" strategy="beforeInteractive">{`window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments);};`}</Script>
       </head>
       <body className="min-h-full flex flex-col bg-white font-[family-name:var(--font-geist-sans)]">
         {children}
