@@ -2551,6 +2551,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Puanı Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA puanı, 15 yaşındaki bir öğrencinin matematik, okuma ve fen bilimlerinde uluslararası akranlarına kıyasla nerede durduğunu gösteren standartlaştırılmış bir skorlanma sistemidir. OECD ülkeleri için referans ortalama 500 puan olarak belirlenmiştir; her 30–40 puanlık fark yaklaşık bir okul yılına karşılık gelir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Puanlar 100–800 arasında bir ölçekte raporlanır. 400 altı puan temel yeterliliğin altını, 600 üzeri puan ise en üst performans bantlarını işaret eder. Türkiye'nin 2025 matematik ortalaması yaklaşık 453; OECD ortalaması ise 472'dir.
+        </p>
+      </section>
+
+      <section>
       <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <div className="flex-1">
           <p className="font-semibold text-gray-900 mb-1">PISA verisinin ötesine geç — kişisel skorunu öğren</p>
