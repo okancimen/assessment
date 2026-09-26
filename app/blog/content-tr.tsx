@@ -840,6 +840,22 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Bir çocuğa verebileceğimiz en değerli hediyelerden biri belki de budur: ona güvenli, gözetimli ve yaşına uygun bir sorumluluk alanı açmak, orada denemesine, hata yapmasına, kazanmasına ve kaybetmesine izin vermek. Çünkü gerçek özgüven, "yapabileceğini söylemekle" değil, "gerçekten yapmış olmakla" inşa edilir. Ve bu inşa, çoğu zaman sınıfın dışında, hayatın kendi müfredatında gerçekleşir.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { href: '/tr/blog/lise-staji-nasil-bulunur', tag: 'Rehber', title: 'Lise Stajı Nasıl Bulunur? Adım Adım Rehber' },
+            { href: '/tr/blog/erken-yas-staj-cocuk-gelisimi-kariyer', tag: 'Araştırma', title: 'Erken Yaşta Staj: Çocuk Gelişimi ve Kariyer Üzerindeki Etkisi' },
+            { href: '/tr/blog/lise-staji-faydalari-universite', tag: 'Analiz', title: 'Lise Stajının Üniversite Başvurularına Faydaları' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -969,6 +985,22 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Doğrudan KOBİ başvuruları için sabit bir sezon yok — yıl boyunca deneyebilirsiniz, ama Ocak–Şubat ve Mayıs–Haziran en verimli dönemler.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { href: '/tr/blog/universiteden-once-teknoloji-staji', tag: 'Rehber', title: 'Üniversiteden Önce Teknoloji Stajı Nasıl Bulunur?' },
+            { href: '/tr/blog/lise-staji-nasil-bulunur', tag: 'Rehber', title: 'Lise Stajı Nasıl Bulunur? Adım Adım Rehber' },
+            { href: '/tr/blog/dijital-pazarlama-staji-nasil-bulunur', tag: 'Rehber', title: 'Dijital Pazarlama Stajı Nasıl Bulunur?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -1077,6 +1109,22 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed mb-4">
           A Level programları, İngiliz eğitim sisteminin kalbi ve dünya genelindeki seçici üniversitelere açılan ana kapıdır. Ders seçimi, üniversite hedefleriyle örtüşecek biçimde planlanmalı; akademik hazırlık mümkün olduğunca erken yaşta iş deneyimiyle desteklenmelidir. A Level döneminde alınan kararlar — hangi derslerin seçildiğinden hangi üniversitelere başvurulacağına kadar — uzun vadeli kariyer trajektörünü belirleyen kararlar arasında yer alır.
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { href: '/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir', tag: 'Rehber', title: 'PISA Nedir? 2025 Sonuçları, Türkiye Sıralaması ve Hazırlık Rehberi' },
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Kıyaslama', title: 'Çocuğunuz Dünyada Nerede? PISA 2025 Uluslararası Kıyaslama' },
+            { href: '/tr/blog/lise-staji-faydalari-universite', tag: 'Analiz', title: 'Lise Stajının Üniversite Başvurularına Faydaları' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
@@ -1376,6 +1424,22 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Bunu 17 değil 15 yaşında anlayan öğrenciler farklı insanlar olmaz. İki yıl daha fazla belgelenmiş profesyonel deneyime, daha derin alan bilgisine, zaten iki yıllık profesyonel bir ağa ve iddia değil kanıt içeren kişisel beyan materyaline sahip öğrenciler olurlar. Not tabanının neredeyse herkesin onu karşıladığı noktaya yükseldiği bir seçim sürecinde, bu farklılaştıran şey.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { href: '/tr/blog/lise-staji-nasil-bulunur', tag: 'Rehber', title: 'Lise Stajı Nasıl Bulunur? Adım Adım Rehber' },
+            { href: '/tr/blog/lise-staji-faydalari-universite', tag: 'Analiz', title: 'Lise Stajının Üniversite Başvurularına Faydaları' },
+            { href: '/tr/blog/erken-yas-staj-cocuk-gelisimi-kariyer', tag: 'Araştırma', title: 'Erken Yaşta Staj: Çocuk Gelişimi ve Kariyer Üzerindeki Etkisi' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -1528,6 +1592,22 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <Callout color="emerald">
           <strong className="text-emerald-900">Bileşim argümanı tek cümlede.</strong> Belgelenmiş Yıl 10 yerleştirmesi, farklı bir firmada kendi düzenlediği Yıl 11 yaz yerleştirmesi ve doğrulanmış bir hazırlık puanı olan Yıl 12 öğrencisi, büyük çoğunluğun iş, iktisat ve finans UCAS başvurularında eşleştiremeyeceği profesyonel bir profile sahip — daha yetenekli oldukları için değil, daha erken başladıkları ve tutarlı biçimde belgeledikleri için.
         </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { href: '/tr/blog/notlar-artik-yeterli-degil', tag: 'Rehber', title: '15 Yaşında Nasıl Farklılaşılır: Notların Ötesinde Profil İnşası' },
+            { href: '/tr/blog/lise-staji-nasil-bulunur', tag: 'Rehber', title: 'Lise Stajı Nasıl Bulunur? Adım Adım Rehber' },
+            { href: '/tr/blog/erken-yas-staj-cocuk-gelisimi-kariyer', tag: 'Araştırma', title: 'Erken Yaşta Staj: Çocuk Gelişimi ve Kariyer Üzerindeki Etkisi' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),

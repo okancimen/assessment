@@ -2769,6 +2769,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           As a parent, the most powerful action you can take right now is to move from national statistics to your own child&apos;s individual position. PISA tells the global story. What you need to know is your chapter. Eduentry&apos;s adaptive assessment takes 20 minutes, is completely free, and places your child on the same international scale that PISA uses. Once you know where your child stands, you can act with precision rather than anxiety — and that precision is the most valuable thing any parent can have.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related guides</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/pisa-2025-work-experience-student-readiness', tag: 'Analysis', title: 'PISA 2025 and Work Experience: What the Data Says About Future-Ready Students' },
+            { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score? A Parent\'s Guide to Educational Assessment' },
+            { href: '/blog/early-internship-child-development-career', tag: 'Research', title: 'Why Early Internships Matter: Child Development and Career Outcomes' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -3548,6 +3564,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed mb-4">
           If you are a parent or student looking to take this seriously, the place to start is with an honest assessment of where the student stands today — not just academically, but in terms of professional readiness. Eduentry&apos;s internship assessment is free, takes 25 minutes, and gives students the specific, actionable feedback they need to begin building the skills that PISA 2025 shows are most at risk — and most in demand.
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related guides</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/pisa-2025-global-education-crisis-what-parents-need-to-know', tag: 'Analysis', title: 'PISA 2025: What the Global Education Crisis Means for Your Child' },
+            { href: '/blog/high-school-internship-benefits-university', tag: 'Guide', title: 'High School Internships and University Admissions: The Evidence' },
+            { href: '/blog/early-internship-child-development-career', tag: 'Research', title: 'Why Early Internships Matter: Child Development and Career Outcomes' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
