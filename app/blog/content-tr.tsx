@@ -2617,6 +2617,10 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
 
   'pisa-nedir-cocugunuz-nasil-hazirlanir': (
     <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        PISA (Programme for International Student Assessment — Uluslararası Öğrenci Değerlendirme Programı), OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan uluslararası bir akademik kıyaslama sınavıdır. Matematik, okuma ve fen bilimlerinde pratik düşünme becerisini ölçer; bireysel başvuru yapılamaz, öğrenciler rastgele örneklemeyle seçilir.
+      </p>
+
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Nedir?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
@@ -2628,6 +2632,27 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <Callout>
           <strong className="text-indigo-900">PISA üç temel alanı ölçer:</strong> Matematik (sayısal akıl yürütme, problem çözme), Okuma (anlama, çıkarım, eleştirel okuma) ve Fen Bilimleri (bilimsel düşünme, veri yorumlama). Her alan için uluslararası ortalama puan 500 olarak belirlenmiştir.
         </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Açılımı Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA, İngilizce "Programme for International Student Assessment" ifadesinin kısaltmasıdır; Türkçeye "Uluslararası Öğrenci Değerlendirme Programı" olarak çevrilir. Program, 2000 yılından bu yana OECD (Ekonomik İşbirliği ve Kalkınma Örgütü) tarafından koordine edilmektedir. Sınavın amacı ülkelerin eğitim sistemlerini kıyaslamak olduğundan, sonuçlar bireysel öğrenci bazında değil ülke ortalamaları biçiminde kamuoyuyla paylaşılır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Sınavına Nasıl Girilir? Öğrenci Nasıl Seçilir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA sınavına bireysel başvuru yapılamaz. Her katılımcı ülkede Millî Eğitim Bakanlığı, 15 yaşındaki öğrenciler arasından rastgele örnekleme yöntemiyle yaklaşık 5.000–6.000 kişilik bir grup belirler. Seçilen öğrenciler sınavı okullarında, kendi sınıflarında uygular. Türkiye'den seçilen öğrencilerin haberi okul idaresi aracılığıyla ulaşır. Dolayısıyla PISA için kayıt veya hazırlık kursu gerekmez; seçilmek tamamen örnekleme sürecine bağlıdır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Kaç Yılda Bir Yapılır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA her üç yılda bir düzenlenir. 2000 yılında başlayan program; 2003, 2006, 2009, 2012, 2015, 2018, 2022 ve en son 2025 döngüleriyle sürdürülmektedir. Bir sonraki PISA 2028 yılında gerçekleşecektir. "PISA 2026" aramaları büyük olasılıkla 2025 sonuçlarını kastetmektedir — OECD, sınav verilerini uygulamadan yaklaşık bir yıl sonra yayımlar.
+        </p>
       </section>
 
       <section>
