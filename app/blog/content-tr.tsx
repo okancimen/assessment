@@ -3071,6 +3071,29 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Defteri Ne Zaman Teslim Edilir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Staj defteri teslim tarihi üniversiteden üniversiteye değişir; ancak genel kural şudur: staj bittikten sonra en geç 15–30 gün içinde bölüm sekreterliğine veya staj komisyonuna teslim edilmesi beklenir. Bazı üniversiteler teslim tarihini akademik takvimle sabitler — örneğin Ekim sonu veya Ocak sonu. Güz döneminde staj yapanlara yönelik "Ekim sonuna kadar teslim edin" uyarısı çoğu vakada bu takvimden kaynaklanır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Kesin tarihi öğrenmek için bölüm sekreterliğini veya staj komisyonunu staj başlamadan önce sormak, sürpriz son dakika koşuşturmacasını önler. Teslim gecikirse ek süre hakkı çok sınırlıdır ve bazı üniversitelerde o dönem stajı geçersiz sayılabilir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Gönüllü Stajda Staj Defteri Doldurulur mu?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Hayır — gönüllü veya lise stajlarında staj defteri yasal olarak zorunlu değildir. Zorunlu staj defteri yükümlülüğü yalnızca üniversitelerin müfredatına bağlı zorunlu stajlar için geçerlidir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ancak bu durum, gönüllü stajda kayıt tutmanın anlamsız olduğu anlamına gelmez. Aksine: staj süresince kişisel bir günlük biçiminde bile tutulmuş notlar, üniversite kişisel beyanı yazarken ve iş başvurularında somut örnekler sunarken büyük fark yaratır. Resmi staj defteri formatına uymak gerekmez; öğrenilen beceriler, üstlenilen görevler ve tarihler kaydedilirse yeterli bir belge oluşur.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Pratik ipucu:</strong> Gönüllü stajda kurum mührü veya imzalı belge almanın mümkün olup olmadığını sormak faydalıdır. Bazı firmalar referans mektubu veya staj katılım belgesi düzenler — ileride burs başvuruları veya üniversite mülakatlarında değerli bir kanıt olur.
+        </Callout>
+      </section>
+
+      <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Sık Yapılan Hatalar</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Staj defteri sürecinde en yaygın hatalar ve nasıl önlenecekleri:

@@ -769,14 +769,14 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'staj-defteri-nasil-doldurulur',
-    title: 'Staj Defteri Nasıl Doldurulur? Örnek ve Açıklama',
-    shortTitle: 'Staj Defteri Nedir, Nereden Alınır ve Nasıl Doldurulur? (2025–26)',
+    title: 'Staj Defteri Nedir, Ne Zaman Teslim Edilir, Nasıl Doldurulur?',
+    shortTitle: 'Staj Defteri Nedir, Nereden Alınır ve Nasıl Doldurulur?',
     description:
-      'Staj defteri nedir, nereden alınır ve nasıl doldurulur? Günlük faaliyet kaydından haftalık özete, yönetici onayına kadar her bölümü adım adım açıklıyoruz. Gönüllü staj ve üniversite zorunlu stajı için örnek ifadeler.',
+      'Staj defteri nedir, nereden alınır, ne zaman teslim edilir? Gönüllü stajda doldurulur mu? Günlük faaliyet kaydından haftalık özete, yönetici onayına kadar adım adım rehber.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
-    dateModified: '2026-09-26',
+    dateModified: '2026-09-27',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Staj Defteri', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi'],
     faqs: [
