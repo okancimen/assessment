@@ -186,6 +186,12 @@ export default function AIHomePage() {
             >
               Apply free →
             </Link>
+            <a
+              href="https://eduentry.com/sample-report"
+              className="border border-[#d2d2d7] text-[#1d1d1f] px-8 py-4 rounded-full font-semibold text-base hover:border-[#4F46E5] hover:text-[#4F46E5] transition-colors"
+            >
+              See a sample report
+            </a>
           </div>
           <p className="text-xs text-[#6e6e73] mt-6">Free for students · No card required · Results in 35 min</p>
         </div>
