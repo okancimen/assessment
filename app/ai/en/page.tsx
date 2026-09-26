@@ -5,7 +5,7 @@ const PAGE_URL = `${BASE_URL}/en`
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: PAGE_URL,
+    canonical: BASE_URL,
     languages: {
       'en-GB': PAGE_URL,
       tr: `${BASE_URL}/tr`,
