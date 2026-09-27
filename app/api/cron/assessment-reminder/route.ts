@@ -19,9 +19,14 @@ export async function GET(req: NextRequest) {
   // Verify cron secret — accept via Authorization header or ?secret= query param
   const authHeader = req.headers.get('authorization')
   const querySecret = req.nextUrl.searchParams.get('secret')
-  const valid = process.env.CRON_SECRET && (
-    authHeader === `Bearer ${process.env.CRON_SECRET}` ||
-    querySecret === process.env.CRON_SECRET
+  const cronSecret = process.env.CRON_SECRET
+  // Temporary diagnostic — remove after confirming env var is set
+  if (req.nextUrl.searchParams.get('diag') === '1') {
+    return NextResponse.json({ cron_secret_set: !!cronSecret, cron_secret_length: cronSecret?.length ?? 0 })
+  }
+  const valid = cronSecret && (
+    authHeader === `Bearer ${cronSecret}` ||
+    querySecret === cronSecret
   )
   if (!valid) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
