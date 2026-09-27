@@ -59,6 +59,118 @@ export async function sendInternshipAdminAlertEmail(opts: {
   }
 }
 
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://eduentry.com'
+
+const BTN = (href: string, label: string) =>
+  `<a href="${href}" style="display:block;background:#4f46e5;color:#fff;text-decoration:none;text-align:center;padding:14px;border-radius:10px;font-weight:600;font-size:15px;margin-bottom:28px">${label}</a>`
+
+const FOOTER = `<p style="color:#9ca3af;font-size:11px;text-align:center;margin:0">Eduentry · If you no longer want reminders, simply complete or ignore this assessment.</p>`
+
+// ── Academic reminder emails ──────────────────────────────────────────────────
+
+export async function sendAcademicReminderEmail(opts: {
+  to: string
+  parentName: string
+  childName: string
+  assessmentId: string
+  reminderNumber: 1 | 2 | 3
+}): Promise<void> {
+  const continueUrl = `${SITE}/assessment/${opts.assessmentId}/question`
+  const sampleUrl   = 'https://eduentry.com/sample-report'
+  const p  = opts.parentName
+  const c  = opts.childName
+
+  const variants: Record<1 | 2 | 3, { subject: string; html: string }> = {
+    1: {
+      subject: `${c} hasn't finished their assessment yet`,
+      html: `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
+        <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">Just a quick nudge</h1>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${p}, ${c} started their Eduentry assessment yesterday but didn't quite finish. It only takes about 25 minutes and they can pick up right where they left off.</p>
+        ${BTN(continueUrl, 'Continue assessment →')}
+        <p style="color:#6b7280;font-size:14px;margin:0 0 12px">Once complete, you'll receive a detailed report showing exactly where ${c} stands — their strengths across verbal reasoning, numeracy, and problem-solving, and the areas where a little extra focus would make the biggest difference, benchmarked against children internationally.</p>
+        ${BTN(sampleUrl, 'See a sample report →')}
+        <p style="color:#6b7280;font-size:13px;margin:0 0 28px">No preparation needed — the assessment adjusts to their level automatically.</p>
+        ${FOOTER}
+      </div>`,
+    },
+    2: {
+      subject: `Still time to complete ${c}'s assessment`,
+      html: `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
+        <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">Still waiting</h1>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${p}, ${c}'s assessment is still waiting. It's been a week since they started — their progress is saved and they can continue any time from where they left off.</p>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">When they finish, you'll get a full report breaking down their performance across every area — not just a score, but a clear picture of where they're strong and where targeted support would help most.</p>
+        ${BTN(sampleUrl, 'See what the report looks like →')}
+        ${BTN(continueUrl, 'Continue assessment →')}
+        ${FOOTER}
+      </div>`,
+    },
+    3: {
+      subject: `Last reminder: ${c}'s assessment expires soon`,
+      html: `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
+        <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">Last reminder</h1>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${p}, this is our last reminder. ${c}'s in-progress assessment will be cleared after 30 days of inactivity — after that they'd need to start fresh.</p>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Parents who complete the assessment get a detailed breakdown like this — strengths, improvement areas, and a global percentile rank so you know exactly where ${c} stands, not just relative to their class but against children worldwide.</p>
+        ${BTN(sampleUrl, 'See a sample report →')}
+        ${BTN(continueUrl, 'Complete the assessment →')}
+        <p style="color:#6b7280;font-size:13px;margin:0 0 28px">After this we won't send any further reminders.</p>
+        ${FOOTER}
+      </div>`,
+    },
+  }
+
+  const { subject, html } = variants[opts.reminderNumber]
+  await sendEmail(opts.to, subject, html)
+}
+
+// ── Internship reminder emails ────────────────────────────────────────────────
+
+export async function sendInternshipReminderEmail(opts: {
+  to: string
+  name: string
+  assessmentId: string
+  reminderNumber: 1 | 2 | 3
+}): Promise<void> {
+  const continueUrl = `${SITE}/assessment/${opts.assessmentId}/question`
+  const n = opts.name
+
+  const variants: Record<1 | 2 | 3, { subject: string; html: string }> = {
+    1: {
+      subject: `You haven't finished your internship assessment`,
+      html: `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
+        <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">Pick up where you left off</h1>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${n}, you started your Eduentry internship assessment yesterday but didn't quite finish. Your progress is saved — it should only take around 25 minutes to complete from where you left off.</p>
+        ${BTN(continueUrl, 'Continue assessment →')}
+        <p style="color:#6b7280;font-size:14px;margin:0 0 28px">Once you finish, you'll receive a full report showing your aptitude strengths, your track fit across Technology, Business, Data Analytics, and Digital Marketing — and the specific areas where you can improve before applying.</p>
+        ${FOOTER}
+      </div>`,
+    },
+    2: {
+      subject: `Your internship assessment is still waiting`,
+      html: `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
+        <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">Still time to finish</h1>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${n}, it's been a week since you started your assessment. Your progress is still saved — pick up right where you left off.</p>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Completing it gives you a detailed profile of your skills: where you're strongest, which internship track suits you best, and what to work on. Candidates who complete the assessment get matched to a track before the cohort closes.</p>
+        ${BTN(continueUrl, 'Continue assessment →')}
+        ${FOOTER}
+      </div>`,
+    },
+    3: {
+      subject: `Last reminder: your internship assessment expires soon`,
+      html: `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
+        <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">Last reminder</h1>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${n}, this is our last reminder. Your in-progress assessment will be cleared after 30 days — after that you'd need to start from scratch.</p>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Finishing takes around 25 minutes and gives you a complete breakdown of your aptitude scores, track fit, and improvement areas — everything you need to understand where you stand as a candidate.</p>
+        ${BTN(continueUrl, 'Complete your assessment →')}
+        <p style="color:#6b7280;font-size:13px;margin:0 0 28px">After this we won't send any further reminders.</p>
+        ${FOOTER}
+      </div>`,
+    },
+  }
+
+  const { subject, html } = variants[opts.reminderNumber]
+  await sendEmail(opts.to, subject, html)
+}
+
 export async function sendParentLinkNotificationEmail(opts: {
   to: string
   studentName: string
