@@ -168,6 +168,40 @@ export default async function DashboardPage() {
           </Link>
         </div>
 
+        {/* How it works */}
+        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6 space-y-4">
+          <div className="flex items-start gap-4">
+            <div className="w-9 h-9 rounded-full bg-[#eef2ff] flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg className="w-4.5 h-4.5 text-[#4F46E5]" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15 15" />
+              </svg>
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-[#1d1d1f] mb-1">Start with a 25-minute assessment</p>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                To understand your child&apos;s current academic standing and cognitive capabilities, they&apos;ll need to complete an adaptive assessment — typically 25 minutes. The test adjusts its difficulty in real time, covering verbal reasoning, numerical ability, and problem-solving, so every question is pitched at exactly the right level. There&apos;s no preparation needed: the results reflect natural aptitude, not prior tutoring.
+              </p>
+            </div>
+          </div>
+          <div className="border-t border-[#f5f5f7]" />
+          <div className="flex items-start gap-4">
+            <div className="w-9 h-9 rounded-full bg-[#f0fdfa] flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg className="w-4.5 h-4.5 text-teal-600" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-[#1d1d1f] mb-1">Understand where your child stands globally</p>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">
+                Once the assessment is complete, you&apos;ll receive a detailed report showing your child&apos;s standardised score and how they compare to peers internationally — broken down by domain so you can see exactly where they excel and where focused support would make the biggest difference.{' '}
+                <Link href="https://eduentry.com/sample-report" className="text-[#4F46E5] font-medium hover:underline">
+                  See a sample report →
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Children */}
         <section>
           <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">Children</h2>
