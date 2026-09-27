@@ -1819,6 +1819,204 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'understanding-child-strengths-weaknesses-high-school': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        La transition du collège au lycée — de la Troisième vers la Seconde, autour de l'âge de quinze ans — est l'une des bifurcations les plus lourdes de conséquences du parcours scolaire français. C'est à ce moment précis que s'opèrent les grandes orientations : filière générale, technologique ou professionnelle. Et pourtant, la grande majorité des parents abordent cette étape armés d'un seul outil de diagnostic : le bulletin de notes. Or le bulletin de notes est, par construction, une mesure relative à la classe, au professeur et à l'établissement. Il dit ce que fait votre enfant par rapport à ses camarades immédiats — il ne dit pas ce qu'il est capable de faire, ni quel type de raisonnement lui est naturellement accessible. En d'autres termes, le bulletin révèle la performance relative passée, mais dissimule le profil cognitif sous-jacent qui devrait informer les décisions d'orientation à venir. Comprendre ce profil avant l'entrée au lycée n'est pas une démarche réservée aux familles qui s'inquiètent — c'est un acte de préparation éclairée pour tout parent qui souhaite accompagner son enfant avec précision plutôt qu'avec espoir.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi la transition vers le lycée est-elle un moment décisif ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dans la littérature de psychologie de l'éducation, les écarts de réussite ont tendance à se creuser plutôt qu'à se résorber au fil du temps. Ce phénomène, décrit par les sociologues sous le nom d'effet Matthieu (<em>Matthew effect</em>), traduit une réalité concrète : les élèves qui disposent de bases solides dans un domaine cognitif progressent plus vite que ceux qui y sont fragiles, non pas parce qu'ils travaillent davantage, mais parce que chaque nouvel apprentissage s'intègre dans un réseau de connaissances et de schèmes de raisonnement déjà constitués. L'inverse est tout aussi vrai : une fragilité non identifiée en raisonnement verbal, par exemple, ne se rattrape pas spontanément — elle s'aggrave à mesure que les exigences de lecture complexe augmentent.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La France présente à cet égard une particularité structurelle importante : l'orientation en fin de Troisième est l'un des moments où la trajectoire scolaire se formalise avec le plus d'irréversibilité. Les résultats PISA montrent que les systèmes éducatifs qui segmentent tôt les élèves produisent des inégalités plus marquées que ceux qui différencient tardivement. Dans ce contexte, les familles qui anticipent l'orientation en connaissant précisément le profil cognitif de leur enfant ont un avantage structurel réel sur celles qui attendent les résultats du brevet des collèges pour réagir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le brevet des collèges lui-même — bien qu'utile comme signal de maîtrise du socle commun — souffre des mêmes limites que le bulletin : c'est une mesure de performance académique accumulée, pas une carte des aptitudes cognitives naturelles. Un élève peut obtenir de bons résultats au brevet grâce à un travail assidu dans un environnement scolaire favorable, tout en présentant des zones de fragilité cognitive qui ne se manifesteront qu'en Seconde, quand les exigences de raisonnement abstrait augmentent et que le volume de travail dépasse les capacités de compensation par l'effort seul.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">L'identification précoce bat l'intervention réactive.</strong> La recherche longitudinale sur l'apprentissage montre de façon constante que les interventions menées avant qu'un problème ne soit manifeste produisent des effets deux à trois fois supérieurs à celles menées après l'apparition des difficultés scolaires visibles.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qu'entend-on par « aptitudes naturelles » — et ce que cela ne signifie pas</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La notion d'aptitude cognitive est souvent mal comprise — soit sur-interprétée comme un destin fixé génétiquement, soit, par réaction, rejetée comme illusoire au nom d'un constructivisme radical. La réalité est plus nuancée, et la psychologie différentielle contemporaine offre un cadre rigoureux pour l'appréhender.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le modèle de Cattell-Horn-Carroll (CHC), qui fait consensus en psychométrie, distingue deux grands types d'intelligence : l'<strong>intelligence fluide</strong> (<em>Gf</em>), soit la capacité à raisonner face à des problèmes nouveaux, indépendamment des connaissances acquises, et l'<strong>intelligence cristallisée</strong> (<em>Gc</em>), soit la somme des connaissances, du vocabulaire et des procédures intellectuelles accumulés par l'expérience et l'éducation. L'intelligence fluide est largement héréditaire et relativement stable ; l'intelligence cristallisée est profondément influençable par l'environnement et l'apprentissage. La distinction est fondamentale pour les parents : un enfant peut avoir une intelligence fluide élevée mais une intelligence cristallisée limitée (sous-stimulation, bilinguisme récent, lacunes curriculaires) — ou l'inverse.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les travaux de Howard Gardner sur les intelligences multiples complètent cette perspective en rappelant que l'aptitude cognitive ne se résume pas au raisonnement logico-mathématique et verbal : les intelligences musicale, kinesthésique, interpersonnelle ou naturaliste constituent des forces réelles, même si elles sont moins directement mesurées par les évaluations standardisées. Ces dimensions méritent d'être reconnues dans la construction du projet éducatif de l'enfant.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Enfin, le concept de <em>growth mindset</em> développé par Carol Dweck ne contredit pas l'existence de différences d'aptitude — il contextualise leur portée. Dweck montre que la croyance en la plasticité de ses propres capacités est elle-même un facteur prédictif de réussite indépendamment du niveau d'aptitude initial. Autrement dit, connaître son profil cognitif ne doit pas produire de fatalisme, mais une orientation stratégique : s'appuyer sur ses forces, travailler ses fragilités avec méthode, et mettre en place les formes d'<strong>étayage</strong> (<em>scaffolding</em>) appropriées aux domaines où la progression est plus lente.
+        </p>
+        <Callout color="emerald">
+          <strong>Ce que « aptitude naturelle » ne signifie pas :</strong> un plafond fixé, une intelligence unique et hiérarchique, ou une prédiction déterministe de la trajectoire scolaire. C'est une photographie des préférences et de la facilité de traitement actuelles dans des domaines cognitifs distincts — une carte de départ, pas une destinée.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les quatre domaines cognitifs qui prédisent la réussite au lycée</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les grandes évaluations cognitives standardisées — CAT4, CogAT, WISC-V, ainsi que l'évaluation adaptative Eduentry — convergent vers quatre domaines dont le pouvoir prédictif sur la réussite académique au lycée est le mieux documenté dans la littérature psychométrique.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <li>
+            <p className="font-semibold text-gray-900 mb-1">1. Le raisonnement verbal</p>
+            <p className="text-gray-700 text-sm leading-relaxed">
+              Il mesure la capacité à manipuler des concepts linguistiques — analogies, classification de termes, compréhension d'inférences, déduction à partir d'informations partiellement explicites. C'est le domaine le plus fortement corrélé à la réussite en lettres, langues, droit, sciences humaines, et à la compréhension des consignes dans toutes les disciplines. Un élève à fort raisonnement verbal décode rapidement des textes complexes, repère les relations logiques implicites et produit des arguments structurés. La faiblesse dans ce domaine se manifeste typiquement par une lenteur sur les exercices de compréhension de texte, une difficulté à reformuler des consignes, et une tendance à « réciter » sans interpréter.
+            </p>
+          </li>
+          <li>
+            <p className="font-semibold text-gray-900 mb-1">2. Le raisonnement numérique et quantitatif</p>
+            <p className="text-gray-700 text-sm leading-relaxed">
+              Distinct de la maîtrise des automatismes arithmétiques appris à l'école, le raisonnement quantitatif évalue la capacité à percevoir des relations numériques, à extrapoler des patterns, à raisonner sur des quantités abstraites. C'est le prédicteur principal de la réussite en mathématiques de lycée, en physique, en sciences économiques, en statistiques. Un élève fort dans ce domaine « voit » la structure d'un problème avant d'en avoir identifié les données. Une fragilité ici ne signifie pas l'incapacité à faire des mathématiques — elle signifie que l'automatisation des procédures devra compenser une moindre intuition quantitative.
+            </p>
+          </li>
+          <li>
+            <p className="font-semibold text-gray-900 mb-1">3. La mémoire de travail</p>
+            <p className="text-gray-700 text-sm leading-relaxed">
+              La mémoire de travail est la capacité à maintenir et manipuler des informations en mémoire à court terme pendant qu'on effectue une tâche cognitive. Elle est souvent décrite comme la « surface de travail » du cerveau. Sa capacité est l'un des prédicteurs les plus robustes de la réussite scolaire globale, indépendamment du domaine. Un élève avec une mémoire de travail élevée peut suivre un raisonnement en plusieurs étapes sans perdre le fil, traiter plusieurs contraintes simultanées dans un problème complexe, et intégrer de nouvelles informations sans saturation. Les difficultés de mémoire de travail — souvent confondues avec de l'inattention ou un manque d'effort — sont l'une des causes les plus fréquentes de difficultés scolaires non identifiées.
+            </p>
+          </li>
+          <li>
+            <p className="font-semibold text-gray-900 mb-1">4. Le raisonnement non verbal et spatial</p>
+            <p className="text-gray-700 text-sm leading-relaxed">
+              Il évalue la capacité à percevoir des relations entre formes, à effectuer des rotations mentales, à comprendre des structures dans l'espace. Ce domaine est particulièrement prédictif de la réussite dans les filières scientifiques et techniques — physique, chimie, SVT, technologie, arts plastiques — mais aussi de la rapidité d'adaptation à des systèmes nouveaux. Un élève spatialement fort comprend les schémas, plans et représentations graphiques de façon intuitive. Il est souvent sous-évalué par les évaluations scolaires classiques, qui privilégient les performances verbales et calculatoires.
+            </p>
+          </li>
+        </ul>
+        <Callout color="indigo">
+          <strong>Pourquoi les quatre domaines ensemble ?</strong> Un profil cognitif révèle non seulement les forces mais aussi les déséquilibres. Un enfant avec un fort raisonnement verbal et une faible mémoire de travail a un profil très différent d'un enfant avec les mêmes scores moyens répartis uniformément — et ses besoins de préparation le sont tout autant.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Signes observables à la maison et à l'école</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les parents n'ont pas besoin d'une formation en psychologie pour commencer à observer des indicateurs des forces cognitives de leur enfant. Ces signaux sont présents dans les comportements quotidiens, à condition de savoir quoi chercher.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>Raisonnement verbal fort :</strong> l'enfant aime les jeux de mots, les devinettes et les débats. Il reformule spontanément les explications. Il réussit mieux les épreuves de compréhension que les calculs. À la table du dîner, il argumentera avec précision et cherchera à nuancer les positions.
+          </Bullet>
+          <Bullet>
+            <strong>Raisonnement quantitatif fort :</strong> il perçoit rapidement les patterns dans les séries numériques. Il trouve souvent des raccourcis dans les calculs. Il aime les jeux de stratégie et les puzzles logiques. À l'inverse, un enfant qui travaille les maths avec acharnement sans que les résultats aux contrôles ne reflètent l'effort peut présenter une fragilité dans ce domaine que compense l'effort — jusqu'à un certain niveau.
+          </Bullet>
+          <Bullet>
+            <strong>Mémoire de travail limitée :</strong> l'enfant perd le fil dans les problèmes à plusieurs étapes. Il oublie les consignes intermédiaires. Il est très performant dans les exercices courts et routiniers, mais se « noie » quand la complexité des instructions augmente. Ces comportements sont souvent interprétés à tort comme du manque de concentration ou de la négligence.
+          </Bullet>
+          <Bullet>
+            <strong>Raisonnement spatial fort :</strong> l'enfant excelle naturellement en géométrie, en technologie, en arts visuels. Il construit des Lego complexes sans les instructions. Il s'oriente facilement dans l'espace et comprend les plans. Son intelligence est souvent invisible dans les évaluations verbales traditionnelles.
+          </Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La différence entre les difficultés sur les devoirs à la maison et les difficultés lors des contrôles est elle-même un signal : un enfant qui réussit bien à la maison mais échoue aux contrôles présente souvent une faiblesse de mémoire de travail aggravée par le stress de l'évaluation. À l'inverse, un enfant qui réussit aux contrôles sans travailler beaucoup a probablement un profil cognitif sous-exploité par le niveau de sa classe actuelle.
+        </p>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Découvrez à quoi ressemble un profil cognitif en pratique</p>
+            <p className="text-sm text-gray-600">Un exemple de rapport d'évaluation montre exactement comment les scores verbaux, numériques, de mémoire de travail et spatiaux sont présentés — et ce qu'ils signifient pour la préparation de votre enfant.</p>
+          </div>
+          <Link href="https://eduentry.com/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Voir un exemple de rapport
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi les notes scolaires sont une carte insuffisante</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le problème central du bulletin de notes — même excellent — est qu'il s'agit d'une mesure intra-classe et non d'une <strong>évaluation normative</strong> sur une population élargie. Un 15/20 en mathématiques dans un collège de zone rurale avec une classe de quinze élèves n'est pas équivalent à un 15/20 dans un collège parisien sélectif de trente élèves préparant les meilleurs lycées. Cette variabilité est documentée et considérable : les études de l'OCDE sur les données PISA montrent que l'écart de niveau entre des élèves ayant les mêmes notes dans deux établissements différents peut représenter jusqu'à deux ans de scolarité.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ce phénomène est connu en psychologie de l'éducation sous le nom d'effet <em>big fish, small pond</em> (gros poisson, petite mare) : un élève qui excelle dans un environnement peu exigeant développe une confiance en soi calibrée sur des comparaisons locales — et risque un choc de réalité lors de l'entrée dans un lycée plus sélectif ou lors de l'orientation vers des filières compétitives.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un autre angle aveugle des notes scolaires est la sous-identification des troubles des apprentissages et des besoins éducatifs particuliers (EBEP, anciennement NEP). Des élèves présentant une dyslexie légère, un trouble de l'attention (TDA/H) ou une faiblesse de mémoire de travail peuvent maintenir des notes correctes par une compensation sur-apprise — au prix d'un effort disproportionné qui devient insoutenable au lycée quand les volumes de travail augmentent. L'identification de ces profils par une évaluation cognitive ciblée permet de mettre en place des aménagements pédagogiques avant la rupture scolaire, plutôt qu'après.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La distinction entre mesure relative et <strong>rang centile</strong> sur une norme nationale ou internationale est fondamentale pour les parents : un score au 65e centile national signifie que votre enfant se situe au-dessus de 65 % des élèves du même âge en France — indépendamment de sa note dans sa classe et de la sélectivité de son établissement. C'est cette information-là qui devrait structurer les décisions d'orientation.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Traduire un profil cognitif en plan de préparation</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Connaître le profil cognitif de son enfant n'a de valeur que s'il se traduit en actions concrètes. Voici comment opérationnaliser cette connaissance dans les décisions de préparation.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check>
+            <strong>Choix de filière :</strong> un profil à forte dominante verbale avec un raisonnement spatial limité s'épanouira davantage en filière générale avec spécialité humanités ou sciences humaines qu'en filière avec forte composante mathématique-physique. Inversement, un profil à forte composante quantitative et spatiale peut souffrir dans une filière qui valorise uniquement la production écrite longue.
+          </Check>
+          <Check>
+            <strong>Adaptation des méthodes de travail :</strong> un enfant avec une mémoire de travail limitée bénéficiera d'une organisation matérielle rigoureuse — fiches de résumé, décomposition des tâches complexes en sous-étapes, répétition espacée. Un enfant avec un fort raisonnement spatial apprend mieux par les représentations visuelles et les schémas que par les textes linéaires. Ces adaptations ne sont pas des accommodements — elles sont des optimisations cognitives.
+          </Check>
+          <Check>
+            <strong>Quand solliciter un soutien spécialisé :</strong> si une fragilité identifiée dans un domaine cognitif s'accompagne d'un stress scolaire élevé ou d'une dégradation visible des performances, l'orientation vers un psychologue scolaire ou un neuropsychologue pour une évaluation approfondie (bilan WISC-V) est indiquée. L'école peut également mettre en place un plan d'accompagnement personnalisé (PAP) pour les élèves présentant des troubles avérés.
+          </Check>
+          <Check>
+            <strong>Comment parler au professeur principal :</strong> lors de l'entretien d'orientation en Troisième, venir avec un profil cognitif documenté — même issu d'une évaluation en ligne — permet d'engager une conversation précise plutôt que générale. Les professeurs principaux apprécient les parents qui arrivent avec des données spécifiques plutôt qu'une anxiété diffuse.
+          </Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La <strong>métacognition</strong> — la conscience par l'élève lui-même de ses propres processus de pensée et de ses stratégies d'apprentissage — est l'une des variables les mieux documentées dans la recherche sur l'efficacité de l'apprentissage (Hattie, 2009). Partager avec son enfant les conclusions de son profil cognitif, de façon adaptée à son âge, contribue directement à développer cette capacité métacognitive : l'enfant apprend non seulement quoi apprendre, mais comment apprendre.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce que la recherche dit sur l'identification précoce</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La méta-analyse de John Hattie sur les effets éducatifs (<em>Visible Learning</em>, 2009, mise à jour en 2023) constitue la revue de littérature la plus exhaustive sur ce qui fonctionne dans l'éducation — plus de 1 200 méta-analyses couvrant des dizaines de millions d'élèves. Parmi les interventions avec les tailles d'effet (<em>effect sizes</em>) les plus élevées figurent systématiquement celles qui améliorent la connaissance qu'a l'élève de lui-même et de ses propres processus d'apprentissage : les retours formatifs ciblés (d = 0,73), l'évaluation par les pairs (d = 0,55), et les programmes de développement métacognitif (d = 0,69). La connaissance du profil cognitif crée précisément les conditions de ces interventions à fort impact.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les études longitudinales de l'OCDE, notamment celles s'appuyant sur les données PISA entre cohortes, montrent que la confiance académique à 15 ans est un prédicteur robuste de la trajectoire éducative et professionnelle jusqu'à 30 ans — au-delà même du niveau de compétence brut. Cette confiance n'est pas un sentiment vague : elle est ancrée dans une connaissance précise de ses propres forces et dans l'expérience de réussites alignées sur son profil réel. Les élèves qui entrent au lycée avec une image juste d'eux-mêmes — ni sur-estimée ni sous-estimée — s'adaptent mieux aux exigences nouvelles et récupèrent plus vite des difficultés ponctuelles.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les données PISA pour la France mettent en évidence un écart de confiance académique particulièrement important entre les élèves français et ceux des pays asiatiques les mieux classés. Les élèves français ont tendance à sous-estimer leurs compétences — un phénomène lié, selon les chercheurs de l'OCDE, à une culture de la note qui valorise la perfection plutôt que la progression, et qui expose les élèves à de fréquentes évaluations à enjeux sans leur fournir de repères normatifs clairs. Donner à l'enfant un point de repère objectif — un rang centile sur une échelle normative — contribue directement à corriger cette distorsion de perception.
+        </p>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Découvrez le niveau réel de votre enfant — gratuitement</p>
+            <p className="text-sm text-gray-600">L'évaluation adaptative d'Eduentry compare les capacités verbales, numériques et de raisonnement de votre enfant à celles de ses pairs internationaux. 20–30 minutes. Sans inscription.</p>
+          </div>
+          <Link href="https://eduentry.com/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Commencer l'évaluation gratuite
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guides associés</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          <Link href="/fr/blog/comment-se-compare-votre-enfant" className="block border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
+            <p className="font-semibold text-gray-900 text-sm mb-1">Comment votre enfant se compare à l'échelle mondiale ?</p>
+            <p className="text-xs text-gray-500 leading-relaxed">Comprendre les référentiels internationaux et ce que révèle vraiment la position de votre enfant par rapport à ses pairs.</p>
+          </Link>
+          <Link href="/fr/blog/score-pisa-france-analyse" className="block border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
+            <p className="font-semibold text-gray-900 text-sm mb-1">Scores PISA France : ce que ça veut dire</p>
+            <p className="text-xs text-gray-500 leading-relaxed">Analyse des résultats PISA pour la France et leur interprétation concrète pour les familles et les choix d'orientation.</p>
+          </Link>
+          <Link href="/fr/blog/qu-est-ce-qu-un-score-standardise" className="block border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
+            <p className="font-semibold text-gray-900 text-sm mb-1">Qu'est-ce qu'un score standardisé ?</p>
+            <p className="text-xs text-gray-500 leading-relaxed">Guide pour les parents sur l'échelle normative, les rangs centiles et comment interpréter les résultats d'une évaluation cognitive.</p>
+          </Link>
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

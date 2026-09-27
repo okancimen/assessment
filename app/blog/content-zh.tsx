@@ -1491,6 +1491,185 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'understanding-child-strengths-weaknesses-high-school': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        每当孩子升入中学，大多数华人家庭手中握着的，不过是一张成绩单。数学九十三分，语文八十八分，英语九十一分——这些数字让人安心，却极少告诉我们真正需要知道的事情。成绩单衡量的是孩子在班级内的相对表现：它描述的是一个小样本中的排名，而非孩子认知能力的真实轮廓。许多在班里名列前茅的孩子，进入竞争更激烈的中学环境后，发现原有的学习策略突然失灵了——而许多在普通班看起来"平平无奇"的孩子，一旦被放入与自身能力相匹配的学习环境中，便展现出令家长和老师都感到惊讶的潜力。在升入中学之前，了解孩子的认知能力档案——而非仅仅依赖成绩单——是一次投资回报率极高的决策。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">为什么升入中学是关键的转折点？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          教育研究领域有一个广泛验证的现象，被称为"马太效应"（Matthew Effect）——取自圣经中"凡有的，还要加给他，使他富足"的比喻。在学业发展上，这意味着：进入中学时拥有扎实认知基础的孩子，会因为课程加速、同伴效应和更高的学习期望而持续进步；而那些带着隐性短板进入中学的孩子，则可能因为课程内容的跳跃而陷入越来越深的困境。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在澳大利亚新南威尔士州，从小学六年级升入七年级（约11-12岁），是学业挑战程度发生质变的时刻。精英高中（Selective High School）的竞争者、OC班（Opportunity Class）的过渡，都在这个阶段集中爆发。在英国，11+文法学校考试同样在这个年龄段完成——那些没有系统了解孩子认知能力的家庭，往往在考前数月才发现孩子存在薄弱环节，备考时间捉襟见肘。在阿联酋迪拜，Dubai College、JESS Arabia等顶尖学校使用CAT4认知能力测试作为七年级入学的核心筛选工具，测试的正是那些无法用成绩单反映的认知维度。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          研究表明，早期识别认知能力的优势与不足，能够显著提高干预的效率。在10-12岁阶段发现的学习短板，通过有针对性的支持，往往在12-18个月内可以得到实质性改善；而同样的短板如果在14-15岁才被发现，改善空间已大幅收窄，且可能已经影响到重要的学科选择和升学路径。早期识别不是制造焦虑，而是创造选择空间。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">关键数据：</strong>约翰·哈蒂（John Hattie）的教育元分析研究显示，早期诊断性评估的效应量（effect size）约为0.67——这意味着接受早期认知能力评估的学生，学业成就平均比对照组高出约0.67个标准差，相当于额外约两年的学习成长。这是教育干预中效应量最大的类别之一。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">"天赋"究竟是什么——又不是什么？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在华人教育文化中，"天赋"这个概念往往被两种截然对立的态度所主导：要么将其视为固定的先天禀赋（"这孩子天生就不是读书的料"），要么用勤奋论将其彻底解构（"只要努力，没有学不好的东西"）。这两种态度都偏离了认知科学的实际发现。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          心理学家雷蒙德·卡特尔（Raymond Cattell）提出的流体智力（fluid intelligence）与晶体智力（crystallized intelligence）的区分，至今仍是认知能力研究最有实用价值的框架之一，并被霍恩-卡罗尔（Cattell-Horn-Carroll，简称CHC）理论进一步系统化。流体智力指在没有先验知识的情况下解决新问题、识别规律、进行抽象推理的能力；晶体智力则是通过学习和经验积累的知识与技能。两者都重要，但在预测学业适应性上扮演不同角色。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          霍华德·加德纳（Howard Gardner）的多元智能理论（Theory of Multiple Intelligences）提供了另一个有价值的视角：语言、逻辑-数学、空间、音乐、身体-动觉、人际和内省智能，是相对独立的能力维度。一个在语言推理上表现突出的孩子，在空间推理上可能并不出色，反之亦然。这种差异不是缺陷，而是需要被看见并加以利用的特征。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          卡罗尔·德韦克（Carol Dweck）的成长心态（Growth Mindset）研究，为这个讨论提供了关键的校准。德韦克的研究并不否认认知能力差异的存在——它的核心发现是：相信能力可以发展的学生，在面对挑战时的坚持度更高，最终成就也更高。但这一发现的前提，恰恰是先要准确了解孩子当前的认知能力基线——你需要知道从哪里出发，才能制定有意义的成长计划。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">重要区分：</strong>认知能力档案（cognitive profile）描述的是当前的能力状态，不是终身标签。10岁时的工作记忆容量，与成年后的智力成就之间，存在众多可以改变的中间变量。档案的价值在于提供精准的起点，而非预言终点。
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          许多在高考（gaokao）备考阶段饱受煎熬的学生，其痛苦的根源往往不是努力不够，而是学习策略与认知特点的错位——一个工作记忆较弱的孩子用死记硬背应对大量信息，或一个语言推理突出但数学推理偏弱的孩子，在没有任何针对性支持的情况下面对理科综合考试。早期的认知能力档案，能让家长和教师在这些问题成为危机之前，就采取有针对性的行动。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">预测中学学业成功的四大认知领域</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          基于CHC理论框架和大量纵向研究，以下四个认知领域对中学阶段的学业成功具有最强的预测力，也是标准化认知评估中最核心的测量维度。
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>语言推理（Verbal Reasoning）</strong>——理解词汇关系、类比、句子结构和语言逻辑的能力。语言推理强的孩子通常在阅读理解、写作、历史和人文学科中表现突出，也更容易从口头指令中提取信息。对于在双语或多语环境中成长的华人孩子，需要注意：语言推理测试通常在特定语言中进行，英语语言推理分数可能受到英语熟练度的干扰，而非反映真实的推理能力。
+          </Bullet>
+          <Bullet>
+            <strong>数字与量化推理（Numerical / Quantitative Reasoning）</strong>——理解数量关系、数学模式和抽象数字操作的能力，区别于算术运算的机械熟练度。在PISA数学测试中，中国（含上海、北京、江苏、浙江）持续位居全球前列，得分约590分，远超经合组织平均分472分。但这一亮眼的宏观数据背后，存在显著的个体差异。即便在高水平教育体系中，个体的数字推理能力档案依然呈正态分布——了解一个孩子处于这个分布的哪个位置，是制定有效数学备考策略的前提。
+          </Bullet>
+          <Bullet>
+            <strong>工作记忆（Working Memory）</strong>——在处理任务的同时，在脑中临时存储和操作信息的能力。工作记忆对学习几乎所有学科都至关重要，尤其是数学（多步骤计算）、阅读理解（在句子结尾仍记得句子开头）和听课记笔记。工作记忆也是最容易被教育体系忽视、却最能解释学业困难的认知维度之一：一个工作记忆有限的孩子，在标准化考试中可能因此无法发挥真实能力，但这个短板本身是可以通过元认知（metacognition）训练和脚手架教学（scaffolding instruction）来有效补偿的。
+          </Bullet>
+          <Bullet>
+            <strong>非语言与空间推理（Non-verbal / Spatial Reasoning）</strong>——通过图形、图案和空间关系进行推理的能力，不依赖语言媒介。这一维度对STEM学科（尤其是几何、物理、化学分子结构和工程学）有突出的预测力。非语言/空间测试的一个重要特性是语言独立性——对于在英语环境中就读但母语为中文的孩子，非语言推理分数往往最能反映其真实的认知潜力，不受语言熟练度干扰。在11+文法学校考试、CAT4和OC班考试中，非语言推理都是独立的考察维度。
+          </Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          这四个维度共同构成孩子的认知能力档案（cognitive profile）。档案的价值不在于任何单一维度的高低，而在于维度之间的模式——优势在哪里、相对薄弱在哪里、以及这种模式与孩子即将面对的中学学习环境的匹配程度如何。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          常模参照评估（norm-referenced assessment）和百分位排名（percentile ranking）是解读这些维度最有意义的方式：它们告诉您孩子在真实的同龄人分布中处于哪个位置，而非给出一个无法比较的绝对分数。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">在家中和学校可观察到的信号</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          正式评估之前，家长和老师往往已经在日常观察中积累了大量有价值的信息，只是缺乏一个解读框架。以下是一些具体的、可供参考的观察信号：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>语言推理信号：</strong>孩子是否能在阅读陌生文本时快速提炼主旨？能否自发使用类比和比喻来解释概念？在家庭对话中，是否表现出对词义辨析和语言精确性的敏感？喜欢玩文字游戏、猜谜、成语接龙？</Check>
+          <Check><strong>数字推理信号：</strong>不只是能不能做对数学作业——更重要的是，孩子是否理解数字背后的规律？在奥数竞赛题面前，孩子的反应是被吸引还是被排斥？是否经常自发地在生活场景中运用数量估算和推断？班级数学成绩优秀，但在全国竞赛或国际测试中的表现与班级表现不相称——这种差距本身就是信号。</Check>
+          <Check><strong>工作记忆信号：</strong>孩子是否经常需要重新阅读指令才能开始任务？在复杂的口头指令下（"先做A，然后在完成B之前先检查C"），是否容易遗漏步骤？多步骤的数学应用题是否特别困难，即便单步骤的计算没有问题？口头表达思路时，是否经常丢失线索？</Check>
+          <Check><strong>空间推理信号：</strong>孩子对地图、模型、立体图形是否有天然的理解力？在几何学习中是否表现突出，远超代数？对乐高积木、拼图和空间游戏是否有持续的热情？学习化学元素结构或物理力学图解时，是否比语言描述更快理解？</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          这些观察不足以替代正式评估，但它们能帮助家长在看到评估结果时，将数据与对孩子的真实认识联系起来——这种联系往往会大幅提升评估结果对实际决策的指导价值。
+        </p>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">了解认知能力档案在实践中的呈现方式</p>
+            <p className="text-sm text-gray-600">示例评估报告清晰展示了语言、数学、工作记忆和空间能力分数的分解方式——以及这些结果对孩子备考的实际意义。</p>
+          </div>
+          <Link href="https://eduentry.com/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            查看示例报告
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">为什么学校成绩是一张不完整的地图</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          学校成绩是班级相对表现的测量，而非认知能力的绝对测量。两者之间存在一个根本性的区别，值得认真对待。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          心理学研究中有一个著名的现象，称为"大鱼小池效应"（Big Fish, Little Pond Effect）：在成绩较弱的班级或学校中，一个学业能力处于中等偏上的孩子，会因为长期在班内排名靠前，而形成偏高的学业自我概念；同样能力的孩子如果放在精英学校，则可能因为相对排名下降而产生自我怀疑。更重要的是，这个效应的逆向也真实存在：一个在普通学校名列前茅、但在常模参照评估（norm-referenced assessment）中仅处于第60-65百分位的孩子，若不经过提前评估便直接报考文法学校或OC班，面临的考验将远超预期。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          学校成绩同样在特殊教育需求（SEN）识别上存在系统性盲点。工作记忆显著偏弱、阅读障碍（dyslexia）或注意力相关困难，往往被"还可以的成绩"所掩盖——孩子付出了两倍的努力，勉强维持了表面上看起来正常的成绩，而疲惫和挫败感却在持续积累。这类孩子在升入中学后，往往会在课业量骤增的冲击下首次出现明显的成绩下滑，令家长措手不及。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          因此，标准化评估与学校成绩应当被视为互补信息，而非替代关系。学校成绩告诉您孩子在当前环境中表现如何；标准化评估告诉您孩子的认知能力在更广泛人群中的位置。两者结合，才能为升学决策和备考规划提供真正可靠的依据。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">将认知能力档案转化为备考计划</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          了解孩子的认知能力档案只是第一步；将档案转化为可行动的备考计划，才是最终目标。以下是几个具体的应用方向：
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>选科与升学路径规划：</strong>语言推理和工作记忆较强的孩子，往往在以阅读和写作为核心的人文学科路径上更能发挥优势；空间推理和数字推理突出的孩子，在STEM路径上有天然基础。这不意味着固化孩子的选择——而是在选择需要做出之前，给家长和孩子提供更真实的参考。</Check>
+          <Check><strong>学习策略匹配：</strong>工作记忆偏弱的孩子，可以通过结构化的笔记方法（如康奈尔笔记法）、任务分解和外部脚手架（检查清单、思维导图）来有效补偿；语言推理突出的孩子，用叙述性解释配合数学概念学习，比单纯的公式训练更有效。元认知训练（metacognition）——帮助孩子了解自己如何学习——在这里尤为重要，研究显示其效应量高达0.60。</Check>
+          <Check><strong>针对性竞争备考：</strong>参加OC班考试的孩子，思维技能部分（非语言推理）是许多华人孩子相对薄弱的维度——因为日常学习中很少有机会系统练习图形规律和空间推理。提前12-18个月开始有针对性的训练，效果远优于考前三个月的突击。英国文法学校考试（11+）和迪拜CAT4同理。</Check>
+          <Check><strong>何时寻求专业支持：</strong>如果工作记忆在第25百分位以下，且伴有阅读理解困难或数学多步骤应用题的持续障碍，建议在升入中学前寻求专业的教育心理评估，以排查或确认是否存在需要正式支持的学习差异。</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">早期识别：研究告诉我们什么</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          过去二十年的教育研究积累了大量支持早期认知能力识别的证据。约翰·哈蒂的元分析（涵盖超过900项研究，涉及逾两亿名学生）显示，与其他常见教育干预相比，诊断性评估的效应量属于最高梯队之一。这一发现一再被独立研究所复现。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          纵向研究同样提供了令人信服的证据。来自英国的ALSPAC（英国儿童纵向研究）追踪数据显示，7-11岁阶段测量的认知能力档案，对16岁时的GCSE成绩具有独立于社会经济背景和学校质量之外的预测力。这意味着：了解孩子的认知能力档案，并据此进行有针对性的早期支持，具有超越环境因素的实质性影响。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          回到PISA数据，中国（上海、北京、江苏、浙江）的成绩持续位居全球前列，这是中国教育体系整体水平的体现，值得骄傲。但这一宏观成就并不意味着个体层面的差异消失了——事实上，高水平教育体系内部的个体差异同样广泛存在。研究表明，在高水平教育体系中，个体认知档案的差异对学习效率和学科适配的影响，甚至比在中等水平体系中更为显著：因为基础门槛更高，每个人都在努力，此时认知策略和学习方式的精准性才真正成为决定性因素。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          对于在澳大利亚、英国和阿联酋生活的华人家庭，这意味着：孩子可能同时受到来自华人社群的高期望和来自所在国教育体系的独特评估逻辑的双重影响。理解当地评估体系（OC班、11+、CAT4）与孩子认知档案的交叉点，是最有效的升学准备策略。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">研究摘要：</strong>哈蒂（2009）将诊断性评估的效应量定为0.67。ALSPAC纵向研究（2014）显示早期认知档案对青少年学业成就的独立预测力。经合组织PISA数据一再证实，即便在高水平教育体系中，个体能力差异依然广泛存在，且对学习适应性有决定性影响。
+        </Callout>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">免费了解孩子的真实水平</p>
+            <p className="text-sm text-gray-600">Eduentry的自适应学术评估将孩子的语言、数学和推理能力与国际同龄人进行对比。20–30分钟完成，无需注册。</p>
+          </div>
+          <Link href="https://eduentry.com/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            开始免费评估
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">相关指南</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          <Link href="/zh/blog/shenme-shi-biaozhunhua-fenshu" className="block border border-gray-100 rounded-xl p-4 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
+            <p className="font-semibold text-gray-900 text-sm mb-1">什么是标准化分数？</p>
+            <p className="text-xs text-gray-500">如何读懂11+、CAT4和认知评估报告中的分数——均值100、标准差15的完整解读指南。</p>
+          </Link>
+          <Link href="/zh/blog/haizi-xueshu-shuiping-ruhe-celiang" className="block border border-gray-100 rounded-xl p-4 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
+            <p className="font-semibold text-gray-900 text-sm mb-1">如何评估孩子的学术水平？</p>
+            <p className="text-xs text-gray-500">国内排名、PISA和国际标准化评估的区别——以及如何获取真实的全球基准数据。</p>
+          </Link>
+          <Link href="/zh/blog/xinnanwei-jizhong-ban-kaoshi-zhinan" className="block border border-gray-100 rounded-xl p-4 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
+            <p className="font-semibold text-gray-900 text-sm mb-1">NSW OC班考试指南2026</p>
+            <p className="text-xs text-gray-500">新南威尔士州机会班考试的内容、评分方式、备考策略，以及与英国11+的横向比较。</p>
+          </Link>
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

@@ -586,6 +586,44 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     readTime: '8 min de lectura',
     tags: ['academic-testing'],
   },
+  {
+    slug: 'comprender-fortalezas-debilidades-hijo-bachillerato',
+    contentSlug: 'understanding-child-strengths-weaknesses-high-school',
+    title: 'Comprender las fortalezas y debilidades de tu hijo antes del bachillerato',
+    shortTitle: 'Fortalezas y debilidades: preparación para el bachillerato',
+    description:
+      'Cómo identificar las aptitudes cognitivas naturales de tu hijo — razonamiento verbal, aptitud numérica, memoria de trabajo, razonamiento espacial — antes del bachillerato, y usar ese perfil para guiar la preparación y la elección de itinerarios.',
+    tldr: 'Las notas escolares miden el rendimiento relativo en clase, no el perfil cognitivo subyacente del alumno. Identificar las fortalezas y debilidades en razonamiento verbal, aptitud numérica, memoria de trabajo y razonamiento espacial antes del bachillerato proporciona a padres y docentes una hoja de ruta precisa, mucho más útil que un boletín de notas convencional.',
+
+    date: '2026-09-27',
+    dateModified: '2026-09-27',
+    readTime: '12 min de lectura',
+    tags: ['Evaluación académica', 'Desarrollo infantil', 'Preparación bachillerato', 'Perfil cognitivo'],
+    faqs: [
+      {
+        q: '¿Qué es un perfil cognitivo y en qué se diferencia de las notas escolares?',
+        a: 'Un perfil cognitivo describe las fortalezas y debilidades de un alumno en dominios cognitivos fundamentales — razonamiento verbal, aptitud numérica, memoria de trabajo y razonamiento espacial — medidos mediante evaluaciones normativas estandarizadas. A diferencia de las notas escolares, que reflejan el rendimiento relativo dentro de una clase concreta, un perfil cognitivo compara al alumno con cohortes amplias y permite identificar aptitudes subyacentes independientemente del contexto escolar.',
+      },
+      {
+        q: '¿Cuándo es el momento adecuado para evaluar el perfil cognitivo de mi hijo antes del bachillerato?',
+        a: 'La ventana más útil es entre los 13 y los 15 años, antes de que el alumno tenga que elegir la modalidad de bachillerato (ciencias, humanidades y ciencias sociales, artes). Una evaluación en este período ofrece tiempo suficiente para reforzar áreas débiles, ajustar técnicas de estudio y orientar la elección de itinerario con datos objetivos en lugar de con percepciones parciales.',
+      },
+      {
+        q: '¿Puede mejorar el perfil cognitivo con la práctica?',
+        a: 'La inteligencia fluida — la capacidad de resolver problemas nuevos independientemente del conocimiento previo — tiene un componente genético significativo, pero responde al entrenamiento cognitivo específico, especialmente en edades de alta plasticidad cerebral como la adolescencia. La memoria de trabajo, en particular, mejora con práctica estructurada. La inteligencia cristalizada (conocimientos acumulados y vocabulario) crece directamente con la exposición y el estudio.',
+      },
+      {
+        q: '¿Cómo influye el perfil cognitivo en la elección de modalidad de bachillerato?',
+        a: 'Un perfil con alta aptitud numérica y razonamiento espacial sugiere un buen ajuste con la modalidad de ciencias; uno con fortalezas en razonamiento verbal y memoria de trabajo episódica apunta hacia humanidades. Dicho esto, el perfil cognitivo es un dato orientador, no un destino. Lo más útil es combinarlo con los intereses del alumno y su nivel de motivación intrínseca en cada área.',
+      },
+    ],
+    cta: {
+      heading: 'Descubre el perfil cognitivo de tu hijo — gratis',
+      body: 'La evaluación adaptativa de Eduentry mide razonamiento verbal, aptitud numérica, memoria de trabajo y razonamiento espacial, y genera un informe percentil comparado con pares internacionales. 20–30 minutos, sin registro.',
+      label: 'Iniciar evaluación gratuita',
+      href: 'https://eduentry.com/#academic',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

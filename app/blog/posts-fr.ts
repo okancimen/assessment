@@ -821,6 +821,44 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: 'https://eduentry.com/fr',
     },
   },
+  {
+    slug: 'comprendre-forces-faiblesses-enfant-lycee',
+    contentSlug: 'understanding-child-strengths-weaknesses-high-school',
+    title: 'Comprendre les forces et faiblesses de votre enfant avant le lycée',
+    shortTitle: 'Forces et faiblesses : préparer l\'entrée au lycée',
+    description:
+      'Comment identifier les aptitudes cognitives naturelles de votre enfant — raisonnement verbal, aptitude numérique, mémoire de travail, raisonnement spatial — avant le lycée, et utiliser ce profil pour guider la préparation et les choix de filières.',
+    tldr: 'Les notes scolaires mesurent la performance relative en classe — elles ne révèlent pas le profil cognitif sous-jacent de l\'enfant. Identifier les forces et faiblesses en raisonnement verbal, aptitude numérique, mémoire de travail et raisonnement spatial avant le lycée offre aux parents une feuille de route ciblée, bien plus utile qu\'un bulletin de notes vague.',
+
+    date: '2026-09-27',
+    dateModified: '2026-09-27',
+    readTime: '12 min de lecture',
+    tags: ['Évaluation académique', 'Développement de l\'enfant', 'Préparation lycée', 'Profil cognitif'],
+    faqs: [
+      {
+        q: 'Pourquoi le bulletin de notes ne suffit-il pas pour préparer l\'orientation lycée ?',
+        a: 'Le bulletin de notes est une mesure relative à la classe et à l\'établissement : un 15/20 dans un collège peu exigeant ne correspond pas au même niveau qu\'un 15/20 dans un établissement sélectif. Il ne dit rien du profil cognitif sous-jacent — raisonnement verbal, aptitude numérique, mémoire de travail, raisonnement spatial — qui prédit réellement quelle filière et quelles méthodes de travail conviennent à l\'enfant.',
+      },
+      {
+        q: 'Qu\'est-ce qu\'un profil cognitif et comment est-il évalué ?',
+        a: 'Un profil cognitif est la cartographie des aptitudes de l\'enfant dans quatre grands domaines : raisonnement verbal (manipulation de concepts linguistiques), raisonnement quantitatif (perception de relations numériques), mémoire de travail (capacité à maintenir et manipuler des informations en cours de tâche) et raisonnement spatial (compréhension des relations entre formes et structures). Il est évalué par des tests standardisés adaptatifs — comme le CAT4 ou l\'évaluation Eduentry — qui produisent des scores comparables à une norme internationale.',
+      },
+      {
+        q: 'Comment utiliser le profil cognitif de mon enfant pour choisir sa filière ?',
+        a: 'Un profil à forte dominante verbale et spatiale limitée orientera vers les filières générales avec spécialités lettres, langues ou sciences humaines. Un profil à fort raisonnement quantitatif et spatial indique une prédisposition pour les filières scientifiques et technologiques. La mémoire de travail, transversale à toutes les disciplines, doit être prise en compte pour adapter les méthodes de travail. Lors de l\'entretien d\'orientation en Troisième, un profil documenté permet d\'engager une conversation précise avec le professeur principal.',
+      },
+      {
+        q: 'À quel âge est-il utile d\'évaluer le profil cognitif de son enfant avant le lycée ?',
+        a: 'La fenêtre optimale se situe entre la Cinquième et la Troisième, soit entre 12 et 15 ans. C\'est suffisamment tôt pour agir sur les fragilités identifiées avant que les choix d\'orientation ne se formalisent au brevet des collèges, et suffisamment proche du lycée pour que le profil reflète les aptitudes actuelles plutôt que celles d\'un enfant plus jeune. Une évaluation en Troisième, six mois avant les vœux d\'orientation, offre le meilleur équilibre entre anticipation et pertinence.',
+      },
+    ],
+    cta: {
+      heading: 'Découvrez le profil cognitif de votre enfant — gratuitement',
+      body: 'L\'évaluation adaptative Eduentry mesure le raisonnement verbal, quantitatif et spatial de votre enfant sur la même échelle internationale que le CAT4. 20–30 minutes, sans inscription préalable.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: 'https://eduentry.com/#academic',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

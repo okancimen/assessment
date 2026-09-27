@@ -1492,6 +1492,19 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'understanding-child-strengths-weaknesses-high-school',
+    contentSlug: 'understanding-child-strengths-weaknesses-high-school',
+    title: 'Understanding Your Child\'s Strengths and Weaknesses Before High School',
+    shortTitle: 'Child Strengths & Weaknesses: High School Preparation Guide',
+    description:
+      'How to identify your child\'s natural cognitive abilities — verbal reasoning, numerical aptitude, working memory, spatial skills — before secondary school, and use that profile to guide preparation and subject choices.',
+    tldr: 'School grades measure performance relative to classmates — they don\'t reveal a child\'s underlying cognitive profile. Identifying strengths and weaknesses across verbal reasoning, numerical aptitude, working memory, and spatial ability before high school gives parents and teachers a targeted roadmap, not a vague report card.',
+    date: '2026-09-27',
+    dateModified: '2026-09-27',
+    readTime: '12 min read',
+    tags: ['Academic Assessment', 'Child Development', 'High School Preparation', 'Cognitive Profile'],
+  },
+  {
     slug: 'pisa-2025-work-experience-student-readiness',
     title: 'PISA 2025 Says Grades Are Falling — Here\'s Why Work Experience Is the Missing Answer',
     shortTitle: 'PISA 2025 Scores Are Falling — Why Work Experience Is the Answer',

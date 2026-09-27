@@ -979,6 +979,48 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr/staj',
     },
   },
+  {
+    slug: 'cocugunuzun-guclu-zayif-yonleri-liseye-hazirlik',
+    contentSlug: 'understanding-child-strengths-weaknesses-high-school',
+    title: 'Çocuğunuzun Güçlü ve Zayıf Yönlerini Liseye Hazırlık İçin Anlamak',
+    shortTitle: 'Güçlü ve Zayıf Yönler: Lise Hazırlık Rehberi',
+    description:
+      'Sözel akıl yürütme, sayısal beceri, çalışan bellek ve uzamsal düşünme gibi bilişsel yetenekleri lise öncesinde nasıl keşfedersiniz? Çocuğunuzun akademik profilini belirleme ve hazırlık planı oluşturma rehberi.',
+    tldr: 'Okul notları, öğrencilerin sınıf içindeki göreli başarısını ölçer — ancak altta yatan bilişsel profili ortaya koymaz. Sözel akıl yürütme, sayısal yetenek, çalışan bellek ve uzamsal beceri alanlarındaki güçlü ve zayıf yönleri lise öncesinde belirlemek, ebeveynlere ve öğretmenlere belirsiz bir karne yerine somut bir yol haritası sunar.',
+
+    date: '2026-09-27',
+    dateModified: '2026-09-27',
+    readTime: '12 dk okuma',
+    tags: ['Akademik Değerlendirme', 'Çocuk Gelişimi', 'Lise Hazırlığı', 'Bilişsel Profil'],
+    faqs: [
+      {
+        q: 'Bilişsel profil nedir ve okul notundan farkı nedir?',
+        a: 'Bilişsel profil, bir öğrencinin sözel akıl yürütme, sayısal yetenek, çalışan bellek ve uzamsal düşünme gibi temel bilişsel alanlardaki göreli güç ve zayıflıklarını gösterir. Okul notu bir müfredata göre sınıf içi başarıyı yansıtırken bilişsel profil, o başarının altında yatan işlem kapasitesini ortaya koyar. Aynı notu alan iki öğrencinin tamamen farklı bilişsel profilleri olabilir.',
+      },
+      {
+        q: 'LGS\'ye hazırlık için bilişsel profil neden önemlidir?',
+        a: 'LGS, sözel akıl yürütme, sayısal muhakeme ve sözel olmayan problem çözmeyi doğrudan ölçer — bunlar tam da bilişsel profilin belirlediği alanlardır. 7. veya 8. sınıfta başlayan LGS hazırlığı genellikle ilk kez bu alanlarda sistematik zayıflıkları ortaya çıkarır. Bu tespiti 5–6. sınıfta yapmak, reaktif değil proaktif müdahaleye olanak tanır.',
+      },
+      {
+        q: 'Akışkan zeka ile kristalize zeka arasındaki fark nedir?',
+        a: 'Akışkan zeka, daha önce öğrenilmemiş sorunları çözme kapasitesini ifade eder — yeni kalıpları tanıma ve mantıksal çıkarım yapma becerisi. Kristalize zeka ise öğrenme ve deneyimle biriken bilgi ve becerileri kapsar. LGS açısından bakıldığında her ikisi de önemlidir; ancak uzun vadeli akademik esnekliği en iyi öngören akışkan zekadır.',
+      },
+      {
+        q: 'Çalışan bellek zayıflığı lise hazırlığını nasıl etkiler?',
+        a: 'Çalışan bellek, zihinsel olarak bilgiyi geçici olarak tutup aynı anda işleme kapasitesidir. Zayıf çalışan belleği olan öğrenciler çok adımlı matematik problemlerinde, uzun metinleri takip etmede ve yeni kavramları eski bilgiyle ilişkilendirmede zorlanır. LGS\'deki karmaşık soru yapıları bu kapasiteyi doğrudan test eder. Erken tespit edildiğinde parçalama ve dışsallaştırma stratejileriyle ciddi biçimde desteklenebilir.',
+      },
+      {
+        q: 'Evde bilişsel profili belirlemek için ne yapılabilir?',
+        a: 'Gözlem, birincil araçtır. Sözel güç: hikâye anlatımında zenginlik, kelime oyunlarında ustalık, dil oyunlarına ilgi. Sayısal güç: zihinsel hesaplama hızı, kalıp fark etme, strateji oyunlarından zevk alma. Uzamsal güç: harita okuma, üç boyutlu zihinsel döndürme, mekanik sistemleri anlama. Çalışan bellek: çok adımlı talimatları takip etme, zihinsel hazır bulunuşluk. Resmi değerlendirme bu gözlemleri onaylar ve ölçer.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun bilişsel profilini keşfedin — ücretsiz',
+      body: 'Eduentry\'nin uyarlanabilir akademik değerlendirmesi, sözel, sayısal, çalışan bellek ve uzamsal becerileri uluslararası akranlarla kıyaslar. 20–30 dakika sürer. Kayıt gerekmez.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/#academic',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

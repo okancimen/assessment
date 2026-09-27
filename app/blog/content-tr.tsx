@@ -3742,6 +3742,181 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'understanding-child-strengths-weaknesses-high-school': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Çoğu ebeveyn, çocuğunun lise hazırlığında gerçek güçlük yaşadığını öğrendiği zamanı tam olarak hatırlayabilir: Liselere Giriş Sınavı (LGS) dershanesi başladığında, 7. ya da 8. sınıfta. O noktada müfredatın kapsamı ve sınav baskısı bir anda görünür kılıyor — çocuk sözel akıl yürütmede zorlanıyor ya da sayısal muhakemede sistematik bir tıkanma var. Sorun yeni değildir; aylarca, belki yıllarca orada sessizce büyümüştür. Ancak okul notları bunu gizlemiştir: çocuk sınıfta "iyi" ya da "ortalamanın üzerinde" görünmekteydi. Gerçek tablo, LGS hazırlığının normatif değerlendirme baskısıyla ancak o zaman açığa çıkar. Kritik bir ya da iki yıl ise çoktan geride kalmıştır.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu yazı, o kırılganlığı daha erken görünür kılmak için bilişsel profilin ne olduğunu, hangi alanların lise başarısını öngördüğünü ve ebeveynlerin evde gözlemleyebileceği işaretleri ele alıyor. Amaç, çocukları etiketlemek değil; ebeveynlere ve öğretmenlere belirsiz bir karne yerine somut bir yol haritası sunmak.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Liseye Geçiş Neden Kritik Bir Dönemdir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eğitim araştırmalarının en tutarlı bulgularından biri, ilköğretimden ortaöğretime geçiş döneminde başarı açıklarının kapanmak yerine genişlediğidir. Amerikalı psikolog ve eğitim araştırmacısı Keith Stanovich'in 1986'da kavramsallaştırdığı Matta etkisi (Matthew effect), okumada güçlü başlayan öğrencilerin dil becerilerini giderek artan bir hızla geliştirirken zayıf başlayanların zamanla daha da geride kaldığını göstermektedir. Aynı dinamik sayısal muhakeme ve sözel akıl yürütme için de geçerlidir: erken avantaj bileşik faiz gibi büyür, erken dezavantaj da öyle.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye bağlamında bu dinamiğin özel bir boyutu vardır. LGS, 8. sınıf sonunda uygulanan ve öğrencileri Anadolu lisesi, fen lisesi, sosyal bilimler lisesi veya meslek lisesi gibi farklı türlerdeki liselere yerleştiren yüksek riskli bir sınavdır. Anadolu lisesi ile diğer lise türleri arasındaki akademik ortam ve üniversiteye hazırlık açısındaki fark, salt bir puan farkını aşar; öğrencinin önündeki tüm eğitim yolculuğunu şekillendirir. Bu kadar belirleyici bir sınavda, zayıf yönlerin 7. sınıfta değil 5. ya da 6. sınıfta tespit edilmesi, reaktif değil proaktif bir müdahaleye olanak tanır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye'nin PISA sonuçları bu bağlamda aydınlatıcı bir referans sunar. PISA 2022 verileri, Türkiye'nin matematik okur-yazarlığında OECD ortalamasının altında kaldığını ortaya koymaktadır. Bu fark, ezber ve prosedür odaklı öğrenimden analitik ve uygulamalı düşünme gerektiren ortaöğretim müfredatına geçişte en çok hissedilen alandır. Erken tespit, bu geçiş dönemindeki düşüşü önlemenin en kanıta dayalı yoludur.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Erken müdahalenin maliyeti neden bu kadar düşüktür?</strong> Bilişsel beceriler, ergenlik öncesinde en yüksek nöroplastisite dönemindedir. 10–12 yaşında tespit edilen bir çalışan bellek zayıflığı, 13 yaşında tespit edilene kıyasla çok daha az müdahale gerektirir — çünkü beynin öğrenme kapasitesi henüz doruk esnekliğindedir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">"Doğal Yetenek" Ne Demektir — Ne Demez?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ebeveynler sıklıkla çocuklarını "doğal matematikçi" ya da "dil insanı" olarak tanımlar. Bu tanımların sezgisel bir dayanağı vardır; ancak bilişsel psikoloji bu kategorileri çok daha ince bir şekilde tanımlar. Psikologlar Raymond Cattell ve John Horn tarafından geliştirilen ve John Carroll tarafından genişletilen Cattell-Horn-Carroll (CHC) modelinde zeka, iki temel boyuta ayrılır: akışkan zeka (Gf) ve kristalize zeka (Gc).
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Akışkan zeka (Gf)</strong>, daha önce öğrenilmemiş sorunları çözme kapasitesini ifade eder — yeni kalıpları tanıma, mantıksal çıkarım yapma, analoji kurma. Deneyim ya da öğretimden bağımsız olarak işlev gören bu kapasite, bir öğrencinin yeni ve beklenmedik bir soru türüyle karşılaştığında ne kadar esnek düşünebildiğini belirler. <strong>Kristalize zeka (Gc)</strong> ise öğrenme ve deneyimle biriken bilgi ve becerileri kapsar — kelime hazinesi, olgusal bilgi, öğrenilmiş prosedürler. LGS açısından her ikisi de önemlidir; ancak akışkan zeka, uzun vadeli akademik esnekliği en güvenilir biçimde öngörendir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Howard Gardner'ın çoklu zeka kuramı (1983), bireysel farklılıklara dikkat çekmesi bakımından değerlidir. Ancak bu kuramın popüler yorumu zaman zaman yanıltıcı bir çerçeve sunar: "Her çocuğun farklı bir zekası vardır" söylemi, bazı bilişsel alanlardaki sistematik zayıflıkları görmezden gelme riskini taşır. Bir çocuğun müziksel ya da bedensel-kinestetik alanda güçlü olması, sözel akıl yürütme ya da sayısal muhakemedeki gerçek bir güçlüğü görünmez kılmamalıdır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Carol Dweck'in büyüme zihniyeti araştırmaları (2006) bu tartışmaya önemli bir boyut katar. Dweck, yeteneklerin sabit olmadığını ve çabayla geliştirilebileceğini göstermiştir. Ancak büyüme zihniyeti, bireysel bilişsel farklılıkları ortadan kaldırmaz; onları anlamlandırır. Sözel akıl yürütmede güçlü ama sayısal muhakemede zayıf bir öğrenci, büyüme zihniyetiyle sayısal becerisini geliştirebilir — ama önce bu zayıflığın varlığını kabul etmesi ve buna özgü stratejiler geliştirmesi gerekir. Profil farkındalığı olmaksızın büyüme zihniyeti, somut bir yol haritasından yoksun genel bir iyimserliğe dönüşür.
+        </p>
+        <Callout color="amber">
+          <strong className="text-amber-900">Kritik ayrım:</strong> Çaba ve pratikle gelen başarı gerçek ve değerlidir. Ancak altta yatan bilişsel profili bilmeden, çabanın nereye yönlendirileceğini seçmek rasgeledir. Profil, çabanın en büyük getiriyi nerede üreteceğini gösterir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lise Hazırlığını Öngören Dört Bilişsel Alan</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bilişsel değerlendirme araştırmaları, ortaöğretimdeki akademik performansı en güvenilir biçimde öngören dört temel alanı tutarlı şekilde işaret etmektedir. Bu alanlar, LGS'nin doğrudan ölçtüğü kapasitelerle yakından örtüşmektedir.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Sözel akıl yürütme (Verbal reasoning):</strong> Dil aracılığıyla mantıksal ilişkileri fark etme ve ifade etme kapasitesidir. Türkçe okuma anlama, kavram analizi, analoji kurma ve argüman değerlendirmeyi kapsar. Pratikte şu şekilde görünür: farklı türde metinleri hızlı anlayan, kelime seçiminde doğal bir hassasiyeti olan, tartışmalarda karmaşık fikirleri net biçimde dile getirebilen öğrenci. LGS Türkçe ve sosyal bilimler sorularının büyük çoğunluğu sözel akıl yürütme kapasitesine dayanır.
+          </Bullet>
+          <Bullet>
+            <strong>Sayısal/nicel akıl yürütme (Quantitative reasoning):</strong> Sayısal ilişkileri anlama, kalıpları tanıma ve matematiksel akıl yürütme kapasitesidir. Bu alan, matematik prosedürlerini ezberlemekten farklıdır; öğretilmemiş bir problemde mantıksal çıkarım yapabilme becerisini ifade eder. Pratikte: soyut matematiksel kavramları sezgisel olarak kavrayan, strateji oyunlarında sayısal kalıpları fark eden, çözümü bilmeden probleme yaklaşabilen öğrenci. LGS matematik ve fen bilimleri sorularının belirleyici kısmı bu kapasiteyi test eder.
+          </Bullet>
+          <Bullet>
+            <strong>Çalışan bellek (Working memory):</strong> Bilgiyi zihinsel olarak geçici süreyle tutup aynı anda işleme kapasitesidir. Çok adımlı problem çözme, karmaşık metinleri takip etme ve yeni kavramları önceki bilgiyle ilişkilendirme bu kapasiteye doğrudan bağlıdır. Pratikte: talimatları takip etmede zorlanan, ödev ortasında nerede kaldığını kaybeden, sözlü açlamaları not almadan hatırlayamayan öğrenci aslında çalışan bellek kapasitesinin sınırlarını deneyimlemiş olabilir. Bu alan, görünmez bir akademik engel yaratır çünkü düşük performans genellikle dikkat ya da motivasyon eksikliği olarak yanlış yorumlanır.
+          </Bullet>
+          <Bullet>
+            <strong>Sözel olmayan/uzamsal akıl yürütme (Nonverbal/spatial reasoning):</strong> Görsel kalıpları tanıma, iki ve üç boyutlu uzamsal ilişkileri zihinsel olarak işleme ve şekillerle soyut akıl yürütme kapasitesidir. Geometri, grafik yorumlama ve görsel problem çözme bu alanın pratik yansımalarıdır. Uzamsal akıl yürütme, özellikle fen liseleri ve matematik ağırlıklı programlar için belirleyici bir öneme sahiptir. Pratikte: haritaları ve diyagramları kolayca okuyan, LEGO veya mekanik sistemlerle kolayca ilişki kuran, geometri sorularını görselleştirerek çözen öğrenci bu alanda güçlü bir profile sahip demektir.
+          </Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Bu dört alanın her biri, akademik performansın farklı bir boyutunu öngörür ve birbirinin ikamesi değildir. Sözel alanda güçlü ama uzamsal alanda zayıf bir öğrenci, edebiyat ağırlıklı bir lisede parlayabilirken fen lisesi müfredatında beklenmedik zorluklarla karşılaşabilir. Profilin bütününü görmek, doğru lise türüne yönlendirme açısından da kritik bir bilgidir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Evde ve Okulda Gözlemlenebilir İşaretler</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Resmi bir değerlendirme yapılmadan önce, dikkatli bir ebeveyn ya da öğretmen bu dört bilişsel alandaki güçlü ve zayıf yönlere dair işaretleri günlük gözlemden toplayabilir. Aşağıdaki göstergeler, Türk ebeveynlerin sıkça tanıdığı bağlamlara uyarlanmıştır.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Sözel güç işaretleri:</strong> Kitap okumayı seven, okuduklarını ayrıntılı biçimde anlatabilen, Türkçe ödevlerini kolaylıkla tamamlayan, yetişkinlerle kelime oyunlarından zevk alan, sosyal bilimlerde notların doğal yüksek olduğu öğrenci.</Check>
+          <Check><strong>Sözel zayıflık işaretleri:</strong> Uzun metinleri okuyup anlayamadığını hisseden, okuma anlama sorularında sürekli yanlış yaptığını fark eden, Türkçe ödevini tamamlamak için çok daha fazla zaman harcayan öğrenci.</Check>
+          <Check><strong>Sayısal güç işaretleri:</strong> Zihinsel hesaplama yapabilen, satranç ya da strateji oyunlarından zevk alan, günlük yaşamda matematiksel kalıpları kendiliğinden fark eden, matematik ödevini hızla bitiren öğrenci.</Check>
+          <Check><strong>Çalışan bellek zayıflığı işaretleri — Türkiye'ye özgü örnek:</strong> Matematik dersinde formülü biliyor, ödev sorusunu da çözebiliyor; ancak testte birden fazla adımı takip etmesi gereken karmaşık bir soruda tıkanıyor. Sorun konu bilgisinde değil, bilgiyi eşzamanlı tutup işlemektedir. Bu fark, sınav koşulunda sistematik biçimde kendini gösterir.</Check>
+          <Check><strong>Uzamsal güç işaretleri:</strong> Geometri sorularını şekil çizmeden zihinsel olarak çözebilen, harita ve diyagramları hızlı yorumlayan, LEGO veya üç boyutlu bulmacalardan zevk alan, teknik resim ya da görsel sanatlar alanında güçlü olan öğrenci.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Bu gözlemler tanı koydurucu değildir; ancak resmi bir değerlendirmeye yönlendirme için güçlü ipuçları sunar. Özellikle aynı konuda test ve ödev performansı arasındaki sistematik farklılık, çalışan bellek ya da akışkan zeka kapasitesine ilişkin önemli bir sinyaldir.
+        </p>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Bilişsel profilin pratikte nasıl göründüğünü keşfedin</p>
+            <p className="text-sm text-gray-600">Örnek değerlendirme raporu, sözel, sayısal, çalışan bellek ve uzamsal puanların nasıl raporlandığını ve çocuğunuzun hazırlığı için ne anlama geldiğini somut biçimde gösteriyor.</p>
+          </div>
+          <Link href="https://eduentry.com/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Örnek raporu incele
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Okul Notları Neden Yetersiz Bir Harita Sunar?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okul notu, norm-referenced (normatif) değil, class-relative (sınıf göreli) bir ölçümdür. Başka bir deyişle, bir öğrencinin 85 ya da 90 alması, o öğrencinin belirli bir bilişsel kapasiteye sahip olduğunu değil, sınıfındaki diğer öğrencilere kıyasla iyi performans gösterdiğini anlatır. Eğitim psikolojisinde "büyük balık küçük gölet" (big-fish-little-pond) etkisi olarak bilinen bu fenomen, akademik kapasiteyi önemli ölçüde fazla ya da az tahmin etmeye yol açabilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye özelinde bu sorunun ek bir boyutu vardır: farklı okullardaki sınav zorluk düzeylerinin standartlaştırılmamış olması. Merkez bir Ankara okulunda 85 alan bir öğrenci ile köy okulunda 85 alan bir öğrencinin bilişsel kapasiteleri aynı olmayabilir. LGS tam da bu noktada normatif bir işlev görür — ülke genelinde aynı ölçütlerle kıyaslama yapar. Ancak bu kıyaslamanın ilk kez sınav günü değil, bir ya da iki yıl önce yapılmış olması, müdahale için çok daha büyük bir pencere bırakır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Özel gereksinim tespiti (SEN) açısından da aynı sorun geçerlidir. Öğrenme güçlükleri ya da dikkat eksikliği gibi durumlar, okul ortamında notlar "yeterli" göründüğü sürece uzun süre fark edilmeyebilir. Normatif bir değerlendirme, bu gizli güçlükleri yüzdelik dilim karşılaştırmasıyla görünür kılar: öğrencinin okulda iyi not aldığı ama ulusal ya da uluslararası akranların belirgin biçimde gerisinde kaldığı tablo, müdahale gerektiren sistematik bir zayıflığa işaret eder.
+        </p>
+        <Callout color="amber">
+          <strong className="text-amber-900">Pratik kural:</strong> Sınıf notu "çocuğum nasıl gidiyor?" sorusuna cevap verir. Normatif değerlendirme ise "çocuğum lise hazırlığına ne kadar hazır?" sorusuna cevap verir. Bu iki soru farklı sorulardır ve farklı veri türleri gerektirir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bilişsel Profili Hazırlık Planına Dönüştürmek</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bilişsel profil, kendi başına değerli bir veri değildir; eyleme dönüştürüldüğünde anlam kazanır. Peki bir ebeveyn ya da öğretmen, bu profili somut bir hazırlık planına nasıl çevirir?
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Ders seçimi ve odak:</strong> Sözel akıl yürütmede güçlü ama sayısal muhakemede zayıf bir öğrenci için matematik ve fen bilimleri derslerinde erken ve yoğun destek planlanmalıdır. Tersine, sayısal alanda güçlü ama sözel alanda zayıf bir öğrenci için Türkçe okuma anlama ve sosyal bilimler çalışmalarına öncelik verilmelidir. Profilin dengeli olmadığı durumlarda, tek tip bir çalışma programı yerine alana özgü stratejiler çok daha büyük kazanım sağlar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Çalışma tekniği eşleştirmesi:</strong> Farklı profiller, farklı öğrenme stratejilerinden en fazla yararlanır. Sözel güç: kavram haritaları, açıklama yazma, sesli düşünme alıştırmaları. Uzamsal güç: şematik notlar, diyagram çizimi, görsel problem temsili. Çalışan bellek zayıflığı: parçalama (chunking) — karmaşık görevleri küçük adımlara bölme — ve dışsallaştırma — zihinsel yükü kâğıda ya da dijital araca aktarma, çalışma kılavuzları ve adım adım kontrol listeleri kullanma.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Sınıf öğretmeniyle iletişim:</strong> Bilişsel profili öğretmenle paylaşmak, öğretmenin sınıf içindeki gözlemlerini çok daha verimli kılar. "Testlerde ödevden farklı performans gösteriyor" gözlemi, çalışan bellek kapasitesine atıfla anlamlandırıldığında öğretmenin soru yönlendirme biçimini, ödev yapılandırmasını ve sınav hazırlık desteğini uyarlamasına olanak tanır. Değerlendirme raporu, ebeveyn-öğretmen görüşmesinde ortak bir referans noktası işlevi görür.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Somut başlangıç noktası:</strong> Profilin en zayıf alanını belirleyin. O alana özgü üç strateji seçin. Sekiz hafta boyunca uygulayın. Ardından yeniden değerlendirin. Bu döngü, genel bir "daha çok çalış" hedefinden çok daha ölçülebilir ilerleme üretir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Araştırmalar Erken Tespiti Destekliyor</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eğitim araştırmacısı John Hattie'nin 800'den fazla meta-analizi kapsayan Visible Learning çalışması (2009), akademik başarı üzerinde en güçlü etkiyi olan müdahaleler arasında bireyselleştirilmiş geri bildirimi ve öğrencinin mevcut kavrayış düzeyine uygun zorlu görevleri üst sıralarda göstermektedir. Bu iki müdahalenin ortak önkoşulu, öğrencinin gerçek kapasitesinin bilinmesidir — yani bir bilişsel profilin mevcut olmasıdır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Boylamsal çalışmalar, 10–12 yaşında gerçekleştirilen bilişsel değerlendirmelerin ileriki akademik başarıyı güvenilir biçimde öngördüğünü ortaya koymaktadır. İngiltere'de yaygın kullanılan CAT4 (Cognitive Abilities Test) değerlendirmesinin geçerlilik çalışmaları, 11 yaşında ölçülen sözel, sayısal ve uzamsal akıl yürütme puanlarının GCSE performansını orta ila güçlü düzeyde öngördüğünü göstermektedir. Benzer kanıtlar, farklı ölçüm araçları kullanan ve farklı eğitim sistemlerini kapsayan çok sayıda bağımsız çalışmada tutarlı biçimde tekrarlanmıştır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA verilerinden elde edilen erken akademik güven birikimi bulguları da bu tabloyu destekler niteliktedir. Erken yaşlarda ölçülen akademik öz yeterlilik — öğrencinin belirli bir akademik görevi başarabilme kapasitesine duyduğu inanç — ileriki performansın ve akademik azmin güçlü bir öngörücüsüdür. Bilişsel profil farkındalığı, bu öz yeterliliğin inşasında kritik bir rol oynar: ne yapabileceğini bilen bir çocuk, karşılaştığı zorlukları anlamsız bir başarısızlık olarak değil, belirli bir alandaki büyüme fırsatı olarak yorumlar.
+        </p>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Çocuğunuzun gerçek düzeyini öğrenin — ücretsiz</p>
+            <p className="text-sm text-gray-600">Eduentry'nin uyarlanabilir akademik değerlendirmesi, çocuğunuzun sözel, sayısal ve akıl yürütme becerisini uluslararası akranlarıyla kıyaslar. 20–30 dakika sürer. Kayıt gerekmez.</p>
+          </div>
+          <Link href="https://eduentry.com/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Ücretsiz değerlendirmeyi başlat
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Rehber', title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor? Uluslararası Akademik Kıyaslama' },
+            { href: '/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir', tag: 'Rehber', title: 'PISA Nedir? 2025 Sonuçları, Türkiye Sıralaması ve Hazırlık Rehberi' },
+            { href: '/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur', tag: 'Rehber', title: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

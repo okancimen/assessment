@@ -3399,6 +3399,177 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'understanding-child-strengths-weaknesses-high-school': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        The move from primary to secondary school is one of the most consequential transitions in a child&apos;s academic life — and most families navigate it armed only with school grades and a teacher&apos;s written comment. Both are useful. Neither tells you what you actually need to know. School grades measure performance relative to classmates in a particular school, in a particular year, on a particular syllabus. They are class-relative signals, not cognitive maps. A child receiving B grades at a high-attaining school may be performing at the same absolute level as a child receiving As at a lower-attaining school nearby. A child with a reading difficulty who has learned to compensate through effort may mask a significant working memory weakness that will become a serious obstacle in Year 9. A child who finds primary school maths easy may have a striking spatial reasoning ability that will determine their success in GCSE Physics, Resistant Materials, or A-level Geography — and nobody has thought to look for it yet. The window before secondary school is the optimal moment to find out what is actually there.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why the Transition to Secondary School Is a Critical Juncture</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The research on the Year 6 to Year 7 transition is sobering reading for anyone who believes that schools automatically catch struggling students early. A well-documented finding in educational psychology — sometimes called the &ldquo;Year 7 dip&rdquo; — shows that student attainment, engagement, and wellbeing frequently decline in the first year of secondary school, even for children who were thriving in primary. The causes are structural: a move from one teacher who knows a child deeply to six or seven subject teachers who see them for 50 minutes a week; a significant increase in the volume and complexity of written work; a social environment that is simultaneously larger and less supervised.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          More troubling than the immediate dip is what happens in Years 7 to 9. This is the period during which the research identifies the most dramatic widening of achievement gaps. Children who arrive at Year 7 with unidentified weaknesses — in working memory, in verbal reasoning, in numerical processing — do not simply plateau. They fall progressively further behind as the curriculum demands escalate. This is the mechanism behind what developmental psychologists call the Matthew effect (after the Gospel verse: &ldquo;to him who has, more will be given&rdquo;): early academic advantages compound over time, and early disadvantages compound too. A child who arrives at secondary school with strong verbal reasoning will find the increasing text density of GCSE humanities comfortable. A child with weak verbal reasoning will find the same texts progressively more demanding with each year — and without targeted support, the gap widens annually rather than narrowing.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The Matthew effect operates in numeracy too. Stanovich&apos;s foundational work on reading and the subsequent extension to mathematical reasoning shows consistently that children who fall behind in foundational number sense in primary school face compounding difficulties in secondary mathematics — not because they lack mathematical ability, but because the curriculum builds on assumed foundations that were never securely established. Remediation is possible, but it becomes progressively more difficult, more expensive, and more psychologically costly as the child ages.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Early identification is not pessimism. It is the most efficient form of support available. The evidence base for early intervention — summarised exhaustively in John Hattie&apos;s <em>Visible Learning</em> synthesis of over 1,400 meta-analyses — consistently shows effect sizes for early, targeted intervention that dwarf those for reactive catch-up support applied after failure has become established. Knowing where a child stands cognitively before secondary school provides the roadmap that reactive support can never offer.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What &ldquo;Natural Abilities&rdquo; Actually Means — and What It Doesn&apos;t</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Before parents can use cognitive profiling constructively, it helps to be precise about what is being measured. The term &ldquo;natural ability&rdquo; is widely used and widely misunderstood. Two influential frameworks clarify what standardised assessments actually measure — and what they do not.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The Cattell-Horn-Carroll (CHC) model of cognitive abilities is the most empirically supported framework in modern psychometrics and underpins most major cognitive assessments used in educational settings, including the WISC-V, the CAT4, and the CogAT. The CHC model distinguishes between <strong>fluid intelligence</strong> (Gf) — the ability to reason with novel problems, perceive relationships, and draw inferences without reliance on prior learning — and <strong>crystallised intelligence</strong> (Gc) — the accumulated knowledge and skills built through experience and instruction over a lifetime. Fluid intelligence is more stable across contexts and less dependent on educational background; crystallised intelligence is directly shaped by educational experience. When a child scores well on a matrix reasoning task (a classic measure of fluid intelligence), they are demonstrating an underlying reasoning capacity that exists somewhat independently of what they have been taught. When the same child scores well on a vocabulary test (a classic measure of crystallised intelligence), they are demonstrating the accumulated product of years of reading and conversation.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Howard Gardner&apos;s theory of multiple intelligences — linguistic, logical-mathematical, spatial, musical, bodily-kinaesthetic, interpersonal, intrapersonal, naturalistic — is widely known and genuinely useful as a framing for the richness of human capability. It is important to note, however, that Gardner&apos;s intelligences are not what standardised cognitive assessments measure. The assessments used in educational planning measure a more specific set of cognitive capacities — verbal reasoning, numerical reasoning, working memory, spatial processing — that have been shown through decades of longitudinal research to predict academic outcomes reliably. Gardner&apos;s framework is philosophically broader; the psychometric framework is narrower but more empirically connected to school readiness and subject performance.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The relationship between aptitude and effort also requires careful framing — particularly for parents familiar with Carol Dweck&apos;s influential growth mindset research. Dweck&apos;s work demonstrates convincingly that children who believe their abilities are fixed are less likely to persist after setbacks, less likely to seek challenge, and ultimately achieve less than their potential. This is real and important. But growth mindset does not mean that all children start from the same cognitive profile, or that effort alone closes any gap. Aptitude differences are real; they simply do not determine outcomes in the deterministic way that a fixed-mindset framing implies. A cognitive profile identifies where a child stands today and where effort and targeted instruction are most likely to produce the greatest returns. Used correctly, it is the opposite of a fixed-mindset document — it is a growth roadmap.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Four Cognitive Domains That Predict Secondary School Readiness</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Within the CHC framework, four domains are most consistently predictive of secondary school performance across subjects and assessment types. Understanding what each domain measures — and what a strength or weakness in each looks like in practice — gives parents and teachers a concrete lens through which to read a child&apos;s academic behaviour.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Verbal reasoning</strong> — the ability to understand word meanings, make analogical connections between concepts, draw inferences from written language, and deploy vocabulary with precision. Verbal reasoning is assessed through tasks including word analogies (&ldquo;hot is to cold as fast is to…?&rdquo;), synonym and antonym identification, verbal classification, and reading inference tasks. It is the strongest single predictor of performance in humanities subjects — English Literature, History, Geography, and Religious Studies — because these subjects are primarily organised around dense written text. A child with strong verbal reasoning can navigate complex prose, identify implicit argument structures, and synthesise information across multiple sources with relative ease. A child with weak verbal reasoning, even if highly able in other domains, will find the text demands of GCSE and A-level humanities progressively more effortful and may underperform relative to their overall intelligence.
+          </Bullet>
+          <Bullet>
+            <strong>Numerical and quantitative reasoning</strong> — the ability to identify numerical relationships, process quantitative information, reason about number patterns, and apply mathematical logic to novel problems. This is distinct from arithmetic knowledge (knowing multiplication tables) or algebraic procedure (knowing how to factorise a quadratic). Quantitative reasoning is about the underlying capacity to think with numbers — to see structure in a number sequence, to understand the logic of a proportion problem without being taught the specific formula, to estimate whether an answer is plausible. It predicts performance not only in Mathematics but in Physics, Chemistry, Economics, and Computer Science — any discipline where quantitative modelling of real-world phenomena is central. A child with strong quantitative reasoning and weak procedural arithmetic is not poor at maths; they need procedural teaching but have a strong foundation to build on. A child with strong procedural recall but weak quantitative reasoning may perform well in controlled test conditions but struggle with genuinely novel problem types at GCSE and A-level.
+          </Bullet>
+          <Bullet>
+            <strong>Working memory</strong> — the cognitive capacity to hold information in mind while simultaneously processing other information. Working memory is the hidden bottleneck in many academic difficulties that parents and teachers attribute to other causes. A child who loses their place when reading aloud, forgets the beginning of a sentence before reaching the end, cannot follow multi-step instructions reliably, or makes persistent arithmetic errors despite understanding the method is often demonstrating working memory strain rather than subject-specific weakness. Working memory capacity places a ceiling on the complexity of information a child can process simultaneously — which means it affects performance across all subjects, but becomes particularly visible in tasks that require multiple steps: essay planning, long multiplication, following experimental protocols in science, or listening to a teacher explain a procedure while simultaneously attempting to note it down. Working memory is somewhat trainable, but crucially, it can also be scaffolded: a child with a weak working memory who is taught externalisation strategies (writing down sub-goals, breaking tasks into explicit steps, using check-lists) can perform well above what their raw capacity would suggest.
+          </Bullet>
+          <Bullet>
+            <strong>Non-verbal and spatial reasoning</strong> — the ability to perceive, manipulate, and reason about visual and spatial information: patterns, matrices, rotated shapes, diagrams, and spatial relationships between objects. Non-verbal reasoning is the domain most likely to reveal ability that language-based assessments conceal. Children who are bilingual, who have reading difficulties, or who learned English as a second language may score lower on verbal reasoning tasks not because they lack intellectual capacity but because those tasks are mediated by language. Non-verbal reasoning tasks — figure matrices, pattern completion, shape rotation — assess fluid intelligence in a format that is less dependent on verbal facility. A child who performs far better on non-verbal tasks than verbal tasks may be a bright child whose ability is masked by a language-based difficulty. The reverse pattern — strong verbal, weak spatial — may suggest less aptitude for the visual-spatial demands of Geography, Design Technology, or Physics practical work, while pointing clearly toward verbal-analytical subjects.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Observable Signs at Home and School</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Formal cognitive assessment is the most reliable way to build a cognitive profile — but parents and observant teachers often notice meaningful signals long before any assessment takes place. These signs are not diagnoses; they are indicators that warrant investigation. Their value is precisely that they prompt the right questions, rather than closing them.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Strong verbal reasoning often shows itself at the dinner table. Children with high verbal ability tend to ask questions that assume conceptual connection (&ldquo;is that why…?&rdquo;, &ldquo;so does that mean…?&rdquo;), use vocabulary that is noticeably advanced for their age, follow narratively complex stories with ease, and enjoy word games, puns, and plays on language. They tend to be the children who can read a dense non-fiction text and identify the author&apos;s argument without being told to look for one.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Working memory weakness is most visible during homework. The child who needs a question repeated three times before starting, loses track of what they were doing when interrupted by a thought, copies a phone number down wrong despite concentrating, or regularly submits work that is missing steps they understood when spoken to — these are classic working memory signatures. Teachers sometimes describe these children as &ldquo;bright but careless&rdquo; or &ldquo;doesn&apos;t listen&rdquo;, when the underlying issue is the cognitive overhead required to hold information while processing it.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Spatial reasoning strength often shows itself in construction and drawing: the child who builds elaborate structures from minimal instruction, who can mentally rotate objects while explaining a route, who produces unusually detailed and accurate maps or diagrams. Spatial weakness may appear as persistent difficulty reading maps, organising a page of written work, or understanding geometric relationships — even for children who are otherwise capable.
+        </p>
+        <Callout color="indigo">
+          These observable patterns are signals to investigate, not verdicts. A child who struggles with multi-step instructions may have a working memory weakness, attention difficulties, anxiety about performance, or simply an instruction style that does not suit them. The purpose of noticing is to ask better questions, not to arrive at premature conclusions.
+        </Callout>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">See what a cognitive profile looks like in practice</p>
+            <p className="text-sm text-gray-600">A sample assessment report shows exactly how verbal, numerical, working memory, and spatial scores are broken down — and what they mean for your child&apos;s preparation.</p>
+          </div>
+          <Link href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            See a sample report
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why School Grades Are an Unreliable Map</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The fundamental limitation of school grades is that they are class-relative, not norm-referenced. A B grade in English tells you that this child performed somewhat better than average for their class in this school this year. It does not tell you where that performance sits in the distribution of children nationally, nor does it reveal anything about the cognitive processes that produced that performance. Two children can both receive B grades through completely different routes: one through outstanding verbal reasoning deployed efficiently in a school that sets high expectations; another through extraordinary effort compensating for below-average verbal reasoning at a school where expectations are modest. The grade is the same; the cognitive reality is entirely different.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This is the substance of what educational psychologist Herbert Marsh termed the &ldquo;big fish, small pond effect&rdquo; — the empirically well-documented finding that students at high-attaining schools tend to develop lower academic self-concept than equally able students at lower-attaining schools, because they compare themselves primarily to their immediate classmates rather than to the broader population. A child who is in the top quarter nationally but the bottom half of their high-attaining school peer group may genuinely believe they are &ldquo;not good at&rdquo; a subject — a belief with real consequences for subject choices, effort investment, and eventual outcomes. The inverse holds in lower-attaining environments: children who are doing well relative to their immediate peers may not be receiving the challenge or stretch they need to develop their full capacity.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Special educational needs underidentification is a related and serious problem. Research on SEN referral rates consistently shows that children in high-performing schools are significantly less likely to be referred for assessment and support than children in lower-performing schools — not because fewer of them have genuine needs, but because their relative performance within the school does not trigger concern. A child with dyslexia who is working at B-grade level in a high-attaining school may never be referred for an assessment because their teacher, comparing them to classmates, sees an average-performing child rather than a high-ability child operating well below their potential. A norm-referenced cognitive assessment would reveal the discrepancy between ability and attainment that the class-relative grade conceals.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The reverse failure — gifted underperformance in low-expectation environments — is equally real and equally invisible to grade-based assessment. A highly able child in a school with modest academic expectations may receive top grades while working at a level that genuinely stretches children nationally performing at the 60th percentile. Their grades suggest they are thriving; their potential is being left almost entirely unexplored. Moving to a secondary school with substantially higher expectations can then produce a sudden and distressing apparent decline in performance that is, in reality, simply the disappearance of a grading artefact.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Translating a Cognitive Profile Into a Preparation Plan</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A cognitive profile is not valuable as a description — it is valuable as a planning instrument. The translation from profile to preparation plan requires decisions at three levels: subject selection alignment, study technique matching, and when to seek specialist support.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          At the subject selection level, cognitive profile information is most useful when Year 9 option choices approach. A child with exceptional verbal reasoning and average quantitative reasoning is likely to find humanities and languages easier to excel in than mathematics-intensive sciences — not because maths is closed to them, but because differentiated effort investment is rational when subject choices are genuinely elective. Conversely, a child with strong spatial and quantitative reasoning and modest verbal ability may achieve far more in subjects where those strengths are rewarded than in subjects dominated by extended written argument. Presenting this analysis to a child not as limitation but as strategic advantage — &ldquo;here is where your particular profile gives you the clearest path to excellence&rdquo; — is consistent with both the research evidence and sound growth mindset principles.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Study technique matching is perhaps the most immediately actionable output of a cognitive profile. Children with strong verbal reasoning often learn most effectively through concept-mapping, articulating ideas aloud, and writing discursive notes that connect ideas in prose. Children with strong spatial reasoning often benefit more from diagrammatic notes, timelines, flowcharts, and visual representations of relationships. Children with working memory weaknesses benefit enormously from externalisation strategies: writing down every step before beginning a problem, using checklists for multi-step tasks, breaking homework into explicitly labelled sub-goals, and creating a written record of partial work so that no step has to be held in memory. These are not remedial strategies — they are professional tools that many expert learners use routinely; the difference is that for children with low working memory, they are essential rather than merely helpful.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          When introducing a cognitive profile to Year 7 form tutors or subject teachers, the most useful framing is specific and action-oriented: not &ldquo;my child has a working memory weakness&rdquo; but &ldquo;my child benefits from having multi-step instructions written down rather than given verbally, and from having tasks broken into explicit sub-goals.&rdquo; Teachers who understand the practical implications of a cognitive profile — rather than its technical label — are significantly better placed to make the small adjustments in their classroom practice that can have substantial effects on a child&apos;s experience and performance.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Specialist support — from an educational psychologist, a specialist learning support teacher, or a subject tutor with experience in learning differences — is warranted when a profile reveals a significant discrepancy between overall ability and performance in a specific domain, or when a weakness in a foundational area (particularly working memory or phonological processing) is likely to create compound difficulties across multiple subjects. The earlier specialist input is engaged, the more economically it can be applied.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What the Research Says About Early Identification</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The evidence base for early cognitive identification and its effects on academic outcomes is extensive and consistent. John Hattie&apos;s <em>Visible Learning</em> synthesis — the largest meta-analysis of educational interventions ever conducted — assigns an effect size of 0.77 to interventions based on prior knowledge assessment, placing it among the highest-impact practices in the entire evidence base. By comparison, class size reduction has an effect size of 0.21, and the use of homework at secondary level has an effect size of 0.29. Knowing where a child stands and intervening on the basis of that knowledge is among the most powerful things an educator or parent can do.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Longitudinal studies on cognitive assessment at ages 10 to 12 consistently predict GCSE outcomes with remarkable accuracy. Research using the Cognitive Abilities Test (CAT4) — administered to over a million UK students each year — shows that a student&apos;s CAT4 profile taken at the beginning of Year 7 predicts their GCSE performance at 16 with correlation coefficients typically in the range of 0.6 to 0.7 across domains. This is a very strong predictive relationship in social science terms — stronger than socioeconomic background, stronger than primary school reports, and stronger than teacher assessments at the time of secondary school entry. The implication is not that Year 7 outcomes are fixed, but that the cognitive patterns identified at 11 to 12 are real and consequential, and that intervening on the basis of that information produces markedly better outcomes than waiting for difficulty to manifest in GCSE grades.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA data provides a complementary lens on the long-run consequences of early academic confidence. PISA 2022 and 2025 both show strong positive relationships between academic self-concept at 15 and educational attainment at 18 and beyond — relationships that persist after controlling for actual ability levels. In other words, children who believe they are good at a subject, regardless of whether their objective ability is high or low, systematically outperform children who believe they are not good at it, even at equivalent ability levels. This is the mechanism through which the big fish, small pond effect has long-run consequences: a child who arrives at secondary school with a low academic self-concept — because they felt inadequate relative to their primary school peers, or because they received grades that concealed their underlying ability — is at systematic risk of underperformance relative to their potential. A cognitive profile that reveals genuine strengths, communicated constructively to a child and their family, directly addresses this risk.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The metacognitive dimension is also supported by strong evidence. Research on metacognition — the capacity to monitor and regulate one&apos;s own learning — consistently shows it to be among the most powerful predictors of academic progress, with Hattie assigning it an effect size of 0.69. Children who understand their own cognitive strengths and weaknesses are better positioned to deploy metacognitive strategies: choosing the study technique that suits their profile, recognising when a task is making unusual demands on a specific capacity, and seeking help on the right things at the right time. A cognitive profile, explained thoughtfully to a child of secondary school age, is one of the most effective foundations for metacognitive development available.
+        </p>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Find out where your child stands — free</p>
+            <p className="text-sm text-gray-600">Eduentry&apos;s adaptive academic assessment benchmarks your child&apos;s verbal, numerical, and reasoning ability against international peers. Takes 20–30 minutes. No registration required.</p>
+          </div>
+          <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Start free assessment
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related guides</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score? Mean 100, Percentiles and SAS Bands Explained' },
+            { href: '/blog/pisa-2025-global-education-crisis-what-parents-need-to-know', tag: 'Analysis', title: 'PISA 2025 Results: What the Lowest-Ever Scores Mean for Your Child' },
+            { href: '/blog/how-to-differentiate-yourself-at-15', tag: 'Guide', title: 'Grades Are No Longer Enough: How Students Actually Differentiate Themselves at 15' },
+          ].map(link => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
   'pisa-2025-work-experience-student-readiness': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">

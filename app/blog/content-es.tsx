@@ -2381,6 +2381,176 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'understanding-child-strengths-weaknesses-high-school': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        La transición de la ESO al bachillerato es uno de los momentos más determinantes en la trayectoria académica de un joven. A los 15 o 16 años, el alumno debe elegir una modalidad —ciencias, humanidades y ciencias sociales, o artes— que orientará sus estudios superiores y, en gran medida, su futuro profesional. Y sin embargo, la inmensa mayoría de las familias afrontan esa decisión armadas únicamente con boletines de notas: documentos que reflejan el rendimiento relativo dentro de una clase concreta, en un centro concreto, con los compañeros y los docentes concretos de ese año. Las notas son útiles, pero revelan menos de lo que prometen. Ocultan sistemáticamente el perfil cognitivo subyacente del alumno —sus aptitudes naturales, sus genuinas fortalezas y las áreas donde el esfuerzo produce rendimientos decrecientes— que es exactamente la información que se necesita para tomar una buena decisión de modalidad y construir una estrategia de preparación efectiva para el bachillerato y, más adelante, para la EvAU/EBAU.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Por qué la transición al bachillerato es un momento decisivo?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La investigación educativa ha documentado de forma consistente que las brechas de rendimiento entre alumnos no se distribuyen de manera uniforme a lo largo de la escolarización: tienden a ampliarse en los puntos de transición. El mecanismo subyacente es lo que los investigadores denominan el <em>efecto Mateo</em>, tomado de la parábola bíblica: quienes ya tienen más recursos cognitivos, motivacionales y sociales los aprovechan mejor en los momentos de mayor exigencia, mientras que quienes llegan con déficits previos no identificados los ven agravarse bajo la presión adicional. El bachillerato es, por diseño, más exigente que la ESO: mayor carga conceptual, mayor autonomía esperada, menor andamiaje por parte del docente. Es el entorno ideal para que un perfil cognitivo no diagnosticado se convierta en un obstáculo.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En el contexto español, la elección de modalidad añade una dimensión estratégica que no existe en sistemas con currículos más flexibles. Escoger ciencias supone comprometerse con itinerarios de matemáticas, física y química que requieren un razonamiento numérico y espacial sólido; escoger humanidades y ciencias sociales implica una carga alta de razonamiento verbal, comprensión lectora compleja y argumentación escrita. Elegir mal —no por falta de interés, sino por desconocimiento del propio perfil cognitivo— puede significar dos años de bachillerato en constante dificultad, una EvAU con materias para las que el alumno no tiene aptitud natural, y una elección universitaria construida sobre cimientos incorrectos.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La identificación temprana del perfil cognitivo —antes de que se produzcan los fallos, no como respuesta a ellos— es la intervención más eficiente disponible. Las familias latinoamericanas reconocerán una dinámica análoga en el paso de la secundaria a la preparatoria o bachillerato en sistemas como el mexicano: el mismo momento de ramificación curricular, la misma ausencia de datos cognitivos, y las mismas consecuencias de una orientación basada en percepciones en lugar de en evidencias.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">El coste de la intervención reactiva:</strong> Cuando las dificultades se identifican en segundo de bachillerato, el tiempo de corrección antes de la EvAU/EBAU es mínimo. La identificación en 3.º o 4.º de ESO deja entre uno y dos años para trabajar las áreas débiles, ajustar técnicas de estudio y elegir la modalidad con pleno conocimiento del perfil cognitivo del alumno.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué significa realmente «aptitud natural» — y qué no significa</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El concepto de aptitud cognitiva lleva décadas en el centro de uno de los debates más productivos —y más malinterpretados— de la psicología educativa. Aclarar qué significa y qué no significa es fundamental antes de hablar de perfiles cognitivos, porque los malentendidos en esta área generan decisiones pedagógicas dañinas en ambas direcciones.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El marco teórico más sólido para entender la aptitud cognitiva es el modelo de Cattell-Horn-Carroll (CHC), actualmente el consenso dominante en psicología cognitiva y la base de los principales instrumentos de evaluación (entre ellos el CogAT y el CAT4). El modelo CHC distingue, en su nivel más general, entre <strong>inteligencia fluida</strong> (<em>Gf</em>) e <strong>inteligencia cristalizada</strong> (<em>Gc</em>). La inteligencia fluida es la capacidad de razonar, resolver problemas nuevos e identificar patrones independientemente del conocimiento previo adquirido. La inteligencia cristalizada es el conjunto acumulado de conocimientos, vocabulario y habilidades aprendidas. Las notas escolares miden fundamentalmente inteligencia cristalizada —lo que el alumno ha aprendido y puede reproducir— con una contribución variable de inteligencia fluida según la materia y el tipo de evaluación. Las evaluaciones cognitivas miden principalmente inteligencia fluida, lo que las hace mucho más independientes del contexto escolar específico.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La teoría de las inteligencias múltiples de Gardner, que identifica distintos tipos de inteligencia —lingüística, lógico-matemática, espacial, musical, corporal-cinestésica, interpersonal, intrapersonal y naturalista—, ofrece un marco complementario útil para entender la variabilidad del perfil cognitivo, aunque su operacionalización en evaluaciones psicométricas rigurosas es más controvertida. Lo que sí captura con fidelidad es la intuición de que un alumno puede ser notablemente capaz en un dominio y mediocre en otro, y que estas diferencias son estables y tienen valor predictivo.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La contribución fundamental de Carol Dweck sobre la <em>mentalidad de crecimiento</em> (<em>growth mindset</em>) no contradice la realidad de las diferencias cognitivas individuales: las contextualiza. Dweck no afirma que todos los alumnos tengan la misma aptitud inicial; afirma que la creencia en la propia capacidad de mejorar produce más esfuerzo, y más esfuerzo produce mejores resultados. Lo que la investigación sobre mentalidad de crecimiento no respalda es la idea de que el esfuerzo compensa completamente las diferencias de aptitud en todos los dominios para todos los alumnos. Un alumno con baja aptitud espacial que trabaja duro en geometría mejorará; pero es improbable que alcance el rendimiento de un alumno con alta aptitud espacial que dedica el mismo esfuerzo. Reconocer esta realidad no es determinismo: es pedagogía honesta.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">La distinción clave:</strong> La aptitud cognitiva no es inmutable, pero tampoco es infinitamente maleable. El perfil cognitivo de un alumno indica dónde el esfuerzo producirá los mayores retornos, no un techo definitivo. La intervención educativa más eficaz trabaja con el perfil cognitivo, no contra él.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Los cuatro dominios cognitivos que predicen el éxito en el bachillerato</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las evaluaciones cognitivas con respaldo empírico sólido identifican cuatro dominios primarios cuyos niveles predicen el rendimiento académico diferencial en el bachillerato mejor que cualquier otro indicador disponible, incluidas las notas de ESO.
+        </p>
+        <ul className="space-y-6 mb-6">
+          <Bullet>
+            <strong>Razonamiento verbal.</strong> La capacidad de comprender, analizar y manipular el lenguaje a nivel abstracto: analogías, inferencias, comprensión de estructuras argumentativas, detección de inconsistencias lógicas en textos. El razonamiento verbal es el predictor más consistente del rendimiento en materias de humanidades —lengua y literatura, historia, filosofía, ciencias sociales— y en cualquier contexto de evaluación que requiera argumentación escrita extendida. En la EvAU, la mayoría de las pruebas de modalidad en humanidades tienen un componente verbal elevado. Un alumno con alta aptitud verbal puede compensar un conocimiento conceptual moderado con una exposición bien estructurada; uno con baja aptitud verbal encontrará sistemáticamente dificultades para comunicar lo que sabe de forma que puntúe bien.
+          </Bullet>
+          <Bullet>
+            <strong>Razonamiento numérico y cuantitativo.</strong> La capacidad de razonar con cantidades, detectar relaciones matemáticas, aplicar operaciones a contextos nuevos y resolver problemas mediante inferencia lógica más que mediante cálculo memorizado. Es el predictor dominante del rendimiento en matemáticas, física, química y economía. Crucialmente, el razonamiento numérico se distingue de la competencia aritmética: un alumno puede calcular con fluidez y tener razonamiento cuantitativo mediocre, y viceversa. Un alumno con alta aptitud cuantitativa pero sin hábito de estudio en matemáticas puede recuperar terreno rápidamente con un trabajo estructurado; uno con baja aptitud cuantitativa que trabaja mucho puede alcanzar un rendimiento aceptable, pero raramente sobresaliente, y el esfuerzo necesario para mantenerlo es mucho mayor.
+          </Bullet>
+          <Bullet>
+            <strong>Memoria de trabajo.</strong> La capacidad de mantener y manipular información en la mente simultáneamente mientras se realizan otras operaciones cognitivas. La memoria de trabajo es transversal a todas las materias: permite seguir un argumento complejo sin perder el hilo, realizar operaciones matemáticas en varios pasos, comprender textos con estructuras sintácticas densas y organizar composiciones escritas. Los alumnos con alta memoria de trabajo suelen destacar en situaciones de evaluación con alta densidad de información o bajo presión temporal. Los alumnos con memoria de trabajo reducida rinden sistemáticamente por debajo de su nivel de comprensión conceptual en situaciones de examen, especialmente cuando el formato no permite verificar información previa. Este perfil es frecuente en alumnos que «saben la materia» pero «se bloquean en los exámenes» —un patrón que merece intervención específica en técnicas de metacognición y gestión de la carga cognitiva.
+          </Bullet>
+          <Bullet>
+            <strong>Razonamiento no verbal y espacial.</strong> La capacidad de manipular mentalmente figuras, detectar patrones visuales, rotar objetos en el espacio y razonar sobre relaciones geométricas sin recurrir al lenguaje. Es el dominio más independiente de la escolarización formal y, por tanto, el que mayor divergencia puede mostrar respecto a las notas escolares. Alta aptitud espacial predice rendimiento en física (especialmente mecánica y óptica), geometría, dibujo técnico, química orgánica y, más adelante, ingeniería, arquitectura, cirugía y disciplinas de diseño. Un alumno con alta aptitud espacial pero bajo rendimiento en otras materias frecuentemente lleva el sello de «vago» o «poco académico» en los boletines; en realidad puede tener un perfil cognitivo con alta especificidad que simplemente no está siendo aprovechado por el currículo estándar.
+          </Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          El valor diagnóstico del perfil cognitivo está precisamente en la combinación de estos cuatro dominios, no en ninguno de ellos aislado. Un alumno con alta aptitud verbal y numérica, pero memoria de trabajo reducida y aptitud espacial moderada, tiene un perfil radicalmente diferente al de un alumno con aptitud espacial sobresaliente, razonamiento cuantitativo alto y aptitud verbal baja, aunque ambos puedan tener notas similares en 4.º de ESO.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Señales observables en casa y en el colegio</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Antes de recurrir a una evaluación formal, los padres y los tutores pueden observar indicadores comportamentales que señalan el perfil cognitivo probable de un alumno. Estas observaciones no sustituyen a la evaluación normativa —son ruidosas, dependen del observador y no producen rangos percentiles— pero orientan la interpretación de los resultados y ayudan a plantear preguntas mejores.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Indicadores de alta aptitud verbal:</strong> El alumno lee por placer; disfruta de los debates y argumenta con estructura espontánea; aprende idiomas con facilidad inusual; recuerda narrativas con detalle pero puede olvidar datos numéricos; escribe con fluidez y sin bloqueo inicial; tiene vocabulario notablemente rico para su edad; capta matices en el humor, la ironía y el sarcasmo antes que sus pares.</Check>
+          <Check><strong>Indicadores de alta aptitud numérica:</strong> Detecta patrones numéricos de forma intuitiva (precios, estadísticas deportivas, secuencias); disfruta de juegos de estrategia y puzzles lógicos; resuelve problemas de matemáticas por vías alternativas sin haberlas aprendido; razona sobre probabilidades y estimaciones con precisión; se orienta bien con datos e infografías.</Check>
+          <Check><strong>Indicadores de baja memoria de trabajo:</strong> Pierde el hilo en explicaciones largas; necesita que se repitan las instrucciones; comete errores en el último paso de procedimientos que domina conceptualmente; tiene dificultad para tomar notas mientras escucha; rinde sustancialmente peor bajo presión temporal que en tareas sin límite de tiempo.</Check>
+          <Check><strong>Indicadores de alta aptitud espacial:</strong> Monta piezas mecánicas o de construcción sin instrucciones; se orienta con mapas mejor que sus pares; dibuja con perspectiva natural; aprecia la geometría más que el álgebra; tiene intuición para la física mecánica («sé cómo va a caer, aunque no sepa calcularlo»).</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          En el contexto español, un patrón especialmente frecuente es el alumno que obtiene notas medias en casi todas las materias pero destaca de forma llamativa en una o dos. Este perfil, que los docentes suelen describir como «irregular» o «inconsistente», frecuentemente corresponde a un alumno con un pico de aptitud cognitiva en un dominio específico que no está recibiendo suficiente desafío en esa área —y que está invirtiendo esfuerzo desproporcionado en mantener el nivel en las materias donde su aptitud natural es más baja.
+        </p>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Descubre cómo es un perfil cognitivo en la práctica</p>
+            <p className="text-sm text-gray-600">Un ejemplo de informe de evaluación muestra exactamente cómo se desglosan las puntuaciones verbales, numéricas, de memoria de trabajo y espaciales — y qué significan para la preparación de tu hijo.</p>
+          </div>
+          <Link href="https://eduentry.com/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Ver un informe de ejemplo
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Por qué las notas son un mapa insuficiente</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El problema fundamental de las notas escolares como indicador de aptitud cognitiva no es que sean incorrectas —en su propio términos, reflejan razonablemente bien el rendimiento académico dentro del grupo clase— sino que son <em>relativas</em> donde la decisión requiere una medida <em>normativa</em>. Una nota de notable en matemáticas en un instituto con bajo rendimiento medio puede corresponder a un percentil 60 en una evaluación estandarizada nacional; en un instituto de alto rendimiento, puede equivaler al percentil 80. La misma nota numérica no indica la misma posición en la distribución real de aptitud.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Este fenómeno tiene nombre en la literatura psicológica: el <em>efecto big fish little pond</em> (pez grande en estanque pequeño), descrito por Herbert Marsh. Los alumnos con alta aptitud en entornos académicamente poco exigentes tienden a sobrevalorar su posición absoluta basándose en su comparación local. Cuando se encuentran en un entorno de mayor exigencia —como el bachillerato de ciencias en un centro con alta demanda, o las pruebas de la EvAU— la discrepancia entre su autoconcepto académico y su rendimiento real puede ser desorientadora. La dirección opuesta también existe: alumnos capaces en entornos muy exigentes que subestiman su nivel absoluto porque se comparan continuamente con sus pares de alto rendimiento.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las notas también son un mapa particularmente pobre para la identificación de necesidades educativas especiales (NEE) en el extremo superior. Los alumnos con altas capacidades no identificadas —cuyo perfil cognitivo está significativamente por encima de la media pero que no han sido evaluados formalmente— pueden pasar toda la ESO con notas de suficiente o bien simplemente porque el currículo no les exige lo suficiente para que su aptitud real sea visible. Según datos del Ministerio de Educación español, la tasa de identificación formal de altas capacidades en España se sitúa muy por debajo de la estimada estadísticamente, lo que sugiere que una parte significativa de este alumnado llega al bachillerato sin el andamiaje pedagógico adecuado a su perfil.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Los datos PISA añaden una dimensión internacional a este problema. España obtuvo en PISA 2022 una puntuación media de 474 en matemáticas, ligeramente por encima de la media OCDE de 472, pero con una dispersión interna significativa: el percentil 90 español se sitúa notablemente por debajo del percentil 90 de los sistemas de mayor rendimiento. Esto significa que un alumno en la cima de su clase en un centro español medio puede estar en una posición considerablemente más baja en la distribución global de lo que sus notas sugerirían.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Traducir el perfil cognitivo en un plan de preparación</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El valor de conocer el perfil cognitivo de un alumno no reside en la etiqueta diagnóstica sino en las decisiones concretas que hace posibles. Las tres más importantes en el período previo al bachillerato son la elección de modalidad, la adaptación de técnicas de estudio y la decisión de cuándo buscar apoyo especializado.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Elección de modalidad.</strong> Un perfil con alta aptitud verbal y cuantitativa, memoria de trabajo sólida y aptitud espacial moderada es compatible tanto con ciencias como con humanidades —la elección dependerá más de la motivación intrínseca y los intereses universitarios. Un perfil con aptitud cuantitativa y espacial muy alta pero razonamiento verbal más bajo apunta claramente hacia ciencias y, dentro de ellas, hacia las asignaturas con mayor componente analítico-formal. Un perfil inverso —alta aptitud verbal, baja cuantitativa— apunta hacia humanidades y ciencias sociales, donde el peso de la matemática es menor. Forzar una elección contraria al perfil cognitivo es posible, pero el coste en esfuerzo y en bienestar del alumno durante los dos años de bachillerato es significativamente mayor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Adaptación de técnicas de estudio.</strong> El perfil cognitivo informa directamente qué estrategias de aprendizaje serán más eficaces para cada alumno. Los alumnos con alta memoria de trabajo pueden tolerar métodos de estudio que exigen mantener múltiples elementos activos simultáneamente —resolución de problemas complejos, toma de notas en tiempo real—; los alumnos con memoria de trabajo reducida se benefician de externalizaciones sistemáticas: esquemas escritos, mapas conceptuales, tarjetas de repaso. La metacognición —la capacidad de un alumno para monitorizar y regular su propio proceso de aprendizaje— está estrechamente ligada a la conciencia del propio perfil cognitivo.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <strong>Cuándo buscar apoyo especializado.</strong> No toda dificultad académica requiere apoyo externo, pero algunas señales indican que la evaluación formal y, posiblemente, la intervención especializada son necesarias: discrepancias muy marcadas entre dominios cognitivos (por ejemplo, aptitud verbal muy alta con aptitud cuantitativa muy baja), patrones que sugieren dislexia, discalculia u otras dificultades específicas de aprendizaje, o perfiles de altas capacidades que no están siendo estimulados adecuadamente. En todos estos casos, contar con datos de una evaluación normativa rigurosa antes de la conversación con el equipo orientador del centro es enormemente útil.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lo que dice la investigación sobre la identificación temprana</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La evidencia sobre el valor de la identificación temprana del perfil cognitivo es robusta y consistente en distintos contextos educativos y culturales. John Hattie, en su síntesis de más de 1.400 metaanálisis sobre factores de rendimiento educativo (<em>Visible Learning</em>), identifica la retroalimentación basada en datos precisos sobre el propio nivel como uno de los factores de mayor tamaño del efecto (d = 0,73) en el rendimiento académico —muy por encima de la mayoría de intervenciones pedagógicas habituales. La condición es que la retroalimentación sea específica, normativa y accionable; un boletín de notas relativas cumple estas condiciones solo de forma parcial.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los estudios longitudinales sobre el valor predictivo de las evaluaciones cognitivas en la adolescencia temprana muestran que las puntuaciones en razonamiento verbal, cuantitativo y espacial obtenidas a los 13 años predicen con significativa precisión el rendimiento académico a los 18, la elección de especialización universitaria y, en menor medida, los resultados profesionales a largo plazo. Un estudio clásico del SMPY (Study of Mathematically Precocious Youth) de la Johns Hopkins University, con seguimiento de décadas, encontró que las diferencias en aptitud cuantitativa medidas en la adolescencia temprana predicen diferencias en publicaciones científicas, patentes y nivel salarial cuatro décadas después, con independencia del nivel educativo alcanzado.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Los datos PISA también son relevantes en este contexto. Los países que han implementado sistemas de orientación vocacional y académica basados en evaluaciones cognitivas normativas en lugar de en notas relativas —como Finlandia, donde la orientación formal comienza en la educación secundaria con herramientas estandarizadas— presentan sistemáticamente menores tasas de abandono escolar y mayor satisfacción con la elección de especialización universitaria en comparación con países donde la orientación depende exclusivamente del boletín de notas. La elección de modalidad de bachillerato informada por datos cognitivos, no solo por percepciones de rendimiento relativo, reduce el desajuste entre aptitud, motivación y exigencia curricular —el desajuste que está en la raíz de la mayoría de los abandonos y cambios de carrera en los primeros años universitarios.
+        </p>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Descubre el nivel real de tu hijo — gratis</p>
+            <p className="text-sm text-gray-600">La evaluación adaptativa de Eduentry compara las capacidades verbales, numéricas y de razonamiento de tu hijo con las de sus pares internacionales. 20–30 minutos. Sin registro.</p>
+          </div>
+          <Link href="https://eduentry.com/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Iniciar evaluación gratuita
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guías relacionadas</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          <Link href="/es/blog/como-se-compara-tu-hijo-a-nivel-mundial" className="block rounded-xl border border-gray-200 p-4 hover:border-indigo-300 hover:shadow-sm transition-all">
+            <p className="font-semibold text-gray-900 text-sm mb-1">¿Cómo se compara tu hijo a nivel mundial?</p>
+            <p className="text-xs text-gray-500">Guía para padres sobre benchmarks académicos internacionales</p>
+          </Link>
+          <Link href="/es/blog/que-es-una-puntuacion-estandarizada" className="block rounded-xl border border-gray-200 p-4 hover:border-indigo-300 hover:shadow-sm transition-all">
+            <p className="font-semibold text-gray-900 text-sm mb-1">¿Qué es una puntuación estandarizada?</p>
+            <p className="text-xs text-gray-500">Guía para padres sobre evaluación educativa</p>
+          </Link>
+          <Link href="/es/blog/pisa-2025-crisis-educativa-mundial-que-deben-saber-los-padres" className="block rounded-xl border border-gray-200 p-4 hover:border-indigo-300 hover:shadow-sm transition-all">
+            <p className="font-semibold text-gray-900 text-sm mb-1">PISA 2025: Crisis Educativa Mundial</p>
+            <p className="text-xs text-gray-500">Lo que todo padre necesita saber sobre los últimos resultados</p>
+          </Link>
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {
