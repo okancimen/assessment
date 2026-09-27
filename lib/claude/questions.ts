@@ -21,9 +21,9 @@ function getDifficultyDescriptor(level: number): string {
 }
 
 function shuffleOptions(options: QuestionOption[], correctId: string): { options: QuestionOption[]; correct_answer: string } {
+  if (!correctId) throw new Error('correct_answer missing from Claude response')
   const correctOpt = options.find((o) => o.id === correctId)
   if (!correctOpt) {
-    // correctId not found — return as-is with sequential IDs
     const ids = ['A', 'B', 'C', 'D']
     return { options: options.map((o, i) => ({ id: ids[i], text: o.text })), correct_answer: correctId }
   }
@@ -204,6 +204,8 @@ Respond with ONLY valid JSON, no markdown fences, no extra text:
   if (uniqueTexts.size < parsed.options.length) {
     throw new Error('Duplicate option texts detected')
   }
+
+  if (!parsed.correct_answer) throw new Error('correct_answer null in Claude response')
 
   // Shuffle options so correct answer lands in a random position
   const { options, correct_answer } = shuffleOptions(parsed.options as QuestionOption[], parsed.correct_answer)

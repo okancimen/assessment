@@ -141,6 +141,8 @@ Respond with ONLY valid JSON, no markdown fences:
 
   const parsed = JSON.parse(jsonrepair(match[0]))
 
+  if (!parsed.correct_answer) throw new Error('correct_answer null in interest question response')
+
   const fixOp = (s: string) => s
     .replace(/&divide;/gi, '÷').replace(/&times;/gi, '×')
     .replace(/&minus;/gi, '−').replace(/&le;/gi, '≤').replace(/&ge;/gi, '≥')
@@ -256,6 +258,8 @@ Respond with ONLY valid JSON, no markdown fences, no extra text:
   if (!match) throw new Error('Failed to generate question after retries')
 
   const parsed = JSON.parse(jsonrepair(match[0]))
+
+  if (!parsed.correct_answer) throw new Error('correct_answer null in Claude response')
 
   // Normalise math operator encodings
   const fixOperators = (s: string) => s
