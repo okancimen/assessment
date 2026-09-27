@@ -42,7 +42,7 @@ export default function FRRegisterPage() {
 
     trackEvent('sign_up', { method: 'email' })
     void fetch('/api/user/update-location', { method: 'POST' })
-    router.push('/dashboard')
+    router.push('/fr/dashboard')
     router.refresh()
   }
 

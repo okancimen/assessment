@@ -31,7 +31,7 @@ function LoginForm() {
     }
 
     trackEvent('login', { method: 'email' })
-    const redirectTo = searchParams.get('redirect') ?? '/dashboard'
+    const redirectTo = searchParams.get('redirect') ?? '/es/dashboard'
     router.push(redirectTo)
     router.refresh()
   }
