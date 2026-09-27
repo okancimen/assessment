@@ -2017,6 +2017,273 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  '65-jobs-ai-cannot-automate': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        En septembre 2026, alors que le Forum Économique Mondial publiait son rapport annuel sur l&apos;avenir de l&apos;emploi, une statistique a dominé tous les débats dans les médias, les salles de classe et les dîners de famille : 40 % des emplois mondiaux seront perturbés par l&apos;intelligence artificielle d&apos;ici 2030. Pour les parents d&apos;élèves en seconde, en première ou en terminale, ce chiffre résonne avec une intensité particulière. L&apos;orientation de votre enfant, les filières que vous envisagez ensemble, les investissements éducatifs que vous faites — tout cela se fait dans l&apos;ombre d&apos;une transformation économique dont personne ne connaît encore précisément les contours.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Mais voici ce que les gros titres ne disent pas, et que les données du Bureau of Labor Statistics américain révèlent avec une clarté remarquable : parmi les centaines de métiers analysés, 65 d&apos;entre eux affichent une probabilité d&apos;automatisation de exactement 0,0 %. Zéro. Ces métiers ne sont pas simplement &laquo;&nbsp;difficiles à automatiser&nbsp;&raquo; — ils sont, selon les chercheurs et les données disponibles, structurellement imperméables à l&apos;automatisation par l&apos;IA dans un horizon prévisible. Ils ne représentent pas des niches marginales ou des métiers en déclin. Ils couvrent les secteurs les plus essentiels et les plus en croissance de nos économies : la santé, l&apos;éducation, le design, l&apos;ingénierie, la sécurité publique.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Cet article vous présente ces 65 métiers, explique pourquoi l&apos;IA ne peut fondamentalement pas les remplacer, et — surtout — ce que cela signifie concrètement pour les choix éducatifs de votre enfant dans le système français : les matières à valoriser au lycée, les filières à envisager via Parcoursup, et les compétences transversales à développer dès maintenant pour positionner votre enfant sur la trajectoire de ces professions d&apos;avenir.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi l&apos;IA ne peut pas remplacer ces 65 métiers</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Avant de parcourir la liste, il est utile de comprendre la mécanique sous-jacente. L&apos;intelligence artificielle actuelle — y compris les systèmes les plus sophistiqués — repose sur la reconnaissance de patterns dans des données historiques. Elle excelle dans les tâches répétitives, codifiables, et celles qui peuvent être décomposées en séquences d&apos;instructions claires. Elle échoue structurellement là où ces conditions ne sont pas réunies.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les chercheurs qui ont calculé les probabilités d&apos;automatisation métier par métier identifient quatre caractéristiques qui, combinées, rendent un emploi imperméable à l&apos;automatisation. Ces quatre caractéristiques se retrouvent dans les 65 métiers que nous allons examiner :
+        </p>
+        <ul className="space-y-4 mb-6">
+          <li className="flex gap-3">
+            <span className="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 font-bold text-sm flex items-center justify-center">1</span>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">L&apos;intelligence émotionnelle</p>
+              <p className="text-gray-700 text-sm leading-relaxed">La capacité à percevoir, comprendre et répondre aux états émotionnels d&apos;un autre être humain — avec empathie, nuance et présence authentique — reste hors de portée des systèmes IA actuels et prévisibles. Un chirurgien qui rassure un patient avant une opération, un conseiller d&apos;orientation qui détecte l&apos;anxiété derrière une question anodine, un kinésithérapeute qui ajuste son approche au vécu de son patient : ces interactions exigent une humanité que l&apos;IA ne peut pas simuler efficacement.</p>
+            </div>
+          </li>
+          <li className="flex gap-3">
+            <span className="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 font-bold text-sm flex items-center justify-center">2</span>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">La lecture de la situation</p>
+              <p className="text-gray-700 text-sm leading-relaxed">Le jugement contextuel complexe — savoir quoi faire quand la situation est ambiguë, les enjeux sont élevés et l&apos;information est incomplète — est une capacité proprement humaine. Un pompier qui évalue la structure d&apos;un bâtiment en feu, un médecin urgentiste qui priorise les patients lors d&apos;un afflux massif, un directeur d&apos;établissement qui gère une crise : ces décisions ne peuvent pas être algorithmisées.</p>
+            </div>
+          </li>
+          <li className="flex gap-3">
+            <span className="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 font-bold text-sm flex items-center justify-center">3</span>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">Le travail créatif ancré dans l&apos;humain</p>
+              <p className="text-gray-700 text-sm leading-relaxed">La créativité qui transgresse les patterns existants — qui crée quelque chose de fondamentalement nouveau en réponse à des besoins humains uniques — reste une prérogative humaine. Un architecte qui conçoit un espace pour une famille avec des besoins spécifiques, un chorégraphe qui crée un langage corporel pour explorer une thématique sociale, un scénographe qui transforme un espace en expérience immersive : ces créations ne peuvent pas être générées par des systèmes qui interpolent des données existantes.</p>
+            </div>
+          </li>
+          <li className="flex gap-3">
+            <span className="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 font-bold text-sm flex items-center justify-center">4</span>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">La forte variabilité quotidienne des tâches</p>
+              <p className="text-gray-700 text-sm leading-relaxed">Certains métiers présentent une variabilité si élevée que chaque journée de travail est fondamentalement différente de la précédente. L&apos;automatisation est possible là où les tâches sont prévisibles et répétitives. Un sage-femme qui accompagne des accouchements ne vit jamais exactement la même situation deux fois. Un urbaniste qui conçoit des espaces publics doit répondre à des contraintes uniques à chaque projet. Cette variabilité est une barrière structurelle à l&apos;automatisation.</p>
+            </div>
+          </li>
+        </ul>
+        <Callout color="indigo">
+          <strong>Le contexte français :</strong> Le système de santé français — considéré parmi les meilleurs du monde — fait face à des tensions de recrutement majeures. La France manque de médecins, d&apos;infirmiers et de professionnels de santé mentale dans de nombreuses régions. Ces tensions ne vont qu&apos;augmenter avec le vieillissement de la population. Les métiers de santé résistants à l&apos;IA sont aussi, en France, parmi les métiers les plus en tension sur le marché du travail.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les 65 métiers par catégorie</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Ces 65 métiers ont tous en commun une probabilité d&apos;automatisation de 0,0 % selon les données du Bureau of Labor Statistics américain. Nous les avons regroupés en six catégories pour faciliter la réflexion sur les trajectoires éducatives.
+        </p>
+
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Santé (33 métiers)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La santé représente à elle seule plus de la moitié des 65 métiers à 0 % de probabilité d&apos;automatisation. Ce n&apos;est pas un hasard. Les métiers de la santé réunissent à des degrés divers les quatre caractéristiques évoquées plus haut : intelligence émotionnelle, jugement clinique contextuel, adaptabilité constante aux situations individuelles de chaque patient, et exécution dans des environnements physiques exigeant une dextérité et un discernement impossibles à robotiser dans leur globalité. L&apos;IA peut analyser des images médicales ou aider au diagnostic différentiel, mais elle ne peut pas créer la relation thérapeutique, décider dans l&apos;urgence avec des informations incomplètes, ni adapter physiquement un traitement au corps singulier d&apos;un patient.
+        </p>
+        <Callout color="indigo">
+          <strong>Chiffre BLS 2024 :</strong> Les infirmiers praticiens (Nurse Practitioners) affichent une croissance projetée de +40 % entre 2024 et 2034, avec un salaire médian de 129 210 $ aux États-Unis. En France, les infirmiers en pratique avancée (IPA), récemment créés, connaissent un développement similaire. Ce métier cumule protection maximale contre l&apos;automatisation et croissance exceptionnelle.
+        </Callout>
+        <ul className="space-y-2 mb-6">
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Infirmiers Praticiens (Infirmiers en Pratique Avancée)</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Assistants Médicaux</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Enseignants en Soins Infirmiers</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Conseillers en Santé Mentale</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Ergothérapeutes</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Orthésistes et Prothésistes</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Sages-Femmes</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Kinésithérapeutes</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Art-Thérapeutes</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Musicothérapeutes</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Assistants Sociaux (Santé Mentale)</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Assistants Sociaux (Santé)</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Dermatologues</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Psychiatres</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Neurologues</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Infirmiers Psychiatriques Spécialisés</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Infirmiers Cliniciens Spécialisés</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Infirmiers de Soins Intensifs</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Ambulanciers</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Techniciens Médicaux d&apos;Urgence</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Chirurgiens Maxillo-Faciaux</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Chirurgiens Orthopédiques</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Prothésistes Dentaires</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Chirurgiens Généraux</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Chirurgiens-Dentistes</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Neuropsychologues Cliniciens</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Neuropsychologues</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Hospitalistes (Médecins Hospitaliers)</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Médecins en Rééducation</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Médecins en Médecine Préventive</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Médecins du Sport</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Chirurgiens Pédiatriques</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Gynécologues-Obstétriciens</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Éducation (6 métiers)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;éducation figure dans la liste des métiers à 0 % d&apos;automatisation non pas pour tous ses profils, mais pour ceux qui requièrent la plus haute dimension humaine et relationnelle. Les enseignants en psychologie, en anthropologie, en arts et en travail social ne transmettent pas simplement des contenus — ils guident des processus de transformation intellectuelle et personnelle qui exigent une présence humaine authentique, une adaptation constante à la singularité de chaque apprenant, et une modélisation de postures que les outils numériques ne peuvent pas incarner. Les directeurs d&apos;établissements scolaires, quant à eux, exercent une fonction de leadership communautaire qui réunit toutes les dimensions résistantes à l&apos;IA : jugement contextuel complexe, intelligence émotionnelle, gestion de crise, et vision stratégique ancrée dans une réalité humaine locale.
+        </p>
+        <ul className="space-y-2 mb-6">
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Enseignants de Psychologie</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Enseignants d&apos;Anthropologie et Archéologie</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Enseignants d&apos;Architecture</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Enseignants des Arts, du Théâtre et de la Musique</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Enseignants en Travail Social</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Directeurs d&apos;Établissements Scolaires</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Services Créatifs et Personnels (7 métiers)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ces métiers se trouvent à l&apos;intersection de la créativité humaine et de l&apos;interaction personnelle directe. Un chorégraphe ne crée pas un spectacle dans l&apos;abstrait — il travaille avec des corps humains réels, dans un dialogue constant entre intention artistique et capacités physiques uniques de chaque interprète. Un designer d&apos;intérieur traduit les besoins, les rêves et les contraintes d&apos;une famille ou d&apos;une organisation en espaces habitables. Un thérapeute récréatif utilise le jeu, le sport et les activités créatives comme outils thérapeutiques pour des populations vulnérables. La dimension hautement personnalisée de ces métiers — leur ancrage dans des interactions humaines singulières et imprévisibles — constitue leur meilleure protection contre l&apos;automatisation.
+        </p>
+        <ul className="space-y-2 mb-6">
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Chorégraphes</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Entraîneurs et Scouts Sportifs</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Coordinateurs Fitness et Bien-être</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Designers d&apos;Intérieur</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Thérapeutes Récréatifs</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Scénographes et Concepteurs d&apos;Expositions</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Responsables Activités Religieuses</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Ingénierie et Design (6 métiers)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;ingénierie et le design comptent parmi les domaines où l&apos;IA apporte le plus de valeur ajoutée en termes d&apos;outils — modélisation, simulation, génération de plans. Et pourtant, plusieurs profils d&apos;ingénieurs et d&apos;architectes affichent une probabilité d&apos;automatisation de 0 %. La raison : l&apos;IA peut générer des options, mais elle ne peut pas assumer la responsabilité professionnelle, exercer le jugement éthique sur les compromis sécuritaires et environnementaux, ni intégrer les contraintes humaines, politiques et contextuelles qui définissent tout grand projet d&apos;infrastructure ou d&apos;architecture. L&apos;ingénieur biomédical qui conçoit une prothèse sur mesure pour un patient spécifique, l&apos;architecte paysagiste qui crée un espace public en dialogue avec les habitants : ces missions ne se réduisent pas à de l&apos;optimisation algorithmique.
+        </p>
+        <ul className="space-y-2 mb-6">
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Ingénieurs Biomédicaux</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Ingénieurs du Génie Civil</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Ingénieurs des Transports</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Physiciens</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Architectes</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Architectes Paysagistes</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Sécurité Publique et Management (7 métiers)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La gestion des urgences et de la sécurité publique est l&apos;un des domaines les plus résistants à toute forme d&apos;automatisation. Ces métiers opèrent dans des environnements radicalement imprévisibles, avec des enjeux vitaux directs et une nécessité de décision instantanée dans des conditions de pression extrême. Aucun algorithme, aussi sophistiqué soit-il, ne peut remplacer le jugement d&apos;un chef de pompiers qui décide d&apos;engager ou de retirer son équipe dans un bâtiment en feu, ni la responsabilité d&apos;un directeur de gestion des urgences qui coordonne une réponse à une catastrophe naturelle impliquant des dizaines d&apos;agences. Les directeurs généraux figurent dans cette liste parce que la direction d&apos;une organisation exige la synthèse de dimensions humaines, politiques et stratégiques que l&apos;IA ne peut pas intégrer dans leur complexité.
+        </p>
+        <ul className="space-y-2 mb-6">
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Directeurs Généraux</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Directeurs Sécurité</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Superviseurs de Police</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Superviseurs des Pompiers</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Directeurs de Gestion des Urgences</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Pompiers</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Gardes Forestiers</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Autres (6 métiers)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cette dernière catégorie regroupe des métiers qui, tout en étant très différents les uns des autres, partagent une caractéristique commune : ils opèrent à l&apos;interface entre des systèmes complexes — humains, naturels, urbains, sociaux — et exigent un jugement qui intègre des dimensions irréductiblement qualitatives. L&apos;urbaniste qui planifie un quartier doit tenir compte non seulement de données quantitatives, mais des aspirations, des identités et des conflits d&apos;une communauté. Le pédologue et botaniste travaille dans des écosystèmes d&apos;une complexité que les modèles actuels ne capturent pas entièrement. Le conseiller d&apos;orientation accompagne des choix de vie qui impliquent des valeurs, des aspirations et des peurs que seul un être humain peut vraiment entendre.
+        </p>
+        <ul className="space-y-2 mb-8">
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Urbanistes</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Pédologues et Botanistes</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Spécialistes en EPS Adaptée</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Constructeurs de Bâtiments Préfabriqués</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Conseillers d&apos;Orientation</li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2"></span>Animateurs Loisirs</li>
+        </ul>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Découvrez les forces de votre enfant — gratuitement</p>
+            <p className="text-sm text-gray-600">L&apos;évaluation adaptative Eduentry identifie les aptitudes verbales, numériques et de raisonnement de votre enfant sur la même échelle internationale que les grandes évaluations cognitives. Un exemple de rapport complet est disponible sans inscription.</p>
+          </div>
+          <Link href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Voir un exemple de rapport
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce que cela signifie pour l&apos;éducation de votre enfant</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ces 65 métiers ne sont pas réservés à des élèves extraordinaires ou à des familles avec des ressources particulières. La grande majorité d&apos;entre eux sont accessibles à travers des filières du système éducatif français standard — à condition de choisir les bonnes spécialités au lycée, de comprendre les prérequis de Parcoursup, et de développer les bonnes compétences transversales dès maintenant.
+        </p>
+
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Les matières clés au lycée</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La réforme du baccalauréat 2021 a remplacé les filières L, ES et S par un système de spécialités choisi par chaque élève. Ce changement est particulièrement important pour les familles qui visent les métiers résistants à l&apos;IA, car les prérequis de Parcoursup pour les filières concernées sont très spécifiques. Voici comment orienter ces choix :
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pour toute la filière santé — médecine, pharmacie, maïeutique, masso-kinésithérapie et les nouvelles études de santé via la PASS (Parcours Accès Spécifique Santé) et la LAS (Licence avec option Accès Santé) — les spécialités SVT et Physique-Chimie sont quasiment incontournables. Le bac doit afficher une solide maîtrise des sciences de la vie et des sciences exactes. La psychologie, discipline de plus en plus présente dans les lycées français sous forme d&apos;option ou de spécialité dans certains établissements, ouvre directement vers les métiers de santé mentale et de neuropsychologie. Il ne faut pas négliger non plus les mathématiques : si la médecine est moins mathématique que l&apos;ingénierie, les statistiques biomédicales, l&apos;épidémiologie et les neurosciences computationnelles exigent un niveau solide.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pour les métiers d&apos;architecture et de design d&apos;intérieur, la combinaison arts plastiques, mathématiques et physique est la plus cohérente. L&apos;architecture s&apos;appuie sur des compétences à la fois techniques (structures, calculs) et créatives (conception, représentation). Les admissions en école d&apos;architecture se font via Parcoursup, avec un dossier qui valorise fortement le portfolio artistique et l&apos;excellence académique dans les matières scientifiques.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pour les métiers d&apos;ingénierie — biomédicale, génie civil, transports — la voie classique est la filière scientifique forte avec classes préparatoires ou admission directe en école d&apos;ingénieurs via Parcoursup. Les spécialités mathématiques expertes, physique-chimie et SVT constituent le socle. Les ingénieurs biomédicaux en particulier ont un profil hybride — biologie et ingénierie — qui bénéficie d&apos;une combinaison SVT-Mathématiques-Physique dès le lycée.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pour les métiers sportifs — médecin du sport, coordinateur fitness, entraîneur sportif — l&apos;EPS joue bien sûr un rôle central, mais les dossiers Parcoursup pour les STAPS (Sciences et Techniques des Activités Physiques et Sportives) valorisent aussi les résultats en SVT et en psychologie. Le niveau sportif pratiqué et documenté est un vrai atout.
+        </p>
+
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Parcoursup et les prérequis concrets</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Parcoursup a transformé l&apos;accès à l&apos;enseignement supérieur en France depuis 2018. Pour les familles qui lisent cet article, plusieurs points pratiques méritent d&apos;être soulignés. Les PASS et LAS ont remplacé la PACES (le numerus clausus de la première année de médecine) depuis la rentrée 2020. Ces nouvelles formations sont plus diversifiées dans leur recrutement mais restent très sélectives. Un profil solide en SVT, physique-chimie et mathématiques, combiné avec un dossier scolaire homogène et un projet de santé bien articulé dans la lettre de motivation, constitue le meilleur atout.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pour les écoles d&apos;architecture, le concours national d&apos;entrée a été supprimé au profit d&apos;une admission sur dossier via Parcoursup. Le portfolio artistique, qui n&apos;est pas évalué dans le cadre scolaire classique, doit être développé en parallèle. Les élèves qui commencent à construire un portfolio dès la seconde ou la première ont un avantage structurel sur ceux qui y pensent seulement en terminale.
+        </p>
+
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Les compétences transversales à développer au lycée</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Au-delà des matières académiques, les 65 métiers à 0 % d&apos;automatisation partagent des exigences de compétences transversales que le lycée peut commencer à cultiver activement. La première d&apos;entre elles est l&apos;empathie appliquée — la capacité à se mettre à la place d&apos;autrui et à en tirer des conclusions pratiques. Cette compétence se développe par les expériences de bénévolat, les stages, les responsabilités associatives, et toute forme d&apos;engagement dans des contextes humains variés. Les lycéens qui ont accompli des actions de service — aide aux personnes âgées, travail avec des enfants en difficulté, engagement associatif sérieux — développent naturellement les fondations de l&apos;intelligence émotionnelle.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La deuxième compétence transversale est le raisonnement sous incertitude — la capacité à prendre des décisions pertinentes quand l&apos;information est incomplète et les enjeux sont réels. Elle se développe dans les situations qui exigent un engagement personnel réel, pas uniquement dans les exercices scolaires avec une réponse correcte attendue. Les activités sportives de compétition, les projets créatifs à livrer, les expériences professionnelles avec de vraies responsabilités — tous ces contextes développent ce type de raisonnement que l&apos;école traditionnelle cultive peu.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La troisième compétence est la communication complexe — pas simplement savoir s&apos;exprimer, mais savoir adapter son message à son interlocuteur, gérer les malentendus, négocier des compromis et expliquer des réalités complexes à des non-spécialistes. Cette compétence est au cœur de tous les métiers de la santé, de l&apos;éducation et du management. Elle se développe par la pratique délibérée : prises de parole en public, débats, travaux de groupe avec des livrables réels, échanges avec des professionnels lors de stages.
+        </p>
+        <Callout color="indigo">
+          <strong>Le paradoxe de la préparation :</strong> Les compétences les plus résistantes à l&apos;IA ne sont pas les plus académiques. Elles sont relationnelles, émotionnelles et situationnelles. Un lycéen qui développe ces compétences en dehors de l&apos;école — par le sport, le bénévolat, les arts, les stages — construit une résilience professionnelle que aucun algorithme ne peut remplacer.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Il faut enfin souligner l&apos;importance croissante de la maîtrise de l&apos;IA comme outil dans ces mêmes métiers. Les médecins qui utilisent intelligemment les outils d&apos;IA pour l&apos;aide au diagnostic, les architectes qui intègrent la génération paramétrique dans leur processus créatif, les ingénieurs qui utilisent la simulation IA pour optimiser leurs conceptions : tous ces professionnels ne sont pas menacés par l&apos;IA. Ils l&apos;utilisent pour amplifier ce que seul un être humain peut faire — le jugement, la créativité, la relation. Au lycée, apprendre à travailler <em>avec</em> les outils d&apos;IA de façon critique et sélective — et non à les éviter ou à s&apos;y soumettre — est une compétence stratégique de première importance.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Votre enfant : prêt pour l&apos;avenir ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les données sont rassurantes : les 65 métiers à 0 % de probabilité d&apos;automatisation couvrent des secteurs essentiels, bien rémunérés et en pleine croissance. La santé connaît une pénurie structurelle de professionnels en France. L&apos;ingénierie verte et l&apos;architecture durable offrent des perspectives exceptionnelles à l&apos;heure de la transition écologique. Les métiers de la santé mentale — psychologues, psychiatres, conseillers — ont une demande qui explose dans toutes les démographies, toutes les régions.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Mais connaître la liste des métiers d&apos;avenir n&apos;est que le point de départ. Ce qui importe pour votre enfant, c&apos;est de savoir où il en est aujourd&apos;hui : quelles sont ses aptitudes naturelles, ses forces cognitives, ses domaines de développement ? Est-il plus à l&apos;aise avec le raisonnement verbal ou quantitatif ? Présente-t-il les bases de raisonnement spatial qui ouvrent la voie à l&apos;ingénierie et à l&apos;architecture ? Ses compétences de communication sont-elles au niveau des exigences des filières santé ?
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ces questions ne sont pas abstraites. Elles ont des réponses concrètes et mesurables — et connaître ces réponses avant les choix d&apos;orientation de première et de terminale offre un avantage décisif. Un élève qui sait précisément où se situent ses forces peut cibler ses efforts, choisir ses spécialités de façon stratégique, et construire un dossier Parcoursup qui reflète un projet cohérent plutôt qu&apos;une liste de vœux disparates.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La question n&apos;est pas &laquo;&nbsp;mon enfant sera-t-il remplacé par un robot ?&nbsp;&raquo;. La vraie question est : &laquo;&nbsp;mon enfant développe-t-il les compétences qui seront les plus précieuses dans l&apos;économie de demain ?&nbsp;&raquo; Les données sont claires sur ce qui résiste à l&apos;IA. Ce qui reste à déterminer, c&apos;est comment positionner votre enfant sur cette trajectoire — avec précision, avec anticipation, et avec les bonnes informations.
+        </p>
+        <Callout color="indigo">
+          <strong>WEF Rapport 2025 :</strong> 40 % des emplois mondiaux seront perturbés par l&apos;IA d&apos;ici 2030. Dans le même temps, 65 métiers affichent une probabilité d&apos;automatisation de 0,0 %. La question pour chaque famille n&apos;est pas de choisir entre l&apos;IA et l&apos;humain — c&apos;est de positionner son enfant là où l&apos;humain est irremplaçable.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;évaluation adaptative gratuite d&apos;Eduentry compare les compétences de raisonnement verbal, numérique et de résolution de problèmes de votre enfant avec celles de ses pairs à l&apos;international. En 20 à 30 minutes, sans inscription préalable, vous obtenez un profil cognitif détaillé qui vous montre exactement où se trouvent ses points forts — et lesquels correspondent aux exigences des filières menant aux métiers les plus protégés de l&apos;IA. C&apos;est une information que vous pouvez utiliser dès aujourd&apos;hui pour orienter les choix de spécialités, préparer l&apos;entretien d&apos;orientation et construire un projet d&apos;avenir qui tient compte à la fois des talents de votre enfant et des réalités du marché du travail de demain.
+        </p>
+
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Votre enfant est-il prêt pour l&apos;avenir ?</p>
+            <p className="text-sm text-gray-600">L&apos;évaluation adaptative gratuite d&apos;Eduentry compare les compétences de raisonnement verbal, numérique et de résolution de problèmes de votre enfant avec celles de ses pairs à l&apos;international — et vous montre exactement où se trouvent ses points forts.</p>
+          </div>
+          <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Commencer l&apos;évaluation gratuite de votre enfant
+          </Link>
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

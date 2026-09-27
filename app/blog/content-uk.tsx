@@ -3754,4 +3754,218 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  '65-jobs-ai-cannot-automate': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        If you have spent any time reading the news over the past two years, you will have encountered a steady stream of headlines about artificial intelligence replacing human workers. Some of those headlines are well-founded. Others are exaggerated. But the anxiety they produce in parents thinking about their children&apos;s futures is entirely understandable — and entirely real. When your child is eight, or twelve, or fifteen, you are not just thinking about their next exam. You are thinking about what the world will look like when they are thirty, and whether the career path you are encouraging them toward will still exist.
+      </p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        The good news — and it is genuinely good news, backed by hard data — is that the picture is far more nuanced than the doom-laden headlines suggest. The World Economic Forum&apos;s Future of Jobs Report 2025 does indeed project that 40% of global jobs will be disrupted by AI by 2030. But disrupted does not mean eliminated. And for a significant cluster of professions, the data is unambiguous: the probability of automation is not low, or unlikely, or contested. It is zero.
+      </p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        Using employment data and automation probability scoring from the US Bureau of Labor Statistics, researchers have identified 65 professions that carry a 0.0% probability of automation. Not 5%. Not 2%. Zero. These are not marginal, poorly-paid roles that have simply escaped AI&apos;s attention. They include some of the most respected, best-compensated, and fastest-growing careers in the modern economy — nurse practitioners growing at 40% over the next decade, physician assistants, surgeons, architects, civil engineers, and more. Understanding why these jobs are safe, and what they have in common, is one of the most useful things a parent can do right now.
+
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why AI Cannot Replace These Jobs</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Before we go through the 65 jobs themselves, it is worth understanding the four characteristics that unite them — because these characteristics are not arbitrary. They represent genuine structural limits on what AI can do, and they are likely to remain limits for the foreseeable future.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The first is <strong>emotional intelligence</strong>. AI can analyse sentiment in text. It cannot sit with a grieving patient and know when to speak and when to be silent. It cannot read the micro-expressions on a child&apos;s face and adjust its approach accordingly. It cannot build the kind of trust that makes a therapy patient willing to say something they have never said to anyone before. The jobs on this list rely heavily on the ability to form genuine human connections — and that ability is not reducible to pattern recognition.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The second is <strong>reading a room</strong> — the broader capacity for situational awareness and social judgement that goes beyond processing verbal content. A police supervisor managing a tense crowd, a firefighting supervisor making split-second decisions about where to send their crew, a choreographer watching a rehearsal and sensing that one dancer is struggling for reasons they have not yet articulated: these are all expressions of a continuous, embodied, socially-embedded form of intelligence that AI does not possess.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The third is <strong>creative work that generates genuinely new outputs</strong>. This is distinct from what AI does when it generates text, images, or music. AI is extraordinarily good at recombining existing patterns. It is not good at creating something that did not exist before because a human mind made a leap no training data could have predicted. The choreographer who invents a new movement vocabulary, the architect who designs a building that changes how a neighbourhood feels, the interior designer who understands that this particular family needs a home that feels like safety — these are forms of creativity that require a human subject, not just a pattern-matching engine.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The fourth is <strong>high day-to-day variability</strong>. AI systems excel in structured, predictable environments where the range of inputs is finite and the decision rules can be specified in advance. The jobs on this list are characterised by enormous variability: every patient is different, every emergency is different, every student is different, every construction site is different. The professional&apos;s skill lies precisely in their ability to respond to the specific, unpredictable reality in front of them — not to apply a pre-trained rule. Within the NHS, this is particularly evident: the sheer complexity of individual patient presentations, the need to communicate sensitively across cultures and circumstances, and the physical demands of hands-on care mean that healthcare will remain a deeply human profession even as AI tools become invaluable aids within it.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The 65 Jobs by Category</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Here are all 65 professions, organised by sector, with a brief explanation of why each category is resistant to automation. These are all drawn from US Bureau of Labor Statistics occupational classifications with verified 0.0% automation probability scores — but the underlying characteristics they describe are global, and equally relevant to careers within the UK&apos;s NHS, education system, and professional services sector.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Healthcare (33 professions)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Healthcare is by far the largest single category of automation-resistant jobs, and this is not a coincidence. Medicine, nursing, and therapy are built on the three hardest things for AI to replicate: the ability to build trust under pressure, the capacity to make nuanced judgements in the face of ambiguity, and the physical reality of human bodies requiring human hands. AI will transform healthcare administration, diagnostics support, and medical imaging analysis. It will not replace the clinician who sits across from a patient and decides, drawing on years of pattern recognition embedded in embodied professional experience, that something is not quite right — and that they need to ask one more question.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The growth projections for healthcare careers are among the strongest in any sector. Nurse Practitioners are projected to grow 40% between 2024 and 2034, with a median annual wage of $129,210 in the US — and equivalent roles within the NHS are similarly in high demand. Physician Assistants are growing at 20%, with a median wage of $133,260. Mental Health Counselors are growing at 17%, with a median wage of $59,190. These are not niche careers on the margins of the economy. They are central, growing, well-compensated professions with a 0.0% automation probability.
+        </p>
+        <Callout color="indigo">
+          Nurse Practitioners are projected to grow 40% by 2034 (US BLS), with a median annual wage of $129,210. All 33 healthcare professions on this list carry a 0.0% probability of automation.
+        </Callout>
+        <ul className="space-y-1 mb-4">
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Nurse Practitioners</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Physician Assistants</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Nursing Instructors and Teachers (Post-Secondary)</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Mental Health Counselors</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Occupational Therapists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Orthotists and Prosthetists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Nurse Midwives</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Physical Therapists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Art Therapists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Music Therapists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Mental Health and Substance Abuse Social Workers</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Healthcare Social Workers</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Dermatologists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Psychiatrists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Neurologists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Advanced-Practice Psychiatric Nurses</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Clinical Nurse Specialists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Critical Care Nurses</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Paramedics</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Emergency Medical Technicians</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Oral and Maxillofacial Surgeons</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Orthopedic Surgeons</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Prosthodontists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Surgeons</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Dentists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Clinical Neuropsychologists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Neuropsychologists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Hospitalists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Physical Medicine and Rehabilitation Physicians</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Preventive Medicine Physicians</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Sports Medicine Physicians</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Pediatric Surgeons</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Obstetricians and Gynecologists</span></li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Education (6 professions)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The six education roles on this list are all post-secondary teaching and administration positions — a telling signal about where automation resistance is strongest within education. University-level teaching in the humanities, social sciences, arts, and professional disciplines resists automation because the value of education at this level is not primarily information transfer. It is the formation of judgement, the modelling of intellectual rigour, the cultivation of disciplinary ways of thinking, and the mentorship relationship between an experienced mind and a developing one. AI can deliver content. It cannot, in any meaningful sense, educate.
+        </p>
+        <ul className="space-y-1 mb-4">
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Psychology Teachers (Post-Secondary)</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Anthropology and Archaeology Teachers (Post-Secondary)</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Architecture Teachers (Post-Secondary)</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Art, Drama, and Music Teachers (Post-Secondary)</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Social Work Teachers (Post-Secondary)</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Education Administrators</span></li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Creative and Personal Services (7 professions)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This category is perhaps the most surprising to parents who may have heard that AI poses a particular threat to creative work. The key distinction is between creative execution — producing content within a defined brief, which AI can do well — and creative direction, which requires a human sensibility, accumulated cultural understanding, and the ability to synthesise a client&apos;s unarticulated desires into a tangible result. A choreographer does not just arrange movements; they interpret music through the lens of specific human bodies, read the emotional state of a rehearsal room, and make thousands of micro-decisions that no algorithm could replicate. The same is true of a set designer translating a director&apos;s vision into physical space, or a fitness coordinator motivating a room full of people with different bodies, different histories, and different relationships with exercise.
+        </p>
+        <ul className="space-y-1 mb-4">
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Choreographers</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Coaches and Scouts</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Fitness and Wellness Coordinators</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Interior Designers</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Recreational Therapists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Set and Exhibit Designers</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Directors of Religious Activities and Education</span></li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Engineering and Design (6 professions)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The presence of engineering roles on this list surprises some parents who might assume that technical, analytical disciplines are more vulnerable to AI. In fact, the engineering roles here are all characterised by two features that make them highly resistant: creative synthesis under real-world constraints, and accountability for outcomes that affect human safety. A civil engineer designing a bridge is not solving a well-defined mathematical problem; they are navigating a continuously shifting set of constraints — geological, financial, regulatory, political, and aesthetic — and making integrative judgements that require both technical depth and broad human understanding. An architect is not just drawing buildings; they are translating a client&apos;s vision of how they want to live or work into a physical form that must simultaneously satisfy structural engineering requirements, planning regulations, sustainability criteria, and the subjective human experience of inhabiting space. These are not tasks that AI can do.
+        </p>
+        <ul className="space-y-1 mb-4">
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Bioengineers and Biomedical Engineers</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Civil Engineers</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Transportation Engineers</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Physicists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Architects</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Landscape Architects</span></li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Public Safety and Management (7 professions)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Public safety roles are automation-resistant for reasons that are partly physical — firefighting and emergency response take place in environments that are chaotic, unpredictable, and physically dangerous in ways no robot can currently navigate reliably — and partly human. The judgement calls involved in managing a crisis are not reducible to rules. A police supervisor de-escalating a confrontation is drawing on years of experience reading people under pressure, making real-time decisions about the appropriate level of force, and communicating in ways calibrated to the specific individuals in front of them. A chief executive making strategic decisions in a fast-moving competitive environment is synthesising signals from across an entire organisation, reading the room in board meetings, and exercising a form of leadership that is irreducibly human. These are not tasks that can be delegated to an algorithm.
+        </p>
+        <ul className="space-y-1 mb-4">
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Chief Executives</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Security Managers</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Police Supervisors</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Firefighting Supervisors</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Emergency Management Directors</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Firefighters</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Fish and Game Wardens</span></li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Other Professions (6)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This final group is diverse, but each role shares the common thread of working with people, places, or living systems in ways that require constant adaptation. Urban and regional planners are navigating the competing interests of communities, developers, local authorities, and environmental constraints — a process that is fundamentally political and relational, not computational. Soil and plant scientists are working with living systems that are unpredictably variable across geography, season, and microclimate, applying scientific knowledge through the lens of practical field judgement that has to account for what cannot be measured. Adapted physical education specialists are working with children who have disabilities or special educational needs, requiring a level of individualised human responsiveness that is the antithesis of automation. Educational counsellors are helping young people navigate some of the most consequential decisions of their lives, requiring emotional attunement, careful listening, and the ability to hold a young person&apos;s anxiety and hope at the same time.
+        </p>
+        <ul className="space-y-1 mb-4">
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Urban and Regional Planners</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Soil and Plant Scientists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Adapted Physical Education Specialists</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Manufactured Building Installers</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Educational Counselors</span></li>
+          <li className="flex items-start gap-2 text-gray-700"><span className="text-indigo-500 mt-1 flex-shrink-0">•</span><span>Recreation Workers</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">See what your child&apos;s academic profile looks like</p>
+            <p className="text-sm text-gray-600">A sample Eduentry report shows how verbal reasoning, numeracy, and problem-solving scores map to the careers and university pathways that will still matter in an AI world.</p>
+          </div>
+          <Link href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            See a sample report
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What This Means for Your Child&apos;s Education</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Knowing that 65 professions carry a 0.0% automation probability is reassuring. But it raises an immediate practical question for parents: what does this mean for the educational choices my child is making right now? Which GCSEs and A-levels actually open doors to these careers? What habits of mind, developed between the ages of 6 and 17, will give a child the foundation they need to thrive in an AI-resistant profession?
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The school subjects that underpin these careers are broader than many parents expect — and reassuringly familiar. <strong>Biology and chemistry</strong> are the gateway subjects for the entire healthcare category, which accounts for 33 of the 65 jobs on this list. A child who enjoys science and develops a strong foundation in biology by the time they reach GCSE is keeping an enormous range of possibilities open — from nursing and occupational therapy to surgery and psychiatry. Psychology, where it is available at A-level, provides a direct academic pathway into mental health counselling, clinical psychology, and social work. <strong>Mathematics and physics</strong> are the foundation of civil engineering, biomedical engineering, architecture, and transport engineering — all on the safe list, all well-paid, all growing. Strong mathematics at GCSE and A-level is one of the most future-proof investments a student can make in their own education.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Art, drama, music, and design</strong> lead into choreography, set and exhibit design, interior design, and the creative arts teaching roles that appear on the list — and they also develop the creative sensibility that makes engineers and architects truly excellent, rather than merely technically competent. The design technology and product design courses available in UK schools are more directly relevant to the engineering and architectural professions than many parents realise. <strong>Physical education</strong> and sports science pathways feed into sports medicine, fitness coordination, adapted physical education, and coaching — a cluster of roles that are both automation-resistant and genuinely rewarding to do. And <strong>geography, economics, and environmental science</strong> are the underpinning subjects for urban planning, landscape architecture, and the environmental science roles.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Beyond specific subjects, there are three broad <strong>soft skills</strong> worth nurturing deliberately, because they underpin virtually every job on this list. The first is <strong>interpersonal communication</strong> — the ability to listen carefully, communicate clearly under pressure, and adjust one&apos;s approach to the person in front of you. This is not a skill that develops automatically; it develops through practice in environments where communication has real consequences: debates, drama, presentations, sports teams, volunteering, and any form of sustained engagement with people outside the family. The second is <strong>resilience and adaptive problem-solving</strong> — the capacity to keep functioning effectively when the situation is ambiguous, the rules are not clear, and the right answer is not obvious. This is cultivated through challenges that genuinely stretch a child, including creative projects, competitive sport, and experiences that involve real stakes. The third is <strong>curiosity and the drive to understand</strong> rather than merely to perform — the internal motivation that sustains a professional through years of continuous learning and development. A child who is genuinely curious about how people work, why structures stand, or what makes a community function well is already developing the most durable career asset there is.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          One of the most important implications of the data is that breadth matters more than tunnel vision at secondary school age. The professions on this list cross an enormous range of disciplines: a child who is certain at age thirteen that they want to be a surgeon should absolutely pursue sciences, but they will be a better surgeon if they have also studied literature, engaged seriously with art, played team sport, and developed the social intelligence that clinical practice demands. At the same time, a child who does not yet know what they want to do has no reason to narrow down prematurely — almost every subject combination keeps multiple doors open to automation-resistant careers. The worst strategy, in retrospect, is to specialise too early or to optimise purely for exam performance at the expense of breadth.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Find Out Where Your Child&apos;s Strengths Actually Lie</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Knowing which careers are safe from automation is only half the picture. The other half is understanding where your child&apos;s natural strengths lie — and whether those strengths are being developed in the right direction. These are not the same question. A child might love science but genuinely excel at interpersonal communication, which suggests a clinical career rather than pure research. A child with outstanding spatial reasoning and creative drive might be a natural architect or landscape designer in ways that their school grades — which measure performance relative to classmates, not potential — would not reveal.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This is particularly important because the professions on this list are, for the most part, highly competitive. The training pathways for medicine, surgery, architecture, and engineering require significant academic investment. Getting into the right A-level combinations, and then into the right university courses, requires a clear-eyed understanding of where a child&apos;s genuine strengths lie — ideally well before they are choosing GCSEs. A child who discovers at seventeen that their verbal reasoning is significantly stronger than their numerical aptitude has much less time to adjust their trajectory than a child who discovers this at twelve.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most honest and actionable way to understand a child&apos;s academic profile is through a standardised assessment that goes beyond school grades — one that measures the underlying cognitive abilities that predict long-term academic performance and career success, benchmarked against peers nationally and internationally. This is precisely what Eduentry&apos;s free adaptive assessment does. It takes around 20 minutes, and it produces a detailed profile of verbal reasoning, numeracy, and problem-solving strengths — the exact abilities that map most directly onto the automation-resistant careers in this article.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The world your child will enter as an adult is already being shaped by AI. The jobs that will be available, well-paid, and meaningful in 2040 are already visible in the data — and they are predominantly the jobs that require the distinctly human capabilities that no algorithm can replicate. Helping your child develop those capabilities is not a matter of guesswork. It starts with understanding clearly where they stand today.
+        </p>
+        <Callout color="indigo">
+          40% of global jobs will be disrupted by AI by 2030 (WEF Future of Jobs Report 2025) — but the 65 professions in this article score 0.0% automation probability. The question is not whether safe careers exist. It is whether your child is building towards one.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry&apos;s free academic assessment benchmarks your child&apos;s verbal reasoning, numeracy, and problem-solving skills against peers nationally and internationally, and shows you exactly where their natural strengths lie. Whether your child is 6 or 17, understanding their cognitive profile is the most concrete step you can take right now to ensure their education is building towards a future that AI cannot take away.
+        </p>
+        <div className="bg-indigo-50 border border-indigo-200 rounded-2xl p-8 text-center">
+          <p className="text-xl font-bold text-gray-900 mb-2">How future-ready is your child?</p>
+          <p className="text-gray-600 mb-6 max-w-xl mx-auto">Eduentry&apos;s free adaptive assessment benchmarks your child&apos;s verbal reasoning, numeracy, and problem-solving skills against peers internationally — and shows you exactly where their strengths lie for the careers that matter.</p>
+          <Link href="/#academic" className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-full transition-colors">
+            Start your child&apos;s free assessment
+          </Link>
+        </div>
+      </section>
+    </>
+  ),
 }

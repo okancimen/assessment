@@ -3917,6 +3917,242 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  '65-jobs-ai-cannot-automate': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        "Yapay zeka çocuğumun mesleğini elinden alır mı?" sorusu artık kulis fısıltısı olmaktan çıktı; ebeveyn toplantılarının, veli sohbetlerinin ve aile yemek masalarının açık gündem maddesi haline geldi. Bu kaygı temelsiz değil. Dünya Ekonomik Forumu'nun 2025 tarihli Gelecekteki İşler Raporu, 2030'a kadar küresel işgücünün %40'ının yapay zekadan doğrudan etkileneceğini öngörüyor. Muhasebeciden veri analistine, montaj hattı operatöründen hukuk asistanına uzanan geniş bir yelpazede otomasyon dalgası görünür ve hızlanıyor.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Ama tablonun tamamı bu değil. ABD Çalışma İstatistikleri Bürosu'nun (BLS) iş görevi veritabanı ile bağımsız otomasyon olasılığı analizlerinin kesişimi, %0,0 otomasyon olasılığı taşıyan 65 mesleği işaret ediyor. Bu meslekler rastgele dağılmış değil; belirli özellikler etrafında kümeleniyor. Sağlık, eğitim, mühendislik, kamu güvenliği ve yaratıcı alanlar, yapay zekanın yapısal olarak giremediği bir alan oluşturuyor. Bu makale, o 65 mesleği tek tek ele alıyor, neden güvende olduklarını açıklıyor ve bu bilginin Türkiye'deki bir ebeveyn için — LGS hazırlığından YKS tercih dönemine kadar — ne anlama geldiğini somutlaştırıyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yapay Zeka Bu İşleri Neden Yapamıyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Otomasyon araştırmaları bir mesleği değerlendirirken tek bir soruya yanıt arıyor: bu işin görevleri algoritmik olarak tanımlanabilir mi? Eğer bir görevi kurallara dökülebilir, veri örüntüleriyle öğrenilebilir ya da tekrarlayan fiziksel hareketlerle gerçekleştirilebilir kategorilere ayrıştırmak mümkünse, otomasyon bir zaman meselesidir. Ama bazı görevler bu kırılmaya direniyor. Araştırmacılar bu direncin dört yapısal kaynağını tespit ediyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Birinci neden: Duygusal zeka.</strong> Yapay zeka duyguları sınıflandırabilir, hatta belirli bağlamlarda sempatik bir yanıt üretebilir. Ama klinik psikoloğun muayenehanesindeki o kritik an — hastanın söylemediğini söylemesini beklemek, inkârın altında yatan gerçek acıyı fark etmek, güveni inşa etmek — bu an gerçek insan varlığı gerektiriyor. Bir psikiyatrist veya ruh sağlığı danışmanı için bu an, mesleğin tam çekirdeğidir. Aynı durum ebe hemşirenin doğum odasındaki varlığı, yoğun bakım hemşiresinin ailelere kötü haberi iletişi ve spor antrenörünün kaybetmek üzere olan sporculara yaklaşımı için de geçerli.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>İkinci neden: Ortamı okuma becerisi.</strong> İtfaiyeci yanan binanın içine girdiğinde duman rengine, ses tınısına, zemin titreşimine bakıyor; hiçbir algoritmaya tam anlamıyla aktarılamayacak bir bütünsel değerlendirme yapıyor. Ortopedi cerrahı ameliyat masasında dokunsal geri bildirime, doku direncine, beklenmedik bulgulara anlık tepki veriyor. Bu gerçek zamanlı, çok duyulu, yüksek riskli karar alma süreci, günümüz yapay zekasının mimarisinin dışında kalıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Üçüncü neden: Yaratıcı çalışma.</strong> Koreografın boş sahneye bakışı, mimarın müşterinin söyleyemediği ihtiyacı mimariye dönüştürmesi, sahne tasarımcısının dramaturgiyle aydınlatma mühendisliğini sentezlemesi — bunlar hesaplanamaz. Yapay zeka mevcut kalıpları birleştirebilir; ancak bir sanatçının sıfırdan anlam üretme sürecini taklit etmek, anlam kavramını gerektiriyor. Ve anlam, henüz hesaplanamaz.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Dördüncü neden: Günlük görev değişkenliği.</strong> Bir mesleğin görev listesi ne kadar heterojen ve öngörülemezse, otomasyon o kadar güç. Acil tıp teknisyeni her çağrıda farklı bir sahneyle karşılaşıyor. Okul yöneticisi aynı günde disiplin krizi, veli şikayeti, öğretmen kadrosu planlaması ve müfredat kararıyla ilgileniyor. Bu görev çeşitliliği, tek bir modelin öğrenemeyeceği kadar geniş.
+        </p>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">Türkiye bağlamı:</strong> Türkiye Sağlık Bakanlığı ve ÇÖZGE (Çalışma ve Sosyal Güvenlik Bakanlığı) verilerine göre Türkiye sağlık sektörü son on yılda istihdam hacmini ikiye katladı. Artan yaşlanan nüfus, kronik hastalık yükü ve kırsal sağlık altyapısı yatırımları bu büyümeyi 2030 sonrasına taşıyacak. Sağlık mesleği seçen çocuklar yalnızca yapay zekadan güvende değil; büyüyen bir pazara adım atacaklar.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">65 Meslek Kategoriye Göre</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Aşağıdaki kategoriler ve meslekler, BLS iş görevi veritabanı ile otomasyon olasılığı araştırmalarının %0,0 otomasyon olasılığı atadığı pozisyonları kapsıyor. Her mesleğin ardındaki mantık, yukarıda açıklanan dört yapısal dirençten birine ya da birden fazlasına dayanıyor.
+        </p>
+
+        <h3 className="text-xl font-bold text-gray-800 mb-3 mt-8">1. Sağlık — 33 Meslek</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sağlık, yapay zekaya karşı dirençli mesleklerin tartışmasız en büyük kategorisini oluşturuyor. Bu 33 mesleğin ortak paydası şu: hepsinde hasta-klinisyen ilişkisinin kalitesi, biyolojik gerçeklik kadar tedavi sonucunu belirliyor. Yapay zeka teşhis desteklemede, görüntü analizinde ve ilaç etkileşim kontrolünde giderek daha değerli bir araç haline geliyor; ama bu araç, klinisyenin koltuğuna oturmuyor — klinisyenin masasına yerleşiyor. Klinisyen daha güçlü hale geliyor; yerinden edilmiyor.
+        </p>
+        <ul className="space-y-2 mb-4 text-gray-700">
+          <li>• <strong>Uzman Hemşireler (Nurse Practitioners)</strong> — BLS verisine göre 2024–2034 arası %40 büyüme bekleniyor; medyan yıllık maaş 129.210 dolar. Türkiye'de ileri pratik hemşirelik yasal statü kazanıyor ve hemşire uzman kadrosu genişliyor.</li>
+          <li>• <strong>Hekim Yardımcıları (Physician Assistants)</strong> — Tanı, tedavi ve hasta yönetimini bütünleşik yürütüyor; her klinik karşılaşma benzersiz.</li>
+          <li>• <strong>Hemşirelik Öğretmenleri (Nursing Instructors)</strong> — Klinik pedagoji, simülasyon eğitimi ve mentorluk; salt içerik aktarımının çok ötesinde.</li>
+          <li>• <strong>Ruh Sağlığı Danışmanları (Mental Health Counselors)</strong> — Türkiye'de ruh sağlığı hizmetlerine erişim son beş yılda üç katına çıktı; talep hâlâ arzın çok önünde.</li>
+          <li>• <strong>Ergoterapistler (Occupational Therapists)</strong> — Her hastanın günlük yaşam aktivitelerine dönüş planı bireysel ve sürekli değişken.</li>
+          <li>• <strong>Ortez-Protez Uzmanları (Orthotists and Prosthetists)</strong> — Ölçüm, uyarlama ve kullanıcı eğitimi fiziksel yargı ve insan temasını birleştiriyor.</li>
+          <li>• <strong>Ebe Hemşireler (Nurse Midwives)</strong> — Doğum süreci her kadın için eşsizdir; duygusal destek ve klinik karar anlık içgüdü gerektirir.</li>
+          <li>• <strong>Fizyoterapistler (Physical Therapists)</strong> — Türkiye'de yaşlanan nüfusla birlikte rehabilitasyon talebi on yılda iki katına çıktı.</li>
+          <li>• <strong>Sanat Terapistleri (Art Therapists)</strong> — Terapötik süreç yaratıcı ifadeyi güvenli bir insan ilişkisi içinde barındırıyor.</li>
+          <li>• <strong>Müzik Terapistleri (Music Therapists)</strong> — Müzik ve insan bağının terapötik kombinasyonu algoritmik değil.</li>
+          <li>• <strong>Madde Bağımlılığı Sosyal Çalışanları (Substance Abuse Social Workers)</strong> — Kriz müdahalesi, motivasyonel görüşme ve aile sistemi çalışması insan varlığı gerektiriyor.</li>
+          <li>• <strong>Sağlık Sosyal Çalışanları (Healthcare Social Workers)</strong> — Hasta taburculuk planlaması, kaynak bağlantısı ve sistemsel savunuculuk.</li>
+          <li>• <strong>Dermatologlar (Dermatologists)</strong> — Görsel teşhis yapay zeka destekli olabilir; ancak hasta hikayesi, biyopsi kararı ve tedavi planı klinisyen değerlendirmesi gerektiriyor.</li>
+          <li>• <strong>Psikiyatristler (Psychiatrists)</strong> — İlaç yönetimi ve psikoterapi entegrasyonu; birey-hastalık eşleşmesi her vakada özgün.</li>
+          <li>• <strong>Nörologlar (Neurologists)</strong> — Nörolojik tablo yorumu muayene bulgularının çok boyutlu sentezini gerektiriyor.</li>
+          <li>• <strong>İleri Pratik Psikiyatri Hemşireleri (Psychiatric Nurse Practitioners)</strong> — Ruh sağlığı bakımında giderek kritikleşen rol; insan ilişkisi tedavinin kendisi.</li>
+          <li>• <strong>Klinik Hemşire Uzmanları (Clinical Nurse Specialists)</strong> — Uzman klinik bilgi ile hasta bakımı koordinasyonunun bütünleşmesi.</li>
+          <li>• <strong>Yoğun Bakım Hemşireleri (Critical Care / ICU Nurses)</strong> — Saniyeler içinde değişen hasta durumuna anlık yanıt; duygusal yük ve fiziksel süreklilik.</li>
+          <li>• <strong>Paramedikler (Paramedics)</strong> — Sahne değerlendirmesi, hızlı klinik karar ve hasta transferinde bütünsel koordinasyon.</li>
+          <li>• <strong>Acil Tıp Teknisyenleri (Emergency Medical Technicians)</strong> — Öngörülemeyen sahne koşulları ve anlık protokol adaptasyonu.</li>
+          <li>• <strong>Oral-Maksillofasiyal Cerrahlar (Oral and Maxillofacial Surgeons)</strong> — Cerrahi hassasiyet, estetik yargı ve komplikasyon yönetimi.</li>
+          <li>• <strong>Ortopedi Cerrahları (Orthopedic Surgeons)</strong> — Ameliyat masasında dokunsal karar verme ve anatomik varyasyon yönetimi.</li>
+          <li>• <strong>Prostodontistler (Prosthodontists)</strong> — Diş protezi tasarımı estetik yargı ve hasta memnuniyeti döngüsünü kapsıyor.</li>
+          <li>• <strong>Diğer Cerrahlar (All other Surgeons)</strong> — Cerrahi disiplin ne olursa olsun fiziksel müdahalenin gerçekliği değişmiyor.</li>
+          <li>• <strong>Genel Diş Hekimleri (General Dentists)</strong> — Teşhis, tedavi ve hasta ilişkisi üçgeni her muayenede yeniden kurulur.</li>
+          <li>• <strong>Klinik Nöropsikologlar (Clinical Neuropsychologists)</strong> — Beyin-davranış ilişkisini bütünsel değerlendirme; normatif veritabanlarının ötesinde klinik yargı.</li>
+          <li>• <strong>Nöropsikologlar (Neuropsychologists)</strong> — Araştırma ve klinik uygulama iç içe; her vaka metodolojik uyarlama gerektiriyor.</li>
+          <li>• <strong>Hospitalistler (Hospitalists)</strong> — Yatan hasta yönetiminin koordinasyonu; disiplinler arası iletişim ve aile ile iletişim.</li>
+          <li>• <strong>Fiziksel Tıp ve Rehabilitasyon Uzmanları (Physical Medicine and Rehabilitation Specialists)</strong> — Bireyselleştirilmiş fonksiyonel iyileşme planı; hasta motivasyonu rehabilitasyonun parçası.</li>
+          <li>• <strong>Koruyucu Tıp Uzmanları (Preventive Medicine Specialists)</strong> — Toplum sağlığı müdahalelerinin tasarımı ve uygulaması kültürel bağlam gerektiriyor.</li>
+          <li>• <strong>Spor Hekimleri (Sports Medicine Physicians)</strong> — Sporcu performansı ve sakatlık yönetiminde bireysel plan.</li>
+          <li>• <strong>Pediatrik Cerrahlar (Pediatric Surgeons)</strong> — Pediatrik cerrahinin teknik zorluğu ve aile iletişiminin duygusal boyutu.</li>
+          <li>• <strong>Kadın Doğum Uzmanları (Obstetricians and Gynecologists)</strong> — Gebelik takibinden doğuma ve jinekolojik tedaviye uzanan süreç insan ilişkisini merkezine alıyor.</li>
+        </ul>
+
+        <Callout color="indigo">
+          <strong className="text-indigo-900">İstatistik:</strong> ABD BLS'e göre uzman hemşireler 2024–2034 döneminde %40 büyüme kaydedecek; medyan yıllık maaş 129.210 dolar. Bu oran, tüm meslekler ortalamasının beş katı. Türkiye'de SGK verileri benzer eğilimi gösteriyor: uzman sağlık mesleği kadroları son beş yılda her yıl ortalama %8 büyüdü.
+        </Callout>
+
+        <h3 className="text-xl font-bold text-gray-800 mb-3 mt-8">2. Eğitim — 6 Meslek</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eğitim alanındaki bu altı meslek, bilgi aktarımının çok ötesinde bir işlev taşıyor. Yapay zeka içerik sunabilir, hatta uyarlanabilir öğrenme platformları kişiselleştirilmiş egzersizler üretebilir. Ama öğrencinin kim olduğunu anlamak, bir sınıfın dinamiğini okumak, öğrencinin direncinin arkasındaki anlamı bulmak ve bir kurumun vizyonunu taşımak — bunlar insan liderliği gerektiriyor.
+        </p>
+        <ul className="space-y-2 mb-4 text-gray-700">
+          <li>• <strong>Psikoloji Öğretmenleri (Psychology Teachers, Postsecondary)</strong> — İnsan davranışı öğretimi insan gözlemini model olarak kullanır; canlı örnek olmak bu mesleğin bir boyutu.</li>
+          <li>• <strong>Antropoloji ve Arkeoloji Öğretmenleri (Anthropology and Archeology Teachers)</strong> — Alan çalışması bilgisi, sözlü tarih aktarımı ve kültürel yorum pedagojik sürecin ayrılmaz parçası.</li>
+          <li>• <strong>Mimarlık Öğretmenleri (Architecture Teachers)</strong> — Tasarım eleştirisi, stüdyo pedagojisi ve mesleki mentorluk öğrenci-öğretmen diyalogu olmadan gerçekleşemez.</li>
+          <li>• <strong>Güzel Sanatlar, Drama ve Müzik Öğretmenleri (Fine Arts, Drama, Music Teachers)</strong> — Performans, yaratıcı süreç ve sanatsal eleştiri canlı insan etkileşimini gerektiriyor.</li>
+          <li>• <strong>Sosyal Hizmet Öğretmenleri (Social Work Teachers)</strong> — Vaka çalışması pedagojisi ve etik tartışmalar gerçek hayat karmaşıklığını sınıfa taşıyor.</li>
+          <li>• <strong>Okul Yöneticileri (Education Administrators, Elementary and Secondary School)</strong> — Kurumsal liderlik, kriz yönetimi, veli ilişkileri ve öğretmen gelişim desteği insan kararı gerektiriyor.</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-gray-800 mb-3 mt-8">3. Yaratıcı ve Kişisel Hizmetler — 7 Meslek</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu kategori belki de yapay zekanın en meşhur "yarışma alanı" olarak algılanıyor — müzik üretiyor, görsel içerik tasarlıyor, senaryo yazıyor. Ama sahnede bir koreografın dansçılarla kurduğu ilişki, bir fitness eğitmenin öğrencisini tanıyarak geliştirdiği haftalık plan ya da bir iç mimarın müşterinin söylemediğini anlayarak tasarladığı mekan — bunlar çıktı değil, süreç. Ve o sürecin kalitesi insan yargısından kaynaklanıyor.
+        </p>
+        <ul className="space-y-2 mb-4 text-gray-700">
+          <li>• <strong>Koreograflar (Choreographers)</strong> — Hareket dilinin anlam inşası sanatçının bedensel zekasını ve kültürel belleğini bütünleştiriyor.</li>
+          <li>• <strong>Spor Antrenörleri ve İzciler (Coaches and Scouts)</strong> — Oyuncu gelişimi, takım dinamiği ve rekabet stratejisi anlık gözlem ve insani motivasyon gerektiriyor.</li>
+          <li>• <strong>Fitness ve Sağlık Koordinatörleri (Fitness and Wellness Coordinators)</strong> — Program tasarımı ve müşteri motivasyonu bireysel ilişkiyle sürdürülüyor.</li>
+          <li>• <strong>İç Mimarlar (Interior Designers)</strong> — Estetik yargı, müşteri vizyonunu anlama ve mekan-insan uyumu yaratıcı sezgi gerektiriyor.</li>
+          <li>• <strong>Rekreasyon Terapistleri (Recreational Therapists)</strong> — Aktivite aracılığıyla terapötik hedefler; insan etkileşimi tedavinin kendisi.</li>
+          <li>• <strong>Sahne ve Sergi Tasarımcıları (Set and Exhibit Designers)</strong> — Dramaturji, fiziksel mekan ve izleyici deneyimi arasındaki yaratıcı köprü.</li>
+          <li>• <strong>Dini Etkinlik Koordinatörleri (Clergy and Religious Coordinators)</strong> — Ritüel, topluluk bağı ve anlam üretimi insan varlığına bağlı.</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-gray-800 mb-3 mt-8">4. Mühendislik ve Tasarım — 6 Meslek</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Mühendislik otomasyon tartışmalarında sıklıkla tehdit altında gösteriliyor. Ama bu 6 meslek, mühendisliğin hesaplama ötesindeki boyutunu temsil ediyor: tasarım kararları belirsizlikle başlıyor ve fiziksel gerçeklikle bitiyor. Bir inşaat mühendisi zemin koşullarını değerlendirirken algoritmik veritabanının ötesinde yerel bağlamı, tarihi örüntüleri ve risk toleransını dengeliyor. Bu denge insani yargı gerektiriyor.
+        </p>
+        <ul className="space-y-2 mb-4 text-gray-700">
+          <li>• <strong>Biyomedikal Mühendisler (Biomedical Engineers)</strong> — Tıbbi cihaz tasarımı insan anatomisi, klinik ihtiyaç ve düzenleyici yargıyı sentezliyor.</li>
+          <li>• <strong>İnşaat Mühendisleri (Civil Engineers)</strong> — Altyapı kararları toplumsal, çevresel ve ekonomik boyutları bütünleştiriyor.</li>
+          <li>• <strong>Ulaşım Mühendisleri (Transportation Engineers)</strong> — Kentsel mobilite planlama insan davranışını, güvenlik önceliklerini ve fiziksel alanı dengeliyor.</li>
+          <li>• <strong>Fizikçiler (Physicists)</strong> — Araştırma hipotezi oluşturma ve deneysel tasarım yaratıcı sezgi gerektiriyor.</li>
+          <li>• <strong>Mimarlar (Architects)</strong> — Yapılı çevre tasarımı işlevsellik, estetik, kültürel bağlam ve insan deneyimini bütünleştiriyor.</li>
+          <li>• <strong>Peyzaj Mimarları (Landscape Architects)</strong> — Dış mekan tasarımı ekoloji, estetik ve toplumsal kullanımı birleştiriyor.</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-gray-800 mb-3 mt-8">5. Kamu Güvenliği ve Yönetim — 7 Meslek</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Kamu güvenliği alanı, yapay zekanın en zorlandığı ortamları barındırıyor: kriz, belirsizlik ve insan hayatına doğrudan etkili kararlar. Bir CEO piyasa verilerini analiz ederken rakamlar bir hikayenin yalnızca bir kısmı; geri kalanı sezgi, kültür okuma ve risk iştahı. İtfaiyeci alevlerin içinde ilerlerken sensör verisi değil — deneyim ve içgüdü yol gösteriyor.
+        </p>
+        <ul className="space-y-2 mb-4 text-gray-700">
+          <li>• <strong>Üst Düzey Yöneticiler — CEO (Chief Executives)</strong> — Stratejik vizyon, paydaş yönetimi ve kurumsal yön belirleme insan liderliği gerektiriyor.</li>
+          <li>• <strong>Güvenlik Müdürleri (Security Managers)</strong> — Risk değerlendirmesi ve kriz yanıtının gerçek zamanlı koordinasyonu.</li>
+          <li>• <strong>Polis Amirleri (Police and Detective Supervisors)</strong> — İnsan hakları, kamu güvenliği ve toplumsal güven arasındaki dengeyi yönetme.</li>
+          <li>• <strong>İtfaiye Amirleri (First-Line Supervisors of Firefighting)</strong> — Operasyon koordinasyonu ve ekip güvenliği kararı anlık ve kritik.</li>
+          <li>• <strong>Acil Yönetim Direktörleri (Emergency Management Directors)</strong> — Afet hazırlığı ve kriz yanıtı toplumsal liderlik gerektiriyor.</li>
+          <li>• <strong>İtfaiyeciler (Firefighters)</strong> — Fiziksel risk ortamında anlık karar verme ve insan kurtarma; ikame edilemez fiziksel yargı.</li>
+          <li>• <strong>Orman Korucuları (Forest Fire Inspectors and Prevention Specialists)</strong> — Alan değerlendirmesi ve risk tespiti yerel bilgi ve bütünsel gözlem gerektiriyor.</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-gray-800 mb-3 mt-8">6. Diğer Kategoriler — 6 Meslek</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu son grup çeşitli ancak ortak bir paydayı paylaşıyor: her biri insanın fiziksel dünya, toplumsal yapı ve doğal çevreyle kurduğu ilişkiyi yönetiyor. Bu mesleklerin görevleri heterojen, bağlam bağımlı ve insani yargı gerektiriyor.
+        </p>
+        <ul className="space-y-2 mb-4 text-gray-700">
+          <li>• <strong>Kentsel ve Bölgesel Plancılar (Urban and Regional Planners)</strong> — Şehrin geleceğini şekillendirmek demografik verinin, kültürel kimliğin ve siyasi dengenin ötesini gerektiriyor.</li>
+          <li>• <strong>Toprak ve Bitki Bilimciler (Soil and Plant Scientists)</strong> — Alan araştırması ve ekosistem değerlendirmesi yerinde gözlem ve bağlamsal yorumlama gerektirir.</li>
+          <li>• <strong>Uyarlanmış Beden Eğitimi Uzmanları (Adapted Physical Education Specialists)</strong> — Engelli bireylere bireyselleştirilmiş hareket programı tasarımı.</li>
+          <li>• <strong>Prefabrik Yapı Uzmanları (Manufactured Building and Mobile Home Installers)</strong> — Saha koşullarına anlık uyum ve el becerisi gerektiren fiziksel montaj.</li>
+          <li>• <strong>Eğitim Danışmanları (Educational Consultants)</strong> — Öğrenci profili, aile beklentisi ve eğitim sisteminin bütünüyle tanışıklık insani yargı üretiyor.</li>
+          <li>• <strong>Rekreasyon Çalışanları (Recreation Workers)</strong> — Topluluk katılımı, bireysel motivasyon ve grup dinamiği yönetimi.</li>
+        </ul>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Çocuğunuzun güçlü yönleri nerede?</p>
+            <p className="text-sm text-gray-600">Bu 65 meslekten hangilerine doğal eğilimi var? Örnek değerlendirme raporu, sözel, sayısal ve analitik güçleri somut biçimde gösteriyor.</p>
+          </div>
+          <Link href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Örnek raporu incele
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzun Eğitimi İçin Ne Anlam Taşıyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu liste bir triaj değil, bir yön pusulası. 65 mesleğin ortak paydası — duygusal zeka, fiziksel yargı, yaratıcı düşünme ve görev çeşitliliği — bu özellikleri okul döneminde destekleyen eğitimden besleniyor. Bir Türk ebeveyn olarak çocuğunuzun okul programına bu perspektifle bakın: hangi dersler bu özellikleri yetiştiriyor?
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Biyoloji ve Kimya:</strong> Sağlık kategorisinin 33 mesleğinin tamamı biyolojik temel üzerine inşa ediliyor. TYT'de biyoloji ve kimya puanları tıp, eczacılık, hemşirelik, fizyoterapi ve diş hekimliği programlarına girişin kapısını açıyor. 8. sınıfta fen bilimlerine güçlü bir zemin oluşturmak — salt sınav hazırlığı olarak değil, uzun vadeli bir kariyer altyapısı olarak — bu mesleklere giden yolun başlangıç noktası.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Psikoloji ve Sosyal Bilimler:</strong> Ruh sağlığı danışmanlığından sosyal hizmete, psikiyatriden hemşireliğe uzanan meslekler insan psikolojisini anlama kapasitesi gerektiriyor. Ortaokul ve lise döneminde sosyal bilimler derslerini ciddiye alan, insan ilişkilerini gözlemleyen ve empati geliştiren çocuklar bu alanlarda doğal bir avantaj elde ediyor. Türkiye'de psikoloji lisans programına giriş hem TYT hem AYT başarısını gerektiriyor; ancak altyapı çok daha erken kuruluyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Güzel Sanatlar, Müzik ve Drama:</strong> Yaratıcı ve kişisel hizmetler kategorisinin 7 mesleği sanatsal zemin üzerine inşa ediliyor. Türkiye'de güzel sanatlar liseleri ve AGSL (Anadolu Güzel Sanatlar Liseleri) koreografi, müzik ve sahne sanatları alanlarına açılan kapı. LGS döneminde bu alanlara ilgi duyan çocuğunuz için AGSL seçeneği değerlendirilmeli. Yalnızca sanatçı yetiştirmiyor; rekreasyon terapistinden iç mimara, sahne tasarımcısından müzik terapistine uzanan çeşitli bir kariyer yelpazesine zemin oluşturuyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Matematik ve Fizik:</strong> Mühendislik ve tasarım kategorisinin 6 mesleği — biyomedikal mühendisten peyzaj mimarına kadar — güçlü bir analitik temel gerektiriyor. TYT'de matematik ve AYT'de fizik, bu programlara giriş için kritik. Ama önemli olan salt sınav performansı değil; gerçek dünya problemlerine analitik yaklaşma alışkanlığı. Bu alışkanlık ortaokul matematiğinde problem çözme pratiğiyle inşa ediliyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Beden Eğitimi ve Spor:</strong> Spor antrenörlüğü, fitness koordinatörlüğü ve uyarlanmış beden eğitimi uzmanlığı spor kültürüyle büyüyen çocuklar için doğal bir alan. Türkiye'de spor liseleri ve spor bilimleri fakülteleri bu kariyer yollarının resmi giriş kapıları. LGS döneminde spor lisesi seçeneği sadece sporcular için değil; insan hareketiyle, sağlıkla ve toplulukla bağ kuran çocuklar için de anlamlı bir yol.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>LGS döneminde fark yaratacak beceriler:</strong> Bu 65 mesleğin geleceği için LGS'nin test ettiği şeyler — sözel akıl yürütme, sayısal muhakeme, analitik düşünme — sağlam bir başlangıç noktası. Ama bu mesleklerin uzun vadeli gerektirdiği şeyler LGS'nin ötesinde: duygusal olgunluk, belirsizliğe tahammül, insan ilişkisi kurma kapasitesi. Bu özellikler sınıfta değil, hayat deneyiminde gelişiyor. Sporda, sanatta, topluluk projesinde, aile sorumluluğunda. Bu nedenle çocuğunuzun okul dışı aktiviteleri — kulüpler, spor, gönüllülük, sanat — geleceğin kariyer profili için derece notları kadar değerli veriler taşıyor.
+        </p>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">YKS tercih rehberi:</strong> Bu 65 meslekten birine ulaşan Türkiye üniversite programları şunları kapsıyor — Tıp (tüm sağlık uzmanlıkları için temel), Hemşirelik ve Ebelik, Fizyoterapi ve Rehabilitasyon, Psikoloji, Sosyal Hizmet, Mimarlık, İç Mimarlık, Güzel Sanatlar, Müzik, Spor Bilimleri, İnşaat Mühendisliği, Biyomedikal Mühendislik. Bu programların büyük çoğunluğu TYT ağırlıklı ya da TYT+AYT eşit ağırlıklı yerleştirme kullanıyor; TYT'de biyoloji, kimya ve matematik puanları kritik kaldıraç noktaları.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Geleceğe Hazırlık: Tablonun İkinci Yarısı</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Hangi mesleklerin güvende olduğunu bilmek, tablonun yalnızca ilk yarısı. Veriler net: bu 65 meslek yapay zekanın yapısal olarak giremeyeceği bir alanda duruyor ve bu mesleklerin önemli bir kısmı — özellikle sağlık alanındakiler — yalnızca güvende kalmakla kalmayıp büyüyor. Uzman hemşirelikten ortopedi cerrahlığına, koreografiden kentsel planlamaya uzanan bu yelpaze, hem Türkiye'nin demografik dönüşümüne hem de küresel işgücü trendlerine hizalı bir kariyer haritası çiziyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tablonun ikinci yarısı ise çocuğunuzun bu mesleklere doğal eğilimi olan biri olup olmadığını anlamak. Doğal güçlü yönler — sözel akıl yürütmede mi, analitik düşünmede mi, yaratıcı problem çözmede mi öne çıkıyor — hem tercih yaparken hem de çalışmayı yönlendirirken belirleyici. Güçlü olunan alanda çalışmak, hem daha yüksek başarı hem de daha sürdürülebilir motivasyon üretiyor; araştırmalar bu iki boyutu tutarlı biçimde doğruluyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye'de ebeveynler genellikle iki aşamada karar veriyor: LGS için lise türü seçimi ve YKS için bölüm tercihi. Her iki aşamada da kullanılan veri çoğunlukla okul notu ve deneme sınavı puanlarından ibaret. Ama okul notu sınıf-göreli bir ölçüm; hangi lisede, hangi sınıfta olduğuna göre değişiyor. Ve deneme puanı anlık bir fotoğraf; altında yatan bilişsel kapasiteyi, güçlü yönleri ve gelişim alanlarını göstermiyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Normatif bir akademik değerlendirme — çocuğunuzu yaşıt uluslararası akranlarıyla kıyaslayan, sözel akıl yürütme, sayısal beceri ve problem çözme alanlarını ayrı ayrı ölçen — bu kararlar için çok daha güvenilir bir temel sağlıyor. Hem şu anki düzeyi gösteriyor hem de hangi kariyer yönlendirmesinin doğal güçlerle örtüştüğüne dair somut bir çerçeve sunuyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yapay zekanın alamayacağı bu 65 mesleğin ortak özelliği — duygusal zeka, fiziksel yargı, yaratıcı düşünce, görev çeşitliliği — aynı zamanda çok yönlü bir akademik profili gerektiriyor. Bu profil rastlantıyla değil, erken farkındalıkla ve doğru yönlendirilmiş çalışmayla inşa ediliyor.
+        </p>
+
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Çocuğunuzun ücretsiz değerlendirmesini başlatın</p>
+            <p className="text-sm text-gray-600">Eduentry'nin uyarlanabilir değerlendirmesi sözel akıl yürütme, sayısal beceri ve problem çözme performansını uluslararası akranlarıyla karşılaştırıyor. Hangi kariyer yollarının çocuğunuzun doğal güçleriyle örtüştüğünü ve şu an nerede durduğunu somut verilerle görün. 20–30 dakika, kayıt gerekmez.</p>
+          </div>
+          <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Çocuğunuzun ücretsiz değerlendirmesini başlatın
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          {[
+            { href: '/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir', tag: 'Rehber', title: 'PISA Nedir? 2025 Sonuçları, Türkiye Sıralaması ve Hazırlık Rehberi' },
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Rehber', title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor? Uluslararası Akademik Kıyaslama' },
+            { href: '/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur', tag: 'Rehber', title: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

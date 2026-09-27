@@ -1540,6 +1540,42 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/internship',
     },
   },
+  {
+    slug: '65-jobs-ai-cannot-automate',
+    contentSlug: '65-jobs-ai-cannot-automate',
+    title: '65 Jobs AI and Robots Cannot Automate — What Every Parent Should Know',
+    shortTitle: '65 Jobs AI Cannot Automate',
+    description: 'The World Economic Forum says 40% of jobs face AI disruption. Here are 65 professions with 0% automation probability — and what they mean for your child\'s future.',
+    tldr: 'Based on US Bureau of Labor Statistics employment data and automation probability scoring, 65 professions carry a 0.0% probability of automation. They share four traits AI cannot replicate: emotional intelligence, the ability to read a room, creative work, and high day-to-day task variability. Healthcare dominates the list, with nurse practitioners projected to grow 40% by 2034.',
+    date: '2026-09-28',
+    dateModified: '2026-09-28',
+    readTime: '11 min read',
+    tags: ['Future of Work', 'Career Planning', 'AI and Education', 'Future-Proof Careers', 'Child Development'],
+    faqs: [
+      {
+        q: 'Which jobs are completely safe from AI automation?',
+        a: 'According to US Bureau of Labor Statistics data and automation probability analysis, 65 professions score 0.0% probability of automation. These span healthcare (the largest group), education, creative and personal services, engineering and design, public safety, and management. What they share is reliance on emotional intelligence, physical judgment, creative decision-making, or human relationships that AI cannot replicate.',
+      },
+      {
+        q: 'Is healthcare really safe from AI?',
+        a: 'Healthcare is the single largest category of AI-resistant jobs. While AI assists with diagnostics, imaging analysis, and administrative tasks, the core of clinical practice — building trust with a patient, making nuanced judgement calls under pressure, interpreting ambiguous symptoms in a whole-person context, and the physical reality of hands-on care — remains irreplaceable by AI. Nurse practitioners are projected to grow 40% by 2034 and earn a median wage of $129,210.',
+      },
+      {
+        q: 'Should I steer my child away from technology careers because of AI?',
+        a: 'Not at all — in fact, the opposite is often true. AI engineers, biomedical engineers, and data scientists working alongside AI are among the fastest-growing and highest-paid careers. The risk is not in technology careers but in routine, predictable cognitive tasks across any sector — data entry, basic analysis, template-based writing. The engineers, designers, and scientists who shape what AI does are among the safest workers of all.',
+      },
+      {
+        q: 'What school subjects should my child focus on for an AI-proof career?',
+        a: 'The subjects that underpin AI-resistant careers are broader than many parents expect. Biology, chemistry, and psychology are gateways to the entire healthcare category. Art and design feed into interior design, set design, and architecture. Physical education underpins sports medicine and fitness careers. Maths and physics open engineering routes. The common thread is that subjects requiring genuine understanding — rather than pattern recognition or information retrieval — produce the skills AI cannot easily replicate.',
+      },
+    ],
+    cta: {
+      heading: 'How future-ready is your child?',
+      body: 'Eduentry\'s free adaptive assessment benchmarks your child\'s verbal reasoning, numeracy, and problem-solving skills against peers internationally — and shows you exactly where their strengths lie for the careers that matter.',
+      label: 'Start free assessment',
+      href: '/#academic',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

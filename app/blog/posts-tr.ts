@@ -1021,6 +1021,38 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/#academic',
     },
   },
+  {
+    slug: 'yapay-zekanin-alamayacagi-65-meslek',
+    contentSlug: '65-jobs-ai-cannot-automate',
+    title: 'Yapay Zekanın Alamayacağı 65 Meslek — Her Ebeveynin Bilmesi Gerekenler',
+    shortTitle: 'Yapay Zekanın Alamayacağı 65 Meslek',
+    description: 'Dünya Ekonomik Forumu\'na göre 2030\'a kadar işlerin %40\'ı yapay zekadan etkilenecek. İşte %0 otomasyon olasılığıyla 65 meslek ve çocuğunuzun geleceği için ne anlama geldikleri.',
+    tldr: 'ABD Çalışma İstatistikleri Bürosu verileri ve otomasyon olasılığı analizine göre 65 meslek %0,0 otomasyon olasılığı taşıyor. Bu meslekler dört ortak özelliği paylaşıyor: duygusal zeka, ortamı okuma becerisi, yaratıcı çalışma ve yüksek günlük görev değişkenliği. Sağlık en büyük kategoriyi oluşturuyor; uzman hemşirelik 2034\'e kadar %40 büyümesi bekleniyor.',
+    date: '2026-09-28',
+    dateModified: '2026-09-28',
+    readTime: '11 dk okuma',
+    tags: ['Geleceğin Meslekleri', 'Kariyer Planlaması', 'Yapay Zeka ve Eğitim', 'Çocuk Gelişimi'],
+    faqs: [
+      {
+        q: 'Hangi meslekler yapay zekadan tamamen güvende?',
+        a: 'ABD Çalışma İstatistikleri Bürosu verileri ve otomasyon olasılığı analizine göre 65 meslek %0,0 otomasyon olasılığı taşıyor. Bu meslekler sağlık (en büyük grup), eğitim, yaratıcı ve kişisel hizmetler, mühendislik ve tasarım, kamu güvenliği ve yönetim alanlarında yayılıyor. Ortak özellikleri duygusal zeka, fiziksel yargı, yaratıcı karar alma veya yapay zekanın taklit edemeyeceği insan ilişkilerine dayanmaları.',
+      },
+      {
+        q: 'Sağlık sektörü gerçekten yapay zekadan güvende mi?',
+        a: 'Sağlık, yapay zekaya karşı dirençli mesleklerin en büyük kategorisini oluşturuyor. Yapay zeka teşhis, görüntüleme analizi ve idari işlerde yardımcı olsa da klinik pratiğin özü — hastayla güven oluşturma, baskı altında nüanslı kararlar alma, belirsiz semptomları bütünsel bağlamda yorumlama ve elle müdahalenin fiziksel gerçekliği — yapay zekayla değiştirilemez. Uzman hemşireler 2034\'e kadar %40 büyümesi ve 129.210 dolar medyan maaşla öne çıkıyor.',
+      },
+      {
+        q: 'YKS\'de hangi bölümler bu mesleklere kapı açıyor?',
+        a: 'Sağlık mesleklerinin tamamı için tıp, eczacılık, hemşirelik, psikoloji ve fizyoterapi bölümleri temel giriş noktaları. Mühendislik ve tasarım meslekleri için inşaat, biyomedikal ve çevre mühendisliği bölümleri. Yaratıcı meslekler için güzel sanatlar, iç mimarlık ve sahne sanatları. TYT\'de biyoloji, kimya ve matematik güçlü performansı bu hedeflerin tamamına ulaşmayı destekliyor.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuz geleceğe ne kadar hazır?',
+      body: 'Eduentry\'nin ücretsiz uyarlanabilir değerlendirmesi, çocuğunuzun sözel akıl yürütme, sayısal beceri ve problem çözme performansını uluslararası akranlarıyla karşılaştırıyor — güçlü yönlerinin tam olarak nerede yattığını gösteriyor.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/#academic',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

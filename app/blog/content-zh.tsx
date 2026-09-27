@@ -1670,6 +1670,225 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  '65-jobs-ai-cannot-automate': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        2025年，世界经济论坛发布了一份令许多家长感到不安的报告：到2030年，全球40%的工作岗位将受到人工智能的冲击。对于在澳大利亚、英国和新加坡生活的华人家庭而言，这一数字尤其令人忧虑——许多家长从中国移民至此，正是为了给孩子创造更好的教育和职业前景。当孩子还在为OC班考试、选择性高中入学考试、A-Level备考或ATAR成绩努力时，这份关于未来工作的焦虑已悄然叠加在日常的学业压力之上。
+      </p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        但数据同样讲述了另一个故事。美国劳工统计局对数百种职业进行了系统性的自动化概率分析，结果显示：有65个职业的自动化概率精确为0.0%。不是1%，不是2%，而是零。这不是乐观的预测，而是基于这些职业所要求的能力特征得出的客观结论。了解这65个职业，以及它们背后共同的能力逻辑，是每位关心孩子未来的家长值得认真阅读的内容。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">为什么人工智能无法取代这些工作？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          要理解这65个职业的共同之处，首先需要了解人工智能目前的实际局限。人工智能在模式识别、数据处理、重复性任务和有限情境内的决策方面表现出色。但它在四个维度上存在根本性的短板，而这些短板恰恰是许多高价值职业的核心所在。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          第一是<strong>情商（Emotional Intelligence）</strong>。人工智能可以分析文字的情感倾向，但它无法真正感受另一个人的痛苦、恐惧或希望，也无法在情感层面建立真实的信任关系。一位精神科医生在与患者的对话中，传递的不仅是信息，更是一种人性的存在感——这是算法无法复制的。一位执业护士在凌晨三点握住一位临终患者的手时，提供的是任何机器都无法替代的陪伴。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          第二是<strong>读懂情境的能力（Contextual Judgment）</strong>。临床医生在诊断时，不仅依赖检查数据，还会观察患者的肢体语言、考量家庭背景、判断症状叙述的可靠性。这种在复杂、模糊、信息不完整的真实情境中做出细致判断的能力，远超当前人工智能的边界。澳大利亚和英国的医疗系统尤其强调全人医疗（holistic care）理念，这使得情境判断在临床实践中更为关键。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          第三是<strong>创意工作（Creative Work）</strong>。人工智能可以生成建筑效果图，但它无法真正理解一个社区居民的生活需求，也无法在空间设计中融入对文化记忆和人文关怀的深刻理解。舞蹈编导创造的作品，源于对人类身体、情感和叙事的独特诠释——这是一种本质上属于人类的表达。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          第四是<strong>日常任务的高度可变性（High Task Variability）</strong>。消防员在每一次出警时面对的情况都是独一无二的；急救医护人员在道路事故现场所处理的状况永远无法被完全预测和程序化。正是这种每次都不同的情境多样性，使得自动化成本极高而可靠性极低。
+        </p>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">关键数据：</strong>世界经济论坛2025年《未来就业报告》指出，到2030年，全球40%的工作岗位将受到人工智能的冲击——但同时强调，需求增长最快的职业正是那些依赖人类独特能力的岗位。美国劳工统计局的数据则更为精确：65个职业的自动化概率为0.0%，其中医疗卫生类职业占比超过50%。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">65个职业：按类别详解</h2>
+
+        <h3 className="text-xl font-semibold text-gray-800 mb-3">一、医疗卫生类（33个职业）</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          医疗卫生是这65个职业中占比最大的类别，也是在澳大利亚和英国就业前景最为稳定的领域之一。澳大利亚的Medicare体系和英国的NHS（国家卫生服务体系）均面临持续的人手短缺，尤其是在护理、心理健康和专科医疗方面。这种结构性短缺并非短期现象，而是人口老龄化和医疗需求增长的长期驱动结果。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          美国劳工统计局的数据显示，执业护士（Nurse Practitioner）2024至2034年的预计增长率高达40%，中位年薪为129,210美元——这是全美增长最快的职业之一。在澳大利亚，注册护士和执业护士的需求同样远超供给，移民背景的医疗从业者享有明确的职业移民通道。英国NHS的招募压力则使得具有医疗背景的移民家庭子女，在职业发展上拥有额外的优势。
+        </p>
+        <ul className="space-y-2 mb-6 list-disc list-inside text-gray-700">
+          <li>执业护士</li>
+          <li>医师助理</li>
+          <li>护理学教师</li>
+          <li>心理健康咨询师</li>
+          <li>职业治疗师</li>
+          <li>矫形器与假肢专家</li>
+          <li>助产士护士</li>
+          <li>物理治疗师</li>
+          <li>艺术治疗师</li>
+          <li>音乐治疗师</li>
+          <li>心理健康与药物滥用社会工作者</li>
+          <li>医疗社会工作者</li>
+          <li>皮肤科医生</li>
+          <li>精神科医生</li>
+          <li>神经科医生</li>
+          <li>高级精神科护理实践者</li>
+          <li>临床护理专家</li>
+          <li>重症监护护士</li>
+          <li>急救医护人员</li>
+          <li>急救技术员</li>
+          <li>口腔颌面外科医生</li>
+          <li>骨科外科医生</li>
+          <li>牙科修复专家</li>
+          <li>外科医生（其他）</li>
+          <li>普通牙医</li>
+          <li>临床神经心理学家</li>
+          <li>神经心理学家</li>
+          <li>住院医师</li>
+          <li>物理医学与康复医生</li>
+          <li>预防医学医生</li>
+          <li>运动医学医生</li>
+          <li>小儿外科医生</li>
+          <li>妇产科医生</li>
+        </ul>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">增长亮点：</strong>执业护士2024–2034年预计增长40%，中位年薪$129,210（美国劳工统计局）。在澳大利亚，医疗卫生是最大的就业部门，占总劳动力约14%，且持续保持强劲增长。英国NHS每年招募数万名国际医疗专业人员。
+        </Callout>
+
+        <h3 className="text-xl font-semibold text-gray-800 mb-3 mt-8">二、教育类（6个职业）</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          教育类职业的抗自动化逻辑与医疗卫生高度相似：核心价值在于人与人之间的关系建立、对学习者个体差异的细微感知，以及在复杂课堂环境中的实时判断。人工智能可以提供自适应学习内容，但它无法在一个有30名学生的教室中同时感知每个孩子的情绪状态、学习困难和社会背景，并据此调整教学策略。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在澳大利亚和英国，中小学教育管理者（包括校长和副校长）不仅需要教学专业知识，还需要复杂的领导力、危机管理能力和社区关系维护能力——这些都是高度人性化的职能，远超任何算法的能力边界。
+        </p>
+        <ul className="space-y-2 mb-6 list-disc list-inside text-gray-700">
+          <li>心理学教授</li>
+          <li>人类学与考古学教授</li>
+          <li>建筑学教授</li>
+          <li>艺术/戏剧/音乐教授</li>
+          <li>社会工作教授</li>
+          <li>中小学教育管理者</li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-800 mb-3 mt-8">三、创意与个人服务类（7个职业）</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          这一类别的职业涵盖了人类表达、身体健康和精神需求的多个维度。舞蹈编导创作的不只是动作序列，而是将人类的情感经验转化为可见的身体语言——这种创造性诠释需要对人类体验的深刻理解，以及对文化语境的敏感感知。健身与健康协调员则需要根据每位客户的身体状况、生活方式和心理需求制定个性化方案，这种高度个体化的服务无法被标准化算法替代。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          室内设计师的工作同样值得特别关注。在澳大利亚和英国快速发展的房地产市场中，室内设计服务的需求持续增长。一位优秀的室内设计师不仅需要美学判断力，还需要理解客户的生活方式、家庭结构和情感需求，并将这些转化为实际的空间方案——这是一种本质上需要人与人之间深度沟通的创意工作。
+        </p>
+        <ul className="space-y-2 mb-6 list-disc list-inside text-gray-700">
+          <li>舞蹈编导</li>
+          <li>运动教练与球探</li>
+          <li>健身与健康协调员</li>
+          <li>室内设计师</li>
+          <li>娱乐治疗师</li>
+          <li>舞台与展览设计师</li>
+          <li>宗教活动与教育总监</li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-800 mb-3 mt-8">四、工程与设计类（6个职业）</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          工程类职业之所以抵抗自动化，并非因为工程师不使用技术工具——恰恰相反，现代工程师大量使用计算机辅助设计和模拟软件。关键在于，工程决策的核心是对物理世界、人类安全、法规要求和社区影响的综合判断，这种判断需要在充满不确定性和相互冲突的约束条件下做出，而这正是人工智能目前无法可靠完成的。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在澳大利亚，生物医学工程和土木工程是移民背景家庭子女最常选择的工程专业之一。澳大利亚工程师协会（Engineers Australia）认证的工程学位，结合技术移民政策下的职业优势，使这一领域成为具有稳定长期回报的职业路径。建筑师和景观建筑师则在澳大利亚持续增长的城市化建设中享有稳定的需求。
+        </p>
+        <ul className="space-y-2 mb-6 list-disc list-inside text-gray-700">
+          <li>生物医学工程师</li>
+          <li>土木工程师</li>
+          <li>交通运输工程师</li>
+          <li>物理学家</li>
+          <li>建筑师</li>
+          <li>景观建筑师</li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-800 mb-3 mt-8">五、公共安全与管理类（7个职业）</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          公共安全类职业的核心是在极端条件下做出关乎生死的判断，以及在危机情境中协调人员和资源的能力。消防员和急救人员每次出警面对的都是独特的情境——建筑结构、危险物质、被困人员的位置和状态都在不断变化。这种在高度动态、高风险环境中的实时决策，是人工智能无法可靠承担的职责。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          首席执行官（CEO）作为一个抵抗自动化的职业，可能出乎许多人的预料。原因在于，顶级管理决策本质上是一种政治和人际的综合判断——需要建立信任、应对不确定性、在相互冲突的利益之间寻找平衡，并在组织内部激励人心。这些能力的核心，仍然是不可替代的人类智慧。
+        </p>
+        <ul className="space-y-2 mb-6 list-disc list-inside text-gray-700">
+          <li>首席执行官</li>
+          <li>安全经理</li>
+          <li>警察督察</li>
+          <li>消防督察</li>
+          <li>应急管理总监</li>
+          <li>消防员</li>
+          <li>自然资源保护官员</li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-800 mb-3 mt-8">六、其他类（6个职业）</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          这一类别包含了几个乍看之下分散、但内在逻辑一致的职业。城市与区域规划师需要在技术分析、社区参与、政治协调和长远愿景之间寻找复杂的平衡——这是一种本质上需要人类价值判断的工作。土壤与植物科学家在田野中进行的是难以标准化的实地评估，需要对自然系统的细微变化做出专业判断。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          教育辅导员的工作同样不可忽视。在澳大利亚和英国的学校体系中，学校辅导员扮演着连接学生心理健康、学业发展和家庭支持的关键角色。随着青少年心理健康问题受到更多重视，这一职业的需求只会持续增长，而非减少。
+        </p>
+        <ul className="space-y-2 mb-6 list-disc list-inside text-gray-700">
+          <li>城市与区域规划师</li>
+          <li>土壤与植物科学家</li>
+          <li>适应性体育教育专家</li>
+          <li>预制房屋建造者</li>
+          <li>教育辅导员</li>
+          <li>休闲活动工作者</li>
+        </ul>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">想知道您的孩子具备哪些未来职业所需的核心能力？</p>
+            <p className="text-sm text-gray-600">Eduentry提供免费的自适应学术评估，帮助您了解孩子在语言推理、数字能力和问题解决方面的真实水平——这些正是上述抗人工智能职业所需的核心能力基础。</p>
+          </div>
+          <Link href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            查看示例报告
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">这对您孩子的教育意味着什么？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          了解了这65个职业之后，一个自然的问题是：我的孩子现在应该如何准备？对于在澳大利亚参加OC班考试、选择性高中入学考试，或在英国备战11+和A-Level的华人家庭子女而言，这个问题有几个具体的维度值得认真思考。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>学科选择的战略价值</strong>。生物、化学和心理学是进入整个医疗卫生领域最重要的基础学科。在澳大利亚的ATAR体系中，医学院录取通常要求化学和生物双A，部分大学还要求数学；在英国的A-Level体系中，进入医学、牙科和相关医疗专业同样需要理科强项。值得注意的是，心理学作为A-Level科目，在英国顶尖大学的医学院申请中也受到越来越多的重视。美术和设计类学科（包括Art & Design、Design Technology）为建筑、室内设计和景观建筑方向打开大门。数学和物理则是工程学所有分支的共同基础，在澳大利亚和英国的工程专业录取中权重极高。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>软技能的早期培养</strong>。这65个职业所共同依赖的能力——情商、情境判断、创造性思维——并非在大学阶段才能开始培养。研究表明，这些能力的发展在6至17岁阶段就已经具有关键意义。对于正在经历澳大利亚或英国教育体系的华人家庭子女，参与学校的辩论队、戏剧社、社区志愿服务或跨文化交流项目，都是系统性培养这些能力的有效途径。这些经历不仅对孩子的全面发展有益，也是澳大利亚精英学校和英国Russell Group大学在选拔时越来越看重的维度。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>从小开拓职业视野</strong>。许多华人移民家庭的职业期望集中在少数几个"安全"职业上——医生、律师、工程师、会计师。这份名单中的65个职业提示了一个更宽广的可能性：运动医学医生、神经心理学家、景观建筑师、应急管理总监……这些职业同样具备极低的自动化风险、稳定的就业前景和良好的薪资水平，却远比"医生"或"工程师"等宽泛标签更能帮助孩子找到真正适合自己的方向。在孩子6至12岁阶段就开始有意识地拓宽职业认知，为未来的专业选择播下更多可能性的种子。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>评估孩子的能力基础</strong>。在做任何职业规划之前，了解孩子目前的认知能力基线是最关键的第一步。语言推理能力强的孩子，在以沟通为核心的医疗和教育职业中有天然优势；空间推理和数字推理突出的孩子，在工程和建筑方向上的发展空间更大。标准化评估——无论是澳大利亚的OC班考试准备评估，还是英国的11+备考评估——都能提供这方面的客观数据，帮助家长做出更有依据的教育决策。
+        </p>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">澳大利亚/英国升学关键提示：</strong>在澳大利亚，进入医学院通常需要ATAR 99+加上UCAT（大学临床能力测试）高分；进入工程专业一般需要ATAR 85+加上数学/物理强项。在英国，医学院A-Level通常要求A*AA，科目须包含化学，大多数学校还要求生物或数学；建筑专业通常接受艺术、数学和其他理科的组合。及早了解孩子的能力水平，有助于制定合理的备考计划和科目选择策略。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">结语：焦虑之外，更清晰的图景</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          人工智能正在改变劳动力市场的结构，这是不可否认的现实。但"40%的工作岗位将受到冲击"并不等于"40%的人将失业"，也不等于"所有职业都岌岌可危"。数据揭示的是一个更为细致的图景：那些依赖情感连接、情境判断、创造性表达和身体实践的职业，正在变得比以往任何时候都更具价值。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          对于正在为孩子做长远规划的华人家庭，这65个职业提供了一份具体的参考清单——不是为了限制孩子的选择，而是为了在面对未来的不确定性时，拥有更清晰的判断依据。了解孩子目前的能力优势和发展方向，是制定这一计划最重要的起点。
+        </p>
+
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">开始孩子的免费评估</p>
+            <p className="text-sm text-gray-600">Eduentry的免费自适应评估将您孩子的语言推理、数字能力和问题解决技能与国际同龄人进行对比——精确显示他们的优势所在，帮助您了解孩子为未来做好了多少准备。</p>
+          </div>
+          <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            开始孩子的免费评估
+          </Link>
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

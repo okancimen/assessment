@@ -859,6 +859,38 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: 'https://eduentry.com/#academic',
     },
   },
+  {
+    slug: '65-metiers-a-labri-de-l-ia',
+    contentSlug: '65-jobs-ai-cannot-automate',
+    title: '65 Métiers à l\'Abri de l\'IA et des Robots — Ce Que Chaque Parent Doit Savoir',
+    shortTitle: '65 Métiers que l\'IA ne Peut Pas Automatiser',
+    description: 'Le Forum Économique Mondial prédit que 40% des emplois seront perturbés par l\'IA d\'ici 2030. Voici 65 métiers avec 0% de probabilité d\'automatisation — et ce qu\'ils signifient pour l\'avenir de votre enfant.',
+    tldr: 'Selon les données du Bureau of Labor Statistics américain et l\'analyse des probabilités d\'automatisation, 65 métiers ont une probabilité d\'automatisation de 0,0%. Ils partagent quatre caractéristiques que l\'IA ne peut pas reproduire : l\'intelligence émotionnelle, la lecture de la situation, le travail créatif et une forte variabilité quotidienne des tâches.',
+    date: '2026-09-28',
+    dateModified: '2026-09-28',
+    readTime: '11 min de lecture',
+    tags: ['Avenir du Travail', 'Orientation Professionnelle', 'IA et Éducation', 'Développement de l\'Enfant'],
+    faqs: [
+      {
+        q: 'Quels métiers sont complètement à l\'abri de l\'automatisation par l\'IA ?',
+        a: 'Selon les données du BLS américain, 65 métiers ont une probabilité d\'automatisation de 0,0%. Ils s\'étendent à la santé, l\'éducation, les services créatifs, l\'ingénierie et la conception, la sécurité publique et le management. Ce qu\'ils ont en commun : l\'intelligence émotionnelle, le jugement physique, la créativité ou les relations humaines que l\'IA ne peut pas reproduire.',
+      },
+      {
+        q: 'Le secteur de la santé est-il vraiment protégé de l\'IA ?',
+        a: 'La santé est la plus grande catégorie de métiers résistants à l\'IA. Si l\'IA aide au diagnostic et à l\'analyse d\'imagerie, le cœur de la pratique clinique — créer une relation de confiance, prendre des décisions nuancées sous pression, interpréter des symptômes ambigus dans un contexte global — reste irremplaçable. Les infirmiers praticiens devraient croître de 40% d\'ici 2034.',
+      },
+      {
+        q: 'Quelles matières au lycée mènent à ces métiers protégés de l\'IA ?',
+        a: 'Les SVT, la chimie et la psychologie ouvrent la voie à toute la filière santé (PASS/LAS via Parcoursup). Les arts plastiques et le design mènent à l\'architecture et au design d\'intérieur. L\'EPS soutient la médecine du sport et les métiers du fitness. Les mathématiques et la physique ouvrent les filières d\'ingénierie. La clé est la compréhension profonde plutôt que la mémorisation.',
+      },
+    ],
+    cta: {
+      heading: 'Votre enfant est-il prêt pour l\'avenir ?',
+      body: 'L\'évaluation adaptative gratuite d\'Eduentry compare les compétences de raisonnement verbal, numérique et de résolution de problèmes de votre enfant avec celles de ses pairs à l\'international — et vous montre exactement où se trouvent ses points forts.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: '/#academic',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

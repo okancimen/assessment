@@ -587,6 +587,38 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     tags: ['academic-testing'],
   },
   {
+    slug: '65-empleos-que-la-ia-no-puede-automatizar',
+    contentSlug: '65-jobs-ai-cannot-automate',
+    title: '65 Empleos que la IA y los Robots No Pueden Automatizar — Lo que Todo Padre Debe Saber',
+    shortTitle: '65 Empleos que la IA No Puede Automatizar',
+    description: 'El Foro Económico Mundial prevé que el 40% de los empleos serán perturbados por la IA para 2030. Aquí hay 65 profesiones con 0% de probabilidad de automatización — y lo que significan para el futuro de su hijo.',
+    tldr: 'Según datos de la Oficina de Estadísticas Laborales de EE.UU. y el análisis de probabilidad de automatización, 65 profesiones tienen una probabilidad de automatización del 0,0%. Comparten cuatro características que la IA no puede replicar: inteligencia emocional, capacidad de leer el entorno, trabajo creativo y alta variabilidad diaria en las tareas.',
+    date: '2026-09-28',
+    dateModified: '2026-09-28',
+    readTime: '11 min de lectura',
+    tags: ['Futuro del Trabajo', 'Orientación Profesional', 'IA y Educación', 'Desarrollo Infantil'],
+    faqs: [
+      {
+        q: '¿Qué empleos están completamente a salvo de la automatización por IA?',
+        a: 'Según los datos del BLS de EE.UU., 65 profesiones tienen una probabilidad de automatización del 0,0%. Abarcan la sanidad, la educación, los servicios creativos, la ingeniería, la seguridad pública y la gestión. Lo que tienen en común: inteligencia emocional, juicio físico, toma de decisiones creativas o relaciones humanas que la IA no puede replicar.',
+      },
+      {
+        q: '¿El sector sanitario realmente está protegido de la IA?',
+        a: 'La sanidad es la categoría más grande de empleos resistentes a la IA. Aunque la IA ayuda con el diagnóstico y el análisis de imágenes, el núcleo de la práctica clínica — generar confianza con el paciente, tomar decisiones matizadas bajo presión, interpretar síntomas ambiguos en un contexto integral — sigue siendo irreemplazable.',
+      },
+      {
+        q: '¿Qué materias de bachillerato llevan a estas profesiones protegidas?',
+        a: 'Biología, química y psicología abren la puerta a toda la categoría sanitaria. Artes plásticas y diseño llevan a arquitectura y diseño de interiores. Educación Física apoya la medicina deportiva. Matemáticas y física abren las rutas de ingeniería. La FP Sanitaria es también una vía directa y muy valorada para muchas de estas profesiones.',
+      },
+    ],
+    cta: {
+      heading: '¿Está su hijo preparado para el futuro?',
+      body: 'La evaluación adaptativa gratuita de Eduentry compara las habilidades de razonamiento verbal, numérico y resolución de problemas de su hijo con las de sus pares a nivel internacional — y le muestra exactamente dónde están sus puntos fuertes.',
+      label: 'Iniciar evaluación gratuita',
+      href: '/#academic',
+    },
+  },
+  {
     slug: 'comprender-fortalezas-debilidades-hijo-bachillerato',
     contentSlug: 'understanding-child-strengths-weaknesses-high-school',
     title: 'Comprender las fortalezas y debilidades de tu hijo antes del bachillerato',

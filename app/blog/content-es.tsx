@@ -2551,6 +2551,236 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  '65-jobs-ai-cannot-automate': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Si hay una pregunta que ocupa a los padres de hoy más que cualquier otra cuando piensan en el futuro de sus hijos, es esta: ¿qué trabajos sobrevivirán a la inteligencia artificial? El Foro Económico Mundial publicó en 2025 su Informe sobre el Futuro del Empleo con una estimación que encendió todas las alarmas: el 40% de los empleos mundiales serán perturbados por la IA antes de 2030. Los titulares se escribieron solos, la ansiedad se extendió con rapidez y muchas familias empezaron a preguntarse si tenía sentido que sus hijos estudiasen cualquier cosa que una máquina pudiese hacer mejor.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        La inquietud es comprensible, pero los datos cuentan una historia más matizada — y, en varios aspectos importantes, más tranquilizadora. Porque la misma investigación que documenta el riesgo de automatización también identifica con precisión los empleos donde ese riesgo es cero. No aproximadamente cero, no bajo: exactamente cero coma cero por ciento según el análisis de probabilidad de automatización de la Oficina de Estadísticas Laborales de Estados Unidos. Son 65 profesiones que comparten una serie de características que la IA, por más sofisticada que sea, no puede replicar. Y la mayoría de ellas son precisamente los empleos mejor remunerados, más respetados y con mayor crecimiento proyectado del próximo decenio. Este artículo explica cuáles son, por qué son inmunes a la automatización y qué debería hacer un padre español hoy para orientar la trayectoria educativa de su hijo hacia ese horizonte.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Por qué la IA no puede reemplazar estos empleos?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La pregunta merece una respuesta honesta antes de enumerar los empleos. La inteligencia artificial es extraordinariamente capaz en un conjunto específico de tareas: procesar grandes volúmenes de datos estructurados, reconocer patrones en imágenes, generar texto coherente a partir de instrucciones, ejecutar procesos repetitivos con velocidad y precisión. Estas capacidades son reales y están transformando sectores enteros. Pero hay cuatro categorías de actividad humana donde la IA no solo es inferior, sino que carece de las condiciones para competir de manera significativa.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La primera es la <strong>inteligencia emocional genuina</strong>. La IA puede reconocer patrones lingüísticos asociados a emociones y generar respuestas que suenan empáticas. Pero la empatía clínica — la capacidad de un médico, un psiquiatra o una matrona de ajustar su comportamiento en tiempo real a la situación específica de un paciente concreto, de generar confianza en un momento de vulnerabilidad, de leer lo que no se dice — no es reproducible algorítmicamente. En el Sistema Nacional de Salud español, donde el vínculo entre el profesional y el paciente tiene un peso estructural enorme, esta diferencia importa.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La segunda categoría es la <strong>lectura del entorno físico en tiempo real</strong>. Un cirujano ortopédico, un bombero o un ingeniero civil que supervisa una estructura no están ejecutando un protocolo: están interpretando constantemente un entorno físico impredecible, tomando decisiones que afectan vidas en fracciones de segundo, adaptando sus respuestas a circunstancias que ningún modelo de entrenamiento ha anticipado exactamente. La robótica avanzada ha mejorado enormemente, pero la destreza física acoplada al juicio contextual sigue siendo un dominio humano.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La tercera es el <strong>trabajo creativo de alta variabilidad</strong>. Un coreógrafo, un diseñador de interiores o un arquitecto paisajista no repite soluciones: crea respuestas nuevas a problemas que tienen una dimensión estética, cultural y contextual que no se reduce a una función de optimización. La IA generativa produce resultados plausibles dentro de lo que ya existe; la creatividad profesional de alto nivel opera precisamente en la frontera de lo que no existe todavía.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La cuarta, y quizás la más subestimada, es la <strong>alta variabilidad diaria en las tareas</strong>. Los empleos más automatizables son los que tienen alta repetibilidad: la misma tarea, en el mismo contexto, con los mismos parámetros, día tras día. Los 65 empleos que examinamos en este artículo son estructuralmente distintos: cada día, cada paciente, cada emergencia, cada proyecto es fundamentalmente diferente del anterior. Esta variabilidad no es un fallo del sistema; es el núcleo mismo del trabajo.
+        </p>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">Dato clave:</strong> El Foro Económico Mundial estima que el 40% de los empleos mundiales serán perturbados por la IA para 2030. Sin embargo, 65 profesiones tienen una probabilidad de automatización del 0,0% según el análisis de la Oficina de Estadísticas Laborales de EE.UU. — y la mayoría pertenecen a los sectores con mayor crecimiento proyectado.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Los 65 empleos por categoría</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La clasificación que sigue recoge las 65 profesiones con probabilidad de automatización del 0,0% según los datos del BLS de EE.UU., agrupadas por sector. Para cada categoría se ofrece un análisis de por qué la IA no puede sustituirla y, donde los datos lo permiten, cifras de crecimiento proyectado.
+        </p>
+
+        <h3 className="text-xl font-bold text-gray-800 mb-3 mt-6">Salud (33 profesiones)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La sanidad concentra la mayor parte de los empleos inmunes a la automatización por una razón que va más allá de la complejidad técnica: la práctica clínica es fundamentalmente un acto de relación humana. El diagnóstico, el tratamiento y el cuidado ocurren en el contexto de una interacción entre dos personas donde la confianza, la comunicación y el juicio clínico matizado son inseparables del resultado terapéutico. La IA puede analizar una imagen de resonancia magnética con precisión notable; no puede sostener la mano de un paciente que acaba de recibir un diagnóstico difícil, explicarle sus opciones con claridad y sensibilidad, y tomar una decisión terapéutica que incorpore sus valores, su historia y su contexto familiar. Todo eso lo hace el profesional sanitario — y es irreemplazable.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En el contexto español, el Sistema Nacional de Salud (SNS) es uno de los empleadores de mayor tamaño del país y uno de los más estables. Las proyecciones de la Oficina de Estadísticas Laborales de EE.UU. para los enfermeros practicantes indican un crecimiento del 40% entre 2024 y 2034, la tasa de expansión más alta de cualquier profesión en esta categoría. El envejecimiento de la población española —con una de las esperanzas de vida más altas de Europa— garantiza una demanda estructural creciente de estos profesionales durante décadas.
+        </p>
+        <ul className="space-y-2 mb-4 list-disc list-inside text-gray-700">
+          <li>Enfermeros Practicantes</li>
+          <li>Asistentes Médicos</li>
+          <li>Profesores de Enfermería</li>
+          <li>Consejeros de Salud Mental</li>
+          <li>Terapeutas Ocupacionales</li>
+          <li>Ortesistas y Protesistas</li>
+          <li>Matronas</li>
+          <li>Fisioterapeutas</li>
+          <li>Terapeutas de Arte</li>
+          <li>Musicoterapeutas</li>
+          <li>Trabajadores Sociales (Salud Mental)</li>
+          <li>Trabajadores Sociales (Salud)</li>
+          <li>Dermatólogos</li>
+          <li>Psiquiatras</li>
+          <li>Neurólogos</li>
+          <li>Enfermeros Psiquiátricos Avanzados</li>
+          <li>Enfermeros Especialistas Clínicos</li>
+          <li>Enfermeros de Cuidados Intensivos</li>
+          <li>Paramédicos</li>
+          <li>Técnicos de Emergencias Médicas</li>
+          <li>Cirujanos Maxilofaciales</li>
+          <li>Cirujanos Ortopédicos</li>
+          <li>Prostodoncistas</li>
+          <li>Cirujanos Generales</li>
+          <li>Dentistas</li>
+          <li>Neuropsicólogos Clínicos</li>
+          <li>Neuropsicólogos</li>
+          <li>Hospitalistas</li>
+          <li>Médicos de Rehabilitación</li>
+          <li>Médicos de Medicina Preventiva</li>
+          <li>Médicos del Deporte</li>
+          <li>Cirujanos Pediátricos</li>
+          <li>Ginecólogos y Obstetras</li>
+        </ul>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">Crecimiento proyectado:</strong> Los enfermeros practicantes en EE.UU. crecerán un 40% entre 2024 y 2034 según el BLS — la tasa de expansión más alta de cualquier profesión sanitaria. En España, el SNS emplea a más de 500.000 profesionales sanitarios y la demanda proyectada no para de crecer.
+        </Callout>
+
+        <h3 className="text-xl font-bold text-gray-800 mb-3 mt-8">Educación (6 profesiones)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La enseñanza universitaria en las especialidades más complejas combina dominio disciplinar profundo con la capacidad de transmitir conocimiento a grupos heterogéneos, adaptarse a sus dificultades específicas, generar motivación intrínseca y modelar formas de pensar que no pueden reducirse a contenido transferible. Los profesores universitarios de psicología, antropología, arquitectura o trabajo social no imparten información — construyen marcos de interpretación del mundo que requieren la presencia y el juicio de un profesional humano para funcionar. La IA puede ser un auxiliar poderoso en la preparación de materiales o en la evaluación formativa; no puede sustituir al docente que conecta la teoría con la experiencia vivida y la devuelve transformada al alumno.
+        </p>
+        <ul className="space-y-2 mb-4 list-disc list-inside text-gray-700">
+          <li>Profesores de Psicología</li>
+          <li>Profesores de Antropología y Arqueología</li>
+          <li>Profesores de Arquitectura</li>
+          <li>Profesores de Arte, Teatro y Música</li>
+          <li>Profesores de Trabajo Social</li>
+          <li>Directores de Centros Educativos</li>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los directores de centros educativos merecen mención aparte. Su trabajo implica gestión de equipos humanos, resolución de conflictos entre familias, docentes y administración, toma de decisiones estratégicas bajo incertidumbre y representación institucional de la comunidad educativa. Es exactamente el perfil de liderazgo que la IA no puede replicar: alto en inteligencia social, alto en variabilidad diaria, alto en consecuencias humanas directas.
+        </p>
+
+        <h3 className="text-xl font-bold text-gray-800 mb-3 mt-8">Servicios Creativos y Personales (7 profesiones)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Esta categoría agrupa profesiones que comparten una característica definitoria: el producto final es una experiencia humana que no puede ser delegada a una máquina sin perder su esencia. Un coreógrafo no produce pasos de danza — produce una obra que comunica algo entre cuerpos humanos en un espacio compartido. Un terapeuta recreativo no organiza actividades — construye, mediante la actividad estructurada, una experiencia que tiene efectos terapéuticos demostrables en personas con necesidades específicas. Un diseñador de interiores no selecciona muebles — transforma espacios en entornos que afectan el bienestar, la productividad y las relaciones de las personas que los habitan.
+        </p>
+        <ul className="space-y-2 mb-4 list-disc list-inside text-gray-700">
+          <li>Coreógrafos</li>
+          <li>Entrenadores y Ojeadores Deportivos</li>
+          <li>Coordinadores de Fitness y Bienestar</li>
+          <li>Diseñadores de Interiores</li>
+          <li>Terapeutas Recreativos</li>
+          <li>Diseñadores de Escenografía y Exposiciones</li>
+          <li>Directores de Actividades Religiosas</li>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los entrenadores y ojeadores deportivos son un caso especialmente interesante para el contexto español, dado el peso del deporte profesional en la economía nacional. El ojo clínico de un ojeador no es un algoritmo de análisis de datos — es el resultado de décadas de observación de cómo los jugadores responden bajo presión, cómo gestionan el fracaso, cómo se relacionan con sus compañeros. La IA puede proporcionar métricas; no puede reemplazar el juicio que se construye a partir de años de experiencia observacional con seres humanos.
+        </p>
+
+        <h3 className="text-xl font-bold text-gray-800 mb-3 mt-8">Ingeniería y Diseño (6 profesiones)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los ingenieros civiles y de transporte, los arquitectos, los físicos y los ingenieros biomédicos trabajan en la intersección entre el conocimiento técnico profundo y la aplicación a sistemas físicos complejos con consecuencias reales. La IA es una herramienta extraordinariamente útil para el análisis estructural, la simulación de carga, el diseño paramétrico o la modelización de fluidos. Pero el ingeniero que evalúa si un puente es seguro en las condiciones geológicas y climáticas específicas de un lugar concreto, o el arquitecto que traduce las necesidades humanas de una comunidad en un espacio construido que las sirve, están haciendo algo que va mucho más allá del cálculo: están ejerciendo un juicio profesional que integra datos, experiencia, ética y contexto de una manera que la IA no puede asumir de forma autónoma.
+        </p>
+        <ul className="space-y-2 mb-4 list-disc list-inside text-gray-700">
+          <li>Ingenieros Biomédicos</li>
+          <li>Ingenieros Civiles</li>
+          <li>Ingenieros de Transporte</li>
+          <li>Físicos</li>
+          <li>Arquitectos</li>
+          <li>Arquitectos Paisajistas</li>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La ingeniería biomédica merece atención especial: es la profesión que conecta más directamente el mundo sanitario con el mundo tecnológico y su crecimiento proyectado está vinculado tanto al envejecimiento poblacional como a la expansión de la tecnología médica. Para un estudiante con aptitud en ciencias y matemáticas que también se interesa por la medicina, la ingeniería biomédica es una de las carreras con mejor proyección a largo plazo que puede elegirse hoy.
+        </p>
+
+        <h3 className="text-xl font-bold text-gray-800 mb-3 mt-8">Seguridad Pública y Gestión (7 profesiones)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los profesionales de la seguridad pública — bomberos, policías, gestores de emergencias — operan en los entornos más impredecibles y de mayor riesgo que existen. Sus decisiones se toman en fracciones de segundo, con información incompleta, en condiciones físicas extremas, con vidas humanas directamente en juego. Esta es la definición de trabajo que la IA no puede automatizar: no porque la tecnología sea insuficiente, sino porque el problema mismo requiere presencia física, juicio instantáneo y responsabilidad humana.
+        </p>
+        <ul className="space-y-2 mb-4 list-disc list-inside text-gray-700">
+          <li>Directores Ejecutivos</li>
+          <li>Gerentes de Seguridad</li>
+          <li>Supervisores de Policía</li>
+          <li>Supervisores de Bomberos</li>
+          <li>Directores de Gestión de Emergencias</li>
+          <li>Bomberos</li>
+          <li>Guardas Forestales</li>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los directores ejecutivos aparecen en esta categoría por razones similares a las que hacen irrremplazable al director de un centro educativo: el liderazgo de alto nivel en organizaciones complejas requiere inteligencia social, visión estratégica, gestión de la ambigüedad y capacidad de tomar decisiones que afectan a personas reales en contextos donde la información nunca es completa. La IA puede ser un aliado analítico para cualquier CEO; no puede ser el CEO.
+        </p>
+
+        <h3 className="text-xl font-bold text-gray-800 mb-3 mt-8">Otros (6 profesiones)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Este grupo recoge profesiones que no encajan nítidamente en ninguna de las categorías anteriores pero comparten las mismas características de inmunidad a la automatización. Los urbanistas y planificadores regionales trabajan en la intersección entre los datos demográficos, la política pública, la sostenibilidad ambiental y las necesidades de comunidades reales: su trabajo es fundamentalmente político y social, no solo técnico. Los científicos de suelos y plantas combinan trabajo de campo en condiciones impredecibles con juicio experto que no puede reducirse a un algoritmo. Los orientadores educativos — orientadores de bachillerato e instituto — son quizás los más relevantes para el contexto de este artículo.
+        </p>
+        <ul className="space-y-2 mb-4 list-disc list-inside text-gray-700">
+          <li>Urbanistas y Planificadores Regionales</li>
+          <li>Científicos de Suelos y Plantas</li>
+          <li>Especialistas en Educación Física Adaptada</li>
+          <li>Constructores de Viviendas Prefabricadas</li>
+          <li>Orientadores Educativos</li>
+          <li>Animadores de Ocio y Tiempo Libre</li>
+        </ul>
+        <Callout color="indigo">
+          <strong className="text-indigo-900">El patrón común:</strong> Las 65 profesiones comparten cuatro características que la IA no puede replicar: inteligencia emocional real en contextos de alta presión, lectura de entornos físicos impredecibles, trabajo creativo con alta variabilidad, y toma de decisiones que afectan vidas humanas directas. Son exactamente las características que los seres humanos desarrollamos mejor cuando tenemos una formación profunda y sólida.
+        </Callout>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">¿Sabe en qué áreas destaca su hijo?</p>
+            <p className="text-sm text-gray-600">La evaluación de Eduentry identifica las fortalezas cognitivas de su hijo — razonamiento verbal, numérico y resolución de problemas — y las compara con pares internacionales. Obtenga el informe gratuito antes de orientar la elección de itinerario.</p>
+          </div>
+          <Link href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Ver informe de ejemplo
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué significa esto para la educación de su hijo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Para un padre español que está acompañando a su hijo a través del bachillerato y la preparación para la Selectividad — o EBAU, como se denomina ahora en la mayoría de comunidades autónomas — la lista de los 65 empleos inmunes a la IA tiene consecuencias concretas en las decisiones educativas de hoy.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La categoría más grande, la sanidad, se accede principalmente a través del bachillerato de ciencias y una EBAU competitiva. Medicina, Enfermería, Fisioterapia, Terapia Ocupacional, Odontología — todas requieren una nota de corte que se construye durante los dos años de bachillerato. <strong>Biología</strong> y <strong>química</strong> son las materias que abren más puertas en este sector: un estudiante con sólida formación en estas dos disciplinas tiene acceso al abanico más amplio de opciones sanitarias. La <strong>FP Sanitaria</strong> — especialmente el Técnico Superior en Anatomía Patológica y Citología, en Laboratorio Clínico y Biomédico, o en Dietética — es también una vía directa, muy valorada y con altísima empleabilidad hacia muchas de las profesiones de la lista.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La <strong>psicología</strong> como materia optativa en bachillerato no solo prepara para la carrera de Psicología; desarrolla exactamente las capacidades de inteligencia emocional y comprensión humana que están en el núcleo de la mayoría de los 65 empleos resistentes a la automatización. Un estudiante que entiende cómo funcionan los procesos cognitivos, emocionales y sociales tiene una ventaja transversal en cualquiera de estas profesiones.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Para las profesiones del bloque de ingeniería y diseño — ingeniería biomédica, civil, de transporte, arquitectura — el camino pasa por <strong>matemáticas</strong> y <strong>física</strong> sólidas. La combinación de estas dos materias con buenas notas en la EBAU abre acceso a los grados de ingeniería más competitivos. La arquitectura, además, requiere una aptitud espacial y un sentido del diseño que no se desarrolla de un día para otro: cuanto antes se cultiven estas habilidades, mejor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las profesiones creativas — coreografía, diseño de interiores, diseño de escenografía, arquitectura paisajista — tienen una vía de entrada que con frecuencia se subestima en el sistema educativo español: las <strong>artes plásticas y el diseño</strong> en bachillerato. Un estudiante con aptitud creativa que también desarrolla rigor técnico en dibujo, diseño y composición tiene un perfil muy valorado en carreras que combinan ambas dimensiones. La <strong>Educación Física</strong>, además de su valor intrínseco, es la materia que conecta directamente con la medicina deportiva, el entrenamiento profesional y la coordinación de actividades de bienestar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pero quizás el mensaje más importante de este análisis no es qué materias elegir, sino qué tipo de estudiante construir. Las 65 profesiones inmunes a la IA no solo requieren conocimiento técnico — requieren <strong>habilidades blandas</strong> que la educación formal suele desarrollar de manera insuficiente: capacidad de comunicación bajo presión, empatía profesional, resolución de problemas en entornos de alta variabilidad, trabajo en equipo con personas de perfiles muy distintos. Estas habilidades se construyen en la práctica, no en el aula. Un estudiante que complementa su formación académica con experiencias reales — voluntariado en entornos sanitarios, participación en proyectos de diseño, implicación en la comunidad — llega a la universidad y al mercado laboral con una dimensión que sus compañeros que solo estudiaron no tienen.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Desde el punto de vista de la orientación académica, el bachillerato es el momento decisivo. La modalidad que elija su hijo en primero de bachillerato — ciencias, humanidades y ciencias sociales, o artes — dibuja el mapa de opciones universitarias disponibles. Una elección bien informada, basada en el perfil cognitivo real del estudiante y no solo en sus notas relativas dentro del grupo clase, puede marcar la diferencia entre dos años de bachillerato con el viento a favor y dos años cuesta arriba.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Está su hijo preparado para el futuro? La evaluación que le dará claridad</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los padres que acompañan a sus hijos en la etapa del bachillerato y la preparación para la EBAU se enfrentan a una de las decisiones más consecuentes de la trayectoria educativa de su hijo sin contar, en la mayoría de los casos, con datos suficientes. Conocen las notas de clase — que miden rendimiento relativo dentro de un grupo, no posición absoluta en una distribución más amplia. Conocen las impresiones de los profesores — que son valiosas pero inevitablemente parciales. Pero no saben con precisión dónde se sitúa su hijo en razonamiento verbal, en aptitud numérica, en resolución de problemas, en comparación con sus pares a nivel internacional.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Esa información tiene un valor concreto. Saber que un estudiante tiene una aptitud numérica en el percentil 85 a nivel internacional pero un razonamiento verbal en el percentil 60 cambia la conversación sobre qué modalidad de bachillerato elegir, qué materias reforzar y qué carreras universitarias tienen más sentido. Saber que un estudiante que obtiene notas mediocres en clase tiene, sin embargo, un razonamiento no verbal sobresaliente cambia la conversación sobre su potencial real y el tipo de entorno educativo que mejor lo sirve.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La evaluación adaptativa gratuita de Eduentry está diseñada exactamente para eso. Mide razonamiento verbal, aptitud numérica y resolución de problemas en una escala normativa calibrada internacionalmente, en 20 a 30 minutos, sin necesidad de registro previo. El informe que genera no es una nota escolar ni una estimación subjetiva: es una comparación percentil con pares internacionales que le dice exactamente dónde están los puntos fuertes de su hijo y dónde hay margen de desarrollo.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En un momento en que el mercado laboral está cambiando más rápido que en cualquier otro período de la historia reciente, conocer el perfil cognitivo de su hijo no es un lujo académico — es una ventaja estratégica. Las 65 profesiones que hemos examinado en este artículo son el destino; la evaluación es el mapa que le ayuda a orientar el camino.
+        </p>
+        <div className="bg-indigo-50 border border-indigo-200 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">¿Está su hijo preparado para el futuro?</p>
+            <p className="text-sm text-gray-600">La evaluación adaptativa gratuita de Eduentry compara las habilidades de razonamiento verbal, numérico y resolución de problemas de su hijo con las de sus pares a nivel internacional — y le muestra exactamente dónde están sus puntos fuertes. Resultados en menos de 30 minutos.</p>
+          </div>
+          <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Iniciar la evaluación gratuita de su hijo
+          </Link>
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {
