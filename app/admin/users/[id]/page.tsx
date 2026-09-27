@@ -92,10 +92,10 @@ export default async function AdminUserDetailPage({
   const childIds = children.map((c) => c.id)
   const assessmentsResult = childIds.length > 0
     ? await db.from('assessments')
-        .select('id, child_id, assessment_type, status, created_at, completed_at, results(overall_score, standardized_score, subject_scores)')
+        .select('id, child_id, assessment_type, status, created_at, completed_at, reminder_sent_at, reminder_count, results(overall_score, standardized_score, subject_scores)')
         .in('child_id', childIds)
         .order('created_at', { ascending: false })
-    : { data: [] as { id: string; child_id: string; assessment_type: string; status: string; created_at: string; completed_at: string | null; results: { overall_score: number | null; standardized_score: number | null; subject_scores: Record<string, number> | null }[] }[] }
+    : { data: [] as { id: string; child_id: string; assessment_type: string; status: string; created_at: string; completed_at: string | null; reminder_sent_at: string | null; reminder_count: number | null; results: { overall_score: number | null; standardized_score: number | null; subject_scores: Record<string, number> | null }[] }[] }
 
   const assessmentsByChild: Record<string, typeof assessmentsResult.data> = {}
   for (const a of assessmentsResult.data ?? []) {
@@ -272,6 +272,53 @@ export default async function AdminUserDetailPage({
                                     <ForceCompleteButton assessmentId={a.id as string} />
                                   )}
                                 </div>
+
+                                {/* Reminder status — only for in-progress */}
+                                {a.status === 'in_progress' && (() => {
+                                  const count = (a.reminder_count as number | null) ?? 0
+                                  const lastSent = a.reminder_sent_at as string | null
+                                  const startedAt = a.created_at as string
+                                  const daysSinceStart = Math.floor((Date.now() - new Date(startedAt).getTime()) / (1000 * 60 * 60 * 24))
+                                  const nextDue = count === 0
+                                    ? `Day 1 (${Math.max(0, 1 - daysSinceStart)}d)`
+                                    : count === 1
+                                    ? (() => { const d = lastSent ? Math.floor((Date.now() - new Date(lastSent).getTime()) / (1000 * 60 * 60 * 24)) : 0; return `Day 7 (${Math.max(0, 7 - d)}d)` })()
+                                    : count === 2
+                                    ? (() => { const d = lastSent ? Math.floor((Date.now() - new Date(lastSent).getTime()) / (1000 * 60 * 60 * 24)) : 0; return `Day 15 (${Math.max(0, 8 - d)}d)` })()
+                                    : 'Done (3/3 sent)'
+                                  return (
+                                    <div className="flex items-center justify-between bg-white rounded-lg px-3 py-2">
+                                      <div className="flex items-center gap-2">
+                                        <span className="text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide">Reminders</span>
+                                        <div className="flex gap-1">
+                                          {[1, 2, 3].map((n) => (
+                                            <div
+                                              key={n}
+                                              className={`w-4 h-4 rounded-full flex items-center justify-center text-[8px] font-bold ${
+                                                count >= n
+                                                  ? 'bg-indigo-500 text-white'
+                                                  : 'bg-[#e5e5ea] text-[#6e6e73]'
+                                              }`}
+                                            >
+                                              {n}
+                                            </div>
+                                          ))}
+                                        </div>
+                                        <span className="text-[10px] text-[#6e6e73]">{count}/3 sent</span>
+                                      </div>
+                                      <div className="text-right">
+                                        {lastSent && (
+                                          <p className="text-[10px] text-[#6e6e73]">
+                                            Last: {new Date(lastSent).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                                          </p>
+                                        )}
+                                        {count < 3 && (
+                                          <p className="text-[10px] text-[#4F46E5] font-medium">Next: {nextDue}</p>
+                                        )}
+                                      </div>
+                                    </div>
+                                  )
+                                })()}
 
                                 {/* Academic results */}
                                 {!isInternship && stdScore != null && (
