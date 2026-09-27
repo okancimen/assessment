@@ -2,11 +2,15 @@ async function sendEmail(to: string, subject: string, html: string): Promise<voi
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) return
   const from = process.env.EMAIL_FROM ?? 'Eduentry <noreply@eduentry.com>'
-  await fetch('https://api.resend.com/emails', {
+  const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({ from, to, subject, html }),
   })
+  if (!res.ok) {
+    const body = await res.text().catch(() => '')
+    throw new Error(`Resend error ${res.status}: ${body}`)
+  }
 }
 
 export async function sendInternshipConfirmationEmail(opts: {
