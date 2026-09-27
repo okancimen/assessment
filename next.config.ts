@@ -1,4 +1,10 @@
 import type { NextConfig } from "next";
+import { BLOG_POSTS_TR } from './app/blog/posts-tr'
+import { BLOG_POSTS_ES } from './app/blog/posts-es'
+import { BLOG_POSTS_FR } from './app/blog/posts-fr'
+import { BLOG_POSTS_AR } from './app/blog/posts-ar'
+import { BLOG_POSTS_RU } from './app/blog/posts-ru'
+import { BLOG_POSTS_ZH } from './app/blog/posts-zh'
 
 const nextConfig: NextConfig = {
   experimental: {
@@ -17,6 +23,14 @@ const nextConfig: NextConfig = {
     },
   },
   async redirects() {
+    const localeSlugRedirects = [
+      ...BLOG_POSTS_TR.map(p => ({ source: `/blog/${p.slug}`, destination: `/tr/blog/${p.slug}`, permanent: true })),
+      ...BLOG_POSTS_ES.map(p => ({ source: `/blog/${p.slug}`, destination: `/es/blog/${p.slug}`, permanent: true })),
+      ...BLOG_POSTS_FR.map(p => ({ source: `/blog/${p.slug}`, destination: `/fr/blog/${p.slug}`, permanent: true })),
+      ...BLOG_POSTS_AR.map(p => ({ source: `/blog/${p.slug}`, destination: `/ar/blog/${p.slug}`, permanent: true })),
+      ...BLOG_POSTS_RU.map(p => ({ source: `/blog/${p.slug}`, destination: `/ru/blog/${p.slug}`, permanent: true })),
+      ...BLOG_POSTS_ZH.map(p => ({ source: `/blog/${p.slug}`, destination: `/zh/blog/${p.slug}`, permanent: true })),
+    ]
     return [
       { source: '/internship/assessment/:id/question', destination: '/assessment/:id/question', permanent: true },
       { source: '/internship/assessment/:id/complete', destination: '/assessment/:id/complete', permanent: true },
@@ -45,6 +59,8 @@ const nextConfig: NextConfig = {
       { source: '/es/blog/how-does-your-child-compare-globally',       destination: '/es/blog/como-se-compara-tu-hijo-a-nivel-mundial',          permanent: true },
       // Duplicate NSW OC posts — consolidate into the newer, better-optimised post
       { source: '/blog/australia-oc-test-guide', destination: '/blog/nsw-opportunity-class-test-guide', permanent: true },
+      // Locale blog slugs — redirect /blog/[locale-slug] → /[locale]/blog/[locale-slug]
+      ...localeSlugRedirects,
     ]
   },
   compress: true,

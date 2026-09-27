@@ -627,7 +627,7 @@ export const BLOG_POSTS_RU: BlogPostMeta[] = [
     tags: ['academic-testing', 'uae', 'cat4'],
   },
   {
-    slug: 'bally-nwea-map-razъyasneniye',
+    slug: 'bally-nwea-map-razyasneniye',
     contentSlug: 'nwea-map-scores-explained',
     title: 'Баллы NWEA MAP: что означают результаты вашего ребёнка',
     shortTitle: 'Баллы NWEA MAP: полное руководство',
