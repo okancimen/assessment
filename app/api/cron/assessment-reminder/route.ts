@@ -20,10 +20,6 @@ export async function GET(req: NextRequest) {
   const authHeader = req.headers.get('authorization')
   const querySecret = req.nextUrl.searchParams.get('secret')
   const cronSecret = process.env.CRON_SECRET
-  // Temporary diagnostic — remove after confirming env var is set
-  if (req.nextUrl.searchParams.get('diag') === '1') {
-    return NextResponse.json({ cron_secret_set: !!cronSecret, cron_secret_length: cronSecret?.length ?? 0 })
-  }
   const valid = cronSecret && (
     authHeader === `Bearer ${cronSecret}` ||
     querySecret === cronSecret
