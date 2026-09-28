@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { Bullet, Callout, Check } from './blog-components'
 
 export const AR_CONTENT: Record<string, React.ReactNode> = {
