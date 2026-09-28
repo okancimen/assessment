@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Script from "next/script";
+import { headers } from "next/headers";
 import ConditionalAnalytics from "@/components/ConditionalAnalytics";
 import "./globals.css";
 
@@ -67,13 +68,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const lang = (await headers()).get('x-locale') ?? 'en-GB'
   return (
-    <html lang="en-GB" className={`${geist.variable} h-full antialiased`}>
+    <html lang={lang} className={`${geist.variable} h-full antialiased`}>
       <head>
         <meta name="theme-color" content="#1d1d1f" />
         <meta name="yandex-verification" content="f8b17ecde6325153" />

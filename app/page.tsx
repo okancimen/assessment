@@ -118,7 +118,6 @@ const WEBSITE_SCHEMA = {
   name: 'Eduentry',
   url: 'https://eduentry.com',
   publisher: { '@id': 'https://eduentry.com/#organization' },
-  potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: 'https://eduentry.com/search?q={search_term_string}' }, 'query-input': 'required name=search_term_string' },
 }
 
 const ORGANIZATION_SCHEMA = {
