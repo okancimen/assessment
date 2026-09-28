@@ -534,7 +534,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler',
     title: 'PISA 2025 Sonuçları: Küresel Eğitim Krizi — Her Ebeveynin Bilmesi Gerekenler',
-    shortTitle: 'PISA 2025 Nedir? Sonuçlar ve Türkiye Analizi',
+    shortTitle: 'PISA 2025 Sonuçları: Türkiye ve Dünya Karşılaştırması',
     description: 'PISA 2025, OECD ülkelerinde matematik, okuma ve fen bilimlerinde şimdiye kadar kaydedilen en düşük puanları ortaya koyuyor. Sonuçların aileler için ne anlama geldiğini ve çocuğunuzu değerlendirmenin neden hiç bu kadar önemli olmadığını açıklıyoruz.',
     tldr: 'PISA 2025, OECD tarihinde kaydedilen en düşük matematik, okuma ve fen bilimleri ortalama puanlarını ortaya koydu. PISA 2025 bulgularına göre yapay zekayı ödev süreçlerinde kullanan öğrenciler kullanmayanlara kıyasla fen bilimlerinde yaklaşık 20 puan daha düşük skor aldı; bu fark yaklaşık bir yıllık okul eğitimine denk geliyor.',
 
@@ -547,7 +547,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Matematik ve okuma puanları neden bu kadar düştü?', a: 'Araştırmacılar birden fazla faktöre dikkat çekiyor: pandemi kaynaklı öğrenme kayıpları, artan dijital dikkat dağınıklığı (öğrencilerin %28\'i sınıf arkadaşlarının fen derslerinde dijital cihazlarla dikkat dağıttığını söylüyor) ve "hızlı okuma"nın yükselişi — içeriği hızla tarayıp gerçek anlayış olmadan ilerlemek. Bu oran 2018-2025 arasında neredeyse iki katına çıktı.' },
       { q: 'Yapay zeka kullanımı çocuğumun öğrenmesine zarar verir mi?', a: 'PISA 2025, metin özetleme, taslak oluşturma veya araştırma gibi belirli ödev görevleri için yapay zeka kullanan öğrencilerin fen bilimlerinde, kullanmayan akranlarından yaklaşık 20 puan daha düşük puan aldığını ortaya koydu — bu yaklaşık bir yıllık okul eğitimine eşdeğer. Yapay zeka okuryazarlığı eğitimiyle birleştirildiğinde genel öğrenme amaçlı yapay zeka kullanımı olumsuz bir etki göstermedi.' },
       { q: 'Çocuğumun uluslararası düzeyde nerede durduğunu nasıl öğrenebilirim?', a: 'Eduentry, PISA ile aynı uluslararası ölçeğe hizalanmış ücretsiz uyarlanabilir bir değerlendirme sunar. 6-17 yaş arası çocukları matematik, İngilizce, sözel ve sözel olmayan akıl yürütme alanlarında test eder ve ebeveynlere çocuklarının küresel düzeydeki akranlarıyla karşılaştırmasını gösteren bir yüzdelik dilim sıralaması sağlar.' },
-      { q: 'PISA 2025\'e göre en başarılı eğitim sistemleri hangileri ve Türkiye bu ülkelerden neler öğrenebilir?', a: 'PISA 2025\'te Singapur (575), Japonya (536) ve Güney Kore (524) matematik sıralamasında zirvede yer almaktadır. Bu ülkelerin ortak noktaları: yoğun bireysel çalışma kültürü, güçlü problem çözme müfredatı ve ders dışı akademik destekten yüksek yararlanma oranı. Türkiye açısından en uygulanabilir ders: öğrencilerin gerçek yaşam bağlamında matematiksel akıl yürütme pratiklerini artırmak ve okuma anlama için yapılandırılmış günlük alışkanlıklar oluşturmak.' },
+      { q: 'PISA 2025 ülke karşılaştırması: Türkiye, Fransa, İspanya ve Suudi Arabistan nasıl bir sonuç aldı?', a: 'PISA 2025 matematik ortalamaları: Singapur 575, Japonya 536, Güney Kore 524, İngiltere 495, Fransa 475, İspanya 472, OECD ortalaması 472, Türkiye 463, Suudi Arabistan 394. Okuma ortalamaları: Singapur 543, Japonya 516, OECD 476, Fransa 479, İspanya 488, Türkiye 479, Suudi Arabistan 404. Türkiye, matematikte OECD ortalamasının 9 puan altında kalırken okumada OECD ortalamasını aşmıştır — bu, güçlü okuma eğitiminin matematik uygulamasıyla desteklenmesi gerektiğine işaret eder. Fransa ve İspanya OECD ortalaması civarındayken Suudi Arabistan her iki alanda da belirgin biçimde geride kalmıştır.' },
     ],
     cta: {
       heading: 'Çocuğunuzun nerede durduğunu öğrenin — ücretsiz',
@@ -609,7 +609,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'pisa-nedir-cocugunuz-nasil-hazirlanir',
     title: 'PISA Nedir? Açılımı, Puanı ve Sınava Giriş — 2025 Rehberi',
-    shortTitle: 'PISA Nedir? Açılımı, Puanı, 2025 Sonuçları',
+    shortTitle: 'PISA Nedir? Açılımı, Kaç Yılda Bir, Puan Rehberi',
     description:
       'PISA nedir, ne demek, açılımı nedir? Her 3 yılda bir 91 ülkede uygulanan bu sınavda öğrenci nasıl seçilir, puan nasıl hesaplanır, kaç yılda bir yapılır? 2025 Türkiye sonuçları ve ebeveyn rehberi.',
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2022\'de matematikte 453, okumada 440 ve fen bilimlerinde 452 puan alarak OECD ortalamasının altında kaldı.',
@@ -870,7 +870,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'pisa-nedir-is-hayatini-sekillendiren-sinav',
     title: 'PISA Nedir? 2025 Sonuçları, "PISA 2026" Sorusu ve İş Hayatındaki Gizli Bağ',
-    shortTitle: 'PISA Nedir? 2025 Sonuçları ve İş Hayatıyla Bağı',
+    shortTitle: 'PISA 2026 Var Mı? 2025 Sonuçları ve Kariyer',
     description:
       'PISA nedir, nasıl yapılır, PISA 2025 Türkiye\'yi nasıl değerlendirdi? "PISA 2026" diye bir sınav var mı? Ve en önemlisi: PISA\'da başarılı olmak iş hayatında gerçekten fark yaratıyor mu? Deneyimli bir eğitmenin gözünden dürüst bir analiz.',
     tldr: 'PISA, OECD\'nin her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uyguladığı bir değerlendirme programıdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan civarındadır. PISA\'nın ölçtüğü beceriler — sayısal muhakeme, okuduğunu anlama ve problem çözme — günümüz iş dünyasının en çok aradığı yetkinliklerle örtüşüyor.',

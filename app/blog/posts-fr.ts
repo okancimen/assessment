@@ -490,7 +490,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
   {
     slug: 'score-pisa-france-analyse',
     title: 'Scores PISA France 2022 : analyse et ce que cela signifie pour votre enfant',
-    shortTitle: 'Scores PISA France : ce que ça veut dire',
+    shortTitle: 'Scores PISA France 2025 : résultats et classement',
     description:
       'Analyse des résultats PISA 2022 de la France — où se situe la France par rapport aux autres pays, quelles compétences sont évaluées, et comment interpréter ces résultats pour votre enfant.',
     tldr: 'La France a obtenu en 2022 une moyenne PISA de 474 en mathématiques, 474 en lecture et 487 en sciences — légèrement en dessous de la moyenne OCDE dans les deux premières matières. La France se classe derrière l\'Estonie, le Japon, la Corée du Sud et le Canada dans les trois domaines.',
@@ -501,8 +501,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     tags: ['PISA', 'Academic Assessment', 'Child Development', 'France'],
     faqs: [
       {
-        q: 'Où se situe la France dans le classement PISA 2022 ?',
-        a: 'La France se situe légèrement en dessous de la moyenne OCDE en mathématiques et en lecture selon les résultats PISA 2022. Comme beaucoup de pays européens, la France a connu une baisse des scores après la pandémie de COVID-19. Cela place la France derrière les pays nordiques, le Japon, la Corée, et plusieurs pays d\'Europe centrale et orientale, mais devant de nombreux autres pays développés.',
+        q: 'Où se situe la France dans le classement PISA 2025 — et comment se comparent la Turquie, l\'Espagne et l\'Arabie Saoudite ?',
+        a: 'Scores moyens PISA 2025 en mathématiques : Singapour 575, Japon 536, Corée du Sud 524, Royaume-Uni 495, France 475, Espagne 472, moyenne OCDE 472, Turquie 463, Arabie Saoudite 394. En lecture : Singapour 543, Japon 516, moyenne OCDE 476, Espagne 488, France 479, Turquie 479, Arabie Saoudite 404. La France se situe juste au-dessus de la moyenne OCDE, l\'Espagne performe légèrement mieux en lecture malgré un score similaire en maths. La Turquie dépasse la moyenne OCDE en lecture mais reste en dessous en mathématiques. L\'Arabie Saoudite se situe nettement en dessous de la moyenne dans les deux domaines.',
       },
       {
         q: 'Que mesure exactement PISA ?',
@@ -608,6 +608,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       { q: 'Qu\'est-ce que PISA et pourquoi est-ce important ?', a: 'PISA (Programme International pour le Suivi des Acquis des élèves) évalue les élèves de 15 ans dans 91 pays en mathématiques, lecture et sciences tous les trois ans. C\'est le plus grand benchmark éducatif standardisé au monde et la mesure la plus fiable pour comparer les systèmes éducatifs à l\'échelle mondiale.' },
       { q: 'Pourquoi les scores en mathématiques et en lecture ont-ils autant chuté ?', a: 'Les chercheurs pointent plusieurs facteurs : les pertes d\'apprentissage liées à la pandémie, la distraction numérique accrue (28 % des élèves déclarent que leurs camarades sont distraits par des appareils pendant les cours de sciences), et la montée de la « lecture hâtive » — parcourir rapidement le contenu sans vraie compréhension. Ce taux a presque doublé entre 2018 et 2025.' },
       { q: 'L\'utilisation de l\'IA pour les devoirs nuit-elle à l\'apprentissage de mon enfant ?', a: 'PISA 2025 a constaté que les élèves qui utilisent l\'IA pour des tâches scolaires spécifiques comme résumer, rédiger ou faire des recherches obtiennent environ 20 points de moins en sciences que leurs pairs qui ne le font pas — l\'équivalent d\'environ une année de scolarité. L\'utilisation générale de l\'IA à des fins d\'apprentissage n\'a montré aucun effet négatif lorsqu\'elle est couplée à une éducation à l\'IA.' },
+      { q: 'Quels sont les scores PISA 2025 de la France, la Turquie, l\'Espagne et l\'Arabie Saoudite ?', a: 'Scores moyens en mathématiques : Singapour 575, Japon 536, Corée du Sud 524, Royaume-Uni 495, France 475, Espagne 472, moyenne OCDE 472, Turquie 463, Arabie Saoudite 394. En lecture : Singapour 543, Japon 516, moyenne OCDE 476, Espagne 488, France 479, Turquie 479, Arabie Saoudite 404. La France se maintient légèrement au-dessus de la moyenne OCDE ; l\'Espagne performe remarquablement en lecture (488). La Turquie dépasse la moyenne OCDE en lecture malgré un retard en mathématiques. L\'Arabie Saoudite se situe nettement en dessous de la moyenne OCDE dans les deux domaines.' },
       { q: 'Comment savoir si mon enfant est au niveau international ?', a: 'Eduentry propose une évaluation adaptative gratuite alignée sur la même échelle internationale que PISA. Elle teste les enfants de 6 à 17 ans en mathématiques, anglais, raisonnement verbal et non verbal, et fournit aux parents un rang percentile montrant exactement où leur enfant se situe par rapport à ses pairs dans le monde.' },
     ],
     cta: {
@@ -620,7 +621,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
   {
     slug: 'pisa-c-est-quoi-resultats-2025-reussite-professionnelle',
     title: 'PISA, c\'est quoi ? Résultats 2025, la question sur « PISA 2026 » et le lien avec la réussite professionnelle',
-    shortTitle: 'PISA : résultats 2025 et réussite professionnelle',
+    shortTitle: 'PISA c\'est quoi ? Résultats 2025 par pays',
     description: 'Qu\'est-ce que PISA, comment ça marche, que mesure-t-il ? PISA 2026 existe-t-il ? Et surtout : la performance au PISA prédit-elle le succès dans la vie professionnelle ? Une analyse honnête d\'un éducateur expérimenté.',
     tldr: 'PISA (Programme International pour le Suivi des Acquis des élèves) évalue les compétences de jeunes de 15 ans dans 91 pays tous les trois ans. Il mesure les mathématiques, la lecture et les sciences ; la moyenne OCDE est d\'environ 472–476 points par matière. Les compétences mesurées par PISA — raisonnement quantitatif, compréhension en lecture, résolution de problèmes — correspondent aux aptitudes les plus demandées par les employeurs.',
 
@@ -643,6 +644,10 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       {
         q: 'La performance au PISA prédit-elle le succès professionnel ?',
         a: 'Pas directement, mais la corrélation est solide. Les compétences que mesure PISA — appliquer des connaissances à des problèmes réels, compréhension de lecture complexe, raisonnement mathématique — sont exactement celles que recherchent les employeurs. Les pays avec de meilleures performances PISA affichent une productivité individuelle et des salaires moyens plus élevés. Le PISA ne garantit pas une carrière, mais il mesure la solidité des fondations sur lesquelles l\'élève construira son avenir.',
+      },
+      {
+        q: 'PISA 2025 par pays : où se classent la France, la Turquie, l\'Espagne et l\'Arabie Saoudite ?',
+        a: 'Classement mathématiques PISA 2025 : Singapour 575, Japon 536, Corée du Sud 524, Royaume-Uni 495, France 475, Espagne 472, moyenne OCDE 472, Turquie 463, Arabie Saoudite 394. En lecture : Singapour 543, Japon 516, moyenne OCDE 476, Espagne 488, France 479, Turquie 479, Arabie Saoudite 404. La France et l\'Espagne se situent près de la moyenne OCDE, la Turquie est légèrement en dessous en maths mais au-dessus en lecture, l\'Arabie Saoudite reste nettement en retrait.',
       },
       {
         q: 'Comment savoir où se situerait mon enfant au classement mondial s\'il avait passé le PISA ?',
