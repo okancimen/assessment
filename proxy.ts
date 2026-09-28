@@ -137,6 +137,10 @@ export async function proxy(request: NextRequest) {
     return NextResponse.redirect(url)
   }
 
+  const localeSegment = request.nextUrl.pathname.split('/')[1]
+  const localeMap: Record<string, string> = { tr: 'tr', es: 'es', fr: 'fr', ar: 'ar', ru: 'ru', zh: 'zh' }
+  supabaseResponse.headers.set('x-locale', localeMap[localeSegment] ?? 'en-GB')
+
   return supabaseResponse
 }
 
