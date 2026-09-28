@@ -2755,6 +2755,14 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <strong>Free, no registration required</strong> — the full benchmark assessment costs nothing and takes approximately 20 minutes
           </Check>
         </ul>
+        <div className="mt-6 mb-2">
+          <Link href="/" className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#4338CA] transition-colors">
+            Start Free Assessment
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </Link>
+        </div>
       </section>
 
       <section>
