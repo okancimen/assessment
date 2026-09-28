@@ -6,5 +6,5 @@ export default async function LocaleDashboardPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/es/auth/login')
-  return <DashboardPage />
+  return <DashboardPage locale="es" />
 }

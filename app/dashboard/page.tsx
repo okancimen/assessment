@@ -10,12 +10,7 @@ import { getScoreLabel, getScoreColor } from '@/lib/assessment/adaptive'
 import { Suspense } from 'react'
 import ToastFromUrl from '@/components/ui/ToastFromUrl'
 import InviteInternshipButton from '@/components/dashboard/InviteInternshipButton'
-
-function internshipTier(overall: number): { label: string; color: string } {
-  if (overall >= 70) return { label: 'Internship Ready', color: 'text-emerald-600' }
-  if (overall >= 45) return { label: 'Developing', color: 'text-amber-600' }
-  return { label: 'Needs Support', color: 'text-red-600' }
-}
+import { getDashboardI18n } from '@/lib/dashboard-i18n'
 
 interface AssessmentWithResult extends Omit<Assessment, 'children'> {
   children: { name: string }
@@ -65,7 +60,8 @@ function ScoreRing({ score }: { score: number }) {
   )
 }
 
-export default async function DashboardPage() {
+export default async function DashboardPage({ locale }: { locale?: string } = {}) {
+  const t = getDashboardI18n(locale)
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/auth/login')
@@ -105,7 +101,6 @@ export default async function DashboardPage() {
   const hasChildren = children && children.length > 0
   const hasAssessments = assessments && assessments.length > 0
 
-  // Self-registered student: find their own children record
   const { data: selfChild } = await supabase
     .from('children')
     .select('*')
@@ -126,7 +121,6 @@ export default async function DashboardPage() {
   const selfInternshipScores = (selfInternship?.results as { subject_scores?: Record<string, number> } | null)?.subject_scores
   const selfInternshipOverall = selfInternshipScores?.overall
 
-  // Internship: only for children aged 14+
   const eligibleChildren = (children || []).filter((c: Child) => getAge(c.date_of_birth) >= 14)
   const eligibleIds = eligibleChildren.map((c: Child) => c.id)
 
@@ -148,23 +142,23 @@ export default async function DashboardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
-      <Navbar />
+    <div className="min-h-screen bg-[#f5f5f7] flex flex-col" dir={t.dir}>
+      <Navbar locale={locale} />
       <Suspense><ToastFromUrl /></Suspense>
       <main className="flex-1 max-w-5xl mx-auto w-full px-4 sm:px-6 py-10 space-y-8">
         {/* Header */}
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold text-[#1d1d1f] tracking-tight">
-              Hello, {(profile?.full_name || user.user_metadata?.full_name)?.split(' ')[0] || 'there'}
+              {t.hello}, {(profile?.full_name || user.user_metadata?.full_name)?.split(' ')[0] || ''}
             </h1>
-            <p className="text-sm text-[#6e6e73] mt-1">Manage your children&apos;s assessments</p>
+            <p className="text-sm text-[#6e6e73] mt-1">{t.subtitle}</p>
           </div>
           <Link
             href="/children/new"
             className="bg-[#4F46E5] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
           >
-            + Add child
+            {t.addChild}
           </Link>
         </div>
 
@@ -177,10 +171,8 @@ export default async function DashboardPage() {
               </svg>
             </div>
             <div>
-              <p className="text-sm font-semibold text-[#1d1d1f] mb-1">Start with a 25-minute assessment</p>
-              <p className="text-sm text-[#6e6e73] leading-relaxed">
-                To understand your child&apos;s current academic standing and cognitive capabilities, they&apos;ll need to complete an adaptive assessment — typically 25 minutes. The test adjusts its difficulty in real time, covering verbal reasoning, numerical ability, and problem-solving, so every question is pitched at exactly the right level. There&apos;s no preparation needed: the results reflect natural aptitude, not prior tutoring.
-              </p>
+              <p className="text-sm font-semibold text-[#1d1d1f] mb-1">{t.howItWorksTitle}</p>
+              <p className="text-sm text-[#6e6e73] leading-relaxed">{t.howItWorksDesc}</p>
             </div>
           </div>
           <div className="border-t border-[#f5f5f7]" />
@@ -191,11 +183,11 @@ export default async function DashboardPage() {
               </svg>
             </div>
             <div>
-              <p className="text-sm font-semibold text-[#1d1d1f] mb-1">Understand where your child stands globally</p>
+              <p className="text-sm font-semibold text-[#1d1d1f] mb-1">{t.globalStandingTitle}</p>
               <p className="text-sm text-[#6e6e73] leading-relaxed">
-                Once the assessment is complete, you&apos;ll receive a detailed report showing your child&apos;s standardised score and how they compare to peers internationally — broken down by domain so you can see exactly where they excel and where focused support would make the biggest difference.{' '}
+                {t.globalStandingDesc}{' '}
                 <Link href="https://eduentry.com/sample-report" className="text-[#4F46E5] font-medium hover:underline">
-                  See a sample report →
+                  {t.seeReport}
                 </Link>
               </p>
             </div>
@@ -204,12 +196,12 @@ export default async function DashboardPage() {
 
         {/* Children */}
         <section>
-          <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">Children</h2>
+          <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">{t.childrenSection}</h2>
           {!hasChildren ? (
             <div className="bg-white rounded-3xl border border-dashed border-[#d2d2d7] p-14 text-center">
-              <p className="text-[#6e6e73] text-sm mb-4">No children added yet</p>
+              <p className="text-[#6e6e73] text-sm mb-4">{t.noChildrenYet}</p>
               <Link href="/children/new" className="text-[#4F46E5] font-semibold text-sm hover:underline">
-                Add your first child →
+                {t.addFirstChild}
               </Link>
             </div>
           ) : (
@@ -232,15 +224,15 @@ export default async function DashboardPage() {
                       </div>
                       <h3 className="font-semibold text-[#1d1d1f]">{child.name}</h3>
                       <p className="text-xs text-[#6e6e73] mt-0.5">
-                        Age {getAge(child.date_of_birth)} · Born {formatDate(child.date_of_birth)}
+                        {t.age} {getAge(child.date_of_birth)} · {t.born} {formatDate(child.date_of_birth)}
                       </p>
                       <div className="flex items-center gap-2 mt-3">
                         {count > 0 ? (
                           <span className="inline-flex items-center gap-1 bg-[#f5f5f7] text-[#6e6e73] text-xs font-medium px-2.5 py-0.5 rounded-full border border-[#d2d2d7]">
-                            {count} assessment{count !== 1 ? 's' : ''}
+                            {t.assessmentCount(count)}
                           </span>
                         ) : (
-                          <span className="text-xs text-[#6e6e73]">No assessments yet</span>
+                          <span className="text-xs text-[#6e6e73]">{t.noAssessmentsChild}</span>
                         )}
                         {latest && (
                           <span className="text-xs text-[#6e6e73]">{getScoreLabel(latest.score)}</span>
@@ -248,7 +240,7 @@ export default async function DashboardPage() {
                       </div>
                     </Link>
                     <div className="px-5 pb-5">
-                      <StartAssessmentButton childId={child.id} size="sm" className="w-full" />
+                      <StartAssessmentButton childId={child.id} size="sm" className="w-full" locale={locale} />
                     </div>
                   </div>
                 )
@@ -260,17 +252,17 @@ export default async function DashboardPage() {
         {/* Recent assessments */}
         {hasChildren && (
           <section>
-            <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">Recent assessments</h2>
+            <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">{t.recentAssessments}</h2>
             {hasAssessments ? (
               <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-[#f5f5f7]">
-                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">Child</th>
-                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">Date</th>
-                      <th className="text-right px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">Score</th>
-                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">Status</th>
-                      <th className="text-right px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">Action</th>
+                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">{t.tableChild}</th>
+                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">{t.tableDate}</th>
+                      <th className="text-right px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">{t.tableScore}</th>
+                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">{t.tableStatus}</th>
+                      <th className="text-right px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">{t.tableAction}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -311,11 +303,11 @@ export default async function DashboardPage() {
                         <td className="px-5 py-3 text-right">
                           {a.status === 'completed' ? (
                             <Link href={`/assessment/${a.id}/results`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
-                              View results
+                              {t.viewResults}
                             </Link>
                           ) : a.status === 'in_progress' ? (
                             <Link href={`/assessment/${a.id}/question`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
-                              Continue
+                              {t.continueAction}
                             </Link>
                           ) : null}
                         </td>
@@ -333,46 +325,47 @@ export default async function DashboardPage() {
                     <line x1="9" y1="12" x2="15" y2="12" /><line x1="9" y1="16" x2="13" y2="16" />
                   </svg>
                 </div>
-                <p className="text-[#1d1d1f] font-medium text-sm mb-1">No assessments yet</p>
-                <p className="text-xs text-[#6e6e73]">Start an assessment from any child card above.</p>
+                <p className="text-[#1d1d1f] font-medium text-sm mb-1">{t.noAssessmentsEmpty}</p>
+                <p className="text-xs text-[#6e6e73]">{t.noAssessmentsEmptyDesc}</p>
               </div>
             )}
           </section>
         )}
+
         {/* Self-registered student: own internship status */}
         {selfChild && (
           <section>
-            <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">Your internship</h2>
+            <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">{t.yourInternship}</h2>
             <div className="bg-white rounded-3xl border border-[#d2d2d7] p-5 flex items-center justify-between gap-4">
               <div>
                 <p className="font-semibold text-[#1d1d1f]">{selfChild.name}</p>
                 {!selfInternship ? (
-                  <p className="text-xs text-[#6e6e73] mt-0.5">Not applied yet</p>
+                  <p className="text-xs text-[#6e6e73] mt-0.5">{t.notAppliedYet}</p>
                 ) : selfInternship.status === 'completed' && selfInternshipOverall != null ? (
-                  <p className={`text-sm font-semibold mt-0.5 ${internshipTier(selfInternshipOverall).color}`}>
-                    {internshipTier(selfInternshipOverall).label}
+                  <p className={`text-sm font-semibold mt-0.5 ${selfInternshipOverall >= 70 ? 'text-emerald-600' : selfInternshipOverall >= 45 ? 'text-amber-600' : 'text-red-600'}`}>
+                    {selfInternshipOverall >= 70 ? t.internshipReady : selfInternshipOverall >= 45 ? t.developing : t.needsSupport}
                   </p>
                 ) : selfInternship.status === 'in_progress' ? (
-                  <p className="text-xs text-amber-600 font-medium mt-0.5">Assessment in progress</p>
+                  <p className="text-xs text-amber-600 font-medium mt-0.5">{t.assessmentInProgress}</p>
                 ) : (
-                  <p className="text-xs text-[#6e6e73] mt-0.5">Assessment pending</p>
+                  <p className="text-xs text-[#6e6e73] mt-0.5">{t.assessmentPending}</p>
                 )}
               </div>
               {!selfInternship ? (
                 <Link href="/internship/apply" className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors flex-shrink-0">
-                  Apply now
+                  {t.applyNow}
                 </Link>
               ) : selfInternship.status === 'completed' ? (
                 <Link href={`/assessment/${selfInternship.id}/results`} className="inline-flex items-center justify-center border border-[#4F46E5] text-[#4F46E5] text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#eef2ff] transition-colors flex-shrink-0">
-                  View report
+                  {t.viewReport}
                 </Link>
               ) : selfInternship.status === 'in_progress' ? (
                 <Link href={`/assessment/${selfInternship.id}/question`} className="inline-flex items-center justify-center bg-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amber-600 transition-colors flex-shrink-0">
-                  Continue
+                  {t.continueAction}
                 </Link>
               ) : (
                 <Link href={`/assessment/${selfInternship.id}/question`} className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors flex-shrink-0">
-                  Start assessment
+                  {t.startAssessment}
                 </Link>
               )}
             </div>
@@ -384,13 +377,13 @@ export default async function DashboardPage() {
           <section>
             <div className="flex items-start justify-between mb-4 gap-4">
               <div>
-                <h2 className="text-base font-semibold text-[#1d1d1f]">Internship Programme</h2>
-                <p className="text-xs text-[#6e6e73] mt-0.5">For children aged 14 and above</p>
+                <h2 className="text-base font-semibold text-[#1d1d1f]">{t.internshipProgramme}</h2>
+                <p className="text-xs text-[#6e6e73] mt-0.5">{t.internshipSubtitle}</p>
               </div>
               <div className="flex items-center gap-3 flex-shrink-0">
-                <InviteInternshipButton />
+                <InviteInternshipButton locale={locale} />
                 <Link href="/internship" className="text-sm text-[#4F46E5] font-semibold hover:underline whitespace-nowrap">
-                  Learn more →
+                  {t.learnMore}
                 </Link>
               </div>
             </div>
@@ -409,49 +402,49 @@ export default async function DashboardPage() {
                       </div>
                       <div className="min-w-0">
                         <p className="font-semibold text-[#1d1d1f] text-sm truncate">{child.name}</p>
-                        <p className="text-xs text-[#6e6e73]">Age {getAge(child.date_of_birth)}</p>
+                        <p className="text-xs text-[#6e6e73]">{t.age} {getAge(child.date_of_birth)}</p>
                       </div>
                     </div>
                     {!ia ? (
                       <>
-                        <p className="text-xs text-[#6e6e73]">Not applied yet</p>
+                        <p className="text-xs text-[#6e6e73]">{t.notAppliedYet}</p>
                         <Link
                           href="/internship/apply"
                           className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors"
                         >
-                          Apply now
+                          {t.applyNow}
                         </Link>
                       </>
                     ) : ia.status === 'completed' && ia.overall != null ? (
                       <>
-                        <p className={`text-sm font-semibold ${internshipTier(ia.overall).color}`}>
-                          {internshipTier(ia.overall).label}
+                        <p className={`text-sm font-semibold ${ia.overall >= 70 ? 'text-emerald-600' : ia.overall >= 45 ? 'text-amber-600' : 'text-red-600'}`}>
+                          {ia.overall >= 70 ? t.internshipReady : ia.overall >= 45 ? t.developing : t.needsSupport}
                         </p>
                         <Link
                           href={`/assessment/${ia.id}/results`}
                           className="inline-flex items-center justify-center border border-[#4F46E5] text-[#4F46E5] text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#eef2ff] transition-colors"
                         >
-                          View report
+                          {t.viewReport}
                         </Link>
                       </>
                     ) : ia.status === 'in_progress' ? (
                       <>
-                        <p className="text-xs text-amber-600 font-medium">Assessment in progress</p>
+                        <p className="text-xs text-amber-600 font-medium">{t.assessmentInProgress}</p>
                         <Link
                           href={`/assessment/${ia.id}/question`}
                           className="inline-flex items-center justify-center bg-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amber-600 transition-colors"
                         >
-                          Continue
+                          {t.continueAction}
                         </Link>
                       </>
                     ) : (
                       <>
-                        <p className="text-xs text-[#6e6e73]">Assessment pending</p>
+                        <p className="text-xs text-[#6e6e73]">{t.assessmentPending}</p>
                         <Link
                           href={`/assessment/${ia.id}/question`}
                           className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors"
                         >
-                          Start assessment
+                          {t.startAssessment}
                         </Link>
                       </>
                     )}

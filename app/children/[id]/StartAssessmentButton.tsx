@@ -4,17 +4,21 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Button from '@/components/ui/Button'
 import { trackEvent } from '@/lib/analytics'
+import { getDashboardI18n } from '@/lib/dashboard-i18n'
 
 export default function StartAssessmentButton({
   childId,
   size = 'md',
   className,
+  locale,
 }: {
   childId: string
   size?: 'sm' | 'md' | 'lg'
   className?: string
+  locale?: string
 }) {
   const router = useRouter()
+  const t = getDashboardI18n(locale)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
@@ -30,7 +34,7 @@ export default function StartAssessmentButton({
 
       if (!res.ok) {
         const data = await res.json().catch(() => ({}))
-        setError(data.error || 'Something went wrong. Please try again.')
+        setError(data.error || t.startAssessmentError)
         setLoading(false)
         return
       }
@@ -39,7 +43,7 @@ export default function StartAssessmentButton({
       trackEvent('assessment_start', { child_id: childId, assessment_id: assessment.id })
       router.push(`/assessment/${assessment.id}/start`)
     } catch {
-      setError('Network error. Please check your connection and try again.')
+      setError(t.startAssessmentNetworkError)
       setLoading(false)
     }
   }
@@ -47,7 +51,7 @@ export default function StartAssessmentButton({
   return (
     <div className="flex flex-col gap-1.5">
       <Button onClick={handleStart} loading={loading} size={size} className={`bg-[#4F46E5] hover:bg-[#4338CA] text-white ${className ?? ''}`}>
-        Start assessment
+        {t.startAssessmentBtn}
       </Button>
       {error && (
         <p className="text-xs text-red-600 text-center">{error}</p>
