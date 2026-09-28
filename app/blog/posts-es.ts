@@ -434,7 +434,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
   {
     slug: 'pisa-2025-crisis-educativa-mundial-que-deben-saber-los-padres',
     title: 'PISA 2025: Crisis Educativa Mundial — Lo Que Todo Padre Necesita Saber',
-    shortTitle: 'PISA 2025: La Crisis Educativa Global',
+    shortTitle: 'PISA 2025 Resultados: España y Comparativa por Países',
     description: 'PISA 2025 revela las puntuaciones más bajas jamás registradas en matemáticas, lectura y ciencias en los países de la OCDE. Analizamos qué significan los resultados para las familias y por qué nunca ha sido tan importante evaluar a tu hijo.',
     tldr: 'PISA 2025 registró las puntuaciones medias más bajas en matemáticas, lectura y ciencias de la historia del programa. España se situó por debajo de la media OCDE en matemáticas y lectura. El informe PISA 2025 reveló que los estudiantes que utilizan IA para tareas específicas (resumir, redactar, investigar) obtienen aproximadamente 20 puntos menos en ciencias que quienes no lo hacen.',
 
@@ -446,6 +446,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       { q: '¿Qué es PISA y por qué importa?', a: 'PISA (Programa para la Evaluación Internacional de Alumnos) evalúa a estudiantes de 15 años en 91 países en matemáticas, lectura y ciencias cada tres años. Es el estudio educativo más grande del mundo y la medida más autorizada para comparar sistemas educativos a nivel global.' },
       { q: '¿Por qué han bajado tanto las puntuaciones en matemáticas y lectura?', a: 'Los investigadores señalan múltiples factores: pérdida de aprendizaje relacionada con la pandemia, mayor distracción digital (el 28% de los estudiantes dice que sus compañeros se distraen con dispositivos durante las clases), y el aumento de la "lectura apresurada": escanear contenido rápidamente sin comprensión real. Esta tasa casi se duplicó entre 2018 y 2025.' },
       { q: '¿Usar IA para los deberes perjudica el aprendizaje de mi hijo?', a: 'PISA 2025 encontró que los estudiantes que usan IA para tareas específicas como resumir textos, redactar o investigar obtienen alrededor de 20 puntos menos en ciencias que sus compañeros que no lo hacen — equivalente a aproximadamente un año de escolarización. El uso general de la IA con fines de aprendizaje no mostró efecto negativo cuando se combina con educación en alfabetización digital.' },
+      { q: '¿Cuáles son las puntuaciones PISA 2025 de España, Francia, Turquía y Arabia Saudita?', a: 'Puntuaciones medias en matemáticas: Singapur 575, Japón 536, Corea del Sur 524, Reino Unido 495, Francia 475, España 472, media OCDE 472, Turquía 463, Arabia Saudita 394. En lectura: Singapur 543, Japón 516, media OCDE 476, España 488, Francia 479, Turquía 479, Arabia Saudita 404. España destaca con una puntuación de lectura de 488, por encima de la media OCDE (476) y por encima de Francia. En matemáticas, España se sitúa exactamente en la media OCDE. Arabia Saudita queda significativamente por debajo en ambas áreas.' },
       { q: '¿Cómo puedo saber si mi hijo está al nivel internacional?', a: 'Eduentry ofrece una evaluación adaptativa gratuita alineada con la misma escala internacional que PISA. Evalúa a niños de 6 a 17 años en matemáticas, inglés, razonamiento verbal y no verbal, y ofrece a los padres una clasificación percentil que muestra exactamente cómo se compara su hijo con sus pares a nivel mundial.' },
     ],
     cta: {
@@ -458,7 +459,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
   {
     slug: 'pisa-que-es-resultados-2025-exito-profesional',
     title: '¿Qué es PISA? Resultados 2025, la pregunta sobre "PISA 2026" y su vínculo con el éxito profesional',
-    shortTitle: '¿Qué es PISA? Resultados 2025 y vida profesional',
+    shortTitle: '¿Qué es PISA? Resultados 2025 por país',
     description: '¿Qué es PISA, cómo funciona, qué mide? ¿Existe PISA 2026? Y lo más importante: ¿el rendimiento en PISA predice el éxito en la vida profesional? Un análisis honesto desde la perspectiva de un educador con experiencia.',
     tldr: 'PISA (Programa para la Evaluación Internacional de Alumnos) es una evaluación trienal que examina a jóvenes de 15 años en 91 países. Mide matemáticas, lectura y ciencias; la media OCDE ronda los 472–476 puntos en las tres materias. Las habilidades que evalúa PISA — razonamiento cuantitativo, comprensión lectora y resolución de problemas — coinciden con las más demandadas por los empleadores.',
 
@@ -481,6 +482,10 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       {
         q: '¿El rendimiento en PISA predice el éxito profesional?',
         a: 'No directamente, pero la correlación es sólida. Las competencias que mide PISA —aplicar conocimientos a problemas reales, comprensión lectora compleja, razonamiento matemático— son exactamente las que los empleadores valoran. Los países con puntuaciones PISA más altas presentan mayor productividad individual y mejores salarios medios. PISA no garantiza una carrera, pero mide la solidez de la base sobre la que el estudiante construye su futuro.',
+      },
+      {
+        q: 'PISA 2025 por países: ¿cómo quedan España, Francia, Turquía y Arabia Saudita?',
+        a: 'Ranking de matemáticas PISA 2025: Singapur 575, Japón 536, Corea del Sur 524, Reino Unido 495, Francia 475, España 472, media OCDE 472, Turquía 463, Arabia Saudita 394. En lectura: Singapur 543, Japón 516, media OCDE 476, España 488, Francia 479, Turquía 479, Arabia Saudita 404. España es uno de los países con mejor puntuación relativa en lectura respecto a sus matemáticas — un punto fuerte del sistema educativo español. Turquía supera la media OCDE en lectura pero no en matemáticas. Arabia Saudita queda muy por debajo de la media en ambas materias.',
       },
       {
         q: '¿Cómo saber en qué posición mundial estaría mi hijo si hubiera hecho PISA?',
