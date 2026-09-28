@@ -125,13 +125,27 @@ const ORGANIZATION_SCHEMA = {
   '@type': 'Organization',
   '@id': 'https://eduentry.com/#organization',
   name: 'Eduentry',
+  description: 'Eduentry provides free adaptive assessments for children and students: an academic benchmark (ages 6–17) measuring English, Maths, Verbal Reasoning, and Non-Verbal Reasoning; and an internship readiness assessment (ages 14–18) across Technology, Business, Data Analytics, and Digital Marketing tracks.',
   url: 'https://eduentry.com',
   logo: { '@type': 'ImageObject', url: 'https://eduentry.com/logo.png', width: 200, height: 60 },
   foundingDate: '2026',
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
+  knowsAbout: [
+    '11+ preparation',
+    'grammar school admissions',
+    'adaptive assessment',
+    'Item Response Theory',
+    'standardised scoring',
+    'internship readiness',
+    'PISA benchmarks',
+    'UK secondary school selection',
+    'gifted education',
+    'academic benchmarking',
+  ],
   sameAs: [
     'https://www.linkedin.com/company/eduentry',
     'https://x.com/eduentry',
+    'https://eduentry.ai',
   ],
 }
 

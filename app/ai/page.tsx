@@ -91,9 +91,20 @@ const ORGANIZATION_SCHEMA = {
   '@type': 'Organization',
   '@id': `${BASE_URL}/#organization`,
   name: 'Eduentry',
+  description: 'Eduentry.ai provides a free AI-powered internship readiness assessment for high school students aged 14–18. 34 adaptive questions across Technology, Business, Data Analytics, and Digital Marketing tracks. Instant personalised readiness report.',
   url: BASE_URL,
   foundingDate: '2026',
-  sameAs: ['https://eduentry.com'],
+  knowsAbout: [
+    'internship readiness assessment',
+    'career readiness',
+    'work experience',
+    'adaptive assessment',
+    'high school internships',
+    'aptitude testing',
+    'situational judgement',
+    'university admissions work experience',
+  ],
+  sameAs: ['https://eduentry.com', 'https://www.linkedin.com/company/eduentry', 'https://x.com/eduentry'],
 }
 
 const WEBSITE_SCHEMA = {

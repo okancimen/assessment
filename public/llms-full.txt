@@ -1,0 +1,172 @@
+# Eduentry — Full Content Reference
+
+> This document provides detailed descriptions of all Eduentry content for AI systems. For a summary version see /llms.txt.
+> Last updated: 2026-09-29
+
+---
+
+## About Eduentry
+
+Eduentry operates two assessment products under two domains:
+
+**Eduentry.com** — Free adaptive academic benchmark for children aged 6–17. Measures English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning using 2-Parameter Logistic Item Response Theory (2PL IRT) with MAP estimation. Scores reported on a standardised scale (mean 100, standard deviation 15) with international percentile rankings benchmarked against PISA, GCSE, UK national curriculum, SAT, and IB standards. Completely free, no subscriptions.
+
+**Eduentry.ai** — Free AI-powered internship readiness assessment for students aged 14–18. 34 adaptive questions across four phases: General Aptitude (10 questions), Domain Knowledge (10 questions), Workplace Skills/situational judgement (8 questions), Interest Profile (6 questions). Four career tracks: Technology, Business, Data Analytics, Digital Marketing. Results include a personalised AI-generated readiness report with a readiness tier (Developing / Ready / Strong) and phase-by-phase breakdown. Takes approximately 35 minutes. Available in 7 languages.
+
+---
+
+## Eduentry.com — Academic Assessment
+
+### How it works
+
+Children aged 6–17 take a 60-question adaptive assessment across four subjects (15 questions each). After each answer, the system updates its ability estimate using MAP estimation and selects the next question to maximise measurement precision. The result is a standardised score for each subject and a composite score, with international percentile rankings.
+
+### Scoring
+
+All scores use the standardised scale (mean 100, SD 15) — the same scale as PISA, GCSE, CAT4, and most professional cognitive assessments:
+
+- 130+: Top 2% (Exceptionally High)
+- 120–129: Top 9% (Exceptional)
+- 110–119: Top 25% (Above Average)
+- 95–109: Middle 50% (Average)
+- 85–94: Bottom 25% (Below Average)
+- Below 85: Bottom 16% (Needs Support)
+
+UK grammar school benchmarks: Most selective grammar schools outside London require SAS 111–118. London selective schools (Barnet QE, Henrietta Barnett, Sutton schools) require SAS 121–132.
+
+### Subjects
+
+**English** (ages 6–17): Reading comprehension, grammar, spelling, punctuation, vocabulary, inference, and text analysis. Questions calibrated across NC Key Stages 1–4 and benchmarked against UK national curriculum and PISA reading literacy.
+
+**Mathematics** (ages 6–17): Number and arithmetic, algebra and sequences, geometry and measurement, fractions/decimals/percentages, data handling and probability. Calibrated against UK national curriculum and PISA numeracy.
+
+**Verbal Reasoning** (ages 6–17): Word relationships and analogies, classification, sequencing and pattern completion, verbal logic. Mirrors GL Assessment and CEM 11+ verbal reasoning formats. Essential for UK grammar school entry.
+
+**Non-Verbal Reasoning** (ages 6–17): Pattern completion and matrices, shape analogies, series and sequences, spatial reasoning and rotation. Mirrors GL Assessment and CEM 11+ non-verbal formats.
+
+### 11+ Preparation
+
+[https://eduentry.com/11-plus] — Comprehensive guide to UK grammar school 11+ preparation. Covers two exam formats (GL Assessment: separate subject papers; CEM: integrated multi-domain questions). 18-month preparation timeline starting in Year 4. Weekly practice targets by phase. SAS score context for each area. Explains why early standardised scoring (rather than school marks) gives parents accurate positioning data.
+
+### Grammar Schools by Area
+
+[https://eduentry.com/grammar-schools] — Hub page listing all grammar school areas in England with entry requirements.
+
+**Kent** [/grammar-schools/kent]: 32 schools — the highest count of any English county. GL Assessment. Target SAS 115–121. Administered in September of Year 6. Key schools: The Judd School (boys), Tonbridge Grammar (girls), Maidstone Grammar (boys), Invicta Grammar (girls). Registration opens May Year 5, closes June.
+
+**Buckinghamshire** [/grammar-schools/buckinghamshire]: 13 schools. Fully selective county — all secondary schools are grammar or secondary modern. CEM exam (verbal ability, numerical reasoning, spatial reasoning, no subject labels). Target SAS 118+. Registration opens April/May Year 5.
+
+**Birmingham** [/grammar-schools/birmingham]: King Edward's Foundation schools. Highly selective. Target SAS 119+. Own entrance exam format. Only 6 schools but among England's most selective.
+
+**North London — Barnet** [/grammar-schools/london-barnet]: Queen Elizabeth's Boys (ranked #1 state school in England) and Henrietta Barnett School (girls). Target SAS 121–132 — the most competitive grammar schools in England. GL Assessment. Places allocated by distance after score threshold.
+
+**South London — Sutton** [/grammar-schools/london-sutton]: Nonsuch High School (girls), Wallington County Grammar (boys), Wallington High School for Girls, Wilson's School (boys), Greenshaw High (mixed). Target SAS 118–125. Some schools use their own supplementary tests.
+
+**Hertfordshire** [/grammar-schools/hertfordshire]: GL Assessment. Target SAS 111+. 3 schools serving the entire county — heavily oversubscribed. Distance from school is the tiebreaker after passing the threshold.
+
+**Essex** [/grammar-schools/essex]: GL Assessment. Target SAS 112+. Schools across Colchester, Chelmsford, and Southend. Some areas have super-selective schools with higher thresholds.
+
+**Gloucestershire** [/grammar-schools/gloucestershire]: GL Assessment. Target SAS 111+. 3 schools in Cheltenham and Gloucester. CEM format used in some schools.
+
+**Berkshire (Slough)** [/grammar-schools/berkshire]: GL Assessment. Target SAS 114–120. Langley Grammar, Herschel Grammar, St Bernard's Catholic Grammar. Registration in Year 5.
+
+**Trafford** [/grammar-schools/trafford]: GL Assessment. Target SAS 116–124. Only grammar schools in Greater Manchester. Altrincham Grammar for Boys and Girls, Sale Grammar, Stretford Grammar. Highly competitive for the area.
+
+**Wiltshire** [/grammar-schools/wiltshire]: GL Assessment. Target SAS 111–116. Two Church of England schools in Salisbury: South Wilts Grammar (girls) and Bishop Wordsworth's School (boys).
+
+### Methodology
+
+[https://eduentry.com/methodology] — Full technical description of the assessment framework. 2PL IRT model: each question has a difficulty parameter (b) and a discrimination parameter (a). MAP estimation updates the ability estimate (θ) after each response using Bayesian updating. The prior distribution reflects the known population distribution. Questions are selected to maximise Fisher information at the current θ estimate. Results are converted to the SAS scale: SAS = 100 + 15θ.
+
+Calibration note: Questions have been calibrated for difficulty ordering but not empirically normed with large random populations. Results are indicative, not diagnostic, and should be interpreted as one data point among many.
+
+### Sample Report
+
+[https://eduentry.com/sample-report] — Full example of a completed academic assessment report. Shows the four-subject score breakdown, composite SAS, percentile band, subject-by-subject strength/weakness analysis, and AI-generated recommendations.
+
+---
+
+## Eduentry.ai — Internship Readiness Assessment
+
+### Assessment structure
+
+**Phase 1 — General Aptitude** (10 questions, adaptive): Verbal comprehension, numerical reasoning, logical deduction. Calibrated to general cognitive ability relevant to professional environments. Equivalent to a short-form aptitude screener.
+
+**Phase 2 — Domain Knowledge** (10 questions, adaptive): Track-specific knowledge questions. Technology: coding logic, algorithms, cybersecurity, UX principles. Business: strategy, financial literacy, operations, leadership concepts. Data Analytics: data interpretation, SQL concepts, statistics, insight generation. Digital Marketing: SEO, paid social, campaign management, content strategy.
+
+**Phase 3 — Workplace Skills** (8 questions): Situational judgement scenarios. Measures professional communication, conflict navigation, deadline management, stakeholder handling. No single correct answer — responses reflect work style and professional maturity.
+
+**Phase 4 — Interest Profile** (6 questions): Work preference mapping across four dimensions: structured vs creative, collaborative vs independent, analytical vs relational, fast-paced vs methodical. Used to refine track placement recommendation.
+
+### Readiness tiers
+
+- **Strong**: Ready for a meaningful internship placement in the selected track. Score reflects solid aptitude, relevant domain awareness, and professional situational judgement.
+- **Ready**: Suitable for an internship with a supportive supervisor. Some preparation in domain knowledge or workplace skills would strengthen outcomes.
+- **Developing**: Would benefit from additional preparation before a first placement. Report includes specific development recommendations.
+
+### Tracks
+
+**Technology** [https://eduentry.ai/tech]: For students interested in software development, cybersecurity, product design, or data engineering. Domain questions cover coding logic (pseudocode, conditionals, loops), algorithm efficiency, basic security concepts, and UX heuristics. Does not require prior programming experience.
+
+**Business** [https://eduentry.ai/business]: For students interested in strategy, management consulting, finance, or operations. Domain questions cover business model analysis, basic financial statements, supply chain concepts, and organisational behaviour.
+
+**Data Analytics** [https://eduentry.ai/data-analytics]: For students interested in data science, business intelligence, or research. Domain questions cover chart and table interpretation, basic SQL query logic, descriptive statistics, and data-driven decision-making.
+
+**Digital Marketing** [https://eduentry.ai/digital-marketing]: For students interested in marketing, communications, brand management, or growth. Domain questions cover SEO principles, social media advertising, campaign metrics (CTR, ROAS, CPM), and content strategy frameworks.
+
+---
+
+## Blog content summaries
+
+### Key eduentry.com blog posts
+
+**How to Prepare for the 11+ at Home** [/blog/how-to-prepare-for-11-plus]: 18-month preparation plan starting in Year 4. Monthly targets: Year 4 (foundational gaps), Year 5 Term 1 (subject-by-subject practice), Year 5 Term 2 (timed papers), Year 5 Summer (full mock papers), Year 6 September (exam). Weekly study hours: 30 min/day in Year 4–5, 45–60 min/day in Year 5 Term 3 onwards. Subject-by-subject breakdown: English (comprehension stamina, vocabulary breadth), Maths (mental arithmetic speed, fractions mastery), VR (pattern recognition, vocabulary range), NVR (spatial logic, timed accuracy).
+
+**What Is a Standardised Score?** [/blog/what-is-a-standardised-score]: Defines SAS as a score where the population mean is 100 and standard deviation is 15. Explains percentile equivalents: SAS 100 = 50th percentile, SAS 115 = 84th percentile, SAS 130 = 98th percentile. Covers GL Assessment SAS vs CEM standardised age score. Lists SAS thresholds by grammar school area. Explains why SAS is more informative than raw marks or school grades.
+
+**Grammar School Entry Requirements 2026** [/blog/grammar-school-entry-requirements-2026]: Area-by-area breakdown of SAS thresholds, exam boards, oversubscription criteria, and the difference between a pass mark (meeting the threshold) and receiving an offer (ranked by score or distance within the catchment). Key insight: a child who passes may not receive an offer at oversubscribed schools; parents must understand both the threshold and the offer-ranking criteria.
+
+**Verbal Reasoning for the 11+** [/blog/verbal-reasoning-11-plus-guide]: All major VR question types with worked examples: word analogies, odd-one-out, codes and ciphers, word patterns, letter sequences, number sequences, hidden words, compound words. Preparation technique: daily 10-minute word-a-day vocabulary building from Year 4; timed completion from Year 5.
+
+**Non-Verbal Reasoning for the 11+** [/blog/non-verbal-reasoning-11-plus-guide]: All NVR question types: matrices, series, analogies, odd-one-out, rotation and reflection, nets and 3D shapes, hidden figures. Key insight: NVR cannot be memorised — spatial logic must be trained through repeated exposure. 15 minutes of timed NVR practice per day from Year 4.
+
+**PISA 2025: Global Education Crisis** [/blog/pisa-2025-global-education-crisis-what-parents-need-to-know]: 2025 PISA results show continued score decline in reading and maths across most OECD countries. UK reading scores fell 12 points from 2018. Singapore, Japan, and South Korea maintain top positions. Key causes: learning loss from 2020–2022 school closures, increased screen time and reduced deep reading, rapid-consumption content replacing sustained focus. AI homework usage found to correlate negatively with score improvements in high-usage countries.
+
+### Key eduentry.ai blog posts
+
+**Why Early Internships Matter** [/blog/early-internship-child-development-career]: NACE 2023 survey: 83% of employers consider internship experience "somewhat" or "very" important when hiring new graduates. Students with prior internship experience receive job offers at 70% higher rate before graduation (NACE 2020). Developmental research identifies 14–16 as the optimal window for a first structured professional placement. Executive function, social maturity, and self-efficacy all improve more significantly from work experience than from classroom instruction.
+
+**High School Internship Benefits** [/blog/high-school-internship-benefits-university]: Russell Group universities explicitly reference work experience in admissions guidance. Medicine, law, and technology programmes treat placement experience as near-requirement. Personal statements from students with genuine work experience contain specific observations and reflections — "evidence, not assertion" — which admissions readers are trained to recognise and reward. Big Five personality research shows conscientiousness and openness scores improve measurably in students who complete structured placements before age 17.
+
+**65 Jobs AI Cannot Automate** [/blog/65-jobs-ai-cannot-automate]: WEF Future of Jobs 2025 data on automation risk by occupation category. Lists 65 roles with low automation probability: surgeons, therapists, social workers, trial lawyers, structural engineers, primary teachers, midwives, and others requiring physical dexterity, emotional intelligence, or contextual judgement. Key finding: jobs requiring embodied physical skill, high-stakes interpersonal relationships, or contextual ethical judgement remain highly resistant to automation even with advanced LLMs.
+
+---
+
+## Technical reference
+
+### IRT scoring
+
+The 2PL IRT model represents the probability of a correct response as:
+P(correct | θ, a, b) = 1 / (1 + exp(-a(θ - b)))
+
+Where θ is the student's latent ability, a is item discrimination, b is item difficulty. MAP estimation finds the θ that maximises the posterior probability given observed responses and a Gaussian prior.
+
+### Standardised score conversion
+
+SAS = 100 + 15θ
+
+This maps the IRT ability scale (which has an arbitrary origin) to the conventional SAS scale. A student at θ = 0 scores SAS 100 (population mean). A student at θ = +1 SD scores SAS 115 (84th percentile).
+
+### Available languages
+
+Both products available in: English (en-GB), Turkish (tr), Spanish (es), French (fr), Arabic (ar), Russian (ru), Chinese (zh).
+
+---
+
+## Machine-readable resources
+
+- Sitemap (eduentry.com): https://eduentry.com/sitemap.xml
+- Sitemap (eduentry.ai): https://eduentry.ai/sitemap.xml
+- AI catalog: https://eduentry.com/.well-known/ai-catalog.json
+- MCP server card: https://eduentry.com/.well-known/mcp.json
+- Summary (llms.txt): https://eduentry.com/llms.txt

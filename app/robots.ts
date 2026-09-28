@@ -29,7 +29,7 @@ const AI_BOTS = [
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      { userAgent: AI_BOTS, allow: '/', disallow: PRIVATE },
+      { userAgent: AI_BOTS, allow: ['/', '/llms.txt', '/llms-full.txt'], disallow: PRIVATE },
       { userAgent: '*',     allow: '/', disallow: PRIVATE },
     ],
     sitemap: 'https://eduentry.com/sitemap.xml',
