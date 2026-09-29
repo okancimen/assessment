@@ -1100,6 +1100,45 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr/staj',
     },
   },
+  {
+    slug: 'oecd-ergen-yari-zamanli-calisma-faydalari',
+    contentSlug: 'oecd-teenage-part-time-work-benefits',
+    title: 'Gençler İçin Yarı Zamanlı İş: OECD Destekli Faydalar ve En İyi Nasıl Değerlendirilir',
+    shortTitle: 'Gençler İçin Yarı Zamanlı İş Faydaları: OECD Araştırması',
+    description: 'OECD araştırması, okul döneminde yarı zamanlı çalışmanın finansal okuryazarlık, kariyer güveni ve mesleki beceriler geliştirdiğini doğruluyor. Veriler ne söylüyor ve nasıl en iyi şekilde değerlendirirsiniz?',
+    tldr: 'OECD araştırması, haftada yaklaşık 15 saate kadar çalışan öğrencilerin daha güçlü mesleki beceriler, daha yüksek kariyer güveni ve daha büyük finansal okuryazarlık geliştirdiğini gösteriyor. Anahtar faktörler denetim, kariyer alaka düzeyi ve üretken saat aralıklarında kalmaktır.',
+    date: '2026-10-01',
+    readTime: '9 dk okuma',
+    tags: ['Yarı Zamanlı İş', 'Genç İstihdamı', 'Kariyer Gelişimi', 'OECD Araştırması', 'Öğrenci Becerileri'],
+    faqs: [
+      {
+        q: 'Gençler için yarı zamanlı çalışmanın faydaları nelerdir?',
+        a: 'OECD araştırması beş temel fayda tanımlar: gerçek parayla finansal okuryazarlık, üniversite seçiminden önce kariyer netliği, iletişim ve dakiklik gibi mesleki beceriler, işverenlerin güvendiği CV güvenilirliği ve yetişkin profesyonel ortamlarda işlev görme konusunda özgüven. Okulda yarı zamanlı çalışan öğrenciler yetişkinlikte tutarlı biçimde daha güçlü istihdam sonuçları gösteriyor.',
+      },
+      {
+        q: 'Bir genç haftada kaç saat çalışmalı?',
+        a: 'OECD araştırması, okul döneminde haftada 1–15 saati üretken aralık olarak gösteriyor. Bu aralıkta çalışan öğrenciler sıklıkla çalışmayan akranlarıyla karşılaştırılabilir ya da biraz daha iyi akademik performans sergiliyor. Haftada 20 veya daha fazla saat sürekli çalışmak notlar ve esenlik üzerinde olumsuz etki gösteriyor.',
+      },
+      {
+        q: 'Yarı zamanlı çalışmak notları etkiler mi?',
+        a: 'Orta düzeyde yarı zamanlı çalışma (haftada yaklaşık 15 saate kadar) notlara zarar vermez; birçok çalışmada biraz daha iyi akademik bağlılıkla ilişkilendirilir. Öğrenciler genellikle daha organize ve motive olur. Olumsuz etkiler yüksek saatlerde (haftada 20+) veya iş programları doğrudan okul yükümlülükleriyle çakıştığında ortaya çıkar.',
+      },
+      {
+        q: 'Kariyer gelişimi açısından gençler için en iyi yarı zamanlı işler hangileridir?',
+        a: 'Öğrencinin ilgi alanına yakın kariyer ilişkili işler, ilgisiz hizmet işlerine kıyasla daha güçlü gelişim sonuçları gösteriyor. Net sorumlulukları olan denetimli roller, gündelik veya yapılandırılmamış pozisyonlara göre daha iyi beceri gelişimi sağlıyor. Müşteri odaklı roller iletişim becerilerini en etkin biçimde geliştiriyor.',
+      },
+      {
+        q: 'Yarı zamanlı çalışma üniversiteye girişe yardımcı olur mu?',
+        a: 'Evet. Yarı zamanlı çalışma, rekabetçi üniversitelerin akademik sonuçların yanı sıra aradığı sorumluluk, zaman yönetimi ve gerçek dünya yetkinliğini göstererek üniversite başvurularını güçlendirir. Ayrıca öğrencilerin daha bilinçli bölüm seçimi yapmalarına yardımcı olarak kayıt sonrası program değiştirme riskini azaltır.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuz için hangi kariyer yolu en uygun?',
+      body: 'Yarı zamanlı bir iş seçmeden önce Eduentry\'nin ücretsiz değerlendirmesi çocuğunuzun yetenek, alan bilgisi ve mesleki becerilerini belirler — böylece doğru temelleri oluşturan bir işe yönelebilirler.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/staj',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

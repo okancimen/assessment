@@ -1623,6 +1623,52 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/internship',
     },
   },
+  {
+    slug: 'oecd-teenage-part-time-work-benefits',
+    title: 'Part-Time Jobs for Teenagers: The OECD-Backed Benefits and How to Maximise Them',
+    shortTitle: 'Part-Time Jobs for Teenagers: Benefits Backed by OECD',
+    description: 'OECD research confirms part-time work during school builds financial literacy, career confidence, and professional skills — with students who work moderately earning more as adults. What the data shows and how to get the most from it.',
+    tldr: 'OECD research on teenage part-time working shows students who work up to around 15 hours per week develop stronger professional skills, higher career confidence, and greater financial literacy than those with no work experience. The key is supervision, career-relevance, and staying within productive hours ranges — all factors schools and parents can influence.',
+    date: '2026-10-01',
+    readTime: '9 min read',
+    tags: ['Part-Time Work', 'Teenager Jobs', 'Career Development', 'OECD Research', 'Student Skills'],
+    faqs: [
+      {
+        q: 'What are the benefits of part-time work for teenagers?',
+        a: 'OECD research identifies five core benefits: financial literacy from managing real money, career clarity before university choices, professional skills such as communication and punctuality, CV credibility through evidence employers trust, and confidence from functioning in adult professional environments. Students who work part-time during school consistently show stronger employment outcomes as adults.',
+      },
+      {
+        q: 'How many hours should a teenager work per week?',
+        a: 'OECD research points to around 1–15 hours per week as the productive range during school term. Students working in this range often show comparable or slightly better academic performance than non-working peers, partly due to improved time management and motivation. Consistently working 20 or more hours per week shows negative effects on grades and wellbeing.',
+      },
+      {
+        q: 'Does part-time work affect a teenager\'s grades?',
+        a: 'Moderate part-time work (up to ~15 hours per week) does not harm grades and in many studies correlates with slightly better academic engagement. Students who work are often more organised and motivated. The negative effects emerge at high hours (20+/week) or when work schedules conflict directly with school obligations.',
+      },
+      {
+        q: 'What are the best part-time jobs for teenagers in terms of career development?',
+        a: 'Jobs that are career-adjacent — related to a student\'s area of interest — show stronger development outcomes than unrelated service work. Supervised roles with clear responsibilities produce better skill development than casual or unstructured positions. Customer-facing roles build communication skills most effectively.',
+      },
+      {
+        q: 'At what age should a teenager start part-time work?',
+        a: 'OECD data shows that students who begin structured part-time work at 15–17 develop professional skills that persist into adulthood. The key is not age but structure: work that is supervised, career-relevant, and balanced with school commitments produces the strongest outcomes regardless of exact starting age.',
+      },
+      {
+        q: 'Does part-time work help teenagers get into university?',
+        a: 'Yes. Part-time work strengthens university applications by demonstrating responsibility, time management, and real-world competence — qualities competitive universities look for alongside academic results. It also helps students make more informed course choices, reducing the risk of switching programmes after enrolment.',
+      },
+      {
+        q: 'How can parents help their teenager get the most from part-time work?',
+        a: 'The most important factors are choosing career-relevant work when possible, maintaining a weekly hours limit during term time, ensuring work is supervised by a professional mentor, and using Eduentry\'s free internship readiness assessment to identify which career tracks best match your child\'s strengths before they commit to any specific role.',
+      },
+    ],
+    cta: {
+      heading: 'Which career track suits your child best?',
+      body: 'Before choosing a part-time job, Eduentry\'s free assessment identifies your child\'s aptitude, domain knowledge, and professional skills — so they can aim for work that builds the right foundations, not just fill a Saturday shift.',
+      label: 'Start free assessment',
+      href: '/internship',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

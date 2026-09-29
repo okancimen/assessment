@@ -708,6 +708,45 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: '/es/practicas',
     },
   },
+  {
+    slug: 'oecd-trabajo-parcial-adolescentes-beneficios',
+    contentSlug: 'oecd-teenage-part-time-work-benefits',
+    title: 'Trabajo a tiempo parcial para adolescentes: los beneficios avalados por la OCDE y cómo aprovecharlos al máximo',
+    shortTitle: 'Trabajo a tiempo parcial adolescentes: beneficios OCDE',
+    description: 'La investigación de la OCDE confirma que trabajar a tiempo parcial durante los estudios desarrolla cultura financiera, confianza profesional y habilidades clave. Qué muestran los datos y cómo sacar el máximo partido.',
+    tldr: 'La investigación de la OCDE sobre el trabajo a tiempo parcial de adolescentes muestra que los alumnos que trabajan hasta ~15 horas semanales desarrollan habilidades profesionales más sólidas y mayor cultura financiera. Los factores clave son la supervisión, la relevancia para la carrera y mantenerse dentro de las horas productivas.',
+    date: '2026-10-01',
+    readTime: '9 min de lectura',
+    tags: ['Trabajo a tiempo parcial', 'Empleos adolescentes', 'Desarrollo profesional', 'Investigación OCDE', 'Habilidades estudiantes'],
+    faqs: [
+      {
+        q: '¿Cuáles son los beneficios del trabajo a tiempo parcial para los adolescentes?',
+        a: 'La investigación de la OCDE identifica cinco beneficios clave: cultura financiera gestionando dinero real, claridad sobre la carrera antes de elegir estudios superiores, habilidades profesionales como la comunicación y la puntualidad, credibilidad del CV mediante evidencias concretas, y confianza al funcionar en entornos profesionales adultos.',
+      },
+      {
+        q: '¿Cuántas horas por semana debería trabajar un adolescente?',
+        a: 'La investigación de la OCDE señala aproximadamente 1–15 horas semanales como la franja productiva durante el curso escolar. Los alumnos en esta franja suelen mostrar un rendimiento académico comparable o ligeramente mejor que sus compañeros que no trabajan. Trabajar sistemáticamente 20 o más horas semanales tiene efectos negativos sobre las notas y el bienestar.',
+      },
+      {
+        q: '¿El trabajo a tiempo parcial afecta las notas de un adolescente?',
+        a: 'El trabajo a tiempo parcial moderado (hasta ~15 horas semanales) no perjudica las notas y en muchos estudios se asocia con una participación académica ligeramente mejor. Los efectos negativos aparecen con horarios altos (20+/semana) o cuando el trabajo entra directamente en conflicto con las obligaciones escolares.',
+      },
+      {
+        q: '¿Qué trabajos a tiempo parcial son mejores para el desarrollo de carrera de un adolescente?',
+        a: 'Los trabajos relacionados con el área de interés del alumno muestran mejores resultados de desarrollo que los empleos de servicio no relacionados. Los roles supervisados con responsabilidades claras producen un mejor desarrollo de habilidades. Los roles de atención al cliente desarrollan las habilidades de comunicación de forma más efectiva.',
+      },
+      {
+        q: '¿Ayuda el trabajo a tiempo parcial a entrar en la universidad?',
+        a: 'Sí. Refuerza las solicitudes universitarias al demostrar responsabilidad, gestión del tiempo y competencias reales — cualidades que las universidades competitivas buscan más allá de los resultados académicos. También ayuda a los estudiantes a hacer elecciones de carrera más informadas.',
+      },
+    ],
+    cta: {
+      heading: '¿Qué orientación profesional le conviene más a tu hijo?',
+      body: 'Antes de elegir un trabajo, la evaluación gratuita de Eduentry identifica las aptitudes, el conocimiento sectorial y las habilidades profesionales de tu hijo — para que pueda apuntar a un trabajo que construya las bases correctas.',
+      label: 'Iniciar evaluación gratuita',
+      href: '/es/practicas',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

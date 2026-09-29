@@ -4242,6 +4242,88 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'oecd-teenage-part-time-work-benefits': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Birçok ebeveyn, okul döneminde yarı zamanlı çalışmanın bir dikkat dağıtıcı olduğunu varsayar. OECD araştırması farklı bir tablo ortaya koyuyor: ortaöğretim döneminde yarı zamanlı çalışan gençler, finansal okuryazarlık, mesleki güven ve kariyer becerileri geliştiriyor — bunların hiçbirini çalışmayan akranları yeterince kazanamıyor. Verilerden çıkan temel mesaj, çalışılıp çalışılmayacağı değil; çocuğunuzun deneyimden en fazlasını çıkarabilmesi için nasıl çalışması gerektiği.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">OECD Araştırması Yarı Zamanlı Çalışan Gençler Hakkında Ne Ortaya Koyuyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD&apos;nin ergen yarı zamanlı çalışmasına ilişkin araştırması, ortaöğretim döneminde üç tür iş deneyimi tespit ediyor: okul aracılığıyla düzenlenen stajlar, topluluk gönüllülüğü ve ücretli yarı zamanlı istihdam. Üçü de doğru yapılandırıldığında olumlu sonuçlar gösteriyor; ancak ücretli yarı zamanlı çalışmanın gençleri gerçek ekonomik sorumluluğa maruz bırakması bakımından benzersiz bir avantajı var.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okulda yarı zamanlı çalışan öğrenciler tutarlı biçimde daha güçlü mesleki beceri gelişimi, daha yüksek kariyer güveni ve yetişkinlikte daha iyi finansal karar alma becerileri sergiliyor. Kanıtlar, birbirinden çok farklı işgücü piyasası koşullarına sahip OECD ülkeleri genelinde geçerliliğini koruyor; bu da mekanizmanın belirli iş türünden ya da ekonomiden değil, doğrudan deneyimin kendisinden kaynaklandığına işaret ediyor.
+        </p>
+        <Callout color="indigo">
+          OECD araştırması doğruluyor: Okul döneminde yarı zamanlı çalışan gençler, yetişkin istihdamında ölçülebilir biçimde süren mesleki beceriler ve kariyer güveni geliştiriyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Okul Döneminde Yarı Zamanlı Çalışmanın 5 Kanıtlanmış Faydası</h2>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Finansal okuryazarlık</strong> — Kazanılan paranın yönetimi, hiçbir sınıf ortamının tam olarak karşılayamadığı bütçeleme, tasarruf ve emeğin değeri konularını öğretiyor.</Check>
+          <Check><strong>Kariyer netliği</strong> — 16 yaşında neyi sevip sevmediğini keşfetmek, bunu 22 yaşında yanlış bir diplomanın ardından öğrenmekten çok daha az maliyetli.</Check>
+          <Check><strong>Mesleki beceriler</strong> — İletişim, dakiklik, müşteri hizmetleri ve akran olmayan kişilerle çalışma; okul ortamına kıyasla gerçek iş ortamında çok daha hızlı gelişiyor.</Check>
+          <Check><strong>CV güvenilirliği</strong> — İşverenler iş geçmişini doğrulayabilir. İş deneyimi, mezuniyet başvurularında öz-beyana dayalı niteliklerin çok ötesine geçen nesnel kanıtlar sunuyor.</Check>
+          <Check><strong>Yetişkin özgüveni</strong> — Mesleki bir ortamda yönergeleri takip etmek, son tarihleri yönetmek ve geri bildirimleri karşılamak; okul etkinliklerinin tam olarak karşılayamadığı bir özgüven biçimi oluşturuyor.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Kaç Saat? OECD&apos;nin Okul Çağı Çalışanları İçin Belirlediği Tatlı Nokta</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD&apos;nin ergen yarı zamanlı çalışması araştırmasının en yararlı bulgularından biri saat eşiğidir. Okul döneminde haftada yaklaşık <strong>1–15 saat</strong> çalışan öğrenciler, akademik açıdan çalışmayan akranlarıyla karşılaştırılabilir ya da biraz daha iyi sonuçlar gösteriyor. Bu, herhangi bir çalışmanın dersleri olumsuz etkileyeceği sezgisinin aksine bir bulgu.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bunun nedeni büyük olasılıkla yapısaldır: çalışan öğrenciler genellikle zamanlarını daha iyi organize ediyor, birbiriyle rekabet eden öncelikleri yönetme konusunda daha motive ve öğrenimleri için somut bir gelecek bağlamı olduğundan akademik açıdan daha bağlı. Olumsuz etkiler daha yüksek saatlerde ortaya çıkıyor — haftada 20 veya daha fazla saat çalışmak notlarla ve esenlikle olumsuz ilişkilendirilmiş — ve iş programları sınav dönemleri ya da çalışma süresiyle doğrudan çakıştığında görülüyor.
+        </p>
+        <Callout color="amber">
+          OECD üretken aralığı: okul döneminde haftada yaklaşık 15 saate kadar. Yüksek saatli çalışma (haftada 20+) notlar ve esenlik üzerinde olumsuz etki gösteriyor — amaç maksimum saat değil, kaliteli bir deneyim.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Hangi Yarı Zamanlı İşler Gençler İçin En İyi Sonuçları Üretiyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tüm yarı zamanlı işler gelişim sonuçları açısından eşit değil. OECD araştırması daha güçlü sonuçları öngören birkaç faktörü ortaya koyuyor:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Kariyer ilişkili roller</strong> — Öğrencinin gerçek ilgi alanına yakın bir işte çalışmak, mesleki becerilerle birlikte alan bilgisini de geliştiriyor. Sağlıkla ilgilenen bir genç bakım asistanı olarak çalışırsa raf düzenleyen birine kıyasla çok daha hızlı gelişiyor.</Bullet>
+          <Bullet><strong>Denetimli ve yapılandırılmış</strong> — Belirlenmiş profesyonel bir mentoru, net sorumlulukları ve düzenli geri bildirimleri olan roller, gündelik veya geçici pozisyonlara kıyasla ölçülebilir biçimde daha iyi beceri gelişimi sağlıyor.</Bullet>
+          <Bullet><strong>Müşteri odaklı</strong> — Öğrencinin yaş grubunun dışından kişilerle düzenli iletişim gerektiren her rol, işverenler ve üniversiteler tarafından en çok değer verilen mesleki iletişim becerilerini geliştiriyor.</Bullet>
+          <Bullet><strong>Okulla bağlantılı</strong> — Okullar öğrencilerin yarı zamanlı çalışmalarını eğitimden bağımsız görmek yerine aktif olarak desteklediğinde ve yönlendirdiğinde, o öğrencilerin sonuçları belirgin biçimde iyileşiyor.</Bullet>
+        </ul>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Çocuğunuz için hangi kariyer yolu en uygun?</p>
+            <p className="text-sm text-gray-600">Herhangi bir yarı zamanlı role başlamadan önce, Eduentry&apos;nin ücretsiz değerlendirmesi çocuğunuzun yeteneklerini, alan bilgisini ve mesleki becerilerini belirliyor — böylece doğru temelleri oluşturacak bir işi hedefleyebilirler.</p>
+          </div>
+          <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Ücretsiz değerlendirmeyi başlat
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/oecd-ergen-is-deneyimi-kariyer-sonuclari', tag: 'Araştırma', title: 'OECD: Erken İş Deneyimi Kariyer Kazançlarını %5–10 Artırıyor' },
+            { href: '/tr/blog/erken-yas-staj-cocuk-gelisimi-kariyer', tag: 'Rehber', title: 'Erken Yaşta Staj: Çocuk Gelişimi ve Kariyer Üzerindeki Etkisi' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

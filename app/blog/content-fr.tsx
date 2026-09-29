@@ -2368,6 +2368,87 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'oecd-teenage-part-time-work-benefits': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Beaucoup de parents supposent qu&apos;un job à temps partiel pendant les études est une distraction. La recherche de l&apos;OCDE raconte une autre histoire : les adolescents qui travaillent à temps partiel au lycée développent une culture financière, une confiance professionnelle et des compétences de carrière que leurs pairs non-travailleurs ne construisent tout simplement pas. Le message clé des données n&apos;est pas de savoir s&apos;il faut travailler — c&apos;est comment travailler d&apos;une façon qui maximise ce que votre enfant retire de l&apos;expérience.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce que la recherche OCDE révèle sur les adolescents qui travaillent à temps partiel</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La recherche de l&apos;OCDE sur le travail à temps partiel des adolescents identifie trois formes d&apos;expérience professionnelle disponibles au lycée : les stages et placements organisés par l&apos;école, le bénévolat dans la communauté, et l&apos;emploi rémunéré à temps partiel. Les trois montrent des résultats positifs quand ils sont bien structurés — mais le travail rémunéré a un avantage unique : il expose les jeunes à une vraie responsabilité économique.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les élèves qui travaillent à temps partiel montrent systématiquement un développement plus solide des compétences professionnelles, une meilleure confiance dans leur carrière et de meilleures décisions financières à l&apos;âge adulte. Les données valent pour des pays de l&apos;OCDE aux conditions de marché du travail très différentes, ce qui suggère que le mécanisme, c&apos;est l&apos;expérience elle-même — pas le type de travail ou l&apos;économie.
+        </p>
+        <Callout color="indigo">
+          La recherche OCDE confirme : les adolescents qui travaillent à temps partiel pendant leurs études développent des compétences professionnelles et une confiance professionnelle qui persistent dans l&apos;emploi adulte.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5 bénéfices prouvés du travail à temps partiel pendant les études</h2>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Culture financière</strong> — Gérer de l&apos;argent gagné enseigne la gestion de budget, l&apos;épargne et la valeur du travail d&apos;une façon qu&apos;aucun exercice scolaire ne peut répliquer.</Check>
+          <Check><strong>Clarté sur la carrière</strong> — Découvrir ce qu&apos;on aime (et n&apos;aime pas) à 16 ans coûte infiniment moins cher que de le découvrir à 22 ans après un diplôme raté.</Check>
+          <Check><strong>Compétences professionnelles</strong> — Communication, ponctualité, service client et travail avec des adultes hors de sa tranche d&apos;âge se développent bien plus vite dans une vraie situation de travail.</Check>
+          <Check><strong>Crédibilité du CV</strong> — Les employeurs peuvent vérifier l&apos;historique professionnel. L&apos;expérience donne des preuves objectives qui pèsent bien plus que les qualités auto-déclarées dans les candidatures.</Check>
+          <Check><strong>Confiance adulte</strong> — Évoluer dans un environnement professionnel — suivre des directives, gérer des délais, intégrer des retours — construit un type de confiance que les activités scolaires ne peuvent pas pleinement remplacer.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Combien d&apos;heures ? La plage optimale selon l&apos;OCDE pour les lycéens qui travaillent</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;un des apports les plus utiles de la recherche de l&apos;OCDE est le seuil horaire. Les élèves travaillant environ <strong>1 à 15 heures par semaine</strong> pendant le trimestre obtiennent des résultats académiques comparables ou légèrement meilleurs que leurs pairs non-travailleurs. C&apos;est contraire à l&apos;intuition que tout travail nuit aux études.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La raison est probablement structurelle : les élèves qui travaillent sont généralement mieux organisés, plus motivés à gérer des priorités concurrentes, et plus engagés dans les études parce qu&apos;ils ont un contexte concret pour leurs apprentissages. Les effets négatifs apparaissent à des horaires plus élevés — travailler systématiquement 20 heures ou plus par semaine est associé à des notes moins bonnes et à un moins bon bien-être — et quand le travail entre directement en conflit avec les périodes d&apos;examens.
+        </p>
+        <Callout color="amber">
+          La plage productive selon l&apos;OCDE : jusqu&apos;à ~15 heures par semaine pendant les cours. Le travail à horaires élevés (20+/semaine) a des effets négatifs sur les notes et le bien-être — l&apos;objectif, c&apos;est la qualité de l&apos;expérience, pas le maximum d&apos;heures.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Quels jobs à temps partiel produisent les meilleurs résultats pour les adolescents</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tous les jobs ne sont pas équivalents en termes de développement. La recherche OCDE identifie plusieurs facteurs qui prédisent de meilleurs résultats :
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Rôles proches de la carrière visée</strong> — Travailler dans un domaine d&apos;intérêt réel développe à la fois les connaissances sectorielles et les compétences professionnelles.</Bullet>
+          <Bullet><strong>Encadrés et structurés</strong> — Les rôles avec un mentor professionnel défini, des responsabilités claires et des retours réguliers donnent un meilleur développement de compétences.</Bullet>
+          <Bullet><strong>En contact avec la clientèle</strong> — Tout rôle nécessitant une communication régulière avec des personnes hors de la tranche d&apos;âge de l&apos;élève construit les compétences de communication les plus valorisées.</Bullet>
+          <Bullet><strong>Avec le soutien de l&apos;école</strong> — Quand les établissements guident et suivent activement le travail à temps partiel de leurs élèves, les résultats s&apos;améliorent significativement.</Bullet>
+        </ul>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Quelle orientation professionnelle convient le mieux à votre enfant ?</p>
+            <p className="text-sm text-gray-600">Avant de choisir un job, l&apos;évaluation gratuite d&apos;Eduentry identifie les aptitudes, les connaissances sectorielles et les compétences professionnelles — pour qu&apos;il vise un travail qui construit les bonnes bases.</p>
+          </div>
+          <Link href="/fr/stage" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Commencer l&apos;évaluation gratuite
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guides connexes</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/fr/blog/oecd-experience-professionnelle-adolescents-resultats-carriere', tag: 'Recherche', title: 'OCDE : l\'expérience professionnelle des ados booste les revenus de 5–10 %' },
+            { href: '/fr/blog/stage-experience-professionnelle-lycee', tag: 'Guide', title: 'Expérience professionnelle en entreprise au lycée : tout ce que vous devez savoir' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

@@ -4096,4 +4096,86 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'oecd-teenage-part-time-work-benefits': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Many parents assume a part-time job during school is a distraction. OECD research tells a different story: teenagers who work part-time during secondary school develop financial literacy, professional confidence, and career skills their non-working peers simply do not build. The key insight from the data is not whether to work — it&apos;s how to work in a way that maximises what your child takes from the experience.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What OECD Research Reveals About Teenagers Who Work Part-Time</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD&apos;s research on teenage part-time work identifies three forms of work experience available during secondary school: school-mediated placements and internships, community volunteering, and paid part-time employment. All three show positive outcomes when structured correctly — but paid part-time work carries a unique additional benefit: it exposes young people to real economic responsibility.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Students who work part-time during school consistently demonstrate stronger professional skill development, higher career confidence, and better financial decision-making as adults. The evidence holds across OECD countries with very different labour market conditions, suggesting the mechanism is the experience itself — not the specific type of job or economy.
+        </p>
+        <Callout color="indigo">
+          OECD research confirms: teenagers who engage in part-time work during school develop professional skills and career confidence that persist measurably into adult employment.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5 Proven Benefits of Part-Time Work During School</h2>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Financial literacy</strong> — Managing earned money teaches budgeting, saving, and the value of labour in ways no classroom exercise replicates.</Check>
+          <Check><strong>Career clarity</strong> — Discovering what you do and don&apos;t enjoy at 16 is exponentially cheaper than discovering it at 22 after a mismatched degree.</Check>
+          <Check><strong>Professional skills</strong> — Communication, punctuality, client service, and working with non-peers are all developed faster in real work than in school settings.</Check>
+          <Check><strong>CV credibility</strong> — Employers can verify employment history. Work experience provides objective evidence that outweighs self-reported qualities on graduate applications.</Check>
+          <Check><strong>Adult confidence</strong> — Operating in a professional environment — taking direction, managing deadlines, handling feedback — builds a form of confidence that school activities cannot fully replicate.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How Many Hours? The OECD Sweet Spot for School-Age Workers</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          One of the most useful findings from OECD research on teenage part-time working is the hours threshold. Students working approximately <strong>1–15 hours per week</strong> during term time show outcomes that are comparable to or slightly better than non-working peers academically. This runs counter to the intuition that any work detracts from studies.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The reason is likely structural: working students are typically more organised about their time, more motivated to manage competing priorities, and more engaged academically because they have a concrete future context for their learning. The negative effects emerge at higher hours — consistently working 20 or more hours per week correlates with lower grades and reduced wellbeing — and when work schedules conflict directly with exam periods or revision time.
+        </p>
+        <Callout color="amber">
+          The OECD productive range: up to ~15 hours per week during term time. High-hours work (20+/week) shows negative effects on grades and wellbeing — the goal is quality exposure, not maximum hours.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Which Part-Time Jobs Produce the Best Outcomes for Teenagers</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Not all part-time jobs are equal in their developmental outcomes. OECD research identifies several factors that predict stronger results:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Career-adjacent roles</strong> — Work in a student&apos;s area of genuine interest develops domain knowledge alongside professional skills. A teenager interested in healthcare who works as a care assistant develops faster than one who stacks shelves.</Bullet>
+          <Bullet><strong>Supervised and structured</strong> — Roles with a defined professional mentor, clear responsibilities, and regular feedback produce measurably better skill development than casual or highly transient positions.</Bullet>
+          <Bullet><strong>Customer-facing</strong> — Any role requiring regular communication with people outside the student&apos;s age group builds the professional communication skills most valued by employers and universities.</Bullet>
+          <Bullet><strong>School-connected</strong> — When schools actively support, guide, and monitor students&apos; part-time work (rather than treating it as separate from education), outcomes for those students improve significantly.</Bullet>
+        </ul>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Which career track suits your child best?</p>
+            <p className="text-sm text-gray-600">Before committing to any part-time role, Eduentry&apos;s free assessment identifies your child&apos;s aptitude, domain knowledge, and professional skills — so they can target work that builds the right foundations, not just fill a Saturday shift.</p>
+          </div>
+          <Link href="/internship" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Start free assessment
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/blog/oecd-teenage-work-experience-career-outcomes', tag: 'Research', title: 'OECD: Teenage Work Experience Boosts Career Outcomes by 5–10%' },
+            { href: '/blog/early-internship-child-development-career', tag: 'Guide', title: 'Internships at Early Age: Child Development and Career Benefits' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }

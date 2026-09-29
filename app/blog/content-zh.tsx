@@ -1965,6 +1965,87 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'oecd-teenage-part-time-work-benefits': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        许多家长认为在校期间打工是一种分心。OECD的研究却呈现了不同的图景：高中阶段从事兼职工作的青少年，能够培养出财务素养、职业自信和职场技能——这些都是不工作的同龄人无法积累的。数据传达的核心信息不是要不要工作，而是如何工作才能让孩子从中获益最大。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">OECD研究揭示了什么——关于兼职工作的青少年</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD关于青少年兼职工作的研究确定了高中阶段三种可获得的工作经验形式：学校组织的实习/见习、社区志愿服务，以及有偿兼职就业。三者在合理组织时均显示正面成效——但有偿兼职具有独特优势：它让年轻人接触真实的经济责任。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          从事兼职工作的学生始终表现出更强的职业技能发展、更高的职业自信，以及成年后更好的财务决策能力。这一结论在劳动力市场条件差异很大的OECD国家间均成立，说明起作用的是经验本身——而非特定工作类型或经济环境。
+        </p>
+        <Callout color="indigo">
+          OECD研究证实：在校期间从事兼职工作的青少年，能培养出在成年就业中可量化持续的职业技能和职业自信。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">在校兼职工作的5个经证实的好处</h2>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>财务素养</strong> — 管理自己赚来的钱，以任何课堂练习都无法复制的方式教会预算、储蓄和劳动价值。</Check>
+          <Check><strong>职业方向清晰</strong> — 在16岁发现自己喜欢什么（不喜欢什么），比在22岁拿到一个不合适的学位后才发现，代价小得多。</Check>
+          <Check><strong>职业技能</strong> — 沟通、守时、客户服务以及与不同年龄段人群合作，在真实工作环境中的发展速度远超课堂。</Check>
+          <Check><strong>简历可信度</strong> — 雇主可以核实工作经历。工作经验提供的客观证明，在申请材料中远比自我描述的素质更有说服力。</Check>
+          <Check><strong>成人自信</strong> — 在职业环境中执行指令、管理截止日期、处理反馈——这建立起一种学校活动无法完全复制的自信。</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">工作多少小时？OECD为在校工作学生指出的最佳范围</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD研究最有价值的发现之一是工时阈值。在学期期间每周工作约<strong>1–15小时</strong>的学生，其学业表现与不工作的同学相当或略好。这与"任何工作都会影响学习"的直觉相悖。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          原因可能是结构性的：工作的学生通常时间安排更有条理，更有动力管理多重优先事项，且因为学习有了具体的未来应用情境，学业投入度也更高。负面影响出现在较高工时下——每周持续工作20小时或以上与成绩下降和身心健康变差相关——以及工作时间与考试或复习期直接冲突时。
+        </p>
+        <Callout color="amber">
+          OECD的合理范围：学期期间每周约15小时以内。高强度工作（每周20小时以上）对成绩和身心健康有负面影响——目标是高质量的经验，而非最多的工时。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">哪类兼职工作对青少年的成效最好</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          并非所有兼职工作在发展成效上都是平等的。OECD研究确定了几个预测更强结果的因素：
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>与职业方向相关的岗位</strong> — 在学生真正感兴趣的领域工作，既能发展专业知识，又能培养职业技能。</Bullet>
+          <Bullet><strong>有监督指导、结构清晰</strong> — 有明确职业导师、清晰职责和定期反馈的岗位，比临时性工作能产生明显更好的技能发展效果。</Bullet>
+          <Bullet><strong>面向客户</strong> — 任何需要与学生年龄群体以外的人定期沟通的岗位，都能最有效地培养雇主和大学最看重的职业沟通技能。</Bullet>
+          <Bullet><strong>有学校支持</strong> — 当学校积极支持、引导和跟踪学生的兼职工作时，这些学生的成效会显著提升。</Bullet>
+        </ul>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">哪个职业方向最适合您的孩子？</p>
+            <p className="text-sm text-gray-600">在选择任何兼职工作之前，Eduentry免费评估能识别孩子的能力、专业知识和职业技能——让他们能够瞄准能打好正确基础的工作。</p>
+          </div>
+          <Link href="/zh/shixi" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            开始免费评估
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">相关指南</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/zh/blog/oecd-qingshaonian-gongzuo-jingyan-zhiye-chengguo', tag: '研究', title: 'OECD：青少年工作经验使成年收入提高5–10%' },
+            { href: '/zh/blog/gaozhong-shixi-ruhe-xunzhao', tag: '指南', title: '高中生如何找到实习机会？完整指南' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

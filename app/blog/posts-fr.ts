@@ -943,6 +943,45 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: '/fr/stage',
     },
   },
+  {
+    slug: 'oecd-travail-partiel-adolescents-avantages',
+    contentSlug: 'oecd-teenage-part-time-work-benefits',
+    title: 'Travail à temps partiel pour les adolescents : les bénéfices prouvés par l\'OCDE et comment en tirer le meilleur',
+    shortTitle: 'Travail à temps partiel ados : bénéfices prouvés par l\'OCDE',
+    description: 'La recherche de l\'OCDE confirme que le travail à temps partiel pendant les études développe la culture financière, la confiance professionnelle et les compétences. Ce que montrent les données et comment en tirer le meilleur.',
+    tldr: 'La recherche de l\'OCDE sur le travail à temps partiel des adolescents montre que les élèves travaillant jusqu\'à environ 15 heures par semaine développent des compétences professionnelles plus solides et une meilleure culture financière. Les facteurs clés sont l\'encadrement, la pertinence pour la carrière et le respect des plages horaires productives.',
+    date: '2026-10-01',
+    readTime: '9 min de lecture',
+    tags: ['Travail à temps partiel', 'Jobs adolescents', 'Développement de carrière', 'Recherche OCDE', 'Compétences étudiantes'],
+    faqs: [
+      {
+        q: 'Quels sont les bénéfices du travail à temps partiel pour les adolescents ?',
+        a: 'La recherche de l\'OCDE identifie cinq bénéfices essentiels : la culture financière par la gestion d\'argent réel, la clarté sur la carrière avant les choix d\'études supérieures, les compétences professionnelles comme la communication et la ponctualité, la crédibilité du CV par des preuves concrètes, et la confiance gagnée en évoluant dans un environnement professionnel adulte.',
+      },
+      {
+        q: 'Combien d\'heures par semaine un adolescent peut-il travailler ?',
+        a: 'La recherche de l\'OCDE indique environ 1 à 15 heures par semaine comme plage productive pendant le temps scolaire. Les élèves dans cette fourchette montrent souvent des résultats académiques comparables ou légèrement meilleurs que leurs pairs non-travailleurs. Travailler systématiquement 20 heures ou plus par semaine a des effets négatifs sur les notes et le bien-être.',
+      },
+      {
+        q: 'Le travail à temps partiel affecte-t-il les notes d\'un adolescent ?',
+        a: 'Un travail à temps partiel modéré (jusqu\'à environ 15 heures par semaine) ne nuit pas aux notes et dans de nombreuses études est associé à un engagement académique légèrement meilleur. Les effets négatifs apparaissent à des horaires élevés (20+/semaine) ou quand le travail entre directement en conflit avec les obligations scolaires.',
+      },
+      {
+        q: 'Quels sont les meilleurs jobs à temps partiel pour le développement de carrière des adolescents ?',
+        a: 'Les emplois en lien avec un domaine d\'intérêt de l\'élève montrent de meilleurs résultats que les emplois de service non liés. Les rôles encadrés avec des responsabilités claires produisent un meilleur développement des compétences. Les rôles en contact avec la clientèle développent le plus efficacement les compétences de communication.',
+      },
+      {
+        q: 'Le travail à temps partiel aide-t-il à entrer à l\'université ?',
+        a: 'Oui. Il renforce les dossiers universitaires en démontrant responsabilité, gestion du temps et compétences réelles — des qualités que les universités sélectives recherchent au-delà des résultats académiques. Il aide aussi les lycéens à faire des choix de filière plus éclairés.',
+      },
+    ],
+    cta: {
+      heading: 'Quelle orientation professionnelle convient le mieux à votre enfant ?',
+      body: 'Avant de choisir un job, l\'évaluation gratuite d\'Eduentry identifie les aptitudes, connaissances sectorielles et compétences professionnelles de votre enfant — pour qu\'il vise un travail qui construit les bonnes bases.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: '/fr/stage',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

@@ -2865,6 +2865,87 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'oecd-teenage-part-time-work-benefits': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Muchos padres asumen que un trabajo a tiempo parcial durante los estudios es una distracción. La investigación de la OCDE cuenta una historia diferente: los adolescentes que trabajan a tiempo parcial durante el instituto desarrollan cultura financiera, confianza profesional y habilidades de carrera que sus compañeros no trabajadores simplemente no construyen. El mensaje clave de los datos no es si trabajar — es cómo trabajar de una manera que maximice lo que tu hijo extrae de la experiencia.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lo que la investigación OCDE revela sobre los adolescentes que trabajan a tiempo parcial</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La investigación de la OCDE sobre el trabajo a tiempo parcial de adolescentes identifica tres formas de experiencia laboral disponibles en el instituto: prácticas y colocaciones organizadas por el centro, voluntariado en la comunidad, y empleo remunerado a tiempo parcial. Las tres muestran resultados positivos cuando están bien estructuradas, pero el trabajo remunerado tiene una ventaja única: expone a los jóvenes a responsabilidad económica real.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los alumnos que trabajan a tiempo parcial muestran sistemáticamente un desarrollo más sólido de habilidades profesionales, mayor confianza profesional y mejores decisiones financieras como adultos. Las evidencias se mantienen en países de la OCDE con condiciones de mercado laboral muy diferentes, lo que sugiere que el mecanismo es la propia experiencia — no el tipo de trabajo ni la economía.
+        </p>
+        <Callout color="indigo">
+          La investigación OCDE confirma: los adolescentes que trabajan a tiempo parcial durante los estudios desarrollan habilidades profesionales y confianza que persisten de forma medible en el empleo adulto.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5 beneficios probados del trabajo a tiempo parcial durante los estudios</h2>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Cultura financiera</strong> — Gestionar dinero ganado enseña presupuesto, ahorro y el valor del trabajo de una forma que ningún ejercicio escolar puede replicar.</Check>
+          <Check><strong>Claridad sobre la carrera</strong> — Descubrir lo que te gusta (y lo que no) a los 16 años es infinitamente más barato que descubrirlo a los 22 después de una carrera equivocada.</Check>
+          <Check><strong>Habilidades profesionales</strong> — Comunicación, puntualidad, atención al cliente y trabajo con adultos de otras generaciones se desarrollan mucho más rápido en un trabajo real.</Check>
+          <Check><strong>Credibilidad del CV</strong> — Los empleadores pueden verificar el historial laboral. La experiencia proporciona evidencia objetiva que supera a las cualidades autodeclaradas en las solicitudes.</Check>
+          <Check><strong>Confianza adulta</strong> — Funcionar en un entorno profesional — seguir instrucciones, gestionar plazos, recibir feedback — construye un tipo de confianza que las actividades escolares no pueden replicar del todo.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Cuántas horas? El rango óptimo de la OCDE para estudiantes que trabajan</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Uno de los hallazgos más útiles de la investigación de la OCDE es el umbral de horas. Los alumnos que trabajan aproximadamente <strong>1–15 horas semanales</strong> durante el trimestre muestran resultados académicos comparables o ligeramente mejores que sus compañeros que no trabajan. Esto va en contra de la intuición de que cualquier trabajo resta tiempo al estudio.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La razón es probablemente estructural: los alumnos que trabajan suelen estar mejor organizados, son más motivados para gestionar prioridades en competencia, y están más comprometidos académicamente porque tienen un contexto futuro concreto para su aprendizaje. Los efectos negativos aparecen con horarios más altos — trabajar sistemáticamente 20 o más horas semanales se asocia con peores notas y menor bienestar — y cuando el trabajo entra directamente en conflicto con los exámenes.
+        </p>
+        <Callout color="amber">
+          La franja productiva según la OCDE: hasta ~15 horas semanales en período lectivo. El trabajo de muchas horas (20+/semana) tiene efectos negativos — el objetivo es la calidad de la experiencia, no el máximo de horas.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué trabajos a tiempo parcial producen los mejores resultados para adolescentes</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          No todos los trabajos son iguales en sus resultados de desarrollo. La investigación OCDE identifica varios factores que predicen mejores resultados:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Roles relacionados con la carrera de interés</strong> — Trabajar en un área de interés real desarrolla conocimiento sectorial junto con habilidades profesionales.</Bullet>
+          <Bullet><strong>Supervisados y estructurados</strong> — Los roles con un mentor profesional definido, responsabilidades claras y feedback regular producen un desarrollo de habilidades notablemente mejor.</Bullet>
+          <Bullet><strong>De cara al cliente</strong> — Cualquier rol que requiera comunicación regular con personas fuera de la franja de edad del alumno desarrolla habilidades de comunicación profesional más valoradas.</Bullet>
+          <Bullet><strong>Con apoyo del centro educativo</strong> — Cuando los institutos guían y hacen seguimiento activo del trabajo a tiempo parcial de sus alumnos, los resultados mejoran significativamente.</Bullet>
+        </ul>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">¿Qué orientación profesional le conviene más a tu hijo?</p>
+            <p className="text-sm text-gray-600">Antes de comprometerse con cualquier trabajo, la evaluación gratuita de Eduentry identifica las aptitudes, el conocimiento sectorial y las habilidades profesionales de tu hijo — para que pueda apuntar a un trabajo que construya las bases correctas.</p>
+          </div>
+          <Link href="/es/practicas" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Iniciar evaluación gratuita
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guías relacionadas</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/es/blog/oecd-experiencia-laboral-adolescentes-resultados-carrera', tag: 'Investigación', title: 'OCDE: la experiencia laboral en la adolescencia aumenta los ingresos un 5–10 %' },
+            { href: '/es/blog/practicas-tempranas-desarrollo-infantil-carrera', tag: 'Guía', title: 'Prácticas tempranas: desarrollo infantil y ventaja profesional acumulada' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {
