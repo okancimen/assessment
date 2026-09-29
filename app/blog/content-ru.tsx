@@ -2197,8 +2197,8 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-xl font-bold text-gray-900 mb-4">Связанные руководства</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { href: '/ru/blog/ranniy-stazh-razvitie-rebenka-karera', tag: 'Исследование', title: 'Почему ранние стажировки важны: развитие и карьерные преимущества' },
-            { href: '/ru/blog/polza-stazha-v-shkole-dlya-universiteta', tag: 'Руководство', title: 'Польза школьной стажировки для поступления в университет' },
+            { href: '/ru/blog/ranniy-stazh-razvitie-rebyonka-karera', tag: 'Исследование', title: 'Ранняя стажировка: развитие ребёнка, зрелость и накопленное карьерное преимущество' },
+            { href: '/ru/blog/preimushchestva-stazha-v-shkole', tag: 'Руководство', title: 'Стажировка в старшей школе: личностный рост, готовность и поступление в университет' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

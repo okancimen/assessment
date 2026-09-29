@@ -2355,8 +2355,8 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-xl font-bold text-gray-900 mb-4">Guides connexes</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { href: '/fr/blog/stage-lyceen-avantages-competences-professionnelles', tag: 'Recherche', title: 'Pourquoi les stages lycéens comptent : développement et bénéfices professionnels' },
-            { href: '/fr/blog/avantages-stage-lycee-admission-universite', tag: 'Guide', title: 'Avantages du stage au lycée pour les admissions universitaires' },
+            { href: '/fr/blog/stage-experience-professionnelle-lycee', tag: 'Recherche', title: 'Expérience professionnelle en entreprise au lycée : tout ce que vous devez savoir' },
+            { href: '/fr/blog/stages-lycee-avantages-universite', tag: 'Guide', title: 'Stages au lycée : bénéfices et université' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

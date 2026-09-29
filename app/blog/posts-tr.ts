@@ -1057,8 +1057,8 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'oecd-ergen-is-deneyimi-kariyer-sonuclari',
     contentSlug: 'oecd-teenage-work-experience-career-outcomes',
     title: 'OECD Araştırması: Erken Yaşta İş Deneyiminin Kariyer Üzerindeki Gizli Gücü',
-    shortTitle: 'OECD: Erken İş Deneyimi Kariyer Başarısını Artırıyor',
-    description: 'OECD\'nin yeni araştırması, 16 yaşından önce iş deneyimi kazanan gençlerin yetişkinlikte %5–10 daha fazla kazandığını ve istikrarlı iş bulma olasılıklarının önemli ölçüde yüksek olduğunu doğruluyor. Veriler ne söylüyor ve ebeveynler ne yapabilir?',
+    shortTitle: 'Erken İş Deneyiminin Faydaları: OECD Araştırması Ne Diyor?',
+    description: '16 yaşından önce iş deneyimi kazanan gençler yetişkinlikte %5–10 daha fazla kazanıyor. OECD\'nin 47 boylamsal çalışmadan derlediği veriler, hangi becerilerin geliştiği ve ebeveynlerin ne yapabileceğini ortaya koyuyor.',
     tldr: 'OECD\'nin incelediği 47 boylamsal çalışmanın 40\'ında, okul destekli iş deneyimi olan öğrencilerin yetişkinlikte daha iyi istihdam sonuçları elde ettiği görülmüştür. Erken iş deneyimi yaşayanlar yetişkinlikte %5–10 daha fazla kazanmaktadır. Ancak İspanya, İtalya ve Brezilya\'da gençlerin yaklaşık %50\'si 15 yaşına kadar hiç iş deneyimi edinmemiştir.',
     date: '2026-09-30',
     readTime: '10 dk okuma',
@@ -1079,6 +1079,18 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       {
         q: 'Çocuğum aile bağlantısı olmadan nasıl iş deneyimi bulabilir?',
         a: 'Okullar ve yapılandırılmış programlar bu erişim açığını kapatır. Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi, öğrencilerin güçlü oldukları kariyer alanını belirlemelerine yardımcı olur, işverenlerle paylaşabilecekleri kişiselleştirilmiş bir rapor üretir ve bağlantı eksikliğinden kaynaklanan CV boşluklarını nesnel bir yeterlilik belgesiyle kapatır.',
+      },
+      {
+        q: 'Gençler kaç yaşında iş deneyimi edinmeye başlamalı?',
+        a: 'OECD verilerine göre en güçlü etkiler 14–16 yaş arasında yapılandırılmış iş deneyimi kazananlar için gözlemleniyor. Tek bir haftalık anlamlı bir iş deneyimi bile kariyer netliğini değiştirmeye ve yetişkinliğe taşınan profesyonel beceriler geliştirmeye yetebiliyor.',
+      },
+      {
+        q: 'İş deneyimi gençlerde hangi becerileri geliştiriyor?',
+        a: 'OECD araştırmasına göre okul destekli iş deneyimi; gerçek bağlamda teknik beceriler, profesyonel iletişim, baskı altında takım çalışması ve kariyer yönü netliği kazandırıyor — bunlar formal eğitimin nadiren sağladığı yetkinlikler. Öğrenciler ayrıca işverenlerin öz beyan edilen niteliklerden çok değer verdiği CV kanıtları da elde ediyor.',
+      },
+      {
+        q: 'İş deneyimi üniversiteye girişe yardımcı olur mu?',
+        a: 'Evet. İş deneyimi; girişimcilik, gerçek dünya becerisi ve kariyer yönü gibi rekabetçi üniversitelerin not kartının ötesinde aktif olarak aradığı nitelikleri sergilediğinden başvuruları güçlendirir. Ayrıca öğrencilerin gerçek ilgi alanlarıyla daha uyumlu bölümler seçmelerine yardımcı olarak ileride bölüm değiştirme ihtimalini azaltır.',
       },
     ],
     cta: {

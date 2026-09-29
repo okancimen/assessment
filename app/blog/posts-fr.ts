@@ -900,8 +900,8 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     slug: 'oecd-experience-professionnelle-adolescents-resultats-carriere',
     contentSlug: 'oecd-teenage-work-experience-career-outcomes',
     title: 'Recherche OCDE : le pouvoir caché de l\'expérience professionnelle des adolescents sur la carrière',
-    shortTitle: 'OCDE : l\'expérience pro des ados booste les carrières',
-    description: 'Une nouvelle recherche de l\'OCDE confirme ce que les employeurs savent déjà : les adolescents qui acquièrent une expérience professionnelle avant 16 ans gagnent 5 à 10 % de plus à l\'âge adulte et trouvent un emploi stable bien plus facilement. Voici ce que montrent les données.',
+    shortTitle: 'Avantages de l\'expérience professionnelle ados : étude OCDE',
+    description: 'Les ados avec une expérience professionnelle avant 16 ans gagnent 5–10 % de plus à l\'âge adulte, selon l\'OCDE (47 études longitudinales). Quelles compétences se développent, qui est exclu et que faire en tant que parent.',
     tldr: '40 études longitudinales sur 47 examinées par l\'OCDE montrent que les élèves ayant bénéficié d\'une expérience professionnelle scolaire ont de meilleurs résultats d\'emploi à l\'âge adulte. La prime salariale est de 5 à 10 %. Pourtant, environ 50 % des adolescents en Espagne, en Italie et au Brésil n\'ont aucune expérience professionnelle avant 15 ans.',
     date: '2026-09-30',
     readTime: '10 min de lecture',
@@ -922,6 +922,18 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       {
         q: 'Comment mon enfant peut-il trouver un stage sans relations familiales ?',
         a: 'Les écoles et les programmes structurés comblent ce fossé d\'accès. L\'évaluation gratuite de préparation au stage d\'Eduentry aide les élèves à identifier leur meilleure piste de carrière, produit un rapport personnalisé partageable avec les employeurs, et fournit une accréditation objective qui compense le manque de relations.',
+      },
+      {
+        q: 'À quel âge un adolescent devrait-il commencer une expérience professionnelle ?',
+        a: 'Les données de l\'OCDE montrent les effets les plus forts pour les élèves qui commencent une expérience professionnelle structurée entre 14 et 16 ans. Même une seule semaine de travail concret suffit à clarifier l\'orientation professionnelle et à développer des compétences qui persistent à l\'âge adulte.',
+      },
+      {
+        q: 'Quelles compétences l\'expérience professionnelle développe-t-elle chez les adolescents ?',
+        a: 'Selon la recherche de l\'OCDE, l\'expérience professionnelle scolaire développe les compétences techniques en contexte réel, la communication professionnelle, le travail d\'équipe sous pression et la clarté sur l\'orientation — des compétences rarement transmises par l\'enseignement formel. Les élèves acquièrent aussi des preuves concrètes sur leur CV que les employeurs valorisent.',
+      },
+      {
+        q: 'L\'expérience professionnelle aide-t-elle à entrer à l\'université ?',
+        a: 'Oui. Elle renforce les dossiers de candidature en démontrant initiative, compétences réelles et orientation professionnelle — des qualités que les universités sélectives recherchent activement au-delà des notes. Elle aide aussi les lycéens à choisir des filières vraiment adaptées à leurs intérêts, réduisant le risque de réorientation.',
       },
     ],
     cta: {

@@ -1952,8 +1952,8 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-xl font-bold text-gray-900 mb-4">相关指南</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { href: '/zh/blog/qingshaonian-shixi-zhiye-fazhan-youshi', tag: '研究', title: '为什么青少年实习很重要：职业发展与长期收益' },
-            { href: '/zh/blog/gaohao-shixi-daxue-shenqing-youshi', tag: '指南', title: '高中实习对大学申请的优势' },
+            { href: '/zh/blog/gaozhong-shixi-ruhe-xunzhao', tag: '研究', title: '高中生如何找到实习机会？完整指南' },
+            { href: '/zh/blog/ruhe-zhaodao-shixi-mei-you-guanxi', tag: '指南', title: '没有背景和人脉，如何找到实习机会：高中生实战指南' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

@@ -665,8 +665,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'oecd-experiencia-laboral-adolescentes-resultados-carrera',
     contentSlug: 'oecd-teenage-work-experience-career-outcomes',
     title: 'Investigación OCDE: el poder oculto de la experiencia laboral en la adolescencia sobre la carrera profesional',
-    shortTitle: 'OCDE: la experiencia laboral adolescente mejora la carrera',
-    description: 'Una nueva investigación de la OCDE confirma lo que los empleadores ya saben: los adolescentes que adquieren experiencia laboral antes de los 16 años ganan entre un 5 y un 10 % más de adultos y tienen muchas más posibilidades de encontrar empleo estable.',
+    shortTitle: 'Beneficios de las prácticas en adolescentes: estudio OCDE',
+    description: 'Los adolescentes con experiencia laboral antes de los 16 ganan un 5–10 % más de adultos, según la OCDE (47 estudios longitudinales). Qué habilidades desarrolla, quién se queda sin acceso y qué pueden hacer los padres.',
     tldr: '40 de los 47 estudios longitudinales revisados por la OCDE mostraron mejores resultados de empleo en la edad adulta para los alumnos con experiencia laboral escolar. Quienes tienen experiencia temprana ganan entre un 5 y un 10 % más. Sin embargo, alrededor del 50 % de los adolescentes en España, Italia y Brasil no tienen ninguna experiencia laboral a los 15 años.',
     date: '2026-09-30',
     readTime: '10 min de lectura',
@@ -687,6 +687,18 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       {
         q: '¿Cómo puede mi hijo encontrar prácticas sin contactos familiares?',
         a: 'Los colegios y programas estructurados cierran esa brecha de acceso. La evaluación gratuita de preparación para prácticas de Eduentry ayuda a los estudiantes a identificar su mejor trayectoria profesional, produce un informe personalizado que pueden compartir con empresas y proporciona una acreditación objetiva que compensa la falta de contactos.',
+      },
+      {
+        q: '¿A qué edad debería un adolescente empezar una experiencia laboral?',
+        a: 'Los datos de la OCDE muestran los efectos más fuertes para los estudiantes que comienzan una experiencia laboral estructurada entre los 14 y los 16 años. Incluso una sola semana de trabajo significativo es suficiente para clarificar la orientación profesional y desarrollar habilidades que persisten hasta la edad adulta.',
+      },
+      {
+        q: '¿Qué habilidades desarrolla la experiencia laboral en los adolescentes?',
+        a: 'Según la investigación de la OCDE, la experiencia laboral escolar desarrolla habilidades técnicas en contexto real, comunicación profesional, trabajo en equipo bajo presión y claridad sobre la orientación laboral — competencias que la educación formal rara vez proporciona. Los estudiantes también obtienen evidencias concretas en el CV que los empleadores valoran.',
+      },
+      {
+        q: '¿Ayuda la experiencia laboral a entrar en la universidad?',
+        a: 'Sí. Refuerza las solicitudes universitarias al demostrar iniciativa, habilidades del mundo real y orientación profesional — cualidades que las universidades competitivas buscan activamente más allá de las notas. También ayuda a los estudiantes a elegir carreras más alineadas con sus intereses reales, reduciendo el riesgo de cambiar de grado.',
       },
     ],
     cta: {

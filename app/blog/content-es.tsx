@@ -2852,8 +2852,8 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-xl font-bold text-gray-900 mb-4">Guías relacionadas</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { href: '/es/blog/practicas-instituto-desarrollo-habilidades-profesionales', tag: 'Investigación', title: 'Por qué importan las prácticas en el instituto: desarrollo y beneficios profesionales' },
-            { href: '/es/blog/ventajas-practicas-bachillerato-admision-universidad', tag: 'Guía', title: 'Ventajas de las prácticas en bachillerato para la admisión universitaria' },
+            { href: '/es/blog/practicas-tempranas-desarrollo-infantil-carrera', tag: 'Investigación', title: 'Prácticas tempranas: desarrollo y ventaja profesional acumulada' },
+            { href: '/es/blog/practicas-instituto-beneficios-universidad', tag: 'Guía', title: 'Prácticas en el instituto: beneficios y acceso universitario' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

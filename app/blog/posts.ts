@@ -1580,8 +1580,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'oecd-teenage-work-experience-career-outcomes',
     title: 'OECD Research: The Hidden Power of Teenage Work Experience on Career Outcomes',
-    shortTitle: 'OECD: Teenage Work Experience Boosts Career Outcomes',
-    description: 'New OECD research confirms what employers already know: teenagers who gain work experience before 16 earn 5–10% more as adults and are significantly more likely to find stable employment. Here\'s what the data shows — and what parents can do.',
+    shortTitle: 'Teenage Work Experience Benefits: What OECD Research Shows',
+    description: 'Teenagers with work experience before 16 earn 5–10% more as adults, per OECD data from 47 longitudinal studies. What skills it builds, who misses out, and what parents can do now.',
     tldr: '40 out of 47 longitudinal studies reviewed by the OECD showed better adult employment outcomes for students who had school-based work experience. Those with early work experience earn 5–10% more as adults. Yet around 50% of teenagers in Spain, Italy and Brazil have no work experience by age 15 — a gap driven more by family connections than by ability.',
     date: '2026-09-30',
     readTime: '10 min read',
@@ -1602,6 +1602,18 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       {
         q: 'How can my child get work experience without family connections?',
         a: 'Schools and structured programmes close the access gap. Eduentry\'s free internship readiness assessment helps students identify their strongest career track, produces a personalised report they can share with employers, and gives them an objective credential that substitutes for the CV gaps that come from lacking connections.',
+      },
+      {
+        q: 'What age should a teenager start work experience?',
+        a: 'OECD data shows the strongest effects for students who begin structured work experience between ages 14 and 16. Earlier exposure — even a single week of meaningful work — is enough to shift career clarity and build professional skills that persist into adulthood.',
+      },
+      {
+        q: 'What skills does work experience develop in teenagers?',
+        a: 'According to OECD research, school-based work experience develops technical skills in real context, professional communication, teamwork under pressure, and career direction clarity — competencies that formal education rarely delivers. Students also gain CV evidence that employers value over self-reported qualities.',
+      },
+      {
+        q: 'Does work experience help teenagers get into university?',
+        a: 'Yes. Work experience strengthens university applications by demonstrating initiative, real-world skill, and career direction — qualities admissions teams at competitive universities actively look for beyond grades. It also helps students choose courses better aligned with genuine interests, reducing the chance of switching programmes later.',
       },
     ],
     cta: {
