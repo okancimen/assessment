@@ -3976,4 +3976,124 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'oecd-teenage-work-experience-career-outcomes': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        The question most parents never think to ask is not whether their child should go to university — it&apos;s whether their child should get a job first. New OECD research provides the most comprehensive answer yet: teenagers who gain structured work experience before 16 earn measurably more as adults, find stable employment faster, and develop skills that no classroom can replicate. The data is unambiguous. The access gap is not.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What the Research Actually Shows</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The OECD reviewed 47 longitudinal studies examining the link between school-based work experience and adult employment outcomes. The verdict: <strong>40 out of 47 studies found better adult employment outcomes</strong> for students who had participated in structured work experience compared with those who had not. That is an 85% consistency rate across independent research — the kind of agreement that rarely emerges in education research.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The earnings premium is concrete. Students who gain early work experience go on to earn <strong>5–10% more</strong> in adult employment. Over a 40-year career, a 7% earnings premium compounds into a substantial lifetime advantage. But the benefit is not primarily financial — it is structural. Work experience changes how young people present themselves, what they say in interviews, and how employers perceive them at the hiring stage.
+        </p>
+        <Callout color="indigo">
+          85% of longitudinal studies confirm it: structured work experience before 16 produces measurably better adult employment outcomes.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Skills Gap Work Experience Actually Closes</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The OECD identifies specific competencies that work experience develops which formal education struggles to build: technical skills applied in context, teamwork under real conditions, communication with people outside your peer group, and professional confidence. These are not soft skills in the pejorative sense — they are the capabilities that predict whether a graduate succeeds in their first two years of employment.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A Madrid study of residents aged 19–26 found that work experience was rated &ldquo;very helpful&rdquo; by 57% of part-time workers, 41% of former interns, and 34% of volunteers. The students who valued it most were those who had combined it with academic study — not those who had used it as an alternative.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Technical skills in context</strong> — applying classroom knowledge to real constraints and deadlines</Check>
+          <Check><strong>Professional communication</strong> — writing emails, presenting to adults, handling feedback</Check>
+          <Check><strong>Teamwork under pressure</strong> — working with people you didn&apos;t choose, toward goals you didn&apos;t set</Check>
+          <Check><strong>Career clarity</strong> — discovering what you want (and don&apos;t want) before expensive university commitments</Check>
+          <Check><strong>CV credibility</strong> — concrete evidence that employers value over self-reported attributes</Check>
+          <Check><strong>Professional network</strong> — the first rung of a ladder that typically extends from referrals, not applications</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Access Problem: Why Family Connections Shouldn&apos;t Determine Outcomes</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The OECD data on access is more troubling than the data on outcomes. <strong>Around 50% of teenagers in Spain, Italy, and Brazil</strong> have no work experience by age 15. In Australia, Bulgaria, Lithuania, Poland, Serbia, and the Slovak Republic, the figure is approximately 25%. Across all countries, girls are significantly less likely than boys to participate.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The mechanism driving this gap is well documented: when schools do not systematically facilitate work placements, access defaults to family connections. Children of professionals — lawyers, doctors, managers — can ring up a parent&apos;s colleague. Children of service workers, single parents, or recent immigrants cannot. The result is that work experience, which should be a universal leveller, becomes another advantage that replicates privilege.
+        </p>
+        <Callout color="amber">
+          When schools don&apos;t systematically arrange work placements, family connections determine who gets them. The OECD calls this the primary driver of inequality in early career outcomes.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The OECD&apos;s policy recommendation is clear: schools should facilitate work placements systematically, and career exploration activities — workplace visits, talks from professionals, industry fairs — should precede formal placement experience to prepare students and build motivation.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What This Means for Parents Acting Now</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          If your child is between 14 and 18, the OECD evidence has a direct practical implication: waiting for school to arrange experience is suboptimal. Schools vary enormously in the quality of their careers provision. The families whose children most consistently benefit from early work experience are those who treat it as an active goal rather than a background aspiration.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          But effective work experience requires preparation. An unprepared student in a workplace setting learns less, makes a weaker impression, and is less likely to be invited back or referred. The OECD specifically recommends career exploration activities before formal placement — and structured self-assessment is the most reliable form of preparation a student can do independently.
+        </p>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Is your child ready for work experience?</p>
+            <p className="text-sm text-gray-600">Eduentry&apos;s free internship readiness assessment identifies aptitude, domain knowledge, and professional skills — and produces a report your child can share directly with employers.</p>
+          </div>
+          <Link href="/internship" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Start free assessment
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Gender Gap: An Access Problem, Not an Aptitude Problem</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The OECD finding that girls are significantly less likely than boys to participate in work experience deserves direct attention. The gap is not explained by ability — girls who do secure placements show comparable or stronger outcomes. The gap is explained by access: the professional networks that informal work experience runs through are more male-dominated, and girls face higher baseline social barriers to cold outreach.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Structured programmes and formal assessments partially close this gap by providing an objective credential that substitutes for personal introductions. A student who can present an independent readiness assessment has an alternative entry point that does not depend on who their parents know.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Practical Steps: From Research to Action</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The OECD recommends a sequenced approach: career exploration first, then structured placement. In practice, that means:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Identify the right sector early</strong> — a mismatched placement wastes the opportunity and demoralises the student</Check>
+          <Check><strong>Build an objective credential</strong> — self-reported enthusiasm is not enough; employers respond to evidence</Check>
+          <Check><strong>Prepare for the placement itself</strong> — students who arrive with questions, a journal, and a clear learning goal get dramatically more out of the experience</Check>
+          <Check><strong>Document the experience for university applications</strong> — specific observations and reflections from real work settings are what admissions readers are trained to reward</Check>
+        </ul>
+        <div className="mt-6 mb-2">
+          <Link href="/internship" className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#4338CA] transition-colors">
+            Check your child&apos;s internship readiness — free
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/blog/early-internship-child-development-career', tag: 'Research', title: 'Why Internships at Early Ages Matter: Development & Career Benefits' },
+            { href: '/blog/high-school-internship-benefits-university', tag: 'Guide', title: 'High School Internship Benefits for University Admissions' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }

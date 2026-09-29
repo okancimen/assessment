@@ -1053,6 +1053,41 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/#academic',
     },
   },
+  {
+    slug: 'oecd-ergen-is-deneyimi-kariyer-sonuclari',
+    contentSlug: 'oecd-teenage-work-experience-career-outcomes',
+    title: 'OECD Araştırması: Erken Yaşta İş Deneyiminin Kariyer Üzerindeki Gizli Gücü',
+    shortTitle: 'OECD: Erken İş Deneyimi Kariyer Başarısını Artırıyor',
+    description: 'OECD\'nin yeni araştırması, 16 yaşından önce iş deneyimi kazanan gençlerin yetişkinlikte %5–10 daha fazla kazandığını ve istikrarlı iş bulma olasılıklarının önemli ölçüde yüksek olduğunu doğruluyor. Veriler ne söylüyor ve ebeveynler ne yapabilir?',
+    tldr: 'OECD\'nin incelediği 47 boylamsal çalışmanın 40\'ında, okul destekli iş deneyimi olan öğrencilerin yetişkinlikte daha iyi istihdam sonuçları elde ettiği görülmüştür. Erken iş deneyimi yaşayanlar yetişkinlikte %5–10 daha fazla kazanmaktadır. Ancak İspanya, İtalya ve Brezilya\'da gençlerin yaklaşık %50\'si 15 yaşına kadar hiç iş deneyimi edinmemiştir.',
+    date: '2026-09-30',
+    readTime: '10 dk okuma',
+    tags: ['İş Deneyimi', 'Staj', 'Kariyer Gelişimi', 'OECD Araştırması', 'Öğrenci Becerileri'],
+    faqs: [
+      {
+        q: 'OECD araştırması ergen iş deneyimi hakkında ne söylüyor?',
+        a: 'OECD\'nin incelediği 47 boylamsal çalışmanın 40\'ı, okul destekli iş deneyimine katılan öğrencilerin katılmayanlara kıyasla yetişkinlikte daha iyi istihdam sonuçları elde ettiğini ortaya koyuyor. Aynı araştırma, erken iş deneyiminin %5–10 oranında bir kazanç primi sağladığını gösteriyor.',
+      },
+      {
+        q: '15 yaşından önce iş deneyimi olmayan genç sayısı ne kadar?',
+        a: 'OECD, ülkeler arasında önemli farklılıklar saptadı. İspanya, İtalya ve Brezilya\'da gençlerin yaklaşık %50\'si 15 yaşına kadar hiç iş deneyimi edinmemiştir. Avustralya, Bulgaristan, Litvanya, Polonya, Sırbistan ve Slovakya\'da ise bu oran yaklaşık %25\'tir. Erişim fırsatları bireysel yetenek ya da hırstan çok aile bağlantılarıyla ilişkilidir.',
+      },
+      {
+        q: 'İş deneyiminde cinsiyet farkı var mı?',
+        a: 'Evet. OECD, kız öğrencilerin erkek öğrencilere kıyasla iş deneyimine katılma olasılığının önemli ölçüde daha düşük olduğunu tespit etti. Bu fark, erişimde yaşanan engelleri yansıtıyor; deneyim edinen kızların sonuçları erkeklerle karşılaştırılabilir düzeyde ya da daha iyi.',
+      },
+      {
+        q: 'Çocuğum aile bağlantısı olmadan nasıl iş deneyimi bulabilir?',
+        a: 'Okullar ve yapılandırılmış programlar bu erişim açığını kapatır. Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi, öğrencilerin güçlü oldukları kariyer alanını belirlemelerine yardımcı olur, işverenlerle paylaşabilecekleri kişiselleştirilmiş bir rapor üretir ve bağlantı eksikliğinden kaynaklanan CV boşluklarını nesnel bir yeterlilik belgesiyle kapatır.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuz iş deneyimine hazır mı?',
+      body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi 35 dakika sürer ve çocuğunuzun tam olarak nerede durduğunu gösterir — yetenek, alan bilgisi ve profesyonel beceriler — başvurularında kullanabileceği kişiselleştirilmiş bir raporla.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/staj',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

@@ -2292,6 +2292,82 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'oecd-teenage-work-experience-career-outcomes': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        La question que la plupart des parents ne posent pas n&apos;est pas &ldquo;mon enfant doit-il faire des études supérieures ?&rdquo;, mais &ldquo;doit-il d&apos;abord acquérir une expérience professionnelle ?&rdquo;. Une nouvelle recherche de l&apos;OCDE apporte la réponse la plus complète à ce jour : les adolescents qui acquièrent une expérience professionnelle structurée avant 16 ans gagnent davantage tout au long de leur carrière, trouvent un emploi stable plus rapidement, et développent des compétences qu&apos;aucune salle de classe ne peut enseigner.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce que dit réellement la recherche</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;OCDE a passé en revue 47 études longitudinales examinant le lien entre l&apos;expérience professionnelle scolaire et les résultats d&apos;emploi à l&apos;âge adulte. Le verdict : <strong>40 études sur 47</strong> ont trouvé de meilleurs résultats pour les élèves ayant participé à des programmes de travail structurés par rapport à ceux qui n&apos;y ont pas participé. C&apos;est un taux de cohérence de 85 % à travers des recherches indépendantes.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La prime salariale est tangible. Les élèves qui acquièrent une expérience précoce gagnent <strong>5 à 10 % de plus</strong> à l&apos;embauche. Sur 40 ans de carrière, cette prime s&apos;accumule en un avantage réel sur toute une vie.
+        </p>
+        <Callout color="indigo">
+          85 % des études longitudinales confirment : une expérience professionnelle structurée avant 16 ans améliore de façon mesurable les résultats d&apos;emploi à l&apos;âge adulte.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les lacunes en compétences que l&apos;expérience comble</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;OCDE identifie des compétences spécifiques que l&apos;expérience professionnelle développe là où l&apos;enseignement formel échoue : compétences techniques en contexte réel, travail d&apos;équipe sous vraies contraintes, communication hors de la sphère des pairs, et confiance professionnelle.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Compétences techniques en contexte</strong> — appliquer les connaissances scolaires à de vraies contraintes et échéances</Check>
+          <Check><strong>Communication professionnelle</strong> — rédiger des e-mails, présenter à des adultes, gérer les retours</Check>
+          <Check><strong>Travail d&apos;équipe sous pression</strong> — collaborer avec des personnes non choisies vers des objectifs non définis par soi</Check>
+          <Check><strong>Clarté sur la carrière</strong> — découvrir ce que l&apos;on veut (et ne veut pas) avant les engagements coûteux des études supérieures</Check>
+          <Check><strong>Crédibilité du CV</strong> — preuves concrètes que les employeurs valorisent plus que les qualités autodéclarées</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Le problème d&apos;accès : les réseaux familiaux ne doivent pas dicter les résultats</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Environ 50 % des adolescents en Espagne, en Italie et au Brésil</strong> n&apos;ont aucune expérience professionnelle à 15 ans. Le mécanisme est bien documenté : lorsque les écoles n&apos;organisent pas systématiquement l&apos;accès à des stages, celui-ci dépend des réseaux familiaux. Les enfants d&apos;avocats, de médecins et de cadres peuvent appeler les collègues de leurs parents ; ceux de travailleurs de service, de parents isolés et de nouveaux immigrants ne le peuvent pas.
+        </p>
+        <Callout color="amber">
+          Lorsque les écoles n&apos;organisent pas systématiquement des programmes de stage, les réseaux familiaux déterminent qui y a accès. L&apos;OCDE décrit cela comme le principal moteur des inégalités dans les résultats de carrière précoce.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Étapes pratiques pour les parents</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Si votre enfant a entre 14 et 18 ans, les données de l&apos;OCDE ont une implication pratique directe : attendre que l&apos;école organise l&apos;expérience est une stratégie sous-optimale. L&apos;expérience professionnelle efficace nécessite une préparation préalable. Un élève non préparé en milieu de travail apprend moins et laisse une moins bonne impression.
+        </p>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Votre enfant est-il prêt pour un stage ?</p>
+            <p className="text-sm text-gray-600">L&apos;évaluation gratuite d&apos;Eduentry identifie les aptitudes, les connaissances spécialisées et les compétences professionnelles — et produit un rapport partageable directement avec les employeurs.</p>
+          </div>
+          <Link href="/fr/stage" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Commencer l&apos;évaluation gratuite
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guides connexes</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/fr/blog/stage-lyceen-avantages-competences-professionnelles', tag: 'Recherche', title: 'Pourquoi les stages lycéens comptent : développement et bénéfices professionnels' },
+            { href: '/fr/blog/avantages-stage-lycee-admission-universite', tag: 'Guide', title: 'Avantages du stage au lycée pour les admissions universitaires' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

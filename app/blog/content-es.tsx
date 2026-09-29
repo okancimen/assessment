@@ -2789,6 +2789,82 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'oecd-teenage-work-experience-career-outcomes': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        La pregunta que la mayoría de los padres no se hacen no es &ldquo;¿debería mi hijo ir a la universidad?&rdquo;, sino &ldquo;¿debería trabajar primero?&rdquo;. Una nueva investigación de la OCDE ofrece la respuesta más completa hasta la fecha: los adolescentes que adquieren experiencia laboral estructurada antes de los 16 años ganan más a lo largo de su carrera, encuentran empleo estable más rápido y desarrollan habilidades que ningún aula puede enseñar.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lo que dice realmente la investigación</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La OCDE revisó 47 estudios longitudinales que examinan la relación entre la experiencia laboral escolar y los resultados de empleo en la edad adulta. El veredicto: <strong>40 de 47 estudios</strong> encontraron mejores resultados para los estudiantes que participaron en programas de trabajo estructurados en comparación con los que no participaron. Eso es una tasa de consistencia del 85% en investigaciones independientes.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La prima salarial es tangible. Los estudiantes que adquieren experiencia temprana ganan <strong>5–10% más</strong> al ser contratados. A lo largo de 40 años de carrera, esa prima se acumula como una ventaja real para toda la vida.
+        </p>
+        <Callout color="indigo">
+          El 85% de los estudios longitudinales confirma: la experiencia laboral estructurada antes de los 16 años mejora de forma mensurable los resultados de empleo en la edad adulta.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Las brechas de habilidades que cubre la experiencia</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La OCDE identifica competencias específicas que la experiencia laboral desarrolla donde la educación formal falla: habilidades técnicas en contexto real, trabajo en equipo bajo verdaderas restricciones, comunicación más allá del entorno de pares y confianza profesional.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Habilidades técnicas en contexto</strong> — aplicar el conocimiento del aula a restricciones y plazos reales</Check>
+          <Check><strong>Comunicación profesional</strong> — redactar correos, presentar ante adultos, gestionar comentarios</Check>
+          <Check><strong>Trabajo en equipo bajo presión</strong> — colaborar con personas no elegidas hacia objetivos no definidos por uno mismo</Check>
+          <Check><strong>Claridad sobre la carrera</strong> — descubrir qué se quiere (y qué no) antes de los costosos compromisos universitarios</Check>
+          <Check><strong>Credibilidad del CV</strong> — evidencias concretas que los empleadores valoran más que las cualidades autodeclaradas</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">El problema de acceso: las redes familiares no deben dictar los resultados</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Alrededor del 50% de los adolescentes en España, Italia y Brasil</strong> no tienen ninguna experiencia laboral a los 15 años. El mecanismo está bien documentado: cuando las escuelas no organizan sistemáticamente el acceso a prácticas, este depende de las redes familiares. Los hijos de abogados, médicos y directivos pueden llamar a los colegas de sus padres; los hijos de trabajadores de servicios, padres solteros e inmigrantes recientes no pueden.
+        </p>
+        <Callout color="amber">
+          Cuando las escuelas no organizan sistemáticamente programas de prácticas, las redes familiares determinan quién accede a ellos. La OCDE describe esto como el principal motor de la desigualdad en los resultados de carrera temprana.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Pasos prácticos para los padres</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Si tu hijo tiene entre 14 y 18 años, los datos de la OCDE tienen una implicación práctica directa: esperar a que la escuela organice la experiencia es una estrategia subóptima. La experiencia laboral efectiva requiere preparación previa. Un estudiante no preparado en un entorno laboral aprende menos y deja una impresión más débil.
+        </p>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">¿Está tu hijo preparado para las prácticas?</p>
+            <p className="text-sm text-gray-600">La evaluación gratuita de Eduentry identifica aptitudes, conocimientos especializados y competencias profesionales — y produce un informe compartible directamente con los empleadores.</p>
+          </div>
+          <Link href="/es/practicas" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Comenzar evaluación gratuita
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guías relacionadas</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/es/blog/practicas-instituto-desarrollo-habilidades-profesionales', tag: 'Investigación', title: 'Por qué importan las prácticas en el instituto: desarrollo y beneficios profesionales' },
+            { href: '/es/blog/ventajas-practicas-bachillerato-admision-universidad', tag: 'Guía', title: 'Ventajas de las prácticas en bachillerato para la admisión universitaria' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

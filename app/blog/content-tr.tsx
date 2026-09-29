@@ -4161,6 +4161,87 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'oecd-teenage-work-experience-career-outcomes': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Çoğu ebeveynin hiç sormadığı soru şudur: &ldquo;Çocuğum üniversiteye gitmeli mi?&rdquo; değil, &ldquo;Çocuğum önce çalışmalı mı?&rdquo; OECD&apos;nin yeni araştırması bu soruya bugüne kadarki en kapsamlı cevabı veriyor: 16 yaşından önce yapılandırılmış iş deneyimi edinen gençler yetişkinlikte ölçülebilir biçimde daha fazla kazanıyor, daha hızlı istikrarlı iş buluyor ve hiçbir sınıfın veremeyeceği beceriler geliştiriyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Araştırma Gerçekte Ne Söylüyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD, okul destekli iş deneyimi ile yetişkin istihdamı sonuçları arasındaki bağı inceleyen 47 boylamsal çalışmayı gözden geçirdi. Sonuç: <strong>47 çalışmanın 40&apos;ında</strong>, yapılandırılmış iş deneyimine katılan öğrencilerin katılmayanlara kıyasla yetişkinlikte daha iyi istihdam sonuçları elde ettiği görüldü. Bu, bağımsız araştırmalar arasında %85 tutarlılık oranıdır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Kazanç primi somuttur. Erken iş deneyimi yaşayan öğrenciler ilerleyen iş hayatlarında <strong>%5–10 daha fazla</strong> kazanmaktadır. 40 yıllık bir kariyer boyunca %7&apos;lik bir kazanç primi, ciddi bir yaşam boyu avantaja dönüşür.
+        </p>
+        <Callout color="indigo">
+          Boylamsal çalışmaların %85&apos;i bunu doğrular: 16 yaşından önce yapılandırılmış iş deneyimi, yetişkin istihdamı sonuçlarını ölçülebilir biçimde iyileştirir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İş Deneyiminin Kapattığı Beceri Açığı</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD, resmi eğitimin geliştirmekte zorlandığı belirli yetkinlikleri tespit ediyor: gerçek ortamda uygulanan teknik beceriler, gerçek koşullarda ekip çalışması, kendi yaş grubunun dışındaki insanlarla iletişim ve mesleki özgüven. Bunlar, bir mezunun ilk iki çalışma yılındaki başarısını öngören yetkinliklerdir.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Bağlamda teknik beceriler</strong> — sınıf bilgisini gerçek kısıtlara ve teslim tarihlerine uygulamak</Check>
+          <Check><strong>Mesleki iletişim</strong> — e-posta yazmak, yetişkinlere sunum yapmak, geri bildirimi yönetmek</Check>
+          <Check><strong>Baskı altında ekip çalışması</strong> — kendinizin seçmediği insanlarla, kendinizin belirlemediği hedeflere çalışmak</Check>
+          <Check><strong>Kariyer netliği</strong> — pahalı üniversite kararları vermeden önce ne istediğinizi (ve istemediğinizi) keşfetmek</Check>
+          <Check><strong>CV güvenilirliği</strong> — işverenlerin öz bildirilen niteliklerden çok değer verdiği somut kanıtlar</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Erişim Sorunu: Aile Bağlantıları Sonuçları Belirlememeli</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD&apos;nin erişim verileri, sonuç verilerinden daha kaygı vericidir. <strong>İspanya, İtalya ve Brezilya&apos;da gençlerin yaklaşık %50&apos;si</strong> 15 yaşına kadar hiç iş deneyimi edinmemiştir. Bu mekanizma iyi belgelenmiştir: okullar iş yerleştirmelerini sistematik olarak organize etmediğinde, erişim aile bağlantılarına bağlı hale gelir. Avukat, doktor veya yöneticilerin çocukları ebeveynlerinin meslektaşlarını arayabilir; hizmet sektörü çalışanlarının, tek ebeveynlerin veya yakın zamanda göç etmiş ailelerin çocukları ise bunu yapamaz.
+        </p>
+        <Callout color="amber">
+          Okullar iş yerleştirmelerini sistematik olarak düzenlemediğinde, kimin deneyim elde ettiğini aile bağlantıları belirler. OECD, bunu erken kariyer sonuçlarındaki eşitsizliğin birincil itici gücü olarak tanımlıyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ebeveynler İçin Pratik Adımlar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuz 14–18 yaş arasındaysa, OECD kanıtlarının doğrudan pratik bir çıkarımı var: okulun deneyimi ayarlamasını beklemek yetersizdir. Etkili iş deneyimi hazırlık gerektirir; hazırlıksız bir öğrenci iş yerinde daha az öğrenir ve daha zayıf bir izlenim bırakır.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Doğru sektörü erken belirleyin</strong> — uyumsuz bir staj fırsatı boşa harcar ve öğrenciyi cesaretini kırar</Check>
+          <Check><strong>Nesnel bir yeterlilik belgesi oluşturun</strong> — öz bildirilen coşku yeterli değil; işverenler kanıta yanıt verir</Check>
+          <Check><strong>Staj için hazırlanın</strong> — sorularla, günlükle ve net bir öğrenme hedefiyle gelen öğrenciler deneyimden çok daha fazlasını alır</Check>
+          <Check><strong>Deneyimi üniversite başvuruları için belgeleyin</strong> — gerçek iş ortamlarından somut gözlemler ve yansımalar, kabul görevlilerinin ödüllendirmeye eğitildiği şeydir</Check>
+        </ul>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Çocuğunuz iş deneyimine hazır mı?</p>
+            <p className="text-sm text-gray-600">Eduentry&apos;nin ücretsiz staj hazırlık değerlendirmesi yetenek, alan bilgisi ve mesleki becerileri belirler — çocuğunuzun doğrudan işverenlerle paylaşabileceği bir rapor üretir.</p>
+          </div>
+          <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Ücretsiz değerlendirmeyi başlat
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/erken-yas-staj-cocuk-gelisimi-kariyer', tag: 'Araştırma', title: 'Erken Yaşta Staj: Çocuk Gelişimi ve Kariyer Üzerindeki Etkisi' },
+            { href: '/tr/blog/lise-staji-faydalari-universite', tag: 'Rehber', title: 'Lise Stajının Üniversite Başvurularına Faydaları' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

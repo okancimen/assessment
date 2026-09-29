@@ -1577,6 +1577,40 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/#academic',
     },
   },
+  {
+    slug: 'oecd-teenage-work-experience-career-outcomes',
+    title: 'OECD Research: The Hidden Power of Teenage Work Experience on Career Outcomes',
+    shortTitle: 'OECD: Teenage Work Experience Boosts Career Outcomes',
+    description: 'New OECD research confirms what employers already know: teenagers who gain work experience before 16 earn 5–10% more as adults and are significantly more likely to find stable employment. Here\'s what the data shows — and what parents can do.',
+    tldr: '40 out of 47 longitudinal studies reviewed by the OECD showed better adult employment outcomes for students who had school-based work experience. Those with early work experience earn 5–10% more as adults. Yet around 50% of teenagers in Spain, Italy and Brazil have no work experience by age 15 — a gap driven more by family connections than by ability.',
+    date: '2026-09-30',
+    readTime: '10 min read',
+    tags: ['Work Experience', 'Internship', 'Career Development', 'OECD Research', 'Student Skills'],
+    faqs: [
+      {
+        q: 'What does the OECD research say about teenage work experience?',
+        a: '40 out of 47 longitudinal studies reviewed by the OECD found that students who participated in school-based work experience had better adult employment outcomes than those who did not. The same research shows a 5–10% earnings premium for those with early work experience — a gap that compounds over a career.',
+      },
+      {
+        q: 'How many teenagers lack work experience before age 15?',
+        a: 'The OECD found significant geographic variation. Around 50% of teenagers in Spain, Italy, and Brazil have no work experience by age 15. In Australia, Bulgaria, Lithuania, Poland, Serbia, and the Slovak Republic, roughly 25% lack any experience. Access is strongly correlated with family connections rather than individual ability or ambition.',
+      },
+      {
+        q: 'Is there a gender gap in teenage work experience?',
+        a: 'Yes. The OECD found that girls are significantly less likely than boys to engage in work experience. This gap is particularly notable because girls who do secure early experience show comparable or stronger outcomes — suggesting the barrier is access, not aptitude.',
+      },
+      {
+        q: 'How can my child get work experience without family connections?',
+        a: 'Schools and structured programmes close the access gap. Eduentry\'s free internship readiness assessment helps students identify their strongest career track, produces a personalised report they can share with employers, and gives them an objective credential that substitutes for the CV gaps that come from lacking connections.',
+      },
+    ],
+    cta: {
+      heading: 'Is your child ready for work experience?',
+      body: 'Eduentry\'s free internship readiness assessment takes 35 minutes and tells your child exactly where they stand — aptitude, domain knowledge, and professional skills — with a personalised report they can use in applications.',
+      label: 'Start free assessment',
+      href: '/internship',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

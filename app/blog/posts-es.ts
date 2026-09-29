@@ -661,6 +661,41 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: 'https://eduentry.com/#academic',
     },
   },
+  {
+    slug: 'oecd-experiencia-laboral-adolescentes-resultados-carrera',
+    contentSlug: 'oecd-teenage-work-experience-career-outcomes',
+    title: 'Investigación OCDE: el poder oculto de la experiencia laboral en la adolescencia sobre la carrera profesional',
+    shortTitle: 'OCDE: la experiencia laboral adolescente mejora la carrera',
+    description: 'Una nueva investigación de la OCDE confirma lo que los empleadores ya saben: los adolescentes que adquieren experiencia laboral antes de los 16 años ganan entre un 5 y un 10 % más de adultos y tienen muchas más posibilidades de encontrar empleo estable.',
+    tldr: '40 de los 47 estudios longitudinales revisados por la OCDE mostraron mejores resultados de empleo en la edad adulta para los alumnos con experiencia laboral escolar. Quienes tienen experiencia temprana ganan entre un 5 y un 10 % más. Sin embargo, alrededor del 50 % de los adolescentes en España, Italia y Brasil no tienen ninguna experiencia laboral a los 15 años.',
+    date: '2026-09-30',
+    readTime: '10 min de lectura',
+    tags: ['Experiencia laboral', 'Prácticas', 'Desarrollo profesional', 'Investigación OCDE', 'Habilidades estudiantes'],
+    faqs: [
+      {
+        q: '¿Qué dice la investigación de la OCDE sobre la experiencia laboral en la adolescencia?',
+        a: '40 de los 47 estudios longitudinales revisados por la OCDE encontraron que los alumnos que participaron en programas de trabajo escolar tuvieron mejores resultados laborales en la edad adulta que quienes no participaron. La misma investigación muestra una prima salarial del 5–10 % para quienes tienen experiencia laboral temprana.',
+      },
+      {
+        q: '¿Cuántos adolescentes carecen de experiencia laboral antes de los 15 años?',
+        a: 'La OCDE encontró variaciones geográficas significativas. Alrededor del 50 % de los adolescentes en España, Italia y Brasil no tienen ninguna experiencia laboral a los 15 años. En Australia, Bulgaria, Lituania, Polonia, Serbia y la República Eslovaca, esta proporción es de aproximadamente el 25 %. El acceso está más vinculado a los contactos familiares que a las capacidades individuales.',
+      },
+      {
+        q: '¿Existe una brecha de género en la experiencia laboral?',
+        a: 'Sí. La OCDE encontró que las chicas tienen significativamente menos probabilidades que los chicos de participar en experiencias laborales. Esta brecha refleja barreras de acceso, no diferencias de capacidad: las chicas que sí obtienen experiencia muestran resultados comparables o mejores.',
+      },
+      {
+        q: '¿Cómo puede mi hijo encontrar prácticas sin contactos familiares?',
+        a: 'Los colegios y programas estructurados cierran esa brecha de acceso. La evaluación gratuita de preparación para prácticas de Eduentry ayuda a los estudiantes a identificar su mejor trayectoria profesional, produce un informe personalizado que pueden compartir con empresas y proporciona una acreditación objetiva que compensa la falta de contactos.',
+      },
+    ],
+    cta: {
+      heading: '¿Está tu hijo preparado para la experiencia laboral?',
+      body: 'La evaluación gratuita de preparación para prácticas de Eduentry tarda 35 minutos y muestra exactamente dónde está tu hijo — aptitud, conocimiento sectorial y habilidades profesionales — con un informe personalizado para sus solicitudes.',
+      label: 'Iniciar evaluación gratuita',
+      href: '/es/practicas',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

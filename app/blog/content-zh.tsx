@@ -1889,6 +1889,82 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'oecd-teenage-work-experience-career-outcomes': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        大多数家长没有问的问题不是"我的孩子应该上大学吗？"，而是"他们应该先工作吗？"。经合组织（OECD）的最新研究给出了迄今为止最全面的答案：在16岁之前获得结构化工作经验的青少年，在整个职业生涯中收入更高，找到稳定工作的速度更快，并且能培养出任何课堂都无法传授的技能。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">研究究竟说了什么？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD审查了47项纵向研究，考察学校工作经验与成年就业结果之间的关系。结论是：<strong>47项研究中有40项</strong>发现，参与结构化工作项目的学生比未参与的学生拥有更好的就业结果。这是独立研究中85%的一致性比率。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          薪资溢价是切实存在的。获得早期工作经验的学生在入职时<strong>多赚5–10%</strong>。在40年的职业生涯中，这一溢价累积成真正的终身优势。
+        </p>
+        <Callout color="indigo">
+          85%的纵向研究证实：16岁前的结构化工作经验能够可量化地改善成年就业结果。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">工作经验填补的技能缺口</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD指出了工作经验在正规教育无能为力之处所培养的特定能力：真实情境中的技术技能、真实约束下的团队协作、与同龄人以外人群的沟通，以及职业自信。
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>情境化技术技能</strong> — 将课堂知识应用于真实的约束条件和截止日期</Check>
+          <Check><strong>职业沟通</strong> — 撰写邮件、向成年人汇报、处理反馈</Check>
+          <Check><strong>压力下的团队协作</strong> — 与非自己选择的人合作，实现非自己设定的目标</Check>
+          <Check><strong>职业方向清晰度</strong> — 在昂贵的大学承诺之前发现自己想要什么（和不想要什么）</Check>
+          <Check><strong>简历可信度</strong> — 雇主看重的具体证明，远胜于自我描述的特质</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">机会获取问题：家庭关系不应决定结果</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>西班牙、意大利和巴西约50%的青少年</strong>在15岁时没有任何工作经验。这一机制有充分的文献记录：当学校不系统性地组织实习机会时，获取机会依赖于家庭关系。律师、医生和管理人员的孩子可以联系父母的同事；服务业工人、单亲父母和新移民的孩子则做不到。
+        </p>
+        <Callout color="amber">
+          当学校不系统性地组织实习项目时，家庭关系决定了谁能获得机会。OECD将其描述为早期职业发展结果不平等的首要驱动因素。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">家长的实际行动步骤</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          如果您的孩子在14至18岁之间，OECD的数据有一个直接的实践意义：等待学校安排工作经验是一种次优策略。有效的工作经验需要事先准备。在工作环境中准备不足的学生学到的更少，留下的印象也更弱。
+        </p>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">您的孩子准备好实习了吗？</p>
+            <p className="text-sm text-gray-600">Eduentry免费实习准备评估可识别能力、专业知识和职业技能——并生成可直接与雇主分享的报告。</p>
+          </div>
+          <Link href="/zh/shixi" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            开始免费评估
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">相关指南</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/zh/blog/qingshaonian-shixi-zhiye-fazhan-youshi', tag: '研究', title: '为什么青少年实习很重要：职业发展与长期收益' },
+            { href: '/zh/blog/gaohao-shixi-daxue-shenqing-youshi', tag: '指南', title: '高中实习对大学申请的优势' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

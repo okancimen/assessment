@@ -896,6 +896,41 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: '/#academic',
     },
   },
+  {
+    slug: 'oecd-experience-professionnelle-adolescents-resultats-carriere',
+    contentSlug: 'oecd-teenage-work-experience-career-outcomes',
+    title: 'Recherche OCDE : le pouvoir caché de l\'expérience professionnelle des adolescents sur la carrière',
+    shortTitle: 'OCDE : l\'expérience pro des ados booste les carrières',
+    description: 'Une nouvelle recherche de l\'OCDE confirme ce que les employeurs savent déjà : les adolescents qui acquièrent une expérience professionnelle avant 16 ans gagnent 5 à 10 % de plus à l\'âge adulte et trouvent un emploi stable bien plus facilement. Voici ce que montrent les données.',
+    tldr: '40 études longitudinales sur 47 examinées par l\'OCDE montrent que les élèves ayant bénéficié d\'une expérience professionnelle scolaire ont de meilleurs résultats d\'emploi à l\'âge adulte. La prime salariale est de 5 à 10 %. Pourtant, environ 50 % des adolescents en Espagne, en Italie et au Brésil n\'ont aucune expérience professionnelle avant 15 ans.',
+    date: '2026-09-30',
+    readTime: '10 min de lecture',
+    tags: ['Expérience professionnelle', 'Stage', 'Développement de carrière', 'Recherche OCDE', 'Compétences étudiantes'],
+    faqs: [
+      {
+        q: 'Que dit la recherche de l\'OCDE sur l\'expérience professionnelle des adolescents ?',
+        a: '40 études longitudinales sur 47 examinées par l\'OCDE ont montré que les élèves ayant participé à des programmes de travail scolaires avaient de meilleurs résultats d\'emploi à l\'âge adulte que ceux qui n\'y avaient pas participé. La même recherche révèle une prime salariale de 5 à 10 % pour ceux qui ont une expérience professionnelle précoce.',
+      },
+      {
+        q: 'Combien d\'adolescents manquent d\'expérience professionnelle avant 15 ans ?',
+        a: 'L\'OCDE a constaté des variations géographiques importantes. Environ 50 % des adolescents en Espagne, en Italie et au Brésil n\'ont aucune expérience professionnelle à 15 ans. En Australie, en Bulgarie, en Lituanie, en Pologne, en Serbie et en République slovaque, cette proportion est d\'environ 25 %. L\'accès est davantage lié aux relations familiales qu\'aux capacités individuelles.',
+      },
+      {
+        q: 'Y a-t-il un écart entre les genres dans l\'accès à l\'expérience professionnelle ?',
+        a: 'Oui. L\'OCDE a constaté que les filles sont nettement moins susceptibles que les garçons de participer à une expérience professionnelle. Cet écart reflète des barrières d\'accès, non des différences de capacités : les filles qui obtiennent une expérience affichent des résultats comparables ou supérieurs.',
+      },
+      {
+        q: 'Comment mon enfant peut-il trouver un stage sans relations familiales ?',
+        a: 'Les écoles et les programmes structurés comblent ce fossé d\'accès. L\'évaluation gratuite de préparation au stage d\'Eduentry aide les élèves à identifier leur meilleure piste de carrière, produit un rapport personnalisé partageable avec les employeurs, et fournit une accréditation objective qui compense le manque de relations.',
+      },
+    ],
+    cta: {
+      heading: 'Votre enfant est-il prêt pour l\'expérience professionnelle ?',
+      body: 'L\'évaluation gratuite de préparation au stage d\'Eduentry prend 35 minutes et montre exactement où se situe votre enfant — aptitudes, connaissances sectorielles et compétences professionnelles — avec un rapport personnalisé pour les candidatures.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: '/fr/stage',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

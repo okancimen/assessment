@@ -2225,6 +2225,81 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'oecd-teenage-work-experience-career-outcomes': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        السؤال الذي لا يطرحه معظم الآباء ليس &ldquo;هل يجب أن يلتحق ابني بالجامعة؟&rdquo;، بل &ldquo;هل يجب أن يعمل أولاً؟&rdquo;. يقدم بحث OECD الجديد الإجابة الأكثر شمولاً حتى الآن: المراهقون الذين يكتسبون خبرة عملية منظمة قبل سن 16 يكسبون أكثر في حياتهم المهنية، ويجدون عملاً مستقراً بوتيرة أسرع، ويطورون مهارات لا يستطيع أي فصل دراسي تنميتها.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">ماذا يقول البحث فعلاً؟</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          راجع OECD 47 دراسة طولية تفحص العلاقة بين الخبرة العملية المدرسية ونتائج التوظيف في مرحلة البلوغ. الحكم: <strong>40 من أصل 47 دراسة</strong> وجدت نتائج توظيف أفضل للطلاب الذين شاركوا في برامج عمل منظمة مقارنةً بمن لم يشاركوا. هذا معدل اتساق 85% عبر أبحاث مستقلة.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          العلاوة على الدخل ملموسة. الطلاب الذين يكتسبون خبرة عملية مبكرة يكسبون <strong>5–10% أكثر</strong> في التوظيف. على مدى 40 عاماً من المسيرة المهنية، تتراكم هذه العلاوة لتصبح ميزة عمر حقيقية.
+        </p>
+        <Callout color="indigo">
+          85% من الدراسات الطولية تؤكد: الخبرة العملية المنظمة قبل سن 16 تحسّن نتائج التوظيف في مرحلة البلوغ بشكل قابل للقياس.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">الفجوة المهارية التي تسدها الخبرة العملية</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          يحدد OECD كفاءات محددة تنميها الخبرة العملية حيث يعجز التعليم الرسمي: المهارات التقنية في السياق الفعلي، العمل الجماعي في ظروف حقيقية، التواصل مع أشخاص خارج نطاق الأقران، والثقة المهنية.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>المهارات التقنية في السياق</strong> — تطبيق معرفة الفصل الدراسي على قيود ومواعيد نهائية حقيقية</Check>
+          <Check><strong>التواصل المهني</strong> — كتابة رسائل إلكترونية، التقديم للبالغين، التعامل مع التغذية الراجعة</Check>
+          <Check><strong>العمل الجماعي تحت الضغط</strong> — العمل مع أشخاص لم تخترهم نحو أهداف لم تحددها</Check>
+          <Check><strong>وضوح المسار المهني</strong> — اكتشاف ما تريده (وما لا تريده) قبل الالتزامات الجامعية المكلفة</Check>
+          <Check><strong>مصداقية السيرة الذاتية</strong> — أدلة ملموسة يقدّرها أصحاب العمل أكثر من الصفات المُعلنة ذاتياً</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">مشكلة الوصول: العلاقات الأسرية لا يجب أن تحدد النتائج</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>نحو 50% من المراهقين في إسبانيا وإيطاليا والبرازيل</strong> لا يملكون أي خبرة عملية بحلول سن 15. الآلية موثقة جيداً: عندما لا تنظم المدارس التوظيف بشكل منهجي، يعتمد الوصول على العلاقات الأسرية. أبناء المحامين والأطباء والمدراء يستطيعون الاتصال بزملاء والديهم؛ أبناء عمال الخدمات والآباء العزاب والمهاجرين الجدد لا يستطيعون ذلك.
+        </p>
+        <Callout color="amber">
+          عندما لا تنظم المدارس برامج التوظيف بشكل منهجي، تحدد العلاقات الأسرية من يحصل عليها. يصف OECD هذا بأنه المحرك الأساسي لعدم المساواة في نتائج المسار المهني المبكر.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">الخطوات العملية للآباء</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          إذا كان طفلك بين 14 و18 عاماً، فإن أدلة OECD لها مضمون عملي مباشر: انتظار المدرسة لترتيب الخبرة هو استراتيجية دون المستوى. الخبرة العملية الفعالة تتطلب إعداداً مسبقاً. الطالب غير المستعد في بيئة العمل يتعلم أقل ويترك انطباعاً أضعف.
+        </p>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">هل طفلك مستعد للخبرة العملية؟</p>
+            <p className="text-sm text-gray-600">تقييم Eduentry المجاني للاستعداد للتدريب يحدد القدرات والمعرفة المتخصصة والمهارات المهنية — وينتج تقريراً يمكن مشاركته مباشرة مع أصحاب العمل.</p>
+          </div>
+          <Link href="/ar/tadrib" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            ابدأ التقييم المجاني
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">أدلة ذات صلة</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/ar/blog/tadrib-mubakkir-tatwir-al-tifl-al-mihniyya', tag: 'بحث', title: 'لماذا تهم التدريبات المبكرة: التطور والفوائد المهنية' },
+            { href: '/ar/blog/fawayd-tadrib-al-thanawiyya-lil-jamiaa', tag: 'دليل', title: 'فوائد التدريب في المرحلة الثانوية للقبول الجامعي' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getArabicBlogContent(slug: string): React.ReactNode {
