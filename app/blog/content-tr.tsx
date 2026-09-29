@@ -4232,6 +4232,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/tr/blog/erken-yas-staj-cocuk-gelisimi-kariyer', tag: 'Araştırma', title: 'Erken Yaşta Staj: Çocuk Gelişimi ve Kariyer Üzerindeki Etkisi' },
             { href: '/tr/blog/lise-staji-faydalari-universite', tag: 'Rehber', title: 'Lise Stajının Üniversite Başvurularına Faydaları' },
+            { href: '/tr/blog/oecd-ergen-yari-zamanli-calisma-faydalari', tag: 'Araştırma', title: 'Ergenler İçin Yarı Zamanlı İş: OECD Destekli Faydalar' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

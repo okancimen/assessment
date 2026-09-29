@@ -2357,6 +2357,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/fr/blog/stage-experience-professionnelle-lycee', tag: 'Recherche', title: 'Expérience professionnelle en entreprise au lycée : tout ce que vous devez savoir' },
             { href: '/fr/blog/stages-lycee-avantages-universite', tag: 'Guide', title: 'Stages au lycée : bénéfices et université' },
+            { href: '/fr/blog/oecd-travail-partiel-adolescents-avantages', tag: 'Recherche', title: 'Jobs à temps partiel pour ados : les avantages confirmés par l\'OCDE' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

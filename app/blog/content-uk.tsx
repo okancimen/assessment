@@ -4086,6 +4086,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/blog/early-internship-child-development-career', tag: 'Research', title: 'Why Internships at Early Ages Matter: Development & Career Benefits' },
             { href: '/blog/high-school-internship-benefits-university', tag: 'Guide', title: 'High School Internship Benefits for University Admissions' },
+            { href: '/blog/oecd-teenage-part-time-work-benefits', tag: 'Research', title: 'Part-Time Jobs for Teenagers: OECD-Backed Benefits and How to Maximise Them' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

@@ -2290,6 +2290,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/ar/blog/staj-mubakir-tatawwur-mahni', tag: 'بحث', title: 'التدريب المبكر وتطور الطفل: كيف تُبنى المسيرة المهنية في سن مبكرة' },
             { href: '/ar/blog/pisa-2025-khibra-amaliya-istidad-talab', tag: 'دليل', title: 'بيزا 2025 والخبرة العملية: فجوة الاستعداد' },
+            { href: '/ar/blog/oecd-amal-juzyi-lilmurahiqin-fawayd', tag: 'بحث', title: 'العمل الجزئي للمراهقين: الفوائد المدعومة من OECD وكيفية تعظيمها' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

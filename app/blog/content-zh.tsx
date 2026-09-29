@@ -1954,6 +1954,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/zh/blog/gaozhong-shixi-ruhe-xunzhao', tag: '研究', title: '高中生如何找到实习机会？完整指南' },
             { href: '/zh/blog/ruhe-zhaodao-shixi-mei-you-guanxi', tag: '指南', title: '没有背景和人脉，如何找到实习机会：高中生实战指南' },
+            { href: '/zh/blog/oecd-qingshaonian-jianzhi-gongzuo-yichu', tag: '研究', title: '青少年兼职工作的益处：OECD研究支持的发现' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
