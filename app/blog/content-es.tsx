@@ -2947,6 +2947,74 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'discover-school-age-childs-hidden-strengths': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Tu hijo puede estar empezando la primaria, preparándose para los exámenes de secundaria o planeando su futuro en bachillerato. En cualquier etapa, una pregunta ronda la mente de todos los padres: &ldquo;¿Para qué tiene verdadero talento mi hijo y en qué áreas tiene dificultades?&rdquo;
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Los boletines escolares y los exámenes de práctica solo nos dicen las notas actuales. Pero entender el verdadero potencial mental de un niño — sus fortalezas cognitivas y áreas de desarrollo — requiere mucho más que una calificación. Requiere una metodología moderna.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Los Principales Retos que Enfrentan las Familias en la Vida Escolar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Durante el recorrido escolar de tu hijo, probablemente hayas observado al menos uno de estos patrones:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>&ldquo;Estudia mucho pero no rinde en los exámenes&rdquo;:</strong> Muchos niños que pasan horas en su escritorio no pueden transformar ese esfuerzo en resultados — porque la ansiedad ante los exámenes o la mala gestión del tiempo, no la falta de esfuerzo, se interpone entre ellos y su verdadero potencial.</Bullet>
+          <Bullet><strong>Potencial oculto (la trampa del aprendizaje memorístico):</strong> Los currículos escolares suelen centrarse en memorizar fórmulas y datos. Un niño con un razonamiento lógico o inteligencia espacial sobresalientes puede pasar completamente desapercibido — porque el sistema no está diseñado para descubrir esas fortalezas.</Bullet>
+          <Bullet><strong>Perder tiempo en lo equivocado:</strong> Cuando los padres no saben exactamente dónde tiene dificultades un niño — si es en la resolución de problemas en sí, o simplemente en leer y comprender el enunciado —, aplican métodos de estudio erróneos y, sin quererlo, generan rechazo hacia el aprendizaje.</Bullet>
+          <Bullet><strong>Ansiedad por el futuro y competencia global:</strong> El mundo cambia rápidamente. Saber solo dónde está tu hijo en su clase o escuela ya no es suficiente para prepararlo para el panorama internacional del mañana.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La Solución: Evaluación Adaptativa que Mapea Fortalezas y Áreas de Desarrollo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El mundo educativo se está alejando de las pruebas uniformes para todos. La metodología de Tests Adaptativos con IA de Eduentry está diseñada precisamente para este momento.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En lugar de un examen tradicional, el sistema se ajusta en tiempo real a cada respuesta. Cuando un niño responde correctamente, las preguntas se vuelven más difíciles; cuando tiene dificultades, el sistema se recalibra. El resultado: el perfil cognitivo real del niño — su techo y sus fortalezas — emerge sin ansiedad, en una fracción del tiempo.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Esta metodología mide las cuatro áreas fundamentales que determinan el éxito escolar y la carrera futura:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>1. Razonamiento verbal</strong> — la capacidad de pensar con palabras: comprensión lectora, inferencia lógica y uso preciso del lenguaje.</Bullet>
+          <Bullet><strong>2. Razonamiento no verbal</strong> — razonar con formas, gráficos y patrones visuales. Este dominio es el indicador más poderoso del futuro éxito en software, ingeniería, diseño e IA.</Bullet>
+          <Bullet><strong>3. Habilidades matemáticas</strong> — lógica numérica y velocidad en la resolución analítica de problemas.</Bullet>
+          <Bullet><strong>4. Competencia en inglés</strong> — las habilidades lingüísticas de tu hijo medidas según estándares internacionales: exactamente dónde está a nivel global, no solo dentro de su clase.</Bullet>
+        </ul>
+
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Descubre el perfil cognitivo de tu hijo — gratis</p>
+            <p className="text-sm text-gray-600">Evaluación adaptativa para edades 6–17. Razonamiento verbal, no verbal, matemáticas e inglés medidos frente a referencias internacionales — sin registro.</p>
+          </div>
+          <Link href="/es#academica" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Iniciar evaluación gratuita
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo Esta Hoja de Ruta Te Hace un Padre Más Efectivo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El detallado informe que recibes tras la evaluación te proporciona un sistema de navegación para la educación de tu hijo:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Invierte en las áreas correctas.</strong> Cuando descubres que tu hijo tiene un razonamiento no verbal muy alto, puedes canalizar esa fortaleza pronto — orientándolo hacia clubes de programación, robótica o diseño, desarrollando esta ventaja antes de que nadie más la haya identificado.</Check>
+          <Check><strong>Resuelve las debilidades antes de que se conviertan en fracasos.</strong> El área cognitiva donde un niño rinde por debajo — ya sea atención, lógica verbal u otra — puede identificarse antes de que genere malas notas o una crisis escolar. Eso significa apoyo tranquilo y específico en lugar de pánico.</Check>
+          <Check><strong>Toma decisiones importantes con datos, no con suposiciones.</strong> Al ver exactamente dónde se sitúa tu hijo frente a sus pares de todo el mundo, puedes tomar decisiones trascendentes — elección de secundaria, objetivos universitarios, planes de educación internacional — con evidencia científica en lugar de rumores.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Las áreas de desarrollo de un niño en edad escolar no son un registro de fracasos — son áreas de potencial que esperan el tipo correcto de apoyo para transformarse. Con el mapa cognitivo objetivo que ofrece Eduentry, puedes dejar de presionar a tu hijo para que &ldquo;estudie más&rdquo; y convertirte en el padre informado que está junto a él exactamente donde más lo necesita.
+        </p>
+      </section>
+    </>
+  ),
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

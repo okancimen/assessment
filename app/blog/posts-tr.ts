@@ -1139,6 +1139,46 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr/staj',
     },
   },
+  {
+    slug: 'cocugunuzun-gizli-guclerini-kesfetmek-yeni-nesil-veli-rehberi',
+    contentSlug: 'discover-school-age-childs-hidden-strengths',
+    title: 'Okul Çağındaki Çocuğunuzun Gizli Güçlerini ve Gelişim Alanlarını Keşfedin: Yeni Nesil Veli Rehberi',
+    shortTitle: 'Çocuğunuzun Gizli Güçlerini Keşfedin: Veli Rehberi',
+    description:
+      'Okul karneleri yalnızca anlık notları gösterir — çocuğunuzun gerçek bilişsel potansiyelini değil. Bu rehber, yapay zeka destekli adaptif değerlendirmenin 6–17 yaş arası çocuklarda sözel, sözel olmayan, matematik ve İngilizce güçlü ve zayıf yönlerini nasıl ortaya çıkardığını açıklıyor.',
+    tldr: 'Eduentry\'nin adaptif değerlendirmesi, okul başarısını ve kariyer sonuçlarını doğrudan etkileyen dört bilişsel alanı — sözel akıl yürütme, sözel olmayan akıl yürütme, matematik becerisi ve İngilizce dil yetkinliği — ölçmek için yapay zekayı kullanır. Sistem her yanıta gerçek zamanlı olarak uyarlanır; sınav kaygısı olmadan çocuğunuzun gerçek tavanını ve gelişim alanlarını haritalar.',
+    date: '2026-09-30',
+    readTime: '8 dk okuma',
+    tags: ['Akademik Değerlendirme', 'Çocuk Gelişimi', 'Veli Rehberi', 'Bilişsel Profil', 'Sözel Akıl Yürütme'],
+    faqs: [
+      {
+        q: 'Okul notu çocuğumun potansiyelini anlamak için neden yeterli değil?',
+        a: 'Okul notu, belirli bir okulda, belirli bir müfredatta sınıf içi başarıyı ölçer — altta yatan bilişsel profili değil. B alan bir çocuğun tavanında mı yoksa çok altında mı çalıştığını, güçlü bir okuyucunun fen derslerini etkileyecek zayıf uzamsal düşünmesinin olup olmadığını veya yazılı çalışmalarda zorlanan bir çocuğun hiçbir öğretmenin keşfetmediği sözel olmayan akıl yürütme yeteneğine sahip olup olmadığını göstermez. Adaptif bilişsel değerlendirme, sınıftan bağımsız bir ölçüm sağlar.',
+      },
+      {
+        q: 'Sözel olmayan akıl yürütme nedir ve neden önemlidir?',
+        a: 'Sözel olmayan akıl yürütme, şekillerdeki, diyagramlardaki ve görsel dizilerdeki kalıpları dil veya ön bilgiye dayanmadan belirleme yeteneğidir. Akışkan zekanın temel ölçüsüdür. Araştırmalar, STEM dersleri, bilgisayar, mühendislik ve tasarımdaki başarının en güçlü öngörücüsü olduğunu gösteriyor. Standart okul çalışmalarında tespit edilme olasılığı en düşük olan yetenek de budur.',
+      },
+      {
+        q: 'Adaptif test standart bir okul sınavından nasıl farklıdır?',
+        a: 'Geleneksel sınav her çocuğa aynı zorlukta aynı soruları verir. Adaptif test gerçek zamanlı olarak uyarlanır: çocuk doğru yanıtladığında bir sonraki soru zorlaşır, zorlandığında sistem yeniden kalibre edilir. Sonuç; sınıf ortalamasına göre tasarlanmış sorulardaki değil, çocuğun gerçek performans seviyesinin ölçümüdür. Daha hızlı, daha doğru ve çok daha az kaygı üretir.',
+      },
+      {
+        q: 'Çocuğumu kaç yaşında değerlendirmeliyim?',
+        a: 'Eduentry\'nin değerlendirmesi 6–17 yaş için tasarlanmıştır. Büyük bir eğitim geçiş döneminden önce (ilkokuldan ortaokula, ortaokuldan liseye) özellikle değerlidir. Erken değerlendirme erken görünürlük sağlar: bir zayıflık 13 yaşında değil 8 yaşında tespit edilirse, hedefe yönelik desteğin fark yaratması için beş yıl daha vardır.',
+      },
+      {
+        q: 'Değerlendirme sonuçlarıyla ne yapabilirim?',
+        a: 'Rapor, dört alanın her birinde PISA\'nın 100 puanlık ölçeğiyle kalibre edilmiş standartlaştırılmış puan sunar. Sözel akıl yürütme güçlüyse dil ağırlıklı etkinliklere yatırım yaparsınız. Sözel olmayan akıl yürütme yüksekse kodlama, robotik veya tasarım programlarına bakarsınız. Matematik becerisi normun altındaysa, ortaokulda birikmeden önce hedefe yönelik destek bulursunuz. Her alan puanı bir karar verme girdisidir.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun bilişsel profilini görün — ücretsiz',
+      body: '6–17 yaş için adaptif değerlendirme. Sözel akıl yürütme, sözel olmayan akıl yürütme, matematik ve İngilizce uluslararası kıyaslamalı olarak ölçülür — kayıt gerekmez.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr#akademik',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

@@ -4325,6 +4325,74 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'discover-school-age-childs-hidden-strengths': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Çocuğunuz ilkokula yeni başlamış, ortaokulda sınavlara hazırlanıyor ya da lisede geleceğini planlıyor olabilir. Okul çağı boyunca her ebeveynin zihnini kurcalayan ortak bir soru vardır: &ldquo;Çocuğumun gerçekten neye yeteneği var ve hangi alanlarda zorlanıyor?&rdquo;
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Okul karneleri ve standart deneme sınavları bize sadece o anki ders notlarını söyler. Ancak çocuğun gerçek zihinsel potansiyelini, yani bilişsel güçlü ve zayıf yönlerini anlamak için ders notlarından çok daha fazlasına, modern bir metodolojiye ihtiyacımız var.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Eğitim Hayatında Karşılaştığımız Temel Sorunlar Nelerdir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuzun okul yolculuğunda muhtemelen şu tıkanıklıklardan en az birini fark etmişsinizdir:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>&ldquo;Ders Çalışıyor Ama Sınavda Yapamıyor&rdquo; Stresi:</strong> Saatlerce masada oturan çocukların birçoğu, sınav anındaki kaygı veya zaman yönetimi eksikliği nedeniyle gerçek potansiyelini kağıda dökemez.</Bullet>
+          <Bullet><strong>Potansiyelin Gizli Kalması (Ezber Tuzağı):</strong> Okul müfredatları genellikle formülleri ve bilgileri ezberletmeye odaklanır. Çocuğun harika bir mantıksal akıl yürütme veya görsel zekaya sahip olsa bile bu okulda fark edilmeyebilir.</Bullet>
+          <Bullet><strong>Yanlış Yöne Odaklanarak Zaman Kaybetmek:</strong> Çocuğun tam olarak nerede zorlandığını (örneğin problem çözmede mi, yoksa soruyu okuyup anlamada mı) bilemediğimizde, ona yanlış çalışma yöntemleriyle yüklenir ve okuldan soğumasına neden oluruz.</Bullet>
+          <Bullet><strong>Gelecek Kaygısı ve Küresel Rekabet:</strong> Dünya hızla değişiyor. Çocuğunuzun sadece kendi sınıfındaki veya okulundaki durumunu bilmek, onu geleceğin uluslararası dünyasına hazırlamak için artık yeterli değil.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çözüm: Güçlü ve Zayıf Yönleri Haritalandıran &ldquo;Adaptif Metodoloji&rdquo;</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eğitim dünyası artık çocukları tek bir kalıba sokan uzun sınavlardan uzaklaşıyor. Eduentry tarafından uygulanan Yapay Zeka Destekli Adaptif Test metodolojisi, tam da bu noktada ebeveynlerin imdadına yetişiyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu sistemde çocuk geleneksel bir sınava girmez; sistem çocuğun verdiği cevaplara göre anlık olarak şekillenir. Çocuk doğru yaptıkça sorular zorlaşır, zorlandığında ise sistem seviyeyi dengeler. Böylece çocuk hiç kaygı yaşamadan, çok kısa bir sürede gerçek zihinsel sınırlarını ve yeteneklerini sergiler.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu modern metodoloji, okul başarısını ve gelecekteki kariyeri doğrudan etkileyen 4 ana alanı ölçer:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>1. Sözel Akıl Yürütme:</strong> Kelimelerle düşünebilme, okuduğunu anlama, mantıksal çıkarım yapma ve dili etkili kullanma becerisi.</Bullet>
+          <Bullet><strong>2. Sözel Olmayan Akıl Yürütme:</strong> Şekiller, grafikler ve görsel örüntüler üzerinden mantık yürütme. Bu alan, geleceğin yazılım, mühendislik, tasarım ve yapay zeka alanlarındaki başarının en büyük habercisidir.</Bullet>
+          <Bullet><strong>3. Matematiksel Beceri:</strong> Sayısal mantık kurma ve analitik problemleri çözme hızı.</Bullet>
+          <Bullet><strong>4. İngilizce Dil Yetkinliği:</strong> Çocuğun dil becerilerinin uluslararası standartlardaki tam karşılığı.</Bullet>
+        </ul>
+
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Çocuğunuzun bilişsel profilini görün — ücretsiz</p>
+            <p className="text-sm text-gray-600">6–17 yaş için adaptif değerlendirme. Sözel akıl yürütme, sözel olmayan akıl yürütme, matematik ve İngilizce uluslararası kıyaslamalı olarak ölçülür — kayıt gerekmez.</p>
+          </div>
+          <Link href="/tr#akademik" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Ücretsiz değerlendirmeyi başlat
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bu Yol Haritası Bir Veli Olarak Hayatınızı Nasıl Kolaylaştırır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Test sonrasında elde edeceğiniz detaylı başarı raporu, çocuğunuzun eğitim hayatını yönetmeniz için elinize bir navigasyon cihazı verir:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Doğru Alana Yatırım Yaparsınız:</strong> Çocuğunuzun sözel olmayan zekasının çok yüksek olduğunu keşfettiğinizde, onu okul dışı zamanlarda kodlama, robotik veya tasarım kulüplerine yönlendirerek bu &ldquo;güçlü yönünü&rdquo; erkenden parlatabilirsiniz.</Check>
+          <Check><strong>Zayıf Yönleri Okul Başarısını Düşürmeden Çözersiniz:</strong> Çocuğun eksik olduğu bilişsel alan (örneğin dikkat veya sözel mantık) daha okulda büyük başarısızlıklar veya zayıf notlar getirmeden fark edilir. Böylece panik yapmadan, nokta atışı egzersizlerle bu eksikliği giderebilirsiniz.</Check>
+          <Check><strong>Geleceğini Bilinçli Planlarsınız:</strong> Çocuğunuzun dünya genelindeki yaşıtlarına göre nerede durduğunu görerek; lise seçimi, üniversite hedefleri veya yurt dışı eğitim planları gibi kritik kararları kulaktan dolma bilgilerle değil, bilimsel verilerle alırsınız.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Okul çağındaki çocuğunuzun zayıf yönleri birer başarısızlık belgesi değil, sadece doğru bir destekle geliştirilmeyi bekleyen potansiyel alanlardır. Eduentry&apos;nin sunduğu bu objektif zihin haritası sayesinde, çocuğunuza &ldquo;ders çalış&rdquo; baskısı kurmak yerine, onun tam olarak ihtiyaç duyduğu noktada yanında olan bilinçli bir ebeveyn olabilirsiniz.
+        </p>
+      </section>
+    </>
+  ),
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

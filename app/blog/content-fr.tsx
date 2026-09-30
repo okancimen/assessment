@@ -2450,6 +2450,74 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'discover-school-age-childs-hidden-strengths': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Votre enfant vient peut-être de commencer l&apos;école primaire, prépare des examens au collège, ou planifie son avenir au lycée. Quelle que soit l&apos;étape, une question hante l&apos;esprit de tous les parents : &ldquo;Pour quoi mon enfant a-t-il vraiment un talent — et dans quels domaines rencontre-t-il des difficultés ?&rdquo;
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Les bulletins scolaires et les examens blancs ne nous donnent que les notes actuelles. Mais comprendre le vrai potentiel mental d&apos;un enfant — ses forces cognitives et ses axes de développement — demande beaucoup plus qu&apos;une note. Cela nécessite une méthodologie moderne.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les Principaux Défis des Familles dans la Vie Scolaire</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Au cours du parcours scolaire de votre enfant, vous avez probablement remarqué au moins l&apos;un de ces schémas :
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>&ldquo;Travaille beaucoup mais ne performe pas en examen&rdquo; :</strong> De nombreux enfants qui passent des heures à leur bureau ne peuvent pas transformer cet effort en résultats — parce que l&apos;anxiété aux examens ou la mauvaise gestion du temps, et non le manque d&apos;effort, se dresse entre eux et leur vrai potentiel.</Bullet>
+          <Bullet><strong>Le potentiel caché (le piège de l&apos;apprentissage par c&oelig;ur) :</strong> Les programmes scolaires se concentrent souvent sur la mémorisation de formules et de faits. Un enfant avec un raisonnement logique ou une intelligence spatiale remarquables peut passer totalement inaperçu — parce que le système n&apos;est pas conçu pour trouver ces forces.</Bullet>
+          <Bullet><strong>Perdre du temps sur les mauvaises choses :</strong> Quand les parents ne savent pas exactement où un enfant rencontre des difficultés — dans la résolution de problèmes elle-même, ou simplement dans la lecture et la compréhension de l&apos;énoncé —, ils appliquent de mauvaises méthodes d&apos;étude et, sans le vouloir, découragent l&apos;enfant.</Bullet>
+          <Bullet><strong>L&apos;anxiété face à l&apos;avenir et la compétition mondiale :</strong> Le monde évolue rapidement. Savoir seulement où se situe votre enfant dans sa classe ou son école ne suffit plus à le préparer pour le paysage international de demain.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La Solution : L&apos;Évaluation Adaptive qui Cartographie Forces et Axes de Développement</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le monde éducatif s&apos;éloigne des examens uniformes pour tous. La méthodologie de Tests Adaptatifs par IA d&apos;Eduentry est conçue précisément pour ce moment.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Plutôt que de passer un examen traditionnel, le système s&apos;adapte en temps réel à chaque réponse. Quand un enfant répond correctement, les questions deviennent plus difficiles ; quand il a des difficultés, le système se recalibre. Résultat : le profil cognitif réel de l&apos;enfant — son plafond et ses forces — émerge sans anxiété, en une fraction du temps.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cette méthodologie mesure les quatre domaines fondamentaux qui déterminent directement la réussite scolaire et la carrière future :
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>1. Raisonnement verbal</strong> — la capacité de penser en mots : compréhension de lecture, inférence logique et utilisation précise du langage.</Bullet>
+          <Bullet><strong>2. Raisonnement non verbal</strong> — raisonner à partir de formes, de graphiques et de modèles visuels. Ce domaine est l&apos;indicateur le plus puissant du futur succès en logiciels, ingénierie, design et IA.</Bullet>
+          <Bullet><strong>3. Compétences mathématiques</strong> — logique numérique et rapidité dans la résolution analytique de problèmes.</Bullet>
+          <Bullet><strong>4. Maîtrise de l&apos;anglais</strong> — les compétences linguistiques de votre enfant mesurées selon des standards internationaux : exactement où il se situe à l&apos;échelle mondiale, pas seulement dans sa classe.</Bullet>
+        </ul>
+
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Découvrez le profil cognitif de votre enfant — gratuitement</p>
+            <p className="text-sm text-gray-600">Évaluation adaptive pour les 6–17 ans. Raisonnement verbal, non verbal, mathématiques et anglais mesurés selon des références internationales — sans inscription.</p>
+          </div>
+          <Link href="/fr#academique" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Commencer l&apos;évaluation gratuite
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment Cette Feuille de Route Vous Rend un Parent Plus Efficace</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le rapport détaillé que vous recevez après l&apos;évaluation vous donne un système de navigation pour l&apos;éducation de votre enfant :
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Investissez dans les bons domaines.</strong> Quand vous découvrez que votre enfant a un raisonnement non verbal très élevé, vous pouvez canaliser cette force tôt — en l&apos;orientant vers des clubs de codage, de robotique ou de design, développant cet avantage avant que quiconque ne l&apos;ait identifié.</Check>
+          <Check><strong>Traitez les faiblesses avant qu&apos;elles ne deviennent des échecs.</strong> Le domaine cognitif où un enfant sous-performe — que ce soit l&apos;attention, la logique verbale ou autre — peut être identifié avant qu&apos;il ne génère de mauvaises notes ou une crise scolaire. Cela signifie un soutien calme et ciblé plutôt que la panique.</Check>
+          <Check><strong>Prenez les décisions importantes avec des données, pas des suppositions.</strong> En voyant exactement où se situe votre enfant par rapport à ses pairs dans le monde entier, vous pouvez prendre des décisions importantes — choix du lycée, objectifs universitaires, plans d&apos;études à l&apos;étranger — sur la base de preuves scientifiques plutôt que d&apos;ouï-dire.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Les axes de développement d&apos;un enfant en âge scolaire ne sont pas un bilan d&apos;échecs — ce sont des domaines de potentiel qui attendent le bon type de soutien pour se transformer. Avec la carte cognitive objective qu&apos;Eduentry fournit, vous pouvez cesser de pousser votre enfant à &ldquo;travailler plus&rdquo; et devenir le parent informé qui se tient à ses côtés précisément là où il en a le plus besoin.
+        </p>
+      </section>
+    </>
+  ),
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

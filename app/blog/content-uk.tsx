@@ -4179,4 +4179,72 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'discover-school-age-childs-hidden-strengths': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Your child may have just started primary school, be preparing for secondary school exams, or planning their future in sixth form. Whatever stage you are at, one question runs through every parent&apos;s mind: &ldquo;What is my child truly good at — and where are they struggling?&rdquo;
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        School reports and practice papers only tell us a child&apos;s current marks. But understanding a child&apos;s true mental potential — their cognitive strengths and development areas — requires far more than a grade. It requires a modern methodology.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Core Challenges Families Face in School Life</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          During your child&apos;s school journey, you have likely noticed at least one of these patterns:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>&ldquo;Studies hard but can&apos;t perform in exams&rdquo;:</strong> Many children who spend hours at their desk cannot translate that effort into results — because exam anxiety or poor time management, not lack of effort, stands between them and their true potential.</Bullet>
+          <Bullet><strong>Hidden potential (the rote-learning trap):</strong> School curricula often focus on memorising formulas and facts. A child with outstanding logical reasoning or spatial intelligence may go entirely unnoticed — because the system was not designed to find those strengths.</Bullet>
+          <Bullet><strong>Wasting time on the wrong things:</strong> When parents do not know exactly where a child is struggling — whether in problem-solving itself, or simply reading and understanding the question — they apply the wrong study methods, and inadvertently put children off learning.</Bullet>
+          <Bullet><strong>Future anxiety and global competition:</strong> The world is changing fast. Knowing only where your child stands in their class or school is no longer enough to prepare them for tomorrow&apos;s international landscape.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Solution: Adaptive Assessment That Maps Strengths and Development Areas</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The education world is moving away from one-size-fits-all tests. Eduentry&apos;s AI-Powered Adaptive Testing methodology is built precisely for this moment.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Rather than sitting a traditional exam, the system adjusts in real time to each answer. When a child answers correctly, questions get harder; when they struggle, the system recalibrates. The result: a child&apos;s true cognitive profile — their ceiling and their strengths — emerges without anxiety, in a fraction of the time.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This methodology measures the four core areas that directly shape school success and future careers:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>1. Verbal Reasoning</strong> — the ability to think in words: reading comprehension, logical inference, and precise use of language.</Bullet>
+          <Bullet><strong>2. Non-Verbal Reasoning</strong> — reasoning with shapes, graphs, and visual patterns. This domain is the single most powerful early indicator of future success in software, engineering, design, and AI.</Bullet>
+          <Bullet><strong>3. Mathematical Skills</strong> — numerical logic and the speed of analytic problem-solving.</Bullet>
+          <Bullet><strong>4. English Language Proficiency</strong> — your child&apos;s language skills measured against international standards: exactly where they stand globally, not just within their class.</Bullet>
+        </ul>
+
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">See your child&apos;s cognitive profile — free</p>
+            <p className="text-sm text-gray-600">Adaptive assessment for ages 6–17. Verbal reasoning, non-verbal reasoning, maths, and English measured against international benchmarks — no registration required.</p>
+          </div>
+          <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Start free assessment
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How This Roadmap Makes You a More Effective Parent</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The detailed report you receive after the assessment gives you a navigation system for your child&apos;s education:
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Invest in the right areas.</strong> When you discover your child has very high non-verbal reasoning, you can channel that strength early — directing them towards coding clubs, robotics, or design courses, polishing this advantage before anyone else has found it.</Check>
+          <Check><strong>Address weaknesses before they become failures.</strong> The cognitive area where a child is underperforming — whether attention, verbal logic, or something else — can be identified before it produces poor marks or a school crisis. That means calm, targeted support rather than panic.</Check>
+          <Check><strong>Make critical decisions with data, not guesswork.</strong> Seeing exactly where your child sits relative to peers around the world, you can make consequential choices — secondary school selection, university targets, international education plans — on scientific evidence rather than hearsay.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          A child&apos;s development areas are not a record of failure — they are areas of potential waiting for the right kind of support. With the objective cognitive map Eduentry provides, you can stop pushing your child to &ldquo;just study harder&rdquo; and become the informed parent who stands beside them precisely where they need it most.
+        </p>
+      </section>
+    </>
+  ),
 }

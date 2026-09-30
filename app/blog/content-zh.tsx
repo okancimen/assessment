@@ -2047,6 +2047,74 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'discover-school-age-childs-hidden-strengths': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        您的孩子可能刚刚开始小学，或正在为升学考试做准备，亦或在高中规划未来。无论处于哪个阶段，每位家长心中都有一个共同的问题："我的孩子真正擅长什么——在哪些方面遇到了困难？"
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        学校成绩单和模拟考试只能告诉我们孩子当前的分数。但要了解孩子真正的心智潜能——其认知优势与发展空间——需要远不止一个成绩，而是一套现代化的方法论。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">家庭在学校生活中面临的核心挑战</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在孩子的求学历程中，您可能至少注意到以下一种情况：
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>"努力学习却无法在考试中发挥"：</strong>许多在书桌前坐了数小时的孩子无法将努力转化为成绩——因为考试焦虑或时间管理不善，而非缺乏努力，阻碍了他们发挥真实潜能。</Bullet>
+          <Bullet><strong>隐藏的潜能（题海战术陷阱）：</strong>学校课程往往侧重于记忆公式和知识点。一个拥有出色逻辑推理或空间智能的孩子可能完全被忽视——因为这套系统本就不是为发现这些优势而设计的。</Bullet>
+          <Bullet><strong>在错误方向上浪费时间：</strong>当家长不清楚孩子究竟在哪里遇到困难——是解题本身，还是读题和理解题意——他们会采用错误的学习方法，在无意间让孩子对学习产生抵触。</Bullet>
+          <Bullet><strong>对未来的焦虑与全球竞争：</strong>世界变化迅速。仅仅了解孩子在班级或学校中的排名，已不足以为其应对未来的国际竞争做好准备。</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">解决方案：绘制优势与发展空间图谱的自适应测评</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          教育界正在逐渐摒弃整齐划一的长时考试。Eduentry的AI驱动自适应测评方法论正是为此而生。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          孩子不再参加传统考试，而是系统根据每个回答实时调整。孩子答对时，题目难度提升；遇到困难时，系统重新校准。结果：孩子真实的认知图谱——其上限与优势——在毫无焦虑的状态下，在极短时间内清晰呈现。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          这一方法论衡量直接影响学业成功和职业发展的四大核心领域：
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>1. 语言推理</strong> ——用语言思考的能力：阅读理解、逻辑推断和精确使用语言。</Bullet>
+          <Bullet><strong>2. 非语言推理</strong> ——通过形状、图表和视觉模式进行推理。这一领域是预测未来在软件、工程、设计和人工智能领域成功的最强指标。</Bullet>
+          <Bullet><strong>3. 数学技能</strong> ——数字逻辑与分析解题速度。</Bullet>
+          <Bullet><strong>4. 英语水平</strong> ——对照国际标准衡量孩子的语言能力：其全球定位，而非仅仅在班级中的排名。</Bullet>
+        </ul>
+
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">免费了解孩子的认知图谱</p>
+            <p className="text-sm text-gray-600">6–17岁自适应测评。语言推理、非语言推理、数学和英语对标国际基准——无需注册。</p>
+          </div>
+          <Link href="/zh#xueshu-pinggu" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            开始免费评估
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">这份路线图如何让您成为更有效的家长</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          测评后收到的详细报告，为您管理孩子的学业提供了一套导航系统：
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>在正确领域投入资源。</strong>当您发现孩子的非语言推理能力极高时，可以趁早将这一优势引导到正确方向——课外编程班、机器人课程或设计活动——在任何人发现之前就将这项"超能力"打磨闪光。</Check>
+          <Check><strong>在弱项演变为失败之前加以解决。</strong>孩子认知上的短板——无论是注意力、语言逻辑还是其他方面——可以在其导致糟糕成绩或学业危机之前被识别出来。这意味着平静、有针对性的支持，而非惊慌失措。</Check>
+          <Check><strong>用数据做关键决策，而非凭直觉。</strong>清楚地看到孩子相对于全球同龄人的位置，您可以用科学依据而非道听途说来做出重大决定——中学选择、大学目标或海外留学计划。</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          学龄孩子的弱项不是失败的记录——而是等待正确支持去开发的潜力区域。借助Eduentry提供的客观认知图谱，您可以不再以"多学习"来给孩子施压，而是成为一位在孩子最需要的节点精准出现的知情家长。
+        </p>
+      </section>
+    </>
+  ),
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

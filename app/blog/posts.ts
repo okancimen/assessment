@@ -1669,6 +1669,45 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/internship',
     },
   },
+  {
+    slug: 'discover-school-age-childs-hidden-strengths',
+    title: "Discover Your School-Age Child's Hidden Strengths and Development Areas: A Modern Parent's Guide",
+    shortTitle: "Discover Your Child's Hidden Strengths: Parent's Guide",
+    description:
+      "School reports only show current grades — not your child's true cognitive potential. This guide explains how AI-powered adaptive assessment reveals verbal reasoning, non-verbal reasoning, maths, and English strengths and gaps across ages 6–17.",
+    tldr: "Eduentry's adaptive assessment uses AI to measure the four cognitive domains that predict school success and career outcomes: verbal reasoning, non-verbal reasoning, mathematical skills, and English proficiency. The system adjusts in real time to every answer, mapping a child's true ceiling and development areas without exam anxiety.",
+    date: '2026-09-30',
+    readTime: '8 min read',
+    tags: ['Academic Assessment', 'Child Development', 'Parent Guide', 'Cognitive Profile', 'Verbal Reasoning', 'Non-Verbal Reasoning'],
+    faqs: [
+      {
+        q: "Why aren't school grades enough to understand my child's potential?",
+        a: "School grades measure performance relative to classmates within a specific school, syllabus, and teacher — not the cognitive profile beneath. They cannot tell you whether a child earning a B is working at their ceiling or far below it, whether a strong reader has weak spatial reasoning that will surface in GCSE sciences, or whether a child struggling with written work has outstanding non-verbal reasoning that no teacher has yet identified. An adaptive cognitive assessment provides a class-independent measurement — where a child actually stands, and where focused investment will produce the greatest return.",
+      },
+      {
+        q: "What is non-verbal reasoning and why does it matter?",
+        a: "Non-verbal reasoning is the ability to identify patterns, relationships, and structures in shapes, diagrams, and visual sequences — without relying on language or prior knowledge. It measures fluid intelligence: the capacity to reason about genuinely new problems. Research consistently identifies it as the strongest predictor of success in STEM subjects, computing, engineering, and design. It is also the ability least likely to be identified through standard school work — a child with high non-verbal reasoning may never receive feedback reflecting this strength unless an adaptive assessment surfaces it.",
+      },
+      {
+        q: "How does adaptive testing differ from a regular school test?",
+        a: "A conventional test gives every child the same questions at the same difficulty, meaning many questions are either too easy or too hard for any given child. An adaptive test adjusts in real time: when a child answers correctly, the next question is harder; when they struggle, it recalibrates. The result is a measurement of a child's true performance level — not their performance on questions designed for a class average. It is faster, more accurate, and far less anxiety-inducing.",
+      },
+      {
+        q: "At what age should I have my child assessed?",
+        a: "Eduentry's assessment is designed for ages 6–17. The optimal moment is any time a parent wants concrete data — but the window before a major educational transition (primary to secondary, secondary to sixth form) is particularly valuable. Early assessment means early visibility: a weakness identified at age 8 rather than 13 leaves five more years for targeted support to compound.",
+      },
+      {
+        q: "What can I do with the results?",
+        a: "The report gives a standardised score for each of the four domains (calibrated to the same PISA 100-point scale) plus a composite score. Practically: strong verbal reasoning → invest in language-rich activities. High non-verbal reasoning → explore coding, robotics, or design. Mathematical skill below the norm → find targeted support before it compounds in secondary school. Each domain score is a decision-making input, not just a number.",
+      },
+    ],
+    cta: {
+      heading: "See your child's cognitive profile — free",
+      body: "Adaptive assessment for ages 6–17. Verbal reasoning, non-verbal reasoning, maths, and English measured against international benchmarks — no registration required.",
+      label: 'Start free assessment',
+      href: '/#academic',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

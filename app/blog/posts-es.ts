@@ -747,6 +747,46 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: '/es/practicas',
     },
   },
+  {
+    slug: 'descubrir-fortalezas-ocultas-hijo-guia-moderna-padres',
+    contentSlug: 'discover-school-age-childs-hidden-strengths',
+    title: 'Descubre las Fortalezas Ocultas y las Áreas de Desarrollo de tu Hijo: Guía Moderna para Padres',
+    shortTitle: 'Fortalezas Ocultas de tu Hijo: Guía para Padres',
+    description:
+      'Las notas escolares sólo muestran el rendimiento actual, no el potencial cognitivo real de tu hijo. Esta guía explica cómo la evaluación adaptativa con IA revela fortalezas y áreas de mejora en razonamiento verbal, no verbal, matemáticas e inglés para edades 6–17.',
+    tldr: 'La evaluación adaptativa de Eduentry mide los cuatro dominios cognitivos que predicen el éxito escolar: razonamiento verbal, razonamiento no verbal, habilidades matemáticas y competencia en inglés. El sistema se ajusta en tiempo real a cada respuesta, trazando el techo real del niño sin ansiedad ante los exámenes.',
+    date: '2026-09-30',
+    readTime: '8 min de lectura',
+    tags: ['Evaluación Académica', 'Desarrollo Infantil', 'Guía para Padres', 'Perfil Cognitivo', 'Razonamiento Verbal'],
+    faqs: [
+      {
+        q: '¿Por qué las notas escolares no son suficientes para entender el potencial de mi hijo?',
+        a: 'Las notas miden el rendimiento relativo a los compañeros dentro de una escuela y un currículo específicos — no el perfil cognitivo subyacente. No pueden decirte si un niño con un notable está trabajando en su techo o muy por debajo, si un buen lector tiene un razonamiento espacial débil que afectará a las ciencias, o si un niño que lucha con la escritura tiene un razonamiento no verbal sobresaliente que ningún maestro ha identificado aún. Una evaluación cognitiva adaptativa proporciona una medición independiente del aula.',
+      },
+      {
+        q: '¿Qué es el razonamiento no verbal y por qué importa?',
+        a: 'El razonamiento no verbal es la capacidad de identificar patrones y estructuras en formas, diagramas y secuencias visuales — sin depender del lenguaje ni del conocimiento previo. Mide la inteligencia fluida. La investigación lo identifica consistentemente como el predictor más fuerte del éxito en materias STEM, informática, ingeniería y diseño. Es también la habilidad menos probable de ser detectada en el trabajo escolar estándar.',
+      },
+      {
+        q: '¿Cómo difiere una prueba adaptativa de un examen escolar normal?',
+        a: 'Una prueba convencional da a todos los niños las mismas preguntas con la misma dificultad. Una prueba adaptativa se ajusta en tiempo real: cuando un niño responde correctamente, la siguiente pregunta es más difícil; cuando tiene dificultades, recalibra. El resultado es una medición del nivel de rendimiento real del niño, no su rendimiento en preguntas diseñadas para el promedio de la clase. Es más rápida, más precisa y mucho menos estresante.',
+      },
+      {
+        q: '¿A qué edad debería evaluar a mi hijo?',
+        a: 'La evaluación de Eduentry está diseñada para edades 6–17. El momento óptimo es antes de una transición educativa importante. Una debilidad identificada a los 8 años en lugar de los 13 deja cinco años más para que el apoyo específico marque la diferencia.',
+      },
+      {
+        q: '¿Qué puedo hacer con los resultados?',
+        a: 'El informe da una puntuación estandarizada para cada uno de los cuatro dominios calibrada con la misma escala de 100 puntos de PISA. Razonamiento verbal fuerte → invertir en actividades lingüísticas. Razonamiento no verbal alto → explorar programas de programación, robótica o diseño. Habilidad matemática por debajo de la norma → encontrar apoyo específico antes de que se acumule en secundaria.',
+      },
+    ],
+    cta: {
+      heading: 'Descubre el perfil cognitivo de tu hijo — gratis',
+      body: 'Evaluación adaptativa para edades 6–17. Razonamiento verbal, no verbal, matemáticas e inglés medidos frente a referencias internacionales — sin registro.',
+      label: 'Iniciar evaluación gratuita',
+      href: '/es#academica',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

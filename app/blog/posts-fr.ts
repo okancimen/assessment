@@ -982,6 +982,46 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: '/fr/stage',
     },
   },
+  {
+    slug: 'decouvrir-forces-cachees-enfant-guide-parents-moderne',
+    contentSlug: 'discover-school-age-childs-hidden-strengths',
+    title: "Découvrez les Forces Cachées et les Axes de Développement de Votre Enfant : Guide Moderne pour Parents",
+    shortTitle: 'Forces Cachées de Votre Enfant : Guide pour Parents',
+    description:
+      "Les bulletins scolaires ne montrent que les notes actuelles — pas le potentiel cognitif réel de votre enfant. Ce guide explique comment l'évaluation adaptive par IA révèle les forces et axes d'amélioration en raisonnement verbal, non verbal, mathématiques et anglais pour les 6–17 ans.",
+    tldr: "L'évaluation adaptive d'Eduentry mesure les quatre domaines cognitifs qui prédisent la réussite scolaire : raisonnement verbal, raisonnement non verbal, compétences mathématiques et maîtrise de l'anglais. Le système s'adapte en temps réel à chaque réponse, cartographiant le plafond réel de l'enfant sans anxiété.",
+    date: '2026-09-30',
+    readTime: '8 min de lecture',
+    tags: ['Évaluation Académique', 'Développement Enfant', 'Guide Parents', 'Profil Cognitif', 'Raisonnement Verbal'],
+    faqs: [
+      {
+        q: "Pourquoi les notes scolaires ne suffisent-elles pas à comprendre le potentiel de mon enfant ?",
+        a: "Les notes mesurent la performance par rapport aux camarades dans une école et un programme spécifiques — pas le profil cognitif sous-jacent. Elles ne peuvent pas indiquer si un enfant qui obtient un B travaille à son plafond ou bien en dessous, si un bon lecteur a un raisonnement spatial faible qui affectera les sciences, ou si un enfant en difficulté à l'écrit possède un raisonnement non verbal remarquable qu'aucun enseignant n'a encore identifié. Une évaluation cognitive adaptive offre une mesure indépendante de la classe.",
+      },
+      {
+        q: "Qu'est-ce que le raisonnement non verbal et pourquoi est-il important ?",
+        a: "Le raisonnement non verbal est la capacité à identifier des motifs et structures dans des formes, diagrammes et séquences visuelles — sans s'appuyer sur le langage ou les connaissances préalables. Il mesure l'intelligence fluide. La recherche l'identifie régulièrement comme le meilleur prédicteur du succès en STEM, informatique, ingénierie et design. C'est aussi la capacité la moins susceptible d'être détectée dans le travail scolaire standard.",
+      },
+      {
+        q: "En quoi un test adaptatif diffère-t-il d'un examen scolaire ordinaire ?",
+        a: "Un test conventionnel donne à tous les enfants les mêmes questions avec la même difficulté. Un test adaptatif s'ajuste en temps réel : quand un enfant répond correctement, la question suivante est plus difficile ; quand il est en difficulté, le test se recalibre. Le résultat est une mesure du vrai niveau de performance — et non du niveau moyen de la classe. C'est plus rapide, plus précis et bien moins anxiogène.",
+      },
+      {
+        q: "À quel âge devrais-je faire évaluer mon enfant ?",
+        a: "L'évaluation d'Eduentry est conçue pour les 6–17 ans. Le moment idéal est avant une transition éducative majeure. Une faiblesse identifiée à 8 ans plutôt qu'à 13 ans laisse cinq ans de plus pour qu'un soutien ciblé fasse une réelle différence.",
+      },
+      {
+        q: "Que puis-je faire avec les résultats ?",
+        a: "Le rapport fournit un score standardisé pour chacun des quatre domaines, calibré sur la même échelle PISA à 100 points. Raisonnement verbal fort → investir dans des activités langagières. Raisonnement non verbal élevé → explorer la programmation, la robotique ou le design. Compétences mathématiques en dessous de la norme → trouver un soutien ciblé avant qu'elles ne s'aggravent au collège.",
+      },
+    ],
+    cta: {
+      heading: "Découvrez le profil cognitif de votre enfant — gratuitement",
+      body: "Évaluation adaptive pour les 6–17 ans. Raisonnement verbal, non verbal, mathématiques et anglais mesurés selon des références internationales — sans inscription.",
+      label: "Commencer l'évaluation gratuite",
+      href: '/fr#academique',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {
