@@ -124,6 +124,8 @@ const GUIDE_SLUGS = [
   'practicas-marketing-digital-instituto',
   'practicas-analitica-datos-estudiantes',
   'practicas-finanzas-banca-instituto',
+  'oecd-experiencia-laboral-adolescentes-resultados-carrera',
+  'oecd-trabajo-parcial-adolescentes-beneficios',
 ]
 const GUIDES = BLOG_POSTS_ES.filter(p => GUIDE_SLUGS.includes(p.slug))
   .sort((a, b) => GUIDE_SLUGS.indexOf(a.slug) - GUIDE_SLUGS.indexOf(b.slug))

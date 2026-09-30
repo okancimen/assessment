@@ -218,6 +218,8 @@ const STAJ_REHBERLERI_SLUGS = [
   'stajyer-maasi-ne-kadar',
   'staj-defteri-nasil-doldurulur',
   'staj-sigortasi-nedir',
+  'oecd-ergen-is-deneyimi-kariyer-sonuclari',
+  'oecd-ergen-yari-zamanli-calisma-faydalari',
 ]
 const STAJ_REHBERLERI = BLOG_POSTS_TR.filter(p => STAJ_REHBERLERI_SLUGS.includes(p.slug))
   .sort((a, b) => STAJ_REHBERLERI_SLUGS.indexOf(a.slug) - STAJ_REHBERLERI_SLUGS.indexOf(b.slug))

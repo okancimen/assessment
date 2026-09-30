@@ -126,6 +126,8 @@ const GUIDE_SLUGS = [
   'IT-keji-shixi-gaoxiao',
   'shuzi-yingxiao-shixi-rumen',
   'ruhe-zhai-15-sui-tuocying',
+  'oecd-qingshaonian-gongzuo-jingyan-zhiye-chengguo',
+  'oecd-qingshaonian-jianzhi-gongzuo-yichu',
 ]
 const ALL_GUIDE_SLUGS = [
   'gaozhong-shixi-ruhe-xunzhao',
@@ -134,6 +136,8 @@ const ALL_GUIDE_SLUGS = [
   'IT-keji-shixi-gaoxiao',
   'shuzi-yingxiao-shixi-rumen',
   'ruhe-zai-15-sui-tuocying',
+  'oecd-qingshaonian-gongzuo-jingyan-zhiye-chengguo',
+  'oecd-qingshaonian-jianzhi-gongzuo-yichu',
 ]
 const GUIDES = BLOG_POSTS_ZH.filter(p => ALL_GUIDE_SLUGS.includes(p.slug))
   .sort((a, b) => ALL_GUIDE_SLUGS.indexOf(a.slug) - ALL_GUIDE_SLUGS.indexOf(b.slug))

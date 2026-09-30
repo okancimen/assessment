@@ -126,6 +126,8 @@ const GUIDE_SLUGS = [
   'staj-taqniya-imarat',
   'staj-tadwiq-raqmi',
   'staj-sayf-imarat',
+  'oecd-khubra-amaliyya-mubakkira-nataij-mihniyya',
+  'oecd-amal-juzyi-lilmurahiqin-fawayd',
 ]
 const GUIDES = BLOG_POSTS_AR.filter(p => GUIDE_SLUGS.includes(p.slug))
   .sort((a, b) => GUIDE_SLUGS.indexOf(a.slug) - GUIDE_SLUGS.indexOf(b.slug))

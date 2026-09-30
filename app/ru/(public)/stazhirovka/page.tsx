@@ -123,6 +123,8 @@ const GUIDE_SLUGS = [
   'it-stazh-dlya-shkolnikov',
   'tsifrovoy-marketing-stazh-shkola',
   'kak-nayti-stazh-bez-svyazey',
+  'oecd-podrostkovaya-praktika-rezultaty-kariery',
+  'oecd-podrostkovaya-podrabotka-preimushchestva',
 ]
 const GUIDES = BLOG_POSTS_RU.filter(p => GUIDE_SLUGS.includes(p.slug))
   .sort((a, b) => GUIDE_SLUGS.indexOf(a.slug) - GUIDE_SLUGS.indexOf(b.slug))

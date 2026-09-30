@@ -187,6 +187,8 @@ const GUIDE_SLUGS = [
   'stage-ete-france-lyceen',
   'stage-marketing-digital-lyceen',
   'stage-data-analyse-lyceen',
+  'oecd-experience-professionnelle-adolescents-resultats-carriere',
+  'oecd-travail-partiel-adolescents-avantages',
 ]
 const GUIDES = BLOG_POSTS_FR.filter(p => GUIDE_SLUGS.includes(p.slug))
   .sort((a, b) => GUIDE_SLUGS.indexOf(a.slug) - GUIDE_SLUGS.indexOf(b.slug))

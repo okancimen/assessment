@@ -223,6 +223,8 @@ export default function InternshipLandingPage() {
               { href: '/blog/early-internship-child-development-career', tag: 'Research', title: 'Why Early Internships Matter for Career Development' },
               { href: '/blog/business-work-experience-high-school-uk', tag: 'Guide', title: 'Business Work Experience for UK High School Students' },
               { href: '/blog/how-to-get-tech-internship-before-university', tag: 'Guide', title: 'How to Get a Tech Internship Before University' },
+              { href: '/blog/oecd-teenage-work-experience-career-outcomes', tag: 'Research', title: 'OECD: Teenage Work Experience Boosts Career Outcomes by 5–10%' },
+              { href: '/blog/oecd-teenage-part-time-work-benefits', tag: 'Research', title: 'Part-Time Jobs for Teenagers: OECD-Backed Benefits' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="border border-[#d2d2d7] rounded-xl p-5 hover:border-[#4F46E5]/40 hover:bg-[#eef2ff]/40 transition-colors">
                 <div className="text-xs font-semibold text-[#4F46E5] mb-2">{link.tag}</div>
