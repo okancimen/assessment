@@ -83,7 +83,7 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link type="text/plain" rel="describedby" href="/llms.txt" />
         <link type="text/plain" rel="describedby" href="/llms-full.txt" />
-        <Script id="gtag-queue" strategy="beforeInteractive">{`window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments);};`}</Script>
+        <Script id="gtag-queue" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments);};`}</Script>
       </head>
       <body className="min-h-full flex flex-col bg-white font-[family-name:var(--font-geist-sans)]">
         {children}
