@@ -4391,6 +4391,21 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Okul çağındaki çocuğunuzun zayıf yönleri birer başarısızlık belgesi değil, sadece doğru bir destekle geliştirilmeyi bekleyen potansiyel alanlardır. Eduentry&apos;nin sunduğu bu objektif zihin haritası sayesinde, çocuğunuza &ldquo;ders çalış&rdquo; baskısı kurmak yerine, onun tam olarak ihtiyaç duyduğu noktada yanında olan bilinçli bir ebeveyn olabilirsiniz.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur', tag: 'Rehber', title: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?' },
+            { href: '/tr/blog/cocugunuzun-guclu-zayif-yonleri-liseye-hazirlik', tag: 'Rehber', title: 'Güçlü ve Zayıf Yönler: Lise Hazırlık Rehberi' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 }

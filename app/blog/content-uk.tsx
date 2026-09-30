@@ -4245,6 +4245,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           A child&apos;s development areas are not a record of failure — they are areas of potential waiting for the right kind of support. With the objective cognitive map Eduentry provides, you can stop pushing your child to &ldquo;just study harder&rdquo; and become the informed parent who stands beside them precisely where they need it most.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/blog/how-does-your-child-compare-globally', tag: 'Guide', title: 'How Does Your Child Compare Globally?' },
+            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: 'Guide', title: 'Child Strengths & Weaknesses: High School Preparation Guide' },
+            { href: '/blog/pisa-2025-global-education-crisis-what-parents-need-to-know', tag: 'Research', title: 'PISA 2025: Global Education Crisis — What Parents Need to Know' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 }

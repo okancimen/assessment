@@ -3013,6 +3013,21 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
           Las áreas de desarrollo de un niño en edad escolar no son un registro de fracasos — son áreas de potencial que esperan el tipo correcto de apoyo para transformarse. Con el mapa cognitivo objetivo que ofrece Eduentry, puedes dejar de presionar a tu hijo para que &ldquo;estudie más&rdquo; y convertirte en el padre informado que está junto a él exactamente donde más lo necesita.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guías Relacionadas</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/es/blog/como-se-compara-tu-hijo-a-nivel-mundial', tag: 'Guía', title: '¿Cómo se compara tu hijo a nivel mundial?' },
+            { href: '/es/blog/comprender-fortalezas-debilidades-hijo-bachillerato', tag: 'Guía', title: 'Fortalezas y debilidades: preparación para el bachillerato' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 }

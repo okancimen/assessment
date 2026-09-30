@@ -1677,6 +1677,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       "School reports only show current grades — not your child's true cognitive potential. This guide explains how AI-powered adaptive assessment reveals verbal reasoning, non-verbal reasoning, maths, and English strengths and gaps across ages 6–17.",
     tldr: "Eduentry's adaptive assessment uses AI to measure the four cognitive domains that predict school success and career outcomes: verbal reasoning, non-verbal reasoning, mathematical skills, and English proficiency. The system adjusts in real time to every answer, mapping a child's true ceiling and development areas without exam anxiety.",
     date: '2026-09-30',
+    dateModified: '2026-09-30',
     readTime: '8 min read',
     tags: ['Academic Assessment', 'Child Development', 'Parent Guide', 'Cognitive Profile', 'Verbal Reasoning', 'Non-Verbal Reasoning'],
     faqs: [

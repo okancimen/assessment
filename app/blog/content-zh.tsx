@@ -2113,6 +2113,21 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
           学龄孩子的弱项不是失败的记录——而是等待正确支持去开发的潜力区域。借助Eduentry提供的客观认知图谱，您可以不再以"多学习"来给孩子施压，而是成为一位在孩子最需要的节点精准出现的知情家长。
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">相关指南</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/zh/blog/haizi-xueshu-shuiping-ruhe-celiang', tag: '指南', title: '如何评估孩子的学术水平？' },
+            { href: '/zh/blog/liaojie-haizi-youshi-ruodian-zhongxue-zhunbei', tag: '指南', title: '孩子优势与不足：中学准备指南' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 }

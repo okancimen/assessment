@@ -2449,6 +2449,21 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
           مجالات تطوير الطفل في سن المدرسة ليست وثيقة إخفاق — بل هي مجالات للإمكانات تنتظر النوع الصحيح من الدعم لتتحول. مع خريطة الذهن الموضوعية التي يوفرها Eduentry، يمكنك التوقف عن الضغط على طفلك لـ&ldquo;الدراسة أكثر&rdquo; والتحول إلى الوالد الواعي الذي يقف بجانبه تحديداً عند أشد لحظاته احتياجاً.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4" dir="rtl">أدلة ذات صلة</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/ar/blog/fahm-quwat-dauf-tiflik-qabl-al-thanawiya', tag: 'دليل', title: 'نقاط القوة والضعف: التحضير للمرحلة الثانوية' },
+            { href: '/ar/blog/taqrir-measayir-akademiyya-2026', tag: 'بحث', title: 'تقرير المعايير الأكاديمية العالمية 2026: أين يقف طفلك دولياً؟' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2" dir="rtl">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug" dir="rtl">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 }

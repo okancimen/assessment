@@ -2358,6 +2358,21 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
           Зоны развития школьника — не свидетельство неудач, а области потенциала, ждущие правильной поддержки. С объективной когнитивной картой, которую предоставляет Eduentry, вы можете перестать давить на ребёнка словами &ldquo;учись больше&rdquo; и стать осведомлённым родителем, который стоит рядом именно там, где он нужен больше всего.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Связанные руководства</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/ru/blog/kak-vash-rebyonok-sravnivaetsya-globalno', tag: 'Руководство', title: 'Как ваш ребёнок выглядит в мировом масштабе?' },
+            { href: '/ru/blog/silnye-slabye-storony-rebenka-podgotovka-k-sredney-shkole', tag: 'Руководство', title: 'Сильные и слабые стороны: подготовка к средней школе' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 }
