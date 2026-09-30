@@ -1,10 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import dynamic from 'next/dynamic'
 import BellCurve from '@/components/landing/BellCurve'
+import { LazyTestimonialsCarouselTR as TestimonialsCarouselTR } from '@/components/landing/TestimonialsCarouselLazy'
 import CtaLink from '@/components/ui/CtaLink'
-
-const TestimonialsCarouselTR = dynamic(() => import('@/components/landing/TestimonialsCarouselTR'), { ssr: false })
 import { SUBJECTS } from '@/types'
 import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
 
