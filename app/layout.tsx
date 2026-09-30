@@ -80,13 +80,11 @@ export default async function RootLayout({
       <head>
         <meta name="theme-color" content="#1d1d1f" />
         <meta name="yandex-verification" content="f8b17ecde6325153" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link type="text/plain" rel="describedby" href="/llms.txt" />
         <link type="text/plain" rel="describedby" href="/llms-full.txt" />
         <Script id="gtag-queue" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments);};`}</Script>
       </head>
-      <body className="min-h-full flex flex-col bg-white font-[family-name:var(--font-geist-sans)]">
+      <body className="min-h-full flex flex-col bg-white">
         {children}
         <ConditionalAnalytics />
         <Script id="clarity-init" strategy="afterInteractive">{`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yf8qhuzltg");`}</Script>
