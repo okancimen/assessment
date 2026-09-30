@@ -9,6 +9,7 @@ const geist = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
   display: "optional",
+  preload: false,
 });
 
 const BASE_URL = "https://eduentry.com";
