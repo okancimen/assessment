@@ -4455,6 +4455,109 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'smart-child-bad-grades': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        You know your child is clever. You see it in the way they reason through a problem at the dinner table, the way they ask questions that catch adults off guard, the way they grasp new ideas faster than their peers. But the report card keeps saying something different — and every parents&apos; evening ends with the same phrase: &ldquo;could try harder.&rdquo;
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        This disconnect between evident ability and recorded grades is one of the most common and least understood situations in education. It is not a sign that you are imagining things. It has a scientific explanation — and understanding it is the first step to doing something useful about it.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Smart Children Get Bad Grades</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Smart children get bad grades when there is a mismatch between their cognitive profile and how school measures performance. School grades primarily measure crystallised intelligence — what has been memorised and reproduced — while many bright children have exceptional fluid intelligence: the ability to reason, spot patterns, and solve novel problems that standardised tests rarely capture.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Curriculum mismatch:</strong> Spatial and logical thinkers are frequently penalised by text-heavy exams that reward verbal recall. A child who can mentally rotate a 3D object or solve a pattern puzzle in seconds may lose marks on an essay question requiring extended written argument — not because they lack understanding, but because the output format does not suit their cognitive architecture.
+          </Bullet>
+          <Bullet>
+            <strong>Working memory load:</strong> A child can understand each step of a multi-step problem perfectly but still lose marks if their working memory cannot hold all the intermediate steps simultaneously. This is not laziness or carelessness — it is a specific cognitive bottleneck that appears invisible from the outside and is routinely misattributed to poor effort.
+          </Bullet>
+          <Bullet>
+            <strong>Boredom and disengagement:</strong> Gifted children placed in under-stimulating environments often disengage — not dramatically, but quietly. They stop investing full effort in work they find unchallenging, and the resulting grades bear no relationship to their actual capability. Teachers frequently describe this profile as &ldquo;not working to potential&rdquo; without identifying why.
+          </Bullet>
+          <Bullet>
+            <strong>Test anxiety:</strong> High-ability children are sometimes more vulnerable to exam pressure, not less. Their stronger metacognitive awareness makes them acutely conscious of what is at stake. When anxiety degrades working memory during an exam — which is the neurological mechanism that underlies test anxiety — the result is a performance ceiling that has nothing to do with knowledge.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Fluid vs Crystallised Intelligence: The Key Distinction</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The Cattell-Horn-Carroll (CHC) model — the most empirically robust framework in cognitive science — distinguishes between two fundamentally different types of intelligence. <strong>Crystallised intelligence (Gc)</strong> is accumulated knowledge: vocabulary, facts, procedures — the content you learn in school and reproduce in exams. <strong>Fluid intelligence (Gf)</strong> is reasoning ability: the capacity to identify patterns, form logical chains, and solve problems you have never encountered before.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          School examinations, by design, test Gc almost exclusively. A child&apos;s Gf — their raw reasoning engine — is largely invisible to the grading system. OECD PISA data shows a significant gap between school performance and measured cognitive ability in 15–20% of students across developed nations. More specifically, studies show that students in the top quartile of fluid reasoning but the bottom half of school grades represent 12–18% of all students — a substantial group whose potential school systems routinely underestimate.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The 4 Cognitive Domains That Predict True Academic Ceiling</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A four-domain cognitive assessment separates the components of ability that school grades collapse into a single mark. Each domain predicts a different dimension of academic and professional performance:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Verbal Reasoning:</strong> Language comprehension, analogies, and inference — the capacity to extract meaning, construct arguments, and navigate complex texts. Predicts performance in humanities, languages, law, and any domain requiring extended written or spoken communication.
+          </Bullet>
+          <Bullet>
+            <strong>Numerical Reasoning:</strong> Pattern recognition, mathematical logic, and quantitative problem-solving — independent of curriculum knowledge. A child with strong numerical reasoning will find their way through a novel maths problem even without having been taught the specific technique, because they are working from principles rather than memory. Predicts STEM performance beyond what exam marks reveal.
+          </Bullet>
+          <Bullet>
+            <strong>Visual-Spatial Reasoning:</strong> Shape analysis, three-dimensional relations, and mental rotation — arguably the most underidentified domain in the school system. Strong visual-spatial reasoning predicts performance in engineering, architecture, design, surgery, and many technology roles. A child with an exceptional spatial profile may perform modestly in school but be genuinely outstanding in the real-world application of their strongest ability.
+          </Bullet>
+          <Bullet>
+            <strong>Processing Speed &amp; Working Memory:</strong> How quickly and accurately information is processed and held during a task. Low working memory is the most common undiagnosed cognitive profile in underperforming children. It creates a gap between understanding and output — the child grasps the concept but cannot sustain the sequence required to demonstrate it under exam conditions. Identifying a working memory bottleneck changes the entire support strategy.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Do If Your Child Is Underperforming</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Get a cognitive baseline first:</strong> Before booking tutors, before changing schools, before any intervention — understand which domain has the gap. Tutoring numerical reasoning when the real issue is working memory is expensive and ineffective. A 35-minute adaptive assessment produces the domain profile you need to act from evidence rather than assumption.
+          </Check>
+          <Check>
+            <strong>Share the data with the teacher:</strong> &ldquo;93rd percentile in spatial reasoning&rdquo; is a completely different conversation than &ldquo;seems bright but distracted.&rdquo; A cognitive report gives teachers actionable information — it changes how they scaffold tasks, how they seat the child, what adjustments they consider. Without it, teachers work from behaviour; with it, they work from ability.
+          </Check>
+          <Check>
+            <strong>Match support to the domain:</strong> Numerical weakness responds to pattern-based maths games and structured problem-solving practice — not more repetition of the same procedures that are not working. Verbal weakness responds differently to spatial weakness. Generic tutoring that does not target the specific domain is the most common waste of educational spend.
+          </Check>
+          <Check>
+            <strong>Rule out working memory as the bottleneck:</strong> Many children described as &ldquo;lazy,&rdquo; &ldquo;careless,&rdquo; or &ldquo;not trying&rdquo; have working memory challenges. The tell is inconsistent performance: they can do a problem type in practice but not under exam conditions, or they understand a concept in class but cannot reproduce it on paper. Working memory is trainable — but only once it has been identified.
+          </Check>
+          <Check>
+            <strong>Consider whether the school environment is right:</strong> A child with an extreme verbal and spatial profile — very high in both reasoning domains but average in crystallised knowledge — may be systematically disadvantaged by a curriculum that rewards recall over reasoning. This is not a criticism of schools; it is a structural feature of mass education. Knowing your child&apos;s profile lets you make an informed decision about enrichment, additional challenge, or alternative environments.
+          </Check>
+        </ul>
+        <Callout>
+          <strong>Start with a free 35-minute adaptive assessment</strong> — it produces a four-domain cognitive profile benchmarked against international norms. No preparation needed. The report shows verbal reasoning, numerical reasoning, visual-spatial reasoning, and processing speed independently — giving you a complete picture of where your child stands, not just what they have been taught.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: "Free Academic Test: Discover Your Child's Strengths and Weaknesses" },
+            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: 'Guide', title: "Understanding Your Child's Strengths Before High School" },
+            { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Guide', title: "Discover Your School-Age Child's Hidden Strengths" },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
   'how-to-find-internship-as-student': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
@@ -4555,6 +4658,105 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             { href: '/blog/oecd-teenage-work-experience-career-outcomes', tag: 'Research', title: 'OECD Research: Teenage Work Experience and Career Outcomes' },
             { href: '/blog/pisa-2025-work-experience-student-readiness', tag: 'Guide', title: 'PISA 2025: Why Work Experience Is the Missing Answer' },
             { href: '/blog/65-jobs-ai-cannot-automate', tag: 'Guide', title: '65 Jobs AI Cannot Automate' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'summer-activities-ambitious-children': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        June arrives and the question every ambitious parent faces: how do you keep summer productive without turning it into misery? The research is clear — unstructured summers widen the achievement gap. But the wrong structured summer (endless tutoring) kills intrinsic motivation. The answer is somewhere in the middle: purposeful, varied, and matched to the child&apos;s actual strengths.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        The parents who get this right share one thing in common: they start with data, not assumptions. They know whether their child&apos;s strongest domain is verbal, numerical, or spatial before they book a single programme. That knowledge determines everything — which activities stretch the child meaningfully, which build credentials universities recognise, and which are simply filling time.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Makes a Summer Activity Genuinely Valuable?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A genuinely valuable summer activity for an academically ambitious child builds one of three things: a cognitive skill that transfers across subjects (reasoning, problem-solving, working memory), a verifiable credential that signals ability to future schools or employers, or domain knowledge in a field the child is genuinely curious about. The best activities do all three.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Skill-building:</strong> activities that develop reasoning, not just knowledge accumulation. The distinction matters — a child who memorises history facts is not developing the same cognitive capacity as one who constructs and defends an argument about historical causation.
+          </Bullet>
+          <Bullet>
+            <strong>Credential-building:</strong> verifiable outputs (assessment reports, internship references, competition placements) that communicate ability to admissions teams and employers before the child has a formal track record.
+          </Bullet>
+          <Bullet>
+            <strong>Exploration:</strong> exposure to real-world sectors before committing to a school track. A child who has spent two weeks in a technology company has a fundamentally different relationship to STEM subjects than one who has only encountered them in a classroom.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Tier 1: Activities With the Highest Academic ROI</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Internship or work experience (age 14+):</strong> OECD research across 47 longitudinal studies shows students with structured work experience by 16 earn 5–10% more as adults and have measurably better employment outcomes. More importantly for summer: it develops executive function, ambiguity tolerance, and professional communication — skills school cannot teach. <Link href="/blog/how-to-find-internship-as-student" className="text-indigo-600 hover:underline">Eduentry&apos;s internship readiness assessment</Link> identifies which sector fits your child&apos;s cognitive profile before they commit to a placement.
+          </Bullet>
+          <Bullet>
+            <strong>Cognitive baseline assessment:</strong> Before investing in summer tutoring, get a domain-level profile. 35 minutes, free, produces verbal/numerical/spatial percentile scores benchmarked internationally. Identifies exactly which domain has a gap versus which is already strong — so summer support is targeted, not scattered. This is the single highest-leverage action a parent can take before summer planning.
+          </Bullet>
+          <Bullet>
+            <strong>Maths/logic enrichment (for numerical domain):</strong> AMC 8/10 preparation, Singapore maths workbooks, or competitive maths clubs. Distinguish from repetitive curriculum work — the goal is pattern-based reasoning development, not memorisation. A child who can see the structure underneath a problem is building something schools rarely test directly.
+          </Bullet>
+          <Bullet>
+            <strong>Debate or Model UN (for verbal domain):</strong> High verbal reasoning children who go underchallenged in standard classes thrive here. Structured argumentation develops the meta-cognitive skills that transfer directly to essay writing, university interviews, and persuasive communication. The research on debate participation and verbal reasoning gains is robust.
+          </Bullet>
+          <Bullet>
+            <strong>STEM project or coding (for spatial/quantitative domain):</strong> Lego Mindstorms, Arduino, MIT Scratch (younger), Python or Swift (14+). The key: project-based, not tutorial-based. Building something that doesn&apos;t work yet and debugging it is the cognitive exercise. Following a tutorial is not.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Tier 2: Valuable But Often Oversold</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Language courses abroad:</strong> valuable for crystallised intelligence and cultural confidence, but rarely build the fluid reasoning skills that differentiate top students. Best if combined with something from Tier 1. A language course that runs alongside a STEM project or debate programme is genuinely enriching; a language course alone is a holiday with homework.
+          </Check>
+          <Check>
+            <strong>Academic summer schools (Oxford, Cambridge, US programmes):</strong> excellent for inspiration and networking, but expensive and the cognitive benefit is mostly motivational. Not a substitute for a cognitive baseline or real work experience. The exception: highly selective programmes with genuine academic rigour, where the peer environment provides meaningful challenge.
+          </Check>
+          <Check>
+            <strong>Online courses (Coursera, Khan Academy, edX):</strong> excellent for filling specific curriculum gaps, poor for developing reasoning skills. Use to address a specific weak domain identified by assessment, not as a general &ldquo;productive summer&rdquo; plan. Self-directed online learning builds knowledge; it rarely builds cognitive capacity.
+          </Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Plan the Perfect Summer: A 3-Step Framework</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Step 1 — Know your child&apos;s profile:</strong> Take the free cognitive assessment before summer starts. Knowing their verbal/numerical/spatial percentile tells you which activities will stretch them versus which are just filling time. A child in the 85th percentile for verbal reasoning does not need more reading — they need something that challenges their reasoning capacity, not their knowledge base.
+          </Check>
+          <Check>
+            <strong>Step 2 — Balance the three pillars:</strong> aim for one credential-building activity (assessment + internship for 14+, competition entry for younger), one skill-building activity matched to their stronger domain, and one genuinely enjoyable exploration that isn&apos;t pressure-loaded. The third pillar is not optional — children who experience summer as purely pressurised enter September depleted rather than energised.
+          </Check>
+          <Check>
+            <strong>Step 3 — Book early:</strong> internship placements, summer school places, and competitive programmes fill fast. Have your child&apos;s assessment report ready — it strengthens applications significantly. An application accompanied by a percentile report is categorically different from an application with grades alone.
+          </Check>
+        </ul>
+        <Callout>
+          Start with the free 35-minute assessment — know which domain to build this summer before you book anything.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/blog/how-to-find-internship-as-student', tag: 'Guide', title: 'How to Find an Internship as a Student' },
+            { href: '/blog/oecd-teenage-work-experience-career-outcomes', tag: 'Research', title: 'OECD: Teenage Work Experience and Career Outcomes' },
+            { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: "Free Academic Test: Discover Your Child's Strengths" },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

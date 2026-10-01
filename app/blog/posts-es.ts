@@ -848,6 +848,67 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'hijo-inteligente-malas-notas',
+    contentSlug: 'smart-child-bad-grades',
+    title: 'Mi hijo es inteligente pero saca malas notas: qué hacer',
+    shortTitle: 'Hijo Inteligente, Malas Notas: Qué Hacer',
+    description:
+      'Tu hijo es claramente inteligente, pero su boletín de notas no lo refleja. Aquí explicamos por qué las notas no miden la capacidad cognitiva — y cómo descubrir el verdadero techo académico de tu hijo en los cuatro dominios cognitivos.',
+    tldr: 'Los niños inteligentes sacan malas notas cuando existe una desconexión entre su perfil cognitivo y cómo la escuela mide el rendimiento. Las notas escolares miden principalmente la inteligencia cristalizada — conocimiento memorizado y reproducido — mientras que muchos niños brillantes tienen una inteligencia fluida excepcional: la capacidad de razonar, detectar patrones y resolver problemas nuevos que los exámenes estándar raramente capturan.',
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '9 min de lectura',
+    tags: ['Hijo Inteligente Malas Notas', 'Bajo Rendimiento Escolar', 'Evaluación Cognitiva', 'Superdotado Bajo Rendimiento', 'Potencial Infantil', 'Rendimiento Académico', 'Memoria de Trabajo', 'Guía para Padres'],
+    faqs: [
+      {
+        q: '¿Por qué mi hijo inteligente saca malas notas?',
+        a: 'Los niños inteligentes sacan malas notas cuando sus fortalezas cognitivas no se alinean con cómo la escuela mide el rendimiento. Las notas escolares principalmente evalúan la inteligencia cristalizada — el conocimiento memorizado — mientras que muchos niños brillantes destacan en la inteligencia fluida: razonamiento, reconocimiento de patrones y resolución de problemas nuevos. Un niño también puede tener dificultades por problemas de memoria de trabajo, ansiedad ante los exámenes, desconexión por aburrimiento o una falta de correspondencia entre el currículo y su perfil cognitivo.',
+      },
+      {
+        q: '¿Cuál es la diferencia entre inteligencia y rendimiento académico?',
+        a: 'La inteligencia se refiere a la capacidad cognitiva — la capacidad de razonar, aprender y resolver nuevos problemas. El rendimiento académico mide qué tan bien un estudiante ha reproducido el contenido del currículo bajo condiciones de examen. Un niño puede tener una inteligencia fluida muy alta pero obtener notas modestas si su memoria de trabajo está bajo presión, si está desconectado o si el formato del examen no corresponde a sus fortalezas cognitivas.',
+      },
+      {
+        q: '¿Puede un niño superdotado tener dificultades en la escuela?',
+        a: 'Sí. Las investigaciones muestran consistentemente que entre el 12 y el 18% de los estudiantes en el cuartil superior de razonamiento fluido obtienen puntuaciones en la mitad inferior de las notas escolares. El bajo rendimiento en niños superdotados es un fenómeno bien documentado. Las causas incluyen el aburrimiento y la desconexión en currículos poco estimulantes, desafíos de memoria de trabajo no diagnosticados, y perfiles doblemente excepcionales.',
+      },
+      {
+        q: '¿Cuáles son las señales de que mi hijo es más inteligente de lo que muestran sus notas?',
+        a: 'Las señales clave incluyen: razonamiento verbal sólido en la conversación pero escasa producción escrita; comprensión rápida de nuevos conceptos pero pérdida de puntos en tareas de varios pasos; excelente resolución de problemas espaciales o lógicos fuera de la escuela (Lego, puzles, programación) pero bajo rendimiento en exámenes con mucho texto; desconexión por aburrimiento más que por confusión.',
+      },
+      {
+        q: '¿Afecta la memoria de trabajo a las notas escolares?',
+        a: 'Sí, significativamente. La memoria de trabajo es el sistema cognitivo que mantiene y manipula información durante una tarea. Los niños con memoria de trabajo inferior a la media frecuentemente pierden puntos en problemas de varios pasos incluso cuando entienden cada paso individual. Los desafíos de memoria de trabajo son uno de los perfiles cognitivos no diagnosticados más comunes en niños con bajo rendimiento — y son completamente independientes de la inteligencia.',
+      },
+      {
+        q: '¿Cómo puedo conocer el verdadero potencial académico de mi hijo?',
+        a: 'Una evaluación cognitiva adaptativa gratuita mide el razonamiento verbal, numérico, visual-espacial y la velocidad de procesamiento de forma independiente — produciendo una puntuación percentil para cada dominio calibrada según normas internacionales. A diferencia de las notas escolares, esto separa lo que tu hijo sabe de lo que es cognitivamente capaz. La evaluación académica de Eduentry dura 35 minutos y no requiere preparación previa.',
+      },
+      {
+        q: '¿Debería hacer que mi hijo sea evaluado si tiene bajo rendimiento en la escuela?',
+        a: 'Si existe una brecha consistente entre la capacidad aparente de tu hijo y sus notas, una evaluación cognitiva es un primer paso productivo antes de cualquier intervención. Identifica si la brecha se debe a una debilidad específica del dominio, carga de memoria de trabajo, falta de correspondencia con el currículo o desconexión general. Empezar con datos en lugar de suposiciones ahorra tiempo, dinero y reduce el riesgo de tutorías o intervenciones mal orientadas.',
+      },
+      {
+        q: '¿Pueden el estrés y la ansiedad hacer que un niño inteligente saque malas notas?',
+        a: 'Sí. La ansiedad ante los exámenes perjudica específicamente la memoria de trabajo durante un examen — lo que significa que un niño puede conocer el material a fondo pero rendir por debajo de sus capacidades bajo presión. Los niños de alta capacidad son en realidad más susceptibles a este mecanismo porque son más conscientes de lo que está en juego.',
+      },
+      {
+        q: '¿Qué tipo de apoyo ayuda más a los niños superdotados con bajo rendimiento?',
+        a: 'El apoyo más eficaz comienza con un perfil cognitivo, no con un plan de tutoría. Una vez que sabes qué dominio tiene la brecha — verbal, numérico, espacial o memoria de trabajo — puedes orientar el apoyo de forma precisa. Las intervenciones específicas del dominio superan consistentemente a la tutoría general. Si la memoria de trabajo es el cuello de botella, los enfoques basados en estrategias superan más repetición.',
+      },
+      {
+        q: '¿En qué se diferencia un test cognitivo adaptativo de un examen escolar?',
+        a: 'Un examen escolar evalúa el conocimiento del currículo — lo que un estudiante ha aprendido y puede recordar bajo presión. Un test cognitivo adaptativo mide la capacidad de razonamiento subyacente — la capacidad de resolver problemas nuevos que el niño nunca ha visto antes. El formato adaptativo ajusta la dificultad de cada pregunta en tiempo real basándose en las respuestas anteriores, produciendo una estimación precisa de la capacidad en lugar de una nota.',
+      },
+    ],
+    cta: {
+      heading: 'Descubre el perfil cognitivo real de tu hijo — gratis',
+      body: 'Evaluación adaptativa para edades 6–16. Razonamiento verbal, numérico, espacial y memoria de trabajo medidos frente a referencias internacionales — informe instantáneo, sin registro.',
+      label: 'Iniciar evaluación gratuita',
+      href: '/es#academica',
+    },
+  },
+  {
     slug: 'como-encontrar-practicas-siendo-estudiante',
     contentSlug: 'how-to-find-internship-as-student',
     title: 'Cómo Encontrar Prácticas Siendo Estudiante: La Guía Completa',
@@ -906,6 +967,67 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       body: 'Evaluación adaptativa gratuita para estudiantes de 14+. Obtén tu perfil de talento en tecnología, datos, empresa y marketing digital en 35 minutos.',
       label: 'Iniciar evaluación gratuita →',
       href: '/es/practicas',
+    },
+  },
+  {
+    slug: 'actividades-verano-ninos-academicamente-ambiciosos',
+    contentSlug: 'summer-activities-ambitious-children',
+    title: 'Actividades de Verano para Niños Académicamente Ambiciosos',
+    shortTitle: 'Actividades de Verano para Niños Académicamente Ambiciosos',
+    description:
+      'Guía respaldada por investigaciones para padres que planifican un verano productivo para sus hijos de alto rendimiento de 9 a 16 años. Cubre prácticas, evaluaciones cognitivas, programas de enriquecimiento y un marco de 3 pasos para adaptar las actividades de verano a las fortalezas reales de su hijo.',
+    tldr: 'Los veranos sin estructura amplían la brecha de rendimiento — pero el verano estructurado equivocado mata la motivación intrínseca. La respuesta es intencionada, variada y adaptada al perfil cognitivo del niño. Comience con una evaluación gratuita de 35 minutos para saber qué dominio desarrollar antes de reservar cualquier cosa.',
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '10 min de lectura',
+    tags: ['Actividades de Verano', 'Niño Superdotado Verano', 'Prácticas de Verano', 'Enriquecimiento Académico', 'Estudiante de Secundaria', 'Desarrollo Infantil', 'Planificación de Verano', 'Evaluación Cognitiva'],
+    faqs: [
+      {
+        q: '¿Qué deberían hacer los niños académicamente superdotados durante el verano?',
+        a: 'Los niños académicamente superdotados se benefician más de una combinación de construcción de credenciales (evaluación cognitiva, prácticas para mayores de 14 años, participación en competiciones), desarrollo de habilidades adaptado a su dominio más fuerte, y una exploración genuinamente disfrutable sin presión. La clave es adaptar la actividad al perfil cognitivo real del niño.',
+      },
+      {
+        q: '¿Son las prácticas de verano adecuadas para estudiantes de secundaria?',
+        a: 'Sí. La investigación de la OCDE en 47 estudios longitudinales muestra que los estudiantes con experiencia laboral estructurada antes de los 16 años tienen resultados profesionales mediblemente mejores. Muchas empresas ofrecen prácticas estructuradas para estudiantes de 14 a 18 años. Una evaluación de preparación para prácticas ayuda a identificar qué sector encaja antes de comprometerse.',
+      },
+      {
+        q: '¿Qué actividades de verano ayudan con la admisión universitaria?',
+        a: 'Los comités de admisión universitaria buscan tres cosas: capacidad verificada, interés genuino en un campo y evidencia de iniciativa. Las actividades de verano que más ayudan son: una evaluación cognitiva de referencia (produce un informe percentil), prácticas o experiencia laboral estructurada (produce una referencia), y competición o programa de enriquecimiento específico de materia. Los cursos en línea solos tienen menos peso.',
+      },
+      {
+        q: '¿Cómo encuentro unas prácticas de verano para mi adolescente?',
+        a: 'Comience con una evaluación de preparación para prácticas para identificar qué sector coincide con las fortalezas de su hijo. Luego acérquese directamente a las PYME (tienen más probabilidades de aceptar estudiantes jóvenes que las grandes corporaciones), use el departamento de orientación de su escuela y consulte directorios específicos del sector. Tener un informe de evaluación en la solicitud la fortalece significativamente.',
+      },
+      {
+        q: '¿Es mejor hacer un programa de verano o unas prácticas?',
+        a: 'Para estudiantes de 14 años en adelante, unas prácticas estructuradas generalmente aportan más valor cognitivo y de credencial que un programa académico de verano, porque desarrolla función ejecutiva, tolerancia a la ambigüedad y comunicación profesional — habilidades que los programas académicos no pueden replicar. Para menores de 14, el enriquecimiento estructurado (evaluación cognitiva + competición + proyecto) es el mejor marco.',
+      },
+      {
+        q: '¿Qué habilidades cognitivas se pueden desarrollar durante el verano?',
+        a: 'Los tres dominios cognitivos más receptivos a la inversión estival dirigida son: razonamiento verbal (desarrollado a través de debate, escritura estructurada, Modelo ONU y lectura de alto nivel), razonamiento numérico (mediante matemáticas competitivas, resolución de problemas basada en patrones y proyectos de datos), y razonamiento visual-espacial (mediante proyectos de ingeniería, programación, diseño y rompecabezas espaciales). Una evaluación cognitiva de referencia identifica qué dominio priorizar.',
+      },
+      {
+        q: '¿Cómo sé qué actividad de verano se adapta a las fortalezas de mi hijo?',
+        a: 'Realice la evaluación cognitiva gratuita de 35 minutos antes de reservar nada. Produce puntuaciones percentiles verbales, numéricas y espaciales comparadas internacionalmente. Un niño con perfil verbal fuerte prospera en debate, escritura y Modelo ONU. Un perfil numérico-espacial apunta hacia programación, proyectos de ingeniería y matemáticas competitivas.',
+      },
+      {
+        q: '¿Las actividades de verano mejoran el rendimiento escolar al año siguiente?',
+        a: 'La investigación muestra consistentemente que el enriquecimiento estival dirigido adaptado al nivel de desarrollo del niño mejora el rendimiento en el año académico siguiente, especialmente en los dominios abordados. La palabra clave es dirigido: la tutoría genérica muestra efectos débiles, mientras que el enriquecimiento específico del dominio adaptado a una brecha cognitiva muestra efectos fuertes.',
+      },
+      {
+        q: '¿A qué edad puede comenzar un niño con una práctica de experiencia laboral?',
+        a: 'En muchos países, la edad mínima para la experiencia laboral formal es de 13 a 14 años, siendo las prácticas estructuradas más comunes a partir de los 14. Muchas empresas que ofrecen prácticas en secundaria requieren que los estudiantes tengan al menos 14 años. La evaluación de preparación para prácticas está diseñada específicamente para este grupo de edad de 14+.',
+      },
+      {
+        q: '¿Cómo ayuda una evaluación de verano con la planificación escolar en septiembre?',
+        a: 'Una evaluación cognitiva realizada en verano produce un perfil percentil verbal, numérico y espacial que identifica exactamente qué dominio tiene una brecha frente a cuál ya es fuerte. Esto le indica en qué materias invertir en tutoría (el dominio deficitario), qué actividades escolares priorizar (el dominio fuerte), y le proporciona datos objetivos para compartir con los profesores en la reunión de padres de septiembre.',
+      },
+    ],
+    cta: {
+      heading: 'Descubra las fortalezas de su hijo antes del verano — gratis',
+      body: 'Evaluación adaptativa para edades de 6 a 16 años. Razonamiento verbal, numérico y espacial medido con referencia internacional — informe instantáneo, sin registro.',
+      label: 'Iniciar prueba gratuita',
+      href: '/es#academica',
     },
   },
 ]

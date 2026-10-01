@@ -266,6 +266,14 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/ar/blog/ikhtibar-akademi-majani-quwat-duaf-tiflak",
     f"{BASE_URL}/ru/blog/besplatny-akademichesky-test-silnye-slabye-storony-rebenka",
     f"{BASE_URL}/zh/blog/mianfei-xueshu-ceshi-haizi-youshi-ruodian",
+    # Smart child bad grades — all 7 locales
+    f"{BASE_URL}/blog/smart-child-bad-grades",
+    f"{BASE_URL}/tr/blog/zeki-cocuk-neden-basarisiz-olur",
+    f"{BASE_URL}/es/blog/hijo-inteligente-malas-notas",
+    f"{BASE_URL}/fr/blog/enfant-intelligent-mauvaises-notes",
+    f"{BASE_URL}/ar/blog/tifl-dhaki-darajat-saiya",
+    f"{BASE_URL}/ru/blog/umny-rebyonok-plokhie-otsenki",
+    f"{BASE_URL}/zh/blog/congming-haizi-chengji-cha",
     # How to find internship as student — all 7 locales
     f"{BASE_URL}/blog/how-to-find-internship-as-student",
     f"{BASE_URL}/tr/blog/ogrenciyken-staj-bulmanin-yeni-nesil-yolu",

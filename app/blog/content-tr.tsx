@@ -4605,6 +4605,109 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'smart-child-bad-grades': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Çocuğunuzun zeki olduğunu biliyorsunuz. Bunu akşam yemeğinde bir problemi nasıl çözdüğünden, yetişkinleri şaşırtan sorular sormasından, yeni fikirleri yaşıtlarından çok daha hızlı kavramasından anlıyorsunuz. Ama karne her seferinde farklı bir şey söylüyor — ve her veli toplantısı aynı cümleyle bitiyor: &ldquo;daha fazla çalışabilir.&rdquo;
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Görünür yetenek ile kaydedilen notlar arasındaki bu kopukluk, eğitimde en yaygın ve en az anlaşılan durumlardan biridir. Bir şeyleri hayal ettiğinizin işareti değildir. Bilimsel bir açıklaması vardır — ve bunu anlamak, yararlı bir şey yapmanın ilk adımıdır.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Zeki Çocuklar Neden Kötü Not Alır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Zeki çocuklar, bilişsel profilleri ile okulun performansı ölçme biçimi arasında uyumsuzluk olduğunda kötü not alır. Okul notları ağırlıklı olarak kristalize zekayı ölçer — ezberlenmiş ve yeniden üretilmiş bilgiyi — oysa pek çok parlak çocuk olağanüstü akıcı zekaya sahiptir: standart testlerin nadiren yakaladığı mantık yürütme, örüntü bulma ve yeni problemleri çözme yeteneği.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Müfredat uyumsuzluğu:</strong> Uzamsal ve mantıksal düşünenler, sözel hatırlama ödüllendiren metin ağırlıklı sınavlarda sıklıkla cezalandırılır. 3D bir nesneyi zihinsel olarak döndürebilen veya saniyeler içinde bir örüntü bulmacasını çözebilen bir çocuk, uzun yazılı argüman gerektiren bir essay sorusunda puan kaybedebilir — anlayamadığı için değil, çıktı formatı bilişsel yapısına uymadığı için.
+          </Bullet>
+          <Bullet>
+            <strong>Çalışma belleği yükü:</strong> Bir çocuk çok adımlı bir problemin her adımını mükemmel şekilde anlayabilir ama çalışma belleği tüm ara adımları aynı anda tutamazsa yine de puan kaybedebilir. Bu tembellik veya dikkatsizlik değil — dışarıdan görünmez olan ve rutin olarak yetersiz çabaya atfedilen spesifik bir bilişsel darboğazdır.
+          </Bullet>
+          <Bullet>
+            <strong>Sıkılma ve ilgisizlik:</strong> Yetersiz uyarıcı ortamlara yerleştirilen üstün zekalı çocuklar genellikle ilgisiz hale gelir — dramatik biçimde değil, sessizce. Zorlayıcı bulmadıkları çalışmalara tam çaba harcamayı bırakırlar ve ortaya çıkan notlar gerçek yetenekleriyle hiçbir ilişki taşımaz.
+          </Bullet>
+          <Bullet>
+            <strong>Sınav kaygısı:</strong> Yüksek yetenekli çocuklar bazen sınav baskısına karşı daha az değil daha fazla savunmasız olabilir. Daha güçlü metabilişsel farkındalıkları onları risklerin keskin biçimde farkında kılar. Kaygı sınav sırasında çalışma belleğini bozduğunda — sınav kaygısının altında yatan nörolojik mekanizma budur — sonuç bilgiyle hiçbir ilgisi olmayan bir performans tavanıdır.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Akıcı ve Kristalize Zekâ: Temel Ayrım</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cattell-Horn-Carroll (CHC) modeli — bilişsel bilimdeki en ampirik güçlü çerçeve — iki temel farklı zekâ türünü birbirinden ayırır. <strong>Kristalize zekâ (Gc)</strong>, birikmiş bilgidir: kelime dağarcığı, olgular, prosedürler — okulda öğrendiğiniz ve sınavlarda yeniden ürettiğiniz içerik. <strong>Akıcı zekâ (Gf)</strong>, muhakeme yeteneğidir: örüntüleri belirleme, mantıksal zincirler kurma ve daha önce hiç karşılaşmadığınız problemleri çözme kapasitesi.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okul sınavları, tasarım gereği, neredeyse yalnızca Gc&apos;yi test eder. Bir çocuğun Gf&apos;si — ham muhakeme motoru — not sistemine büyük ölçüde görünmezdir. OECD PISA verileri, gelişmiş ülkelerdeki öğrencilerin yüzde 15-20&apos;sinde okul performansı ile ölçülen bilişsel yetenek arasında önemli bir uçurum olduğunu göstermektedir. Daha spesifik olarak, akıcı muhakemede üst çeyrekte yer alan ama okul notlarının alt yarısında olan öğrenciler tüm öğrencilerin yüzde 12-18&apos;ini oluşturur.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Gerçek Akademik Tavanı Öngören 4 Bilişsel Alan</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dört alanlı bilişsel değerlendirme, okul notlarının tek bir nota indirgediği yetenek bileşenlerini ayırır. Her alan, akademik ve mesleki performansın farklı bir boyutunu öngörür:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Sözel Muhakeme:</strong> Dil kavrayışı, analogiler ve çıkarım — anlam çıkarma, argüman kurma ve karmaşık metinlerde gezinme kapasitesi. İnsani bilimler, diller, hukuk ve uzun yazılı veya sözlü iletişim gerektiren her alanda performansı öngörür.
+          </Bullet>
+          <Bullet>
+            <strong>Sayısal Muhakeme:</strong> Örüntü tanıma, matematiksel mantık ve nicel problem çözme — müfredat bilgisinden bağımsız. Güçlü sayısal muhakemesi olan bir çocuk, ilkelere dayanarak çalıştığı için belirli tekniği öğretilmemiş olsa bile yeni bir matematik probleminden yolunu bulur. Sınav notlarının gösterdiğinin ötesinde STEM performansını öngörür.
+          </Bullet>
+          <Bullet>
+            <strong>Görsel-Uzamsal Muhakeme:</strong> Şekil analizi, üç boyutlu ilişkiler ve zihinsel döndürme — tartışmasız okul sisteminde en az tanımlanan alan. Güçlü görsel-uzamsal muhakeme, mühendislik, mimarlık, tasarım, cerrahi ve pek çok teknoloji rolündeki performansı öngörür. İstisnai uzamsal profile sahip bir çocuk okulda mütevazı performans gösterebilir ama en güçlü yeteneğinin gerçek dünya uygulamasında gerçekten olağanüstü olabilir.
+          </Bullet>
+          <Bullet>
+            <strong>İşlem Hızı ve Çalışma Belleği:</strong> Bir görev sırasında bilginin ne kadar hızlı ve doğru işlenip tutulduğu. Düşük çalışma belleği, başarısız çocuklardaki en yaygın teşhis edilmemiş bilişsel profildir. Anlama ile çıktı arasında bir boşluk yaratır — çocuk kavramı kavrar ama sınav koşullarında bunu göstermek için gereken diziyi sürdüremez.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuz Düşük Performans Gösteriyorsa Ne Yapmalısınız?</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Önce bilişsel bir temel alın:</strong> Özel ders ayarlamadan önce, okul değiştirmeden önce, herhangi bir müdahaleden önce — hangi alanda boşluk olduğunu anlayın. Gerçek sorun çalışma belleğiyken sayısal muhakeme için özel ders almak pahalı ve etkisizdir. 35 dakikalık adaptif değerlendirme, varsayım yerine kanıta dayalı hareket etmeniz için ihtiyacınız olan alan profilini üretir.
+          </Check>
+          <Check>
+            <strong>Verileri öğretmenle paylaşın:</strong> &ldquo;Uzamsal muhakemede 93. yüzdelik&rdquo; ifadesi, &ldquo;zeki görünüyor ama dikkatini toplamıyor&rdquo; ifadesinden tamamen farklı bir konuşmadır. Bilişsel rapor öğretmenlere eyleme geçirilebilir bilgi verir — görevleri nasıl iskele ettiklerini, çocuğu nasıl yerleştirdiklerini, hangi uyarlamaları düşündüklerini değiştirir.
+          </Check>
+          <Check>
+            <strong>Desteği alana eşleştirin:</strong> Sayısal zayıflık örüntü tabanlı matematik oyunları ve yapılandırılmış problem çözme pratiğine yanıt verir — işe yaramayan aynı prosedürlerin daha fazla tekrarına değil. Sözel zayıflık uzamsal zayıflıktan farklı yanıt verir. Belirli alana yönelmeyen genel özel ders, eğitim harcamalarının en yaygın boşa gidişidir.
+          </Check>
+          <Check>
+            <strong>Çalışma belleğinin darboğaz olup olmadığını ortadan kaldırın:</strong> &ldquo;Tembel,&rdquo; &ldquo;dikkatsiz&rdquo; veya &ldquo;çalışmıyor&rdquo; olarak tanımlanan pek çok çocuğun çalışma belleği sorunları vardır. İşareti tutarsız performanstır: pratikte bir problem türünü çözebilirler ama sınav koşullarında yapamıyorlar, ya da sınıfta bir kavramı anlıyorlar ama kağıda geçiremiyorlar.
+          </Check>
+          <Check>
+            <strong>Okul ortamının doğru olup olmadığını değerlendirin:</strong> Aşırı sözel ve uzamsal profile sahip bir çocuk — her iki muhakeme alanında da çok yüksek ama kristalize bilgide ortalama — hatırlama yerine muhakemeyi ödüllendiren bir müfredatta sistematik biçimde dezavantajlı olabilir. Bu okulların eleştirisi değil; kitlesel eğitimin yapısal bir özelliğidir.
+          </Check>
+        </ul>
+        <Callout>
+          <strong>Ücretsiz 35 dakikalık adaptif değerlendirmeyle başlayın</strong> — uluslararası normlara göre kalibre edilmiş dört alanlı bilişsel profil üretir. Herhangi bir hazırlık gerekmez. Rapor, sözel muhakeme, sayısal muhakeme, görsel-uzamsal muhakeme ve işlem hızını bağımsız olarak gösterir — çocuğunuzun nerede durduğunun tam resmini, yalnızca öğretilenlerini değil.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet', tag: 'Değerlendirme', title: 'Ücretsiz Akademik Test: Çocuğunuzun Güçlü ve Zayıf Yönlerini Keşfedin' },
+            { href: '/tr/blog/cocugunuzun-guclu-zayif-yonleri-liseye-hazirlik', tag: 'Rehber', title: 'Liseye Hazırlık için Güçlü ve Zayıf Yönler' },
+            { href: '/tr/blog/cocugunuzun-gizli-guclerini-kesfetmek-yeni-nesil-veli-rehberi', tag: 'Rehber', title: 'Çocuğunuzun Gizli Güçlerini Keşfedin: Veli Rehberi' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
   'how-to-find-internship-as-student': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
@@ -4705,6 +4808,105 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
             { href: '/tr/blog/oecd-ergen-is-deneyimi-kariyer-sonuclari', tag: 'Araştırma', title: 'OECD Araştırması: Erken Yaşta İş Deneyiminin Kariyer Üzerindeki Gücü' },
             { href: '/tr/blog/yapay-zekanin-alamayacagi-65-meslek', tag: 'Rehber', title: 'Yapay Zekanın Alamayacağı 65 Meslek' },
             { href: '/tr/blog/oecd-ergen-yari-zamanli-calisma-faydalari', tag: 'Rehber', title: 'Gençler İçin Yarı Zamanlı İş: OECD Destekli Faydalar' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'summer-activities-ambitious-children': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Haziran gelir ve her hırslı ebeveynin yüzleştiği soru: yazı nasıl verimli tutarsınız ama aynı zamanda bir işkenceye dönüştürmezsiniz? Araştırmalar açık — yapılandırılmamış yazlar başarı uçurumunu derinleştirir. Ama yanlış yapılandırılmış bir yaz (sonsuz özel dersler) içsel motivasyonu yok eder. Cevap ikisinin ortasında bir yerde: amaca yönelik, çeşitli ve çocuğun gerçek güçlü yönlerine uygun.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bunu doğru yapan ebeveynlerin ortak bir özelliği var: varsayımlarla değil, verilerle başlıyorlar. Tek bir program rezerve etmeden önce çocuklarının en güçlü alanının sözel, sayısal mı yoksa uzamsal mı olduğunu biliyorlar. Bu bilgi her şeyi belirliyor — hangi aktivitelerin çocuğu gerçekten zorlayacağını, hangilerinin üniversitelerin tanıyacağı kimlik bilgileri inşa edeceğini ve hangilerinin sadece zamanı dolduracağını.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bir Yaz Aktivitesini Gerçekten Değerli Kılan Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Akademik açıdan hırslı bir çocuk için gerçekten değerli bir yaz aktivitesi üç şeyden birini inşa eder: dersler arasında aktarılan bilişsel bir beceri (akıl yürütme, problem çözme, çalışma belleği), gelecekteki okullara veya işverenlere yeteneği işaret eden doğrulanabilir bir kimlik bilgisi ya da çocuğun gerçekten merak ettiği bir alanda alan bilgisi. En iyi aktiviteler üçünü birden yapar.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Beceri geliştirme:</strong> yalnızca bilgi birikimi değil, akıl yürütmeyi geliştiren aktiviteler. Tarih gerçeklerini ezberleyen bir çocuk, tarihsel nedensellik hakkında bir argüman kuran ve savunan çocukla aynı bilişsel kapasiteyi geliştirmiyor.
+          </Bullet>
+          <Bullet>
+            <strong>Kimlik bilgisi oluşturma:</strong> çocuğun resmi bir geçmişi olmadan kabul ekiplerine ve işverenlere yeteneği ileten doğrulanabilir çıktılar (değerlendirme raporları, staj referansları, yarışma dereceleri).
+          </Bullet>
+          <Bullet>
+            <strong>Keşif:</strong> bir okul rotasına bağlanmadan önce gerçek dünya sektörlerine maruz kalma. Bir teknoloji şirketinde iki hafta geçirmiş bir çocuğun STEM dersleriyle ilişkisi, bunları yalnızca sınıfta gören çocuktan temelden farklıdır.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Kademe: En Yüksek Akademik Yatırım Getirisine Sahip Aktiviteler</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Staj veya iş deneyimi (14 yaş ve üstü):</strong> 47 boylamsal çalışmayı kapsayan OECD araştırması, 16 yaşına kadar yapılandırılmış iş deneyimi olan öğrencilerin yetişkinlikte yüzde 5–10 daha fazla kazandığını ve ölçülebilir biçimde daha iyi istihdam sonuçlarına sahip olduğunu göstermektedir. Yaz için daha da önemlisi: okul öğretemeyeceği yürütme işlevi, belirsizlik toleransı ve profesyonel iletişim becerilerini geliştirir. <Link href="/tr/blog/ogrenciyken-staj-bulmanin-yeni-nesil-yolu" className="text-indigo-600 hover:underline">Eduentry&apos;nin staj hazırlık değerlendirmesi</Link> bir staja bağlanmadan önce hangi sektörün çocuğunuzun bilişsel profiline uyduğunu belirler.
+          </Bullet>
+          <Bullet>
+            <strong>Bilişsel temel değerlendirmesi:</strong> Yaz dershanelerine yatırım yapmadan önce alan düzeyinde bir profil edinin. 35 dakika, ücretsiz, uluslararası kıyaslamalı sözel/sayısal/uzamsal yüzdelik puanlar üretir. Hangi alanda boşluk olduğunu ve hangisinin zaten güçlü olduğunu tam olarak belirler — böylece yaz desteği hedefli olur, dağınık değil.
+          </Bullet>
+          <Bullet>
+            <strong>Matematik/mantık zenginleştirmesi (sayısal alan için):</strong> AMC 8/10 hazırlığı, Singapur matematik çalışma kitapları veya rekabetçi matematik kulüpleri. Tekrarlayan müfredat çalışmasından ayırt edin — amaç örüntü tabanlı akıl yürütme geliştirme, ezberleme değil.
+          </Bullet>
+          <Bullet>
+            <strong>Tartışma veya Model BM (sözel alan için):</strong> Standart sınıflarda yeterince zorlanmayan yüksek sözel akıl yürütmeli çocuklar burada gelişir. Yapılandırılmış tartışma, makale yazmaya, üniversite mülakatlarına ve ikna edici iletişime doğrudan aktarılan meta-bilişsel becerileri geliştirir.
+          </Bullet>
+          <Bullet>
+            <strong>STEM projesi veya kodlama (uzamsal/nicel alan için):</strong> Lego Mindstorms, Arduino, MIT Scratch (küçükler için), Python veya Swift (14+). Kilit nokta: proje tabanlı, tutorial tabanlı değil. Henüz çalışmayan bir şey inşa etmek ve hata ayıklamak bilişsel egzersizdir.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Kademe: Değerli Ama Sık Aşırı Satılan Aktiviteler</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Yurt dışı dil kursları:</strong> kristalleşmiş zeka ve kültürel özgüven için değerli, ancak üst düzey öğrencileri ayıran akışkan akıl yürütme becerilerini nadiren geliştirirler. 1. Kademeden bir şeyle birleştirilirse en iyisidir.
+          </Check>
+          <Check>
+            <strong>Akademik yaz okulları (Oxford, Cambridge, ABD programları):</strong> ilham ve ağ oluşturma için mükemmel, ancak pahalı ve bilişsel fayda çoğunlukla motivasyoneldir. Bilişsel taban veya gerçek iş deneyiminin yerini tutmaz. İstisna: gerçek akademik titizliği olan, akran ortamının anlamlı bir meydan okuma sağladığı son derece seçici programlar.
+          </Check>
+          <Check>
+            <strong>Online kurslar (Coursera, Khan Academy, edX):</strong> belirli müfredat boşluklarını doldurmak için mükemmel, akıl yürütme becerilerini geliştirmek için zayıf. Genel bir &ldquo;verimli yaz&rdquo; planı olarak değil, değerlendirmeyle belirlenen belirli bir zayıf alanı ele almak için kullanın.
+          </Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Mükemmel Yazı Nasıl Planlarsınız: 3 Adımlı Çerçeve</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Adım 1 — Çocuğunuzun profilini öğrenin:</strong> Yaz başlamadan ücretsiz bilişsel değerlendirmeyi yapın. Sözel/sayısal/uzamsal yüzdeliklerini bilmek, hangi aktivitelerin onları gerçekten zorlayacağını ve hangilerinin sadece zamanı dolduracağını söyler.
+          </Check>
+          <Check>
+            <strong>Adım 2 — Üç sütunu dengeleyin:</strong> bir kimlik bilgisi oluşturma aktivitesi (14 yaş üstü için değerlendirme + staj, küçükler için yarışma katılımı), güçlü alana uygun bir beceri geliştirme aktivitesi ve basınç içermeyen gerçekten keyifli bir keşif hedefleyin. Üçüncü sütun isteğe bağlı değil — yazı tamamen baskılı hisseden çocuklar Eylül&apos;e enerji dolu değil tükenmiş girer.
+          </Check>
+          <Check>
+            <strong>Adım 3 — Erken rezervasyon yapın:</strong> staj yerleri, yaz okulu yerleri ve rekabetçi programlar hızla dolur. Çocuğunuzun değerlendirme raporunu hazır bulundurun — başvuruları önemli ölçüde güçlendirir.
+          </Check>
+        </ul>
+        <Callout>
+          Ücretsiz 35 dakikalık değerlendirmeyle başlayın — herhangi bir şey rezerve etmeden önce bu yaz hangi alanı geliştireceğinizi öğrenin.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/ogrenciyken-staj-bulmanin-yeni-nesil-yolu', tag: 'Rehber', title: 'Öğrenciyken Staj Bulmanın Yeni Nesil Yolu' },
+            { href: '/tr/blog/oecd-ergen-is-deneyimi-kariyer-sonuclari', tag: 'Araştırma', title: 'OECD Araştırması: Erken Yaşta İş Deneyiminin Kariyer Gücü' },
+            { href: '/tr/blog/cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet', tag: 'Değerlendirme', title: 'Ücretsiz Akademik Test: Güçlü ve Zayıf Yönleri Keşfet' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

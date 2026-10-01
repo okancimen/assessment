@@ -1240,6 +1240,67 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'zeki-cocuk-neden-basarisiz-olur',
+    contentSlug: 'smart-child-bad-grades',
+    title: 'Zeki Çocuk Neden Başarısız Olur? Ebeveyn Rehberi',
+    shortTitle: 'Zeki Çocuk Neden Başarısız Olur?',
+    description:
+      'Çocuğunuz zeki ama notları hayal kırıklığı mı yaratıyor? Okul notları bilişsel yeteneği ölçmez — ve bilimsel bir açıklaması var. Dört bilişsel alan ve gerçek akademik potansiyel hakkında bilmeniz gerekenler.',
+    tldr: 'Zeki çocuklar, bilişsel profilleri ile okulun performansı ölçme biçimi arasındaki uyumsuzluk nedeniyle kötü notlar alır. Okul notları ağırlıklı olarak kristalize zekayı ölçer — ezberlenmiş ve yeniden üretilmiş bilgiyi — oysa pek çok parlak çocuk olağanüstü akıcı zekaya sahiptir: standart testlerin nadiren yakaladığı mantık yürütme, örüntü bulma ve yeni problemleri çözme yeteneği.',
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '9 dk okuma',
+    tags: ['Zeki Çocuk Başarısızlık', 'Çocuk Potansiyeli', 'Bilişsel Değerlendirme', 'Üstün Zekâ', 'Akademik Performans', 'Çalışma Belleği', 'Veli Rehberi', 'Okul Başarısı'],
+    faqs: [
+      {
+        q: 'Zeki çocuk neden kötü notlar alır?',
+        a: 'Zeki çocuklar, bilişsel güçleri okulun performansı ölçme biçimiyle örtüşmediğinde kötü notlar alır. Okul notları esas olarak kristalize zekayı — ezberlenmiş bilgiyi — test eder; oysa pek çok parlak çocuk akıcı zekada öne çıkar: mantık yürütme, örüntü tanıma ve yeni problemleri çözme. Çocuk aynı zamanda çalışma belleği sorunları, sınav kaygısı, sıkılma kaynaklı ilgisizlik veya bilişsel profiliyle müfredat uyumsuzluğu nedeniyle de zorlanıyor olabilir.',
+      },
+      {
+        q: 'Zekâ ile akademik performans arasındaki fark nedir?',
+        a: 'Zekâ, bilişsel yeteneği ifade eder — muhakeme etme, öğrenme ve yeni problemleri çözme kapasitesi. Akademik performans ise bir öğrencinin müfredat içeriğini sınav koşullarında ne ölçüde tekrar edebildiğini ölçer. Çalışma belleği baskı altındaysa, çocuk ilgisizse veya sınav formatı bilişsel güçleriyle eşleşmiyorsa, çok yüksek akıcı zekâya sahip bir çocuk yine de mütevazı notlar üretebilir.',
+      },
+      {
+        q: 'Üstün zekalı bir çocuk okulda zorlanabilir mi?',
+        a: 'Evet. Araştırmalar, akıcı mantık yürütmede üst çeyrekte yer alan öğrencilerin yüzde 12-18\'inin okul notlarında alt yarıda kaldığını tutarlı biçimde göstermektedir. Üstün zekalı başarısızlık iyi belgelenmiş bir olgudur. Nedenler arasında yetersiz uyarıcı müfredatlarda sıkılma ve ilgisizlik, teşhis edilmemiş çalışma belleği sorunları ve iki istisnai profiller yer alır.',
+      },
+      {
+        q: 'Çocuğumun notlarından daha zeki olduğunun işaretleri nelerdir?',
+        a: 'Temel işaretler şunlardır: konuşmada güçlü sözel muhakeme ama zayıf yazılı çıktı; yeni kavramları hızla kavrama ama çok adımlı görevlerde puan kaybetme; okul dışında mükemmel uzamsal veya mantıksal problem çözme (Lego, bulmacalar, kodlama) ama metin ağırlıklı sınavlarda zayıf performans; kafa karışıklığından değil sıkılmadan kaynaklanan ilgisizlik.',
+      },
+      {
+        q: 'Çalışma belleği okul notlarını etkiler mi?',
+        a: 'Evet, önemli ölçüde. Çalışma belleği, bir görev sırasında bilgiyi tutan ve işleyen bilişsel sistemdir. Ortalamanın altında çalışma belleğine sahip çocuklar, her bir adımı anlasalar bile çok adımlı problemlerde sıklıkla puan kaybeder. Çalışma belleği sorunları, başarısız çocuklarda en yaygın teşhis edilmemiş bilişsel profillerden biridir ve zekâdan tamamen bağımsızdır.',
+      },
+      {
+        q: 'Çocuğumun gerçek akademik potansiyelini nasıl öğrenebilirim?',
+        a: 'Ücretsiz bir adaptif bilişsel değerlendirme, sözel muhakeme, sayısal muhakeme, görsel-uzamsal muhakeme ve işlem hızını bağımsız olarak ölçer ve her alan için uluslararası normlara göre kalibre edilmiş yüzdelik dilim skoru üretir. Okul notlarının aksine, çocuğunuzun neyi bildiğini bilişsel kapasitesinden ayırır. Eduentry akademik değerlendirmesi 35 dakika sürer ve herhangi bir hazırlık gerektirmez.',
+      },
+      {
+        q: 'Çocuğum okulda düşük performans gösteriyorsa test yaptırmalı mıyım?',
+        a: 'Çocuğunuzun görünür yeteneği ile notları arasında tutarlı bir uçurum varsa, herhangi bir müdahaleden önce bilişsel değerlendirme verimli bir ilk adımdır. Boşluğun alan spesifik bir zayıflıktan mı, çalışma belleği yükünden mi, müfredat uyumsuzluğundan mı yoksa genel ilgisizlikten mi kaynaklandığını belirler. Varsayım yerine veriyle başlamak zaman ve para tasarrufu sağlar, uyumsuz müdahale riskini azaltır.',
+      },
+      {
+        q: 'Stres ve kaygı zeki bir çocuğun kötü not almasına neden olabilir mi?',
+        a: 'Evet. Sınav kaygısı, sınav sırasında özellikle çalışma belleğini bozar — yani çocuk konuyu iyice biliyor olsa bile baskı altında düşük performans gösterebilir. Yüksek yetenekli çocuklar, aslında bu mekanizmaya daha yatkındır çünkü riskin daha farkındadırlar. Çocuğunuz düşük baskılı koşullarda resmi sınavlardan tutarlı biçimde daha iyi performans gösteriyorsa, sınav kaygısı bilişsel profillemeyle birlikte araştırılmaya değerdir.',
+      },
+      {
+        q: 'Başarısız üstün zekalı çocuklara en çok hangi tür destek yardımcı olur?',
+        a: 'En etkili destek, bir özel ders planı değil, bir bilişsel profille başlar. Boşluğun hangi alanda olduğunu — sözel, sayısal, uzamsal veya çalışma belleği — öğrendikten sonra desteği tam anlamıyla eşleştirebilirsiniz. Alana özgü müdahaleler genel özel dersten tutarlı biçimde daha iyi sonuç verir.',
+      },
+      {
+        q: 'Adaptif bilişsel test, okul sınavından nasıl farklıdır?',
+        a: 'Okul sınavı müfredat bilgisini test eder — öğrencinin öğretilenleri baskı altında ne kadar hatırlayabildiğini. Adaptif bilişsel test, altta yatan muhakeme yeteneğini ölçer — çocuğun daha önce hiç görmediği yeni problemleri çözme kapasitesini. Adaptif format, her sorunun zorluğunu önceki cevaplara göre gerçek zamanlı olarak ayarlar ve not yerine kesin bir yetenek tahmini üretir.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun gerçek bilişsel profilini keşfedin — ücretsiz',
+      body: '6–16 yaş için adaptif değerlendirme. Sözel, sayısal, uzamsal muhakeme ve çalışma belleği uluslararası kıyaslamalı olarak ölçülür — anında rapor, kayıt gerekmez.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr#akademik',
+    },
+  },
+  {
     slug: 'ogrenciyken-staj-bulmanin-yeni-nesil-yolu',
     contentSlug: 'how-to-find-internship-as-student',
     title: 'Öğrenci Olarak Staj Bulma: Adım Adım Rehber',
@@ -1298,6 +1359,67 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Teknoloji, veri, iş yönetimi ve dijital pazarlamadaki hazırlık seviyeni 35 dakikada öğren.',
       label: 'Ücretsiz değerlendirmeyi başlat →',
       href: '/tr/staj',
+    },
+  },
+  {
+    slug: 'yaz-tatili-akademik-cocuk-aktiviteleri',
+    contentSlug: 'summer-activities-ambitious-children',
+    title: 'Akademik Çocuklar için Yaz Tatili Aktiviteleri: 2026 Rehberi',
+    shortTitle: 'Akademik Çocuklar için Yaz Tatili Aktiviteleri',
+    description:
+      '9–16 yaş arası başarılı çocukları için verimli bir yaz planlayan ebeveynlere yönelik araştırmaya dayalı rehber. Stajlar, bilişsel değerlendirmeler, zenginleştirme programları ve çocuğunuzun gerçek güçlü yönlerine göre yaz aktivitelerini eşleştirmek için 3 adımlı çerçeve.',
+    tldr: 'Yapılandırılmamış yazlar başarı uçurumunu derinleştirir — ancak yanlış yapılandırılmış bir yaz içsel motivasyonu öldürür. Cevap, amaca yönelik, çeşitli ve çocuğun bilişsel profiline uygun olmaktır. Herhangi bir şey rezerve etmeden önce hangi alanı geliştireceğinizi öğrenmek için ücretsiz 35 dakikalık değerlendirmeyle başlayın.',
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '10 dk okuma',
+    tags: ['Yaz Aktiviteleri', 'Üstün Zekâ Yaz', 'Yaz Stajı', 'Akademik Zenginleştirme', 'Lise Öğrencisi', 'Çocuk Gelişimi', 'Yaz Planlaması', 'Bilişsel Değerlendirme'],
+    faqs: [
+      {
+        q: 'Akademik açıdan üstün yetenekli çocuklar yaz tatilinde ne yapmalıdır?',
+        a: 'Akademik açıdan üstün yetenekli çocuklar en çok şu kombinasyondan faydalanır: kimlik bilgisi oluşturma (bilişsel değerlendirme, 14 yaş üstü için staj, yarışmaya katılım), en güçlü alana uygun beceri geliştirme ve baskı içermeyen bir keşif aktivitesi. Kilit nokta, aktiviteyi çocuğun gerçek bilişsel profiline eşleştirmektir.',
+      },
+      {
+        q: 'Yaz stajları lise öğrencileri için uygun mudur?',
+        a: 'Evet. 47 boylamsal çalışmayı kapsayan OECD araştırması, 16 yaşına kadar yapılandırılmış iş deneyimi olan öğrencilerin ölçülebilir biçimde daha iyi kariyer sonuçlarına sahip olduğunu göstermektedir. Pek çok şirket 14–18 yaş arası öğrenciler için yapılandırılmış staj imkânları sunar. Staj hazırlık değerlendirmesi, bir staj yerine bağlanmadan önce hangi sektörün uygun olduğunu belirlemeye yardımcı olur.',
+      },
+      {
+        q: 'Hangi yaz aktiviteleri üniversiteye kabul sürecine katkı sağlar?',
+        a: 'Üniversite kabul komiteleri üç şey arar: doğrulanmış yetenek, bir alana gerçek ilgi ve inisiyatif kanıtı. En çok yardımcı olan yaz aktiviteleri şunlardır: bilişsel temel değerlendirmesi (yüzdelik rapor üretir), yapılandırılmış staj veya iş deneyimi (referans mektubu üretir) ve konuya özgü yarışma veya zenginleştirme programı. Tek başına online kurslar daha az ağırlık taşır.',
+      },
+      {
+        q: 'Genç çocuğum için yaz stajını nasıl bulabilirim?',
+        a: "Çocuğunuzun güçlü yönleriyle hangi sektörün eşleştiğini belirlemek için önce bir staj hazırlık değerlendirmesi yapın. Ardından KOBİ'lere doğrudan başvurun (büyük şirketlere kıyasla genç öğrencileri almaya daha açıktırlar), okulunuzun kariyer birimiyle iletişime geçin ve sektöre özgü dizinlere bakın. Başvuruda değerlendirme raporu bulunması, boş bir CV'ye kıyasla başvuruyu önemli ölçüde güçlendirir.",
+      },
+      {
+        q: 'Yaz programı mı yoksa staj mı daha iyidir?',
+        a: '14 yaş ve üzerindeki öğrenciler için yapılandırılmış bir staj, genellikle yaz akademik programından daha fazla bilişsel ve kimlik bilgisi değeri sunar; çünkü akademik programların taklit edemeyeceği yürütme işlevi, belirsizlik toleransı ve profesyonel iletişim becerilerini geliştirir. 14 yaş altı öğrenciler için yapılandırılmış zenginleştirme (bilişsel değerlendirme + yarışma + proje) daha iyi bir çerçevedir.',
+      },
+      {
+        q: 'Yaz tatilinde hangi bilişsel beceriler geliştirilebilir?',
+        a: 'Hedefli yaz yatırımına en duyarlı üç bilişsel alan şunlardır: sözel akıl yürütme (tartışma, yapılandırılmış yazma, Model BM ve üst düzey okuma yoluyla), sayısal muhakeme (rekabetçi matematik, örüntü tabanlı problem çözme ve veri projeleri yoluyla) ve görsel-uzamsal akıl yürütme (mühendislik projeleri, kodlama, tasarım ve uzamsal bulmacalar yoluyla). Bilişsel temel değerlendirmesi hangi alanın önceliklendirileceğini belirler.',
+      },
+      {
+        q: "Çocuğumun güçlü yönlerine hangi yaz aktivitesinin uygun olduğunu nasıl bilirim?",
+        a: "Herhangi bir şey rezerve etmeden önce ücretsiz 35 dakikalık bilişsel değerlendirmeyi yapın. Uluslararası kıyaslamalı sözel, sayısal ve uzamsal yüzdelik puanlar üretir. Güçlü sözel profilli bir çocuk tartışma, yazma ve Model BM'de başarılı olur. Sayısal-uzamsal profil kodlama, mühendislik projeleri ve rekabetçi matematiğe yönlendirir.",
+      },
+      {
+        q: 'Yaz aktiviteleri takip eden yılda okul başarısını artırır mı?',
+        a: "Araştırmalar, bir çocuğun gelişim düzeyine uygun hedefli yaz zenginleştirmesinin takip eden akademik yılda, özellikle ele alınan alanlarda performansı artırdığını tutarlı biçimde göstermektedir. Anahtar kelime hedeflilidir: genel dershaneler zayıf etki gösterirken, bilişsel bir boşluğa eşleştirilmiş alana özgü zenginleştirme güçlü etki göstermektedir.",
+      },
+      {
+        q: 'Bir çocuk kaç yaşında iş deneyimi stajına başlayabilir?',
+        a: 'Resmi iş deneyimi için asgari yaş genellikle 13–14\'tür; yapılandırılmış stajlar en yaygın olarak 14 yaşından itibaren gerçekleşir. Pek çok şirket ortaöğretim stajı için öğrencilerin en az 14 yaşında olmasını gerektirir. Staj hazırlık değerlendirmesi özellikle bu 14+ yaş grubu için tasarlanmıştır.',
+      },
+      {
+        q: "Yaz değerlendirmesi Eylül'deki okul planlamasına nasıl yardımcı olur?",
+        a: "Yazın yapılan bir bilişsel değerlendirme, tam olarak hangi alanda boşluk olduğunu ve hangisinin zaten güçlü olduğunu tanımlayan sözel, sayısal ve uzamsal yüzdelik bir profil üretir. Bu, hangi derslere özel ders yatırımı yapılacağını (boşluk alanı), hangi okul aktivitelerinin önceliklendirileceğini (güçlü alan) söyler ve Eylül veli toplantısında öğretmenlerle paylaşabileceğiniz nesnel veriler sunar.",
+      },
+    ],
+    cta: {
+      heading: 'Yaz başlamadan çocuğunuzun güçlü yönlerini keşfedin — ücretsiz',
+      body: '6–16 yaş için adaptif değerlendirme. Sözel, sayısal ve uzamsal akıl yürütme uluslararası kıyaslamalı olarak ölçülür — anında rapor, kayıt gerekmez.',
+      label: 'Ücretsiz testi başlat',
+      href: '/tr#akademik',
     },
   },
 ]

@@ -3236,6 +3236,208 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'smart-child-bad-grades': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Sabes que tu hijo es inteligente. Lo ves en cómo razona un problema durante la cena, en las preguntas que hacen que los adultos se queden sin palabras, en cómo capta nuevas ideas más rápido que sus compañeros. Pero el boletín de notas sigue diciendo algo diferente — y cada reunión de padres termina con la misma frase: &ldquo;podría esforzarse más.&rdquo;
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Esta desconexión entre la capacidad evidente y las notas registradas es una de las situaciones más comunes y menos comprendidas en educación. No es señal de que estés imaginando cosas. Tiene una explicación científica — y entenderla es el primer paso para hacer algo útil al respecto.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Por Qué los Niños Inteligentes Sacan Malas Notas</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los niños inteligentes sacan malas notas cuando existe una desconexión entre su perfil cognitivo y cómo la escuela mide el rendimiento. Las notas escolares miden principalmente la inteligencia cristalizada — lo que se ha memorizado y reproducido — mientras que muchos niños brillantes tienen una inteligencia fluida excepcional: la capacidad de razonar, detectar patrones y resolver problemas nuevos que los exámenes estándar raramente capturan.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Desajuste curricular:</strong> Los pensadores espaciales y lógicos suelen ser penalizados por exámenes con mucho texto que recompensan el recuerdo verbal. Un niño que puede rotar mentalmente un objeto 3D o resolver un puzle de patrones en segundos puede perder puntos en una pregunta de redacción que requiere argumentación escrita extensa — no porque no comprenda, sino porque el formato de salida no se adapta a su arquitectura cognitiva.
+          </Bullet>
+          <Bullet>
+            <strong>Carga de memoria de trabajo:</strong> Un niño puede entender perfectamente cada paso de un problema de varios pasos pero aun así perder puntos si su memoria de trabajo no puede mantener todos los pasos intermedios simultáneamente. Esto no es pereza ni descuido — es un cuello de botella cognitivo específico que parece invisible desde fuera y que se atribuye rutinariamente a escaso esfuerzo.
+          </Bullet>
+          <Bullet>
+            <strong>Aburrimiento y desconexión:</strong> Los niños superdotados colocados en entornos poco estimulantes a menudo se desconectan — no dramáticamente, sino en silencio. Dejan de invertir todo su esfuerzo en trabajo que encuentran poco desafiante, y las notas resultantes no guardan relación con su capacidad real.
+          </Bullet>
+          <Bullet>
+            <strong>Ansiedad ante los exámenes:</strong> Los niños de alta capacidad a veces son más vulnerables a la presión de los exámenes, no menos. Su mayor conciencia metacognitiva los hace acutamente conscientes de lo que está en juego. Cuando la ansiedad degrada la memoria de trabajo durante un examen — que es el mecanismo neurológico que subyace a la ansiedad ante los exámenes — el resultado es un techo de rendimiento que no tiene nada que ver con el conocimiento.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Inteligencia Fluida vs Cristalizada: La Distinción Clave</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El modelo Cattell-Horn-Carroll (CHC) — el marco más sólido empíricamente en ciencias cognitivas — distingue entre dos tipos fundamentalmente diferentes de inteligencia. La <strong>inteligencia cristalizada (Gc)</strong> es conocimiento acumulado: vocabulario, hechos, procedimientos — el contenido que se aprende en la escuela y se reproduce en los exámenes. La <strong>inteligencia fluida (Gf)</strong> es la capacidad de razonamiento: la habilidad para identificar patrones, formar cadenas lógicas y resolver problemas nunca antes encontrados.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los exámenes escolares, por diseño, evalúan Gc casi exclusivamente. La Gf de un niño — su motor de razonamiento puro — es en gran medida invisible para el sistema de calificaciones. Los datos de PISA de la OCDE muestran una brecha significativa entre el rendimiento escolar y la capacidad cognitiva medida en el 15–20% de los estudiantes en países desarrollados. Más concretamente, los estudios muestran que los estudiantes en el cuartil superior del razonamiento fluido pero en la mitad inferior de las notas escolares representan el 12–18% de todos los estudiantes.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Los 4 Dominios Cognitivos que Predicen el Verdadero Techo Académico</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Una evaluación cognitiva de cuatro dominios separa los componentes de la capacidad que las notas escolares colapsan en una sola calificación. Cada dominio predice una dimensión diferente del rendimiento académico y profesional:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Razonamiento Verbal:</strong> Comprensión del lenguaje, analogías e inferencia — la capacidad de extraer significado, construir argumentos y navegar textos complejos. Predice el rendimiento en humanidades, idiomas, derecho y cualquier dominio que requiera comunicación escrita u oral extensa.
+          </Bullet>
+          <Bullet>
+            <strong>Razonamiento Numérico:</strong> Reconocimiento de patrones, lógica matemática y resolución cuantitativa de problemas — independiente del conocimiento curricular. Un niño con razonamiento numérico fuerte encontrará su camino en un problema de matemáticas nuevo incluso sin haber sido enseñado la técnica específica, porque trabaja desde principios en lugar de memoria. Predice el rendimiento en STEM más allá de lo que revelan las notas.
+          </Bullet>
+          <Bullet>
+            <strong>Razonamiento Visual-Espacial:</strong> Análisis de formas, relaciones tridimensionales y rotación mental — posiblemente el dominio más subestimado en el sistema escolar. El razonamiento visoespacial fuerte predice el rendimiento en ingeniería, arquitectura, diseño, cirugía y muchos roles tecnológicos. Un niño con un perfil espacial excepcional puede rendir modestamente en la escuela pero ser genuinamente sobresaliente en la aplicación real de su capacidad más fuerte.
+          </Bullet>
+          <Bullet>
+            <strong>Velocidad de Procesamiento y Memoria de Trabajo:</strong> La rapidez y precisión con que se procesa y retiene la información durante una tarea. La memoria de trabajo baja es el perfil cognitivo no diagnosticado más común en niños con bajo rendimiento. Crea una brecha entre comprensión y producción — el niño capta el concepto pero no puede mantener la secuencia necesaria para demostrarlo en condiciones de examen.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué Hacer Si Tu Hijo Tiene Bajo Rendimiento</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Obtén primero una línea base cognitiva:</strong> Antes de reservar tutores, antes de cambiar de escuela, antes de cualquier intervención — entiende qué dominio tiene la brecha. Reforzar el razonamiento numérico cuando el problema real es la memoria de trabajo es caro e ineficaz. Una evaluación adaptativa de 35 minutos produce el perfil de dominio necesario para actuar desde la evidencia en lugar de la suposición.
+          </Check>
+          <Check>
+            <strong>Comparte los datos con el profesor:</strong> &ldquo;Percentil 93 en razonamiento espacial&rdquo; es una conversación completamente diferente a &ldquo;parece inteligente pero distraído.&rdquo; Un informe cognitivo da a los profesores información accionable — cambia cómo estructuran las tareas, cómo ubican al niño, qué ajustes consideran.
+          </Check>
+          <Check>
+            <strong>Ajusta el apoyo al dominio:</strong> La debilidad numérica responde a juegos de matemáticas basados en patrones y práctica estructurada de resolución de problemas — no más repetición de los mismos procedimientos que no están funcionando. La debilidad verbal responde de manera diferente a la debilidad espacial. La tutoría genérica que no apunta al dominio específico es el desperdicio más común del gasto educativo.
+          </Check>
+          <Check>
+            <strong>Descarta la memoria de trabajo como cuello de botella:</strong> Muchos niños descritos como &ldquo;perezosos,&rdquo; &ldquo;descuidados&rdquo; o &ldquo;que no se esfuerzan&rdquo; tienen desafíos de memoria de trabajo. La señal es el rendimiento inconsistente: pueden hacer un tipo de problema en la práctica pero no bajo condiciones de examen, o entienden un concepto en clase pero no pueden reproducirlo en papel.
+          </Check>
+          <Check>
+            <strong>Considera si el entorno escolar es el adecuado:</strong> Un niño con un perfil verbal y espacial extremo — muy alto en ambos dominios de razonamiento pero promedio en conocimiento cristalizado — puede estar sistemáticamente en desventaja en un currículo que recompensa el recuerdo sobre el razonamiento. Conocer el perfil de tu hijo te permite tomar una decisión informada sobre enriquecimiento o entornos alternativos.
+          </Check>
+        </ul>
+        <Callout>
+          <strong>Empieza con una evaluación adaptativa gratuita de 35 minutos</strong> — produce un perfil cognitivo de cuatro dominios calibrado según normas internacionales. No se necesita preparación previa. El informe muestra razonamiento verbal, razonamiento numérico, razonamiento visual-espacial y velocidad de procesamiento de forma independiente — dándote una imagen completa de dónde está tu hijo, no solo de lo que ha sido enseñado.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guías Relacionadas</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/es/blog/descubrir-fortalezas-ocultas-hijo-guia-moderna-padres', tag: 'Evaluación', title: 'Prueba Académica Gratuita: Descubre las Fortalezas y Debilidades de Tu Hijo' },
+            { href: '/es/blog/fortalezas-debilidades-hijo-preparacion-secundaria', tag: 'Guía', title: 'Entendiendo las Fortalezas de Tu Hijo Antes de la Secundaria' },
+            { href: '/es/blog/descubrir-fortalezas-ocultas-nino-en-edad-escolar', tag: 'Guía', title: 'Descubre las Fortalezas Ocultas de Tu Hijo en Edad Escolar' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'summer-activities-ambitious-children': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Llega junio y la pregunta que todo padre ambicioso enfrenta: ¿cómo mantienes el verano productivo sin convertirlo en una tortura? La investigación es clara — los veranos sin estructura amplían la brecha de rendimiento. Pero el verano estructurado equivocado (tutorías interminables) mata la motivación intrínseca. La respuesta está en el punto medio: intencionado, variado y adaptado a las fortalezas reales del niño.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Los padres que lo hacen bien comparten una cosa en común: comienzan con datos, no con suposiciones. Saben si el dominio más fuerte de su hijo es verbal, numérico o espacial antes de reservar ningún programa. Ese conocimiento lo determina todo: qué actividades realmente desafían al niño, cuáles construyen credenciales que las universidades reconocen y cuáles simplemente llenan el tiempo.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué Hace que una Actividad de Verano Sea Genuinamente Valiosa?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Una actividad de verano genuinamente valiosa para un niño académicamente ambicioso construye una de tres cosas: una habilidad cognitiva que se transfiere entre materias (razonamiento, resolución de problemas, memoria de trabajo), una credencial verificable que señala aptitud a futuras escuelas o empleadores, o conocimiento de dominio en un campo por el que el niño siente genuina curiosidad. Las mejores actividades hacen las tres cosas.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Desarrollo de habilidades:</strong> actividades que desarrollan el razonamiento, no solo la acumulación de conocimiento. Un niño que memoriza hechos históricos no está desarrollando la misma capacidad cognitiva que uno que construye y defiende un argumento sobre causalidad histórica.
+          </Bullet>
+          <Bullet>
+            <strong>Construcción de credenciales:</strong> resultados verificables (informes de evaluación, referencias de prácticas, clasificaciones en competiciones) que comunican aptitud antes de que el niño tenga un historial formal.
+          </Bullet>
+          <Bullet>
+            <strong>Exploración:</strong> exposición a sectores del mundo real antes de comprometerse con una trayectoria escolar. Un niño que ha pasado dos semanas en una empresa de tecnología tiene una relación fundamentalmente diferente con las materias STEM que uno que solo las ha encontrado en un aula.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Nivel 1: Actividades con el Mayor Retorno Académico</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Prácticas o experiencia laboral (14+ años):</strong> La investigación de la OCDE en 47 estudios longitudinales muestra que los estudiantes con experiencia laboral estructurada antes de los 16 años ganan entre un 5 y un 10% más de adultos y tienen resultados de empleo mediblemente mejores. Más importante para el verano: desarrolla función ejecutiva, tolerancia a la ambigüedad y comunicación profesional — habilidades que la escuela no puede enseñar. <Link href="/es/blog/como-encontrar-practicas-siendo-estudiante" className="text-indigo-600 hover:underline">La evaluación de preparación para prácticas de Eduentry</Link> identifica qué sector encaja con el perfil cognitivo de tu hijo antes de comprometerse.
+          </Bullet>
+          <Bullet>
+            <strong>Evaluación cognitiva de referencia:</strong> Antes de invertir en tutorías de verano, obtén un perfil a nivel de dominio. 35 minutos, gratuito, produce puntuaciones percentiles verbales/numéricas/espaciales comparadas internacionalmente. Identifica exactamente qué dominio tiene una brecha versus cuál ya es fuerte — para que el apoyo de verano sea dirigido, no disperso.
+          </Bullet>
+          <Bullet>
+            <strong>Enriquecimiento matemático/lógico (para el dominio numérico):</strong> Preparación AMC 8/10, libros de trabajo de matemáticas de Singapur, o clubes de matemáticas competitivas. Distinguir del trabajo curricular repetitivo — el objetivo es el desarrollo del razonamiento basado en patrones, no la memorización.
+          </Bullet>
+          <Bullet>
+            <strong>Debate o Modelo ONU (para el dominio verbal):</strong> Los niños con alto razonamiento verbal que no son suficientemente desafiados en las clases estándar prosperan aquí. La argumentación estructurada desarrolla las habilidades metacognitivas que se transfieren directamente a la escritura de ensayos, entrevistas universitarias y comunicación persuasiva.
+          </Bullet>
+          <Bullet>
+            <strong>Proyecto STEM o programación (para el dominio espacial/cuantitativo):</strong> Lego Mindstorms, Arduino, MIT Scratch (menores), Python o Swift (14+). La clave: basado en proyectos, no en tutoriales. Construir algo que aún no funciona y depurarlo es el ejercicio cognitivo.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Nivel 2: Valiosas Pero a Menudo Sobrevaloradas</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Cursos de idiomas en el extranjero:</strong> valiosos para la inteligencia cristalizada y la confianza cultural, pero rara vez construyen las habilidades de razonamiento fluido que diferencian a los mejores estudiantes. Mejor si se combinan con algo del Nivel 1.
+          </Check>
+          <Check>
+            <strong>Escuelas de verano académicas (Oxford, Cambridge, programas de EE.UU.):</strong> excelentes para la inspiración y las conexiones, pero caras y el beneficio cognitivo es principalmente motivacional. No sustituyen una evaluación cognitiva de referencia ni una experiencia laboral real.
+          </Check>
+          <Check>
+            <strong>Cursos en línea (Coursera, Khan Academy, edX):</strong> excelentes para llenar lagunas curriculares específicas, pobres para desarrollar habilidades de razonamiento. Úsalos para abordar un dominio débil específico identificado por evaluación, no como un plan general de &ldquo;verano productivo&rdquo;.
+          </Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo Planificar el Verano Perfecto: Un Marco de 3 Pasos</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Paso 1 — Conoce el perfil de tu hijo:</strong> Haz la evaluación cognitiva gratuita antes de que empiece el verano. Conocer su percentil verbal/numérico/espacial te dice qué actividades lo desafiarán versus cuáles solo llenan el tiempo.
+          </Check>
+          <Check>
+            <strong>Paso 2 — Equilibra los tres pilares:</strong> apunta a una actividad de construcción de credenciales (evaluación + prácticas para mayores de 14, participación en competición para menores), una actividad de desarrollo de habilidades adaptada a su dominio más fuerte, y una exploración genuinamente agradable que no esté cargada de presión.
+          </Check>
+          <Check>
+            <strong>Paso 3 — Reserva con anticipación:</strong> los lugares de prácticas, los puestos en escuelas de verano y los programas competitivos se llenan rápido. Ten el informe de evaluación de tu hijo listo — fortalece significativamente las solicitudes.
+          </Check>
+        </ul>
+        <Callout>
+          Comienza con la evaluación gratuita de 35 minutos — sabe qué dominio construir este verano antes de reservar cualquier cosa.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guías Relacionadas</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/es/blog/como-encontrar-practicas-siendo-estudiante', tag: 'Guía', title: 'Cómo Encontrar Prácticas Siendo Estudiante' },
+            { href: '/es/blog/investigacion-ocde-experiencia-laboral-adolescentes-resultados-carrera', tag: 'Investigación', title: 'OCDE: Experiencia Laboral en Adolescentes y Resultados Profesionales' },
+            { href: '/es/blog/descubrir-fortalezas-hijo-test-academico-gratis', tag: 'Evaluación', title: 'Prueba Académica Gratuita: Descubre las Fortalezas de Tu Hijo' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

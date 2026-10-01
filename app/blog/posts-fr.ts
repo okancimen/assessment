@@ -1083,6 +1083,67 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'enfant-intelligent-mauvaises-notes',
+    contentSlug: 'smart-child-bad-grades',
+    title: 'Mon enfant est intelligent mais a de mauvaises notes',
+    shortTitle: 'Enfant Intelligent, Mauvaises Notes : Que Faire ?',
+    description:
+      'Votre enfant est clairement intelligent, mais son bulletin scolaire ne le reflète pas. Voici pourquoi les notes ne mesurent pas la capacité cognitive — et comment découvrir le vrai plafond académique de votre enfant dans les quatre domaines cognitifs.',
+    tldr: 'Les enfants intelligents ont de mauvaises notes quand il y a un décalage entre leur profil cognitif et la façon dont l\'école mesure la performance. Les notes scolaires mesurent principalement l\'intelligence cristallisée — les connaissances mémorisées et restituées — tandis que beaucoup d\'enfants brillants ont une intelligence fluide exceptionnelle : la capacité de raisonner, détecter des patterns et résoudre des problèmes nouveaux que les examens standardisés capturent rarement.',
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '9 min de lecture',
+    tags: ['Enfant Intelligent Mauvaises Notes', 'Sous-Performance Scolaire', 'Évaluation Cognitive', 'Surdoué Sous-Performant', 'Potentiel Enfant', 'Réussite Scolaire', 'Mémoire de Travail', 'Guide Parents'],
+    faqs: [
+      {
+        q: 'Pourquoi mon enfant intelligent a-t-il de mauvaises notes ?',
+        a: 'Les enfants intelligents ont de mauvaises notes quand leurs forces cognitives ne s\'alignent pas avec la façon dont l\'école mesure la performance. Les notes scolaires évaluent principalement l\'intelligence cristallisée — les connaissances mémorisées — tandis que beaucoup d\'enfants brillants excellent en intelligence fluide : raisonnement, reconnaissance de patterns et résolution de problèmes nouveaux. Un enfant peut également avoir des difficultés dues à des problèmes de mémoire de travail, à l\'anxiété aux examens, à un désengagement par ennui ou à une inadéquation entre le programme et son profil cognitif.',
+      },
+      {
+        q: 'Quelle est la différence entre intelligence et performance scolaire ?',
+        a: 'L\'intelligence désigne la capacité cognitive — la capacité à raisonner, apprendre et résoudre de nouveaux problèmes. La performance scolaire mesure dans quelle mesure un élève a reproduit le contenu du programme sous conditions d\'examen. Un enfant peut avoir une intelligence fluide très élevée tout en produisant des notes modestes si sa mémoire de travail est sous pression, s\'il est désengagé ou si le format d\'examen ne correspond pas à ses forces cognitives.',
+      },
+      {
+        q: 'Un enfant surdoué peut-il avoir des difficultés à l\'école ?',
+        a: 'Oui. Les recherches montrent systématiquement que 12 à 18% des élèves dans le quartile supérieur du raisonnement fluide obtiennent des scores dans la moitié inférieure des notes scolaires. La sous-performance chez les enfants surdoués est un phénomène bien documenté. Les causes incluent l\'ennui et le désengagement dans des programmes peu stimulants, des défis de mémoire de travail non diagnostiqués et des profils doublement exceptionnels.',
+      },
+      {
+        q: 'Quels sont les signes que mon enfant est plus intelligent que ses notes ne le montrent ?',
+        a: 'Les signes clés incluent : un raisonnement verbal fort en conversation mais une production écrite faible ; une compréhension rapide de nouveaux concepts mais une perte de points sur des tâches à plusieurs étapes ; d\'excellentes capacités de résolution de problèmes spatiaux ou logiques hors de l\'école (Lego, puzzles, codage) mais de mauvaises performances aux examens à forte charge textuelle ; un désengagement dû à l\'ennui plutôt qu\'à la confusion.',
+      },
+      {
+        q: 'La mémoire de travail affecte-t-elle les notes scolaires ?',
+        a: 'Oui, significativement. La mémoire de travail est le système cognitif qui retient et manipule les informations pendant une tâche. Les enfants avec une mémoire de travail inférieure à la moyenne perdent fréquemment des points sur des problèmes à plusieurs étapes même quand ils comprennent chaque étape individuelle. Les défis de mémoire de travail font partie des profils cognitifs non diagnostiqués les plus courants chez les enfants sous-performants — et ils sont entièrement indépendants de l\'intelligence.',
+      },
+      {
+        q: 'Comment puis-je connaître le vrai potentiel académique de mon enfant ?',
+        a: 'Une évaluation cognitive adaptative gratuite mesure le raisonnement verbal, numérique, visuo-spatial et la vitesse de traitement de façon indépendante — produisant un score percentile pour chaque domaine calibré selon des normes internationales. Contrairement aux notes scolaires, cela sépare ce que votre enfant sait de ce dont il est cognitivement capable. L\'évaluation académique Eduentry dure 35 minutes et ne nécessite aucune préparation préalable.',
+      },
+      {
+        q: 'Devrait-on faire tester mon enfant s\'il sous-performe à l\'école ?',
+        a: 'S\'il existe un écart constant entre la capacité apparente de votre enfant et ses notes, une évaluation cognitive est une première étape productive avant toute intervention. Elle identifie si l\'écart est dû à une faiblesse spécifique d\'un domaine, à une charge de mémoire de travail, à une inadéquation avec le programme ou à un désengagement général. Commencer avec des données plutôt que des hypothèses économise du temps, de l\'argent et réduit le risque d\'un soutien scolaire mal orienté.',
+      },
+      {
+        q: 'Le stress et l\'anxiété peuvent-ils faire qu\'un enfant intelligent ait de mauvaises notes ?',
+        a: 'Oui. L\'anxiété aux examens nuit spécifiquement à la mémoire de travail pendant un examen — ce qui signifie qu\'un enfant peut très bien connaître la matière mais sous-performer sous pression. Les enfants à haut potentiel sont en réalité plus susceptibles à ce mécanisme car ils sont plus conscients des enjeux.',
+      },
+      {
+        q: 'Quel type de soutien aide le plus les enfants surdoués sous-performants ?',
+        a: 'Le soutien le plus efficace commence par un profil cognitif, pas par un plan de tutorat. Une fois que vous savez quel domaine présente l\'écart — verbal, numérique, spatial ou mémoire de travail — vous pouvez cibler le soutien précisément. Les interventions spécifiques au domaine surpassent systématiquement le tutorat général. Si la mémoire de travail est le goulot d\'étranglement, les approches basées sur des stratégies surpassent la répétition.',
+      },
+      {
+        q: 'En quoi un test cognitif adaptatif diffère-t-il d\'un examen scolaire ?',
+        a: 'Un examen scolaire teste les connaissances du programme — ce qu\'un élève a appris et peut rappeler sous pression. Un test cognitif adaptatif mesure la capacité de raisonnement sous-jacente — la capacité à résoudre des problèmes nouveaux que l\'enfant n\'a jamais vus. Le format adaptatif ajuste la difficulté de chaque question en temps réel en fonction des réponses précédentes, produisant une estimation précise de la capacité plutôt qu\'une note.',
+      },
+    ],
+    cta: {
+      heading: 'Découvrez le vrai profil cognitif de votre enfant — gratuitement',
+      body: 'Évaluation adaptative pour les 6–16 ans. Raisonnement verbal, numérique, spatial et mémoire de travail mesurés selon des références internationales — rapport instantané, sans inscription.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: '/fr#academique',
+    },
+  },
+  {
     slug: 'comment-trouver-un-stage-etudiant',
     contentSlug: 'how-to-find-internship-as-student',
     title: 'Comment Trouver un Stage Étudiant : Le Guide Complet',
@@ -1141,6 +1202,67 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       body: 'Évaluation adaptative gratuite pour les étudiants de 14+. Obtenez votre profil de talent en technologie, données, entreprise et marketing digital en 35 minutes.',
       label: 'Commencer l\'évaluation gratuite →',
       href: '/fr/stage',
+    },
+  },
+  {
+    slug: 'activites-ete-enfants-academiquement-ambitieux',
+    contentSlug: 'summer-activities-ambitious-children',
+    title: "Activités d'Été pour Enfants Académiquement Ambitieux : Guide 2026",
+    shortTitle: "Activités d'Été pour Enfants Académiquement Ambitieux",
+    description:
+      "Guide basé sur la recherche pour les parents qui planifient un été productif pour leurs enfants performants de 9 à 16 ans. Couvre les stages, les évaluations cognitives, les programmes d'enrichissement et un cadre en 3 étapes pour adapter les activités d'été aux vraies forces de votre enfant.",
+    tldr: "Les étés non structurés creusent l'écart de réussite — mais le mauvais été structuré tue la motivation intrinsèque. La réponse est intentionnelle, variée et adaptée au profil cognitif de l'enfant. Commencez par une évaluation gratuite de 35 minutes pour savoir quel domaine développer avant de réserver quoi que ce soit.",
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '10 min de lecture',
+    tags: ["Activités d'Été", 'Enfant Surdoué Été', "Stage d'Été", 'Enrichissement Académique', 'Lycéen', 'Développement Enfant', "Planification d'Été", 'Évaluation Cognitive'],
+    faqs: [
+      {
+        q: "Que devraient faire les enfants académiquement surdoués pendant l'été ?",
+        a: "Les enfants académiquement surdoués bénéficient le plus d'une combinaison de construction de crédentiels (évaluation cognitive, stage pour les 14+, participation à des concours), de développement des compétences adapté à leur domaine le plus fort, et d'une exploration genuinement agréable sans pression. La clé est d'adapter l'activité au profil cognitif réel de l'enfant.",
+      },
+      {
+        q: "Les stages d'été sont-ils adaptés aux lycéens ?",
+        a: "Oui. La recherche de l'OCDE sur 47 études longitudinales montre que les élèves ayant une expérience professionnelle structurée avant 16 ans ont des résultats de carrière mesuralement meilleurs. De nombreuses entreprises proposent des stages structurés pour les élèves de 14 à 18 ans. Une évaluation de préparation au stage aide à identifier quel secteur convient avant de s'engager.",
+      },
+      {
+        q: "Quelles activités d'été aident pour l'admission à l'université ?",
+        a: "Les comités d'admission universitaire recherchent trois choses : une aptitude vérifiée, un intérêt genuin pour un domaine et des preuves d'initiative. Les activités d'été qui aident le plus sont : une évaluation cognitive de référence (produit un rapport percentile), un stage ou une expérience professionnelle structurée (produit une référence), et une compétition ou un programme d'enrichissement spécifique à la matière. Les cours en ligne seuls ont moins de poids.",
+      },
+      {
+        q: "Comment trouver un stage d'été pour mon adolescent ?",
+        a: "Commencez par une évaluation de préparation au stage pour identifier quel secteur correspond aux forces de votre enfant. Puis approchez directement les PME (elles sont plus susceptibles d'accepter de jeunes élèves que les grandes entreprises), utilisez le service d'orientation de votre école et consultez les annuaires spécifiques au secteur. Avoir un rapport d'évaluation dans la candidature la renforce considérablement.",
+      },
+      {
+        q: "Est-il préférable de faire un programme d'été ou un stage ?",
+        a: "Pour les élèves de 14 ans et plus, un stage structuré apporte généralement plus de valeur cognitive et de crédential qu'un programme académique d'été, car il développe la fonction exécutive, la tolérance à l'ambiguïté et la communication professionnelle — des compétences que les programmes académiques ne peuvent pas reproduire. Pour les moins de 14 ans, l'enrichissement structuré (évaluation cognitive + concours + projet) est le meilleur cadre.",
+      },
+      {
+        q: "Quelles compétences cognitives peuvent être développées pendant l'été ?",
+        a: "Les trois domaines cognitifs les plus réceptifs à l'investissement estival ciblé sont : le raisonnement verbal (développé par le débat, l'écriture structurée, le Modèle ONU et la lecture de haut niveau), le raisonnement numérique (par les maths compétitives, la résolution de problèmes basée sur des schémas et des projets de données), et le raisonnement visuo-spatial (par des projets d'ingénierie, la programmation, le design et des puzzles spatiaux). Une évaluation cognitive de référence identifie quel domaine prioriser.",
+      },
+      {
+        q: "Comment savoir quelle activité d'été convient aux forces de mon enfant ?",
+        a: "Faites l'évaluation cognitive gratuite de 35 minutes avant de réserver quoi que ce soit. Elle produit des scores percentiles verbaux, numériques et spatiaux comparés à l'international. Un enfant avec un profil verbal fort s'épanouit dans le débat, l'écriture et le Modèle ONU. Un profil numérique-spatial pointe vers la programmation, les projets d'ingénierie et les maths compétitives.",
+      },
+      {
+        q: "Les activités d'été améliorent-elles les résultats scolaires l'année suivante ?",
+        a: "La recherche montre systématiquement que l'enrichissement estival ciblé adapté au niveau de développement de l'enfant améliore les résultats l'année académique suivante, en particulier dans les domaines abordés. Le mot clé est ciblé : le tutorat générique montre des effets faibles, tandis que l'enrichissement spécifique au domaine adapté à un écart cognitif montre des effets forts.",
+      },
+      {
+        q: "À quel âge un enfant peut-il commencer un stage d'expérience professionnelle ?",
+        a: "Dans de nombreux pays, l'âge minimum pour l'expérience professionnelle formelle est de 13 à 14 ans, les stages structurés étant les plus courants à partir de 14 ans. De nombreuses entreprises proposant des stages au lycée exigent que les élèves aient au moins 14 ans. L'évaluation de préparation au stage est conçue spécifiquement pour ce groupe d'âge 14+.",
+      },
+      {
+        q: "Comment une évaluation estivale aide-t-elle à la planification scolaire en septembre ?",
+        a: "Une évaluation cognitive réalisée en été produit un profil percentile verbal, numérique et spatial qui identifie exactement quel domaine a un écart par rapport à celui qui est déjà fort. Cela vous dit dans quelles matières investir en tutorat (le domaine déficitaire), quelles activités scolaires prioriser (le domaine fort), et vous donne des données objectives à partager avec les enseignants à la réunion parents-professeurs de septembre.",
+      },
+    ],
+    cta: {
+      heading: "Découvrez les forces de votre enfant avant l'été — gratuitement",
+      body: "Évaluation adaptative pour les 6 à 16 ans. Raisonnement verbal, numérique et spatial mesuré par rapport à des références internationales — rapport instantané, sans inscription.",
+      label: 'Commencer le test gratuit',
+      href: '/fr#academique',
     },
   },
 ]

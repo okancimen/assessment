@@ -1769,6 +1769,66 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'smart-child-bad-grades',
+    title: 'My Child Is Smart But Gets Bad Grades: What Parents Should Know',
+    shortTitle: 'Smart Child, Bad Grades: What Parents Should Know',
+    description:
+      'Your child is clearly intelligent, but their report card tells a different story. Here is why grades do not measure cognitive ability — and how to find out your child\'s true academic ceiling across all four cognitive domains.',
+    tldr: 'Smart children get bad grades when there is a mismatch between their cognitive profile and how school measures performance. School grades primarily measure crystallised intelligence — what has been memorised and reproduced — while many bright children have exceptional fluid intelligence: the ability to reason, spot patterns, and solve novel problems that standardised tests rarely capture.',
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '9 min read',
+    tags: ['Smart Child Bad Grades', 'Child Underperforming', 'Cognitive Assessment', 'Gifted Underachiever', 'Child Potential', 'Academic Performance', 'Working Memory', 'Parent Guide'],
+    faqs: [
+      {
+        q: 'Why does my intelligent child get bad grades?',
+        a: 'Intelligent children get bad grades when their cognitive strengths do not align with how school measures performance. School grades primarily test crystallised intelligence — memorised knowledge — while many bright children excel at fluid intelligence: reasoning, pattern recognition, and solving novel problems. A child may also struggle due to working memory challenges, test anxiety, boredom-driven disengagement, or a curriculum mismatch with their cognitive profile.',
+      },
+      {
+        q: 'What is the difference between intelligence and academic performance?',
+        a: 'Intelligence refers to cognitive ability — the capacity to reason, learn, and solve new problems. Academic performance measures how well a student has reproduced curriculum content under exam conditions. A child can have very high fluid intelligence (reasoning ability) while producing modest grades if their working memory is under strain, if they are disengaged, or if the exam format does not match their cognitive strengths.',
+      },
+      {
+        q: 'Can a child be gifted but still struggle in school?',
+        a: 'Yes. Research consistently shows that 12–18% of students in the top quartile for fluid reasoning score in the bottom half for school grades. Gifted underachievement is a well-documented phenomenon. Causes include boredom and disengagement in under-stimulating curricula, undiagnosed working memory challenges, twice-exceptional profiles (gifted with a co-occurring learning difference), and extreme cognitive profiles where one domain is very strong but another creates a bottleneck.',
+      },
+      {
+        q: 'What are the signs my child is smarter than their grades show?',
+        a: 'Key signs include: strong verbal reasoning in conversation but weak written output; quickly grasping new concepts but losing marks on multi-step tasks; excellent spatial or logical problem-solving outside school (Lego, puzzles, coding) but poor performance on text-heavy exams; boredom-related disengagement rather than confusion; and high performance on novel tasks but lower performance on revision-dependent tests.',
+      },
+      {
+        q: 'Does working memory affect school grades?',
+        a: 'Yes, significantly. Working memory is the cognitive system that holds and manipulates information during a task. Children with below-average working memory frequently lose marks on multi-step problems even when they understand each individual step. Working memory challenges are among the most common undiagnosed cognitive profiles in underperforming children — and they are entirely separate from intelligence. A child can have high fluid reasoning but low working memory, producing a confusing academic profile.',
+      },
+      {
+        q: 'How do I find out my child\'s true academic potential?',
+        a: 'A free adaptive cognitive assessment measures verbal reasoning, numerical reasoning, visual-spatial reasoning, and processing speed independently — producing a percentile score for each domain benchmarked against international norms. Unlike school grades, this separates what your child knows from what they are cognitively capable of. The Eduentry academic assessment takes 35 minutes and requires no prior preparation.',
+      },
+      {
+        q: 'Should I get my child tested if they underperform at school?',
+        a: 'If there is a consistent gap between your child\'s apparent capability and their grades, a cognitive assessment is a productive first step before any intervention. It identifies whether the gap is due to a domain-specific weakness, working memory load, curriculum mismatch, or broader disengagement. Starting with data rather than assumption saves time, money, and reduces the risk of mismatched tutoring or interventions.',
+      },
+      {
+        q: 'Can stress and anxiety cause a smart child to get bad grades?',
+        a: 'Yes. Test anxiety specifically impairs working memory during an exam — meaning a child can know the material thoroughly but underperform when the pressure is high. High-ability children are actually more susceptible to this mechanism because they are more aware of the stakes. If your child consistently performs better in low-stakes conditions than in formal exams, test anxiety is worth investigating alongside cognitive profiling.',
+      },
+      {
+        q: 'What type of support helps underperforming gifted children most?',
+        a: 'The most effective support starts with a cognitive profile, not a tutoring plan. Once you know which domain has the gap — verbal, numerical, spatial, or working memory — you can match support precisely. Domain-specific interventions consistently outperform general tutoring. If working memory is the bottleneck, strategy-based approaches (chunking, visual anchors) outperform more repetition. If the child is disengaged, enrichment and a change in learning environment may be more effective than any academic intervention.',
+      },
+      {
+        q: 'How does an adaptive cognitive test differ from a school exam?',
+        a: 'A school exam tests curriculum knowledge — what a student has been taught and can recall under pressure. An adaptive cognitive test measures underlying reasoning ability — the capacity to solve novel problems the child has never seen before. The adaptive format adjusts the difficulty of each question in real time based on previous answers, producing a precise ability estimate rather than a grade. This distinction is why a child can score highly on a cognitive test while producing poor school grades.',
+      },
+    ],
+    cta: {
+      heading: 'Find out your child\'s true cognitive profile — free',
+      body: 'Adaptive assessment for ages 6–16. Verbal, numerical, spatial reasoning and working memory measured against international benchmarks — instant report, no registration.',
+      label: 'Start free assessment',
+      href: '/#academic',
+    },
+  },
+  {
     slug: 'how-to-find-internship-as-student',
     title: 'How to Find an Internship as a Student: The Complete Guide',
     shortTitle: 'How to Find an Internship as a Student',
@@ -1826,6 +1886,66 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       body: 'Free adaptive assessment for students 14+. Get your talent profile across tech, data, business and digital marketing in 35 minutes.',
       label: 'Start free assessment →',
       href: '/internship',
+    },
+  },
+  {
+    slug: 'summer-activities-ambitious-children',
+    title: 'Summer Activities for Academically Ambitious Children: 2026 Guide',
+    shortTitle: 'Summer Activities for Academically Ambitious Children',
+    description:
+      'A research-backed guide for parents planning a productive summer for their 9–16 year old high-achiever. Covers internships, cognitive assessments, enrichment programmes, and a 3-step framework to match summer activities to your child\'s actual strengths.',
+    tldr: 'Unstructured summers widen the achievement gap — but the wrong structured summer kills intrinsic motivation. The answer is purposeful, varied, and matched to the child\'s cognitive profile. Start with a free 35-minute assessment to know which domain to build before you book anything.',
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '10 min read',
+    tags: ['Summer Activities', 'Gifted Child Summer', 'Summer Internship', 'Academic Enrichment', 'High School Student', 'Child Development', 'Summer Planning', 'Cognitive Assessment'],
+    faqs: [
+      {
+        q: 'What should academically gifted children do during summer?',
+        a: 'Academically gifted children benefit most from a combination of credential-building (cognitive assessment, internship for 14+, competition entry), skill-building matched to their strongest domain, and one genuinely enjoyable exploration that isn\'t pressure-loaded. The key is matching the activity to the child\'s actual cognitive profile — not defaulting to more of what they already do well at school.',
+      },
+      {
+        q: 'Are summer internships suitable for high school students?',
+        a: 'Yes. OECD research across 47 longitudinal studies shows students with structured work experience by age 16 have measurably better career outcomes — including higher employment rates and faster wage progression. Many companies offer structured placements for students aged 14–18, particularly in technology, retail, creative industries, and SMEs. An internship readiness assessment helps identify which sector fits before committing to a placement.',
+      },
+      {
+        q: 'What summer activities help with university admissions?',
+        a: 'University admissions committees look for three things: verified ability, genuine interest in a field, and evidence of initiative. Summer activities that help most are: a cognitive baseline assessment (produces a percentile report), a structured internship or work experience (produces a reference), and a subject-specific competition or enrichment programme (produces a placement or certificate). Online courses alone carry less weight.',
+      },
+      {
+        q: 'How do I find a summer internship for my teenager?',
+        a: 'Start with an internship readiness assessment to identify which sector matches your child\'s strengths — this prevents wasted applications. Then approach SMEs directly (they are more likely to take younger students than large corporates), use your school\'s careers department, and check sector-specific directories. Having an assessment report in the application significantly strengthens it compared to an empty CV.',
+      },
+      {
+        q: 'Is it better to do a summer programme or an internship?',
+        a: 'For students aged 14 and above, a structured internship or work experience typically delivers more cognitive and credential value than a summer academic programme, because it develops executive function, ambiguity tolerance, and professional communication — skills that academic programmes cannot replicate. For students under 14, structured enrichment (cognitive assessment + competition + project) is the better framework.',
+      },
+      {
+        q: 'What cognitive skills can be developed over the summer?',
+        a: 'The three cognitive domains most responsive to targeted summer investment are: verbal reasoning (developed through debate, structured writing, Model UN, and high-level reading), numerical reasoning (developed through competitive maths, pattern-based problem solving, and data projects), and visual-spatial reasoning (developed through engineering projects, coding, design, and spatial puzzles). A cognitive baseline assessment identifies which domain to prioritise.',
+      },
+      {
+        q: "How do I know which summer activity suits my child's strengths?",
+        a: "Take the free 35-minute cognitive assessment before booking anything. It produces verbal, numerical, and spatial percentile scores benchmarked internationally. A child with a strong verbal profile thrives in debate, writing, and Model UN. A numerical-spatial profile points toward coding, engineering projects, and competitive maths. Matching activity to profile prevents wasted summer investment.",
+      },
+      {
+        q: 'Do summer activities improve school performance the following year?',
+        a: 'Research consistently shows that targeted summer enrichment matched to a child\'s developmental level improves performance in the subsequent academic year — particularly in the domains addressed. The key word is targeted: generic tutoring shows weak effects, while domain-specific enrichment matched to a cognitive gap shows strong effects. This is why a cognitive baseline assessment before summer is valuable.',
+      },
+      {
+        q: 'What age can a child start a work experience placement?',
+        a: 'In the UK, the minimum age for formal work experience is typically 13–14, with structured placements most common from age 14 onwards. Many companies offering secondary school placements require students to be at least 14. In other countries, regulations vary but 14 is the most common minimum. An internship readiness assessment is designed specifically for this 14+ age group.',
+      },
+      {
+        q: 'How does a summer assessment help with school planning in September?',
+        a: 'A cognitive assessment taken in summer produces a verbal, numerical, and spatial percentile profile that identifies exactly which domain has a gap versus which is already strong. This tells you which subjects to invest in tutoring (the gap domain), which school activities to prioritise (the strong domain), and gives you objective data to share with teachers at the September parents\' evening — moving the conversation from vague impressions to specific, actionable information.',
+      },
+    ],
+    cta: {
+      heading: "Find your child's strengths before summer starts — free",
+      body: "Adaptive assessment for ages 6–16. Verbal, numerical and spatial reasoning measured against international benchmarks — instant report, no registration.",
+      label: 'Start free test',
+      href: '/#academic',
     },
   },
 ]

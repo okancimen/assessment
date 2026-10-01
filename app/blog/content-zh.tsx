@@ -2330,6 +2330,180 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'smart-child-bad-grades': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        你知道你的孩子聪明。你从他在饭桌上推理问题的方式看到这一点，从那些让大人语塞的问题看到这一点，从他比同龄人更快掌握新想法的方式看到这一点。但成绩单继续说着另一番故事——每次家长会都以同一句话结束："可以更努力一些。"
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        这种明显能力与记录成绩之间的脱节，是教育中最常见却最少被理解的情况之一。这不是你在想象的。它有科学解释——理解它是采取有效行动的第一步。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">为什么聪明的孩子成绩不好</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          聪明的孩子成绩不好，是因为他们的认知特征与学校衡量表现的方式之间存在不匹配。学校成绩主要衡量晶体智力——已被记忆和再现的知识——而许多聪明的孩子具有出色的流体智力：推理、发现规律和解决新问题的能力，这些是标准化考试很少能捕捉到的。
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>课程不匹配：</strong>空间和逻辑思维者经常因大量文字考试而受到惩罚，这些考试奖励语言记忆。能在几秒钟内心算旋转3D物体或解决模式谜题的孩子，可能在需要长篇书面论述的作文题上失分——不是因为他不理解，而是因为输出格式与其认知结构不符。
+          </Bullet>
+          <Bullet>
+            <strong>工作记忆负荷：</strong>孩子可以完美理解多步骤问题的每个步骤，但如果工作记忆无法同时保持所有中间步骤，仍然会失分。这不是懒惰或粗心——这是一种从外部看不见的特定认知瓶颈，通常被误归因于努力不足。
+          </Bullet>
+          <Bullet>
+            <strong>无聊和脱离：</strong>被置于缺乏刺激环境中的天才儿童往往会脱离——不是戏剧性的，而是悄然地。他们不再在觉得不具挑战性的工作上投入全力，由此产生的成绩与其真实能力毫无关联。
+          </Bullet>
+          <Bullet>
+            <strong>考试焦虑：</strong>高能力儿童有时对考试压力更脆弱，而非更有韧性。他们更强的元认知意识使他们对考试风险格外敏感。当焦虑在考试中降低工作记忆时——这正是考试焦虑的神经学机制——结果是一个与知识无关的表现上限。
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">流体智力与晶体智力：关键区别</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cattell-Horn-Carroll（CHC）模型——认知科学中实证最为充分的框架——区分了两种根本不同类型的智力。<strong>晶体智力（Gc）</strong>是积累的知识：词汇、事实、程序——在学校学习并在考试中再现的内容。<strong>流体智力（Gf）</strong>是推理能力：识别模式、形成逻辑链条和解决从未遇到过的新问题的能力。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          学校考试在设计上几乎完全测试Gc。孩子的Gf——其纯粹的推理引擎——在评分系统中基本是不可见的。OECD PISA数据显示，在发达国家，15-20%的学生在学业表现与测量认知能力之间存在显著差距。更具体地说，研究表明，流体推理排在前四分之一但学校成绩在后半部分的学生占所有学生的12-18%。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">预测真实学业上限的4个认知领域</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          四领域认知评估分离了学校成绩合并成单一分数的能力组成部分。每个领域预测学业和职业表现的不同维度：
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>语言推理：</strong>语言理解、类比和推断——提取意义、构建论点和驾驭复杂文本的能力。预测人文学科、语言、法律以及任何需要大量书面或口头交流的领域的表现。
+          </Bullet>
+          <Bullet>
+            <strong>数字推理：</strong>模式识别、数学逻辑和定量问题解决——独立于课程知识。数字推理强的孩子即使没有学过特定技术，也能找到解决新数学题的方法，因为他们从原理而不是记忆入手。预测STEM表现超出成绩所显示的范围。
+          </Bullet>
+          <Bullet>
+            <strong>视觉空间推理：</strong>形状分析、三维关系和心理旋转——可以说是学校系统中最少被识别的领域。强大的视觉空间推理预测工程、建筑、设计、外科手术和许多技术岗位的表现。空间特征出色的孩子在学校可能表现平平，但在其最强能力的实际应用中可能真正出色。
+          </Bullet>
+          <Bullet>
+            <strong>处理速度和工作记忆：</strong>在任务中处理和保留信息的速度和准确性。低工作记忆是表现不佳儿童中最常见的未诊断认知特征。它在理解和输出之间造成差距——孩子掌握了概念，但在考试条件下无法维持展示它所需的顺序。
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如果孩子表现不佳该怎么办</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>首先获得认知基准：</strong>在预约补习老师之前、在换学校之前、在任何干预措施之前——了解哪个领域有差距。当真正的问题是工作记忆时，强化数字推理既昂贵又无效。35分钟的自适应评估产生所需的领域特征，让你从证据而非假设出发行动。
+          </Check>
+          <Check>
+            <strong>与老师分享数据：</strong>"空间推理第93百分位"是一个与"看起来聪明但心不在焉"完全不同的对话。认知报告给老师提供可操作的信息——改变他们如何构建任务、如何安置孩子、考虑什么调整措施。
+          </Check>
+          <Check>
+            <strong>将支持与领域匹配：</strong>数字弱点对基于模式的数学游戏和结构化问题解决练习有反应——而不是更多重复那些不起作用的相同程序。语言弱点的反应方式与空间弱点不同。不针对特定领域的一般补习是最常见的教育支出浪费。
+          </Check>
+          <Check>
+            <strong>排除工作记忆作为瓶颈：</strong>许多被描述为"懒惰""粗心"或"不努力"的孩子有工作记忆挑战。标志是表现不一致：他们在练习中可以做某类题，但在考试条件下做不了；或者在课堂上理解概念，但无法在纸上再现它。
+          </Check>
+          <Check>
+            <strong>考虑学校环境是否合适：</strong>有极端语言和空间特征的孩子——两个推理领域都非常高，但晶体知识平均——在奖励记忆而非推理的课程中可能系统性地处于不利地位。了解孩子的特征让你就充实教育或替代环境做出明智决定。
+          </Check>
+        </ul>
+        <Callout>
+          <strong>从35分钟的免费自适应评估开始</strong>——它产生按国际规范校准的四领域认知特征。无需任何准备。报告独立显示语言推理、数字推理、视觉空间推理和处理速度——给你一张完整的图画，了解孩子站在哪里，而不仅仅是被教了什么。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">相关指南</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/zh/blog/mianfei-xueshu-ceshi-haizi-youshi-ruodian', tag: '测评', title: '免费学业测试：35分钟发现孩子的优势与不足' },
+            { href: '/zh/blog/haizi-youshi-ruodian-zhongxue-zhunbei', tag: '指南', title: '中学前了解孩子的优势与不足' },
+            { href: '/zh/blog/faxian-xueling-haizi-qianyin-youshi-xiandai-zhiyin', tag: '指南', title: '发现孩子的隐藏优势：现代家长指南' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'summer-activities-ambitious-children': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        夏天来临，每位有抱负的家长都面临同一个问题：如何让暑假充实而不变成折磨？研究结论很明确——无结构的暑假会扩大学业差距。但错误的结构化暑假（无休止的补课）会扼杀内在动力。答案在两者之间：有目的、多样化，并与孩子的真实优势相匹配。
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        做得好的家长有一个共同点：他们从数据而非假设出发。在报名任何课程之前，他们了解孩子最强的领域是语言推理、数字推理还是空间推理。这些知识决定了一切——哪些活动能真正拓展孩子的能力，哪些能建立有意义的资质证书，哪些只是在填充时间。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">什么让暑期活动真正有价值？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          对学业有抱负的孩子来说，真正有价值的暑期活动能培养以下三者之一：可迁移到各学科的认知技能（推理、解题、工作记忆），向未来学校或雇主展示能力的可验证资质，或对孩子真正感兴趣领域的知识积累。最好的活动三者兼顾。
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet><strong>技能培养：</strong>发展推理能力的活动，而非仅仅积累知识。构建和捍卫论点的孩子，与只是记忆事实的孩子，培养的是不同的认知能力。</Bullet>
+          <Bullet><strong>资质建设：</strong>可验证的成果（评估报告、实习推荐信、竞赛名次），在孩子有正式履历之前向招生委员会和雇主展示能力。</Bullet>
+          <Bullet><strong>探索：</strong>在确定学校专业方向之前接触真实世界的行业。在科技公司待过两周的孩子，对STEM学科的关系与只在课堂接触过的孩子有着根本性的不同。</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">第一梯队：学业回报最高的活动</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet><strong>实习或工作体验（14岁以上）：</strong>经合组织对47项纵向研究的分析显示，16岁前有结构化工作经验的学生成年后收入高5–10%。<Link href="/zh/blog/xuesheng-ru-he-zhao-dao-shixi" className="text-indigo-600 hover:underline">Eduentry的实习准备评估</Link>在孩子选择实习单位之前，就能确定哪个行业最适合其认知特征。</Bullet>
+          <Bullet><strong>认知基准评估：</strong>在投入暑期补课之前，先获取领域级别的能力图谱。35分钟，免费，生成按国际标准校准的语言/数字/空间推理百分位分数，精确识别哪个领域有差距，哪个已经很强。</Bullet>
+          <Bullet><strong>数学/逻辑强化（针对数字领域）：</strong>AMC 8/10备考、新加坡数学练习册或数学竞赛俱乐部。目标是发展基于规律的推理能力，而非死记硬背。</Bullet>
+          <Bullet><strong>辩论或模拟联合国（针对语言领域）：</strong>语言推理能力强但在普通课堂未受挑战的孩子在这里如鱼得水。结构化论辩培养的元认知技能直接迁移到论文写作和大学面试。</Bullet>
+          <Bullet><strong>STEM项目或编程（针对空间/定量领域）：</strong>Lego Mindstorms、Arduino、MIT Scratch（较小年龄）、Python或Swift（14岁以上）。关键：项目制学习，而非跟教程。构建一个还不能运行的东西然后调试，这才是认知练习。</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">第二梯队：有价值但常被高估</h2>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>海外语言课程：</strong>对晶体智力和文化自信有价值，但很少培养顶尖学生所需的流体推理技能。最好与第一梯队的活动结合进行。</Check>
+          <Check><strong>学术夏令营（牛津、剑桥、美国项目）：</strong>对激励和人脉很好，但认知收益主要是动力层面的。不能替代认知基准评估或真实工作经验。</Check>
+          <Check><strong>在线课程（Coursera、Khan Academy、edX）：</strong>非常适合填补特定课程空白，但不善于培养推理能力。用于解决评估发现的特定薄弱领域，而非作为一般性的&ldquo;充实暑假&rdquo;计划。</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如何规划完美暑假：三步框架</h2>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>第一步——了解孩子的能力图谱：</strong>在暑假开始前进行免费认知评估。了解语言/数字/空间推理的百分位，就能知道哪些活动真正能拓展孩子的能力，而非只是打发时间。</Check>
+          <Check><strong>第二步——平衡三大支柱：</strong>一项资质建设活动（14岁以上做评估+实习，较小年龄参加竞赛），一项与强势领域匹配的技能培养活动，一项没有压力的愉快探索。第三个支柱不是可选的——整个暑假都处于压力下的孩子进入九月时是耗竭的，而非充满活力的。</Check>
+          <Check><strong>第三步——尽早预订：</strong>实习名额、暑期学校名额和竞赛项目名额填满得很快。准备好孩子的评估报告——它能显著增强申请竞争力。</Check>
+        </ul>
+        <Callout>
+          从免费的35分钟评估开始——在预订任何活动之前，先知道今年暑假应该重点培养哪个领域。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">相关指南</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/zh/blog/xuesheng-ru-he-zhao-dao-shixi', tag: '指南', title: '学生如何找到实习：完整指南' },
+            { href: '/zh/blog/haizi-xueshu-shuiping-ruhe-celiang', tag: '研究', title: 'OECD：青少年工作经验与职业成果' },
+            { href: '/zh/blog/mianfei-xueshu-ceshi-haizi-youshi-ruodian', tag: '测评', title: '免费学业测试：发现孩子的优势与不足' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

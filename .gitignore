@@ -45,3 +45,4 @@ demo_60q.mjs
 debug_*.png
 demo_result*.png
 .claude/
+service_account.json

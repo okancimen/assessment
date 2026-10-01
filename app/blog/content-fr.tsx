@@ -2733,6 +2733,208 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'smart-child-bad-grades': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Vous savez que votre enfant est intelligent. Vous le voyez dans la façon dont il raisonne un problème à table, dans les questions qui prennent les adultes au dépourvu, dans la façon dont il saisit de nouvelles idées plus vite que ses camarades. Mais le bulletin scolaire continue de dire autre chose — et chaque réunion parents-professeurs se termine par la même phrase : &ldquo;pourrait faire plus d&apos;efforts.&rdquo;
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Ce décalage entre la capacité évidente et les notes enregistrées est l&apos;une des situations les plus courantes et les moins comprises en éducation. Ce n&apos;est pas le signe que vous imaginez des choses. Cela a une explication scientifique — et la comprendre est la première étape pour faire quelque chose d&apos;utile à ce sujet.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi les Enfants Intelligents ont de Mauvaises Notes</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les enfants intelligents ont de mauvaises notes quand il y a un décalage entre leur profil cognitif et la façon dont l&apos;école mesure la performance. Les notes scolaires mesurent principalement l&apos;intelligence cristallisée — ce qui a été mémorisé et restitué — tandis que beaucoup d&apos;enfants brillants ont une intelligence fluide exceptionnelle : la capacité de raisonner, détecter des patterns et résoudre des problèmes nouveaux que les examens standardisés capturent rarement.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Inadéquation curriculaire :</strong> Les penseurs spatiaux et logiques sont fréquemment pénalisés par des examens à forte charge textuelle qui récompensent le rappel verbal. Un enfant qui peut faire pivoter mentalement un objet 3D ou résoudre un puzzle de patterns en quelques secondes peut perdre des points sur une question de dissertation nécessitant une argumentation écrite étendue — non pas parce qu&apos;il ne comprend pas, mais parce que le format de sortie ne correspond pas à son architecture cognitive.
+          </Bullet>
+          <Bullet>
+            <strong>Charge de mémoire de travail :</strong> Un enfant peut comprendre parfaitement chaque étape d&apos;un problème à plusieurs étapes mais perdre quand même des points si sa mémoire de travail ne peut pas maintenir toutes les étapes intermédiaires simultanément. Ce n&apos;est pas de la paresse ou de l&apos;inattention — c&apos;est un goulot d&apos;étranglement cognitif spécifique qui semble invisible de l&apos;extérieur et qui est systématiquement attribué à un manque d&apos;effort.
+          </Bullet>
+          <Bullet>
+            <strong>Ennui et désengagement :</strong> Les enfants surdoués placés dans des environnements peu stimulants se désengagent souvent — pas de façon spectaculaire, mais silencieusement. Ils cessent d&apos;investir tous leurs efforts dans un travail qu&apos;ils trouvent peu stimulant, et les notes qui en résultent n&apos;ont aucun rapport avec leur capacité réelle.
+          </Bullet>
+          <Bullet>
+            <strong>Anxiété aux examens :</strong> Les enfants à haut potentiel sont parfois plus vulnérables à la pression des examens, pas moins. Leur conscience métacognitive plus forte les rend acutement conscients des enjeux. Quand l&apos;anxiété dégrade la mémoire de travail pendant un examen — c&apos;est le mécanisme neurologique qui sous-tend l&apos;anxiété aux examens — le résultat est un plafond de performance qui n&apos;a rien à voir avec les connaissances.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Intelligence Fluide vs Cristallisée : La Distinction Clé</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le modèle Cattell-Horn-Carroll (CHC) — le cadre le plus solide empiriquement en sciences cognitives — distingue deux types fondamentalement différents d&apos;intelligence. L&apos;<strong>intelligence cristallisée (Gc)</strong> est la connaissance accumulée : vocabulaire, faits, procédures — le contenu que l&apos;on apprend à l&apos;école et que l&apos;on restitue aux examens. L&apos;<strong>intelligence fluide (Gf)</strong> est la capacité de raisonnement : la capacité d&apos;identifier des patterns, former des chaînes logiques et résoudre des problèmes jamais rencontrés auparavant.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les examens scolaires, par conception, évaluent presque exclusivement le Gc. Le Gf d&apos;un enfant — son moteur de raisonnement brut — est largement invisible pour le système de notation. Les données PISA de l&apos;OCDE montrent un écart significatif entre la performance scolaire et la capacité cognitive mesurée chez 15 à 20% des élèves dans les pays développés. Plus précisément, les études montrent que les élèves dans le quartile supérieur du raisonnement fluide mais dans la moitié inférieure des notes scolaires représentent 12 à 18% de tous les élèves.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les 4 Domaines Cognitifs qui Prédisent le Vrai Plafond Académique</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Une évaluation cognitive à quatre domaines sépare les composantes de la capacité que les notes scolaires regroupent en une seule note. Chaque domaine prédit une dimension différente de la performance académique et professionnelle :
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Raisonnement Verbal :</strong> Compréhension du langage, analogies et inférence — la capacité d&apos;extraire du sens, construire des arguments et naviguer dans des textes complexes. Prédit la performance en sciences humaines, langues, droit et tout domaine nécessitant une communication écrite ou orale étendue.
+          </Bullet>
+          <Bullet>
+            <strong>Raisonnement Numérique :</strong> Reconnaissance de patterns, logique mathématique et résolution quantitative de problèmes — indépendant des connaissances du programme. Un enfant avec un fort raisonnement numérique trouvera son chemin dans un nouveau problème de maths même sans avoir appris la technique spécifique, parce qu&apos;il travaille à partir de principes plutôt que de la mémoire. Prédit la performance en STEM au-delà de ce que les notes révèlent.
+          </Bullet>
+          <Bullet>
+            <strong>Raisonnement Visuo-Spatial :</strong> Analyse des formes, relations tridimensionnelles et rotation mentale — sans doute le domaine le plus sous-identifié dans le système scolaire. Un fort raisonnement visuo-spatial prédit la performance en ingénierie, architecture, design, chirurgie et de nombreux rôles technologiques. Un enfant avec un profil spatial exceptionnel peut avoir des résultats modestes à l&apos;école mais être véritablement remarquable dans l&apos;application réelle de sa capacité la plus forte.
+          </Bullet>
+          <Bullet>
+            <strong>Vitesse de Traitement et Mémoire de Travail :</strong> La rapidité et la précision avec lesquelles l&apos;information est traitée et maintenue pendant une tâche. Une faible mémoire de travail est le profil cognitif non diagnostiqué le plus courant chez les enfants sous-performants. Elle crée un écart entre compréhension et production — l&apos;enfant saisit le concept mais ne peut pas maintenir la séquence nécessaire pour le démontrer en conditions d&apos;examen.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Que Faire Si Votre Enfant Sous-Performe</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Établissez d&apos;abord une base cognitive :</strong> Avant de réserver des tuteurs, avant de changer d&apos;école, avant toute intervention — comprenez quel domaine a l&apos;écart. Renforcer le raisonnement numérique quand le vrai problème est la mémoire de travail est coûteux et inefficace. Une évaluation adaptative de 35 minutes produit le profil de domaine nécessaire pour agir à partir de preuves plutôt que d&apos;hypothèses.
+          </Check>
+          <Check>
+            <strong>Partagez les données avec l&apos;enseignant :</strong> &ldquo;93e percentile en raisonnement spatial&rdquo; est une conversation entièrement différente de &ldquo;semble intelligent mais distrait.&rdquo; Un rapport cognitif donne aux enseignants des informations exploitables — cela change la façon dont ils structurent les tâches, placent l&apos;enfant, et les ajustements qu&apos;ils envisagent.
+          </Check>
+          <Check>
+            <strong>Adaptez le soutien au domaine :</strong> La faiblesse numérique répond aux jeux de maths basés sur des patterns et à la pratique structurée de résolution de problèmes — pas plus de répétition des mêmes procédures qui ne fonctionnent pas. La faiblesse verbale répond différemment de la faiblesse spatiale. Le tutorat générique qui ne cible pas le domaine spécifique est le gaspillage le plus courant des dépenses éducatives.
+          </Check>
+          <Check>
+            <strong>Éliminez la mémoire de travail comme goulot d&apos;étranglement :</strong> Beaucoup d&apos;enfants décrits comme &ldquo;paresseux,&rdquo; &ldquo;négligents&rdquo; ou &ldquo;qui ne font pas d&apos;efforts&rdquo; ont des défis de mémoire de travail. Le signe révélateur est la performance incohérente : ils peuvent faire un type de problème en pratique mais pas sous conditions d&apos;examen, ou ils comprennent un concept en classe mais ne peuvent pas le reproduire sur papier.
+          </Check>
+          <Check>
+            <strong>Considérez si l&apos;environnement scolaire est approprié :</strong> Un enfant avec un profil verbal et spatial extrême — très élevé dans les deux domaines de raisonnement mais moyen en connaissance cristallisée — peut être systématiquement désavantagé par un programme qui récompense le rappel sur le raisonnement. Connaître le profil de votre enfant vous permet de prendre une décision éclairée sur l&apos;enrichissement ou les environnements alternatifs.
+          </Check>
+        </ul>
+        <Callout>
+          <strong>Commencez par une évaluation adaptative gratuite de 35 minutes</strong> — elle produit un profil cognitif à quatre domaines calibré selon des normes internationales. Aucune préparation nécessaire. Le rapport montre le raisonnement verbal, numérique, visuo-spatial et la vitesse de traitement indépendamment — vous donnant une image complète de où se trouve votre enfant, pas seulement de ce qu&apos;il a appris.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guides Associés</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/fr/blog/test-academique-gratuit-forces-faiblesses-enfant', tag: 'Évaluation', title: 'Test Académique Gratuit : Découvrez les Forces et Faiblesses de Votre Enfant' },
+            { href: '/fr/blog/forces-faiblesses-enfant-preparation-lycee', tag: 'Guide', title: 'Comprendre les Forces de Votre Enfant Avant le Lycée' },
+            { href: '/fr/blog/decouvrir-forces-cachees-enfant-guide-parents-moderne', tag: 'Guide', title: 'Découvrir les Forces Cachées de Votre Enfant : Guide Moderne' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'summer-activities-ambitious-children': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Juin arrive et la question que chaque parent ambitieux doit affronter : comment garder l&apos;été productif sans le transformer en calvaire ? La recherche est claire — les étés non structurés creusent l&apos;écart de réussite. Mais le mauvais été structuré (cours particuliers interminables) tue la motivation intrinsèque. La réponse se trouve au milieu : intentionnel, varié et adapté aux vraies forces de l&apos;enfant.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Les parents qui réussissent cela ont une chose en commun : ils commencent par les données, pas les suppositions. Ils savent si le domaine le plus fort de leur enfant est verbal, numérique ou spatial avant de réserver un seul programme. Cette connaissance détermine tout — quelles activités challengent vraiment l&apos;enfant, lesquelles construisent des crédentiels que les universités reconnaissent, et lesquelles ne font que remplir le temps.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qu&apos;est-ce qui Rend une Activité d&apos;Été Genuinement Précieuse ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Une activité d&apos;été genuinement précieuse pour un enfant académiquement ambitieux construit l&apos;une de ces trois choses : une compétence cognitive qui se transfère entre les matières (raisonnement, résolution de problèmes, mémoire de travail), un crédentiel vérifiable qui signale des capacités aux futures écoles ou employeurs, ou des connaissances dans un domaine qui suscite genuinement la curiosité de l&apos;enfant. Les meilleures activités font les trois.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Développement des compétences :</strong> des activités qui développent le raisonnement, pas seulement l&apos;accumulation de connaissances. Un enfant qui mémorise des faits historiques ne développe pas la même capacité cognitive que celui qui construit et défend un argument sur la causalité historique.
+          </Bullet>
+          <Bullet>
+            <strong>Construction de crédentiels :</strong> des résultats vérifiables (rapports d&apos;évaluation, références de stage, classements de compétitions) qui communiquent les capacités aux équipes d&apos;admission et aux employeurs avant que l&apos;enfant n&apos;ait un historique formel.
+          </Bullet>
+          <Bullet>
+            <strong>Exploration :</strong> exposition aux secteurs du monde réel avant de s&apos;engager dans une voie scolaire. Un enfant qui a passé deux semaines dans une entreprise technologique a une relation fondamentalement différente avec les matières STEM que celui qui ne les a rencontrées qu&apos;en classe.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Niveau 1 : Activités avec le Meilleur Retour sur Investissement Académique</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Stage ou expérience professionnelle (14 ans et plus) :</strong> La recherche de l&apos;OCDE sur 47 études longitudinales montre que les élèves avec une expérience professionnelle structurée avant 16 ans gagnent 5 à 10% de plus à l&apos;âge adulte et ont des résultats d&apos;emploi mesurément meilleurs. Plus important pour l&apos;été : cela développe la fonction exécutive, la tolérance à l&apos;ambiguïté et la communication professionnelle — des compétences que l&apos;école ne peut pas enseigner. <Link href="/fr/blog/comment-trouver-un-stage-etudiant" className="text-indigo-600 hover:underline">L&apos;évaluation de préparation au stage d&apos;Eduentry</Link> identifie quel secteur correspond au profil cognitif de votre enfant avant qu&apos;il ne s&apos;engage.
+          </Bullet>
+          <Bullet>
+            <strong>Évaluation cognitive de référence :</strong> Avant d&apos;investir dans des cours particuliers d&apos;été, obtenez un profil au niveau du domaine. 35 minutes, gratuit, produit des scores percentiles verbaux/numériques/spatiaux comparés à l&apos;international. Identifie exactement quel domaine a une lacune versus lequel est déjà fort — pour que le soutien estival soit ciblé, pas dispersé.
+          </Bullet>
+          <Bullet>
+            <strong>Enrichissement mathématiques/logique (pour le domaine numérique) :</strong> Préparation AMC 8/10, cahiers de maths de Singapour, ou clubs de maths compétitives. À distinguer du travail curriculaire répétitif — l&apos;objectif est le développement du raisonnement basé sur les schémas, pas la mémorisation.
+          </Bullet>
+          <Bullet>
+            <strong>Débat ou Modèle ONU (pour le domaine verbal) :</strong> Les enfants à fort raisonnement verbal qui ne sont pas suffisamment challengés dans les classes standard s&apos;épanouissent ici. L&apos;argumentation structurée développe les compétences métacognitives qui se transfèrent directement à la rédaction d&apos;essais, aux entretiens universitaires et à la communication persuasive.
+          </Bullet>
+          <Bullet>
+            <strong>Projet STEM ou programmation (pour le domaine spatial/quantitatif) :</strong> Lego Mindstorms, Arduino, MIT Scratch (plus jeunes), Python ou Swift (14+). La clé : basé sur des projets, pas des tutoriels. Construire quelque chose qui ne fonctionne pas encore et le déboguer est l&apos;exercice cognitif.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Niveau 2 : Précieuses Mais Souvent Surévaluées</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Cours de langues à l&apos;étranger :</strong> précieux pour l&apos;intelligence cristallisée et la confiance culturelle, mais construisent rarement les compétences de raisonnement fluide qui différencient les meilleurs élèves. Mieux combinés avec quelque chose du Niveau 1.
+          </Check>
+          <Check>
+            <strong>Écoles d&apos;été académiques (Oxford, Cambridge, programmes américains) :</strong> excellentes pour l&apos;inspiration et le réseautage, mais coûteuses et le bénéfice cognitif est principalement motivationnel. Pas un substitut à une évaluation cognitive de référence ou à une vraie expérience professionnelle.
+          </Check>
+          <Check>
+            <strong>Cours en ligne (Coursera, Khan Academy, edX) :</strong> excellents pour combler des lacunes curriculaires spécifiques, peu efficaces pour développer les compétences de raisonnement. Utilisez-les pour traiter un domaine faible spécifique identifié par évaluation, pas comme plan général d&apos;&ldquo;été productif&rdquo;.
+          </Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment Planifier l&apos;Été Parfait : Un Cadre en 3 Étapes</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Étape 1 — Connaître le profil de votre enfant :</strong> Faites l&apos;évaluation cognitive gratuite avant le début de l&apos;été. Connaître leur percentile verbal/numérique/spatial vous dit quelles activités les challengeront versus lesquelles ne font que remplir le temps.
+          </Check>
+          <Check>
+            <strong>Étape 2 — Équilibrer les trois piliers :</strong> visez une activité de construction de crédentiels (évaluation + stage pour les 14+, participation à une compétition pour les plus jeunes), une activité de développement des compétences adaptée à leur domaine le plus fort, et une exploration genuinement agréable sans pression.
+          </Check>
+          <Check>
+            <strong>Étape 3 — Réservez tôt :</strong> les places de stage, les places dans les écoles d&apos;été et les programmes compétitifs se remplissent vite. Ayez le rapport d&apos;évaluation de votre enfant prêt — il renforce significativement les candidatures.
+          </Check>
+        </ul>
+        <Callout>
+          Commencez par l&apos;évaluation gratuite de 35 minutes — sachez quel domaine développer cet été avant de réserver quoi que ce soit.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guides Associés</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/fr/blog/comment-trouver-un-stage-etudiant', tag: 'Guide', title: 'Comment Trouver un Stage en tant qu\'Étudiant' },
+            { href: '/fr/blog/recherche-ocde-experience-professionnelle-adolescents-resultats-carriere', tag: 'Recherche', title: 'OCDE : Expérience Professionnelle des Adolescents et Résultats de Carrière' },
+            { href: '/fr/blog/decouvrir-forces-enfant-test-academique-gratuit', tag: 'Évaluation', title: 'Test Académique Gratuit : Découvrez les Forces de Votre Enfant' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {
