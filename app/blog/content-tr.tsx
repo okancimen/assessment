@@ -4604,6 +4604,117 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'how-to-find-internship-as-student': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Öğrenciyken staj bulmak her geçen yıl daha rekabetçi — ve daha belirleyici bir hale geliyor. İster çalışma dünyasını keşfetmek isteyen 14 yaşında bir lise öğrencisi olun, ister mezuniyetten önce CV&apos;sini doldurmaya çalışan son sınıf üniversite öğrencisi; soru aynı: her iş ilanı deneyim gerektirirken henüz deneyimsiz biri olarak ilk staj yerinizi nasıl bulacaksınız?
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Eski cevap — network kurmak, soğuk e-postalar, kariyer fuarları — hâlâ geçerli ama artık tek başına yeterli değil. Staj yerini ilk bulan yeni nesil öğrenciler, görüşmeye somut bir şeyle gelen öğrencilerdir: hiç ofis ortamına girmeden önce oluşturulmuş, doğrulanabilir bir mesleki yetenek profili.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Öğrenciyken Staj Nasıl Bulunur?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Öğrenciyken staj bulmak için ücretsiz adaptif bir değerlendirmeyle güçlü yön alanlarınızı belirleyin, bu sektörlerdeki işverenlerin hedefli bir listesini oluşturun ve onlara boş bir CV yerine somut bir yetenek profiliyle yaklaşın. 47 boylamsal çalışmayı kapsayan OECD araştırması, bunların 40&apos;ında 18 yaşından önce iş deneyimi olan öğrenciler için ölçülebilir biçimde daha iyi kariyer sonuçları kaydetmiştir. Erken başlamak — ve hazırlıklı gelmek — zamanla birikerek büyüyen bir avantaj yaratır.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Deneyim paradoksu:</strong> Staj ilanlarının büyük çoğunluğu önceden iş deneyimi gerektiriyor — ama ilk deneyimi kazanmak için bir ilk staj yeri gerekiyor. Bu kısır döngü, 14–21 yaş arası öğrenciler için bir numaralı engel.
+          </Bullet>
+          <Bullet>
+            <strong>Not filtreleri:</strong> Pek çok işveren akademik notları yetenek göstergesi olarak kullanıyor — oysa notlar belirli bir müfredattaki geçmiş performansı ölçer, aktarılabilir mesleki potansiyeli değil. Seçici olmayan okullardan gelen yüksek yetenekli öğrenciler, bir insan başvurularını okumadan elenebiliyor.
+          </Bullet>
+          <Bullet>
+            <strong>Lise öğrencileri için sınırlı fırsatlar:</strong> Resmi staj programları genellikle üniversite öğrencileri için tasarlanmıştır. Lise öğrencilerinin yapılandırılmış giriş noktaları daha az — ve hangi sektörlerin güçlü yönleriyle örtüştüğü konusunda daha az bilgileri var.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Neden Geleneksel Başvurular Öğrenciler İçin İşe Yaramıyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          47 boylamsal çalışmayı kapsayan OECD araştırması, bunların 40&apos;ında 18 yaşından önce yapılandırılmış iş deneyimi olan katılımcılar için ölçülebilir biçimde daha iyi kariyer sonuçları kaydetmiştir — daha yüksek istihdam oranları, daha hızlı maaş artışı ve 30 yaşında daha güçlü iş tatmini dahil. O pencereyi kaçıran öğrenciler sadece o anki staj imkânını değil, erken deneyimin yarattığı birikerek büyüyen avantajı da kaçırıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Buna karşın standart başvuru süreci, en çok fayda görecek öğrencilere karşı inşa edilmiştir. İşte nedenleri:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>CV tarama sistemi öğrenciler için tasarlanmamış.</strong> Başvuru takip sistemleri iki ila beş yıl deneyimi olan adaylar için kalibre edilmiştir. İş geçmişi bölümü boş olan bir öğrenci, gerçek yeteneğinden bağımsız olarak otomatik olarak elenebilir.
+          </Bullet>
+          <Bullet>
+            <strong>Rekabet oranları engelleyici düzeyde.</strong> Büyük şirketlerin staj programları her yer için 50 ila 300 başvuru alabilir. Geçmişi olmayan bir öğrenci için sadece kimlik bilgileriyle rekabet etmek kazanılması güç bir stratejidir.
+          </Bullet>
+          <Bullet>
+            <strong>Sektör belirsizliği hareketi engelliyor.</strong> Öğrencilerin başvuruyu ertelemesinin en yaygın nedeni hangi sektörü hedefleyeceklerini bilmemeleridir. Güçlü yönlerinin nerede yattığına dair veri olmadan her başvuru bir tahmin gibi hissettiriyor — tahmin etmek ise çabayı boşa harcatır ve güveni aşındırır.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Staj Hazırlık Değerlendirmesi Neyi Ölçüyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry staj hazırlık değerlendirmesi, NWEA MAP ve dijital SAT&apos;ın arkasındaki metodolojinin aynısı olan Bilgisayar Uyarlamalı Test (CAT) ve Madde Tepki Teorisi&apos;ni (IRT) kullanmaktadır. Her soru önceki cevabınıza göre gerçek zamanlı olarak seçilir; bu sayede sistem sabit bir zorluk eğrisi yerine gerçek yetenek düzeyinize kalibre olur. Sonuç, geleneksel bir testten daha hızlı, daha doğru ve şansa daha az açık bir ölçümdür.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çıktı, başvurularınıza ekleyebileceğiniz, LinkedIn&apos;de paylaşabileceğiniz ve güçlü yönlerinizle örtüşen işverenleri hedeflemek için kullanabileceğiniz bir sektör uyum yetenek raporu — dört mesleki alanda yüzdelik dilim bazlı bir profildir.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Teknoloji —</strong> Problem çözme, hesaplamalı düşünme ve dijital araç akıcılığı. Yazılım geliştirme, BT desteği, ürün yönetimi ve mühendislik ortamlarındaki rollere uyumu öngörür.
+          </Bullet>
+          <Bullet>
+            <strong>Veri Analitiği —</strong> Örüntü tanıma, veri yorumlama ve nicel muhakeme. Araştırma, finans, operasyon ve veri yoğun ticari işlevlerdeki rollere uyumu öngörür.
+          </Bullet>
+          <Bullet>
+            <strong>İş Yönetimi —</strong> Ticari farkındalık, iletişim ve organizasyonel düşünme. Yönetim danışmanlığı, operasyon, proje koordinasyonu ve müşteriyle yüz yüze çalışılan rollere uyumu öngörür.
+          </Bullet>
+          <Bullet>
+            <strong>Dijital Pazarlama —</strong> İçerik stratejisi, kitle analizi ve yaratıcı muhakeme. Pazarlama, iletişim, sosyal medya ve marka yönetimi rollerine uyumu öngörür.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Raporunuzu Nasıl Kullanabilirsiniz?</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>CV&apos;nize ekleyin:</strong> Raporu PDF olarak indirin ve her başvuru e-postasına destekleyici belge olarak ekleyin. En yüksek alan puanınızı ön yazınızda belirtin — &ldquo;Veri Analitiği&apos;nde üst çeyrek yetenek (Eduentry Değerlendirmesi, 2026)&rdquo; boş bir CV&apos;nin yapamayacağı somut bir iddia.
+          </Check>
+          <Check>
+            <strong>LinkedIn&apos;de paylaşın:</strong> Raporu &ldquo;Lisanslar &amp; Sertifikalar&rdquo; bölümüne ekleyin. Alan puanlarınızı dahil edin, Eduentry&apos;yi düzenleyen kuruluş olarak listeleyin ve değerlendirme sayfasına bağlantı verin. Belirli yetenekler için anahtar kelime arayan işe alım uzmanları sizi bulur.
+          </Check>
+          <Check>
+            <strong>Başvurularınızı hedefleyin:</strong> En yüksek puanı aldığınız sektör, doğal yeteneğinizin en güçlü olduğu yeri — ve dolayısıyla ilk başvurunuzun nereye gitmesi gerektiğini — söyler. Tahmin etmeyi bırakın; verinin çabanızı değerinizi en çok görecek işverenlere yönlendirmesine izin verin.
+          </Check>
+          <Check>
+            <strong>Mülakata hazırlanın:</strong> Raporunuzu mülakat hazırlık materyali olarak kullanın. En yüksek puanı aldığınız sektörü belirleyin, bu yeteneği okul dışında nasıl uyguladığınıza dair iki örnek hazırlayın ve başvurduğunuz rolle ilişkilendirin. Öğrencilere yönelik staj mülakatlarının büyük çoğunluğu teknik derinlikten çok tutum, merak ve öz farkındalığa odaklanır — raporunuz üçünü birden gösterir.
+          </Check>
+        </ul>
+        <Callout>
+          <strong>Ücretsiz staj hazırlık değerlendirmenizi başlatın →</strong> 35 dakika sürer. Kayıt gerekmez. Teknoloji, Veri Analitiği, İş Yönetimi ve Dijital Pazarlama alanlarında sektör uyum yetenek profilinizi alın — ve her başvuruya sunacak somut bir şeyle gelin.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/oecd-ergen-is-deneyimi-kariyer-sonuclari', tag: 'Araştırma', title: 'OECD Araştırması: Erken Yaşta İş Deneyiminin Kariyer Üzerindeki Gücü' },
+            { href: '/tr/blog/yapay-zekanin-alamayacagi-65-meslek', tag: 'Rehber', title: 'Yapay Zekanın Alamayacağı 65 Meslek' },
+            { href: '/tr/blog/oecd-ergen-yari-zamanli-calisma-faydalari', tag: 'Rehber', title: 'Gençler İçin Yarı Zamanlı İş: OECD Destekli Faydalar' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

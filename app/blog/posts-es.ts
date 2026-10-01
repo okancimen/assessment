@@ -847,6 +847,67 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: '/es#academica',
     },
   },
+  {
+    slug: 'como-encontrar-practicas-siendo-estudiante',
+    contentSlug: 'how-to-find-internship-as-student',
+    title: 'Cómo Encontrar Prácticas Siendo Estudiante: La Guía Completa',
+    shortTitle: 'Cómo Encontrar Prácticas como Estudiante',
+    description:
+      'Guía práctica respaldada por investigación para estudiantes de secundaria y universidad sobre cómo encontrar prácticas sin experiencia. Aprende cómo una evaluación de preparación para prácticas te ayuda a superar filtros de notas y conseguir tu primera plaza.',
+    tldr: 'Los estudiantes con experiencia de prácticas previa reciben ofertas de trabajo antes de graduarse a una tasa un 70% mayor (NACE, 2020). La mayor barrera es la paradoja de la experiencia: necesitas experiencia para conseguir experiencia. Una evaluación de preparación para prácticas te da un perfil de talento verificable.',
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '8 min de lectura',
+    tags: ['Prácticas de Estudiante', 'Cómo Encontrar Prácticas', 'Preparación para Prácticas', 'Prácticas en Secundaria', 'Prácticas Sin Experiencia', 'Consejos para Prácticas', 'Evaluación Adaptativa', 'Desarrollo Profesional'],
+    faqs: [
+      {
+        q: '¿Cómo encuentro prácticas sin experiencia?',
+        a: 'La ruta más rápida es demostrar aptitud medible antes de tener un historial. Completa una evaluación gratuita de preparación para prácticas para generar un perfil de talento en tecnología, análisis de datos, gestión empresarial y marketing digital. Incluye este informe en tu email de solicitud y perfil de LinkedIn.',
+      },
+      {
+        q: '¿Qué es una evaluación de preparación para prácticas?',
+        a: 'Una evaluación de preparación para prácticas es un test adaptativo que mide tu aptitud en las áreas de competencia más relevantes para entornos profesionales — tecnología, datos, empresa y marketing digital. Usando CAT e IRT, se ajusta en tiempo real a tu nivel de capacidad, produciendo un informe de talento calibrado con puntuaciones percentiles.',
+      },
+      {
+        q: '¿Pueden los estudiantes de secundaria de 14+ hacer prácticas?',
+        a: 'Sí. Muchas empresas ofrecen prácticas estructuradas para estudiantes de 14 a 18 años, especialmente en tecnología, comercio, industrias creativas y PYMEs. La evaluación de preparación para prácticas está diseñada específicamente para este grupo de edad.',
+      },
+      {
+        q: '¿Cómo funciona la evaluación de Eduentry?',
+        a: 'La evaluación de preparación para prácticas de Eduentry usa testing adaptativo: cada pregunta se selecciona según tu respuesta anterior, calibrándose a tu nivel real de capacidad. Dura unos 35 minutos y cubre cuatro sectores: tecnología, análisis de datos, gestión empresarial y marketing digital. Al finalizar, recibes un informe detallado de talento.',
+      },
+      {
+        q: '¿Es gratuita la evaluación de Eduentry?',
+        a: 'Sí. La evaluación de preparación para prácticas de Eduentry es completamente gratuita para estudiantes de 14 años en adelante. No se requiere registro, tarjeta de crédito ni suscripción. Recibes tu informe completo inmediatamente después de completar el test.',
+      },
+      {
+        q: '¿Cómo añado el informe a mi CV o LinkedIn?',
+        a: 'Descarga tu informe de talento como PDF y adjúntalo a los emails de solicitud. En LinkedIn, añádelo en "Licencias y Certificaciones" — indica Eduentry como organización emisora, incluye tus puntuaciones por dominio y enlaza a la página de la evaluación.',
+      },
+      {
+        q: '¿Qué sectores cubre la evaluación?',
+        a: 'La evaluación cubre cuatro sectores: Tecnología (resolución de problemas, pensamiento computacional, herramientas digitales), Análisis de Datos (reconocimiento de patrones, interpretación de datos, razonamiento cuantitativo), Gestión Empresarial (conciencia comercial, comunicación, pensamiento organizativo) y Marketing Digital (estrategia de contenidos, análisis de audiencias, razonamiento creativo).',
+      },
+      {
+        q: '¿Cuánto tiempo dura la evaluación?',
+        a: 'Aproximadamente 35 minutos. Como el test es adaptativo, alcanza una calibración precisa más rápido que un test de formato fijo de precisión equivalente. Puedes completarlo en una sola sesión sin cuenta previa.',
+      },
+      {
+        q: '¿Cuál es la diferencia entre prácticas de estudiante y una colocación de graduado?',
+        a: 'Las prácticas de estudiante son experiencias laborales realizadas durante los estudios de secundaria o universidad — normalmente no remuneradas o con beca, de una semana a tres meses. Las colocaciones de graduado son programas estructurados tras la titulación, generalmente con salario de graduado. Construir tu historial de prácticas mientras estudias mejora drásticamente tus resultados en solicitudes de programas de graduados.',
+      },
+      {
+        q: '¿Cómo me preparo para una entrevista de prácticas?',
+        a: 'Usa tu informe de talento de Eduentry como material de preparación. Identifica tu sector con mayor puntuación y prepara dos ejemplos de cómo has aplicado esa aptitud fuera del colegio. Investiga el producto o servicio de la empresa y conéctalo con una de las puntuaciones de tu informe. La mayoría de entrevistas de prácticas para estudiantes se centran en actitud, curiosidad y autoconocimiento.',
+      },
+    ],
+    cta: {
+      heading: '¿Estás listo para tus prácticas?',
+      body: 'Evaluación adaptativa gratuita para estudiantes de 14+. Obtén tu perfil de talento en tecnología, datos, empresa y marketing digital en 35 minutos.',
+      label: 'Iniciar evaluación gratuita →',
+      href: '/es/practicas',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

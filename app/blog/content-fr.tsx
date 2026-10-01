@@ -2622,6 +2622,117 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'how-to-find-internship-as-student': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Trouver un stage étudiant est de plus en plus compétitif — et de plus en plus déterminant. Que vous soyez un lycéen de 14 ans curieux du monde professionnel, ou un étudiant en dernière année d&apos;université qui cherche à étoffer son CV avant de diplômer, la question est la même : comment obtenir votre première expérience quand chaque offre semble exiger une expérience que vous n&apos;avez pas encore ?
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        L&apos;ancienne réponse — le réseautage, les emails à froid, les forums de recrutement — reste valable, mais elle n&apos;est plus suffisante. La nouvelle génération d&apos;étudiants qui décrochent des stages en premier sont ceux qui arrivent à l&apos;entretien avec quelque chose de concret : un profil vérifié de leur aptitude professionnelle, généré avant même d&apos;avoir mis les pieds dans un bureau.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment Trouver un Stage Étudiant</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pour trouver un stage étudiant, identifiez vos domaines de compétence les plus forts grâce à une évaluation adaptative gratuite, établissez une liste ciblée d&apos;employeurs dans ces secteurs, et approchez-les avec un profil de talent concret plutôt qu&apos;un CV vide. La recherche de l&apos;OCDE portant sur 47 études longitudinales a montré que 40 d&apos;entre elles enregistraient des résultats professionnels mesurément meilleurs pour les étudiants ayant eu une expérience de travail avant 18 ans. Commencer tôt — et arriver préparé — produit un effet cumulatif dans le temps.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Le paradoxe de l&apos;expérience :</strong> La plupart des offres de stage exigent une expérience professionnelle préalable, mais vous ne pouvez pas acquérir de l&apos;expérience sans un premier poste. Ce cercle vicieux est le principal obstacle pour les étudiants de 14 à 21 ans.
+          </Bullet>
+          <Bullet>
+            <strong>Les filtres par notes :</strong> De nombreux employeurs utilisent les notes académiques comme indicateur de capacité — mais les notes mesurent les performances passées dans un programme spécifique, pas le potentiel professionnel transférable. Des étudiants très capables issus d&apos;établissements non sélectifs sont régulièrement éliminés avant même qu&apos;un humain ne lise leur candidature.
+          </Bullet>
+          <Bullet>
+            <strong>Des voies limitées pour les lycéens :</strong> Les programmes de stages formels sont généralement conçus pour les étudiants universitaires. Les lycéens disposent de moins de points d&apos;entrée structurés — et de moins d&apos;informations sur les secteurs qui correspondent réellement à leurs forces.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi les Candidatures Traditionnelles Échouent pour les Étudiants</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La recherche de l&apos;OCDE portant sur 47 études longitudinales a montré que 40 d&apos;entre elles enregistraient des résultats professionnels mesurément meilleurs — notamment des taux d&apos;emploi plus élevés, une progression salariale plus rapide et une plus grande satisfaction au travail à 30 ans — pour les participants ayant eu une expérience de travail structurée avant 18 ans. Les étudiants qui manquent cette fenêtre ne perdent pas seulement le stage immédiat ; ils perdent l&apos;avantage cumulatif que crée l&apos;expérience précoce.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pourtant, le processus de candidature standard est construit contre les étudiants qui en bénéficieraient le plus. Voici pourquoi :
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Le tri des CV n&apos;est pas conçu pour les étudiants.</strong> Les systèmes de suivi des candidatures sont calibrés pour des candidats ayant deux à cinq ans d&apos;expérience pertinente. Un étudiant de première année ou un lycéen présentant une section d&apos;historique professionnel vide sera automatiquement écarté — quelle que soit sa capacité réelle.
+          </Bullet>
+          <Bullet>
+            <strong>Les ratios de compétition sont prohibitifs.</strong> Les grands programmes de stages dans les entreprises du CAC 40 reçoivent entre 50 et 300 candidatures par poste. Pour un étudiant sans historique, concourir uniquement sur les diplômes est une stratégie perdante.
+          </Bullet>
+          <Bullet>
+            <strong>L&apos;incertitude sectorielle bloque l&apos;action.</strong> La raison la plus fréquente pour laquelle les étudiants tardent à candidater est qu&apos;ils ne savent pas quel secteur cibler. Sans données sur leurs points forts, chaque candidature ressemble à un coup de dé — et parier gaspille les efforts et érode la confiance.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce que Mesure l&apos;Évaluation de Préparation au Stage</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;évaluation de préparation au stage Eduentry utilise le Test Adaptatif par Ordinateur (CAT) et la Théorie de Réponse à l&apos;Item (TRI/IRT) — la même méthodologie que le NWEA MAP et le SAT numérique. Chaque question est sélectionnée en temps réel en fonction de votre réponse précédente, ce qui signifie que le système se calibre à votre vrai niveau de capacité plutôt qu&apos;à une courbe de difficulté fixe. Le résultat est une mesure plus rapide, plus précise et moins sujette aux coups de chance qu&apos;un test conventionnel.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le résultat est un rapport de talent avec ajustement sectoriel — un profil en percentiles sur quatre domaines professionnels — que vous pouvez inclure dans vos candidatures, partager sur LinkedIn et utiliser pour cibler les employeurs dont les besoins correspondent à vos forces.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Technologie —</strong> Résolution de problèmes, pensée computationnelle et maîtrise des outils numériques. Prédit l&apos;adéquation pour des rôles en développement logiciel, support IT, gestion de produit et ingénierie.
+          </Bullet>
+          <Bullet>
+            <strong>Analyse de Données —</strong> Reconnaissance de patterns, interprétation des données et raisonnement quantitatif. Prédit l&apos;adéquation pour des rôles en recherche, finance, opérations et fonctions commerciales intensives en données.
+          </Bullet>
+          <Bullet>
+            <strong>Gestion d&apos;Entreprise —</strong> Conscience commerciale, communication et pensée organisationnelle. Prédit l&apos;adéquation pour le conseil en management, les opérations, la coordination de projets et les rôles en contact client.
+          </Bullet>
+          <Bullet>
+            <strong>Marketing Digital —</strong> Stratégie de contenu, analyse d&apos;audience et raisonnement créatif. Prédit l&apos;adéquation pour des rôles en marketing, communications, réseaux sociaux et gestion de marque.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment Utiliser Votre Rapport</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Ajoutez-le à votre CV :</strong> Téléchargez le rapport en PDF et joignez-le comme document de support à chaque email de candidature. Mentionnez votre score de domaine le plus élevé dans votre lettre de motivation — &ldquo;Aptitude dans le quartile supérieur en Analyse de Données (Évaluation Eduentry, 2026)&rdquo; est une affirmation concrète qu&apos;un CV vide ne peut pas faire.
+          </Check>
+          <Check>
+            <strong>Partagez-le sur LinkedIn :</strong> Ajoutez le rapport dans &ldquo;Licences et certifications.&rdquo; Incluez vos scores par domaine, indiquez Eduentry comme organisme émetteur et liez à la page de l&apos;évaluation. Les recruteurs qui recherchent des aptitudes spécifiques vous trouveront.
+          </Check>
+          <Check>
+            <strong>Ciblez vos candidatures :</strong> Votre secteur avec le score le plus élevé vous dit où se trouve votre aptitude naturelle la plus forte — et donc où doit aller votre première candidature. Arrêtez de deviner ; laissez les données diriger votre effort vers les employeurs les plus susceptibles de reconnaître votre valeur.
+          </Check>
+          <Check>
+            <strong>Préparez-vous à l&apos;entretien :</strong> Utilisez votre rapport comme matériel de préparation. Identifiez votre secteur principal, préparez deux exemples de la façon dont vous avez appliqué cette aptitude en dehors de l&apos;école et reliez-la au poste pour lequel vous candidatez. La plupart des entretiens de stage pour étudiants se concentrent sur l&apos;attitude, la curiosité et la connaissance de soi — votre rapport démontre les trois.
+          </Check>
+        </ul>
+        <Callout>
+          <strong>Commencez votre évaluation gratuite de préparation au stage →</strong> Dure 35 minutes. Sans inscription. Obtenez votre profil de talent avec ajustement sectoriel en Technologie, Analyse de Données, Gestion d&apos;Entreprise et Marketing Digital — et arrivez à chaque candidature avec quelque chose de concret à offrir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guides Associés</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/fr/blog/recherche-ocde-experience-professionnelle-adolescents-resultats-carriere', tag: 'Recherche', title: 'Recherche OCDE : Expérience Professionnelle des Adolescents et Résultats de Carrière' },
+            { href: '/fr/blog/pisa-2025-experience-professionnelle-preparation-etudiants', tag: 'Guide', title: 'PISA 2025 : Pourquoi l\'Expérience Professionnelle est la Réponse Manquante' },
+            { href: '/fr/blog/65-metiers-que-lia-ne-peut-pas-automatiser', tag: 'Guide', title: '65 Métiers que l\'IA Ne Peut Pas Automatiser' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

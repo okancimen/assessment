@@ -266,6 +266,14 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/ar/blog/ikhtibar-akademi-majani-quwat-duaf-tiflak",
     f"{BASE_URL}/ru/blog/besplatny-akademichesky-test-silnye-slabye-storony-rebenka",
     f"{BASE_URL}/zh/blog/mianfei-xueshu-ceshi-haizi-youshi-ruodian",
+    # How to find internship as student — all 7 locales
+    f"{BASE_URL}/blog/how-to-find-internship-as-student",
+    f"{BASE_URL}/tr/blog/ogrenciyken-staj-bulmanin-yeni-nesil-yolu",
+    f"{BASE_URL}/es/blog/como-encontrar-practicas-siendo-estudiante",
+    f"{BASE_URL}/fr/blog/comment-trouver-un-stage-etudiant",
+    f"{BASE_URL}/ar/blog/kayfa-tajid-tadrib-ka-talib",
+    f"{BASE_URL}/ru/blog/kak-nayti-stazhirovku-buduchi-studentom",
+    f"{BASE_URL}/zh/blog/xuesheng-ru-he-zhao-dao-shixi",
 ]
 
 

@@ -1082,6 +1082,67 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: '/fr#academique',
     },
   },
+  {
+    slug: 'comment-trouver-un-stage-etudiant',
+    contentSlug: 'how-to-find-internship-as-student',
+    title: 'Comment Trouver un Stage Étudiant : Le Guide Complet',
+    shortTitle: 'Comment Trouver un Stage Étudiant',
+    description:
+      "Guide pratique basé sur la recherche pour les lycéens et étudiants universitaires sur la recherche de stage sans expérience. Découvrez comment une évaluation de préparation au stage vous aide à contourner les filtres de notes et à décrocher votre première expérience.",
+    tldr: "Les étudiants ayant une expérience de stage préalable reçoivent des offres d'emploi avant l'obtention du diplôme à un taux 70% plus élevé (NACE, 2020). Le plus grand obstacle est le paradoxe de l'expérience. Une évaluation de préparation au stage vous donne un profil de talent vérifiable.",
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '8 min de lecture',
+    tags: ['Stage Étudiant', 'Comment Trouver un Stage', 'Préparation au Stage', 'Stage au Lycée', 'Stage Sans Expérience', 'Conseils Stage', 'Évaluation Adaptative', 'Développement de Carrière'],
+    faqs: [
+      {
+        q: 'Comment trouver un stage sans expérience ?',
+        a: "La voie la plus rapide est de démontrer une aptitude mesurable avant d'avoir un historique. Complétez une évaluation gratuite de préparation au stage pour générer un profil de talent en technologie, analyse de données, gestion d'entreprise et marketing digital. Incluez ce rapport dans votre email de candidature et votre profil LinkedIn.",
+      },
+      {
+        q: "Qu'est-ce qu'une évaluation de préparation au stage ?",
+        a: "Une évaluation de préparation au stage est un test adaptatif qui mesure votre aptitude dans les domaines de compétence les plus pertinents pour les environnements professionnels — technologie, données, entreprise et marketing digital. Utilisant le CAT et l'IRT, il s'ajuste en temps réel à votre niveau de capacité.",
+      },
+      {
+        q: 'Les lycéens de 14+ peuvent-ils faire des stages ?',
+        a: "Oui. De nombreuses entreprises proposent des stages structurés pour les élèves de 14 à 18 ans, notamment en technologie, commerce, industries créatives et PME. L'évaluation de préparation au stage est spécifiquement conçue pour ce groupe d'âge.",
+      },
+      {
+        q: "Comment fonctionne l'évaluation Eduentry ?",
+        a: "L'évaluation de préparation au stage Eduentry utilise des tests adaptatifs : chaque question est sélectionnée en fonction de votre réponse précédente, se calibrant à votre vrai niveau de capacité. Elle dure environ 35 minutes et couvre quatre secteurs : technologie, analyse de données, gestion d'entreprise et marketing digital.",
+      },
+      {
+        q: "L'évaluation Eduentry est-elle gratuite ?",
+        a: "Oui. L'évaluation de préparation au stage Eduentry est entièrement gratuite pour les étudiants de 14 ans et plus. Aucune inscription, carte de crédit ou abonnement n'est requis. Vous recevez votre rapport complet immédiatement après avoir terminé le test.",
+      },
+      {
+        q: 'Comment ajouter le rapport à mon CV ou LinkedIn ?',
+        a: 'Téléchargez votre rapport de talent en PDF et joignez-le aux emails de candidature. Sur LinkedIn, ajoutez-le dans "Licences et certifications" — indiquez Eduentry comme organisation émettrice, incluez vos scores par domaine et liez à la page de l\'évaluation.',
+      },
+      {
+        q: "Quels secteurs l'évaluation couvre-t-elle ?",
+        a: "L'évaluation couvre quatre secteurs : Technologie (résolution de problèmes, pensée computationnelle, outils numériques), Analyse de Données (reconnaissance de schémas, interprétation des données, raisonnement quantitatif), Gestion d'Entreprise (conscience commerciale, communication, pensée organisationnelle) et Marketing Digital (stratégie de contenu, analyse d'audience, raisonnement créatif).",
+      },
+      {
+        q: "Combien de temps dure l'évaluation ?",
+        a: "Environ 35 minutes. Comme le test est adaptatif, il atteint une calibration précise plus rapidement qu'un test à format fixe de précision équivalente. Vous pouvez le compléter en une seule session sans compte préalable.",
+      },
+      {
+        q: "Quelle est la différence entre un stage étudiant et un emploi diplômé ?",
+        a: "Un stage étudiant est une expérience professionnelle réalisée pendant les études secondaires ou universitaires — généralement non rémunéré ou faiblement rémunéré, d'une semaine à trois mois. Un emploi diplômé est un programme structuré après l'obtention du diplôme, généralement rémunéré à un salaire de diplômé. Construire votre historique de stages pendant vos études améliore considérablement vos résultats lors des candidatures à des programmes de diplômés.",
+      },
+      {
+        q: 'Comment me préparer à un entretien de stage ?',
+        a: "Utilisez votre rapport de talent Eduentry comme matériel de préparation. Identifiez votre secteur avec le score le plus élevé et préparez deux exemples de la façon dont vous avez appliqué cette aptitude en dehors de l'école. Recherchez le produit ou service de l'entreprise et reliez-le à l'un des scores de domaine de votre rapport.",
+      },
+    ],
+    cta: {
+      heading: 'Êtes-vous prêt pour votre stage ?',
+      body: 'Évaluation adaptative gratuite pour les étudiants de 14+. Obtenez votre profil de talent en technologie, données, entreprise et marketing digital en 35 minutes.',
+      label: 'Commencer l\'évaluation gratuite →',
+      href: '/fr/stage',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

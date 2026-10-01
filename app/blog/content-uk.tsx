@@ -4454,4 +4454,115 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'how-to-find-internship-as-student': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Finding an internship as a student has never been more competitive — or more consequential. Whether you are a 14-year-old in secondary school curious about the working world, or a final-year university student racing to build your CV before graduation, the question is the same: how do you get your first placement when every job listing seems to require experience you do not yet have?
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        The old answer — networking, cold emails, careers fairs — still applies, but it is no longer sufficient. The new generation of students who land placements first are the ones who arrive at the conversation with something concrete: a verified profile of their professional aptitude, generated before they ever set foot in an office.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Find an Internship as a Student</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          To find an internship as a student, identify your strongest skill areas using a free adaptive assessment, build a targeted list of employers in those sectors, and approach them with a concrete talent profile rather than an empty CV. OECD research across 47 longitudinal studies found that 40 of them recorded measurably better career outcomes for students who had work experience before age 18. Starting early — and arriving prepared — compounds over time.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>The experience paradox:</strong> Most internship listings require prior work experience, but you cannot gain experience without a first placement. This catch-22 is the number-one barrier for students aged 14–21.
+          </Bullet>
+          <Bullet>
+            <strong>Grade filters:</strong> Many employers use academic grades as a proxy for ability — but grades measure past performance in a specific curriculum, not transferable professional potential. High-aptitude students from non-selective schools are routinely filtered out before a human reads their application.
+          </Bullet>
+          <Bullet>
+            <strong>Limited high school pathways:</strong> Formal internship programmes are typically designed for university students. Secondary school students have fewer structured entry points — and less information about which sectors actually match their strengths.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Traditional Applications Fail Students</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD research spanning 47 longitudinal studies found that 40 out of 47 recorded measurably better career outcomes — including higher employment rates, faster wage progression, and stronger job satisfaction at age 30 — for participants who had structured work experience before age 18. The students who miss that window do not just lose the immediate placement; they lose the compounding advantage that early experience creates.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yet the standard application process is built against the very students who would benefit most. Here is why:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>CV screening was not designed for students.</strong> Applicant tracking systems are calibrated for candidates with two to five years of relevant experience. A first-year undergraduate or secondary school student submitting a blank work history section will be filtered out automatically — regardless of their actual ability.
+          </Bullet>
+          <Bullet>
+            <strong>Competitive ratios are prohibitive.</strong> Major graduate schemes at FTSE 100 companies receive between 50 and 300 applications per placement. For a student with no track record, competing on credentials alone is a losing strategy.
+          </Bullet>
+          <Bullet>
+            <strong>Sector uncertainty blocks action.</strong> The most common reason students delay applying is that they do not know which sector to target. Without data on where their strengths lie, every application feels like a guess — and guessing wastes effort and erodes confidence.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What the Internship Readiness Assessment Measures</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The Eduentry internship readiness assessment uses Computer Adaptive Testing (CAT) and Item Response Theory (IRT) — the same methodology behind NWEA MAP and the digital SAT. Each question is selected in real time based on your previous answer, which means the system calibrates to your actual ability level rather than a fixed difficulty curve. The result is a measurement that is faster, more accurate, and less susceptible to lucky guessing than a conventional test.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The output is a sector-fit talent report — a percentile-ranked profile across four professional domains — that you can include in applications, share on LinkedIn, and use to target employers whose needs match your strengths.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Technology —</strong> Problem-solving, computational thinking, and digital tool fluency. Predicts fit for roles in software development, IT support, product management, and engineering environments.
+          </Bullet>
+          <Bullet>
+            <strong>Data Analytics —</strong> Pattern recognition, data interpretation, and quantitative reasoning. Predicts fit for roles in research, finance, operations, and any data-intensive commercial function.
+          </Bullet>
+          <Bullet>
+            <strong>Business Management —</strong> Commercial awareness, communication, and organisational thinking. Predicts fit for management consulting, operations, project coordination, and client-facing roles.
+          </Bullet>
+          <Bullet>
+            <strong>Digital Marketing —</strong> Content strategy, audience analysis, and creative reasoning. Predicts fit for marketing, communications, social media, and brand management roles.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Use Your Report</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Add it to your CV:</strong> Download the report as a PDF and include it as a supporting document in every application email. List your top domain score in your personal statement — &ldquo;Top-quartile aptitude in Data Analytics (Eduentry Assessment, 2026)&rdquo; is a concrete claim that a blank CV cannot make.
+          </Check>
+          <Check>
+            <strong>Share it on LinkedIn:</strong> Add the report under &ldquo;Licences &amp; Certifications.&rdquo; Include your domain scores, list Eduentry as the issuing organisation, and link to the assessment page. Recruiters using keyword searches for specific aptitudes will find you.
+          </Check>
+          <Check>
+            <strong>Target your applications:</strong> Your highest-scoring sector tells you where your natural aptitude is strongest — and therefore where your first application should go. Stop guessing; let the data direct your effort toward the employers most likely to see your value.
+          </Check>
+          <Check>
+            <strong>Prepare for the interview:</strong> Use your report as interview preparation. Identify your top sector, prepare two examples of how you have applied that aptitude outside school, and connect it to the role you are applying for. Most internship interviews for students focus on attitude, curiosity, and self-awareness — your report demonstrates all three.
+          </Check>
+        </ul>
+        <Callout>
+          <strong>Start your free internship readiness assessment →</strong> Takes 35 minutes. No registration required. Get your sector-fit talent profile across Technology, Data Analytics, Business Management, and Digital Marketing — and arrive at every application with something concrete to offer.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/blog/oecd-teenage-work-experience-career-outcomes', tag: 'Research', title: 'OECD Research: Teenage Work Experience and Career Outcomes' },
+            { href: '/blog/pisa-2025-work-experience-student-readiness', tag: 'Guide', title: 'PISA 2025: Why Work Experience Is the Missing Answer' },
+            { href: '/blog/65-jobs-ai-cannot-automate', tag: 'Guide', title: '65 Jobs AI Cannot Automate' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }

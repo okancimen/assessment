@@ -2219,6 +2219,117 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'how-to-find-internship-as-student': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        作为一名学生寻找实习机会变得越来越具有竞争性——也越来越重要。无论你是一个14岁的高中生，好奇于职场世界；还是一名大四学生，急需在毕业前充实自己的简历，问题都是一样的：当每个职位似乎都需要你尚未拥有的经验时，你如何获得第一次实习机会？
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        传统答案——人脉、主动联系邮件、招聘会——仍然有效，但已经不够用了。如今第一批获得实习的新一代学生，是那些带着具体成果参与对话的人：一份在他们踏入办公室之前就已生成的、经过验证的职业才能档案。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">学生如何找到实习</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          作为学生找到实习，需要通过免费自适应测评识别最强能力领域，建立针对这些行业的雇主目标清单，并以具体的才能档案而非空白简历与他们接触。经济合作与发展组织（OECD）对47项纵向研究的分析发现，其中40项记录了18岁前有工作经验的学生具有可量化的更好职业结果。早开始——有备而来——会随时间产生复利效应。
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>经验悖论：</strong>大多数实习职位要求有工作经验，但没有第一份实习就无法积累经验。这个恶性循环是14至21岁学生面临的首要障碍。
+          </Bullet>
+          <Bullet>
+            <strong>成绩筛选：</strong>许多雇主将学业成绩作为能力替代指标——但成绩衡量的是在特定课程中的过往表现，而非可迁移的职业潜力。来自非重点学校的高能力学生往往在有人阅读其申请之前就被过滤掉了。
+          </Bullet>
+          <Bullet>
+            <strong>高中生机会有限：</strong>正式实习项目通常为大学生设计。高中生的结构化入口点较少——对哪些行业真正契合自己的优势了解也更少。
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">为何传统申请对学生失效</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD对47项纵向研究的分析显示，40项研究记录了18岁前有结构化工作经验的参与者具有可量化的更好职业结果——包括更高的就业率、更快的薪资增长以及30岁时更强的工作满意度。错过这一窗口期的学生不仅失去了即时的实习机会；他们还失去了早期经验所创造的复利优势。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          然而，标准申请流程恰恰对那些最能从中受益的学生不利。原因如下：
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>简历筛选系统并非为学生设计。</strong>申请人追踪系统是为有两至五年相关经验的候选人校准的。一份工作经历栏目空白的大一学生或高中生的申请，将被自动过滤——不管其实际能力如何。
+          </Bullet>
+          <Bullet>
+            <strong>竞争比例令人望而却步。</strong>大型实习项目每个名额收到50到300份申请。对于没有从业记录的学生来说，仅凭资历竞争是一种必败的策略。
+          </Bullet>
+          <Bullet>
+            <strong>行业不确定性阻碍行动。</strong>学生推迟申请最常见的原因是不知道该瞄准哪个行业。没有关于自身优势所在的数据，每次申请都像是一种猜测——猜测浪费精力并消磨自信。
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">实习准备测评衡量什么</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry实习准备测评使用计算机自适应测试（CAT）和项目反应理论（IRT）——与NWEA MAP和数字化SAT相同的方法论。每道题根据你之前的回答实时选择，这意味着系统会校准到你的真实能力水平，而非固定的难度曲线。结果是比传统测试更快、更准确、更不受随机猜测影响的测量。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          输出是一份行业匹配人才报告——跨越四个专业领域的百分位排名档案——你可以将其附在申请中，在LinkedIn上分享，并用来锁定那些需求与你优势相匹配的雇主。
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>技术 ——</strong> 问题解决、计算思维和数字工具运用能力。预测适合软件开发、IT支持、产品管理和工程环境的角色。
+          </Bullet>
+          <Bullet>
+            <strong>数据分析 ——</strong> 模式识别、数据解读和定量推理。预测适合研究、金融、运营及数据密集型商业职能的角色。
+          </Bullet>
+          <Bullet>
+            <strong>商业管理 ——</strong> 商业意识、沟通能力和组织思维。预测适合管理咨询、运营、项目协调和客户对接角色。
+          </Bullet>
+          <Bullet>
+            <strong>数字营销 ——</strong> 内容策略、受众分析和创意思维。预测适合营销、传播、社交媒体和品牌管理角色。
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如何使用你的报告</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>加入简历：</strong>将报告下载为PDF，作为支持文件附在每封申请邮件中。在个人陈述中提及最高的领域分数——"数据分析能力位于前四分位（Eduentry测评，2026年）"是一个空白简历无法做出的具体声明。
+          </Check>
+          <Check>
+            <strong>在LinkedIn上分享：</strong>在"执照与认证"栏目添加报告。包含各领域分数，将Eduentry列为颁发机构，并链接到测评页面。搜索特定能力的招聘人员将能找到你。
+          </Check>
+          <Check>
+            <strong>精准投递申请：</strong>分数最高的行业告诉你自然才能最强的地方——因此也是第一份申请应该发往的方向。停止猜测；让数据将你的努力引向最可能认可你价值的雇主。
+          </Check>
+          <Check>
+            <strong>准备面试：</strong>将报告作为面试准备材料。找出最高分领域，准备两个在学校外应用该能力的例子，并将其与申请职位联系起来。大多数学生实习面试关注的是态度、好奇心和自我认知——你的报告证明了这三点。
+          </Check>
+        </ul>
+        <Callout>
+          <strong>开始免费实习准备测评 →</strong> 仅需35分钟。无需注册。获取技术、数据分析、商业管理和数字营销领域的行业匹配人才档案——带着具体成果参与每一次申请。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">相关指南</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/zh/blog/oecd-qingshaonian-gongzuo-jingyan-zhiye-chengguo', tag: '研究', title: 'OECD研究：青少年工作经验与职业结果' },
+            { href: '/zh/blog/pisa-2025-gongzuo-jingyan-xuesheng-zhunbei', tag: '指南', title: 'PISA 2025：为何工作经验是缺失的答案' },
+            { href: '/zh/blog/65-ge-ai-wu-fa-zidong-hua-de-zhiye', tag: '指南', title: '65个人工智能无法自动化的职业' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

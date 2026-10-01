@@ -1768,6 +1768,66 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/#academic',
     },
   },
+  {
+    slug: 'how-to-find-internship-as-student',
+    title: 'How to Find an Internship as a Student: The Complete Guide',
+    shortTitle: 'How to Find an Internship as a Student',
+    description:
+      'A practical, research-backed guide for high school and university students on finding an internship with no experience. Learn how an adaptive internship readiness assessment helps you bypass grade filters, build a talent profile, and land your first placement.',
+    tldr: 'Students with prior internship experience receive job offers at a 70% higher rate before graduation (NACE, 2020). The biggest barrier is the experience paradox — you need experience to get experience. An adaptive internship readiness assessment gives you a verifiable talent profile that lets employers see your potential before you have a track record.',
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '8 min read',
+    tags: ['Student Internship', 'How to Find Internship', 'Internship Readiness', 'High School Internship', 'No Experience Internship', 'Internship Tips', 'Adaptive Assessment', 'Career Development'],
+    faqs: [
+      {
+        q: 'How do I find an internship with no experience?',
+        a: 'The fastest route is to demonstrate measurable aptitude before you have a track record. Complete a free internship readiness assessment to generate a talent profile across technology, data analytics, business management, and digital marketing. Include this report in your application email and LinkedIn profile — it gives recruiters a concrete signal about your capabilities that your grades alone cannot convey.',
+      },
+      {
+        q: 'What is an internship readiness assessment?',
+        a: 'An internship readiness assessment is an adaptive test that measures your aptitude across the competency areas most relevant to professional environments — typically technology, data, business, and digital marketing. Using Computer Adaptive Testing (CAT) and Item Response Theory (IRT), it adjusts in real time to your ability level. The output is a calibrated talent report with percentile scores you can share with potential employers.',
+      },
+      {
+        q: 'Can high school students aged 14+ do internships?',
+        a: 'Yes. Many companies offer structured placements for students aged 14–18, particularly in technology, retail, creative industries, and SMEs. An internship readiness assessment is specifically designed for this age group — it benchmarks your strengths without requiring prior work experience, giving you a credible starting point for your first application.',
+      },
+      {
+        q: 'How does the Eduentry assessment work?',
+        a: 'The Eduentry internship readiness assessment uses adaptive testing: each question is selected based on your previous answer, so it calibrates to your real ability level rather than a fixed difficulty. It takes approximately 35 minutes and covers four sectors — technology, data analytics, business management, and digital marketing. At the end, you receive a detailed talent report with domain scores and a sector-fit profile.',
+      },
+      {
+        q: 'Is the Eduentry assessment free?',
+        a: 'Yes. The Eduentry internship readiness assessment is completely free for students aged 14 and above. No registration, no credit card, and no subscription is required. You receive your full talent report immediately after completing the test.',
+      },
+      {
+        q: 'How do I add the internship readiness report to my CV or LinkedIn?',
+        a: 'Download your talent report as a PDF and attach it to application emails as a supporting document. On LinkedIn, add it under "Licences & Certifications" — list Eduentry as the issuing organisation, include your domain scores, and link to the assessment page. Recruiters using keyword searches will find candidates who have demonstrated initiative and measurable aptitude.',
+      },
+      {
+        q: 'What sectors does the Eduentry internship readiness assessment cover?',
+        a: 'The assessment covers four sectors: Technology (problem-solving, computational thinking, digital tools), Data Analytics (pattern recognition, data interpretation, quantitative reasoning), Business Management (commercial awareness, communication, organisational thinking), and Digital Marketing (content strategy, audience analysis, creative reasoning). Your report shows which sectors match your natural strengths.',
+      },
+      {
+        q: 'How long does the internship readiness assessment take?',
+        a: 'Approximately 35 minutes. Because the test is adaptive, it reaches precise calibration faster than a fixed-format test of equivalent accuracy. You can complete it in one sitting — no account or prior preparation required.',
+      },
+      {
+        q: 'What is the difference between a student internship and a graduate placement?',
+        a: 'A student internship is a work placement undertaken during secondary school or undergraduate study — typically unpaid or nominally paid, lasting between one week and three months. A graduate placement (or graduate scheme) is a structured programme entered after degree completion, usually paid at a graduate salary with a formal development curriculum. Building your internship record while studying dramatically improves your graduate placement application outcomes.',
+      },
+      {
+        q: 'How do I prepare for an internship interview?',
+        a: 'Use your Eduentry talent report as interview preparation material. Identify your highest-scoring sector and prepare two examples of how you have applied that aptitude outside school. Research the company\'s product or service and connect it to one of your report\'s domain scores. Most internship interviews for students focus on attitude, curiosity, and self-awareness rather than technical depth — your assessment report demonstrates all three.',
+      },
+    ],
+    cta: {
+      heading: 'Find out if you\'re internship-ready',
+      body: 'Free adaptive assessment for students 14+. Get your talent profile across tech, data, business and digital marketing in 35 minutes.',
+      label: 'Start free assessment →',
+      href: '/internship',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

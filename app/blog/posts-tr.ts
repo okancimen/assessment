@@ -1239,6 +1239,67 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr#akademik',
     },
   },
+  {
+    slug: 'ogrenciyken-staj-bulmanin-yeni-nesil-yolu',
+    contentSlug: 'how-to-find-internship-as-student',
+    title: 'Öğrenci Olarak Staj Bulma: Adım Adım Rehber',
+    shortTitle: 'Öğrenciyken Staj Bulmanın Yeni Nesil Yolu',
+    description:
+      'Deneyimsiz lise ve üniversite öğrencileri için staj bulma rehberi. Adaptif staj hazırlık değerlendirmesiyle not filtrelerini aşmayı, yetenek profili oluşturmayı ve ilk stajını bulmayı öğren.',
+    tldr: 'Staj deneyimi olan öğrenciler mezuniyetten önce iş teklifi almada akranlarına göre yüzde 70 daha yüksek oran yakalıyor (NACE, 2020). En büyük engel deneyim paradoksu: deneyim kazanmak için deneyime ihtiyaç var. Ücretsiz staj hazırlık değerlendirmesi, bir geçmişin olmadan işverenlere potansiyelini kanıtlayan doğrulanabilir bir yetenek profili sunar.',
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '8 dk okuma',
+    tags: ['Öğrenci Stajı', 'Staj Bulma', 'Staj Hazırlık Testi', 'Lise Stajı', 'Deneyimsiz Staj', 'Staj İpuçları', 'Uyarlanabilir Değerlendirme', 'Kariyer Gelişimi'],
+    faqs: [
+      {
+        q: 'Deneyimim yokken staj nasıl bulabilirim?',
+        a: 'En hızlı yol, bir geçmişin olmadan ölçülebilir yeteneğini kanıtlamaktır. Teknoloji, veri analitiği, iş yönetimi ve dijital pazarlama alanlarında bir yetenek profili oluşturmak için ücretsiz staj hazırlık değerlendirmesini tamamla. Bu raporu başvuru e-postana ve LinkedIn profiline ekle — bu, notlarının tek başına aktaramadığı somut bir sinyal gönderir.',
+      },
+      {
+        q: 'Staj hazırlık değerlendirmesi nedir?',
+        a: 'Staj hazırlık değerlendirmesi, profesyonel ortamlarla en ilgili yetkinlik alanlarındaki — genellikle teknoloji, veri, iş dünyası ve dijital pazarlama — yeteneklerini ölçen adaptif bir testtir. Bilgisayar Uyarlamalı Test (CAT) ve Madde Tepki Teorisi (IRT) kullanarak gerçek zamanlı olarak yetenek seviyene uyarlanır. Çıktısı, potansiyel işverenlerle paylaşabileceğin kalibre edilmiş bir yetenek raporudur.',
+      },
+      {
+        q: '14 yaşındaki lise öğrencileri staj yapabilir mi?',
+        a: 'Evet. Pek çok şirket, özellikle teknoloji, perakende, yaratıcı sektörler ve KOBİ\'lerde 14–18 yaş arası öğrenciler için yapılandırılmış staj imkânları sunuyor. Staj hazırlık değerlendirmesi özellikle bu yaş grubu için tasarlanmış olup önceki iş deneyimi gerektirmeden güçlü yönlerini ölçer.',
+      },
+      {
+        q: 'Eduentry değerlendirmesi nasıl çalışıyor?',
+        a: 'Eduentry staj hazırlık değerlendirmesi adaptif test kullanır: her soru bir önceki cevabına göre seçilir, bu sayede sabit bir zorluk yerine gerçek yetenek seviyene kalibre olur. Yaklaşık 35 dakika sürer ve dört sektörü kapsar: teknoloji, veri analitiği, iş yönetimi ve dijital pazarlama. Sonunda alan puanlarını ve sektör uyum profilini içeren detaylı bir yetenek raporu alırsın.',
+      },
+      {
+        q: 'Eduentry değerlendirmesi ücretsiz mi?',
+        a: 'Evet. Eduentry staj hazırlık değerlendirmesi 14 yaş ve üzeri öğrenciler için tamamen ücretsizdir. Kayıt, kredi kartı veya abonelik gerekmez. Testi tamamladıktan hemen sonra tam yetenek raporunu alırsın.',
+      },
+      {
+        q: 'Staj hazırlık raporumu CV\'me veya LinkedIn\'e nasıl eklerim?',
+        a: 'Yetenek raporunu PDF olarak indirip başvuru e-postalarına destekleyici belge olarak ekle. LinkedIn\'de "Lisanslar ve Sertifikalar" bölümüne ekle — düzenleyen kuruluş olarak Eduentry\'yi belirt, alan puanlarını dahil et ve değerlendirme sayfasına bağlantı ver. İşverenler, anahtar kelime aramalarında inisiyatif ve ölçülebilir yetenek sergileyen adayları bulur.',
+      },
+      {
+        q: 'Değerlendirme hangi sektörleri kapsıyor?',
+        a: 'Değerlendirme dört sektörü kapsıyor: Teknoloji (problem çözme, hesaplamalı düşünme, dijital araçlar), Veri Analitiği (örüntü tanıma, veri yorumlama, nicel muhakeme), İş Yönetimi (ticari farkındalık, iletişim, organizasyonel düşünme) ve Dijital Pazarlama (içerik stratejisi, kitle analizi, yaratıcı muhakeme). Rapor, doğal güçlü yönlerinle hangi sektörlerin örtüştüğünü gösterir.',
+      },
+      {
+        q: 'Staj hazırlık değerlendirmesi ne kadar sürer?',
+        a: 'Yaklaşık 35 dakika. Test adaptif olduğundan, eşdeğer doğruluktaki sabit formatlı bir testten daha hızlı kesin kalibrasyon sağlar. Tek oturumda tamamlayabilirsin — hesap veya ön hazırlık gerekmez.',
+      },
+      {
+        q: 'Öğrenci stajı ile mezun yerleştirmesi arasındaki fark nedir?',
+        a: 'Öğrenci stajı, ortaöğretim veya lisans eğitimi sırasında yapılan iş deneyimidir — genellikle ücretsiz veya sembolik ücretli, bir haftadan üç aya kadar sürer. Mezun yerleştirmesi ise lisans tamamlandıktan sonra girilen, genellikle mezun maaşıyla ödenen ve resmi gelişim müfredatı olan yapılandırılmış bir programdır. Öğrenciyken staj geçmişi oluşturmak, mezun yerleştirmesi başvuru sonuçlarını dramatik biçimde iyileştirir.',
+      },
+      {
+        q: 'Staj mülakatına nasıl hazırlanırım?',
+        a: 'Eduentry yetenek raporunu mülakat hazırlık materyali olarak kullan. En yüksek puan aldığın sektörü belirle ve o yeteneği okul dışında nasıl uyguladığına dair iki örnek hazırla. Şirketin ürününü veya hizmetini araştır ve bunu raporundaki alan puanlarından biriyle ilişkilendir. Öğrenciler için çoğu staj mülakatı teknik derinlikten çok tutum, merak ve öz farkındalığa odaklanır — değerlendirme raporun üçünü birden gösterir.',
+      },
+    ],
+    cta: {
+      heading: 'Staja hazır mısın?',
+      body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Teknoloji, veri, iş yönetimi ve dijital pazarlamadaki hazırlık seviyeni 35 dakikada öğren.',
+      label: 'Ücretsiz değerlendirmeyi başlat →',
+      href: '/tr/staj',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

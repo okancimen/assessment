@@ -3125,6 +3125,117 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'how-to-find-internship-as-student': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Encontrar prácticas siendo estudiante es cada vez más competitivo — y más determinante. Tanto si eres un alumno de secundaria de 14 años curioso por el mundo laboral, como un estudiante universitario de último año que necesita rellenar su CV antes de graduarse, la pregunta es la misma: ¿cómo consigues tu primera plaza cuando cada oferta de empleo parece exigir experiencia que todavía no tienes?
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        La respuesta antigua — networking, emails en frío, ferias de empleo — sigue siendo válida, pero ya no es suficiente. La nueva generación de estudiantes que consiguen prácticas antes son los que llegan a la conversación con algo concreto: un perfil verificado de su aptitud profesional, generado antes de haber pisado nunca una oficina.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo Encontrar Prácticas Siendo Estudiante</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Para encontrar prácticas siendo estudiante, identifica tus áreas de mayor fortaleza mediante una evaluación adaptativa gratuita, elabora una lista de empleadores en esos sectores y preséntate a ellos con un perfil de talento concreto en lugar de un CV vacío. La investigación de la OCDE en 47 estudios longitudinales encontró que 40 de ellos registraron resultados profesionales mediblemente mejores para estudiantes con experiencia laboral antes de los 18 años. Empezar pronto — y llegar preparado — genera un efecto acumulativo.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>La paradoja de la experiencia:</strong> La mayoría de las ofertas de prácticas exigen experiencia laboral previa, pero no puedes ganar experiencia sin una primera plaza. Este círculo vicioso es el principal obstáculo para los estudiantes de 14 a 21 años.
+          </Bullet>
+          <Bullet>
+            <strong>Filtros de notas:</strong> Muchos empleadores usan las calificaciones académicas como indicador de capacidad — pero las notas miden el rendimiento pasado en un currículo concreto, no el potencial profesional transferible. Estudiantes con alta aptitud de centros no selectivos son descartados antes de que ningún humano lea su solicitud.
+          </Bullet>
+          <Bullet>
+            <strong>Pocas vías para alumnos de secundaria:</strong> Los programas formales de prácticas suelen estar diseñados para universitarios. Los alumnos de secundaria tienen menos puntos de entrada estructurados — y menos información sobre qué sectores encajan realmente con sus fortalezas.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Por Qué Las Solicitudes Tradicionales Fallan a los Estudiantes</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La investigación de la OCDE en 47 estudios longitudinales encontró que 40 de ellos registraron resultados profesionales mediblemente mejores — incluyendo mayores tasas de empleo, progresión salarial más rápida y mayor satisfacción laboral a los 30 años — para participantes con experiencia laboral estructurada antes de los 18. Los estudiantes que pierden esa ventana no solo pierden la plaza inmediata; pierden la ventaja acumulativa que crea la experiencia temprana.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sin embargo, el proceso de solicitud estándar está construido en contra de los estudiantes que más se beneficiarían. Estas son las razones:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>El filtrado de CV no está diseñado para estudiantes.</strong> Los sistemas de seguimiento de candidatos están calibrados para candidatos con dos a cinco años de experiencia relevante. Un universitario de primer año o un alumno de secundaria que presenta una sección de historial laboral en blanco será descartado automáticamente — independientemente de su capacidad real.
+          </Bullet>
+          <Bullet>
+            <strong>Los ratios de competencia son prohibitivos.</strong> Los grandes programas de prácticas en empresas del IBEX 35 reciben entre 50 y 300 solicitudes por plaza. Para un estudiante sin historial, competir únicamente por credenciales es una estrategia perdedora.
+          </Bullet>
+          <Bullet>
+            <strong>La incertidumbre sectorial bloquea la acción.</strong> La razón más común por la que los estudiantes retrasan sus solicitudes es que no saben a qué sector apuntar. Sin datos sobre dónde están sus fortalezas, cada solicitud se siente como una apuesta — y apostar malgasta esfuerzo y erosiona la confianza.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué Mide la Evaluación de Preparación para Prácticas</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La evaluación de preparación para prácticas de Eduentry utiliza Testing Adaptativo por Computadora (CAT) y Teoría de Respuesta al Ítem (TRI/IRT) — la misma metodología que el NWEA MAP y el SAT digital. Cada pregunta se selecciona en tiempo real según tu respuesta anterior, lo que significa que el sistema se calibra a tu nivel real de capacidad en lugar de una curva de dificultad fija. El resultado es una medición más rápida, más precisa y menos susceptible al azar que un test convencional.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El resultado es un informe de talento con ajuste sectorial — un perfil por percentiles en cuatro dominios profesionales — que puedes incluir en solicitudes, compartir en LinkedIn y usar para orientar tu búsqueda hacia empleadores cuyas necesidades encajan con tus fortalezas.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Tecnología —</strong> Resolución de problemas, pensamiento computacional y fluidez en herramientas digitales. Predice idoneidad para roles en desarrollo de software, soporte TI, gestión de producto e ingeniería.
+          </Bullet>
+          <Bullet>
+            <strong>Análisis de Datos —</strong> Reconocimiento de patrones, interpretación de datos y razonamiento cuantitativo. Predice idoneidad para roles en investigación, finanzas, operaciones y funciones comerciales intensivas en datos.
+          </Bullet>
+          <Bullet>
+            <strong>Gestión Empresarial —</strong> Conciencia comercial, comunicación y pensamiento organizativo. Predice idoneidad para consultoría de gestión, operaciones, coordinación de proyectos y roles de cara al cliente.
+          </Bullet>
+          <Bullet>
+            <strong>Marketing Digital —</strong> Estrategia de contenidos, análisis de audiencias y razonamiento creativo. Predice idoneidad para roles en marketing, comunicaciones, redes sociales y gestión de marca.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo Usar Tu Informe</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Añádelo a tu CV:</strong> Descarga el informe en PDF e inclúyelo como documento de apoyo en cada email de solicitud. Indica tu puntuación de dominio más alta en tu declaración personal — &ldquo;Aptitud en el cuartil superior en Análisis de Datos (Evaluación Eduentry, 2026)&rdquo; es una afirmación concreta que un CV vacío no puede hacer.
+          </Check>
+          <Check>
+            <strong>Compártelo en LinkedIn:</strong> Añade el informe en &ldquo;Licencias y Certificaciones.&rdquo; Incluye tus puntuaciones por dominio, indica Eduentry como organización emisora y enlaza a la página de la evaluación. Los reclutadores que buscan aptitudes específicas te encontrarán.
+          </Check>
+          <Check>
+            <strong>Orienta tus solicitudes:</strong> Tu sector con mayor puntuación te dice dónde está tu aptitud natural más fuerte — y por tanto dónde debe ir tu primera solicitud. Deja de adivinar; deja que los datos dirijan tu esfuerzo hacia los empleadores con más probabilidades de reconocer tu valor.
+          </Check>
+          <Check>
+            <strong>Prepárate para la entrevista:</strong> Usa tu informe como material de preparación. Identifica tu sector principal, prepara dos ejemplos de cómo has aplicado esa aptitud fuera del colegio y conéctalo con el rol al que solicitas. La mayoría de las entrevistas de prácticas para estudiantes se centran en actitud, curiosidad y autoconocimiento — tu informe demuestra los tres.
+          </Check>
+        </ul>
+        <Callout>
+          <strong>Empieza tu evaluación gratuita de preparación para prácticas →</strong> Dura 35 minutos. Sin registro. Obtén tu perfil de talento con ajuste sectorial en Tecnología, Análisis de Datos, Gestión Empresarial y Marketing Digital — y llega a cada solicitud con algo concreto que ofrecer.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guías Relacionadas</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/es/blog/investigacion-ocde-experiencia-laboral-adolescentes-resultados-carrera', tag: 'Investigación', title: 'Investigación OCDE: Experiencia Laboral en Adolescentes y Resultados Profesionales' },
+            { href: '/es/blog/pisa-2025-experiencia-laboral-preparacion-estudiantes', tag: 'Guía', title: 'PISA 2025: Por qué la Experiencia Laboral es la Respuesta que Falta' },
+            { href: '/es/blog/65-profesiones-que-la-ia-no-puede-automatizar', tag: 'Guía', title: '65 Profesiones que la IA No Puede Automatizar' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {
