@@ -70,6 +70,31 @@ const BTN = (href: string, label: string) =>
 
 const FOOTER = `<p style="color:#9ca3af;font-size:11px;text-align:center;margin:0">Eduentry · If you no longer want reminders, simply complete or ignore this assessment.</p>`
 
+// ── No-child onboarding reminder ─────────────────────────────────────────────
+
+export async function sendNoChildReminderEmail(opts: {
+  to: string
+  name: string
+}): Promise<void> {
+  const addChildUrl  = `${SITE}/dashboard`
+  const sampleUrl    = `${SITE}/sample-report`
+  const n = opts.name
+
+  await sendEmail(
+    opts.to,
+    'See what your child is really capable of',
+    `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
+      <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">You're one step away</h1>
+      <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${n}, you created an Eduentry account yesterday but haven't added your child yet. The assessment takes around 35 minutes and gives you a full cognitive profile — verbal reasoning, numeracy, and spatial thinking — benchmarked against children internationally.</p>
+      <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Here's an example of what the report looks like:</p>
+      ${BTN(sampleUrl, 'View sample report →')}
+      <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Ready to get started? Add your child and begin the assessment from your dashboard:</p>
+      ${BTN(addChildUrl, 'Add your child →')}
+      <p style="color:#9ca3af;font-size:11px;text-align:center;margin:0">Eduentry · You're receiving this because you created an account. This is a one-time reminder.</p>
+    </div>`
+  )
+}
+
 // ── Academic reminder emails ──────────────────────────────────────────────────
 
 export async function sendAcademicReminderEmail(opts: {

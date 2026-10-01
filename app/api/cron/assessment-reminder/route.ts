@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
-import { sendAcademicReminderEmail, sendInternshipReminderEmail } from '@/lib/email'
+import { sendAcademicReminderEmail, sendInternshipReminderEmail, sendNoChildReminderEmail } from '@/lib/email'
 
 // Supabase admin client — bypasses RLS to read all in-progress assessments
 function adminClient() {
@@ -125,6 +125,41 @@ export async function GET(req: NextRequest) {
     }
   }
 
-  console.log(`[cron/assessment-reminder] sent=${sent} skipped=${skipped}`)
-  return NextResponse.json({ sent, skipped })
+  // ── No-child onboarding reminder ──────────────────────────────────────────
+  // Users who registered > 24h ago and never added a child get one email nudge.
+  let noChildSent = 0
+
+  const cutoff = new Date(now.getTime() - 24 * 60 * 60 * 1000).toISOString()
+
+  const { data: newProfiles } = await supabase
+    .from('profiles')
+    .select('id, email, full_name')
+    .is('no_child_reminder_sent_at', null)
+    .lt('created_at', cutoff)
+
+  for (const profile of newProfiles ?? []) {
+    if (!profile.email) continue
+
+    const { count } = await supabase
+      .from('children')
+      .select('id', { count: 'exact', head: true })
+      .eq('parent_id', profile.id)
+
+    if (count && count > 0) continue
+
+    const name = profile.full_name?.split(' ')[0] ?? 'there'
+    try {
+      await sendNoChildReminderEmail({ to: profile.email, name })
+      await supabase
+        .from('profiles')
+        .update({ no_child_reminder_sent_at: now.toISOString() })
+        .eq('id', profile.id)
+      noChildSent++
+    } catch (err) {
+      console.error(`[cron/assessment-reminder] no-child email failed for ${profile.id}`, err)
+    }
+  }
+
+  console.log(`[cron/assessment-reminder] sent=${sent} skipped=${skipped} noChildSent=${noChildSent}`)
+  return NextResponse.json({ sent, skipped, noChildSent })
 }
