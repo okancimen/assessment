@@ -2533,6 +2533,95 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'discover-child-strengths-free-academic-test': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        La plupart des parents qui cherchent un test académique gratuit partent des notes scolaires — mais les notes ne montrent que les performances passées dans une école, un enseignant et un programme spécifiques. Un enfant qui obtient les meilleures notes de sa classe peut opérer bien en dessous de son plafond cognitif. Un autre qui a du mal à l&apos;écrit peut avoir un raisonnement spatial remarquable qu&apos;aucun enseignant n&apos;a encore mis en évidence.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Notre test académique adaptatif gratuit mesure le raisonnement verbal, numérique et visuo-spatial de façon indépendante — puis compare chaque score aux normes internationales d&apos;âge. En environ 35 minutes, il produit un profil cognitif personnalisé qui répond à la vraie question de chaque parent : où mon enfant est-il véritablement fort, et où a-t-il besoin de soutien ?
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Quelles sont les Forces et Faiblesses Académiques de mon Enfant ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          C&apos;est la question que les parents posent le plus souvent — et la plupart n&apos;obtiennent jamais de réponse claire, parce que les notes scolaires sont le mauvais outil. Les notes classent les enfants par rapport à leurs camarades de classe ; elles ne mesurent pas le profil cognitif qui détermine les performances dans toutes les matières.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Les forces et faiblesses académiques couvrent trois domaines cognitifs indépendants :</strong> le raisonnement verbal (compréhension linguistique et analogie), le raisonnement numérique (reconnaissance de patterns et logique mathématique) et la pensée visuo-spatiale (analyse de formes et relations 3D). Un test adaptatif gratuit produit un score percentile international distinct pour chaque domaine — indiquant précisément où votre enfant est fort et où un soutien ciblé fera la plus grande différence.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>Forces Verbales :</strong> Les enfants à fort raisonnement verbal excellent en compréhension linguistique, analogies et inférence. Ils s&apos;épanouissent en français, lettres, langues étrangères et toute matière nécessitant l&apos;interprétation de textes complexes — y compris les sciences quand le goulot d&apos;étranglement est la compréhension de lecture.
+          </Bullet>
+          <Bullet>
+            <strong>Forces Numériques :</strong> Un raisonnement numérique élevé signifie une forte reconnaissance des patterns, une logique mathématique et une pensée quantitative. Ce test mesure la <em>façon de penser</em>, pas les connaissances du programme. Un enfant peut scorer au 90e percentile sans avoir jamais étudié l&apos;algèbre — révélant un potentiel que les performances en classe ont masqué.
+          </Bullet>
+          <Bullet>
+            <strong>Forces Visuo-Spatiales :</strong> Les enfants à fort raisonnement spatial excellent en rotation mentale, analyse de formes et raisonnement 3D. La recherche relie constamment ce domaine aux STEM, à l&apos;ingénierie, à l&apos;architecture et à l&apos;informatique. C&apos;est aussi le domaine le moins susceptible d&apos;être identifié dans le travail scolaire standard.
+          </Bullet>
+          <Bullet>
+            <strong>Axes de Développement :</strong> Tout domaine où un enfant score en dessous de la norme de son âge n&apos;est pas un échec — c&apos;est une cible prioritaire où le soutien ciblé produit l&apos;amélioration la plus rapide et mesurable.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Méthodologie du Test Adaptatif : Fondements Scientifiques</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Notre test utilise le <strong>Test Adaptatif par Ordinateur (CAT)</strong> : chaque question est sélectionnée en temps réel selon la réponse précédente. Bonne réponse → question plus difficile. Difficulté → recalibrage. Le système triangule le vrai niveau de l&apos;enfant en 25–35 questions — la même architecture que le{' '}
+          <Link href="/fr/blog/scores-nwea-map-expliques" className="text-indigo-600 hover:underline">NWEA MAP</Link> et le CAT4.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Chaque question est calibrée avec la <strong>Théorie de Réponse à l&apos;Item (TRI/IRT)</strong>, produisant une estimation de la capacité (thêta) avec un intervalle de confiance connu. Les résultats sont convertis en percentiles selon des normes internationales alignées avec le CAT4, le NWEA MAP, le <Link href="/fr/blog/pisa-2025-crise-education-mondiale-ce-que-les-parents-doivent-savoir" className="text-indigo-600 hover:underline">PISA</Link> et le Cogat.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Que Mesure le Test Académique Gratuit ?</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet><strong>Raisonnement Verbal —</strong> Compréhension de mots, raisonnement analogique, inférence de textes. Performances élevées et constantes en français, lettres et langues.</Bullet>
+          <Bullet><strong>Raisonnement Numérique —</strong> Reconnaissance de patterns, relations numériques, logique quantitative. Mesure le <em>style de pensée</em> mathématique, pas les connaissances curriculaires.</Bullet>
+          <Bullet><strong>Raisonnement Visuo-Spatial —</strong> Analyse de formes, rotation mentale, relations spatiales. Forte corrélation avec les STEM, l&apos;ingénierie et le design. Le domaine le plus sous-identifié dans l&apos;évaluation scolaire standard.</Bullet>
+          <Bullet><strong>Vitesse de Traitement et Attention —</strong> La rapidité et la précision avec lesquelles l&apos;information est traitée. Interprété avec le raisonnement numérique pour identifier des patterns d&apos;attention.</Bullet>
+        </ul>
+        <Callout>
+          <strong>Commencez le test gratuit maintenant</strong> — rapport complet sur quatre domaines en 35 minutes, sans inscription.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment Utiliser les Résultats : École, Examens et Soutien Scolaire</h2>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Choix de l&apos;école et du programme :</strong> Les profils à dominante verbale s&apos;épanouissent dans les filières littéraires ; les profils numérico-spatiaux progressent dans les programmes scientifiques intensifs.</Check>
+          <Check><strong>Soutien scolaire ciblé :</strong> Le rapport identifie quel domaine nécessite un développement et lequel est déjà fort — évitant l&apos;erreur courante d&apos;investir dans un domaine déjà solide.</Check>
+          <Check><strong>Préparation aux examens :</strong> La préparation aux <Link href="/fr/blog/guide-evaluation-programmes-surdoues" className="text-indigo-600 hover:underline">programmes pour surdoués</Link> et aux grandes écoles nécessite des stratégies différentes selon le profil cognitif.</Check>
+          <Check><strong>Communication avec les enseignants :</strong> Arriver à une réunion parents-professeurs avec des données de test standardisé change la conversation. &ldquo;93e percentile en raisonnement spatial&rdquo; est un input différent de &ldquo;il semble intelligent mais distrait.&rdquo;</Check>
+          <Check><strong>Planification académique à long terme :</strong> Un profil établi à 9 ans donne trois ans d&apos;investissement ciblé avant la transition au collège.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Les axes de développement de votre enfant ne sont pas un bilan d&apos;échecs — ce sont des domaines de potentiel qui attendent le bon type de soutien. Avec la carte cognitive objective que fournit cette évaluation, vous passez de la réaction aux notes à des décisions stratégiques fondées sur des données.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guides Associés</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/fr/blog/comment-se-compare-votre-enfant', tag: 'Guide', title: 'Comment se Compare Votre Enfant au Niveau Mondial ?' },
+            { href: '/fr/blog/comprendre-forces-faiblesses-enfant-lycee', tag: 'Guide', title: 'Forces et Faiblesses : Guide de Préparation au Lycée' },
+            { href: '/fr/blog/decouvrir-forces-cachees-enfant-guide-parents-moderne', tag: 'Guide', title: 'Forces Cachées de Votre Enfant : Guide Moderne pour Parents' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

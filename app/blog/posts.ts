@@ -1709,6 +1709,65 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/#academic',
     },
   },
+  {
+    slug: 'discover-child-strengths-free-academic-test',
+    title: "Free Academic Test for Children: Discover Your Child's Strengths and Weaknesses",
+    shortTitle: "Free Academic Test: Discover Your Child's Strengths",
+    description: "School grades don't reveal your child's true cognitive potential. Our free adaptive academic test measures verbal, numerical and spatial reasoning in 35 minutes — benchmarked against international norms, with an instant report.",
+    tldr: "A free adaptive test measuring verbal reasoning, numerical reasoning, and visual-spatial thinking independently — giving parents an international-percentile report in 35 minutes. Built on Computer Adaptive Testing (CAT) and Item Response Theory, the same methodology behind CAT4 and NWEA MAP.",
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '10 min read',
+    tags: ['Free Academic Test', 'Child Strengths', 'Child Weaknesses', 'Cognitive Assessment', 'Adaptive Test', 'Parent Guide', 'CAT4', 'Child Development'],
+    faqs: [
+      {
+        q: "What are my child's academic strengths and weaknesses?",
+        a: "Academic strengths and weaknesses are best identified through a standardised cognitive assessment, not school grades alone. A free adaptive test measures verbal reasoning (language comprehension, analogies), numerical reasoning (pattern recognition, mathematical logic), and visual-spatial thinking (shape analysis, mental rotation) independently — producing a percentile score for each domain. This shows precisely where your child is strong, where they need support, and how they compare to age-matched peers internationally.",
+      },
+      {
+        q: "How long does the free academic test take?",
+        a: "Approximately 25–35 minutes. The adaptive format means every question adjusts to the previous answer, reaching the same measurement accuracy as an 80-question test in far fewer questions.",
+      },
+      {
+        q: "What age range is it designed for?",
+        a: "The assessment is designed for children aged 6–16.",
+      },
+      {
+        q: "When do results appear?",
+        a: "Immediately after the test completes. The full report — including percentile ranks for each cognitive domain — is available straight away with no waiting period.",
+      },
+      {
+        q: "How is this different from school grades?",
+        a: "Grades measure past performance within a specific school, teacher, and curriculum — not the cognitive potential underneath. This test measures the underlying thinking skills that drive performance in any subject, independently of curriculum. A child can rank in the top 10% of their class and still have untapped potential that grades never surfaced.",
+      },
+      {
+        q: "What is adaptive testing and how does it differ from a regular test?",
+        a: "In a standard test, every child sees the same questions at the same difficulty. In a Computer Adaptive Test (CAT), every question is selected based on the previous answer: correct answer → harder question; struggle → easier question. The system triangulates the child's true ability level precisely in 25–35 questions. This is the same methodology behind CAT4, NWEA MAP, and the digital SAT.",
+      },
+      {
+        q: "Is the test scientifically valid?",
+        a: "Yes. Every question is calibrated using Item Response Theory (IRT), meaning each item's difficulty, discrimination, and guessing parameters are statistically known. Scores are converted to percentile ranks benchmarked against international norms aligned with CAT4, NWEA MAP, PISA, and Cogat scales.",
+      },
+      {
+        q: "Can a free test show whether my child is gifted?",
+        a: "Yes. An adaptive cognitive assessment measures the three domains most strongly associated with giftedness: verbal reasoning, numerical reasoning, and visual-spatial thinking. A child scoring above the 90th percentile across all three domains is a strong candidate for gifted programme consideration. The test takes 35 minutes and requires no registration.",
+      },
+      {
+        q: "How accurate is a free online academic test compared to a professional assessment?",
+        a: "Accuracy depends on methodology, not price. This test uses Computer Adaptive Testing (CAT) and Item Response Theory (IRT) — the same frameworks used in CAT4 and NWEA MAP, which are administered professionally in schools. Measurement precision is comparable. The difference is that professional assessments are delivered in a standardised, supervised environment.",
+      },
+      {
+        q: "What does the test report tell me that school reports don't?",
+        a: "School reports show grade-based performance relative to classmates. The cognitive assessment report shows three things a school report never can: (1) your child's ability level relative to age-matched peers internationally, not just their class; (2) the independent strength of each cognitive domain, so verbal and spatial strengths don't cancel each other out in an average; (3) which specific sub-skills within each domain to develop next.",
+      },
+    ],
+    cta: {
+      heading: "Find your child's strengths — free",
+      body: "Adaptive assessment for ages 6–16. Verbal, numerical and spatial reasoning measured against international benchmarks — instant report, no registration.",
+      label: 'Start free test',
+      href: '/#academic',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

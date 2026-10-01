@@ -2130,6 +2130,95 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'discover-child-strengths-free-academic-test': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        大多数寻找免费学业测试的家长从学校成绩出发——但成绩只显示在特定学校、特定老师和特定课程体系下的过往表现。班级里成绩最好的孩子，可能远未达到其认知能力的上限。另一个在书面作业上有困难的孩子，可能拥有出色的空间推理能力，而这一点还没有任何老师发现过。
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        我们的免费自适应学业测试独立测量语言推理、数字推理和视觉空间思维——然后将每项分数与国际年龄规范进行比较。大约35分钟内，它生成一份个性化的认知图谱，回答每位家长真正需要回答的问题：我的孩子在哪里真正有优势，在哪里需要支持？
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">孩子的学业优势和不足是什么？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          这是家长问得最多的问题——而大多数人从未得到清晰的答案，因为学校成绩是错误的工具。成绩是将孩子与同班同学在特定学校进行比较；它们无法衡量决定所有科目表现的认知图谱。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>学业优势和不足分布在三个独立的认知领域：</strong>语言推理（语言理解与类比）、数字推理（模式识别与数学逻辑）和视觉空间思维（形状分析与三维关系）。免费自适应测试为每个领域分别生成国际百分位分数——精确显示孩子真正的优势所在，以及有针对性的支持将在哪里产生最大的影响。
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>语言优势：</strong>语言推理能力强的孩子擅长语言理解、类比和推断。他们在语文、人文学科、外语以及任何需要解读复杂文本的科目中表现突出。
+          </Bullet>
+          <Bullet>
+            <strong>数字优势：</strong>高数字推理意味着强大的模式识别、数学逻辑和定量思维。这个测试衡量的是<em>思维方式</em>，而非课程知识。一个从未学过代数的孩子可以在第90百分位得分——揭示出被课堂表现掩盖的未开发潜力。
+          </Bullet>
+          <Bullet>
+            <strong>视觉空间优势：</strong>空间推理能力强的孩子擅长心理旋转、形状分析和三维推理。研究持续将此领域与STEM、工程、建筑、设计和计算机科学联系起来。这也是在标准学校测评中最不容易被发现的领域。
+          </Bullet>
+          <Bullet>
+            <strong>发展领域：</strong>任何孩子得分低于年龄规范的领域，不是失败——而是重点支持目标，在这里集中投入可以产生最快的可测量进步。
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">自适应测试方法论：科学基础</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          我们的测试使用<strong>计算机自适应测试（CAT）</strong>：每道题根据上一道题的答案实时选择。答对→更难的题。遇到困难→重新校准。系统在25–35道题中精确确定孩子的真实能力水平——与{' '}
+          <Link href="/zh/blog/nwea-map-chengji-jiexi" className="text-indigo-600 hover:underline">NWEA MAP</Link>和CAT4相同的架构。
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          每道题都使用<strong>项目反应理论（IRT）</strong>进行校准，产生具有已知置信区间的能力估计值（theta）。结果根据与CAT4、NWEA MAP、<Link href="/zh/blog/pisa-2025-zhongguo-jiazhang-zhinan" className="text-indigo-600 hover:underline">PISA</Link>和Cogat量表一致的国际规范转换为百分位排名。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">免费学业测试测量什么？</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet><strong>语言推理——</strong>词汇理解、类比推理、从文本推断。在语文、人文和外语方面持续高水平表现。</Bullet>
+          <Bullet><strong>数字推理——</strong>模式识别、数字关系、定量逻辑。衡量数学<em>思维方式</em>，而非课程知识。</Bullet>
+          <Bullet><strong>视觉空间推理——</strong>形状分析、心理旋转、空间关系。与STEM、工程和设计强相关。标准学校测评中最不容易被识别的领域。</Bullet>
+          <Bullet><strong>处理速度与注意力——</strong>信息处理的速度和准确性。结合数字推理一起解读，以识别注意力模式。</Bullet>
+        </ul>
+        <Callout>
+          <strong>立即开始免费测试</strong>——35分钟内获得四个领域的完整报告，无需注册。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如何使用测试结果：学校、考试和学业支持</h2>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>学校和项目选择：</strong>语言主导型图谱在人文导向课程中蓬勃发展；数字-空间型图谱在STEM密集项目中进步最快。</Check>
+          <Check><strong>有针对性的辅导：</strong>报告确定哪个领域需要发展，哪个已经很强——避免在已强领域过度投入而忽视真正的不足。</Check>
+          <Check><strong>考试备考策略：</strong><Link href="/zh/blog/xinnanwei-jizhong-ban-kaoshi-zhinan" className="text-indigo-600 hover:underline">精英学校考试</Link>和各类入学测试各有不同，针对认知图谱的备考策略更具针对性。</Check>
+          <Check><strong>与教师沟通：</strong>携带标准化测试数据参加家长会改变了对话方式。"空间推理第93百分位"是比"看起来聪明但注意力不集中"更有力的信息。</Check>
+          <Check><strong>长期学业规划：</strong>9岁时的图谱为初中升学前提供三年有针对性的投入时间。</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          孩子的发展领域不是失败的记录——而是等待正确支持的潜力区域。有了这个测评提供的客观认知图谱，你就能从对成绩的被动反应转变为基于数据的主动战略决策。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">相关指南</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/zh/blog/haizi-xueshu-shuiping-ruhe-celiang', tag: '指南', title: '孩子的学业水平如何测量？' },
+            { href: '/zh/blog/liaojie-haizi-youshi-ruodian-zhongxue-zhunbei', tag: '指南', title: '了解孩子优势与不足：中学备考指南' },
+            { href: '/zh/blog/faxian-xueling-haizi-yincang-qianli-jiachang-zhinan', tag: '指南', title: '发现孩子的隐藏优势：新一代家长指南' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

@@ -4408,6 +4408,202 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'discover-child-strengths-free-academic-test': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Ücretsiz akademik test arayışındaki pek çok ebeveyn, çocuğunun karne notlarından yola çıkıyor — ama notlar size yalnızca geçmişi gösterir, geleceği değil. Matematik 70, Türkçe 85: bu rakamlar öğretmenin beklentisine, sınıfın genel düzeyine ve o gün çocuğunuzun nasıl hissettiğine göre değişir. Çocuğunuzun gerçekten nerede durduğunu anlamak için standart ve bilimsel bir ölçüte ihtiyacınız var.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Ücretsiz akademik testimiz sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünme alanlarını bağımsız olarak ölçer; sonuçları uluslararası yaş normlarıyla kıyaslar ve yaklaşık 35 dakika içinde kişisel bir gelişim raporu sunar. Bu rapor size çocuğunuzun güçlü yönlerini, gelişim alanlarını ve dünya genelindeki akranlarıyla nasıl kıyaslandığını net biçimde gösterir.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Velilerin en çok sorduğu soru budur — ve ne yazık ki pek çoğu bu sorunun yanıtını hiçbir zaman net bir şekilde alamıyor. Okul notları bu soruyu yanıtlamaz; çünkü notlar sınıf ortalamasına göre belirlenir, çocuğun bilişsel profiline göre değil.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Akademik güçlü ve zayıf yönler üç bağımsız bilişsel alanda ölçülür:</strong> sözel akıl yürütme (dil kavrama ve analoji), sayısal muhakeme (örüntü tanıma ve matematiksel mantık) ve görsel-uzamsal düşünme (şekil analizi ve 3D ilişkiler). Ücretsiz adaptif test, her alan için uluslararası yaş normuna göre ayrı bir yüzdelik dilim skoru üretir — hangisinde gerçekten güçlü, hangisinde hedefe yönelik desteğin en büyük farkı yaratacağını net biçimde gösterir.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>Sözel Güçlü Yönler:</strong> Kelime dağarcığı geniş, analoji kuran, okuduğundan hızlı çıkarım yapan çocuklar sözel alanda güçlüdür. Bu çocuklar dil öğrenmede, edebiyat ve sosyal bilimlerde öne çıkar; ayrıca karmaşık metin gerektiren fen derslerinde de üstün performans gösterir.
+          </Bullet>
+          <Bullet>
+            <strong>Sayısal Güçlü Yönler:</strong> Örüntüleri fark eden, sayılar arasındaki ilişkileri sezgisel kuran çocuklar sayısal alanda güçlüdür. Önemli not: bu alan müfredat bilgisini değil, matematiksel <em>düşünme biçimini</em> ölçer. Hiç cebir görmemiş bir çocuk 90. yüzdelikte puan alabilir — bu, notların hiç yansıtmadığı kullanılmamış bir potansiyele işaret eder.
+          </Bullet>
+          <Bullet>
+            <strong>Görsel-Uzamsal Güçlü Yönler:</strong> Şekilleri zihinsel olarak döndüren, 3 boyutlu ilişkileri kavrayan çocuklar uzamsal alanda güçlüdür. STEM, mühendislik, mimarlık ve tasarımla güçlü korelasyon gösterir. Araştırmalar, bu alanın standart okul değerlendirmelerinde en az tespit edilen yetenek olduğunu gösteriyor.
+          </Bullet>
+          <Bullet>
+            <strong>Gelişim Alanları:</strong> Yukarıdaki alanlardan birinde yaş normu altında kalan bölgeler birer başarısızlık değil — hedefli destekle en hızlı ilerleme kaydedilecek öncelikli alanlardır.
+          </Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Ücretsiz akademik test bu üç alanı bağımsız olarak ölçer ve her biri için uluslararası yaş normuna göre yüzdelik dilim raporu sunar. &ldquo;Matematik iyi ama Türkçe zayıf&rdquo; gibi sezgisel değerlendirmelerin çok ötesinde, hangi bilişsel alanda gerçekten güçlü, hangisinde gerçekten destek gerektiğini standart bir ölçeğe göre görürsünüz.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ücretsiz Akademik Test Neden Gerekli? 5 Temel Veli Sorunu</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Binlerce velinin deneyiminden derlenen bu liste, standart bir değerlendirme olmadan neden doğru adım atmak zorlaştığını gösteriyor.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>&ldquo;İyi mi kötü mü bilmiyorum&rdquo;</strong> — Notlar okuldan okula, öğretmenden öğretmene değişir. Standart bir referans noktası olmadan &ldquo;bu not iyi mi?&rdquo; sorusu yanıtsız kalır.
+          </Bullet>
+          <Bullet>
+            <strong>&ldquo;Güçlü yönünü bilmeden nasıl yönlendireceğim?&rdquo;</strong> — Sözel alanda üstün bir çocuğu fen lisesine, sayısal zekası yüksek birini sosyal alana yönlendirmek uzun vadede motivasyon kaybına, hatta okul tükenmişliğine yol açabilir.
+          </Bullet>
+          <Bullet>
+            <strong>&ldquo;Özel ders işe yarıyor mu?&rdquo;</strong> — Hangi alanda ve neden destek gerektiğini bilmeden verilen özel ders hem zaman hem para israfıdır. Yanlış alanda yoğunlaşmak, güçlü alandaki gelişimi de yavaşlatır.
+          </Bullet>
+          <Bullet>
+            <strong>&ldquo;Okulda fark edilmiyor&rdquo;</strong> — 30 kişilik bir sınıfta her çocuğun bireysel bilişsel profili değerlendirilemez. Üstün yetenekli ya da farklı öğrenen çocuklar sınıf ortalamasına göre &ldquo;yeterli&rdquo; göründüğünde görünmez olabilir.
+          </Bullet>
+          <Bullet>
+            <strong>&ldquo;Hangi sınava hazırlansın?&rdquo;</strong> — LGS, YKS veya uluslararası sınavlara hazırlık çocuğun bilişsel profiline göre farklı stratejiler gerektirir. Profili bilmeden yapılan seçim rastgeledir.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adaptif Test Metodolojisi: Bilimsel Temeller</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Velilerin en çok merak ettiği soru: <em>&ldquo;Bu test çevrimiçi bulduğum alıştırma testlerinden ne farkı var?&rdquo;</em>
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-900 mb-3">Bilgisayar Uyarlamalı Test (CAT)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Klasik testlerde herkes aynı 50 soruyu görür. Seviyesinin çok altında sorular sıkıyor, çok üstünde olanlar cesareti kırıyor. Ücretsiz akademik testimiz <strong>Bilgisayar Uyarlamalı Test (CAT)</strong> mimarisini kullanır. Her soru, bir önceki yanıtın analizine dayanarak gerçek zamanlı olarak seçilir:
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet>Çocuğunuz doğru yanıtladıkça sorular zorlaşır</Bullet>
+          <Bullet>Yanıt veremediğinde sistem kolaylaşır ve yeniden kalibre edilir</Bullet>
+          <Bullet>25–35 soruda klasik 80 soruluk bir testin güvenilirliğine ulaşılır</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Bu metodoloji, İngiltere&apos;deki bağımsız okulların %70&apos;inden fazlasının kullandığı{' '}
+          <Link href="/blog/uae-cat4-test-guide" className="text-indigo-600 hover:underline">CAT4</Link> ve Kuzey Amerika&apos;nın en yaygın adaptif değerlendirmesi{' '}
+          <Link href="/blog/nwea-map-scores-explained" className="text-indigo-600 hover:underline">NWEA MAP</Link> ile aynı bilimsel temele dayanmaktadır.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-900 mb-3">Madde Tepki Teorisi (IRT)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Her soru <strong>IRT (Madde Tepki Teorisi)</strong> ile kalibre edilmiştir. Bu, her sorunun üç parametresinin istatistiksel olarak bilindiği anlamına gelir: güçlük (b), ayırt edicilik (a) ve şans parametresi (c). Bu üç parametre birlikte değerlendirildiğinde ham puan yerine <strong>yetenek tahmini (theta — θ)</strong> güvenilirlik aralığıyla birlikte hesaplanır — dijital SAT ve GRE&apos;de kullanılan yöntemin aynısı.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-900 mb-3">Uluslararası Normlarla Kıyaslama</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yetenek tahmini tek başına anlamsızdır. Sonuçlar uluslararası standart testlerle uyumlu normlarla kıyaslanarak <strong>yaş grubu yüzdelik dilimine</strong> dönüştürülür:
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="text-left p-3 border border-gray-200 font-semibold">Referans Test</th>
+                <th className="text-left p-3 border border-gray-200 font-semibold">Ölçüm Alanı</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td className="p-3 border border-gray-200">CAT4 (GL Assessment)</td><td className="p-3 border border-gray-200">Bilişsel yetenekler</td></tr>
+              <tr><td className="p-3 border border-gray-200">NWEA MAP</td><td className="p-3 border border-gray-200">Okuma &amp; Matematik</td></tr>
+              <tr><td className="p-3 border border-gray-200">PISA</td><td className="p-3 border border-gray-200">Okuryazarlık &amp; Sayısal muhakeme</td></tr>
+              <tr><td className="p-3 border border-gray-200">Cogat</td><td className="p-3 border border-gray-200">Sözel, sayısal, görsel akıl yürütme</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          <Link href="/tr/blog/pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler" className="text-indigo-600 hover:underline">PISA 2025 verilerine göre</Link>, bilişsel potansiyel açısından üst %10&apos;da olan çocukların yalnızca %34&apos;ü bu potansiyeli okul değerlendirmelerinde tam olarak yansıtabiliyor. Standart bir bilişsel test olmadan gerçek potansiyel görünmez kalır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ücretsiz Akademik Test Hangi Bilişsel Alanları Ölçer?</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Test dört temel bilişsel alanda bağımsız ölçüm yapar. Bu bağımsızlık kritiktir: çocuğunuz bir alanda istisnai, başka bir alanda norm altında olabilir ve bu dağılım, doğru yönlendirmenin en değerli girdisidir.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Sözel Akıl Yürütme —</strong> Kelime anlama, analoji kurma, metinden çıkarım yapma. Bu alan yüksek olan çocuklar Türkçe, edebiyat, yabancı dil ve karmaşık metin gerektiren her derste tutarlı biçimde üstün performans gösterir.
+          </Bullet>
+          <Bullet>
+            <strong>Sayısal Muhakeme —</strong> Örüntü tanıma, sayısal ilişkiler, nicel mantık yürütme. Müfredat bilgisini değil, matematiksel <em>düşünme biçimini</em> ölçer. Hiç cebir görmemiş bir çocuk 95. yüzdelikte puan alabilir — bu bulgu, o çocuğa yatırım yapma biçimini kökten değiştirir.
+          </Bullet>
+          <Bullet>
+            <strong>Görsel-Uzamsal Düşünme —</strong> Şekil analizi, zihinsel döndürme, uzamsal ilişkiler, örüntü tamamlama. STEM, mühendislik, mimarlık, tasarım ve bilgisayar bilimleriyle güçlü korelasyon gösterir. Araştırmalar bu alanın standart okul değerlendirmesinde en az tespit edilen domain olduğunu gösteriyor.
+          </Bullet>
+          <Bullet>
+            <strong>İşlem Hızı &amp; Dikkat Yönetimi —</strong> Bilginin ne kadar hızlı ve doğru işlendiği. Sayısal muhakeme ile birlikte yorumlanır: düşük hız + yüksek muhakeme üstün titizliğe işaret edebilirken, belirli bir örüntü uzman desteğini gerektirebilir.
+          </Bullet>
+        </ul>
+
+        <Callout>
+          <strong>Şimdi ücretsiz testi başlatın</strong> — 35 dakika içinde dört alanda tam rapor, kayıt gerekmez.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzun Akademik Profil Raporunu Nasıl Yorumlarsınız?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Test bittikten sonra üç katmanlı bir rapor görüntülenir:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Katman 1 — Profil Özeti:</strong> Her alan için yüzdelik dilim, görsel bir radar grafiğiyle sunulur. En güçlü ve gelişmeye en açık alanlar tek bakışta görünür olur.
+          </Bullet>
+          <Bullet>
+            <strong>Katman 2 — Alan Derinleme:</strong> Her alanın kendi içindeki alt beceri dağılımı. Örneğin sözel alanda analoji kurmada 90. yüzdelik, çıkarım yapmada 65. yüzdelik — bu, &ldquo;Türkçe çalış&rdquo; yerine müdahale edilecek noktayı netleştirir.
+          </Bullet>
+          <Bullet>
+            <strong>Katman 3 — Gelişim Önerileri:</strong> Profiline uygun kaynak türleri, öğrenme stratejileri ve pratik sonraki adımlar. Okul seçimi, sınav hazırlığı ve ders desteği için somut yönlendirme.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Test Sonuçları Nasıl Kullanılır? Okul, Sınav ve Özel Ders Planlaması</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>Okul ve program seçiminde:</strong> Sözel profili baskın çocuklarda dil ağırlıklı ve sosyal bilimler programları, sayısal-uzamsal profilde fen-matematik yoğun programlar uzun vadede çok daha verimli sonuç verir. Doğru profil-program uyumu, aynı çocuğun ölçülebilir biçimde daha iyi performans göstermesini sağlar.
+          </Check>
+          <Check>
+            <strong>Hedefli özel ders planlamasında:</strong> Rapor hangi alanın geliştirilmesi gerektiğini ve hangisinde potansiyelin zaten yüksek olduğunu gösterir. Zaten güçlü bir alana yatırım yapmanın getirisi azalır; gerçek gelişim alanını doğru yöntemle desteklemek hızlı ve ölçülebilir ilerleme sağlar.
+          </Check>
+          <Check>
+            <strong>Motivasyonu korumada:</strong> &ldquo;Sen matematik yapamassın&rdquo; yerine &ldquo;Bu alanda 78. yüzdeliktesin, hedef 85&rdquo; demek, çocuğun öz güvenini soyut bir baskı yerine somut bir hedefe bağlar.
+          </Check>
+          <Check>
+            <strong>Öğretmenlerle iletişimde:</strong> Veli-öğretmen görüşmesine standart test verileriyle gitmek, öğretmenin de çocuğunuza farklı bir gözle yaklaşmasını sağlar. &ldquo;Uzamsal akıl yürütmede 93. yüzdelik&rdquo; bilgisi, soyut bir &ldquo;zeki ama tembel&rdquo; değerlendirmesinin önüne geçer.
+          </Check>
+          <Check>
+            <strong>Uzun vadeli akademik planlamada:</strong> 6. sınıfta alınan profil, LGS&apos;ye iki yıl kala hangi alana ne kadar yatırım yapılacağını belirler. Reaktif değil — notlar düşünce özel ders, notlar çıkınca dur — proaktif bir strateji kurarsınız.
+          </Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Çocuğunuzun güçlü ve zayıf yönlerini bulmak için bir uzmana ya da pahalı bir teste ihtiyacınız yok. 35 dakika içinde, ücretsiz, bilimsel temelli ve uluslararası normlarla kıyaslanmış bir rapor sizi çok daha bilinçli kararlar almaya hazırlar. Güçlü alanı besleyin, gelişime açık alanı hedefli destekleyin ve her adımı veriye dayandırın.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur', tag: 'Rehber', title: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?' },
+            { href: '/tr/blog/cocugunuzun-guclu-zayif-yonleri-liseye-hazirlik', tag: 'Rehber', title: 'Güçlü ve Zayıf Yönler: Lise Hazırlık Rehberi' },
+            { href: '/tr/blog/cocugunuzun-gizli-guclerini-kesfetmek-yeni-nesil-veli-rehberi', tag: 'Rehber', title: 'Gizli Güçleri Keşfedin: Yeni Nesil Veli Rehberi' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

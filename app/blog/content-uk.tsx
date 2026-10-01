@@ -4263,4 +4263,195 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'discover-child-strengths-free-academic-test': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Most parents searching for a free academic test start with school grades — but grades only show past performance within one school, one teacher, and one curriculum. A child scoring in the top 10% of their class may be operating well below their cognitive ceiling. Another child struggling with written work may have outstanding spatial reasoning that no teacher has yet surfaced. School grades cannot tell you either of these things.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Our free adaptive academic test measures verbal reasoning, numerical reasoning, and visual-spatial thinking independently — then benchmarks each score against international age norms. In approximately 35 minutes, it produces a personalised cognitive profile that answers the question every parent actually needs answered: where is my child genuinely strong, and where do they need support?
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Are My Child&apos;s Academic Strengths and Weaknesses?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This is the question parents ask most — and most never get a clear answer to, because school grades are the wrong instrument. Grades rank children against classmates within a specific school; they do not measure the cognitive profile that drives performance across all subjects.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Academic strengths and weaknesses fall across three independent cognitive domains:</strong> verbal reasoning (language comprehension and analogy), numerical reasoning (pattern recognition and mathematical logic), and visual-spatial thinking (shape analysis and 3D relations). A free adaptive test produces a separate international percentile score for each — showing precisely where your child is strong and where focused support will make the greatest difference.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>Verbal Strengths:</strong> Children with high verbal reasoning excel at language comprehension, analogy, and inference. They thrive in English, humanities, languages, and any subject requiring interpretation of complex text — including science when the bottleneck is reading comprehension rather than logic.
+          </Bullet>
+          <Bullet>
+            <strong>Numerical Strengths:</strong> High numerical reasoning means strong pattern recognition, mathematical logic, and quantitative thinking. Critically, this measures the <em>way of thinking</em>, not curriculum knowledge. A child can score in the 90th percentile here without ever having studied algebra — revealing untapped potential that classroom performance may have masked.
+          </Bullet>
+          <Bullet>
+            <strong>Visual-Spatial Strengths:</strong> Children with strong spatial reasoning excel at mental rotation, shape analysis, and 3D reasoning. Research consistently links this domain to STEM performance, engineering, architecture, design, and computing. It is also the domain least likely to be identified through standard school work.
+          </Bullet>
+          <Bullet>
+            <strong>Development Areas:</strong> Any domain where a child scores below the age-matched norm is not a failure — it is a prioritised target where focused support produces the fastest measurable improvement.
+          </Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          A free academic test measures all three domains independently and converts each to an international percentile rank. This moves beyond intuitive observations like &ldquo;good at maths, struggles with reading&rdquo; — giving you a standardised, comparable data point for each domain, benchmarked against children the same age globally.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why a Free Academic Test? Five Core Problems Grades Cannot Solve</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>&ldquo;I don&apos;t know if this grade is good or not.&rdquo;</strong> — Grades are relative to the school, the class, and the teacher. Without a standardised reference point, a 7/10 tells you nothing about whether your child is at their ceiling or far below it.
+          </Bullet>
+          <Bullet>
+            <strong>&ldquo;I can&apos;t guide them if I don&apos;t know their strengths.&rdquo;</strong> — Steering a verbally strong child toward a maths-heavy sixth form, or a spatially gifted child away from STEM, can compound into years of misaligned effort. The cognitive profile must come first.
+          </Bullet>
+          <Bullet>
+            <strong>&ldquo;Is the tutoring actually working?&rdquo;</strong> — Tutoring an already-strong domain produces diminishing returns. Tutoring a genuine development area with the right method produces rapid improvement. Knowing which is which is not optional.
+          </Bullet>
+          <Bullet>
+            <strong>&ldquo;My child isn&apos;t being seen at school.&rdquo;</strong> — In a class of 30, individual cognitive profiles are rarely assessed. Gifted children whose written output doesn&apos;t reflect their reasoning ability remain invisible. An adaptive test surfaces what school cannot.
+          </Bullet>
+          <Bullet>
+            <strong>&ldquo;Which exams should we target?&rdquo;</strong> — <Link href="/blog/how-to-prepare-for-11-plus" className="text-indigo-600 hover:underline">11+</Link>, grammar school entry, CAT4-based independent school admissions, ISEE/SSAT — each rewards different cognitive profiles. A profile-first approach produces a focused preparation strategy instead of a generic one.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adaptive Test Methodology: The Scientific Foundation</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The question parents ask most: <em>&ldquo;How is this different from a practice test I find online?&rdquo;</em>
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-900 mb-3">Computer Adaptive Testing (CAT)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A standard practice test gives every child the same 50 questions at the same difficulty. Questions that are too easy bore children and produce no useful data. Questions that are too hard demoralise them and still produce no useful data. Our free academic test uses <strong>Computer Adaptive Testing (CAT)</strong>: every question is selected in real time based on the previous answer.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet>Correct answer → harder question</Bullet>
+          <Bullet>Incorrect answer → the system recalibrates and adjusts</Bullet>
+          <Bullet>25–35 questions reach the same measurement precision as an 80-question paper test</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          This is the same architecture used in <Link href="/blog/uae-cat4-test-guide" className="text-indigo-600 hover:underline">CAT4</Link> — the standard used by over 70% of UK independent schools — and <Link href="/blog/nwea-map-scores-explained" className="text-indigo-600 hover:underline">NWEA MAP</Link>, the most widely used adaptive assessment in North America.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-900 mb-3">Item Response Theory (IRT)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Every question has been calibrated using <strong>Item Response Theory (IRT)</strong>. This means the statistical properties of each item are precisely known: its difficulty parameter (b), discrimination parameter (a), and guessing parameter (c). Rather than producing a raw score, IRT produces an <strong>ability estimate (theta — θ)</strong> with a known confidence interval — the same approach used in the digital SAT and GRE.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-900 mb-3">International Norm Benchmarking</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The ability estimate is converted to a <strong>percentile rank</strong> against international age norms aligned with four reference frameworks:
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="text-left p-3 border border-gray-200 font-semibold">Reference Assessment</th>
+                <th className="text-left p-3 border border-gray-200 font-semibold">Domain</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td className="p-3 border border-gray-200">CAT4 (GL Assessment)</td><td className="p-3 border border-gray-200">Cognitive abilities</td></tr>
+              <tr><td className="p-3 border border-gray-200">NWEA MAP</td><td className="p-3 border border-gray-200">Reading &amp; Mathematics</td></tr>
+              <tr><td className="p-3 border border-gray-200">PISA</td><td className="p-3 border border-gray-200">Literacy &amp; Quantitative reasoning</td></tr>
+              <tr><td className="p-3 border border-gray-200">Cogat</td><td className="p-3 border border-gray-200">Verbal, quantitative, spatial reasoning</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          A <Link href="/blog/pisa-2025-global-education-crisis-what-parents-need-to-know" className="text-indigo-600 hover:underline">PISA 2025 analysis</Link> found that among children in the top cognitive decile, only 34% achieve grades that reflect their true potential — meaning the majority of high-potential children are invisible in school reports. A standardised cognitive test is the only instrument that surfaces this gap reliably.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Does the Free Academic Test Measure?</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          The test measures four cognitive domains independently. This independence matters: a child can be exceptional in one area and below norm in another — and the gap between the two is the most actionable insight the report produces.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Verbal Reasoning —</strong> Word comprehension, analogical reasoning, inference from text. High scorers consistently outperform in English, humanities, modern languages, and any subject requiring synthesis of written information — including sciences when reading comprehension is the bottleneck.
+          </Bullet>
+          <Bullet>
+            <strong>Numerical Reasoning —</strong> Pattern recognition, number relationships, quantitative logic. This measures mathematical <em>thinking style</em>, not curriculum knowledge. A child who has never studied algebra can score in the 95th percentile — a finding that fundamentally changes how a parent should invest in that child&apos;s development.
+          </Bullet>
+          <Bullet>
+            <strong>Visual-Spatial Reasoning —</strong> Shape analysis, mental rotation, spatial relationships, pattern completion. Strong correlation with STEM, engineering, architecture, design, and computing. Research identifies this as the most under-identified domain in standard school assessment.
+          </Bullet>
+          <Bullet>
+            <strong>Processing Speed &amp; Attention —</strong> How quickly and accurately information is processed. Interpreted alongside numerical reasoning: low speed with high reasoning may indicate exceptional thoroughness; a specific pattern may warrant specialist guidance.
+          </Bullet>
+        </ul>
+
+        <Callout>
+          <strong>Start the free test now</strong> — full four-domain report in 35 minutes, no registration required.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Read Your Child&apos;s Academic Profile Report</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The report is structured across three layers:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Layer 1 — Profile Overview:</strong> A visual radar chart showing the percentile rank for each domain at a glance. Strengths and development areas are immediately visible without reading any numbers.
+          </Bullet>
+          <Bullet>
+            <strong>Layer 2 — Domain Breakdown:</strong> The sub-skill distribution within each domain. For example, verbal reasoning may show 90th percentile on analogy but 65th on inference — pointing to a specific intervention target rather than a vague &ldquo;work on English.&rdquo;
+          </Bullet>
+          <Bullet>
+            <strong>Layer 3 — Development Recommendations:</strong> Resource types, learning strategies, and practical next steps matched to the child&apos;s profile. Includes guidance for school selection, exam preparation, and focused support.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Use the Results: School, Exams, and Tutoring</h2>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>School and programme selection:</strong> Verbal-dominant profiles thrive in humanities-heavy pathways; numerical-spatial profiles compound in STEM-intensive programmes. Aligning the school type with the cognitive profile makes the same child perform measurably better over time.
+          </Check>
+          <Check>
+            <strong>Targeted tutoring:</strong> The report identifies which domain needs development and which is already strong. This prevents the common error of investing heavily in an already-strong area while neglecting a genuine gap.
+          </Check>
+          <Check>
+            <strong>Exam preparation strategy:</strong> <Link href="/blog/how-to-prepare-for-11-plus" className="text-indigo-600 hover:underline">11+ preparation</Link>, CAT4-based independent school entry, or international assessments each reward different profiles. The cognitive map tells you which format to prioritise.
+          </Check>
+          <Check>
+            <strong>Teacher communication:</strong> Arriving at a parents&apos; evening with standardised test data changes the conversation. &ldquo;93rd percentile in spatial reasoning&rdquo; is a different input than &ldquo;they seem bright but unfocused.&rdquo;
+          </Check>
+          <Check>
+            <strong>Long-term academic planning:</strong> A profile taken at age 9 gives you three years of targeted investment before secondary school transition. Proactive planning consistently outperforms reactive response to dropping grades.
+          </Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Your child&apos;s development areas are not a record of failure — they are areas of potential waiting for the right kind of support. With the objective cognitive map this assessment provides, you move from reacting to grades to making strategic decisions grounded in data.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/blog/how-does-your-child-compare-globally', tag: 'Guide', title: 'How Does Your Child Compare Globally?' },
+            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: 'Guide', title: 'Child Strengths & Weaknesses: High School Preparation Guide' },
+            { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+: Complete Parent Guide' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }

@@ -1022,6 +1022,66 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: '/fr#academique',
     },
   },
+  {
+    slug: 'test-academique-gratuit-forces-faiblesses-enfant',
+    contentSlug: 'discover-child-strengths-free-academic-test',
+    title: 'Test Académique Gratuit : Découvrez les Forces et Faiblesses de Votre Enfant en 35 Minutes',
+    shortTitle: 'Test Académique Gratuit : Forces et Faiblesses',
+    description: "Les notes scolaires ne révèlent pas le vrai potentiel cognitif de votre enfant. Notre test académique adaptatif gratuit mesure le raisonnement verbal, numérique et spatial en 35 minutes — rapport immédiat comparé aux normes internationales.",
+    tldr: "Un test adaptatif gratuit mesurant le raisonnement verbal, numérique et visuo-spatial de façon indépendante — rapport en percentile international en 35 minutes. Basé sur le CAT et l'IRT, la même méthodologie que le CAT4 et le NWEA MAP.",
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '10 min de lecture',
+    tags: ['Test Académique Gratuit', 'Forces de l\'Enfant', 'Évaluation Cognitive', 'Test Adaptatif', 'Guide Parents', 'Développement Enfant'],
+    faqs: [
+      {
+        q: 'Quelles sont les forces et faiblesses académiques de mon enfant ?',
+        a: "Les forces et faiblesses académiques sont mieux identifiées par une évaluation cognitive standardisée que par les seules notes scolaires. Un test adaptatif gratuit mesure le raisonnement verbal (compréhension linguistique, analogies), le raisonnement numérique (reconnaissance de patterns, logique mathématique) et la pensée visuo-spatiale (analyse de formes, rotation mentale) de façon indépendante — produisant un score percentile pour chaque domaine.",
+      },
+      {
+        q: 'Combien de temps dure le test académique gratuit ?',
+        a: "Environ 25–35 minutes. Le format adaptatif ajuste chaque question selon la réponse précédente, atteignant la même précision qu'un test de 80 questions avec beaucoup moins de questions.",
+      },
+      {
+        q: 'Pour quelle tranche d\'âge est-il conçu ?',
+        a: "L'évaluation est conçue pour les enfants de 6 à 16 ans.",
+      },
+      {
+        q: 'Quand les résultats apparaissent-ils ?',
+        a: "Immédiatement après la fin du test. Le rapport complet — incluant les percentiles par domaine cognitif — est disponible instantanément.",
+      },
+      {
+        q: "En quoi ce test diffère-t-il des notes scolaires ?",
+        a: "Les notes mesurent les performances passées dans une école, un enseignant et un programme spécifiques — pas le potentiel cognitif sous-jacent. Ce test mesure les compétences de pensée qui influencent les performances dans toutes les matières, indépendamment du programme.",
+      },
+      {
+        q: "Qu'est-ce que le test adaptatif et en quoi diffère-t-il d'un test classique ?",
+        a: "Dans un test standard, tous les enfants voient les mêmes questions avec la même difficulté. Dans un Test Adaptatif par Ordinateur (CAT), chaque question est sélectionnée selon la réponse précédente : bonne réponse → question plus difficile ; difficulté → recalibrage. Le système détermine le vrai niveau de l'enfant en 25–35 questions. C'est la même méthodologie que le CAT4, le NWEA MAP et le SAT numérique.",
+      },
+      {
+        q: 'Le test est-il scientifiquement valide ?',
+        a: "Oui. Chaque question est calibrée avec la Théorie de Réponse à l'Item (TRI/IRT), ce qui signifie que les paramètres statistiques de chaque item sont connus. Les scores sont convertis en percentiles selon des normes internationales alignées avec le CAT4, le NWEA MAP, le PISA et le Cogat.",
+      },
+      {
+        q: 'Un test gratuit peut-il détecter si mon enfant est surdoué ?',
+        a: "Oui. Une évaluation cognitive adaptive mesure les trois domaines les plus associés à la précocité : raisonnement verbal, raisonnement numérique et pensée visuo-spatiale. Un enfant qui dépasse le 90e percentile dans les trois domaines est candidat pour les programmes pour surdoués. Le test dure 35 minutes et ne nécessite pas d'inscription.",
+      },
+      {
+        q: "Un test en ligne gratuit est-il aussi précis qu'une évaluation professionnelle ?",
+        a: "La précision dépend de la méthodologie, pas du prix. Ce test utilise le Test Adaptatif par Ordinateur (CAT) et la Théorie de Réponse à l'Item (TRI/IRT) — les mêmes cadres que le CAT4 et le NWEA MAP appliqués professionnellement dans les écoles. La précision de mesure est comparable ; la différence est que les évaluations professionnelles sont réalisées dans un environnement supervisé et standardisé.",
+      },
+      {
+        q: "Qu'est-ce que le rapport m'apprend que le bulletin scolaire ne peut pas me dire ?",
+        a: "Le bulletin montre les performances par notes par rapport aux camarades de classe. Le rapport cognitif offre trois choses que le bulletin ne peut jamais fournir : (1) le niveau réel de l'enfant par rapport à ses pairs internationaux ; (2) la force indépendante de chaque domaine cognitif ; (3) quelles sous-compétences spécifiques développer ensuite dans chaque domaine.",
+      },
+    ],
+    cta: {
+      heading: 'Découvrez les forces de votre enfant — gratuitement',
+      body: "Évaluation adaptive pour les 6–16 ans. Raisonnement verbal, numérique et spatial mesuré selon des références internationales — rapport instantané, sans inscription.",
+      label: 'Commencer le test gratuit',
+      href: '/fr#academique',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

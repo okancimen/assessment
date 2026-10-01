@@ -1179,6 +1179,66 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr#akademik',
     },
   },
+  {
+    slug: 'cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet',
+    contentSlug: 'discover-child-strengths-free-academic-test',
+    title: 'Ücretsiz Akademik Test: Çocuğunuzun Güçlü ve Zayıf Yönlerini 35 Dakikada Keşfedin',
+    shortTitle: 'Ücretsiz Akademik Test: Güçlü ve Zayıf Yönler',
+    description: 'Karne notları bilişsel potansiyeli göstermiyor. Ücretsiz adaptif akademik testimiz 35 dakikada sözel, sayısal ve görsel-uzamsal yetenekleri ölçer — uluslararası normlarla kıyaslamalı rapor anında hazır.',
+    tldr: 'Sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünmeyi bağımsız olarak ölçen ücretsiz adaptif test — 35 dakikada uluslararası yüzdelik dilim raporu. CAT ve IRT metodolojisiyle, CAT4 ve NWEA MAP ile aynı bilimsel temel.',
+    date: '2026-10-01',
+    dateModified: '2026-10-01',
+    readTime: '10 dk okuma',
+    tags: ['Ücretsiz Akademik Test', 'Çocuk Güçlü Yönleri', 'Çocuk Zayıf Yönleri', 'Bilişsel Değerlendirme', 'Adaptif Test', 'Veli Rehberi', 'Çocuk Gelişimi'],
+    faqs: [
+      {
+        q: 'Çocuğumun güçlü ve zayıf yönleri nelerdir?',
+        a: 'Akademik güçlü ve zayıf yönler, okul notlarıyla değil standart bilişsel değerlendirmeyle en doğru şekilde belirlenir. Ücretsiz adaptif test; sözel akıl yürütme (dil kavrama, analoji), sayısal muhakeme (örüntü tanıma, matematiksel mantık) ve görsel-uzamsal düşünme (şekil analizi, zihinsel döndürme) alanlarını bağımsız olarak ölçer ve her alan için yüzdelik dilim puanı üretir. Bu, çocuğunuzun tam olarak nerede güçlü olduğunu, nerede desteğe ihtiyaç duyduğunu ve uluslararası akranlarıyla nasıl kıyaslandığını net biçimde gösterir.',
+      },
+      {
+        q: 'Ücretsiz akademik test ne kadar sürer?',
+        a: 'Yaklaşık 25–35 dakika. Adaptif format sayesinde her soru bir öncekinin cevabına göre ayarlanır ve 80 soruluk klasik bir testin ölçüm hassasiyetine çok daha az soruyla ulaşılır.',
+      },
+      {
+        q: 'Hangi yaş grubu için uygundur?',
+        a: 'Test 6–16 yaş arası çocuklar için tasarlanmıştır.',
+      },
+      {
+        q: 'Test sonuçları ne zaman gelir?',
+        a: 'Test biter bitmez. Her bilişsel alan için yüzdelik dilim sıralaması da dahil olmak üzere tam rapor bekleme olmadan anında görüntülenebilir.',
+      },
+      {
+        q: 'Ücretsiz test okul notlarından ne kadar farklıdır?',
+        a: 'Notlar, belirli bir okulda, öğretmende ve müfredatta geçmiş performansı ölçer — altta yatan bilişsel potansiyeli değil. Bu test, herhangi bir dersin performansını yönlendiren temel düşünme becerilerini müfredattan bağımsız olarak ölçer. Sınıfının ilk yüzde onunda yer alan bir çocuk, notların hiç yansıtmadığı kullanılmamış potansiyele sahip olabilir.',
+      },
+      {
+        q: 'Adaptif test nedir, normal testten farkı nedir?',
+        a: 'Standart testte her çocuk aynı zorlukta aynı soruları görür. Bilgisayar Uyarlamalı Testte (CAT) her soru bir önceki yanıta göre seçilir: doğru yanıt daha zor soruya, zorluk daha kolay soruya yönlendirir. Sistem 25–35 soruda çocuğun gerçek yetenek düzeyini hassas biçimde belirler. Bu, CAT4, NWEA MAP ve dijital SAT\'ın arkasındaki metodolojinin aynısıdır.',
+      },
+      {
+        q: 'Test bilimsel olarak geçerli mi?',
+        a: 'Evet. Her soru Madde Tepki Teorisi (IRT) ile kalibre edilmiştir; yani her sorunun güçlük, ayırt edicilik ve şans parametreleri istatistiksel olarak bilinmektedir. Puanlar, CAT4, NWEA MAP, PISA ve Cogat ölçekleriyle uyumlu uluslararası normlara göre yüzdelik dilimlere dönüştürülür.',
+      },
+      {
+        q: 'Ücretsiz test çocuğumun üstün yetenekli olup olmadığını gösterir mi?',
+        a: 'Evet. Adaptif bilişsel değerlendirme, üstün yeteneklilikle en güçlü ilişkisi olan üç alanı ölçer: sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünme. Her üç alanda 90. yüzdeliğin üzerinde puan alan bir çocuk, üstün yetenekli program değerlendirmesinden fayda sağlayabilir. Test 35 dakika sürer ve kayıt gerektirmez.',
+      },
+      {
+        q: 'Ücretsiz online test profesyonel değerlendirme kadar güvenilir mi?',
+        a: 'Güvenilirlik fiyata değil, metodolojiye bağlıdır. Testimiz, okullar tarafından profesyonel ortamda uygulanan CAT4 ve NWEA MAP ile aynı Bilgisayar Uyarlamalı Test (CAT) ve Madde Tepki Teorisi (IRT) çerçevelerini kullanmaktadır. Ölçüm hassasiyeti karşılaştırılabilir düzeydedir; fark, profesyonel değerlendirmenin standart denetimli ortamda uygulanmasıdır.',
+      },
+      {
+        q: 'Test raporu okul karnesinden hangi ek bilgileri verir?',
+        a: 'Karneler, aynı sınıftaki akranlara göre not bazlı performansı gösterir. Bilişsel değerlendirme raporu karnenin asla gösteremediği üç şeyi sunar: (1) çocuğunuzun sadece sınıfına değil, uluslararası yaş grubuna göre nerede durduğunu; (2) her bilişsel alanın bağımsız gücünü — sözel ve uzamsal güçler birbirini bir ortalamada silerek yok etmez; (3) her alanın içinde bir sonraki adımda geliştirilecek spesifik alt becerileri.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun güçlü yönlerini keşfedin — ücretsiz',
+      body: '6–16 yaş için adaptif değerlendirme. Sözel, sayısal ve uzamsal akıl yürütme uluslararası kıyaslamalı olarak ölçülür — anında rapor, kayıt gerekmez.',
+      label: 'Ücretsiz testi başlat',
+      href: '/tr#akademik',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

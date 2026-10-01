@@ -3030,6 +3030,101 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'discover-child-strengths-free-academic-test': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        La mayoría de los padres que buscan un test académico gratuito parten de las notas escolares — pero las notas solo muestran el rendimiento pasado en una escuela, un profesor y un currículo específicos. Un niño que saca las mejores notas de su clase puede estar muy por debajo de su techo cognitivo. Otro que tiene dificultades con los textos escritos puede tener un razonamiento espacial sobresaliente que ningún profesor ha descubierto aún.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Nuestro test académico adaptativo gratuito mide el razonamiento verbal, numérico y visual-espacial de forma independiente — luego compara cada puntuación con normas internacionales de edad. En aproximadamente 35 minutos produce un perfil cognitivo personalizado que responde la pregunta que todo padre necesita responder: ¿dónde es genuinamente fuerte mi hijo y dónde necesita apoyo?
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Cuáles son las Fortalezas y Debilidades Académicas de mi Hijo?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Esta es la pregunta que más hacen los padres — y la mayoría nunca obtiene una respuesta clara, porque las notas escolares son el instrumento equivocado. Las notas clasifican a los niños frente a sus compañeros de clase; no miden el perfil cognitivo que impulsa el rendimiento en todas las materias.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Las fortalezas y debilidades académicas se distribuyen en tres dominios cognitivos independientes:</strong> razonamiento verbal (comprensión lingüística y analogía), razonamiento numérico (reconocimiento de patrones y lógica matemática) y pensamiento visual-espacial (análisis de formas y relaciones 3D). Un test adaptativo gratuito produce una puntuación percentil internacional separada para cada dominio — mostrando con precisión dónde tu hijo es fuerte y dónde el apoyo enfocado marcará la mayor diferencia.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>Fortalezas Verbales:</strong> Los niños con alto razonamiento verbal destacan en comprensión lingüística, analogías e inferencia. Prosperan en lengua, humanidades, idiomas y cualquier materia que requiera interpretación de textos complejos — incluidas las ciencias cuando el cuello de botella es la comprensión lectora.
+          </Bullet>
+          <Bullet>
+            <strong>Fortalezas Numéricas:</strong> Alto razonamiento numérico significa fuerte reconocimiento de patrones, lógica matemática y pensamiento cuantitativo. Este test mide la <em>forma de pensar</em>, no el conocimiento del currículo. Un niño puede puntuar en el percentil 90 sin haber estudiado álgebra — revelando potencial que el rendimiento en clase ha enmascarado.
+          </Bullet>
+          <Bullet>
+            <strong>Fortalezas Visual-Espaciales:</strong> Los niños con fuerte razonamiento espacial destacan en rotación mental, análisis de formas y razonamiento 3D. La investigación vincula consistentemente este dominio con STEM, ingeniería, arquitectura, diseño e informática. Es también el dominio menos probable de identificar en el trabajo escolar estándar.
+          </Bullet>
+          <Bullet>
+            <strong>Áreas de Desarrollo:</strong> Cualquier dominio donde un niño puntúe por debajo de la norma de su edad no es un fracaso — es un objetivo prioritario donde el apoyo enfocado produce la mejora más rápida y medible.
+          </Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Un test académico gratuito mide los tres dominios de forma independiente y convierte cada uno en un rango percentil internacional — yendo más allá de observaciones intuitivas como &ldquo;bueno en mates, flojo en lengua&rdquo; y dando un dato estandarizado y comparable para cada dominio.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Metodología del Test Adaptativo: Fundamentos Científicos</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La pregunta que más hacen los padres: <em>&ldquo;¿En qué se diferencia esto de un test de práctica que encuentro online?&rdquo;</em>
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Nuestro test usa <strong>Testing Adaptativo por Computadora (CAT)</strong>: cada pregunta se selecciona en tiempo real según la respuesta anterior. Respuesta correcta → pregunta más difícil. Dificultad → recalibración. El sistema triangula el verdadero nivel de habilidad del niño con alta precisión en 25–35 preguntas — la misma arquitectura del{' '}
+          <Link href="/es/blog/puntuaciones-nwea-map-explicadas" className="text-indigo-600 hover:underline">NWEA MAP</Link> y el CAT4.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Cada pregunta está calibrada con la <strong>Teoría de Respuesta al Ítem (TRI/IRT)</strong>, produciendo una estimación de habilidad (theta) con intervalo de confianza conocido — no una puntuación bruta. Los resultados se convierten en percentiles según normas internacionales alineadas con CAT4, NWEA MAP, <Link href="/es/blog/pisa-2025-crisis-educativa-mundial-que-deben-saber-los-padres" className="text-indigo-600 hover:underline">PISA</Link> y Cogat.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué Mide el Test Académico Gratuito?</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet><strong>Razonamiento Verbal —</strong> Comprensión de palabras, razonamiento analógico, inferencia de textos. Alto rendimiento consistente en lengua, humanidades e idiomas.</Bullet>
+          <Bullet><strong>Razonamiento Numérico —</strong> Reconocimiento de patrones, relaciones numéricas, lógica cuantitativa. Mide el <em>estilo de pensamiento</em> matemático, no el conocimiento curricular.</Bullet>
+          <Bullet><strong>Razonamiento Visual-Espacial —</strong> Análisis de formas, rotación mental, relaciones espaciales. Fuerte correlación con STEM, ingeniería y diseño. El dominio más infraidentificado en la evaluación escolar estándar.</Bullet>
+          <Bullet><strong>Velocidad de Procesamiento y Atención —</strong> Qué tan rápido y con qué precisión se procesa la información. Interpretado junto con el razonamiento numérico para identificar patrones de atención.</Bullet>
+        </ul>
+        <Callout>
+          <strong>Empieza el test gratuito ahora</strong> — informe completo de cuatro dominios en 35 minutos, sin registro.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo Usar los Resultados: Escuela, Exámenes y Apoyo Académico</h2>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>Selección de escuela y programa:</strong> Los perfiles con dominancia verbal prosperan en itinerarios de humanidades; los perfiles numérico-espaciales se potencian en programas STEM intensivos.</Check>
+          <Check><strong>Clases particulares enfocadas:</strong> El informe identifica qué dominio necesita desarrollo y cuál ya es fuerte. Esto evita el error común de invertir en un área ya sólida mientras se descuida una brecha real.</Check>
+          <Check><strong>Preparación de exámenes:</strong> La <Link href="/es/blog/guia-evaluacion-programas-superdotados" className="text-indigo-600 hover:underline">preparación para programas de superdotados</Link> y exámenes selectivos requieren estrategias distintas según el perfil cognitivo.</Check>
+          <Check><strong>Comunicación con profesores:</strong> Llegar a una reunión con datos de un test estandarizado cambia la conversación. &ldquo;Percentil 93 en razonamiento espacial&rdquo; es un input distinto a &ldquo;parece inteligente pero distraído.&rdquo;</Check>
+          <Check><strong>Planificación académica a largo plazo:</strong> Un perfil tomado a los 9 años da tres años de inversión dirigida antes de la transición a secundaria.</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Las áreas de desarrollo de tu hijo no son un registro de fracasos — son áreas de potencial que esperan el tipo correcto de apoyo. Con el mapa cognitivo objetivo que proporciona esta evaluación, pasas de reaccionar a las notas a tomar decisiones estratégicas basadas en datos.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guías Relacionadas</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/es/blog/como-se-compara-tu-hijo-a-nivel-mundial', tag: 'Guía', title: '¿Cómo se Compara tu Hijo a Nivel Mundial?' },
+            { href: '/es/blog/comprender-fortalezas-debilidades-hijo-bachillerato', tag: 'Guía', title: 'Fortalezas y Debilidades: Guía de Preparación para Bachillerato' },
+            { href: '/es/blog/descubrir-fortalezas-ocultas-hijo-guia-moderna-padres', tag: 'Guía', title: 'Fortalezas Ocultas de tu Hijo: Guía Moderna para Padres' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

@@ -2466,6 +2466,99 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'discover-child-strengths-free-academic-test': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed" dir="rtl">
+        يبدأ معظم الآباء الذين يبحثون عن اختبار أكاديمي مجاني بالدرجات المدرسية — لكن الدرجات لا تُظهر سوى الأداء الماضي في مدرسة ومعلم ومنهج محددين. قد يعمل طفل يحصل على أعلى الدرجات في فصله بأقل بكثير من قدرته المعرفية الحقيقية. وقد يمتلك طفل آخر يعاني في الكتابة تفكيراً مكانياً متميزاً لم يكتشفه أي معلم بعد.
+      </p>
+      <p className="text-gray-700 leading-relaxed" dir="rtl">
+        يقيس اختبارنا الأكاديمي التكيفي المجاني التفكير اللفظي والعددي والبصري-المكاني بشكل مستقل — ثم يقارن كل درجة بالمعايير الدولية للعمر. في حوالي 35 دقيقة، ينتج ملفاً معرفياً شخصياً يجيب على السؤال الحقيقي لكل والد: أين يتميز طفلي حقاً، وأين يحتاج إلى دعم؟
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4" dir="rtl">ما هي نقاط القوة والضعف الأكاديمية لطفلي؟</h2>
+        <p className="text-gray-700 leading-relaxed mb-4" dir="rtl">
+          هذا هو السؤال الذي يطرحه الآباء أكثر من غيره — وأغلبهم لا يحصل على إجابة واضحة، لأن الدرجات المدرسية هي الأداة الخاطئة. الدرجات تصنف الأطفال مقارنةً بزملائهم في فصل دراسي محدد؛ لا تقيس الملف المعرفي الذي يحدد الأداء في جميع المواد.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4" dir="rtl">
+          <strong>نقاط القوة والضعف الأكاديمية تمتد عبر ثلاثة مجالات معرفية مستقلة:</strong> التفكير اللفظي (الفهم اللغوي والتناظر)، والتفكير العددي (التعرف على الأنماط والمنطق الرياضي)، والتفكير البصري-المكاني (تحليل الأشكال والعلاقات ثلاثية الأبعاد). ينتج الاختبار التكيفي المجاني درجة مئينية دولية منفصلة لكل مجال — يُظهر بدقة أين يتميز طفلك حقاً وأين سيُحدث الدعم الموجه أكبر فرق.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong dir="rtl">نقاط القوة اللفظية:</strong>{' '}
+            <span dir="rtl">الأطفال ذوو التفكير اللفظي المرتفع يتفوقون في الفهم اللغوي والتناظر والاستنتاج. يزدهرون في اللغة العربية والعلوم الإنسانية واللغات، وفي أي مادة تتطلب تفسير نصوص معقدة.</span>
+          </Bullet>
+          <Bullet>
+            <strong dir="rtl">نقاط القوة العددية:</strong>{' '}
+            <span dir="rtl">التفكير العددي المرتفع يعني قوة في التعرف على الأنماط والمنطق الرياضي. يقيس هذا الاختبار <em>طريقة التفكير</em> لا المعرفة المنهجية. يمكن لطفل أن يحصل على المئين 90 دون أن يدرس الجبر — كاشفاً عن إمكانات خفية.</span>
+          </Bullet>
+          <Bullet>
+            <strong dir="rtl">نقاط القوة البصرية-المكانية:</strong>{' '}
+            <span dir="rtl">الأطفال ذوو التفكير المكاني القوي يتفوقون في الدوران الذهني وتحليل الأشكال والتفكير ثلاثي الأبعاد. ارتباط قوي بمجالات STEM والهندسة والتصميم. هذا هو المجال الأقل اكتشافاً في التقييم المدرسي المعتاد.</span>
+          </Bullet>
+          <Bullet>
+            <strong dir="rtl">مجالات التطوير:</strong>{' '}
+            <span dir="rtl">أي مجال يحصل فيه الطفل على درجات أقل من معيار عمره ليس فشلاً — بل هو هدف ذو أولوية حيث يُنتج الدعم الموجه أسرع تقدم ملموس.</span>
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4" dir="rtl">منهجية الاختبار التكيفي: الأسس العلمية</h2>
+        <p className="text-gray-700 leading-relaxed mb-4" dir="rtl">
+          يستخدم اختبارنا <strong>الاختبار التكيفي بالحاسوب (CAT)</strong>: يُختار كل سؤال في الوقت الفعلي بناءً على الإجابة السابقة. إجابة صحيحة ← سؤال أصعب. صعوبة ← إعادة معايرة. يحدد النظام المستوى الحقيقي للطفل في 25–35 سؤالاً — نفس بنية{' '}
+          <Link href="/ar/blog/nwea-map-sharh-shaml" className="text-indigo-600 hover:underline">NWEA MAP</Link> و{' '}
+          <Link href="/ar/blog/cat4-dalil-shamil" className="text-indigo-600 hover:underline">CAT4</Link>.
+        </p>
+        <p className="text-gray-700 leading-relaxed" dir="rtl">
+          كل سؤال معاير بـ<strong>نظرية الاستجابة للمفردة (IRT)</strong>، منتجاً تقديراً للقدرة (theta) بفترة ثقة معروفة. تُحوَّل النتائج إلى مراتب مئينية وفق معايير دولية متوافقة مع CAT4 وNWEA MAP و<Link href="/ar/blog/pisa-2025-azmat-talim-alami-ma-yahtaj-marifatuh-awaliyaa-al-umur" className="text-indigo-600 hover:underline">PISA</Link> وCogat.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4" dir="rtl">ماذا يقيس الاختبار الأكاديمي المجاني؟</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet><strong dir="rtl">التفكير اللفظي —</strong> <span dir="rtl">فهم الكلمات، التفكير التناظري، الاستنتاج من النصوص. أداء مرتفع ومستمر في اللغة والأدب.</span></Bullet>
+          <Bullet><strong dir="rtl">التفكير العددي —</strong> <span dir="rtl">التعرف على الأنماط، العلاقات العددية، المنطق الكمي. يقيس <em>أسلوب التفكير</em> الرياضي لا المعرفة المنهجية.</span></Bullet>
+          <Bullet><strong dir="rtl">التفكير البصري-المكاني —</strong> <span dir="rtl">تحليل الأشكال، الدوران الذهني، العلاقات المكانية. ارتباط قوي بـSTEM والهندسة والتصميم.</span></Bullet>
+          <Bullet><strong dir="rtl">سرعة المعالجة والانتباه —</strong> <span dir="rtl">مدى سرعة ودقة معالجة المعلومات. يُفسَّر مع التفكير العددي لتحديد أنماط الانتباه.</span></Bullet>
+        </ul>
+        <Callout>
+          <span dir="rtl"><strong>ابدأ الاختبار المجاني الآن</strong> — تقرير كامل على أربعة مجالات في 35 دقيقة، بدون تسجيل.</span>
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4" dir="rtl">كيف تستخدم النتائج؟ المدرسة والامتحانات والدعم الأكاديمي</h2>
+        <ul className="space-y-5 mb-6">
+          <Check><span dir="rtl"><strong>اختيار المدرسة والبرنامج:</strong> الملفات ذات الهيمنة اللفظية تزدهر في المسارات الإنسانية؛ الملفات العددية-المكانية تتفوق في البرامج العلمية المكثفة.</span></Check>
+          <Check><span dir="rtl"><strong>الدعم الأكاديمي الموجه:</strong> يحدد التقرير أي مجال يحتاج تطويراً وأيها قوي بالفعل — تجنباً للخطأ الشائع بالاستثمار في مجال قوي بينما يُهمل فجوة حقيقية.</span></Check>
+          <Check><span dir="rtl"><strong>التواصل مع المعلمين:</strong> الحضور بيانات اختبار موحدة يغير المحادثة. &rdquo;المئين 93 في التفكير المكاني&ldquo; معلومة مختلفة عن &rdquo;يبدو ذكياً لكنه غير مركّز.&ldquo;</span></Check>
+          <Check><span dir="rtl"><strong>التخطيط الأكاديمي طويل المدى:</strong> ملف في سن 9 سنوات يمنح ثلاث سنوات من الاستثمار الموجه قبل الانتقال للمرحلة المتوسطة.</span></Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed" dir="rtl">
+          مجالات تطوير طفلك ليست سجل فشل — بل مناطق إمكانات تنتظر النوع الصحيح من الدعم. مع الخريطة المعرفية الموضوعية التي يوفرها هذا التقييم، تنتقل من التفاعل مع الدرجات إلى اتخاذ قرارات استراتيجية مبنية على بيانات.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4" dir="rtl">أدلة ذات صلة</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/ar/blog/fahm-quwat-dauf-tiflik-qabl-al-thanawiya', tag: 'دليل', title: 'فهم نقاط قوة وضعف طفلك قبل المرحلة الثانوية' },
+            { href: '/ar/blog/taqrir-measayir-akademiyya-2026', tag: 'تقرير', title: 'تقرير المعايير الأكاديمية الدولية 2026' },
+            { href: '/ar/blog/iktishaf-mawahib-tiflak-dalil-walidain-jadid', tag: 'دليل', title: 'اكتشف نقاط القوة الخفية لطفلك: دليل الوالدين الحديث' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2" dir="rtl">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug" dir="rtl">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getArabicBlogContent(slug: string): React.ReactNode {
