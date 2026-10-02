@@ -11,8 +11,9 @@ export default function PublicNavES() {
         <Logo href="/es" size="sm" />
 
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-[14px] font-medium text-[#1d1d1f]">
-          <Link href="/es/practicas"     className="hover:text-[#4F46E5] transition-colors">Prácticas</Link>
-          <Link href="/es/sobre-nosotros" className="hover:text-[#4F46E5] transition-colors">Sobre nosotros</Link>
+          <Link href="/es/practicas"             className="hover:text-[#4F46E5] transition-colors">Prácticas</Link>
+          <Link href="/es/potencial-de-tu-hijo" className="hover:text-[#4F46E5] transition-colors">Potencial</Link>
+          <Link href="/es/sobre-nosotros"        className="hover:text-[#4F46E5] transition-colors">Sobre nosotros</Link>
           <Link href="/es/metodologia"    className="hover:text-[#4F46E5] transition-colors">Metodología</Link>
           <Link href="/es/blog"           className="hover:text-[#4F46E5] transition-colors flex items-center gap-1.5">
             Blog
