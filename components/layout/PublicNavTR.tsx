@@ -12,6 +12,7 @@ export default function PublicNavTR() {
 
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-[14px] font-medium text-[#1d1d1f]">
           <Link href="/tr/staj"        className="hover:text-[#4F46E5] transition-colors">Staj</Link>
+          <Link href="/tr/cocugunuzun-potansiyeli" className="hover:text-[#4F46E5] transition-colors">Çocuğunuzun Potansiyeli</Link>
           <Link href="/tr/hakkimizda"  className="hover:text-[#4F46E5] transition-colors">Hakkımızda</Link>
           <Link href="/tr/metodoloji"  className="hover:text-[#4F46E5] transition-colors">Metodoloji</Link>
           <Link href="/tr/blog"        className="hover:text-[#4F46E5] transition-colors flex items-center gap-1.5">

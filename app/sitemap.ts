@@ -200,6 +200,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { tr: `${BASE}/tr/staj`, 'en-GB': `${BASE}/internship`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
+    {
+      url: `${BASE}/tr/cocugunuzun-potansiyeli`,
+      lastModified: '2026-10-02',
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+      alternates: { languages: { tr: `${BASE}/tr/cocugunuzun-potansiyeli`, 'x-default': `${BASE}/tr/cocugunuzun-potansiyeli` } },
+    },
     ...BLOG_POSTS_TR.map((post) => {
       const cs = post.contentSlug
       const langs: Record<string, string> = { tr: `${BASE}/tr/blog/${post.slug}` }
