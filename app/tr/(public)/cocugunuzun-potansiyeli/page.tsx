@@ -5,24 +5,24 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/tr/auth/register`
 
 export const metadata: Metadata = {
-  title: 'Çocuğunuzun Bilişsel Güçlü ve Zayıf Yönlerini Keşfedin — Ücretsiz Değerlendirme',
+  title: 'Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir? — Ücretsiz Bilişsel Test',
   description:
-    'Çocuğunuzun gerçek bilişsel potansiyelini keşfedin. PISA, SAT ve GCSE standartlarına göre kıyaslamalı ücretsiz uyarlanabilir değerlendirme. 35 dakikada anında AI destekli rapor.',
+    'Çocuğunuzun güçlü ve zayıf yönlerini 35 dakikada öğrenin. PISA, SAT ve GCSE standartlarına göre kıyaslamalı ücretsiz uyarlanabilir bilişsel değerlendirme — anında AI destekli rapor, kayıt gerektirmez.',
   keywords: [
+    'çocuğumun güçlü ve zayıf yönleri nelerdir',
     'çocuğumun güçlü yönleri',
     'çocuğumun zayıf yönleri',
     'çocuk bilişsel değerlendirme',
     'ücretsiz çocuk testi',
-    'PISA değerlendirme',
+    'PISA değerlendirme çocuk',
     'çocuk potansiyeli testi',
-    'bilişsel yetenek testi',
+    'bilişsel yetenek testi ücretsiz',
     'çocuk akademik değerlendirme',
-    'sözel akıl yürütme testi',
-    'sayısal akıl yürütme',
-    'görsel uzamsal zeka',
+    'sözel akıl yürütme testi çocuk',
+    'adaptif test çocuk',
     'çocuk IQ testi ücretsiz',
     'uluslararası norm kıyaslama',
-    'adaptif test çocuk',
+    'çocuk karnesi not analizi',
   ],
   alternates: {
     canonical: `${BASE_URL}/tr/cocugunuzun-potansiyeli`,
@@ -32,9 +32,16 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/tr/cocugunuzun-potansiyeli`,
     siteName: 'Eduentry',
-    title: 'Çocuğunuzun Bilişsel Güçlü ve Zayıf Yönlerini Keşfedin',
-    description: 'PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme. 35 dakikada anında rapor.',
+    title: 'Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir? — Ücretsiz Bilişsel Test',
+    description: 'Çocuğunuzun güçlü ve zayıf yönlerini 35 dakikada öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
     locale: 'tr_TR',
+    images: [{ url: `${BASE_URL}/tr/staj/opengraph-image`, width: 1200, height: 630, alt: 'Çocuğunuzun Bilişsel Değerlendirmesi — Eduentry' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir? — Ücretsiz Bilişsel Test',
+    description: 'Çocuğunuzun güçlü ve zayıf yönlerini 35 dakikada öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
+    images: [`${BASE_URL}/tr/staj/opengraph-image`],
   },
 }
 
@@ -76,21 +83,104 @@ const SCIENCE_POINTS = [
   },
 ]
 
+const FAQS = [
+  {
+    q: 'Çocuğumun güçlü ve zayıf yönleri nelerdir?',
+    a: 'Çocuğunuzun akademik güçlü ve zayıf yönleri üç bağımsız bilişsel alanda ölçülür: sözel akıl yürütme (dil kavrama ve analoji), sayısal muhakeme (örüntü tanıma ve matematiksel mantık) ve görsel-uzamsal düşünme (şekil analizi ve 3D ilişkiler). Ücretsiz adaptif test, her alan için uluslararası yaş normuna göre ayrı bir yüzdelik dilim skoru üretir.',
+  },
+  {
+    q: 'Karne notları çocuğumun gerçek potansiyelini gösterir mi?',
+    a: 'Hayır. Karne notları kristalize zekayı ölçer — öğrenilmiş ve tekrar üretilen bilgiyi. Buna karşın pek çok zeki çocuk, akıl yürütme, örüntü tanıma ve problem çözme gibi okul sınavlarının nadiren ölçtüğü akışkan zekada üstündür. Bu yüzden yüksek potansiyelli çocukların önemli bir kısmı kötü notlarla gelebilir.',
+  },
+  {
+    q: 'Değerlendirme ücretsiz mi?',
+    a: 'Evet, tamamen ücretsiz. Kayıt zorunludur ancak herhangi bir ücret, abonelik veya gizli maliyet bulunmamaktadır. Test tamamlandıktan sonra anında dört alanlı bilişsel profil raporu üretilir.',
+  },
+  {
+    q: 'Test ne kadar sürer?',
+    a: 'Yaklaşık 35 dakika. Uyarlanabilir format, standart çoktan seçmeli testlere kıyasla daha az soruyla daha doğru ölçüm yapar. Test kaydedilebilir — çocuğunuz dilediğinde kaldığı yerden devam edebilir.',
+  },
+  {
+    q: 'Hangi yaş grubuna uygundur?',
+    a: '6–17 yaş arası çocuklar için uygundur. Sistem her yaş grubuna göre otomatik olarak kalibre olur; sorular çocuğun düzeyine uyum sağlar.',
+  },
+  {
+    q: 'Rapor bana ne söyler?',
+    a: 'Rapor; dört bilişsel alanda uluslararası yaş normuna göre yüzdelik dilim skorlarını, en güçlü alanı, gelişim öncelikli alanı ve her domain için AI tarafından üretilmiş ebeveyn içgörülerini içerir. Okul seçiminden hedefli destekle ilgili kararlar almaya kadar somut bir rehber sunar.',
+  },
+  {
+    q: 'Bu test okul sınavlarından nasıl farklı?',
+    a: 'Okul sınavları belirli bir müfredattaki bilgiyi ölçer. Bu test ise müfredat bilgisinden bağımsız bilişsel potansiyeli — çocuğun nasıl düşündüğünü — ölçer. Farklı ülkelerdeki veya farklı okul sistemlerindeki çocukları adil biçimde karşılaştırmanıza olanak tanır.',
+  },
+  {
+    q: 'Çocuğumun uzamsal zekası yüksek ama notları kötü. Normal mi?',
+    a: 'Evet, oldukça yaygın. Yüksek uzamsal zeka genellikle standart akademik testlerde hafife alınır. OECD verilerine göre akışkan muhakemede üst çeyrekte yer alan ama okul başarımında alt yarıda kalan öğrenciler tüm öğrencilerin %12–18\'ini oluşturmaktadır — okul sistemlerinin kronik olarak küçümsediği bir grup.',
+  },
+  {
+    q: 'Sonuçları okulla paylaşabilir miyim?',
+    a: 'Evet. Standartlaştırılmış bir değerlendirmeden elde edilen rapor, öğretmen toplantılarını ve rehberlik görüşmelerini dönüştürür. "Uzamsal akıl yürütmede 97. yüzdelik" bilgisi, "zeki görünüyor ama dağınık" ifadesine kıyasla çok daha güçlü bir savunuculuk aracıdır.',
+  },
+  {
+    q: 'Üstün zekâyı veya özel yetenekleri tespit eder mi?',
+    a: 'Evet. Tüm üç alanda 90. yüzdelik dilimin üzerinde skor alan çocuklar üstün zekâ programı adaylığı için güçlü bir gösterge sergiler. Test aynı zamanda skor örüntülerindeki tutarsızlıkları da yakalayarak disleksi, diskalkuli veya çift istisnailik (twice-exceptional) gibi durumlar için uzman değerlendirmesine yönlendirir.',
+  },
+]
+
 const PAGE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   '@id': `${BASE_URL}/tr/cocugunuzun-potansiyeli#webpage`,
   url: `${BASE_URL}/tr/cocugunuzun-potansiyeli`,
-  name: 'Çocuğunuzun Bilişsel Güçlü ve Zayıf Yönlerini Keşfedin',
-  description: 'PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
+  name: 'Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir? — Ücretsiz Bilişsel Test',
+  description: 'Çocuğunuzun güçlü ve zayıf yönlerini 35 dakikada öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
   inLanguage: 'tr',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
+
+const SERVICE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${BASE_URL}/tr/cocugunuzun-potansiyeli#service`,
+  name: 'Çocuk Bilişsel Değerlendirmesi',
+  description: '6–17 yaş arası çocuklar için ücretsiz uyarlanabilir bilişsel değerlendirme. Sözel, sayısal ve uzamsal akıl yürütmeyi PISA, SAT ve GCSE standartlarına göre kıyaslar.',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
+  url: `${BASE_URL}/tr/cocugunuzun-potansiyeli`,
+  inLanguage: 'tr',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY', availability: 'https://schema.org/InStock' },
+}
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: `${BASE_URL}/tr` },
+    { '@type': 'ListItem', position: 2, name: 'Çocuğunuzun Potansiyeli', item: `${BASE_URL}/tr/cocugunuzun-potansiyeli` },
+  ],
+}
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
+const RELATED_POSTS = [
+  { href: '/tr/blog/cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet', tag: 'Değerlendirme', title: 'Ücretsiz Akademik Test: Güçlü ve Zayıf Yönleri 35 Dakikada Keşfedin' },
+  { href: '/tr/blog/zeki-cocuk-neden-basarisiz-olur', tag: 'Rehber', title: 'Zeki Çocuk Neden Başarısız Olur? Ebeveyn Rehberi' },
+  { href: '/tr/blog/cocugunuzun-gizli-guclerini-kesfetmek-yeni-nesil-veli-rehberi', tag: 'Rehber', title: 'Çocuğunuzun Gizli Güçlerini Keşfedin: Yeni Nesil Veli Rehberi' },
+]
 
 export default function CocugunuzunPotansiyeliPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PAGE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       {/* ── Magenta Networks badge bar ────────────────────────────── */}
       <div className="bg-[#0a0a0a] text-white text-center py-2 text-xs font-medium tracking-wide">
@@ -114,7 +204,7 @@ export default function CocugunuzunPotansiyeliPage() {
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Bilişsel yeteneği ve akademik hazırlığı uluslararası <strong>PISA, SAT ve GCSE</strong> standartlarına göre 2 saatten kısa sürede kıyaslayın.
+            Bilişsel yeteneği ve akademik hazırlığı uluslararası <strong>PISA, SAT ve GCSE</strong> standartlarına göre 35 dakikada kıyaslayın. Karne notlarının gösteremediği gerçek potansiyeli ortaya çıkarın.
           </p>
 
           <Link
@@ -148,8 +238,27 @@ export default function CocugunuzunPotansiyeliPage() {
         </div>
       </section>
 
+      {/* ── FEATURED SNIPPET SECTION ─────────────────────────────── */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir?</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            <strong>Çocuğunuzun akademik güçlü ve zayıf yönleri üç bağımsız bilişsel alanda ölçülür:</strong> sözel akıl yürütme (dil kavrama ve analoji), sayısal muhakeme (örüntü tanıma ve matematiksel mantık) ve görsel-uzamsal düşünme (şekil analizi ve 3D ilişkiler). Ücretsiz adaptif test, her alan için uluslararası yaş normuna göre ayrı bir yüzdelik dilim skoru üretir — hangisinde gerçekten güçlü, hangisinde hedefe yönelik desteğin en büyük farkı yaratacağını net biçimde gösterir.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            Karne notları bu soruyu cevaplayamaz — çünkü notlar belirli bir okulda, belirli bir öğretmenin verdiği müfredattaki bilgiyi ölçer. Uluslararası standartlarda bilişsel potansiyeli ölçmez. OECD verilerine göre akışkan muhakemede üst çeyrekte yer almasına karşın okul başarımında alt yarıda kalan öğrenciler tüm öğrencilerin <strong>%12–18&apos;ini</strong> oluşturmaktadır — okul sistemlerinin kronik olarak küçümsediği bir grup.
+          </p>
+          <Link
+            href={REGISTER_URL}
+            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm px-6 py-3 rounded-xl transition-colors"
+          >
+            Ücretsiz değerlendirmeyi başlat →
+          </Link>
+        </div>
+      </section>
+
       {/* ── 4 DOMAINS ────────────────────────────────────────────── */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-[#f9f8ff]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Neyi Değerlendiriyoruz?</h2>
@@ -157,7 +266,7 @@ export default function CocugunuzunPotansiyeliPage() {
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
             {DOMAINS.map((d) => (
-              <div key={d.title} className="border border-gray-100 rounded-2xl p-6 hover:border-indigo-100 hover:shadow-sm transition-all">
+              <div key={d.title} className="border border-gray-100 bg-white rounded-2xl p-6 hover:border-indigo-100 hover:shadow-sm transition-all">
                 <div className="text-3xl mb-3">{d.icon}</div>
                 <h3 className="text-base font-bold text-gray-900 mb-2">{d.title}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">{d.desc}</p>
@@ -168,7 +277,7 @@ export default function CocugunuzunPotansiyeliPage() {
       </section>
 
       {/* ── SCIENCE ──────────────────────────────────────────────── */}
-      <section className="py-20 px-6 bg-[#f9f8ff]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Eduentry&apos;nin Bilimsel Temeli</h2>
@@ -176,22 +285,24 @@ export default function CocugunuzunPotansiyeliPage() {
           </div>
           <div className="flex flex-col gap-6">
             {SCIENCE_POINTS.map((s) => (
-              <div key={s.title} className="bg-white rounded-2xl border border-indigo-50 p-6">
+              <div key={s.title} className="bg-[#f9f8ff] rounded-2xl border border-indigo-50 p-6">
                 <h3 className="text-base font-bold text-gray-900 mb-2">{s.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
+          <p className="text-sm text-gray-500 mt-8 leading-relaxed">
+            Aynı test mimarisi <strong>NWEA MAP</strong> ve <strong>CAT4</strong> gibi dünya genelinde 10 milyondan fazla öğrenciye uygulanan standart değerlendirmelerde de kullanılmaktadır. John Hattie&apos;nin 900&apos;den fazla çalışmayı kapsayan meta analizi, tanısal değerlendirmenin etki büyüklüğünü 0.67 olarak belirlemiştir — eğitimde en yüksek etkili müdahaleler arasında yer almaktadır.
+          </p>
         </div>
       </section>
 
       {/* ── REPORT PREVIEW ───────────────────────────────────────── */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-[#f9f8ff]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">Örnek Rapor: Küresel Yetenek Profili</h2>
           <p className="text-gray-500 text-base mb-10">Test tamamlandığında ebeveynler dört alanda yüzdelik dilim sıralamalarını ve güçlü/gelişim alanlarını gösteren ayrıntılı bir rapor alır.</p>
 
-          {/* Report mockup */}
           <Link href="/sample-report" className="block group">
             <div className="border-2 border-indigo-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all bg-gradient-to-br from-indigo-50 to-white">
               <div className="bg-indigo-600 px-6 py-4 text-left">
@@ -237,6 +348,39 @@ export default function CocugunuzunPotansiyeliPage() {
               Bilişsel Potansiyeli Değerlendir (Ücretsiz)
             </Link>
             <p className="mt-3 text-xs text-gray-400">Ücretsiz Uluslararası Kıyaslama &nbsp;•&nbsp; %100 Gizli &nbsp;•&nbsp; Anında AI Destekli Bilişsel Profil PDF</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ──────────────────────────────────────────────────── */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">Sık Sorulan Sorular</h2>
+          <div className="flex flex-col divide-y divide-gray-100">
+            {FAQS.map(({ q, a }) => (
+              <details key={q} className="group py-5">
+                <summary className="flex justify-between items-start cursor-pointer list-none gap-4">
+                  <span className="text-sm font-semibold text-gray-900 leading-snug">{q}</span>
+                  <span className="text-indigo-400 text-lg leading-none mt-0.5 shrink-0 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-3 text-sm text-gray-600 leading-relaxed">{a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── RELATED POSTS ────────────────────────────────────────── */}
+      <section className="py-16 px-6 bg-[#f9f8ff]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-xl font-bold text-gray-900 mb-6">İlgili Rehberler</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {RELATED_POSTS.map((p) => (
+              <Link key={p.href} href={p.href} className="border border-gray-100 bg-white rounded-xl p-5 hover:border-indigo-100 transition-colors">
+                <div className="text-xs font-semibold text-indigo-600 mb-2">{p.tag}</div>
+                <div className="font-semibold text-gray-900 text-sm leading-snug">{p.title}</div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

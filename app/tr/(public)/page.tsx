@@ -692,7 +692,7 @@ export default function TurkishHomePage() {
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">Akademik Değerlendirme</p>
             <h2 className="text-2xl font-bold text-white mb-3">Çocuğunuzun küresel konumunu keşfedin.</h2>
-            <p className="text-[#a1a1a7] text-sm mb-8">2 saatten kısa sürede eksiksiz uluslararası bağlam.</p>
+            <p className="text-[#a1a1a7] text-sm mb-8">1 saatten kısa sürede eksiksiz uluslararası bağlam.</p>
             <CtaLink href="/tr/auth/register" label="bottom_cta_academic_tr" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Ücretsiz değerlendirmeyi başlat →
             </CtaLink>
