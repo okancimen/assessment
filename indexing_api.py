@@ -290,6 +290,30 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/ar/imkaniyat-tiflik",
     f"{BASE_URL}/ru/potentsial-vashego-rebyonka",
     f"{BASE_URL}/zh/haizi-de-qianli",
+    # GCSE post — EN
+    f"{BASE_URL}/blog/how-to-prepare-for-gcse",
+    # TR: 4 new posts
+    f"{BASE_URL}/tr/blog/standart-puan-nedir",
+    f"{BASE_URL}/tr/blog/nwea-map-puanlari-aciklamasi",
+    f"{BASE_URL}/tr/blog/gramer-okulu-giris-sartlari-2026",
+    f"{BASE_URL}/tr/blog/11-plus-sinavina-hazirlik-rehberi",
+    # AR: 4 new posts
+    f"{BASE_URL}/ar/blog/mutatalabat-madaris-al-qawaid-2026",
+    f"{BASE_URL}/ar/blog/fawaeid-tadreeb-lise-lil-jami",
+    f"{BASE_URL}/ar/blog/khibra-amal-tijaria-lise-uk",
+    f"{BASE_URL}/ar/blog/kaifa-tahdar-imtihan-11-plus",
+    # ZH: 3 new posts
+    f"{BASE_URL}/zh/blog/gaozhong-shixi-youshi-daxue",
+    f"{BASE_URL}/zh/blog/gaozhong-shangwu-shixi-yingguo",
+    f"{BASE_URL}/zh/blog/ruhe-zhunbei-11-plus-kaoshi",
+    # ES: 2 new posts
+    f"{BASE_URL}/es/blog/como-prepararse-para-el-11-plus",
+    f"{BASE_URL}/es/blog/razonamiento-verbal-11-plus-guia",
+    # FR: 2 new posts
+    f"{BASE_URL}/fr/blog/comment-preparer-examen-11-plus",
+    f"{BASE_URL}/fr/blog/raisonnement-verbal-11-plus-guide",
+    # RU: 1 new post
+    f"{BASE_URL}/ru/blog/verbalnoye-rassuzhdenie-11-plus-rukovodstvo",
 ]
 
 
