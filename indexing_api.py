@@ -282,6 +282,14 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/ar/blog/kayfa-tajid-tadrib-ka-talib",
     f"{BASE_URL}/ru/blog/kak-nayti-stazhirovku-buduchi-studentom",
     f"{BASE_URL}/zh/blog/xuesheng-ru-he-zhao-dao-shixi",
+    # Child cognitive potential page — all 7 locales
+    f"{BASE_URL}/your-childs-potential",
+    f"{BASE_URL}/tr/cocugunuzun-potansiyeli",
+    f"{BASE_URL}/es/potencial-de-tu-hijo",
+    f"{BASE_URL}/fr/potentiel-de-votre-enfant",
+    f"{BASE_URL}/ar/imkaniyat-tiflik",
+    f"{BASE_URL}/ru/potentsial-vashego-rebyonka",
+    f"{BASE_URL}/zh/haizi-de-qianli",
 ]
 
 
