@@ -3438,6 +3438,104 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'global-academic-benchmarks-report-2026': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Predecir y hacer seguimiento del éxito en la colocación estudiantil requiere comprender las métricas de datos transfronterizas. A medida que los organismos educativos regionales e internacionales integran modelos de pruebas digitales adaptativas, las expectativas de corte estándar están cambiando significativamente. Este informe detalla los parámetros de rendimiento globales, las tendencias de pruebas estandarizadas y los objetivos clave en los sistemas de primaria, secundaria y preuniversitario para el ciclo académico 2026.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Referencias de Rendimiento Global 2026</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Las referencias académicas globales de 2026 son: la entrada a colegios selectivos del Reino Unido requiere SAS 115+ (percentil 84); la media PISA de la OCDE es 472–476 con Singapur liderando con 575; una puntuación competitiva en el SAT Digital es 1480+; y el Diploma IB para universidades de élite requiere 40+ puntos sobre 45.</strong> Estos umbrales son las métricas que los colegios y comités de admisiones utilizan activamente al evaluar candidatos para la entrada selectiva.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Tendencia de Razonamiento Verbal 11+ (2026):</strong> La Puntuación de Edad Estandarizada (SAS) de referencia es 100. Los colegios más selectivos de Londres requieren entre 127 y 132, colocando a los candidatos en el percentil 98 o superior.
+          </Bullet>
+          <Bullet>
+            <strong>Competencia Matemática Global (PISA/TIMSS 2026):</strong> Singapur, Hong Kong y Estonia mantienen puntuaciones de 540–575, frente a la mediana de la OCDE de 472. El promedio nacional del Reino Unido es de aproximadamente 495–510.
+          </Bullet>
+          <Bullet>
+            <strong>El Cambio Preuniversitario (SAT Digital):</strong> La puntuación mediana del 10% superior de solicitantes globales se ha consolidado en 1480+ en el SAT Digital. El cambio a MST ha aumentado la importancia de la precisión en el primer módulo.
+          </Bullet>
+          <Bullet>
+            <strong>Programa del Diploma IB (cohorte 2026):</strong> La puntuación media mundial del IB se ha mantenido estable en aproximadamente 29–30 puntos de 45. Los estudiantes que apuntan a Oxford, Imperial o UCL necesitan 40+ puntos.
+          </Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Conclusión clave:</strong> Las puntuaciones brutas son cada vez más obsoletas como métrica de planificación. Para transiciones internacionales o admisiones selectivas, un estudiante debería estar en el percentil 85 o superior dentro de su currículo objetivo específico. Por debajo del percentil 75, cerrar esa brecha generalmente requiere 12–18 meses de intervención específica.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Marcos de Admisión Globales</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Nivel de Evaluación</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Métrica Principal</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Referencia Competitiva 2026</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Motor de Evaluación</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Admisión Primaria (11+ años)', 'Puntuación de Edad Estandarizada (SAS)', '115–121+', 'GL Assessment / CEM / ISEB'],
+                ['Base Secundaria (14–15 años)', 'Puntuaciones Escala / Bandas', 'Nivel 4+ (Base PISA)', 'OCDE / Marcos Nacionales'],
+                ['Vía Universidad EE.UU.', 'Puntuación Digital (400–1600)', '1450+ (Ivy: 1540+)', 'College Board (SAT Digital)'],
+                ['Vía Universidad RU/Commonwealth', 'Límites de Nota (A*–U / 9–1)', '3× A-Level A*/A', 'UCAS / Pearson / Cambridge'],
+                ['Diploma IB', 'Puntos (1–45)', '40+ puntos', 'Organización IB (Ginebra)'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  {row.map((cell, i) => (
+                    <td key={i} className={`p-4 ${i === 0 ? 'font-semibold text-gray-900' : 'text-gray-600'}`}>{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Hoja de Ruta para la Preparación Académica Internacional</h2>
+        <div className="space-y-4">
+          {[
+            { step: '1', title: 'Diagnóstico Inicial', when: '18–24 Meses Antes', detail: 'Realiza una evaluación diagnóstica completa de todas las materias principales. Establece las puntuaciones estandarizadas actuales antes de comprar materiales de preparación.' },
+            { step: '2', title: 'Mapeo de Brechas', when: '12–18 Meses Antes', detail: 'Compara el perfil diagnóstico de tu hijo con el estándar del currículo objetivo. Asigna el tiempo de preparación proporcionalmente a las brechas, no a las fortalezas.' },
+            { step: '3', title: 'Familiarización con Pruebas Adaptativas', when: '6–12 Meses Antes', detail: 'Introduce práctica adaptativa digital cronometrada. Los niños que solo han practicado con libros en papel a menudo tienen dificultades con las pruebas adaptativas digitales por falta de familiaridad con el formato.' },
+            { step: '4', title: 'Ejercicios de Ritmo y Precisión', when: '3–6 Meses Antes', detail: 'Implementa objetivos de tiempo por pregunta. Para 11+ de GL Assessment: aproximadamente 60 segundos. Para SAT Digital: aproximadamente 75 segundos.' },
+            { step: '5', title: 'Calibración de Puntuación Objetivo', when: 'Último Mes', detail: 'Analiza todos los resultados de simulacros por bandas de percentil, no por porcentajes brutos. Calibra la estrategia final de selección de colegios basándote en el rendimiento verificado en el percentil 85–95.' },
+          ].map(({ step, title, when, detail }) => (
+            <div key={step} className="flex gap-4 p-5 rounded-xl border border-gray-100">
+              <div className="w-9 h-9 rounded-full bg-indigo-100 text-indigo-600 font-bold flex items-center justify-center flex-shrink-0">{step}</div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="font-semibold text-gray-900">{title}</span>
+                  <span className="text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full px-2.5 py-0.5">{when}</span>
+                </div>
+                <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Referencias</h2>
+        <ul className="space-y-2 text-sm text-gray-600">
+          <li>OCDE — Resultados Internacionales PISA 2022 en Matemáticas, Lectura y Ciencias.</li>
+          <li>IEA — Resultados Internacionales TIMSS 2023 en Matemáticas y Ciencias.</li>
+          <li>College Board — Informe sobre Métricas de Rendimiento del SAT Digital y Escalado de Cohortes 2025–2026.</li>
+          <li>GL Assessment — Manual Técnico para el Cálculo de la Puntuación de Edad Estandarizada (edición 2025).</li>
+          <li>Organización IB — Boletín Estadístico Anual 2025, datos de rendimiento de candidatos del Programa del Diploma.</li>
+        </ul>
+      </section>
+    </>
+  ),
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

@@ -181,7 +181,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: '2026-06-16',
     dateModified: '2026-09-10',
     readTime: '9 min read',
-    tags: ['Standardised Testing', 'International Benchmarks', '11+', 'Digital SAT', 'PISA'],
+    tags: ['Standardised Testing', 'International Benchmarks', '11+', 'Digital SAT', 'PISA', 'Grammar Schools', 'Percentile', 'SAS', 'CAT4', 'IB'],
     faqs: [
       {
         q: 'What is a good standardised score for UK grammar school entry?',
@@ -194,6 +194,34 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       {
         q: 'What is the average PISA score for the UK?',
         a: 'The UK typically scores around 495–510 in PISA Mathematics, above the OECD average of 472 but below top-performing countries such as Singapore (575), Japan (536), and South Korea (527). In Reading, the UK scores approximately 494, broadly in line with the OECD average.',
+      },
+      {
+        q: 'What is a good PISA score for a child?',
+        a: 'PISA scores are reported on a scale where the OECD average is approximately 472–476. A score above 545 (Level 5) places a student in the top 8–10% globally and is considered excellent. Scores above 505 are above the OECD average. Singapore leads globally with a Mathematics score of 575, roughly 2–3 school years ahead of the OECD average.',
+      },
+      {
+        q: 'What is a Standardised Age Score (SAS) and how is it calculated?',
+        a: 'A Standardised Age Score (SAS) is a normalised score with a mean of 100 and a standard deviation of 15, adjusted for the child\'s precise age in months. GL Assessment\'s SAS formula compares each child only against peers born in the same month range, correcting for the developmental gap between autumn-born and summer-born children in the same school year.',
+      },
+      {
+        q: 'How does Singapore compare to the UK in education standards?',
+        a: 'Singapore consistently leads global PISA rankings, scoring approximately 575 in Mathematics versus the UK\'s 495–510 — a gap of roughly 70–80 points, equivalent to 2–3 years of schooling. Singapore achieves this through a highly structured national curriculum, intensive home tutoring culture, and a strong emphasis on mathematical problem-solving from primary school.',
+      },
+      {
+        q: 'How does the Digital SAT work in 2026?',
+        a: 'The Digital SAT uses Multi-Stage Adaptive Testing (MST): all students sit the same first module, and performance on that module determines which of two second modules they receive — harder or easier. A student who makes too many errors in Module 1 is routed to the easier second module, capping their maximum possible score at approximately 1350 regardless of how well they perform in Module 2.',
+      },
+      {
+        q: 'What is the average IB diploma score worldwide?',
+        a: 'The worldwide IB Diploma average score is approximately 29–30 points out of a maximum of 45. Students targeting elite UK universities (Oxford, Imperial, UCL) or Ivy League institutions typically need 40+ points with specific Higher Level requirements. The 40-point threshold places a student above the 90th percentile of the global IB cohort.',
+      },
+      {
+        q: 'At what percentile does a child need to be for selective school entry?',
+        a: 'For most UK grammar schools, a child needs to perform at or above the 84th percentile (SAS 115+). For the most competitive schools — QE Boys, Henrietta Barnett, Tiffin — the effective entry threshold is the 97th–99th percentile. For independent school scholarships and international selective admissions, the 90th percentile is generally the minimum competitive threshold.',
+      },
+      {
+        q: 'How do I find out where my child stands against international benchmarks?',
+        a: 'Eduentry\'s free adaptive assessment benchmarks your child against PISA, GCSE, SAT, and IB standards across four cognitive domains. It produces a standardised score (mean 100, SD 15) and international percentile rank — the same scale used by GL Assessment and CAT4 — so you can see exactly where your child stands globally, not just within their school or class.',
       },
     ],
     cta: {

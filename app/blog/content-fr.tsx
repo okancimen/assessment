@@ -2935,6 +2935,104 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'global-academic-benchmarks-report-2026': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Prédire et suivre le succès du placement scolaire nécessite de comprendre les métriques de données transfrontalières. Alors que les organismes éducatifs régionaux et internationaux intègrent des modèles de tests numériques adaptatifs, les attentes de seuil standard évoluent significativement. Ce rapport détaille les paramètres de performance mondiaux, les tendances des tests standardisés et les objectifs clés dans les systèmes primaire, secondaire et pré-universitaire pour le cycle académique 2026.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Références de Performance Mondiale 2026</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Les références académiques mondiales de 2026 sont: l&apos;entrée dans les grammar schools du RU exige un SAS de 115+ (84e percentile); la moyenne PISA de l&apos;OCDE est de 472–476 avec Singapour en tête à 575; un score compétitif au SAT Numérique est 1480+; et le Diplôme IB pour les universités d&apos;élite exige 40+ points sur 45.</strong> Ces seuils sont les métriques que les écoles et comités d&apos;admission utilisent activement lors de l&apos;évaluation des candidats.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Tendance Raisonnement Verbal 11+ (2026):</strong> Le Score d&apos;Âge Standardisé (SAS) de référence est 100. Les écoles londonniennes les plus compétitives (QE Boys, Henrietta Barnett) exigent 127–132, plaçant les candidats au-dessus du 98e percentile.
+          </Bullet>
+          <Bullet>
+            <strong>Compétence Mathématique Mondiale (PISA/TIMSS 2026):</strong> Singapour, Hong Kong et l&apos;Estonie maintiennent des scores de 540–575, contre une médiane OCDE de 472. La moyenne nationale britannique est d&apos;environ 495–510.
+          </Bullet>
+          <Bullet>
+            <strong>La Transition Pré-Universitaire (SAT Numérique):</strong> La médiane pour le top 10% des candidats mondiaux s&apos;est consolidée à 1480+ au SAT Numérique. Le passage au MST a renforcé l&apos;importance de la précision dans le premier module.
+          </Bullet>
+          <Bullet>
+            <strong>Programme du Diplôme IB (cohorte 2026):</strong> Le score IB moyen mondial reste stable à environ 29–30 points sur 45. Les étudiants visant Oxford, Imperial ou UCL ont besoin de 40+ points.
+          </Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Conclusion clé:</strong> Les scores bruts sont de plus en plus obsolètes comme métrique de planification. Pour les transitions internationales ou les admissions sélectives, un élève devrait se situer au 85e percentile ou au-dessus dans son cursus cible. En dessous du 75e percentile, combler cet écart nécessite généralement 12–18 mois d&apos;intervention ciblée.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cadres d&apos;Admission Mondiaux</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Niveau d&apos;Évaluation</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Métrique Principale</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Référence Compétitive 2026</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Moteur d&apos;Évaluation</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Admission Primaire (11+ ans)', 'Score d\'Âge Standardisé (SAS)', '115–121+', 'GL Assessment / CEM / ISEB'],
+                ['Base Secondaire (14–15 ans)', 'Scores d\'Échelle / Bandes', 'Niveau 4+ (Base PISA)', 'OCDE / Cadres Nationaux'],
+                ['Voie Université USA', 'Score Numérique (400–1600)', '1450+ (Ivy: 1540+)', 'College Board (SAT Numérique)'],
+                ['Voie Université RU/Commonwealth', 'Limites de Notes (A*–U / 9–1)', '3× A-Level A*/A', 'UCAS / Pearson / Cambridge'],
+                ['Diplôme IB', 'Points (1–45)', '40+ points', 'Organisation IB (Genève)'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  {row.map((cell, i) => (
+                    <td key={i} className={`p-4 ${i === 0 ? 'font-semibold text-gray-900' : 'text-gray-600'}`}>{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Feuille de Route pour la Préparation Académique Internationale</h2>
+        <div className="space-y-4">
+          {[
+            { step: '1', title: 'Diagnostic Initial', when: '18–24 Mois Avant', detail: 'Réalisez une évaluation diagnostique complète de toutes les matières principales. Établissez les scores standardisés actuels avant d\'acheter des matériaux de préparation.' },
+            { step: '2', title: 'Cartographie des Lacunes', when: '12–18 Mois Avant', detail: 'Comparez le profil diagnostique de votre enfant avec la norme du programme cible. Allouez le temps de préparation proportionnellement aux lacunes, pas aux points forts.' },
+            { step: '3', title: 'Familiarisation aux Tests Adaptatifs', when: '6–12 Mois Avant', detail: 'Introduisez une pratique numérique adaptative chronométrée. Les enfants ayant uniquement pratiqué avec des livres papier ont souvent des difficultés avec les tests adaptatifs numériques.' },
+            { step: '4', title: 'Exercices de Rythme et Précision', when: '3–6 Mois Avant', detail: 'Pour le 11+ GL Assessment: environ 60 secondes par question. Pour le SAT Numérique: environ 75 secondes par question.' },
+            { step: '5', title: 'Calibrage du Score Cible', when: 'Dernier Mois', detail: 'Analysez tous les résultats des simulations par bandes de percentile, pas par pourcentages bruts. Calibrez la stratégie finale de sélection d\'écoles sur la base d\'une performance vérifiée au 85e–95e percentile.' },
+          ].map(({ step, title, when, detail }) => (
+            <div key={step} className="flex gap-4 p-5 rounded-xl border border-gray-100">
+              <div className="w-9 h-9 rounded-full bg-indigo-100 text-indigo-600 font-bold flex items-center justify-center flex-shrink-0">{step}</div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="font-semibold text-gray-900">{title}</span>
+                  <span className="text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full px-2.5 py-0.5">{when}</span>
+                </div>
+                <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Références</h2>
+        <ul className="space-y-2 text-sm text-gray-600">
+          <li>OCDE — Résultats Internationaux PISA 2022 en Mathématiques, Lecture et Sciences.</li>
+          <li>IEA — Résultats Internationaux TIMSS 2023 en Mathématiques et Sciences.</li>
+          <li>College Board — Rapport sur les Métriques de Performance du SAT Numérique 2025–2026.</li>
+          <li>GL Assessment — Manuel Technique pour le Calcul du Score d&apos;Âge Standardisé (édition 2025).</li>
+          <li>Organisation IB — Bulletin Statistique Annuel 2025, données de performance des candidats au Programme du Diplôme.</li>
+        </ul>
+      </section>
+    </>
+  ),
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

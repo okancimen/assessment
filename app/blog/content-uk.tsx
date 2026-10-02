@@ -24,6 +24,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">2026 Global Performance Baselines &amp; Data-Driven Milestones</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>The 2026 global academic benchmarks are: UK grammar school entry requires a Standardised Age Score of 115+ (84th percentile); the OECD PISA average is 472–476 with Singapore leading at 575; a competitive Digital SAT score is 1480+; and IB Diploma entry to elite universities requires 40+ points out of 45.</strong> These thresholds are the metrics that schools and admissions panels actively use when evaluating candidates for selective entry.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
           To evaluate student trajectories accurately, educational consultants analyse raw scores translated into
           standardised metrics. Standardised modelling removes discrepancies across varying global test
           conditions by establishing a consistent global mean. The benchmarks below represent the performance

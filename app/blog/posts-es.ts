@@ -1030,6 +1030,31 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: '/es#academica',
     },
   },
+  {
+    slug: 'informe-referencias-academicas-globales-2026',
+    contentSlug: 'global-academic-benchmarks-report-2026',
+    title: 'Informe de Referencias Académicas Globales 2026: Tendencias Internacionales de Puntuación y Evaluación',
+    shortTitle: 'Informe de Referencias Académicas Globales 2026',
+    description: 'Análisis completo de las tendencias de los exámenes estandarizados internacionales 2026 — puntuaciones SAS, referencias PISA/TIMSS, prueba SAT digital adaptativa y los umbrales de percentil que las familias deben seguir para las admisiones selectivas.',
+    tldr: 'La puntuación media PISA de la OCDE en matemáticas, lectura y ciencias es aproximadamente 472–476. El Reino Unido supera la media de la OCDE en lectura y ciencias y está en la media o ligeramente por encima en matemáticas. Singapur lidera a nivel mundial en las tres asignaturas, con una puntuación 70–100 puntos PISA por encima del Reino Unido.',
+    date: '2026-06-16',
+    dateModified: '2026-10-02',
+    readTime: '9 min de lectura',
+    tags: ['Pruebas Estandarizadas', 'Referencias Internacionales', '11+', 'SAT Digital', 'PISA', 'Colegios Selectivos', 'SAS', 'IB'],
+    faqs: [
+      { q: '¿Cuál es una buena puntuación estandarizada para entrar en un colegio selectivo en el Reino Unido?', a: 'Para la mayoría de los colegios selectivos en Inglaterra, una Puntuación de Edad Estandarizada (SAS) de 115 o superior coloca al niño en el rango selectivo. Los colegios más competitivos de Londres requieren puntuaciones de 127–132, lo que corresponde al percentil 97–99.' },
+      { q: '¿Cómo se compara el examen 11+ del Reino Unido con los estándares académicos internacionales?', a: 'La escala SAS del 11+ del Reino Unido (media 100, DE 15) es directamente comparable a las evaluaciones cognitivas internacionales como CAT4, CogAT y WISC-V. Un SAS de 115 corresponde aproximadamente al percentil 84.' },
+      { q: '¿Cuál es la puntuación PISA promedio del Reino Unido?', a: 'El Reino Unido generalmente obtiene entre 495 y 510 en Matemáticas PISA, por encima de la media de la OCDE de 472 pero por debajo de países líderes como Singapur (575), Japón (536) y Corea del Sur (527).' },
+      { q: '¿Qué es una buena puntuación PISA para un niño?', a: 'Una puntuación superior a 545 (Nivel 5) coloca al estudiante en el 8–10% superior a nivel global. La media de la OCDE es aproximadamente 472–476. Singapur lidera con 575 en Matemáticas.' },
+      { q: '¿Qué es una Puntuación de Edad Estandarizada (SAS) y cómo se calcula?', a: 'El SAS es una puntuación normalizada con media 100 y desviación estándar 15, ajustada por la edad exacta del niño en meses. Corrige la brecha de desarrollo entre los niños nacidos en otoño y los nacidos en verano dentro del mismo curso escolar.' },
+      { q: '¿Cómo se compara Singapur con el Reino Unido en estándares educativos?', a: 'Singapur lidera constantemente los rankings PISA, con aproximadamente 575 en Matemáticas frente a los 495–510 del Reino Unido — una brecha de aproximadamente 2–3 años de escolarización.' },
+      { q: '¿Cómo funciona el SAT Digital en 2026?', a: 'El SAT Digital usa Pruebas Adaptativas por Etapas (MST): todos hacen el mismo primer módulo, y el rendimiento determina el segundo módulo. Cometer demasiados errores en el Módulo 1 dirige al alumno al módulo más fácil, limitando la puntuación máxima a aproximadamente 1350.' },
+      { q: '¿Cuál es la puntuación media del diploma IB en todo el mundo?', a: 'La puntuación media mundial del Diploma IB es aproximadamente 29–30 sobre un máximo de 45. Los estudiantes que apuntan a universidades de élite del Reino Unido generalmente necesitan 40+ puntos.' },
+      { q: '¿En qué percentil necesita estar mi hijo para entrar en un colegio selectivo?', a: 'Para la mayoría de los colegios selectivos del Reino Unido, el percentil 84 o superior (SAS 115+). Para los más competitivos, el umbral efectivo es el percentil 97–99. Para admisiones selectivas internacionales, el percentil 90 es generalmente el mínimo competitivo.' },
+      { q: '¿Cómo puedo saber dónde se sitúa mi hijo respecto a los estándares internacionales?', a: 'La evaluación adaptativa gratuita de Eduentry compara a tu hijo con los estándares PISA, GCSE, SAT e IB en cuatro dominios cognitivos, produciendo una puntuación estandarizada y una clasificación percentil internacional.' },
+    ],
+    cta: { heading: 'Descubre dónde se sitúa tu hijo a nivel internacional', body: 'Evaluación adaptativa gratuita con puntuación estandarizada y clasificación percentil según estándares del Reino Unido, EE.UU., PISA e IB.', label: 'Comenzar evaluación gratuita', href: '/es/auth/register' },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

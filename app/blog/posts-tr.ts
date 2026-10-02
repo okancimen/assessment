@@ -1422,6 +1422,31 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr#akademik',
     },
   },
+  {
+    slug: 'kuresel-akademik-kiyaslama-raporu-2026',
+    contentSlug: 'global-academic-benchmarks-report-2026',
+    title: '2026 Küresel Akademik Kıyaslama Raporu: Uluslararası Sınav Standartları ve Puanlama Trendleri',
+    shortTitle: '2026 Küresel Akademik Kıyaslama Raporu',
+    description: '2026 uluslararası standart sınav trendlerinin tam analizi — SAS puanları, PISA/TIMSS kıyaslamaları, Dijital SAT adaptif sınavı ve seçici okul kabullerinde ailelerin takip etmesi gereken yüzdelik eşikler.',
+    tldr: 'OECD PISA ortalaması matematik, okuma ve fen bilimlerinde yaklaşık 472–476\'dır. Birleşik Krallık, okuma ve fen bilimlerinde OECD ortalamasının üzerinde performans gösterirken matematikte ortalama veya biraz üzerindedir. Singapur, tüm üç alanda dünya lideridir ve Birleşik Krallık\'tan 70–100 PISA puanı daha yüksek performans göstermektedir — bu fark yaklaşık 2–3 yıllık eğitime eşdeğerdir.',
+    date: '2026-06-16',
+    dateModified: '2026-10-02',
+    readTime: '9 dk okuma',
+    tags: ['Standart Testler', 'Uluslararası Kıyaslama', '11+', 'Dijital SAT', 'PISA', 'Seçici Okullar', 'SAS', 'IB'],
+    faqs: [
+      { q: 'İngiltere\'de gramer okulu girişi için iyi bir standart puan nedir?', a: 'İngiltere\'deki çoğu gramer okulu için 115 veya üzerinde bir Standartlaştırılmış Yaş Puanı (SAS), çocuğu seçici aralığa yerleştirir. Londra\'nın en rekabetçi okulları (Queen Elizabeth\'s Boys ve The Henrietta Barnett School gibi) 127–132 puan gerektirir ve bu, 97–99. yüzdeliğe karşılık gelir.' },
+      { q: 'İngiltere 11+ sınavı uluslararası akademik standartlarla nasıl karşılaştırılır?', a: 'İngiltere 11+ SAS ölçeği (ortalama 100, SD 15), CAT4, CogAT ve WISC-V dahil uluslararası bilişsel değerlendirmelerle doğrudan karşılaştırılabilir. 115 SAS, yaklaşık 84. yüzdeliğe karşılık gelir.' },
+      { q: 'İngiltere\'nin ortalama PISA puanı nedir?', a: 'İngiltere genellikle PISA Matematiğinde 495–510 civarında puan alır; bu OECD ortalaması olan 472\'nin üzerindedir ancak Singapur (575), Japonya (536) ve Güney Kore (527) gibi lider ülkelerin altındadır.' },
+      { q: 'Bir çocuk için iyi bir PISA puanı nedir?', a: 'OECD ortalaması yaklaşık 472–476\'dır. 545 üzeri puan (Seviye 5), öğrenciyi küresel olarak en iyi yüzde 8–10\'a yerleştirir ve mükemmel kabul edilir. Singapur 575 puanla dünya lideridir.' },
+      { q: 'Standartlaştırılmış Yaş Puanı (SAS) nedir ve nasıl hesaplanır?', a: 'SAS, çocuğun tam yaşına (ay cinsinden) göre ayarlanmış, ortalaması 100 ve standart sapması 15 olan normalize bir puandır. Aynı okul yılındaki ekim ve ağustos doğumlu çocuklar arasındaki gelişimsel farkı düzeltir.' },
+      { q: 'Singapur eğitim standartları açısından İngiltere ile nasıl karşılaştırılır?', a: 'Singapur, PISA sıralamalarında tutarlı biçimde liderlik etmektedir; Matematikte yaklaşık 575 puan alırken İngiltere 495–510 puanda kalmaktadır. Bu yaklaşık 2–3 yıllık eğitime eşdeğer bir farktır.' },
+      { q: 'Dijital SAT 2026\'da nasıl çalışır?', a: 'Dijital SAT, Çok Aşamalı Adaptif Test (MST) kullanır: Tüm öğrenciler aynı birinci modülü alır ve bu modüldeki performans, ikinci modülü belirler. Birinci modülde çok fazla hata yapan öğrenci daha kolay ikinci modüle yönlendirilir ve bu, maksimum puanlarını yaklaşık 1350 ile sınırlar.' },
+      { q: 'Dünya genelinde ortalama IB diploma puanı nedir?', a: 'Dünya genelinde IB Diploma ortalama puanı 45 üzerinden yaklaşık 29–30\'dur. İngiltere\'nin elit üniversitelerine (Oxford, Imperial, UCL) hedefleyen öğrenciler genellikle 40+ puana ihtiyaç duyar.' },
+      { q: 'Seçici okul kabulü için çocuğumun kaçıncı yüzdelikte olması gerekir?', a: 'Çoğu İngiltere gramer okulu için 84. yüzdelik veya üzeri (SAS 115+) gereklidir. En rekabetçi okullar için etkin giriş eşiği 97–99. yüzdeliktir. Uluslararası seçici kabuller için 90. yüzdelik genellikle minimum rekabetçi eşiktir.' },
+      { q: 'Çocuğumun uluslararası kıyaslamalara göre nerede durduğunu nasıl öğrenebilirim?', a: 'Eduentry\'nin ücretsiz adaptif değerlendirmesi, çocuğunuzu PISA, GCSE, SAT ve IB standartlarına göre dört bilişsel alanda kıyaslar. Ortalaması 100, standart sapması 15 olan bir standart puan ve uluslararası yüzdelik sıralaması üretir.' },
+    ],
+    cta: { heading: 'Çocuğunuzun uluslararası konumunu görün', body: 'UK, ABD, PISA ve IB standartlarına göre standart puan ve yüzdelik sıralaması ile ücretsiz adaptif değerlendirme.', label: 'Ücretsiz değerlendirmeyi başlat', href: '/tr/auth/register' },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

@@ -4917,6 +4917,123 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'global-academic-benchmarks-report-2026': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Öğrenci yerleştirme başarısını öngörmek ve takip etmek, sınır ötesi veri metriklerini anlamayı gerektirir. Bölgesel ve uluslararası eğitim kurulları adaptif dijital test modellerini entegre ettikçe standart kesim beklentileri önemli ölçüde değişmektedir. Bu rapor, 2026 akademik dönemine ait küresel performans parametrelerini, standartlaştırılmış test trendlerini ve ilk, orta ve üniversite öncesi sistemlerdeki kilometre taşı hedeflerini ayrıntılı olarak ele almaktadır.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Uluslararası okul geçişlerinde veya seçici kabul süreçlerinde yol alan aileler için bu rapordaki rakamlar, okulların ve kabul ekiplerinin gerçekte kullandığı kıyaslamaları sunmaktadır. Ham yüzdeler ve ulusal notlar giderek yetersiz bir bağlam haline gelmektedir. Yükselen standart, demografik ve yaşa göre eşleştirilmiş bir kohorttaki standartlaştırılmış yüzdelik sıralamadır.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">2026 Küresel Performans Kıyaslamaları</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>2026 küresel akademik kıyaslama eşikleri şöyledir: İngiltere gramer okulu girişi için SAS 115+ (84. yüzdelik); OECD PISA ortalaması 472–476, Singapur 575 ile lider; rekabetçi Dijital SAT puanı 1480+; elit üniversiteler için IB Diploma 45 üzerinden 40+ puan.</strong> Bu eşikler, okulların ve kabul komisyonlarının seçici başvuruları değerlendirirken kullandığı ölçütlerdir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Öğrenci gelişimini doğru değerlendirmek için eğitim danışmanları, ham puanları standartlaştırılmış metriklere dönüştürür. Aşağıdaki kıyaslama değerleri, her sistemde rekabetçi başvuranları genel nüfustan ayıran performans eşiklerini temsil etmektedir.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>11+ Sözel Akıl Yürütme Trendi (2026):</strong> Rekabetçi İngiltere ve uluslararası gramer okulu yollarında, temel Standartlaştırılmış Yaş Puanı (SAS) 100&#39;de sabitlenmiştir. En üst düzey seçici yerleştirme genellikle 115–121 arasında bir SAS eşiği gerektirmektedir. Londra&#39;nın en fazla başvuru alan okulları (QE Boys ve Henrietta Barnett) için rekabetçi puanlar 127–132 arasında seyretmektedir.
+          </Bullet>
+          <Bullet>
+            <strong>Küresel Matematik Yetkinliği (PISA/TIMSS 2026):</strong> Singapur, Hong Kong ve Estonya gibi lider ülkeler 540–575 matematik ölçeği puanı alırken OECD medyanı 472&#39;dir. İngiltere ortalaması yaklaşık 495–510&#39;dur. Uluslararası okullara veya burs programlarına hedefleyen öğrencilerin ulusal kohortlarına göre 90. yüzdeliğin üzerinde olması beklenmektedir.
+          </Bullet>
+          <Bullet>
+            <strong>Üniversite Öncesi Geçiş (Dijital SAT):</strong> ABD üniversite giriş çerçevelerinin dijitalleşmesinin ardından, küresel başvuranların en iyi yüzde 10&#39;u için medyan puan 1480+&#39;a yerleşmiştir. Çok Aşamalı Test&#39;e (MST) geçiş, birinci modüldeki doğruluk oranının önemini artırmıştır.
+          </Bullet>
+          <Bullet>
+            <strong>IB Diploma Programı (2026 kohortu):</strong> Dünya genelinde ortalama IB puanı 45 üzerinden yaklaşık 29–30&#39;da kalmaktadır. İngiltere (Oxford, Imperial, UCL) veya uluslararası elit üniversiteleri hedefleyen öğrenciler, belirli İleri Düzey ders gereksinimleriyle birlikte 40+ puana ihtiyaç duymaktadır.
+          </Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Temel çıkarım:</strong> Ham puanlar, bir planlama metriği olarak giderek geçerliliğini yitirmektedir. Eğitim kurumları artık yaş ve demografik kohortlara göre ayarlanmış yüzdelik sıralamalara öncelik vermektedir. Seçici okul girişi veya uluslararası geçişler için bir öğrencinin hedef müfredatına özgü kohortunda 85. yüzdeliğin üzerinde performans göstermesi gerekmektedir. 75. yüzdeliğin altında, bu farkı kapatmak genellikle 12–18 ay odaklı çalışma gerektirir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Küresel Kabul Çerçeveleri ve Standart Kıyaslamalar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Farklı eğitim kademeleri tamamen farklı değerlendirme ekosistemlerine dayanmaktadır. İngiltere&#39;den ABD&#39;ye veya Güneydoğu Asya&#39;dan Avrupa&#39;ya geçen bir aile, standart dönüşüm olmadan bir notu veya yüzdeyi doğrudan çeviremez. Aşağıdaki tablo, ilk, orta ve üniversite öncesi kontrol noktalarındaki temel uluslararası kıyaslamaları özetlemektedir.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Değerlendirme Kademesi</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Temel Metrik</th>
+                <th className="text-left p-4 font-semibold text-gray-700">2026 Rekabetçi Taban</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Değerlendirme Motoru</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['İlköğretim Kabulü (11+ Yaş)', 'Standartlaştırılmış Yaş Puanı (SAS)', '115–121+', 'GL Assessment / CEM / ISEB'],
+                ['Orta Kademe Taban (14–15 Yaş)', 'Ölçek Puanları / Yeterlilik Bantları', 'Seviye 4+ (PISA Taban)', 'OECD / Ulusal Değerlendirme'],
+                ['ABD Üniversite Yolu', 'Dijital Ölçek Puanı (400–1600)', '1450+ (Ivy Ortalama: 1540+)', 'College Board (Dijital SAT)'],
+                ['İngiltere/Milletler Topluluğu Üniversite Yolu', 'Not Sınırları (A*–U / 9–1)', '3× A-Level A*/A', 'UCAS / Pearson / Cambridge'],
+                ['IB Diploma', 'Puan (1–45)', '40+ puan', 'IB Örgütü (Cenevre)'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  {row.map((cell, i) => (
+                    <td key={i} className={`p-4 ${i === 0 ? 'font-semibold text-gray-900' : 'text-gray-600'}`}>{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yapay Zeka Destekli Değerlendirme Devrimi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          2023&#39;ten bu yana eğitim değerlendirmesindeki en önemli yapısal değişim, adaptif test platformlarına yapay zeka tarafından oluşturulan soru bankalarının entegrasyonu olmuştur. Geleneksel standartlaştırılmış testler tamamen ampirik olarak kalibre edilmiş madde bankalarına dayanıyordu. YZ tarafından oluşturulan sorular artık geleneksel maddelerin psikometrik özelliklerini çok daha düşük maliyet ve sürede taklit edebilmektedir.
+        </p>
+        <Callout color="amber">
+          <strong className="text-amber-800">Eduentry kullanan aileler için:</strong> Standartlaştırılmış puanı tanısal bir kıyaslama olarak değerlendirin — güçlü yönleri, eksiklikleri ve yaklaşık yüzdelik konumu belirlemede doğrudur. Resmi yerleştirme kararları veya 11+ kabulü için, eğitimli bir uzman tarafından yönetilen proctored değerlendirme altın standarttır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Uluslararası Akademik Hazırlık Yol Haritası</h2>
+        <div className="space-y-4">
+          {[
+            { step: '1', title: 'Tanısal Kıyaslama', when: '18–24 Ay Önce', detail: 'Tüm temel konuları kapsayan tam bir tanısal değerlendirme yapın. Herhangi bir hazırlık materyali satın almadan önce mevcut standart puanları ve yüzdelik konumları belirleyin.' },
+            { step: '2', title: 'Müfredat Açığı Haritalaması', when: '12–18 Ay Önce', detail: 'Çocuğunuzun tanısal profilini hedef müfredat standardıyla karşılaştırın. Hangi konuların yolda, hangilerinin önde, hangilerinin açık verdiğini belirleyin. Hazırlık süresini güçlü yönlere değil, açıklara orantılı olarak tahsis edin.' },
+            { step: '3', title: 'Adaptif Test Alışkanlığı', when: '6–12 Ay Önce', detail: 'Dijital, zamanlı adaptif pratik yapın. Yalnızca kağıt kitaplarıyla pratik yapan çocuklar genellikle bilgisayar tabanlı adaptif testlerde yeteneklerinden değil, formata yabancılıktan kaynaklanan sorunlar yaşar.' },
+            { step: '4', title: 'Hız ve Doğruluk Çalışmaları', when: '3–6 Ay Önce', detail: 'GL Assessment 11+ için soru başına yaklaşık 60 saniye, Dijital SAT için yaklaşık 75 saniye hedefleyin. Gerçek koşullarda zaman bilincini erken geliştirmek kritiktir.' },
+            { step: '5', title: 'Hedef Puan Kalibrasyonu', when: 'Son Ay', detail: 'Tüm deneme sonuçlarını ham yüzdelerle değil yüzdelik bantlarıyla analiz edin. Doğrulanmış 85–95. yüzdelik performansına dayalı nihai okul seçimi stratejisini kalibre edin.' },
+          ].map(({ step, title, when, detail }) => (
+            <div key={step} className="flex gap-4 p-5 rounded-xl border border-gray-100">
+              <div className="w-9 h-9 rounded-full bg-indigo-100 text-indigo-600 font-bold flex items-center justify-center flex-shrink-0">{step}</div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="font-semibold text-gray-900">{title}</span>
+                  <span className="text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full px-2.5 py-0.5">{when}</span>
+                </div>
+                <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Referanslar</h2>
+        <ul className="space-y-2 text-sm text-gray-600">
+          <li>OECD — PISA 2022 Matematik, Okuma ve Fen Bilimlerinde Uluslararası Sonuçlar.</li>
+          <li>IEA — TIMSS 2023 Matematik ve Fen Bilimlerinde Uluslararası Sonuçlar.</li>
+          <li>College Board — Dijital SAT Performans Metrikleri ve Kohort Ölçekleme Raporu 2025–2026.</li>
+          <li>GL Assessment — Standartlaştırılmış Yaş Puanı Hesaplama Teknik Kılavuzu (2025 baskısı).</li>
+          <li>IB Örgütü — Yıllık İstatistik Bülteni 2025, Diploma Programı aday performans verileri.</li>
+        </ul>
+      </section>
+    </>
+  ),
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
