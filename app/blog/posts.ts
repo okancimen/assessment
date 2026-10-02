@@ -259,6 +259,30 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'How many hours a week should my child practise for the 11+?',
         a: 'In the early preparation phase (12–18 months out), 3–4 hours per week spread across 5–6 short daily sessions is sufficient. In the final 3 months, this can increase to 5–7 hours per week. More than 10 hours per week is counterproductive and increases anxiety without meaningful score improvement.',
       },
+      {
+        q: 'What is the difference between GL Assessment and CEM for the 11+?',
+        a: 'GL Assessment and CEM (Durham University) are the two main 11+ exam boards in England. GL Assessment tests each subject separately — English, Maths, Verbal Reasoning, and Non-Verbal Reasoning — with clearly labelled question types. CEM blends verbal and numerical reasoning into untimed-looking papers with no question-type labels, which many children find harder to prepare for. Knowing which board your target school uses is essential before starting preparation.',
+      },
+      {
+        q: 'What score does my child need to pass the 11+?',
+        a: 'The pass mark varies significantly by area and school. In Kent and Essex, a Standardised Age Score (SAS) of around 111–113 typically places a child on the selective register. In the most oversubscribed London boroughs (Barnet, Sutton), a SAS of 125+ may still not guarantee an offer if higher-scoring applicants live closer. Always check the published requirements for your specific target schools.',
+      },
+      {
+        q: 'Can a child self-study for the 11+ without a tutor?',
+        a: 'Yes — many children successfully prepare for the 11+ entirely through self-study and parental support. The key resources are a structured practice workbook series (Bond, CGP, or Schofield & Sims are widely used), an adaptive online assessment to track progress, and past papers from your specific exam board. A tutor adds value mainly for children who struggle to self-motivate or who have specific subject gaps.',
+      },
+      {
+        q: 'Does the 11+ test knowledge or ability?',
+        a: 'The 11+ tests a combination of both. The English and Maths papers test curriculum knowledge (KS2 content), while Verbal Reasoning and Non-Verbal Reasoning papers are designed to test underlying cognitive ability independent of school learning. In practice, all four components respond to targeted preparation — including the reasoning papers, which improve significantly with systematic practice on each question type.',
+      },
+      {
+        q: 'What happens on 11+ exam day?',
+        a: 'The 11+ is typically held in September of Year 6, with most counties running a single sitting at the child\'s own school or a designated test centre. Children sit one or two papers lasting 45–60 minutes each. Results are usually sent to parents in October, in time to include grammar school preferences on the secondary school application form (CAF), which is due in late October.',
+      },
+      {
+        q: 'Should my child take a mock 11+ exam?',
+        a: 'Yes — full mock exams under timed conditions are one of the most effective forms of preparation. They build exam stamina, reduce test anxiety, and reveal time-management weaknesses that are invisible during untimed practice. Aim for at least 3–4 full mocks in the 2–3 months before the real exam, with a review session after each one to understand where marks were lost.',
+      },
     ],
     cta: {
       heading: 'Get your child\'s 11+ benchmark today',
@@ -295,6 +319,30 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'What does a standardised score of 115 mean?',
         a: 'A standardised score of 115 means your child scored better than approximately 84% of children their age on that assessment. It sits one standard deviation above the mean of 100, which is described as "above average" on most cognitive and academic assessments. For grammar school purposes, 115 is within the competitive range for most areas outside London.',
       },
+      {
+        q: 'What is a Standardised Age Score (SAS)?',
+        a: 'A Standardised Age Score (SAS) is the specific term used by GL Assessment for the standardised score reported on 11+ papers. It uses the same scale as other standardised scores — mean 100, SD 15 — but is explicitly adjusted for the child\'s age in years and months, so younger children in the year group are not disadvantaged. SAS is directly comparable to cognitive ability test scores like CAT4 and CogAT.',
+      },
+      {
+        q: 'How does a standardised score differ from a National Curriculum level?',
+        a: 'National Curriculum levels (and their successors — year group descriptors, teacher assessments, SATS levels) measure what a child has been taught and can demonstrate in school. A standardised score measures cognitive ability or achievement relative to all children of the same age — including those in other schools, other countries, and different year groups. Standardised scores are more useful for competitive admissions; curriculum levels are more useful for tracking school progress.',
+      },
+      {
+        q: 'What standardised score qualifies a child for a gifted programme?',
+        a: 'Most US and UK gifted programmes use a threshold of 130 (the 98th percentile) for formal gifted identification. UK schools typically use SAS 112–120+ (stanine 7–9) for internal setting and gifted-and-talented provision. New York City\'s Gifted & Talented program has historically required the 99th percentile. The specific threshold varies by programme, country, and school.',
+      },
+      {
+        q: 'Can standardised scores improve over time?',
+        a: 'Yes — standardised scores are not fixed measures of permanent ability. Research consistently shows that targeted preparation, particularly for reasoning assessments, raises scores by 8–15 points on average over 6–12 months. However, the most durable improvements come from genuine skill development (vocabulary building, reasoning practice, maths fluency) rather than test familiarity alone. A rising standardised score is the most reliable indicator that meaningful learning has occurred.',
+      },
+      {
+        q: 'How are standardised scores calculated?',
+        a: 'A raw score (number of correct answers) is first converted to a scaled score that adjusts for test difficulty. This scaled score is then norm-referenced against a large representative sample of children of the same age — which produces the standardised score on the mean-100, SD-15 scale. The norming process ensures the score means the same thing regardless of which version of the test was taken or which year the test was sat.',
+      },
+      {
+        q: 'What is the difference between a standardised score and an IQ score?',
+        a: 'Functionally, they use the same scale — both have a mean of 100 and a standard deviation of 15. An IQ score is specifically a measure of general cognitive ability (g factor), typically assessed by a psychologist using a comprehensive test like the WISC-V. A standardised score on an academic or reasoning assessment measures similar constructs but may be narrower in scope. For practical admissions purposes, a standardised score of 130 and an IQ of 130 carry equivalent weight.',
+      },
     ],
     cta: {
       heading: 'Get your child\'s standardised score',
@@ -330,6 +378,30 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       {
         q: 'Is verbal reasoning harder than maths in the 11+?',
         a: 'For most children, verbal reasoning is more challenging than maths in the 11+ because it is an unfamiliar skill. Children who are strong at English sometimes underperform initially because verbal reasoning is logic-based, not literacy-based. The good news is that verbal reasoning is highly learnable — the question types are finite and respond well to systematic practice.',
+      },
+      {
+        q: 'What are the most common verbal reasoning question types in the 11+?',
+        a: 'The most common verbal reasoning question types include: word analogies (HOT:COLD as FAST:?), complete the sentence, letter series, number series in word format, find the hidden word, move a letter, word codes, odd one out, and word connections. GL Assessment papers typically contain 80 questions of mixed types in 50 minutes; CEM papers blend these into an unseparated format.',
+      },
+      {
+        q: 'How many verbal reasoning questions are in the 11+?',
+        a: 'A typical GL Assessment verbal reasoning paper contains 80 questions to be completed in 50 minutes — approximately 37 seconds per question. CEM papers vary but tend to run at a similar pace. This time pressure means speed and automaticity with each question type are just as important as accuracy.',
+      },
+      {
+        q: 'What vocabulary level is needed for 11+ verbal reasoning?',
+        a: 'A broad vocabulary significantly helps with synonym, antonym, and word analogy questions. Children preparing for the 11+ should be reading widely at or above age level — ideally including non-fiction and older literature that exposes them to less common words. A target vocabulary of 15,000–20,000 words is associated with strong verbal reasoning performance at age 10–11.',
+      },
+      {
+        q: 'Is verbal reasoning tested by all 11+ exam boards?',
+        a: 'Most grammar school areas test verbal reasoning, but the format varies by exam board. GL Assessment tests it as a standalone 80-question paper. CEM (used in Buckinghamshire and some other areas) blends verbal and numerical reasoning without separate question-type labels, making the style harder to prepare for. A small number of individual schools set their own papers, some of which do not include verbal reasoning at all.',
+      },
+      {
+        q: 'How does verbal reasoning relate to English reading comprehension?',
+        a: 'Verbal reasoning and reading comprehension are related but distinct skills. Reading comprehension measures whether a child understands what they read; verbal reasoning measures whether they can use logic and pattern recognition applied to words. A strong reader is not automatically a strong verbal reasoner — and vice versa. Both skills need targeted practice for the 11+.',
+      },
+      {
+        q: 'What age should children start verbal reasoning practice?',
+        a: 'Most families start verbal reasoning practice in Year 4 (age 8–9), around 18 months before the exam. Starting in Year 5 is still feasible if the child has strong foundations in English and maths. Beginning in Year 6 is late — verbal reasoning question types take time to internalise, and rushing preparation in the final months increases anxiety without proportionate score improvement.',
       },
     ],
     cta: {
@@ -368,6 +440,30 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'What happens if my child fails the 11+?',
         a: 'Children who do not pass the 11+ attend non-selective state secondary schools, which educate the vast majority of children and include many outstanding schools. Some areas allow appeals if a child\'s score is in the borderline band or if there were extenuating circumstances on the test day. Children who narrowly miss a grammar school place can also reapply at 13+ where schools offer it.',
       },
+      {
+        q: 'What percentage of children pass the 11+ and get into grammar school?',
+        a: 'Grammar schools educate approximately 5% of secondary school pupils in England. The pass rate for the 11+ varies by area — in Kent, around 25–30% of children who sit the exam achieve the selective register threshold. However, achieving the threshold does not guarantee a place; oversubscribed schools rank applicants by distance after siblings, meaning even children who pass comfortably may not receive an offer for their first-choice school.',
+      },
+      {
+        q: 'Can you appeal a grammar school rejection?',
+        a: 'Yes. Parents have the right to appeal a grammar school rejection if they believe the decision was made in error or if there were exceptional circumstances. Appeals must typically be submitted within 20 school days of the refusal. Appeals succeed most often when: the child\'s score was in the borderline band, there were verifiable extenuating circumstances on test day, or the admissions criteria were not applied correctly.',
+      },
+      {
+        q: 'Are grammar school entry requirements the same in all areas of England?',
+        a: 'No — entry requirements vary significantly by county and school. Kent operates a county-wide test with one shared pass mark; Buckinghamshire uses CEM and has different score thresholds; London boroughs like Barnet and Sutton each set their own standards and are far more competitive. Always research the specific entry requirements for your target school and area, not just national averages.',
+      },
+      {
+        q: 'Does grammar school attendance affect A-level and university outcomes?',
+        a: 'Research is mixed. Grammar school pupils do achieve better GCSE and A-level results on average, but much of this is explained by selection — they were already academically advanced before entry. A 2019 University of Bristol study found that grammar schools add little value over and above what equivalent pupils achieve at high-performing non-selective schools. The key determinant of outcomes is the child\'s cognitive ability and motivation, not the school type.',
+      },
+      {
+        q: 'Is there a 13+ grammar school entry route?',
+        a: 'A small number of grammar schools admit students at 13+ — notably in Kent and some individual schools — allowing a second entry point for children who narrowly missed at 11+. The 13+ test typically covers English, Maths, and Verbal Reasoning. Competition at 13+ is lower than at 11+ because fewer places are available, but the academic standard required is similar. Contact your target school directly to confirm whether a 13+ entry exists.',
+      },
+      {
+        q: 'What is a super-selective grammar school?',
+        a: 'Super-selective grammar schools are grammar schools that admit only the very highest-scoring applicants from across a wide geographical area, regardless of proximity. Examples include King Edward\'s School Birmingham and Nonsuch High School for Girls in Surrey. These schools typically require SAS scores of 125–135 and are significantly more competitive than local-intake grammar schools with the same legal name.',
+      },
     ],
     cta: {
       heading: 'Know your child\'s grammar school chances',
@@ -405,6 +501,30 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'Is gifted education available in all US states?',
         a: 'Gifted education is not federally mandated in the United States. Each state sets its own policies, and provision varies dramatically. Some states (like Texas and Georgia) have strong mandated gifted programs; others provide minimal or no funding. Even within states, individual school districts differ significantly in the quality and availability of gifted services.',
       },
+      {
+        q: 'What is the CogAT and how is it scored?',
+        a: 'The CogAT (Cognitive Abilities Test) is a group-administered reasoning assessment used in most US school districts for gifted screening. It measures three batteries: Verbal (word analogies and classification), Quantitative (number series and equations), and Nonverbal (figure matrices and paper folding). Scores are reported as Standard Age Scores (mean 100, SD 16) and percentile ranks. Most districts use CogAT screening in Grades 2–3 as the first step in gifted identification.',
+      },
+      {
+        q: 'What is the difference between gifted identification and a gifted program?',
+        a: 'Gifted identification is the process of determining that a child meets the district\'s threshold for giftedness — typically based on a combination of test scores, teacher referrals, and portfolio evidence. A gifted program is the educational provision offered to identified students — which ranges from pull-out enrichment groups meeting once a week to full-time self-contained gifted classrooms. Identification is a gateway; the quality and type of program determines whether the identification translates into academic benefit.',
+      },
+      {
+        q: 'Can a child be gifted in one area but not another?',
+        a: 'Yes — this is called domain-specific giftedness and is actually more common than across-the-board giftedness. A child can score at the 99th percentile in verbal reasoning while being average in quantitative reasoning. The CogAT explicitly measures three separate batteries for this reason. Domain-specific gifted programs (e.g. gifted language arts, gifted maths) are common in districts that use multi-dimensional identification.',
+      },
+      {
+        q: 'How early can giftedness be identified in a child?',
+        a: 'Formal gifted identification is generally most reliable from age 6–7 onwards, when cognitive assessments become more stable predictors of long-term ability. Some districts screen as early as Kindergarten or Grade 1, but scores at this age have higher measurement error. Early signs — rapid vocabulary acquisition, strong memory, intense curiosity, early reading — are useful indicators but should be confirmed with a standardised assessment.',
+      },
+      {
+        q: 'What is the difference between a high achiever and a gifted student?',
+        a: 'High achievers perform well in school because they work hard, follow instructions, and respond well to praise. Gifted students have unusually high cognitive ability that often manifests as rapid understanding of complex concepts, unconventional thinking, and sometimes frustration with the pace of regular schooling. Many gifted students are not high achievers in school — they are bored, underserved, or twice-exceptional (gifted and also having a learning difference).',
+      },
+      {
+        q: 'What should parents do if they suspect their child is gifted?',
+        a: 'Start with a standardised cognitive assessment — either through the school district\'s referral process or via a private psychologist. Gather evidence of advanced ability across multiple areas (not just one subject). If the school is unresponsive, parents can commission an independent assessment with a licensed psychologist, which typically includes the WISC-V and costs $1,000–$3,000. Use the results to advocate for appropriate placement and challenge.',
+      },
     ],
     cta: {
       heading: 'See how your child compares internationally',
@@ -441,6 +561,30 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       {
         q: 'How often is the NWEA MAP test given?',
         a: 'Most schools administer MAP Growth two or three times per year — typically in fall, winter, and spring. This allows teachers and parents to track growth over time, not just current achievement level. The growth trajectory (how many RIT points a student gains per year) is often as important as the absolute score when identifying academically advanced students.',
+      },
+      {
+        q: 'What is a typical RIT score growth per year?',
+        a: 'According to NWEA national norms, students typically grow about 6–8 RIT points per year in the earlier grades (K–3) and this growth decelerates as they get older — around 3–5 points per year by Grade 6–7. A student who grows faster than projected is accelerating relative to peers; a student who grows slower than projected is falling behind in relative terms even if their absolute score is increasing.',
+      },
+      {
+        q: 'Do MAP scores predict high school success?',
+        a: 'Yes — longitudinal research by NWEA shows that MAP Growth scores in Grades 3–5 are strong predictors of high school readiness, ACT/SAT performance, and college readiness. A Grade 5 MAP Math score at the 90th percentile is associated with an 83% probability of high school maths readiness. Schools increasingly use MAP trajectory data for early intervention and gifted identification.',
+      },
+      {
+        q: 'Can students prepare for the NWEA MAP test?',
+        a: 'The MAP test is an adaptive assessment of curriculum knowledge — it adjusts to the student\'s level in real time. Targeted preparation in reading, maths, and science through regular schoolwork, practice reading, and problem-solving is the most effective preparation. Unlike aptitude tests, MAP directly measures curriculum content, so content-focused study (books, maths practice) directly improves scores.',
+      },
+      {
+        q: 'What is the MAP Growth test compared to the MAP for Primary Grades (MPG)?',
+        a: 'MAP Growth is designed for students in Grade 2 and above and uses the full adaptive RIT scale. MAP for Primary Grades (MPG) is a separate assessment for Kindergarten and Grade 1 that uses a different format including audio support, because young children cannot reliably read test questions independently. Both produce RIT scores on the same scale, allowing tracking from Kindergarten through Grade 12.',
+      },
+      {
+        q: 'How do I access my child\'s MAP scores?',
+        a: 'MAP scores are typically shared with parents through the school\'s parent portal (PowerSchool, Infinite Campus, or similar) or a printed report sent home after each testing window. NWEA also provides a family-facing report called the "Family Report" that translates RIT scores into grade-level context and growth projections. If you cannot access results, contact your child\'s teacher or the school testing coordinator.',
+      },
+      {
+        q: 'What is the Lexile level and how does it relate to MAP Reading scores?',
+        a: 'NWEA MAP Reading scores link directly to Lexile measures, which are used to match students to appropriately challenging books. A student with a MAP Reading RIT of 200 (approximately Grade 3 average) corresponds to roughly Lexile 500–600L. As MAP Reading scores increase, so does the Lexile range of books that are appropriate. Parents can use their child\'s Lexile range to select books that challenge without frustrating.',
       },
     ],
     cta: {
@@ -696,6 +840,30 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       {
         q: 'Is CAT4 the same as an IQ test?',
         a: 'CAT4 and IQ tests like the WISC-V both measure cognitive reasoning, but they are not identical. CAT4 is a group-administered screening tool that takes about 2.5 hours and covers four specific reasoning batteries. The WISC-V is individually administered by a psychologist, takes 60–90 minutes, and produces a comprehensive IQ profile including working memory and processing speed. CAT4 SAS scores are comparable in scale to WISC-V IQ scores.',
+      },
+      {
+        q: 'What are the four batteries of the CAT4?',
+        a: 'CAT4 has four batteries: Verbal Reasoning (word analogies and verbal classification), Quantitative Reasoning (number analogies and number series), Non-Verbal Reasoning (figure classification and figure matrices), and Spatial Ability (figure recognition and paper folding). Each battery produces a separate SAS score, giving a cognitive profile that highlights relative strengths and weaknesses across reasoning domains.',
+      },
+      {
+        q: 'Can you prepare for the CAT4?',
+        a: 'CAT4 is designed to measure underlying cognitive ability rather than taught knowledge, but targeted reasoning practice does raise scores. Non-verbal and spatial batteries in particular respond to systematic practice on figure matrices, paper folding, and pattern recognition. UK and UAE families typically see 5–10 SAS point improvements with 3–6 months of adaptive reasoning practice. Verbal and quantitative batteries also benefit from vocabulary building and number pattern work.',
+      },
+      {
+        q: 'What is a CAT4 profile and why does it matter?',
+        a: 'A CAT4 profile shows relative strengths and weaknesses across the four batteries, not just an overall mean SAS. A child with a high Verbal SAS but low Spatial SAS has a very different cognitive profile from one with balanced scores. Schools use profiles to identify underachievement (where academic results don\'t match reasoning ability), to tailor teaching approaches, and to guide subject choices at GCSE and A-level.',
+      },
+      {
+        q: 'At what ages is the CAT4 administered in UAE schools?',
+        a: 'UAE British-curriculum schools typically administer CAT4 at key transition points: Year 3 (age 7–8) for early cognitive baseline, Year 7 (age 11–12) on secondary school entry, and Year 9 (age 13–14) to inform GCSE subject choices. Some schools also administer it in Year 6 to support 11+ preparation. The test is re-normed for each age group, so SAS scores are age-adjusted.',
+      },
+      {
+        q: 'How do I interpret my child\'s CAT4 report?',
+        a: 'The CAT4 report shows an SAS and stanine for each battery (and an overall mean SAS). A stanine of 5–6 is average; 7–8 is above average; 9 is the top 4%. Look at the profile pattern: a high mean SAS with a low Quantitative battery suggests underachievement in maths worth investigating. A high Spatial but low Verbal SAS may indicate a child who excels in practical or visual subjects but needs support in language-heavy ones.',
+      },
+      {
+        q: 'Does CAT4 predict academic performance at GCSE and A-level?',
+        a: 'Yes — CAT4 is one of the strongest predictors of GCSE and A-level outcomes available. GL Assessment publishes CAT4-to-GCSE prediction matrices used by thousands of UK and international schools. A CAT4 mean SAS of 100 (average) predicts a Grade 4–5 range at GCSE; SAS 120 predicts Grade 7–8. These are probabilistic estimates — motivation, teaching quality, and study habits all influence final outcomes.',
       },
     ],
     cta: {
@@ -1356,6 +1524,26 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'How does the UK compare to other countries in global education rankings?',
         a: 'The UK performs above the OECD average in Reading and Science, and around or slightly above average in Mathematics. This sounds reassuring until you consider that the top-performing Asian education systems — Singapore, Hong Kong, South Korea, Japan — score 60–100 PISA points above the UK. In practical terms, a UK student at the national average in Maths is performing at roughly the same level as an average student in Japan or South Korea would score in their lowest quartile.',
       },
+      {
+        q: 'What is PISA and who runs it?',
+        a: 'PISA (Programme for International Student Assessment) is a triennial assessment run by the OECD that tests 15-year-olds in Reading, Mathematics, and Science. It is the world\'s largest international education study — the 2022 round covered 690,000 students across 81 countries. PISA scores are reported on a scale centred at 500, with each 40-point difference equivalent to approximately one academic year of schooling.',
+      },
+      {
+        q: 'Which country has the best education system in the world?',
+        a: 'Singapore consistently ranks first in PISA Mathematics, with an average score of 575 — more than 100 points above the OECD mean. Japan, South Korea, Estonia, and Taiwan also consistently top the rankings across all three subjects. The highest-performing systems share common features: high teacher status, centralised curriculum quality, strong parental engagement, and consistent expectations across schools regardless of socio-economic area.',
+      },
+      {
+        q: 'How do I compare my child to international standards at home?',
+        a: 'Use a standardised assessment aligned to the same mean-100, SD-15 scale used by major international benchmarks (CAT4, CogAT, GL Assessment). This gives a percentile rank comparable across countries. Our free adaptive assessment covers verbal reasoning, numerical reasoning, and English — subjects directly tested by international assessments — and produces an instant standardised score and percentile ranking.',
+      },
+      {
+        q: 'Why do Asian education systems consistently outperform Western countries?',
+        a: 'PISA analysis identifies several contributing factors: higher instructional time in core subjects, more demanding curriculum expectations, stronger home learning support, higher cultural value placed on academic achievement, and more experienced and better-paid teachers. However, PISA 2022 also noted that wellbeing scores in top-performing East Asian countries are among the lowest — suggesting that academic performance can come at a cost to student mental health.',
+      },
+      {
+        q: 'What is the average PISA score for the UK?',
+        a: 'In PISA 2022, the UK scored approximately 489 in Mathematics, 494 in Reading, and 503 in Science — placing it above the OECD average of 472 in Maths. The UK ranks approximately 15th globally in Maths, 13th in Reading, and 12th in Science. While this is a strong performance relative to OECD peers, it is notably below Singapore (575), Japan (536), South Korea (527), and Estonia (510) in Mathematics.',
+      },
     ],
     cta: {
       heading: 'Find out where your child actually stands',
@@ -1434,6 +1622,26 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'What is a good non-verbal reasoning score for the 11+?',
         a: 'Most 11+ papers report NVR scores as standardised age scores (SAS) with a mean of 100 and standard deviation of 15. Grammar schools typically require SAS 111–120+ for competitive entry, with the most selective schools wanting 120+. A score of 100 is exactly average for age; 115 is approximately the 84th percentile; 130 is the 98th percentile.',
       },
+      {
+        q: 'How many questions are in the non-verbal reasoning 11+ paper?',
+        a: 'GL Assessment NVR papers typically contain 80 questions to be completed in 45–50 minutes — approximately 33–37 seconds per question. CEM papers blend NVR with other reasoning types without separating them, so the number of explicitly NVR questions varies. Speed and accuracy are equally important: many children who understand the question types still drop marks due to time pressure.',
+      },
+      {
+        q: 'Is non-verbal reasoning tested in both GL Assessment and CEM exams?',
+        a: 'Yes — NVR is tested by both major exam boards, but in different formats. GL Assessment has a dedicated NVR paper with labelled question types. CEM blends figure-based reasoning questions into its Spatial Reasoning section without explicit labels, making preparation slightly harder because children cannot recognise the question type by name. Both respond to systematic practice on figure matrices, series, and analogies.',
+      },
+      {
+        q: 'What everyday activities improve non-verbal reasoning?',
+        a: 'Building games (LEGO, Meccano), jigsaw puzzles, chess, spatial video games, origami, and pattern-based crafts all develop the underlying spatial and pattern-recognition skills that NVR tests measure. These activities build visual-spatial working memory and the ability to mentally manipulate shapes — both directly relevant to figure rotation and paper-folding question types in the 11+ NVR paper.',
+      },
+      {
+        q: 'Do children with dyslexia perform better in non-verbal reasoning than verbal reasoning?',
+        a: 'Children with dyslexia often have stronger non-verbal and spatial reasoning scores than verbal reasoning scores, because NVR is language-independent. This is one reason grammar school entry tests include NVR — it gives children with language-based learning differences a route to demonstrate cognitive ability that isn\'t captured by English or verbal reasoning papers. A strong NVR score can offset a weaker verbal score in some admissions calculations.',
+      },
+      {
+        q: 'How is 11+ non-verbal reasoning different from the non-verbal sections of IQ tests?',
+        a: 'The 11+ NVR paper tests the same underlying skills as the non-verbal sections of IQ tests like the WISC-V Performance IQ or the CogAT Non-Verbal Battery — figure matrices, classification, analogy, and series completion. The key difference is format and timing: IQ tests are individually administered at the child\'s own pace with no strict time limit; the 11+ is a group test with severe time pressure. Children who do well on untimed IQ assessments may need specific timed practice to transfer that ability to the 11+ format.',
+      },
     ],
     cta: {
       heading: 'Test your child\'s non-verbal reasoning — free',
@@ -1472,6 +1680,26 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       {
         q: 'How often should my child take the practice test?',
         a: 'Once every 4–6 weeks during preparation is a good cadence. This gives enough time for meaningful improvement between tests, while tracking progress consistently. Avoid over-testing — daily practice on individual subjects is more effective than repeatedly sitting the full test.',
+      },
+      {
+        q: 'What subjects does the 11+ practice test cover?',
+        a: 'A full 11+ practice test covers four subjects: English (reading comprehension, vocabulary, grammar), Mathematics (arithmetic, fractions, algebra, geometry), Verbal Reasoning (word analogies, sequences, codes), and Non-Verbal Reasoning (figure matrices, series, analogies). The Eduentry adaptive test covers all four subjects and produces a separate standardised score for each, showing exactly where your child needs the most work.',
+      },
+      {
+        q: 'What is a standardised age score (SAS) and is it the same as the real 11+ score?',
+        a: 'A Standardised Age Score (SAS) is reported on a scale with mean 100 and standard deviation 15. It is exactly the same scale used by GL Assessment on the real 11+ exam. A practice test SAS of 115 is directly comparable to a real exam SAS of 115. This means you can use the practice test result to benchmark your child against the actual grammar school entry thresholds for your area.',
+      },
+      {
+        q: 'Can a free online 11+ test accurately measure my child\'s ability?',
+        a: 'An adaptive online test that uses Item Response Theory (IRT) to adjust question difficulty is genuinely accurate — it is the same methodology used by professional cognitive assessments. Fixed-difficulty practice papers are less accurate because they do not distinguish between a child who finds them too easy and one who finds them appropriately challenging. An adaptive test produces a more precise ability estimate across the full ability range.',
+      },
+      {
+        q: 'What is the best free 11+ preparation resource?',
+        a: 'The most effective free resources combine a standardised benchmark test (to identify gaps), adaptive online practice (which adjusts to your child\'s level), and subject-specific workbooks. A single one-off practice paper tells you a raw score but not what it means; an adaptive benchmark test gives a standardised score directly comparable to grammar school thresholds, which is far more actionable for guiding preparation.',
+      },
+      {
+        q: 'Does my child need to create an account to take the free 11+ test?',
+        a: 'On Eduentry, children can sample the test format without registering. A free account is required to complete the full assessment and receive the standardised score report — registration takes under two minutes. There is no payment required for the initial assessment. The account also saves progress so the test can be paused and resumed at any time.',
       },
     ],
     cta: {
@@ -1532,6 +1760,48 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     dateModified: '2026-09-27',
     readTime: '12 min read',
     tags: ['Academic Assessment', 'Child Development', 'High School Preparation', 'Cognitive Profile'],
+    faqs: [
+      {
+        q: 'How do I identify my child\'s learning strengths before secondary school?',
+        a: 'The most reliable approach is a standardised cognitive assessment that measures multiple domains separately — verbal reasoning, numerical reasoning, and spatial ability. School grades indicate performance relative to classmates but not underlying ability profile. A standardised assessment benchmarks your child against a national norm, revealing which cognitive domains are genuinely strong and which are average or below, giving you an actionable roadmap rather than a general impression.',
+      },
+      {
+        q: 'What cognitive skills predict success at secondary school?',
+        a: 'Research consistently identifies four cognitive domains that predict secondary school outcomes: verbal reasoning (the ability to process and use language logically), numerical aptitude (pattern recognition and mathematical reasoning), working memory (the capacity to hold and manipulate information while thinking), and spatial reasoning (the ability to mentally manipulate shapes and visual information). Strong verbal and numerical reasoning are the most powerful predictors of GCSE grades; working memory predicts success under exam conditions.',
+      },
+      {
+        q: 'What is the difference between school performance and cognitive ability?',
+        a: 'School performance reflects what a child has been taught and whether they can reproduce it under standard classroom conditions. Cognitive ability reflects underlying reasoning capacity — the "hardware" that determines how quickly a child can learn new concepts. A child can perform below their ability level due to poor teaching, lack of motivation, anxiety, or an undiagnosed learning difference. A child can also perform above their apparent cognitive level through exceptional effort. Separating the two requires a standardised cognitive assessment.',
+      },
+      {
+        q: 'How does adaptive assessment work for children?',
+        a: 'Adaptive assessment uses Item Response Theory (IRT) to adjust question difficulty in real time based on each answer. When a child answers correctly, the next question is slightly harder; when they answer incorrectly, the next question is slightly easier. This process quickly homes in on the child\'s actual ability level with far fewer questions than a fixed-difficulty test requires. The result is a more accurate ability estimate, a shorter test duration, and a less frustrating experience for both high-ability and lower-ability children.',
+      },
+      {
+        q: 'At what age should I assess my child\'s cognitive strengths?',
+        a: 'Meaningful cognitive profiling is possible from age 7–8, but the most actionable window for secondary school preparation is age 9–12. This gives families enough time to act on the findings before GCSEs and secondary school subject choices. An assessment at age 10–11 (Year 5–6) informs 11+ preparation and secondary school choice; an assessment at 12–13 (Year 7–8) guides GCSE option choices and identifies subjects where targeted tutoring would have the highest impact.',
+      },
+      {
+        q: 'Can a child have a strong academic record but hidden weaknesses?',
+        a: 'Yes — this is a common finding in standardised assessments. A child who performs well in all school subjects may have an uneven cognitive profile beneath the surface. For example, a child with very strong verbal reasoning can compensate for weaker numerical reasoning in school, where most tasks have a language component. This hidden weakness only becomes apparent when the curriculum becomes more abstract and demanding — typically at GCSE or A-level. Early identification allows targeted support before the gap becomes a problem.',
+      },
+      {
+        q: 'What is working memory and why does it matter for school?',
+        a: 'Working memory is the ability to hold information in mind while simultaneously using it — for example, holding the beginning of a maths problem in memory while calculating the end. It is closely linked to reading comprehension, writing quality, and mental arithmetic. Children with weaker working memory often struggle to follow multi-step instructions, lose track of their reasoning midway through a problem, or perform inconsistently despite understanding the material. Working memory can be supported through structured teaching strategies even if its capacity itself is relatively fixed.',
+      },
+      {
+        q: 'How does knowing my child\'s cognitive profile help with subject choice at GCSE?',
+        a: 'GCSE subject choices lock in a child\'s academic direction at age 13–14. A cognitive profile helps parents and children choose subjects that align with genuine strengths — maximising the probability of achieving top grades — while ensuring core subjects in weaker domains receive targeted support. A child with high verbal reasoning and average numerical reasoning might thrive in humanities GCSEs while needing specific maths support. Making this decision based on cognitive data is more reliable than relying on school grades alone.',
+      },
+      {
+        q: 'What is the difference between verbal reasoning and literacy?',
+        a: 'Verbal reasoning is the ability to use logic and pattern recognition applied to language — solving word analogies, identifying codes, and reasoning about word relationships. Literacy is the ability to read, write, and communicate effectively. Both involve language, but they draw on different cognitive skills. A fluent reader can have weak verbal reasoning (understanding text without reasoning logically about word relationships), and a strong verbal reasoner can have poor spelling or writing mechanics. The 11+ tests verbal reasoning, not literacy.',
+      },
+      {
+        q: 'How do I share my child\'s cognitive assessment results with their school?',
+        a: 'Take the full standardised report to the first parents\' evening after the assessment. Present the data alongside your child\'s recent school grades and ask the teacher to help interpret discrepancies — where the cognitive score is significantly higher than school performance, there may be motivational, environmental, or specific learning factors worth investigating. Schools increasingly use standardised data (CAT4 in UK schools) for this purpose; an external assessment report on the same scale is a directly comparable and credible evidence base.',
+      },
+    ],
   },
   {
     slug: 'pisa-2025-work-experience-student-readiness',
@@ -1974,6 +2244,65 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       body: "Adaptive assessment for ages 6–16. Verbal, numerical and spatial reasoning measured against international benchmarks — instant report, no registration.",
       label: 'Start free test',
       href: '/#academic',
+    },
+  },
+  {
+    slug: 'how-to-prepare-for-gcse',
+    title: 'How to Prepare for GCSEs: Complete Revision Guide for Students and Parents (2026)',
+    shortTitle: 'GCSE Revision Guide 2026: How to Prepare',
+    description: 'A step-by-step GCSE preparation guide covering the 9–1 grade system, revision strategies, subject choices, mock exam timelines and the cognitive skills that predict GCSE success.',
+    tldr: 'GCSEs are graded 9–1 (9 is the highest). Grade 4 is the standard pass (equivalent to old grade C); Grade 5 is the strong pass. Most sixth forms require five or more Grade 4+ GCSEs including English and Maths. Effective GCSE revision starts 12–18 months before exams using active recall and past papers, not passive re-reading.',
+    date: '2026-10-03',
+    dateModified: '2026-10-03',
+    readTime: '10 min read',
+    tags: ['GCSE', 'UK Education', 'Revision', 'Exam Preparation', 'Secondary School', '2026', 'Grade Boundaries', 'Sixth Form'],
+    faqs: [
+      {
+        q: 'What are the GCSE grade boundaries for 2026?',
+        a: 'Grade boundaries are set each year by exam boards (AQA, Edexcel, OCR, WJEC) after marking is complete — they are not published in advance. Boundaries vary by subject and year, and are adjusted to account for exam difficulty. As a rough guide, Grade 7 typically requires around 65–70% on most papers; Grade 4 (the standard pass) typically requires 40–50%. Always check the exam board\'s official grade boundary tables after results day.',
+      },
+      {
+        q: 'What is Grade 4 equivalent to in old GCSE grades?',
+        a: 'Grade 4 in the 9–1 system is equivalent to a low Grade C in the old A*–G system. It is described as a "standard pass" and is the minimum acceptable grade for most employment and further education purposes. Grade 5 (the "strong pass") is equivalent to a high Grade C or low Grade B, and is increasingly used as the threshold by sixth forms and employers. Grade 7 is equivalent to old Grade A.',
+      },
+      {
+        q: 'How many GCSEs do you need for sixth form?',
+        a: 'Most sixth forms require a minimum of five GCSEs at Grade 4 or above, including English Language and Mathematics. Selective sixth forms typically require five or more GCSEs at Grade 5 or above, often with Grade 6 or 7 in the subjects the student wishes to study at A-level. The specific requirements vary by school — always check the admissions criteria for each sixth form your child is considering.',
+      },
+      {
+        q: 'When do GCSE exams take place in 2026?',
+        a: 'GCSE exams in 2026 take place from mid-May to late June. Most papers are scheduled across a six-week window, with English Language, English Literature, and Mathematics papers typically sitting in the first two weeks. Results Day is in late August — in 2026 this falls on Thursday 20 August. Students sit exams at their own school and receive results by post and online simultaneously.',
+      },
+      {
+        q: 'What subjects are compulsory for GCSE?',
+        a: 'All students in England must study English Language, English Literature, and Mathematics — these three are compulsory. In addition, most schools require students to take at least one science GCSE (most take the combined science double award, which counts as two GCSEs). Many schools also require a modern foreign language and a humanities subject (History or Geography), though these are not legally mandated. Students typically choose 2–3 additional optional subjects from the rest of the curriculum.',
+      },
+      {
+        q: 'What is the best way to revise for GCSEs?',
+        a: 'The most effective revision strategies are active recall (testing yourself on material rather than re-reading notes), spaced repetition (revisiting topics at increasing intervals), and interleaving (mixing subjects or topics rather than studying one exhaustively before moving on). Past papers under timed conditions are the single most valuable revision activity — they build exam technique, reveal knowledge gaps, and reduce test anxiety. Passive re-reading and highlighting are among the least effective methods despite being the most popular.',
+      },
+      {
+        q: 'How long before GCSEs should you start revising?',
+        a: 'Meaningful GCSE revision should begin 12–18 months before the exams — in Year 10 for students taking GCSEs in Year 11. Light consolidation in Year 10 (30–45 minutes per day reviewing covered topics) compounds significantly by the time intensive revision begins in Year 11. Starting serious revision only in January of Year 11 (4 months before May exams) is possible but leaves very little margin for catching up on gaps.',
+      },
+      {
+        q: 'Can you resit GCSEs?',
+        a: 'Yes — GCSE resits are available each November for English Language and Mathematics only (the two most important GCSEs), and the full June series is available each summer for all subjects. Students can resit as many times as they want. Schools will usually allow students to resit in Year 12 if they missed the Grade 4 threshold, and independent candidates can sit any GCSE at an exam centre. The higher grade always stands on the certificate.',
+      },
+      {
+        q: 'What is the difference between Foundation and Higher tier at GCSE?',
+        a: 'Most GCSE subjects are tiered. Foundation tier covers grades 1–5; Higher tier covers grades 3–9. Students entered for Foundation tier cannot achieve above Grade 5, regardless of how well they do. Higher tier students can theoretically achieve any grade from 3–9. Schools typically recommend Higher tier for students targeting Grade 6 or above, and Foundation tier for those unlikely to achieve Grade 5. The decision is usually made in Year 10 or early Year 11.',
+      },
+      {
+        q: 'What GCSE grades do universities look at?',
+        a: 'Universities primarily look at A-level (or equivalent) results for undergraduate admissions, not GCSE grades. However, GCSE grades are used as a filter for competitive courses — medical schools, Oxbridge, and top Russell Group universities typically expect Grade 7 or above across most GCSEs as a baseline indicator of academic ability. Some degree apprenticeship programmes and employer-linked courses use GCSE grades more directly in selection.',
+      },
+    ],
+    cta: {
+      heading: 'Know your child\'s GCSE readiness today',
+      body: 'Free adaptive assessment in English, Maths, Verbal and Non-Verbal Reasoning — instant standardised score and percentile ranking against UK norms.',
+      label: 'Start free assessment',
+      href: '/auth/register',
     },
   },
 ]

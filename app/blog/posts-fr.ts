@@ -1290,6 +1290,126 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: '/fr#academique',
     },
   },
+  {
+    slug: 'comment-preparer-examen-11-plus',
+    contentSlug: 'how-to-prepare-for-11-plus',
+    title: 'Comment Préparer l\'Examen 11+ à la Maison : Guide Complet pour les Parents',
+    shortTitle: 'Comment Préparer le 11+ : Guide Complet',
+    description: 'Guide pratique pour les parents sur la préparation du 11+ à la maison — couvrant le raisonnement verbal, le raisonnement non verbal, les maths et l\'anglais, avec un calendrier de préparation recommandé de 18 mois.',
+    tldr: 'La plupart des familles commencent la préparation au 11+ 12 à 18 mois avant l\'examen, qui se déroule généralement en septembre ou octobre de l\'année 6. Une préparation efficace représente 3 à 4 heures par semaine en phase initiale (années 4–5), puis 5 à 7 heures par semaine dans les 3 derniers mois — réparties en séances quotidiennes de 20 à 30 minutes. Les quatre matières évaluées sont l\'anglais, les mathématiques, le raisonnement verbal et le raisonnement non verbal.',
+    date: '2026-10-03',
+    dateModified: '2026-10-03',
+    readTime: '8 min de lecture',
+    tags: ['11+', 'Grammar Schools', 'Préparation', 'Guide Parents'],
+    faqs: [
+      {
+        q: 'Quand dois-je commencer à préparer mon enfant au 11+ ?',
+        a: 'La plupart des familles commencent une préparation structurée au 11+ 12 à 18 mois avant l\'examen, qui se déroule généralement en septembre ou octobre de l\'année 6. Commencer en année 4 ou début d\'année 5 est idéal — cela laisse le temps de développer les compétences progressivement sans créer d\'anxiété liée à l\'examen. La première étape est une évaluation diagnostique pour identifier les forces et lacunes actuelles.',
+      },
+      {
+        q: 'Est-il possible de préparer le 11+ à la maison sans tuteur ?',
+        a: 'Oui. De nombreux enfants se préparent avec succès au 11+ entièrement à la maison grâce à des cahiers d\'exercices, des ressources en ligne gratuites et des plateformes d\'évaluation adaptative en ligne. La clé est la régularité — 20 à 30 minutes de pratique ciblée par jour est plus efficace que des séances intensives occasionnelles. Un plan structuré couvrant les quatre matières (anglais, maths, raisonnement verbal, raisonnement non verbal) est essentiel.',
+      },
+      {
+        q: 'Quelles matières sont couvertes par l\'examen 11+ ?',
+        a: 'Le 11+ couvre généralement quatre matières : l\'anglais (compréhension écrite, grammaire, vocabulaire), les mathématiques (arithmétique, algèbre, géométrie), le raisonnement verbal (analogies de mots, séquences, codes) et le raisonnement non verbal (motifs de formes, matrices, raisonnement spatial). Les matières testées dépendent de l\'organisme examinateur — GL Assessment évalue les quatre, tandis que CEM combine le raisonnement verbal et numérique dans un format mixte.',
+      },
+      {
+        q: 'Combien d\'heures par semaine mon enfant doit-il s\'entraîner pour le 11+ ?',
+        a: 'En phase de préparation initiale (12 à 18 mois avant l\'examen), 3 à 4 heures par semaine réparties sur 5 à 6 courtes séances quotidiennes suffisent. Dans les 3 derniers mois, cela peut passer à 5 à 7 heures par semaine. Plus de 10 heures par semaine est contre-productif et augmente l\'anxiété sans amélioration significative du score.',
+      },
+      {
+        q: 'Quelle est la différence entre GL Assessment et CEM pour le 11+ ?',
+        a: 'GL Assessment et CEM (Université de Durham) sont les deux principaux organismes examinateurs du 11+ en Angleterre. GL Assessment évalue chaque matière séparément — anglais, maths, raisonnement verbal et non verbal — avec des types de questions clairement étiquetés. CEM mélange le raisonnement verbal et numérique dans des épreuves sans étiquettes de type de question, ce que beaucoup d\'enfants trouvent plus difficile à préparer. Savoir quel organisme utilise votre école cible est essentiel avant de commencer la préparation.',
+      },
+      {
+        q: 'Quel score mon enfant doit-il obtenir pour réussir le 11+ ?',
+        a: 'Le seuil de réussite varie considérablement selon la région et l\'école. Dans le Kent et l\'Essex, un Score d\'Âge Standardisé (SAS) d\'environ 111 à 113 place généralement un enfant sur le registre sélectif. Dans les arrondissements londoniens les plus surpeuplés (Barnet, Sutton), un SAS de 125 peut ne pas garantir une offre si des candidats avec des scores plus élevés habitent plus près. Vérifiez toujours les critères publiés pour vos écoles cibles spécifiques.',
+      },
+      {
+        q: 'Un enfant peut-il se préparer seul au 11+ sans tuteur ?',
+        a: 'Oui — de nombreux enfants se préparent avec succès au 11+ entièrement par l\'auto-apprentissage et le soutien parental. Les ressources clés sont une série de cahiers d\'exercices structurés (Bond, CGP ou Schofield & Sims sont largement utilisés), une évaluation adaptative en ligne pour suivre les progrès, et des épreuves passées de votre organisme examinateur spécifique. Un tuteur apporte une valeur ajoutée principalement pour les enfants qui ont du mal à s\'auto-motiver ou qui ont des lacunes dans des matières spécifiques.',
+      },
+      {
+        q: 'Le 11+ teste-t-il les connaissances ou les aptitudes ?',
+        a: 'Le 11+ évalue une combinaison des deux. Les épreuves d\'anglais et de maths testent les connaissances du programme (contenu KS2), tandis que les épreuves de raisonnement verbal et non verbal sont conçues pour tester les aptitudes cognitives sous-jacentes indépendamment de l\'apprentissage scolaire. En pratique, les quatre composantes répondent à une préparation ciblée — y compris les épreuves de raisonnement, qui s\'améliorent significativement avec une pratique systématique sur chaque type de question.',
+      },
+      {
+        q: 'Que se passe-t-il le jour de l\'examen 11+ ?',
+        a: 'Le 11+ se déroule généralement en septembre de l\'année 6, la plupart des comtés organisant une seule session dans l\'école de l\'enfant ou dans un centre d\'examen désigné. Les enfants passent une ou deux épreuves de 45 à 60 minutes chacune. Les résultats sont généralement envoyés aux parents en octobre, à temps pour inclure les préférences de grammar schools sur le formulaire de demande d\'école secondaire (CAF), qui est dû fin octobre.',
+      },
+      {
+        q: 'Mon enfant devrait-il passer un examen blanc du 11+ ?',
+        a: 'Oui — les examens blancs complets dans des conditions chronométrées sont l\'une des formes de préparation les plus efficaces. Ils développent l\'endurance à l\'examen, réduisent l\'anxiété liée au test et révèlent les faiblesses de gestion du temps invisibles lors de la pratique non chronométrée. Visez au moins 3 à 4 examens blancs complets dans les 2 à 3 mois précédant l\'examen réel, avec une session de révision après chacun pour comprendre où les points ont été perdus.',
+      },
+    ],
+    cta: {
+      heading: 'Obtenez le score de référence 11+ de votre enfant aujourd\'hui',
+      body: 'Évaluation adaptative gratuite en anglais, maths, raisonnement verbal et non verbal — avec un score standardisé, un classement en percentile et des recommandations générées par l\'IA.',
+      label: 'Commencer le test 11+ gratuit',
+      href: '/fr/auth/register',
+    },
+  },
+  {
+    slug: 'raisonnement-verbal-11-plus-guide',
+    contentSlug: 'verbal-reasoning-11-plus-guide',
+    title: 'Le Raisonnement Verbal pour le 11+ : Types de Questions, Exemples et Conseils',
+    shortTitle: 'Raisonnement Verbal 11+ : Guide Complet',
+    description: 'Guide complet sur les questions de raisonnement verbal que votre enfant rencontrera au 11+ — couvrant tous les principaux types de questions avec des exemples travaillés, les erreurs courantes à éviter et des conseils pour une pratique efficace à la maison.',
+    tldr: 'Le raisonnement verbal au 11+ teste la pensée logique en utilisant des mots — non pas la capacité de lecture ou l\'expression écrite. Les types de questions incluent les analogies de mots (CHAUD:FROID comme RAPIDE:?), les codes, les séquences, les mots cachés et les synonymes. Il est distinct de la compréhension en anglais et peut être amélioré par une pratique ciblée indépendamment du niveau de lecture.',
+    date: '2026-10-03',
+    dateModified: '2026-10-03',
+    readTime: '7 min de lecture',
+    tags: ['Raisonnement Verbal', '11+', 'Pratique', 'Types de Questions'],
+    faqs: [
+      {
+        q: 'Qu\'est-ce que le raisonnement verbal dans le 11+ ?',
+        a: 'Le raisonnement verbal au 11+ teste la pensée logique en utilisant des mots — non pas la capacité de lecture ou l\'expression écrite. Les types de questions incluent les analogies de mots (CHAUD est à FROID comme RAPIDE est à ?), les codes de mots, les mots cachés, l\'intrus, les séquences, les synonymes et les antonymes. La compétence est la reconnaissance de motifs et la déduction logique appliquées au langage.',
+      },
+      {
+        q: 'Comment améliorer le raisonnement verbal de mon enfant pour le 11+ ?',
+        a: 'L\'approche la plus efficace est la lecture extensive (qui enrichit le vocabulaire, fondement du raisonnement verbal), la pratique systématique de chaque type de question isolément jusqu\'à la fluidité, et une pratique chronométrée régulière dans les conditions d\'examen. Les jeux de vocabulaire comme le Scrabble, les mots croisés et un cahier de « mot du jour » complètent efficacement la pratique formelle.',
+      },
+      {
+        q: 'Quel organisme examinateur établit l\'épreuve de raisonnement verbal du 11+ ?',
+        a: 'GL Assessment est l\'organisme examinateur le plus largement utilisé pour le raisonnement verbal du 11+, couvrant le Kent, l\'Essex, le Hertfordshire et de nombreuses écoles individuelles. CEM (Université de Durham) couvre le Buckinghamshire et certaines autres zones — leur format mélange le raisonnement verbal et numérique sans étiqueter les questions par type, ce que beaucoup d\'enfants trouvent plus difficile à préparer.',
+      },
+      {
+        q: 'Le raisonnement verbal est-il plus difficile que les maths au 11+ ?',
+        a: 'Pour la plupart des enfants, le raisonnement verbal est plus difficile que les maths au 11+ car c\'est une compétence peu familière. Les enfants forts en anglais sous-performent parfois initialement car le raisonnement verbal est basé sur la logique, pas sur la littératie. La bonne nouvelle est que le raisonnement verbal est très enseignable — les types de questions sont finis et répondent bien à une pratique systématique.',
+      },
+      {
+        q: 'Quels sont les types de questions de raisonnement verbal les plus courants au 11+ ?',
+        a: 'Les types les plus courants incluent : les analogies de mots (CHAUD:FROID comme RAPIDE:?), compléter la phrase, séries de lettres, séries numériques en format mot, trouver le mot caché, déplacer une lettre, codes de mots, l\'intrus et les connexions de mots. Les épreuves GL Assessment contiennent généralement 80 questions de types mixtes en 50 minutes ; les épreuves CEM les mélangent dans un format non séparé.',
+      },
+      {
+        q: 'Combien de questions de raisonnement verbal y a-t-il dans le 11+ ?',
+        a: 'Une épreuve typique de raisonnement verbal GL Assessment contient 80 questions à compléter en 50 minutes — environ 37 secondes par question. Les épreuves CEM varient mais ont tendance à s\'exécuter à un rythme similaire. Cette pression temporelle signifie que la vitesse et l\'automaticité avec chaque type de question sont tout aussi importantes que la précision.',
+      },
+      {
+        q: 'Quel niveau de vocabulaire est nécessaire pour le raisonnement verbal du 11+ ?',
+        a: 'Un vocabulaire étendu aide considérablement pour les questions de synonymes, d\'antonymes et d\'analogies de mots. Les enfants qui se préparent au 11+ devraient lire largement à leur niveau ou au-dessus — idéalement en incluant de la non-fiction et de la littérature plus ancienne qui les expose à des mots moins courants. Un vocabulaire cible de 15 000 à 20 000 mots est associé à de bonnes performances en raisonnement verbal à l\'âge de 10–11 ans.',
+      },
+      {
+        q: 'Le raisonnement verbal est-il évalué par tous les organismes examinateurs du 11+ ?',
+        a: 'La plupart des zones à grammar schools évaluent le raisonnement verbal, mais le format varie selon l\'organisme. GL Assessment le teste comme une épreuve autonome de 80 questions. CEM (utilisé dans le Buckinghamshire et certaines autres zones) mélange le raisonnement verbal et numérique sans étiquettes de type de question séparées, rendant le style plus difficile à préparer. Un petit nombre d\'écoles individuelles établissent leurs propres épreuves, dont certaines n\'incluent pas du tout le raisonnement verbal.',
+      },
+      {
+        q: 'Quelle est la relation entre le raisonnement verbal et la compréhension en anglais ?',
+        a: 'Le raisonnement verbal et la compréhension en lecture sont des compétences liées mais distinctes. La compréhension mesure si un enfant comprend ce qu\'il lit ; le raisonnement verbal mesure s\'il peut utiliser la logique et la reconnaissance de motifs appliquées aux mots. Un bon lecteur n\'est pas automatiquement fort en raisonnement verbal — et vice versa. Les deux compétences nécessitent une pratique ciblée pour le 11+.',
+      },
+      {
+        q: 'À quel âge les enfants devraient-ils commencer la pratique du raisonnement verbal ?',
+        a: 'La plupart des familles commencent la pratique du raisonnement verbal en année 4 (âge 8–9), environ 18 mois avant l\'examen. Commencer en année 5 est encore faisable si l\'enfant a de solides bases en anglais et en maths. Commencer en année 6 est tardif — les types de questions de raisonnement verbal prennent du temps à s\'intérioriser, et précipiter la préparation dans les derniers mois augmente l\'anxiété sans amélioration proportionnelle du score.',
+      },
+    ],
+    cta: {
+      heading: 'Testez le raisonnement verbal de votre enfant aujourd\'hui',
+      body: 'Évaluation adaptative gratuite en raisonnement verbal, raisonnement non verbal, anglais et maths — avec un score standardisé et un classement en percentile.',
+      label: 'Commencer le test 11+ gratuit',
+      href: '/fr/auth/register',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

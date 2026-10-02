@@ -3033,6 +3033,437 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'how-to-prepare-for-11-plus': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Le 11+ est l&apos;un des examens les plus mal compris de l&apos;enseignement primaire au Royaume-Uni.
+        De nombreuses familles commencent trop tard, se concentrent sur les mauvaises matières ou épuisent
+        leur enfant avec des entraînements intensifs bien avant l&apos;examen. Ce guide vous propose un cadre
+        pratique et fondé sur la recherche pour préparer le 11+ à la maison — couvrant le bon calendrier,
+        une approche matière par matière, l&apos;utilisation efficace des examens blancs et la gestion du
+        stress tout au long du processus.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce que le 11+ évalue réellement</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le 11+ n&apos;est pas un examen unique — il varie considérablement selon l&apos;organisme
+          examinateur utilisé par l&apos;école visée. Avant d&apos;acheter le moindre cahier d&apos;exercices,
+          vérifiez quel organisme votre école utilise, car cela détermine quelles matières importent et
+          comment elles sont évaluées.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          {[
+            { subject: 'Raisonnement verbal', detail: 'Résolution de problèmes avec des mots — analogies, codes, classifications, suites. C\'est la matière que les enfants connaissent le moins, car elle n\'est presque jamais enseignée à l\'école. Elle nécessite une préparation ciblée spécifique.' },
+            { subject: 'Raisonnement non verbal', detail: 'Reconnaissance de motifs et pensée abstraite avec des formes et symboles. Évalue l\'intelligence spatiale et logique plutôt que les connaissances scolaires. Plus difficile à améliorer par la pratique, mais la familiarité avec les types de questions réduit significativement les erreurs.' },
+            { subject: 'Anglais', detail: 'Compréhension écrite, grammaire, vocabulaire et parfois expression écrite. Étroitement lié au programme scolaire, mais la technique d\'examen — répondre en phrases complètes, citer le texte — doit être explicitement pratiquée.' },
+            { subject: 'Mathématiques', detail: 'Nombres, fractions, algèbre, géométrie et résolution de problèmes. Les maths du 11+ sont généralement 12 à 18 mois en avance sur le programme standard d\'année 5/6. La rapidité sans calculatrice est indispensable.' },
+          ].map(({ subject, detail }) => (
+            <div key={subject} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{subject}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">GL Assessment</strong> (utilisé dans le Kent, l&apos;Essex, le Hertfordshire et de nombreuses écoles individuelles) évalue les quatre matières séparément. <strong>CEM</strong> (utilisé dans le Buckinghamshire, Birmingham et certaines autres zones) mélange les aptitudes verbales, le raisonnement numérique et les compétences spatiales sans les étiqueter par matière. <strong>ISEB</strong> teste uniquement l&apos;anglais et les mathématiques. Vérifiez toujours directement auprès de votre école cible avant d&apos;acheter des matériaux de préparation.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Quand commencer — et quand ne pas commencer</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La plupart des spécialistes de l&apos;éducation recommandent de commencer une préparation structurée
+          12 à 18 mois avant l&apos;examen. Pour la plupart des grammar schools, le 11+ se déroule en septembre
+          ou octobre de l&apos;année 6, ce qui signifie qu&apos;une préparation sérieuse devrait commencer en
+          année 4 ou début d&apos;année 5. Commencer avant 18 mois est généralement contre-productif :
+          les enfants s&apos;épuisent bien avant l&apos;examen et les acquis sont oubliés s&apos;ils ne
+          sont pas régulièrement entretenus.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          L&apos;erreur la plus courante est de commencer immédiatement avec des examens blancs, sans d&apos;abord
+          établir où se situe actuellement l&apos;enfant. Une évaluation diagnostique préalable — couvrant les
+          quatre matières et produisant un score standardisé — vous dit exactement où se trouvent les lacunes
+          réelles. Cela évite de passer des mois à travailler une matière que l&apos;enfant maîtrise déjà.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Calendrier</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Objectif</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['18 mois et plus', 'Réaliser une évaluation diagnostique de référence. Identifier le score standardisé et le percentile de votre enfant. Ne pas encore acheter de cahiers d\'exercices. Lire chaque jour.'],
+                ['12–18 mois', 'Familiarisation progressive — une matière à la fois. Se concentrer sur la compréhension des concepts, pas sur les exercices. 20–30 minutes trois fois par semaine.'],
+                ['6–12 mois', 'Pratique hebdomadaire structurée sur les quatre matières. Premiers exercices chronométrés. Revoir ensemble chaque erreur — comprendre pourquoi est plus important que la note.'],
+                ['3–6 mois', 'Examens blancs complets dans les vraies conditions d\'examen. Identifier les types de questions encore faibles. Révision ciblée sur les points spécifiques.'],
+                ['6–8 semaines', 'Concentration finale sur les points faibles uniquement. Retester avec un nouveau diagnostic pour mesurer les progrès. Réduire le volume, maintenir la vivacité.'],
+                ['Semaine de l\'examen', 'Aucune nouvelle matière. Révision légère, beaucoup de sommeil, renforcement de la confiance. Revoir ce que l\'enfant maîtrise bien — pas ce qui l\'inquiète.'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700 whitespace-nowrap">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-sm leading-relaxed">{row[1]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-5">Préparation matière par matière</h2>
+
+        <div className="space-y-7">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Raisonnement verbal</h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Le raisonnement verbal est la matière la plus enseignable du 11+. Il existe environ
+              21 types de questions distincts dans les épreuves GL Assessment — analogies, codes,
+              mots cachés, intrus, suites numériques, et plus encore. Chaque type est fini et
+              basé sur des motifs. Travaillez chaque type séparément avant de les mélanger dans
+              des exercices chronométrés. Les enfants qui s&apos;entraînent avec des épreuves mixtes
+              trop tôt confondent les types de questions — l&apos;un des schémas d&apos;erreurs
+              les plus courants dans l&apos;examen réel.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Le vocabulaire est la base cachée. Un enfant qui n&apos;a jamais rencontré le mot
+              &quot;amiable&quot; ne peut pas répondre à une question de synonyme à ce sujet, quelle
+              que soit la quantité de technique de raisonnement verbal qu&apos;il a travaillée.
+              La lecture extensive — fiction, non-fiction, journaux — est la stratégie la plus
+              efficace pour enrichir le vocabulaire.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Raisonnement non verbal</h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Le raisonnement non verbal est la matière la plus difficile à améliorer spectaculairement
+              par la pratique, car il évalue l&apos;intelligence spatiale et fluide plutôt que les
+              connaissances acquises. Cependant, la familiarité avec les formats de questions —
+              matrices, suites, réflexions, rotations — réduit significativement les erreurs dues
+              à la confusion sur ce qui est demandé. Utilisez des cahiers visuels plutôt que
+              textuels. Pour les enfants ayant des difficultés en raisonnement spatial, les Lego,
+              tangrams et puzzles 3D sont des activités de préparation véritablement utiles.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Le chronométrage est crucial : GL Assessment alloue généralement environ 50 secondes
+              par question. Les enfants qui &quot;bloquent&quot; sur une matrice difficile et y passent
+              trois minutes perdent plus de points sur les questions sans réponse que sur la seule
+              mauvaise réponse. Apprenez à votre enfant à marquer une question difficile et à
+              passer à la suite, pour y revenir à la fin.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Anglais</h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              La lecture extensive reste la préparation la plus efficace pour le 11+ en anglais —
+              plus efficace que les seuls exercices. Les enfants qui lisent largement en fiction,
+              non-fiction et journalisme développent le vocabulaire, l&apos;endurance à la compréhension
+              et l&apos;instinct grammatical implicite que la seule technique d&apos;examen ne peut
+              pas totalement compenser. Visez 20–30 minutes de lecture par jour, à travers
+              des genres variés.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Pour la technique de compréhension, enseignez trois principes à votre enfant :
+              répondre en phrases complètes qui incluent la question ; toujours étayer avec une
+              citation du texte ; et lire toutes les questions avant de lire le passage pour
+              savoir ce qu&apos;il faut chercher.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Mathématiques</h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Les maths du 11+ couvrent généralement du contenu qui est 12 à 18 mois en avance
+              sur le programme standard d&apos;année 5/6. Les sujets clés à prioriser sont :
+              les fractions (opérations, équivalence, nombres mixtes), les pourcentages (de
+              quantités, variation en pourcentage), les ratios et proportions, l&apos;algèbre
+              de base (résoudre pour x, substitution), l&apos;aire et le périmètre (y compris
+              les formes composées), et la gestion des données (moyennes, diagrammes circulaires,
+              probabilité). Les problèmes en plusieurs étapes sont systématiquement la zone où
+              les enfants perdent le plus de points.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              La rapidité sans calculatrice est indispensable. Pratiquez le calcul mental chaque jour
+              — pas comme un exercice formel, mais à travers des activités quotidiennes comme le
+              calcul mental de la monnaie, le doublement et le demi des prix, ou une estimation
+              rapide de pourcentage.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Construire une routine hebdomadaire durable</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le schéma de préparation le plus dommageable est imprévisible — intensif pendant quelques
+          semaines, puis rien pendant un mois, puis intensif à nouveau. Une pratique régulière et
+          modeste surpasse de loin une pratique intense et erratique, tant pour la rétention que
+          pour la gestion du niveau d&apos;anxiété de votre enfant.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Une routine hebdomadaire réaliste dans les 6–12 mois précédant l&apos;examen ressemble à ceci :
+          deux séances de 45 minutes par semaine couvrant des types de questions individuels ou
+          des sujets spécifiques, plus une séance plus longue (60–75 minutes) pour un examen blanc
+          partiel ou complet, suivi d&apos;une révision structurée des erreurs. Cela représente
+          environ trois heures de préparation ciblée par semaine — gérable à côté des devoirs
+          scolaires sans empiéter sur l&apos;enfance.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Alternez les matières plutôt que d&apos;en épuiser une. Si votre enfant a eu du mal avec
+          les codes de raisonnement verbal la semaine dernière, cette semaine concentrez-vous sur
+          les questions de matrices non verbales — puis revenez aux codes la semaine suivante.
+          La répétition espacée consolide l&apos;apprentissage plus efficacement que la pratique
+          intensive.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment utiliser les examens blancs efficacement</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les examens blancs ne sont utiles que s&apos;ils sont traités exactement comme le vrai examen.
+          Cela signifie : une pièce calme, un vrai bureau, un chronométrage strict sans arrêts,
+          et aucune aide pendant le test. Les enfants qui se sont entraînés avec un temps illimité
+          ou avec un parent assis à côté d&apos;eux sont souvent mal préparés à la pression
+          psychologique de l&apos;environnement réel d&apos;examen.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Commencez à introduire des examens blancs chronométrés 6 mois avant l&apos;examen. Dans les
+          3 derniers mois, visez un examen blanc complet toutes les deux semaines. Après chaque
+          examen blanc, revoyez ensemble chaque erreur — mais concentrez-vous sur la compréhension
+          de la méthode correcte, pas sur la note. Un enfant qui comprend pourquoi il a raté la
+          question 14 est mieux préparé que celui qui connaît simplement son score.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Utilisez le percentile, pas le pourcentage.</strong> Un score de 72 % de bonnes réponses vous dit seulement quelle fraction des questions votre enfant a répondu. Cela ne vous dit rien sur la qualité de cette performance par rapport aux autres enfants. Comparez toujours par rapport aux données de percentile standardisées — un score de 72 % peut placer votre enfant au 80e ou au 40e percentile selon la difficulté de l&apos;épreuve.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Gérer la pression de l&apos;examen</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;anxiété est l&apos;un des plus grands inhibiteurs de performance pour les enfants
+          qui passent le 11+. Un enfant bien préparé mais très anxieux sous-performera
+          systématiquement dans les conditions d&apos;examen par rapport à un enfant légèrement
+          moins préparé mais détendu et confiant. Gérer le côté émotionnel de la préparation
+          au 11+ n&apos;est pas séparé de la préparation académique — c&apos;en est une partie.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les signes d&apos;anxiété problématique incluent des troubles du sommeil, le refus de
+          s&apos;entraîner, des crises émotionnelles après de mauvais résultats aux examens blancs,
+          ou des plaintes physiques (maux de tête, maux d&apos;estomac) les jours d&apos;entraînement.
+          Si ceux-ci apparaissent, réduisez immédiatement le volume de pratique et réintroduisez
+          un programme plus progressif.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          La veille de l&apos;examen : aucune nouvelle matière, aucun exercice. Activité légère,
+          routine du soir normale, coucher tôt. Rappelez à votre enfant que faire de son mieux
+          suffit — et qu&apos;une grammar school est un chemin, pas le seul.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La première étape : obtenir un score de référence</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Avant d&apos;acheter un seul cahier d&apos;exercices ou de contacter un tuteur, réalisez
+          une évaluation diagnostique gratuite. Elle vous dit exactement où se situe votre enfant —
+          quelles matières sont fortes, lesquelles ont des lacunes, et quelle est sa position
+          percentile standardisée actuelle.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Eduentry couvre les quatre matières du 11+ (anglais, mathématiques, raisonnement verbal,
+          raisonnement non verbal) et produit un score standardisé sur la même échelle (moyenne 100,
+          écart-type 15) que GL Assessment. Vous ne savez pas ce que signifie un score standardisé ?{' '}
+          <Link href="/fr/blog/qu-est-ce-qu-un-score-standardise" className="text-indigo-600 hover:underline">
+            Notre guide sur les scores standardisés
+          </Link>{' '}
+          explique exactement comment lire et utiliser les résultats de votre enfant. Retestez
+          tous les 3–4 mois pour suivre les progrès réels dans le temps.
+        </p>
+      </section>
+    </>
+  ),
+
+  'verbal-reasoning-11-plus-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Le raisonnement verbal est la matière qui surprend le plus les familles lors de la préparation
+        au 11+. Les parents qui étaient eux-mêmes d&apos;excellents élèves le trouvent souvent peu
+        familier, et les enfants forts en anglais y peinent parfois au départ car il évalue une
+        compétence complètement différente — non pas la capacité de lecture, mais la résolution
+        logique de problèmes avec des mots. La bonne nouvelle : le raisonnement verbal est très
+        basé sur des motifs. Les types de questions sont finis, apprenables et répondent bien
+        à une pratique systématique. Ce guide couvre chaque type de question majeur avec des
+        exemples travaillés, un plan de préparation et les erreurs les plus courantes à éviter.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce que le raisonnement verbal évalue réellement</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le raisonnement verbal évalue la capacité d&apos;un enfant à penser logiquement en utilisant
+          le langage — à identifier des relations entre les mots, à repérer des motifs dans des
+          séquences de lettres et de chiffres, et à résoudre des problèmes impliquant simultanément
+          un raisonnement linguistique et logique. Il se distingue de la compréhension écrite ou de
+          la grammaire d&apos;une manière importante : le raisonnement verbal nécessite un minimum
+          de connaissances littéraires. Un enfant n&apos;a pas besoin d&apos;avoir beaucoup lu ou
+          d&apos;avoir étudié des règles grammaticales pour exceller en raisonnement verbal. Il
+          a besoin d&apos;être rapide, systématique et précis en reconnaissance de motifs.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Les épreuves GL Assessment 11+ contiennent généralement 50 à 80 questions de raisonnement
+          verbal à compléter en 45–50 minutes — environ une question par minute. La vitesse et
+          la précision ensemble sont essentielles. Un enfant qui connaît tous les types de
+          questions mais est lent manquera de temps. Un enfant rapide mais peu soigneux fera
+          des erreurs sur des questions qu&apos;il comprend.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Les principaux types de questions</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Les épreuves de raisonnement verbal GL Assessment utilisent un ensemble reconnu de types
+          de questions, chacun avec sa propre logique. La clé de la préparation est de travailler
+          chaque type séparément jusqu&apos;à ce qu&apos;il soit maîtrisé, puis de les mélanger
+          dans des exercices chronométrés.
+        </p>
+        {[
+          {
+            type: '1. Analogies de mots',
+            desc: 'Identifiez la relation entre la première paire de mots et appliquez-la pour compléter la deuxième paire.',
+            example: 'CHAUD est à FROID comme RAPIDE est à ___',
+            answer: 'LENT — les deux paires sont des opposés (antonymes)',
+            tip: 'Nommez la relation à voix haute avant de regarder les options : « opposé », « type de », « partie de », « utilisé pour ». Puis appliquez cette relation. Ne supposez jamais la relation — vérifiez-la.',
+          },
+          {
+            type: '2. L\'intrus',
+            desc: 'Trouvez le mot qui n\'appartient pas au groupe.',
+            example: 'pomme  banane  carotte  poire  raisin',
+            answer: 'CAROTTE — un légume ; tous les autres sont des fruits',
+            tip: 'Essayez plusieurs catégories : type d\'aliment, couleur, forme, nombre de syllabes, motif alphabétique. La réponse piège est généralement celle qui s\'intègre dans une catégorie plausible mais erronée.',
+          },
+          {
+            type: '3. Codes de lettres',
+            desc: 'Déduisez un code de substitution ou de décalage de lettres à partir d\'un exemple donné, puis appliquez-le.',
+            example: 'Si CHAT est codé comme DIBO, comment DOG est-il codé ?',
+            answer: 'EPH — chaque lettre décalée de +1 dans l\'alphabet (D→E, O→P, G→H)',
+            tip: 'Trouvez le motif en vérifiant au moins deux paires de lettres avant d\'appliquer la règle. Motifs courants : décalage vers l\'avant ou l\'arrière d\'un montant fixe, inversion de l\'ordre des lettres, utilisation des positions dans l\'alphabet.',
+          },
+          {
+            type: '4. Mots cachés',
+            desc: 'Trouvez un vrai mot caché à la limite entre deux mots adjacents dans une phrase.',
+            example: '« Elle s\'assit près de la porte est » contient un mot caché',
+            answer: 'Parcourez chaque limite de mot de gauche à droite. Prenez les dernières 1–3 lettres d\'un mot et ajoutez les premières 1–2 lettres du suivant.',
+            tip: 'Travaillez de gauche à droite en vérifiant chaque limite de mot. Pratiquez jusqu\'à ce que ce balayage devienne automatique.',
+          },
+          {
+            type: '5. Suites de mots et séries de lettres',
+            desc: 'Identifiez l\'élément suivant dans une série de mots ou de lettres suivant un motif logique.',
+            example: 'AB, CD, EF, ___',
+            answer: 'GH — paires de lettres consécutives progressant vers l\'avant dans l\'alphabet',
+            tip: 'Convertissez les lettres en leur position alphabétique (A=1, B=2, etc.) si le motif n\'est pas immédiatement évident. Beaucoup de séries impliquent +2, +3 ou des étapes alternées plutôt qu\'une simple progression de +1.',
+          },
+          {
+            type: '6. Synonymes et antonymes',
+            desc: 'Choisissez le mot le plus similaire (synonyme) ou le plus opposé (antonyme) à un mot donné.',
+            example: 'Quel mot est le plus similaire à RAVI ? → misérable / enchanté / confus / épuisé',
+            answer: 'ENCHANTÉ — les deux signifient très heureux. « Misérable » est son antonyme.',
+            tip: 'Lisez attentivement l\'instruction à chaque fois — « le plus similaire » et « le plus opposé » nécessitent un raisonnement inverse. Un vocabulaire étendu est la seule préparation fiable.',
+          },
+          {
+            type: '7. Mots composés et construction de mots',
+            desc: 'Trouvez un mot qui peut suivre le premier mot et précéder le second pour former deux mots composés.',
+            example: 'PORTE ( ___ ) TRAVAIL',
+            answer: 'Ce type adapte des ponts de mots communs dans la langue anglaise originale du 11+.',
+            tip: 'Testez d\'abord les mots ponts courants. Vérifiez toujours que les deux combinaisons sont de vrais mots.',
+          },
+          {
+            type: '8. Lettres manquantes',
+            desc: 'Identifiez la lettre manquante qui complète simultanément les deux mots donnés.',
+            example: 'P _ N  et  B _ T',
+            answer: 'A — PAN et BAT (ou PEN et BET, PIN et BIT — la lettre doit former un mot valide dans les deux positions)',
+            tip: 'Testez mentalement chaque voyelle (A, E, I, O, U) d\'abord, puis les consonnes courantes. Regardez les deux mots simultanément.',
+          },
+        ].map(({ type, desc, example, answer, tip }) => (
+          <div key={type} className="border border-gray-100 rounded-xl p-6 mb-4">
+            <h3 className="font-bold text-gray-900 mb-1">{type}</h3>
+            <p className="text-sm text-gray-500 mb-4">{desc}</p>
+            <div className="bg-gray-50 rounded-lg p-4 mb-3">
+              <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Exemple</div>
+              <div className="font-mono text-gray-800 text-sm mb-2">{example}</div>
+              <div className="text-xs text-emerald-700 font-semibold leading-relaxed">Réponse : {answer}</div>
+            </div>
+            <div className="flex gap-2">
+              <span className="text-xs font-semibold text-indigo-600 bg-indigo-50 rounded-full px-2.5 py-0.5 flex-shrink-0 h-fit">Conseil</span>
+              <p className="text-sm text-gray-600 leading-relaxed">{tip}</p>
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Le vocabulaire : le levier caché</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le vocabulaire est la fondation sous la compétence en raisonnement verbal. Un enfant qui
+          rencontre &quot;exalté&quot;, &quot;obstiné&quot; ou &quot;bienveillant&quot; pour la première
+          fois dans une question de synonyme ne peut pas y répondre correctement quelle que soit la
+          maîtrise du type de question. L&apos;écart de vocabulaire entre les enfants du même âge
+          qui lisent beaucoup et ceux qui lisent peu est substantiel — et explique une grande partie
+          de la variation des scores de raisonnement verbal qui semble autrement inexplicable.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La stratégie la plus efficace pour enrichir le vocabulaire est la lecture large et régulière —
+          fiction et non-fiction, livres et sources d&apos;actualité de qualité, à travers un éventail
+          de genres et de niveaux de difficulté. Vingt minutes par jour, maintenues pendant 12 mois,
+          produisent plus d&apos;amélioration mesurable en scores de raisonnement verbal que tout
+          cahier de vocabulaire dédié.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Pour un calendrier de préparation complet et une stratégie couvrant les quatre matières du 11+,
+          consultez notre{' '}
+          <Link href="/fr/blog/comment-preparer-examen-11-plus" className="text-indigo-600 hover:underline">
+            guide complet de préparation au 11+ à la maison
+          </Link>.
+          Pour les seuils de score SAS par zone, consultez nos{' '}
+          <Link href="/fr/blog/ecoles-selectionnees-uk-2026" className="text-indigo-600 hover:underline">
+            critères d&apos;admission aux grammar schools 2026
+          </Link>.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Erreurs courantes à éviter</h2>
+        <ul className="space-y-4">
+          <li className="flex gap-3 items-start"><span className="text-red-500 font-bold mt-0.5">✗</span><span className="text-gray-700 leading-relaxed"><strong>Ne pas lire toutes les options.</strong> Beaucoup d&apos;enfants cochent la première réponse qui semble plausible sans vérifier les autres. Souvent une option ultérieure est plus précisément correcte — surtout dans les questions de synonymes/antonymes.</span></li>
+          <li className="flex gap-3 items-start"><span className="text-red-500 font-bold mt-0.5">✗</span><span className="text-gray-700 leading-relaxed"><strong>Passer trop de temps sur une question.</strong> Les épreuves VR GL Assessment allouent environ une minute par question. Marquez toute question qui prend plus de 90 secondes et revenez-y à la fin. Une question sans réponse rapporte zéro ; une réponse devinée a 25 % de chances d&apos;être correcte.</span></li>
+          <li className="flex gap-3 items-start"><span className="text-red-500 font-bold mt-0.5">✗</span><span className="text-gray-700 leading-relaxed"><strong>Confondre les types de questions.</strong> Les enfants qui s&apos;entraînent avec des épreuves mixtes avant de maîtriser les types individuels lisent souvent mal les questions — abordant une question de code comme s&apos;il s&apos;agissait d&apos;une analogie. Travaillez chaque type jusqu&apos;à la fluidité avant de les mélanger.</span></li>
+          <li className="flex gap-3 items-start"><span className="text-red-500 font-bold mt-0.5">✗</span><span className="text-gray-700 leading-relaxed"><strong>Se fier uniquement aux exercices.</strong> Les exercices améliorent la technique. Ils ne peuvent pas remplacer le vocabulaire. Les deux sont nécessaires. Les familles qui s&apos;entraînent constamment mais n&apos;encouragent pas la lecture atteignent un plafond dans l&apos;amélioration du raisonnement verbal de leur enfant.</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">À quoi s&apos;attendre le jour de l&apos;examen</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La plupart des épreuves de raisonnement verbal du 11+ sont présentées numériquement ou sur
+          papier dans un environnement de salle d&apos;examen. Les enfants reçoivent des instructions
+          spécifiques au départ — notamment si les devinettes sont pénalisées. GL Assessment ne pénalise
+          pas les devinettes : répondez à chaque question.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          La stratégie de chronométrage la plus efficace : parcourez l&apos;épreuve une fois de bout en bout
+          en répondant à tout ce que vous pouvez rapidement. Marquez toutes les questions difficiles.
+          Utilisez le temps restant pour revenir aux questions marquées. Ne passez jamais plus de
+          90 secondes sur une question sans la marquer et passer à la suite. Cette approche garantit
+          que des questions faciles situées vers la fin de l&apos;épreuve ne restent pas sans réponse
+          parce qu&apos;une question difficile au milieu a consommé trop de temps.
+        </p>
+      </section>
+    </>
+  ),
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

@@ -47,6 +47,93 @@ const WEBPAGE_SCHEMA = {
   inLanguage: 'en-GB',
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What does the Eduentry assessment report show?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The Eduentry assessment report shows your child\'s standardised score (mean 100, SD 15), percentile ranking against international peers, individual subject scores across English, Maths, Verbal Reasoning and Non-Verbal Reasoning, topic-level breakdowns, and personalised AI-generated recommendations for improvement.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is a standardised score?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A standardised score (SAS) adjusts raw marks to account for the difficulty of the questions a child received, allowing fair comparison across different sittings. Eduentry uses a scale with a mean of 100 and a standard deviation of 15, consistent with widely used assessments such as GL Assessment and CAT4. A score of 100 means the child performed exactly at the average for their age group.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What does the percentile ranking mean in the report?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The percentile ranking tells you what proportion of children the same age scored below your child. For example, a 68th percentile means your child scored higher than 68% of peers. Percentiles are derived from Eduentry\'s international norming data and give a clearer picture of relative performance than a raw percentage score alone.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I interpret my child\'s subject scores?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Each subject score sits in one of five bands: Needs Support (70–84), Below Average (85–94), Average (95–109), Above Average (110–119), and Exceptional (120–130). The report also shows topic-level breakdowns within each subject, so you can see exactly which areas are strong and which need targeted practice.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What age range is the assessment designed for?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Eduentry\'s assessment is designed for children aged 7 to 14, covering primary and early secondary school years. The questions, difficulty calibration, and norming data are all age-adjusted so the standardised score fairly reflects performance for your child\'s specific age in years and months.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I share the report with my child\'s teacher or school?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Once you have your child\'s report you can download it as a PDF or share a link with a teacher, tutor, or school admissions team. The report is designed to be readable by educators who are familiar with standardised assessments, as well as by parents who are not.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does the assessment take to complete?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The full assessment consists of 60 questions across four subjects and typically takes between 40 and 60 minutes. Children can pause and return to the assessment if needed. The report is generated automatically once all questions are submitted, and results are usually ready within 90 minutes.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is the assessment really free?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, the core assessment and full report are completely free. No credit card is required at sign-up. Eduentry offers the free report so parents can understand their child\'s academic profile before deciding whether to explore any optional coaching or practice resources.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What should I do after receiving the report?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Start by reading the personalised recommendations section, which prioritises the areas with the highest improvement potential based on your child\'s specific topic scores. Focus first on any subject in the Needs Support band before addressing Average or Above Average subjects. Share the report with your child\'s teacher or tutor so they can align classroom or tutoring activities with the identified gaps.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How accurate is this online assessment compared to a professional psychometric test?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Eduentry uses Item Response Theory (2-Parameter Logistic model with MAP estimation) — the same statistical framework used in professional adaptive assessments. It is well-suited for identifying relative strengths and weaknesses across subjects. However, it is an indicative screening tool, not a clinical or educational-psychologist-administered diagnostic. For decisions such as special educational needs support, a formal assessment by a qualified professional is recommended.',
+      },
+    },
+  ],
+}
+
 // ── Data ──────────────────────────────────────────────────────────────────────
 
 const CHILD_NAME = 'Alex'
@@ -222,6 +309,7 @@ export default function SampleReportPage() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <PublicNav />
 
       {/* Sample banner */}
@@ -486,6 +574,63 @@ export default function SampleReportPage() {
             ))}
           </div>
         </div>
+
+        {/* ── FAQ ── */}
+        <section className="max-w-3xl mx-auto px-6 py-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-3">
+            {[
+              {
+                q: 'What does the Eduentry assessment report show?',
+                a: "The Eduentry assessment report shows your child's standardised score (mean 100, SD 15), percentile ranking against international peers, individual subject scores across English, Maths, Verbal Reasoning and Non-Verbal Reasoning, topic-level breakdowns, and personalised AI-generated recommendations for improvement.",
+              },
+              {
+                q: 'What is a standardised score?',
+                a: 'A standardised score (SAS) adjusts raw marks to account for the difficulty of the questions a child received, allowing fair comparison across different sittings. Eduentry uses a scale with a mean of 100 and a standard deviation of 15, consistent with widely used assessments such as GL Assessment and CAT4. A score of 100 means the child performed exactly at the average for their age group.',
+              },
+              {
+                q: 'What does the percentile ranking mean in the report?',
+                a: "The percentile ranking tells you what proportion of children the same age scored below your child. For example, a 68th percentile means your child scored higher than 68% of peers. Percentiles are derived from Eduentry's international norming data and give a clearer picture of relative performance than a raw percentage score alone.",
+              },
+              {
+                q: "How do I interpret my child's subject scores?",
+                a: 'Each subject score sits in one of five bands: Needs Support (70–84), Below Average (85–94), Average (95–109), Above Average (110–119), and Exceptional (120–130). The report also shows topic-level breakdowns within each subject, so you can see exactly which areas are strong and which need targeted practice.',
+              },
+              {
+                q: 'What age range is the assessment designed for?',
+                a: "Eduentry's assessment is designed for children aged 7 to 14, covering primary and early secondary school years. The questions, difficulty calibration, and norming data are all age-adjusted so the standardised score fairly reflects performance for your child's specific age in years and months.",
+              },
+              {
+                q: "Can I share the report with my child's teacher or school?",
+                a: "Yes. Once you have your child's report you can download it as a PDF or share a link with a teacher, tutor, or school admissions team. The report is designed to be readable by educators who are familiar with standardised assessments, as well as by parents who are not.",
+              },
+              {
+                q: 'How long does the assessment take to complete?',
+                a: 'The full assessment consists of 60 questions across four subjects and typically takes between 40 and 60 minutes. Children can pause and return to the assessment if needed. The report is generated automatically once all questions are submitted, and results are usually ready within 90 minutes.',
+              },
+              {
+                q: 'Is the assessment really free?',
+                a: 'Yes, the core assessment and full report are completely free. No credit card is required at sign-up. Eduentry offers the free report so parents can understand their child\'s academic profile before deciding whether to explore any optional coaching or practice resources.',
+              },
+              {
+                q: 'What should I do after receiving the report?',
+                a: "Start by reading the personalised recommendations section, which prioritises the areas with the highest improvement potential based on your child's specific topic scores. Focus first on any subject in the Needs Support band before addressing Average or Above Average subjects. Share the report with your child's teacher or tutor so they can align classroom or tutoring activities with the identified gaps.",
+              },
+              {
+                q: 'How accurate is this online assessment compared to a professional psychometric test?',
+                a: 'Eduentry uses Item Response Theory (2-Parameter Logistic model with MAP estimation) — the same statistical framework used in professional adaptive assessments. It is well-suited for identifying relative strengths and weaknesses across subjects. However, it is an indicative screening tool, not a clinical or educational-psychologist-administered diagnostic. For decisions such as special educational needs support, a formal assessment by a qualified professional is recommended.',
+              },
+            ].map(({ q, a }) => (
+              <details key={q} className="border border-gray-200 rounded-xl overflow-hidden">
+                <summary className="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50 list-none flex items-center justify-between">
+                  {q}
+                  <span className="text-indigo-600 ml-3 text-lg leading-none select-none">+</span>
+                </summary>
+                <div className="px-5 pb-4 text-gray-600 text-sm leading-relaxed">{a}</div>
+              </details>
+            ))}
+          </div>
+        </section>
 
         {/* ── CTA ── */}
         <div className="bg-indigo-600 rounded-3xl p-10 sm:p-12 text-center text-white">

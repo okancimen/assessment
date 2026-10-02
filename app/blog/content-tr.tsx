@@ -5034,6 +5034,520 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'what-is-a-standardised-score': (
+    <>
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Standartlaştırılmış Puan Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Standartlaştırılmış puan, bir çocuğun performansını doğru cevap yüzdesi olarak değil, aynı yaştaki büyük bir referans grubuna göre gösteren bir sayıdır. 11+, CAT4, CogAT ve NWEA MAP dahil çoğu eğitimsel değerlendirme — sonuçları 100 ortalama ve 15 standart sapmalı bir ölçekte raporlar; böylece 115 puanı her zaman aynı anlama gelir, hangi test alınmış ya da ne kadar zor olmuş olursa olsun.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuz yakın zamanda bir eğitimsel değerlendirme aldıysa — bir 11+ denemesi, okulda CAT4 testi veya çevrimiçi tanısal değerlendirme — ham yüzdeyle birlikte büyük olasılıkla standartlaştırılmış bir puanla karşılaştınız. Çoğu ebeveyn standartlaştırılmış puanı görmezden gelir ve yüzdeye odaklanır. Bu yanlış bir içgüdüdür.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ham Puanların Sorunu</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ham bir puan — diyelim ki 60 üzerinden 43 — size bir şey söyler: çocuğunuz bu özel testte o gün soruların %72&apos;sini doğru yanıtladı. Testin kolay mı zor mu olduğunu söylemez. Aynı yaşta diğer çocukların nasıl performans gösterdiğini söylemez. %72&apos;nin o yaştaki bir çocuk için güçlü mü yoksa zayıf mı bir performans olduğunu söylemez.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Standartlaştırılmış puan, ham puanı yaşı, test güçlüğünü ve referans popülasyonunun performansını hesaba katan bir sayıya dönüştürür. Her ikisi de 60 sorudan 43&apos;ünü doğru yanıtlayan iki çocuk, biri diğerinden 18 ay büyükse ya da farklı güçlükte testler aldıysa çok farklı standartlaştırılmış puanlar alabilir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Standartlaştırılmış Ölçek</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Neredeyse tüm İngiltere standartlaştırılmış değerlendirmeleri — GL Assessment&apos;ın 11+&apos;ı, CAT4, NFER ve Eduentry dahil — aynı ölçeği kullanır: 100 ortalama ve 15 standart sapma. Bu ölçek Wechsler IQ testleri, Stanford-Binet ve çoğu profesyonel psikometrik değerlendirme tarafından da kullanılır.
+        </p>
+        <div className="grid sm:grid-cols-3 gap-4 mb-6">
+          <div className="bg-indigo-50 rounded-xl p-5 text-center">
+            <div className="text-3xl font-bold text-indigo-700 mb-1">100</div>
+            <div className="text-sm text-indigo-600 font-medium">Ortalama</div>
+            <div className="text-xs text-gray-500 mt-1">50. yüzdelik</div>
+          </div>
+          <div className="bg-indigo-50 rounded-xl p-5 text-center">
+            <div className="text-3xl font-bold text-indigo-700 mb-1">15</div>
+            <div className="text-sm text-indigo-600 font-medium">Standart sapma</div>
+            <div className="text-xs text-gray-500 mt-1">yayılma birimi</div>
+          </div>
+          <div className="bg-indigo-50 rounded-xl p-5 text-center">
+            <div className="text-3xl font-bold text-indigo-700 mb-1">%68</div>
+            <div className="text-sm text-indigo-600 font-medium">85–115 arası puan</div>
+            <div className="text-xs text-gray-500 mt-1">bir SD içinde</div>
+          </div>
+        </div>
+        <div className="rounded-xl border border-gray-100 overflow-hidden mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Puan aralığı</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Sınıflandırma</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Yaklaşık yüzdelik</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Nüfus %&apos;si</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['130+', 'Çok Üstün', 'İlk %2', '~%2'],
+                ['120–129', 'Üstün', '91–98. yüzdelik', '~%7'],
+                ['110–119', 'Ortalamanın Üstü', '75–91. yüzdelik', '~%16'],
+                ['95–109', 'Ortalama', '37–63. yüzdelik', '~%25'],
+                ['85–94', 'Ortalamanın Altı', '16–36. yüzdelik', '~%16'],
+                ['70–84', 'Düşük Ortalama / Destek Gerekiyor', '2–15. yüzdelik', '~%14'],
+              ].map(([range, label, pct, pop]) => (
+                <tr key={range} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono font-semibold text-gray-900">{range}</td>
+                  <td className="p-4 text-gray-700">{label}</td>
+                  <td className="p-4 text-gray-500">{pct}</td>
+                  <td className="p-4 text-gray-400">{pop}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yüzdelik Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yüzdelik, standartlaştırılmış puanı yorumlamanın en sezgisel yoludur. Çocuğunuzun yüzdeliği, aynı yaştaki çocukların kaç yüzdesinden daha iyi performans gösterdiğini söyler. <strong>84. yüzdelikte</strong> puan almak, çocuğunuzun yaşıt akranlarının %84&apos;ünden daha iyi performans gösterdiği ve %16 tarafından geçildiği anlamına gelir.
+        </p>
+        <ul className="mt-4 space-y-2 text-sm text-gray-700 mb-4">
+          {[
+            ['Standartlaştırılmış puan 130', '98. yüzdelik', 'Yaşıt çocukların ilk %2&apos;si'],
+            ['Standartlaştırılmış puan 120', '91. yüzdelik', 'İlk %9'],
+            ['Standartlaştırılmış puan 115', '84. yüzdelik', 'Rekabetçi gramer okulu aralığı'],
+            ['Standartlaştırılmış puan 110', '75. yüzdelik', 'Ortalamanın üstü'],
+            ['Standartlaştırılmış puan 100', '50. yüzdelik', 'Tam ortalama'],
+            ['Standartlaştırılmış puan 90', '25. yüzdelik', 'Ortalamanın altı'],
+          ].map(([score, pct, note]) => (
+            <li key={score} className="flex justify-between items-center border-b border-gray-50 pb-2">
+              <span className="font-medium">{score}</span>
+              <span className="text-indigo-600 font-medium">{pct}</span>
+              <span className="text-gray-400 text-xs">{note}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Standartlaştırılmış Yaş Puanı (SAS) Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          SAS, GL Assessment&apos;ın 11+ sınavında kullandığı özel standartlaştırılmış puan formatıdır. Test sırasında çocuğun aylık cinsinden tam yaşını dikkate alarak ek bir düzeltme yapar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu önemlidir çünkü 6. Yıl&apos;ın Eylül ayında 11+ sınavına giren çocuklar yaklaşık 10 yıl 2 ay ile 11 yıl 1 ay arasında değişen yaşlarda olup bu, bu yaşta önemli bir gelişimsel farktır. Araştırmalar tutarlı biçimde, yaş grubundaki en büyük çocukların en küçüklerden daha iyi performans gösterdiğini ortaya koymaktadır — daha yetenekli oldukları için değil, gelişimsel avantajları nedeniyle.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Yaz doğumlular için pratik çıkarım:</strong> Çocuğunuz yaz doğumluysa, Eylül doğumlu bir sınıf arkadaşının pratik testlerde daha iyi performans gösterdiğini görünce paniklemeyiniz. SAS bunu düzeltir. Önemli olan çocuğunuzun aynı ay aralığında doğan çocuklara göre performansıdır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Gramer Okulu İçin Hangi Puan Gerekir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gramer okulu kesim noktaları bölgeye, okula ve yıla göre değişir — ancak aşağıdaki aralıklar 2026 girişi için genel kıyaslamalar olarak geçerlidir:
+        </p>
+        <ul className="space-y-3 mb-5">
+          <Bullet><strong>SAS 111–114:</strong> Pek çok okulda sınırda. Seçici kayıt listesine alınabilir ama rekabetçi kesim noktasının altında. Okuldan uzaklık belirleyici faktör olur.</Bullet>
+          <Bullet><strong>SAS 115–120:</strong> Kent, Essex ve Hertfordshire&apos;daki çoğu gramer okulu için seçici aralıkta rahatça. Kapsama alanındaysa bu bölgelerdeki çoğu okulda yer almaya yetecek güçte.</Bullet>
+          <Bullet><strong>SAS 121–128:</strong> Sutton, Buckinghamshire ve Birmingham&apos;daki seçici okullar dahil en rekabetçi gramer okulları için gerekli.</Bullet>
+          <Bullet><strong>SAS 128+:</strong> En aşırı talep gören Londra okulları — Queen Elizabeth&apos;s Boys (Barnet) ve The Henrietta Barnett School — için gerekli; talep çok yüksek puanlarda bile arzı çok aşmaktadır.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzun Puanıyla Ne Yapmalısınız?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Standartlaştırılmış bir puan aldığınızda yapılacak en önemli şey, bunu çocuğunuzun sabit bir özelliği olarak yorumlamamaktır. Bugün 65. yüzdelikte puan alan bir çocuk, 12 ay sonra da 65. yüzdelikte kalmak zorunda değildir. Bu yaştaki standartlaştırılmış puanlar, özellikle sözel akıl yürütme ve matematikte hedefli hazırlığa gerçekten duyarlıdır.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Puanı tanısal olarak kullanın. Sözel akıl yürütmede 95&apos;in altında, matematikte 115&apos;in üzerinde puan alan bir çocuk, dört ders genelinde 108 alan bir çocuktan tamamen farklı bir hazırlık planına ihtiyaç duyar. Yüzdelik, çocuğunuzun nerede olduğunu söyler. Ders bazında dağılım ise ne üzerinde çalışacağınızı söyler.
+        </p>
+      </section>
+    </>
+  ),
+
+  'nwea-map-scores-explained': (
+    <>
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">NWEA MAP Growth Testi Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NWEA MAP (Measures of Academic Progress / Akademik İlerleme Ölçümleri) Growth, Northwest Evaluation Association tarafından geliştirilen bilgisayar uyarlamalı bir başarı testidir. ABD&apos;de K–12 sınıflarındaki 9 milyondan fazla öğrenci tarafından kullanılan bu test; Okuma, Matematik, Dil Kullanımı ve Fen bilimlerini ölçer. Sabit testlerden farklı olarak MAP gerçek zamanlı olarak adapte olur — her soru, önceki cevaba göre çocuğunuzun düzeyine göre ayarlanır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuzun okulu NWEA MAP Growth testleri kullanıyorsa muhtemelen &quot;RIT puanı&quot; ve bir yüzdelik gösteren bir rapor almışsınızdır. Bu rehber, RIT puanlarının nasıl yorumlanacağını, yolunda ya da ileri sayılanın ne olduğunu ve sonuçları çocuğunuzun öğrenimini desteklemek için nasıl kullanacağınızı açıklar.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">RIT Puanı Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Growth&apos;un ürettiği puana RIT puanı (Rasch Birimi&apos;nin kısaltması) denir. Bu bir yüzde değildir ve sınıf düzeyine eşdeğer değildir. Anaokulundan 12. sınıfa kadar tüm K–12 müfredatını kapsayan eşit aralıklı bir ölçekteki konumdur.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tipik bir anaokulu öğrencisi yıla Matematik RIT puanı yaklaşık 140–150 ile başlar. 5. sınıfın sonunda ortalama öğrenci yaklaşık 210–215 civarındadır. 10. sınıfın sonunda ortalama yaklaşık 220–225&apos;tir. Ölçek sürekli ve tutarlıdır: Matematikte 210 RIT puanı, ister 4. sınıf öğrencisine ister 2. sınıf öğrencisine ait olsun, her zaman aynı matematik bilgisi düzeyini ifade eder.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">RIT puanlarındaki temel içgörü:</strong> Ölçek tüm sınıflarda tutarlı olduğundan, bir çocuğun RIT puanını sınıf düzeyi normlarıyla doğrudan karşılaştırabilirsiniz — yalnızca sınıf düzeyinde olup olmadığını değil, ne kadar ileri ya da geride olduklarını da görebilirsiniz.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sınıfa Göre RIT Puan Kıyaslamaları</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Aşağıdaki tablo, her sınıf yılının başındaki ABD öğrencileri için NWEA&apos;nın 2020 ulusal normlarını göstermektedir — ortalama RIT puanları ve güçlü performansın (yaklaşık 75. yüzdelik) ne olduğunu içerir.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Sınıf</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Matematik (ort.)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Matematik (75. %lik)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Okuma (ort.)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Okuma (75. %lik)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Anasınıfı (sonbahar)', '144', '154', '139', '150'],
+                ['1. Sınıf (sonbahar)', '163', '173', '158', '170'],
+                ['2. Sınıf (sonbahar)', '178', '188', '169', '181'],
+                ['3. Sınıf (sonbahar)', '188', '199', '177', '191'],
+                ['4. Sınıf (sonbahar)', '197', '208', '185', '199'],
+                ['5. Sınıf (sonbahar)', '205', '216', '191', '206'],
+                ['6. Sınıf (sonbahar)', '211', '222', '197', '212'],
+                ['7. Sınıf (sonbahar)', '215', '226', '201', '217'],
+                ['8. Sınıf (sonbahar)', '218', '229', '204', '220'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  {row.slice(1).map((cell, i) => (
+                    <td key={i} className="p-4 text-gray-600">{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-400">Kaynak: NWEA 2020 MAP Growth Öğrenci ve Okul Başarı Durumu ve Büyümesi için Normlar.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yüzdelik ile RIT: Fark Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuzun MAP raporu hem RIT puanını hem de yüzdeliği gösterir. İkisi birbirine bağlı ama farklı şeyleri ölçer.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>RIT puanı</strong> mutlak bir ölçüdür — çocuğunuzun sınıftan bağımsız olarak K–12 bilgi sürekliliğinde nerede olduğunu söyler. Matematikte 215 RIT her zaman aynı matematiksel anlayış düzeyini ifade eder.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Yüzdelik</strong> göreli bir ölçüdür — çocuğunuzun RIT puanını okulun aynı döneminde aynı sınıftaki öğrenciler için ulusal norm grubuyla karşılaştırır.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          İkisi de farklı sorular için kullanışlıdır. Çocuğunuzun hazır olduğu içerik düzeyini (sırada ne öğrenmeli?) anlamak için RIT&apos;i kullanın. Çocuğunuzun akranlarıyla nasıl karşılaştırıldığını anlamak için yüzdeliği kullanın. Üstün yetenekli tanımlama için yüzdelik daha yaygın kullanılan ölçüttür.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Büyümeyi Anlamak</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP&apos;ın en değerli özelliklerinden biri büyüme takibidir. NWEA yalnızca durum için değil, büyüme için de normlar yayımlar. Matematikte sonbahara karşı ilkbaharda tipik RIT büyümesi:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>Anasınıfı–2. Sınıf:</strong> yılda yaklaşık 10–12 RIT puan (erken okuma yazma ve sayı bilgisinde hızlı büyüme)</Bullet>
+          <Bullet><strong>3–5. Sınıf:</strong> yılda yaklaşık 6–8 RIT puan (içerik daha karmaşık hale geldikçe büyüme yavaşlar)</Bullet>
+          <Bullet><strong>6–8. Sınıf:</strong> yılda yaklaşık 3–5 RIT puan (ortaokul yıllarında büyüme önemli ölçüde yavaşlar)</Bullet>
+          <Bullet><strong>9–12. Sınıf:</strong> yılda yaklaşık 1–3 RIT puan (ileri öğrenciler için ölçeğin tavanına yakın)</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Bu tipik normlardan daha fazla büyüyen bir çocuk — ortalama 7 iken Matematikte 12 RIT puan kazanan — hızlandırılmış büyüme göstermektedir. Normal 7 iken yılda yalnızca 2 RIT puan kazanan bir çocuk, mutlak puanı sınıf düzeyi ortalamasının üzerinde olsa bile o deste ek destek ihtiyacı içinde olabilir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yüksek MAP Puanları ve Üstün Yetenekli Tanımlama</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pek çok bölgede yüksek MAP Growth puanı, üstün yetenekli yönlendirmeyi tetikleyen temel göstergelerden biridir. Yaygın eşikler bir veya daha fazla alanda 90 veya 95. yüzdeliktir. Çocuğunuzun MAP puanı bu eşiklerde veya üzerindeyse okuldan açıkça üstün yetenekli değerlendirme yönlendirmesi istemek yerinde olur. Bazı bölgeler bu süreci otomatik olarak başlatır; bazıları ebeveyn veya öğretmenin başlatmasını gerektirir.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Çocuğunuz MAP&apos;ta 95. yüzdelik veya üzerinde puan alıyorsa, sınıf düzeyi akranlarının önemli ölçüde üzerinde bir performans sergilemektedir. Bu, üstün yetenekli hizmetler için güçlü bir kanıttır — bölgeniz buna otomatik olarak hareket etmiyorsa değerlendirme için proaktif biçimde savunuculuk yapmak tamamen makuldür.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Düşük MAP Puanları: Ne Yapmalı?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          25. yüzdeliğin altında MAP puanı veya normun önemli ölçüde altında büyüme eğrisi, çocuğunuzun ek akademik destek ihtiyacı olabileceğini gösterir. İlk adım, MAP sonucunun sınıf performansıyla tutarlı olup olmadığını anlamak için öğretmenle görüşmektir. MAP tek bir veri noktasıdır.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Okumada düşük MAP puanları çoğunlukla ses bilgisi, akıcılık veya kelime bilgisi eksiklikleriyle ilişkilidir. Matematikte düşük MAP puanları genellikle geniş matematiksel zayıflıktan çok belirli konu boşluklarıyla (kesirler, basamak değeri, işlemler) ilişkilidir. NWEA&apos;nın web sitesi üzerinden ebeveynlerin erişebildiği MAP Learning Continuum, her RIT puan aralığını spesifik becerilere eşler ve tam olarak ne üzerinde çalışılacağını belirlemeyi mümkün kılar.
+        </p>
+      </section>
+    </>
+  ),
+
+  'grammar-school-entry-requirements-2026': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        &ldquo;Çocuğumun ihtiyacı olan puan nedir?&rdquo; — 11+&apos;a hazırlanan her ailenin yanıtını aradığı ilk sorudur. Dürüst yanıt şudur: bölgeye, spesifik okula ve o yılın kohortunun rekabetçiliğine bağlıdır. Ama açık kıyaslamalar var — ve bu rehber hepsini kapsar. Her bölgenin kullandığı sınav kurulundan en seçici okullar için gereken spesifik SAS aralıklarına kadar, bir ailenin 2026&apos;da gramer okulu giriş şartları hakkında bilmesi gereken her şey burada.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Gramer Okulu Seçimi Nasıl Çalışır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İngiltere&apos;deki gramer okulları, 1998 Okul Standartları ve Çerçeve Kanunu kapsamında tüm öğrencilerini akademik yeteneğe göre yasal olarak seçme iznine sahiptir. Bu, onları yeteneğe göre seçim yapmadan kabul etmesi gereken diğer tüm devlet okullarından ayırır. Çoğu gramer okulu, 11+ sınavını (6. Yıl&apos;ın Eylül veya Ekim ayında yapılan) birincil seçim aracı olarak kullanır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Seçici kayıt listesine alınmak gerekli ama yeterli değildir. Aşırı talep gören okullar — ki bu, rekabetçi bölgelerdeki çoğu gramer okuludur — seçici başvuranları ikincil kriterlere göre sıralar. Bunlar tipik olarak şu sırayla öncelik verir: bakım altındaki çocuklar; okulda zaten kardeşleri bulunanlar; okula yakınlık (evden okula düz çizgi mesafesi olarak ölçülür).
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Bu yüzden rekabetçi bölgelerdeki aileler — özellikle Londra&apos;dakilerin — geçiş puanı ile rekabetçi puanın iki farklı sayı olduğunu anlaması gerekir. Geçiş puanı taban sınırdır. Rekabetçi puan ise belirli bir aşırı talep gören okulda gerçekten yer almanızı sağlayan puandır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Hangi Sınav Kurulları Kullanılır?</h2>
+        <div className="grid sm:grid-cols-2 gap-4 mb-4">
+          {[
+            { board: 'GL Assessment', areas: 'Kent, Essex, Hertfordshire, çoğu bireysel okul', notes: 'Aylık yaşa göre ayarlanmış Standartlaştırılmış Yaş Puanı (SAS) üretir. Sözel Akıl Yürütme, Sözel Olmayan Akıl Yürütme, İngilizce ve Matematik ayrı kağıtlarda sınanır. İngiltere&apos;de en yaygın kullanılan 11+ formatıdır.' },
+            { board: 'CEM (Durham Üniversitesi)', areas: 'Buckinghamshire, bazı Birmingham okulları ve diğerleri', notes: 'Yaşa standardize edilmiş puan üretir. Sorular konuya göre etiketlenmeden sözel yeteneği, sayısal akıl yürütmeyi ve uzamsal akıl yürütmeyi harmanlar. Standart sözel akıl yürütme pratik kağıtlarıyla hazırlanmak kasıtlı olarak daha zordur.' },
+            { board: 'ISEB Common Pre-Test', areas: 'Bağımsız okullar ve bazı seçici akademiler', notes: 'İngilizce, Matematik, Sözel Akıl Yürütme ve Sözel Olmayan Akıl Yürütmeyi ayrı ayrı sınar. Hem 11+ hem de 13+ girişi için kullanılır. Bilgisayar uyarlamalı format.' },
+            { board: 'Okul tarafından hazırlanan kağıtlar', areas: 'King Edward\'s Foundation (Birmingham), bazı Londra okulları', notes: 'Okul tarafından yazılmıştır. Tipik olarak Ulusal Müfredat&apos;ın çok üzerinde İngilizce ve Matematik sınar. Resmi pratik materyali olmadığından hazırlanması daha zordur.' },
+          ].map(({ board, areas, notes }) => (
+            <div key={board} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-1">{board}</div>
+              <div className="text-xs font-medium text-indigo-600 mb-2">{areas}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{notes}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">2026 Bölgeye Göre Puan Kıyaslamaları</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Aşağıdaki aralıklar, tipik geçiş puanlarına ve tarihsel rekabet düzeylerine dayanarak gösterge niteliğindedir. Bireysel okul kesim noktaları kohorta göre yıldan yıla değişir. Her zaman hedef okulunuzun yayımlanan kabul politikasını doğrudan kontrol edin.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Bölge</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Sınav Kurulu</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Hedef SAS</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Notlar</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Kent', 'GL Assessment', '115–121', '32 gramer okulu. Kesim noktaları okula ve ilçeye göre değişir. Judd ve Tonbridge Grammar en rekabetçiler arasındadır.'],
+                ['Buckinghamshire', 'CEM', '118+', '13 okul. Tamamen seçici ilçe. Test GL Assessment kağıtlarına kıyasla hazırlanması daha zordur.'],
+                ['Londra (Barnet)', 'GL Assessment', '121–132', 'QE Boys ve Henrietta Barnett, İngiltere\'nin en seçici devlet okulları arasındadır.'],
+                ['Londra (Sutton)', 'GL Assessment', '118–125', 'Nonsuch, Wallington, Wilson\'s, Sutton Grammar. Sutton Konsorsiyumu tek bir test paylaşır.'],
+                ['Birmingham (KE Foundation)', 'Kendi kağıtları', '119+', 'King Edward\'s Foundation okulları, okul tarafından hazırlanmış İngilizce ve Matematik kağıtlarıyla son derece seçicidir.'],
+                ['Essex', 'GL Assessment', '112–118', 'Colchester Royal Grammar, Westcliff High. Londra veya Kent\'ten daha az rekabet.'],
+                ['Hertfordshire', 'GL Assessment', '111–115', 'Dame Alice Owen\'s, Watford Grammar (Erkek/Kız). Mesafe önemli bir bağ kırıcıdır.'],
+                ['Gloucestershire', 'GL Assessment', '113–118', 'Pate\'s Grammar en seçicidir. Dört okulun tamamı GL Assessment kullanır.'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 font-mono font-semibold text-indigo-700">{row[2]}</td>
+                  <td className="p-4 text-gray-500 text-xs leading-relaxed">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Rekabetçi Puan Ne Sayılır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          11+&apos;ı geçmek ile yer için rekabetçi olmak arasında önemli bir ayrım vardır. Geçmek — resmi geçiş puanının üzerinde puan almak — bir çocuğun gramer okulu eğitimine akademik olarak uygun olduğunu gösterir. Rekabetçi olmak ise ikincil kriterleri göz önüne aldığında belirli bir aşırı talep gören okulda gerçekten yer alabilecek kadar yüksek puan almak anlamına gelir.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Daha az rekabetçi bölgelerde geçmek ve rekabetçi olmak kabaca aynıdır. Yüksek rekabetçi bölgelerde (Londra, üst Kent okulları, Buckinghamshire) rekabetçi puan yayımlanan geçiş puanının önemli ölçüde üzerindedir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İtiraz Süreci</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuz bir gramer okulunda yer alamazsa bağımsız bir panele itiraz hakkınız vardır. İtirazlar iki gerekçeyle başarılı olabilir: kabul makamının yayımlanan kriterlerin uygulanmasında hata yapması veya çocuğun okuldaki menfaatinin okulun sınıf büyüklüğü sınırlama çıkarlarından daha ağır basması.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Pratikte gramer okulu itirazları kazanması daha zordur. Ancak, çocuğun sınav günü hasta olduğuna dair tıbbi kanıt gibi sonucun gerçek yeteneği yansıtmadığını gösteren zorlayıcı kanıtlar varsa başarılı olabilir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuz Geçemezse Ne Olur?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          11+&apos;ı geçememek, çocuğunuzun mükemmel bir ortaöğretime erişemeyeceği anlamına gelmez. Çoğu bölgede çocukların büyük çoğunluğu güçlü akademik sonuçlar üreten iyi ya da üstün kapsamlı okullara gider. 11+&apos;ı geçemeyen pek çok çocuk, seçimin genellikle giriş sınavı yerine GCSE notuna göre yapıldığı 16 yaşında gramer okullarının 6. formuna kabul edilir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Eduentry Puanları 11+ ile Nasıl İlişkilidir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry, GL Assessment ile aynı standartlaştırılmış ölçeği (ortalama 100, standart sapma 15) kullanır. 115 Eduentry puanı, çocuğu 84. yüzdeliğe yerleştirir — bu, Londra dışındaki çoğu gramer okulu için rekabetçi giriş aralığına karşılık gelir. 121 Eduentry puanı yaklaşık 92. yüzdeliğe karşılık gelir.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Temel uyarı: Eduentry&apos;nin soruları yapay zeka tarafından üretilmiştir ve büyük popülasyonlar üzerinde ampirik olarak normlara sokulmuş değildir. Puan standartlaştırılmış ölçeği yansıtır, kesin bir GL Assessment SAS eşdeğeri değildir. Eduentry puanlarını yönlendirici bir kıyaslama ve ilerleme takip aracı olarak kullanın; 11+ performansının kesin tahmini olarak değil.
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-to-prepare-for-11-plus': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        11+, ilköğretimdeki en yanlış anlaşılan sınavlardan biridir. Pek çok aile çok geç başlar, yanlış derslere odaklanır ya da sınav gelmeden çok önce çocuğunu durmaksızın alıştırmalarla tüketir. Bu rehber, evde 11+ hazırlığı için araştırmaya dayalı, pratik bir çerçeve sunar — doğru zaman çizelgesini, ders ders yaklaşımı, deneme testlerini etkili kullanmayı ve tüm süreci çocuğunuz için yönetilebilir kılmayı kapsar.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">11+ Gerçekte Neyi Sınar?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          11+ tek bir sınav değildir — hedef okulunuzun hangi sınav kurulunu kullandığına göre önemli ölçüde farklılık gösterir. Tek bir pratik kitap almadan önce okulunuzun hangi kurulla çalıştığını kontrol edin; çünkü bu, hangi derslerin en önemli olduğunu ve nasıl sınandığını belirler.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          {[
+            { subject: 'Sözel Akıl Yürütme', detail: 'Kelimeler kullanılarak problem çözme — analogiler, kelime kodları, sınıflandırmalar, diziler. Okulda neredeyse hiç öğretilmediğinden çocukların en az aşina olduğu derstir. Spesifik, hedefli hazırlık gerektirir.' },
+            { subject: 'Sözel Olmayan Akıl Yürütme', detail: 'Şekiller ve semboller kullanılarak örüntü tanıma ve soyut düşünme. Müfredat bilgisinden çok uzamsal ve mantıksal zekayı sınar. Sözel akıl yürütmeden pratikle geliştirmesi daha zordur; ancak soru türlerine aşinalık hataları anlamlı ölçüde azaltır.' },
+            { subject: 'İngilizce', detail: 'Okuma anlama, dilbilgisi, kelime bilgisi ve bazen yaratıcı yazma. Okul müfredatıyla yakından bağlantılı, ancak sınav tekniği — tam cümleyle yanıt verme, metinden alıntı yapma — açıkça pratik edilmelidir.' },
+            { subject: 'Matematik', detail: 'Sayılar, kesirler, cebir, geometri ve problem çözme. 11+ matematiği tipik olarak 5/6. Yıl okul müfredatının 12–18 ay ilerisindedir. Hesap makinesi olmadan hız şarttır.' },
+          ].map(({ subject, detail }) => (
+            <div key={subject} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{subject}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">GL Assessment</strong> (Kent, Essex, Hertfordshire ve pek çok bireysel okulda kullanılır) dört dersi ayrı ayrı sınar. <strong>CEM</strong> (Buckinghamshire, Birmingham ve bazı diğerlerinde kullanılır) sözel yeteneği, sayısal akıl yürütmeyi ve uzamsal becerileri konu bazında etiketlemeden harmanlar. <strong>ISEB</strong> yalnızca İngilizce ve Matematik sınar. Hazırlık materyali almadan önce her zaman hedef okulunuzu doğrudan kontrol edin.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ne Zaman Başlamalı — Ne Zaman Başlamamalı?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çoğu eğitim uzmanı, sınavdan 12–18 ay önce yapılandırılmış hazırlığa başlamayı önerir. Çoğu gramer okulu için 11+, 6. Yıl&apos;ın Eylül veya Ekim ayında yapılır; bu nedenle ciddi hazırlık 4. Yıl&apos;da veya 5. Yıl&apos;ın başında başlamalıdır. 18 aydan önce başlamak genellikle verimsizdir: çocuklar sınavdan çok önce tükeniyor ve erken hazırlık düzenli sürdürülmezse unutuluyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Ailelerin yaptığı en yaygın hata, çocuğunun mevcut durumunu saptamadan önce hemen pratik kağıtlarla başlamaktır. Önce tanısal bir değerlendirme — dört dersin tümünü kapsayan ve standartlaştırılmış puan üreten — gerçek boşlukların nerede olduğunu söyler. Bu, çocuğun zaten hakim olduğu bir derste aylarca alıştırma yapılmasının önüne geçer.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Zaman Dilimi</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Odak</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['18+ ay öncesi', 'Temel tanısal değerlendirme yapın. Çocuğunuzun standart puanını ve yüzdeliğini belirleyin. Henüz pratik kitap almayın. Her gün geniş okuma yapın.'],
+                ['12–18 ay öncesi', 'Hafif aşinalık — bir seferde bir ders. Konsepti anlamaya odaklanın, alıştırmaya değil. Haftada üç kez 20–30 dakika.'],
+                ['6–12 ay öncesi', 'Dört dersin tamamında yapılandırılmış haftalık pratik. İlk zamanlı kağıtlar. Her hatayı birlikte gözden geçirin — "neden" anlamak nottan daha önemlidir.'],
+                ['3–6 ay öncesi', 'Gerçek sınav koşullarında tam deneme kağıtları. Kalan zayıf soru türlerini belirleyin. Spesifik alanlara odaklı tekrar.'],
+                ['6–8 hafta öncesi', 'Yalnızca zayıf alanlarda son hamle. Taze bir tanısal testle ilerlemeyi ölçün. Hacmi azaltın, keskinliği koruyun.'],
+                ['Sınav haftası', 'Yeni materyal yok. Hafif tekrar, bol uyku, güven inşası. Çocuğunuzu endişelendiren konular değil, iyi olduğu konuları gözden geçirin.'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700 whitespace-nowrap">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-sm leading-relaxed">{row[1]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-5">Ders Ders Hazırlık</h2>
+        <div className="space-y-7">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Sözel Akıl Yürütme</h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Sözel akıl yürütme 11+&apos;ın en öğretilebilir dersidir. GL Assessment kağıtlarında yaklaşık 21 farklı soru türü vardır — analogiler, kodlar, gizli kelimeler, yabancı kelimeler, sayı dizileri ve daha fazlası. Her tür sonlu ve örüntü tabanlıdır. Zamanlı kağıtlarda karıştırmadan önce her türü ayrı ayrı çalışın.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Kelime bilgisi gizli temeldir. &quot;Mütevazı&quot; kelimesiyle hiç karşılaşmamış bir çocuk, ne kadar sözel akıl yürütme tekniği çalışmış olursa olsun onunla ilgili bir eş anlamlı sorusunu yanıtlayamaz. Geniş okuma — kurgu, kurgu dışı, gazeteler, dergiler — en etkili kelime bilgisi geliştirme stratejisidir.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Sözel Olmayan Akıl Yürütme</h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              SOR pratikle dramatik biçimde geliştirmesi en zor derstir; çünkü öğrenilmiş bilgiden çok uzamsal ve akışkan zekayı sınar. Ancak soru formatlarına — matrisler, diziler, yansımalar, dönmeler, şekil türleri — aşinalık, neyin sorulduğuna ilişkin kafa karışıklığından kaynaklanan hataları anlamlı ölçüde azaltır.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Zamanlama SOR&apos;da kritiktir: GL Assessment tipik olarak soru başına yaklaşık 50 saniye tahsis eder. Zor bir matris üzerinde &quot;takılıp kalan&quot; ve üç dakika harcayan çocuklar, yanlış tek cevaptan daha fazla puanı yanıtsız sorulardan kaybeder.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">İngilizce</h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Geniş okuma, 11+ İngilizcesi için tek başına en etkili hazırlık olmaya devam eder — pratik kağıtlardan bile daha etkilidir. Kurgu, kurgu dışı ve gazetecilik dahil çok çeşitli türlerde geniş okuma yapan çocuklar, sınav tekniğinin tamamen yerine koyamadığı kelime bilgisi, anlama dayanıklılığı ve örtük dilbilgisi içgüdüsü geliştirir.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Anlama tekniği için çocuğunuza üç ilke öğretin: soruyu içeren tam cümlelerle yanıt verin; her zaman metinden alıntıyla destekleyin; pasajı okumadan önce tüm soruları okuyun ki nelere dikkat edeceğinizi bilin.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Matematik</h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              11+ matematiği tipik olarak standart 5/6. Yıl okul müfredatının 12–18 ay ilerisindeki içeriği kapsar. Öncelik verilecek temel konular şunlardır: kesirler (işlemler, denklik, karışık sayılar), yüzdeler (miktarların yüzdesi, yüzde değişimi), oran ve orantı, temel cebir (x için çözme, yerine koyma), alan ve çevre (bileşik şekiller dahil) ve veri işleme.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Hesap makinesi olmadan hız şarttır. Her gün zihinsel aritmetik pratik yapın — resmi bir egzersiz olarak değil, günlük aktiviteler aracılığıyla: para üstü hesaplama, fiyatları ikiye katlama ve yarıya bölme, hızlı yüzde tahmini. Temel aritmetikte yavaş olan çocuklar, yöntemi bildiklerinde bile matematik kağıtlarında zamana yenik düşer.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Deneme Testlerini Etkili Kullanmak</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Deneme sınavları yalnızca gerçek sınavla tamamen aynı şekilde değerlendirildiğinde kullanışlıdır. Bu şu anlama gelir: sessiz bir oda, uygun bir masa, durdurma olmadan katı zamanlama ve test sırasında yardım yok. Sınırsız süreyle veya yanında oturan bir ebeveynle pratik yapan çocuklar genellikle gerçek sınav ortamının psikolojik baskısına hazırlıksız yakalanır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sınavdan 6 ay önce zamanlı deneme kağıtları sunmaya başlayın. Son 3 ayda iki haftada bir tam deneme hedefleyin. Her denemelerin ardından her hatayı birlikte gözden geçirin — ancak doğru yöntemi anlamaya odaklanın, nota değil.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Yüzdelik kullanın, yüzde değil.</strong> %72 doğru puan yalnızca çocuğunuzun soruların ne kadarını yanıtladığını söyler. Bu performansın diğer çocuklara göre iyi mi kötü mü olduğunu hiç söylemez. Her zaman standartlaştırılmış yüzdelik verileriyle karşılaştırın — %72 testin güçlüğüne bağlı olarak çocuğunuzu 80. yüzdeliğe ya da 40. yüzdeliğe yerleştirebilir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sınav Baskısını Yönetmek</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Kaygı, 11+&apos;a giren çocuklardaki en büyük performans engellerinden biridir. İyi hazırlanmış ama yüksek kaygılı bir çocuk, sınav koşullarında biraz daha az hazırlanmış ama rahat ve kendinden emin bir çocuğun sürekli olarak altında performans gösterir. 11+ hazırlığının duygusal boyutunu yönetmek, akademik hazırlıktan ayrı değildir — onun bir parçasıdır.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Sınavdan önceki gün: yeni materyal yok, pratik kağıt yok. Hafif aktivite, normal bir akşam rutini, erken uyku. Çocuğunuza elinden gelenin yeterli olduğunu hatırlatın. Gramer okulu bir yol, tek yol değil. 11+&apos;a tüm geleceğinin buna bağlı olduğuna inanan çocuklar düşük performans gösterir. Rahat ve meraklı bir şekilde giren çocuklar pratik düzeylerinde veya üzerinde performans gösterir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İlk Adım: Temel Bir Puan Alın</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Herhangi bir pratik kitap almadan veya özel ders tutmadan önce ücretsiz bir tanısal değerlendirme yapın. Bu, çocuğunuzun şu anda tam olarak nerede durduğunu söyler — hangi dersler güçlü, hangilerinde boşluklar var ve mevcut standartlaştırılmış yüzdelik konumları nedir.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Eduentry, dört 11+ dersinin tamamını (İngilizce, Matematik, Sözel Akıl Yürütme, Sözel Olmayan Akıl Yürütme) kapsar ve GL Assessment tarafından kullanılan ölçeğin (ortalama 100, SD 15) aynısında standartlaştırılmış bir puan üretir. Her 3–4 ayda bir yeniden test, zaman içindeki gerçek ilerlemeyi takip eder.
+        </p>
+      </section>
+    </>
+  ),
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
