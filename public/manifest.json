@@ -1,0 +1,13 @@
+{
+  "name": "Eduentry — Academic Assessment Platform",
+  "short_name": "Eduentry",
+  "description": "Free adaptive assessments for students ages 6–17 — academic benchmarking and internship readiness.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4F46E5",
+  "icons": [
+    { "src": "/icon.png", "sizes": "any", "type": "image/png" },
+    { "src": "/apple-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

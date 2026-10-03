@@ -8,8 +8,8 @@ import "./globals.css";
 const geist = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-  display: "optional",
-  preload: false,
+  display: "swap",
+  preload: true,
 });
 
 const BASE_URL = "https://eduentry.com";
@@ -79,6 +79,7 @@ export default async function RootLayout({
     <html lang={lang} className={`${geist.variable} h-full antialiased`}>
       <head>
         <meta name="theme-color" content="#1d1d1f" />
+        <link rel="manifest" href="/manifest.json" />
         <meta name="yandex-verification" content="f8b17ecde6325153" />
         <link type="text/plain" rel="describedby" href="/llms.txt" />
         <link type="text/plain" rel="describedby" href="/llms-full.txt" />
