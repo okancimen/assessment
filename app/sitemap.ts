@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { BLOG_POSTS } from './blog/posts'
+import { TAG_SLUGS } from './blog/tag-utils'
 import { BLOG_POSTS_ES } from './blog/posts-es'
 import { BLOG_POSTS_TR } from './blog/posts-tr'
 import { BLOG_POSTS_FR } from './blog/posts-fr'
@@ -486,5 +487,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   ]
 
-  return [...staticPages, ...subjectPages, ...grammarPages, ...blogPages, ...esPages, ...trPages, ...frPages, ...arPages, ...ruPages, ...zhPages]
+  const tagPages: MetadataRoute.Sitemap = TAG_SLUGS.map(([slug]) => ({
+    url: `${BASE}/blog/tag/${slug}`,
+    lastModified: latestEN,
+    changeFrequency: 'weekly' as const,
+    priority: 0.6,
+  }))
+
+  return [...staticPages, ...subjectPages, ...grammarPages, ...blogPages, ...tagPages, ...esPages, ...trPages, ...frPages, ...arPages, ...ruPages, ...zhPages]
 }

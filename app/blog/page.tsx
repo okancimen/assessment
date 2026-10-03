@@ -3,6 +3,7 @@ import Link from 'next/link'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import { BLOG_POSTS } from './posts'
+import { tagToSlug } from './tag-utils'
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -22,14 +23,14 @@ export const metadata: Metadata = {
   alternates: { canonical: `${BASE_URL}/blog`, languages: { 'en-GB': `${BASE_URL}/blog`, es: `${BASE_URL}/es/blog`, tr: `${BASE_URL}/tr/blog`, fr: `${BASE_URL}/fr/blog`, ar: `${BASE_URL}/ar/blog`, ru: `${BASE_URL}/ru/blog`, zh: `${BASE_URL}/zh/blog`, 'x-default': `${BASE_URL}/blog` } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
-    title: 'Eduentry Blog — Academic Benchmarks & Assessment Insights',
-    description: 'Research and analysis on international academic benchmarks and adaptive assessment trends.',
+    title: '11+ Preparation, Grammar Schools & Gifted Testing Guides | Eduentry Blog',
+    description: 'Practical guides for UK parents and students on 11+ exam preparation, grammar school admissions, GCSE revision, gifted child testing, and work experience for secondary school students.',
     url: `${BASE_URL}/blog`,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Eduentry Blog — Academic Benchmarks & Assessment Insights',
-    description: 'Research and analysis on international academic benchmarks and adaptive assessment trends.',
+    title: '11+ Preparation, Grammar Schools & Gifted Testing Guides | Eduentry Blog',
+    description: 'Practical guides for UK parents and students on 11+ exam preparation, grammar school admissions, GCSE revision, gifted child testing, and work experience for secondary school students.',
     images: [`${BASE_URL}/blog/opengraph-image`],
   },
 }
@@ -44,13 +45,15 @@ export default function BlogIndexPage() {
     ],
   }
 
+  const sortedPosts = [...BLOG_POSTS].sort((a, b) => b.date.localeCompare(a.date))
+
   const itemList = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'Eduentry Blog — Academic Assessment Guides',
     url: `${BASE_URL}/blog`,
-    numberOfItems: BLOG_POSTS.length,
-    itemListElement: BLOG_POSTS.map((p, i) => ({
+    numberOfItems: sortedPosts.length,
+    itemListElement: sortedPosts.map((p, i) => ({
       '@type': 'ListItem',
       position: i + 1,
       url: `${BASE_URL}/blog/${p.slug}`,
@@ -82,10 +85,52 @@ export default function BlogIndexPage() {
           <p className="text-base text-gray-400 leading-relaxed max-w-2xl">
             Also covering gifted and selective programmes in the US, Canada, Australia, Netherlands and UAE — benchmarked with standardised scores and international percentile data.
           </p>
+          <div className="flex flex-wrap gap-3 mt-6">
+            <Link href="/11-plus" className="inline-flex items-center gap-1.5 text-sm font-medium text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-full px-4 py-2 transition-colors">
+              Free 11+ practice test →
+            </Link>
+            <Link href="/grammar-schools" className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-600 bg-gray-50 hover:bg-gray-100 rounded-full px-4 py-2 transition-colors">
+              Grammar school guides →
+            </Link>
+            <Link href="/sample-report" className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-600 bg-gray-50 hover:bg-gray-100 rounded-full px-4 py-2 transition-colors">
+              Sample assessment report →
+            </Link>
+          </div>
         </div>
 
+        {/* Featured posts */}
+        <div className="mb-10">
+          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Featured guides</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              'how-to-prepare-for-11-plus',
+              'grammar-school-entry-requirements-2026',
+              'how-to-prepare-for-gcse',
+              'gifted-program-testing-guide',
+              'high-school-internship-benefits-university',
+            ].map((slug) => {
+              const post = BLOG_POSTS.find((p) => p.slug === slug)
+              if (!post) return null
+              return (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="block border border-gray-100 rounded-2xl p-5 hover:border-indigo-200 hover:shadow-sm transition-all"
+                >
+                  <div className="text-xs font-semibold text-indigo-600 mb-2">Featured</div>
+                  <h2 className="font-bold text-gray-900 text-sm leading-snug mb-2">{post.shortTitle}</h2>
+                  <p className="text-xs text-gray-400">{post.readTime}</p>
+                </Link>
+              )
+            })}
+          </div>
+        </div>
+
+        <div className="border-t border-gray-100 mb-10" />
+
+        {/* All posts */}
         <div className="space-y-6">
-          {[...BLOG_POSTS].sort((a, b) => b.date.localeCompare(a.date)).map((post) => (
+          {sortedPosts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
@@ -101,11 +146,23 @@ export default function BlogIndexPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-3 leading-snug">{post.title}</h2>
               <p className="text-gray-500 leading-relaxed mb-4">{post.description}</p>
               <div className="flex flex-wrap gap-2">
-                {post.tags.map((tag) => (
-                  <span key={tag} className="text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full px-3 py-1">
-                    {tag}
-                  </span>
-                ))}
+                {post.tags.map((tag) => {
+                  const tagSlug = tagToSlug(tag)
+                  return tagSlug ? (
+                    <Link
+                      key={tag}
+                      href={`/blog/tag/${tagSlug}`}
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-xs font-medium text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-full px-3 py-1 transition-colors"
+                    >
+                      {tag}
+                    </Link>
+                  ) : (
+                    <span key={tag} className="text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full px-3 py-1">
+                      {tag}
+                    </span>
+                  )
+                })}
               </div>
             </Link>
           ))}
