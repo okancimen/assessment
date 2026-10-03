@@ -1,5 +1,10 @@
 import Link from 'next/link'
 import { Bullet, Callout, Check, Cross } from './blog-components'
+import { UK_CONTENT_US_GIFTED } from './content-uk-us-gifted'
+import { UK_CONTENT_NETHERLANDS } from './content-uk-netherlands'
+import { UK_CONTENT_UAE } from './content-uk-uae'
+import { UK_CONTENT_CANADA } from './content-uk-canada'
+import { UK_CONTENT_AUSTRALIA } from './content-uk-australia'
 
 export const UK_CONTENT: Record<string, React.ReactNode> = {
 
@@ -284,6 +289,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           <li>IB Organisation — Annual Statistical Bulletin 2025, Diploma Programme candidate performance data.</li>
         </ul>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/grammar-school-entry-requirements-2026', tag: 'Guide', title: 'Grammar School Entry Requirements 2026' },
+            { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score?' },
+            { href: '/blog/how-does-your-child-compare-globally', tag: 'Research', title: 'How Does Your Child Compare Globally?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -532,6 +553,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           tracks real progress over time.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/verbal-reasoning-11-plus-guide', tag: 'Guide', title: 'Verbal Reasoning 11+ Guide' },
+            { href: '/blog/non-verbal-reasoning-11-plus-guide', tag: 'Guide', title: 'Non-Verbal Reasoning 11+ Guide' },
+            { href: '/blog/grammar-school-entry-requirements-2026', tag: 'Guide', title: 'Grammar School Entry Requirements 2026' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -773,6 +810,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           and enough time for preparation to have had a measurable effect.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+' },
+            { href: '/blog/grammar-school-entry-requirements-2026', tag: 'Guide', title: 'Grammar School Entry Requirements 2026' },
+            { href: '/blog/gifted-program-testing-guide', tag: 'Guide', title: 'Gifted Program Testing Guide' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -941,6 +994,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           question and return later. If ahead, slow down and re-read answers. Children who practise
           with no time pressure are genuinely unprepared for the pace of the real exam.
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/non-verbal-reasoning-11-plus-guide', tag: 'Guide', title: 'Non-Verbal Reasoning 11+ Guide' },
+            { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+' },
+            { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
@@ -1141,6 +1210,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             grammar school area guides
           </Link>.
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+' },
+            { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score?' },
+            { href: '/blog/verbal-reasoning-11-plus-guide', tag: 'Guide', title: 'Verbal Reasoning 11+ Guide' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
@@ -1539,6 +1624,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           The students who secure the most competitive business work experience placements are not always the ones with the highest predicted grades. They are the ones who can demonstrate, credibly, that they are ready to contribute — and who apply that evidence strategically across every route available to them.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/high-school-internship-benefits-university', tag: 'Research', title: 'High School Internship Benefits for University' },
+            { href: '/blog/how-to-differentiate-yourself-at-15', tag: 'Guide', title: 'How to Differentiate Yourself at 15' },
+            { href: '/blog/how-to-find-internship-as-student', tag: 'Guide', title: 'How to Find an Internship as a Student' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -1647,6 +1748,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed">
           The UK technology sector is growing faster than the pipeline of qualified candidates can keep pace with. The students who understand this — and who begin building professional credentials in secondary school rather than waiting for university — arrive at the graduate labour market with advantages that are structurally very difficult for late starters to close. The time to start is before you think you are ready.
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/high-school-internship-benefits-university', tag: 'Research', title: 'High School Internship Benefits for University' },
+            { href: '/blog/how-to-find-internship-as-student', tag: 'Guide', title: 'How to Find an Internship as a Student' },
+            { href: '/blog/business-work-experience-high-school-uk', tag: 'Guide', title: 'Business Work Experience for High School UK' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
@@ -2247,6 +2364,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           In both cases, the starting point is the same: an honest, standardised read on where the child actually stands. Everything useful follows from that.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/global-academic-benchmarks-report-2026', tag: 'Report', title: 'Global Academic Benchmarks Report 2026' },
+            { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score?' },
+            { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: 'Discover Your Child\'s Strengths with a Free Academic Test' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -2403,6 +2536,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed">
           The most useful thing a placement does is not confirm your expectations — it tests them with real data. Students who discover during a placement that digital marketing is not for them have not wasted the experience. They have avoided a potentially misaligned degree and years of misaligned career investment — and that information, arrived at early, is worth considerably more than a week&apos;s lost time.
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/business-work-experience-high-school-uk', tag: 'Guide', title: 'Business Work Experience for High School UK' },
+            { href: '/blog/how-to-find-internship-as-student', tag: 'Guide', title: 'How to Find an Internship as a Student' },
+            { href: '/blog/high-school-internship-benefits-university', tag: 'Research', title: 'High School Internship Benefits for University' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
@@ -2584,6 +2733,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <Callout color="emerald">
           <strong className="text-emerald-900">The compounding argument in one sentence.</strong> A Year 12 student with a documented Year 10 placement, a self-arranged Year 11 summer placement at a different firm, and a verified readiness score has a professional profile that the vast majority of UCAS applicants in business, economics, and finance cannot match — not because they are more talented, but because they started earlier and documented consistently.
         </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/high-school-internship-benefits-university', tag: 'Research', title: 'High School Internship Benefits for University' },
+            { href: '/blog/business-work-experience-high-school-uk', tag: 'Guide', title: 'Business Work Experience for High School UK' },
+            { href: '/blog/how-to-find-internship-as-student', tag: 'Guide', title: 'How to Find an Internship as a Student' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
@@ -2932,6 +3097,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           The OC test assesses the same reasoning skills as international benchmarks like PISA and CAT4. Eduentry&apos;s adaptive assessment is designed around the same framework — giving you a PISA-aligned percentile for your child in 20 minutes, free. You will know which of the three OC components needs the most attention before you spend a day on preparation.
         </Callout>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/non-verbal-reasoning-11-plus-guide', tag: 'Guide', title: 'Non-Verbal Reasoning 11+ Guide' },
+            { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score?' },
+            { href: '/blog/australia-oc-test-guide', tag: 'Guide', title: 'Australia OC Test Guide' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -3121,6 +3302,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           The children who sit the 11+ and find the NVR paper manageable are not more gifted — they are better prepared. That preparation is available to any child who starts early enough and practises with the right approach.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/verbal-reasoning-11-plus-guide', tag: 'Guide', title: 'Verbal Reasoning 11+ Guide' },
+            { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+' },
+            { href: '/blog/free-11-plus-practice-test-online', tag: 'Assessment', title: 'Free 11+ Practice Test Online' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -3245,6 +3442,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed mb-4">
           There is no reason to delay. The earlier you know where your child stands, the more time you have to act on it. Start today.
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+' },
+            { href: '/blog/verbal-reasoning-11-plus-guide', tag: 'Guide', title: 'Verbal Reasoning 11+ Guide' },
+            { href: '/blog/grammar-school-entry-requirements-2026', tag: 'Guide', title: 'Grammar School Entry Requirements 2026' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
@@ -4455,6 +4668,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           ))}
         </div>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/smart-child-bad-grades', tag: 'Guide', title: 'Smart Child, Bad Grades' },
+            { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: 'Discover Your Child\'s Strengths with a Free Academic Test' },
+            { href: '/blog/summer-activities-ambitious-children', tag: 'Guide', title: 'Summer Activities for Ambitious Children' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -4979,4 +5208,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  ...UK_CONTENT_US_GIFTED,
+  ...UK_CONTENT_NETHERLANDS,
+  ...UK_CONTENT_UAE,
+  ...UK_CONTENT_CANADA,
+  ...UK_CONTENT_AUSTRALIA,
 }

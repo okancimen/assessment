@@ -1882,6 +1882,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description: 'Teenagers with work experience before 16 earn 5–10% more as adults, per OECD data from 47 longitudinal studies. What skills it builds, who misses out, and what parents can do now.',
     tldr: '40 out of 47 longitudinal studies reviewed by the OECD showed better adult employment outcomes for students who had school-based work experience. Those with early work experience earn 5–10% more as adults. Yet around 50% of teenagers in Spain, Italy and Brazil have no work experience by age 15 — a gap driven more by family connections than by ability.',
     date: '2026-09-30',
+    dateModified: '2026-10-03',
     readTime: '10 min read',
     tags: ['Work Experience', 'Internship', 'Career Development', 'OECD Research', 'Student Skills'],
     faqs: [
@@ -1928,6 +1929,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     description: 'OECD research confirms part-time work during school builds financial literacy, career confidence, and professional skills — with students who work moderately earning more as adults. What the data shows and how to get the most from it.',
     tldr: 'OECD research on teenage part-time working shows students who work up to around 15 hours per week develop stronger professional skills, higher career confidence, and greater financial literacy than those with no work experience. The key is supervision, career-relevance, and staying within productive hours ranges — all factors schools and parents can influence.',
     date: '2026-10-01',
+    dateModified: '2026-10-03',
     readTime: '9 min read',
     tags: ['Part-Time Work', 'Teenager Jobs', 'Career Development', 'OECD Research', 'Student Skills'],
     faqs: [
