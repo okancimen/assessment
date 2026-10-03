@@ -4,8 +4,8 @@ import Link from 'next/link'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'منهجية التقييم — كيف يعمل Eduentry',
-  description: 'كيف يستخدم Eduentry نظرية الاستجابة للبند (IRT) ثنائية المعلمة وتقدير MAP لإنتاج درجات أكاديمية معيارية للأطفال من 6 إلى 17 عاماً، مقارنةً دولياً.',
+  title: 'منهجية التقييم',
+  description: 'نظرية الاستجابة للبند (IRT) ثنائية المعلمة وتقدير MAP — درجات معيارية للأطفال من 6 إلى 17 عاماً مع مقارنة دولية.',
   keywords: 'نظرية الاستجابة للبند أطفال, تقييم تكيفي IRT, درجة معيارية أطفال, تقدير MAP, منهجية تقييم تعليمية, اختبار تكيفي',
   alternates: {
     canonical: `${BASE_URL}/ar/manhajiyya`,

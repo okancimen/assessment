@@ -5,7 +5,7 @@ const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
   title: 'Hakkımızda — Çocuklar için ücretsiz akademik değerlendirme',
-  description: 'Eduentry, 6–17 yaş arası öğrenciler için ücretsiz uyarlanabilir değerlendirme platformudur. Standartlaştırılmış puanlar İngiltere ulusal müfredatı, PISA ve IB standartlarıyla karşılaştırılır.',
+  description: '6–17 yaş arası öğrenciler için ücretsiz uyarlanabilir değerlendirme platformu. Standartlaştırılmış puanlar PISA, GCSE ve IB standartlarıyla karşılaştırılır.',
   keywords: ['Eduentry hakkında', 'çocuklar için ücretsiz değerlendirme platformu', 'uluslararası akademik kıyaslama', 'uyarlanabilir test çocuklar', 'akademik değerlendirme 6 17 yaş', 'lise staj değerlendirmesi'],
   alternates: {
     canonical: `${BASE_URL}/tr/hakkimizda`,

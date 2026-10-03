@@ -4,7 +4,7 @@ import Link from 'next/link'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'من نحن — Eduentry | تقييم أكاديمي مجاني للأطفال',
+  title: 'من نحن — تقييم أكاديمي مجاني للأطفال',
   description: 'Eduentry منصة تقييم تكيفية مجانية للطلاب من 6 إلى 17 عاماً. درجات معيارية مقارنةً بالمنهج البريطاني وPISA ومعايير IB.',
   keywords: ['من نحن Eduentry', 'منصة تقييم أطفال مجانية', 'مرجع أكاديمي دولي', 'اختبار تكيفي أطفال', 'تقييم أكاديمي 6 17 سنة', 'تقييم تدريب ثانوي'],
   alternates: {

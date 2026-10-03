@@ -5,7 +5,7 @@ const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
   title: '关于我们 — 免费儿童学术评估平台',
-  description: 'Eduentry是面向6–17岁学生的免费自适应评估平台。标准化分数与英国国家课程、PISA和IB标准对标，帮助家庭了解孩子的真实国际学术位置。',
+  description: '面向6–17岁学生的免费自适应评估平台。标准化分数与英国国家课程、PISA和IB标准对标，帮助家庭了解孩子的真实国际学术位置。',
   keywords: ['Eduentry简介', '免费儿童评估平台', '国际学术基准', '自适应儿童测试', '6至17岁学术评估', '实习准备评估'],
   alternates: {
     canonical: `${BASE_URL}/zh/guanyu-women`,

@@ -9,9 +9,9 @@ import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Eduentry — Akademik ve Staj Değerlendirme Platformu',
+  title: 'Akademik ve Staj Değerlendirme Platformu',
   description:
-    'Tüm öğrenim aşamalarındaki öğrenciler için ücretsiz uyarlanabilir değerlendirmeler — 6–17 yaş arası çocuklar için uluslararası akademik kıyaslama ve 14 yaş üstü lise öğrencileri için staj değerlendirmesi.',
+    '6–17 yaş arası çocuklar için ücretsiz akademik kıyaslama ve 14 yaş üstü lise öğrencileri için staj değerlendirmesi.',
   keywords: [
     'ücretsiz akademik değerlendirme çocuklar',
     'uluslararası kıyaslama çocuklar İngiltere',

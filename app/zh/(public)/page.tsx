@@ -9,7 +9,7 @@ import { BLOG_POSTS_ZH } from '@/app/blog/posts-zh'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Eduentry — 学术评估与实习准备平台',
+  title: '学术评估与实习准备平台',
   description:
     '面向各学习阶段学生的免费自适应评估——为6–17岁儿童提供国际学术基准比较，为14岁以上高中生提供实习准备测评。',
   keywords: [

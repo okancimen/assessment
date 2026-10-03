@@ -4,8 +4,8 @@ import Link from 'next/link'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Metodología de evaluación — Cómo funciona Eduentry',
-  description: 'Cómo Eduentry usa la Teoría de Respuesta al Ítem (TRI) de 2 parámetros y la estimación MAP para producir puntuaciones académicas estandarizadas para niños de 6 a 17 años, comparadas internacionalmente.',
+  title: 'Metodología de evaluación',
+  description: 'Teoría de Respuesta al Ítem de 2 parámetros y estimación MAP — puntuaciones estandarizadas para niños de 6 a 17 años con comparación internacional.',
   keywords: 'Teoría de Respuesta al Ítem niños, evaluación adaptativa TRI, puntuación estandarizada niños, estimación MAP, metodología evaluación educativa, prueba adaptativa',
   alternates: {
     canonical: `${BASE_URL}/es/metodologia`,

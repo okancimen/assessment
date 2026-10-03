@@ -7,7 +7,7 @@ const BASE_URL = 'https://eduentry.com'
 export const metadata: Metadata = {
   title: 'Ücretsiz Staj Değerlendirmesi — 14 Yaş ve Üstü Lise Öğrencileri',
   description:
-    'Lise öğrencileri için ücretsiz 34 soruluk uyarlanabilir staj değerlendirmesi. Teknoloji, İş Dünyası, Veri Analitiği veya Dijital Pazarlama alanlarında staj hazırlığını 35 dakikada keşfet.',
+    '34 soruluk uyarlanabilir staj değerlendirmesi — Teknoloji, İş Dünyası, Veri Analitiği veya Dijital Pazarlama alanlarında hazırlığını 35 dakikada keşfet.',
   keywords: [
     'lise stajı',
     'staj değerlendirmesi',

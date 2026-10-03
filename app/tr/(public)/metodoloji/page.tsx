@@ -4,8 +4,8 @@ import Link from 'next/link'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Değerlendirme Metodolojisi — Eduentry nasıl çalışır',
-  description: 'Eduentry\'nin 6–17 yaş arası çocuklar için uluslararası kıyaslamalı standartlaştırılmış akademik puanlar üretmek amacıyla 2 parametreli Madde Yanıt Teorisi ve MAP tahmini nasıl kullandığı.',
+  title: 'Değerlendirme Metodolojisi',
+  description: '2 parametreli Madde Yanıt Teorisi ve MAP tahmini — 6–17 yaş arası çocuklar için standartlaştırılmış akademik puanlar ve uluslararası kıyaslama.',
   keywords: 'madde yanıt teorisi çocuklar, uyarlanabilir test MYT, standartlaştırılmış puan çocuklar, MAP tahmini, eğitim değerlendirme metodolojisi, uyarlanabilir test',
   alternates: {
     canonical: `${BASE_URL}/tr/metodoloji`,

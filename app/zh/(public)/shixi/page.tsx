@@ -5,7 +5,7 @@ import { BLOG_POSTS_ZH } from '@/app/blog/posts-zh'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: '免费实习准备度评估 — Eduentry',
+  title: '免费实习准备度评估',
   description:
     '免费34题自适应评估，面向14岁以上高中生。发现你的最佳赛道——技术、商业、数据分析或数字营销——35分钟获得个性化报告。',
   keywords: [

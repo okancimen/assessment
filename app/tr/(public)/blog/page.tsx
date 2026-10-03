@@ -5,9 +5,9 @@ import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Staj ve Kariyer Rehberleri — Eduentry Blog',
+  title: 'Staj ve Kariyer Rehberleri',
   description:
-    'Erken yaşta staj, iş deneyimi ve üniversite kabulü üzerine kanıta dayalı rehberler — Eduentry ekibinden. Teknoloji, iş dünyası, veri ve pazarlama alanlarında lise öğrencilerine yönelik.',
+    'Erken yaşta staj ve iş deneyimine dayalı rehberler. Teknoloji, iş dünyası, veri ve pazarlama alanlarında lise öğrencilerine yönelik.',
   keywords: [
     'staj rehberi',
     'lise iş deneyimi',

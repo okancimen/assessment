@@ -9,9 +9,9 @@ import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Eduentry — Plataforma de evaluación académica y prácticas',
+  title: 'Plataforma de evaluación académica y prácticas',
   description:
-    'Evaluaciones adaptativas gratuitas para estudiantes en todas las etapas — comparación académica internacional para edades de 6 a 17 años, y evaluación de prácticas para estudiantes de instituto mayores de 14 años.',
+    'Evaluaciones adaptativas gratuitas para estudiantes de 6 a 17 años con comparación académica internacional. Evaluación de prácticas para mayores de 14 años.',
   keywords: [
     'evaluación académica gratuita niños',
     'referencia internacional niños Reino Unido',

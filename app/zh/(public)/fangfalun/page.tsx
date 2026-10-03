@@ -4,8 +4,8 @@ import Link from 'next/link'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: '评估方法论 — Eduentry如何工作',
-  description: 'Eduentry使用与PISA、GCSE和SAT相同的两参数IRT自适应测试模型。了解自适应评估如何工作，以及标准化分数意味着什么。',
+  title: '评估方法论',
+  description: '两参数IRT自适应测试模型——与PISA、GCSE和SAT相同。了解自适应评估如何工作，以及标准化分数的含义。',
   keywords: ['自适应测试方法论', 'IRT项目反应理论', 'PISA评估标准', '标准化分数量表', '2PL模型儿童评估'],
   alternates: {
     canonical: `${BASE_URL}/zh/fangfalun`,

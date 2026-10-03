@@ -5,9 +5,9 @@ import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Prácticas de Instituto Gratuitas — Evaluación de Preparación | Eduentry',
+  title: 'Prácticas de Instituto Gratuitas — Evaluación de Preparación',
   description:
-    'Evaluación adaptativa gratuita de 34 preguntas para estudiantes de instituto desde 14 años. Descubre tu área ideal — Tecnología, Empresa, Datos o Marketing Digital — en 35 minutos. Informe personalizado instantáneo.',
+    '34 preguntas para estudiantes desde 14 años. Área ideal — Tecnología, Empresa, Datos o Marketing Digital — en 35 minutos. Informe personalizado instantáneo.',
   keywords: [
     'prácticas instituto',
     'prácticas empresa estudiante',

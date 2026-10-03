@@ -5,9 +5,9 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/es/auth/register`
 
 export const metadata: Metadata = {
-  title: '¿Cuáles son las Fortalezas y Debilidades de mi Hijo? — Test Cognitivo Gratuito',
+  title: 'Fortalezas y Debilidades de tu Hijo — Test Cognitivo Gratuito',
   description:
-    'Descubre las fortalezas y debilidades de tu hijo en 35 minutos. Evaluación cognitiva adaptativa gratuita comparada con estándares PISA, SAT y GCSE — informe instantáneo con IA, sin suscripción.',
+    'Descubre las fortalezas y debilidades de tu hijo en 35 minutos. Evaluación cognitiva gratuita comparada con PISA, SAT y GCSE — informe IA instantáneo.',
   keywords: [
     'cuáles son las fortalezas y debilidades de mi hijo',
     'fortalezas de mi hijo',

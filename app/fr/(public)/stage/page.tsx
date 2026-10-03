@@ -5,9 +5,9 @@ import { BLOG_POSTS_FR } from '@/app/blog/posts-fr'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Évaluation Stage Lycéen Gratuite — Eduentry',
+  title: 'Évaluation Stage Lycéen Gratuite',
   description:
-    'Évaluation adaptative gratuite de 34 questions pour lycéens dès 14 ans. Découvre ta filière idéale — Tech, Entreprise, Data ou Marketing Digital — en 35 minutes. Rapport personnalisé instantané.',
+    '34 questions pour lycéens dès 14 ans. Filière idéale — Tech, Entreprise, Data ou Marketing Digital — en 35 minutes. Rapport personnalisé.',
   keywords: [
     'stage lycéen',
     'stage entreprise lycée',

@@ -5,9 +5,9 @@ import { BLOG_POSTS_FR } from '@/app/blog/posts-fr'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Guides de stage & carrière — Blog Eduentry',
+  title: 'Guides de stage et carrière',
   description:
-    'Recherches et analyses sur la préparation aux stages, l\'expérience professionnelle au lycée et l\'accès à l\'université — par l\'équipe Eduentry. Guides pour la technologie, l\'entreprise, les données et le marketing.',
+    'Recherches sur la préparation aux stages et l\'expérience professionnelle au lycée. Guides pour la technologie, l\'entreprise, les données et le marketing.',
   keywords: [
     'guide de stage',
     'expérience professionnelle lycée',

@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: BASE,
-      lastModified: '2026-09-11',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly',
       priority: 1.0,
       alternates: { languages: { 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
@@ -49,21 +49,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/subjects`,        lastModified: '2026-09-09', changeFrequency: 'monthly', priority: 0.8 },
     {
       url: `${BASE}/about`,
-      lastModified: '2026-09-11',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly',
       priority: 0.7,
       alternates: { languages: { 'en-GB': `${BASE}/about`, es: `${BASE}/es/sobre-nosotros`, tr: `${BASE}/tr/hakkimizda`, fr: `${BASE}/fr/a-propos`, ar: `${BASE}/ar/hawlana`, ru: `${BASE}/ru/o-nas`, zh: `${BASE}/zh/guanyu-women`, 'x-default': `${BASE}/about` } },
     },
     {
       url: `${BASE}/methodology`,
-      lastModified: '2026-09-11',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly',
       priority: 0.8,
       alternates: { languages: { 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
     {
       url: `${BASE}/internship`,
-      lastModified: '2026-09-18',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly',
       priority: 0.9,
       alternates: { languages: { 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
@@ -136,7 +136,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const esPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/es`,
-      lastModified: '2026-09-09',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
       alternates: { languages: { es: `${BASE}/es`, 'en-GB': BASE, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
@@ -150,21 +150,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE}/es/sobre-nosotros`,
-      lastModified: '2026-09-09',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { es: `${BASE}/es/sobre-nosotros`, 'en-GB': `${BASE}/about`, tr: `${BASE}/tr/hakkimizda`, fr: `${BASE}/fr/a-propos`, ar: `${BASE}/ar/hawlana`, ru: `${BASE}/ru/o-nas`, zh: `${BASE}/zh/guanyu-women`, 'x-default': `${BASE}/about` } },
     },
     {
       url: `${BASE}/es/metodologia`,
-      lastModified: '2026-09-09',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { es: `${BASE}/es/metodologia`, 'en-GB': `${BASE}/methodology`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
     {
       url: `${BASE}/es/practicas`,
-      lastModified: '2026-09-18',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.9,
       alternates: { languages: { es: `${BASE}/es/practicas`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
@@ -195,7 +195,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const trPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/tr`,
-      lastModified: '2026-09-09',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
       alternates: { languages: { tr: `${BASE}/tr`, 'en-GB': BASE, es: `${BASE}/es`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
@@ -209,21 +209,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE}/tr/hakkimizda`,
-      lastModified: '2026-09-09',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { tr: `${BASE}/tr/hakkimizda`, 'en-GB': `${BASE}/about`, es: `${BASE}/es/sobre-nosotros`, fr: `${BASE}/fr/a-propos`, ar: `${BASE}/ar/hawlana`, ru: `${BASE}/ru/o-nas`, zh: `${BASE}/zh/guanyu-women`, 'x-default': `${BASE}/about` } },
     },
     {
       url: `${BASE}/tr/metodoloji`,
-      lastModified: '2026-09-09',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { tr: `${BASE}/tr/metodoloji`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
     {
       url: `${BASE}/tr/staj`,
-      lastModified: '2026-09-18',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.9,
       alternates: { languages: { tr: `${BASE}/tr/staj`, 'en-GB': `${BASE}/internship`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
@@ -254,7 +254,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const frPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/fr`,
-      lastModified: '2026-09-09',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
       alternates: { languages: { fr: `${BASE}/fr`, 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
@@ -268,21 +268,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE}/fr/a-propos`,
-      lastModified: '2026-09-09',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { fr: `${BASE}/fr/a-propos`, 'en-GB': `${BASE}/about`, es: `${BASE}/es/sobre-nosotros`, tr: `${BASE}/tr/hakkimizda`, ar: `${BASE}/ar/hawlana`, ru: `${BASE}/ru/o-nas`, zh: `${BASE}/zh/guanyu-women`, 'x-default': `${BASE}/about` } },
     },
     {
       url: `${BASE}/fr/methodologie`,
-      lastModified: '2026-09-09',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { fr: `${BASE}/fr/methodologie`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
     {
       url: `${BASE}/fr/stage`,
-      lastModified: '2026-09-18',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.9,
       alternates: { languages: { fr: `${BASE}/fr/stage`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
@@ -313,7 +313,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const arPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/ar`,
-      lastModified: '2026-09-10',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
       alternates: { languages: { ar: `${BASE}/ar`, 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
@@ -327,21 +327,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE}/ar/hawlana`,
-      lastModified: '2026-09-10',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { ar: `${BASE}/ar/hawlana`, 'en-GB': `${BASE}/about`, es: `${BASE}/es/sobre-nosotros`, tr: `${BASE}/tr/hakkimizda`, fr: `${BASE}/fr/a-propos`, ru: `${BASE}/ru/o-nas`, zh: `${BASE}/zh/guanyu-women`, 'x-default': `${BASE}/about` } },
     },
     {
       url: `${BASE}/ar/manhajiyya`,
-      lastModified: '2026-09-10',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { ar: `${BASE}/ar/manhajiyya`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
     {
       url: `${BASE}/ar/tadrib`,
-      lastModified: '2026-09-18',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.9,
       alternates: { languages: { ar: `${BASE}/ar/tadrib`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
@@ -372,7 +372,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const ruPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/ru`,
-      lastModified: '2026-09-11',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
       alternates: { languages: { ru: `${BASE}/ru`, 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, zh: `${BASE}/zh`, 'x-default': BASE } },
@@ -386,21 +386,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE}/ru/o-nas`,
-      lastModified: '2026-09-11',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { ru: `${BASE}/ru/o-nas`, 'en-GB': `${BASE}/about`, es: `${BASE}/es/sobre-nosotros`, tr: `${BASE}/tr/hakkimizda`, fr: `${BASE}/fr/a-propos`, ar: `${BASE}/ar/hawlana`, zh: `${BASE}/zh/guanyu-women`, 'x-default': `${BASE}/about` } },
     },
     {
       url: `${BASE}/ru/metodologiya`,
-      lastModified: '2026-09-11',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { ru: `${BASE}/ru/metodologiya`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
     {
       url: `${BASE}/ru/stazhirovka`,
-      lastModified: '2026-09-18',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.9,
       alternates: { languages: { ru: `${BASE}/ru/stazhirovka`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
@@ -431,7 +431,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const zhPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/zh`,
-      lastModified: '2026-09-15',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
       alternates: { languages: { zh: `${BASE}/zh`, 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, 'x-default': BASE } },
@@ -445,21 +445,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE}/zh/guanyu-women`,
-      lastModified: '2026-09-15',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { zh: `${BASE}/zh/guanyu-women`, 'en-GB': `${BASE}/about`, es: `${BASE}/es/sobre-nosotros`, tr: `${BASE}/tr/hakkimizda`, fr: `${BASE}/fr/a-propos`, ar: `${BASE}/ar/hawlana`, ru: `${BASE}/ru/o-nas`, 'x-default': `${BASE}/about` } },
     },
     {
       url: `${BASE}/zh/fangfalun`,
-      lastModified: '2026-09-15',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { zh: `${BASE}/zh/fangfalun`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, 'x-default': `${BASE}/methodology` } },
     },
     {
       url: `${BASE}/zh/shixi`,
-      lastModified: '2026-09-18',
+      lastModified: '2026-10-04',
       changeFrequency: 'monthly' as const,
       priority: 0.9,
       alternates: { languages: { zh: `${BASE}/zh/shixi`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, 'x-default': `${BASE}/internship` } },

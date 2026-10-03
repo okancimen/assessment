@@ -8,7 +8,7 @@ import { BLOG_POSTS_AR } from '@/app/blog/posts-ar'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Eduentry — منصة التقييم الأكاديمي واستعداد التدريب',
+  title: 'منصة التقييم الأكاديمي واستعداد التدريب',
   description:
     'تقييمات تكيفية مجانية لكل مرحلة تعليمية — مقارنة أكاديمية دولية للأعمار 6-17، وتقييم استعداد التدريب للطلاب فوق 14 عاماً.',
   keywords: [

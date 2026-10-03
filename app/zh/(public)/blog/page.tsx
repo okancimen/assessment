@@ -5,9 +5,9 @@ import { BLOG_POSTS_ZH } from '@/app/blog/posts-zh'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: '实习与职业指南 — Eduentry博客',
+  title: '实习与职业指南',
   description:
-    '关于早期工作经验、职业发展和大学申请的循证指南——来自Eduentry团队，面向技术、商业、数据和营销方向的高中生。',
+    '关于早期工作经验、职业发展和大学申请的循证指南——面向技术、商业、数据和营销方向的高中生。',
   keywords: [
     '实习指南',
     '高中工作经验',

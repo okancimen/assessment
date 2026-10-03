@@ -5,9 +5,9 @@ import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Guías de prácticas y desarrollo profesional — Blog de Eduentry',
+  title: 'Guías de prácticas y desarrollo profesional',
   description:
-    'Investigación y análisis sobre preparación para prácticas, experiencia laboral en el instituto y acceso a la universidad — del equipo de Eduentry. Guías para tecnología, empresa, datos y marketing.',
+    'Investigación sobre prácticas, experiencia laboral en instituto y acceso a la universidad. Guías para tecnología, empresa, datos y marketing.',
   keywords: [
     'guía de prácticas',
     'experiencia laboral instituto',
