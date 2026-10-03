@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import { BLOG_POSTS } from './posts'
-import { tagToSlug } from './tag-utils'
+import BlogPostCard from './BlogPostCard'
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -131,40 +131,7 @@ export default function BlogIndexPage() {
         {/* All posts */}
         <div className="space-y-6">
           {sortedPosts.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="block border border-gray-100 rounded-2xl p-6 sm:p-8 hover:border-indigo-200 hover:shadow-sm transition-all"
-            >
-              <div className="flex items-center gap-3 text-xs text-gray-400 mb-3">
-                <time dateTime={post.date}>
-                  {new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
-                </time>
-                <span>·</span>
-                <span>{post.readTime}</span>
-              </div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-3 leading-snug">{post.title}</h2>
-              <p className="text-gray-500 leading-relaxed mb-4">{post.description}</p>
-              <div className="flex flex-wrap gap-2">
-                {post.tags.map((tag) => {
-                  const tagSlug = tagToSlug(tag)
-                  return tagSlug ? (
-                    <Link
-                      key={tag}
-                      href={`/blog/tag/${tagSlug}`}
-                      onClick={(e) => e.stopPropagation()}
-                      className="text-xs font-medium text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-full px-3 py-1 transition-colors"
-                    >
-                      {tag}
-                    </Link>
-                  ) : (
-                    <span key={tag} className="text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full px-3 py-1">
-                      {tag}
-                    </span>
-                  )
-                })}
-              </div>
-            </Link>
+            <BlogPostCard key={post.slug} post={post} />
           ))}
         </div>
       </main>
