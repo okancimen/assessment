@@ -7,16 +7,17 @@ import { BLOG_POSTS } from './posts'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Blog — Academic Benchmarks & Assessment Insights',
-  description:
-    'Research and analysis on international academic benchmarks, standardised testing trends, and adaptive assessment — from the team behind Eduentry.',
+  title: '11+ Preparation, Grammar Schools & Gifted Testing Guides | Eduentry Blog',
+  description: 'Practical guides for UK parents and students on 11+ exam preparation, grammar school admissions, GCSE revision, gifted child testing, and work experience for secondary school students.',
   keywords: [
-    'academic benchmarks blog',
-    'standardised testing trends',
-    'international assessment research',
-    'PISA TIMSS benchmarks',
-    '11+ exam trends',
-    'adaptive testing research',
+    '11+ preparation guide',
+    'grammar school admissions 2026',
+    'GCSE revision tips',
+    'gifted child testing UK',
+    'how to prepare for 11 plus',
+    'work experience for students',
+    'standardised score explained',
+    'free 11 plus practice test',
   ],
   alternates: { canonical: `${BASE_URL}/blog`, languages: { 'en-GB': `${BASE_URL}/blog`, es: `${BASE_URL}/es/blog`, tr: `${BASE_URL}/tr/blog`, fr: `${BASE_URL}/fr/blog`, ar: `${BASE_URL}/ar/blog`, ru: `${BASE_URL}/ru/blog`, zh: `${BASE_URL}/zh/blog`, 'x-default': `${BASE_URL}/blog` } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -73,10 +74,13 @@ export default function BlogIndexPage() {
 
         <div className="mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-            Eduentry Blog
+            Guides for Ambitious Students and Parents
           </h1>
-          <p className="text-xl text-gray-500 leading-relaxed max-w-2xl">
-            Research and analysis on international academic benchmarks, standardised testing trends, and adaptive assessment.
+          <p className="text-xl text-gray-500 leading-relaxed max-w-2xl mb-3">
+            Practical guides on 11+ exam preparation, grammar school admissions, GCSE revision, gifted child testing, and work experience for secondary school students.
+          </p>
+          <p className="text-base text-gray-400 leading-relaxed max-w-2xl">
+            Also covering gifted and selective programmes in the US, Canada, Australia, Netherlands and UAE — benchmarked with standardised scores and international percentile data.
           </p>
         </div>
 

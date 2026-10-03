@@ -185,11 +185,47 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       }
     : null
 
+  const howToSchema = post.howToSteps && post.howToSteps.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: post.title,
+        description: post.description,
+        step: post.howToSteps.map((s, i) => ({
+          '@type': 'HowToStep',
+          position: i + 1,
+          name: s.name,
+          text: s.text,
+        })),
+      }
+    : null
+
+  const reviewSchema = post.aggregateRating
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        '@id': `${url}#service`,
+        name: post.shortTitle,
+        description: post.description,
+        serviceType: 'Work Experience',
+        areaServed: { '@type': 'Country', name: 'United Kingdom' },
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: post.aggregateRating.ratingValue.toString(),
+          bestRating: '5',
+          worstRating: '1',
+          reviewCount: post.aggregateRating.reviewCount,
+        },
+      }
+    : null
+
   return (
     <div className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      {howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />}
+      {reviewSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />}
 
       <PublicNav />
 

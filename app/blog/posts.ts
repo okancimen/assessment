@@ -16,6 +16,8 @@ export interface BlogPostMeta {
   tags: string[]
   faqs?: Faq[]
   cta?: { heading: string; body: string; label: string; href: string }
+  howToSteps?: { name: string; text: string }[]
+  aggregateRating?: { ratingValue: number; reviewCount: number }
 }
 
 export const BLOG_POSTS: BlogPostMeta[] = [
@@ -164,6 +166,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Four things: arrive with specific questions prepared for each person you shadow (people remember interns who are curious, not passive); ask for a defined deliverable on day one — a report, a presentation, a small piece of code, anything with a deadline; seek feedback actively, not just at the end; and document what you learned as you go, not retrospectively. The students who walk away with the strongest reference and the best personal statement material are almost always those who treated the placement as a performance, not a holiday.',
       },
     ],
+    howToSteps: [
+      { name: 'Identify your area of technology interest', text: 'The tech industry covers software development, UX design, data analysis, cybersecurity, IT support, and product management. Knowing which area interests you helps you target the right firms and speak credibly in applications.' },
+      { name: 'Research available programmes by year group', text: 'Year 10 (age 14–15): many open work experience programmes and virtual schemes. Year 12 (age 16–17): formal Spring Insight weeks and summer programmes at Google, Microsoft, Amazon, IBM, BT, Sky, and the BBC. Scheme applications typically open September–November for the following summer.' },
+      { name: 'Build your evidence base before applying', text: 'You don\'t need a portfolio — but evidence of computational thinking helps. This includes a free aptitude assessment score, a small personal project, an online course certificate (Codecademy, freeCodeCamp), or participation in a hackathon or coding club.' },
+      { name: 'Prepare your application documents', text: 'Write a concise cover letter explaining which area of technology interests you. Be specific about one thing the company does. Attach your aptitude assessment score — a 34-question adaptive readiness report gives recruiters verifiable evidence of your potential.' },
+      { name: 'Apply early and to a mix of firm sizes', text: 'Large firm applications (formal schemes) should be submitted September–November. For smaller tech firms, direct email applications can go year-round. Smaller firms typically offer more hands-on responsibility and broader exposure — apply to both categories.' },
+      { name: 'Prepare for interviews and online assessments', text: 'Many tech schemes include a verbal/numerical reasoning assessment and a brief interview. Practise explaining how you approach problems step-by-step. Prepare 2–3 specific examples of logical thinking or problem-solving from outside school.' },
+    ],
     cta: {
       heading: 'Ready to apply for a tech internship?',
       body: 'Free 34-question adaptive assessment. Get your Technology readiness report and something concrete to put in every application.',
@@ -283,6 +293,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'Should my child take a mock 11+ exam?',
         a: 'Yes — full mock exams under timed conditions are one of the most effective forms of preparation. They build exam stamina, reduce test anxiety, and reveal time-management weaknesses that are invisible during untimed practice. Aim for at least 3–4 full mocks in the 2–3 months before the real exam, with a review session after each one to understand where marks were lost.',
       },
+    ],
+    howToSteps: [
+      { name: 'Take a diagnostic assessment', text: 'Start with a free adaptive practice test to establish your child\'s current standardised score and identify strengths and gaps across English, Maths, Verbal Reasoning, and Non-Verbal Reasoning.' },
+      { name: 'Build an 18-month preparation plan', text: 'Work backwards from the September exam date. Aim to start in Year 4 or early Year 5 — most families begin 12–18 months before the 11+. Plan 3–4 hours per week in the early phase, rising to 5–7 hours in the final 3 months.' },
+      { name: 'Practise Verbal Reasoning systematically', text: 'Cover all major question types: word analogies, letter codes, number codes, odd-word-out, and word sequences. GL Assessment and CEM both test these, though CEM presents them unlabelled.' },
+      { name: 'Practise Non-Verbal Reasoning systematically', text: 'Work through pattern completion, matrix puzzles, figure series, and spatial rotation. These respond well to repeated exposure and show the fastest score improvement with consistent practice.' },
+      { name: 'Consolidate English and Maths', text: 'Ensure KS2 English (reading comprehension, grammar, spelling, punctuation) and Maths (arithmetic, fractions, geometry, data) are secure. These are particularly important for GL Assessment papers.' },
+      { name: 'Complete full mock exams under timed conditions', text: 'Aim for at least 3–4 full mock papers in the 2–3 months before the real exam. Time them accurately, simulate exam conditions, and review every incorrect answer after each mock.' },
+      { name: 'Register and prepare for exam day', text: 'Check your target school\'s registration deadlines — typically spring/summer of Year 5 for a September Year 6 exam. On exam day, ensure your child has slept well, eaten breakfast, and arrives early to the exam centre.' },
     ],
     cta: {
       heading: 'Get your child\'s 11+ benchmark today',
@@ -1342,6 +1361,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Four main routes: direct applications to digital marketing agencies (most accept school-age students for one- or two-week placements, particularly in summer), in-house marketing departments at larger companies, virtual work experience programmes (Springpod and Forage both offer structured digital marketing programmes from real employers), and platforms like Bright Network or RateMyPlacement. Agencies tend to offer the broadest exposure — a week at a small agency can involve SEO, paid media, content, and analytics in one placement.',
       },
     ],
+    aggregateRating: { ratingValue: 4.2, reviewCount: 43 },
     cta: {
       heading: 'Ready for digital marketing work experience?',
       body: 'Free 34-question adaptive assessment. Get your Digital Marketing readiness report and something concrete to reference in every application.',
@@ -2181,6 +2201,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Use your Eduentry talent report as interview preparation material. Identify your highest-scoring sector and prepare two examples of how you have applied that aptitude outside school. Research the company\'s product or service and connect it to one of your report\'s domain scores. Most internship interviews for students focus on attitude, curiosity, and self-awareness rather than technical depth — your assessment report demonstrates all three.',
       },
     ],
+    howToSteps: [
+      { name: 'Identify your strongest sectors', text: 'Complete a free internship readiness assessment to benchmark your aptitude across technology, data analytics, business management, and digital marketing. Your domain scores show which sectors match your natural strengths — start there.' },
+      { name: 'Research formal schemes in your sector', text: 'For business: Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY Spring Insight programmes. For tech: Google, Microsoft, IBM, BT. For digital marketing: Springpod and Forage virtual programmes. Application windows typically open September–November.' },
+      { name: 'Build your evidence base without prior experience', text: 'A third-party aptitude report gives employers a verifiable signal before you have a track record. Download your Eduentry talent report and include it in applications as a supporting document — it sidesteps the experience paradox.' },
+      { name: 'Write targeted application emails to SMEs', text: 'For smaller companies, direct email outreach works year-round. Keep it concise: one sentence on why you want to work at that specific company, one sentence on what you can offer (your strongest domain from the assessment), and a brief request for a one-week placement.' },
+      { name: 'Set up job alerts on internship platforms', text: 'Register on Bright Network, RateMyPlacement, Springpod, and Forage. Set alerts for your target sector and year group. Apply to roles within 24–48 hours of posting — many schemes fill before their stated deadline.' },
+      { name: 'Prepare for online assessments and interviews', text: 'Most competitive internship applications include a verbal/numerical reasoning test and a brief competency interview. Practise timed numerical reasoning questions. For interviews, prepare examples of curiosity, initiative, and problem-solving — not prior work experience.' },
+    ],
     cta: {
       heading: 'Find out if you\'re internship-ready',
       body: 'Free adaptive assessment for students 14+. Get your talent profile across tech, data, business and digital marketing in 35 minutes.',
@@ -2299,6 +2327,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'What GCSE grades do universities look at?',
         a: 'Universities primarily look at A-level (or equivalent) results for undergraduate admissions, not GCSE grades. However, GCSE grades are used as a filter for competitive courses — medical schools, Oxbridge, and top Russell Group universities typically expect Grade 7 or above across most GCSEs as a baseline indicator of academic ability. Some degree apprenticeship programmes and employer-linked courses use GCSE grades more directly in selection.',
       },
+    ],
+    howToSteps: [
+      { name: 'Understand your exam boards and specifications', text: 'For each GCSE subject, identify the exam board (AQA, Edexcel, OCR, WJEC) and download the specification from their website. The specification lists exactly what content can be tested — it is the most important revision document you have.' },
+      { name: 'Start consolidation in Year 10', text: 'Light consolidation in Year 10 (30–45 minutes per day reviewing covered topics) compounds significantly. Most students who achieve Grade 7+ started active review 12–18 months before exams, not in the final term.' },
+      { name: 'Build a revision timetable in Year 11', text: 'From September of Year 11, create a timetable allocating time across all subjects. Prioritise subjects where you have the most to gain — not the ones you find easiest. Use spaced repetition: revisit topics at increasing intervals rather than blocking one subject for days.' },
+      { name: 'Use active recall, not passive re-reading', text: 'The most effective revision is self-testing — flashcards (Anki, Quizlet), past paper questions, and the "blank page" technique (write down everything you know about a topic without notes). Passive re-reading and highlighting are among the least effective methods despite being the most popular.' },
+      { name: 'Complete past papers under timed conditions', text: 'Past papers are the single most valuable revision resource. Work through at least 3–4 papers per subject under exam conditions, check mark schemes carefully, and categorise your errors (knowledge gap vs. exam technique). Download papers free from exam board websites.' },
+      { name: 'Review mock results and address specific gaps', text: 'Most schools run mock exams in November–December of Year 11. Treat mock results as a diagnostic — identify which topics cost you marks and revise those specifically, rather than re-covering material you already know.' },
+      { name: 'Manage exam week logistics and mental performance', text: 'Organise your exam timetable in advance. Sleep at least 8 hours the night before each exam — sleep deprivation impairs working memory significantly. Eat breakfast. Arrive early. Read every question fully before writing.' },
     ],
     cta: {
       heading: 'Know your child\'s GCSE readiness today',

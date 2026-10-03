@@ -101,6 +101,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
+  const HIGH_PRIORITY_BLOG_SLUGS = new Set([
+    'how-to-prepare-for-11-plus',
+    'grammar-school-entry-requirements-2026',
+    'free-11-plus-practice-test-online',
+    'verbal-reasoning-11-plus-guide',
+    'non-verbal-reasoning-11-plus-guide',
+    'what-is-a-standardised-score',
+    'how-to-prepare-for-gcse',
+    'global-academic-benchmarks-report-2026',
+    'gifted-program-testing-guide',
+    'high-school-internship-benefits-university',
+  ])
+
   const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => {
     const s = post.slug
     const langs: Record<string, string> = { 'en-GB': `${BASE}/blog/${s}`, 'x-default': `${BASE}/blog/${s}` }
@@ -114,7 +127,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE}/blog/${s}`,
       lastModified: post.dateModified ?? post.date,
       changeFrequency: 'monthly' as const,
-      priority: 0.7,
+      priority: HIGH_PRIORITY_BLOG_SLUGS.has(s) ? 0.8 : 0.7,
       alternates: { languages: langs },
     }
   })

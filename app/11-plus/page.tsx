@@ -109,6 +109,25 @@ const COURSE_SCHEMA = {
   about: { '@type': 'Thing', name: '11+ Grammar School Entrance Examination' },
 }
 
+const WEB_APP_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'Eduentry 11+ Practice Test',
+  description: 'Free adaptive 11+ practice test covering verbal reasoning, non-verbal reasoning, English and maths — with standardised scores and percentile rankings on the GL Assessment scale.',
+  url: 'https://eduentry.com/11-plus',
+  applicationCategory: 'EducationalApplication',
+  operatingSystem: 'Web',
+  browserRequirements: 'Requires JavaScript. Compatible with all modern browsers.',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'GBP',
+    availability: 'https://schema.org/InStock',
+  },
+  featureList: 'Adaptive testing, Standardised scores (mean 100 SD 15), Percentile rankings, Verbal reasoning, Non-verbal reasoning, English, Mathematics',
+  inLanguage: 'en-GB',
+}
+
 const REGIONS = [
   'Kent', 'Buckinghamshire', 'Lincolnshire', 'Trafford', 'Birmingham',
   'Gloucestershire', 'Wirral', 'Sutton', 'Walsall', 'Wolverhampton',
@@ -158,6 +177,7 @@ export default function ElevenPlusPage() {
     <div className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(COURSE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEB_APP_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <PublicNav />
