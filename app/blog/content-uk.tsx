@@ -3768,7 +3768,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="flex-1">
             <p className="font-semibold text-gray-900 mb-1">Find out where your child stands — free</p>
-            <p className="text-sm text-gray-600">Eduentry&apos;s adaptive academic assessment benchmarks your child&apos;s verbal, numerical, and reasoning ability against international peers. Takes 20–30 minutes. No registration required.</p>
+            <p className="text-sm text-gray-600">Eduentry&apos;s adaptive academic assessment benchmarks your child&apos;s verbal, numerical, and reasoning ability against international peers. Takes under an hour. No registration required.</p>
           </div>
           <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Start free assessment
@@ -3926,7 +3926,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           One of the barriers families face when trying to give students early professional exposure is logistics. Finding a work placement requires contacts, time, geographic luck, and the confidence to approach employers. Not every family has these things — and the result is that early work experience, like many educational advantages, tends to cluster among students from more privileged backgrounds. This is a structural inequality that the evidence suggests has real consequences for long-term outcomes.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Eduentry&apos;s internship programme is designed to remove these barriers. Available at <Link href="https://eduentry.ai/en" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">eduentry.ai/en</Link>, it is built specifically for students aged 14–18 who are still in secondary school. Students begin with a 34-question adaptive assessment that measures professional readiness across the dimensions that employers actually evaluate: communication, problem-solving, initiative, professional awareness and critical thinking. The assessment is free, takes around 25 minutes, and produces a personalised readiness report that gives students and families a clear picture of where the student stands and what to develop next.
+          Eduentry&apos;s internship programme is designed to remove these barriers. Available at <Link href="https://eduentry.ai/en" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">eduentry.ai/en</Link>, it is built specifically for students aged 14–18 who are still in secondary school. Students begin with a 34-question adaptive assessment that measures professional readiness across the dimensions that employers actually evaluate: communication, problem-solving, initiative, professional awareness and critical thinking. The assessment is free, takes around 20 minutes, and produces a personalised readiness report that gives students and families a clear picture of where the student stands and what to develop next.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           The readiness report is not a score to be anxious about — it is a development tool. It identifies the specific competencies where a student is already strong and the areas where structured practice would have the highest impact. For a student who has never thought carefully about their professional strengths, this is often the first time they receive honest, specific feedback about what they bring to a workplace — and that feedback is motivating in a way that school grades frequently are not, because it connects directly to a world they can see themselves entering.
@@ -3957,7 +3957,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           The OECD&apos;s vision for future-ready students requires motivation, agency and real-world learning strategies. These are not developed in classrooms alone — they require the kind of purposeful engagement that professional experience provides.
         </Callout>
         <p className="text-gray-700 leading-relaxed mb-4">
-          If you are a parent or student looking to take this seriously, the place to start is with an honest assessment of where the student stands today — not just academically, but in terms of professional readiness. Eduentry&apos;s internship assessment is free, takes 25 minutes, and gives students the specific, actionable feedback they need to begin building the skills that PISA 2025 shows are most at risk — and most in demand.
+          If you are a parent or student looking to take this seriously, the place to start is with an honest assessment of where the student stands today — not just academically, but in terms of professional readiness. Eduentry&apos;s internship assessment is free, takes 20 minutes, and gives students the specific, actionable feedback they need to begin building the skills that PISA 2025 shows are most at risk — and most in demand.
         </p>
       </section>
 

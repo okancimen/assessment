@@ -56,7 +56,7 @@ export default function SobreNosotrosPage() {
           <span className="text-[#4F46E5]">para todos los niños, en todo el mundo</span>
         </h1>
         <p className="text-xl text-[#6e6e73] max-w-2xl mx-auto leading-relaxed">
-          Eduentry ofrece a los padres una visión clara y comparada internacionalmente de la situación académica de su hijo — sin coste, en menos de 30 minutos.
+          Eduentry ofrece a los padres una visión clara y comparada internacionalmente de la situación académica de su hijo — sin coste, en menos de una hora.
         </p>
       </div>
 
@@ -124,7 +124,7 @@ export default function SobreNosotrosPage() {
             Las preguntas de evaluación son generadas por <strong className="text-[#1d1d1f]">Claude AI</strong> (Anthropic), restringidas al tema exacto, nivel de dificultad y rango de edad determinado por nuestro motor IRT. Cada pregunta se calibra en tiempo real — cuando un alumno responde correctamente, la siguiente pregunta es más difícil; cuando tiene dificultades, se vuelve más fácil.
           </p>
           <p>
-            Este enfoque adaptativo significa pruebas más cortas con mayor precisión estadística. Una evaluación típica de Eduentry lleva 20–30 minutos por las cuatro materias y produce una puntuación tan fiable como una prueba de formato fijo de 90 minutos.
+            Este enfoque adaptativo significa pruebas más cortas con mayor precisión estadística. Una evaluación típica de Eduentry lleva menos de una hora para las cuatro materias y produce una puntuación tan fiable como una prueba de formato fijo de 90 minutos.
           </p>
           <p>
             Lee más sobre nuestra metodología de puntuación en la <Link href="/es/metodologia" className="text-[#4F46E5] hover:underline">página de metodología</Link>.
@@ -207,7 +207,7 @@ export default function SobreNosotrosPage() {
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">Empieza la evaluación gratuita de tu hijo</h2>
-        <p className="text-indigo-100 mb-8 text-lg">20–30 minutos. Sin pago. Resultados inmediatos.</p>
+        <p className="text-indigo-100 mb-8 text-lg">Menos de una hora. Sin pago. Resultados inmediatos.</p>
         <Link href="/es/auth/register" className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg">
           Empezar gratis
         </Link>

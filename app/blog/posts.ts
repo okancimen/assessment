@@ -1854,7 +1854,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Is your student ready for work experience?',
-      body: 'Eduentry\'s free internship readiness assessment takes 25 minutes and gives students a personalised report — skills breakdown, readiness score, and matched opportunities.',
+      body: 'Eduentry\'s free internship readiness assessment takes 20 minutes and gives students a personalised report — skills breakdown, readiness score, and matched opportunities.',
       label: 'Start internship assessment',
       href: 'https://eduentry.ai/en',
     },

@@ -489,12 +489,12 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       },
       {
         q: '¿Cómo saber en qué posición mundial estaría mi hijo si hubiera hecho PISA?',
-        a: 'PISA no evalúa a estudiantes individuales: trabaja con muestras representativas. Pero existe una forma de obtener una puntuación equivalente: la evaluación adaptativa de Eduentry, basada en la misma metodología (Teoría de Respuesta al Ítem), genera una puntuación estandarizada alineada con la escala internacional de PISA. Puedes ver en qué percentil global se sitúa tu hijo en matemáticas, comprensión lectora y razonamiento, en 20-30 minutos y de forma gratuita.',
+        a: 'PISA no evalúa a estudiantes individuales: trabaja con muestras representativas. Pero existe una forma de obtener una puntuación equivalente: la evaluación adaptativa de Eduentry, basada en la misma metodología (Teoría de Respuesta al Ítem), genera una puntuación estandarizada alineada con la escala internacional de PISA. Puedes ver en qué percentil global se sitúa tu hijo en matemáticas, comprensión lectora y razonamiento, en menos de una hora y de forma gratuita.',
       },
     ],
     cta: {
       heading: 'Descubre dónde se sitúa tu hijo a nivel mundial — gratis',
-      body: 'La evaluación adaptativa de Eduentry genera una puntuación estandarizada alineada con PISA para niños de 6 a 17 años: matemáticas, comprensión lectora y razonamiento. 20-30 minutos, sin registro previo.',
+      body: 'La evaluación adaptativa de Eduentry genera una puntuación estandarizada alineada con PISA para niños de 6 a 17 años: matemáticas, comprensión lectora y razonamiento. Menos de una hora, sin registro previo.',
       label: 'Iniciar evaluación gratuita',
       href: '/es#academica',
     },
@@ -526,7 +526,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     ],
     cta: {
       heading: '¿Está tu estudiante listo para la experiencia laboral?',
-      body: 'La evaluación gratuita de preparación para prácticas de Eduentry toma 25 minutos y proporciona a los estudiantes un informe personalizado — desglose de habilidades, puntuación de preparación y oportunidades adaptadas.',
+      body: 'La evaluación gratuita de preparación para prácticas de Eduentry toma 20 minutos y proporciona a los estudiantes un informe personalizado — desglose de habilidades, puntuación de preparación y oportunidades adaptadas.',
       label: 'Comenzar evaluación de prácticas',
       href: 'https://eduentry.ai/es',
     },
@@ -656,7 +656,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Descubre el perfil cognitivo de tu hijo — gratis',
-      body: 'La evaluación adaptativa de Eduentry mide razonamiento verbal, aptitud numérica, memoria de trabajo y razonamiento espacial, y genera un informe percentil comparado con pares internacionales. 20–30 minutos, sin registro.',
+      body: 'La evaluación adaptativa de Eduentry mide razonamiento verbal, aptitud numérica, memoria de trabajo y razonamiento espacial, y genera un informe percentil comparado con pares internacionales. Menos de una hora, sin registro.',
       label: 'Iniciar evaluación gratuita',
       href: 'https://eduentry.com/#academic',
     },

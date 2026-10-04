@@ -626,7 +626,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Türkiye PISA 2025\'te nasıl bir performans sergiledi?', a: 'Türkiye, PISA 2025\'te OECD ortalamasının altında kalmaya devam etmiştir. Matematik puanı yaklaşık 453 (OECD ortalaması 472), okuma puanı ise 456 (OECD ortalaması 476) olarak gerçekleşmiştir. Bu sonuçlar, Türkiye\'nin Singapur (575) ve Japonya (536) gibi en yüksek performanslı ülkelerin önemli ölçüde gerisinde olduğunu, ancak bazı AB ülkeleriyle benzer düzeyde yer aldığını göstermektedir.' },
       { q: 'PISA\'ya hazırlanmak için evde ne yapılabilir?', a: 'PISA bir bilgi sınavı değil; edinilmiş bilgiyi gerçek yaşam problemlerine uygulama sınavıdır. Bu nedenle PISA\'ya en etkili hazırlık: günlük matematik problemleri çözmek (hesap makinesi olmadan), her gün düzenli okuma alışkanlığı oluşturmak, açık uçlu ve mantık gerektiren sorular üzerinde tartışmak ve standartlaştırılmış bir değerlendirme ile mevcut düzeyi tespit etmektir. Çocuğunuzun gerçek düzeyini bilmek, hangi alanlara odaklanmanız gerektiğini netleştirir.' },
       { q: 'PISA tarzı sorular ne demek?', a: 'PISA tarzı sorular, öğrencinin ezberden bilgi aktarması yerine bu bilgiyi gerçek yaşam bağlamına uygulamasını bekleyen sorulardır. Örneğin "6 × 7 = ?" yerine "Bir markette 6 adet ürün alan bir müşteri..." şeklinde kurgulanan alışveriş veya grafik yorumlama soruları. Bu format Türkiye\'nin ulusal sınavlarından (LGS/YKS) farklıdır; PISA\'da doğru cevap yanıtın nasıl gerekçelendirildiğine bağlıdır.' },
-      { q: 'Çocuğumun PISA düzeyini ücretsiz nasıl ölçebilirim?', a: 'Eduentry, PISA ile aynı metodolojiye — madde tepki teorisi (IRT) — dayanan ücretsiz bir uyarlanabilir değerlendirme sunmaktadır. 6-17 yaş arası çocuklar matematik, İngilizce, sözel akıl yürütme ve sayısal akıl yürütme alanlarında test edilir ve ebeveynlere uluslararası kıyaslamalı bir yüzdelik dilim puanı iletilir. Kayıt gerekmez, sınav 20-30 dakika sürer.' },
+      { q: 'Çocuğumun PISA düzeyini ücretsiz nasıl ölçebilirim?', a: 'Eduentry, PISA ile aynı metodolojiye — madde tepki teorisi (IRT) — dayanan ücretsiz bir uyarlanabilir değerlendirme sunmaktadır. 6-17 yaş arası çocuklar matematik, İngilizce, sözel akıl yürütme ve sayısal akıl yürütme alanlarında test edilir ve ebeveynlere uluslararası kıyaslamalı bir yüzdelik dilim puanı iletilir. Kayıt gerekmez, sınav bir saatten kısa sürer.' },
     ],
     cta: {
       heading: 'Çocuğunuzun PISA düzeyini ücretsiz ölçün',
@@ -674,13 +674,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     tags: ['Akademik Değerlendirme', 'Ücretsiz Test', 'Ebeveyn Rehberi', 'Çocuk Gelişimi', 'PISA'],
     faqs: [
       { q: 'Okul notu çocuğumun gerçek akademik seviyesini gösterir mi?', a: 'Kısmen evet, ama sınırlı ölçüde. Okul notu, öğrencinin kendi sınıfı ya da okulu içindeki göreli konumunu yansıtır — ancak ülke genelinde ya da uluslararası standartlarda nerede durduğunu göstermez. Aynı "A" notunu alan iki öğrenci, farklı okullarda ya da farklı ülkelerde oldukça farklı gerçek seviyeleri temsil edebilir. Uluslararası standartlaştırılmış bir değerlendirme, bu bağımsız ve kıyaslanabilir ölçümü sağlar.' },
-      { q: 'Çocuğumun seviyesini ücretsiz nasıl öğrenebilirim?', a: 'Eduentry, 6-17 yaş arası çocuklar için tamamen ücretsiz bir uyarlanabilir değerlendirme sunar. Matematik, İngilizce, sözel akıl yürütme ve sayısal akıl yürütme alanlarını kapsar. Sınav 20-30 dakika sürer, kayıt gerekmez ve sonuçlar anında görüntülenir. Puan, PISA, İngiltere Ulusal Müfredatı ve IB standartlarına göre kalibre edilmiş bir yüzdelik dilim ile birlikte sunulur.' },
+      { q: 'Çocuğumun seviyesini ücretsiz nasıl öğrenebilirim?', a: 'Eduentry, 6-17 yaş arası çocuklar için tamamen ücretsiz bir uyarlanabilir değerlendirme sunar. Matematik, İngilizce, sözel akıl yürütme ve sayısal akıl yürütme alanlarını kapsar. Sınav bir saatten kısa sürer, kayıt gerekmez ve sonuçlar anında görüntülenir. Puan, PISA, İngiltere Ulusal Müfredatı ve IB standartlarına göre kalibre edilmiş bir yüzdelik dilim ile birlikte sunulur.' },
       { q: '6 yaşındaki çocuk için değerlendirme uygun mu?', a: 'Evet. Eduentry\'nin uyarlanabilir sistemi, soruları her çocuğun verdiği yanıtlara göre gerçek zamanlı olarak ayarlar — çok zor sorulardan sıkılan ya da çok kolay sorularla bunalan çocuğu önler. 6-7 yaş (KS1 / İlkokul 1-2. sınıf eşdeğeri) için tasarlanmış sorular, kelime oyunları ve görsel mantık problemleri içerir. Sınav çocuğa zorlayıcı gelsin ama bunaltmasın diye tasarlanmıştır.' },
       { q: 'Sonuçlar nasıl yorumlanmalıdır?', a: 'Eduentry puanı 100 ortalamalı, 15 standart sapmalı bir ölçekte sunulur — PISA ve CAT4 ile aynı format. 100 puan uluslararası ortalama anlamına gelir; 115 yaklaşık ilk %16, 130 ise yaklaşık ilk %2 anlamına gelir. Rapor, yalnızca toplam puanı değil; dört konu alanındaki alt puanları da göstererek hangi alanda güçlendirilmesi gerektiğini net biçimde ortaya koyar.' },
     ],
     cta: {
       heading: 'Çocuğunuzun akademik seviyesini şimdi ölçün — ücretsiz',
-      body: '6-17 yaş arası çocuklar için 20-30 dakikalık uyarlanabilir değerlendirme. Uluslararası kıyaslamalı standartlaştırılmış puan ve konu bazlı detaylı rapor — kayıt gerekmez.',
+      body: '6-17 yaş arası çocuklar için bir saatten kısa süren uyarlanabilir değerlendirme. Uluslararası kıyaslamalı standartlaştırılmış puan ve konu bazlı detaylı rapor — kayıt gerekmez.',
       label: 'Ücretsiz değerlendirmeyi başlat',
       href: '/tr',
     },
@@ -713,7 +713,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Öğrenciniz iş deneyimine hazır mı?',
-      body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi 25 dakika sürer ve öğrencilere kişiselleştirilmiş bir rapor sunar — beceri dökümü, hazırlık puanı ve eşleştirilmiş fırsatlar.',
+      body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi 20 dakika sürer ve öğrencilere kişiselleştirilmiş bir rapor sunar — beceri dökümü, hazırlık puanı ve eşleştirilmiş fırsatlar.',
       label: 'Staj değerlendirmesini başlat',
       href: 'https://eduentry.ai/tr',
     },
@@ -1016,7 +1016,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Çocuğunuzun bilişsel profilini keşfedin — ücretsiz',
-      body: 'Eduentry\'nin uyarlanabilir akademik değerlendirmesi, sözel, sayısal, çalışan bellek ve uzamsal becerileri uluslararası akranlarla kıyaslar. 20–30 dakika sürer. Kayıt gerekmez.',
+      body: 'Eduentry\'nin uyarlanabilir akademik değerlendirmesi, sözel, sayısal, çalışan bellek ve uzamsal becerileri uluslararası akranlarla kıyaslar. Bir saatten kısa sürer. Kayıt gerekmez.',
       label: 'Ücretsiz değerlendirmeyi başlat',
       href: '/#academic',
     },

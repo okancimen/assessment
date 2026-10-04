@@ -2569,7 +2569,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Erken yaşta staj yapmanın önündeki en yaygın engel motivasyon eksikliği değil, erişim. Çoğu 14–16 yaşındaki öğrenci nereden başlayacağını, neye hazır olduğunu ve hangi sektörün kendisine uyduğunu bilmiyor. Ebeveynler ise çocuklarını doğru yere yönlendirme konusunda belirsizlik içinde.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Eduentry bu boşluğu kapatmak için tasarlandı. Platforma giriş noktası, 14–18 yaş arası lise öğrencileri için hazırlanmış 34 soruluk adaptif bir değerlendirme. Bu değerlendirme üç boyutu ölçüyor: genel aptitude ve problem çözme kapasitesi, hedef sektörle ilgili temel alan bilgisi, ve iletişim ile işyeri becerileri. Yaklaşık 25 dakika süren değerlendirme tamamlandığında, öğrenci kişiselleştirilmiş bir hazırlık raporu alıyor.
+          Eduentry bu boşluğu kapatmak için tasarlandı. Platforma giriş noktası, 14–18 yaş arası lise öğrencileri için hazırlanmış 34 soruluk adaptif bir değerlendirme. Bu değerlendirme üç boyutu ölçüyor: genel aptitude ve problem çözme kapasitesi, hedef sektörle ilgili temel alan bilgisi, ve iletişim ile işyeri becerileri. Yaklaşık 20 dakika süren değerlendirme tamamlandığında, öğrenci kişiselleştirilmiş bir hazırlık raporu alıyor.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           Bu rapor üç temel soruyu yanıtlıyor: Hangi alanlarda güçlüm, hangi alanlarda gelişmem gerekiyor? Hangi sektör benim profilime en uygun? Ve şu an staj için ne kadar hazırım? Bu bilgilerle donanmış bir öğrenci, belirsizliğe değil netliğe dayalı bir adım atıyor. Değerlendirme sonuçları aynı zamanda staj başvurularında işverenlere sunulabilecek somut bir kanıt işlevi görüyor.
@@ -2578,7 +2578,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Eduentry&apos;nin yaklaşımı, stajı seçkin bir azınlık için değil, hazır olan her öğrenci için erişilebilir kılmak. Teknoloji, iş dünyası, dijital pazarlama veya veri analitiği — farklı ilgi alanları ve profiller için farklı yollar mevcut. Başlangıç noktası ise her zaman aynı: nesnel bir değerlendirme, dürüst bir rapor, net bir sonraki adım.
         </p>
         <Callout color="emerald">
-          <strong className="text-emerald-900">Nasıl başlanır:</strong> <Link href="https://eduentry.ai/tr" className="text-emerald-700 underline hover:text-emerald-900">eduentry.ai/tr</Link> adresindeki ücretsiz değerlendirme 25 dakika sürer. Öğrenci, raporu aldığında hangi sektörde ne düzeyde hazır olduğunu ve hangi alanlarda gelişmesi gerektiğini somut olarak görüyor.
+          <strong className="text-emerald-900">Nasıl başlanır:</strong> <Link href="https://eduentry.ai/tr" className="text-emerald-700 underline hover:text-emerald-900">eduentry.ai/tr</Link> adresindeki ücretsiz değerlendirme 20 dakika sürer. Öğrenci, raporu aldığında hangi sektörde ne düzeyde hazır olduğunu ve hangi alanlarda gelişmesi gerektiğini somut olarak görüyor.
         </Callout>
       </section>
 
@@ -2731,7 +2731,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Eduentry'nin uyarlanabilir değerlendirmesi, PISA'nın kullandığı madde tepki teorisini (IRT) temel alır. Sınav, çocuğun verdiği yanıtlara göre gerçek zamanlı olarak zorluk düzeyini ayarlar — tıpkı PISA'nın bilgisayar uyumlu versiyonu gibi. Sonuçta ebeveyn; standartlaştırılmış puan, yüzdelik dilim sıralaması ve konu bazlı güçlü/zayıf alan analizi içeren bir rapor alır.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Sınav tamamen ücretsizdir, kayıt gerektirmez ve 20-30 dakika sürer. 6-17 yaş arasındaki tüm öğrenciler için uygundur.
+          Sınav tamamen ücretsizdir, kayıt gerektirmez ve bir saatten kısa sürer. 6-17 yaş arasındaki tüm öğrenciler için uygundur.
         </p>
       </section>
 
@@ -2879,7 +2879,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <Bullet><strong>Sayısal Akıl Yürütme:</strong> Örüntü tanıma, matrisler, uzamsal düşünme — dilden bağımsız problem çözme kapasitesi.</Bullet>
         </ul>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Sınav 20-30 dakika sürer. Kayıt gerekmez. Sonuçlar anında görüntülenir.
+          Sınav bir saatten kısa sürer. Kayıt gerekmez. Sonuçlar anında görüntülenir.
         </p>
       </section>
 
@@ -3899,7 +3899,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="flex-1">
             <p className="font-semibold text-gray-900 mb-1">Çocuğunuzun gerçek düzeyini öğrenin — ücretsiz</p>
-            <p className="text-sm text-gray-600">Eduentry'nin uyarlanabilir akademik değerlendirmesi, çocuğunuzun sözel, sayısal ve akıl yürütme becerisini uluslararası akranlarıyla kıyaslar. 20–30 dakika sürer. Kayıt gerekmez.</p>
+            <p className="text-sm text-gray-600">Eduentry'nin uyarlanabilir akademik değerlendirmesi, çocuğunuzun sözel, sayısal ve akıl yürütme becerisini uluslararası akranlarıyla kıyaslar. Bir saatten kısa sürer. Kayıt gerekmez.</p>
           </div>
           <Link href="https://eduentry.com/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Ücretsiz değerlendirmeyi başlat
@@ -4135,7 +4135,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="flex-1">
             <p className="font-semibold text-gray-900 mb-1">Çocuğunuzun ücretsiz değerlendirmesini başlatın</p>
-            <p className="text-sm text-gray-600">Eduentry'nin uyarlanabilir değerlendirmesi sözel akıl yürütme, sayısal beceri ve problem çözme performansını uluslararası akranlarıyla karşılaştırıyor. Hangi kariyer yollarının çocuğunuzun doğal güçleriyle örtüştüğünü ve şu an nerede durduğunu somut verilerle görün. 20–30 dakika, kayıt gerekmez.</p>
+            <p className="text-sm text-gray-600">Eduentry'nin uyarlanabilir değerlendirmesi sözel akıl yürütme, sayısal beceri ve problem çözme performansını uluslararası akranlarıyla karşılaştırıyor. Hangi kariyer yollarının çocuğunuzun doğal güçleriyle örtüştüğünü ve şu an nerede durduğunu somut verilerle görün. Bir saatten kısa, kayıt gerekmez.</p>
           </div>
           <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Çocuğunuzun ücretsiz değerlendirmesini başlatın

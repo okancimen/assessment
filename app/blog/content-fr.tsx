@@ -815,13 +815,13 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
           L&apos;un des obstacles les plus fréquents à l&apos;expérience professionnelle précoce est la crédibilité. Comment un lycéen de 14 ou 15 ans, sans CV ni références, peut-il convaincre une organisation de lui confier une vraie responsabilité ? C&apos;est précisément le problème qu&apos;Eduentry a conçu pour résoudre.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          L&apos;évaluation de préparation au stage d&apos;Eduentry — disponible sur <strong>eduentry.ai/fr</strong> — est conçue spécifiquement pour les élèves de 14 à 18 ans encore au lycée. En 25 minutes, l&apos;évaluation adaptative mesure trois dimensions de la préparation professionnelle&nbsp;: la communication (capacité à transmettre des idées clairement et de façon professionnelle), la résolution de problèmes (approche face à des défis non structurés), et la conscience professionnelle (compréhension du fonctionnement des organisations et des attentes professionnelles).
+          L&apos;évaluation de préparation au stage d&apos;Eduentry — disponible sur <strong>eduentry.ai/fr</strong> — est conçue spécifiquement pour les élèves de 14 à 18 ans encore au lycée. En 20 minutes, l&apos;évaluation adaptative mesure trois dimensions de la préparation professionnelle&nbsp;: la communication (capacité à transmettre des idées clairement et de façon professionnelle), la résolution de problèmes (approche face à des défis non structurés), et la conscience professionnelle (compréhension du fonctionnement des organisations et des attentes professionnelles).
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           À l&apos;issue de l&apos;évaluation, chaque élève reçoit un rapport personnalisé comprenant un score de préparation, un bilan détaillé des compétences, et des recommandations adaptées aux opportunités de stage correspondant à son profil. Ce rapport peut être partagé avec des employeurs potentiels — fournissant une preuve objective d&apos;aptitude là où un lycéen n&apos;a pas encore de CV à montrer.
         </p>
         <Callout color="emerald">
-          <strong>Ce que mesure l&apos;évaluation Eduentry Internship&nbsp;:</strong> Communication professionnelle, résolution de problèmes dans des contextes réels, conscience organisationnelle et professionnelle. 34 questions adaptatives, 25 minutes, rapport personnalisé immédiat. Accessible à partir de 14 ans, entièrement gratuit.
+          <strong>Ce que mesure l&apos;évaluation Eduentry Internship&nbsp;:</strong> Communication professionnelle, résolution de problèmes dans des contextes réels, conscience organisationnelle et professionnelle. 34 questions adaptatives, 20 minutes, rapport personnalisé immédiat. Accessible à partir de 14 ans, entièrement gratuit.
         </Callout>
         <p className="text-gray-700 leading-relaxed mb-4">
           Le modèle d&apos;Eduentry s&apos;inscrit directement dans ce que les données PISA 2025 recommandent&nbsp;: objectiver la préparation individuelle plutôt que se fier uniquement aux notes scolaires, et créer des ponts entre les compétences scolaires et les attentes professionnelles réelles. L&apos;évaluation ne remplace pas l&apos;expérience — elle crée les conditions pour qu&apos;elle devienne accessible.
@@ -1130,7 +1130,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
           <strong className="text-emerald-900">Comment lire le score :</strong> Un score de 100 équivaut à la moyenne internationale. 115 correspond approximativement au percentile 84 mondial (top 16 %). 130 correspond approximativement au percentile 98 (top 2 %). La note du bulletin scolaire regarde vers l&apos;intérieur — vers la classe. Cette évaluation regarde vers l&apos;extérieur — vers le monde.
         </Callout>
         <p className="text-gray-700 leading-relaxed mb-4">
-          L&apos;évaluation dure 20 à 30 minutes, est entièrement gratuite et ne requiert aucune inscription préalable. Les résultats incluent des scores par domaine et un comparatif en percentile mondial.
+          L&apos;évaluation dure moins d’une heure, est entièrement gratuite et ne requiert aucune inscription préalable. Les résultats incluent des scores par domaine et un comparatif en percentile mondial.
         </p>
         <div className="mt-6 mb-2">
           <a href="/fr#academique" className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#4338CA] transition-colors">
@@ -1997,7 +1997,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
         <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="flex-1">
             <p className="font-semibold text-gray-900 mb-1">Découvrez le niveau réel de votre enfant — gratuitement</p>
-            <p className="text-sm text-gray-600">L'évaluation adaptative d'Eduentry compare les capacités verbales, numériques et de raisonnement de votre enfant à celles de ses pairs internationaux. 20–30 minutes. Sans inscription.</p>
+            <p className="text-sm text-gray-600">L'évaluation adaptative d'Eduentry compare les capacités verbales, numériques et de raisonnement de votre enfant à celles de ses pairs internationaux. Moins d’une heure. Sans inscription.</p>
           </div>
           <Link href="https://eduentry.com/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Commencer l'évaluation gratuite
@@ -2276,7 +2276,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
           <strong>WEF Rapport 2025 :</strong> 40 % des emplois mondiaux seront perturbés par l&apos;IA d&apos;ici 2030. Dans le même temps, 65 métiers affichent une probabilité d&apos;automatisation de 0,0 %. La question pour chaque famille n&apos;est pas de choisir entre l&apos;IA et l&apos;humain — c&apos;est de positionner son enfant là où l&apos;humain est irremplaçable.
         </Callout>
         <p className="text-gray-700 leading-relaxed mb-4">
-          L&apos;évaluation adaptative gratuite d&apos;Eduentry compare les compétences de raisonnement verbal, numérique et de résolution de problèmes de votre enfant avec celles de ses pairs à l&apos;international. En 20 à 30 minutes, sans inscription préalable, vous obtenez un profil cognitif détaillé qui vous montre exactement où se trouvent ses points forts — et lesquels correspondent aux exigences des filières menant aux métiers les plus protégés de l&apos;IA. C&apos;est une information que vous pouvez utiliser dès aujourd&apos;hui pour orienter les choix de spécialités, préparer l&apos;entretien d&apos;orientation et construire un projet d&apos;avenir qui tient compte à la fois des talents de votre enfant et des réalités du marché du travail de demain.
+          L&apos;évaluation adaptative gratuite d&apos;Eduentry compare les compétences de raisonnement verbal, numérique et de résolution de problèmes de votre enfant avec celles de ses pairs à l&apos;international. En moins d’une heure, sans inscription préalable, vous obtenez un profil cognitif détaillé qui vous montre exactement où se trouvent ses points forts — et lesquels correspondent aux exigences des filières menant aux métiers les plus protégés de l&apos;IA. C&apos;est une information que vous pouvez utiliser dès aujourd&apos;hui pour orienter les choix de spécialités, préparer l&apos;entretien d&apos;orientation et construire un projet d&apos;avenir qui tient compte à la fois des talents de votre enfant et des réalités du marché du travail de demain.
         </p>
 
         <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">

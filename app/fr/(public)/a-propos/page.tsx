@@ -56,7 +56,7 @@ export default function AProposPage() {
           <span className="text-[#4F46E5]">pour tous les enfants, partout dans le monde</span>
         </h1>
         <p className="text-xl text-[#6e6e73] max-w-2xl mx-auto leading-relaxed">
-          Eduentry offre aux parents une vision claire et comparée internationalement de la situation académique de leur enfant — sans frais, en moins de 30 minutes.
+          Eduentry offre aux parents une vision claire et comparée internationalement de la situation académique de leur enfant — sans frais, en moins d’une heure.
         </p>
       </div>
 
@@ -124,7 +124,7 @@ export default function AProposPage() {
             Les questions d&apos;évaluation sont générées par <strong className="text-[#1d1d1f]">Claude AI</strong> (Anthropic), restreintes au sujet exact, au niveau de difficulté et à la tranche d&apos;âge déterminés par notre moteur TRI. Chaque question est calibrée en temps réel — quand un élève répond correctement, la question suivante est plus difficile ; quand il a des difficultés, elle devient plus facile.
           </p>
           <p>
-            Cette approche adaptative signifie des tests plus courts avec une plus grande précision statistique. Une évaluation Eduentry typique dure 20–30 minutes pour les quatre matières et produit un score aussi fiable qu&apos;un test à format fixe de 90 minutes.
+            Cette approche adaptative signifie des tests plus courts avec une plus grande précision statistique. Une évaluation Eduentry typique dure moins d’une heure pour les quatre matières et produit un score aussi fiable qu&apos;un test à format fixe de 90 minutes.
           </p>
           <p>
             En savoir plus sur notre méthodologie de scoring sur la <Link href="/fr/methodologie" className="text-[#4F46E5] hover:underline">page méthodologie</Link>.
@@ -207,7 +207,7 @@ export default function AProposPage() {
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">Commencez l&apos;évaluation gratuite de votre enfant</h2>
-        <p className="text-indigo-100 mb-8 text-lg">20–30 minutes. Sans paiement. Résultats immédiats.</p>
+        <p className="text-indigo-100 mb-8 text-lg">Moins d’une heure. Sans paiement. Résultats immédiats.</p>
         <Link href="/fr/auth/register" className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg">
           Commencer gratuitement
         </Link>

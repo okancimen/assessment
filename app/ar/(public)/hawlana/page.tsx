@@ -56,7 +56,7 @@ export default function HawlanaPage() {
           <span className="text-[#4F46E5]">لكل طفل في كل مكان</span>
         </h1>
         <p className="text-xl text-[#6e6e73] max-w-2xl mx-auto leading-relaxed">
-          يُقدم Eduentry لأولياء الأمور صورة واضحة ومقارنة دولياً لمستوى أطفالهم الأكاديمي — مجاناً وفي أقل من 30 دقيقة.
+          يُقدم Eduentry لأولياء الأمور صورة واضحة ومقارنة دولياً لمستوى أطفالهم الأكاديمي — مجاناً وفي أقل من ساعة.
         </p>
       </div>
 
@@ -124,7 +124,7 @@ export default function HawlanaPage() {
             أسئلة التقييم مُولَّدة بواسطة <strong className="text-[#1d1d1f]">Claude AI</strong> (Anthropic)، محدودة بالموضوع الدقيق ومستوى الصعوبة والفئة العمرية التي يحددها محرك IRT لدينا. كل سؤال معايَر في الوقت الفعلي — عند الإجابة الصحيحة يصعب السؤال التالي، وعند الخطأ يصبح أسهل.
           </p>
           <p>
-            يعني هذا النهج التكيفي اختبارات أقصر بدقة إحصائية أعلى. يستغرق تقييم Eduentry النموذجي 20-30 دقيقة في المواد الأربعة وينتج درجة موثوقة بقدر اختبار ثابت التنسيق مدته 90 دقيقة.
+            يعني هذا النهج التكيفي اختبارات أقصر بدقة إحصائية أعلى. يستغرق تقييم Eduentry النموذجي أقل من ساعة في المواد الأربعة وينتج درجة موثوقة بقدر اختبار ثابت التنسيق مدته 90 دقيقة.
           </p>
           <p>
             تعرف على منهجية التقييم في <Link href="/ar/manhajiyya" className="text-[#4F46E5] hover:underline">صفحة المنهجية</Link>.
@@ -207,7 +207,7 @@ export default function HawlanaPage() {
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">ابدأ تقييم طفلك المجاني</h2>
-        <p className="text-indigo-100 mb-8 text-lg">20-30 دقيقة. بدون دفع. نتائج فورية.</p>
+        <p className="text-indigo-100 mb-8 text-lg">أقل من ساعة. بدون دفع. نتائج فورية.</p>
         <Link href="/ar/auth/register" className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg">
           ابدأ مجاناً
         </Link>
