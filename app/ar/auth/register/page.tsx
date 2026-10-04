@@ -111,6 +111,13 @@ export default function ARRegisterPage() {
             تسجيل الدخول
           </Link>
         </p>
+
+        <p className="text-center text-xs text-[#6e6e73] mt-3">
+          هل تريد أن ترى ما ستحصل عليه أولاً؟{' '}
+          <Link href="/ar/taqrir-namudhaji" className="text-[#4F46E5] font-semibold hover:underline">
+            اطّلع على تقرير نموذجي ←
+          </Link>
+        </p>
       </div>
     </div>
   )

@@ -111,6 +111,13 @@ export default function RURegisterPage() {
             Войти
           </Link>
         </p>
+
+        <p className="text-center text-xs text-[#6e6e73] mt-3">
+          Хотите сначала посмотреть, что вы получите?{' '}
+          <Link href="/ru/primer-otcheta" className="text-[#4F46E5] font-semibold hover:underline">
+            Посмотреть пример отчёта →
+          </Link>
+        </p>
       </div>
     </div>
   )

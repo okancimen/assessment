@@ -112,6 +112,13 @@ export default function ZHRegisterPage() {
             登录
           </Link>
         </p>
+
+        <p className="text-center text-xs text-[#6e6e73] mt-3">
+          想先看看您将获得什么吗？{' '}
+          <Link href="/zh/yangben-baogao" className="text-[#4F46E5] font-semibold hover:underline">
+            查看样本报告 →
+          </Link>
+        </p>
       </div>
     </div>
   )

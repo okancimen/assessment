@@ -111,6 +111,13 @@ export default function ESRegisterPage() {
             Iniciar sesión
           </Link>
         </p>
+
+        <p className="text-center text-xs text-[#6e6e73] mt-3">
+          ¿Quieres ver primero qué recibirás?{' '}
+          <Link href="/es/informe-de-ejemplo" className="text-[#4F46E5] font-semibold hover:underline">
+            Ver un informe de ejemplo →
+          </Link>
+        </p>
       </div>
     </div>
   )

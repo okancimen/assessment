@@ -111,6 +111,13 @@ export default function FRRegisterPage() {
             Se connecter
           </Link>
         </p>
+
+        <p className="text-center text-xs text-[#6e6e73] mt-3">
+          Vous voulez d’abord voir ce que vous obtiendrez ?{' '}
+          <Link href="/fr/exemple-de-rapport" className="text-[#4F46E5] font-semibold hover:underline">
+            Voir un exemple de rapport →
+          </Link>
+        </p>
       </div>
     </div>
   )
