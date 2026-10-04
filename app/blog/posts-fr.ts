@@ -1410,6 +1410,43 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: '/fr/auth/register',
     },
   },
+  {
+    slug: 'habitudes-eviter-chomage-futur',
+    contentSlug: 'habits-to-avoid-future-unemployment',
+    title: 'Les Habitudes que Votre Enfant Doit Développer Maintenant pour Éviter le Chômage',
+    shortTitle: 'Habitudes pour Éviter le Chômage Futur',
+    description:
+      '8 habitudes qui protègent les enfants du chômage futur : pensée critique, littératie IA, culture financière et expérience réelle. Guide parental basé sur les recherches de McKinsey, FEM et OCDE.',
+    tldr: 'McKinsey estime que 375 millions de travailleurs dans le monde — 14% de la main-d\'œuvre — devront changer de métier d\'ici 2030. Mais les compétences les plus difficiles à reproduire pour l\'IA sont constantes dans toutes les grandes études : la pensée critique, la créativité, l\'intelligence émotionnelle et l\'initiative. Celles-ci ne se construisent pas avec des notes ; elles se construisent avec des habitudes formées tôt.',
+    date: '2026-10-04',
+    dateModified: '2026-10-04',
+    readTime: '13 min de lecture',
+    tags: ['Développement de l\'Enfant', 'Développement de Carrière', 'Guide des Parents', 'Alphabétisation Numérique', 'Entrepreneuriat'],
+    faqs: [
+      {
+        q: 'À quel âge les enfants devraient-ils commencer à développer ces habitudes ?',
+        a: 'Plus tôt c\'est mieux — mais il n\'est jamais trop tard. Les habitudes fondamentales (curiosité, lecture, prise de responsabilité) peuvent commencer dès 4–6 ans. La culture financière et la culture numérique deviennent concrètes à 8–10 ans. L\'expérience professionnelle réelle produit le meilleur retour développemental à 14–16 ans.',
+      },
+      {
+        q: 'Quels emplois l\'IA va-t-elle remplacer ?',
+        a: 'L\'analyse McKinsey de 2023 a identifié les risques d\'automatisation les plus élevés dans la saisie de données et le travail de bureau répétitif (78% de potentiel d\'automatisation), les rôles de service client (53%) et la comptabilité de base (47%). Les rôles les plus résistants sont ceux qui nécessitent une résolution de problèmes complexes, une intelligence sociale et de la créativité.',
+      },
+      {
+        q: 'Les notes scolaires ne suffisent-elles pas ?',
+        a: 'Les notes sont nécessaires mais pas suffisantes. 92% des responsables du recrutement privilégient les compétences non techniques par rapport aux qualifications techniques, selon l\'enquête mondiale LinkedIn de 2023. Les notes ouvrent la porte ; ces habitudes vous permettent d\'entrer.',
+      },
+      {
+        q: 'Comment enseigner la culture financière à un enfant ?',
+        a: 'La méthode la plus efficace est l\'argent réel avec de vraies décisions. Donnez de l\'argent de poche adapté à l\'âge et ne dictez pas comment le dépenser — mais examinez-le ensemble. Un système à trois bocaux (dépenser, épargner, donner) fonctionne dès l\'âge de six ans. À l\'adolescence, introduisez la budgétisation de base, les concepts de fonds indiciels et le fonctionnement du crédit.',
+      },
+    ],
+    cta: {
+      heading: 'Découvrez où en est votre enfant aujourd\'hui',
+      body: 'Évaluation adaptative gratuite pour les enfants de 6 à 17 ans. Score standardisé en pensée critique, raisonnement verbal et numérique — comparé internationalement.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: '/fr/auth/register',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

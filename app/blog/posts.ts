@@ -2344,6 +2344,56 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/auth/register',
     },
   },
+  {
+    slug: 'habits-to-avoid-future-unemployment',
+    title: '8 Habits Children Should Build Now to Avoid Future Unemployment',
+    shortTitle: 'Habits Children Need Now to Avoid Future Unemployment',
+    description:
+      'Eight habits that protect children from future unemployment — AI literacy, critical thinking, financial literacy and real-world experience. What McKinsey, WEF and OECD say parents should prioritise.',
+    tldr: 'McKinsey estimates 375 million workers globally — 14% of the workforce — will need to change occupations by 2030. But the skills hardest for AI to replicate are consistent across every major study: critical thinking, creativity, emotional intelligence, and initiative. These are not built by grades; they are built by habits formed early.',
+    date: '2026-10-04',
+    dateModified: '2026-10-04',
+    readTime: '13 min read',
+    tags: ['Child Development', 'Career Development', 'Future of Work', 'Digital Literacy', 'Automation', 'Parent Guide', 'Financial Literacy'],
+    howToSteps: [
+      { name: 'Build critical thinking habits', text: 'Make questioning a daily reflex. When your child reads news or watches content, ask "How do we know this?" and "Is there another explanation?" Structured debate, chess, and logic puzzles build this muscle from age 7 upward.' },
+      { name: 'Develop digital and AI literacy', text: 'Start with Scratch or Code.org at age 8–12 to learn algorithmic thinking. Progress to Python basics and data tools at 12–15. By 15, introduce real projects using APIs and AI-assisted research so your child learns to direct and evaluate AI outputs critically.' },
+      { name: 'Practise communication and emotional intelligence', text: 'Enrol children in team sports, drama, or debate clubs. At home, ask consistently: "How do you think that person felt?" and "What could you have done differently?" These build the empathy and conflict-resolution capacity that 92% of hiring managers rank above technical skills (LinkedIn, 2023).' },
+      { name: 'Introduce financial literacy with real money', text: 'Give age-appropriate pocket money and use the three-jar system from age 6: spend, save, give. In adolescence, introduce basic budgeting, compound interest, and index fund concepts. OECD research shows financial literacy is learned in the family, not at school.' },
+      { name: 'Cultivate self-directed learning', text: 'When your child is curious about something, ask "How could you find out more?" instead of answering immediately. Help them navigate online courses, books, and communities. This builds the learning-how-to-learn capacity that matters most as skill half-lives shorten to 2.5 years (IBM research).' },
+      { name: 'Encourage an entrepreneurial mindset', text: 'Ask your child to notice a problem at school and propose a solution to a teacher. Start small: reorganise a shelf, fix a recurring issue, propose a process improvement. Completing a small initiative — however modest — trains the problem-noticing and action-taking loop.' },
+      { name: 'Pursue real-world work experience', text: 'Arrange structured work placements from age 14–16. Target at least four employer contacts before age 16 — Education and Employers research shows this makes young people five times less likely to be NEET at 19. Use the Eduentry assessment to identify strengths and communicate readiness to employers.' },
+      { name: 'Strengthen time management and self-discipline', text: 'Build small commitments followed through: 15 minutes of reading daily, one task completed before starting another, on time when promised. These micro-habits compound. The capacity to delay gratification — formed in childhood — is one of the strongest career outcome predictors in 40-year longitudinal research (Stanford).' },
+    ],
+    faqs: [
+      {
+        q: 'At what age should children start building these habits?',
+        a: 'Earlier is better — but it is never too late. Foundational habits (curiosity, reading, taking responsibility) can begin at age 4–6. Financial literacy and digital literacy become concrete at 8–10. Real-world work experience produces the highest developmental return at 14–16. If your child is 12, there is still a great deal you can do. At 16, they are still early by most measures.',
+      },
+      {
+        q: 'Which jobs will AI replace?',
+        a: 'McKinsey Global Institute\'s 2023 analysis identified the highest automation risk in data entry and repetitive office work (78% automation potential), customer service roles (53%), and basic bookkeeping (47%). The most resilient roles are those requiring complex problem-solving, social intelligence, and creativity: nursing, therapy, software architecture, entrepreneurship, and education. Automation typically targets specific tasks within a job, not the entire role — so people who are strong on the tasks AI cannot replicate are well positioned.',
+      },
+      {
+        q: 'Are school grades not enough?',
+        a: 'Grades are necessary but not sufficient. Consider two candidates with identical academic records: what distinguishes them? Real-world experience, a problem-solving track record, and communication ability — exactly the habits covered here. LinkedIn\'s 2023 survey found 92% of hiring managers prioritise soft skills over technical qualifications. Grades open the door; these habits get you inside.',
+      },
+      {
+        q: 'How do I teach financial literacy to a child?',
+        a: 'The most effective method is real money with real decisions. Give age-appropriate pocket money and resist the urge to dictate how it is spent — but review choices together. A three-jar system (spend, save, give) works from age six. In adolescence, introduce basic budgeting, index fund concepts, and how credit works. OECD research consistently shows that financial literacy in young people is learned within the family, not at school.',
+      },
+      {
+        q: 'Is entrepreneurship suitable for every child?',
+        a: 'Entrepreneurship is not synonymous with starting a company. The underlying capability is: noticing a problem, generating a solution, and taking initiative — and that mindset is valuable whether a child becomes an employee, a manager, or an artist. The WEF\'s 2025 Workforce Report lists "entrepreneurial mindset" among the top 10 most sought-after competencies in future hiring. Not every child will become an entrepreneur; every child can learn to take initiative.',
+      },
+    ],
+    cta: {
+      heading: 'Find out where your child stands today',
+      body: 'Free adaptive assessment for children aged 6–17. Standardised score in critical thinking, verbal and numerical reasoning — benchmarked internationally.',
+      label: 'Start free assessment',
+      href: '/auth/register',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

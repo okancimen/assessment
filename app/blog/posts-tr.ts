@@ -1567,6 +1567,57 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr/auth/register',
     },
   },
+  {
+    slug: 'gelecekte-issiz-kalmamak-icin-aliskanliklar',
+    contentSlug: 'habits-to-avoid-future-unemployment',
+    title: 'Çocuğun Gelecekte İşsiz Kalmaması için Şimdiden Edinmesi Gereken 8 Alışkanlık',
+    shortTitle: 'Çocuğun İşsiz Kalmaması için Alışkanlıklar',
+    description:
+      'Çocuğunuzun gelecekte işsiz kalmaması için şimdiden edinmesi gereken 8 alışkanlık: eleştirel düşünme, dijital okuryazarlık, finansal zeka ve gerçek iş deneyimi. McKinsey ve WEF araştırmalarıyla.',
+    tldr: 'McKinsey\'nin araştırmasına göre 2030\'a kadar küresel iş gücünün %14\'ü — yaklaşık 375 milyon çalışan — meslek değiştirmek zorunda kalacak. Yapay zekanın kolayca ikame edemediği beceriler ise tutarlı biçimde şunlar öne çıkıyor: eleştirel düşünme, yaratıcılık, duygusal zeka ve inisiyatif. Bu beceriler okul notlarıyla değil, erken yaşta edinilen alışkanlıklarla kazanılıyor.',
+    date: '2026-10-04',
+    dateModified: '2026-10-04',
+    readTime: '13 dk okuma',
+    tags: ['Çocuk Gelişimi', 'Kariyer Gelişimi', 'Ebeveyn Rehberi', 'Dijital Okuryazarlık', 'Yapay Zeka', 'Finansal Okuryazarlık', 'Girişimcilik'],
+    howToSteps: [
+      { name: 'Eleştirel düşünme alışkanlığı geliştirin', text: 'Soru sormayı günlük refleks haline getirin. Çocuğunuz bir içerik okuyunca "Bunu nasıl biliyoruz?", "Başka bir açıklama var mı?" diye sorun. Münazara kulübü, satranç ve mantık bulmacaları bu kası 7 yaşından itibaren geliştirir.' },
+      { name: 'Dijital ve yapay zeka okuryazarlığı kazandırın', text: '8–12 yaşta Scratch veya Code.org ile algoritmik düşünceye başlayın. 12–15 yaşta Python temelleri ve veri görselleştirme araçlarına geçin. 15 yaşından itibaren gerçek projeler ve yapay zeka destekli araştırma yaptırın.' },
+      { name: 'İletişim becerileri ve duygusal zekayı güçlendirin', text: 'Takım sporları, tiyatro veya münazara kulübüne kaydettirin. Evde "Sence o kişi nasıl hissetti?" ve "Farklı ne yapabilirdin?" sorularını düzenli sorun. LinkedIn\'in 2023 araştırmasına göre işe alım yöneticilerinin %92\'si bu becerilere teknik becerilerden daha çok değer veriyor.' },
+      { name: 'Finansal okuryazarlığı gerçek para ile öğretin', text: '6 yaşından itibaren üç kutu sistemi: harca, biriktir, bağışla. Ergenlikte basit bütçeleme, bileşik faiz ve endeks fonu kavramlarını tanıtın. OECD araştırması finansal okuryazarlığın aile içinde, okulda değil öğrenildiğini gösteriyor.' },
+      { name: 'Öz yönelimli öğrenme kapasitesi inşa edin', text: 'Çocuğunuz bir konuyla ilgilendiğinde cevabı siz vermeyin; "Bunu nasıl öğrenebilirsin?" diye sorun. Çevrimiçi kurslar, kitaplar ve topluluklara yönlendirin. IBM araştırmasına göre teknik becerilerin yarı ömrü 2,5 yıl — öğrenmeyi öğrenmek en değerli meta beceri.' },
+      { name: 'Girişimcilik zihniyeti ve inisiyatif geliştirin', text: 'Okulda fark ettiği bir sorunu öğretmenine öneri olarak iletmesini teşvik edin. Küçük ama tamamlanmış bir inisiyatif bu kasın gelişmesini sağlar. WEF 2025 raporuna göre girişimcilik zihniyeti işverenlerin en çok aradığı ilk 10 yeterlilik arasında.' },
+      { name: 'Gerçek dünya iş deneyimi edindirin', text: '14–16 yaşından itibaren yapılandırılmış staj veya iş deneyimi yerleştirmesi ayarlayın. Education and Employers araştırması, 16 yaşından önce en az dört işveren teması olan gençlerin 19 yaşında işsiz kalma olasılığının beş kat daha düşük olduğunu gösteriyor.' },
+      { name: 'Zaman yönetimi ve öz disiplin alışkanlığı kazandırın', text: 'Küçük taahhütleri yerine getirme pratiği yapın: her gün 15 dakika okuma, bir görevi bitirmeden diğerine geçmeme. Bu mikro alışkanlıklar birikir. Stanford\'un 40 yıllık araştırması ödülü erteleme kapasitesini en güçlü kariyer başarısı göstergelerinden biri olarak sıralıyor.' },
+    ],
+    faqs: [
+      {
+        q: 'Bu alışkanlıkları kaç yaşında başlatmak gerekiyor?',
+        a: 'Ne kadar erken o kadar iyi — ama hiçbir zaman geç değil. Temel alışkanlıklar (merak, okuma, sorumluluk üstlenme) 4–6 yaşında başlar. Finansal okuryazarlık ve dijital okuryazarlık 8–10 yaşında somutlaşabilir. Gerçek iş deneyimi ise 14–16 yaşında en yüksek gelişimsel etkiyi üretiyor. Çocuğunuz 12 yaşındaysa yapabileceğiniz çok şey var; 16 yaşındaysa hâlâ erkenci sayılır.',
+      },
+      {
+        q: 'Yapay zeka hangi meslekleri ortadan kaldıracak?',
+        a: 'McKinsey Global Institute\'un 2023 analizine göre en yüksek otomasyon riski taşıyan görevler şunlar: veri girişi ve tekrarlayan büro işleri (%78 otomasyon potansiyeli), müşteri hizmetleri temsilciliği (%53), temel muhasebe ve defter tutma (%47). Buna karşın en dirençli alanlar; karmaşık problem çözme, sosyal zeka ve yaratıcılık gerektiren meslekler: hemşirelik, terapi, yazılım mimarliği, girişimcilik, eğitim. Otomasyon genellikle tüm mesleği değil, meslekteki belirli görevleri etkiliyor — dolayısıyla yapay zekanın üstlenemediği görevlerde güçlü olan insanlar avantajlı.',
+      },
+      {
+        q: 'Çocuğuma finansal okuryazarlığı nasıl öğreteceğim?',
+        a: 'En etkili yöntem gerçek para ile gerçek kararlar. Yaşına uygun haftalık harçlık verin ve nasıl harcayacağına karışmayın — ama birlikte değerlendirin. Harcama, birikim ve bağış için üç kutu sistemi (harca–biriktir–bağışla) 6 yaşından itibaren işe yarıyor. Ergenlikte basit bütçeleme araçları, endeks fonu gibi yatırım kavramları ve kredi mekanizmasını anlamak kritik önem taşıyor. OECD\'nin araştırması, gençlerde finansal okuryazarlığın okul değil aile içinde öğrenildiğini ortaya koyuyor.',
+      },
+      {
+        q: 'Okul notları yeterli değil mi?',
+        a: 'Okul notları gerekli ama yeterli değil. İki adayın not ortalaması eşit olduğunu düşünün — işveren neye bakacak? Gerçek dünya deneyimine, problem çözme geçmişine, iletişim becerisine. LinkedIn\'in 2023 anketine göre işe alım yöneticilerinin %92\'si teknik becerilerden ziyade "yumuşak becerilere" öncelik veriyor. Notlar kapıyı açar; bu alışkanlıklar içeri girmenizi sağlar.',
+      },
+      {
+        q: 'Girişimcilik her çocuk için uygun mu?',
+        a: 'Girişimcilik şirket kurmakla eşanlamlı değil. Burada kastedilen zihniyettir: bir sorunu fark etme, çözüm üretme ve inisiyatif alma. Bu zihniyet bir çalışan olarak da, lider olarak da, sanatçı olarak da işe yarar. WEF\'in 2025 İş Gücü Raporu, "girişimcilik zihniyetini" gelecekteki işe alımlarda en çok aranan ilk 10 yeterlilik arasında gösteriyor. Her çocuk girişimci olmayacak; ama her çocuğun inisiyatif alabilmesi gerekiyor.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun şu an nerede durduğunu öğrenin',
+      body: '6–17 yaş arası çocuklar için ücretsiz uyarlanabilir değerlendirme. Eleştirel düşünme, sözel ve sayısal akıl yürütme alanlarında uluslararası kıyaslamalı standartlaştırılmış puan.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/auth/register',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

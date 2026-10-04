@@ -2602,6 +2602,83 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'haizi-wei-lai-jiu-ye-xiguan': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        世界经济论坛估计，今天进入小学的65%的孩子将来会从事目前尚不存在的工作。麦肯锡全球研究院预测，到2030年，全球约3.75亿劳动者——占劳动力总量的14%——将因自动化而不得不改变职业。模式很清晰：某些技能将被替代；其他技能的价值将大幅上升。我们知道是哪些技能。问题在于孩子们是否正在培养这些技能。
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        本文涵盖了研究一致认为可以防止未来失业的八个习惯。这些习惯都没有系统地纳入学校课程。它们都会随时间积累——这就是为什么尽早开始很重要。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">1. 批判性思维与问题解决</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          被世界经济论坛列为2025年及以后最重要的技能。批判性思维不仅仅是区分对与错——它是用证据检验主张、从多个角度分析问题并为复杂挑战生成创造性解决方案的能力。这也是人工智能仍然最受限制的领域。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">在家应用：</strong>当孩子看新闻或读文章时，问他们："我们怎么知道这一点？"、"有没有其他解释？"、"谁在说这个，为什么？"这些问题起初感觉不寻常，但随着重复会变得自动。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">2. 数字素养与人工智能素养</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          数字素养不是会用手机。它是理解系统如何运作、读取数据、掌握基本编程逻辑，以及——越来越重要的是——能够有效且批判性地使用人工智能工具。了解人工智能能做什么、不能做什么的人将从同龄人中脱颖而出。
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>8–12岁：</strong>Scratch或Code.org——什么是算法？什么是循环？</Check>
+          <Check><strong>12–15岁：</strong>Python基础、数据可视化工具、理解人工智能系统的工作原理</Check>
+          <Check><strong>15岁以上：</strong>使用API的真实项目、人工智能辅助研究、提示词工程基础</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">3. 沟通技能与情商</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          领英2023年全球招聘调查发现，92%的招聘经理将软技能——沟通、同理心、协作、适应能力——置于技术资格之上。技术技能可以训练；真正倾听团队、建设性地解决冲突、在压力下保持可靠则难以教导得多。
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">研究发现：</strong>哈佛大学75年追踪研究发现，职业成功的最强预测因子不是智商、成绩或就读的大学——而是建立关系的能力。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">4. 财商教育</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          经合组织2023年PISA金融素养评估发现，只有33%的15岁青少年表现出对基本金融概念的理解。财商教育不是背诵规则；而是与金钱建立健康关系。这种关系在早期形成。
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Check><strong>6–10岁：</strong>三罐系统——花费、储蓄、捐赠</Check>
+          <Check><strong>10–14岁：</strong>简单的收入支出追踪、复利概念</Check>
+          <Check><strong>14岁以上：</strong>什么是指数基金，为什么通货膨胀很重要，信贷如何运作</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5. 真实世界经验</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          对超过20,000名年轻人的追踪研究发现，在16岁之前至少有四次有意义的雇主接触的学生，在19岁时失业或脱离教育的可能性是没有这种经验的同龄人的<strong>五分之一</strong>。真实经验同时建立：技能、人脉和叙述。
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">NACE数据：</strong>83%的雇主在招聘应届毕业生时将实习经验评为"重要"或"非常重要"。有过实习经验的学生在毕业前获得工作offer的概率高出70%。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">总结</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          这八个习惯没有一个被系统地纳入学校课程。它们都在家里、在家庭中、通过真实经历而形成。它们都有一个共同的特性：随时间积累。8岁开始的好奇心习惯在18岁时产生独特的分析能力。14岁开始的实习链在22岁时转化为直接的工作机会。
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>4–8岁：</strong>好奇心、责任感、金钱概念、三罐系统</Check>
+          <Check><strong>8–12岁：</strong>基本编程逻辑、批判性提问、预算、团队合作</Check>
+          <Check><strong>12–15岁：</strong>人工智能素养、小型创业项目、持续阅读</Check>
+          <Check><strong>15–18岁：</strong>实习和工作经验、深化财商教育、建立人脉网络</Check>
+        </ul>
+      </section>
+    </>
+  ),
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

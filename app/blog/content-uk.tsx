@@ -5208,6 +5208,163 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'habits-to-avoid-future-unemployment': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        The World Economic Forum estimates that 65% of children entering primary school today will work in jobs that do not yet exist. McKinsey Global Institute projects that around 375 million workers — 14% of the global workforce — will need to change occupations by 2030 due to automation. These numbers can feel abstract. But the pattern they point to is specific: certain skills will be displaced; others will become dramatically more valuable. We know which ones. The question is whether children are building them.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        This article covers eight habits that research consistently identifies as protective against future unemployment. None are reliably taught in school curricula. All of them compound over time, which is why starting early matters.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Critical Thinking and Problem-Solving</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ranked the single most important skill for 2025 and beyond by the WEF, critical thinking is not simply knowing right from wrong — it is the capacity to test claims against evidence, analyse problems from multiple angles, and generate creative solutions to complex challenges. It is also the area where AI remains most limited. AI can recognise patterns; it cannot genuinely interrogate assumptions.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Stanford University's "Civic Online Reasoning" study found that 82% of middle and high school students could not reliably distinguish sponsored content from verified news. This gap is not solved by higher grades; it is solved by the habit of questioning what you read.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Apply at home:</strong> When your child watches news or reads an article, ask: "How do we know this?", "Is there another explanation?", "Who is saying this, and why?" These feel unusual at first. With repetition, they become automatic.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Digital and AI Literacy</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Digital literacy is not about being able to use a phone. It is about understanding how systems work, reading data, grasping basic programming logic, and — increasingly — being able to use AI tools effectively and critically. The Oxford Internet Institute's 2024 research projects that AI literacy will reach the same professional necessity as computer literacy did in the 1990s within the next decade.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A critical distinction: the person who uses AI will not lose value. The person who understands what AI can and cannot do — who can direct it intelligently and evaluate its outputs critically — will differentiate themselves from both AI and from peers who only received traditional education.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>Ages 8–12:</strong> Scratch or Code.org — what is an algorithm? What is a loop?</Check>
+          <Check><strong>Ages 12–15:</strong> Python basics, data visualisation tools, understanding how AI systems work conceptually</Check>
+          <Check><strong>Ages 15+:</strong> Real projects using APIs, AI-assisted research, foundations of prompt engineering</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Communication Skills and Emotional Intelligence</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          LinkedIn's 2023 global hiring survey found that 92% of hiring managers prioritise soft skills — communication, empathy, collaboration, adaptability — over technical qualifications. The reason this figure is so high is clear: technical skills can be trained; genuinely listening to a team, resolving conflict constructively, and being reliably composed under pressure are far harder to teach.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For children, the most effective environments for developing emotional intelligence are team sports, drama, debate clubs, and volunteer work. But the simplest exercises happen at home: "How do you think that person felt?", "What could you have done differently?" — asked consistently, not occasionally.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Research finding:</strong> Harvard Business School's 75-year longitudinal study (the Grant Study) found that the single strongest predictor of career success was not IQ, grades, or which university a person attended — it was the capacity to build relationships.
+        </Callout>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Find out where your child stands today</p>
+            <p className="text-sm text-gray-600">Free adaptive assessment for ages 6–17. Internationally benchmarked standardised score and personalised report.</p>
+          </div>
+          <Link href="/auth/register" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Start free
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Financial Literacy</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD's 2023 PISA Financial Literacy assessment found that only 33% of 15-year-olds demonstrate a basic understanding of financial concepts. Budgeting, saving, investing, and debt management are absent from most school curricula — and this gap carries compounding costs throughout adult life.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Financial literacy is not about memorising rules; it is about developing a healthy relationship with money. That relationship forms early. Pocket money is a teaching tool: "How will you spend this £10?" is the foundation of every budget decision that follows.
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Check><strong>Ages 6–10:</strong> Three-jar system — spend, save, give. Money requires decisions.</Check>
+          <Check><strong>Ages 10–14:</strong> Simple income–expense tracking, the concept of compound interest, distinguishing price from value</Check>
+          <Check><strong>Ages 14+:</strong> What is an index fund, why does inflation matter, how does credit work</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Self-Directed Learning</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          IBM research suggests the "half-life" of technical skills is now approximately 2.5 years — meaning half of today's technical knowledge will be outdated within 30 months. In this environment, the most valuable meta-skill is learning how to learn: knowing where to find what you need, how to process it, how to apply it.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Self-directed learning is active, not passive. Asking questions, finding sources, experimenting, failing, and trying again — these are the components of the loop. School often teaches <em>what</em> to learn. Home is where children learn <em>how</em> to learn.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Reward curiosity:</strong> When your child is interested in something, ask "How could you find out more about that?" — don't answer for them. Learning how to find the answer is more durable than the answer itself.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Entrepreneurial Mindset and Initiative</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Entrepreneurship here does not mean starting a company. It means noticing a problem, generating a solution, and acting on it. The WEF's 2025 report places "entrepreneurial mindset" in the top 10 most sought-after competencies in future hiring — including at large established organisations.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A child who notices a problem at school (a disorganised library, lost-property chaos, a long lunch queue) and proposes a solution to a teacher or head teacher is practising the earliest form of entrepreneurial thinking. No grand gestures are required; a small but completed initiative builds the muscle.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Real-World Experience: The Value of Internships and Projects</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Education and Employers' longitudinal study of more than 20,000 young people in England produced a striking finding: students who had at least four meaningful employer contacts before age 16 were <strong>five times less likely</strong> to be NEET (Not in Education, Employment, or Training) at 19 than peers without that experience. The direction is consistent across studies: early real-world contact is one of the statistically strongest buffers against future unemployment.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Real-world experience builds three things simultaneously: skills (professional and interpersonal), networks (people who will provide references), and narrative (the concrete stories that differentiate a university application or job interview). Together, these compound. An internship chain that starts at 14–15 produces a dramatically different profile at 18 than one that starts at university.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">NACE data:</strong> 83% of employers rate internship experience as "important" or "very important" when hiring new graduates. Students with prior internship experience receive job offers at a 70% higher rate before graduation.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Time Management and Self-Discipline</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Stanford University's marshmallow study and its 40-year follow-up research found that the capacity for delayed gratification — developed early — is one of the strongest predictors of career success, income, and health outcomes. Self-discipline is not a fixed personality trait; it is a trainable muscle.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Small commitments followed through (reading for 15 minutes each day, finishing one task before starting another, being on time when you said you would) strengthen this muscle incrementally. The instant-reward loops of the digital world are its greatest adversary — and the most effective thing parents can do is model the behaviour themselves.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Summary: 8 Habits by Age</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          None of these eight habits are systematically covered in school curricula. All of them form at home, within the family, and through real experience. And they all share one property: they compound. A habit of curiosity that starts at age 8 produces a distinctive analytical profile at 18. An internship chain that starts at 14 converts into a direct job offer at 22.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>Ages 4–8:</strong> Curiosity, responsibility, the concept of money, three-jar system</Check>
+          <Check><strong>Ages 8–12:</strong> Basic programming logic, critical questioning, budgeting, teamwork</Check>
+          <Check><strong>Ages 12–15:</strong> AI literacy, small entrepreneurial projects, consistent reading, first real responsibilities</Check>
+          <Check><strong>Ages 15–18:</strong> Internship and work experience, deepening financial literacy, network-building, independent learning projects</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Knowing where your child stands today is the first step to planning this journey. The free assessment below provides an internationally benchmarked starting point.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/blog/early-internship-child-development-career', tag: 'Research', title: 'Why Internships at Early Ages Matter: Child Development and Career Advantage' },
+            { href: '/blog/how-to-differentiate-yourself-at-15', tag: 'Guide', title: 'Grades Aren\'t Enough: How Students Actually Differentiate at 15' },
+            { href: '/blog/how-does-your-child-compare-globally', tag: 'Benchmarks', title: 'Where Does Your Child Stand Globally? International Academic Comparison' },
+            { href: '/blog/high-school-internship-benefits-university', tag: 'University', title: 'High School Internships: Character, Preparation and University Admissions' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
   ...UK_CONTENT_US_GIFTED,
   ...UK_CONTENT_NETHERLANDS,
   ...UK_CONTENT_UAE,

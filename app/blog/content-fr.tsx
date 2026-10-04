@@ -3464,6 +3464,83 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'habitudes-eviter-chomage-futur': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Le Forum Économique Mondial estime que 65% des enfants entrant à l'école primaire aujourd'hui travailleront dans des emplois qui n'existent pas encore. McKinsey Global Institute projette qu'environ 375 millions de travailleurs — 14% de la main-d'œuvre mondiale — devront changer de métier d'ici 2030 en raison de l'automatisation. Le schéma est clair : certaines compétences seront déplacées ; d'autres verront leur valeur augmenter considérablement. Nous savons lesquelles. La question est de savoir si les enfants les développent.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Cet article couvre huit habitudes que la recherche identifie systématiquement comme protectrices contre le chômage futur. Aucune n'est systématiquement enseignée dans les programmes scolaires. Toutes se cumulent avec le temps, ce qui explique pourquoi commencer tôt est important.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Pensée Critique et Résolution de Problèmes</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Classée compétence la plus importante pour 2025 et au-delà par le FEM, la pensée critique n'est pas simplement distinguer le juste du faux — c'est la capacité à tester les affirmations contre des preuves, à analyser les problèmes sous plusieurs angles et à générer des solutions créatives à des défis complexes. C'est aussi le domaine où l'IA reste la plus limitée.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Appliquez à la maison :</strong> Quand votre enfant regarde les informations ou lit un article, demandez : "Comment savons-nous cela ?", "Y a-t-il une autre explication ?", "Qui dit cela, et pourquoi ?" Ces questions semblent inhabituelles au début. Avec la répétition, elles deviennent automatiques.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Littératie Numérique et IA</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La littératie numérique ne se limite pas à savoir utiliser un téléphone. Elle concerne la compréhension du fonctionnement des systèmes, la lecture des données, la logique de programmation de base et la capacité à utiliser les outils d'IA de manière efficace et critique. La personne qui comprend ce que l'IA peut et ne peut pas faire se différenciera de ses pairs.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>8–12 ans :</strong> Scratch ou Code.org — qu'est-ce qu'un algorithme ? Qu'est-ce qu'une boucle ?</Check>
+          <Check><strong>12–15 ans :</strong> Bases de Python, outils de visualisation de données, comprendre comment fonctionnent les systèmes d'IA</Check>
+          <Check><strong>15 ans et plus :</strong> Projets réels utilisant des APIs, recherche assistée par IA, bases de l'ingénierie de prompts</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Communication et Intelligence Émotionnelle</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L'enquête mondiale de recrutement LinkedIn de 2023 a révélé que 92% des responsables du recrutement privilégient les compétences non techniques — communication, empathie, collaboration, adaptabilité — par rapport aux qualifications techniques. Les compétences techniques peuvent être enseignées ; écouter sincèrement une équipe, résoudre des conflits de manière constructive et rester fiable sous pression sont bien plus difficiles à enseigner.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Résultat de recherche :</strong> L'étude longitudinale de 75 ans de Harvard a révélé que le plus fort prédicteur de la réussite professionnelle n'était pas le QI, les notes ou l'université fréquentée — c'était la capacité à construire des relations.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Culture Financière</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L'évaluation PISA de culture financière de l'OCDE 2023 a révélé que seulement 33% des jeunes de 15 ans démontrent une compréhension de base des concepts financiers. La culture financière n'est pas mémoriser des règles ; c'est développer une relation saine avec l'argent. Cette relation se forme tôt.
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Check><strong>6–10 ans :</strong> Système des trois bocaux — dépenser, épargner, donner</Check>
+          <Check><strong>10–14 ans :</strong> Suivi simple des revenus et dépenses, concept des intérêts composés</Check>
+          <Check><strong>14 ans et plus :</strong> Qu'est-ce qu'un fonds indiciel, pourquoi l'inflation importe, comment fonctionne le crédit</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Expérience du Monde Réel</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Une étude longitudinale de plus de 20 000 jeunes a révélé que les élèves ayant eu au moins quatre contacts professionnels significatifs avant 16 ans étaient <strong>cinq fois moins susceptibles</strong> d'être au chômage ou hors de l'éducation à 19 ans. L'expérience réelle construit simultanément : des compétences, des réseaux et des récits.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Données NACE :</strong> 83% des employeurs considèrent l'expérience de stage comme "importante" ou "très importante" lors de l'embauche de nouveaux diplômés. Les étudiants ayant une expérience de stage préalable reçoivent des offres d'emploi à un taux 70% plus élevé avant l'obtention de leur diplôme.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Résumé</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Aucune de ces huit habitudes n'est couverte systématiquement dans les programmes scolaires. Toutes se forment à la maison, au sein de la famille et par l'expérience réelle. Et elles partagent toutes une propriété : elles se cumulent. L'habitude de curiosité qui commence à 8 ans produit un profil analytique distinctif à 18 ans. La chaîne de stages qui commence à 14 ans se transforme en offre d'emploi directe à 22 ans.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>4–8 ans :</strong> Curiosité, responsabilité, concept de l'argent, système des trois bocaux</Check>
+          <Check><strong>8–12 ans :</strong> Logique de programmation de base, questionnement critique, budget, travail d'équipe</Check>
+          <Check><strong>12–15 ans :</strong> Littératie IA, petits projets entrepreneuriaux, lecture régulière</Check>
+          <Check><strong>15–18 ans :</strong> Stages et expérience professionnelle, approfondissement de la culture financière, réseautage</Check>
+        </ul>
+      </section>
+    </>
+  ),
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

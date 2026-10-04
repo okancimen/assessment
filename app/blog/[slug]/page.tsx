@@ -35,7 +35,7 @@ const SERVICE_LINKS = [
     desc: 'Entry requirements, pass marks, and preparation guides for grammar schools across England.',
   },
   {
-    tags: ['Standardised Testing', 'International Benchmarks', 'PISA', 'Scores', 'Percentile'],
+    tags: ['Standardised Testing', 'International Benchmarks', 'PISA', 'Scores', 'Percentile', 'Child Development', 'Future of Work', 'Automation', 'Financial Literacy'],
     href: '/methodology',
     title: 'Our Assessment Methodology',
     desc: 'Adaptive IRT scoring on the same 100-point scale used by PISA, GCSE, and CAT4.',

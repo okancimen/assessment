@@ -5548,6 +5548,163 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'gelecekte-issiz-kalmamak-icin-aliskanliklar': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Dünya Ekonomik Forumu, 2025 İş Gücü Raporunda bugün ilkokula başlayan çocukların ileride yapacakları işlerin %65'inin henüz var olmadığını öngörüyor. McKinsey Global Institute ise 2030'a kadar yaklaşık 375 milyon çalışanın — küresel iş gücünün %14'ü — otomasyon nedeniyle meslek değiştirmek zorunda kalacağını hesaplıyor. Bu rakamlar korkunç görünebilir. Ama iyi haber şu: bu dönüşüm bazı becerileri silecek, bazılarının değerini katlanarak artıracak. Hangi becerilerin hayatta kaldığını biliyoruz. Peki çocuğunuzu şimdiden nasıl hazırlayabilirsiniz?
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu makale sekiz temel alışkanlığı ele alıyor. Bunlar not ortalamalarıyla değil, erken yaşta edinilen rutinlerle şekilleniyor. Her biri araştırma verilerine dayanıyor ve her biri pratik, evde uygulanabilir adımlarla destekleniyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Eleştirel Düşünme ve Problem Çözme</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          WEF'in 2025 raporunda "geleceğin en kritik becerisi" olarak üst sıraya taşınan eleştirel düşünme, basitçe doğruyu yanlıştan ayırt etmek değil — iddiaları kanıtla test etme, çok perspektifli analiz yapma ve karmaşık sorunlara yaratıcı çözümler üretme kapasitesidir. Bu beceri, yapay zekanın en zayıf olduğu alandır. Bir yapay zeka kalıpları tanır; ama soru sormayı — gerçekten soru sormayı — henüz öğrenemedi.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Stanford Üniversitesi'nin "Civic Online Reasoning" araştırması, ortaokul ve lise öğrencilerinin %82'sinin internetteki bir reklam içeriğini gerçek haberden ayırt edemediğini ortaya koydu. Bu, not ortalamasıyla değil, okuduklarını sorgulama alışkanlığıyla çözülür.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Evde uygulayın:</strong> Çocuğunuzun izlediği bir haber veya okuduğu bir içerik hakkında "Bunu nasıl biliyoruz?", "Başka bir açıklama olabilir mi?", "Kim söylüyor, neden?" diye sorun. Bu sorular başlangıçta garip gelir — zamanla refleks haline gelir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Dijital ve Yapay Zeka Okuryazarlığı</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          "Dijital okuryazarlık" telefon kullanmaktan ibaret değil. Sistemlerin nasıl çalıştığını anlama, veri okuma, temel kodlama mantığı ve — giderek daha kritik hale gelen — yapay zeka araçlarını etkili ve etik biçimde kullanabilme kapasitesidir. Oxford Internet Institute'ün 2024 araştırmasına göre yapay zeka okuryazarlığı, önümüzdeki on yılda "bilgisayar okuryazarlığının" 1990'lardaki önemine ulaşacak.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Önemli bir ayrım: yapay zekayı kullanan insan değerini kaybetmeyecek. Yapay zekanın ne yapıp ne yapamadığını bilen, onu akıllıca yönlendirebilen ve sonuçlarını eleştirel gözle değerlendirebilen insan, hem yapay zekadan hem de sadece geleneksel eğitim almış akranlarından farklılaşacak.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>8–12 yaş:</strong> Scratch veya Code.org ile temel programlama mantığı; algoritma nedir, döngü nedir?</Check>
+          <Check><strong>12–15 yaş:</strong> Python temelleri, veri görselleştirme araçları, yapay zeka araçlarının nasıl çalıştığını anlama</Check>
+          <Check><strong>15+ yaş:</strong> Gerçek projelerde API kullanımı, yapay zeka destekli araştırma, prompt mühendisliğinin temelleri</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">3. İletişim Becerileri ve Duygusal Zeka</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          LinkedIn'in 2023 küresel işe alım anketine göre işe alım yöneticilerinin %92'si teknik becerilere kıyasla "yumuşak becerilere" — iletişim, empati, işbirliği, uyum yeteneği — daha yüksek öncelik veriyor. Bu oranın bu denli yüksek olmasının nedeni açık: teknik beceriler eğitilebilir, ama bir ekibi gerçekten dinleyebilmek, çatışmayı yapıcı biçimde çözebilmek ve baskı altında güvenilir olmak çok daha zor öğretiliyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Duygusal zekanın okul ortamında gelişmesi için takım sporları, tiyatro, münazara kulüpleri ve gönüllü çalışma etkili mecralar. Ama en basit alıştırma evde yapılır: günlük konuşmalarda "Sence o kişi nasıl hissetti?", "Farklı ne yapabilirdin?" gibi sorular duygusal farkındalığı sistematik biçimde geliştirir.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Araştırma bulgusuo:</strong> Harvard Business Review'ün 75 yıllık boylamsal çalışması (Grant Study), kariyer başarısını tahmin eden en güçlü tek değişkenin IQ, not ortalaması veya mezun olunan okul değil — <em>ilişki kurma kapasitesi</em> olduğunu ortaya koydu.
+        </Callout>
+      </section>
+
+      <section>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Çocuğunuz şu an nerede duruyor?</p>
+            <p className="text-sm text-gray-600">6–17 yaş için ücretsiz uyarlanabilir değerlendirme. Uluslararası kıyaslamalı standartlaştırılmış puan ve kişiselleştirilmiş rapor.</p>
+          </div>
+          <Link href="/auth/register" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Ücretsiz başla
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Finansal Okuryazarlık</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD'nin 2023 PISA Finansal Okuryazarlık değerlendirmesine göre 15 yaşındaki gençlerin yalnızca %33'ü temel finansal kavramları anlıyor. Bütçeleme, birikim, yatırım ve borç yönetimi bilgisi çoğu müfredatta yer almıyor — ve bu boşluk ilerleyen hayatta ağır bedeller ödettiriyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Finansal okuryazarlık kuru kural ezberlemek değil, parayla sağlıklı bir ilişki kurmaktır. Bu ilişki erken yaşta şekillenir. Harçlık bir öğretme aracıdır: "Bu ay 100 liranı nasıl harcayacaksın?" sorusu, ilerideki her bütçe kararının temelini atıyor.
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Check><strong>6–10 yaş:</strong> Üç kutu sistemi — harca, biriktir, bağışla. Para karar vermeyi gerektirir.</Check>
+          <Check><strong>10–14 yaş:</strong> Basit gelir–gider takibi, biriktirmenin faiz getirisi kavramı, fiyat–değer ayrımı</Check>
+          <Check><strong>14+ yaş:</strong> Endeks fonu nedir, enflasyon neden önemlidir, kredi nasıl çalışır</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Öz Yönelimli Öğrenme Alışkanlığı</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          IBM'in araştırmasına göre teknik becerilerin "yarı ömrü" günümüzde yaklaşık 2,5 yıl — yani bugün öğrenilen teknik bilginin yarısı 30 ay içinde eskiyor. Bu dünyada en değerli meta yetenek, yeni şeyler öğrenmeyi öğrenmektir: neyi nerede bulacağını, nasıl sindireceğini, nasıl uygulayacağını bilmek.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Öz yönelimli öğrenme pasif değil aktif bir süreçtir. Soru sormak, kaynaklara ulaşmak, denemek, başarısız olmak ve tekrar denemek bu döngünün temel bileşenleri. Okulda "ne öğreneceğini" öğreten bir sistem varsa; evde "nasıl öğreneceğini" öğrenmek gerekiyor.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Merakı ödüllendirin:</strong> Çocuğunuz bir konuyla ilgilendiğinde "Bunu nasıl öğrenebilirsin?" diye sorun — cevabı siz vermeyin. Cevabı bulmayı öğrenmek, cevabın kendisinden daha değerlidir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Girişimcilik Zihniyeti ve İnisiyatif</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Girişimcilik burada şirket kurmak anlamına gelmiyor. Bir sorunu fark etmek, çözüm üretmek ve harekete geçmek anlamına geliyor. WEF'in 2025 raporunda "girişimcilik zihniyeti", işverenler tarafından en çok aranan ilk 10 yeterlilik arasında yer alıyor — büyük kurumsal şirketler dahil.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bir çocuğun okulda fark ettiği bir problemi (kütüphanenin düzensizliği, sınıfta kayıp eşyalar, yemekhane sırasının uzunluğu) çözmeye girişmesi — bir çözüm düşünmesi, bunu bir öğretmene veya okul yönetimine önermesi — girişimcilik zihniyetinin en erken pratiğidir. Büyük adımlar gerekmez; küçük ama tamamlanmış bir inisiyatif bu kasın gelişmesini sağlar.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Gerçek Dünya Deneyimi: Staj ve Projelerin Değeri</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Education and Employers'ın 20.000'den fazla İngiliz gencini kapsayan boylamsal araştırması çarpıcı bir sonuç ortaya koydu: 16 yaşından önce en az dört anlamlı işveren temasına sahip olan öğrencilerin 19 yaşında işsiz veya eğitim dışı kalma olasılığı, bu deneyimden yoksun akranlarına kıyasla <strong>beş kat daha düşük</strong>. Bu oran ülkeden ülkeye değişse de yön hep aynı: erken gerçek dünya teması istatistiksel olarak işsizliğe karşı en güçlü tamponlardan biridir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gerçek dünya deneyimi üç şeyi aynı anda inşa eder: beceri (mesleki ve kişilerarası), ağ (referans verecek insanlar) ve anlatı (üniversite başvurusunda veya iş görüşmesinde anlatılacak somut hikâyeler). Bu üçü birleşince etki katlanır. 14–15 yaşında başlayan bir staj zinciri, 18 yaşına gelindiğinde üniversiteyi ve iş piyasasını çok farklı bir profille karşılamayı mümkün kılıyor.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">NACE verisi:</strong> 2023 anketine göre işverenlerin %83'ü yeni mezun işe alımında staj deneyimini "önemli" veya "çok önemli" buluyor. Staj deneyimi olan öğrenciler mezuniyetten önce iş teklifi alma oranında %70 daha yüksek performans gösteriyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Zaman Yönetimi ve Öz Disiplin</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Stanford Üniversitesi'nin "marshmallow deneyi" olarak bilinen çalışması ve sonrasındaki 40 yıllık takip araştırması, erken yaşta geliştirilen öz denetim kapasitesinin — bir ödülü erteleme yeteneğinin — kariyer, gelir ve sağlık sonuçlarını en güçlü biçimde tahmin eden faktörlerden biri olduğunu ortaya koyuyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Öz disiplin doğuştan gelen bir karakter özelliği değil, geliştirilebilen bir kas. Küçük taahhütleri yerine getirmek (her gün 15 dakika okumak, bir görevi bitirmeden diğerine geçmemek, söz verilen saatte hazır olmak), bu kası zamanla güçlendiriyor. Dijital dünyanın anlık ödül döngüleri bu kasın gelişmesinin önündeki en büyük engel — ve ebeveynlerin bu konuda yapabileceği en etkili şey rol model olmak.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Özet: 8 Alışkanlık, Yaşa Göre</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu sekiz alışkanlığın hiçbiri okul müfredatında sistematik biçimde yer almıyor. Tamamı evde, ailede ve gerçek deneyimlerde şekilleniyor. Ve hepsinin ortak noktası şu: zamanla birikiyorlar. 8 yaşında başlayan merak alışkanlığı, 18 yaşında rakipsiz bir analitik profil üretiyor. 14 yaşında başlayan staj zinciri, 22 yaşında doğrudan iş teklifine dönüşüyor.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>4–8 yaş:</strong> Merak, sorumluluk, para kavramı, üç kutu sistemi</Check>
+          <Check><strong>8–12 yaş:</strong> Temel kodlama mantığı, eleştirel soru sorma, bütçeleme, takım çalışması</Check>
+          <Check><strong>12–15 yaş:</strong> Yapay zeka okuryazarlığı, girişimcilik projeleri, düzenli okuma, ilk gerçek sorumluluklar</Check>
+          <Check><strong>15–18 yaş:</strong> Staj ve iş deneyimi, finansal okuryazarlık derinleştirme, ağ kurma, bağımsız öğrenme projeleri</Check>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Çocuğunuzun bugün nerede durduğunu bilmek, bu yolculuğu planlamanın ilk adımıdır. Aşağıdaki ücretsiz değerlendirme, uluslararası kıyaslamalı bir başlangıç noktası sunuyor.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/erken-yas-staj-cocuk-gelisimi-kariyer', tag: 'Araştırma', title: 'Erken Yaşta Stajın Önemi: Çocuk Gelişimi ve Kariyer Avantajı' },
+            { href: '/tr/blog/notlar-artik-yeterli-degil', tag: 'Rehber', title: 'Notlar Artık Yeterli Değil: 15 Yaşında Kendini Nasıl Farklılaştırırsın?' },
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Kıyaslama', title: 'Çocuğunuz Dünyada Nerede? Uluslararası Akademik Kıyaslama' },
+            { href: '/tr/blog/en-iyi-okul-hayat-okuludur', tag: 'Çocuk Gelişimi', title: 'En İyi Okul Hayat Okuludur: Erken İş Deneyiminin Çocuk Gelişimine Katkısı' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

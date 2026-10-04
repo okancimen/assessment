@@ -3536,6 +3536,83 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'habitos-evitar-desempleo-futuro': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        El Foro Económico Mundial estima que el 65% de los niños que ingresan a la escuela primaria hoy trabajarán en empleos que aún no existen. McKinsey Global Institute proyecta que alrededor de 375 millones de trabajadores — el 14% de la fuerza laboral global — necesitarán cambiar de ocupación para 2030 debido a la automatización. El patrón es claro: ciertas habilidades serán desplazadas; otras se volverán dramáticamente más valiosas. Sabemos cuáles son. La pregunta es si los niños las están desarrollando.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Este artículo cubre ocho hábitos que la investigación identifica consistentemente como protectores contra el desempleo futuro. Ninguno se enseña de forma sistemática en los currículos escolares. Todos se acumulan con el tiempo, razón por la cual empezar temprano importa.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Pensamiento Crítico y Resolución de Problemas</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Clasificado como la habilidad más importante para 2025 y más allá por el FEM, el pensamiento crítico no es simplemente saber distinguir lo correcto de lo incorrecto — es la capacidad de probar afirmaciones contra evidencia, analizar problemas desde múltiples ángulos y generar soluciones creativas a desafíos complejos. Es también el área donde la IA sigue siendo más limitada.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Aplica en casa:</strong> Cuando tu hijo vea noticias o lea un artículo, pregunta: "¿Cómo sabemos esto?", "¿Hay otra explicación?", "¿Quién lo dice y por qué?" Al principio se sienten inusuales. Con la repetición se vuelven automáticos.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Alfabetización Digital e IA</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La alfabetización digital no se trata de poder usar un teléfono. Se trata de entender cómo funcionan los sistemas, leer datos, comprender la lógica básica de programación y — cada vez más — poder usar herramientas de IA de forma efectiva y crítica. La persona que entiende qué puede y no puede hacer la IA se diferenciará de sus pares.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>Edades 8–12:</strong> Scratch o Code.org — ¿qué es un algoritmo? ¿Qué es un bucle?</Check>
+          <Check><strong>Edades 12–15:</strong> Fundamentos de Python, herramientas de visualización de datos, entender cómo funcionan los sistemas de IA</Check>
+          <Check><strong>15+ años:</strong> Proyectos reales usando APIs, investigación asistida por IA, fundamentos de ingeniería de prompts</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Habilidades de Comunicación e Inteligencia Emocional</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La encuesta global de contratación de LinkedIn de 2023 encontró que el 92% de los gerentes de contratación priorizan las habilidades blandas — comunicación, empatía, colaboración, adaptabilidad — sobre las calificaciones técnicas. La razón es clara: las habilidades técnicas se pueden entrenar; escuchar genuinamente a un equipo, resolver conflictos de forma constructiva y ser confiable bajo presión son mucho más difíciles de enseñar.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Hallazgo de investigación:</strong> El estudio longitudinal de 75 años de Harvard encontró que el predictor más fuerte del éxito profesional no fue el coeficiente intelectual, las calificaciones ni la universidad — fue la capacidad de construir relaciones.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Educación Financiera</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La evaluación PISA de Educación Financiera de la OCDE de 2023 encontró que solo el 33% de los jóvenes de 15 años demuestran una comprensión básica de los conceptos financieros. La educación financiera no se trata de memorizar reglas; se trata de desarrollar una relación saludable con el dinero. Esa relación se forma temprano.
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Check><strong>Edades 6–10:</strong> Sistema de tres frascos — gastar, ahorrar, dar</Check>
+          <Check><strong>Edades 10–14:</strong> Seguimiento básico de ingresos y gastos, concepto de interés compuesto</Check>
+          <Check><strong>14+ años:</strong> Qué es un fondo indexado, por qué importa la inflación, cómo funciona el crédito</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Experiencia en el Mundo Real</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un estudio longitudinal de más de 20,000 jóvenes encontró que los estudiantes que tuvieron al menos cuatro contactos significativos con empleadores antes de los 16 años tenían <strong>cinco veces menos probabilidades</strong> de estar desempleados o fuera de la educación a los 19 años. La experiencia real construye simultáneamente: habilidades, redes y narrativas.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Datos NACE:</strong> El 83% de los empleadores califica la experiencia de prácticas como "importante" o "muy importante" al contratar nuevos graduados. Los estudiantes con experiencia previa en prácticas reciben ofertas de trabajo a una tasa 70% mayor antes de graduarse.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Resumen</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ninguno de estos ocho hábitos se cubre sistemáticamente en los currículos escolares. Todos se forman en casa, dentro de la familia y a través de la experiencia real. Y todos comparten una propiedad: se acumulan. El hábito de la curiosidad que comienza a los 8 años produce un perfil analítico distintivo a los 18. La cadena de prácticas que comienza a los 14 se convierte en una oferta de trabajo directa a los 22.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>Edades 4–8:</strong> Curiosidad, responsabilidad, concepto del dinero, sistema de tres frascos</Check>
+          <Check><strong>Edades 8–12:</strong> Lógica básica de programación, cuestionamiento crítico, presupuesto, trabajo en equipo</Check>
+          <Check><strong>Edades 12–15:</strong> Alfabetización en IA, pequeños proyectos emprendedores, lectura consistente</Check>
+          <Check><strong>Edades 15–18:</strong> Prácticas y experiencia laboral, educación financiera avanzada, construcción de redes</Check>
+        </ul>
+      </section>
+    </>
+  ),
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {
