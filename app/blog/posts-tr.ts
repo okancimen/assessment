@@ -36,7 +36,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Öğrenciniz ilk staja hazır mı?',
       body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Yetenek, alan bilgisi ve iş yeri becerileri açısından hazırlık düzeyini keşfet — kişiselleştirilmiş yapay zeka raporu ile.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -78,7 +78,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Öğrenciniz staja hazır mı?',
       body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Yetenek, alan bilgisi ve iş yeri becerileri genelinde kişiselleştirilmiş hazırlık raporu al.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -281,7 +281,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'A Level\'dan sonra staja hazır mısın?',
       body: '16 yaş üstü öğrenciler için ücretsiz uyarlanabilir değerlendirme. Yetenek, alan bilgisi ve iş yeri becerileri açısından kişiselleştirilmiş hazırlık raporu al.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -406,7 +406,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: '15 yaşında staja ne kadar hazırsın?',
       body: 'Eduentry\'nin ücretsiz uyarlanabilir değerlendirmesi yetenek, alan bilgisi ve iş yeri becerilerini ölçer. Güçlü ve gelişim alanlarını kişiselleştirilmiş bir raporla öğren.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -448,7 +448,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'İş dünyasına hazırlık seviyeni ölç',
       body: 'Lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. İş dünyası alanında yetenek, alan bilgisi ve iş yeri becerilerini ölç — 20 dakikadan kısa sürede.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -469,7 +469,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Dijital pazarlama stajı sunan şirketler nasıl bulunur?', a: 'En erişilebilir yol küçük ve orta ölçekli dijital ajanslar — formal program olmadığı için neredeyse hiç başvuru almıyorlar ve iyi hazırlanmış doğrudan bir mesaja genellikle olumlu yanıt veriyorlar. Bunun dışında: İngiliz şirketlerinin LinkedIn sayfaları, Springpod ve Bright Network platformları, ve okulun kariyer koordinatörü aracılığıyla ulaşılabilecek işveren ilişkileri.' },
       { q: 'Sosyal medya içerik üretimi dijital pazarlama stajında ne kadar önemli?', a: 'Çok önemli. Çoğu küçük ve orta ölçekli şirket, stajyerden ilk günden itibaren sosyal medya takvimine katkı sağlamasını bekler. Instagram ve LinkedIn içerikleri, Reels veya kısa video formatlarını anlamak ve temel görsel tasarım (Canva düzeyinde) bugün hemen hemen her dijital pazarlama stajı başvurusunda avantaj sağlıyor. Kendi kanalını yönetmiş olmak, teorik bilgiden çok daha etkili bir referans.' },
     ],
-    cta: { heading: 'Dijital pazarlama alanındaki hazırlık seviyeni ölç', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Dijital pazarlama alanındaki yetenek ve alan bilgisi profilini al.', label: 'Ücretsiz başvur — Dijital Pazarlama', href: '/tr/staj' },
+    cta: { heading: 'Dijital pazarlama alanındaki hazırlık seviyeni ölç', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Dijital pazarlama alanındaki yetenek ve alan bilgisi profilini al.', label: 'Ücretsiz başvur — Dijital Pazarlama', href: 'https://eduentry.ai/tr' },
   },
   {
     slug: 'veri-analitigi-kariyer-rehberi',
@@ -489,7 +489,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Veri analitiğini ücretsiz olarak nereden öğrenebilirim?', a: 'Google Data Analytics Sertifikası (Coursera\'da ücretsiz denetlenebilir), Khan Academy istatistik modülü, ve YouTube\'daki Excel ve Google Sheets eğitimleri sağlam bir başlangıç sağlar. SQL için Mode Analytics ve SQLZoo platformlarının ücretsiz alıştırmaları var. 40-60 saatlik öz yönelimli öğrenmeyle minimum viable portfolio oluşturulabilir.' },
       { q: 'Veri analitiğinde en çok hangi araçlar kullanılıyor?', a: 'Staj düzeyinde en yaygın araçlar: Excel / Google Sheets (pivot tablo, VLOOKUP, temel formüller), Python (özellikle pandas ve matplotlib kütüphaneleri), SQL (veritabanı sorgulama), ve Tableau veya Power BI (görselleştirme). Başlamak için önce Excel, ardından Python sıralaması en mantıklısı — ilki hızlı sonuç, ikincisi kalıcı kariyer altyapısı sağlar.' },
     ],
-    cta: { heading: 'Sayısal yeteneğini nesnel biçimde ölç', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Veri analitiği alanındaki aptitude ve alan bilgisi profilini al.', label: 'Ücretsiz başvur — Veri Analitiği', href: '/tr/staj' },
+    cta: { heading: 'Sayısal yeteneğini nesnel biçimde ölç', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Veri analitiği alanındaki aptitude ve alan bilgisi profilini al.', label: 'Ücretsiz başvur — Veri Analitiği', href: 'https://eduentry.ai/tr' },
   },
   {
     slug: 'staj-icin-cv-nasil-yazilir',
@@ -509,7 +509,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Öğrenci CV\'lerindeki en yaygın hata nedir?', a: 'Sonuçsuz sorumluluk tanımları. "Okul yıl sonu etkinliği organizasyonuna yardım ettim" zayıf. "200 katılımcılı bir etkinliğin lojistiğini koordine ettim, 500£ bütçe yönettim ve katılımcı başına maliyeti bir önceki yıla göre %15 düşürdüm" güçlü. Sayılar mütevazı olsa bile her zaman ölçtür.' },
       { q: 'Staj başvurusunda kapak mektubu (motivasyon mektubu) gerekli mi?', a: 'Büyük şirketlerin yapılandırılmış programlarında genellikle evet. Küçük ve orta ölçekli şirketlere doğrudan başvurularda ise kapak mektubu yerine kişisel bir e-posta çok daha etkili. Kapak mektubu yazarken tek bir amaca odaklan: "Bu şirket için neden bu staj?" — genel bir "kendimi geliştirmek istiyorum" değil, o şirkete veya sektöre özgü bir neden.' },
     ],
-    cta: { heading: 'Başvuruna doğrulanmış bir değerlendirme ekle', body: 'Eduentry hazırlık raporu, işe alım uzmanlarına seni tanımadan önce yeteneğini kanıtlar. Deneyim eksikliğini ölçülmüş yetenek verileriyle telafi et.', label: 'Ücretsiz değerlendirmeyi başlat', href: '/tr/staj' },
+    cta: { heading: 'Başvuruna doğrulanmış bir değerlendirme ekle', body: 'Eduentry hazırlık raporu, işe alım uzmanlarına seni tanımadan önce yeteneğini kanıtlar. Deneyim eksikliğini ölçülmüş yetenek verileriyle telafi et.', label: 'Ücretsiz değerlendirmeyi başlat', href: 'https://eduentry.ai/tr' },
   },
   {
     slug: 'staj-mulakati-hazirlik-rehberi',
@@ -529,7 +529,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Staj mülakatlarında en sık yapılan hata nedir?', a: 'Spesifik örnek içermeyen belirsiz yanıtlar. "Çok çalışkanım" veya "Bu sektöre tutkuyla bağlıyım" hiçbir şey anlatmıyor. Niteliklerle ilgili her iddia hemen somut bir örnek içermeli — ne kadar mütevazı olursa olsun. Mülakatçıların hatırladığı adaylar genel iddialar öne sürenler değil, spesifik bir durumu tarif edenler.' },
       { q: 'Online (video) staj mülakatında dikkat edilmesi gerekenler neler?', a: 'Dört pratik kural: (1) Arka planın düzenli ve aydınlık olsun — ev değil profesyonel bir çalışma ortamı izlenimi versin; (2) Kamerana bak, ekranındaki görüntüye değil — bu "göz teması" sağlar; (3) Ses kalitesi video kalitesinden önemli — sessiz bir oda ve varsa harici mikrofon kullan; (4) Teknik sorun ihtimaline karşı platformu önceden test et ve mülakatçının iletişim bilgisini hazırda bulundur.' },
     ],
-    cta: { heading: 'Mülakata gerçek aptitude verileriyle gir', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Güçlü ve gelişim alanlarını kişiselleştirilmiş raporla öğren — mülakatından önce.', label: 'Ücretsiz değerlendirmeyi başlat', href: '/tr/staj' },
+    cta: { heading: 'Mülakata gerçek aptitude verileriyle gir', body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Güçlü ve gelişim alanlarını kişiselleştirilmiş raporla öğren — mülakatından önce.', label: 'Ücretsiz değerlendirmeyi başlat', href: 'https://eduentry.ai/tr' },
   },
   {
     slug: 'pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler',
@@ -578,7 +578,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuz iş dünyasına hazır mı?',
       body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi ile çocuğunuzun güçlü yönlerini ve gelişim alanlarını 20 dakikada keşfedin.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -603,7 +603,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Staj hazırlığını ölç — ücretsiz',
       body: '34 soruluk adaptif değerlendirme ile çocuğunuzun aptitude, domain bilgisi ve işyeri becerilerini ölçün. Kişiselleştirilmiş hazırlık raporu 20 dakikada hazır.',
       label: 'Değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -657,7 +657,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Staj başvuruna doğrulanmış bir değerlendirme ekle',
       body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi, yetenek ve alan bilginizi nesnel biçimde ölçer — deneyim eksikliğini somut verilerle telafi etmenizi sağlar.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -715,7 +715,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Öğrenciniz iş deneyimine hazır mı?',
       body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi 25 dakika sürer ve öğrencilere kişiselleştirilmiş bir rapor sunar — beceri dökümü, hazırlık puanı ve eşleştirilmiş fırsatlar.',
       label: 'Staj değerlendirmesini başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -740,7 +740,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun staj profilini keşfedin',
       body: 'Hangi sektör en uygun? Hazırlık düzeyi nerede? Eduentry\'nin ücretsiz adaptif değerlendirmesi 20 dakikada kişiselleştirilmiş bir staj profili çıkarır.',
       label: 'Ücretsiz değerlendirme',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -764,7 +764,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Staja başvurmadan önce hazırlığını ölç',
       body: 'Hangi ize uygunsun? Ücretsiz 34 soruluk değerlendirmemiz 20 dakikada kişiselleştirilmiş staj hazırlık raporu sunar.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -790,7 +790,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Staja hazır olduğundan emin misin?',
       body: 'Zorunlu stajdan önce güçlü yönlerini ve gelişim alanlarını bil. 20 dakikalık ücretsiz değerlendirme kişiselleştirilmiş bir hazırlık raporu sunar.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -814,7 +814,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Staj başvurusuna hazır mısın?',
       body: 'Hangi sektöre en uygunsun? Güçlü yönlerini 20 dakikada öğren — tamamen ücretsiz.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -839,7 +839,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Hangi staja en uygunsun?',
       body: 'Başvurmadan önce güçlü yönlerini ve ilgi alanını bil. Eduentry\'nin ücretsiz değerlendirmesi 20 dakikada sana en uygun izi gösterir.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -864,7 +864,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Yaz stajına hazır mısın?',
       body: 'Hangi ize başvuracağını bilmiyorsan, önce güçlü yönlerini ölç. 20 dakikalık ücretsiz değerlendirmemiz hangi sektöre uygun olduğunu net biçimde gösterir.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -905,7 +905,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'PISA\'nın ölçtüğü becerileri hayata geçirin',
       body: 'Lise öğrencileri için ücretsiz 34 soruluk uyarlanabilir staj hazırlık değerlendirmesi. Aptitude, alan bilgisi ve iş yeri becerileri açısından kişiselleştirilmiş rapor — PISA\'nın önemsediği yetkinliklerin gerçek dünyadaki karşılığı.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -930,7 +930,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Güçlü yönlerini ölç, doğru staja başvur',
       body: '34 soruluk ücretsiz uyarlanabilir değerlendirme. Hangi ize uygun olduğunu, nerede güçlü nerede gelişim alanın olduğunu anında öğren.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -976,7 +976,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Uluslararası staja hazır mısın?',
       body: '34 soruluk ücretsiz uyarlanabilir değerlendirme ile yetkinliklerini ölç. Yurt dışı başvuru dosyana somut bir güç katmanı ekle — kişiselleştirilmiş hazırlık raporu ile.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -1097,7 +1097,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuz iş deneyimine hazır mı?',
       body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi 20 dakika sürer ve çocuğunuzun tam olarak nerede durduğunu gösterir — yetenek, alan bilgisi ve profesyonel beceriler — başvurularında kullanabileceği kişiselleştirilmiş bir raporla.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -1136,7 +1136,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuz için hangi kariyer yolu en uygun?',
       body: 'Yarı zamanlı bir iş seçmeden önce Eduentry\'nin ücretsiz değerlendirmesi çocuğunuzun yetenek, alan bilgisi ve mesleki becerilerini belirler — böylece doğru temelleri oluşturan bir işe yönelebilirler.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
@@ -1358,7 +1358,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Staja hazır mısın?',
       body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Teknoloji, veri, iş yönetimi ve dijital pazarlamadaki hazırlık seviyeni 20 dakikada öğren.',
       label: 'Ücretsiz değerlendirmeyi başlat →',
-      href: '/tr/staj',
+      href: 'https://eduentry.ai/tr',
     },
   },
   {
