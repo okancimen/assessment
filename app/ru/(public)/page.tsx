@@ -322,6 +322,9 @@ export default function RussianHomePage() {
                 <Link href="/ru/metodologiya" className="text-sm font-semibold text-[#4F46E5] hover:underline flex items-center gap-1.5 px-2">
                   Как работает оценивание →
                 </Link>
+                <Link href="/ru/primer-otcheta" className="text-sm font-semibold text-[#636366] hover:text-[#1d1d1f] flex items-center gap-1.5 px-2">
+                  Посмотреть пример отчёта →
+                </Link>
               </div>
             </div>
 
@@ -571,10 +574,13 @@ export default function RussianHomePage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-7 pt-6 border-t border-[#424245]">
+              <div className="mt-7 pt-6 border-t border-[#424245] flex flex-wrap items-center gap-x-5 gap-y-3">
                 <CtaLink href="/ru/auth/register" label="what_you_get_academic_ru" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
                   Начать бесплатно →
                 </CtaLink>
+                <Link href="/ru/primer-otcheta" className="text-sm font-semibold text-[#a1a1a7] hover:text-white transition-colors">
+                  Посмотреть пример отчёта →
+                </Link>
               </div>
             </div>
 

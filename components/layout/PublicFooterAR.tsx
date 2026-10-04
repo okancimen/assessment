@@ -19,6 +19,7 @@ export default function PublicFooterAR() {
             <ul>
               <li><Link href="/ar/hawlana"    className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">من نحن</Link></li>
               <li><Link href="/ar/manhajiyya" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">المنهجية</Link></li>
+              <li><Link href="/ar/taqrir-namudhaji" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">تقرير نموذجي</Link></li>
             </ul>
           </div>
           <div>

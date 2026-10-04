@@ -19,6 +19,7 @@ export default function PublicFooterFR() {
             <ul>
               <li><Link href="/fr/a-propos"    className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">À propos</Link></li>
               <li><Link href="/fr/methodologie" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Méthodologie</Link></li>
+              <li><Link href="/fr/exemple-de-rapport" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Exemple de rapport</Link></li>
             </ul>
           </div>
           <div>

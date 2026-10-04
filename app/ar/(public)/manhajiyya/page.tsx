@@ -216,6 +216,10 @@ export default function ManhajiyyaPage() {
               </li>
             ))}
           </ul>
+          <p className="text-[#6e6e73]">
+            هل تريد رؤية كل ذلك في صفحة واحدة؟{' '}
+            <Link href="/ar/taqrir-namudhaji" className="text-[#4F46E5] hover:underline font-medium">اطّلع على التقرير النموذجي ←</Link>
+          </p>
         </section>
 
       </div>

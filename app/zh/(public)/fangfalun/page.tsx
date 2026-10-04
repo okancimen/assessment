@@ -118,6 +118,10 @@ export default function FangfalunPage() {
           <p className="text-sm text-[#636366]">
             68%的学生分数在85至115之间。这一量表直接可与PISA分数、英国CAT4和大多数专业认知评估进行比较。
           </p>
+          <p className="text-sm text-[#636366] mt-3">
+            想看看这些分数在实际报告中如何呈现？{' '}
+            <Link href="/zh/yangben-baogao" className="text-[#4F46E5] hover:underline font-medium">查看报告样本 →</Link>
+          </p>
         </section>
 
         <section>

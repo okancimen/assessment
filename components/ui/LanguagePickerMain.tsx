@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
+import { SAMPLE_REPORT_PATHS } from '@/components/sample-report/paths'
 
 const EN_TO_ES: Record<string, string> = {
   '/': '/es',
@@ -431,6 +432,26 @@ function getZhHref(pathname: string): string {
   return '/zh'
 }
 
+// Pages that exist in every language under a localized slug: switching
+// language keeps the visitor on the same page.
+const EQUIVALENT_PAGES: Record<string, string>[] = [
+  SAMPLE_REPORT_PATHS,
+  {
+    en: '/your-childs-potential',
+    es: '/es/potencial-de-tu-hijo',
+    tr: '/tr/cocugunuzun-potansiyeli',
+    fr: '/fr/potentiel-de-votre-enfant',
+    ar: '/ar/imkaniyat-tiflik',
+    ru: '/ru/potentsial-vashego-rebyonka',
+    zh: '/zh/haizi-de-qianli',
+  },
+]
+
+function getEquivalentHref(pathname: string, code: string): string | undefined {
+  const path = pathname.length > 1 ? pathname.replace(/\/$/, '') : pathname
+  return EQUIVALENT_PAGES.find((group) => Object.values(group).includes(path))?.[code.toLowerCase()]
+}
+
 function detectLang(pathname: string): 'EN' | 'ES' | 'TR' | 'FR' | 'AR' | 'RU' | 'ZH' {
   if (pathname.startsWith('/es')) return 'ES'
   if (pathname.startsWith('/tr')) return 'TR'
@@ -466,13 +487,13 @@ export default function LanguagePickerMain() {
   }, [])
 
   const languages = [
-    { code: 'EN' as const, href: getEnHref(pathname) },
-    { code: 'ES' as const, href: getEsHref(pathname) },
-    { code: 'TR' as const, href: getTrHref(pathname) },
-    { code: 'FR' as const, href: getFrHref(pathname) },
-    { code: 'AR' as const, href: getArHref(pathname) },
-    { code: 'RU' as const, href: getRuHref(pathname) },
-    { code: 'ZH' as const, href: getZhHref(pathname) },
+    { code: 'EN' as const, href: getEquivalentHref(pathname, 'EN') ?? getEnHref(pathname) },
+    { code: 'ES' as const, href: getEquivalentHref(pathname, 'ES') ?? getEsHref(pathname) },
+    { code: 'TR' as const, href: getEquivalentHref(pathname, 'TR') ?? getTrHref(pathname) },
+    { code: 'FR' as const, href: getEquivalentHref(pathname, 'FR') ?? getFrHref(pathname) },
+    { code: 'AR' as const, href: getEquivalentHref(pathname, 'AR') ?? getArHref(pathname) },
+    { code: 'RU' as const, href: getEquivalentHref(pathname, 'RU') ?? getRuHref(pathname) },
+    { code: 'ZH' as const, href: getEquivalentHref(pathname, 'ZH') ?? getZhHref(pathname) },
   ]
 
   const active = LANG_META[activeLang]

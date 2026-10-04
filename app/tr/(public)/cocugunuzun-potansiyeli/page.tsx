@@ -303,7 +303,7 @@ export default function CocugunuzunPotansiyeliPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-3">Örnek Rapor: Küresel Yetenek Profili</h2>
           <p className="text-gray-500 text-base mb-10">Test tamamlandığında ebeveynler dört alanda yüzdelik dilim sıralamalarını ve güçlü/gelişim alanlarını gösteren ayrıntılı bir rapor alır.</p>
 
-          <Link href="/sample-report" className="block group">
+          <Link href="/tr/ornek-rapor" className="block group">
             <div className="border-2 border-indigo-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all bg-gradient-to-br from-indigo-50 to-white">
               <div className="bg-indigo-600 px-6 py-4 text-left">
                 <div className="flex items-center justify-between">

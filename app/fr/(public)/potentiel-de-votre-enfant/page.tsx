@@ -294,7 +294,7 @@ export default function PotentielDeVotreEnfantPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-3">Exemple de Rapport: Profil de Talent Mondial</h2>
           <p className="text-gray-500 text-base mb-10">Lorsque le test est terminé, les parents reçoivent un rapport détaillé montrant les classements en percentile dans quatre domaines et les points forts/axes de développement.</p>
 
-          <Link href="/sample-report" className="block group">
+          <Link href="/fr/exemple-de-rapport" className="block group">
             <div className="border-2 border-indigo-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all bg-gradient-to-br from-indigo-50 to-white">
               <div className="bg-indigo-600 px-6 py-4 text-left">
                 <div className="flex items-center justify-between">

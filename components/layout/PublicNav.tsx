@@ -15,7 +15,6 @@ export default function PublicNav() {
           <Link href="/subjects"         className="hover:text-[#4F46E5] transition-colors">Subjects</Link>
           <a href="https://eduentry.ai/en" className="hover:text-[#4F46E5] transition-colors">Internship</a>
           <Link href="/your-childs-potential" className="hover:text-[#4F46E5] transition-colors">Child&apos;s Potential</Link>
-          <Link href="/sample-report"         className="hover:text-[#4F46E5] transition-colors">Sample Report</Link>
           <Link href="/blog"             className="hover:text-[#4F46E5] transition-colors flex items-center gap-1.5">
             Blog
             <span className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-[9px] font-bold rounded-full min-w-[16px] h-4 px-1 leading-none">

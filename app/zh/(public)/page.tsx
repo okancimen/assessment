@@ -326,6 +326,9 @@ export default function ChineseHomePage() {
                 <Link href="/zh/fangfalun" className="text-sm font-semibold text-[#4F46E5] hover:underline flex items-center gap-1.5 px-2">
                   了解评估原理 →
                 </Link>
+                <Link href="/zh/yangben-baogao" className="text-sm font-semibold text-[#636366] hover:text-[#1d1d1f] flex items-center gap-1.5 px-2">
+                  查看报告样本 →
+                </Link>
               </div>
             </div>
 
@@ -572,10 +575,13 @@ export default function ChineseHomePage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-7 pt-6 border-t border-[#424245]">
+              <div className="mt-7 pt-6 border-t border-[#424245] flex flex-wrap items-center gap-x-5 gap-y-3">
                 <CtaLink href="/zh/auth/register" label="what_you_get_academic_zh" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
                   免费开始 →
                 </CtaLink>
+                <Link href="/zh/yangben-baogao" className="text-sm font-semibold text-[#a1a1a7] hover:text-white transition-colors">
+                  查看报告样本 →
+                </Link>
               </div>
             </div>
 

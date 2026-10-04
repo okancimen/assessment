@@ -19,6 +19,7 @@ export default function PublicFooterRU() {
             <ul>
               <li><Link href="/ru/o-nas"         className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">О нас</Link></li>
               <li><Link href="/ru/metodologiya"  className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Методология</Link></li>
+              <li><Link href="/ru/primer-otcheta" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Пример отчёта</Link></li>
             </ul>
           </div>
           <div>
