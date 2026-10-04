@@ -26,7 +26,7 @@ export default function NotFound() {
             { href: '/business',          icon: '📈', label: 'Business track',   desc: 'Market analysis · Finance · Strategy' },
             { href: '/data-analytics',    icon: '📊', label: 'Data Analytics',   desc: 'Charts · Statistics · SQL' },
             { href: '/digital-marketing', icon: '📣', label: 'Digital Marketing',desc: 'SEO · Social media · Campaigns' },
-            { href: '/blog',              icon: '📝', label: 'Blog',             desc: 'Internship guides & career advice' },
+            { href: 'https://eduentry.com/blog', icon: '📝', label: 'Blog',             desc: 'Internship guides & career advice' },
           ].map(({ href, icon, label, desc }) => (
             <Link
               key={href}

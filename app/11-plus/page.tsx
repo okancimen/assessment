@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { ElevenPlusGuideLinks, GrammarAreaLinks } from '@/app/grammar-schools/cluster'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import CtaLink from '@/components/ui/CtaLink'
@@ -320,22 +321,17 @@ export default function ElevenPlusPage() {
         </section>
 
         {/* Related reading */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">11+ guides</h2>
+          <ElevenPlusGuideLinks />
+        </section>
+
         <section className="mb-14">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Related guides</h2>
-          <div className="grid sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            {[
-              { href: '/blog/free-11-plus-practice-test-online', tag: 'Free Test', title: 'Free 11+ Practice Test Online — Instant SAS Score' },
-              { href: '/grammar-schools', tag: 'Hub', title: 'Grammar Schools in England: SAS Thresholds by Area' },
-              { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+ at Home' },
-              { href: '/blog/verbal-reasoning-11-plus-guide', tag: 'Guide', title: 'Verbal Reasoning 11+ Complete Guide' },
-              { href: '/blog/what-is-a-standardised-score', tag: 'Explainer', title: 'What Is a Standardised Score?' },
-            ].map((link) => (
-              <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
-                <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
-                <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
-              </Link>
-            ))}
-          </div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Grammar schools by area</h2>
+          <p className="text-sm text-gray-600 mb-5">
+            Target scores differ by area. See the <Link href="/grammar-schools" className="text-indigo-600 underline">grammar schools hub</Link> or pick your area:
+          </p>
+          <GrammarAreaLinks />
         </section>
 
         {/* CTA */}

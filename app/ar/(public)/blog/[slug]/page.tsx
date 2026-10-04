@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
+import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS_AR, getArabicPostBySlug } from '@/app/blog/posts-ar'
 import { getArabicBlogContent } from '@/app/blog/content-ar'
@@ -93,14 +94,7 @@ export default async function ARBlogPostPage({ params }: { params: Promise<{ slu
     inLanguage: 'ar',
     image: `${BASE_URL}/ar/blog/${slug}/opengraph-image`,
     wordCount: Math.round(Number(post.readTime?.match(/\d+/)?.[0] ?? 8) * 200),
-    author: {
-      '@type': 'Person',
-      '@id': 'https://eduentry.com/about#ozlem-cimen',
-      name: 'Özlem Çimen',
-      jobTitle: 'Education Professional',
-      url: 'https://eduentry.com/about#ozlem-cimen',
-      sameAs: ['https://edualist.com', 'https://www.edualist.com/neden-biz/#about'],
-    },
+    author: AUTHOR_SCHEMA,
     publisher: { '@id': 'https://eduentry.com/#organization' },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     isPartOf: { '@id': 'https://eduentry.com/#website' },
@@ -158,7 +152,7 @@ export default async function ARBlogPostPage({ params }: { params: Promise<{ slu
           <span>·</span>
           <span>{post.readTime}</span>
           <span>·</span>
-          <span>فريق تحرير Eduentry</span>
+          <AuthorName />
         </div>
       </div>
 
@@ -172,6 +166,7 @@ export default async function ARBlogPostPage({ params }: { params: Promise<{ slu
       <article className="prose prose-gray max-w-none space-y-12">
         {getArabicBlogContent(post.contentSlug ?? slug)}
       </article>
+      <AuthorBox locale="ar" />
 
       {/* Internal service links */}
       <section className="mt-12 border border-[#d2d2d7] rounded-2xl p-6 bg-[#f5f5f7]/50">

@@ -73,7 +73,7 @@ const NAV: Record<Locale, { howItWorks: string; tracks: string; signIn: string; 
 }
 
 const HOME: Record<Locale, string>       = { en: '/', tr: '/tr', es: '/es', fr: '/fr', ar: '/ar', ru: '/ru', zh: '/zh' }
-const BLOG: Record<Locale, string>       = { en: '/blog', tr: '/tr/blog', es: '/es/blog', fr: '/fr/blog', ar: '/ar/blog', ru: '/ru/blog', zh: '/zh/blog' }
+const BLOG: Record<Locale, string>       = { en: 'https://eduentry.com/blog', tr: 'https://eduentry.com/tr/blog', es: 'https://eduentry.com/es/blog', fr: 'https://eduentry.com/fr/blog', ar: 'https://eduentry.com/ar/blog', ru: 'https://eduentry.com/ru/blog', zh: 'https://eduentry.com/zh/blog' }
 const HOW: Record<Locale, string>        = { en: '/#how-it-works', tr: '/tr#how-it-works', es: '/es#how-it-works', fr: '/fr#how-it-works', ar: '/ar#how-it-works', ru: '/ru#how-it-works', zh: '/zh#how-it-works' }
 
 export default function PublicNavAI() {

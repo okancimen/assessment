@@ -355,7 +355,7 @@ export default function FrenchHomePage() {
               {internshipPosts.map((post) => (
                 <Link
                   key={post.slug}
-                  href={`/fr/blog/${post.slug}`}
+                  href={`https://eduentry.com/fr/blog/${post.slug}`}
                   className="block border border-[#d2d2d7] rounded-2xl p-7 hover:border-[#4F46E5]/40 hover:shadow-sm transition-all"
                 >
                   <div className="flex items-center gap-3 text-xs text-[#6e6e73] mb-3">
@@ -371,7 +371,7 @@ export default function FrenchHomePage() {
               ))}
             </div>
             <div className="mt-8">
-              <Link href="/fr/blog" className="text-sm font-semibold text-[#4F46E5] hover:underline">
+              <Link href="https://eduentry.com/fr/blog" className="text-sm font-semibold text-[#4F46E5] hover:underline">
                 Voir tous les articles sur les stages →
               </Link>
             </div>

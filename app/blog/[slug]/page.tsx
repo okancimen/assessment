@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { brandedTitle } from '@/lib/seo'
+import { ELEVEN_PLUS_GUIDE_SLUGS, ElevenPlusClusterBox } from '@/app/grammar-schools/cluster'
 import Link from 'next/link'
+import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
 import { notFound, redirect } from 'next/navigation'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
@@ -109,7 +111,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url,
       publishedTime: post.date,
       modifiedTime: post.dateModified ?? post.date,
-      authors: ['https://eduentry.com/about'],
+      authors: ['https://www.edualist.com/en/about/'],
       images: [{ url: `/blog/${slug}/opengraph-image`, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
@@ -157,14 +159,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     dateModified: post.dateModified ?? post.date,
     url,
     image: `${BASE_URL}/blog/${slug}/opengraph-image`,
-    author: {
-      '@type': 'Person',
-      '@id': 'https://eduentry.com/about#ozlem-cimen',
-      name: 'Özlem Çimen',
-      url: 'https://eduentry.com/about#ozlem-cimen',
-      jobTitle: 'Education Professional',
-      sameAs: ['https://edualist.com', 'https://www.edualist.com/neden-biz/#about'],
-    },
+    author: AUTHOR_SCHEMA,
     publisher: { '@id': 'https://eduentry.com/#organization' },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     isPartOf: { '@id': 'https://eduentry.com/#website' },
@@ -258,7 +253,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <span>·</span>
             <span>{post.readTime}</span>
             <span>·</span>
-            <span>Eduentry Editorial</span>
+            <AuthorName />
           </div>
         </div>
 
@@ -294,6 +289,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <article className="prose prose-gray max-w-none space-y-12">
           {getBlogContent(slug)}
         </article>
+        <AuthorBox locale="en" />
+
+        {ELEVEN_PLUS_GUIDE_SLUGS.includes(slug) && <ElevenPlusClusterBox current={slug} />}
 
         {/* Internal service links */}
         {(() => {

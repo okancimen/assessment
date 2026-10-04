@@ -1,14 +1,6 @@
 import type { MetadataRoute } from 'next'
-import { BLOG_POSTS } from '@/app/blog/posts'
-import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
-import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
-import { BLOG_POSTS_FR } from '@/app/blog/posts-fr'
-import { BLOG_POSTS_AR } from '@/app/blog/posts-ar'
-import { BLOG_POSTS_ZH } from '@/app/blog/posts-zh'
-import { BLOG_POSTS_RU } from '@/app/blog/posts-ru'
 
 const BASE = 'https://eduentry.ai'
-const INTERNSHIP_TAGS = ['Internship', 'Career Development', 'Work Experience']
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -25,13 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/data-analytics`,            lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/digital-marketing`,         lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/about`,                     lastModified: '2026-09-19', changeFrequency: 'yearly',  priority: 0.6 },
-    { url: `${BASE}/blog`,                      lastModified: new Date().toISOString().slice(0, 10), changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${BASE}/tr/blog`,                   lastModified: new Date().toISOString().slice(0, 10), changeFrequency: 'weekly', priority: 0.7 },
-    { url: `${BASE}/es/blog`,                   lastModified: new Date().toISOString().slice(0, 10), changeFrequency: 'weekly', priority: 0.7 },
-    { url: `${BASE}/fr/blog`,                   lastModified: new Date().toISOString().slice(0, 10), changeFrequency: 'weekly', priority: 0.7 },
-    { url: `${BASE}/ar/blog`,                   lastModified: new Date().toISOString().slice(0, 10), changeFrequency: 'weekly', priority: 0.7 },
-    { url: `${BASE}/ru/blog`,                   lastModified: new Date().toISOString().slice(0, 10), changeFrequency: 'weekly', priority: 0.7 },
-    { url: `${BASE}/zh/blog`,                   lastModified: new Date().toISOString().slice(0, 10), changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE}/tr/teknoloji`,               lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/tr/is-dunyasi`,              lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/tr/veri-analitigi`,          lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
@@ -58,56 +43,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/ru/tsifrovoy-marketing`,     lastModified: '2026-09-19', changeFrequency: 'monthly', priority: 0.8 },
   ]
 
-  const blogPages: MetadataRoute.Sitemap = BLOG_POSTS
-    .filter(p => p.tags.some(t => INTERNSHIP_TAGS.includes(t)))
-    .map(post => ({
-      url: `${BASE}/blog/${post.slug}`,
-      lastModified: post.dateModified ?? post.date,
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    }))
-
-  const trBlogPages: MetadataRoute.Sitemap = BLOG_POSTS_TR.map(post => ({
-    url: `${BASE}/tr/blog/${post.slug}`,
-    lastModified: post.dateModified ?? post.date,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }))
-
-  const esBlogPages: MetadataRoute.Sitemap = BLOG_POSTS_ES.map(post => ({
-    url: `${BASE}/es/blog/${post.slug}`,
-    lastModified: post.dateModified ?? post.date,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }))
-
-  const frBlogPages: MetadataRoute.Sitemap = BLOG_POSTS_FR.map(post => ({
-    url: `${BASE}/fr/blog/${post.slug}`,
-    lastModified: post.dateModified ?? post.date,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }))
-
-  const arBlogPages: MetadataRoute.Sitemap = BLOG_POSTS_AR.map(post => ({
-    url: `${BASE}/ar/blog/${post.slug}`,
-    lastModified: post.dateModified ?? post.date,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }))
-
-  const ruBlogPages: MetadataRoute.Sitemap = BLOG_POSTS_RU.map(post => ({
-    url: `${BASE}/ru/blog/${post.slug}`,
-    lastModified: post.dateModified ?? post.date,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }))
-
-  const zhBlogPages: MetadataRoute.Sitemap = BLOG_POSTS_ZH.map(post => ({
-    url: `${BASE}/zh/blog/${post.slug}`,
-    lastModified: post.dateModified ?? post.date,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }))
-
-  return [...staticPages, ...blogPages, ...trBlogPages, ...esBlogPages, ...frBlogPages, ...arBlogPages, ...ruBlogPages, ...zhBlogPages]
+  // Blog posts live on eduentry.com; eduentry.ai/…/blog URLs redirect there
+  return staticPages
 }

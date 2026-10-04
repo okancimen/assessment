@@ -44,9 +44,13 @@ export async function proxy(request: NextRequest) {
       return NextResponse.redirect(new URL(`/${lang}`, request.url))
     }
 
-    // Marketing, blog, track pages, sitemap, robots → /ai/*
+    // The blog lives on eduentry.com only: one copy of each post for Google
+    if (/^\/(?:(?:tr|es|fr|ar|ru|zh)\/)?blog(?:\/|$)/.test(pathname)) {
+      return NextResponse.redirect(`https://eduentry.com${pathname}${request.nextUrl.search}`, 301)
+    }
+
+    // Marketing, track pages, sitemap, robots → /ai/*
     if (
-      pathname.startsWith('/blog') ||
       pathname === '/tech' ||
       pathname === '/business' ||
       pathname === '/data-analytics' ||

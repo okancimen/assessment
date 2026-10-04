@@ -41,9 +41,10 @@ const PERSON_SCHEMA = {
   description: '20+ years as English teacher, department head, and school administrator at TED Istanbul College, ENKA Schools, and Istanbul International Community School (IICS). MBA in International Marketing, Harvard Graduate School of Education Certificate (Differentiating Instruction, 2008), IB Training Certification (Zurich International School, 2002).',
   url: 'https://eduentry.com/about',
   sameAs: [
-    'https://edualist.com',
-    'https://www.edualist.com/neden-biz/#about',
+    'https://www.edualist.com/en/about/',
+    'https://www.edualist.com',
   ],
+  image: 'https://eduentry.com/authors/ozlem-cimen-600.jpg',
   knowsAbout: [
     'Academic assessment',
     'International school admissions',

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
+import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS_ES, getSpanishPostBySlug } from '@/app/blog/posts-es'
 import { getSpanishBlogContent } from '@/app/blog/content-es'
@@ -93,14 +94,7 @@ export default async function ESBlogPostPage({ params }: { params: Promise<{ slu
     inLanguage: 'es',
     image: `${BASE_URL}/es/blog/${slug}/opengraph-image`,
     wordCount: Math.round(Number(post.readTime?.match(/\d+/)?.[0] ?? 8) * 200),
-    author: {
-      '@type': 'Person',
-      '@id': 'https://eduentry.com/about#ozlem-cimen',
-      name: 'Özlem Çimen',
-      jobTitle: 'Education Professional',
-      url: 'https://eduentry.com/about#ozlem-cimen',
-      sameAs: ['https://edualist.com', 'https://www.edualist.com/neden-biz/#about'],
-    },
+    author: AUTHOR_SCHEMA,
     publisher: { '@id': 'https://eduentry.com/#organization' },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     isPartOf: { '@id': 'https://eduentry.com/#website' },
@@ -158,7 +152,7 @@ export default async function ESBlogPostPage({ params }: { params: Promise<{ slu
           <span>·</span>
           <span>{post.readTime}</span>
           <span>·</span>
-          <span>Equipo Editorial de Eduentry</span>
+          <AuthorName />
         </div>
       </div>
 
@@ -172,6 +166,7 @@ export default async function ESBlogPostPage({ params }: { params: Promise<{ slu
       <article className="prose prose-gray max-w-none space-y-12">
         {getSpanishBlogContent(post.contentSlug ?? slug)}
       </article>
+      <AuthorBox locale="es" />
 
       {/* Internal service links */}
       <section className="mt-12 border border-[#d2d2d7] rounded-2xl p-6 bg-[#f5f5f7]/50">

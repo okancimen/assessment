@@ -353,7 +353,7 @@ export default function ChineseHomePage() {
               {internshipPosts.map((post) => (
                 <Link
                   key={post.slug}
-                  href={`/zh/blog/${post.slug}`}
+                  href={`https://eduentry.com/zh/blog/${post.slug}`}
                   className="block border border-[#d2d2d7] rounded-2xl p-7 hover:border-[#4F46E5]/40 hover:shadow-sm transition-all"
                 >
                   <div className="flex items-center gap-3 text-xs text-[#6e6e73] mb-3">
@@ -369,7 +369,7 @@ export default function ChineseHomePage() {
               ))}
             </div>
             <div className="mt-8">
-              <Link href="/zh/blog" className="text-sm font-semibold text-[#4F46E5] hover:underline">
+              <Link href="https://eduentry.com/zh/blog" className="text-sm font-semibold text-[#4F46E5] hover:underline">
                 查看所有实习文章 →
               </Link>
             </div>
