@@ -6,7 +6,7 @@
 
 Eduentry.ai administers a 34-question adaptive assessment measuring internship readiness for students aged 14–18. Results include phase scores, a readiness tier (Developing / Ready / Strong), and an AI-generated report summary. Four tracks available: Technology, Business, Data Analytics, Digital Marketing.
 
-Assessment structure: General Aptitude (verbal and numerical reasoning, 10 questions), Domain Knowledge (track-specific applied knowledge, 10 questions), Workplace Skills (situational judgement, 8 questions), Interest Profile (work style mapping, 6 questions). Takes approximately 35 minutes and is fully resumable.
+Assessment structure: General Aptitude (verbal and numerical reasoning, 10 questions), Domain Knowledge (track-specific applied knowledge, 10 questions), Workplace Skills (situational judgement, 8 questions), Interest Profile (work style mapping, 6 questions). Takes approximately 20 minutes and is fully resumable.
 
 Available in English, Turkish (Türkçe), Spanish (Español), French (Français), Arabic (العربية), Russian (Русский), and Chinese (中文).
 

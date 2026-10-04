@@ -86,7 +86,7 @@ const FAQ_TR = [
   { q: 'Staj değerlendirmesi nedir?', a: '14 yaş üstü lise öğrencileri için 34 soruluk ayrı bir uyarlanabilir değerlendirme. Dört alanda genel yetenek, alan bilgisi, iş yeri becerileri ve ilgi profilini ölçer: Teknoloji, İş Dünyası, Veri Analitiği ve Dijital Pazarlama. Sonuçlar kişiselleştirilmiş hazırlık raporu ve yapay zeka tarafından oluşturulan kariyer içgörüleri içerir.' },
   { q: 'Eduentry\'yi 11+ hazırlığı için kullanabilir miyim?', a: 'Evet. Dört ders — İngilizce, Matematik, Sözel Akıl Yürütme ve Sözel Olmayan Akıl Yürütme — İngiltere\'deki gramer okullarının kullandığı 11+ sınav yapısını doğrudan yansıtır. Eduentry size standartlaştırılmış bir puan ve yüzdelik dilim sıralaması verir; böylece gerçek sınav öncesinde çocuğunuzun tam olarak nerede durduğunu bilirsiniz.' },
   { q: 'Hangi puan iyi sayılır?', a: '100 tam ortalamasıdır. 95–109 ortalama aralığıdır, 110–119 ortalamanın üstündedir ve 120+ olağanüstüdür. 11+ aracılığıyla gramer okuluna erişim için rekabetçi puanlar genellikle 115 veya daha yüksektir — ancak Londra gibi bölgelerdeki daha seçici okullar 127+ gerektirebilir.' },
-  { q: 'Her değerlendirme ne kadar sürer?', a: 'Akademik değerlendirmede 4 derste 60 soru bulunur — çocukların çoğu 60–90 dakikada tamamlar. Staj değerlendirmesinde 34 soru bulunur — öğrencilerin çoğu yaklaşık 35 dakikada bitirir. İlerleme otomatik olarak kaydedilir, bu nedenle her ikisi de istenildiğinde duraklatılıp devam ettirilebilir.' },
+  { q: 'Her değerlendirme ne kadar sürer?', a: 'Akademik değerlendirmede 4 derste 60 soru bulunur — çocukların çoğu 60–90 dakikada tamamlar. Staj değerlendirmesinde 34 soru bulunur — öğrencilerin çoğu yaklaşık 20 dakikada bitirir. İlerleme otomatik olarak kaydedilir, bu nedenle her ikisi de istenildiğinde duraklatılıp devam ettirilebilir.' },
   { q: 'Uyarlanabilir teknoloji nasıl çalışır?', a: 'Eduentry, 2 Parametreli Lojistik MYT (2PL) ile MAP tahmini kullanır — PISA, GCSE ve SAT\'ta kullanılan modelin aynısı. Her yanıtın ardından sistem, öğrencinin yetenek tahmini günceller ve ölçüm hassasiyetini en üst düzeye çıkarmak için bir sonraki soruyu seçer.' },
   { q: 'Birden fazla çocuk ekleyebilir miyim?', a: 'Evet. Tek bir ebeveyn hesabı birden fazla çocuk profili içerebilir. Her çocuğun kendi değerlendirme geçmişi, puanları ve kişiselleştirilmiş önerileri bulunur. Ekleyebileceğiniz çocuk sayısında herhangi bir sınır yoktur.' },
   { q: 'Verilerim gizli mi?', a: 'Evet. Tüm veriler satır düzeyi güvenlikle güvenli biçimde saklanır — yalnızca siz sonuçlarınıza erişebilirsiniz. Verileri üçüncü taraflarla satmaz veya paylaşmayız. Hizmet GDPR ile tam uyumludur.' },
@@ -170,7 +170,7 @@ const INTERNSHIP_PROGRAM_SCHEMA_TR = {
   url: 'https://eduentry.com/tr/staj',
   provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Staj Hazırlık Raporu', credentialCategory: 'certificate' },
-  timeToComplete: 'PT35M',
+  timeToComplete: 'PT20M',
   educationalProgramMode: 'online',
   inLanguage: 'tr',
   typicalAgeRange: '14-18',
@@ -535,7 +535,7 @@ export default function TurkishHomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { step: '01', title: 'Ücretsiz öğrenci hesabı oluşturun', desc: 'Kendiniz kaydolun veya ebeveynlerinizin davetini kabul edin. Okulunuzu, sınıfınızı, alan tercihlerinizi ve hedefleriniz hakkında kısa bir kişisel beyan doldurun.' },
-              { step: '02', title: '4 değerlendirme aşamasını tamamlayın', desc: 'Genel yetenek, alan bilgisi, iş yeri becerileri (SJT) ve ilgi profili — toplamda 34 uyarlanabilir soru. Tamamen devam ettirilebilir, yaklaşık 35 dakika sürer.' },
+              { step: '02', title: '4 değerlendirme aşamasını tamamlayın', desc: 'Genel yetenek, alan bilgisi, iş yeri becerileri (SJT) ve ilgi profili — toplamda 34 uyarlanabilir soru. Tamamen devam ettirilebilir, yaklaşık 20 dakika sürer.' },
               { step: '03', title: 'Hazırlık raporunuzu alın', desc: 'Staj hazırlık seviyenizi, yapay zeka tarafından oluşturulan güçlü yönler özetini ve yetenek, alan ve iş yeri becerileri üzerine kişiselleştirilmiş aşama içgörülerini alın.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
@@ -700,7 +700,7 @@ export default function TurkishHomePage() {
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Staj Değerlendirmesi</p>
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Öğrencinizin staj hazırlığını keşfedin.</h2>
-            <p className="text-[#636366] text-sm mb-8">35 dakikada kişiselleştirilmiş rapor ve yapay zeka içgörüleri.</p>
+            <p className="text-[#636366] text-sm mb-8">20 dakikada kişiselleştirilmiş rapor ve yapay zeka içgörüleri.</p>
             <Link href="/tr/staj" className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors">
               Değerlendirmeye başvur →
             </Link>

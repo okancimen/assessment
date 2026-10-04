@@ -10,7 +10,7 @@ const PAGE_URL = `${BASE_URL}/tr`
 export const metadata: Metadata = {
   title: 'İngiltere Staj Değerlendirmesi — Ücretsiz Yapay Zeka Raporu | Eduentry.ai',
   description:
-    '14–18 yaş lise öğrencileri için ücretsiz yapay zeka destekli staj hazırlık değerlendirmesi. 34 uyarlanabilir soru, 35 dakika. Teknoloji, İş, Veri ve Pazarlama alanları. Anında kişiselleştirilmiş rapor.',
+    '14–18 yaş lise öğrencileri için ücretsiz yapay zeka destekli staj hazırlık değerlendirmesi. 34 uyarlanabilir soru, 20 dakika. Teknoloji, İş, Veri ve Pazarlama alanları. Anında kişiselleştirilmiş rapor.',
   keywords: [
     'İngiltere staj değerlendirmesi',
     'ücretsiz staj hazırlık testi lise öğrencisi',
@@ -89,7 +89,7 @@ const PHASES = [
 const FAQS = [
   { q: 'Değerlendirme ücretsiz mi?',         a: 'Evet — öğrenciler için her zaman ücretsizdir. Gizli ücret, abonelik veya ücretli katman yoktur.' },
   { q: 'Kimler için?',                        a: 'Profesyonel deneyim kazanmak isteyen 14–18 yaş arası lise öğrencileri (9. sınıftan 12. sınıfa kadar).' },
-  { q: 'Ne kadar sürer?',                     a: 'Dört aşamada 34 soru, yaklaşık 35 dakika. Değerlendirme tamamen devam ettirilebilir — istediğin zaman durdurup devam edebilirsin.' },
+  { q: 'Ne kadar sürer?',                     a: 'Dört aşamada 34 soru, yaklaşık 20 dakika. Değerlendirme tamamen devam ettirilebilir — istediğin zaman durdurup devam edebilirsin.' },
   { q: 'Hangi alanı seçmeliyim?',             a: 'Başvururken en fazla üç alan tercihini sıralarsın. İlgi Profili aşaması da en uygun olduğun yeri belirlemeye yardımcı olur — raporun bunu yansıtır.' },
   { q: 'Hazırlık raporum ne zaman gelir?',    a: 'Değerlendirmeyi tamamladıktan hemen sonra. 34 sorunun tamamını bitirdiğinde yapay zeka puanlama anında çalışır ve raporun hesabında hazır olur — bekleme süresi yoktur.' },
   { q: 'Değerlendirmemi özgeçmişimde kullanabilir miyim?', a: 'Evet. Hazırlık raporun, başvurularında doğrudan referans gösterebileceğin ölçülebilir bir puan ve alan bazlı beceri dökümü içerir. Pek çok öğrencimiz bunu kişisel beyanlara ve işe alım görüşmelerine taşıyor.' },
@@ -151,11 +151,11 @@ const HOWTO_SCHEMA = {
   name: "Eduentry.ai ile İngiltere'de staja nasıl yerleşilir",
   description: '14–18 yaş lise öğrencileri için ücretsiz 34 soruluk uyarlanabilir değerlendirme. Kayıttan staj yerleştirme eşleşmesine dört adım.',
   inLanguage: 'tr',
-  totalTime: 'PT35M',
+  totalTime: 'PT20M',
   step: [
     { '@type': 'HowToStep', position: 1, name: 'Kayıt ol', text: 'Ücretsiz Eduentry.ai hesabını bir dakikadan kısa sürede oluştur — ödeme bilgisi gerekmez.' },
     { '@type': 'HowToStep', position: 2, name: 'Başvur', text: 'Kendin, okulun ve Teknoloji, İş Dünyası, Veri Analitiği veya Dijital Pazarlama alanlarındaki tercihlerini bize anlat.' },
-    { '@type': 'HowToStep', position: 3, name: 'Değerlendirmeyi tamamla', text: 'Dört aşamada 34 uyarlanabilir soru: Genel Yetenek, Alan Bilgisi, İş Yeri Becerileri ve İlgi Profili. Yaklaşık 35 dakika. İstediğin zaman devam et.' },
+    { '@type': 'HowToStep', position: 3, name: 'Değerlendirmeyi tamamla', text: 'Dört aşamada 34 uyarlanabilir soru: Genel Yetenek, Alan Bilgisi, İş Yeri Becerileri ve İlgi Profili. Yaklaşık 20 dakika. İstediğin zaman devam et.' },
     { '@type': 'HowToStep', position: 4, name: 'Raporunu al', text: 'Hazırlık seviyesi, aşama bazlı döküm ve staj yerleştirme eşleşmesi içeren yapay zeka tarafından yazılmış kişiselleştirilmiş hazırlık raporunu al.' },
   ],
 }
@@ -184,7 +184,7 @@ export default function TurkishHomePage() {
       <section className="py-16 bg-white text-center px-6">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-[#eef2ff] text-[#4F46E5] text-xs font-semibold px-3 py-1.5 rounded-full mb-8 tracking-[0.1em] uppercase">
-            Yapay Zeka Destekli · Ücretsiz · 35 Dakika
+            Yapay Zeka Destekli · Ücretsiz · 20 Dakika
           </div>
           <h1 className="text-5xl sm:text-7xl font-bold text-[#1d1d1f] tracking-tight mb-6 leading-tight">
             Gerçek bir staja<br />yer bul.
@@ -200,7 +200,7 @@ export default function TurkishHomePage() {
               Ücretsiz başvur →
             </Link>
           </div>
-          <p className="text-xs text-[#6e6e73] mt-6">Öğrenciler için ücretsiz · Kart gerekmez · 35 dakikada sonuç</p>
+          <p className="text-xs text-[#6e6e73] mt-6">Öğrenciler için ücretsiz · Kart gerekmez · 20 dakikada sonuç</p>
         </div>
       </section>
 
@@ -288,7 +288,7 @@ export default function TurkishHomePage() {
               </div>
             ))}
             <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-7 py-4">
-              <span className="text-xs text-[#6e6e73]">Toplam: 34 soru · ~35 dakika · Oturumlar arasında tam devam ettirilebilir</span>
+              <span className="text-xs text-[#6e6e73]">Toplam: 34 soru · ~20 dakika · Oturumlar arasında tam devam ettirilebilir</span>
             </div>
           </div>
         </div>
@@ -408,7 +408,7 @@ export default function TurkishHomePage() {
             Hemen başvur.<br />Ücretsiz.
           </h2>
           <p className="text-lg text-[#6e6e73] mb-10">
-            34 soru. 35 dakika. Kişiselleştirilmiş yapay zeka raporu ve gerçek bir staja doğru ilk adım.
+            34 soru. 20 dakika. Kişiselleştirilmiş yapay zeka raporu ve gerçek bir staja doğru ilk adım.
           </p>
           <Link
             href="/apply"

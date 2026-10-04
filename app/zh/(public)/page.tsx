@@ -89,7 +89,7 @@ const FAQ_ZH = [
   { q: '什么是实习评估？', a: '这是针对14岁以上高中生的独立34题自适应评估，分别测量能力、领域知识、工作技能和兴趣档案，覆盖四个方向：技术、商业、数据分析和数字营销。结果包括个性化的准备情况报告和AI生成的职业洞察。' },
   { q: '可以用Eduentry准备11+考试吗？', a: '可以。四个科目——英语、数学、语言推理和非语言推理——与英国文法学校使用的11+考试结构完全对应。Eduentry提供标准化分数和百分位排名，让您在正式考试前准确了解孩子的位置。' },
   { q: '什么分数算是好成绩？', a: '100是中间值。95–109属于平均范围，110–119高于平均，120+属于卓越水平。英国文法学校11+入学竞争分数通常在115分以上——在伦敦等竞争激烈地区可能需要127+。' },
-  { q: '每项评估需要多长时间？', a: '学术评估包含4个科目60道题——大多数儿童在60–90分钟内完成。实习评估包含34道题——大多数学生约35分钟完成。进度自动保存，两项评估均可分次完成。' },
+  { q: '每项评估需要多长时间？', a: '学术评估包含4个科目60道题——大多数儿童在60–90分钟内完成。实习评估包含34道题——大多数学生约20分钟完成。进度自动保存，两项评估均可分次完成。' },
   { q: '自适应技术如何工作？', a: 'Eduentry使用两参数逻辑模型（2PL）的MAP评估——与PISA、GCSE和SAT使用的模型相同。每次回答后，系统更新学生的能力估计，并选择下一道题以最大化测量精度。' },
   { q: '可以添加多个孩子吗？', a: '可以。一个家长账户可以包含多个孩子的档案。每个孩子都有自己的评估历史、分数和个性化建议。可添加的孩子数量没有限制。' },
 ]
@@ -155,7 +155,7 @@ const INTERNSHIP_PROGRAM_SCHEMA_ZH = {
   url: 'https://eduentry.com/zh/shixi',
   provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: '实习准备报告', credentialCategory: 'certificate' },
-  timeToComplete: 'PT35M',
+  timeToComplete: 'PT20M',
   educationalProgramMode: 'online',
   inLanguage: 'zh',
   typicalAgeRange: '14-18',
@@ -512,7 +512,7 @@ export default function ChineseHomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { step: '01', title: '创建免费学生账户', desc: '自行注册或接受家长邀请。填写学校、年级、方向偏好及简短的个人目标陈述。' },
-              { step: '02', title: '完成4个评估阶段', desc: '通用能力、领域知识、工作技能（情境判断）和兴趣档案——共34道自适应题目。可分次完成，约35分钟。' },
+              { step: '02', title: '完成4个评估阶段', desc: '通用能力、领域知识、工作技能（情境判断）和兴趣档案——共34道自适应题目。可分次完成，约20分钟。' },
               { step: '03', title: '获取准备情况报告', desc: '实习准备等级、AI生成的优势摘要，以及按能力、领域和工作技能分类的个性化洞察。' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
@@ -680,7 +680,7 @@ export default function ChineseHomePage() {
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">实习评估</p>
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">了解学生的实习准备度。</h2>
-            <p className="text-[#636366] text-sm mb-8">35分钟获取个性化报告和AI洞察。</p>
+            <p className="text-[#636366] text-sm mb-8">20分钟获取个性化报告和AI洞察。</p>
             <a href="https://eduentry.ai/" className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors">
               申请评估 →
             </a>

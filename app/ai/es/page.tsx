@@ -89,7 +89,7 @@ const PHASES = [
 const FAQS = [
   { q: '¿Es gratuita la evaluación?',          a: 'Sí — siempre gratuita para los estudiantes. Sin cargos ocultos, suscripciones ni niveles de pago.' },
   { q: '¿Para quién es?',                       a: 'Para estudiantes de instituto de 14 a 18 años (de 3.º de ESO a 2.º de Bachillerato) que quieran adquirir experiencia profesional.' },
-  { q: '¿Cuánto tiempo lleva?',                 a: '34 preguntas en cuatro fases, aproximadamente 35 minutos. La evaluación es completamente reanudable — puedes pausarla y continuarla cuando quieras.' },
+  { q: '¿Cuánto tiempo lleva?',                 a: '34 preguntas en cuatro fases, aproximadamente 20 minutos. La evaluación es completamente reanudable — puedes pausarla y continuarla cuando quieras.' },
   { q: '¿Qué área debo elegir?',                a: 'Al solicitar, puedes ordenar hasta tres preferencias de área. La fase de Perfil de intereses también ayuda a identificar dónde encajas mejor — el informe lo refleja.' },
   { q: '¿Cuándo recibo mi informe de preparación?', a: 'Inmediatamente después de terminar. Una vez que completas las 34 preguntas, la puntuación con IA se ejecuta al instante y el informe queda disponible en tu cuenta — sin esperas.' },
   { q: '¿Puedo usar la evaluación en mi CV?',   a: 'Sí. Tu informe de preparación incluye una puntuación medible y un desglose de habilidades por área que puedes mencionar directamente en tus solicitudes. Muchos de nuestros estudiantes lo incluyen en sus cartas de presentación y entrevistas de trabajo.' },
@@ -151,11 +151,11 @@ const HOWTO_SCHEMA = {
   name: 'Cómo conseguir unas prácticas en el Reino Unido con Eduentry.ai',
   description: 'Evaluación adaptativa gratuita de 34 preguntas para estudiantes de instituto de 14 a 18 años. Cuatro pasos desde el registro hasta la asignación de prácticas.',
   inLanguage: 'es',
-  totalTime: 'PT35M',
+  totalTime: 'PT20M',
   step: [
     { '@type': 'HowToStep', position: 1, name: 'Regístrate', text: 'Crea tu cuenta gratuita de Eduentry.ai en menos de un minuto — sin datos de pago.' },
     { '@type': 'HowToStep', position: 2, name: 'Solicita', text: 'Cuéntanos quién eres, tu instituto y tus preferencias de área entre Tecnología, Empresa, Análisis de datos o Marketing digital.' },
-    { '@type': 'HowToStep', position: 3, name: 'Completa la evaluación', text: '34 preguntas adaptativas en cuatro fases: Aptitud general, Conocimientos del sector, Habilidades profesionales y Perfil de intereses. Aproximadamente 35 minutos. Reanúdala cuando quieras.' },
+    { '@type': 'HowToStep', position: 3, name: 'Completa la evaluación', text: '34 preguntas adaptativas en cuatro fases: Aptitud general, Conocimientos del sector, Habilidades profesionales y Perfil de intereses. Aproximadamente 20 minutos. Reanúdala cuando quieras.' },
     { '@type': 'HowToStep', position: 4, name: 'Recibe tu informe', text: 'Obtén tu informe de preparación personalizado redactado por IA con tu nivel de preparación, desglose por fases y asignación de prácticas.' },
   ],
 }
@@ -184,7 +184,7 @@ export default function SpanishHomePage() {
       <section className="py-16 bg-white text-center px-6">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-[#eef2ff] text-[#4F46E5] text-xs font-semibold px-3 py-1.5 rounded-full mb-8 tracking-[0.1em] uppercase">
-            Con IA · Gratuita · 35 minutos
+            Con IA · Gratuita · 20 minutos
           </div>
           <h1 className="text-5xl sm:text-7xl font-bold text-[#1d1d1f] tracking-tight mb-6 leading-tight">
             Consigue unas<br />prácticas reales.
@@ -200,7 +200,7 @@ export default function SpanishHomePage() {
               Solicitar gratis →
             </Link>
           </div>
-          <p className="text-xs text-[#6e6e73] mt-6">Gratuita para estudiantes · Sin tarjeta · Resultados en 35 minutos</p>
+          <p className="text-xs text-[#6e6e73] mt-6">Gratuita para estudiantes · Sin tarjeta · Resultados en 20 minutos</p>
         </div>
       </section>
 
@@ -288,7 +288,7 @@ export default function SpanishHomePage() {
               </div>
             ))}
             <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-7 py-4">
-              <span className="text-xs text-[#6e6e73]">Total: 34 preguntas · ~35 minutos · Completamente reanudable entre sesiones</span>
+              <span className="text-xs text-[#6e6e73]">Total: 34 preguntas · ~20 minutos · Completamente reanudable entre sesiones</span>
             </div>
           </div>
         </div>
@@ -408,7 +408,7 @@ export default function SpanishHomePage() {
             Solicita ahora.<br />Es gratis.
           </h2>
           <p className="text-lg text-[#6e6e73] mb-10">
-            34 preguntas. 35 minutos. Informe personalizado con IA y el primer paso hacia unas prácticas reales.
+            34 preguntas. 20 minutos. Informe personalizado con IA y el primer paso hacia unas prácticas reales.
           </p>
           <Link
             href="/apply"

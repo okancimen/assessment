@@ -9,7 +9,7 @@ const REGISTER_URL = `${BASE_URL}/auth/register`
 export const metadata: Metadata = {
   title: "Your Child's Strengths & Weaknesses: Free Test",
   description:
-    "Find your child's strengths and gaps in 35 minutes. Free adaptive assessment benchmarked against PISA, SAT and GCSE, with an instant AI report.",
+    "Find your child's strengths and gaps in 20 minutes. Free adaptive assessment benchmarked against PISA, SAT and GCSE, with an instant AI report.",
   keywords: [
     "what are my child's strengths and weaknesses",
     "my child's strengths",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: 'Eduentry',
     title: "What Are My Child's Strengths and Weaknesses? — Free Cognitive Test",
     description:
-      "Discover your child's strengths and weaknesses in 35 minutes. Free adaptive cognitive assessment benchmarked against PISA, SAT and GCSE standards.",
+      "Discover your child's strengths and weaknesses in 20 minutes. Free adaptive cognitive assessment benchmarked against PISA, SAT and GCSE standards.",
     locale: 'en_GB',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: "Your Child's Cognitive Assessment — Eduentry" }],
   },
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "What Are My Child's Strengths and Weaknesses? — Free Cognitive Test",
     description:
-      "Discover your child's strengths and weaknesses in 35 minutes. Free adaptive cognitive assessment benchmarked against PISA, SAT and GCSE standards.",
+      "Discover your child's strengths and weaknesses in 20 minutes. Free adaptive cognitive assessment benchmarked against PISA, SAT and GCSE standards.",
     images: [`${BASE_URL}/opengraph-image`],
   },
 }
@@ -112,7 +112,7 @@ const FAQS = [
   },
   {
     q: 'How long does the test take?',
-    a: 'About 35 minutes. The adaptive format makes fewer but more accurate measurements than standard multiple-choice tests. The test can be saved — your child can continue from where they left off.',
+    a: 'About 20 minutes. The adaptive format makes fewer but more accurate measurements than standard multiple-choice tests. The test can be saved — your child can continue from where they left off.',
   },
   {
     q: 'What age group is it suitable for?',
@@ -146,7 +146,7 @@ const PAGE_SCHEMA = {
   '@id': `${BASE_URL}/your-childs-potential#webpage`,
   url: `${BASE_URL}/your-childs-potential`,
   name: "What Are My Child's Strengths and Weaknesses? — Free Cognitive Test",
-  description: "Discover your child's strengths and weaknesses in 35 minutes. Free adaptive cognitive assessment benchmarked against PISA, SAT and GCSE standards.",
+  description: "Discover your child's strengths and weaknesses in 20 minutes. Free adaptive cognitive assessment benchmarked against PISA, SAT and GCSE standards.",
   inLanguage: 'en',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
@@ -183,7 +183,7 @@ const FAQ_SCHEMA = {
 }
 
 const RELATED_POSTS = [
-  { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: "Free Academic Test: Discover Your Child's Strengths & Weaknesses in 35 Minutes" },
+  { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: "Free Academic Test: Discover Your Child's Strengths & Weaknesses in 20 Minutes" },
   { href: '/blog/smart-child-bad-grades', tag: 'Guide', title: "Smart Child, Bad Grades: A Parent's Guide" },
   { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Guide', title: "Discover Your School-Age Child's Hidden Strengths: A Modern Parent's Guide" },
 ]
@@ -217,7 +217,7 @@ export default function YourChildsPotentialPage() {
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Benchmark cognitive ability and academic readiness against international <strong>PISA, SAT and GCSE</strong> standards in 35 minutes. Reveal the real potential that school grades cannot show.
+            Benchmark cognitive ability and academic readiness against international <strong>PISA, SAT and GCSE</strong> standards in 20 minutes. Reveal the real potential that school grades cannot show.
           </p>
 
           <Link

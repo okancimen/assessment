@@ -12,7 +12,7 @@ const FR: Record<TrackId, TrackData> = {
       p: 'Le secteur technologique britannique emploie 1,7 million de personnes et les employeurs cherchent des jeunes talents fiables. Notre évaluation gratuite en 34 questions vous donne un score de préparation mesurable et un rapport IA personnalisé pour soutenir chaque candidature.',
       cta: 'Commencer gratuitement — filière Technologie →',
       blogLink: 'Lire nos guides de stage',
-      trust: ['✓ Gratuit pour les lycéens', '✓ 14–18 ans', '✓ 35 minutes', '✓ Notation par IA', '✓ Rapport de préparation personnalisé'],
+      trust: ['✓ Gratuit pour les lycéens', '✓ 14–18 ans', '✓ 20 minutes', '✓ Notation par IA', '✓ Rapport de préparation personnalisé'],
     },
     stats: [
       { stat: '1,7M', label: 'emplois tech au Royaume-Uni' },
@@ -90,7 +90,7 @@ const FR: Record<TrackId, TrackData> = {
       h2: 'Votre stage tech commence ici.',
       p: 'Évaluation gratuite en 34 questions. Rapport IA de préparation. Opportunités de placement réelles. Pas de CV nécessaire pour commencer.',
       btn: 'Commencer gratuitement — filière Technologie →',
-      footnote: 'Gratuit pour tous les lycéens de 14 à 18 ans · 35 minutes · Résultats instantanés',
+      footnote: 'Gratuit pour tous les lycéens de 14 à 18 ans · 20 minutes · Résultats instantanés',
     },
     breadcrumb: { home: 'Accueil', track: 'Filière Technologie' },
     ui: {
@@ -115,7 +115,7 @@ const FR: Record<TrackId, TrackData> = {
       p: 'Le master en gestion est l\'une des formations les plus demandées en France et au Royaume-Uni — ce qui rend la concurrence pour les stages redoutable. Notre évaluation mesure la culture business et la pensée analytique qui distinguent les candidats solides, et vous fournit un rapport crédible pour le prouver.',
       cta: 'Commencer gratuitement — filière Entreprise →',
       blogLink: 'Lire nos guides de stage',
-      trust: ['✓ Gratuit pour les lycéens', '✓ 14–18 ans', '✓ 35 minutes', '✓ Notation par IA', '✓ Rapport de préparation personnalisé'],
+      trust: ['✓ Gratuit pour les lycéens', '✓ 14–18 ans', '✓ 20 minutes', '✓ Notation par IA', '✓ Rapport de préparation personnalisé'],
     },
     stats: [
       { stat: '68 %', label: 'des employeurs considèrent l\'expérience professionnelle comme leur principal critère de recrutement (CBI)' },
@@ -193,7 +193,7 @@ const FR: Record<TrackId, TrackData> = {
       h2: 'Votre stage en entreprise commence ici.',
       p: 'Évaluation gratuite en 34 questions. Rapport IA de préparation. Opportunités de placement réelles. Pas de CV nécessaire pour commencer.',
       btn: 'Commencer gratuitement — filière Entreprise →',
-      footnote: 'Gratuit pour tous les lycéens de 14 à 18 ans · 35 minutes · Résultats instantanés',
+      footnote: 'Gratuit pour tous les lycéens de 14 à 18 ans · 20 minutes · Résultats instantanés',
     },
     breadcrumb: { home: 'Accueil', track: 'Filière Entreprise' },
     ui: {
@@ -218,7 +218,7 @@ const FR: Record<TrackId, TrackData> = {
       p: 'Les postes d\'analyste de données ont progressé de 40 % au Royaume-Uni entre 2022 et 2024, mais 82 % des entreprises peinent à trouver des candidats avec les bonnes compétences. Notre évaluation gratuite mesure votre culture des données, votre raisonnement statistique et votre capacité à communiquer des insights — et produit un rapport sur lequel les employeurs peuvent agir.',
       cta: 'Commencer gratuitement — filière Analyse de données →',
       blogLink: 'Lire nos guides de stage',
-      trust: ['✓ Gratuit pour les lycéens', '✓ 14–18 ans', '✓ 35 minutes', '✓ Notation par IA', '✓ Rapport de préparation personnalisé'],
+      trust: ['✓ Gratuit pour les lycéens', '✓ 14–18 ans', '✓ 20 minutes', '✓ Notation par IA', '✓ Rapport de préparation personnalisé'],
     },
     stats: [
       { stat: '40 %', label: 'croissance des postes d\'analyste de données au Royaume-Uni (2022–2024)' },
@@ -296,7 +296,7 @@ const FR: Record<TrackId, TrackData> = {
       h2: 'Votre stage data commence ici.',
       p: 'Évaluation gratuite en 34 questions. Rapport IA de préparation. Opportunités de placement réelles. Pas de CV nécessaire pour commencer.',
       btn: 'Commencer gratuitement — filière Analyse de données →',
-      footnote: 'Gratuit pour tous les lycéens de 14 à 18 ans · 35 minutes · Résultats instantanés',
+      footnote: 'Gratuit pour tous les lycéens de 14 à 18 ans · 20 minutes · Résultats instantanés',
     },
     breadcrumb: { home: 'Accueil', track: 'Filière Analyse de données' },
     ui: {
@@ -321,7 +321,7 @@ const FR: Record<TrackId, TrackData> = {
       p: 'Les dépenses publicitaires digitales au Royaume-Uni ont atteint 29,6 milliards de livres en 2023 — et chaque livre nécessite des personnes qui comprennent les canaux, les audiences et la mesure. Notre évaluation gratuite le démontre, avec un rapport que les employeurs peuvent utiliser avant même de vous avoir rencontré.',
       cta: 'Commencer gratuitement — filière Marketing digital →',
       blogLink: 'Lire nos guides de stage',
-      trust: ['✓ Gratuit pour les lycéens', '✓ 14–18 ans', '✓ 35 minutes', '✓ Notation par IA', '✓ Rapport de préparation personnalisé'],
+      trust: ['✓ Gratuit pour les lycéens', '✓ 14–18 ans', '✓ 20 minutes', '✓ Notation par IA', '✓ Rapport de préparation personnalisé'],
     },
     stats: [
       { stat: '£29,6Mrd', label: 'dépenses en publicité digitale au Royaume-Uni en 2023 (IAB)' },
@@ -399,7 +399,7 @@ const FR: Record<TrackId, TrackData> = {
       h2: 'Votre stage en marketing digital commence ici.',
       p: 'Évaluation gratuite en 34 questions. Rapport IA de préparation. Opportunités de placement réelles. Pas de CV nécessaire pour commencer.',
       btn: 'Commencer gratuitement — filière Marketing digital →',
-      footnote: 'Gratuit pour tous les lycéens de 14 à 18 ans · 35 minutes · Résultats instantanés',
+      footnote: 'Gratuit pour tous les lycéens de 14 à 18 ans · 20 minutes · Résultats instantanés',
     },
     breadcrumb: { home: 'Accueil', track: 'Filière Marketing digital' },
     ui: {

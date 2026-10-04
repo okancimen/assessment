@@ -9,7 +9,7 @@ const BASE_URL = 'https://eduentry.com'
 export const metadata: Metadata = {
   title: 'Free Internship Readiness Assessment — Ages 14+',
   description:
-    'Free 34-question assessment for students aged 14+. Discover your readiness for tech, business, data or digital marketing internships — results in 35 minutes.',
+    'Free 34-question assessment for students aged 14+. Discover your readiness for tech, business, data or digital marketing internships — results in 20 minutes.',
   keywords: [
     'internship readiness assessment',
     'high school internship',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Internship Readiness Assessment — Eduentry',
-    description: 'Free 34-question adaptive assessment for high school students aged 14+. Find your internship track in 35 minutes.',
+    description: 'Free 34-question adaptive assessment for high school students aged 14+. Find your internship track in 20 minutes.',
     images: [`${BASE_URL}/internship/opengraph-image`],
   },
 }
@@ -76,7 +76,7 @@ const WEBPAGE_SCHEMA = {
   '@id': `${BASE_URL}/internship#webpage`,
   url: `${BASE_URL}/internship`,
   name: 'Free Internship Readiness Assessment — Ages 14+',
-  description: 'Free 34-question adaptive assessment for high school students aged 14+. Discover your readiness for tech, business, data or digital marketing internships — results in 35 minutes.',
+  description: 'Free 34-question adaptive assessment for high school students aged 14+. Discover your readiness for tech, business, data or digital marketing internships — results in 20 minutes.',
   inLanguage: 'en-GB',
   isPartOf: { '@id': `${BASE_URL}/#website` },
   about: { '@id': `${BASE_URL}/internship#service` },
@@ -99,7 +99,7 @@ const FAQ_SCHEMA = {
     {
       '@type': 'Question',
       name: 'How long does the internship assessment take?',
-      acceptedAnswer: { '@type': 'Answer', text: 'The assessment consists of 34 adaptive questions across four phases and takes approximately 35 minutes to complete. It is fully resumable, so students can pause and continue across sessions.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'The assessment consists of 34 adaptive questions across four phases and takes approximately 20 minutes to complete. It is fully resumable, so students can pause and continue across sessions.' },
     },
     {
       '@type': 'Question',
@@ -151,7 +151,7 @@ export default function InternshipLandingPage() {
             Discover your internship<br />readiness
           </h1>
           <p className="text-lg text-[#6e6e73] max-w-xl mx-auto mb-8 leading-relaxed">
-            A 34-question adaptive assessment designed for high school students aged 14 and above. Takes around 35 minutes and generates a personalised readiness report.
+            A 34-question adaptive assessment designed for high school students aged 14 and above. Takes around 20 minutes and generates a personalised readiness report.
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link
@@ -256,7 +256,7 @@ export default function InternshipLandingPage() {
               </div>
             ))}
             <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-6 py-3">
-              <span className="text-xs text-[#6e6e73]">Total: 34 questions · ~35 minutes · Fully resumable</span>
+              <span className="text-xs text-[#6e6e73]">Total: 34 questions · ~20 minutes · Fully resumable</span>
             </div>
           </div>
         </section>

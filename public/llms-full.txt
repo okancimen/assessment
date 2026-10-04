@@ -11,7 +11,7 @@ Eduentry operates two assessment products under two domains:
 
 **Eduentry.com** — Free adaptive academic benchmark for children aged 6–17. Measures English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning using 2-Parameter Logistic Item Response Theory (2PL IRT) with MAP estimation. Scores reported on a standardised scale (mean 100, standard deviation 15) with international percentile rankings benchmarked against PISA, GCSE, UK national curriculum, SAT, and IB standards. Completely free, no subscriptions.
 
-**Eduentry.ai** — Free AI-powered internship readiness assessment for students aged 14–18. 34 adaptive questions across four phases: General Aptitude (10 questions), Domain Knowledge (10 questions), Workplace Skills/situational judgement (8 questions), Interest Profile (6 questions). Four career tracks: Technology, Business, Data Analytics, Digital Marketing. Results include a personalised AI-generated readiness report with a readiness tier (Developing / Ready / Strong) and phase-by-phase breakdown. Takes approximately 35 minutes. Available in 7 languages.
+**Eduentry.ai** — Free AI-powered internship readiness assessment for students aged 14–18. 34 adaptive questions across four phases: General Aptitude (10 questions), Domain Knowledge (10 questions), Workplace Skills/situational judgement (8 questions), Interest Profile (6 questions). Four career tracks: Technology, Business, Data Analytics, Digital Marketing. Results include a personalised AI-generated readiness report with a readiness tier (Developing / Ready / Strong) and phase-by-phase breakdown. Takes approximately 20 minutes. Available in 7 languages.
 
 ---
 

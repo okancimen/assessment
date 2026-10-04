@@ -27,7 +27,7 @@ export default function OGImage() {
           Prépare ton stage lycéen
         </div>
         <div style={{ color: '#c7d2fe', fontSize: 22, textAlign: 'center', marginBottom: 48, maxWidth: 640, lineHeight: 1.5 }}>
-          34 questions gratuites · 35 minutes · Rapport personnalisé instantané
+          34 questions gratuites · 20 minutes · Rapport personnalisé instantané
         </div>
         <div style={{ display: 'flex', gap: 16 }}>
           {['💻 Technologie', '📈 Entreprise', '📊 Data', '📣 Marketing Digital'].map((track) => (

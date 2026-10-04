@@ -362,7 +362,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Çocuğunuzun gerçekte nerede durduğunu öğrenin',
-      body: "Eduentry'nin ücretsiz uyarlanabilir değerlendirmesi, bir okul notu değil standartlaştırılmış bir puan ve küresel yüzdelik dilim karşılaştırması üretir. 35 dakikadan kısa sürede çocuğunuzun gerçek konumunu anlayın.",
+      body: "Eduentry'nin ücretsiz uyarlanabilir değerlendirmesi, bir okul notu değil standartlaştırılmış bir puan ve küresel yüzdelik dilim karşılaştırması üretir. 20 dakikadan kısa sürede çocuğunuzun gerçek konumunu anlayın.",
       label: 'Ücretsiz değerlendirmeye başla',
       href: '/auth/register',
     },
@@ -446,7 +446,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'İş dünyasına hazırlık seviyeni ölç',
-      body: 'Lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. İş dünyası alanında yetenek, alan bilgisi ve iş yeri becerilerini ölç — 35 dakikadan kısa sürede.',
+      body: 'Lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. İş dünyası alanında yetenek, alan bilgisi ve iş yeri becerilerini ölç — 20 dakikadan kısa sürede.',
       label: 'Ücretsiz değerlendirmeyi başlat',
       href: '/tr/staj',
     },
@@ -576,7 +576,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Çocuğunuz iş dünyasına hazır mı?',
-      body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi ile çocuğunuzun güçlü yönlerini ve gelişim alanlarını 35 dakikada keşfedin.',
+      body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi ile çocuğunuzun güçlü yönlerini ve gelişim alanlarını 20 dakikada keşfedin.',
       label: 'Ücretsiz değerlendirmeyi başlat',
       href: '/tr/staj',
     },
@@ -601,7 +601,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Staj hazırlığını ölç — ücretsiz',
-      body: '34 soruluk adaptif değerlendirme ile çocuğunuzun aptitude, domain bilgisi ve işyeri becerilerini ölçün. Kişiselleştirilmiş hazırlık raporu 35 dakikada hazır.',
+      body: '34 soruluk adaptif değerlendirme ile çocuğunuzun aptitude, domain bilgisi ve işyeri becerilerini ölçün. Kişiselleştirilmiş hazırlık raporu 20 dakikada hazır.',
       label: 'Değerlendirmeyi başlat',
       href: '/tr/staj',
     },
@@ -738,7 +738,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Çocuğunuzun staj profilini keşfedin',
-      body: 'Hangi sektör en uygun? Hazırlık düzeyi nerede? Eduentry\'nin ücretsiz adaptif değerlendirmesi 35 dakikada kişiselleştirilmiş bir staj profili çıkarır.',
+      body: 'Hangi sektör en uygun? Hazırlık düzeyi nerede? Eduentry\'nin ücretsiz adaptif değerlendirmesi 20 dakikada kişiselleştirilmiş bir staj profili çıkarır.',
       label: 'Ücretsiz değerlendirme',
       href: '/tr/staj',
     },
@@ -762,7 +762,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Staja başvurmadan önce hazırlığını ölç',
-      body: 'Hangi ize uygunsun? Ücretsiz 34 soruluk değerlendirmemiz 35 dakikada kişiselleştirilmiş staj hazırlık raporu sunar.',
+      body: 'Hangi ize uygunsun? Ücretsiz 34 soruluk değerlendirmemiz 20 dakikada kişiselleştirilmiş staj hazırlık raporu sunar.',
       label: 'Ücretsiz değerlendirmeyi başlat',
       href: '/tr/staj',
     },
@@ -788,7 +788,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Staja hazır olduğundan emin misin?',
-      body: 'Zorunlu stajdan önce güçlü yönlerini ve gelişim alanlarını bil. 35 dakikalık ücretsiz değerlendirme kişiselleştirilmiş bir hazırlık raporu sunar.',
+      body: 'Zorunlu stajdan önce güçlü yönlerini ve gelişim alanlarını bil. 20 dakikalık ücretsiz değerlendirme kişiselleştirilmiş bir hazırlık raporu sunar.',
       label: 'Ücretsiz değerlendirmeyi başlat',
       href: '/tr/staj',
     },
@@ -812,7 +812,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Staj başvurusuna hazır mısın?',
-      body: 'Hangi sektöre en uygunsun? Güçlü yönlerini 35 dakikada öğren — tamamen ücretsiz.',
+      body: 'Hangi sektöre en uygunsun? Güçlü yönlerini 20 dakikada öğren — tamamen ücretsiz.',
       label: 'Ücretsiz değerlendirmeyi başlat',
       href: '/tr/staj',
     },
@@ -837,7 +837,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Hangi staja en uygunsun?',
-      body: 'Başvurmadan önce güçlü yönlerini ve ilgi alanını bil. Eduentry\'nin ücretsiz değerlendirmesi 35 dakikada sana en uygun izi gösterir.',
+      body: 'Başvurmadan önce güçlü yönlerini ve ilgi alanını bil. Eduentry\'nin ücretsiz değerlendirmesi 20 dakikada sana en uygun izi gösterir.',
       label: 'Ücretsiz değerlendirmeyi başlat',
       href: '/tr/staj',
     },
@@ -862,7 +862,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Yaz stajına hazır mısın?',
-      body: 'Hangi ize başvuracağını bilmiyorsan, önce güçlü yönlerini ölç. 35 dakikalık ücretsiz değerlendirmemiz hangi sektöre uygun olduğunu net biçimde gösterir.',
+      body: 'Hangi ize başvuracağını bilmiyorsan, önce güçlü yönlerini ölç. 20 dakikalık ücretsiz değerlendirmemiz hangi sektöre uygun olduğunu net biçimde gösterir.',
       label: 'Ücretsiz değerlendirmeyi başlat',
       href: '/tr/staj',
     },
@@ -1095,7 +1095,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Çocuğunuz iş deneyimine hazır mı?',
-      body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi 35 dakika sürer ve çocuğunuzun tam olarak nerede durduğunu gösterir — yetenek, alan bilgisi ve profesyonel beceriler — başvurularında kullanabileceği kişiselleştirilmiş bir raporla.',
+      body: 'Eduentry\'nin ücretsiz staj hazırlık değerlendirmesi 20 dakika sürer ve çocuğunuzun tam olarak nerede durduğunu gösterir — yetenek, alan bilgisi ve profesyonel beceriler — başvurularında kullanabileceği kişiselleştirilmiş bir raporla.',
       label: 'Ücretsiz değerlendirmeyi başlat',
       href: '/tr/staj',
     },
@@ -1182,10 +1182,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet',
     contentSlug: 'discover-child-strengths-free-academic-test',
-    title: 'Ücretsiz Akademik Test: Çocuğunuzun Güçlü ve Zayıf Yönlerini 35 Dakikada Keşfedin',
+    title: 'Ücretsiz Akademik Test: Çocuğunuzun Güçlü ve Zayıf Yönlerini 20 Dakikada Keşfedin',
     shortTitle: 'Ücretsiz Akademik Test: Güçlü ve Zayıf Yönler',
-    description: 'Karne notları bilişsel potansiyeli göstermez. Ücretsiz adaptif testimiz 35 dakikada sözel, sayısal ve görsel-uzamsal yetenekleri ölçer.',
-    tldr: 'Sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünmeyi bağımsız olarak ölçen ücretsiz adaptif test — 35 dakikada uluslararası yüzdelik dilim raporu. CAT ve IRT metodolojisiyle, CAT4 ve NWEA MAP ile aynı bilimsel temel.',
+    description: 'Karne notları bilişsel potansiyeli göstermez. Ücretsiz adaptif testimiz 20 dakikada sözel, sayısal ve görsel-uzamsal yetenekleri ölçer.',
+    tldr: 'Sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünmeyi bağımsız olarak ölçen ücretsiz adaptif test — 20 dakikada uluslararası yüzdelik dilim raporu. CAT ve IRT metodolojisiyle, CAT4 ve NWEA MAP ile aynı bilimsel temel.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
     readTime: '10 dk okuma',
@@ -1197,7 +1197,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       },
       {
         q: 'Ücretsiz akademik test ne kadar sürer?',
-        a: 'Yaklaşık 25–35 dakika. Adaptif format sayesinde her soru bir öncekinin cevabına göre ayarlanır ve 80 soruluk klasik bir testin ölçüm hassasiyetine çok daha az soruyla ulaşılır.',
+        a: 'Yaklaşık 15–20 dakika. Adaptif format sayesinde her soru bir öncekinin cevabına göre ayarlanır ve 80 soruluk klasik bir testin ölçüm hassasiyetine çok daha az soruyla ulaşılır.',
       },
       {
         q: 'Hangi yaş grubu için uygundur?',
@@ -1221,7 +1221,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       },
       {
         q: 'Ücretsiz test çocuğumun üstün yetenekli olup olmadığını gösterir mi?',
-        a: 'Evet. Adaptif bilişsel değerlendirme, üstün yeteneklilikle en güçlü ilişkisi olan üç alanı ölçer: sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünme. Her üç alanda 90. yüzdeliğin üzerinde puan alan bir çocuk, üstün yetenekli program değerlendirmesinden fayda sağlayabilir. Test 35 dakika sürer ve kayıt gerektirmez.',
+        a: 'Evet. Adaptif bilişsel değerlendirme, üstün yeteneklilikle en güçlü ilişkisi olan üç alanı ölçer: sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünme. Her üç alanda 90. yüzdeliğin üzerinde puan alan bir çocuk, üstün yetenekli program değerlendirmesinden fayda sağlayabilir. Test 20 dakika sürer ve kayıt gerektirmez.',
       },
       {
         q: 'Ücretsiz online test profesyonel değerlendirme kadar güvenilir mi?',
@@ -1274,7 +1274,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       },
       {
         q: 'Çocuğumun gerçek akademik potansiyelini nasıl öğrenebilirim?',
-        a: 'Ücretsiz bir adaptif bilişsel değerlendirme, sözel muhakeme, sayısal muhakeme, görsel-uzamsal muhakeme ve işlem hızını bağımsız olarak ölçer ve her alan için uluslararası normlara göre kalibre edilmiş yüzdelik dilim skoru üretir. Okul notlarının aksine, çocuğunuzun neyi bildiğini bilişsel kapasitesinden ayırır. Eduentry akademik değerlendirmesi 35 dakika sürer ve herhangi bir hazırlık gerektirmez.',
+        a: 'Ücretsiz bir adaptif bilişsel değerlendirme, sözel muhakeme, sayısal muhakeme, görsel-uzamsal muhakeme ve işlem hızını bağımsız olarak ölçer ve her alan için uluslararası normlara göre kalibre edilmiş yüzdelik dilim skoru üretir. Okul notlarının aksine, çocuğunuzun neyi bildiğini bilişsel kapasitesinden ayırır. Eduentry akademik değerlendirmesi 20 dakika sürer ve herhangi bir hazırlık gerektirmez.',
       },
       {
         q: 'Çocuğum okulda düşük performans gösteriyorsa test yaptırmalı mıyım?',
@@ -1327,7 +1327,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       },
       {
         q: 'Eduentry değerlendirmesi nasıl çalışıyor?',
-        a: 'Eduentry staj hazırlık değerlendirmesi adaptif test kullanır: her soru bir önceki cevabına göre seçilir, bu sayede sabit bir zorluk yerine gerçek yetenek seviyene kalibre olur. Yaklaşık 35 dakika sürer ve dört sektörü kapsar: teknoloji, veri analitiği, iş yönetimi ve dijital pazarlama. Sonunda alan puanlarını ve sektör uyum profilini içeren detaylı bir yetenek raporu alırsın.',
+        a: 'Eduentry staj hazırlık değerlendirmesi adaptif test kullanır: her soru bir önceki cevabına göre seçilir, bu sayede sabit bir zorluk yerine gerçek yetenek seviyene kalibre olur. Yaklaşık 20 dakika sürer ve dört sektörü kapsar: teknoloji, veri analitiği, iş yönetimi ve dijital pazarlama. Sonunda alan puanlarını ve sektör uyum profilini içeren detaylı bir yetenek raporu alırsın.',
       },
       {
         q: 'Eduentry değerlendirmesi ücretsiz mi?',
@@ -1343,7 +1343,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       },
       {
         q: 'Staj hazırlık değerlendirmesi ne kadar sürer?',
-        a: 'Yaklaşık 35 dakika. Test adaptif olduğundan, eşdeğer doğruluktaki sabit formatlı bir testten daha hızlı kesin kalibrasyon sağlar. Tek oturumda tamamlayabilirsin — hesap veya ön hazırlık gerekmez.',
+        a: 'Yaklaşık 20 dakika. Test adaptif olduğundan, eşdeğer doğruluktaki sabit formatlı bir testten daha hızlı kesin kalibrasyon sağlar. Tek oturumda tamamlayabilirsin — hesap veya ön hazırlık gerekmez.',
       },
       {
         q: 'Öğrenci stajı ile mezun yerleştirmesi arasındaki fark nedir?',
@@ -1356,7 +1356,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Staja hazır mısın?',
-      body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Teknoloji, veri, iş yönetimi ve dijital pazarlamadaki hazırlık seviyeni 35 dakikada öğren.',
+      body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Teknoloji, veri, iş yönetimi ve dijital pazarlamadaki hazırlık seviyeni 20 dakikada öğren.',
       label: 'Ücretsiz değerlendirmeyi başlat →',
       href: '/tr/staj',
     },
@@ -1368,7 +1368,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Akademik Çocuklar için Yaz Tatili Aktiviteleri',
     description:
       '9–16 yaş başarılı çocuklar için verimli bir yaz: stajlar, değerlendirmeler, zenginleştirme programları ve güçlü yönlere göre 3 adımlı plan.',
-    tldr: 'Yapılandırılmamış yazlar başarı uçurumunu derinleştirir — ancak yanlış yapılandırılmış bir yaz içsel motivasyonu öldürür. Cevap, amaca yönelik, çeşitli ve çocuğun bilişsel profiline uygun olmaktır. Herhangi bir şey rezerve etmeden önce hangi alanı geliştireceğinizi öğrenmek için ücretsiz 35 dakikalık değerlendirmeyle başlayın.',
+    tldr: 'Yapılandırılmamış yazlar başarı uçurumunu derinleştirir — ancak yanlış yapılandırılmış bir yaz içsel motivasyonu öldürür. Cevap, amaca yönelik, çeşitli ve çocuğun bilişsel profiline uygun olmaktır. Herhangi bir şey rezerve etmeden önce hangi alanı geliştireceğinizi öğrenmek için ücretsiz 20 dakikalık değerlendirmeyle başlayın.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
     readTime: '10 dk okuma',
@@ -1400,7 +1400,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       },
       {
         q: "Çocuğumun güçlü yönlerine hangi yaz aktivitesinin uygun olduğunu nasıl bilirim?",
-        a: "Herhangi bir şey rezerve etmeden önce ücretsiz 35 dakikalık bilişsel değerlendirmeyi yapın. Uluslararası kıyaslamalı sözel, sayısal ve uzamsal yüzdelik puanlar üretir. Güçlü sözel profilli bir çocuk tartışma, yazma ve Model BM'de başarılı olur. Sayısal-uzamsal profil kodlama, mühendislik projeleri ve rekabetçi matematiğe yönlendirir.",
+        a: "Herhangi bir şey rezerve etmeden önce ücretsiz 20 dakikalık bilişsel değerlendirmeyi yapın. Uluslararası kıyaslamalı sözel, sayısal ve uzamsal yüzdelik puanlar üretir. Güçlü sözel profilli bir çocuk tartışma, yazma ve Model BM'de başarılı olur. Sayısal-uzamsal profil kodlama, mühendislik projeleri ve rekabetçi matematiğe yönlendirir.",
       },
       {
         q: 'Yaz aktiviteleri takip eden yılda okul başarısını artırır mı?',

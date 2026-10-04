@@ -7,7 +7,7 @@ const BASE_URL = 'https://eduentry.com'
 export const metadata: Metadata = {
   title: 'Prácticas de instituto: evaluación gratuita',
   description:
-    '34 preguntas para estudiantes desde 14 años. Área ideal — Tecnología, Empresa, Datos o Marketing Digital — en 35 minutos. Informe personalizado instantáneo.',
+    '34 preguntas para estudiantes desde 14 años. Área ideal — Tecnología, Empresa, Datos o Marketing Digital — en 20 minutos. Informe personalizado instantáneo.',
   keywords: [
     'prácticas instituto',
     'prácticas empresa estudiante',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'Prácticas de Instituto Gratuitas — Evaluación de Preparación | Eduentry',
     description:
-      'Evaluación adaptativa gratuita de 34 preguntas para estudiantes de instituto desde 14 años. Informe personalizado en 35 minutos.',
+      'Evaluación adaptativa gratuita de 34 preguntas para estudiantes de instituto desde 14 años. Informe personalizado en 20 minutos.',
     url: `${BASE_URL}/es/practicas`,
     locale: 'es_ES',
     images: [{ url: `${BASE_URL}/es/practicas/opengraph-image`, width: 1200, height: 630, alt: 'Prácticas de Instituto — Eduentry' }],
@@ -73,7 +73,7 @@ const WEBPAGE_SCHEMA = {
   '@id': `${BASE_URL}/es/practicas#webpage`,
   url: `${BASE_URL}/es/practicas`,
   name: 'Prácticas de Instituto Gratuitas — Evaluación de Preparación | Eduentry',
-  description: 'Evaluación adaptativa gratuita de 34 preguntas para estudiantes de instituto desde 14 años. Descubre tu área ideal — Tecnología, Empresa, Datos o Marketing Digital — en 35 minutos.',
+  description: 'Evaluación adaptativa gratuita de 34 preguntas para estudiantes de instituto desde 14 años. Descubre tu área ideal — Tecnología, Empresa, Datos o Marketing Digital — en 20 minutos.',
   inLanguage: 'es',
   isPartOf: { '@id': `${BASE_URL}/#website` },
   about: { '@id': `${BASE_URL}/es/practicas#service` },
@@ -87,7 +87,7 @@ const FAQ_SCHEMA = {
     { '@type': 'Question', name: '¿A qué edad se puede hacer prácticas en España?', acceptedAnswer: { '@type': 'Answer', text: 'En España, los estudiantes de secundaria y bachillerato pueden realizar prácticas no laborales desde los 14-15 años con autorización parental. Las prácticas de verano para jóvenes suelen estar disponibles a partir de los 14-16 años según la empresa.' } },
     { '@type': 'Question', name: '¿Cómo encontrar prácticas de instituto?', acceptedAnswer: { '@type': 'Answer', text: 'Las vías más efectivas: (1) candidaturas espontáneas por correo a pymes locales — un email corto y personalizado obtiene respuesta con frecuencia; (2) red familiar y entorno cercano; (3) orientador académico del centro; (4) plataformas online como InfoJobs o LinkedIn para prácticas formales. Las pymes responden mejor que las grandes corporaciones.' } },
     { '@type': 'Question', name: '¿Qué área de prácticas elegir?', acceptedAnswer: { '@type': 'Answer', text: 'La evaluación Eduentry te ayuda a identificar tu área ideal entre cuatro: Tecnología, Empresa, Análisis de Datos y Marketing Digital. Mide tus aptitudes, conocimientos del sector y competencias en el entorno laboral para orientarte hacia el área donde tienes más posibilidades de destacar y disfrutar la experiencia.' } },
-    { '@type': 'Question', name: '¿Cuánto tiempo dura la evaluación?', acceptedAnswer: { '@type': 'Answer', text: 'La evaluación tiene 34 preguntas adaptativas en 4 fases y dura unos 35 minutos. Se puede pausar y retomar en cualquier momento — no hace falta terminarla de una vez.' } },
+    { '@type': 'Question', name: '¿Cuánto tiempo dura la evaluación?', acceptedAnswer: { '@type': 'Answer', text: 'La evaluación tiene 34 preguntas adaptativas en 4 fases y dura unos 20 minutos. Se puede pausar y retomar en cualquier momento — no hace falta terminarla de una vez.' } },
     { '@type': 'Question', name: '¿Qué incluye el informe de preparación?', acceptedAnswer: { '@type': 'Answer', text: 'El informe personalizado incluye: tu nivel de preparación (Listo para Prácticas, En Desarrollo o Necesita Apoyo), un resumen generado por IA sobre tu rendimiento, y análisis por fase con tus puntos fuertes y áreas de mejora.' } },
     { '@type': 'Question', name: '¿Las prácticas ayudan para la universidad?', acceptedAnswer: { '@type': 'Answer', text: 'Sí. La experiencia laboral bien documentada refuerza significativamente la candidatura universitaria, especialmente para grados en empresa, tecnología y comunicación. Demuestra iniciativa, madurez y orientación profesional clara — cualidades difíciles de acreditar solo con notas académicas.' } },
     { '@type': 'Question', name: '¿Cuándo buscar prácticas de verano?', acceptedAnswer: { '@type': 'Answer', text: 'Para grandes empresas, conviene postular entre enero y marzo — las plazas se cubren rápido. Las pymes y empresas locales aceptan solicitudes durante todo el año, con mayor actividad de marzo a mayo. Lo ideal es buscar con 3-6 meses de antelación.' } },
@@ -148,7 +148,7 @@ export default function ESPracticasLandingPage() {
             Prepara tus prácticas<br />de instituto
           </h1>
           <p className="text-lg text-[#6e6e73] max-w-xl mx-auto mb-8 leading-relaxed">
-            Evaluación adaptativa de 34 preguntas para estudiantes desde 14 años. Unos 35 minutos para obtener tu informe de preparación personalizado y descubrir tu área ideal.
+            Evaluación adaptativa de 34 preguntas para estudiantes desde 14 años. Unos 20 minutos para obtener tu informe de preparación personalizado y descubrir tu área ideal.
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link
@@ -252,7 +252,7 @@ export default function ESPracticasLandingPage() {
               </div>
             ))}
             <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-6 py-3">
-              <span className="text-xs text-[#6e6e73]">Total: 34 preguntas · ~35 minutos · Totalmente pausable</span>
+              <span className="text-xs text-[#6e6e73]">Total: 34 preguntas · ~20 minutos · Totalmente pausable</span>
             </div>
           </div>
         </section>
@@ -287,7 +287,7 @@ export default function ESPracticasLandingPage() {
               { q: '¿A qué edad puedo hacer prácticas?', a: 'En España los estudiantes de secundaria y bachillerato pueden hacer prácticas no laborales desde los 14-15 años con autorización parental. Muchas empresas aceptan estudiantes a partir de los 16.' },
               { q: '¿Qué área elegir?', a: 'Piensa en qué tipo de problemas te gusta resolver: técnicos y lógicos → Tecnología; números y decisiones → Análisis de Datos; comunicación y creatividad → Marketing Digital; organización y estrategia → Empresa. La evaluación te ayudará a confirmar tu orientación con datos objetivos.' },
               { q: '¿Cómo encontrar prácticas?', a: 'Las vías más efectivas: candidaturas espontáneas por email a pymes locales, red familiar, orientador de tu centro y plataformas como InfoJobs. Un email corto y personalizado a pequeñas empresas obtiene respuesta con mucha frecuencia.' },
-              { q: '¿Cuánto tiempo dura la evaluación?', a: 'Unos 35 minutos para 34 preguntas en 4 fases. Es totalmente pausable — puedes retomar donde lo dejaste sin volver a empezar.' },
+              { q: '¿Cuánto tiempo dura la evaluación?', a: 'Unos 20 minutos para 34 preguntas en 4 fases. Es totalmente pausable — puedes retomar donde lo dejaste sin volver a empezar.' },
               { q: '¿Qué incluye el informe?', a: 'Tu nivel de preparación (Listo para Prácticas, En Desarrollo o Necesita Apoyo), un resumen IA de tu rendimiento y análisis por fase con puntos fuertes y área de mejora.' },
               { q: '¿Las prácticas ayudan para la universidad?', a: 'Sí. Una experiencia laboral bien documentada refuerza la candidatura universitaria, especialmente para grados en empresa, tecnología y comunicación. Demuestra iniciativa y orientación profesional que las notas solas no transmiten.' },
               { q: '¿Cuándo buscar prácticas de verano?', a: 'Para grandes empresas, entre enero y marzo — las plazas se llenan rápido. Las pymes aceptan solicitudes todo el año, con más actividad de marzo a mayo. Lo ideal es buscar con 3-6 meses de antelación.' },
@@ -310,7 +310,7 @@ export default function ESPracticasLandingPage() {
           <div className="bg-[#4F46E5] rounded-3xl px-8 py-10 text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Evalúa tu preparación para prácticas hoy</h2>
             <p className="text-indigo-200 mb-6 text-sm leading-relaxed max-w-md mx-auto">
-              34 preguntas · 35 minutos · Informe personalizado instantáneo. Completamente gratis.
+              34 preguntas · 20 minutos · Informe personalizado instantáneo. Completamente gratis.
             </p>
             <Link
               href="/es/auth/register"
