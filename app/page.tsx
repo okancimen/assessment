@@ -308,7 +308,7 @@ export default function LandingPage() {
                 <span>Free</span>
               </div>
               <a
-                href="https://eduentry.ai"
+                href="https://eduentry.ai/en"
                 className="bg-[#1d1d1f] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#2d2d2f] transition-colors text-center"
               >
                 Learn about the programme
@@ -662,7 +662,7 @@ export default function LandingPage() {
 
           <div className="text-center mt-10">
             <a
-              href="https://eduentry.ai"
+              href="https://eduentry.ai/en"
               className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
             >
               Learn about the programme →
@@ -726,7 +726,7 @@ export default function LandingPage() {
                 ))}
               </ul>
               <div className="mt-7 pt-6 border-t border-[#c7d2fe]">
-                <a href="https://eduentry.ai" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
+                <a href="https://eduentry.ai/en" className="bg-[#1d1d1f] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors inline-block">
                   Learn more →
                 </a>
               </div>
@@ -826,7 +826,7 @@ export default function LandingPage() {
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Find your student&apos;s internship readiness.</h2>
             <p className="text-[#636366] text-sm mb-8">Personalised report and AI insights in 20 minutes.</p>
             <a
-              href="https://eduentry.ai"
+              href="https://eduentry.ai/en"
               className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors"
             >
               Learn about the programme →

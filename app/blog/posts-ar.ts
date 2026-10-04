@@ -24,7 +24,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -50,7 +50,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -76,7 +76,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -102,7 +102,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -128,7 +128,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -153,7 +153,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -178,7 +178,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -203,7 +203,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -228,7 +228,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -253,7 +253,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -278,7 +278,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -303,7 +303,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -328,7 +328,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -353,7 +353,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -378,7 +378,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف مستوى استعدادك',
       body: 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -477,7 +477,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف أين يقف طفلك — مجاناً',
       body: 'يختبر تقييم Eduentry التكيفي الأطفال من 6 إلى 17 عاماً في الرياضيات والإنجليزية والتفكير اللفظي وغير اللفظي على نفس المقياس الدولي لبيزا. احصل على تصنيف مئوي عالمي في أقل من ساعة.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -500,7 +500,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف درجة طفلك المعيارية — مجانًا',
       body: 'تقييم تكيّفي مجاني يُنتج درجةً معياريةً على نفس مقياس CAT4 وCogAT. 20-30 دقيقة، بدون تسجيل.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -523,7 +523,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اعرف موقع طفلك قبل تقديم طلبات القبول',
       body: 'تقييم Eduentry المجاني يُنتج درجةً معياريةً مقارنةً بمقياس CAT4 في 20-30 دقيقة — بدون تسجيل مسبق.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -546,7 +546,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'قيّم طفلك على مقياس معياري دولي',
       body: 'تقييم Eduentry يغطي الرياضيات والقراءة والتفكير اللفظي وغير اللفظي ويُنتج درجةً معياريةً مُحاذيةً للمقاييس الدولية. مجاني، 20-30 دقيقة.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -569,7 +569,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'احصل على قياس أساسي قبل بدء التحضير',
       body: 'تقييم Eduentry يُحدد موقع طفلك الحقيقي ويُساعدك على التركيز في التحضير حيث يُحدث الفارق فعليًا.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -592,7 +592,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'اكتشف أين يقف طفلك دوليًا — مجانًا',
       body: 'تقييم Eduentry التكيّفي يُنتج شريحةً مئويةً عالميةً في الرياضيات والقراءة والتفكير. 20-30 دقيقة، بدون تسجيل.',
       label: 'ابدأ التقييم المجاني',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {

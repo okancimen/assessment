@@ -173,7 +173,7 @@ export default async function RUBlogPostPage({ params }: { params: Promise<{ slu
         <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-4">От Eduentry</p>
         <div className="space-y-4">
           {[
-            { href: 'https://eduentry.ai/', title: 'Оценка готовности к стажировке', desc: 'Бесплатная адаптивная оценка из 34 вопросов для старшеклассников от 14 лет. Персонализированный отчёт и карьерные инсайты ИИ.' },
+            { href: 'https://eduentry.ai/ru', title: 'Оценка готовности к стажировке', desc: 'Бесплатная адаптивная оценка из 34 вопросов для старшеклассников от 14 лет. Персонализированный отчёт и карьерные инсайты ИИ.' },
             { href: '/ru/metodologiya', title: 'Наша методология оценивания', desc: 'Адаптивное IRT-оценивание по той же 100-балльной шкале, что PISA, GCSE и CAT4.' },
             { href: '/ru', title: 'Академическая оценка', desc: 'От математики до английского, от вербального до невербального мышления — бесплатная адаптивная оценка для детей 6–17 лет.' },
           ].map((link) => (
@@ -219,7 +219,7 @@ export default async function RUBlogPostPage({ params }: { params: Promise<{ slu
         <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'Узнай готовность к стажировке'}</h2>
         <p className="text-indigo-100 mb-8">{post.cta?.body ?? 'Бесплатная адаптивная оценка для старшеклассников от 14 лет.'}</p>
         <a
-          href={post.cta?.href ?? 'https://eduentry.ai/'}
+          href={post.cta?.href ?? 'https://eduentry.ai/ru'}
           className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg"
         >
           {post.cta?.label ?? 'Начать бесплатную оценку'}

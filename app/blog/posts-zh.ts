@@ -112,7 +112,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '证明你已准备好实习',
       body: '面向14岁以上高中生的免费34题自适应评估。获取个性化的准备情况报告，为每份申请提供具体的能力数据。',
       label: '开始免费实习评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -135,7 +135,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '用评估分数为你的简历增加说服力',
       body: '面向14岁以上高中生的免费34题自适应评估。获取可直接写进简历的个性化准备报告。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -158,7 +158,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '用客观数据证明你的实习准备程度',
       body: '面向14岁以上高中生的免费34题自适应评估。在面试前获取你的能力报告——了解自己的优势所在。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -182,7 +182,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '测试你的数字营销实习准备程度',
       body: '面向14岁以上高中生的免费34题自适应评估，包含数字营销方向专项测试。获取你的个性化准备报告。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -205,7 +205,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '测试你的数据分析实习准备程度',
       body: '面向14岁以上高中生的免费34题自适应评估，包含数据分析方向专项测试。获取你的个性化准备报告。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -229,7 +229,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '现在就测试你的实习准备程度',
       body: '面向14岁以上高中生的免费34题自适应评估。20分钟获得个性化报告，了解你的优势和最适合的发展方向。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -252,7 +252,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '用客观数据证明你的能力',
       body: 'Eduentry评估报告是冷邮件中的有力证明——向雇主展示你的能力倾向和职业技能数据。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -275,7 +275,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '在求职信中加入客观评估数据',
       body: 'Eduentry评估报告为你提供可量化的能力证明，让你的求职信更有说服力。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -298,7 +298,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '了解你最适合哪个方向',
       body: 'Eduentry评估涵盖技术、商业、数据分析和数字营销四个方向，帮你找到最匹配的远程实习类型。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -322,7 +322,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '测试你的科技方向准备程度',
       body: 'Eduentry的"技术"方向评估衡量分析思维、技术知识和职场技能——专门为高中生设计。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -345,7 +345,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '测试你的商业方向准备程度',
       body: 'Eduentry的"商业"评估方向涵盖分析思维、数字能力和职场技能，帮你了解自己的商业潜力。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -368,7 +368,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '了解你的创意与数字营销准备程度',
       body: 'Eduentry的数字营销方向评估包含创意思维、内容判断力和数字工具应用能力测试。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -391,7 +391,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '找到最适合你的实习方向',
       body: '技术、商业、数据或营销——Eduentry评估帮你在20分钟内明确方向。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -414,7 +414,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '用评估报告加强你的申请材料',
       body: 'Eduentry评估报告提供客观的能力数据，是推荐信的有力补充，让你的大学申请更完整。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -437,7 +437,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '在第一天之前就做好准备',
       body: '了解你的优势和发展方向——Eduentry评估帮你在实习开始前就建立自我认知。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -460,7 +460,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '先了解自己适合哪个方向',
       body: 'Eduentry评估帮你明确职业倾向，让你的实习选择更有针对性，而不是随机申请。',
       label: '开始免费评估',
-      href: 'https://eduentry.ai/',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
