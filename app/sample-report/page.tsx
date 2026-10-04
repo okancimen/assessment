@@ -8,7 +8,7 @@ import CtaLink from '@/components/ui/CtaLink'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Sample Assessment Report — See What Your Child Gets',
+  title: 'Sample Assessment Report: See What You Get',
   description: 'See a real Eduentry assessment report — standardised score, percentile ranking, subject breakdown, topic analysis and personalised recommendations.',
   alternates: { canonical: `${BASE_URL}/sample-report`, languages: { 'en-GB': `${BASE_URL}/sample-report`, 'x-default': `${BASE_URL}/sample-report` } },
   keywords: ['sample assessment report', 'what does eduentry report look like', 'free 11 plus results example', 'child assessment report example', 'standardised score report'],
@@ -322,7 +322,7 @@ export default function SampleReportPage() {
 
       <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-6 w-full">
 
-        <nav className="text-sm text-gray-400">
+        <nav className="text-sm text-gray-500">
           <Link href="/" className="hover:text-gray-600">Home</Link>
           <span className="mx-2">›</span>
           <span className="text-gray-700">Sample Report</span>
@@ -338,7 +338,7 @@ export default function SampleReportPage() {
                   Sample report · {CHILD_NAME}, age {CHILD_AGE}
                 </div>
                 <h1 className="text-3xl font-bold text-gray-900 tracking-tight">{CHILD_NAME}&apos;s Assessment Results</h1>
-                <p className="text-gray-400 text-sm mt-1.5">Completed {COMPLETED_DATE} · 60 questions · 4 subjects</p>
+                <p className="text-gray-500 text-sm mt-1.5">Completed {COMPLETED_DATE} · 60 questions · 4 subjects</p>
 
                 {/* Quick stats row */}
                 <div className="flex flex-wrap gap-4 mt-6">
@@ -350,7 +350,7 @@ export default function SampleReportPage() {
                   ].map((s) => (
                     <div key={s.label} className="text-center">
                       <div className={`text-xl font-bold ${s.color}`}>{s.value}</div>
-                      <div className="text-xs text-gray-400 mt-0.5">{s.label}</div>
+                      <div className="text-xs text-gray-500 mt-0.5">{s.label}</div>
                     </div>
                   ))}
                 </div>
@@ -369,12 +369,12 @@ export default function SampleReportPage() {
                   </svg>
                   <div className="absolute inset-0 flex flex-col items-center justify-center">
                     <span className="text-3xl font-bold text-gray-900">{OVERALL_SAS}</span>
-                    <span className="text-xs text-gray-400 mt-0.5">Overall</span>
+                    <span className="text-xs text-gray-500 mt-0.5">Overall</span>
                   </div>
                 </div>
                 <div className="text-center">
                   <div className="text-sm font-semibold text-yellow-600">Average</div>
-                  <div className="text-xs text-gray-400">Top {100 - PERCENTILE}% for age {CHILD_AGE}</div>
+                  <div className="text-xs text-gray-500">Top {100 - PERCENTILE}% for age {CHILD_AGE}</div>
                 </div>
               </div>
             </div>
@@ -437,7 +437,7 @@ export default function SampleReportPage() {
               </div>
             ))}
           </div>
-          <p className="text-xs text-gray-400 mt-3 text-center">
+          <p className="text-xs text-gray-500 mt-3 text-center">
             Based on overall standardised score of {OVERALL_SAS} · indicative, not diagnostic
           </p>
         </section>
@@ -456,7 +456,7 @@ export default function SampleReportPage() {
                   <span className={`text-2xl font-bold ${s.scoreColor}`}>{s.sas}</span>
                 </div>
                 <div className="mb-4">
-                  <div className="flex justify-between text-xs text-gray-400 mb-1.5">
+                  <div className="flex justify-between text-xs text-gray-500 mb-1.5">
                     <span>{s.raw} correct of {s.total}</span>
                     <span>{s.pct}%</span>
                   </div>
@@ -468,7 +468,7 @@ export default function SampleReportPage() {
                   </div>
                 </div>
                 <div className="space-y-2.5">
-                  <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest">Topics</p>
+                  <p className="text-[10px] font-semibold text-gray-500 uppercase tracking-widest">Topics</p>
                   {s.topics.map((t) => (
                     <div key={t.name}>
                       <div className="flex justify-between text-xs text-gray-600 mb-1">
@@ -486,7 +486,7 @@ export default function SampleReportPage() {
                 </div>
                 <div className="mt-4 pt-3 border-t border-gray-50 flex items-center justify-between">
                   <span className={`text-sm font-semibold ${s.scoreColor}`}>{s.labelScore}</span>
-                  <span className="text-xs text-gray-400">avg difficulty {s.avgDifficulty}/10</span>
+                  <span className="text-xs text-gray-500">avg difficulty {s.avgDifficulty}/10</span>
                 </div>
               </div>
             ))}
@@ -497,7 +497,7 @@ export default function SampleReportPage() {
         <section>
           <div className="flex items-baseline justify-between mb-4">
             <h2 className="text-lg font-semibold text-gray-900">Personalised recommendations</h2>
-            <span className="text-xs text-gray-400">Based on topic-level performance</span>
+            <span className="text-xs text-gray-500">Based on topic-level performance</span>
           </div>
           <div className="space-y-4">
             {RECOMMENDATIONS.map((r, i) => (
@@ -507,7 +507,7 @@ export default function SampleReportPage() {
                   <div className="flex items-start justify-between gap-4 flex-wrap">
                     <div>
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">#{i + 1}</span>
+                        <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">#{i + 1}</span>
                         <span className={`text-xs font-bold uppercase tracking-widest ${r.subjectColor}`}>{r.subject}</span>
                       </div>
                       <h3 className="text-base font-bold text-gray-900">{r.headline}</h3>
@@ -524,11 +524,11 @@ export default function SampleReportPage() {
                   {/* Score arrow */}
                   <div className="flex items-center gap-2 mt-3">
                     <span className="text-sm font-bold text-gray-500">SAS {r.currentSAS}</span>
-                    <svg className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <svg className="w-4 h-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
                     <span className="text-sm font-bold text-emerald-600">SAS {r.targetSAS}</span>
-                    <span className="text-xs text-gray-400">target with focused practice</span>
+                    <span className="text-xs text-gray-500">target with focused practice</span>
                   </div>
                 </div>
 
@@ -539,7 +539,7 @@ export default function SampleReportPage() {
 
                 {/* Action steps */}
                 <div className="px-6 pb-5 pt-3">
-                  <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-3">Action plan</p>
+                  <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-3">Action plan</p>
                   <ul className="space-y-2.5">
                     {r.actions.map((action, j) => (
                       <li key={j} className="flex items-start gap-3">
@@ -638,7 +638,7 @@ export default function SampleReportPage() {
             Free · No credit card · Results in 90 minutes
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Get your child&apos;s real report — free</h2>
-          <p className="text-indigo-200 mb-8 max-w-md mx-auto text-sm leading-relaxed">
+          <p className="text-indigo-100 mb-8 max-w-md mx-auto text-sm leading-relaxed">
             This sample shows you the format. Your child&apos;s report will have their actual scores,
             real topic breakdowns, and specific recommendations based on their answers.
           </p>
@@ -652,7 +652,7 @@ export default function SampleReportPage() {
         </div>
 
         {/* ── Methodology ── */}
-        <div className="border-t border-gray-200 pt-6 text-xs text-gray-400 space-y-1.5 leading-relaxed">
+        <div className="border-t border-gray-200 pt-6 text-xs text-gray-500 space-y-1.5 leading-relaxed">
           <p className="font-medium text-gray-500">About this assessment</p>
           <p>
             Scores use a 2-Parameter Logistic IRT model with MAP estimation. The standardised score scale has a mean of 100 and standard deviation of 15, consistent with GL Assessment and CAT4 norms. Scores are clamped to 70–130. Results are indicative, not diagnostic.

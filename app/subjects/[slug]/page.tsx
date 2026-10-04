@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import PublicNav from '@/components/layout/PublicNav'
@@ -52,7 +53,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const subject = SUBJECTS[slug as Slug]
   if (!subject) return {}
   return {
-    title: subject.title,
+    // The full subject title is the page heading; the search title keeps only the part before the colon
+    title: brandedTitle(subject.title.split(':')[0]),
     description: subject.description,
     alternates: { canonical: `https://eduentry.com/subjects/${slug}`, languages: { 'en-GB': `https://eduentry.com/subjects/${slug}`, 'x-default': `https://eduentry.com/subjects/${slug}` } },
     keywords: [...subject.longTailKeywords],
@@ -128,7 +130,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
       <main className="max-w-4xl mx-auto px-6 py-16">
 
         {/* Breadcrumb */}
-        <nav className="text-sm text-gray-400 mb-8">
+        <nav className="text-sm text-gray-500 mb-8">
           <Link href="/" className="hover:text-gray-600">Home</Link>
           <span className="mx-2">›</span>
           <Link href="/subjects" className="hover:text-gray-600">Subjects</Link>
@@ -204,7 +206,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
                   <summary className="flex items-start gap-4 p-5 cursor-pointer list-none select-none hover:bg-gray-50 transition-colors">
                     <span className={`text-xs font-semibold px-2 py-0.5 rounded-full flex-shrink-0 mt-0.5 ${subject.color}`}>{q.type}</span>
                     <span className="text-sm font-medium text-gray-900 flex-1">{q.question}</span>
-                    <svg className="w-4 h-4 text-gray-400 flex-shrink-0 mt-0.5 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                    <svg className="w-4 h-4 text-gray-500 flex-shrink-0 mt-0.5 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
                   </summary>
                   <div className="px-5 pb-5 pt-2 border-t border-gray-50">
                     <ul className="space-y-1.5 mb-4">
@@ -297,7 +299,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
                   <div className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-indigo-700 transition-colors flex-1">
                     {p.shortTitle}
                   </div>
-                  <div className="text-xs text-gray-400">{p.readTime}</div>
+                  <div className="text-xs text-gray-500">{p.readTime}</div>
                 </Link>
               ))}
             </div>
@@ -337,7 +339,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
         {/* CTA */}
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Try the free {subject.headline} assessment</h2>
-          <p className="text-indigo-200 mb-8">Takes 5–8 minutes per subject. Instant standardised score and percentile ranking.</p>
+          <p className="text-indigo-100 mb-8">Takes 5–8 minutes per subject. Instant standardised score and percentile ranking.</p>
           <CtaLink href="/auth/register" label="subject_detail_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
             Start free assessment
           </CtaLink>

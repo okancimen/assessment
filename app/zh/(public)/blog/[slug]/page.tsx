@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS_ZH, getChinesePostBySlug } from '@/app/blog/posts-zh'
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const url = `${BASE_URL}/zh/blog/${slug}`
   const enSlug = post.contentSlug
   return {
-    title: `${post.shortTitle} | Eduentry`,
+    title: brandedTitle(post.shortTitle),
     description: post.description,
     keywords: post.tags,
     alternates: {
@@ -165,7 +166,7 @@ export default async function ZHBlogPostPage({ params }: { params: Promise<{ slu
 
       {post.tldr && (
         <div className="mb-10 border-l-4 border-indigo-400 bg-indigo-50 rounded-r-xl px-5 py-4">
-          <p className="text-xs font-semibold text-indigo-500 uppercase tracking-wider mb-1">快速解答</p>
+          <p className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-1">快速解答</p>
           <p className="text-sm text-gray-700 leading-relaxed">{post.tldr}</p>
         </div>
       )}

@@ -147,7 +147,7 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
 
   return (
     <div className="bg-white rounded-2xl border border-gray-100 shadow-xl p-5">
-      <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">
+      <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">
         {cardTitle}
       </p>
 
@@ -180,7 +180,7 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
           <div className="flex justify-between mt-1">
             {['Needs Support','Below Avg','Average','Above Avg','Exceptional'].map((l, i) => (
               <span key={l} style={{ width: i === 0 ? '25%' : i === 2 ? '25%' : '16.67%' }}
-                className="text-[9px] text-gray-400 text-center leading-tight">
+                className="text-[9px] text-gray-500 text-center leading-tight">
                 {l}
               </span>
             ))}

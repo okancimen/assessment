@@ -271,7 +271,7 @@ export const UAE_CONTENT: Record<string, React.ReactNode> = {
             <div key={school} className="border border-gray-100 rounded-xl p-5">
               <div className="font-bold text-gray-900 mb-0.5">{school}</div>
               <div className="flex gap-3 text-xs font-medium mb-3">
-                <span className="text-gray-400">{area}</span>
+                <span className="text-gray-500">{area}</span>
                 <span className="text-indigo-600">{fee}</span>
               </div>
               <p className="text-sm text-gray-600 leading-relaxed">{note}</p>

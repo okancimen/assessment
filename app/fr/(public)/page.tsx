@@ -62,9 +62,9 @@ const SUBJECT_DESCRIPTIONS_FR: Record<string, string> = {
 
 const subjectColors: Record<string, { border: string; accent: string; bg: string }> = {
   english:             { border: '#c7d2fe', accent: '#4F46E5', bg: '#eef2ff' },
-  mathematics:         { border: '#99f6e4', accent: '#0D9488', bg: '#f0fdfa' },
+  mathematics:         { border: '#99f6e4', accent: '#0F766E', bg: '#f0fdfa' },
   verbal_reasoning:    { border: '#ddd6fe', accent: '#7C3AED', bg: '#f5f3ff' },
-  nonverbal_reasoning: { border: '#fbcfe8', accent: '#DB2777', bg: '#fce7f3' },
+  nonverbal_reasoning: { border: '#fbcfe8', accent: '#BE185D', bg: '#fce7f3' },
 }
 
 const BELL_SUBJECTS_FR = [
@@ -196,10 +196,10 @@ export default function FrenchHomePage() {
           <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] mb-6">
             Évaluations pour chaque étape de l&apos;apprentissage
           </p>
-          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
+          <h1 className="text-[2.5rem] min-[420px]:text-5xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
             La bonne évaluation,
             <br />
-            <span className="text-[#4F46E5]">au bon moment.</span>
+            <span className="text-[#818CF8]">au bon moment.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
             Évaluations adaptatives gratuites fondées sur la même science que PISA, GCSE et SAT.
@@ -302,7 +302,7 @@ export default function FrenchHomePage() {
 
             <div className="flex-1">
               <p className="text-xs font-semibold text-[#636366] uppercase tracking-widest mb-4">Évaluation Académique · 6–17 ans</p>
-              <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
                 Découvrez où se situe votre enfant<br />à l&apos;échelle internationale.
               </h2>
               <p className="text-[#636366] text-lg leading-relaxed mb-8 max-w-lg">
@@ -325,7 +325,7 @@ export default function FrenchHomePage() {
             </div>
 
             {/* Sample result visual */}
-            <div className="flex-shrink-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_1fr] lg:grid-cols-1 xl:grid-cols-[300px_1fr] gap-4">
+            <div className="flex-shrink-0 lg:flex-shrink min-w-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_minmax(0,1fr)] lg:grid-cols-1 xl:grid-cols-[300px_minmax(0,1fr)] gap-4">
               <div className="bg-[#1d1d1f] rounded-3xl border border-[#424245] p-6 w-full lg:w-[300px]">
                 <div className="flex items-center justify-between mb-5">
                   <div>
@@ -333,8 +333,8 @@ export default function FrenchHomePage() {
                     <p className="font-bold text-white mt-1">Emma · 11 ans</p>
                   </div>
                   <div className="text-right">
-                    <div className="text-3xl font-bold text-[#4F46E5]">109</div>
-                    <div className="text-[11px] text-[#0D9488] font-semibold">Au-dessus de la moyenne</div>
+                    <div className="text-3xl font-bold text-[#818CF8]">109</div>
+                    <div className="text-[11px] text-[#2DD4BF] font-semibold">Au-dessus de la moyenne</div>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -374,7 +374,7 @@ export default function FrenchHomePage() {
       <section className="bg-white pb-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Quatre matières. Une vision globale.
             </h2>
             <p className="text-[#636366] max-w-xl mx-auto text-lg">
@@ -410,7 +410,7 @@ export default function FrenchHomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">La science derrière le score</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Fondée sur la même science que<br />les évaluations internationales.
             </h2>
             <p className="text-[#636366] max-w-2xl mx-auto text-lg">
@@ -421,7 +421,7 @@ export default function FrenchHomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { title: 'Modèle TRI à 2 Paramètres', desc: 'Chaque question a une difficulté et une discrimination calibrées. Les scores reflètent la difficulté des questions répondues correctement — pas seulement le total brut.', tag: 'Utilisé dans PISA · SAT · GCSE', color: '#4F46E5' },
-              { title: 'Algorithme Adaptatif en Temps Réel', desc: 'Les questions sont sélectionnées en utilisant l\'Information de Fisher pour maximiser la précision de mesure. Chaque réponse met à jour l\'estimation de compétence et sélectionne la question optimale suivante.', tag: 'Évaluation Adaptative par Ordinateur', color: '#0D9488' },
+              { title: 'Algorithme Adaptatif en Temps Réel', desc: 'Les questions sont sélectionnées en utilisant l\'Information de Fisher pour maximiser la précision de mesure. Chaque réponse met à jour l\'estimation de compétence et sélectionne la question optimale suivante.', tag: 'Évaluation Adaptative par Ordinateur', color: '#0F766E' },
               { title: 'Comparaison Internationale', desc: 'Les scores utilisent la même échelle moyenne-100, ET-15 que PISA. Les résultats sont mappés au Programme National britannique, aux attentes de niveau américain, aux niveaux de compétence PISA et à la préparation IB.', tag: 'UK · US · PISA · IB', color: '#7C3AED' },
             ].map(({ title, desc, tag, color }) => (
               <div key={title} className="bg-white rounded-3xl border border-[#d2d2d7] p-7">
@@ -442,11 +442,11 @@ export default function FrenchHomePage() {
             <h3 className="font-bold text-[#1d1d1f] mb-6 text-center text-lg">Ce que signifie le score</h3>
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
               {[
-                { range: '70–84',   label: 'Nécessite un soutien',      color: '#EF4444', bg: '#fef2f2' },
-                { range: '85–94',   label: 'En dessous de la moyenne',  color: '#F97316', bg: '#fff7ed' },
-                { range: '95–109',  label: 'Dans la moyenne',           color: '#EAB308', bg: '#fefce8' },
-                { range: '110–119', label: 'Au-dessus de la moyenne',   color: '#22C55E', bg: '#f0fdf4' },
-                { range: '120–130', label: 'Exceptionnel',              color: '#3B82F6', bg: '#eff6ff' },
+                { range: '70–84',   label: 'Nécessite un soutien',      color: '#B91C1C', bg: '#fef2f2' },
+                { range: '85–94',   label: 'En dessous de la moyenne',  color: '#C2410C', bg: '#fff7ed' },
+                { range: '95–109',  label: 'Dans la moyenne',           color: '#A16207', bg: '#fefce8' },
+                { range: '110–119', label: 'Au-dessus de la moyenne',   color: '#15803D', bg: '#f0fdf4' },
+                { range: '120–130', label: 'Exceptionnel',              color: '#1D4ED8', bg: '#eff6ff' },
               ].map(({ range, label, color, bg }) => (
                 <div key={range} className="rounded-2xl p-3 text-center" style={{ background: bg }}>
                   <div className="text-sm font-bold" style={{ color }}>{range}</div>
@@ -466,7 +466,7 @@ export default function FrenchHomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">Évaluation Académique · Simple à démarrer</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               De l&apos;inscription aux résultats<br />en moins de deux heures.
             </h2>
           </div>
@@ -477,7 +477,7 @@ export default function FrenchHomePage() {
               { step: '03', title: 'Découvrez le contexte mondial', desc: 'Scores standardisés, références internationales pour le UK, US, PISA et IB, recommandations générées par IA et rapport imprimable.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-[#f5f5f7] rounded-3xl p-8">
-                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <div aria-hidden="true" className="text-5xl font-bold text-[#86868b] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
                 <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
@@ -498,7 +498,7 @@ export default function FrenchHomePage() {
             <span className="inline-block text-xs font-medium text-[#4F46E5] uppercase tracking-[0.15em] bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1.5 rounded-full mb-5">
               Évaluation de Stage · Nouveau
             </span>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
               Découvrez votre niveau de préparation au stage.
             </h2>
             <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
@@ -514,7 +514,7 @@ export default function FrenchHomePage() {
               { step: '03', title: 'Recevez votre rapport de préparation', desc: 'Obtenez votre niveau de préparation au stage, un résumé de vos points forts généré par IA et des insights personnalisés par phase sur l\'aptitude, le domaine et les compétences professionnelles.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
-                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <div aria-hidden="true" className="text-5xl font-bold text-[#86868b] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
                 <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
@@ -524,9 +524,9 @@ export default function FrenchHomePage() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {[
               { label: 'Technologie',        color: '#4F46E5' },
-              { label: 'Entreprise',         color: '#0D9488' },
+              { label: 'Entreprise',         color: '#0F766E' },
               { label: 'Analyse de données', color: '#7C3AED' },
-              { label: 'Marketing digital',  color: '#DB2777' },
+              { label: 'Marketing digital',  color: '#BE185D' },
             ].map(({ label, color }) => (
               <span key={label} className="text-xs font-semibold px-4 py-2 rounded-full border" style={{ color, background: color + '12', borderColor: color + '33' }}>
                 {label}
@@ -611,7 +611,7 @@ export default function FrenchHomePage() {
       <section className="py-32 bg-[#f5f5f7]">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">Questions.</h2>
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">Questions.</h2>
           </div>
           <div className="space-y-2">
             {FAQ_FR.map(({ q, a }) => (

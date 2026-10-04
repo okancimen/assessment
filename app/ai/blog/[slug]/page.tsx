@@ -200,7 +200,7 @@ export default async function AIBlogPostPage({ params }: { params: Promise<{ slu
 
         <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'Ready for your first internship?'}</h2>
-          <p className="text-indigo-200 mb-8">{post.cta?.body ?? 'Free 34-question adaptive assessment. Get your personalised readiness report in 35 minutes.'}</p>
+          <p className="text-indigo-100 mb-8">{post.cta?.body ?? 'Free 34-question adaptive assessment. Get your personalised readiness report in 35 minutes.'}</p>
           <CtaLink href={post.cta?.href ?? '/apply'} label="ai_blog_cta" className="bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
             {post.cta?.label ?? 'Apply free →'}
           </CtaLink>

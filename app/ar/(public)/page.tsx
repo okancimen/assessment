@@ -61,9 +61,9 @@ const SUBJECT_DESCRIPTIONS_AR: Record<string, string> = {
 
 const subjectColors: Record<string, { border: string; accent: string; bg: string }> = {
   english:             { border: '#c7d2fe', accent: '#4F46E5', bg: '#eef2ff' },
-  mathematics:         { border: '#99f6e4', accent: '#0D9488', bg: '#f0fdfa' },
+  mathematics:         { border: '#99f6e4', accent: '#0F766E', bg: '#f0fdfa' },
   verbal_reasoning:    { border: '#ddd6fe', accent: '#7C3AED', bg: '#f5f3ff' },
-  nonverbal_reasoning: { border: '#fbcfe8', accent: '#DB2777', bg: '#fce7f3' },
+  nonverbal_reasoning: { border: '#fbcfe8', accent: '#BE185D', bg: '#fce7f3' },
 }
 
 const BELL_SUBJECTS_AR = [
@@ -200,7 +200,7 @@ export default function ArabicHomePage() {
           <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
             التقييم الصحيح،
             <br />
-            <span className="text-[#4F46E5]">في الوقت المناسب.</span>
+            <span className="text-[#818CF8]">في الوقت المناسب.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
             تقييمات تكيفية مجانية مبنية على نفس العلم المستخدم في PISA وGCSE وSAT.
@@ -313,7 +313,7 @@ export default function ArabicHomePage() {
 
             <div className="flex-1">
               <p className="text-xs font-semibold text-[#636366] uppercase tracking-widest mb-4">التقييم الأكاديمي · 6-17 عاماً</p>
-              <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
                 اكتشف أين يقف طفلك<br />على المستوى الدولي.
               </h2>
               <p className="text-[#636366] text-lg leading-relaxed mb-8 max-w-lg">
@@ -334,7 +334,7 @@ export default function ArabicHomePage() {
             </div>
 
             {/* Sample result visual */}
-            <div className="flex-shrink-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_1fr] lg:grid-cols-1 xl:grid-cols-[300px_1fr] gap-4">
+            <div className="flex-shrink-0 lg:flex-shrink min-w-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_minmax(0,1fr)] lg:grid-cols-1 xl:grid-cols-[300px_minmax(0,1fr)] gap-4">
               <div className="bg-[#1d1d1f] rounded-3xl border border-[#424245] p-6 w-full lg:w-[300px]">
                 <div className="flex items-center justify-between mb-5">
                   <div>
@@ -342,8 +342,8 @@ export default function ArabicHomePage() {
                     <p className="font-bold text-white mt-1">أحمد · 11 عاماً</p>
                   </div>
                   <div className="text-right">
-                    <div className="text-3xl font-bold text-[#4F46E5]">109</div>
-                    <div className="text-[11px] text-[#0D9488] font-semibold">أعلى من المتوسط</div>
+                    <div className="text-3xl font-bold text-[#818CF8]">109</div>
+                    <div className="text-[11px] text-[#2DD4BF] font-semibold">أعلى من المتوسط</div>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -383,7 +383,7 @@ export default function ArabicHomePage() {
       <section className="bg-white pb-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               أربع مواد. رؤية شاملة.
             </h2>
             <p className="text-[#636366] max-w-xl mx-auto text-lg">
@@ -419,7 +419,7 @@ export default function ArabicHomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">العلم وراء الدرجة</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               مبني على نفس علم<br />التقييمات الدولية.
             </h2>
             <p className="text-[#636366] max-w-2xl mx-auto text-lg">
@@ -430,7 +430,7 @@ export default function ArabicHomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { title: 'نموذج IRT ثنائي المعلمة', desc: 'كل سؤال له صعوبة وتمييز معايَران. تعكس الدرجات صعوبة الأسئلة التي تمت الإجابة عليها بشكل صحيح — وليس فقط المجموع الخام.', tag: 'مستخدم في PISA · SAT · GCSE', color: '#4F46E5' },
-              { title: 'خوارزمية تكيفية في الوقت الفعلي', desc: 'تُختار الأسئلة باستخدام معلومات Fisher لتعظيم دقة القياس. كل إجابة تُحدّث تقدير الكفاءة وتختار السؤال الأمثل التالي.', tag: 'تقييم تكيفي بالحاسوب', color: '#0D9488' },
+              { title: 'خوارزمية تكيفية في الوقت الفعلي', desc: 'تُختار الأسئلة باستخدام معلومات Fisher لتعظيم دقة القياس. كل إجابة تُحدّث تقدير الكفاءة وتختار السؤال الأمثل التالي.', tag: 'تقييم تكيفي بالحاسوب', color: '#0F766E' },
               { title: 'المقارنة الدولية', desc: 'تستخدم الدرجات نفس مقياس PISA (متوسط 100، الانحراف المعياري 15). تُقارن النتائج بالمنهج الوطني البريطاني والأمريكي ومستويات PISA وIB.', tag: 'UK · US · PISA · IB', color: '#7C3AED' },
             ].map(({ title, desc, tag, color }) => (
               <div key={title} className="bg-white rounded-3xl border border-[#d2d2d7] p-7">
@@ -451,11 +451,11 @@ export default function ArabicHomePage() {
             <h3 className="font-bold text-[#1d1d1f] mb-6 text-center text-lg">ماذا تعني الدرجة؟</h3>
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
               {[
-                { range: '70-84',   label: 'يحتاج دعماً',       color: '#EF4444', bg: '#fef2f2' },
-                { range: '85-94',   label: 'دون المتوسط',        color: '#F97316', bg: '#fff7ed' },
-                { range: '95-109',  label: 'في المتوسط',         color: '#EAB308', bg: '#fefce8' },
-                { range: '110-119', label: 'أعلى من المتوسط',    color: '#22C55E', bg: '#f0fdf4' },
-                { range: '120-130', label: 'استثنائي',           color: '#3B82F6', bg: '#eff6ff' },
+                { range: '70-84',   label: 'يحتاج دعماً',       color: '#B91C1C', bg: '#fef2f2' },
+                { range: '85-94',   label: 'دون المتوسط',        color: '#C2410C', bg: '#fff7ed' },
+                { range: '95-109',  label: 'في المتوسط',         color: '#A16207', bg: '#fefce8' },
+                { range: '110-119', label: 'أعلى من المتوسط',    color: '#15803D', bg: '#f0fdf4' },
+                { range: '120-130', label: 'استثنائي',           color: '#1D4ED8', bg: '#eff6ff' },
               ].map(({ range, label, color, bg }) => (
                 <div key={range} className="rounded-2xl p-3 text-center" style={{ background: bg }}>
                   <div className="text-sm font-bold" style={{ color }}>{range}</div>
@@ -475,7 +475,7 @@ export default function ArabicHomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">التقييم الأكاديمي · سهل البدء</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               من التسجيل إلى النتائج<br />في أقل من ساعتين.
             </h2>
           </div>
@@ -486,7 +486,7 @@ export default function ArabicHomePage() {
               { step: '03', title: 'اكتشف السياق الدولي', desc: 'درجات معيارية، ومراجع دولية للمنهج البريطاني والأمريكي وPISA وIB، وتوصيات من الذكاء الاصطناعي، وتقرير قابل للطباعة.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-[#f5f5f7] rounded-3xl p-8">
-                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <div aria-hidden="true" className="text-5xl font-bold text-[#86868b] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
                 <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
@@ -507,7 +507,7 @@ export default function ArabicHomePage() {
             <span className="inline-block text-xs font-medium text-[#4F46E5] uppercase tracking-[0.15em] bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1.5 rounded-full mb-5">
               تقييم التدريب · جديد
             </span>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
               اكتشف مستوى استعدادك للتدريب.
             </h2>
             <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
@@ -522,7 +522,7 @@ export default function ArabicHomePage() {
               { step: '03', title: 'استلم تقرير استعدادك', desc: 'احصل على مستوى استعدادك للتدريب وملخص نقاط قوتك المُولَّد بالذكاء الاصطناعي ورؤى شخصية في كل مرحلة.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
-                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <div aria-hidden="true" className="text-5xl font-bold text-[#86868b] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
                 <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
@@ -532,9 +532,9 @@ export default function ArabicHomePage() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {[
               { label: 'التكنولوجيا',      color: '#4F46E5' },
-              { label: 'الأعمال',          color: '#0D9488' },
+              { label: 'الأعمال',          color: '#0F766E' },
               { label: 'تحليل البيانات',   color: '#7C3AED' },
-              { label: 'التسويق الرقمي',   color: '#DB2777' },
+              { label: 'التسويق الرقمي',   color: '#BE185D' },
             ].map(({ label, color }) => (
               <span key={label} className="text-xs font-semibold px-4 py-2 rounded-full border" style={{ color, background: color + '12', borderColor: color + '33' }}>
                 {label}
@@ -619,7 +619,7 @@ export default function ArabicHomePage() {
       <section className="py-32 bg-[#f5f5f7]">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">أسئلة.</h2>
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">أسئلة.</h2>
           </div>
           <div className="space-y-2">
             {FAQ_AR.map(({ q, a }) => (

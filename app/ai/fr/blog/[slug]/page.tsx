@@ -110,7 +110,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
-      <nav className="text-sm text-gray-400 mb-8">
+      <nav className="text-sm text-gray-500 mb-8">
         <Link href="/fr" className="hover:text-gray-600">Accueil</Link>
         <span className="mx-2">›</span>
         <Link href="/fr/blog" className="hover:text-gray-600">Blog</Link>
@@ -129,7 +129,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">
           {post.title}
         </h1>
-        <div className="flex items-center gap-3 text-sm text-gray-400">
+        <div className="flex items-center gap-3 text-sm text-gray-500">
           <time dateTime={post.date}>
             {new Date(post.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}
           </time>
@@ -162,7 +162,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
                 <div className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-indigo-700 transition-colors flex-1">
                   {p.shortTitle}
                 </div>
-                <div className="text-xs text-gray-400">{p.readTime}</div>
+                <div className="text-xs text-gray-500">{p.readTime}</div>
               </Link>
             ))}
           </div>
@@ -171,7 +171,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
 
       <section className="mt-16 mb-8 border border-gray-100 rounded-2xl p-8">
         <h2 className="text-xl font-bold text-gray-900 mb-2">Prêt à commencer ? Choisis ton domaine.</h2>
-        <p className="text-sm text-gray-400 mb-6">Évaluation gratuite de 34 questions — 35 minutes. Choisis le domaine où tu veux progresser.</p>
+        <p className="text-sm text-gray-500 mb-6">Évaluation gratuite de 34 questions — 35 minutes. Choisis le domaine où tu veux progresser.</p>
         <div className="grid sm:grid-cols-2 gap-3">
           {[
             { href: '/tech',              icon: '💻', label: 'Technologie',       desc: 'Programmation · Algorithmes · Cybersécurité' },
@@ -187,7 +187,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
               <span className="text-2xl mt-0.5">{icon}</span>
               <div>
                 <div className="font-semibold text-gray-900 text-sm group-hover:text-indigo-700 transition-colors">{label}</div>
-                <div className="text-xs text-gray-400 mt-0.5">{desc}</div>
+                <div className="text-xs text-gray-500 mt-0.5">{desc}</div>
               </div>
             </Link>
           ))}
@@ -196,7 +196,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
 
       <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'Découvre ton niveau de préparation'}</h2>
-        <p className="text-indigo-200 mb-8">{post.cta?.body ?? 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.'}</p>
+        <p className="text-indigo-100 mb-8">{post.cta?.body ?? 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.'}</p>
         <CtaLink href={post.cta?.href ?? '/apply'} label="fr_blog_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
           {post.cta?.label ?? 'Commencer l\'évaluation gratuite'}
         </CtaLink>

@@ -9,7 +9,7 @@ import { BLOG_POSTS } from '@/app/blog/posts'
 import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
-  title: 'Eduentry — Academic Assessment & Internship Readiness Platform',
+  title: { absolute: 'Eduentry — Academic & Internship Readiness Assessments' },
   description:
     'Free adaptive academic assessments for ages 6–17 and internship readiness for students 14+. Standardised scores and percentile rankings — free forever.',
   keywords: [
@@ -205,9 +205,9 @@ const INTERNSHIP_PROGRAM_SCHEMA = {
 
 const subjectColors: Record<string, { border: string; accent: string; bg: string }> = {
   english:            { border: '#c7d2fe', accent: '#4F46E5', bg: '#eef2ff' },
-  mathematics:        { border: '#99f6e4', accent: '#0D9488', bg: '#f0fdfa' },
+  mathematics:        { border: '#99f6e4', accent: '#0F766E', bg: '#f0fdfa' },
   verbal_reasoning:   { border: '#ddd6fe', accent: '#7C3AED', bg: '#f5f3ff' },
-  nonverbal_reasoning:{ border: '#fbcfe8', accent: '#DB2777', bg: '#fce7f3' },
+  nonverbal_reasoning:{ border: '#fbcfe8', accent: '#BE185D', bg: '#fce7f3' },
 }
 
 const subjectSlugs: Record<string, string> = {
@@ -236,10 +236,10 @@ export default function LandingPage() {
           <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] mb-6">
             Assessments for every stage of learning
           </p>
-          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
+          <h1 className="text-[2.5rem] min-[420px]:text-5xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
             The right assessment,
             <br />
-            <span className="text-[#4F46E5]">at the right stage.</span>
+            <span className="text-[#818CF8]">at the right stage.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
             Free adaptive assessments built on the same science as PISA, GCSE and SAT.
@@ -344,7 +344,7 @@ export default function LandingPage() {
             {/* Text */}
             <div className="flex-1">
               <p className="text-xs font-semibold text-[#636366] uppercase tracking-widest mb-4">Academic Assessment · Ages 6–17</p>
-              <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
                 See where your child<br />stands internationally.
               </h2>
               <p className="text-[#636366] text-lg leading-relaxed mb-8 max-w-lg">
@@ -370,7 +370,7 @@ export default function LandingPage() {
             </div>
 
             {/* Sample result visual */}
-            <div className="flex-shrink-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_1fr] lg:grid-cols-1 xl:grid-cols-[300px_1fr] gap-4">
+            <div className="flex-shrink-0 lg:flex-shrink min-w-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_minmax(0,1fr)] lg:grid-cols-1 xl:grid-cols-[300px_minmax(0,1fr)] gap-4">
               {/* Score card */}
               <div className="bg-[#1d1d1f] rounded-3xl border border-[#424245] p-6 w-full lg:w-[300px]">
                 <div className="flex items-center justify-between mb-5">
@@ -379,8 +379,8 @@ export default function LandingPage() {
                     <p className="font-bold text-white mt-1">Emma · Age 11</p>
                   </div>
                   <div className="text-right">
-                    <div className="text-3xl font-bold text-[#4F46E5]">109</div>
-                    <div className="text-[11px] text-[#0D9488] font-semibold">Above Average</div>
+                    <div className="text-3xl font-bold text-[#818CF8]">109</div>
+                    <div className="text-[11px] text-[#2DD4BF] font-semibold">Above Average</div>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -421,7 +421,7 @@ export default function LandingPage() {
       <section className="bg-white pb-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Four subjects. One global picture.
             </h2>
             <p className="text-[#636366] max-w-xl mx-auto text-lg">
@@ -481,7 +481,7 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">The science behind the score</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Built on the same science as
               <br />international assessments.
             </h2>
@@ -502,7 +502,7 @@ export default function LandingPage() {
                 title: 'Real-time Adaptive Algorithm',
                 desc: 'Questions are selected using Fisher Information to maximise measurement precision. Each answer updates the ability estimate and selects the optimal next question.',
                 tag: 'Computerised Adaptive Testing',
-                color: '#0D9488',
+                color: '#0F766E',
               },
               {
                 title: 'International Benchmarking',
@@ -531,11 +531,11 @@ export default function LandingPage() {
             <h3 className="font-bold text-[#1d1d1f] mb-6 text-center text-lg">What the score means</h3>
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
               {[
-                { range: '70–84',   label: 'Needs Support',  color: '#EF4444', bg: '#fef2f2' },
-                { range: '85–94',   label: 'Below Average',  color: '#F97316', bg: '#fff7ed' },
-                { range: '95–109',  label: 'Average',        color: '#EAB308', bg: '#fefce8' },
-                { range: '110–119', label: 'Above Average',  color: '#22C55E', bg: '#f0fdf4' },
-                { range: '120–130', label: 'Exceptional',    color: '#3B82F6', bg: '#eff6ff' },
+                { range: '70–84',   label: 'Needs Support',  color: '#B91C1C', bg: '#fef2f2' },
+                { range: '85–94',   label: 'Below Average',  color: '#C2410C', bg: '#fff7ed' },
+                { range: '95–109',  label: 'Average',        color: '#A16207', bg: '#fefce8' },
+                { range: '110–119', label: 'Above Average',  color: '#15803D', bg: '#f0fdf4' },
+                { range: '120–130', label: 'Exceptional',    color: '#1D4ED8', bg: '#eff6ff' },
               ].map(({ range, label, color, bg }) => (
                 <div key={range} className="rounded-2xl p-3 text-center" style={{ background: bg }}>
                   <div className="text-sm font-bold" style={{ color }}>{range}</div>
@@ -555,7 +555,7 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">Academic Assessment · Simple to start</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               From signup to results
               <br />in under two hours.
             </h2>
@@ -579,7 +579,7 @@ export default function LandingPage() {
               },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-[#f5f5f7] rounded-3xl p-8">
-                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <div aria-hidden="true" className="text-5xl font-bold text-[#86868b] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
                 <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
@@ -606,7 +606,7 @@ export default function LandingPage() {
             <span className="inline-block text-xs font-medium text-[#4F46E5] uppercase tracking-[0.15em] bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1.5 rounded-full mb-5">
               Internship Assessment · New
             </span>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
               Find your internship readiness.
             </h2>
             <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
@@ -635,7 +635,7 @@ export default function LandingPage() {
               },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
-                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <div aria-hidden="true" className="text-5xl font-bold text-[#86868b] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
                 <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
@@ -646,9 +646,9 @@ export default function LandingPage() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {[
               { label: 'Technology', color: '#4F46E5' },
-              { label: 'Business', color: '#0D9488' },
+              { label: 'Business', color: '#0F766E' },
               { label: 'Data Analytics', color: '#7C3AED' },
-              { label: 'Digital Marketing', color: '#DB2777' },
+              { label: 'Digital Marketing', color: '#BE185D' },
             ].map(({ label, color }) => (
               <span
                 key={label}
@@ -740,7 +740,7 @@ export default function LandingPage() {
       <section className="py-32 bg-[#f5f5f7]">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">Questions.</h2>
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">Questions.</h2>
           </div>
           <div className="space-y-2">
             {[

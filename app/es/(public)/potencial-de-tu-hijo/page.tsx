@@ -5,7 +5,7 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/es/auth/register`
 
 export const metadata: Metadata = {
-  title: 'Fortalezas y Debilidades de tu Hijo — Test Cognitivo Gratuito',
+  title: 'Fortalezas y debilidades de tu hijo: test gratis',
   description:
     'Descubre las fortalezas y debilidades de tu hijo en 35 minutos. Evaluación cognitiva gratuita comparada con PISA, SAT y GCSE — informe IA instantáneo.',
   keywords: [
@@ -213,7 +213,7 @@ export default function PotencialDeTuHijoPage() {
             Evaluar Potencial Cognitivo (Gratis)
           </Link>
 
-          <p className="mt-4 text-xs text-gray-400">
+          <p className="mt-4 text-xs text-gray-500">
             Comparativa Internacional Gratuita &nbsp;•&nbsp; 100% Privado &nbsp;•&nbsp; Perfil Cognitivo PDF con IA Instantáneo
           </p>
         </div>
@@ -341,7 +341,7 @@ export default function PotencialDeTuHijoPage() {
             >
               Evaluar Potencial Cognitivo (Gratis)
             </Link>
-            <p className="mt-3 text-xs text-gray-400">Comparativa Internacional Gratuita &nbsp;•&nbsp; 100% Privado &nbsp;•&nbsp; Perfil Cognitivo PDF con IA Instantáneo</p>
+            <p className="mt-3 text-xs text-gray-500">Comparativa Internacional Gratuita &nbsp;•&nbsp; 100% Privado &nbsp;•&nbsp; Perfil Cognitivo PDF con IA Instantáneo</p>
           </div>
         </div>
       </section>

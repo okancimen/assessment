@@ -8,8 +8,8 @@ import { GRAMMAR_AREAS } from './data'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Grammar Schools in England 2026: 11+ SAS Score Thresholds by Area',
-  description: 'What SAS score does your child need? Kent, Buckinghamshire, Birmingham, London Sutton, Hertfordshire and Essex — 11+ score thresholds, catchment areas, and selective school entry requirements for 2026.',
+  title: 'Grammar Schools in England 2026: 11+ SAS by Area',
+  description: 'What SAS score does your child need? 11+ score thresholds, catchment areas and 2026 entry requirements for Kent, Bucks, Birmingham, London and more.',
   alternates: { canonical: `${BASE_URL}/grammar-schools`, languages: { 'en-GB': `${BASE_URL}/grammar-schools`, 'x-default': `${BASE_URL}/grammar-schools` } },
   keywords: ['grammar schools England', '11 plus entry requirements', 'grammar school score', 'SAS score grammar school', '11+ preparation', 'grammar school areas England', 'grammar school SAS threshold 2026'],
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -58,7 +58,7 @@ export default function GrammarSchoolsIndexPage() {
       <PublicNav />
 
       <main className="flex-1 max-w-4xl mx-auto px-6 py-16 w-full">
-        <nav className="text-sm text-gray-400 mb-8">
+        <nav className="text-sm text-gray-500 mb-8">
           <Link href="/" className="hover:text-gray-600">Home</Link>
           <span className="mx-2">›</span>
           <span className="text-gray-700">Grammar Schools</span>
@@ -88,7 +88,7 @@ export default function GrammarSchoolsIndexPage() {
                 </div>
               </div>
               <div className="text-sm text-gray-500 mb-3">{area.keyFact}</div>
-              <div className="flex items-center gap-3 text-xs text-gray-400">
+              <div className="flex items-center gap-3 text-xs text-gray-500">
                 <span>{area.schoolCount} school{area.schoolCount > 1 ? 's' : ''}</span>
                 <span>·</span>
                 <span>{area.examBoard.split(' ')[0]}</span>

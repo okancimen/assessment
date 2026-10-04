@@ -66,9 +66,9 @@ const SUBJECT_DESCRIPTIONS_TR: Record<string, string> = {
 
 const subjectColors: Record<string, { border: string; accent: string; bg: string }> = {
   english:             { border: '#c7d2fe', accent: '#4F46E5', bg: '#eef2ff' },
-  mathematics:         { border: '#99f6e4', accent: '#0D9488', bg: '#f0fdfa' },
+  mathematics:         { border: '#99f6e4', accent: '#0F766E', bg: '#f0fdfa' },
   verbal_reasoning:    { border: '#ddd6fe', accent: '#7C3AED', bg: '#f5f3ff' },
-  nonverbal_reasoning: { border: '#fbcfe8', accent: '#DB2777', bg: '#fce7f3' },
+  nonverbal_reasoning: { border: '#fbcfe8', accent: '#BE185D', bg: '#fce7f3' },
 }
 
 
@@ -221,10 +221,10 @@ export default function TurkishHomePage() {
           <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] mb-6">
             Her öğrenim aşaması için değerlendirmeler
           </p>
-          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
+          <h1 className="text-[2.5rem] min-[420px]:text-5xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
             Doğru değerlendirme,
             <br />
-            <span className="text-[#4F46E5]">doğru zamanda.</span>
+            <span className="text-[#818CF8]">doğru zamanda.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
             PISA, GCSE ve SAT ile aynı bilime dayalı ücretsiz uyarlanabilir değerlendirmeler.
@@ -327,7 +327,7 @@ export default function TurkishHomePage() {
 
             <div className="flex-1">
               <p className="text-xs font-semibold text-[#636366] uppercase tracking-widest mb-4">Akademik Değerlendirme · 6–17 Yaş</p>
-              <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
                 Çocuğunuzun uluslararası<br />konumunu keşfedin.
               </h2>
               <p className="text-[#636366] text-lg leading-relaxed mb-8 max-w-lg">
@@ -350,7 +350,7 @@ export default function TurkishHomePage() {
             </div>
 
             {/* Sample result visual */}
-            <div className="flex-shrink-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_1fr] lg:grid-cols-1 xl:grid-cols-[300px_1fr] gap-4">
+            <div className="flex-shrink-0 lg:flex-shrink min-w-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_minmax(0,1fr)] lg:grid-cols-1 xl:grid-cols-[300px_minmax(0,1fr)] gap-4">
               <div className="bg-[#1d1d1f] rounded-3xl border border-[#424245] p-6 w-full lg:w-[300px]">
                 <div className="flex items-center justify-between mb-5">
                   <div>
@@ -358,8 +358,8 @@ export default function TurkishHomePage() {
                     <p className="font-bold text-white mt-1">Emma · 11 yaşında</p>
                   </div>
                   <div className="text-right">
-                    <div className="text-3xl font-bold text-[#4F46E5]">109</div>
-                    <div className="text-[11px] text-[#0D9488] font-semibold">Ortalamanın üstünde</div>
+                    <div className="text-3xl font-bold text-[#818CF8]">109</div>
+                    <div className="text-[11px] text-[#2DD4BF] font-semibold">Ortalamanın üstünde</div>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -399,7 +399,7 @@ export default function TurkishHomePage() {
       <section className="bg-white pb-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Dört ders. Küresel bir tablo.
             </h2>
             <p className="text-[#636366] max-w-xl mx-auto text-lg">
@@ -435,7 +435,7 @@ export default function TurkishHomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">Puanlamanın arkasındaki bilim</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Uluslararası değerlendirmelerle<br />aynı bilime dayalı.
             </h2>
             <p className="text-[#636366] max-w-2xl mx-auto text-lg">
@@ -446,7 +446,7 @@ export default function TurkishHomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { title: '2 Parametreli MYT Modeli', desc: 'Her sorunun kalibre edilmiş güçlük ve ayırt edicilik değeri vardır. Puanlar yalnızca ham sayıyı değil, doğru yanıtlanan soruların zorluğunu yansıtır.', tag: 'PISA · SAT · GCSE\'de kullanılır', color: '#4F46E5' },
-              { title: 'Gerçek Zamanlı Uyarlanabilir Algoritma', desc: 'Sorular ölçüm hassasiyetini en üst düzeye çıkarmak için Fisher Bilgisi kullanılarak seçilir. Her yanıt yetenek tahminini günceller ve optimal sonraki soruyu seçer.', tag: 'Bilgisayar Uyarlamalı Değerlendirme', color: '#0D9488' },
+              { title: 'Gerçek Zamanlı Uyarlanabilir Algoritma', desc: 'Sorular ölçüm hassasiyetini en üst düzeye çıkarmak için Fisher Bilgisi kullanılarak seçilir. Her yanıt yetenek tahminini günceller ve optimal sonraki soruyu seçer.', tag: 'Bilgisayar Uyarlamalı Değerlendirme', color: '#0F766E' },
               { title: 'Uluslararası Karşılaştırma', desc: 'Puanlar PISA ile aynı ortalama-100, SS-15 ölçeğini kullanır. Sonuçlar İngiltere Ulusal Müfredatı, ABD sınıf seviyesi, PISA yeterlilik seviyeleri ve IB programı hazırlığına eşlenir.', tag: 'İngiltere · ABD · PISA · IB', color: '#7C3AED' },
             ].map(({ title, desc, tag, color }) => (
               <div key={title} className="bg-white rounded-3xl border border-[#d2d2d7] p-7">
@@ -467,11 +467,11 @@ export default function TurkishHomePage() {
             <h3 className="font-bold text-[#1d1d1f] mb-6 text-center text-lg">Puan ne anlama gelir</h3>
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
               {[
-                { range: '70–84',   label: 'Destek gerekiyor',      color: '#EF4444', bg: '#fef2f2' },
-                { range: '85–94',   label: 'Ortalamanın altında',   color: '#F97316', bg: '#fff7ed' },
-                { range: '95–109',  label: 'Ortalama',              color: '#EAB308', bg: '#fefce8' },
-                { range: '110–119', label: 'Ortalamanın üstünde',   color: '#22C55E', bg: '#f0fdf4' },
-                { range: '120–130', label: 'Olağanüstü',            color: '#3B82F6', bg: '#eff6ff' },
+                { range: '70–84',   label: 'Destek gerekiyor',      color: '#B91C1C', bg: '#fef2f2' },
+                { range: '85–94',   label: 'Ortalamanın altında',   color: '#C2410C', bg: '#fff7ed' },
+                { range: '95–109',  label: 'Ortalama',              color: '#A16207', bg: '#fefce8' },
+                { range: '110–119', label: 'Ortalamanın üstünde',   color: '#15803D', bg: '#f0fdf4' },
+                { range: '120–130', label: 'Olağanüstü',            color: '#1D4ED8', bg: '#eff6ff' },
               ].map(({ range, label, color, bg }) => (
                 <div key={range} className="rounded-2xl p-3 text-center" style={{ background: bg }}>
                   <div className="text-sm font-bold" style={{ color }}>{range}</div>
@@ -491,7 +491,7 @@ export default function TurkishHomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">Akademik Değerlendirme · Başlamak kolay</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Kayıttan sonuçlara<br />iki saatten kısa sürede.
             </h2>
           </div>
@@ -502,7 +502,7 @@ export default function TurkishHomePage() {
               { step: '03', title: 'Küresel bağlamı keşfedin', desc: 'Standartlaştırılmış puanlar, İngiltere, ABD, PISA ve IB için uluslararası kıyaslamalar, yapay zeka önerileri ve yazdırılabilir rapor.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-[#f5f5f7] rounded-3xl p-8">
-                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <div aria-hidden="true" className="text-5xl font-bold text-[#86868b] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
                 <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
@@ -523,7 +523,7 @@ export default function TurkishHomePage() {
             <span className="inline-block text-xs font-medium text-[#4F46E5] uppercase tracking-[0.15em] bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1.5 rounded-full mb-5">
               Staj Değerlendirmesi · Yeni
             </span>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+            <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
               Staj hazırlığını keşfet.
             </h2>
             <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
@@ -539,7 +539,7 @@ export default function TurkishHomePage() {
               { step: '03', title: 'Hazırlık raporunuzu alın', desc: 'Staj hazırlık seviyenizi, yapay zeka tarafından oluşturulan güçlü yönler özetini ve yetenek, alan ve iş yeri becerileri üzerine kişiselleştirilmiş aşama içgörülerini alın.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
-                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <div aria-hidden="true" className="text-5xl font-bold text-[#86868b] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
                 <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
@@ -549,9 +549,9 @@ export default function TurkishHomePage() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {[
               { label: 'Teknoloji',        color: '#4F46E5' },
-              { label: 'İş Dünyası',       color: '#0D9488' },
+              { label: 'İş Dünyası',       color: '#0F766E' },
               { label: 'Veri Analitiği',   color: '#7C3AED' },
-              { label: 'Dijital Pazarlama',color: '#DB2777' },
+              { label: 'Dijital Pazarlama',color: '#BE185D' },
             ].map(({ label, color }) => (
               <span key={label} className="text-xs font-semibold px-4 py-2 rounded-full border" style={{ color, background: color + '12', borderColor: color + '33' }}>
                 {label}
@@ -633,7 +633,7 @@ export default function TurkishHomePage() {
       <section className="py-32 bg-[#f5f5f7]">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">Sorular.</h2>
+            <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">Sorular.</h2>
           </div>
           <div className="space-y-2">
             {FAQ_TR.map(({ q, a }) => (

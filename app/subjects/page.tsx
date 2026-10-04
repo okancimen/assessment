@@ -8,7 +8,7 @@ import { SUBJECTS, type Slug } from './data'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Free Assessments by Subject — Eduentry',
+  title: 'Free Assessments by Subject',
   description: 'Free adaptive assessments for children aged 6–17 across English, Maths, Verbal Reasoning and Non-Verbal Reasoning. Instant standardised scores.',
   alternates: { canonical: `${BASE_URL}/subjects`, languages: { 'en-GB': `${BASE_URL}/subjects`, 'x-default': `${BASE_URL}/subjects` } },
   keywords: ['free English assessment children', 'free maths test children', 'verbal reasoning test free', 'non-verbal reasoning test free', 'children assessment by subject', 'standardised score by subject UK'],
@@ -67,7 +67,7 @@ export default function SubjectsIndexPage() {
       <PublicNav />
 
       <main className="flex-1 max-w-4xl mx-auto px-6 py-16 w-full">
-        <nav className="text-sm text-gray-400 mb-8">
+        <nav className="text-sm text-gray-500 mb-8">
           <Link href="/" className="hover:text-gray-600">Home</Link>
           <span className="mx-2">›</span>
           <span className="text-gray-700">Subjects</span>
@@ -119,7 +119,7 @@ export default function SubjectsIndexPage() {
 
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Try a free assessment today</h2>
-          <p className="text-indigo-200 mb-8">Takes 5–8 minutes per subject. Instant standardised score and percentile ranking.</p>
+          <p className="text-indigo-100 mb-8">Takes 5–8 minutes per subject. Instant standardised score and percentile ranking.</p>
           <CtaLink href="/auth/register" label="subjects_index_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
             Start free assessment
           </CtaLink>

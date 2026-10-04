@@ -274,7 +274,7 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-gray-400">Source: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
+        <p className="text-sm text-gray-500">Source: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
       </section>
 
       <section>

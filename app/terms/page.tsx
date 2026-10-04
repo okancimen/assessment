@@ -4,7 +4,7 @@ import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service — Eduentry',
+  title: 'Terms of Service',
   description: 'Terms and conditions for using Eduentry\'s free academic assessment platform. Read about eligibility, acceptable use, intellectual property, and your rights.',
   keywords: ['Eduentry terms of service', 'assessment platform terms', 'children assessment terms and conditions'],
   alternates: { canonical: 'https://eduentry.com/terms', languages: { 'en-GB': 'https://eduentry.com/terms', 'x-default': 'https://eduentry.com/terms' } },
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     title: 'Terms of Service — Eduentry',
     description: 'Terms and conditions for using Eduentry\'s free academic assessment platform.',
     url: 'https://eduentry.com/terms',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -40,7 +41,7 @@ export default function TermsPage() {
 
       <main className="max-w-3xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-3">Terms of Service</h1>
-        <p className="text-sm text-gray-400 mb-10">Last updated: 13 June 2026</p>
+        <p className="text-sm text-gray-500 mb-10">Last updated: 13 June 2026</p>
 
         <div className="space-y-10">
 

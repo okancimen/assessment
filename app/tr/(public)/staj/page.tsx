@@ -5,7 +5,7 @@ import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Ücretsiz Staj Değerlendirmesi — 14 Yaş ve Üstü Lise Öğrencileri',
+  title: 'Ücretsiz Staj Değerlendirmesi (14+ Yaş)',
   description:
     '34 soruluk uyarlanabilir staj değerlendirmesi — Teknoloji, İş Dünyası, Veri Analitiği veya Dijital Pazarlama alanlarında hazırlığını 35 dakikada keşfet.',
   keywords: [

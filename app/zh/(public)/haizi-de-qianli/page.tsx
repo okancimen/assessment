@@ -211,7 +211,7 @@ export default function HaiziDeQianliPage() {
             免费评估认知潜力
           </Link>
 
-          <p className="mt-4 text-xs text-gray-400">
+          <p className="mt-4 text-xs text-gray-500">
             免费国际比较 &nbsp;•&nbsp; 100%保密 &nbsp;•&nbsp; 即时AI认知档案PDF报告
           </p>
         </div>
@@ -339,7 +339,7 @@ export default function HaiziDeQianliPage() {
             >
               免费评估认知潜力
             </Link>
-            <p className="mt-3 text-xs text-gray-400">免费国际比较 &nbsp;•&nbsp; 100%保密 &nbsp;•&nbsp; 即时AI认知档案PDF报告</p>
+            <p className="mt-3 text-xs text-gray-500">免费国际比较 &nbsp;•&nbsp; 100%保密 &nbsp;•&nbsp; 即时AI认知档案PDF报告</p>
           </div>
         </div>
       </section>

@@ -5,7 +5,7 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/tr/auth/register`
 
 export const metadata: Metadata = {
-  title: 'Çocuğumun Güçlü ve Zayıf Yönleri — Ücretsiz Bilişsel Test',
+  title: 'Çocuğumun Güçlü ve Zayıf Yönleri: Ücretsiz Test',
   description:
     'Çocuğunuzun güçlü ve zayıf yönlerini 35 dakikada öğrenin. PISA, SAT ve GCSE standartlarıyla ücretsiz bilişsel değerlendirme — anında AI destekli rapor.',
   keywords: [
@@ -214,7 +214,7 @@ export default function CocugunuzunPotansiyeliPage() {
             Bilişsel Potansiyeli Değerlendir (Ücretsiz)
           </Link>
 
-          <p className="mt-4 text-xs text-gray-400">
+          <p className="mt-4 text-xs text-gray-500">
             Ücretsiz Uluslararası Kıyaslama &nbsp;•&nbsp; %100 Gizli &nbsp;•&nbsp; Anında AI Destekli Bilişsel Profil PDF
           </p>
         </div>
@@ -347,7 +347,7 @@ export default function CocugunuzunPotansiyeliPage() {
             >
               Bilişsel Potansiyeli Değerlendir (Ücretsiz)
             </Link>
-            <p className="mt-3 text-xs text-gray-400">Ücretsiz Uluslararası Kıyaslama &nbsp;•&nbsp; %100 Gizli &nbsp;•&nbsp; Anında AI Destekli Bilişsel Profil PDF</p>
+            <p className="mt-3 text-xs text-gray-500">Ücretsiz Uluslararası Kıyaslama &nbsp;•&nbsp; %100 Gizli &nbsp;•&nbsp; Anında AI Destekli Bilişsel Profil PDF</p>
           </div>
         </div>
       </section>

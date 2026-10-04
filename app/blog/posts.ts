@@ -315,7 +315,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'What Is a Standardised Score? A Clear Guide for Parents',
     shortTitle: 'What Is a Standardised Score? SAS Bands Explained',
     description:
-      'Standardised scores explained for parents: a score of 100 is average for age, 115 is the 84th percentile, 130 is the 98th. Covers SAS bands, what counts as a good score, and how grammar school and gifted programme thresholds work.',
+      'Standardised scores explained: 100 is average, 115 the 84th percentile, 130 the 98th. SAS bands, good scores and grammar school thresholds.',
     tldr: 'A standardised score of 100 is exactly average for age; 115 is the 84th percentile; 130 is the 98th percentile. For 11+ grammar school entry, most areas outside London require a Standardised Age Score (SAS) of 111–118; Barnet and Sutton selective schools require 121–132.',
     date: '2026-06-17',
     dateModified: '2026-09-24',
@@ -557,7 +557,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'NWEA MAP Scores Explained: What RIT Scores Mean and How to Interpret Your Child\'s Results',
     shortTitle: 'NWEA MAP Scores Explained (2026): RIT Ranges by Grade',
     description:
-      'NWEA MAP RIT score benchmarks by grade for reading, math and science — is your child\'s score good? 2025–26 national norm percentiles, grade-level averages, and the RIT thresholds that qualify for gifted programs.',
+      'NWEA MAP RIT score benchmarks by grade for reading, math and science: 2025–26 norm percentiles, grade averages and gifted program cut-offs.',
     tldr: 'NWEA MAP Growth uses a RIT (Rasch Unit) scale — not percentage correct. The national average RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
@@ -618,7 +618,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'ISEE vs SSAT: The Complete Guide to Private School Entrance Exams in the US',
     shortTitle: 'ISEE vs SSAT Private School Guide',
     description:
-      'Everything you need to know about the ISEE and SSAT — how each test works, score reporting, key differences, which to choose for your target schools, and how to prepare effectively.',
+      'ISEE vs SSAT: how each private school entrance test works, how scores are reported, key differences, which to choose and how to prepare.',
     tldr: 'The ISEE reports scores on a stanine scale (1–9); the SSAT reports a percentile rank. Most competitive US independent schools expect a stanine of 7–9 on the ISEE (the 77th–99th percentile range) or the 75th+ percentile on the SSAT. Some schools specify one test; others accept either.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
@@ -728,7 +728,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'VWO and Gymnasium in the Netherlands: Entry Requirements and How to Qualify',
     shortTitle: 'Netherlands VWO & Gymnasium Guide',
     description:
-      'Everything parents need to know about VWO and Gymnasium in the Netherlands — the highest level of Dutch secondary education, how entry works, and how Tweetalig VWO programmes compare.',
+      'VWO and Gymnasium explained for parents: the top level of Dutch secondary education, how entry works and how Tweetalig VWO compares.',
     tldr: 'VWO is the highest level of Dutch secondary education, spanning 6 years and qualifying students directly for university (wo). Gymnasium is a VWO variant with compulsory Latin and usually Ancient Greek. Entry requires a Cito/Doorstroomtoets score in the VWO band and a teacher recommendation.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
@@ -800,7 +800,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'International School Admissions in the Netherlands: CAT4, IB and How Entry Works',
     shortTitle: 'Netherlands International School Admissions',
     description:
-      'A guide for expat families to international school admissions in the Netherlands — CAT4 assessment, IB vs British curriculum schools, EAL considerations, and how to navigate waiting lists.',
+      'Expat guide to international school admissions in the Netherlands: CAT4 testing, IB vs British curriculum, EAL support and waiting lists.',
     tldr: 'Most international schools in the Netherlands use CAT4 for entry assessment. CAT4 produces an SAS score (mean 100, SD 15); schools typically expect 100–115 for standard admission. Popular schools including ISE, BSN, and AIS operate waiting lists — early registration (sometimes from birth) is standard practice.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
@@ -897,7 +897,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'British Curriculum School Admissions in Dubai and Abu Dhabi: A Complete Guide',
     shortTitle: 'UAE British School Admissions Guide',
     description:
-      'How admissions work at the most sought-after British-curriculum schools in the UAE — GEMS Wellington, JESS, Dubai College, BSAK — including waiting lists, assessment process, and KHDA ratings.',
+      'How admissions work at top British-curriculum schools in the UAE — GEMS Wellington, JESS, Dubai College, BSAK: waiting lists, tests and KHDA ratings.',
     tldr: 'British-curriculum schools in Dubai and Abu Dhabi — GEMS Wellington, JESS, Dubai College, BSAK — are rated Outstanding or Very Good by KHDA. Waiting lists at the most popular schools extend 12–24 months or longer. CAT4 is used for admissions screening at most schools alongside previous school reports; Dubai College uses its own selective test.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
@@ -933,7 +933,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Gifted Education in the UAE: How International Schools Identify and Support High-Ability Students',
     shortTitle: 'UAE Gifted Programs Guide',
     description:
-      'How gifted and more-able students are identified and supported in UAE international schools — CAT4 thresholds, KHDA expectations, Al Mawhiba programme, and what to do when school provision falls short.',
+      'How UAE international schools identify and support gifted students: CAT4 thresholds, KHDA expectations, Al Mawhiba and what to do if provision falls short.',
     tldr: 'UAE international schools identify gifted students using CAT4 SAS 112+ (stanine 7+) as the primary threshold. The KHDA requires Outstanding-rated schools to demonstrate measurable progress for high-ability students. Al Mawhiba is the UAE national programme for gifted Emirati students; expat families should focus on their school\'s internal gifted provision.',
     date: '2026-06-17',
     dateModified: '2026-09-10',
@@ -1152,7 +1152,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'French Immersion and Selective Public Programs in Canada: What Families Need to Know',
     shortTitle: 'French Immersion Programs in Canada 2026',
     description:
-      'French Immersion, public IB and gifted stream entry across Canadian provinces — when registration opens, which programmes are selective, and what tests your child needs.',
+      'French Immersion, public IB and gifted streams across Canadian provinces: when registration opens, which programmes are selective and what tests apply.',
     tldr: 'Early French Immersion (EFI) in most Canadian provinces starts in Kindergarten or Grade 1 and is first-come, first-served with no academic test. Late French Immersion (LFI) begins in Grade 4 or 6. Public IB programmes are selective — typically requiring a portfolio and minimum academic grades for Grade 6 or 9 entry.',
     date: '2026-06-17',
     dateModified: '2026-09-23',
@@ -1299,7 +1299,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'NAPLAN Guide for Parents: What It Is, How Scores Work and What to Do With the Results',
     shortTitle: 'NAPLAN Guide for Parents',
     description:
-      'A complete parent\'s guide to NAPLAN — Australia\'s national literacy and numeracy assessment for Years 3, 5, 7 and 9. How the band scoring works, what results mean, and how to use them.',
+      'A parent\'s guide to NAPLAN, Australia\'s literacy and numeracy test for Years 3, 5, 7 and 9: how band scoring works and what results mean.',
     tldr: 'NAPLAN is taken by all Australian students in Years 3, 5, 7, and 9 and results are reported on a four-level proficiency scale: Exceeding, Strong, Developing, and Needs Additional Support. NAPLAN measures curriculum standards, not IQ or cognitive ability — it does not directly predict selective school entry or gifted programme eligibility.',
 
     date: '2026-06-18',
@@ -1336,7 +1336,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Digital Marketing Work Experience: Student Reviews and What to Expect',
     shortTitle: 'Digital Marketing Work Experience: Student Reviews',
     description:
-      'What is digital marketing work experience actually like? Students share what they did, what surprised them, and what they wish they\'d known — plus how to find and secure a placement in the UK.',
+      'What is digital marketing work experience really like? Students share what they did and what surprised them, plus how to find a UK placement.',
     tldr: 'Digital marketing work experience for school-age students typically involves writing social media copy, analysing Google Analytics or Meta Ads performance, competitor research, and email marketing assistance. Virtual work experience through Springpod and Forage offer structured digital marketing programmes from real employers.',
 
     date: '2026-07-09',
@@ -1374,7 +1374,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Business Work Experience in Year 12: The Complete UK Guide by Age (12 to 18)',
     shortTitle: 'Business Work Experience: Year 12 Guide (Ages 12–18)',
     description:
-      'Everything UK students need to know about business work experience from age 12 to 18 — what\'s available in each year group, the major employer schemes, how to apply, and what makes an application stand out.',
+      'Business work experience for UK students aged 12–18: what each year group can do, major employer schemes, how to apply and how to stand out.',
     tldr: 'FTSE 100 employers including Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey (Insight), and BCG run Year 12 Spring or Summer Insight schemes. Application windows typically open September–November for placements the following year. These programmes are competitive, with approximately 10–20 applications per place at the most selective firms.',
 
     date: '2026-07-09',
@@ -1615,7 +1615,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     slug: 'non-verbal-reasoning-11-plus-guide',
     title: 'Non-Verbal Reasoning for the 11+: Question Types, Techniques and Free Practice',
     shortTitle: 'Non-Verbal Reasoning 11+ Guide',
-    description: 'A complete guide to non-verbal reasoning for the 11+ — question types (matrices, series, analogies, codes), proven techniques for each, common mistakes and how to practise effectively online for free.',
+    description: 'Non-verbal reasoning for the 11+: question types (matrices, series, analogies, codes), techniques for each, common mistakes and free practice.',
     tldr: 'Non-verbal reasoning (NVR) in the 11+ tests logical thinking using shapes and patterns — independent of English language skill or curriculum knowledge. The main question types are figure matrices, series, analogies, codes, classification, and spatial rotation. NVR ability responds strongly to targeted practice: most children improve by 8–15 SAS points with 6–12 months of systematic preparation.',
     date: '2026-09-11',
     dateModified: '2026-09-11',
@@ -1674,7 +1674,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     slug: 'free-11-plus-practice-test-online',
     title: 'Free 11+ Practice Test Online: Adaptive, Scored and Instant',
     shortTitle: 'Free 11+ Practice Test Online',
-    description: 'Take a free adaptive 11+ practice test online — English, Maths, Verbal Reasoning and Non-Verbal Reasoning. Get an instant standardised score (SAS) showing exactly where your child stands for grammar school entry.',
+    description: 'Free adaptive 11+ practice test online in English, Maths, Verbal and Non-Verbal Reasoning, with an instant SAS showing grammar school readiness.',
     tldr: 'A free adaptive 11+ practice test covering all four subjects (English, Maths, Verbal Reasoning, Non-Verbal Reasoning) produces a Standardised Age Score (SAS) on the same mean-100, SD-15 scale as GL Assessment. Most grammar school entry thresholds are SAS 111–121+. Adaptive tests adjust question difficulty in real time, measuring ability more accurately than fixed-difficulty practice papers.',
     date: '2026-09-11',
     dateModified: '2026-09-11',
@@ -1733,7 +1733,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     slug: '11-plus-maths-guide',
     title: '11+ Maths: Topics, Question Types and How to Practise',
     shortTitle: '11+ Maths 2026: Topics and GL vs CEM Differences',
-    description: 'Complete guide to 11+ Maths — every topic tested, question types by exam board (GL Assessment and CEM), common mistakes and how to practise effectively for a top standardised score.',
+    description: '11+ Maths guide: every topic tested, question types for GL Assessment and CEM, common mistakes and how to practise for a top standardised score.',
     tldr: 'The 11+ maths paper tests KS2 curriculum content at higher speed and complexity than standard school work. Key topics include number and arithmetic, fractions, decimals, percentages, ratio, algebra, geometry, and data handling. Most successful candidates are working approximately one year ahead of their school year group in maths, with rapid mental arithmetic recall essential under time pressure.',
     date: '2026-09-11',
     dateModified: '2026-09-23',
@@ -1994,7 +1994,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: "Discover Your School-Age Child's Hidden Strengths and Development Areas: A Modern Parent's Guide",
     shortTitle: "Discover Your Child's Hidden Strengths: Parent's Guide",
     description:
-      "School reports only show current grades — not your child's true cognitive potential. This guide explains how AI-powered adaptive assessment reveals verbal reasoning, non-verbal reasoning, maths, and English strengths and gaps across ages 6–17.",
+      "School reports show grades, not potential. How adaptive assessment reveals strengths and gaps in reasoning, maths and English for ages 6–17.",
     tldr: "Eduentry's adaptive assessment uses AI to measure the four cognitive domains that predict school success and career outcomes: verbal reasoning, non-verbal reasoning, mathematical skills, and English proficiency. The system adjusts in real time to every answer, mapping a child's true ceiling and development areas without exam anxiety.",
     date: '2026-09-30',
     dateModified: '2026-09-30',
@@ -2033,7 +2033,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     slug: 'discover-child-strengths-free-academic-test',
     title: "Free Academic Test for Children: Discover Your Child's Strengths and Weaknesses",
     shortTitle: "Free Academic Test: Discover Your Child's Strengths",
-    description: "School grades don't reveal your child's true cognitive potential. Our free adaptive academic test measures verbal, numerical and spatial reasoning in 35 minutes — benchmarked against international norms, with an instant report.",
+    description: "Grades don't show your child's true potential. Our free adaptive test measures verbal, numerical and spatial reasoning in 35 minutes, with a report.",
     tldr: "A free adaptive test measuring verbal reasoning, numerical reasoning, and visual-spatial thinking independently — giving parents an international-percentile report in 35 minutes. Built on Computer Adaptive Testing (CAT) and Item Response Theory, the same methodology behind CAT4 and NWEA MAP.",
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -2221,7 +2221,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Summer Activities for Academically Ambitious Children: 2026 Guide',
     shortTitle: 'Summer Activities for Academically Ambitious Children',
     description:
-      'A research-backed guide for parents planning a productive summer for their 9–16 year old high-achiever. Covers internships, cognitive assessments, enrichment programmes, and a 3-step framework to match summer activities to your child\'s actual strengths.',
+      'A research-backed summer plan for high-achieving 9–16 year olds: internships, assessments, enrichment and a 3-step way to match your child\'s strengths.',
     tldr: 'Unstructured summers widen the achievement gap — but the wrong structured summer kills intrinsic motivation. The answer is purposeful, varied, and matched to the child\'s cognitive profile. Start with a free 35-minute assessment to know which domain to build before you book anything.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -2280,7 +2280,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     slug: 'how-to-prepare-for-gcse',
     title: 'How to Prepare for GCSEs: Complete Revision Guide for Students and Parents (2026)',
     shortTitle: 'GCSE Revision Guide 2026: How to Prepare',
-    description: 'A step-by-step GCSE preparation guide covering the 9–1 grade system, revision strategies, subject choices, mock exam timelines and the cognitive skills that predict GCSE success.',
+    description: 'A step-by-step GCSE guide: the 9–1 grading system, revision strategies, subject choices, mock exam timelines and the skills that predict success.',
     tldr: 'GCSEs are graded 9–1 (9 is the highest). Grade 4 is the standard pass (equivalent to old grade C); Grade 5 is the strong pass. Most sixth forms require five or more Grade 4+ GCSEs including English and Maths. Effective GCSE revision starts 12–18 months before exams using active recall and past papers, not passive re-reading.',
     date: '2026-10-03',
     dateModified: '2026-10-03',
@@ -2349,7 +2349,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: '8 Habits Children Should Build Now to Avoid Future Unemployment',
     shortTitle: 'Habits Children Need Now to Avoid Future Unemployment',
     description:
-      'Eight habits that protect children from future unemployment — AI literacy, critical thinking, financial literacy and real-world experience. What McKinsey, WEF and OECD say parents should prioritise.',
+      'Eight habits that protect children from future unemployment — AI literacy, critical thinking, money skills and real experience — backed by WEF and OECD.',
     tldr: 'McKinsey estimates 375 million workers globally — 14% of the workforce — will need to change occupations by 2030. But the skills hardest for AI to replicate are consistent across every major study: critical thinking, creativity, emotional intelligence, and initiative. These are not built by grades; they are built by habits formed early.',
     date: '2026-10-04',
     dateModified: '2026-10-04',

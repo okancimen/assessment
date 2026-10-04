@@ -5,7 +5,7 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/fr/auth/register`
 
 export const metadata: Metadata = {
-  title: 'Forces et Faiblesses de Votre Enfant — Test Cognitif Gratuit',
+  title: 'Forces et faiblesses de l\'enfant : test gratuit',
   description:
     'Découvrez les forces et faiblesses de votre enfant en 35 minutes. Évaluation cognitive selon PISA, SAT et GCSE — rapport IA instantané.',
   keywords: [
@@ -210,7 +210,7 @@ export default function PotentielDeVotreEnfantPage() {
             Évaluer le Potentiel Cognitif (Gratuit)
           </Link>
 
-          <p className="mt-4 text-xs text-gray-400">
+          <p className="mt-4 text-xs text-gray-500">
             Comparaison Internationale Gratuite &nbsp;•&nbsp; 100% Confidentiel &nbsp;•&nbsp; Rapport PDF de Profil Cognitif Instantané
           </p>
         </div>
@@ -338,7 +338,7 @@ export default function PotentielDeVotreEnfantPage() {
             >
               Évaluer le Potentiel Cognitif (Gratuit)
             </Link>
-            <p className="mt-3 text-xs text-gray-400">Comparaison Internationale Gratuite &nbsp;•&nbsp; 100% Confidentiel &nbsp;•&nbsp; Rapport PDF de Profil Cognitif Instantané</p>
+            <p className="mt-3 text-xs text-gray-500">Comparaison Internationale Gratuite &nbsp;•&nbsp; 100% Confidentiel &nbsp;•&nbsp; Rapport PDF de Profil Cognitif Instantané</p>
           </div>
         </div>
       </section>

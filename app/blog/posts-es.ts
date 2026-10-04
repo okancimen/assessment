@@ -7,7 +7,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Por qué empezar antes importa: desarrollo infantil, madurez y la ventaja profesional acumulada de las prácticas tempranas',
     shortTitle: 'Prácticas tempranas: desarrollo y ventaja profesional',
     description:
-      'La importancia del desarrollo cognitivo y profesional de las prácticas a los 14–16 años. La neurociencia, los datos de admisión universitaria y la investigación del mercado laboral demuestran que la experiencia profesional temprana produce resultados mediblemente mejores que se acumulan con el tiempo.',
+      'Por qué importan las prácticas a los 14–16 años: la neurociencia y los datos de admisión y empleo muestran que la experiencia temprana da mejores resultados.',
     tldr: 'La encuesta NACE de 2023 revela que el 83% de los empleadores considera la experiencia en prácticas \'importante\' o \'muy importante\' al contratar nuevos graduados, y los estudiantes con prácticas previas reciben ofertas de empleo a una tasa un 70% más alta antes de graduarse (NACE, 2020). La investigación sobre el desarrollo identifica los 14–16 años como la franja óptima para una primera práctica profesional.',
 
     date: '2026-06-29',
@@ -45,7 +45,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Prácticas en el instituto: por qué importan para el desarrollo personal, la preparación y el acceso a la universidad',
     shortTitle: 'Prácticas en el instituto: beneficios y acceso universitario',
     description:
-      'Una evaluación basada en evidencias de las prácticas en el instituto — cómo la experiencia laboral estructurada entre los 14 y los 18 años desarrolla la autoeficacia, la resiliencia y la identidad profesional, y mejora mediblemente los resultados de las solicitudes universitarias.',
+      'Qué aportan las prácticas en el instituto: entre los 14 y 18 años desarrollan autoeficacia, resiliencia e identidad profesional y mejoran las solicitudes.',
     tldr: 'Las universidades del Grupo Russell citan explícitamente la experiencia laboral en sus guías de admisión para carreras competitivas como medicina, derecho y tecnología. La investigación identifica cuatro áreas que desarrollan las prácticas: autoeficacia, resiliencia, comunicación profesional y claridad de carrera.',
 
     date: '2026-06-25',
@@ -83,7 +83,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Experiencia laboral en el sector empresarial durante el instituto: qué es, cómo encontrarla y por qué importa',
     shortTitle: 'Experiencia empresarial en el instituto',
     description:
-      'Todo lo que los estudiantes de instituto en el Reino Unido necesitan saber sobre la experiencia laboral en empresas — qué implica, dónde encontrar una colocación, cómo conseguirla y cómo una puntuación de evaluación verificada refuerza cada solicitud.',
+      'Experiencia laboral en empresas para estudiantes en el Reino Unido: qué implica, dónde encontrarla, cómo conseguirla y cómo destacar en cada solicitud.',
     tldr: 'La experiencia laboral empresarial para estudiantes de instituto en el Reino Unido suele consistir en una práctica de una o dos semanas o un programa estructurado de empresa. La mayoría de los grandes empleadores empiezan a aceptar estudiantes desde Year 10 (14–15 años). Empresas del FTSE 100 como Barclays, Goldman Sachs, KPMG y Deloitte ofrecen programas Spring Insight para Year 12, con convocatorias abiertas en septiembre–noviembre.',
 
     date: '2026-06-30',
@@ -123,9 +123,9 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'practicas-tecnologia-antes-universidad',
     contentSlug: 'how-to-get-tech-internship-before-university',
     title: 'Cómo conseguir prácticas tecnológicas antes de la universidad: guía completa para estudiantes',
-    shortTitle: 'Cómo conseguir prácticas tecnológicas antes de la universidad',
+    shortTitle: 'Prácticas tecnológicas antes de la universidad',
     description:
-      'Una guía práctica para que los estudiantes de instituto consigan prácticas tecnológicas o una colocación de experiencia laboral antes de empezar la universidad — dónde buscar, cómo solicitar sin portfolio y qué hace que realmente te incluyan en la lista de candidatos.',
+      'Cómo conseguir prácticas tecnológicas antes de la universidad: dónde buscar, cómo solicitar sin portfolio y qué te hace entrar en la lista final.',
     tldr: 'Los estudiantes de 14 a 18 años en el Reino Unido pueden acceder a experiencia laboral en tecnología a través de programas de Google, Microsoft, Amazon, IBM, BT, Sky y BBC Technology, así como de KPMG, Deloitte, PwC y EY. Las empresas tecnológicas más pequeñas suelen ofrecer mayor responsabilidad práctica que las grandes corporaciones.',
 
     date: '2026-06-30',
@@ -167,7 +167,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: '¿Cómo se compara tu hijo a nivel mundial? Guía para padres sobre benchmarks académicos internacionales',
     shortTitle: '¿Cómo se compara tu hijo a nivel mundial?',
     description:
-      'La mayoría de los padres solo saben cómo se sitúa su hijo a nivel nacional. Pero los colegios selectivos, los comités de becas y las mejores universidades piensan en percentiles globales. Aquí está lo que muestran realmente los datos internacionales — y lo que significa para el futuro de tu hijo.',
+      'Los colegios selectivos y las universidades piensan en percentiles globales. Qué muestran los datos internacionales y qué significan para tu hijo.',
     tldr: 'La puntuación media PISA en matemáticas de la OCDE es 472. España obtuvo una media de 474 en matemáticas en PISA 2022 — ligeramente por encima de la media OCDE, pero aproximadamente 100 puntos por debajo de Singapur (575). Una diferencia de 40 puntos PISA equivale a aproximadamente un año de escolarización.',
 
     date: '2026-07-02',
@@ -209,7 +209,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Las notas ya no son suficientes: cómo se diferencian realmente los estudiantes a los 15',
     shortTitle: 'Cómo diferenciarte a los 15',
     description:
-      'Más estudiantes que nunca obtienen las mejores notas, lo que convierte los resultados académicos en el diferenciador más débil de las últimas dos décadas. Qué distingue realmente las solicitudes universitarias competitivas y por qué empezar a los 15 cambia el resultado.',
+      'Con más alumnos que nunca sacando las mejores notas, estas ya no diferencian. Qué distingue a una solicitud universitaria y por qué empezar a los 15.',
     tldr: 'Las universidades utilizan actividades extracurriculares y experiencia laboral para distinguir entre candidatos con notas similares. A los 15–16 años, los diferenciadores más sólidos para solicitudes universitarias competitivas son: prácticas estructuradas, competiciones por materias, proyectos independientes con resultados medibles y evaluaciones de terceros que aporten evidencia verificable de aptitud.',
 
     date: '2026-09-08',
@@ -247,7 +247,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Experiencia laboral en empresa: guía completa del Reino Unido por edad (12 a 18)',
     shortTitle: 'Experiencia laboral en empresa: guía por edades (12–18)',
     description:
-      'Todo lo que los estudiantes del Reino Unido necesitan saber sobre experiencia laboral en empresa de los 12 a los 18 años — qué está disponible en cada curso, los principales programas de empleadores, cómo solicitar y qué hace destacar una solicitud.',
+      'Experiencia laboral en empresa de 12 a 18 años en el Reino Unido: opciones por curso, programas de grandes empleadores, cómo solicitar y destacar.',
     tldr: 'Empresas del FTSE 100 como Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey Insight y BCG ofrecen programas Spring o Summer Insight para alumnos de Year 12. Las convocatorias se abren en septiembre–noviembre para plazas del año siguiente. Son muy competitivos — con aproximadamente 10–20 solicitudes por plaza en las empresas más selectivas.',
 
     date: '2026-07-09',
@@ -283,7 +283,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'practicas-marketing-digital-instituto',
     title: 'Cómo conseguir prácticas de marketing digital siendo estudiante de instituto',
     shortTitle: 'Prácticas de marketing digital para estudiantes',
-    description: 'Guía práctica para estudiantes de instituto que quieren hacer prácticas en marketing digital — dónde buscar, qué habilidades demostrar, cómo construir un portfolio mínimo y por qué empezar antes de los 17 marca la diferencia.',
+    description: 'Prácticas de marketing digital en el instituto: dónde buscar, qué habilidades mostrar, cómo crear un portfolio mínimo y por qué empezar antes de los 17.',
     tldr: 'Las prácticas de marketing digital para estudiantes de instituto incluyen habitualmente: redacción de contenidos para redes sociales, análisis de datos en Google Analytics o Meta Ads, investigación de competidores y asistencia en campañas de email. Plataformas como Springpod y Forage ofrecen programas virtuales estructurados de marketing digital.',
 
     date: '2026-09-09',
@@ -302,7 +302,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'practicas-analitica-datos-estudiantes',
     title: 'Prácticas en analítica de datos para estudiantes: guía completa',
     shortTitle: 'Prácticas en analítica de datos: guía para estudiantes',
-    description: 'Todo lo que un estudiante de instituto necesita saber para conseguir prácticas en analítica de datos — qué se hace realmente, qué habilidades valorar, dónde buscar y cómo demostrar aptitud cuantitativa sin tener experiencia previa.',
+    description: 'Cómo conseguir prácticas de analítica de datos en el instituto: qué se hace, qué habilidades valoran, dónde buscar y cómo demostrar aptitud numérica.',
     tldr: 'Las herramientas más utilizadas en prácticas de análisis de datos son Excel, SQL, Python y Power BI. Los estudiantes sin experiencia en programación pueden acceder a prácticas en datos a través de programas virtuales como Forage (Accenture, JPMorgan) o mediante candidatura directa a startups y pymes.',
 
     date: '2026-09-09',
@@ -321,7 +321,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'cv-para-practicas-con-16-anos',
     title: 'Cómo escribir un CV para prácticas con 16 años (sin experiencia previa)',
     shortTitle: 'CV para prácticas con 16 años',
-    description: 'Guía paso a paso para escribir un CV de prácticas con 16 años cuando no se tiene experiencia laboral previa — qué incluir, cómo estructurarlo, qué errores evitar y cómo compensar la falta de experiencia con habilidades demostrables.',
+    description: 'Cómo escribir un CV de prácticas a los 16 años sin experiencia: qué incluir, cómo estructurarlo, errores comunes y cómo destacar tus habilidades.',
     tldr: 'El currículum para prácticas de un estudiante de 16 años debe ocupar una sola página e incluir: datos de contacto, formación (centro, curso, nota media), materias y proyectos relevantes, competencias (idiomas, software) y profesores como referencias. Sin experiencia laboral, destacar proyectos escolares y actividades extracurriculares es el enfoque más efectivo.',
 
     date: '2026-09-09',
@@ -340,7 +340,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'como-superar-entrevista-practicas',
     title: 'Cómo superar una entrevista de prácticas siendo estudiante: guía completa',
     shortTitle: 'Cómo superar una entrevista de prácticas',
-    description: 'Todo lo que un estudiante necesita saber para preparar y superar una entrevista de prácticas — las preguntas más frecuentes, cómo estructurar respuestas sin experiencia previa, los errores que cuestan la plaza y cómo diferenciarse el día de la entrevista.',
+    description: 'Cómo preparar una entrevista de prácticas: las preguntas más frecuentes, cómo responder sin experiencia, errores que cuestan la plaza y cómo destacar.',
     tldr: 'Las preguntas más frecuentes en entrevistas de prácticas son: \'Preséntate\', \'¿Por qué este sector?\' y \'¿Cómo trabajas en equipo?\' Los candidatos que investigan la empresa con antelación y llegan con preguntas concretas obtienen sistemáticamente mejores evaluaciones.',
 
     date: '2026-09-09',
@@ -359,7 +359,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'practicas-verano-reino-unido-estudiantes',
     title: 'Prácticas de verano en el Reino Unido: guía completa para estudiantes de instituto',
     shortTitle: 'Prácticas de verano en el Reino Unido',
-    description: 'Todo lo que los estudiantes de instituto necesitan saber sobre las prácticas de verano en el Reino Unido — los mejores programas, cuándo solicitar, qué esperar y cómo aprovechar las 4–6 semanas para construir una ventaja real.',
+    description: 'Prácticas de verano en el Reino Unido para estudiantes de instituto: los mejores programas, cuándo solicitar y cómo aprovechar 4–6 semanas.',
     tldr: 'Las prácticas de verano en el Reino Unido para estudiantes de instituto suelen durar una o dos semanas y tienen lugar de junio a agosto. Los grandes empleadores (Goldman Sachs, KPMG, Deloitte) abren las convocatorias en septiembre–noviembre del año anterior. Las agencias pequeñas y las pymes aceptan solicitudes con mayor flexibilidad.',
 
     date: '2026-09-09',
@@ -378,7 +378,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'inteligencia-artificial-futuro-trabajo-jovenes',
     title: 'Inteligencia artificial y el futuro del trabajo: lo que los jóvenes necesitan saber hoy',
     shortTitle: 'IA y el futuro del trabajo para jóvenes',
-    description: 'Cómo la inteligencia artificial está transformando el mercado laboral y qué significa para los estudiantes de instituto que empiezan a construir su trayectoria profesional ahora — qué habilidades serán más valiosas, qué roles desaparecerán y cómo prepararse.',
+    description: 'Cómo la IA está cambiando el trabajo y qué significa para los estudiantes de instituto: habilidades más valiosas, roles en riesgo y cómo prepararse.',
     tldr: 'El Foro Económico Mundial estima que la IA automatizará entre el 25 y el 40% de las tareas actuales antes de 2030, pero creará un saldo neto positivo de empleo. Las habilidades más demandadas en un mercado transformado por la IA son el pensamiento crítico, la resolución de problemas complejos y la comunicación — ninguna de ellas es automatizable.',
 
     date: '2026-09-09',
@@ -397,7 +397,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'emprender-con-16-anos',
     title: 'Emprender con 16 años: lo que nadie te cuenta (y lo que sí funciona)',
     shortTitle: 'Emprender con 16 años: guía práctica',
-    description: 'Qué significa realmente emprender siendo estudiante de instituto, por qué la mayoría de los consejos populares son contraproducentes, qué tipos de proyectos generan aprendizaje real a los 16 años y cómo documentar la experiencia para que cuente en solicitudes universitarias.',
+    description: 'Emprender a los 16 años: por qué muchos consejos populares fallan, qué proyectos enseñan de verdad y cómo hacer que cuenten en la universidad.',
     tldr: 'En España, los menores de 18 años no pueden constituir una empresa ni firmar contratos vinculantes de forma independiente sin autorización de sus padres o tutores. En el Reino Unido, cualquier persona de 16 años puede operar como empresario individual sin necesidad de registrar una sociedad, aunque tampoco puede ser director de empresa ni endeudarse de forma independiente.',
 
     date: '2026-09-09',
@@ -416,7 +416,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'practicas-finanzas-banca-instituto',
     title: 'Prácticas en finanzas y banca para estudiantes de instituto: cómo conseguirlas y qué esperar',
     shortTitle: 'Prácticas en finanzas para estudiantes de instituto',
-    description: 'Guía completa para estudiantes de instituto que quieren hacer prácticas en finanzas o banca — qué programas existen, qué buscan los reclutadores, cómo preparar una solicitud competitiva y qué aprenderás realmente durante la colocación.',
+    description: 'Prácticas en finanzas o banca para estudiantes de instituto: programas disponibles, qué buscan los reclutadores y cómo preparar una solicitud sólida.',
     tldr: 'Las principales entidades financieras en España que ofrecen prácticas para estudiantes de bachillerato incluyen Santander, BBVA, CaixaBank y Deloitte. Las convocatorias se abren en septiembre–noviembre. La competencia es alta — entre 10 y 20 solicitudes por plaza en los bancos más grandes — por lo que contar con evidencia verificable de aptitud numérica mejora las probabilidades de selección.',
 
     date: '2026-09-09',
@@ -435,7 +435,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'pisa-2025-crisis-educativa-mundial-que-deben-saber-los-padres',
     title: 'PISA 2025: Crisis Educativa Mundial — Lo Que Todo Padre Necesita Saber',
     shortTitle: 'PISA 2025 Resultados: España y Comparativa por Países',
-    description: 'PISA 2025 revela las puntuaciones más bajas jamás registradas en matemáticas, lectura y ciencias en los países de la OCDE. Analizamos qué significan los resultados para las familias y por qué nunca ha sido tan importante evaluar a tu hijo.',
+    description: 'PISA 2025 muestra las puntuaciones más bajas de la OCDE en matemáticas, lectura y ciencias. Qué significa para las familias y por qué evaluar a tu hijo.',
     tldr: 'PISA 2025 registró las puntuaciones medias más bajas en matemáticas, lectura y ciencias de la historia del programa. España se situó por debajo de la media OCDE en matemáticas y lectura. El informe PISA 2025 reveló que los estudiantes que utilizan IA para tareas específicas (resumir, redactar, investigar) obtienen aproximadamente 20 puntos menos en ciencias que quienes no lo hacen.',
 
     date: '2026-09-10',
@@ -460,7 +460,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'pisa-que-es-resultados-2025-exito-profesional',
     title: '¿Qué es PISA? Resultados 2025, la pregunta sobre "PISA 2026" y su vínculo con el éxito profesional',
     shortTitle: '¿Qué es PISA? Resultados 2025 por país',
-    description: '¿Qué es PISA, cómo funciona, qué mide? ¿Existe PISA 2026? Y lo más importante: ¿el rendimiento en PISA predice el éxito en la vida profesional? Un análisis honesto desde la perspectiva de un educador con experiencia.',
+    description: '¿Qué es PISA, qué mide y existe PISA 2026? Y lo más importante: ¿predice el éxito profesional? Un análisis honesto desde la experiencia docente.',
     tldr: 'PISA (Programa para la Evaluación Internacional de Alumnos) es una evaluación trienal que examina a jóvenes de 15 años en 91 países. Mide matemáticas, lectura y ciencias; la media OCDE ronda los 472–476 puntos en las tres materias. Las habilidades que evalúa PISA — razonamiento cuantitativo, comprensión lectora y resolución de problemas — coinciden con las más demandadas por los empleadores.',
 
     date: '2026-09-21',
@@ -504,7 +504,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     contentSlug: 'pisa-2025-work-experience-student-readiness',
     title: 'PISA 2025: Las Notas Caen en Todo el Mundo — Por Qué la Experiencia Laboral es la Respuesta',
     shortTitle: 'PISA 2025 y Experiencia Laboral: La Brecha de Preparación',
-    description: 'El informe PISA 2025 de la OCDE revela los puntajes académicos más bajos jamás registrados. Pero los datos también señalan una solución: los estudiantes que se conectan con el mundo real desarrollan las habilidades que las escuelas no pueden enseñar.',
+    description: 'PISA 2025 registra las puntuaciones más bajas de la historia. Los datos apuntan a una solución: el contacto con el mundo laboral desarrolla otras habilidades.',
     tldr: 'PISA 2025 evaluó a 690.000 estudiantes de 15 años en 91 países. Los países con mayor integración del aprendizaje basado en trabajo en la educación secundaria (Alemania, Suiza, Austria) puntúan sistemáticamente por encima de las medias OCDE. Los datos PISA muestran una correlación positiva entre la experiencia profesional estructurada durante el bachillerato y el rendimiento en ciencias y matemáticas.',
 
     date: '2026-09-11',
@@ -572,7 +572,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     contentSlug: 'grammar-school-entry-requirements-2026',
     title: 'Escuelas selectivas en el Reino Unido: requisitos de entrada 2026',
     shortTitle: 'Requisitos escuelas selectivas UK 2026',
-    description: 'Puntuaciones y requisitos para las escuelas selectivas (grammar schools) en el Reino Unido en 2026. Umbrales por región, diferencias entre condados y consejos para solicitar plaza.',
+    description: 'Requisitos y puntuaciones de las grammar schools del Reino Unido en 2026: umbrales por región, diferencias entre condados y consejos para solicitar.',
     tldr: 'Las grammar schools en el Reino Unido utilizan el examen 11+ para seleccionar alumnos. Los umbrales SAS varían por zona: Kent requiere 115–121, Buckinghamshire 118+, Londres (Barnet) 121–132. La nota de corte y la puntuación realmente competitiva son dos números diferentes — en Londres la brecha puede ser de 10–15 puntos SAS.',
     date: '2026-09-26',
     dateModified: '2026-09-26',
@@ -596,7 +596,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     contentSlug: '65-jobs-ai-cannot-automate',
     title: '65 Empleos que la IA y los Robots No Pueden Automatizar — Lo que Todo Padre Debe Saber',
     shortTitle: '65 Empleos que la IA No Puede Automatizar',
-    description: 'El Foro Económico Mundial prevé que el 40% de los empleos serán perturbados por la IA para 2030. Aquí hay 65 profesiones con 0% de probabilidad de automatización — y lo que significan para el futuro de su hijo.',
+    description: 'El Foro Económico Mundial prevé que la IA alterará el 40% de los empleos para 2030. Estas son 65 profesiones que la IA no puede automatizar.',
     tldr: 'Según datos de la Oficina de Estadísticas Laborales de EE.UU. y el análisis de probabilidad de automatización, 65 profesiones tienen una probabilidad de automatización del 0,0%. Comparten cuatro características que la IA no puede replicar: inteligencia emocional, capacidad de leer el entorno, trabajo creativo y alta variabilidad diaria en las tareas.',
     date: '2026-09-28',
     dateModified: '2026-09-28',
@@ -629,7 +629,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Comprender las fortalezas y debilidades de tu hijo antes del bachillerato',
     shortTitle: 'Fortalezas y debilidades: preparación para el bachillerato',
     description:
-      'Cómo identificar las aptitudes cognitivas naturales de tu hijo — razonamiento verbal, aptitud numérica, memoria de trabajo, razonamiento espacial — antes del bachillerato, y usar ese perfil para guiar la preparación y la elección de itinerarios.',
+      'Cómo identificar las aptitudes de tu hijo — razonamiento verbal y espacial, aptitud numérica, memoria de trabajo — y usarlas para elegir itinerario.',
     tldr: 'Las notas escolares miden el rendimiento relativo en clase, no el perfil cognitivo subyacente del alumno. Identificar las fortalezas y debilidades en razonamiento verbal, aptitud numérica, memoria de trabajo y razonamiento espacial antes del bachillerato proporciona a padres y docentes una hoja de ruta precisa, mucho más útil que un boletín de notas convencional.',
 
     date: '2026-09-27',
@@ -666,7 +666,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     contentSlug: 'oecd-teenage-work-experience-career-outcomes',
     title: 'Investigación OCDE: el poder oculto de la experiencia laboral en la adolescencia sobre la carrera profesional',
     shortTitle: 'Beneficios de las prácticas en adolescentes: estudio OCDE',
-    description: 'Los adolescentes con experiencia laboral antes de los 16 ganan un 5–10 % más de adultos, según la OCDE (47 estudios longitudinales). Qué habilidades desarrolla, quién se queda sin acceso y qué pueden hacer los padres.',
+    description: 'Los adolescentes con experiencia laboral antes de los 16 ganan un 5–10% más de adultos (OCDE, 47 estudios). Qué habilidades desarrolla y cómo ayudar.',
     tldr: '40 de los 47 estudios longitudinales revisados por la OCDE mostraron mejores resultados de empleo en la edad adulta para los alumnos con experiencia laboral escolar. Quienes tienen experiencia temprana ganan entre un 5 y un 10 % más. Sin embargo, alrededor del 50 % de los adolescentes en España, Italia y Brasil no tienen ninguna experiencia laboral a los 15 años.',
     date: '2026-09-30',
     readTime: '10 min de lectura',
@@ -713,7 +713,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     contentSlug: 'oecd-teenage-part-time-work-benefits',
     title: 'Trabajo a tiempo parcial para adolescentes: los beneficios avalados por la OCDE y cómo aprovecharlos al máximo',
     shortTitle: 'Trabajo a tiempo parcial adolescentes: beneficios OCDE',
-    description: 'La investigación de la OCDE confirma que trabajar a tiempo parcial durante los estudios desarrolla cultura financiera, confianza profesional y habilidades clave. Qué muestran los datos y cómo sacar el máximo partido.',
+    description: 'La OCDE confirma que trabajar a tiempo parcial mientras se estudia desarrolla cultura financiera, confianza y habilidades clave. Qué dicen los datos.',
     tldr: 'La investigación de la OCDE sobre el trabajo a tiempo parcial de adolescentes muestra que los alumnos que trabajan hasta ~15 horas semanales desarrollan habilidades profesionales más sólidas y mayor cultura financiera. Los factores clave son la supervisión, la relevancia para la carrera y mantenerse dentro de las horas productivas.',
     date: '2026-10-01',
     readTime: '9 min de lectura',
@@ -753,7 +753,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Descubre las Fortalezas Ocultas y las Áreas de Desarrollo de tu Hijo: Guía Moderna para Padres',
     shortTitle: 'Fortalezas Ocultas de tu Hijo: Guía para Padres',
     description:
-      'Las notas escolares sólo muestran el rendimiento actual, no el potencial cognitivo real de tu hijo. Esta guía explica cómo la evaluación adaptativa con IA revela fortalezas y áreas de mejora en razonamiento verbal, no verbal, matemáticas e inglés para edades 6–17.',
+      'Las notas solo muestran el rendimiento actual, no el potencial. Cómo la evaluación adaptativa revela fortalezas y carencias de tu hijo de 6 a 17 años.',
     tldr: 'La evaluación adaptativa de Eduentry mide los cuatro dominios cognitivos que predicen el éxito escolar: razonamiento verbal, razonamiento no verbal, habilidades matemáticas y competencia en inglés. El sistema se ajusta en tiempo real a cada respuesta, trazando el techo real del niño sin ansiedad ante los exámenes.',
     date: '2026-09-30',
     readTime: '8 min de lectura',
@@ -792,7 +792,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     contentSlug: 'discover-child-strengths-free-academic-test',
     title: 'Test Académico Gratuito: Descubre las Fortalezas y Debilidades de tu Hijo en 35 Minutos',
     shortTitle: 'Test Académico Gratuito: Fortalezas y Debilidades',
-    description: 'Las notas escolares no revelan el potencial cognitivo real de tu hijo. Nuestro test académico adaptativo gratuito mide el razonamiento verbal, numérico y espacial en 35 minutos — con informe inmediato comparado con normas internacionales.',
+    description: 'Las notas no revelan el potencial real de tu hijo. Nuestro test adaptativo gratuito mide el razonamiento verbal, numérico y espacial en 35 minutos.',
     tldr: 'Un test adaptativo gratuito que mide razonamiento verbal, razonamiento numérico y pensamiento visual-espacial de forma independiente — informe de percentil internacional en 35 minutos. Basado en CAT e IRT, la misma metodología que CAT4 y NWEA MAP.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -853,7 +853,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Mi hijo es inteligente pero saca malas notas: qué hacer',
     shortTitle: 'Hijo Inteligente, Malas Notas: Qué Hacer',
     description:
-      'Tu hijo es claramente inteligente, pero su boletín de notas no lo refleja. Aquí explicamos por qué las notas no miden la capacidad cognitiva — y cómo descubrir el verdadero techo académico de tu hijo en los cuatro dominios cognitivos.',
+      'Tu hijo es inteligente, pero sus notas no lo reflejan. Por qué las notas no miden la capacidad cognitiva y cómo descubrir su verdadero potencial.',
     tldr: 'Los niños inteligentes sacan malas notas cuando existe una desconexión entre su perfil cognitivo y cómo la escuela mide el rendimiento. Las notas escolares miden principalmente la inteligencia cristalizada — conocimiento memorizado y reproducido — mientras que muchos niños brillantes tienen una inteligencia fluida excepcional: la capacidad de razonar, detectar patrones y resolver problemas nuevos que los exámenes estándar raramente capturan.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -914,7 +914,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Cómo Encontrar Prácticas Siendo Estudiante: La Guía Completa',
     shortTitle: 'Cómo Encontrar Prácticas como Estudiante',
     description:
-      'Guía práctica respaldada por investigación para estudiantes de secundaria y universidad sobre cómo encontrar prácticas sin experiencia. Aprende cómo una evaluación de preparación para prácticas te ayuda a superar filtros de notas y conseguir tu primera plaza.',
+      'Cómo encontrar prácticas sin experiencia siendo estudiante, y cómo una evaluación de preparación te ayuda a superar los filtros de notas.',
     tldr: 'Los estudiantes con experiencia de prácticas previa reciben ofertas de trabajo antes de graduarse a una tasa un 70% mayor (NACE, 2020). La mayor barrera es la paradoja de la experiencia: necesitas experiencia para conseguir experiencia. Una evaluación de preparación para prácticas te da un perfil de talento verificable.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -975,7 +975,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Actividades de Verano para Niños Académicamente Ambiciosos',
     shortTitle: 'Actividades de Verano para Niños Académicamente Ambiciosos',
     description:
-      'Guía respaldada por investigaciones para padres que planifican un verano productivo para sus hijos de alto rendimiento de 9 a 16 años. Cubre prácticas, evaluaciones cognitivas, programas de enriquecimiento y un marco de 3 pasos para adaptar las actividades de verano a las fortalezas reales de su hijo.',
+      'Un verano productivo para niños de alto rendimiento de 9 a 16 años: prácticas, evaluaciones, enriquecimiento y un plan de 3 pasos según sus fortalezas.',
     tldr: 'Los veranos sin estructura amplían la brecha de rendimiento — pero el verano estructurado equivocado mata la motivación intrínseca. La respuesta es intencionada, variada y adaptada al perfil cognitivo del niño. Comience con una evaluación gratuita de 35 minutos para saber qué dominio desarrollar antes de reservar cualquier cosa.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -1035,7 +1035,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     contentSlug: 'global-academic-benchmarks-report-2026',
     title: 'Informe de Referencias Académicas Globales 2026: Tendencias Internacionales de Puntuación y Evaluación',
     shortTitle: 'Informe de Referencias Académicas Globales 2026',
-    description: 'Análisis completo de las tendencias de los exámenes estandarizados internacionales 2026 — puntuaciones SAS, referencias PISA/TIMSS, prueba SAT digital adaptativa y los umbrales de percentil que las familias deben seguir para las admisiones selectivas.',
+    description: 'Tendencias de los exámenes estandarizados internacionales en 2026: puntuaciones SAS, PISA/TIMSS, el SAT digital y los percentiles para admisiones selectivas.',
     tldr: 'La puntuación media PISA de la OCDE en matemáticas, lectura y ciencias es aproximadamente 472–476. El Reino Unido supera la media de la OCDE en lectura y ciencias y está en la media o ligeramente por encima en matemáticas. Singapur lidera a nivel mundial en las tres asignaturas, con una puntuación 70–100 puntos PISA por encima del Reino Unido.',
     date: '2026-06-16',
     dateModified: '2026-10-02',
@@ -1061,7 +1061,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Cómo Prepararse para el Examen 11+: Guía Completa para Padres',
     shortTitle: 'Cómo Prepararse para el 11+: Guía Completa',
     description:
-      'Guía práctica para padres sobre cómo preparar a sus hijos para el examen 11+ en casa — con cobertura de razonamiento verbal, razonamiento no verbal, matemáticas e inglés, y un cronograma de práctica recomendado de 18 meses.',
+      'Cómo preparar a tu hijo para el 11+ en casa: razonamiento verbal y no verbal, matemáticas e inglés, con un calendario de práctica de 18 meses.',
     tldr: 'La mayoría de las familias comienzan la preparación para el 11+ entre 12 y 18 meses antes del examen, que normalmente se realiza en septiembre u octubre del Year 6. La preparación efectiva es de 3–4 horas semanales en la fase inicial (Year 4–5), aumentando a 5–7 horas semanales en los últimos 3 meses, distribuidas en sesiones diarias de 20–30 minutos. Las cuatro materias evaluadas son Inglés, Matemáticas, Razonamiento Verbal y Razonamiento No Verbal.',
     date: '2026-10-03',
     dateModified: '2026-10-03',
@@ -1122,7 +1122,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Razonamiento Verbal para el 11+: Tipos de Preguntas, Ejemplos y Consejos',
     shortTitle: 'Razonamiento Verbal 11+: Guía Completa',
     description:
-      'Guía completa sobre las preguntas de razonamiento verbal que tu hijo encontrará en el 11+ — con todos los tipos principales de preguntas con ejemplos resueltos, errores comunes que evitar y consejos para una práctica eficaz en casa.',
+      'Razonamiento verbal en el 11+: todos los tipos de preguntas con ejemplos resueltos, errores comunes que evitar y consejos para practicar en casa.',
     tldr: 'El razonamiento verbal en el 11+ evalúa el pensamiento lógico mediante palabras, no la habilidad lectora ni la escritura. Los tipos de preguntas incluyen analogías de palabras (CALIENTE:FRÍO como RÁPIDO:?), códigos, secuencias, palabras ocultas y sinónimos. Es distinto de la comprensión lectora en inglés y puede mejorarse mediante la práctica específica independientemente del nivel de lectura.',
     date: '2026-10-03',
     dateModified: '2026-10-03',
@@ -1183,7 +1183,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Hábitos que los Niños Deben Desarrollar Ahora para Evitar el Desempleo Futuro',
     shortTitle: 'Hábitos para Evitar el Desempleo Futuro',
     description:
-      '8 hábitos que protegen a los niños del desempleo futuro: pensamiento crítico, alfabetización en IA, educación financiera y experiencia real. Guía para padres basada en McKinsey, FEM y OCDE.',
+      '8 hábitos que protegen a los niños del desempleo: pensamiento crítico, IA, educación financiera y experiencia real, según McKinsey, el FEM y la OCDE.',
     tldr: 'McKinsey estima que unos 375 millones de trabajadores en todo el mundo — el 14% de la fuerza laboral — necesitarán cambiar de ocupación para 2030. Pero las habilidades más difíciles de replicar para la IA son consistentes en todos los estudios principales: pensamiento crítico, creatividad, inteligencia emocional e iniciativa. Estas no se construyen con calificaciones; se construyen con hábitos formados temprano.',
     date: '2026-10-04',
     dateModified: '2026-10-04',

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
@@ -20,7 +21,7 @@ const TAG_META: Record<string, { title: string; description: string }> = {
   },
   'Gifted Education': {
     title: 'Gifted Education & Testing Guides',
-    description: 'Guides on gifted child identification, gifted programme testing, CAT4, CogAT, and gifted education programmes in the UK, US, Canada, Australia, Netherlands and UAE.',
+    description: 'Guides to gifted identification, CAT4 and CogAT testing, and gifted programmes in the UK, US, Canada, Australia, the Netherlands and the UAE.',
   },
   'Career Development': {
     title: 'Career Development Guides for Students',
@@ -76,7 +77,7 @@ const TAG_META: Record<string, { title: string; description: string }> = {
   },
   'Child Development': {
     title: 'Child Development & Academic Potential Guides',
-    description: 'Research on child development, cognitive ability testing, learning strengths and weaknesses, and how early academic benchmarking helps children reach their potential.',
+    description: 'Research on child development, cognitive testing, learning strengths and weaknesses, and how early benchmarking helps children reach their potential.',
   },
 }
 
@@ -93,12 +94,12 @@ export async function generateMetadata({ params }: { params: Promise<{ tag: stri
   const description = meta?.description ?? `Guides and articles about ${tagName}.`
   const url = `${BASE_URL}/blog/tag/${tagSlug}`
   return {
-    title: `${title} | Eduentry Blog`,
+    title: brandedTitle(title),
     description,
     alternates: { canonical: url },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-    openGraph: { title: `${title} | Eduentry Blog`, description, url },
-    twitter: { card: 'summary_large_image', title: `${title} | Eduentry Blog`, description },
+    openGraph: { title: `${title} | Eduentry Blog`, description, url, images: [`${BASE_URL}/blog/opengraph-image`] },
+    twitter: { card: 'summary_large_image', title: `${title} | Eduentry Blog`, description, images: [`${BASE_URL}/blog/opengraph-image`] },
   }
 }
 
@@ -145,7 +146,7 @@ export default async function TagPage({ params }: { params: Promise<{ tag: strin
       <PublicNav />
 
       <main className="max-w-4xl mx-auto px-6 py-16">
-        <nav className="text-sm text-gray-400 mb-8">
+        <nav className="text-sm text-gray-500 mb-8">
           <Link href="/" className="hover:text-gray-600">Home</Link>
           <span className="mx-2">›</span>
           <Link href="/blog" className="hover:text-gray-600">Blog</Link>
@@ -161,7 +162,7 @@ export default async function TagPage({ params }: { params: Promise<{ tag: strin
           <p className="text-xl text-gray-500 leading-relaxed max-w-2xl">
             {meta?.description ?? `Guides and articles about ${tagName}.`}
           </p>
-          <p className="text-sm text-gray-400 mt-3">{posts.length} {posts.length === 1 ? 'guide' : 'guides'}</p>
+          <p className="text-sm text-gray-500 mt-3">{posts.length} {posts.length === 1 ? 'guide' : 'guides'}</p>
         </div>
 
         <div className="space-y-6">
@@ -171,7 +172,7 @@ export default async function TagPage({ params }: { params: Promise<{ tag: strin
               href={`/blog/${post.slug}`}
               className="block border border-gray-100 rounded-2xl p-6 sm:p-8 hover:border-indigo-200 hover:shadow-sm transition-all"
             >
-              <div className="flex items-center gap-3 text-xs text-gray-400 mb-3">
+              <div className="flex items-center gap-3 text-xs text-gray-500 mb-3">
                 <time dateTime={post.date}>
                   {new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
                 </time>
