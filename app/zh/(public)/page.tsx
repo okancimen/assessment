@@ -89,7 +89,7 @@ const FAQ_ZH = [
   { q: '什么是实习评估？', a: '这是针对14岁以上高中生的独立34题自适应评估，分别测量能力、领域知识、工作技能和兴趣档案，覆盖四个方向：技术、商业、数据分析和数字营销。结果包括个性化的准备情况报告和AI生成的职业洞察。' },
   { q: '可以用Eduentry准备11+考试吗？', a: '可以。四个科目——英语、数学、语言推理和非语言推理——与英国文法学校使用的11+考试结构完全对应。Eduentry提供标准化分数和百分位排名，让您在正式考试前准确了解孩子的位置。' },
   { q: '什么分数算是好成绩？', a: '100是中间值。95–109属于平均范围，110–119高于平均，120+属于卓越水平。英国文法学校11+入学竞争分数通常在115分以上——在伦敦等竞争激烈地区可能需要127+。' },
-  { q: '每项评估需要多长时间？', a: '学术评估包含4个科目60道题——大多数儿童在60–90分钟内完成。实习评估包含34道题——大多数学生约20分钟完成。进度自动保存，两项评估均可分次完成。' },
+  { q: '每项评估需要多长时间？', a: '学术评估包含4个科目60道题——大多数儿童在约60分钟内完成。实习评估包含34道题——大多数学生约20分钟完成。进度自动保存，两项评估均可分次完成。' },
   { q: '自适应技术如何工作？', a: 'Eduentry使用两参数逻辑模型（2PL）的MAP评估——与PISA、GCSE和SAT使用的模型相同。每次回答后，系统更新学生的能力估计，并选择下一道题以最大化测量精度。' },
   { q: '可以添加多个孩子吗？', a: '可以。一个家长账户可以包含多个孩子的档案。每个孩子都有自己的评估历史、分数和个性化建议。可添加的孩子数量没有限制。' },
 ]
@@ -470,7 +470,7 @@ export default function ChineseHomePage() {
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">学术评估 · 开始很简单</p>
             <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
-              从注册到结果<br />不到两小时。
+              从注册到结果<br />只需一小时。
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -672,7 +672,7 @@ export default function ChineseHomePage() {
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">学术评估</p>
             <h2 className="text-2xl font-bold text-white mb-3">了解孩子的全球学术位置。</h2>
-            <p className="text-[#a1a1a7] text-sm mb-8">不到2小时获得完整国际参照结果。</p>
+            <p className="text-[#a1a1a7] text-sm mb-8">一小时获得完整国际参照结果。</p>
             <CtaLink href="/zh/auth/register" label="bottom_cta_academic_zh" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               开始免费评估 →
             </CtaLink>

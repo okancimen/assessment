@@ -390,7 +390,7 @@ export default function MethodologyPage() {
         {/* CTA */}
         <div className="mt-16 text-center bg-indigo-50 rounded-2xl border border-indigo-100 p-10">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">See your child&apos;s percentile ranking</h2>
-          <p className="text-gray-600 mb-6">Free assessment · Ages 6–17 · Results in 90 minutes</p>
+          <p className="text-gray-600 mb-6">Free assessment · Ages 6–17 · Results in an hour</p>
           <CtaLink href="/auth/register" label="methodology_cta" className="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-xl hover:bg-indigo-700 transition-colors">
             Start Free Assessment
           </CtaLink>

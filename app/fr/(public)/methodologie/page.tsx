@@ -245,7 +245,7 @@ export default function MethodologiePage() {
       {/* CTA */}
       <div className="mt-16 text-center bg-[#eef2ff] rounded-2xl border border-[#c7d2fe] p-10">
         <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Voir le percentile de votre enfant</h2>
-        <p className="text-[#6e6e73] mb-6">Évaluation gratuite · 6–17 ans · Résultats en 90 minutes</p>
+        <p className="text-[#6e6e73] mb-6">Évaluation gratuite · 6–17 ans · Résultats en une heure</p>
         <Link href="/fr/auth/register" className="inline-block bg-[#4F46E5] text-white font-semibold px-8 py-3 rounded-xl hover:bg-[#4338CA] transition-colors">
           Commencer l&apos;évaluation gratuite
         </Link>

@@ -239,7 +239,7 @@ export default function ManhajiyyaPage() {
       {/* CTA */}
       <div className="mt-16 text-center bg-[#eef2ff] rounded-2xl border border-[#c7d2fe] p-10">
         <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">اعرف الترتيب المئيني لطفلك</h2>
-        <p className="text-[#6e6e73] mb-6">تقييم مجاني · 6-17 عاماً · نتائج في 90 دقيقة</p>
+        <p className="text-[#6e6e73] mb-6">تقييم مجاني · 6-17 عاماً · نتائج في ساعة واحدة</p>
         <Link href="/ar/auth/register" className="inline-block bg-[#4F46E5] text-white font-semibold px-8 py-3 rounded-xl hover:bg-[#4338CA] transition-colors">
           ابدأ التقييم المجاني
         </Link>

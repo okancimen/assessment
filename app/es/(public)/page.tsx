@@ -82,7 +82,7 @@ const FAQ_ES = [
   { q: '¿Qué es la evaluación de prácticas?', a: 'Una evaluación adaptativa separada de 34 preguntas para estudiantes de instituto mayores de 14 años. Evalúa aptitud general, conocimientos del sector, habilidades profesionales y perfil de intereses en cuatro áreas: Tecnología, Empresa, Análisis de datos y Marketing digital. Los resultados incluyen un informe de preparación personalizado e información sobre la orientación profesional generada por IA.' },
   { q: '¿Puedo usar Eduentry para preparar el 11+?', a: 'Sí. Las cuatro materias — Inglés, Matemáticas, Razonamiento Verbal y Razonamiento No Verbal — reflejan directamente la estructura del examen 11+ utilizado por las escuelas de gramática en Inglaterra. Eduentry te da una puntuación estandarizada y una clasificación percentil para que sepas exactamente dónde está tu hijo antes del examen real.' },
   { q: '¿Qué puntuación se considera buena?', a: 'Una puntuación de 100 es exactamente la media. 95–109 es el rango medio, 110–119 es Por encima de la media, y 120+ es Excepcional. Para el acceso a escuelas de gramática mediante el 11+, las puntuaciones competitivas son típicamente 115 o más — aunque las escuelas más selectivas en zonas como Londres exigen 127+.' },
-  { q: '¿Cuánto tiempo lleva cada evaluación?', a: 'La evaluación académica tiene 60 preguntas en 4 materias — la mayoría de los niños la completan en 60–90 minutos. La evaluación de prácticas tiene 34 preguntas — la mayoría de los estudiantes la terminan en unos 20 minutos. El progreso se guarda automáticamente, así que ambas se pueden pausar y reanudar en cualquier momento.' },
+  { q: '¿Cuánto tiempo lleva cada evaluación?', a: 'La evaluación académica tiene 60 preguntas en 4 materias — la mayoría de los niños la completan en unos 60 minutos. La evaluación de prácticas tiene 34 preguntas — la mayoría de los estudiantes la terminan en unos 20 minutos. El progreso se guarda automáticamente, así que ambas se pueden pausar y reanudar en cualquier momento.' },
   { q: '¿Cómo funciona la tecnología adaptativa?', a: 'Eduentry usa la Teoría de Respuesta al Ítem Logística de 2 Parámetros (2PL) con estimación MAP — el mismo modelo usado en PISA, GCSE y SAT. Después de cada respuesta, el sistema actualiza su estimación de la habilidad del estudiante y selecciona la siguiente pregunta para maximizar la precisión de medición.' },
   { q: '¿Puedo añadir más de un hijo?', a: 'Sí. Una sola cuenta de padres puede incluir múltiples perfiles de hijos. Cada hijo tiene su propio historial de evaluaciones, puntuaciones y recomendaciones personalizadas. No hay límite en el número de hijos que puedes añadir.' },
   { q: '¿Son privados mis datos?', a: 'Sí. Todos los datos se almacenan de forma segura con seguridad a nivel de fila — solo tú puedes acceder a tus resultados. No vendemos ni compartimos datos con terceros. El servicio cumple plenamente con el RGPD.' },
@@ -470,7 +470,7 @@ export default function SpanishHomePage() {
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">Evaluación Académica · Fácil de empezar</p>
             <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
-              Del registro a los resultados<br />en menos de dos horas.
+              Del registro a los resultados<br />en una hora.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -673,7 +673,7 @@ export default function SpanishHomePage() {
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">Evaluación Académica</p>
             <h2 className="text-2xl font-bold text-white mb-3">Descubre dónde está tu hijo — a nivel global.</h2>
-            <p className="text-[#a1a1a7] text-sm mb-8">Contexto internacional completo en menos de 2 horas.</p>
+            <p className="text-[#a1a1a7] text-sm mb-8">Contexto internacional completo en una hora.</p>
             <CtaLink href="/es/auth/register" label="bottom_cta_academic_es" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Empezar evaluación gratuita →
             </CtaLink>

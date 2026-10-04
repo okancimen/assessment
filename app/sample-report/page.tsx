@@ -635,7 +635,7 @@ export default function SampleReportPage() {
         {/* ── CTA ── */}
         <div className="bg-indigo-600 rounded-3xl p-10 sm:p-12 text-center text-white">
           <div className="inline-flex items-center gap-2 text-xs font-semibold bg-white/10 rounded-full px-4 py-1.5 mb-5">
-            Free · No credit card · Results in 90 minutes
+            Free · No credit card · Results in an hour
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Get your child&apos;s real report — free</h2>
           <p className="text-indigo-100 mb-8 max-w-md mx-auto text-sm leading-relaxed">
