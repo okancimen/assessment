@@ -362,7 +362,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Çocuğunuzun gerçekte nerede durduğunu öğrenin',
-      body: "Eduentry'nin ücretsiz uyarlanabilir değerlendirmesi, bir okul notu değil standartlaştırılmış bir puan ve küresel yüzdelik dilim karşılaştırması üretir. 20 dakikadan kısa sürede çocuğunuzun gerçek konumunu anlayın.",
+      body: "Eduentry'nin ücretsiz uyarlanabilir değerlendirmesi, bir okul notu değil standartlaştırılmış bir puan ve küresel yüzdelik dilim karşılaştırması üretir. bir saat içinde çocuğunuzun gerçek konumunu anlayın.",
       label: 'Ücretsiz değerlendirmeye başla',
       href: '/auth/register',
     },
@@ -551,7 +551,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Çocuğunuzun nerede durduğunu öğrenin — ücretsiz',
-      body: 'Eduentry\'nin uyarlanabilir değerlendirmesi, 6-17 yaş arası çocukları PISA ile aynı uluslararası ölçekte matematik, İngilizce, sözel ve sözel olmayan akıl yürütme alanlarında sınar. 20 dakikada küresel yüzdelik dilim sıralaması alın.',
+      body: 'Eduentry\'nin uyarlanabilir değerlendirmesi, 6-17 yaş arası çocukları PISA ile aynı uluslararası ölçekte matematik, İngilizce, sözel ve sözel olmayan akıl yürütme alanlarında sınar. Bir saat içinde küresel yüzdelik dilim sıralaması alın.',
       label: 'Ücretsiz Değerlendirmeyi Başlat',
       href: '/tr',
     },
@@ -1182,10 +1182,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet',
     contentSlug: 'discover-child-strengths-free-academic-test',
-    title: 'Ücretsiz Akademik Test: Çocuğunuzun Güçlü ve Zayıf Yönlerini 20 Dakikada Keşfedin',
+    title: 'Ücretsiz Akademik Test: Çocuğunuzun Güçlü ve Zayıf Yönlerini Bir Saat İçinde Keşfedin',
     shortTitle: 'Ücretsiz Akademik Test: Güçlü ve Zayıf Yönler',
-    description: 'Karne notları bilişsel potansiyeli göstermez. Ücretsiz adaptif testimiz 20 dakikada sözel, sayısal ve görsel-uzamsal yetenekleri ölçer.',
-    tldr: 'Sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünmeyi bağımsız olarak ölçen ücretsiz adaptif test — 20 dakikada uluslararası yüzdelik dilim raporu. CAT ve IRT metodolojisiyle, CAT4 ve NWEA MAP ile aynı bilimsel temel.',
+    description: 'Karne notları bilişsel potansiyeli göstermez. Ücretsiz adaptif testimiz bir saat içinde sözel, sayısal ve görsel-uzamsal yetenekleri ölçer.',
+    tldr: 'Sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünmeyi bağımsız olarak ölçen ücretsiz adaptif test — bir saat içinde uluslararası yüzdelik dilim raporu. CAT ve IRT metodolojisiyle, CAT4 ve NWEA MAP ile aynı bilimsel temel.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
     readTime: '10 dk okuma',
@@ -1197,7 +1197,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       },
       {
         q: 'Ücretsiz akademik test ne kadar sürer?',
-        a: 'Yaklaşık 15–20 dakika. Adaptif format sayesinde her soru bir öncekinin cevabına göre ayarlanır ve 80 soruluk klasik bir testin ölçüm hassasiyetine çok daha az soruyla ulaşılır.',
+        a: 'En fazla bir saat. Adaptif format sayesinde her soru bir öncekinin cevabına göre ayarlanır ve 80 soruluk klasik bir testin ölçüm hassasiyetine çok daha az soruyla ulaşılır.',
       },
       {
         q: 'Hangi yaş grubu için uygundur?',
@@ -1221,7 +1221,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       },
       {
         q: 'Ücretsiz test çocuğumun üstün yetenekli olup olmadığını gösterir mi?',
-        a: 'Evet. Adaptif bilişsel değerlendirme, üstün yeteneklilikle en güçlü ilişkisi olan üç alanı ölçer: sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünme. Her üç alanda 90. yüzdeliğin üzerinde puan alan bir çocuk, üstün yetenekli program değerlendirmesinden fayda sağlayabilir. Test 20 dakika sürer ve kayıt gerektirmez.',
+        a: 'Evet. Adaptif bilişsel değerlendirme, üstün yeteneklilikle en güçlü ilişkisi olan üç alanı ölçer: sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünme. Her üç alanda 90. yüzdeliğin üzerinde puan alan bir çocuk, üstün yetenekli program değerlendirmesinden fayda sağlayabilir. Test bir saatten kısa sürer ve kayıt gerektirmez.',
       },
       {
         q: 'Ücretsiz online test profesyonel değerlendirme kadar güvenilir mi?',
@@ -1274,7 +1274,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       },
       {
         q: 'Çocuğumun gerçek akademik potansiyelini nasıl öğrenebilirim?',
-        a: 'Ücretsiz bir adaptif bilişsel değerlendirme, sözel muhakeme, sayısal muhakeme, görsel-uzamsal muhakeme ve işlem hızını bağımsız olarak ölçer ve her alan için uluslararası normlara göre kalibre edilmiş yüzdelik dilim skoru üretir. Okul notlarının aksine, çocuğunuzun neyi bildiğini bilişsel kapasitesinden ayırır. Eduentry akademik değerlendirmesi 20 dakika sürer ve herhangi bir hazırlık gerektirmez.',
+        a: 'Ücretsiz bir adaptif bilişsel değerlendirme, sözel muhakeme, sayısal muhakeme, görsel-uzamsal muhakeme ve işlem hızını bağımsız olarak ölçer ve her alan için uluslararası normlara göre kalibre edilmiş yüzdelik dilim skoru üretir. Okul notlarının aksine, çocuğunuzun neyi bildiğini bilişsel kapasitesinden ayırır. Eduentry akademik değerlendirmesi bir saatten kısa sürer ve herhangi bir hazırlık gerektirmez.',
       },
       {
         q: 'Çocuğum okulda düşük performans gösteriyorsa test yaptırmalı mıyım?',
@@ -1368,7 +1368,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     shortTitle: 'Akademik Çocuklar için Yaz Tatili Aktiviteleri',
     description:
       '9–16 yaş başarılı çocuklar için verimli bir yaz: stajlar, değerlendirmeler, zenginleştirme programları ve güçlü yönlere göre 3 adımlı plan.',
-    tldr: 'Yapılandırılmamış yazlar başarı uçurumunu derinleştirir — ancak yanlış yapılandırılmış bir yaz içsel motivasyonu öldürür. Cevap, amaca yönelik, çeşitli ve çocuğun bilişsel profiline uygun olmaktır. Herhangi bir şey rezerve etmeden önce hangi alanı geliştireceğinizi öğrenmek için ücretsiz 20 dakikalık değerlendirmeyle başlayın.',
+    tldr: 'Yapılandırılmamış yazlar başarı uçurumunu derinleştirir — ancak yanlış yapılandırılmış bir yaz içsel motivasyonu öldürür. Cevap, amaca yönelik, çeşitli ve çocuğun bilişsel profiline uygun olmaktır. Herhangi bir şey rezerve etmeden önce hangi alanı geliştireceğinizi öğrenmek için bir saatten kısa süren ücretsiz değerlendirmeyle başlayın.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
     readTime: '10 dk okuma',
@@ -1400,7 +1400,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       },
       {
         q: "Çocuğumun güçlü yönlerine hangi yaz aktivitesinin uygun olduğunu nasıl bilirim?",
-        a: "Herhangi bir şey rezerve etmeden önce ücretsiz 20 dakikalık bilişsel değerlendirmeyi yapın. Uluslararası kıyaslamalı sözel, sayısal ve uzamsal yüzdelik puanlar üretir. Güçlü sözel profilli bir çocuk tartışma, yazma ve Model BM'de başarılı olur. Sayısal-uzamsal profil kodlama, mühendislik projeleri ve rekabetçi matematiğe yönlendirir.",
+        a: "Herhangi bir şey rezerve etmeden önce bir saatten kısa süren ücretsiz bilişsel değerlendirmeyi yapın. Uluslararası kıyaslamalı sözel, sayısal ve uzamsal yüzdelik puanlar üretir. Güçlü sözel profilli bir çocuk tartışma, yazma ve Model BM'de başarılı olur. Sayısal-uzamsal profil kodlama, mühendislik projeleri ve rekabetçi matematiğe yönlendirir.",
       },
       {
         q: 'Yaz aktiviteleri takip eden yılda okul başarısını artırır mı?',

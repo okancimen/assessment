@@ -198,7 +198,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Descubre dónde está realmente tu hijo',
-      body: 'La evaluación adaptativa gratuita de Eduentry produce una puntuación estandarizada y una comparación en percentil global — no una nota escolar. Entiende la posición real de tu hijo en menos de 20 minutos.',
+      body: 'La evaluación adaptativa gratuita de Eduentry produce una puntuación estandarizada y una comparación en percentil global — no una nota escolar. Entiende la posición real de tu hijo en menos de una hora.',
       label: 'Empezar la evaluación gratuita',
       href: '/auth/register',
     },
@@ -451,7 +451,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Descubre dónde está tu hijo — gratis',
-      body: 'La evaluación adaptativa de Eduentry evalúa a niños de 6 a 17 años en matemáticas, inglés, razonamiento verbal y no verbal en la misma escala internacional que PISA. Obtén un percentil global en 20 minutos.',
+      body: 'La evaluación adaptativa de Eduentry evalúa a niños de 6 a 17 años en matemáticas, inglés, razonamiento verbal y no verbal en la misma escala internacional que PISA. Obtén un percentil global en menos de una hora.',
       label: 'Comenzar evaluación gratuita',
       href: 'https://eduentry.com/es',
     },
@@ -790,10 +790,10 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
   {
     slug: 'test-academico-gratuito-fortalezas-debilidades-hijo',
     contentSlug: 'discover-child-strengths-free-academic-test',
-    title: 'Test Académico Gratuito: Descubre las Fortalezas y Debilidades de tu Hijo en 20 Minutos',
+    title: 'Test Académico Gratuito: Descubre las Fortalezas y Debilidades de tu Hijo en Menos de una Hora',
     shortTitle: 'Test Académico Gratuito: Fortalezas y Debilidades',
-    description: 'Las notas no revelan el potencial real de tu hijo. Nuestro test adaptativo gratuito mide el razonamiento verbal, numérico y espacial en 20 minutos.',
-    tldr: 'Un test adaptativo gratuito que mide razonamiento verbal, razonamiento numérico y pensamiento visual-espacial de forma independiente — informe de percentil internacional en 20 minutos. Basado en CAT e IRT, la misma metodología que CAT4 y NWEA MAP.',
+    description: 'Las notas no revelan el potencial real de tu hijo. Nuestro test adaptativo gratuito mide el razonamiento verbal, numérico y espacial en menos de una hora.',
+    tldr: 'Un test adaptativo gratuito que mide razonamiento verbal, razonamiento numérico y pensamiento visual-espacial de forma independiente — informe de percentil internacional en menos de una hora. Basado en CAT e IRT, la misma metodología que CAT4 y NWEA MAP.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
     readTime: '10 min de lectura',
@@ -805,7 +805,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       },
       {
         q: '¿Cuánto dura el test académico gratuito?',
-        a: 'Aproximadamente 15–20 minutos. El formato adaptativo ajusta cada pregunta según la respuesta anterior, alcanzando la misma precisión que un test de 80 preguntas con muchas menos preguntas.',
+        a: 'Menos de una hora. El formato adaptativo ajusta cada pregunta según la respuesta anterior, alcanzando la misma precisión que un test de 80 preguntas con muchas menos preguntas.',
       },
       {
         q: '¿Para qué rango de edad está diseñado?',
@@ -829,7 +829,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       },
       {
         q: '¿Puede un test gratuito detectar si mi hijo es superdotado?',
-        a: 'Sí. Una evaluación cognitiva adaptativa mide los tres dominios más asociados con la superdotación: razonamiento verbal, razonamiento numérico y pensamiento visual-espacial. Un niño que supera el percentil 90 en los tres dominios es candidato para programas de altas capacidades. El test dura 20 minutos y no requiere registro.',
+        a: 'Sí. Una evaluación cognitiva adaptativa mide los tres dominios más asociados con la superdotación: razonamiento verbal, razonamiento numérico y pensamiento visual-espacial. Un niño que supera el percentil 90 en los tres dominios es candidato para programas de altas capacidades. El test dura menos de una hora y no requiere registro.',
       },
       {
         q: '¿Es tan preciso un test online gratuito como una evaluación profesional?',
@@ -882,7 +882,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       },
       {
         q: '¿Cómo puedo conocer el verdadero potencial académico de mi hijo?',
-        a: 'Una evaluación cognitiva adaptativa gratuita mide el razonamiento verbal, numérico, visual-espacial y la velocidad de procesamiento de forma independiente — produciendo una puntuación percentil para cada dominio calibrada según normas internacionales. A diferencia de las notas escolares, esto separa lo que tu hijo sabe de lo que es cognitivamente capaz. La evaluación académica de Eduentry dura 20 minutos y no requiere preparación previa.',
+        a: 'Una evaluación cognitiva adaptativa gratuita mide el razonamiento verbal, numérico, visual-espacial y la velocidad de procesamiento de forma independiente — produciendo una puntuación percentil para cada dominio calibrada según normas internacionales. A diferencia de las notas escolares, esto separa lo que tu hijo sabe de lo que es cognitivamente capaz. La evaluación académica de Eduentry dura menos de una hora y no requiere preparación previa.',
       },
       {
         q: '¿Debería hacer que mi hijo sea evaluado si tiene bajo rendimiento en la escuela?',
@@ -951,7 +951,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       },
       {
         q: '¿Cuánto tiempo dura la evaluación?',
-        a: 'Aproximadamente 20 minutos. Como el test es adaptativo, alcanza una calibración precisa más rápido que un test de formato fijo de precisión equivalente. Puedes completarlo en una sola sesión sin cuenta previa.',
+        a: 'Menos de una hora. Como el test es adaptativo, alcanza una calibración precisa más rápido que un test de formato fijo de precisión equivalente. Puedes completarlo en una sola sesión sin cuenta previa.',
       },
       {
         q: '¿Cuál es la diferencia entre prácticas de estudiante y una colocación de graduado?',
@@ -976,7 +976,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     shortTitle: 'Actividades de Verano para Niños Académicamente Ambiciosos',
     description:
       'Un verano productivo para niños de alto rendimiento de 9 a 16 años: prácticas, evaluaciones, enriquecimiento y un plan de 3 pasos según sus fortalezas.',
-    tldr: 'Los veranos sin estructura amplían la brecha de rendimiento — pero el verano estructurado equivocado mata la motivación intrínseca. La respuesta es intencionada, variada y adaptada al perfil cognitivo del niño. Comience con una evaluación gratuita de 20 minutos para saber qué dominio desarrollar antes de reservar cualquier cosa.',
+    tldr: 'Los veranos sin estructura amplían la brecha de rendimiento — pero el verano estructurado equivocado mata la motivación intrínseca. La respuesta es intencionada, variada y adaptada al perfil cognitivo del niño. Comience con una evaluación gratuita de menos de una hora para saber qué dominio desarrollar antes de reservar cualquier cosa.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
     readTime: '10 min de lectura',
@@ -1008,7 +1008,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       },
       {
         q: '¿Cómo sé qué actividad de verano se adapta a las fortalezas de mi hijo?',
-        a: 'Realice la evaluación cognitiva gratuita de 20 minutos antes de reservar nada. Produce puntuaciones percentiles verbales, numéricas y espaciales comparadas internacionalmente. Un niño con perfil verbal fuerte prospera en debate, escritura y Modelo ONU. Un perfil numérico-espacial apunta hacia programación, proyectos de ingeniería y matemáticas competitivas.',
+        a: 'Realice la evaluación cognitiva gratuita de menos de una hora antes de reservar nada. Produce puntuaciones percentiles verbales, numéricas y espaciales comparadas internacionalmente. Un niño con perfil verbal fuerte prospera en debate, escritura y Modelo ONU. Un perfil numérico-espacial apunta hacia programación, proyectos de ingeniería y matemáticas competitivas.',
       },
       {
         q: '¿Las actividades de verano mejoran el rendimiento escolar al año siguiente?',

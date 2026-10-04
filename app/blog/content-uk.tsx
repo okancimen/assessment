@@ -2898,7 +2898,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           Eduentry is an adaptive assessment platform built specifically to give parents the individual-level information that PISA cannot. It uses Item Response Theory (IRT) — the same psychometric methodology underlying PISA and the major international assessments — to place every child on the same international scale as the tests that matter. The assessment adapts in real time to each child&apos;s responses, asking harder or easier questions based on performance, so it calibrates accurately across the full ability range from ages 6 to 17. A child at the 20th percentile gets an accurate score just as a child at the 95th percentile does.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          The assessment covers four domains: mathematics, English literacy, verbal reasoning, and non-verbal reasoning. It takes approximately 20 minutes to complete. At the end, parents receive a standardised score and a global percentile rank — not a school grade or a teacher&apos;s impression, but a precise position in the international distribution. The first assessment is completely free, with no registration required.
+          The assessment covers four domains: mathematics, English literacy, verbal reasoning, and non-verbal reasoning. It is completed within an hour. At the end, parents receive a standardised score and a global percentile rank — not a school grade or a teacher&apos;s impression, but a precise position in the international distribution. The first assessment is completely free, with no registration required.
         </p>
         <ul className="space-y-4 mb-6">
           <Check>
@@ -2920,7 +2920,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <strong>Adaptive technology</strong> — calibrates to your child&apos;s level in real time, providing an accurate score across the full ability range
           </Check>
           <Check>
-            <strong>Free, no registration required</strong> — the full benchmark assessment costs nothing and takes approximately 20 minutes
+            <strong>Free, no registration required</strong> — the full benchmark assessment costs nothing and takes under an hour
           </Check>
         </ul>
         <div className="mt-6 mb-2">
@@ -2942,7 +2942,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           But the same data that identifies the crisis also identifies what works. The countries doing best in PISA 2025 share recognisable traits: strong, trusted relationships between teachers and students; high academic expectations combined with genuine support; a culture in which reading — deep, slow, critical reading — is valued and practised at home and at school; and an approach to technology that builds skills rather than bypassing them. These are not mysterious advantages available only to Singapore or Estonia. They are choices that schools and families can make, starting today.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          As a parent, the most powerful action you can take right now is to move from national statistics to your own child&apos;s individual position. PISA tells the global story. What you need to know is your chapter. Eduentry&apos;s adaptive assessment takes 20 minutes, is completely free, and places your child on the same international scale that PISA uses. Once you know where your child stands, you can act with precision rather than anxiety — and that precision is the most valuable thing any parent can have.
+          As a parent, the most powerful action you can take right now is to move from national statistics to your own child&apos;s individual position. PISA tells the global story. What you need to know is your chapter. Eduentry&apos;s adaptive assessment takes under an hour, is completely free, and places your child on the same international scale that PISA uses. Once you know where your child stands, you can act with precision rather than anxiety — and that precision is the most valuable thing any parent can have.
         </p>
       </section>
 
@@ -3094,7 +3094,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           A standardised assessment in Year 2 or early Year 3 produces a reasoning profile — not a prediction, but a current picture of abstract reasoning, verbal comprehension, and mathematical thinking. That picture, revisited every few months during the preparation period, tells you whether the preparation is working and where to redirect effort.
         </p>
         <Callout color="emerald">
-          The OC test assesses the same reasoning skills as international benchmarks like PISA and CAT4. Eduentry&apos;s adaptive assessment is designed around the same framework — giving you a PISA-aligned percentile for your child in 20 minutes, free. You will know which of the three OC components needs the most attention before you spend a day on preparation.
+          The OC test assesses the same reasoning skills as international benchmarks like PISA and CAT4. Eduentry&apos;s adaptive assessment is designed around the same framework — giving you a PISA-aligned percentile for your child within an hour, free. You will know which of the three OC components needs the most attention before you spend a day on preparation.
         </Callout>
       </section>
 
@@ -3267,7 +3267,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout color="emerald">
-          Eduentry&apos;s adaptive 11+ assessment includes non-verbal reasoning with automatic difficulty adjustment. It reports a standardised age score (SAS) on the same scale as GL Assessment — so you know exactly where your child stands before the real test. The full benchmark assessment is free and takes approximately 20 minutes.
+          Eduentry&apos;s adaptive 11+ assessment includes non-verbal reasoning with automatic difficulty adjustment. It reports a standardised age score (SAS) on the same scale as GL Assessment — so you know exactly where your child stands before the real test. The full benchmark assessment is free and takes under an hour.
         </Callout>
       </section>
 
@@ -4171,7 +4171,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           This is particularly important because the professions on this list are, for the most part, highly competitive. The training pathways for medicine, surgery, architecture, and engineering require significant academic investment. Getting into the right A-level combinations, and then into the right university courses, requires a clear-eyed understanding of where a child&apos;s genuine strengths lie — ideally well before they are choosing GCSEs. A child who discovers at seventeen that their verbal reasoning is significantly stronger than their numerical aptitude has much less time to adjust their trajectory than a child who discovers this at twelve.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          The most honest and actionable way to understand a child&apos;s academic profile is through a standardised assessment that goes beyond school grades — one that measures the underlying cognitive abilities that predict long-term academic performance and career success, benchmarked against peers nationally and internationally. This is precisely what Eduentry&apos;s free adaptive assessment does. It takes around 20 minutes, and it produces a detailed profile of verbal reasoning, numeracy, and problem-solving strengths — the exact abilities that map most directly onto the automation-resistant careers in this article.
+          The most honest and actionable way to understand a child&apos;s academic profile is through a standardised assessment that goes beyond school grades — one that measures the underlying cognitive abilities that predict long-term academic performance and career success, benchmarked against peers nationally and internationally. This is precisely what Eduentry&apos;s free adaptive assessment does. It takes under an hour, and it produces a detailed profile of verbal reasoning, numeracy, and problem-solving strengths — the exact abilities that map most directly onto the automation-resistant careers in this article.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           The world your child will enter as an adult is already being shaped by AI. The jobs that will be available, well-paid, and meaningful in 2040 are already visible in the data — and they are predominantly the jobs that require the distinctly human capabilities that no algorithm can replicate. Helping your child develop those capabilities is not a matter of guesswork. It starts with understanding clearly where they stand today.
@@ -4486,7 +4486,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         Most parents searching for a free academic test start with school grades — but grades only show past performance within one school, one teacher, and one curriculum. A child scoring in the top 10% of their class may be operating well below their cognitive ceiling. Another child struggling with written work may have outstanding spatial reasoning that no teacher has yet surfaced. School grades cannot tell you either of these things.
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Our free adaptive academic test measures verbal reasoning, numerical reasoning, and visual-spatial thinking independently — then benchmarks each score against international age norms. In approximately 20 minutes, it produces a personalised cognitive profile that answers the question every parent actually needs answered: where is my child genuinely strong, and where do they need support?
+        Our free adaptive academic test measures verbal reasoning, numerical reasoning, and visual-spatial thinking independently — then benchmarks each score against international age norms. Within an hour, it produces a personalised cognitive profile that answers the question every parent actually needs answered: where is my child genuinely strong, and where do they need support?
       </p>
 
       <section>
@@ -4607,7 +4607,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         </ul>
 
         <Callout>
-          <strong>Start the free test now</strong> — full four-domain report in 20 minutes, no registration required.
+          <strong>Start the free test now</strong> — full four-domain report within an hour, no registration required.
         </Callout>
       </section>
 
@@ -4752,7 +4752,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Do If Your Child Is Underperforming</h2>
         <ul className="space-y-5 mb-6">
           <Check>
-            <strong>Get a cognitive baseline first:</strong> Before booking tutors, before changing schools, before any intervention — understand which domain has the gap. Tutoring numerical reasoning when the real issue is working memory is expensive and ineffective. A 20-minute adaptive assessment produces the domain profile you need to act from evidence rather than assumption.
+            <strong>Get a cognitive baseline first:</strong> Before booking tutors, before changing schools, before any intervention — understand which domain has the gap. Tutoring numerical reasoning when the real issue is working memory is expensive and ineffective. An adaptive assessment of under an hour produces the domain profile you need to act from evidence rather than assumption.
           </Check>
           <Check>
             <strong>Share the data with the teacher:</strong> &ldquo;93rd percentile in spatial reasoning&rdquo; is a completely different conversation than &ldquo;seems bright but distracted.&rdquo; A cognitive report gives teachers actionable information — it changes how they scaffold tasks, how they seat the child, what adjustments they consider. Without it, teachers work from behaviour; with it, they work from ability.
@@ -4768,7 +4768,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout>
-          <strong>Start with a free 20-minute adaptive assessment</strong> — it produces a four-domain cognitive profile benchmarked against international norms. No preparation needed. The report shows verbal reasoning, numerical reasoning, visual-spatial reasoning, and processing speed independently — giving you a complete picture of where your child stands, not just what they have been taught.
+          <strong>Start with a free adaptive assessment that takes under an hour</strong> — it produces a four-domain cognitive profile benchmarked against international norms. No preparation needed. The report shows verbal reasoning, numerical reasoning, visual-spatial reasoning, and processing speed independently — giving you a complete picture of where your child stands, not just what they have been taught.
         </Callout>
       </section>
 
@@ -4935,7 +4935,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <strong>Internship or work experience (age 14+):</strong> OECD research across 47 longitudinal studies shows students with structured work experience by 16 earn 5–10% more as adults and have measurably better employment outcomes. More importantly for summer: it develops executive function, ambiguity tolerance, and professional communication — skills school cannot teach. <Link href="/blog/how-to-find-internship-as-student" className="text-indigo-600 hover:underline">Eduentry&apos;s internship readiness assessment</Link> identifies which sector fits your child&apos;s cognitive profile before they commit to a placement.
           </Bullet>
           <Bullet>
-            <strong>Cognitive baseline assessment:</strong> Before investing in summer tutoring, get a domain-level profile. 20 minutes, free, produces verbal/numerical/spatial percentile scores benchmarked internationally. Identifies exactly which domain has a gap versus which is already strong — so summer support is targeted, not scattered. This is the single highest-leverage action a parent can take before summer planning.
+            <strong>Cognitive baseline assessment:</strong> Before investing in summer tutoring, get a domain-level profile. Under an hour, free, produces verbal/numerical/spatial percentile scores benchmarked internationally. Identifies exactly which domain has a gap versus which is already strong — so summer support is targeted, not scattered. This is the single highest-leverage action a parent can take before summer planning.
           </Bullet>
           <Bullet>
             <strong>Maths/logic enrichment (for numerical domain):</strong> AMC 8/10 preparation, Singapore maths workbooks, or competitive maths clubs. Distinguish from repetitive curriculum work — the goal is pattern-based reasoning development, not memorisation. A child who can see the structure underneath a problem is building something schools rarely test directly.
@@ -4978,7 +4978,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout>
-          Start with the free 20-minute assessment — know which domain to build this summer before you book anything.
+          Start with the free assessment, done within an hour, — know which domain to build this summer before you book anything.
         </Callout>
       </section>
 
@@ -5164,7 +5164,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           A cognitive assessment measures these abilities directly — independently of school curriculum, teaching quality, or prior attainment. This matters because students who have underperformed relative to their cognitive potential often have untapped capacity that targeted preparation can unlock. Conversely, a student who is performing at or above their cognitive baseline may benefit more from knowledge consolidation than from attempting to accelerate further.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Knowing your verbal, numerical, and spatial percentile scores relative to national benchmarks gives a data-driven starting point for GCSE preparation — one that is independent of teacher assessments and school marks, which can vary widely in reliability. This kind of cognitive baseline assessment takes around 20 minutes and produces a profile that is directly actionable for GCSE planning.
+          Knowing your verbal, numerical, and spatial percentile scores relative to national benchmarks gives a data-driven starting point for GCSE preparation — one that is independent of teacher assessments and school marks, which can vary widely in reliability. This kind of cognitive baseline assessment takes under an hour and produces a profile that is directly actionable for GCSE planning.
         </p>
       </section>
 

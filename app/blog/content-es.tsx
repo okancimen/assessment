@@ -1380,7 +1380,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Evalúa a tu hijo con Eduentry</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Eduentry es una plataforma de evaluación adaptativa que utiliza la Teoría de Respuesta al Ítem (TRI) — la misma metodología psicométrica que subyace a PISA — para situar a cada niño de 6 a 17 años en la misma escala internacional. La evaluación se adapta en tiempo real, tarda aproximadamente 20 minutos, y proporciona una puntuación estandarizada y un rango percentil global. Es completamente gratuita, sin registro requerido.
+          Eduentry es una plataforma de evaluación adaptativa que utiliza la Teoría de Respuesta al Ítem (TRI) — la misma metodología psicométrica que subyace a PISA — para situar a cada niño de 6 a 17 años en la misma escala internacional. La evaluación se adapta en tiempo real, tarda menos de una hora, y proporciona una puntuación estandarizada y un rango percentil global. Es completamente gratuita, sin registro requerido.
         </p>
         <ul className="space-y-4 mb-6">
           <Check>
@@ -1399,7 +1399,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
             <strong>Rango percentil global</strong> — en la misma escala internacional que PISA
           </Check>
           <Check>
-            <strong>Gratuito, sin registro requerido</strong> — tarda aproximadamente 20 minutos
+            <strong>Gratuito, sin registro requerido</strong> — tarda menos de una hora
           </Check>
         </ul>
         <div className="mt-6 mb-2">
@@ -1415,7 +1415,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Conclusión</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Los resultados de PISA 2025 son aleccionadores, pero no son un motivo de desesperación. Los mismos datos que identifican la crisis también identifican lo que funciona: altas expectativas, relaciones sólidas entre profesores y alumnos, una cultura de lectura profunda, y un enfoque de la tecnología que construye habilidades en lugar de reemplazarlas. Como padre, la acción más poderosa que puedes tomar ahora mismo es pasar de las estadísticas nacionales a la posición individual de tu propio hijo. Eduentry hace exactamente eso — de forma gratuita, en 20 minutos, con un resultado en la misma escala internacional que PISA.
+          Los resultados de PISA 2025 son aleccionadores, pero no son un motivo de desesperación. Los mismos datos que identifican la crisis también identifican lo que funciona: altas expectativas, relaciones sólidas entre profesores y alumnos, una cultura de lectura profunda, y un enfoque de la tecnología que construye habilidades en lugar de reemplazarlas. Como padre, la acción más poderosa que puedes tomar ahora mismo es pasar de las estadísticas nacionales a la posición individual de tu propio hijo. Eduentry hace exactamente eso — de forma gratuita, en menos de una hora, con un resultado en la misma escala internacional que PISA.
         </p>
       </section>
     </>
@@ -3037,7 +3037,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         La mayoría de los padres que buscan un test académico gratuito parten de las notas escolares — pero las notas solo muestran el rendimiento pasado en una escuela, un profesor y un currículo específicos. Un niño que saca las mejores notas de su clase puede estar muy por debajo de su techo cognitivo. Otro que tiene dificultades con los textos escritos puede tener un razonamiento espacial sobresaliente que ningún profesor ha descubierto aún.
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Nuestro test académico adaptativo gratuito mide el razonamiento verbal, numérico y visual-espacial de forma independiente — luego compara cada puntuación con normas internacionales de edad. En aproximadamente 20 minutos produce un perfil cognitivo personalizado que responde la pregunta que todo padre necesita responder: ¿dónde es genuinamente fuerte mi hijo y dónde necesita apoyo?
+        Nuestro test académico adaptativo gratuito mide el razonamiento verbal, numérico y visual-espacial de forma independiente — luego compara cada puntuación con normas internacionales de edad. En menos de una hora produce un perfil cognitivo personalizado que responde la pregunta que todo padre necesita responder: ¿dónde es genuinamente fuerte mi hijo y dónde necesita apoyo?
       </p>
 
       <section>
@@ -3090,7 +3090,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
           <Bullet><strong>Velocidad de Procesamiento y Atención —</strong> Qué tan rápido y con qué precisión se procesa la información. Interpretado junto con el razonamiento numérico para identificar patrones de atención.</Bullet>
         </ul>
         <Callout>
-          <strong>Empieza el test gratuito ahora</strong> — informe completo de cuatro dominios en 20 minutos, sin registro.
+          <strong>Empieza el test gratuito ahora</strong> — informe completo de cuatro dominios en menos de una hora, sin registro.
         </Callout>
       </section>
 
@@ -3302,7 +3302,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué Hacer Si Tu Hijo Tiene Bajo Rendimiento</h2>
         <ul className="space-y-5 mb-6">
           <Check>
-            <strong>Obtén primero una línea base cognitiva:</strong> Antes de reservar tutores, antes de cambiar de escuela, antes de cualquier intervención — entiende qué dominio tiene la brecha. Reforzar el razonamiento numérico cuando el problema real es la memoria de trabajo es caro e ineficaz. Una evaluación adaptativa de 20 minutos produce el perfil de dominio necesario para actuar desde la evidencia en lugar de la suposición.
+            <strong>Obtén primero una línea base cognitiva:</strong> Antes de reservar tutores, antes de cambiar de escuela, antes de cualquier intervención — entiende qué dominio tiene la brecha. Reforzar el razonamiento numérico cuando el problema real es la memoria de trabajo es caro e ineficaz. Una evaluación adaptativa de menos de una hora produce el perfil de dominio necesario para actuar desde la evidencia en lugar de la suposición.
           </Check>
           <Check>
             <strong>Comparte los datos con el profesor:</strong> &ldquo;Percentil 93 en razonamiento espacial&rdquo; es una conversación completamente diferente a &ldquo;parece inteligente pero distraído.&rdquo; Un informe cognitivo da a los profesores información accionable — cambia cómo estructuran las tareas, cómo ubican al niño, qué ajustes consideran.
@@ -3318,7 +3318,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout>
-          <strong>Empieza con una evaluación adaptativa gratuita de 20 minutos</strong> — produce un perfil cognitivo de cuatro dominios calibrado según normas internacionales. No se necesita preparación previa. El informe muestra razonamiento verbal, razonamiento numérico, razonamiento visual-espacial y velocidad de procesamiento de forma independiente — dándote una imagen completa de dónde está tu hijo, no solo de lo que ha sido enseñado.
+          <strong>Empieza con una evaluación adaptativa gratuita de menos de una hora</strong> — produce un perfil cognitivo de cuatro dominios calibrado según normas internacionales. No se necesita preparación previa. El informe muestra razonamiento verbal, razonamiento numérico, razonamiento visual-espacial y velocidad de procesamiento de forma independiente — dándote una imagen completa de dónde está tu hijo, no solo de lo que ha sido enseñado.
         </Callout>
       </section>
 
@@ -3374,7 +3374,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
             <strong>Prácticas o experiencia laboral (14+ años):</strong> La investigación de la OCDE en 47 estudios longitudinales muestra que los estudiantes con experiencia laboral estructurada antes de los 16 años ganan entre un 5 y un 10% más de adultos y tienen resultados de empleo mediblemente mejores. Más importante para el verano: desarrolla función ejecutiva, tolerancia a la ambigüedad y comunicación profesional — habilidades que la escuela no puede enseñar. <Link href="/es/blog/como-encontrar-practicas-siendo-estudiante" className="text-indigo-600 hover:underline">La evaluación de preparación para prácticas de Eduentry</Link> identifica qué sector encaja con el perfil cognitivo de tu hijo antes de comprometerse.
           </Bullet>
           <Bullet>
-            <strong>Evaluación cognitiva de referencia:</strong> Antes de invertir en tutorías de verano, obtén un perfil a nivel de dominio. 20 minutos, gratuito, produce puntuaciones percentiles verbales/numéricas/espaciales comparadas internacionalmente. Identifica exactamente qué dominio tiene una brecha versus cuál ya es fuerte — para que el apoyo de verano sea dirigido, no disperso.
+            <strong>Evaluación cognitiva de referencia:</strong> Antes de invertir en tutorías de verano, obtén un perfil a nivel de dominio. Menos de una hora, gratuito, produce puntuaciones percentiles verbales/numéricas/espaciales comparadas internacionalmente. Identifica exactamente qué dominio tiene una brecha versus cuál ya es fuerte — para que el apoyo de verano sea dirigido, no disperso.
           </Bullet>
           <Bullet>
             <strong>Enriquecimiento matemático/lógico (para el dominio numérico):</strong> Preparación AMC 8/10, libros de trabajo de matemáticas de Singapur, o clubes de matemáticas competitivas. Distinguir del trabajo curricular repetitivo — el objetivo es el desarrollo del razonamiento basado en patrones, no la memorización.
@@ -3417,7 +3417,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout>
-          Comienza con la evaluación gratuita de 20 minutos — sabe qué dominio construir este verano antes de reservar cualquier cosa.
+          Comienza con la evaluación gratuita de menos de una hora — sabe qué dominio construir este verano antes de reservar cualquier cosa.
         </Callout>
       </section>
 

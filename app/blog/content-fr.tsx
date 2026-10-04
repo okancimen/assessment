@@ -976,7 +976,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Évaluez votre enfant avec Eduentry : gratuit et scientifiquement fondé</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Eduentry est une plateforme d&apos;évaluation adaptative construite spécifiquement pour donner aux parents les informations au niveau individuel que PISA ne peut pas fournir. Elle utilise la Théorie de la Réponse à l&apos;Item (TRI) — la même méthodologie psychométrique qui sous-tend PISA — pour placer chaque enfant de 6 à 17 ans sur la même échelle internationale. L&apos;évaluation s&apos;adapte en temps réel aux réponses de chaque enfant, prenant environ 20 minutes, et fournit un score standardisé et un rang percentile mondial. La première évaluation est entièrement gratuite, sans inscription requise.
+          Eduentry est une plateforme d&apos;évaluation adaptative construite spécifiquement pour donner aux parents les informations au niveau individuel que PISA ne peut pas fournir. Elle utilise la Théorie de la Réponse à l&apos;Item (TRI) — la même méthodologie psychométrique qui sous-tend PISA — pour placer chaque enfant de 6 à 17 ans sur la même échelle internationale. L&apos;évaluation s&apos;adapte en temps réel aux réponses de chaque enfant, prenant moins d’une heure, et fournit un score standardisé et un rang percentile mondial. La première évaluation est entièrement gratuite, sans inscription requise.
         </p>
         <ul className="space-y-4 mb-6">
           <Check>
@@ -995,7 +995,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
             <strong>Rang percentile mondial</strong> — place votre enfant sur la même échelle internationale que PISA
           </Check>
           <Check>
-            <strong>Gratuit, sans inscription requise</strong> — l&apos;évaluation complète prend environ 20 minutes
+            <strong>Gratuit, sans inscription requise</strong> — l&apos;évaluation complète prend moins d’une heure
           </Check>
         </ul>
         <div className="mt-6 mb-2">
@@ -1014,7 +1014,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
           Les résultats de PISA 2025 sont sobres. Le déclin simultané dans les trois domaines fondamentaux, le quasi-doublement de la &ldquo;lecture hâtive&rdquo;, l&apos;écart de performance lié à l&apos;IA, la vulnérabilité des adolescents à la désinformation — pris ensemble, ces résultats décrivent une génération de jeunes dont les compétences fondamentales sont sous une pression réelle. Mais les mêmes données qui identifient la crise identifient aussi ce qui fonctionne : des attentes élevées, de solides relations enseignants-élèves, une culture de lecture profonde et critique, et une approche de la technologie qui construit des compétences plutôt que de les remplacer.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          En tant que parent, l&apos;action la plus puissante que vous pouvez prendre maintenant est de passer des statistiques nationales à la position individuelle de votre propre enfant. PISA raconte l&apos;histoire mondiale. Ce que vous devez savoir, c&apos;est votre chapitre. L&apos;évaluation adaptative d&apos;Eduentry prend 20 minutes, est entièrement gratuite et place votre enfant sur la même échelle internationale que PISA. Une fois que vous savez où se situe votre enfant, vous pouvez agir avec précision plutôt qu&apos;avec anxiété.
+          En tant que parent, l&apos;action la plus puissante que vous pouvez prendre maintenant est de passer des statistiques nationales à la position individuelle de votre propre enfant. PISA raconte l&apos;histoire mondiale. Ce que vous devez savoir, c&apos;est votre chapitre. L&apos;évaluation adaptative d&apos;Eduentry prend moins d’une heure, est entièrement gratuite et place votre enfant sur la même échelle internationale que PISA. Une fois que vous savez où se situe votre enfant, vous pouvez agir avec précision plutôt qu&apos;avec anxiété.
         </p>
       </section>
     </>
@@ -2540,7 +2540,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
         La plupart des parents qui cherchent un test académique gratuit partent des notes scolaires — mais les notes ne montrent que les performances passées dans une école, un enseignant et un programme spécifiques. Un enfant qui obtient les meilleures notes de sa classe peut opérer bien en dessous de son plafond cognitif. Un autre qui a du mal à l&apos;écrit peut avoir un raisonnement spatial remarquable qu&apos;aucun enseignant n&apos;a encore mis en évidence.
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Notre test académique adaptatif gratuit mesure le raisonnement verbal, numérique et visuo-spatial de façon indépendante — puis compare chaque score aux normes internationales d&apos;âge. En environ 20 minutes, il produit un profil cognitif personnalisé qui répond à la vraie question de chaque parent : où mon enfant est-il véritablement fort, et où a-t-il besoin de soutien ?
+        Notre test académique adaptatif gratuit mesure le raisonnement verbal, numérique et visuo-spatial de façon indépendante — puis compare chaque score aux normes internationales d&apos;âge. En moins d’une heure, il produit un profil cognitif personnalisé qui répond à la vraie question de chaque parent : où mon enfant est-il véritablement fort, et où a-t-il besoin de soutien ?
       </p>
 
       <section>
@@ -2587,7 +2587,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
           <Bullet><strong>Vitesse de Traitement et Attention —</strong> La rapidité et la précision avec lesquelles l&apos;information est traitée. Interprété avec le raisonnement numérique pour identifier des patterns d&apos;attention.</Bullet>
         </ul>
         <Callout>
-          <strong>Commencez le test gratuit maintenant</strong> — rapport complet sur quatre domaines en 20 minutes, sans inscription.
+          <strong>Commencez le test gratuit maintenant</strong> — rapport complet sur quatre domaines en moins d’une heure, sans inscription.
         </Callout>
       </section>
 
@@ -2799,7 +2799,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Que Faire Si Votre Enfant Sous-Performe</h2>
         <ul className="space-y-5 mb-6">
           <Check>
-            <strong>Établissez d&apos;abord une base cognitive :</strong> Avant de réserver des tuteurs, avant de changer d&apos;école, avant toute intervention — comprenez quel domaine a l&apos;écart. Renforcer le raisonnement numérique quand le vrai problème est la mémoire de travail est coûteux et inefficace. Une évaluation adaptative de 20 minutes produit le profil de domaine nécessaire pour agir à partir de preuves plutôt que d&apos;hypothèses.
+            <strong>Établissez d&apos;abord une base cognitive :</strong> Avant de réserver des tuteurs, avant de changer d&apos;école, avant toute intervention — comprenez quel domaine a l&apos;écart. Renforcer le raisonnement numérique quand le vrai problème est la mémoire de travail est coûteux et inefficace. Une évaluation adaptative de moins d’une heure produit le profil de domaine nécessaire pour agir à partir de preuves plutôt que d&apos;hypothèses.
           </Check>
           <Check>
             <strong>Partagez les données avec l&apos;enseignant :</strong> &ldquo;93e percentile en raisonnement spatial&rdquo; est une conversation entièrement différente de &ldquo;semble intelligent mais distrait.&rdquo; Un rapport cognitif donne aux enseignants des informations exploitables — cela change la façon dont ils structurent les tâches, placent l&apos;enfant, et les ajustements qu&apos;ils envisagent.
@@ -2815,7 +2815,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout>
-          <strong>Commencez par une évaluation adaptative gratuite de 20 minutes</strong> — elle produit un profil cognitif à quatre domaines calibré selon des normes internationales. Aucune préparation nécessaire. Le rapport montre le raisonnement verbal, numérique, visuo-spatial et la vitesse de traitement indépendamment — vous donnant une image complète de où se trouve votre enfant, pas seulement de ce qu&apos;il a appris.
+          <strong>Commencez par une évaluation adaptative gratuite de moins d’une heure</strong> — elle produit un profil cognitif à quatre domaines calibré selon des normes internationales. Aucune préparation nécessaire. Le rapport montre le raisonnement verbal, numérique, visuo-spatial et la vitesse de traitement indépendamment — vous donnant une image complète de où se trouve votre enfant, pas seulement de ce qu&apos;il a appris.
         </Callout>
       </section>
 
@@ -2871,7 +2871,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
             <strong>Stage ou expérience professionnelle (14 ans et plus) :</strong> La recherche de l&apos;OCDE sur 47 études longitudinales montre que les élèves avec une expérience professionnelle structurée avant 16 ans gagnent 5 à 10% de plus à l&apos;âge adulte et ont des résultats d&apos;emploi mesurément meilleurs. Plus important pour l&apos;été : cela développe la fonction exécutive, la tolérance à l&apos;ambiguïté et la communication professionnelle — des compétences que l&apos;école ne peut pas enseigner. <Link href="/fr/blog/comment-trouver-un-stage-etudiant" className="text-indigo-600 hover:underline">L&apos;évaluation de préparation au stage d&apos;Eduentry</Link> identifie quel secteur correspond au profil cognitif de votre enfant avant qu&apos;il ne s&apos;engage.
           </Bullet>
           <Bullet>
-            <strong>Évaluation cognitive de référence :</strong> Avant d&apos;investir dans des cours particuliers d&apos;été, obtenez un profil au niveau du domaine. 20 minutes, gratuit, produit des scores percentiles verbaux/numériques/spatiaux comparés à l&apos;international. Identifie exactement quel domaine a une lacune versus lequel est déjà fort — pour que le soutien estival soit ciblé, pas dispersé.
+            <strong>Évaluation cognitive de référence :</strong> Avant d&apos;investir dans des cours particuliers d&apos;été, obtenez un profil au niveau du domaine. Moins d’une heure, gratuit, produit des scores percentiles verbaux/numériques/spatiaux comparés à l&apos;international. Identifie exactement quel domaine a une lacune versus lequel est déjà fort — pour que le soutien estival soit ciblé, pas dispersé.
           </Bullet>
           <Bullet>
             <strong>Enrichissement mathématiques/logique (pour le domaine numérique) :</strong> Préparation AMC 8/10, cahiers de maths de Singapour, ou clubs de maths compétitives. À distinguer du travail curriculaire répétitif — l&apos;objectif est le développement du raisonnement basé sur les schémas, pas la mémorisation.
@@ -2914,7 +2914,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout>
-          Commencez par l&apos;évaluation gratuite de 20 minutes — sachez quel domaine développer cet été avant de réserver quoi que ce soit.
+          Commencez par l&apos;évaluation gratuite de moins d’une heure — sachez quel domaine développer cet été avant de réserver quoi que ce soit.
         </Callout>
       </section>
 

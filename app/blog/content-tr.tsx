@@ -1977,7 +1977,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
             <strong>Küresel yüzdelik dilim sıralaması</strong> — çocuğunuzu PISA ile aynı uluslararası ölçeğe yerleştirir
           </Check>
           <Check>
-            <strong>Ücretsiz, kayıt gerekmez</strong> — tam kıyaslama değerlendirmesi yaklaşık 20 dakika sürer
+            <strong>Ücretsiz, kayıt gerekmez</strong> — tam kıyaslama değerlendirmesi bir saatten kısa sürer
           </Check>
         </ul>
         <div className="mt-6 mb-2">
@@ -1996,7 +1996,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           PISA 2025 sonuçları düşündürücüdür. Üç temel alanda aynı anda düşüş, &ldquo;aceleci okuma&rdquo;nın neredeyse iki katına çıkması, yapay zeka performans açığı, ergenlerin dezenformasyon karşısındaki savunmasızlığı — bir arada ele alındığında, bu bulgular temel becerileri gerçek baskı altında olan bir genç kuşağı tarif ediyor. Ancak krizi tespit eden aynı veriler neyin işe yaradığını da ortaya koyuyor: güçlü öğretmen-öğrenci ilişkileri, yüksek akademik beklentiler, derin ve eleştirel okumanın değer gördüğü bir kültür ve becerileri yer değiştirmek yerine inşa eden bir teknoloji yaklaşımı.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Bir ebeveyn olarak şu anda yapabileceğiniz en güçlü eylem, ulusal istatistiklerden kendi çocuğunuzun bireysel konumuna geçmektir. PISA küresel hikâyeyi anlatır. Bilmeniz gereken kendi bölümünüzdür. Eduentry&apos;nin uyarlanabilir değerlendirmesi 20 dakika sürer, tamamen ücretsizdir ve çocuğunuzu PISA&apos;nın kullandığı uluslararası ölçeğe yerleştirir. Çocuğunuzun nerede durduğunu öğrendikten sonra, kaygıyla değil, kesinlikle hareket edebilirsiniz.
+          Bir ebeveyn olarak şu anda yapabileceğiniz en güçlü eylem, ulusal istatistiklerden kendi çocuğunuzun bireysel konumuna geçmektir. PISA küresel hikâyeyi anlatır. Bilmeniz gereken kendi bölümünüzdür. Eduentry&apos;nin uyarlanabilir değerlendirmesi bir saatten kısa sürer, tamamen ücretsizdir ve çocuğunuzu PISA&apos;nın kullandığı uluslararası ölçeğe yerleştirir. Çocuğunuzun nerede durduğunu öğrendikten sonra, kaygıyla değil, kesinlikle hareket edebilirsiniz.
         </p>
       </section>
 
@@ -3579,7 +3579,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Bence her ebeveynin bu soruyu en az bir kez sormaya hakkı var. Not karnesi okulun içine bakıyor; bu değerlendirme dışarıya — dünyaya — bakıyor. Ve iki tablo her zaman aynı hikayeyi anlatmıyor.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Değerlendirme yaklaşık 20 dakika sürüyor, tamamen ücretsiz ve herhangi bir kayıt olmadan başlatılabiliyor. Sonuçlar anında görüntüleniyor; dört alan için ayrı alt puanlar ve küresel yüzdelik dilim karşılaştırması içeriyor.
+          Değerlendirme bir saatten kısa sürüyor, tamamen ücretsiz ve herhangi bir kayıt olmadan başlatılabiliyor. Sonuçlar anında görüntüleniyor; dört alan için ayrı alt puanlar ve küresel yüzdelik dilim karşılaştırması içeriyor.
         </p>
         <div className="mt-6 mb-2">
           <a
@@ -4415,7 +4415,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         Ücretsiz akademik test arayışındaki pek çok ebeveyn, çocuğunun karne notlarından yola çıkıyor — ama notlar size yalnızca geçmişi gösterir, geleceği değil. Matematik 70, Türkçe 85: bu rakamlar öğretmenin beklentisine, sınıfın genel düzeyine ve o gün çocuğunuzun nasıl hissettiğine göre değişir. Çocuğunuzun gerçekten nerede durduğunu anlamak için standart ve bilimsel bir ölçüte ihtiyacınız var.
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Ücretsiz akademik testimiz sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünme alanlarını bağımsız olarak ölçer; sonuçları uluslararası yaş normlarıyla kıyaslar ve yaklaşık 20 dakika içinde kişisel bir gelişim raporu sunar. Bu rapor size çocuğunuzun güçlü yönlerini, gelişim alanlarını ve dünya genelindeki akranlarıyla nasıl kıyaslandığını net biçimde gösterir.
+        Ücretsiz akademik testimiz sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünme alanlarını bağımsız olarak ölçer; sonuçları uluslararası yaş normlarıyla kıyaslar ve bir saat içinde kişisel bir gelişim raporu sunar. Bu rapor size çocuğunuzun güçlü yönlerini, gelişim alanlarını ve dünya genelindeki akranlarıyla nasıl kıyaslandığını net biçimde gösterir.
       </p>
 
       <section>
@@ -4541,7 +4541,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         </ul>
 
         <Callout>
-          <strong>Şimdi ücretsiz testi başlatın</strong> — 20 dakika içinde dört alanda tam rapor, kayıt gerekmez.
+          <strong>Şimdi ücretsiz testi başlatın</strong> — bir saat içinde dört alanda tam rapor, kayıt gerekmez.
         </Callout>
       </section>
 
@@ -4583,7 +4583,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <p className="text-gray-700 leading-relaxed">
-          Çocuğunuzun güçlü ve zayıf yönlerini bulmak için bir uzmana ya da pahalı bir teste ihtiyacınız yok. 20 dakika içinde, ücretsiz, bilimsel temelli ve uluslararası normlarla kıyaslanmış bir rapor sizi çok daha bilinçli kararlar almaya hazırlar. Güçlü alanı besleyin, gelişime açık alanı hedefli destekleyin ve her adımı veriye dayandırın.
+          Çocuğunuzun güçlü ve zayıf yönlerini bulmak için bir uzmana ya da pahalı bir teste ihtiyacınız yok. bir saat içinde, ücretsiz, bilimsel temelli ve uluslararası normlarla kıyaslanmış bir rapor sizi çok daha bilinçli kararlar almaya hazırlar. Güçlü alanı besleyin, gelişime açık alanı hedefli destekleyin ve her adımı veriye dayandırın.
         </p>
       </section>
 
@@ -4670,7 +4670,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuz Düşük Performans Gösteriyorsa Ne Yapmalısınız?</h2>
         <ul className="space-y-5 mb-6">
           <Check>
-            <strong>Önce bilişsel bir temel alın:</strong> Özel ders ayarlamadan önce, okul değiştirmeden önce, herhangi bir müdahaleden önce — hangi alanda boşluk olduğunu anlayın. Gerçek sorun çalışma belleğiyken sayısal muhakeme için özel ders almak pahalı ve etkisizdir. 20 dakikalık adaptif değerlendirme, varsayım yerine kanıta dayalı hareket etmeniz için ihtiyacınız olan alan profilini üretir.
+            <strong>Önce bilişsel bir temel alın:</strong> Özel ders ayarlamadan önce, okul değiştirmeden önce, herhangi bir müdahaleden önce — hangi alanda boşluk olduğunu anlayın. Gerçek sorun çalışma belleğiyken sayısal muhakeme için özel ders almak pahalı ve etkisizdir. Bir saatten kısa süren adaptif değerlendirme, varsayım yerine kanıta dayalı hareket etmeniz için ihtiyacınız olan alan profilini üretir.
           </Check>
           <Check>
             <strong>Verileri öğretmenle paylaşın:</strong> &ldquo;Uzamsal muhakemede 93. yüzdelik&rdquo; ifadesi, &ldquo;zeki görünüyor ama dikkatini toplamıyor&rdquo; ifadesinden tamamen farklı bir konuşmadır. Bilişsel rapor öğretmenlere eyleme geçirilebilir bilgi verir — görevleri nasıl iskele ettiklerini, çocuğu nasıl yerleştirdiklerini, hangi uyarlamaları düşündüklerini değiştirir.
@@ -4686,7 +4686,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout>
-          <strong>Ücretsiz 20 dakikalık adaptif değerlendirmeyle başlayın</strong> — uluslararası normlara göre kalibre edilmiş dört alanlı bilişsel profil üretir. Herhangi bir hazırlık gerekmez. Rapor, sözel muhakeme, sayısal muhakeme, görsel-uzamsal muhakeme ve işlem hızını bağımsız olarak gösterir — çocuğunuzun nerede durduğunun tam resmini, yalnızca öğretilenlerini değil.
+          <strong>Bir saatten kısa süren ücretsiz adaptif değerlendirmeyle başlayın</strong> — uluslararası normlara göre kalibre edilmiş dört alanlı bilişsel profil üretir. Herhangi bir hazırlık gerekmez. Rapor, sözel muhakeme, sayısal muhakeme, görsel-uzamsal muhakeme ve işlem hızını bağımsız olarak gösterir — çocuğunuzun nerede durduğunun tam resmini, yalnızca öğretilenlerini değil.
         </Callout>
       </section>
 
@@ -4853,7 +4853,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
             <strong>Staj veya iş deneyimi (14 yaş ve üstü):</strong> 47 boylamsal çalışmayı kapsayan OECD araştırması, 16 yaşına kadar yapılandırılmış iş deneyimi olan öğrencilerin yetişkinlikte yüzde 5–10 daha fazla kazandığını ve ölçülebilir biçimde daha iyi istihdam sonuçlarına sahip olduğunu göstermektedir. Yaz için daha da önemlisi: okul öğretemeyeceği yürütme işlevi, belirsizlik toleransı ve profesyonel iletişim becerilerini geliştirir. <Link href="/tr/blog/ogrenciyken-staj-bulmanin-yeni-nesil-yolu" className="text-indigo-600 hover:underline">Eduentry&apos;nin staj hazırlık değerlendirmesi</Link> bir staja bağlanmadan önce hangi sektörün çocuğunuzun bilişsel profiline uyduğunu belirler.
           </Bullet>
           <Bullet>
-            <strong>Bilişsel temel değerlendirmesi:</strong> Yaz dershanelerine yatırım yapmadan önce alan düzeyinde bir profil edinin. 20 dakika, ücretsiz, uluslararası kıyaslamalı sözel/sayısal/uzamsal yüzdelik puanlar üretir. Hangi alanda boşluk olduğunu ve hangisinin zaten güçlü olduğunu tam olarak belirler — böylece yaz desteği hedefli olur, dağınık değil.
+            <strong>Bilişsel temel değerlendirmesi:</strong> Yaz dershanelerine yatırım yapmadan önce alan düzeyinde bir profil edinin. Bir saatten kısa, ücretsiz, uluslararası kıyaslamalı sözel/sayısal/uzamsal yüzdelik puanlar üretir. Hangi alanda boşluk olduğunu ve hangisinin zaten güçlü olduğunu tam olarak belirler — böylece yaz desteği hedefli olur, dağınık değil.
           </Bullet>
           <Bullet>
             <strong>Matematik/mantık zenginleştirmesi (sayısal alan için):</strong> AMC 8/10 hazırlığı, Singapur matematik çalışma kitapları veya rekabetçi matematik kulüpleri. Tekrarlayan müfredat çalışmasından ayırt edin — amaç örüntü tabanlı akıl yürütme geliştirme, ezberleme değil.
@@ -4896,7 +4896,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout>
-          Ücretsiz 20 dakikalık değerlendirmeyle başlayın — herhangi bir şey rezerve etmeden önce bu yaz hangi alanı geliştireceğinizi öğrenin.
+          Bir saatten kısa süren ücretsiz değerlendirmeyle başlayın — herhangi bir şey rezerve etmeden önce bu yaz hangi alanı geliştireceğinizi öğrenin.
         </Callout>
       </section>
 
