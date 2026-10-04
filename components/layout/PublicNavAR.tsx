@@ -6,10 +6,10 @@ import { BLOG_POSTS_AR } from '@/app/blog/posts-ar'
 export default function PublicNavAR() {
   return (
     <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.82)] backdrop-blur-2xl border-b border-black/[0.08]">
-      <div className="max-w-[1024px] mx-auto px-6 h-11 flex items-center justify-between relative" dir="rtl">
+      <div className="max-w-[1200px] mx-auto px-6 h-11 flex items-center justify-between gap-3 lg:gap-6 relative" dir="rtl">
         <Logo href="/ar" size="sm" />
 
-        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-[14px] font-medium text-[#1d1d1f]">
+        <div className="hidden lg:flex flex-1 min-w-0 justify-center items-center gap-5 xl:gap-8 whitespace-nowrap text-[14px] font-medium text-[#1d1d1f]">
           <Link href="/ar/tadrib"          className="hover:text-[#4F46E5] transition-colors">التدريب</Link>
           <Link href="/ar/imkaniyat-tiflik" className="hover:text-[#4F46E5] transition-colors">إمكانيات طفلك</Link>
           <Link href="/ar/hawlana"          className="hover:text-[#4F46E5] transition-colors">من نحن</Link>
@@ -22,7 +22,7 @@ export default function PublicNavAR() {
           </Link>
         </div>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-4 sm:gap-5 shrink-0 whitespace-nowrap">
           <Link href="/ar/auth/login"    className="text-xs text-[#1d1d1f] hover:text-[#4F46E5] transition-colors hidden sm:block">تسجيل الدخول</Link>
           <Link href="/ar/auth/register" prefetch={false} className="text-xs font-medium text-[#4F46E5] hover:opacity-70 transition-opacity">ابدأ مجاناً</Link>
           <LanguagePickerMain />

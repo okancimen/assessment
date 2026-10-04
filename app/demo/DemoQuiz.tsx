@@ -101,7 +101,7 @@ export default function DemoQuiz() {
             <div key={qi} className="border border-gray-100 rounded-2xl p-6 sm:p-8">
               <div className="flex items-center gap-3 mb-5">
                 <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${c.badge}`}>{q.subject}</span>
-                <span className="text-xs text-gray-400">Question {qi + 1} of {QUESTIONS.length}</span>
+                <span className="text-xs text-gray-500">Question {qi + 1} of {QUESTIONS.length}</span>
               </div>
 
               <p className="text-gray-900 font-medium text-lg mb-5 leading-snug">{q.question}</p>
@@ -112,7 +112,7 @@ export default function DemoQuiz() {
                   if (revealed) {
                     if (oi === q.correctIndex) cls = `border-2 ${c.correct} font-semibold`
                     else if (oi === chosen) cls = `border-2 ${c.wrong}`
-                    else cls = 'border border-gray-100 text-gray-400 cursor-default'
+                    else cls = 'border border-gray-100 text-gray-500 cursor-default'
                   }
                   return (
                     <button
@@ -157,7 +157,7 @@ export default function DemoQuiz() {
           </p>
           {answered === QUESTIONS.length && (
             <>
-              <p className="text-indigo-200 mb-8 text-sm">
+              <p className="text-indigo-100 mb-8 text-sm">
                 The full assessment has 100 questions across all four subjects and produces a standardised score
                 benchmarked against international standards.
               </p>

@@ -5,8 +5,8 @@ import PublicFooter from '@/components/layout/PublicFooter'
 import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
-  title: 'Free 11+ Practice Tests 2026: Standardised Scores for Grammar School Prep',
-  description: 'Adaptive 11+ practice tests with instant standardised scores on the same scale as GL Assessment (mean 100, SD 15). Verbal reasoning, non-verbal reasoning, English and maths — free, no subscription required.',
+  title: 'Free 11+ Practice Tests with Instant SAS Scores',
+  description: 'Free adaptive 11+ practice tests in verbal and non-verbal reasoning, English and maths, with instant standardised scores on the GL Assessment scale.',
   keywords: '11 plus practice test free, 11+ verbal reasoning test, 11+ non-verbal reasoning free, free 11 plus test online, grammar school entrance test free, 11+ preparation UK, 11+ standardised score',
   alternates: { canonical: 'https://eduentry.com/11-plus', languages: { 'en-GB': 'https://eduentry.com/11-plus', 'x-default': 'https://eduentry.com/11-plus' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -185,7 +185,7 @@ export default function ElevenPlusPage() {
       <main className="max-w-4xl mx-auto px-6 py-16">
 
         {/* Breadcrumb */}
-        <nav className="text-sm text-gray-400 mb-8">
+        <nav className="text-sm text-gray-500 mb-8">
           <Link href="/" className="hover:text-gray-600">Home</Link>
           <span className="mx-2">›</span>
           <span className="text-gray-700">11+ Preparation</span>
@@ -291,7 +291,7 @@ export default function ElevenPlusPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-gray-400 mt-3">Score thresholds vary by grammar school, year, and region. Always check your target school&rsquo;s pass mark.</p>
+          <p className="text-xs text-gray-500 mt-3">Score thresholds vary by grammar school, year, and region. Always check your target school&rsquo;s pass mark.</p>
         </section>
 
         {/* Regions */}
@@ -341,7 +341,7 @@ export default function ElevenPlusPage() {
         {/* CTA */}
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Start your child&rsquo;s free 11+ practice test</h2>
-          <p className="text-indigo-200 mb-8 text-lg">Verbal reasoning, non-verbal reasoning, English and maths. Instant standardised score.</p>
+          <p className="text-indigo-100 mb-8 text-lg">Verbal reasoning, non-verbal reasoning, English and maths. Instant standardised score.</p>
           <CtaLink href="/auth/register" label="11plus_bottom_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
             Start free 11+ test
           </CtaLink>

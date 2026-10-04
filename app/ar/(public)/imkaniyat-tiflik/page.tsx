@@ -7,7 +7,7 @@ const REGISTER_URL = `${BASE_URL}/ar/auth/register`
 export const metadata: Metadata = {
   title: 'نقاط قوة وضعف طفلك — اختبار مجاني',
   description:
-    'اكتشف نقاط قوة وضعف طفلك في 35 دقيقة. تقييم معرفي وفق PISA وSAT وGCSE — تقرير فوري بدعم الذكاء الاصطناعي.',
+    'اكتشف نقاط قوة وضعف طفلك في 35 دقيقة. تقييم معرفي تكيفي مجاني وفق معايير PISA وSAT وGCSE، مع تقرير فوري بدعم الذكاء الاصطناعي ودون اشتراك.',
   keywords: [
     'ما هي نقاط قوة وضعف طفلي',
     'نقاط قوة طفلي',
@@ -210,7 +210,7 @@ export default function ImkaniyatTiflikPage() {
             <span dir="rtl">تقييم الإمكانيات المعرفية (مجاناً)</span>
           </Link>
 
-          <p className="mt-4 text-xs text-gray-400" dir="rtl">
+          <p className="mt-4 text-xs text-gray-500" dir="rtl">
             مقارنة دولية مجانية &nbsp;•&nbsp; سري 100% &nbsp;•&nbsp; تقرير PDF فوري للملف المعرفي
           </p>
         </div>
@@ -338,7 +338,7 @@ export default function ImkaniyatTiflikPage() {
             >
               <span dir="rtl">تقييم الإمكانيات المعرفية (مجاناً)</span>
             </Link>
-            <p className="mt-3 text-xs text-gray-400" dir="rtl">مقارنة دولية مجانية &nbsp;•&nbsp; سري 100% &nbsp;•&nbsp; تقرير PDF فوري للملف المعرفي</p>
+            <p className="mt-3 text-xs text-gray-500" dir="rtl">مقارنة دولية مجانية &nbsp;•&nbsp; سري 100% &nbsp;•&nbsp; تقرير PDF فوري للملف المعرفي</p>
           </div>
         </div>
       </section>

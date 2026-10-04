@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS_TR, getTurkishPostBySlug } from '@/app/blog/posts-tr'
@@ -7,11 +8,13 @@ import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
 import { BLOG_POSTS_FR } from '@/app/blog/posts-fr'
 import { BLOG_POSTS_AR } from '@/app/blog/posts-ar'
 import { BLOG_POSTS_RU } from '@/app/blog/posts-ru'
+import { BLOG_POSTS } from '@/app/blog/posts'
 
 const esByContentSlug = new Map(BLOG_POSTS_ES.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 const frByContentSlug = new Map(BLOG_POSTS_FR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 const arByContentSlug = new Map(BLOG_POSTS_AR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 const ruByContentSlug = new Map(BLOG_POSTS_RU.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const enSlugs = new Set(BLOG_POSTS.map(p => p.slug))
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -24,9 +27,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getTurkishPostBySlug(slug)
   if (!post) return {}
   const url = `${BASE_URL}/tr/blog/${slug}`
-  const enSlug = post.contentSlug
+  // Some Turkish posts reuse a contentSlug that has no English page
+  const enSlug = post.contentSlug && enSlugs.has(post.contentSlug) ? post.contentSlug : undefined
   return {
-    title: `${post.shortTitle} | Eduentry`,
+    title: brandedTitle(post.shortTitle),
     description: post.description,
     keywords: post.tags,
     alternates: {
@@ -167,7 +171,7 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
 
       {post.tldr && (
         <div className="mb-10 border-l-4 border-indigo-400 bg-indigo-50 rounded-r-xl px-5 py-4">
-          <p className="text-xs font-semibold text-indigo-500 uppercase tracking-wider mb-1">Kısa yanıt</p>
+          <p className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-1">Kısa yanıt</p>
           <p className="text-sm text-gray-700 leading-relaxed">{post.tldr}</p>
         </div>
       )}
@@ -225,7 +229,7 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
 
       <section className="mt-16 mb-8 bg-[#4F46E5] rounded-2xl p-12 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'Staj hazırlığını keşfet'}</h2>
-        <p className="text-indigo-200 mb-8">{post.cta?.body ?? '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme.'}</p>
+        <p className="text-indigo-100 mb-8">{post.cta?.body ?? '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme.'}</p>
         <a
           href={post.cta?.href ?? '/tr/staj'}
           className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg"

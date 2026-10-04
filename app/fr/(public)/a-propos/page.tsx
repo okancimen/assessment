@@ -4,7 +4,7 @@ import Link from 'next/link'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'À propos — Évaluation académique gratuite pour les enfants',
+  title: 'À propos : évaluation académique gratuite',
   description: 'Plateforme d\'évaluation adaptative gratuite pour les élèves de 6 à 17 ans. Scores standardisés comparés à PISA, GCSE et aux standards IB.',
   keywords: ['à propos Eduentry', 'plateforme évaluation enfants gratuite', 'référence académique internationale', 'test adaptatif enfants', 'évaluation académique 6 17 ans', 'évaluation stage lycée'],
   alternates: {
@@ -207,7 +207,7 @@ export default function AProposPage() {
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">Commencez l&apos;évaluation gratuite de votre enfant</h2>
-        <p className="text-indigo-200 mb-8 text-lg">20–30 minutes. Sans paiement. Résultats immédiats.</p>
+        <p className="text-indigo-100 mb-8 text-lg">20–30 minutes. Sans paiement. Résultats immédiats.</p>
         <Link href="/fr/auth/register" className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg">
           Commencer gratuitement
         </Link>

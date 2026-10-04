@@ -70,9 +70,9 @@ const SUBJECT_DESCRIPTIONS_ZH: Record<string, string> = {
 
 const subjectColors: Record<string, { border: string; accent: string; bg: string }> = {
   english:             { border: '#c7d2fe', accent: '#4F46E5', bg: '#eef2ff' },
-  mathematics:         { border: '#99f6e4', accent: '#0D9488', bg: '#f0fdfa' },
+  mathematics:         { border: '#99f6e4', accent: '#0F766E', bg: '#f0fdfa' },
   verbal_reasoning:    { border: '#ddd6fe', accent: '#7C3AED', bg: '#f5f3ff' },
-  nonverbal_reasoning: { border: '#fbcfe8', accent: '#DB2777', bg: '#fce7f3' },
+  nonverbal_reasoning: { border: '#fbcfe8', accent: '#BE185D', bg: '#fce7f3' },
 }
 
 const BELL_SUBJECTS_ZH = [
@@ -208,7 +208,7 @@ export default function ChineseHomePage() {
           <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
             在正确的时间，
             <br />
-            <span className="text-[#4F46E5]">正确的评估。</span>
+            <span className="text-[#818CF8]">正确的评估。</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
             基于与PISA、GCSE和SAT相同科学的免费自适应评估。
@@ -309,7 +309,7 @@ export default function ChineseHomePage() {
 
             <div className="flex-1">
               <p className="text-xs font-semibold text-[#636366] uppercase tracking-widest mb-4">学术评估 · 6–17岁</p>
-              <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
                 了解孩子的<br />国际学术位置。
               </h2>
               <p className="text-[#636366] text-lg leading-relaxed mb-8 max-w-lg">
@@ -330,7 +330,7 @@ export default function ChineseHomePage() {
             </div>
 
             {/* Sample result visual */}
-            <div className="flex-shrink-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_1fr] lg:grid-cols-1 xl:grid-cols-[300px_1fr] gap-4">
+            <div className="flex-shrink-0 lg:flex-shrink min-w-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_minmax(0,1fr)] lg:grid-cols-1 xl:grid-cols-[300px_minmax(0,1fr)] gap-4">
               <div className="bg-[#1d1d1f] rounded-3xl border border-[#424245] p-6 w-full lg:w-[300px]">
                 <div className="flex items-center justify-between mb-5">
                   <div>
@@ -338,8 +338,8 @@ export default function ChineseHomePage() {
                     <p className="font-bold text-white mt-1">Emma · 11岁</p>
                   </div>
                   <div className="text-right">
-                    <div className="text-3xl font-bold text-[#4F46E5]">109</div>
-                    <div className="text-[11px] text-[#0D9488] font-semibold">高于平均</div>
+                    <div className="text-3xl font-bold text-[#818CF8]">109</div>
+                    <div className="text-[11px] text-[#2DD4BF] font-semibold">高于平均</div>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -379,7 +379,7 @@ export default function ChineseHomePage() {
       <section className="bg-white pb-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               四个科目。全球视野。
             </h2>
             <p className="text-[#636366] max-w-xl mx-auto text-lg">
@@ -414,7 +414,7 @@ export default function ChineseHomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">评估背后的科学</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               与国际评估<br />相同的科学体系。
             </h2>
             <p className="text-[#636366] max-w-2xl mx-auto text-lg">
@@ -424,7 +424,7 @@ export default function ChineseHomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { title: '双参数IRT模型', desc: '每道题目都有经过校准的难度和区分度参数。分数反映的不只是答对题数，还有所答题目的难度。', tag: '用于PISA · SAT · GCSE', color: '#4F46E5' },
-              { title: '实时自适应算法', desc: '使用Fisher信息量选题以最大化测量精度。每次回答都会更新能力估计并选出最优下一题。', tag: '计算机自适应测试', color: '#0D9488' },
+              { title: '实时自适应算法', desc: '使用Fisher信息量选题以最大化测量精度。每次回答都会更新能力估计并选出最优下一题。', tag: '计算机自适应测试', color: '#0F766E' },
               { title: '国际对标', desc: '分数使用与PISA相同的均值100、标准差15量表。结果对应英国国家课程、美国年级水平、PISA能力等级和IB课程。', tag: '英国 · 美国 · PISA · IB', color: '#7C3AED' },
             ].map(({ title, desc, tag, color }) => (
               <div key={title} className="bg-white rounded-3xl border border-[#d2d2d7] p-7">
@@ -445,11 +445,11 @@ export default function ChineseHomePage() {
             <h3 className="font-bold text-[#1d1d1f] mb-6 text-center text-lg">分数含义解读</h3>
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
               {[
-                { range: '70–84',   label: '需要帮助',  color: '#EF4444', bg: '#fef2f2' },
-                { range: '85–94',   label: '低于平均',  color: '#F97316', bg: '#fff7ed' },
-                { range: '95–109',  label: '平均水平',  color: '#EAB308', bg: '#fefce8' },
-                { range: '110–119', label: '高于平均',  color: '#22C55E', bg: '#f0fdf4' },
-                { range: '120–130', label: '卓越表现',  color: '#3B82F6', bg: '#eff6ff' },
+                { range: '70–84',   label: '需要帮助',  color: '#B91C1C', bg: '#fef2f2' },
+                { range: '85–94',   label: '低于平均',  color: '#C2410C', bg: '#fff7ed' },
+                { range: '95–109',  label: '平均水平',  color: '#A16207', bg: '#fefce8' },
+                { range: '110–119', label: '高于平均',  color: '#15803D', bg: '#f0fdf4' },
+                { range: '120–130', label: '卓越表现',  color: '#1D4ED8', bg: '#eff6ff' },
               ].map(({ range, label, color, bg }) => (
                 <div key={range} className="rounded-2xl p-3 text-center" style={{ background: bg }}>
                   <div className="text-sm font-bold" style={{ color }}>{range}</div>
@@ -469,7 +469,7 @@ export default function ChineseHomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">学术评估 · 开始很简单</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               从注册到结果<br />不到两小时。
             </h2>
           </div>
@@ -480,7 +480,7 @@ export default function ChineseHomePage() {
               { step: '03', title: '获取全球参照结果', desc: '标准化分数、英美PISA和IB国际基准对标、AI学习建议和可打印报告。' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-[#f5f5f7] rounded-3xl p-8">
-                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <div aria-hidden="true" className="text-5xl font-bold text-[#86868b] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
                 <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
@@ -501,7 +501,7 @@ export default function ChineseHomePage() {
             <span className="inline-block text-xs font-medium text-[#4F46E5] uppercase tracking-[0.15em] bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1.5 rounded-full mb-5">
               实习评估 · 全新推出
             </span>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
               了解实习准备度。
             </h2>
             <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
@@ -516,7 +516,7 @@ export default function ChineseHomePage() {
               { step: '03', title: '获取准备情况报告', desc: '实习准备等级、AI生成的优势摘要，以及按能力、领域和工作技能分类的个性化洞察。' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
-                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <div aria-hidden="true" className="text-5xl font-bold text-[#86868b] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
                 <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
@@ -526,9 +526,9 @@ export default function ChineseHomePage() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {[
               { label: '技术',     color: '#4F46E5' },
-              { label: '商业',     color: '#0D9488' },
+              { label: '商业',     color: '#0F766E' },
               { label: '数据分析', color: '#7C3AED' },
-              { label: '数字营销', color: '#DB2777' },
+              { label: '数字营销', color: '#BE185D' },
             ].map(({ label, color }) => (
               <span key={label} className="text-xs font-semibold px-4 py-2 rounded-full border" style={{ color, background: color + '12', borderColor: color + '33' }}>
                 {label}
@@ -613,7 +613,7 @@ export default function ChineseHomePage() {
       <section className="py-32 bg-[#f5f5f7]">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">常见问题。</h2>
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">常见问题。</h2>
           </div>
           <div className="space-y-2">
             {FAQ_ZH.map(({ q, a }) => (

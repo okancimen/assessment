@@ -207,7 +207,7 @@ export default function ONasPage() {
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">Начните бесплатную оценку вашего ребёнка</h2>
-        <p className="text-indigo-200 mb-8 text-lg">20–30 минут. Бесплатно. Мгновенные результаты.</p>
+        <p className="text-indigo-100 mb-8 text-lg">20–30 минут. Бесплатно. Мгновенные результаты.</p>
         <Link href="/ru/auth/register" className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg">
           Начать бесплатно
         </Link>

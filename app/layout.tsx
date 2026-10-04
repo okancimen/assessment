@@ -17,7 +17,7 @@ const BASE_URL = "https://eduentry.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Eduentry — Academic Assessment & Internship Readiness Platform",
+    default: "Eduentry — Academic & Internship Readiness Assessments",
     template: "%s | Eduentry",
   },
   description:

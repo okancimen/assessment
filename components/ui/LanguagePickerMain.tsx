@@ -488,7 +488,7 @@ export default function LanguagePickerMain() {
       <button
         onClick={() => setOpen(o => !o)}
         className="flex items-center gap-1.5 text-xs text-[#1d1d1f] hover:opacity-60 transition-opacity select-none"
-        aria-label="Select language"
+        aria-label={`${activeLang} – select language`}
       >
         <span>{active.flag}</span>
         <span className="font-medium">{activeLang}</span>

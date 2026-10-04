@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS_FR, getFrenchPostBySlug } from '@/app/blog/posts-fr'
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const url = `${BASE_URL}/fr/blog/${slug}`
   const enSlug = post.contentSlug
   return {
-    title: `${post.shortTitle} | Eduentry`,
+    title: brandedTitle(post.shortTitle),
     description: post.description,
     keywords: post.tags,
     alternates: {
@@ -163,7 +164,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
 
       {post.tldr && (
         <div className="mb-10 border-l-4 border-indigo-400 bg-indigo-50 rounded-r-xl px-5 py-4">
-          <p className="text-xs font-semibold text-indigo-500 uppercase tracking-wider mb-1">Réponse rapide</p>
+          <p className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-1">Réponse rapide</p>
           <p className="text-sm text-gray-700 leading-relaxed">{post.tldr}</p>
         </div>
       )}
@@ -221,7 +222,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
 
       <section className="mt-16 mb-8 bg-[#4F46E5] rounded-2xl p-12 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'Découvrez votre niveau de préparation'}</h2>
-        <p className="text-indigo-200 mb-8">{post.cta?.body ?? 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.'}</p>
+        <p className="text-indigo-100 mb-8">{post.cta?.body ?? 'Évaluation adaptative gratuite pour lycéens de plus de 14 ans.'}</p>
         <a
           href={post.cta?.href ?? 'https://eduentry.ai/'}
           className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg"

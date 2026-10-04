@@ -4,7 +4,7 @@ import Link from 'next/link'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Hakkımızda — Çocuklar için ücretsiz akademik değerlendirme',
+  title: 'Hakkımızda: Ücretsiz Akademik Değerlendirme',
   description: '6–17 yaş arası öğrenciler için ücretsiz uyarlanabilir değerlendirme platformu. Standartlaştırılmış puanlar PISA, GCSE ve IB standartlarıyla karşılaştırılır.',
   keywords: ['Eduentry hakkında', 'çocuklar için ücretsiz değerlendirme platformu', 'uluslararası akademik kıyaslama', 'uyarlanabilir test çocuklar', 'akademik değerlendirme 6 17 yaş', 'lise staj değerlendirmesi'],
   alternates: {
@@ -207,7 +207,7 @@ export default function HakkimizdaPage() {
       {/* CTA */}
       <section className="text-center bg-[#4F46E5] rounded-2xl p-12 text-white">
         <h2 className="text-3xl font-bold mb-4">Çocuğunuzun ücretsiz değerlendirmesini başlatın</h2>
-        <p className="text-indigo-200 mb-8 text-lg">20–30 dakika. Ücret yok. Anlık sonuçlar.</p>
+        <p className="text-indigo-100 mb-8 text-lg">20–30 dakika. Ücret yok. Anlık sonuçlar.</p>
         <Link href="/tr/auth/register" className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg">
           Ücretsiz başla
         </Link>

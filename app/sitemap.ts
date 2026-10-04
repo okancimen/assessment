@@ -115,7 +115,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'high-school-internship-benefits-university',
   ])
 
-  const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => {
+  // Posts that next.config.ts redirects elsewhere don't belong in the sitemap
+  const REDIRECTED = new Set(['australia-oc-test-guide'])
+  const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.filter((post) => !REDIRECTED.has(post.slug)).map((post) => {
     const s = post.slug
     const langs: Record<string, string> = { 'en-GB': `${BASE}/blog/${s}`, 'x-default': `${BASE}/blog/${s}` }
     if (trByContentSlug.has(s)) langs.tr = `${BASE}/tr/blog/${trByContentSlug.get(s)}`

@@ -62,9 +62,9 @@ const SUBJECT_DESCRIPTIONS_RU: Record<string, string> = {
 
 const subjectColors: Record<string, { border: string; accent: string; bg: string }> = {
   english:             { border: '#c7d2fe', accent: '#4F46E5', bg: '#eef2ff' },
-  mathematics:         { border: '#99f6e4', accent: '#0D9488', bg: '#f0fdfa' },
+  mathematics:         { border: '#99f6e4', accent: '#0F766E', bg: '#f0fdfa' },
   verbal_reasoning:    { border: '#ddd6fe', accent: '#7C3AED', bg: '#f5f3ff' },
-  nonverbal_reasoning: { border: '#fbcfe8', accent: '#DB2777', bg: '#fce7f3' },
+  nonverbal_reasoning: { border: '#fbcfe8', accent: '#BE185D', bg: '#fce7f3' },
 }
 
 const BELL_SUBJECTS_RU = [
@@ -197,10 +197,10 @@ export default function RussianHomePage() {
           <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] mb-6">
             Оценка для каждого этапа обучения
           </p>
-          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
+          <h1 className="text-[2.5rem] min-[420px]:text-5xl sm:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight mb-7 max-w-5xl mx-auto">
             Правильная оценка,
             <br />
-            <span className="text-[#4F46E5]">в нужное время.</span>
+            <span className="text-[#818CF8]">в нужное время.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
             Бесплатные адаптивные оценки на основе той же науки, что PISA, GCSE и SAT.
@@ -303,7 +303,7 @@ export default function RussianHomePage() {
 
             <div className="flex-1">
               <p className="text-xs font-semibold text-[#636366] uppercase tracking-widest mb-4">Академическая оценка · 6–17 лет</p>
-              <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
                 Узнайте международную<br />позицию вашего ребёнка.
               </h2>
               <p className="text-[#636366] text-lg leading-relaxed mb-8 max-w-lg">
@@ -326,7 +326,7 @@ export default function RussianHomePage() {
             </div>
 
             {/* Sample result visual */}
-            <div className="flex-shrink-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_1fr] lg:grid-cols-1 xl:grid-cols-[300px_1fr] gap-4">
+            <div className="flex-shrink-0 lg:flex-shrink min-w-0 w-full lg:w-auto grid grid-cols-1 sm:grid-cols-[300px_minmax(0,1fr)] lg:grid-cols-1 xl:grid-cols-[300px_minmax(0,1fr)] gap-4">
               <div className="bg-[#1d1d1f] rounded-3xl border border-[#424245] p-6 w-full lg:w-[300px]">
                 <div className="flex items-center justify-between mb-5">
                   <div>
@@ -334,8 +334,8 @@ export default function RussianHomePage() {
                     <p className="font-bold text-white mt-1">Эмма · 11 лет</p>
                   </div>
                   <div className="text-right">
-                    <div className="text-3xl font-bold text-[#4F46E5]">109</div>
-                    <div className="text-[11px] text-[#0D9488] font-semibold">Выше среднего</div>
+                    <div className="text-3xl font-bold text-[#818CF8]">109</div>
+                    <div className="text-[11px] text-[#2DD4BF] font-semibold">Выше среднего</div>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -375,7 +375,7 @@ export default function RussianHomePage() {
       <section className="bg-white pb-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Четыре предмета. Глобальная картина.
             </h2>
             <p className="text-[#636366] max-w-xl mx-auto text-lg">
@@ -411,7 +411,7 @@ export default function RussianHomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">Наука за оцениванием</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               Та же наука, что<br />международные оценки.
             </h2>
             <p className="text-[#636366] max-w-2xl mx-auto text-lg">
@@ -422,7 +422,7 @@ export default function RussianHomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { title: 'Двухпараметрическая модель IRT', desc: 'Каждый вопрос имеет калиброванные значения сложности и различимости. Баллы отражают не просто количество правильных ответов, а сложность правильно отвеченных вопросов.', tag: 'Используется в PISA · SAT · GCSE', color: '#4F46E5' },
-              { title: 'Адаптивный алгоритм в реальном времени', desc: 'Вопросы выбираются с использованием информации Фишера для максимизации точности измерения. Каждый ответ обновляет оценку способностей и выбирает оптимальный следующий вопрос.', tag: 'Компьютерное адаптивное тестирование', color: '#0D9488' },
+              { title: 'Адаптивный алгоритм в реальном времени', desc: 'Вопросы выбираются с использованием информации Фишера для максимизации точности измерения. Каждый ответ обновляет оценку способностей и выбирает оптимальный следующий вопрос.', tag: 'Компьютерное адаптивное тестирование', color: '#0F766E' },
               { title: 'Международное сравнение', desc: 'Баллы используют ту же шкалу среднее-100, СО-15, что и PISA. Результаты отображаются на Национальную программу Великобритании, уровни классов США, уровни компетенций PISA и программу IB.', tag: 'UK · USA · PISA · IB', color: '#7C3AED' },
             ].map(({ title, desc, tag, color }) => (
               <div key={title} className="bg-white rounded-3xl border border-[#d2d2d7] p-7">
@@ -443,11 +443,11 @@ export default function RussianHomePage() {
             <h3 className="font-bold text-[#1d1d1f] mb-6 text-center text-lg">Что означает балл</h3>
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
               {[
-                { range: '70–84',   label: 'Требуется помощь',    color: '#EF4444', bg: '#fef2f2' },
-                { range: '85–94',   label: 'Ниже среднего',       color: '#F97316', bg: '#fff7ed' },
-                { range: '95–109',  label: 'Средний',             color: '#EAB308', bg: '#fefce8' },
-                { range: '110–119', label: 'Выше среднего',       color: '#22C55E', bg: '#f0fdf4' },
-                { range: '120–130', label: 'Исключительный',      color: '#3B82F6', bg: '#eff6ff' },
+                { range: '70–84',   label: 'Требуется помощь',    color: '#B91C1C', bg: '#fef2f2' },
+                { range: '85–94',   label: 'Ниже среднего',       color: '#C2410C', bg: '#fff7ed' },
+                { range: '95–109',  label: 'Средний',             color: '#A16207', bg: '#fefce8' },
+                { range: '110–119', label: 'Выше среднего',       color: '#15803D', bg: '#f0fdf4' },
+                { range: '120–130', label: 'Исключительный',      color: '#1D4ED8', bg: '#eff6ff' },
               ].map(({ range, label, color, bg }) => (
                 <div key={range} className="rounded-2xl p-3 text-center" style={{ background: bg }}>
                   <div className="text-sm font-bold" style={{ color }}>{range}</div>
@@ -467,7 +467,7 @@ export default function RussianHomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">Академическая оценка · Начать просто</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
               От регистрации до результатов<br />менее чем за два часа.
             </h2>
           </div>
@@ -478,7 +478,7 @@ export default function RussianHomePage() {
               { step: '03', title: 'Откройте глобальный контекст', desc: 'Стандартизированные баллы, международные бенчмарки для Великобритании, США, PISA и IB, рекомендации ИИ и печатаемый отчёт.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-[#f5f5f7] rounded-3xl p-8">
-                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <div aria-hidden="true" className="text-5xl font-bold text-[#86868b] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
                 <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
@@ -499,7 +499,7 @@ export default function RussianHomePage() {
             <span className="inline-block text-xs font-medium text-[#4F46E5] uppercase tracking-[0.15em] bg-[#eef2ff] border border-[#c7d2fe] px-3 py-1.5 rounded-full mb-5">
               Оценка стажировки · Новинка
             </span>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+            <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
               Узнай готовность к стажировке.
             </h2>
             <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
@@ -515,7 +515,7 @@ export default function RussianHomePage() {
               { step: '03', title: 'Получите отчёт о готовности', desc: 'Уровень готовности к стажировке, резюме сильных сторон от ИИ и персонализированные поэтапные инсайты по способностям, области и рабочим навыкам.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
-                <div className="text-5xl font-bold text-[#d2d2d7] leading-none mb-5 select-none">{step}</div>
+                <div aria-hidden="true" className="text-5xl font-bold text-[#86868b] leading-none mb-5 select-none">{step}</div>
                 <h3 className="font-bold text-[#1d1d1f] text-lg mb-3">{title}</h3>
                 <p className="text-[#636366] text-sm leading-relaxed">{desc}</p>
               </div>
@@ -525,9 +525,9 @@ export default function RussianHomePage() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {[
               { label: 'Технологии',          color: '#4F46E5' },
-              { label: 'Бизнес',              color: '#0D9488' },
+              { label: 'Бизнес',              color: '#0F766E' },
               { label: 'Аналитика данных',    color: '#7C3AED' },
-              { label: 'Цифровой маркетинг',  color: '#DB2777' },
+              { label: 'Цифровой маркетинг',  color: '#BE185D' },
             ].map(({ label, color }) => (
               <span key={label} className="text-xs font-semibold px-4 py-2 rounded-full border" style={{ color, background: color + '12', borderColor: color + '33' }}>
                 {label}
@@ -612,7 +612,7 @@ export default function RussianHomePage() {
       <section className="py-32 bg-[#f5f5f7]">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">Вопросы.</h2>
+            <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight">Вопросы.</h2>
           </div>
           <div className="space-y-2">
             {FAQ_RU.map(({ q, a }) => (

@@ -658,7 +658,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
                   <td className="p-4 font-mono font-semibold text-gray-900">{range}</td>
                   <td className="p-4 text-gray-700">{label}</td>
                   <td className="p-4 text-gray-500">{pct}</td>
-                  <td className="p-4 text-gray-400">{pop}</td>
+                  <td className="p-4 text-gray-500">{pop}</td>
                 </tr>
               ))}
             </tbody>
@@ -700,7 +700,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <li key={score} className="flex justify-between items-center border-b border-gray-50 pb-2">
               <span className="font-medium">{score}</span>
               <span className="text-indigo-600 font-medium">{pct}</span>
-              <span className="text-gray-400 text-xs">{note}</span>
+              <span className="text-gray-500 text-xs">{note}</span>
             </li>
           ))}
         </ul>
@@ -928,7 +928,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="font-bold text-gray-900 mb-1">{type}</h3>
             <p className="text-sm text-gray-500 mb-4">{desc}</p>
             <div className="bg-gray-50 rounded-lg p-4 mb-3">
-              <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Example</div>
+              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Example</div>
               <div className="font-mono text-gray-800 text-sm mb-2">{example}</div>
               <div className="text-xs text-emerald-700 font-semibold leading-relaxed">Answer: {answer}</div>
             </div>
@@ -3104,7 +3104,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/blog/non-verbal-reasoning-11-plus-guide', tag: 'Guide', title: 'Non-Verbal Reasoning 11+ Guide' },
             { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score?' },
-            { href: '/blog/australia-oc-test-guide', tag: 'Guide', title: 'Australia OC Test Guide' },
+            { href: '/blog/australia-gate-gifted-program', tag: 'Guide', title: 'Western Australia GATE Program Guide' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

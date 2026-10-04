@@ -7,7 +7,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Erken Yaşta Stajın Önemi: Çocuk Gelişimi, Olgunluk ve Biriken Kariyer Avantajı',
     shortTitle: 'Erken Yaşta Staj: Gelişim ve Kariyer Faydaları',
     description:
-      '14–16 yaşında profesyonel deneyim edinmenin gelişimsel ve kariyer açısından önemi. Nörobilim, üniversite kabul verileri ve iş gücü piyasası araştırmaları, erken staj deneyiminin ölçülebilir biçimde daha iyi sonuçlar ürettiğini ve bu farkın zamanla büyüdüğünü ortaya koyuyor.',
+      '14–16 yaşında iş deneyimi neden önemli? Nörobilim, üniversite kabul verileri ve iş gücü araştırmaları, erken stajın farkının zamanla büyüdüğünü gösteriyor.',
     tldr: 'NACE\'nin 2023 anketine göre işverenlerin yüzde 83\'ü yeni mezun işe alımında staj deneyimini \'önemli\' veya \'çok önemli\' olarak değerlendiriyor; staj yapan öğrenciler mezuniyet öncesinde iş teklifi almada akranlarına göre yüzde 70 daha yüksek bir oran yakalıyor (NACE, 2020). Gelişim araştırmaları ilk yapılandırılmış profesyonel yerleştirme için 14–16 yaşını en uygun dönem olarak gösteriyor.',
 
     date: '2026-06-29',
@@ -45,7 +45,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Lise Stajlarının Önemi: Kişilik, Hazırlık ve Üniversite Kabulü',
     shortTitle: 'Lise Stajının Faydaları',
     description:
-      'Lise stajları için kanıta dayalı değerlendirme — 14–18 yaşında yapılandırılmış iş deneyiminin öz yeterliliği, dayanıklılığı ve profesyonel kimliği nasıl geliştirdiği ve üniversite başvuru sonuçlarını ölçülebilir biçimde nasıl iyileştirdiği.',
+      'Lise stajları üzerine kanıta dayalı bir inceleme: 14–18 yaşta iş deneyimi öz yeterlilik, dayanıklılık ve mesleki kimlik kazandırır, başvuruları güçlendirir.',
     tldr: 'Russell Group üniversiteleri, tıp, hukuk ve teknoloji gibi rekabetçi bölümler için kabul rehberlerinde iş deneyimini açıkça belirtiyor. Araştırmalar iş deneyiminin dört temel alanda katkı sağladığını ortaya koyuyor: öz yeterlilik, dayanıklılık, profesyonel iletişim ve kariyer netliği.',
 
     date: '2026-06-25',
@@ -87,7 +87,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Lisede İş Dünyası Deneyimi: Nedir, Nasıl Bulunur ve Neden Önemlidir',
     shortTitle: 'Lisede İş Dünyası Deneyimi',
     description:
-      'İngiliz lise öğrencilerinin iş dünyası deneyimi hakkında bilmesi gereken her şey — neleri kapsadığı, nerede yerleştirme bulunacağı, nasıl güvence altına alınacağı ve doğrulanmış bir değerlendirme puanının her başvuruyu nasıl güçlendirdiği.',
+      'İngiltere\'de lise öğrencileri için iş deneyimi: neleri kapsar, yer nerede bulunur, nasıl alınır ve doğrulanmış bir puan başvuruyu nasıl güçlendirir.',
     tldr: 'İngiltere\'de lise öğrencileri için iş deneyimi genellikle bir ila iki haftalık yerleştirme veya yapılandırılmış bir işveren programı şeklinde gerçekleşir. Büyük işveren programlarının çoğu Year 10 (14–15 yaş) öğrencilerini kabul etmeye başlar. Barclays, Goldman Sachs, KPMG ve Deloitte gibi FTSE 100 şirketleri, başvuru penceresi Eylül–Kasım\'da açılan Year 12 Spring Insight programları düzenliyor.',
 
     date: '2026-06-30',
@@ -129,7 +129,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Üniversite Öncesi Teknoloji Stajı Nasıl Bulunur: İngiliz Öğrencileri için Kapsamlı Rehber',
     shortTitle: 'Üniversite Öncesi Teknoloji Stajı Nasıl Bulunur',
     description:
-      'İngiliz lise öğrencilerinin üniversiteye başlamadan önce teknoloji stajı veya iş deneyimi yerleştirmesi güvence altına alması için pratik bir rehber — nerede aranacağı, portföy olmadan nasıl başvurulacağı ve gerçekten kısa listeye girmenin yolları.',
+      'Üniversiteden önce teknoloji stajı bulma rehberi: nerede aranır, portföy olmadan nasıl başvurulur ve kısa listeye girmek için neler yapılır.',
     tldr: '14–18 yaş arası İngiliz öğrenciler, Google, Microsoft, Amazon, IBM, BT, Sky ve BBC Technology\'nin resmi programlarının yanı sıra KPMG, Deloitte, PwC ve EY\'nin teknoloji şemalarından yararlanabiliyor. Küçük teknoloji şirketleri genellikle büyük kurumsal firmalara kıyasla daha fazla pratik sorumluluk ve geniş kapsam sunuyor.',
 
     date: '2026-06-30',
@@ -170,7 +170,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'En İyi Okul, Hayat Okuludur: Erken Yaşta İş Deneyiminin Çocuk Gelişimine Katkısı',
     shortTitle: 'En İyi Okul, Hayat Okuludur',
     description:
-      'Warren Buffett\'tan Sakıp Sabancı\'ya, Almanya\'nın mesleki eğitim sisteminden Montessori pedagojisine — neden en kalıcı dersler sınıfın dışında, gerçek sorumlulukların içinde öğreniliyor? Erken yaşta iş deneyiminin çocuk gelişimine katkılarını araştırma ve gerçek örneklerle ele alıyoruz.',
+      'Warren Buffett\'tan Sakıp Sabancı\'ya, Alman mesleki eğitiminden Montessori\'ye: en kalıcı dersler neden sınıf dışında, gerçek sorumluluklarla öğrenilir?',
     tldr: 'Okul başarısının iş hayatına geçişte en güçlü köprüyü oluşturan deneyimler staj, proje çalışması ve mesleki iletişim becerileri olarak öne çıkıyor. Araştırmalar, gerçek iş ortamında elde edilen becerilerin sınıf eğitiminin sağlayamadığı öz yeterliliği ve uyum yeteneğini geliştirdiğini gösteriyor.',
 
     date: '2026-07-08',
@@ -207,7 +207,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Siber Güvenlik Stajı Nasıl Bulunur: Lise Öğrencileri için Kapsamlı Rehber',
     shortTitle: 'Siber Güvenlik Stajı Nasıl Bulunur',
     description:
-      'Kodlama bilmeden bile siber güvenlik stajı alınabilir mi? Hangi firmalar lise öğrencisi kabul ediyor, nasıl başvurulur, yerleştirmede neler beklenmeli? İngiliz öğrencilere yönelik eksiksiz rehber.',
+      'Kodlama bilmeden siber güvenlik stajı bulunur mu? Lise öğrencisi kabul eden firmalar, başvuru yolları ve stajda sizi neler bekliyor.',
     tldr: 'Türkiye\'de lise öğrencileri için siber güvenlik stajı sunan başlıca kurumlar arasında Türk Telekom, BTK (Bilgi Teknolojileri ve İletişim Kurumu), büyük bankalar ve özel güvenlik şirketleri yer alıyor. Başvurular genellikle Ocak–Nisan döneminde yapılır; stajlar yaz aylarında başlar.',
 
     date: '2026-07-09',
@@ -246,9 +246,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'a-level-programlari-nedir',
     title: 'A Level Programları Nedir? İngiltere\'de Lise Son Sınıf Rehberi',
-    shortTitle: 'A Level Nedir? 2026 Rehberi: Dersler, GCSE Farkı ve Üniversite Etkileri',
+    shortTitle: 'A Level Nedir? Dersler, GCSE Farkı ve Üniversite',
     description:
-      'A Level nedir? İngiltere\'de 16–18 yaş öğrencilerinin üniversiteye hazırlandığı iki yıllık program: hangi dersler seçilmeli, GCSE\'den ne farkı var, IB ile kıyaslaması nasıl ve Türk öğrenciler nasıl başvurabilir?',
+      'A Level nedir? İngiltere\'de 16–18 yaş için iki yıllık üniversite hazırlık programı: ders seçimi, GCSE ve IB farkları, Türk öğrenciler için başvuru.',
     tldr: 'A-Level, İngiltere\'de 16–18 yaş arası öğrencilerin üniversite öncesinde aldığı iki yıllık bir yeterlilik programıdır. Öğrenciler tipik olarak 3 veya 4 ders seçer; her ders bağımsız sınav ve değerlendirmelerle belirlenir. Önde gelen sınav kurulları Cambridge, Edexcel ve OCR\'dır.',
 
     date: '2026-07-20',
@@ -289,7 +289,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Dubai\'de Eğitim Sistemi: Türk Aileler için Kapsamlı Rehber',
     shortTitle: 'Dubai\'de Eğitim Sistemi',
     description:
-      'Dubai\'de hangi müfredat sistemleri var, okul seçimi nasıl yapılır, maliyetler nelerdir? Dubai\'ye yerleşen veya taşınmayı düşünen Türk aileler için BAE eğitim sistemini tüm yönleriyle açıklıyoruz.',
+      'Dubai\'de hangi müfredatlar var, okul nasıl seçilir, maliyetler ne kadar? Dubai\'ye taşınan Türk aileler için BAE eğitim sistemi rehberi.',
     tldr: 'Dubai okulları KHDA tarafından 5 kademede derecelendiriliyor: Outstanding (Üstün), Very Good (Çok İyi), Good (İyi), Acceptable (Kabul Edilebilir) ve Weak (Zayıf). Şehirde Britanya, Amerikan, IB ve Fransız müfredatı dahil 200\'den fazla farklı müfredat sunan özel okul bulunuyor.',
 
     date: '2026-07-20',
@@ -329,9 +329,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'cocugunuz-dunyada-nerede-duruyor',
     contentSlug: 'how-does-your-child-compare-globally',
     title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor? Uluslararası Akademik Kıyaslama Rehberi',
-    shortTitle: 'Çocuğunuz Dünyada Nerede? PISA 2025 Uluslararası Akademik Kıyaslama',
+    shortTitle: 'Çocuğunuz Dünyada Nerede? PISA 2025 Kıyaslaması',
     description:
-      'Çocuğunuzun yalnızca sınıf sıralamasını değil, küresel yüzdelik dilimini öğrenin. PISA 2025 verileri, Türkiye ile Singapur, İngiltere ve OECD ortalaması arasındaki farkı net biçimde ortaya koyuyor. Uluslararası standartlarda çocuğunuz nerede duruyor?',
+      'Çocuğunuzun sınıf sıralamasını değil, küresel yüzdeliğini öğrenin. PISA 2025 verileriyle Türkiye, Singapur, İngiltere ve OECD ortalaması kıyası.',
     tldr: 'OECD PISA matematik ortalaması 472 puandır. Türkiye, PISA 2022\'de matematikte 453 puan alarak OECD ortalamasının altında kaldı. Singapur (575 puan) ile Türkiye arasındaki yaklaşık 120 puanlık fark, yaklaşık 3 yıllık okul eğitimine karşılık geliyor.',
 
     date: '2026-07-02',
@@ -373,7 +373,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Notlar Artık Yeterli Değil: Öğrenciler 15 Yaşında Kendilerini Gerçekte Nasıl Farklılaştırıyor',
     shortTitle: '15 Yaşında Nasıl Farklılaşılır',
     description:
-      'Her zamankinden daha fazla öğrenci en yüksek notları alıyor — bu da akademik sonuçları son yirmi yılın en zayıf farklılaştırıcısı haline getiriyor. Rekabetçi üniversite başvurularını gerçekte ne ayırt ediyor ve neden 15 yaşında başlamak sonucu değiştiriyor.',
+      'En yüksek notu alan öğrenci sayısı rekor düzeyde, notlar artık ayırt edici değil. Rekabetçi başvuruları ne öne çıkarır, neden 15 yaşında başlamalı?',
     tldr: 'Üniversiteler benzer tahmin edilen notlara sahip başvuru sahiplerini ayırt etmek için ders dışı faaliyetleri ve iş deneyimini kullanıyor. 15–16 yaşında rekabetçi üniversite başvuruları için en güvenilir farklılaştırıcılar şunlardır: yapılandırılmış stajlar, alana özgü yarışmalar, ölçülebilir çıktılara sahip bağımsız projeler ve üçüncü taraf yeterlilik kanıtları.',
 
     date: '2026-09-08',
@@ -415,7 +415,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: '12. Sınıfta İş Dünyası Deneyimi: Yaşa Göre Kapsamlı İngiltere Rehberi (12–18 Yaş)',
     shortTitle: '12. Sınıf İş Deneyimi Rehberi (12–18 Yaş)',
     description:
-      'İngiltere\'de 12 ila 18 yaş arası iş dünyası deneyimi hakkında her şey — her yıl grubu için mevcut olanlar, büyük işveren programları, nasıl başvurulur ve başvurunun öne çıkmasını ne sağlar.',
+      'İngiltere\'de 12–18 yaş için iş deneyimi rehberi: her yıl grubu için seçenekler, büyük işveren programları, başvuru ve öne çıkmanın yolları.',
     tldr: 'Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey Insight ve BCG gibi FTSE 100 şirketleri Year 12 öğrencilerine yönelik Spring veya Summer Insight programları düzenliyor. Başvuru pencereleri tipik olarak Eylül–Kasım\'da açılıyor. Bu programlar son derece rekabetçidir; en seçici firmalarda her yer için yaklaşık 10–20 başvuru yapılıyor.',
 
     date: '2026-07-09',
@@ -455,7 +455,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'dijital-pazarlama-staji-nasil-bulunur',
     title: 'Dijital Pazarlama Stajı Nasıl Bulunur: Lise Öğrencileri için Kapsamlı Rehber',
     shortTitle: 'Dijital Pazarlama Stajı Nasıl Bulunur',
-    description: 'Lise öğrencileri için dijital pazarlama stajı bulma rehberi — hangi firmalara başvurulacağı, hangi becerilerin öne çıkarılacağı, portfolio olmadan nasıl başvurulacağı ve doğrulanmış bir değerlendirme puanının süreci nasıl hızlandırdığı.',
+    description: 'Lise öğrencileri için dijital pazarlama stajı: hangi firmalara başvurulur, hangi beceriler öne çıkarılır, portföy olmadan nasıl başvurulur.',
     tldr: 'Dijital pazarlama stajı bulmanın başlangıç noktaları: dijital ajanslar (lise yaşında öğrencileri genellikle kısa dönemler için kabul eder), LinkedIn üzerinden doğrudan şirket başvurusu ve Springpod ya da Forage gibi sanal iş deneyimi platformları. Küçük ajanslar büyük şirketlere kıyasla genellikle daha fazla sorumluluk ve daha geniş kapsam sunuyor.',
 
     date: '2026-09-09',
@@ -475,7 +475,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'veri-analitigi-kariyer-rehberi',
     title: 'Veri Analitiği Kariyeri: Liseden İtibaren Nasıl Başlanır',
     shortTitle: 'Veri Analitiği Kariyer Rehberi',
-    description: 'Veri analitiğine lise yıllarından itibaren nasıl başlanır — hangi matematiksel temel gerekli, hangi araçlar öğrenilmeli, staj nasıl bulunur ve bu alandaki kariyer yolları nelerdir.',
+    description: 'Lise yıllarında veri analitiğine nasıl başlanır: gereken matematik temeli, öğrenilecek araçlar, staj bulma yolları ve bu alandaki kariyer seçenekleri.',
     tldr: 'Veri analitiği rollerinde en çok aranan araçlar Excel, SQL, Python ve Power BI\'dır. Forage (Accenture, JPMorgan) gibi sanal platformlar, programlama bilgisi olmayan öğrencilerin veri analitiği deneyimi edinmesine olanak tanıyor.',
 
     date: '2026-09-09',
@@ -495,7 +495,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'staj-icin-cv-nasil-yazilir',
     title: 'Staj İçin CV Nasıl Yazılır: 16-18 Yaş Öğrencileri için Adım Adım Rehber',
     shortTitle: 'Staj İçin CV Nasıl Yazılır',
-    description: 'İş deneyimi olmayan 16-18 yaş öğrencileri için staj başvurusuna yönelik CV yazma rehberi — ne dahil edilmeli, nasıl yapılandırılmalı, hangi hatalardan kaçınılmalı ve deneyim eksikliği kanıtlanabilir becerilerle nasıl telafi edilmeli.',
+    description: 'Deneyimi olmayan 16–18 yaş öğrenciler için staj CV\'si: neler yazılır, nasıl düzenlenir, hangi hatalardan kaçınılır ve beceriler nasıl öne çıkarılır.',
     tldr: 'Staj başvurusu için hazırlanan CV şu bölümleri içermelidir: iletişim bilgileri, öğrenim (okul, sınıf, not ortalaması), ilgili dersler veya projeler, yetkinlikler (diller, yazılımlar) ve referans olarak gösterilebilecek öğretmenler. İş deneyimi olmayan lise öğrencileri için tek sayfalık bir CV en etkili format olmaya devam ediyor.',
 
     date: '2026-09-09',
@@ -515,7 +515,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'staj-mulakati-hazirlik-rehberi',
     title: 'Staj Mülakatına Nasıl Hazırlanılır: Lise Öğrencileri için Tam Rehber',
     shortTitle: 'Staj Mülakatına Nasıl Hazırlanılır',
-    description: 'Bir staj mülakatını hazırlamak ve başarıyla geçmek için her şey — en sık sorulan sorular, önceki iş deneyimi olmadan nasıl cevap verilir, mülakat gününde hangi hatalar plası kaybettirir ve nasıl farklılaşılır.',
+    description: 'Staj mülakatına hazırlık: en sık sorulan sorular, deneyim olmadan nasıl cevap verilir, yeri kaybettiren hatalar ve mülakat günü nasıl fark yaratılır.',
     tldr: 'Staj mülakatllarında en sık sorulan sorular: \'Kendinizden bahsedin\', \'Bu sektörü neden seçtiniz?\' ve \'Grup projesini nasıl yönetirdiniz?\' Şirketi önceden araştıran ve hazırlıklı sorularla gelen adaylar tutarlı biçimde daha yüksek değerlendirmeler alıyor.',
 
     date: '2026-09-09',
@@ -535,7 +535,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler',
     title: 'PISA 2025 Sonuçları: Küresel Eğitim Krizi — Her Ebeveynin Bilmesi Gerekenler',
     shortTitle: 'PISA 2025 Sonuçları: Türkiye ve Dünya Karşılaştırması',
-    description: 'PISA 2025, OECD ülkelerinde matematik, okuma ve fen bilimlerinde şimdiye kadar kaydedilen en düşük puanları ortaya koyuyor. Sonuçların aileler için ne anlama geldiğini ve çocuğunuzu değerlendirmenin neden hiç bu kadar önemli olmadığını açıklıyoruz.',
+    description: 'PISA 2025, OECD ülkelerinde matematik, okuma ve fende en düşük puanları gösteriyor. Sonuçlar aileler için ne anlama geliyor, çocuğunuzu neden ölçmeli?',
     tldr: 'PISA 2025, OECD tarihinde kaydedilen en düşük matematik, okuma ve fen bilimleri ortalama puanlarını ortaya koydu. PISA 2025 bulgularına göre yapay zekayı ödev süreçlerinde kullanan öğrenciler kullanmayanlara kıyasla fen bilimlerinde yaklaşık 20 puan daha düşük skor aldı; bu fark yaklaşık bir yıllık okul eğitimine denk geliyor.',
 
     date: '2026-09-10',
@@ -560,7 +560,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'is-deneyimine-nasil-hazirlanilir',
     title: 'İş Deneyimine Nasıl Hazırlanılır? Lise Öğrencileri İçin Kapsamlı Rehber',
     shortTitle: 'İş Deneyimine Nasıl Hazırlanılır?',
-    description: 'Lise öğrencilerinin iş deneyimine en iyi şekilde hazırlanması için ebeveynlere kapsamlı rehber — CV hazırlama, doğru sektörü seçme, özgüveni geliştirme ve kalıcı izlenim bırakma.',
+    description: 'Lise öğrencisinin iş deneyimine hazırlanması için veli rehberi: CV hazırlama, doğru sektörü seçme, özgüven kazanma ve kalıcı izlenim bırakma.',
     tldr: 'İş deneyimine hazırlık üç temel adımdan oluşur: şirket ve sektör araştırması, her gözlemleyeceğiniz kişi için hazırlıklı sorular ve günlük gözlem notları tutma alışkanlığı. Araştırmalar, günlük gözlem kaydı tutan stajyerlerin kişisel beyanlarında ve başvurularında çok daha spesifik ve etkili anlatılar oluşturduğunu gösteriyor.',
 
     date: '2026-09-11',
@@ -611,7 +611,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'PISA Nedir? Açılımı, Puanı ve Sınava Giriş — 2025 Rehberi',
     shortTitle: 'PISA Nedir? Açılımı, Kaç Yılda Bir, Puan Rehberi',
     description:
-      'PISA nedir, ne demek, açılımı nedir? Her 3 yılda bir 91 ülkede uygulanan bu sınavda öğrenci nasıl seçilir, puan nasıl hesaplanır, kaç yılda bir yapılır? 2025 Türkiye sonuçları ve ebeveyn rehberi.',
+      'PISA nedir, açılımı ne? 91 ülkede 3 yılda bir yapılan sınavda öğrenci nasıl seçilir, puan nasıl hesaplanır? 2025 Türkiye sonuçları ve veli rehberi.',
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2022\'de matematikte 453, okumada 440 ve fen bilimlerinde 452 puan alarak OECD ortalamasının altında kaldı.',
 
     date: '2026-09-14',
@@ -640,7 +640,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Lise Stajı Nasıl Bulunur? Türkiye ve Yurt Dışı İçin Tam Rehber',
     shortTitle: 'Lise Stajı Nasıl Bulunur?',
     description:
-      'Lise öğrencisi olarak Türkiye\'de ve yurt dışında staj nasıl bulunur? Hangi sektörler uygundur, ne zaman başvurulmalı, CV olmadan nasıl başvurulur? Adım adım pratik rehber.',
+      'Lise öğrencisi olarak Türkiye\'de ve yurt dışında staj nasıl bulunur? Uygun sektörler, başvuru zamanı ve CV olmadan başvuru için adım adım rehber.',
     tldr: 'Türkiye\'de lise stajı için dört temel yol: okul kariyer danışmanlığı (kurumsal firmalarla resmi protokollar aracılığıyla bağlantı), doğrudan KOBİ başvurusu, LinkedIn üzerinden başvuru ve Kariyer.net ile İş Burada gibi staj platformları. Kişisel bağlantılar en yüksek dönüşüm oranına sahip yol olmaya devam ediyor.',
 
     date: '2026-09-14',
@@ -665,7 +665,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür? Ücretsiz Test Rehberi',
     shortTitle: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?',
     description:
-      'Çocuğunuzun gerçek akademik seviyesini nasıl öğrenirsiniz? Okul notu yeterli mi? 6-17 yaş için ücretsiz standartlaştırılmış değerlendirme ve uluslararası kıyaslamalı rehber.',
+      'Çocuğunuzun gerçek akademik seviyesini nasıl öğrenirsiniz? Okul notu yeterli mi? 6–17 yaş için ücretsiz, uluslararası kıyaslamalı değerlendirme.',
     tldr: 'Uluslararası akranlarla karşılaştırmanın en güvenilir yolu, büyük bir ulusal veya uluslararası örnekleme göre normlanmış standartlaştırılmış bir değerlendirmedir. Ortalama 100, standart sapma 15 olan ölçek, PISA, CAT4 ve GL Assessment\'ta kullanılan ölçekle aynıdır. Okul notları yalnızca sınıf içi sıralamayı yansıtır; standartlaştırılmış puan ise geniş dağılımdaki konumu ortaya koyar.',
 
     date: '2026-09-14',
@@ -690,7 +690,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'pisa-2025-work-experience-student-readiness',
     title: 'PISA 2025 Sonuçları: Notlar Düşüyor — Ama İş Deneyimi Cevap Olabilir',
     shortTitle: 'PISA 2025 ve İş Deneyimi: Öğrenci Hazırlığı',
-    description: 'OECD\'nin PISA 2025 raporu rekor düşük akademik puanlar ortaya koyuyor. Veriler ise bir çözüme işaret ediyor: gerçek dünyayla erken yaşta temas kuran öğrenciler okulların öğretemediği becerileri geliştiriyor.',
+    description: 'PISA 2025 rekor düşük puanlar gösteriyor. Veriler bir çözüme işaret ediyor: gerçek dünyayla erken temas, okulun öğretemediği becerileri geliştiriyor.',
     tldr: 'PISA 2025, 91 ülkede 690.000 15 yaşındaki öğrenciyi değerlendirdi. İş temelli öğrenmeyi ortaöğretime entegre eden ülkeler (Almanya, İsviçre, Avusturya) tutarlı biçimde OECD ortalamalarının üzerinde puan aldı. PISA verileri, lise dönemindeki yapılandırılmış mesleki deneyim ile fen bilimleri ve matematik performansı arasında pozitif bir korelasyon olduğunu ortaya koyuyor.',
 
     date: '2026-09-11',
@@ -748,7 +748,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Stajyer Maaşı Ne Kadar? Türkiye\'de Sektöre Göre Stajyer Ücretleri 2026',
     shortTitle: 'Stajyer Maaşı 2026',
     description:
-      'Stajyerler ne kadar maaş alıyor? Türkiye\'deki stajyer ücretleri, sektöre göre örnekler, Ulusal Staj Programı ödemeleri ve vergi muafiyeti hakkında güncel bilgiler.',
+      'Stajyerler ne kadar maaş alıyor? Türkiye\'de sektöre göre stajyer ücretleri, Ulusal Staj Programı ödemeleri ve vergi muafiyeti hakkında güncel bilgi.',
     tldr: 'Türkiye\'de ücretli stajlar genellikle asgari ücretin yüzde 30 ile yüzde 100\'ü arasında ödeme yapar; ücret sektöre ve şirket büyüklüğüne göre önemli ölçüde değişir. Meslek lisesi öğrencileri için asgari ücretin en az yüzde 30\'u yasal zorunluluktur; üniversite öncesi lise öğrencileri için böyle bir düzenleme bulunmuyor.',
 
     date: '2026-09-15',
@@ -772,7 +772,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Staj Defteri Nedir, Ne Zaman Teslim Edilir, Nasıl Doldurulur?',
     shortTitle: 'Staj Defteri Nedir, Nereden Alınır ve Nasıl Doldurulur?',
     description:
-      'Staj defteri nedir, nereden alınır, ne zaman teslim edilir? Gönüllü stajda doldurulur mu? Günlük faaliyet kaydından haftalık özete, yönetici onayına kadar adım adım rehber.',
+      'Staj defteri nedir, nereden alınır, ne zaman teslim edilir? Günlük kayıttan haftalık özete ve yönetici onayına kadar adım adım doldurma rehberi.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
@@ -796,7 +796,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'staj-sigortasi-nedir',
     title: 'Staj Sigortası Nedir? Lise ve Üniversite Öğrencileri İçin Rehber',
-    shortTitle: 'Staj Sigortası Nedir? Kim Öder, Neyi Kapsar, Emekliliğe Etkisi',
+    shortTitle: 'Staj Sigortası Nedir? Kim Öder, Neyi Kapsar?',
     description:
       'Staj sigortası nedir, kim öder, neyi kapsar? Zorunlu stajda ve gönüllü stajda staj sigortası uygulaması, emeklilik hesabına etkisi ve pratik bilgiler.',
     tldr: 'Türkiye\'de stajyerler 5510 sayılı Kanun kapsamında iş kazası ve meslek hastalığı sigortası güvencesinden yararlanır. Prim ödemeleri okul aracılığıyla yapılan stajlarda devlete aittir. Stajyerler standart işçi haklarından yararlanamaz; ancak SGK güvencesi kapsamındadır.',
@@ -872,7 +872,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'PISA Nedir? 2025 Sonuçları, "PISA 2026" Sorusu ve İş Hayatındaki Gizli Bağ',
     shortTitle: 'PISA 2026 Var Mı? 2025 Sonuçları ve Kariyer',
     description:
-      'PISA nedir, nasıl yapılır, PISA 2025 Türkiye\'yi nasıl değerlendirdi? "PISA 2026" diye bir sınav var mı? Ve en önemlisi: PISA\'da başarılı olmak iş hayatında gerçekten fark yaratıyor mu? Deneyimli bir eğitmenin gözünden dürüst bir analiz.',
+      'PISA nedir, 2025\'te Türkiye\'yi nasıl değerlendirdi, PISA 2026 var mı? PISA başarısı iş hayatında fark yaratır mı? Deneyimli bir eğitmenden analiz.',
     tldr: 'PISA, OECD\'nin her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uyguladığı bir değerlendirme programıdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan civarındadır. PISA\'nın ölçtüğü beceriler — sayısal muhakeme, okuduğunu anlama ve problem çözme — günümüz iş dünyasının en çok aradığı yetkinliklerle örtüşüyor.',
 
     date: '2026-09-21',
@@ -939,7 +939,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Uluslararası Staj Programları: Türk Lise Öğrencileri için 2026 Rehberi',
     shortTitle: 'Uluslararası Staj Programları Rehberi',
     description:
-      '2026 yılında Türk lise ve üniversite öğrencileri için yurt dışı staj programları, Erasmus+ başvurusu, gerekli belgeler ve staj başlatma sınavı rehberi. Hangi programlar var, nasıl başvurulur, değerlendirme sınavı neden kritik?',
+      '2026\'da Türk lise ve üniversite öğrencileri için yurt dışı staj programları: Erasmus+ başvurusu, gerekli belgeler ve değerlendirme sınavının önemi.',
     tldr: 'Uluslararası staj programları için başlıca fırsatlar: AIESEC (öğrenci liderliğinde küresel staj değişimi), Erasmus+ (Avrupa çalışma yerleştirme hibeleri), IAESTE (fen ve mühendislikte uluslararası değişim), Microsoft TEALS, Google STEP ve Amazon Future Engineer gibi çok uluslu şirket programları. Başvurular genellikle 6–12 ay öncesinden yapılır.',
 
     date: '2026-09-21',
@@ -985,7 +985,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Çocuğunuzun Güçlü ve Zayıf Yönlerini Liseye Hazırlık İçin Anlamak',
     shortTitle: 'Güçlü ve Zayıf Yönler: Lise Hazırlık Rehberi',
     description:
-      'Sözel akıl yürütme, sayısal beceri, çalışan bellek ve uzamsal düşünme gibi bilişsel yetenekleri lise öncesinde nasıl keşfedersiniz? Çocuğunuzun akademik profilini belirleme ve hazırlık planı oluşturma rehberi.',
+      'Sözel akıl yürütme, sayısal beceri, çalışan bellek ve uzamsal düşünme: lise öncesinde çocuğunuzun güçlü yönlerini keşfedip hazırlık planı yapın.',
     tldr: 'Okul notları, öğrencilerin sınıf içindeki göreli başarısını ölçer — ancak altta yatan bilişsel profili ortaya koymaz. Sözel akıl yürütme, sayısal yetenek, çalışan bellek ve uzamsal beceri alanlarındaki güçlü ve zayıf yönleri lise öncesinde belirlemek, ebeveynlere ve öğretmenlere belirsiz bir karne yerine somut bir yol haritası sunar.',
 
     date: '2026-09-27',
@@ -1026,7 +1026,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: '65-jobs-ai-cannot-automate',
     title: 'Yapay Zekanın Alamayacağı 65 Meslek — Her Ebeveynin Bilmesi Gerekenler',
     shortTitle: 'Yapay Zekanın Alamayacağı 65 Meslek',
-    description: 'Dünya Ekonomik Forumu\'na göre 2030\'a kadar işlerin %40\'ı yapay zekadan etkilenecek. İşte %0 otomasyon olasılığıyla 65 meslek ve çocuğunuzun geleceği için ne anlama geldikleri.',
+    description: 'Dünya Ekonomik Forumu\'na göre 2030\'a kadar işlerin %40\'ı yapay zekadan etkilenecek. Otomasyon riski olmayan 65 meslek ve çocuğunuz için anlamı.',
     tldr: 'ABD Çalışma İstatistikleri Bürosu verileri ve otomasyon olasılığı analizine göre 65 meslek %0,0 otomasyon olasılığı taşıyor. Bu meslekler dört ortak özelliği paylaşıyor: duygusal zeka, ortamı okuma becerisi, yaratıcı çalışma ve yüksek günlük görev değişkenliği. Sağlık en büyük kategoriyi oluşturuyor; uzman hemşirelik 2034\'e kadar %40 büyümesi bekleniyor.',
     date: '2026-09-28',
     dateModified: '2026-09-28',
@@ -1058,7 +1058,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'oecd-teenage-work-experience-career-outcomes',
     title: 'OECD Araştırması: Erken Yaşta İş Deneyiminin Kariyer Üzerindeki Gizli Gücü',
     shortTitle: 'Erken İş Deneyiminin Faydaları: OECD Araştırması Ne Diyor?',
-    description: '16 yaşından önce iş deneyimi kazanan gençler yetişkinlikte %5–10 daha fazla kazanıyor. OECD\'nin 47 boylamsal çalışmadan derlediği veriler, hangi becerilerin geliştiği ve ebeveynlerin ne yapabileceğini ortaya koyuyor.',
+    description: '16 yaşından önce iş deneyimi kazanan gençler yetişkinlikte %5–10 daha fazla kazanıyor. OECD\'nin 47 çalışmalık verisi ve velilerin yapabilecekleri.',
     tldr: 'OECD\'nin incelediği 47 boylamsal çalışmanın 40\'ında, okul destekli iş deneyimi olan öğrencilerin yetişkinlikte daha iyi istihdam sonuçları elde ettiği görülmüştür. Erken iş deneyimi yaşayanlar yetişkinlikte %5–10 daha fazla kazanmaktadır. Ancak İspanya, İtalya ve Brezilya\'da gençlerin yaklaşık %50\'si 15 yaşına kadar hiç iş deneyimi edinmemiştir.',
     date: '2026-09-30',
     readTime: '10 dk okuma',
@@ -1105,7 +1105,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'oecd-teenage-part-time-work-benefits',
     title: 'Gençler İçin Yarı Zamanlı İş: OECD Destekli Faydalar ve En İyi Nasıl Değerlendirilir',
     shortTitle: 'Gençler İçin Yarı Zamanlı İş Faydaları: OECD Araştırması',
-    description: 'OECD araştırması, okul döneminde yarı zamanlı çalışmanın finansal okuryazarlık, kariyer güveni ve mesleki beceriler geliştirdiğini doğruluyor. Veriler ne söylüyor ve nasıl en iyi şekilde değerlendirirsiniz?',
+    description: 'OECD: okul döneminde yarı zamanlı çalışma finansal okuryazarlık, kariyer güveni ve mesleki beceri kazandırır. Veriler ne diyor, nasıl değerlendirilir?',
     tldr: 'OECD araştırması, haftada yaklaşık 15 saate kadar çalışan öğrencilerin daha güçlü mesleki beceriler, daha yüksek kariyer güveni ve daha büyük finansal okuryazarlık geliştirdiğini gösteriyor. Anahtar faktörler denetim, kariyer alaka düzeyi ve üretken saat aralıklarında kalmaktır.',
     date: '2026-10-01',
     readTime: '9 dk okuma',
@@ -1145,7 +1145,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Okul Çağındaki Çocuğunuzun Gizli Güçlerini ve Gelişim Alanlarını Keşfedin: Yeni Nesil Veli Rehberi',
     shortTitle: 'Çocuğunuzun Gizli Güçlerini Keşfedin: Veli Rehberi',
     description:
-      'Okul karneleri yalnızca anlık notları gösterir — çocuğunuzun gerçek bilişsel potansiyelini değil. Bu rehber, yapay zeka destekli adaptif değerlendirmenin 6–17 yaş arası çocuklarda sözel, sözel olmayan, matematik ve İngilizce güçlü ve zayıf yönlerini nasıl ortaya çıkardığını açıklıyor.',
+      'Karneler anlık notları gösterir, potansiyeli değil. Adaptif değerlendirme 6–17 yaş çocukların güçlü ve zayıf yönlerini nasıl ortaya çıkarır?',
     tldr: 'Eduentry\'nin adaptif değerlendirmesi, okul başarısını ve kariyer sonuçlarını doğrudan etkileyen dört bilişsel alanı — sözel akıl yürütme, sözel olmayan akıl yürütme, matematik becerisi ve İngilizce dil yetkinliği — ölçmek için yapay zekayı kullanır. Sistem her yanıta gerçek zamanlı olarak uyarlanır; sınav kaygısı olmadan çocuğunuzun gerçek tavanını ve gelişim alanlarını haritalar.',
     date: '2026-09-30',
     readTime: '8 dk okuma',
@@ -1184,7 +1184,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'discover-child-strengths-free-academic-test',
     title: 'Ücretsiz Akademik Test: Çocuğunuzun Güçlü ve Zayıf Yönlerini 35 Dakikada Keşfedin',
     shortTitle: 'Ücretsiz Akademik Test: Güçlü ve Zayıf Yönler',
-    description: 'Karne notları bilişsel potansiyeli göstermiyor. Ücretsiz adaptif akademik testimiz 35 dakikada sözel, sayısal ve görsel-uzamsal yetenekleri ölçer — uluslararası normlarla kıyaslamalı rapor anında hazır.',
+    description: 'Karne notları bilişsel potansiyeli göstermez. Ücretsiz adaptif testimiz 35 dakikada sözel, sayısal ve görsel-uzamsal yetenekleri ölçer.',
     tldr: 'Sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünmeyi bağımsız olarak ölçen ücretsiz adaptif test — 35 dakikada uluslararası yüzdelik dilim raporu. CAT ve IRT metodolojisiyle, CAT4 ve NWEA MAP ile aynı bilimsel temel.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -1245,7 +1245,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Zeki Çocuk Neden Başarısız Olur? Ebeveyn Rehberi',
     shortTitle: 'Zeki Çocuk Neden Başarısız Olur?',
     description:
-      'Çocuğunuz zeki ama notları hayal kırıklığı mı yaratıyor? Okul notları bilişsel yeteneği ölçmez — ve bilimsel bir açıklaması var. Dört bilişsel alan ve gerçek akademik potansiyel hakkında bilmeniz gerekenler.',
+      'Çocuğunuz zeki ama notları düşük mü? Okul notları bilişsel yeteneği ölçmez. Dört bilişsel alan ve gerçek akademik potansiyel hakkında bilmeniz gerekenler.',
     tldr: 'Zeki çocuklar, bilişsel profilleri ile okulun performansı ölçme biçimi arasındaki uyumsuzluk nedeniyle kötü notlar alır. Okul notları ağırlıklı olarak kristalize zekayı ölçer — ezberlenmiş ve yeniden üretilmiş bilgiyi — oysa pek çok parlak çocuk olağanüstü akıcı zekaya sahiptir: standart testlerin nadiren yakaladığı mantık yürütme, örüntü bulma ve yeni problemleri çözme yeteneği.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -1306,7 +1306,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Öğrenci Olarak Staj Bulma: Adım Adım Rehber',
     shortTitle: 'Öğrenciyken Staj Bulmanın Yeni Nesil Yolu',
     description:
-      'Deneyimsiz lise ve üniversite öğrencileri için staj bulma rehberi. Adaptif staj hazırlık değerlendirmesiyle not filtrelerini aşmayı, yetenek profili oluşturmayı ve ilk stajını bulmayı öğren.',
+      'Deneyimsiz lise ve üniversite öğrencileri için staj rehberi: adaptif değerlendirmeyle not filtrelerini aşın, yetenek profilinizi çıkarın.',
     tldr: 'Staj deneyimi olan öğrenciler mezuniyetten önce iş teklifi almada akranlarına göre yüzde 70 daha yüksek oran yakalıyor (NACE, 2020). En büyük engel deneyim paradoksu: deneyim kazanmak için deneyime ihtiyaç var. Ücretsiz staj hazırlık değerlendirmesi, bir geçmişin olmadan işverenlere potansiyelini kanıtlayan doğrulanabilir bir yetenek profili sunar.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -1367,7 +1367,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Akademik Çocuklar için Yaz Tatili Aktiviteleri: 2026 Rehberi',
     shortTitle: 'Akademik Çocuklar için Yaz Tatili Aktiviteleri',
     description:
-      '9–16 yaş arası başarılı çocukları için verimli bir yaz planlayan ebeveynlere yönelik araştırmaya dayalı rehber. Stajlar, bilişsel değerlendirmeler, zenginleştirme programları ve çocuğunuzun gerçek güçlü yönlerine göre yaz aktivitelerini eşleştirmek için 3 adımlı çerçeve.',
+      '9–16 yaş başarılı çocuklar için verimli bir yaz: stajlar, değerlendirmeler, zenginleştirme programları ve güçlü yönlere göre 3 adımlı plan.',
     tldr: 'Yapılandırılmamış yazlar başarı uçurumunu derinleştirir — ancak yanlış yapılandırılmış bir yaz içsel motivasyonu öldürür. Cevap, amaca yönelik, çeşitli ve çocuğun bilişsel profiline uygun olmaktır. Herhangi bir şey rezerve etmeden önce hangi alanı geliştireceğinizi öğrenmek için ücretsiz 35 dakikalık değerlendirmeyle başlayın.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -1427,7 +1427,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'global-academic-benchmarks-report-2026',
     title: '2026 Küresel Akademik Kıyaslama Raporu: Uluslararası Sınav Standartları ve Puanlama Trendleri',
     shortTitle: '2026 Küresel Akademik Kıyaslama Raporu',
-    description: '2026 uluslararası standart sınav trendlerinin tam analizi — SAS puanları, PISA/TIMSS kıyaslamaları, Dijital SAT adaptif sınavı ve seçici okul kabullerinde ailelerin takip etmesi gereken yüzdelik eşikler.',
+    description: '2026 uluslararası sınav trendleri: SAS puanları, PISA/TIMSS kıyasları, adaptif Dijital SAT ve seçici okul kabulünde takip edilecek yüzdelik eşikler.',
     tldr: 'OECD PISA ortalaması matematik, okuma ve fen bilimlerinde yaklaşık 472–476\'dır. Birleşik Krallık, okuma ve fen bilimlerinde OECD ortalamasının üzerinde performans gösterirken matematikte ortalama veya biraz üzerindedir. Singapur, tüm üç alanda dünya lideridir ve Birleşik Krallık\'tan 70–100 PISA puanı daha yüksek performans göstermektedir — bu fark yaklaşık 2–3 yıllık eğitime eşdeğerdir.',
     date: '2026-06-16',
     dateModified: '2026-10-02',
@@ -1451,8 +1451,8 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'standart-puan-nedir',
     contentSlug: 'what-is-a-standardised-score',
     title: 'Standartlaştırılmış Puan Nedir? Ebeveynler İçin Açık Bir Rehber',
-    shortTitle: 'Standartlaştırılmış Puan: Ortalama 100, Yüzdelikler ve SAS Bantları',
-    description: 'Ebeveynler için standartlaştırılmış puan rehberi: 100 puan yaş ortalamasıdır, 115 puan 84. yüzdeliktir, 130 puan 98. yüzdeliktir. SAS bantlarını, iyi bir puanın ne olduğunu ve gramer okulu ile üstün yetenekli program eşiklerinin nasıl çalıştığını açıklar.',
+    shortTitle: 'Standart Puan: Ortalama 100, Yüzdelik ve SAS',
+    description: 'Standart puan rehberi: 100 yaş ortalaması, 115 84. yüzdelik, 130 98. yüzdelik. SAS bantları, iyi puan ve seçici okul eşikleri nasıl çalışır?',
     tldr: '100 standartlaştırılmış puan yaş için tam ortalamadır; 115 puan 84. yüzdeliktir; 130 puan 98. yüzdeliktir. 11+ gramer okulu girişi için İngiltere\'nin Londra dışındaki çoğu bölgesi 111–118 SAS gerektirir; Barnet ve Sutton seçici okulları 121–132 arasında puan ister.',
     date: '2026-10-03',
     dateModified: '2026-10-03',
@@ -1481,8 +1481,8 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'nwea-map-puanlari-aciklamasi',
     contentSlug: 'nwea-map-scores-explained',
     title: 'NWEA MAP Puanları Açıklandı: RIT Puanları Ne Anlama Gelir?',
-    shortTitle: 'NWEA MAP Puanları Açıklandı (2026): Sınıfa Göre RIT Aralıkları',
-    description: 'Okuma, matematik ve fen için sınıfa göre NWEA MAP RIT puan kıyaslamaları — çocuğunuzun puanı iyi mi? 2025–26 ulusal norm yüzdelikleri, sınıf düzeyi ortalamaları ve üstün yetenekli programlar için RIT eşikleri.',
+    shortTitle: 'NWEA MAP Puanları 2026: Sınıfa Göre RIT Aralıkları',
+    description: 'Sınıfa göre NWEA MAP RIT puanları: okuma, matematik ve fen için 2025–26 yüzdelikleri, sınıf ortalamaları ve üstün yetenek programı eşikleri.',
     tldr: 'NWEA MAP Growth, yüzde doğru değil RIT (Rasch Birimi) ölçeği kullanır. Ulusal ortalama RIT puanı 3. Sınıf\'ta yaklaşık 188 ve 8. Sınıf\'ta yaklaşık 218\'dir. 5. Sınıf\'ta 95. yüzdelik yaklaşık RIT 216\'ya karşılık gelir; 99. yüzdelik ise yaklaşık RIT 230\'dur. Üstün yetenekli tanımlama programları genellikle seçiciliğe bağlı olarak 95–99. yüzdelikteki puanları gerektirir.',
     date: '2026-10-03',
     dateModified: '2026-10-03',
@@ -1512,7 +1512,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'grammar-school-entry-requirements-2026',
     title: 'Gramer Okulu Giriş Şartları 2026: Puanlar, Yüzdelikler ve Nasıl Uygun Hale Gelinir',
     shortTitle: 'Gramer Okulu Giriş Şartları 2026: Bölgeye Göre SAS Puanları',
-    description: 'Çocuğunuzun 2026\'da bir gramer okulu yerine ihtiyacı olan puan nedir? Bu rehber, İngiltere\'nin önemli gramer okulu bölgelerindeki SAS eşiklerini, yüzdelik kıyaslamalarını ve giriş şartlarını kapsar.',
+    description: '2026\'da İngiltere\'de grammar school için hangi puan gerekir? Bölgelere göre SAS eşikleri, yüzdelik kıyasları ve giriş şartları bu rehberde.',
     tldr: 'Kent ve Essex\'te 11+ seçici kayıt geçiş puanı yaklaşık SAS 111–113\'tür. Buckinghamshire\'da (CEM) eşik yaklaşık SAS 118\'dir. Barnet ve Sutton\'daki en rekabetçi Londra okulları SAS 121–132 gerektirir — ve yüksek puan alan çocuklar bile daha yüksek puan alan başvuru sahipleri yakın mesafede yaşıyorsa yer alamayabilir.',
     date: '2026-10-03',
     dateModified: '2026-10-03',
@@ -1542,7 +1542,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'how-to-prepare-for-11-plus',
     title: '11+ Sınavına Evde Nasıl Hazırlanılır: Tam Ebeveyn Rehberi',
     shortTitle: '11+ Sınavına Evde Nasıl Hazırlanılır',
-    description: '11+ sınavına evde çocuklarını hazırlayan ebeveynler için pratik rehber — sözel akıl yürütme, sözel olmayan akıl yürütme, matematik ve İngilizce\'yi kapsayan önerilen 18 aylık pratik zaman çizelgesiyle.',
+    description: '11+ sınavına evde hazırlık rehberi: sözel ve sözel olmayan akıl yürütme, matematik ve İngilizce için önerilen 18 aylık çalışma takvimi.',
     tldr: 'Çoğu aile sınava 12–18 ay öncesinden başlar; sınav genellikle 6. Yıl\'ın Eylül veya Ekim ayında yapılır. Etkili hazırlık, erken aşamada (4–5. Yıl) haftada 3–4 saat olup son 3 ayda haftada 5–7 saate çıkar ve 20–30 dakikalık günlük seanslar şeklinde yürütülür. Test edilen dört ders İngilizce, Matematik, Sözel Akıl Yürütme ve Sözel Olmayan Akıl Yürütme\'dir.',
     date: '2026-10-03',
     dateModified: '2026-10-03',
@@ -1573,7 +1573,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Çocuğun Gelecekte İşsiz Kalmaması için Şimdiden Edinmesi Gereken 8 Alışkanlık',
     shortTitle: 'Çocuğun İşsiz Kalmaması için Alışkanlıklar',
     description:
-      'Çocuğunuzun gelecekte işsiz kalmaması için şimdiden edinmesi gereken 8 alışkanlık: eleştirel düşünme, dijital okuryazarlık, finansal zeka ve gerçek iş deneyimi. McKinsey ve WEF araştırmalarıyla.',
+      'Çocuğunuzun gelecekte işsiz kalmaması için 8 alışkanlık: eleştirel düşünme, dijital okuryazarlık, finansal zeka ve gerçek iş deneyimi.',
     tldr: 'McKinsey\'nin araştırmasına göre 2030\'a kadar küresel iş gücünün %14\'ü — yaklaşık 375 milyon çalışan — meslek değiştirmek zorunda kalacak. Yapay zekanın kolayca ikame edemediği beceriler ise tutarlı biçimde şunlar öne çıkıyor: eleştirel düşünme, yaratıcılık, duygusal zeka ve inisiyatif. Bu beceriler okul notlarıyla değil, erken yaşta edinilen alışkanlıklarla kazanılıyor.',
     date: '2026-10-04',
     dateModified: '2026-10-04',

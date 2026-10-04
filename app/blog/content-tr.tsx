@@ -5102,7 +5102,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
                   <td className="p-4 font-mono font-semibold text-gray-900">{range}</td>
                   <td className="p-4 text-gray-700">{label}</td>
                   <td className="p-4 text-gray-500">{pct}</td>
-                  <td className="p-4 text-gray-400">{pop}</td>
+                  <td className="p-4 text-gray-500">{pop}</td>
                 </tr>
               ))}
             </tbody>
@@ -5127,7 +5127,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
             <li key={score} className="flex justify-between items-center border-b border-gray-50 pb-2">
               <span className="font-medium">{score}</span>
               <span className="text-indigo-600 font-medium">{pct}</span>
-              <span className="text-gray-400 text-xs">{note}</span>
+              <span className="text-gray-500 text-xs">{note}</span>
             </li>
           ))}
         </ul>
@@ -5234,7 +5234,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-gray-400">Kaynak: NWEA 2020 MAP Growth Öğrenci ve Okul Başarı Durumu ve Büyümesi için Normlar.</p>
+        <p className="text-sm text-gray-500">Kaynak: NWEA 2020 MAP Growth Öğrenci ve Okul Başarı Durumu ve Büyümesi için Normlar.</p>
       </section>
 
       <section>

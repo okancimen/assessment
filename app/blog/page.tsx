@@ -8,8 +8,8 @@ import BlogPostCard from './BlogPostCard'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: '11+ Preparation, Grammar Schools & Gifted Testing Guides | Eduentry Blog',
-  description: 'Practical guides for UK parents and students on 11+ exam preparation, grammar school admissions, GCSE revision, gifted child testing, and work experience for secondary school students.',
+  title: '11+, Grammar School & Gifted Testing Guides',
+  description: 'Practical guides for UK parents on 11+ preparation, grammar school admissions, GCSE revision, gifted testing and work experience for teenagers.',
   keywords: [
     '11+ preparation guide',
     'grammar school admissions 2026',
@@ -24,13 +24,13 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     title: '11+ Preparation, Grammar Schools & Gifted Testing Guides | Eduentry Blog',
-    description: 'Practical guides for UK parents and students on 11+ exam preparation, grammar school admissions, GCSE revision, gifted child testing, and work experience for secondary school students.',
+    description: 'Practical guides for UK parents on 11+ preparation, grammar school admissions, GCSE revision, gifted testing and work experience for teenagers.',
     url: `${BASE_URL}/blog`,
   },
   twitter: {
     card: 'summary_large_image',
     title: '11+ Preparation, Grammar Schools & Gifted Testing Guides | Eduentry Blog',
-    description: 'Practical guides for UK parents and students on 11+ exam preparation, grammar school admissions, GCSE revision, gifted child testing, and work experience for secondary school students.',
+    description: 'Practical guides for UK parents on 11+ preparation, grammar school admissions, GCSE revision, gifted testing and work experience for teenagers.',
     images: [`${BASE_URL}/blog/opengraph-image`],
   },
 }
@@ -69,7 +69,7 @@ export default function BlogIndexPage() {
       <PublicNav />
 
       <main className="max-w-4xl mx-auto px-6 py-16">
-        <nav className="text-sm text-gray-400 mb-8">
+        <nav className="text-sm text-gray-500 mb-8">
           <Link href="/" className="hover:text-gray-600">Home</Link>
           <span className="mx-2">›</span>
           <span className="text-gray-700">Blog</span>
@@ -82,7 +82,7 @@ export default function BlogIndexPage() {
           <p className="text-xl text-gray-500 leading-relaxed max-w-2xl mb-3">
             Practical guides on 11+ exam preparation, grammar school admissions, GCSE revision, gifted child testing, and work experience for secondary school students.
           </p>
-          <p className="text-base text-gray-400 leading-relaxed max-w-2xl">
+          <p className="text-base text-gray-500 leading-relaxed max-w-2xl">
             Also covering gifted and selective programmes in the US, Canada, Australia, Netherlands and UAE — benchmarked with standardised scores and international percentile data.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
@@ -100,7 +100,7 @@ export default function BlogIndexPage() {
 
         {/* Featured posts */}
         <div className="mb-10">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Featured guides</h2>
+          <h2 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">Featured guides</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               'how-to-prepare-for-11-plus',
@@ -119,7 +119,7 @@ export default function BlogIndexPage() {
                 >
                   <div className="text-xs font-semibold text-indigo-600 mb-2">Featured</div>
                   <h2 className="font-bold text-gray-900 text-sm leading-snug mb-2">{post.shortTitle}</h2>
-                  <p className="text-xs text-gray-400">{post.readTime}</p>
+                  <p className="text-xs text-gray-500">{post.readTime}</p>
                 </Link>
               )
             })}

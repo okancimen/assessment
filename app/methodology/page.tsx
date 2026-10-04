@@ -5,7 +5,7 @@ import PublicFooter from '@/components/layout/PublicFooter'
 import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
-  title: 'Assessment Methodology — How Eduentry Works',
+  title: 'Assessment Methodology: How It Works',
   description: 'How Eduentry uses 2PL Item Response Theory and MAP estimation to produce standardised academic scores for children aged 6–17, benchmarked internationally.',
   keywords: 'Item Response Theory children, IRT adaptive assessment, standardised score children, MAP estimation, educational benchmarking methodology, adaptive testing UK',
   alternates: { canonical: 'https://eduentry.com/methodology', languages: { 'en-GB': 'https://eduentry.com/methodology', es: 'https://eduentry.com/es/metodologia', tr: 'https://eduentry.com/tr/metodoloji', fr: 'https://eduentry.com/fr/methodologie', ar: 'https://eduentry.com/ar/manhajiyya', ru: 'https://eduentry.com/ru/metodologiya', zh: 'https://eduentry.com/zh/fangfalun', 'x-default': 'https://eduentry.com/methodology' } },
@@ -207,7 +207,7 @@ export default function MethodologyPage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-gray-400 mt-3">
+            <p className="text-xs text-gray-500 mt-3">
               68% of children score between 85 and 115 (within ±1 standard deviation of the mean).
             </p>
           </section>
@@ -390,7 +390,7 @@ export default function MethodologyPage() {
         {/* CTA */}
         <div className="mt-16 text-center bg-indigo-50 rounded-2xl border border-indigo-100 p-10">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">See your child&apos;s percentile ranking</h2>
-          <p className="text-gray-500 mb-6">Free assessment · Ages 6–17 · Results in 90 minutes</p>
+          <p className="text-gray-600 mb-6">Free assessment · Ages 6–17 · Results in 90 minutes</p>
           <CtaLink href="/auth/register" label="methodology_cta" className="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-xl hover:bg-indigo-700 transition-colors">
             Start Free Assessment
           </CtaLink>

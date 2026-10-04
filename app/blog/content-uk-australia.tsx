@@ -130,7 +130,7 @@ export const UK_CONTENT_AUSTRALIA: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { href: '/blog/australia-oc-test-guide', tag: 'Guide', title: 'NSW Opportunity Class (OC) Test Guide: How It Works and How to Prepare' },
+            { href: '/blog/nsw-opportunity-class-test-guide', tag: 'Guide', title: 'NSW Opportunity Class (OC) Test Guide: How It Works and How to Prepare' },
             { href: '/blog/australia-gate-gifted-program', tag: 'Assessment', title: 'GATE Western Australia: How the Gifted and Talented Programme Works' },
             { href: '/blog/australia-naplan-guide', tag: 'Guide', title: 'NAPLAN Guide for Parents: What It Is, How Scores Work and What to Do With the Results' },
           ].map((link) => (
@@ -436,7 +436,7 @@ export const UK_CONTENT_AUSTRALIA: Record<string, React.ReactNode> = {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
             { href: '/blog/australia-acer-scholarship-exam', tag: 'Guide', title: 'ACER Scholarship Exam Guide: How It Works, Scores and How to Prepare' },
-            { href: '/blog/australia-oc-test-guide', tag: 'Guide', title: 'NSW Opportunity Class (OC) Test Guide: How It Works and How to Prepare' },
+            { href: '/blog/nsw-opportunity-class-test-guide', tag: 'Guide', title: 'NSW Opportunity Class (OC) Test Guide: How It Works and How to Prepare' },
             { href: '/blog/gifted-program-testing-guide', tag: 'Research', title: 'Gifted Program Testing Guide' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
@@ -606,7 +606,7 @@ export const UK_CONTENT_AUSTRALIA: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { href: '/blog/australia-oc-test-guide', tag: 'Guide', title: 'NSW Opportunity Class (OC) Test Guide: How It Works and How to Prepare' },
+            { href: '/blog/nsw-opportunity-class-test-guide', tag: 'Guide', title: 'NSW Opportunity Class (OC) Test Guide: How It Works and How to Prepare' },
             { href: '/blog/australia-acer-scholarship-exam', tag: 'Guide', title: 'ACER Scholarship Exam Guide: How It Works, Scores and How to Prepare' },
             { href: '/blog/what-is-a-standardised-score', tag: 'Research', title: 'What Is a Standardised Score?' },
           ].map((link) => (

@@ -97,10 +97,10 @@ export default function TestimonialsCarouselES() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-        <div className="flex gap-2">
+        <div className="flex">
           {TESTIMONIALS.map((_, i) => (
             <button key={i} onClick={() => setIndex(i)} aria-label={`Testimonio ${i + 1}`}
-              className={`rounded-full transition-all duration-300 ${i === index ? 'w-5 h-2 bg-[#4F46E5]' : 'w-2 h-2 bg-[#d2d2d7] hover:bg-[#86868b]'}`}
+              className={`box-content p-2 bg-clip-content rounded-full transition-all duration-300 ${i === index ? 'w-5 h-2 bg-[#4F46E5]' : 'w-2 h-2 bg-[#d2d2d7] hover:bg-[#86868b]'}`}
             />
           ))}
         </div>

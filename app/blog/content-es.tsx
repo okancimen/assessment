@@ -1815,7 +1815,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
                   <td className="p-4 font-mono font-semibold text-gray-900">{range}</td>
                   <td className="p-4 text-gray-700">{label}</td>
                   <td className="p-4 text-gray-500">{pct}</td>
-                  <td className="p-4 text-gray-400">{pop}</td>
+                  <td className="p-4 text-gray-500">{pop}</td>
                 </tr>
               ))}
             </tbody>
@@ -1846,7 +1846,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
             <li key={score} className="flex justify-between items-center border-b border-gray-50 pb-2">
               <span className="font-medium">{score}</span>
               <span className="text-indigo-600 font-medium">{pct}</span>
-              <span className="text-gray-400 text-xs">{note}</span>
+              <span className="text-gray-500 text-xs">{note}</span>
             </li>
           ))}
         </ul>
@@ -1953,7 +1953,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-gray-400">Fuente: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
+        <p className="text-sm text-gray-500">Fuente: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
       </section>
 
       <section>
@@ -3223,9 +3223,9 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-xl font-bold text-gray-900 mb-4">Guías Relacionadas</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { href: '/es/blog/investigacion-ocde-experiencia-laboral-adolescentes-resultados-carrera', tag: 'Investigación', title: 'Investigación OCDE: Experiencia Laboral en Adolescentes y Resultados Profesionales' },
+            { href: '/es/blog/oecd-experiencia-laboral-adolescentes-resultados-carrera', tag: 'Investigación', title: 'Investigación OCDE: Experiencia Laboral en Adolescentes y Resultados Profesionales' },
             { href: '/es/blog/pisa-2025-experiencia-laboral-preparacion-estudiantes', tag: 'Guía', title: 'PISA 2025: Por qué la Experiencia Laboral es la Respuesta que Falta' },
-            { href: '/es/blog/65-profesiones-que-la-ia-no-puede-automatizar', tag: 'Guía', title: '65 Profesiones que la IA No Puede Automatizar' },
+            { href: '/es/blog/65-empleos-que-la-ia-no-puede-automatizar', tag: 'Guía', title: '65 Profesiones que la IA No Puede Automatizar' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
@@ -3327,8 +3327,8 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         <div className="grid sm:grid-cols-2 gap-4">
           {[
             { href: '/es/blog/descubrir-fortalezas-ocultas-hijo-guia-moderna-padres', tag: 'Evaluación', title: 'Prueba Académica Gratuita: Descubre las Fortalezas y Debilidades de Tu Hijo' },
-            { href: '/es/blog/fortalezas-debilidades-hijo-preparacion-secundaria', tag: 'Guía', title: 'Entendiendo las Fortalezas de Tu Hijo Antes de la Secundaria' },
-            { href: '/es/blog/descubrir-fortalezas-ocultas-nino-en-edad-escolar', tag: 'Guía', title: 'Descubre las Fortalezas Ocultas de Tu Hijo en Edad Escolar' },
+            { href: '/es/blog/comprender-fortalezas-debilidades-hijo-bachillerato', tag: 'Guía', title: 'Entendiendo las Fortalezas de Tu Hijo Antes de la Secundaria' },
+            { href: '/es/blog/descubrir-fortalezas-ocultas-hijo-guia-moderna-padres', tag: 'Guía', title: 'Descubre las Fortalezas Ocultas de Tu Hijo en Edad Escolar' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
@@ -3426,8 +3426,8 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         <div className="grid sm:grid-cols-2 gap-4">
           {[
             { href: '/es/blog/como-encontrar-practicas-siendo-estudiante', tag: 'Guía', title: 'Cómo Encontrar Prácticas Siendo Estudiante' },
-            { href: '/es/blog/investigacion-ocde-experiencia-laboral-adolescentes-resultados-carrera', tag: 'Investigación', title: 'OCDE: Experiencia Laboral en Adolescentes y Resultados Profesionales' },
-            { href: '/es/blog/descubrir-fortalezas-hijo-test-academico-gratis', tag: 'Evaluación', title: 'Prueba Académica Gratuita: Descubre las Fortalezas de Tu Hijo' },
+            { href: '/es/blog/oecd-experiencia-laboral-adolescentes-resultados-carrera', tag: 'Investigación', title: 'OCDE: Experiencia Laboral en Adolescentes y Resultados Profesionales' },
+            { href: '/es/blog/test-academico-gratuito-fortalezas-debilidades-hijo', tag: 'Evaluación', title: 'Prueba Académica Gratuita: Descubre las Fortalezas de Tu Hijo' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

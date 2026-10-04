@@ -121,9 +121,15 @@ export async function proxy(request: NextRequest) {
     request.nextUrl.pathname.startsWith('/search') ||
     request.nextUrl.pathname.startsWith('/internship') ||
     request.nextUrl.pathname.startsWith('/sample-report') ||
+    request.nextUrl.pathname.startsWith('/your-childs-potential') ||
     request.nextUrl.pathname.startsWith('/ai') ||
     request.nextUrl.pathname === '/robots.txt' ||
-    request.nextUrl.pathname === '/sitemap.xml'
+    request.nextUrl.pathname === '/sitemap.xml' ||
+    request.nextUrl.pathname === '/llms.txt' ||
+    request.nextUrl.pathname === '/llms-full.txt' ||
+    request.nextUrl.pathname === '/manifest.json' ||
+    request.nextUrl.pathname === '/ai-catalog.json' ||
+    request.nextUrl.pathname.startsWith('/.well-known/')
 
   if (!user && !isPublicRoute) {
     const url = request.nextUrl.clone()

@@ -7,7 +7,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Stages au lycée : pourquoi ils comptent pour le développement personnel et l\'accès à l\'université',
     shortTitle: 'Stages au lycée : bénéfices et université',
     description:
-      'Une analyse fondée sur des données des stages au lycée — comment l\'expérience professionnelle structurée entre 14 et 18 ans développe la confiance, la résilience et l\'identité professionnelle, et améliore les candidatures universitaires.',
+      'Ce que les stages apportent au lycée : entre 14 et 18 ans, l\'expérience professionnelle renforce confiance, résilience et candidatures universitaires.',
     tldr: 'Les universités du Groupe Russell citent explicitement l\'expérience professionnelle dans leurs guides d\'admission pour les filières compétitives (médecine, droit, technologie). La recherche identifie quatre domaines que développent les stages : l\'auto-efficacité, la résilience, la communication professionnelle et la clarté de carrière.',
 
     date: '2026-09-09',
@@ -45,7 +45,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Expérience professionnelle en entreprise au lycée : tout ce que vous devez savoir',
     shortTitle: 'Expérience professionnelle en entreprise au lycée',
     description:
-      'Tout ce que les lycéens doivent savoir sur l\'expérience professionnelle en entreprise — ce que cela implique, où trouver un stage, comment l\'obtenir et comment un score d\'évaluation vérifié renforce chaque candidature.',
+      'L\'expérience professionnelle en entreprise au lycée : ce qu\'elle implique, où trouver un stage, comment l\'obtenir et renforcer chaque candidature.',
     tldr: 'L\'expérience professionnelle pour les lycéens au Royaume-Uni consiste généralement en un stage d\'une à deux semaines ou un programme structuré chez un employeur. La plupart des grands employeurs acceptent des candidatures dès la Year 10 (14–15 ans). Des entreprises du FTSE 100 comme Barclays, Goldman Sachs, KPMG et Deloitte proposent des programmes Spring Insight pour la Year 12, avec des candidatures ouvertes en septembre–novembre.',
 
     date: '2026-09-09',
@@ -83,7 +83,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Comment se démarquer à 15 ans : le guide complet pour lycéens ambitieux',
     shortTitle: 'Comment se démarquer à 15 ans',
     description:
-      'Un guide pratique pour les lycéens qui veulent se distinguer dans leurs candidatures universitaires et professionnelles — bien avant que leurs pairs ne commencent à y penser.',
+      'Un guide pratique pour les lycéens qui veulent se distinguer dans leurs candidatures universitaires et professionnelles, bien avant les autres.',
     tldr: 'Les universités utilisent les activités extrascolaires et l\'expérience professionnelle pour distinguer les candidats avec des notes similaires. À 15–16 ans, les différenciateurs les plus crédibles pour les dossiers universitaires compétitifs sont : les stages structurés, les concours disciplinaires, les projets indépendants avec des résultats mesurables et les évaluations tierces fournissant des preuves vérifiables d\'aptitude.',
 
     date: '2026-09-09',
@@ -121,7 +121,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Créer son entreprise à 16 ans : guide pratique pour lycéens entrepreneurs',
     shortTitle: 'Créer son entreprise à 16 ans',
     description:
-      'Comment lancer une première activité entrepreneuriale à 16 ans — de l\'idée à la première vente, avec des conseils sur les aspects légaux, le financement et la gestion du temps avec le lycée.',
+      'Lancer sa première activité à 16 ans : de l\'idée à la première vente, avec des conseils sur le cadre légal, le financement et l\'organisation.',
     tldr: 'Au Royaume-Uni, toute personne de 16 ans peut légalement exercer comme auto-entrepreneur sans créer de société. Les moins de 18 ans ne peuvent pas être directeur d\'entreprise, signer des contrats contraignants de façon indépendante, ni emprunter d\'argent à leur nom. L\'inscription à l\'HMRC est requise dès que les revenus annuels dépassent l\'abattement commercial de 1 000 livres.',
 
     date: '2026-09-09',
@@ -159,7 +159,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Comment votre enfant se compare-t-il à l\'échelle mondiale ? Guide pour les parents',
     shortTitle: 'Comment se compare votre enfant à l\'échelle mondiale ?',
     description:
-      'Un guide pour les parents sur les comparaisons académiques internationales — comment interpréter les scores PISA, les référentiels britanniques et les niveaux IB pour comprendre la position de votre enfant.',
+      'Comprendre les comparaisons académiques internationales : comment lire les scores PISA, les repères britanniques et les niveaux IB pour votre enfant.',
     tldr: 'La moyenne PISA en mathématiques de l\'OCDE est de 472 points. La France a obtenu 474 points en maths lors de PISA 2022 — légèrement au-dessus de la moyenne OCDE, mais environ 100 points en dessous de Singapour (575). Une différence de 40 points PISA équivaut à environ un an de scolarisation.',
 
     date: '2026-09-09',
@@ -196,7 +196,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Comment trouver un stage de qualité en tant que lycéen en France',
     shortTitle: 'Trouver un stage de qualité lycéen en France',
     description:
-      'Guide complet pour les lycéens français qui cherchent un stage significatif — plateformes, candidatures directes, réseaux, et comment se démarquer sans expérience préalable.',
+      'Guide pour les lycéens qui cherchent un stage qui compte : plateformes, candidatures directes, réseaux et comment se démarquer sans expérience.',
     tldr: 'Les principales voies pour trouver un stage en France en tant que lycéen : candidature spontanée auprès de PME locales (taux d\'acceptation le plus élevé), plateformes spécialisées (HelloWork, Indeed), PFMP dans les lycées professionnels et journées d\'immersion chez de grandes entreprises. En France, une convention de stage signée entre l\'élève, l\'école et l\'entreprise est obligatoire pour tout stage.',
 
     date: '2026-09-09',
@@ -231,9 +231,9 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
   {
     slug: 'cv-stage-lyceen-16-ans',
     title: 'Rédiger un CV de stage percutant à 16 ans : guide étape par étape',
-    shortTitle: 'CV de Stage Lycéen 2026 : Modèle Complet et Conseils Pratiques',
+    shortTitle: 'CV de stage lycéen 2026 : modèle et conseils',
     description:
-      'Comment rédiger un CV percutant pour décrocher un stage lycéen en 2026 — structure, formulations adaptées, centres d\'intérêt et comment compenser l\'absence d\'expérience professionnelle.',
+      'Rédiger un CV de stage lycéen en 2026 : structure, formulations adaptées, centres d\'intérêt et comment compenser l\'absence d\'expérience.',
     tldr: 'Le CV de stage d\'un lycéen de 16 ans doit tenir sur une page et inclure : coordonnées, formation (lycée, classe, mention), matières et projets pertinents, compétences (langues, logiciels) et professeurs comme références. Sans expérience professionnelle, mettre en avant les projets scolaires et les activités extrascolaires est l\'approche la plus efficace.',
 
     date: '2026-09-09',
@@ -270,7 +270,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Réussir son entretien de stage lycéen : conseils et questions fréquentes',
     shortTitle: 'Entretien de stage lycéen : conseils',
     description:
-      'Comment se préparer et réussir un entretien pour un stage en tant que lycéen — les questions les plus fréquentes, les erreurs à éviter, et comment paraître confiant sans surjouer.',
+      'Réussir un entretien de stage au lycée : les questions les plus fréquentes, les erreurs à éviter et comment paraître confiant sans en faire trop.',
     tldr: 'Les questions les plus fréquentes lors d\'un entretien de stage lycéen : \'Présentez-vous\', \'Pourquoi ce secteur ?\' et \'Comment travaillez-vous en équipe ?\' Les candidats qui ont préparé des questions précises sur l\'entreprise obtiennent systématiquement de meilleures appréciations.',
 
     date: '2026-09-09',
@@ -307,7 +307,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Stage en marketing digital pour lycéens : guide complet 2026',
     shortTitle: 'Stage marketing digital pour lycéens',
     description:
-      'Comment obtenir un stage en marketing digital en tant que lycéen — ce que font les équipes marketing, quelles compétences développer, où postuler et comment convaincre sans expérience.',
+      'Décrocher un stage en marketing digital au lycée : le travail des équipes marketing, les compétences à développer, où postuler et comment convaincre.',
     tldr: 'Un stage en marketing digital pour lycéens comprend généralement : rédaction de contenus pour les réseaux sociaux, analyse de performance sur Google Analytics ou Meta Ads, recherche concurrentielle et aide à l\'emailing. Des plateformes comme Springpod et Forage proposent des programmes de marketing digital virtuels et structurés auprès de vrais employeurs.',
 
     date: '2026-09-09',
@@ -344,7 +344,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Stage en analyse de données pour lycéens : par où commencer ?',
     shortTitle: 'Stage data et analyse pour lycéens',
     description:
-      'Guide pour les lycéens attirés par la data science et l\'analyse de données — quelles compétences acquérir, où trouver un premier stage, et comment ce secteur ouvre des portes exceptionnelles.',
+      'Pour les lycéens attirés par la data : quelles compétences acquérir, où trouver un premier stage et pourquoi ce secteur ouvre tant de portes.',
     tldr: 'Les outils les plus utilisés en stage data sont Excel, SQL, Python et Power BI. Les lycéens sans base en programmation peuvent accéder à des stages data via des programmes virtuels (Forage — Accenture, JPMorgan) ou par candidature directe auprès de start-ups et de PME.',
 
     date: '2026-09-09',
@@ -381,7 +381,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Intelligence artificielle et futur de l\'emploi pour les jeunes : ce qu\'il faut savoir maintenant',
     shortTitle: 'IA et futur de l\'emploi pour les jeunes',
     description:
-      'Comment l\'intelligence artificielle va transformer le marché du travail d\'ici 2030 — quels métiers sont menacés, lesquels vont émerger, et quelles compétences les lycéens doivent développer dès maintenant.',
+      'Comment l\'IA va transformer le travail d\'ici 2030 : métiers menacés, métiers émergents et compétences à développer dès le lycée.',
     tldr: 'Le Forum Économique Mondial estime que l\'IA automatisera entre 25 et 40 % des tâches actuelles d\'ici 2030, tout en créant un solde net positif d\'emplois. Les compétences les plus recherchées dans un marché transformé par l\'IA sont la pensée critique, la résolution de problèmes complexes et la communication — aucune ne pouvant être automatisée.',
 
     date: '2026-09-09',
@@ -418,7 +418,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Stage d\'été pour lycéens en France : guide 2026 pour bien préparer l\'été',
     shortTitle: 'Stage d\'été lycéen France 2026',
     description:
-      'Tout ce qu\'il faut savoir pour trouver et réussir un stage d\'été en tant que lycéen en France — calendrier, secteurs, candidatures et comment valoriser l\'expérience pour la suite.',
+      'Trouver et réussir un stage d\'été au lycée en France : calendrier, secteurs, candidatures et comment valoriser l\'expérience pour la suite.',
     tldr: 'Les stages d\'été pour lycéens en France se déroulent de juillet à août. Une convention de stage tripartite (lycéen, établissement, entreprise) est obligatoire — sans elle, le stage est illégal. Les PME locales et les associations sont les employeurs les plus accessibles ; les grandes entreprises ouvrent leurs candidatures dès septembre–novembre pour l\'été suivant.',
 
     date: '2026-09-09',
@@ -455,7 +455,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Stage en finance et banque pour lycéens : comment entrer dans ce secteur exigeant',
     shortTitle: 'Stage finance et banque pour lycéens',
     description:
-      'Guide pour les lycéens attirés par la finance et la banque — ce que font vraiment les équipes financières, quelles compétences développer, et comment postuler à des stages dans ce secteur sélectif.',
+      'Lycéens attirés par la finance : ce que font vraiment les équipes financières, les compétences à développer et comment postuler à des stages sélectifs.',
     tldr: 'Les principales banques françaises qui accueillent des lycéens en stage sont BNP Paribas, Société Générale, Crédit Agricole et AXA. Les dossiers sont attendus 3 à 6 mois à l\'avance. La concurrence est forte — souvent 15 à 20 candidatures par place dans les grandes banques.',
 
     date: '2026-09-09',
@@ -492,7 +492,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Scores PISA France 2022 : analyse et ce que cela signifie pour votre enfant',
     shortTitle: 'Scores PISA France 2025 : résultats et classement',
     description:
-      'Analyse des résultats PISA 2022 de la France — où se situe la France par rapport aux autres pays, quelles compétences sont évaluées, et comment interpréter ces résultats pour votre enfant.',
+      'Les résultats PISA 2022 de la France : sa place face aux autres pays, les compétences évaluées et comment interpréter ces scores pour votre enfant.',
     tldr: 'La France a obtenu en 2022 une moyenne PISA de 474 en mathématiques, 474 en lecture et 487 en sciences — légèrement en dessous de la moyenne OCDE dans les deux premières matières. La France se classe derrière l\'Estonie, le Japon, la Corée du Sud et le Canada dans les trois domaines.',
 
     date: '2026-09-09',
@@ -529,7 +529,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Grandes écoles vs université : guide d\'orientation pour lycéens et leurs parents',
     shortTitle: 'Grandes écoles vs université : guide d\'orientation',
     description:
-      'Comment choisir entre les grandes écoles et l\'université en France — différences de cursus, de culture, de débouchés professionnels, et comment se préparer dès le lycée pour les deux voies.',
+      'Grandes écoles ou université ? Différences de cursus, de culture et de débouchés, et comment se préparer dès le lycée pour les deux voies.',
     tldr: 'Les grandes écoles françaises (Polytechnique, HEC, ENS) comptent parmi les établissements les plus sélectifs au monde — le taux d\'admission à l\'X est inférieur à 5 %. L\'accès se fait par concours après deux ans de classes préparatoires (CPGE). Les universités sont moins sélectives à l\'entrée mais peuvent être très compétitives dans certaines filières (médecine PASS, droit).',
 
     date: '2026-09-09',
@@ -566,7 +566,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     contentSlug: 'pisa-2025-work-experience-student-readiness',
     title: 'PISA 2025 : Les Notes Chutent Partout — Pourquoi l\'Expérience Professionnelle est la Réponse',
     shortTitle: 'PISA 2025 et Expérience Professionnelle',
-    description: 'Le rapport PISA 2025 de l\'OCDE révèle les résultats académiques les plus bas jamais enregistrés. Mais les données pointent aussi vers une solution : les élèves qui s\'engagent dans le monde réel développent les compétences que les écoles ne peuvent pas enseigner.',
+    description: 'PISA 2025 révèle les résultats les plus bas jamais mesurés. Les données pointent une solution : le contact avec le monde réel développe d\'autres compétences.',
     tldr: 'PISA 2025 a évalué 690 000 élèves de 15 ans dans 91 pays. Les pays qui intègrent davantage l\'apprentissage en milieu professionnel dans l\'enseignement secondaire (Allemagne, Suisse, Autriche) obtiennent systématiquement des scores supérieurs aux moyennes OCDE. Les données PISA montrent une corrélation positive entre l\'expérience professionnelle structurée au lycée et les performances en sciences et en mathématiques.',
 
     date: '2026-09-11',
@@ -597,7 +597,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     slug: 'pisa-2025-crise-education-mondiale-ce-que-les-parents-doivent-savoir',
     title: 'PISA 2025 : Crise de l\'Éducation Mondiale — Ce Que Chaque Parent Doit Savoir',
     shortTitle: 'PISA 2025 : La Crise de l\'Éducation Mondiale',
-    description: 'PISA 2025 révèle les scores les plus bas jamais enregistrés en mathématiques, lecture et sciences dans les pays de l\'OCDE. Nous décryptons ce que ces résultats signifient pour les familles et pourquoi évaluer son enfant n\'a jamais été aussi crucial.',
+    description: 'PISA 2025 : les scores les plus bas jamais mesurés en maths, lecture et sciences dans l\'OCDE. Ce que cela signifie pour les familles et votre enfant.',
     tldr: 'PISA 2025 a enregistré les moyennes les plus basses en mathématiques, lecture et sciences depuis la création du programme à l\'échelle des pays OCDE. PISA 2025 révèle que les élèves qui utilisent l\'IA pour des tâches spécifiques (résumer, rédiger, rechercher) obtiennent environ 20 points de moins en sciences que ceux qui ne l\'utilisent pas — l\'équivalent d\'environ un an de scolarisation.',
 
     date: '2026-09-10',
@@ -622,7 +622,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     slug: 'pisa-c-est-quoi-resultats-2025-reussite-professionnelle',
     title: 'PISA, c\'est quoi ? Résultats 2025, la question sur « PISA 2026 » et le lien avec la réussite professionnelle',
     shortTitle: 'PISA c\'est quoi ? Résultats 2025 par pays',
-    description: 'Qu\'est-ce que PISA, comment ça marche, que mesure-t-il ? PISA 2026 existe-t-il ? Et surtout : la performance au PISA prédit-elle le succès dans la vie professionnelle ? Une analyse honnête d\'un éducateur expérimenté.',
+    description: 'Qu\'est-ce que PISA, que mesure-t-il, PISA 2026 existe-t-il ? Et surtout, prédit-il la réussite professionnelle ? L\'analyse honnête d\'un éducateur.',
     tldr: 'PISA (Programme International pour le Suivi des Acquis des élèves) évalue les compétences de jeunes de 15 ans dans 91 pays tous les trois ans. Il mesure les mathématiques, la lecture et les sciences ; la moyenne OCDE est d\'environ 472–476 points par matière. Les compétences mesurées par PISA — raisonnement quantitatif, compréhension en lecture, résolution de problèmes — correspondent aux aptitudes les plus demandées par les employeurs.',
 
     date: '2026-09-21',
@@ -667,7 +667,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Qu\'est-ce qu\'un score standardisé ? Guide pour les parents sur l\'évaluation éducative',
     shortTitle: 'Qu\'est-ce qu\'un score standardisé ?',
     description:
-      'Qu\'est-ce qu\'un score standardisé et pourquoi est-il important ? Explication de l\'échelle avec une moyenne de 100 et un écart-type de 15, utilisée dans les tests 11+, CAT4, CogAT et NWEA MAP.',
+      'Qu\'est-ce qu\'un score standardisé ? L\'échelle de moyenne 100 et d\'écart-type 15 utilisée par les tests 11+, CAT4, CogAT et NWEA MAP, expliquée.',
     tldr: 'Un score standardisé mesure comment votre enfant performe par rapport à d\'autres enfants du même âge, sur une échelle avec une moyenne de 100 et un écart-type de 15. Cette échelle commune est utilisée par le CAT4, GL Assessment 11+, le CogAT et Eduentry, ce qui permet des comparaisons significatives entre tests différents. Un score de 115 correspond au 84e percentile — au-dessus de la moyenne — quel que soit le test utilisé.',
     date: '2026-09-26',
     dateModified: '2026-09-26',
@@ -700,7 +700,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Scores NWEA MAP : comprendre les résultats de votre enfant',
     shortTitle: 'Scores NWEA MAP : guide complet',
     description:
-      'Qu\'est-ce que le NWEA MAP et comment interpréter les résultats du test ? Guide sur l\'échelle RIT, les percentiles et les objectifs de progression pour les parents.',
+      'Qu\'est-ce que le NWEA MAP et comment lire ses résultats ? Guide pour les parents sur l\'échelle RIT, les percentiles et les objectifs de progression.',
     tldr: 'Le NWEA MAP Growth est un test adaptatif utilisé dans les écoles américaines et certains établissements internationaux. Les scores RIT (Rasch Unit) mesurent le niveau absolu de l\'enfant sur une échelle continue de la maternelle à la terminale. Un élève de CM2 avec un RIT de mathématiques de 216 se situe au 75e percentile pour son niveau. La progression typique est de 6 à 8 points RIT par an au primaire.',
     date: '2026-09-26',
     dateModified: '2026-09-26',
@@ -799,7 +799,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Test CAT4 : guide complet pour les parents',
     shortTitle: 'Test CAT4 : guide complet',
     description:
-      'Qu\'est-ce que le test CAT4, que mesure-t-il et comment interpréter les résultats ? Guide complet pour les parents sur l\'évaluation cognitive dans les écoles britanniques et internationales.',
+      'Qu\'est-ce que le test CAT4, que mesure-t-il et comment lire les résultats ? Guide pour les parents sur ce test cognitif des écoles internationales.',
     tldr: 'Le CAT4 mesure le raisonnement verbal, quantitatif, non verbal et spatial sur une échelle SAS (moyenne 100, écart-type 15). Utilisé dans plus de 3 000 écoles au Moyen-Orient et dans les écoles britanniques internationales, il évalue les aptitudes cognitives indépendamment des connaissances scolaires. Un SAS moyen de 90–95 est le seuil en dessous duquel certaines écoles considèrent qu\'un enfant pourrait avoir du mal avec leur programme.',
     date: '2026-09-26',
     dateModified: '2026-09-26',
@@ -832,7 +832,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Comprendre les forces et faiblesses de votre enfant avant le lycée',
     shortTitle: 'Forces et faiblesses : préparer l\'entrée au lycée',
     description:
-      'Comment identifier les aptitudes cognitives naturelles de votre enfant — raisonnement verbal, aptitude numérique, mémoire de travail, raisonnement spatial — avant le lycée, et utiliser ce profil pour guider la préparation et les choix de filières.',
+      'Identifier les aptitudes de votre enfant — raisonnement verbal et spatial, aptitude numérique, mémoire de travail — pour guider ses choix au lycée.',
     tldr: 'Les notes scolaires mesurent la performance relative en classe — elles ne révèlent pas le profil cognitif sous-jacent de l\'enfant. Identifier les forces et faiblesses en raisonnement verbal, aptitude numérique, mémoire de travail et raisonnement spatial avant le lycée offre aux parents une feuille de route ciblée, bien plus utile qu\'un bulletin de notes vague.',
 
     date: '2026-09-27',
@@ -869,7 +869,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     contentSlug: '65-jobs-ai-cannot-automate',
     title: '65 Métiers à l\'Abri de l\'IA et des Robots — Ce Que Chaque Parent Doit Savoir',
     shortTitle: '65 Métiers que l\'IA ne Peut Pas Automatiser',
-    description: 'Le Forum Économique Mondial prédit que 40% des emplois seront perturbés par l\'IA d\'ici 2030. Voici 65 métiers avec 0% de probabilité d\'automatisation — et ce qu\'ils signifient pour l\'avenir de votre enfant.',
+    description: 'Selon le Forum économique mondial, l\'IA perturbera 40% des emplois d\'ici 2030. Voici 65 métiers que l\'IA ne peut pas automatiser.',
     tldr: 'Selon les données du Bureau of Labor Statistics américain et l\'analyse des probabilités d\'automatisation, 65 métiers ont une probabilité d\'automatisation de 0,0%. Ils partagent quatre caractéristiques que l\'IA ne peut pas reproduire : l\'intelligence émotionnelle, la lecture de la situation, le travail créatif et une forte variabilité quotidienne des tâches.',
     date: '2026-09-28',
     dateModified: '2026-09-28',
@@ -901,7 +901,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     contentSlug: 'oecd-teenage-work-experience-career-outcomes',
     title: 'Recherche OCDE : le pouvoir caché de l\'expérience professionnelle des adolescents sur la carrière',
     shortTitle: 'Avantages de l\'expérience professionnelle ados : étude OCDE',
-    description: 'Les ados avec une expérience professionnelle avant 16 ans gagnent 5–10 % de plus à l\'âge adulte, selon l\'OCDE (47 études longitudinales). Quelles compétences se développent, qui est exclu et que faire en tant que parent.',
+    description: 'Les ados ayant travaillé avant 16 ans gagnent 5–10% de plus à l\'âge adulte (OCDE, 47 études). Compétences acquises, inégalités d\'accès et rôle des parents.',
     tldr: '40 études longitudinales sur 47 examinées par l\'OCDE montrent que les élèves ayant bénéficié d\'une expérience professionnelle scolaire ont de meilleurs résultats d\'emploi à l\'âge adulte. La prime salariale est de 5 à 10 %. Pourtant, environ 50 % des adolescents en Espagne, en Italie et au Brésil n\'ont aucune expérience professionnelle avant 15 ans.',
     date: '2026-09-30',
     readTime: '10 min de lecture',
@@ -948,7 +948,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     contentSlug: 'oecd-teenage-part-time-work-benefits',
     title: 'Travail à temps partiel pour les adolescents : les bénéfices prouvés par l\'OCDE et comment en tirer le meilleur',
     shortTitle: 'Travail à temps partiel ados : bénéfices prouvés par l\'OCDE',
-    description: 'La recherche de l\'OCDE confirme que le travail à temps partiel pendant les études développe la culture financière, la confiance professionnelle et les compétences. Ce que montrent les données et comment en tirer le meilleur.',
+    description: 'L\'OCDE confirme que travailler à temps partiel pendant les études développe culture financière, confiance et compétences. Ce que montrent les données.',
     tldr: 'La recherche de l\'OCDE sur le travail à temps partiel des adolescents montre que les élèves travaillant jusqu\'à environ 15 heures par semaine développent des compétences professionnelles plus solides et une meilleure culture financière. Les facteurs clés sont l\'encadrement, la pertinence pour la carrière et le respect des plages horaires productives.',
     date: '2026-10-01',
     readTime: '9 min de lecture',
@@ -988,7 +988,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: "Découvrez les Forces Cachées et les Axes de Développement de Votre Enfant : Guide Moderne pour Parents",
     shortTitle: 'Forces Cachées de Votre Enfant : Guide pour Parents',
     description:
-      "Les bulletins scolaires ne montrent que les notes actuelles — pas le potentiel cognitif réel de votre enfant. Ce guide explique comment l'évaluation adaptive par IA révèle les forces et axes d'amélioration en raisonnement verbal, non verbal, mathématiques et anglais pour les 6–17 ans.",
+      "Les bulletins montrent les notes, pas le potentiel. Comment l'évaluation adaptative révèle les forces et les lacunes de votre enfant de 6 à 17 ans.",
     tldr: "L'évaluation adaptive d'Eduentry mesure les quatre domaines cognitifs qui prédisent la réussite scolaire : raisonnement verbal, raisonnement non verbal, compétences mathématiques et maîtrise de l'anglais. Le système s'adapte en temps réel à chaque réponse, cartographiant le plafond réel de l'enfant sans anxiété.",
     date: '2026-09-30',
     readTime: '8 min de lecture',
@@ -1027,7 +1027,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     contentSlug: 'discover-child-strengths-free-academic-test',
     title: 'Test Académique Gratuit : Découvrez les Forces et Faiblesses de Votre Enfant en 35 Minutes',
     shortTitle: 'Test Académique Gratuit : Forces et Faiblesses',
-    description: "Les notes scolaires ne révèlent pas le vrai potentiel cognitif de votre enfant. Notre test académique adaptatif gratuit mesure le raisonnement verbal, numérique et spatial en 35 minutes — rapport immédiat comparé aux normes internationales.",
+    description: "Les notes ne révèlent pas le vrai potentiel de votre enfant. Notre test adaptatif gratuit mesure le raisonnement verbal, numérique et spatial en 35 min.",
     tldr: "Un test adaptatif gratuit mesurant le raisonnement verbal, numérique et visuo-spatial de façon indépendante — rapport en percentile international en 35 minutes. Basé sur le CAT et l'IRT, la même méthodologie que le CAT4 et le NWEA MAP.",
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -1088,7 +1088,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Mon enfant est intelligent mais a de mauvaises notes',
     shortTitle: 'Enfant Intelligent, Mauvaises Notes : Que Faire ?',
     description:
-      'Votre enfant est clairement intelligent, mais son bulletin scolaire ne le reflète pas. Voici pourquoi les notes ne mesurent pas la capacité cognitive — et comment découvrir le vrai plafond académique de votre enfant dans les quatre domaines cognitifs.',
+      'Votre enfant est intelligent, mais son bulletin ne le montre pas. Pourquoi les notes ne mesurent pas les capacités et comment révéler son vrai potentiel.',
     tldr: 'Les enfants intelligents ont de mauvaises notes quand il y a un décalage entre leur profil cognitif et la façon dont l\'école mesure la performance. Les notes scolaires mesurent principalement l\'intelligence cristallisée — les connaissances mémorisées et restituées — tandis que beaucoup d\'enfants brillants ont une intelligence fluide exceptionnelle : la capacité de raisonner, détecter des patterns et résoudre des problèmes nouveaux que les examens standardisés capturent rarement.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -1149,7 +1149,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Comment Trouver un Stage Étudiant : Le Guide Complet',
     shortTitle: 'Comment Trouver un Stage Étudiant',
     description:
-      "Guide pratique basé sur la recherche pour les lycéens et étudiants universitaires sur la recherche de stage sans expérience. Découvrez comment une évaluation de préparation au stage vous aide à contourner les filtres de notes et à décrocher votre première expérience.",
+      "Trouver un stage sans expérience, au lycée ou à l'université, et comment une évaluation de préparation aide à passer les filtres de notes.",
     tldr: "Les étudiants ayant une expérience de stage préalable reçoivent des offres d'emploi avant l'obtention du diplôme à un taux 70% plus élevé (NACE, 2020). Le plus grand obstacle est le paradoxe de l'expérience. Une évaluation de préparation au stage vous donne un profil de talent vérifiable.",
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -1209,7 +1209,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     contentSlug: 'global-academic-benchmarks-report-2026',
     title: 'Rapport sur les Références Académiques Mondiales 2026: Tendances Internationales de Notation et d\'Évaluation',
     shortTitle: 'Rapport Références Académiques Mondiales 2026',
-    description: 'Analyse complète des tendances des examens standardisés internationaux 2026 — scores SAS, références PISA/TIMSS, SAT numérique adaptatif et les seuils percentiles que les familles doivent suivre pour les admissions sélectives.',
+    description: 'Tendances 2026 des tests standardisés internationaux : scores SAS, repères PISA/TIMSS, SAT numérique et seuils de percentiles pour les admissions sélectives.',
     tldr: 'La moyenne PISA de l\'OCDE en mathématiques, lecture et sciences est d\'environ 472–476. Le Royaume-Uni se situe au-dessus de la moyenne de l\'OCDE en lecture et sciences, et dans la moyenne en mathématiques. Singapour est leader mondial dans les trois matières, avec un score 70–100 points PISA supérieur au Royaume-Uni — un écart équivalent à environ 2–3 années de scolarité.',
     date: '2026-06-16',
     dateModified: '2026-10-02',
@@ -1235,7 +1235,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: "Activités d'Été pour Enfants Académiquement Ambitieux : Guide 2026",
     shortTitle: "Activités d'Été pour Enfants Académiquement Ambitieux",
     description:
-      "Guide basé sur la recherche pour les parents qui planifient un été productif pour leurs enfants performants de 9 à 16 ans. Couvre les stages, les évaluations cognitives, les programmes d'enrichissement et un cadre en 3 étapes pour adapter les activités d'été aux vraies forces de votre enfant.",
+      "Un été utile pour les enfants performants de 9 à 16 ans : stages, évaluations, programmes d'enrichissement et un plan en 3 étapes selon leurs forces.",
     tldr: "Les étés non structurés creusent l'écart de réussite — mais le mauvais été structuré tue la motivation intrinsèque. La réponse est intentionnelle, variée et adaptée au profil cognitif de l'enfant. Commencez par une évaluation gratuite de 35 minutes pour savoir quel domaine développer avant de réserver quoi que ce soit.",
     date: '2026-10-01',
     dateModified: '2026-10-01',
@@ -1295,7 +1295,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     contentSlug: 'how-to-prepare-for-11-plus',
     title: 'Comment Préparer l\'Examen 11+ à la Maison : Guide Complet pour les Parents',
     shortTitle: 'Comment Préparer le 11+ : Guide Complet',
-    description: 'Guide pratique pour les parents sur la préparation du 11+ à la maison — couvrant le raisonnement verbal, le raisonnement non verbal, les maths et l\'anglais, avec un calendrier de préparation recommandé de 18 mois.',
+    description: 'Préparer le 11+ à la maison : raisonnement verbal et non verbal, maths et anglais, avec un calendrier de préparation recommandé sur 18 mois.',
     tldr: 'La plupart des familles commencent la préparation au 11+ 12 à 18 mois avant l\'examen, qui se déroule généralement en septembre ou octobre de l\'année 6. Une préparation efficace représente 3 à 4 heures par semaine en phase initiale (années 4–5), puis 5 à 7 heures par semaine dans les 3 derniers mois — réparties en séances quotidiennes de 20 à 30 minutes. Les quatre matières évaluées sont l\'anglais, les mathématiques, le raisonnement verbal et le raisonnement non verbal.',
     date: '2026-10-03',
     dateModified: '2026-10-03',
@@ -1355,7 +1355,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     contentSlug: 'verbal-reasoning-11-plus-guide',
     title: 'Le Raisonnement Verbal pour le 11+ : Types de Questions, Exemples et Conseils',
     shortTitle: 'Raisonnement Verbal 11+ : Guide Complet',
-    description: 'Guide complet sur les questions de raisonnement verbal que votre enfant rencontrera au 11+ — couvrant tous les principaux types de questions avec des exemples travaillés, les erreurs courantes à éviter et des conseils pour une pratique efficace à la maison.',
+    description: 'Le raisonnement verbal au 11+ : tous les types de questions avec exemples corrigés, les erreurs courantes et des conseils pour s\'entraîner à la maison.',
     tldr: 'Le raisonnement verbal au 11+ teste la pensée logique en utilisant des mots — non pas la capacité de lecture ou l\'expression écrite. Les types de questions incluent les analogies de mots (CHAUD:FROID comme RAPIDE:?), les codes, les séquences, les mots cachés et les synonymes. Il est distinct de la compréhension en anglais et peut être amélioré par une pratique ciblée indépendamment du niveau de lecture.',
     date: '2026-10-03',
     dateModified: '2026-10-03',
@@ -1416,7 +1416,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Les Habitudes que Votre Enfant Doit Développer Maintenant pour Éviter le Chômage',
     shortTitle: 'Habitudes pour Éviter le Chômage Futur',
     description:
-      '8 habitudes qui protègent les enfants du chômage futur : pensée critique, littératie IA, culture financière et expérience réelle. Guide parental basé sur les recherches de McKinsey, FEM et OCDE.',
+      '8 habitudes qui protègent les enfants du chômage : pensée critique, maîtrise de l\'IA, culture financière et expérience réelle, selon McKinsey et l\'OCDE.',
     tldr: 'McKinsey estime que 375 millions de travailleurs dans le monde — 14% de la main-d\'œuvre — devront changer de métier d\'ici 2030. Mais les compétences les plus difficiles à reproduire pour l\'IA sont constantes dans toutes les grandes études : la pensée critique, la créativité, l\'intelligence émotionnelle et l\'initiative. Celles-ci ne se construisent pas avec des notes ; elles se construisent avec des habitudes formées tôt.',
     date: '2026-10-04',
     dateModified: '2026-10-04',

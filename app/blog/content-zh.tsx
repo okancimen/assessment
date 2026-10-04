@@ -957,7 +957,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
                   <td className="p-4 font-mono font-semibold text-gray-900">{range}</td>
                   <td className="p-4 text-gray-700">{label}</td>
                   <td className="p-4 text-gray-500">{pct}</td>
-                  <td className="p-4 text-gray-400">{pop}</td>
+                  <td className="p-4 text-gray-500">{pop}</td>
                 </tr>
               ))}
             </tbody>
@@ -988,7 +988,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
             <li key={score} className="flex justify-between items-center border-b border-gray-50 pb-2">
               <span className="font-medium">{score}</span>
               <span className="text-indigo-600 font-medium">{pct}</span>
-              <span className="text-gray-400 text-xs">{note}</span>
+              <span className="text-gray-500 text-xs">{note}</span>
             </li>
           ))}
         </ul>
@@ -1202,7 +1202,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-gray-400">来源：NWEA 2020年MAP成长测试学生与学校成就状态及成长常模。</p>
+        <p className="text-sm text-gray-500">来源：NWEA 2020年MAP成长测试学生与学校成就状态及成长常模。</p>
       </section>
 
       <section>
@@ -2318,7 +2318,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
         <div className="grid sm:grid-cols-2 gap-4">
           {[
             { href: '/zh/blog/oecd-qingshaonian-gongzuo-jingyan-zhiye-chengguo', tag: '研究', title: 'OECD研究：青少年工作经验与职业结果' },
-            { href: '/zh/blog/pisa-2025-gongzuo-jingyan-xuesheng-zhunbei', tag: '指南', title: 'PISA 2025：为何工作经验是缺失的答案' },
+            { href: '/zh/blog/pisa-shi-shenme-2025-chengji-yu-zhiye-fazhan', tag: '指南', title: 'PISA 2025：为何工作经验是缺失的答案' },
             { href: '/zh/blog/65-ge-ai-wu-fa-zidong-hua-de-zhiye', tag: '指南', title: '65个人工智能无法自动化的职业' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
@@ -2421,8 +2421,8 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
         <div className="grid sm:grid-cols-2 gap-4">
           {[
             { href: '/zh/blog/mianfei-xueshu-ceshi-haizi-youshi-ruodian', tag: '测评', title: '免费学业测试：35分钟发现孩子的优势与不足' },
-            { href: '/zh/blog/haizi-youshi-ruodian-zhongxue-zhunbei', tag: '指南', title: '中学前了解孩子的优势与不足' },
-            { href: '/zh/blog/faxian-xueling-haizi-qianyin-youshi-xiandai-zhiyin', tag: '指南', title: '发现孩子的隐藏优势：现代家长指南' },
+            { href: '/zh/blog/liaojie-haizi-youshi-ruodian-zhongxue-zhunbei', tag: '指南', title: '中学前了解孩子的优势与不足' },
+            { href: '/zh/blog/faxian-xueling-haizi-yincang-qianli-jiachang-zhinan', tag: '指南', title: '发现孩子的隐藏优势：现代家长指南' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

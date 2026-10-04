@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import PublicNav from '@/components/layout/PublicNav'
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ area: str
   if (!area) return {}
   const url = `${BASE_URL}/grammar-schools/${slug}`
   return {
-    title: area.metaTitle,
+    title: brandedTitle(area.metaTitle),
     description: area.metaDescription,
     alternates: { canonical: url, languages: { 'en-GB': url, 'x-default': url } },
     keywords: `grammar schools ${area.name}, 11 plus ${area.name}, ${area.name} 11+ entry requirements, grammar school ${area.name} score`,
@@ -85,7 +86,7 @@ export default async function GrammarAreaPage({ params }: { params: Promise<{ ar
       <PublicNav />
 
       <main className="flex-1 max-w-4xl mx-auto px-6 py-16 w-full">
-        <nav className="text-sm text-gray-400 mb-8">
+        <nav className="text-sm text-gray-500 mb-8">
           <Link href="/" className="hover:text-gray-600">Home</Link>
           <span className="mx-2">›</span>
           <Link href="/grammar-schools" className="hover:text-gray-600">Grammar Schools</Link>

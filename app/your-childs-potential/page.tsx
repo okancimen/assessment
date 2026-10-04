@@ -7,9 +7,9 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/auth/register`
 
 export const metadata: Metadata = {
-  title: "What Are My Child's Strengths and Weaknesses? — Free Cognitive Test",
+  title: "Your Child's Strengths & Weaknesses: Free Test",
   description:
-    "Discover your child's strengths and weaknesses in 35 minutes. Free adaptive cognitive assessment benchmarked against PISA, SAT and GCSE standards — instant AI-powered report, no subscription required.",
+    "Find your child's strengths and gaps in 35 minutes. Free adaptive assessment benchmarked against PISA, SAT and GCSE, with an instant AI report.",
   keywords: [
     "what are my child's strengths and weaknesses",
     "my child's strengths",
@@ -227,7 +227,7 @@ export default function YourChildsPotentialPage() {
             Assess Cognitive Potential (Free)
           </Link>
 
-          <p className="mt-4 text-xs text-gray-400">
+          <p className="mt-4 text-xs text-gray-500">
             Free International Benchmark &nbsp;•&nbsp; 100% Private &nbsp;•&nbsp; Instant AI-Powered Cognitive Profile PDF
           </p>
         </div>
@@ -355,7 +355,7 @@ export default function YourChildsPotentialPage() {
             >
               Assess Cognitive Potential (Free)
             </Link>
-            <p className="mt-3 text-xs text-gray-400">Free International Benchmark &nbsp;•&nbsp; 100% Private &nbsp;•&nbsp; Instant AI-Powered Cognitive Profile PDF</p>
+            <p className="mt-3 text-xs text-gray-500">Free International Benchmark &nbsp;•&nbsp; 100% Private &nbsp;•&nbsp; Instant AI-Powered Cognitive Profile PDF</p>
           </div>
         </div>
       </section>

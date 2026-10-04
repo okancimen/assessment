@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
 import { notFound, redirect } from 'next/navigation'
 import PublicNav from '@/components/layout/PublicNav'
@@ -83,7 +84,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!post) return {}
   const url = `${BASE_URL}/blog/${slug}`
   return {
-    title: post.shortTitle,
+    title: brandedTitle(post.shortTitle),
     description: post.description,
     keywords: post.tags,
     alternates: {
@@ -230,7 +231,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <PublicNav />
 
       <main className="max-w-3xl mx-auto px-6 py-16">
-        <nav className="text-sm text-gray-400 mb-8">
+        <nav className="text-sm text-gray-500 mb-8">
           <Link href="/" className="hover:text-gray-600">Home</Link>
           <span className="mx-2">›</span>
           <Link href="/blog" className="hover:text-gray-600">Blog</Link>
@@ -250,7 +251,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">
             {post.title}
           </h1>
-          <div className="flex items-center gap-3 text-sm text-gray-400">
+          <div className="flex items-center gap-3 text-sm text-gray-500">
             <time dateTime={post.date}>
               {new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
             </time>
@@ -263,7 +264,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
         {/* Cross-locale links */}
         {(esByContentSlug.has(slug) || trByContentSlug.has(slug) || frByContentSlug.has(slug) || arByContentSlug.has(slug) || ruByContentSlug.has(slug) || zhByContentSlug.has(slug)) && (
-          <div className="mb-10 flex items-center gap-2 text-xs text-gray-400 flex-wrap">
+          <div className="mb-10 flex items-center gap-2 text-xs text-gray-500 flex-wrap">
             <span>Also available in:</span>
             {[
               esByContentSlug.has(slug) && { href: `/es/blog/${esByContentSlug.get(slug)}`, flag: '🇪🇸', label: 'Español' },
@@ -285,7 +286,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
         {post.tldr && (
           <div className="mb-10 border-l-4 border-indigo-400 bg-indigo-50 rounded-r-xl px-5 py-4">
-            <p className="text-xs font-semibold text-indigo-500 uppercase tracking-wider mb-1">Quick answer</p>
+            <p className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-1">Quick answer</p>
             <p className="text-sm text-gray-700 leading-relaxed">{post.tldr}</p>
           </div>
         )}
@@ -300,7 +301,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           if (!links.length) return null
           return (
             <section className="mt-12 border border-gray-100 rounded-2xl p-6 bg-gray-50/50">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">From Eduentry</p>
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">From Eduentry</p>
               <div className="space-y-4">
                 {links.map((link) => (
                   <Link key={link.href} href={link.href} className="flex items-start gap-3 group">
@@ -337,7 +338,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   <div className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-indigo-700 transition-colors flex-1">
                     {p.shortTitle}
                   </div>
-                  <div className="text-xs text-gray-400">{p.readTime}</div>
+                  <div className="text-xs text-gray-500">{p.readTime}</div>
                 </Link>
               ))}
             </div>
@@ -347,7 +348,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {/* CTA */}
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'See what your child\'s report looks like'}</h2>
-          <p className="text-indigo-200 mb-8">{post.cta?.body ?? 'View a sample report — standardised score, subject breakdown and personalised recommendations. No account needed.'}</p>
+          <p className="text-indigo-100 mb-8">{post.cta?.body ?? 'View a sample report — standardised score, subject breakdown and personalised recommendations. No account needed.'}</p>
           <CtaLink href={post.cta?.href ?? '/sample-report'} label="blog_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
             {post.cta?.label ?? 'See a sample report'}
           </CtaLink>

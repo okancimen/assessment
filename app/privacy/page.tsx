@@ -4,7 +4,7 @@ import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — Eduentry',
+  title: 'Privacy Policy',
   description: 'How Eduentry collects and protects your personal data and your child\'s assessment results. GDPR and UK GDPR compliant. Data is never sold or shared.',
   keywords: ['Eduentry privacy policy', 'children data protection', 'GDPR assessment platform', 'UK GDPR'],
   alternates: { canonical: 'https://eduentry.com/privacy', languages: { 'en-GB': 'https://eduentry.com/privacy', 'x-default': 'https://eduentry.com/privacy' } },
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     title: 'Privacy Policy — Eduentry',
     description: 'How Eduentry collects, uses, and protects your personal data and your child\'s assessment results. GDPR compliant.',
     url: 'https://eduentry.com/privacy',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -40,7 +41,7 @@ export default function PrivacyPage() {
 
       <main className="max-w-3xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-3">Privacy Policy</h1>
-        <p className="text-sm text-gray-400 mb-10">Last updated: 22 September 2026</p>
+        <p className="text-sm text-gray-500 mb-10">Last updated: 22 September 2026</p>
 
         <div className="prose prose-gray max-w-none space-y-10">
 

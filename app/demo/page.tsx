@@ -8,7 +8,7 @@ const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
   title: { absolute: 'Try a Free Sample Assessment — See How Eduentry Works' },
-  description: 'Try four sample questions — English, Maths, Verbal and Non-Verbal Reasoning. No account required. See how Eduentry\'s adaptive assessment works before you register.',
+  description: 'Try four sample questions in English, Maths, Verbal and Non-Verbal Reasoning. No account needed — see how the adaptive assessment works first.',
   alternates: { canonical: `${BASE_URL}/demo`, languages: { 'en-GB': `${BASE_URL}/demo`, 'x-default': `${BASE_URL}/demo` } },
   keywords: ['free sample assessment children', 'try adaptive test free', 'free 11 plus sample questions', 'demo academic assessment', 'sample verbal reasoning test', 'free maths English test sample'],
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -56,7 +56,7 @@ export default function DemoPage() {
       <PublicNav />
 
       <main className="flex-1 max-w-3xl mx-auto px-6 py-16 w-full">
-        <nav className="text-sm text-gray-400 mb-8">
+        <nav className="text-sm text-gray-500 mb-8">
           <Link href="/" className="hover:text-gray-600">Home</Link>
           <span className="mx-2">›</span>
           <span className="text-gray-700">Try a Sample</span>

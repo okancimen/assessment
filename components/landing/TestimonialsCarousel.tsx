@@ -111,13 +111,13 @@ export default function TestimonialsCarousel() {
         </button>
 
         {/* Dots */}
-        <div className="flex gap-2">
+        <div className="flex">
           {TESTIMONIALS.map((_, i) => (
             <button
               key={i}
               onClick={() => setIndex(i)}
               aria-label={`Go to testimonial ${i + 1}`}
-              className={`rounded-full transition-all duration-300 ${
+              className={`box-content p-2 bg-clip-content rounded-full transition-all duration-300 ${
                 i === index
                   ? 'w-5 h-2 bg-[#4F46E5]'
                   : 'w-2 h-2 bg-[#d2d2d7] hover:bg-[#86868b]'

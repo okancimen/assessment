@@ -212,7 +212,7 @@ export default function PotentsialVashegoRebyonkaPage() {
             Оценить Когнитивный Потенциал (Бесплатно)
           </Link>
 
-          <p className="mt-4 text-xs text-gray-400">
+          <p className="mt-4 text-xs text-gray-500">
             Бесплатное Международное Сравнение &nbsp;•&nbsp; 100% Конфиденциально &nbsp;•&nbsp; Мгновенный PDF-Отчёт
           </p>
         </div>
@@ -340,7 +340,7 @@ export default function PotentsialVashegoRebyonkaPage() {
             >
               Оценить Когнитивный Потенциал (Бесплатно)
             </Link>
-            <p className="mt-3 text-xs text-gray-400">Бесплатное Международное Сравнение &nbsp;•&nbsp; 100% Конфиденциально &nbsp;•&nbsp; Мгновенный PDF-Отчёт</p>
+            <p className="mt-3 text-xs text-gray-500">Бесплатное Международное Сравнение &nbsp;•&nbsp; 100% Конфиденциально &nbsp;•&nbsp; Мгновенный PDF-Отчёт</p>
           </div>
         </div>
       </section>

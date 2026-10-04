@@ -15,7 +15,7 @@ export default function BlogPostCard({ post }: { post: BlogPostMeta }) {
       onKeyDown={(e) => e.key === 'Enter' && router.push(`/blog/${post.slug}`)}
       className="block border border-gray-100 rounded-2xl p-6 sm:p-8 hover:border-indigo-200 hover:shadow-sm transition-all cursor-pointer"
     >
-      <div className="flex items-center gap-3 text-xs text-gray-400 mb-3">
+      <div className="flex items-center gap-3 text-xs text-gray-500 mb-3">
         <time dateTime={post.date}>
           {new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
         </time>

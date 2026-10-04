@@ -1523,7 +1523,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-gray-400">المصدر: معايير MAP Growth الوطنية لعام 2020 — NWEA.</p>
+        <p className="text-sm text-gray-500">المصدر: معايير MAP Growth الوطنية لعام 2020 — NWEA.</p>
       </section>
 
       <section dir="rtl">
@@ -2629,9 +2629,9 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-xl font-bold text-gray-900 mb-4" dir="rtl">أدلة ذات صلة</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { href: '/ar/blog/bahth-oecd-khubrat-amal-murahiqin-natayij-mihania', tag: 'بحث', title: 'بحث OECD: خبرة عمل المراهقين ونتائج مسار حياتهم المهنية' },
-            { href: '/ar/blog/pisa-2025-khubrat-amal-talab-jadahia', tag: 'دليل', title: 'PISA 2025: لماذا خبرة العمل هي الإجابة المفقودة' },
-            { href: '/ar/blog/65-wazifa-la-tastati-al-dhakaa-al-istinai-automatiha', tag: 'دليل', title: '65 وظيفة لا تستطيع الذكاء الاصطناعي أتمتتها' },
+            { href: '/ar/blog/oecd-khubra-amaliyya-mubakkira-nataij-mihniyya', tag: 'بحث', title: 'بحث OECD: خبرة عمل المراهقين ونتائج مسار حياتهم المهنية' },
+            { href: '/ar/blog/pisa-2025-khibra-amaliya-istidad-talab', tag: 'دليل', title: 'PISA 2025: لماذا خبرة العمل هي الإجابة المفقودة' },
+            { href: '/ar/blog/65-wazifa-amina-min-altamtil-bildhaka-alaishtinai', tag: 'دليل', title: '65 وظيفة لا تستطيع الذكاء الاصطناعي أتمتتها' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2" dir="rtl">{link.tag}</div>
@@ -2706,9 +2706,9 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-xl font-bold text-gray-900 mb-4" dir="rtl">أدلة ذات صلة</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { href: '/ar/blog/iktishaf-quwat-tiflak-ikhtibar-akadimi-majani', tag: 'تقييم', title: 'اختبار أكاديمي مجاني: اكتشف نقاط قوة وضعف طفلك' },
-            { href: '/ar/blog/quwat-daaif-tiflak-tamhid-lil-thanawiya', tag: 'دليل', title: 'فهم نقاط قوة طفلك قبل المرحلة الثانوية' },
-            { href: '/ar/blog/iktishaf-quwat-khafiya-lil-tifl-fil-sinn-al-madrasia', tag: 'دليل', title: 'اكتشف القدرات الخفية لطفلك في سن المدرسة' },
+            { href: '/ar/blog/ikhtibar-akademi-majani-quwat-duaf-tiflak', tag: 'تقييم', title: 'اختبار أكاديمي مجاني: اكتشف نقاط قوة وضعف طفلك' },
+            { href: '/ar/blog/fahm-quwat-dauf-tiflik-qabl-al-thanawiya', tag: 'دليل', title: 'فهم نقاط قوة طفلك قبل المرحلة الثانوية' },
+            { href: '/ar/blog/iktishaf-mawahib-tiflak-dalil-walidain-jadid', tag: 'دليل', title: 'اكتشف القدرات الخفية لطفلك في سن المدرسة' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2" dir="rtl">{link.tag}</div>
@@ -2806,8 +2806,8 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
         <div className="grid sm:grid-cols-2 gap-4">
           {[
             { href: '/ar/blog/kayfa-tajid-tadrib-ka-talib', tag: 'دليل', title: 'كيف تجد تدريباً كطالب: الدليل الشامل' },
-            { href: '/ar/blog/bahth-oecd-khubrat-amal-murahiqin-natayij-mihania', tag: 'بحث', title: 'بحث OECD: خبرة عمل المراهقين ونتائج المسيرة المهنية' },
-            { href: '/ar/blog/iktishaf-quwat-tiflak-ikhtibar-akadimi-majani', tag: 'تقييم', title: 'اختبار أكاديمي مجاني: اكتشف نقاط قوة طفلك' },
+            { href: '/ar/blog/oecd-khubra-amaliyya-mubakkira-nataij-mihniyya', tag: 'بحث', title: 'بحث OECD: خبرة عمل المراهقين ونتائج المسيرة المهنية' },
+            { href: '/ar/blog/ikhtibar-akademi-majani-quwat-duaf-tiflak', tag: 'تقييم', title: 'اختبار أكاديمي مجاني: اكتشف نقاط قوة طفلك' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2" dir="rtl">{link.tag}</div>

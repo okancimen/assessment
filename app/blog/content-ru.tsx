@@ -1150,7 +1150,7 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
                   <td className="p-4 font-mono font-semibold text-gray-900">{range}</td>
                   <td className="p-4 text-gray-700">{label}</td>
                   <td className="p-4 text-gray-500">{pct}</td>
-                  <td className="p-4 text-gray-400">{pop}</td>
+                  <td className="p-4 text-gray-500">{pop}</td>
                 </tr>
               ))}
             </tbody>
@@ -1652,7 +1652,7 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-gray-400">Источник: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
+        <p className="text-sm text-gray-500">Источник: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
       </section>
 
       <section>
@@ -2562,9 +2562,9 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-xl font-bold text-gray-900 mb-4">Связанные руководства</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { href: '/ru/blog/issledovanie-oecd-rabochiy-opyt-podrostkov-rezultaty-kariery', tag: 'Исследование', title: 'Исследование ОЭСР: Рабочий опыт подростков и карьерные результаты' },
-            { href: '/ru/blog/pisa-2025-rabochiy-opyt-podgotovka-studentov', tag: 'Руководство', title: 'PISA 2025: Почему рабочий опыт — это недостающий ответ' },
-            { href: '/ru/blog/65-professiy-kotorye-ii-ne-mozhet-avtomatizirovat', tag: 'Руководство', title: '65 профессий, которые ИИ не может автоматизировать' },
+            { href: '/ru/blog/oecd-podrostkovaya-praktika-rezultaty-kariery', tag: 'Исследование', title: 'Исследование ОЭСР: Рабочий опыт подростков и карьерные результаты' },
+            { href: '/ru/blog/pisa-2025-rabochiy-opyt-gotovnost-uchashchikhsya', tag: 'Руководство', title: 'PISA 2025: Почему рабочий опыт — это недостающий ответ' },
+            { href: '/ru/blog/65-professiy-zashchishchennykh-ot-ii', tag: 'Руководство', title: '65 профессий, которые ИИ не может автоматизировать' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
@@ -2667,7 +2667,7 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/ru/blog/besplatny-akademichesky-test-silnye-slabye-storony-rebenka', tag: 'Оценка', title: 'Бесплатный академический тест: Сильные и слабые стороны ребёнка' },
             { href: '/ru/blog/silnye-slabye-storony-rebenka-podgotovka-k-sredney-shkole', tag: 'Руководство', title: 'Понимание сильных сторон вашего ребёнка перед средней школой' },
-            { href: '/ru/blog/skrytye-sily-rebenka-sovremennoe-rukovodstvo-dlya-roditeley', tag: 'Руководство', title: 'Скрытые силы ребёнка: современное руководство для родителей' },
+            { href: '/ru/blog/obnaruzhit-skrytye-talenty-rebyonka-rukovodstvo-roditelej', tag: 'Руководство', title: 'Скрытые силы ребёнка: современное руководство для родителей' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
