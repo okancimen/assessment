@@ -1542,7 +1542,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
           El obstáculo principal para la experiencia laboral temprana no es la motivación de los estudiantes — es la accesibilidad. Las colocaciones estructuradas en empresas de calidad son difíciles de conseguir sin conexiones existentes, y la mayoría de los programas formales de grandes empleadores están diseñados para estudiantes de 16 o 17 años en adelante. Los estudiantes de 14 a 15 años — que se encuentran exactamente en la ventana más valiosa para la exposición profesional — tienen las opciones más limitadas.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          El programa de evaluación de prácticas de Eduentry en <strong>eduentry.ai/es</strong> está diseñado específicamente para cerrar esta brecha. Los estudiantes de 14 a 18 años completan una evaluación adaptativa de 34 preguntas que mide la preparación profesional en tres dimensiones que los empleadores identifican de manera consistente como las más críticas: comunicación, resolución de problemas y conciencia profesional. La evaluación tarda aproximadamente 25 minutos y produce un informe personalizado con un desglose de habilidades, una puntuación de preparación y oportunidades adaptadas al perfil del estudiante.
+          El programa de evaluación de prácticas de Eduentry en <strong>eduentry.ai/es</strong> está diseñado específicamente para cerrar esta brecha. Los estudiantes de 14 a 18 años completan una evaluación adaptativa de 34 preguntas que mide la preparación profesional en tres dimensiones que los empleadores identifican de manera consistente como las más críticas: comunicación, resolución de problemas y conciencia profesional. La evaluación tarda aproximadamente 20 minutos y produce un informe personalizado con un desglose de habilidades, una puntuación de preparación y oportunidades adaptadas al perfil del estudiante.
         </p>
         <Callout color="emerald">
           <strong className="text-emerald-900">Por qué la evaluación importa para la colocación:</strong> La paradoja de la experiencia laboral es bien conocida: los empleadores quieren candidatos con experiencia, pero alguien tiene que ser el primero en darles esa oportunidad. Una puntuación de evaluación verificada rompe este círculo. Proporciona a los empleadores evidencia objetiva del potencial del estudiante antes de cualquier entrevista, aumentando significativamente las tasas de respuesta cuando los estudiantes contactan directamente con empresas.
@@ -1693,7 +1693,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
           <strong className="text-emerald-900">Cómo leer la puntuación:</strong> Una puntuación de 100 equivale a la media internacional. 115 corresponde aproximadamente al percentil 84 global (top 16%). 130 corresponde aproximadamente al percentil 98 (top 2%). La nota del boletín escolar mira hacia adentro — hacia el aula. Esta evaluación mira hacia afuera — hacia el mundo.
         </Callout>
         <p className="text-gray-700 leading-relaxed mb-4">
-          La evaluación dura entre 20 y 30 minutos, es completamente gratuita y no requiere registro previo. Los resultados incluyen puntuaciones por dominio y comparativa en percentil global.
+          La evaluación dura menos de una hora, es completamente gratuita y no requiere registro previo. Los resultados incluyen puntuaciones por dominio y comparativa en percentil global.
         </p>
         <div className="mt-6 mb-2">
           <a href="/es#academica" className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#4338CA] transition-colors">
@@ -2531,7 +2531,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="flex-1">
             <p className="font-semibold text-gray-900 mb-1">Descubre el nivel real de tu hijo — gratis</p>
-            <p className="text-sm text-gray-600">La evaluación adaptativa de Eduentry compara las capacidades verbales, numéricas y de razonamiento de tu hijo con las de sus pares internacionales. 20–30 minutos. Sin registro.</p>
+            <p className="text-sm text-gray-600">La evaluación adaptativa de Eduentry compara las capacidades verbales, numéricas y de razonamiento de tu hijo con las de sus pares internacionales. Menos de una hora. Sin registro.</p>
           </div>
           <Link href="https://eduentry.com/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Iniciar evaluación gratuita
@@ -2771,7 +2771,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
           Esa información tiene un valor concreto. Saber que un estudiante tiene una aptitud numérica en el percentil 85 a nivel internacional pero un razonamiento verbal en el percentil 60 cambia la conversación sobre qué modalidad de bachillerato elegir, qué materias reforzar y qué carreras universitarias tienen más sentido. Saber que un estudiante que obtiene notas mediocres en clase tiene, sin embargo, un razonamiento no verbal sobresaliente cambia la conversación sobre su potencial real y el tipo de entorno educativo que mejor lo sirve.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          La evaluación adaptativa gratuita de Eduentry está diseñada exactamente para eso. Mide razonamiento verbal, aptitud numérica y resolución de problemas en una escala normativa calibrada internacionalmente, en 20 a 30 minutos, sin necesidad de registro previo. El informe que genera no es una nota escolar ni una estimación subjetiva: es una comparación percentil con pares internacionales que le dice exactamente dónde están los puntos fuertes de su hijo y dónde hay margen de desarrollo.
+          La evaluación adaptativa gratuita de Eduentry está diseñada exactamente para eso. Mide razonamiento verbal, aptitud numérica y resolución de problemas en una escala normativa calibrada internacionalmente, en menos de una hora, sin necesidad de registro previo. El informe que genera no es una nota escolar ni una estimación subjetiva: es una comparación percentil con pares internacionales que le dice exactamente dónde están los puntos fuertes de su hijo y dónde hay margen de desarrollo.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           En un momento en que el mercado laboral está cambiando más rápido que en cualquier otro período de la historia reciente, conocer el perfil cognitivo de su hijo no es un lujo académico — es una ventaja estratégica. Las 65 profesiones que hemos examinado en este artículo son el destino; la evaluación es el mapa que le ayuda a orientar el camino.
@@ -2779,7 +2779,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         <div className="bg-indigo-50 border border-indigo-200 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="flex-1">
             <p className="font-semibold text-gray-900 mb-1">¿Está su hijo preparado para el futuro?</p>
-            <p className="text-sm text-gray-600">La evaluación adaptativa gratuita de Eduentry compara las habilidades de razonamiento verbal, numérico y resolución de problemas de su hijo con las de sus pares a nivel internacional — y le muestra exactamente dónde están sus puntos fuertes. Resultados en menos de 30 minutos.</p>
+            <p className="text-sm text-gray-600">La evaluación adaptativa gratuita de Eduentry compara las habilidades de razonamiento verbal, numérico y resolución de problemas de su hijo con las de sus pares a nivel internacional — y le muestra exactamente dónde están sus puntos fuertes. Resultados en menos de una hora.</p>
           </div>
           <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Iniciar la evaluación gratuita de su hijo

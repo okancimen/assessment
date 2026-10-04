@@ -114,7 +114,7 @@ export async function sendAcademicReminderEmail(opts: {
       subject: `${c} hasn't finished their assessment yet`,
       html: `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
         <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">Just a quick nudge</h1>
-        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${p}, ${c} started their Eduentry assessment yesterday but didn't quite finish. It only takes about 25 minutes and they can pick up right where they left off.</p>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${p}, ${c} started their Eduentry assessment yesterday but didn't quite finish. It takes under an hour and they can pick up right where they left off.</p>
         ${BTN(continueUrl, 'Continue assessment →')}
         <p style="color:#6b7280;font-size:14px;margin:0 0 12px">Once complete, you'll receive a detailed report showing exactly where ${c} stands — their strengths across verbal reasoning, numeracy, and problem-solving, and the areas where a little extra focus would make the biggest difference, benchmarked against children internationally.</p>
         ${BTN(sampleUrl, 'See a sample report →')}
@@ -167,7 +167,7 @@ export async function sendInternshipReminderEmail(opts: {
       subject: `You haven't finished your internship assessment`,
       html: `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
         <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">Pick up where you left off</h1>
-        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${n}, you started your Eduentry internship assessment yesterday but didn't quite finish. Your progress is saved — it should only take around 25 minutes to complete from where you left off.</p>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${n}, you started your Eduentry internship assessment yesterday but didn't quite finish. Your progress is saved — it should only take around 20 minutes to complete from where you left off.</p>
         ${BTN(continueUrl, 'Continue assessment →')}
         <p style="color:#6b7280;font-size:14px;margin:0 0 28px">Once you finish, you'll receive a full report showing your aptitude strengths, your track fit across Technology, Business, Data Analytics, and Digital Marketing — and the specific areas where you can improve before applying.</p>
         ${FOOTER}
@@ -188,7 +188,7 @@ export async function sendInternshipReminderEmail(opts: {
       html: `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
         <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">Last reminder</h1>
         <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${n}, this is our last reminder. Your in-progress assessment will be cleared after 30 days — after that you'd need to start from scratch.</p>
-        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Finishing takes around 25 minutes and gives you a complete breakdown of your aptitude scores, track fit, and improvement areas — everything you need to understand where you stand as a candidate.</p>
+        <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Finishing takes around 20 minutes and gives you a complete breakdown of your aptitude scores, track fit, and improvement areas — everything you need to understand where you stand as a candidate.</p>
         ${BTN(continueUrl, 'Complete your assessment →')}
         <p style="color:#6b7280;font-size:13px;margin:0 0 28px">After this we won't send any further reminders.</p>
         ${FOOTER}

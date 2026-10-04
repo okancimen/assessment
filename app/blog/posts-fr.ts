@@ -588,7 +588,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Votre élève est-il prêt pour l\'expérience professionnelle ?',
-      body: 'L\'évaluation gratuite de préparation au stage d\'Eduentry prend 25 minutes et fournit aux élèves un rapport personnalisé — bilan des compétences, score de préparation et opportunités adaptées.',
+      body: 'L\'évaluation gratuite de préparation au stage d\'Eduentry prend 20 minutes et fournit aux élèves un rapport personnalisé — bilan des compétences, score de préparation et opportunités adaptées.',
       label: 'Commencer l\'évaluation de stage',
       href: 'https://eduentry.ai/fr',
     },
@@ -859,7 +859,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Découvrez le profil cognitif de votre enfant — gratuitement',
-      body: 'L\'évaluation adaptative Eduentry mesure le raisonnement verbal, quantitatif et spatial de votre enfant sur la même échelle internationale que le CAT4. 20–30 minutes, sans inscription préalable.',
+      body: 'L\'évaluation adaptative Eduentry mesure le raisonnement verbal, quantitatif et spatial de votre enfant sur la même échelle internationale que le CAT4. Moins d’une heure, sans inscription préalable.',
       label: 'Commencer l\'évaluation gratuite',
       href: 'https://eduentry.com/#academic',
     },

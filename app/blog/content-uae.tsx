@@ -658,7 +658,7 @@ export const UAE_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed mb-4">
           A standardised assessment before the admissions round gives you objective data to work with.
           Eduentry&apos;s free adaptive test produces a score on the same mean-100, SD-15 scale as CAT4
-          — directly comparable. It takes 20–30 minutes and requires no registration. Use it as a
+          — directly comparable. It takes under an hour and requires no registration. Use it as a
           starting point for realistic school targeting and to identify any cognitive areas worth
           developing before the formal assessment.
         </p>

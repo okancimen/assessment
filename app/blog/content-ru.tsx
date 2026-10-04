@@ -1054,7 +1054,7 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
           <strong className="text-emerald-900">Как читать шкалу:</strong> Балл 100 = международная средняя. Балл 115 ≈ топ-16% в мире. Балл 130 ≈ топ-2%. Ребёнок может быть «хорошим» в своей школе и при этом обнаружить, что его международная позиция отличается от ожидаемой — в любую сторону.
         </Callout>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Оценка занимает 20–30 минут, полностью бесплатна и не требует регистрации. Результаты появляются сразу; они включают отдельные баллы по каждой области и сравнение с глобальным перцентилем. Отметка в дневнике смотрит внутрь школы; эта оценка смотрит наружу — в мир.
+          Оценка занимает менее часа, полностью бесплатна и не требует регистрации. Результаты появляются сразу; они включают отдельные баллы по каждой области и сравнение с глобальным перцентилем. Отметка в дневнике смотрит внутрь школы; эта оценка смотрит наружу — в мир.
         </p>
         <div className="mt-6 mb-2">
           <a href="/ru#akademicheskaya" className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#4338CA] transition-colors">
@@ -1860,7 +1860,7 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
         <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="flex-1">
             <p className="font-semibold text-gray-900 mb-1">Узнайте реальный уровень вашего ребёнка — бесплатно</p>
-            <p className="text-sm text-gray-600">Адаптивная академическая оценка Eduentry сравнивает вербальные, числовые и мыслительные способности вашего ребёнка с международными сверстниками. 20–30 минут. Без регистрации.</p>
+            <p className="text-sm text-gray-600">Адаптивная академическая оценка Eduentry сравнивает вербальные, числовые и мыслительные способности вашего ребёнка с международными сверстниками. Менее часа. Без регистрации.</p>
           </div>
           <Link href="https://eduentry.com/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Начать бесплатную оценку
@@ -2124,7 +2124,7 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
           <div className="flex-1">
             <p className="text-xl font-bold text-gray-900 mb-2">Начать бесплатную оценку вашего ребёнка</p>
             <p className="text-gray-700 mb-1">Бесплатная адаптивная оценка Eduentry сравнивает навыки вербального мышления, счёта и решения проблем вашего ребёнка с международными сверстниками — и точно показывает, где находятся его сильные стороны.</p>
-            <p className="text-sm text-gray-500">Для детей 6–17 лет. 20–30 минут. Без регистрации.</p>
+            <p className="text-sm text-gray-500">Для детей 6–17 лет. Менее часа. Без регистрации.</p>
           </div>
           <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-7 py-3 rounded-full transition-colors whitespace-nowrap text-base">
             Начать бесплатную оценку вашего ребёнка

@@ -851,7 +851,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
           我认为每一位家长都有权至少问一次这个问题。成绩单告诉您孩子在班级里的位置；这项评估告诉您孩子在世界上的位置。这两幅图景，并不总是讲述同一个故事。
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          评估全程约20-30分钟，完全免费，无需注册账号即可开始。结果即时呈现，包含各科目的详细子分数和全球百分位对比。
+          评估全程不超过一小时，完全免费，无需注册账号即可开始。结果即时呈现，包含各科目的详细子分数和全球百分位对比。
         </p>
         <div className="mt-6 mb-2">
           <a href="/zh#xueshu-pinggu" className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#4338CA] transition-colors">
@@ -1479,7 +1479,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
           CAT4是一项计时认知能力测试，考察语言、数量、非语言和空间推理四个维度，不是学科知识测试。提前了解孩子可能的CAT4表现，可以帮助您切实地定位目标学校：带着可能得SAS 100的孩子申请Dubai College只会让双方失望；而以SAS 115申请GEMS Wellington或Repton则具有相当竞争力。
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Eduentry免费自适应测试采用与CAT4完全相同的均值100、标准差15量表，结果直接可比。测试仅需20-30分钟，无需注册。在正式招生季前，用它作为现实选校的起点，并找出在正式评估前值得重点培养的认知能力领域。
+          Eduentry免费自适应测试采用与CAT4完全相同的均值100、标准差15量表，结果直接可比。测试一小时内即可完成，无需注册。在正式招生季前，用它作为现实选校的起点，并找出在正式评估前值得重点培养的认知能力领域。
         </p>
         <p className="text-gray-700 leading-relaxed">
           更多关于UAE国际学校入学评估的信息，也可参阅{' '}
@@ -1642,7 +1642,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
         <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="flex-1">
             <p className="font-semibold text-gray-900 mb-1">免费了解孩子的真实水平</p>
-            <p className="text-sm text-gray-600">Eduentry的自适应学术评估将孩子的语言、数学和推理能力与国际同龄人进行对比。20–30分钟完成，无需注册。</p>
+            <p className="text-sm text-gray-600">Eduentry的自适应学术评估将孩子的语言、数学和推理能力与国际同龄人进行对比。一小时内完成，无需注册。</p>
           </div>
           <Link href="https://eduentry.com/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             开始免费评估
