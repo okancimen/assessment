@@ -1695,7 +1695,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: 'How long does the Eduentry 11+ practice test take?',
-        a: 'The full assessment covers 60 questions across 4 subjects and typically takes 60–90 minutes. Progress is automatically saved, so it can be paused and resumed at any time. Most children complete it in one sitting.',
+        a: 'The full assessment covers 60 questions across 4 subjects and typically takes about 60 minutes. Progress is automatically saved, so it can be paused and resumed at any time. Most children complete it in one sitting.',
       },
       {
         q: 'How often should my child take the practice test?',

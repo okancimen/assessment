@@ -66,7 +66,7 @@ export default async function AssessmentStartPage({
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-[#4F46E5]">✓</span>
-                <span>Takes approximately <strong>60–90 minutes</strong> with breaks between subjects</span>
+                <span>Takes approximately <strong>60 minutes</strong> without any breaks</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-[#4F46E5]">✓</span>

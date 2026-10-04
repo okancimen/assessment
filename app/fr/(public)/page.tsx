@@ -79,7 +79,7 @@ const FAQ_FR = [
   { q: 'Quelles matières couvre l\'évaluation académique ?', a: 'Anglais (compréhension de lecture, grammaire, vocabulaire), Mathématiques (arithmétique, algèbre, géométrie, résolution de problèmes), Raisonnement Verbal (analogies, classifications, séquences) et Raisonnement Non Verbal (motifs, raisonnement spatial, matrices). Chaque matière comporte 15 questions adaptatives.' },
   { q: 'Qu\'est-ce qu\'un classement par percentile ?', a: 'Un classement par percentile montre comment votre enfant se compare à tous les enfants du même âge. Un score au percentile 80 signifie que votre enfant a obtenu de meilleurs résultats que 80 % des enfants de cet âge. Eduentry utilise une échelle standardisée avec une moyenne de 100 et un écart-type de 15 — la même échelle utilisée par PISA et la plupart des évaluations professionnelles.' },
   { q: 'Qu\'est-ce que l\'évaluation de stage ?', a: 'Une évaluation adaptative distincte de 34 questions pour les lycéens de plus de 14 ans. Elle évalue l\'aptitude générale, les connaissances sectorielles, les compétences professionnelles et le profil d\'intérêts dans quatre domaines : Technologie, Entreprise, Analyse de données et Marketing digital. Les résultats comprennent un rapport de préparation personnalisé et des insights de carrière générés par IA.' },
-  { q: 'Combien de temps dure chaque évaluation ?', a: 'L\'évaluation académique comporte 60 questions en 4 matières — la plupart des enfants la complètent en 60–90 minutes. L\'évaluation de stage comporte 34 questions — la plupart des élèves la terminent en environ 20 minutes. La progression est sauvegardée automatiquement, les deux peuvent donc être mises en pause et reprises à tout moment.' },
+  { q: 'Combien de temps dure chaque évaluation ?', a: 'L\'évaluation académique comporte 60 questions en 4 matières — la plupart des enfants la complètent en environ 60 minutes. L\'évaluation de stage comporte 34 questions — la plupart des élèves la terminent en environ 20 minutes. La progression est sauvegardée automatiquement, les deux peuvent donc être mises en pause et reprises à tout moment.' },
   { q: 'Comment fonctionne la technologie adaptative ?', a: 'Eduentry utilise la Théorie de Réponse à l\'Item Logistique à 2 Paramètres (2PL) avec estimation MAP — le même modèle utilisé dans PISA, GCSE et SAT. Après chaque réponse, le système met à jour son estimation du niveau de l\'élève et sélectionne la question suivante pour maximiser la précision de mesure.' },
   { q: 'Puis-je ajouter plusieurs enfants ?', a: 'Oui. Un seul compte parent peut inclure plusieurs profils d\'enfants. Chaque enfant dispose de son propre historique d\'évaluations, de ses scores et de recommandations personnalisées. Il n\'y a pas de limite au nombre d\'enfants que vous pouvez ajouter.' },
   { q: 'Mes données sont-elles privées ?', a: 'Oui. Toutes les données sont stockées en toute sécurité avec une sécurité au niveau des lignes — seul vous pouvez accéder à vos résultats. Nous ne vendons ni ne partageons les données avec des tiers. Le service est entièrement conforme au RGPD.' },
@@ -467,7 +467,7 @@ export default function FrenchHomePage() {
           <div className="text-center mb-14">
             <p className="text-xs font-medium text-[#636366] uppercase tracking-[0.15em] mb-5">Évaluation Académique · Simple à démarrer</p>
             <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-4">
-              De l&apos;inscription aux résultats<br />en moins de deux heures.
+              De l&apos;inscription aux résultats<br />en une heure.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -670,7 +670,7 @@ export default function FrenchHomePage() {
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">Évaluation Académique</p>
             <h2 className="text-2xl font-bold text-white mb-3">Découvrez où se situe votre enfant — à l&apos;échelle mondiale.</h2>
-            <p className="text-[#a1a1a7] text-sm mb-8">Contexte international complet en moins de 2 heures.</p>
+            <p className="text-[#a1a1a7] text-sm mb-8">Contexte international complet en une heure.</p>
             <CtaLink href="/fr/auth/register" label="bottom_cta_academic_fr" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Commencer l&apos;évaluation gratuite →
             </CtaLink>
