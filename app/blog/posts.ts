@@ -1361,7 +1361,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Four main routes: direct applications to digital marketing agencies (most accept school-age students for one- or two-week placements, particularly in summer), in-house marketing departments at larger companies, virtual work experience programmes (Springpod and Forage both offer structured digital marketing programmes from real employers), and platforms like Bright Network or RateMyPlacement. Agencies tend to offer the broadest exposure — a week at a small agency can involve SEO, paid media, content, and analytics in one placement.',
       },
     ],
-    aggregateRating: { ratingValue: 4.2, reviewCount: 43 },
+    aggregateRating: { ratingValue: 4.2, reviewCount: 10 },
     cta: {
       heading: 'Ready for digital marketing work experience?',
       body: 'Free 34-question adaptive assessment. Get your Digital Marketing readiness report and something concrete to reference in every application.',
