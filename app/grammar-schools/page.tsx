@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
+import { ElevenPlusGuideLinks } from './cluster'
 import CtaLink from '@/components/ui/CtaLink'
 import { GRAMMAR_AREAS } from './data'
 
@@ -115,24 +116,13 @@ export default function GrammarSchoolsIndexPage() {
           </CtaLink>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Link href="/blog/free-11-plus-practice-test-online" className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
-            <div className="text-xs font-semibold text-indigo-600 mb-2">Free Test</div>
-            <div className="font-semibold text-gray-900 text-sm">Free 11+ Practice Test — Instant SAS Score</div>
+        <section>
+          <h2 className="text-xl font-bold text-gray-900 mb-5">11+ guides</h2>
+          <ElevenPlusGuideLinks />
+          <Link href="/11-plus" className="inline-flex items-center gap-1 text-sm text-indigo-600 hover:underline mt-4">
+            11+ preparation overview →
           </Link>
-          <Link href="/blog/grammar-school-entry-requirements-2026" className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
-            <div className="text-xs font-semibold text-indigo-600 mb-2">Blog</div>
-            <div className="font-semibold text-gray-900 text-sm">Grammar School Entry Requirements 2026</div>
-          </Link>
-          <Link href="/blog/how-to-prepare-for-11-plus" className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
-            <div className="text-xs font-semibold text-indigo-600 mb-2">Blog</div>
-            <div className="font-semibold text-gray-900 text-sm">How to Prepare for the 11+ at Home</div>
-          </Link>
-          <Link href="/11-plus" className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
-            <div className="text-xs font-semibold text-indigo-600 mb-2">Guide</div>
-            <div className="font-semibold text-gray-900 text-sm">11+ Preparation Overview</div>
-          </Link>
-        </div>
+        </section>
       </main>
 
       <PublicFooter />

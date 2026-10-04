@@ -17,7 +17,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [Business Track](https://eduentry.ai/business): Assessment covering strategy, finance, operations, and leadership. Produces a Business readiness score and report.
 - [Data Analytics Track](https://eduentry.ai/data-analytics): Assessment covering data interpretation, SQL, statistics, and insight generation. Produces a Data Analytics readiness score and report.
 - [Digital Marketing Track](https://eduentry.ai/digital-marketing): Assessment covering SEO, social media, campaign management, and content strategy. Produces a Digital Marketing readiness score and report.
-- [Blog](https://eduentry.ai/blog): Articles on internship preparation, work experience, career development, and university admissions for students aged 14–18.
+- [Blog](https://eduentry.com/blog): Articles on internship preparation, work experience, career development, and university admissions for students aged 14–18.
 
 ### Eduentry.ai — Turkish (Türkçe)
 
@@ -26,7 +26,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [İş Dünyası](https://eduentry.ai/tr/is-dunyasi): İş dünyası pisti değerlendirmesi — strateji, finans, operasyon, liderlik.
 - [Veri Analitiği](https://eduentry.ai/tr/veri-analitigi): Veri analitiği pisti değerlendirmesi — grafikler, SQL, içgörüler, istatistik.
 - [Dijital Pazarlama](https://eduentry.ai/tr/dijital-pazarlama): Dijital pazarlama pisti değerlendirmesi — SEO, sosyal medya, kampanyalar, içerik.
-- [Blog TR](https://eduentry.ai/tr/blog): Türkçe staj ve kariyer rehberleri.
+- [Blog TR](https://eduentry.com/tr/blog): Türkçe staj ve kariyer rehberleri.
 
 ### Eduentry.ai — Spanish (Español)
 
@@ -35,112 +35,112 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [Empresa](https://eduentry.ai/es/empresa): Evaluación pista Empresa — estrategia, finanzas, operaciones, liderazgo.
 - [Análisis de Datos](https://eduentry.ai/es/analisis-de-datos): Evaluación pista Análisis de Datos — gráficos, SQL, insights, estadística.
 - [Marketing Digital](https://eduentry.ai/es/marketing-digital): Evaluación pista Marketing Digital — SEO, redes sociales, campañas, contenido.
-- [Blog ES](https://eduentry.ai/es/blog): Guías de prácticas y carrera en español.
+- [Blog ES](https://eduentry.com/es/blog): Guías de prácticas y carrera en español.
 
 ### Eduentry.ai — French (Français)
 
 - [Accueil FR](https://eduentry.ai/fr): Page d'accueil en français — évaluation de préparation au stage pour lycéens 14–18 ans.
-- [Blog FR](https://eduentry.ai/fr/blog): Articles sur les stages, l'expérience professionnelle et l'orientation en français.
+- [Blog FR](https://eduentry.com/fr/blog): Articles sur les stages, l'expérience professionnelle et l'orientation en français.
 
 ### Eduentry.ai — Arabic (العربية)
 
 - [الصفحة الرئيسية AR](https://eduentry.ai/ar): الصفحة الرئيسية بالعربية — تقييم جاهزية التدريب لطلاب الثانوية 14–18 عاماً.
-- [Blog AR](https://eduentry.ai/ar/blog): مقالات التدريب والمسار المهني باللغة العربية.
+- [Blog AR](https://eduentry.com/ar/blog): مقالات التدريب والمسار المهني باللغة العربية.
 
 ### Eduentry.ai — Chinese (中文)
 
 - [首页 ZH](https://eduentry.ai/zh): 中文首页 — 面向14至18岁高中生的实习准备评估，含即时报告。
-- [Blog ZH](https://eduentry.ai/zh/blog): 实习与职业发展中文指南。
+- [Blog ZH](https://eduentry.com/zh/blog): 实习与职业发展中文指南。
 
 ### Eduentry.ai blog posts — English
 
-- [Why Early Internships Matter](https://eduentry.ai/blog/early-internship-child-development-career): Research on internship benefits at ages 14–16: NACE employment data, developmental psychology findings, and UK university admissions context.
-- [High School Internship Benefits](https://eduentry.ai/blog/high-school-internship-benefits-university): Evidence on personality development, self-efficacy, and UK Russell Group admissions guidance for students with work experience.
-- [Business Work Experience UK](https://eduentry.ai/blog/business-work-experience-high-school-uk): Definition of business work experience in the UK, how to find placements (direct applications, large employer schemes), and UCAS personal statement guidance.
-- [How to Get a Tech Internship Before University](https://eduentry.ai/blog/how-to-get-tech-internship-before-university): List of UK tech employers offering school-age programmes (Google, Microsoft, KPMG), application process, and what employers expect.
-- [How Does Your Child Compare Globally](https://eduentry.ai/blog/how-does-your-child-compare-globally): PISA country rankings, UK vs Singapore/Japan/South Korea score gaps, and explanation of standardised scores vs school grades.
+- [Why Early Internships Matter](https://eduentry.com/blog/early-internship-child-development-career): Research on internship benefits at ages 14–16: NACE employment data, developmental psychology findings, and UK university admissions context.
+- [High School Internship Benefits](https://eduentry.com/blog/high-school-internship-benefits-university): Evidence on personality development, self-efficacy, and UK Russell Group admissions guidance for students with work experience.
+- [Business Work Experience UK](https://eduentry.com/blog/business-work-experience-high-school-uk): Definition of business work experience in the UK, how to find placements (direct applications, large employer schemes), and UCAS personal statement guidance.
+- [How to Get a Tech Internship Before University](https://eduentry.com/blog/how-to-get-tech-internship-before-university): List of UK tech employers offering school-age programmes (Google, Microsoft, KPMG), application process, and what employers expect.
+- [How Does Your Child Compare Globally](https://eduentry.com/blog/how-does-your-child-compare-globally): PISA country rankings, UK vs Singapore/Japan/South Korea score gaps, and explanation of standardised scores vs school grades.
 
 ### Eduentry.ai blog posts — French (Français)
 
-- [Stages lycée et université](https://eduentry.ai/fr/blog/stages-lycee-avantages-universite): Bénéfices des stages au lycée — recherche sur le développement personnel et l'accès aux grandes écoles.
-- [Expérience professionnelle lycée](https://eduentry.ai/fr/blog/stage-experience-professionnelle-lycee): Définition, comment trouver un stage, et utilisation dans le dossier de candidature.
-- [Se démarquer à 15 ans](https://eduentry.ai/fr/blog/se-demarquer-a-15-ans): Actions concrètes pour lycéens : compétitions, projets, expériences extrascolaires.
-- [Créer son entreprise à 16 ans](https://eduentry.ai/fr/blog/creer-son-entreprise-a-16-ans): Cadre légal, étapes pratiques et exemples d'entreprises fondées par des lycéens en France.
-- [Comparer votre enfant à l'échelle mondiale](https://eduentry.ai/fr/blog/comment-se-compare-votre-enfant): Classements PISA par pays, écarts France vs Singapour/Japon, et explication des scores standardisés.
-- [Trouver un stage lycéen en France](https://eduentry.ai/fr/blog/stage-lyceen-france-comment-trouver): Plateformes de recherche, candidature spontanée, délais et démarches administratives.
-- [CV stage lycéen](https://eduentry.ai/fr/blog/cv-stage-lyceen-16-ans): Structure d'un CV de stage à 16 ans, exemples de formulations, erreurs courantes.
-- [Entretien de stage lycéen](https://eduentry.ai/fr/blog/entretien-stage-lyceen-conseils): Questions fréquentes en entretien de stage, comment se préparer, exemples de réponses.
-- [Stage marketing digital](https://eduentry.ai/fr/blog/stage-marketing-digital-lyceen): Tâches typiques en stage marketing digital, outils utilisés (GA4, Meta Ads), comment candidater.
-- [Stage data analyse](https://eduentry.ai/fr/blog/stage-data-analyse-lyceen): Tâches en stage data, outils courants (Excel, SQL, Python), entreprises accessibles aux lycéens.
-- [IA et futur de l'emploi](https://eduentry.ai/fr/blog/intelligence-artificielle-futur-emploi-jeunes): Impact de l'automatisation sur les métiers, compétences à développer, données OCDE et WEF.
-- [Stage d'été lycéen France](https://eduentry.ai/fr/blog/stage-ete-france-lyceen): Calendrier des candidatures, plateformes de recherche, entreprises qui acceptent les lycéens en été.
-- [Stage finance et banque](https://eduentry.ai/fr/blog/stage-finance-banque-lyceen): Banques et institutions financières françaises acceptant les lycéens, tâches typiques, comment postuler.
-- [Scores PISA France](https://eduentry.ai/fr/blog/score-pisa-france-analyse): Résultats PISA France 2022 par matière, comparaison internationale, implications pour l'orientation.
-- [Grandes écoles vs université](https://eduentry.ai/fr/blog/grandes-ecoles-orientation-lyceen): Différences de sélection, coûts, débouchés et critères pour choisir entre grandes écoles et université.
-- [PISA 2025 expérience professionnelle](https://eduentry.ai/fr/blog/pisa-2025-experience-professionnelle-etudiants): Résultats PISA 2025 : baisse des scores et données sur le lien entre expérience professionnelle et performance scolaire.
-- [PISA 2025 crise éducation mondiale](https://eduentry.ai/fr/blog/pisa-2025-crise-education-mondiale-ce-que-les-parents-doivent-savoir): Résultats PISA 2025 par pays, causes de la baisse (pandémie, écrans, lecture rapide), et implications pour les familles.
+- [Stages lycée et université](https://eduentry.com/fr/blog/stages-lycee-avantages-universite): Bénéfices des stages au lycée — recherche sur le développement personnel et l'accès aux grandes écoles.
+- [Expérience professionnelle lycée](https://eduentry.com/fr/blog/stage-experience-professionnelle-lycee): Définition, comment trouver un stage, et utilisation dans le dossier de candidature.
+- [Se démarquer à 15 ans](https://eduentry.com/fr/blog/se-demarquer-a-15-ans): Actions concrètes pour lycéens : compétitions, projets, expériences extrascolaires.
+- [Créer son entreprise à 16 ans](https://eduentry.com/fr/blog/creer-son-entreprise-a-16-ans): Cadre légal, étapes pratiques et exemples d'entreprises fondées par des lycéens en France.
+- [Comparer votre enfant à l'échelle mondiale](https://eduentry.com/fr/blog/comment-se-compare-votre-enfant): Classements PISA par pays, écarts France vs Singapour/Japon, et explication des scores standardisés.
+- [Trouver un stage lycéen en France](https://eduentry.com/fr/blog/stage-lyceen-france-comment-trouver): Plateformes de recherche, candidature spontanée, délais et démarches administratives.
+- [CV stage lycéen](https://eduentry.com/fr/blog/cv-stage-lyceen-16-ans): Structure d'un CV de stage à 16 ans, exemples de formulations, erreurs courantes.
+- [Entretien de stage lycéen](https://eduentry.com/fr/blog/entretien-stage-lyceen-conseils): Questions fréquentes en entretien de stage, comment se préparer, exemples de réponses.
+- [Stage marketing digital](https://eduentry.com/fr/blog/stage-marketing-digital-lyceen): Tâches typiques en stage marketing digital, outils utilisés (GA4, Meta Ads), comment candidater.
+- [Stage data analyse](https://eduentry.com/fr/blog/stage-data-analyse-lyceen): Tâches en stage data, outils courants (Excel, SQL, Python), entreprises accessibles aux lycéens.
+- [IA et futur de l'emploi](https://eduentry.com/fr/blog/intelligence-artificielle-futur-emploi-jeunes): Impact de l'automatisation sur les métiers, compétences à développer, données OCDE et WEF.
+- [Stage d'été lycéen France](https://eduentry.com/fr/blog/stage-ete-france-lyceen): Calendrier des candidatures, plateformes de recherche, entreprises qui acceptent les lycéens en été.
+- [Stage finance et banque](https://eduentry.com/fr/blog/stage-finance-banque-lyceen): Banques et institutions financières françaises acceptant les lycéens, tâches typiques, comment postuler.
+- [Scores PISA France](https://eduentry.com/fr/blog/score-pisa-france-analyse): Résultats PISA France 2022 par matière, comparaison internationale, implications pour l'orientation.
+- [Grandes écoles vs université](https://eduentry.com/fr/blog/grandes-ecoles-orientation-lyceen): Différences de sélection, coûts, débouchés et critères pour choisir entre grandes écoles et université.
+- [PISA 2025 expérience professionnelle](https://eduentry.com/fr/blog/pisa-2025-experience-professionnelle-etudiants): Résultats PISA 2025 : baisse des scores et données sur le lien entre expérience professionnelle et performance scolaire.
+- [PISA 2025 crise éducation mondiale](https://eduentry.com/fr/blog/pisa-2025-crise-education-mondiale-ce-que-les-parents-doivent-savoir): Résultats PISA 2025 par pays, causes de la baisse (pandémie, écrans, lecture rapide), et implications pour les familles.
 
 ### Eduentry.ai blog posts — Arabic (العربية)
 
-- [دليل CAT4 الإمارات](https://eduentry.ai/ar/blog/cat4-dalil-shamil): ما يقيسه اختبار CAT4، نظام التسجيل، وكيف تستخدمه المدارس الإماراتية.
-- [المدارس البريطانية دبي أبوظبي](https://eduentry.ai/ar/blog/madaras-britaniya-dubai-abu-dhabi): متطلبات القبول، تقييمات KHDA، والفرق بين المدارس البريطانية الكبرى.
-- [برامج الموهوبين الإمارات](https://eduentry.ai/ar/blog/baramij-mawhubin-imarat): معايير تحديد الموهوبين، برامج المواهب الإماراتية، وحدود درجات CAT4.
-- [اختبارات القبول المدارس الدولية](https://eduentry.ai/ar/blog/imtihanat-qabul-madaras-dawliyya): اختبارات CAT4 وISEE وSSAT — اختلافاتها وكيفية الاستعداد لها.
-- [التدريب المبكر وتطور الطفل](https://eduentry.ai/ar/blog/staj-mubakir-tatawwur-mahni): أبحاث حول فوائد التدريب في سن 14–16: نمو شخصي وبيانات توظيف.
-- [إيجاد تدريب في دبي](https://eduentry.ai/ar/blog/kayfa-tajid-staj-dubai): قائمة بالشركات والمؤسسات في دبي التي تقبل طلاب الثانوية، وكيفية التقديم.
-- [السيرة الذاتية للتدريب 16 سنة](https://eduentry.ai/ar/blog/sirat-dhatiyya-staj-16): هيكل السيرة الذاتية للطلاب، أمثلة على الصياغات، والأخطاء الشائعة.
-- [مقابلة التدريب](https://eduentry.ai/ar/blog/muqabala-staj-nasayih): أسئلة المقابلات الشائعة للتدريب وكيفية الإجابة عليها.
-- [تدريب التكنولوجيا الإمارات](https://eduentry.ai/ar/blog/staj-taqniya-imarat): شركات التكنولوجيا في الإمارات التي تقبل المتدربين، المهام المتوقعة، وكيفية التقديم.
-- [تدريب القطاع المالي الإمارات](https://eduentry.ai/ar/blog/staj-tamwil-imarat): البنوك والمؤسسات المالية الإماراتية التي تقبل طلاب الثانوية وبرامجها.
-- [الذكاء الاصطناعي ومستقبل العمل](https://eduentry.ai/ar/blog/dhakaa-istinai-mustaqbal-amal): بيانات WEF وOECD حول تأثير الأتمتة على الوظائف والمهارات المطلوبة.
-- [برامج التدريب الصيفي الإمارات](https://eduentry.ai/ar/blog/staj-sayf-imarat): برامج الصيف للطلاب في الإمارات، مواعيد التقديم، والشركات المشاركة.
-- [تدريب التسويق الرقمي](https://eduentry.ai/ar/blog/staj-tadwiq-raqmi): المهام الشائعة في تدريب التسويق الرقمي، الأدوات المستخدمة، وكيفية إيجاد فرص في الشرق الأوسط.
-- [تحليل البيانات كمسار مهني](https://eduentry.ai/ar/blog/staj-tahlil-bayanat): أدوات تحليل البيانات الشائعة، الشركات الإماراتية التي تقبل المتدربين، وكيفية البدء.
-- [مشروع تجاري في 16 سنة](https://eduentry.ai/ar/blog/mashruik-tijarik-16): الإطار القانوني لتأسيس مشروع في الإمارات، خطوات عملية، وأمثلة.
-- [PISA 2025 خبرة عملية](https://eduentry.ai/ar/blog/pisa-2025-khibra-amaliya-istidad-talab): نتائج PISA 2025 وبيانات الارتباط بين الخبرة العملية وأداء الطلاب.
-- [PISA 2025 أزمة التعليم](https://eduentry.ai/ar/blog/pisa-2025-azmat-talim-alami-ma-yahtaj-marifatuh-awaliyaa-al-umur): نتائج PISA 2025 بالأرقام، أسباب انخفاض الدرجات، ومقارنة الدول.
+- [دليل CAT4 الإمارات](https://eduentry.com/ar/blog/cat4-dalil-shamil): ما يقيسه اختبار CAT4، نظام التسجيل، وكيف تستخدمه المدارس الإماراتية.
+- [المدارس البريطانية دبي أبوظبي](https://eduentry.com/ar/blog/madaras-britaniya-dubai-abu-dhabi): متطلبات القبول، تقييمات KHDA، والفرق بين المدارس البريطانية الكبرى.
+- [برامج الموهوبين الإمارات](https://eduentry.com/ar/blog/baramij-mawhubin-imarat): معايير تحديد الموهوبين، برامج المواهب الإماراتية، وحدود درجات CAT4.
+- [اختبارات القبول المدارس الدولية](https://eduentry.com/ar/blog/imtihanat-qabul-madaras-dawliyya): اختبارات CAT4 وISEE وSSAT — اختلافاتها وكيفية الاستعداد لها.
+- [التدريب المبكر وتطور الطفل](https://eduentry.com/ar/blog/staj-mubakir-tatawwur-mahni): أبحاث حول فوائد التدريب في سن 14–16: نمو شخصي وبيانات توظيف.
+- [إيجاد تدريب في دبي](https://eduentry.com/ar/blog/kayfa-tajid-staj-dubai): قائمة بالشركات والمؤسسات في دبي التي تقبل طلاب الثانوية، وكيفية التقديم.
+- [السيرة الذاتية للتدريب 16 سنة](https://eduentry.com/ar/blog/sirat-dhatiyya-staj-16): هيكل السيرة الذاتية للطلاب، أمثلة على الصياغات، والأخطاء الشائعة.
+- [مقابلة التدريب](https://eduentry.com/ar/blog/muqabala-staj-nasayih): أسئلة المقابلات الشائعة للتدريب وكيفية الإجابة عليها.
+- [تدريب التكنولوجيا الإمارات](https://eduentry.com/ar/blog/staj-taqniya-imarat): شركات التكنولوجيا في الإمارات التي تقبل المتدربين، المهام المتوقعة، وكيفية التقديم.
+- [تدريب القطاع المالي الإمارات](https://eduentry.com/ar/blog/staj-tamwil-imarat): البنوك والمؤسسات المالية الإماراتية التي تقبل طلاب الثانوية وبرامجها.
+- [الذكاء الاصطناعي ومستقبل العمل](https://eduentry.com/ar/blog/dhakaa-istinai-mustaqbal-amal): بيانات WEF وOECD حول تأثير الأتمتة على الوظائف والمهارات المطلوبة.
+- [برامج التدريب الصيفي الإمارات](https://eduentry.com/ar/blog/staj-sayf-imarat): برامج الصيف للطلاب في الإمارات، مواعيد التقديم، والشركات المشاركة.
+- [تدريب التسويق الرقمي](https://eduentry.com/ar/blog/staj-tadwiq-raqmi): المهام الشائعة في تدريب التسويق الرقمي، الأدوات المستخدمة، وكيفية إيجاد فرص في الشرق الأوسط.
+- [تحليل البيانات كمسار مهني](https://eduentry.com/ar/blog/staj-tahlil-bayanat): أدوات تحليل البيانات الشائعة، الشركات الإماراتية التي تقبل المتدربين، وكيفية البدء.
+- [مشروع تجاري في 16 سنة](https://eduentry.com/ar/blog/mashruik-tijarik-16): الإطار القانوني لتأسيس مشروع في الإمارات، خطوات عملية، وأمثلة.
+- [PISA 2025 خبرة عملية](https://eduentry.com/ar/blog/pisa-2025-khibra-amaliya-istidad-talab): نتائج PISA 2025 وبيانات الارتباط بين الخبرة العملية وأداء الطلاب.
+- [PISA 2025 أزمة التعليم](https://eduentry.com/ar/blog/pisa-2025-azmat-talim-alami-ma-yahtaj-marifatuh-awaliyaa-al-umur): نتائج PISA 2025 بالأرقام، أسباب انخفاض الدرجات، ومقارنة الدول.
 
 ### Eduentry.ai blog posts — Russian (Русский)
 
-- [Ранняя стажировка](https://eduentry.ai/ru/blog/ranniy-stazh-razvitie-rebyonka-karera): Исследования о пользе стажировок в 14–16 лет: данные NACE, психология развития, поступление в вузы.
-- [Стажировка в старшей школе](https://eduentry.ai/ru/blog/preimushchestva-stazha-v-shkole): Влияние опыта работы на самоэффективность, личностный рост и университетские заявки.
-- [Опыт работы в школе](https://eduentry.ai/ru/blog/rabochiy-opyt-starshaya-shkola-uk): Определение рабочего опыта в Великобритании, где искать, как использовать в заявлении.
-- [Международное сравнение](https://eduentry.ai/ru/blog/kak-vash-rebyonok-sravnivaetsya-globalno): Рейтинги PISA по странам, разрыв Великобритания / Сингапур / Япония, стандартизированные баллы.
-- [Как выделиться в 15 лет](https://eduentry.ai/ru/blog/kak-vydelytsya-v-15-let): Конкурсы, проекты, внеклассные активности — конкретные действия для школьников.
-- [Бизнес в 16 лет](https://eduentry.ai/ru/blog/kak-nachat-biznes-v-16-let): Правовые требования, этапы регистрации, примеры компаний, основанных школьниками.
-- [PISA 2025 образовательный кризис](https://eduentry.ai/ru/blog/pisa-2025-globalnyy-obrazovatelnyy-krizis): Результаты PISA 2025 по странам, причины снижения баллов, выводы для семей.
-- [PISA 2025 опыт работы](https://eduentry.ai/ru/blog/pisa-2025-rabochiy-opyt-gotovnost-uchashchikhsya): Данные PISA 2025 о связи между профессиональным опытом и успеваемостью учащихся.
-- [Резюме для стажировки](https://eduentry.ai/ru/blog/kak-napisat-rezyume-dlya-stazha): Структура резюме для школьников, примеры формулировок, типичные ошибки.
-- [Собеседование на стажировку](https://eduentry.ai/ru/blog/kak-proyti-sobesedovanie-na-stazh): Частые вопросы на собеседовании и как на них отвечать.
-- [Стажировка в цифровом маркетинге](https://eduentry.ai/ru/blog/tsifrovoy-marketing-stazh-shkola): Типичные задачи, инструменты (GA4, Canva, Meta Ads) и как найти стажировку.
-- [Найти стажировку без опыта](https://eduentry.ai/ru/blog/kak-nayti-stazh-bez-svyazey): Прямые заявки, платформы поиска, виртуальный опыт работы — пошаговое руководство.
-- [Сопроводительное письмо](https://eduentry.ai/ru/blog/kak-napisat-soprovoditelnoe-pismo-dlya-stazha): Структура сопроводительного письма, шаблон и примеры для школьников.
-- [Удалённая стажировка](https://eduentry.ai/ru/blog/udalennaya-stazh-dlya-shkolnikov): Платформы удалённого опыта работы (Springpod, Forage), как подготовиться и что ожидать.
-- [IT-стажировка](https://eduentry.ai/ru/blog/it-stazh-dlya-shkolnikov): Компании, принимающие школьников без опыта программирования, требования и задачи.
-- [Первый день на стажировке](https://eduentry.ai/ru/blog/pervyy-den-na-stazhirovke): Что взять, как себя вести, вопросы для наставников.
-- [Рекомендательное письмо](https://eduentry.ai/ru/blog/kak-poluchit-rekomendatelnoe-pismo-posle-stazha): Когда и как просить рекомендацию, что должно быть в письме.
-- [Стажировка в стартапе](https://eduentry.ai/ru/blog/startap-stazh-shkolniki): Отличия стажировки в стартапе от корпоративной, плюсы и минусы для школьников.
+- [Ранняя стажировка](https://eduentry.com/ru/blog/ranniy-stazh-razvitie-rebyonka-karera): Исследования о пользе стажировок в 14–16 лет: данные NACE, психология развития, поступление в вузы.
+- [Стажировка в старшей школе](https://eduentry.com/ru/blog/preimushchestva-stazha-v-shkole): Влияние опыта работы на самоэффективность, личностный рост и университетские заявки.
+- [Опыт работы в школе](https://eduentry.com/ru/blog/rabochiy-opyt-starshaya-shkola-uk): Определение рабочего опыта в Великобритании, где искать, как использовать в заявлении.
+- [Международное сравнение](https://eduentry.com/ru/blog/kak-vash-rebyonok-sravnivaetsya-globalno): Рейтинги PISA по странам, разрыв Великобритания / Сингапур / Япония, стандартизированные баллы.
+- [Как выделиться в 15 лет](https://eduentry.com/ru/blog/kak-vydelytsya-v-15-let): Конкурсы, проекты, внеклассные активности — конкретные действия для школьников.
+- [Бизнес в 16 лет](https://eduentry.com/ru/blog/kak-nachat-biznes-v-16-let): Правовые требования, этапы регистрации, примеры компаний, основанных школьниками.
+- [PISA 2025 образовательный кризис](https://eduentry.com/ru/blog/pisa-2025-globalnyy-obrazovatelnyy-krizis): Результаты PISA 2025 по странам, причины снижения баллов, выводы для семей.
+- [PISA 2025 опыт работы](https://eduentry.com/ru/blog/pisa-2025-rabochiy-opyt-gotovnost-uchashchikhsya): Данные PISA 2025 о связи между профессиональным опытом и успеваемостью учащихся.
+- [Резюме для стажировки](https://eduentry.com/ru/blog/kak-napisat-rezyume-dlya-stazha): Структура резюме для школьников, примеры формулировок, типичные ошибки.
+- [Собеседование на стажировку](https://eduentry.com/ru/blog/kak-proyti-sobesedovanie-na-stazh): Частые вопросы на собеседовании и как на них отвечать.
+- [Стажировка в цифровом маркетинге](https://eduentry.com/ru/blog/tsifrovoy-marketing-stazh-shkola): Типичные задачи, инструменты (GA4, Canva, Meta Ads) и как найти стажировку.
+- [Найти стажировку без опыта](https://eduentry.com/ru/blog/kak-nayti-stazh-bez-svyazey): Прямые заявки, платформы поиска, виртуальный опыт работы — пошаговое руководство.
+- [Сопроводительное письмо](https://eduentry.com/ru/blog/kak-napisat-soprovoditelnoe-pismo-dlya-stazha): Структура сопроводительного письма, шаблон и примеры для школьников.
+- [Удалённая стажировка](https://eduentry.com/ru/blog/udalennaya-stazh-dlya-shkolnikov): Платформы удалённого опыта работы (Springpod, Forage), как подготовиться и что ожидать.
+- [IT-стажировка](https://eduentry.com/ru/blog/it-stazh-dlya-shkolnikov): Компании, принимающие школьников без опыта программирования, требования и задачи.
+- [Первый день на стажировке](https://eduentry.com/ru/blog/pervyy-den-na-stazhirovke): Что взять, как себя вести, вопросы для наставников.
+- [Рекомендательное письмо](https://eduentry.com/ru/blog/kak-poluchit-rekomendatelnoe-pismo-posle-stazha): Когда и как просить рекомендацию, что должно быть в письме.
+- [Стажировка в стартапе](https://eduentry.com/ru/blog/startap-stazh-shkolniki): Отличия стажировки в стартапе от корпоративной, плюсы и минусы для школьников.
 
 ### Eduentry.ai blog posts — Chinese (中文)
 
-- [PISA 2025中国家长](https://eduentry.ai/zh/blog/pisa-2025-zhongguo-jiazhang-zhinan): PISA 2025各国成绩、中国排名、分数下降原因及对家庭的影响。
-- [评估孩子学术水平](https://eduentry.ai/zh/blog/haizi-xueshu-shuiping-ruhe-celiang): 标准化测试与学校成绩的区别，如何选择适合的评估工具。
-- [高中生找实习](https://eduentry.ai/zh/blog/gaozhong-shixi-ruhe-xunzhao): 招收高中生的公司类型、求职平台、申请流程及简历要点。
-- [实习简历写作](https://eduentry.ai/zh/blog/shixi-jianlixie-zhinan): 高中生简历结构、示例措辞及常见错误。
-- [实习面试准备](https://eduentry.ai/zh/blog/shixi-mianshi-zhunbei-jiqiao): 常见面试问题及参考回答。
-- [数字营销实习入门](https://eduentry.ai/zh/blog/shuzi-yingxiao-shixi-rumen): 数字营销实习的典型任务、所用工具（GA4、Meta Ads）及申请方式。
-- [数据分析实习](https://eduentry.ai/zh/blog/shuju-fenxi-shixi-gaoxiaosheng): 数据分析实习常用工具（Excel、SQL、Python）及适合高中生的入门路径。
-- [如何在15岁脱颖而出](https://eduentry.ai/zh/blog/ruhe-zai-15-sui-tuocying): 竞赛、项目、课外活动——高中生可采取的具体行动。
-- [没有背景找实习](https://eduentry.ai/zh/blog/ruhe-zhaodao-shixi-mei-you-guanxi): 直接申请、求职平台、虚拟实习项目——分步指南。
-- [实习求职信写作](https://eduentry.ai/zh/blog/shixi-qiuzhixin-xiezuo-zhinan): 求职信结构、模板及高中生版示例。
-- [远程实习指南](https://eduentry.ai/zh/blog/yuancheng-zaixian-shixi-zhinan): 远程实习平台（Springpod、Forage），准备方法及预期内容。
-- [IT科技实习](https://eduentry.ai/zh/blog/IT-keji-shixi-gaoxiao): 无编程基础也能申请的科技公司、岗位要求及任务说明。
-- [金融实习入门](https://eduentry.ai/zh/blog/jinrong-shixi-rumen): 接收高中生的金融机构、申请流程及典型工作内容。
-- [设计与创意实习](https://eduentry.ai/zh/blog/sheji-chuangyi-shixi): 创意行业实习的岗位类型、所需工具及如何积累作品集。
-- [创业公司实习](https://eduentry.ai/zh/blog/chuangye-gongsi-shixi): 初创公司与大企业实习的对比：职责范围、学习曲线及利弊分析。
-- [实习推荐信](https://eduentry.ai/zh/blog/tuijianxin-zenme-yao): 何时及如何请求推荐信，推荐信应包含的内容。
-- [实习第一天](https://eduentry.ai/zh/blog/shixi-di-yi-tian): 应携带物品、行为规范及向导师提问的建议。
-- [实习vs兼职](https://eduentry.ai/zh/blog/shixi-vs-jianzhang): 实习与兼职的区别、各自优势及高中生的最佳选择时机。
+- [PISA 2025中国家长](https://eduentry.com/zh/blog/pisa-2025-zhongguo-jiazhang-zhinan): PISA 2025各国成绩、中国排名、分数下降原因及对家庭的影响。
+- [评估孩子学术水平](https://eduentry.com/zh/blog/haizi-xueshu-shuiping-ruhe-celiang): 标准化测试与学校成绩的区别，如何选择适合的评估工具。
+- [高中生找实习](https://eduentry.com/zh/blog/gaozhong-shixi-ruhe-xunzhao): 招收高中生的公司类型、求职平台、申请流程及简历要点。
+- [实习简历写作](https://eduentry.com/zh/blog/shixi-jianlixie-zhinan): 高中生简历结构、示例措辞及常见错误。
+- [实习面试准备](https://eduentry.com/zh/blog/shixi-mianshi-zhunbei-jiqiao): 常见面试问题及参考回答。
+- [数字营销实习入门](https://eduentry.com/zh/blog/shuzi-yingxiao-shixi-rumen): 数字营销实习的典型任务、所用工具（GA4、Meta Ads）及申请方式。
+- [数据分析实习](https://eduentry.com/zh/blog/shuju-fenxi-shixi-gaoxiaosheng): 数据分析实习常用工具（Excel、SQL、Python）及适合高中生的入门路径。
+- [如何在15岁脱颖而出](https://eduentry.com/zh/blog/ruhe-zai-15-sui-tuocying): 竞赛、项目、课外活动——高中生可采取的具体行动。
+- [没有背景找实习](https://eduentry.com/zh/blog/ruhe-zhaodao-shixi-mei-you-guanxi): 直接申请、求职平台、虚拟实习项目——分步指南。
+- [实习求职信写作](https://eduentry.com/zh/blog/shixi-qiuzhixin-xiezuo-zhinan): 求职信结构、模板及高中生版示例。
+- [远程实习指南](https://eduentry.com/zh/blog/yuancheng-zaixian-shixi-zhinan): 远程实习平台（Springpod、Forage），准备方法及预期内容。
+- [IT科技实习](https://eduentry.com/zh/blog/IT-keji-shixi-gaoxiao): 无编程基础也能申请的科技公司、岗位要求及任务说明。
+- [金融实习入门](https://eduentry.com/zh/blog/jinrong-shixi-rumen): 接收高中生的金融机构、申请流程及典型工作内容。
+- [设计与创意实习](https://eduentry.com/zh/blog/sheji-chuangyi-shixi): 创意行业实习的岗位类型、所需工具及如何积累作品集。
+- [创业公司实习](https://eduentry.com/zh/blog/chuangye-gongsi-shixi): 初创公司与大企业实习的对比：职责范围、学习曲线及利弊分析。
+- [实习推荐信](https://eduentry.com/zh/blog/tuijianxin-zenme-yao): 何时及如何请求推荐信，推荐信应包含的内容。
+- [实习第一天](https://eduentry.com/zh/blog/shixi-di-yi-tian): 应携带物品、行为规范及向导师提问的建议。
+- [实习vs兼职](https://eduentry.com/zh/blog/shixi-vs-jianzhang): 实习与兼职的区别、各自优势及高中生的最佳选择时机。
 
 ---
 

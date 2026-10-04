@@ -191,7 +191,7 @@ export default function BusinessTrackPage() {
             Apply free — Business track →
           </CtaLink>
           <Link
-            href="/blog"
+            href="https://eduentry.com/blog"
             className="border border-[#d2d2d7] text-[#1d1d1f] px-8 py-4 rounded-xl font-semibold hover:border-[#4F46E5]/50 transition-colors text-lg text-center"
           >
             Read internship guides
@@ -392,7 +392,7 @@ export default function BusinessTrackPage() {
               {internshipPosts.map(post => (
                 <Link
                   key={post.slug}
-                  href={`/blog/${post.slug}`}
+                  href={`https://eduentry.com/blog/${post.slug}`}
                   className="border border-[#d2d2d7] rounded-2xl p-6 hover:border-[#4F46E5]/40 hover:shadow-sm transition-all"
                 >
                   <div className="flex flex-wrap gap-2 mb-3">

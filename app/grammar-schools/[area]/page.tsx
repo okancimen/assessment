@@ -5,12 +5,7 @@ import { notFound } from 'next/navigation'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import { GRAMMAR_AREAS, getAreaBySlug } from '../data'
-import { BLOG_POSTS } from '@/app/blog/posts'
-
-const GRAMMAR_BLOG_TAGS = new Set(['11+', 'Grammar Schools', 'Verbal Reasoning', 'Non-Verbal Reasoning'])
-const GRAMMAR_BLOG_POSTS = BLOG_POSTS
-  .filter(p => p.tags.some(t => GRAMMAR_BLOG_TAGS.has(t)))
-  .slice(0, 4)
+import { ElevenPlusGuideLinks } from '../cluster'
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -201,19 +196,11 @@ export default async function GrammarAreaPage({ params }: { params: Promise<{ ar
 
         {/* Related reading */}
         <section className="mb-10">
-          <h2 className="text-xl font-bold text-gray-900 mb-5">Related reading</h2>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {GRAMMAR_BLOG_POSTS.map((p) => (
-              <Link key={p.slug} href={`/blog/${p.slug}`} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-200 transition-colors">
-                <div className="text-xs font-semibold text-indigo-600 mb-1">Article</div>
-                <div className="font-semibold text-gray-900 text-sm">{p.shortTitle}</div>
-              </Link>
-            ))}
-            <Link href="/11-plus" className="border border-gray-100 rounded-xl p-5 hover:border-indigo-200 transition-colors">
-              <div className="text-xs font-semibold text-indigo-600 mb-1">Guide</div>
-              <div className="font-semibold text-gray-900 text-sm">11+ Preparation Overview</div>
-            </Link>
-          </div>
+          <h2 className="text-xl font-bold text-gray-900 mb-5">11+ guides</h2>
+          <ElevenPlusGuideLinks />
+          <Link href="/11-plus" className="inline-flex items-center gap-1 text-sm text-indigo-600 hover:underline mt-4">
+            11+ preparation overview →
+          </Link>
         </section>
 
         {/* Other areas */}

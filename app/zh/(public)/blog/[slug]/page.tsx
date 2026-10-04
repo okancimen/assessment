@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
+import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS_ZH, getChinesePostBySlug } from '@/app/blog/posts-zh'
 import { getChineseBlogContent } from '@/app/blog/content-zh'
@@ -91,14 +92,7 @@ export default async function ZHBlogPostPage({ params }: { params: Promise<{ slu
     dateModified: post.dateModified ?? post.date,
     url,
     inLanguage: 'zh',
-    author: {
-      '@type': 'Person',
-      '@id': 'https://eduentry.com/about#ozlem-cimen',
-      name: 'Özlem Çimen',
-      jobTitle: 'Education Professional',
-      url: 'https://eduentry.com/about#ozlem-cimen',
-      sameAs: ['https://edualist.com', 'https://www.edualist.com/neden-biz/#about'],
-    },
+    author: AUTHOR_SCHEMA,
     image: `${BASE_URL}/zh/blog/${slug}/opengraph-image`,
     wordCount: Math.round(Number(post.readTime?.match(/\d+/)?.[0] ?? 8) * 200),
     publisher: { '@id': 'https://eduentry.com/#organization' },
@@ -158,9 +152,7 @@ export default async function ZHBlogPostPage({ params }: { params: Promise<{ slu
           <span>·</span>
           <span>{post.readTime}</span>
           <span>·</span>
-          <a href="https://edualist.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#1d1d1f] transition-colors">
-            Ozlem Cimen
-          </a>
+          <AuthorName />
         </div>
       </div>
 
@@ -174,6 +166,7 @@ export default async function ZHBlogPostPage({ params }: { params: Promise<{ slu
       <article className="prose prose-gray max-w-none space-y-12">
         {getChineseBlogContent(post.contentSlug ?? slug)}
       </article>
+      <AuthorBox locale="zh" />
 
       {/* Internal service links */}
       <section className="mt-12 border border-[#d2d2d7] rounded-2xl p-6 bg-[#f5f5f7]/50">
