@@ -27,7 +27,7 @@ export default function OGImage() {
           Узнай свою готовность к стажировке
         </div>
         <div style={{ color: '#c7d2fe', fontSize: 22, textAlign: 'center', marginBottom: 48, maxWidth: 640, lineHeight: 1.5 }}>
-          34 вопроса бесплатно · 35 минут · Персональный отчёт сразу
+          34 вопроса бесплатно · 20 минут · Персональный отчёт сразу
         </div>
         <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center' }}>
           {['💻 Технологии', '📈 Бизнес', '📊 Аналитика', '📣 Digital-маркетинг'].map((track) => (

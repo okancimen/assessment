@@ -7,7 +7,7 @@ const BASE_URL = 'https://eduentry.com'
 export const metadata: Metadata = {
   title: '免费实习准备度评估',
   description:
-    '免费34题自适应评估，面向14岁以上高中生。发现你的最佳赛道——技术、商业、数据分析或数字营销——35分钟获得个性化报告。',
+    '免费34题自适应评估，面向14岁以上高中生。发现你的最佳赛道——技术、商业、数据分析或数字营销——20分钟获得个性化报告。',
   keywords: [
     '高中生实习',
     '实习准备评估',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     title: '免费实习准备度评估 — Eduentry',
-    description: '免费34题自适应评估，面向14岁以上高中生。35分钟获得个性化实习准备报告。',
+    description: '免费34题自适应评估，面向14岁以上高中生。20分钟获得个性化实习准备报告。',
     url: `${BASE_URL}/zh/shixi`,
     locale: 'zh_CN',
     images: [{ url: `${BASE_URL}/zh/shixi/opengraph-image`, width: 1200, height: 630, alt: '实习准备度评估 — Eduentry' }],
@@ -75,7 +75,7 @@ const WEBPAGE_SCHEMA = {
   '@id': `${BASE_URL}/zh/shixi#webpage`,
   url: `${BASE_URL}/zh/shixi`,
   name: '免费实习准备度评估 — Eduentry',
-  description: '免费34题自适应评估，面向14岁以上高中生。发现你的最佳赛道——技术、商业、数据分析或数字营销——35分钟获得个性化报告。',
+  description: '免费34题自适应评估，面向14岁以上高中生。发现你的最佳赛道——技术、商业、数据分析或数字营销——20分钟获得个性化报告。',
   inLanguage: 'zh',
   isPartOf: { '@id': `${BASE_URL}/#website` },
   about: { '@id': `${BASE_URL}/zh/shixi#service` },
@@ -89,7 +89,7 @@ const FAQ_SCHEMA = {
     { '@type': 'Question', name: '几岁可以参加实习？', acceptedAnswer: { '@type': 'Answer', text: '许多公司接受14至18岁的高中生实习，尤其是暑期项目。不同公司的最低年龄要求不同；创业公司和科技公司通常比大型企业更灵活。' } },
     { '@type': 'Question', name: '高中生如何找到实习机会？', acceptedAnswer: { '@type': 'Answer', text: '最有效的方式：(1) 直接发邮件给中小企业——简短、个性化的邮件往往能收到回复；(2) 通过学校的职业顾问；(3) 请求家长或亲戚介绍；(4) 参加行业活动和黑客马拉松；(5) 在LinkedIn上主动联系。' } },
     { '@type': 'Question', name: '我适合哪个赛道？', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry评估帮助你在四个赛道中找到最适合的方向：技术、商业、数据分析和数字营销。评估测量你的能力、专业知识和职场技能，为你提供客观的方向指引。' } },
-    { '@type': 'Question', name: '评估需要多长时间？', acceptedAnswer: { '@type': 'Answer', text: '评估包含34道自适应题目，分4个阶段，约需35分钟。可随时暂停和继续，无需重新开始。' } },
+    { '@type': 'Question', name: '评估需要多长时间？', acceptedAnswer: { '@type': 'Answer', text: '评估包含34道自适应题目，分4个阶段，约需20分钟。可随时暂停和继续，无需重新开始。' } },
     { '@type': 'Question', name: '准备度报告包含哪些内容？', acceptedAnswer: { '@type': 'Answer', text: '个性化报告包括：准备度等级（实习就绪、发展中或需要支持）、AI生成的表现摘要，以及每个阶段的优势和提升空间分析。' } },
     { '@type': 'Question', name: '实习经历有助于大学申请吗？', acceptedAnswer: { '@type': 'Answer', text: '是的。有据可查的工作经验能显著增强大学申请材料，尤其是商科、理工科和传媒专业。它证明你的主动性和职业成熟度——这些是单纯的学业成绩无法体现的品质。' } },
     { '@type': 'Question', name: '什么时候申请暑期实习？', acceptedAnswer: { '@type': 'Answer', text: '大型企业通常在1月至3月开放申请，名额迅速告满。中小企业全年接受申请，集中在2月至5月。最好提前3至6个月申请。' } },
@@ -160,7 +160,7 @@ export default function ZHShixiLandingPage() {
             发现你的实习准备度
           </h1>
           <p className="text-lg text-[#6e6e73] max-w-xl mx-auto mb-8 leading-relaxed">
-            面向14岁以上高中生的34题自适应评估。约35分钟，获得个性化准备度报告，找到最适合你的赛道。
+            面向14岁以上高中生的34题自适应评估。约20分钟，获得个性化准备度报告，找到最适合你的赛道。
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link
@@ -264,7 +264,7 @@ export default function ZHShixiLandingPage() {
               </div>
             ))}
             <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-6 py-3">
-              <span className="text-xs text-[#6e6e73]">共34题 · 约35分钟 · 可随时暂停和继续</span>
+              <span className="text-xs text-[#6e6e73]">共34题 · 约20分钟 · 可随时暂停和继续</span>
             </div>
           </div>
         </section>
@@ -299,7 +299,7 @@ export default function ZHShixiLandingPage() {
               { q: '几岁可以参加实习？', a: '许多公司接受14至18岁的高中生实习，尤其是暑期项目。不同公司的最低年龄要求不同；创业公司通常比大型企业更灵活。' },
               { q: '我适合哪个赛道？', a: '想想你喜欢解决什么类型的问题：技术和逻辑→技术；数字和决策→数据分析；沟通和创意→数字营销；组织和战略→商业。评估用客观数据帮你确认方向。' },
               { q: '高中生如何找到实习机会？', a: '最有效的方式：直接发邮件给中小企业、通过学校职业顾问、请求家人介绍，以及参加行业活动。' },
-              { q: '评估需要多长时间？', a: '约35分钟完成34道4阶段题目。可随时暂停和继续，无需重新开始。' },
+              { q: '评估需要多长时间？', a: '约20分钟完成34道4阶段题目。可随时暂停和继续，无需重新开始。' },
               { q: '准备度报告包含哪些内容？', a: '准备度等级（实习就绪、发展中或需要支持）、AI生成的表现摘要，以及每个阶段的优势和提升空间分析。' },
               { q: '实习经历有助于大学申请吗？', a: '是的。有据可查的工作经验能显著增强大学申请材料，尤其是商科、理工科和传媒专业。' },
               { q: '什么时候申请暑期实习？', a: '大型企业通常在1月至3月开放申请。中小企业全年接受申请，集中在2月至5月。最好提前3至6个月申请。' },
@@ -322,7 +322,7 @@ export default function ZHShixiLandingPage() {
           <div className="bg-[#4F46E5] rounded-3xl px-8 py-10 text-center">
             <h2 className="text-2xl font-bold text-white mb-3">立即评估你的实习准备度</h2>
             <p className="text-indigo-200 mb-6 text-sm leading-relaxed max-w-md mx-auto">
-              34题 · 35分钟 · 即时个性化报告。完全免费。
+              34题 · 20分钟 · 即时个性化报告。完全免费。
             </p>
             <Link
               href="/zh/auth/register"

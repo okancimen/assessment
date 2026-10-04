@@ -7,7 +7,7 @@ const BASE_URL = 'https://eduentry.com'
 export const metadata: Metadata = {
   title: 'Ücretsiz Staj Değerlendirmesi (14+ Yaş)',
   description:
-    '34 soruluk uyarlanabilir staj değerlendirmesi — Teknoloji, İş Dünyası, Veri Analitiği veya Dijital Pazarlama alanlarında hazırlığını 35 dakikada keşfet.',
+    '34 soruluk uyarlanabilir staj değerlendirmesi — Teknoloji, İş Dünyası, Veri Analitiği veya Dijital Pazarlama alanlarında hazırlığını 20 dakikada keşfet.',
   keywords: [
     'lise stajı',
     'staj değerlendirmesi',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Ücretsiz Staj Değerlendirmesi — Eduentry',
-    description: '14 yaş ve üstü lise öğrencileri için 34 soruluk ücretsiz uyarlanabilir değerlendirme. 35 dakikada staj izini bul.',
+    description: '14 yaş ve üstü lise öğrencileri için 34 soruluk ücretsiz uyarlanabilir değerlendirme. 20 dakikada staj izini bul.',
     images: [`${BASE_URL}/tr/staj/opengraph-image`],
   },
 }
@@ -85,7 +85,7 @@ const WEBPAGE_SCHEMA = {
   '@id': `${BASE_URL}/tr/staj#webpage`,
   url: `${BASE_URL}/tr/staj`,
   name: 'Ücretsiz Staj Değerlendirmesi — 14 Yaş ve Üstü Lise Öğrencileri',
-  description: 'Lise öğrencileri için ücretsiz 34 soruluk uyarlanabilir staj değerlendirmesi. Teknoloji, İş Dünyası, Veri Analitiği veya Dijital Pazarlama alanlarında staj hazırlığını 35 dakikada keşfet.',
+  description: 'Lise öğrencileri için ücretsiz 34 soruluk uyarlanabilir staj değerlendirmesi. Teknoloji, İş Dünyası, Veri Analitiği veya Dijital Pazarlama alanlarında staj hazırlığını 20 dakikada keşfet.',
   inLanguage: 'tr',
   isPartOf: { '@id': `${BASE_URL}/#website` },
   about: { '@id': `${BASE_URL}/tr/staj#service` },
@@ -108,7 +108,7 @@ const FAQ_SCHEMA = {
     {
       '@type': 'Question',
       name: 'Staj değerlendirmesi ne kadar sürer?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Değerlendirme, dört aşamada 34 uyarlanabilir sorudan oluşur ve yaklaşık 35 dakika sürer. Tamamen devam ettirilebilir olduğundan öğrenciler durdurup oturumlar arasında devam edebilir.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Değerlendirme, dört aşamada 34 uyarlanabilir sorudan oluşur ve yaklaşık 20 dakika sürer. Tamamen devam ettirilebilir olduğundan öğrenciler durdurup oturumlar arasında devam edebilir.' },
     },
     {
       '@type': 'Question',
@@ -356,7 +356,7 @@ export default function TRStajLandingPage() {
               </div>
             ))}
             <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-6 py-3">
-              <span className="text-xs text-[#6e6e73]">Toplam: 34 soru · ~35 dakika · Tamamen devam ettirilebilir</span>
+              <span className="text-xs text-[#6e6e73]">Toplam: 34 soru · ~20 dakika · Tamamen devam ettirilebilir</span>
             </div>
           </div>
         </section>
@@ -435,7 +435,7 @@ export default function TRStajLandingPage() {
           <div className="bg-[#4F46E5] rounded-3xl px-8 py-10 text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Staj hazırlığını bugün ölç</h2>
             <p className="text-indigo-200 mb-6 text-sm leading-relaxed max-w-md mx-auto">
-              34 soru · 35 dakika · Anında kişiselleştirilmiş rapor. Tamamen ücretsiz.
+              34 soru · 20 dakika · Anında kişiselleştirilmiş rapor. Tamamen ücretsiz.
             </p>
             <Link
               href="/tr/auth/register"

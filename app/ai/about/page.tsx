@@ -100,7 +100,7 @@ export default function AboutPage() {
               Eduentry.ai is a free adaptive assessment platform for UK secondary school students aged 14–18. We measure internship readiness across four career tracks — Technology, Business, Data Analytics, and Digital Marketing — and produce a personalised AI report that students can use to support internship applications, university personal statements, and career conversations.
             </p>
             <p className="text-[#6e6e73] leading-relaxed">
-              The assessment consists of 34 questions across four phases: General Aptitude (verbal and numerical reasoning), Domain Knowledge (track-specific applied skills), Workplace Skills (situational judgement), and an Interest Profile (track alignment and working style). It is fully adaptive — question difficulty adjusts in real time based on each student&apos;s responses — and takes approximately 35 minutes to complete. Results are scored instantly and the readiness report is available immediately on completion.
+              The assessment consists of 34 questions across four phases: General Aptitude (verbal and numerical reasoning), Domain Knowledge (track-specific applied skills), Workplace Skills (situational judgement), and an Interest Profile (track alignment and working style). It is fully adaptive — question difficulty adjusts in real time based on each student&apos;s responses — and takes approximately 20 minutes to complete. Results are scored instantly and the readiness report is available immediately on completion.
             </p>
           </section>
 

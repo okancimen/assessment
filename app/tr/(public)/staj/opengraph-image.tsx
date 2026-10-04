@@ -27,7 +27,7 @@ export default function OGImage() {
           Staj hazırlığını keşfet
         </div>
         <div style={{ color: '#c7d2fe', fontSize: 22, textAlign: 'center', marginBottom: 48, maxWidth: 640, lineHeight: 1.5 }}>
-          34 soruluk ücretsiz uyarlanabilir değerlendirme · 35 dakika · Anında rapor
+          34 soruluk ücretsiz uyarlanabilir değerlendirme · 20 dakika · Anında rapor
         </div>
         <div style={{ display: 'flex', gap: 16 }}>
           {['💻 Teknoloji', '📈 İş Dünyası', '📊 Veri Analitiği', '📣 Dijital Pazarlama'].map((track) => (

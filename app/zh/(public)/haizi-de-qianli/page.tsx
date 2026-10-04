@@ -7,7 +7,7 @@ const REGISTER_URL = `${BASE_URL}/zh/auth/register`
 export const metadata: Metadata = {
   title: '孩子的优势和劣势是什么？— 免费认知测评',
   description:
-    '35分钟了解孩子的优势和劣势。按照PISA、SAT和GCSE标准进行免费自适应认知评估——即时AI报告，无隐藏费用。',
+    '20分钟了解孩子的优势和劣势。按照PISA、SAT和GCSE标准进行免费自适应认知评估——即时AI报告，无隐藏费用。',
   keywords: [
     '孩子的优势和劣势是什么',
     '孩子的优势',
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/zh/haizi-de-qianli`,
     siteName: 'Eduentry',
     title: '孩子的优势和劣势是什么？— 免费认知测评',
-    description: '35分钟了解孩子的优势和劣势。按照PISA、SAT和GCSE标准进行免费自适应认知评估。',
+    description: '20分钟了解孩子的优势和劣势。按照PISA、SAT和GCSE标准进行免费自适应认知评估。',
     locale: 'zh_CN',
     images: [{ url: `${BASE_URL}/zh/opengraph-image`, width: 1200, height: 630, alt: '您孩子的认知评估 — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: '孩子的优势和劣势是什么？— 免费认知测评',
-    description: '35分钟了解孩子的优势和劣势。按照PISA、SAT和GCSE标准进行免费自适应认知评估。',
+    description: '20分钟了解孩子的优势和劣势。按照PISA、SAT和GCSE标准进行免费自适应认知评估。',
     images: [`${BASE_URL}/zh/opengraph-image`],
   },
 }
@@ -98,7 +98,7 @@ const FAQS = [
   },
   {
     q: '测试需要多长时间？',
-    a: '约35分钟。与标准多选题测试相比，自适应格式以更少的题目实现更精确的测量。测试可以保存——孩子可以随时从上次离开的地方继续。',
+    a: '约20分钟。与标准多选题测试相比，自适应格式以更少的题目实现更精确的测量。测试可以保存——孩子可以随时从上次离开的地方继续。',
   },
   {
     q: '适合哪个年龄段？',
@@ -132,7 +132,7 @@ const PAGE_SCHEMA = {
   '@id': `${BASE_URL}/zh/haizi-de-qianli#webpage`,
   url: `${BASE_URL}/zh/haizi-de-qianli`,
   name: '孩子的优势和劣势是什么？— 免费认知测评',
-  description: '35分钟了解孩子的优势和劣势。按照PISA、SAT和GCSE标准进行免费自适应认知评估。',
+  description: '20分钟了解孩子的优势和劣势。按照PISA、SAT和GCSE标准进行免费自适应认知评估。',
   inLanguage: 'zh',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
@@ -169,7 +169,7 @@ const FAQ_SCHEMA = {
 }
 
 const RELATED_POSTS = [
-  { href: '/zh/blog/mianfei-xueshu-ceshi-haizi-youshi-ruodian', tag: '评估', title: '免费学术测试：35分钟发现孩子的优势和劣势' },
+  { href: '/zh/blog/mianfei-xueshu-ceshi-haizi-youshi-ruodian', tag: '评估', title: '免费学术测试：20分钟发现孩子的优势和劣势' },
   { href: '/zh/blog/congming-haizi-chengji-cha', tag: '指南', title: '聪明孩子成绩差：家长指南' },
   { href: '/zh/blog/faxian-xueling-haizi-yincang-qianli-jiachang-zhinan', tag: '指南', title: '发现孩子的隐藏潜力：现代家长指南' },
 ]
@@ -201,7 +201,7 @@ export default function HaiziDeQianliPage() {
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            按照国际 <strong>PISA、SAT和GCSE</strong> 标准，35分钟比较认知能力和学业准备情况。揭示成绩单看不到的真实潜力。
+            按照国际 <strong>PISA、SAT和GCSE</strong> 标准，20分钟比较认知能力和学业准备情况。揭示成绩单看不到的真实潜力。
           </p>
 
           <Link

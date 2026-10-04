@@ -4486,7 +4486,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         Most parents searching for a free academic test start with school grades — but grades only show past performance within one school, one teacher, and one curriculum. A child scoring in the top 10% of their class may be operating well below their cognitive ceiling. Another child struggling with written work may have outstanding spatial reasoning that no teacher has yet surfaced. School grades cannot tell you either of these things.
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Our free adaptive academic test measures verbal reasoning, numerical reasoning, and visual-spatial thinking independently — then benchmarks each score against international age norms. In approximately 35 minutes, it produces a personalised cognitive profile that answers the question every parent actually needs answered: where is my child genuinely strong, and where do they need support?
+        Our free adaptive academic test measures verbal reasoning, numerical reasoning, and visual-spatial thinking independently — then benchmarks each score against international age norms. In approximately 20 minutes, it produces a personalised cognitive profile that answers the question every parent actually needs answered: where is my child genuinely strong, and where do they need support?
       </p>
 
       <section>
@@ -4607,7 +4607,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         </ul>
 
         <Callout>
-          <strong>Start the free test now</strong> — full four-domain report in 35 minutes, no registration required.
+          <strong>Start the free test now</strong> — full four-domain report in 20 minutes, no registration required.
         </Callout>
       </section>
 
@@ -4752,7 +4752,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Do If Your Child Is Underperforming</h2>
         <ul className="space-y-5 mb-6">
           <Check>
-            <strong>Get a cognitive baseline first:</strong> Before booking tutors, before changing schools, before any intervention — understand which domain has the gap. Tutoring numerical reasoning when the real issue is working memory is expensive and ineffective. A 35-minute adaptive assessment produces the domain profile you need to act from evidence rather than assumption.
+            <strong>Get a cognitive baseline first:</strong> Before booking tutors, before changing schools, before any intervention — understand which domain has the gap. Tutoring numerical reasoning when the real issue is working memory is expensive and ineffective. A 20-minute adaptive assessment produces the domain profile you need to act from evidence rather than assumption.
           </Check>
           <Check>
             <strong>Share the data with the teacher:</strong> &ldquo;93rd percentile in spatial reasoning&rdquo; is a completely different conversation than &ldquo;seems bright but distracted.&rdquo; A cognitive report gives teachers actionable information — it changes how they scaffold tasks, how they seat the child, what adjustments they consider. Without it, teachers work from behaviour; with it, they work from ability.
@@ -4768,7 +4768,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout>
-          <strong>Start with a free 35-minute adaptive assessment</strong> — it produces a four-domain cognitive profile benchmarked against international norms. No preparation needed. The report shows verbal reasoning, numerical reasoning, visual-spatial reasoning, and processing speed independently — giving you a complete picture of where your child stands, not just what they have been taught.
+          <strong>Start with a free 20-minute adaptive assessment</strong> — it produces a four-domain cognitive profile benchmarked against international norms. No preparation needed. The report shows verbal reasoning, numerical reasoning, visual-spatial reasoning, and processing speed independently — giving you a complete picture of where your child stands, not just what they have been taught.
         </Callout>
       </section>
 
@@ -4879,7 +4879,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout>
-          <strong>Start your free internship readiness assessment →</strong> Takes 35 minutes. No registration required. Get your sector-fit talent profile across Technology, Data Analytics, Business Management, and Digital Marketing — and arrive at every application with something concrete to offer.
+          <strong>Start your free internship readiness assessment →</strong> Takes 20 minutes. No registration required. Get your sector-fit talent profile across Technology, Data Analytics, Business Management, and Digital Marketing — and arrive at every application with something concrete to offer.
         </Callout>
       </section>
 
@@ -4935,7 +4935,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <strong>Internship or work experience (age 14+):</strong> OECD research across 47 longitudinal studies shows students with structured work experience by 16 earn 5–10% more as adults and have measurably better employment outcomes. More importantly for summer: it develops executive function, ambiguity tolerance, and professional communication — skills school cannot teach. <Link href="/blog/how-to-find-internship-as-student" className="text-indigo-600 hover:underline">Eduentry&apos;s internship readiness assessment</Link> identifies which sector fits your child&apos;s cognitive profile before they commit to a placement.
           </Bullet>
           <Bullet>
-            <strong>Cognitive baseline assessment:</strong> Before investing in summer tutoring, get a domain-level profile. 35 minutes, free, produces verbal/numerical/spatial percentile scores benchmarked internationally. Identifies exactly which domain has a gap versus which is already strong — so summer support is targeted, not scattered. This is the single highest-leverage action a parent can take before summer planning.
+            <strong>Cognitive baseline assessment:</strong> Before investing in summer tutoring, get a domain-level profile. 20 minutes, free, produces verbal/numerical/spatial percentile scores benchmarked internationally. Identifies exactly which domain has a gap versus which is already strong — so summer support is targeted, not scattered. This is the single highest-leverage action a parent can take before summer planning.
           </Bullet>
           <Bullet>
             <strong>Maths/logic enrichment (for numerical domain):</strong> AMC 8/10 preparation, Singapore maths workbooks, or competitive maths clubs. Distinguish from repetitive curriculum work — the goal is pattern-based reasoning development, not memorisation. A child who can see the structure underneath a problem is building something schools rarely test directly.
@@ -4978,7 +4978,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout>
-          Start with the free 35-minute assessment — know which domain to build this summer before you book anything.
+          Start with the free 20-minute assessment — know which domain to build this summer before you book anything.
         </Callout>
       </section>
 
@@ -5164,7 +5164,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           A cognitive assessment measures these abilities directly — independently of school curriculum, teaching quality, or prior attainment. This matters because students who have underperformed relative to their cognitive potential often have untapped capacity that targeted preparation can unlock. Conversely, a student who is performing at or above their cognitive baseline may benefit more from knowledge consolidation than from attempting to accelerate further.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Knowing your verbal, numerical, and spatial percentile scores relative to national benchmarks gives a data-driven starting point for GCSE preparation — one that is independent of teacher assessments and school marks, which can vary widely in reliability. This kind of cognitive baseline assessment takes around 35 minutes and produces a profile that is directly actionable for GCSE planning.
+          Knowing your verbal, numerical, and spatial percentile scores relative to national benchmarks gives a data-driven starting point for GCSE preparation — one that is independent of teacher assessments and school marks, which can vary widely in reliability. This kind of cognitive baseline assessment takes around 20 minutes and produces a profile that is directly actionable for GCSE planning.
         </p>
       </section>
 

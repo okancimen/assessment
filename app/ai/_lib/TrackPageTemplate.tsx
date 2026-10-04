@@ -119,7 +119,7 @@ export default function TrackPageTemplate({ track, locale }: Props) {
       credentialCategory: 'certificate',
     },
     occupationalCategory: PROGRAM_NAMES[track].occupation,
-    timeToComplete: 'PT35M',
+    timeToComplete: 'PT20M',
     educationalProgramMode: 'online',
     inLanguage: locale,
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: d.ui.offerDesc },

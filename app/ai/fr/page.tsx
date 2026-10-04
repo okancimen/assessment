@@ -87,7 +87,7 @@ const PHASES = [
 const FAQS = [
   { q: "L'évaluation est-elle gratuite ?",          a: 'Oui — toujours gratuite pour les lycéens. Pas de frais cachés, pas d\'abonnement, pas de niveaux payants.' },
   { q: 'À qui est-elle destinée ?',                  a: 'Aux lycéens de 14 à 18 ans qui souhaitent acquérir une expérience professionnelle via un stage.' },
-  { q: 'Combien de temps cela prend-il ?',           a: '34 questions en quatre phases, environ 35 minutes. L\'évaluation est entièrement reprise — vous pouvez la mettre en pause et la reprendre à tout moment.' },
+  { q: 'Combien de temps cela prend-il ?',           a: '34 questions en quatre phases, environ 20 minutes. L\'évaluation est entièrement reprise — vous pouvez la mettre en pause et la reprendre à tout moment.' },
   { q: 'Quel domaine dois-je choisir ?',             a: 'Lors de la candidature, vous pouvez classer jusqu\'à trois préférences de domaine. La phase Profil d\'intérêts aide aussi à identifier où vous vous épanouissez le mieux — le rapport le reflète.' },
   { q: 'Quand est-ce que je reçois mon rapport ?',   a: 'Immédiatement après avoir terminé. Une fois les 34 questions complétées, le score IA est calculé instantanément et le rapport est disponible dans votre compte — sans attente.' },
   { q: 'Puis-je mentionner l\'évaluation dans mon CV ?', a: 'Oui. Votre rapport de préparation comprend un score mesurable et un bilan de compétences par domaine que vous pouvez mentionner directement dans vos candidatures. De nombreux lycéens l\'incluent dans leurs lettres de motivation et entretiens.' },
@@ -149,11 +149,11 @@ const HOWTO_SCHEMA = {
   name: 'Comment obtenir un stage avec Eduentry.ai',
   description: 'Évaluation adaptative gratuite de 34 questions pour lycéens de 14 à 18 ans. Quatre étapes de l\'inscription à l\'attribution du stage.',
   inLanguage: 'fr',
-  totalTime: 'PT35M',
+  totalTime: 'PT20M',
   step: [
     { '@type': 'HowToStep', position: 1, name: 'Créez votre compte', text: 'Créez votre compte Eduentry.ai gratuit en moins d\'une minute — sans données de paiement.' },
     { '@type': 'HowToStep', position: 2, name: 'Candidatez', text: 'Dites-nous qui vous êtes, votre lycée et vos préférences de domaine parmi Technologie, Entreprise, Analyse de données ou Marketing digital.' },
-    { '@type': 'HowToStep', position: 3, name: "Complétez l'évaluation", text: '34 questions adaptatives en quatre phases : Aptitude générale, Connaissances du domaine, Compétences professionnelles et Profil d\'intérêts. Environ 35 minutes. Reprenez quand vous voulez.' },
+    { '@type': 'HowToStep', position: 3, name: "Complétez l'évaluation", text: '34 questions adaptatives en quatre phases : Aptitude générale, Connaissances du domaine, Compétences professionnelles et Profil d\'intérêts. Environ 20 minutes. Reprenez quand vous voulez.' },
     { '@type': 'HowToStep', position: 4, name: 'Recevez votre rapport', text: 'Obtenez votre rapport de préparation personnalisé rédigé par IA avec votre niveau de préparation, le détail par phase et l\'attribution de stage.' },
   ],
 }
@@ -182,7 +182,7 @@ export default function FrenchHomePage() {
       <section className="py-16 bg-white text-center px-6">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-[#eef2ff] text-[#4F46E5] text-xs font-semibold px-3 py-1.5 rounded-full mb-8 tracking-[0.1em] uppercase">
-            IA · Gratuit · 35 minutes
+            IA · Gratuit · 20 minutes
           </div>
           <h1 className="text-5xl sm:text-7xl font-bold text-[#1d1d1f] tracking-tight mb-6 leading-tight">
             Décroche un stage<br />concret.
@@ -198,7 +198,7 @@ export default function FrenchHomePage() {
               Candidater gratuitement →
             </Link>
           </div>
-          <p className="text-xs text-[#6e6e73] mt-6">Gratuit pour les lycéens · Sans carte · Résultats en 35 minutes</p>
+          <p className="text-xs text-[#6e6e73] mt-6">Gratuit pour les lycéens · Sans carte · Résultats en 20 minutes</p>
         </div>
       </section>
 
@@ -286,7 +286,7 @@ export default function FrenchHomePage() {
               </div>
             ))}
             <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-7 py-4">
-              <span className="text-xs text-[#6e6e73]">Total : 34 questions · ~35 minutes · Entièrement reprise entre les sessions</span>
+              <span className="text-xs text-[#6e6e73]">Total : 34 questions · ~20 minutes · Entièrement reprise entre les sessions</span>
             </div>
           </div>
         </div>
@@ -406,7 +406,7 @@ export default function FrenchHomePage() {
             Candidate maintenant.<br />C'est gratuit.
           </h2>
           <p className="text-lg text-[#6e6e73] mb-10">
-            34 questions. 35 minutes. Rapport personnalisé par IA et le premier pas vers un stage réel.
+            34 questions. 20 minutes. Rapport personnalisé par IA et le premier pas vers un stage réel.
           </p>
           <Link
             href="/apply"

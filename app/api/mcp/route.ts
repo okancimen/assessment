@@ -242,7 +242,7 @@ function callTool(name: string, args: Record<string, unknown>): string {
       const result = {
         assessment: {
           totalQuestions: 34,
-          duration: '~35 minutes',
+          duration: '~20 minutes',
           phases: ASSESSMENT_PHASES,
         },
         tracks: tracks.map((t) => ({

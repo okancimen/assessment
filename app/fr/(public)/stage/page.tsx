@@ -7,7 +7,7 @@ const BASE_URL = 'https://eduentry.com'
 export const metadata: Metadata = {
   title: 'Évaluation Stage Lycéen Gratuite',
   description:
-    '34 questions pour lycéens dès 14 ans. Filière idéale — Tech, Entreprise, Data ou Marketing Digital — en 35 minutes. Rapport personnalisé.',
+    '34 questions pour lycéens dès 14 ans. Filière idéale — Tech, Entreprise, Data ou Marketing Digital — en 20 minutes. Rapport personnalisé.',
   keywords: [
     'stage lycéen',
     'stage entreprise lycée',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'Évaluation Stage Lycéen Gratuite — Eduentry',
     description:
-      'Évaluation adaptative gratuite de 34 questions pour lycéens dès 14 ans. Rapport personnalisé en 35 minutes.',
+      'Évaluation adaptative gratuite de 34 questions pour lycéens dès 14 ans. Rapport personnalisé en 20 minutes.',
     url: `${BASE_URL}/fr/stage`,
     locale: 'fr_FR',
     images: [{ url: `${BASE_URL}/fr/stage/opengraph-image`, width: 1200, height: 630, alt: 'Évaluation Stage Lycéen Gratuite — Eduentry' }],
@@ -74,7 +74,7 @@ const WEBPAGE_SCHEMA = {
   '@id': `${BASE_URL}/fr/stage#webpage`,
   url: `${BASE_URL}/fr/stage`,
   name: 'Évaluation Stage Lycéen Gratuite — Eduentry',
-  description: 'Évaluation adaptative gratuite de 34 questions pour lycéens dès 14 ans. Découvre ta filière idéale — Tech, Entreprise, Data ou Marketing Digital — en 35 minutes.',
+  description: 'Évaluation adaptative gratuite de 34 questions pour lycéens dès 14 ans. Découvre ta filière idéale — Tech, Entreprise, Data ou Marketing Digital — en 20 minutes.',
   inLanguage: 'fr',
   isPartOf: { '@id': `${BASE_URL}/#website` },
   about: { '@id': `${BASE_URL}/fr/stage#service` },
@@ -107,7 +107,7 @@ const FAQ_SCHEMA = {
     {
       '@type': 'Question',
       name: 'Combien de temps dure l\'évaluation ?',
-      acceptedAnswer: { '@type': 'Answer', text: 'L\'évaluation comporte 34 questions adaptatives réparties en 4 phases et dure environ 35 minutes. Elle est entièrement suspendable et reprise automatiquement — pas besoin de la terminer en une seule fois.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'L\'évaluation comporte 34 questions adaptatives réparties en 4 phases et dure environ 20 minutes. Elle est entièrement suspendable et reprise automatiquement — pas besoin de la terminer en une seule fois.' },
     },
     {
       '@type': 'Question',
@@ -211,7 +211,7 @@ export default function FRStageLandingPage() {
             Prépare ton stage<br />lycéen
           </h1>
           <p className="text-lg text-[#6e6e73] max-w-xl mx-auto mb-8 leading-relaxed">
-            Évaluation adaptative de 34 questions pour lycéens dès 14 ans. Environ 35 minutes pour obtenir un rapport de préparation personnalisé et découvrir ta filière idéale.
+            Évaluation adaptative de 34 questions pour lycéens dès 14 ans. Environ 20 minutes pour obtenir un rapport de préparation personnalisé et découvrir ta filière idéale.
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link
@@ -318,7 +318,7 @@ export default function FRStageLandingPage() {
               </div>
             ))}
             <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-6 py-3">
-              <span className="text-xs text-[#6e6e73]">Total : 34 questions · ~35 minutes · Entièrement suspendable</span>
+              <span className="text-xs text-[#6e6e73]">Total : 34 questions · ~20 minutes · Entièrement suspendable</span>
             </div>
           </div>
         </section>
@@ -353,7 +353,7 @@ export default function FRStageLandingPage() {
               { q: 'À quel âge puis-je faire un stage ?', a: 'En France, les stages d\'observation en entreprise sont possibles dès la 3e (environ 14 ans). Les stages d\'été pour lycéens sont généralement ouverts à partir de 14–15 ans avec l\'accord des parents.' },
               { q: 'Quelle filière choisir ?', a: 'Avant de choisir, pense au type de problèmes que tu aimes résoudre : technique et logique → Technologie ; chiffres et décisions → Analyse de Données ; communication et créativité → Marketing Digital ; organisation et stratégie → Entreprise. L\'évaluation t\'aidera à confirmer ton orientation avec des données objectives.' },
               { q: 'Comment trouver un stage lycéen en France ?', a: 'Les voies les plus efficaces : réseau familial, candidatures spontanées par e-mail aux PME locales, plateformes comme Springpod pour les stages à distance, et le coordinateur carrière de ton établissement. Un e-mail court et personnalisé aux petites entreprises obtient souvent une réponse positive.' },
-              { q: 'Combien de temps dure l\'évaluation ?', a: 'Environ 35 minutes pour 34 questions en 4 phases. Elle est entièrement suspendable — tu peux reprendre là où tu t\'es arrêté sans recommencer depuis le début.' },
+              { q: 'Combien de temps dure l\'évaluation ?', a: 'Environ 20 minutes pour 34 questions en 4 phases. Elle est entièrement suspendable — tu peux reprendre là où tu t\'es arrêté sans recommencer depuis le début.' },
               { q: 'Que contient le rapport de préparation ?', a: 'Ton niveau de préparation (Prêt pour le Stage, En Progression ou Soutien Nécessaire), un résumé IA de tes performances, et des insights par phase avec tes points forts et un axe de développement.' },
               { q: 'Comment trouver un stage d\'été ?', a: 'Les grandes entreprises ouvrent leurs programmes entre janvier et mars — ces places partent vite. Les PME et entreprises locales acceptent des candidatures toute l\'année, avec un pic mars–mai. Postule 3 à 6 mois à l\'avance pour les grands groupes.' },
               { q: 'Le stage aide-t-il pour Parcoursup ?', a: 'Oui. Une expérience professionnelle bien valorisée dans la fiche avenir et les appréciations peut renforcer un dossier Parcoursup — notamment pour les BTS, IUT, classes prépa et certaines licences sélectives.' },
@@ -376,7 +376,7 @@ export default function FRStageLandingPage() {
           <div className="bg-[#4F46E5] rounded-3xl px-8 py-10 text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Évalue ta préparation au stage aujourd&apos;hui</h2>
             <p className="text-indigo-200 mb-6 text-sm leading-relaxed max-w-md mx-auto">
-              34 questions · 35 minutes · Rapport personnalisé instantané. Entièrement gratuit.
+              34 questions · 20 minutes · Rapport personnalisé instantané. Entièrement gratuit.
             </p>
             <Link
               href="/fr/auth/register"

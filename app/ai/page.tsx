@@ -74,7 +74,7 @@ const PHASES = [
 const FAQS = [
   { q: 'Is the assessment free?',              a: 'Yes — always free for students. There are no hidden fees, subscriptions, or paid tiers.' },
   { q: 'Who is it for?',                       a: 'High school students aged 14–18 (Year 9 to Sixth Form) who want to gain professional experience.' },
-  { q: 'How long does it take?',               a: 'Around 35 minutes across 34 questions in four phases. The assessment is fully resumable — you can stop and continue later.' },
+  { q: 'How long does it take?',               a: 'Around 20 minutes across 34 questions in four phases. The assessment is fully resumable — you can stop and continue later.' },
   { q: 'What track should I choose?',          a: 'You rank up to three track preferences when you apply. The Interest Profile phase also helps identify where you fit best — your report reflects this.' },
   { q: 'When do I get my readiness report?',   a: 'Immediately after you finish. Once you complete all 34 questions, the AI scoring runs instantly and your report is ready in your account — no waiting.' },
   { q: 'Can I use my assessment in my CV?',    a: 'Yes. Your readiness report includes a measurable score and a skill breakdown by track that you can reference directly in applications. Many of our students carry it into personal statements and job interviews.' },
@@ -150,10 +150,10 @@ const HOWTO_SCHEMA = {
   name: 'How to get placed in a UK internship with Eduentry.ai',
   description: 'Free 34-question adaptive assessment for high school students aged 14–18. Three steps from registration to internship placement match.',
   inLanguage: 'en-GB',
-  totalTime: 'PT35M',
+  totalTime: 'PT20M',
   step: [
     { '@type': 'HowToStep', position: 1, name: 'Register & apply', text: 'Create your free Eduentry.ai account and tell us about yourself, your school year, and your track preferences across Technology, Business, Data Analytics, or Digital Marketing.' },
-    { '@type': 'HowToStep', position: 2, name: 'Take the assessment', text: '34 adaptive questions across four phases: General Aptitude, Domain Knowledge, Workplace Skills, and Interest Profile. Takes approximately 35 minutes. Resume any time.' },
+    { '@type': 'HowToStep', position: 2, name: 'Take the assessment', text: '34 adaptive questions across four phases: General Aptitude, Domain Knowledge, Workplace Skills, and Interest Profile. Takes approximately 20 minutes. Resume any time.' },
     { '@type': 'HowToStep', position: 3, name: 'Get your report', text: 'Receive an AI-written personalised readiness report with a readiness tier, phase-by-phase breakdown, and internship placement match.' },
   ],
 }
@@ -182,7 +182,7 @@ export default function AIHomePage() {
       <section className="py-16 bg-white text-center px-6">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-[#eef2ff] text-[#4F46E5] text-xs font-semibold px-3 py-1.5 rounded-full mb-8 tracking-[0.1em] uppercase">
-            AI-Powered · Free · 35 Minutes
+            AI-Powered · Free · 20 Minutes
           </div>
           <h1 className="text-5xl sm:text-7xl font-bold text-[#1d1d1f] tracking-tight mb-6 leading-tight">
             Get placed in a<br />real internship.
@@ -204,7 +204,7 @@ export default function AIHomePage() {
               See a sample report
             </a>
           </div>
-          <p className="text-xs text-[#6e6e73] mt-6">Free for students · No card required · Results in 35 min</p>
+          <p className="text-xs text-[#6e6e73] mt-6">Free for students · No card required · Results in 20 min</p>
         </div>
       </section>
 
@@ -292,7 +292,7 @@ export default function AIHomePage() {
               </div>
             ))}
             <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-7 py-4">
-              <span className="text-xs text-[#6e6e73]">Total: 34 questions · ~35 minutes · Fully resumable across sessions</span>
+              <span className="text-xs text-[#6e6e73]">Total: 34 questions · ~20 minutes · Fully resumable across sessions</span>
             </div>
           </div>
         </div>
@@ -412,7 +412,7 @@ export default function AIHomePage() {
             Apply now.<br />It&apos;s free.
           </h2>
           <p className="text-lg text-[#6e6e73] mb-10">
-            34 questions. 35 minutes. A personalised AI report and your first step toward a real internship.
+            34 questions. 20 minutes. A personalised AI report and your first step toward a real internship.
           </p>
           <Link
             href="/apply"

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     title: 'Digital Marketing Internship Assessment for Students — Eduentry.ai',
-    description: 'Free 34-question adaptive assessment for high school students seeking digital marketing internships. AI-scored. Personalised readiness report in 35 minutes.',
+    description: 'Free 34-question adaptive assessment for high school students seeking digital marketing internships. AI-scored. Personalised readiness report in 20 minutes.',
     url: TRACK_URL,
     siteName: 'Eduentry.ai',
   },
@@ -146,7 +146,7 @@ export default function DigitalMarketingTrackPage() {
       credentialCategory: 'certificate',
     },
     occupationalCategory: 'Digital Marketing',
-    timeToComplete: 'PT35M',
+    timeToComplete: 'PT20M',
     educationalProgramMode: 'online',
     inLanguage: 'en-GB',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Free for all students aged 14–18' },
@@ -201,7 +201,7 @@ export default function DigitalMarketingTrackPage() {
         <div className="flex flex-wrap gap-6 text-sm text-[#6e6e73]">
           <span>✓ Free for all students</span>
           <span>✓ Ages 14–18</span>
-          <span>✓ 35 minutes</span>
+          <span>✓ 20 minutes</span>
           <span>✓ AI-scored instantly</span>
           <span>✓ Personalised readiness report</span>
         </div>
@@ -443,7 +443,7 @@ export default function DigitalMarketingTrackPage() {
         >
           Apply free — Digital Marketing track →
         </CtaLink>
-        <p className="mt-6 text-sm text-[#6e6e73]">Free for all students aged 14–18 · Takes 35 minutes · Instant results</p>
+        <p className="mt-6 text-sm text-[#6e6e73]">Free for all students aged 14–18 · Takes 20 minutes · Instant results</p>
       </section>
     </main>
   )

@@ -27,7 +27,7 @@ export default function OGImage() {
           发现你的实习准备度
         </div>
         <div style={{ color: '#c7d2fe', fontSize: 22, textAlign: 'center', marginBottom: 48, maxWidth: 640, lineHeight: 1.5 }}>
-          免费34题 · 35分钟 · 即时个性化报告
+          免费34题 · 20分钟 · 即时个性化报告
         </div>
         <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center' }}>
           {['💻 技术', '📈 商业', '📊 数据分析', '📣 数字营销'].map((track) => (

@@ -1567,7 +1567,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Find out where your child actually stands',
-      body: 'Eduentry\'s free adaptive assessment produces a standardised score and global percentile comparison — not a school grade. Understand your child\'s real position in under 35 minutes.',
+      body: 'Eduentry\'s free adaptive assessment produces a standardised score and global percentile comparison — not a school grade. Understand your child\'s real position in under 20 minutes.',
       label: 'Start free assessment',
       href: '/auth/register',
     },
@@ -1937,7 +1937,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Is your child ready for work experience?',
-      body: 'Eduentry\'s free internship readiness assessment takes 35 minutes and tells your child exactly where they stand — aptitude, domain knowledge, and professional skills — with a personalised report they can use in applications.',
+      body: 'Eduentry\'s free internship readiness assessment takes 20 minutes and tells your child exactly where they stand — aptitude, domain knowledge, and professional skills — with a personalised report they can use in applications.',
       label: 'Start free assessment',
       href: '/internship',
     },
@@ -2033,8 +2033,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     slug: 'discover-child-strengths-free-academic-test',
     title: "Free Academic Test for Children: Discover Your Child's Strengths and Weaknesses",
     shortTitle: "Free Academic Test: Discover Your Child's Strengths",
-    description: "Grades don't show your child's true potential. Our free adaptive test measures verbal, numerical and spatial reasoning in 35 minutes, with a report.",
-    tldr: "A free adaptive test measuring verbal reasoning, numerical reasoning, and visual-spatial thinking independently — giving parents an international-percentile report in 35 minutes. Built on Computer Adaptive Testing (CAT) and Item Response Theory, the same methodology behind CAT4 and NWEA MAP.",
+    description: "Grades don't show your child's true potential. Our free adaptive test measures verbal, numerical and spatial reasoning in 20 minutes, with a report.",
+    tldr: "A free adaptive test measuring verbal reasoning, numerical reasoning, and visual-spatial thinking independently — giving parents an international-percentile report in 20 minutes. Built on Computer Adaptive Testing (CAT) and Item Response Theory, the same methodology behind CAT4 and NWEA MAP.",
     date: '2026-10-01',
     dateModified: '2026-10-01',
     readTime: '10 min read',
@@ -2046,7 +2046,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: "How long does the free academic test take?",
-        a: "Approximately 25–35 minutes. The adaptive format means every question adjusts to the previous answer, reaching the same measurement accuracy as an 80-question test in far fewer questions.",
+        a: "Approximately 15–20 minutes. The adaptive format means every question adjusts to the previous answer, reaching the same measurement accuracy as an 80-question test in far fewer questions.",
       },
       {
         q: "What age range is it designed for?",
@@ -2070,7 +2070,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: "Can a free test show whether my child is gifted?",
-        a: "Yes. An adaptive cognitive assessment measures the three domains most strongly associated with giftedness: verbal reasoning, numerical reasoning, and visual-spatial thinking. A child scoring above the 90th percentile across all three domains is a strong candidate for gifted programme consideration. The test takes 35 minutes and requires no registration.",
+        a: "Yes. An adaptive cognitive assessment measures the three domains most strongly associated with giftedness: verbal reasoning, numerical reasoning, and visual-spatial thinking. A child scoring above the 90th percentile across all three domains is a strong candidate for gifted programme consideration. The test takes 20 minutes and requires no registration.",
       },
       {
         q: "How accurate is a free online academic test compared to a professional assessment?",
@@ -2122,7 +2122,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: 'How do I find out my child\'s true academic potential?',
-        a: 'A free adaptive cognitive assessment measures verbal reasoning, numerical reasoning, visual-spatial reasoning, and processing speed independently — producing a percentile score for each domain benchmarked against international norms. Unlike school grades, this separates what your child knows from what they are cognitively capable of. The Eduentry academic assessment takes 35 minutes and requires no prior preparation.',
+        a: 'A free adaptive cognitive assessment measures verbal reasoning, numerical reasoning, visual-spatial reasoning, and processing speed independently — producing a percentile score for each domain benchmarked against international norms. Unlike school grades, this separates what your child knows from what they are cognitively capable of. The Eduentry academic assessment takes 20 minutes and requires no prior preparation.',
       },
       {
         q: 'Should I get my child tested if they underperform at school?',
@@ -2174,7 +2174,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: 'How does the Eduentry assessment work?',
-        a: 'The Eduentry internship readiness assessment uses adaptive testing: each question is selected based on your previous answer, so it calibrates to your real ability level rather than a fixed difficulty. It takes approximately 35 minutes and covers four sectors — technology, data analytics, business management, and digital marketing. At the end, you receive a detailed talent report with domain scores and a sector-fit profile.',
+        a: 'The Eduentry internship readiness assessment uses adaptive testing: each question is selected based on your previous answer, so it calibrates to your real ability level rather than a fixed difficulty. It takes approximately 20 minutes and covers four sectors — technology, data analytics, business management, and digital marketing. At the end, you receive a detailed talent report with domain scores and a sector-fit profile.',
       },
       {
         q: 'Is the Eduentry assessment free?',
@@ -2190,7 +2190,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: 'How long does the internship readiness assessment take?',
-        a: 'Approximately 35 minutes. Because the test is adaptive, it reaches precise calibration faster than a fixed-format test of equivalent accuracy. You can complete it in one sitting — no account or prior preparation required.',
+        a: 'Approximately 20 minutes. Because the test is adaptive, it reaches precise calibration faster than a fixed-format test of equivalent accuracy. You can complete it in one sitting — no account or prior preparation required.',
       },
       {
         q: 'What is the difference between a student internship and a graduate placement?',
@@ -2211,7 +2211,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Find out if you\'re internship-ready',
-      body: 'Free adaptive assessment for students 14+. Get your talent profile across tech, data, business and digital marketing in 35 minutes.',
+      body: 'Free adaptive assessment for students 14+. Get your talent profile across tech, data, business and digital marketing in 20 minutes.',
       label: 'Start free assessment →',
       href: '/internship',
     },
@@ -2222,7 +2222,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Summer Activities for Academically Ambitious Children',
     description:
       'A research-backed summer plan for high-achieving 9–16 year olds: internships, assessments, enrichment and a 3-step way to match your child\'s strengths.',
-    tldr: 'Unstructured summers widen the achievement gap — but the wrong structured summer kills intrinsic motivation. The answer is purposeful, varied, and matched to the child\'s cognitive profile. Start with a free 35-minute assessment to know which domain to build before you book anything.',
+    tldr: 'Unstructured summers widen the achievement gap — but the wrong structured summer kills intrinsic motivation. The answer is purposeful, varied, and matched to the child\'s cognitive profile. Start with a free 20-minute assessment to know which domain to build before you book anything.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
     readTime: '10 min read',
@@ -2254,7 +2254,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: "How do I know which summer activity suits my child's strengths?",
-        a: "Take the free 35-minute cognitive assessment before booking anything. It produces verbal, numerical, and spatial percentile scores benchmarked internationally. A child with a strong verbal profile thrives in debate, writing, and Model UN. A numerical-spatial profile points toward coding, engineering projects, and competitive maths. Matching activity to profile prevents wasted summer investment.",
+        a: "Take the free 20-minute cognitive assessment before booking anything. It produces verbal, numerical, and spatial percentile scores benchmarked internationally. A child with a strong verbal profile thrives in debate, writing, and Model UN. A numerical-spatial profile points toward coding, engineering projects, and competitive maths. Matching activity to profile prevents wasted summer investment.",
       },
       {
         q: 'Do summer activities improve school performance the following year?',

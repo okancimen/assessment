@@ -54,7 +54,7 @@ const FAQ_SCHEMA = {
     { '@type': 'Question', name: 'What is the internship assessment?', acceptedAnswer: { '@type': 'Answer', text: "A separate 34-question adaptive assessment for high school students aged 14+. It evaluates general aptitude, domain knowledge, workplace skills, and interest profile across four career tracks: Technology, Business, Data Analytics, and Digital Marketing. Results include a personalised readiness report and AI-generated career insights." } },
     { '@type': 'Question', name: 'Can I use Eduentry to prepare for the 11+?', acceptedAnswer: { '@type': 'Answer', text: "Yes. The four subjects — English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning — directly mirror the 11+ exam structure used by grammar schools in England. Eduentry gives you a standardised score and percentile ranking so you know exactly where your child stands before sitting the real exam." } },
     { '@type': 'Question', name: 'What score is considered good?', acceptedAnswer: { '@type': 'Answer', text: "A score of 100 is exactly average. 95–109 is the average range, 110–119 is Above Average, and 120+ is Exceptional. For 11+ grammar school entry, competitive scores are typically 115 and above — though the most selective schools in areas like London require 127+." } },
-    { '@type': 'Question', name: 'How long does each assessment take?', acceptedAnswer: { '@type': 'Answer', text: "The academic assessment is 60 questions across 4 subjects — most children complete it in 60–90 minutes. The internship assessment is 34 questions — most students finish in around 35 minutes. Progress is automatically saved so both can be paused and resumed at any time." } },
+    { '@type': 'Question', name: 'How long does each assessment take?', acceptedAnswer: { '@type': 'Answer', text: "The academic assessment is 60 questions across 4 subjects — most children complete it in 60–90 minutes. The internship assessment is 34 questions — most students finish in around 20 minutes. Progress is automatically saved so both can be paused and resumed at any time." } },
     { '@type': 'Question', name: 'How does the adaptive technology work?', acceptedAnswer: { '@type': 'Answer', text: "Eduentry uses 2-Parameter Logistic (2PL) Item Response Theory with MAP estimation — the same model used in PISA, GCSE, and SAT. After each answer, the system updates its estimate of the student's ability and selects the next question to maximise measurement precision." } },
     { '@type': 'Question', name: 'Can I add more than one child?', acceptedAnswer: { '@type': 'Answer', text: "Yes. A single parent account supports multiple child profiles. Each child has their own assessment history, scores, and personalised recommendations. There is no limit on the number of children you can add." } },
     { '@type': 'Question', name: 'Is my data private?', acceptedAnswer: { '@type': 'Answer', text: "Yes. All data is stored securely with row-level security — only you can access your results. We do not sell or share data with any third parties. The service is fully GDPR-compliant." } },
@@ -188,7 +188,7 @@ const INTERNSHIP_PROGRAM_SCHEMA = {
     name: 'Internship Readiness Report',
     credentialCategory: 'certificate',
   },
-  timeToComplete: 'PT35M',
+  timeToComplete: 'PT20M',
   educationalProgramMode: 'online',
   inLanguage: 'en-GB',
   typicalAgeRange: '14-18',
@@ -626,7 +626,7 @@ export default function LandingPage() {
               {
                 step: '02',
                 title: 'Complete 4 assessment phases',
-                desc: 'General aptitude, domain knowledge, workplace skills (SJT), and interest profile — 34 adaptive questions in total. Fully resumable, takes around 35 minutes.',
+                desc: 'General aptitude, domain knowledge, workplace skills (SJT), and interest profile — 34 adaptive questions in total. Fully resumable, takes around 20 minutes.',
               },
               {
                 step: '03',
@@ -750,7 +750,7 @@ export default function LandingPage() {
               { q: 'What is the internship assessment?', a: "A separate 34-question adaptive assessment for high school students aged 14+. It evaluates general aptitude, domain knowledge, workplace skills, and interest profile across four career tracks: Technology, Business, Data Analytics, and Digital Marketing. Results include a personalised readiness report and AI-generated career insights." },
               { q: 'Can I use Eduentry to prepare for the 11+?', a: "Yes. The four subjects — English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning — directly mirror the 11+ exam structure used by grammar schools in England. Eduentry gives you a standardised score and percentile ranking so you know exactly where your child stands before sitting the real exam." },
               { q: 'What score is considered good?', a: "A score of 100 is exactly average. 95–109 is the average range, 110–119 is Above Average, and 120+ is Exceptional. For 11+ grammar school entry, competitive scores are typically 115 and above — though the most selective schools in areas like London require 127+. The full score guide is shown in the Methodology section." },
-              { q: 'How long does each assessment take?', a: "The academic assessment is 60 questions across 4 subjects — most children complete it in 60–90 minutes. The internship assessment is 34 questions — most students finish in around 35 minutes. Progress is automatically saved so both can be paused and resumed at any time." },
+              { q: 'How long does each assessment take?', a: "The academic assessment is 60 questions across 4 subjects — most children complete it in 60–90 minutes. The internship assessment is 34 questions — most students finish in around 20 minutes. Progress is automatically saved so both can be paused and resumed at any time." },
               { q: 'How does the adaptive technology work?', a: "Eduentry uses 2-Parameter Logistic (2PL) Item Response Theory with MAP estimation — the same model used in PISA, GCSE, and SAT. After each answer, the system updates its estimate of the student's ability and selects the next question to maximise measurement precision." },
               { q: 'Can I add more than one child?', a: "Yes. A single parent account supports multiple child profiles. Each child has their own assessment history, scores, and personalised recommendations. There is no limit on the number of children you can add." },
               { q: "Is my data private?", a: "Yes. All data is stored securely with row-level security — only you can access your results. We do not sell or share data with any third parties. The service is fully GDPR-compliant." },
@@ -824,7 +824,7 @@ export default function LandingPage() {
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Internship Assessment</p>
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Find your student&apos;s internship readiness.</h2>
-            <p className="text-[#636366] text-sm mb-8">Personalised report and AI insights in 35 minutes.</p>
+            <p className="text-[#636366] text-sm mb-8">Personalised report and AI insights in 20 minutes.</p>
             <a
               href="https://eduentry.ai"
               className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors"

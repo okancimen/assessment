@@ -27,7 +27,7 @@ export default function OGImage() {
           Discover Your Internship Readiness
         </div>
         <div style={{ color: '#c7d2fe', fontSize: 22, textAlign: 'center', marginBottom: 48, maxWidth: 640, lineHeight: 1.5 }}>
-          34 free questions · 35 minutes · Instant personalised report
+          34 free questions · 20 minutes · Instant personalised report
         </div>
         <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center' }}>
           {['💻 Technology', '📈 Business', '📊 Data Analytics', '📣 Digital Marketing'].map((track) => (

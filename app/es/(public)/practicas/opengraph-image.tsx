@@ -27,7 +27,7 @@ export default function OGImage() {
           Prepara tus prácticas de instituto
         </div>
         <div style={{ color: '#c7d2fe', fontSize: 22, textAlign: 'center', marginBottom: 48, maxWidth: 640, lineHeight: 1.5 }}>
-          34 preguntas gratuitas · 35 minutos · Informe personalizado instantáneo
+          34 preguntas gratuitas · 20 minutos · Informe personalizado instantáneo
         </div>
         <div style={{ display: 'flex', gap: 16 }}>
           {['💻 Tecnología', '📈 Empresa', '📊 Datos', '📣 Marketing Digital'].map((track) => (

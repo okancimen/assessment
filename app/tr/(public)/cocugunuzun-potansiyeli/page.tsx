@@ -7,7 +7,7 @@ const REGISTER_URL = `${BASE_URL}/tr/auth/register`
 export const metadata: Metadata = {
   title: 'Çocuğumun Güçlü ve Zayıf Yönleri: Ücretsiz Test',
   description:
-    'Çocuğunuzun güçlü ve zayıf yönlerini 35 dakikada öğrenin. PISA, SAT ve GCSE standartlarıyla ücretsiz bilişsel değerlendirme — anında AI destekli rapor.',
+    'Çocuğunuzun güçlü ve zayıf yönlerini 20 dakikada öğrenin. PISA, SAT ve GCSE standartlarıyla ücretsiz bilişsel değerlendirme — anında AI destekli rapor.',
   keywords: [
     'çocuğumun güçlü ve zayıf yönleri nelerdir',
     'çocuğumun güçlü yönleri',
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/tr/cocugunuzun-potansiyeli`,
     siteName: 'Eduentry',
     title: 'Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir? — Ücretsiz Bilişsel Test',
-    description: 'Çocuğunuzun güçlü ve zayıf yönlerini 35 dakikada öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
+    description: 'Çocuğunuzun güçlü ve zayıf yönlerini 20 dakikada öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
     locale: 'tr_TR',
     images: [{ url: `${BASE_URL}/tr/staj/opengraph-image`, width: 1200, height: 630, alt: 'Çocuğunuzun Bilişsel Değerlendirmesi — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir? — Ücretsiz Bilişsel Test',
-    description: 'Çocuğunuzun güçlü ve zayıf yönlerini 35 dakikada öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
+    description: 'Çocuğunuzun güçlü ve zayıf yönlerini 20 dakikada öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
     images: [`${BASE_URL}/tr/staj/opengraph-image`],
   },
 }
@@ -98,7 +98,7 @@ const FAQS = [
   },
   {
     q: 'Test ne kadar sürer?',
-    a: 'Yaklaşık 35 dakika. Uyarlanabilir format, standart çoktan seçmeli testlere kıyasla daha az soruyla daha doğru ölçüm yapar. Test kaydedilebilir — çocuğunuz dilediğinde kaldığı yerden devam edebilir.',
+    a: 'Yaklaşık 20 dakika. Uyarlanabilir format, standart çoktan seçmeli testlere kıyasla daha az soruyla daha doğru ölçüm yapar. Test kaydedilebilir — çocuğunuz dilediğinde kaldığı yerden devam edebilir.',
   },
   {
     q: 'Hangi yaş grubuna uygundur?',
@@ -132,7 +132,7 @@ const PAGE_SCHEMA = {
   '@id': `${BASE_URL}/tr/cocugunuzun-potansiyeli#webpage`,
   url: `${BASE_URL}/tr/cocugunuzun-potansiyeli`,
   name: 'Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir? — Ücretsiz Bilişsel Test',
-  description: 'Çocuğunuzun güçlü ve zayıf yönlerini 35 dakikada öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
+  description: 'Çocuğunuzun güçlü ve zayıf yönlerini 20 dakikada öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
   inLanguage: 'tr',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
@@ -169,7 +169,7 @@ const FAQ_SCHEMA = {
 }
 
 const RELATED_POSTS = [
-  { href: '/tr/blog/cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet', tag: 'Değerlendirme', title: 'Ücretsiz Akademik Test: Güçlü ve Zayıf Yönleri 35 Dakikada Keşfedin' },
+  { href: '/tr/blog/cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet', tag: 'Değerlendirme', title: 'Ücretsiz Akademik Test: Güçlü ve Zayıf Yönleri 20 Dakikada Keşfedin' },
   { href: '/tr/blog/zeki-cocuk-neden-basarisiz-olur', tag: 'Rehber', title: 'Zeki Çocuk Neden Başarısız Olur? Ebeveyn Rehberi' },
   { href: '/tr/blog/cocugunuzun-gizli-guclerini-kesfetmek-yeni-nesil-veli-rehberi', tag: 'Rehber', title: 'Çocuğunuzun Gizli Güçlerini Keşfedin: Yeni Nesil Veli Rehberi' },
 ]
@@ -204,7 +204,7 @@ export default function CocugunuzunPotansiyeliPage() {
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Bilişsel yeteneği ve akademik hazırlığı uluslararası <strong>PISA, SAT ve GCSE</strong> standartlarına göre 35 dakikada kıyaslayın. Karne notlarının gösteremediği gerçek potansiyeli ortaya çıkarın.
+            Bilişsel yeteneği ve akademik hazırlığı uluslararası <strong>PISA, SAT ve GCSE</strong> standartlarına göre 20 dakikada kıyaslayın. Karne notlarının gösteremediği gerçek potansiyeli ortaya çıkarın.
           </p>
 
           <Link

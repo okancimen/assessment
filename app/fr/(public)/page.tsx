@@ -79,7 +79,7 @@ const FAQ_FR = [
   { q: 'Quelles matières couvre l\'évaluation académique ?', a: 'Anglais (compréhension de lecture, grammaire, vocabulaire), Mathématiques (arithmétique, algèbre, géométrie, résolution de problèmes), Raisonnement Verbal (analogies, classifications, séquences) et Raisonnement Non Verbal (motifs, raisonnement spatial, matrices). Chaque matière comporte 15 questions adaptatives.' },
   { q: 'Qu\'est-ce qu\'un classement par percentile ?', a: 'Un classement par percentile montre comment votre enfant se compare à tous les enfants du même âge. Un score au percentile 80 signifie que votre enfant a obtenu de meilleurs résultats que 80 % des enfants de cet âge. Eduentry utilise une échelle standardisée avec une moyenne de 100 et un écart-type de 15 — la même échelle utilisée par PISA et la plupart des évaluations professionnelles.' },
   { q: 'Qu\'est-ce que l\'évaluation de stage ?', a: 'Une évaluation adaptative distincte de 34 questions pour les lycéens de plus de 14 ans. Elle évalue l\'aptitude générale, les connaissances sectorielles, les compétences professionnelles et le profil d\'intérêts dans quatre domaines : Technologie, Entreprise, Analyse de données et Marketing digital. Les résultats comprennent un rapport de préparation personnalisé et des insights de carrière générés par IA.' },
-  { q: 'Combien de temps dure chaque évaluation ?', a: 'L\'évaluation académique comporte 60 questions en 4 matières — la plupart des enfants la complètent en 60–90 minutes. L\'évaluation de stage comporte 34 questions — la plupart des élèves la terminent en environ 35 minutes. La progression est sauvegardée automatiquement, les deux peuvent donc être mises en pause et reprises à tout moment.' },
+  { q: 'Combien de temps dure chaque évaluation ?', a: 'L\'évaluation académique comporte 60 questions en 4 matières — la plupart des enfants la complètent en 60–90 minutes. L\'évaluation de stage comporte 34 questions — la plupart des élèves la terminent en environ 20 minutes. La progression est sauvegardée automatiquement, les deux peuvent donc être mises en pause et reprises à tout moment.' },
   { q: 'Comment fonctionne la technologie adaptative ?', a: 'Eduentry utilise la Théorie de Réponse à l\'Item Logistique à 2 Paramètres (2PL) avec estimation MAP — le même modèle utilisé dans PISA, GCSE et SAT. Après chaque réponse, le système met à jour son estimation du niveau de l\'élève et sélectionne la question suivante pour maximiser la précision de mesure.' },
   { q: 'Puis-je ajouter plusieurs enfants ?', a: 'Oui. Un seul compte parent peut inclure plusieurs profils d\'enfants. Chaque enfant dispose de son propre historique d\'évaluations, de ses scores et de recommandations personnalisées. Il n\'y a pas de limite au nombre d\'enfants que vous pouvez ajouter.' },
   { q: 'Mes données sont-elles privées ?', a: 'Oui. Toutes les données sont stockées en toute sécurité avec une sécurité au niveau des lignes — seul vous pouvez accéder à vos résultats. Nous ne vendons ni ne partageons les données avec des tiers. Le service est entièrement conforme au RGPD.' },
@@ -146,7 +146,7 @@ const INTERNSHIP_PROGRAM_SCHEMA_FR = {
   url: 'https://eduentry.com/fr/stage',
   provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Rapport de Préparation aux Stages', credentialCategory: 'certificate' },
-  timeToComplete: 'PT35M',
+  timeToComplete: 'PT20M',
   educationalProgramMode: 'online',
   inLanguage: 'fr',
   typicalAgeRange: '14-18',
@@ -510,7 +510,7 @@ export default function FrenchHomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { step: '01', title: 'Créez un compte étudiant gratuit', desc: 'Inscrivez-vous vous-même ou acceptez l\'invitation de vos parents. Renseignez votre lycée, votre classe, vos préférences de domaine et une brève déclaration personnelle sur vos objectifs.' },
-              { step: '02', title: 'Complétez 4 phases d\'évaluation', desc: 'Aptitude générale, connaissances sectorielles, compétences professionnelles (SJT) et profil d\'intérêts — 34 questions adaptatives au total. Entièrement reprendable, dure environ 35 minutes.' },
+              { step: '02', title: 'Complétez 4 phases d\'évaluation', desc: 'Aptitude générale, connaissances sectorielles, compétences professionnelles (SJT) et profil d\'intérêts — 34 questions adaptatives au total. Entièrement reprendable, dure environ 20 minutes.' },
               { step: '03', title: 'Recevez votre rapport de préparation', desc: 'Obtenez votre niveau de préparation au stage, un résumé de vos points forts généré par IA et des insights personnalisés par phase sur l\'aptitude, le domaine et les compétences professionnelles.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
@@ -678,7 +678,7 @@ export default function FrenchHomePage() {
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Évaluation de Stage</p>
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Découvrez le niveau de préparation au stage de votre lycéen.</h2>
-            <p className="text-[#636366] text-sm mb-8">Rapport personnalisé et insights IA en 35 minutes.</p>
+            <p className="text-[#636366] text-sm mb-8">Rapport personnalisé et insights IA en 20 minutes.</p>
             <a href="https://eduentry.ai/" className="bg-[#1d1d1f] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#2d2d2f] transition-colors">
               Demander l&apos;évaluation →
             </a>

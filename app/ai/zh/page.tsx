@@ -85,7 +85,7 @@ const PHASES = [
 const FAQS = [
   { q: '评估是免费的吗？',           a: '是的——对学生永久免费。没有隐藏费用、订阅或付费层级。' },
   { q: '适合哪些人？',               a: '适合14至18岁（高一至高三）希望通过实习获得职业经验的高中生。' },
-  { q: '需要多长时间？',             a: '34道题分四个阶段，约35分钟。评估完全可恢复——你可以随时暂停并在方便时继续。' },
+  { q: '需要多长时间？',             a: '34道题分四个阶段，约20分钟。评估完全可恢复——你可以随时暂停并在方便时继续。' },
   { q: '应该选哪个方向？',           a: '申请时，你最多可以按优先级排列三个方向偏好。兴趣画像阶段也会帮助识别你最适合的方向——报告中会体现出来。' },
   { q: '何时能收到报告？',           a: '完成后立即获得。一旦完成34道题，AI即刻计算分数，报告在你的账户中立即可查——无需等待。' },
   { q: '可以在简历中提到这份评估吗？', a: '可以。你的准备报告包含可量化的分数和按方向细分的技能概览，可以直接在求职申请中提及。许多学生将其写入求职信和面试材料。' },
@@ -147,11 +147,11 @@ const HOWTO_SCHEMA = {
   name: '如何通过Eduentry.ai获得实习机会',
   description: '面向14至18岁高中生的34道题免费自适应评估。从注册到实习分配，共四步。',
   inLanguage: 'zh',
-  totalTime: 'PT35M',
+  totalTime: 'PT20M',
   step: [
     { '@type': 'HowToStep', position: 1, name: '创建账户', text: '不到一分钟即可免费创建Eduentry.ai账户——无需填写付款信息。' },
     { '@type': 'HowToStep', position: 2, name: '提交申请', text: '告诉我们你是谁、你就读的学校，以及你对科技、商业、数据分析或数字营销的偏好方向。' },
-    { '@type': 'HowToStep', position: 3, name: '完成评估', text: '34道自适应题目分四个阶段：综合能力、专业知识、职场技能和兴趣画像。约35分钟，随时可恢复。' },
+    { '@type': 'HowToStep', position: 3, name: '完成评估', text: '34道自适应题目分四个阶段：综合能力、专业知识、职场技能和兴趣画像。约20分钟，随时可恢复。' },
     { '@type': 'HowToStep', position: 4, name: '获取报告', text: '获得AI生成的个性化准备报告，包含你的准备度评级、各阶段详情和实习匹配结果。' },
   ],
 }
@@ -180,7 +180,7 @@ export default function ChineseHomePage() {
       <section className="py-16 bg-white text-center px-6">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-[#eef2ff] text-[#4F46E5] text-xs font-semibold px-3 py-1.5 rounded-full mb-8 tracking-[0.1em] uppercase">
-            AI驱动 · 完全免费 · 35分钟
+            AI驱动 · 完全免费 · 20分钟
           </div>
           <h1 className="text-5xl sm:text-7xl font-bold text-[#1d1d1f] tracking-tight mb-6 leading-tight">
             获得真实<br />实习机会。
@@ -196,7 +196,7 @@ export default function ChineseHomePage() {
               免费申请 →
             </Link>
           </div>
-          <p className="text-xs text-[#6e6e73] mt-6">学生完全免费 · 无需信用卡 · 35分钟获得结果</p>
+          <p className="text-xs text-[#6e6e73] mt-6">学生完全免费 · 无需信用卡 · 20分钟获得结果</p>
         </div>
       </section>
 
@@ -284,7 +284,7 @@ export default function ChineseHomePage() {
               </div>
             ))}
             <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-7 py-4">
-              <span className="text-xs text-[#6e6e73]">共34道题 · 约35分钟 · 可在多次会话中恢复</span>
+              <span className="text-xs text-[#6e6e73]">共34道题 · 约20分钟 · 可在多次会话中恢复</span>
             </div>
           </div>
         </div>
@@ -404,7 +404,7 @@ export default function ChineseHomePage() {
             立即申请。<br />完全免费。
           </h2>
           <p className="text-lg text-[#6e6e73] mb-10">
-            34道题。35分钟。AI个性化报告，迈出获得真实实习的第一步。
+            34道题。20分钟。AI个性化报告，迈出获得真实实习的第一步。
           </p>
           <Link
             href="/apply"
