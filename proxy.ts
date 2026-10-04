@@ -19,6 +19,16 @@ function detectLanguage(acceptLanguage: string | null): string {
   return 'en'
 }
 
+const INTERNSHIP_PAGES: Record<string, string> = {
+  '/internship': '/en',
+  '/tr/staj': '/tr',
+  '/es/practicas': '/es',
+  '/fr/stage': '/fr',
+  '/ar/tadrib': '/ar',
+  '/ru/stazhirovka': '/ru',
+  '/zh/shixi': '/zh',
+}
+
 export async function proxy(request: NextRequest) {
   // ── eduentry.ai hostname routing ──────────────────────────────────────
   const hostname = request.headers.get('host') ?? ''
@@ -32,6 +42,19 @@ export async function proxy(request: NextRequest) {
     const lang = (cookie && valid.includes(cookie)) ? cookie : detectLanguage(request.headers.get('accept-language'))
     if (lang !== 'en') {
       return NextResponse.redirect(new URL(`/${lang}`, request.url))
+    }
+  }
+
+  if (!isAI) {
+    const { pathname } = request.nextUrl
+    // The internship assessment lives on eduentry.ai
+    const internshipPage = INTERNSHIP_PAGES[pathname.replace(/\/$/, '')]
+    if (internshipPage) {
+      return NextResponse.redirect(`https://eduentry.ai${internshipPage}`, 301)
+    }
+    // eduentry.ai pages are served from /ai internally; never expose them on eduentry.com
+    if (/^\/ai(?:\/|$)/.test(pathname)) {
+      return NextResponse.redirect(`https://eduentry.ai${pathname.slice(3) || '/'}${request.nextUrl.search}`, 301)
     }
   }
 

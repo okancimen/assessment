@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     title: 'Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir? — Ücretsiz Bilişsel Test',
     description: 'Çocuğunuzun güçlü ve zayıf yönlerini bir saat içinde öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
     locale: 'tr_TR',
-    images: [{ url: `${BASE_URL}/tr/staj/opengraph-image`, width: 1200, height: 630, alt: 'Çocuğunuzun Bilişsel Değerlendirmesi — Eduentry' }],
+    images: [{ url: `${BASE_URL}/tr/opengraph-image`, width: 1200, height: 630, alt: 'Çocuğunuzun Bilişsel Değerlendirmesi — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir? — Ücretsiz Bilişsel Test',
     description: 'Çocuğunuzun güçlü ve zayıf yönlerini bir saat içinde öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
-    images: [`${BASE_URL}/tr/staj/opengraph-image`],
+    images: [`${BASE_URL}/tr/opengraph-image`],
   },
 }
 

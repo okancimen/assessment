@@ -410,7 +410,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'هل طالبك مستعد للخبرة العملية؟',
       body: 'يستغرق تقييم Eduentry المجاني للاستعداد للتدريب 25 دقيقة ويمنح الطلاب تقريراً شخصياً — تحليل المهارات ودرجة الاستعداد والفرص المتاحة.',
       label: 'ابدأ تقييم التدريب',
-      href: 'https://eduentry.com/internship',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -708,7 +708,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'هل طفلك مستعد للخبرة العملية؟',
       body: 'يستغرق تقييم Eduentry المجاني للاستعداد للتدريب 20 دقيقة ويُظهر بالضبط أين يقف طفلك — القدرات والمعرفة المتخصصة والمهارات المهنية — مع تقرير شخصي يمكن استخدامه في الطلبات.',
       label: 'ابدأ التقييم المجاني',
-      href: '/ar/tadrib',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -747,7 +747,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'أي مسار مهني يناسب طفلك؟',
       body: 'قبل اختيار وظيفة جزئية، يحدد تقييم Eduentry المجاني قدرات طفلك ومعرفته المتخصصة ومهاراته المهنية — حتى يتمكن من استهداف عمل يبني الأسس الصحيحة.',
       label: 'ابدأ التقييم المجاني',
-      href: '/ar/tadrib',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {
@@ -969,7 +969,7 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       heading: 'هل أنت مستعد للتدريب؟',
       body: 'تقييم تكيفي مجاني للطلاب من عمر 14+. احصل على ملف موهبتك في التكنولوجيا والبيانات والأعمال والتسويق الرقمي في 20 دقيقة.',
       label: 'ابدأ التقييم المجاني ←',
-      href: '/ar/tadrib',
+      href: 'https://eduentry.ai/ar',
     },
   },
   {

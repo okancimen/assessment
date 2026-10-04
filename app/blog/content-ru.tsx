@@ -837,7 +837,7 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
 
       <section>
         <Callout color="indigo">
-          <strong className="text-indigo-900">Готово резюме — теперь проверь готовность.</strong> <a href="/ru/stazhirovka" className="underline font-semibold">Бесплатная оценка Eduentry</a> — 34 вопроса за 20 минут — измеряет твои способности, специальные знания и профессиональные навыки. Персональный отчёт, который можно приложить к заявке на стажировку.
+          <strong className="text-indigo-900">Готово резюме — теперь проверь готовность.</strong> <a href="https://eduentry.ai/ru" className="underline font-semibold">Бесплатная оценка Eduentry</a> — 34 вопроса за 20 минут — измеряет твои способности, специальные знания и профессиональные навыки. Персональный отчёт, который можно приложить к заявке на стажировку.
         </Callout>
       </section>
     </>
@@ -1081,7 +1081,7 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
           <Bullet><strong>Вычислительное мышление</strong> — чтение данных, проектирование процессов, понимание цифровых инструментов. Самая быстро растущая потребность рынка труда.</Bullet>
         </ul>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Именно поэтому связь между успехом в PISA и карьерным успехом — не случайная: оба требуют одних и тех же фундаментальных компетенций. И среда, наиболее эффективно их развивающая — реальная работа. Программы стажировок для школьников, подобные тем, что предлагает <a href="/ru/stazhirovka" className="text-indigo-600 hover:underline">Eduentry</a>, дают именно этот опыт в структурированной форме.
+          Именно поэтому связь между успехом в PISA и карьерным успехом — не случайная: оба требуют одних и тех же фундаментальных компетенций. И среда, наиболее эффективно их развивающая — реальная работа. Программы стажировок для школьников, подобные тем, что предлагает <a href="https://eduentry.ai/ru" className="text-indigo-600 hover:underline">Eduentry</a>, дают именно этот опыт в структурированной форме.
         </p>
         <Callout color="emerald">
           <strong className="text-emerald-900">Практический совет:</strong> Наиболее естественный способ развить компетенции, которые измеряет PISA, — участие в структурированной программе стажировки в период старшей школы. Это одновременно переносит школьные знания в контекст и развивает рабочие компетенции, которые PISA не может измерить напрямую, но которые критически важны для карьеры.
@@ -2187,7 +2187,7 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Готов ли ваш ребёнок к опыту работы?</p>
             <p className="text-sm text-gray-600">Бесплатная оценка готовности к стажировке Eduentry определяет способности, специальные знания и профессиональные навыки — и формирует отчёт, который можно передать работодателям напрямую.</p>
           </div>
-          <Link href="/ru/stazhirovka" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/ru" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Начать бесплатную оценку
           </Link>
         </div>
@@ -2270,7 +2270,7 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Какое карьерное направление подходит вашему ребёнку?</p>
             <p className="text-sm text-gray-600">До выбора подработки бесплатная оценка Eduentry определяет способности, предметные знания и профессиональные навыки — чтобы ребёнок мог нацелиться на работу, которая строит правильный фундамент.</p>
           </div>
-          <Link href="/ru/stazhirovka" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/ru" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Начать бесплатную оценку
           </Link>
         </div>

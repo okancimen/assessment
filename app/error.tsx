@@ -45,7 +45,7 @@ export default function Error({
               {[
                 { href: '/about',         label: 'About Eduentry' },
                 { href: '/methodology',   label: 'How it works' },
-                { href: '/internship',    label: 'Internship assessment' },
+                { href: 'https://eduentry.ai/en',    label: 'Internship assessment' },
                 { href: '/blog',          label: 'Browse the blog' },
                 { href: '/auth/register', label: 'Create free account' },
                 { href: '/auth/login',    label: 'Sign in' },

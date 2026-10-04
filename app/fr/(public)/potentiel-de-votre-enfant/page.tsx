@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     title: 'Quelles sont les Forces et Faiblesses de Mon Enfant? — Test Cognitif Gratuit',
     description: 'Découvrez les forces et faiblesses de votre enfant en moins d’une heure. Évaluation cognitive adaptative gratuite selon les normes PISA, SAT et GCSE.',
     locale: 'fr_FR',
-    images: [{ url: `${BASE_URL}/fr/stage/opengraph-image`, width: 1200, height: 630, alt: "Évaluation Cognitive de Votre Enfant — Eduentry" }],
+    images: [{ url: `${BASE_URL}/fr/opengraph-image`, width: 1200, height: 630, alt: "Évaluation Cognitive de Votre Enfant — Eduentry" }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Quelles sont les Forces et Faiblesses de Mon Enfant? — Test Cognitif Gratuit',
     description: 'Découvrez les forces et faiblesses de votre enfant en moins d’une heure. Évaluation cognitive adaptative gratuite selon les normes PISA, SAT et GCSE.',
-    images: [`${BASE_URL}/fr/stage/opengraph-image`],
+    images: [`${BASE_URL}/fr/opengraph-image`],
   },
 }
 

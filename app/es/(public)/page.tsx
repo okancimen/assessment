@@ -146,7 +146,7 @@ const INTERNSHIP_PROGRAM_SCHEMA_ES = {
   '@type': 'EducationalOccupationalProgram',
   name: 'Evaluación de Preparación para Prácticas',
   description: 'Evaluación adaptativa de 34 preguntas para estudiantes de instituto mayores de 14 años — mide aptitud, conocimientos del sector y habilidades profesionales en Tecnología, Empresa, Análisis de Datos y Marketing Digital.',
-  url: 'https://eduentry.com/es/practicas',
+  url: 'https://eduentry.ai/es',
   provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Informe de Preparación para Prácticas', credentialCategory: 'certificate' },
   timeToComplete: 'PT20M',
@@ -541,7 +541,7 @@ export default function SpanishHomePage() {
             <a href="https://eduentry.ai/es" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Solicitar evaluación de prácticas →
             </a>
-            <Link href="/es/practicas" className="text-sm font-semibold text-[#4F46E5] hover:underline">
+            <Link href="https://eduentry.ai/es" className="text-sm font-semibold text-[#4F46E5] hover:underline">
               Ver detalles completos →
             </Link>
           </div>

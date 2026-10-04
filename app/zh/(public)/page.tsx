@@ -152,7 +152,7 @@ const INTERNSHIP_PROGRAM_SCHEMA_ZH = {
   '@type': 'EducationalOccupationalProgram',
   name: '实习准备评估',
   description: '针对14岁以上高中生的34题自适应评估 — 测量科技、商业、数据分析和数字营销方向的综合能力、专业知识和职场技能。',
-  url: 'https://eduentry.com/zh/shixi',
+  url: 'https://eduentry.ai/zh',
   provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: '实习准备报告', credentialCategory: 'certificate' },
   timeToComplete: 'PT20M',
@@ -279,7 +279,7 @@ export default function ChineseHomePage() {
               >
                 了解项目详情
               </a>
-              <Link href="/zh/shixi" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
+              <Link href="https://eduentry.ai/zh" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
                 了解更多 ↓
               </Link>
             </div>
@@ -540,7 +540,7 @@ export default function ChineseHomePage() {
             <a href="https://eduentry.ai/zh" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               申请实习评估 →
             </a>
-            <Link href="/zh/shixi" className="text-sm font-semibold text-[#4F46E5] hover:underline">
+            <Link href="https://eduentry.ai/zh" className="text-sm font-semibold text-[#4F46E5] hover:underline">
               了解更多 →
             </Link>
           </div>

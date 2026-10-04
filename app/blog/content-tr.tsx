@@ -57,7 +57,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Çocuğunuz hazır mı — rakamlarla görün</p>
           <p className="text-sm text-gray-600">14 yaş üstü öğrenciler için ücretsiz adaptif değerlendirme. Yetenek, alan bilgisi ve iş yeri becerileri — kişiselleştirilmiş rapor ile.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz başla
         </Link>
       </div>
@@ -196,7 +196,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Kişisel beyanına somut kanıt ekle</p>
           <p className="text-sm text-gray-600">Doğrulanmış bir hazırlık skoru "yetkinim" iddiasını kanıta dönüştürür. Ücretsiz, 20 dakika, anında rapor.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Değerlendirmeyi başlat
         </Link>
       </div>
@@ -312,7 +312,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">İş dünyası alanında nerede durduğunu öğren</p>
           <p className="text-sm text-gray-600">Ticari farkındalık, sayısal akıl yürütme ve iş yeri becerileri — 34 soruluk ücretsiz değerlendirme ile ölçülür.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz başla
         </Link>
       </div>
@@ -395,7 +395,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Başvurmadan önce teknik hazırlığını doğrula</p>
           <p className="text-sm text-gray-600">Teknoloji alanında aptitude ve domain bilgisi değerlendirmesi — ücretsiz, anında rapor, CV'ne eklenebilir skor.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Teknoloji izini dene
         </Link>
       </div>
@@ -553,7 +553,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Çocuğunuzu uluslararası standartla kıyaslayın</p>
           <p className="text-sm text-gray-600">Sınıf notu ulusal sıralamayı gösterir — global rekabet için bağımsız bir ölçüm gerekir. 6–17 yaş, ücretsiz.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Global konumunu öğren
         </Link>
       </div>
@@ -726,7 +726,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">İş hayatına ilk adımı ücretsiz değerlendirmeyle at</p>
           <p className="text-sm text-gray-600">Hangi alan sana en uygun? Staj hazırlık raporun güçlü yanlarını ve gelişim alanlarını net biçimde gösterir.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz başla
         </Link>
       </div>
@@ -933,7 +933,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Siber güvenlik stajına hazırlığını test et</p>
           <p className="text-sm text-gray-600">Analitik akıl yürütme ve alan bilgisi değerlendirmesi — başvurmadan önce nerede durduğunu bil.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Teknoloji izini dene
         </Link>
       </div>
@@ -1064,7 +1064,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">A Level yıllarında staj avantajını yakala</p>
           <p className="text-sm text-gray-600">Akademik hazırlığa paralel iş yeri becerilerini ölç — kişisel beyanda gösterebileceğin doğrulanmış bir skor edin.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Değerlendirmeyi başlat
         </Link>
       </div>
@@ -1202,7 +1202,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Dubai'deki çocuğun global hazırlık seviyesini ölç</p>
           <p className="text-sm text-gray-600">Hangi müfredatta olursa olsun, uluslararası standartla kıyaslayan bağımsız bir değerlendirme — ücretsiz.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz değerlendir
         </Link>
       </div>
@@ -1343,7 +1343,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">15 yaşında fark yaratmanın ilk adımı</p>
           <p className="text-sm text-gray-600">Hangi alanda güçlüsün, hangisinde gelişmeye ihtiyaç var? Doğrulanmış bir skor rakiplerinden önce adım atmanı sağlar.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Hemen başla
         </Link>
       </div>
@@ -1529,7 +1529,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">12. sınıf programlarına hazırlıklı gir</p>
           <p className="text-sm text-gray-600">Rekabetçi şema başvurularında üçüncü taraf yetenek kanıtı — aptitude ve domain skoru — sıradan bir başvuruyu öne çıkarır.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Değerlendirmeyi başlat
         </Link>
       </div>
@@ -1637,7 +1637,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Dijital pazarlama alanında hazırlık skorunu gör</p>
           <p className="text-sm text-gray-600">İçerik stratejisi, analitik okuma ve ticari farkındalık — başvurmadan önce güçlü yanlarını ve gelişim alanlarını öğren.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Dijital iz değerlendirmesi
         </Link>
       </div>
@@ -1704,7 +1704,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Veri analitiğine hazırlık seviyeni ölç</p>
           <p className="text-sm text-gray-600">Sayısal akıl yürütme ve veri yorumlama — işverenlerin aradığı sinyalleri başvuru dosyana ekle.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Veri iz değerlendirmesi
         </Link>
       </div>
@@ -1760,7 +1760,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">CV'ne güçlü bir sinyal ekle</p>
           <p className="text-sm text-gray-600">İş geçmişi olmadan işvereni ikna etmenin en etkili yolu: bağımsız bir kurum tarafından doğrulanmış yetenek skoru.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz değerlendirme al
         </Link>
       </div>
@@ -1805,7 +1805,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Mülakatta bahsedebileceğin somut bir skora sahip ol</p>
           <p className="text-sm text-gray-600">Aptitude ve alan bilgisi değerlendirmesi — "bunu neden bildiğinizi kanıtlayabilir misiniz?" sorusuna en güçlü yanıt.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz değerlendirme
         </Link>
       </div>
@@ -2080,7 +2080,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Başvurmadan önce hangi sektörde güçlü olduğunu bil</p>
           <p className="text-sm text-gray-600">Sektör seçimi ve CV hazırlığını doğru bilgiyle yap — doğrulanmış staj hazırlık raporu ile.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz başla
         </Link>
       </div>
@@ -2190,7 +2190,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Hangi alana yatkın olduğunu önce ölç</p>
           <p className="text-sm text-gray-600">İlgi profili + domain bilgisi değerlendirmesi — çocuğunuzun hangi staj türüne en hazır olduğunu verilerle görün.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           İz uyum testi
         </Link>
       </div>
@@ -2339,7 +2339,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Erken başlamanın en somut ilk adımı</p>
           <p className="text-sm text-gray-600">Ücretsiz değerlendirme — hangi alan için ne kadar hazır olunduğunu ve nereden başlanması gerektiğini gösterir.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           İlk adımı at
         </Link>
       </div>
@@ -2463,7 +2463,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">İşverenlerin aradığı becerilere ne kadar yakınsın?</p>
           <p className="text-sm text-gray-600">Aptitude, domain bilgisi, iş yeri becerileri — standart bir değerlendirmede nerede durduğunu şimdi gör.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Hazırlık skorunu öğren
         </Link>
       </div>
@@ -2508,7 +2508,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Çocuğunuz gerçek iş hayatına ne kadar hazır?</p>
           <p className="text-sm text-gray-600">PISA akademik becerileri ölçer — staj değerlendirmemiz iş yeri hazırlığını ölçer. İkisi birlikte tam bir tablo verir.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           İş yeri hazırlık testi
         </Link>
       </div>
@@ -2578,7 +2578,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Eduentry&apos;nin yaklaşımı, stajı seçkin bir azınlık için değil, hazır olan her öğrenci için erişilebilir kılmak. Teknoloji, iş dünyası, dijital pazarlama veya veri analitiği — farklı ilgi alanları ve profiller için farklı yollar mevcut. Başlangıç noktası ise her zaman aynı: nesnel bir değerlendirme, dürüst bir rapor, net bir sonraki adım.
         </p>
         <Callout color="emerald">
-          <strong className="text-emerald-900">Nasıl başlanır:</strong> <Link href="https://eduentry.com/internship" className="text-emerald-700 underline hover:text-emerald-900">eduentry.com/internship</Link> adresindeki ücretsiz değerlendirme 25 dakika sürer. Öğrenci, raporu aldığında hangi sektörde ne düzeyde hazır olduğunu ve hangi alanlarda gelişmesi gerektiğini somut olarak görüyor.
+          <strong className="text-emerald-900">Nasıl başlanır:</strong> <Link href="https://eduentry.ai/tr" className="text-emerald-700 underline hover:text-emerald-900">eduentry.ai/tr</Link> adresindeki ücretsiz değerlendirme 25 dakika sürer. Öğrenci, raporu aldığında hangi sektörde ne düzeyde hazır olduğunu ve hangi alanlarda gelişmesi gerektiğini somut olarak görüyor.
         </Callout>
       </section>
 
@@ -2679,7 +2679,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">PISA verisinin ötesine geç — kişisel skorunu öğren</p>
           <p className="text-sm text-gray-600">Ülke ortalamaları genel eğilimi gösterir. Çocuğunuzun bireysel konumu için bağımsız bir değerlendirme gerekir.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz değerlendir
         </Link>
       </div>
@@ -2791,7 +2791,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Yurt içi ya da yurt dışı — her iki başvuruya da hazır ol</p>
           <p className="text-sm text-gray-600">Staj bulmadan önce hangi iz için ne kadar hazır olduğunu ölç. Hem ulusal hem uluslararası başvurularda işe yarar.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz başla
         </Link>
       </div>
@@ -2850,7 +2850,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Sınıf notu değil, standart ölçüm</p>
           <p className="text-sm text-gray-600">Çocuğunuzun gerçek akademik seviyesini uluslararası standarda göre ölçen ücretsiz adaptif değerlendirme — 6–17 yaş.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Seviye testi başlat
         </Link>
       </div>
@@ -2947,7 +2947,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Daha iyi ücretli stajlara daha güçlü başvur</p>
           <p className="text-sm text-gray-600">Ücretli pozisyonlar daha rekabetçidir. Doğrulanmış bir hazırlık skoru başvurunu kalabalıktan ayırır.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Hazırlık skorunu al
         </Link>
       </div>
@@ -3049,7 +3049,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Staj defterini doldurmadan önce stajı kazan</p>
           <p className="text-sm text-gray-600">Doğrulanmış bir hazırlık skoru ile staj başvurunu güçlendir — işverene hazır olduğunu göster.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz değerlendirme
         </Link>
       </div>
@@ -3137,7 +3137,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Staj hakkını bilen öğrenci daha güçlü başvurur</p>
           <p className="text-sm text-gray-600">Staj sigortasını öğrendin — şimdi stajı kazan. Hazırlık değerlendirmesi ile başvuruna somut güç katmanı ekle.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz başla
         </Link>
       </div>
@@ -3225,7 +3225,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Şirkete ulaşmadan önce hazırlığını göster</p>
           <p className="text-sm text-gray-600">Doğrudan e-posta ile en iyi sonucu alan başvurular somut bir yetenek kanıtı içerir. Hazırlık raporun tam bunu sağlar.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz hazırlık testi
         </Link>
       </div>
@@ -3300,7 +3300,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Başvuru döneminden önce hazırlığını tamamla</p>
           <p className="text-sm text-gray-600">Yaz stajı başvuruları hızlı dolar. Hazırlık skorunu şimdi al, dönem açıldığında hazır başvur.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Hazırlık skorunu al
         </Link>
       </div>
@@ -3410,7 +3410,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Güçlü yanlarını bilerek doğru ize başvur</p>
           <p className="text-sm text-gray-600">Teknoloji mi, iş dünyası mı, veri mi? Değerlendirme, ilgi profilini ve alan hazırlığını birlikte ölçer.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           İz uyum testini başlat
         </Link>
       </div>
@@ -3519,7 +3519,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">PISA'nın ölçtüğü becerileri iş hayatında kanıtla</p>
           <p className="text-sm text-gray-600">Analitik düşünme ve problem çözme — staj değerlendirmemiz aynı becerileri iş yeri bağlamında ölçer.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz başla
         </Link>
       </div>
@@ -3668,7 +3668,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Başvurmadan önce hazırlığını ölç</p>
           <p className="text-sm text-gray-600">Erasmus ve uluslararası staj başvuruları rekabetçidir. Doğrulanmış bir değerlendirme skoru, motivasyon mektubuna somut bir yetkinlik kanıtı ekler.</p>
         </div>
-        <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Ücretsiz değerlendirmeyi başlat
         </Link>
       </div>
@@ -4220,7 +4220,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Çocuğunuz iş deneyimine hazır mı?</p>
             <p className="text-sm text-gray-600">Eduentry&apos;nin ücretsiz staj hazırlık değerlendirmesi yetenek, alan bilgisi ve mesleki becerileri belirler — çocuğunuzun doğrudan işverenlerle paylaşabileceği bir rapor üretir.</p>
           </div>
-          <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Ücretsiz değerlendirmeyi başlat
           </Link>
         </div>
@@ -4303,7 +4303,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Çocuğunuz için hangi kariyer yolu en uygun?</p>
             <p className="text-sm text-gray-600">Herhangi bir yarı zamanlı role başlamadan önce, Eduentry&apos;nin ücretsiz değerlendirmesi çocuğunuzun yeteneklerini, alan bilgisini ve mesleki becerilerini belirliyor — böylece doğru temelleri oluşturacak bir işi hedefleyebilirler.</p>
           </div>
-          <Link href="/tr/staj" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Ücretsiz değerlendirmeyi başlat
           </Link>
         </div>

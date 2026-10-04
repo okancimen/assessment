@@ -800,7 +800,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '您的孩子准备好迎接工作经验了吗？',
       body: 'Eduentry免费实习准备评估仅需20分钟，精确显示孩子的综合素质、专业知识和职场技能，并附上可用于申请的个性化报告。',
       label: '开始免费评估',
-      href: '/zh/shixi',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -839,7 +839,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '哪个职业方向最适合您的孩子？',
       body: '在选择兼职工作之前，Eduentry免费评估能识别孩子的能力、专业知识和职业技能——让他们能够瞄准能打好正确基础的工作。',
       label: '开始免费评估',
-      href: '/zh/shixi',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {
@@ -1061,7 +1061,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '你准备好实习了吗？',
       body: '面向14岁以上学生的免费适应性测评。在20分钟内获取技术、数据、商业和数字营销领域的才能档案。',
       label: '开始免费测评 →',
-      href: '/zh/shixi',
+      href: 'https://eduentry.ai/zh',
     },
   },
   {

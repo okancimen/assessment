@@ -11,7 +11,7 @@ export default function PublicNavES() {
         <Logo href="/es" size="sm" />
 
         <div className="hidden lg:flex flex-1 min-w-0 justify-center items-center gap-5 xl:gap-8 whitespace-nowrap text-[14px] font-medium text-[#1d1d1f]">
-          <Link href="/es/practicas"             className="hover:text-[#4F46E5] transition-colors">Prácticas</Link>
+          <Link href="https://eduentry.ai/es"             className="hover:text-[#4F46E5] transition-colors">Prácticas</Link>
           <Link href="/es/potencial-de-tu-hijo" className="hover:text-[#4F46E5] transition-colors">Potencial</Link>
           <Link href="/es/sobre-nosotros"        className="hover:text-[#4F46E5] transition-colors">Sobre nosotros</Link>
           <Link href="/es/metodologia"    className="hover:text-[#4F46E5] transition-colors">Metodología</Link>

@@ -590,7 +590,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Votre élève est-il prêt pour l\'expérience professionnelle ?',
       body: 'L\'évaluation gratuite de préparation au stage d\'Eduentry prend 25 minutes et fournit aux élèves un rapport personnalisé — bilan des compétences, score de préparation et opportunités adaptées.',
       label: 'Commencer l\'évaluation de stage',
-      href: 'https://eduentry.com/internship',
+      href: 'https://eduentry.ai/fr',
     },
   },
   {
@@ -940,7 +940,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Votre enfant est-il prêt pour l\'expérience professionnelle ?',
       body: 'L\'évaluation gratuite de préparation au stage d\'Eduentry prend 20 minutes et montre exactement où se situe votre enfant — aptitudes, connaissances sectorielles et compétences professionnelles — avec un rapport personnalisé pour les candidatures.',
       label: 'Commencer l\'évaluation gratuite',
-      href: '/fr/stage',
+      href: 'https://eduentry.ai/fr',
     },
   },
   {
@@ -979,7 +979,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Quelle orientation professionnelle convient le mieux à votre enfant ?',
       body: 'Avant de choisir un job, l\'évaluation gratuite d\'Eduentry identifie les aptitudes, connaissances sectorielles et compétences professionnelles de votre enfant — pour qu\'il vise un travail qui construit les bonnes bases.',
       label: 'Commencer l\'évaluation gratuite',
-      href: '/fr/stage',
+      href: 'https://eduentry.ai/fr',
     },
   },
   {
@@ -1201,7 +1201,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Êtes-vous prêt pour votre stage ?',
       body: 'Évaluation adaptative gratuite pour les étudiants de 14+. Obtenez votre profil de talent en technologie, données, entreprise et marketing digital en 20 minutes.',
       label: 'Commencer l\'évaluation gratuite →',
-      href: '/fr/stage',
+      href: 'https://eduentry.ai/fr',
     },
   },
   {
