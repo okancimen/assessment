@@ -1130,7 +1130,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
           在二或三年级进行早期评估的家庭，无论OC结果如何，都获得了一件宝贵的东西：准确了解孩子目前在精英考生群体中的位置。如果OC未能录取，这些信息可以建设性地重新定义接下来的方向——距离六年级的精英高中考试还有三年，知道差距在哪里、有足够时间系统性地弥补，这本身就是一个巨大的优势。
         </p>
         <Callout color="emerald">
-          OC班考试考察的推理能力与PISA、CAT4等国际基准测试是相同的。Eduentry自适应评估基于同样的框架，20分钟内即可免费获得孩子的全球百分位排名，以及各科分项表现——让您在开始备考之前就知道该重点关注哪一部分。
+          OC班考试考察的推理能力与PISA、CAT4等国际基准测试是相同的。Eduentry自适应评估基于同样的框架，一小时内即可免费获得孩子的全球百分位排名，以及各科分项表现——让您在开始备考之前就知道该重点关注哪一部分。
         </Callout>
       </section>
     </>
@@ -2137,7 +2137,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
         大多数寻找免费学业测试的家长从学校成绩出发——但成绩只显示在特定学校、特定老师和特定课程体系下的过往表现。班级里成绩最好的孩子，可能远未达到其认知能力的上限。另一个在书面作业上有困难的孩子，可能拥有出色的空间推理能力，而这一点还没有任何老师发现过。
       </p>
       <p className="text-gray-700 leading-relaxed">
-        我们的免费自适应学业测试独立测量语言推理、数字推理和视觉空间思维——然后将每项分数与国际年龄规范进行比较。大约20分钟内，它生成一份个性化的认知图谱，回答每位家长真正需要回答的问题：我的孩子在哪里真正有优势，在哪里需要支持？
+        我们的免费自适应学业测试独立测量语言推理、数字推理和视觉空间思维——然后将每项分数与国际年龄规范进行比较。一小时内，它生成一份个性化的认知图谱，回答每位家长真正需要回答的问题：我的孩子在哪里真正有优势，在哪里需要支持？
       </p>
 
       <section>
@@ -2184,7 +2184,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
           <Bullet><strong>处理速度与注意力——</strong>信息处理的速度和准确性。结合数字推理一起解读，以识别注意力模式。</Bullet>
         </ul>
         <Callout>
-          <strong>立即开始免费测试</strong>——20分钟内获得四个领域的完整报告，无需注册。
+          <strong>立即开始免费测试</strong>——一小时内获得四个领域的完整报告，无需注册。
         </Callout>
       </section>
 
@@ -2396,7 +2396,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">如果孩子表现不佳该怎么办</h2>
         <ul className="space-y-5 mb-6">
           <Check>
-            <strong>首先获得认知基准：</strong>在预约补习老师之前、在换学校之前、在任何干预措施之前——了解哪个领域有差距。当真正的问题是工作记忆时，强化数字推理既昂贵又无效。20分钟的自适应评估产生所需的领域特征，让你从证据而非假设出发行动。
+            <strong>首先获得认知基准：</strong>在预约补习老师之前、在换学校之前、在任何干预措施之前——了解哪个领域有差距。当真正的问题是工作记忆时，强化数字推理既昂贵又无效。一小时内完成的自适应评估产生所需的领域特征，让你从证据而非假设出发行动。
           </Check>
           <Check>
             <strong>与老师分享数据：</strong>"空间推理第93百分位"是一个与"看起来聪明但心不在焉"完全不同的对话。认知报告给老师提供可操作的信息——改变他们如何构建任务、如何安置孩子、考虑什么调整措施。
@@ -2412,7 +2412,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
           </Check>
         </ul>
         <Callout>
-          <strong>从20分钟的免费自适应评估开始</strong>——它产生按国际规范校准的四领域认知特征。无需任何准备。报告独立显示语言推理、数字推理、视觉空间推理和处理速度——给你一张完整的图画，了解孩子站在哪里，而不仅仅是被教了什么。
+          <strong>从免费自适应评估（一小时内完成）开始</strong>——它产生按国际规范校准的四领域认知特征。无需任何准备。报告独立显示语言推理、数字推理、视觉空间推理和处理速度——给你一张完整的图画，了解孩子站在哪里，而不仅仅是被教了什么。
         </Callout>
       </section>
 
@@ -2420,7 +2420,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-xl font-bold text-gray-900 mb-4">相关指南</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { href: '/zh/blog/mianfei-xueshu-ceshi-haizi-youshi-ruodian', tag: '测评', title: '免费学业测试：20分钟发现孩子的优势与不足' },
+            { href: '/zh/blog/mianfei-xueshu-ceshi-haizi-youshi-ruodian', tag: '测评', title: '免费学业测试：一小时发现孩子的优势与不足' },
             { href: '/zh/blog/liaojie-haizi-youshi-ruodian-zhongxue-zhunbei', tag: '指南', title: '中学前了解孩子的优势与不足' },
             { href: '/zh/blog/faxian-xueling-haizi-yincang-qianli-jiachang-zhinan', tag: '指南', title: '发现孩子的隐藏优势：现代家长指南' },
           ].map((link) => (
@@ -2459,7 +2459,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">第一梯队：学业回报最高的活动</h2>
         <ul className="space-y-5 mb-6">
           <Bullet><strong>实习或工作体验（14岁以上）：</strong>经合组织对47项纵向研究的分析显示，16岁前有结构化工作经验的学生成年后收入高5–10%。<Link href="/zh/blog/xuesheng-ru-he-zhao-dao-shixi" className="text-indigo-600 hover:underline">Eduentry的实习准备评估</Link>在孩子选择实习单位之前，就能确定哪个行业最适合其认知特征。</Bullet>
-          <Bullet><strong>认知基准评估：</strong>在投入暑期补课之前，先获取领域级别的能力图谱。20分钟，免费，生成按国际标准校准的语言/数字/空间推理百分位分数，精确识别哪个领域有差距，哪个已经很强。</Bullet>
+          <Bullet><strong>认知基准评估：</strong>在投入暑期补课之前，先获取领域级别的能力图谱。一小时内，免费，生成按国际标准校准的语言/数字/空间推理百分位分数，精确识别哪个领域有差距，哪个已经很强。</Bullet>
           <Bullet><strong>数学/逻辑强化（针对数字领域）：</strong>AMC 8/10备考、新加坡数学练习册或数学竞赛俱乐部。目标是发展基于规律的推理能力，而非死记硬背。</Bullet>
           <Bullet><strong>辩论或模拟联合国（针对语言领域）：</strong>语言推理能力强但在普通课堂未受挑战的孩子在这里如鱼得水。结构化论辩培养的元认知技能直接迁移到论文写作和大学面试。</Bullet>
           <Bullet><strong>STEM项目或编程（针对空间/定量领域）：</strong>Lego Mindstorms、Arduino、MIT Scratch（较小年龄）、Python或Swift（14岁以上）。关键：项目制学习，而非跟教程。构建一个还不能运行的东西然后调试，这才是认知练习。</Bullet>
@@ -2483,7 +2483,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
           <Check><strong>第三步——尽早预订：</strong>实习名额、暑期学校名额和竞赛项目名额填满得很快。准备好孩子的评估报告——它能显著增强申请竞争力。</Check>
         </ul>
         <Callout>
-          从免费的20分钟评估开始——在预订任何活动之前，先知道今年暑假应该重点培养哪个领域。
+          从免费评估（一小时内完成）开始——在预订任何活动之前，先知道今年暑假应该重点培养哪个领域。
         </Callout>
       </section>
 

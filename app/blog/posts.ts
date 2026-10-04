@@ -1506,7 +1506,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Find out where your child stands — for free',
-      body: 'Eduentry\'s adaptive assessment tests ages 6–17 across maths, English, verbal and non-verbal reasoning on the same international scale as PISA. Get a global percentile rank in 20 minutes.',
+      body: 'Eduentry\'s adaptive assessment tests ages 6–17 across maths, English, verbal and non-verbal reasoning on the same international scale as PISA. Get a global percentile rank within an hour.',
       label: 'Start Free Assessment',
       href: 'https://eduentry.com',
     },
@@ -1567,7 +1567,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Find out where your child actually stands',
-      body: 'Eduentry\'s free adaptive assessment produces a standardised score and global percentile comparison — not a school grade. Understand your child\'s real position in under 20 minutes.',
+      body: 'Eduentry\'s free adaptive assessment produces a standardised score and global percentile comparison — not a school grade. Understand your child\'s real position within an hour.',
       label: 'Start free assessment',
       href: '/auth/register',
     },
@@ -1606,7 +1606,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Benchmark your child\'s reasoning ability — free',
-      body: 'Eduentry\'s adaptive assessment covers the same skills as the OC test — abstract reasoning, verbal reasoning and maths — for ages 6–17. Get a standardised score and percentile rank in 20 minutes.',
+      body: 'Eduentry\'s adaptive assessment covers the same skills as the OC test — abstract reasoning, verbal reasoning and maths — for ages 6–17. Get a standardised score and percentile rank within an hour.',
       label: 'Start Free Assessment',
       href: 'https://eduentry.com',
     },
@@ -1695,7 +1695,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: 'How long does the Eduentry 11+ practice test take?',
-        a: 'The full assessment covers 60 questions across 4 subjects and typically takes about 60 minutes. Progress is automatically saved, so it can be paused and resumed at any time. Most children complete it in one sitting.',
+        a: 'The full assessment covers 60 questions across 4 subjects and is typically completed within an hour. Progress is automatically saved, so it can be paused and resumed at any time. Most children complete it in one sitting.',
       },
       {
         q: 'How often should my child take the practice test?',
@@ -2033,8 +2033,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     slug: 'discover-child-strengths-free-academic-test',
     title: "Free Academic Test for Children: Discover Your Child's Strengths and Weaknesses",
     shortTitle: "Free Academic Test: Discover Your Child's Strengths",
-    description: "Grades don't show your child's true potential. Our free adaptive test measures verbal, numerical and spatial reasoning in 20 minutes, with a report.",
-    tldr: "A free adaptive test measuring verbal reasoning, numerical reasoning, and visual-spatial thinking independently — giving parents an international-percentile report in 20 minutes. Built on Computer Adaptive Testing (CAT) and Item Response Theory, the same methodology behind CAT4 and NWEA MAP.",
+    description: "Grades don't show your child's true potential. Our free adaptive test measures verbal, numerical and spatial reasoning within an hour, with a report.",
+    tldr: "A free adaptive test measuring verbal reasoning, numerical reasoning, and visual-spatial thinking independently — giving parents an international-percentile report within an hour. Built on Computer Adaptive Testing (CAT) and Item Response Theory, the same methodology behind CAT4 and NWEA MAP.",
     date: '2026-10-01',
     dateModified: '2026-10-01',
     readTime: '10 min read',
@@ -2046,7 +2046,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: "How long does the free academic test take?",
-        a: "Approximately 15–20 minutes. The adaptive format means every question adjusts to the previous answer, reaching the same measurement accuracy as an 80-question test in far fewer questions.",
+        a: "Within an hour. The adaptive format means every question adjusts to the previous answer, reaching the same measurement accuracy as an 80-question test in far fewer questions.",
       },
       {
         q: "What age range is it designed for?",
@@ -2070,7 +2070,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: "Can a free test show whether my child is gifted?",
-        a: "Yes. An adaptive cognitive assessment measures the three domains most strongly associated with giftedness: verbal reasoning, numerical reasoning, and visual-spatial thinking. A child scoring above the 90th percentile across all three domains is a strong candidate for gifted programme consideration. The test takes 20 minutes and requires no registration.",
+        a: "Yes. An adaptive cognitive assessment measures the three domains most strongly associated with giftedness: verbal reasoning, numerical reasoning, and visual-spatial thinking. A child scoring above the 90th percentile across all three domains is a strong candidate for gifted programme consideration. The test takes under an hour and requires no registration.",
       },
       {
         q: "How accurate is a free online academic test compared to a professional assessment?",
@@ -2122,7 +2122,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: 'How do I find out my child\'s true academic potential?',
-        a: 'A free adaptive cognitive assessment measures verbal reasoning, numerical reasoning, visual-spatial reasoning, and processing speed independently — producing a percentile score for each domain benchmarked against international norms. Unlike school grades, this separates what your child knows from what they are cognitively capable of. The Eduentry academic assessment takes 20 minutes and requires no prior preparation.',
+        a: 'A free adaptive cognitive assessment measures verbal reasoning, numerical reasoning, visual-spatial reasoning, and processing speed independently — producing a percentile score for each domain benchmarked against international norms. Unlike school grades, this separates what your child knows from what they are cognitively capable of. The Eduentry academic assessment takes under an hour and requires no prior preparation.',
       },
       {
         q: 'Should I get my child tested if they underperform at school?',
@@ -2222,7 +2222,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Summer Activities for Academically Ambitious Children',
     description:
       'A research-backed summer plan for high-achieving 9–16 year olds: internships, assessments, enrichment and a 3-step way to match your child\'s strengths.',
-    tldr: 'Unstructured summers widen the achievement gap — but the wrong structured summer kills intrinsic motivation. The answer is purposeful, varied, and matched to the child\'s cognitive profile. Start with a free 20-minute assessment to know which domain to build before you book anything.',
+    tldr: 'Unstructured summers widen the achievement gap — but the wrong structured summer kills intrinsic motivation. The answer is purposeful, varied, and matched to the child\'s cognitive profile. Start with a free assessment, done within an hour, to know which domain to build before you book anything.',
     date: '2026-10-01',
     dateModified: '2026-10-01',
     readTime: '10 min read',
@@ -2254,7 +2254,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
       {
         q: "How do I know which summer activity suits my child's strengths?",
-        a: "Take the free 20-minute cognitive assessment before booking anything. It produces verbal, numerical, and spatial percentile scores benchmarked internationally. A child with a strong verbal profile thrives in debate, writing, and Model UN. A numerical-spatial profile points toward coding, engineering projects, and competitive maths. Matching activity to profile prevents wasted summer investment.",
+        a: "Take the free cognitive assessment (done within an hour) before booking anything. It produces verbal, numerical, and spatial percentile scores benchmarked internationally. A child with a strong verbal profile thrives in debate, writing, and Model UN. A numerical-spatial profile points toward coding, engineering projects, and competitive maths. Matching activity to profile prevents wasted summer investment.",
       },
       {
         q: 'Do summer activities improve school performance the following year?',

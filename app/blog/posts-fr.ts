@@ -613,7 +613,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Découvrez où se situe votre enfant — gratuitement',
-      body: 'L\'évaluation adaptative d\'Eduentry teste les 6–17 ans en mathématiques, anglais, raisonnement verbal et non verbal sur la même échelle internationale que PISA. Obtenez un rang percentile mondial en 20 minutes.',
+      body: 'L\'évaluation adaptative d\'Eduentry teste les 6–17 ans en mathématiques, anglais, raisonnement verbal et non verbal sur la même échelle internationale que PISA. Obtenez un rang percentile mondial en moins d’une heure.',
       label: 'Commencer l\'évaluation gratuite',
       href: 'https://eduentry.com/fr',
     },
@@ -689,7 +689,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Découvrez le niveau de votre enfant — gratuitement',
-      body: 'L\'évaluation adaptative Eduentry génère un score standardisé sur la même échelle que le CAT4 et le 11+, pour les enfants de 6 à 17 ans. 20 minutes, sans inscription préalable.',
+      body: 'L\'évaluation adaptative Eduentry génère un score standardisé sur la même échelle que le CAT4 et le 11+, pour les enfants de 6 à 17 ans. Moins d’une heure, sans inscription préalable.',
       label: 'Commencer l\'évaluation gratuite',
       href: 'https://eduentry.com/fr',
     },
@@ -722,7 +722,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Découvrez le niveau de votre enfant — gratuitement',
-      body: 'L\'évaluation adaptative Eduentry génère un score standardisé sur la même échelle internationale, pour les enfants de 6 à 17 ans. 20 minutes, sans inscription préalable.',
+      body: 'L\'évaluation adaptative Eduentry génère un score standardisé sur la même échelle internationale, pour les enfants de 6 à 17 ans. Moins d’une heure, sans inscription préalable.',
       label: 'Commencer l\'évaluation gratuite',
       href: 'https://eduentry.com/fr',
     },
@@ -755,7 +755,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Découvrez le niveau de votre enfant — gratuitement',
-      body: 'L\'évaluation adaptative Eduentry génère un score standardisé sur la même échelle que le CogAT et les tests EHP, pour les enfants de 6 à 17 ans. 20 minutes, sans inscription préalable.',
+      body: 'L\'évaluation adaptative Eduentry génère un score standardisé sur la même échelle que le CogAT et les tests EHP, pour les enfants de 6 à 17 ans. Moins d’une heure, sans inscription préalable.',
       label: 'Commencer l\'évaluation gratuite',
       href: 'https://eduentry.com/fr',
     },
@@ -788,7 +788,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Découvrez le niveau de votre enfant — gratuitement',
-      body: 'L\'évaluation adaptative Eduentry utilise la même échelle standardisée que GL Assessment (moyenne 100, écart-type 15) pour les enfants de 6 à 17 ans. 20 minutes, sans inscription préalable.',
+      body: 'L\'évaluation adaptative Eduentry utilise la même échelle standardisée que GL Assessment (moyenne 100, écart-type 15) pour les enfants de 6 à 17 ans. Moins d’une heure, sans inscription préalable.',
       label: 'Commencer l\'évaluation gratuite',
       href: 'https://eduentry.com/fr',
     },
@@ -821,7 +821,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     ],
     cta: {
       heading: 'Découvrez le niveau de votre enfant — gratuitement',
-      body: 'L\'évaluation adaptative Eduentry utilise la même échelle standardisée que le CAT4 (moyenne 100, écart-type 15) pour les enfants de 6 à 17 ans. 20 minutes, sans inscription préalable.',
+      body: 'L\'évaluation adaptative Eduentry utilise la même échelle standardisée que le CAT4 (moyenne 100, écart-type 15) pour les enfants de 6 à 17 ans. Moins d’une heure, sans inscription préalable.',
       label: 'Commencer l\'évaluation gratuite',
       href: 'https://eduentry.com/fr',
     },
@@ -1025,10 +1025,10 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
   {
     slug: 'test-academique-gratuit-forces-faiblesses-enfant',
     contentSlug: 'discover-child-strengths-free-academic-test',
-    title: 'Test Académique Gratuit : Découvrez les Forces et Faiblesses de Votre Enfant en 20 Minutes',
+    title: 'Test Académique Gratuit : Découvrez les Forces et Faiblesses de Votre Enfant en Moins d’une Heure',
     shortTitle: 'Test Académique Gratuit : Forces et Faiblesses',
-    description: "Les notes ne révèlent pas le vrai potentiel de votre enfant. Notre test adaptatif gratuit mesure le raisonnement verbal, numérique et spatial en 20 min.",
-    tldr: "Un test adaptatif gratuit mesurant le raisonnement verbal, numérique et visuo-spatial de façon indépendante — rapport en percentile international en 20 minutes. Basé sur le CAT et l'IRT, la même méthodologie que le CAT4 et le NWEA MAP.",
+    description: "Les notes ne montrent pas le potentiel de votre enfant. Notre test adaptatif gratuit mesure le raisonnement verbal, numérique et spatial en moins d’une heure.",
+    tldr: "Un test adaptatif gratuit mesurant le raisonnement verbal, numérique et visuo-spatial de façon indépendante — rapport en percentile international en moins d’une heure. Basé sur le CAT et l'IRT, la même méthodologie que le CAT4 et le NWEA MAP.",
     date: '2026-10-01',
     dateModified: '2026-10-01',
     readTime: '10 min de lecture',
@@ -1040,7 +1040,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       },
       {
         q: 'Combien de temps dure le test académique gratuit ?',
-        a: "Environ 15–20 minutes. Le format adaptatif ajuste chaque question selon la réponse précédente, atteignant la même précision qu'un test de 80 questions avec beaucoup moins de questions.",
+        a: "Moins d’une heure. Le format adaptatif ajuste chaque question selon la réponse précédente, atteignant la même précision qu'un test de 80 questions avec beaucoup moins de questions.",
       },
       {
         q: 'Pour quelle tranche d\'âge est-il conçu ?',
@@ -1064,7 +1064,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       },
       {
         q: 'Un test gratuit peut-il détecter si mon enfant est surdoué ?',
-        a: "Oui. Une évaluation cognitive adaptive mesure les trois domaines les plus associés à la précocité : raisonnement verbal, raisonnement numérique et pensée visuo-spatiale. Un enfant qui dépasse le 90e percentile dans les trois domaines est candidat pour les programmes pour surdoués. Le test dure 20 minutes et ne nécessite pas d'inscription.",
+        a: "Oui. Une évaluation cognitive adaptive mesure les trois domaines les plus associés à la précocité : raisonnement verbal, raisonnement numérique et pensée visuo-spatiale. Un enfant qui dépasse le 90e percentile dans les trois domaines est candidat pour les programmes pour surdoués. Le test dure moins d’une heure et ne nécessite pas d'inscription.",
       },
       {
         q: "Un test en ligne gratuit est-il aussi précis qu'une évaluation professionnelle ?",
@@ -1117,7 +1117,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       },
       {
         q: 'Comment puis-je connaître le vrai potentiel académique de mon enfant ?',
-        a: 'Une évaluation cognitive adaptative gratuite mesure le raisonnement verbal, numérique, visuo-spatial et la vitesse de traitement de façon indépendante — produisant un score percentile pour chaque domaine calibré selon des normes internationales. Contrairement aux notes scolaires, cela sépare ce que votre enfant sait de ce dont il est cognitivement capable. L\'évaluation académique Eduentry dure 20 minutes et ne nécessite aucune préparation préalable.',
+        a: 'Une évaluation cognitive adaptative gratuite mesure le raisonnement verbal, numérique, visuo-spatial et la vitesse de traitement de façon indépendante — produisant un score percentile pour chaque domaine calibré selon des normes internationales. Contrairement aux notes scolaires, cela sépare ce que votre enfant sait de ce dont il est cognitivement capable. L\'évaluation académique Eduentry dure moins d’une heure et ne nécessite aucune préparation préalable.',
       },
       {
         q: 'Devrait-on faire tester mon enfant s\'il sous-performe à l\'école ?',
@@ -1186,7 +1186,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       },
       {
         q: "Combien de temps dure l'évaluation ?",
-        a: "Environ 20 minutes. Comme le test est adaptatif, il atteint une calibration précise plus rapidement qu'un test à format fixe de précision équivalente. Vous pouvez le compléter en une seule session sans compte préalable.",
+        a: "Moins d’une heure. Comme le test est adaptatif, il atteint une calibration précise plus rapidement qu'un test à format fixe de précision équivalente. Vous pouvez le compléter en une seule session sans compte préalable.",
       },
       {
         q: "Quelle est la différence entre un stage étudiant et un emploi diplômé ?",
@@ -1236,7 +1236,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     shortTitle: "Activités d'Été pour Enfants Académiquement Ambitieux",
     description:
       "Un été utile pour les enfants performants de 9 à 16 ans : stages, évaluations, programmes d'enrichissement et un plan en 3 étapes selon leurs forces.",
-    tldr: "Les étés non structurés creusent l'écart de réussite — mais le mauvais été structuré tue la motivation intrinsèque. La réponse est intentionnelle, variée et adaptée au profil cognitif de l'enfant. Commencez par une évaluation gratuite de 20 minutes pour savoir quel domaine développer avant de réserver quoi que ce soit.",
+    tldr: "Les étés non structurés creusent l'écart de réussite — mais le mauvais été structuré tue la motivation intrinsèque. La réponse est intentionnelle, variée et adaptée au profil cognitif de l'enfant. Commencez par une évaluation gratuite de moins d’une heure pour savoir quel domaine développer avant de réserver quoi que ce soit.",
     date: '2026-10-01',
     dateModified: '2026-10-01',
     readTime: '10 min de lecture',
@@ -1268,7 +1268,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       },
       {
         q: "Comment savoir quelle activité d'été convient aux forces de mon enfant ?",
-        a: "Faites l'évaluation cognitive gratuite de 20 minutes avant de réserver quoi que ce soit. Elle produit des scores percentiles verbaux, numériques et spatiaux comparés à l'international. Un enfant avec un profil verbal fort s'épanouit dans le débat, l'écriture et le Modèle ONU. Un profil numérique-spatial pointe vers la programmation, les projets d'ingénierie et les maths compétitives.",
+        a: "Faites l'évaluation cognitive gratuite de moins d’une heure avant de réserver quoi que ce soit. Elle produit des scores percentiles verbaux, numériques et spatiaux comparés à l'international. Un enfant avec un profil verbal fort s'épanouit dans le débat, l'écriture et le Modèle ONU. Un profil numérique-spatial pointe vers la programmation, les projets d'ingénierie et les maths compétitives.",
       },
       {
         q: "Les activités d'été améliorent-elles les résultats scolaires l'année suivante ?",

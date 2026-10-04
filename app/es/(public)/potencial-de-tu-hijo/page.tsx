@@ -7,7 +7,7 @@ const REGISTER_URL = `${BASE_URL}/es/auth/register`
 export const metadata: Metadata = {
   title: 'Fortalezas y debilidades de tu hijo: test gratis',
   description:
-    'Descubre las fortalezas y debilidades de tu hijo en 20 minutos. Evaluación cognitiva gratuita comparada con PISA, SAT y GCSE — informe IA instantáneo.',
+    'Descubre las fortalezas y debilidades de tu hijo en menos de una hora. Evaluación cognitiva gratuita comparada con PISA, SAT y GCSE — informe IA instantáneo.',
   keywords: [
     'cuáles son las fortalezas y debilidades de mi hijo',
     'fortalezas de mi hijo',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: 'Eduentry',
     title: '¿Cuáles son las Fortalezas y Debilidades de mi Hijo? — Test Cognitivo Gratuito',
     description:
-      'Descubre las fortalezas y debilidades de tu hijo en 20 minutos. Evaluación cognitiva adaptativa gratuita comparada con estándares PISA, SAT y GCSE.',
+      'Descubre las fortalezas y debilidades de tu hijo en menos de una hora. Evaluación cognitiva adaptativa gratuita comparada con estándares PISA, SAT y GCSE.',
     locale: 'es_ES',
     images: [{ url: `${BASE_URL}/es/opengraph-image`, width: 1200, height: 630, alt: 'Evaluación Cognitiva de tu Hijo — Eduentry' }],
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '¿Cuáles son las Fortalezas y Debilidades de mi Hijo? — Test Cognitivo Gratuito',
     description:
-      'Descubre las fortalezas y debilidades de tu hijo en 20 minutos. Evaluación cognitiva adaptativa gratuita comparada con estándares PISA, SAT y GCSE.',
+      'Descubre las fortalezas y debilidades de tu hijo en menos de una hora. Evaluación cognitiva adaptativa gratuita comparada con estándares PISA, SAT y GCSE.',
     images: [`${BASE_URL}/es/opengraph-image`],
   },
 }
@@ -100,7 +100,7 @@ const FAQS = [
   },
   {
     q: '¿Cuánto tiempo dura el test?',
-    a: 'Aproximadamente 20 minutos. El formato adaptativo realiza menos mediciones pero más precisas que los tests de opción múltiple estándar. El test se puede guardar: tu hijo puede continuar desde donde lo dejó.',
+    a: 'Menos de una hora. El formato adaptativo realiza menos mediciones pero más precisas que los tests de opción múltiple estándar. El test se puede guardar: tu hijo puede continuar desde donde lo dejó.',
   },
   {
     q: '¿Para qué grupo de edad es adecuado?',
@@ -134,7 +134,7 @@ const PAGE_SCHEMA = {
   '@id': `${BASE_URL}/es/potencial-de-tu-hijo#webpage`,
   url: `${BASE_URL}/es/potencial-de-tu-hijo`,
   name: '¿Cuáles son las Fortalezas y Debilidades de mi Hijo? — Test Cognitivo Gratuito',
-  description: 'Descubre las fortalezas y debilidades de tu hijo en 20 minutos. Evaluación cognitiva adaptativa gratuita comparada con estándares PISA, SAT y GCSE.',
+  description: 'Descubre las fortalezas y debilidades de tu hijo en menos de una hora. Evaluación cognitiva adaptativa gratuita comparada con estándares PISA, SAT y GCSE.',
   inLanguage: 'es',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
@@ -203,7 +203,7 @@ export default function PotencialDeTuHijoPage() {
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Compara la habilidad cognitiva y la preparación académica con los estándares internacionales <strong>PISA, SAT y GCSE</strong> en 20 minutos. Revela el potencial real que las notas escolares no pueden mostrar.
+            Compara la habilidad cognitiva y la preparación académica con los estándares internacionales <strong>PISA, SAT y GCSE</strong> en menos de una hora. Revela el potencial real que las notas escolares no pueden mostrar.
           </p>
 
           <Link

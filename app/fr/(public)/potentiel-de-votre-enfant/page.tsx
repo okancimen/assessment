@@ -7,7 +7,7 @@ const REGISTER_URL = `${BASE_URL}/fr/auth/register`
 export const metadata: Metadata = {
   title: 'Forces et faiblesses de l\'enfant : test gratuit',
   description:
-    'Découvrez les forces et faiblesses de votre enfant en 20 minutes. Évaluation cognitive selon PISA, SAT et GCSE — rapport IA instantané.',
+    'Découvrez les forces et faiblesses de votre enfant en moins d’une heure. Évaluation cognitive selon PISA, SAT et GCSE — rapport IA instantané.',
   keywords: [
     'quelles sont les forces et faiblesses de mon enfant',
     'forces de mon enfant',
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/fr/potentiel-de-votre-enfant`,
     siteName: 'Eduentry',
     title: 'Quelles sont les Forces et Faiblesses de Mon Enfant? — Test Cognitif Gratuit',
-    description: 'Découvrez les forces et faiblesses de votre enfant en 20 minutes. Évaluation cognitive adaptative gratuite selon les normes PISA, SAT et GCSE.',
+    description: 'Découvrez les forces et faiblesses de votre enfant en moins d’une heure. Évaluation cognitive adaptative gratuite selon les normes PISA, SAT et GCSE.',
     locale: 'fr_FR',
     images: [{ url: `${BASE_URL}/fr/stage/opengraph-image`, width: 1200, height: 630, alt: "Évaluation Cognitive de Votre Enfant — Eduentry" }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Quelles sont les Forces et Faiblesses de Mon Enfant? — Test Cognitif Gratuit',
-    description: 'Découvrez les forces et faiblesses de votre enfant en 20 minutes. Évaluation cognitive adaptative gratuite selon les normes PISA, SAT et GCSE.',
+    description: 'Découvrez les forces et faiblesses de votre enfant en moins d’une heure. Évaluation cognitive adaptative gratuite selon les normes PISA, SAT et GCSE.',
     images: [`${BASE_URL}/fr/stage/opengraph-image`],
   },
 }
@@ -98,7 +98,7 @@ const FAQS = [
   },
   {
     q: 'Combien de temps dure le test?',
-    a: 'Environ 20 minutes. Le format adaptatif offre des mesures plus précises avec moins de questions que les tests à choix multiples standard. Le test est sauvegardable — votre enfant peut reprendre là où il s\'est arrêté.',
+    a: 'Moins d’une heure. Le format adaptatif offre des mesures plus précises avec moins de questions que les tests à choix multiples standard. Le test est sauvegardable — votre enfant peut reprendre là où il s\'est arrêté.',
   },
   {
     q: 'À quelle tranche d\'âge convient-il?',
@@ -132,7 +132,7 @@ const PAGE_SCHEMA = {
   '@id': `${BASE_URL}/fr/potentiel-de-votre-enfant#webpage`,
   url: `${BASE_URL}/fr/potentiel-de-votre-enfant`,
   name: 'Quelles sont les Forces et Faiblesses de Mon Enfant? — Test Cognitif Gratuit',
-  description: 'Découvrez les forces et faiblesses de votre enfant en 20 minutes. Évaluation cognitive adaptative gratuite selon les normes PISA, SAT et GCSE.',
+  description: 'Découvrez les forces et faiblesses de votre enfant en moins d’une heure. Évaluation cognitive adaptative gratuite selon les normes PISA, SAT et GCSE.',
   inLanguage: 'fr',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
@@ -200,7 +200,7 @@ export default function PotentielDeVotreEnfantPage() {
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Comparez les capacités cognitives et la préparation académique selon les normes internationales <strong>PISA, SAT et GCSE</strong> en 20 minutes. Révélez le vrai potentiel que les notes scolaires ne montrent pas.
+            Comparez les capacités cognitives et la préparation académique selon les normes internationales <strong>PISA, SAT et GCSE</strong> en moins d’une heure. Révélez le vrai potentiel que les notes scolaires ne montrent pas.
           </p>
 
           <Link

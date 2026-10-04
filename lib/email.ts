@@ -85,7 +85,7 @@ export async function sendNoChildReminderEmail(opts: {
     'See what your child is really capable of',
     `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
       <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">You're one step away</h1>
-      <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${n}, you created an Eduentry account yesterday but haven't added your child yet. The assessment takes around 20 minutes and gives you a full cognitive profile — verbal reasoning, numeracy, and spatial thinking — benchmarked against children internationally.</p>
+      <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${n}, you created an Eduentry account yesterday but haven't added your child yet. The assessment takes under an hour and gives you a full cognitive profile — verbal reasoning, numeracy, and spatial thinking — benchmarked against children internationally.</p>
       <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Here's an example of what the report looks like:</p>
       ${BTN(sampleUrl, 'View sample report →')}
       <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Ready to get started? Add your child and begin the assessment from your dashboard:</p>
