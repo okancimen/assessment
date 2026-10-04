@@ -10,7 +10,7 @@ export default function PublicNavAR() {
         <Logo href="/ar" size="sm" />
 
         <div className="hidden lg:flex flex-1 min-w-0 justify-center items-center gap-5 xl:gap-8 whitespace-nowrap text-[14px] font-medium text-[#1d1d1f]">
-          <Link href="/ar/tadrib"          className="hover:text-[#4F46E5] transition-colors">التدريب</Link>
+          <Link href="https://eduentry.ai/ar"          className="hover:text-[#4F46E5] transition-colors">التدريب</Link>
           <Link href="/ar/imkaniyat-tiflik" className="hover:text-[#4F46E5] transition-colors">إمكانيات طفلك</Link>
           <Link href="/ar/hawlana"          className="hover:text-[#4F46E5] transition-colors">من نحن</Link>
           <Link href="/ar/manhajiyya" className="hover:text-[#4F46E5] transition-colors">المنهجية</Link>

@@ -21,7 +21,7 @@ const BASE_URL = 'https://eduentry.com'
 const SERVICE_LINKS = [
   {
     tags: ['Internship', 'Work Experience', 'Career Development'],
-    href: '/internship',
+    href: 'https://eduentry.ai/en',
     title: 'Internship Readiness Assessment',
     desc: 'Free 34-question adaptive test for students aged 14+. Personalised readiness report and AI career insights.',
   },

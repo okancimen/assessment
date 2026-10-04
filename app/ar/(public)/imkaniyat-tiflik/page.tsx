@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     title: 'ما هي نقاط قوة وضعف طفلي؟ — اختبار معرفي مجاني',
     description: 'اكتشف نقاط قوة وضعف طفلك في أقل من ساعة. تقييم معرفي تكيفي مجاني وفق معايير PISA وSAT وGCSE.',
     locale: 'ar_AE',
-    images: [{ url: `${BASE_URL}/ar/tadrib/opengraph-image`, width: 1200, height: 630, alt: 'التقييم المعرفي لطفلك — Eduentry' }],
+    images: [{ url: `${BASE_URL}/ar/opengraph-image`, width: 1200, height: 630, alt: 'التقييم المعرفي لطفلك — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ما هي نقاط قوة وضعف طفلي؟ — اختبار معرفي مجاني',
     description: 'اكتشف نقاط قوة وضعف طفلك في أقل من ساعة. تقييم معرفي تكيفي مجاني وفق معايير PISA وSAT وGCSE.',
-    images: [`${BASE_URL}/ar/tadrib/opengraph-image`],
+    images: [`${BASE_URL}/ar/opengraph-image`],
   },
 }
 

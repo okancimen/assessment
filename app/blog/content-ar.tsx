@@ -354,7 +354,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
 
       <section>
         <Callout color="indigo">
-          <strong className="text-indigo-900">اكتشف مجالك المثالي أولاً.</strong> قبل البحث عن فرص التدريب، <a href="/ar/tadrib" className="underline font-semibold">قيّم استعدادك عبر Eduentry</a> — تقييم مجاني من 34 سؤالاً يحدد هل مجالك التقنية، الأعمال، البيانات أم التسويق الرقمي. مع تقرير شخصي يمكنك إرفاقه مع طلبات التدريب.
+          <strong className="text-indigo-900">اكتشف مجالك المثالي أولاً.</strong> قبل البحث عن فرص التدريب، <a href="https://eduentry.ai/ar" className="underline font-semibold">قيّم استعدادك عبر Eduentry</a> — تقييم مجاني من 34 سؤالاً يحدد هل مجالك التقنية، الأعمال، البيانات أم التسويق الرقمي. مع تقرير شخصي يمكنك إرفاقه مع طلبات التدريب.
         </Callout>
       </section>
     </>
@@ -406,7 +406,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
 
       <section>
         <Callout color="indigo">
-          <strong className="text-indigo-900">هل أنت مستعد للتدريب؟</strong> قبل إرسال أي سيرة ذاتية، تعرف على مستوى استعدادك الفعلي. <a href="/ar/tadrib" className="underline font-semibold">تقييم Eduentry المجاني</a> — 34 سؤالاً في 20 دقيقة — يقيس قدراتك ومعرفتك المتخصصة ومهاراتك المهنية، ويمنحك تقريراً شخصياً يمكنك الإشارة إليه في طلبات التدريب.
+          <strong className="text-indigo-900">هل أنت مستعد للتدريب؟</strong> قبل إرسال أي سيرة ذاتية، تعرف على مستوى استعدادك الفعلي. <a href="https://eduentry.ai/ar" className="underline font-semibold">تقييم Eduentry المجاني</a> — 34 سؤالاً في 20 دقيقة — يقيس قدراتك ومعرفتك المتخصصة ومهاراتك المهنية، ويمنحك تقريراً شخصياً يمكنك الإشارة إليه في طلبات التدريب.
         </Callout>
       </section>
     </>
@@ -936,7 +936,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
           أحد أكبر العوائق أمام الخبرة العملية المبكرة هو عدم المعرفة بنقطة البداية. الطالب لا يعرف ما إذا كان &quot;مستعداً&quot; لتجربة مهنية حقيقية. صاحب العمل لا يعرف شيئاً عن الطالب. هذا الفراغ في المعلومات هو ما تُعالجه Eduentry.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          برنامج تقييم التدريب في Eduentry — المتاح عبر eduentry.com/internship — مصمم خصيصاً لطلاب المرحلة الثانوية من 14 إلى 18 عاماً. يُكمل الطالب تقييماً تكيفياً من 34 سؤالاً يقيس ثلاثة محاور رئيسية: مهارات التواصل المهني، وقدرات حل المشكلات، والوعي بعالم العمل. يستغرق التقييم حوالي 25 دقيقة، وهو مجاني تماماً.
+          برنامج تقييم التدريب في Eduentry — المتاح عبر eduentry.ai/ar — مصمم خصيصاً لطلاب المرحلة الثانوية من 14 إلى 18 عاماً. يُكمل الطالب تقييماً تكيفياً من 34 سؤالاً يقيس ثلاثة محاور رئيسية: مهارات التواصل المهني، وقدرات حل المشكلات، والوعي بعالم العمل. يستغرق التقييم حوالي 25 دقيقة، وهو مجاني تماماً.
         </p>
         <ul className="space-y-3 mb-6">
           <Check>تقييم تكيفي من 34 سؤالاً يقيس الاستعداد المهني الفعلي</Check>
@@ -978,7 +978,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
           نتائج بيزا 2025 ليست دعوة إلى اليأس. إنها خارطة طريق. تُخبرنا أن النموذج التعليمي الذي يُركّز حصرياً على المعرفة النظرية يُخفق في تجهيز الشباب لعالم سريع التغيّر. وتُخبرنا أن الحل ليس في مزيد من الاختبارات أو مزيد من المنهج — بل في توسيع نطاق التعليم ليشمل العالم الحقيقي.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          الخبرة العملية المبكرة ليست رفاهية تعليمية أو إضافة على السيرة الذاتية. إنها، وفق ما تُظهر الأبحاث ووفق ما تُلمح إليه بيانات بيزا، جزء لا يتجزأ من التعليم المتكامل الذي يُعدّ الشباب للحياة الفعلية. الأسرة التي تفهم هذا وتتحرك بناءً عليه تُعطي أطفالها ميزة لا يستطيع أي منهج دراسي منحها. ابدأ بتقييم eduentry.com/internship واكتشف أين يقف طفلك في هذه الرحلة.
+          الخبرة العملية المبكرة ليست رفاهية تعليمية أو إضافة على السيرة الذاتية. إنها، وفق ما تُظهر الأبحاث ووفق ما تُلمح إليه بيانات بيزا، جزء لا يتجزأ من التعليم المتكامل الذي يُعدّ الشباب للحياة الفعلية. الأسرة التي تفهم هذا وتتحرك بناءً عليه تُعطي أطفالها ميزة لا يستطيع أي منهج دراسي منحها. ابدأ بتقييم eduentry.ai/ar واكتشف أين يقف طفلك في هذه الرحلة.
         </p>
       </section>
     </>
@@ -1264,7 +1264,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
           إذا كان طفلك في المرحلة الثانوية، فنافذة بناء هذه الكفاءات مفتوحة الآن. برنامج تدريب Eduentry مصمّم خصيصاً لطلاب المرحلة الثانوية الذين يريدون ربط التعليم بالتجربة الحقيقية.
         </p>
         <Callout color="emerald">
-          <strong className="text-emerald-900">توصية عملية:</strong> أفضل استثمار في تطوير الكفاءات التي يقيسها PISA هو تجربة عمل حقيقية منظّمة خلال المرحلة الثانوية. تعرّف على برنامج <a href="/ar/tadrib" className="underline font-medium">تدريب Eduentry للطلاب</a> وكيف يُبنى على أساس تطوير هذه الكفاءات بالذات.
+          <strong className="text-emerald-900">توصية عملية:</strong> أفضل استثمار في تطوير الكفاءات التي يقيسها PISA هو تجربة عمل حقيقية منظّمة خلال المرحلة الثانوية. تعرّف على برنامج <a href="https://eduentry.ai/ar" className="underline font-medium">تدريب Eduentry للطلاب</a> وكيف يُبنى على أساس تطوير هذه الكفاءات بالذات.
         </Callout>
       </section>
 
@@ -2278,7 +2278,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">هل طفلك مستعد للخبرة العملية؟</p>
             <p className="text-sm text-gray-600">تقييم Eduentry المجاني للاستعداد للتدريب يحدد القدرات والمعرفة المتخصصة والمهارات المهنية — وينتج تقريراً يمكن مشاركته مباشرة مع أصحاب العمل.</p>
           </div>
-          <Link href="/ar/tadrib" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/ar" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             ابدأ التقييم المجاني
           </Link>
         </div>
@@ -2361,7 +2361,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">أي مسار مهني يناسب طفلك؟</p>
             <p className="text-sm text-gray-600">قبل الالتزام بأي دور جزئي، يُحدّد تقييم Eduentry المجاني قدرات طفلك ومعرفته المتخصصة ومهاراته المهنية — حتى يستهدف عملاً يبني الأسس الصحيحة.</p>
           </div>
-          <Link href="/ar/tadrib" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/ar" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             ابدأ التقييم المجاني
           </Link>
         </div>

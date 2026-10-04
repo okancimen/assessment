@@ -11,7 +11,7 @@ export default function PublicNavFR() {
         <Logo href="/fr" size="sm" />
 
         <div className="hidden lg:flex flex-1 min-w-0 justify-center items-center gap-5 xl:gap-8 whitespace-nowrap text-[14px] font-medium text-[#1d1d1f]">
-          <Link href="/fr/stage"                       className="hover:text-[#4F46E5] transition-colors">Stages</Link>
+          <Link href="https://eduentry.ai/fr"                       className="hover:text-[#4F46E5] transition-colors">Stages</Link>
           <Link href="/fr/potentiel-de-votre-enfant" className="hover:text-[#4F46E5] transition-colors">Potentiel</Link>
           <Link href="/fr/a-propos"                   className="hover:text-[#4F46E5] transition-colors">À propos</Link>
           <Link href="/fr/methodologie" className="hover:text-[#4F46E5] transition-colors">Méthodologie</Link>

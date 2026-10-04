@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation'
 
 const EN_TO_ES: Record<string, string> = {
   '/': '/es',
-  '/internship': '/es',
   '/blog': '/es/blog',
   '/about': '/es/sobre-nosotros',
   '/methodology': '/es/metodologia',
@@ -20,7 +19,6 @@ const ES_TO_EN: Record<string, string> = {
 
 const EN_TO_TR: Record<string, string> = {
   '/': '/tr',
-  '/internship': '/tr',
   '/blog': '/tr/blog',
   '/about': '/tr/hakkimizda',
   '/methodology': '/tr/metodoloji',
@@ -49,7 +47,6 @@ const TR_TO_ES: Record<string, string> = {
 
 const EN_TO_FR: Record<string, string> = {
   '/': '/fr',
-  '/internship': '/fr',
   '/blog': '/fr/blog',
   '/about': '/fr/a-propos',
   '/methodology': '/fr/methodologie',
@@ -92,7 +89,6 @@ const FR_TO_TR: Record<string, string> = {
 
 const EN_TO_AR: Record<string, string> = {
   '/': '/ar',
-  '/internship': '/ar',
   '/blog': '/ar/blog',
   '/about': '/ar/hawlana',
   '/methodology': '/ar/manhajiyya',
@@ -149,7 +145,6 @@ const AR_TO_FR: Record<string, string> = {
 
 const EN_TO_RU: Record<string, string> = {
   '/': '/ru',
-  '/internship': '/ru',
   '/blog': '/ru/blog',
   '/about': '/ru/o-nas',
   '/methodology': '/ru/metodologiya',
@@ -164,7 +159,6 @@ const RU_TO_EN: Record<string, string> = {
 
 const EN_TO_ZH: Record<string, string> = {
   '/': '/zh',
-  '/internship': '/zh',
   '/blog': '/zh/blog',
   '/about': '/zh/guanyu-women',
   '/methodology': '/zh/fangfalun',

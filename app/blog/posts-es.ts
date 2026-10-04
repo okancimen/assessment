@@ -238,7 +238,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: '¿Cuál es tu nivel de preparación para prácticas a los 15?',
       body: 'La evaluación adaptativa gratuita de Eduentry mide aptitud, conocimiento de dominio y habilidades en el entorno laboral. Obtén un informe personalizado con tus puntos fuertes y áreas de mejora.',
       label: 'Empezar la evaluación gratuita',
-      href: '/internship',
+      href: 'https://eduentry.ai/es',
     },
   },
   {
@@ -276,7 +276,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: 'Mide tu preparación para el mundo empresarial',
       body: 'Evaluación adaptativa gratuita para estudiantes de instituto. Mide aptitud, conocimiento de dominio empresarial y habilidades en el entorno laboral en menos de 20 minutos.',
       label: 'Empezar la evaluación gratuita',
-      href: '/internship',
+      href: 'https://eduentry.ai/es',
     },
   },
   {
@@ -528,7 +528,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: '¿Está tu estudiante listo para la experiencia laboral?',
       body: 'La evaluación gratuita de preparación para prácticas de Eduentry toma 25 minutos y proporciona a los estudiantes un informe personalizado — desglose de habilidades, puntuación de preparación y oportunidades adaptadas.',
       label: 'Comenzar evaluación de prácticas',
-      href: 'https://eduentry.com/internship',
+      href: 'https://eduentry.ai/es',
     },
   },
   {
@@ -705,7 +705,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: '¿Está tu hijo preparado para la experiencia laboral?',
       body: 'La evaluación gratuita de preparación para prácticas de Eduentry tarda 20 minutos y muestra exactamente dónde está tu hijo — aptitud, conocimiento sectorial y habilidades profesionales — con un informe personalizado para sus solicitudes.',
       label: 'Iniciar evaluación gratuita',
-      href: '/es/practicas',
+      href: 'https://eduentry.ai/es',
     },
   },
   {
@@ -744,7 +744,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: '¿Qué orientación profesional le conviene más a tu hijo?',
       body: 'Antes de elegir un trabajo, la evaluación gratuita de Eduentry identifica las aptitudes, el conocimiento sectorial y las habilidades profesionales de tu hijo — para que pueda apuntar a un trabajo que construya las bases correctas.',
       label: 'Iniciar evaluación gratuita',
-      href: '/es/practicas',
+      href: 'https://eduentry.ai/es',
     },
   },
   {
@@ -966,7 +966,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: '¿Estás listo para tus prácticas?',
       body: 'Evaluación adaptativa gratuita para estudiantes de 14+. Obtén tu perfil de talento en tecnología, datos, empresa y marketing digital en 20 minutos.',
       label: 'Iniciar evaluación gratuita →',
-      href: '/es/practicas',
+      href: 'https://eduentry.ai/es',
     },
   },
   {

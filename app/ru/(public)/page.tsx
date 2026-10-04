@@ -144,7 +144,7 @@ const INTERNSHIP_PROGRAM_SCHEMA_RU = {
   '@type': 'EducationalOccupationalProgram',
   name: 'Оценка готовности к стажировке',
   description: 'Адаптивная оценка из 34 вопросов для школьников от 14 лет — измеряет общие способности, знания предметной области и профессиональные навыки в сферах технологий, бизнеса, аналитики данных и цифрового маркетинга.',
-  url: 'https://eduentry.com/ru/stazhirovka',
+  url: 'https://eduentry.ai/ru',
   provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Отчёт о готовности к стажировке', credentialCategory: 'certificate' },
   timeToComplete: 'PT20M',
@@ -273,7 +273,7 @@ export default function RussianHomePage() {
               >
                 Узнать о программе
               </a>
-              <Link href="/ru/stazhirovka" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
+              <Link href="https://eduentry.ai/ru" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
                 Узнать больше ↓
               </Link>
             </div>
@@ -539,7 +539,7 @@ export default function RussianHomePage() {
             <a href="https://eduentry.ai/ru" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Подать заявку на оценку стажировки →
             </a>
-            <Link href="/ru/stazhirovka" className="text-sm font-semibold text-[#4F46E5] hover:underline">
+            <Link href="https://eduentry.ai/ru" className="text-sm font-semibold text-[#4F46E5] hover:underline">
               Подробнее →
             </Link>
           </div>

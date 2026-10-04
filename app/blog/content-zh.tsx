@@ -163,7 +163,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
 
       <section>
         <Callout color="indigo">
-          <strong className="text-indigo-900">找到实习前，先了解你的准备度。</strong> <a href="/zh/shixi" className="underline font-semibold">Eduentry免费评估</a> — 34题20分钟 — 测量你的综合能力、专业知识和职场技能，生成个性化报告，帮你明确最适合申请的实习赛道。
+          <strong className="text-indigo-900">找到实习前，先了解你的准备度。</strong> <a href="https://eduentry.ai/zh" className="underline font-semibold">Eduentry免费评估</a> — 34题20分钟 — 测量你的综合能力、专业知识和职场技能，生成个性化报告，帮你明确最适合申请的实习赛道。
         </Callout>
       </section>
     </>
@@ -881,7 +881,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
           这正是PISA成绩与职业成功之间深层联系的本质：两者都需要同一套底层能力，而培养这套能力最有效的途径，是让孩子在真实的工作场景中实践。
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          如果您想了解适合高中生的实习机会，可以参考我们的<a href="/zh/shixi" className="text-indigo-600 hover:text-indigo-800 underline">高中生实习完整指南</a>——从如何寻找机会到如何在没有经验的情况下脱颖而出，都有详细介绍。
+          如果您想了解适合高中生的实习机会，可以参考我们的<a href="https://eduentry.ai/zh" className="text-indigo-600 hover:text-indigo-800 underline">高中生实习完整指南</a>——从如何寻找机会到如何在没有经验的情况下脱颖而出，都有详细介绍。
         </p>
         <Callout color="emerald">
           <strong className="text-emerald-900">实践建议：</strong>培养PISA能力最直接的方法，是让孩子在高中阶段参与结构化的工作经历或实习项目。这不仅能将课堂知识置于真实情境，还能发展PISA难以直接测量、但职场高度重视的态度能力——主动性、适应力和协作精神。
@@ -1942,7 +1942,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">您的孩子准备好实习了吗？</p>
             <p className="text-sm text-gray-600">Eduentry免费实习准备评估可识别能力、专业知识和职业技能——并生成可直接与雇主分享的报告。</p>
           </div>
-          <Link href="/zh/shixi" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/zh" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             开始免费评估
           </Link>
         </div>
@@ -2025,7 +2025,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">哪个职业方向最适合您的孩子？</p>
             <p className="text-sm text-gray-600">在选择任何兼职工作之前，Eduentry免费评估能识别孩子的能力、专业知识和职业技能——让他们能够瞄准能打好正确基础的工作。</p>
           </div>
-          <Link href="/zh/shixi" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/zh" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             开始免费评估
           </Link>
         </div>

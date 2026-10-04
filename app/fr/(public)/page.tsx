@@ -143,7 +143,7 @@ const INTERNSHIP_PROGRAM_SCHEMA_FR = {
   '@type': 'EducationalOccupationalProgram',
   name: 'Évaluation de Préparation aux Stages',
   description: 'Évaluation adaptative de 34 questions pour lycéens de plus de 14 ans — mesure l\'aptitude, les connaissances du secteur et les compétences professionnelles en Technologie, Entreprise, Analyse de données et Marketing digital.',
-  url: 'https://eduentry.com/fr/stage',
+  url: 'https://eduentry.ai/fr',
   provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Rapport de Préparation aux Stages', credentialCategory: 'certificate' },
   timeToComplete: 'PT20M',
@@ -538,7 +538,7 @@ export default function FrenchHomePage() {
             <a href="https://eduentry.ai/fr" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Demander l&apos;évaluation de stage →
             </a>
-            <Link href="/fr/stage" className="text-sm font-semibold text-[#4F46E5] hover:underline">
+            <Link href="https://eduentry.ai/fr" className="text-sm font-semibold text-[#4F46E5] hover:underline">
               Voir tous les détails →
             </Link>
           </div>

@@ -382,7 +382,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
               </div>
               <div className="flex items-center gap-3 flex-shrink-0">
                 <InviteInternshipButton locale={locale} />
-                <Link href="/internship" className="text-sm text-[#4F46E5] font-semibold hover:underline whitespace-nowrap">
+                <Link href="https://eduentry.ai/en" className="text-sm text-[#4F46E5] font-semibold hover:underline whitespace-nowrap">
                   {t.learnMore}
                 </Link>
               </div>

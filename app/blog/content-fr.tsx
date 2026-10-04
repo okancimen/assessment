@@ -815,7 +815,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
           L&apos;un des obstacles les plus fréquents à l&apos;expérience professionnelle précoce est la crédibilité. Comment un lycéen de 14 ou 15 ans, sans CV ni références, peut-il convaincre une organisation de lui confier une vraie responsabilité ? C&apos;est précisément le problème qu&apos;Eduentry a conçu pour résoudre.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          L&apos;évaluation de préparation au stage d&apos;Eduentry — disponible sur <strong>eduentry.com/internship</strong> — est conçue spécifiquement pour les élèves de 14 à 18 ans encore au lycée. En 25 minutes, l&apos;évaluation adaptative mesure trois dimensions de la préparation professionnelle&nbsp;: la communication (capacité à transmettre des idées clairement et de façon professionnelle), la résolution de problèmes (approche face à des défis non structurés), et la conscience professionnelle (compréhension du fonctionnement des organisations et des attentes professionnelles).
+          L&apos;évaluation de préparation au stage d&apos;Eduentry — disponible sur <strong>eduentry.ai/fr</strong> — est conçue spécifiquement pour les élèves de 14 à 18 ans encore au lycée. En 25 minutes, l&apos;évaluation adaptative mesure trois dimensions de la préparation professionnelle&nbsp;: la communication (capacité à transmettre des idées clairement et de façon professionnelle), la résolution de problèmes (approche face à des défis non structurés), et la conscience professionnelle (compréhension du fonctionnement des organisations et des attentes professionnelles).
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           À l&apos;issue de l&apos;évaluation, chaque élève reçoit un rapport personnalisé comprenant un score de préparation, un bilan détaillé des compétences, et des recommandations adaptées aux opportunités de stage correspondant à son profil. Ce rapport peut être partagé avec des employeurs potentiels — fournissant une preuve objective d&apos;aptitude là où un lycéen n&apos;a pas encore de CV à montrer.
@@ -1158,7 +1158,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
         </ul>
         <Callout color="emerald">
           <strong className="text-emerald-900">Recommandation pratique :</strong> L&apos;expérience professionnelle structurée avant 17 ans ne concurrence pas les études académiques — elle les complète. Les élèves qui ont travaillé en milieu professionnel comprennent <em>à quoi sert</em> ce qu&apos;ils apprennent en classe. Ce lien est le catalyseur le plus puissant de l&apos;apprentissage profond. Vous pouvez explorer le programme de stage sur{' '}
-          <a href="/fr/stage" className="text-indigo-600 underline hover:text-indigo-800">eduentry.ai/fr/stage</a>.
+          <a href="https://eduentry.ai/fr" className="text-indigo-600 underline hover:text-indigo-800">eduentry.ai/fr</a>.
         </Callout>
       </section>
 
@@ -2345,7 +2345,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Votre enfant est-il prêt pour un stage ?</p>
             <p className="text-sm text-gray-600">L&apos;évaluation gratuite d&apos;Eduentry identifie les aptitudes, les connaissances spécialisées et les compétences professionnelles — et produit un rapport partageable directement avec les employeurs.</p>
           </div>
-          <Link href="/fr/stage" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/fr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Commencer l&apos;évaluation gratuite
           </Link>
         </div>
@@ -2428,7 +2428,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Quelle orientation professionnelle convient le mieux à votre enfant ?</p>
             <p className="text-sm text-gray-600">Avant de choisir un job, l&apos;évaluation gratuite d&apos;Eduentry identifie les aptitudes, les connaissances sectorielles et les compétences professionnelles — pour qu&apos;il vise un travail qui construit les bonnes bases.</p>
           </div>
-          <Link href="/fr/stage" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/fr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Commencer l&apos;évaluation gratuite
           </Link>
         </div>

@@ -144,7 +144,7 @@ const INTERNSHIP_PROGRAM_SCHEMA_AR = {
   '@type': 'EducationalOccupationalProgram',
   name: 'تقييم الاستعداد للتدريب',
   description: 'تقييم تكيفي من 34 سؤالاً لطلاب الثانوية فوق 14 عاماً — يقيس الاستعداد العام والمعرفة المتخصصة والمهارات المهنية في مجالات التكنولوجيا والأعمال وتحليل البيانات والتسويق الرقمي.',
-  url: 'https://eduentry.com/ar/tadrib',
+  url: 'https://eduentry.ai/ar',
   provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'تقرير الاستعداد للتدريب', credentialCategory: 'certificate' },
   timeToComplete: 'PT20M',
@@ -271,7 +271,7 @@ export default function ArabicHomePage() {
               >
                 اكتشف البرنامج
               </a>
-              <Link href="/ar/tadrib" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
+              <Link href="https://eduentry.ai/ar" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
                 اعرف المزيد ←
               </Link>
             </div>
@@ -546,7 +546,7 @@ export default function ArabicHomePage() {
             <a href="https://eduentry.ai/ar" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               ابدأ تقييم التدريب ←
             </a>
-            <Link href="/ar/tadrib" className="text-sm font-semibold text-[#4F46E5] hover:underline">
+            <Link href="https://eduentry.ai/ar" className="text-sm font-semibold text-[#4F46E5] hover:underline">
               تفاصيل كاملة ←
             </Link>
           </div>

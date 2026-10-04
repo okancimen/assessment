@@ -167,7 +167,7 @@ const INTERNSHIP_PROGRAM_SCHEMA_TR = {
   '@type': 'EducationalOccupationalProgram',
   name: 'Staj Hazırlık Değerlendirmesi',
   description: '14 yaş üstü lise öğrencileri için 34 soruluk uyarlanabilir değerlendirme — Teknoloji, İş Dünyası, Veri Analitiği ve Dijital Pazarlama alanlarında genel yetenek, alan bilgisi ve iş yeri becerilerini ölçer.',
-  url: 'https://eduentry.com/tr/staj',
+  url: 'https://eduentry.ai/tr',
   provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Staj Hazırlık Raporu', credentialCategory: 'certificate' },
   timeToComplete: 'PT20M',

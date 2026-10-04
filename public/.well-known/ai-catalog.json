@@ -28,7 +28,7 @@
       "identifier": "urn:air:eduentry.com:assessment:internship",
       "displayName": "Internship Readiness Assessment",
       "type": "text/html",
-      "url": "https://eduentry.com/internship",
+      "url": "https://eduentry.ai/en",
       "description": "Free 34-question adaptive assessment for high school students aged 14–18. Evaluates general aptitude, domain knowledge, workplace skills (situational judgement), and interest profile across four professional tracks: Technology, Business, Data Analytics, and Digital Marketing.",
       "tags": ["education", "internship", "career", "students", "readiness", "aptitude"],
       "capabilities": ["InternshipReadiness", "CareerGuidance", "AptitudeTesting", "SituationalJudgement", "PersonalisedReport"],

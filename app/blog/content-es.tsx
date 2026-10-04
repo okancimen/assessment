@@ -1043,7 +1043,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
 
       <section>
         <Callout color="indigo">
-          <strong className="text-indigo-900">¿Listo para dar el siguiente paso?</strong> Antes de enviar tu CV, conoce exactamente tu nivel de preparación. <a href="/es/practicas" className="underline font-semibold">La evaluación gratuita de Eduentry</a> — 34 preguntas en 20 minutos — mide tu aptitud, conocimiento sectorial y habilidades profesionales, y genera un informe personalizado que puedes adjuntar a tus solicitudes de prácticas.
+          <strong className="text-indigo-900">¿Listo para dar el siguiente paso?</strong> Antes de enviar tu CV, conoce exactamente tu nivel de preparación. <a href="https://eduentry.ai/es" className="underline font-semibold">La evaluación gratuita de Eduentry</a> — 34 preguntas en 20 minutos — mide tu aptitud, conocimiento sectorial y habilidades profesionales, y genera un informe personalizado que puedes adjuntar a tus solicitudes de prácticas.
         </Callout>
       </section>
     </>
@@ -1138,7 +1138,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
 
       <section>
         <Callout color="indigo">
-          <strong className="text-indigo-900">¿Sabes cuál es tu nivel de preparación real?</strong> <a href="/es/practicas" className="underline font-semibold">La evaluación gratuita de Eduentry</a> te da un informe objetivo en 20 minutos — aptitud general, conocimiento del sector y habilidades profesionales — que puedes usar directamente en tu solicitud universitaria o de prácticas.
+          <strong className="text-indigo-900">¿Sabes cuál es tu nivel de preparación real?</strong> <a href="https://eduentry.ai/es" className="underline font-semibold">La evaluación gratuita de Eduentry</a> te da un informe objetivo en 20 minutos — aptitud general, conocimiento del sector y habilidades profesionales — que puedes usar directamente en tu solicitud universitaria o de prácticas.
         </Callout>
       </section>
     </>
@@ -1542,7 +1542,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
           El obstáculo principal para la experiencia laboral temprana no es la motivación de los estudiantes — es la accesibilidad. Las colocaciones estructuradas en empresas de calidad son difíciles de conseguir sin conexiones existentes, y la mayoría de los programas formales de grandes empleadores están diseñados para estudiantes de 16 o 17 años en adelante. Los estudiantes de 14 a 15 años — que se encuentran exactamente en la ventana más valiosa para la exposición profesional — tienen las opciones más limitadas.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          El programa de evaluación de prácticas de Eduentry en <strong>eduentry.com/internship</strong> está diseñado específicamente para cerrar esta brecha. Los estudiantes de 14 a 18 años completan una evaluación adaptativa de 34 preguntas que mide la preparación profesional en tres dimensiones que los empleadores identifican de manera consistente como las más críticas: comunicación, resolución de problemas y conciencia profesional. La evaluación tarda aproximadamente 25 minutos y produce un informe personalizado con un desglose de habilidades, una puntuación de preparación y oportunidades adaptadas al perfil del estudiante.
+          El programa de evaluación de prácticas de Eduentry en <strong>eduentry.ai/es</strong> está diseñado específicamente para cerrar esta brecha. Los estudiantes de 14 a 18 años completan una evaluación adaptativa de 34 preguntas que mide la preparación profesional en tres dimensiones que los empleadores identifican de manera consistente como las más críticas: comunicación, resolución de problemas y conciencia profesional. La evaluación tarda aproximadamente 25 minutos y produce un informe personalizado con un desglose de habilidades, una puntuación de preparación y oportunidades adaptadas al perfil del estudiante.
         </p>
         <Callout color="emerald">
           <strong className="text-emerald-900">Por qué la evaluación importa para la colocación:</strong> La paradoja de la experiencia laboral es bien conocida: los empleadores quieren candidatos con experiencia, pero alguien tiene que ser el primero en darles esa oportunidad. Una puntuación de evaluación verificada rompe este círculo. Proporciona a los empleadores evidencia objetiva del potencial del estudiante antes de cualquier entrevista, aumentando significativamente las tasas de respuesta cuando los estudiantes contactan directamente con empresas.
@@ -1724,7 +1724,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         </p>
         <Callout color="emerald">
           <strong className="text-emerald-900">Recomendación práctica:</strong> La experiencia laboral estructurada antes de los 17 años no compite con el estudio académico — lo complementa. Los estudiantes que han trabajado en entornos profesionales entienden <em>para qué</em> sirve lo que aprenden en clase. Esa conexión es el catalizador más potente del aprendizaje profundo. Puedes explorar el programa de prácticas en{' '}
-          <a href="/es/practicas" className="text-indigo-600 underline hover:text-indigo-800">eduentry.ai/es/practicas</a>.
+          <a href="https://eduentry.ai/es" className="text-indigo-600 underline hover:text-indigo-800">eduentry.ai/es</a>.
         </Callout>
       </section>
 
@@ -2842,7 +2842,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">¿Está tu hijo preparado para las prácticas?</p>
             <p className="text-sm text-gray-600">La evaluación gratuita de Eduentry identifica aptitudes, conocimientos especializados y competencias profesionales — y produce un informe compartible directamente con los empleadores.</p>
           </div>
-          <Link href="/es/practicas" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/es" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Comenzar evaluación gratuita
           </Link>
         </div>
@@ -2925,7 +2925,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">¿Qué orientación profesional le conviene más a tu hijo?</p>
             <p className="text-sm text-gray-600">Antes de comprometerse con cualquier trabajo, la evaluación gratuita de Eduentry identifica las aptitudes, el conocimiento sectorial y las habilidades profesionales de tu hijo — para que pueda apuntar a un trabajo que construya las bases correctas.</p>
           </div>
-          <Link href="/es/practicas" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/es" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Iniciar evaluación gratuita
           </Link>
         </div>

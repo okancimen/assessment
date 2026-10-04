@@ -54,7 +54,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Is your student ready for a first internship?',
       body: 'Free adaptive assessment for high school students aged 14+. Discover readiness across aptitude, domain knowledge, and workplace skills — with a personalised AI report.',
       label: 'Take the free assessment',
-      href: '/internship',
+      href: 'https://eduentry.ai/en',
     },
   },
   {
@@ -90,7 +90,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Is your student internship-ready?',
       body: 'Free adaptive assessment for high school students aged 14+. Get a personalised readiness report across aptitude, domain knowledge, and workplace skills.',
       label: 'Take the free assessment',
-      href: '/internship',
+      href: 'https://eduentry.ai/en',
     },
   },
   {
@@ -1361,7 +1361,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Four main routes: direct applications to digital marketing agencies (most accept school-age students for one- or two-week placements, particularly in summer), in-house marketing departments at larger companies, virtual work experience programmes (Springpod and Forage both offer structured digital marketing programmes from real employers), and platforms like Bright Network or RateMyPlacement. Agencies tend to offer the broadest exposure — a week at a small agency can involve SEO, paid media, content, and analytics in one placement.',
       },
     ],
-    aggregateRating: { ratingValue: 4.2, reviewCount: 43 },
+    aggregateRating: { ratingValue: 4.2, reviewCount: 10 },
     cta: {
       heading: 'Ready for digital marketing work experience?',
       body: 'Free 34-question adaptive assessment. Get your Digital Marketing readiness report and something concrete to reference in every application.',
@@ -1856,7 +1856,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Is your student ready for work experience?',
       body: 'Eduentry\'s free internship readiness assessment takes 25 minutes and gives students a personalised report — skills breakdown, readiness score, and matched opportunities.',
       label: 'Start internship assessment',
-      href: '/internship',
+      href: 'https://eduentry.ai/en',
     },
   },
   {
@@ -1939,7 +1939,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Is your child ready for work experience?',
       body: 'Eduentry\'s free internship readiness assessment takes 20 minutes and tells your child exactly where they stand — aptitude, domain knowledge, and professional skills — with a personalised report they can use in applications.',
       label: 'Start free assessment',
-      href: '/internship',
+      href: 'https://eduentry.ai/en',
     },
   },
   {
@@ -1986,7 +1986,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Which career track suits your child best?',
       body: 'Before choosing a part-time job, Eduentry\'s free assessment identifies your child\'s aptitude, domain knowledge, and professional skills — so they can aim for work that builds the right foundations, not just fill a Saturday shift.',
       label: 'Start free assessment',
-      href: '/internship',
+      href: 'https://eduentry.ai/en',
     },
   },
   {
@@ -2213,7 +2213,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Find out if you\'re internship-ready',
       body: 'Free adaptive assessment for students 14+. Get your talent profile across tech, data, business and digital marketing in 20 minutes.',
       label: 'Start free assessment →',
-      href: '/internship',
+      href: 'https://eduentry.ai/en',
     },
   },
   {

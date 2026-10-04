@@ -3926,7 +3926,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           One of the barriers families face when trying to give students early professional exposure is logistics. Finding a work placement requires contacts, time, geographic luck, and the confidence to approach employers. Not every family has these things — and the result is that early work experience, like many educational advantages, tends to cluster among students from more privileged backgrounds. This is a structural inequality that the evidence suggests has real consequences for long-term outcomes.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Eduentry&apos;s internship programme is designed to remove these barriers. Available at <Link href="/internship" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">eduentry.com/internship</Link>, it is built specifically for students aged 14–18 who are still in secondary school. Students begin with a 34-question adaptive assessment that measures professional readiness across the dimensions that employers actually evaluate: communication, problem-solving, initiative, professional awareness and critical thinking. The assessment is free, takes around 25 minutes, and produces a personalised readiness report that gives students and families a clear picture of where the student stands and what to develop next.
+          Eduentry&apos;s internship programme is designed to remove these barriers. Available at <Link href="https://eduentry.ai/en" className="text-indigo-600 hover:text-indigo-800 underline underline-offset-2">eduentry.ai/en</Link>, it is built specifically for students aged 14–18 who are still in secondary school. Students begin with a 34-question adaptive assessment that measures professional readiness across the dimensions that employers actually evaluate: communication, problem-solving, initiative, professional awareness and critical thinking. The assessment is free, takes around 25 minutes, and produces a personalised readiness report that gives students and families a clear picture of where the student stands and what to develop next.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           The readiness report is not a score to be anxious about — it is a development tool. It identifies the specific competencies where a student is already strong and the areas where structured practice would have the highest impact. For a student who has never thought carefully about their professional strengths, this is often the first time they receive honest, specific feedback about what they bring to a workplace — and that feedback is motivating in a way that school grades frequently are not, because it connects directly to a world they can see themselves entering.
@@ -4259,7 +4259,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Is your child ready for work experience?</p>
             <p className="text-sm text-gray-600">Eduentry&apos;s free internship readiness assessment identifies aptitude, domain knowledge, and professional skills — and produces a report your child can share directly with employers.</p>
           </div>
-          <Link href="/internship" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/en" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Start free assessment
           </Link>
         </div>
@@ -4287,7 +4287,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           <Check><strong>Document the experience for university applications</strong> — specific observations and reflections from real work settings are what admissions readers are trained to reward</Check>
         </ul>
         <div className="mt-6 mb-2">
-          <Link href="/internship" className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#4338CA] transition-colors">
+          <Link href="https://eduentry.ai/en" className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#4338CA] transition-colors">
             Check your child&apos;s internship readiness — free
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -4373,7 +4373,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Which career track suits your child best?</p>
             <p className="text-sm text-gray-600">Before committing to any part-time role, Eduentry&apos;s free assessment identifies your child&apos;s aptitude, domain knowledge, and professional skills — so they can target work that builds the right foundations, not just fill a Saturday shift.</p>
           </div>
-          <Link href="/internship" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="https://eduentry.ai/en" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Start free assessment
           </Link>
         </div>

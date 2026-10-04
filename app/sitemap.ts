@@ -61,13 +61,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       alternates: { languages: { 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
-    {
-      url: `${BASE}/internship`,
-      lastModified: '2026-10-04',
-      changeFrequency: 'monthly',
-      priority: 0.9,
-      alternates: { languages: { 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
-    },
     { url: `${BASE}/demo`,            lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/sample-report`,   lastModified: '2026-09-11', changeFrequency: 'monthly', priority: 0.8 },
     {
@@ -165,13 +158,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { es: `${BASE}/es/metodologia`, 'en-GB': `${BASE}/methodology`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
     {
-      url: `${BASE}/es/practicas`,
-      lastModified: '2026-10-04',
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-      alternates: { languages: { es: `${BASE}/es/practicas`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
-    },
-    {
       url: `${BASE}/es/potencial-de-tu-hijo`,
       lastModified: '2026-10-02',
       changeFrequency: 'monthly' as const,
@@ -222,13 +208,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { tr: `${BASE}/tr/metodoloji`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
-    },
-    {
-      url: `${BASE}/tr/staj`,
-      lastModified: '2026-10-04',
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-      alternates: { languages: { tr: `${BASE}/tr/staj`, 'en-GB': `${BASE}/internship`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
     {
       url: `${BASE}/tr/cocugunuzun-potansiyeli`,
@@ -283,13 +262,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { fr: `${BASE}/fr/methodologie`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
     {
-      url: `${BASE}/fr/stage`,
-      lastModified: '2026-10-04',
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-      alternates: { languages: { fr: `${BASE}/fr/stage`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
-    },
-    {
       url: `${BASE}/fr/potentiel-de-votre-enfant`,
       lastModified: '2026-10-02',
       changeFrequency: 'monthly' as const,
@@ -340,13 +312,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { ar: `${BASE}/ar/manhajiyya`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
-    },
-    {
-      url: `${BASE}/ar/tadrib`,
-      lastModified: '2026-10-04',
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-      alternates: { languages: { ar: `${BASE}/ar/tadrib`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ru: `${BASE}/ru/stazhirovka`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
     },
     {
       url: `${BASE}/ar/imkaniyat-tiflik`,
@@ -401,13 +366,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { ru: `${BASE}/ru/metodologiya`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
     {
-      url: `${BASE}/ru/stazhirovka`,
-      lastModified: '2026-10-04',
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-      alternates: { languages: { ru: `${BASE}/ru/stazhirovka`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, zh: `${BASE}/zh/shixi`, 'x-default': `${BASE}/internship` } },
-    },
-    {
       url: `${BASE}/ru/potentsial-vashego-rebyonka`,
       lastModified: '2026-10-02',
       changeFrequency: 'monthly' as const,
@@ -458,13 +416,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.6,
       alternates: { languages: { zh: `${BASE}/zh/fangfalun`, 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, 'x-default': `${BASE}/methodology` } },
-    },
-    {
-      url: `${BASE}/zh/shixi`,
-      lastModified: '2026-10-04',
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-      alternates: { languages: { zh: `${BASE}/zh/shixi`, 'en-GB': `${BASE}/internship`, tr: `${BASE}/tr/staj`, fr: `${BASE}/fr/stage`, es: `${BASE}/es/practicas`, ar: `${BASE}/ar/tadrib`, ru: `${BASE}/ru/stazhirovka`, 'x-default': `${BASE}/internship` } },
     },
     {
       url: `${BASE}/zh/haizi-de-qianli`,
