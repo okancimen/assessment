@@ -221,6 +221,10 @@ export default function MetodologiyaPage() {
               </li>
             ))}
           </ul>
+          <p className="text-[#6e6e73]">
+            Хотите увидеть всё это на одной странице?{' '}
+            <Link href="/ru/primer-otcheta" className="text-[#4F46E5] hover:underline font-medium">Откройте пример отчёта →</Link>
+          </p>
         </section>
 
       </div>

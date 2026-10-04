@@ -19,6 +19,7 @@ export default function PublicFooterTR() {
             <ul>
               <li><Link href="/tr/hakkimizda"   className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Hakkımızda</Link></li>
               <li><Link href="/tr/metodoloji"   className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Metodoloji</Link></li>
+              <li><Link href="/tr/ornek-rapor" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Örnek Rapor</Link></li>
             </ul>
           </div>
           <div>

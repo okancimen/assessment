@@ -294,7 +294,7 @@ export default function ImkaniyatTiflikPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-3" dir="rtl">نموذج تقرير: ملف الموهبة العالمي</h2>
           <p className="text-gray-500 text-base mb-10" dir="rtl">عند اكتمال الاختبار، يتلقى الوالدان تقريراً مفصلاً يُظهر التصنيفات المئوية في أربعة مجالات ونقاط القوة ومجالات التطوير.</p>
 
-          <Link href="/sample-report" className="block group">
+          <Link href="/ar/taqrir-namudhaji" className="block group">
             <div className="border-2 border-indigo-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all bg-gradient-to-br from-indigo-50 to-white">
               <div className="bg-indigo-600 px-6 py-4 text-right">
                 <div className="flex items-center justify-between">

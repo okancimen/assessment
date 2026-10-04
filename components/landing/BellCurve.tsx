@@ -12,6 +12,8 @@ interface BellCurveProps {
   title?: string
   overallScore?: number
   hideScores?: boolean
+  zoneLabels?: string[]      // 5 labels, Needs Support → Exceptional
+  percentileFormat?: string  // e.g. '{n}th%'
 }
 
 const SAMPLE_SUBJECTS: BellCurveSubject[] = [
@@ -131,7 +133,8 @@ function assignRows(subjects: BellCurveSubject[]): number[] {
 
 const centerX = sx(MEAN)
 
-export default function BellCurve({ subjects, title, overallScore, hideScores }: BellCurveProps) {
+export default function BellCurve({ subjects, title, overallScore, hideScores, zoneLabels, percentileFormat = '{n}th%' }: BellCurveProps) {
+  const zoneNames = zoneLabels ?? ZONE_LABELS.map((z) => z.label)
   const displaySubjects = subjects ?? SAMPLE_SUBJECTS
   const cardTitle = title ?? 'Score distribution · Sample'
 
@@ -178,7 +181,7 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
           </div>
           {/* Zone name ticks */}
           <div className="flex justify-between mt-1">
-            {['Needs Support','Below Avg','Average','Above Avg','Exceptional'].map((l, i) => (
+            {zoneNames.map((l, i) => (
               <span key={l} style={{ width: i === 0 ? '25%' : i === 2 ? '25%' : '16.67%' }}
                 className="text-[9px] text-gray-500 text-center leading-tight">
                 {l}
@@ -225,10 +228,10 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
           stroke="#c7d2fe" strokeWidth="1.2" strokeDasharray="4 3" />
 
         {/* Zone labels — staggered, only when no score bar (score bar already lists them) */}
-        {overallScore === undefined && ZONE_LABELS.map(({ from, to, label, clr }, idx) => (
-          <text key={label} x={sx((from + to) / 2)} y={idx % 2 === 0 ? 13 : 25}
+        {overallScore === undefined && ZONE_LABELS.map(({ from, to, clr }, idx) => (
+          <text key={from} x={sx((from + to) / 2)} y={idx % 2 === 0 ? 13 : 25}
             textAnchor="middle" fontSize="7.5" fill={clr} fontWeight="700" letterSpacing="0.2">
-            {label}
+            {zoneNames[idx]}
           </text>
         ))}
 
@@ -285,7 +288,7 @@ export default function BellCurve({ subjects, title, overallScore, hideScores }:
               </text>
               {/* Percentile */}
               <text x={mx} y={y1 + LINE_H} textAnchor="middle" fontSize="8" fill={dotColor} fontWeight="700">
-                {pct}th%
+                {percentileFormat.replace('{n}', String(pct))}
               </text>
             </g>
           )

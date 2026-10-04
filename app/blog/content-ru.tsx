@@ -1794,7 +1794,7 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Посмотрите, как выглядит когнитивный профиль на практике</p>
             <p className="text-sm text-gray-600">Пример отчёта об оценке показывает именно то, как разбиваются вербальные, числовые, пространственные показатели и показатели рабочей памяти — и что это означает для подготовки вашего ребёнка.</p>
           </div>
-          <Link href="https://eduentry.com/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="/ru/primer-otcheta" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Посмотреть пример отчёта
           </Link>
         </div>
@@ -2069,7 +2069,7 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Узнайте, к какой из этих профессий склонен ваш ребёнок</p>
             <p className="text-sm text-gray-600">Бесплатная адаптивная оценка Eduentry определяет профиль вербального, числового и пространственного мышления — и помогает понять, какие направления соответствуют естественным способностям ребёнка.</p>
           </div>
-          <Link href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="/ru/primer-otcheta" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Посмотреть пример отчёта
           </Link>
         </div>

@@ -111,6 +111,13 @@ export default function RegisterPage() {
             Sign in
           </Link>
         </p>
+
+        <p className="text-center text-xs text-[#6e6e73] mt-3">
+          Want to see what you&apos;ll get first?{' '}
+          <Link href="/sample-report" className="text-[#4F46E5] font-semibold hover:underline">
+            View a sample report →
+          </Link>
+        </p>
       </div>
     </div>
   )

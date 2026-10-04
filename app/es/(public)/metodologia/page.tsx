@@ -222,6 +222,10 @@ export default function MetodologiaPage() {
               </li>
             ))}
           </ul>
+          <p className="text-[#6e6e73]">
+            ¿Quieres verlo todo en una sola página?{' '}
+            <Link href="/es/informe-de-ejemplo" className="text-[#4F46E5] hover:underline font-medium">Consulta el informe de ejemplo →</Link>
+          </p>
         </section>
 
       </div>

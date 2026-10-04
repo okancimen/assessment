@@ -19,6 +19,7 @@ export default function PublicFooterES() {
             <ul>
               <li><Link href="/es/sobre-nosotros" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Sobre nosotros</Link></li>
               <li><Link href="/es/metodologia"    className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Metodología</Link></li>
+              <li><Link href="/es/informe-de-ejemplo" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">Informe de ejemplo</Link></li>
             </ul>
           </div>
           <div>

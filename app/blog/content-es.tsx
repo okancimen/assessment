@@ -2476,7 +2476,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Descubre cómo es un perfil cognitivo en la práctica</p>
             <p className="text-sm text-gray-600">Un ejemplo de informe de evaluación muestra exactamente cómo se desglosan las puntuaciones verbales, numéricas, de memoria de trabajo y espaciales — y qué significan para la preparación de tu hijo.</p>
           </div>
-          <Link href="https://eduentry.com/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="/es/informe-de-ejemplo" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Ver un informe de ejemplo
           </Link>
         </div>
@@ -2731,7 +2731,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">¿Sabe en qué áreas destaca su hijo?</p>
             <p className="text-sm text-gray-600">La evaluación de Eduentry identifica las fortalezas cognitivas de su hijo — razonamiento verbal, numérico y resolución de problemas — y las compara con pares internacionales. Obtenga el informe gratuito antes de orientar la elección de itinerario.</p>
           </div>
-          <Link href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="/es/informe-de-ejemplo" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Ver informe de ejemplo
           </Link>
         </div>

@@ -111,6 +111,13 @@ export default function TRRegisterPage() {
             Giriş yapın
           </Link>
         </p>
+
+        <p className="text-center text-xs text-[#6e6e73] mt-3">
+          Önce ne alacağınızı görmek ister misiniz?{' '}
+          <Link href="/tr/ornek-rapor" className="text-[#4F46E5] font-semibold hover:underline">
+            Örnek raporu inceleyin →
+          </Link>
+        </p>
       </div>
     </div>
   )

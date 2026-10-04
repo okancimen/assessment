@@ -221,6 +221,10 @@ export default function MetodolojiPage() {
               </li>
             ))}
           </ul>
+          <p className="text-[#6e6e73]">
+            Bunların hepsini tek bir sayfada görmek ister misiniz?{' '}
+            <Link href="/tr/ornek-rapor" className="text-[#4F46E5] hover:underline font-medium">Örnek raporu inceleyin →</Link>
+          </p>
         </section>
 
       </div>

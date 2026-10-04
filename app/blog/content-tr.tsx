@@ -3841,7 +3841,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Bilişsel profilin pratikte nasıl göründüğünü keşfedin</p>
             <p className="text-sm text-gray-600">Örnek değerlendirme raporu, sözel, sayısal, çalışan bellek ve uzamsal puanların nasıl raporlandığını ve çocuğunuzun hazırlığı için ne anlama geldiğini somut biçimde gösteriyor.</p>
           </div>
-          <Link href="https://eduentry.com/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="/tr/ornek-rapor" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Örnek raporu incele
           </Link>
         </div>
@@ -4080,7 +4080,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Çocuğunuzun güçlü yönleri nerede?</p>
             <p className="text-sm text-gray-600">Bu 65 meslekten hangilerine doğal eğilimi var? Örnek değerlendirme raporu, sözel, sayısal ve analitik güçleri somut biçimde gösteriyor.</p>
           </div>
-          <Link href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="/tr/ornek-rapor" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Örnek raporu incele
           </Link>
         </div>

@@ -8,8 +8,22 @@ import { BLOG_POSTS_AR } from './blog/posts-ar'
 import { BLOG_POSTS_RU } from './blog/posts-ru'
 import { BLOG_POSTS_ZH } from './blog/posts-zh'
 import { GRAMMAR_AREAS } from './grammar-schools/data'
+import { SAMPLE_REPORT_PATHS } from '@/components/sample-report/paths'
 
 const BASE = 'https://eduentry.com'
+
+const SAMPLE_REPORT_ALTERNATES = {
+  languages: {
+    'en-GB': `${BASE}${SAMPLE_REPORT_PATHS.en}`,
+    es: `${BASE}${SAMPLE_REPORT_PATHS.es}`,
+    tr: `${BASE}${SAMPLE_REPORT_PATHS.tr}`,
+    fr: `${BASE}${SAMPLE_REPORT_PATHS.fr}`,
+    ar: `${BASE}${SAMPLE_REPORT_PATHS.ar}`,
+    ru: `${BASE}${SAMPLE_REPORT_PATHS.ru}`,
+    zh: `${BASE}${SAMPLE_REPORT_PATHS.zh}`,
+    'x-default': `${BASE}${SAMPLE_REPORT_PATHS.en}`,
+  },
+}
 
 const SUBJECTS = ['english', 'maths', 'verbal-reasoning', 'non-verbal-reasoning']
 
@@ -62,7 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
     { url: `${BASE}/demo`,            lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE}/sample-report`,   lastModified: '2026-09-11', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/sample-report`,   lastModified: '2026-10-04', changeFrequency: 'monthly', priority: 0.8, alternates: SAMPLE_REPORT_ALTERNATES },
     {
       url: `${BASE}/blog`,
       lastModified: latestEN,
@@ -164,6 +178,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { es: `${BASE}/es/potencial-de-tu-hijo`, 'en-GB': `${BASE}/your-childs-potential`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
+    {
+      url: `${BASE}${SAMPLE_REPORT_PATHS.es}`,
+      lastModified: '2026-10-04',
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+      alternates: SAMPLE_REPORT_ALTERNATES,
+    },
     ...BLOG_POSTS_ES.map((post) => {
       const cs = post.contentSlug
       const langs: Record<string, string> = { es: `${BASE}/es/blog/${post.slug}` }
@@ -215,6 +236,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.9,
       alternates: { languages: { tr: `${BASE}/tr/cocugunuzun-potansiyeli`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
+    },
+    {
+      url: `${BASE}${SAMPLE_REPORT_PATHS.tr}`,
+      lastModified: '2026-10-04',
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+      alternates: SAMPLE_REPORT_ALTERNATES,
     },
     ...BLOG_POSTS_TR.map((post) => {
       const cs = post.contentSlug
@@ -268,6 +296,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { fr: `${BASE}/fr/potentiel-de-votre-enfant`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
+    {
+      url: `${BASE}${SAMPLE_REPORT_PATHS.fr}`,
+      lastModified: '2026-10-04',
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+      alternates: SAMPLE_REPORT_ALTERNATES,
+    },
     ...BLOG_POSTS_FR.map((post) => {
       const cs = post.contentSlug
       const langs: Record<string, string> = { fr: `${BASE}/fr/blog/${post.slug}` }
@@ -319,6 +354,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.9,
       alternates: { languages: { ar: `${BASE}/ar/imkaniyat-tiflik`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
+    },
+    {
+      url: `${BASE}${SAMPLE_REPORT_PATHS.ar}`,
+      lastModified: '2026-10-04',
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+      alternates: SAMPLE_REPORT_ALTERNATES,
     },
     ...BLOG_POSTS_AR.map((post) => {
       const cs = post.contentSlug
@@ -372,6 +414,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { ru: `${BASE}/ru/potentsial-vashego-rebyonka`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
+    {
+      url: `${BASE}${SAMPLE_REPORT_PATHS.ru}`,
+      lastModified: '2026-10-04',
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+      alternates: SAMPLE_REPORT_ALTERNATES,
+    },
     ...BLOG_POSTS_RU.map((post) => {
       const cs = post.contentSlug
       const langs: Record<string, string> = { ru: `${BASE}/ru/blog/${post.slug}` }
@@ -423,6 +472,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.9,
       alternates: { languages: { zh: `${BASE}/zh/haizi-de-qianli`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, 'x-default': `${BASE}/your-childs-potential` } },
+    },
+    {
+      url: `${BASE}${SAMPLE_REPORT_PATHS.zh}`,
+      lastModified: '2026-10-04',
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+      alternates: SAMPLE_REPORT_ALTERNATES,
     },
     ...BLOG_POSTS_ZH.map((post) => {
       const cs = post.contentSlug

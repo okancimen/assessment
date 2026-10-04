@@ -296,7 +296,7 @@ export default function PotentsialVashegoRebyonkaPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-3">Пример Отчёта: Глобальный Профиль Способностей</h2>
           <p className="text-gray-500 text-base mb-10">По завершении теста родители получают подробный отчёт с процентильными рейтингами по четырём областям и указанием сильных сторон и областей для развития.</p>
 
-          <Link href="/sample-report" className="block group">
+          <Link href="/ru/primer-otcheta" className="block group">
             <div className="border-2 border-indigo-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all bg-gradient-to-br from-indigo-50 to-white">
               <div className="bg-indigo-600 px-6 py-4 text-left">
                 <div className="flex items-center justify-between">

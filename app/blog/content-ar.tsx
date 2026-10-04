@@ -1869,7 +1869,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">اكتشف كيف يبدو الملف المعرفي في الواقع العملي</p>
             <p className="text-sm text-gray-600">يوضح نموذج تقرير التقييم بالضبط كيف يتم تقسيم درجات التفكير اللفظي والعددي والذاكرة العاملة والمكاني — وما يعنيه ذلك لاستعداد طفلك.</p>
           </div>
-          <a href="https://eduentry.com/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <a href="/ar/taqrir-namudhaji" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             عرض نموذج التقرير
           </a>
         </div>
@@ -2096,7 +2096,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">اعرف نقاط قوة طفلك الإبداعية والتحليلية</p>
             <p className="text-sm text-gray-600">يقيس تقييم Eduentry التكيفي التفكير اللفظي والعددي والمكاني ويمنحك ملفاً معرفياً كاملاً — الأساس الذي تُبنى عليه قراراتك التعليمية الاستراتيجية.</p>
           </div>
-          <a href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <a href="/ar/taqrir-namudhaji" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             عرض نموذج التقرير
           </a>
         </div>

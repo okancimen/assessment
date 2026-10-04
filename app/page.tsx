@@ -698,10 +698,13 @@ export default function LandingPage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-7 pt-6 border-t border-[#424245]">
+              <div className="mt-7 pt-6 border-t border-[#424245] flex flex-wrap items-center gap-x-5 gap-y-3">
                 <CtaLink href="/auth/register" label="what_you_get_academic" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
                   Start free →
                 </CtaLink>
+                <Link href="/sample-report" className="text-sm font-semibold text-[#a1a1a7] hover:text-white transition-colors">
+                  See a sample report →
+                </Link>
               </div>
             </div>
 

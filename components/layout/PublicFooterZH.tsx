@@ -19,6 +19,7 @@ export default function PublicFooterZH() {
             <ul>
               <li><Link href="/zh/guanyu-women"  className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">关于我们</Link></li>
               <li><Link href="/zh/fangfalun"     className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">方法论</Link></li>
+              <li><Link href="/zh/yangben-baogao" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors block py-3">报告样本</Link></li>
             </ul>
           </div>
           <div>

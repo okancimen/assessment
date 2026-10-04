@@ -1584,7 +1584,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">了解认知能力档案在实践中的呈现方式</p>
             <p className="text-sm text-gray-600">示例评估报告清晰展示了语言、数学、工作记忆和空间能力分数的分解方式——以及这些结果对孩子备考的实际意义。</p>
           </div>
-          <Link href="https://eduentry.com/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="/zh/yangben-baogao" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             查看示例报告
           </Link>
         </div>
@@ -1839,7 +1839,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">想知道您的孩子具备哪些未来职业所需的核心能力？</p>
             <p className="text-sm text-gray-600">Eduentry提供免费的自适应学术评估，帮助您了解孩子在语言推理、数字能力和问题解决方面的真实水平——这些正是上述抗人工智能职业所需的核心能力基础。</p>
           </div>
-          <Link href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <Link href="/zh/yangben-baogao" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             查看示例报告
           </Link>
         </div>

@@ -346,6 +346,9 @@ export default function TurkishHomePage() {
                 <Link href="/tr/metodoloji" className="text-sm font-semibold text-[#4F46E5] hover:underline flex items-center gap-1.5 px-2">
                   Puanlama nasıl çalışır →
                 </Link>
+                <Link href="/tr/ornek-rapor" className="text-sm font-semibold text-[#636366] hover:text-[#1d1d1f] flex items-center gap-1.5 px-2">
+                  Örnek raporu gör →
+                </Link>
               </div>
             </div>
 
@@ -592,10 +595,13 @@ export default function TurkishHomePage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-7 pt-6 border-t border-[#424245]">
+              <div className="mt-7 pt-6 border-t border-[#424245] flex flex-wrap items-center gap-x-5 gap-y-3">
                 <CtaLink href="/tr/auth/register" label="what_you_get_academic_tr" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
                   Ücretsiz başla →
                 </CtaLink>
+                <Link href="/tr/ornek-rapor" className="text-sm font-semibold text-[#a1a1a7] hover:text-white transition-colors">
+                  Örnek raporu gör →
+                </Link>
               </div>
             </div>
 

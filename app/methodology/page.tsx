@@ -320,6 +320,10 @@ export default function MethodologyPage() {
               Together, these five outputs give families a clear picture of their child&apos;s global standing,
               specific weaknesses, and actionable steps to improve — all from a single 90-minute assessment.
             </p>
+            <p className="text-gray-700 leading-relaxed mt-4">
+              Want to see all five on one page?{' '}
+              <Link href="/sample-report" className="text-indigo-600 hover:underline font-medium">View the sample report →</Link>
+            </p>
           </section>
 
           {/* Subjects */}
