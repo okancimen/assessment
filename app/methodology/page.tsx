@@ -249,7 +249,7 @@ export default function MethodologyPage() {
                 <div key={name} className={`rounded-2xl border p-5 ${color}`}>
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-xl">{flag}</span>
-                    <span className="font-semibold text-gray-800 text-sm">{name}</span>
+                    <h3 className="font-semibold text-gray-800 text-sm">{name}</h3>
                   </div>
                   <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
                 </div>
@@ -339,7 +339,7 @@ export default function MethodologyPage() {
                 <div key={name} className="bg-gray-50 rounded-2xl border border-gray-100 p-5">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-xl">{icon}</span>
-                    <span className="font-semibold text-gray-800">{name}</span>
+                    <h3 className="font-semibold text-gray-800">{name}</h3>
                   </div>
                   <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
                 </div>

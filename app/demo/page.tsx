@@ -80,15 +80,15 @@ export default function DemoPage() {
 
         <div className="mt-12 grid sm:grid-cols-3 gap-4">
           <Link href="/subjects/english" className="border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
-            <div className="font-semibold text-gray-900 mb-1">English</div>
+            <h3 className="font-semibold text-gray-900 mb-1">English</h3>
             <div className="text-sm text-gray-500">Comprehension, grammar, vocabulary</div>
           </Link>
           <Link href="/subjects/verbal-reasoning" className="border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
-            <div className="font-semibold text-gray-900 mb-1">Verbal Reasoning</div>
+            <h3 className="font-semibold text-gray-900 mb-1">Verbal Reasoning</h3>
             <div className="text-sm text-gray-500">Analogies, codes, classification</div>
           </Link>
           <Link href="/subjects/non-verbal-reasoning" className="border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
-            <div className="font-semibold text-gray-900 mb-1">Non-Verbal Reasoning</div>
+            <h3 className="font-semibold text-gray-900 mb-1">Non-Verbal Reasoning</h3>
             <div className="text-sm text-gray-500">Patterns, matrices, sequences</div>
           </Link>
         </div>

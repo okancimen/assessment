@@ -307,7 +307,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
                     <div>
-                      <div className="text-sm font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors">{link.title}</div>
+                      <h3 className="text-sm font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors">{link.title}</h3>
                       <div className="text-xs text-gray-500 mt-0.5">{link.desc}</div>
                     </div>
                   </Link>
@@ -333,9 +333,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                       <span key={tag} className="text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full px-2.5 py-0.5">{tag}</span>
                     ))}
                   </div>
-                  <div className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-indigo-700 transition-colors flex-1">
+                  <h3 className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-indigo-700 transition-colors flex-1">
                     {p.shortTitle}
-                  </div>
+                  </h3>
                   <div className="text-xs text-gray-500">{p.readTime}</div>
                 </Link>
               ))}

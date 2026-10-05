@@ -144,7 +144,7 @@ export default function AboutPage() {
                   href={href}
                   className="border border-[#d2d2d7] rounded-xl p-5 hover:border-[#4F46E5]/40 transition-colors"
                 >
-                  <div className="font-semibold text-[#1d1d1f] mb-1">{label} →</div>
+                  <h3 className="font-semibold text-[#1d1d1f] mb-1">{label} →</h3>
                   <div className="text-sm text-[#6e6e73]">{desc}</div>
                 </Link>
               ))}

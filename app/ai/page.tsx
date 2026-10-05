@@ -260,7 +260,7 @@ export default function AIHomePage() {
             ].map(({ n, title, desc }) => (
               <div key={n}>
                 <div className="text-4xl font-bold text-[#d2d2d7] mb-4">{n}</div>
-                <div className="font-bold text-[#1d1d1f] mb-2">{title}</div>
+                <h3 className="font-bold text-[#1d1d1f] mb-2">{title}</h3>
                 <p className="text-sm text-[#6e6e73] leading-relaxed">{desc}</p>
               </div>
             ))}
@@ -282,7 +282,7 @@ export default function AIHomePage() {
                   <Image src={phase.img} alt={phase.label} width={48} height={48} className="object-cover w-full h-full" />
                 </div>
                 <div className="flex-1">
-                  <div className="font-bold text-[#1d1d1f]">{phase.label}</div>
+                  <h3 className="font-bold text-[#1d1d1f]">{phase.label}</h3>
                   <div className="text-sm text-[#6e6e73] mt-0.5">{phase.desc}</div>
                 </div>
                 <div className="text-right flex-shrink-0">

@@ -187,7 +187,7 @@ export default function ManhajiyyaPage() {
               <div key={name} className={`rounded-2xl border p-5 ${color}`}>
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-xl">{flag}</span>
-                  <span className="font-semibold text-[#1d1d1f] text-sm">{name}</span>
+                  <h3 className="font-semibold text-[#1d1d1f] text-sm">{name}</h3>
                 </div>
                 <p className="text-sm text-[#6e6e73] leading-relaxed">{detail}</p>
               </div>

@@ -83,7 +83,7 @@ export default function GrammarSchoolsIndexPage() {
               className="border border-gray-100 rounded-2xl p-6 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors"
             >
               <div className="flex items-start justify-between mb-3">
-                <div className="font-bold text-gray-900 text-lg">{area.name}</div>
+                <h3 className="font-bold text-gray-900 text-lg">{area.name}</h3>
                 <div className="text-xs font-semibold bg-indigo-50 text-indigo-700 rounded-full px-3 py-1 flex-shrink-0 ml-3">
                   Target SAS {area.targetSAS}
                 </div>

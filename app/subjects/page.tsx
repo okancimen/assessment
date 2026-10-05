@@ -94,7 +94,7 @@ export default function SubjectsIndexPage() {
                 <div className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium mb-4 border ${subject.color}`}>
                   Free assessment
                 </div>
-                <div className="font-bold text-gray-900 text-xl mb-2">{subject.headline}</div>
+                <h3 className="font-bold text-gray-900 text-xl mb-2">{subject.headline}</h3>
                 <div className="text-sm text-gray-500">{subject.tagline}</div>
               </Link>
             )
@@ -111,7 +111,7 @@ export default function SubjectsIndexPage() {
             ].map((link) => (
               <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
                 <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
-                <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+                <h3 className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</h3>
               </Link>
             ))}
           </div>

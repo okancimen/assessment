@@ -182,7 +182,7 @@ export default async function RUBlogPostPage({ params }: { params: Promise<{ slu
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
               <div>
-                <div className="text-sm font-semibold text-[#1d1d1f] group-hover:text-[#4F46E5] transition-colors">{link.title}</div>
+                <h3 className="text-sm font-semibold text-[#1d1d1f] group-hover:text-[#4F46E5] transition-colors">{link.title}</h3>
                 <div className="text-xs text-[#6e6e73] mt-0.5">{link.desc}</div>
               </div>
             </a>
@@ -205,9 +205,9 @@ export default async function RUBlogPostPage({ params }: { params: Promise<{ slu
                     <span key={tag} className="text-xs font-medium text-[#4F46E5] bg-[#eef2ff] rounded-full px-2.5 py-0.5">{tag}</span>
                   ))}
                 </div>
-                <div className="font-semibold text-[#1d1d1f] text-sm leading-snug mb-2 group-hover:text-[#4F46E5] transition-colors flex-1">
+                <h3 className="font-semibold text-[#1d1d1f] text-sm leading-snug mb-2 group-hover:text-[#4F46E5] transition-colors flex-1">
                   {p.shortTitle}
-                </div>
+                </h3>
                 <div className="text-xs text-[#6e6e73]">{p.readTime}</div>
               </Link>
             ))}

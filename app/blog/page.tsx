@@ -118,7 +118,7 @@ export default function BlogIndexPage() {
                   className="block border border-gray-100 rounded-2xl p-5 hover:border-indigo-200 hover:shadow-sm transition-all"
                 >
                   <div className="text-xs font-semibold text-indigo-600 mb-2">Featured</div>
-                  <h2 className="font-bold text-gray-900 text-sm leading-snug mb-2">{post.shortTitle}</h2>
+                  <h3 className="font-bold text-gray-900 text-sm leading-snug mb-2">{post.shortTitle}</h3>
                   <p className="text-xs text-gray-500">{post.readTime}</p>
                 </Link>
               )
