@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Internship Registration | Eduentry',
+  title: 'Admin | Eduentry',
   robots: { index: false, follow: false },
 }
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>
 }
