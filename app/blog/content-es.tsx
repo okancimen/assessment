@@ -2263,6 +2263,22 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
           </Link>.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Seguir Leyendo</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/es/blog/que-es-el-examen-11-plus-guia-completa', tag: 'Guía', title: '¿Qué es el Examen 11+?' },
+            { href: '/es/blog/como-prepararse-para-el-11-plus', tag: 'Guía', title: 'Cómo Prepararse para el 11+' },
+            { href: '/es/blog/que-es-una-puntuacion-estandarizada', tag: 'Guía', title: '¿Qué es una Puntuación Estandarizada?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 

@@ -1366,6 +1366,22 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
           </Link>。
         </p>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">继续阅读</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/zh/blog/11-plus-kaoshi-wanzheng-zhinan', tag: '指南', title: '11+考试是什么？' },
+            { href: '/zh/blog/ruhe-zhunbei-11-plus-kaoshi', tag: '指南', title: '如何备考11+考试' },
+            { href: '/zh/blog/shenme-shi-biaozhunhua-fenshu', tag: '指南', title: '什么是标准化分数？' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 

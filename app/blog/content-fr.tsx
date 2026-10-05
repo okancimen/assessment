@@ -1688,6 +1688,22 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
           </Link>.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continuer la Lecture</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/fr/blog/quest-ce-que-lexamen-11-plus-guide-complet', tag: 'Guide', title: "Qu'est-ce que l'Examen 11+ ?" },
+            { href: '/fr/blog/comment-preparer-examen-11-plus', tag: 'Guide', title: 'Comment Préparer le 11+' },
+            { href: '/fr/blog/qu-est-ce-qu-un-score-standardise', tag: 'Guide', title: "Qu'est-ce qu'un Score Standardisé ?" },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -3043,6 +3059,13 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
         pratique et fondé sur la recherche pour préparer le 11+ à la maison — couvrant le bon calendrier,
         une approche matière par matière, l&apos;utilisation efficace des examens blancs et la gestion du
         stress tout au long du processus.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Nouveau dans l&apos;univers du 11+ ?{' '}
+        <Link href="/fr/blog/quest-ce-que-lexamen-11-plus-guide-complet" className="text-indigo-600 hover:underline">
+          Commencez par notre guide complet sur ce que l&apos;examen évalue et comment il est noté
+        </Link>{' '}
+        avant de vous lancer dans ce plan de préparation.
       </p>
 
       <section>

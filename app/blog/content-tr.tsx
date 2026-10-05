@@ -5402,6 +5402,22 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Temel uyarı: Eduentry&apos;nin soruları yapay zeka tarafından üretilmiştir ve büyük popülasyonlar üzerinde ampirik olarak normlara sokulmuş değildir. Puan standartlaştırılmış ölçeği yansıtır, kesin bir GL Assessment SAS eşdeğeri değildir. Eduentry puanlarını yönlendirici bir kıyaslama ve ilerleme takip aracı olarak kullanın; 11+ performansının kesin tahmini olarak değil.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Okumaya Devam Edin</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/tr/blog/11-plus-sinavi-nedir-tam-rehber', tag: 'Rehber', title: '11+ Sınavı Nedir?' },
+            { href: '/tr/blog/11-plus-sinavina-hazirlik-rehberi', tag: 'Rehber', title: '11+ Sınavına Nasıl Hazırlanılır?' },
+            { href: '/tr/blog/standart-puan-nedir', tag: 'Rehber', title: 'Standart Puan Nedir?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -5409,6 +5425,13 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
         11+, ilköğretimdeki en yanlış anlaşılan sınavlardan biridir. Pek çok aile çok geç başlar, yanlış derslere odaklanır ya da sınav gelmeden çok önce çocuğunu durmaksızın alıştırmalarla tüketir. Bu rehber, evde 11+ hazırlığı için araştırmaya dayalı, pratik bir çerçeve sunar — doğru zaman çizelgesini, ders ders yaklaşımı, deneme testlerini etkili kullanmayı ve tüm süreci çocuğunuz için yönetilebilir kılmayı kapsar.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        11+ sınavına yeni mi başlıyorsunuz?{' '}
+        <Link href="/tr/blog/11-plus-sinavi-nedir-tam-rehber" className="text-indigo-600 hover:underline">
+          Sınavın neyi test ettiğine ve nasıl puanlandığına dair tam genel bakışımıza
+        </Link>{' '}
+        göz atın — bu hazırlık planına başlamadan önce size sağlam bir temel oluşturacaktır.
       </p>
 
       <section>

@@ -1213,6 +1213,13 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
       <p className="text-lg text-gray-600 leading-relaxed">
         Экзамен 11+ — один из самых недопонятых в начальном образовании Великобритании. Многие семьи начинают подготовку слишком поздно, уделяют внимание не тем предметам или доводят ребёнка до выгорания бесконечными пробными тестами задолго до экзамена. Это руководство предлагает практический, основанный на исследованиях подход к домашней подготовке — с правильными временными рамками, разбивкой по предметам и советами по управлению нагрузкой.
       </p>
+      <p className="text-gray-700 leading-relaxed">
+        Впервые знакомитесь с 11+?{' '}
+        <Link href="/ru/blog/chto-takoe-ekzamen-11-plus-polnoye-rukovodstvo" className="text-indigo-600 hover:underline">
+          Начните с нашего полного обзора того, что проверяет экзамен и как он оценивается
+        </Link>{' '}
+        — это заложит прочную основу перед началом этого плана подготовки.
+      </p>
 
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Что на самом деле проверяет 11+</h2>
@@ -1452,6 +1459,22 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
             полную инструкцию по подготовке к 11+
           </Link>.
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Читать Дальше</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/ru/blog/chto-takoe-ekzamen-11-plus-polnoye-rukovodstvo', tag: 'Руководство', title: 'Что такое экзамен 11+?' },
+            { href: '/ru/blog/podgotovka-k-11-plius', tag: 'Руководство', title: 'Как подготовиться к 11+' },
+            { href: '/ru/blog/chto-takoe-standartizirovanny-ball', tag: 'Руководство', title: 'Что такое стандартизированный балл?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
