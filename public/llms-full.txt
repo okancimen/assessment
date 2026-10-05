@@ -1,7 +1,7 @@
 # Eduentry — Full Content Reference
 
 > This document provides detailed descriptions of all Eduentry content for AI systems. For a summary version see /llms.txt.
-> Last updated: 2026-09-29
+> Last updated: 2026-10-06
 
 ---
 
@@ -135,6 +135,8 @@ Calibration note: Questions have been calibrated for difficulty ordering but not
 ### Key eduentry.ai blog posts
 
 **Why Early Internships Matter** [/blog/early-internship-child-development-career]: NACE 2023 survey: 83% of employers consider internship experience "somewhat" or "very" important when hiring new graduates. Students with prior internship experience receive job offers at 70% higher rate before graduation (NACE 2020). Developmental research identifies 14–16 as the optimal window for a first structured professional placement. Executive function, social maturity, and self-efficacy all improve more significantly from work experience than from classroom instruction.
+
+**How to Get an Internship with No Experience** [/blog/how-to-get-internship-no-experience-high-school]: Five-step guide for high school students with no prior work history. Step 1: Skill mapping — identify academic, extracurricular, and digital skills. Step 2: Use a readiness report (Eduentry.ai) instead of an empty CV. Step 3: Alternative experience — virtual internships (Springpod, Forage), school projects, volunteering. Step 4: Network beyond parents — teachers, family friends, LinkedIn outreach. Step 5: Send a personalised application letter referencing something specific about the employer. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
 
 **High School Internship Benefits** [/blog/high-school-internship-benefits-university]: Russell Group universities explicitly reference work experience in admissions guidance. Medicine, law, and technology programmes treat placement experience as near-requirement. Personal statements from students with genuine work experience contain specific observations and reflections — "evidence, not assertion" — which admissions readers are trained to recognise and reward. Big Five personality research shows conscientiousness and openness scores improve measurably in students who complete structured placements before age 17.
 

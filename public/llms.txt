@@ -59,6 +59,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [Business Work Experience UK](https://eduentry.com/blog/business-work-experience-high-school-uk): Definition of business work experience in the UK, how to find placements (direct applications, large employer schemes), and UCAS personal statement guidance.
 - [How to Get a Tech Internship Before University](https://eduentry.com/blog/how-to-get-tech-internship-before-university): List of UK tech employers offering school-age programmes (Google, Microsoft, KPMG), application process, and what employers expect.
 - [How Does Your Child Compare Globally](https://eduentry.com/blog/how-does-your-child-compare-globally): PISA country rankings, UK vs Singapore/Japan/South Korea score gaps, and explanation of standardised scores vs school grades.
+- [How to Get an Internship with No Experience](https://eduentry.com/blog/how-to-get-internship-no-experience-high-school): Five practical steps to land a high school internship with no prior work history — skill mapping, a readiness report instead of an empty CV, alternative experience routes, and a personalised application letter.
 
 ### Eduentry.ai blog posts — French (Français)
 
@@ -79,6 +80,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [Grandes écoles vs université](https://eduentry.com/fr/blog/grandes-ecoles-orientation-lyceen): Différences de sélection, coûts, débouchés et critères pour choisir entre grandes écoles et université.
 - [PISA 2025 expérience professionnelle](https://eduentry.com/fr/blog/pisa-2025-experience-professionnelle-etudiants): Résultats PISA 2025 : baisse des scores et données sur le lien entre expérience professionnelle et performance scolaire.
 - [PISA 2025 crise éducation mondiale](https://eduentry.com/fr/blog/pisa-2025-crise-education-mondiale-ce-que-les-parents-doivent-savoir): Résultats PISA 2025 par pays, causes de la baisse (pandémie, écrans, lecture rapide), et implications pour les familles.
+- [Stage lycéen sans expérience](https://eduentry.com/fr/blog/stage-lyceen-sans-experience): Cinq étapes concrètes pour obtenir un stage au lycée sans expérience — cartographie des compétences, rapport de compétences plutôt qu'un CV vide, candidature personnalisée.
 
 ### Eduentry.ai blog posts — Arabic (العربية)
 
@@ -99,6 +101,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [مشروع تجاري في 16 سنة](https://eduentry.com/ar/blog/mashruik-tijarik-16): الإطار القانوني لتأسيس مشروع في الإمارات، خطوات عملية، وأمثلة.
 - [PISA 2025 خبرة عملية](https://eduentry.com/ar/blog/pisa-2025-khibra-amaliya-istidad-talab): نتائج PISA 2025 وبيانات الارتباط بين الخبرة العملية وأداء الطلاب.
 - [PISA 2025 أزمة التعليم](https://eduentry.com/ar/blog/pisa-2025-azmat-talim-alami-ma-yahtaj-marifatuh-awaliyaa-al-umur): نتائج PISA 2025 بالأرقام، أسباب انخفاض الدرجات، ومقارنة الدول.
+- [تدريب ثانوي بدون خبرة](https://eduentry.com/ar/blog/kayfa-tajid-staj-bila-khibra-thanawy): خمس خطوات للحصول على تدريب في المرحلة الثانوية دون خبرة سابقة — رسم خريطة المهارات واستخدام تقرير الكفاءات بدلاً من السيرة الذاتية الفارغة والتقديم المخصص.
 
 ### Eduentry.ai blog posts — Russian (Русский)
 
@@ -120,6 +123,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [Первый день на стажировке](https://eduentry.com/ru/blog/pervyy-den-na-stazhirovke): Что взять, как себя вести, вопросы для наставников.
 - [Рекомендательное письмо](https://eduentry.com/ru/blog/kak-poluchit-rekomendatelnoe-pismo-posle-stazha): Когда и как просить рекомендацию, что должно быть в письме.
 - [Стажировка в стартапе](https://eduentry.com/ru/blog/startap-stazh-shkolniki): Отличия стажировки в стартапе от корпоративной, плюсы и минусы для школьников.
+- [Стажировка для школьника без опыта](https://eduentry.com/ru/blog/kak-nayti-stazh-bez-opyta-shkolnik): Пять шагов для получения стажировки в старшей школе без опыта работы — карта навыков, отчёт о компетентности вместо пустого резюме, персонализированное сопроводительное письмо.
 
 ### Eduentry.ai blog posts — Chinese (中文)
 
@@ -141,6 +145,15 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [实习推荐信](https://eduentry.com/zh/blog/tuijianxin-zenme-yao): 何时及如何请求推荐信，推荐信应包含的内容。
 - [实习第一天](https://eduentry.com/zh/blog/shixi-di-yi-tian): 应携带物品、行为规范及向导师提问的建议。
 - [实习vs兼职](https://eduentry.com/zh/blog/shixi-vs-jianzhang): 实习与兼职的区别、各自优势及高中生的最佳选择时机。
+- [高中无经验如何找实习](https://eduentry.com/zh/blog/gaozhong-wu-jingyan-shixi-zhinan): 五个步骤帮助高中生在没有工作经验的情况下获得实习——技能地图、能力报告代替空白简历及个性化申请信。
+
+### Eduentry.ai blog posts — Turkish (Türkçe)
+
+- [Deneyimsiz Lisede Staj Nasıl Bulunur](https://eduentry.com/tr/blog/deneyimsiz-lisede-staj-ve-is-tecrubesi): Hiç iş deneyimi olmadan lise yıllarında staj ve iş tecrübesi kazanmanın beş adımı — yetenek haritası, yetkinlik raporu, alternatif deneyim yolları ve kişiselleştirilmiş başvuru mektubu.
+
+### Eduentry.ai blog posts — Spanish (Español)
+
+- [Prácticas en el instituto sin experiencia](https://eduentry.com/es/blog/practicas-sin-experiencia-instituto): Cinco pasos para conseguir prácticas en el instituto sin experiencia laboral previa — mapa de habilidades, informe de competencias en lugar de un CV vacío, vías alternativas de experiencia y solicitud personalizada.
 
 ---
 

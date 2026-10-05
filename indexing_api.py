@@ -337,6 +337,14 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/fr/blog/activites-ete-enfants-academiquement-ambitieux",
     f"{BASE_URL}/ru/blog/letnie-zanyatiya-dlya-akademicheski-ambitsioznykh-detey",
     f"{BASE_URL}/zh/blog/shuqi-xueye-jingjin-haizi-huodong",
+    # No-experience internship — all 7 locales
+    f"{BASE_URL}/blog/how-to-get-internship-no-experience-high-school",
+    f"{BASE_URL}/tr/blog/deneyimsiz-lisede-staj-ve-is-tecrubesi",
+    f"{BASE_URL}/es/blog/practicas-sin-experiencia-instituto",
+    f"{BASE_URL}/fr/blog/stage-lyceen-sans-experience",
+    f"{BASE_URL}/ar/blog/kayfa-tajid-staj-bila-khibra-thanawy",
+    f"{BASE_URL}/ru/blog/kak-nayti-stazh-bez-opyta-shkolnik",
+    f"{BASE_URL}/zh/blog/gaozhong-wu-jingyan-shixi-zhinan",
     # ── Static pages (EN) ─────────────────────────────────────────────────────
     BASE_URL,
     f"{BASE_URL}/11-plus",
