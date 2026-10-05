@@ -1618,6 +1618,39 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/auth/register',
     },
   },
+  {
+    slug: 'deneyimsiz-lisede-staj-ve-is-tecrubesi',
+    contentSlug: 'how-to-get-internship-no-experience-high-school',
+    title: 'Hiç Deneyim Olmadan Lisede Staj ve İş Tecrübesi Nasıl Kazanılır?',
+    shortTitle: 'Deneyimsiz Lisede Staj Nasıl Bulunur',
+    description:
+      'Hiç iş deneyiminiz yok mu? Lise yıllarında staj bulmanın, yeteneklerinizi öne çıkarmanın ve iş dünyasına hazır olmanın 5 adımı. Ücretsiz staj uygunluk testinizi çözün!',
+    tldr: 'Deneyim paradoksunun çözümü basit: işverenlerin aradığı şey geçmiş değil, potansiyeldir. Yetenek haritası çıkarmak, yetkinlik raporu kullanmak, alternatif deneyim yolları denemek ve kişiselleştirilmiş bir başvuru hazırlamak — bu dört adım, özgeçmişinde hiçbir iş deneyimi olmayan bir lise öğrencisini somut bir aday haline getiriyor.',
+    date: '2026-10-06',
+    dateModified: '2026-10-06',
+    readTime: '10 dk okuma',
+    tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Lise', 'Hazırlık'],
+    faqs: [
+      {
+        q: 'Staj yapmak için kaç yaşında olmak gerekiyor?',
+        a: '14 yaşından itibaren çoğu açık iş deneyimi programına başvurabilirsiniz. Türkiye\'de lise öğrencileri için 9. sınıftan (15 yaş) itibaren çeşitli staj fırsatları mevcuttur. İngiltere\'de ise Year 10 (14–15 yaş) formal programların başlangıç noktasıdır. Erken başlamak üniversite başvurularına güçlü bir anlatıyla ulaşmanızı sağlar.',
+      },
+      {
+        q: 'Hiç deneyimim yoksa özgeçmişime ne yazarım?',
+        a: '"Deneyim" bölümünü "İlgili Deneyim" olarak yeniden adlandırın. Okul projeleri, kulüp faaliyetleri, gönüllülük çalışmaları, kişisel projeler (blog, sosyal medya hesabı, kod projesi) ve aile işletmesine yardım bunların tamamı geçerli materyaldir. Üstüne bir Eduentry hazırlık raporu ekleyerek ölçülmüş yetenek kanıtı sunun.',
+      },
+      {
+        q: 'Hazırlık raporu staj başvurusuna gerçekten yardımcı olur mu?',
+        a: 'Evet. Doğrulanmış bir üçüncü taraf hazırlık raporu, işverenlerin öğrenciler arasında ayrım yapmak için kullandıkları "deneyim paradoksunu" çözer. Yetenek, alan bilgisi ve iş yeri becerileri konusunda ölçülmüş veriler sunmak — boş bir özgeçmişin üstesinden gelmenin en pratik yoludur.',
+      },
+    ],
+    cta: {
+      heading: 'Staj uygunluk seviyeni ücretsiz öğren',
+      body: '14 yaş üstü lise öğrencileri için ücretsiz uyarlanabilir değerlendirme. Yetenek, alan bilgisi ve iş yeri becerileri açısından hazırlık düzeyini keşfet — kişiselleştirilmiş yapay zeka raporu ile.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: 'https://eduentry.ai/tr',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

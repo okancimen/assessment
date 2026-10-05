@@ -3613,6 +3613,195 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'how-to-get-internship-no-experience-high-school': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Cada año, miles de estudiantes de instituto se topan con la misma barrera: "Se requiere experiencia." Pero para ganar experiencia, primero necesitas una oportunidad — la famosa paradoja de la experiencia. La buena noticia es que los empleadores, especialmente cuando evalúan estudiantes en edad escolar, no buscan historial laboral. Buscan potencial. Esta guía explica paso a paso cómo un estudiante de instituto sin ninguna experiencia laboral puede convertirse en un candidato sólido.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        El enfoque aquí es sencillo pero poderoso: haz visibles tus habilidades actuales, demuestra tu potencial y solicita a través de los canales adecuados. Education and Employers — que ha realizado los mayores estudios longitudinales sobre la participación de empleadores en la educación secundaria del Reino Unido — encontró que los jóvenes que tuvieron cuatro o más encuentros significativos con empleadores antes de los 16 años tenían cinco veces menos probabilidades de estar sin empleo, educación ni formación a los 19. La diferencia no radica en el volumen de experiencia, sino en el hábito de empezar pronto.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Para quienes empiezan desde cero: traza tu mapa de habilidades</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La mayoría de los estudiantes de instituto que dicen "no tengo experiencia" en realidad quieren decir: no tengo historial laboral remunerado. Pero los empleadores que evalúan solicitudes de prácticas definen la experiencia de forma mucho más amplia. Las competencias — habilidades técnicas e interpersonales — pueden adquirirse fuera de cualquier entorno profesional formal.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Trazar el mapa de habilidades es el proceso de identificar sistemáticamente tus puntos fuertes actuales. Hazte estas preguntas: ¿Qué asignaturas me resultan más naturales? ¿En qué proyectos escolares he tomado la iniciativa? ¿Qué temas investigo por mi cuenta? ¿Con qué me pide ayuda la gente? Estas preguntas apuntan hacia cuatro orientaciones principales: tecnología y datos, marketing y comunicación, empresa y finanzas, o creatividad y diseño.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Habilidades técnicas</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Si eres fuerte en matemáticas, ciencias o informática, tienes señales que se alinean con tecnología y datos. El dominio básico de Excel o Google Sheets, la capacidad de escribir un script sencillo en Python, la pasión por resolver problemas de forma lógica — todo esto son señales valoradas en las solicitudes de prácticas orientadas a la tecnología.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Habilidades de comunicación y marketing</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Si usas activamente las redes sociales, creas contenido o escribes para una publicación o blog escolar, tienes una ventaja natural en roles de marketing digital, comunicación o medios. Estas habilidades son especialmente valiosas para las pequeñas empresas, que suelen dar a los becarios en edad escolar más responsabilidad que las grandes corporaciones.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Orientaciones empresariales y emprendedoras</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Si sientes curiosidad por cómo funcionan las empresas, encuentras interesantes la economía y el dinero, o has participado en un proyecto de emprendimiento escolar, tienes alineación natural con empresa y finanzas. Documentar este interés antes de una solicitud de prácticas — una presentación, un resumen de proyecto, un análisis — refuerza materialmente tu candidatura.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Consejo práctico:</strong> Escribe tu mapa de habilidades en papel. Tres columnas: "Cosas en las que soy bueno en el colegio", "Temas que aprendo por mi cuenta" y "Situaciones en las que otros me piden ayuda." Esta lista es el material bruto de tu carta de presentación personalizada.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Usa un "informe de competencias" en lugar de un CV vacío</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un CV vacío genera ambigüedad en los empleadores. Pero ¿y si presentas un perfil de competencias medido y verificado? Esta es la forma más práctica de romper la paradoja de la experiencia.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El modelo tradicional de CV se basa en listar experiencias laborales pasadas. Para un estudiante sin historial laboral, este modelo crea una desventaja estructural. El enfoque del informe de competencias mide el potencial actual — habla de lo que puedes hacer, no de lo que has hecho. La evaluación adaptativa gratuita de Eduentry está diseñada precisamente para este propósito: genera un informe de preparación personalizado que mide aptitud, conocimientos del sector y habilidades profesionales.
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Obtén tu informe de competencias gratis</p>
+          <p className="text-sm text-gray-600">Evaluación adaptativa de 20 minutos para estudiantes mayores de 14 años. Sustituye un CV vacío con evidencia medida de tu potencial.</p>
+        </div>
+        <Link href="https://eduentry.ai/es" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Comenzar gratis
+        </Link>
+      </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">El potencial es un argumento de venta más sólido que el historial</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las investigaciones que examinan cómo los empleadores del Reino Unido y España evalúan las solicitudes de prácticas en edad escolar muestran de forma consistente que la mayoría de los gestores de programas evalúan la disposición para aprender, la curiosidad y el enfoque ante el trabajo — no el historial laboral previo. El informe Early Careers del CIPD de 2023 encontró que la cualidad que los empleadores buscan con más frecuencia en los jóvenes que terminan el instituto es la resiliencia y la adaptabilidad — ambas son competencias medibles que una evaluación de preparación puede poner de relieve.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Puntuación de aptitud</strong> — Se miden el pensamiento analítico, el razonamiento numérico y las habilidades verbales.</Check>
+          <Check><strong>Conocimiento del sector</strong> — Se evalúa qué tan bien comprendes los conceptos clave en tu área de interés.</Check>
+          <Check><strong>Habilidades profesionales</strong> — Se generan datos sobre comunicación, trabajo en equipo y tendencias de resolución de problemas.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">4 formas alternativas de ganar experiencia en el instituto</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Más allá de las prácticas formales a tiempo completo, hay cuatro canales de experiencia poderosos abiertos a los estudiantes de instituto. Cada uno proporciona material genuino para el CV y crea un punto de partida concreto para las solicitudes de prácticas.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Experiencia laboral virtual y estudios de caso</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Plataformas como Springpod, Forage y Bright Network ofrecen programas de experiencia laboral virtual diseñados por empresas reales — Barclays, Deloitte, Goldman Sachs, Google. Estos programas suelen durar entre 3 y 8 horas, incluyen tareas completables y otorgan un certificado digital al finalizar. Son gratuitos, se pueden hacer desde casa y ofrecen una exposición genuina al entorno laboral de una empresa real.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Clubs escolares, roles de liderazgo y voluntariado</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Participar en un club de emprendimiento escolar, liderar un equipo de debate, editar un periódico escolar o hacer voluntariado en una ONG local — todo esto desarrolla habilidades que el mundo profesional valora. La clave está en enmarcar estas experiencias correctamente: no "era miembro del club" sino "coordiné un equipo de diez personas y dirigí un proyecto de tres meses con un entregable definido."
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Proyectos personales: blog, código y redes sociales</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un proyecto que iniciaste y gestionas de forma independiente demuestra a los empleadores dos cosas: iniciativa e interés genuino. Ejemplos: un blog sobre un tema que te apasiona, un pequeño proyecto de software o repositorio en GitHub, una cuenta de redes sociales que gestionas con datos de crecimiento, o asesoramiento gratuito a una pequeña empresa local. Documenta los resultados — "crecí hasta 200 seguidores en tres meses" son señales genuinamente sólidas.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Job shadowing: visitas de 1–2 días</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En lugar de unas prácticas formales de varias semanas, organizar una visita de un o dos días de "observación laboral" es un punto de partida mucho más accesible. Los profesionales a los que puedes acceder a través de familiares, vecinos o la red escolar a menudo están dispuestos a recibir una visita de un día. Esta visita proporciona material de observación concreto para la carta de motivación universitaria — "pasé un día en un despacho de abogados y observé cómo se estructuran las consultas con clientes" es categóricamente más sólido que declaraciones abstractas de interés profesional.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Consejo estratégico:</strong> Completar uno de estos cuatro canales en profundidad es más valioso que comenzar todos a la vez. La experiencia laboral virtual es el punto de entrada más accesible — completa una esta semana y luego pasa a otros canales.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Las 3 habilidades clave que buscan las empresas en candidatos de bachillerato</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las investigaciones con empleadores que evalúan solicitudes de prácticas en edad escolar identifican de forma consistente tres habilidades que emergen en todos los sectores. Estas son cualidades que un estudiante sin historial laboral puede demostrar igualmente.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Comunicación y trabajo en equipo</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La comunicación escrita y oral clara es la habilidad de mayor prioridad que buscan los empleadores en un candidato en edad de prácticas. La forma más directa de demostrarlo: la calidad de la propia carta de presentación, el rendimiento en la entrevista y — si están disponibles — los comentarios de las referencias. La experiencia de trabajo en equipo puede extraerse de cualquier proyecto escolar, actividad de club o contexto de voluntariado.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Resolución de problemas y pensamiento analítico</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          ¿Cómo abordas una situación ambigua? ¿Qué haces cuando un plan de proyecto no funciona? Este tipo de preguntas de comportamiento constituyen una gran parte de las entrevistas de prácticas en edad escolar. Apoya tus respuestas con ejemplos concretos del colegio, proyectos personales o voluntariado — la estructura STAR (Situación, Tarea, Acción, Resultado) funciona para cualquier contexto.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Curiosidad específica del sector</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los empleadores reciben cientos de declaraciones genéricas de "me interesa este campo." Las solicitudes que destacan son las que muestran investigación demostrable de la empresa y observaciones específicas del sector. Investiga los proyectos recientes de la empresa, sigue un desarrollo del sector, o sé capaz de resumir la propuesta de valor de la empresa en una oración. Este tipo de preparación demuestra que tu interés es real.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>Habilidad comunicativa: demostrada a través de la carta de presentación y el rendimiento en la entrevista.</Bullet>
+          <Bullet>Resolución de problemas: demostrada con ejemplos escolares o de proyectos personales con estructura STAR.</Bullet>
+          <Bullet>Curiosidad sectorial: demostrada a través de la investigación de la empresa y preguntas preparadas específicas.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qué tener en cuenta al enviar tu primera solicitud de prácticas</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El componente más crítico de una solicitud de prácticas es la carta de presentación — no el CV. Los empleadores usan la carta de presentación para responder a una pregunta: "¿Por qué quiere este estudiante estas prácticas en esta empresa?" Una plantilla genérica no puede responder esa pregunta.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Cómo escribir una carta de presentación personalizada</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Una carta de presentación efectiva tiene tres párrafos. Párrafo uno: por qué te interesa específicamente esta empresa y este rol — explícalo con una observación específica de la empresa. Párrafo dos: cómo tus habilidades y experiencias actuales se aplican a esta posición — extrae elementos de tu mapa de habilidades. Párrafo tres: qué quieres aprender y por qué estas prácticas son significativas para tus objetivos futuros. Cada párrafo debe ser específico y concreto.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Cómo incluir tu informe de preparación en las solicitudes</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En el párrafo final de tu carta de presentación, menciona el informe de preparación de Eduentry: "Para evaluar mi aptitud y preparación de forma independiente, completé la evaluación de Eduentry. Mi informe identificó fortalezas en [área relevante]." Adjunta el informe como PDF junto a tu CV. Esto crea un diferenciador concreto y verificable entre miles de solicitudes similares.
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Dale una base sólida a tu solicitud</p>
+          <p className="text-sm text-gray-600">El informe de preparación gratuito de Eduentry demuestra tu aptitud a los empleadores antes de conocerte. Complétalo en 20 minutos y descárgalo al instante.</p>
+        </div>
+        <Link href="https://eduentry.ai/es" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Obtener informe gratis
+        </Link>
+      </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Solicita directamente a empresas pequeñas</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los programas formales de las grandes empresas son extremadamente competitivos. Las pequeñas y medianas empresas, sin embargo, a menudo no reciben solicitudes en absoluto — porque no publican prácticas formales. Un correo bien preparado y personalizado a una agencia de marketing local, un despacho de abogados, una startup tecnológica o una firma de contabilidad obtiene con frecuencia una respuesta positiva. No una plantilla — un correo real: uno que muestre que has investigado la empresa, explique lo que puedes aportar y mencione tu informe de preparación.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">¿A qué edad se puede solicitar unas prácticas?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En España, los estudiantes de Educación Secundaria Obligatoria (14–16 años) pueden participar en el módulo de Formación en Centros de Trabajo (FCT). En Bachillerato (16–18 años), los acuerdos de colaboración con empresas permiten acceder a prácticas voluntarias. Cuanto antes empieces, más tiempo tendrás para desarrollar una narrativa profesional sólida antes de las solicitudes a la universidad.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">¿Qué pongo en mi CV si no tengo experiencia?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Renombra la sección "Experiencia" como "Experiencia relevante" e incluye: proyectos escolares con resultados medibles (premios en competencias, delegado de clase, capitán de equipo deportivo), programas de experiencia laboral virtual completados (certificados de Springpod, Forage), proyectos personales y voluntariado. La incorporación más importante: un informe de preparación de Eduentry — esto equilibra la falta de experiencia con evidencia concreta de aptitud.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">¿Un informe de preparación realmente marca la diferencia en las solicitudes de prácticas?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sí — especialmente cuando se solicita sin experiencia previa. Cuando un empleador compara dos solicitudes similares — una que simplemente afirma "me interesa este campo", otra que dice "mi evaluación de aptitud me situó en el cuartil superior en pensamiento analítico y comprensión lectora" — el segundo candidato destaca definitivamente. El informe aporta evidencia, no solo intención.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Da tu primer paso hacia tu futuro</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La paradoja de la experiencia hace que muchos estudiantes se rindan antes de empezar. Pero el enfoque de esta guía invierte la paradoja: mide tu potencial, hazlo visible y preséntalo a través de los canales adecuados. Completar una experiencia laboral virtual, iniciar un proyecto personal u obtener un informe de competencias — cualquiera de estas acciones invalida la objeción "no tengo experiencia."
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La investigación de Education and Employers lo demuestra: empezar pronto — tener cuatro o más encuentros con empleadores antes de los 16 años — reduce en cinco veces la probabilidad de estar desempleado a los 19. Esa es una ventaja alcanzable completando un solo programa de experiencia laboral virtual, iniciando un proyecto personal y obteniendo un informe de preparación.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Para llegar a las solicitudes universitarias con una narrativa sólida, empieza hoy. El primer paso más práctico: completa la evaluación gratuita de Eduentry, obtén tu informe de competencias y añade una base concreta a tu primera solicitud.
+        </p>
+      </section>
+    </>
+  ),
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

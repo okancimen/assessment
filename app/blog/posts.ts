@@ -2394,6 +2394,38 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/auth/register',
     },
   },
+  {
+    slug: 'how-to-get-internship-no-experience-high-school',
+    title: 'How to Get an Internship with No Experience in High School: A Complete Guide',
+    shortTitle: 'How to Get an Internship with No Experience',
+    description:
+      'No work experience? No problem. Here are 5 practical steps to land a high school internship, showcase your skills, and enter the professional world — starting today.',
+    tldr: 'The solution to the experience paradox is simple: employers are not looking for your past — they are looking for your potential. Mapping your skills, using a readiness report instead of an empty CV, exploring alternative experience routes, and sending a personalised application letter are the four steps that turn a high school student with no prior work history into a credible applicant.',
+    date: '2026-10-06',
+    dateModified: '2026-10-06',
+    readTime: '10 min read',
+    tags: ['Internship', 'Career Development', 'Work Experience', 'High School', 'Preparation'],
+    faqs: [
+      {
+        q: 'How old do you need to be to get an internship?',
+        a: 'In the UK, most formal work experience programmes accept students from Year 10 (age 14–15). Many large employer schemes — including those at Barclays, KPMG, and Google — have specific Year 10 and Year 12 entry points. Starting at 14–15 gives you time to build on the experience before university applications. There is no legal minimum age for work experience beyond general child employment rules.',
+      },
+      {
+        q: 'What do I put on my CV with no work experience?',
+        a: 'Rename the "Experience" section to "Relevant Experience" and include: school projects with measurable outcomes, club or volunteering roles, personal projects (a blog, a code project, a social media account you manage), and any informal work such as tutoring or helping with a family business. Add an Eduentry readiness report to provide a verified third-party assessment of your aptitude and skills.',
+      },
+      {
+        q: 'Does a readiness report really help an internship application?',
+        a: 'Yes. A verified third-party readiness report solves the experience paradox — you need experience to get experience, but you need an opportunity to build experience. An Eduentry assessment report gives recruiters measured data on your aptitude, domain knowledge and workplace skills before they meet you. It is the most concrete signal an employer can act on when there is no prior work history to evaluate.',
+      },
+    ],
+    cta: {
+      heading: 'Find out your internship readiness level — free',
+      body: 'Free adaptive assessment for high school students aged 14+. Discover your readiness across aptitude, domain knowledge, and workplace skills — with a personalised AI report.',
+      label: 'Take the free assessment',
+      href: 'https://eduentry.ai/',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

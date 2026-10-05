@@ -2679,6 +2679,195 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'how-to-get-internship-no-experience-high-school': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        每年，成千上万的高中生都会碰到同一道墙："需要工作经验。"但要获得经验，首先需要机会——这就是著名的"经验悖论"。好消息是，雇主在评估学龄候选人时，寻找的不是过去的工作记录，而是潜力。本指南将一步步说明，一个没有任何工作经历的高中生如何成为有竞争力的申请人。
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        这里的方法简单而有力：让你现有的技能可见、证明你的潜力，并通过正确的渠道申请。教育与雇主组织（Education and Employers）——英国中学阶段雇主参与最大纵向研究的主导机构——发现，16岁前曾与雇主有过四次或更多次有意义接触的年轻人，19岁时成为"既未就业、也未接受教育或培训"群体（NEET）的可能性低五倍。差距不在于经验的多寡，而在于早起步的习惯。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">从零开始：绘制你的技能地图</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          大多数说"我没有经验"的高中生，其实想说的是：我没有带薪工作经历。但雇主在评估实习申请时，对"经验"的定义要宽泛得多。能力——技术技能和人际技能——可以在任何正式职业环境之外习得。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          绘制技能地图，就是系统性地识别自己当前优势的过程。问问自己：哪些科目最得心应手？在哪些学校项目中我主动承担了责任？我自主学习哪些话题？别人在什么情况下会向我寻求帮助？这些问题会引向四个主要方向：技术与数据、营销与传播、商业与金融，或创意与设计。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">技术技能</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          如果你在数学、理科或计算机方面表现出色，这些都是与技术和数据领域对应的信号。基本的Excel或Google Sheets操作、写一段简单Python脚本的能力、对逻辑解题的热情——这些都是技术类实习申请中受到重视的信号。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">传播与营销技能</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          如果你积极使用社交媒体、创作内容，或为校刊、博客撰稿，你在数字营销、传播或媒体领域就有天然优势。这些技能对小企业尤其有价值——小公司通常比大企业给学龄实习生更多责任。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">商业与创业方向</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          如果你对企业运作方式充满好奇，对经济学和商业感兴趣，或参与过学校的创业项目，你就与商业和金融方向天然契合。在申请实习前记录这种兴趣——一份演示文稿、项目摘要或分析报告——能实质性地增强你的申请。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">实用建议：</strong>把技能地图写在纸上。三列：「我在学校擅长的事」、「我自主学习的话题」和「别人向我求助的情景」。这张清单是你个性化求职信的原材料。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">用"能力报告"代替空白简历</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          空白简历会给雇主造成不确定性。但如果你提交一份经过测量和验证的能力档案呢？这是打破经验悖论最实用的方法。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          传统简历模式建立在列举过去工作经历的基础上。对没有工作记录的学生来说，这种模式造成结构性劣势。能力报告方法则测量当前潜力——说的是你能做什么，而不是你做过什么。Eduentry的免费自适应评估正是为此设计：它能生成一份个性化的准备报告，测量能力倾向、行业知识和职业技能。
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">免费获取你的能力报告</p>
+          <p className="text-sm text-gray-600">适合14岁以上学生的20分钟自适应评估。用有据可查的潜力证明替代空白简历。</p>
+        </div>
+        <Link href="https://eduentry.ai/zh" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          免费开始
+        </Link>
+      </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">潜力是比过往经历更有说服力的论据</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          研究雇主如何评估学龄实习申请的调查一致显示：大多数项目负责人评估的是学习意愿、好奇心和工作方式——而非以往的工作经历。CIPD 2023年早期职业报告发现，雇主在应届高中毕业生身上最常寻找的品质是抗压能力和适应性——这两者都是可测量的能力，准备评估可以将其呈现出来。
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>能力倾向分数</strong> — 测量分析思维、数字推理和语言技能。</Check>
+          <Check><strong>行业知识</strong> — 评估你对自己感兴趣领域核心概念的理解程度。</Check>
+          <Check><strong>职业技能</strong> — 生成反映沟通、团队合作和解决问题倾向的数据。</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">高中生积累经验的4条替代路径</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          除了传统全日制实习，还有四条强有力的经验渠道对高中生开放。每条都能为简历提供真实素材，并为实习申请创造具体的起点。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">1. 虚拟工作体验与案例研究</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Springpod、Forage和Bright Network等平台提供由真实企业设计的虚拟工作体验项目——巴克莱银行、德勤、高盛、谷歌。这些项目通常需要3至8小时完成，包含可完成的任务，结束时颁发数字证书。它们免费、可在家完成，并提供真实公司工作环境的体验。完成一个，就是行动的具体证明——不只是表达兴趣。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">2. 学校社团、领导职务与志愿服务</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          参与学校创业社团、领导辩论队、编辑校刊，或在当地公益组织做志愿者——这些都能培养职场所重视的技能。关键在于正确表述这些经历：不是"我是社团成员"，而是"我协调了十人团队，用三个月主导了一个有明确交付成果的项目"。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">3. 个人项目：博客、代码与社交媒体</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          你独立发起并运营的项目能向雇主证明两件事：主动性和真实兴趣。举例：关于你热衷话题的博客（保持每周更新本身就是自律的证明）、小型软件项目或GitHub仓库、附带增长数据的社交媒体账号，或为本地小企业提供免费咨询。记录结果——"三个月增长到200名粉丝"是真正有分量的信号。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">4. 职场观察：1至2天的短期参观</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          与其要求多周的正式实习，安排一两天的"职场跟岗"参观是更易实现的起点。通过家人、邻居或学校关系网可以联系到的专业人士，往往愿意接受一天的参观。这次参观能为求职信提供具体的观察素材——"我在一家律所待了一天，观察了客户咨询的结构安排"比抽象的职业兴趣表述在本质上更有说服力。
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">策略建议：</strong>深入完成四条渠道中的一条，比同时开始四条更有价值。虚拟工作体验是最易进入的起点——这周先完成一个，再转向其他渠道。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">雇主在高中生身上寻找的3项核心技能</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          与评估学龄实习申请的雇主开展的研究，一致识别出三项跨行业的核心技能。这些是没有工作经历的学生同样能够展示的品质。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">1. 沟通与团队协作</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          清晰的书面和口头表达是雇主在实习年龄候选人身上最重视的技能。最直接的证明方式：求职信本身的质量、面试表现，以及（如有）推荐人的反馈。团队协作经验可以来自任何学校项目、社团活动或志愿服务情境。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">2. 解决问题与分析思维</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          面对模糊的情况，你如何应对？当项目计划失效时，你怎么做？这类行为性问题构成学龄实习面试的很大一部分。用来自学校、个人项目或志愿服务的具体例子支撑你的回答——STAR法（情境、任务、行动、结果）适用于任何场景。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">3. 行业特定的好奇心</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          雇主会收到数百份"我对这个领域感兴趣"的泛泛声明。脱颖而出的申请往往包含对企业可证明的调研和行业特定的观察。研究公司近期项目，关注行业动态，或能用一句话概括公司的价值主张。这种准备证明你的兴趣是真实的。
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>沟通能力：通过求职信质量和面试表现来证明。</Bullet>
+          <Bullet>解决问题：通过STAR框架下的学校或个人项目案例来证明。</Bullet>
+          <Bullet>行业好奇心：通过对企业的调研和具体准备好的问题来证明。</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">提交第一份实习申请时需要考虑的事项</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          实习申请中最关键的部分是求职信——而不是简历。雇主用求职信来回答一个问题："这个学生为什么想要这家公司的这个实习机会？"通用模板无法回答这个问题。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">如何写一封个性化求职信</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          有效的求职信包含三个段落。第一段：你为何对这家公司和这个职位特别感兴趣——用一个关于公司的具体观察来解释。第二段：你现有的技能和经历如何适用于这个职位——从技能地图中提取素材。第三段：你想学习什么，以及这次实习对你未来目标的意义。每段都应具体而有实质内容。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">如何在申请中加入准备报告</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在求职信最后一段，提及Eduentry的准备报告："为了独立评估我的能力和准备程度，我完成了Eduentry评估。我的报告识别出在[相关领域]方面的优势。"将报告以PDF附件和简历一起提交。这在数千份相似申请中创造了一个具体、可核实的差异化特征。
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">为申请奠定坚实基础</p>
+          <p className="text-sm text-gray-600">Eduentry的免费准备报告在雇主与你相识之前就能证明你的能力。20分钟完成，立即下载。</p>
+        </div>
+        <Link href="https://eduentry.ai/zh" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          获取免费报告
+        </Link>
+      </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">直接向小型企业申请</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          大公司的正式项目竞争极为激烈。中小型企业通常完全收不到申请——因为它们不公开招募正式实习生。向本地营销代理机构、律师事务所、科技初创公司或会计师事务所发送一封精心准备的个性化邮件，往往能得到积极回应。不是模板——而是一封真诚的邮件：展示你已研究了这家公司，说明你能贡献什么，并提及你的准备报告。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">常见问题</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">多大可以开始找实习？</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在中国大陆，未成年人正式就业受到劳动法限制，但企业暑期实习项目通常面向16-18岁高中生开放。华为、腾讯、阿里巴巴等大型科技企业设有面向高中生的暑期夏令营和实习体验项目。在香港，许多大型企业的工作体验项目从15岁开始接受报名。虚拟工作体验项目和个人项目没有年龄限制。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">没有工作经验，简历上写什么？</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          将"经历"部分改名为"相关经历"，并包含：有可量化结果的学校项目（竞赛获奖、班委角色、运动队长职务）、已完成的虚拟工作体验项目（Springpod、Forage证书）、个人项目和志愿服务。最重要的补充：Eduentry准备报告——它用具体的能力证明来弥补经验的缺失。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">准备报告真的能在实习申请中发挥作用吗？</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          是的——尤其是在没有经验的情况下申请时。当雇主比较两份相似的申请——一份只是声明"我对这个领域感兴趣"，另一份说"我的能力评估将我置于分析思维和数据素养的顶尖四分之一"——第二位候选人无疑会脱颖而出。报告提供的是证据，而不只是意愿。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">迈出走向未来的第一步</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          经验悖论让许多学生在开始前就放弃了。但本指南中的方法能逆转这个悖论：测量你的潜力，让它可见，并通过正确渠道呈现出来。完成一个虚拟工作体验项目、启动一个个人项目，或获取一份能力报告——这些行动中的任何一个，都能让"我没有经验"这一理由失效。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Education and Employers的研究证明了这一点：早起步——16岁前与雇主有四次或更多接触——能使19岁失业的可能性降低五倍。这是一个可以通过完成一个虚拟工作体验项目、启动一个个人项目、获取一份准备报告就能实现的优势。
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          要带着有说服力的职业叙事走进大学申请，就从今天开始。最实用的第一步：完成Eduentry免费评估，获取你的能力报告，为第一份申请奠定具体基础。
+        </p>
+      </section>
+    </>
+  ),
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

@@ -5705,6 +5705,199 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'how-to-get-internship-no-experience-high-school': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Her yıl binlerce lise öğrencisi aynı duvarla karşılaşır: "Deneyim gereklidir." Ama deneyim kazanmak için önce bir fırsata ihtiyaç var — bu da ünlü deneyim paradoksudur. İyi haber şu: işverenler, özellikle lise yaşındaki öğrenciler söz konusu olduğunda, geçmiş iş geçmişini değil potansiyeli değerlendiriyor. Bu rehber, özgeçmişinde sıfır iş deneyimi olan bir lise öğrencisinin nasıl cazip bir aday haline gelebileceğini adım adım açıklıyor.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Buradaki yaklaşım basit ama güçlü: sahip olduğun becerileri görünür kıl, potansiyelini kanıtla ve doğru kanallar aracılığıyla başvur. İngiltere'de lise öğrencilerine yönelik işveren katılımı araştırmalarını yürüten Education and Employers kuruluşu, 16 yaşından önce dört veya daha fazla işveren karşılaşması yaşayan gençlerin 19 yaşında işsiz kalma ihtimalinin beş kat daha düşük olduğunu ortaya koydu. Fark, deneyimin hacminde değil — erken başlama alışkanlığında yatıyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sıfırdan Başlayanlar İçin: Kendi Yetenek Haritanızı Çıkarın</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çoğu lise öğrencisi "hiç deneyimim yok" derken aslında kastettiği şu: ücretli iş geçmişim yok. Ancak işverenler staj başvurusunda deneyimi çok daha geniş bir çerçevede değerlendiriyor. Yetkinlikler — teknik ve sosyal beceriler — herhangi bir profesyonel iş ortamında değil de olduğunda bile kazanılabilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yetenek haritası çıkarmak, mevcut güçlü yönlerini sistematik biçimde tespit etme sürecidir. Şu soruları kendinize sorun: Hangi dersler en kolay geliyor? Hangi okul projelerinde liderlik yaptım? Hangi konuları kendi isteğimle araştırıyorum? Başkalarının yardım istediği konular hangileri? Bu sorular dört ana alana yönelim gösterir: teknoloji ve veri, pazarlama ve iletişim, iş ve finans, veya yaratıcı ve tasarım.
+
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Teknik Beceriler</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Matematik, fen bilimleri veya bilgisayar derslerinde başarılıysan teknoloji ve veri alanına yönelimlerin var demektir. Temel Excel veya Google Sheets bilgisi, basit bir Python veya HTML kodu yazabilme ya da algoritmik düşünceyi sevmek — bunların tamamı teknoloji odaklı stajlarda değer verilen sinyallerdir.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">İletişim ve Pazarlama Becerileri</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sosyal medyayı aktif biçimde kullanıyor, içerik üretiyor ya da okul bültenine veya blog'a yazıyorsan dijital pazarlama, iletişim veya medya alanlarında avantajlısın. Bu beceriler küçük işletmeler için çok değerli — ve bu firmalar genellikle lise öğrencilerine büyük kurumsal şirketlerden daha fazla sorumluluk veriyor.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">İş Dünyası ve Girişimcilik Yönelimleri</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Şirketlerin nasıl çalıştığına merak duyuyor, para ve ekonomiyi ilgi çekici buluyor ya da okul girişimcilik projelerinde yer aldıysan iş dünyası ve finans alanına yatkınsın. Bu ilgiyi bir staj başvurusu öncesinde belgeyebilmek — bir sunum, bir proje özeti veya bir analiz — başvurunu güçlendirir.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Pratik ipucu:</strong> Yetenek haritanı kağıda dök. Üç sütun: "Okul ortamında iyi olduğum şeyler", "Kendi isteğimle öğrendiğim konular" ve "Başkalarının benden yardım istediği durumlar." Bu liste, kişiselleştirilmiş başvuru mektubunun ham maddesidir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Standart Özgeçmiş Yerine "Yetkinlik Raporu" Kullanın</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Boş bir özgeçmiş, işverenler için belirsizlik yaratır. Peki ya ölçülmüş, doğrulanmış bir yetkinlik profili sunarsan? İşte deneyim paradoksunu kırmanın en pratik yolu budur.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Geleneksel özgeçmiş modeli, geçmiş iş deneyimlerini listelemeye dayanır. Hiç iş deneyimi olmayan bir öğrenci için bu model yapısal bir dezavantaj yaratır. Yetkinlik raporu yaklaşımı ise mevcut potansiyeli ölçer — yaptıklarından değil yapabileceklerinden söz eder. Eduentry'nin ücretsiz uyarlanabilir değerlendirmesi, tam olarak bu amaçla tasarlandı: aptitude, alan bilgisi ve iş yeri becerilerini ölçen, kişiselleştirilmiş bir hazırlık raporu üretiyor.
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Yetkinlik raporunu ücretsiz al</p>
+          <p className="text-sm text-gray-600">14 yaş üstü öğrenciler için 20 dakikalık adaptif değerlendirme. Boş özgeçmişi ölçülmüş yetenek kanıtıyla ikame et.</p>
+        </div>
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz başla
+        </Link>
+      </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Potansiyel, Geçmişten Daha Güçlü Bir Satış Argümanıdır</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İngiltere'deki büyük işverenlerin staj değerlendirme süreçlerini inceleyen araştırmalar tutarlı biçimde şunu ortaya koyuyor: staj programı yöneticilerinin çoğu, geçmiş deneyimden çok öğrenme isteği, merak ve işe yaklaşım biçimini değerlendiriyor. CIPD'nin 2023 Early Careers raporu, işverenlerin okul mezunlarında en çok aradıkları niteliğin dayanıklılık ve uyum yeteneği olduğunu gösteriyor — bunlar ölçülebilir yetkinliklerdir ve bir hazırlık değerlendirmesi bu yetkinlikleri somutlaştırabilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Başvuru paketine bir hazırlık raporu eklemek şu mesajı verir: "Geçmişim olmayabilir ama mevcut kapasitem ölçülmüş ve belgelenmiş." Bu yaklaşım, binlerce "Çok çalışkanım ve bu alanla ilgileniyorum" içeren başvurudan seni ayırt eder.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Aptitude skoru</strong> — Analitik düşünce, sayısal muhakeme ve sözel beceriler ölçülür.</Check>
+          <Check><strong>Alan bilgisi</strong> — İlgilendiğin sektördeki temel kavramları ne kadar iyi anladığın değerlendirilir.</Check>
+          <Check><strong>İş yeri becerileri</strong> — İletişim, takım çalışması ve problem çözme eğilimlerini gösteren veriler üretilir.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lise Çağında Deneyim Kazanmanın 4 Alternatif Yolu</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Geleneksel tam zamanlı staj dışında lise öğrencisine açık dört güçlü deneyim kanalı var. Bu kanalların her biri özgeçmişe gerçek materyal sağlar ve staj başvurularında somut bir başlangıç noktası oluşturur.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Sanal İş Deneyimi ve Vaka Çalışmaları</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Springpod, Forage ve Bright Network gibi platformlar, gerçek şirketlerin (Barclays, Deloitte, Goldman Sachs, Google) tasarladığı sanal iş deneyimi programları sunuyor. Bu programlar genellikle 3–8 saat süriyor, tamamlanabilir görevler içeriyor ve bitişte dijital bir sertifika veriyor. Ücretsizler, evden tamamlanabiliyorlar ve gerçek bir şirketin iş ortamını deneyimleme fırsatı sağlıyorlar. Bunları tamamlamak somut bir başlangıç noktası — sadece "ilgi" değil, gerçek bir eylem kanıtı.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Okul Kulüpleri, Liderlik Rolleri ve Gönüllülük</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okul girişimcilik kulübünde yer almak, münazara takımında liderlik yapmak, okul gazetesini yönetmek veya yerel bir sivil toplum kuruluşunda gönüllü olmak — bunların tamamı iş dünyasında değer verilen becerileri geliştirir. Önemli olan bu deneyimleri doğru çerçevelemek: sadece "kulüp üyesiydim" değil, "on kişilik bir ekibi koordine ettim ve üç aylık bir projeyi yürüttüm."
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Kişisel Projeler: Blog, Kod ve Sosyal Medya</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Kendi isteğinle başlattığın ve yönettiğin bir proje, işverenlere iki şeyi kanıtlar: inisiyatif alma kapasitesi ve gerçek ilgi. Birkaç örnek: bir ilgi alanı üzerine düzenli yazılan bir blog (haftalık yayın takvimi oluşturmak bile disiplin gösteriyor), küçük bir yazılım projesi veya GitHub repository'si, sosyal medya hesabı yönetimi (büyüme verileriyle), ya da yerel bir küçük işletmeye ücretsiz danışmanlık. Bu projelerin sonuçlarını belgele: "Üç ayda 200 takipçiye ulaştım" veya "Haftalık okuyucu sayısını 150'ye çıkardım" gibi rakamlar bile güçlü sinyal gönderir.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">4. İş Gölgeleme: 1–2 Günlük Yerleştirme</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Haftalar gerektiren formal bir staj yerine, tek veya iki günlük bir "iş gölgeleme" ziyareti ayarlamak çok daha erişilebilir bir başlangıç noktasıdır. Aile üyeleri, komşular veya okul ağı aracılığıyla ulaşabileceğin profesyoneller genellikle bir günlük ziyarete izin verir. Bu ziyaret, kişisel beyan için somut gözlem materyali sağlar — "Bir hukuk firmasında bir gün geçirerek müvekkil görüşmelerinin nasıl yapılandırıldığını gözlemledim" türünden spesifik anlatılar, soyut kariyer ilgisi ifadelerinden kategorik olarak daha güçlüdür.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Strateji önerisi:</strong> Bu dört kanaldan birini seçip bitirmek, hepsine aynı anda başlamaktan daha değerli. Sanal iş deneyimi en erişilebilir başlangıç noktası — bu hafta bir tane tamamla, ardından diğer kanallara geç.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Şirketlerin Liselilerde Aradığı 3 Temel Beceri</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Lise düzeyi staj başvurularını değerlendiren işverenlerle yapılan araştırmalar, her sektörde üç temel becerinin öne çıktığını tutarlı biçimde gösteriyor. Bu beceriler, ücretli iş geçmişi olmayan bir öğrencinin de kanıtlayabileceği niteliklerdir.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">1. İletişim ve Takım Çalışması</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Net yazılı ve sözlü iletişim, işverenler için staj yaşında bir adayda en yüksek öncelikli beceridir. Bunu kanıtlamanın en doğrudan yolu: başvuru mektubunun dili ve yapısı, mülakattaki konuşma biçimi ve varsa referansların geri bildirimi. Takım çalışması deneyimi ise her okul projesi, kulüp faaliyeti veya gönüllülük bağlamından aktarılabilir.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Problem Çözme ve Analitik Düşünce</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Belirsiz bir durumla karşılaştığında nasıl yaklaşıyorsun? Bir projenin planı işe yaramadığında ne yapıyorsun? Bu tür davranışsal sorular, staj mülakatlarının büyük bölümünü oluşturuyor. Cevaplarını okul, kişisel proje veya gönüllülük deneyimlerinden somut örneklerle destekle — STAR yapısı (Durum, Görev, Eylem, Sonuç) her bağlamda işe yarıyor.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Sektöre Özgü Merak</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İşverenler, genel "bu alana ilgim var" ifadelerinin yüzlercesini alıyor. Bunların arasından öne çıkan başvurular, şirket hakkında somut araştırma yapılmış ve sektöre özgü gözlem içeren başvurulardır. Başvurduğun şirketin son dönem projelerini araştır, sektördeki bir gelişmeyi takip et veya şirketin değer önerisini bir cümleyle özetleyebil. Bu tür hazırlık, sektöre gerçek merak duyduğunu gösterir.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>İletişim becerisi: başvuru mektubu ve mülakat performansıyla kanıtlanır.</Bullet>
+          <Bullet>Problem çözme: STAR yapısıyla sunulan okul veya kişisel proje örnekleriyle kanıtlanır.</Bullet>
+          <Bullet>Sektör merakı: şirket araştırması ve spesifik sorularla kanıtlanır.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İlk Staj Başvurunuzu Yaparken Dikkate Almanız Gerekenler</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Staj başvurusunun en kritik bileşeni başvuru mektubudur — özgeçmişten değil. İşverenler, başvuru mektubunu şu soruyu cevaplamak için kullanıyor: "Bu öğrenci neden bu staj, neden bu şirket?" Genel bir şablon bu soruyu yanıtlayamaz.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Kişiselleştirilmiş Başvuru Mektubu Nasıl Yazılır</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Etkili bir başvuru mektubu üç paragraftan oluşur. Birinci paragraf: şirkete ve pozisyona neden spesifik olarak ilgi duyduğunu — şirkete özgü bir gözlemle açıkla. İkinci paragraf: mevcut becerilerini ve deneyimlerini nasıl bu pozisyona uyguladığını göster — yetenek haritandan çıkarttıklarını kullan. Üçüncü paragraf: ne öğrenmek istediğini ve bu stajın gelecek hedeflerin için neden anlamlı olduğunu anlat. Her paragraf somut ve spesifik olmalı — "çok çalışkanım" gibi genel nitelik ifadelerinden kaçın.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Hazırlık Raporunu Başvuruya Nasıl Eklersiniz</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Başvuru mektubunun son paragrafında, Eduentry hazırlık raporuna atıfta bulun: "Yetenek ve hazırlık düzeyimi bağımsız olarak değerlendirmek için Eduentry değerlendirmesini tamamladım. Raporumda [ilgili alan] konusundaki güçlü yönlerim ortaya çıktı." Raporu PDF olarak CV ile birlikte ekle. Bu yaklaşım, binlerce benzer başvuru arasında somut ve doğrulanabilir bir farklılaştırma yaratır.
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Başvuruna güçlü bir temel ekle</p>
+          <p className="text-sm text-gray-600">Ücretsiz Eduentry hazırlık raporu, işverenlere seni tanımadan önce yeteneğini kanıtlar. 20 dakikada tamamla, anında indir.</p>
+        </div>
+        <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz rapor al
+        </Link>
+      </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Küçük Firmalara Doğrudan Başvurun</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Büyük şirketlerin formal programları son derece rekabetçidir. Küçük ve orta ölçekli firmalar ise genellikle hiç başvuru almıyor — çünkü resmi bir staj ilanı açmıyorlar. Yerel bir pazarlama ajansına, hukuk bürosuna, teknoloji girişimine veya muhasebe firmasına gönderilen iyi hazırlanmış, kişiselleştirilmiş bir e-posta çoğu zaman olumlu sonuç veriyor. Şablon değil, gerçek bir e-posta: şirketi araştırmış, ne katkı sunabileceğini belirtmiş ve hazırlık raporuna atıf yapmış bir mesaj.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sıkça Sorulan Sorular</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Kaç yaşında staj başvurusu yapılabilir?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye'de lise öğrencileri için yasal staj yaşı genellikle 9. sınıf (15 yaş) olarak kabul edilmekte; bazı sektörler 10. sınıftan itibaren başvuru kabul etmektedir. Sanal iş deneyimi programları ve kişisel projeler için ise herhangi bir yaş sınırı yoktur — 14 yaşından itibaren başlayabilirsin. İngiltere'de Year 10 (14–15 yaş) formal iş deneyimi programlarının başlangıç noktasıdır.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Deneyimim yoksa özgeçmişime ne yazarım?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          "Deneyim" bölümünü "İlgili Deneyim" olarak yeniden adlandır ve şunları dahil et: ölçülebilir sonuçları olan okul projeleri (proje fuarı birinciliği, öğrenci konseyi üyeliği, spor takımı kaptanlığı), tamamlanan sanal iş deneyimi programları (Springpod, Forage sertifikaları), kişisel projeler ve gönüllülük çalışmaları. En önemli eklenti: Eduentry hazırlık raporu — bu, deneyim eksikliğini somut yetenek kanıtıyla dengeler.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Hazırlık raporu staj başvurusunda gerçekten fark yaratır mı?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Evet — özellikle deneyim olmadan başvuruda. İşverenler iki benzer başvuruyu karşılaştırdığında, biri yalnızca "Bu alana ilgi duyuyorum" diyor, diğeri "Aptitude değerlendirmemde analitik düşünce ve veri okuryazarlığı alanlarında üst çeyreğe girdim" diyorsa — ikinci başvurucu kesinlikle öne çıkar. Rapor bir taahhüt değil, bir kanıt sunuyor.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Geleceğinize İlk Adımı Atın</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Deneyim paradoksu, pek çok öğrencinin başlamadan vazgeçmesine neden olur. Ama bu rehberde ele alınan yaklaşım, paradoksu tersine çeviriyor: potansiyelini ölç, görünür kıl ve doğru kanallar aracılığıyla sun. Sanal bir iş deneyimi tamamlamak, kişisel bir proje başlatmak veya bir yetkinlik raporu almak — bunların her biri "deneyimim yok" itirazını geçersiz kılar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Education and Employers'ın araştırması şunu kanıtlıyor: erken başlamak, yani 16 yaşından önce dört veya daha fazla işveren karşılaşması yaşamak, 19 yaşında işsiz kalma ihtimalini beş kat düşürüyor. Bu, tek bir sanal iş deneyimi programı tamamlamakla, bir kişisel proje başlatmakla ve bir hazırlık raporu almakla elde edilebilecek bir avantaj.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Üniversite başvurularına güçlü bir anlatıyla ulaşmak için bugün başla. Adım atmanın en pratik yolu: ücretsiz Eduentry değerlendirmesini tamamla, yetkinlik raporunu al ve ilk başvuruna somut bir temel ekle.
+        </p>
+      </section>
+    </>
+  ),
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

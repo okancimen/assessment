@@ -1214,6 +1214,39 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: '/es/auth/register',
     },
   },
+  {
+    slug: 'practicas-sin-experiencia-instituto',
+    contentSlug: 'how-to-get-internship-no-experience-high-school',
+    title: 'Cómo conseguir prácticas en el instituto sin experiencia previa: guía completa',
+    shortTitle: 'Prácticas en el instituto sin experiencia',
+    description:
+      '¿Sin experiencia laboral? Sin problema. Cinco pasos prácticos para conseguir prácticas en el instituto, destacar tus habilidades y entrar al mundo profesional desde hoy.',
+    tldr: 'La solución a la paradoja de la experiencia es sencilla: los empleadores no buscan tu historial, buscan tu potencial. Mapear tus habilidades, usar un informe de competencias en lugar de un CV vacío, explorar vías alternativas de experiencia y enviar una solicitud personalizada son los cuatro pasos que convierten a un estudiante de instituto sin historial laboral en un candidato sólido.',
+    date: '2026-10-06',
+    dateModified: '2026-10-06',
+    readTime: '10 min de lectura',
+    tags: ['Prácticas', 'Desarrollo profesional', 'Experiencia laboral', 'Instituto', 'Preparación'],
+    faqs: [
+      {
+        q: '¿A qué edad se puede empezar a buscar prácticas?',
+        a: 'En España, los estudiantes de bachillerato (16–18 años) pueden acceder a prácticas formales a través de acuerdos de colaboración entre centros y empresas. En el Reino Unido, los programas formales aceptan estudiantes desde Year 10 (14–15 años). Cuanto antes empieces, más tiempo tendrás para desarrollar tu narrativa profesional antes de las solicitudes universitarias.',
+      },
+      {
+        q: '¿Qué pongo en mi CV si no tengo experiencia laboral?',
+        a: 'Renombra la sección "Experiencia" como "Experiencia relevante" e incluye: proyectos escolares con resultados medibles, actividades en clubs o voluntariado, proyectos personales (un blog, un proyecto de código, una cuenta de redes sociales que gestionas) y cualquier trabajo informal como dar clases particulares o ayudar en un negocio familiar. Añade un informe de preparación Eduentry para aportar una evaluación verificada de tus aptitudes.',
+      },
+      {
+        q: '¿Un informe de preparación realmente ayuda en las solicitudes de prácticas?',
+        a: 'Sí. Un informe verificado de terceros resuelve la paradoja de la experiencia: necesitas experiencia para conseguir experiencia, pero necesitas una oportunidad para construirla. Un informe Eduentry proporciona a los reclutadores datos medibles sobre tu aptitud, conocimientos del sector y habilidades profesionales antes de conocerte — la señal más concreta que puede usar un empleador cuando no hay historial laboral previo.',
+      },
+    ],
+    cta: {
+      heading: 'Descubre tu nivel de preparación para prácticas — gratis',
+      body: 'Evaluación adaptativa gratuita para estudiantes de instituto mayores de 14 años. Descubre tu preparación en aptitud, conocimientos del sector y habilidades profesionales — con un informe de IA personalizado.',
+      label: 'Iniciar evaluación gratuita',
+      href: 'https://eduentry.ai/es',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

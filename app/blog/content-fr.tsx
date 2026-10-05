@@ -3541,6 +3541,195 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'how-to-get-internship-no-experience-high-school': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Chaque année, des milliers de lycéens se heurtent au même obstacle : "Expérience requise." Mais pour acquérir de l'expérience, il faut d'abord une opportunité — c'est le fameux paradoxe de l'expérience. La bonne nouvelle, c'est que les employeurs, notamment lorsqu'ils évaluent des candidats en âge scolaire, ne recherchent pas un historique professionnel. Ils recherchent un potentiel. Ce guide explique étape par étape comment un lycéen sans aucune expérience de travail peut devenir un candidat crédible.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        L'approche ici est simple mais puissante : rendez vos compétences existantes visibles, prouvez votre potentiel et postulez par les bons canaux. Education and Employers — qui a mené les plus grandes études longitudinales sur l'engagement des employeurs dans l'enseignement secondaire au Royaume-Uni — a constaté que les jeunes ayant eu quatre rencontres significatives avec des employeurs ou plus avant l'âge de 16 ans avaient cinq fois moins de chances d'être NEET (sans emploi, ni formation ni éducation) à 19 ans. La différence ne réside pas dans le volume d'expérience, mais dans l'habitude de commencer tôt.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Pour ceux qui partent de zéro : cartographiez vos compétences</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La plupart des lycéens qui disent "je n'ai pas d'expérience" veulent en réalité dire : je n'ai pas d'historique professionnel rémunéré. Mais les employeurs qui évaluent les demandes de stage définissent l'expérience de façon beaucoup plus large. Les compétences — techniques et interpersonnelles — peuvent être acquises en dehors de tout environnement professionnel formel.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cartographier ses compétences, c'est le processus d'identification systématique de ses points forts actuels. Posez-vous ces questions : Quelles matières me viennent le plus naturellement ? Dans quels projets scolaires ai-je pris l'initiative ? Quels sujets est-ce que je recherche par moi-même ? Avec quoi les autres me demandent-ils de l'aide ? Ces questions pointent vers quatre orientations principales : technologie et données, marketing et communication, entreprise et finance, ou créativité et design.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Compétences techniques</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Si vous êtes fort en mathématiques, en sciences ou en informatique, vous disposez de signaux qui s'alignent avec la technologie et les données. La maîtrise de base d'Excel ou Google Sheets, la capacité à écrire un simple script Python, la passion pour la résolution logique de problèmes — ce sont tous des signaux valorisés dans les demandes de stage orientées technologie.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Compétences en communication et marketing</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Si vous utilisez activement les réseaux sociaux, créez du contenu ou écrivez pour une publication ou un blog scolaire, vous avez un avantage naturel dans les rôles de marketing digital, de communication ou de médias. Ces compétences sont particulièrement précieuses pour les petites entreprises, qui accordent généralement aux stagiaires en âge scolaire plus de responsabilités que les grandes entreprises.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Orientations entrepreneuriales et commerciales</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Si vous êtes curieux de savoir comment fonctionnent les entreprises, si vous trouvez l'économie et l'argent intéressants, ou si vous avez participé à un projet entrepreneurial scolaire, vous avez une affinité naturelle avec l'entreprise et la finance. Documenter cet intérêt avant une demande de stage — une présentation, un résumé de projet, une analyse — renforce matériellement votre candidature.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Conseil pratique :</strong> Écrivez votre carte de compétences sur papier. Trois colonnes : "Choses dans lesquelles je suis bon à l'école", "Sujets que j'apprends par moi-même" et "Situations où les autres me demandent de l'aide." Cette liste est la matière première de votre lettre de motivation personnalisée.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Utilisez un "rapport de compétences" plutôt qu'un CV vide</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un CV vide crée de l'ambiguïté pour les employeurs. Mais que se passe-t-il si vous présentez un profil de compétences mesuré et vérifié ? C'est le moyen le plus pratique de briser le paradoxe de l'expérience.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le modèle traditionnel de CV repose sur la liste des expériences professionnelles passées. Pour un étudiant sans historique professionnel, ce modèle crée un désavantage structurel. L'approche par rapport de compétences mesure le potentiel actuel — elle parle de ce que vous pouvez faire, pas de ce que vous avez fait. L'évaluation adaptative gratuite d'Eduentry est conçue précisément à cet effet : elle génère un rapport de préparation personnalisé mesurant l'aptitude, les connaissances sectorielles et les compétences professionnelles.
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Obtenez votre rapport de compétences gratuitement</p>
+          <p className="text-sm text-gray-600">Évaluation adaptative de 20 minutes pour les lycéens de plus de 14 ans. Remplacez un CV vide par une preuve mesurée de votre potentiel.</p>
+        </div>
+        <Link href="https://eduentry.ai/fr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Commencer gratuitement
+        </Link>
+      </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Le potentiel est un argument de vente plus solide que l'historique</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les recherches examinant la façon dont les employeurs évaluent les demandes de stage en âge scolaire montrent de manière constante que la plupart des responsables de programme évaluent la volonté d'apprendre, la curiosité et l'approche du travail — pas l'historique professionnel préalable. Le rapport Early Careers du CIPD 2023 a révélé que la qualité que les employeurs recherchent le plus fréquemment chez les jeunes diplômés du lycée est la résilience et l'adaptabilité — ce sont des compétences mesurables qu'une évaluation de préparation peut mettre en évidence.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Score d'aptitude</strong> — La pensée analytique, le raisonnement numérique et les compétences verbales sont mesurés.</Check>
+          <Check><strong>Connaissance du secteur</strong> — La compréhension des concepts clés dans votre domaine d'intérêt est évaluée.</Check>
+          <Check><strong>Compétences professionnelles</strong> — Des données reflétant la communication, le travail d'équipe et les tendances de résolution de problèmes sont générées.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">4 façons alternatives de gagner de l'expérience au lycée</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Au-delà des stages formels à plein temps, il existe quatre puissants canaux d'expérience ouverts aux lycéens. Chacun fournit du matériel authentique pour le CV et crée un point de départ concret pour les demandes de stage.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Expérience professionnelle virtuelle et études de cas</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Des plateformes comme Springpod, Forage et Bright Network proposent des programmes d'expérience professionnelle virtuelle conçus par de vraies entreprises — Barclays, Deloitte, Goldman Sachs, Google. Ces programmes durent généralement 3 à 8 heures, comportent des tâches à compléter et délivrent un certificat numérique à la fin. Ils sont gratuits, peuvent être effectués depuis chez soi et offrent une exposition authentique à l'environnement de travail d'une vraie entreprise.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Clubs scolaires, rôles de leadership et bénévolat</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Participer à un club d'entrepreneuriat scolaire, diriger une équipe de débat, rédiger un journal scolaire ou faire du bénévolat pour une association locale — tout cela développe des compétences que le monde professionnel valorise. La clé est de formuler ces expériences correctement : pas "j'étais membre du club" mais "j'ai coordonné une équipe de dix personnes et animé un projet de trois mois avec un livrable défini."
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Projets personnels : blog, code et réseaux sociaux</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un projet que vous avez lancé et gérez de façon indépendante prouve deux choses aux employeurs : l'initiative et l'intérêt réel. Exemples : un blog sur un sujet qui vous passionne (maintenir un calendrier de publication hebdomadaire est en soi une preuve de discipline), un petit projet logiciel ou un dépôt GitHub, un compte de réseaux sociaux que vous gérez avec des données de croissance, ou du conseil gratuit à une petite entreprise locale. Documentez les résultats — "j'ai atteint 200 abonnés en trois mois" sont des signaux genuinement solides.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Observation en entreprise : visites de 1–2 jours</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Plutôt qu'un stage formel de plusieurs semaines, organiser une visite d'un ou deux jours d'"observation en entreprise" est un point de départ beaucoup plus accessible. Les professionnels joignables via des membres de la famille, des voisins ou le réseau scolaire acceptent souvent une visite d'une journée. Cette visite fournit du matériel d'observation concret pour la lettre de motivation — "j'ai passé une journée dans un cabinet d'avocats et observé comment se structurent les consultations avec les clients" est catégoriquement plus solide que des déclarations abstraites d'intérêt pour une carrière.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Conseil stratégique :</strong> Compléter l'un de ces quatre canaux en profondeur vaut mieux que commencer tous en même temps. L'expérience professionnelle virtuelle est le point d'entrée le plus accessible — complétez-en une cette semaine, puis passez aux autres canaux.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les 3 compétences clés que recherchent les entreprises chez les lycéens</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les recherches menées auprès d'employeurs évaluant des demandes de stage en âge scolaire identifient de façon constante trois compétences qui émergent dans tous les secteurs. Ce sont des qualités qu'un étudiant sans historique professionnel peut tout aussi bien démontrer.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Communication et travail en équipe</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La communication écrite et orale claire est la compétence prioritaire recherchée par les employeurs chez un candidat en âge de stage. La façon la plus directe de le prouver : la qualité de la lettre de motivation elle-même, la performance en entretien et — si disponibles — les retours des références. L'expérience du travail d'équipe peut être tirée de tout projet scolaire, activité de club ou contexte bénévole.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Résolution de problèmes et pensée analytique</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Comment abordez-vous une situation ambiguë ? Que faites-vous quand un plan de projet ne fonctionne pas ? Ce type de questions comportementales constitue une grande partie des entretiens de stage en âge scolaire. Appuyez vos réponses sur des exemples concrets tirés de l'école, de projets personnels ou du bénévolat — la méthode STAR (Situation, Tâche, Action, Résultat) fonctionne dans n'importe quel contexte.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Curiosité sectorielle spécifique</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les employeurs reçoivent des centaines de déclarations génériques "je suis intéressé par ce domaine." Les candidatures qui se démarquent sont celles qui montrent une recherche démontrée de l'entreprise et des observations sectorielles spécifiques. Renseignez-vous sur les projets récents de l'entreprise, suivez une actualité du secteur, ou soyez capable de résumer la proposition de valeur de l'entreprise en une phrase. Ce type de préparation montre que votre intérêt est réel.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>Compétence communicationnelle : prouvée par la lettre de motivation et la performance en entretien.</Bullet>
+          <Bullet>Résolution de problèmes : prouvée par des exemples scolaires ou de projets personnels structurés avec la méthode STAR.</Bullet>
+          <Bullet>Curiosité sectorielle : prouvée par la recherche de l'entreprise et des questions préparées spécifiques.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce qu'il faut considérer en soumettant votre première candidature de stage</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le composant le plus critique d'une candidature de stage est la lettre de motivation — pas le CV. Les employeurs utilisent la lettre de motivation pour répondre à une question : "Pourquoi est-ce que cet étudiant veut ce stage dans cette entreprise ?" Un modèle générique ne peut pas répondre à cette question.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Comment rédiger une lettre de motivation personnalisée</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Une lettre de motivation efficace comporte trois paragraphes. Premier paragraphe : pourquoi vous êtes spécifiquement intéressé par cette entreprise et ce rôle — expliquez-le avec une observation spécifique à l'entreprise. Deuxième paragraphe : comment vos compétences et expériences actuelles s'appliquent à ce poste — puisez dans votre carte de compétences. Troisième paragraphe : ce que vous voulez apprendre et pourquoi ce stage est significatif pour vos objectifs futurs. Chaque paragraphe doit être spécifique et concret.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Comment inclure votre rapport de préparation dans les candidatures</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dans le dernier paragraphe de votre lettre de motivation, mentionnez le rapport de préparation d'Eduentry : "Pour évaluer mon aptitude et ma préparation de façon indépendante, j'ai complété l'évaluation Eduentry. Mon rapport a identifié des points forts dans [domaine pertinent]." Joignez le rapport en PDF avec votre CV. Cela crée un différenciateur concret et vérifiable parmi des milliers de candidatures similaires.
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Donnez une base solide à votre candidature</p>
+          <p className="text-sm text-gray-600">Le rapport de préparation gratuit d'Eduentry prouve votre aptitude aux employeurs avant qu'ils vous rencontrent. Complétez-le en 20 minutes, téléchargez-le instantanément.</p>
+        </div>
+        <Link href="https://eduentry.ai/fr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Obtenir le rapport gratuit
+        </Link>
+      </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Postulez directement aux petites entreprises</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les programmes formels des grandes entreprises sont extrêmement compétitifs. Les petites et moyennes entreprises, en revanche, ne reçoivent souvent aucune candidature — parce qu'elles n'annoncent pas de stages formels. Un email bien préparé et personnalisé à une agence de marketing locale, un cabinet d'avocats, une startup technologique ou un cabinet comptable obtient très souvent une réponse positive. Pas un modèle — un vrai email : un qui montre que vous avez fait des recherches sur l'entreprise, explique ce que vous pouvez apporter et mentionne votre rapport de préparation.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Questions fréquentes</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">À quel âge peut-on postuler à un stage ?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En France, les élèves de 3e (environ 15 ans) ont l'obligation légale d'effectuer un stage d'observation en entreprise d'une semaine. Au lycée (15–18 ans), les stages de découverte professionnelle sont possibles sous convention avec l'établissement scolaire. Plus vous commencez tôt, plus vous disposerez de temps pour développer un récit professionnel solide avant les candidatures dans l'enseignement supérieur.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Que mettre dans mon CV si je n'ai pas d'expérience ?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Renommez la section "Expérience" en "Expérience pertinente" et incluez : des projets scolaires avec des résultats mesurables (prix dans des concours, délégué de classe, capitaine d'équipe sportive), des programmes d'expérience professionnelle virtuelle complétés (certificats Springpod, Forage), des projets personnels et du bénévolat. L'ajout le plus important : un rapport de préparation Eduentry — cela compense le manque d'expérience par une preuve concrète d'aptitude.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Un rapport de préparation fait-il vraiment la différence dans les candidatures de stage ?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Oui — surtout quand on postule sans expérience préalable. Quand un employeur compare deux candidatures similaires — l'une affirmant simplement "je suis intéressé par ce domaine", l'autre disant "mon évaluation d'aptitude m'a placé dans le quartile supérieur en pensée analytique et littératie en données" — le deuxième candidat se démarque sans conteste. Le rapport apporte des preuves, pas seulement une intention.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Faites votre premier pas vers votre avenir</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le paradoxe de l'expérience pousse de nombreux étudiants à abandonner avant même de commencer. Mais l'approche de ce guide inverse le paradoxe : mesurez votre potentiel, rendez-le visible et présentez-le par les bons canaux. Compléter une expérience professionnelle virtuelle, lancer un projet personnel ou obtenir un rapport de compétences — chacune de ces actions invalide l'objection "je n'ai pas d'expérience."
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La recherche d'Education and Employers le prouve : commencer tôt — avoir quatre rencontres ou plus avec des employeurs avant l'âge de 16 ans — réduit de cinq fois la probabilité d'être au chômage à 19 ans. C'est un avantage atteignable en complétant un seul programme d'expérience professionnelle virtuelle, en lançant un projet personnel et en obtenant un rapport de préparation.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Pour arriver aux candidatures universitaires avec un récit solide, commencez aujourd'hui. La première étape la plus pratique : complétez l'évaluation gratuite Eduentry, obtenez votre rapport de compétences et ajoutez une base concrète à votre première candidature.
+        </p>
+      </section>
+    </>
+  ),
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

@@ -1447,6 +1447,39 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: '/fr/auth/register',
     },
   },
+  {
+    slug: 'stage-lyceen-sans-experience',
+    contentSlug: 'how-to-get-internship-no-experience-high-school',
+    title: 'Comment décrocher un stage au lycée sans expérience : le guide complet',
+    shortTitle: 'Stage au lycée sans expérience',
+    description:
+      'Pas d\'expérience professionnelle ? Pas de problème. Cinq étapes concrètes pour obtenir un stage au lycée, valoriser vos compétences et entrer dans le monde du travail dès maintenant.',
+    tldr: 'La solution à la paradoxe de l\'expérience est simple : les employeurs ne cherchent pas votre passé, ils cherchent votre potentiel. Cartographier vos compétences, utiliser un rapport de compétences plutôt qu\'un CV vide, explorer des voies d\'expérience alternatives et envoyer une lettre de candidature personnalisée — ce sont les quatre étapes qui transforment un lycéen sans historique professionnel en candidat crédible.',
+    date: '2026-10-06',
+    dateModified: '2026-10-06',
+    readTime: '10 min de lecture',
+    tags: ['Stage', 'Développement professionnel', 'Expérience professionnelle', 'Lycée', 'Préparation'],
+    faqs: [
+      {
+        q: 'À quel âge peut-on commencer à chercher un stage ?',
+        a: 'En France, les stages en entreprise sont accessibles dès la 3e (14–15 ans) dans le cadre du stage d\'observation obligatoire. Au lycée (15–18 ans), des stages de découverte professionnelle sont également possibles selon les établissements. Plus vous commencez tôt, plus vous avez de temps pour développer votre récit professionnel avant les candidatures en enseignement supérieur.',
+      },
+      {
+        q: 'Que mettre dans mon CV si je n\'ai aucune expérience professionnelle ?',
+        a: 'Renommez la section "Expérience" en "Expérience pertinente" et incluez : des projets scolaires avec des résultats mesurables, des activités en clubs ou du bénévolat, des projets personnels (un blog, un projet de code, un compte de réseaux sociaux que vous gérez) et tout travail informel comme des cours particuliers ou l\'aide dans un commerce familial. Ajoutez un rapport de préparation Eduentry pour fournir une évaluation vérifiée de vos aptitudes.',
+      },
+      {
+        q: 'Un rapport de préparation aide-t-il vraiment les candidatures de stage ?',
+        a: 'Oui. Un rapport certifié par un tiers résout la paradoxe de l\'expérience — vous avez besoin d\'expérience pour obtenir de l\'expérience, mais vous avez besoin d\'une opportunité pour en construire. Un rapport Eduentry fournit aux recruteurs des données mesurables sur votre aptitude, vos connaissances du secteur et vos compétences professionnelles avant même de vous rencontrer.',
+      },
+    ],
+    cta: {
+      heading: 'Découvrez votre niveau de préparation au stage — gratuitement',
+      body: 'Évaluation adaptative gratuite pour les lycéens de plus de 14 ans. Découvrez votre niveau de préparation en aptitude, connaissances du secteur et compétences professionnelles — avec un rapport IA personnalisé.',
+      label: 'Commencer l\'évaluation gratuite',
+      href: 'https://eduentry.ai/fr',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

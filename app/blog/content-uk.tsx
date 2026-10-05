@@ -5365,6 +5365,198 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'how-to-get-internship-no-experience-high-school': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Every year, thousands of high school students hit the same wall: "Experience required." But to gain experience, you need an opportunity first — the famous experience paradox. The good news is that employers, particularly when assessing students of school age, are not evaluating past work history. They are evaluating potential. This guide walks through exactly how a high school student with zero work experience becomes a credible applicant.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        The approach here is straightforward but powerful: make your existing skills visible, prove your potential, and apply through the right channels. Education and Employers — which has run the largest longitudinal studies on employer engagement in UK secondary education — found that young people who had four or more meaningful employer encounters before the age of 16 were five times less likely to be NEET (not in education, employment or training) at age 19. The difference lies not in the volume of experience, but in the habit of starting early.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">For Those Starting from Zero: Map Your Skill Set</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Most high school students who say "I have no experience" mean: I have no paid work history. But employers assessing internship applications define experience far more broadly. Competencies — technical and interpersonal skills — can be acquired outside of any formal professional setting.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Skill mapping is the process of systematically identifying your current strengths. Ask yourself: Which subjects come most naturally to me? Which school projects did I lead? Which topics do I research independently? What do others ask me for help with? These questions point towards four main orientations: technology and data, marketing and communication, business and finance, or creative and design.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Technical Skills</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          If you are strong in maths, science, or computer science, you have signals that align with technology and data. Basic Excel or Google Sheets knowledge, the ability to write a simple Python script, logical problem-solving enthusiasm — these are all valued signals in technology-focused internship applications.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Communication and Marketing Skills</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          If you actively use social media, create content, or write for a school publication or blog, you have a natural advantage in digital marketing, communications, or media roles. These skills are particularly valuable to small businesses — and small firms typically give school-age interns more responsibility than large corporates.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Business and Entrepreneurial Orientations</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          If you are curious about how companies work, find economics and money interesting, or participated in a school enterprise project, you have natural alignment with business and finance. Documenting this interest before an internship application — a presentation, a project summary, an analysis — strengthens your application materially.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Practical tip:</strong> Write your skill map on paper. Three columns: "Things I am good at in school", "Topics I learn about independently", and "Situations where others ask me for help." This list is the raw material of your personalised cover letter.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Use a "Competency Report" Instead of an Empty CV</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          An empty CV creates ambiguity for employers. But what if you submit a measured, verified competency profile instead? This is the most practical way to break the experience paradox.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The traditional CV model is built on listing past work experience. For a student with no work history, this model creates a structural disadvantage. The competency report approach measures current potential — it speaks to what you can do, not what you have done. Eduentry&apos;s free adaptive assessment is designed precisely for this purpose: it produces a personalised readiness report measuring aptitude, domain knowledge, and workplace skills.
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Get your competency report for free</p>
+          <p className="text-sm text-gray-600">20-minute adaptive assessment for students aged 14+. Replace an empty CV with measured evidence of your potential.</p>
+        </div>
+        <Link href="https://eduentry.ai/" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Start free
+        </Link>
+      </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Potential Is a Stronger Sales Argument Than History</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Research examining how UK employers assess school-age internship applications consistently shows that most internship programme managers are evaluating willingness to learn, curiosity, and approach to work — not prior work history. CIPD&apos;s 2023 Early Careers report found that the quality employers most frequently seek in school leavers is resilience and adaptability — both of which are measurable competencies that a readiness assessment can surface.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Including a readiness report in your application package sends this message: "I may not have a track record, but my current capacity has been measured and documented." This approach distinguishes you from thousands of applications that simply state interest without evidence.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Check><strong>Aptitude score</strong> — Analytical thinking, numerical reasoning and verbal skills are measured.</Check>
+          <Check><strong>Domain knowledge</strong> — How well you understand core concepts in your area of interest is assessed.</Check>
+          <Check><strong>Workplace skills</strong> — Data reflecting communication, teamwork and problem-solving tendencies is generated.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">4 Alternative Ways to Gain Experience at School Age</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Beyond traditional full-time internships, there are four powerful experience channels open to high school students. Each provides genuine material for a CV and creates a concrete starting point for internship applications.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Virtual Work Experience and Case Studies</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Platforms like Springpod, Forage, and Bright Network offer virtual work experience programmes designed by real companies — Barclays, Deloitte, Goldman Sachs, Google. These programmes typically take 3–8 hours to complete, involve completable tasks, and award a digital certificate upon completion. They are free, can be done from home, and provide genuine exposure to a real company&apos;s working environment. Completing one is concrete evidence of action — not just interest.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">2. School Clubs, Leadership Roles and Volunteering</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Participating in a school enterprise club, leading a debate team, editing a school newspaper, or volunteering for a local charity — these all develop skills that the professional world values. The key is framing these experiences correctly: not "I was a club member" but "I coordinated a team of ten and ran a three-month project with a defined deliverable."
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Personal Projects: Blog, Code and Social Media</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A project you started and manage independently proves two things to employers: initiative and genuine interest. Examples: a blog on a topic you care about (maintaining a weekly publishing schedule is itself evidence of discipline), a small software project or GitHub repository, a social media account you manage with growth data, or free consulting for a local small business. Document the outcomes — "grew to 200 followers in three months" or "increased weekly readership to 150" are genuinely strong signals.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Job Shadowing: 1–2 Day Placements</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Rather than a formal multi-week internship, arranging a one- or two-day "job shadow" visit is a far more accessible starting point. Professionals reachable through family members, neighbours, or school networks will often agree to a one-day visit. This provides concrete observational material for a personal statement — "I spent a day at a law firm and observed how client consultations are structured" is categorically stronger than abstract statements of career interest.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Strategic advice:</strong> Completing one of these four channels thoroughly is more valuable than starting all four simultaneously. Virtual work experience is the most accessible entry point — complete one this week, then move on to other channels.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The 3 Core Skills Employers Look for in School-Age Candidates</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Research with employers assessing school-age internship applications consistently identifies three core skills that emerge across every sector. These are qualities a student without paid work history can still demonstrate.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Communication and Teamwork</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Clear written and verbal communication is the highest-priority skill employers look for in an internship-age candidate. The most direct way to prove it: the quality of the cover letter itself, interview performance, and — if available — feedback from references. Teamwork experience can be drawn from any school project, club activity, or volunteering context.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Problem-Solving and Analytical Thinking</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          How do you approach an ambiguous situation? What do you do when a project plan stops working? These kinds of behavioural questions make up a large portion of school-age internship interviews. Support your answers with specific examples from school, personal projects, or volunteering — the STAR framework (Situation, Task, Action, Result) works for any context.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Sector-Specific Curiosity</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Employers receive hundreds of generic "I am interested in this field" statements. The applications that stand out are those with demonstrable company research and sector-specific observations. Research the company&apos;s recent projects, follow a sector development, or be able to summarise the company&apos;s value proposition in one sentence. This kind of preparation shows that your interest is real.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>Communication skill: proven through the cover letter and interview performance.</Bullet>
+          <Bullet>Problem-solving: proven through STAR-framed school or personal project examples.</Bullet>
+          <Bullet>Sector curiosity: proven through company research and specific prepared questions.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Consider When Submitting Your First Internship Application</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most critical component of an internship application is the cover letter — not the CV. Employers use the cover letter to answer one question: "Why does this student want this internship at this company?" A generic template cannot answer that question.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">How to Write a Personalised Cover Letter</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          An effective cover letter has three paragraphs. Paragraph one: why you are specifically interested in this company and role — explain with a company-specific observation. Paragraph two: how your existing skills and experiences apply to this position — draw from your skill map. Paragraph three: what you want to learn and why this placement is meaningful for your future goals. Every paragraph should be specific and concrete — avoid generic quality statements like "I am a hard worker."
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">How to Include Your Readiness Report in Applications</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          In the final paragraph of your cover letter, reference the Eduentry readiness report: "To assess my aptitude and readiness independently, I completed the Eduentry assessment. My report identified strengths in [relevant area]." Attach the report as a PDF alongside your CV. This creates a concrete, verifiable differentiator among thousands of similar applications.
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Add a strong foundation to your application</p>
+          <p className="text-sm text-gray-600">Free Eduentry readiness report proves your aptitude to employers before they meet you. Complete in 20 minutes, download instantly.</p>
+        </div>
+        <Link href="https://eduentry.ai/" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Get free report
+        </Link>
+      </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Apply Directly to Small Firms</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Large companies&apos; formal programmes are extremely competitive. Small and medium-sized firms, however, often receive no applications at all — because they do not advertise formal internships. A well-prepared, personalised email to a local marketing agency, law firm, tech startup, or accountancy practice very often gets a positive response. Not a template — a real email: one that shows you have researched the company, explains what you can contribute, and references your readiness report.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">How old do you need to be to apply for an internship?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          In the UK, there is no legal minimum age for work experience beyond general child employment rules. Most formal large-employer work experience programmes accept students from Year 10 (age 14–15). Virtual work experience platforms and personal projects have no age restriction — you can start at 14. The earlier you begin, the stronger the professional narrative you arrive with at university applications.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">What do I write on my CV if I have no experience?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Rename the "Experience" section to "Relevant Experience" and include: school projects with measurable outcomes (competition wins, student council, team captain roles), completed virtual work experience programmes (Springpod, Forage certificates), personal projects, and volunteering. The most important addition: an Eduentry readiness report — this balances the lack of experience with concrete evidence of aptitude.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Does a readiness report really make a difference in internship applications?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yes — particularly when applying without prior experience. When an employer compares two similar applications — one simply stating "I am interested in this field", the other saying "My aptitude assessment placed me in the top quartile for analytical thinking and data literacy" — the second applicant stands out definitively. The report provides evidence, not just a commitment.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Take Your First Step Towards Your Future</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The experience paradox causes many students to give up before they start. But the approach in this guide reverses the paradox: measure your potential, make it visible, and present it through the right channels. Completing a virtual work experience, starting a personal project, or obtaining a competency report — any of these makes the "I have no experience" objection invalid.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Education and Employers&apos; research proves it: starting early — having four or more employer encounters before the age of 16 — reduces the likelihood of being unemployed at 19 by a factor of five. That is an advantage achievable by completing a single virtual work experience programme, starting one personal project, and obtaining a readiness report.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          To arrive at your university applications with a strong narrative, start today. The most practical first step: complete the free Eduentry assessment, get your competency report, and add a concrete foundation to your first application.
+        </p>
+      </section>
+    </>
+  ),
   ...UK_CONTENT_US_GIFTED,
   ...UK_CONTENT_NETHERLANDS,
   ...UK_CONTENT_UAE,
