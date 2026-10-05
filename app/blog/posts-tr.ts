@@ -1651,6 +1651,43 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: 'https://eduentry.ai/tr',
     },
   },
+  {
+    slug: '11-plus-sinavi-nedir-tam-rehber',
+    contentSlug: 'what-is-the-11-plus-exam-complete-guide',
+    title: '11+ Sınavı Nedir? Gramer Okulu Girişi için Tam Ebeveyn Rehberi',
+    shortTitle: '11+ Sınavı Nedir? Eksiksiz Rehber',
+    description:
+      '11+ gramer okulu sınavı hakkında eksiksiz ebeveyn rehberi: neler test edilir, puanlama nasıl çalışır, yapılan 3 büyük hata ve pahalı özel derse para harcamadan önce çocuğunuzun gerçek seviyesini nasıl ölçersiniz.',
+    tldr: '11+ sınavı; İngilizce, Matematik, Sözel Akıl Yürütme ve Sözel Olmayan Akıl Yürütme olmak üzere dört alanı test eder — ancak müfredat bilgisini değil, akıl yürütme yeteneğini ölçer. Okul karnesi 11+ başarısının zayıf bir göstergesidir. En büyük üç hata: taban belirlenmeden pratik yapmak, ham yüzde puanlarını yorumlamak ve erken baskı oluşturmak. Çocuğunuzun gerçek 11+ seviyesini ölçmenin en doğru yolu, PISA ve GCSE\'nin kullandığı aynı psikometrik yöntem olan 2PL IRT uyarlanabilir değerlendirmedir.',
+    date: '2026-10-07',
+    dateModified: '2026-10-07',
+    readTime: '12 dk okuma',
+    tags: ['11+', 'Gramer Okulu', 'İngiltere Eğitim', 'Akademik Değerlendirme', 'Ebeveyn Rehberi', 'Sınav Hazırlığı'],
+    faqs: [
+      {
+        q: '11+ sınavı nedir?',
+        a: '11+ sınavı; İngiltere ve Kuzey İrlanda\'da gramer okulu ve bazı seçici özel okullara giriş için 6. sınıf (10-11 yaş) öğrencileri tarafından alınan seçici bir giriş sınavıdır. İngilizce, Matematik, Sözel Akıl Yürütme ve Sözel Olmayan Akıl Yürütme olmak üzere dört alanı test eder. Sonuçlar, ortalamanın 100, standart sapmanın 15 olduğu bir Standart Yaş Puanı (SAS) olarak bildirilir.',
+      },
+      {
+        q: '11+\'da iyi puan nedir?',
+        a: 'Londra dışındaki çoğu gramer okulu için 111-118 SAS (77. ile 88. yüzdelik dilim arası) yeterlidir. Londra\'nın en rekabetçi gramer okulları — QE Boys (Barnet) ve Henrietta Barnett — 127-132 SAS puanı (ulusal en üst %2-4) gerektirmektedir. 115 ve üzeri bir puan, çocuğu yaş grubunun en üst %16\'sına yerleştirir.',
+      },
+      {
+        q: 'Okul karnesi 11+ başarısını öngörür mü?',
+        a: 'Güvenilir bir biçimde değil. Okul notları müfredat kapsamını ölçer; 11+ ise ana akım ilkokullarda neredeyse hiç öğretilmeyen sözel ve sözel olmayan akıl yürütme yeteneğini ölçer. Sınıfın en iyisi olan bir çocuk, akıl yürütme becerileri gelişmemişse yine de eşik puanının altında kalabilir.',
+      },
+      {
+        q: '11+ hazırlığına ne kadar erken başlanmalıdır?',
+        a: 'Çoğu eğitim danışmanı, sınavdan 12-18 ay önce — 4. veya 5. sınıfın başında — başlamayı tavsiye eder. İlk adım her zaman tanısal bir taban değerlendirmesi olmalı, pratik kağıtları değil. Taban olmadan pratik yapmak, güçlü yönlerde zaman harcamak ve gerçek zayıf noktaları ihmal etmek anlamına gelir.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun gerçek 11+ seviyesini ücretsiz öğrenin',
+      body: '6-17 yaş arası çocuklar için ücretsiz uyarlanabilir akademik değerlendirme. 11+\'da test edilen dört alanda — İngilizce, Matematik, Sözel ve Sözel Olmayan Akıl Yürütme — standart puan alın.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: 'https://eduentry.com/tr',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

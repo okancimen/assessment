@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Bullet, Callout, Check } from './blog-components'
+import { Bullet, Callout, Check, Cross } from './blog-components'
 
 export const ZH_CONTENT: Record<string, React.ReactNode> = {
 
@@ -2865,6 +2865,181 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed">
           要带着有说服力的职业叙事走进大学申请，就从今天开始。最实用的第一步：完成Eduentry免费评估，获取你的能力报告，为第一份申请奠定具体基础。
         </p>
+      </section>
+    </>
+  ),
+
+  'what-is-the-11-plus-exam-complete-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        每年，英格兰各地都有数以千计的家庭经历同样的遭遇：成绩名列前茅、老师赞不绝口、各科都遥遥领先的孩子——在第一次11+模拟考试中，却拿到了一个令人难以置信的分数。这份指南将解释为何会出现这种落差，11+考试究竟考什么，以及如何在投入数月备考之前，准确评估孩子的真实学术水平。
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        一个改变一切的关键认识：11+不考课程知识，它考的是推理能力。两者虽有交集，但并不相同。一个在科学和历史上表现出色的孩子，可能在语言推理方面相当薄弱——只是因为学校从来不需要衡量这一点。考试一开始就会把这个问题暴露出来。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">11+考试是什么？适合谁参加？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          11+是一项选拔性入学考试，由小学六年级（通常为10至11岁）的学生参加，是进入英格兰和北爱尔兰文法学校及部分私立精英学校的基本条件。文法学校是按学术能力招生的公立学校，不以居住地、宗教或社会背景作为录取标准。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">GL Assessment vs CEM：两种考试形式</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在买任何练习册之前，先弄清楚目标学校采用哪家考试机构。两家主要供应商的形式、侧重点和做法各不相同。
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          {[
+            { name: 'GL Assessment', detail: '将英语、数学、语言推理和非语言推理分为独立的试卷，分别计分。用于肯特郡、埃塞克斯、赫特福德郡、伯克郡、特拉福德等地区。题型更易进行针对性备考。' },
+            { name: 'CEM（杜伦）', detail: '将多种能力整合到较少的试卷中，不按科目单独计分。用于白金汉郡、威尔特郡及伯明翰部分学校。专门设计以应对补习——考查难以直接备考的核心认知能力。' },
+          ].map(({ name, detail }) => (
+            <div key={name} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{name}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">报名时间</h3>
+        <p className="text-gray-700 leading-relaxed">
+          报名通常在五年级的四五月开放，六月截止。考试本身在六年级的九月或十月初举行——这意味着备考工作基本上要在这一学年开始前完成。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">11+考试的四大核心领域</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">英语</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          英语部分考查阅读理解、语法与标点、词汇，以及某些情况下的扩展写作或创意写作。英语是四科中最贴近学校课程的，但考试形式带来了特有的挑战：推断类题目、从文本中引用证据的要求，以及在严格时间限制下完成写作。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">数学</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          11+数学大幅超出标准五六年级课程。考查内容包括分数、小数和百分比，比率与比例，基础代数和数列，几何，以及多步骤应用题。关键一点：所有计算均不得使用计算器。心算速度和准确性是必须具备的能力。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">语言推理</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          语言推理是许多家庭第一次接触时最感意外的部分。它通过语言形式考查逻辑思维：词语类比、词汇编码、分类、字母序列、复合词和隐藏词。这些题型均不出现在小学课程中。大多数孩子在第一次模拟练习中只能得到50%至65%——不是因为能力不足，而是完全不熟悉这种形式。好消息是：有针对性的练习后，语言推理的成绩提升很快。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">非语言推理</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          非语言推理通过图形和形状考查抽象空间逻辑：矩阵、序列补全、形状类比、旋转与反射。它更直接地衡量空间认知能力，而非所学的知识。与语言推理不同，非语言推理难以通过练习大幅提升，但熟悉题型可以显著减少不必要的失误。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">关键发现：</strong>在四科中，语言推理通过有针对性的备考通常提升幅度最大，非语言推理最小。备考时间的分配应反映这一规律。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">为什么学校成绩无法预测11+结果</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          学校成绩衡量的是一件事：孩子在当前时间点对国家课程的掌握程度。五年级课程不包括语言推理，不包括抽象图形的补全，也不要求在无计算器的情况下快速准确地完成心算。而这些正是11+大量考查的内容。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          这一规律双向有效。一个在班里看似中等的孩子，可能拥有出色的推理能力，而这种能力在常规课业中从未被调动过。这类孩子往往能从有针对性的11+备考中获益最多。
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          备考开始时真正要问的问题，不是<em>「我的孩子成绩好吗？」</em>，而是：<em>「我的孩子在11+四大领域中，每科的当前标准化百分位是多少？」</em>获得这个答案的唯一途径，是专门针对11+校准的评估，而非学校成绩。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">11+多少分算好？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          11+成绩以<strong>标准化年龄分（SAS）</strong>报告——这是一个以100为全国同龄人平均分、每15分对应一个标准差的量表。115分意味着孩子超越了全国84%的同龄人。
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>伦敦以外大多数文法学校（肯特、埃塞克斯、赫特福德郡、特拉福德）：</strong>SAS 111–118，约全国77th–88th百分位。</Bullet>
+          <Bullet><strong>伦敦精选文法学校（萨顿区）：</strong>SAS 118–125，约全国88th–95th百分位。</Bullet>
+          <Bullet><strong>伦敦竞争最激烈的学校（巴内特——QE Boys、Henrietta Barnett）：</strong>SAS 127–132——全国前2%至4%。</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          重要区分：<em>达到录取分数线</em>与<em>获得录取通知</em>不是一回事。在竞争激烈的学校，达到分数线的孩子未必能获得名额——名额按招生范围内得分最高的学生依次分配。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">备考中最常见的3个错误</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">错误一——没有诊断基准就开始练习</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          最常见的备考模式：父母买来四科各类练习册，从第一页开始刷题。这种模式浪费了大量时间。在翻开第一本书之前，诊断性评估能告诉你哪科需要重点关注、哪些题型存在问题，以及真实的标准化百分位排名。
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Cross>在没有每科基准的情况下开始做完整模拟卷</Cross>
+          <Cross>不管当前水平如何，四科平均分配时间</Cross>
+          <Check>先做诊断性评估。找出2至3个最薄弱的领域。把备考精力集中在那里。</Check>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">错误二——用原始百分比来解读成绩</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          「他这次模拟卷考了78%，这算好吗？」在不知道试卷难度的情况下，这个问题无法回答。这正是为什么11+本身用标准化分数而非百分比报告成绩。标准化分数将原始得分转换为一个同时考虑试卷难度、孩子年龄和大型参照样本表现的数值。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">错误三——提前制造考试焦虑</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          针对10至11岁儿童考试焦虑的研究结论一致：高度焦虑会损害表现，尤其是对工作记忆依赖较强的任务。语言推理和非语言推理测试在很大程度上依赖工作记忆。请以分析而非评判的方式讨论成绩，将较低的初始分数正常化为诊断信息。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如何准确评估孩子的真实水平</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">自适应测试：从每道题获取最大信息</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          计算机自适应测试（CAT）的工作原理与静态测试不同。每道题作答后，系统更新对孩子当前能力的估计，并选择下一道难度最能提供新信息的题目。每道题都有信息价值，没有任何一题因过于简单或过于困难而被浪费。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Eduentry评估的心理测量基础</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry采用<strong>双参数对数斯蒂克模型项目反应理论（2PL IRT）</strong>，结合最大后验概率（MAP）估计进行评分——与PISA、GCSE、CAT4及大多数主流认知测评采用的心理测量方法相同。最终分数映射到GL Assessment使用的标准SAS量表（均值100，标准差15）上。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          这意味着Eduentry上的115分与GL Assessment上的115分直接可比——不是近似，而是在同一量表上的数学等价测量。
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">免费了解孩子的真实11+水平</p>
+          <p className="text-sm text-gray-600">为6至17岁学生提供的免费自适应学术评估，涵盖11+四大核心领域的标准化分数。</p>
+        </div>
+        <Link href="https://eduentry.com" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          开始评估
+        </Link>
+      </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">建立有节奏的备考计划，避免倦怠</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          11+备考数据清晰表明：在较长时间内坚持适度规律的练习，效果远优于短期高强度冲刺。适合大多数家庭的方案遵循12至18个月的备考周期。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">四年级/五年级初：打好基础</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          完成诊断性基准评估。在轻松的环境中与孩子一起分析结果。找出2至3个最薄弱领域。开始每天20至25分钟的针对性练习：语言推理方面扩充词汇量，数学方面加强心算，非语言推理方面练习视觉图形。养成英语每日阅读的习惯。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">五年级：有结构的练习</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          针对最薄弱的科目引入练习册。初期不设时间限制，先熟悉题型，再逐步加入计时要求。每3至4个月用标准化诊断重新评估一次。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">五年级暑假至六年级九月：模拟考试阶段</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          开始在计时、模拟考场条件下完成整套模拟卷。每周2至3套是合适的量。每套之后分析哪些类型的题目出错了。
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">最后一周：停止高强度练习</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          考试前一周，停止大量刷题。这一周的目标是休息、维持状态和建立信心。一个坚持了12至18个月备考计划的孩子已经做好了充分准备。
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">最重要的第一步：</strong>在任何练习册、补习老师或模拟卷之前——先完成一次免费诊断评估，准确了解孩子目前的水平。所有其他事情都从这个数据点出发。
+        </Callout>
       </section>
     </>
   ),

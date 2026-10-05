@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { Bullet, Callout, Check } from './blog-components'
+import { Bullet, Callout, Check, Cross } from './blog-components'
 
 export const FR_CONTENT: Record<string, React.ReactNode> = {
 
@@ -3727,6 +3727,181 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed">
           Pour arriver aux candidatures universitaires avec un récit solide, commencez aujourd'hui. La première étape la plus pratique : complétez l'évaluation gratuite Eduentry, obtenez votre rapport de compétences et ajoutez une base concrète à votre première candidature.
         </p>
+      </section>
+    </>
+  ),
+
+  'what-is-the-11-plus-exam-complete-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Chaque année, des familles à travers l&apos;Angleterre vivent la même expérience : un enfant premier de classe, constamment félicité par ses professeurs et visiblement en avance dans toutes les matières — qui passe ensuite son premier examen blanc du 11+ et obtient un résultat qui semble impossible. Ce guide explique pourquoi ce décalage se produit, ce que le 11+ mesure réellement et comment évaluer précisément le niveau de votre enfant avant de vous engager dans des mois de préparation.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        L&apos;information clé qui change tout : le 11+ n&apos;évalue pas les connaissances du programme scolaire. Il évalue la capacité de raisonnement. Ces deux aspects se recoupent — mais ne sont pas identiques. Un enfant qui excelle en sciences et en histoire de CE2 peut avoir un profil de raisonnement verbal peu développé que l&apos;école n&apos;a jamais eu besoin de mesurer. L&apos;examen le révélera immédiatement.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Qu&apos;est-ce que l&apos;examen 11+ et à qui s&apos;adresse-t-il ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le 11+ est un examen d&apos;entrée sélectif passé par les élèves de dernière année de primaire (généralement 10-11 ans) comme principale condition d&apos;accès aux grammar schools et à certaines écoles indépendantes sélectives en Angleterre et en Irlande du Nord. Les grammar schools sont des établissements publics gratuits qui sélectionnent leurs élèves selon leurs capacités académiques plutôt que selon leur zone géographique ou leur statut social.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">GL Assessment vs CEM : les deux formats d&apos;examen</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Avant d&apos;acheter le moindre cahier d&apos;exercices, identifiez quel organisme d&apos;évaluation utilise l&apos;école visée. Les deux principaux prestataires ont des formats, des priorités et des approches différents — et se préparer pour l&apos;un ne prépare pas automatiquement à l&apos;autre.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          {[
+            { name: 'GL Assessment', detail: 'Divise l\'anglais, les mathématiques, le raisonnement verbal et non verbal en épreuves distinctes notées séparément. Utilisé dans le Kent, l\'Essex, le Hertfordshire, le Berkshire, Trafford et la plupart des zones avec grammar schools. Les types de questions sont plus apprenables par un entraînement ciblé.' },
+            { name: 'CEM (Durham)', detail: 'Intègre plusieurs compétences dans moins d\'épreuves sans les étiqueter par matière. Utilisé dans le Buckinghamshire, le Wiltshire et certaines écoles de Birmingham. Conçu pour résister aux cours particuliers — il évalue la capacité cognitive sous-jacente d\'une façon plus difficile à préparer directement.' },
+          ].map(({ name, detail }) => (
+            <div key={name} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{name}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Inscription et calendrier</h3>
+        <p className="text-gray-700 leading-relaxed">
+          Les inscriptions ouvrent généralement en avril-mai de la 5e année et ferment en juin. L&apos;examen lui-même est administré en septembre ou début octobre de la dernière année de primaire — ce qui signifie que la préparation doit être essentiellement terminée avant le début de cette année.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les 4 piliers clés évalués dans le 11+</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Anglais</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La section anglais évalue la compréhension de texte, la grammaire et la ponctuation, le vocabulaire et, dans certains cas, l&apos;expression écrite. L&apos;anglais est le plus proche du programme scolaire parmi les quatre matières, mais le format de l&apos;examen introduit des défis spécifiques : questions d&apos;inférence, exigences de citation de preuves et rédaction sous contrainte de temps stricte.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Mathématiques</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les mathématiques du 11+ vont bien au-delà du programme standard. Les thèmes incluent fractions, décimales et pourcentages, ratio et proportion, algèbre de base et suites, géométrie et résolution de problèmes en plusieurs étapes. Le calcul mental sans calculatrice est indispensable — la vitesse et la précision sont essentielles.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Raisonnement verbal</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le raisonnement verbal (RV) est la section qui surprend le plus les familles. Il évalue la pensée logique à travers le langage : analogies de mots, codes de mots, classification, séquences de lettres, mots composés et mots cachés. Aucun de ces types de questions n&apos;apparaît au programme de l&apos;école primaire. La plupart des enfants obtiennent entre 50 et 65 % à leur premier examen blanc de RV — non parce qu&apos;ils manquent de capacité, mais parce que le format leur est totalement inconnu. Bonne nouvelle : les scores en RV s&apos;améliorent rapidement avec un entraînement ciblé.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Raisonnement non verbal</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le raisonnement non verbal (RNV) évalue la logique spatiale abstraite à l&apos;aide de formes et de motifs : matrices, compléter des séries, analogies de formes, rotations et réflexions. Il mesure la capacité spatiale-cognitive plus directement que les connaissances acquises. Contrairement au RV, le RNV est plus difficile à améliorer significativement par la pratique. Cependant, la familiarité avec les types de questions réduit considérablement les erreurs inutiles.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Point clé :</strong> Parmi les quatre matières, le raisonnement verbal montre généralement la plus grande amélioration avec une préparation ciblée. Le raisonnement non verbal montre la plus faible. La répartition du temps de préparation doit le refléter.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi le bulletin scolaire ne prédit pas le résultat du 11+</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les notes scolaires mesurent une seule chose : dans quelle mesure un enfant a maîtrisé le programme national à ce jour. Le programme de 5e année ne comprend pas le raisonnement verbal. Il ne comprend pas la complétion de motifs abstraits. Il ne requiert pas de calcul mental sous pression sans calculatrice. Le 11+ évalue tout cela extensivement.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;implication fonctionne dans les deux sens. Un enfant qui semble moyen en classe peut avoir une capacité de raisonnement sous-jacente exceptionnelle que le travail scolaire n&apos;a jamais nécessité. Ces enfants sont souvent parmi les plus grands bénéficiaires d&apos;une préparation ciblée au 11+.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          La bonne question au début de la préparation n&apos;est pas <em>« mon enfant se débrouille-t-il bien à l&apos;école ? »</em> mais : <em>« quelle est la position percentile standardisée actuelle de mon enfant dans chacun des quatre domaines du 11+ ? »</em> La seule façon d&apos;obtenir cette deuxième réponse est une évaluation calibrée pour le 11+.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Quel est un bon score au 11+ ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le 11+ rapporte les résultats sous forme de <strong>Score d&apos;Âge Standardisé (SAS)</strong> — une échelle où 100 est la moyenne de la population et chaque incrément de 15 points représente un écart-type. Un score de 115 correspond au 84e percentile : mieux que 84 % des enfants du même âge au niveau national.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>La plupart des grammar schools hors Londres (Kent, Essex, Hertfordshire, Trafford) :</strong> SAS 111-118, environ 77e-88e percentile national.</Bullet>
+          <Bullet><strong>Grammar schools sélectives de Londres (zone Sutton) :</strong> SAS 118-125, environ 88e-95e percentile.</Bullet>
+          <Bullet><strong>Les plus compétitives de Londres (Barnet — QE Boys, Henrietta Barnett) :</strong> SAS 127-132 — top 2-4% national.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Une distinction cruciale : une <em>note de passage</em> (atteindre le seuil) n&apos;est pas la même chose que <em>recevoir une offre de place</em>. Dans les écoles très demandées, un enfant qui atteint le seuil peut ne pas recevoir de place — celles-ci sont attribuées aux enfants ayant les meilleures notes dans la zone de captage.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les 3 erreurs les plus fréquentes des parents</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Erreur 1 — S&apos;entraîner sans diagnostic préalable</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le schéma de préparation le plus courant : les parents achètent des cahiers d&apos;exercices dans les quatre matières et commencent à travailler depuis la première page. Ce schéma gaspille un temps de préparation considérable. Avant d&apos;ouvrir un seul cahier, une évaluation diagnostique identifie quelles matières nécessitent une attention prioritaire.
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Cross>Commencer des examens blancs sans une base de référence par matière</Cross>
+          <Cross>Consacrer le même temps aux quatre matières indépendamment du niveau actuel</Cross>
+          <Check>Faites d&apos;abord une évaluation diagnostique. Identifiez les 2-3 zones les plus faibles. Concentrez la préparation là.</Check>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Erreur 2 — Interpréter des pourcentages bruts</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          « Il a obtenu 78% à cet examen blanc — c&apos;est bien ? » Il est impossible de répondre sans connaître la difficulté de l&apos;examen. C&apos;est pourquoi le 11+ lui-même rapporte les résultats sous forme de score standardisé et non de pourcentage. Un score standardisé convertit une note brute en un nombre qui tient compte de la difficulté du test, de l&apos;âge de l&apos;enfant et des performances d&apos;une grande population de référence.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Erreur 3 — Créer de l&apos;anxiété avant l&apos;examen</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La recherche sur l&apos;anxiété aux examens chez les enfants de 10-11 ans est sans équivoque : l&apos;anxiété élevée nuit aux performances, notamment dans les tâches de mémoire de travail. Les tests de raisonnement verbal et non verbal dépendent fortement de la mémoire de travail. Maintenez les échanges sur les résultats analytiques plutôt qu&apos;évaluatifs. Normalisez les scores initiaux bas comme information diagnostique.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment évaluer avec précision le niveau réel de votre enfant</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Les tests adaptatifs : information maximale de chaque question</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un Test Adaptatif Informatisé (TAI) fonctionne différemment d&apos;un examen blanc statique. Après chaque question, le système met à jour son estimation des capacités de l&apos;enfant et sélectionne la question suivante au niveau de difficulté qui fournit le plus d&apos;informations nouvelles. Chaque question est informative ; aucune n&apos;est gaspillée aux extrêmes.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">La base psychométrique de l&apos;évaluation Eduentry</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry utilise la <strong>Théorie de Réponse à l&apos;Item Logistique à 2 Paramètres (TRI 2PL)</strong> avec estimation Maximum A Posteriori (MAP) — le même cadre psychométrique que PISA, GCSE, CAT4 et la plupart des évaluations cognitives professionnelles majeures. La note finale est placée sur l&apos;échelle SAS standard (moyenne 100, ET 15) utilisée par GL Assessment.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cela signifie qu&apos;une note de 115 chez Eduentry est directement comparable à une note de 115 chez GL Assessment — pas une approximation, mais une mesure mathématiquement équivalente sur la même échelle.
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Découvrez le vrai niveau 11+ de votre enfant — gratuitement</p>
+          <p className="text-sm text-gray-600">Évaluation académique adaptative gratuite pour les enfants de 6 à 17 ans. Score standardisé dans les quatre matières du 11+.</p>
+        </div>
+        <Link href="https://eduentry.com" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Commencer l&apos;évaluation
+        </Link>
+      </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Construire une routine de préparation structurée sans s&apos;épuiser</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les données sur la préparation au 11+ sont cohérentes : une pratique régulière et modérée sur une longue période produit de meilleurs résultats que le bachotage intensif. Le cadre qui fonctionne pour la plupart des familles suit un arc de 12-18 mois.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">CM1 / début CM2 : construire les bases</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Réalisez une évaluation diagnostique de référence. Passez les résultats en revue avec votre enfant dans un contexte sans pression. Identifiez les 2-3 matières les plus faibles. Commencez 20-25 minutes de pratique quotidienne ciblée dans ces domaines : enrichissement du vocabulaire pour le RV, calcul mental pour les maths, travail sur les motifs visuels pour le RNV. Encouragez la lecture quotidienne pour l&apos;anglais.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">CM2 : pratique structurée</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Introduisez des cahiers de pratique spécifiques par matière pour les zones les plus faibles. Commencez sans contrainte de temps pour apprendre les types de questions, puis ajoutez progressivement des limites de temps. Réévaluez avec un test diagnostique standardisé tous les 3-4 mois.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Été CM2 – septembre 6e : phase d&apos;examens blancs</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Commencez des examens complets dans des conditions chronométrées. 2-3 examens blancs par semaine est le volume approprié. Après chaque examen, analysez quels types de questions ont généré des erreurs.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">La dernière semaine : arrêtez la pratique intensive</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dans la semaine précédant l&apos;examen, arrêtez la pratique intensive. L&apos;objectif de cette semaine est le repos, la routine et la confiance. Un enfant qui a suivi un programme de préparation de 12-18 mois est aussi préparé qu&apos;il peut l&apos;être.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">La première étape la plus importante :</strong> Avant tout cahier d&apos;exercices, tuteur ou examen blanc — faites une évaluation diagnostique gratuite pour comprendre exactement où se trouve votre enfant. Tout le reste découle de ce point de données.
+        </Callout>
       </section>
     </>
   ),

@@ -2426,6 +2426,42 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: 'https://eduentry.ai/',
     },
   },
+  {
+    slug: 'what-is-the-11-plus-exam-complete-guide',
+    title: 'What Is the 11+ Exam? The Complete Parent\'s Guide to Grammar School Entry',
+    shortTitle: 'What Is the 11+ Exam?',
+    description:
+      'The complete parent\'s guide to the 11+ grammar school exam: what it tests, how scoring works, the 3 biggest preparation mistakes, and how to find your child\'s real academic level before paying for tutors.',
+    tldr: 'The 11+ tests English, Maths, Verbal Reasoning, and Non-Verbal Reasoning — but it measures reasoning ability, not curriculum knowledge. School grades are a poor predictor of 11+ performance. The three biggest preparation mistakes are drilling without a baseline, interpreting raw percentage marks, and creating early exam anxiety. The most accurate way to benchmark your child\'s real 11+ level is a 2PL IRT adaptive assessment — the same psychometric method used by PISA and GCSE.',
+    date: '2026-10-07',
+    dateModified: '2026-10-07',
+    readTime: '12 min read',
+    tags: ['11+', 'Grammar Schools', 'UK Education', 'Academic Assessment', 'Parent Guide', 'Exam Preparation'],
+    faqs: [
+      {
+        q: 'What is the 11+ exam?',
+        a: 'The 11+ is a selective entrance exam taken by children in Year 6 (aged 10–11) for grammar school and some independent selective school entry in England and Northern Ireland. It tests four areas — English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning — and results are reported as a Standardised Age Score (SAS) where 100 is the mean and 15 is one standard deviation.',
+      },
+      {
+        q: 'What is a good score on the 11+?',
+        a: 'A score of 111–118 SAS (77th–88th percentile) is sufficient for most grammar schools outside London. The most competitive London grammar schools — Queen Elizabeth\'s Boys (Barnet) and Henrietta Barnett — require scores of 127–132 SAS (top 2–4% nationally). A score of 115+ puts a child in the top 16% of their age group.',
+      },
+      {
+        q: 'Do school grades predict 11+ performance?',
+        a: 'Not reliably. School grades measure curriculum coverage; the 11+ measures abstract reasoning ability, particularly verbal and non-verbal reasoning, which is almost never explicitly taught in mainstream primary schools. A child who is top of their class can still score below the grammar school threshold if their reasoning skills are underdeveloped.',
+      },
+      {
+        q: 'How early should I start 11+ preparation?',
+        a: 'Most educational consultants recommend beginning 12–18 months before the exam — in Year 4 or early Year 5. The first step should always be a diagnostic baseline assessment, not practice papers. Practising without a baseline means drilling on strengths and neglecting genuine weak points.',
+      },
+    ],
+    cta: {
+      heading: 'Find out your child\'s real 11+ level — free',
+      body: 'Free adaptive academic assessment for children aged 6–17. Get a standardised score in English, Maths, Verbal and Non-Verbal Reasoning — the four domains tested in the 11+.',
+      label: 'Start free assessment',
+      href: 'https://eduentry.com',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

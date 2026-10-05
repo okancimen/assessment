@@ -1247,6 +1247,39 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: 'https://eduentry.ai/es',
     },
   },
+  {
+    slug: 'que-es-el-examen-11-plus-guia-completa',
+    contentSlug: 'what-is-the-11-plus-exam-complete-guide',
+    title: '¿Qué es el examen 11+ del Reino Unido? Guía completa para padres sobre el acceso a grammar schools',
+    shortTitle: '¿Qué es el examen 11+?',
+    description:
+      'Guía completa del examen 11+ para padres: qué evalúa, cómo funciona la puntuación, los 3 errores más comunes en la preparación y cómo medir el nivel real de tu hijo antes de gastar en tutores privados.',
+    tldr: 'El examen 11+ evalúa inglés, matemáticas, razonamiento verbal y razonamiento no verbal — pero mide capacidad de razonamiento, no conocimientos del currículo. Las notas escolares no predicen bien el rendimiento en el 11+. Los tres errores más comunes son: practicar sin diagnóstico previo, interpretar porcentajes brutos y generar ansiedad prematura. La forma más precisa de evaluar el nivel real de tu hijo es una prueba adaptativa 2PL IRT — el mismo método psicométrico que usan PISA y GCSE.',
+    date: '2026-10-07',
+    dateModified: '2026-10-07',
+    readTime: '12 min de lectura',
+    tags: ['11+', 'Grammar Schools', 'Educación Reino Unido', 'Evaluación Académica', 'Guía para Padres', 'Preparación Examen'],
+    faqs: [
+      {
+        q: '¿Qué es el examen 11+?',
+        a: 'El 11+ es un examen de acceso selectivo que realizan los niños de 6.º de primaria (10-11 años) para entrar en grammar schools y algunas escuelas independientes selectivas en Inglaterra e Irlanda del Norte. Evalúa cuatro áreas — inglés, matemáticas, razonamiento verbal y razonamiento no verbal — y los resultados se expresan como Puntuación de Edad Estandarizada (SAS), donde 100 es la media y 15 es una desviación típica.',
+      },
+      {
+        q: '¿Qué es una buena puntuación en el 11+?',
+        a: 'Una puntuación de 111-118 SAS (percentil 77-88) es suficiente para la mayoría de las grammar schools fuera de Londres. Las más competitivas de Londres — QE Boys (Barnet) y Henrietta Barnett — exigen 127-132 SAS (top 2-4% nacional). Un 115+ coloca al niño en el 16% superior de su grupo de edad.',
+      },
+      {
+        q: '¿Predicen las notas escolares el rendimiento en el 11+?',
+        a: 'No de forma fiable. Las notas escolares miden el conocimiento del currículo; el 11+ mide la capacidad de razonamiento abstracto — especialmente verbal y no verbal — que casi nunca se enseña explícitamente en primaria. Un niño con las mejores notas de clase puede quedarse por debajo del umbral si sus habilidades de razonamiento no están desarrolladas.',
+      },
+    ],
+    cta: {
+      heading: 'Descubre el nivel real de tu hijo en el 11+ — gratis',
+      body: 'Evaluación académica adaptativa gratuita para niños de 6 a 17 años. Obtén una puntuación estandarizada en inglés, matemáticas, razonamiento verbal y no verbal — los cuatro dominios del 11+.',
+      label: 'Iniciar evaluación gratuita',
+      href: 'https://eduentry.com',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

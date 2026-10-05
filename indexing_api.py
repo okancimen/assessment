@@ -345,6 +345,14 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/ar/blog/kayfa-tajid-staj-bila-khibra-thanawy",
     f"{BASE_URL}/ru/blog/kak-nayti-stazh-bez-opyta-shkolnik",
     f"{BASE_URL}/zh/blog/gaozhong-wu-jingyan-shixi-zhinan",
+    # 11+ exam complete guide — all 7 locales
+    f"{BASE_URL}/blog/what-is-the-11-plus-exam-complete-guide",
+    f"{BASE_URL}/tr/blog/11-plus-sinavi-nedir-tam-rehber",
+    f"{BASE_URL}/es/blog/que-es-el-examen-11-plus-guia-completa",
+    f"{BASE_URL}/fr/blog/quest-ce-que-lexamen-11-plus-guide-complet",
+    f"{BASE_URL}/ar/blog/ma-hwa-imtihan-11-plus-dalil-shamil",
+    f"{BASE_URL}/ru/blog/chto-takoe-ekzamen-11-plus-polnoye-rukovodstvo",
+    f"{BASE_URL}/zh/blog/11-plus-kaoshi-wanzheng-zhinan",
     # ── Static pages (EN) ─────────────────────────────────────────────────────
     BASE_URL,
     f"{BASE_URL}/11-plus",

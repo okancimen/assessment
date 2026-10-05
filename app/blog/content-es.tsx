@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Bullet, Callout, Check } from './blog-components'
+import { Bullet, Callout, Check, Cross } from './blog-components'
 
 export const ES_CONTENT: Record<string, React.ReactNode> = {
 
@@ -3799,6 +3799,187 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed">
           Para llegar a las solicitudes universitarias con una narrativa sólida, empieza hoy. El primer paso más práctico: completa la evaluación gratuita de Eduentry, obtén tu informe de competencias y añade una base concreta a tu primera solicitud.
         </p>
+      </section>
+    </>
+  ),
+
+  'what-is-the-11-plus-exam-complete-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Cada año, familias de toda Inglaterra viven la misma experiencia: un niño que es el primero de su clase, constantemente elogiado por sus profesores y aparentemente adelantado en todas las asignaturas — que luego hace su primer examen de práctica del 11+ y obtiene una puntuación que parece imposible. Esta guía explica por qué ocurre esa desconexión, qué mide realmente el 11+ y cómo evaluar con precisión el nivel real de tu hijo antes de comprometerte con meses de preparación.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        La conclusión clave que lo cambia todo: el 11+ no evalúa conocimientos del currículo. Evalúa capacidad de razonamiento. Estas se superponen, pero no son lo mismo. Un niño que destaca en ciencias e historia de 5.º curso puede tener un perfil de razonamiento verbal poco desarrollado que el colegio nunca ha necesitado medir. El examen lo revelará de inmediato.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué es el examen 11+ y para quién es?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El 11+ es un examen de acceso selectivo que realizan los niños de 6.º de primaria (generalmente 10-11 años) como requisito principal para entrar en grammar schools y algunas escuelas independientes selectivas en Inglaterra e Irlanda del Norte. Su nombre deriva de la práctica histórica de aplicarlo a los once años (o "once más"). Hoy es el mecanismo por el cual las escuelas estatales académicamente selectivas identifican a sus alumnos.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las grammar schools son colegios estatales gratuitos que seleccionan a sus alumnos en función de la capacidad académica, no de la geografía, la religión ni el nivel socioeconómico. Representan un segmento pequeño pero intensamente competitivo del sistema educativo secundario británico.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">GL Assessment vs CEM: los dos formatos del examen</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Antes de comprar un solo cuaderno de ejercicios o contratar un tutor, identifica qué institución de evaluación usa el colegio al que aspiras. Los dos proveedores principales tienen formatos, énfasis y enfoques distintos.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          {[
+            { name: 'GL Assessment', detail: 'Divide inglés, matemáticas, razonamiento verbal y no verbal en exámenes independientes calificados por separado. Se usa en Kent, Essex, Hertfordshire, Berkshire, Trafford y la mayoría de zonas con grammar schools. Los tipos de preguntas son más aprendibles con práctica dirigida.' },
+            { name: 'CEM (Durham)', detail: 'Integra múltiples competencias en menos exámenes sin etiquetarlos por asignatura. Se usa en Buckinghamshire, Wiltshire y algunos colegios de Birmingham. Diseñado específicamente para resistir la preparación con tutores: evalúa la capacidad cognitiva subyacente de una forma más difícil de preparar directamente.' },
+          ].map(({ name, detail }) => (
+            <div key={name} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{name}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Inscripción y plazos</h3>
+        <p className="text-gray-700 leading-relaxed">
+          La inscripción suele abrirse en abril-mayo de 5.º curso y cierra en junio. El examen se realiza en septiembre u octubre de 6.º curso — esto significa que la preparación debe estar prácticamente terminada antes de que empiece el último año de primaria.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Los 4 pilares clave del examen 11+</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Inglés</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La sección de inglés evalúa comprensión lectora, gramática y puntuación, vocabulario y, en algunos casos, escritura creativa o extensa. Es la asignatura más cercana al currículo escolar, pero el formato del examen introduce retos específicos: preguntas de comprensión basadas en inferencias, requisitos de citación de evidencias y escritura bajo estrictas limitaciones de tiempo.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Matemáticas</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las matemáticas del 11+ van mucho más allá del currículo estándar de 5.º-6.º curso. Los temas incluyen fracciones, decimales y porcentajes, razón y proporción, álgebra básica y sucesiones, geometría y resolución de problemas en varios pasos. Críticamente, todos los cálculos se realizan sin calculadora. La velocidad y precisión del cálculo mental son esenciales.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Razonamiento verbal</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El razonamiento verbal (RV) es la sección que más sorprende a las familias. Evalúa el pensamiento lógico expresado a través del lenguaje: analogías de palabras, códigos de palabras, clasificación, secuencias de letras, palabras compuestas y palabras ocultas. Ninguno de estos tipos de preguntas aparece en el currículo de primaria. La mayoría de los niños obtienen entre el 50-65% en su primer examen de práctica, no porque les falte la capacidad subyacente, sino porque el formato es completamente desconocido. La buena noticia: los resultados en RV mejoran rápidamente con práctica estructurada.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Razonamiento no verbal</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El razonamiento no verbal (RNV) evalúa la lógica espacial abstracta mediante patrones y formas: matrices, completar series, analogías de formas, rotaciones y reflexiones. Mide la capacidad espacial-cognitiva más directamente que el conocimiento aprendido. A diferencia del RV, el RNV es más difícil de mejorar significativamente con práctica: la capacidad de razonamiento espacial subyacente se desarrolla gradualmente. Sin embargo, la familiaridad con los tipos de preguntas reduce considerablemente los errores innecesarios.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Clave:</strong> De las cuatro asignaturas, el razonamiento verbal suele mostrar la mayor mejora con preparación dirigida. El razonamiento no verbal muestra la menor. La distribución del tiempo de preparación debería reflejar esto.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Por qué las notas escolares no predicen el resultado del 11+</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las notas escolares miden una sola cosa: qué tan bien ha dominado un niño el currículo nacional hasta la fecha. El currículo de 5.º curso no incluye razonamiento verbal. No incluye completar patrones abstractos. No requiere aritmética mental bajo presión de tiempo sin calculadora. El 11+ evalúa extensamente todo esto.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La implicación funciona en ambas direcciones. Un niño que parece promedio en el aula puede tener una capacidad de razonamiento excepcional que el trabajo escolar estándar simplemente nunca ha requerido. Estos niños suelen ser los que más se benefician de una preparación específica para el 11+: la capacidad siempre estuvo ahí, simplemente no se había medido correctamente.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          La pregunta correcta al inicio de la preparación no es <em>"¿le va bien a mi hijo en el colegio?"</em>, sino: <em>"¿cuál es la posición percentil estandarizada actual de mi hijo en cada uno de los cuatro dominios del 11+?"</em> La única forma de obtener esta segunda respuesta es mediante una evaluación calibrada para el 11+, no una nota escolar.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué es una buena puntuación en el 11+?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El 11+ informa los resultados como una <strong>Puntuación de Edad Estandarizada (SAS)</strong>, donde 100 es la media de la población y cada incremento de 15 puntos representa una desviación típica. Una puntuación de 115 corresponde al percentil 84: mejor que el 84% de los niños de su edad a nivel nacional.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>La mayoría de grammar schools fuera de Londres (Kent, Essex, Hertfordshire, Trafford):</strong> SAS 111-118, aproximadamente percentil 77-88 nacional.</Bullet>
+          <Bullet><strong>Grammar schools selectivas de Londres (zona Sutton):</strong> SAS 118-125, aproximadamente percentil 88-95.</Bullet>
+          <Bullet><strong>Las más competitivas de Londres (Barnet — QE Boys, Henrietta Barnett):</strong> SAS 127-132 — top 2-4% nacional.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Una distinción crítica: una <em>nota de aprobado</em> (alcanzar el umbral) no es lo mismo que <em>recibir una oferta de plaza</em>. En colegios con exceso de demanda, un niño que alcanza el umbral puede no recibir una plaza — estas se asignan a los niños con mayor puntuación dentro del área de captación.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Los 3 errores más comunes de los padres durante la preparación</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Error 1 — Practicar sin un diagnóstico previo</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El patrón de preparación más habitual: los padres compran una pila de cuadernos de práctica en las cuatro asignaturas y empiezan a trabajar desde la primera página. El niño practica con regularidad. El progreso parece tangible. Luego, un examen de prueba revela que una asignatura — a menudo la que recibió menos atención — es dramáticamente más débil. Este patrón desperdicia una enorme cantidad de tiempo de preparación.
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Cross>Empezar exámenes de práctica sin una línea base por asignatura</Cross>
+          <Cross>Dedicar el mismo tiempo a las cuatro asignaturas independientemente del rendimiento actual</Cross>
+          <Check>Haz primero una evaluación diagnóstica. Identifica las 2-3 áreas más débiles. Enfoca la preparación ahí.</Check>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Error 2 — Interpretar porcentajes de respuestas correctas</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          "Sacó un 78% en ese examen de práctica, ¿es bueno?" Es imposible responder sin saber qué tan difícil era el examen. Un 78% en un examen fácil puede representar un rendimiento más débil que un 65% en uno difícil. Por eso el propio 11+ informa los resultados como puntuación estandarizada y no como porcentaje. Una puntuación estandarizada convierte una calificación bruta en un número que tiene en cuenta la dificultad del test, la edad del niño y el rendimiento de una gran población de referencia.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Error 3 — Generar ansiedad antes del examen</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La investigación sobre la ansiedad ante exámenes en niños de 10-11 años es inequívoca: la ansiedad alta perjudica el rendimiento, especialmente en tareas de memoria de trabajo. Los tests de razonamiento verbal y no verbal dependen intensamente de la memoria de trabajo. Mantén las conversaciones sobre los resultados analíticas — "¿qué tipos de preguntas te resultaron más difíciles?" — en lugar de evaluativas. Normaliza los resultados bajos iniciales como información diagnóstica.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo evaluar con precisión el nivel real de tu hijo en el 11+</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Tests adaptativos: la máxima información de cada pregunta</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un Test Adaptativo Informatizado (TAI) funciona de forma diferente a un examen de práctica estático. Después de cada pregunta, el sistema actualiza la estimación de la capacidad actual del niño y selecciona la siguiente pregunta al nivel de dificultad que proporciona la mayor información nueva. Cada pregunta es informativa; ninguna se desperdicia en los extremos demasiado fáciles o demasiado difíciles.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El resultado es una estimación de capacidad más precisa usando menos preguntas que un examen estático. Un TAI alcanza la misma precisión de medición que un examen estático de 45 preguntas usando solo 15-20 preguntas adaptativas por asignatura.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">La base psicométrica de la evaluación Eduentry</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry utiliza la <strong>Teoría de Respuesta al Ítem Logística de 2 Parámetros (2PL TRI)</strong> con estimación Máxima A Posteriori (MAP) — el mismo marco psicométrico que PISA, GCSE, CAT4 y la mayoría de las evaluaciones cognitivas profesionales. Cada pregunta tiene parámetros calibrados de dificultad y poder discriminativo. La puntuación final se sitúa en la escala SAS estándar (media 100, DT 15) utilizada por GL Assessment.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Esto significa que una puntuación de 115 en Eduentry es directamente comparable a una puntuación de 115 en GL Assessment — no una aproximación, sino una medida matemáticamente equivalente en la misma escala.
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Descubre el nivel real de tu hijo en el 11+ — gratis</p>
+          <p className="text-sm text-gray-600">Evaluación académica adaptativa gratuita para niños de 6 a 17 años. Puntuación estandarizada en las cuatro asignaturas del 11+.</p>
+        </div>
+        <Link href="https://eduentry.com" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Iniciar evaluación
+        </Link>
+      </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Construir una rutina de preparación estructurada sin agotarse</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La evidencia sobre la preparación para el 11+ es consistente: la práctica moderada y regular durante un período largo produce mejores resultados que el estudio intensivo a corto plazo. El marco que funciona para la mayoría de las familias sigue un arco de 12-18 meses.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">4.º curso / principios de 5.º: construir las bases</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Realiza una evaluación diagnóstica de referencia. Revisa los resultados con tu hijo en un contexto sin presión. Identifica las 2-3 asignaturas más débiles. Comienza 20-25 minutos de práctica diaria dirigida en esas áreas: ampliación de vocabulario para RV, aritmética mental para matemáticas, trabajo con patrones visuales para RNV. Fomenta la lectura diaria para inglés.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">5.º curso: práctica estructurada</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Introduce cuadernos de práctica específicos por asignatura para las áreas más débiles. Empieza con ejercicios sin tiempo para aprender los tipos de preguntas, luego añade gradualmente límites de tiempo para desarrollar la velocidad. Vuelve a evaluar con una prueba diagnóstica estandarizada cada 3-4 meses.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Verano de 5.º – septiembre de 6.º: fase de exámenes de práctica</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Empieza exámenes completos en condiciones cronometradas de examen. 2-3 exámenes de práctica por semana es el volumen adecuado; más produce rendimientos decrecientes y ansiedad creciente. Después de cada examen, analiza qué tipos de preguntas generaron errores — aquí es donde está el valor de la preparación.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">La última semana: detén la práctica intensiva</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En la semana previa al examen, detén la práctica intensiva de exámenes. El objetivo de esta semana es descanso, rutina y confianza. Un niño que ha seguido un programa de preparación de 12-18 meses está tan preparado como puede estar.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">El primer paso más importante:</strong> Antes de cualquier libro de ejercicios, tutor o examen de práctica — haz una evaluación diagnóstica gratuita para entender exactamente dónde está tu hijo en este momento. Todo lo demás parte de ese dato.
+        </Callout>
       </section>
     </>
   ),

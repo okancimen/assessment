@@ -60,6 +60,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [How to Get a Tech Internship Before University](https://eduentry.com/blog/how-to-get-tech-internship-before-university): List of UK tech employers offering school-age programmes (Google, Microsoft, KPMG), application process, and what employers expect.
 - [How Does Your Child Compare Globally](https://eduentry.com/blog/how-does-your-child-compare-globally): PISA country rankings, UK vs Singapore/Japan/South Korea score gaps, and explanation of standardised scores vs school grades.
 - [How to Get an Internship with No Experience](https://eduentry.com/blog/how-to-get-internship-no-experience-high-school): Five practical steps to land a high school internship with no prior work history — skill mapping, a readiness report instead of an empty CV, alternative experience routes, and a personalised application letter.
+- [What Is the 11+ Exam? Complete Parent's Guide](https://eduentry.com/blog/what-is-the-11-plus-exam-complete-guide): GL vs CEM formats, SAS score benchmarks (115+ and 127+), why school grades don't predict results, the four pillars of the exam, top 3 preparation mistakes, and how adaptive IRT-based assessment measures your child's true level.
 
 ### Eduentry.ai blog posts — French (Français)
 
@@ -81,6 +82,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [PISA 2025 expérience professionnelle](https://eduentry.com/fr/blog/pisa-2025-experience-professionnelle-etudiants): Résultats PISA 2025 : baisse des scores et données sur le lien entre expérience professionnelle et performance scolaire.
 - [PISA 2025 crise éducation mondiale](https://eduentry.com/fr/blog/pisa-2025-crise-education-mondiale-ce-que-les-parents-doivent-savoir): Résultats PISA 2025 par pays, causes de la baisse (pandémie, écrans, lecture rapide), et implications pour les familles.
 - [Stage lycéen sans expérience](https://eduentry.com/fr/blog/stage-lyceen-sans-experience): Cinq étapes concrètes pour obtenir un stage au lycée sans expérience — cartographie des compétences, rapport de compétences plutôt qu'un CV vide, candidature personnalisée.
+- [Qu'est-ce que l'examen 11+ ? Guide complet](https://eduentry.com/fr/blog/quest-ce-que-lexamen-11-plus-guide-complet): Formats GL vs CEM, seuils SAS (115+ et 127+), pourquoi les notes scolaires ne prédisent pas le résultat, les quatre piliers, les 3 erreurs de préparation et l'évaluation adaptative IRT.
 
 ### Eduentry.ai blog posts — Arabic (العربية)
 
@@ -102,6 +104,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [PISA 2025 خبرة عملية](https://eduentry.com/ar/blog/pisa-2025-khibra-amaliya-istidad-talab): نتائج PISA 2025 وبيانات الارتباط بين الخبرة العملية وأداء الطلاب.
 - [PISA 2025 أزمة التعليم](https://eduentry.com/ar/blog/pisa-2025-azmat-talim-alami-ma-yahtaj-marifatuh-awaliyaa-al-umur): نتائج PISA 2025 بالأرقام، أسباب انخفاض الدرجات، ومقارنة الدول.
 - [تدريب ثانوي بدون خبرة](https://eduentry.com/ar/blog/kayfa-tajid-staj-bila-khibra-thanawy): خمس خطوات للحصول على تدريب في المرحلة الثانوية دون خبرة سابقة — رسم خريطة المهارات واستخدام تقرير الكفاءات بدلاً من السيرة الذاتية الفارغة والتقديم المخصص.
+- [ما هو امتحان 11+ — دليل شامل](https://eduentry.com/ar/blog/ma-hwa-imtihan-11-plus-dalil-shamil): صيغ GL وCEM، معايير SAS (115+ و127+)، سبب عدم تنبؤ الدرجات المدرسية بالنتيجة، الأركان الأربعة، أخطاء التحضير الثلاثة، وتقييم IRT التكيفي.
 
 ### Eduentry.ai blog posts — Russian (Русский)
 
@@ -124,6 +127,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [Рекомендательное письмо](https://eduentry.com/ru/blog/kak-poluchit-rekomendatelnoe-pismo-posle-stazha): Когда и как просить рекомендацию, что должно быть в письме.
 - [Стажировка в стартапе](https://eduentry.com/ru/blog/startap-stazh-shkolniki): Отличия стажировки в стартапе от корпоративной, плюсы и минусы для школьников.
 - [Стажировка для школьника без опыта](https://eduentry.com/ru/blog/kak-nayti-stazh-bez-opyta-shkolnik): Пять шагов для получения стажировки в старшей школе без опыта работы — карта навыков, отчёт о компетентности вместо пустого резюме, персонализированное сопроводительное письмо.
+- [Что такое экзамен 11+? Полное руководство](https://eduentry.com/ru/blog/chto-takoe-ekzamen-11-plus-polnoye-rukovodstvo): Форматы GL и CEM, пороги SAS (115+ и 127+), почему школьные оценки не предсказывают результат, четыре ключевые области, 3 главные ошибки и адаптивная оценка на основе IRT.
 
 ### Eduentry.ai blog posts — Chinese (中文)
 
@@ -146,14 +150,17 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [实习第一天](https://eduentry.com/zh/blog/shixi-di-yi-tian): 应携带物品、行为规范及向导师提问的建议。
 - [实习vs兼职](https://eduentry.com/zh/blog/shixi-vs-jianzhang): 实习与兼职的区别、各自优势及高中生的最佳选择时机。
 - [高中无经验如何找实习](https://eduentry.com/zh/blog/gaozhong-wu-jingyan-shixi-zhinan): 五个步骤帮助高中生在没有工作经验的情况下获得实习——技能地图、能力报告代替空白简历及个性化申请信。
+- [11+考试是什么？完整指南](https://eduentry.com/zh/blog/11-plus-kaoshi-wanzheng-zhinan): GL与CEM考试格式、SAS分数基准（115+和127+）、学校成绩为何无法预测结果、四大核心领域、备考3大常见错误及IRT自适应评估。
 
 ### Eduentry.ai blog posts — Turkish (Türkçe)
 
 - [Deneyimsiz Lisede Staj Nasıl Bulunur](https://eduentry.com/tr/blog/deneyimsiz-lisede-staj-ve-is-tecrubesi): Hiç iş deneyimi olmadan lise yıllarında staj ve iş tecrübesi kazanmanın beş adımı — yetenek haritası, yetkinlik raporu, alternatif deneyim yolları ve kişiselleştirilmiş başvuru mektubu.
+- [11+ Sınavı Nedir? Tam Rehber](https://eduentry.com/tr/blog/11-plus-sinavi-nedir-tam-rehber): GL ve CEM formatları, SAS puan eşikleri (115+ ve 127+), okul notlarının neden sonucu tahmin etmediği, dört temel alan, en yaygın 3 hazırlık hatası ve IRT tabanlı uyarlanabilir değerlendirme.
 
 ### Eduentry.ai blog posts — Spanish (Español)
 
 - [Prácticas en el instituto sin experiencia](https://eduentry.com/es/blog/practicas-sin-experiencia-instituto): Cinco pasos para conseguir prácticas en el instituto sin experiencia laboral previa — mapa de habilidades, informe de competencias en lugar de un CV vacío, vías alternativas de experiencia y solicitud personalizada.
+- [¿Qué es el examen 11+? Guía completa](https://eduentry.com/es/blog/que-es-el-examen-11-plus-guia-completa): Formatos GL vs CEM, umbrales SAS (115+ y 127+), por qué las notas escolares no predicen el resultado, los cuatro pilares, los 3 errores de preparación y la evaluación adaptativa IRT.
 
 ---
 

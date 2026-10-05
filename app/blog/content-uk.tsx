@@ -317,6 +317,13 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         covering the right timeline, a subject-by-subject approach, how to use mock tests effectively,
         and how to keep the whole process manageable for your child.
       </p>
+      <p className="text-gray-700 leading-relaxed">
+        New to the 11+? Start with our{' '}
+        <Link href="/blog/what-is-the-11-plus-exam-complete-guide" className="text-indigo-600 hover:underline">
+          complete overview of what the exam tests and how it is scored
+        </Link>{' '}
+        before beginning this preparation plan.
+      </p>
 
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">What the 11+ Actually Tests</h2>
@@ -1216,9 +1223,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
+            { href: '/blog/what-is-the-11-plus-exam-complete-guide', tag: 'Guide', title: 'What Is the 11+ Exam?' },
             { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+' },
             { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score?' },
-            { href: '/blog/verbal-reasoning-11-plus-guide', tag: 'Guide', title: 'Verbal Reasoning 11+ Guide' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
@@ -5557,6 +5564,262 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'what-is-the-11-plus-exam-complete-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Every year, families across England describe the same experience: a child who is top of their class, consistently praised by teachers, and apparently well ahead in every subject — who then sits a first 11+ mock exam and produces a score that seems impossible. Parents who were certain their child was grammar school material suddenly doubt everything they thought they knew. This guide explains why that disconnect happens, what the 11+ is actually measuring, and how to accurately benchmark your child's real position before committing to months of preparation.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        The central insight that changes everything: the 11+ does not test curriculum knowledge. It tests reasoning ability. These overlap — but they are not the same thing. A child who excels at Year 5 science and history may have an underdeveloped verbal reasoning profile that school has never needed to surface. The exam will surface it immediately.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is the 11+ Exam and Who Is It For?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The 11+ is a selective entrance examination taken by children in Year 6 — typically aged 10 or 11 — as the primary entry requirement for grammar schools and some independent selective schools in England and Northern Ireland. Its name derives from the historical practice of administering the exam at age 11 (or "eleven plus"). Today, it is the mechanism by which academically selective state schools identify their intake from the broader Year 6 population.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Grammar schools are free state schools that select their pupils based on academic ability rather than geography, faith, or socioeconomic background. They represent a small but intensely competitive segment of the UK secondary school landscape — and for families whose children gain entry, they often represent the highest-performing secondary environment in their area.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">GL Assessment vs CEM: The Two Exam Formats</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Before purchasing a single practice paper or engaging a tutor, identify which exam board your target school uses. The two main providers have different formats, emphases, and approaches — and preparation for one does not automatically prepare a child for the other.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          {[
+            { name: 'GL Assessment', detail: 'Separates English, Maths, Verbal Reasoning, and Non-Verbal Reasoning into distinct papers marked individually. Used in Kent, Essex, Hertfordshire, Berkshire, Trafford, and most other grammar areas. The question types are more learnable through targeted practice.' },
+            { name: 'CEM (Durham)', detail: 'Integrates multiple skills into fewer papers without labelling them by subject. Used in Buckinghamshire, Wiltshire, and some Birmingham schools. Specifically designed to resist tutoring — it tests underlying cognitive ability in a way that is harder to directly prepare for.' },
+          ].map(({ name, detail }) => (
+            <div key={name} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{name}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Registration and Timing</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Registration for most grammar school 11+ exams opens in April or May of Year 5 and closes in June. The exam itself is administered in September or early October of Year 6 — often just weeks into the new academic year. This means preparation must be substantially complete before Year 6 begins.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Independent selective school entrance exams are typically separate — usually administered in January or February of Year 6 — and involve their own registration processes and preparation requirements.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The 4 Key Pillars Tested in the 11+</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">English</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The English section tests reading comprehension, grammar and punctuation, vocabulary, and in some cases extended creative writing. While English is closest to the primary school curriculum of the four subjects, the exam format introduces specific challenges: inference-based comprehension questions, evidence quotation requirements, and writing under strict time limits. A child who reads widely and writes with precision is well-positioned — but exam technique must still be explicitly practised.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Mathematics</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          11+ Mathematics extends well beyond the standard Year 5–6 curriculum. Topics include fractions, decimals and percentages, ratio and proportion, basic algebra and sequences, geometry, and multi-step problem-solving. Critically, all calculation is performed without a calculator. Speed and accuracy of mental arithmetic are essential — a child who is accurate but slow will lose marks even when they understand the method. Many questions are designed to have multiple valid approaches, rewarding flexible mathematical thinking.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Verbal Reasoning</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Verbal Reasoning (VR) is the section that most surprises families at first encounter. It tests logical thinking expressed through language: word analogies, word codes, classification, letter sequences, compound words, hidden words, and number patterns embedded in language structures. None of these question types appear in the primary school curriculum. Most children sitting a first practice VR paper produce scores in the 50–65% range — not because they lack the underlying ability, but because the format is entirely unfamiliar. The good news is that VR scores improve rapidly with structured, focused practice on specific question types.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Non-Verbal Reasoning</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Non-Verbal Reasoning (NVR) tests abstract spatial logic using patterns and shapes — matrices, series completions, shape analogies, rotations, and reflections. It measures spatial-cognitive ability more directly than learned knowledge. Unlike VR, NVR is harder to significantly improve through practice: the underlying spatial reasoning capacity develops gradually over years. However, familiarity with question types matters enormously — a child who has never seen a matrix pattern before will lose marks on process, not ability. Recognising the question types and knowing the systematic approach to each removes an unnecessary source of error.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Key insight:</strong> Of the four subjects, Verbal Reasoning typically shows the largest improvement with targeted preparation. Non-Verbal Reasoning shows the smallest. Allocation of preparation time should reflect this — not the assumption that all four subjects are equally improvable.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Your Child&apos;s School Report Won&apos;t Predict Their 11+ Score</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This is the insight that confounds most families entering the 11+ process for the first time. A child who receives all Working at Greater Depth assessments in Year 5, sits in the top group for every subject, and has never produced a classroom test mark below 90% can still score below the grammar school threshold on their first 11+ mock. When this happens, parents often blame the tutor, the practice material, or their child's effort on the day. The real explanation is structural.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          School grades measure one thing: how well a child has mastered the national curriculum to date. The Year 5 curriculum does not include verbal reasoning. It does not include abstract pattern completion. It does not require mental arithmetic under time pressure without a calculator. These are all tested extensively in the 11+.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The implication runs in both directions. A child who appears average in the classroom may have exceptional underlying reasoning ability that standard schoolwork simply hasn't required them to use. These children are often among the largest beneficiaries of targeted 11+ preparation — their ability was always there; it just hadn't been measured correctly.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          The right question to ask at the start of preparation is not <em>"is my child doing well at school?"</em> It is: <em>"what is my child's current standardised percentile position in each of the four 11+ domains?"</em> These are different questions with potentially very different answers. The only way to get the second answer is through an assessment calibrated to the 11+ — not a classroom grade.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is a Good Score on the 11+?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The 11+ reports results as a <strong>Standardised Age Score (SAS)</strong> — a scale where 100 is the population mean for children of that age, and each 15-point increment represents one standard deviation. A score of 115 corresponds to the 84th percentile: a child performing better than 84% of children their age nationally.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The SAS required for grammar school entry depends entirely on the school and the area. The thresholds below are indicative benchmarks — exact figures change each year based on the performance of the applicant cohort:{' '}
+          <Link href="/blog/grammar-school-entry-requirements-2026" className="text-indigo-600 hover:underline">
+            see Grammar School Entry Requirements 2026
+          </Link>{' '}
+          for area-by-area detail.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Most grammar schools outside London (Kent, Essex, Hertfordshire, Trafford):</strong> SAS 111–118, roughly the 77th–88th percentile nationally.</Bullet>
+          <Bullet><strong>Selective London grammar schools (Sutton area — Nonsuch, Wallington, Wilson&apos;s):</strong> SAS 118–125, roughly the 88th–95th percentile.</Bullet>
+          <Bullet><strong>Most competitive London grammar schools (Barnet — QE Boys, Henrietta Barnett):</strong> SAS 127–132 — top 2–4% nationally. These schools are among the most oversubscribed in England.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A critical distinction that many parents miss: a <em>pass mark</em> (meeting the grammar school threshold) is not the same as <em>receiving an offer</em>. For heavily oversubscribed schools, a child who meets the threshold may still not receive an offer — places are allocated to the highest-scoring children within the catchment area. The target for competitive schools should be the offer threshold, not merely the pass mark.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Not sure what standardised scores actually mean?{' '}
+          <Link href="/blog/what-is-a-standardised-score" className="text-indigo-600 hover:underline">
+            Our complete guide to standardised scores
+          </Link>{' '}
+          explains the SAS scale, percentile equivalents, and how to interpret your child&apos;s results in practice.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Top 3 Mistakes Parents Make During 11+ Preparation</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Mistake 1 — Practising Without a Diagnostic Baseline</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most common preparation pattern looks like this: a parent buys a stack of CGP or Bond practice books in all four subjects and starts working through them from page one. The child practices regularly. Progress feels tangible. Then a mock exam reveals that one subject — often the one that received least attention — is dramatically weaker than the others.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This pattern wastes enormous amounts of preparation time. Drilling on areas where a child is already performing at or above the grammar school threshold provides almost no benefit. Every hour spent there is an hour not spent addressing a genuine weakness that could determine the outcome. Before a single practice book is opened, a diagnostic assessment identifies which of the four subjects needs attention, which question types within each subject are problematic, and what the current standardised percentile position actually is.
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Cross>Starting practice papers without a subject-by-subject baseline</Cross>
+          <Cross>Allocating equal time to all four subjects regardless of current performance</Cross>
+          <Cross>Treating all verbal reasoning question types as one undifferentiated category</Cross>
+          <Check>Take a diagnostic assessment first. Identify the 2–3 weakest areas. Focus preparation there.</Check>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Mistake 2 — Interpreting Raw Percentage Marks</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          "She got 78% on that mock paper — is that good?" This is one of the most common questions parents ask during 11+ preparation, and it is impossible to answer without knowing how hard the paper was. A 78% on an easy paper may represent weaker performance than a 65% on a hard one. Two different practice books in the same subject may have entirely different difficulty levels. A percentage score that doesn&apos;t account for question difficulty is nearly useless as a performance indicator.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This is why the 11+ itself reports results as a standardised age score rather than a percentage. A standardised score converts a raw mark into a number that accounts for test difficulty, the child&apos;s age, and the performance of a large reference population. It allows meaningful comparison between tests taken at different times, at different difficulty levels, and against the specific thresholds used by grammar schools.
+        </p>
+        <Callout color="amber">
+          <strong className="text-amber-900">Practical check:</strong> When reviewing practice paper results, always ask: was this a standardised assessment or a fixed difficulty paper? If the paper doesn&apos;t report a standardised score alongside the percentage, you are working without the metric that actually matters.
+        </Callout>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Mistake 3 — Creating Exam Anxiety Before the Exam</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Some parents attempt to motivate preparation by emphasising the stakes: "if you don&apos;t work hard, you won&apos;t get into the grammar school." The research literature on test anxiety in children aged 10–11 is unambiguous on this point: high anxiety impairs performance, particularly on working memory tasks. Verbal and non-verbal reasoning tests depend heavily on working memory. Anxiety that is externally induced by parental pressure is harder for a child to self-regulate than the mild competitive focus that engaged learners naturally develop.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The practical implication: manage your own anxiety first. A parent&apos;s visible concern about the outcome is the single biggest predictor of child anxiety during preparation. Keep conversations about practice results analytical — "let&apos;s look at which question types were hardest today" — rather than evaluative — "you&apos;re not trying hard enough." Normalise early low scores as diagnostic information, not failure. The first mock is supposed to show gaps. That is precisely the point of doing it.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Accurately Benchmark Your Child&apos;s Real 11+ Level</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Why Static Practice Papers Give Inaccurate Baselines</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A standard practice paper administers the same questions in the same order to every child, regardless of their ability level. A child who answers the first 40 correctly is then forced to work through 20 more questions that are likely above their demonstrated ability — generating little useful measurement information while consuming their time and beginning to erode their confidence. A child who struggles with the first 20 questions spends time on 40 more that are mostly beyond their current level.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          In both cases, the resulting score is an imprecise estimate of actual ability — too many questions were wasted on sections of the difficulty range where the child was either certain to succeed or certain to fail. The measurement is inefficient by design, because static papers weren&apos;t designed to measure ability precisely; they were designed to rank children on a single sitting.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Adaptive Testing: Maximum Information from Every Question</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A Computerised Adaptive Test (CAT) works differently. After each question, the system uses the child&apos;s response to update its estimate of their current ability, then selects the next question at precisely the difficulty level that delivers the most new information about that ability. If a child answers correctly, the next question is harder. If they answer incorrectly, it is easier. Every question in the session is maximally informative — none are wasted on the too-easy or too-hard extremes.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The result is a more accurate ability estimate using fewer questions than a static paper. A CAT typically reaches the same measurement precision as a 45-question static paper using only 15–20 adaptive questions per subject. The accuracy is higher, the time is shorter, and the experience is less exhausting for the child.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">The Psychometric Method Behind the Eduentry Assessment</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry uses <strong>2-Parameter Logistic Item Response Theory (2PL IRT)</strong> with Maximum A Posteriori (MAP) estimation — the same psychometric framework used by PISA, GCSE, CAT4, the Digital SAT, and most major professional cognitive assessments worldwide.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          In practical terms: every question in the assessment bank has two calibrated parameters — its difficulty level and its discriminating power (how effective it is at separating children above and below the relevant ability threshold). After each response, MAP estimation updates the ability estimate based on the full pattern of correct and incorrect responses — not just a running count. The final score is placed on the standardised SAS scale (mean 100, SD 15) used by GL Assessment and most grammar school consortia.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This means an Eduentry score of 115 is directly comparable to a GL Assessment score of 115 — not an approximation, but a mathematically equivalent measure on the same scale. It tells you, before any formal preparation has begun, exactly where your child currently stands relative to the grammar school threshold.
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Find out your child&apos;s real 11+ level — free</p>
+          <p className="text-sm text-gray-600">Adaptive academic assessment for children aged 6–17. Standardised scores in all four 11+ domains — English, Maths, Verbal Reasoning, Non-Verbal Reasoning.</p>
+        </div>
+        <Link href="/11-plus" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Start free assessment
+        </Link>
+      </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">What the Assessment Report Shows</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The Eduentry assessment produces a personalised report for each child covering all four subjects. Each score is reported on the standardised SAS scale with a percentile rank, a strength/weakness breakdown by question type, and an explanation of what the score means relative to common grammar school thresholds. Parents can review a detailed{' '}
+          <Link href="/sample-report" className="text-indigo-600 hover:underline">
+            sample assessment report
+          </Link>{' '}
+          to understand exactly what the output looks like before the child sits the assessment.
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Check><strong>Standardised score in each subject</strong> — directly comparable to grammar school thresholds</Check>
+          <Check><strong>Subject-by-subject percentile</strong> — shows which domains need most work</Check>
+          <Check><strong>Strength and weakness breakdown</strong> — identifies specific question types that need attention</Check>
+          <Check><strong>AI-generated interpretation</strong> — plain-English explanation of what each score means for 11+ readiness</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Building a Structured Preparation Routine Without Burning Out</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The evidence on 11+ preparation consistently shows that consistent, moderate practice over a long period produces better results than intensive short-term cramming. The preparation framework that works for most families follows a 12–18 month arc — not because every child needs that long, but because a longer timeline allows the stress to be distributed, genuine skill development to occur, and the child to arrive at the exam rested and confident rather than exhausted and anxious.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Year 4 / Early Year 5: Build Foundations</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Take a diagnostic baseline assessment. Review the results with your child in a low-pressure context. Identify the 2–3 weakest subject areas. Begin 20–25 minutes of targeted daily practice in those areas — not exam format practice, but the underlying skills: vocabulary building for VR, mental arithmetic for Maths, visual pattern work for NVR. Begin or continue a consistent reading habit for English — daily reading is the single most effective English preparation.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Year 5 (6–12 Months Before Exam): Structured Practice</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Introduce subject-specific practice books for the weakest areas. Begin timed practice sessions — initially untimed to learn question types, then gradually timed to build speed. Retest with a standardised diagnostic every 3–4 months to track genuine progress. Adjust the preparation focus based on what the retest shows, not on what feels like it should have improved.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Year 5 Summer to Year 6 September: Mock Exam Phase</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Begin full mock papers under timed, exam-condition settings. 2–3 mock papers per week is the appropriate volume; more than this produces diminishing returns and increasing anxiety. After each mock, spend time analysing which question types generated errors — this is where the preparation value lies, not in the score itself. For each error category, return to targeted practice before attempting another full mock.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">The Final Week: Stop Intensive Practice</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          In the week before the exam, stop intensive paper practice. Light revision of question type formats is acceptable — but this week&apos;s goal is rest, routine, and confidence, not last-minute gains. A child who has followed a 12–18 month preparation programme is as prepared as they can be. No amount of cramming in the final week will materially change the outcome — but exhaustion and anxiety certainly can.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">The most important first step:</strong> Before any practice books, any tutors, or any mock exams — take a free baseline assessment to understand exactly where your child currently stands. Everything else flows from that data point.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+ at Home' },
+            { href: '/blog/grammar-school-entry-requirements-2026', tag: 'Guide', title: 'Grammar School Entry Requirements 2026' },
+            { href: '/blog/what-is-a-standardised-score', tag: 'Explainer', title: 'What Is a Standardised Score?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
   ...UK_CONTENT_US_GIFTED,
   ...UK_CONTENT_NETHERLANDS,
   ...UK_CONTENT_UAE,

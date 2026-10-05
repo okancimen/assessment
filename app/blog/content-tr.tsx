@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Bullet, Callout, Check } from './blog-components'
+import { Bullet, Callout, Check, Cross } from './blog-components'
 
 export const TR_CONTENT: Record<string, React.ReactNode> = {
 
@@ -5895,6 +5895,202 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed">
           Üniversite başvurularına güçlü bir anlatıyla ulaşmak için bugün başla. Adım atmanın en pratik yolu: ücretsiz Eduentry değerlendirmesini tamamla, yetkinlik raporunu al ve ilk başvuruna somut bir temel ekle.
         </p>
+      </section>
+    </>
+  ),
+
+  'what-is-the-11-plus-exam-complete-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        İngiltere&apos;deki aileler her yıl aynı deneyimi yaşıyor: sınıfın birincisi, öğretmenlerinin sürekli övdüğü, her derste ileride olan bir çocuk — ve ardından ilk 11+ deneme sınavı, tamamen beklenmedik bir puan ortaya koyuyor. Çocuğunun gramer okulu için hazır olduğundan emin olan ebeveynler aniden her şeyi sorguluyor. Bu rehber, bu kopukluğun neden yaşandığını, 11+ sınavının gerçekte neyi ölçtüğünü ve aylarca hazırlık sürecine girmeden önce çocuğunuzun gerçek akademik düzeyini nasıl doğru şekilde ölçeceğinizi açıklar.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Her şeyi değiştiren temel bilgi şudur: 11+ müfredat bilgisini test etmez. Akıl yürütme yeteneğini test eder. Bu ikisi örtüşür — ama aynı şey değildir. 5. sınıf fen bilgisinde ve tarihte üstün bir çocuğun, gelişmemiş sözel akıl yürütme profili olabilir; çünkü okul bunu hiçbir zaman ölçmek zorunda kalmamıştır. Sınav onu hemen ortaya koyar.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">11+ Sınavı Nedir ve Kimler İçindir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          11+ sınavı, İngiltere ve Kuzey İrlanda&apos;da gramer okulu ve bazı seçici özel okullara girişin birincil koşulu olarak 6. sınıf öğrencileri (genellikle 10-11 yaş) tarafından alınan seçici bir giriş sınavıdır. Adını tarihsel olarak 11 yaşında (veya "on bir artı") uygulanmasından almaktadır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gramer okulları, öğrencilerini coğrafya, din veya sosyoekonomik geçmişe değil akademik yeteneğe göre seçen devlet okullardır. İngiltere ortaöğretim düzeyinin küçük ama son derece rekabetçi bir bölümünü oluştururlar. Çocuğu kabul edilen aileler için genellikle bölgelerindeki en yüksek performanslı ortaöğretim ortamını temsil ederler.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">GL Assessment ve CEM: İki Sınav Formatı</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tek bir alıştırma kitabı satın almadan veya özel ders tutmadan önce, hedef okulunuzun hangi sınav kurumunu kullandığını öğrenin. İki ana sağlayıcının farklı formatları, vurguları ve yaklaşımları vardır; birine yönelik hazırlık diğeri için otomatik olarak geçerli değildir.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          {[
+            { name: 'GL Assessment', detail: 'İngilizce, Matematik, Sözel Akıl Yürütme ve Sözel Olmayan Akıl Yürütme\'yi ayrı ayrı değerlendirilen kağıtlara ayırır. Kent, Essex, Hertfordshire, Berkshire, Trafford ve çoğu gramer okulu bölgesinde kullanılır. Soru tipleri hedefe yönelik pratikle daha öğrenilebilir niteliktedir.' },
+            { name: 'CEM (Durham)', detail: 'Birden fazla beceriyi konulara göre etiketlemeden daha az sayıda kağıda entegre eder. Buckinghamshire, Wiltshire ve bazı Birmingham okullarında kullanılır. Özel derse dirençli olacak şekilde tasarlanmıştır; doğrudan hazırlanması daha zor olan altta yatan bilişsel yeteneği test eder.' },
+          ].map(({ name, detail }) => (
+            <div key={name} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{name}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Kayıt Süreçleri ve Zamanlama</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gramer okulu 11+ sınavları için kayıt genellikle 5. sınıfın Nisan-Mayıs ayında açılır ve Haziran ayında kapanır. Sınavın kendisi 6. sınıfın Eylül veya Ekim ayı başında yapılır; bu, hazırlığın 6. sınıf başlamadan büyük ölçüde tamamlanmış olması gerektiği anlamına gelir.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Seçici özel okulların giriş sınavları genellikle ayrıdır — 6. sınıfın Ocak veya Şubat ayında yapılır — ve kendi kayıt süreçleri bulunur.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">11+&apos;da Test Edilen 4 Temel Alan</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">İngilizce</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İngilizce bölümü; okuma anlama, dilbilgisi ve noktalama, kelime bilgisi ve bazı durumlarda yaratıcı veya uzun yazıyı test eder. İngilizce, dört konu arasında ilkokul müfredatına en yakın olanıdır; ancak sınav formatı özel zorluklar getirir: çıkarım bazlı anlama soruları, kanıt alıntısı gereksinimleri ve sıkı zaman sınırlamaları. Çok okuyan ve yazarken hassas davranan bir çocuk iyi bir konumdadır — ancak sınav tekniği yine de açıkça pratik edilmelidir.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Matematik</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          11+ Matematik, standart 5-6. sınıf müfredatının çok ötesine geçer. Kesirler, ondalıklar ve yüzdeler, oran ve orantı, temel cebir ve diziler, geometri ve çok adımlı problem çözme konularını kapsar. Kritik olarak, tüm hesaplamalar hesap makinesi olmadan yapılır. Hızlı ve doğru zihinsel aritmetik esastır — doğru ama yavaş olan bir çocuk yöntemi anlasa bile puan kaybeder.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Sözel Akıl Yürütme</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sözel Akıl Yürütme (VR), aileleri ilk karşılaştıklarında en çok şaşırtan bölümdür. Dil aracılığıyla mantıksal düşünmeyi test eder: kelime analojileri, sözcük kodları, sınıflandırma, harf dizileri, bileşik sözcükler ve gizli sözcükler. Bu soru tiplerinin hiçbiri ilkokul müfredatında yer almaz. Çoğu çocuk ilk VR alıştırma kağıdında %50-65 civarında puan alır — temel yetenekleri olmadığı için değil, format tamamen yabancı olduğu için. İyi haber: Sözel akıl yürütme puanları, belirli soru tiplerine yönelik yapılandırılmış pratikle hızla iyileşir.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Sözel Olmayan Akıl Yürütme</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sözel Olmayan Akıl Yürütme (NVR), şekil ve kalıpları kullanan soyut uzamsal mantığı test eder: matrisler, dizi tamamlama, şekil analojileri, döndürmeler ve yansımalar. Öğrenilmiş bilgiden çok mekânsal-bilişsel yeteneği doğrudan ölçer. Sözel akıl yürütmenin aksine NVR, pratikle önemli ölçüde iyileştirmek daha zordur. Ancak soru tipleriyle tanışıklık büyük önem taşır — matris kalıbını hiç görmemiş bir çocuk yetenekten değil süreçten puan kaybeder ve bu düzeltilebilir.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Temel bulgu:</strong> Dört konu arasında Sözel Akıl Yürütme, hedefe yönelik hazırlıkla genellikle en büyük gelişimi gösterir. Sözel Olmayan Akıl Yürütme en küçük gelişimi gösterir. Hazırlık süresi dağılımı bunu yansıtmalıdır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzun Okul Karnesi Neden 11+ Puanını Tahmin Edemez?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu, 11+ sürecine ilk kez giren ailelerin çoğunu şaşırtan bir olgudur. 5. sınıfta her alanda "Beklentilerin Üzerinde" değerlendirmesi alan, her derste en üst grupta yer alan ve hiçbir sınav testinde %90&apos;ın altına düşmemiş bir çocuk, ilk 11+ denemesinde gramer okulu eşiğinin altında kalabilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okul notları tek bir şeyi ölçer: çocuğun milli müfredatı ne kadar iyi özümsediği. 5. sınıf müfredatı sözel akıl yürütmeyi içermez. Soyut kalıp tamamlamayı içermez. Hesap makinesi olmadan zaman baskısı altında zihinsel aritmetik gerektirmez. 11+&apos;da bunların tümü kapsamlı biçimde test edilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sonuç iki yönde de işler. Sınıfta ortalama görünen bir çocuğun, standart okul çalışmalarının hiçbir zaman ihtiyaç duymadığı olağanüstü temel akıl yürütme yeteneği olabilir. Bu çocuklar genellikle hedefli 11+ hazırlığından en fazla yararlananlardır — yetenek her zaman oradaydı; sadece doğru şekilde ölçülmemişti.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Hazırlığın başında sorulması gereken doğru soru <em>"çocuğum okulda iyi mi yapıyor?"</em> değil, <em>"çocuğumun dört 11+ alanının her birindeki mevcut standart yüzdelik dilim konumu nedir?"</em> sorusudur. Bu iki soru potansiyel olarak çok farklı yanıtlar üretir. İkinci yanıtı almanın tek yolu, sınıf notuna değil 11+&apos;a göre kalibre edilmiş bir değerlendirmedir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">11+&apos;da İyi Puan Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          11+ sonuçları <strong>Standart Yaş Puanı (SAS)</strong> olarak bildirilir — bu ölçekte 100, o yaştaki çocukların nüfus ortalamasını, her 15 puanlık artış ise bir standart sapmayı temsil eder. 115 puanı 84. yüzdelik dilime karşılık gelir: ulusal düzeyde yaş grubundaki çocukların %84&apos;ünden daha iyi performans sergileyen bir çocuk.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Londra dışındaki çoğu gramer okulu (Kent, Essex, Hertfordshire, Trafford):</strong> SAS 111-118, ulusal yaklaşık 77-88. yüzdelik dilim.</Bullet>
+          <Bullet><strong>Londra seçici gramer okulları (Sutton bölgesi):</strong> SAS 118-125, yaklaşık 88-95. yüzdelik dilim.</Bullet>
+          <Bullet><strong>En rekabetçi Londra gramer okulları (Barnet — QE Boys, Henrietta Barnett):</strong> SAS 127-132 — ulusal en üst %2-4.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Kritik bir ayrım: <em>geçme puanı</em> (eşiği karşılama) ile <em>teklif alma</em> aynı şey değildir. Aşırı talep gören okullarda, eşiği karşılayan bir çocuk yine de teklif almayabilir — yerler, okul bölgesi içindeki en yüksek puanlı çocuklara tahsis edilir. Rekabetçi okullar için hedef, yalnızca geçme puanı değil teklif eşiği olmalıdır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ebeveynlerin 11+ Hazırlığında Yaptığı 3 Büyük Hata</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Hata 1 — Tanısal Taban Olmadan Pratik Yapmak</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En yaygın hazırlık kalıbı şudur: ebeveyn dört konudan oluşan bir pratik kitap seti alır ve birinci sayfadan başlayarak çalışmaya başlar. Çocuk düzenli olarak pratik yapar. İlerleme somut görünür. Ardından bir deneme sınavı, en az ilgilenilen bir konunun dramatik biçimde zayıf olduğunu ortaya koyar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu kalıp muazzam miktarda hazırlık süresini boşa harcar. Çocuğun zaten gramer okulu eşiğinde ya da üzerinde performans sergilediği alanlarda pratik yapmak neredeyse hiçbir fayda sağlamaz. O sürede gerçek bir zayıflık ele alınabilirdi. Tek bir pratik kitabı açılmadan önce, tanısal bir değerlendirme dört konunun hangisinin dikkat gerektirdiğini, her konu içindeki hangi soru tiplerinin sorunlu olduğunu ve gerçek standart yüzdelik dilim konumunun ne olduğunu belirler.
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Cross>Konu bazlı taban olmadan pratik kağıtlarına başlamak</Cross>
+          <Cross>Mevcut performansa bakılmaksızın dört konuya eşit zaman ayırmak</Cross>
+          <Check>Önce tanısal değerlendirme yapın. En zayıf 2-3 alanı belirleyin. Hazırlığı oraya yönlendirin.</Check>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Hata 2 — Ham Yüzde Puanlarını Yorumlamak</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          "Deneme sınavında %78 aldı — bu iyi mi?" Hazırlık sürecinde ebeveynlerin en sık sorduğu sorulardan biridir ve kağıdın ne kadar zor olduğu bilinmeden yanıtlanması imkânsızdır. Kolay bir kağıtta %78, zor bir kağıtta %65&apos;ten daha zayıf bir performansı temsil edebilir. Soru zorluğunu hesaba katmayan bir yüzde puanı, performans göstergesi olarak neredeyse işe yaramaz.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu yüzden 11+ sınavının kendisi sonuçları yüzde yerine standart yaş puanı olarak bildirir. Standart bir puan, ham bir puanı test zorluğunu, çocuğun yaşını ve büyük bir referans popülasyonun performansını hesaba katan bir sayıya dönüştürür.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Hata 3 — Sınavdan Önce Sınav Kaygısı Yaratmak</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bazı ebeveynler sonuçların önemini vurgulayarak motivasyon sağlamaya çalışır. 10-11 yaş çocuklarında sınav kaygısı üzerine yapılan araştırmalar bu konuda nettir: yüksek kaygı performansı olumsuz etkiler, özellikle çalışma belleği görevlerinde. Sözel ve sözel olmayan akıl yürütme testleri çalışma belleğine yoğun biçimde bağımlıdır. Dışarıdan yüklenen kaygı, çocuğun kendi kendine düzenlemesi için doğal rekabetçi odaklanmadan çok daha zordur.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Pratik sonuçlar hakkındaki konuşmaları değerlendirici değil analitik tutun: "Bugün hangi soru tipleri en zor geldi?" sorusu "Yeterince çalışmıyorsun" ifadesinden çok daha üretkendir. İlk denemede düşük puanları tanısal bilgi olarak normalleştirin, başarısızlık olarak değil.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzun Gerçek 11+ Düzeyini Doğru Şekilde Nasıl Ölçersiniz?</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Uyarlanabilir Test: Her Sorudan Maksimum Bilgi</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Standart bir alıştırma kağıdı, çocuğun yetenek düzeyinden bağımsız olarak aynı soruları aynı sırada her çocuğa uygular. Bilgisayar destekli bir Uyarlanabilir Test (CAT) farklı çalışır: her sorudan sonra sistem çocuğun yanıtını kullanarak mevcut yetenek tahminini günceller ve ardından en fazla yeni bilgiyi sağlayacak zorluk düzeyinde bir sonraki soruyu seçer. Her soru bilgilendiricidir; hiçbir soru çok kolay ya da çok zor uçlarda boşa harcanmaz.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sonuç: sabit bir kağıttan daha az soruyla daha doğru bir yetenek tahmini. Bir CAT, genellikle konu başına yalnızca 15-20 uyarlanabilir soruyla 45 soruluk sabit bir kağıt kadar doğru ölçüm hassasiyetine ulaşır.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Eduentry Değerlendirmesinin Psikometrik Temeli</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry, <strong>2 Parametreli Lojistik Madde Tepki Teorisi (2PL IRT)</strong> ve Maksimum A Posteriori (MAP) tahmini kullanır — bu, PISA, GCSE, CAT4 ve dünya genelindeki büyük profesyonel bilişsel değerlendirmelerin çoğunun kullandığı psikometrik çerçevenin aynısıdır. Her soru, kalibre edilmiş zorluk ve ayrım gücü parametrelerine sahiptir; MAP tahmini, her yanıttan sonra yetenek tahminini günceller. Nihai puan, GL Assessment ve çoğu gramer okulu konsorsiyumu tarafından kullanılan standart SAS ölçeğine (ortalama 100, SD 15) yerleştirilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu, Eduentry üzerinden alınan 115 puanının, GL Assessment üzerinden alınan 115 puanıyla doğrudan karşılaştırılabildiği anlamına gelir — bir yaklaşım değil, aynı ölçekte matematiksel olarak eşdeğer bir ölçüm. Herhangi bir resmi hazırlık başlamadan önce çocuğunuzun gramer okulu eşiğine göre tam olarak nerede durduğunu söyler.
+        </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Çocuğunuzun gerçek 11+ düzeyini ücretsiz öğrenin</p>
+          <p className="text-sm text-gray-600">6-17 yaş arası çocuklar için uyarlanabilir akademik değerlendirme. 11+&apos;da test edilen dört alanda — İngilizce, Matematik, Sözel ve Sözel Olmayan Akıl Yürütme — standart puan alın.</p>
+        </div>
+        <Link href="/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz değerlendirme
+        </Link>
+      </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Tükenmeden Yapılandırılmış Bir Hazırlık Rutini Oluşturmak</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          11+ hazırlığıyla ilgili kanıtlar tutarlı biçimde gösteriyor: uzun süre boyunca düzenli ve orta yoğunlukta pratik, yoğun kısa süreli ezber çalışmasından daha iyi sonuç veriyor. Çoğu aile için işleyen hazırlık çerçevesi 12-18 aylık bir süreyi kapsar — her çocuğun bu kadar zamana ihtiyacı olduğu için değil, daha uzun bir zaman dilimi stresi dağıtmayı, gerçek beceri gelişimini sağlamayı ve çocuğun sınava yorgun ve endişeli değil, dinlenmiş ve özgüvenli gelmesini mümkün kılar.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Sınıf / 5. Sınıf Başı: Temelleri Oluşturun</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tanısal bir taban değerlendirmesi yapın. Sonuçları çocuğunuzla düşük baskılı bir ortamda inceleyin. En zayıf 2-3 konu alanını belirleyin. O alanlarda günlük 20-25 dakikalık hedefli pratik başlatın — sınav formatı pratiği değil, temel beceriler: VR için kelime bilgisi geliştirme, Matematik için zihinsel aritmetik, NVR için görsel örüntü çalışmaları. İngilizce için tutarlı okuma alışkanlığını başlatın veya sürdürün.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">5. Sınıf: Yapılandırılmış Pratik</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En zayıf alanlar için konuya özgü pratik kitapları tanıtın. Önce süresiz, soru tiplerini öğrenmek için; ardından yavaş yavaş zamanlamayı ekleyerek hızı artırmak için. Her 3-4 ayda bir standart bir tanısal testle yeniden değerlendirin. Hazırlık odağını neyin gelişmiş olması gerektiğine dair sezgiye değil, yeniden testin gösterdiklerine göre ayarlayın.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">5. Sınıf Yazı – 6. Sınıf Eylülü: Deneme Sınavı Aşaması</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Zamanlanmış, sınav koşullarında tam deneme kağıtlarına başlayın. Haftada 2-3 deneme kağıdı uygun bir yoğunluktur; bundan fazlası azalan getiriye ve artan kaygıya yol açar. Her denemeden sonra hangi soru tiplerinin hataya neden olduğunu analiz edin. Her hata kategorisi için, başka bir tam deneme denemeden önce hedefli pratiğe geri dönün.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Son Hafta: Yoğun Pratiği Bırakın</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sınavdan önceki haftada yoğun kağıt pratiğini bırakın. Bu haftanın hedefi son dakika kazanımları değil, dinlenme, rutin ve özgüvendir. 12-18 aylık hazırlık programını sürdüren bir çocuk olabildiğince hazırdır. Son haftada ezber yaparak sonucu maddi olarak değiştiremezsiniz — ama yorgunluk ve kaygı kesinlikle değiştirebilir.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">En önemli ilk adım:</strong> Herhangi bir alıştırma kitabı, özel ders veya deneme sınavından önce — çocuğunuzun gerçekte nerede durduğunu anlamak için ücretsiz bir taban değerlendirmesi yapın. Diğer her şey o veri noktasından akar.
+        </Callout>
       </section>
     </>
   ),
