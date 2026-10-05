@@ -78,7 +78,10 @@ export default function DemoPage() {
 
         <DemoQuiz />
 
-        <div className="mt-12 grid sm:grid-cols-3 gap-4">
+        <div className="mt-12">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">Explore full assessments by subject</h2>
+        </div>
+        <div className="grid sm:grid-cols-3 gap-4">
           <Link href="/subjects/english" className="border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/30 transition-colors">
             <h3 className="font-semibold text-gray-900 mb-1">English</h3>
             <div className="text-sm text-gray-500">Comprehension, grammar, vocabulary</div>
