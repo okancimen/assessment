@@ -1688,6 +1688,232 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: 'https://eduentry.com/tr',
     },
   },
+  {
+    slug: 'pisa-2025-global-egitim-krizi-ebeveyn-rehberi',
+    contentSlug: 'pisa-2025-global-education-crisis-what-parents-need-to-know',
+    title: 'PISA 2025 Sonuçları: Küresel Eğitim Krizinde Ebeveynlerin Bilmesi Gerekenler',
+    shortTitle: 'PISA 2025 Sonuçları: En Düşük Puanlar Ne Anlama Gelir',
+    description:
+      'PISA 2025: 2000\'den bu yana kaydedilen en düşük matematik, okuma ve fen puanları. Sonuçların İngilizce eğitim ve uluslararası aileler için anlamı ile çocuğunuzun dünya genelindeki akademik konumunu nasıl ölçebileceğiniz.',
+    tldr: 'PISA 2025, programın başladığından bu yana en düşük OECD matematik ortalamasını kayıt altına aldı: matematik 470, okuma 474, fen 475. Birleşik Krallık matematik sıralamasında 27.\'ye, okuma sıralamasında 13.\'ye geriledi. Singapur, Japonya ve Güney Kore üç alanda da liderliği sürdürdü. OECD ülkelerinin büyük bölümünde pandemi sonrası toparlanma durdu.',
+    date: '2026-10-07',
+    dateModified: '2026-10-07',
+    readTime: '14 dk okuma',
+    tags: ['PISA', 'Akademik Kıyaslama', 'Küresel Eğitim', 'Matematik', 'Okuma'],
+    faqs: [
+      {
+        q: 'PISA nedir ve neden önemlidir?',
+        a: 'PISA (Uluslararası Öğrenci Değerlendirme Programı), 91 ülkede 15 yaşındaki öğrencileri matematik, okuma ve fen alanlarında her üç yılda bir test eder. Eğitim sistemlerinin küresel ölçekte nasıl karşılaştırıldığının en yetkili ölçütü olan dünyanın en büyük standartlaştırılmış eğitim kıyaslamasıdır.',
+      },
+      {
+        q: 'PISA 2025\'te matematik ve okuma puanları neden bu kadar düştü?',
+        a: 'Araştırmacılar birden fazla faktöre dikkat çekiyor: pandemiden kaynaklanan öğrenme kayıpları, artan dijital dikkat dağınıklığı (öğrencilerin %28\'i sınıf arkadaşlarının cihazlarla fen derslerini bölüp parçaladığını söylüyor) ve içeriği tam kavramadan hızlıca tarama olarak tanımlanan "acele okuma." Acele okuma oranı 2018 ile 2025 arasında neredeyse iki katına çıktı.',
+      },
+      {
+        q: 'Türkiye PISA 2025\'te nasıl performans gösterdi?',
+        a: 'PISA 2025 matematik ortalamaları: Singapur 575, Japonya 536, Güney Kore 524, İngiltere 495, Fransa 475, İspanya 472, OECD ortalaması 472, Türkiye 463. Okuma: Singapur 543, Japonya 516, OECD ortalaması 476, İspanya 488, Fransa 479, Türkiye 479. Türkiye okuma puanıyla OECD ortalamasını geçerken matematikte ortalamanın altında kaldı.',
+      },
+      {
+        q: 'Çocuğumun uluslararası arenada nerede durduğunu nasıl öğrenebilirim?',
+        a: 'En güvenilir yöntem, çocuğunuzu geniş bir ulusal ya da uluslararası öğrenci grubuyla kıyaslayan standartlaştırılmış uyarlanabilir bir değerlendirmedir. PISA, GL Assessment ve CAT4\'ün kullandığı ortalama-100, SS-15 ölçeğinde sonuç veren bir değerlendirme arayın; bu sayede farklı testlerdeki sonuçları zaman içinde karşılaştırabilirsiniz.',
+      },
+      {
+        q: 'Yapay zeka kullanan öğrenciler daha mı başarısız oluyor?',
+        a: 'PISA 2025, metin özetleme veya taslak hazırlama gibi belirli görevler için yapay zeka kullanan öğrencilerin fen puanlarının kullanmayan akranlarına kıyasla yaklaşık 20 puan düşük olduğunu, yani yaklaşık bir yıllık öğrenmeye eşdeğer bir fark bulunduğunu ortaya koydu. Yapay zeka okuryazarlığı eğitimiyle desteklendiğinde, öğrenme amacıyla genel yapay zeka kullanımı olumsuz bir etkiye yol açmadı.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun küresel akademik konumunu ücretsiz öğrenin',
+      body: 'Eduentry\'nin uyarlanabilir değerlendirmesi 6–17 yaş arası çocukları PISA ile aynı uluslararası ölçekte matematik, İngilizce, sözel ve sözel olmayan akıl yürütme alanlarında test eder. Bir saat içinde küresel yüzdelik sıranızı öğrenin.',
+      label: 'Ücretsiz Değerlendirmeyi Başlat',
+      href: 'https://eduentry.com/tr',
+    },
+  },
+  {
+    slug: 'isee-ssat-ozel-okul-sinavi-rehberi',
+    contentSlug: 'isee-ssat-private-school-guide',
+    title: 'ISEE vs SSAT: ABD Özel Okul Giriş Sınavları İçin Eksiksiz Rehber',
+    shortTitle: 'ISEE vs SSAT Özel Okul Rehberi',
+    description:
+      'ISEE ve SSAT karşılaştırması: her özel okul giriş sınavının nasıl işlediği, puanların nasıl raporlandığı, temel farklar, hangisini seçmeli ve nasıl hazırlanılmalı.',
+    tldr: 'ISEE, puanları stanin ölçeğinde (1–9) raporlar; SSAT yüzdelik sıralaması verir. ABD\'nin rekabetçi bağımsız okullarının çoğu ISEE\'de 7–9 stanin (77.–99. yüzdelik aralığı) veya SSAT\'ta 75. yüzdelik ve üzerini bekler. Bazı okullar yalnızca bir sınavı kabul ederken diğerleri her ikisini de geçerli sayar.',
+    date: '2026-10-07',
+    dateModified: '2026-10-07',
+    readTime: '8 dk okuma',
+    tags: ['ISEE', 'SSAT', 'Özel Okul', 'ABD Eğitimi', 'Giriş Sınavı'],
+    faqs: [
+      {
+        q: 'ISEE ile SSAT arasındaki fark nedir?',
+        a: 'Temel pratik farklar: ISEE\'de yanlış yanıt cezası yoktur (her soruyu cevaplayın), SSAT\'ta yanlış yanıt başına ¼ puan düşülür. ISEE yılda en fazla üç kez alınabilir (sınav başına bir kez); SSAT\'ın tekrar sınırlı yoktur. SSAT sözel bölümü analoji kullanır ve pek çok öğrenci bunu ISEE\'nin eşanlamlı ve cümle tamamlama formatından daha zor bulmaktadır.',
+      },
+      {
+        q: 'Özel okul kabulü için iyi bir ISEE puanı nedir?',
+        a: 'ISEE puanları bağımsız okul başvurucuları arasındaki stanin 1–9 ölçeğinde raporlanır; 5 ortalama başvurucu seviyesidir. Rekabetçi okullar genellikle 6–7 stanin ararken çok seçici kurumlar 7–9 stanin bekler. Karşılaştırma grubunun diğer özel okul başvurucuları olduğunu unutmayın — ISEE\'de 5 stanin bile genel öğrenci ortalamasının üzerindedir.',
+      },
+      {
+        q: 'ISEE sınavı kaç kez alınabilir?',
+        a: 'Öğrenciler ISEE\'yi sınav başına bir kez alabilir. Yılda üç dönem (Güz, Kış, İlkbahar) bulunduğundan 12 aylık sürede en fazla üç kez girilmektedir. Bu durum, tekrar sınırı olmayan SSAT\'a kıyasla ISEE\'yi kötü bir sınav gününe karşı daha az toleranslı kılar. Esneklik isteyen aileler bu nedenle çoğunlukla SSAT\'ı tercih eder.',
+      },
+      {
+        q: 'Tüm ABD özel okulları ISEE veya SSAT istiyor mu?',
+        a: 'Akademik olarak seçici bağımsız okulların büyük bölümü, özellikle orta ve üst okul kabulü için ISEE ya da SSAT\'ı zorunlu tutar. Ancak ilkokul düzeyinde ya da ağırlıklı olarak akademik yeteneğe göre seçim yapmayan bazı okullar okul tasarımlı değerlendirmeler kullanır ya da resmi sınav talep etmez. Hedef okulunuzun şartlarını mutlaka kontrol edin.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun uluslararası arenada nerede durduğunu görün',
+      body: 'İngiltere, ABD, PISA ve IB standartlarıyla karşılaştırmalı, ücretsiz uyarlanabilir değerlendirme — standartlaştırılmış puan ve yüzdelik sıralama ile.',
+      label: 'Ücretsiz Değerlendirmeyi Başlat',
+      href: '/auth/register',
+    },
+  },
+  {
+    slug: 'abd-ust-zeka-programi-test-rehberi',
+    contentSlug: 'gifted-program-testing-guide',
+    title: 'ABD Üstün Zekâ Programı Test Rehberi: Belirleme Süreci ve Hazırlık',
+    shortTitle: 'ABD Üstün Zekâ Programı Testleri 2026: CogAT ve WISC',
+    description:
+      'ABD üstün zekâ programı belirleme süreci: CogAT, WISC-V, NWEA MAP ve OLSAT testlerinin açıklaması, program türüne göre puan eşikleri ve pratik hazırlık rehberi.',
+    tldr: 'ABD üstün zekâ programlarının büyük bölümü resmi tanımlama için 130 veya üzeri bir IQ puanı (98. yüzdelik ve üstü) gerektirir. New York City\'nin Üstün Zekâlı ve Yetenekli programı tarihsel olarak 99. yüzdeliği şart koşmuştur. Destek amaçlı zenginleştirme programları genellikle 90.–95. yüzdelikleri kabul eder. En yaygın grup tarama testi CogAT, en yaygın bireysel IQ testi ise WISC-V\'dir.',
+    date: '2026-10-07',
+    dateModified: '2026-10-07',
+    readTime: '9 dk okuma',
+    tags: ['Üstün Zekâ Testi', 'CogAT', 'WISC', 'ABD Eğitimi', 'Üstün Zekâ Programları'],
+    faqs: [
+      {
+        q: 'ABD\'de bir üstün zekâ programına kabul için hangi IQ puanı gereklidir?',
+        a: 'ABD üstün zekâ programlarının büyük çoğunluğu resmi tanımlama için 130 veya üzeri bir IQ (98. yüzdelik ve üstü) gerektirmektedir; ancak eşikler değişiklik gösterir. Destek amaçlı zenginleştirme programları genellikle 90.–95. yüzdelikleri yeterli görürken rekabetçi mıknatıs GT okulları çoğunlukla 97.–99. yüzdeliği aramaktadır. New York City\'nin şehir genelindeki Üstün Zekâlı ve Yetenekli programı tarihsel olarak 99. yüzdelikteki öğrencileri kabul etmektedir.',
+      },
+      {
+        q: 'ABD\'de üstün zekâ tanılamasında hangi testler kullanılır?',
+        a: 'En yaygın testler şunlardır: grup tarama için CogAT (Bilişsel Yetenekler Testi), bireysel IQ değerlendirmesi için WISC-V (Wechsler Çocuk Zekâ Ölçeği), başarı tabanlı tanımlama için NWEA MAP Growth ve özellikle New York City\'de kullanılan OLSAT (Otis-Lennon Okul Yetenek Testi). Hangi testin uygulandığı eyalet ve ilçe politikasına göre farklılık gösterir.',
+      },
+      {
+        q: 'Çocuğum için üstün zekâ testini nasıl talep ederim?',
+        a: 'Yönlendirme başlatmak için çocuğunuzun okul müdürü ya da ilçenin üstün zekâ koordinatörüyle iletişime geçin. Çoğu ilçenin genellikle sonbaharda bir yönlendirme penceresi bulunmaktadır. Okul yanıt vermezse yazılı olarak değerlendirme talep edin — pek çok eyalette ilçenin belirli bir süre içinde yanıt verme yükümlülüğü vardır. Bağımsız olarak özel bir psikolojik değerlendirme de yaptırabilirsiniz.',
+      },
+      {
+        q: 'Üstün zekâlı bir çocuk ile yüksek başarılı bir çocuk arasındaki fark nedir?',
+        a: 'Yüksek başarılı öğrenciler çok çalışarak, talimatlara uyarak ve övgüye olumlu yanıt vererek okula iyi performans gösterir. Üstün zekâlı öğrencilerin ise alışılmışın dışında bilişsel kapasiteleri vardır; bu durum genellikle karmaşık kavramları hızla kavrama, alışılmadık düşünme biçimi ve zaman zaman sıradan okul temposundan duyulan hayal kırıklığıyla kendini gösterir. Üstün zekâlı öğrencilerin önemli bir kısmı okulda yüksek başarı sergilemiyor — can sıkıntısı yaşıyor, yetersiz destekleniyor ya da çift istisnai (üstün zekâlı ve aynı zamanda öğrenme güçlüğü olan) durumda bulunuyor.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun uluslararası arenada nerede durduğunu görün',
+      body: 'Bilişsel değerlendirmeler tarafından uluslararası ölçekte kullanılan standartlaştırılmış puan ve yüzdelik sıralaması ile ücretsiz uyarlanabilir değerlendirme.',
+      label: 'Ücretsiz Değerlendirmeyi Başlat',
+      href: '/auth/register',
+    },
+  },
+  {
+    slug: 'ust-zeka-testine-nasil-hazirlanilir',
+    contentSlug: 'how-to-prepare-gifted-test',
+    title: 'Üstün Zekâ Testine Nasıl Hazırlanılır: ABD\'li Aileler için Pratik Rehber',
+    shortTitle: 'Üstün Zekâ Testine Nasıl Hazırlanılır 2026',
+    description:
+      'Üstün zekâ testine hazırlanılabilir mi? Bu rehber CogAT, OLSAT ve NNAT için neyin geliştirilebileceğini ve pratikle yanıt veren spesifik becerileri nasıl kazandıracağınızı ele alır.',
+    tldr: 'ABD üstün zekâ testlerine (CogAT, OLSAT) hazırlanmak soyut akıl yürütmeye odaklanır çünkü bu testler öğrenilmiş bilgi yerine bilişsel yeteneği ölçer. En geliştirilebilir bileşenler matris akıl yürütme, uzamsal akıl yürütme ve sözel olmayan örüntü tanımadır — bunların tümü yapılandırılmış pratikle gelişim gösterir.',
+    date: '2026-10-07',
+    dateModified: '2026-10-07',
+    readTime: '8 dk okuma',
+    tags: ['Üstün Zekâ Testi', 'CogAT', 'NNAT', 'ABD Eğitimi', 'Hazırlık'],
+    faqs: [
+      {
+        q: 'Üstün zekâ testine hazırlanılabilir mi?',
+        a: 'Teste göre değişir. WISC-V gibi bireysel IQ testleri anlamlı hazırlığa yanıt vermez — altta yatan bilişsel yeteneği ölçerler ve etkili çalışma materyali mevcut değildir. CogAT, NNAT ve OLSAT gibi grup tabanlı akıl yürütme testleri daha fazla hazırlığa yanıt verir: soru formatlarına aşinalık, matris akıl yürütme pratiği ve kelime dağarcığı geliştirme gerçek anlamda ilerleme sağlar.',
+      },
+      {
+        q: 'CogAT\'a hazırlanmanın en iyi yolu nedir?',
+        a: 'CogAT sözel bölümü için: geniş çaplı okuma ve bilinçli kelime dağarcığı geliştirme. Sayısal bölüm için: sayı dizisi pratiği ve sayı bulmaca kitapları (KenKen, Sudoku). Sözel olmayan bölüm için: IQ tipi akıl yürütme kitaplarında şekil matrisi ve şekil sınıflandırma pratiği. Anlamlı sonuçlar için testten 6–12 ay önce başlayın — son birkaç haftadaki yoğun çalışma minimal iyileşme sağlar.',
+      },
+      {
+        q: 'ABD\'de çocuklar üstün zekâ testlerini kaç yaşında alır?',
+        a: 'Üstün zekâ tanılaması genellikle Anaokulu veya 1. Sınıfta (5–7 yaş) grup tarama testleriyle başlar. Eşiğin üzerinde tarama yapılan çocuklar için bireysel IQ testi çoğunlukla 2. veya 3. Sınıfta (7–9 yaş) uygulanır. Bazı ilçeler 5.–6. Sınıfta ikinci bir belirleme fırsatı olarak yeniden değerlendirme yapar; bu geç gelişen çocuklara avantaj sağlar.',
+      },
+      {
+        q: 'Üstün zekâ testine ne kadar süre hazırlanılmalıdır?',
+        a: 'CogAT veya NNAT gibi hazırlığa yanıt veren testler için tutarlı beceri geliştirmeye yönelik 6–12 aylık bir hazırlık en iyi sonucu verir. Günlük okuma, haftalık akıl yürütme bulmacaları ve aylık süreli uygulama seanslarını kapsayan bir program ideal seçenektir. WISC-V gibi IQ testleri için içerik hazırlığı yerine kaygıyı azaltmaya ve çocuğunuzu test ortamıyla tanıştırmaya odaklanın.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun uluslararası arenada nerede durduğunu görün',
+      body: 'Dünya genelindeki üstün zekâ tanılamasında kullanılan standartlarla aynı kıyaslamalı — ücretsiz uyarlanabilir değerlendirme ile standartlaştırılmış puan ve yüzdelik sıralama.',
+      label: 'Ücretsiz Değerlendirmeyi Başlat',
+      href: '/auth/register',
+    },
+  },
+  {
+    slug: 'dijital-pazarlama-is-deneyimi-ogrenci-yorumlari',
+    contentSlug: 'digital-marketing-work-experience-student-reviews',
+    title: 'Dijital Pazarlama İş Deneyimi: Öğrenci Yorumları ve Gerçekte Neler Yapıldığı',
+    shortTitle: 'Dijital Pazarlama İş Deneyimi: Öğrenci Yorumları',
+    description:
+      'Dijital pazarlama iş deneyimi gerçekte nasıl geçiyor? Öğrenciler ne yaptıklarını ve onları ne şaşırttığını paylaşıyor; ayrıca İngiltere\'de staj yeri nasıl bulunur.',
+    tldr: 'Okul çağındaki öğrenciler için dijital pazarlama iş deneyimi genellikle sosyal medya içeriği yazmayı, Google Analytics veya Meta Ads performansını analiz etmeyi, rakip araştırması yapmayı ve e-posta pazarlamasına destek vermeyi kapsar. Springpod ve Forage aracılığıyla gerçek işverenlerden yapılandırılmış sanal iş deneyimi programlarına erişilebilir.',
+    date: '2026-10-07',
+    dateModified: '2026-10-07',
+    readTime: '9 dk okuma',
+    tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Dijital Pazarlama'],
+    faqs: [
+      {
+        q: 'Dijital pazarlama iş deneyiminde gerçekte ne yapılır?',
+        a: 'Günlük görevler genellikle sosyal medya içeriği yazmayı, Google Analytics veya Meta Ads Manager\'da kampanya performansını analiz etmeyi, rakip araştırması yapmayı, e-posta pazarlamasına yardım etmeyi, müşteri veya strateji toplantılarına katılmayı ve blog ya da sosyal kanallar için içerik üretmeyi kapsar. En değerli stajlar size gerçek bir son tarihi ve gerçek geri bildirim içeren spesifik bir proje verir — bir içerik takvimi, bir kampanya raporu veya bir anahtar kelime araştırması belgesi. Öğrenciler tutarlı biçimde somut bir teslimat yapmanın deneyimi özgeçmiş ve kişisel beyan için çok daha işlevsel kıldığını bildiriyor.',
+      },
+      {
+        q: 'Öğrenciler stajdan sonra dijital pazarlama hakkında ne düşünüyor?',
+        a: 'Çoğu öğrenci beklemedikleri yönleri keşfediyor: veri analizinin hacmi, yaratıcı iterasyonun temposu ve açık ve hızlı yazmanın önemi. Problem çözmeyi ve hızlı sonuçlar görmeyi seven öğrenciler dijital pazarlamayı beklentilerinden daha ilgi çekici buluyor. Tamamen yaratıcı iş bekleyenler ise analitik boyutun beklediklerinden daha baskın olduğunu fark ediyor. Her iki sonuç da değerlidir: bir dereceye bağlanmadan önce bir kariyerin gerçekte neyi içerdiğini bilmek tam olarak iş deneyiminin sağladığı şeydir.',
+      },
+      {
+        q: 'Dijital pazarlama iş deneyimi üniversite başvurusu için faydalı mı?',
+        a: 'Evet — özellikle işletme, pazarlama, iletişim ve veri bilimi programları için. Gerçek bir sosyal medya kampanyası yürüten, bir Google Analytics raporu yorumlayan veya bir içerik takvimini yöneten bir öğrencinin yazdığı kişisel beyan soyut ilgi iddialarının yerine spesifik ve kanıtlanmış gözlemler içerir. Kabul okuyucuları "pazarlamaya tutkuyla bağlı olduklarını" iddia eden yüzlerce başvuruyla ilgilenir — bir CPM veya hemen çıkma oranının ne anlama geldiğini gerçekten açıklayabilen öğrenciler ise çok daha azdır.',
+      },
+      {
+        q: 'Öğrenci olarak dijital pazarlama iş deneyimini nasıl bulabilirim?',
+        a: 'Dört ana yol bulunmaktadır: dijital pazarlama ajanslarına doğrudan başvuru (pek çoğu okul çağındaki öğrencileri özellikle yaz döneminde bir ya da iki haftalık staj için kabul eder), büyük şirketlerdeki dahili pazarlama departmanları, sanal iş deneyimi programları (Springpod ve Forage, gerçek işverenlerden yapılandırılmış dijital pazarlama programları sunar) ve Bright Network ya da RateMyPlacement gibi platformlar. Ajanslar genellikle en geniş maruziyeti sağlar — küçük bir ajansta geçirilen bir hafta tek bir stajda SEO, ücretli medya, içerik ve analitiği kapsayabilir.',
+      },
+    ],
+    cta: {
+      heading: 'Dijital pazarlama iş deneyimine hazır mısın?',
+      body: '14 yaş üstü öğrenciler için ücretsiz 34 soruluk uyarlanabilir değerlendirme. Dijital Pazarlama hazırlık raporunu al ve her başvuruda referans gösterebileceğin somut bir belgeye sahip ol.',
+      label: 'Ücretsiz başvur — Dijital Pazarlama',
+      href: '/digital-marketing',
+    },
+  },
+  {
+    slug: '16-yasinda-is-hayatina-nasil-baslanir',
+    contentSlug: 'how-to-start-business-at-16',
+    title: '16 Yaşında İş Hayatına Nasıl Başlanır: Platformlar, Kazanç ve Üniversiteler Ne Düşünür',
+    shortTitle: '16 Yaşında İş Hayatına Nasıl Başlanır',
+    description:
+      '16 yaşında İngiltere\'de bir işletme kurulabilir mi? Evet. Erişilebilir platformlar, gerçekçi kazanç rakamları ve erken iş deneyiminin üniversite başvurularını nasıl güçlendirdiği.',
+    tldr: 'İngiltere\'deki 16 yaşındaki bir kişi şirkete gerek kalmadan yasal olarak şahıs şirketi olarak ticaret yapabilir. Erişilebilir platformlar arasında MyTutor, Tutorful, Etsy ve Depop yer alır; kişisel muafiyet sınırı olan 12.570 £\'un altındaki kazançlar vergiden muaftır. İşletme, ekonomi ve hukuk programları için Russell Group kabul sürecinde gerçek bir işletme yürütmek — yarı zamanlı bile olsa — açıkça değer kazandırmaktadır.',
+    date: '2026-10-07',
+    dateModified: '2026-10-07',
+    readTime: '11 dk okuma',
+    tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'İş Girişimi'],
+    faqs: [
+      {
+        q: '16 yaşındaki biri İngiltere\'de yasal olarak bir işletme kurabilir mi?',
+        a: 'Evet. İngiltere\'de iş kurmak için asgari bir yaş sınırı yoktur. 16 yaşındaki bir kişi şahıs şirketi olarak kayıt yaptırabilir, bazı sağlayıcılarda ticari banka hesabı açabilir ve yasal olarak gelir elde edebilir. Ancak 18 yaşın altındakiler limited şirkette yönetici olarak yer alamaz, belirli durumlarda ebeveyn rızası olmaksızın bağlayıcı sözleşmelere giremez ve kişisel muafiyet sınırını (2024/25 için 12.570 £) aşan kazançlar gelir vergisine tabidir. Çoğu genç girişimci bu eşiğin çok altında kalır.',
+      },
+      {
+        q: 'Online ders vererek 16 yaşında ne kadar kazanılabilir?',
+        a: 'MyTutor\'da yeni öğretmenler genellikle saatte 18–22 £ ile başlar; güçlü değerlendirmelere sahip deneyimliler saatte 30–40 £\'a ulaşır. Tutorful\'da ücretler kullanıcı tarafından belirlenir — öğrenci öğretmenlerin büyük bölümü saatte 15–25 £ talep eder. Haftada 5 saat saatte 20 £ üzerinden ders vermek aylık yaklaşık 400 £, yılda 4.800 £ gelir sağlar; bu rakam İngiltere gelir vergisi eşiğinin oldukça altındadır.',
+      },
+      {
+        q: '16 yaşında iş kurmak üniversite başvurusuna yardımcı olur mu?',
+        a: 'Önemli ölçüde — özellikle işletme, ekonomi, hukuk ve girişimcilik programları için. Gerçek bir işletme yürütmeyi anlatan (müşteri yönetimi, fiyatlandırma, geri bildirime yanıt verme, gelir takibi) bir kişisel beyan teorik ilgi iddiası içeren birinden kesinlikle daha ikna edicidir. Russell Group\'un rekabetçi programlara yönelik kabul kılavuzları ticari inisiyatifin kanıtını açıkça değerli bulmaktadır. Young Enterprise Şirket Programı da resmi tanınırlık içeren yapılandırılmış, okul onaylı bir versiyon sunmaktadır.',
+      },
+      {
+        q: 'Young Enterprise Şirket Programı nedir?',
+        a: 'Young Enterprise, ortaokullarda Şirket Programı\'nı yürüten bir İngiltere hayır kurumudur; öğrenciler gerçek bir şirket kurar, görev dağılımı yapar, sermaye toplar, bir ürün ya da hizmet üretir ve satar, bölgesel ve ulusal düzeyde yarışır. 5.500\'den fazla okulda aktif olan İngiltere\'nin en tanınmış okul çağı iş programıdır. Katılım belgelenmiş girişimcilik deneyimi olarak sayılmakta ve bazı Russell Group üniversitelerinin kabul kılavuzlarında ticari inisiyatifin kanıtı olarak açıkça referans gösterilmektedir.',
+      },
+    ],
+    cta: {
+      heading: 'İş dünyasına hazırlığını kanıtlamaya hazır mısın?',
+      body: '14 yaş üstü öğrenciler için ücretsiz 34 soruluk uyarlanabilir değerlendirme. Kişiselleştirilmiş iş hazırlık raporunu al ve her üniversite başvurusuna somut bir şey ekle.',
+      label: 'Ücretsiz başvur — İş Girişimi',
+      href: '/business',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

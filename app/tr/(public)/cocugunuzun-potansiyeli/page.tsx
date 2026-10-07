@@ -26,6 +26,16 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: `${BASE_URL}/tr/cocugunuzun-potansiyeli`,
+    languages: {
+      'en-GB': `${BASE_URL}/your-childs-potential`,
+      es: `${BASE_URL}/es/potencial-de-tu-hijo`,
+      fr: `${BASE_URL}/fr/potentiel-de-votre-enfant`,
+      tr: `${BASE_URL}/tr/cocugunuzun-potansiyeli`,
+      ar: `${BASE_URL}/ar/imkaniyat-tiflik`,
+      ru: `${BASE_URL}/ru/potentsial-vashego-rebyonka`,
+      zh: `${BASE_URL}/zh/haizi-de-qianli`,
+      'x-default': `${BASE_URL}/your-childs-potential`,
+    },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

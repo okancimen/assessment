@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   keywords: 'madde yanıt teorisi çocuklar, uyarlanabilir test MYT, standartlaştırılmış puan çocuklar, MAP tahmini, eğitim değerlendirme metodolojisi, uyarlanabilir test',
   alternates: {
     canonical: `${BASE_URL}/tr/metodoloji`,
-    languages: { tr: `${BASE_URL}/tr/metodoloji`, es: `${BASE_URL}/es/metodologia`, 'en-GB': `${BASE_URL}/methodology`, fr: `${BASE_URL}/fr/methodologie`, 'x-default': `${BASE_URL}/methodology` },
+    languages: { 'en-GB': `${BASE_URL}/methodology`, es: `${BASE_URL}/es/metodologia`, fr: `${BASE_URL}/fr/methodologie`, tr: `${BASE_URL}/tr/metodoloji`, ar: `${BASE_URL}/ar/manhajiyya`, ru: `${BASE_URL}/ru/metodologiya`, zh: `${BASE_URL}/zh/fangfalun`, 'x-default': `${BASE_URL}/methodology` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

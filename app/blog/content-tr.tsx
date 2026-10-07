@@ -6117,6 +6117,606 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'pisa-2025-global-education-crisis-what-parents-need-to-know': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Eylül 2026&apos;da OECD, PISA 2025 — Uluslararası Öğrenci Değerlendirme Programı — sonuçlarını yayımladı ve bu başlık eğitim bakanlarını, okul yöneticilerini ve ebeveynleri olduğu yerde dondurdu. Değerlendirmenin tarihinde ilk kez OECD ülkeleri; matematik, okuma ve fen olmak üzere üç temel alanda aynı anda tüm zamanların en düşük ortalama performansını kayıt altına aldı. 91 ülke ve ekonomiden 760.000&apos;den fazla öğrenci bu değerlendirmeye katıldı; bu rakam dünya genelinde 33 milyon 15 yaşındaki öğrenciyi temsil ediyor.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu geçici bir düşüş değil. Pandemi yıllarıyla ivme kazanan ve teknoloji kullanımındaki yapısal değişimlerle pekişen on yıllık bir eğilimin hızlanmasıdır. OECD&apos;nin kendi araştırmacıları sonuçları, her çocuğun yetişkin yaşamında başarılı olmak için ihtiyaç duyduğu temel becerilerin aşınmasına izin veren eğitim sistemleri için bir &ldquo;uyarı çanı&rdquo; olarak tanımlıyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Nedir ve Neden Önemlidir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA, OECD&apos;nin 2000&apos;den bu yana her üç yılda bir yürüttüğü Uluslararası Öğrenci Değerlendirme Programı&apos;dır. Zorunlu öğrenimin sonuna yaklaşan 15 yaşındaki öğrencileri matematik, okuma okuryazarlığı ve fen alanlarında test eder. 2025&apos;te 91 ülke ve ekonomi katıldı; sonuçlar küresel olarak tahminen 33 milyon öğrenciyi temsil ediyor. Hiçbir eğitim araştırması bu ölçeğe ya da metodolojik titizliğe yaklaşamıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA önemlidir çünkü tek gerçek küresel kıyaslamadır. Ulusal sınavlar çocukların kendi ülke sistemi içinde nasıl karşılaştırıldığını gösterir — faydalı ama sınırlı. PISA her öğrenciye aynı soruları aynı koşullarda yöneltir ve her puanı aynı uluslararası ölçeğe yerleştirir. Seçici üniversiteler, burs komiteleri ve uluslararası okullar &ldquo;uluslararası standartlara&rdquo; atıfta bulunduğunda kastettikleri bu değerlendirmedir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Matematik Krizi: On Yılda 22 Puan Kaybı</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD ortalama matematik puanları 2015 ile 2025 arasında 22 puan düştü. Bunu somut bir çerçeveye oturtmak gerekirse: araştırmacılar yaklaşık 20 PISA puan farkının yaklaşık bir yıllık okul eğitimine karşılık geldiğini tahmin ediyor. 22 puanlık düşüş, OECD ülkelerindeki ortalama 15 yaşındaki öğrencinin on yıl önceki yaşıtının bulunduğu matematiksel seviyenin bir yıldan fazla gerisinde performans sergilediği anlamına geliyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En iyi performans gösterenler Doğu Asya&apos;da yoğunlaşmaya devam ediyor. Singapur ve Çin&apos;in B-S-J-Z yetki alanları (Pekin, Şanghay, Jiangsu, Zhejiang) OECD ortalamasının çok üzerinde performanslarıyla dünyaya liderlik ediyor. Estonya, Japonya, Güney Kore ve Birleşik Krallık da küresel ilk 10&apos;da yer alıyor. Bu eğitim sistemlerini karakterize eden özellikler arasında yüksek beklentiler, güçlü öğretmen kalitesi ve okul saatlerinde görece sınırlı dijital dikkat dağınıklığı öne çıkıyor.
+        </p>
+        <Callout color="amber">
+          <strong>Bir yıllık eğitim ölçütü:</strong> Her 20 PISA puanı yaklaşık bir yıllık okul eğitimine eşdeğerdir. OECD&apos;nin 2015&apos;ten bu yana matematikte 22 puanlık düşüşü, bugünün ortalama çocuğunun aynı yıl sayısında okula gitmiş olmasına karşın 2015&apos;teki ortalama çocuktan bir yıldan fazla daha az matematiksel yetkinlikle yetişkinliğe adım attığı anlamına geliyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Okuma Çöküşü: 28 Puan ve Yeni Bir Okuma Biçimi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okumadaki gerileme matematikten daha dik ve sonuçları daha geniş çaplı. OECD ortalama okuma puanları 2015 ile 2025 arasında 28 puan düştü — yaklaşık bir buçuk yıllık eğitime eşdeğer. PISA 2025&apos;in ortaya koyduğu nitel değişim ise ham rakamın ötesinde bir sorun işaret ediyor: &ldquo;acele okuma&rdquo; — hızlı ama yüzeysel okuma, anlama yerine hız önceliği — oranı 2018 ile 2025 arasında neredeyse iki katına çıkarak OECD öğrencilerinin %9&apos;una ulaştı.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA öğrencilere bilgiyi nasıl değerlendirdiklerini sorduğunda yalnızca %46&apos;sı hem kaynak güvenilirliğini kontrol ettiğini hem de iddiaları değerlendirirken bilimsel kanıtı tercih ettiğini belirtti. Diğer bir deyişle, OECD ülkelerindeki 15 yaşındaki öğrencilerin yarısından azı yapay zeka çıktıları ve viral dezenformasyonla dolu bir bilgi ortamında gezinmek için gereken değerlendirme alışkanlıklarına sahip. Bu bir okuryazarlık krizi olduğu kadar epistemik bir krizdir de.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sınıfta Yapay Zeka: Çift Taraflı Kılıç</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025, öğrenciler arasındaki yapay zeka kullanımını sistematik biçimde ilk kez inceliyor ve bulgular çoğu yorumcunun öne sürdüğünden daha nüanslı ve daha kaygı verici. OECD öğrencilerinin %46&apos;sı yapay zeka sohbet robotlarını haftada bir veya daha sık kullandığını bildiriyor — yani gelişmiş dünyadaki 15 yaşındakilerin neredeyse yarısı yapay zeka araçlarına rutin olarak başvuruyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA, yapay zeka kullanımı ile akademik performans arasındaki ilişkiyi incelediğinde çarpıcı bir olumsuz ilişki saptadı: belirli okul ödevi görevleri için yapay zeka kullanan öğrenciler, bu görevleri kendi bilişsel çabasıyla yapan öğrencilerden fen puanında yaklaşık 20 puan geride kalıyor. Mekanizmayı anlamak zor değil: yapay zeka bilgi ve beceri inşa eden bilişsel işi üstlendiğinde öğrenci bu süreçten dışlanıyor. Görev tamamlanıyor ama öğrenme gerçekleşmiyor.
+        </p>
+        <ul className="space-y-4 mb-6">
+          <Bullet>
+            <strong>OECD öğrencilerinin %46&apos;sı</strong> yapay zeka sohbet robotlarını haftada bir veya daha sık kullanıyor.
+          </Bullet>
+          <Bullet>
+            <strong>~20 puan daha düşük fen puanları</strong>, özetleme, taslak oluşturma ve araştırma gibi belirli ödev görevleri için yapay zeka kullananlarla ilişkili.
+          </Bullet>
+          <Bullet>
+            <strong>Yapay zeka okuryazarlığı eğitimi</strong> okulda verilen öğrencilerin performansı biraz daha iyi — ancak bu eğitim sosyoekonomik açıdan avantajlı öğrencilerde daha yaygın, yeni bir &ldquo;yapay zeka uçurumu&rdquo; yaratıyor.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bu Sonuçlar Aileler İçin Ne Anlama Geliyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA ulusal ortalamaları gösterir. Bireysel çocuklar hakkında bilgi veremez. PISA&apos;nın ortaya koyduğu veriler bağlam sağlar; asıl soru çocuğunuzun bu dağılımın neresinde yer aldığıdır. Ülke içi farklılık, ebeveynlerin çoğunun bilmediği ve en önemli olan rakamdır. Tipik bir OECD ülkesinde en yüksek ve en düşük performans gösteren öğrenciler arasındaki fark 200 PISA puanının üzerindedir — aynı yaş grubunda on yıldan fazla eğitim eşdeğeri. Ulusal sıralama, bireysel çocuğunuzun konumu hakkında neredeyse hiçbir kullanışlı bilgi vermez.
+        </p>
+        <Callout color="indigo">
+          PISA ortalaması sistemleri anlatır. Eduentry çocuğunuzu anlatır.
+        </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4 mb-4">
+          Aynı uluslararası ölçekte bireysel bir kıyaslama yapan ve ebeveynlere PISA&apos;nın sağlayamadığı bilgiyi sunan bir platform, ulusal istatistiklerden kişisel eyleme geçişte tam olarak ihtiyaç duyulan bilgiyi sağlar. Eduentry, 6–17 yaş arası çocukları PISA ile aynı ölçekte matematik, İngilizce, sözel ve sözel olmayan akıl yürütme alanlarında test eder. Bir saat içinde küresel yüzdelik sıranızı öğrenebilirsiniz — ücretsiz.
+        </p>
+      </section>
+    </>
+  ),
+
+  'isee-ssat-private-school-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Çocuğunuz ABD&apos;deki bağımsız (özel) okullara başvuruyorsa büyük olasılıkla ISEE (Bağımsız Okul Giriş Sınavı) ya da SSAT (Ortaöğretim Okul Kabul Testi)&apos;nden birini alması gerekecek. Her ikisi de geniş çapta kabul görüyor, ikisi de akıl yürütme ve akademik becerileri ölçüyor ve ikisi de öğrencilerin devlet okullarında karşılaştığı çoğu standart testten önemli ölçüde daha zor. Doğru testi seçmek ve ona doğru hazırlanmak çocuğunuzun başvurusunda anlamlı bir fark yaratabilir.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">ISEE ve SSAT Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>ISEE</strong>, Eğitim Kayıtları Bürosu (ERB) tarafından yönetilir ve dünya genelinde 1.200&apos;den fazla bağımsız okul tarafından kabul edilir. <strong>SSAT</strong> ise Secondary School Admission Test Board tarafından yönetilir ve 2.600&apos;ü aşkın bağımsız okul tarafından kabul edilir. Her iki test de 3. sınıftan 12. sınıfa kadar farklı kademeler için uygulanır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Baştan bilmeniz gereken en önemli nokta: her iki test de çocuğunuzu yalnızca diğer bağımsız okul başvurucularıyla karşılaştırır — genel öğrenci nüfusuyla değil. Bağımsız okul başvurucuları akademik açıdan oldukça seçkin bir havuz oluşturduğundan SSAT&apos;ta 50. yüzdelik bir puan, bağımsız okul başvurucularının medyanıdır; genel nüfusun medyanı değildir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">ISEE&apos;ye Genel Bakış</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          ISEE&apos;nin her biri belirli bir giriş sınıfı aralığı için tasarlanmış beş seviyesi vardır: İlkokul (2.–4. sınıf girişi), Alt (5.–6. sınıf), Orta (7.–8. sınıf), Üst (9.–12. sınıf) ve birincil kademeler için Primary düzeyi.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          ISEE (Alt&apos;tan Üst düzeye) beş bölümden oluşur: Sözel Akıl Yürütme (eşanlamlılar ve cümle tamamlama), Sayısal Akıl Yürütme, Okuma Anlama, Matematik Başarısı ve Deneme (puanlanmaz, ancak okullara gönderilir). Toplam test süresi yaklaşık 2 saat 40 dakikadır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Puanlar her bölüm için 760–940 ölçeğinde ve 1&apos;den 9&apos;a kadar stanin puanı olarak raporlanır (5 ortalama, 7–9 ortalamanın üzerinde). Okullar rekabetçi kurumlar için özellikle 7 ve üzeri staninlere odaklanır.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Önemli ISEE kuralı:</strong> Öğrenciler ISEE&apos;yi sınav başına yalnızca bir kez alabilir (Güz, Kış, İlkbahar). Yılda en fazla üç kez girilmesi mümkündür. Bu durum stratejik hazırlığı özellikle önemli kılar.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">SSAT&apos;a Genel Bakış</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          SSAT&apos;ın 3.–11. sınıflar için üç seviyesi bulunur: İlkokul (3.–4. sınıf, ölçek 900–1800), Orta (5.–7. sınıf, ölçek 1320–2130) ve Üst (8.–11. sınıf, ölçek 1500–2400).
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          SSAT (Orta ve Üst düzey) beş bölümden oluşur: Sözel (analogiler ve eşanlamlılar), Sayısal (iki matematik bölümü), Okuma Anlama ve Deneme (puanlanmaz). Sözel bölüm SSAT&apos;ın en zorlayıcı kısmı olarak değerlendirilir; analogiler gelişmiş kelime dağarcığı ve mantıksal akıl yürütme gerektirir.
+        </p>
+        <Callout color="amber">
+          <strong className="text-amber-800">Tahmin cezası:</strong> SSAT her yanlış yanıt için ¼ puan düşer (atlanan sorular için ceza yoktur). Bir veya iki seçeneği eleyebilen öğrenciler geri kalanlar arasından tahmin etmelidir. Gerçekten hiçbir fikri olmayanlar ise rastgele tahmin yerine soruyu atlamalıdır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">ISEE ile SSAT Arasındaki Temel Farklar</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Etken</th>
+                <th className="text-left p-4 font-semibold text-gray-700">ISEE</th>
+                <th className="text-left p-4 font-semibold text-gray-700">SSAT</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Tekrar sıklığı', 'Dönem başına bir kez (maks. yılda 3×)', 'Sınır yok (aylık tekrar mümkün)'],
+                ['Tahmin cezası', 'Ceza yok', 'Yanlış başına −¼ puan'],
+                ['Sözel format', 'Eşanlamlılar + cümle tamamlama', 'Analogiler + eşanlamlılar'],
+                ['Sayısal format', 'Sayısal akıl yürütme + matematik başarısı', 'İki sayısal matematik bölümü'],
+                ['Kabul eden okul sayısı', '1.200+', '2.600+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-600">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Hazırlık Zaman Çizelgesi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çoğu öğrenci için 3–6 aylık yapılandırılmış hazırlık her iki testte de anlamlı iyileşme sağlıyor. Sözel bölüm (her iki testte) uzun vadeli kelime dağarcığı geliştirmeye iyi yanıt veriyor — testten önceki ayda yoğun tekrar yerine 6–12 aylık geniş okuma ve bilinçli kelime pratiği daha etkili.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sayısal bölüm hedefli konu tekrarına yanıt veriyor: tanısal değerlendirme kullanarak çocuğunuzun en zayıf olduğu matematik konularını belirleyin ve hazırlık süresini güçlü yönlere değil boşluklara orantılı biçimde ayırın.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Son 6 haftada, gerçek koşullarda — aynı ortam, aynı zamanlama, kesinti yok — zamanlanmış tam deneme testlerine geçin. Her hatayı sistematik olarak gözden geçirin. Amaç mükemmel puan değil, hedef okullara yönelik çocuğunuzun gerçek akademik yeteneğini yansıtan bir puan elde etmektir.
+        </p>
+      </section>
+    </>
+  ),
+
+  'gifted-program-testing-guide': (
+    <>
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Üstün Zekâ Programı Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Üstün zekâ programı, genellikle CogAT, WISC-V, OLSAT veya NNAT gibi yetenek ve başarı testleri aracılığıyla akademik açıdan ileri ya da bilişsel olarak üstün olduğu belirlenen çocuklar için tasarlanmış yapılandırılmış bir eğitim yerleşimidir. ABD&apos;de üstün zekâ tanılaması ilçe düzeyinde gerçekleşir ve genellikle birden fazla ölçütte en üst %2–5&apos;te puan eşiklerinin karşılanmasını gerektirir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          GT programları ABD devlet eğitimindeki en çok aranan yerleşimler arasındadır ve süreç ilk kez gezinen aileler için kafa karıştırıcı olabilir. Bu rehber üstün zekâ programlarının nasıl işlediğini, hangi testlerin kullanıldığını, çocukların hangi puanlara ihtiyaç duyduğunu ve etkili hazırlığın nasıl yapılacağını açıklıyor.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          {[
+            { type: 'Destek amaçlı zenginleştirme', desc: 'Öğrenciler ana sınıflarında kalır ancak belirli haftalık saatler için GT uzman eğitimine çekilir. İlkokulda en yaygın format.' },
+            { type: 'Bağımsız GT sınıfı', desc: 'Tanımlanmış üstün zekâlı öğrencilerin tam okul gününü birlikte geçirdiği, ana akım okul içinde ayrı GT sınıfı ya da kümesi.' },
+            { type: 'Mıknatıs GT okulu', desc: 'Üstün zekâlı öğrencilere adanmış, genellikle ayrı bir başvuru ve giriş sınavı gerektiren okul. Giriş en rekabetçi ve en yüksek puanları gerektiriyor.' },
+            { type: 'Genel eğitim içinde GT hizmetleri', desc: 'Bazı ilçeler ayrı yerleştirme yerine farklılaştırılmış öğretim yoluyla zenginleştirme sunuyor.' },
+          ].map(({ type, desc }) => (
+            <div key={type} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{type}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{desc}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Üstün zekâ eğitimi ABD&apos;de federal düzeyde zorunlu değildir. Her eyalet kendi &ldquo;üstün zekâ&rdquo; tanımını, kendi belirleme kriterlerini ve kendi finansman düzeylerini belirler. Bu nedenle süreç, kullanılan testler ve gerekli eşikler eyaletten eyalete, hatta ilçeden ilçeye önemli ölçüde farklılık gösterir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Üstün Zekâ Programlarında Kullanılan Testler</h2>
+        <div className="space-y-5">
+          {[
+            {
+              name: 'CogAT (Bilişsel Yetenekler Testi)',
+              publisher: 'Riverside Insights',
+              detail: 'ABD\'de en yaygın kullanılan grup tabanlı üstün zekâ tarama testi. Sözel akıl yürütme (kelime analogileri, cümle tamamlama, sözel sınıflandırma), sayısal akıl yürütme (sayı analogileri, sayı dizileri) ve sözel olmayan akıl yürütme (şekil matrisleri, kâğıt katlama, şekil sınıflandırma) ölçer. GT uygunluğu için çoğu ilçe bileşik puanda 95. yüzdelik ve üzerini gerektirir.',
+            },
+            {
+              name: 'NWEA MAP Growth',
+              publisher: 'Northwest Evaluation Association',
+              detail: 'Okuma, Matematik, Dil Kullanımı ve Fen alanlarını ölçen bilgisayar uyarlamalı başarı testi. Puanlar RIT (Rasch Unit) puanları olarak raporlanır. MAP, birçok ilçede zenginleştirme yönlendirmeleri ve üstün zekâ tanılaması için yaygın biçimde kullanılıyor.',
+            },
+            {
+              name: 'WISC-V (Wechsler Çocuk Zekâ Ölçeği)',
+              publisher: 'Pearson',
+              detail: 'Lisanslı okul veya klinik psikolog tarafından uygulanan bireysel IQ değerlendirmesi. Tam Ölçek IQ (FSIQ) ve çeşitli bileşik puanlar üretir. Başarı testleriyle aynı biçimde hazırlanamaz. Çoğu üstün zekâ programı en yüksek düzeyde tanımlama için FSIQ ≥ 130 (98. yüzdelik ve üstü) gerektirir.',
+            },
+            {
+              name: 'OLSAT (Otis-Lennon Okul Yetenek Testi)',
+              publisher: 'NCS Pearson',
+              detail: 'Öncelikle New York City\'nin Üstün Zekâlı ve Yetenekli programında kullanılır. Sözel ve sözel olmayan akıl yürütmeyi ölçer. NYC\'nin üstün zekâ programı tarihsel olarak ilçe geneli programlar için 97. yüzdelik ve üzerini, şehir geneli programlar için ise 99. yüzdelik ve üzerini gerektirmiştir.',
+            },
+            {
+              name: 'NNAT (Naglieri Sözel Olmayan Yetenek Testi)',
+              publisher: 'Pearson',
+              detail: 'Soyut örüntü matrisleri kullanan sözel olmayan akıl yürütme testi. Çoğunlukla OLSAT veya CogAT ile birlikte kullanılır. Puanlar dilden bağımsızdır; İngilizce dil öğrencisi nüfuslar için faydalıdır.',
+            },
+          ].map(({ name, publisher, detail }) => (
+            <div key={name} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-0.5">{name}</div>
+              <div className="text-xs text-indigo-600 font-medium mb-3">{publisher}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzun Hangi Puana İhtiyacı Var?</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Program türü</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Tipik yüzdelik eşiği</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Standartlaştırılmış puan karşılığı</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Destek amaçlı zenginleştirme (tipik ilçe)', '90.–95. yüzdelik', '120–125'],
+                ['Bağımsız GT sınıfı', '95.–97. yüzdelik', '125–128'],
+                ['Rekabetçi mıknatıs GT okulu', '97.–99. yüzdelik', '128–135'],
+                ['NYC Üstün Zekâ (şehir geneli)', '99. yüzdelik ve üstü', '135+'],
+                ['Yüksek üstün zekâ programları', '99,9. yüzdelik', '145+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900 text-sm">{row[0]}</td>
+                  <td className="p-4 text-indigo-700 font-medium">{row[1]}</td>
+                  <td className="p-4 text-gray-600">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">Önemli:</strong> Çoğu ilçe çoklu kriter kullanır — test puanları tek girdi değildir. Sayısal eşiği az kaçıran bazı çocuklar güçlü öğretmen değerlendirmeleri veya portföy kanıtları temelinde GT programına yerleştiriliyor. Çocuğunuz sınırda ise tam tabloyu anlamak için GT koordinatörüyle görüşme talep etmeye değer.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzu Nasıl Hazırlarsınız?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Üstün zekâ testine hazırlanmak nüanslı bir konudur. WISC-V gibi IQ değerlendirmeleri anlamlı biçimde koçlanabilir değildir — bilişsel yeteneği ölçerler, öğrenilmiş bilgiyi değil. CogAT, NNAT ve OLSAT ise daha hazırlığa duyarlıdır çünkü maruz kalma ve pratikten etkilenen akıl yürütme becerilerini test ederler.
+        </p>
+        <ul className="space-y-4 mb-4">
+          <Check><strong>Tanı testi ile başlayın.</strong> Hazırlık materyallerine yatırım yapmadan önce çocuğunuzun mevcut yüzdelik konumunu anlamak için ücretsiz standartlaştırılmış değerlendirme kullanın.</Check>
+          <Check><strong>Spesifik test formatını pratik edin.</strong> Farklı testler farklı soru formatları kullanır. Çocuğunuzun ilçesinin kullandığı spesifik test için resmi pratik materyaller veya onaylı hazırlık kitapları kullanın.</Check>
+          <Check><strong>Temel becerileri zamanla geliştirin.</strong> Geniş okuma (sözel bölüm için), matematik bulmacaları (sayısal bölüm için) ve uzamsal bulmacalar (sözel olmayan bölüm için) 12 aylık bir ufukta testten önceki 4 haftada yoğun çalışmadan çok daha etkilidir.</Check>
+          <Check><strong>Bilgisayarda pratik yapın.</strong> Çoğu üstün zekâ tarama testi bilgisayar aracılıdır. Yalnızca kâğıt üzerinde pratik yapan çocuklar dijital testlerin zamanlaması ve arayüzüyle güçlük çekebilir.</Check>
+        </ul>
+      </section>
+    </>
+  ),
+
+  'how-to-prepare-gifted-test': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Üstün zekâ tanılama testi kadar ebeveyn kaygısına neden olan az şey vardır. Bu rehber kargaşayı gideriyor: üstün zekâ testlerinin gerçekte neyi ölçtüğünü, hangi testlerin hazırlığa duyarlı olduğunu ve evde gerçekçi, etkili bir hazırlık planının nasıl göründüğünü açıklıyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Üstün Zekâ Testleri Gerçekte Neyi Ölçüyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Üstün zekâ tanılamasında kullanılan testler aynı şeyi ölçmez ve bu durum hazırlık yaklaşımı açısından son derece önemlidir. Genel olarak testler iki kategoriye ayrılır:
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          <div className="border border-gray-100 rounded-xl p-5">
+            <div className="font-semibold text-gray-900 mb-2">Bilişsel yetenek testleri</div>
+            <p className="text-sm text-gray-500 leading-relaxed mb-3">WISC-V, Stanford-Binet gibi testler sıvı zekâyı — soyut akıl yürütme, bilgiyi çalışma belleğinde tutma ve önceki bilgiye dayanmadan yeni problemleri çözme yeteneğini — ölçer. IQ testlerine daha yakındır.</p>
+            <div className="text-xs font-semibold text-amber-700 bg-amber-50 rounded-lg px-3 py-2">Sınırlı hazırlık yanıtı — yalnızca aşinalık ve kaygı azaltma yoluyla iyileşme</div>
+          </div>
+          <div className="border border-gray-100 rounded-xl p-5">
+            <div className="font-semibold text-gray-900 mb-2">Akademik akıl yürütme testleri</div>
+            <p className="text-sm text-gray-500 leading-relaxed mb-3">CogAT, NNAT, OLSAT ve MAP Growth hem doğuştan gelen yetenek hem de birikimli bilgi tarafından etkilenen akıl yürütme becerilerini ölçer. Saf IQ testleri değildir — analojilere, sayı dizilerine ve matrislere önceden maruz kalmak gerçekten önem taşır.</p>
+            <div className="text-xs font-semibold text-emerald-700 bg-emerald-50 rounded-lg px-3 py-2">Orta düzey hazırlık yanıtı — hedefli pratik gerçek iyileşme sağlar</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Adım: Başka Hiçbir Şeyden Önce Taban Değerlendirmesi Yapın</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Herhangi bir hazırlık materyali satın almadan önce çocuğunuzun mevcut durumunu anlamak için ücretsiz standartlaştırılmış değerlendirme yapın. Bu iki amaca hizmet eder: çocuğunuzun hedef eşikten ne kadar uzakta olduğunu söyler ve hangi spesifik alanlara en çok odaklanılması gerektiğini belirler.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry sözel akıl yürütme, sözel olmayan akıl yürütme, İngilizce ve matematik — CogAT ve NWEA MAP tarafından test edilen alanların aynıları — ile ortalama 100, SS 15 ölçeğinde standartlaştırılmış puan üretir; bu ölçek ABD üstün zekâ değerlendirmelerinin büyük bölümü tarafından kullanılıyor.
+        </p>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Pratik kural:</strong> Tanı testinde %90 ve üzerinde olan bir çocuk 6 aylık hedefli hazırlıkla makul biçimde %95 ve üzerini hedefleyebilir. %70. yüzdelikte olan ve en rekabetçi programların gerektirdiği %99 ve üzerini hedefleyen bir çocuğun bu farkı yalnızca hazırlıkla kapatması olası değildir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Adım: Hangi Testi Alacağınızı Tam Olarak Bilin</h2>
+        <div className="space-y-4">
+          {[
+            {
+              test: 'CogAT (Bilişsel Yetenekler Testi)',
+              battery: 'Sözel, Sayısal, Sözel Olmayan',
+              prepApproach: 'Sözel bölüm: kelime dağarcığı, kelime analogileri, cümle tamamlama. Sayısal bölüm: sayı dizileri, denklem oluşturma, sayı analogileri. Sözel olmayan bölüm: şekil matrisleri, kâğıt katlama, şekil sınıflandırma. Resmi CogAT pratik materyalleri veya yayınevi onaylı kitaplar kullanın.',
+            },
+            {
+              test: 'NNAT (Naglieri Sözel Olmayan Yetenek Testi)',
+              battery: 'Yalnızca sözel olmayan (örüntü matrisleri)',
+              prepApproach: 'Görsel örüntü tamamlama, şekil dizileri ve uzamsal akıl yürütme pratiği yapın. Soyut matris akıl yürütmesine odaklanan kitap ve uygulamalar doğrudan ilgilidir. NNAT tamamen sözel olmayan — hazırlanılacak sözel veya matematik bileşeni yoktur.',
+            },
+            {
+              test: 'OLSAT (Otis-Lennon Okul Yetenek Testi)',
+              battery: 'Sözel ve Sözel Olmayan',
+              prepApproach: 'Sözel bölüm: yönergeleri takip etme, zıt anlamlılar, cümle düzenleme, mantıksal seçim. Sözel olmayan bölüm: örüntü dizileri, sayı çıkarımı, şekilsel akıl yürütme. OLSAT sözel bölümü CogAT sözel bölümünden belirgin biçimde farklıdır — OLSAT&apos;a özgü materyallerle hazırlanın.',
+            },
+            {
+              test: 'WISC-V (Wechsler Zekâ Ölçeği)',
+              battery: 'VCI, VSI, FRI, WMI, PSI',
+              prepApproach: 'WISC-V psikolog tarafından bireysel olarak uygulanır ve altta yatan bilişsel yeteneği ölçer. Resmi hazırlık önerilmez — kaygıyı artırabilir. Çocuğunuzun iyi dinlenmiş, test ortamıyla rahat ve süreçten ne bekleneceğini biliyor olmasını sağlamaya odaklanın.',
+            },
+          ].map(({ test, battery, prepApproach }) => (
+            <div key={test} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-bold text-gray-900 mb-0.5">{test}</div>
+              <div className="text-xs font-medium text-indigo-600 mb-3">Bölümler: {battery}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{prepApproach}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Adım: Temel Becerileri Zamanla İnşa Edin</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Hazırlığa duyarlı testler (CogAT, NNAT, OLSAT) için en etkili hazırlık, son 4 haftada soru formatlarını ezberlemek yerine 6–18 aylık bir ufukta temel bilişsel becerileri geliştirerek ilerler.
+        </p>
+        <div className="space-y-5">
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-2">Sözel bölüm performansı için</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Geniş okuma en güçlü kaldıraçtır. Kurgu, kurgu dışı ve karmaşık metinleri kapsayan geniş çaplı okuma erken yaştan itibaren kelime dağarcığı, analogik akıl yürütme ve cümle düzeyi kavramayı geliştirerek doğrudan sözel bölüm performansına katkıda bulunur. Günde 20–30 dakika tutarlı biçimde korunan okuma, 12 aylık bir süreçte herhangi bir kelime kartı programını geride bırakır.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-2">Sayısal bölüm performansı için</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Sayısal bölüm hesaplamayı değil matematiksel akıl yürütmeyi test eder. Günlük zihinsel aritmetik, sayı bulmaca kitapları (KenKen, Sudoku, sayı dizisi çalışma kâğıtları) ve mantıksal çıkarım gerektiren matematiksel oyunlar CogAT&apos;ın test ettiği sayısal akıl yürütme becerilerini geliştirir.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-2">Sözel olmayan / uzamsal bölüm performansı için</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Uzamsal akıl yürütme becerileri fiziksel ve görsel nesnelerle uygulamalı uğraş yoluyla gelişir. Lego (özellikle karmaşık teknik setler), tangram bulmacaları, 3B şekil oyuncakları, satranç, origami ve görsel örüntü etkinlikleri uzamsal akıl yürütmeyi geliştirir. Bu etkinlikler özellikle uzamsal becerilerin hızla geliştiği küçük çocuklar (5–9 yaş) için etkilidir.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  ),
+
+  'digital-marketing-work-experience-student-reviews': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Öğrencilerin dijital pazarlama iş deneyiminin nasıl geçeceğini hayal ettikleri ile gerçekte nelerle karşılaştıkları arasındaki uçurum, erken kariyer gelişimindeki en öğretici boşluklardan biridir. Çoğu yaratıcı bir ortam — içerik fikirleri, kampanyalar, marka kararları — bekler. Karşılaştıkları şey ise her yaratıcı seçimin ölçüldüğü, tekrarlandığı ve çoğunlukla sayılara dayalı olarak geri alındığı veri odaklı bir disiplindir. Bu sürpriz — ve öğrencilerin bununla nasıl başa çıktığı — dijital pazarlamayı ilk staj için en öğretici sektörlerden biri yapan şeydir.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu yazı öğrencilerin dijital pazarlama stajlarından tutarlı biçimde bildirdiklerini ele alıyor: günlük işin gerçekte ne içerdiğini, sektörün büyüme ve ölçek verilerini, onları şaşırtan şeyleri ve İngiltere&apos;de nasıl staj yeri bulunacağını.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dijital Pazarlama Neden? Sektörün Rakamları</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>İngiltere dijital reklam harcaması 2023&apos;te 29,6 milyar £&apos;u aştı</strong> (IAB UK / PwC), onu Avrupa&apos;nın en büyük reklam pazarı yapıyor.
+          </Bullet>
+          <Bullet>
+            <strong>Dijital pazarlama rolleri İngiltere&apos;de 2019–2023 arasında %32 büyüdü</strong> (LinkedIn Workforce Report), toplam istihdam artışının üç katından fazla. SEO, ücretli medya ve analitik roller en dik talep artışını yaşadı.
+          </Bullet>
+          <Bullet>
+            <strong>İngiltere&apos;deki lider mezun işverenlerinin pazarlama ve dijital bölümleri 2024&apos;te mezun alımını %7 artırmayı planladı</strong> (High Fliers Research, 2024) — bu erken maruziyeti ve kanıtlanmış ilgiyi daha değerli kılıyor.
+          </Bullet>
+          <Bullet>
+            <strong>İngiltere&apos;deki pazarlamacıların %71&apos;i ekibinde beceri eksikliği bildiriyor</strong> (CIM, 2023), özellikle veri analizi ve ücretli medyada. Doğrulanmış analitik ve alan bilgisiyle iş piyasasına giren öğrenciler işverenlerinin aktif olarak doldurmaya çalıştığı bir boşluğu kapatıyor.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dijital Pazarlama Stajında Gerçekte Ne Yapılır?</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>İçerik ve metin yazarlığı.</strong> Sosyal medya gönderileri yazmak, blog girişleri taslağı oluşturmak, ürün açıklamalarını düzenlemek ya da e-posta kampanya içeriği üretmek. Öğrenciler ne kadar çok yeniden yazmaya zaman harcandığına tutarlı biçimde şaşırıyor — dijital metinler çoğunlukla doğrudan A/B testi sonuçlarına dayalı olarak çok agresif biçimde düzenleniyor.
+          </Bullet>
+          <Bullet>
+            <strong>Analitik ve raporlama.</strong> Google Analytics 4, Meta Ads Manager veya Mailchimp&apos;ten veri çekmek; performans metriklerini özetlemek; basit panolar oluşturmak. Öğrenciler bunu beklediklerinden daha merkezi buluyor — ve rakamların ne anlama geldiğini anladıklarında daha ilgi çekici.
+          </Bullet>
+          <Bullet>
+            <strong>SEO ve anahtar kelime araştırması.</strong> Semrush veya Ahrefs ile arama terimlerini belirlemek, rakip içeriği incelemek, mevcut sayfalarda iyileştirme önermek. Arama amacının içerik kararlarını nasıl yönlendirdiğine kısaca giriş yapmak bile öğrencilerin kariyerlerinin geri kalanında içerik okuma ve tüketme biçimini yeniden şekillendiriyor.
+          </Bullet>
+          <Bullet>
+            <strong>Ücretli medya maruziyeti.</strong> Çoğu staj, ücretli arama veya sosyal kampanyaları yönetmek yerine izlemeyi kapsıyor. Öğrenciler bütçenin kanallar arasında nasıl dağıtıldığını, tekliflerin nasıl ayarlandığını ve performans hedeflerinin günlük kararları nasıl şekillendirdiğini gözlemliyor. Bu, çoğu öğrencinin gelirken en büyük bilgi boşluğunu ve giderken en büyük öğrenmeyi bildirdiği alan.
+          </Bullet>
+          <Bullet>
+            <strong>Müşteri ve strateji toplantıları.</strong> Brifinglerin nasıl alındığını, geri bildirimlerin nasıl ele alındığını, önceliklerin kampanya ortasında nasıl değiştiğini izlemek. Öğrenciler neredeyse evrensel biçimde bunu herhangi bir stajın en aydınlatıcı unsuru olarak bildiriyor — çevrimiçi görünen cilalı çıktılar ile bunların arkasındaki dağınık insan süreci arasındaki uçurum.
+          </Bullet>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Teslimat en çok önem taşıyan şeydir.</strong> Gelerek pasif biçimde gölge uçuşu yapan öğrenciler, belirli bir projesi olan öğrencilerden çok daha az öğreniyor. İlk gün sorun: &ldquo;Hafta sonunda üretmemi istediğiniz spesifik bir çıktı var mı?&rdquo; Gerçekçi teslimatlar şunlar olabilir: bir içerik takvimi, rekabetçi analiz belgesi, anahtar kelime boşluk raporu veya üç öneri içeren kampanya özeti.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Varmadan Önce Öğrencilerin Bilmesi Gereken Metrikler</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>CTR (Tıklama Oranı)</strong> — bir reklam veya bağlantıyı gördükten sonra tıklayan kişilerin yüzdesi. Görüntülü reklamcılıkta %1–2 CTR ortalama sayılır; %3–5+ güçlüdür.
+          </Bullet>
+          <Bullet>
+            <strong>CPM (Bin Başına Maliyet)</strong> — 1.000 kişiye reklam göstermenin maliyeti. Meta&apos;daki İngiltere ortalama CPM değerleri çoğu kitle için 4–8 £ arasındadır; LinkedIn iş kitlesi priminden dolayı 18–35 £&apos;a çıkar.
+          </Bullet>
+          <Bullet>
+            <strong>CPA (Edinim Başına Maliyet)</strong> — bir dönüşüm (satın alma, potansiyel müşteri, kayıt) elde etmenin maliyeti. Müşterilerin ve yöneticilerin en çok önemsediği rakamdır.
+          </Bullet>
+          <Bullet>
+            <strong>Etkileşim Oranı</strong> — GA4&apos;te hemen çıkma oranının yerini almıştır. Etkileşim oranının hemen çıkma oranını değiştirdiğini bilmek, öğrencinin aracın güncel sürümünü gerçekten kullandığına işaret eder.
+          </Bullet>
+          <Bullet>
+            <strong>Organik ve ücretli trafik</strong> — temel kanal ayrımı. Organik trafik SEO yoluyla kazanılır; ücretli trafik Google Ads, Meta Ads veya benzeri platformlar aracılığıyla satın alınır.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dijital Pazarlama Stajı Üniversite Başvurularını Nasıl Güçlendirir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İşletme, pazarlama, ekonomi, iletişim veya veri bilimi başvurusunda bulunan öğrenciler için dijital pazarlama iş deneyimi doğrudan ilgilidir ve kişisel beyanda genel ilgi iddiasından kanıtlanmış biçimde daha güçlüdür.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Fark önemlidir. Russell Group üniversitelerindeki rekabetçi işletme ve pazarlama kursları için kabul ekipleri kendini &ldquo;pazarlamaya tutkuyla bağlı&rdquo; olarak tanımlayan yüzlerce başvuru alır. &ldquo;Stajım sırasında %0,4 CTR&apos;ye sahip bir Facebook kampanyasını analiz ettim ve kitle hedeflemesini yeniden yapılandırarak CPM&apos;yi 9 £&apos;dan 5 £&apos;a düşürmeyi önerdim&rdquo; yazabilen öğrenci aynı iddiayı yapmıyor. Kanıt sunuyor.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Check><strong>İşletme ve Pazarlama dereceleri</strong> — iş deneyimi Warwick, Bath ve LSE&apos;nin rekabetçi programlarına yönelik kabul kılavuzlarında açıkça farklılaştırıcı olarak belirtiliyor.</Check>
+          <Check><strong>Veri Bilimi ve Analitik dereceleri</strong> — GA4 veya Meta Ads Manager gibi araçlardan gerçek performans verilerini yorumlama deneyimi, ders çalışmasının sağlayamadığı pratik veri okuryazarlığını kanıtlıyor.</Check>
+          <Check><strong>Ekonomi dereceleri</strong> — fiyatlandırma, rekabet ve kanal ekonomisinin canlı bir işletmede nasıl işlediğine dair maruz kalma, teorik kalan kişisel beyanları güçlendiren uygulamalı bağlam sağlıyor.</Check>
+          <Check><strong>İletişim ve Medya dereceleri</strong> — platform algoritmalarının, kitle hedeflemesinin ve içerik dağıtımının gerçekte nasıl çalıştığını anlamak, gerçek mesleki deneyime sahip başvurucuları ayırt eden bilgidir.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dijital Pazarlama Stajı Nasıl Bulunur?</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Yerel dijital ajanslarına doğrudan başvuru.</strong> Çoğu kasabada küçük ve orta ölçekli dijital ajanslar bulunur; bunlar formal staj başvurularıyla pek hedeflenmez. Bir veya iki haftalık gölge staj isteyen, ilgili çalışmalarına dair spesifik bir şeye değinen doğrudan kişiselleştirilmiş bir e-posta yüksek başarı oranına sahiptir — özellikle yaz stajı için Nisan–Mayıs&apos;ta gönderildiğinde.
+          </Bullet>
+          <Bullet>
+            <strong>Büyük şirketlerdeki dahili pazarlama ekipleri.</strong> Perakende, konaklama ve tüketici markaları dahili pazarlama işlevleri yürütüyor. Okul veya aile ağınızla bağlantılı — ya da dijital varlığını gerçekten incelediğiniz — bir şirketin pazarlama müdürüne yaklaşmak genellikle ilk staj için en verimli yoldur.
+          </Bullet>
+          <Bullet>
+            <strong>Sanal iş deneyimi platformları.</strong> Springpod ve Forage, gerçek işverenlerden dijital pazarlama yapılandırılmış programları sunuyor; yıl boyunca erişilebilir. Fiziksel stajların yerini tutmuyor ama mevcutsa güçlü bir ek.
+          </Bullet>
+          <Bullet>
+            <strong>Büyük kuruluşlarda formal programlar.</strong> Google, WPP, Publicis ve büyük perakendecilerin pazarlama bölümleri öncelikle 12. ve 13. sınıf öğrencileri için yapılandırılmış programlar yürütüyor. Bunlar rekabetçi; dijital pazarlama alan bilgisini gösteren üçüncü taraf değerlendirmesi, çoğu okul çağındaki başvurucunun sağlayamadığı doğrulanabilir bir farklılaştırıcı sağlıyor.
+          </Bullet>
+        </ul>
+      </section>
+    </>
+  ),
+
+  'how-to-start-business-at-16': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        16 yaşındaki çoğu öğrenciye GCSE&apos;ye odaklanmaları, bir staj fırsatı çıkmasını beklemeleri ve para kazanmayı üniversiteden sonraya bırakmaları söylenir. Bu tavsiye giderek modası geçiyor — ve onu görmezden gelen öğrenciler akranlarının çoğalanamayacağı bir şey inşa ediyor: 18 yaşından önce gerçek bir ticari sicil.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu, bir sonraki genç teknoloji kurucusu olmakla ilgili değil. İngiltere&apos;de 16 yaşındaki birine şu anda mevcut olan pratik seçenekleri — platformlar, gerçekçi kazanç rakamları, yasal temel bilgiler ve erken iş deneyiminin üniversite başvurularını nasıl değiştirdiğini — anlamakla ilgili. Bu dördünün verileri açık ve en çok fayda sağlayacak öğrencilerin büyük bölümü tarafından görmezden geliniyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yasal Durum: 16 Yaşında İngiltere&apos;de İşletme Kurulabilir mi?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İngiltere&apos;de şahıs şirketi olarak iş kurmak için asgari bir yaş sınırı yoktur. 16 yaşındaki biri yasal olarak para kazanabilir, fatura kesebilir ve HMRC&apos;ye serbest çalışan olarak kayıt yaptırabilir. Yasal tablo bilindiğinde oldukça açık:
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Şahıs şirketi kaydı:</strong> Herkes 16 yaşından itibaren HMRC&apos;ye serbest çalışan olarak kaydolabilir. Kayıt ücretsizdir ve çevrimiçi yaklaşık 10 dakika sürer.
+          </Bullet>
+          <Bullet>
+            <strong>Gelir vergisi:</strong> 2024/25 kişisel muafiyet sınırı 12.570 £. Bu eşiğin altında kazanan 16 yaşındaki biri kazançlarına gelir vergisi ödemez. Haftalık 5 saat saat başı 20 £ üzerinden ders veren bir öğrenci yaklaşık 3.600 £ kazanır — eşiğin çok altında, ödenecek bir şey yok.
+          </Bullet>
+          <Bullet>
+            <strong>Limited şirketler:</strong> 18 yaşın altındakiler şirket müdürü olarak atanamaz; bu nedenle formal limited şirket yapıları 18 yaşına kadar mevcut değildir. Çoğu genç iş faaliyeti için şahıs şirketi statüsü daha basit ve tamamen yeterlidir.
+          </Bullet>
+          <Bullet>
+            <strong>Sözleşmeler:</strong> 18 yaşın altındakiler tarafından yapılan sözleşmeler İngiliz hukuku kapsamında feshedilebilir niteliktedir. Pratikte çoğu serbest çalışma ve ders verme düzenlemeleri gayri resmi olduğundan bu durum anlamlı bir sorun yaratmaz.
+          </Bullet>
+          <Bullet>
+            <strong>Banka hesapları:</strong> Starling Bank ve Monzo dahil birkaç İngiltere bankası ebeveyn gözetiminde 18 yaş altı için iş hesabı sunuyor. İş geliri için özel bir hesap, ilk günden itibaren iyi bir uygulamadır — vergi hesaplamayı kolaylaştırır.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Online Ders Verme: En Yüksek Getirili Başlangıç Noktası</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Online ders verme, çoğu 16 yaşındaki için en hemen uygulanabilir iş seçeneğidir çünkü ürün — halihazırda sahip oldukları konu bilgisi — üretim maliyeti sıfırdır. GCSE Matematikte 8 veya 9 alan bir öğrenci 9. ve 10. sınıf öğrencilerine ders verebilir. Öğrencileri eğitmenlerle buluşturan platformlar pazarlama ve ödeme altyapısını üstleniyor.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Tutorful</strong> — 16 yaşından itibaren eğitmen kabul eden İngiltere&apos;nin en büyük ders platformlarından biri. Eğitmenler kendi ücretlerini belirler; lise öğrencisi eğitmenler saatte genellikle 15–25 £ talep eder. Beş düzenli haftalık öğrenciyle saatte 20 £ üzerinden eğitmen yaklaşık aylık 400 £ kazanır.
+          </Bullet>
+          <Bullet>
+            <strong>MyTutor</strong> — GCSE ve A-level konularında uzmanlaşmış; resmi başvuru ve mülakat süreci var. Eğitmenler başlangıçta saatte 18–22 £ kazanır, üst sıraladaki eğitmenler 30–40 £&apos;a ulaşır. Kabul edilen eğitmenler örtük bir kalite sinyali taşır.
+          </Bullet>
+          <Bullet>
+            <strong>Doğrudan müşteri ağı</strong> — birçok yerleşik eğitmen tamamen memnun ebeveynlerden gelen tavsiyelerle kazanıyor. Okul topluluğundan bir ya da iki öğrenciyle başlamak, mükemmel sonuçlar elde etmek ve tavsiyelerin birikmesine izin vermek en sürdürülebilir modeldir.
+          </Bullet>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Gerçekçi kazanç kıyaslaması:</strong> 4 düzenli haftalık öğrenci × 1 saat × 20 £/saat = 80 £/hafta, 3.200 £/dönem, yaklaşık 6.400 £/yıl — okul saatlerini etkilemeden. Gelir vergisi eşiğinin altında. İşe gidip gelme, vardiya gereksinimi veya asgari ücret kısıtlaması olmaksızın önemli bir yarı zamanlı işe eşdeğer.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Serbest Çalışma: Becerileri Çevrimiçi Satmak</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          16 yaşındakiler genellikle profesyonel pazarların ödeyeceği becerilere sahiptir: grafik tasarım, video montaj, sosyal medya içerik üretimi, metin yazarlığı, kodlama ve veri girişi tümü, tam zamanlı çalışan karşılayamayan küçük işletmelerden tutarlı bir talep görüyor.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Fiverr (13 yaş+)</strong> — liste hacmine göre dünyanın en büyük serbest çalışma pazarı. Hizmetler herhangi bir fiyattan &ldquo;gig&rdquo; olarak listelenir. Tasarım ve yazarlıkta başarılı yeni Fiverr satıcıları başlangıçta proje başına 20–60 £ talep ederek değerlendirme birikirken. Fiverr %20 komisyon alır.
+          </Bullet>
+          <Bullet>
+            <strong>Yerel işletmeler için sosyal medya yönetimi</strong> — 16 yaşındakiler için muhtemelen en az keşfedilen fırsat. Çoğu yerel işletme — restoranlar, bağımsız perakendeciler, zanaatkârlar — sosyal medya varlığına ihtiyaç duyduğunu biliyor ama bunu yönetmeye zamanı yok. Aylık 100–200 £ karşılığında bir Instagram hesabını yönetmeyi teklif eden (haftada 4–5 gönderi, altyazı yazma, Canva&apos;da temel grafik oluşturma) öğrenci gerçek değer sunuyor. Üç müşteri ayda 300–600 £ üretir.
+          </Bullet>
+          <Bullet>
+            <strong>Video montaj</strong> — YouTube, TikTok ve Instagram Reels, kendi görüntülerini montajlayamayan içerik üreticilerinden kalıcı bir talep yarattı. DaVinci Resolve veya Premiere Pro&apos;ya hakim öğrenciler ekran süresini faturalandırılabilir saatlere dönüştürebilir.
+          </Bullet>
+          <Bullet>
+            <strong>Grafik tasarım</strong> — küçük işletmeler logo, sosyal grafikler, sunum tasarımları ve baskı materyallerine tutarlı biçimde ihtiyaç duyuyor. Canva giriş engelini düşürdü ama pazarı ortadan kaldırmadı.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yapılandırılmış Programlar: Young Enterprise</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bağımsız iş faaliyeti değerli ama doğrulanmamıştır. Young Enterprise, 5.500&apos;ü aşkın İngiltere okulunda aktif olup yılda yaklaşık 250.000 öğrenciye ulaşıyor. Öğrenci ekipleri gerçek bir şirket kuruyor, yönetici seçiyor, sermaye topluyor, ürün veya hizmet üretiyor ve satıyor, bölgesel ve ulusal düzeyde rekabet ediyor. Program ücretsiz, bir öğretim yılı boyunca sürüyor ve resmi sertifika üretiyor. Üniversite başvuruları için yapılandırılmış, ölçülebilir ve kabul ekipleri tarafından geniş çapta tanınan altın standarttır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Üniversiteler Gerçekte Ne Düşünüyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Girişimcilik ve erken iş deneyimine ilişkin üniversite kabul verileri tutarlıdır: önemlidir, değer görür ve gerçek bir farklılaştırıcı olacak kadar nadirdir.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Check>
+            <strong>İşletme ve Ekonomi dereceleri</strong> — LSE, Warwick ve Bath&apos;ın kabul kılavuzları ticari inisiyatifi açıkça değerli buluyor. Hizmet fiyatlandırmasını, müşteri yönetimini ve şikâyetleri ele almayı anlatan kişisel beyan, kabul okuyucusuna çoğu başvurucunun sağlayamadığı ticari anlayışın spesifik kanıtını sunuyor.
+          </Check>
+          <Check>
+            <strong>Hukuk dereceleri</strong> — müşteri ilişkileri yönetimi, sözleşme farkındalığı ve ticari yargı gerçek bir işletme yürütülerek geliştirilir.
+          </Check>
+          <Check>
+            <strong>Mühendislik ve Teknoloji dereceleri</strong> — web geliştirme, uygulama tasarımı veya veri analizinde serbest çalışmış olan bir öğrenci, teknik uygulamayı ders çalışmasının ötesinde kanıtlamıştır.
+          </Check>
+          <Check>
+            <strong>Tıp ve Sağlık</strong> — özellikle öğrenme güçlükleri olan öğrencilere ders vermek, iletişim, sabır ve bilgiyle öğretme odaklı ilişkiyi gösteriyor. Tutarlı biçimde ders veren öğrenciler bunu tıp okulu kişisel beyanlarında etkili biçimde kullanıyor.
+          </Check>
+        </ul>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Kişisel beyanda nasıl yazılır:</strong> &ldquo;Bir ders verme işletmesi kurdum&rdquo; demeyin. Şunu söyleyin: &ldquo;GCSE Matematik öğrencilerine yönelik ders verme pratiğimi iki yıl boyunca yürütürken sekiz düzenli müşteriyi yönettim, bireysel boşluklara göre uyarlanmış yapılandırılmış ders planları geliştirdim ve öğrenci ilerlemeyi sınav hedeflerine göre takip ettim.&rdquo; Ayrıntılar kanıttır. Kanıt uygulamayı yığının üstüne taşıyan şeydir.
+        </Callout>
+      </section>
+    </>
+  ),
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
