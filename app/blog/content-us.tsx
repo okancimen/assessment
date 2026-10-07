@@ -302,6 +302,15 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           level compared to the national average?). For gifted identification, the percentile is
           the more commonly used metric.
         </p>
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">See how your child compares internationally — free</p>
+            <p className="text-sm text-gray-600">Eduentry&apos;s adaptive assessment benchmarks your child&apos;s verbal, numerical, and reasoning ability against international peers — the same scale as NWEA MAP. Takes under an hour. No registration required.</p>
+          </div>
+          <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Start free assessment
+          </Link>
+        </div>
       </section>
 
       <section>
