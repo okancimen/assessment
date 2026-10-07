@@ -353,6 +353,13 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/ar/blog/ma-hwa-imtihan-11-plus-dalil-shamil",
     f"{BASE_URL}/ru/blog/chto-takoe-ekzamen-11-plus-polnoye-rukovodstvo",
     f"{BASE_URL}/zh/blog/11-plus-kaoshi-wanzheng-zhinan",
+    # 6 globally-relevant TR translations
+    f"{BASE_URL}/tr/blog/pisa-2025-global-egitim-krizi-ebeveyn-rehberi",
+    f"{BASE_URL}/tr/blog/isee-ssat-ozel-okul-sinavi-rehberi",
+    f"{BASE_URL}/tr/blog/abd-ust-zeka-programi-test-rehberi",
+    f"{BASE_URL}/tr/blog/ust-zeka-testine-nasil-hazirlanilir",
+    f"{BASE_URL}/tr/blog/dijital-pazarlama-is-deneyimi-ogrenci-yorumlari",
+    f"{BASE_URL}/tr/blog/16-yasinda-is-hayatina-nasil-baslanir",
     # ── Static pages (EN) ─────────────────────────────────────────────────────
     BASE_URL,
     f"{BASE_URL}/11-plus",
