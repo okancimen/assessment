@@ -9,11 +9,13 @@ import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
 import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
 import { BLOG_POSTS_FR } from '@/app/blog/posts-fr'
 import { BLOG_POSTS_AR } from '@/app/blog/posts-ar'
+import { BLOG_POSTS_ZH } from '@/app/blog/posts-zh'
 
 const trByContentSlug = new Map(BLOG_POSTS_TR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 const esByContentSlug = new Map(BLOG_POSTS_ES.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 const frByContentSlug = new Map(BLOG_POSTS_FR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 const arByContentSlug = new Map(BLOG_POSTS_AR.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
+const zhByContentSlug = new Map(BLOG_POSTS_ZH.filter(p => p.contentSlug).map(p => [p.contentSlug!, p.slug]))
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -40,6 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         ...(enSlug && esByContentSlug.has(enSlug) ? { es: `${BASE_URL}/es/blog/${esByContentSlug.get(enSlug)}` } : {}),
         ...(enSlug && frByContentSlug.has(enSlug) ? { fr: `${BASE_URL}/fr/blog/${frByContentSlug.get(enSlug)}` } : {}),
         ...(enSlug && arByContentSlug.has(enSlug) ? { ar: `${BASE_URL}/ar/blog/${arByContentSlug.get(enSlug)}` } : {}),
+        ...(enSlug && zhByContentSlug.has(enSlug) ? { zh: `${BASE_URL}/zh/blog/${zhByContentSlug.get(enSlug)}` } : {}),
         'x-default': enSlug ? `${BASE_URL}/blog/${enSlug}` : url,
       },
     },

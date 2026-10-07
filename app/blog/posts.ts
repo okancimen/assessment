@@ -2431,7 +2431,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'What Is the 11+ Exam? The Complete Parent\'s Guide to Grammar School Entry',
     shortTitle: 'What Is the 11+ Exam?',
     description:
-      'The complete parent\'s guide to the 11+ grammar school exam: what it tests, how scoring works, the 3 biggest preparation mistakes, and how to find your child\'s real academic level before paying for tutors.',
+      'The complete parent\'s guide to the 11+ exam: what it tests, how scoring works, the 3 biggest preparation mistakes, and how to find your child\'s real level.',
     tldr: 'The 11+ tests English, Maths, Verbal Reasoning, and Non-Verbal Reasoning — but it measures reasoning ability, not curriculum knowledge. School grades are a poor predictor of 11+ performance. The three biggest preparation mistakes are drilling without a baseline, interpreting raw percentage marks, and creating early exam anxiety. The most accurate way to benchmark your child\'s real 11+ level is a 2PL IRT adaptive assessment — the same psychometric method used by PISA and GCSE.',
     date: '2026-10-07',
     dateModified: '2026-10-07',

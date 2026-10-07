@@ -254,6 +254,17 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 - [PISA 2025 Results: Global Education Crisis](https://eduentry.com/blog/pisa-2025-global-education-crisis-what-parents-need-to-know): PISA 2025 scores by country, causes of decline (learning loss, device distraction, hasty reading), UK ranking, and AI homework findings.
 - [How Does Your Child Compare Globally](https://eduentry.com/blog/how-does-your-child-compare-globally): PISA country rankings, UK vs Singapore/Japan/South Korea score gaps, and standardised score vs school grade comparison.
 - [PISA 2025 and Work Experience](https://eduentry.com/blog/pisa-2025-work-experience-student-readiness): PISA 2025 data on student readiness gaps and the relationship between work experience and academic outcomes.
+- [65 Jobs AI Cannot Automate](https://eduentry.com/blog/65-jobs-ai-cannot-automate): The WEF says 40% of jobs face AI disruption. 65 professions with 0% automation probability and what they mean for your child's future.
+- [Habits Children Need to Avoid Future Unemployment](https://eduentry.com/blog/habits-to-avoid-future-unemployment): Eight habits that protect children from future unemployment — AI literacy, critical thinking, money skills and real experience — backed by WEF and OECD.
+
+## Blog — Child Development & Assessment
+
+- [Understanding Your Child's Strengths Before High School](https://eduentry.com/blog/understanding-child-strengths-weaknesses-high-school): How to identify a child's cognitive profile across verbal, numerical and spatial abilities before secondary school to guide preparation and subject choices.
+- [Discover Your Child's Hidden Strengths](https://eduentry.com/blog/discover-school-age-childs-hidden-strengths): How adaptive assessment reveals strengths and gaps in reasoning, maths and English for ages 6–17 that school reports miss.
+- [Free Academic Test: Discover Your Child's Strengths](https://eduentry.com/blog/discover-child-strengths-free-academic-test): Free adaptive test measuring verbal, numerical and spatial reasoning, producing an international-percentile report within an hour.
+- [Smart Child, Bad Grades](https://eduentry.com/blog/smart-child-bad-grades): Why grades don't measure cognitive ability — and how to find your child's true academic ceiling across all four cognitive domains.
+- [Summer Activities for Academically Ambitious Children](https://eduentry.com/blog/summer-activities-ambitious-children): Research-backed summer plan for high-achieving 9–16 year olds: internships, assessments, enrichment matched to the child's cognitive profile.
+- [How to Prepare for GCSEs](https://eduentry.com/blog/how-to-prepare-for-gcse): The 9–1 grading system, revision strategies, subject choices, mock exam timelines and the skills that predict success at GCSE.
 
 ## Blog — Internship
 
@@ -265,6 +276,9 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 - [Business Work Experience Year 12](https://eduentry.com/blog/business-work-experience-year-12): Year 10–12 programme timeline, FTSE 100 Spring Insight schemes (Barclays, Goldman Sachs, KPMG), application calendar.
 - [How to Differentiate Yourself at 15](https://eduentry.com/blog/how-to-differentiate-yourself-at-15): Competitions, projects, extracurriculars — concrete actions for students before university applications.
 - [How to Start a Business at 16](https://eduentry.com/blog/how-to-start-business-at-16): Legal requirements, registration steps, and examples of businesses started by school-age students in the UK.
+- [OECD Research: Teenage Work Experience and Career Outcomes](https://eduentry.com/blog/oecd-teenage-work-experience-career-outcomes): 47 longitudinal studies show teenagers with work experience before 16 earn 5–10% more as adults — what skills it builds and what parents can do.
+- [Part-Time Jobs for Teenagers: OECD Benefits](https://eduentry.com/blog/oecd-teenage-part-time-work-benefits): OECD research on why moderate part-time work builds financial literacy and career confidence, with hours thresholds and how to maximise it.
+- [How to Find an Internship as a Student](https://eduentry.com/blog/how-to-find-internship-as-student): How high school and university students can find an internship with no experience using an adaptive readiness assessment to build a verifiable talent profile.
 
 ## Score interpretation
 
