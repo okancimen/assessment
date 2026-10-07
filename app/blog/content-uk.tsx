@@ -5634,6 +5634,16 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         </Callout>
       </section>
 
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Find your child&apos;s real 11+ level — free</p>
+          <p className="text-sm text-gray-600">Eduentry&apos;s adaptive assessment benchmarks verbal, numerical, and reasoning ability against international peers — the same psychometric method used by the 11+. Takes under an hour. No registration required.</p>
+        </div>
+        <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Start free assessment
+        </Link>
+      </div>
+
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Your Child&apos;s School Report Won&apos;t Predict Their 11+ Score</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
