@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { trackEvent } from '@/lib/analytics'
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
 import { ReadinessTier } from '@/types'
@@ -78,6 +79,7 @@ function InternshipResults({ id, data: initial }: { id: string; data: Internship
   const [copied, setCopied] = useState(false)
 
   async function handleGetInsights() {
+    trackEvent('get_insights', { assessment_id: id })
     setInsightLoading(true)
     try {
       const res = await fetch(`/api/internship/${id}/insights`, { method: 'POST' })
@@ -88,6 +90,7 @@ function InternshipResults({ id, data: initial }: { id: string; data: Internship
 
   function handleCopyLink() {
     navigator.clipboard.writeText(window.location.href)
+    trackEvent('share_results', { assessment_id: id })
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }

@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
+import { trackEvent } from '@/lib/analytics'
 import { INTERNSHIP_TRACKS, INTERNSHIP_TRACK_LABELS, InternshipTrack } from '@/types'
 
 const YEAR_GROUPS = ['Year 9', 'Year 10', 'Year 11', 'Year 12', 'Year 13 / Sixth Form']
@@ -131,6 +132,7 @@ export default function InternshipApplyPage() {
       })
       const data = await res.json()
       if (!res.ok) throw new Error(data.error || 'Application failed')
+      trackEvent('internship_apply', { track_count: trackPrefs.length, year_group: yearGroup })
       sessionStorage.removeItem('intern_dob')
       sessionStorage.removeItem('intern_name')
       sessionStorage.removeItem('intern_parent_email')
