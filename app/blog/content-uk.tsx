@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import CtaLink from '@/components/ui/CtaLink'
 import { Bullet, Callout, Check, Cross } from './blog-components'
 import { UK_CONTENT_US_GIFTED } from './content-uk-us-gifted'
 import { UK_CONTENT_NETHERLANDS } from './content-uk-netherlands'
@@ -3714,9 +3715,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">See what a cognitive profile looks like in practice</p>
             <p className="text-sm text-gray-600">A sample assessment report shows exactly how verbal, numerical, working memory, and spatial scores are broken down — and what they mean for your child&apos;s preparation.</p>
           </div>
-          <Link href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <CtaLink href="/sample-report" label="content_cta_sample_report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             See a sample report
-          </Link>
+          </CtaLink>
         </div>
       </section>
 
@@ -3777,9 +3778,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Find out where your child stands — free</p>
             <p className="text-sm text-gray-600">Eduentry&apos;s adaptive academic assessment benchmarks your child&apos;s verbal, numerical, and reasoning ability against international peers. Takes under an hour. No registration required.</p>
           </div>
-          <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <CtaLink href="/#academic" label="content_cta_academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Start free assessment
-          </Link>
+          </CtaLink>
         </div>
       </section>
 
@@ -4144,9 +4145,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">See what your child&apos;s academic profile looks like</p>
             <p className="text-sm text-gray-600">A sample Eduentry report shows how verbal reasoning, numeracy, and problem-solving scores map to the careers and university pathways that will still matter in an AI world.</p>
           </div>
-          <Link href="/sample-report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <CtaLink href="/sample-report" label="content_cta_sample_report" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             See a sample report
-          </Link>
+          </CtaLink>
         </div>
       </section>
 
@@ -4192,9 +4193,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <div className="bg-indigo-50 border border-indigo-200 rounded-2xl p-8 text-center">
           <p className="text-xl font-bold text-gray-900 mb-2">How future-ready is your child?</p>
           <p className="text-gray-600 mb-6 max-w-xl mx-auto">Eduentry&apos;s free adaptive assessment benchmarks your child&apos;s verbal reasoning, numeracy, and problem-solving skills against peers internationally — and shows you exactly where their strengths lie for the careers that matter.</p>
-          <Link href="/#academic" className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-full transition-colors">
+          <CtaLink href="/#academic" label="content_cta_academic" className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-full transition-colors">
             Start your child&apos;s free assessment
-          </Link>
+          </CtaLink>
         </div>
       </section>
     </>
@@ -4266,9 +4267,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Is your child ready for work experience?</p>
             <p className="text-sm text-gray-600">Eduentry&apos;s free internship readiness assessment identifies aptitude, domain knowledge, and professional skills — and produces a report your child can share directly with employers.</p>
           </div>
-          <Link href="https://eduentry.ai/en" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <CtaLink href="https://eduentry.ai/en" label="content_cta_ai_en" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Start free assessment
-          </Link>
+          </CtaLink>
         </div>
       </section>
 
@@ -4380,9 +4381,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Which career track suits your child best?</p>
             <p className="text-sm text-gray-600">Before committing to any part-time role, Eduentry&apos;s free assessment identifies your child&apos;s aptitude, domain knowledge, and professional skills — so they can target work that builds the right foundations, not just fill a Saturday shift.</p>
           </div>
-          <Link href="https://eduentry.ai/en" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <CtaLink href="https://eduentry.ai/en" label="content_cta_ai_en" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Start free assessment
-          </Link>
+          </CtaLink>
         </div>
       </section>
 
@@ -4448,9 +4449,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">See your child&apos;s cognitive profile — free</p>
             <p className="text-sm text-gray-600">Adaptive assessment for ages 6–17. Verbal reasoning, non-verbal reasoning, maths, and English measured against international benchmarks — no registration required.</p>
           </div>
-          <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <CtaLink href="/#academic" label="content_cta_academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Start free assessment
-          </Link>
+          </CtaLink>
         </div>
       </section>
 
@@ -5271,9 +5272,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">Find out where your child stands today</p>
             <p className="text-sm text-gray-600">Free adaptive assessment for ages 6–17. Internationally benchmarked standardised score and personalised report.</p>
           </div>
-          <Link href="/auth/register" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <CtaLink href="/auth/register" label="content_cta_register" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Start free
-          </Link>
+          </CtaLink>
         </div>
       </section>
 
@@ -5423,9 +5424,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Get your competency report for free</p>
           <p className="text-sm text-gray-600">20-minute adaptive assessment for students aged 14+. Replace an empty CV with measured evidence of your potential.</p>
         </div>
-        <Link href="https://eduentry.ai/" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <CtaLink href="https://eduentry.ai/" label="content_cta_ai" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Start free
-        </Link>
+        </CtaLink>
       </div>
 
         <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Potential Is a Stronger Sales Argument Than History</h3>
@@ -5520,9 +5521,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Add a strong foundation to your application</p>
           <p className="text-sm text-gray-600">Free Eduentry readiness report proves your aptitude to employers before they meet you. Complete in 20 minutes, download instantly.</p>
         </div>
-        <Link href="https://eduentry.ai/" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <CtaLink href="https://eduentry.ai/" label="content_cta_ai" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Get free report
-        </Link>
+        </CtaLink>
       </div>
 
         <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">Apply Directly to Small Firms</h3>
@@ -5639,9 +5640,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Find your child&apos;s real 11+ level — free</p>
           <p className="text-sm text-gray-600">Eduentry&apos;s adaptive assessment benchmarks verbal, numerical, and reasoning ability against international peers — the same psychometric method used by the 11+. Takes under an hour. No registration required.</p>
         </div>
-        <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <CtaLink href="/#academic" label="content_cta_academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Start free assessment
-        </Link>
+        </CtaLink>
       </div>
 
       <section>
@@ -5761,9 +5762,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           <p className="font-semibold text-gray-900 mb-1">Find out your child&apos;s real 11+ level — free</p>
           <p className="text-sm text-gray-600">Adaptive academic assessment for children aged 6–17. Standardised scores in all four 11+ domains — English, Maths, Verbal Reasoning, Non-Verbal Reasoning.</p>
         </div>
-        <Link href="/11-plus" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <CtaLink href="/11-plus" label="content_cta_11plus" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Start free assessment
-        </Link>
+        </CtaLink>
       </div>
 
         <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">What the Assessment Report Shows</h3>

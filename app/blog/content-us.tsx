@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import CtaLink from '@/components/ui/CtaLink'
 import { Bullet, Callout, Check, Cross } from './blog-components'
 
 export const US_CONTENT: Record<string, React.ReactNode> = {
@@ -307,9 +308,9 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
             <p className="font-semibold text-gray-900 mb-1">See how your child compares internationally — free</p>
             <p className="text-sm text-gray-600">Eduentry&apos;s adaptive assessment benchmarks your child&apos;s verbal, numerical, and reasoning ability against international peers — the same scale as NWEA MAP. Takes under an hour. No registration required.</p>
           </div>
-          <Link href="/#academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          <CtaLink href="/#academic" label="content_cta_academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Start free assessment
-          </Link>
+          </CtaLink>
         </div>
       </section>
 

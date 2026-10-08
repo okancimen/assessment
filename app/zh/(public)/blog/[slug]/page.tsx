@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
+import CtaLink from '@/components/ui/CtaLink'
 import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS_ZH, getChinesePostBySlug } from '@/app/blog/posts-zh'
@@ -195,9 +196,9 @@ export default async function ZHBlogPostPage({ params }: { params: Promise<{ slu
         <div className="mt-10 bg-[#eef2ff] border border-[#c7d2fe] rounded-3xl p-8">
           <h3 className="font-bold text-[#1d1d1f] text-lg mb-2">{post.cta.heading}</h3>
           <p className="text-sm text-[#636366] leading-relaxed mb-5">{post.cta.body}</p>
-          <a href={post.cta.href} className="inline-block bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+          <CtaLink href={post.cta.href} label="locale_cta_zh" className="inline-block bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
             {post.cta.label} →
-          </a>
+          </CtaLink>
         </div>
       )}
 

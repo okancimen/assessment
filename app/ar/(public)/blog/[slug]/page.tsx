@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
+import CtaLink from '@/components/ui/CtaLink'
 import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS_AR, getArabicPostBySlug } from '@/app/blog/posts-ar'
@@ -221,12 +222,13 @@ export default async function ARBlogPostPage({ params }: { params: Promise<{ slu
       <section className="mt-16 mb-8 bg-[#4F46E5] rounded-2xl p-12 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'اكتشف مستوى استعدادك'}</h2>
         <p className="text-indigo-100 mb-8">{post.cta?.body ?? 'تقييم تكيفي مجاني لطلاب الثانوية فوق 14 عاماً.'}</p>
-        <a
+        <CtaLink
           href={post.cta?.href ?? 'https://eduentry.ai/ar'}
+          label="locale_cta_ar"
           className="inline-block bg-white text-[#4F46E5] px-8 py-4 rounded-xl font-semibold hover:bg-[#eef2ff] transition-colors text-lg"
         >
           {post.cta?.label ?? 'ابدأ التقييم المجاني'}
-        </a>
+        </CtaLink>
       </section>
     </main>
   )
