@@ -5,6 +5,8 @@ import Link from 'next/link'
 import Navbar from '@/components/dashboard/Navbar'
 import ForceCompleteButton from './ForceCompleteButton'
 
+const AGE_TIER_LABEL: Record<number, string> = { 1: '6–9', 2: '10–13', 3: '14–17', 4: '18–20' }
+
 const GOAL_LABELS: Record<string, string> = {
   '11plus': '11+ / Grammar school',
   'private_school': 'Private school entrance',
@@ -102,6 +104,20 @@ export default async function AdminUserDetailPage({
     const cid = a.child_id as string
     if (!assessmentsByChild[cid]) assessmentsByChild[cid] = []
     assessmentsByChild[cid]!.push(a)
+  }
+
+  const personalityResult = childIds.length > 0
+    ? await db.from('personality_assessments')
+        .select('id, child_id, status, age_tier, created_at, personality_results(top_strengths)')
+        .in('child_id', childIds)
+        .order('created_at', { ascending: false })
+    : { data: [] as { id: string; child_id: string; status: string; age_tier: number; created_at: string; personality_results: { top_strengths: string[] }[] }[] }
+
+  const personalityByChild: Record<string, typeof personalityResult.data> = {}
+  for (const pa of personalityResult.data ?? []) {
+    const cid = pa.child_id as string
+    if (!personalityByChild[cid]) personalityByChild[cid] = []
+    personalityByChild[cid]!.push(pa)
   }
 
   const inProgressIds = (assessmentsResult.data ?? [])
@@ -383,6 +399,54 @@ export default async function AdminUserDetailPage({
                                         </div>
                                       </div>
                                     )}
+                                  </div>
+                                )}
+                              </div>
+                            )
+                          })}
+                        </div>
+                      </div>
+                    )}
+                    {/* Personality assessments */}
+                    {(personalityByChild[child.id] ?? []).length > 0 && (
+                      <div>
+                        <p className="text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide mb-2">Personality</p>
+                        <div className="space-y-3">
+                          {(personalityByChild[child.id] ?? []).map((pa) => {
+                            const topStrengths = (pa.personality_results as { top_strengths: string[] }[] | null)?.[0]?.top_strengths ?? []
+                            return (
+                              <div key={pa.id as string} className="bg-[#f5f5f7] rounded-xl px-4 py-3 space-y-2.5">
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center gap-2">
+                                    <Badge color="emerald">Personality</Badge>
+                                    <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${
+                                      pa.status === 'completed' ? 'bg-emerald-100 text-emerald-700'
+                                      : pa.status === 'in_progress' ? 'bg-amber-100 text-amber-700'
+                                      : 'bg-[#e5e5ea] text-[#6e6e73]'
+                                    }`}>
+                                      {(pa.status as string).replace('_', ' ')}
+                                    </span>
+                                    <span className="text-[10px] text-[#6e6e73]">
+                                      Ages {AGE_TIER_LABEL[pa.age_tier as number] ?? pa.age_tier}
+                                    </span>
+                                    <span className="text-[10px] text-[#6e6e73]">
+                                      {new Date(pa.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                                    </span>
+                                  </div>
+                                  {pa.status === 'completed' && (
+                                    <Link
+                                      href={`/strengths/${pa.id}/results`}
+                                      className="text-[10px] text-[#4F46E5] font-semibold hover:underline"
+                                    >
+                                      Full report →
+                                    </Link>
+                                  )}
+                                </div>
+                                {topStrengths.length > 0 && (
+                                  <div className="flex flex-wrap gap-1">
+                                    {topStrengths.slice(0, 3).map((s) => (
+                                      <Badge key={s} color="emerald">{s.replace(/_/g, ' ')}</Badge>
+                                    ))}
                                   </div>
                                 )}
                               </div>
