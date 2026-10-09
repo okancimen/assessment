@@ -56,6 +56,7 @@ export interface PersonalityI18n {
   peerAbove: string
   peerBelow: string
   peerAvgLabel: string
+  showMore: string
 }
 
 const EN: PersonalityI18n = {
@@ -149,6 +150,7 @@ const EN: PersonalityI18n = {
   peerAbove: 'Stands out above peers',
   peerBelow: 'Below peers',
   peerAvgLabel: 'Age-group avg.',
+  showMore: 'Show all',
 }
 
 const FR: PersonalityI18n = {
@@ -242,6 +244,7 @@ const FR: PersonalityI18n = {
   peerAbove: 'Au-dessus de la moyenne',
   peerBelow: 'En dessous de la moyenne',
   peerAvgLabel: 'Moy. du groupe',
+  showMore: 'Tout afficher',
 }
 
 const ES: PersonalityI18n = {
@@ -335,6 +338,7 @@ const ES: PersonalityI18n = {
   peerAbove: 'Por encima de la media',
   peerBelow: 'Por debajo de la media',
   peerAvgLabel: 'Media del grupo',
+  showMore: 'Ver todo',
 }
 
 const AR: PersonalityI18n = {
@@ -428,6 +432,7 @@ const AR: PersonalityI18n = {
   peerAbove: 'فوق المتوسط',
   peerBelow: 'دون المتوسط',
   peerAvgLabel: 'متوسط الفئة',
+  showMore: 'عرض الكل',
 }
 
 const TR: PersonalityI18n = {
@@ -521,6 +526,7 @@ const TR: PersonalityI18n = {
   peerAbove: 'Yaşıtlarının üzerinde',
   peerBelow: 'Yaşıtlarının altında',
   peerAvgLabel: 'Yaş grubu ort.',
+  showMore: 'Tümünü gör',
 }
 
 const RU: PersonalityI18n = {
@@ -614,6 +620,7 @@ const RU: PersonalityI18n = {
   peerAbove: 'Выше среднего',
   peerBelow: 'Ниже среднего',
   peerAvgLabel: 'Среднее по группе',
+  showMore: 'Показать всё',
 }
 
 const ZH: PersonalityI18n = {
@@ -707,6 +714,7 @@ const ZH: PersonalityI18n = {
   peerAbove: '高于同龄均值',
   peerBelow: '低于同龄均值',
   peerAvgLabel: '年龄组均值',
+  showMore: '查看全部',
 }
 
 const TRANSLATIONS: Record<PersonalityLocale, PersonalityI18n> = {

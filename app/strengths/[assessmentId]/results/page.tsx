@@ -10,6 +10,8 @@ import StrengthsRadarChart from './StrengthsRadarChart'
 import PrintButton from './PrintButton'
 import SummaryPoller from './SummaryPoller'
 import PeerComparison from './PeerComparison'
+import ExpandableAISummary from './ExpandableAISummary'
+import ExpandableTraitsTable, { type TraitRow } from './ExpandableTraitsTable'
 import Link from 'next/link'
 
 const VIRTUE_COLORS: Record<string, string> = {
@@ -145,6 +147,17 @@ export default async function StrengthsResultsPage({
     }
   }
 
+  const traitRows: TraitRow[] = sortedTraits.map(([trait, score]) => {
+    const virtue = TRAIT_VIRTUE[trait]
+    return {
+      trait,
+      label: t.traitLabels[trait],
+      score,
+      virtueLabel: t.virtueNames[virtue] ?? virtue,
+      virtueColor: VIRTUE_COLORS[virtue] ?? 'bg-[#eef2ff] text-[#4F46E5]',
+    }
+  })
+
   const radarData = sortedTraits.map(([trait, score]) => ({
     trait: t.traitLabels[trait],
     score,
@@ -241,28 +254,16 @@ export default async function StrengthsResultsPage({
 
         {/* AI Summary */}
         <SummaryPoller hasSummary={!!result.ai_summary} />
-        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6 space-y-3">
-          <h2 className="text-sm font-semibold text-[#1d1d1f]">{t.aiSummaryTitle}</h2>
-          {result.ai_summary ? (
-            <div>
-              <p className="text-sm text-[#3d3d3f] leading-relaxed">
-                {result.ai_summary.slice(0, 250)}{result.ai_summary.length > 250 ? '…' : ''}
-              </p>
-              {result.ai_summary.length > 250 && (
-                <>
-                  <div className="relative mt-2 overflow-hidden" style={{ maxHeight: '56px' }}>
-                    <p className="text-sm text-[#3d3d3f] leading-relaxed blur-sm select-none pointer-events-none">
-                      {result.ai_summary.slice(250)}
-                    </p>
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white" />
-                  </div>
-                  <div className="mt-4 pt-3 border-t border-[#f5f5f7] flex justify-center">
-                    <PrintButton label={t.printBtn} />
-                  </div>
-                </>
-              )}
-            </div>
-          ) : (
+        {result.ai_summary ? (
+          <ExpandableAISummary
+            summary={result.ai_summary}
+            assessmentId={assessmentId}
+            title={t.aiSummaryTitle}
+            showMoreLabel={t.showMore}
+          />
+        ) : (
+          <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6 space-y-3">
+            <h2 className="text-sm font-semibold text-[#1d1d1f]">{t.aiSummaryTitle}</h2>
             <div className="space-y-2 animate-pulse">
               <div className="h-3 bg-[#f0f0f0] rounded-full w-full" />
               <div className="h-3 bg-[#f0f0f0] rounded-full w-5/6" />
@@ -270,8 +271,8 @@ export default async function StrengthsResultsPage({
               <div className="h-3 bg-[#f0f0f0] rounded-full w-full mt-2" />
               <div className="h-3 bg-[#f0f0f0] rounded-full w-3/4" />
             </div>
-          )}
-        </div>
+          </div>
+        )}
 
         {/* Peer comparison */}
         {peerAvgScores && (
@@ -294,84 +295,15 @@ export default async function StrengthsResultsPage({
         )}
 
         {/* All traits table */}
-        <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
-          <div className="px-6 py-4 border-b border-[#f5f5f7]">
-            <h2 className="text-sm font-semibold text-[#1d1d1f]">{t.strengthsSection}</h2>
-          </div>
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-[#f5f5f7]">
-                <th className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide">{t.traitHeader}</th>
-                <th className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">{t.virtueHeader}</th>
-                <th className="text-right px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide">{t.traitScore}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sortedTraits.slice(0, 3).map(([trait, score]) => {
-                const virtue = TRAIT_VIRTUE[trait]
-                const colorClass = VIRTUE_COLORS[virtue] ?? 'bg-[#eef2ff] text-[#4F46E5]'
-                return (
-                  <tr key={trait} className="border-b border-[#f5f5f7] last:border-0">
-                    <td className="px-5 py-3 font-medium text-[#1d1d1f] text-xs">{t.traitLabels[trait]}</td>
-                    <td className="px-5 py-3 hidden sm:table-cell">
-                      <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${colorClass}`}>{t.virtueNames[virtue] ?? virtue}</span>
-                    </td>
-                    <td className="px-5 py-3 text-right">
-                      <div className="flex items-center justify-end gap-2">
-                        <div className="flex gap-0.5">
-                          {[1, 2, 3, 4, 5].map((n) => (
-                            <div
-                              key={n}
-                              className={`w-3 h-3 rounded-full ${n <= Math.round(score) ? 'bg-[#4F46E5]' : 'bg-[#e5e7eb]'}`}
-                            />
-                          ))}
-                        </div>
-                        <span className="text-xs tabular-nums font-semibold text-[#1d1d1f] w-6">{score.toFixed(1)}</span>
-                      </div>
-                    </td>
-                  </tr>
-                )
-              })}
-            </tbody>
-          </table>
-          {sortedTraits.length > 3 && (
-            <div className="relative">
-              <table className="w-full text-sm blur-sm select-none pointer-events-none" aria-hidden="true">
-                <tbody>
-                  {sortedTraits.slice(3).map(([trait, score]) => {
-                    const virtue = TRAIT_VIRTUE[trait]
-                    const colorClass = VIRTUE_COLORS[virtue] ?? 'bg-[#eef2ff] text-[#4F46E5]'
-                    return (
-                      <tr key={trait} className="border-b border-[#f5f5f7] last:border-0">
-                        <td className="px-5 py-3 font-medium text-[#1d1d1f] text-xs">{t.traitLabels[trait]}</td>
-                        <td className="px-5 py-3 hidden sm:table-cell">
-                          <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${colorClass}`}>{t.virtueNames[virtue] ?? virtue}</span>
-                        </td>
-                        <td className="px-5 py-3 text-right">
-                          <div className="flex items-center justify-end gap-2">
-                            <div className="flex gap-0.5">
-                              {[1, 2, 3, 4, 5].map((n) => (
-                                <div
-                                  key={n}
-                                  className={`w-3 h-3 rounded-full ${n <= Math.round(score) ? 'bg-[#4F46E5]' : 'bg-[#e5e7eb]'}`}
-                                />
-                              ))}
-                            </div>
-                            <span className="text-xs tabular-nums font-semibold text-[#1d1d1f] w-6">{score.toFixed(1)}</span>
-                          </div>
-                        </td>
-                      </tr>
-                    )
-                  })}
-                </tbody>
-              </table>
-              <div className="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-white to-transparent z-10" />
-              <div className="absolute inset-0 flex items-center justify-center z-20">
-                <PrintButton label={t.printBtn} />
-              </div>
-            </div>
-          )}
-        </div>
+        <ExpandableTraitsTable
+          rows={traitRows}
+          assessmentId={assessmentId}
+          title={t.strengthsSection}
+          traitHeader={t.traitHeader}
+          virtueHeader={t.virtueHeader}
+          traitScore={t.traitScore}
+          showMoreLabel={t.showMore}
+        />
 
       </main>
       <PublicFooter />
