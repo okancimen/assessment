@@ -105,6 +105,7 @@ export default async function AdminPage({
     allResults,
     allAssessmentTypes,
     allLocationProfiles,
+    allPersonalityAssessments,
   ] = await Promise.all([
     // All users from auth.users (used for both stats and table)
     db.auth.admin.listUsers({ perPage: 1000 }),
@@ -120,6 +121,8 @@ export default async function AdminPage({
     // Assessment types per parent
     db.from('assessments').select('assessment_type, children(parent_id, student_user_id)'),
     db.from('profiles').select('id, country, city'),
+    // Personality assessments
+    db.from('personality_assessments').select('parent_id, status, created_at'),
   ])
 
   // Filter auth users by date range for stats
@@ -127,10 +130,13 @@ export default async function AdminPage({
   const usersInRange = allAuthUsers.filter((u) => u.created_at >= fromISO && u.created_at <= toISO)
 
   // Growth totals
+  const personalityInRange = (allPersonalityAssessments.data ?? []).filter(
+    (pa) => pa.created_at >= fromISO && pa.created_at <= toISO,
+  )
   const newUsers      = usersInRange.length
   const newChildren   = childrenRange.data?.length ?? 0
-  const newStarted    = assessmentsRange.data?.length ?? 0
-  const newCompleted  = resultsRange.data?.length ?? 0
+  const newStarted    = (assessmentsRange.data?.length ?? 0) + personalityInRange.length
+  const newCompleted  = (resultsRange.data?.length ?? 0) + personalityInRange.filter((pa) => pa.status === 'completed').length
 
   // Daily chart data (users from auth.users)
   const usersByDay      = groupByDay(usersInRange.map((u) => ({ created_at: u.created_at })))
@@ -189,6 +195,15 @@ export default async function AdminPage({
     for (const uid of uids) {
       if (!assessmentTypesByUser[uid]) assessmentTypesByUser[uid] = new Set()
       assessmentTypesByUser[uid].add(type)
+    }
+  }
+  for (const pa of (allPersonalityAssessments.data ?? [])) {
+    const pid = pa.parent_id as string | null
+    if (!pid) continue
+    if (!assessmentTypesByUser[pid]) assessmentTypesByUser[pid] = new Set()
+    assessmentTypesByUser[pid].add('personality')
+    if (pa.status === 'completed') {
+      completedByParent[pid] = (completedByParent[pid] ?? 0) + 1
     }
   }
 

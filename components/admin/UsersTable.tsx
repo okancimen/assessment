@@ -74,9 +74,11 @@ export default function UsersTable({ users: initialUsers }: { users: AdminUser[]
                     <span className="text-[#d2d2d7] text-xs">—</span>
                   ) : u.assessmentTypes.map((t) => (
                     <span key={t} className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold ${
-                      t === 'internship' ? 'bg-purple-100 text-purple-700' : 'bg-[#eef2ff] text-[#4F46E5]'
+                      t === 'internship'   ? 'bg-purple-100 text-purple-700' :
+                      t === 'personality'  ? 'bg-emerald-100 text-emerald-700' :
+                      'bg-[#eef2ff] text-[#4F46E5]'
                     }`}>
-                      {t === 'internship' ? 'Internship' : 'Academic'}
+                      {t === 'internship' ? 'Internship' : t === 'personality' ? 'Personality' : 'Academic'}
                     </span>
                   ))}
                 </div>
