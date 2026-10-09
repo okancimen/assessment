@@ -7,7 +7,7 @@ const REGISTER_URL = `${BASE_URL}/fr/auth/register`
 export const metadata: Metadata = {
   title: ‘Statut cognitif de votre enfant : évaluation gratuite’,
   description:
-    ‘Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon PISA, SAT et GCSE — voyez où il se situe parmi ses pairs.’,
+    "Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon PISA, SAT et GCSE — voyez où il se situe parmi ses pairs.",
   keywords: [
     ‘quel est le statut cognitif de mon enfant’,
     ‘positionnement académique de mon enfant parmi ses pairs’,
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/fr/potentiel-de-votre-enfant`,
     siteName: 'Eduentry',
     title: ‘Quel est le Statut Cognitif de Mon Enfant? — Évaluation Académique Gratuite’,
-    description: ‘Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.’,
+    description: "Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.",
     locale: ‘fr_FR’,
     images: [{ url: `${BASE_URL}/fr/opengraph-image`, width: 1200, height: 630, alt: "Évaluation Cognitive de Votre Enfant — Eduentry" }],
   },
   twitter: {
     card: 'summary_large_image',
     title: ‘Quel est le Statut Cognitif de Mon Enfant? — Évaluation Académique Gratuite’,
-    description: ‘Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.’,
+    description: "Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.",
     images: [`${BASE_URL}/fr/opengraph-image`],
   },
 }
