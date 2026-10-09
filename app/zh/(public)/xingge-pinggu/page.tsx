@@ -67,12 +67,42 @@ const FAQS = [
 ]
 
 const VIRTUES = [
-  { label: '智慧', bg: 'bg-blue-100 text-blue-800' },
-  { label: '勇气', bg: 'bg-orange-100 text-orange-800' },
-  { label: '人道', bg: 'bg-pink-100 text-pink-800' },
-  { label: '公正', bg: 'bg-purple-100 text-purple-800' },
-  { label: '节制', bg: 'bg-green-100 text-green-800' },
-  { label: '超越', bg: 'bg-yellow-100 text-yellow-800' },
+  {
+    label: '智慧',
+    badge: 'bg-blue-100 text-blue-800',
+    border: 'border-blue-200',
+    traits: ['好奇心', '创造力', '热爱学习', '洞察力', '判断力'],
+  },
+  {
+    label: '勇气',
+    badge: 'bg-orange-100 text-orange-800',
+    border: 'border-orange-200',
+    traits: ['勇敢', '坚持不懈', '诚实', '活力'],
+  },
+  {
+    label: '人道',
+    badge: 'bg-pink-100 text-pink-800',
+    border: 'border-pink-200',
+    traits: ['爱', '仁慈', '社交智慧'],
+  },
+  {
+    label: '公正',
+    badge: 'bg-teal-100 text-teal-800',
+    border: 'border-teal-200',
+    traits: ['团队合作', '公平', '领导力'],
+  },
+  {
+    label: '节制',
+    badge: 'bg-purple-100 text-purple-800',
+    border: 'border-purple-200',
+    traits: ['宽恕', '谦逊', '谨慎', '自律'],
+  },
+  {
+    label: '超越',
+    badge: 'bg-amber-100 text-amber-800',
+    border: 'border-amber-200',
+    traits: ['欣赏美', '感恩', '希望', '幽默', '灵性'],
+  },
 ]
 
 const TIERS = [
@@ -160,11 +190,21 @@ export default function XinggePingguPage() {
           <p className="text-lg text-[#6e6e73] leading-relaxed mb-8">
             我们的平台采用由先驱心理学家马丁·塞利格曼博士和尼尔·迈尔森博士开发的全球知名VIA性格优势框架。该模型被190多个国家的研究人员和教育工作者使用，识别24种普遍特质，分为6大核心美德：智慧、勇气、人道、公正、节制和超越。
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
             {VIRTUES.map((v) => (
-              <span key={v.label} className={`px-4 py-1.5 rounded-full text-sm font-semibold ${v.bg}`}>
-                {v.label}
-              </span>
+              <div key={v.label} className={`rounded-2xl border ${v.border} bg-white p-5`}>
+                <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${v.badge}`}>
+                  {v.label}
+                </span>
+                <ul className="space-y-1.5">
+                  {v.traits.map((trait) => (
+                    <li key={trait} className="flex items-center gap-2 text-sm text-[#3d3d3f]">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#d2d2d7] shrink-0" />
+                      {trait}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>

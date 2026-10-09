@@ -67,12 +67,42 @@ const FAQS = [
 ]
 
 const VIRTUES = [
-  { label: 'Мудрость', bg: 'bg-blue-100 text-blue-800' },
-  { label: 'Смелость', bg: 'bg-orange-100 text-orange-800' },
-  { label: 'Гуманность', bg: 'bg-pink-100 text-pink-800' },
-  { label: 'Справедливость', bg: 'bg-purple-100 text-purple-800' },
-  { label: 'Умеренность', bg: 'bg-green-100 text-green-800' },
-  { label: 'Трансцендентность', bg: 'bg-yellow-100 text-yellow-800' },
+  {
+    label: 'Мудрость',
+    badge: 'bg-blue-100 text-blue-800',
+    border: 'border-blue-200',
+    traits: ['Любознательность', 'Творчество', 'Любовь к обучению', 'Перспектива', 'Суждение'],
+  },
+  {
+    label: 'Смелость',
+    badge: 'bg-orange-100 text-orange-800',
+    border: 'border-orange-200',
+    traits: ['Храбрость', 'Настойчивость', 'Честность', 'Жизненная сила'],
+  },
+  {
+    label: 'Гуманность',
+    badge: 'bg-pink-100 text-pink-800',
+    border: 'border-pink-200',
+    traits: ['Любовь', 'Доброта', 'Социальный интеллект'],
+  },
+  {
+    label: 'Справедливость',
+    badge: 'bg-teal-100 text-teal-800',
+    border: 'border-teal-200',
+    traits: ['Командная работа', 'Справедливость', 'Лидерство'],
+  },
+  {
+    label: 'Умеренность',
+    badge: 'bg-purple-100 text-purple-800',
+    border: 'border-purple-200',
+    traits: ['Прощение', 'Скромность', 'Благоразумие', 'Самоконтроль'],
+  },
+  {
+    label: 'Трансцендентность',
+    badge: 'bg-amber-100 text-amber-800',
+    border: 'border-amber-200',
+    traits: ['Восхищение красотой', 'Благодарность', 'Надежда', 'Юмор', 'Духовность'],
+  },
 ]
 
 const TIERS = [
@@ -160,11 +190,21 @@ export default function OtsenkaLichnostiPage() {
           <p className="text-lg text-[#6e6e73] leading-relaxed mb-8">
             Наша платформа адаптирует всемирно признанную систему Сильных Сторон Характера VIA, разработанную психологами-пионерами доктором Мартином Селигманом и доктором Нилом Майерсоном. Используемая в более чем 190 странах исследователями и педагогами, эта модель выявляет 24 универсальные черты, сгруппированные под 6 основных добродетелей: Мудрость, Смелость, Гуманность, Справедливость, Умеренность и Трансцендентность.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
             {VIRTUES.map((v) => (
-              <span key={v.label} className={`px-4 py-1.5 rounded-full text-sm font-semibold ${v.bg}`}>
-                {v.label}
-              </span>
+              <div key={v.label} className={`rounded-2xl border ${v.border} bg-white p-5`}>
+                <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${v.badge}`}>
+                  {v.label}
+                </span>
+                <ul className="space-y-1.5">
+                  {v.traits.map((trait) => (
+                    <li key={trait} className="flex items-center gap-2 text-sm text-[#3d3d3f]">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#d2d2d7] shrink-0" />
+                      {trait}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>

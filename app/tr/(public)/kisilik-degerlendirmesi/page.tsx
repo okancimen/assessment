@@ -67,12 +67,42 @@ const FAQS = [
 ]
 
 const VIRTUES = [
-  { label: 'Bilgelik', bg: 'bg-blue-100 text-blue-800' },
-  { label: 'Cesaret', bg: 'bg-orange-100 text-orange-800' },
-  { label: 'İnsanlık', bg: 'bg-pink-100 text-pink-800' },
-  { label: 'Adalet', bg: 'bg-purple-100 text-purple-800' },
-  { label: 'Ölçülülük', bg: 'bg-green-100 text-green-800' },
-  { label: 'Aşkınlık', bg: 'bg-yellow-100 text-yellow-800' },
+  {
+    label: 'Bilgelik',
+    badge: 'bg-blue-100 text-blue-800',
+    border: 'border-blue-200',
+    traits: ['Merak', 'Yaratıcılık', 'Öğrenme Sevgisi', 'Perspektif', 'Yargılama'],
+  },
+  {
+    label: 'Cesaret',
+    badge: 'bg-orange-100 text-orange-800',
+    border: 'border-orange-200',
+    traits: ['Cesur Olmak', 'Azim', 'Dürüstlük', 'Canlılık'],
+  },
+  {
+    label: 'İnsanlık',
+    badge: 'bg-pink-100 text-pink-800',
+    border: 'border-pink-200',
+    traits: ['Sevgi', 'İyilik', 'Sosyal Zeka'],
+  },
+  {
+    label: 'Adalet',
+    badge: 'bg-teal-100 text-teal-800',
+    border: 'border-teal-200',
+    traits: ['Takım Çalışması', 'Adil Olmak', 'Liderlik'],
+  },
+  {
+    label: 'Ölçülülük',
+    badge: 'bg-purple-100 text-purple-800',
+    border: 'border-purple-200',
+    traits: ['Bağışlama', 'Alçakgönüllülük', 'İhtiyat', 'Özdenetim'],
+  },
+  {
+    label: 'Aşkınlık',
+    badge: 'bg-amber-100 text-amber-800',
+    border: 'border-amber-200',
+    traits: ['Güzelliği Takdir', 'Şükran', 'Umut', 'Mizah', 'Maneviyat'],
+  },
 ]
 
 const TIERS = [
@@ -160,11 +190,21 @@ export default function KisilikDegerlendirmesiPage() {
           <p className="text-lg text-[#6e6e73] leading-relaxed mb-8">
             Platformumuz, öncü psikologlar Dr. Martin Seligman ve Dr. Neal Mayerson tarafından geliştirilen dünyaca ünlü VIA Güçlü Yönleri çerçevesini uyarlar. Araştırmacılar ve eğitimciler tarafından 190&apos;dan fazla ülkede kullanılan bu model, 6 temel erdem altında gruplanmış 24 evrensel özelliği tanımlar: Bilgelik, Cesaret, İnsanlık, Adalet, Ölçülülük ve Aşkınlık.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
             {VIRTUES.map((v) => (
-              <span key={v.label} className={`px-4 py-1.5 rounded-full text-sm font-semibold ${v.bg}`}>
-                {v.label}
-              </span>
+              <div key={v.label} className={`rounded-2xl border ${v.border} bg-white p-5`}>
+                <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${v.badge}`}>
+                  {v.label}
+                </span>
+                <ul className="space-y-1.5">
+                  {v.traits.map((trait) => (
+                    <li key={trait} className="flex items-center gap-2 text-sm text-[#3d3d3f]">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#d2d2d7] shrink-0" />
+                      {trait}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>

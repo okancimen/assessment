@@ -69,12 +69,42 @@ const FAQS = [
 ]
 
 const VIRTUES = [
-  { label: 'Sagesse', bg: 'bg-blue-100 text-blue-800' },
-  { label: 'Courage', bg: 'bg-orange-100 text-orange-800' },
-  { label: 'Humanité', bg: 'bg-pink-100 text-pink-800' },
-  { label: 'Justice', bg: 'bg-purple-100 text-purple-800' },
-  { label: 'Tempérance', bg: 'bg-green-100 text-green-800' },
-  { label: 'Transcendance', bg: 'bg-yellow-100 text-yellow-800' },
+  {
+    label: 'Sagesse',
+    badge: 'bg-blue-100 text-blue-800',
+    border: 'border-blue-200',
+    traits: ['Curiosité', 'Créativité', "Amour de l'apprentissage", 'Perspective', 'Jugement'],
+  },
+  {
+    label: 'Courage',
+    badge: 'bg-orange-100 text-orange-800',
+    border: 'border-orange-200',
+    traits: ['Bravoure', 'Persévérance', 'Honnêteté', 'Enthousiasme'],
+  },
+  {
+    label: 'Humanité',
+    badge: 'bg-pink-100 text-pink-800',
+    border: 'border-pink-200',
+    traits: ['Amour', 'Bienveillance', 'Intelligence sociale'],
+  },
+  {
+    label: 'Justice',
+    badge: 'bg-teal-100 text-teal-800',
+    border: 'border-teal-200',
+    traits: ["Travail d'équipe", 'Équité', 'Leadership'],
+  },
+  {
+    label: 'Tempérance',
+    badge: 'bg-purple-100 text-purple-800',
+    border: 'border-purple-200',
+    traits: ['Pardon', 'Humilité', 'Prudence', 'Maîtrise de soi'],
+  },
+  {
+    label: 'Transcendance',
+    badge: 'bg-amber-100 text-amber-800',
+    border: 'border-amber-200',
+    traits: ['Appréciation de la beauté', 'Gratitude', 'Espoir', 'Humour', 'Spiritualité'],
+  },
 ]
 
 const TIERS = [
@@ -162,11 +192,21 @@ export default function EvaluationDePersonnalitePage() {
           <p className="text-lg text-[#6e6e73] leading-relaxed mb-8">
             Notre plateforme adapte le cadre mondialement reconnu des Forces de Caractère VIA, développé par les psychologues pionniers Dr. Martin Seligman et Dr. Neal Mayerson. Utilisé dans plus de 190 pays par des chercheurs et éducateurs, ce modèle identifie 24 traits universels regroupés sous 6 vertus fondamentales : Sagesse, Courage, Humanité, Justice, Tempérance et Transcendance.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
             {VIRTUES.map((v) => (
-              <span key={v.label} className={`px-4 py-1.5 rounded-full text-sm font-semibold ${v.bg}`}>
-                {v.label}
-              </span>
+              <div key={v.label} className={`rounded-2xl border ${v.border} bg-white p-5`}>
+                <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${v.badge}`}>
+                  {v.label}
+                </span>
+                <ul className="space-y-1.5">
+                  {v.traits.map((trait) => (
+                    <li key={trait} className="flex items-center gap-2 text-sm text-[#3d3d3f]">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#d2d2d7] shrink-0" />
+                      {trait}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>

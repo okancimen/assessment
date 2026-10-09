@@ -69,12 +69,42 @@ const FAQS = [
 ]
 
 const VIRTUES = [
-  { label: 'Sabiduría', bg: 'bg-blue-100 text-blue-800' },
-  { label: 'Valor', bg: 'bg-orange-100 text-orange-800' },
-  { label: 'Humanidad', bg: 'bg-pink-100 text-pink-800' },
-  { label: 'Justicia', bg: 'bg-purple-100 text-purple-800' },
-  { label: 'Templanza', bg: 'bg-green-100 text-green-800' },
-  { label: 'Trascendencia', bg: 'bg-yellow-100 text-yellow-800' },
+  {
+    label: 'Sabiduría',
+    badge: 'bg-blue-100 text-blue-800',
+    border: 'border-blue-200',
+    traits: ['Curiosidad', 'Creatividad', 'Amor por el aprendizaje', 'Perspectiva', 'Juicio'],
+  },
+  {
+    label: 'Valor',
+    badge: 'bg-orange-100 text-orange-800',
+    border: 'border-orange-200',
+    traits: ['Valentía', 'Perseverancia', 'Honestidad', 'Vitalidad'],
+  },
+  {
+    label: 'Humanidad',
+    badge: 'bg-pink-100 text-pink-800',
+    border: 'border-pink-200',
+    traits: ['Amor', 'Amabilidad', 'Inteligencia social'],
+  },
+  {
+    label: 'Justicia',
+    badge: 'bg-teal-100 text-teal-800',
+    border: 'border-teal-200',
+    traits: ['Trabajo en equipo', 'Imparcialidad', 'Liderazgo'],
+  },
+  {
+    label: 'Templanza',
+    badge: 'bg-purple-100 text-purple-800',
+    border: 'border-purple-200',
+    traits: ['Perdón', 'Humildad', 'Prudencia', 'Autorregulación'],
+  },
+  {
+    label: 'Trascendencia',
+    badge: 'bg-amber-100 text-amber-800',
+    border: 'border-amber-200',
+    traits: ['Apreciación de la belleza', 'Gratitud', 'Esperanza', 'Humor', 'Espiritualidad'],
+  },
 ]
 
 const TIERS = [
@@ -162,11 +192,21 @@ export default function EvaluacionDePersonalidadPage() {
           <p className="text-lg text-[#6e6e73] leading-relaxed mb-8">
             Nuestra plataforma adapta el mundialmente reconocido marco de Fortalezas de Carácter VIA, desarrollado por los psicólogos pioneros Dr. Martin Seligman y Dr. Neal Mayerson. Utilizado en más de 190 países por investigadores y educadores, este modelo identifica 24 rasgos universales agrupados bajo 6 virtudes fundamentales: Sabiduría, Valor, Humanidad, Justicia, Templanza y Trascendencia.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
             {VIRTUES.map((v) => (
-              <span key={v.label} className={`px-4 py-1.5 rounded-full text-sm font-semibold ${v.bg}`}>
-                {v.label}
-              </span>
+              <div key={v.label} className={`rounded-2xl border ${v.border} bg-white p-5`}>
+                <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${v.badge}`}>
+                  {v.label}
+                </span>
+                <ul className="space-y-1.5">
+                  {v.traits.map((trait) => (
+                    <li key={trait} className="flex items-center gap-2 text-sm text-[#3d3d3f]">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#d2d2d7] shrink-0" />
+                      {trait}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>
