@@ -5,13 +5,13 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/fr/auth/register`
 
 export const metadata: Metadata = {
-  title: ‘Statut cognitif de votre enfant : évaluation gratuite’,
+  title: 'Statut cognitif de votre enfant : évaluation gratuite',
   description:
-    "Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon PISA, SAT et GCSE — voyez où il se situe parmi ses pairs.",
+    "Découvrez le vrai statut cognitif de votre enfant en moins d'une heure. Évaluation comparative gratuite selon PISA, SAT et GCSE — voyez où il se situe parmi ses pairs.",
   keywords: [
-    ‘quel est le statut cognitif de mon enfant’,
-    ‘positionnement académique de mon enfant parmi ses pairs’,
-    ‘test statut cognitif enfant’,
+    'quel est le statut cognitif de mon enfant',
+    'positionnement académique de mon enfant parmi ses pairs',
+    'test statut cognitif enfant',
     'évaluation cognitive enfant',
     'test enfant gratuit',
     'évaluation PISA enfant',
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/fr/potentiel-de-votre-enfant`,
     siteName: 'Eduentry',
-    title: ‘Quel est le Statut Cognitif de Mon Enfant? — Évaluation Académique Gratuite’,
-    description: "Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.",
-    locale: ‘fr_FR’,
+    title: 'Quel est le Statut Cognitif de Mon Enfant? — Évaluation Académique Gratuite',
+    description: "Découvrez le vrai statut cognitif de votre enfant en moins d'une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.",
+    locale: 'fr_FR',
     images: [{ url: `${BASE_URL}/fr/opengraph-image`, width: 1200, height: 630, alt: "Évaluation Cognitive de Votre Enfant — Eduentry" }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: ‘Quel est le Statut Cognitif de Mon Enfant? — Évaluation Académique Gratuite’,
-    description: "Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.",
+    title: 'Quel est le Statut Cognitif de Mon Enfant? — Évaluation Académique Gratuite',
+    description: "Découvrez le vrai statut cognitif de votre enfant en moins d'une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.",
     images: [`${BASE_URL}/fr/opengraph-image`],
   },
 }
@@ -98,7 +98,7 @@ const FAQS = [
   },
   {
     q: 'Combien de temps dure le test?',
-    a: 'Moins d’une heure. Le format adaptatif offre des mesures plus précises avec moins de questions que les tests à choix multiples standard. Le test est sauvegardable — votre enfant peut reprendre là où il s\'est arrêté.',
+    a: 'Moins d'une heure. Le format adaptatif offre des mesures plus précises avec moins de questions que les tests à choix multiples standard. Le test est sauvegardable — votre enfant peut reprendre là où il s\'est arrêté.',
   },
   {
     q: 'À quelle tranche d\'âge convient-il?',
@@ -131,8 +131,8 @@ const PAGE_SCHEMA = {
   '@type': 'WebPage',
   '@id': `${BASE_URL}/fr/potentiel-de-votre-enfant#webpage`,
   url: `${BASE_URL}/fr/potentiel-de-votre-enfant`,
-  name: ‘Quel est le Statut Cognitif de Mon Enfant? — Évaluation Académique Gratuite’,
-  description: ‘Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.’,
+  name: 'Quel est le Statut Cognitif de Mon Enfant? — Évaluation Académique Gratuite',
+  description: 'Découvrez le vrai statut cognitif de votre enfant en moins d'une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.',
   inLanguage: 'fr',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
@@ -201,7 +201,7 @@ export default function PotentielDeVotreEnfantPage() {
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Comparez les capacités cognitives et la préparation académique selon les normes internationales <strong>PISA, SAT et GCSE</strong> en moins d’une heure. Révélez le vrai potentiel que les notes scolaires ne montrent pas.
+            Comparez les capacités cognitives et la préparation académique selon les normes internationales <strong>PISA, SAT et GCSE</strong> en moins d'une heure. Révélez le vrai potentiel que les notes scolaires ne montrent pas.
           </p>
 
           <Link
