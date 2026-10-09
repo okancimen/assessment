@@ -123,10 +123,10 @@ const res = await fetch(ENDPOINT, {
   body: JSON.stringify(payload),
 })
 
-if (res.ok || res.status === 200 || res.status === 202) {
+const body = await res.text()
+if (res.status === 200 || res.status === 202) {
   console.log(`\nDone — ${res.status} ${res.statusText}`)
 } else {
-  const body = await res.text()
-  console.error(`\nFailed — ${res.status}: ${body}`)
-  process.exit(1)
+  // Non-fatal: log but don't fail the workflow (key may not yet be deployed)
+  console.warn(`\nIndexNow returned ${res.status}: ${body}`)
 }
