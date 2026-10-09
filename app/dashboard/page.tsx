@@ -372,6 +372,50 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
           </section>
         )}
 
+        {/* Strengths Assessment — for children aged 6–20 */}
+        {hasChildren && (children as Child[]).some((c: Child) => { const a = getAge(c.date_of_birth); return a >= 6 && a <= 20 }) && (
+          <section>
+            <div className="flex items-start justify-between mb-4 gap-4">
+              <div>
+                <h2 className="text-base font-semibold text-[#1d1d1f]">Character Strengths</h2>
+                <p className="text-xs text-[#6e6e73] mt-0.5">Discover your child&apos;s personality profile</p>
+              </div>
+              <Link href={`/strengths`} className="text-sm text-[#4F46E5] font-semibold hover:underline whitespace-nowrap">
+                Learn more
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {(children as Child[])
+                .filter((c: Child) => { const a = getAge(c.date_of_birth); return a >= 6 && a <= 20 })
+                .map((child: Child) => {
+                  const avatar = getAvatarColor(child.name)
+                  return (
+                    <div key={child.id} className="bg-white rounded-3xl border border-[#d2d2d7] p-5 flex flex-col gap-3">
+                      <div className="flex items-center gap-3">
+                        <div
+                          className="w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0"
+                          style={{ background: avatar.bg, color: avatar.text }}
+                        >
+                          {child.name[0].toUpperCase()}
+                        </div>
+                        <div className="min-w-0">
+                          <p className="font-semibold text-[#1d1d1f] text-sm truncate">{child.name}</p>
+                          <p className="text-xs text-[#6e6e73]">{t.age} {getAge(child.date_of_birth)}</p>
+                        </div>
+                      </div>
+                      <Link
+                        href={`/strengths/${child.id}/start${locale ? `?locale=${locale}` : ''}`}
+                        className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors"
+                      >
+                        Start strengths assessment
+                      </Link>
+                    </div>
+                  )
+              })}
+            </div>
+          </section>
+        )}
+
         {/* Internship Programme — for children aged 14+ */}
         {eligibleChildren.length > 0 && (
           <section>
