@@ -121,14 +121,14 @@ export default async function StrengthsResultsPage({
 
   let peerAvgScores: Record<string, number> | null = null
   let peerCount = 0
-  if (peerAssessments && peerAssessments.length >= 5) {
+  if (peerAssessments && peerAssessments.length >= 1) {
     const peerIds = peerAssessments.map((a) => a.id)
     const { data: peerResults } = await admin
       .from('personality_results')
       .select('trait_scores')
       .in('assessment_id', peerIds)
 
-    if (peerResults && peerResults.length >= 5) {
+    if (peerResults && peerResults.length >= 1) {
       peerCount = peerResults.length
       const totals: Record<string, { sum: number; count: number }> = {}
       for (const r of peerResults) {
@@ -149,6 +149,7 @@ export default async function StrengthsResultsPage({
     trait: t.traitLabels[trait],
     score,
     avg: avgScores?.[trait] ?? null,
+    peerAvg: peerAvgScores?.[trait] ?? null,
     fullMark: 5,
   }))
 
@@ -213,8 +214,10 @@ export default async function StrengthsResultsPage({
           <StrengthsRadarChart
             data={radarData}
             showAvg={!!avgScores}
+            showPeerAvg={!!peerAvgScores}
             scoreLabel={t.traitScore}
             avgLabel={t.avgLabel}
+            peerAvgLabel={t.peerAvgLabel}
           />
         </div>
 

@@ -13,14 +13,16 @@ interface DataPoint {
   trait: string
   score: number
   avg?: number | null
+  peerAvg?: number | null
   fullMark: number
 }
 
-function CustomTooltip({ active, payload, scoreLabel, avgLabel }: {
+function CustomTooltip({ active, payload, scoreLabel, avgLabel, peerAvgLabel }: {
   active?: boolean
   payload?: { name: string; value: number; color: string }[]
   scoreLabel: string
   avgLabel: string
+  peerAvgLabel: string
 }) {
   if (!active || !payload?.length) return null
   return (
@@ -28,7 +30,9 @@ function CustomTooltip({ active, payload, scoreLabel, avgLabel }: {
       {payload.map((entry) => (
         <div key={entry.name} className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: entry.color }} />
-          <span className="text-[#6e6e73]">{entry.name === 'score' ? scoreLabel : avgLabel}</span>
+          <span className="text-[#6e6e73]">
+            {entry.name === 'score' ? scoreLabel : entry.name === 'peerAvg' ? peerAvgLabel : avgLabel}
+          </span>
           <span className="font-semibold text-[#1d1d1f] ml-auto pl-3">{Number(entry.value).toFixed(1)}/5</span>
         </div>
       ))}
@@ -39,13 +43,17 @@ function CustomTooltip({ active, payload, scoreLabel, avgLabel }: {
 export default function StrengthsRadarChart({
   data,
   showAvg = false,
+  showPeerAvg = false,
   scoreLabel = 'Score',
   avgLabel = 'Average',
+  peerAvgLabel = 'Peer avg.',
 }: {
   data: DataPoint[]
   showAvg?: boolean
+  showPeerAvg?: boolean
   scoreLabel?: string
   avgLabel?: string
+  peerAvgLabel?: string
 }) {
   return (
     <div className="space-y-4">
@@ -68,6 +76,18 @@ export default function StrengthsRadarChart({
               dot={false}
             />
           )}
+          {showPeerAvg && (
+            <Radar
+              name="peerAvg"
+              dataKey="peerAvg"
+              stroke="#0D9488"
+              fill="#0D9488"
+              fillOpacity={0.07}
+              strokeWidth={1.5}
+              strokeDasharray="4 2"
+              dot={false}
+            />
+          )}
           <Radar
             name="score"
             dataKey="score"
@@ -78,24 +98,40 @@ export default function StrengthsRadarChart({
             dot={{ r: 3, fill: '#4F46E5' }}
           />
           <Tooltip
-            content={<CustomTooltip scoreLabel={scoreLabel} avgLabel={avgLabel} />}
+            content={
+              <CustomTooltip
+                scoreLabel={scoreLabel}
+                avgLabel={avgLabel}
+                peerAvgLabel={peerAvgLabel}
+              />
+            }
           />
         </RadarChart>
       </ResponsiveContainer>
 
       {/* Legend */}
-      {showAvg && (
-        <div className="flex items-center justify-center gap-6 text-xs text-[#6e6e73]">
+      {(showAvg || showPeerAvg) && (
+        <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-[#6e6e73]">
           <div className="flex items-center gap-2">
             <span className="block w-5 h-0.5 bg-[#4F46E5] rounded-full" />
             <span>{scoreLabel}</span>
           </div>
-          <div className="flex items-center gap-2">
-            <svg width="20" height="2" viewBox="0 0 20 2" className="flex-shrink-0">
-              <line x1="0" y1="1" x2="20" y2="1" stroke="#94a3b8" strokeWidth="1.5" strokeDasharray="5 3" />
-            </svg>
-            <span>{avgLabel}</span>
-          </div>
+          {showAvg && (
+            <div className="flex items-center gap-2">
+              <svg width="20" height="2" viewBox="0 0 20 2" className="flex-shrink-0">
+                <line x1="0" y1="1" x2="20" y2="1" stroke="#94a3b8" strokeWidth="1.5" strokeDasharray="5 3" />
+              </svg>
+              <span>{avgLabel}</span>
+            </div>
+          )}
+          {showPeerAvg && (
+            <div className="flex items-center gap-2">
+              <svg width="20" height="2" viewBox="0 0 20 2" className="flex-shrink-0">
+                <line x1="0" y1="1" x2="20" y2="1" stroke="#0D9488" strokeWidth="1.5" strokeDasharray="4 2" />
+              </svg>
+              <span>{peerAvgLabel}</span>
+            </div>
+          )}
         </div>
       )}
     </div>
