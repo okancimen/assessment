@@ -782,6 +782,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     readTime: '8 dk okuma',
     tags: ['Staj', 'Staj Defteri', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi'],
     faqs: [
+      { q: 'Staj dalı ne demek?', a: 'Staj dalı, staj defterinin veya resmi başvuru formunun "staj alanı / dalı" kısmında belirtilen, stajın yapıldığı mesleki alan veya uzmanlık branşıdır. Örneğin muhasebe, bilişim, elektrik, turizm ya da pazarlama gibi. Meslek liselerinde staj dalı öğrencinin okul programına bağlıdır; üniversite stajlarında ise bölüm müfredatıyla uyumlu bir dal seçilir. Staj defterine yazarken okulun veya üniversitenin belirlediği resmi dal adı kullanılmalıdır.' },
       { q: 'Staj defteri zorunlu mu?', a: 'Üniversite zorunlu stajlarında evet, zorunludur. Staj defteri olmadan zorunlu staj tamamlanmış sayılmaz ve not verilmez. Lise gönüllü stajlarında yasal bir zorunluluk yoktur ancak tutulması tavsiye edilir.' },
       { q: 'Staj defteri nereden alınır?', a: 'Bağlı olunan fakülte veya yüksekokul, okul çevresindeki kırtasiyeler, SMMM (Serbest Muhasebeci Mali Müşavirler) odaları ve bazı okullarda dijital (elektronik staj defteri) sistemleri aracılığıyla temin edilebilir.' },
       { q: 'Staj defteri kaç günde bir doldurulur?', a: 'Staj defteri her çalışma günü doldurulur. Günlük notların detaylı olması beklenir: sabah ne yapıldı, öğrenilen yeni bilgi veya beceri, kimlerle çalışıldı. Hafta sonu ve resmi tatil günlerine ait bölüm bırakılmaz.' },
@@ -984,14 +985,14 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'cocugunuzun-guclu-zayif-yonleri-liseye-hazirlik',
     contentSlug: 'understanding-child-strengths-weaknesses-high-school',
-    title: 'Çocuğunuzun Güçlü ve Zayıf Yönlerini Liseye Hazırlık İçin Anlamak',
-    shortTitle: 'Güçlü ve Zayıf Yönler: Lise Hazırlık Rehberi',
+    title: 'Çocuğun Güçlü ve Zayıf Yönleri: Lise Hazırlığı İçin Bilişsel Profil Rehberi',
+    shortTitle: 'Çocuğun Güçlü ve Zayıf Yönleri Nasıl Belirlenir?',
     description:
-      'Sözel akıl yürütme, sayısal beceri, çalışan bellek ve uzamsal düşünme: lise öncesinde çocuğunuzun güçlü yönlerini keşfedip hazırlık planı yapın.',
+      'Çocuğunuzun güçlü ve zayıf yönlerini okul notları değil standart bilişsel değerlendirme ortaya çıkarır. Sözel, sayısal ve uzamsal alanlarda lise öncesi profil çıkarın.',
     tldr: 'Okul notları, öğrencilerin sınıf içindeki göreli başarısını ölçer — ancak altta yatan bilişsel profili ortaya koymaz. Sözel akıl yürütme, sayısal yetenek, çalışan bellek ve uzamsal beceri alanlarındaki güçlü ve zayıf yönleri lise öncesinde belirlemek, ebeveynlere ve öğretmenlere belirsiz bir karne yerine somut bir yol haritası sunar.',
 
     date: '2026-09-27',
-    dateModified: '2026-09-27',
+    dateModified: '2026-10-09',
     readTime: '12 dk okuma',
     tags: ['Akademik Değerlendirme', 'Çocuk Gelişimi', 'Lise Hazırlığı', 'Bilişsel Profil'],
     faqs: [

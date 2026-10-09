@@ -555,16 +555,24 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'nwea-map-scores-explained',
     title: 'NWEA MAP Scores Explained: What RIT Scores Mean and How to Interpret Your Child\'s Results',
-    shortTitle: 'NWEA MAP Scores Explained (2026): RIT Ranges by Grade',
+    shortTitle: 'NWEA MAP RIT Scores by Grade Level 2026: Charts & Benchmarks',
     description:
-      'NWEA MAP RIT score benchmarks by grade for reading, math and science: 2025–26 norm percentiles, grade averages and gifted program cut-offs.',
+      'MAP RIT scores by grade level 2025–26: average reading, math and science benchmarks, gifted cut-offs and percentile chart. What\'s a good score for your child\'s grade?',
     tldr: 'NWEA MAP Growth uses a RIT (Rasch Unit) scale — not percentage correct. The national average RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-24',
+    dateModified: '2026-10-09',
     readTime: '7 min read',
     tags: ['NWEA MAP', 'RIT Scores', 'US Education', 'Gifted Programs', 'Assessment'],
     faqs: [
+      {
+        q: 'What are NWEA MAP RIT scores by grade level for 2025–26?',
+        a: 'Average fall 2025–26 MAP Math RIT scores by grade: Grade 3 ≈ 188, Grade 4 ≈ 197, Grade 5 ≈ 205, Grade 6 ≈ 211, Grade 7 ≈ 215, Grade 8 ≈ 219. For Reading: Grade 3 ≈ 196, Grade 4 ≈ 207, Grade 5 ≈ 214, Grade 6 ≈ 218, Grade 7 ≈ 221, Grade 8 ≈ 223. These norms are from the 2020 NWEA national norming study, which remains the current reference for 2025–26. A student scoring 10+ points above average is at approximately the 75th percentile; 15+ points above average is around the 90th percentile.',
+      },
+      {
+        q: 'What is a good MAP ELA/Reading score for fall 2026?',
+        a: 'For fall 2026 (which uses the same 2020 NWEA norms), a strong MAP Reading RIT score varies by grade: Grade 3 above 210 (≈85th percentile), Grade 4 above 220 (≈85th percentile), Grade 5 above 226 (≈85th percentile), Grade 6 above 228 (≈85th percentile), Grade 7 above 232 (≈85th percentile). A score of 230 in Grade 5 ELA/Reading places a student roughly at the 93rd–95th percentile nationally — well into the range that triggers gifted evaluation in most districts. NWEA does not publish separate "fall 2026" norms; the 2020 national norms apply.',
+      },
       {
         q: 'What is a RIT score on the NWEA MAP test?',
         a: 'A RIT (Rasch Unit) score is a position on a continuous equal-interval scale that spans the entire K–12 curriculum. Unlike a percentage, the same RIT score means the same level of knowledge regardless of grade. A typical kindergartner starts around RIT 140–150 in Math; the average Grade 5 student is around 205–210. RIT scores grow year over year as students learn.',
