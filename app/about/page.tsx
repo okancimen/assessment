@@ -32,33 +32,44 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
-const PERSON_SCHEMA = {
+const PROFILE_PAGE_SCHEMA = {
   '@context': 'https://schema.org',
-  '@type': 'Person',
-  '@id': 'https://eduentry.com/about#ozlem-cimen',
-  name: 'Özlem Çimen',
-  jobTitle: 'Founder & Education Professional',
-  description: '20+ years as English teacher, department head, and school administrator at TED Istanbul College, ENKA Schools, and Istanbul International Community School (IICS). MBA in International Marketing, Harvard Graduate School of Education Certificate (Differentiating Instruction, 2008), IB Training Certification (Zurich International School, 2002).',
+  '@type': 'ProfilePage',
+  '@id': 'https://eduentry.com/about#profile-page',
+  name: 'Özlem Çimen — Founder of Eduentry',
   url: 'https://eduentry.com/about',
-  sameAs: [
-    'https://www.edualist.com/en/about/',
-    'https://www.edualist.com',
-  ],
-  image: 'https://eduentry.com/authors/ozlem-cimen-600.jpg',
-  knowsAbout: [
-    'Academic assessment',
-    'International school admissions',
-    'English language teaching',
-    'IB curriculum',
-    '11+ preparation',
-    'Grammar school admissions',
-    'Expatriate education',
-    'EAL support',
-  ],
-  alumniOf: [
-    { '@type': 'EducationalOrganization', name: 'Harvard Graduate School of Education' },
-  ],
-  worksFor: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  dateCreated: '2026-01-01',
+  dateModified: '2026-10-09',
+  mainEntity: {
+    '@type': 'Person',
+    '@id': 'https://eduentry.com/about#ozlem-cimen',
+    name: 'Özlem Çimen',
+    jobTitle: 'Founder & Education Professional',
+    description: '20+ years as English teacher, department head, and school administrator at TED Istanbul College, ENKA Schools, and Istanbul International Community School (IICS). MBA in International Marketing, Harvard Graduate School of Education Certificate (Differentiating Instruction, 2008), IB Training Certification (Zurich International School, 2002).',
+    url: 'https://eduentry.com/about',
+    sameAs: [
+      'https://www.edualist.com/en/about/',
+      'https://www.edualist.com',
+    ],
+    image: {
+      '@type': 'ImageObject',
+      url: 'https://eduentry.com/authors/ozlem-cimen-600.jpg',
+    },
+    knowsAbout: [
+      'Academic assessment',
+      'International school admissions',
+      'English language teaching',
+      'IB curriculum',
+      '11+ preparation',
+      'Grammar school admissions',
+      'Expatriate education',
+      'EAL support',
+    ],
+    alumniOf: [
+      { '@type': 'EducationalOrganization', name: 'Harvard Graduate School of Education' },
+    ],
+    worksFor: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  },
 }
 
 const ORGANIZATION_SCHEMA = {
@@ -107,7 +118,7 @@ export default function AboutPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ABOUT_SCHEMA) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PROFILE_PAGE_SCHEMA) }} />
 
       <PublicNav />
 
