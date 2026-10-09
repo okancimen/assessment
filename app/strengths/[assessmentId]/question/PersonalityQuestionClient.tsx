@@ -69,6 +69,7 @@ export default function PersonalityQuestionClient({
   })
   const [submitting, setSubmitting] = useState(false)
   const [saving, setSaving] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
   const current = questions[index]
   const currentScore = answers[current.key] ?? null
@@ -102,13 +103,21 @@ export default function PersonalityQuestionClient({
 
   async function handleSubmit() {
     setSubmitting(true)
+    setSubmitError(null)
     try {
-      await fetch(`/api/personality/${assessmentId}/complete`, {
+      const res = await fetch(`/api/personality/${assessmentId}/complete`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ locale }),
       })
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        setSubmitError(data.error ?? 'Something went wrong. Please try again.')
+        return
+      }
       router.push(`/strengths/${assessmentId}/results?locale=${locale}`)
+    } catch {
+      setSubmitError('Network error. Please try again.')
     } finally {
       setSubmitting(false)
     }
@@ -165,13 +174,18 @@ export default function PersonalityQuestionClient({
             )}
             <div className="flex-1" />
             {isLast ? (
-              <button
-                onClick={handleSubmit}
-                disabled={!allAnswered || submitting}
-                className="px-6 py-2.5 rounded-full bg-[#4F46E5] text-white text-sm font-semibold hover:bg-[#4338CA] transition-colors disabled:opacity-50"
-              >
-                {submitting ? 'Generating…' : t.submitBtn}
-              </button>
+              <div className="flex flex-col items-end gap-2">
+                {submitError && (
+                  <p className="text-xs text-red-500 text-right max-w-xs">{submitError}</p>
+                )}
+                <button
+                  onClick={handleSubmit}
+                  disabled={!allAnswered || submitting}
+                  className="px-6 py-2.5 rounded-full bg-[#4F46E5] text-white text-sm font-semibold hover:bg-[#4338CA] transition-colors disabled:opacity-50"
+                >
+                  {submitting ? 'Generating…' : t.submitBtn}
+                </button>
+              </div>
             ) : (
               <button
                 onClick={handleNext}

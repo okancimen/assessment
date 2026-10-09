@@ -70,13 +70,13 @@ export async function POST(
 
   const admin = createAdminClient()
 
-  const { error: insertError } = await admin.from('personality_results').insert({
+  const { error: insertError } = await admin.from('personality_results').upsert({
     assessment_id: assessmentId,
     trait_scores: traitScores,
     top_strengths: topStrengths,
     growth_areas: growthAreas,
     ai_summary: aiSummary,
-  })
+  }, { onConflict: 'assessment_id' })
 
   if (insertError) {
     console.error('[personality/complete] insert failed', insertError)
