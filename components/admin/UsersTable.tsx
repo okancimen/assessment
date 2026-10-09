@@ -1,6 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
+import { useState } from 'react'
 
 export interface AdminUser {
   id: string
@@ -14,16 +15,36 @@ export interface AdminUser {
   role: 'parent' | 'student' | 'both' | 'none'
 }
 
-export default function UsersTable({ users }: { users: AdminUser[] }) {
+export default function UsersTable({ users: initialUsers }: { users: AdminUser[] }) {
   const router = useRouter()
+  const [users, setUsers] = useState(initialUsers)
+  const [confirmId, setConfirmId] = useState<string | null>(null)
+  const [deletingId, setDeletingId] = useState<string | null>(null)
+
+  async function handleDelete(userId: string) {
+    setDeletingId(userId)
+    try {
+      const res = await fetch('/api/admin/users', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId }),
+      })
+      if (res.ok) {
+        setUsers((prev) => prev.filter((u) => u.id !== userId))
+      }
+    } finally {
+      setDeletingId(null)
+      setConfirmId(null)
+    }
+  }
 
   return (
     <div className="overflow-x-auto">
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b border-[#f5f5f7]">
-            {['Name', 'Registered', 'Location', 'Assessment', 'Children', 'Completed'].map((h) => (
-              <th key={h} className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide whitespace-nowrap">
+            {['Name', 'Registered', 'Location', 'Assessment', 'Children', 'Completed', ''].map((h, i) => (
+              <th key={i} className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide whitespace-nowrap">
                 {h}
               </th>
             ))}
@@ -68,11 +89,43 @@ export default function UsersTable({ users }: { users: AdminUser[] }) {
                   ? <span className="font-semibold text-[#22C55E]">{u.completed}</span>
                   : <span className="text-[#d2d2d7]">0</span>}
               </td>
+              <td className="px-5 py-3 text-right" onClick={(e) => e.stopPropagation()}>
+                {confirmId === u.id ? (
+                  <div className="flex items-center justify-end gap-2">
+                    <button
+                      onClick={() => handleDelete(u.id)}
+                      disabled={deletingId === u.id}
+                      className="text-[10px] font-semibold text-white bg-red-500 hover:bg-red-600 px-2.5 py-1 rounded-full transition-colors disabled:opacity-50"
+                    >
+                      {deletingId === u.id ? 'Deleting…' : 'Confirm'}
+                    </button>
+                    <button
+                      onClick={() => setConfirmId(null)}
+                      className="text-[10px] font-semibold text-[#6e6e73] hover:text-[#1d1d1f] px-2.5 py-1 rounded-full border border-[#d2d2d7] transition-colors"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                ) : (
+                  <button
+                    onClick={() => setConfirmId(u.id)}
+                    className="text-[#d2d2d7] hover:text-red-500 transition-colors p-1 rounded"
+                    title="Delete user"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="3 6 5 6 21 6"/>
+                      <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>
+                      <path d="M10 11v6M14 11v6"/>
+                      <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>
+                    </svg>
+                  </button>
+                )}
+              </td>
             </tr>
           ))}
           {users.length === 0 && (
             <tr>
-              <td colSpan={6} className="px-5 py-10 text-center text-xs text-[#6e6e73]">No users registered yet</td>
+              <td colSpan={7} className="px-5 py-10 text-center text-xs text-[#6e6e73]">No users registered yet</td>
             </tr>
           )}
         </tbody>
