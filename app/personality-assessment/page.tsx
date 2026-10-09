@@ -92,12 +92,42 @@ const FAQ_SCHEMA = {
 }
 
 const VIRTUES = [
-  { label: 'Wisdom', bg: 'bg-blue-100 text-blue-800' },
-  { label: 'Courage', bg: 'bg-orange-100 text-orange-800' },
-  { label: 'Humanity', bg: 'bg-pink-100 text-pink-800' },
-  { label: 'Justice', bg: 'bg-purple-100 text-purple-800' },
-  { label: 'Temperance', bg: 'bg-green-100 text-green-800' },
-  { label: 'Transcendence', bg: 'bg-yellow-100 text-yellow-800' },
+  {
+    label: 'Wisdom',
+    badge: 'bg-blue-100 text-blue-800',
+    border: 'border-blue-200',
+    traits: ['Curiosity', 'Creativity', 'Love of Learning', 'Perspective', 'Judgment'],
+  },
+  {
+    label: 'Courage',
+    badge: 'bg-orange-100 text-orange-800',
+    border: 'border-orange-200',
+    traits: ['Bravery', 'Perseverance', 'Honesty', 'Zest'],
+  },
+  {
+    label: 'Humanity',
+    badge: 'bg-pink-100 text-pink-800',
+    border: 'border-pink-200',
+    traits: ['Love', 'Kindness', 'Social Intelligence'],
+  },
+  {
+    label: 'Justice',
+    badge: 'bg-teal-100 text-teal-800',
+    border: 'border-teal-200',
+    traits: ['Teamwork', 'Fairness', 'Leadership'],
+  },
+  {
+    label: 'Temperance',
+    badge: 'bg-purple-100 text-purple-800',
+    border: 'border-purple-200',
+    traits: ['Forgiveness', 'Humility', 'Prudence', 'Self-Regulation'],
+  },
+  {
+    label: 'Transcendence',
+    badge: 'bg-amber-100 text-amber-800',
+    border: 'border-amber-200',
+    traits: ['Appreciation of Beauty', 'Gratitude', 'Hope', 'Humor', 'Spirituality'],
+  },
 ]
 
 const TIERS = [
@@ -190,11 +220,21 @@ export default function PersonalityAssessmentPage() {
           <p className="text-lg text-[#6e6e73] leading-relaxed mb-8">
             Our platform adapts the world-renowned VIA Character Strengths framework, developed by pioneer psychologists Dr. Martin Seligman and Dr. Neal Mayerson. Used in over 190 countries by researchers and educators, this model identifies 24 universal traits grouped under 6 core virtues: Wisdom, Courage, Humanity, Justice, Temperance, and Transcendence.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
             {VIRTUES.map((v) => (
-              <span key={v.label} className={`px-4 py-1.5 rounded-full text-sm font-semibold ${v.bg}`}>
-                {v.label}
-              </span>
+              <div key={v.label} className={`rounded-2xl border ${v.border} bg-white p-5`}>
+                <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${v.badge}`}>
+                  {v.label}
+                </span>
+                <ul className="space-y-1.5">
+                  {v.traits.map((trait) => (
+                    <li key={trait} className="flex items-center gap-2 text-sm text-[#3d3d3f]">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#d2d2d7] shrink-0" />
+                      {trait}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>
