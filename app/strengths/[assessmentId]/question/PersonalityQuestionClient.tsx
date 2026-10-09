@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import type { PQuestion } from '@/lib/personality-questions'
-import type { PersonalityI18n } from '@/lib/personality-i18n'
+import { getPersonalityI18n } from '@/lib/personality-i18n'
 
 function CircleRating({
   value,
@@ -52,15 +52,14 @@ export default function PersonalityQuestionClient({
   questions,
   savedAnswers,
   locale,
-  t,
 }: {
   assessmentId: string
   childName: string
   questions: PQuestion[]
   savedAnswers: Record<string, number>
   locale: string
-  t: PersonalityI18n
 }) {
+  const t = getPersonalityI18n(locale)
   const router = useRouter()
   const [answers, setAnswers] = useState<Record<string, number>>(savedAnswers)
   const [index, setIndex] = useState(() => {

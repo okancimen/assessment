@@ -1,7 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect, notFound } from 'next/navigation'
 import { getQuestions } from '@/lib/personality-questions'
-import { getPersonalityI18n } from '@/lib/personality-i18n'
 import PersonalityQuestionClient from './PersonalityQuestionClient'
 
 export default async function StrengthsQuestionPage({
@@ -14,7 +13,6 @@ export default async function StrengthsQuestionPage({
   const { assessmentId } = await params
   const sp = await searchParams
   const locale = sp?.locale ?? 'en'
-  const t = getPersonalityI18n(locale)
 
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
@@ -55,7 +53,6 @@ export default async function StrengthsQuestionPage({
       questions={questions}
       savedAnswers={savedAnswers}
       locale={locale}
-      t={t}
     />
   )
 }
