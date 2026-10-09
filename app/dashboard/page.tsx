@@ -155,7 +155,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
             <p className="text-sm text-[#6e6e73] mt-1">{t.subtitle}</p>
           </div>
           <Link
-            href="/children/new"
+            href={`/children/new${locale ? `?locale=${locale}` : ''}`}
             className="bg-[#4F46E5] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
           >
             {t.addChild}
@@ -200,7 +200,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
           {!hasChildren ? (
             <div className="bg-white rounded-3xl border border-dashed border-[#d2d2d7] p-14 text-center">
               <p className="text-[#6e6e73] text-sm mb-4">{t.noChildrenYet}</p>
-              <Link href="/children/new" className="text-[#4F46E5] font-semibold text-sm hover:underline">
+              <Link href={`/children/new${locale ? `?locale=${locale}` : ''}`} className="text-[#4F46E5] font-semibold text-sm hover:underline">
                 {t.addFirstChild}
               </Link>
             </div>

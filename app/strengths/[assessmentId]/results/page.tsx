@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { redirect, notFound } from 'next/navigation'
 import Navbar from '@/components/dashboard/Navbar'
 import PublicFooter from '@/components/layout/PublicFooter'
-import { TRAIT_DESCRIPTIONS, Trait } from '@/lib/personality-questions'
+import { Trait } from '@/lib/personality-questions'
 import { getPersonalityI18n } from '@/lib/personality-i18n'
 import { getAge } from '@/lib/utils'
 import StrengthsRadarChart from './StrengthsRadarChart'
@@ -86,7 +86,7 @@ export default async function StrengthsResultsPage({
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <h1 className="text-2xl font-bold text-[#1d1d1f] tracking-tight">{t.resultsTitle(child.name)}</h1>
-            <p className="text-sm text-[#6e6e73] mt-0.5">Age {age} · {new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+            <p className="text-sm text-[#6e6e73] mt-0.5">{t.ageLabel(age)} · {new Date().toLocaleDateString(locale === 'ar' ? 'ar-EG' : locale === 'zh' ? 'zh-CN' : locale, { day: 'numeric', month: 'long', year: 'numeric' })}</p>
           </div>
           <div className="flex items-center gap-3">
             <PrintButton label={t.printBtn} />
@@ -106,11 +106,11 @@ export default async function StrengthsResultsPage({
               return (
                 <div key={trait} className="rounded-2xl bg-[#f5f5f7] border border-[#d2d2d7] p-5 space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${colorClass}`}>{virtue}</span>
+                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${colorClass}`}>{t.virtueNames[virtue] ?? virtue}</span>
                     <span className="text-xs font-semibold text-[#4F46E5]">#{i + 1}</span>
                   </div>
                   <p className="font-bold text-[#1d1d1f]">{t.traitLabels[trait]}</p>
-                  <p className="text-xs text-[#6e6e73] leading-relaxed">{TRAIT_DESCRIPTIONS[trait]}</p>
+                  <p className="text-xs text-[#6e6e73] leading-relaxed">{t.traitDescriptions[trait]}</p>
                   <div className="flex items-center gap-1.5 mt-1">
                     {[1, 2, 3, 4, 5].map((n) => (
                       <div
@@ -145,9 +145,9 @@ export default async function StrengthsResultsPage({
               const colorClass = VIRTUE_COLORS[virtue] ?? 'bg-[#eef2ff] text-[#4F46E5]'
               return (
                 <div key={trait} className="rounded-2xl bg-[#f5f5f7] border border-[#d2d2d7] p-5 space-y-2">
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${colorClass}`}>{virtue}</span>
+                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${colorClass}`}>{t.virtueNames[virtue] ?? virtue}</span>
                   <p className="font-semibold text-[#1d1d1f]">{t.traitLabels[trait]}</p>
-                  <p className="text-xs text-[#6e6e73] leading-relaxed">{TRAIT_DESCRIPTIONS[trait]}</p>
+                  <p className="text-xs text-[#6e6e73] leading-relaxed">{t.traitDescriptions[trait]}</p>
                 </div>
               )
             })}
@@ -174,8 +174,8 @@ export default async function StrengthsResultsPage({
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-[#f5f5f7]">
-                <th className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide">Trait</th>
-                <th className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">Virtue</th>
+                <th className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide">{t.traitHeader}</th>
+                <th className="text-left px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">{t.virtueHeader}</th>
                 <th className="text-right px-5 py-3 text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wide">{t.traitScore}</th>
               </tr>
             </thead>
@@ -187,7 +187,7 @@ export default async function StrengthsResultsPage({
                   <tr key={trait} className="border-b border-[#f5f5f7] last:border-0">
                     <td className="px-5 py-3 font-medium text-[#1d1d1f] text-xs">{t.traitLabels[trait]}</td>
                     <td className="px-5 py-3 hidden sm:table-cell">
-                      <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${colorClass}`}>{virtue}</span>
+                      <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${colorClass}`}>{t.virtueNames[virtue] ?? virtue}</span>
                     </td>
                     <td className="px-5 py-3 text-right">
                       <div className="flex items-center justify-end gap-2">

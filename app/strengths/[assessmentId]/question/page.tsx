@@ -31,7 +31,7 @@ export default async function StrengthsQuestionPage({
   }
 
   const tier = assessment.age_tier as 1 | 2 | 3 | 4
-  const questions = getQuestions(tier)
+  const questions = getQuestions(tier, locale)
 
   // Load existing answers so the parent can resume
   const { data: answersData } = await supabase

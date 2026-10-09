@@ -132,7 +132,7 @@ export default function PersonalityQuestionClient({
         {/* Progress */}
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-5 space-y-3">
           <div className="flex items-center justify-between text-xs text-[#6e6e73]">
-            <span className="font-medium text-[#1d1d1f]">{childName}&apos;s assessment</span>
+            <span className="font-medium text-[#1d1d1f]">{t.progressTitle(childName)}</span>
             <span className="tabular-nums">{t.questionOf(index + 1, questions.length)}</span>
           </div>
           <div className="h-1.5 bg-[#f5f5f7] rounded-full overflow-hidden">
@@ -142,8 +142,8 @@ export default function PersonalityQuestionClient({
             />
           </div>
           <p className="text-[10px] text-[#6e6e73]">
-            {answeredCount} of {questions.length} answered
-            {saving && <span className="ml-2 opacity-60">· saving…</span>}
+            {t.answeredOf(answeredCount, questions.length)}
+            {saving && <span className="ml-2 opacity-60">· {t.savingText}</span>}
           </p>
         </div>
 
@@ -153,7 +153,7 @@ export default function PersonalityQuestionClient({
             <span className="text-[10px] font-semibold text-[#4F46E5] uppercase tracking-wide">
               {t.traitLabels[current.trait]}
             </span>
-            <p className="text-lg font-semibold text-[#1d1d1f] leading-snug">{current.text.replace('My child', childName)}</p>
+            <p className="text-lg font-semibold text-[#1d1d1f] leading-snug">{current.text.replace(t.myChild, childName)}</p>
 
           </div>
 
@@ -184,7 +184,7 @@ export default function PersonalityQuestionClient({
                   disabled={!allAnswered || submitting}
                   className="px-6 py-2.5 rounded-full bg-[#4F46E5] text-white text-sm font-semibold hover:bg-[#4338CA] transition-colors disabled:opacity-50"
                 >
-                  {submitting ? 'Generating…' : t.submitBtn}
+                  {submitting ? t.generatingText : t.submitBtn}
                 </button>
               </div>
             ) : (

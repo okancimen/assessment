@@ -35,7 +35,7 @@ export default async function StrengthsStartPage({
   if (age < 6 || age > 20) redirect('/dashboard')
 
   const tier = getTier(child.date_of_birth)
-  const questions = getQuestions(tier)
+  const questions = getQuestions(tier, locale)
   const traits = TRAITS_BY_TIER[tier]
 
   return (
@@ -60,15 +60,15 @@ export default async function StrengthsStartPage({
             <ul className="space-y-1.5 text-sm text-[#4338CA]">
               <li className="flex items-start gap-2">
                 <span className="text-[#4F46E5] mt-0.5">✓</span>
-                <span><strong>{questions.length} statements</strong> · rate each 1–5 circles</span>
+                <span>{t.startBullet1(questions.length)}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#4F46E5] mt-0.5">✓</span>
-                <span><strong>15–20 minutes</strong> · you can pause any time</span>
+                <span>{t.startBullet2}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#4F46E5] mt-0.5">✓</span>
-                <span>Get a <strong>full character profile</strong> with AI summary at the end</span>
+                <span>{t.startBullet3}</span>
               </li>
             </ul>
           </div>
