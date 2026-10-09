@@ -10,10 +10,10 @@ export default async function StrengthsStartPage({
   params,
   searchParams,
 }: {
-  params: Promise<{ childId: string }>
+  params: Promise<{ assessmentId: string }>
   searchParams?: Promise<{ locale?: string }>
 }) {
-  const { childId } = await params
+  const { assessmentId: childId } = await params
   const sp = await searchParams
   const locale = sp?.locale ?? 'en'
   const t = getPersonalityI18n(locale)
