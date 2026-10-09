@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
-import { sendAcademicReminderEmail, sendInternshipReminderEmail, sendNoChildReminderEmail } from '@/lib/email'
+import { sendAcademicReminderEmail, sendInternshipReminderEmail, sendNoChildReminderEmail, sendNoAssessmentReminderEmail } from '@/lib/email'
 
 // Supabase admin client — bypasses RLS to read all in-progress assessments
 function adminClient() {
@@ -160,6 +160,44 @@ export async function GET(req: NextRequest) {
     }
   }
 
-  console.log(`[cron/assessment-reminder] sent=${sent} skipped=${skipped} noChildSent=${noChildSent}`)
-  return NextResponse.json({ sent, skipped, noChildSent })
+  // ── No-assessment reminder ─────────────────────────────────────────────────
+  // Children added > 24h ago with no assessment started yet get one email nudge.
+  let noAssessmentSent = 0
+
+  const { data: unstarted } = await supabase
+    .from('children')
+    .select('id, name, parent_id')
+    .is('no_assessment_reminder_sent_at', null)
+    .lt('created_at', cutoff)
+
+  for (const child of unstarted ?? []) {
+    const { count } = await supabase
+      .from('assessments')
+      .select('id', { count: 'exact', head: true })
+      .eq('child_id', child.id)
+
+    if (count && count > 0) continue
+
+    const { data: userData } = await supabase.auth.admin.getUserById(child.parent_id as string)
+    const email      = userData?.user?.email
+    const parentName = userData?.user?.user_metadata?.full_name?.split(' ')[0]
+                    ?? userData?.user?.email?.split('@')[0]
+                    ?? 'there'
+
+    if (!email) continue
+
+    try {
+      await sendNoAssessmentReminderEmail({ to: email, parentName, childName: child.name as string })
+      await supabase
+        .from('children')
+        .update({ no_assessment_reminder_sent_at: now.toISOString() })
+        .eq('id', child.id)
+      noAssessmentSent++
+    } catch (err) {
+      console.error(`[cron/assessment-reminder] no-assessment email failed for child ${child.id}`, err)
+    }
+  }
+
+  console.log(`[cron/assessment-reminder] sent=${sent} skipped=${skipped} noChildSent=${noChildSent} noAssessmentSent=${noAssessmentSent}`)
+  return NextResponse.json({ sent, skipped, noChildSent, noAssessmentSent })
 }

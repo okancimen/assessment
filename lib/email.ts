@@ -95,6 +95,33 @@ export async function sendNoChildReminderEmail(opts: {
   )
 }
 
+// ── No-assessment reminder ───────────────────────────────────────────────────
+
+export async function sendNoAssessmentReminderEmail(opts: {
+  to: string
+  parentName: string
+  childName: string
+}): Promise<void> {
+  const dashboardUrl = `${SITE}/dashboard`
+  const sampleUrl    = `${SITE}/sample-report`
+  const p = opts.parentName
+  const c = opts.childName
+
+  await sendEmail(
+    opts.to,
+    `${c}'s assessment is ready to start`,
+    `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
+      <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">Ready when ${c} is</h1>
+      <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi ${p}, you added ${c} to Eduentry yesterday but haven't started their assessment yet. It takes under an hour, adapts to their level automatically, and gives you a full cognitive profile — verbal reasoning, numeracy, and spatial thinking — benchmarked internationally.</p>
+      <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Here's what the report looks like when they're done:</p>
+      ${BTN(sampleUrl, 'View sample report →')}
+      <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Start the assessment from your dashboard any time:</p>
+      ${BTN(dashboardUrl, 'Start assessment →')}
+      <p style="color:#9ca3af;font-size:11px;text-align:center;margin:0">Eduentry · This is a one-time reminder.</p>
+    </div>`
+  )
+}
+
 // ── Academic reminder emails ──────────────────────────────────────────────────
 
 export async function sendAcademicReminderEmail(opts: {
