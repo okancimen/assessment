@@ -93,6 +93,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
+    {
+      url: `${BASE}/personality-assessment`,
+      lastModified: '2026-10-10',
+      changeFrequency: 'monthly',
+      priority: 0.9,
+      alternates: {
+        languages: {
+          'en-GB': `${BASE}/personality-assessment`,
+          fr: `${BASE}/fr/evaluation-de-personnalite`,
+          es: `${BASE}/es/evaluacion-de-personalidad`,
+          ar: `${BASE}/ar/taqyim-al-shakhsiya`,
+          tr: `${BASE}/tr/kisilik-degerlendirmesi`,
+          ru: `${BASE}/ru/otsenka-lichnosti`,
+          zh: `${BASE}/zh/xingge-pinggu`,
+          'x-default': `${BASE}/personality-assessment`,
+        },
+      },
+    },
   ]
 
   const subjectPages: MetadataRoute.Sitemap = SUBJECTS.map((slug) => ({

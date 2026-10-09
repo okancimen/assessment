@@ -57,6 +57,8 @@ const nextConfig: NextConfig = {
       { source: '/es/blog/how-does-your-child-compare-globally',       destination: '/es/blog/como-se-compara-tu-hijo-a-nivel-mundial',          permanent: true },
       // Duplicate NSW OC posts — consolidate into the newer, better-optimised post
       { source: '/blog/australia-oc-test-guide', destination: '/blog/nsw-opportunity-class-test-guide', permanent: true },
+      // Strip /en/ prefix — English content lives at the root, not under /en/
+      { source: '/en/:path*', destination: '/:path*', permanent: true },
       // Locale blog slugs — redirect /blog/[locale-slug] → /[locale]/blog/[locale-slug]
       ...localeSlugRedirects,
     ]
