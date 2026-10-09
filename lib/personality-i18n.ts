@@ -366,7 +366,7 @@ const AR: PersonalityI18n = {
 
 const TR: PersonalityI18n = {
   dir: 'ltr',
-  myChild: 'Çocuğunuz',
+  myChild: 'Çocuğum',
   traitLabels: {
     curiosity: 'Merak', creativity: 'Yaratıcılık', love_of_learning: 'Öğrenme Sevgisi',
     perspective: 'Perspektif', judgment: 'Eleştirel Düşünce', bravery: 'Cesaret',

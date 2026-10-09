@@ -54,28 +54,15 @@ export async function POST(
   const growthAreas = getGrowthAreas(traitScores)
   const age = getAge(child.date_of_birth)
 
-  let aiSummary: string | null = null
-  try {
-    aiSummary = await generatePersonalitySummary({
-      childName: child.name,
-      age,
-      traitScores: traitScores as Record<Trait, number>,
-      topStrengths,
-      growthAreas,
-      locale,
-    })
-  } catch (err) {
-    console.error('[personality/complete] summary generation failed', err)
-  }
-
   const admin = createAdminClient()
 
+  // Save scores immediately so results page loads even if AI summary is slow
   const { error: insertError } = await admin.from('personality_results').upsert({
     assessment_id: assessmentId,
     trait_scores: traitScores,
     top_strengths: topStrengths,
     growth_areas: growthAreas,
-    ai_summary: aiSummary,
+    ai_summary: null,
   }, { onConflict: 'assessment_id' })
 
   if (insertError) {
@@ -87,6 +74,22 @@ export async function POST(
     .from('personality_assessments')
     .update({ status: 'completed', completed_at: new Date().toISOString() })
     .eq('id', assessmentId)
+
+  // Generate AI summary in background — update DB when done
+  generatePersonalitySummary({
+    childName: child.name,
+    age,
+    traitScores: traitScores as Record<Trait, number>,
+    topStrengths,
+    growthAreas,
+    locale,
+  }).then((aiSummary) =>
+    admin.from('personality_results')
+      .update({ ai_summary: aiSummary })
+      .eq('assessment_id', assessmentId)
+  ).catch((err) => {
+    console.error('[personality/complete] summary generation failed', err)
+  })
 
   return NextResponse.json({ ok: true })
 }

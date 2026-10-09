@@ -104,11 +104,14 @@ export default function PersonalityQuestionClient({
   async function handleSubmit() {
     setSubmitting(true)
     setSubmitError(null)
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), 90_000)
     try {
       const res = await fetch(`/api/personality/${assessmentId}/complete`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ locale }),
+        signal: controller.signal,
       })
       if (!res.ok) {
         const data = await res.json().catch(() => ({}))
@@ -116,9 +119,15 @@ export default function PersonalityQuestionClient({
         return
       }
       router.push(`/strengths/${assessmentId}/results?locale=${locale}`)
-    } catch {
-      setSubmitError('Network error. Please try again.')
+    } catch (err) {
+      if (err instanceof Error && err.name === 'AbortError') {
+        // Timed out — results may still be saved, go check
+        router.push(`/strengths/${assessmentId}/results?locale=${locale}`)
+      } else {
+        setSubmitError('Network error. Please try again.')
+      }
     } finally {
+      clearTimeout(timeout)
       setSubmitting(false)
     }
   }
