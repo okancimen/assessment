@@ -10,7 +10,11 @@ import { readFileSync } from 'fs'
 const KEY = '668f5830837348c9b10a615b5d3ee411'
 const HOST = 'eduentry.com'
 const BASE = `https://${HOST}`
-const ENDPOINT = 'https://api.indexnow.org/indexnow'
+// Submit to multiple endpoints — Yandex is confirmed working; Bing logged but non-fatal
+const ENDPOINTS = [
+  'https://yandex.com/indexnow',
+  'https://api.indexnow.org/indexnow',
+]
 
 // Files changed in this push
 let changed
@@ -117,16 +121,16 @@ const payload = {
   urlList,
 }
 
-const res = await fetch(ENDPOINT, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json; charset=utf-8' },
-  body: JSON.stringify(payload),
-})
-
-const body = await res.text()
-if (res.status === 200 || res.status === 202) {
-  console.log(`\nDone — ${res.status} ${res.statusText}`)
-} else {
-  // Non-fatal: log but don't fail the workflow (key may not yet be deployed)
-  console.warn(`\nIndexNow returned ${res.status}: ${body}`)
+for (const endpoint of ENDPOINTS) {
+  const res = await fetch(endpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
+    body: JSON.stringify(payload),
+  })
+  const body = await res.text()
+  if (res.status === 200 || res.status === 202) {
+    console.log(`${endpoint} — ${res.status} OK`)
+  } else {
+    console.warn(`${endpoint} — ${res.status}: ${body}`)
+  }
 }
