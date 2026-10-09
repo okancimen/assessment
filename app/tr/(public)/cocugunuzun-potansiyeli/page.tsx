@@ -5,13 +5,13 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/tr/auth/register`
 
 export const metadata: Metadata = {
-  title: 'Çocuğumun Güçlü ve Zayıf Yönleri: Ücretsiz Test',
+  title: 'Çocuğumun Gerçek Bilişsel Durumu: Ücretsiz Değerlendirme',
   description:
-    'Çocuğunuzun güçlü ve zayıf yönlerini bir saat içinde öğrenin. PISA, SAT ve GCSE standartlarıyla ücretsiz bilişsel değerlendirme — anında AI destekli rapor.',
+    'Çocuğunuzun gerçek bilişsel durumunu bir saat içinde öğrenin. PISA, SAT ve GCSE standartlarıyla akranlarına göre tam konumunu gösteren ücretsiz bilişsel değerlendirme.',
   keywords: [
-    'çocuğumun güçlü ve zayıf yönleri nelerdir',
-    'çocuğumun güçlü yönleri',
-    'çocuğumun zayıf yönleri',
+    'çocuğumun bilişsel durumu nedir',
+    'çocuğun akranlar arasındaki akademik konumu',
+    'çocuk bilişsel durum testi',
     'çocuk bilişsel değerlendirme',
     'ücretsiz çocuk testi',
     'PISA değerlendirme çocuk',
@@ -42,15 +42,15 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/tr/cocugunuzun-potansiyeli`,
     siteName: 'Eduentry',
-    title: 'Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir? — Ücretsiz Bilişsel Test',
-    description: 'Çocuğunuzun güçlü ve zayıf yönlerini bir saat içinde öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
+    title: 'Çocuğumun Bilişsel Durumu Nedir? — Ücretsiz Akademik Değerlendirme',
+    description: 'Çocuğunuzun gerçek bilişsel durumunu bir saat içinde öğrenin. PISA, SAT ve GCSE standartlarına göre akranlarıyla karşılaştırmalı ücretsiz değerlendirme.',
     locale: 'tr_TR',
     images: [{ url: `${BASE_URL}/tr/opengraph-image`, width: 1200, height: 630, alt: 'Çocuğunuzun Bilişsel Değerlendirmesi — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir? — Ücretsiz Bilişsel Test',
-    description: 'Çocuğunuzun güçlü ve zayıf yönlerini bir saat içinde öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
+    title: 'Çocuğumun Bilişsel Durumu Nedir? — Ücretsiz Akademik Değerlendirme',
+    description: 'Çocuğunuzun gerçek bilişsel durumunu bir saat içinde öğrenin. PISA, SAT ve GCSE standartlarına göre akranlarıyla karşılaştırmalı ücretsiz değerlendirme.',
     images: [`${BASE_URL}/tr/opengraph-image`],
   },
 }
@@ -95,8 +95,8 @@ const SCIENCE_POINTS = [
 
 const FAQS = [
   {
-    q: 'Çocuğumun güçlü ve zayıf yönleri nelerdir?',
-    a: 'Çocuğunuzun akademik güçlü ve zayıf yönleri üç bağımsız bilişsel alanda ölçülür: sözel akıl yürütme (dil kavrama ve analoji), sayısal muhakeme (örüntü tanıma ve matematiksel mantık) ve görsel-uzamsal düşünme (şekil analizi ve 3D ilişkiler). Ücretsiz adaptif test, her alan için uluslararası yaş normuna göre ayrı bir yüzdelik dilim skoru üretir.',
+    q: 'Çocuğumun bilişsel durum değerlendirmesi ne gösteriyor?',
+    a: 'Değerlendirme, çocuğunuzun üç bağımsız bilişsel alandaki mevcut konumunu ortaya koyar: sözel akıl yürütme (dil kavrama ve analoji), sayısal muhakeme (örüntü tanıma ve matematiksel mantık) ve görsel-uzamsal düşünme (şekil analizi ve 3D ilişkiler). Her alan için uluslararası yaş normuna göre ayrı bir yüzdelik dilim skoru üretilir — bir şeyi "zayıflık" olarak etiketlemek yerine dünya genelindeki akranlarına kıyasla tam konumunu gösterir.',
   },
   {
     q: 'Karne notları çocuğumun gerçek potansiyelini gösterir mi?',
@@ -141,8 +141,8 @@ const PAGE_SCHEMA = {
   '@type': 'WebPage',
   '@id': `${BASE_URL}/tr/cocugunuzun-potansiyeli#webpage`,
   url: `${BASE_URL}/tr/cocugunuzun-potansiyeli`,
-  name: 'Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir? — Ücretsiz Bilişsel Test',
-  description: 'Çocuğunuzun güçlü ve zayıf yönlerini bir saat içinde öğrenin. PISA, SAT ve GCSE standartlarına göre ücretsiz uyarlanabilir bilişsel değerlendirme.',
+  name: 'Çocuğumun Bilişsel Durumu Nedir? — Ücretsiz Akademik Değerlendirme',
+  description: 'Çocuğunuzun gerçek bilişsel durumunu bir saat içinde öğrenin. PISA, SAT ve GCSE standartlarına göre akranlarıyla karşılaştırmalı ücretsiz değerlendirme.',
   inLanguage: 'tr',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
@@ -179,7 +179,7 @@ const FAQ_SCHEMA = {
 }
 
 const RELATED_POSTS = [
-  { href: '/tr/blog/cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet', tag: 'Değerlendirme', title: 'Ücretsiz Akademik Test: Güçlü ve Zayıf Yönleri Bir Saat İçinde Keşfedin' },
+  { href: '/tr/blog/cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet', tag: 'Değerlendirme', title: 'Ücretsiz Akademik Test: Çocuğunuzun Gerçek Bilişsel Durumunu Bir Saat İçinde Keşfedin' },
   { href: '/tr/blog/zeki-cocuk-neden-basarisiz-olur', tag: 'Rehber', title: 'Zeki Çocuk Neden Başarısız Olur? Ebeveyn Rehberi' },
   { href: '/tr/blog/cocugunuzun-gizli-guclerini-kesfetmek-yeni-nesil-veli-rehberi', tag: 'Rehber', title: 'Çocuğunuzun Gizli Güçlerini Keşfedin: Yeni Nesil Veli Rehberi' },
 ]
@@ -208,8 +208,8 @@ export default function CocugunuzunPotansiyeliPage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
-            Çocuğunuzun Gerçek Bilişsel<br />
-            <span className="text-indigo-600">Güçlü ve Zayıf Yönlerini</span><br />
+            Çocuğunuzun Gerçek<br />
+            <span className="text-indigo-600">Bilişsel Durumunu</span><br />
             Keşfedin
           </h1>
 
@@ -251,9 +251,9 @@ export default function CocugunuzunPotansiyeliPage() {
       {/* ── FEATURED SNIPPET SECTION ─────────────────────────────── */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğumun Güçlü ve Zayıf Yönleri Nelerdir?</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğumun Bilişsel Durumu Nedir?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Çocuğunuzun akademik güçlü ve zayıf yönleri üç bağımsız bilişsel alanda ölçülür:</strong> sözel akıl yürütme (dil kavrama ve analoji), sayısal muhakeme (örüntü tanıma ve matematiksel mantık) ve görsel-uzamsal düşünme (şekil analizi ve 3D ilişkiler). Ücretsiz adaptif test, her alan için uluslararası yaş normuna göre ayrı bir yüzdelik dilim skoru üretir — hangisinde gerçekten güçlü, hangisinde hedefe yönelik desteğin en büyük farkı yaratacağını net biçimde gösterir.
+            <strong>Çocuğunuzun bilişsel durumu üç bağımsız alanda değerlendirilir:</strong> sözel akıl yürütme (dil kavrama ve analoji), sayısal muhakeme (örüntü tanıma ve matematiksel mantık) ve görsel-uzamsal düşünme (şekil analizi ve 3D ilişkiler). Ücretsiz adaptif test, her alan için uluslararası yaş normuna göre ayrı bir yüzdelik dilim skoru üretir — çocuğunuzun dünya genelindeki akranlarına kıyasla tam olarak nerede durduğunu gösterir.
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">
             Karne notları bu soruyu cevaplayamaz — çünkü notlar belirli bir okulda, belirli bir öğretmenin verdiği müfredattaki bilgiyi ölçer. Uluslararası standartlarda bilişsel potansiyeli ölçmez. OECD verilerine göre akışkan muhakemede üst çeyrekte yer almasına karşın okul başarımında alt yarıda kalan öğrenciler tüm öğrencilerin <strong>%12–18&apos;ini</strong> oluşturmaktadır — okul sistemlerinin kronik olarak küçümsediği bir grup.
@@ -311,7 +311,7 @@ export default function CocugunuzunPotansiyeliPage() {
       <section className="py-20 px-6 bg-[#f9f8ff]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">Örnek Rapor: Küresel Yetenek Profili</h2>
-          <p className="text-gray-500 text-base mb-10">Test tamamlandığında ebeveynler dört alanda yüzdelik dilim sıralamalarını ve güçlü/gelişim alanlarını gösteren ayrıntılı bir rapor alır.</p>
+          <p className="text-gray-500 text-base mb-10">Test tamamlandığında ebeveynler dört alanda yüzdelik dilim sıralamalarını gösteren ayrıntılı bir rapor alır — çocuğun dünya genelindeki akranları arasındaki tam bilişsel konumunu ortaya koyar.</p>
 
           <Link href="/tr/ornek-rapor" className="block group">
             <div className="border-2 border-indigo-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all bg-gradient-to-br from-indigo-50 to-white">

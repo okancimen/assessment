@@ -5,13 +5,13 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/fr/auth/register`
 
 export const metadata: Metadata = {
-  title: 'Forces et faiblesses de l\'enfant : test gratuit',
+  title: ‘Statut cognitif de votre enfant : évaluation gratuite’,
   description:
-    'Découvrez les forces et faiblesses de votre enfant en moins d’une heure. Évaluation cognitive selon PISA, SAT et GCSE — rapport IA instantané.',
+    ‘Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon PISA, SAT et GCSE — voyez où il se situe parmi ses pairs.’,
   keywords: [
-    'quelles sont les forces et faiblesses de mon enfant',
-    'forces de mon enfant',
-    'faiblesses de mon enfant',
+    ‘quel est le statut cognitif de mon enfant’,
+    ‘positionnement académique de mon enfant parmi ses pairs’,
+    ‘test statut cognitif enfant’,
     'évaluation cognitive enfant',
     'test enfant gratuit',
     'évaluation PISA enfant',
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/fr/potentiel-de-votre-enfant`,
     siteName: 'Eduentry',
-    title: 'Quelles sont les Forces et Faiblesses de Mon Enfant? — Test Cognitif Gratuit',
-    description: 'Découvrez les forces et faiblesses de votre enfant en moins d’une heure. Évaluation cognitive adaptative gratuite selon les normes PISA, SAT et GCSE.',
-    locale: 'fr_FR',
+    title: ‘Quel est le Statut Cognitif de Mon Enfant? — Évaluation Académique Gratuite’,
+    description: ‘Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.’,
+    locale: ‘fr_FR’,
     images: [{ url: `${BASE_URL}/fr/opengraph-image`, width: 1200, height: 630, alt: "Évaluation Cognitive de Votre Enfant — Eduentry" }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Quelles sont les Forces et Faiblesses de Mon Enfant? — Test Cognitif Gratuit',
-    description: 'Découvrez les forces et faiblesses de votre enfant en moins d’une heure. Évaluation cognitive adaptative gratuite selon les normes PISA, SAT et GCSE.',
+    title: ‘Quel est le Statut Cognitif de Mon Enfant? — Évaluation Académique Gratuite’,
+    description: ‘Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.’,
     images: [`${BASE_URL}/fr/opengraph-image`],
   },
 }
@@ -85,8 +85,8 @@ const SCIENCE_POINTS = [
 
 const FAQS = [
   {
-    q: 'Quelles sont les forces et faiblesses académiques de mon enfant?',
-    a: 'Les forces et faiblesses académiques de votre enfant sont mesurées dans trois domaines cognitifs indépendants: le raisonnement verbal (compréhension du langage et analogies), le raisonnement numérique (reconnaissance de motifs et logique mathématique) et la pensée visuo-spatiale (analyse des formes et relations 3D). Le test adaptatif gratuit produit un score de percentile distinct pour chaque domaine par rapport aux normes d\'âge internationales.',
+    q: "Que montre l'évaluation du statut cognitif de mon enfant?",
+    a: "L'évaluation indique le positionnement actuel de votre enfant dans trois domaines cognitifs indépendants: le raisonnement verbal (compréhension du langage et analogies), le raisonnement numérique (reconnaissance de motifs et logique mathématique) et la pensée visuo-spatiale (analyse des formes et relations 3D). Chaque domaine produit un score de percentile par rapport aux normes d'âge internationales — montrant précisément où il se situe parmi ses pairs, sans étiqueter quoi que ce soit comme une 'faiblesse'.",
   },
   {
     q: 'Les notes scolaires révèlent-elles le vrai potentiel de mon enfant?',
@@ -131,8 +131,8 @@ const PAGE_SCHEMA = {
   '@type': 'WebPage',
   '@id': `${BASE_URL}/fr/potentiel-de-votre-enfant#webpage`,
   url: `${BASE_URL}/fr/potentiel-de-votre-enfant`,
-  name: 'Quelles sont les Forces et Faiblesses de Mon Enfant? — Test Cognitif Gratuit',
-  description: 'Découvrez les forces et faiblesses de votre enfant en moins d’une heure. Évaluation cognitive adaptative gratuite selon les normes PISA, SAT et GCSE.',
+  name: ‘Quel est le Statut Cognitif de Mon Enfant? — Évaluation Académique Gratuite’,
+  description: ‘Découvrez le vrai statut cognitif de votre enfant en moins d’une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.’,
   inLanguage: 'fr',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
@@ -169,7 +169,7 @@ const FAQ_SCHEMA = {
 }
 
 const RELATED_POSTS = [
-  { href: '/fr/blog/test-academique-gratuit-forces-faiblesses-enfant', tag: 'Évaluation', title: 'Test Académique Gratuit: Découvrez les Forces et Faiblesses de Votre Enfant' },
+  { href: '/fr/blog/test-academique-gratuit-forces-faiblesses-enfant', tag: 'Évaluation', title: "Test Académique Gratuit: Découvrez le Vrai Statut Cognitif de Votre Enfant" },
   { href: '/fr/blog/decouvrir-forces-cachees-enfant-guide-parents-moderne', tag: 'Guide', title: 'Découvrir les Forces Cachées de Votre Enfant: Guide Moderne pour Parents' },
   { href: '/fr/blog/enfant-intelligent-mauvaises-notes', tag: 'Guide', title: 'Enfant Intelligent, Mauvaises Notes: Guide pour Parents' },
 ]
@@ -196,7 +196,8 @@ export default function PotentielDeVotreEnfantPage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
-            Découvrez les Vraies Forces et Faiblesses Cognitives de Votre Enfant
+            Découvrez le Vrai Statut<br />
+            <span className="text-indigo-600">Cognitif de Votre Enfant</span>
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -235,9 +236,9 @@ export default function PotentielDeVotreEnfantPage() {
 
       <section className="py-16 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Quelles sont les forces et faiblesses de mon enfant?</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Quel est le statut cognitif de mon enfant?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Les forces et faiblesses académiques de votre enfant sont mesurées dans trois domaines cognitifs indépendants:</strong> le raisonnement verbal (compréhension du langage et analogies), le raisonnement numérique (reconnaissance de motifs et logique mathématique) et la pensée visuo-spatiale (analyse des formes et relations 3D). Le test adaptatif gratuit produit un score de percentile distinct pour chaque domaine par rapport aux normes d&apos;âge internationales — montrant clairement où il est vraiment fort et où un soutien ciblé ferait la plus grande différence.
+            <strong>Le statut cognitif de votre enfant est évalué dans trois domaines cognitifs indépendants:</strong> le raisonnement verbal (compréhension du langage et analogies), le raisonnement numérique (reconnaissance de motifs et logique mathématique) et la pensée visuo-spatiale (analyse des formes et relations 3D). Le test adaptatif gratuit produit un score de percentile distinct pour chaque domaine par rapport aux normes d&apos;âge internationales — indiquant précisément où il se situe parmi ses pairs à l&apos;échelle mondiale.
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">
             Les notes scolaires ne peuvent pas répondre à cette question — car elles mesurent les connaissances d&apos;un programme spécifique dans une école, avec un enseignant donné. Elles ne mesurent pas le potentiel cognitif selon les normes internationales. Selon les données de l&apos;OCDE, les élèves dans le quartile supérieur du raisonnement fluide mais dans la moitié inférieure des résultats scolaires représentent <strong>12 à 18%</strong> de tous les élèves — un groupe chroniquement sous-estimé par les systèmes scolaires. La méta-analyse de John Hattie (plus de 900 études) identifie l&apos;évaluation diagnostique avec un effet de taille de 0,67 — parmi les interventions éducatives les plus efficaces.
@@ -292,7 +293,7 @@ export default function PotentielDeVotreEnfantPage() {
       <section className="py-20 px-6 bg-[#f9f8ff]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">Exemple de Rapport: Profil de Talent Mondial</h2>
-          <p className="text-gray-500 text-base mb-10">Lorsque le test est terminé, les parents reçoivent un rapport détaillé montrant les classements en percentile dans quatre domaines et les points forts/axes de développement.</p>
+          <p className="text-gray-500 text-base mb-10">Lorsque le test est terminé, les parents reçoivent un rapport détaillé montrant les classements en percentile dans quatre domaines — le positionnement cognitif précis de leur enfant parmi ses pairs à l&apos;échelle mondiale.</p>
 
           <Link href="/fr/exemple-de-rapport" className="block group">
             <div className="border-2 border-indigo-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all bg-gradient-to-br from-indigo-50 to-white">

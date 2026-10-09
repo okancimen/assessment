@@ -7,13 +7,13 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/auth/register`
 
 export const metadata: Metadata = {
-  title: "Your Child's Strengths & Weaknesses: Free Test",
+  title: "Your Child's True Cognitive Status: Free Assessment",
   description:
-    "Find your child's strengths and gaps within an hour. Free adaptive assessment benchmarked against PISA, SAT and GCSE, with an instant AI report.",
+    "Find your child's true cognitive status within an hour. Free adaptive assessment benchmarked against PISA, SAT and GCSE — see exactly how they compare to peers worldwide.",
   keywords: [
-    "what are my child's strengths and weaknesses",
-    "my child's strengths",
-    "my child's weaknesses",
+    "what is my child's cognitive status",
+    "child cognitive standing among peers",
+    "child academic status test",
     'child cognitive assessment',
     'free child test',
     'PISA assessment child',
@@ -44,17 +44,17 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/your-childs-potential`,
     siteName: 'Eduentry',
-    title: "What Are My Child's Strengths and Weaknesses? — Free Cognitive Test",
+    title: "What Is My Child's Cognitive Status? — Free Academic Assessment",
     description:
-      "Discover your child's strengths and weaknesses within an hour. Free adaptive cognitive assessment benchmarked against PISA, SAT and GCSE standards.",
+      "Discover your child's true cognitive status within an hour. Free adaptive assessment benchmarked against PISA, SAT and GCSE — see how they compare to peers worldwide.",
     locale: 'en_GB',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: "Your Child's Cognitive Assessment — Eduentry" }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "What Are My Child's Strengths and Weaknesses? — Free Cognitive Test",
+    title: "What Is My Child's Cognitive Status? — Free Academic Assessment",
     description:
-      "Discover your child's strengths and weaknesses within an hour. Free adaptive cognitive assessment benchmarked against PISA, SAT and GCSE standards.",
+      "Discover your child's true cognitive status within an hour. Free adaptive assessment benchmarked against PISA, SAT and GCSE — see how they compare to peers worldwide.",
     images: [`${BASE_URL}/opengraph-image`],
   },
 }
@@ -99,8 +99,8 @@ const SCIENCE_POINTS = [
 
 const FAQS = [
   {
-    q: "What are my child's academic strengths and weaknesses?",
-    a: "Your child's academic strengths and weaknesses are measured across three independent cognitive domains: verbal reasoning (language comprehension and analogies), numerical reasoning (pattern recognition and mathematical logic), and visual-spatial thinking (shape analysis and 3D relationships). The free adaptive test produces a separate percentile score for each domain based on international age norms.",
+    q: "What does my child's cognitive status assessment show?",
+    a: "The assessment shows your child's current cognitive standing across three independent domains: verbal reasoning (language comprehension and analogies), numerical reasoning (pattern recognition and mathematical logic), and visual-spatial thinking (shape analysis and 3D relationships). Each domain produces a separate percentile score against international age norms — showing exactly where they stand among peers worldwide, not labelling anything as a 'weakness'.",
   },
   {
     q: "Do school grades show my child's real potential?",
@@ -145,8 +145,8 @@ const PAGE_SCHEMA = {
   '@type': 'WebPage',
   '@id': `${BASE_URL}/your-childs-potential#webpage`,
   url: `${BASE_URL}/your-childs-potential`,
-  name: "What Are My Child's Strengths and Weaknesses? — Free Cognitive Test",
-  description: "Discover your child's strengths and weaknesses within an hour. Free adaptive cognitive assessment benchmarked against PISA, SAT and GCSE standards.",
+  name: "What Is My Child's Cognitive Status? — Free Academic Assessment",
+  description: "Discover your child's true cognitive status within an hour. Free adaptive assessment benchmarked against PISA, SAT and GCSE — see how they compare to peers worldwide.",
   inLanguage: 'en',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
@@ -183,7 +183,7 @@ const FAQ_SCHEMA = {
 }
 
 const RELATED_POSTS = [
-  { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: "Free Academic Test: Discover Your Child's Strengths & Weaknesses Within an Hour" },
+  { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: "Free Academic Test: Discover Your Child's True Cognitive Status Within an Hour" },
   { href: '/blog/smart-child-bad-grades', tag: 'Guide', title: "Smart Child, Bad Grades: A Parent's Guide" },
   { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Guide', title: "Discover Your School-Age Child's Hidden Strengths: A Modern Parent's Guide" },
 ]
@@ -213,7 +213,7 @@ export default function YourChildsPotentialPage() {
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
             Discover Your Child&apos;s True<br />
-            <span className="text-indigo-600">Cognitive Strengths &amp; Weaknesses</span>
+            <span className="text-indigo-600">Cognitive Status</span>
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -252,9 +252,9 @@ export default function YourChildsPotentialPage() {
 
       <section className="py-16 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">What Are My Child&apos;s Strengths and Weaknesses?</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is My Child&apos;s Cognitive Status?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Your child&apos;s academic strengths and weaknesses are measured across three independent cognitive domains:</strong> verbal reasoning (language comprehension and analogies), numerical reasoning (pattern recognition and mathematical logic), and visual-spatial thinking (shape analysis and 3D relationships). The free adaptive test produces a separate percentile score for each domain based on international age norms — clearly showing where they truly excel and where targeted support will make the greatest difference.
+            <strong>Your child&apos;s cognitive status is assessed across three independent cognitive domains:</strong> verbal reasoning (language comprehension and analogies), numerical reasoning (pattern recognition and mathematical logic), and visual-spatial thinking (shape analysis and 3D relationships). The free adaptive test produces a separate percentile score for each domain based on international age norms — showing precisely where they stand among peers worldwide.
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">
             School grades cannot answer this question — they measure knowledge from a specific curriculum taught by a specific teacher at a specific school. They do not measure cognitive potential by international standards. According to OECD data, students in the top quartile of fluid reasoning but in the bottom half of school achievement represent <strong>12–18%</strong> of all students — a group chronically underestimated by school systems. John Hattie&apos;s meta-analysis of over 900 studies sets the effect size of diagnostic assessment at 0.67 — among the highest-impact interventions in education.
@@ -309,7 +309,7 @@ export default function YourChildsPotentialPage() {
       <section className="py-20 px-6 bg-[#f9f8ff]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">Sample Report: Global Ability Profile</h2>
-          <p className="text-gray-500 text-base mb-10">When the test is complete, parents receive a detailed report showing percentile rankings across four domains along with strengths and development areas.</p>
+          <p className="text-gray-500 text-base mb-10">When the test is complete, parents receive a detailed report showing percentile rankings across four domains — their child&apos;s precise cognitive standing among peers worldwide.</p>
 
           <Link href="/sample-report" className="block group">
             <div className="border-2 border-indigo-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all bg-gradient-to-br from-indigo-50 to-white">

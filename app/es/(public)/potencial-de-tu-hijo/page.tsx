@@ -5,13 +5,13 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/es/auth/register`
 
 export const metadata: Metadata = {
-  title: 'Fortalezas y debilidades de tu hijo: test gratis',
+  title: 'Estatus cognitivo de tu hijo: evaluación gratuita',
   description:
-    'Descubre las fortalezas y debilidades de tu hijo en menos de una hora. Evaluación cognitiva gratuita comparada con PISA, SAT y GCSE — informe IA instantáneo.',
+    'Descubre el verdadero estatus cognitivo de tu hijo en menos de una hora. Evaluación comparativa gratuita según PISA, SAT y GCSE — ve dónde se sitúa entre sus pares.',
   keywords: [
-    'cuáles son las fortalezas y debilidades de mi hijo',
-    'fortalezas de mi hijo',
-    'debilidades de mi hijo',
+    'cuál es el estatus cognitivo de mi hijo',
+    'posición académica de mi hijo entre sus pares',
+    'test de estatus cognitivo infantil',
     'evaluación cognitiva infantil',
     'test gratuito para niños',
     'evaluación PISA niños',
@@ -32,17 +32,17 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/es/potencial-de-tu-hijo`,
     siteName: 'Eduentry',
-    title: '¿Cuáles son las Fortalezas y Debilidades de mi Hijo? — Test Cognitivo Gratuito',
+    title: '¿Cuál es el Estatus Cognitivo de mi Hijo? — Evaluación Académica Gratuita',
     description:
-      'Descubre las fortalezas y debilidades de tu hijo en menos de una hora. Evaluación cognitiva adaptativa gratuita comparada con estándares PISA, SAT y GCSE.',
+      'Descubre el verdadero estatus cognitivo de tu hijo en menos de una hora. Evaluación comparativa gratuita según estándares PISA, SAT y GCSE.',
     locale: 'es_ES',
     images: [{ url: `${BASE_URL}/es/opengraph-image`, width: 1200, height: 630, alt: 'Evaluación Cognitiva de tu Hijo — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '¿Cuáles son las Fortalezas y Debilidades de mi Hijo? — Test Cognitivo Gratuito',
+    title: '¿Cuál es el Estatus Cognitivo de mi Hijo? — Evaluación Académica Gratuita',
     description:
-      'Descubre las fortalezas y debilidades de tu hijo en menos de una hora. Evaluación cognitiva adaptativa gratuita comparada con estándares PISA, SAT y GCSE.',
+      'Descubre el verdadero estatus cognitivo de tu hijo en menos de una hora. Evaluación comparativa gratuita según estándares PISA, SAT y GCSE.',
     images: [`${BASE_URL}/es/opengraph-image`],
   },
 }
@@ -87,8 +87,8 @@ const SCIENCE_POINTS = [
 
 const FAQS = [
   {
-    q: '¿Cuáles son las fortalezas y debilidades académicas de mi hijo?',
-    a: 'Las fortalezas y debilidades académicas de tu hijo se miden en tres dominios cognitivos independientes: razonamiento verbal (comprensión del lenguaje y analogías), razonamiento numérico (reconocimiento de patrones y lógica matemática) y pensamiento visual-espacial (análisis de formas y relaciones 3D). El test adaptativo gratuito produce una puntuación percentil separada para cada dominio basada en normas internacionales de edad.',
+    q: '¿Qué muestra la evaluación del estatus cognitivo de mi hijo?',
+    a: 'La evaluación muestra el posicionamiento actual de tu hijo en tres dominios cognitivos independientes: razonamiento verbal (comprensión del lenguaje y analogías), razonamiento numérico (reconocimiento de patrones y lógica matemática) y pensamiento visual-espacial (análisis de formas y relaciones 3D). Cada dominio produce una puntuación percentil según normas internacionales de edad — mostrando exactamente dónde se sitúa entre sus pares, sin etiquetar nada como una "debilidad".',
   },
   {
     q: '¿Las notas escolares muestran el verdadero potencial de mi hijo?',
@@ -133,8 +133,8 @@ const PAGE_SCHEMA = {
   '@type': 'WebPage',
   '@id': `${BASE_URL}/es/potencial-de-tu-hijo#webpage`,
   url: `${BASE_URL}/es/potencial-de-tu-hijo`,
-  name: '¿Cuáles son las Fortalezas y Debilidades de mi Hijo? — Test Cognitivo Gratuito',
-  description: 'Descubre las fortalezas y debilidades de tu hijo en menos de una hora. Evaluación cognitiva adaptativa gratuita comparada con estándares PISA, SAT y GCSE.',
+  name: '¿Cuál es el Estatus Cognitivo de mi Hijo? — Evaluación Académica Gratuita',
+  description: 'Descubre el verdadero estatus cognitivo de tu hijo en menos de una hora. Evaluación comparativa gratuita según estándares PISA, SAT y GCSE.',
   inLanguage: 'es',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
@@ -171,7 +171,7 @@ const FAQ_SCHEMA = {
 }
 
 const RELATED_POSTS = [
-  { href: '/es/blog/test-academico-gratuito-fortalezas-debilidades-hijo', tag: 'Evaluación', title: 'Test Académico Gratuito: Descubre las Fortalezas y Debilidades de tu Hijo' },
+  { href: '/es/blog/test-academico-gratuito-fortalezas-debilidades-hijo', tag: 'Evaluación', title: 'Test Académico Gratuito: Descubre el Verdadero Estatus Cognitivo de tu Hijo' },
   { href: '/es/blog/descubrir-fortalezas-ocultas-hijo-guia-moderna-padres', tag: 'Guía', title: 'Descubre las Fortalezas Ocultas de tu Hijo: Guía Moderna para Padres' },
   { href: '/es/blog/actividades-verano-ninos-academicamente-ambiciosos', tag: 'Guía', title: 'Actividades de Verano para Niños Académicamente Ambiciosos' },
 ]
@@ -198,8 +198,8 @@ export default function PotencialDeTuHijoPage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
-            Descubre el Verdadero Potencial<br />
-            <span className="text-indigo-600">Cognitivo de tu Hijo</span>
+            Descubre el Verdadero<br />
+            <span className="text-indigo-600">Estatus Cognitivo de tu Hijo</span>
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -238,9 +238,9 @@ export default function PotencialDeTuHijoPage() {
 
       <section className="py-16 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Cuáles son las Fortalezas y Debilidades de mi Hijo?</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Cuál es el Estatus Cognitivo de mi Hijo?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Las fortalezas y debilidades académicas de tu hijo se miden en tres dominios cognitivos independientes:</strong> razonamiento verbal (comprensión del lenguaje y analogías), razonamiento numérico (reconocimiento de patrones y lógica matemática) y pensamiento visual-espacial (análisis de formas y relaciones 3D). El test adaptativo gratuito produce una puntuación percentil separada para cada dominio basada en normas internacionales de edad, mostrando claramente dónde brilla de verdad y dónde el apoyo específico marcará la mayor diferencia.
+            <strong>El estatus cognitivo de tu hijo se evalúa en tres dominios cognitivos independientes:</strong> razonamiento verbal (comprensión del lenguaje y analogías), razonamiento numérico (reconocimiento de patrones y lógica matemática) y pensamiento visual-espacial (análisis de formas y relaciones 3D). El test adaptativo gratuito produce una puntuación percentil separada para cada dominio basada en normas internacionales de edad, mostrando con precisión dónde se sitúa entre sus pares a nivel mundial.
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">
             Las notas escolares no pueden responder a esta pregunta: miden el conocimiento de un currículo específico impartido por un profesor concreto en una escuela determinada. No miden el potencial cognitivo según estándares internacionales. Según datos de la OCDE, los estudiantes en el cuartil superior de razonamiento fluido pero en la mitad inferior del rendimiento escolar representan entre el <strong>12% y el 18%</strong> de todos los estudiantes, un grupo cronicamente subestimado por los sistemas escolares. El metaanálisis de John Hattie de más de 900 estudios sitúa el tamaño del efecto de la evaluación diagnóstica en 0,67, entre las intervenciones de mayor impacto en educación.
@@ -295,7 +295,7 @@ export default function PotencialDeTuHijoPage() {
       <section className="py-20 px-6 bg-[#f9f8ff]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">Informe de Muestra: Perfil de Habilidad Global</h2>
-          <p className="text-gray-500 text-base mb-10">Al completar el test, los padres reciben un informe detallado con clasificaciones percentiles en cuatro dominios junto con fortalezas y áreas de desarrollo.</p>
+          <p className="text-gray-500 text-base mb-10">Al completar el test, los padres reciben un informe detallado con clasificaciones percentiles en cuatro dominios — el estatus cognitivo preciso de su hijo entre sus pares a nivel mundial.</p>
 
           <Link href="/es/informe-de-ejemplo" className="block group">
             <div className="border-2 border-indigo-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all bg-gradient-to-br from-indigo-50 to-white">

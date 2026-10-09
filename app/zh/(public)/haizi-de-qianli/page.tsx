@@ -5,13 +5,13 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/zh/auth/register`
 
 export const metadata: Metadata = {
-  title: '孩子的优势和劣势是什么？— 免费认知测评',
+  title: '孩子的真实认知现状如何？— 免费学业评估',
   description:
-    '一小时了解孩子的优势和劣势。按照PISA、SAT和GCSE标准进行免费自适应认知评估——即时AI报告，无隐藏费用。',
+    '一小时了解孩子的真实认知现状。按照PISA、SAT和GCSE标准进行免费比较性评估——了解孩子在全球同龄人中的确切位置。',
   keywords: [
-    '孩子的优势和劣势是什么',
-    '孩子的优势',
-    '孩子的劣势',
+    '孩子的认知现状如何',
+    '孩子在同龄人中的学业位置',
+    '儿童认知现状测试',
     '儿童认知评估',
     '免费儿童测试',
     'PISA儿童评估',
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/zh/haizi-de-qianli`,
     siteName: 'Eduentry',
-    title: '孩子的优势和劣势是什么？— 免费认知测评',
-    description: '一小时了解孩子的优势和劣势。按照PISA、SAT和GCSE标准进行免费自适应认知评估。',
+    title: '孩子的真实认知现状如何？— 免费学业评估',
+    description: '一小时了解孩子的真实认知现状。按照PISA、SAT和GCSE标准进行免费比较性评估。',
     locale: 'zh_CN',
     images: [{ url: `${BASE_URL}/zh/opengraph-image`, width: 1200, height: 630, alt: '您孩子的认知评估 — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '孩子的优势和劣势是什么？— 免费认知测评',
-    description: '一小时了解孩子的优势和劣势。按照PISA、SAT和GCSE标准进行免费自适应认知评估。',
+    title: '孩子的真实认知现状如何？— 免费学业评估',
+    description: '一小时了解孩子的真实认知现状。按照PISA、SAT和GCSE标准进行免费比较性评估。',
     images: [`${BASE_URL}/zh/opengraph-image`],
   },
 }
@@ -85,8 +85,8 @@ const SCIENCE_POINTS = [
 
 const FAQS = [
   {
-    q: '孩子的学业优势和劣势是什么？',
-    a: '您孩子的学业优势和劣势在三个独立的认知领域进行测量：语言推理（语言理解和类比）、数字推理（模式识别和数学逻辑）以及视觉空间思维（图形分析和三维关系）。免费自适应测试根据国际年龄规范为每个领域提供单独的百分位分数。',
+    q: '孩子的认知现状评估显示什么？',
+    a: '评估显示孩子在三个独立认知领域的当前位置：语言推理（语言理解和类比）、数字推理（模式识别和数学逻辑）以及视觉空间思维（图形分析和三维关系）。每个领域根据国际年龄规范提供单独的百分位分数——精确显示孩子在同龄人中的位置，不将任何方面标记为"劣势"。',
   },
   {
     q: '学校成绩能反映孩子的真实潜力吗？',
@@ -131,8 +131,8 @@ const PAGE_SCHEMA = {
   '@type': 'WebPage',
   '@id': `${BASE_URL}/zh/haizi-de-qianli#webpage`,
   url: `${BASE_URL}/zh/haizi-de-qianli`,
-  name: '孩子的优势和劣势是什么？— 免费认知测评',
-  description: '一小时了解孩子的优势和劣势。按照PISA、SAT和GCSE标准进行免费自适应认知评估。',
+  name: '孩子的真实认知现状如何？— 免费学业评估',
+  description: '一小时了解孩子的真实认知现状。按照PISA、SAT和GCSE标准进行免费比较性评估。',
   inLanguage: 'zh',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
@@ -169,7 +169,7 @@ const FAQ_SCHEMA = {
 }
 
 const RELATED_POSTS = [
-  { href: '/zh/blog/mianfei-xueshu-ceshi-haizi-youshi-ruodian', tag: '评估', title: '免费学术测试：一小时发现孩子的优势和劣势' },
+  { href: '/zh/blog/mianfei-xueshu-ceshi-haizi-youshi-ruodian', tag: '评估', title: '免费学术测试：一小时了解孩子的真实认知现状' },
   { href: '/zh/blog/congming-haizi-chengji-cha', tag: '指南', title: '聪明孩子成绩差：家长指南' },
   { href: '/zh/blog/faxian-xueling-haizi-yincang-qianli-jiachang-zhinan', tag: '指南', title: '发现孩子的隐藏潜力：现代家长指南' },
 ]
@@ -197,7 +197,7 @@ export default function HaiziDeQianliPage() {
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
             发现孩子真正的<br />
-            <span className="text-indigo-600">认知优势与劣势</span>
+            <span className="text-indigo-600">认知现状</span>
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -236,9 +236,9 @@ export default function HaiziDeQianliPage() {
 
       <section className="py-16 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">孩子的优势和劣势是什么？</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">孩子的认知现状如何？</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>您孩子的学业优势和劣势在三个独立的认知领域进行测量：</strong>语言推理（语言理解和类比）、数字推理（模式识别和数学逻辑）以及视觉空间思维（图形分析和三维关系）。免费自适应测试根据国际年龄规范为每个领域提供单独的百分位分数——清楚地显示孩子真正擅长的地方，以及有针对性的支持能产生最大影响的地方。
+            <strong>孩子的认知现状在三个独立领域进行评估：</strong>语言推理（语言理解和类比）、数字推理（模式识别和数学逻辑）以及视觉空间思维（图形分析和三维关系）。免费自适应测试根据国际年龄规范为每个领域提供单独的百分位分数——精确显示孩子在全球同龄人中所处的位置。
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">
             学校成绩无法回答这个问题——它们衡量的是特定学校特定老师所教的特定课程知识，而不是按国际标准衡量的认知潜力。根据OECD的数据，流体推理在前四分之一但学业成绩在后一半的学生占所有学生的 <strong>12–18%</strong>——这是被教育系统长期低估的群体。
@@ -293,7 +293,7 @@ export default function HaiziDeQianliPage() {
       <section className="py-20 px-6 bg-[#f9f8ff]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">示例报告：全球能力档案</h2>
-          <p className="text-gray-500 text-base mb-10">测试完成后，家长会收到一份详细报告，显示四个领域的百分位排名以及优势和发展领域。</p>
+          <p className="text-gray-500 text-base mb-10">测试完成后，家长会收到一份详细报告，显示四个领域的百分位排名——孩子在全球同龄人中的精确认知现状。</p>
 
           <Link href="/zh/yangben-baogao" className="block group">
             <div className="border-2 border-indigo-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all bg-gradient-to-br from-indigo-50 to-white">
