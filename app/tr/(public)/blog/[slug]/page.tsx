@@ -100,7 +100,7 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
     url,
     inLanguage: 'tr',
     author: AUTHOR_SCHEMA,
-    image: `${BASE_URL}/tr/blog/${slug}/opengraph-image`,
+    image: { '@type': 'ImageObject', url: `${BASE_URL}/tr/blog/${slug}/opengraph-image`, width: 1200, height: 630 },
     wordCount: Math.round(Number(post.readTime?.match(/\d+/)?.[0] ?? 8) * 200),
     publisher: { '@id': 'https://eduentry.com/#organization' },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },

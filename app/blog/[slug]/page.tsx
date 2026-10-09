@@ -158,7 +158,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     datePublished: post.date,
     dateModified: post.dateModified ?? post.date,
     url,
-    image: `${BASE_URL}/blog/${slug}/opengraph-image`,
+    image: { '@type': 'ImageObject', url: `${BASE_URL}/blog/${slug}/opengraph-image`, width: 1200, height: 630 },
     author: AUTHOR_SCHEMA,
     publisher: { '@id': 'https://eduentry.com/#organization' },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
@@ -187,6 +187,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         '@type': 'HowTo',
         name: post.title,
         description: post.description,
+        totalTime: `PT${post.readTime?.match(/\d+/)?.[0] ?? 8}M`,
         step: post.howToSteps.map((s, i) => ({
           '@type': 'HowToStep',
           position: i + 1,

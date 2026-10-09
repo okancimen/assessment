@@ -96,7 +96,7 @@ export default async function ARBlogPostPage({ params }: { params: Promise<{ slu
     dateModified: post.dateModified ?? post.date,
     url,
     inLanguage: 'ar',
-    image: `${BASE_URL}/ar/blog/${slug}/opengraph-image`,
+    image: { '@type': 'ImageObject', url: `${BASE_URL}/ar/blog/${slug}/opengraph-image`, width: 1200, height: 630 },
     wordCount: Math.round(Number(post.readTime?.match(/\d+/)?.[0] ?? 8) * 200),
     author: AUTHOR_SCHEMA,
     publisher: { '@id': 'https://eduentry.com/#organization' },
