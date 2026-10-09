@@ -265,129 +265,6 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
           )}
         </section>
 
-        {/* Recent assessments */}
-        {hasChildren && (
-          <section>
-            <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">{t.recentAssessments}</h2>
-            {hasAssessments ? (
-              <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="border-b border-[#f5f5f7]">
-                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">{t.tableChild}</th>
-                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">{t.tableDate}</th>
-                      <th className="text-right px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">{t.tableScore}</th>
-                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">{t.tableStatus}</th>
-                      <th className="text-right px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">{t.tableAction}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {(assessments as AssessmentWithResult[]).map((a) => (
-                      <tr key={a.id} className="border-b border-[#f5f5f7] last:border-0 hover:bg-[#f5f5f7] transition-colors">
-                        <td className="px-5 py-3 font-medium text-[#1d1d1f] text-sm">{a.children?.name}</td>
-                        <td className="px-5 py-3 text-xs text-[#6e6e73] hidden sm:table-cell">{formatDate(a.created_at)}</td>
-                        <td className="px-5 py-3 text-right hidden sm:table-cell">
-                          {a.results ? (
-                            <span className={`font-bold text-sm ${getScoreColor(a.results.standardized_score)}`}>
-                              {a.results.standardized_score}
-                            </span>
-                          ) : (
-                            <span className="text-[#d2d2d7]">—</span>
-                          )}
-                        </td>
-                        <td className="px-5 py-3">
-                          {a.status === 'completed' ? (
-                            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
-                              <svg className="w-3.5 h-3.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
-                                <polyline points="20 6 9 17 4 12" />
-                              </svg>
-                            </span>
-                          ) : a.status === 'in_progress' ? (
-                            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-amber-100">
-                              <svg className="w-3.5 h-3.5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
-                                <circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15 15" />
-                              </svg>
-                            </span>
-                          ) : (
-                            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#f5f5f7]">
-                              <svg className="w-3.5 h-3.5 text-[#6e6e73]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
-                                <circle cx="12" cy="12" r="9" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" />
-                              </svg>
-                            </span>
-                          )}
-                        </td>
-                        <td className="px-5 py-3 text-right">
-                          {a.status === 'completed' ? (
-                            <Link href={`/assessment/${a.id}/results`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
-                              {t.viewResults}
-                            </Link>
-                          ) : a.status === 'in_progress' ? (
-                            <Link href={`/assessment/${a.id}/question`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
-                              {t.continueAction}
-                            </Link>
-                          ) : null}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            ) : (
-              <div className="bg-white rounded-3xl border border-dashed border-[#d2d2d7] p-12 text-center">
-                <div className="w-12 h-12 rounded-full bg-[#eef2ff] flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-[#4F46E5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
-                    <rect x="9" y="3" width="6" height="4" rx="1" />
-                    <line x1="9" y1="12" x2="15" y2="12" /><line x1="9" y1="16" x2="13" y2="16" />
-                  </svg>
-                </div>
-                <p className="text-[#1d1d1f] font-medium text-sm mb-1">{t.noAssessmentsEmpty}</p>
-                <p className="text-xs text-[#6e6e73]">{t.noAssessmentsEmptyDesc}</p>
-              </div>
-            )}
-          </section>
-        )}
-
-        {/* Self-registered student: own internship status */}
-        {selfChild && (
-          <section>
-            <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">{t.yourInternship}</h2>
-            <div className="bg-white rounded-3xl border border-[#d2d2d7] p-5 flex items-center justify-between gap-4">
-              <div>
-                <p className="font-semibold text-[#1d1d1f]">{selfChild.name}</p>
-                {!selfInternship ? (
-                  <p className="text-xs text-[#6e6e73] mt-0.5">{t.notAppliedYet}</p>
-                ) : selfInternship.status === 'completed' && selfInternshipOverall != null ? (
-                  <p className={`text-sm font-semibold mt-0.5 ${selfInternshipOverall >= 70 ? 'text-emerald-600' : selfInternshipOverall >= 45 ? 'text-amber-600' : 'text-red-600'}`}>
-                    {selfInternshipOverall >= 70 ? t.internshipReady : selfInternshipOverall >= 45 ? t.developing : t.needsSupport}
-                  </p>
-                ) : selfInternship.status === 'in_progress' ? (
-                  <p className="text-xs text-amber-600 font-medium mt-0.5">{t.assessmentInProgress}</p>
-                ) : (
-                  <p className="text-xs text-[#6e6e73] mt-0.5">{t.assessmentPending}</p>
-                )}
-              </div>
-              {!selfInternship ? (
-                <Link href="/internship/apply" className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors flex-shrink-0">
-                  {t.applyNow}
-                </Link>
-              ) : selfInternship.status === 'completed' ? (
-                <Link href={`/assessment/${selfInternship.id}/results`} className="inline-flex items-center justify-center border border-[#4F46E5] text-[#4F46E5] text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#eef2ff] transition-colors flex-shrink-0">
-                  {t.viewReport}
-                </Link>
-              ) : selfInternship.status === 'in_progress' ? (
-                <Link href={`/assessment/${selfInternship.id}/question`} className="inline-flex items-center justify-center bg-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amber-600 transition-colors flex-shrink-0">
-                  {t.continueAction}
-                </Link>
-              ) : (
-                <Link href={`/assessment/${selfInternship.id}/question`} className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors flex-shrink-0">
-                  {t.startAssessment}
-                </Link>
-              )}
-            </div>
-          </section>
-        )}
-
         {/* Strengths Assessment — for children aged 6–20 */}
         {strengthsEligible.length > 0 && (
           <section>
@@ -529,6 +406,129 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                   </div>
                 )
               })}
+            </div>
+          </section>
+        )}
+
+        {/* Recent assessments */}
+        {hasChildren && (
+          <section>
+            <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">{t.recentAssessments}</h2>
+            {hasAssessments ? (
+              <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-[#f5f5f7]">
+                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">{t.tableChild}</th>
+                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">{t.tableDate}</th>
+                      <th className="text-right px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">{t.tableScore}</th>
+                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">{t.tableStatus}</th>
+                      <th className="text-right px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">{t.tableAction}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {(assessments as AssessmentWithResult[]).map((a) => (
+                      <tr key={a.id} className="border-b border-[#f5f5f7] last:border-0 hover:bg-[#f5f5f7] transition-colors">
+                        <td className="px-5 py-3 font-medium text-[#1d1d1f] text-sm">{a.children?.name}</td>
+                        <td className="px-5 py-3 text-xs text-[#6e6e73] hidden sm:table-cell">{formatDate(a.created_at)}</td>
+                        <td className="px-5 py-3 text-right hidden sm:table-cell">
+                          {a.results ? (
+                            <span className={`font-bold text-sm ${getScoreColor(a.results.standardized_score)}`}>
+                              {a.results.standardized_score}
+                            </span>
+                          ) : (
+                            <span className="text-[#d2d2d7]">—</span>
+                          )}
+                        </td>
+                        <td className="px-5 py-3">
+                          {a.status === 'completed' ? (
+                            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
+                              <svg className="w-3.5 h-3.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                              </svg>
+                            </span>
+                          ) : a.status === 'in_progress' ? (
+                            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-amber-100">
+                              <svg className="w-3.5 h-3.5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                                <circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15 15" />
+                              </svg>
+                            </span>
+                          ) : (
+                            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-50">
+                              <svg className="w-3.5 h-3.5 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                                <circle cx="12" cy="12" r="9" /><polyline points="12 8 12 12 14 14" />
+                              </svg>
+                            </span>
+                          )}
+                        </td>
+                        <td className="px-5 py-3 text-right">
+                          {a.status === 'completed' ? (
+                            <Link href={`/assessment/${a.id}/results`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
+                              {t.viewResults}
+                            </Link>
+                          ) : (
+                            <Link href={`/assessment/${a.id}/question`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
+                              {a.status === 'in_progress' ? t.continueAction : t.startAssessment}
+                            </Link>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ) : (
+              <div className="bg-white rounded-3xl border border-dashed border-[#d2d2d7] p-12 text-center">
+                <div className="w-12 h-12 rounded-full bg-[#eef2ff] flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-[#4F46E5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
+                    <rect x="9" y="3" width="6" height="4" rx="1" />
+                    <line x1="9" y1="12" x2="15" y2="12" /><line x1="9" y1="16" x2="13" y2="16" />
+                  </svg>
+                </div>
+                <p className="text-[#1d1d1f] font-medium text-sm mb-1">{t.noAssessmentsEmpty}</p>
+                <p className="text-xs text-[#6e6e73]">{t.noAssessmentsEmptyDesc}</p>
+              </div>
+            )}
+          </section>
+        )}
+
+        {/* Self-registered student: own internship status */}
+        {selfChild && (
+          <section>
+            <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">{t.yourInternship}</h2>
+            <div className="bg-white rounded-3xl border border-[#d2d2d7] p-5 flex items-center justify-between gap-4">
+              <div>
+                <p className="font-semibold text-[#1d1d1f]">{selfChild.name}</p>
+                {!selfInternship ? (
+                  <p className="text-xs text-[#6e6e73] mt-0.5">{t.notAppliedYet}</p>
+                ) : selfInternship.status === 'completed' && selfInternshipOverall != null ? (
+                  <p className={`text-sm font-semibold mt-0.5 ${selfInternshipOverall >= 70 ? 'text-emerald-600' : selfInternshipOverall >= 45 ? 'text-amber-600' : 'text-red-600'}`}>
+                    {selfInternshipOverall >= 70 ? t.internshipReady : selfInternshipOverall >= 45 ? t.developing : t.needsSupport}
+                  </p>
+                ) : selfInternship.status === 'in_progress' ? (
+                  <p className="text-xs text-amber-600 font-medium mt-0.5">{t.assessmentInProgress}</p>
+                ) : (
+                  <p className="text-xs text-[#6e6e73] mt-0.5">{t.assessmentPending}</p>
+                )}
+              </div>
+              {!selfInternship ? (
+                <Link href="/internship/apply" className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors flex-shrink-0">
+                  {t.applyNow}
+                </Link>
+              ) : selfInternship.status === 'completed' ? (
+                <Link href={`/assessment/${selfInternship.id}/results`} className="inline-flex items-center justify-center border border-[#4F46E5] text-[#4F46E5] text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#eef2ff] transition-colors flex-shrink-0">
+                  {t.viewReport}
+                </Link>
+              ) : selfInternship.status === 'in_progress' ? (
+                <Link href={`/assessment/${selfInternship.id}/question`} className="inline-flex items-center justify-center bg-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amber-600 transition-colors flex-shrink-0">
+                  {t.continueAction}
+                </Link>
+              ) : (
+                <Link href={`/assessment/${selfInternship.id}/question`} className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors flex-shrink-0">
+                  {t.startAssessment}
+                </Link>
+              )}
             </div>
           </section>
         )}
