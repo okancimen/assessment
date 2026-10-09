@@ -366,8 +366,6 @@ export function getTier(dateOfBirth: string): Tier {
   return 4
 }
 
-const TEST_MODE_LIMIT = 10 // remove when testing is done
-
 export function getQuestions(tier: Tier, locale?: string): PQuestion[] {
   const texts = QUESTION_TEXT_I18N[(locale as QuestionLocale) ?? 'en'] ?? QUESTION_TEXT_I18N.en
   return TRAITS_BY_TIER[tier].flatMap((trait) =>
@@ -376,7 +374,7 @@ export function getQuestions(tier: Tier, locale?: string): PQuestion[] {
       trait,
       text,
     }))
-  ).slice(0, TEST_MODE_LIMIT)
+  )
 }
 
 export function computeTraitScores(answers: { question_key: string; score: number }[]): Record<Trait, number> {
