@@ -140,7 +140,7 @@ const SERVICE_SCHEMA = {
   audience: { '@type': 'EducationalAudience', audienceType: 'Старшеклассники 14–18 лет' },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
   serviceType: 'Образовательная оценка',
-  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+  areaServed: 'Worldwide',
 }
 
 const HOWTO_SCHEMA = {

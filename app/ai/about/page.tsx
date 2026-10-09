@@ -59,7 +59,7 @@ export default function AboutPage() {
         '@type': 'ContactPoint',
         contactType: 'partnerships',
         email: 'partnerships@eduentry.ai',
-        areaServed: 'GB',
+        areaServed: 'Worldwide',
         availableLanguage: 'English',
       },
     ],

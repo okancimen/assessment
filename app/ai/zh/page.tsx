@@ -138,7 +138,7 @@ const SERVICE_SCHEMA = {
   audience: { '@type': 'EducationalAudience', audienceType: '14至18岁高中生' },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
   serviceType: '教育评估',
-  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+  areaServed: 'Worldwide',
 }
 
 const HOWTO_SCHEMA = {

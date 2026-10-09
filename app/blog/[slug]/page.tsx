@@ -205,7 +205,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         name: post.shortTitle,
         description: post.description,
         serviceType: 'Work Experience',
-        areaServed: { '@type': 'Country', name: 'United Kingdom' },
+        areaServed: 'Worldwide',
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: post.aggregateRating.ratingValue.toString(),

@@ -141,7 +141,7 @@ const SERVICE_SCHEMA = {
   audience: { '@type': 'EducationalAudience', audienceType: 'High school students aged 14–18' },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
   serviceType: 'Educational Assessment',
-  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+  areaServed: 'Worldwide',
 }
 
 const HOWTO_SCHEMA = {

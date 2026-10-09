@@ -94,7 +94,7 @@ export default function TrackPageTemplate({ track, locale }: Props) {
     description: d.meta.description,
     url: TRACK_URL,
     provider: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
-    areaServed: { '@type': 'Country', name: 'United Kingdom' },
+    areaServed: 'Worldwide',
     audience: { '@type': 'Audience', audienceType: d.ui.audience },
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP' },
   }

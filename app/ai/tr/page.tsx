@@ -142,7 +142,7 @@ const SERVICE_SCHEMA = {
   audience: { '@type': 'EducationalAudience', audienceType: '14–18 yaş lise öğrencileri' },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
   serviceType: 'Eğitim Değerlendirmesi',
-  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+  areaServed: 'Worldwide',
 }
 
 const HOWTO_SCHEMA = {

@@ -139,7 +139,7 @@ const SERVICE_SCHEMA = {
   audience: { '@type': 'EducationalAudience', audienceType: 'طلاب المرحلة الثانوية من 14 إلى 18 عاماً' },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
   serviceType: 'تقييم تعليمي',
-  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+  areaServed: 'Worldwide',
 }
 
 const HOWTO_SCHEMA = {

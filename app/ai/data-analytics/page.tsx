@@ -118,7 +118,7 @@ export default function DataAnalyticsTrackPage() {
     description: 'AI-powered adaptive assessment for high school students aged 14–18 seeking data analytics internships in the UK. 34 questions across 4 phases, AI-scored, personalised readiness report.',
     url: TRACK_URL,
     provider: { '@type': 'Organization', name: 'Eduentry', url: BASE_URL },
-    areaServed: { '@type': 'Country', name: 'United Kingdom' },
+    areaServed: 'Worldwide',
     audience: { '@type': 'Audience', audienceType: 'High school students aged 14–18' },
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Free for all students' },
   }

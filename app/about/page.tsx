@@ -80,7 +80,7 @@ const ORGANIZATION_SCHEMA = {
   logo: 'https://eduentry.com/icon.png',
   description: 'Free AI-powered adaptive academic assessment platform for children aged 6–17. Standardised scores and international percentile rankings across English, Maths, Verbal and Non-Verbal Reasoning.',
   foundingDate: '2026',
-  areaServed: ['United Kingdom', 'United States', 'Netherlands', 'United Arab Emirates', 'Canada', 'Australia', 'International'],
+  areaServed: 'Worldwide',
   sameAs: [
     'https://www.linkedin.com/company/eduentry',
     'https://x.com/eduentry',
@@ -100,7 +100,7 @@ const ABOUT_SCHEMA = {
     url: 'https://eduentry.com',
     description: 'Free AI-powered adaptive academic assessment platform for children aged 6–17. Standardised scores and international percentile rankings across English, Maths, Verbal and Non-Verbal Reasoning.',
     foundingDate: '2026',
-    areaServed: ['United Kingdom', 'International'],
+    areaServed: 'Worldwide',
     educationalCredentialAwarded: 'Standardised academic assessment report',
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
