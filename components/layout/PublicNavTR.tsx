@@ -12,6 +12,7 @@ export default function PublicNavTR() {
 
         <div className="hidden lg:flex flex-1 min-w-0 justify-center items-center gap-5 xl:gap-8 whitespace-nowrap text-[14px] font-medium text-[#1d1d1f]">
           <Link href="https://eduentry.ai/tr"        className="hover:text-[#4F46E5] transition-colors">Staj</Link>
+          <Link href="/tr/kisilik-degerlendirmesi" className="hover:text-[#4F46E5] transition-colors">Kişilik Değerlendirmesi</Link>
           <Link href="/tr/cocugunuzun-potansiyeli" className="hover:text-[#4F46E5] transition-colors">Çocuğunuzun Potansiyeli</Link>
           <Link href="/tr/hakkimizda"  className="hover:text-[#4F46E5] transition-colors">Hakkımızda</Link>
           <Link href="/tr/metodoloji"  className="hover:text-[#4F46E5] transition-colors">Metodoloji</Link>

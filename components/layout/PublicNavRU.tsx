@@ -12,6 +12,7 @@ export default function PublicNavRU() {
 
         <div className="hidden lg:flex flex-1 min-w-0 justify-center items-center gap-5 xl:gap-8 whitespace-nowrap text-[14px] font-medium text-[#1d1d1f]">
           <Link href="https://eduentry.ai/ru"                    className="hover:text-[#4F46E5] transition-colors">Стажировка</Link>
+          <Link href="/ru/otsenka-lichnosti"           className="hover:text-[#4F46E5] transition-colors">Оценка личности</Link>
           <Link href="/ru/potentsial-vashego-rebyonka"  className="hover:text-[#4F46E5] transition-colors">Потенциал</Link>
           <Link href="/ru/o-nas"                        className="hover:text-[#4F46E5] transition-colors">О нас</Link>
           <Link href="/ru/metodologiya" className="hover:text-[#4F46E5] transition-colors">Методология</Link>

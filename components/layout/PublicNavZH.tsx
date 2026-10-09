@@ -12,6 +12,7 @@ export default function PublicNavZH() {
 
         <div className="hidden lg:flex flex-1 min-w-0 justify-center items-center gap-5 xl:gap-8 whitespace-nowrap text-[14px] font-medium text-[#1d1d1f]">
           <Link href="https://eduentry.ai/zh"          className="hover:text-[#4F46E5] transition-colors">实习评估</Link>
+          <Link href="/zh/xingge-pinggu"   className="hover:text-[#4F46E5] transition-colors">性格评估</Link>
           <Link href="/zh/haizi-de-qianli" className="hover:text-[#4F46E5] transition-colors">孩子潜力</Link>
           <Link href="/zh/guanyu-women"    className="hover:text-[#4F46E5] transition-colors">关于我们</Link>
           <Link href="/zh/fangfalun"    className="hover:text-[#4F46E5] transition-colors">方法论</Link>
