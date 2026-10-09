@@ -5,6 +5,7 @@ interface LogoProps {
   href?: string
   size?: 'sm' | 'md' | 'lg'
   className?: string
+  variant?: 'default' | 'mark'
 }
 
 const sizes = {
@@ -13,12 +14,13 @@ const sizes = {
   lg: { img: 36, text: 'text-2xl' },
 }
 
-export default function Logo({ href = '/', size = 'md', className = '' }: LogoProps) {
+export default function Logo({ href = '/', size = 'md', className = '', variant = 'default' }: LogoProps) {
   const { img, text } = sizes[size]
+  const src = variant === 'mark' ? '/logo-mark.png' : '/logo.png'
   const inner = (
     <span className={`inline-flex items-center gap-2 ${className}`}>
       <Image
-        src="/logo.png"
+        src={src}
         alt="Eduentry logo"
         width={img}
         height={img}

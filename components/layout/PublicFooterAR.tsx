@@ -39,7 +39,7 @@ export default function PublicFooterAR() {
           </div>
         </div>
         <div className="border-t border-[#d2d2d7] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <Logo href="/ar" size="sm" />
+          <Logo href="/ar" size="sm" variant="mark" />
           <p className="text-xs text-[#6e6e73]">حقوق النشر © 2026 Eduentry. جميع الحقوق محفوظة.</p>
         </div>
       </div>

@@ -39,7 +39,7 @@ export default function PublicFooterRU() {
           </div>
         </div>
         <div className="border-t border-[#d2d2d7] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <Logo href="/ru" size="sm" />
+          <Logo href="/ru" size="sm" variant="mark" />
           <p className="text-xs text-[#6e6e73]">Copyright © 2026 Eduentry. Все права защищены.</p>
         </div>
       </div>

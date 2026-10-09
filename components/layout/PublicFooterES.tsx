@@ -39,7 +39,7 @@ export default function PublicFooterES() {
           </div>
         </div>
         <div className="border-t border-[#d2d2d7] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <Logo href="/es" size="sm" />
+          <Logo href="/es" size="sm" variant="mark" />
           <p className="text-xs text-[#6e6e73]">Copyright © 2026 Eduentry. Todos los derechos reservados.</p>
         </div>
       </div>
