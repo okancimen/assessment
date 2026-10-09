@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { redirect, notFound } from 'next/navigation'
 import Navbar from '@/components/dashboard/Navbar'
 import PublicFooter from '@/components/layout/PublicFooter'
@@ -46,7 +47,8 @@ export default async function StrengthsResultsPage({
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/auth/login')
 
-  const { data: result } = await supabase
+  const admin = createAdminClient()
+  const { data: result } = await admin
     .from('personality_results')
     .select('*, personality_assessments(parent_id, age_tier, children(name, date_of_birth))')
     .eq('assessment_id', assessmentId)
@@ -58,8 +60,11 @@ export default async function StrengthsResultsPage({
     parent_id: string
     age_tier: number
     children: { name: string; date_of_birth: string }
-  }
-  if (pa.parent_id !== user.id) redirect('/dashboard')
+  } | null
+
+  const dashHref = locale !== 'en' ? `/${locale}/dashboard` : '/dashboard'
+
+  if (!pa || pa.parent_id !== user.id) redirect(dashHref)
 
   const child = pa.children
   const age = getAge(child.date_of_birth)
@@ -76,7 +81,7 @@ export default async function StrengthsResultsPage({
     fullMark: 5,
   }))
 
-  const dashHref = locale === 'en' ? '/dashboard' : `/${locale}/dashboard`
+
 
   return (
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col" dir={t.dir}>
