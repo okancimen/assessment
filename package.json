@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
+    "deploy": "rm -rf .next && next build",
     "start": "next start",
     "lint": "eslint"
   },
