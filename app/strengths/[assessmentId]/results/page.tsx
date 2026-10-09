@@ -7,6 +7,7 @@ import { getPersonalityI18n } from '@/lib/personality-i18n'
 import { getAge } from '@/lib/utils'
 import StrengthsRadarChart from './StrengthsRadarChart'
 import PrintButton from './PrintButton'
+import SummaryPoller from './SummaryPoller'
 import Link from 'next/link'
 
 const VIRTUE_COLORS: Record<string, string> = {
@@ -155,16 +156,25 @@ export default async function StrengthsResultsPage({
         </div>
 
         {/* AI Summary */}
-        {result.ai_summary && (
-          <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6 space-y-3">
-            <h2 className="text-sm font-semibold text-[#1d1d1f]">{t.aiSummaryTitle}</h2>
+        <SummaryPoller hasSummary={!!result.ai_summary} />
+        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6 space-y-3">
+          <h2 className="text-sm font-semibold text-[#1d1d1f]">{t.aiSummaryTitle}</h2>
+          {result.ai_summary ? (
             <div className="text-sm text-[#3d3d3f] leading-relaxed space-y-3">
               {result.ai_summary.split('\n\n').map((para: string, i: number) => (
                 <p key={i}>{para}</p>
               ))}
             </div>
-          </div>
-        )}
+          ) : (
+            <div className="space-y-2 animate-pulse">
+              <div className="h-3 bg-[#f0f0f0] rounded-full w-full" />
+              <div className="h-3 bg-[#f0f0f0] rounded-full w-5/6" />
+              <div className="h-3 bg-[#f0f0f0] rounded-full w-4/5" />
+              <div className="h-3 bg-[#f0f0f0] rounded-full w-full mt-2" />
+              <div className="h-3 bg-[#f0f0f0] rounded-full w-3/4" />
+            </div>
+          )}
+        </div>
 
         {/* All traits table */}
         <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
