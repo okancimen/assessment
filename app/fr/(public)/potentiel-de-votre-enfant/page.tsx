@@ -98,7 +98,7 @@ const FAQS = [
   },
   {
     q: 'Combien de temps dure le test?',
-    a: 'Moins d'une heure. Le format adaptatif offre des mesures plus précises avec moins de questions que les tests à choix multiples standard. Le test est sauvegardable — votre enfant peut reprendre là où il s\'est arrêté.',
+    a: 'Moins d\'une heure. Le format adaptatif offre des mesures plus précises avec moins de questions que les tests à choix multiples standard. Le test est sauvegardable — votre enfant peut reprendre là où il s\'est arrêté.',
   },
   {
     q: 'À quelle tranche d\'âge convient-il?',
@@ -132,7 +132,7 @@ const PAGE_SCHEMA = {
   '@id': `${BASE_URL}/fr/potentiel-de-votre-enfant#webpage`,
   url: `${BASE_URL}/fr/potentiel-de-votre-enfant`,
   name: 'Quel est le Statut Cognitif de Mon Enfant? — Évaluation Académique Gratuite',
-  description: 'Découvrez le vrai statut cognitif de votre enfant en moins d'une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.',
+  description: "Découvrez le vrai statut cognitif de votre enfant en moins d'une heure. Évaluation comparative gratuite selon les normes PISA, SAT et GCSE.",
   inLanguage: 'fr',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
