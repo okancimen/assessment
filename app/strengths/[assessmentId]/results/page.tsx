@@ -9,6 +9,7 @@ import { getAge } from '@/lib/utils'
 import StrengthsRadarChart from './StrengthsRadarChart'
 import PrintButton from './PrintButton'
 import SummaryPoller from './SummaryPoller'
+import PeerComparison from './PeerComparison'
 import Link from 'next/link'
 
 const VIRTUE_COLORS: Record<string, string> = {
@@ -103,6 +104,43 @@ export default async function StrengthsResultsPage({
       avgScores = {}
       for (const [trait, { sum, count }] of Object.entries(totals)) {
         avgScores[trait] = sum / count
+      }
+    }
+  }
+
+  // Peer comparison: aggregate across ALL platform users, same age tier, min 5 peers
+  const AGE_RANGES: Record<number, string> = { 1: '6–9', 2: '10–13', 3: '14–17', 4: '18–20' }
+  const ageRange = AGE_RANGES[pa.age_tier] ?? ''
+
+  const { data: peerAssessments } = await admin
+    .from('personality_assessments')
+    .select('id')
+    .eq('age_tier', pa.age_tier)
+    .eq('status', 'completed')
+    .neq('id', assessmentId)
+
+  let peerAvgScores: Record<string, number> | null = null
+  let peerCount = 0
+  if (peerAssessments && peerAssessments.length >= 5) {
+    const peerIds = peerAssessments.map((a) => a.id)
+    const { data: peerResults } = await admin
+      .from('personality_results')
+      .select('trait_scores')
+      .in('assessment_id', peerIds)
+
+    if (peerResults && peerResults.length >= 5) {
+      peerCount = peerResults.length
+      const totals: Record<string, { sum: number; count: number }> = {}
+      for (const r of peerResults) {
+        for (const [trait, score] of Object.entries(r.trait_scores as Record<string, number>)) {
+          if (!totals[trait]) totals[trait] = { sum: 0, count: 0 }
+          totals[trait].sum += score
+          totals[trait].count += 1
+        }
+      }
+      peerAvgScores = {}
+      for (const [trait, { sum, count }] of Object.entries(totals)) {
+        peerAvgScores[trait] = sum / count
       }
     }
   }
@@ -218,6 +256,26 @@ export default async function StrengthsResultsPage({
             </div>
           )}
         </div>
+
+        {/* Peer comparison */}
+        {peerAvgScores && (
+          <PeerComparison
+            childName={child.name}
+            traitScores={traitScores}
+            peerAvgScores={peerAvgScores}
+            peerCount={peerCount}
+            ageRange={ageRange}
+            traitLabels={t.traitLabels}
+            dir={t.dir}
+            t={{
+              peerTitle:    t.peerTitle,
+              peerSubtitle: t.peerSubtitle,
+              peerAbove:    t.peerAbove,
+              peerBelow:    t.peerBelow,
+              peerAvgLabel: t.peerAvgLabel,
+            }}
+          />
+        )}
 
         {/* All traits table */}
         <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">

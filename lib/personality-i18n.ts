@@ -51,6 +51,11 @@ export interface PersonalityI18n {
   virtueHeader: string
   traitScore: string
   avgLabel: string
+  peerTitle: (name: string) => string
+  peerSubtitle: (count: number, ageRange: string) => string
+  peerAbove: string
+  peerBelow: string
+  peerAvgLabel: string
 }
 
 const EN: PersonalityI18n = {
@@ -139,6 +144,11 @@ const EN: PersonalityI18n = {
   virtueHeader: 'Virtue',
   traitScore: 'Score',
   avgLabel: 'Other children avg.',
+  peerTitle: (n) => `How ${n} compares to peers`,
+  peerSubtitle: (count, range) => `Based on ${count} assessments from children aged ${range}`,
+  peerAbove: 'Stands out above peers',
+  peerBelow: 'Below peers',
+  peerAvgLabel: 'Age-group avg.',
 }
 
 const FR: PersonalityI18n = {
@@ -227,6 +237,11 @@ const FR: PersonalityI18n = {
   virtueHeader: 'Vertu',
   traitScore: 'Score',
   avgLabel: 'Moy. autres enfants',
+  peerTitle: (n) => `Comment ${n} se compare aux autres enfants`,
+  peerSubtitle: (count, range) => `Basé sur ${count} évaluations d'enfants âgés de ${range} ans`,
+  peerAbove: 'Au-dessus de la moyenne',
+  peerBelow: 'En dessous de la moyenne',
+  peerAvgLabel: 'Moy. du groupe',
 }
 
 const ES: PersonalityI18n = {
@@ -315,6 +330,11 @@ const ES: PersonalityI18n = {
   virtueHeader: 'Virtud',
   traitScore: 'Puntuación',
   avgLabel: 'Prom. otros hijos',
+  peerTitle: (n) => `Cómo se compara ${n} con sus pares`,
+  peerSubtitle: (count, range) => `Basado en ${count} evaluaciones de niños de ${range} años`,
+  peerAbove: 'Por encima de la media',
+  peerBelow: 'Por debajo de la media',
+  peerAvgLabel: 'Media del grupo',
 }
 
 const AR: PersonalityI18n = {
@@ -403,6 +423,11 @@ const AR: PersonalityI18n = {
   virtueHeader: 'الفضيلة',
   traitScore: 'النتيجة',
   avgLabel: 'متوسط الأطفال الآخرين',
+  peerTitle: (n) => `كيف يقارن ${n} بأقرانه`,
+  peerSubtitle: (count, range) => `بناءً على ${count} تقييماً لأطفال في عمر ${range} سنة`,
+  peerAbove: 'فوق المتوسط',
+  peerBelow: 'دون المتوسط',
+  peerAvgLabel: 'متوسط الفئة',
 }
 
 const TR: PersonalityI18n = {
@@ -491,6 +516,11 @@ const TR: PersonalityI18n = {
   virtueHeader: 'Erdem',
   traitScore: 'Puan',
   avgLabel: 'Diğer çocukların ort.',
+  peerTitle: (n) => `${n}'in yaşıtlarıyla karşılaştırması`,
+  peerSubtitle: (count, range) => `${range} yaş grubundaki ${count} değerlendirmeye dayanmaktadır`,
+  peerAbove: 'Yaşıtlarının üzerinde',
+  peerBelow: 'Yaşıtlarının altında',
+  peerAvgLabel: 'Yaş grubu ort.',
 }
 
 const RU: PersonalityI18n = {
@@ -579,6 +609,11 @@ const RU: PersonalityI18n = {
   virtueHeader: 'Добродетель',
   traitScore: 'Балл',
   avgLabel: 'Среднее др. детей',
+  peerTitle: (n) => `Как ${n} сравнивается со сверстниками`,
+  peerSubtitle: (count, range) => `По данным ${count} оценок детей ${range} лет`,
+  peerAbove: 'Выше среднего',
+  peerBelow: 'Ниже среднего',
+  peerAvgLabel: 'Среднее по группе',
 }
 
 const ZH: PersonalityI18n = {
@@ -667,6 +702,11 @@ const ZH: PersonalityI18n = {
   virtueHeader: '美德',
   traitScore: '得分',
   avgLabel: '其他孩子均值',
+  peerTitle: (n) => `${n}与同龄人的比较`,
+  peerSubtitle: (count, range) => `基于${count}份${range}岁儿童的评估数据`,
+  peerAbove: '高于同龄均值',
+  peerBelow: '低于同龄均值',
+  peerAvgLabel: '年龄组均值',
 }
 
 const TRANSLATIONS: Record<PersonalityLocale, PersonalityI18n> = {
