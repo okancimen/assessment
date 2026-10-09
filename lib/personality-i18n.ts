@@ -9,10 +9,13 @@ export interface PersonalityI18n {
   traitDescriptions: Record<Trait, string>
   virtueNames: Record<string, string>
   // Landing
+  landingBadge: string
   landingTitle: string
   landingSubtitle: string
   landingCta: string
   loginFirst: string
+  landingTraitsTitle: string
+  landingSteps: { title: string; desc: string }[]
   // Start page
   startTitle: (childName: string) => string
   startSubtitle: (age: number) => string
@@ -24,6 +27,7 @@ export interface PersonalityI18n {
   startTraitsTitle: string
   startTierLabel: (tier: number) => string
   startBtn: string
+  startingText: string
   // Question page
   progressTitle: (name: string) => string
   questionOf: (current: number, total: number) => string
@@ -91,10 +95,17 @@ const EN: PersonalityI18n = {
     Wisdom: 'Wisdom', Courage: 'Courage', Humanity: 'Humanity',
     Justice: 'Justice', Temperance: 'Temperance', Transcendence: 'Transcendence',
   },
+  landingBadge: 'VIA Character Strengths · Ages 6–20',
   landingTitle: "Discover your child's character strengths",
   landingSubtitle: 'A research-backed personality assessment that reveals what your child is truly great at — and where they can grow.',
   landingCta: 'Start the assessment',
   loginFirst: 'Sign in to get started',
+  landingTraitsTitle: 'Sample traits measured',
+  landingSteps: [
+    { title: 'Add your child', desc: 'Enter their date of birth — the assessment adapts to their age automatically.' },
+    { title: 'Rate 24–48 statements', desc: 'Score each statement from 1 to 5 based on what you observe every day.' },
+    { title: 'Get the full profile', desc: 'A radar chart, top strengths, growth areas, and an AI-generated personality summary.' },
+  ],
   startTitle: (n) => `${n}'s Strengths Assessment`,
   startSubtitle: (age) => `Age ${age} · Parent-rated · Takes 15–20 minutes`,
   startWhatTitle: 'What this assessment measures',
@@ -105,6 +116,7 @@ const EN: PersonalityI18n = {
   startTraitsTitle: 'Traits covered',
   startTierLabel: (t) => ['', 'Core strengths', 'Core & advanced strengths', 'Comprehensive strengths', 'Full character profile'][t],
   startBtn: 'Start assessment',
+  startingText: 'Starting…',
   progressTitle: (n) => `${n}'s assessment`,
   questionOf: (c, t) => `Question ${c} of ${t}`,
   answeredOf: (d, t) => `${d} of ${t} answered`,
@@ -170,10 +182,17 @@ const FR: PersonalityI18n = {
     Wisdom: 'Sagesse', Courage: 'Courage', Humanity: 'Humanité',
     Justice: 'Justice', Temperance: 'Tempérance', Transcendence: 'Transcendance',
   },
+  landingBadge: 'Forces de Caractère VIA · 6–20 ans',
   landingTitle: 'Découvrez les forces de caractère de votre enfant',
   landingSubtitle: 'Une évaluation de personnalité fondée sur la recherche qui révèle les véritables atouts de votre enfant et ses axes de développement.',
   landingCta: "Commencer l'évaluation",
   loginFirst: 'Connectez-vous pour commencer',
+  landingTraitsTitle: 'Exemples de traits mesurés',
+  landingSteps: [
+    { title: 'Ajoutez votre enfant', desc: "Entrez sa date de naissance — l'évaluation s'adapte automatiquement à son âge." },
+    { title: 'Évaluez 24–48 affirmations', desc: 'Notez chaque affirmation de 1 à 5 selon ce que vous observez chaque jour.' },
+    { title: 'Obtenez le profil complet', desc: "Un graphique radar, les principales forces, les axes de développement et un résumé de personnalité généré par IA." },
+  ],
   startTitle: (n) => `Évaluation des forces de ${n}`,
   startSubtitle: (age) => `${age} ans · Évalué par le parent · 15–20 minutes`,
   startWhatTitle: 'Ce que mesure cette évaluation',
@@ -184,6 +203,7 @@ const FR: PersonalityI18n = {
   startTraitsTitle: 'Traits évalués',
   startTierLabel: (t) => ['', 'Forces essentielles', 'Forces essentielles et avancées', 'Forces complètes', 'Profil de caractère complet'][t],
   startBtn: "Commencer l'évaluation",
+  startingText: 'Démarrage…',
   progressTitle: (n) => `Évaluation de ${n}`,
   questionOf: (c, t) => `Question ${c} sur ${t}`,
   answeredOf: (d, t) => `${d} sur ${t} répondu(s)`,
@@ -249,10 +269,17 @@ const ES: PersonalityI18n = {
     Wisdom: 'Sabiduría', Courage: 'Valentía', Humanity: 'Humanidad',
     Justice: 'Justicia', Temperance: 'Templanza', Transcendence: 'Trascendencia',
   },
+  landingBadge: 'Fortalezas de Carácter VIA · 6–20 años',
   landingTitle: 'Descubre las fortalezas de carácter de tu hijo',
   landingSubtitle: 'Una evaluación de personalidad respaldada por la investigación que revela en qué destaca realmente tu hijo y dónde puede crecer.',
   landingCta: 'Comenzar la evaluación',
   loginFirst: 'Inicia sesión para empezar',
+  landingTraitsTitle: 'Ejemplos de rasgos medidos',
+  landingSteps: [
+    { title: 'Añade a tu hijo', desc: 'Introduce su fecha de nacimiento — la evaluación se adapta automáticamente a su edad.' },
+    { title: 'Valora 24–48 afirmaciones', desc: 'Puntúa cada afirmación del 1 al 5 según lo que observas cada día.' },
+    { title: 'Obtén el perfil completo', desc: 'Un gráfico radar, principales fortalezas, áreas de desarrollo y un resumen de personalidad generado por IA.' },
+  ],
   startTitle: (n) => `Evaluación de fortalezas de ${n}`,
   startSubtitle: (age) => `${age} años · Valorado por el padre/madre · 15–20 minutos`,
   startWhatTitle: 'Qué mide esta evaluación',
@@ -263,6 +290,7 @@ const ES: PersonalityI18n = {
   startTraitsTitle: 'Rasgos evaluados',
   startTierLabel: (t) => ['', 'Fortalezas esenciales', 'Fortalezas esenciales y avanzadas', 'Fortalezas completas', 'Perfil de carácter completo'][t],
   startBtn: 'Iniciar evaluación',
+  startingText: 'Iniciando…',
   progressTitle: (n) => `Evaluación de ${n}`,
   questionOf: (c, t) => `Pregunta ${c} de ${t}`,
   answeredOf: (d, t) => `${d} de ${t} respondidas`,
@@ -328,10 +356,17 @@ const AR: PersonalityI18n = {
     Wisdom: 'الحكمة', Courage: 'الشجاعة', Humanity: 'الإنسانية',
     Justice: 'العدالة', Temperance: 'الاعتدال', Transcendence: 'التسامي',
   },
+  landingBadge: 'نقاط قوة الشخصية VIA · ٦–٢٠ سنة',
   landingTitle: 'اكتشف نقاط قوة شخصية طفلك',
   landingSubtitle: 'تقييم شخصية مدعوم بالبحث العلمي يكشف عن مواهب طفلك الحقيقية ومجالات نموه.',
   landingCta: 'ابدأ التقييم',
   loginFirst: 'سجّل الدخول للبدء',
+  landingTraitsTitle: 'أمثلة على السمات المقيّمة',
+  landingSteps: [
+    { title: 'أضف طفلك', desc: 'أدخل تاريخ ميلاده — يتكيّف التقييم تلقائياً مع عمره.' },
+    { title: 'قيّم ٢٤–٤٨ عبارة', desc: 'أعطِ كل عبارة من ١ إلى ٥ بناءً على ما تلاحظه كل يوم.' },
+    { title: 'احصل على الملف الكامل', desc: 'مخطط رادار ونقاط القوة الرئيسية ومجالات النمو وملخص شخصية مولّد بالذكاء الاصطناعي.' },
+  ],
   startTitle: (n) => `تقييم نقاط قوة ${n}`,
   startSubtitle: (age) => `${age} سنة · تقييم الوالدين · ١٥–٢٠ دقيقة`,
   startWhatTitle: 'ما الذي يقيسه هذا التقييم',
@@ -342,6 +377,7 @@ const AR: PersonalityI18n = {
   startTraitsTitle: 'السمات المقيّمة',
   startTierLabel: (t) => ['', 'نقاط القوة الأساسية', 'النقاط الأساسية والمتقدمة', 'نقاط القوة الشاملة', 'الملف الشخصي الكامل'][t],
   startBtn: 'ابدأ التقييم',
+  startingText: 'جارٍ البدء…',
   progressTitle: (n) => `تقييم ${n}`,
   questionOf: (c, t) => `سؤال ${c} من ${t}`,
   answeredOf: (d, t) => `${d} من ${t} تمت الإجابة عليها`,
@@ -407,10 +443,17 @@ const TR: PersonalityI18n = {
     Wisdom: 'Bilgelik', Courage: 'Cesaret', Humanity: 'İnsanlık',
     Justice: 'Adalet', Temperance: 'Denge', Transcendence: 'Aşkınlık',
   },
+  landingBadge: 'VIA Karakter Güçleri · 6–20 Yaş',
   landingTitle: 'Çocuğunuzun karakter güçlerini keşfedin',
   landingSubtitle: 'Araştırmaya dayalı bir kişilik değerlendirmesi — çocuğunuzun gerçek yeteneklerini ve gelişim alanlarını ortaya koyar.',
   landingCta: 'Değerlendirmeyi başlat',
   loginFirst: 'Başlamak için giriş yapın',
+  landingTraitsTitle: 'Ölçülen örnek özellikler',
+  landingSteps: [
+    { title: 'Çocuğunuzu ekleyin', desc: 'Doğum tarihini girin — değerlendirme yaşına göre otomatik olarak uyarlanır.' },
+    { title: '24–48 ifadeyi değerlendirin', desc: 'Her ifadeyi her gün gözlemlediklerinize göre 1–5 arasında puanlayın.' },
+    { title: 'Tam profili alın', desc: 'Radar grafiği, güçlü yönler, gelişim alanları ve yapay zeka tarafından oluşturulan kişilik özeti.' },
+  ],
   startTitle: (n) => `${n}'in Güçlü Yönler Değerlendirmesi`,
   startSubtitle: (age) => `${age} yaş · Ebeveyn değerlendirmesi · 15–20 dakika`,
   startWhatTitle: 'Bu değerlendirme neyi ölçer',
@@ -421,6 +464,7 @@ const TR: PersonalityI18n = {
   startTraitsTitle: 'Değerlendirilen özellikler',
   startTierLabel: (t) => ['', 'Temel güçler', 'Temel ve ileri güçler', 'Kapsamlı güçler', 'Tam karakter profili'][t],
   startBtn: 'Değerlendirmeyi başlat',
+  startingText: 'Başlatılıyor…',
   progressTitle: (n) => `${n} değerlendirmesi`,
   questionOf: (c, t) => `Soru ${c} / ${t}`,
   answeredOf: (d, t) => `${d} / ${t} cevaplandı`,
@@ -486,10 +530,17 @@ const RU: PersonalityI18n = {
     Wisdom: 'Мудрость', Courage: 'Храбрость', Humanity: 'Гуманность',
     Justice: 'Справедливость', Temperance: 'Умеренность', Transcendence: 'Трансцендентность',
   },
+  landingBadge: 'Сильные стороны характера VIA · 6–20 лет',
   landingTitle: 'Откройте сильные стороны характера вашего ребёнка',
   landingSubtitle: 'Научно обоснованная оценка личности, которая раскрывает истинные таланты ребёнка и области роста.',
   landingCta: 'Начать оценку',
   loginFirst: 'Войдите, чтобы начать',
+  landingTraitsTitle: 'Примеры измеряемых черт',
+  landingSteps: [
+    { title: 'Добавьте ребёнка', desc: 'Введите дату рождения — оценка автоматически подстроится под возраст.' },
+    { title: 'Оцените 24–48 утверждений', desc: 'Поставьте каждому утверждению от 1 до 5 баллов по ежедневным наблюдениям.' },
+    { title: 'Получите полный профиль', desc: 'Радарная диаграмма, главные сильные стороны, области роста и резюме личности от ИИ.' },
+  ],
   startTitle: (n) => `Оценка сильных сторон ${n}`,
   startSubtitle: (age) => `${age} лет · Оценивается родителем · 15–20 минут`,
   startWhatTitle: 'Что измеряет эта оценка',
@@ -500,6 +551,7 @@ const RU: PersonalityI18n = {
   startTraitsTitle: 'Оцениваемые черты',
   startTierLabel: (t) => ['', 'Основные сильные стороны', 'Основные и расширенные', 'Комплексные сильные стороны', 'Полный профиль характера'][t],
   startBtn: 'Начать оценку',
+  startingText: 'Запуск…',
   progressTitle: (n) => `Оценка ${n}`,
   questionOf: (c, t) => `Вопрос ${c} из ${t}`,
   answeredOf: (d, t) => `${d} из ${t} отвечено`,
@@ -565,10 +617,17 @@ const ZH: PersonalityI18n = {
     Wisdom: '智慧', Courage: '勇气', Humanity: '仁爱',
     Justice: '正义', Temperance: '节制', Transcendence: '超越',
   },
+  landingBadge: 'VIA 性格优势 · 6–20岁',
   landingTitle: '发现孩子的性格优势',
   landingSubtitle: '基于研究的性格评估，揭示孩子真正擅长的领域以及可以成长的方向。',
   landingCta: '开始评估',
   loginFirst: '登录以开始',
+  landingTraitsTitle: '示例测量特质',
+  landingSteps: [
+    { title: '添加您的孩子', desc: '输入出生日期 — 评估将自动适应其年龄。' },
+    { title: '评估24–48条陈述', desc: '根据每天的观察，将每条陈述评分为1到5分。' },
+    { title: '获取完整档案', desc: '雷达图、主要优势、成长空间以及AI生成的性格总结。' },
+  ],
   startTitle: (n) => `${n}的优势评估`,
   startSubtitle: (age) => `${age}岁 · 家长评分 · 15–20分钟`,
   startWhatTitle: '此评估衡量什么',
@@ -579,6 +638,7 @@ const ZH: PersonalityI18n = {
   startTraitsTitle: '评估的特质',
   startTierLabel: (t) => ['', '核心优势', '核心与进阶优势', '全面优势', '完整性格档案'][t],
   startBtn: '开始评估',
+  startingText: '启动中…',
   progressTitle: (n) => `${n}的评估`,
   questionOf: (c, t) => `第${c}题，共${t}题`,
   answeredOf: (d, t) => `已回答 ${d}/${t}`,

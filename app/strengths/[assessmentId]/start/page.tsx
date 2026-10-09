@@ -87,7 +87,7 @@ export default async function StrengthsStartPage({
             </div>
           </div>
 
-          <StartStrengthsButton childId={childId} locale={locale} label={t.startBtn} />
+          <StartStrengthsButton childId={childId} locale={locale} label={t.startBtn} startingLabel={t.startingText} />
         </div>
       </main>
     </div>

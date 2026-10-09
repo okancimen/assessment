@@ -7,10 +7,12 @@ export default function StartStrengthsButton({
   childId,
   locale,
   label,
+  startingLabel,
 }: {
   childId: string
   locale: string
   label: string
+  startingLabel: string
 }) {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
@@ -38,7 +40,7 @@ export default function StartStrengthsButton({
       disabled={loading}
       className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white font-semibold py-3.5 rounded-full transition-colors disabled:opacity-60 text-base"
     >
-      {loading ? 'Starting…' : label}
+      {loading ? startingLabel : label}
     </button>
   )
 }
