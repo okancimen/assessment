@@ -81,7 +81,10 @@ const ORGANIZATION_SCHEMA = {
   description: 'Free AI-powered adaptive academic assessment platform for children aged 6–17. Standardised scores and international percentile rankings across English, Maths, Verbal and Non-Verbal Reasoning.',
   foundingDate: '2026',
   areaServed: ['United Kingdom', 'United States', 'Netherlands', 'United Arab Emirates', 'Canada', 'Australia', 'International'],
-  sameAs: [],
+  sameAs: [
+    'https://www.linkedin.com/company/eduentry',
+    'https://x.com/eduentry',
+  ],
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', url: 'https://eduentry.com/about' },
 }
 
