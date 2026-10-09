@@ -74,6 +74,14 @@ export interface DashboardI18n {
   startAssessmentBtn: string
   startAssessmentError: string
   startAssessmentNetworkError: string
+  // Strengths section
+  strengthsTitle: string
+  strengthsSubtitle: string
+  strengthsLearnMore: string
+  startStrengths: string
+  resumeStrengths: string
+  viewStrengths: string
+  strengthsInProgress: string
   // RTL
   dir: 'ltr' | 'rtl'
 }
@@ -143,6 +151,13 @@ const en: DashboardI18n = {
   startAssessmentBtn: 'Start assessment',
   startAssessmentError: 'Something went wrong. Please try again.',
   startAssessmentNetworkError: 'Network error. Please check your connection and try again.',
+  strengthsTitle: 'Character Strengths',
+  strengthsSubtitle: "Discover your child's personality profile",
+  strengthsLearnMore: 'Learn more',
+  startStrengths: 'Start assessment',
+  resumeStrengths: 'Resume',
+  viewStrengths: 'View profile',
+  strengthsInProgress: 'In progress',
   dir: 'ltr',
 }
 
@@ -211,6 +226,13 @@ const tr: DashboardI18n = {
   startAssessmentBtn: 'Değerlendirmeyi başlat',
   startAssessmentError: 'Bir şeyler ters gitti. Lütfen tekrar deneyin.',
   startAssessmentNetworkError: 'Ağ hatası. Lütfen bağlantınızı kontrol edip tekrar deneyin.',
+  strengthsTitle: 'Karakter Güçleri',
+  strengthsSubtitle: 'Çocuğunuzun kişilik profilini keşfedin',
+  strengthsLearnMore: 'Daha fazla bilgi',
+  startStrengths: 'Değerlendirmeyi başlat',
+  resumeStrengths: 'Devam et',
+  viewStrengths: 'Profili görüntüle',
+  strengthsInProgress: 'Devam ediyor',
   dir: 'ltr',
 }
 
@@ -279,6 +301,13 @@ const es: DashboardI18n = {
   startAssessmentBtn: 'Iniciar evaluación',
   startAssessmentError: 'Algo salió mal. Por favor, inténtalo de nuevo.',
   startAssessmentNetworkError: 'Error de red. Por favor, comprueba tu conexión e inténtalo de nuevo.',
+  strengthsTitle: 'Fortalezas de Carácter',
+  strengthsSubtitle: 'Descubre el perfil de personalidad de tu hijo/a',
+  strengthsLearnMore: 'Más información',
+  startStrengths: 'Iniciar evaluación',
+  resumeStrengths: 'Continuar',
+  viewStrengths: 'Ver perfil',
+  strengthsInProgress: 'En progreso',
   dir: 'ltr',
 }
 
@@ -347,6 +376,13 @@ const fr: DashboardI18n = {
   startAssessmentBtn: "Démarrer l'évaluation",
   startAssessmentError: "Une erreur s'est produite. Veuillez réessayer.",
   startAssessmentNetworkError: 'Erreur réseau. Veuillez vérifier votre connexion et réessayer.',
+  strengthsTitle: 'Forces de Caractère',
+  strengthsSubtitle: "Découvrez le profil de personnalité de votre enfant",
+  strengthsLearnMore: 'En savoir plus',
+  startStrengths: "Démarrer l'évaluation",
+  resumeStrengths: 'Continuer',
+  viewStrengths: 'Voir le profil',
+  strengthsInProgress: 'En cours',
   dir: 'ltr',
 }
 
@@ -415,6 +451,13 @@ const ar: DashboardI18n = {
   startAssessmentBtn: 'بدء التقييم',
   startAssessmentError: 'حدث خطأ ما. يرجى المحاولة مرة أخرى.',
   startAssessmentNetworkError: 'خطأ في الشبكة. يرجى التحقق من اتصالك والمحاولة مرة أخرى.',
+  strengthsTitle: 'نقاط القوة الشخصية',
+  strengthsSubtitle: 'اكتشف ملف شخصية طفلك',
+  strengthsLearnMore: 'معرفة المزيد',
+  startStrengths: 'ابدأ التقييم',
+  resumeStrengths: 'متابعة',
+  viewStrengths: 'عرض الملف الشخصي',
+  strengthsInProgress: 'قيد التنفيذ',
   dir: 'rtl',
 }
 
@@ -483,6 +526,13 @@ const ru: DashboardI18n = {
   startAssessmentBtn: 'Начать тестирование',
   startAssessmentError: 'Что-то пошло не так. Пожалуйста, попробуйте ещё раз.',
   startAssessmentNetworkError: 'Ошибка сети. Пожалуйста, проверьте соединение и попробуйте снова.',
+  strengthsTitle: 'Сильные стороны характера',
+  strengthsSubtitle: 'Откройте профиль личности вашего ребёнка',
+  strengthsLearnMore: 'Подробнее',
+  startStrengths: 'Начать оценку',
+  resumeStrengths: 'Продолжить',
+  viewStrengths: 'Смотреть профиль',
+  strengthsInProgress: 'В процессе',
   dir: 'ltr',
 }
 
@@ -551,6 +601,13 @@ const zh: DashboardI18n = {
   startAssessmentBtn: '开始评估',
   startAssessmentError: '出现了问题，请重试。',
   startAssessmentNetworkError: '网络错误，请检查您的连接后重试。',
+  strengthsTitle: '性格优势',
+  strengthsSubtitle: '发现孩子的个性档案',
+  strengthsLearnMore: '了解更多',
+  startStrengths: '开始评估',
+  resumeStrengths: '继续',
+  viewStrengths: '查看档案',
+  strengthsInProgress: '进行中',
   dir: 'ltr',
 }
 
