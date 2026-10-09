@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { NextRequest, NextResponse } from 'next/server'
 import {
   getQuestions,
@@ -67,7 +68,9 @@ export async function POST(
     console.error('[personality/complete] summary generation failed', err)
   }
 
-  await supabase.from('personality_results').insert({
+  const admin = createAdminClient()
+
+  const { error: insertError } = await admin.from('personality_results').insert({
     assessment_id: assessmentId,
     trait_scores: traitScores,
     top_strengths: topStrengths,
@@ -75,7 +78,12 @@ export async function POST(
     ai_summary: aiSummary,
   })
 
-  await supabase
+  if (insertError) {
+    console.error('[personality/complete] insert failed', insertError)
+    return NextResponse.json({ error: insertError.message }, { status: 500 })
+  }
+
+  await admin
     .from('personality_assessments')
     .update({ status: 'completed', completed_at: new Date().toISOString() })
     .eq('id', assessmentId)
