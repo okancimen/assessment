@@ -66,6 +66,18 @@ const FAQS = [
     q: '¿Con qué frecuencia debo repetir esta evaluación para mi hijo?',
     a: 'Recomendamos repetir el test cada 6 a 12 meses o cuando pase a un nuevo grupo de edad. Esto te permite rastrear cómo sus fortalezas de carácter crecen y evolucionan con el tiempo.',
   },
+  {
+    q: '¿Esta evaluación está respaldada por la ciencia?',
+    a: 'Sí. Nuestras preguntas están adaptadas del marco de Fortalezas de Carácter VIA — uno de los instrumentos de psicología positiva más rigurosamente revisados por pares en el mundo. Ha sido validado a través de culturas y utilizado en estudios publicados en las principales revistas psicológicas.',
+  },
+  {
+    q: '¿Cómo se protege la privacidad de mi hijo?',
+    a: 'Nunca compartimos ni vendemos los datos de tu hijo. Las respuestas se almacenan de forma segura y se usan únicamente para generar tu informe personalizado. Ningún dato se comparte con terceros, anunciantes o instituciones académicas.',
+  },
+  {
+    q: '¿Qué debo hacer después de ver los resultados?',
+    a: 'Empieza con los 3 primeros ejercicios recomendados por la IA en el informe. Prueba uno durante una semana y anota cualquier cambio en la confianza o el compromiso de tu hijo. Vuelve al informe cuando necesites ideas nuevas — los ejercicios están diseñados para integrarse naturalmente en las rutinas familiares diarias.',
+  },
 ]
 
 const VIRTUES = [

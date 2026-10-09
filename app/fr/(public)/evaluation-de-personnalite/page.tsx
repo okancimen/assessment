@@ -66,6 +66,18 @@ const FAQS = [
     q: "À quelle fréquence devrais-je refaire cette évaluation pour mon enfant ?",
     a: "Nous recommandons de refaire le test tous les 6 à 12 mois, ou lorsqu'il passe dans un nouveau groupe d'âge. Cela vous permet de suivre l'évolution de ses forces de caractère au fil du temps.",
   },
+  {
+    q: "Cette évaluation est-elle soutenue par la science ?",
+    a: "Oui. Nos questions sont adaptées du cadre VIA des Forces de Caractère — l'un des instruments de psychologie positive les plus rigoureusement évalués par des pairs au monde. Il a été validé à travers les cultures et utilisé dans des études publiées dans les principales revues psychologiques.",
+  },
+  {
+    q: "Comment la confidentialité de mon enfant est-elle protégée ?",
+    a: "Nous ne partageons ni ne vendons jamais les données de votre enfant. Les réponses sont stockées en sécurité et utilisées uniquement pour générer votre rapport personnalisé. Aucune donnée n'est partagée avec des tiers, des annonceurs ou des institutions académiques.",
+  },
+  {
+    q: "Que dois-je faire après avoir vu les résultats ?",
+    a: "Commencez par les 3 premiers exercices recommandés par l'IA dans le rapport. Essayez-en un pendant une semaine et notez tout changement dans la confiance ou l'engagement de votre enfant. Revenez au rapport chaque fois que vous avez besoin de nouvelles idées — les exercices sont conçus pour s'intégrer naturellement dans les routines familiales quotidiennes.",
+  },
 ]
 
 const VIRTUES = [

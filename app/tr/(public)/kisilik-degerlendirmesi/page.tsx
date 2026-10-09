@@ -64,6 +64,18 @@ const FAQS = [
     q: "Çocuğum için bu değerlendirmeyi ne sıklıkla yeniden yapmalıyım?",
     a: "Her 6 ila 12 ayda bir veya yeni bir yaş grubuna geçtiğinde testi yeniden yapmanızı öneririz. Bu, güçlü yönlerin zaman içinde nasıl büyüdüğünü ve geliştiğini takip etmenizi sağlar.",
   },
+  {
+    q: 'Bu değerlendirme bilimsel olarak destekleniyor mu?',
+    a: "Evet. Sorularımız, dünyanın en kapsamlı biçimde hakemli değerlendirmesi olan VIA Karakter Güçleri çerçevesinden uyarlanmıştır. Kültürler arası doğrulanmış olup önde gelen psikoloji dergilerinde yayımlanan çalışmalarda kullanılmaktadır.",
+  },
+  {
+    q: 'Çocuğumun gizliliği nasıl korunuyor?',
+    a: "Çocuğunuzun verilerini asla paylaşmıyor veya satmıyoruz. Yanıtlar güvenli biçimde saklanır ve yalnızca kişiselleştirilmiş raporunuzu oluşturmak için kullanılır. Hiçbir veri üçüncü taraflarla, reklamverenlerle veya akademik kurumlarla paylaşılmaz.",
+  },
+  {
+    q: 'Sonuçları gördükten sonra ne yapmalıyım?',
+    a: "Rapordan yapay zeka tarafından önerilen ilk 3 egzersizle başlayın. Bir tanesini bir hafta boyunca deneyin ve çocuğunuzun özgüven veya ilgisindeki değişimleri gözlemleyin. Taze fikirlere ihtiyaç duyduğunuzda rapora geri dönün; egzersizler günlük aile rutinlerine doğal biçimde dahil edilecek şekilde tasarlanmıştır.",
+  },
 ]
 
 const VIRTUES = [
@@ -233,8 +245,8 @@ export default function KisilikDegerlendirmesiPage() {
           <h2 className="text-3xl font-bold text-[#1d1d1f] mb-10 text-center">Elinizde Ne Olacak</h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {[
-              { icon: '🎯', title: 'En İyi 5 İmza Güç', desc: "Çocuğunuzun doğal olarak parladığı alanlar." },
-              { icon: '🌱', title: 'En Alt 3 Büyüme Sütunu', desc: "Kör noktaları veya mevcut zayıflıkları hakkında nazik bilgiler." },
+              { icon: '🎯', title: 'En Güçlü 5 Yönü', desc: "Çocuğunuzun doğal olarak parladığı alanlar." },
+              { icon: '🌱', title: 'Geliştirilebilecek 3 Özelliği', desc: "Kör noktaları veya mevcut zayıflıkları hakkında nazik bilgiler." },
               { icon: '🤖', title: 'Uygulanabilir Yapay Zeka Araç Seti', desc: "Onların gelişmesine yardımcı olmak için evde uygulayabileceğiniz özelleştirilmiş, gerçek dünya egzersizleri." },
             ].map((item) => (
               <div key={item.title} className="bg-[#f5f5f7] rounded-3xl border border-[#d2d2d7] p-6 sm:p-8">

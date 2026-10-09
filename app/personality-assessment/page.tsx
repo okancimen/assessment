@@ -68,6 +68,18 @@ const FAQS = [
     q: 'How often should I retake this assessment for my child?',
     a: 'We recommend retaking the test once every 6 to 12 months or when they transition into a new age tier. This lets you track how their character strengths grow and evolve over time.',
   },
+  {
+    q: 'Is this assessment backed by science?',
+    a: 'Yes. Our questions are adapted from the VIA Character Strengths framework — one of the most extensively peer-reviewed positive psychology instruments in the world. It has been validated across cultures and used in studies published in leading psychological journals.',
+  },
+  {
+    q: "How is my child's privacy protected?",
+    a: "We never share or sell your child's data. Responses are stored securely and used solely to generate your personalised report. No data is shared with third parties, advertisers, or academic institutions.",
+  },
+  {
+    q: 'What should I do after I see the results?',
+    a: "Start with the top 3 AI-recommended exercises from the report. Try one for a week and note any changes in your child's confidence or engagement. Come back to the report whenever you need fresh ideas — the exercises are designed to be woven naturally into daily family routines.",
+  },
 ]
 
 const PAGE_SCHEMA = {
