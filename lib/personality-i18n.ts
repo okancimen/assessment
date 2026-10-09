@@ -473,7 +473,7 @@ const TR: PersonalityI18n = {
     Wisdom: 'Bilgelik', Courage: 'Cesaret', Humanity: 'İnsanlık',
     Justice: 'Adalet', Temperance: 'Denge', Transcendence: 'Aşkınlık',
   },
-  landingBadge: 'VIA Karakter Güçleri · 6–20 Yaş',
+  landingBadge: 'VIA Güçlü Yönleri · 6–20 Yaş',
   landingTitle: 'Çocuğunuzun karakter güçlerini keşfedin',
   landingSubtitle: 'Araştırmaya dayalı bir kişilik değerlendirmesi — çocuğunuzun gerçek yeteneklerini ve gelişim alanlarını ortaya koyar.',
   landingCta: 'Değerlendirmeyi başlat',

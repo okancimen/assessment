@@ -226,7 +226,7 @@ const tr: DashboardI18n = {
   startAssessmentBtn: 'Değerlendirmeyi başlat',
   startAssessmentError: 'Bir şeyler ters gitti. Lütfen tekrar deneyin.',
   startAssessmentNetworkError: 'Ağ hatası. Lütfen bağlantınızı kontrol edip tekrar deneyin.',
-  strengthsTitle: 'Karakter Güçleri',
+  strengthsTitle: 'Güçlü Yönleri',
   strengthsSubtitle: 'Çocuğunuzun kişilik profilini keşfedin',
   strengthsLearnMore: 'Daha fazla bilgi',
   startStrengths: 'Değerlendirmeyi başlat',

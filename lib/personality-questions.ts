@@ -204,7 +204,7 @@ const QUESTION_TEXT_I18N: Record<QuestionLocale, Record<Trait, [string, string]>
     curiosity: ['Çocuğum işlerin nasıl çalıştığı hakkında çok soru sorar.', 'Çocuğum yeni bir şey keşfettiğinde heyecanlanır.'],
     creativity: ['Çocuğum hikayeler, çizimler veya yeni oyunlar uydurmayı sever.', 'Çocuğum sorunları farklı veya şaşırtıcı yollarla çözer.'],
     kindness: ['Çocuğum üzgün veya yaralı olduğunda başkalarına yardım etmeye çalışır.', 'Çocuğum arkadaşları veya kardeşleriyle isteyerek paylaşır.'],
-    bravery: ['Çocuğum gergin hissetse bile bir şeyleri dener.', 'Çocuğum doğru olduğunu düşündüğü şey için ayağa kalkar.'],
+    bravery: ['Çocuğum gergin hissetse bile bir şeyleri dener.', 'Çocuğum doğru olduğunu düşündüğü şey için hakkını savunur.'],
     fairness: ['Çocuğum kurallar adil olmadığında üzülür.', 'Çocuğum kim olursa olsun herkese eşit davranır.'],
     gratitude: ['Çocuğum teşekkür eder ve başkalarının yaptıklarını takdir eder.', 'Çocuğum hayatındaki güzel şeyleri sık sık fark eder.'],
     zest: ['Çocuğum etkinliklere çok enerjiyle katılır.', 'Çocuğum yaptığı çoğu şeyde heyecanlı ve canlı görünür.'],

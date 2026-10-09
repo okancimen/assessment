@@ -5,15 +5,15 @@ const BASE_URL = 'https://eduentry.com'
 const REGISTER_URL = `${BASE_URL}/tr/auth/register`
 
 export const metadata: Metadata = {
-  title: 'Çocuk Kişilik Değerlendirmesi | VIA Karakter Güçleri Testi — Eduentry',
+  title: 'Çocuk Kişilik Değerlendirmesi | VIA Güçlü Yönler Testi — Eduentry',
   description:
-    "Çocuğunuzun benzersiz karakter güçlerini yapay zeka destekli, bilimsel kişilik değerlendirmemizle keşfedin. 6–20 yaş. Ücretsiz ebeveyn anketi. Anında kişiselleştirilmiş büyüme raporu.",
+    "Çocuğunuzun benzersiz güçlü yönlerini yapay zeka destekli, bilimsel kişilik değerlendirmemizle keşfedin. 6–20 yaş. Ücretsiz ebeveyn anketi. Anında kişiselleştirilmiş büyüme raporu.",
   keywords: [
     'çocuk kişilik değerlendirmesi',
-    'VIA karakter güçleri testi',
+    'VIA güçlü yönler testi',
     'çocuğun güçlü ve zayıf yönleri',
     'ücretsiz çocuk kişilik testi',
-    'çocuklar için VIA karakter güçleri',
+    'çocuklar için VIA güçlü yönleri',
     'çevrimiçi çocuk karakter değerlendirmesi',
     'ebeveynlik araçları kişilik',
     'pozitif psikoloji çocuk testi',
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/tr/kisilik-degerlendirmesi`,
     siteName: 'Eduentry',
-    title: 'Çocuk Kişilik Değerlendirmesi | VIA Karakter Güçleri Testi — Eduentry',
+    title: 'Çocuk Kişilik Değerlendirmesi | VIA Güçlü Yönler Testi — Eduentry',
     description: "Çocuğunuzun benzersiz karakter güçlerini yapay zeka destekli değerlendirmemizle keşfedin. 6–20 yaş.",
     locale: 'tr_TR',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Çocuk Kişilik Değerlendirmesi — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Çocuk Kişilik Değerlendirmesi | VIA Karakter Güçleri Testi — Eduentry',
+    title: 'Çocuk Kişilik Değerlendirmesi | VIA Güçlü Yönler Testi — Eduentry',
     description: "Çocuğunuzun benzersiz karakter güçlerini yapay zeka destekli değerlendirmemizle keşfedin. 6–20 yaş.",
     images: [`${BASE_URL}/opengraph-image`],
   },
@@ -62,7 +62,7 @@ const FAQS = [
   },
   {
     q: "Çocuğum için bu değerlendirmeyi ne sıklıkla yeniden yapmalıyım?",
-    a: "Her 6 ila 12 ayda bir veya yeni bir yaş grubuna geçtiğinde testi yeniden yapmanızı öneririz. Bu, karakter güçlerinin zaman içinde nasıl büyüdüğünü ve geliştiğini takip etmenizi sağlar.",
+    a: "Her 6 ila 12 ayda bir veya yeni bir yaş grubuna geçtiğinde testi yeniden yapmanızı öneririz. Bu, güçlü yönlerin zaman içinde nasıl büyüdüğünü ve geliştiğini takip etmenizi sağlar.",
   },
 ]
 
@@ -89,7 +89,7 @@ export default function KisilikDegerlendirmesiPage() {
       <section className="bg-gradient-to-b from-[#f5f3ff] to-white pt-20 pb-16 px-6 text-center">
         <div className="max-w-2xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-xs font-semibold text-indigo-700 uppercase tracking-wider">VIA Karakter Güçleri · 6–20 Yaş</span>
+            <span className="text-xs font-semibold text-indigo-700 uppercase tracking-wider">VIA Güçlü Yönleri · 6–20 Yaş</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#1d1d1f] leading-tight mb-4">
             Çocuğunuzun Benzersiz Güçlerini<br />
@@ -158,7 +158,7 @@ export default function KisilikDegerlendirmesiPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-[#1d1d1f] mb-6">Pozitif Psikolojinin Altın Standardı Üzerine Kurulu</h2>
           <p className="text-lg text-[#6e6e73] leading-relaxed mb-8">
-            Platformumuz, öncü psikologlar Dr. Martin Seligman ve Dr. Neal Mayerson tarafından geliştirilen dünyaca ünlü VIA Karakter Güçleri çerçevesini uyarlar. Araştırmacılar ve eğitimciler tarafından 190&apos;dan fazla ülkede kullanılan bu model, 6 temel erdem altında gruplanmış 24 evrensel özelliği tanımlar: Bilgelik, Cesaret, İnsanlık, Adalet, Ölçülülük ve Aşkınlık.
+            Platformumuz, öncü psikologlar Dr. Martin Seligman ve Dr. Neal Mayerson tarafından geliştirilen dünyaca ünlü VIA Güçlü Yönleri çerçevesini uyarlar. Araştırmacılar ve eğitimciler tarafından 190&apos;dan fazla ülkede kullanılan bu model, 6 temel erdem altında gruplanmış 24 evrensel özelliği tanımlar: Bilgelik, Cesaret, İnsanlık, Adalet, Ölçülülük ve Aşkınlık.
           </p>
           <div className="flex flex-wrap gap-3">
             {VIRTUES.map((v) => (
