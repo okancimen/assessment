@@ -75,9 +75,42 @@ export default async function StrengthsResultsPage({
   const sortedTraits = (Object.entries(traitScores) as [Trait, number][])
     .sort((a, b) => b[1] - a[1])
 
+  // Compute average scores across all this parent's completed assessments
+  const { data: siblingAssessments } = await admin
+    .from('personality_assessments')
+    .select('id')
+    .eq('parent_id', user.id)
+    .eq('status', 'completed')
+    .neq('id', assessmentId)
+
+  let avgScores: Record<string, number> | null = null
+  if (siblingAssessments && siblingAssessments.length > 0) {
+    const siblingIds = siblingAssessments.map((a) => a.id)
+    const { data: siblingResults } = await admin
+      .from('personality_results')
+      .select('trait_scores')
+      .in('assessment_id', siblingIds)
+
+    if (siblingResults && siblingResults.length > 0) {
+      const totals: Record<string, { sum: number; count: number }> = {}
+      for (const r of siblingResults) {
+        for (const [trait, score] of Object.entries(r.trait_scores as Record<string, number>)) {
+          if (!totals[trait]) totals[trait] = { sum: 0, count: 0 }
+          totals[trait].sum += score
+          totals[trait].count += 1
+        }
+      }
+      avgScores = {}
+      for (const [trait, { sum, count }] of Object.entries(totals)) {
+        avgScores[trait] = sum / count
+      }
+    }
+  }
+
   const radarData = sortedTraits.map(([trait, score]) => ({
     trait: t.traitLabels[trait],
     score,
+    avg: avgScores?.[trait] ?? null,
     fullMark: 5,
   }))
 
@@ -139,7 +172,12 @@ export default async function StrengthsResultsPage({
         {/* Radar chart */}
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6">
           <h2 className="text-sm font-semibold text-[#1d1d1f] mb-4">{t.strengthsSection}</h2>
-          <StrengthsRadarChart data={radarData} />
+          <StrengthsRadarChart
+            data={radarData}
+            showAvg={!!avgScores}
+            scoreLabel={t.traitScore}
+            avgLabel={t.avgLabel}
+          />
         </div>
 
         {/* Growth areas */}

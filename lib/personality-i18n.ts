@@ -50,6 +50,7 @@ export interface PersonalityI18n {
   traitHeader: string
   virtueHeader: string
   traitScore: string
+  avgLabel: string
 }
 
 const EN: PersonalityI18n = {
@@ -137,6 +138,7 @@ const EN: PersonalityI18n = {
   traitHeader: 'Trait',
   virtueHeader: 'Virtue',
   traitScore: 'Score',
+  avgLabel: 'Other children avg.',
 }
 
 const FR: PersonalityI18n = {
@@ -224,6 +226,7 @@ const FR: PersonalityI18n = {
   traitHeader: 'Trait',
   virtueHeader: 'Vertu',
   traitScore: 'Score',
+  avgLabel: 'Moy. autres enfants',
 }
 
 const ES: PersonalityI18n = {
@@ -311,6 +314,7 @@ const ES: PersonalityI18n = {
   traitHeader: 'Rasgo',
   virtueHeader: 'Virtud',
   traitScore: 'Puntuación',
+  avgLabel: 'Prom. otros hijos',
 }
 
 const AR: PersonalityI18n = {
@@ -398,6 +402,7 @@ const AR: PersonalityI18n = {
   traitHeader: 'السمة',
   virtueHeader: 'الفضيلة',
   traitScore: 'النتيجة',
+  avgLabel: 'متوسط الأطفال الآخرين',
 }
 
 const TR: PersonalityI18n = {
@@ -485,6 +490,7 @@ const TR: PersonalityI18n = {
   traitHeader: 'Özellik',
   virtueHeader: 'Erdem',
   traitScore: 'Puan',
+  avgLabel: 'Diğer çocukların ort.',
 }
 
 const RU: PersonalityI18n = {
@@ -572,6 +578,7 @@ const RU: PersonalityI18n = {
   traitHeader: 'Черта',
   virtueHeader: 'Добродетель',
   traitScore: 'Балл',
+  avgLabel: 'Среднее др. детей',
 }
 
 const ZH: PersonalityI18n = {
@@ -659,6 +666,7 @@ const ZH: PersonalityI18n = {
   traitHeader: '特质',
   virtueHeader: '美德',
   traitScore: '得分',
+  avgLabel: '其他孩子均值',
 }
 
 const TRANSLATIONS: Record<PersonalityLocale, PersonalityI18n> = {
