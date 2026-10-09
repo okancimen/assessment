@@ -608,17 +608,19 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'pisa-nedir-cocugunuz-nasil-hazirlanir',
-    title: 'PISA Nedir? Açılımı, Puanı ve Sınava Giriş — 2025 Rehberi',
-    shortTitle: 'PISA Nedir? Açılımı, Kaç Yılda Bir, Puan Rehberi',
+    title: 'PISA (Pısa) Nedir? Açılımı, Puanı ve Sınava Giriş — 2025 Rehberi',
+    shortTitle: 'PISA Nedir? Açılımı, Türkçe Karşılığı ve 2025 Puan Rehberi',
     description:
-      'PISA nedir, açılımı ne? 91 ülkede 3 yılda bir yapılan sınavda öğrenci nasıl seçilir, puan nasıl hesaplanır? 2025 Türkiye sonuçları ve veli rehberi.',
+      'PISA (pısa) nedir, açılımı ne demek? OECD\'nin her 3 yılda bir 91 ülkede uyguladığı uluslararası sınav — Türkiye 2025 sonuçları, puan hesabı ve veli rehberi.',
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2022\'de matematikte 453, okumada 440 ve fen bilimlerinde 452 puan alarak OECD ortalamasının altında kaldı.',
 
     date: '2026-09-14',
-    dateModified: '2026-09-27',
+    dateModified: '2026-10-09',
     readTime: '10 dk okuma',
     tags: ['PISA', 'Uluslararası Kıyaslama', 'Akademik Değerlendirme', 'Ebeveyn Rehberi'],
     faqs: [
+      { q: 'PISA nedir, pısa ne demek?', a: 'PISA (pısa), "Programme for International Student Assessment" kelimelerinin baş harflerinden oluşan bir kısaltmadır; Türkçe karşılığı "Uluslararası Öğrenci Değerlendirme Programı"dır. OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bu sınav, matematik, okuma ve fen bilimleri yetkinliklerini ölçer. "Pısa" yazımı, PISA kısaltmasının Türkçe harf kurallarına göre küçük harfle yazılmış halidir.' },
+      { q: 'PISA açılımı nedir, ingilizce karşılığı ne?', a: 'PISA\'nın açılımı "Programme for International Student Assessment" — Türkçede "Uluslararası Öğrenci Değerlendirme Programı" olarak çevrilir. İngilizce açılımın her harfi: P = Programme, I = International, S = Student, A = Assessment. 1997\'de OECD bünyesinde başlatılan program, 2000\'den bu yana her üç yılda bir uygulanmaktadır.' },
       { q: 'PISA testi nedir ve kaç yılda bir yapılır?', a: 'PISA (Programme for International Student Assessment — Uluslararası Öğrenci Değerlendirme Programı), OECD tarafından her üç yılda bir düzenlenen ve 15 yaşındaki öğrencileri matematik, okuma ve fen bilimleri alanlarında değerlendiren küresel bir sınavdır. 2025 itibarıyla 91 ülkede yaklaşık 760.000 öğrenci bu sınava katılmıştır. PISA bir yarışma değil; ülkelerin eğitim sistemlerini birbirleriyle kıyaslamasına olanak tanıyan uluslararası bir kıyaslama aracıdır.' },
       { q: 'PISA sınavına nasıl girilir? Öğrenci nasıl seçilir?', a: 'PISA\'ya bireysel başvuru yapılamaz. Her katılımcı ülkede, Millî Eğitim Bakanlığı veya yetkili ulusal koordinatör, 15 yaşındaki öğrenciler arasından rastgele örnekleme yöntemiyle yaklaşık 5.000–6.000 kişilik bir grup belirler. Seçilen öğrenciler sınavı okullarında uygular. Türkiye\'den seçilen öğrencilerin haberi genellikle okul idaresi aracılığıyla ulaşır. Dolayısıyla PISA için ayrıca başvuru veya kayıt gerekmez; seçilmek tamamen örnekleme sürecine bağlıdır.' },
       { q: 'PISA puanı nedir, nasıl hesaplanır?', a: 'PISA puanı, her alanda 0–1.000 arasında bir ölçekle ifade edilir ve ortalama 500 puan olarak kalibre edilmiştir. Türkiye\'nin 2025 matematik puanı yaklaşık 453\'tür; bu, OECD ortalamasının (472) 19 puan altındadır. Puan farkları somut anlam taşır: 38 puanlık fark (Türkiye ile OECD ortalaması arasındaki aralığın iki katı), PISA metodolojisine göre yaklaşık bir yıllık okul eğitimine eşdeğerdir. Öğrencilerin bireysel PISA puanı yoktur; yalnızca ülke ortalamaları kamuoyuyla paylaşılır.' },
@@ -769,14 +771,14 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'staj-defteri-nasil-doldurulur',
-    title: 'Staj Defteri Nedir, Ne Zaman Teslim Edilir, Nasıl Doldurulur?',
-    shortTitle: 'Staj Defteri Nedir, Nereden Alınır ve Nasıl Doldurulur?',
+    title: 'Staj Defteri Nereden Alınır, Nedir ve Nasıl Doldurulur?',
+    shortTitle: 'Staj Defteri Nereden Alınır? Fakülte, Kırtasiye veya E-Staj',
     description:
-      'Staj defteri nedir, nereden alınır, ne zaman teslim edilir? Günlük kayıttan haftalık özete ve yönetici onayına kadar adım adım doldurma rehberi.',
+      'Staj defterini fakülte sekreteryasından, kırtasiyeden veya e-staj platformundan ücretsiz temin edebilirsin. Nedir, nasıl doldurulur, ne zaman teslim edilir — adım adım rehber.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
-    dateModified: '2026-09-27',
+    dateModified: '2026-10-09',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Staj Defteri', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi'],
     faqs: [
