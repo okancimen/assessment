@@ -1,7 +1,11 @@
+import type { Trait } from './personality-questions'
+
 export type PersonalityLocale = 'en' | 'fr' | 'es' | 'ar' | 'tr' | 'ru' | 'zh'
 
 export interface PersonalityI18n {
   dir: 'ltr' | 'rtl'
+  traitLabels: Record<Trait, string>
+  myChild: string
   // Landing
   landingTitle: string
   landingSubtitle: string
@@ -34,6 +38,17 @@ export interface PersonalityI18n {
 
 const EN: PersonalityI18n = {
   dir: 'ltr',
+  myChild: 'My child',
+  traitLabels: {
+    curiosity: 'Curiosity', creativity: 'Creativity', love_of_learning: 'Love of Learning',
+    perspective: 'Perspective', judgment: 'Judgment', bravery: 'Bravery',
+    perseverance: 'Perseverance', honesty: 'Honesty', zest: 'Zest',
+    love: 'Love', kindness: 'Kindness', social_intelligence: 'Social Intelligence',
+    teamwork: 'Teamwork', fairness: 'Fairness', leadership: 'Leadership',
+    forgiveness: 'Forgiveness', humility: 'Humility', prudence: 'Prudence',
+    self_regulation: 'Self-Regulation', appreciation_of_beauty: 'Appreciation of Beauty',
+    gratitude: 'Gratitude', hope: 'Hope', humor: 'Humor', spirituality: 'Spirituality',
+  },
   landingTitle: 'Discover your child\'s character strengths',
   landingSubtitle: 'A research-backed personality assessment that reveals what your child is truly great at — and where they can grow.',
   landingCta: 'Start the assessment',
@@ -62,6 +77,17 @@ const EN: PersonalityI18n = {
 
 const FR: PersonalityI18n = {
   dir: 'ltr',
+  myChild: 'Mon enfant',
+  traitLabels: {
+    curiosity: 'Curiosité', creativity: 'Créativité', love_of_learning: "Amour de l'apprentissage",
+    perspective: 'Perspective', judgment: 'Jugement', bravery: 'Bravoure',
+    perseverance: 'Persévérance', honesty: 'Honnêteté', zest: 'Enthousiasme',
+    love: 'Amour', kindness: 'Bienveillance', social_intelligence: 'Intelligence sociale',
+    teamwork: "Esprit d'équipe", fairness: 'Équité', leadership: 'Leadership',
+    forgiveness: 'Pardon', humility: 'Humilité', prudence: 'Prudence',
+    self_regulation: 'Maîtrise de soi', appreciation_of_beauty: 'Appréciation de la beauté',
+    gratitude: 'Gratitude', hope: 'Espoir', humor: 'Humour', spirituality: 'Spiritualité',
+  },
   landingTitle: 'Découvrez les forces de caractère de votre enfant',
   landingSubtitle: 'Une évaluation de personnalité fondée sur la recherche qui révèle les véritables atouts de votre enfant et ses axes de développement.',
   landingCta: "Commencer l'évaluation",
@@ -90,6 +116,17 @@ const FR: PersonalityI18n = {
 
 const ES: PersonalityI18n = {
   dir: 'ltr',
+  myChild: 'Mi hijo/a',
+  traitLabels: {
+    curiosity: 'Curiosidad', creativity: 'Creatividad', love_of_learning: 'Amor por aprender',
+    perspective: 'Perspectiva', judgment: 'Juicio', bravery: 'Valentía',
+    perseverance: 'Perseverancia', honesty: 'Honestidad', zest: 'Vitalidad',
+    love: 'Amor', kindness: 'Bondad', social_intelligence: 'Inteligencia social',
+    teamwork: 'Trabajo en equipo', fairness: 'Justicia', leadership: 'Liderazgo',
+    forgiveness: 'Perdón', humility: 'Humildad', prudence: 'Prudencia',
+    self_regulation: 'Autocontrol', appreciation_of_beauty: 'Apreciación de la belleza',
+    gratitude: 'Gratitud', hope: 'Esperanza', humor: 'Humor', spirituality: 'Espiritualidad',
+  },
   landingTitle: 'Descubre las fortalezas de carácter de tu hijo',
   landingSubtitle: 'Una evaluación de personalidad respaldada por la investigación que revela en qué destaca realmente tu hijo y dónde puede crecer.',
   landingCta: 'Comenzar la evaluación',
@@ -118,6 +155,17 @@ const ES: PersonalityI18n = {
 
 const AR: PersonalityI18n = {
   dir: 'rtl',
+  myChild: 'طفلي',
+  traitLabels: {
+    curiosity: 'الفضول', creativity: 'الإبداع', love_of_learning: 'حب التعلم',
+    perspective: 'المنظور', judgment: 'الحكمة', bravery: 'الشجاعة',
+    perseverance: 'المثابرة', honesty: 'الصدق', zest: 'الحيوية',
+    love: 'الحب', kindness: 'اللطف', social_intelligence: 'الذكاء الاجتماعي',
+    teamwork: 'العمل الجماعي', fairness: 'العدالة', leadership: 'القيادة',
+    forgiveness: 'التسامح', humility: 'التواضع', prudence: 'الحصافة',
+    self_regulation: 'ضبط النفس', appreciation_of_beauty: 'تقدير الجمال',
+    gratitude: 'الامتنان', hope: 'الأمل', humor: 'روح الدعابة', spirituality: 'الروحانية',
+  },
   landingTitle: 'اكتشف نقاط قوة شخصية طفلك',
   landingSubtitle: 'تقييم شخصية مدعوم بالبحث العلمي يكشف عن مواهب طفلك الحقيقية ومجالات نموه.',
   landingCta: 'ابدأ التقييم',
@@ -146,6 +194,17 @@ const AR: PersonalityI18n = {
 
 const TR: PersonalityI18n = {
   dir: 'ltr',
+  myChild: 'Çocuğunuz',
+  traitLabels: {
+    curiosity: 'Merak', creativity: 'Yaratıcılık', love_of_learning: 'Öğrenme Sevgisi',
+    perspective: 'Perspektif', judgment: 'Eleştirel Düşünce', bravery: 'Cesaret',
+    perseverance: 'Azim', honesty: 'Dürüstlük', zest: 'Canlılık',
+    love: 'Sevgi', kindness: 'İyilik', social_intelligence: 'Sosyal Zeka',
+    teamwork: 'Takım Çalışması', fairness: 'Adalet', leadership: 'Liderlik',
+    forgiveness: 'Affedicilik', humility: 'Alçakgönüllülük', prudence: 'İhtiyatlılık',
+    self_regulation: 'Öz Denetim', appreciation_of_beauty: 'Güzelliği Takdir',
+    gratitude: 'Şükran', hope: 'Umut', humor: 'Mizah', spirituality: 'Maneviyat',
+  },
   landingTitle: 'Çocuğunuzun karakter güçlerini keşfedin',
   landingSubtitle: 'Araştırmaya dayalı bir kişilik değerlendirmesi — çocuğunuzun gerçek yeteneklerini ve gelişim alanlarını ortaya koyar.',
   landingCta: 'Değerlendirmeyi başlat',
@@ -174,6 +233,17 @@ const TR: PersonalityI18n = {
 
 const RU: PersonalityI18n = {
   dir: 'ltr',
+  myChild: 'Мой ребёнок',
+  traitLabels: {
+    curiosity: 'Любопытство', creativity: 'Креативность', love_of_learning: 'Любовь к учёбе',
+    perspective: 'Перспектива', judgment: 'Рассудительность', bravery: 'Храбрость',
+    perseverance: 'Настойчивость', honesty: 'Честность', zest: 'Энтузиазм',
+    love: 'Любовь', kindness: 'Доброта', social_intelligence: 'Социальный интеллект',
+    teamwork: 'Командная работа', fairness: 'Справедливость', leadership: 'Лидерство',
+    forgiveness: 'Прощение', humility: 'Скромность', prudence: 'Благоразумие',
+    self_regulation: 'Самоконтроль', appreciation_of_beauty: 'Ценность красоты',
+    gratitude: 'Благодарность', hope: 'Надежда', humor: 'Юмор', spirituality: 'Духовность',
+  },
   landingTitle: 'Откройте сильные стороны характера вашего ребёнка',
   landingSubtitle: 'Научно обоснованная оценка личности, которая раскрывает истинные таланты ребёнка и области роста.',
   landingCta: 'Начать оценку',
@@ -202,6 +272,17 @@ const RU: PersonalityI18n = {
 
 const ZH: PersonalityI18n = {
   dir: 'ltr',
+  myChild: '我的孩子',
+  traitLabels: {
+    curiosity: '好奇心', creativity: '创造力', love_of_learning: '热爱学习',
+    perspective: '洞察力', judgment: '判断力', bravery: '勇敢',
+    perseverance: '坚韧', honesty: '诚实', zest: '活力',
+    love: '爱', kindness: '善良', social_intelligence: '社交智慧',
+    teamwork: '团队合作', fairness: '公平', leadership: '领导力',
+    forgiveness: '宽容', humility: '谦逊', prudence: '审慎',
+    self_regulation: '自我调节', appreciation_of_beauty: '美感欣赏',
+    gratitude: '感恩', hope: '希望', humor: '幽默', spirituality: '精神性',
+  },
   landingTitle: '发现孩子的性格优势',
   landingSubtitle: '基于研究的性格评估，揭示孩子真正擅长的领域以及可以成长的方向。',
   landingCta: '开始评估',

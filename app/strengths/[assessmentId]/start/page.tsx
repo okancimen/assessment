@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { redirect, notFound } from 'next/navigation'
 import Navbar from '@/components/dashboard/Navbar'
 import StartStrengthsButton from './StartStrengthsButton'
-import { getTier, getQuestions, TRAIT_LABELS, TRAITS_BY_TIER } from '@/lib/personality-questions'
+import { getTier, getQuestions, TRAITS_BY_TIER } from '@/lib/personality-questions'
 import { getPersonalityI18n } from '@/lib/personality-i18n'
 import { getAge } from '@/lib/utils'
 
@@ -81,7 +81,7 @@ export default async function StrengthsStartPage({
             <div className="flex flex-wrap gap-2">
               {traits.map((trait) => (
                 <span key={trait} className="bg-[#f5f5f7] border border-[#d2d2d7] text-[#1d1d1f] text-xs font-medium px-3 py-1 rounded-full">
-                  {TRAIT_LABELS[trait]}
+                  {t.traitLabels[trait]}
                 </span>
               ))}
             </div>

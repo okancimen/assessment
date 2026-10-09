@@ -151,9 +151,10 @@ export default function PersonalityQuestionClient({
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-8 space-y-8">
           <div className="space-y-2">
             <span className="text-[10px] font-semibold text-[#4F46E5] uppercase tracking-wide">
-              {current.trait.replace(/_/g, ' ')}
+              {t.traitLabels[current.trait]}
             </span>
             <p className="text-lg font-semibold text-[#1d1d1f] leading-snug">{current.text.replace('My child', childName)}</p>
+
           </div>
 
           <CircleRating
