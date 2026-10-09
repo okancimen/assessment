@@ -7,9 +7,7 @@ import { BLOG_POSTS_RU } from './app/blog/posts-ru'
 import { BLOG_POSTS_ZH } from './app/blog/posts-zh'
 
 const nextConfig: NextConfig = {
-  experimental: {
-    inlineCss: true,
-  },
+  experimental: {},
   turbopack: {
     rules: {
       // All features in polyfill-module.js (trimStart/End, Array.flat/flatMap/at,
