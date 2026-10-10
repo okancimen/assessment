@@ -9,9 +9,9 @@ import { BLOG_POSTS_FR } from '@/app/blog/posts-fr'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Plateforme d\'évaluation académique et de stage',
+  title: 'Plateforme d\'évaluation académique, de personnalité et de stage',
   description:
-    'Évaluations adaptatives gratuites pour les élèves de 6 à 17 ans — comparaison académique internationale et évaluation de stage pour lycéens dès 14 ans.',
+    'Évaluations gratuites pour les élèves de 6 à 17 ans — comparaison académique internationale, évaluation des forces du caractère VIA (6–20 ans) et évaluation de stage pour lycéens dès 14 ans. Rapports IA — gratuits.',
   keywords: [
     'évaluation académique gratuite enfants',
     'référence internationale enfants France',
@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     'évaluation orientation professionnelle élèves',
     'test gratuit évaluation enfants',
     'raisonnement verbal non verbal test',
+    'évaluation de personnalité enfant gratuite',
+    'test forces du caractère VIA enfants',
+    'test de personnalité enfant gratuit',
+    'psychologie positive évaluation enfant',
+    'forces et domaines de progrès enfant',
   ],
   alternates: {
     canonical: `${BASE_URL}/fr`,
@@ -33,15 +38,15 @@ export const metadata: Metadata = {
   openGraph: {
     url: `${BASE_URL}/fr`,
     siteName: 'Eduentry',
-    title: 'Eduentry — Plateforme d\'évaluation académique et de stage',
-    description: 'Évaluations adaptatives gratuites fondées sur la même science que PISA, GCSE et SAT. Comparaison académique pour les 6–17 ans et évaluation de stage pour les 14+.',
+    title: 'Eduentry — Plateforme d\'évaluation académique, de personnalité et de stage',
+    description: 'Évaluations gratuites — comparaison académique (6–17 ans), forces du caractère VIA (6–20 ans) et préparation au stage (14+). Rapports IA, gratuits.',
     locale: 'fr_FR',
-    images: [{ url: `${BASE_URL}/fr/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — Plateforme d\'évaluation académique et de stage' }],
+    images: [{ url: `${BASE_URL}/fr/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — Plateforme d\'évaluation académique, de personnalité et de stage' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Eduentry — Plateforme d\'évaluation académique et de stage',
-    description: 'Évaluations adaptatives gratuites fondées sur la même science que PISA, GCSE et SAT. Comparaison académique pour les 6–17 ans et évaluation de stage pour les 14+.',
+    title: 'Eduentry — Plateforme d\'évaluation académique, de personnalité et de stage',
+    description: 'Évaluations gratuites — comparaison académique (6–17 ans), forces du caractère VIA (6–20 ans) et préparation au stage (14+). Rapports IA, gratuits.',
     images: [`${BASE_URL}/fr/opengraph-image`],
   },
 }
@@ -83,6 +88,7 @@ const FAQ_FR = [
   { q: 'Comment fonctionne la technologie adaptative ?', a: 'Eduentry utilise la Théorie de Réponse à l\'Item Logistique à 2 Paramètres (2PL) avec estimation MAP — le même modèle utilisé dans PISA, GCSE et SAT. Après chaque réponse, le système met à jour son estimation du niveau de l\'élève et sélectionne la question suivante pour maximiser la précision de mesure.' },
   { q: 'Puis-je ajouter plusieurs enfants ?', a: 'Oui. Un seul compte parent peut inclure plusieurs profils d\'enfants. Chaque enfant dispose de son propre historique d\'évaluations, de ses scores et de recommandations personnalisées. Il n\'y a pas de limite au nombre d\'enfants que vous pouvez ajouter.' },
   { q: 'Mes données sont-elles privées ?', a: 'Oui. Toutes les données sont stockées en toute sécurité avec une sécurité au niveau des lignes — seul vous pouvez accéder à vos résultats. Nous ne vendons ni ne partageons les données avec des tiers. Le service est entièrement conforme au RGPD.' },
+  { q: 'Qu\'est-ce que l\'évaluation de personnalité ?', a: 'Un questionnaire gratuit pour les parents basé sur le cadre VIA des Forces du Caractère, l\'outil de psychologie positive le plus complet au monde. Les parents évaluent 24 traits de caractère sur 6 vertus (Sagesse, Courage, Humanité, Justice, Tempérance, Transcendance). Le rapport IA identifie les principales forces de l\'enfant, les axes de développement et des activités de croissance personnalisées. Adapté aux enfants de 6 à 20 ans.' },
 ]
 
 const FAQ_SCHEMA_FR = {
@@ -160,6 +166,30 @@ const INTERNSHIP_PROGRAM_SCHEMA_FR = {
   ],
 }
 
+const PERSONALITY_PROGRAM_SCHEMA_FR = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Évaluation de Personnalité et Forces du Caractère — 6–20 ans',
+  description: 'Questionnaire VIA des Forces du Caractère complété par les parents. Identifie 24 traits de caractère sur 6 vertus et génère un rapport de forces et de développement avec IA.',
+  url: 'https://eduentry.com/fr/evaluation-de-personnalite',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Rapport des Forces du Caractère', credentialCategory: 'certificate' },
+  timeToComplete: 'PT15M',
+  educationalProgramMode: 'online',
+  inLanguage: 'fr',
+  typicalAgeRange: '6-20',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'Aucun prérequis — complété par les parents au nom de l\'enfant',
+  hasCourse: [
+    { '@type': 'Course', name: 'Sagesse', description: 'Curiosité, Créativité, Amour de l\'apprentissage, Perspective, Jugement' },
+    { '@type': 'Course', name: 'Courage', description: 'Bravoure, Persévérance, Honnêteté, Entrain' },
+    { '@type': 'Course', name: 'Humanité', description: 'Amour, Bienveillance, Intelligence sociale' },
+    { '@type': 'Course', name: 'Justice', description: 'Esprit d\'équipe, Équité, Leadership' },
+    { '@type': 'Course', name: 'Tempérance', description: 'Pardon, Humilité, Prudence, Autocontrôle' },
+    { '@type': 'Course', name: 'Transcendance', description: 'Gratitude, Espoir, Humour, Appréciation de la beauté, Spiritualité' },
+  ],
+}
+
 const SOFTWARE_SCHEMA_FR = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
@@ -167,7 +197,7 @@ const SOFTWARE_SCHEMA_FR = {
   url: 'https://eduentry.com',
   applicationCategory: 'EducationalApplication',
   operatingSystem: 'Web Browser',
-  description: 'Évaluations adaptatives gratuites alimentées par l\'IA pour les élèves à partir de 6 ans.',
+  description: 'Évaluations gratuites alimentées par l\'IA — comparaison académique, évaluation des forces du caractère VIA et préparation au stage — pour les enfants à partir de 6 ans.',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Gratuit — sans abonnement' },
   aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
   review: [
@@ -188,6 +218,7 @@ export default function FrenchHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_FR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA_FR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA_FR) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSONALITY_PROGRAM_SCHEMA_FR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_FR) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
@@ -202,10 +233,10 @@ export default function FrenchHomePage() {
             <span className="text-[#818CF8]">au bon moment.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
-            Évaluations adaptatives gratuites fondées sur la même science que PISA, GCSE et SAT.
+            Trois évaluations gratuites — comparaison académique, forces de personnalité et préparation au stage.
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-4xl mx-auto text-left">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto text-left">
 
             {/* Academic card */}
             <div className="bg-[#2d2d2f] rounded-[28px] border border-[#424245] p-10 flex flex-col">
@@ -273,6 +304,37 @@ export default function FrenchHomePage() {
                 Découvrir le programme
               </a>
               <Link href="#stages" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
+                En savoir plus ↓
+              </Link>
+            </div>
+
+            {/* Personality card */}
+            <div className="bg-[#fffbeb] rounded-[28px] border border-[#fde68a] p-10 flex flex-col">
+              <p className="text-[11px] text-[#D97706] font-medium uppercase tracking-[0.12em] mb-6">
+                Évaluation de Personnalité
+              </p>
+              <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4 leading-snug tracking-tight">
+                Quelles sont les vraies forces de caractère de votre enfant ?
+              </h2>
+              <p className="text-[#92400e] text-sm leading-relaxed mb-8 flex-1">
+                Évaluation VIA des Forces du Caractère complétée par les parents — 24 traits sur 6 vertus. Identifiez les forces et les axes de développement avec un rapport IA personnalisé.
+              </p>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#92400e] mb-8">
+                <span>24 traits</span>
+                <span>·</span>
+                <span>6 vertus</span>
+                <span>·</span>
+                <span>6–20 ans</span>
+                <span>·</span>
+                <span>Gratuit</span>
+              </div>
+              <Link
+                href="/fr/evaluation-de-personnalite"
+                className="bg-[#D97706] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#B45309] transition-colors text-center"
+              >
+                Explorer l&apos;évaluation de personnalité
+              </Link>
+              <Link href="#personnalite" aria-label="En savoir plus sur l'Évaluation de Personnalité" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-4 py-4 block">
                 En savoir plus ↓
               </Link>
             </div>
@@ -548,11 +610,74 @@ export default function FrenchHomePage() {
         </div>
       </section>
 
+      {/* ── Personality section ──────────────────────────────────────────── */}
+      <section id="personnalite" className="bg-white py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="inline-block text-xs font-medium text-[#D97706] uppercase tracking-[0.15em] bg-[#fffbeb] border border-[#fde68a] px-3 py-1.5 rounded-full mb-5">
+              Évaluation de Personnalité · 6–20 ans
+            </span>
+            <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              Découvrez les forces de caractère de votre enfant.
+            </h2>
+            <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
+              Basée sur le cadre VIA des Forces du Caractère, l&apos;outil de psychologie positive le plus complet au monde. Questionnaire gratuit pour les parents qui cartographie 24 traits sur 6 vertus, générant un rapport de développement IA personnalisé.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
+            {[
+              { label: 'Sagesse',        traits: ['Curiosité', 'Créativité', 'Amour de l\'apprentissage', 'Perspective', 'Jugement'],    color: '#3B82F6', bg: '#eff6ff' },
+              { label: 'Courage',        traits: ['Bravoure', 'Persévérance', 'Honnêteté', 'Entrain'],                                   color: '#F97316', bg: '#fff7ed' },
+              { label: 'Humanité',       traits: ['Amour', 'Bienveillance', 'Intelligence sociale'],                                     color: '#EC4899', bg: '#fdf2f8' },
+              { label: 'Justice',        traits: ['Esprit d\'équipe', 'Équité', 'Leadership'],                                           color: '#14B8A6', bg: '#f0fdfa' },
+              { label: 'Tempérance',     traits: ['Pardon', 'Humilité', 'Prudence', 'Autocontrôle'],                                     color: '#8B5CF6', bg: '#f5f3ff' },
+              { label: 'Transcendance',  traits: ['Gratitude', 'Espoir', 'Humour', 'Appréciation de la beauté', 'Spiritualité'],         color: '#D97706', bg: '#fffbeb' },
+            ].map(({ label, traits, color, bg }) => (
+              <div key={label} className="rounded-2xl p-4 border" style={{ background: bg, borderColor: color + '44' }}>
+                <div className="font-bold text-sm text-[#1d1d1f] mb-2">{label}</div>
+                <div className="space-y-0.5">
+                  {traits.map(t => (
+                    <div key={t} className="text-[11px] text-[#636366] leading-tight">{t}</div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="bg-[#fffbeb] rounded-3xl border border-[#fde68a] p-8 flex flex-col sm:flex-row gap-8 mb-8">
+            <div className="flex-1">
+              <p className="text-xs font-semibold text-[#D97706] uppercase tracking-widest mb-3">Ce qu&apos;inclut le rapport</p>
+              <ul className="space-y-2">
+                {[
+                  'Les 5 forces de caractère les plus marquées avec explications détaillées',
+                  'Axes de développement — les 5 traits avec le plus grand potentiel',
+                  'Activités personnalisées avec IA pour chaque force',
+                  'Profil de vertus dans les 6 catégories',
+                  'Base de comparaison pour suivre les progrès dans le temps',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2.5 text-sm text-[#92400e]">
+                    <svg className="w-4 h-4 text-[#D97706] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex flex-col justify-center items-start sm:items-center gap-3 flex-shrink-0">
+              <Link href="/fr/evaluation-de-personnalite" className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors whitespace-nowrap">
+                Explorer l&apos;évaluation de personnalité →
+              </Link>
+              <p className="text-xs text-[#92400e] text-center">Évaluation parentale · 15 minutes · Gratuit</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── What you get ──────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] py-32">
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] text-center mb-14">Ce que vous obtenez</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] p-8">
               <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-wider mb-5">Évaluation Académique</p>
@@ -579,6 +704,32 @@ export default function FrenchHomePage() {
                 </CtaLink>
                 <Link href="/fr/exemple-de-rapport" className="text-sm font-semibold text-[#a1a1a7] hover:text-white transition-colors">
                   Voir un exemple de rapport →
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-[#fffbeb] rounded-3xl border border-[#fde68a] p-8">
+              <p className="text-[10px] text-[#D97706] font-semibold uppercase tracking-wider mb-5">Évaluation de Personnalité</p>
+              <ul className="space-y-3">
+                {[
+                  'Les 5 forces de caractère les plus marquées',
+                  'Axes de développement — les 5 traits avec le plus grand potentiel',
+                  'Activités de développement personnalisées avec IA',
+                  'Profil de vertus dans les 6 catégories',
+                  'Basé sur le cadre VIA des Forces du Caractère',
+                  'À refaire tous les 6–12 mois pour suivre la progression',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-[#92400e]">
+                    <svg className="w-4 h-4 text-[#D97706] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-7 pt-6 border-t border-[#fde68a]">
+                <Link href="/fr/evaluation-de-personnalite" className="bg-[#D97706] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors inline-block">
+                  Explorer la personnalité →
                 </Link>
               </div>
             </div>
@@ -672,7 +823,7 @@ export default function FrenchHomePage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] py-32 px-6">
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">Évaluation Académique</p>
             <h2 className="text-2xl font-bold text-white mb-3">Découvrez où se situe votre enfant — à l&apos;échelle mondiale.</h2>
@@ -680,6 +831,17 @@ export default function FrenchHomePage() {
             <CtaLink href="/fr/auth/register" label="bottom_cta_academic_fr" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Commencer l&apos;évaluation gratuite →
             </CtaLink>
+          </div>
+          <div className="text-center bg-[#fffbeb] rounded-3xl border border-[#fde68a] p-10 flex flex-col items-center">
+            <p className="text-[10px] text-[#D97706] font-semibold uppercase tracking-widest mb-4">Évaluation de Personnalité</p>
+            <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Découvrez les forces de caractère de votre enfant.</h2>
+            <p className="text-[#92400e] text-sm mb-8">Rapport VIA des forces avec IA en 15 minutes.</p>
+            <Link
+              href="/fr/evaluation-de-personnalite"
+              className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors"
+            >
+              Explorer la personnalité →
+            </Link>
           </div>
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Évaluation de Stage</p>

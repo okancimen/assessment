@@ -9,9 +9,9 @@ import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Akademik ve Staj Değerlendirme Platformu',
+  title: 'Akademik, Kişilik ve Staj Değerlendirme Platformu',
   description:
-    '6–17 yaş arası çocuklar için ücretsiz akademik kıyaslama ve 14 yaş üstü lise öğrencileri için staj değerlendirmesi.',
+    '6–17 yaş arası çocuklar için ücretsiz akademik kıyaslama, 6–20 yaş için VIA tabanlı kişilik ve karakter güçleri değerlendirmesi ve 14 yaş üstü lise öğrencileri için staj değerlendirmesi. Yapay zeka destekli raporlar — ücretsiz.',
   keywords: [
     'ücretsiz akademik değerlendirme çocuklar',
     'uluslararası kıyaslama çocuklar İngiltere',
@@ -28,6 +28,11 @@ export const metadata: Metadata = {
     'kariyer rehberliği değerlendirme öğrenci',
     'ücretsiz çocuk değerlendirme testi',
     'sözel sözel olmayan akıl yürütme test',
+    'çocuk kişilik değerlendirmesi ücretsiz',
+    'VIA karakter güçleri testi çocuklar',
+    'ücretsiz çocuk karakter güçleri testi',
+    'pozitif psikoloji çocuk değerlendirmesi',
+    'çocuk güçlü ve zayıf yönleri testi',
   ],
   alternates: {
     canonical: `${BASE_URL}/tr`,
@@ -37,15 +42,15 @@ export const metadata: Metadata = {
   openGraph: {
     url: `${BASE_URL}/tr`,
     siteName: 'Eduentry',
-    title: 'Eduentry — Akademik ve Staj Değerlendirme Platformu',
-    description: 'PISA, GCSE ve SAT ile aynı bilime dayalı ücretsiz uyarlanabilir değerlendirmeler. 6–17 yaş için akademik kıyaslama ve 14 yaş üstü için staj değerlendirmesi.',
+    title: 'Eduentry — Akademik, Kişilik ve Staj Değerlendirme Platformu',
+    description: 'Ücretsiz değerlendirmeler — akademik kıyaslama (6–17 yaş), VIA karakter güçleri kişilik değerlendirmesi (6–20 yaş) ve staj hazırlığı (14+ yaş). Yapay zeka destekli raporlar, ücretsiz.',
     locale: 'tr_TR',
-    images: [{ url: `${BASE_URL}/tr/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — Akademik ve Staj Değerlendirme Platformu' }],
+    images: [{ url: `${BASE_URL}/tr/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — Akademik, Kişilik ve Staj Değerlendirme Platformu' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Eduentry — Akademik ve Staj Değerlendirme Platformu',
-    description: 'PISA, GCSE ve SAT ile aynı bilime dayalı ücretsiz uyarlanabilir değerlendirmeler. 6–17 yaş için akademik kıyaslama ve 14 yaş üstü için staj değerlendirmesi.',
+    title: 'Eduentry — Akademik, Kişilik ve Staj Değerlendirme Platformu',
+    description: 'Ücretsiz değerlendirmeler — akademik kıyaslama (6–17 yaş), VIA karakter güçleri kişilik değerlendirmesi (6–20 yaş) ve staj hazırlığı (14+ yaş). Yapay zeka destekli raporlar, ücretsiz.',
     images: [`${BASE_URL}/tr/opengraph-image`],
   },
 }
@@ -90,6 +95,7 @@ const FAQ_TR = [
   { q: 'Uyarlanabilir teknoloji nasıl çalışır?', a: 'Eduentry, 2 Parametreli Lojistik MYT (2PL) ile MAP tahmini kullanır — PISA, GCSE ve SAT\'ta kullanılan modelin aynısı. Her yanıtın ardından sistem, öğrencinin yetenek tahmini günceller ve ölçüm hassasiyetini en üst düzeye çıkarmak için bir sonraki soruyu seçer.' },
   { q: 'Birden fazla çocuk ekleyebilir miyim?', a: 'Evet. Tek bir ebeveyn hesabı birden fazla çocuk profili içerebilir. Her çocuğun kendi değerlendirme geçmişi, puanları ve kişiselleştirilmiş önerileri bulunur. Ekleyebileceğiniz çocuk sayısında herhangi bir sınır yoktur.' },
   { q: 'Verilerim gizli mi?', a: 'Evet. Tüm veriler satır düzeyi güvenlikle güvenli biçimde saklanır — yalnızca siz sonuçlarınıza erişebilirsiniz. Verileri üçüncü taraflarla satmaz veya paylaşmayız. Hizmet GDPR ile tam uyumludur.' },
+  { q: 'Kişilik değerlendirmesi nedir?', a: 'Dünyanın en kapsamlı pozitif psikoloji aracı olan VIA Karakter Güçleri çerçevesine dayalı ücretsiz ebeveyn anketi. Ebeveynler 6 erdem üzerinde 24 karakter özelliğini derecelendirir (Bilgelik, Cesaret, İnsanlık, Adalet, Ölçülülük, Aşkınlık). Yapay zeka destekli rapor, çocuğun en güçlü yönlerini, gelişim alanlarını ve kişiselleştirilmiş gelişim aktivitelerini belirler. 6–20 yaş için uygundur.' },
 ]
 
 const FAQ_SCHEMA_TR = {
@@ -184,6 +190,30 @@ const INTERNSHIP_PROGRAM_SCHEMA_TR = {
   ],
 }
 
+const PERSONALITY_PROGRAM_SCHEMA_TR = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Kişilik ve Karakter Güçleri Değerlendirmesi — 6–20 Yaş',
+  description: 'Ebeveyn tarafından doldurulan VIA Karakter Güçleri anketi. 6 erdem üzerinde 24 karakter özelliğini belirler ve yapay zeka destekli güçlü yönler ile gelişim raporu oluşturur.',
+  url: 'https://eduentry.com/tr/kisilik-degerlendirmesi',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Karakter Güçleri Raporu', credentialCategory: 'certificate' },
+  timeToComplete: 'PT15M',
+  educationalProgramMode: 'online',
+  inLanguage: 'tr',
+  typicalAgeRange: '6-20',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'Ön koşul gerekmez — ebeveyn tarafından çocuk adına doldurulur',
+  hasCourse: [
+    { '@type': 'Course', name: 'Bilgelik', description: 'Merak, Yaratıcılık, Öğrenme Sevgisi, Bakış Açısı, Yargılama' },
+    { '@type': 'Course', name: 'Cesaret', description: 'Cesaret, Azim, Dürüstlük, Canlılık' },
+    { '@type': 'Course', name: 'İnsanlık', description: 'Sevgi, Nezaket, Sosyal Zeka' },
+    { '@type': 'Course', name: 'Adalet', description: 'Takım çalışması, Adalet, Liderlik' },
+    { '@type': 'Course', name: 'Ölçülülük', description: 'Affetme, Alçakgönüllülük, Tedbirlilik, Öz-düzenleme' },
+    { '@type': 'Course', name: 'Aşkınlık', description: 'Minnettarlık, Umut, Mizah, Güzelliği Takdir, Maneviyat' },
+  ],
+}
+
 const SOFTWARE_SCHEMA_TR = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
@@ -191,7 +221,7 @@ const SOFTWARE_SCHEMA_TR = {
   url: 'https://eduentry.com',
   applicationCategory: 'EducationalApplication',
   operatingSystem: 'Web Browser',
-  description: 'Yapay zeka destekli ücretsiz uyarlanabilir değerlendirmeler — 6 yaş ve üzeri öğrenciler için.',
+  description: 'Yapay zeka destekli ücretsiz değerlendirmeler — akademik kıyaslama, VIA karakter güçleri kişilik değerlendirmesi ve staj hazırlığı — 6 yaş ve üzeri çocuklar için.',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Ücretsiz — abonelik gerekmez' },
   aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
   review: [
@@ -212,6 +242,7 @@ export default function TurkishHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_TR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA_TR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA_TR) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSONALITY_PROGRAM_SCHEMA_TR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_TR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FEATURED_BLOG_SCHEMA) }} />
 
@@ -227,10 +258,10 @@ export default function TurkishHomePage() {
             <span className="text-[#818CF8]">doğru zamanda.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
-            PISA, GCSE ve SAT ile aynı bilime dayalı ücretsiz uyarlanabilir değerlendirmeler.
+            Üç ücretsiz değerlendirme — akademik kıyaslama, kişilik güçleri ve staj hazırlığı.
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-4xl mx-auto text-left">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto text-left">
 
             {/* Academic card */}
             <div className="bg-[#2d2d2f] rounded-[28px] border border-[#424245] p-10 flex flex-col">
@@ -298,6 +329,37 @@ export default function TurkishHomePage() {
                 Programı incele
               </Link>
               <Link href="#staj" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
+                Daha fazla bilgi ↓
+              </Link>
+            </div>
+
+            {/* Personality card */}
+            <div className="bg-[#fffbeb] rounded-[28px] border border-[#fde68a] p-10 flex flex-col">
+              <p className="text-[11px] text-[#D97706] font-medium uppercase tracking-[0.12em] mb-6">
+                Kişilik Değerlendirmesi
+              </p>
+              <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4 leading-snug tracking-tight">
+                Çocuğunuzun gerçek karakter güçleri neler?
+              </h2>
+              <p className="text-[#92400e] text-sm leading-relaxed mb-8 flex-1">
+                VIA Karakter Güçleri çerçevesine dayalı ebeveyn değerlendirmesi — 6 erdem üzerinde 24 özellik. Yapay zeka destekli gelişim raporu ile güçlü yönleri ve gelişim alanlarını belirleyin.
+              </p>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#92400e] mb-8">
+                <span>24 karakter özelliği</span>
+                <span>·</span>
+                <span>6 erdem</span>
+                <span>·</span>
+                <span>6–20 yaş</span>
+                <span>·</span>
+                <span>Ücretsiz</span>
+              </div>
+              <Link
+                href="/tr/kisilik-degerlendirmesi"
+                className="bg-[#D97706] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#B45309] transition-colors text-center"
+              >
+                Kişilik değerlendirmesini keşfet
+              </Link>
+              <Link href="#kisilik" aria-label="Kişilik Değerlendirmesi hakkında daha fazla bilgi" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-4 py-4 block">
                 Daha fazla bilgi ↓
               </Link>
             </div>
@@ -570,11 +632,74 @@ export default function TurkishHomePage() {
         </div>
       </section>
 
+      {/* ── Personality section ──────────────────────────────────────────── */}
+      <section id="kisilik" className="bg-white py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="inline-block text-xs font-medium text-[#D97706] uppercase tracking-[0.15em] bg-[#fffbeb] border border-[#fde68a] px-3 py-1.5 rounded-full mb-5">
+              Kişilik Değerlendirmesi · 6–20 Yaş
+            </span>
+            <h2 className="text-3xl min-[420px]:text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              Çocuğunuzun karakter güçlerini keşfedin.
+            </h2>
+            <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
+              Dünyanın en kapsamlı pozitif psikoloji aracı olan VIA Karakter Güçleri çerçevesine dayalı. 6 erdem üzerinde 24 özelliği haritalayan ücretsiz ebeveyn anketi ile kişiselleştirilmiş yapay zeka gelişim raporu oluşturulur.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
+            {[
+              { label: 'Bilgelik',     traits: ['Merak', 'Yaratıcılık', 'Öğrenme Sevgisi', 'Bakış Açısı', 'Yargılama'],    color: '#3B82F6', bg: '#eff6ff' },
+              { label: 'Cesaret',      traits: ['Cesaret', 'Azim', 'Dürüstlük', 'Canlılık'],                                color: '#F97316', bg: '#fff7ed' },
+              { label: 'İnsanlık',     traits: ['Sevgi', 'Nezaket', 'Sosyal Zeka'],                                         color: '#EC4899', bg: '#fdf2f8' },
+              { label: 'Adalet',       traits: ['Takım Çalışması', 'Adalet', 'Liderlik'],                                   color: '#14B8A6', bg: '#f0fdfa' },
+              { label: 'Ölçülülük',    traits: ['Affetme', 'Alçakgönüllülük', 'Tedbirlilik', 'Öz-düzenleme'],               color: '#8B5CF6', bg: '#f5f3ff' },
+              { label: 'Aşkınlık',     traits: ['Minnettarlık', 'Umut', 'Mizah', 'Güzelliği Takdir', 'Maneviyat'],          color: '#D97706', bg: '#fffbeb' },
+            ].map(({ label, traits, color, bg }) => (
+              <div key={label} className="rounded-2xl p-4 border" style={{ background: bg, borderColor: color + '44' }}>
+                <div className="font-bold text-sm text-[#1d1d1f] mb-2">{label}</div>
+                <div className="space-y-0.5">
+                  {traits.map(t => (
+                    <div key={t} className="text-[11px] text-[#636366] leading-tight">{t}</div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="bg-[#fffbeb] rounded-3xl border border-[#fde68a] p-8 flex flex-col sm:flex-row gap-8 mb-8">
+            <div className="flex-1">
+              <p className="text-xs font-semibold text-[#D97706] uppercase tracking-widest mb-3">Rapor neler içerir</p>
+              <ul className="space-y-2">
+                {[
+                  'En güçlü 5 karakter özelliği ve ayrıntılı açıklamaları',
+                  'Gelişim alanları — en fazla potansiyel taşıyan 5 özellik',
+                  'Her güç için yapay zeka destekli kişiselleştirilmiş aktiviteler',
+                  'Tüm 6 kategoride erdem profili',
+                  'Zaman içindeki değişimi izlemek için karşılaştırma temeli',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2.5 text-sm text-[#92400e]">
+                    <svg className="w-4 h-4 text-[#D97706] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex flex-col justify-center items-start sm:items-center gap-3 flex-shrink-0">
+              <Link href="/tr/kisilik-degerlendirmesi" className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors whitespace-nowrap">
+                Kişilik değerlendirmesini keşfet →
+              </Link>
+              <p className="text-xs text-[#92400e] text-center">Ebeveyn değerlendirmesi · 15 dakika · Ücretsiz</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── What you get ──────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] py-32">
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] text-center mb-14">Ne elde edersiniz</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] p-8">
               <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-wider mb-5">Akademik Değerlendirme</p>
@@ -601,6 +726,32 @@ export default function TurkishHomePage() {
                 </CtaLink>
                 <Link href="/tr/ornek-rapor" className="text-sm font-semibold text-[#a1a1a7] hover:text-white transition-colors">
                   Örnek raporu gör →
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-[#fffbeb] rounded-3xl border border-[#fde68a] p-8">
+              <p className="text-[10px] text-[#D97706] font-semibold uppercase tracking-wider mb-5">Kişilik Değerlendirmesi</p>
+              <ul className="space-y-3">
+                {[
+                  'En güçlü 5 imza karakter özelliği',
+                  'Gelişim alanları — en fazla potansiyel taşıyan 5 özellik',
+                  'Yapay zeka destekli kişiselleştirilmiş gelişim aktiviteleri',
+                  'Tüm 6 kategoride erdem profili',
+                  'VIA Karakter Güçleri çerçevesine dayalı',
+                  'Büyümeyi takip etmek için 6–12 ayda bir yeniden test',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-[#92400e]">
+                    <svg className="w-4 h-4 text-[#D97706] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-7 pt-6 border-t border-[#fde68a]">
+                <Link href="/tr/kisilik-degerlendirmesi" className="bg-[#D97706] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors inline-block">
+                  Kişiliği keşfet →
                 </Link>
               </div>
             </div>
@@ -694,7 +845,7 @@ export default function TurkishHomePage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] py-32 px-6">
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">Akademik Değerlendirme</p>
             <h2 className="text-2xl font-bold text-white mb-3">Çocuğunuzun küresel konumunu keşfedin.</h2>
@@ -702,6 +853,17 @@ export default function TurkishHomePage() {
             <CtaLink href="/tr/auth/register" label="bottom_cta_academic_tr" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Ücretsiz değerlendirmeyi başlat →
             </CtaLink>
+          </div>
+          <div className="text-center bg-[#fffbeb] rounded-3xl border border-[#fde68a] p-10 flex flex-col items-center">
+            <p className="text-[10px] text-[#D97706] font-semibold uppercase tracking-widest mb-4">Kişilik Değerlendirmesi</p>
+            <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Çocuğunuzun karakter güçlerini keşfedin.</h2>
+            <p className="text-[#92400e] text-sm mb-8">15 dakikada yapay zeka destekli VIA güçleri raporu.</p>
+            <Link
+              href="/tr/kisilik-degerlendirmesi"
+              className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors"
+            >
+              Kişiliği keşfet →
+            </Link>
           </div>
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Staj Değerlendirmesi</p>
