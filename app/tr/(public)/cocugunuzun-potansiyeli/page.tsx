@@ -164,7 +164,7 @@ const BREADCRUMB_SCHEMA = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: `${BASE_URL}/tr` },
-    { '@type': 'ListItem', position: 2, name: 'Çocuğunuzun Potansiyeli', item: `${BASE_URL}/tr/cocugunuzun-potansiyeli` },
+    { '@type': 'ListItem', position: 2, name: 'Akademik Potansiyeli', item: `${BASE_URL}/tr/cocugunuzun-potansiyeli` },
   ],
 }
 
@@ -221,7 +221,7 @@ export default function CocugunuzunPotansiyeliPage() {
             href={REGISTER_URL}
             className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-base px-8 py-4 rounded-xl transition-colors shadow-lg shadow-indigo-200"
           >
-            Bilişsel Potansiyeli Değerlendir (Ücretsiz)
+            Akademik Potansiyeli Değerlendir (Ücretsiz)
           </Link>
 
           <p className="mt-4 text-xs text-gray-500">
@@ -355,7 +355,7 @@ export default function CocugunuzunPotansiyeliPage() {
               href={REGISTER_URL}
               className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-base px-8 py-4 rounded-xl transition-colors shadow-lg shadow-indigo-200"
             >
-              Bilişsel Potansiyeli Değerlendir (Ücretsiz)
+              Akademik Potansiyeli Değerlendir (Ücretsiz)
             </Link>
             <p className="mt-3 text-xs text-gray-500">Ücretsiz Uluslararası Kıyaslama &nbsp;•&nbsp; %100 Gizli &nbsp;•&nbsp; Anında AI Destekli Bilişsel Profil PDF</p>
           </div>

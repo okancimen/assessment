@@ -63,7 +63,7 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     links: [
       { href: 'https://eduentry.ai/tr', label: 'Staj', external: true },
       { href: '/tr/kisilik-degerlendirmesi', label: 'Güçlü Yönleri' },
-      { href: '/tr/cocugunuzun-potansiyeli', label: 'Çocuğunuzun Potansiyeli' },
+      { href: '/tr/cocugunuzun-potansiyeli', label: 'Akademik Potansiyeli' },
       { href: '/tr/hakkimizda', label: 'Hakkımızda' },
       { href: '/tr/metodoloji', label: 'Metodoloji' },
     ],
