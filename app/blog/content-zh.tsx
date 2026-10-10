@@ -3072,6 +3072,146 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'xingge-youshi-yu-xueyechengjiu': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        两个孩子。同一所学校，同一个辅导老师，同样的学习时间。到了16岁，一个成绩稳定优异，另一个聪明却时好时坏。在大多数情况下，原因并非认知能力——两个孩子都有足够的能力。差异在于性格，具体而言，是教育研究反复证实与学业成果相关的五项可测量特质。
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        这些特质并非与生俱来，学校成绩单无法揭示它们，家长会上也几乎从不讨论。本指南将解释这五项特质是什么，研究发现了什么，以及针对每一项你可以采取哪些具体行动。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">什么是VIA性格优势？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          VIA性格优势分类由宾夕法尼亚大学心理学家马丁·塞利格曼和克里斯托弗·彼得森开发，将24项优势归纳为六大美德：智慧、勇气、人性、公正、节制和超越。这是全球同行评审最为广泛的积极心理学工具，在50多种文化中得到验证，被发表于顶级心理学期刊的研究所引用。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          与将人划入固定类别的人格类型系统不同，VIA优势在所有人身上以不同程度存在，且——至关重要的是——能够通过有目的的培养加以发展。9岁时坚毅得分低的孩子，并不是走在一条预定的轨道上。那个分数是起点，不是判决。
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <Link href="/zh/xingge-pinggu" className="text-indigo-600 hover:underline font-medium">Eduentry免费性格评估</Link>通过针对四个年龄段校准的家长评分问卷，识别全部24项性格优势，生成标志性优势档案（前5项）、成长支柱（后3项）和个性化发展活动。耗时不到15分钟，完全免费。
+        </p>
+      </section>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">发现孩子的性格优势——免费</p>
+          <p className="text-sm text-gray-600">面向6–20岁的VIA性格评估。在15分钟内识别标志性优势、成长支柱和个性化发展活动。</p>
+        </div>
+        <Link href="/zh/xingge-pinggu" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          开始免费评估
+        </Link>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5个最能预测学业成功的性格优势</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          24项VIA优势涵盖从善良到灵性的广泛范围。但当研究者专门关注学业成果——成绩、学业进步、长期教育成就——时，五项优势始终作为最具预测力的特质脱颖而出。值得注意的是，它们跨越三种不同的美德，这告诉我们学业成功并不能简单归结为"学习技能"特质。
+        </p>
+
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">1. 自我调节 <span className="text-sm font-normal text-indigo-600 ml-2">节制</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              在发表于《心理科学》的一项里程碑式研究中，Duckworth和Seligman（2005）发现自律对学业成绩的预测能力优于智商——在GPA、出勤率、完成作业情况和屏幕时间方面，自律所解释的变异量是智商的两倍。此后这一发现已被多次重复验证。
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              在孩子身上，自我调节表现为无需提醒就能开始做作业、在任务未完成时抵制分心的能力，以及在面对困难科目时坚持专注而不放弃。自我调节能力低的孩子并不懒惰——他们只是在管理相互竞争的冲动方面存在发育正常的困难。
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">2. 热爱学习 <span className="text-sm font-normal text-indigo-600 ml-2">智慧</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Park和Peterson（2009）在多国对学龄儿童的性格优势研究中发现，热爱学习与学业成就的直接相关性最强。机制很简单：一个认为获取知识本身就有内在价值的孩子，会主动阅读超出要求的内容，自愿回头复习困难概念，以热情而非抗拒面对新学科。
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              在实践中，热爱学习体现为：听完解释后还会追问的孩子；因感兴趣而自己去看纪录片的孩子；或者对感兴趣话题的细节记忆出奇精准的孩子。它与好奇心不同——好奇心驱动提问，热爱学习驱动对答案的持续探索。
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">3. 坚毅 <span className="text-sm font-normal text-indigo-600 ml-2">勇气</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Angela Duckworth的坚毅研究——将坚毅定义为努力的持久性与兴趣的一致性的结合——在纵向研究中证明坚毅能预测GPA、毕业率和长期成就。她2007年发表于《人格与社会心理学杂志》的论文发现，坚毅预测西点军校学员留存率的能力优于军校自身的综合评估。
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              在孩子身上，坚毅体现为：昨天没解出的题今天还会再试；项目完成度超越最低要求；以及遇到挫折——一个低分、一次失败——不会让努力长时间脱轨。
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">4. 好奇心 <span className="text-sm font-normal text-indigo-600 ml-2">智慧</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Von Stumm、Hell和Chamorro-Premuzic（2011）在《心理科学视角》的元分析发现，智识好奇心——"饥渴的头脑"——是独立于智商和尽责性之外的显著学业成就预测因子。作者称其为学业成绩的"第三支柱"。
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              好奇心驱使孩子注意到理解中的空白，并主动想要填补它。它培养出"为什么是这样运作的？"的提问习惯，而不是满足于表面解释。好奇的孩子对信息的编码更深入，因为他们的注意力是真正投入的，而不仅仅是被引导的。
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">5. 活力 <span className="text-sm font-normal text-indigo-600 ml-2">勇气</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              活力——以饱满的精力、热情和全身心投入的态度面对生活——与学业投入度密切相关。Peterson等人（2007）的研究发现，活力在各年龄组中始终是与生活满足感和学业投入相关性最强的优势之一。高活力的孩子不太可能从学校脱离，即使面对挑战性任务也更愿意投入精力。
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              活力也是对身体状况最为敏感的优势之一。睡眠、运动和营养对活力的表达有着直接且有据可查的影响——这意味着家长可以通过生活方式而非直接教导来切实影响孩子的活力。学习前二十分钟的运动不是对学习的干扰，而是对学习的准备。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">研究没有告诉我们的事</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          将这五项优势确立为学业预测因子的研究并不声称它们是天生固定的、遗传决定的，或者超出环境和有目的练习的影响范围。这是对家长来说最重要的一点。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">实践启示：</strong>了解孩子当前的性格优势档案不是为了给他贴标签，而是为了知道有针对性的、循证的投入能在哪里产生最大的发展回报——在考试周期开始之前，而不是在其中。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">每项优势的一个实践活动</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>自我调节——执行意图。</strong>彼得·戈尔维茨的研究表明，写下"当X发生时，我会做Y"（例如："吃完晚饭后，我会先打开教科书20分钟，再拿手机"）比一般性的意图能产生显著更高的执行率。帮助孩子在每周开始时写下三个关于作业的具体执行意图，并在周末一起回顾哪些有效。
+          </Bullet>
+          <Bullet>
+            <strong>热爱学习——百科全书之夜。</strong>每周一次，让孩子选择任何真正感兴趣的话题——一个历史事件、一项体育纪录、一种动物——然后花20分钟随意深入阅读。没有作业，没有测验。目标是培养为学习本身而学习的习惯。
+          </Bullet>
+          <Bullet>
+            <strong>坚毅——"还没有"日志。</strong>保留一份共享记录，列出孩子正在练习但尚未掌握的技能。每条记录格式为："[技能]——还没有——最近一次尝试：[日期]。"每周回顾，将持续努力正常化为一种标准状态，而非失败的证据。这一框架直接来自卡罗尔·德韦克的成长型思维研究。
+          </Bullet>
+          <Bullet>
+            <strong>好奇心——"我想知道"罐子。</strong>在厨房桌上放一个装有小纸条的罐子。孩子白天任何时候有问题冒出来，就写下来投入罐中。每周一起取出一个问题，花15分钟找到真实答案。当问题被视为有价值而非麻烦时，好奇心就会生长。
+          </Bullet>
+          <Bullet>
+            <strong>活力——学习前先运动。</strong>2012年发表于《儿科学》的一项元分析证实，认知任务前短暂的体育活动能显著改善学龄儿童的注意力、处理速度和执行功能。学习前二十分钟的运动——散步、骑车、五分钟跳跃——不是对学习的干扰，而是对学习的准备。将其纳入日常惯例而非视为可选项。
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">相关指南</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/zh/xingge-pinggu', tag: '评估', title: '免费VIA性格优势评估——适合6–20岁' },
+            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: '指南', title: '在初中前了解孩子的优势与不足' },
+            { href: '/blog/discover-school-age-childs-hidden-strengths', tag: '指南', title: '发现学龄孩子隐藏的天赋与发展空间' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

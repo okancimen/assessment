@@ -4012,6 +4012,152 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'fortalezas-de-caracter-exito-escolar': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Dos niños. El mismo colegio, el mismo tutor, las mismas horas de estudio. A los 16 años, uno alcanza sistemáticamente buenos resultados; el otro es inteligente pero inconsistente. En la mayoría de los casos, la explicación no es cognitiva: ambos niños tienen la capacidad. La diferencia está en el carácter — concretamente, en un conjunto de cinco rasgos medibles que la investigación educativa ha relacionado repetidamente con los resultados académicos.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Esos rasgos no son innatos. Las notas escolares no los revelan. Y casi nunca se tratan en las reuniones de padres. Esta guía explica qué son, qué dice la evidencia y qué puedes hacer con cada uno de ellos.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué son las fortalezas de carácter VIA?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La Clasificación VIA de Fortalezas de Carácter, desarrollada por los psicólogos Martin Seligman y Christopher Peterson en la Universidad de Pensilvania, identifica 24 fortalezas organizadas en seis virtudes: Sabiduría, Coraje, Humanidad, Justicia, Templanza y Trascendencia. Es el instrumento de psicología positiva más revisado por pares en el mundo, validado en más de 50 culturas.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A diferencia de los sistemas de tipología de personalidad que clasifican a las personas en categorías fijas, las fortalezas VIA están presentes en distintos grados en todas las personas — y, fundamentalmente, responden al desarrollo deliberado. Un niño con poca perseverancia a los 9 años no está en una trayectoria predeterminada. Esa puntuación es un punto de partida, no una sentencia.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          La <Link href="/es/evaluacion-de-personalidad" className="text-indigo-600 hover:underline font-medium">evaluación de personalidad de Eduentry</Link> identifica las 24 fortalezas a través de una encuesta de valoración parental calibrada para cuatro niveles de edad — produciendo un perfil de Fortalezas Insignia (las 5 más altas), Pilares de Crecimiento (las 3 más bajas) y actividades de desarrollo personalizadas. Tarda menos de 15 minutos y es gratuita.
+        </p>
+      </section>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Descubre las fortalezas de carácter de tu hijo — gratis</p>
+          <p className="text-sm text-gray-600">Evaluación de personalidad basada en VIA para edades de 6 a 20 años. Identifica Fortalezas Insignia, Pilares de Crecimiento y actividades personalizadas en menos de 15 minutos.</p>
+        </div>
+        <Link href="/es/evaluacion-de-personalidad" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Iniciar evaluación gratuita
+        </Link>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Las 5 fortalezas de carácter que mejor predicen el éxito académico</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Las 24 fortalezas VIA abarcan desde la amabilidad hasta la espiritualidad. Pero cuando los investigadores estudian específicamente los resultados académicos — notas, logros, rendimiento educativo a largo plazo — cinco fortalezas emergen de forma consistente como las más predictivas. Cabe señalar que abarcan tres virtudes diferentes, lo que nos dice que el éxito académico no es puramente una cuestión de rasgos de &ldquo;habilidades de estudio&rdquo;.
+        </p>
+
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">1. Autorregulación <span className="text-sm font-normal text-indigo-600 ml-2">Templanza</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              En un estudio publicado en <em>Psychological Science</em>, Duckworth y Seligman (2005) encontraron que la autodisciplina predecía el rendimiento académico mejor que el cociente intelectual — explicando el doble de varianza en el expediente, la asistencia, la realización de tareas y el tiempo frente a las pantallas. Este hallazgo se ha replicado múltiples veces desde entonces.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              En un niño, la autorregulación se manifiesta como la capacidad de comenzar los deberes sin que se lo pidan, resistir las distracciones cuando hay una tarea sin terminar y mantener la concentración en una materia difícil en lugar de rendirse. Un niño con baja autorregulación no es perezoso — está experimentando una dificultad normal para manejar impulsos en competencia. La brecha entre querer estudiar y realmente hacerlo es un reto regulatorio, no motivacional.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">2. Amor por el aprendizaje <span className="text-sm font-normal text-indigo-600 ml-2">Sabiduría</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Park y Peterson (2009), estudiando las fortalezas de carácter en niños en edad escolar de varios países, encontraron que el amor por el aprendizaje era el que más directamente se correlacionaba con el rendimiento académico. El mecanismo es sencillo: un niño que encuentra intrínsecamente gratificante adquirir conocimientos leerá más allá de lo requerido, volverá voluntariamente a conceptos difíciles y abordará nuevas materias con entusiasmo en lugar de resistencia.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              En la práctica, el amor por el aprendizaje se parece a un niño que hace preguntas de seguimiento después de que le explican algo, que ve documentales por interés propio o que recuerda datos de temas que le apasionan con un nivel de detalle excepcional. Es distinto a la curiosidad: la curiosidad impulsa la pregunta; el amor por el aprendizaje impulsa el estudio sostenido de la respuesta.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">3. Perseverancia <span className="text-sm font-normal text-indigo-600 ml-2">Coraje</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              La investigación sobre el &ldquo;grit&rdquo; de Angela Duckworth — que operacionaliza el grit como perseverancia en el esfuerzo combinada con consistencia de interés — ha demostrado que predice el expediente, las tasas de graduación y el logro a largo plazo en estudios longitudinales. Su artículo de 2007 en el <em>Journal of Personality and Social Psychology</em> encontró que el grit predecía mejor la retención en West Point que la propia evaluación compuesta de la Academia.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              En un niño, la perseverancia se ve cuando vuelve a un problema que no pudo resolver el día anterior en lugar de saltárselo, cuando continúa un proyecto más allá del mínimo requerido, y cuando los contratiempos — una mala nota, un intento fallido — no interrumpen el esfuerzo durante un período prolongado.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">4. Curiosidad <span className="text-sm font-normal text-indigo-600 ml-2">Sabiduría</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Un metaanálisis de Von Stumm, Hell y Chamorro-Premuzic (2011) en <em>Perspectives on Psychological Science</em> encontró que la curiosidad intelectual — la &ldquo;mente hambrienta&rdquo; — es un predictor significativo e independiente del rendimiento académico, separado tanto del cociente intelectual como de la responsabilidad. Los autores la llamaron el &ldquo;tercer pilar&rdquo; del rendimiento académico.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              La curiosidad es lo que lleva a un niño a notar una laguna en su comprensión y querer activamente cerrarla. Genera el hábito de preguntar &ldquo;¿por qué funciona esto?&rdquo; en lugar de aceptar explicaciones superficiales. Los niños curiosos codifican la información más profundamente porque su atención está genuinamente comprometida, no solo dirigida.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">5. Vitalidad <span className="text-sm font-normal text-indigo-600 ml-2">Coraje</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              La vitalidad — acercarse a la vida con energía, entusiasmo e inversión plena — está fuertemente asociada con el compromiso escolar. La investigación de Peterson, Ruch, Beermann, Park y Seligman (2007) encontró la vitalidad entre las fortalezas más consistentemente vinculadas a la satisfacción vital y el compromiso académico en todos los grupos de edad. Un niño con alta vitalidad tiene menos probabilidades de desconectarse del colegio y más probabilidades de invertir energía incluso en tareas desafiantes.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              La vitalidad también es una de las fortalezas más sensibles a las condiciones físicas. El sueño, el ejercicio y la nutrición tienen efectos directos y documentados sobre su expresión — lo que significa que los padres pueden influir significativamente en ella a través del estilo de vida. Veinte minutos de actividad física antes de una sesión de estudio no es una distracción del aprendizaje. Es una preparación para él.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lo que la investigación NO dice</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La investigación que establece estas cinco fortalezas como predictores académicos no afirma que sean innatas, genéticamente determinadas o fuera del alcance del entorno y la práctica deliberada. Este es el punto más importante para los padres.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La autorregulación, la perseverancia y la vitalidad son especialmente sensibles al entorno y a la rutina. El marco que usan los adultos ante la dificultad — &ldquo;aún no lo has dominado&rdquo; frente a &ldquo;no puedes hacer esto&rdquo; — la estructura del entorno de estudio, la presencia de actividad física y sueño suficiente: todos estos factores tienen efectos documentados sobre la expresión de las fortalezas de carácter.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">La implicación práctica:</strong> Conocer el perfil actual de fortalezas de carácter de tu hijo no se trata de etiquetarlo. Se trata de saber dónde la inversión dirigida y basada en evidencia producirá el mayor retorno en su desarrollo — antes de que empiece un ciclo de exámenes, no durante él.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Una actividad práctica por fortaleza</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Cada actividad está diseñada para crear una repetición de baja presión de la fortaleza objetivo en un contexto real. Prueba una durante dos semanas antes de evaluar los resultados.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Autorregulación — la intención de implementación.</strong> La investigación de Peter Gollwitzer muestra que escribir &ldquo;Cuando ocurra X, haré Y&rdquo; (por ejemplo, &ldquo;Cuando termine de cenar, abriré mi libro de texto durante 20 minutos antes de coger el móvil&rdquo;) produce un seguimiento significativamente más sólido que las intenciones generales. Ayuda a tu hijo a escribir tres intenciones de implementación específicas para los deberes al inicio de cada semana y revísalas al final.
+          </Bullet>
+          <Bullet>
+            <strong>Amor por el aprendizaje — la noche de la enciclopedia.</strong> Una vez a la semana, deja que tu hijo elija cualquier tema que le interese genuinamente — un evento histórico, un récord deportivo, una especie animal — y pase 20 minutos leyendo tan profundo como quiera. Sin deberes, sin examen. El objetivo es construir el hábito de aprender por el placer de hacerlo.
+          </Bullet>
+          <Bullet>
+            <strong>Perseverancia — el diario del &ldquo;todavía no&rdquo;.</strong> Lleva un registro compartido de las habilidades y problemas en los que tu hijo está trabajando pero aún no ha dominado. Cada entrada dice: &ldquo;[Habilidad] — todavía no — último intento: [fecha].&rdquo; Revisarlo semanalmente normaliza el esfuerzo continuo como el estado estándar, no como evidencia de fracaso. Este enfoque viene directamente de la investigación sobre la mentalidad de crecimiento de Carol Dweck.
+          </Bullet>
+          <Bullet>
+            <strong>Curiosidad — el tarro &ldquo;me pregunto&rdquo;.</strong> Coloca un tarro en la mesa de la cocina con papelitos. Cada vez que se le ocurra una pregunta a tu hijo durante el día, la escribe y la echa al tarro. Una vez a la semana, escoged juntos una pregunta y dedicad 15 minutos a encontrar una respuesta real. La curiosidad crece cuando las preguntas se tratan como valiosas, no como inconvenientes.
+          </Bullet>
+          <Bullet>
+            <strong>Vitalidad — movimiento antes del estudio.</strong> Un metaanálisis de 2012 en <em>Pediatrics</em> confirmó que la actividad física breve antes de tareas cognitivas mejora significativamente la atención, la velocidad de procesamiento y la función ejecutiva en niños en edad escolar. Veinte minutos de movimiento antes de una sesión de estudio — un paseo, un rato en bicicleta, cinco minutos de saltos — no es una distracción del aprendizaje. Es una preparación para él.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guías relacionadas</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/es/evaluacion-de-personalidad', tag: 'Evaluación', title: 'Evaluación de personalidad VIA gratuita — Edades 6–20' },
+            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: 'Guía', title: 'Comprender las fortalezas y debilidades de tu hijo antes del instituto' },
+            { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Guía', title: 'Descubre las fortalezas ocultas de tu hijo en edad escolar' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

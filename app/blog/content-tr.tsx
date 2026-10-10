@@ -6730,6 +6730,152 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'cocugumun-guclu-yonleri-ve-akademik-basari': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        İki çocuk. Aynı okul, aynı özel öğretmen, aynı ders çalışma saatleri. 16 yaşında biri tutarlı biçimde yüksek başarılı, diğeri zeki ama tutarsız. Çoğu durumda açıklama bilişsel değildir: her iki çocuğun da kapasitesi var. Fark karakterde — özellikle eğitim araştırmalarının tekrar tekrar akademik sonuçlarla ilişkilendirdiği, ölçülebilir beş özellikten oluşan bir kümede.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu özellikler doğuştan sabit değildir. Okul karneleri tarafından ortaya konmaz. Ve neredeyse hiç veli toplantılarında konuşulmaz. Bu rehber, bunların ne olduğunu, kanıtların ne söylediğini ve her biri için somut olarak ne yapabileceğinizi açıklıyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">VIA Kişilik Özellikleri Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pennsylvania Üniversitesi&apos;nden psikologlar Martin Seligman ve Christopher Peterson tarafından geliştirilen VIA Kişilik Özellikleri Sınıflandırması, altı erdem üzerinde düzenlenen 24 gücü tanımlar: Bilgelik, Cesaret, İnsanlık, Adalet, Itidal ve Yüce Amaç. 50&apos;den fazla kültürde doğrulanmış, önde gelen psikoloji dergilerinde yayımlanan araştırmalarda kullanılan dünyanın en kapsamlı biçimde hakemli pozitif psikoloji aracıdır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İnsanları sabit kategorilere ayıran kişilik tipolojisi sistemlerinin aksine, VIA güçleri tüm insanlarda değişen derecelerde bulunur ve — son derece önemli bir şekilde — kasıtlı gelişime yanıt verir. 9 yaşında azim puanı düşük olan bir çocuk, önceden belirlenmiş bir yolda değildir. Bu puan bir başlangıç noktasıdır; bir karar değil.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <Link href="/tr/kisilik-degerlendirmesi" className="text-indigo-600 hover:underline font-medium">Eduentry kişilik değerlendirmesi</Link> dört gelişim kademesine göre kalibre edilmiş bir ebeveyn değerlendirmesi aracılığıyla tüm 24 kişilik özelliğini belirler — İmza Güçleri profili (en yüksek 5), Gelişim Sütunları (en düşük 3) ve kişiselleştirilmiş gelişim aktiviteleri üretir. 15 dakikadan az sürer ve ücretsizdir.
+        </p>
+      </section>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Çocuğunuzun kişilik özelliklerini keşfedin — ücretsiz</p>
+          <p className="text-sm text-gray-600">6–20 yaş için VIA destekli kişilik değerlendirmesi. İmza Güçleri, Gelişim Sütunları ve kişiselleştirilmiş gelişim aktivitelerini 15 dakika içinde belirler.</p>
+        </div>
+        <Link href="/tr/kisilik-degerlendirmesi" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Ücretsiz değerlendirmeyi başlat
+        </Link>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Akademik Başarıyı En Güvenilir Biçimde Öngören 5 Karakter Gücü</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          24 VIA gücü nezaketten maneviyata uzanan geniş bir yelpazeyi kapsar. Ancak araştırmacılar özellikle akademik sonuçlara — notlar, başarı, uzun vadeli eğitim başarısı — baktığında, beş güç tutarlı biçimde en öngörücü olanlar olarak öne çıkar. Bu güçlerin üç farklı erdemi kapsadığı dikkat çekicidir: bu durum, akademik başarının salt &ldquo;çalışma becerileri&rdquo; özelliklerine indirgenemeyeceğini gösteriyor.
+        </p>
+
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">1. Öz Denetim <span className="text-sm font-normal text-indigo-600 ml-2">Itidal</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              <em>Psychological Science</em>&apos;da yayımlanan çığır açan bir çalışmada Duckworth ve Seligman (2005), öz disiplinin IQ&apos;dan daha iyi akademik performans öngördüğünü buldu; GPA, devamsızlık, ödev tamamlama ve ekran başında geçirilen zamandaki varyansın iki katını açıkladı. Bu bulgu o tarihten bu yana birçok kez tekrarlandı.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Bir çocukta öz denetim; hatırlatılmadan ödeve başlama, bir görev bitmeden dikkatin dağılmasına direniş ve zor bir konudan vazgeçmek yerine odağı koruma olarak kendini gösterir. Öz denetimi düşük bir çocuk tembel değildir — rakip dürtüleri yönetmede gelişimsel açıdan normal bir güçlük yaşıyor. Çalışmak istemek ile gerçekten çalışmak arasındaki uçurum bir motivasyon sorunu değil, düzenleyici bir sorundur.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">2. Öğrenme Sevgisi <span className="text-sm font-normal text-indigo-600 ml-2">Bilgelik</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Birden fazla ülkede okul çağı çocuklarındaki kişilik özelliklerini araştıran Park ve Peterson (2009), öğrenme sevgisinin akademik başarıyla en doğrudan ilişkili olduğunu buldu. Mekanizma basittir: bilgi edinmeyi içten ödüllendirici bulan bir çocuk gerekenden fazlasını okur, zor kavramlara gönüllü olarak geri döner ve yeni konulara direnç yerine katılımla yaklaşır.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Pratikte öğrenme sevgisi, kendisine bir şey anlatıldıktan sonra takip soruları soran, ödev olmasa bile belgesel izleyen veya ilgilendiği konulardaki gerçekleri olağanüstü ayrıntıda hatırlayan bir çocuk olarak görünür. Meraktan farklıdır: merak soruyu tetikler; öğrenme sevgisi yanıtın sürekli araştırılmasını sağlar.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">3. Azim <span className="text-sm font-normal text-indigo-600 ml-2">Cesaret</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Angela Duckworth&apos;un azim araştırması — azmi çaba sürekliliği ile ilgi tutarlılığının birleşimi olarak işlevselleştiren — boylamsal çalışmalarda azmin GPA, mezuniyet oranları ve uzun vadeli başarıyı öngördüğünü göstermiştir. <em>Journal of Personality and Social Psychology</em>&apos;deki 2007 tarihli makalesinde azmin, West Point&apos;te öğrenci tutma oranını Akademi&apos;nin kendi bileşik değerlendirmesinden daha iyi öngördüğü bulundu.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Bir çocukta azim; bir önceki gün çözemedikleri bir probleme es geçmek yerine geri dönmelerinde, bir projeyi asgari gerekliliklerden fazlasına taşımalarında ve olumsuz bir not veya başarısız bir girişim gibi aksaklıkların uzun süre çabayı sekteye uğratmamasında kendini gösterir. Azmi yüksek bir çocuk zorluğu daha çok sevmez; hayal kırıklığına karşı, göreve devam etmelerini sağlayan daha güçlü bir düzenleyici tepkiye sahiptir.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">4. Merak <span className="text-sm font-normal text-indigo-600 ml-2">Bilgelik</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Von Stumm, Hell ve Chamorro-Premuzic&apos;in (2011) <em>Perspectives on Psychological Science</em>&apos;daki meta-analizi, zihinsel merakın — &ldquo;aç zihnin&rdquo; — hem IQ&apos;dan hem de özenlilikten bağımsız, anlamlı ve bağımsız bir akademik başarı öngörücüsü olduğunu buldu. Yazarlar onu akademik performansın &ldquo;üçüncü sütunu&rdquo; olarak nitelendirdi.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Merak, bir çocuğun anlayışındaki boşluğu fark edip onu aktif olarak kapatmak istemesini sağlayan şeydir. Yüzeysel açıklamaları kabullenmek yerine &ldquo;bu neden böyle çalışıyor?&rdquo; diye sorma alışkanlığını yaratır. Meraklı çocuklar bilgiyi daha derin biçimde kodlar çünkü dikkatlerini yönlendirilmekle yetinmez, gerçekten meşgul ederler.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">5. Coşku <span className="text-sm font-normal text-indigo-600 ml-2">Cesaret</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Hayata enerji, heves ve tam bağlılıkla yaklaşmak olan coşku, okul katılımıyla güçlü biçimde ilişkilidir. Peterson, Ruch, Beermann, Park ve Seligman&apos;ın (2007) araştırması, coşkuyu yaş gruplarında yaşam doyumu ve akademik katılımla en tutarlı biçimde bağlantılı güçler arasında buldu. Coşku düzeyi yüksek bir çocuğun okuldan kopma olasılığı daha düşük, zorlu görevlere enerji yatırma olasılığı ise daha yüksektir.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Coşku aynı zamanda fiziksel koşullara en duyarlı güçlerden biridir. Uyku, egzersiz ve beslenmenin coşku üzerinde doğrudan, belgelenmiş etkileri vardır — bu da ebeveynlerin doğrudan öğretim yerine yaşam tarzı yoluyla bunu anlamlı biçimde etkileyebileceği anlamına gelir. Ders çalışma oturumundan önce yapılan yirmi dakikalık fiziksel aktivite dikkat dağıtıcı değil, hazırlıktır.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Araştırmanın Söylemediği Şey</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu beş gücü akademik öngörücüler olarak ortaya koyan araştırmalar, bunların doğuştan sabit, genetik olarak belirlenmiş veya çevre ve kasıtlı pratiğin erişemeyeceği olduğunu iddia etmez. Bu, ebeveynler için en önemli noktadır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Öz denetim, azim ve coşku özellikle çevre ve rutine karşı yüksek duyarlılık gösterir. Yetişkinlerin zorluk etrafında kullandığı çerçeveleme — &ldquo;bunu henüz öğrenemedin&rdquo; ile &ldquo;bunu yapamazsın&rdquo; — bir çocuğun ders çalışma ortamının yapısı, fiziksel aktivite ve yeterli uyku: tüm bunların kişilik özellikleri ifadesi üzerinde belgelenmiş etkileri vardır.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Pratik çıkarım:</strong> Çocuğunuzun mevcut kişilik özellikleri profilini bilmek, onu etiketlemekle ilgili değildir. Hedefli, kanıta dayalı yatırımın en büyük gelişimsel getiriyi nerede üreteceğini bilmekle ilgilidir — bir sınav döngüsü başlamadan önce, döngü içindeyken değil.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Her Güç İçin Bir Pratik Aktivite</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Her aktivite, hedef gücün gerçek bir bağlamda düşük baskılı tekrarını oluşturmak için tasarlanmıştır. Değerlendirmeden önce iki hafta boyunca bir tanesini deneyin.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Öz Denetim — uygulama niyeti.</strong> Peter Gollwitzer&apos;ın araştırması, &ldquo;X olduğunda Y yapacağım&rdquo; yazmanın (örn. &ldquo;Akşam yemeğini bitirince telefonumdan önce 20 dakika ders kitabımı açacağım&rdquo;) genel niyetlere kıyasla çok daha güçlü bir uygulama ürettiğini göstermektedir. Her hafta başında çocuğunuzun ev ödevi için üç spesifik uygulama niyeti yazmasına yardım edin; hafta sonunda hangilerinin işe yaradığını gözden geçirin.
+          </Bullet>
+          <Bullet>
+            <strong>Öğrenme Sevgisi — ansiklopedi gecesi.</strong> Haftada bir kez, çocuğunuzun gerçekten ilgisini çeken herhangi bir konuyu seçmesine izin verin — tarihi bir olay, bir spor rekoru, bir hayvan türü — ve 20 dakika istediği kadar derine okusun. Ödev yok, sınav yok. Amaç, kendi iyiliği için öğrenme alışkanlığını oluşturmaktır.
+          </Bullet>
+          <Bullet>
+            <strong>Azim — &ldquo;henüz değil&rdquo; günlüğü.</strong> Çocuğunuzun üzerinde çalıştığı ama henüz ustalaşamadığı becerilerin ortak bir kaydını tutun. Her giriş şöyle okur: &ldquo;[Beceri] — henüz değil — son deneme: [tarih].&rdquo; Her hafta gözden geçirmek, devam eden çabayı başarısızlığın kanıtı değil standart durum olarak normalleştirir. Bu çerçeveleme doğrudan Carol Dweck&apos;in büyüme zihniyeti araştırmasından gelir.
+          </Bullet>
+          <Bullet>
+            <strong>Merak — &ldquo;merak ediyorum&rdquo; kavanozu.</strong> Mutfak masasına kağıt parçalarıyla dolu bir kavanoz koyun. Gün içinde çocuğunuzun aklına bir soru geldiğinde, onu yazar ve kavanozu atar. Haftada bir, birlikte bir soru seçin ve 15 dakika gerçek bir cevap bulmak için harcayın. Merak, sorular can sıkıcı değil değerli olarak görüldüğünde büyür.
+          </Bullet>
+          <Bullet>
+            <strong>Coşku — çalışmadan önce hareket.</strong> <em>Pediatrics</em>&apos;ta yayımlanan 2012 tarihli bir meta-analiz, bilişsel görevlerden önce kısa fiziksel aktivitenin okul çağı çocuklarında dikkati, işlem hızını ve yürütücü işlevi önemli ölçüde iyileştirdiğini doğruladı. Ders çalışma oturumundan önce yirmi dakika hareket — bir yürüyüş, bisiklet turu, beş dakika atlama — öğrenmeden dikkat dağıtıcı değildir. Hazırlıktır.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/kisilik-degerlendirmesi', tag: 'Değerlendirme', title: 'Ücretsiz VIA Kişilik Özellikleri Değerlendirmesi — 6–20 Yaş' },
+            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: 'Rehber', title: 'Çocuğunuzun Güçlü ve Zayıf Yönlerini Lise Öncesinde Anlama' },
+            { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Rehber', title: 'Okul Çağındaki Çocuğunuzun Gizli Güçlerini Keşfedin' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

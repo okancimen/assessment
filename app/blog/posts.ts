@@ -2470,6 +2470,46 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: 'https://eduentry.com',
     },
   },
+  {
+    slug: 'character-strengths-academic-success',
+    title: 'The 5 Character Strengths That Predict School Success — And How to Spot Them in Your Child',
+    shortTitle: 'Character Strengths That Predict Academic Success',
+    description:
+      'Research identifies five VIA character strengths — curiosity, love of learning, perseverance, self-regulation, and zest — as the most reliable predictors of academic achievement in children.',
+    tldr: "School grades measure performance relative to a class average — not the underlying character traits that determine whether a child will sustain effort, remain curious, and grow from setbacks. Five VIA character strengths — love of learning, curiosity, perseverance, self-regulation, and zest — consistently emerge in longitudinal research as the most predictive of academic outcomes. These strengths are not fixed: they are developable. Eduentry's free personality assessment identifies all 24 VIA character strengths in your child in under 15 minutes.",
+    date: '2026-10-10',
+    dateModified: '2026-10-10',
+    readTime: '9 min read',
+    tags: ['Character Strengths', 'Academic Success', 'VIA Strengths', 'Child Development', 'Parent Guide', 'Personality Assessment'],
+    faqs: [
+      {
+        q: 'Which character strength best predicts academic success in children?',
+        a: 'Self-regulation is the single strongest predictor of academic grades — surpassing IQ in a landmark study by Duckworth & Seligman (2005), which found that self-discipline explained twice as much variance in GPA as intelligence quotient. Love of learning and perseverance follow closely, with curiosity and zest completing the five-strength cluster that reliably differentiates high achievers from peers of equal cognitive ability.',
+      },
+      {
+        q: 'Are character strengths the same as personality traits?',
+        a: 'They overlap but are not identical. Personality traits (like introversion or openness) describe stable tendencies. VIA character strengths are morally valued, observable behaviours — curiosity, fairness, kindness — that can be measured and, crucially, developed. Unlike personality, character strengths respond to deliberate practice and environment.',
+      },
+      {
+        q: 'Can character strengths be measured in young children?',
+        a: "Yes. Eduentry's personality assessment is calibrated by developmental tier: ages 6–9 are rated on 12 foundational traits (24 questions), ages 10–13 on 15 traits (30 questions), ages 14–17 on 20 traits (40 questions), and ages 18–20 on all 24 traits (48 questions). The parent-rated format is used for younger children because a parent's daily observations provide the most stable measurement baseline.",
+      },
+      {
+        q: 'My child has a low perseverance score. Does that mean they will struggle at school?',
+        a: 'No. Character strengths are not fixed traits. Perseverance in particular is highly responsive to environment: specific routines, deliberate practice structures, and how adults around a child frame difficulty and effort all shape it substantially. A low score is a development opportunity, not a verdict.',
+      },
+      {
+        q: 'How is the VIA character strengths framework different from intelligence testing?',
+        a: "Intelligence testing measures cognitive capacity — processing speed, working memory, abstract reasoning. VIA character strengths measure what a child does with that capacity over time: whether they lean into challenge (perseverance, zest), remain open to new ideas (curiosity, love of learning), and manage impulses that derail effort (self-regulation). The research suggests character strengths explain additional variance in achievement beyond IQ alone.",
+      },
+    ],
+    cta: {
+      heading: "Discover your child's character strengths — free",
+      body: "Free VIA-backed personality assessment for ages 6–20. Identifies your child's Signature Strengths, Growth Pillars, and personalised development activities in under 15 minutes.",
+      label: 'Start free personality assessment',
+      href: '/personality-assessment',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

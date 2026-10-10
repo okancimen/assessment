@@ -1513,6 +1513,43 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: 'https://eduentry.com',
     },
   },
+  {
+    slug: 'forces-de-caractere-reussite-scolaire',
+    contentSlug: 'character-strengths-academic-success',
+    title: 'Les 5 Forces de Caractère qui Prédisent la Réussite Scolaire — et Comment les Repérer',
+    shortTitle: 'Forces de caractère et réussite scolaire',
+    description:
+      'La recherche identifie cinq forces VIA — curiosité, amour de l\'apprentissage, persévérance, autorégulation et entrain — comme les prédicteurs les plus fiables des résultats scolaires chez l\'enfant.',
+    tldr: 'Les notes scolaires mesurent la performance par rapport à la moyenne de la classe, non les traits de caractère qui déterminent si un enfant soutiendra l\'effort, restera curieux et progressera face aux obstacles. Cinq forces VIA — amour de l\'apprentissage, curiosité, persévérance, autorégulation et entrain — émergent de façon constante dans les recherches longitudinales comme les plus prédictives des résultats académiques. Ces forces ne sont pas figées : elles se développent.',
+    date: '2026-10-10',
+    dateModified: '2026-10-10',
+    readTime: '9 min de lecture',
+    tags: ['Forces de caractère', 'Réussite scolaire', 'VIA', 'Développement de l\'enfant', 'Guide parents', 'Évaluation de personnalité'],
+    faqs: [
+      {
+        q: 'Quelle force de caractère prédit le mieux la réussite scolaire chez l\'enfant ?',
+        a: 'L\'autorégulation est le prédicteur individuel le plus fort des notes académiques. L\'étude de Duckworth et Seligman (2005) a montré que l\'autodiscipline expliquait deux fois plus de variance dans la moyenne générale que le quotient intellectuel. L\'amour de l\'apprentissage et la persévérance suivent de près, avec la curiosité et l\'entrain complétant le groupe de cinq forces.',
+      },
+      {
+        q: 'Les forces de caractère sont-elles les mêmes que les traits de personnalité ?',
+        a: 'Elles se recoupent mais ne sont pas identiques. Les traits de personnalité (comme l\'introversion) décrivent des tendances stables. Les forces de caractère VIA sont des comportements moralement valorisés — curiosité, justice, bienveillance — qui peuvent être mesurés et, surtout, développés. Elles répondent à la pratique délibérée et à l\'environnement.',
+      },
+      {
+        q: 'Peut-on mesurer les forces de caractère chez les jeunes enfants ?',
+        a: "Oui. L'évaluation de personnalité d'Eduentry est calibrée par niveau de développement : 6–9 ans sur 12 traits fondamentaux (24 questions), 10–13 ans sur 15 traits (30 questions), 14–17 ans sur 20 traits (40 questions) et 18–20 ans sur les 24 traits (48 questions). Le format d'évaluation parentale est utilisé pour les plus jeunes car les observations quotidiennes du parent constituent la base de mesure la plus stable.",
+      },
+      {
+        q: 'Mon enfant a un score faible en persévérance. Cela signifie-t-il qu\'il va avoir des difficultés scolaires ?',
+        a: 'Non. Les forces de caractère ne sont pas des traits figés. La persévérance est particulièrement sensible à l\'environnement : des routines spécifiques, des structures de pratique délibérée et la façon dont les adultes encadrent la difficulté et l\'effort la façonnent substantiellement. Un score faible est une opportunité de développement, pas un verdict.',
+      },
+    ],
+    cta: {
+      heading: 'Découvrez les forces de caractère de votre enfant — gratuitement',
+      body: 'Évaluation de personnalité gratuite basée sur VIA pour les 6–20 ans. Identifie les Forces Signature, les Piliers de croissance et des activités de développement personnalisées en moins de 15 minutes.',
+      label: 'Commencer l\'évaluation de personnalité gratuite',
+      href: '/fr/evaluation-de-personnalite',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

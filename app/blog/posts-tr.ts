@@ -1917,6 +1917,43 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/business',
     },
   },
+  {
+    slug: 'cocugumun-guclu-yonleri-ve-akademik-basari',
+    contentSlug: 'character-strengths-academic-success',
+    title: 'Çocuğumun Güçlü Yönleri ve Akademik Başarı: Araştırmaların Ortaya Koyduğu 5 Karakter Gücü',
+    shortTitle: 'Çocuğumun Güçlü Yönleri ve Akademik Başarı',
+    description:
+      'Araştırmalar beş VIA kişilik özelliğinü — merak, öğrenme sevgisi, azim, öz denetim ve coşku — çocuğunuzun akademik başarısını belirleyen en güvenilir etkenler olarak ortaya koymaktadır.',
+    tldr: 'Okul notları sınıf ortalamasına göre başarıyı ölçer; ancak bir çocuğun çaba gösterip göstermeyeceğini, meraklı kalıp kalmayacağını ve zorluklardan ders çıkarıp çıkarmayacağını belirleyen karakter özelliklerini ortaya koymaz. Beş VIA kişilik özelliği — öğrenme sevgisi, merak, azim, öz denetim ve coşku — boylamsal araştırmalarda akademik sonuçları en güvenilir biçimde öngören özellikler olarak tutarlı biçimde öne çıkmaktadır. Bu güçler sabit değildir; geliştirilebilirler.',
+    date: '2026-10-10',
+    dateModified: '2026-10-10',
+    readTime: '9 dk okuma',
+    tags: ['Kişilik Özellikleri', 'Akademik Başarı', 'VIA Kişilik Özellikleri', 'Çocuk Gelişimi', 'Ebeveyn Rehberi', 'Kişilik Değerlendirmesi'],
+    faqs: [
+      {
+        q: 'Çocuklarda akademik başarıyı en iyi öngören kişilik özelliği hangisidir?',
+        a: "Öz denetim, akademik notların en güçlü tek öngörücüsüdür. Duckworth ve Seligman'ın (2005) çalışması, öz disiplinin GPA'daki varyansı IQ'dan iki kat daha fazla açıkladığını ortaya koymuştur. Öğrenme sevgisi ve azim bunu yakından takip ederken merak ve coşku, eşit bilişsel yeteneğe sahip akranlarından yüksek başarılıları güvenilir biçimde ayırt eden beş güçlük kümesini tamamlar.",
+      },
+      {
+        q: 'Karakter güçleri kişilik özellikleriyle aynı şey midir?',
+        a: 'Örtüşürler ancak özdeş değillerdir. Kişilik özellikleri (içe dönüklük gibi) kalıcı eğilimleri tanımlar. VIA kişilik özellikleri ise ahlaki değer taşıyan, gözlemlenebilir davranışlardır — merak, adalet, nezaket gibi — ölçülebilir ve geliştirilebilir niteliktedir. Kasıtlı pratik ve çevreye karşı yanıt verirler.',
+      },
+      {
+        q: 'Küçük çocuklarda kişilik özellikleri ölçülebilir mi?',
+        a: "Evet. Eduentry'nin kişilik değerlendirmesi dört gelişim kademesine göre kalibre edilmiştir: 6–9 yaş 12 temel özellik (24 soru), 10–13 yaş 15 özellik (30 soru), 14–17 yaş 20 özellik (40 soru), 18–20 yaş tüm 24 özellik (48 soru). Ebeveyn değerlendirmesi formatı, ebeveynin günlük gözlemlerinin en istikrarlı ölçüm temelini sağlaması nedeniyle küçük çocuklar için kullanılmaktadır.",
+      },
+      {
+        q: 'Çocuğumun azim puanı düşük. Bu, okulda zorlanacağı anlamına mı gelir?',
+        a: 'Hayır. Karakter güçleri sabit özellikler değildir. Azim özellikle çevreye karşı yüksek duyarlılık gösterir: belirli rutinler, kasıtlı pratik yapıları ve çevredeki yetişkinlerin güçlük ile çabayı nasıl çerçevelediği onu önemli ölçüde şekillendirir. Düşük bir puan, bir gelişim fırsatıdır; bir karar değil.',
+      },
+    ],
+    cta: {
+      heading: "Çocuğunuzun kişilik özelliklerini keşfedin — ücretsiz",
+      body: "6–20 yaş için ücretsiz VIA destekli kişilik değerlendirmesi. Çocuğunuzun İmza Güçlerini, Gelişim Sütunlarını ve kişiselleştirilmiş gelişim aktivitelerini 15 dakika içinde belirler.",
+      label: 'Ücretsiz kişilik değerlendirmesini başlat',
+      href: '/tr/kisilik-degerlendirmesi',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

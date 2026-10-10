@@ -3941,6 +3941,146 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+  'forces-de-caractere-reussite-scolaire': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Deux enfants. Le même lycée, le même tuteur, les mêmes heures de travail. À 16 ans, l&apos;un réussit de façon constante ; l&apos;autre est intelligent mais inconstant. Dans la plupart des cas, l&apos;explication n&apos;est pas cognitive : les deux enfants ont les capacités. La différence réside dans le caractère — précisément dans un ensemble de cinq traits mesurables que la recherche en éducation a maintes fois liés aux résultats scolaires.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Ces traits ne sont pas innés. Les bulletins scolaires ne les révèlent pas. Et ils ne sont presque jamais abordés lors des réunions de parents. Ce guide explique ce qu&apos;ils sont, ce que dit la recherche et ce que vous pouvez concrètement faire pour chacun d&apos;eux.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Que sont les forces de caractère VIA ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La Classification VIA des Forces de Caractère, développée par les psychologues Martin Seligman et Christopher Peterson à l&apos;Université de Pennsylvanie, identifie 24 forces organisées en six vertus : Sagesse, Courage, Humanité, Justice, Tempérance et Transcendance. C&apos;est l&apos;instrument de psychologie positive le plus soumis à des révisions par les pairs dans le monde, validé dans plus de 50 cultures.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Contrairement aux systèmes de typologies de personnalité qui classent les personnes dans des catégories fixes, les forces VIA sont présentes à des degrés variables chez toutes les personnes — et, surtout, elles répondent au développement délibéré. Un enfant qui manque de persévérance à 9 ans n&apos;est pas sur une trajectoire prédéterminée. Ce score est un point de départ, pas une sentence.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          L&apos;<Link href="/fr/evaluation-de-personnalite" className="text-indigo-600 hover:underline font-medium">évaluation de personnalité Eduentry</Link> identifie les 24 forces à travers une enquête d&apos;évaluation parentale calibrée pour quatre niveaux d&apos;âge — produisant un profil de Forces Signature (les 5 premières), des Piliers de Croissance (les 3 dernières) et des activités de développement personnalisées. Cela prend moins de 15 minutes et est gratuit.
+        </p>
+      </section>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Découvrez les forces de caractère de votre enfant — gratuitement</p>
+          <p className="text-sm text-gray-600">Évaluation de personnalité basée sur VIA pour les 6–20 ans. Identifie les Forces Signature, les Piliers de Croissance et des activités personnalisées en moins de 15 minutes.</p>
+        </div>
+        <Link href="/fr/evaluation-de-personnalite" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Commencer l&apos;évaluation gratuite
+        </Link>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les 5 forces de caractère qui prédisent le mieux la réussite scolaire</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Les 24 forces VIA couvrent un spectre allant de la bienveillance à la spiritualité. Mais lorsque les chercheurs s&apos;intéressent spécifiquement aux résultats scolaires — notes, acquis, réussite éducative à long terme — cinq forces émergent de façon constante comme les plus prédictives. Il est notable qu&apos;elles s&apos;étendent sur trois vertus différentes, ce qui nous indique que la réussite scolaire ne se réduit pas à des traits de &ldquo;méthodes de travail&rdquo;.
+        </p>
+
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">1. Autorégulation <span className="text-sm font-normal text-indigo-600 ml-2">Tempérance</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Dans une étude publiée dans <em>Psychological Science</em>, Duckworth et Seligman (2005) ont constaté que l&apos;autodiscipline prédisait mieux les résultats scolaires que le QI — expliquant deux fois plus de variance dans la moyenne générale, l&apos;assiduité, la réalisation des devoirs et le temps passé sur les écrans. Ce résultat a été répliqué à plusieurs reprises depuis.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Chez un enfant, l&apos;autorégulation se manifeste par la capacité à commencer ses devoirs sans y être invité, à résister aux distractions lorsqu&apos;une tâche est inachevée et à maintenir sa concentration dans une matière difficile plutôt que d&apos;abandonner. Un enfant avec une faible autorégulation n&apos;est pas paresseux — il éprouve une difficulté normale à gérer des impulsions concurrentes. L&apos;écart entre vouloir étudier et le faire réellement est un défi de régulation, pas de motivation.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">2. Amour de l&apos;apprentissage <span className="text-sm font-normal text-indigo-600 ml-2">Sagesse</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Park et Peterson (2009), étudiant les forces de caractère chez des enfants d&apos;âge scolaire dans plusieurs pays, ont trouvé que l&apos;amour de l&apos;apprentissage était le plus directement corrélé aux résultats scolaires. Le mécanisme est simple : un enfant qui trouve intrinsèquement gratifiant d&apos;acquérir des connaissances lira au-delà de ce qui est requis, reviendra volontairement sur des concepts difficiles et abordera les nouvelles matières avec engagement plutôt qu&apos;avec résistance.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              En pratique, l&apos;amour de l&apos;apprentissage ressemble à un enfant qui pose des questions complémentaires après qu&apos;on lui explique quelque chose, qui regarde des documentaires par intérêt personnel ou qui se souvient de faits sur des sujets qui le passionnent avec un niveau de détail exceptionnel.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">3. Persévérance <span className="text-sm font-normal text-indigo-600 ml-2">Courage</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Les recherches sur le &ldquo;grit&rdquo; d&apos;Angela Duckworth ont montré que le grit prédit la moyenne générale, les taux de diplomation et la réussite à long terme dans des études longitudinales. Son article de 2007 dans le <em>Journal of Personality and Social Psychology</em> a montré que le grit prédisait mieux la rétention à West Point que l&apos;évaluation composite propre à l&apos;Académie.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Chez un enfant, la persévérance se voit quand il revient à un problème qu&apos;il n&apos;a pas pu résoudre la veille plutôt que de le sauter, quand il continue un projet au-delà du minimum requis, et quand les revers — une mauvaise note, un essai raté — ne font pas dérailler l&apos;effort pendant une période prolongée.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">4. Curiosité <span className="text-sm font-normal text-indigo-600 ml-2">Sagesse</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Une méta-analyse de Von Stumm, Hell et Chamorro-Premuzic (2011) dans <em>Perspectives on Psychological Science</em> a trouvé que la curiosité intellectuelle — l&apos;&ldquo;esprit avide&rdquo; — est un prédicteur significatif et indépendant de la réussite scolaire, distinct à la fois du QI et de la conscience. Les auteurs l&apos;ont appelé le &ldquo;troisième pilier&rdquo; du rendement scolaire.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              La curiosité est ce qui pousse un enfant à remarquer une lacune dans sa compréhension et à vouloir activement la combler. Elle génère l&apos;habitude de demander &ldquo;pourquoi cela fonctionne-t-il ainsi ?&rdquo; plutôt que d&apos;accepter des explications superficielles.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">5. Entrain <span className="text-sm font-normal text-indigo-600 ml-2">Courage</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              L&apos;entrain — aborder la vie avec énergie, enthousiasme et plein investissement — est fortement associé à l&apos;engagement scolaire. La recherche de Peterson et al. (2007) a trouvé l&apos;entrain parmi les forces les plus constamment liées à la satisfaction de vie et à l&apos;engagement académique dans tous les groupes d&apos;âge. Un enfant avec un fort entrain est moins susceptible de se désengager de l&apos;école.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              L&apos;entrain est aussi l&apos;une des forces les plus sensibles aux conditions physiques. Le sommeil, l&apos;exercice et la nutrition ont des effets directs et documentés sur son expression. Vingt minutes d&apos;activité physique avant une session de travail n&apos;est pas une distraction de l&apos;apprentissage — c&apos;est une préparation pour lui.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce que la recherche ne dit pas</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La recherche établissant ces cinq forces comme prédicteurs académiques n&apos;affirme pas qu&apos;elles sont innées, génétiquement déterminées ou hors de portée de l&apos;environnement et de la pratique délibérée. C&apos;est le point le plus important pour les parents.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">L&apos;implication pratique :</strong> Connaître le profil de forces de caractère actuel de votre enfant ne vise pas à le cataloguer. Il s&apos;agit de savoir où un investissement ciblé et fondé sur des preuves produira le plus grand retour sur développement — avant qu&apos;un cycle d&apos;examens commence, pas pendant.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Une activité pratique par force</h2>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Autorégulation — l&apos;intention d&apos;implémentation.</strong> Les recherches de Peter Gollwitzer montrent qu&apos;écrire &ldquo;Quand X se produit, je ferai Y&rdquo; (par ex. &ldquo;Quand je finis de dîner, j&apos;ouvrirai mon manuel pendant 20 minutes avant mon téléphone&rdquo;) produit un suivi significativement plus solide que les intentions générales. Aidez votre enfant à écrire trois intentions d&apos;implémentation spécifiques pour ses devoirs au début de chaque semaine.
+          </Bullet>
+          <Bullet>
+            <strong>Amour de l&apos;apprentissage — la soirée encyclopédie.</strong> Une fois par semaine, laissez votre enfant choisir n&apos;importe quel sujet qui l&apos;intéresse vraiment — un événement historique, un record sportif, une espèce animale — et passer 20 minutes à lire aussi profondément qu&apos;il le souhaite. Pas de devoir, pas de quiz. L&apos;objectif est de construire l&apos;habitude d&apos;apprendre pour le plaisir.
+          </Bullet>
+          <Bullet>
+            <strong>Persévérance — le journal du &ldquo;pas encore&rdquo;.</strong> Tenez une note partagée des compétences et problèmes sur lesquels travaille votre enfant mais qu&apos;il n&apos;a pas encore maîtrisés. Chaque entrée lit : &ldquo;[Compétence] — pas encore — dernier essai : [date].&rdquo; Normalise l&apos;effort continu comme l&apos;état standard plutôt que comme une preuve d&apos;échec.
+          </Bullet>
+          <Bullet>
+            <strong>Curiosité — le pot &ldquo;je me demande&rdquo;.</strong> Placez un pot sur la table avec des papiers. Chaque fois qu&apos;une question vient à l&apos;esprit de votre enfant, il l&apos;écrit et la met dans le pot. Une fois par semaine, choisissez ensemble une question et passez 15 minutes à trouver une vraie réponse. La curiosité grandit quand les questions sont traitées comme précieuses.
+          </Bullet>
+          <Bullet>
+            <strong>Entrain — mouvement avant l&apos;étude.</strong> Une méta-analyse de 2012 dans <em>Pediatrics</em> a confirmé qu&apos;une brève activité physique avant des tâches cognitives améliore significativement l&apos;attention, la vitesse de traitement et les fonctions exécutives chez les enfants d&apos;âge scolaire. Vingt minutes de mouvement avant une session de travail n&apos;est pas une distraction — c&apos;est une préparation.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Guides connexes</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/fr/evaluation-de-personnalite', tag: 'Évaluation', title: 'Évaluation de personnalité VIA gratuite — 6–20 ans' },
+            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: 'Guide', title: 'Comprendre les forces et faiblesses de votre enfant avant le lycée' },
+            { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Guide', title: 'Découvrez les forces cachées de votre enfant en âge scolaire' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

@@ -1280,6 +1280,43 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: 'https://eduentry.com',
     },
   },
+  {
+    slug: 'fortalezas-de-caracter-exito-escolar',
+    contentSlug: 'character-strengths-academic-success',
+    title: 'Las 5 Fortalezas de Carácter que Predicen el Éxito Escolar — y Cómo Detectarlas en tu Hijo',
+    shortTitle: 'Fortalezas de carácter y éxito académico',
+    description:
+      'La investigación identifica cinco fortalezas VIA — curiosidad, amor por el aprendizaje, perseverancia, autorregulación y vitalidad — como los predictores más fiables del rendimiento académico infantil.',
+    tldr: 'Las notas escolares miden el rendimiento respecto a la media de clase, no los rasgos de carácter que determinan si un niño mantendrá el esfuerzo, seguirá siendo curioso y aprenderá de los errores. Cinco fortalezas VIA — amor por el aprendizaje, curiosidad, perseverancia, autorregulación y vitalidad — emergen consistentemente en la investigación longitudinal como las más predictivas de los resultados académicos. Estas fortalezas no son fijas: se pueden desarrollar.',
+    date: '2026-10-10',
+    dateModified: '2026-10-10',
+    readTime: '9 min de lectura',
+    tags: ['Fortalezas de Carácter', 'Éxito Académico', 'VIA', 'Desarrollo Infantil', 'Guía para Padres', 'Evaluación de Personalidad'],
+    faqs: [
+      {
+        q: '¿Qué fortaleza de carácter predice mejor el éxito académico en los niños?',
+        a: 'La autorregulación es el predictor individual más fuerte de las notas académicas. El estudio de Duckworth y Seligman (2005) demostró que la autodisciplina explicaba el doble de varianza en el GPA que el cociente intelectual. El amor por el aprendizaje y la perseverancia le siguen de cerca, con la curiosidad y la vitalidad completando el grupo de cinco fortalezas.',
+      },
+      {
+        q: '¿Son las fortalezas de carácter lo mismo que los rasgos de personalidad?',
+        a: 'Se solapan pero no son idénticas. Los rasgos de personalidad (como la introversión) describen tendencias estables. Las fortalezas de carácter VIA son comportamientos moralmente valiosos — curiosidad, justicia, amabilidad — que se pueden medir y, fundamentalmente, desarrollar. Responden a la práctica deliberada y al entorno.',
+      },
+      {
+        q: '¿Se pueden medir las fortalezas de carácter en niños pequeños?',
+        a: "Sí. La evaluación de personalidad de Eduentry está calibrada por nivel de desarrollo: 6–9 años en 12 rasgos fundamentales (24 preguntas), 10–13 años en 15 rasgos (30 preguntas), 14–17 años en 20 rasgos (40 preguntas) y 18–20 años en los 24 rasgos (48 preguntas). El formato de valoración por padres se usa para los más pequeños porque las observaciones diarias del progenitor proporcionan la base de medición más estable.",
+      },
+      {
+        q: 'Mi hijo tiene una puntuación baja en perseverancia. ¿Significa eso que tendrá dificultades en el colegio?',
+        a: 'No. Las fortalezas de carácter no son rasgos fijos. La perseverancia es especialmente sensible al entorno: rutinas específicas, estructuras de práctica deliberada y la forma en que los adultos enmarcan la dificultad y el esfuerzo la moldean sustancialmente. Una puntuación baja es una oportunidad de desarrollo, no un veredicto.',
+      },
+    ],
+    cta: {
+      heading: 'Descubre las fortalezas de carácter de tu hijo — gratis',
+      body: 'Evaluación de personalidad gratuita basada en VIA para edades de 6 a 20 años. Identifica las Fortalezas Insignia, los Pilares de Crecimiento y actividades de desarrollo personalizadas en menos de 15 minutos.',
+      label: 'Iniciar evaluación de personalidad gratuita',
+      href: '/es/evaluacion-de-personalidad',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

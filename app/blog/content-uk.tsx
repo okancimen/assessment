@@ -5831,6 +5831,153 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'character-strengths-academic-success': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Two children. Same school, same tutor, same hours of homework. At 16, one is consistently high-achieving — the other is bright but inconsistent. In most cases the explanation is not cognitive: both children have the capacity. The difference is character — specifically, a cluster of five measurable traits that educational research has repeatedly linked to academic outcomes.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Those traits are not fixed at birth. They are not revealed by school reports. And they are almost never discussed at parents&apos; evenings. This guide explains what they are, what the evidence says, and what you can do about each one.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Are VIA Character Strengths?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The VIA Classification of Character Strengths, developed by psychologists Martin Seligman and Christopher Peterson at the University of Pennsylvania, identifies 24 strengths organised across six virtues: Wisdom, Courage, Humanity, Justice, Temperance, and Transcendence. It is the most extensively peer-reviewed positive psychology instrument in the world, validated across more than 50 cultures and used in studies published in leading psychological journals.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Unlike personality typing systems that sort people into fixed categories, VIA strengths are present to varying degrees in all people — and, crucially, responsive to deliberate development. A child who is low in perseverance at age 9 is not set on a predetermined trajectory. That score is a starting point, not a sentence.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          As the <Link href="/personality-assessment" className="text-indigo-600 hover:underline font-medium">Eduentry personality assessment</Link> puts it: academic scores only tell part of the story. The assessment identifies all 24 character strengths through a parent-rated survey calibrated to four age tiers — producing a Signature Strengths profile (top 5), Growth Pillars (bottom 3), and personalised development activities. It takes under 15 minutes and is free.
+        </p>
+      </section>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 my-6">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Discover your child&apos;s character strengths — free</p>
+          <p className="text-sm text-gray-600">VIA-backed personality assessment for ages 6–20. Identifies Signature Strengths, Growth Pillars, and personalised development activities in under 15 minutes.</p>
+        </div>
+        <CtaLink href="/personality-assessment" label="character_strengths_cta_mid" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+          Start free assessment
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The 5 Character Strengths That Most Reliably Predict Academic Success</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          The 24 VIA strengths span everything from kindness to spirituality. But when researchers look specifically at academic outcomes — grades, attainment, long-term educational achievement — five strengths consistently emerge as the most predictive. Notably, they span three different virtues, which tells us that academic success is not purely a matter of &ldquo;study skills&rdquo; traits.
+        </p>
+
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">1. Self-Regulation <span className="text-sm font-normal text-indigo-600 ml-2">Temperance</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              In a landmark study published in <em>Psychological Science</em>, Duckworth &amp; Seligman (2005) found that self-discipline predicted academic performance better than IQ — explaining twice as much variance in GPA, attendance, homework completion, and time spent on screens. The finding has been replicated multiple times since.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              In a child, self-regulation shows up as the ability to start homework without prompting, resist distraction when a task is unfinished, and maintain focus through a difficult subject rather than giving up. A child low in self-regulation is not lazy — they are experiencing a developmentally normal difficulty managing competing impulses. The gap between wanting to study and actually doing it is a regulatory challenge, not a motivational one.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">2. Love of Learning <span className="text-sm font-normal text-indigo-600 ml-2">Wisdom</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Park &amp; Peterson (2009), studying character strengths in school-age children across multiple countries, found love of learning most directly correlated with academic attainment. The mechanism is straightforward: a child who finds acquiring knowledge intrinsically rewarding will read beyond what is required, revisit difficult concepts voluntarily, and approach new subjects with engagement rather than resistance.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              In practice, love of learning looks like a child who asks follow-up questions after being told something, watches documentaries for interest rather than assignments, or recalls facts from topics they care about in exceptional detail. It is distinct from curiosity: curiosity drives the question; love of learning drives the sustained study of the answer.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">3. Perseverance <span className="text-sm font-normal text-indigo-600 ml-2">Courage</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Angela Duckworth&apos;s grit research — which operationalises grit as perseverance of effort combined with consistency of interest — has shown that grit predicts GPA, graduation rates, and long-term attainment in longitudinal studies. Her 2007 paper in the <em>Journal of Personality and Social Psychology</em> found grit was a better predictor of West Point retention than the Academy&apos;s own composite assessment.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              In a child, perseverance is visible when they return to a problem they couldn&apos;t solve the day before rather than skipping it, when they continue a project beyond the minimum required, and when setbacks — a bad mark, a failed attempt — don&apos;t derail effort for an extended period. A child high in perseverance doesn&apos;t enjoy difficulty more; they have a stronger regulatory response to frustration that keeps them at the task despite it.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">4. Curiosity <span className="text-sm font-normal text-indigo-600 ml-2">Wisdom</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              A meta-analysis by Von Stumm, Hell &amp; Chamorro-Premuzic (2011) in <em>Perspectives on Psychological Science</em> found that intellectual curiosity — the &ldquo;hungry mind&rdquo; — is a significant and independent predictor of academic achievement, separate from both IQ and conscientiousness. The authors called it the &ldquo;third pillar&rdquo; of academic performance.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Curiosity is what drives a child to notice a gap in their understanding and actively want to close it. It generates the habit of asking &ldquo;why does this work?&rdquo; rather than accepting surface explanations. Curious children encode information more deeply because their attention is genuinely engaged, not just directed.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">5. Zest <span className="text-sm font-normal text-indigo-600 ml-2">Courage</span></h3>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              Zest — approaching life with energy, enthusiasm, and full investment — is strongly associated with school engagement. Research by Peterson, Ruch, Beermann, Park &amp; Seligman (2007) found zest among the strengths most consistently linked to life satisfaction and academic engagement across age groups. A child high in zest is less likely to disengage from school and more likely to invest energy even in challenging tasks.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Zest is also one of the strengths most sensitive to physical conditions. Sleep, exercise, and nutrition have direct, documented effects on zest expression — which means parents can meaningfully influence it through lifestyle choices rather than direct instruction. Twenty minutes of physical activity before a study session is not a distraction; it is preparation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What the Research Doesn&apos;t Say</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The research establishing these five strengths as academic predictors does not claim they are fixed at birth, genetically determined, or beyond the reach of environment and deliberate practice. This is the most important point for parents.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Self-regulation, perseverance, and zest in particular are highly sensitive to environment and routine. The framing adults use around difficulty — &ldquo;you haven&apos;t mastered this yet&rdquo; versus &ldquo;you can&apos;t do this&rdquo; — the structure of a child&apos;s study environment, the presence of physical activity and adequate sleep: all of these have documented effects on character strength expression.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">The practical implication:</strong> Knowing your child&apos;s current character strength profile is not about labelling them. It is about knowing where targeted, evidence-based investment will produce the greatest developmental return — before an exam cycle begins, not during it. See <Link href="/blog/understanding-child-strengths-weaknesses-high-school" className="text-indigo-700 hover:underline">understanding your child&apos;s strengths and weaknesses before high school</Link> for the academic profile that sits alongside this one.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">One Practical Activity for Each Strength</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Each activity is designed to create low-pressure repetition of the target strength in a real context. These are starting points — try one for two weeks before assessing.
+        </p>
+        <ul className="space-y-5 mb-6">
+          <Bullet>
+            <strong>Self-Regulation — the implementation intention.</strong> Research by Peter Gollwitzer shows that writing &ldquo;When X happens, I will do Y&rdquo; (e.g. &ldquo;When I finish dinner, I will open my textbook for 20 minutes before my phone&rdquo;) produces dramatically stronger follow-through than general intentions. Help your child write three specific implementation intentions for homework at the start of each week, and review which ones worked at the end.
+          </Bullet>
+          <Bullet>
+            <strong>Love of Learning — the encyclopaedia night.</strong> Once a week, let your child pick any topic that genuinely interests them — a historical event, a sports record, a species of animal — and spend 20 minutes reading as deeply as they choose. No assignment, no quiz. The goal is to build the habit of learning for its own sake. Connecting learning to enjoyment is the direct mechanism for developing this strength.
+          </Bullet>
+          <Bullet>
+            <strong>Perseverance — the &ldquo;not yet&rdquo; log.</strong> Keep a shared note of skills and problems your child is working on but hasn&apos;t mastered. Each entry reads: &ldquo;[Skill] — not yet — last attempt: [date].&rdquo; Revisiting it weekly normalises ongoing effort as the standard state rather than evidence of failure. The framing comes directly from Carol Dweck&apos;s growth mindset research.
+          </Bullet>
+          <Bullet>
+            <strong>Curiosity — the &ldquo;I wonder&rdquo; jar.</strong> Place a jar on the kitchen table with paper slips. Any time a question occurs to your child during the day, they write it down and drop it in. Once a week, pick one question together and spend 15 minutes finding a real answer. Curiosity grows when questions are treated as valuable rather than inconvenient — and when following them leads somewhere interesting.
+          </Bullet>
+          <Bullet>
+            <strong>Zest — movement before study.</strong> A 2012 meta-analysis in <em>Pediatrics</em> confirmed that brief physical activity before cognitive tasks significantly improves attention, processing speed, and executive function in school-age children. Twenty minutes of movement before a study session — a walk, a bike ride, five minutes of jumping jacks — is not a distraction from learning. It is preparation for it. Build it into the routine rather than treating it as optional.
+          </Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/personality-assessment', tag: 'Assessment', title: 'Free VIA Character Strengths Personality Assessment — Ages 6–20' },
+            { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Guide', title: "Discover Your School-Age Child's Hidden Strengths and Development Areas" },
+            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: 'Guide', title: "Understanding Your Child's Strengths and Weaknesses Before High School" },
+            { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: "Free Academic Test: Discover Your Child's Strengths and Weaknesses" },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
   ...UK_CONTENT_US_GIFTED,
   ...UK_CONTENT_NETHERLANDS,
   ...UK_CONTENT_UAE,

@@ -140,6 +140,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'global-academic-benchmarks-report-2026',
     'gifted-program-testing-guide',
     'high-school-internship-benefits-university',
+    'character-strengths-academic-success',
   ])
 
   // Posts that next.config.ts redirects elsewhere don't belong in the sitemap
