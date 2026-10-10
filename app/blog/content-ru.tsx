@@ -1710,6 +1710,19 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </section>
 
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Хотите знать, как ваш ребёнок выглядит на мировом уровне?</p>
+          <p className="text-sm text-gray-600">Наша адаптивная оценка сравнивает вашего ребёнка с международными сверстниками — по тем же строгим стандартам, что MAP, PISA и GCSE — менее чем за час.</p>
+        </div>
+        <a
+          href="/ru/potentsial-vashego-rebyonka"
+          className="shrink-0 inline-block bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors text-center"
+        >
+          Узнать потенциал ребёнка →
+        </a>
+      </div>
+
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Высокие баллы MAP и программы для одарённых</h2>
         <p className="text-gray-700 leading-relaxed mb-4">

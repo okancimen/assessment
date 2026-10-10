@@ -1237,6 +1237,19 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </section>
 
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">想了解您的孩子在全球的水平吗？</p>
+          <p className="text-sm text-gray-600">我们的自适应评估将您的孩子与国际同龄人进行比较——采用与MAP、PISA和GCSE相同的严格标准——不到一小时即可完成。</p>
+        </div>
+        <a
+          href="/zh/haizi-de-qianli"
+          className="shrink-0 inline-block bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors text-center"
+        >
+          了解孩子的潜力 →
+        </a>
+      </div>
+
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP高分与英才项目资格</h2>
         <p className="text-gray-700 leading-relaxed mb-4">

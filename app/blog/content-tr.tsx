@@ -5269,6 +5269,19 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </section>
 
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Çocuğunuzun dünya genelindeki konumunu merak ediyor musunuz?</p>
+          <p className="text-sm text-gray-600">Uyarlanabilir değerlendirmemiz, çocuğunuzu MAP, PISA ve GCSE ile aynı titiz standarda göre uluslararası akranlarıyla kıyaslar — bir saatten kısa sürede.</p>
+        </div>
+        <a
+          href="/tr/cocugunuzun-potansiyeli"
+          className="shrink-0 inline-block bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors text-center"
+        >
+          Çocuğunuzun potansiyelini görün →
+        </a>
+      </div>
+
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Yüksek MAP Puanları ve Üstün Yetenekli Tanımlama</h2>
         <p className="text-gray-700 leading-relaxed mb-4">

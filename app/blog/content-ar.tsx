@@ -1540,6 +1540,19 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </section>
 
+      <div dir="rtl" className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">هل تريد معرفة مكانة طفلك على المستوى العالمي؟</p>
+          <p className="text-sm text-gray-600">يقارن تقييمنا التكيّفي طفلك بأقرانه دوليًا — وفق نفس المعايير الصارمة لـ MAP وPISA وGCSE — في أقل من ساعة.</p>
+        </div>
+        <a
+          href="/ar/imkaniyat-tiflik"
+          className="shrink-0 inline-block bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors text-center"
+        >
+          اكتشف إمكانيات طفلك ←
+        </a>
+      </div>
+
       <section dir="rtl">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">درجات MAP العالية وتحديد الموهوبين</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
