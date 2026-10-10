@@ -4022,15 +4022,15 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       </p>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué son las fortalezas de carácter VIA?</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">El Test VIA de Fortalezas de Carácter: 24 Rasgos y 6 Virtudes</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          La Clasificación VIA de Fortalezas de Carácter, desarrollada por los psicólogos Martin Seligman y Christopher Peterson en la Universidad de Pensilvania, identifica 24 fortalezas organizadas en seis virtudes: Sabiduría, Coraje, Humanidad, Justicia, Templanza y Trascendencia. Es el instrumento de psicología positiva más revisado por pares en el mundo, validado en más de 50 culturas.
+          La Clasificación VIA de Fortalezas de Carácter, desarrollada por los psicólogos Martin Seligman y Christopher Peterson en la Universidad de Pensilvania, identifica <strong>24 rasgos de personalidad organizados en 6 virtudes</strong>: Sabiduría, Coraje, Humanidad, Justicia, Templanza y Trascendencia. Validado en más de 50 culturas, es el estándar de oro mundial del análisis de personalidad infantil en psicología positiva.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           A diferencia de los sistemas de tipología de personalidad que clasifican a las personas en categorías fijas, las fortalezas VIA están presentes en distintos grados en todas las personas — y, fundamentalmente, responden al desarrollo deliberado. Un niño con poca perseverancia a los 9 años no está en una trayectoria predeterminada. Esa puntuación es un punto de partida, no una sentencia.
         </p>
         <p className="text-gray-700 leading-relaxed">
-          La <Link href="/es/evaluacion-de-personalidad" className="text-indigo-600 hover:underline font-medium">evaluación de personalidad de Eduentry</Link> identifica las 24 fortalezas a través de una encuesta de valoración parental calibrada para cuatro niveles de edad — produciendo un perfil de Fortalezas Insignia (las 5 más altas), Pilares de Crecimiento (las 3 más bajas) y actividades de desarrollo personalizadas. Tarda menos de 15 minutos y es gratuita.
+          El <Link href="/es/evaluacion-de-personalidad" className="text-indigo-600 hover:underline font-medium">test de personalidad infantil gratuito de Eduentry</Link> mide los 24 rasgos de carácter en niños de 6 a 17 años mediante observación parental, calibrado para cuatro niveles de edad. Genera un perfil de Fortalezas Insignia (las 5 más altas), Pilares de Crecimiento y actividades de desarrollo personalizadas con un informe de desarrollo impulsado por IA. Tarda menos de 15 minutos y es completamente gratuito.
         </p>
       </section>
 
@@ -4101,6 +4101,13 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
             </p>
           </div>
         </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Por qué el análisis de carácter es crucial para los adolescentes</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Entre los 14 y 17 años, la presión académica, la preparación para los exámenes y la elección universitaria confluyen simultáneamente. Un análisis de personalidad y carácter en este período aclara qué áreas son naturalmente fuertes y cuáles requieren esfuerzo deliberado. Para un adolescente con puntuaciones bajas en perseverancia y autorregulación, esto no es una etiqueta — es un mapa concreto para intervenciones dirigidas antes de entrar en un ciclo de exámenes.
+        </p>
       </section>
 
       <section>

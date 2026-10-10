@@ -3951,15 +3951,15 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       </p>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Que sont les forces de caractère VIA ?</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Le Test VIA des Forces de Caractère : 24 Traits de Personnalité et 6 Vertus</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          La Classification VIA des Forces de Caractère, développée par les psychologues Martin Seligman et Christopher Peterson à l&apos;Université de Pennsylvanie, identifie 24 forces organisées en six vertus : Sagesse, Courage, Humanité, Justice, Tempérance et Transcendance. C&apos;est l&apos;instrument de psychologie positive le plus soumis à des révisions par les pairs dans le monde, validé dans plus de 50 cultures.
+          La Classification VIA des Forces de Caractère, développée par les psychologues Martin Seligman et Christopher Peterson à l&apos;Université de Pennsylvanie, identifie <strong>24 traits de personnalité organisés en 6 vertus</strong> : Sagesse, Courage, Humanité, Justice, Tempérance et Transcendance. Validé dans plus de 50 cultures, c&apos;est le standard mondial de l&apos;analyse de personnalité infantile en psychologie positive.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           Contrairement aux systèmes de typologies de personnalité qui classent les personnes dans des catégories fixes, les forces VIA sont présentes à des degrés variables chez toutes les personnes — et, surtout, elles répondent au développement délibéré. Un enfant qui manque de persévérance à 9 ans n&apos;est pas sur une trajectoire prédéterminée. Ce score est un point de départ, pas une sentence.
         </p>
         <p className="text-gray-700 leading-relaxed">
-          L&apos;<Link href="/fr/evaluation-de-personnalite" className="text-indigo-600 hover:underline font-medium">évaluation de personnalité Eduentry</Link> identifie les 24 forces à travers une enquête d&apos;évaluation parentale calibrée pour quatre niveaux d&apos;âge — produisant un profil de Forces Signature (les 5 premières), des Piliers de Croissance (les 3 dernières) et des activités de développement personnalisées. Cela prend moins de 15 minutes et est gratuit.
+          Le <Link href="/fr/evaluation-de-personnalite" className="text-indigo-600 hover:underline font-medium">test de personnalité enfant gratuit d&apos;Eduentry</Link> mesure les 24 traits de caractère chez les enfants de 6 à 17 ans par observation parentale, calibré pour quatre niveaux d&apos;âge. Il génère un profil de Forces Signature, des Piliers de Croissance et des activités personnalisées avec un rapport de développement alimenté par IA. Cela prend moins de 15 minutes et est entièrement gratuit.
         </p>
       </section>
 
@@ -4030,6 +4030,13 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
             </p>
           </div>
         </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi l&apos;analyse du caractère est cruciale pour les lycéens</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Entre 14 et 17 ans, la pression scolaire, la préparation aux examens et le choix de l&apos;université se concentrent simultanément. Une analyse de personnalité et de caractère à cette période permet de clarifier quels domaines sont naturellement forts et lesquels nécessitent un effort délibéré. Pour un lycéen avec des scores faibles en persévérance et autorégulation, ce n&apos;est pas une étiquette — c&apos;est une carte concrète pour des interventions ciblées avant d&apos;entrer dans un cycle d&apos;examens.
+        </p>
       </section>
 
       <section>

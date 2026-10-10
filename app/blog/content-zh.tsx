@@ -3082,15 +3082,15 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
       </p>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">什么是VIA性格优势？</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">VIA性格优势测试：24项性格特质与6大美德</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          VIA性格优势分类由宾夕法尼亚大学心理学家马丁·塞利格曼和克里斯托弗·彼得森开发，将24项优势归纳为六大美德：智慧、勇气、人性、公正、节制和超越。这是全球同行评审最为广泛的积极心理学工具，在50多种文化中得到验证，被发表于顶级心理学期刊的研究所引用。
+          VIA性格优势分类由宾夕法尼亚大学心理学家马丁·塞利格曼和克里斯托弗·彼得森开发，将<strong>24项性格特质归纳为6大美德</strong>：智慧、勇气、人性、公正、节制和超越。积极心理学儿童性格分析的全球黄金标准，在50多种文化中得到验证。
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           与将人划入固定类别的人格类型系统不同，VIA优势在所有人身上以不同程度存在，且——至关重要的是——能够通过有目的的培养加以发展。9岁时坚毅得分低的孩子，并不是走在一条预定的轨道上。那个分数是起点，不是判决。
         </p>
         <p className="text-gray-700 leading-relaxed">
-          <Link href="/zh/xingge-pinggu" className="text-indigo-600 hover:underline font-medium">Eduentry免费性格评估</Link>通过针对四个年龄段校准的家长评分问卷，识别全部24项性格优势，生成标志性优势档案（前5项）、成长支柱（后3项）和个性化发展活动。耗时不到15分钟，完全免费。
+          <Link href="/zh/xingge-pinggu" className="text-indigo-600 hover:underline font-medium">Eduentry免费儿童性格测试</Link>通过家长观察测量6–17岁儿童的全部24项性格特质，针对四个年龄段校准。生成标志性优势档案、成长支柱和个性化发展活动，并附带AI驱动的发展报告。耗时不到15分钟，完全免费。
         </p>
       </section>
 
@@ -3161,6 +3161,13 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
             </p>
           </div>
         </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">为什么性格分析对高中生至关重要？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在14至17岁期间，学业压力、考试备考和大学选择同时汇聚。这一阶段进行性格与品格分析，能够明确哪些领域有天然优势、哪些需要刻意努力。对于坚毅和自我调节得分偏低的高中生而言，这不是标签，而是在进入考试周期之前进行针对性干预的具体路线图。
+        </p>
       </section>
 
       <section>

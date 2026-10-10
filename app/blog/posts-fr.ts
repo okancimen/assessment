@@ -1519,12 +1519,12 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Les 5 Forces de Caractère qui Prédisent la Réussite Scolaire — et Comment les Repérer',
     shortTitle: 'Forces de caractère et réussite scolaire',
     description:
-      'La recherche identifie cinq forces VIA — curiosité, amour de l\'apprentissage, persévérance, autorégulation et entrain — comme les prédicteurs les plus fiables des résultats scolaires chez l\'enfant.',
-    tldr: 'Les notes scolaires mesurent la performance par rapport à la moyenne de la classe, non les traits de caractère qui déterminent si un enfant soutiendra l\'effort, restera curieux et progressera face aux obstacles. Cinq forces VIA — amour de l\'apprentissage, curiosité, persévérance, autorégulation et entrain — émergent de façon constante dans les recherches longitudinales comme les plus prédictives des résultats académiques. Ces forces ne sont pas figées : elles se développent.',
+      'Test VIA des forces de caractère : 24 traits et 6 vertus pour analyser la personnalité de votre enfant gratuitement en ligne. Cinq forces prédisent la réussite scolaire — curiosité, amour de l\'apprentissage, persévérance, autorégulation et entrain. Évaluation parentale avec rapport de développement par IA. Pour les enfants de 6 à 17 ans.',
+    tldr: 'Les notes scolaires mesurent la performance par rapport à la moyenne de la classe, pas les forces et le potentiel réel de votre enfant. Cinq forces VIA — amour de l\'apprentissage, curiosité, persévérance, autorégulation et entrain — sont les plus prédictives des résultats académiques selon les recherches longitudinales. Elles se mesurent avec un test d\'évaluation parentale gratuit en ligne et se développent avec une pratique délibérée.',
     date: '2026-10-10',
     dateModified: '2026-10-10',
     readTime: '9 min de lecture',
-    tags: ['Forces de caractère', 'Réussite scolaire', 'VIA', 'Développement de l\'enfant', 'Guide parents', 'Évaluation de personnalité'],
+    tags: ['Forces de caractère', 'Réussite scolaire', 'VIA', 'Développement de l\'enfant', 'Guide parents', 'Évaluation de personnalité', 'Test gratuit', 'Psychologie positive'],
     faqs: [
       {
         q: 'Quelle force de caractère prédit le mieux la réussite scolaire chez l\'enfant ?',
@@ -1541,6 +1541,14 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       {
         q: 'Mon enfant a un score faible en persévérance. Cela signifie-t-il qu\'il va avoir des difficultés scolaires ?',
         a: 'Non. Les forces de caractère ne sont pas des traits figés. La persévérance est particulièrement sensible à l\'environnement : des routines spécifiques, des structures de pratique délibérée et la façon dont les adultes encadrent la difficulté et l\'effort la façonnent substantiellement. Un score faible est une opportunité de développement, pas un verdict.',
+      },
+      {
+        q: 'Comment comprendre les points forts de mon enfant ?',
+        a: 'Le moyen le plus fiable de découvrir les forces dominantes et le potentiel de votre enfant est un questionnaire d\'évaluation parentale systématique. Le test gratuit VIA des forces de caractère d\'Eduentry mesure 24 traits de personnalité pour les enfants de 6 à 17 ans à partir des observations du parent, et génère un rapport de développement personnalisé par IA. La participation de l\'enfant n\'est pas nécessaire ; le test dure environ 5 à 10 minutes.',
+      },
+      {
+        q: 'Existe-t-il un test de personnalité enfant gratuit en français pour les 6–17 ans ?',
+        a: 'Oui. L\'évaluation de personnalité enfant d\'Eduentry est disponible en français et entièrement gratuite. Elle s\'appuie sur les 24 forces de caractère et les 6 vertus du modèle VIA, la référence de la psychologie positive. Elle est calibrée séparément pour les tranches d\'âge 6–9, 10–13, 14–17 et 18–20 ans. Pour les lycéens, elle aide également à identifier les forces clés avant les examens et l\'orientation universitaire.',
       },
     ],
     cta: {

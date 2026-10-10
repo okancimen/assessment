@@ -1286,12 +1286,12 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     title: 'Las 5 Fortalezas de Carácter que Predicen el Éxito Escolar — y Cómo Detectarlas en tu Hijo',
     shortTitle: 'Fortalezas de carácter y éxito académico',
     description:
-      'La investigación identifica cinco fortalezas VIA — curiosidad, amor por el aprendizaje, perseverancia, autorregulación y vitalidad — como los predictores más fiables del rendimiento académico infantil.',
-    tldr: 'Las notas escolares miden el rendimiento respecto a la media de clase, no los rasgos de carácter que determinan si un niño mantendrá el esfuerzo, seguirá siendo curioso y aprenderá de los errores. Cinco fortalezas VIA — amor por el aprendizaje, curiosidad, perseverancia, autorregulación y vitalidad — emergen consistentemente en la investigación longitudinal como las más predictivas de los resultados académicos. Estas fortalezas no son fijas: se pueden desarrollar.',
+      'Test VIA de fortalezas de carácter: 24 rasgos y 6 virtudes para descubrir el potencial de tu hijo de forma gratuita. Cinco fortalezas predicen el éxito escolar — curiosidad, amor por el aprendizaje, perseverancia, autorregulación y vitalidad. Evaluación parental con informe de desarrollo por IA. Para niños de 6 a 17 años.',
+    tldr: 'Las notas escolares miden el rendimiento respecto a la media de clase, no las fortalezas y el potencial real de tu hijo. Cinco fortalezas VIA — amor por el aprendizaje, curiosidad, perseverancia, autorregulación y vitalidad — emergen en la investigación longitudinal como las más predictivas del éxito académico. Se pueden medir con un test de evaluación parental gratuito online y desarrollar con práctica deliberada.',
     date: '2026-10-10',
     dateModified: '2026-10-10',
     readTime: '9 min de lectura',
-    tags: ['Fortalezas de Carácter', 'Éxito Académico', 'VIA', 'Desarrollo Infantil', 'Guía para Padres', 'Evaluación de Personalidad'],
+    tags: ['Fortalezas de Carácter', 'Éxito Académico', 'VIA', 'Desarrollo Infantil', 'Guía para Padres', 'Evaluación de Personalidad', 'Test Gratuito', 'Psicología Positiva'],
     faqs: [
       {
         q: '¿Qué fortaleza de carácter predice mejor el éxito académico en los niños?',
@@ -1308,6 +1308,14 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       {
         q: 'Mi hijo tiene una puntuación baja en perseverancia. ¿Significa eso que tendrá dificultades en el colegio?',
         a: 'No. Las fortalezas de carácter no son rasgos fijos. La perseverancia es especialmente sensible al entorno: rutinas específicas, estructuras de práctica deliberada y la forma en que los adultos enmarcan la dificultad y el esfuerzo la moldean sustancialmente. Una puntuación baja es una oportunidad de desarrollo, no un veredicto.',
+      },
+      {
+        q: '¿Cómo puedo entender las fortalezas de mi hijo?',
+        a: 'La forma más fiable de descubrir las fortalezas dominantes y el potencial de tu hijo es una encuesta de evaluación parental sistemática. El test gratuito de fortalezas de carácter VIA de Eduentry mide 24 rasgos de personalidad para niños de 6 a 17 años a partir de la observación del padre o la madre, y genera un informe de desarrollo personalizado con IA. No se requiere la participación del niño; el test dura unos 5–10 minutos.',
+      },
+      {
+        q: '¿Existe un test de personalidad infantil gratuito en español para niños de 6 a 17 años?',
+        a: 'Sí. La evaluación de personalidad infantil de Eduentry está disponible en español y es completamente gratuita. Se basa en las 24 fortalezas de carácter y las 6 virtudes del modelo VIA, el estándar de oro de la psicología positiva. Está calibrada por separado para los rangos de edad 6–9, 10–13, 14–17 y 18–20 años. Para adolescentes y estudiantes de secundaria también ayuda a identificar fortalezas clave de cara a los exámenes y la elección universitaria.',
       },
     ],
     cta: {
