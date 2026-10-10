@@ -5,7 +5,7 @@ const BASE_URL = 'https://eduentry.ai'
 const PAGE_URL = `${BASE_URL}/about`
 
 export const metadata: Metadata = {
-  title: 'About Eduentry.ai — Internship Readiness Assessment for Students',
+  title: { absolute: 'About Eduentry.ai — Internship Readiness Assessment for Students' },
   description:
     'Eduentry.ai is a free adaptive internship assessment platform for UK secondary school students aged 14–18. We measure aptitude, domain knowledge, and workplace skills — then match students to real internship opportunities.',
   keywords: [

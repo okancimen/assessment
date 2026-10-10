@@ -8,7 +8,7 @@ const BASE_URL = 'https://eduentry.ai'
 const PAGE_URL = `${BASE_URL}/ru`
 
 export const metadata: Metadata = {
-  title: 'Оценка готовности к стажировке — Бесплатный ИИ-отчёт | Eduentry.ai',
+  title: { absolute: 'Оценка готовности к стажировке — Бесплатный ИИ-отчёт | Eduentry.ai' },
   description:
     'Бесплатная ИИ-оценка для старшеклассников 14–18 лет. 34 адаптивных вопроса по технологиям, бизнесу, данным и маркетингу. Персонализированный отчёт сразу после прохождения.',
   keywords: [

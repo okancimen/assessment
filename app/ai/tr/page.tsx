@@ -8,7 +8,7 @@ const BASE_URL = 'https://eduentry.ai'
 const PAGE_URL = `${BASE_URL}/tr`
 
 export const metadata: Metadata = {
-  title: 'İngiltere Staj Değerlendirmesi — Ücretsiz Yapay Zeka Raporu | Eduentry.ai',
+  title: { absolute: 'İngiltere Staj Değerlendirmesi — Ücretsiz Yapay Zeka Raporu | Eduentry.ai' },
   description:
     '14–18 yaş lise öğrencileri için ücretsiz yapay zeka destekli staj hazırlık değerlendirmesi. 34 uyarlanabilir soru, 20 dakika. Teknoloji, İş, Veri ve Pazarlama alanları. Anında kişiselleştirilmiş rapor.',
   keywords: [

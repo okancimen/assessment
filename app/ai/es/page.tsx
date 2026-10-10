@@ -8,7 +8,7 @@ const BASE_URL = 'https://eduentry.ai'
 const PAGE_URL = `${BASE_URL}/es`
 
 export const metadata: Metadata = {
-  title: 'Evaluación de prácticas Reino Unido — Informe de IA gratuito | Eduentry.ai',
+  title: { absolute: 'Evaluación de prácticas Reino Unido — Informe de IA gratuito | Eduentry.ai' },
   description:
     'Evaluación de prácticas gratuita con IA para estudiantes de 14 a 18 años. 34 preguntas adaptativas en Tecnología, Empresa, Datos y Marketing. Informe personalizado al instante.',
   keywords: [

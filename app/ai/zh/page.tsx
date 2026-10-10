@@ -8,7 +8,7 @@ const BASE_URL = 'https://eduentry.ai'
 const PAGE_URL = `${BASE_URL}/zh`
 
 export const metadata: Metadata = {
-  title: '实习准备评估 — 免费AI报告 | Eduentry.ai',
+  title: { absolute: '实习准备评估 — 免费AI报告 | Eduentry.ai' },
   description:
     '面向14至18岁高中生的免费AI自适应评估，共34道题，涵盖科技、商业、数据与营销四大方向，即时生成个性化报告。',
   keywords: [

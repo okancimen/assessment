@@ -8,7 +8,7 @@ const BASE_URL = 'https://eduentry.ai'
 const PAGE_URL = `${BASE_URL}/ar`
 
 export const metadata: Metadata = {
-  title: 'تقييم التدريب المهني — تقرير ذكاء اصطناعي مجاني | Eduentry.ai',
+  title: { absolute: 'تقييم التدريب المهني — تقرير ذكاء اصطناعي مجاني | Eduentry.ai' },
   description:
     'تقييم مجاني بالذكاء الاصطناعي لطلاب المرحلة الثانوية من 14 إلى 18 عاماً. 34 سؤالاً في التكنولوجيا والأعمال والبيانات والتسويق. تقرير شخصي فوري.',
   keywords: [
