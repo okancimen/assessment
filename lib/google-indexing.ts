@@ -1,4 +1,5 @@
 import { createSign } from 'crypto'
+import { readFileSync } from 'fs'
 
 const SCOPES = 'https://www.googleapis.com/auth/indexing'
 const ENDPOINT = 'https://indexing.googleapis.com/v3/urlNotifications:publish'
@@ -10,7 +11,8 @@ function b64url(input: string | Buffer): string {
 }
 
 async function getAccessToken(): Promise<string> {
-  const raw = process.env.GOOGLE_SERVICE_ACCOUNT_KEY
+  const filePath = process.env.GOOGLE_SERVICE_ACCOUNT_KEY_FILE
+  const raw = filePath ? readFileSync(filePath, 'utf8') : process.env.GOOGLE_SERVICE_ACCOUNT_KEY
   if (!raw) throw new Error('GOOGLE_SERVICE_ACCOUNT_KEY not set')
   const creds = JSON.parse(raw)
 
