@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { notifyUrls } from '@/lib/google-indexing'
+import { createAdminClient } from '@/lib/supabase/admin'
 import getSitemap from '@/app/sitemap'
 
 // Quota: 200 URL notifications per day per Google Cloud project.
@@ -31,10 +32,13 @@ export async function GET(req: NextRequest) {
     : allEntries.filter(e => isRecent(e.lastModified)).map(e => e.url)
 
   if (urls.length === 0) {
+    await logCron({ job: 'index-urls', submitted: 0, total: 0, failed: 0, duration_ms: 0, is_sunday: isSunday })
     return NextResponse.json({ submitted: 0, message: 'No recently modified URLs' })
   }
 
+  const start = Date.now()
   const results = await notifyUrls(urls)
+  const duration_ms = Date.now() - start
   const ok = results.filter(r => r.ok).length
   const failed = results.filter(r => !r.ok)
 
@@ -43,5 +47,32 @@ export async function GET(req: NextRequest) {
   }
   console.log(`[cron/index-urls] submitted=${ok}/${urls.length} sunday=${isSunday}`)
 
+  await logCron({ job: 'index-urls', submitted: ok, total: urls.length, failed: failed.length, errors: failed, duration_ms, is_sunday: isSunday })
+
   return NextResponse.json({ submitted: ok, total: urls.length, failed: failed.length, errors: failed.slice(0, 3) })
+}
+
+async function logCron(data: {
+  job: string
+  submitted: number
+  total: number
+  failed: number
+  errors?: { url: string; ok: boolean; error?: string }[]
+  duration_ms: number
+  is_sunday: boolean
+}) {
+  try {
+    const supabase = createAdminClient()
+    await supabase.from('cron_logs').insert({
+      job: data.job,
+      submitted: data.submitted,
+      total: data.total,
+      failed: data.failed,
+      errors: data.errors?.length ? data.errors : null,
+      duration_ms: data.duration_ms,
+      is_sunday: data.is_sunday,
+    })
+  } catch (err) {
+    console.error('[cron/index-urls] failed to write log', err)
+  }
 }
