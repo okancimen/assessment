@@ -78,24 +78,33 @@ export default async function AdminInternshipPage({
 
   const db = createAdminClient()
 
-  const { data: profiles } = await db
+  const { data: profiles, error: profilesError } = await db
     .from('internship_profiles')
     .select('*, assessments(id, status, created_at), children(name), cohorts(name)')
     .order('created_at', { ascending: false })
 
+  if (profilesError) {
+    console.error('[admin/internship] profiles query error:', profilesError)
+    throw new Error(`Database error: ${profilesError.message}`)
+  }
+
   const assessmentIds = (profiles ?? []).map((p) => (p.assessments as { id: string } | null)?.id).filter(Boolean) as string[]
 
-  const [{ data: results }, { data: sessions }, { data: allCohorts }] = await Promise.all([
+  const [{ data: results, error: resultsError }, { data: sessions, error: sessionsError }, { data: allCohorts, error: cohortsError }] = await Promise.all([
     assessmentIds.length > 0
       ? db.from('results').select('assessment_id, subject_scores').in('assessment_id', assessmentIds)
-      : { data: [] },
+      : { data: [], error: null },
     assessmentIds.length > 0
       ? db.from('assessment_sessions')
           .select('assessment_id, completed_subjects, question_index')
           .in('assessment_id', assessmentIds)
-      : { data: [] },
+      : { data: [], error: null },
     db.from('cohorts').select('id, name').order('start_date', { ascending: false }),
   ])
+
+  if (resultsError) console.error('[admin/internship] results query error:', resultsError)
+  if (sessionsError) console.error('[admin/internship] sessions query error:', sessionsError)
+  if (cohortsError) console.error('[admin/internship] cohorts query error:', cohortsError)
 
   const resultsMap: Record<string, Record<string, number>> = {}
   for (const r of results ?? []) {
