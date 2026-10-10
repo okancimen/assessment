@@ -82,6 +82,14 @@ export interface DashboardI18n {
   resumeStrengths: string
   viewStrengths: string
   strengthsInProgress: string
+  // Delete child
+  deleteChildBtn: string
+  deleteChildConfirmTitle: (name: string) => string
+  deleteChildConfirmDesc: string
+  deleteChildConfirm: string
+  deleteChildCancel: string
+  deleteChildError: string
+  deleteChildNetworkError: string
   // RTL
   dir: 'ltr' | 'rtl'
 }
@@ -158,6 +166,13 @@ const en: DashboardI18n = {
   resumeStrengths: 'Resume',
   viewStrengths: 'View profile',
   strengthsInProgress: 'In progress',
+  deleteChildBtn: 'Remove child',
+  deleteChildConfirmTitle: (name) => `Remove ${name}?`,
+  deleteChildConfirmDesc: 'This will permanently delete this child and all their data.',
+  deleteChildConfirm: 'Remove',
+  deleteChildCancel: 'Cancel',
+  deleteChildError: 'Could not remove child. They may have completed assessments.',
+  deleteChildNetworkError: 'Network error. Please try again.',
   dir: 'ltr',
 }
 
@@ -233,6 +248,13 @@ const tr: DashboardI18n = {
   resumeStrengths: 'Devam et',
   viewStrengths: 'Profili görüntüle',
   strengthsInProgress: 'Devam ediyor',
+  deleteChildBtn: 'Çocuğu kaldır',
+  deleteChildConfirmTitle: (name) => `${name} kaldırılsın mı?`,
+  deleteChildConfirmDesc: 'Bu işlem çocuğu ve tüm ilgili verileri kalıcı olarak siler.',
+  deleteChildConfirm: 'Kaldır',
+  deleteChildCancel: 'İptal',
+  deleteChildError: 'Çocuk kaldırılamadı. Tamamlanmış değerlendirmeleri olabilir.',
+  deleteChildNetworkError: 'Ağ hatası. Lütfen tekrar deneyin.',
   dir: 'ltr',
 }
 
@@ -308,6 +330,13 @@ const es: DashboardI18n = {
   resumeStrengths: 'Continuar',
   viewStrengths: 'Ver perfil',
   strengthsInProgress: 'En progreso',
+  deleteChildBtn: 'Eliminar hijo',
+  deleteChildConfirmTitle: (name) => `¿Eliminar a ${name}?`,
+  deleteChildConfirmDesc: 'Esto eliminará permanentemente a este hijo/a y todos sus datos.',
+  deleteChildConfirm: 'Eliminar',
+  deleteChildCancel: 'Cancelar',
+  deleteChildError: 'No se pudo eliminar al hijo. Puede tener evaluaciones completadas.',
+  deleteChildNetworkError: 'Error de red. Por favor, inténtalo de nuevo.',
   dir: 'ltr',
 }
 
@@ -383,6 +412,13 @@ const fr: DashboardI18n = {
   resumeStrengths: 'Continuer',
   viewStrengths: 'Voir le profil',
   strengthsInProgress: 'En cours',
+  deleteChildBtn: "Supprimer l'enfant",
+  deleteChildConfirmTitle: (name) => `Supprimer ${name} ?`,
+  deleteChildConfirmDesc: "Cela supprimera définitivement cet enfant et toutes ses données.",
+  deleteChildConfirm: 'Supprimer',
+  deleteChildCancel: 'Annuler',
+  deleteChildError: "Impossible de supprimer l'enfant. Il peut avoir des évaluations terminées.",
+  deleteChildNetworkError: 'Erreur réseau. Veuillez réessayer.',
   dir: 'ltr',
 }
 
@@ -458,6 +494,13 @@ const ar: DashboardI18n = {
   resumeStrengths: 'متابعة',
   viewStrengths: 'عرض الملف الشخصي',
   strengthsInProgress: 'قيد التنفيذ',
+  deleteChildBtn: 'حذف الطفل',
+  deleteChildConfirmTitle: (name) => `حذف ${name}؟`,
+  deleteChildConfirmDesc: 'سيؤدي هذا إلى حذف هذا الطفل وجميع بياناته بشكل دائم.',
+  deleteChildConfirm: 'حذف',
+  deleteChildCancel: 'إلغاء',
+  deleteChildError: 'تعذر حذف الطفل. قد يكون لديه تقييمات مكتملة.',
+  deleteChildNetworkError: 'خطأ في الشبكة. يرجى المحاولة مرة أخرى.',
   dir: 'rtl',
 }
 
@@ -533,6 +576,13 @@ const ru: DashboardI18n = {
   resumeStrengths: 'Продолжить',
   viewStrengths: 'Смотреть профиль',
   strengthsInProgress: 'В процессе',
+  deleteChildBtn: 'Удалить ребёнка',
+  deleteChildConfirmTitle: (name) => `Удалить ${name}?`,
+  deleteChildConfirmDesc: 'Это навсегда удалит ребёнка и все связанные данные.',
+  deleteChildConfirm: 'Удалить',
+  deleteChildCancel: 'Отмена',
+  deleteChildError: 'Не удалось удалить ребёнка. Возможно, у него есть завершённые тестирования.',
+  deleteChildNetworkError: 'Ошибка сети. Пожалуйста, попробуйте ещё раз.',
   dir: 'ltr',
 }
 
@@ -608,6 +658,13 @@ const zh: DashboardI18n = {
   resumeStrengths: '继续',
   viewStrengths: '查看档案',
   strengthsInProgress: '进行中',
+  deleteChildBtn: '删除孩子',
+  deleteChildConfirmTitle: (name) => `删除 ${name}？`,
+  deleteChildConfirmDesc: '这将永久删除此孩子及其所有数据。',
+  deleteChildConfirm: '删除',
+  deleteChildCancel: '取消',
+  deleteChildError: '无法删除孩子，他们可能已有完成的评估。',
+  deleteChildNetworkError: '网络错误，请重试。',
   dir: 'ltr',
 }
 

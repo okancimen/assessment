@@ -10,6 +10,7 @@ import { getScoreLabel, getScoreColor } from '@/lib/assessment/adaptive'
 import { Suspense } from 'react'
 import ToastFromUrl from '@/components/ui/ToastFromUrl'
 import InviteInternshipButton from '@/components/dashboard/InviteInternshipButton'
+import DeleteChildButton from '@/components/dashboard/DeleteChildButton'
 import { getDashboardI18n } from '@/lib/dashboard-i18n'
 
 interface AssessmentWithResult extends Omit<Assessment, 'children'> {
@@ -226,6 +227,10 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                 const latest = latestScores[child.id]
                 const count = assessmentCounts[child.id] || 0
                 const avatar = getAvatarColor(child.name)
+                const canDelete =
+                  !latest &&
+                  strengthsMap[child.id]?.status !== 'completed' &&
+                  internshipMap[child.id]?.status !== 'completed'
                 return (
                   <div key={child.id} className="bg-white rounded-3xl border border-[#d2d2d7] hover:border-[#4F46E5] hover:shadow-md transition-all flex flex-col">
                     <Link href={`/children/${child.id}`} className="p-5 flex-1 block">
@@ -255,8 +260,11 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                         )}
                       </div>
                     </Link>
-                    <div className="px-5 pb-5">
+                    <div className="px-5 pb-5 flex flex-col gap-2">
                       <StartAssessmentButton childId={child.id} size="sm" className="w-full" locale={locale} />
+                      {canDelete && (
+                        <DeleteChildButton childId={child.id} childName={child.name} locale={locale} />
+                      )}
                     </div>
                   </div>
                 )
