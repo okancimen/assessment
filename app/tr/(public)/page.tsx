@@ -307,7 +307,7 @@ export default function TurkishHomePage() {
                 </span>
               </div>
               <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4 leading-snug tracking-tight">
-                Öğrenciniz iş dünyasına hazır mı?
+                Çocuğunuz iş hayatına hazır mı?
               </h2>
               <p className="text-[#636366] text-sm leading-relaxed mb-8 flex-1">
                 Yetenek, alan bilgisi, iş yeri becerileri ve ilgi profili üzerine 34 soruluk uyarlanabilir değerlendirme.
