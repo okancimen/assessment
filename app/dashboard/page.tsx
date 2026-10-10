@@ -167,17 +167,18 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
   }
 
   return (
-    <div className="min-h-screen bg-[#f5f5f7] flex flex-col" dir={t.dir}>
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#F7F8FA' }} dir={t.dir}>
       <Navbar locale={locale} pendingCount={pendingCount} />
       <Suspense><ToastFromUrl /></Suspense>
-      <main className="flex-1 max-w-5xl mx-auto w-full px-4 sm:px-6 py-10 space-y-8">
+      <main className="flex-1 max-w-5xl mx-auto w-full px-4 sm:px-6 py-10 space-y-10">
+
         {/* Header */}
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold text-[#1d1d1f] tracking-tight">
+            <h1 className="text-2xl font-bold tracking-tight" style={{ color: '#1E293B' }}>
               {t.hello}, {(profile?.full_name || user.user_metadata?.full_name)?.split(' ')[0] || ''}
             </h1>
-            <p className="text-sm text-[#6e6e73] mt-1">{t.subtitle}</p>
+            <p className="text-sm mt-1" style={{ color: '#64748B' }}>{t.subtitle}</p>
           </div>
           <Link
             href={`/children/new${locale ? `?locale=${locale}` : ''}`}
@@ -187,44 +188,37 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
           </Link>
         </div>
 
-        {/* How it works */}
-        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6 space-y-4">
-          <div className="flex items-start gap-4">
-            <div className="w-9 h-9 rounded-full bg-[#eef2ff] flex items-center justify-center flex-shrink-0 mt-0.5">
-              <svg className="w-4.5 h-4.5 text-[#4F46E5]" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15 15" />
-              </svg>
-            </div>
-            <div>
-              <p className="text-sm font-semibold text-[#1d1d1f] mb-1">{t.howItWorksTitle}</p>
-              <p className="text-sm text-[#6e6e73] leading-relaxed">{t.howItWorksDesc}</p>
+        {/* Academic Assessment section */}
+        <section>
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#4F46E5' }} />
+              <h2 className="text-base font-semibold" style={{ color: '#1E293B' }}>{t.childrenSection}</h2>
             </div>
           </div>
-          <div className="border-t border-[#f5f5f7]" />
-          <div className="flex items-start gap-4">
-            <div className="w-9 h-9 rounded-full bg-[#f0fdfa] flex items-center justify-center flex-shrink-0 mt-0.5">
-              <svg className="w-4.5 h-4.5 text-teal-600" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-              </svg>
-            </div>
+
+          {/* Academic info box */}
+          <div
+            className="bg-white rounded-xl border p-5 mb-5 space-y-3"
+            style={{ borderColor: '#E8ECF2', borderLeftWidth: '4px', borderLeftColor: '#4F46E5' }}
+          >
             <div>
-              <p className="text-sm font-semibold text-[#1d1d1f] mb-1">{t.globalStandingTitle}</p>
-              <p className="text-sm text-[#6e6e73] leading-relaxed">
+              <p className="text-sm font-semibold mb-1" style={{ color: '#4F46E5' }}>{t.howItWorksTitle}</p>
+              <p className="text-sm leading-relaxed" style={{ color: '#64748B' }}>{t.howItWorksDesc}</p>
+            </div>
+            <div className="border-t pt-3" style={{ borderColor: '#E8ECF2' }}>
+              <p className="text-sm font-semibold mb-1" style={{ color: '#1E293B' }}>{t.globalStandingTitle}</p>
+              <p className="text-sm leading-relaxed" style={{ color: '#64748B' }}>
                 {t.globalStandingDesc}{' '}
-                <Link href="https://eduentry.com/sample-report" className="text-[#4F46E5] font-medium hover:underline">
+                <Link href="https://eduentry.com/sample-report" className="font-medium hover:underline" style={{ color: '#4F46E5' }}>
                   {t.seeReport}
                 </Link>
               </p>
             </div>
           </div>
-        </div>
-
-        {/* Children */}
-        <section>
-          <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">{t.childrenSection}</h2>
           {!hasChildren ? (
-            <div className="bg-white rounded-3xl border border-dashed border-[#d2d2d7] p-14 text-center">
-              <p className="text-[#6e6e73] text-sm mb-4">{t.noChildrenYet}</p>
+            <div className="bg-white rounded-2xl border border-dashed p-14 text-center" style={{ borderColor: '#CBD5E1' }}>
+              <p className="text-sm mb-4" style={{ color: '#64748B' }}>{t.noChildrenYet}</p>
               <Link href={`/children/new${locale ? `?locale=${locale}` : ''}`} className="text-[#4F46E5] font-semibold text-sm hover:underline">
                 {t.addFirstChild}
               </Link>
@@ -240,7 +234,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                   strengthsMap[child.id]?.status !== 'completed' &&
                   internshipMap[child.id]?.status !== 'completed'
                 return (
-                  <div key={child.id} className="bg-white rounded-3xl border border-[#d2d2d7] hover:border-[#4F46E5] hover:shadow-md transition-all flex flex-col">
+                  <div key={child.id} className="bg-white rounded-2xl border hover:border-[#4F46E5] hover:shadow-sm transition-all flex flex-col" style={{ borderColor: '#E8ECF2' }}>
                     <Link href={`/children/${child.id}`} className="p-5 flex-1 block">
                       <div className="flex items-start justify-between mb-3">
                         <div
@@ -281,24 +275,35 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
           )}
         </section>
 
-        {/* Strengths Assessment — for children aged 6–20 */}
+        {/* Personality Assessment — for children aged 6–20 */}
         {strengthsEligible.length > 0 && (
           <section>
-            <div className="flex items-start justify-between mb-4 gap-4">
-              <div>
-                <h2 className="text-base font-semibold text-[#1d1d1f]">{t.strengthsTitle}</h2>
-                <p className="text-xs text-[#6e6e73] mt-0.5">{t.strengthsSubtitle}</p>
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2.5">
+                <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#0D9488' }} />
+                <h2 className="text-base font-semibold" style={{ color: '#1E293B' }}>{t.strengthsTitle}</h2>
+                <span className="text-sm" style={{ color: '#64748B' }}>{t.strengthsSubtitle}</span>
               </div>
-              <Link href={`/strengths${locale ? `?locale=${locale}` : ''}`} className="text-sm text-[#4F46E5] font-semibold hover:underline whitespace-nowrap">
+              <Link href={`/strengths${locale ? `?locale=${locale}` : ''}`} className="text-sm font-semibold hover:underline whitespace-nowrap" style={{ color: '#0D9488' }}>
                 {t.strengthsLearnMore}
               </Link>
             </div>
+
+            {/* Personality info box */}
+            <div
+              className="bg-white rounded-xl border p-5 mb-5"
+              style={{ borderColor: '#E8ECF2', borderLeftWidth: '4px', borderLeftColor: '#0D9488' }}
+            >
+              <p className="text-sm font-semibold mb-1" style={{ color: '#0D9488' }}>{t.personalityInfoTitle}</p>
+              <p className="text-sm leading-relaxed" style={{ color: '#64748B' }}>{t.personalityInfoDesc}</p>
+            </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {strengthsEligible.map((child: Child) => {
                 const sa = strengthsMap[child.id]
                 const avatar = getAvatarColor(child.name)
                 return (
-                  <div key={child.id} className="bg-white rounded-3xl border border-[#d2d2d7] p-5 flex flex-col gap-3">
+                  <div key={child.id} className="bg-white rounded-2xl border p-5 flex flex-col gap-3" style={{ borderColor: '#E8ECF2' }}>
                     <div className="flex items-center gap-3">
                       <div
                         className="w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0"
@@ -320,7 +325,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                       </Link>
                     ) : sa?.status === 'in_progress' ? (
                       <>
-                        <p className="text-xs text-amber-600 font-medium">{t.strengthsInProgress}</p>
+                        <p className="text-xs font-medium" style={{ color: '#D97706' }}>{t.strengthsInProgress}</p>
                         <Link
                           href={`/strengths/${sa.id}/question${locale ? `?locale=${locale}` : ''}`}
                           className="inline-flex items-center justify-center bg-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amber-600 transition-colors"
@@ -331,7 +336,10 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                     ) : (
                       <Link
                         href={`/strengths/${child.id}/start${locale ? `?locale=${locale}` : ''}`}
-                        className="inline-flex items-center justify-center bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors"
+                        className="inline-flex items-center justify-center text-white text-xs font-semibold px-4 py-2 rounded-full transition-colors"
+                        style={{ backgroundColor: '#0D9488' }}
+                        onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#0F766E')}
+                        onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#0D9488')}
                       >
                         {t.startStrengths}
                       </Link>
@@ -346,24 +354,35 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
         {/* Internship Programme — for children aged 14+ */}
         {eligibleChildren.length > 0 && (
           <section>
-            <div className="flex items-start justify-between mb-4 gap-4">
-              <div>
-                <h2 className="text-base font-semibold text-[#1d1d1f]">{t.internshipProgramme}</h2>
-                <p className="text-xs text-[#6e6e73] mt-0.5">{t.internshipSubtitle}</p>
+            <div className="flex items-center justify-between mb-4 gap-4">
+              <div className="flex items-center gap-2.5">
+                <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#7C3AED' }} />
+                <h2 className="text-base font-semibold" style={{ color: '#1E293B' }}>{t.internshipProgramme}</h2>
+                <span className="text-sm hidden sm:block" style={{ color: '#64748B' }}>{t.internshipSubtitle}</span>
               </div>
               <div className="flex items-center gap-3 flex-shrink-0">
                 <InviteInternshipButton locale={locale} />
-                <Link href="https://eduentry.ai/en" className="text-sm text-[#4F46E5] font-semibold hover:underline whitespace-nowrap">
+                <Link href="https://eduentry.ai/en" className="text-sm font-semibold hover:underline whitespace-nowrap" style={{ color: '#7C3AED' }}>
                   {t.learnMore}
                 </Link>
               </div>
             </div>
+
+            {/* Internship info box */}
+            <div
+              className="bg-white rounded-xl border p-5 mb-5"
+              style={{ borderColor: '#E8ECF2', borderLeftWidth: '4px', borderLeftColor: '#7C3AED' }}
+            >
+              <p className="text-sm font-semibold mb-1" style={{ color: '#7C3AED' }}>{t.internshipInfoTitle}</p>
+              <p className="text-sm leading-relaxed" style={{ color: '#64748B' }}>{t.internshipInfoDesc}</p>
+            </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {eligibleChildren.map((child: Child) => {
                 const ia = internshipMap[child.id]
                 const avatar = getAvatarColor(child.name)
                 return (
-                  <div key={child.id} className="bg-white rounded-3xl border border-[#d2d2d7] p-5 flex flex-col gap-3">
+                  <div key={child.id} className="bg-white rounded-2xl border p-5 flex flex-col gap-3" style={{ borderColor: '#E8ECF2' }}>
                     <div className="flex items-center gap-3">
                       <div
                         className="w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0"
@@ -429,24 +448,26 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
         {/* Recent assessments */}
         {hasChildren && (
           <section>
-            <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">{t.recentAssessments}</h2>
+            <div className="flex items-center gap-2.5 mb-4">
+              <h2 className="text-base font-semibold" style={{ color: '#1E293B' }}>{t.recentAssessments}</h2>
+            </div>
             {hasAssessments ? (
-              <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
+              <div className="bg-white rounded-2xl border overflow-hidden" style={{ borderColor: '#E8ECF2' }}>
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="border-b border-[#f5f5f7]">
-                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">{t.tableChild}</th>
-                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">{t.tableDate}</th>
-                      <th className="text-right px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide hidden sm:table-cell">{t.tableScore}</th>
-                      <th className="text-left px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">{t.tableStatus}</th>
-                      <th className="text-right px-5 py-3 text-xs font-semibold text-[#6e6e73] uppercase tracking-wide">{t.tableAction}</th>
+                    <tr className="border-b" style={{ borderColor: '#E8ECF2' }}>
+                      <th className="text-left px-5 py-3 text-xs font-medium" style={{ color: '#64748B' }}>{t.tableChild}</th>
+                      <th className="text-left px-5 py-3 text-xs font-medium hidden sm:table-cell" style={{ color: '#64748B' }}>{t.tableDate}</th>
+                      <th className="text-right px-5 py-3 text-xs font-medium hidden sm:table-cell" style={{ color: '#64748B' }}>{t.tableScore}</th>
+                      <th className="text-left px-5 py-3 text-xs font-medium" style={{ color: '#64748B' }}>{t.tableStatus}</th>
+                      <th className="text-right px-5 py-3 text-xs font-medium" style={{ color: '#64748B' }}>{t.tableAction}</th>
                     </tr>
                   </thead>
                   <tbody>
                     {(assessments as AssessmentWithResult[]).map((a) => (
-                      <tr key={a.id} className="border-b border-[#f5f5f7] last:border-0 hover:bg-[#f5f5f7] transition-colors">
-                        <td className="px-5 py-3 font-medium text-[#1d1d1f] text-sm">{a.children?.name}</td>
-                        <td className="px-5 py-3 text-xs text-[#6e6e73] hidden sm:table-cell">{formatDate(a.created_at)}</td>
+                      <tr key={a.id} className="border-b last:border-0 transition-colors hover:bg-[#F8FAFC]" style={{ borderColor: '#E8ECF2' }}>
+                        <td className="px-5 py-3.5 font-medium text-sm" style={{ color: '#1E293B' }}>{a.children?.name}</td>
+                        <td className="px-5 py-3.5 text-xs hidden sm:table-cell" style={{ color: '#64748B' }}>{formatDate(a.created_at)}</td>
                         <td className="px-5 py-3 text-right hidden sm:table-cell">
                           {a.results ? (
                             <span className={`font-bold text-sm ${getScoreColor(a.results.standardized_score)}`}>
@@ -494,16 +515,9 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                 </table>
               </div>
             ) : (
-              <div className="bg-white rounded-3xl border border-dashed border-[#d2d2d7] p-12 text-center">
-                <div className="w-12 h-12 rounded-full bg-[#eef2ff] flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-[#4F46E5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
-                    <rect x="9" y="3" width="6" height="4" rx="1" />
-                    <line x1="9" y1="12" x2="15" y2="12" /><line x1="9" y1="16" x2="13" y2="16" />
-                  </svg>
-                </div>
-                <p className="text-[#1d1d1f] font-medium text-sm mb-1">{t.noAssessmentsEmpty}</p>
-                <p className="text-xs text-[#6e6e73]">{t.noAssessmentsEmptyDesc}</p>
+              <div className="bg-white rounded-2xl border border-dashed p-12 text-center" style={{ borderColor: '#CBD5E1' }}>
+                <p className="font-medium text-sm mb-1" style={{ color: '#1E293B' }}>{t.noAssessmentsEmpty}</p>
+                <p className="text-xs" style={{ color: '#64748B' }}>{t.noAssessmentsEmptyDesc}</p>
               </div>
             )}
           </section>
@@ -512,8 +526,11 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
         {/* Self-registered student: own internship status */}
         {selfChild && (
           <section>
-            <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">{t.yourInternship}</h2>
-            <div className="bg-white rounded-3xl border border-[#d2d2d7] p-5 flex items-center justify-between gap-4">
+            <div className="flex items-center gap-2.5 mb-4">
+              <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#7C3AED' }} />
+              <h2 className="text-base font-semibold" style={{ color: '#1E293B' }}>{t.yourInternship}</h2>
+            </div>
+            <div className="bg-white rounded-2xl border p-5 flex items-center justify-between gap-4" style={{ borderColor: '#E8ECF2' }}>
               <div>
                 <p className="font-semibold text-[#1d1d1f]">{selfChild.name}</p>
                 {!selfInternship ? (
