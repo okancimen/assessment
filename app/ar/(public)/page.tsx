@@ -8,9 +8,9 @@ import { BLOG_POSTS_AR } from '@/app/blog/posts-ar'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'منصة التقييم الأكاديمي واستعداد التدريب',
+  title: 'منصة التقييم الأكاديمي والشخصية واستعداد التدريب',
   description:
-    'تقييمات تكيفية مجانية لكل مرحلة تعليمية — مقارنة أكاديمية دولية للأعمار 6-17، وتقييم استعداد التدريب للطلاب فوق 14 عاماً.',
+    'تقييمات تكيفية مجانية لكل مرحلة تعليمية — مقارنة أكاديمية دولية للأعمار 6-17، وتقييم الشخصية ونقاط القوة VIA للأعمار 6-20، وتقييم استعداد التدريب للطلاب فوق 14 عاماً.',
   keywords: [
     'تقييم أكاديمي مجاني أطفال',
     'مرجع دولي أطفال الإمارات',
@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     'تقييم التوجيه المهني طلاب',
     'اختبار مجاني تقييم أطفال',
     'تفكير لفظي غير لفظي اختبار',
+    'تقييم شخصية الطفل مجاني',
+    'اختبار نقاط القوة VIA للأطفال',
+    'اختبار شخصية مجاني للأطفال',
+    'علم النفس الإيجابي تقييم الأطفال',
+    'نقاط قوة الطفل مجاناً',
   ],
   alternates: {
     canonical: `${BASE_URL}/ar`,
@@ -32,15 +37,15 @@ export const metadata: Metadata = {
   openGraph: {
     url: `${BASE_URL}/ar`,
     siteName: 'Eduentry',
-    title: 'Eduentry — منصة التقييم الأكاديمي واستعداد التدريب',
-    description: 'تقييمات تكيفية مجانية مبنية على نفس العلم المستخدم في PISA وGCSE وSAT. مقارنة أكاديمية للأعمار 6-17 وتقييم التدريب للطلاب فوق 14 عاماً.',
+    title: 'Eduentry — منصة التقييم الأكاديمي والشخصية واستعداد التدريب',
+    description: 'تقييمات تكيفية مجانية مبنية على نفس العلم المستخدم في PISA وGCSE وSAT. مقارنة أكاديمية للأعمار 6-17، وتقييم الشخصية ونقاط القوة VIA للأعمار 6-20، وتقييم التدريب للطلاب فوق 14 عاماً.',
     locale: 'ar_AE',
-    images: [{ url: `${BASE_URL}/ar/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — منصة التقييم الأكاديمي واستعداد التدريب' }],
+    images: [{ url: `${BASE_URL}/ar/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — منصة التقييم الأكاديمي والشخصية واستعداد التدريب' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Eduentry — منصة التقييم الأكاديمي واستعداد التدريب',
-    description: 'تقييمات تكيفية مجانية مبنية على نفس العلم المستخدم في PISA وGCSE وSAT. مقارنة أكاديمية للأعمار 6-17 وتقييم التدريب للطلاب فوق 14 عاماً.',
+    title: 'Eduentry — منصة التقييم الأكاديمي والشخصية واستعداد التدريب',
+    description: 'تقييمات تكيفية مجانية مبنية على نفس العلم المستخدم في PISA وGCSE وSAT. مقارنة أكاديمية للأعمار 6-17، وتقييم الشخصية ونقاط القوة VIA للأعمار 6-20، وتقييم التدريب للطلاب فوق 14 عاماً.',
     images: [`${BASE_URL}/ar/opengraph-image`],
   },
 }
@@ -84,6 +89,7 @@ const FAQ_AR = [
   { q: 'هل بياناتي خاصة وآمنة؟', a: 'نعم. جميع البيانات مخزنة بأمان مع حماية على مستوى الصف — أنت وحدك من يمكنه الوصول إلى نتائجك. لا نبيع بياناتك ولا نشاركها مع أطراف ثالثة. الخدمة متوافقة تماماً مع لوائح حماية البيانات.' },
   { q: 'ما أهمية التقييم لطلاب المدارس في الإمارات؟', a: 'يُساعد Eduentry الطلاب في الإمارات على فهم مستوياتهم مقارنةً بالمعايير البريطانية والأمريكية والدولية — المعايير ذاتها التي تستخدمها المدارس الدولية المرموقة في قبولها. كما يساعد في التحضير لاختبارات مثل CAT4 وISEB.' },
   { q: 'كيف أبدأ التقييم؟', a: 'أنشئ حساباً مجانياً في دقيقتين، أضف اسم طفلك وتاريخ ميلاده، وابدأ التقييم. النظام يتكيف تلقائياً مع مستوى طفلك ويُنتج نتائج مفصلة بعد الانتهاء مباشرة.' },
+  { q: 'ما هو تقييم الشخصية؟', a: 'تقييم الشخصية هو استبيان مجاني مبني على إطار نقاط القوة VIA العالمي، يُقيّمه الوالدان نيابةً عن طفلهم. يحدد 24 سمة شخصية موزعة على 6 فضائل أساسية — الحكمة، والشجاعة، والإنسانية، والعدالة، والاعتدال، والتسامي — ويُنشئ تقريراً مخصصاً بالذكاء الاصطناعي يتضمن توصيات عملية لتنمية نقاط القوة. يناسب الأطفال من عمر 6 إلى 20 سنة.' },
 ]
 
 const FAQ_SCHEMA_AR = {
@@ -168,7 +174,7 @@ const SOFTWARE_SCHEMA_AR = {
   url: 'https://eduentry.com',
   applicationCategory: 'EducationalApplication',
   operatingSystem: 'Web Browser',
-  description: 'تقييمات تكيفية مجانية مدعومة بالذكاء الاصطناعي للطلاب من عمر 6 سنوات فأكثر.',
+  description: 'تقييمات تكيفية مجانية مدعومة بالذكاء الاصطناعي للطلاب من عمر 6 سنوات فأكثر — تشمل التقييم الأكاديمي وتقييم الشخصية ونقاط القوة VIA وتقييم استعداد التدريب.',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'مجاني — لا يتطلب اشتراكاً' },
   aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
   review: [
@@ -181,6 +187,30 @@ const SOFTWARE_SCHEMA_AR = {
   ],
 }
 
+const PERSONALITY_PROGRAM_SCHEMA_AR = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'تقييم الشخصية ونقاط القوة — 6 إلى 20 سنة',
+  description: 'استبيان مجاني يُقيّمه الوالدان بناءً على إطار نقاط القوة VIA. يحدد 24 سمة شخصية عبر 6 فضائل ويُنشئ تقريراً مخصصاً بالذكاء الاصطناعي.',
+  url: 'https://eduentry.com/ar/taqyim-al-shakhsiya',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'تقرير نقاط القوة', credentialCategory: 'certificate' },
+  timeToComplete: 'PT15M',
+  educationalProgramMode: 'online',
+  inLanguage: 'ar',
+  typicalAgeRange: '6-20',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'لا توجد متطلبات مسبقة — يُكمله الوالدان نيابةً عن الطفل',
+  hasCourse: [
+    { '@type': 'Course', name: 'الحكمة', description: 'الفضول، الإبداع، حب التعلم، المنظور، الحكم' },
+    { '@type': 'Course', name: 'الشجاعة', description: 'الشجاعة، المثابرة، الصدق، الحيوية' },
+    { '@type': 'Course', name: 'الإنسانية', description: 'الحب، اللطف، الذكاء الاجتماعي' },
+    { '@type': 'Course', name: 'العدالة', description: 'العمل الجماعي، الإنصاف، القيادة' },
+    { '@type': 'Course', name: 'الاعتدال', description: 'العفو، التواضع، الحكمة، ضبط النفس' },
+    { '@type': 'Course', name: 'التسامي', description: 'الامتنان، الأمل، الفكاهة، تقدير الجمال، الروحانية' },
+  ],
+}
+
 export default function ArabicHomePage() {
   return (
     <main className="min-h-screen bg-white" lang="ar" dir="rtl">
@@ -189,6 +219,7 @@ export default function ArabicHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_AR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA_AR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA_AR) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSONALITY_PROGRAM_SCHEMA_AR) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_AR) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
@@ -203,10 +234,10 @@ export default function ArabicHomePage() {
             <span className="text-[#818CF8]">في الوقت المناسب.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
-            تقييمات تكيفية مجانية مبنية على نفس العلم المستخدم في PISA وGCSE وSAT.
+            ثلاثة تقييمات مجانية — أكاديمي وشخصية وجاهزية التدريب.
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-4xl mx-auto text-right">
+          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 max-w-6xl mx-auto text-right">
 
             {/* Academic card */}
             <div className="bg-[#2d2d2f] rounded-[28px] border border-[#424245] p-10 flex flex-col">
@@ -236,6 +267,38 @@ export default function ArabicHomePage() {
                 ابدأ التقييم المجاني
               </CtaLink>
               <Link href="#akadimi" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
+                اعرف المزيد ↓
+              </Link>
+            </div>
+
+            {/* Personality card */}
+            <div className="rounded-[28px] border p-10 flex flex-col" style={{ background: '#fffbeb', borderColor: '#fde68a' }} dir="rtl">
+              <p className="text-[11px] font-medium uppercase tracking-[0.12em] mb-6" style={{ color: '#D97706' }}>
+                تقييم الشخصية
+              </p>
+              <h2 className="text-3xl font-bold mb-4 leading-snug tracking-tight" style={{ color: '#1d1d1f' }}>
+                ما هي نقاط القوة الحقيقية لشخصية طفلك؟
+              </h2>
+              <p className="text-sm leading-relaxed mb-8 flex-1" style={{ color: '#92400e' }}>
+                استبيان مجاني يُقيّمه الوالدان بناءً على إطار نقاط القوة VIA العالمي. يحدد 24 سمة شخصية عبر 6 فضائل أساسية ويُنشئ تقريراً مخصصاً للنمو بالذكاء الاصطناعي.
+              </p>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs mb-8" style={{ color: '#92400e' }}>
+                <span>24 سمة</span>
+                <span>·</span>
+                <span>6 فضائل</span>
+                <span>·</span>
+                <span>6–20 سنة</span>
+                <span>·</span>
+                <span>مجاني</span>
+              </div>
+              <Link
+                href="/ar/taqyim-al-shakhsiya"
+                className="px-7 py-3 rounded-full text-sm font-medium transition-colors text-center"
+                style={{ background: '#D97706', color: '#fff' }}
+              >
+                استكشف تقييم الشخصية
+              </Link>
+              <Link href="#shakhsiya" className="text-center text-xs transition-colors mt-4 py-4 block" style={{ color: '#92400e' }}>
                 اعرف المزيد ↓
               </Link>
             </div>
@@ -556,11 +619,74 @@ export default function ArabicHomePage() {
         </div>
       </section>
 
+      {/* ── Personality section ───────────────────────────────────────────── */}
+      <section id="shakhsiya" className="py-32 bg-white" dir="rtl">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="inline-block text-xs font-medium uppercase tracking-[0.15em] border px-3 py-1.5 rounded-full mb-5" style={{ color: '#D97706', background: '#fffbeb', borderColor: '#fde68a' }}>
+              تقييم الشخصية · 6–20 سنة
+            </span>
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              اكتشف نقاط القوة الحقيقية لشخصية طفلك.
+            </h2>
+            <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
+              استبيان مجاني يُقيّمه الوالدان بناءً على إطار نقاط القوة VIA العالمي — يحدد 24 سمة شخصية عبر 6 فضائل أساسية ويُنشئ تقريراً مخصصاً بالذكاء الاصطناعي.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+            {[
+              { virtue: 'الحكمة', traits: 'الفضول · الإبداع · حب التعلم · المنظور · الحكم' },
+              { virtue: 'الشجاعة', traits: 'الشجاعة · المثابرة · الصدق · الحيوية' },
+              { virtue: 'الإنسانية', traits: 'الحب · اللطف · الذكاء الاجتماعي' },
+              { virtue: 'العدالة', traits: 'العمل الجماعي · الإنصاف · القيادة' },
+              { virtue: 'الاعتدال', traits: 'العفو · التواضع · الحكمة · ضبط النفس' },
+              { virtue: 'التسامي', traits: 'الامتنان · الأمل · الفكاهة · تقدير الجمال · الروحانية' },
+            ].map(({ virtue, traits }) => (
+              <div key={virtue} className="rounded-3xl p-6 border" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+                <h3 className="font-bold mb-2" style={{ color: '#92400e' }}>{virtue}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: '#92400e' }}>{traits}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="rounded-3xl border p-8 mb-8" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+            <h3 className="font-bold text-[#1d1d1f] mb-4 text-lg">ما يتضمنه التقرير</h3>
+            <ul className="space-y-2">
+              {[
+                'ترتيب نقاط القوة الـ 24 من الأعلى إلى الأدنى',
+                'تحليل الفضائل الست الأساسية',
+                'توصيات مخصصة للنمو بالذكاء الاصطناعي',
+                'اقتراحات أنشطة لتنمية نقاط القوة',
+                'تقرير شامل قابل للطباعة',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm" style={{ color: '#92400e' }}>
+                  <svg className="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="#D97706" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/ar/taqyim-al-shakhsiya"
+              className="inline-block px-10 py-4 rounded-full text-sm font-semibold transition-colors"
+              style={{ background: '#D97706', color: '#fff' }}
+            >
+              ابدأ تقييم الشخصية ←
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── What you get ──────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] py-32">
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] text-center mb-14">ما ستحصل عليه</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] p-8">
               <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-wider mb-5">التقييم الأكاديمي</p>
@@ -587,6 +713,32 @@ export default function ArabicHomePage() {
                 </CtaLink>
                 <Link href="/ar/taqrir-namudhaji" className="text-sm font-semibold text-[#a1a1a7] hover:text-white transition-colors">
                   شاهد تقريراً نموذجياً ←
+                </Link>
+              </div>
+            </div>
+
+            <div className="rounded-3xl border p-8" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+              <p className="text-[10px] font-semibold uppercase tracking-wider mb-5" style={{ color: '#D97706' }}>تقييم الشخصية</p>
+              <ul className="space-y-3">
+                {[
+                  'ترتيب نقاط القوة الـ 24 من الأعلى إلى الأدنى',
+                  'تحليل الفضائل الست الأساسية',
+                  'توصيات مخصصة للنمو بالذكاء الاصطناعي',
+                  'اقتراحات أنشطة لتنمية نقاط القوة',
+                  'مناسب للأعمار 6–20 سنة',
+                  'تقرير شامل قابل للطباعة',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm" style={{ color: '#92400e' }}>
+                    <svg className="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="#D97706" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-7 pt-6 border-t" style={{ borderColor: '#fde68a' }}>
+                <Link href="/ar/taqyim-al-shakhsiya" className="inline-block px-6 py-2.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
+                  ابدأ تقييم الشخصية ←
                 </Link>
               </div>
             </div>
@@ -680,7 +832,7 @@ export default function ArabicHomePage() {
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] py-32 px-6">
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">التقييم الأكاديمي</p>
             <h2 className="text-2xl font-bold text-white mb-3">اكتشف أين يقف طفلك على المستوى الدولي.</h2>
@@ -688,6 +840,14 @@ export default function ArabicHomePage() {
             <CtaLink href="/ar/auth/register" label="bottom_cta_academic_ar" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               ابدأ التقييم المجاني ←
             </CtaLink>
+          </div>
+          <div className="text-center rounded-3xl border p-10 flex flex-col items-center" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+            <p className="text-[10px] font-semibold uppercase tracking-widest mb-4" style={{ color: '#D97706' }}>تقييم الشخصية</p>
+            <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">اكتشف نقاط القوة الحقيقية لشخصية طفلك.</h2>
+            <p className="text-sm mb-8" style={{ color: '#92400e' }}>24 سمة شخصية · 6 فضائل · تقرير بالذكاء الاصطناعي.</p>
+            <Link href="/ar/taqyim-al-shakhsiya" className="px-8 py-3.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
+              ابدأ تقييم الشخصية ←
+            </Link>
           </div>
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">تقييم التدريب</p>

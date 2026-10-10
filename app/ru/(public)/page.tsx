@@ -9,9 +9,9 @@ import { BLOG_POSTS_RU } from '@/app/blog/posts-ru'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Адаптивные оценки и стажировка для детей',
+  title: 'Адаптивные оценки, личность и стажировка для детей',
   description:
-    'Бесплатные оценки для детей 6–17 лет — международный академический бенчмаркинг. Оценка готовности к стажировке от 14 лет.',
+    'Бесплатные оценки для детей 6–17 лет — международный академический бенчмаркинг. Оценка личности и сильных сторон VIA для детей 6–20 лет. Оценка готовности к стажировке от 14 лет.',
   keywords: [
     'бесплатная академическая оценка дети',
     'международный бенчмаркинг дети Великобритания',
@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     'профориентационная оценка ученик',
     'бесплатный тест для детей',
     'вербальное невербальное мышление тест',
+    'бесплатная оценка личности ребёнка',
+    'тест сильных сторон характера VIA дети',
+    'бесплатный тест личности для детей',
+    'позитивная психология оценка детей',
+    'сильные стороны ребёнка тест бесплатно',
   ],
   alternates: {
     canonical: `${BASE_URL}/ru`,
@@ -33,15 +38,15 @@ export const metadata: Metadata = {
   openGraph: {
     url: `${BASE_URL}/ru`,
     siteName: 'Eduentry',
-    title: 'Eduentry — Платформа академической оценки и готовности к стажировке',
-    description: 'Бесплатные адаптивные оценки на основе той же науки, что PISA, GCSE и SAT. Академический бенчмаркинг для детей 6–17 лет и оценка стажировки для учеников от 14 лет.',
+    title: 'Eduentry — Платформа академической оценки, оценки личности и стажировки',
+    description: 'Бесплатные адаптивные оценки на основе той же науки, что PISA, GCSE и SAT. Академический бенчмаркинг для детей 6–17 лет, оценка личности и сильных сторон VIA для детей 6–20 лет, и оценка стажировки для учеников от 14 лет.',
     locale: 'ru_RU',
-    images: [{ url: `${BASE_URL}/ru/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — Платформа академической оценки и готовности к стажировке' }],
+    images: [{ url: `${BASE_URL}/ru/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — Платформа академической оценки, оценки личности и стажировки' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Eduentry — Платформа академической оценки и готовности к стажировке',
-    description: 'Бесплатные адаптивные оценки на основе той же науки, что PISA, GCSE и SAT. Академический бенчмаркинг для детей 6–17 лет и оценка стажировки для учеников от 14 лет.',
+    title: 'Eduentry — Платформа академической оценки, оценки личности и стажировки',
+    description: 'Бесплатные адаптивные оценки на основе той же науки, что PISA, GCSE и SAT. Академический бенчмаркинг для детей 6–17 лет, оценка личности и сильных сторон VIA для детей 6–20 лет, и оценка стажировки для учеников от 14 лет.',
     images: [`${BASE_URL}/ru/opengraph-image`],
   },
 }
@@ -84,6 +89,7 @@ const FAQ_RU = [
   { q: 'Сколько времени занимает каждая оценка?', a: 'Академическая оценка содержит 60 вопросов по 4 предметам — большинство детей завершают её менее чем за час. Оценка стажировки содержит 34 вопроса — большинство учеников завершают её примерно за 20 минут. Прогресс сохраняется автоматически, поэтому обе оценки можно делать с паузами.' },
   { q: 'Как работает адаптивная технология?', a: 'Eduentry использует оценивание MAP с двухпараметрической логистической моделью (2PL) — ту же модель, что применяется в PISA, GCSE и SAT. После каждого ответа система обновляет оценку способностей ученика и выбирает следующий вопрос для максимизации точности измерения.' },
   { q: 'Можно ли добавить несколько детей?', a: 'Да. Один родительский аккаунт может содержать несколько профилей детей. У каждого ребёнка своя история оценок, баллы и персонализированные рекомендации. Количество детей, которых можно добавить, не ограничено.' },
+  { q: 'Что такое оценка личности?', a: 'Оценка личности — это бесплатный опросник на основе методики VIA «Сильные стороны характера», который заполняет родитель от имени ребёнка. Определяет 24 черты характера в 6 добродетелях — Мудрость, Смелость, Человечность, Справедливость, Умеренность и Трансцендентность — и создаёт персонализированный отчёт с рекомендациями ИИ для развития сильных сторон. Подходит для детей от 6 до 20 лет.' },
 ]
 
 const FAQ_SCHEMA_RU = {
@@ -168,7 +174,7 @@ const SOFTWARE_SCHEMA_RU = {
   url: 'https://eduentry.com',
   applicationCategory: 'EducationalApplication',
   operatingSystem: 'Web Browser',
-  description: 'Бесплатные адаптивные оценки на базе ИИ для учащихся от 6 лет.',
+  description: 'Бесплатные адаптивные оценки на базе ИИ для учащихся от 6 лет — академическая оценка, оценка личности и сильных сторон VIA, оценка готовности к стажировке.',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Бесплатно — без подписки' },
   aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
   review: [
@@ -181,6 +187,30 @@ const SOFTWARE_SCHEMA_RU = {
   ],
 }
 
+const PERSONALITY_PROGRAM_SCHEMA_RU = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Оценка личности и сильных сторон характера — 6–20 лет',
+  description: 'Бесплатный опросник для родителей на основе методики VIA «Сильные стороны характера». Определяет 24 черты характера в 6 добродетелях и создаёт персонализированный отчёт с рекомендациями ИИ.',
+  url: 'https://eduentry.com/ru/otsenka-lichnosti',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Отчёт о сильных сторонах характера', credentialCategory: 'certificate' },
+  timeToComplete: 'PT15M',
+  educationalProgramMode: 'online',
+  inLanguage: 'ru',
+  typicalAgeRange: '6-20',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'RUB', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'Предварительных требований нет — заполняется родителем от имени ребёнка',
+  hasCourse: [
+    { '@type': 'Course', name: 'Мудрость', description: 'Любопытство, Творчество, Любовь к учёбе, Перспектива, Суждение' },
+    { '@type': 'Course', name: 'Смелость', description: 'Храбрость, Настойчивость, Честность, Жизнерадостность' },
+    { '@type': 'Course', name: 'Человечность', description: 'Любовь, Доброта, Социальный интеллект' },
+    { '@type': 'Course', name: 'Справедливость', description: 'Командная работа, Справедливость, Лидерство' },
+    { '@type': 'Course', name: 'Умеренность', description: 'Прощение, Скромность, Благоразумие, Самоконтроль' },
+    { '@type': 'Course', name: 'Трансцендентность', description: 'Благодарность, Надежда, Юмор, Ценность красоты, Духовность' },
+  ],
+}
+
 export default function RussianHomePage() {
   return (
     <main className="min-h-screen bg-white" lang="ru">
@@ -189,6 +219,7 @@ export default function RussianHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_RU) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA_RU) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA_RU) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSONALITY_PROGRAM_SCHEMA_RU) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_RU) }} />
 
       {/* Hero */}
@@ -203,10 +234,10 @@ export default function RussianHomePage() {
             <span className="text-[#818CF8]">в нужное время.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
-            Бесплатные адаптивные оценки на основе той же науки, что PISA, GCSE и SAT.
+            Три бесплатные оценки — академическая, личности и готовности к стажировке.
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-4xl mx-auto text-left">
+          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 max-w-6xl mx-auto text-left">
 
             {/* Academic card */}
             <div className="bg-[#2d2d2f] rounded-[28px] border border-[#424245] p-10 flex flex-col">
@@ -237,6 +268,38 @@ export default function RussianHomePage() {
                 Начать бесплатную оценку
               </CtaLink>
               <Link href="#akademicheskaya" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
+                Узнать больше ↓
+              </Link>
+            </div>
+
+            {/* Personality card */}
+            <div className="rounded-[28px] border p-10 flex flex-col" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+              <p className="text-[11px] font-medium uppercase tracking-[0.12em] mb-6" style={{ color: '#D97706' }}>
+                Оценка личности
+              </p>
+              <h2 className="text-3xl font-bold mb-4 leading-snug tracking-tight" style={{ color: '#1d1d1f' }}>
+                Каковы настоящие сильные стороны характера вашего ребёнка?
+              </h2>
+              <p className="text-sm leading-relaxed mb-8 flex-1" style={{ color: '#92400e' }}>
+                Бесплатный опросник для родителей на основе методики VIA «Сильные стороны характера» — 24 черты в 6 добродетелях, персонализированный отчёт ИИ о росте.
+              </p>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs mb-8" style={{ color: '#92400e' }}>
+                <span>24 черты</span>
+                <span>·</span>
+                <span>6 добродетелей</span>
+                <span>·</span>
+                <span>6–20 лет</span>
+                <span>·</span>
+                <span>Бесплатно</span>
+              </div>
+              <Link
+                href="/ru/otsenka-lichnosti"
+                className="px-7 py-3 rounded-full text-sm font-medium transition-colors text-center"
+                style={{ background: '#D97706', color: '#fff' }}
+              >
+                Исследовать оценку личности
+              </Link>
+              <Link href="#lichnost" className="text-center text-xs transition-colors mt-4 py-4 block" style={{ color: '#92400e' }}>
                 Узнать больше ↓
               </Link>
             </div>
@@ -549,11 +612,74 @@ export default function RussianHomePage() {
         </div>
       </section>
 
+      {/* Personality section */}
+      <section id="lichnost" className="py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="inline-block text-xs font-medium uppercase tracking-[0.15em] border px-3 py-1.5 rounded-full mb-5" style={{ color: '#D97706', background: '#fffbeb', borderColor: '#fde68a' }}>
+              Оценка личности · 6–20 лет
+            </span>
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              Откройте настоящие сильные стороны личности вашего ребёнка.
+            </h2>
+            <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
+              Бесплатный опросник для родителей на основе методики VIA «Сильные стороны характера» — определяет 24 черты в 6 добродетелях и создаёт персонализированный отчёт ИИ.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+            {[
+              { virtue: 'Мудрость', traits: 'Любопытство · Творчество · Любовь к учёбе · Перспектива · Суждение' },
+              { virtue: 'Смелость', traits: 'Храбрость · Настойчивость · Честность · Жизнерадостность' },
+              { virtue: 'Человечность', traits: 'Любовь · Доброта · Социальный интеллект' },
+              { virtue: 'Справедливость', traits: 'Командная работа · Справедливость · Лидерство' },
+              { virtue: 'Умеренность', traits: 'Прощение · Скромность · Благоразумие · Самоконтроль' },
+              { virtue: 'Трансцендентность', traits: 'Благодарность · Надежда · Юмор · Ценность красоты · Духовность' },
+            ].map(({ virtue, traits }) => (
+              <div key={virtue} className="rounded-3xl p-6 border" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+                <h3 className="font-bold mb-2" style={{ color: '#92400e' }}>{virtue}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: '#92400e' }}>{traits}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="rounded-3xl border p-8 mb-8" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+            <h3 className="font-bold text-[#1d1d1f] mb-4 text-lg">Что включает отчёт</h3>
+            <ul className="space-y-2">
+              {[
+                'Рейтинг всех 24 сильных сторон от высшей к низшей',
+                'Анализ шести основных добродетелей',
+                'Персонализированные рекомендации ИИ для роста',
+                'Предложения активностей для развития сильных сторон',
+                'Полный отчёт для печати',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm" style={{ color: '#92400e' }}>
+                  <svg className="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="#D97706" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/ru/otsenka-lichnosti"
+              className="inline-block px-10 py-4 rounded-full text-sm font-semibold transition-colors"
+              style={{ background: '#D97706', color: '#fff' }}
+            >
+              Начать оценку личности →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* What you get */}
       <section className="bg-[#1d1d1f] py-32">
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] text-center mb-14">Что вы получаете</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] p-8">
               <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-wider mb-5">Академическая оценка</p>
@@ -580,6 +706,32 @@ export default function RussianHomePage() {
                 </CtaLink>
                 <Link href="/ru/primer-otcheta" className="text-sm font-semibold text-[#a1a1a7] hover:text-white transition-colors">
                   Посмотреть пример отчёта →
+                </Link>
+              </div>
+            </div>
+
+            <div className="rounded-3xl border p-8" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+              <p className="text-[10px] font-semibold uppercase tracking-wider mb-5" style={{ color: '#D97706' }}>Оценка личности</p>
+              <ul className="space-y-3">
+                {[
+                  'Рейтинг всех 24 сильных сторон характера',
+                  'Анализ шести основных добродетелей',
+                  'Персонализированные рекомендации ИИ',
+                  'Предложения активностей для роста',
+                  'Подходит для детей 6–20 лет',
+                  'Полный отчёт для печати',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm" style={{ color: '#92400e' }}>
+                    <svg className="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="#D97706" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-7 pt-6 border-t" style={{ borderColor: '#fde68a' }}>
+                <Link href="/ru/otsenka-lichnosti" className="inline-block px-6 py-2.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
+                  Начать оценку личности →
                 </Link>
               </div>
             </div>
@@ -673,7 +825,7 @@ export default function RussianHomePage() {
 
       {/* CTA */}
       <section className="bg-[#1d1d1f] py-32 px-6">
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">Академическая оценка</p>
             <h2 className="text-2xl font-bold text-white mb-3">Узнайте глобальную позицию вашего ребёнка.</h2>
@@ -681,6 +833,14 @@ export default function RussianHomePage() {
             <CtaLink href="/ru/auth/register" label="bottom_cta_academic_ru" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Начать бесплатную оценку →
             </CtaLink>
+          </div>
+          <div className="text-center rounded-3xl border p-10 flex flex-col items-center" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+            <p className="text-[10px] font-semibold uppercase tracking-widest mb-4" style={{ color: '#D97706' }}>Оценка личности</p>
+            <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Откройте настоящие сильные стороны характера ребёнка.</h2>
+            <p className="text-sm mb-8" style={{ color: '#92400e' }}>24 черты · 6 добродетелей · Отчёт ИИ.</p>
+            <Link href="/ru/otsenka-lichnosti" className="px-8 py-3.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
+              Начать оценку личности →
+            </Link>
           </div>
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Оценка стажировки</p>

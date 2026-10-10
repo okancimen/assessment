@@ -9,9 +9,9 @@ import { BLOG_POSTS_ZH } from '@/app/blog/posts-zh'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: '学术评估与实习准备平台',
+  title: '学术评估、性格评估与实习准备平台',
   description:
-    '面向各学习阶段学生的免费自适应评估——为6–17岁儿童提供国际学术基准比较，为14岁以上高中生提供实习准备测评。',
+    '面向各学习阶段学生的免费自适应评估——为6–17岁儿童提供国际学术基准比较，为6–20岁儿童提供VIA性格优势评估，为14岁以上高中生提供实习准备测评。',
   keywords: [
     '免费儿童学术评估',
     '国际学术基准英国',
@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     '职业能力测试',
     '免费学生测试',
     '语言推理非语言推理测试',
+    '免费儿童性格评估',
+    'VIA品格优势测试儿童',
+    '免费儿童性格测试',
+    '积极心理学儿童评估',
+    '儿童优势与成长领域测试',
   ],
   alternates: {
     canonical: `${BASE_URL}/zh`,
@@ -41,15 +46,15 @@ export const metadata: Metadata = {
   openGraph: {
     url: `${BASE_URL}/zh`,
     siteName: 'Eduentry',
-    title: 'Eduentry — 学术评估与实习准备平台',
-    description: '基于与PISA、GCSE和SAT相同科学的免费自适应评估。面向6–17岁儿童的学术基准测评与14岁以上学生的实习准备评估。',
+    title: 'Eduentry — 学术评估、性格评估与实习准备平台',
+    description: '基于与PISA、GCSE和SAT相同科学的免费自适应评估。面向6–17岁儿童的学术基准测评、6–20岁儿童的VIA性格优势评估，以及14岁以上学生的实习准备评估。',
     locale: 'zh_CN',
-    images: [{ url: `${BASE_URL}/zh/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — 学术评估与实习准备平台' }],
+    images: [{ url: `${BASE_URL}/zh/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry — 学术评估、性格评估与实习准备平台' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Eduentry — 学术评估与实习准备平台',
-    description: '基于与PISA、GCSE和SAT相同科学的免费自适应评估。面向6–17岁儿童的学术基准测评与14岁以上学生的实习准备评估。',
+    title: 'Eduentry — 学术评估、性格评估与实习准备平台',
+    description: '基于与PISA、GCSE和SAT相同科学的免费自适应评估。面向6–17岁儿童的学术基准测评、6–20岁儿童的VIA性格优势评估，以及14岁以上学生的实习准备评估。',
     images: [`${BASE_URL}/zh/opengraph-image`],
   },
 }
@@ -92,6 +97,7 @@ const FAQ_ZH = [
   { q: '每项评估需要多长时间？', a: '学术评估包含4个科目60道题——大多数儿童在一小时内完成。实习评估包含34道题——大多数学生约20分钟完成。进度自动保存，两项评估均可分次完成。' },
   { q: '自适应技术如何工作？', a: 'Eduentry使用两参数逻辑模型（2PL）的MAP评估——与PISA、GCSE和SAT使用的模型相同。每次回答后，系统更新学生的能力估计，并选择下一道题以最大化测量精度。' },
   { q: '可以添加多个孩子吗？', a: '可以。一个家长账户可以包含多个孩子的档案。每个孩子都有自己的评估历史、分数和个性化建议。可添加的孩子数量没有限制。' },
+  { q: '什么是性格评估？', a: '性格评估是基于VIA品格优势框架的免费问卷，由家长代为填写。识别6大美德下的24项品格特质——智慧、勇气、仁爱、公正、节制和超越——并生成个性化AI成长报告，包含实用的优势发展建议。适合6至20岁儿童。' },
 ]
 
 const FAQ_SCHEMA_ZH = {
@@ -176,7 +182,7 @@ const SOFTWARE_SCHEMA_ZH = {
   url: 'https://eduentry.com',
   applicationCategory: 'EducationalApplication',
   operatingSystem: 'Web Browser',
-  description: '免费AI自适应评估平台，适合6岁及以上学生。',
+  description: '免费AI自适应评估平台，适合6岁及以上学生——涵盖学术评估、VIA性格优势评估和实习准备评估。',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: '免费 — 无需订阅' },
   aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
   review: [
@@ -189,6 +195,30 @@ const SOFTWARE_SCHEMA_ZH = {
   ],
 }
 
+const PERSONALITY_PROGRAM_SCHEMA_ZH = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: '性格与品格优势评估 — 6至20岁',
+  description: '基于VIA品格优势框架的免费家长评估问卷。识别6大美德下的24项品格特质，生成个性化AI成长报告。',
+  url: 'https://eduentry.com/zh/xingge-pinggu',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: '品格优势报告', credentialCategory: 'certificate' },
+  timeToComplete: 'PT15M',
+  educationalProgramMode: 'online',
+  inLanguage: 'zh',
+  typicalAgeRange: '6-20',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'CNY', availability: 'https://schema.org/InStock' },
+  programPrerequisites: '无需任何前提条件 — 由家长代为填写',
+  hasCourse: [
+    { '@type': 'Course', name: '智慧', description: '好奇心、创造力、热爱学习、洞察力、判断力' },
+    { '@type': 'Course', name: '勇气', description: '勇敢、坚韧、诚实、活力' },
+    { '@type': 'Course', name: '仁爱', description: '爱、善良、社交智慧' },
+    { '@type': 'Course', name: '公正', description: '团队合作、公平、领导力' },
+    { '@type': 'Course', name: '节制', description: '宽恕、谦逊、审慎、自我调节' },
+    { '@type': 'Course', name: '超越', description: '感恩、希望、幽默、欣赏美、精神性' },
+  ],
+}
+
 export default function ChineseHomePage() {
   return (
     <main className="min-h-screen bg-white" lang="zh">
@@ -197,6 +227,7 @@ export default function ChineseHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SOFTWARE_SCHEMA_ZH) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA_ZH) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA_ZH) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSONALITY_PROGRAM_SCHEMA_ZH) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA_ZH) }} />
 
       {/* Hero */}
@@ -211,10 +242,10 @@ export default function ChineseHomePage() {
             <span className="text-[#818CF8]">正确的评估。</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
-            基于与PISA、GCSE和SAT相同科学的免费自适应评估。
+            三项免费评估——学术、性格与实习准备。
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-4xl mx-auto text-left">
+          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 max-w-6xl mx-auto text-left">
 
             {/* Academic card */}
             <div className="bg-[#2d2d2f] rounded-[28px] border border-[#424245] p-10 flex flex-col">
@@ -244,6 +275,38 @@ export default function ChineseHomePage() {
                 开始免费评估
               </CtaLink>
               <Link href="#xueshu-pinggu" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
+                了解更多 ↓
+              </Link>
+            </div>
+
+            {/* Personality card */}
+            <div className="rounded-[28px] border p-10 flex flex-col" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+              <p className="text-[11px] font-medium uppercase tracking-[0.12em] mb-6" style={{ color: '#D97706' }}>
+                性格评估
+              </p>
+              <h2 className="text-3xl font-bold mb-4 leading-snug tracking-tight" style={{ color: '#1d1d1f' }}>
+                孩子真正的品格优势是什么？
+              </h2>
+              <p className="text-sm leading-relaxed mb-8 flex-1" style={{ color: '#92400e' }}>
+                基于VIA品格优势框架的免费家长评估问卷——识别6大美德下的24项品格特质，生成个性化AI成长报告。
+              </p>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs mb-8" style={{ color: '#92400e' }}>
+                <span>24项品格特质</span>
+                <span>·</span>
+                <span>6大美德</span>
+                <span>·</span>
+                <span>6–20岁</span>
+                <span>·</span>
+                <span>免费</span>
+              </div>
+              <Link
+                href="/zh/xingge-pinggu"
+                className="px-7 py-3 rounded-full text-sm font-medium transition-colors text-center"
+                style={{ background: '#D97706', color: '#fff' }}
+              >
+                探索性格评估
+              </Link>
+              <Link href="#xingge" className="text-center text-xs transition-colors mt-4 py-4 block" style={{ color: '#92400e' }}>
                 了解更多 ↓
               </Link>
             </div>
@@ -550,11 +613,74 @@ export default function ChineseHomePage() {
         </div>
       </section>
 
+      {/* Personality section */}
+      <section id="xingge" className="py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="inline-block text-xs font-medium uppercase tracking-[0.15em] border px-3 py-1.5 rounded-full mb-5" style={{ color: '#D97706', background: '#fffbeb', borderColor: '#fde68a' }}>
+              性格评估 · 6–20岁
+            </span>
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              探索孩子真正的品格优势。
+            </h2>
+            <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
+              基于VIA品格优势框架的免费家长评估问卷——识别6大美德下的24项品格特质，生成个性化AI成长报告。
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+            {[
+              { virtue: '智慧', traits: '好奇心 · 创造力 · 热爱学习 · 洞察力 · 判断力' },
+              { virtue: '勇气', traits: '勇敢 · 坚韧 · 诚实 · 活力' },
+              { virtue: '仁爱', traits: '爱 · 善良 · 社交智慧' },
+              { virtue: '公正', traits: '团队合作 · 公平 · 领导力' },
+              { virtue: '节制', traits: '宽恕 · 谦逊 · 审慎 · 自我调节' },
+              { virtue: '超越', traits: '感恩 · 希望 · 幽默 · 欣赏美 · 精神性' },
+            ].map(({ virtue, traits }) => (
+              <div key={virtue} className="rounded-3xl p-6 border" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+                <h3 className="font-bold mb-2" style={{ color: '#92400e' }}>{virtue}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: '#92400e' }}>{traits}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="rounded-3xl border p-8 mb-8" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+            <h3 className="font-bold text-[#1d1d1f] mb-4 text-lg">报告包含内容</h3>
+            <ul className="space-y-2">
+              {[
+                '24项品格特质从强到弱完整排名',
+                '六大美德维度深度分析',
+                'AI个性化成长建议',
+                '针对优势特质的活动建议',
+                '完整可打印报告',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm" style={{ color: '#92400e' }}>
+                  <svg className="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="#D97706" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/zh/xingge-pinggu"
+              className="inline-block px-10 py-4 rounded-full text-sm font-semibold transition-colors"
+              style={{ background: '#D97706', color: '#fff' }}
+            >
+              开始性格评估 →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* What you get */}
       <section className="bg-[#1d1d1f] py-32">
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] text-center mb-14">您将获得什么</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] p-8">
               <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-wider mb-5">学术评估</p>
@@ -581,6 +707,32 @@ export default function ChineseHomePage() {
                 </CtaLink>
                 <Link href="/zh/yangben-baogao" className="text-sm font-semibold text-[#a1a1a7] hover:text-white transition-colors">
                   查看报告样本 →
+                </Link>
+              </div>
+            </div>
+
+            <div className="rounded-3xl border p-8" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+              <p className="text-[10px] font-semibold uppercase tracking-wider mb-5" style={{ color: '#D97706' }}>性格评估</p>
+              <ul className="space-y-3">
+                {[
+                  '24项品格特质完整排名',
+                  '六大美德深度分析',
+                  'AI个性化成长建议',
+                  '优势特质发展活动建议',
+                  '适合6–20岁儿童',
+                  '可打印完整报告',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm" style={{ color: '#92400e' }}>
+                    <svg className="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="#D97706" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-7 pt-6 border-t" style={{ borderColor: '#fde68a' }}>
+                <Link href="/zh/xingge-pinggu" className="inline-block px-6 py-2.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
+                  开始性格评估 →
                 </Link>
               </div>
             </div>
@@ -674,7 +826,7 @@ export default function ChineseHomePage() {
 
       {/* CTA */}
       <section className="bg-[#1d1d1f] py-32 px-6">
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">学术评估</p>
             <h2 className="text-2xl font-bold text-white mb-3">了解孩子的全球学术位置。</h2>
@@ -682,6 +834,14 @@ export default function ChineseHomePage() {
             <CtaLink href="/zh/auth/register" label="bottom_cta_academic_zh" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               开始免费评估 →
             </CtaLink>
+          </div>
+          <div className="text-center rounded-3xl border p-10 flex flex-col items-center" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
+            <p className="text-[10px] font-semibold uppercase tracking-widest mb-4" style={{ color: '#D97706' }}>性格评估</p>
+            <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">探索孩子真正的品格优势。</h2>
+            <p className="text-sm mb-8" style={{ color: '#92400e' }}>24项特质 · 6大美德 · AI成长报告。</p>
+            <Link href="/zh/xingge-pinggu" className="px-8 py-3.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
+              开始性格评估 →
+            </Link>
           </div>
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">实习评估</p>
