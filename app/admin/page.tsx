@@ -2,7 +2,6 @@ import { createClient as createAuthClient } from '@/lib/supabase/server'
 import { createClient } from '@supabase/supabase-js'
 import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
-import Navbar from '@/components/dashboard/Navbar'
 import DateRangePicker from '@/components/admin/DateRangePicker'
 import UsersTable from '@/components/admin/UsersTable'
 import { AdminGrowthChart, AdminAssessmentsChart, AdminFunnelChart } from '@/components/admin/AdminCharts'
@@ -228,69 +227,79 @@ export default async function AdminPage({
   const periodLabel = `${new Date(fromISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })} – ${new Date(toISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`
 
   return (
-    <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
-      <Navbar isAdmin />
-      <main className="flex-1 max-w-5xl mx-auto w-full px-4 sm:px-6 py-10 space-y-8">
+    <main className="px-8 py-10 space-y-6">
 
-        {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div>
-            <h1 className="text-2xl font-bold text-[#1d1d1f] tracking-tight">Platform statistics</h1>
-            <p className="text-sm text-[#6e6e73] mt-0.5">{periodLabel}</p>
-          </div>
+      {/* Header + date picker */}
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+        <div>
+          <h1 className="text-xl font-semibold" style={{ color: '#0F172A' }}>Overview</h1>
+          <p className="text-sm mt-0.5" style={{ color: '#64748B' }}>{periodLabel}</p>
         </div>
-
-        {/* Date picker */}
         <Suspense>
           <DateRangePicker from={from} to={to} />
         </Suspense>
+      </div>
 
-        {/* Growth summary cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {/* Metrics strip */}
+      <div className="bg-white rounded-xl border overflow-hidden" style={{ borderColor: '#E2E6EF' }}>
+        <div className="grid grid-cols-2 sm:grid-cols-4">
           {[
-            { label: 'New registrations', value: newUsers,     color: '#4F46E5' },
-            { label: 'Children added',    value: newChildren,  color: '#0D9488' },
-            { label: 'Assessments started',  value: newStarted,   color: '#7C3AED' },
-            { label: 'Assessments completed',value: newCompleted, color: '#22C55E' },
-          ].map(({ label, value, color }) => (
-            <div key={label} className="bg-white rounded-3xl border border-[#d2d2d7] p-5">
-              <div className="text-3xl font-extrabold tabular-nums" style={{ color }}>
+            { label: 'New registrations',    value: newUsers,     primary: true  },
+            { label: 'Children added',        value: newChildren,  primary: false },
+            { label: 'Assessments started',   value: newStarted,   primary: false },
+            { label: 'Assessments completed', value: newCompleted, primary: false },
+          ].map(({ label, value, primary }, i) => (
+            <div
+              key={label}
+              className={[
+                'px-6 py-5 relative',
+                i < 3 ? 'border-r border-[#E2E6EF]' : '',
+                i < 2 ? 'border-b border-[#E2E6EF] sm:border-b-0' : '',
+              ].filter(Boolean).join(' ')}
+            >
+              {primary && (
+                <div className="absolute top-0 left-0 right-0 h-[3px]" style={{ backgroundColor: '#C9883A' }} />
+              )}
+              <div
+                className="text-[40px] font-extrabold tabular-nums leading-none tracking-tight"
+                style={{ color: '#0F172A' }}
+              >
                 {value.toLocaleString()}
               </div>
-              <div className="text-xs text-[#6e6e73] mt-1 font-medium leading-tight">{label}</div>
+              <div className="text-xs mt-2 font-medium" style={{ color: '#64748B' }}>{label}</div>
             </div>
           ))}
         </div>
+      </div>
 
-        {/* Line chart — daily new users */}
-        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6">
-          <h2 className="text-sm font-semibold text-[#1d1d1f] mb-4">Daily new registrations</h2>
+      {/* Growth chart + funnel side by side */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div className="lg:col-span-2 bg-white rounded-xl border p-6" style={{ borderColor: '#E2E6EF' }}>
+          <h2 className="text-sm font-semibold mb-4" style={{ color: '#0F172A' }}>Daily registrations</h2>
           <AdminGrowthChart data={dailyData} />
         </div>
-
-        {/* Bar chart — assessments */}
-        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6">
-          <h2 className="text-sm font-semibold text-[#1d1d1f] mb-4">Daily assessments — started vs completed</h2>
-          <AdminAssessmentsChart data={dailyData} />
-        </div>
-
-        {/* Funnel */}
-        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6">
-          <h2 className="text-sm font-semibold text-[#1d1d1f] mb-1">Conversion funnel</h2>
-          <p className="text-xs text-[#6e6e73] mb-5">Unique users at each step within the selected period</p>
+        <div className="bg-white rounded-xl border p-6" style={{ borderColor: '#E2E6EF' }}>
+          <h2 className="text-sm font-semibold mb-1" style={{ color: '#0F172A' }}>Conversion funnel</h2>
+          <p className="text-xs mb-5" style={{ color: '#64748B' }}>Unique users at each step, within period</p>
           <AdminFunnelChart steps={funnelSteps} />
         </div>
+      </div>
 
-        {/* Registered users */}
-        <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
-          <div className="px-6 py-5 border-b border-[#f5f5f7]">
-            <h2 className="text-sm font-semibold text-[#1d1d1f]">Registered users</h2>
-            <p className="text-xs text-[#6e6e73] mt-0.5">{registeredUsers.length.toLocaleString()} total — all time</p>
-          </div>
-          <UsersTable users={registeredUsers} />
+      {/* Assessments chart */}
+      <div className="bg-white rounded-xl border p-6" style={{ borderColor: '#E2E6EF' }}>
+        <h2 className="text-sm font-semibold mb-4" style={{ color: '#0F172A' }}>Assessments — started vs completed</h2>
+        <AdminAssessmentsChart data={dailyData} />
+      </div>
+
+      {/* Users table */}
+      <div className="bg-white rounded-xl border overflow-hidden" style={{ borderColor: '#E2E6EF' }}>
+        <div className="px-6 py-5 border-b" style={{ borderColor: '#E2E6EF' }}>
+          <h2 className="text-sm font-semibold" style={{ color: '#0F172A' }}>Registered users</h2>
+          <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>{registeredUsers.length.toLocaleString()} total — all time</p>
         </div>
+        <UsersTable users={registeredUsers} />
+      </div>
 
-      </main>
-    </div>
+    </main>
   )
 }
