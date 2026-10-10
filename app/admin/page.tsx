@@ -229,7 +229,7 @@ export default async function AdminPage({
 
   return (
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
-      <Navbar />
+      <Navbar isAdmin />
       <main className="flex-1 max-w-5xl mx-auto w-full px-4 sm:px-6 py-10 space-y-8">
 
         {/* Header */}

@@ -139,7 +139,7 @@ export default async function AdminUserDetailPage({
 
   return (
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
-      <Navbar />
+      <Navbar isAdmin />
       <main className="max-w-3xl mx-auto w-full px-4 sm:px-6 py-10 space-y-6">
 
         <div className="flex items-center gap-3 mb-2">

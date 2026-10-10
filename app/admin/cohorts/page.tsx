@@ -53,7 +53,7 @@ export default function AdminCohortsPage() {
 
   return (
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
-      <Navbar />
+      <Navbar isAdmin />
       <main className="flex-1 max-w-4xl mx-auto w-full px-4 sm:px-6 py-10 space-y-8">
         <div className="flex items-center gap-3">
           <Link href="/admin/internship" className="text-sm text-[#4F46E5] hover:underline">← All candidates</Link>

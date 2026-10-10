@@ -5,6 +5,7 @@ export interface DashboardI18n {
   navDashboard: string
   navAddChild: string
   navSignOut: string
+  navAdmin: string
   homeHref: string
   dashboardHref: string
   // Page header
@@ -104,6 +105,7 @@ const en: DashboardI18n = {
   navDashboard: 'Dashboard',
   navAddChild: 'Add child',
   navSignOut: 'Sign out',
+  navAdmin: 'Admin',
   homeHref: '/',
   dashboardHref: '/dashboard',
   hello: 'Hello',
@@ -191,6 +193,7 @@ const tr: DashboardI18n = {
   navDashboard: 'Panel',
   navAddChild: 'Çocuk ekle',
   navSignOut: 'Çıkış yap',
+  navAdmin: 'Yönetim',
   homeHref: '/tr',
   dashboardHref: '/tr/dashboard',
   hello: 'Merhaba',
@@ -278,6 +281,7 @@ const es: DashboardI18n = {
   navDashboard: 'Panel',
   navAddChild: 'Añadir hijo',
   navSignOut: 'Cerrar sesión',
+  navAdmin: 'Admin',
   homeHref: '/es',
   dashboardHref: '/es/dashboard',
   hello: 'Hola',
@@ -365,6 +369,7 @@ const fr: DashboardI18n = {
   navDashboard: 'Tableau de bord',
   navAddChild: 'Ajouter un enfant',
   navSignOut: 'Se déconnecter',
+  navAdmin: 'Admin',
   homeHref: '/fr',
   dashboardHref: '/fr/dashboard',
   hello: 'Bonjour',
@@ -452,6 +457,7 @@ const ar: DashboardI18n = {
   navDashboard: 'لوحة التحكم',
   navAddChild: 'إضافة طفل',
   navSignOut: 'تسجيل الخروج',
+  navAdmin: 'الإدارة',
   homeHref: '/ar',
   dashboardHref: '/ar/dashboard',
   hello: 'مرحباً',
@@ -539,6 +545,7 @@ const ru: DashboardI18n = {
   navDashboard: 'Панель управления',
   navAddChild: 'Добавить ребёнка',
   navSignOut: 'Выйти',
+  navAdmin: 'Админ',
   homeHref: '/ru',
   dashboardHref: '/ru/dashboard',
   hello: 'Привет',
@@ -626,6 +633,7 @@ const zh: DashboardI18n = {
   navDashboard: '控制台',
   navAddChild: '添加孩子',
   navSignOut: '退出登录',
+  navAdmin: '管理',
   homeHref: '/zh',
   dashboardHref: '/zh/dashboard',
   hello: '你好',

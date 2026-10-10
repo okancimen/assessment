@@ -108,6 +108,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
 
   const hasChildren = children && children.length > 0
   const hasAssessments = assessments && assessments.length > 0
+  const pendingCount = (assessments || []).filter((a: AssessmentWithResult) => a.status === 'in_progress').length
 
   const { data: selfChild } = await supabase
     .from('children')
@@ -167,7 +168,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
 
   return (
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col" dir={t.dir}>
-      <Navbar locale={locale} />
+      <Navbar locale={locale} pendingCount={pendingCount} />
       <Suspense><ToastFromUrl /></Suspense>
       <main className="flex-1 max-w-5xl mx-auto w-full px-4 sm:px-6 py-10 space-y-8">
         {/* Header */}
