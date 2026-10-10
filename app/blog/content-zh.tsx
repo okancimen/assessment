@@ -3072,7 +3072,7 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
-  'xingge-youshi-yu-xueyechengjiu': (
+  'character-strengths-academic-success': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
         两个孩子。同一所学校，同一个辅导老师，同样的学习时间。到了16岁，一个成绩稳定优异，另一个聪明却时好时坏。在大多数情况下，原因并非认知能力——两个孩子都有足够的能力。差异在于性格，具体而言，是教育研究反复证实与学业成果相关的五项可测量特质。

@@ -3264,7 +3264,7 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
-  'quwat-al-shakhsiya-wa-al-tafawwuq-al-dirasi': (
+  'character-strengths-academic-success': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
         طفلان. نفس المدرسة، ونفس المدرس الخصوصي، ونفس ساعات الدراسة. في سن السادسة عشرة، يحقق أحدهما نتائج متميزة باستمرار، بينما الآخر ذكي لكنه غير منتظم. في أغلب الأحيان، لا يكمن التفسير في القدرات المعرفية؛ فكلا الطفلين يملكان الكفاءة. الفرق يكمن في الشخصية — وتحديداً في مجموعة من خمس صفات قابلة للقياس ربطها البحث التربوي مراراً بالنتائج الأكاديمية.

@@ -3941,7 +3941,7 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
-  'forces-de-caractere-reussite-scolaire': (
+  'character-strengths-academic-success': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
         Deux enfants. Le même lycée, le même tuteur, les mêmes heures de travail. À 16 ans, l&apos;un réussit de façon constante ; l&apos;autre est intelligent mais inconstant. Dans la plupart des cas, l&apos;explication n&apos;est pas cognitive : les deux enfants ont les capacités. La différence réside dans le caractère — précisément dans un ensemble de cinq traits mesurables que la recherche en éducation a maintes fois liés aux résultats scolaires.

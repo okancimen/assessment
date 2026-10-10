@@ -4012,7 +4012,7 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
-  'fortalezas-de-caracter-exito-escolar': (
+  'character-strengths-academic-success': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
         Dos niños. El mismo colegio, el mismo tutor, las mismas horas de estudio. A los 16 años, uno alcanza sistemáticamente buenos resultados; el otro es inteligente pero inconsistente. En la mayoría de los casos, la explicación no es cognitiva: ambos niños tienen la capacidad. La diferencia está en el carácter — concretamente, en un conjunto de cinco rasgos medibles que la investigación educativa ha relacionado repetidamente con los resultados académicos.

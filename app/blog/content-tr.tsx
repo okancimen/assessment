@@ -6730,7 +6730,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
-  'cocugumun-guclu-yonleri-ve-akademik-basari': (
+  'character-strengths-academic-success': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
         İki çocuk. Aynı okul, aynı özel öğretmen, aynı ders çalışma saatleri. 16 yaşında biri tutarlı biçimde yüksek başarılı, diğeri zeki ama tutarsız. Çoğu durumda açıklama bilişsel değildir: her iki çocuğun da kapasitesi var. Fark karakterde — özellikle eğitim araştırmalarının tekrar tekrar akademik sonuçlarla ilişkilendirdiği, ölçülebilir beş özellikten oluşan bir kümede.
