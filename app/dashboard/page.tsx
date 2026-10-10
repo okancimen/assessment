@@ -92,10 +92,17 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
 
   const latestScores: Record<string, { score: number; assessmentId: string }> = {}
   const assessmentCounts: Record<string, number> = {}
+  const latestAcademicStatus: Record<string, { status: string; score: number | null }> = {}
   for (const a of (assessments || []) as AssessmentWithResult[]) {
     assessmentCounts[a.child_id] = (assessmentCounts[a.child_id] || 0) + 1
     if (a.status === 'completed' && a.results && !latestScores[a.child_id]) {
       latestScores[a.child_id] = { score: a.results.standardized_score, assessmentId: a.id }
+    }
+    if (!latestAcademicStatus[a.child_id]) {
+      latestAcademicStatus[a.child_id] = {
+        status: a.status,
+        score: a.results?.standardized_score ?? null,
+      }
     }
   }
 
@@ -247,17 +254,17 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                       <p className="text-xs text-[#6e6e73] mt-0.5">
                         {t.age} {getAge(child.date_of_birth)} · {t.born} {formatDate(child.date_of_birth)}
                       </p>
-                      <div className="flex items-center gap-2 mt-3">
-                        {count > 0 ? (
-                          <span className="inline-flex items-center gap-1 bg-[#f5f5f7] text-[#6e6e73] text-xs font-medium px-2.5 py-0.5 rounded-full border border-[#d2d2d7]">
-                            {t.assessmentCount(count)}
-                          </span>
-                        ) : (
-                          <span className="text-xs text-[#6e6e73]">{t.noAssessmentsChild}</span>
-                        )}
-                        {latest && (
-                          <span className="text-xs text-[#6e6e73]">{getScoreLabel(latest.score)}</span>
-                        )}
+                      <div className="mt-3">
+                        <p className="text-xs font-semibold text-[#1d1d1f] mb-0.5">{t.academicStatus}</p>
+                        {(() => {
+                          const as = latestAcademicStatus[child.id]
+                          if (!as) return <p className="text-xs text-[#6e6e73]">{t.academicStatusNone}</p>
+                          if (as.status === 'completed' && as.score != null) {
+                            return <p className={`text-xs font-medium ${getScoreColor(as.score)}`}>{t.academicStatusCompleted(as.score, getScoreLabel(as.score))}</p>
+                          }
+                          if (as.status === 'in_progress') return <p className="text-xs text-amber-600">{t.academicStatusInProgress}</p>
+                          return <p className="text-xs text-[#6e6e73]">{t.academicStatusPending}</p>
+                        })()}
                       </div>
                     </Link>
                     <div className="px-5 pb-5 flex flex-col gap-2">

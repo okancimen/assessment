@@ -82,6 +82,12 @@ export interface DashboardI18n {
   resumeStrengths: string
   viewStrengths: string
   strengthsInProgress: string
+  // Academic status in child card
+  academicStatus: string
+  academicStatusNone: string
+  academicStatusCompleted: (score: number, label: string) => string
+  academicStatusInProgress: string
+  academicStatusPending: string
   // Delete child
   deleteChildBtn: string
   deleteChildConfirmTitle: (name: string) => string
@@ -166,6 +172,11 @@ const en: DashboardI18n = {
   resumeStrengths: 'Resume',
   viewStrengths: 'View profile',
   strengthsInProgress: 'In progress',
+  academicStatus: 'Academic Status',
+  academicStatusNone: 'No assessment taken yet',
+  academicStatusCompleted: (score, label) => `Score ${score} · ${label}`,
+  academicStatusInProgress: 'Assessment in progress',
+  academicStatusPending: 'Assessment pending',
   deleteChildBtn: 'Remove child',
   deleteChildConfirmTitle: (name) => `Remove ${name}?`,
   deleteChildConfirmDesc: 'This will permanently delete this child and all their data.',
@@ -248,6 +259,11 @@ const tr: DashboardI18n = {
   resumeStrengths: 'Devam et',
   viewStrengths: 'Profili görüntüle',
   strengthsInProgress: 'Devam ediyor',
+  academicStatus: 'Akademik Durum',
+  academicStatusNone: 'Henüz değerlendirme yapılmadı',
+  academicStatusCompleted: (score, label) => `Puan ${score} · ${label}`,
+  academicStatusInProgress: 'Değerlendirme devam ediyor',
+  academicStatusPending: 'Değerlendirme bekliyor',
   deleteChildBtn: 'Çocuğu kaldır',
   deleteChildConfirmTitle: (name) => `${name} kaldırılsın mı?`,
   deleteChildConfirmDesc: 'Bu işlem çocuğu ve tüm ilgili verileri kalıcı olarak siler.',
@@ -330,6 +346,11 @@ const es: DashboardI18n = {
   resumeStrengths: 'Continuar',
   viewStrengths: 'Ver perfil',
   strengthsInProgress: 'En progreso',
+  academicStatus: 'Estado Académico',
+  academicStatusNone: 'Aún no se ha realizado ninguna evaluación',
+  academicStatusCompleted: (score, label) => `Puntuación ${score} · ${label}`,
+  academicStatusInProgress: 'Evaluación en curso',
+  academicStatusPending: 'Evaluación pendiente',
   deleteChildBtn: 'Eliminar hijo',
   deleteChildConfirmTitle: (name) => `¿Eliminar a ${name}?`,
   deleteChildConfirmDesc: 'Esto eliminará permanentemente a este hijo/a y todos sus datos.',
@@ -412,6 +433,11 @@ const fr: DashboardI18n = {
   resumeStrengths: 'Continuer',
   viewStrengths: 'Voir le profil',
   strengthsInProgress: 'En cours',
+  academicStatus: 'Statut Académique',
+  academicStatusNone: 'Aucune évaluation effectuée',
+  academicStatusCompleted: (score, label) => `Score ${score} · ${label}`,
+  academicStatusInProgress: 'Évaluation en cours',
+  academicStatusPending: 'Évaluation en attente',
   deleteChildBtn: "Supprimer l'enfant",
   deleteChildConfirmTitle: (name) => `Supprimer ${name} ?`,
   deleteChildConfirmDesc: "Cela supprimera définitivement cet enfant et toutes ses données.",
@@ -494,6 +520,11 @@ const ar: DashboardI18n = {
   resumeStrengths: 'متابعة',
   viewStrengths: 'عرض الملف الشخصي',
   strengthsInProgress: 'قيد التنفيذ',
+  academicStatus: 'الحالة الأكاديمية',
+  academicStatusNone: 'لم يتم إجراء أي تقييم بعد',
+  academicStatusCompleted: (score, label) => `الدرجة ${score} · ${label}`,
+  academicStatusInProgress: 'التقييم جارٍ',
+  academicStatusPending: 'التقييم في الانتظار',
   deleteChildBtn: 'حذف الطفل',
   deleteChildConfirmTitle: (name) => `حذف ${name}؟`,
   deleteChildConfirmDesc: 'سيؤدي هذا إلى حذف هذا الطفل وجميع بياناته بشكل دائم.',
@@ -576,6 +607,11 @@ const ru: DashboardI18n = {
   resumeStrengths: 'Продолжить',
   viewStrengths: 'Смотреть профиль',
   strengthsInProgress: 'В процессе',
+  academicStatus: 'Академический статус',
+  academicStatusNone: 'Тестирование ещё не проходили',
+  academicStatusCompleted: (score, label) => `Балл ${score} · ${label}`,
+  academicStatusInProgress: 'Тестирование в процессе',
+  academicStatusPending: 'Тестирование ожидает',
   deleteChildBtn: 'Удалить ребёнка',
   deleteChildConfirmTitle: (name) => `Удалить ${name}?`,
   deleteChildConfirmDesc: 'Это навсегда удалит ребёнка и все связанные данные.',
@@ -658,6 +694,11 @@ const zh: DashboardI18n = {
   resumeStrengths: '继续',
   viewStrengths: '查看档案',
   strengthsInProgress: '进行中',
+  academicStatus: '学术状态',
+  academicStatusNone: '尚未参加任何评估',
+  academicStatusCompleted: (score, label) => `分数 ${score} · ${label}`,
+  academicStatusInProgress: '评估进行中',
+  academicStatusPending: '评估待处理',
   deleteChildBtn: '删除孩子',
   deleteChildConfirmTitle: (name) => `删除 ${name}？`,
   deleteChildConfirmDesc: '这将永久删除此孩子及其所有数据。',
