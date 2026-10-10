@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import Link from 'next/link'
 
 const BASE_URL = 'https://eduentry.com'
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     'çocuğun güçlü ve zayıf yönleri',
     'ücretsiz çocuk kişilik testi',
     'çocuklar için VIA güçlü yönleri',
-    'çevrimiçi çocuk karakter değerlendirmesi',
+    'çevrimiçi çocuk kişilik değerlendirmesi',
     'ebeveynlik araçları kişilik',
     'pozitif psikoloji çocuk testi',
     'çocuk gelişimi değerlendirmesi',
@@ -39,19 +40,19 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/tr/kisilik-degerlendirmesi`,
     siteName: 'Eduentry',
     title: 'Çocuk Kişilik Değerlendirmesi | VIA Güçlü Yönler Testi — Eduentry',
-    description: "Çocuğunuzun benzersiz karakter güçlerini yapay zeka destekli değerlendirmemizle keşfedin. 6–20 yaş.",
+    description: "Çocuğunuzun benzersiz kişilik özelliklerini yapay zeka destekli değerlendirmemizle keşfedin. 6–20 yaş.",
     locale: 'tr_TR',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Çocuk Kişilik Değerlendirmesi — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Çocuk Kişilik Değerlendirmesi | VIA Güçlü Yönler Testi — Eduentry',
-    description: "Çocuğunuzun benzersiz karakter güçlerini yapay zeka destekli değerlendirmemizle keşfedin. 6–20 yaş.",
+    description: "Çocuğunuzun benzersiz kişilik özelliklerini yapay zeka destekli değerlendirmemizle keşfedin. 6–20 yaş.",
     images: [`${BASE_URL}/opengraph-image`],
   },
 }
 
-const FAQS = [
+const FAQS: { q: string; a: ReactNode }[] = [
   {
     q: 'Bu neden çocuğun kendisi için değil, ebeveyn tarafından değerlendirilen bir test?',
     a: "Çocukların öz algıları hızla değişir ve küçük çocuklar anket formatlarını kolayca yanlış anlayabilir veya dikkatlerini dağıtabilirler. Bir ebeveyn olarak, günlük gerçek dünya davranışlarına yönelik gözlemleriniz bir değerlendirme için en istikrarlı ve doğru temeli sağlar.",
@@ -66,7 +67,7 @@ const FAQS = [
   },
   {
     q: 'Bu değerlendirme bilimsel olarak destekleniyor mu?',
-    a: "Evet. Sorularımız, dünyanın en kapsamlı biçimde hakemli değerlendirmesi olan VIA Karakter Güçleri çerçevesinden uyarlanmıştır. Kültürler arası doğrulanmış olup önde gelen psikoloji dergilerinde yayımlanan çalışmalarda kullanılmaktadır.",
+    a: <>Evet. Sorularımız, dünyanın en kapsamlı biçimde hakemli değerlendirmesi olan{' '}<a href="https://www.viacharacter.org/" target="_blank" rel="noopener noreferrer" className="underline text-indigo-600">VIA Kişilik Özellikleri</a>{' '}çerçevesinden uyarlanmıştır. Kültürler arası doğrulanmış olup önde gelen psikoloji dergilerinde yayımlanan çalışmalarda kullanılmaktadır.</>,
   },
   {
     q: 'Çocuğumun gizliliği nasıl korunuyor?',
@@ -138,7 +139,7 @@ export default function KisilikDegerlendirmesiPage() {
             <span className="text-[#4F46E5]">Keşfedin</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            Çocuğunuzun gelişim aşamasına mükemmel biçimde uyarlanmış, yapay zeka destekli, bilimsel bir karakter değerlendirmesi.
+            Çocuğunuzun gelişim aşamasına mükemmel biçimde uyarlanmış, yapay zeka destekli, bilimsel bir kişilik değerlendirmesi.
           </p>
           <Link
             href={REGISTER_URL}
@@ -150,6 +151,9 @@ export default function KisilikDegerlendirmesiPage() {
             Zaten hesabınız var mı?{' '}
             <Link href="/tr/auth/login" className="text-[#4F46E5] hover:underline font-medium">Giriş yap</Link>
           </p>
+          <p className="mt-6 text-sm text-[#6e6e73] bg-indigo-50 border border-indigo-100 rounded-xl px-5 py-3 max-w-md mx-auto">
+            📋 <strong className="text-[#1d1d1f]">Çocuğunuzun katılımı gerekmez.</strong> Bu, yalnızca ebeveynin dolduracağı kısa bir anket. Tahminen 5 dakika sürer.
+          </p>
         </div>
       </section>
 
@@ -158,7 +162,7 @@ export default function KisilikDegerlendirmesiPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-[#1d1d1f] mb-6">Neden Karakter Notlardan Daha Önemli?</h2>
           <p className="text-lg text-[#6e6e73] leading-relaxed">
-            Ebeveyn olarak çoğunlukla tamamen okul notlarına odaklanırız. Ancak akademik puanlar hikayenin yalnızca bir bölümünü anlatır. Gerçek başarı ve dayanıklılık, bir çocuğun karakterinden, duygusal alışkanlıklarından ve kişilik güçlerinden gelir. Değerlendirmemiz, notların ötesine bakarak çocuğunuzun kim olduğunu görmenize yardımcı olur — doğal olarak üstün olduklarını (&ldquo;İmza Güçleri&rdquo;) ve &ldquo;Büyüme Alanlarını&rdquo; ortaya koyar.
+            Ebeveyn olarak çoğunlukla tamamen okul notlarına odaklanırız. Ancak akademik puanlar hikayenin yalnızca bir bölümünü anlatır. Gerçek başarı ve dayanıklılık, bir çocuğun karakterinden, duygusal alışkanlıklarından ve kişilik güçlerinden gelir. Değerlendirmemiz, notların ötesine bakarak çocuğunuzun kim olduğunu görmenize yardımcı olur — doğal olarak üstün olduklarını (&ldquo;Öne Çıkan Özellikler&rdquo;) ve &ldquo;Gelişim Alanlarını&rdquo; ortaya koyar.
           </p>
         </div>
       </section>

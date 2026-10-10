@@ -95,7 +95,7 @@ const FAQ_TR = [
   { q: 'Uyarlanabilir teknoloji nasıl çalışır?', a: 'Eduentry, 2 Parametreli Lojistik MYT (2PL) ile MAP tahmini kullanır — PISA, GCSE ve SAT\'ta kullanılan modelin aynısı. Her yanıtın ardından sistem, öğrencinin yetenek tahmini günceller ve ölçüm hassasiyetini en üst düzeye çıkarmak için bir sonraki soruyu seçer.' },
   { q: 'Birden fazla çocuk ekleyebilir miyim?', a: 'Evet. Tek bir ebeveyn hesabı birden fazla çocuk profili içerebilir. Her çocuğun kendi değerlendirme geçmişi, puanları ve kişiselleştirilmiş önerileri bulunur. Ekleyebileceğiniz çocuk sayısında herhangi bir sınır yoktur.' },
   { q: 'Verilerim gizli mi?', a: 'Evet. Tüm veriler satır düzeyi güvenlikle güvenli biçimde saklanır — yalnızca siz sonuçlarınıza erişebilirsiniz. Verileri üçüncü taraflarla satmaz veya paylaşmayız. Hizmet GDPR ile tam uyumludur.' },
-  { q: 'Kişilik değerlendirmesi nedir?', a: 'Dünyanın en kapsamlı pozitif psikoloji aracı olan VIA Karakter Güçleri çerçevesine dayalı ücretsiz ebeveyn anketi. Ebeveynler 6 erdem üzerinde 24 karakter özelliğini derecelendirir (Bilgelik, Cesaret, İnsanlık, Adalet, Ölçülülük, Aşkınlık). Yapay zeka destekli rapor, çocuğun en güçlü yönlerini, gelişim alanlarını ve kişiselleştirilmiş gelişim aktivitelerini belirler. 6–20 yaş için uygundur.' },
+  { q: 'Kişilik değerlendirmesi nedir?', a: 'Dünyanın en kapsamlı pozitif psikoloji aracı olan VIA Kişilik Özellikleri çerçevesine dayalı ücretsiz ebeveyn anketi. Ebeveynler 6 erdem üzerinde 24 karakter özelliğini derecelendirir (Bilgelik, Cesaret, İnsanlık, Adalet, Ölçülülük, Aşkınlık). Yapay zeka destekli rapor, çocuğun en güçlü yönlerini, gelişim alanlarını ve kişiselleştirilmiş gelişim aktivitelerini belirler. 6–20 yaş için uygundur.' },
 ]
 
 const FAQ_SCHEMA_TR = {
@@ -193,11 +193,11 @@ const INTERNSHIP_PROGRAM_SCHEMA_TR = {
 const PERSONALITY_PROGRAM_SCHEMA_TR = {
   '@context': 'https://schema.org',
   '@type': 'EducationalOccupationalProgram',
-  name: 'Kişilik ve Karakter Güçleri Değerlendirmesi — 6–20 Yaş',
-  description: 'Ebeveyn tarafından doldurulan VIA Karakter Güçleri anketi. 6 erdem üzerinde 24 karakter özelliğini belirler ve yapay zeka destekli güçlü yönler ile gelişim raporu oluşturur.',
+  name: 'Kişilik ve Kişilik Özellikleri Değerlendirmesi — 6–20 Yaş',
+  description: 'Ebeveyn tarafından doldurulan VIA Kişilik Özellikleri anketi. 6 erdem üzerinde 24 karakter özelliğini belirler ve yapay zeka destekli güçlü yönler ile gelişim raporu oluşturur.',
   url: 'https://eduentry.com/tr/kisilik-degerlendirmesi',
   provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
-  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Karakter Güçleri Raporu', credentialCategory: 'certificate' },
+  educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Kişilik Özellikleri Raporu', credentialCategory: 'certificate' },
   timeToComplete: 'PT15M',
   educationalProgramMode: 'online',
   inLanguage: 'tr',
@@ -342,7 +342,7 @@ export default function TurkishHomePage() {
                 Çocuğunuzun güçlü yönleri neler?
               </h2>
               <p className="text-[#92400e] text-sm leading-relaxed mb-8 flex-1">
-                VIA Karakter Güçleri çerçevesine dayalı ebeveyn değerlendirmesi — 6 erdem üzerinde 24 özellik. Yapay zeka destekli gelişim raporu ile güçlü yönleri ve gelişim alanlarını belirleyin.
+                VIA Kişilik Özellikleri çerçevesine dayalı ebeveyn değerlendirmesi — 6 erdem üzerinde 24 özellik. Yapay zeka destekli gelişim raporu ile güçlü yönleri ve gelişim alanlarını belirleyin.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#92400e] mb-8">
                 <span>24 karakter özelliği</span>
@@ -643,7 +643,7 @@ export default function TurkishHomePage() {
               Çocuğunuzun karakter güçlerini keşfedin.
             </h2>
             <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
-              Dünyanın en kapsamlı pozitif psikoloji aracı olan VIA Karakter Güçleri çerçevesine dayalı. 6 erdem üzerinde 24 özelliği haritalayan ücretsiz ebeveyn anketi ile kişiselleştirilmiş yapay zeka gelişim raporu oluşturulur.
+              Dünyanın en kapsamlı pozitif psikoloji aracı olan VIA Kişilik Özellikleri çerçevesine dayalı. 6 erdem üzerinde 24 özelliği haritalayan ücretsiz ebeveyn anketi ile kişiselleştirilmiş yapay zeka gelişim raporu oluşturulur.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
@@ -734,12 +734,12 @@ export default function TurkishHomePage() {
               <p className="text-[10px] text-[#D97706] font-semibold uppercase tracking-wider mb-5">Kişilik Değerlendirmesi</p>
               <ul className="space-y-3">
                 {[
-                  'En güçlü 5 imza karakter özelliği',
+                  'En güçlü 5 güçlü karakter özelliği',
                   'Gelişim alanları — en fazla potansiyel taşıyan 5 özellik',
                   'Yapay zeka destekli kişiselleştirilmiş gelişim aktiviteleri',
                   'Tüm 6 kategoride erdem profili',
-                  'VIA Karakter Güçleri çerçevesine dayalı',
-                  'Büyümeyi takip etmek için 6–12 ayda bir yeniden test',
+                  'VIA Kişilik Özellikleri çerçevesine dayalı',
+                  'Gelişmeyi takip etmek için 6–12 ayda bir yeniden test',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-[#92400e]">
                     <svg className="w-4 h-4 text-[#D97706] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
