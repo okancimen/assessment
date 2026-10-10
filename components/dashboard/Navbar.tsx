@@ -2,10 +2,21 @@
 
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import Logo from '@/components/ui/Logo'
 import { getDashboardI18n } from '@/lib/dashboard-i18n'
+
+function avatarHue(seed: string) {
+  let h = 0
+  for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) % 360
+  return h
+}
+
+function initials(name: string | null, email: string) {
+  if (name) return name.split(' ').map((w) => w[0]).slice(0, 2).join('').toUpperCase()
+  return email[0].toUpperCase()
+}
 
 export default function Navbar({
   locale,
@@ -20,97 +31,140 @@ export default function Navbar({
   const pathname = usePathname()
   const t = getDashboardI18n(locale)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [displayName, setDisplayName] = useState<string | null>(null)
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const [user, setUser] = useState<{ name: string | null; email: string } | null>(null)
+  const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const supabase = createClient()
-    supabase.auth.getUser().then(({ data: { user } }) => {
-      if (!user) return
-      const name =
-        (user.user_metadata?.full_name as string | undefined)?.split(' ')[0] ||
-        user.email?.split('@')[0] ||
-        null
-      setDisplayName(name)
+    supabase.auth.getUser().then(({ data: { user: u } }) => {
+      if (!u) return
+      setUser({
+        name: (u.user_metadata?.full_name as string | undefined) ?? null,
+        email: u.email ?? '',
+      })
     })
   }, [])
+
+  useEffect(() => {
+    function onClickOutside(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setDropdownOpen(false)
+      }
+    }
+    if (dropdownOpen) document.addEventListener('mousedown', onClickOutside)
+    return () => document.removeEventListener('mousedown', onClickOutside)
+  }, [dropdownOpen])
 
   async function handleSignOut() {
     const supabase = createClient()
     await supabase.auth.signOut()
     setMenuOpen(false)
+    setDropdownOpen(false)
     router.push(t.homeHref)
     router.refresh()
   }
 
-  function isActive(href: string) {
+  function active(href: string) {
     if (href === '/') return pathname === '/'
     return pathname === href || pathname.startsWith(href + '/')
   }
 
-  function linkCls(href: string) {
-    return `transition-colors ${
-      isActive(href)
-        ? 'text-[#4F46E5] font-semibold'
-        : 'text-[#1d1d1f] hover:text-[#4F46E5]'
-    }`
-  }
+  const navLinks = [
+    { href: t.dashboardHref, label: t.navDashboard, badge: pendingCount },
+    { href: '/children/new', label: t.navAddChild },
+    ...(isAdmin ? [{ href: '/admin', label: t.navAdmin }] : []),
+  ]
 
-  const navLinks = (
-    <>
-      <Link
-        href={t.dashboardHref}
-        className={`relative inline-flex items-center ${linkCls(t.dashboardHref)}`}
-        onClick={() => setMenuOpen(false)}
-      >
-        {t.navDashboard}
-        {pendingCount != null && pendingCount > 0 && (
-          <span className="ml-1 inline-flex items-center justify-center bg-amber-500 text-white text-[9px] font-bold min-w-[14px] h-3.5 px-0.5 rounded-full leading-none">
-            {pendingCount > 9 ? '9+' : pendingCount}
-          </span>
-        )}
-      </Link>
-      <Link
-        href="/children/new"
-        className={linkCls('/children/new')}
-        onClick={() => setMenuOpen(false)}
-      >
-        {t.navAddChild}
-      </Link>
-      {isAdmin && (
-        <Link
-          href="/admin"
-          className={linkCls('/admin')}
-          onClick={() => setMenuOpen(false)}
-        >
-          {t.navAdmin}
-        </Link>
-      )}
-    </>
-  )
+  const hue = user ? avatarHue(user.email) : 200
+  const ini = user ? initials(user.name, user.email) : '?'
 
   return (
-    <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.85)] backdrop-blur-xl border-b border-[#d2d2d7]/60">
-      <div className="max-w-5xl mx-auto px-6 h-12 flex items-center justify-between">
+    <nav
+      className="sticky top-0 z-50 border-b"
+      style={{ backgroundColor: '#1E293B', borderColor: 'rgba(255,255,255,0.08)' }}
+    >
+      <div className="max-w-5xl mx-auto px-6 flex items-center justify-between" style={{ height: '52px' }}>
+
+        {/* Logo + links */}
         <div className="flex items-center gap-7">
-          <Logo href={t.homeHref} size="sm" />
-          <div className="hidden sm:flex items-center gap-6 text-xs font-medium">
-            {navLinks}
+          <Logo href={t.homeHref} size="sm" className="[&_span]:!text-white" />
+          <div className="hidden sm:flex items-center gap-0.5">
+            {navLinks.map(({ href, label, badge }) => {
+              const isActive = active(href)
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className="relative inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors"
+                  style={{
+                    backgroundColor: isActive ? 'rgba(255,255,255,0.1)' : 'transparent',
+                    color: isActive ? '#F8FAFC' : '#94A3B8',
+                  }}
+                  onMouseOver={(e) => { if (!isActive) (e.currentTarget as HTMLElement).style.color = '#CBD5E1' }}
+                  onMouseOut={(e) => { if (!isActive) (e.currentTarget as HTMLElement).style.color = '#94A3B8' }}
+                >
+                  {label}
+                  {badge != null && badge > 0 && (
+                    <span className="inline-flex items-center justify-center bg-amber-500 text-white text-[9px] font-bold min-w-[14px] h-3.5 px-0.5 rounded-full leading-none">
+                      {badge > 9 ? '9+' : badge}
+                    </span>
+                  )}
+                </Link>
+              )
+            })}
           </div>
         </div>
+
+        {/* Avatar dropdown (desktop) + hamburger (mobile) */}
         <div className="flex items-center gap-2">
-          {displayName && (
-            <span className="hidden sm:block text-xs text-[#6e6e73] mr-1">{displayName}</span>
+
+          {user && (
+            <div className="relative hidden sm:block" ref={dropdownRef}>
+              <button
+                onClick={() => setDropdownOpen((o) => !o)}
+                className="w-8 h-8 rounded-full flex items-center justify-center text-[11px] font-bold text-white transition-opacity hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                style={{ backgroundColor: `hsl(${hue}, 45%, 42%)` }}
+                aria-label="Account menu"
+                aria-expanded={dropdownOpen}
+              >
+                {ini}
+              </button>
+
+              {dropdownOpen && (
+                <div
+                  className="absolute right-0 top-full mt-2 w-52 rounded-xl border shadow-lg overflow-hidden z-50"
+                  style={{ backgroundColor: '#FFFFFF', borderColor: '#E8ECF2' }}
+                >
+                  <div className="px-4 py-3 border-b" style={{ borderColor: '#E8ECF2' }}>
+                    {user.name && (
+                      <p className="text-xs font-semibold truncate" style={{ color: '#1E293B' }}>{user.name}</p>
+                    )}
+                    <p className="text-xs truncate mt-0.5" style={{ color: '#64748B' }}>{user.email}</p>
+                  </div>
+                  <div className="p-1.5">
+                    <button
+                      onClick={handleSignOut}
+                      className="w-full text-left text-xs font-medium px-3 py-2 rounded-lg transition-colors hover:bg-[#F8FAFC]"
+                      style={{ color: '#64748B' }}
+                    >
+                      {t.navSignOut}
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
           )}
-          <button
-            onClick={handleSignOut}
-            className="text-xs font-medium text-[#6e6e73] hover:text-[#1d1d1f] transition-colors px-3 py-1.5 rounded-full hover:bg-[#f5f5f7]"
-          >
-            {t.navSignOut}
-          </button>
+
           <button
             onClick={() => setMenuOpen((o) => !o)}
-            className="sm:hidden p-1.5 rounded-lg hover:bg-[#f5f5f7] transition-colors text-[#1d1d1f]"
+            className="sm:hidden w-8 h-8 flex items-center justify-center rounded-lg transition-colors"
+            style={{
+              color: '#94A3B8',
+              backgroundColor: menuOpen ? 'rgba(255,255,255,0.1)' : 'transparent',
+            }}
             aria-label="Toggle menu"
+            aria-expanded={menuOpen}
           >
             {menuOpen ? (
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -124,12 +178,69 @@ export default function Navbar({
           </button>
         </div>
       </div>
+
+      {/* Mobile dropdown */}
       {menuOpen && (
-        <div className="sm:hidden border-t border-[#d2d2d7]/60 bg-[rgba(255,255,255,0.97)] px-6 py-4 flex flex-col gap-4 text-sm font-medium">
-          {displayName && (
-            <span className="text-xs text-[#6e6e73] pb-2 border-b border-[#f5f5f7]">{displayName}</span>
+        <div
+          className="sm:hidden border-t"
+          style={{ backgroundColor: '#1E293B', borderColor: 'rgba(255,255,255,0.08)' }}
+        >
+          {user && (
+            <div
+              className="flex items-center gap-3 px-5 py-4 border-b"
+              style={{ borderColor: 'rgba(255,255,255,0.08)' }}
+            >
+              <div
+                className="w-9 h-9 rounded-full flex-shrink-0 flex items-center justify-center text-sm font-bold text-white"
+                style={{ backgroundColor: `hsl(${hue}, 45%, 42%)` }}
+              >
+                {ini}
+              </div>
+              <div className="min-w-0">
+                {user.name && (
+                  <p className="text-sm font-semibold truncate" style={{ color: '#F1F5F9' }}>{user.name}</p>
+                )}
+                <p className="text-xs truncate" style={{ color: '#64748B' }}>{user.email}</p>
+              </div>
+            </div>
           )}
-          {navLinks}
+
+          <div className="px-3 py-3 space-y-0.5">
+            {navLinks.map(({ href, label, badge }) => {
+              const isActive = active(href)
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-colors"
+                  style={{
+                    backgroundColor: isActive ? 'rgba(255,255,255,0.1)' : 'transparent',
+                    color: isActive ? '#F8FAFC' : '#94A3B8',
+                  }}
+                >
+                  <span>{label}</span>
+                  {badge != null && badge > 0 && (
+                    <span className="inline-flex items-center justify-center bg-amber-500 text-white text-[9px] font-bold min-w-[14px] h-3.5 px-0.5 rounded-full leading-none">
+                      {badge > 9 ? '9+' : badge}
+                    </span>
+                  )}
+                </Link>
+              )
+            })}
+          </div>
+
+          <div className="px-3 pb-4 border-t pt-2" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+            <button
+              onClick={handleSignOut}
+              className="w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium transition-colors"
+              style={{ color: '#64748B' }}
+              onMouseOver={(e) => ((e.currentTarget as HTMLElement).style.color = '#94A3B8')}
+              onMouseOut={(e) => ((e.currentTarget as HTMLElement).style.color = '#64748B')}
+            >
+              {t.navSignOut}
+            </button>
+          </div>
         </div>
       )}
     </nav>
