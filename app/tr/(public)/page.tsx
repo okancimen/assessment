@@ -339,7 +339,7 @@ export default function TurkishHomePage() {
                 Kişilik Değerlendirmesi
               </p>
               <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4 leading-snug tracking-tight">
-                Çocuğunuzun gerçek karakter güçleri neler?
+                Çocuğunuzun güçlü yönleri neler?
               </h2>
               <p className="text-[#92400e] text-sm leading-relaxed mb-8 flex-1">
                 VIA Karakter Güçleri çerçevesine dayalı ebeveyn değerlendirmesi — 6 erdem üzerinde 24 özellik. Yapay zeka destekli gelişim raporu ile güçlü yönleri ve gelişim alanlarını belirleyin.
