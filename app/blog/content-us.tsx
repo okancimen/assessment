@@ -335,6 +335,19 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </section>
 
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Wondering where your child stands globally?</p>
+          <p className="text-sm text-gray-600">Our adaptive assessment benchmarks your child against international peers — the same rigorous standard as MAP, PISA, and GCSE — in under an hour.</p>
+        </div>
+        <a
+          href="/your-childs-potential"
+          className="shrink-0 inline-block bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors text-center"
+        >
+          See your child&apos;s potential →
+        </a>
+      </div>
+
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">High MAP Scores and Gifted Identification</h2>
         <p className="text-gray-700 leading-relaxed mb-4">

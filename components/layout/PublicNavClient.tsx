@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import Logo from '@/components/ui/Logo'
 import LanguagePickerMain from '@/components/ui/LanguagePickerMain'
+import { createClient } from '@/lib/supabase/client'
 
 type Locale = 'en' | 'tr' | 'es' | 'fr' | 'ar' | 'ru' | 'zh'
 
@@ -25,6 +26,8 @@ interface LocaleConfig {
   signInHref: string
   getStarted: string
   getStartedHref: string
+  dashboard: string
+  dashboardHref: string
 }
 
 const CONFIGS: Record<Locale, LocaleConfig> = {
@@ -51,6 +54,8 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     signInHref: '/auth/login',
     getStarted: 'Get started',
     getStartedHref: '/auth/register',
+    dashboard: 'Dashboard',
+    dashboardHref: '/dashboard',
   },
   tr: {
     dir: 'ltr',
@@ -68,6 +73,8 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     signInHref: '/tr/auth/login',
     getStarted: 'Ücretsiz başla',
     getStartedHref: '/tr/auth/register',
+    dashboard: 'Panel',
+    dashboardHref: '/tr/dashboard',
   },
   es: {
     dir: 'ltr',
@@ -85,6 +92,8 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     signInHref: '/es/auth/login',
     getStarted: 'Empezar gratis',
     getStartedHref: '/es/auth/register',
+    dashboard: 'Panel',
+    dashboardHref: '/es/dashboard',
   },
   fr: {
     dir: 'ltr',
@@ -102,6 +111,8 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     signInHref: '/fr/auth/login',
     getStarted: 'Commencer gratuitement',
     getStartedHref: '/fr/auth/register',
+    dashboard: 'Tableau de bord',
+    dashboardHref: '/fr/dashboard',
   },
   ar: {
     dir: 'rtl',
@@ -119,6 +130,8 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     signInHref: '/ar/auth/login',
     getStarted: 'ابدأ مجاناً',
     getStartedHref: '/ar/auth/register',
+    dashboard: 'لوحة التحكم',
+    dashboardHref: '/ar/dashboard',
   },
   ru: {
     dir: 'ltr',
@@ -136,6 +149,8 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     signInHref: '/ru/auth/login',
     getStarted: 'Начать бесплатно',
     getStartedHref: '/ru/auth/register',
+    dashboard: 'Панель',
+    dashboardHref: '/ru/dashboard',
   },
   zh: {
     dir: 'ltr',
@@ -153,6 +168,8 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     signInHref: '/zh/auth/login',
     getStarted: '免费开始',
     getStartedHref: '/zh/auth/register',
+    dashboard: '控制台',
+    dashboardHref: '/zh/dashboard',
   },
 }
 
@@ -166,6 +183,8 @@ export default function PublicNavClient({
   const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [authed, setAuthed] = useState(false)
   const cfg = CONFIGS[locale]
 
   useEffect(() => {
@@ -173,6 +192,13 @@ export default function PublicNavClient({
     check()
     window.addEventListener('scroll', check, { passive: true })
     return () => window.removeEventListener('scroll', check)
+  }, [])
+
+  useEffect(() => {
+    const supabase = createClient()
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setAuthed(!!session)
+    })
   }, [])
 
   function isActive(href: string): boolean {
@@ -208,20 +234,63 @@ export default function PublicNavClient({
           {cfg.links.map((link) => {
             const active = isLinkActive(link)
             if (link.dropdown) {
+              const isOpen = openDropdown === link.href
               return (
-                <div key={link.href} className="relative group">
-                  <button className={`flex items-center gap-1 cursor-default select-none ${linkCls(active)}`}>
+                <div
+                  key={link.href}
+                  className="relative group"
+                  onBlur={(e) => {
+                    if (!e.currentTarget.contains(e.relatedTarget as Node)) {
+                      setOpenDropdown(null)
+                    }
+                  }}
+                >
+                  <button
+                    onClick={() => setOpenDropdown(isOpen ? null : link.href)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Escape') setOpenDropdown(null)
+                      if (e.key === 'ArrowDown') {
+                        e.preventDefault()
+                        setOpenDropdown(link.href)
+                        // focus first item on next tick
+                        setTimeout(() => {
+                          const panel = e.currentTarget.nextElementSibling
+                          const first = panel?.querySelector<HTMLElement>('a')
+                          first?.focus()
+                        }, 0)
+                      }
+                    }}
+                    aria-expanded={isOpen}
+                    aria-haspopup="true"
+                    className={`flex items-center gap-1 select-none ${linkCls(active)}`}
+                  >
                     {link.label}
-                    <svg className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 transition-transform group-hover:rotate-180" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <svg
+                      className={`w-3.5 h-3.5 opacity-60 transition-transform ${isOpen ? 'rotate-180' : 'group-hover:rotate-180'}`}
+                      viewBox="0 0 16 16" fill="none" aria-hidden="true"
+                    >
                       <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </button>
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block z-50">
+                  <div
+                    className={`absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 ${isOpen ? 'block' : 'hidden group-hover:block'}`}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Escape') setOpenDropdown(null)
+                    }}
+                  >
                     <div className="bg-white rounded-2xl border border-[#d2d2d7] shadow-lg py-2 min-w-[160px]">
-                      {link.dropdown.map((item) => (
+                      {link.dropdown.map((item, i) => (
                         <Link
                           key={item.href}
                           href={item.href}
+                          tabIndex={0}
+                          onKeyDown={(e) => {
+                            const items = (e.currentTarget.closest('[role]')?.querySelectorAll('a') ??
+                              e.currentTarget.parentElement?.querySelectorAll('a')) as NodeListOf<HTMLElement>
+                            if (e.key === 'ArrowDown') { e.preventDefault(); items[i + 1]?.focus() }
+                            if (e.key === 'ArrowUp')   { e.preventDefault(); i === 0 ? setOpenDropdown(null) : items[i - 1]?.focus() }
+                          }}
+                          onClick={() => setOpenDropdown(null)}
                           className={`block px-4 py-2 text-[13px] font-medium hover:bg-[#f5f5f7] transition-colors rounded-xl mx-1 ${isActive(item.href) ? 'text-[#4F46E5]' : 'text-[#1d1d1f] hover:text-[#4F46E5]'}`}
                         >
                           {item.label}
@@ -255,24 +324,36 @@ export default function PublicNavClient({
 
         {/* Right side */}
         <div className="flex items-center gap-3 sm:gap-4 shrink-0 whitespace-nowrap">
-          <Link
-            href={cfg.signInHref}
-            className="text-xs text-[#1d1d1f] hover:text-[#4F46E5] transition-colors hidden sm:block"
-          >
-            {cfg.signIn}
-          </Link>
-          <Link
-            href={cfg.getStartedHref}
-            prefetch={false}
-            className="text-xs font-semibold bg-[#4F46E5] text-white px-3.5 py-1.5 rounded-full hover:bg-[#4338CA] transition-colors"
-          >
-            {cfg.getStarted}
-          </Link>
+          {authed ? (
+            <Link
+              href={cfg.dashboardHref}
+              className="text-xs font-semibold bg-[#4F46E5] text-white px-3.5 py-1.5 rounded-full hover:bg-[#4338CA] transition-colors"
+            >
+              {cfg.dashboard} →
+            </Link>
+          ) : (
+            <>
+              <Link
+                href={cfg.signInHref}
+                className="text-xs text-[#1d1d1f] hover:text-[#4F46E5] transition-colors hidden sm:block"
+              >
+                {cfg.signIn}
+              </Link>
+              <Link
+                href={cfg.getStartedHref}
+                prefetch={false}
+                className="text-xs font-semibold bg-[#4F46E5] text-white px-3.5 py-1.5 rounded-full hover:bg-[#4338CA] transition-colors"
+              >
+                {cfg.getStarted}
+              </Link>
+            </>
+          )}
           <LanguagePickerMain />
           <button
             onClick={() => setMenuOpen((o) => !o)}
             className="lg:hidden p-1.5 rounded-lg hover:bg-black/[0.06] transition-colors text-[#1d1d1f]"
             aria-label="Toggle menu"
+            aria-expanded={menuOpen}
           >
             {menuOpen ? (
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
@@ -336,22 +417,37 @@ export default function PublicNavClient({
               {blogCount}
             </span>
           </Link>
-          <div className="pt-4 flex items-center gap-4">
-            <Link
-              href={cfg.signInHref}
-              onClick={() => setMenuOpen(false)}
-              className="text-sm font-medium text-[#1d1d1f] hover:text-[#4F46E5] transition-colors"
-            >
-              {cfg.signIn}
-            </Link>
-            <Link
-              href={cfg.getStartedHref}
-              prefetch={false}
-              onClick={() => setMenuOpen(false)}
-              className="text-sm font-semibold bg-[#4F46E5] text-white px-4 py-1.5 rounded-full hover:bg-[#4338CA] transition-colors"
-            >
-              {cfg.getStarted}
-            </Link>
+          <div className="pt-4 flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              {authed ? (
+                <Link
+                  href={cfg.dashboardHref}
+                  onClick={() => setMenuOpen(false)}
+                  className="text-sm font-semibold bg-[#4F46E5] text-white px-4 py-1.5 rounded-full hover:bg-[#4338CA] transition-colors"
+                >
+                  {cfg.dashboard} →
+                </Link>
+              ) : (
+                <>
+                  <Link
+                    href={cfg.signInHref}
+                    onClick={() => setMenuOpen(false)}
+                    className="text-sm font-medium text-[#1d1d1f] hover:text-[#4F46E5] transition-colors"
+                  >
+                    {cfg.signIn}
+                  </Link>
+                  <Link
+                    href={cfg.getStartedHref}
+                    prefetch={false}
+                    onClick={() => setMenuOpen(false)}
+                    className="text-sm font-semibold bg-[#4F46E5] text-white px-4 py-1.5 rounded-full hover:bg-[#4338CA] transition-colors"
+                  >
+                    {cfg.getStarted}
+                  </Link>
+                </>
+              )}
+            </div>
+            <LanguagePickerMain />
           </div>
         </div>
       )}
