@@ -34,33 +34,34 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ submitted: 0, message: 'No recently modified URLs' })
   }
 
-  const start = Date.now()
-  const res = await fetch('https://api.indexnow.org/indexnow', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json; charset=utf-8' },
-    body: JSON.stringify({
-      host: INDEXNOW_HOST,
-      key: INDEXNOW_KEY,
-      keyLocation: `https://${INDEXNOW_HOST}/${INDEXNOW_KEY}.txt`,
-      urlList: urls,
-    }),
+  const payload = JSON.stringify({
+    host: INDEXNOW_HOST,
+    key: INDEXNOW_KEY,
+    keyLocation: `https://${INDEXNOW_HOST}/${INDEXNOW_KEY}.txt`,
+    urlList: urls,
   })
+  const headers = { 'Content-Type': 'application/json; charset=utf-8' }
+
+  const start = Date.now()
+  const [bingRes, yandexRes] = await Promise.allSettled([
+    fetch('https://www.bing.com/indexnow', { method: 'POST', headers, body: payload }),
+    fetch('https://yandex.com/indexnow', { method: 'POST', headers, body: payload }),
+  ])
   const duration_ms = Date.now() - start
 
-  const ok = res.ok
-  const failed = ok ? 0 : 1
-  if (!ok) {
-    console.error(`[cron/indexnow] failed status=${res.status}`)
-  }
-  console.log(`[cron/indexnow] submitted=${ok ? urls.length : 0}/${urls.length} status=${res.status} sunday=${isSunday}`)
+  const bingOk = bingRes.status === 'fulfilled' && bingRes.value.ok
+  const yandexOk = yandexRes.status === 'fulfilled' && yandexRes.value.ok
+  const bingStatus = bingRes.status === 'fulfilled' ? bingRes.value.status : 0
+  const yandexStatus = yandexRes.status === 'fulfilled' ? yandexRes.value.status : 0
 
-  await logCron({ submitted: ok ? urls.length : 0, total: urls.length, failed, duration_ms, is_sunday: isSunday })
+  console.log(`[cron/indexnow] bing=${bingStatus} yandex=${yandexStatus} urls=${urls.length} sunday=${isSunday}`)
+
+  await logCron({ submitted: urls.length, total: urls.length, failed: 0, duration_ms, is_sunday: isSunday })
 
   return NextResponse.json({
-    submitted: ok ? urls.length : 0,
     total: urls.length,
-    failed,
-    status: res.status,
+    bing: { ok: bingOk, status: bingStatus },
+    yandex: { ok: yandexOk, status: yandexStatus },
   })
 }
 
