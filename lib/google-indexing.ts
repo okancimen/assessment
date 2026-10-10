@@ -13,7 +13,7 @@ function b64url(input: string | Buffer): string {
 async function getAccessToken(): Promise<string> {
   const filePath = process.env.GOOGLE_SERVICE_ACCOUNT_KEY_FILE
   const raw = filePath ? readFileSync(filePath, 'utf8') : process.env.GOOGLE_SERVICE_ACCOUNT_KEY
-  if (!raw) throw new Error('GOOGLE_SERVICE_ACCOUNT_KEY not set')
+  if (!raw) throw new Error('Neither GOOGLE_SERVICE_ACCOUNT_KEY nor GOOGLE_SERVICE_ACCOUNT_KEY_FILE is set')
   const creds = JSON.parse(raw)
 
   const now = Math.floor(Date.now() / 1000)
