@@ -9,9 +9,9 @@ import { BLOG_POSTS } from '@/app/blog/posts'
 import CtaLink from '@/components/ui/CtaLink'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Eduentry — Academic & Internship Readiness Assessments' },
+  title: { absolute: 'Eduentry — Academic, Personality & Internship Assessments for Children' },
   description:
-    'Free adaptive academic assessments for ages 6–17 and internship readiness for students 14+. Standardised scores and percentile rankings — free forever.',
+    'Free adaptive academic assessments (ages 6–17), a VIA-backed character strengths personality assessment (ages 6–20), and internship readiness for students 14+. Standardised scores and AI-powered reports — free forever.',
   keywords: [
     'free children academic assessment',
     'international benchmark children UK',
@@ -25,21 +25,27 @@ export const metadata: Metadata = {
     'career readiness test UK',
     'free online assessment children',
     'verbal reasoning non-verbal reasoning test',
+    'child personality assessment free',
+    'VIA character strengths test children',
+    'free child character strengths assessment',
+    'positive psychology child test',
+    'child strengths and weaknesses test',
+    'personality test kids free online',
   ],
   alternates: { canonical: 'https://eduentry.com', languages: { 'en-GB': 'https://eduentry.com', es: 'https://eduentry.com/es', tr: 'https://eduentry.com/tr', fr: 'https://eduentry.com/fr', ar: 'https://eduentry.com/ar', ru: 'https://eduentry.com/ru', zh: 'https://eduentry.com/zh', 'x-default': 'https://eduentry.com' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     url: 'https://eduentry.com',
     siteName: 'Eduentry',
-    title: 'Eduentry — Academic Assessment & Internship Readiness Platform',
+    title: 'Eduentry — Academic, Personality & Internship Assessments for Children',
     description:
-      'Free adaptive assessments built on the same science as PISA, GCSE and SAT. Academic benchmarking for ages 6–17 and internship readiness for high school students 14+.',
+      'Free adaptive assessments — academic benchmarking (ages 6–17), VIA character strengths personality assessment (ages 6–20), and internship readiness (14+). AI-powered reports, free forever.',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Eduentry — Academic Assessment & Internship Readiness Platform' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Eduentry — Academic Assessment & Internship Readiness Platform',
-    description: 'Free adaptive assessments built on the same science as PISA, GCSE and SAT. For ages 6–17 (academic) and 14+ (internship readiness).',
+    title: 'Eduentry — Academic, Personality & Internship Assessments for Children',
+    description: 'Free adaptive assessments — academic benchmarking (ages 6–17), VIA character strengths (ages 6–20), and internship readiness (14+). AI-powered reports, free forever.',
     images: ['/opengraph-image'],
   },
 }
@@ -58,6 +64,7 @@ const FAQ_SCHEMA = {
     { '@type': 'Question', name: 'How does the adaptive technology work?', acceptedAnswer: { '@type': 'Answer', text: "Eduentry uses 2-Parameter Logistic (2PL) Item Response Theory with MAP estimation — the same model used in PISA, GCSE, and SAT. After each answer, the system updates its estimate of the student's ability and selects the next question to maximise measurement precision." } },
     { '@type': 'Question', name: 'Can I add more than one child?', acceptedAnswer: { '@type': 'Answer', text: "Yes. A single parent account supports multiple child profiles. Each child has their own assessment history, scores, and personalised recommendations. There is no limit on the number of children you can add." } },
     { '@type': 'Question', name: 'Is my data private?', acceptedAnswer: { '@type': 'Answer', text: "Yes. All data is stored securely with row-level security — only you can access your results. We do not sell or share data with any third parties. The service is fully GDPR-compliant." } },
+    { '@type': 'Question', name: 'What is the personality assessment?', acceptedAnswer: { '@type': 'Answer', text: "A free parent-rated survey based on the VIA Character Strengths framework — the most peer-reviewed positive psychology instrument in the world. Parents rate 24 character traits across 6 virtues (Wisdom, Courage, Humanity, Justice, Temperance, Transcendence). An AI-generated report then identifies the child's top strengths, growth areas, and personalised development activities. Suitable for ages 6–20." } },
   ],
 }
 
@@ -68,7 +75,7 @@ const SOFTWARE_SCHEMA = {
   url: 'https://eduentry.com',
   applicationCategory: 'EducationalApplication',
   operatingSystem: 'Web Browser',
-  description: 'Free AI-powered adaptive assessments for students aged 6 and above.',
+  description: 'Free AI-powered assessments — academic benchmarking, VIA character strengths personality assessment, and internship readiness — for children aged 6 and above.',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Free — no subscription required' },
   aggregateRating: { '@type': 'AggregateRating', ratingValue: 5.0, reviewCount: 6, bestRating: 5, worstRating: 1 },
   review: [
@@ -126,7 +133,7 @@ const ORGANIZATION_SCHEMA = {
   '@type': 'Organization',
   '@id': 'https://eduentry.com/#organization',
   name: 'Eduentry',
-  description: 'Eduentry provides free adaptive assessments for children and students: an academic benchmark (ages 6–17) measuring English, Maths, Verbal Reasoning, and Non-Verbal Reasoning; and an internship readiness assessment (ages 14–18) across Technology, Business, Data Analytics, and Digital Marketing tracks.',
+  description: 'Eduentry provides three free assessments: an academic benchmark (ages 6–17) measuring English, Maths, Verbal Reasoning, and Non-Verbal Reasoning; a VIA Character Strengths personality assessment (ages 6–20) identifying 24 traits across 6 virtues; and an internship readiness assessment (ages 14–18) across Technology, Business, Data Analytics, and Digital Marketing tracks.',
   url: 'https://eduentry.com',
   logo: { '@type': 'ImageObject', url: 'https://eduentry.com/logo.png', width: 200, height: 60 },
   foundingDate: '2026',
@@ -142,6 +149,10 @@ const ORGANIZATION_SCHEMA = {
     'UK secondary school selection',
     'gifted education',
     'academic benchmarking',
+    'VIA character strengths',
+    'positive psychology assessment',
+    'child personality assessment',
+    'character development children',
   ],
   sameAs: [
     'https://www.linkedin.com/company/eduentry',
@@ -203,6 +214,34 @@ const INTERNSHIP_PROGRAM_SCHEMA = {
 }
 
 
+const PERSONALITY_PROGRAM_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOccupationalProgram',
+  name: 'Personality & Character Strengths Assessment — Ages 6–20',
+  description: 'Free parent-rated VIA Character Strengths survey for children and teens. Identifies 24 character traits across 6 virtues — Wisdom, Courage, Humanity, Justice, Temperance, and Transcendence — with an AI-generated strengths and growth report.',
+  url: 'https://eduentry.com/personality-assessment',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+  educationalCredentialAwarded: {
+    '@type': 'EducationalOccupationalCredential',
+    name: 'Character Strengths Report',
+    credentialCategory: 'certificate',
+  },
+  timeToComplete: 'PT15M',
+  educationalProgramMode: 'online',
+  inLanguage: 'en-GB',
+  typicalAgeRange: '6-20',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
+  programPrerequisites: 'Completed by parent on behalf of child — no prerequisites required',
+  hasCourse: [
+    { '@type': 'Course', name: 'Wisdom', description: 'Curiosity, Creativity, Love of Learning, Perspective, Judgment — cognitive strengths' },
+    { '@type': 'Course', name: 'Courage', description: 'Bravery, Perseverance, Honesty, Zest — strengths exercised under challenge' },
+    { '@type': 'Course', name: 'Humanity', description: 'Love, Kindness, Social Intelligence — interpersonal strengths' },
+    { '@type': 'Course', name: 'Justice', description: 'Teamwork, Fairness, Leadership — civic and community strengths' },
+    { '@type': 'Course', name: 'Temperance', description: 'Forgiveness, Humility, Prudence, Self-Regulation — strengths that protect against excess' },
+    { '@type': 'Course', name: 'Transcendence', description: 'Appreciation of Beauty, Gratitude, Hope, Humour, Spirituality — strengths connecting to larger meaning' },
+  ],
+}
+
 const subjectColors: Record<string, { border: string; accent: string; bg: string }> = {
   english:            { border: '#c7d2fe', accent: '#4F46E5', bg: '#eef2ff' },
   mathematics:        { border: '#99f6e4', accent: '#0F766E', bg: '#f0fdfa' },
@@ -227,6 +266,7 @@ export default function LandingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ACADEMIC_PROGRAM_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(INTERNSHIP_PROGRAM_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSONALITY_PROGRAM_SCHEMA) }} />
 
       <PublicNav />
 
@@ -242,11 +282,11 @@ export default function LandingPage() {
             <span className="text-[#818CF8]">at the right stage.</span>
           </h1>
           <p className="text-xl sm:text-2xl text-[#a1a1a7] max-w-2xl mx-auto mb-16 leading-relaxed font-light">
-            Free adaptive assessments built on the same science as PISA, GCSE and SAT.
+            Three free assessments — academic benchmarking, personality strengths, and internship readiness.
           </p>
 
-          {/* Two product cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-4xl mx-auto text-left">
+          {/* Three product cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto text-left">
 
             {/* Academic card */}
             <div className="bg-[#2d2d2f] rounded-[28px] border border-[#424245] p-10 flex flex-col">
@@ -314,6 +354,37 @@ export default function LandingPage() {
                 Learn about the programme
               </a>
               <Link href="#internship" aria-label="Learn more about Internship Assessment" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
+                Learn more ↓
+              </Link>
+            </div>
+
+            {/* Personality card */}
+            <div className="bg-[#fffbeb] rounded-[28px] border border-[#fde68a] p-10 flex flex-col">
+              <p className="text-[11px] text-[#D97706] font-medium uppercase tracking-[0.12em] mb-6">
+                Personality Assessment
+              </p>
+              <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4 leading-snug tracking-tight">
+                What are your child&apos;s true character strengths?
+              </h2>
+              <p className="text-[#92400e] text-sm leading-relaxed mb-8 flex-1">
+                A parent-rated survey based on the VIA Character Strengths framework — 24 traits across 6 virtues. Pinpoint top strengths and growth areas with an AI-generated development report.
+              </p>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#92400e] mb-8">
+                <span>24 character traits</span>
+                <span>·</span>
+                <span>6 virtues</span>
+                <span>·</span>
+                <span>Ages 6–20</span>
+                <span>·</span>
+                <span>Free</span>
+              </div>
+              <Link
+                href="/personality-assessment"
+                className="bg-[#D97706] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#B45309] transition-colors text-center"
+              >
+                Explore personality assessment
+              </Link>
+              <Link href="#personality" aria-label="Learn more about Personality Assessment" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-4 py-4 block">
                 Learn more ↓
               </Link>
             </div>
@@ -672,11 +743,78 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ── Personality section ──────────────────────────────────────────── */}
+      <section id="personality" className="bg-white py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <span className="inline-block text-xs font-medium text-[#D97706] uppercase tracking-[0.15em] bg-[#fffbeb] border border-[#fde68a] px-3 py-1.5 rounded-full mb-5">
+              Personality Assessment · Ages 6–20
+            </span>
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-5 leading-tight">
+              Discover your child&apos;s character strengths.
+            </h2>
+            <p className="text-[#636366] text-lg max-w-2xl mx-auto leading-relaxed">
+              Based on the VIA Character Strengths framework — the most extensively peer-reviewed positive psychology instrument in the world. A free parent-rated survey that maps 24 traits across 6 virtues and generates a personalised AI growth report.
+            </p>
+          </div>
+
+          {/* 6 virtue cards */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
+            {[
+              { label: 'Wisdom',         traits: ['Curiosity', 'Creativity', 'Love of Learning', 'Perspective', 'Judgment'],         color: '#3B82F6', bg: '#eff6ff' },
+              { label: 'Courage',        traits: ['Bravery', 'Perseverance', 'Honesty', 'Zest'],                                     color: '#F97316', bg: '#fff7ed' },
+              { label: 'Humanity',       traits: ['Love', 'Kindness', 'Social Intelligence'],                                        color: '#EC4899', bg: '#fdf2f8' },
+              { label: 'Justice',        traits: ['Teamwork', 'Fairness', 'Leadership'],                                             color: '#14B8A6', bg: '#f0fdfa' },
+              { label: 'Temperance',     traits: ['Forgiveness', 'Humility', 'Prudence', 'Self-Regulation'],                         color: '#8B5CF6', bg: '#f5f3ff' },
+              { label: 'Transcendence',  traits: ['Gratitude', 'Hope', 'Humour', 'Appreciation of Beauty', 'Spirituality'],          color: '#D97706', bg: '#fffbeb' },
+            ].map(({ label, traits, color, bg }) => (
+              <div key={label} className="rounded-2xl p-4 border" style={{ background: bg, borderColor: color + '44' }}>
+                <div className="font-bold text-sm text-[#1d1d1f] mb-2">{label}</div>
+                <div className="space-y-0.5">
+                  {traits.map(t => (
+                    <div key={t} className="text-[11px] text-[#636366] leading-tight">{t}</div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* What you get */}
+          <div className="bg-[#fffbeb] rounded-3xl border border-[#fde68a] p-8 flex flex-col sm:flex-row gap-8 mb-8">
+            <div className="flex-1">
+              <p className="text-xs font-semibold text-[#D97706] uppercase tracking-widest mb-3">What the report includes</p>
+              <ul className="space-y-2">
+                {[
+                  'Top 5 signature character strengths with detailed descriptions',
+                  'Growth areas — the 5 traits with most development potential',
+                  'AI-generated personalised activities for each strength',
+                  'Virtue profile breakdown across all 6 categories',
+                  'Comparison baseline for tracking change over time',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2.5 text-sm text-[#92400e]">
+                    <svg className="w-4 h-4 text-[#D97706] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex flex-col justify-center items-start sm:items-center gap-3 flex-shrink-0">
+              <Link href="/personality-assessment" className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors whitespace-nowrap">
+                Explore personality assessment →
+              </Link>
+              <p className="text-xs text-[#92400e] text-center">Parent-rated · 15 minutes · Free</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── What you get ─────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] py-32">
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-xs font-medium text-[#a1a1a7] uppercase tracking-[0.15em] text-center mb-14">What you get</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             {/* Academic */}
             <div className="bg-[#2d2d2f] rounded-3xl border border-[#424245] p-8">
@@ -704,6 +842,33 @@ export default function LandingPage() {
                 </CtaLink>
                 <Link href="/sample-report" className="text-sm font-semibold text-[#a1a1a7] hover:text-white transition-colors">
                   See a sample report →
+                </Link>
+              </div>
+            </div>
+
+            {/* Personality */}
+            <div className="bg-[#fffbeb] rounded-3xl border border-[#fde68a] p-8">
+              <p className="text-[10px] text-[#D97706] font-semibold uppercase tracking-wider mb-5">Personality Assessment</p>
+              <ul className="space-y-3">
+                {[
+                  'Top 5 signature character strengths',
+                  'Growth areas — 5 traits with most development potential',
+                  'AI-generated personalised development activities',
+                  'Virtue profile across all 6 categories',
+                  'Based on the VIA Character Strengths framework',
+                  'Retake every 6–12 months to track growth',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-[#92400e]">
+                    <svg className="w-4 h-4 text-[#D97706] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-7 pt-6 border-t border-[#fde68a]">
+                <Link href="/personality-assessment" className="bg-[#D97706] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors inline-block">
+                  Explore personality →
                 </Link>
               </div>
             </div>
@@ -757,6 +922,7 @@ export default function LandingPage() {
               { q: 'How does the adaptive technology work?', a: "Eduentry uses 2-Parameter Logistic (2PL) Item Response Theory with MAP estimation — the same model used in PISA, GCSE, and SAT. After each answer, the system updates its estimate of the student's ability and selects the next question to maximise measurement precision." },
               { q: 'Can I add more than one child?', a: "Yes. A single parent account supports multiple child profiles. Each child has their own assessment history, scores, and personalised recommendations. There is no limit on the number of children you can add." },
               { q: "Is my data private?", a: "Yes. All data is stored securely with row-level security — only you can access your results. We do not sell or share data with any third parties. The service is fully GDPR-compliant." },
+              { q: 'What is the personality assessment?', a: "A free parent-rated survey based on the VIA Character Strengths framework — the most peer-reviewed positive psychology instrument in the world. Parents rate 24 character traits across 6 virtues (Wisdom, Courage, Humanity, Justice, Temperance, Transcendence). An AI-generated report identifies your child's top strengths, growth areas, and personalised development activities. Suitable for ages 6–20." },
             ].map(({ q, a }) => (
               <details key={q} className="group bg-white border border-[#d2d2d7] rounded-2xl overflow-hidden">
                 <summary className="flex items-center justify-between px-6 py-4 cursor-pointer font-medium text-[#1d1d1f] text-sm select-none list-none">
@@ -811,7 +977,7 @@ export default function LandingPage() {
 
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
       <section className="bg-[#1d1d1f] py-32 px-6">
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center bg-[#2d2d2f] rounded-3xl border border-[#424245] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">Academic Assessment</p>
             <h2 className="text-2xl font-bold text-white mb-3">Discover where your child stands — globally.</h2>
@@ -823,6 +989,17 @@ export default function LandingPage() {
             >
               Start free assessment →
             </CtaLink>
+          </div>
+          <div className="text-center bg-[#fffbeb] rounded-3xl border border-[#fde68a] p-10 flex flex-col items-center">
+            <p className="text-[10px] text-[#D97706] font-semibold uppercase tracking-widest mb-4">Personality Assessment</p>
+            <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Uncover your child&apos;s character strengths.</h2>
+            <p className="text-[#92400e] text-sm mb-8">AI-powered VIA strengths report in 15 minutes.</p>
+            <Link
+              href="/personality-assessment"
+              className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors"
+            >
+              Explore personality →
+            </Link>
           </div>
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Internship Assessment</p>
