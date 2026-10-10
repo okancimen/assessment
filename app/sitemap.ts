@@ -25,6 +25,19 @@ const SAMPLE_REPORT_ALTERNATES = {
   },
 }
 
+const PERSONALITY_ALTERNATES = {
+  languages: {
+    'en-GB': `${BASE}/personality-assessment`,
+    es: `${BASE}/es/evaluacion-de-personalidad`,
+    tr: `${BASE}/tr/kisilik-degerlendirmesi`,
+    fr: `${BASE}/fr/evaluation-de-personnalite`,
+    ar: `${BASE}/ar/taqyim-al-shakhsiya`,
+    ru: `${BASE}/ru/otsenka-lichnosti`,
+    zh: `${BASE}/zh/xingge-pinggu`,
+    'x-default': `${BASE}/personality-assessment`,
+  },
+}
+
 const SUBJECTS = ['english', 'maths', 'verbal-reasoning', 'non-verbal-reasoning']
 
 // contentSlug → slug maps for cross-language hreflang
@@ -53,7 +66,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: BASE,
-      lastModified: '2026-10-04',
+      lastModified: '2026-10-10',
       changeFrequency: 'monthly',
       priority: 1.0,
       alternates: { languages: { 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
@@ -98,18 +111,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: '2026-10-10',
       changeFrequency: 'monthly',
       priority: 0.9,
-      alternates: {
-        languages: {
-          'en-GB': `${BASE}/personality-assessment`,
-          fr: `${BASE}/fr/evaluation-de-personnalite`,
-          es: `${BASE}/es/evaluacion-de-personalidad`,
-          ar: `${BASE}/ar/taqyim-al-shakhsiya`,
-          tr: `${BASE}/tr/kisilik-degerlendirmesi`,
-          ru: `${BASE}/ru/otsenka-lichnosti`,
-          zh: `${BASE}/zh/xingge-pinggu`,
-          'x-default': `${BASE}/personality-assessment`,
-        },
-      },
+      alternates: PERSONALITY_ALTERNATES,
     },
   ]
 
@@ -163,7 +165,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const esPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/es`,
-      lastModified: '2026-10-04',
+      lastModified: '2026-10-10',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
       alternates: { languages: { es: `${BASE}/es`, 'en-GB': BASE, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
@@ -196,6 +198,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { es: `${BASE}/es/potencial-de-tu-hijo`, 'en-GB': `${BASE}/your-childs-potential`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
+    { url: `${BASE}/es/evaluacion-de-personalidad`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.es}`,
       lastModified: '2026-10-04',
@@ -222,7 +225,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const trPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/tr`,
-      lastModified: '2026-10-04',
+      lastModified: '2026-10-10',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
       alternates: { languages: { tr: `${BASE}/tr`, 'en-GB': BASE, es: `${BASE}/es`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
@@ -255,6 +258,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { tr: `${BASE}/tr/cocugunuzun-potansiyeli`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
+    { url: `${BASE}/tr/kisilik-degerlendirmesi`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.tr}`,
       lastModified: '2026-10-04',
@@ -281,7 +285,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const frPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/fr`,
-      lastModified: '2026-10-04',
+      lastModified: '2026-10-10',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
       alternates: { languages: { fr: `${BASE}/fr`, 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
@@ -314,6 +318,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { fr: `${BASE}/fr/potentiel-de-votre-enfant`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
+    { url: `${BASE}/fr/evaluation-de-personnalite`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.fr}`,
       lastModified: '2026-10-04',
@@ -340,7 +345,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const arPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/ar`,
-      lastModified: '2026-10-04',
+      lastModified: '2026-10-10',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
       alternates: { languages: { ar: `${BASE}/ar`, 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
@@ -373,6 +378,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { ar: `${BASE}/ar/imkaniyat-tiflik`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
+    { url: `${BASE}/ar/taqyim-al-shakhsiya`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.ar}`,
       lastModified: '2026-10-04',
@@ -399,7 +405,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const ruPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/ru`,
-      lastModified: '2026-10-04',
+      lastModified: '2026-10-10',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
       alternates: { languages: { ru: `${BASE}/ru`, 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, zh: `${BASE}/zh`, 'x-default': BASE } },
@@ -432,6 +438,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { ru: `${BASE}/ru/potentsial-vashego-rebyonka`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
+    { url: `${BASE}/ru/otsenka-lichnosti`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.ru}`,
       lastModified: '2026-10-04',
@@ -458,7 +465,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const zhPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/zh`,
-      lastModified: '2026-10-04',
+      lastModified: '2026-10-10',
       changeFrequency: 'monthly' as const,
       priority: 0.8,
       alternates: { languages: { zh: `${BASE}/zh`, 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, 'x-default': BASE } },
@@ -491,6 +498,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: { languages: { zh: `${BASE}/zh/haizi-de-qianli`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, 'x-default': `${BASE}/your-childs-potential` } },
     },
+    { url: `${BASE}/zh/xingge-pinggu`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.zh}`,
       lastModified: '2026-10-04',
