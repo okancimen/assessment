@@ -1923,12 +1923,12 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Çocuğumun Güçlü Yönleri ve Akademik Başarı: Araştırmaların Ortaya Koyduğu 5 Karakter Gücü',
     shortTitle: 'Çocuğumun Güçlü Yönleri ve Akademik Başarı',
     description:
-      'Araştırmalar beş VIA kişilik özelliğinü — merak, öğrenme sevgisi, azim, öz denetim ve coşku — çocuğunuzun akademik başarısını belirleyen en güvenilir etkenler olarak ortaya koymaktadır.',
-    tldr: 'Okul notları sınıf ortalamasına göre başarıyı ölçer; ancak bir çocuğun çaba gösterip göstermeyeceğini, meraklı kalıp kalmayacağını ve zorluklardan ders çıkarıp çıkarmayacağını belirleyen karakter özelliklerini ortaya koymaz. Beş VIA kişilik özelliği — öğrenme sevgisi, merak, azim, öz denetim ve coşku — boylamsal araştırmalarda akademik sonuçları en güvenilir biçimde öngören özellikler olarak tutarlı biçimde öne çıkmaktadır. Bu güçler sabit değildir; geliştirilebilirler.',
+      'VIA karakter güçleri testine dayalı ücretsiz çocuk kişilik analizi: 24 karakter özelliği ve 6 erdem modeliyle araştırmaların ortaya koyduğu 5 güç — merak, öğrenme sevgisi, azim, öz denetim ve coşku — akademik başarıyı en güvenilir biçimde öngörüyor. 6–17 yaş için ebeveyn değerlendirmeli, yapay zeka destekli gelişim raporu.',
+    tldr: 'Okul notları sınıf ortalamasına göre başarıyı ölçer; ancak çocuğunuzun güçlü yönlerini ve potansiyelini tam olarak ortaya koymaz. Pozitif psikoloji araştırmaları, 5 VIA kişilik özelliğinin — öğrenme sevgisi, merak, azim, öz denetim ve coşku — akademik sonuçları en güvenilir biçimde öngördüğünü göstermektedir. Bu özellikler sabit değildir; ebeveyn değerlendirmeli bir testle ölçülebilir ve geliştirilebilir.',
     date: '2026-10-10',
     dateModified: '2026-10-10',
     readTime: '9 dk okuma',
-    tags: ['Kişilik Özellikleri', 'Akademik Başarı', 'VIA Kişilik Özellikleri', 'Çocuk Gelişimi', 'Ebeveyn Rehberi', 'Kişilik Değerlendirmesi'],
+    tags: ['Kişilik Özellikleri', 'Akademik Başarı', 'VIA Kişilik Özellikleri', 'Çocuk Gelişimi', 'Ebeveyn Rehberi', 'Kişilik Değerlendirmesi', 'Ücretsiz Çocuk Testi', 'Pozitif Psikoloji'],
     faqs: [
       {
         q: 'Çocuklarda akademik başarıyı en iyi öngören kişilik özelliği hangisidir?',
@@ -1945,6 +1945,14 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       {
         q: 'Çocuğumun azim puanı düşük. Bu, okulda zorlanacağı anlamına mı gelir?',
         a: 'Hayır. Karakter güçleri sabit özellikler değildir. Azim özellikle çevreye karşı yüksek duyarlılık gösterir: belirli rutinler, kasıtlı pratik yapıları ve çevredeki yetişkinlerin güçlük ile çabayı nasıl çerçevelediği onu önemli ölçüde şekillendirir. Düşük bir puan, bir gelişim fırsatıdır; bir karar değil.',
+      },
+      {
+        q: 'Çocuğumun güçlü yönlerini nasıl anlayabilirim?',
+        a: "Çocuğunuzun baskın karakter özelliklerini anlamanın en güvenilir yolu, günlük davranışları sistematik biçimde değerlendiren bir ebeveyn anketidir. Eduentry'nin ücretsiz VIA karakter güçleri testi, 6–17 yaş arası çocuklar için ebeveyn gözlemine dayalı 24 kişilik özelliğini ölçer ve yapay zeka destekli kişisel gelişim raporu oluşturur. Çocuğunuzun katılımına gerek yoktur; test yaklaşık 5–10 dakika sürer.",
+      },
+      {
+        q: '6–17 yaş çocuklar için Türkçe ücretsiz karakter ve kişilik testi var mı?',
+        a: "Evet. Eduentry'nin çocuk kişilik değerlendirmesi Türkçe olarak sunulmaktadır ve tamamen ücretsizdir. Pozitif psikolojinin altın standardı olan VIA modelinin 24 karakter özelliği ve 6 erdemini temel alır. 6–9, 10–13, 14–17 ve 18–20 yaş kademeleri için ayrı ayrı kalibre edilmiştir. Lise öğrencileri için karakter ve kişilik analizi ile üniversite hazırlık sürecinde güçlü yönlerin belirlenmesine de katkı sağlar.",
       },
     ],
     cta: {

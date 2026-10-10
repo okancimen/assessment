@@ -6740,15 +6740,15 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </p>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">VIA Kişilik Özellikleri Nedir?</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">VIA Karakter Güçleri Testi: 24 Kişilik Özelliği ve 6 Erdem</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Pennsylvania Üniversitesi&apos;nden psikologlar Martin Seligman ve Christopher Peterson tarafından geliştirilen VIA Kişilik Özellikleri Sınıflandırması, altı erdem üzerinde düzenlenen 24 gücü tanımlar: Bilgelik, Cesaret, İnsanlık, Adalet, Itidal ve Yüce Amaç. 50&apos;den fazla kültürde doğrulanmış, önde gelen psikoloji dergilerinde yayımlanan araştırmalarda kullanılan dünyanın en kapsamlı biçimde hakemli pozitif psikoloji aracıdır.
+          Pennsylvania Üniversitesi&apos;nden psikologlar Martin Seligman ve Christopher Peterson tarafından geliştirilen VIA Kişilik Özellikleri Sınıflandırması, <strong>6 erdem üzerinde düzenlenen 24 karakter özelliğini</strong> tanımlar: Bilgelik, Cesaret, İnsanlık, Adalet, Itidal ve Yüce Amaç. 50&apos;den fazla kültürde doğrulanmış, pozitif psikoloji çocuk kişilik analizinin dünya genelindeki altın standardıdır.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           İnsanları sabit kategorilere ayıran kişilik tipolojisi sistemlerinin aksine, VIA güçleri tüm insanlarda değişen derecelerde bulunur ve — son derece önemli bir şekilde — kasıtlı gelişime yanıt verir. 9 yaşında azim puanı düşük olan bir çocuk, önceden belirlenmiş bir yolda değildir. Bu puan bir başlangıç noktasıdır; bir karar değil.
         </p>
         <p className="text-gray-700 leading-relaxed">
-          <Link href="/tr/kisilik-degerlendirmesi" className="text-indigo-600 hover:underline font-medium">Eduentry kişilik değerlendirmesi</Link> dört gelişim kademesine göre kalibre edilmiş bir ebeveyn değerlendirmesi aracılığıyla tüm 24 kişilik özelliğini belirler — İmza Güçleri profili (en yüksek 5), Gelişim Sütunları (en düşük 3) ve kişiselleştirilmiş gelişim aktiviteleri üretir. 15 dakikadan az sürer ve ücretsizdir.
+          <Link href="/tr/kisilik-degerlendirmesi" className="text-indigo-600 hover:underline font-medium">Eduentry&apos;nin ücretsiz çocuk kişilik testi</Link>, ebeveyn değerlendirmeli yapısıyla 6–17 yaş arası çocukların tüm 24 kişilik özelliğini ölçer. Dört gelişim kademesine göre kalibre edilmiş bu online test; çocuğunuzun potansiyelini keşfetmek için İmza Güçleri profilini (en yüksek 5 özellik), Gelişim Sütunlarını (en düşük 3) ve yapay zeka destekli çocuk gelişim raporunu 15 dakika içinde sunar. Tamamen ücretsizdir.
         </p>
       </section>
 
@@ -6819,6 +6819,13 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
             </p>
           </div>
         </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lise Öğrencileri İçin Karakter ve Kişilik Analizi Neden Kritik?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          14–17 yaş döneminde akademik baskı, sınav hazırlığı ve üniversite seçimi aynı anda yoğunlaşır. Bu dönemde yapılan çocuklarda kişilik ve karakter analizi, hangi alanlarda doğal olarak güçlü olunduğunu ve hangilerinde kasıtlı çalışmanın gerektiğini netleştirir. Azim ve öz denetim puanı düşük bir lise öğrencisi için bu bir etiket değil; sınav dönemine girmeden önce hedefli müdahale yapılabilecek somut bir haritadır.
+        </p>
       </section>
 
       <section>
