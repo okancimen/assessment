@@ -127,12 +127,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const { slug } = await params
   const post = getPostBySlug(slug)
   if (!post) {
-    if (BLOG_POSTS_TR.some(p => p.slug === slug)) redirect(`/tr/blog/${slug}`)
-    if (BLOG_POSTS_ES.some(p => p.slug === slug)) redirect(`/es/blog/${slug}`)
-    if (BLOG_POSTS_FR.some(p => p.slug === slug)) redirect(`/fr/blog/${slug}`)
-    if (BLOG_POSTS_AR.some(p => p.slug === slug)) redirect(`/ar/blog/${slug}`)
-    if (BLOG_POSTS_RU.some(p => p.slug === slug)) redirect(`/ru/blog/${slug}`)
-    if (BLOG_POSTS_ZH.some(p => p.slug === slug)) redirect(`/zh/blog/${slug}`)
+    if (BLOG_POSTS_TR.some(p => p.slug === slug) || trByContentSlug.has(slug)) redirect(`/tr/blog/${trByContentSlug.get(slug) ?? slug}`)
+    if (BLOG_POSTS_ES.some(p => p.slug === slug) || esByContentSlug.has(slug)) redirect(`/es/blog/${esByContentSlug.get(slug) ?? slug}`)
+    if (BLOG_POSTS_FR.some(p => p.slug === slug) || frByContentSlug.has(slug)) redirect(`/fr/blog/${frByContentSlug.get(slug) ?? slug}`)
+    if (BLOG_POSTS_AR.some(p => p.slug === slug) || arByContentSlug.has(slug)) redirect(`/ar/blog/${arByContentSlug.get(slug) ?? slug}`)
+    if (BLOG_POSTS_RU.some(p => p.slug === slug) || ruByContentSlug.has(slug)) redirect(`/ru/blog/${ruByContentSlug.get(slug) ?? slug}`)
+    if (BLOG_POSTS_ZH.some(p => p.slug === slug) || zhByContentSlug.has(slug)) redirect(`/zh/blog/${zhByContentSlug.get(slug) ?? slug}`)
     notFound()
   }
 

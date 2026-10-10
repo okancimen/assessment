@@ -43,5 +43,5 @@ export async function GET(req: NextRequest) {
   }
   console.log(`[cron/index-urls] submitted=${ok}/${urls.length} sunday=${isSunday}`)
 
-  return NextResponse.json({ submitted: ok, total: urls.length, failed: failed.length })
+  return NextResponse.json({ submitted: ok, total: urls.length, failed: failed.length, errors: failed.slice(0, 3) })
 }
