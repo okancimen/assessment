@@ -35,10 +35,22 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: "Qu'est-ce que l'évaluation adaptative ?", acceptedAnswer: { '@type': 'Answer', text: "L'évaluation adaptative est une technologie qui calibre chaque question en temps réel en fonction des réponses précédentes de l'enfant. Contrairement aux tests traditionnels à questions fixes, cette méthode ajuste le niveau de difficulté selon les performances réelles de chaque élève." } },
+    { '@type': 'Question', name: "Qu'est-ce que la Théorie de Réponse à l'Item (TRI) ?", acceptedAnswer: { '@type': 'Answer', text: "La Théorie de Réponse à l'Item (TRI) est une théorie de mesure qui modélise chaque question selon ses propriétés statistiques : difficulté, discrimination et facteur de chance. Les évaluations d'Eduentry s'appuient sur la TRI pour fournir des estimations de compétences précises et comparables aux repères internationaux." } },
+    { '@type': 'Question', name: "Comment fonctionne la méthodologie d'Eduentry ?", acceptedAnswer: { '@type': 'Answer', text: "À mesure que l'enfant répond à chaque question, le système met à jour l'estimation de compétence en temps réel et ajuste la difficulté de la question suivante. Cela permet d'obtenir des mesures plus précises que les tests standard avec beaucoup moins de questions." } },
+    { '@type': 'Question', name: 'Les évaluations sont-elles alignées sur les standards internationaux ?', acceptedAnswer: { '@type': 'Answer', text: "Oui. Les résultats d'Eduentry sont conçus pour être comparables aux standards internationaux tels que PISA, le Programme national britannique et l'IB. Des scores normalisés et des classements percentiles mondiaux sont fournis." } },
+  ],
+}
+
 export default function MethodologiePage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16" lang="fr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <nav className="text-sm text-[#6e6e73] mb-10">
         <Link href="/fr" className="hover:text-[#1d1d1f]">Accueil</Link>

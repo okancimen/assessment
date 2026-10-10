@@ -44,10 +44,22 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Eduentry背后是谁？', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry由奥兹莱姆·奇门创立，她是一位拥有超过20年经验的教育专家，曾担任TED Istanbul College、ENKA Schools和Istanbul International Community School的英语教师、系主任及学校管理者。她持有国际市场营销硕士学位及哈佛大学教育研究生院证书。' } },
+    { '@type': 'Question', name: 'Eduentry是免费的吗？', acceptedAnswer: { '@type': 'Answer', text: '是的。Eduentry完全免费——没有订阅费、隐藏费用或付费层级。学业测评、性格测评和实习准备度测评均免费提供。' } },
+    { '@type': 'Question', name: 'Eduentry适合哪个年龄段？', acceptedAnswer: { '@type': 'Answer', text: '学业测评覆盖6至17岁。基于VIA模型的性格测评适用于6至20岁。实习准备度测评面向14岁及以上的学生。' } },
+    { '@type': 'Question', name: 'Eduentry与其他测评工具有何不同？', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry采用自适应测试技术（题目反应理论），根据每个孩子的水平实时校准题目难度。测评结果与国际标准（PISA、英国国家课程及IB）进行比对，并以标准化分数和全球百分位排名的形式呈现。' } },
+  ],
+}
+
 export default function GuanyuWomenPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16" lang="zh">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <nav className="text-sm text-[#6e6e73] mb-8">
         <Link href="/zh" className="hover:text-[#1d1d1f]">首页</Link>

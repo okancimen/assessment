@@ -35,10 +35,22 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'من يقف وراء Eduentry؟', acceptedAnswer: { '@type': 'Answer', text: 'أسست Eduentry أوزلم تشيمن، وهي متخصصة في التعليم تمتلك خبرة تزيد على 20 عاماً كمعلمة للغة الإنجليزية ورئيسة قسم ومديرة مدرسة في TED Istanbul College وENKA Schools وIstanbul International Community School. وهي حاصلة على درجة الماجستير في التسويق الدولي وشهادة من كلية الدراسات العليا للتربية في جامعة هارفارد.' } },
+    { '@type': 'Question', name: 'هل Eduentry مجاني؟', acceptedAnswer: { '@type': 'Answer', text: 'نعم. Eduentry مجاني تماماً — لا اشتراكات، ولا رسوم خفية، ولا مستويات مدفوعة. التقييم الأكاديمي وتقييم الشخصية وتقييم الاستعداد للتدريب كلها مجانية.' } },
+    { '@type': 'Question', name: 'ما الفئة العمرية التي يغطيها Eduentry؟', acceptedAnswer: { '@type': 'Answer', text: 'يغطي التقييم الأكاديمي الأعمار من 6 إلى 17 سنة. أما تقييم الشخصية المبني على VIA فهو للأعمار من 6 إلى 20 سنة. وتقييم الاستعداد للتدريب مخصص لطلاب من 14 سنة فما فوق.' } },
+    { '@type': 'Question', name: 'ما الذي يميز Eduentry عن أدوات التقييم الأخرى؟', acceptedAnswer: { '@type': 'Answer', text: 'يستخدم Eduentry تقنية التقييم التكيفي (نظرية الاستجابة للفقرة) لمعايرة الأسئلة في الوقت الفعلي وفق مستوى كل طفل. تُقارن النتائج بالمعايير الدولية (PISA والمنهج الوطني البريطاني وIB) وتُقدَّم على شكل درجات معيارية مع تصنيفات مئوية عالمية.' } },
+  ],
+}
+
 export default function HawlanaPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16" lang="ar" dir="rtl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <nav className="text-sm text-[#6e6e73] mb-10">
         <Link href="/ar" className="hover:text-[#1d1d1f]">الرئيسية</Link>

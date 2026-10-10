@@ -35,10 +35,22 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: '¿Quién está detrás de Eduentry?', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry fue fundada por Özlem Çimen, una profesional de la educación con más de 20 años de experiencia como profesora de inglés, jefa de departamento y directora escolar en TED Istanbul College, ENKA Schools y el Istanbul International Community School (IICS). Tiene un MBA en Marketing Internacional y un certificado de la Harvard Graduate School of Education.' } },
+    { '@type': 'Question', name: '¿Es gratuito Eduentry?', acceptedAnswer: { '@type': 'Answer', text: 'Sí. Eduentry es completamente gratuito — sin suscripciones, sin tarifas ocultas, sin niveles premium. La evaluación académica, la evaluación de personalidad y la evaluación de preparación para prácticas son todas gratuitas.' } },
+    { '@type': 'Question', name: '¿Qué rango de edad cubre Eduentry?', acceptedAnswer: { '@type': 'Answer', text: 'La evaluación académica cubre de 6 a 17 años. La evaluación de personalidad basada en VIA es para edades de 6 a 20 años. La evaluación de preparación para prácticas es para estudiantes de 14 años en adelante.' } },
+    { '@type': 'Question', name: '¿Qué diferencia a Eduentry de otras herramientas de evaluación?', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry utiliza tecnología de evaluación adaptativa (Teoría de Respuesta al Ítem) para calibrar preguntas en tiempo real al nivel de habilidad de cada niño. Los resultados se comparan con estándares internacionales (PISA, Currículo Nacional del Reino Unido, IB) y se reportan como puntuaciones estandarizadas con rankings percentiles globales.' } },
+  ],
+}
+
 export default function SobreNosotrosPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16" lang="es">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <nav className="text-sm text-[#6e6e73] mb-10">
         <Link href="/es" className="hover:text-[#1d1d1f]">Inicio</Link>

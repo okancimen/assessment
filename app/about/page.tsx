@@ -32,6 +32,17 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Who is behind Eduentry?', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry was founded by Özlem Çimen, an education professional with 20+ years of experience as an English teacher, department head, and school administrator at TED Istanbul College, ENKA Schools, and Istanbul International Community School (IICS). She holds an MBA in International Marketing and a Harvard Graduate School of Education certificate.' } },
+    { '@type': 'Question', name: 'Is Eduentry free to use?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Eduentry is completely free — no subscriptions, no hidden fees, no premium tiers. The academic assessment, personality assessment, and internship readiness assessment are all free. Create an account, add your child, and start immediately.' } },
+    { '@type': 'Question', name: 'What age range does Eduentry cover?', acceptedAnswer: { '@type': 'Answer', text: 'The academic assessment covers ages 6–17. The VIA-based personality assessment covers ages 6–20. The internship readiness assessment is for students aged 14 and above.' } },
+    { '@type': 'Question', name: 'What makes Eduentry different from other assessment tools?', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry uses adaptive assessment technology (Item Response Theory) to calibrate questions in real time to each child\'s ability level. This produces more accurate measurements with fewer questions than fixed-format tests. Results are benchmarked against international standards (PISA, UK National Curriculum, IB) and reported as standardised scores with global percentile rankings.' } },
+  ],
+}
+
 const PROFILE_PAGE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'ProfilePage',
@@ -119,6 +130,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ABOUT_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PROFILE_PAGE_SCHEMA) }} />

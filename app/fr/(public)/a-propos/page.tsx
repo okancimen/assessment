@@ -35,10 +35,22 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Qui est derrière Eduentry ?', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry a été fondé par Özlem Çimen, une professionnelle de l\'éducation avec plus de 20 ans d\'expérience en tant que professeure d\'anglais, cheffe de département et directrice scolaire au TED Istanbul College, aux ENKA Schools et à l\'Istanbul International Community School (IICS). Elle est titulaire d\'un MBA en Marketing International et d\'un certificat de la Harvard Graduate School of Education.' } },
+    { '@type': 'Question', name: 'Eduentry est-il gratuit ?', acceptedAnswer: { '@type': 'Answer', text: 'Oui. Eduentry est entièrement gratuit — sans abonnement, sans frais cachés, sans niveau premium. L\'évaluation académique, l\'évaluation de personnalité et l\'évaluation de préparation au stage sont toutes gratuites.' } },
+    { '@type': 'Question', name: 'Quelle tranche d\'âge Eduentry couvre-t-il ?', acceptedAnswer: { '@type': 'Answer', text: 'L\'évaluation académique couvre les enfants de 6 à 17 ans. L\'évaluation de personnalité basée sur VIA est pour les 6–20 ans. L\'évaluation de préparation au stage est pour les lycéens de 14 ans et plus.' } },
+    { '@type': 'Question', name: 'Qu\'est-ce qui différencie Eduentry des autres outils d\'évaluation ?', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry utilise la technologie d\'évaluation adaptative (Théorie de la Réponse à l\'Item) pour calibrer les questions en temps réel au niveau de compétence de chaque enfant. Les résultats sont comparés aux standards internationaux (PISA, programme national britannique, IB) et présentés sous forme de scores standardisés avec des classements percentiles mondiaux.' } },
+  ],
+}
+
 export default function AProposPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16" lang="fr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <nav className="text-sm text-[#6e6e73] mb-10">
         <Link href="/fr" className="hover:text-[#1d1d1f]">Accueil</Link>

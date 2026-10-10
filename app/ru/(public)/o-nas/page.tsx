@@ -35,10 +35,22 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Кто стоит за Eduentry?', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry основала Озлем Чимен — специалист в области образования с более чем 20-летним опытом преподавания английского языка, руководства кафедрой и управления школой в TED Istanbul College, ENKA Schools и Istanbul International Community School. Она имеет степень магистра в области международного маркетинга и сертификат Высшей школы образования Гарвардского университета.' } },
+    { '@type': 'Question', name: 'Eduentry бесплатный?', acceptedAnswer: { '@type': 'Answer', text: 'Да. Eduentry полностью бесплатный — без подписок, скрытых платежей и платных уровней. Академическая оценка, оценка личности и оценка готовности к стажировке доступны бесплатно.' } },
+    { '@type': 'Question', name: 'Какой возрастной диапазон охватывает Eduentry?', acceptedAnswer: { '@type': 'Answer', text: 'Академическая оценка охватывает детей от 6 до 17 лет. Оценка личности на основе VIA предназначена для детей от 6 до 20 лет. Оценка готовности к стажировке — для учащихся от 14 лет и старше.' } },
+    { '@type': 'Question', name: 'Чем Eduentry отличается от других инструментов оценки?', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry использует технологию адаптивного тестирования (теория ответа на задание), которая калибрует вопросы в реальном времени в соответствии с уровнем каждого ребёнка. Результаты сравниваются с международными стандартами (PISA, Национальная программа Великобритании и IB) и представляются в виде стандартизированных баллов с глобальными процентильными рейтингами.' } },
+  ],
+}
+
 export default function ONasPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16" lang="ru">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <nav className="text-sm text-[#6e6e73] mb-10">
         <Link href="/ru" className="hover:text-[#1d1d1f]">Главная</Link>

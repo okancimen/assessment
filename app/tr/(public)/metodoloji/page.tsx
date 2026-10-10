@@ -35,10 +35,22 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Uyarlamalı test nedir?', acceptedAnswer: { '@type': 'Answer', text: 'Uyarlamalı test, her soruyu çocuğun önceki yanıtlarına göre gerçek zamanlı olarak kalibre eden bir değerlendirme teknolojisidir. Geleneksel testlerin aksine, bu yöntem sabit bir soru seti kullanmaz; bunun yerine zorluk seviyesini her öğrencinin gerçek performansına göre ayarlar.' } },
+    { '@type': 'Question', name: 'Madde Tepki Teorisi (MTT) nedir?', acceptedAnswer: { '@type': 'Answer', text: 'Madde Tepki Teorisi (MTT), her soruyu güçlük, ayırt edicilik ve şans faktörü gibi istatistiksel özelliklere göre modelleyen bir ölçme teorisidir. Eduentry\'nin değerlendirmeleri, uluslararası benchmarklarla karşılaştırılabilir hassas yetenek tahminleri sunmak için MTT\'ye dayanmaktadır.' } },
+    { '@type': 'Question', name: 'Eduentry\'nin metodolojisi nasıl işler?', acceptedAnswer: { '@type': 'Answer', text: 'Çocuk her soruyu yanıtladıkça sistem, yetenek tahminini anlık olarak günceller ve bir sonraki sorunun güçlük seviyesini ayarlar. Bu süreç, çok daha az soruyla standart testlerden daha doğru ölçümler elde edilmesini sağlar.' } },
+    { '@type': 'Question', name: 'Değerlendirmeler uluslararası standartlarla uyumlu mu?', acceptedAnswer: { '@type': 'Answer', text: 'Evet. Eduentry\'nin sonuçları PISA, İngiltere Ulusal Müfredatı ve IB gibi uluslararası standartlarla karşılaştırılabilecek şekilde tasarlanmıştır. Standart skorlar ve küresel yüzdelik dilim sıralamaları sunulmaktadır.' } },
+  ],
+}
+
 export default function MetodolojiPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16" lang="tr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <nav className="text-sm text-[#6e6e73] mb-10">
         <Link href="/tr" className="hover:text-[#1d1d1f]">Ana Sayfa</Link>

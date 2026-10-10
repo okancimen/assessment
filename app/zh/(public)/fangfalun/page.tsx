@@ -44,10 +44,22 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: '什么是自适应测试？', acceptedAnswer: { '@type': 'Answer', text: '自适应测试是一种根据孩子之前的答题情况实时调整每道题目的技术。与传统的固定题目测试不同，该方法会根据每位学生的实际表现动态调整题目难度。' } },
+    { '@type': 'Question', name: '什么是题目反应理论（IRT）？', acceptedAnswer: { '@type': 'Answer', text: '题目反应理论（IRT）是一种测量理论，它根据每道题目的统计特性（难度、区分度和猜测因子）进行建模。Eduentry的测评基于IRT，能够提供精准的能力估计，并与国际基准进行比较。' } },
+    { '@type': 'Question', name: 'Eduentry的方法论是如何运作的？', acceptedAnswer: { '@type': 'Answer', text: '每当孩子回答一道题，系统会即时更新能力估计值，并据此调整下一道题的难度。这使得测评结果比标准测试更加精准，且所需题目数量大幅减少。' } },
+    { '@type': 'Question', name: '测评结果是否与国际标准对标？', acceptedAnswer: { '@type': 'Answer', text: '是的。Eduentry的测评结果旨在与PISA、英国国家课程及IB等国际标准进行比较。系统提供标准化分数及全球百分位排名。' } },
+  ],
+}
+
 export default function FangfalunPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16" lang="zh">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <nav className="text-sm text-[#6e6e73] mb-8">
         <Link href="/zh" className="hover:text-[#1d1d1f]">首页</Link>

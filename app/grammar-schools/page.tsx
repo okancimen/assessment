@@ -27,6 +27,18 @@ export const metadata: Metadata = {
   },
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'What is the 11+ exam?', acceptedAnswer: { '@type': 'Answer', text: 'The 11+ is a selective entrance exam taken by children aged 10–11 (Year 6) to gain entry into grammar schools in England. It tests Verbal Reasoning, Non-Verbal Reasoning, English, and Mathematics. Tests are run by GL Assessment or CEM (Durham University) depending on the area, and produce a standardised age score (SAS) with a mean of 100 and standard deviation of 15.' } },
+    { '@type': 'Question', name: 'What SAS score do you need to get into a grammar school?', acceptedAnswer: { '@type': 'Answer', text: 'The required SAS score varies by area and school. Most Kent and Hertfordshire grammar schools require around 115–121. London Sutton consortium schools require approximately 118–125. The most selective London schools (QE Boys, Henrietta Barnett) typically require 127–130+. Crucially, passing the threshold is not the same as receiving an offer — in oversubscribed areas, offers go to the highest scorers by distance.' } },
+    { '@type': 'Question', name: 'Which areas of England have grammar schools?', acceptedAnswer: { '@type': 'Answer', text: 'Grammar schools exist mainly in Kent (32 schools), Buckinghamshire (13), Birmingham, London (Barnet, Sutton), Essex, Hertfordshire, and Lincolnshire. There are approximately 160 grammar schools in England. Wales, Scotland, and Northern Ireland have different education systems and no equivalent grammar schools.' } },
+    { '@type': 'Question', name: 'What is the difference between a grammar school SAS score and a raw score?', acceptedAnswer: { '@type': 'Answer', text: "A raw score is the number of questions answered correctly. A standardised age score (SAS) adjusts the raw score for the child's exact age — a child born in August sits the same test as a child born in September but is almost a full year younger, so age standardisation levels the playing field. Most grammar schools publish SAS thresholds, not raw score thresholds." } },
+    { '@type': 'Question', name: 'Can I prepare my child for the 11+?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Preparation typically begins in Year 4 or 5. The most effective preparation includes regular practice in Verbal Reasoning, Non-Verbal Reasoning, English, and Maths under timed conditions. Eduentry offers a free adaptive assessment across all four subjects — producing standardised scores and percentile rankings so you know exactly where your child stands before the actual exam.' } },
+  ],
+}
+
 export default function GrammarSchoolsIndexPage() {
   const breadcrumb = {
     '@context': 'https://schema.org',
@@ -55,6 +67,7 @@ export default function GrammarSchoolsIndexPage() {
     <div className="min-h-screen bg-white flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <PublicNav />
 

@@ -82,6 +82,15 @@ const FAQS = [
   },
 ]
 
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Personality Assessment', item: `${BASE_URL}/personality-assessment` },
+  ],
+}
+
 const PAGE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
@@ -152,6 +161,7 @@ const TIERS = [
 export default function PersonalityAssessmentPage() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PAGE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 

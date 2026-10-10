@@ -35,10 +35,22 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: '¿Qué es la evaluación adaptativa?', acceptedAnswer: { '@type': 'Answer', text: 'La evaluación adaptativa es una tecnología que calibra cada pregunta en tiempo real según las respuestas previas del niño. A diferencia de los tests tradicionales con un conjunto fijo de preguntas, este método ajusta el nivel de dificultad al rendimiento real de cada estudiante.' } },
+    { '@type': 'Question', name: '¿Qué es la Teoría de Respuesta al Ítem (TRI)?', acceptedAnswer: { '@type': 'Answer', text: 'La Teoría de Respuesta al Ítem (TRI) es una teoría de medición que modela cada pregunta según sus propiedades estadísticas: dificultad, discriminación y factor de azar. Las evaluaciones de Eduentry se basan en la TRI para ofrecer estimaciones de habilidad precisas y comparables con benchmarks internacionales.' } },
+    { '@type': 'Question', name: '¿Cómo funciona la metodología de Eduentry?', acceptedAnswer: { '@type': 'Answer', text: 'A medida que el niño responde cada pregunta, el sistema actualiza la estimación de habilidad al instante y ajusta la dificultad de la siguiente pregunta. Esto permite obtener mediciones más precisas que los tests estándar con muchas menos preguntas.' } },
+    { '@type': 'Question', name: '¿Las evaluaciones están alineadas con estándares internacionales?', acceptedAnswer: { '@type': 'Answer', text: 'Sí. Los resultados de Eduentry están diseñados para ser comparables con estándares internacionales como PISA, el Currículo Nacional del Reino Unido y el IB. Se presentan puntuaciones normalizadas y clasificaciones percentiles globales.' } },
+  ],
+}
+
 export default function MetodologiaPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16" lang="es">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <nav className="text-sm text-[#6e6e73] mb-10">
         <Link href="/es" className="hover:text-[#1d1d1f]">Inicio</Link>

@@ -35,10 +35,22 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Eduentry\'nin arkasında kim var?', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry, TED İstanbul Koleji, ENKA Okulları ve İstanbul International Community School\'da 20 yılı aşkın deneyime sahip bir eğitim profesyoneli olan Özlem Çimen tarafından kurulmuştur. İşletme Yüksek Lisansı ve Harvard Graduate School of Education sertifikasına sahiptir.' } },
+    { '@type': 'Question', name: 'Eduentry ücretsiz mi?', acceptedAnswer: { '@type': 'Answer', text: 'Evet. Eduentry tamamen ücretsizdir — abonelik, gizli ücret veya premium katman yoktur. Akademik değerlendirme, kişilik değerlendirmesi ve staj hazırlık değerlendirmesinin tamamı ücretsizdir.' } },
+    { '@type': 'Question', name: 'Eduentry hangi yaş aralığını kapsar?', acceptedAnswer: { '@type': 'Answer', text: 'Akademik değerlendirme 6–17 yaş aralığını kapsar. VIA tabanlı kişilik değerlendirmesi 6–20 yaş içindir. Staj hazırlık değerlendirmesi ise 14 yaş ve üstü lise öğrencileri içindir.' } },
+    { '@type': 'Question', name: 'Eduentry diğer değerlendirme araçlarından farkı nedir?', acceptedAnswer: { '@type': 'Answer', text: 'Eduentry, soruları her çocuğun yetenek seviyesine gerçek zamanlı olarak kalibre etmek için uyarlanabilir değerlendirme teknolojisi kullanır. Sonuçlar PISA, İngiltere Ulusal Müfredatı ve IB standartlarıyla kıyaslanarak standart puanlar ve küresel yüzdelik dilimler halinde raporlanır.' } },
+  ],
+}
+
 export default function HakkimizdaPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16" lang="tr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <nav className="text-sm text-[#6e6e73] mb-10">
         <Link href="/tr" className="hover:text-[#1d1d1f]">Ana Sayfa</Link>

@@ -35,10 +35,22 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'ما هو الاختبار التكيفي؟', acceptedAnswer: { '@type': 'Answer', text: 'الاختبار التكيفي هو تقنية تُعايِر كل سؤال في الوقت الفعلي بناءً على إجابات الطفل السابقة. على خلاف الاختبارات التقليدية ذات الأسئلة الثابتة، تُعدِّل هذه الطريقة مستوى الصعوبة وفق الأداء الفعلي لكل طالب.' } },
+    { '@type': 'Question', name: 'ما هي نظرية الاستجابة للفقرة (IRT)؟', acceptedAnswer: { '@type': 'Answer', text: 'نظرية الاستجابة للفقرة (IRT) هي نظرية قياس تُنمذِج كل سؤال وفق خصائصه الإحصائية: الصعوبة، والتمييز، وعامل التخمين. تعتمد تقييمات Eduentry على هذه النظرية لتقديم تقديرات دقيقة للكفاءة قابلة للمقارنة بالمعايير الدولية.' } },
+    { '@type': 'Question', name: 'كيف تعمل منهجية Eduentry؟', acceptedAnswer: { '@type': 'Answer', text: 'مع إجابة الطفل عن كل سؤال، يُحدِّث النظام تقدير الكفاءة فورياً ويُعدِّل صعوبة السؤال التالي. يُتيح ذلك الحصول على قياسات أدق من الاختبارات المعيارية بعدد أسئلة أقل بكثير.' } },
+    { '@type': 'Question', name: 'هل التقييمات متوافقة مع المعايير الدولية؟', acceptedAnswer: { '@type': 'Answer', text: 'نعم. صُمِّمت نتائج Eduentry لتكون قابلة للمقارنة بالمعايير الدولية كـ PISA، والمنهج الوطني البريطاني، وبرنامج البكالوريا الدولية (IB). وتُقدَّم النتائج على شكل درجات معيارية مع تصنيفات مئوية عالمية.' } },
+  ],
+}
+
 export default function ManhajiyyaPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16" lang="ar" dir="rtl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <nav className="text-sm text-[#6e6e73] mb-10">
         <Link href="/ar" className="hover:text-[#1d1d1f]">الرئيسية</Link>
