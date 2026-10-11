@@ -109,6 +109,7 @@ export default function GuestStartForm({ locale = 'en' }: { locale?: string }) {
       <div className="flex flex-col sm:flex-row gap-3 w-full">
         <input
           type="text"
+          name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
@@ -118,6 +119,7 @@ export default function GuestStartForm({ locale = 'en' }: { locale?: string }) {
         />
         <input
           type="number"
+          name="age"
           value={age}
           onChange={(e) => setAge(e.target.value)}
           required
