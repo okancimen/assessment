@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { cookies } from 'next/headers'
 import { estimateTheta, optimalDifficulty } from '@/lib/assessment/adaptive'
 import { extractTrackFromInterestAnswer } from '@/lib/claude/internship-questions'
 import {
@@ -15,11 +17,16 @@ export async function POST(
     const { id } = await params
     const supabase = await createClient()
     const { data: { user } } = await supabase.auth.getUser()
-    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    const cookieStore = await cookies()
+    const guestToken = cookieStore.get('ac_tok')?.value
+
+    if (!user && !guestToken) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
     const { question_id, selected_answer, time_taken_seconds } = await request.json()
 
-    const { data: assessment } = await supabase
+    const db = createAdminClient()
+
+    const { data: assessment } = await db
       .from('assessments')
       .select('*, children(parent_id, student_user_id)')
       .eq('id', id)
@@ -27,15 +34,23 @@ export async function POST(
 
     if (!assessment) return NextResponse.json({ error: 'Not found' }, { status: 404 })
 
-    const child = assessment.children as { parent_id: string; student_user_id: string | null }
+    const isGuest = !assessment.child_id && !!assessment.guest_token
     const isInternship = assessment.assessment_type === 'internship'
 
-    const authorized = isInternship
-      ? child.parent_id === user.id || child.student_user_id === user.id
-      : child.parent_id === user.id
-    if (!authorized) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    if (isGuest) {
+      if (!guestToken || assessment.guest_token !== guestToken) {
+        return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+      }
+    } else {
+      if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+      const child = assessment.children as { parent_id: string; student_user_id: string | null }
+      const authorized = isInternship
+        ? child.parent_id === user.id || child.student_user_id === user.id
+        : child.parent_id === user.id
+      if (!authorized) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    }
 
-    const { data: question } = await supabase
+    const { data: question } = await db
       .from('questions')
       .select('correct_answer, topic, difficulty, subject, explanation')
       .eq('id', question_id)
@@ -45,19 +60,19 @@ export async function POST(
 
     const is_correct = selected_answer === question.correct_answer
 
-    await supabase.from('assessment_questions')
+    await db.from('assessment_questions')
       .update({ selected_answer, is_correct, answered_at: new Date().toISOString(), time_taken_seconds })
       .eq('assessment_id', id).eq('question_id', question_id)
 
-    const { data: session } = await supabase
+    const { data: session } = await db
       .from('assessment_sessions').select('*').eq('assessment_id', id).single()
 
     if (!session) return NextResponse.json({ error: 'Session not found' }, { status: 404 })
 
     if (isInternship) {
-      return handleInternshipAnswer(id, supabase, session, question, selected_answer, is_correct, time_taken_seconds)
+      return handleInternshipAnswer(id, db, session, question, selected_answer, is_correct, time_taken_seconds)
     }
-    return handleAcademicAnswer(id, supabase, session, question, is_correct)
+    return handleAcademicAnswer(id, db, session, question, is_correct)
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err)
     console.error('[assessment/answer]', message)

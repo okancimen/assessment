@@ -46,6 +46,7 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
       { href: '/subjects', label: 'Subjects' },
       { href: 'https://eduentry.ai/en', label: 'Internship', external: true },
       { href: '/personality-assessment', label: 'Character Strengths' },
+      { href: '/academic-assessment', label: 'Academic Assessment' },
       { href: '/your-childs-potential', label: "Child's Potential" },
     ],
     blogHref: '/blog',
@@ -62,6 +63,7 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     logoHref: '/tr',
     links: [
       { href: 'https://eduentry.ai/tr', label: 'Staj', external: true },
+      { href: '/tr/akademik-degerlendirme', label: 'Akademik Test' },
       { href: '/tr/kisilik-degerlendirmesi', label: 'Güçlü Yönleri' },
       { href: '/tr/cocugunuzun-potansiyeli', label: 'Akademik Potansiyeli' },
       { href: '/tr/hakkimizda', label: 'Hakkımızda' },
@@ -81,6 +83,7 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     logoHref: '/es',
     links: [
       { href: 'https://eduentry.ai/es', label: 'Prácticas', external: true },
+      { href: '/es/evaluacion-academica', label: 'Evaluación Académica' },
       { href: '/es/evaluacion-de-personalidad', label: 'Evaluación de Personalidad' },
       { href: '/es/potencial-de-tu-hijo', label: 'Potencial' },
       { href: '/es/sobre-nosotros', label: 'Sobre nosotros' },
@@ -100,6 +103,7 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     logoHref: '/fr',
     links: [
       { href: 'https://eduentry.ai/fr', label: 'Stages', external: true },
+      { href: '/fr/evaluation-academique', label: 'Évaluation Académique' },
       { href: '/fr/evaluation-de-personnalite', label: 'Évaluation de Personnalité' },
       { href: '/fr/potentiel-de-votre-enfant', label: 'Potentiel' },
       { href: '/fr/a-propos', label: 'À propos' },
@@ -119,6 +123,7 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     logoHref: '/ar',
     links: [
       { href: 'https://eduentry.ai/ar', label: 'التدريب', external: true },
+      { href: '/ar/taqyim-acadimi', label: 'التقييم الأكاديمي' },
       { href: '/ar/taqyim-al-shakhsiya', label: 'تقييم الشخصية' },
       { href: '/ar/imkaniyat-tiflik', label: 'إمكانيات طفلك' },
       { href: '/ar/hawlana', label: 'من نحن' },
@@ -138,6 +143,7 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     logoHref: '/ru',
     links: [
       { href: 'https://eduentry.ai/ru', label: 'Стажировка', external: true },
+      { href: '/ru/akademicheskaya-otsenka', label: 'Академическая оценка' },
       { href: '/ru/otsenka-lichnosti', label: 'Оценка личности' },
       { href: '/ru/potentsial-vashego-rebyonka', label: 'Потенциал' },
       { href: '/ru/o-nas', label: 'О нас' },
@@ -157,6 +163,7 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     logoHref: '/zh',
     links: [
       { href: 'https://eduentry.ai/zh', label: '实习评估', external: true },
+      { href: '/zh/xueshu-pinggu', label: '学业测评' },
       { href: '/zh/xingge-pinggu', label: '性格评估' },
       { href: '/zh/haizi-de-qianli', label: '孩子潜力' },
       { href: '/zh/guanyu-women', label: '关于我们' },

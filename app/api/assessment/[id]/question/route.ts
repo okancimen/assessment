@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { cookies } from 'next/headers'
 import { generateQuestion } from '@/lib/claude/questions'
 import { generateInternshipQuestion } from '@/lib/claude/internship-questions'
 import {
@@ -8,16 +10,23 @@ import {
 } from '@/types'
 
 export async function GET(
-  _request: NextRequest,
+  request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  void request
   try {
     const { id } = await params
     const supabase = await createClient()
     const { data: { user } } = await supabase.auth.getUser()
-    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    const cookieStore = await cookies()
+    const guestToken = cookieStore.get('ac_tok')?.value
 
-    const { data: assessment } = await supabase
+    if (!user && !guestToken) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+
+    // Use admin client so guest (no RLS session) can read their own assessment
+    const db = createAdminClient()
+
+    const { data: assessment } = await db
       .from('assessments')
       .select('*, children(parent_id, student_user_id, date_of_birth)')
       .eq('id', id)
@@ -25,23 +34,25 @@ export async function GET(
 
     if (!assessment) return NextResponse.json({ error: 'Not found' }, { status: 404 })
 
-    const child = assessment.children as {
-      parent_id: string
-      student_user_id: string | null
-      date_of_birth: string
-    }
-
+    const isGuest = !assessment.child_id && !!assessment.guest_token
     const isInternship = assessment.assessment_type === 'internship'
 
-    // Auth: internship allows student_user_id; academic only allows parent_id
-    const authorized = isInternship
-      ? child.parent_id === user.id || child.student_user_id === user.id
-      : child.parent_id === user.id
-    if (!authorized) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    if (isGuest) {
+      if (!guestToken || assessment.guest_token !== guestToken) {
+        return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+      }
+    } else {
+      if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+      const child = assessment.children as { parent_id: string; student_user_id: string | null; date_of_birth: string }
+      const authorized = isInternship
+        ? child.parent_id === user.id || child.student_user_id === user.id
+        : child.parent_id === user.id
+      if (!authorized) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    }
 
     if (assessment.status === 'completed') return NextResponse.json({ completed: true })
 
-    const { data: session } = await supabase
+    const { data: session } = await db
       .from('assessment_sessions')
       .select('*')
       .eq('assessment_id', id)
@@ -49,15 +60,26 @@ export async function GET(
 
     if (!session) return NextResponse.json({ error: 'Session not found' }, { status: 404 })
 
+    // For guests child object is null; build a stub using guest_age
+    const child = isGuest
+      ? { parent_id: '', student_user_id: null, date_of_birth: guestAgeToDob(assessment.guest_age ?? 10) }
+      : assessment.children as { parent_id: string; student_user_id: string | null; date_of_birth: string }
+
     if (isInternship) {
-      return handleInternshipQuestion(id, supabase, assessment, child, session, user.id)
+      return handleInternshipQuestion(id, db, assessment, child, session, user?.id ?? '')
     }
-    return handleAcademicQuestion(id, supabase, assessment, child, session)
+    return handleAcademicQuestion(id, db, assessment, child, session)
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err)
     console.error('[assessment/question]', message)
     return NextResponse.json({ error: message }, { status: 500 })
   }
+}
+
+function guestAgeToDob(age: number): string {
+  const d = new Date()
+  d.setFullYear(d.getFullYear() - age)
+  return d.toISOString().slice(0, 10)
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

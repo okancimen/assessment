@@ -38,6 +38,19 @@ const PERSONALITY_ALTERNATES = {
   },
 }
 
+const ACADEMIC_ALTERNATES = {
+  languages: {
+    'en-GB': `${BASE}/academic-assessment`,
+    es: `${BASE}/es/evaluacion-academica`,
+    tr: `${BASE}/tr/akademik-degerlendirme`,
+    fr: `${BASE}/fr/evaluation-academique`,
+    ar: `${BASE}/ar/taqyim-acadimi`,
+    ru: `${BASE}/ru/akademicheskaya-otsenka`,
+    zh: `${BASE}/zh/xueshu-pinggu`,
+    'x-default': `${BASE}/academic-assessment`,
+  },
+}
+
 const SUBJECTS = ['english', 'maths', 'verbal-reasoning', 'non-verbal-reasoning']
 
 // contentSlug → slug maps for cross-language hreflang
@@ -112,6 +125,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
       alternates: PERSONALITY_ALTERNATES,
+    },
+    {
+      url: `${BASE}/academic-assessment`,
+      lastModified: '2026-10-11',
+      changeFrequency: 'monthly',
+      priority: 0.9,
+      alternates: ACADEMIC_ALTERNATES,
     },
   ]
 
@@ -200,6 +220,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { es: `${BASE}/es/potencial-de-tu-hijo`, 'en-GB': `${BASE}/your-childs-potential`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
     { url: `${BASE}/es/evaluacion-de-personalidad`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
+    { url: `${BASE}/es/evaluacion-academica`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.es}`,
       lastModified: '2026-10-04',
@@ -260,6 +281,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { tr: `${BASE}/tr/cocugunuzun-potansiyeli`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
     { url: `${BASE}/tr/kisilik-degerlendirmesi`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
+    { url: `${BASE}/tr/akademik-degerlendirme`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.tr}`,
       lastModified: '2026-10-04',
@@ -320,6 +342,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { fr: `${BASE}/fr/potentiel-de-votre-enfant`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
     { url: `${BASE}/fr/evaluation-de-personnalite`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
+    { url: `${BASE}/fr/evaluation-academique`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.fr}`,
       lastModified: '2026-10-04',
@@ -380,6 +403,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { ar: `${BASE}/ar/imkaniyat-tiflik`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
     { url: `${BASE}/ar/taqyim-al-shakhsiya`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
+    { url: `${BASE}/ar/taqyim-acadimi`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.ar}`,
       lastModified: '2026-10-04',
@@ -440,6 +464,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { ru: `${BASE}/ru/potentsial-vashego-rebyonka`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, zh: `${BASE}/zh/haizi-de-qianli`, 'x-default': `${BASE}/your-childs-potential` } },
     },
     { url: `${BASE}/ru/otsenka-lichnosti`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
+    { url: `${BASE}/ru/akademicheskaya-otsenka`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.ru}`,
       lastModified: '2026-10-04',
@@ -500,6 +525,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { zh: `${BASE}/zh/haizi-de-qianli`, 'en-GB': `${BASE}/your-childs-potential`, es: `${BASE}/es/potencial-de-tu-hijo`, tr: `${BASE}/tr/cocugunuzun-potansiyeli`, fr: `${BASE}/fr/potentiel-de-votre-enfant`, ar: `${BASE}/ar/imkaniyat-tiflik`, ru: `${BASE}/ru/potentsial-vashego-rebyonka`, 'x-default': `${BASE}/your-childs-potential` } },
     },
     { url: `${BASE}/zh/xingge-pinggu`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
+    { url: `${BASE}/zh/xueshu-pinggu`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.zh}`,
       lastModified: '2026-10-04',

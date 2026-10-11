@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { cookies } from 'next/headers'
 import { computeResults, computeOverallScore, getScoreLabel, estimateTheta } from '@/lib/assessment/adaptive'
 import { computeTrackFit } from '@/lib/claude/internship-questions'
 import { withOverloadRetry } from '@/lib/claude/questions'
@@ -23,12 +24,13 @@ export async function POST(
     const { id } = await params
     const supabase = await createClient()
     const { data: { user } } = await supabase.auth.getUser()
-    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    const cookieStore = await cookies()
+    const guestToken = cookieStore.get('ac_tok')?.value
 
-    const isAdmin = isAdminEmail(user.email)
+    if (!user && !guestToken) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
-    // Use admin client for data fetching so RLS doesn't block admins
-    const db = isAdmin ? createAdminClient() : supabase
+    const isAdmin = !!user && isAdminEmail(user.email)
+    const db = createAdminClient()
 
     const { data: assessment } = await db
       .from('assessments')
@@ -38,24 +40,39 @@ export async function POST(
 
     if (!assessment) return NextResponse.json({ error: 'Not found' }, { status: 404 })
 
-    const child = assessment.children as {
-      parent_id: string; student_user_id: string | null; name: string; date_of_birth: string
-    }
+    const isGuest = !assessment.child_id && !!assessment.guest_token
     const isInternship = assessment.assessment_type === 'internship'
 
-    const authorized = isAdmin || (isInternship
-      ? child.parent_id === user.id || child.student_user_id === user.id
-      : child.parent_id === user.id)
-    if (!authorized) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    if (isGuest) {
+      if (!guestToken || assessment.guest_token !== guestToken) {
+        return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+      }
+    } else {
+      if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+      const child = assessment.children as { parent_id: string; student_user_id: string | null }
+      const authorized = isAdmin || (isInternship
+        ? child.parent_id === user.id || child.student_user_id === user.id
+        : child.parent_id === user.id)
+      if (!authorized) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    }
 
     const { data: session } = await db
       .from('assessment_sessions').select('*').eq('assessment_id', id).single()
     if (!session) return NextResponse.json({ error: 'Session not found' }, { status: 404 })
 
-    if (isInternship) {
-      return handleInternshipComplete(id, db, assessment, child, session, user)
+    if (isGuest) {
+      const guestChild = { name: assessment.guest_name ?? 'Child', date_of_birth: '', parent_id: '', student_user_id: null }
+      return handleAcademicComplete(id, db, assessment, guestChild, session, null, true)
     }
-    return handleAcademicComplete(id, db, assessment, child, session, user)
+
+    const child = assessment.children as {
+      parent_id: string; student_user_id: string | null; name: string; date_of_birth: string
+    }
+
+    if (isInternship) {
+      return handleInternshipComplete(id, db, assessment, child, session, user!)
+    }
+    return handleAcademicComplete(id, db, assessment, child, session, user!, false)
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err)
     console.error('[assessment/complete]', message)
@@ -64,13 +81,13 @@ export async function POST(
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-async function handleAcademicComplete(id: string, supabase: any, assessment: any, child: any, session: any, user: any) {
+async function handleAcademicComplete(id: string, supabase: any, assessment: any, child: any, session: any, user: any, isGuest = false) {
   const allScores = session.subject_scores || {}
   const subjectResults = computeResults(allScores)
   const { overall_score, standardized_score } = computeOverallScore(subjectResults)
 
   const { data: result, error: resultError } = await supabase.from('results').upsert({
-    assessment_id: id, child_id: assessment.child_id,
+    assessment_id: id, child_id: assessment.child_id ?? null,
     overall_score, standardized_score, subject_scores: subjectResults,
   }, { onConflict: 'assessment_id' }).select().single()
 
@@ -79,16 +96,18 @@ async function handleAcademicComplete(id: string, supabase: any, assessment: any
   await supabase.from('assessments')
     .update({ status: 'completed', completed_at: new Date().toISOString() }).eq('id', id)
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://eduentry.com'
-  sendResultsEmail({
-    to: user.email!,
-    childName: child.name,
-    overallScore: standardized_score,
-    scoreLabel: getScoreLabel(standardized_score),
-    resultsUrl: `${siteUrl}/assessment/${id}/results`,
-  }).catch(() => {})
+  if (!isGuest && user?.email) {
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://eduentry.com'
+    sendResultsEmail({
+      to: user.email,
+      childName: child.name,
+      overallScore: standardized_score,
+      scoreLabel: getScoreLabel(standardized_score),
+      resultsUrl: `${siteUrl}/assessment/${id}/results`,
+    }).catch(() => {})
+  }
 
-  return NextResponse.json({ result_id: result.id })
+  return NextResponse.json({ result_id: result.id, is_guest: isGuest })
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

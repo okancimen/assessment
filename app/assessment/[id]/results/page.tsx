@@ -204,10 +204,12 @@ export default function AssessmentResultsPage() {
     return <InternshipResults id={id} data={data as InternshipData} />
   }
 
-  // Academic: redirect to the existing full results page (server component)
-  // We use window.location to avoid importing the heavy server-only results page
+  // Guests see a partial results page; registered users go to the full results page
   if (typeof window !== 'undefined') {
-    window.location.replace(`/results/${id}`)
+    const dest = data.is_guest
+      ? `/academic-assessment/results/${id}`
+      : `/results/${id}`
+    window.location.replace(dest)
   }
   return null
 }
