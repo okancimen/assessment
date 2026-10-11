@@ -34,7 +34,45 @@ export async function POST(
   let childDob: string
   let ageTier: 1 | 2 | 3 | 4
 
-  if (user) {
+  const cookieStore = await cookies()
+  const guestToken = cookieStore.get('pg_tok')?.value
+
+  // Guest path takes priority when pg_tok is present — a logged-in user
+  // may still be completing a guest assessment (e.g. returning session).
+  if (guestToken) {
+    const { data: assessment } = await admin
+      .from('personality_assessments')
+      .select('id, status, age_tier, guest_name, guest_age, guest_token')
+      .eq('id', assessmentId)
+      .eq('guest_token', guestToken)
+      .single()
+
+    if (assessment) {
+      if (assessment.status === 'completed') return NextResponse.json({ ok: true })
+      childName = assessment.guest_name ?? 'Your child'
+      childDob = ageToDob(assessment.guest_age ?? 10)
+      ageTier = assessment.age_tier as 1 | 2 | 3 | 4
+      // fall through to scoring
+    } else if (user) {
+      // pg_tok present but this assessment belongs to the logged-in user
+      const { data: ownedAssessment } = await supabase
+        .from('personality_assessments')
+        .select('id, status, age_tier, child_id, children(name, date_of_birth)')
+        .eq('id', assessmentId)
+        .eq('parent_id', user.id)
+        .single()
+
+      if (!ownedAssessment) return NextResponse.json({ error: 'Not found' }, { status: 404 })
+      if (ownedAssessment.status === 'completed') return NextResponse.json({ ok: true })
+
+      const child = ownedAssessment.children as unknown as { name: string; date_of_birth: string }
+      childName = child.name
+      childDob = child.date_of_birth
+      ageTier = ownedAssessment.age_tier as 1 | 2 | 3 | 4
+    } else {
+      return NextResponse.json({ error: 'Not found' }, { status: 404 })
+    }
+  } else if (user) {
     const { data: assessment } = await supabase
       .from('personality_assessments')
       .select('id, status, age_tier, child_id, children(name, date_of_birth)')
@@ -50,23 +88,7 @@ export async function POST(
     childDob = child.date_of_birth
     ageTier = assessment.age_tier as 1 | 2 | 3 | 4
   } else {
-    const cookieStore = await cookies()
-    const guestToken = cookieStore.get('pg_tok')?.value
-    if (!guestToken) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-
-    const { data: assessment } = await admin
-      .from('personality_assessments')
-      .select('id, status, age_tier, guest_name, guest_age, guest_token')
-      .eq('id', assessmentId)
-      .eq('guest_token', guestToken)
-      .single()
-
-    if (!assessment) return NextResponse.json({ error: 'Not found' }, { status: 404 })
-    if (assessment.status === 'completed') return NextResponse.json({ ok: true })
-
-    childName = assessment.guest_name ?? 'Your child'
-    childDob = ageToDob(assessment.guest_age ?? 10)
-    ageTier = assessment.age_tier as 1 | 2 | 3 | 4
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
   const questions = getQuestions(ageTier)
