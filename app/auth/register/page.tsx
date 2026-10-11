@@ -5,7 +5,6 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 import Button from '@/components/ui/Button'
-import Logo from '@/components/ui/Logo'
 import { trackEvent } from '@/lib/analytics'
 
 function RegisterForm() {
@@ -100,34 +99,31 @@ function RegisterForm() {
 
 export default function RegisterPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#f5f5f7] px-4">
-      <div className="w-full max-w-sm">
-        <div className="text-center mb-8">
-          <Logo size="lg" className="justify-center" />
-          <h1 className="text-2xl font-bold text-[#1d1d1f] mt-7 mb-1 tracking-tight">Create your account</h1>
-          <p className="text-sm text-[#6e6e73]">Register as a parent — it&apos;s completely free</p>
-        </div>
-
-        <div className="bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-8">
-          <Suspense fallback={null}>
-            <RegisterForm />
-          </Suspense>
-        </div>
-
-        <p className="text-center text-xs text-[#6e6e73] mt-6">
-          Already have an account?{' '}
-          <Link href="/auth/login" className="text-[#4F46E5] font-semibold hover:underline">
-            Sign in
-          </Link>
-        </p>
-
-        <p className="text-center text-xs text-[#6e6e73] mt-3">
-          Want to see what you&apos;ll get first?{' '}
-          <Link href="/sample-report" className="text-[#4F46E5] font-semibold hover:underline">
-            View a sample report →
-          </Link>
-        </p>
+    <div className="w-full max-w-sm">
+      <div className="text-center mb-8">
+        <h1 className="text-2xl font-bold text-[#1d1d1f] mb-1 tracking-tight">Create your account</h1>
+        <p className="text-sm text-[#6e6e73]">Register as a parent — it&apos;s completely free</p>
       </div>
+
+      <div className="bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-8">
+        <Suspense fallback={null}>
+          <RegisterForm />
+        </Suspense>
+      </div>
+
+      <p className="text-center text-xs text-[#6e6e73] mt-6">
+        Already have an account?{' '}
+        <Link href="/auth/login" className="text-[#4F46E5] font-semibold hover:underline">
+          Sign in
+        </Link>
+      </p>
+
+      <p className="text-center text-xs text-[#6e6e73] mt-3">
+        Want to see what you&apos;ll get first?{' '}
+        <Link href="/sample-report" className="text-[#4F46E5] font-semibold hover:underline">
+          View a sample report →
+        </Link>
+      </p>
     </div>
   )
 }

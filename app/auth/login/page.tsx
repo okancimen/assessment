@@ -5,7 +5,6 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 import Button from '@/components/ui/Button'
-import Logo from '@/components/ui/Logo'
 import { trackEvent } from '@/lib/analytics'
 
 function LoginForm() {
@@ -77,27 +76,24 @@ function LoginForm() {
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#f5f5f7] px-4">
-      <div className="w-full max-w-sm">
-        <div className="text-center mb-8">
-          <Logo size="lg" className="justify-center" />
-          <h1 className="text-2xl font-bold text-[#1d1d1f] mt-7 mb-1 tracking-tight">Welcome back</h1>
-          <p className="text-sm text-[#6e6e73]">Sign in to your parent account</p>
-        </div>
-
-        <div className="bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-8">
-          <Suspense fallback={null}>
-            <LoginForm />
-          </Suspense>
-        </div>
-
-        <p className="text-center text-xs text-[#6e6e73] mt-6">
-          Don&apos;t have an account?{' '}
-          <Link href="/auth/register" className="text-[#4F46E5] font-semibold hover:underline">
-            Create one
-          </Link>
-        </p>
+    <div className="w-full max-w-sm">
+      <div className="text-center mb-8">
+        <h1 className="text-2xl font-bold text-[#1d1d1f] mb-1 tracking-tight">Welcome back</h1>
+        <p className="text-sm text-[#6e6e73]">Sign in to your parent account</p>
       </div>
+
+      <div className="bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-8">
+        <Suspense fallback={null}>
+          <LoginForm />
+        </Suspense>
+      </div>
+
+      <p className="text-center text-xs text-[#6e6e73] mt-6">
+        Don&apos;t have an account?{' '}
+        <Link href="/auth/register" className="text-[#4F46E5] font-semibold hover:underline">
+          Create one
+        </Link>
+      </p>
     </div>
   )
 }
