@@ -165,9 +165,9 @@ export default function SampleReport({ content: c }: { content: SampleReportCont
   }))
 
   const insightStyles = [
-    { icon: '📊', bg: 'bg-blue-50 border-blue-100' },
-    { icon: '⚡', bg: 'bg-violet-50 border-violet-100' },
-    { icon: '⚠️', bg: 'bg-red-50 border-red-100' },
+    { dot: 'bg-blue-400',   bg: 'bg-blue-50 border-blue-100'     },
+    { dot: 'bg-violet-400', bg: 'bg-violet-50 border-violet-100' },
+    { dot: 'bg-red-400',    bg: 'bg-red-50 border-red-100'       },
   ]
 
   const intlCards = [
@@ -251,7 +251,7 @@ export default function SampleReport({ content: c }: { content: SampleReportCont
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {c.insights.map((ins, i) => (
             <div key={ins.label} className={`rounded-2xl border p-5 ${insightStyles[i].bg}`}>
-              <div className="text-2xl mb-2">{insightStyles[i].icon}</div>
+              <div className={`w-2 h-2 rounded-full mb-3 ${insightStyles[i].dot}`} />
               <div className="text-sm font-semibold text-gray-900 mb-1">{ins.label}</div>
               <p className="text-xs text-gray-600 leading-relaxed">{ins.text}</p>
             </div>
@@ -407,6 +407,17 @@ export default function SampleReport({ content: c }: { content: SampleReportCont
           </div>
         </section>
 
+        {/* ── Mid-page CTA ── */}
+        <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">{c.ctaHeading}</p>
+            <p className="text-sm text-gray-500">{c.ctaText}</p>
+          </div>
+          <CtaLink href={registerHref} label={`sample_report_mid${labelSuffix}`} className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-indigo-700 transition-colors text-center">
+            {c.ctaButton}
+          </CtaLink>
+        </div>
+
         {/* ── Score legend ── */}
         <div className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm">
           <h3 className="font-semibold text-gray-900 mb-4">{c.scoreGuide}</h3>
@@ -423,14 +434,16 @@ export default function SampleReport({ content: c }: { content: SampleReportCont
         {/* ── FAQ ── */}
         <section className="max-w-3xl mx-auto px-6 py-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">{c.faqHeading}</h2>
-          <div className="space-y-3">
+          <div className="space-y-2">
             {c.faq.map(({ q, a }) => (
-              <details key={q} className="border border-gray-200 rounded-xl overflow-hidden">
-                <summary className="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50 list-none flex items-center justify-between">
-                  {q}
-                  <span className="text-indigo-600 ms-3 text-lg leading-none select-none">+</span>
+              <details key={q} className="group border border-gray-100 rounded-xl overflow-hidden">
+                <summary className="flex items-center justify-between px-5 py-4 cursor-pointer list-none select-none hover:bg-gray-50 transition-colors">
+                  <span className="font-medium text-gray-900 pr-4 text-sm">{q}</span>
+                  <svg className="w-4 h-4 text-gray-400 flex-shrink-0 group-open:rotate-180 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </summary>
-                <div className="px-5 pb-4 text-gray-600 text-sm leading-relaxed">{a}</div>
+                <div className="px-5 pb-5 pt-1 border-t border-gray-50 text-gray-600 text-sm leading-relaxed">{a}</div>
               </details>
             ))}
           </div>
