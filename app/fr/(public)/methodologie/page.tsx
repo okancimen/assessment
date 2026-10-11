@@ -240,6 +240,65 @@ export default function MethodologiePage() {
           </p>
         </section>
 
+        {/* Évaluation de personnalité */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Méthodologie de l&apos;évaluation de personnalité</h2>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            L&apos;évaluation des forces de caractère utilise une approche fondamentalement différente de l&apos;évaluation académique adaptative IRT. Plutôt que de mesurer les connaissances et le raisonnement, elle quantifie les traits de caractère d&apos;un enfant par <strong className="text-[#1d1d1f]">observation parentale structurée</strong> — rempli par l&apos;adulte qui voit l&apos;enfant au quotidien.
+          </p>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">Le cadre VIA des forces de caractère</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            L&apos;évaluation est fondée sur le cadre VIA des forces de caractère, développé par les psychologues pionniers Dr. Martin Seligman et Dr. Neal Mayerson. Il identifie 24 traits de caractère universels regroupés sous 6 vertus fondamentales : Sagesse, Courage, Humanité, Justice, Tempérance et Transcendance. Il a été validé à travers les cultures et est utilisé par des chercheurs dans plus de 190 pays.
+          </p>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">Conception du questionnaire parental</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Les parents remplissent un court questionnaire d&apos;observation avec des notes de 1 à 5 étoiles pour les comportements qu&apos;ils observent chaque jour chez leur enfant. L&apos;enfant ne participe pas directement. Cette conception est intentionnelle : les auto-perceptions des enfants évoluent rapidement, et l&apos;observation parentale offre une base plus stable — en particulier pour les 6–13 ans.
+          </p>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Les questions sont calibrées selon le stade de développement de l&apos;enfant. Quatre tranches d&apos;âge adaptent le vocabulaire et les traits évalués à la façon dont le caractère se développe typiquement à chaque stade :
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+            {([
+              { tier: 'Junior', age: '6–9 ans', traits: '12 traits', questions: '24 questions', color: 'bg-blue-50 border-blue-200 text-blue-700' },
+              { tier: 'Intermédiaire', age: '10–13 ans', traits: '15 traits', questions: '30 questions', color: 'bg-green-50 border-green-200 text-green-700' },
+              { tier: 'Adolescent', age: '14–17 ans', traits: '20 traits', questions: '40 questions', color: 'bg-purple-50 border-purple-200 text-purple-700' },
+              { tier: 'Jeune adulte', age: '18–20 ans', traits: '24 traits', questions: '48 questions', color: 'bg-orange-50 border-orange-200 text-orange-700' },
+            ] as const).map((t) => (
+              <div key={t.tier} className={`rounded-xl border p-3 text-center ${t.color}`}>
+                <p className="font-bold text-sm mb-0.5">{t.tier}</p>
+                <p className="text-xs opacity-80">{t.age}</p>
+                <p className="text-xs mt-1">{t.traits}</p>
+                <p className="text-xs">{t.questions}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">Ce que le rapport produit</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Contrairement à l&apos;évaluation académique, le rapport de personnalité ne produit pas un score standardisé unique. Il classe les traits les uns par rapport aux autres et génère :
+          </p>
+          <ul className="space-y-3 mb-4">
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">Top 5 des forces signature</strong> — les traits où l&apos;enfant obtient les meilleurs scores, représentant ses domaines d&apos;excellence naturels.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">3 axes de développement</strong> — les traits avec le plus de potentiel de développement, présentés avec bienveillance plutôt que comme des déficits.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">Exercices générés par IA</strong> — activités pratiques et adaptées au profil unique de forces de l&apos;enfant, réalisables à la maison.</span>
+            </li>
+          </ul>
+          <p className="text-[#6e6e73]">
+            Vous souhaitez voir le profil de caractère de votre enfant ?{' '}
+            <Link href="/fr/evaluation-de-personnalite" className="text-[#4F46E5] hover:underline font-medium">Commencer l&apos;évaluation de personnalité gratuite →</Link>
+          </p>
+        </section>
+
       </div>
 
       {/* Blog */}

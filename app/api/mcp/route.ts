@@ -1,4 +1,11 @@
 import { type NextRequest } from 'next/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import {
+  getTier, getQuestions, computeTraitScores,
+  getTopStrengths, getGrowthAreas, TRAIT_LABELS,
+  type Trait,
+} from '@/lib/personality-questions'
+import { generatePersonalitySummary } from '@/lib/claude/personality-summary'
 import { GRAMMAR_AREAS } from '@/app/grammar-schools/data'
 import { BLOG_POSTS } from '@/app/blog/posts'
 import { BLOG_POSTS_ES } from '@/app/blog/posts-es'
@@ -159,7 +166,13 @@ const SUBJECTS = [
   },
 ]
 
-function callTool(name: string, args: Record<string, unknown>): string {
+function ageToDob(age: number): string {
+  const d = new Date()
+  d.setFullYear(d.getFullYear() - age)
+  return d.toISOString().slice(0, 10)
+}
+
+async function callTool(name: string, args: Record<string, unknown>): Promise<string> {
   switch (name) {
     case 'explain_scoring': {
       const raw = args.score
@@ -284,6 +297,185 @@ function callTool(name: string, args: Record<string, unknown>): string {
       )
     }
 
+    case 'start_personality_assessment': {
+      const name = String(args.name ?? '').trim()
+      const ageNum = Number(args.age)
+      if (!name) return 'Error: name is required'
+      if (!ageNum || ageNum < 6 || ageNum > 20) return 'Error: age must be between 6 and 20'
+
+      const guestToken = crypto.randomUUID()
+      const tier = getTier(ageToDob(ageNum))
+      const totalQuestions = getQuestions(tier).length
+      const admin = createAdminClient()
+
+      const { data, error } = await admin
+        .from('personality_assessments')
+        .insert({ guest_token: guestToken, guest_name: name, guest_age: ageNum, age_tier: tier, status: 'in_progress' })
+        .select('id').single()
+
+      if (error || !data) return `Error: ${error?.message ?? 'Failed to create assessment'}`
+
+      return JSON.stringify({
+        assessmentId: data.id,
+        guestToken,
+        tier,
+        totalQuestions,
+      })
+    }
+
+    case 'get_personality_question': {
+      const { assessmentId, guestToken } = args as Record<string, string>
+      const idx = Number(args.questionIndex ?? 0)
+      const locale = typeof args.locale === 'string' ? args.locale : 'en'
+      const admin = createAdminClient()
+
+      const { data: assessment } = await admin
+        .from('personality_assessments')
+        .select('age_tier')
+        .eq('id', assessmentId)
+        .eq('guest_token', guestToken)
+        .single()
+
+      if (!assessment) return 'Error: assessment not found or token invalid'
+
+      const questions = getQuestions(assessment.age_tier as 1 | 2 | 3 | 4, locale)
+      if (idx < 0 || idx >= questions.length) {
+        return `Error: questionIndex out of range (0–${questions.length - 1})`
+      }
+
+      const q = questions[idx]
+      return JSON.stringify({
+        questionIndex: idx,
+        total: questions.length,
+        key: q.key,
+        trait: q.trait,
+        text: q.text,
+      })
+    }
+
+    case 'submit_personality_answer': {
+      const { assessmentId, guestToken, questionKey } = args as Record<string, string>
+      const scoreNum = Number(args.score)
+      if (!questionKey) return 'Error: questionKey is required'
+      if (!scoreNum || scoreNum < 1 || scoreNum > 5) return 'Error: score must be 1–5'
+
+      const admin = createAdminClient()
+      const { data: assessment } = await admin
+        .from('personality_assessments')
+        .select('id, status')
+        .eq('id', assessmentId)
+        .eq('guest_token', guestToken)
+        .single()
+
+      if (!assessment) return 'Error: assessment not found or token invalid'
+      if (assessment.status === 'completed') return 'Error: assessment already completed'
+
+      await admin.from('personality_answers').upsert(
+        { assessment_id: assessmentId, question_key: questionKey, score: scoreNum },
+        { onConflict: 'assessment_id,question_key' },
+      )
+      return JSON.stringify({ ok: true })
+    }
+
+    case 'complete_personality_assessment': {
+      const { assessmentId, guestToken } = args as Record<string, string>
+      const locale = typeof args.locale === 'string' ? args.locale : 'en'
+      const admin = createAdminClient()
+
+      const { data: assessment } = await admin
+        .from('personality_assessments')
+        .select('id, status, age_tier, guest_name, guest_age')
+        .eq('id', assessmentId)
+        .eq('guest_token', guestToken)
+        .single()
+
+      if (!assessment) return 'Error: assessment not found or token invalid'
+      if (assessment.status === 'completed') return JSON.stringify({ ok: true, alreadyCompleted: true })
+
+      const questions = getQuestions(assessment.age_tier as 1 | 2 | 3 | 4)
+      const { data: answersData } = await admin
+        .from('personality_answers')
+        .select('question_key, score')
+        .eq('assessment_id', assessmentId)
+
+      const answeredKeys = new Set((answersData ?? []).map((a) => a.question_key))
+      const unansweredCount = questions.filter((q) => !answeredKeys.has(q.key)).length
+      if (unansweredCount > 0) {
+        return `Error: ${unansweredCount} question(s) still unanswered — submit all answers before completing`
+      }
+
+      const traitScores = computeTraitScores(answersData ?? [])
+      const topStrengths = getTopStrengths(traitScores)
+      const growthAreas = getGrowthAreas(traitScores)
+
+      await admin.from('personality_results').upsert(
+        { assessment_id: assessmentId, trait_scores: traitScores, top_strengths: topStrengths, growth_areas: growthAreas, ai_summary: null },
+        { onConflict: 'assessment_id' },
+      )
+      await admin
+        .from('personality_assessments')
+        .update({ status: 'completed', completed_at: new Date().toISOString() })
+        .eq('id', assessmentId)
+
+      const childName = assessment.guest_name ?? 'Your child'
+      const age = assessment.guest_age ?? 10
+      generatePersonalitySummary({
+        childName,
+        age,
+        traitScores: traitScores as Record<Trait, number>,
+        topStrengths,
+        growthAreas,
+        locale,
+      }).then((aiSummary) =>
+        admin.from('personality_results').update({ ai_summary: aiSummary }).eq('assessment_id', assessmentId)
+      ).catch(console.error)
+
+      return JSON.stringify({
+        ok: true,
+        topStrengths: topStrengths.map((t) => TRAIT_LABELS[t as Trait] ?? t),
+        growthAreas: growthAreas.map((t) => TRAIT_LABELS[t as Trait] ?? t),
+        claimUrl: `https://eduentry.com/api/personality/claim?assessmentId=${assessmentId}&token=${guestToken}`,
+        note: 'AI summary is generating — call get_personality_results in a few seconds for the full report.',
+      })
+    }
+
+    case 'get_personality_results': {
+      const { assessmentId, guestToken } = args as Record<string, string>
+      const admin = createAdminClient()
+
+      const { data: assessment } = await admin
+        .from('personality_assessments')
+        .select('status, guest_name')
+        .eq('id', assessmentId)
+        .eq('guest_token', guestToken)
+        .single()
+
+      if (!assessment) return 'Error: not found or token invalid'
+      if (assessment.status !== 'completed') return 'Error: assessment not yet completed — call complete_personality_assessment first'
+
+      const { data: results } = await admin
+        .from('personality_results')
+        .select('trait_scores, top_strengths, growth_areas, ai_summary')
+        .eq('assessment_id', assessmentId)
+        .single()
+
+      if (!results) return 'Error: results not yet available'
+
+      return JSON.stringify({
+        childName: assessment.guest_name,
+        topStrengths: (results.top_strengths as string[]).map((t) => ({
+          trait: t,
+          label: TRAIT_LABELS[t as Trait] ?? t,
+        })),
+        growthAreas: (results.growth_areas as string[]).map((t) => ({
+          trait: t,
+          label: TRAIT_LABELS[t as Trait] ?? t,
+        })),
+        aiSummary: results.ai_summary,
+        claimUrl: `https://eduentry.com/api/personality/claim?assessmentId=${assessmentId}&token=${guestToken}`,
+      })
+    }
+
     default:
       return `Unknown tool: ${name}`
   }
@@ -373,9 +565,74 @@ const TOOLS = [
       },
     },
   },
+  {
+    name: 'start_personality_assessment',
+    description: "Start a guest personality assessment for a child. Returns assessmentId and guestToken — store both and pass them to every subsequent personality tool call.",
+    inputSchema: {
+      type: 'object',
+      properties: {
+        name: { type: 'string', description: "Child's first name" },
+        age: { type: 'number', description: 'Age in years (6–20)' },
+      },
+      required: ['name', 'age'],
+    },
+  },
+  {
+    name: 'get_personality_question',
+    description: 'Retrieve a personality assessment question by zero-based index. Read the text aloud to the parent and collect a 1–5 star rating before moving to the next question.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        assessmentId: { type: 'string' },
+        guestToken: { type: 'string' },
+        questionIndex: { type: 'number', description: 'Zero-based index (0 to totalQuestions-1)' },
+        locale: { type: 'string', description: 'Language for question text: en, tr, fr, es, ar, ru, or zh. Defaults to en.' },
+      },
+      required: ['assessmentId', 'guestToken', 'questionIndex'],
+    },
+  },
+  {
+    name: 'submit_personality_answer',
+    description: 'Submit a 1–5 star rating for a personality question. 1 = rarely/never, 3 = sometimes, 5 = always/very much. Call before moving to the next question.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        assessmentId: { type: 'string' },
+        guestToken: { type: 'string' },
+        questionKey: { type: 'string', description: 'The key field returned by get_personality_question' },
+        score: { type: 'number', description: '1–5 integer rating' },
+      },
+      required: ['assessmentId', 'guestToken', 'questionKey', 'score'],
+    },
+  },
+  {
+    name: 'complete_personality_assessment',
+    description: 'Score the assessment and trigger AI summary generation. Call only after all questions have been answered. Returns top strengths and growth areas immediately; AI summary generates asynchronously.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        assessmentId: { type: 'string' },
+        guestToken: { type: 'string' },
+        locale: { type: 'string', description: 'Language for the AI summary: en, tr, fr, es, ar, ru, or zh. Defaults to en.' },
+      },
+      required: ['assessmentId', 'guestToken'],
+    },
+  },
+  {
+    name: 'get_personality_results',
+    description: 'Retrieve the full results after completion: top 5 strengths, 3 growth areas, and AI-generated summary. If aiSummary is null the report is still generating — wait a few seconds and retry.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        assessmentId: { type: 'string' },
+        guestToken: { type: 'string' },
+      },
+      required: ['assessmentId', 'guestToken'],
+    },
+  },
 ]
 
-function handleMessage(msg: Record<string, unknown>): Record<string, unknown> | null {
+async function handleMessage(msg: Record<string, unknown>): Promise<Record<string, unknown> | null> {
   const { id, method, params } = msg as {
     id?: unknown
     method: string
@@ -405,7 +662,7 @@ function handleMessage(msg: Record<string, unknown>): Record<string, unknown> | 
         name: string
         arguments?: Record<string, unknown>
       }
-      const text = callTool(name, toolArgs)
+      const text = await callTool(name, toolArgs)
       return {
         jsonrpc: '2.0',
         id,
@@ -438,9 +695,9 @@ export async function POST(request: NextRequest) {
 
   const acceptSSE = request.headers.get('accept')?.includes('text/event-stream') ?? false
   const messages = Array.isArray(body) ? body : [body]
-  const responses = messages
-    .map((m) => handleMessage(m as Record<string, unknown>))
-    .filter(Boolean) as Record<string, unknown>[]
+  const responses = (await Promise.all(
+    messages.map((m) => handleMessage(m as Record<string, unknown>)),
+  )).filter(Boolean) as Record<string, unknown>[]
 
   const single = !Array.isArray(body)
   const payload = single ? (responses[0] ?? null) : responses

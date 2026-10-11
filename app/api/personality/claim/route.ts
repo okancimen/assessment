@@ -19,6 +19,8 @@ export async function GET(req: NextRequest) {
 
   const cookieStore = await cookies()
   const guestToken = cookieStore.get('pg_tok')?.value
+    ?? searchParams.get('token')
+    ?? undefined
 
   if (!guestToken) {
     return NextResponse.redirect(`${origin}/personality-assessment`)
@@ -28,8 +30,9 @@ export async function GET(req: NextRequest) {
   const { data: { user } } = await supabase.auth.getUser()
 
   if (!user) {
+    const claimUrl = `/api/personality/claim?assessmentId=${assessmentId}&token=${guestToken}`
     return NextResponse.redirect(
-      `${origin}/auth/register?redirect=/personality-assessment/results/${assessmentId}`,
+      `${origin}/auth/register?redirect=${encodeURIComponent(claimUrl)}`,
     )
   }
 

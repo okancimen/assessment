@@ -240,6 +240,65 @@ export default function MetodologiaPage() {
           </p>
         </section>
 
+        {/* Evaluación de personalidad */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Metodología de la evaluación de personalidad</h2>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            La evaluación de fortalezas del carácter utiliza un enfoque fundamentalmente distinto al de la evaluación académica adaptativa IRT. En lugar de medir el conocimiento y el razonamiento, cuantifica los rasgos de carácter de un niño mediante <strong className="text-[#1d1d1f]">observación parental estructurada</strong> — completada por el adulto que ve al niño cada día.
+          </p>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">El marco VIA de fortalezas del carácter</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            La evaluación se basa en el marco VIA de Fortalezas del Carácter, desarrollado por los pioneros de la psicología positiva Dr. Martin Seligman y Dr. Neal Mayerson. Identifica 24 rasgos de carácter universales agrupados en 6 virtudes fundamentales: Sabiduría, Coraje, Humanidad, Justicia, Templanza y Trascendencia. Ha sido validado entre culturas y es utilizado por investigadores en más de 190 países.
+          </p>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">Diseño del cuestionario para padres</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Los padres completan un breve cuestionario de observación con valoraciones de 1 a 5 estrellas sobre los comportamientos que observan en su hijo cada día. El niño no participa directamente. Este diseño es intencional: las autopercepciones de los niños cambian rápidamente, y la observación parental ofrece una base más estable — especialmente para los 6–13 años.
+          </p>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Las preguntas están calibradas al estadio de desarrollo del niño. Cuatro grupos de edad adaptan el vocabulario y los rasgos evaluados a cómo el carácter se desarrolla típicamente en cada etapa:
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+            {([
+              { tier: 'Junior', age: '6–9 años', traits: '12 rasgos', questions: '24 preguntas', color: 'bg-blue-50 border-blue-200 text-blue-700' },
+              { tier: 'Intermedio', age: '10–13 años', traits: '15 rasgos', questions: '30 preguntas', color: 'bg-green-50 border-green-200 text-green-700' },
+              { tier: 'Adolescente', age: '14–17 años', traits: '20 rasgos', questions: '40 preguntas', color: 'bg-purple-50 border-purple-200 text-purple-700' },
+              { tier: 'Joven adulto', age: '18–20 años', traits: '24 rasgos', questions: '48 preguntas', color: 'bg-orange-50 border-orange-200 text-orange-700' },
+            ] as const).map((t) => (
+              <div key={t.tier} className={`rounded-xl border p-3 text-center ${t.color}`}>
+                <p className="font-bold text-sm mb-0.5">{t.tier}</p>
+                <p className="text-xs opacity-80">{t.age}</p>
+                <p className="text-xs mt-1">{t.traits}</p>
+                <p className="text-xs">{t.questions}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">Lo que produce el informe</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            A diferencia de la evaluación académica, el informe de personalidad no produce una puntuación estandarizada única. Clasifica los rasgos entre sí y genera:
+          </p>
+          <ul className="space-y-3 mb-4">
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">Top 5 de fortalezas principales</strong> — los rasgos donde el niño obtiene las puntuaciones más altas, sus áreas de excelencia natural.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">3 áreas de crecimiento</strong> — los rasgos con mayor potencial de desarrollo, presentados con enfoque constructivo en lugar de déficit.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">Ejercicios generados por IA</strong> — actividades prácticas adaptadas al perfil único de fortalezas del niño, realizables en casa.</span>
+            </li>
+          </ul>
+          <p className="text-[#6e6e73]">
+            ¿Quieres ver cómo es el perfil de carácter de tu hijo?{' '}
+            <Link href="/es/evaluacion-de-personalidad" className="text-[#4F46E5] hover:underline font-medium">Iniciar la evaluación de personalidad gratuita →</Link>
+          </p>
+        </section>
+
       </div>
 
       {/* Artículos del blog */}

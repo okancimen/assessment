@@ -239,6 +239,65 @@ export default function MetodologiyaPage() {
           </p>
         </section>
 
+        {/* Оценка личности */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Методология оценки личности</h2>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Оценка сильных сторон характера использует принципиально иной подход по сравнению с адаптивной IRT-оценкой. Вместо измерения знаний и мышления она количественно определяет черты характера ребёнка через структурированное <strong className="text-[#1d1d1f]">наблюдение родителей</strong> — заполняется взрослым, который видит ребёнка каждый день.
+          </p>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">Структура сильных сторон характера VIA</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Оценка основана на структуре сильных сторон характера VIA, разработанной пионерами позитивной психологии доктором Мартином Селигманом и доктором Нилом Майерсоном. Она выделяет 24 универсальные черты характера, сгруппированные под 6 основными добродетелями: Мудрость, Смелость, Гуманность, Справедливость, Умеренность и Трансцендентность. Структура валидирована в разных культурах и используется исследователями более чем в 190 странах.
+          </p>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">Анкета для родителей</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Родители заполняют короткую анкету на основе наблюдений с оценками от 1 до 5 звёзд за поведение, которое они наблюдают у ребёнка каждый день. Ребёнок не участвует напрямую. Такой дизайн намеренный: самовосприятие детей меняется быстро, а родительское наблюдение обеспечивает более стабильную базу — особенно для детей 6–13 лет.
+          </p>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Вопросы откалиброваны под стадию развития ребёнка. Четыре возрастные группы адаптируют словарный запас и оцениваемые черты к тому, как характер обычно развивается на каждом этапе:
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+            {([
+              { tier: 'Младший', age: '6–9 лет', traits: '12 черт', questions: '24 вопроса', color: 'bg-blue-50 border-blue-200 text-blue-700' },
+              { tier: 'Средний', age: '10–13 лет', traits: '15 черт', questions: '30 вопросов', color: 'bg-green-50 border-green-200 text-green-700' },
+              { tier: 'Подросток', age: '14–17 лет', traits: '20 черт', questions: '40 вопросов', color: 'bg-purple-50 border-purple-200 text-purple-700' },
+              { tier: 'Молодой взрослый', age: '18–20 лет', traits: '24 черты', questions: '48 вопросов', color: 'bg-orange-50 border-orange-200 text-orange-700' },
+            ] as const).map((t) => (
+              <div key={t.tier} className={`rounded-xl border p-3 text-center ${t.color}`}>
+                <p className="font-bold text-sm mb-0.5">{t.tier}</p>
+                <p className="text-xs opacity-80">{t.age}</p>
+                <p className="text-xs mt-1">{t.traits}</p>
+                <p className="text-xs">{t.questions}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">Что даёт отчёт</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            В отличие от академической оценки, отчёт о личности не даёт единого стандартизированного балла. Вместо этого черты ранжируются относительно друг друга и формируется:
+          </p>
+          <ul className="space-y-3 mb-4">
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">Топ 5 сильных сторон</strong> — черты с наивысшими баллами, представляющие естественные области превосходства ребёнка.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">3 области роста</strong> — черты с наибольшим потенциалом развития, представленные конструктивно, без акцента на дефицитах.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">Упражнения от ИИ</strong> — практические задания, адаптированные к уникальному профилю сильных сторон ребёнка, которые можно выполнять дома.</span>
+            </li>
+          </ul>
+          <p className="text-[#6e6e73]">
+            Хотите узнать, каков профиль характера вашего ребёнка?{' '}
+            <Link href="/ru/otsenka-lichnosti" className="text-[#4F46E5] hover:underline font-medium">Начать бесплатную оценку личности →</Link>
+          </p>
+        </section>
+
       </div>
 
       {/* Blog links */}

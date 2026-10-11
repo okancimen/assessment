@@ -158,6 +158,65 @@ export default function FangfalunPage() {
           </ul>
         </section>
 
+        {/* 性格评估方法论 */}
+        <section>
+          <h2 className="text-3xl font-bold text-[#1d1d1f] mb-5 tracking-tight">性格评估方法论</h2>
+          <p className="text-[#636366] leading-relaxed mb-4">
+            性格优势评估采用与IRT学业评估截然不同的方法。它不是测量知识和推理能力，而是通过<strong className="text-[#1d1d1f]">家长观察问卷</strong>来量化孩子的性格特征——由每天陪伴孩子的成年人填写。
+          </p>
+
+          <h3 className="text-xl font-bold text-[#1d1d1f] mb-3 mt-6">VIA品格优势框架</h3>
+          <p className="text-[#636366] leading-relaxed mb-4">
+            评估基于VIA品格优势框架，由积极心理学先驱马丁·塞利格曼博士和尼尔·梅耶森博士开发。该框架识别出24项普世性格特征，归纳于6大核心美德：智慧、勇气、人性、公正、节制与超越。已在不同文化中获得验证，被190多个国家的研究人员使用。
+          </p>
+
+          <h3 className="text-xl font-bold text-[#1d1d1f] mb-3 mt-6">家长评定问卷设计</h3>
+          <p className="text-[#636366] leading-relaxed mb-4">
+            家长完成一份简短的观察问卷，对每天在孩子身上看到的行为进行1至5星评分。孩子不直接参与。这一设计是有意为之：儿童的自我认知变化迅速，而家长的观察能提供更稳定、准确的基准——尤其适用于6至13岁儿童。
+          </p>
+          <p className="text-[#636366] leading-relaxed mb-4">
+            问题根据孩子的发展阶段进行校准。四个年龄层次确保词汇量和评估特征与各阶段性格发展规律相匹配：
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+            {([
+              { tier: '初级', age: '6–9岁', traits: '12项特征', questions: '24题', color: 'bg-blue-50 border-blue-200 text-blue-700' },
+              { tier: '中级', age: '10–13岁', traits: '15项特征', questions: '30题', color: 'bg-green-50 border-green-200 text-green-700' },
+              { tier: '青少年', age: '14–17岁', traits: '20项特征', questions: '40题', color: 'bg-purple-50 border-purple-200 text-purple-700' },
+              { tier: '青年', age: '18–20岁', traits: '全部24项', questions: '48题', color: 'bg-orange-50 border-orange-200 text-orange-700' },
+            ] as const).map((t) => (
+              <div key={t.tier} className={`rounded-xl border p-3 text-center ${t.color}`}>
+                <p className="font-bold text-sm mb-0.5">{t.tier}</p>
+                <p className="text-xs opacity-80">{t.age}</p>
+                <p className="text-xs mt-1">{t.traits}</p>
+                <p className="text-xs">{t.questions}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="text-xl font-bold text-[#1d1d1f] mb-3 mt-6">报告产出内容</h3>
+          <p className="text-[#636366] leading-relaxed mb-4">
+            与学业评估不同，性格报告不产生单一标准化分数。它将特征相互排名并生成：
+          </p>
+          <ul className="space-y-3 mb-4">
+            {([
+              { title: '前5项标志性优势', desc: '孩子得分最高的特征，代表其天然的卓越领域。' },
+              { title: '3个成长领域', desc: '最具发展潜力的特征，以建设性方式呈现，而非聚焦于不足。' },
+              { title: 'AI生成练习计划', desc: '针对孩子独特优势档案量身定制的实用活动，可在家中进行。' },
+            ] as const).map(({ title, desc }) => (
+              <li key={title} className="flex items-start gap-3">
+                <svg className="w-4 h-4 text-[#4F46E5] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-[#636366] text-sm"><strong className="text-[#1d1d1f]">{title}：</strong>{desc}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-sm text-[#636366]">
+            想了解孩子的性格档案是什么样的？{' '}
+            <Link href="/zh/xingge-pinggu" className="text-[#4F46E5] hover:underline font-medium">开始免费性格评估 →</Link>
+          </p>
+        </section>
+
       </div>
 
       <div className="mt-20 border-t border-[#d2d2d7] pt-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">

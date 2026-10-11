@@ -347,6 +347,65 @@ export default function MethodologyPage() {
             </div>
           </section>
 
+          {/* Character Strengths */}
+          <section>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Character Strengths Assessment Methodology</h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Eduentry&apos;s personality assessment uses a fundamentally different approach from the adaptive IRT academic assessment. Rather than measuring knowledge and reasoning, it quantifies a child&apos;s character traits through structured <strong>parent observation</strong> — rated by the adult who sees the child every day.
+            </p>
+
+            <h3 className="text-lg font-bold text-gray-800 mb-3 mt-6">The VIA Character Strengths Framework</h3>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              The assessment is built on the VIA Character Strengths framework, developed by positive psychologists Dr. Martin Seligman and Dr. Neal Mayerson. It identifies 24 universal character traits grouped under 6 core virtues: Wisdom, Courage, Humanity, Justice, Temperance, and Transcendence. The framework has been validated across cultures and is used by researchers in over 190 countries.
+            </p>
+
+            <h3 className="text-lg font-bold text-gray-800 mb-3 mt-6">Parent-Rated Survey Design</h3>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Parents complete a short observation-based survey of 1–5 star ratings for behaviours they witness in their child every day. Children do not participate directly. This design is intentional: children&apos;s self-perceptions change rapidly, and parental observation provides a more stable, accurate baseline — particularly for children aged 6–13.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Questions are calibrated to the child&apos;s developmental stage. Four age tiers match both vocabulary and the traits assessed to how character typically develops at each stage:
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+              {([
+                { tier: 'Junior', age: '6–9', traits: '12 traits', questions: '24 questions', color: 'bg-blue-50 border-blue-200 text-blue-700' },
+                { tier: 'Intermediate', age: '10–13', traits: '15 traits', questions: '30 questions', color: 'bg-green-50 border-green-200 text-green-700' },
+                { tier: 'Adolescent', age: '14–17', traits: '20 traits', questions: '40 questions', color: 'bg-purple-50 border-purple-200 text-purple-700' },
+                { tier: 'Young Adult', age: '18–20', traits: 'All 24 traits', questions: '48 questions', color: 'bg-orange-50 border-orange-200 text-orange-700' },
+              ] as const).map((t) => (
+                <div key={t.tier} className={`rounded-xl border p-3 text-center ${t.color}`}>
+                  <p className="font-bold text-sm mb-0.5">{t.tier}</p>
+                  <p className="text-xs opacity-80">{t.age}</p>
+                  <p className="text-xs mt-1">{t.traits}</p>
+                  <p className="text-xs">{t.questions}</p>
+                </div>
+              ))}
+            </div>
+
+            <h3 className="text-lg font-bold text-gray-800 mb-3 mt-6">What the Report Produces</h3>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Unlike the academic assessment, the personality report does not produce a single standardised score. Instead it ranks traits relative to each other and generates:
+            </p>
+            <ul className="space-y-3 mb-4">
+              <li className="flex gap-3">
+                <span className="w-2 h-2 rounded-full bg-indigo-400 mt-2 flex-shrink-0" />
+                <span className="text-gray-600"><strong className="text-gray-800">Top 5 Signature Strengths</strong> — the traits where the child scores highest, representing their natural areas of excellence.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="w-2 h-2 rounded-full bg-indigo-400 mt-2 flex-shrink-0" />
+                <span className="text-gray-600"><strong className="text-gray-800">Bottom 3 Growth Areas</strong> — traits with the most room to develop, presented with gentle framing rather than a deficit label.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="w-2 h-2 rounded-full bg-indigo-400 mt-2 flex-shrink-0" />
+                <span className="text-gray-600"><strong className="text-gray-800">AI-Generated Exercises</strong> — tailored, real-world activities the parent can practise at home, specific to the child&apos;s unique strength profile.</span>
+              </li>
+            </ul>
+            <p className="text-gray-600 leading-relaxed">
+              Want to see what your child&apos;s character profile looks like?{' '}
+              <Link href="/personality-assessment" className="text-indigo-600 hover:underline font-medium">Start the free personality assessment →</Link>
+            </p>
+          </section>
+
           {/* Transparency */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Transparency</h2>

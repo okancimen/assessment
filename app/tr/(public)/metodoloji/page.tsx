@@ -239,6 +239,65 @@ export default function MetodolojiPage() {
           </p>
         </section>
 
+        {/* Kişilik değerlendirmesi */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Kişilik değerlendirmesi metodolojisi</h2>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Kişilik güçleri değerlendirmesi, akademik MYT değerlendirmesinden temelden farklı bir yaklaşım kullanır. Bilgi ve akıl yürütme becerisini ölçmek yerine, çocuğun karakter özelliklerini <strong className="text-[#1d1d1f]">ebeveyn gözlemine</strong> dayalı bir anket aracılığıyla ölçer — çocuğu her gün gören kişi tarafından doldurulur.
+          </p>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">VIA Kişilik Güçleri çerçevesi</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Değerlendirme, pozitif psikolojinin öncüleri Dr. Martin Seligman ve Dr. Neal Mayerson tarafından geliştirilen VIA Kişilik Güçleri çerçevesine dayanır. Bu çerçeve, 6 temel erdem altında gruplandırılmış 24 evrensel karakter özelliğini tanımlar: Bilgelik, Cesaret, İnsanlık, Adalet, Ölçülülük ve Aşkınlık. 190&apos;dan fazla ülkede araştırmacılar tarafından kullanılmaktadır.
+          </p>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">Ebeveyn değerlendirmesi tasarımı</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Ebeveynler, çocuklarında her gün gözlemledikleri davranışlar için 1–5 yıldız derecelendirmeli kısa bir anketi doldurur. Çocuğun ankete katılması gerekmez. Bu tasarım bilinçlidir: çocukların öz algıları hızla değişir ve ebeveyn gözlemi, özellikle 6–13 yaş grubunda, daha istikrarlı ve doğru bir temel sağlar.
+          </p>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Sorular çocuğun gelişim aşamasına göre kalibre edilmiştir. Dört yaş kademesi, her aşamada karakterin nasıl geliştiğiyle hem kelime dağarcığını hem de değerlendirilen özellikleri eşleştirir:
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+            {([
+              { tier: 'Junior', age: '6–9 yaş', traits: '12 özellik', questions: '24 soru', color: 'bg-blue-50 border-blue-200 text-blue-700' },
+              { tier: 'Orta', age: '10–13 yaş', traits: '15 özellik', questions: '30 soru', color: 'bg-green-50 border-green-200 text-green-700' },
+              { tier: 'Ergen', age: '14–17 yaş', traits: '20 özellik', questions: '40 soru', color: 'bg-purple-50 border-purple-200 text-purple-700' },
+              { tier: 'Genç Yetişkin', age: '18–20 yaş', traits: 'Tüm 24 özellik', questions: '48 soru', color: 'bg-orange-50 border-orange-200 text-orange-700' },
+            ] as const).map((t) => (
+              <div key={t.tier} className={`rounded-xl border p-3 text-center ${t.color}`}>
+                <p className="font-bold text-sm mb-0.5">{t.tier}</p>
+                <p className="text-xs opacity-80">{t.age}</p>
+                <p className="text-xs mt-1">{t.traits}</p>
+                <p className="text-xs">{t.questions}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">Rapor neleri gösterir</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            Akademik değerlendirmeden farklı olarak kişilik raporu tek bir standartlaştırılmış puan üretmez. Özellikler birbirlerine göre sıralanır ve şunlar elde edilir:
+          </p>
+          <ul className="space-y-3 mb-4">
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">En Güçlü 5 Yön</strong> — çocuğun en yüksek puan aldığı özellikler; doğal mükemmellik alanları ve üzerine inşa edilecek temel.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">Geliştirilebilecek 3 Alan</strong> — gelişim potansiyeli en yüksek özellikler; eksiklik vurgusu yerine nazik bir çerçevelemeyle.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">Yapay Zeka Destekli Egzersizler</strong> — çocuğun özgün güç profiline özel, evde uygulanabilecek gerçek dünya aktiviteleri.</span>
+            </li>
+          </ul>
+          <p className="text-[#6e6e73]">
+            Çocuğunuzun karakter profilinin nasıl göründüğünü görmek ister misiniz?{' '}
+            <Link href="/tr/kisilik-degerlendirmesi" className="text-[#4F46E5] hover:underline font-medium">Ücretsiz kişilik değerlendirmesini başlatın →</Link>
+          </p>
+        </section>
+
       </div>
 
       {/* Blog bağlantıları */}

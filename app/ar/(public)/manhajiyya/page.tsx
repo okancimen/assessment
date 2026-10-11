@@ -234,6 +234,65 @@ export default function ManhajiyyaPage() {
           </p>
         </section>
 
+        {/* منهجية تقييم الشخصية */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">منهجية تقييم الشخصية</h2>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            يستخدم تقييم قوى الشخصية نهجاً مختلفاً جوهرياً عن تقييم IRT الأكاديمي التكيفي. بدلاً من قياس المعرفة والتفكير، يُقيّم سمات شخصية الطفل من خلال <strong className="text-[#1d1d1f]">ملاحظة الوالدين المنظّمة</strong> — يملؤها الشخص البالغ الذي يرى الطفل يومياً.
+          </p>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">إطار VIA لقوى الشخصية</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            يرتكز التقييم على إطار VIA لقوى الشخصية، الذي طوّره رائدا علم النفس الإيجابي د. مارتن سيليغمان ود. نيل مايرسون. يُحدِّد هذا الإطار 24 سمة شخصية عالمية مجمّعة تحت 6 فضائل أساسية: الحكمة، والشجاعة، والإنسانية، والعدالة، والاعتدال، والتسامي. وقد تم التحقق منه عبر الثقافات ويستخدمه الباحثون في أكثر من 190 دولة.
+          </p>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">تصميم استبيان أولياء الأمور</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            يُكمل أولياء الأمور استبياناً قصيراً قائماً على الملاحظة بتقييمات من 1 إلى 5 نجوم للسلوكيات التي يرونها في أطفالهم كل يوم. لا يشارك الطفل مباشرةً. هذا التصميم مقصود: تتغير الإدراكات الذاتية للأطفال بسرعة، وتوفر ملاحظة الوالدين أساساً أكثر استقراراً — لا سيما للأطفال من 6 إلى 13 عاماً.
+          </p>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            تُعايَر الأسئلة وفق المرحلة التطورية للطفل. أربع فئات عمرية تُطابق المفردات والسمات المُقيَّمة مع كيفية تطور الشخصية في كل مرحلة:
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+            {([
+              { tier: 'مبتدئ', age: '6–9', traits: '12 سمة', questions: '24 سؤال', color: 'bg-blue-50 border-blue-200 text-blue-700' },
+              { tier: 'متوسط', age: '10–13', traits: '15 سمة', questions: '30 سؤال', color: 'bg-green-50 border-green-200 text-green-700' },
+              { tier: 'مراهق', age: '14–17', traits: '20 سمة', questions: '40 سؤال', color: 'bg-purple-50 border-purple-200 text-purple-700' },
+              { tier: 'شاب', age: '18–20', traits: '24 سمة', questions: '48 سؤال', color: 'bg-orange-50 border-orange-200 text-orange-700' },
+            ] as const).map((t) => (
+              <div key={t.tier} className={`rounded-xl border p-3 text-center ${t.color}`}>
+                <p className="font-bold text-sm mb-0.5">{t.tier}</p>
+                <p className="text-xs opacity-80">{t.age}</p>
+                <p className="text-xs mt-1">{t.traits}</p>
+                <p className="text-xs">{t.questions}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="text-lg font-bold text-[#1d1d1f] mb-3 mt-6">ما ينتجه التقرير</h3>
+          <p className="text-[#6e6e73] leading-relaxed mb-4">
+            على خلاف التقييم الأكاديمي، لا ينتج تقرير الشخصية درجةً معياريةً واحدة. بدلاً من ذلك، يُرتِّب السمات بالنسبة لبعضها ويُولِّد:
+          </p>
+          <ul className="space-y-3 mb-4">
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">أعلى 5 قوى مميزة</strong> — السمات التي يحصل فيها الطفل على أعلى الدرجات، وتمثّل مجالات التميز الطبيعي لديه.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">3 مجالات للنمو</strong> — السمات ذات أعلى إمكانية للتطوير، مُقدَّمة برفق دون تصوير سلبي.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#4F46E5] mt-2 flex-shrink-0" />
+              <span className="text-[#6e6e73]"><strong className="text-[#1d1d1f]">تمارين مدعومة بالذكاء الاصطناعي</strong> — أنشطة عملية مخصصة لملف القوى الفريد للطفل، يمكن ممارستها في المنزل.</span>
+            </li>
+          </ul>
+          <p className="text-[#6e6e73]">
+            هل تريد رؤية ملف الشخصية الخاص بطفلك؟{' '}
+            <Link href="/ar/taqyim-al-shakhsiya" className="text-[#4F46E5] hover:underline font-medium">ابدأ تقييم الشخصية المجاني ←</Link>
+          </p>
+        </section>
+
       </div>
 
       {/* Blog */}
