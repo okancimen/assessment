@@ -36,10 +36,13 @@ function ageToDob(age: number): string {
 
 export default async function GuestResultsPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ assessmentId: string }>
+  searchParams?: Promise<{ locale?: string }>
 }) {
   const { assessmentId } = await params
+  const { locale = 'en' } = (await searchParams) ?? {}
 
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
@@ -119,7 +122,7 @@ export default async function GuestResultsPage({
 
   return (
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
-      <PublicNav />
+      <PublicNav locale={locale} />
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 py-10 space-y-6">
 
         <div>
@@ -197,7 +200,7 @@ export default async function GuestResultsPage({
         </div>
 
       </main>
-      <PublicFooter />
+      <PublicFooter locale={locale} />
     </div>
   )
 }

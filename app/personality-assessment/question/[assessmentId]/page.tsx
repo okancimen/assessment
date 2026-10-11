@@ -30,7 +30,7 @@ export default async function GuestQuestionPage({
 
   if (!assessment) notFound()
   if (assessment.status === 'completed') {
-    redirect(`/personality-assessment/results/${assessmentId}`)
+    redirect(`/personality-assessment/results/${assessmentId}${locale !== 'en' ? `?locale=${locale}` : ''}`)
   }
 
   const tier = assessment.age_tier as 1 | 2 | 3 | 4
@@ -48,16 +48,16 @@ export default async function GuestQuestionPage({
 
   return (
     <>
-      <PublicNav />
+      <PublicNav locale={locale} />
       <PersonalityQuestionClient
         assessmentId={assessmentId}
         childName={assessment.guest_name ?? 'your child'}
         questions={questions}
         savedAnswers={savedAnswers}
         locale={locale}
-        resultsHref={`/personality-assessment/results/${assessmentId}`}
+        resultsHref={`/personality-assessment/results/${assessmentId}${locale !== 'en' ? `?locale=${locale}` : ''}`}
       />
-      <PublicFooter />
+      <PublicFooter locale={locale} />
     </>
   )
 }

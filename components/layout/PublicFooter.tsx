@@ -1,7 +1,19 @@
 import Link from 'next/link'
 import Logo from '@/components/ui/Logo'
+import PublicFooterTR from './PublicFooterTR'
+import PublicFooterFR from './PublicFooterFR'
+import PublicFooterES from './PublicFooterES'
+import PublicFooterAR from './PublicFooterAR'
+import PublicFooterRU from './PublicFooterRU'
+import PublicFooterZH from './PublicFooterZH'
 
-export default function PublicFooter() {
+export default function PublicFooter({ locale }: { locale?: string }) {
+  if (locale === 'tr') return <PublicFooterTR />
+  if (locale === 'fr') return <PublicFooterFR />
+  if (locale === 'es') return <PublicFooterES />
+  if (locale === 'ar') return <PublicFooterAR />
+  if (locale === 'ru') return <PublicFooterRU />
+  if (locale === 'zh') return <PublicFooterZH />
   return (
     <footer className="bg-[#f5f5f7] border-t border-[#d2d2d7]">
       <div className="max-w-6xl mx-auto px-6 pt-12 pb-6">
