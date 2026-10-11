@@ -268,11 +268,18 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                         </p>
                       </div>
                     </div>
-                    {canDelete && (
-                      <div className="flex-shrink-0">
+                    <div className="flex items-center gap-2 flex-shrink-0">
+                      <Link
+                        href={`/children/${child.id}/edit${locale ? `?locale=${locale}` : ''}`}
+                        className="text-xs font-medium px-3 py-1.5 rounded-full border transition-colors"
+                        style={{ color: '#4F46E5', borderColor: '#C7D2FE', backgroundColor: '#EEF2FF' }}
+                      >
+                        {t.editChildBtn}
+                      </Link>
+                      {canDelete && (
                         <DeleteChildButton childId={child.id} childName={child.name} locale={locale} />
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </div>
 
                   {/* Assessment clusters */}
