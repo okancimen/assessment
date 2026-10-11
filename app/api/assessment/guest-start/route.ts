@@ -59,9 +59,9 @@ export async function POST(req: NextRequest) {
   // Compute approximate dob for display purposes only — not stored
   void ageToDob(ageNum)
 
-  const response = NextResponse.json({ assessmentId: assessment.id })
+  const response = NextResponse.json({ assessmentId: assessment.id, guestToken })
   response.cookies.set('ac_tok', guestToken, {
-    httpOnly: true,
+    httpOnly: false,
     sameSite: 'lax',
     path: '/',
     maxAge: 60 * 60 * 24 * 7,
