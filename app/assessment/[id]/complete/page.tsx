@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { isAdminEmail } from '@/lib/admin'
+import { cookies } from 'next/headers'
 import { redirect, notFound } from 'next/navigation'
 import Link from 'next/link'
 import CompleteClient from './CompleteClient'
@@ -13,19 +14,30 @@ export default async function CompletePage({
   const { id } = await params
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/auth/login')
+  const cookieStore = await cookies()
+  const guestToken = cookieStore.get('ac_tok')?.value
 
-  const adminMode = isAdminEmail(user.email)
-  const db = adminMode ? createAdminClient() : supabase
+  const db = createAdminClient()
 
   const { data: assessment } = await db
     .from('assessments')
-    .select('status, assessment_type, children(parent_id, student_user_id, name)')
+    .select('status, assessment_type, child_id, guest_token, guest_name, children(parent_id, student_user_id, name)')
     .eq('id', id)
     .single()
 
   if (!assessment) notFound()
 
+  const isGuest = !assessment.child_id && !!assessment.guest_token
+
+  if (isGuest) {
+    if (!guestToken || assessment.guest_token !== guestToken) redirect('/academic-assessment')
+    if (assessment.status === 'completed') redirect(`/assessment/${id}/results`)
+    return <CompleteClient assessmentId={id} childName={assessment.guest_name ?? 'there'} />
+  }
+
+  if (!user) redirect('/auth/login')
+
+  const adminMode = isAdminEmail(user.email)
   const child = assessment.children as unknown as { parent_id: string; student_user_id: string | null; name: string }
   const isInternship = assessment.assessment_type === 'internship'
 
