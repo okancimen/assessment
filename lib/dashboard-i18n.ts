@@ -88,6 +88,9 @@ export interface DashboardI18n {
   personalityInfoDesc: string
   internshipInfoTitle: string
   internshipInfoDesc: string
+  // Assessment cluster labels
+  academicLabel: string
+  whatIsThis: string
   // Academic status in child card
   academicStatus: string
   academicStatusNone: string
@@ -183,6 +186,8 @@ const en: DashboardI18n = {
   personalityInfoDesc: 'Measures 24 personality traits across 6 core virtues — curiosity, courage, justice, humanity, and more. Takes 15–20 minutes. Results show which strengths are most dominant in your child, with guidance on how to build on them.',
   internshipInfoTitle: 'Workplace readiness for ages 14 and above',
   internshipInfoDesc: 'Assesses the cognitive, social, and professional skills needed for internship success. Results classify your child as Internship Ready, Developing, or Needs Support — with a detailed domain breakdown.',
+  academicLabel: 'Academic Assessment',
+  whatIsThis: 'What is this?',
   academicStatus: 'Academic Status',
   academicStatusNone: 'No assessment taken yet',
   academicStatusCompleted: (score, label) => `Score ${score} · ${label}`,
@@ -275,6 +280,8 @@ const tr: DashboardI18n = {
   personalityInfoDesc: '6 temel erdem üzerinden 24 kişilik özelliğini ölçer — merak, cesaret, adalet, insanlık sevgisi ve daha fazlası. 15–20 dakika sürer. Sonuçlar hangi güçlü yönlerin en baskın olduğunu gösterir ve bunları nasıl geliştirebileceğinizi açıklar.',
   internshipInfoTitle: '14 yaş ve üzeri için iş hazırlığı',
   internshipInfoDesc: 'Staj başarısı için gereken bilişsel, sosyal ve mesleki becerileri değerlendirir. Çocuğunuzu Staja Hazır, Gelişiyor veya Destek Gerekiyor olarak sınıflandırır; ayrıntılı alan bazlı sonuçlar sunar.',
+  academicLabel: 'Akademik Değerlendirme',
+  whatIsThis: 'Bu nedir?',
   academicStatus: 'Akademik Durum',
   academicStatusNone: 'Henüz değerlendirme yapılmadı',
   academicStatusCompleted: (score, label) => `Puan ${score} · ${label}`,
@@ -367,6 +374,8 @@ const es: DashboardI18n = {
   personalityInfoDesc: 'Mide 24 rasgos de personalidad en 6 virtudes clave — curiosidad, valentía, justicia, humanidad y más. Dura 15–20 minutos. Los resultados muestran las fortalezas dominantes de tu hijo/a con orientación práctica para desarrollarlas.',
   internshipInfoTitle: 'Evaluación de preparación laboral para mayores de 14',
   internshipInfoDesc: 'Evalúa las habilidades cognitivas, sociales y profesionales necesarias para el éxito en prácticas. Los resultados clasifican a tu hijo/a como Listo para prácticas, En desarrollo o Necesita apoyo, con un desglose detallado.',
+  academicLabel: 'Evaluación Académica',
+  whatIsThis: '¿Qué es esto?',
   academicStatus: 'Estado Académico',
   academicStatusNone: 'Aún no se ha realizado ninguna evaluación',
   academicStatusCompleted: (score, label) => `Puntuación ${score} · ${label}`,
@@ -459,6 +468,8 @@ const fr: DashboardI18n = {
   personalityInfoDesc: 'Mesure 24 traits de personnalité répartis en 6 vertus clés — curiosité, courage, justice, humanité et plus encore. Dure 15–20 minutes. Les résultats montrent les forces dominantes de votre enfant avec des conseils pratiques pour les développer.',
   internshipInfoTitle: 'Évaluation de la maturité professionnelle dès 14 ans',
   internshipInfoDesc: "Évalue les compétences cognitives, sociales et professionnelles nécessaires pour réussir un stage. Les résultats classent votre enfant en Prêt pour un stage, En développement ou Besoin de soutien, avec une analyse détaillée par domaine.",
+  academicLabel: 'Évaluation Académique',
+  whatIsThis: "Qu'est-ce que c'est ?",
   academicStatus: 'Statut Académique',
   academicStatusNone: 'Aucune évaluation effectuée',
   academicStatusCompleted: (score, label) => `Score ${score} · ${label}`,
@@ -551,6 +562,8 @@ const ar: DashboardI18n = {
   personalityInfoDesc: 'يقيس 24 سمة شخصية عبر 6 فضائل أساسية — الفضول، الشجاعة، العدالة، الإنسانية وغيرها. يستغرق 15–20 دقيقة. تُظهر النتائج أبرز نقاط القوة لدى طفلك مع إرشادات عملية لتعزيزها.',
   internshipInfoTitle: 'تقييم الاستعداد المهني للأعمار 14+',
   internshipInfoDesc: 'يقيّم المهارات المعرفية والاجتماعية والمهنية اللازمة للنجاح في التدريب. تصنّف النتائج طفلك ضمن ثلاث فئات: مستعد للتدريب، في طور التطوير، أو بحاجة إلى دعم — مع تحليل مفصّل لكل مجال.',
+  academicLabel: 'التقييم الأكاديمي',
+  whatIsThis: 'ما هذا؟',
   academicStatus: 'الحالة الأكاديمية',
   academicStatusNone: 'لم يتم إجراء أي تقييم بعد',
   academicStatusCompleted: (score, label) => `الدرجة ${score} · ${label}`,
@@ -643,6 +656,8 @@ const ru: DashboardI18n = {
   personalityInfoDesc: 'Измеряет 24 черты личности в рамках 6 ключевых добродетелей — любопытство, смелость, справедливость, гуманность и другие. Занимает 15–20 минут. Результаты показывают доминирующие сильные стороны ребёнка с рекомендациями по их развитию.',
   internshipInfoTitle: 'Оценка готовности к профессиональной деятельности (от 14 лет)',
   internshipInfoDesc: 'Оценивает когнитивные, социальные и профессиональные навыки, необходимые для успешной стажировки. Результаты: Готов к стажировке, Развивается или Требует поддержки — с детализированным анализом по каждому направлению.',
+  academicLabel: 'Академическое тестирование',
+  whatIsThis: 'Что это?',
   academicStatus: 'Академический статус',
   academicStatusNone: 'Тестирование ещё не проходили',
   academicStatusCompleted: (score, label) => `Балл ${score} · ${label}`,
@@ -735,6 +750,8 @@ const zh: DashboardI18n = {
   personalityInfoDesc: '从6大核心美德维度衡量24项性格特质——好奇心、勇气、公正、人文关怀等。测评约需15–20分钟。结果展示孩子最突出的优势特质，并提供实用发展建议。',
   internshipInfoTitle: '14岁以上职场准备度测评',
   internshipInfoDesc: '评估实习成功所需的认知、社交和职业技能。结果将孩子分为三类：已具备实习能力、成长中或需要支持——并提供各维度详细分析。',
+  academicLabel: '学术评估',
+  whatIsThis: '这是什么？',
   academicStatus: '学术状态',
   academicStatusNone: '尚未参加任何评估',
   academicStatusCompleted: (score, label) => `分数 ${score} · ${label}`,
