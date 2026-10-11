@@ -83,6 +83,7 @@ export default async function RootLayout({
         <meta name="yandex-verification" content="f8b17ecde6325153" />
         <link type="text/plain" rel="describedby" href="/llms.txt" />
         <link type="text/plain" rel="describedby" href="/llms-full.txt" />
+        <link rel="mcp-server" href="https://eduentry.com/api/mcp" />
         <Script id="gtag-queue" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments);};`}</Script>
       </head>
       <body className="min-h-full flex flex-col bg-white">
