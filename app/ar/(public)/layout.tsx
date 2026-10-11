@@ -2,7 +2,7 @@ import { Cairo } from 'next/font/google'
 import PublicNavAR from '@/components/layout/PublicNavAR'
 import PublicFooterAR from '@/components/layout/PublicFooterAR'
 
-const cairo = Cairo({ subsets: ['arabic'], weight: ['400', '600', '700', '800'], variable: '--font-cairo' })
+const cairo = Cairo({ subsets: ['arabic'], variable: '--font-cairo' })
 
 export default function ArPublicLayout({ children }: { children: React.ReactNode }) {
   return (
