@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import GuestStartForm from '@/app/personality-assessment/GuestStartForm'
 
 const BASE_URL = 'https://eduentry.com'
-const REGISTER_URL = `${BASE_URL}/ru/auth/register`
 
 export const metadata: Metadata = {
   title: 'Оценка личности ребёнка | Тест сильных сторон VIA — Eduentry',
@@ -140,13 +140,8 @@ export default function OtsenkaLichnostiPage() {
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
             Оценка характера на базе ИИ, научно обоснованная и идеально адаптированная к возрасту вашего ребёнка.
           </p>
-          <Link
-            href={REGISTER_URL}
-            className="inline-block bg-[#4F46E5] hover:bg-indigo-700 text-white font-bold text-base px-8 py-4 rounded-xl transition-colors shadow-lg shadow-indigo-200"
-          >
-            Начать бесплатную оценку
-          </Link>
-          <p className="mt-4 text-sm text-[#6e6e73]">
+          <GuestStartForm />
+          <p className="mt-2 text-sm text-[#6e6e73]">
             Уже есть аккаунт?{' '}
             <Link href="/ru/auth/login" className="text-[#4F46E5] hover:underline font-medium">Войти</Link>
           </p>
@@ -284,7 +279,7 @@ export default function OtsenkaLichnostiPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">Готовы узнать, кем на самом деле является ваш ребёнок?</h2>
           <Link
-            href={REGISTER_URL}
+            href="/personality-assessment"
             className="inline-block bg-white text-[#4F46E5] hover:bg-indigo-50 font-bold text-base px-8 py-4 rounded-xl transition-colors"
           >
             Начать бесплатную оценку

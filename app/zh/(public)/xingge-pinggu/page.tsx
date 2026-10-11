@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import GuestStartForm from '@/app/personality-assessment/GuestStartForm'
 
 const BASE_URL = 'https://eduentry.com'
-const REGISTER_URL = `${BASE_URL}/zh/auth/register`
 
 export const metadata: Metadata = {
   title: '儿童性格评估 | VIA性格优势测试 — Eduentry',
@@ -140,13 +140,8 @@ export default function XinggePingguPage() {
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
             一项由人工智能驱动的科学性格评估，完美适配您孩子的发育阶段。
           </p>
-          <Link
-            href={REGISTER_URL}
-            className="inline-block bg-[#4F46E5] hover:bg-indigo-700 text-white font-bold text-base px-8 py-4 rounded-xl transition-colors shadow-lg shadow-indigo-200"
-          >
-            开始免费评估
-          </Link>
-          <p className="mt-4 text-sm text-[#6e6e73]">
+          <GuestStartForm />
+          <p className="mt-2 text-sm text-[#6e6e73]">
             已有账户？{' '}
             <Link href="/zh/auth/login" className="text-[#4F46E5] hover:underline font-medium">登录</Link>
           </p>
@@ -284,7 +279,7 @@ export default function XinggePingguPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">准备好发现您的孩子真正是谁了吗？</h2>
           <Link
-            href={REGISTER_URL}
+            href="/personality-assessment"
             className="inline-block bg-white text-[#4F46E5] hover:bg-indigo-50 font-bold text-base px-8 py-4 rounded-xl transition-colors"
           >
             开始免费评估

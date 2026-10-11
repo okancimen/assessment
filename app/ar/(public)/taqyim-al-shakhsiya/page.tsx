@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import GuestStartForm from '@/app/personality-assessment/GuestStartForm'
 
 const BASE_URL = 'https://eduentry.com'
-const REGISTER_URL = `${BASE_URL}/ar/auth/register`
 
 export const metadata: Metadata = {
   title: 'تقييم شخصية الطفل | اختبار نقاط القوة VIA — Eduentry',
@@ -140,13 +140,8 @@ export default function TaqyimAlShakhsiyaPage() {
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
             تقييم شخصي علمي مدعوم بالذكاء الاصطناعي، مُصمَّم خصيصاً للمرحلة التطورية لطفلك.
           </p>
-          <Link
-            href={REGISTER_URL}
-            className="inline-block bg-[#4F46E5] hover:bg-indigo-700 text-white font-bold text-base px-8 py-4 rounded-xl transition-colors shadow-lg shadow-indigo-200"
-          >
-            ابدأ التقييم المجاني
-          </Link>
-          <p className="mt-4 text-sm text-[#6e6e73]">
+          <GuestStartForm />
+          <p className="mt-2 text-sm text-[#6e6e73]">
             هل لديك حساب بالفعل؟{' '}
             <Link href="/ar/auth/login" className="text-[#4F46E5] hover:underline font-medium">تسجيل الدخول</Link>
           </p>
@@ -284,7 +279,7 @@ export default function TaqyimAlShakhsiyaPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">هل أنت مستعد لاكتشاف مَن هو طفلك حقاً؟</h2>
           <Link
-            href={REGISTER_URL}
+            href="/personality-assessment"
             className="inline-block bg-white text-[#4F46E5] hover:bg-indigo-50 font-bold text-base px-8 py-4 rounded-xl transition-colors"
           >
             ابدأ التقييم المجاني

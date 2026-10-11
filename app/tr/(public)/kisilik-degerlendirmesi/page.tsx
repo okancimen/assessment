@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import Link from 'next/link'
+import GuestStartForm from '@/app/personality-assessment/GuestStartForm'
 
 const BASE_URL = 'https://eduentry.com'
-const REGISTER_URL = `${BASE_URL}/tr/auth/register`
 
 export const metadata: Metadata = {
   title: 'Çocuk Kişilik Değerlendirmesi | VIA Güçlü Yönler Testi — Eduentry',
@@ -141,13 +141,8 @@ export default function KisilikDegerlendirmesiPage() {
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
             Çocuğunuzun gelişim aşamasına mükemmel biçimde uyarlanmış, yapay zeka destekli, bilimsel bir kişilik değerlendirmesi.
           </p>
-          <Link
-            href={REGISTER_URL}
-            className="inline-block bg-[#4F46E5] hover:bg-indigo-700 text-white font-bold text-base px-8 py-4 rounded-xl transition-colors shadow-lg shadow-indigo-200"
-          >
-            Ücretsiz Değerlendirmeyi Başlat
-          </Link>
-          <p className="mt-4 text-sm text-[#6e6e73]">
+          <GuestStartForm />
+          <p className="mt-2 text-sm text-[#6e6e73]">
             Zaten hesabınız var mı?{' '}
             <Link href="/tr/auth/login" className="text-[#4F46E5] hover:underline font-medium">Giriş yap</Link>
           </p>
@@ -288,7 +283,7 @@ export default function KisilikDegerlendirmesiPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">Çocuğunuzun gerçekte kim olduğunu keşfetmeye hazır mısınız?</h2>
           <Link
-            href={REGISTER_URL}
+            href="/personality-assessment"
             className="inline-block bg-white text-[#4F46E5] hover:bg-indigo-50 font-bold text-base px-8 py-4 rounded-xl transition-colors"
           >
             Ücretsiz Değerlendirmeyi Başlat

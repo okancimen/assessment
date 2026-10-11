@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import GuestStartForm from '@/app/personality-assessment/GuestStartForm'
 
 const BASE_URL = 'https://eduentry.com'
-const REGISTER_URL = `${BASE_URL}/fr/auth/register`
 
 export const metadata: Metadata = {
   title: "Évaluation de la Personnalité de l'Enfant | Test de Forces de Caractère VIA — Eduentry",
@@ -142,13 +142,8 @@ export default function EvaluationDePersonnalitePage() {
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
             Une évaluation de caractère scientifique et IA, parfaitement adaptée au stade de développement de votre enfant.
           </p>
-          <Link
-            href={REGISTER_URL}
-            className="inline-block bg-[#4F46E5] hover:bg-indigo-700 text-white font-bold text-base px-8 py-4 rounded-xl transition-colors shadow-lg shadow-indigo-200"
-          >
-            Commencer l&apos;évaluation gratuite
-          </Link>
-          <p className="mt-4 text-sm text-[#6e6e73]">
+          <GuestStartForm />
+          <p className="mt-2 text-sm text-[#6e6e73]">
             Vous avez déjà un compte ?{' '}
             <Link href="/fr/auth/login" className="text-[#4F46E5] hover:underline font-medium">Se connecter</Link>
           </p>
@@ -286,7 +281,7 @@ export default function EvaluationDePersonnalitePage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">Prêt à découvrir qui est vraiment votre enfant ?</h2>
           <Link
-            href={REGISTER_URL}
+            href="/personality-assessment"
             className="inline-block bg-white text-[#4F46E5] hover:bg-indigo-50 font-bold text-base px-8 py-4 rounded-xl transition-colors"
           >
             Commencer l&apos;évaluation gratuite
