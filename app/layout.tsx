@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import Script from "next/script";
 import { headers } from "next/headers";
 import ConditionalAnalytics from "@/components/ConditionalAnalytics";
+import WebMCPTools from "@/components/WebMCPTools";
 import "./globals.css";
 
 const geist = Geist({
@@ -83,11 +84,11 @@ export default async function RootLayout({
         <meta name="yandex-verification" content="f8b17ecde6325153" />
         <link type="text/plain" rel="describedby" href="/llms.txt" />
         <link type="text/plain" rel="describedby" href="/llms-full.txt" />
-        <link rel="mcp-server" href="https://eduentry.com/api/mcp" />
         <Script id="gtag-queue" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments);};`}</Script>
       </head>
       <body className="min-h-full flex flex-col bg-white">
         {children}
+        <WebMCPTools />
         <ConditionalAnalytics />
       </body>
     </html>

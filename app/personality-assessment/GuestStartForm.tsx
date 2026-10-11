@@ -101,7 +101,9 @@ export default function GuestStartForm({ locale = 'en' }: { locale?: string }) {
   return (
     <form
       onSubmit={handleSubmit}
-      data-mcp-tool="start_personality_assessment"
+      toolname="start_personality_assessment"
+      tooldescription="Start a free VIA Character Strengths personality assessment for a child. Enter the child's name and age to begin."
+      toolautosubmit
       className="flex flex-col items-center gap-4 w-full max-w-sm mx-auto"
     >
       <div className="flex flex-col sm:flex-row gap-3 w-full">
@@ -111,7 +113,7 @@ export default function GuestStartForm({ locale = 'en' }: { locale?: string }) {
           onChange={(e) => setName(e.target.value)}
           required
           placeholder={s.namePlaceholder}
-          data-mcp-param="name"
+          toolparamdescription="The child's first name"
           className="flex-1 px-4 py-3 rounded-xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-white"
         />
         <input
@@ -122,7 +124,7 @@ export default function GuestStartForm({ locale = 'en' }: { locale?: string }) {
           min={6}
           max={20}
           placeholder={s.agePlaceholder}
-          data-mcp-param="age"
+          toolparamdescription="The child's age in years (6 to 20)"
           className="w-full sm:w-24 px-4 py-3 rounded-xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-white"
         />
       </div>

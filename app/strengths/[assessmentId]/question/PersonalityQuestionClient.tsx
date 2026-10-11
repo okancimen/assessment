@@ -24,8 +24,6 @@ function CircleRating({
           <button
             key={n}
             type="button"
-            data-mcp-param="score"
-            data-mcp-value={n}
             onClick={() => onChange(n)}
             onMouseEnter={() => setHovered(n)}
             onMouseLeave={() => setHovered(null)}
@@ -161,12 +159,7 @@ export default function PersonalityQuestionClient({
         </div>
 
         {/* Question card */}
-        <div
-          className="bg-white rounded-3xl border border-[#d2d2d7] p-8 space-y-8"
-          data-mcp-tool="submit_personality_answer"
-          data-mcp-param-assessment-id={assessmentId}
-          data-mcp-param-question-key={current.key}
-        >
+        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-8 space-y-8">
           <div className="space-y-2">
             <span className="text-[10px] font-semibold text-[#4F46E5] uppercase tracking-wide">
               {t.traitLabels[current.trait]}
