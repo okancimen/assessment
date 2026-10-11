@@ -1,7 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { isAdminEmail } from '@/lib/admin'
-import { cookies } from 'next/headers'
 import { redirect, notFound } from 'next/navigation'
 import Link from 'next/link'
 import CompleteClient from './CompleteClient'
@@ -14,8 +13,6 @@ export default async function CompletePage({
   const { id } = await params
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  const cookieStore = await cookies()
-  const guestToken = cookieStore.get('ac_tok')?.value
 
   const db = createAdminClient()
 
@@ -30,7 +27,7 @@ export default async function CompletePage({
   const isGuest = !assessment.child_id && !!assessment.guest_token
 
   if (isGuest) {
-    if (!guestToken || assessment.guest_token !== guestToken) redirect('/academic-assessment')
+    // No server-side token check — guest auth validated in API route via X-Guest-Token header
     if (assessment.status === 'completed') redirect(`/assessment/${id}/results`)
     return <CompleteClient assessmentId={id} childName={assessment.guest_name ?? 'there'} />
   }
