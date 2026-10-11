@@ -24,7 +24,7 @@ export default async function ResultsPage({
   if (!user) redirect('/auth/login')
 
   const adminMode = isAdminEmail(user.email)
-  const db = adminMode ? createAdminClient() : supabase
+  const db = createAdminClient()
 
   const [{ data: result }, { data: session }] = await Promise.all([
     db
