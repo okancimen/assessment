@@ -61,11 +61,10 @@ export async function POST(req: NextRequest) {
 
   const response = NextResponse.json({ assessmentId: assessment.id, guestToken })
   response.cookies.set('ac_tok', guestToken, {
-    httpOnly: false,
+    httpOnly: true,
     sameSite: 'lax',
     path: '/',
     maxAge: 60 * 60 * 24 * 7,
-    secure: process.env.NODE_ENV === 'production',
   })
   return response
 }
