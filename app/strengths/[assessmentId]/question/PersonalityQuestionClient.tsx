@@ -192,7 +192,7 @@ export default function PersonalityQuestionClient({
                 )}
                 <button
                   onClick={handleSubmit}
-                  disabled={!allAnswered || submitting}
+                  disabled={!allAnswered || submitting || saving}
                   className="px-6 py-2.5 rounded-full bg-[#4F46E5] text-white text-sm font-semibold hover:bg-[#4338CA] transition-colors disabled:opacity-50"
                 >
                   {submitting ? t.generatingText : t.submitBtn}
