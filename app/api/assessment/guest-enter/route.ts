@@ -1,13 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 
+function origin(req: NextRequest): string {
+  const host = req.headers.get('x-forwarded-host') ?? req.headers.get('host') ?? 'eduentry.com'
+  const proto = req.headers.get('x-forwarded-proto') ?? 'https'
+  return `${proto}://${host}`
+}
+
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl
   const id = searchParams.get('id')
   const token = searchParams.get('token')
+  const base = origin(req)
 
   if (!id || !token) {
-    return NextResponse.redirect(new URL('/academic-assessment', req.url))
+    return NextResponse.redirect(`${base}/academic-assessment`)
   }
 
   const db = createAdminClient()
@@ -18,10 +25,10 @@ export async function GET(req: NextRequest) {
     .single()
 
   if (!assessment || assessment.guest_token !== token) {
-    return NextResponse.redirect(new URL('/academic-assessment', req.url))
+    return NextResponse.redirect(`${base}/academic-assessment`)
   }
 
-  const res = NextResponse.redirect(new URL(`/assessment/${id}/question`, req.url))
+  const res = NextResponse.redirect(`${base}/assessment/${id}/question`)
   res.cookies.set('ac_tok', token, {
     httpOnly: false,
     sameSite: 'lax',
