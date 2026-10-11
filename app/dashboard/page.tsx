@@ -17,6 +17,16 @@ import { getDashboardI18n } from '@/lib/dashboard-i18n'
 interface AssessmentWithResult extends Omit<Assessment, 'children'> {
   children: { name: string }
   results: { standardized_score: number } | null
+  assessment_type: string
+}
+
+type RecentRow = {
+  id: string
+  childName: string
+  type: 'academic' | 'personality' | 'internship'
+  status: string
+  createdAt: string
+  score: number | null
 }
 
 const AVATAR_COLORS = [
@@ -109,7 +119,6 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
   }
 
   const hasChildren = children && children.length > 0
-  const hasAssessments = assessments && assessments.length > 0
   const pendingCount = (assessments || []).filter((a: AssessmentWithResult) => a.status === 'in_progress').length
 
   const { data: selfChild } = await supabase
@@ -137,9 +146,10 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
   const { data: personalityAssessments } = strengthsIds.length > 0
     ? await supabase
         .from('personality_assessments')
-        .select('id, status, child_id')
+        .select('id, status, child_id, created_at, children(name)')
         .in('child_id', strengthsIds)
         .order('created_at', { ascending: false })
+        .limit(20)
     : { data: [] }
 
   const strengthsMap: Record<string, { id: string; status: string }> = {}
@@ -165,6 +175,27 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
       internshipMap[a.child_id] = { id: a.id, status: a.status, overall: scores?.overall }
     }
   }
+
+  const recentItems: RecentRow[] = [
+    ...(assessments as AssessmentWithResult[] || []).map((a) => ({
+      id: a.id,
+      childName: a.children?.name ?? '',
+      type: (a.assessment_type === 'internship' ? 'internship' : 'academic') as RecentRow['type'],
+      status: a.status,
+      createdAt: a.created_at,
+      score: a.results?.standardized_score ?? null,
+    })),
+    ...(personalityAssessments || []).map((pa) => ({
+      id: pa.id,
+      childName: (pa.children as unknown as { name: string } | null)?.name ?? '',
+      type: 'personality' as const,
+      status: pa.status,
+      createdAt: pa.created_at,
+      score: null,
+    })),
+  ].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()).slice(0, 20)
+
+  const hasAssessments = recentItems.length > 0
 
   const firstName = (profile?.full_name || user.user_metadata?.full_name)?.split(' ')[0] || ''
 
@@ -430,53 +461,66 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                     </tr>
                   </thead>
                   <tbody>
-                    {(assessments as AssessmentWithResult[]).map((a) => (
-                      <tr key={a.id} className="border-b last:border-0 transition-colors hover:bg-[#F8FAFC]" style={{ borderColor: '#E8ECF2' }}>
-                        <td className="px-5 py-3.5 font-medium text-sm" style={{ color: '#1E293B' }}>{a.children?.name}</td>
-                        <td className="px-5 py-3.5 text-xs hidden sm:table-cell" style={{ color: '#64748B' }}>{formatDate(a.created_at)}</td>
-                        <td className="px-5 py-3 text-right hidden sm:table-cell">
-                          {a.results ? (
-                            <span className={`font-bold text-sm ${getScoreColor(a.results.standardized_score)}`}>
-                              {a.results.standardized_score}
-                            </span>
-                          ) : (
-                            <span style={{ color: '#d2d2d7' }}>—</span>
-                          )}
-                        </td>
-                        <td className="px-5 py-3">
-                          {a.status === 'completed' ? (
-                            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
-                              <svg className="w-3.5 h-3.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
-                                <polyline points="20 6 9 17 4 12" />
-                              </svg>
-                            </span>
-                          ) : a.status === 'in_progress' ? (
-                            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-amber-100">
-                              <svg className="w-3.5 h-3.5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
-                                <circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15 15" />
-                              </svg>
-                            </span>
-                          ) : (
-                            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-50">
-                              <svg className="w-3.5 h-3.5 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
-                                <circle cx="12" cy="12" r="9" /><polyline points="12 8 12 12 14 14" />
-                              </svg>
-                            </span>
-                          )}
-                        </td>
-                        <td className="px-5 py-3 text-right">
-                          {a.status === 'completed' ? (
-                            <Link href={`/assessment/${a.id}/results`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
-                              {t.viewResults}
-                            </Link>
-                          ) : (
-                            <Link href={`/assessment/${a.id}/question`} className="text-[#4F46E5] hover:underline text-xs font-semibold">
-                              {a.status === 'in_progress' ? t.continueAction : t.startAssessment}
-                            </Link>
-                          )}
-                        </td>
-                      </tr>
-                    ))}
+                    {recentItems.map((row) => {
+                      const typeColor = row.type === 'personality' ? '#0D9488' : row.type === 'internship' ? '#7C3AED' : '#4F46E5'
+                      const typeLabel = row.type === 'personality' ? t.strengthsTitle : row.type === 'internship' ? t.internshipProgramme : t.academicLabel
+                      const resultsHref = row.type === 'personality'
+                        ? `/strengths/${row.id}/results${locale ? `?locale=${locale}` : ''}`
+                        : row.type === 'internship'
+                        ? `/assessment/${row.id}/results`
+                        : `/results/${row.id}`
+                      const continueHref = row.type === 'personality'
+                        ? `/strengths/${row.id}/question${locale ? `?locale=${locale}` : ''}`
+                        : `/assessment/${row.id}/question`
+                      return (
+                        <tr key={`${row.type}-${row.id}`} className="border-b last:border-0 transition-colors hover:bg-[#F8FAFC]" style={{ borderColor: '#E8ECF2' }}>
+                          <td className="px-5 py-3.5">
+                            <div className="font-medium text-sm" style={{ color: '#1E293B' }}>{row.childName}</div>
+                            <div className="text-xs mt-0.5 font-medium" style={{ color: typeColor }}>{typeLabel}</div>
+                          </td>
+                          <td className="px-5 py-3.5 text-xs hidden sm:table-cell" style={{ color: '#64748B' }}>{formatDate(row.createdAt)}</td>
+                          <td className="px-5 py-3 text-right hidden sm:table-cell">
+                            {row.score != null ? (
+                              <span className={`font-bold text-sm ${getScoreColor(row.score)}`}>{row.score}</span>
+                            ) : (
+                              <span style={{ color: '#d2d2d7' }}>—</span>
+                            )}
+                          </td>
+                          <td className="px-5 py-3">
+                            {row.status === 'completed' ? (
+                              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100">
+                                <svg className="w-3.5 h-3.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                                  <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                              </span>
+                            ) : row.status === 'in_progress' ? (
+                              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-amber-100">
+                                <svg className="w-3.5 h-3.5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                                  <circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15 15" />
+                                </svg>
+                              </span>
+                            ) : (
+                              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-50">
+                                <svg className="w-3.5 h-3.5 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                                  <circle cx="12" cy="12" r="9" /><polyline points="12 8 12 12 14 14" />
+                                </svg>
+                              </span>
+                            )}
+                          </td>
+                          <td className="px-5 py-3 text-right">
+                            {row.status === 'completed' ? (
+                              <Link href={resultsHref} className="text-[#4F46E5] hover:underline text-xs font-semibold">
+                                {t.viewResults}
+                              </Link>
+                            ) : (
+                              <Link href={continueHref} className="text-[#4F46E5] hover:underline text-xs font-semibold">
+                                {row.status === 'in_progress' ? t.continueAction : t.startAssessment}
+                              </Link>
+                            )}
+                          </td>
+                        </tr>
+                      )
+                    })}
                   </tbody>
                 </table>
             </div>
