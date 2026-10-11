@@ -121,7 +121,6 @@ export default function TrackPageTemplate({ track, locale }: Props) {
     occupationalCategory: PROGRAM_NAMES[track].occupation,
     timeToComplete: 'PT20M',
     educationalProgramMode: 'online',
-    inLanguage: locale,
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: d.ui.offerDesc },
     programPrerequisites: d.ui.prerequisite,
   }

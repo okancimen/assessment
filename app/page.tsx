@@ -175,8 +175,7 @@ const ACADEMIC_PROGRAM_SCHEMA = {
   },
   timeToComplete: 'PT90M',
   educationalProgramMode: 'online',
-  inLanguage: 'en-GB',
-  typicalAgeRange: '6-17',
+  audience: { '@type': 'PeopleAudience', suggestedMinAge: 6, suggestedMaxAge: 17 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'No prerequisites required',
   hasCourse: [
@@ -201,8 +200,7 @@ const INTERNSHIP_PROGRAM_SCHEMA = {
   },
   timeToComplete: 'PT20M',
   educationalProgramMode: 'online',
-  inLanguage: 'en-GB',
-  typicalAgeRange: '14-18',
+  audience: { '@type': 'PeopleAudience', suggestedMinAge: 14, suggestedMaxAge: 18 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'No prerequisites required',
   hasCourse: [
@@ -228,8 +226,7 @@ const PERSONALITY_PROGRAM_SCHEMA = {
   },
   timeToComplete: 'PT15M',
   educationalProgramMode: 'online',
-  inLanguage: 'en-GB',
-  typicalAgeRange: '6-20',
+  audience: { '@type': 'PeopleAudience', suggestedMinAge: 6, suggestedMaxAge: 20 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'Completed by parent on behalf of child — no prerequisites required',
   hasCourse: [

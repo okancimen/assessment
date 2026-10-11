@@ -133,8 +133,7 @@ const ACADEMIC_PROGRAM_SCHEMA_AR = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'تقرير التقييم الأكاديمي', credentialCategory: 'certificate' },
   timeToComplete: 'PT90M',
   educationalProgramMode: 'online',
-  inLanguage: 'ar',
-  typicalAgeRange: '6-17',
+  audience: { '@type': 'PeopleAudience', suggestedMinAge: 6, suggestedMaxAge: 17 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'AED', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'لا توجد متطلبات مسبقة',
   hasCourse: [
@@ -155,8 +154,7 @@ const INTERNSHIP_PROGRAM_SCHEMA_AR = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'تقرير الاستعداد للتدريب', credentialCategory: 'certificate' },
   timeToComplete: 'PT20M',
   educationalProgramMode: 'online',
-  inLanguage: 'ar',
-  typicalAgeRange: '14-18',
+  audience: { '@type': 'PeopleAudience', suggestedMinAge: 14, suggestedMaxAge: 18 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'AED', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'لا توجد متطلبات مسبقة',
   hasCourse: [
@@ -197,8 +195,7 @@ const PERSONALITY_PROGRAM_SCHEMA_AR = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'تقرير نقاط القوة', credentialCategory: 'certificate' },
   timeToComplete: 'PT15M',
   educationalProgramMode: 'online',
-  inLanguage: 'ar',
-  typicalAgeRange: '6-20',
+  audience: { '@type': 'PeopleAudience', suggestedMinAge: 6, suggestedMaxAge: 20 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'لا توجد متطلبات مسبقة — يُكمله الوالدان نيابةً عن الطفل',
   hasCourse: [

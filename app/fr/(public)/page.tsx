@@ -132,8 +132,7 @@ const ACADEMIC_PROGRAM_SCHEMA_FR = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Rapport d\'Évaluation Académique', credentialCategory: 'certificate' },
   timeToComplete: 'PT90M',
   educationalProgramMode: 'online',
-  inLanguage: 'fr',
-  typicalAgeRange: '6-17',
+  audience: { '@type': 'PeopleAudience', suggestedMinAge: 6, suggestedMaxAge: 17 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'Aucun prérequis',
   hasCourse: [
@@ -154,8 +153,7 @@ const INTERNSHIP_PROGRAM_SCHEMA_FR = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Rapport de Préparation aux Stages', credentialCategory: 'certificate' },
   timeToComplete: 'PT20M',
   educationalProgramMode: 'online',
-  inLanguage: 'fr',
-  typicalAgeRange: '14-18',
+  audience: { '@type': 'PeopleAudience', suggestedMinAge: 14, suggestedMaxAge: 18 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'Aucun prérequis',
   hasCourse: [
@@ -176,8 +174,7 @@ const PERSONALITY_PROGRAM_SCHEMA_FR = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Rapport des Forces du Caractère', credentialCategory: 'certificate' },
   timeToComplete: 'PT15M',
   educationalProgramMode: 'online',
-  inLanguage: 'fr',
-  typicalAgeRange: '6-20',
+  audience: { '@type': 'PeopleAudience', suggestedMinAge: 6, suggestedMaxAge: 20 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'Aucun prérequis — complété par les parents au nom de l\'enfant',
   hasCourse: [

@@ -148,7 +148,6 @@ export default function DataAnalyticsTrackPage() {
     occupationalCategory: 'Data Analytics',
     timeToComplete: 'PT20M',
     educationalProgramMode: 'online',
-    inLanguage: 'en-GB',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', description: 'Free for all students aged 14–18' },
     programPrerequisites: 'Secondary school student aged 14–18',
   }

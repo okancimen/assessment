@@ -133,8 +133,7 @@ const ACADEMIC_PROGRAM_SCHEMA_RU = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Академический отчёт об оценке', credentialCategory: 'certificate' },
   timeToComplete: 'PT90M',
   educationalProgramMode: 'online',
-  inLanguage: 'ru',
-  typicalAgeRange: '6-17',
+  audience: { '@type': 'PeopleAudience', suggestedMinAge: 6, suggestedMaxAge: 17 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'RUB', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'Предварительные требования отсутствуют',
   hasCourse: [
@@ -155,8 +154,7 @@ const INTERNSHIP_PROGRAM_SCHEMA_RU = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Отчёт о готовности к стажировке', credentialCategory: 'certificate' },
   timeToComplete: 'PT20M',
   educationalProgramMode: 'online',
-  inLanguage: 'ru',
-  typicalAgeRange: '14-18',
+  audience: { '@type': 'PeopleAudience', suggestedMinAge: 14, suggestedMaxAge: 18 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'RUB', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'Предварительные требования отсутствуют',
   hasCourse: [
@@ -197,8 +195,7 @@ const PERSONALITY_PROGRAM_SCHEMA_RU = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Отчёт о сильных сторонах характера', credentialCategory: 'certificate' },
   timeToComplete: 'PT15M',
   educationalProgramMode: 'online',
-  inLanguage: 'ru',
-  typicalAgeRange: '6-20',
+  audience: { '@type': 'PeopleAudience', suggestedMinAge: 6, suggestedMaxAge: 20 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'RUB', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'Предварительных требований нет — заполняется родителем от имени ребёнка',
   hasCourse: [
