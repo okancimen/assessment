@@ -58,7 +58,7 @@ const LOADING_FACTS = [
 ]
 
 function LoadingQuestion() {
-  const [factIndex, setFactIndex] = useState(0)
+  const [factIndex, setFactIndex] = useState(() => Math.floor(Math.random() * LOADING_FACTS.length))
   const [fade, setFade] = useState(true)
   const timer = useRef<ReturnType<typeof setInterval> | null>(null)
 
