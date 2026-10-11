@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import PublicNav from '@/components/layout/PublicNav'
-import PublicFooter from '@/components/layout/PublicFooter'
 import GuestAcademicStartForm from '@/app/academic-assessment/GuestAcademicStartForm'
 
 const BASE_URL = 'https://eduentry.com'
@@ -74,9 +72,7 @@ const FAQS = [
 
 export default function FrEvaluationAcademiquePage() {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
-      <PublicNav locale="fr" />
-
+    <>
       <section className="bg-gradient-to-b from-[#eef2ff] to-white pt-20 pb-16 px-6 text-center">
         <div className="max-w-2xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-1.5 mb-6">
@@ -144,7 +140,6 @@ export default function FrEvaluationAcademiquePage() {
         </div>
       </section>
 
-      <PublicFooter locale="fr" />
-    </div>
+    </>
   )
 }
