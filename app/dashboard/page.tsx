@@ -303,7 +303,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                           {sa?.status === 'completed' ? (
                             <span className="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-600">
                               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" />
-                              {t.viewStrengths}
+                              Completed
                             </span>
                           ) : sa?.status === 'in_progress' ? (
                             <span className="inline-flex items-center gap-1.5 text-xs font-medium text-amber-600">
@@ -324,7 +324,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                               className="inline-flex items-center justify-center w-full border text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#f0fdfa] transition-colors"
                               style={{ borderColor: '#0D9488', color: '#0D9488' }}
                             >
-                              {t.viewStrengths}
+                              {t.viewResults}
                             </Link>
                           ) : sa?.status === 'in_progress' ? (
                             <Link
@@ -412,14 +412,13 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
           </div>
         )}
 
-        {/* Recent assessments */}
-        {hasChildren && (
+        {/* Recent assessments — only when there are academic assessments */}
+        {hasChildren && hasAssessments && (
           <section>
             <div className="flex items-center gap-2.5 mb-4">
               <h2 className="text-base font-semibold" style={{ color: '#1E293B' }}>{t.recentAssessments}</h2>
             </div>
-            {hasAssessments ? (
-              <div className="bg-white rounded-2xl border overflow-hidden" style={{ borderColor: '#E8ECF2' }}>
+            <div className="bg-white rounded-2xl border overflow-hidden" style={{ borderColor: '#E8ECF2' }}>
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b" style={{ borderColor: '#E8ECF2' }}>
@@ -480,13 +479,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                     ))}
                   </tbody>
                 </table>
-              </div>
-            ) : (
-              <div className="bg-white rounded-2xl border border-dashed p-12 text-center" style={{ borderColor: '#CBD5E1' }}>
-                <p className="font-medium text-sm mb-1" style={{ color: '#1E293B' }}>{t.noAssessmentsEmpty}</p>
-                <p className="text-xs" style={{ color: '#64748B' }}>{t.noAssessmentsEmptyDesc}</p>
-              </div>
-            )}
+            </div>
           </section>
         )}
 
