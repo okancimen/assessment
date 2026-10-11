@@ -3,6 +3,8 @@ import { cookies } from 'next/headers'
 import { redirect, notFound } from 'next/navigation'
 import { getQuestions } from '@/lib/personality-questions'
 import PersonalityQuestionClient from '@/app/strengths/[assessmentId]/question/PersonalityQuestionClient'
+import PublicNav from '@/components/layout/PublicNav'
+import PublicFooter from '@/components/layout/PublicFooter'
 
 export default async function GuestQuestionPage({
   params,
@@ -45,13 +47,17 @@ export default async function GuestQuestionPage({
   }
 
   return (
-    <PersonalityQuestionClient
-      assessmentId={assessmentId}
-      childName={assessment.guest_name ?? 'your child'}
-      questions={questions}
-      savedAnswers={savedAnswers}
-      locale={locale}
-      resultsHref={`/personality-assessment/results/${assessmentId}`}
-    />
+    <>
+      <PublicNav />
+      <PersonalityQuestionClient
+        assessmentId={assessmentId}
+        childName={assessment.guest_name ?? 'your child'}
+        questions={questions}
+        savedAnswers={savedAnswers}
+        locale={locale}
+        resultsHref={`/personality-assessment/results/${assessmentId}`}
+      />
+      <PublicFooter />
+    </>
   )
 }
