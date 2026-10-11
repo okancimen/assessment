@@ -79,6 +79,7 @@ export default async function RootLayout({
   return (
     <html lang={lang} className={`${geist.variable} h-full antialiased`}>
       <head>
+        <meta http-equiv="origin-trial" content="Atp+SBWdNhx29ClnOpdUgDbQEO3pDDH+P0z6bqVqeLe4wctK38PxG3ddCbjBkmWQ215ECODYaam9cdAFzghnZwEAAABMeyJvcmlnaW4iOiJodHRwczovL2VkdWVudHJ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViTUNQIiwiZXhwaXJ5IjoxODA2MzY0ODAwfQ==" />
         <meta name="theme-color" content="#1d1d1f" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="yandex-verification" content="f8b17ecde6325153" />
