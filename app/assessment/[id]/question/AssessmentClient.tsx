@@ -73,30 +73,11 @@ function LoadingQuestion() {
   return (
     <div className="min-h-screen bg-[#f5f5f7]">
       <div className="max-w-2xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-8 text-center space-y-6">
-          <div className="relative w-16 h-16 mx-auto">
-            <div className="absolute inset-0 rounded-full border-4 border-[#e0e7ff]" />
-            <div className="absolute inset-0 rounded-full border-4 border-[#4F46E5] border-t-transparent animate-spin" />
-            <div className="absolute inset-2 rounded-full border-2 border-[#a5b4fc] border-b-transparent animate-spin [animation-direction:reverse] [animation-duration:0.8s]" />
-          </div>
-          <div className="space-y-1.5">
-            <p className="text-[#1d1d1f] font-semibold text-base">Crafting your next question</p>
-            <p className="text-[#6e6e73] text-sm leading-relaxed">
-              AI is analysing your performance and generating<br />
-              a personalised question calibrated to your level.
-            </p>
-          </div>
-          <div className="flex items-center justify-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#4F46E5] animate-bounce [animation-delay:0ms]" />
-            <span className="w-1.5 h-1.5 rounded-full bg-[#4F46E5] animate-bounce [animation-delay:150ms]" />
-            <span className="w-1.5 h-1.5 rounded-full bg-[#4F46E5] animate-bounce [animation-delay:300ms]" />
-          </div>
-          <div
-            className="border border-[#d2d2d7] rounded-2xl px-5 py-3.5 text-sm text-[#6e6e73] leading-relaxed transition-opacity duration-400 bg-[#f5f5f7]"
-            style={{ opacity: fade ? 1 : 0 }}
-          >
-            {LOADING_FACTS[factIndex]}
-          </div>
+        <div
+          className="bg-white rounded-3xl border border-[#d2d2d7] p-6 text-sm text-[#6e6e73] leading-relaxed transition-opacity duration-400"
+          style={{ opacity: fade ? 1 : 0 }}
+        >
+          {LOADING_FACTS[factIndex]}
         </div>
       </div>
     </div>
