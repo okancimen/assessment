@@ -5,7 +5,7 @@ import PublicFooter from '@/components/layout/PublicFooter'
 import CtaLink from '@/components/ui/CtaLink'
 
 const BASE_URL = 'https://eduentry.com'
-const REGISTER_URL = '/auth/register'
+const REGISTER_URL = '/academic-assessment'
 
 export const metadata: Metadata = {
   title: "Your Child's True Cognitive Status: Free Assessment",

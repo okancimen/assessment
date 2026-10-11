@@ -254,7 +254,7 @@ export default function ArabicHomePage() {
                 <span>مجاني</span>
               </div>
               <CtaLink
-                href="/ar/auth/register"
+                href="/ar/taqyim-acadimi"
                 label="hero_academic_ar"
                 className="bg-[#4F46E5] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#4338CA] transition-colors text-center"
               >
@@ -378,7 +378,7 @@ export default function ArabicHomePage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <CtaLink
-                  href="/ar/auth/register"
+                  href="/ar/taqyim-acadimi"
                   label="academic_section_ar"
                   className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
                 >
@@ -553,7 +553,7 @@ export default function ArabicHomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <CtaLink href="/ar/auth/register" label="how_it_works_ar" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+            <CtaLink href="/ar/taqyim-acadimi" label="how_it_works_ar" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               ابدأ التقييم المجاني ←
             </CtaLink>
           </div>
@@ -702,7 +702,7 @@ export default function ArabicHomePage() {
                 ))}
               </ul>
               <div className="mt-7 pt-6 border-t border-[#424245] flex flex-wrap items-center gap-x-5 gap-y-3">
-                <CtaLink href="/ar/auth/register" label="what_you_get_academic_ar" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+                <CtaLink href="/ar/taqyim-acadimi" label="what_you_get_academic_ar" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
                   ابدأ مجاناً ←
                 </CtaLink>
                 <Link href="/ar/taqrir-namudhaji" className="text-sm font-semibold text-[#a1a1a7] hover:text-white transition-colors">
@@ -831,7 +831,7 @@ export default function ArabicHomePage() {
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">التقييم الأكاديمي</p>
             <h2 className="text-2xl font-bold text-white mb-3">اكتشف أين يقف طفلك على المستوى الدولي.</h2>
             <p className="text-[#a1a1a7] text-sm mb-8">سياق دولي شامل في ساعة واحدة.</p>
-            <CtaLink href="/ar/auth/register" label="bottom_cta_academic_ar" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+            <CtaLink href="/ar/taqyim-acadimi" label="bottom_cta_academic_ar" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               ابدأ التقييم المجاني ←
             </CtaLink>
           </div>

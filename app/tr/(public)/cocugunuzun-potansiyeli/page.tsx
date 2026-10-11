@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 const BASE_URL = 'https://eduentry.com'
-const REGISTER_URL = `${BASE_URL}/tr/auth/register`
+const REGISTER_URL = '/tr/akademik-degerlendirme'
 
 export const metadata: Metadata = {
   title: 'Çocuğumun Gerçek Bilişsel Durumu: Ücretsiz Değerlendirme',

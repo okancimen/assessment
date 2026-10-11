@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 const BASE_URL = 'https://eduentry.com'
-const REGISTER_URL = `${BASE_URL}/ar/auth/register`
+const REGISTER_URL = '/ar/taqyim-acadimi'
 
 export const metadata: Metadata = {
   title: 'الوضع المعرفي الحقيقي لطفلك — تقييم مجاني',

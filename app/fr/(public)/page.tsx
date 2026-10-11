@@ -254,7 +254,7 @@ export default function FrenchHomePage() {
                 <span>Gratuit</span>
               </div>
               <CtaLink
-                href="/fr/auth/register"
+                href="/fr/evaluation-academique"
                 label="hero_academic_fr"
                 className="bg-[#4F46E5] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#4338CA] transition-colors text-center"
               >
@@ -368,7 +368,7 @@ export default function FrenchHomePage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <CtaLink
-                  href="/fr/auth/register"
+                  href="/fr/evaluation-academique"
                   label="academic_section_fr"
                   className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
                 >
@@ -543,7 +543,7 @@ export default function FrenchHomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <CtaLink href="/fr/auth/register" label="how_it_works_fr" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+            <CtaLink href="/fr/evaluation-academique" label="how_it_works_fr" className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Commencer l&apos;évaluation gratuite →
             </CtaLink>
           </div>
@@ -693,7 +693,7 @@ export default function FrenchHomePage() {
                 ))}
               </ul>
               <div className="mt-7 pt-6 border-t border-[#424245] flex flex-wrap items-center gap-x-5 gap-y-3">
-                <CtaLink href="/fr/auth/register" label="what_you_get_academic_fr" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+                <CtaLink href="/fr/evaluation-academique" label="what_you_get_academic_fr" className="bg-[#4F46E5] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
                   Commencer gratuitement →
                 </CtaLink>
                 <Link href="/fr/exemple-de-rapport" className="text-sm font-semibold text-[#a1a1a7] hover:text-white transition-colors">
@@ -822,7 +822,7 @@ export default function FrenchHomePage() {
             <p className="text-[10px] text-[#a1a1a7] font-semibold uppercase tracking-widest mb-4">Évaluation Académique</p>
             <h2 className="text-2xl font-bold text-white mb-3">Découvrez où se situe votre enfant — à l&apos;échelle mondiale.</h2>
             <p className="text-[#a1a1a7] text-sm mb-8">Contexte international complet en une heure.</p>
-            <CtaLink href="/fr/auth/register" label="bottom_cta_academic_fr" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
+            <CtaLink href="/fr/evaluation-academique" label="bottom_cta_academic_fr" className="bg-[#4F46E5] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors">
               Commencer l&apos;évaluation gratuite →
             </CtaLink>
           </div>

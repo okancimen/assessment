@@ -120,7 +120,7 @@ export default function SubjectsIndexPage() {
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Try a free assessment today</h2>
           <p className="text-indigo-100 mb-8">Takes 5–8 minutes per subject. Instant standardised score and percentile ranking.</p>
-          <CtaLink href="/auth/register" label="subjects_index_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
+          <CtaLink href="/academic-assessment" label="subjects_index_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
             Start free assessment
           </CtaLink>
         </section>

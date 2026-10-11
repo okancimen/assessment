@@ -245,7 +245,7 @@ export default function ElevenPlusPage() {
               Most practice tests give you a percentage. Eduentry gives you a standardised score on the same scale as GL Assessment and CAT4 — so you know whether your child is actually on track for grammar school entry.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
-              <CtaLink href="/auth/register" label="11plus_hero_cta" className="bg-indigo-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-indigo-700 transition-colors shadow-md shadow-indigo-100">
+              <CtaLink href="/academic-assessment" label="11plus_hero_cta" className="bg-indigo-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-indigo-700 transition-colors shadow-md shadow-indigo-100">
                 Start free 11+ test
               </CtaLink>
               <Link href="/sample-report" className="text-indigo-600 px-7 py-3.5 rounded-xl font-semibold hover:bg-indigo-50 transition-colors border border-indigo-200">
@@ -497,7 +497,7 @@ export default function ElevenPlusPage() {
               Verbal reasoning, non-verbal reasoning, English and maths. Get a standardised score and percentile ranking in under 45 minutes — free, no subscription.
             </p>
             <div className="flex flex-wrap gap-3">
-              <CtaLink href="/auth/register" label="11plus_bottom_cta" className="bg-white text-indigo-600 px-7 py-3.5 rounded-xl font-semibold hover:bg-indigo-50 transition-colors">
+              <CtaLink href="/academic-assessment" label="11plus_bottom_cta" className="bg-white text-indigo-600 px-7 py-3.5 rounded-xl font-semibold hover:bg-indigo-50 transition-colors">
                 Start free 11+ test
               </CtaLink>
               <Link href="/methodology" className="text-indigo-200 px-7 py-3.5 rounded-xl font-semibold hover:text-white hover:bg-indigo-700 transition-colors border border-indigo-500">

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 const BASE_URL = 'https://eduentry.com'
-const REGISTER_URL = `${BASE_URL}/ru/auth/register`
+const REGISTER_URL = '/ru/akademicheskaya-otsenka'
 
 export const metadata: Metadata = {
   title: 'Каков когнитивный статус вашего ребёнка? — Бесплатная оценка',
