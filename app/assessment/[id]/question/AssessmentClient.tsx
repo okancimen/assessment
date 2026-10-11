@@ -58,17 +58,7 @@ const LOADING_FACTS = [
 ]
 
 function LoadingQuestion() {
-  const [factIndex, setFactIndex] = useState(() => Math.floor(Math.random() * LOADING_FACTS.length))
-  const [fade, setFade] = useState(true)
-  const timer = useRef<ReturnType<typeof setInterval> | null>(null)
-
-  useEffect(() => {
-    timer.current = setInterval(() => {
-      setFade(false)
-      setTimeout(() => { setFactIndex((i) => (i + 1) % LOADING_FACTS.length); setFade(true) }, 400)
-    }, 5000)
-    return () => { if (timer.current) clearInterval(timer.current) }
-  }, [])
+  const [factIndex] = useState(() => Math.floor(Math.random() * LOADING_FACTS.length))
 
   return (
     <div className="min-h-screen bg-[#f5f5f7]">
@@ -92,8 +82,7 @@ function LoadingQuestion() {
             <span className="w-1.5 h-1.5 rounded-full bg-[#4F46E5] animate-bounce [animation-delay:300ms]" />
           </div>
           <div
-            className="border border-[#d2d2d7] rounded-2xl px-5 py-3.5 text-sm text-[#6e6e73] leading-relaxed transition-opacity duration-400 bg-[#f5f5f7]"
-            style={{ opacity: fade ? 1 : 0 }}
+            className="border border-[#d2d2d7] rounded-2xl px-5 py-3.5 text-sm text-[#6e6e73] leading-relaxed bg-[#f5f5f7]"
           >
             {LOADING_FACTS[factIndex]}
           </div>
