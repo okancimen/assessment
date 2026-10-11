@@ -125,40 +125,118 @@ const TIERS = [
   { label: 'Genç Yetişkin', age: '18–20 yaş', traits: 'Tüm 24 özellik', questions: '48 soru', color: 'bg-orange-50 border-orange-200 text-orange-700' },
 ]
 
+const SAMPLE_STRENGTHS = [
+  { name: 'Merak', pct: 84, color: 'bg-blue-500' },
+  { name: 'Yaratıcılık', pct: 72, color: 'bg-purple-500' },
+  { name: 'Canlılık', pct: 66, color: 'bg-orange-500' },
+  { name: 'İyilik', pct: 58, color: 'bg-pink-500' },
+  { name: 'Umut', pct: 51, color: 'bg-amber-500' },
+]
+
 export default function KisilikDegerlendirmesiPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#f5f3ff] to-white pt-20 pb-16 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-xs font-semibold text-indigo-700 uppercase tracking-wider">VIA Güçlü Yönleri · 6–20 Yaş</span>
+      <section className="bg-gradient-to-b from-[#f5f3ff] to-white pt-16 pb-12 px-6">
+        <div className="max-w-5xl mx-auto lg:grid lg:grid-cols-[1fr_340px] lg:gap-12 lg:items-center">
+
+          {/* Left: Copy + Form */}
+          <div>
+            <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-xs font-semibold text-indigo-700 tracking-wide">VIA Güçlü Yönleri · 6–20 Yaş</span>
+            </div>
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-[#1d1d1f] leading-tight mb-4">
+              Çocuğunuzun Kim Olduğunu<br />
+              <span className="text-[#4F46E5]">Bilimsel Olarak Keşfedin</span>
+            </h1>
+            <p className="text-lg text-[#6e6e73] mb-6 leading-relaxed max-w-lg">
+              Yapay zeka destekli, VIA çerçevesine dayalı kişilik değerlendirmesi. Sadece 5 dakika. Çocuğunuzun katılımı gerekmez.
+            </p>
+            <GuestStartForm locale="tr" />
+            <p className="mt-3 text-sm text-[#6e6e73]">
+              Zaten hesabınız var mı?{' '}
+              <Link href="/tr/auth/login" className="text-[#4F46E5] hover:underline font-medium">Giriş yap</Link>
+            </p>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-[#1d1d1f] leading-tight mb-4">
-            Çocuğunuzun Benzersiz Güçlerini<br />
-            <span className="text-[#4F46E5]">Keşfedin</span>
-          </h1>
-          <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            Çocuğunuzun gelişim aşamasına mükemmel biçimde uyarlanmış, yapay zeka destekli, bilimsel bir kişilik değerlendirmesi.
-          </p>
-          <GuestStartForm locale="tr" />
-          <p className="mt-2 text-sm text-[#6e6e73]">
-            Zaten hesabınız var mı?{' '}
-            <Link href="/tr/auth/login" className="text-[#4F46E5] hover:underline font-medium">Giriş yap</Link>
-          </p>
-          <p className="mt-6 text-sm text-[#6e6e73] bg-indigo-50 border border-indigo-100 rounded-xl px-5 py-3 max-w-md mx-auto">
-            📋 <strong className="text-[#1d1d1f]">Çocuğunuzun katılımı gerekmez.</strong> Bu, yalnızca ebeveynin dolduracağı kısa bir anket. Tahminen 5 dakika sürer.
-          </p>
+
+          {/* Right: Sample Report Preview */}
+          <div className="hidden lg:block mt-10 lg:mt-0">
+            <div className="bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-6">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-9 h-9 rounded-full bg-indigo-100 flex items-center justify-center text-sm font-bold text-indigo-600 shrink-0">A</div>
+                <div>
+                  <p className="text-sm font-semibold text-[#1d1d1f]">Ali · 9 Yaş</p>
+                  <p className="text-xs text-[#6e6e73]">Örnek rapor</p>
+                </div>
+              </div>
+              <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-3">En Güçlü Yönler</p>
+              <div className="space-y-3">
+                {SAMPLE_STRENGTHS.map((s) => (
+                  <div key={s.name}>
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="text-xs font-medium text-[#3d3d3f]">{s.name}</span>
+                      <span className="text-xs text-[#6e6e73]">{s.pct}%</span>
+                    </div>
+                    <div className="h-1.5 bg-[#f5f5f7] rounded-full overflow-hidden">
+                      <div className={`h-full ${s.color} rounded-full`} style={{ width: `${s.pct}%` }} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-5 pt-5 border-t border-[#f5f5f7]">
+                <p className="text-xs text-[#6e6e73] leading-relaxed italic">
+                  &ldquo;Ali&rsquo;nin doğal merakı ve yaratıcı zihni, onu bağımsız düşünmeye yöneltiyor. En çok keşif odaklı etkinliklerde parlıyor.&rdquo;
+                </p>
+              </div>
+              <div className="mt-4 flex gap-2 flex-wrap">
+                <span className="text-xs bg-indigo-50 text-indigo-600 rounded-full px-3 py-1 font-medium">VIA Çerçevesi</span>
+                <span className="text-xs bg-green-50 text-green-600 rounded-full px-3 py-1 font-medium">24 Özellik</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Trust strip */}
+        <div className="max-w-5xl mx-auto mt-10">
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs text-[#6e6e73]">
+            {[
+              'Ücretsiz değerlendirme',
+              'Çocuğun katılımı gerekmez',
+              'VIA pozitif psikoloji',
+              '190+ ülkede kullanılıyor',
+              '5 dakika sürer',
+            ].map((item) => (
+              <span key={item} className="flex items-center gap-1.5">
+                <span className="w-1 h-1 rounded-full bg-indigo-400 shrink-0" />
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Why Character Matters */}
       <section className="py-16 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#1d1d1f] mb-6">Neden Karakter Notlardan Daha Önemli?</h2>
-          <p className="text-lg text-[#6e6e73] leading-relaxed">
-            Ebeveyn olarak çoğunlukla tamamen okul notlarına odaklanırız. Ancak akademik puanlar hikayenin yalnızca bir bölümünü anlatır. Gerçek başarı ve dayanıklılık, bir çocuğun karakterinden, duygusal alışkanlıklarından ve kişilik güçlerinden gelir. Değerlendirmemiz, notların ötesine bakarak çocuğunuzun kim olduğunu görmenize yardımcı olur — doğal olarak üstün olduklarını (&ldquo;Öne Çıkan Özellikler&rdquo;) ve &ldquo;Gelişim Alanlarını&rdquo; ortaya koyar.
-          </p>
+        <div className="max-w-4xl mx-auto lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
+          <div>
+            <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4">Notlar Hikayenin Yalnızca Bir Kısmını Anlatır</h2>
+            <p className="text-base text-[#6e6e73] leading-relaxed">
+              Ebeveyn olarak çoğunlukla okul notlarına odaklanırız. Ancak gerçek başarı ve dayanıklılık, bir çocuğun karakterinden, duygusal alışkanlıklarından ve kişilik güçlerinden gelir. Değerlendirmemiz, notların ötesine bakarak çocuğunuzun doğal olarak parladığı <strong className="text-[#1d1d1f] font-semibold">Öne Çıkan Güçleri</strong> ve büyüme potansiyeli olan <strong className="text-[#1d1d1f] font-semibold">Gelişim Alanlarını</strong> ortaya koyar.
+            </p>
+          </div>
+          <div className="mt-8 lg:mt-0 grid grid-cols-2 gap-4">
+            {[
+              { label: 'Akademik Not', sub: 'O günün anlık fotoğrafı', accent: false },
+              { label: 'Karakter Gücü', sub: 'Kim olduklarını yansıtır', accent: true },
+              { label: 'Sınav: 85 / 100', sub: 'Nasıl hissettiklerine bağlı değişir', accent: false },
+              { label: 'Merak Puanı: 84%', sub: 'Zaman içinde tutarlı kalır', accent: true },
+            ].map((c) => (
+              <div key={c.label} className={`rounded-2xl border p-4 ${c.accent ? 'border-indigo-200 bg-indigo-50' : 'border-[#d2d2d7] bg-white'}`}>
+                <p className={`font-semibold text-sm mb-1 ${c.accent ? 'text-indigo-700' : 'text-[#6e6e73]'}`}>{c.label}</p>
+                <p className="text-xs text-[#6e6e73] leading-relaxed">{c.sub}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -170,18 +248,18 @@ export default function KisilikDegerlendirmesiPage() {
             {[
               {
                 step: '1',
-                title: 'Akıllı Yaş Yönlendirmesi 🗓️',
-                desc: "Kayıt sırasında çocuğunuzun Doğum Tarihini girin. Sistemimiz gelişim aşamasını otomatik olarak hesaplar ve doğru değerlendirme kademesine atar.",
+                title: 'Yaş Bazlı Yönlendirme',
+                desc: "Kayıt sırasında çocuğunuzun doğum tarihini girin. Sistemimiz gelişim aşamasını otomatik hesaplayarak doğru kademeye atar.",
               },
               {
                 step: '2',
-                title: '5 Dakikalık Ebeveyn Anketi ⭐',
-                desc: 'Her gün gördüğünüz davranışlara ilişkin hızlı, gözlem tabanlı, 1-5 yıldız sorularını yanıtlayacaksınız. Tahmin yok, çocuğunuz için stresli bir sınav yok.',
+                title: '5 Dakikalık Ebeveyn Anketi',
+                desc: 'Her gün gördüğünüz davranışlara ilişkin hızlı, gözlem tabanlı 1–5 yıldız soruları. Tahmin yok, çocuğunuz için stresli bir sınav yok.',
               },
               {
                 step: '3',
-                title: 'Yapay Zeka Destekli Büyüme Raporu 🤖',
-                desc: 'Gelişmiş yapay zekamız, girdilerinizi küresel olarak tanınan bir psikolojik modele göre analiz ederek uygulanabilir ebeveynlik egzersizleriyle dolu kişiselleştirilmiş bir yol haritası oluşturur.',
+                title: 'Yapay Zeka Destekli Büyüme Raporu',
+                desc: 'Girdileriniz, küresel olarak tanınan psikolojik modele göre analiz edilir. Uygulanabilir ebeveynlik egzersizleriyle kişiselleştirilmiş bir yol haritası alırsınız.',
               },
             ].map((s) => (
               <div key={s.step} className="bg-white rounded-3xl border border-[#d2d2d7] p-6 sm:p-8">
@@ -197,11 +275,11 @@ export default function KisilikDegerlendirmesiPage() {
       {/* Science */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#1d1d1f] mb-6">Pozitif Psikolojinin Altın Standardı Üzerine Kurulu</h2>
-          <p className="text-lg text-[#6e6e73] leading-relaxed mb-8">
-            Platformumuz, öncü psikologlar Dr. Martin Seligman ve Dr. Neal Mayerson tarafından geliştirilen dünyaca ünlü VIA Güçlü Yönleri çerçevesini uyarlar. Araştırmacılar ve eğitimciler tarafından 190&apos;dan fazla ülkede kullanılan bu model, 6 temel erdem altında gruplanmış 24 evrensel özelliği tanımlar: Bilgelik, Cesaret, İnsanlık, Adalet, Ölçülülük ve Aşkınlık.
+          <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4">Pozitif Psikolojinin Altın Standardı</h2>
+          <p className="text-base text-[#6e6e73] leading-relaxed mb-8">
+            Platformumuz, öncü psikologlar Dr. Martin Seligman ve Dr. Neal Mayerson tarafından geliştirilen VIA Güçlü Yönleri çerçevesini uyarlar. 190&apos;dan fazla ülkede araştırmacılar ve eğitimciler tarafından kullanılan bu model, 6 temel erdem altında 24 evrensel özelliği tanımlar.
           </p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {VIRTUES.map((v) => (
               <div key={v.label} className={`rounded-2xl border ${v.border} bg-white p-5`}>
                 <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${v.badge}`}>
@@ -224,7 +302,7 @@ export default function KisilikDegerlendirmesiPage() {
       {/* Age Tiers */}
       <section className="py-16 px-6 bg-[#f5f5f7]">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#1d1d1f] mb-10 text-center">Çocukluğun Her Aşamasına Mükemmel Kalibre Edilmiş</h2>
+          <h2 className="text-3xl font-bold text-[#1d1d1f] mb-10 text-center">Çocukluğun Her Aşamasına Özel</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {TIERS.map((t) => (
               <div key={t.label} className="bg-white rounded-3xl border border-[#d2d2d7] p-6">
@@ -244,12 +322,12 @@ export default function KisilikDegerlendirmesiPage() {
           <h2 className="text-3xl font-bold text-[#1d1d1f] mb-10 text-center">Elinizde Ne Olacak</h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {[
-              { icon: '🎯', title: 'En Güçlü 5 Yönü', desc: "Çocuğunuzun doğal olarak parladığı alanlar." },
-              { icon: '🌱', title: 'Geliştirilebilecek 3 Özelliği', desc: "Kör noktaları veya mevcut zayıflıkları hakkında nazik bilgiler." },
-              { icon: '🤖', title: 'Uygulanabilir Yapay Zeka Araç Seti', desc: "Onların gelişmesine yardımcı olmak için evde uygulayabileceğiniz özelleştirilmiş, gerçek dünya egzersizleri." },
+              { dot: 'bg-indigo-500', title: 'En Güçlü 5 Yön', desc: "Çocuğunuzun doğal olarak parladığı alanlar." },
+              { dot: 'bg-emerald-500', title: 'Geliştirilebilecek 3 Alan', desc: "Kör noktaları veya mevcut zayıflıkları hakkında nazik bilgiler." },
+              { dot: 'bg-violet-500', title: 'Uygulanabilir Yapay Zeka Planı', desc: "Evde uygulayabileceğiniz, çocuğunuzun profiline özel gerçek dünya egzersizleri." },
             ].map((item) => (
               <div key={item.title} className="bg-[#f5f5f7] rounded-3xl border border-[#d2d2d7] p-6 sm:p-8">
-                <div className="text-3xl mb-3">{item.icon}</div>
+                <div className={`w-3 h-3 rounded-full ${item.dot} mb-4`} />
                 <h3 className="text-base font-bold text-[#1d1d1f] mb-2">{item.title}</h3>
                 <p className="text-sm text-[#6e6e73] leading-relaxed">{item.desc}</p>
               </div>
@@ -281,9 +359,10 @@ export default function KisilikDegerlendirmesiPage() {
       {/* CTA Strip */}
       <section className="py-16 px-6 bg-[#4F46E5] text-white text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Çocuğunuzun gerçekte kim olduğunu keşfetmeye hazır mısınız?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3">Çocuğunuzun gerçekte kim olduğunu keşfetmeye hazır mısınız?</h2>
+          <p className="text-indigo-200 mb-8 text-base">Ücretsiz. Hesap gerekmez. 5 dakika sürer.</p>
           <Link
-            href="/personality-assessment"
+            href="/tr/kisilik-degerlendirmesi"
             className="inline-block bg-white text-[#4F46E5] hover:bg-indigo-50 font-bold text-base px-8 py-4 rounded-xl transition-colors"
           >
             Ücretsiz Değerlendirmeyi Başlat
