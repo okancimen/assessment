@@ -9,8 +9,15 @@ function ageToDob(age: number): string {
   return d.toISOString().slice(0, 10)
 }
 
+function getOrigin(req: NextRequest): string {
+  const host = req.headers.get('x-forwarded-host') ?? req.headers.get('host') ?? 'eduentry.com'
+  const proto = req.headers.get('x-forwarded-proto') ?? 'https'
+  return `${proto}://${host}`
+}
+
 export async function GET(req: NextRequest) {
-  const { searchParams, origin } = new URL(req.url)
+  const { searchParams } = new URL(req.url)
+  const origin = getOrigin(req)
   const assessmentId = searchParams.get('assessmentId')
 
   if (!assessmentId) {
