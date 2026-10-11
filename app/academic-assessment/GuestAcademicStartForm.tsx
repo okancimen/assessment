@@ -93,9 +93,7 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
       return
     }
     // Set cookie client-side as well to guarantee it is present before navigation
-    const maxAge = 60 * 60 * 24 * 7
-    document.cookie = `ac_tok=${data.guestToken}; path=/; max-age=${maxAge}; samesite=lax`
-    window.location.href = `/assessment/${data.assessmentId}/question`
+    window.location.href = `/api/assessment/guest-enter?id=${data.assessmentId}&token=${data.guestToken}`
   }
 
   return (
