@@ -1,24 +1,18 @@
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { isAdminEmail } from '@/lib/admin'
-import { cookies } from 'next/headers'
 import { redirect, notFound } from 'next/navigation'
 import Link from 'next/link'
 import CompleteClient from './CompleteClient'
 
 export default async function CompletePage({
   params,
-  searchParams,
 }: {
   params: Promise<{ id: string }>
-  searchParams: Promise<{ tk?: string }>
 }) {
   const { id } = await params
-  const { tk } = await searchParams
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  const cookieStore = await cookies()
-  const guestToken = cookieStore.get('ac_tok')?.value ?? tk
 
   const db = createAdminClient()
 
@@ -33,9 +27,9 @@ export default async function CompletePage({
   const isGuest = !assessment.child_id && !!assessment.guest_token
 
   if (isGuest) {
-    if (!guestToken || assessment.guest_token !== guestToken) redirect('/academic-assessment')
+    // Token auth handled client-side via X-Guest-Token header — no cookie/param needed here
     if (assessment.status === 'completed') redirect(`/assessment/${id}/results`)
-    return <CompleteClient assessmentId={id} childName={assessment.guest_name ?? 'there'} guestToken={guestToken} />
+    return <CompleteClient assessmentId={id} childName={assessment.guest_name ?? 'there'} />
   }
 
   if (!user) redirect('/auth/login')
@@ -53,7 +47,7 @@ export default async function CompletePage({
   if (assessment.status === 'completed') redirect(`/assessment/${id}/results`)
 
   if (isInternship) {
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://eduentry.com'
     await fetch(`${siteUrl}/api/assessment/${id}/complete`, { method: 'POST' }).catch(() => {})
     const name = child.name?.split(' ')[0] ?? 'there'
     return (

@@ -168,12 +168,16 @@ type FetchResult =
 
 // ── Main component ────────────────────────────────────────────────────────────
 
-export default function AssessmentClient({ assessmentId, guestToken }: { assessmentId: string; guestToken?: string }) {
+export default function AssessmentClient({ assessmentId }: { assessmentId: string }) {
   const router = useRouter()
 
   function guestHeaders(): HeadersInit {
-    return guestToken ? { 'X-Guest-Token': guestToken } : {}
+    const token = typeof window !== 'undefined'
+      ? sessionStorage.getItem(`guestToken_${assessmentId}`) ?? undefined
+      : undefined
+    return token ? { 'X-Guest-Token': token } : {}
   }
+
 
   type Phase = 'warmup' | 'loading' | 'question' | 'break' | 'error'
   const [phase, setPhase]               = useState<Phase>('warmup')
@@ -210,7 +214,7 @@ export default function AssessmentClient({ assessmentId, guestToken }: { assessm
 
   function applyResult(result: FetchResult) {
     if (result.type === 'complete') {
-      router.push(`/assessment/${assessmentId}/complete${guestToken ? `?tk=${guestToken}` : ''}`)
+      router.push(`/assessment/${assessmentId}/complete`)
     } else if (result.type === 'error') {
       setError(result.message)
       setPhase('error')
@@ -317,7 +321,7 @@ export default function AssessmentClient({ assessmentId, guestToken }: { assessm
     })
     const data = await res.json()
     if (data.all_complete) {
-      router.push(`/assessment/${assessmentId}/complete${guestToken ? `?tk=${guestToken}` : ''}`)
+      router.push(`/assessment/${assessmentId}/complete`)
       return null
     }
     return {

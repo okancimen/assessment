@@ -8,10 +8,9 @@ import { trackEvent } from '@/lib/analytics'
 interface CompleteClientProps {
   assessmentId: string
   childName: string
-  guestToken?: string
 }
 
-export default function CompleteClient({ assessmentId, childName, guestToken }: CompleteClientProps) {
+export default function CompleteClient({ assessmentId, childName }: CompleteClientProps) {
   const router = useRouter()
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
@@ -19,9 +18,12 @@ export default function CompleteClient({ assessmentId, childName, guestToken }: 
   useEffect(() => {
     async function finalize() {
       setSubmitting(true)
+      const token = typeof window !== 'undefined'
+        ? sessionStorage.getItem(`guestToken_${assessmentId}`) ?? undefined
+        : undefined
       const res = await fetch(`/api/assessment/${assessmentId}/complete`, {
         method: 'POST',
-        headers: guestToken ? { 'X-Guest-Token': guestToken } : {},
+        headers: token ? { 'X-Guest-Token': token } : {},
       })
 
       if (!res.ok) {
