@@ -45,6 +45,16 @@ const LOADING_FACTS = [
   'Did you know? A child who scores 115 on a standardised test has outperformed roughly 84% of their age group. A score of 125 puts them in the top 5%, and 130 in the top 2.3%.',
   'Fun fact: Pattern recognition — the core skill in non-verbal reasoning — is also the foundation of coding, chess strategy, musical sight-reading, and scientific hypothesis formation.',
   'Did you know? Timed and untimed versions of the same test often produce very different scores for different children. This assessment is untimed, which benefits deep thinkers who process carefully rather than quickly.',
+  'Did you know? Albert Einstein failed the entrance exam to the Swiss Federal Polytechnic at age 15 — not in maths or physics, but in French and botany. He retook it a year later and was admitted. The lesson: a weak subject doesn\'t define you.',
+  'Fun fact: Thomas Edison had just three months of formal schooling. His teachers described him as "addled" and said he was too slow to learn. His mother pulled him out and taught him at home. He went on to hold 1,093 patents.',
+  'Did you know? Isaac Newton was considered an unremarkable student and was pulled out of school at 17 to run his family\'s farm. His uncle noticed his potential and sent him back. He later invented calculus.',
+  'Fun fact: Charles Darwin\'s father told him: "You care for nothing but shooting, dogs, and rat-catching, and you will be a disgrace to yourself and all your family." Darwin went on to write one of the most important books in scientific history.',
+  'Did you know? Winston Churchill finished near the bottom of his class at Harrow and failed the entrance exam to the Royal Military College twice. He later said school taught him one thing above all: never give up.',
+  'Fun fact: Richard Branson\'s headmaster told him on his last day of school: "Congratulations, Branson — I predict you will either go to prison or become a millionaire." He left school at 16 with dyslexia and no qualifications. He became both famous and a billionaire.',
+  'Did you know? Agatha Christie — the best-selling fiction writer of all time — could not read until she was eight years old and was considered a slow learner. She went on to write 66 detective novels, translated into 103 languages.',
+  'Fun fact: Abraham Lincoln had less than twelve months of formal schooling in his entire life, taught himself to read by firelight, and walked miles to borrow books. He became a lawyer, then President, without ever attending school regularly.',
+  'Did you know? Walt Disney was told by a newspaper editor that he "lacked imagination and had no good ideas." His art teacher agreed. He was fired from his first animation job. The studio he built became the most recognised entertainment brand on Earth.',
+  'Fun fact: Michael Faraday — who discovered electromagnetic induction and invented the electric motor — left school at 13 with almost no education and became a bookbinder\'s apprentice. He taught himself chemistry and physics entirely from the books he was binding.',
 ]
 
 function LoadingQuestion() {
