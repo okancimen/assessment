@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
 
 type Strings = {
   namePlaceholder: string
@@ -72,7 +71,6 @@ const STRINGS: Record<string, Strings> = {
 }
 
 export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: string }) {
-  const router = useRouter()
   const s = STRINGS[locale] ?? STRINGS.en
   const [name, setName] = useState('')
   const [age, setAge] = useState('')
@@ -94,7 +92,7 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
       setLoading(false)
       return
     }
-    router.push(`/assessment/${data.assessmentId}/question`)
+    window.location.href = `/assessment/${data.assessmentId}/question`
   }
 
   return (
