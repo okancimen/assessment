@@ -336,10 +336,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                     ) : (
                       <Link
                         href={`/strengths/${child.id}/start${locale ? `?locale=${locale}` : ''}`}
-                        className="inline-flex items-center justify-center text-white text-xs font-semibold px-4 py-2 rounded-full transition-colors"
-                        style={{ backgroundColor: '#0D9488' }}
-                        onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#0F766E')}
-                        onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#0D9488')}
+                        className="inline-flex items-center justify-center text-white text-xs font-semibold px-4 py-2 rounded-full transition-colors bg-[#0D9488] hover:bg-[#0F766E]"
                       >
                         {t.startStrengths}
                       </Link>
