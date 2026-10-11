@@ -1,15 +1,17 @@
 'use client'
 
-import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useState, Suspense } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 import Button from '@/components/ui/Button'
 import Logo from '@/components/ui/Logo'
 import { trackEvent } from '@/lib/analytics'
 
-export default function FRRegisterPage() {
+function FRRegisterForm() {
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const redirectTo = searchParams.get('redirect') ?? '/fr/dashboard'
   const [fullName, setFullName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -42,10 +44,61 @@ export default function FRRegisterPage() {
 
     trackEvent('sign_up', { method: 'email' })
     void fetch('/api/user/update-location', { method: 'POST' })
-    router.push('/fr/dashboard')
-    router.refresh()
+    router.push(redirectTo)
   }
 
+  return (
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <div>
+        <label className="block text-xs font-semibold text-[#1d1d1f] mb-2 uppercase tracking-wide">Nom complet</label>
+        <input
+          type="text"
+          value={fullName}
+          onChange={(e) => setFullName(e.target.value)}
+          required
+          className="w-full px-4 py-3 rounded-2xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-[#f5f5f7]"
+          placeholder="Marie Dupont"
+        />
+      </div>
+
+      <div>
+        <label className="block text-xs font-semibold text-[#1d1d1f] mb-2 uppercase tracking-wide">Adresse e-mail</label>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          className="w-full px-4 py-3 rounded-2xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-[#f5f5f7]"
+          placeholder="vous@exemple.com"
+        />
+      </div>
+
+      <div>
+        <label className="block text-xs font-semibold text-[#1d1d1f] mb-2 uppercase tracking-wide">Mot de passe</label>
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+          className="w-full px-4 py-3 rounded-2xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-[#f5f5f7]"
+          placeholder="Min. 8 caractères"
+        />
+      </div>
+
+      {error && (
+        <div className="bg-red-50 border border-red-100 rounded-2xl px-4 py-3 text-xs text-red-600">
+          {error}
+        </div>
+      )}
+
+      <Button type="submit" className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white" size="lg" loading={loading}>
+        Créer un compte
+      </Button>
+    </form>
+  )
+}
+
+export default function FRRegisterPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#f5f5f7] px-4">
       <div className="w-full max-w-sm">
@@ -56,53 +109,9 @@ export default function FRRegisterPage() {
         </div>
 
         <div className="bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-8">
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label className="block text-xs font-semibold text-[#1d1d1f] mb-2 uppercase tracking-wide">Nom complet</label>
-              <input
-                type="text"
-                value={fullName}
-                onChange={(e) => setFullName(e.target.value)}
-                required
-                className="w-full px-4 py-3 rounded-2xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-[#f5f5f7]"
-                placeholder="Marie Dupont"
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs font-semibold text-[#1d1d1f] mb-2 uppercase tracking-wide">Adresse e-mail</label>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="w-full px-4 py-3 rounded-2xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-[#f5f5f7]"
-                placeholder="vous@exemple.com"
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs font-semibold text-[#1d1d1f] mb-2 uppercase tracking-wide">Mot de passe</label>
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-                className="w-full px-4 py-3 rounded-2xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-[#f5f5f7]"
-                placeholder="Min. 8 caractères"
-              />
-            </div>
-
-            {error && (
-              <div className="bg-red-50 border border-red-100 rounded-2xl px-4 py-3 text-xs text-red-600">
-                {error}
-              </div>
-            )}
-
-            <Button type="submit" className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white" size="lg" loading={loading}>
-              Créer un compte
-            </Button>
-          </form>
+          <Suspense fallback={null}>
+            <FRRegisterForm />
+          </Suspense>
         </div>
 
         <p className="text-center text-xs text-[#6e6e73] mt-6">
@@ -113,7 +122,7 @@ export default function FRRegisterPage() {
         </p>
 
         <p className="text-center text-xs text-[#6e6e73] mt-3">
-          Vous voulez d’abord voir ce que vous obtiendrez ?{' '}
+          Vous voulez d&apos;abord voir ce que vous obtiendrez ?{' '}
           <Link href="/fr/exemple-de-rapport" className="text-[#4F46E5] font-semibold hover:underline">
             Voir un exemple de rapport →
           </Link>

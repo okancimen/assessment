@@ -83,6 +83,7 @@ export interface DashboardI18n {
   resumeStrengths: string
   viewStrengths: string
   strengthsInProgress: string
+  strengthsCompleted: string
   // Personality and internship info boxes
   personalityInfoTitle: string
   personalityInfoDesc: string
@@ -182,6 +183,7 @@ const en: DashboardI18n = {
   resumeStrengths: 'Resume',
   viewStrengths: 'View profile',
   strengthsInProgress: 'In progress',
+  strengthsCompleted: 'Completed',
   personalityInfoTitle: 'Powered by the VIA Character Strengths framework',
   personalityInfoDesc: 'Measures 24 personality traits across 6 core virtues — curiosity, courage, justice, humanity, and more. Takes 15–20 minutes. Results show which strengths are most dominant in your child, with guidance on how to build on them.',
   internshipInfoTitle: 'Workplace readiness for ages 14 and above',
@@ -276,6 +278,7 @@ const tr: DashboardI18n = {
   resumeStrengths: 'Devam et',
   viewStrengths: 'Profili görüntüle',
   strengthsInProgress: 'Devam ediyor',
+  strengthsCompleted: 'Tamamlandı',
   personalityInfoTitle: 'VIA Karakter Güçlü Yönleri çerçevesi ile desteklenmektedir',
   personalityInfoDesc: '6 temel erdem üzerinden 24 kişilik özelliğini ölçer — merak, cesaret, adalet, insanlık sevgisi ve daha fazlası. 15–20 dakika sürer. Sonuçlar hangi güçlü yönlerin en baskın olduğunu gösterir ve bunları nasıl geliştirebileceğinizi açıklar.',
   internshipInfoTitle: '14 yaş ve üzeri için iş hazırlığı',
@@ -370,6 +373,7 @@ const es: DashboardI18n = {
   resumeStrengths: 'Continuar',
   viewStrengths: 'Ver perfil',
   strengthsInProgress: 'En progreso',
+  strengthsCompleted: 'Completado',
   personalityInfoTitle: 'Basado en el marco VIA de Fortalezas de Carácter',
   personalityInfoDesc: 'Mide 24 rasgos de personalidad en 6 virtudes clave — curiosidad, valentía, justicia, humanidad y más. Dura 15–20 minutos. Los resultados muestran las fortalezas dominantes de tu hijo/a con orientación práctica para desarrollarlas.',
   internshipInfoTitle: 'Evaluación de preparación laboral para mayores de 14',
@@ -464,6 +468,7 @@ const fr: DashboardI18n = {
   resumeStrengths: 'Continuer',
   viewStrengths: 'Voir le profil',
   strengthsInProgress: 'En cours',
+  strengthsCompleted: 'Terminé',
   personalityInfoTitle: 'Basé sur le référentiel VIA des Forces de Caractère',
   personalityInfoDesc: 'Mesure 24 traits de personnalité répartis en 6 vertus clés — curiosité, courage, justice, humanité et plus encore. Dure 15–20 minutes. Les résultats montrent les forces dominantes de votre enfant avec des conseils pratiques pour les développer.',
   internshipInfoTitle: 'Évaluation de la maturité professionnelle dès 14 ans',
@@ -558,6 +563,7 @@ const ar: DashboardI18n = {
   resumeStrengths: 'متابعة',
   viewStrengths: 'عرض الملف الشخصي',
   strengthsInProgress: 'قيد التنفيذ',
+  strengthsCompleted: 'مكتمل',
   personalityInfoTitle: 'مستند إلى إطار نقاط القوة الشخصية VIA',
   personalityInfoDesc: 'يقيس 24 سمة شخصية عبر 6 فضائل أساسية — الفضول، الشجاعة، العدالة، الإنسانية وغيرها. يستغرق 15–20 دقيقة. تُظهر النتائج أبرز نقاط القوة لدى طفلك مع إرشادات عملية لتعزيزها.',
   internshipInfoTitle: 'تقييم الاستعداد المهني للأعمار 14+',
@@ -652,6 +658,7 @@ const ru: DashboardI18n = {
   resumeStrengths: 'Продолжить',
   viewStrengths: 'Смотреть профиль',
   strengthsInProgress: 'В процессе',
+  strengthsCompleted: 'Завершено',
   personalityInfoTitle: 'На основе системы сильных сторон характера VIA',
   personalityInfoDesc: 'Измеряет 24 черты личности в рамках 6 ключевых добродетелей — любопытство, смелость, справедливость, гуманность и другие. Занимает 15–20 минут. Результаты показывают доминирующие сильные стороны ребёнка с рекомендациями по их развитию.',
   internshipInfoTitle: 'Оценка готовности к профессиональной деятельности (от 14 лет)',
@@ -746,6 +753,7 @@ const zh: DashboardI18n = {
   resumeStrengths: '继续',
   viewStrengths: '查看档案',
   strengthsInProgress: '进行中',
+  strengthsCompleted: '已完成',
   personalityInfoTitle: '基于VIA性格优势评估框架',
   personalityInfoDesc: '从6大核心美德维度衡量24项性格特质——好奇心、勇气、公正、人文关怀等。测评约需15–20分钟。结果展示孩子最突出的优势特质，并提供实用发展建议。',
   internshipInfoTitle: '14岁以上职场准备度测评',

@@ -77,7 +77,7 @@ export default async function GuestResultsPage({
             .update({ child_id: child.id, parent_id: user.id, guest_token: null })
             .eq('id', assessmentId)
         }
-        redirect(`/strengths/${assessmentId}/results`)
+        redirect(`/strengths/${assessmentId}/results${locale !== 'en' ? `?locale=${locale}` : ''}`)
       }
     }
     // Already owned by this user → full results
@@ -184,13 +184,13 @@ export default async function GuestResultsPage({
             <p className="text-sm text-[#6e6e73] max-w-xs">{t.unlockDesc}</p>
             <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xs">
               <Link
-                href={`/auth/register?redirect=/personality-assessment/results/${assessmentId}${locale !== 'en' ? `?locale=${locale}` : ''}`}
+                href={`${locale !== 'en' ? `/${locale}` : ''}/auth/register?redirect=${encodeURIComponent(`/personality-assessment/results/${assessmentId}${locale !== 'en' ? `?locale=${locale}` : ''}`)}`}
                 className="flex-1 bg-[#4F46E5] hover:bg-indigo-700 text-white font-bold text-sm px-5 py-3 rounded-xl transition-colors text-center"
               >
                 {t.createAccountBtn}
               </Link>
               <Link
-                href={`/auth/login?redirect=/personality-assessment/results/${assessmentId}${locale !== 'en' ? `?locale=${locale}` : ''}`}
+                href={`${locale !== 'en' ? `/${locale}` : ''}/auth/login?redirect=${encodeURIComponent(`/personality-assessment/results/${assessmentId}${locale !== 'en' ? `?locale=${locale}` : ''}`)}`}
                 className="flex-1 border border-[#d2d2d7] text-[#1d1d1f] font-semibold text-sm px-5 py-3 rounded-xl hover:bg-[#f5f5f7] transition-colors text-center"
               >
                 {t.signInBtn}

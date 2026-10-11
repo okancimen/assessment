@@ -306,7 +306,7 @@ export default async function StrengthsResultsPage({
         />
 
       </main>
-      <PublicFooter />
+      <PublicFooter locale={locale} />
     </div>
   )
 }

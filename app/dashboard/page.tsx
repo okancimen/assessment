@@ -303,7 +303,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
                           {sa?.status === 'completed' ? (
                             <span className="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-600">
                               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" />
-                              Completed
+                              {t.strengthsCompleted}
                             </span>
                           ) : sa?.status === 'in_progress' ? (
                             <span className="inline-flex items-center gap-1.5 text-xs font-medium text-amber-600">
