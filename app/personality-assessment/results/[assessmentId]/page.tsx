@@ -114,7 +114,7 @@ export default async function GuestResultsPage({
 
   if (!result) notFound()
 
-  const t = getPersonalityI18n('en')
+  const t = getPersonalityI18n(locale)
   const traitScores = result.trait_scores as Record<Trait, number>
   const topStrengths = (result.top_strengths as Trait[]).slice(0, 3)
   const childName = assessment.guest_name ?? 'Your child'
@@ -126,8 +126,8 @@ export default async function GuestResultsPage({
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 py-10 space-y-6">
 
         <div>
-          <h1 className="text-2xl font-bold text-[#1d1d1f]">{childName}&apos;s Top Strengths</h1>
-          <p className="text-sm text-[#6e6e73] mt-1">Based on the VIA Character Strengths framework</p>
+          <h1 className="text-2xl font-bold text-[#1d1d1f]">{t.guestResultsTitle(childName)}</h1>
+          <p className="text-sm text-[#6e6e73] mt-1">{t.viaFrameworkSubtitle}</p>
         </div>
 
         {/* Top 3 — free */}
@@ -180,20 +180,20 @@ export default async function GuestResultsPage({
           </div>
           {/* Overlay */}
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/85 backdrop-blur-[2px] px-6 text-center gap-4">
-            <p className="text-base font-bold text-[#1d1d1f]">Unlock all {totalTraits} traits + AI growth report</p>
-            <p className="text-sm text-[#6e6e73] max-w-xs">Create a free account to see the full profile, save it permanently, and get personalised parenting tips from AI.</p>
+            <p className="text-base font-bold text-[#1d1d1f]">{t.unlockTitle(totalTraits)}</p>
+            <p className="text-sm text-[#6e6e73] max-w-xs">{t.unlockDesc}</p>
             <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xs">
               <Link
-                href={`/auth/register?redirect=/personality-assessment/results/${assessmentId}`}
+                href={`/auth/register?redirect=/personality-assessment/results/${assessmentId}${locale !== 'en' ? `?locale=${locale}` : ''}`}
                 className="flex-1 bg-[#4F46E5] hover:bg-indigo-700 text-white font-bold text-sm px-5 py-3 rounded-xl transition-colors text-center"
               >
-                Create free account
+                {t.createAccountBtn}
               </Link>
               <Link
-                href={`/auth/login?redirect=/personality-assessment/results/${assessmentId}`}
+                href={`/auth/login?redirect=/personality-assessment/results/${assessmentId}${locale !== 'en' ? `?locale=${locale}` : ''}`}
                 className="flex-1 border border-[#d2d2d7] text-[#1d1d1f] font-semibold text-sm px-5 py-3 rounded-xl hover:bg-[#f5f5f7] transition-colors text-center"
               >
-                Sign in
+                {t.signInBtn}
               </Link>
             </div>
           </div>

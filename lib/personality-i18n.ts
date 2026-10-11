@@ -57,6 +57,13 @@ export interface PersonalityI18n {
   peerBelow: string
   peerAvgLabel: string
   showMore: string
+  // Guest results gate
+  guestResultsTitle: (n: string) => string
+  viaFrameworkSubtitle: string
+  unlockTitle: (n: number) => string
+  unlockDesc: string
+  createAccountBtn: string
+  signInBtn: string
 }
 
 const EN: PersonalityI18n = {
@@ -151,6 +158,12 @@ const EN: PersonalityI18n = {
   peerBelow: 'Below peers',
   peerAvgLabel: 'Age-group avg.',
   showMore: 'Show all',
+  guestResultsTitle: (n) => `${n}'s Top Strengths`,
+  viaFrameworkSubtitle: 'Based on the VIA Character Strengths framework',
+  unlockTitle: (n) => `Unlock all ${n} traits + AI growth report`,
+  unlockDesc: 'Create a free account to see the full profile, save it permanently, and get personalised parenting tips from AI.',
+  createAccountBtn: 'Create free account',
+  signInBtn: 'Sign in',
 }
 
 const FR: PersonalityI18n = {
@@ -245,6 +258,12 @@ const FR: PersonalityI18n = {
   peerBelow: 'En dessous de la moyenne',
   peerAvgLabel: 'Moy. du groupe',
   showMore: 'Tout afficher',
+  guestResultsTitle: (n) => `Les principales forces de ${n}`,
+  viaFrameworkSubtitle: 'Basé sur le cadre des forces de caractère VIA',
+  unlockTitle: (n) => `Débloquez les ${n} traits + rapport de croissance IA`,
+  unlockDesc: 'Créez un compte gratuit pour voir le profil complet, le sauvegarder et recevoir des conseils parentaux personnalisés de notre IA.',
+  createAccountBtn: 'Créer un compte gratuit',
+  signInBtn: 'Se connecter',
 }
 
 const ES: PersonalityI18n = {
@@ -339,6 +358,12 @@ const ES: PersonalityI18n = {
   peerBelow: 'Por debajo de la media',
   peerAvgLabel: 'Media del grupo',
   showMore: 'Ver todo',
+  guestResultsTitle: (n) => `Las principales fortalezas de ${n}`,
+  viaFrameworkSubtitle: 'Basado en el marco de Fortalezas de Carácter VIA',
+  unlockTitle: (n) => `Desbloquea los ${n} rasgos + informe de crecimiento IA`,
+  unlockDesc: 'Crea una cuenta gratuita para ver el perfil completo, guardarlo y recibir consejos de crianza personalizados de nuestra IA.',
+  createAccountBtn: 'Crear cuenta gratis',
+  signInBtn: 'Iniciar sesión',
 }
 
 const AR: PersonalityI18n = {
@@ -433,6 +458,12 @@ const AR: PersonalityI18n = {
   peerBelow: 'دون المتوسط',
   peerAvgLabel: 'متوسط الفئة',
   showMore: 'عرض الكل',
+  guestResultsTitle: (n) => `أبرز نقاط قوة ${n}`,
+  viaFrameworkSubtitle: 'استناداً إلى إطار نقاط قوة الشخصية VIA',
+  unlockTitle: (n) => `افتح جميع ${n} سمات + تقرير النمو بالذكاء الاصطناعي`,
+  unlockDesc: 'أنشئ حساباً مجانياً لعرض الملف الكامل وحفظه والحصول على نصائح تربوية مخصصة بالذكاء الاصطناعي.',
+  createAccountBtn: 'إنشاء حساب مجاني',
+  signInBtn: 'تسجيل الدخول',
 }
 
 const TR: PersonalityI18n = {
@@ -527,6 +558,12 @@ const TR: PersonalityI18n = {
   peerBelow: 'Yaşıtlarının altında',
   peerAvgLabel: 'Yaş grubu ort.',
   showMore: 'Tümünü gör',
+  guestResultsTitle: (n) => `${n}'nin En Güçlü Yönleri`,
+  viaFrameworkSubtitle: 'VIA Karakter Güçleri çerçevesine dayalıdır',
+  unlockTitle: (n) => `${n} özelliğin tamamını + Yapay Zeka büyüme raporunu açın`,
+  unlockDesc: 'Tam profili görmek, kalıcı olarak kaydetmek ve yapay zekadan kişiselleştirilmiş ebeveynlik tavsiyeleri almak için ücretsiz hesap oluşturun.',
+  createAccountBtn: 'Ücretsiz hesap oluştur',
+  signInBtn: 'Giriş yap',
 }
 
 const RU: PersonalityI18n = {
@@ -621,6 +658,12 @@ const RU: PersonalityI18n = {
   peerBelow: 'Ниже среднего',
   peerAvgLabel: 'Среднее по группе',
   showMore: 'Показать всё',
+  guestResultsTitle: (n) => `Главные сильные стороны ${n}`,
+  viaFrameworkSubtitle: 'На основе структуры VIA «Сильные стороны характера»',
+  unlockTitle: (n) => `Откройте все ${n} черт + отчёт о росте от ИИ`,
+  unlockDesc: 'Создайте бесплатный аккаунт, чтобы увидеть полный профиль, сохранить его и получить персонализированные советы по воспитанию от ИИ.',
+  createAccountBtn: 'Создать бесплатный аккаунт',
+  signInBtn: 'Войти',
 }
 
 const ZH: PersonalityI18n = {
@@ -715,6 +758,12 @@ const ZH: PersonalityI18n = {
   peerBelow: '低于同龄均值',
   peerAvgLabel: '年龄组均值',
   showMore: '查看全部',
+  guestResultsTitle: (n) => `${n}的主要优势`,
+  viaFrameworkSubtitle: '基于VIA性格优势框架',
+  unlockTitle: (n) => `解锁全部${n}个特质 + AI成长报告`,
+  unlockDesc: '创建免费账户，查看完整档案、永久保存，并获取AI个性化育儿建议。',
+  createAccountBtn: '免费创建账户',
+  signInBtn: '登录',
 }
 
 const TRANSLATIONS: Record<PersonalityLocale, PersonalityI18n> = {
