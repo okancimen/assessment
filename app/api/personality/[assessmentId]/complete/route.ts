@@ -1,6 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
-import { NextRequest, NextResponse } from 'next/server'
+import { NextRequest, NextResponse, after } from 'next/server'
 import { cookies } from 'next/headers'
 import {
   getQuestions,
@@ -106,19 +106,22 @@ export async function POST(
     .update({ status: 'completed', completed_at: new Date().toISOString() })
     .eq('id', assessmentId)
 
-  generatePersonalitySummary({
-    childName,
-    age,
-    traitScores: traitScores as Record<Trait, number>,
-    topStrengths,
-    growthAreas,
-    locale,
-  }).then((aiSummary) =>
-    admin.from('personality_results')
-      .update({ ai_summary: aiSummary })
-      .eq('assessment_id', assessmentId)
-  ).catch((err) => {
-    console.error('[personality/complete] summary generation failed', err)
+  after(async () => {
+    try {
+      const aiSummary = await generatePersonalitySummary({
+        childName,
+        age,
+        traitScores: traitScores as Record<Trait, number>,
+        topStrengths,
+        growthAreas,
+        locale,
+      })
+      await admin.from('personality_results')
+        .update({ ai_summary: aiSummary })
+        .eq('assessment_id', assessmentId)
+    } catch (err) {
+      console.error('[personality/complete] summary generation failed', err)
+    }
   })
 
   return NextResponse.json({ ok: true })
