@@ -336,6 +336,21 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
           </section>
         )}
 
+        {/* Benchmark CTA — non-verbal reasoning only */}
+        {slug === 'non-verbal-reasoning' && (
+          <section className="mb-8">
+            <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+              <div className="flex-1">
+                <p className="font-semibold text-gray-900 mb-1">Is your child on track to compete internationally?</p>
+                <p className="text-sm text-gray-600">MAP measures local national norms. Discover how your child ranks against top-tier international peers in English and Maths in under 45 minutes.</p>
+              </div>
+              <CtaLink href="/auth/register" label="nvr_benchmark_cta" className="shrink-0 inline-block bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors text-center">
+                Check Your Child&apos;s Benchmark →
+              </CtaLink>
+            </div>
+          </section>
+        )}
+
         {/* CTA */}
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Try the free {subject.headline} assessment</h2>
