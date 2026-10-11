@@ -141,7 +141,7 @@ export default function KisilikDegerlendirmesiPage() {
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
             Çocuğunuzun gelişim aşamasına mükemmel biçimde uyarlanmış, yapay zeka destekli, bilimsel bir kişilik değerlendirmesi.
           </p>
-          <GuestStartForm />
+          <GuestStartForm locale="tr" />
           <p className="mt-2 text-sm text-[#6e6e73]">
             Zaten hesabınız var mı?{' '}
             <Link href="/tr/auth/login" className="text-[#4F46E5] hover:underline font-medium">Giriş yap</Link>

@@ -140,7 +140,7 @@ export default function XinggePingguPage() {
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
             一项由人工智能驱动的科学性格评估，完美适配您孩子的发育阶段。
           </p>
-          <GuestStartForm />
+          <GuestStartForm locale="zh" />
           <p className="mt-2 text-sm text-[#6e6e73]">
             已有账户？{' '}
             <Link href="/zh/auth/login" className="text-[#4F46E5] hover:underline font-medium">登录</Link>

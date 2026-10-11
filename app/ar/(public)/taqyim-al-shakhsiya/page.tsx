@@ -140,7 +140,7 @@ export default function TaqyimAlShakhsiyaPage() {
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
             تقييم شخصي علمي مدعوم بالذكاء الاصطناعي، مُصمَّم خصيصاً للمرحلة التطورية لطفلك.
           </p>
-          <GuestStartForm />
+          <GuestStartForm locale="ar" />
           <p className="mt-2 text-sm text-[#6e6e73]">
             هل لديك حساب بالفعل؟{' '}
             <Link href="/ar/auth/login" className="text-[#4F46E5] hover:underline font-medium">تسجيل الدخول</Link>

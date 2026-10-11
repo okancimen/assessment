@@ -45,7 +45,6 @@ function RegisterForm() {
     trackEvent('sign_up', { method: 'email' })
     void fetch('/api/user/update-location', { method: 'POST' })
     router.push(redirectTo)
-    router.refresh()
   }
 
   return (

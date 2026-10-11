@@ -6,10 +6,13 @@ import PersonalityQuestionClient from '@/app/strengths/[assessmentId]/question/P
 
 export default async function GuestQuestionPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ assessmentId: string }>
+  searchParams: Promise<{ locale?: string }>
 }) {
   const { assessmentId } = await params
+  const { locale = 'en' } = await searchParams
 
   const cookieStore = await cookies()
   const guestToken = cookieStore.get('pg_tok')?.value
@@ -29,7 +32,7 @@ export default async function GuestQuestionPage({
   }
 
   const tier = assessment.age_tier as 1 | 2 | 3 | 4
-  const questions = getQuestions(tier, 'en')
+  const questions = getQuestions(tier, locale)
 
   const { data: answersData } = await admin
     .from('personality_answers')
@@ -47,7 +50,7 @@ export default async function GuestQuestionPage({
       childName={assessment.guest_name ?? 'your child'}
       questions={questions}
       savedAnswers={savedAnswers}
-      locale="en"
+      locale={locale}
       resultsHref={`/personality-assessment/results/${assessmentId}`}
     />
   )

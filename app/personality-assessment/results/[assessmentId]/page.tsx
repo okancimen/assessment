@@ -28,6 +28,12 @@ const TRAIT_VIRTUE: Record<Trait, string> = {
   hope: 'Transcendence', humor: 'Transcendence', spirituality: 'Transcendence',
 }
 
+function ageToDob(age: number): string {
+  const d = new Date()
+  d.setFullYear(d.getFullYear() - age)
+  return d.toISOString().slice(0, 10)
+}
+
 export default async function GuestResultsPage({
   params,
 }: {
@@ -43,16 +49,32 @@ export default async function GuestResultsPage({
   const admin = createAdminClient()
 
   if (user) {
-    // If pg_tok present and matches this assessment → claim it
+    // If pg_tok present and matches this assessment → claim it inline
     if (guestToken) {
       const { data: guestAssessment } = await admin
         .from('personality_assessments')
-        .select('id')
+        .select('id, guest_name, guest_age')
         .eq('id', assessmentId)
         .eq('guest_token', guestToken)
         .single()
       if (guestAssessment) {
-        redirect(`/api/personality/claim?assessmentId=${assessmentId}`)
+        const approxDob = ageToDob(guestAssessment.guest_age ?? 10)
+        const { data: child } = await admin
+          .from('children')
+          .insert({
+            name: guestAssessment.guest_name ?? 'Child',
+            date_of_birth: approxDob,
+            parent_id: user.id,
+          })
+          .select('id')
+          .single()
+        if (child) {
+          await admin
+            .from('personality_assessments')
+            .update({ child_id: child.id, parent_id: user.id, guest_token: null })
+            .eq('id', assessmentId)
+        }
+        redirect(`/strengths/${assessmentId}/results`)
       }
     }
     // Already owned by this user → full results

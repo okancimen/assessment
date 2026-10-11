@@ -140,7 +140,7 @@ export default function OtsenkaLichnostiPage() {
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
             Оценка характера на базе ИИ, научно обоснованная и идеально адаптированная к возрасту вашего ребёнка.
           </p>
-          <GuestStartForm />
+          <GuestStartForm locale="ru" />
           <p className="mt-2 text-sm text-[#6e6e73]">
             Уже есть аккаунт?{' '}
             <Link href="/ru/auth/login" className="text-[#4F46E5] hover:underline font-medium">Войти</Link>
