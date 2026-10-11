@@ -108,9 +108,12 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
       className="flex flex-col items-center gap-4 w-full max-w-sm mx-auto"
     >
       <div className="flex flex-col sm:flex-row gap-3 w-full">
+        <label htmlFor="guest-name" className="sr-only">{s.namePlaceholder}</label>
         <input
+          id="guest-name"
           type="text"
           name="name"
+          autoComplete="given-name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
@@ -118,9 +121,12 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
           toolparamdescription="The child's first name"
           className="flex-1 px-4 py-3 rounded-xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-white"
         />
+        <label htmlFor="guest-age" className="sr-only">{s.agePlaceholder}</label>
         <input
+          id="guest-age"
           type="number"
           name="age"
+          autoComplete="off"
           value={age}
           onChange={(e) => setAge(e.target.value)}
           required
