@@ -18,11 +18,11 @@ const BASE_URL = "https://eduentry.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Eduentry — Academic & Internship Readiness Assessments",
+    default: "Eduentry — Academic, Personality & Internship Assessments",
     template: "%s | Eduentry",
   },
   description:
-    "Free adaptive assessments for students at every stage — international academic benchmarking for ages 6–17, and internship readiness assessment for high school students aged 14+.",
+    "Free adaptive assessments for students aged 6–20 — international academic benchmarking, VIA character strengths personality assessment, and internship readiness for high school students aged 14+.",
   keywords: [
     "free children assessment",
     "percentile ranking children",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "English test for children",
     "verbal reasoning test",
     "non-verbal reasoning test",
-    "ages 6 to 17",
+    "ages 6 to 20",
     "compare child internationally",
     "free academic assessment",
     "child percentile score",
@@ -56,16 +56,16 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: BASE_URL,
     siteName: "Eduentry",
-    title: "Eduentry — Academic Assessment & Internship Readiness Platform",
+    title: "Eduentry — Academic, Personality & Internship Assessment Platform",
     description:
-      "Free adaptive assessments built on the same science as PISA, GCSE and SAT. Academic benchmarking for ages 6–17 and internship readiness for high school students 14+.",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Eduentry — Academic Assessment & Internship Readiness Platform" }],
+      "Free adaptive assessments for students aged 6–20. Academic benchmarking, VIA character strengths personality assessment, and internship readiness for students 14+.",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Eduentry — Academic, Personality & Internship Assessment Platform" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Eduentry — Academic Assessment & Internship Readiness Platform",
+    title: "Eduentry — Academic, Personality & Internship Assessment Platform",
     description:
-      "Free adaptive assessments for UK and international families. Academic benchmarking ages 6–17 and internship readiness assessment for students 14+.",
+      "Free adaptive assessments for students aged 6–20. Academic benchmarking, VIA personality assessment, and internship readiness for students 14+.",
     images: ["/opengraph-image"],
   },
 };
