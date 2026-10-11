@@ -52,12 +52,14 @@ export default function PersonalityQuestionClient({
   questions,
   savedAnswers,
   locale,
+  resultsHref,
 }: {
   assessmentId: string
   childName: string
   questions: PQuestion[]
   savedAnswers: Record<string, number>
   locale: string
+  resultsHref?: string
 }) {
   const t = getPersonalityI18n(locale)
   const router = useRouter()
@@ -118,11 +120,11 @@ export default function PersonalityQuestionClient({
         setSubmitError(data.error ?? 'Something went wrong. Please try again.')
         return
       }
-      router.push(`/strengths/${assessmentId}/results?locale=${locale}`)
+      router.push(resultsHref ?? `/strengths/${assessmentId}/results?locale=${locale}`)
     } catch (err) {
       if (err instanceof Error && err.name === 'AbortError') {
         // Timed out — results may still be saved, go check
-        router.push(`/strengths/${assessmentId}/results?locale=${locale}`)
+        router.push(resultsHref ?? `/strengths/${assessmentId}/results?locale=${locale}`)
       } else {
         setSubmitError('Network error. Please try again.')
       }

@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { redirect } from 'next/navigation'
+import { createClient } from '@/lib/supabase/server'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
+import GuestStartForm from './GuestStartForm'
 
 const BASE_URL = 'https://eduentry.com'
-const REGISTER_URL = `${BASE_URL}/auth/register`
 
 export const metadata: Metadata = {
   title: 'Child Personality Assessment | VIA Character Strengths Test — Eduentry',
@@ -158,7 +160,20 @@ const TIERS = [
   { label: 'Young Adult', age: 'Ages 18–20', traits: 'All 24 traits', questions: '48 questions', color: 'bg-orange-50 border-orange-200 text-orange-700' },
 ]
 
-export default function PersonalityAssessmentPage() {
+export default async function PersonalityAssessmentPage({
+  searchParams,
+}: {
+  searchParams?: Promise<{ child_id?: string }>
+}) {
+  const sp = await searchParams
+  const childId = sp?.child_id
+
+  if (childId) {
+    const supabase = await createClient()
+    const { data: { user } } = await supabase.auth.getUser()
+    if (user) redirect(`/strengths/${childId}/start`)
+  }
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
@@ -180,13 +195,8 @@ export default function PersonalityAssessmentPage() {
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
             An AI-powered, scientifically backed character assessment tailored perfectly to your child&apos;s developmental age.
           </p>
-          <Link
-            href={REGISTER_URL}
-            className="inline-block bg-[#4F46E5] hover:bg-indigo-700 text-white font-bold text-base px-8 py-4 rounded-xl transition-colors shadow-lg shadow-indigo-200"
-          >
-            Start Free Assessment
-          </Link>
-          <p className="mt-4 text-sm text-[#6e6e73]">
+          <GuestStartForm />
+          <p className="mt-2 text-sm text-[#6e6e73]">
             Already have an account?{' '}
             <Link href="/auth/login" className="text-[#4F46E5] hover:underline font-medium">Sign in</Link>
           </p>
@@ -342,7 +352,7 @@ export default function PersonalityAssessmentPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">Ready to discover who your child truly is?</h2>
           <Link
-            href={REGISTER_URL}
+            href="/personality-assessment"
             className="inline-block bg-white text-[#4F46E5] hover:bg-indigo-50 font-bold text-base px-8 py-4 rounded-xl transition-colors"
           >
             Start Free Assessment

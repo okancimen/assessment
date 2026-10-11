@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 import Button from '@/components/ui/Button'
@@ -10,6 +10,8 @@ import { trackEvent } from '@/lib/analytics'
 
 export default function RegisterPage() {
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const redirectTo = searchParams.get('redirect') ?? '/dashboard'
   const [fullName, setFullName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -42,7 +44,7 @@ export default function RegisterPage() {
 
     trackEvent('sign_up', { method: 'email' })
     void fetch('/api/user/update-location', { method: 'POST' })
-    router.push('/dashboard')
+    router.push(redirectTo)
     router.refresh()
   }
 
