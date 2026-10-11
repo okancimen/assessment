@@ -156,7 +156,6 @@ const ACADEMIC_PROGRAM_SCHEMA_TR = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Akademik Değerlendirme Raporu', credentialCategory: 'certificate' },
   timeToComplete: 'PT90M',
   educationalProgramMode: 'online',
-  audience: { '@type': 'PeopleAudience', suggestedMinAge: 6, suggestedMaxAge: 17 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'Ön koşul gerekmez',
   hasCourse: [
@@ -177,7 +176,6 @@ const INTERNSHIP_PROGRAM_SCHEMA_TR = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Staj Hazırlık Raporu', credentialCategory: 'certificate' },
   timeToComplete: 'PT20M',
   educationalProgramMode: 'online',
-  audience: { '@type': 'PeopleAudience', suggestedMinAge: 14, suggestedMaxAge: 18 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'Ön koşul gerekmez',
   hasCourse: [
@@ -198,7 +196,6 @@ const PERSONALITY_PROGRAM_SCHEMA_TR = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: 'Kişilik Özellikleri Raporu', credentialCategory: 'certificate' },
   timeToComplete: 'PT15M',
   educationalProgramMode: 'online',
-  audience: { '@type': 'PeopleAudience', suggestedMinAge: 6, suggestedMaxAge: 20 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY', availability: 'https://schema.org/InStock' },
   programPrerequisites: 'Ön koşul gerekmez — ebeveyn tarafından çocuk adına doldurulur',
   hasCourse: [

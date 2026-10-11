@@ -141,7 +141,6 @@ const ACADEMIC_PROGRAM_SCHEMA_ZH = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: '学术评估报告', credentialCategory: 'certificate' },
   timeToComplete: 'PT90M',
   educationalProgramMode: 'online',
-  audience: { '@type': 'PeopleAudience', suggestedMinAge: 6, suggestedMaxAge: 17 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'CNY', availability: 'https://schema.org/InStock' },
   programPrerequisites: '无需任何前提条件',
   hasCourse: [
@@ -162,7 +161,6 @@ const INTERNSHIP_PROGRAM_SCHEMA_ZH = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: '实习准备报告', credentialCategory: 'certificate' },
   timeToComplete: 'PT20M',
   educationalProgramMode: 'online',
-  audience: { '@type': 'PeopleAudience', suggestedMinAge: 14, suggestedMaxAge: 18 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'CNY', availability: 'https://schema.org/InStock' },
   programPrerequisites: '无需任何前提条件',
   hasCourse: [
@@ -203,7 +201,6 @@ const PERSONALITY_PROGRAM_SCHEMA_ZH = {
   educationalCredentialAwarded: { '@type': 'EducationalOccupationalCredential', name: '品格优势报告', credentialCategory: 'certificate' },
   timeToComplete: 'PT15M',
   educationalProgramMode: 'online',
-  audience: { '@type': 'PeopleAudience', suggestedMinAge: 6, suggestedMaxAge: 20 },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'CNY', availability: 'https://schema.org/InStock' },
   programPrerequisites: '无需任何前提条件 — 由家长代为填写',
   hasCourse: [
