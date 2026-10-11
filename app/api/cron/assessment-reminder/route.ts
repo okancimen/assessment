@@ -44,6 +44,7 @@ export async function GET(req: NextRequest) {
     `)
     .eq('status', 'in_progress')
     .lt('reminder_count', 3)
+    .not('child_id', 'is', null)
 
   if (error) {
     console.error('[cron/assessment-reminder] fetch error', error.message)

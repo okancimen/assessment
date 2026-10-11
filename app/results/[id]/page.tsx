@@ -42,9 +42,12 @@ export default async function ResultsPage({
   if (!result) notFound()
 
   const assessment = result.assessments as {
-    children: { name: string; parent_id: string; date_of_birth: string }
+    children: { name: string; parent_id: string; date_of_birth: string } | null
     completed_at: string
   }
+
+  // Guest assessments have no child — redirect to the guest partial results page
+  if (!assessment.children) redirect(`/academic-assessment/results/${id}`)
 
   if (!adminMode && assessment.children.parent_id !== user.id) redirect('/dashboard')
 
