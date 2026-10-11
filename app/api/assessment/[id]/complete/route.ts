@@ -25,7 +25,7 @@ export async function POST(
     const supabase = await createClient()
     const { data: { user } } = await supabase.auth.getUser()
     const cookieStore = await cookies()
-    const guestToken = cookieStore.get('ac_tok')?.value
+    const guestToken = cookieStore.get('ac_tok')?.value ?? _request.headers.get('x-guest-token') ?? undefined
 
     if (!user && !guestToken) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 

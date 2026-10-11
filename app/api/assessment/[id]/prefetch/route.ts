@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { cookies } from 'next/headers'
 import { generateQuestion } from '@/lib/claude/questions'
 import { generateInternshipQuestion } from '@/lib/claude/internship-questions'
 import {
@@ -8,40 +10,59 @@ import {
 } from '@/types'
 
 export async function POST(
-  _request: NextRequest,
+  request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const { id } = await params
     const supabase = await createClient()
     const { data: { user } } = await supabase.auth.getUser()
-    if (!user) return NextResponse.json({ ok: false })
+    const cookieStore = await cookies()
+    const guestToken = cookieStore.get('ac_tok')?.value ?? request.headers.get('x-guest-token') ?? undefined
 
-    const { data: session } = await supabase
+    if (!user && !guestToken) return NextResponse.json({ ok: false })
+
+    const db = createAdminClient()
+
+    const { data: session } = await db
       .from('assessment_sessions').select('*').eq('assessment_id', id).single()
     if (!session) return NextResponse.json({ ok: false })
 
-    const { data: assessment } = await supabase
+    const { data: assessment } = await db
       .from('assessments')
-      .select('assessment_type, children(parent_id, student_user_id, date_of_birth)')
+      .select('*, children(parent_id, student_user_id, date_of_birth)')
       .eq('id', id).single()
     if (!assessment) return NextResponse.json({ ok: false })
 
-    const child = assessment.children as unknown as { parent_id: string; student_user_id: string | null; date_of_birth: string }
+    const isGuest = !assessment.child_id && !!assessment.guest_token
     const isInternship = assessment.assessment_type === 'internship'
 
+    if (isGuest) {
+      if (!guestToken || assessment.guest_token !== guestToken) return NextResponse.json({ ok: false })
+      const guestChild = { parent_id: '', student_user_id: null, date_of_birth: guestAgeToDob(assessment.guest_age ?? 10) }
+      return handleAcademicPrefetch(id, db, session, guestChild)
+    }
+
+    if (!user) return NextResponse.json({ ok: false })
+    const child = assessment.children as unknown as { parent_id: string; student_user_id: string | null; date_of_birth: string }
     const authorized = isInternship
       ? child.parent_id === user.id || child.student_user_id === user.id
       : child.parent_id === user.id
     if (!authorized) return NextResponse.json({ ok: false })
 
     if (isInternship) {
-      return handleInternshipPrefetch(id, supabase, session, user.id)
+      return handleInternshipPrefetch(id, db, session, user.id)
     }
-    return handleAcademicPrefetch(id, supabase, session, child)
+    return handleAcademicPrefetch(id, db, session, child)
   } catch {
     return NextResponse.json({ ok: false })
   }
+}
+
+function guestAgeToDob(age: number): string {
+  const d = new Date()
+  d.setFullYear(d.getFullYear() - age)
+  return d.toISOString().slice(0, 10)
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

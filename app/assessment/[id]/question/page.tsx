@@ -7,14 +7,17 @@ import InternshipClient from './InternshipClient'
 
 export default async function QuestionPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ id: string }>
+  searchParams: Promise<{ tk?: string }>
 }) {
   const { id } = await params
+  const { tk } = await searchParams
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   const cookieStore = await cookies()
-  const guestToken = cookieStore.get('ac_tok')?.value
+  const guestToken = cookieStore.get('ac_tok')?.value ?? tk
 
   if (!user && !guestToken) redirect('/auth/login')
 
@@ -44,5 +47,5 @@ export default async function QuestionPage({
   if (assessment.status === 'completed') redirect(`/assessment/${id}/results`)
 
   if (isInternship) return <InternshipClient assessmentId={id} />
-  return <AssessmentClient assessmentId={id} />
+  return <AssessmentClient assessmentId={id} guestToken={isGuest ? guestToken : undefined} />
 }

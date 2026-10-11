@@ -13,13 +13,12 @@ export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
-  void request
   try {
     const { id } = await params
     const supabase = await createClient()
     const { data: { user } } = await supabase.auth.getUser()
     const cookieStore = await cookies()
-    const guestToken = cookieStore.get('ac_tok')?.value
+    const guestToken = cookieStore.get('ac_tok')?.value ?? request.headers.get('x-guest-token') ?? undefined
 
     if (!user && !guestToken) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 

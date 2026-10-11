@@ -8,14 +8,17 @@ import CompleteClient from './CompleteClient'
 
 export default async function CompletePage({
   params,
+  searchParams,
 }: {
   params: Promise<{ id: string }>
+  searchParams: Promise<{ tk?: string }>
 }) {
   const { id } = await params
+  const { tk } = await searchParams
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   const cookieStore = await cookies()
-  const guestToken = cookieStore.get('ac_tok')?.value
+  const guestToken = cookieStore.get('ac_tok')?.value ?? tk
 
   const db = createAdminClient()
 
@@ -32,7 +35,7 @@ export default async function CompletePage({
   if (isGuest) {
     if (!guestToken || assessment.guest_token !== guestToken) redirect('/academic-assessment')
     if (assessment.status === 'completed') redirect(`/assessment/${id}/results`)
-    return <CompleteClient assessmentId={id} childName={assessment.guest_name ?? 'there'} />
+    return <CompleteClient assessmentId={id} childName={assessment.guest_name ?? 'there'} guestToken={guestToken} />
   }
 
   if (!user) redirect('/auth/login')

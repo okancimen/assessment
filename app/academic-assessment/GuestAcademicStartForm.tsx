@@ -93,7 +93,7 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
       return
     }
     // Set cookie client-side as well to guarantee it is present before navigation
-    window.location.href = `/api/assessment/guest-enter?id=${data.assessmentId}&token=${data.guestToken}`
+    window.location.href = `/assessment/${data.assessmentId}/question?tk=${data.guestToken}`
   }
 
   return (

@@ -8,9 +8,10 @@ import { trackEvent } from '@/lib/analytics'
 interface CompleteClientProps {
   assessmentId: string
   childName: string
+  guestToken?: string
 }
 
-export default function CompleteClient({ assessmentId, childName }: CompleteClientProps) {
+export default function CompleteClient({ assessmentId, childName, guestToken }: CompleteClientProps) {
   const router = useRouter()
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
@@ -20,6 +21,7 @@ export default function CompleteClient({ assessmentId, childName }: CompleteClie
       setSubmitting(true)
       const res = await fetch(`/api/assessment/${assessmentId}/complete`, {
         method: 'POST',
+        headers: guestToken ? { 'X-Guest-Token': guestToken } : {},
       })
 
       if (!res.ok) {

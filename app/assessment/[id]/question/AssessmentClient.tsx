@@ -168,8 +168,12 @@ type FetchResult =
 
 // ── Main component ────────────────────────────────────────────────────────────
 
-export default function AssessmentClient({ assessmentId }: { assessmentId: string }) {
+export default function AssessmentClient({ assessmentId, guestToken }: { assessmentId: string; guestToken?: string }) {
   const router = useRouter()
+
+  function guestHeaders(): HeadersInit {
+    return guestToken ? { 'X-Guest-Token': guestToken } : {}
+  }
 
   type Phase = 'warmup' | 'loading' | 'question' | 'break' | 'error'
   const [phase, setPhase]               = useState<Phase>('warmup')
@@ -206,7 +210,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
   function applyResult(result: FetchResult) {
     if (result.type === 'complete') {
-      router.push(`/assessment/${assessmentId}/complete`)
+      router.push(`/assessment/${assessmentId}/complete${guestToken ? `?tk=${guestToken}` : ''}`)
     } else if (result.type === 'error') {
       setError(result.message)
       setPhase('error')
@@ -222,7 +226,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
   async function doFetch(retries = 2): Promise<FetchResult> {
     try {
-      const res = await fetch(`/api/assessment/${assessmentId}/question`)
+      const res = await fetch(`/api/assessment/${assessmentId}/question`, { headers: guestHeaders() })
       const data = await res.json()
       if (!res.ok) {
         const isOverloaded = typeof data.error === 'string' && data.error.includes('overloaded')
@@ -256,7 +260,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
     setPhase('loading')
     setQuestion(null)
     try {
-      const res = await fetch(`/api/assessment/${assessmentId}/back`, { method: 'POST' })
+      const res = await fetch(`/api/assessment/${assessmentId}/back`, { method: 'POST', headers: guestHeaders() })
       const data = await res.json()
       if (!res.ok) { setError(data.error || 'Could not go back'); setPhase('error'); return }
       setQuestion(data.question)
@@ -301,19 +305,19 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
   useEffect(() => {
     if (!question) return
-    fetch(`/api/assessment/${assessmentId}/prefetch`, { method: 'POST' }).catch(() => {})
+    fetch(`/api/assessment/${assessmentId}/prefetch`, { method: 'POST', headers: guestHeaders() }).catch(() => {})
   }, [question?.id, assessmentId])
 
   async function handleAnswer(selectedAnswer: string, timeTaken: number) {
     if (!question) return null
     const res = await fetch(`/api/assessment/${assessmentId}/answer`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...guestHeaders() },
       body: JSON.stringify({ question_id: question.id, selected_answer: selectedAnswer, time_taken_seconds: timeTaken }),
     })
     const data = await res.json()
     if (data.all_complete) {
-      router.push(`/assessment/${assessmentId}/complete`)
+      router.push(`/assessment/${assessmentId}/complete${guestToken ? `?tk=${guestToken}` : ''}`)
       return null
     }
     return {

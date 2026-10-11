@@ -1,26 +1,43 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { cookies } from 'next/headers'
 import { Subject } from '@/types'
 
 export async function POST(
-  _req: NextRequest,
+  req: NextRequest,
   { params }: { params: Promise<{ id: string }> },
 ) {
   const { id } = await params
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  const cookieStore = await cookies()
+  const guestToken = cookieStore.get('ac_tok')?.value ?? req.headers.get('x-guest-token') ?? undefined
 
-  const { data: assessment } = await supabase
+  if (!user && !guestToken) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+
+  const db = createAdminClient()
+
+  const { data: assessment } = await db
     .from('assessments')
     .select('*, children(parent_id)')
     .eq('id', id)
     .single()
   if (!assessment) return NextResponse.json({ error: 'Not found' }, { status: 404 })
-  if ((assessment.children as { parent_id: string }).parent_id !== user.id)
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
-  const { data: session } = await supabase
+  const isGuest = !assessment.child_id && !!assessment.guest_token
+
+  if (isGuest) {
+    if (!guestToken || assessment.guest_token !== guestToken) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    }
+  } else {
+    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    if ((assessment.children as { parent_id: string }).parent_id !== user.id)
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
+
+  const { data: session } = await db
     .from('assessment_sessions')
     .select('*')
     .eq('assessment_id', id)
@@ -32,7 +49,7 @@ export async function POST(
   const prevIndex = session.question_index - 1
   const currentSubject = session.current_subject as Subject
 
-  const { data: aqRecord } = await supabase
+  const { data: aqRecord } = await db
     .from('assessment_questions')
     .select('question_id, is_correct')
     .eq('assessment_id', id)
@@ -41,7 +58,7 @@ export async function POST(
     .single()
   if (!aqRecord) return NextResponse.json({ error: 'Previous question not found' }, { status: 404 })
 
-  const { data: question } = await supabase
+  const { data: question } = await db
     .from('questions')
     .select('*')
     .eq('id', aqRecord.question_id)
@@ -67,13 +84,13 @@ export async function POST(
 
   subjectScores[currentSubject] = ss
 
-  await supabase
+  await db
     .from('assessment_questions')
     .update({ selected_answer: null, is_correct: null, answered_at: null, time_taken_seconds: null })
     .eq('assessment_id', id)
     .eq('question_id', aqRecord.question_id)
 
-  await supabase
+  await db
     .from('assessment_sessions')
     .update({ question_index: prevIndex, subject_scores: subjectScores, updated_at: new Date().toISOString() })
     .eq('assessment_id', id)
