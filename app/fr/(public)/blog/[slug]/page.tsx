@@ -118,6 +118,22 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
       }
     : null
 
+  const howToSchema = post.howToSteps && post.howToSteps.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: post.title,
+        description: post.description,
+        totalTime: `PT${post.readTime?.match(/\d+/)?.[0] ?? 8}M`,
+        step: post.howToSteps.map((s: { name: string; text: string }, i: number) => ({
+          '@type': 'HowToStep',
+          position: i + 1,
+          name: s.name,
+          text: s.text,
+        })),
+      }
+    : null
+
   const related = getRelatedFromPosts(BLOG_POSTS_FR, post, 5)
 
   return (
@@ -125,6 +141,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      {howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />}
 
       <nav className="text-sm text-[#6e6e73] mb-8">
         <Link href="/fr" className="hover:text-[#1d1d1f]">Accueil</Link>
