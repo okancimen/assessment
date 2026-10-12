@@ -7,6 +7,8 @@ import UsersTable from '@/components/admin/UsersTable'
 import { AdminGrowthChart, AdminAssessmentsChart, AdminFunnelChart } from '@/components/admin/AdminCharts'
 import type { DailyPoint } from '@/components/admin/GrowthLineChart'
 
+export const dynamic = 'force-dynamic'
+
 // ── Helpers ────────────────────────────────────────────────────────────────
 
 function toDateStr(d: Date) {
@@ -297,7 +299,7 @@ export default async function AdminPage({
           <h2 className="text-sm font-semibold" style={{ color: '#0F172A' }}>Registered users</h2>
           <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>{registeredUsers.length.toLocaleString()} registered in {periodLabel}</p>
         </div>
-        <UsersTable users={registeredUsers} />
+        <UsersTable key={`${from}-${to}`} users={registeredUsers} />
       </div>
 
     </main>
