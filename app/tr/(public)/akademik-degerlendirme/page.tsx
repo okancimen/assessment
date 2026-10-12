@@ -83,10 +83,13 @@ export default function TrAkademikDegerlendirmePage() {
             <span className="text-[#4F46E5]">Gerçek Seviyesini Öğrenin</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            İngilizce, Matematik, Sözel ve Sözel Olmayan Muhakeme'yi kapsayan, İngiltere seçici okul sınavlarıyla aynı ölçekte puanlanan 60 soruluk uyarlamalı test.
+            İngilizce, Matematik, Sözel ve Sözel Olmayan Muhakemeyi kapsayan uyarlanabilir bir değerlendirme — İngiltere&apos;deki seçici okullarla aynı standart ölçekte puanlanır. Hesap gerekmez ve ilerlemeniz otomatik kaydedilir.
           </p>
           <GuestAcademicStartForm locale="tr" />
-          <p className="mt-2 text-sm text-[#6e6e73]">
+          <p className="mt-3 text-sm text-[#6e6e73]">
+            Başlamak için kayıt gerekmez · istediğiniz zaman duraklatıp devam edin
+          </p>
+          <p className="mt-1 text-sm text-[#6e6e73]">
             Zaten hesabınız var mı?{' '}
             <Link href="/auth/login" className="text-[#4F46E5] hover:underline font-medium">Giriş yapın</Link>
           </p>

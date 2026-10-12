@@ -83,10 +83,13 @@ export default function EsEvaluacionAcademicaPage() {
             <span className="text-[#4F46E5]">Real de Tu Hijo</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            60 preguntas adaptativas sobre inglés, matemáticas, razonamiento verbal y no verbal — puntuadas en la misma escala estandarizada que los colegios selectivos del Reino Unido.
+            Una evaluación adaptativa que cubre inglés, matemáticas, razonamiento verbal y no verbal — puntuada en la misma escala estandarizada que los colegios selectivos del Reino Unido. Sin cuenta, y tu progreso se guarda automáticamente.
           </p>
           <GuestAcademicStartForm locale="es" />
-          <p className="mt-2 text-sm text-[#6e6e73]">
+          <p className="mt-3 text-sm text-[#6e6e73]">
+            Sin registro para empezar · pausa y reanuda cuando quieras
+          </p>
+          <p className="mt-1 text-sm text-[#6e6e73]">
             ¿Ya tienes cuenta?{' '}
             <Link href="/auth/login" className="text-[#4F46E5] hover:underline font-medium">Iniciar sesión</Link>
           </p>

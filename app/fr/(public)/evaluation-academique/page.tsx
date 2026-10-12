@@ -83,10 +83,13 @@ export default function FrEvaluationAcademiquePage() {
             <span className="text-[#4F46E5]">Académique de Votre Enfant</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            60 questions adaptatives couvrant l&apos;anglais, les mathématiques, le raisonnement verbal et non-verbal — évaluées sur la même échelle standardisée que les écoles sélectives britanniques.
+            Une évaluation adaptative couvrant l&apos;anglais, les mathématiques, le raisonnement verbal et non-verbal — évaluée sur la même échelle standardisée que les écoles sélectives britanniques. Aucun compte requis, et votre progression est enregistrée automatiquement.
           </p>
           <GuestAcademicStartForm locale="fr" />
-          <p className="mt-2 text-sm text-[#6e6e73]">
+          <p className="mt-3 text-sm text-[#6e6e73]">
+            Aucune inscription pour commencer · pause et reprise à tout moment
+          </p>
+          <p className="mt-1 text-sm text-[#6e6e73]">
             Vous avez déjà un compte ?{' '}
             <Link href="/auth/login" className="text-[#4F46E5] hover:underline font-medium">Se connecter</Link>
           </p>

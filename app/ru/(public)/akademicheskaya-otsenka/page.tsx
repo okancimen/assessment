@@ -83,10 +83,13 @@ export default function RuAkademicheskayaOtsenkaPage() {
             <span className="text-[#4F46E5]">Уровень Вашего Ребёнка</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            60 адаптивных вопросов по английскому языку, математике, вербальному и невербальному мышлению — с оценкой по той же стандартизированной шкале, что и в британских отборочных школах.
+            Адаптивная оценка по английскому языку, математике, вербальному и невербальному мышлению — по той же стандартизированной шкале, что и в британских отборочных школах. Аккаунт не нужен, а ваш прогресс сохраняется автоматически.
           </p>
           <GuestAcademicStartForm locale="ru" />
-          <p className="mt-2 text-sm text-[#6e6e73]">
+          <p className="mt-3 text-sm text-[#6e6e73]">
+            Регистрация не нужна · пауза и продолжение в любой момент
+          </p>
+          <p className="mt-1 text-sm text-[#6e6e73]">
             Уже есть аккаунт?{' '}
             <Link href="/auth/login" className="text-[#4F46E5] hover:underline font-medium">Войти</Link>
           </p>

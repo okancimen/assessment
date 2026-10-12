@@ -83,10 +83,13 @@ export default function ZhXueshuPingguPage() {
             <span className="text-[#4F46E5]">学业能力水平</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            60道自适应题目，覆盖英语、数学、语言推理与非语言推理——采用英国精英学校入学考试相同的标准化评分体系。
+            一项自适应测评，涵盖英语、数学、语言推理与非语言推理——采用英国精英学校相同的标准化评分体系。无需账户，进度会自动保存。
           </p>
           <GuestAcademicStartForm locale="zh" />
-          <p className="mt-2 text-sm text-[#6e6e73]">
+          <p className="mt-3 text-sm text-[#6e6e73]">
+            无需注册即可开始 · 随时暂停和继续
+          </p>
+          <p className="mt-1 text-sm text-[#6e6e73]">
             已有账号？{' '}
             <Link href="/auth/login" className="text-[#4F46E5] hover:underline font-medium">立即登录</Link>
           </p>

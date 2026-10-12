@@ -83,10 +83,13 @@ export default function ArTaqyimAcadimiPage() {
             <span className="text-[#4F46E5]">الحقيقي لطفلك</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            60 سؤالاً تكيفياً في اللغة الإنجليزية والرياضيات والاستدلال اللفظي وغير اللفظي — يُقيَّم على نفس المقياس المعياري المستخدم في المدارس الانتقائية البريطانية.
+            تقييم تكيفي يغطي اللغة الإنجليزية والرياضيات والاستدلال اللفظي وغير اللفظي — يُقيَّم على نفس المقياس المعياري المستخدم في المدارس الانتقائية البريطانية. لا حاجة لحساب، ويُحفظ تقدمك تلقائياً.
           </p>
           <GuestAcademicStartForm locale="ar" />
-          <p className="mt-2 text-sm text-[#6e6e73]">
+          <p className="mt-3 text-sm text-[#6e6e73]">
+            لا حاجة للتسجيل للبدء · أوقف واستأنف في أي وقت
+          </p>
+          <p className="mt-1 text-sm text-[#6e6e73]">
             لديك حساب بالفعل؟{' '}
             <Link href="/auth/login" className="text-[#4F46E5] hover:underline font-medium">تسجيل الدخول</Link>
           </p>
