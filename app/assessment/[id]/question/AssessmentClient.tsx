@@ -233,15 +233,12 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
       const res = await fetch(`/api/assessment/${assessmentId}/question`, { headers: guestHeaders() })
       const data = await res.json()
       if (!res.ok) {
-        const isOverloaded = typeof data.error === 'string' && data.error.includes('overloaded')
-        if (isOverloaded && retries > 0) {
+        // Server classifies the failure; only transient "overloaded" is worth retrying.
+        if (data.code === 'overloaded' && retries > 0) {
           await new Promise((r) => setTimeout(r, 3000))
           return doFetch(retries - 1)
         }
-        const message = isOverloaded
-          ? 'Our AI is very busy right now. Please wait a moment and try again.'
-          : data.error || 'Failed to load question'
-        return { type: 'error', message }
+        return { type: 'error', message: data.error || 'Failed to load question' }
       }
       if (data.completed) return { type: 'complete' }
       if (data.subject_break) {

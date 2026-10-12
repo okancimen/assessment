@@ -5,6 +5,7 @@ import { cookies } from 'next/headers'
 import { generateQuestion } from '@/lib/claude/questions'
 import { generateInternshipQuestion } from '@/lib/claude/internship-questions'
 import { estimateTheta, thetaToStandardized } from '@/lib/assessment/adaptive'
+import { classifyAiError } from '@/lib/claude/errors'
 import {
   Subject, SUBJECTS, QUESTIONS_PER_SUBJECT,
   InternshipTrack, InternshipSubject, getInternshipSubjects, INTERNSHIP_QUESTIONS_PER_SUBJECT,
@@ -70,9 +71,10 @@ export async function GET(
     }
     return handleAcademicQuestion(id, db, assessment, child, session)
   } catch (err) {
-    const message = err instanceof Error ? err.message : String(err)
-    console.error('[assessment/question]', message)
-    return NextResponse.json({ error: message }, { status: 500 })
+    const { kind, status, message } = classifyAiError(err)
+    // Log the raw cause for ops; return only the user-safe message + code.
+    console.error('[assessment/question]', kind, err instanceof Error ? err.message : String(err))
+    return NextResponse.json({ error: message, code: kind }, { status })
   }
 }
 
