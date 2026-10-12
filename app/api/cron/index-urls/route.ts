@@ -24,6 +24,19 @@ export async function GET(req: NextRequest) {
   )
   if (!valid) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
+  // ?urls=https://...,...  — submit specific URLs directly (bypasses date filter)
+  const rawUrls = req.nextUrl.searchParams.get('urls')
+  if (rawUrls) {
+    const urls = rawUrls.split(',').map(u => u.trim()).filter(Boolean)
+    const start = Date.now()
+    const results = await notifyUrls(urls)
+    const duration_ms = Date.now() - start
+    const ok = results.filter(r => r.ok).length
+    const failed = results.filter(r => !r.ok)
+    await logCron({ job: 'index-urls', submitted: ok, total: urls.length, failed: failed.length, errors: failed, duration_ms, is_sunday: false })
+    return NextResponse.json({ submitted: ok, total: urls.length, failed: failed.length, errors: failed.slice(0, 3) })
+  }
+
   const isSunday = new Date().getDay() === 0
   const allEntries = getSitemap()
 

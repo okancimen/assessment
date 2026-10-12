@@ -1,5 +1,5 @@
 // Özlem Çimen writes the blog; one definition for the byline, the author box and the structured data
-const PROFILE_URL = 'https://www.edualist.com/en/about/'
+const PROFILE_URL = 'https://eduentry.com/about#ozlem-cimen'
 
 export const AUTHOR_SCHEMA = {
   '@type': 'Person',

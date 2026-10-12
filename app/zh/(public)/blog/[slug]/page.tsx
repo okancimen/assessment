@@ -3,6 +3,8 @@ import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
 import CtaLink from '@/components/ui/CtaLink'
 import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
+import { RelatedPostsGrid } from '@/components/blog/RelatedPostsGrid'
+import { getRelatedFromPosts } from '@/lib/related-posts'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS_ZH, getChinesePostBySlug } from '@/app/blog/posts-zh'
 import { getChineseBlogContent } from '@/app/blog/content-zh'
@@ -113,13 +115,7 @@ export default async function ZHBlogPostPage({ params }: { params: Promise<{ slu
       }
     : null
 
-  const related = BLOG_POSTS_ZH
-    .filter((p) => p.slug !== slug)
-    .map((p) => ({ post: p, score: p.tags.filter((t: string) => post.tags.includes(t)).length }))
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 3)
-    .map((s) => s.post)
+  const related = getRelatedFromPosts(BLOG_POSTS_ZH, post, 5)
 
   return (
     <main lang="zh" className="max-w-3xl mx-auto px-6 py-16">
@@ -222,22 +218,7 @@ export default async function ZHBlogPostPage({ params }: { params: Promise<{ slu
         </section>
       )}
 
-      {/* Related posts */}
-      {related.length > 0 && (
-        <section className="mt-14">
-          <h2 className="text-xl font-bold text-[#1d1d1f] mb-5">相关文章</h2>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {related.map((p) => (
-              <Link key={p.slug} href={`/zh/blog/${p.slug}`} className="group border border-[#d2d2d7] rounded-2xl p-5 hover:border-[#4F46E5]/40 hover:shadow-sm transition-all">
-                <h3 className="font-semibold text-[#1d1d1f] text-sm leading-snug group-hover:text-[#4F46E5] transition-colors mb-2">
-                  {p.shortTitle}
-                </h3>
-                <div className="text-xs text-[#6e6e73]">{p.readTime}</div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
+      <RelatedPostsGrid posts={related} basePath="/zh/blog" heading="相关文章" />
     </main>
   )
 }

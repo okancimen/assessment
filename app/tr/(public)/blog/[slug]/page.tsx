@@ -3,6 +3,8 @@ import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
 import CtaLink from '@/components/ui/CtaLink'
 import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
+import { RelatedPostsGrid } from '@/components/blog/RelatedPostsGrid'
+import { getRelatedFromPosts } from '@/lib/related-posts'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS_TR, getTurkishPostBySlug } from '@/app/blog/posts-tr'
 import { getTurkishBlogContent } from '@/app/blog/content-tr'
@@ -119,13 +121,7 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
       }
     : null
 
-  const related = BLOG_POSTS_TR
-    .filter((p) => p.slug !== slug)
-    .map((p) => ({ post: p, score: p.tags.filter((t: string) => post.tags.includes(t)).length }))
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 3)
-    .map((s) => s.post)
+  const related = getRelatedFromPosts(BLOG_POSTS_TR, post, 5)
 
   return (
     <main lang="tr" className="max-w-3xl mx-auto px-6 py-16">
@@ -197,30 +193,7 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
         </div>
       </section>
 
-      {related.length > 0 && (
-        <section className="mt-16 mb-12">
-          <h2 className="text-xl font-bold text-[#1d1d1f] mb-6">İlgili yazılar</h2>
-          <div className="grid sm:grid-cols-3 gap-4">
-            {related.map((p) => (
-              <Link
-                key={p.slug}
-                href={`/tr/blog/${p.slug}`}
-                className="group border border-[#d2d2d7] rounded-xl p-5 hover:border-[#4F46E5]/40 hover:bg-[#eef2ff]/40 transition-colors flex flex-col"
-              >
-                <div className="flex flex-wrap gap-1.5 mb-3">
-                  {p.tags.slice(0, 2).map((tag: string) => (
-                    <span key={tag} className="text-xs font-medium text-[#4F46E5] bg-[#eef2ff] rounded-full px-2.5 py-0.5">{tag}</span>
-                  ))}
-                </div>
-                <h3 className="font-semibold text-[#1d1d1f] text-sm leading-snug mb-2 group-hover:text-[#4F46E5] transition-colors flex-1">
-                  {p.shortTitle}
-                </h3>
-                <div className="text-xs text-[#6e6e73]">{p.readTime}</div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
+      <RelatedPostsGrid posts={related} basePath="/tr/blog" heading="İlgili yazılar" />
 
       <section className="mt-16 mb-8 bg-[#4F46E5] rounded-2xl p-12 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">{post.cta?.heading ?? 'Staj hazırlığını keşfet'}</h2>

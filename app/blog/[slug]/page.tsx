@@ -3,6 +3,7 @@ import { brandedTitle } from '@/lib/seo'
 import { ELEVEN_PLUS_GUIDE_SLUGS, ElevenPlusClusterBox } from '@/app/grammar-schools/cluster'
 import Link from 'next/link'
 import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
+import { RelatedPostsGrid } from '@/components/blog/RelatedPostsGrid'
 import { notFound, redirect } from 'next/navigation'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
@@ -111,7 +112,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url,
       publishedTime: post.date,
       modifiedTime: post.dateModified ?? post.date,
-      authors: ['https://www.edualist.com/en/about/'],
+      authors: ['https://eduentry.com/about#ozlem-cimen'],
       images: [{ url: `/blog/${slug}/opengraph-image`, width: 1200, height: 630, alt: post.shortTitle }],
     },
     twitter: {
@@ -318,31 +319,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           )
         })()}
 
-        {/* Related articles */}
-        {related.length > 0 && (
-          <section className="mt-16 mb-12">
-            <h2 className="text-xl font-bold text-gray-900 mb-6">Related articles</h2>
-            <div className="grid sm:grid-cols-3 gap-4">
-              {related.map((p) => (
-                <Link
-                  key={p.slug}
-                  href={`/blog/${p.slug}`}
-                  className="group border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/40 transition-colors flex flex-col"
-                >
-                  <div className="flex flex-wrap gap-1.5 mb-3">
-                    {p.tags.slice(0, 2).map((tag) => (
-                      <span key={tag} className="text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full px-2.5 py-0.5">{tag}</span>
-                    ))}
-                  </div>
-                  <h3 className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-indigo-700 transition-colors flex-1">
-                    {p.shortTitle}
-                  </h3>
-                  <div className="text-xs text-gray-500">{p.readTime}</div>
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
+        <RelatedPostsGrid posts={related} basePath="/blog" heading="Related articles" />
 
         {/* CTA */}
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">

@@ -2516,17 +2516,19 @@ export function getPostBySlug(slug: string) {
   return BLOG_POSTS.find((p) => p.slug === slug)
 }
 
-export function getRelatedPosts(slug: string, count = 3): BlogPostMeta[] {
+export function getRelatedPosts(slug: string, count = 5): BlogPostMeta[] {
   const post = getPostBySlug(slug)
   if (!post) return []
-  const others = BLOG_POSTS.filter((p) => p.slug !== slug)
-  return others
-    .map((p) => ({
-      post: p,
-      score: p.tags.filter((t) => post.tags.includes(t)).length,
-    }))
-    .filter(({ score }) => score > 0)
+  const others = BLOG_POSTS.filter(p => p.slug !== slug)
+  const scored = others
+    .map(p => ({ p, score: p.tags.filter(t => post.tags.includes(t)).length }))
     .sort((a, b) => b.score - a.score)
-    .slice(0, count)
-    .map((s) => s.post)
+  const matched = scored.filter(({ score }) => score > 0).slice(0, count).map(s => s.p)
+  if (matched.length >= count) return matched
+  const matchedSlugs = new Set(matched.map(p => p.slug))
+  const recent = others
+    .filter(p => !matchedSlugs.has(p.slug))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, count - matched.length)
+  return [...matched, ...recent]
 }
