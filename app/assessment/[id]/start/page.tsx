@@ -70,7 +70,7 @@ export default async function AssessmentStartPage({
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-[#4F46E5]">✓</span>
-                <span>Your <strong>full report unlocks</strong> as soon as you finish — no need to do it all in one sitting</span>
+                <span>See a <strong>score after each subject</strong> — your full report unlocks when you finish</span>
               </li>
             </ul>
           </div>

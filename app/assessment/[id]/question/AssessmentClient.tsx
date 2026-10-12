@@ -6,6 +6,7 @@ import { Question, Subject, SUBJECT_LABELS, SUBJECTS, QUESTIONS_PER_SUBJECT } fr
 import ProgressBar from '@/components/assessment/ProgressBar'
 import QuestionCard from '@/components/assessment/QuestionCard'
 import Button from '@/components/ui/Button'
+import { getScoreLabel, getScoreColor } from '@/lib/assessment/adaptive'
 
 const SECTION_TIME = QUESTIONS_PER_SUBJECT * 120 // seconds per subject
 
@@ -151,9 +152,15 @@ interface SessionState {
   completed_subjects: Subject[]
 }
 
+interface BreakScore {
+  completedSubject: Subject
+  standardized: number
+  percentage: number
+}
+
 type FetchResult =
   | { type: 'question'; question: Question; session: SessionState }
-  | { type: 'break'; nextSubject: Subject }
+  | { type: 'break'; nextSubject: Subject; score: BreakScore | null }
   | { type: 'complete' }
   | { type: 'error'; message: string }
 
@@ -176,6 +183,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   const [question, setQuestion]         = useState<Question | null>(null)
   const [session, setSession]           = useState<SessionState | null>(null)
   const [subjectBreak, setSubjectBreak] = useState<Subject | null>(null)
+  const [breakScore, setBreakScore]     = useState<BreakScore | null>(null)
   const [error, setError]               = useState('')
 
   // Section timer
@@ -211,6 +219,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
       setPhase('error')
     } else if (result.type === 'break') {
       setSubjectBreak(result.nextSubject)
+      setBreakScore(result.score)
       setPhase('break')
     } else {
       setQuestion(result.question)
@@ -235,7 +244,16 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
         return { type: 'error', message }
       }
       if (data.completed) return { type: 'complete' }
-      if (data.subject_break) return { type: 'break', nextSubject: data.next_subject }
+      if (data.subject_break) {
+        const score: BreakScore | null = data.completed_subject
+          ? {
+              completedSubject: data.completed_subject,
+              standardized: data.subject_standardized,
+              percentage: data.subject_percentage,
+            }
+          : null
+        return { type: 'break', nextSubject: data.next_subject, score }
+      }
       return { type: 'question', question: data.question, session: data.session }
     } catch {
       return { type: 'error', message: 'Network error. Please try again.' }
@@ -364,6 +382,26 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
                 : `Great progress. Next up: ${SUBJECT_LABELS[subjectBreak]}.`}
             </p>
           </div>
+
+          {/* Revealed score for the subject just completed */}
+          {breakScore && (
+            <div className="rounded-2xl border border-[#d2d2d7] bg-[#f5f5f7] p-5">
+              <p className="text-xs text-[#6e6e73] mb-1">
+                {SUBJECT_LABELS[breakScore.completedSubject]} — standardised score
+              </p>
+              <div className="flex items-baseline justify-center gap-2">
+                <span className="text-4xl font-bold tabular-nums" style={{ color: getScoreColor(breakScore.standardized) }}>
+                  {breakScore.standardized}
+                </span>
+                <span className="text-sm font-medium" style={{ color: getScoreColor(breakScore.standardized) }}>
+                  {getScoreLabel(breakScore.standardized)}
+                </span>
+              </div>
+              <p className="text-[11px] text-[#6e6e73] mt-1">
+                {breakScore.percentage}% correct · mean 100, where 100 is average for age
+              </p>
+            </div>
+          )}
 
           {/* Subject progress segments */}
           <div className="flex items-center gap-1.5">

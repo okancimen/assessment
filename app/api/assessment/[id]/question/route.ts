@@ -4,6 +4,7 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { cookies } from 'next/headers'
 import { generateQuestion } from '@/lib/claude/questions'
 import { generateInternshipQuestion } from '@/lib/claude/internship-questions'
+import { estimateTheta, thetaToStandardized } from '@/lib/assessment/adaptive'
 import {
   Subject, SUBJECTS, QUESTIONS_PER_SUBJECT,
   InternshipTrack, InternshipSubject, getInternshipSubjects, INTERNSHIP_QUESTIONS_PER_SUBJECT,
@@ -87,6 +88,15 @@ async function handleAcademicQuestion(id: string, supabase: any, assessment: any
     const nextSubjectIndex = session.subject_index + 1
     if (nextSubjectIndex >= SUBJECTS.length) return NextResponse.json({ completed: true })
 
+    // Score the subject just finished (same maths as the final report) so the
+    // break screen can reveal it as a reward.
+    const completedSubject = session.current_subject as Subject
+    const s = session.subject_scores?.[completedSubject] as
+      | { correct: number; total: number; responses: { difficulty: number; correct: boolean }[] }
+      | undefined
+    const subjectStandardized = thetaToStandardized(estimateTheta(s?.responses ?? []))
+    const subjectPercentage = s && s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0
+
     const nextSubject = SUBJECTS[nextSubjectIndex]
     const age = Math.floor((Date.now() - new Date(child.date_of_birth).getTime()) / (365.25 * 24 * 60 * 60 * 1000))
 
@@ -98,7 +108,14 @@ async function handleAcademicQuestion(id: string, supabase: any, assessment: any
       updated_at: new Date().toISOString(),
     }).eq('assessment_id', id)
 
-    return NextResponse.json({ subject_break: true, next_subject: nextSubject, age })
+    return NextResponse.json({
+      subject_break: true,
+      next_subject: nextSubject,
+      completed_subject: completedSubject,
+      subject_standardized: subjectStandardized,
+      subject_percentage: subjectPercentage,
+      age,
+    })
   }
 
   const prefetch = session.prefetched_question
