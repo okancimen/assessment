@@ -92,6 +92,24 @@ export async function POST(
   }
 
   const questions = getQuestions(ageTier)
+  const validKeys = new Set(questions.map((q) => q.key))
+
+  // Self-heal: the client sends its full answer map with the submit. Per-question
+  // saves during the quiz are fire-and-forget and can silently drop (network blip,
+  // expired token), which previously left the DB short and blocked completion.
+  // Upsert whatever the client has before validating so a dropped save can't
+  // strand a finished assessment. (Question keys are locale-independent.)
+  const bodyAnswers: Record<string, number> =
+    body.answers && typeof body.answers === 'object' ? body.answers : {}
+  const toUpsert = Object.entries(bodyAnswers)
+    .filter(([k, v]) => validKeys.has(k) && typeof v === 'number' && v >= 1 && v <= 5)
+    .map(([question_key, score]) => ({ assessment_id: assessmentId, question_key, score }))
+  if (toUpsert.length > 0) {
+    await admin
+      .from('personality_answers')
+      .upsert(toUpsert, { onConflict: 'assessment_id,question_key' })
+  }
+
   const { data: answersData } = await admin
     .from('personality_answers')
     .select('question_key, score')
@@ -99,10 +117,13 @@ export async function POST(
 
   const answers = answersData ?? []
   const answeredKeys = new Set(answers.map((a) => a.question_key))
-  const allAnswered = questions.every((q) => answeredKeys.has(q.key))
+  const missing = questions.filter((q) => !answeredKeys.has(q.key))
 
-  if (!allAnswered) {
-    return NextResponse.json({ error: 'Not all questions answered' }, { status: 400 })
+  if (missing.length > 0) {
+    return NextResponse.json(
+      { error: 'Not all questions answered', missing: missing.length },
+      { status: 400 },
+    )
   }
 
   const traitScores = computeTraitScores(answers)

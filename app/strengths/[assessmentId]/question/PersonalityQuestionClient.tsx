@@ -112,7 +112,9 @@ export default function PersonalityQuestionClient({
       const res = await fetch(`/api/personality/${assessmentId}/complete`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ locale }),
+        // Send the full answer map so completion self-heals any per-question
+        // saves that silently failed during the quiz.
+        body: JSON.stringify({ locale, answers }),
         signal: controller.signal,
       })
       if (!res.ok) {
