@@ -253,9 +253,9 @@ export default function ChineseHomePage() {
                 与英国、美国、PISA和IB标准对标——按英语、数学、语言推理和非语言推理提供标准化分数和百分位排名。
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
-                <span>60道自适应题目</span>
-                <span>·</span>
                 <span>4个科目</span>
+                <span>·</span>
+                <span>约45分钟</span>
                 <span>·</span>
                 <span>6–17岁</span>
                 <span>·</span>
@@ -268,16 +268,22 @@ export default function ChineseHomePage() {
               >
                 开始免费评估
               </CtaLink>
-              <Link href="#xueshu-pinggu" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
+              <span className="text-center text-[11px] text-[#a1a1a7] mt-3 block">无需账户 · 随时暂停</span>
+              <Link href="#xueshu-pinggu" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-2 py-3 block">
                 了解更多 ↓
               </Link>
             </div>
 
             {/* Personality card */}
             <div className="rounded-[28px] border p-10 flex flex-col" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
-              <p className="text-[11px] font-medium uppercase tracking-[0.12em] mb-6" style={{ color: '#D97706' }}>
-                性格评估
-              </p>
+              <div className="flex items-center gap-2.5 mb-6">
+                <p className="text-[11px] font-medium uppercase tracking-[0.12em]" style={{ color: '#D97706' }}>
+                  性格评估
+                </p>
+                <span className="text-[10px] text-white font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider" style={{ background: '#D97706' }}>
+                  最快开始
+                </span>
+              </div>
               <h2 className="text-3xl font-bold mb-4 leading-snug tracking-tight" style={{ color: '#1d1d1f' }}>
                 孩子真正的品格优势是什么？
               </h2>
@@ -285,9 +291,9 @@ export default function ChineseHomePage() {
                 基于VIA品格优势框架的免费家长评估问卷——识别6大美德下的24项品格特质，生成个性化AI成长报告。
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs mb-8" style={{ color: '#92400e' }}>
-                <span>24项品格特质</span>
+                <span>24项特质</span>
                 <span>·</span>
-                <span>6大美德</span>
+                <span>约5分钟</span>
                 <span>·</span>
                 <span>6–20岁</span>
                 <span>·</span>
@@ -298,9 +304,10 @@ export default function ChineseHomePage() {
                 className="px-7 py-3 rounded-full text-sm font-medium transition-colors text-center"
                 style={{ background: '#D97706', color: '#fff' }}
               >
-                探索性格评估
+                免费开始 — 约5分钟
               </Link>
-              <Link href="#xingge" className="text-center text-xs transition-colors mt-4 py-4 block" style={{ color: '#92400e' }}>
+              <span className="text-center text-[11px] mt-3 block" style={{ color: '#92400e' }}>无需账户 · 最快的开始方式</span>
+              <Link href="#xingge" className="text-center text-xs transition-colors mt-2 py-3 block" style={{ color: '#92400e' }}>
                 了解更多 ↓
               </Link>
             </div>
@@ -322,9 +329,9 @@ export default function ChineseHomePage() {
                 34题自适应评估，测量能力、领域知识、工作技能和兴趣档案。提供个性化准备情况报告和AI职业洞察。
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#636366] mb-8">
-                <span>34道自适应题目</span>
-                <span>·</span>
                 <span>4个职业方向</span>
+                <span>·</span>
+                <span>约20分钟</span>
                 <span>·</span>
                 <span>14岁以上</span>
                 <span>·</span>

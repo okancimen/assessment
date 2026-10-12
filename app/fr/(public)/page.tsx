@@ -245,9 +245,9 @@ export default function FrenchHomePage() {
                 et classements par percentile en Anglais, Mathématiques, Raisonnement Verbal et Non Verbal.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
-                <span>60 questions adaptatives</span>
-                <span>·</span>
                 <span>4 matières</span>
+                <span>·</span>
+                <span>~45 min</span>
                 <span>·</span>
                 <span>6–17 ans</span>
                 <span>·</span>
@@ -260,7 +260,8 @@ export default function FrenchHomePage() {
               >
                 Commencer l&apos;évaluation gratuite
               </CtaLink>
-              <Link href="#academique" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
+              <span className="text-center text-[11px] text-[#a1a1a7] mt-3 block">Aucun compte requis · pause à tout moment</span>
+              <Link href="#academique" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-2 py-3 block">
                 En savoir plus ↓
               </Link>
             </div>
@@ -283,9 +284,9 @@ export default function FrenchHomePage() {
                 professionnelles et le profil d&apos;intérêts. Rapport de préparation personnalisé et insights IA sur la carrière.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#636366] mb-8">
-                <span>34 questions adaptatives</span>
-                <span>·</span>
                 <span>4 domaines professionnels</span>
+                <span>·</span>
+                <span>~20 min</span>
                 <span>·</span>
                 <span>14+ ans</span>
                 <span>·</span>
@@ -304,9 +305,14 @@ export default function FrenchHomePage() {
 
             {/* Personality card */}
             <div className="bg-[#fffbeb] rounded-[28px] border border-[#fde68a] p-10 flex flex-col">
-              <p className="text-[11px] text-[#D97706] font-medium uppercase tracking-[0.12em] mb-6">
-                Évaluation de Personnalité
-              </p>
+              <div className="flex items-center gap-2.5 mb-6">
+                <p className="text-[11px] text-[#D97706] font-medium uppercase tracking-[0.12em]">
+                  Évaluation de Personnalité
+                </p>
+                <span className="text-[10px] bg-[#D97706] text-white font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                  Le plus rapide
+                </span>
+              </div>
               <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4 leading-snug tracking-tight">
                 Quelles sont les vraies forces de caractère de votre enfant ?
               </h2>
@@ -316,7 +322,7 @@ export default function FrenchHomePage() {
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#92400e] mb-8">
                 <span>24 traits</span>
                 <span>·</span>
-                <span>6 vertus</span>
+                <span>~5 min</span>
                 <span>·</span>
                 <span>6–20 ans</span>
                 <span>·</span>
@@ -326,9 +332,10 @@ export default function FrenchHomePage() {
                 href="/fr/evaluation-de-personnalite"
                 className="bg-[#D97706] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#B45309] transition-colors text-center"
               >
-                Explorer l&apos;évaluation de personnalité
+                Commencer — environ 5 minutes
               </Link>
-              <Link href="#personnalite" aria-label="En savoir plus sur l'Évaluation de Personnalité" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-4 py-4 block">
+              <span className="text-center text-[11px] text-[#92400e] mt-3 block">Aucun compte requis · le moyen le plus rapide de commencer</span>
+              <Link href="#personnalite" aria-label="En savoir plus sur l'Évaluation de Personnalité" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-2 py-3 block">
                 En savoir plus ↓
               </Link>
             </div>

@@ -246,9 +246,9 @@ export default function RussianHomePage() {
                 процентильные рейтинги по английскому, математике, вербальному и невербальному мышлению.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
-                <span>60 адаптивных вопросов</span>
-                <span>·</span>
                 <span>4 предмета</span>
+                <span>·</span>
+                <span>~45 мин</span>
                 <span>·</span>
                 <span>6–17 лет</span>
                 <span>·</span>
@@ -261,16 +261,22 @@ export default function RussianHomePage() {
               >
                 Начать бесплатную оценку
               </CtaLink>
-              <Link href="#akademicheskaya" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
+              <span className="text-center text-[11px] text-[#a1a1a7] mt-3 block">Без регистрации · пауза в любой момент</span>
+              <Link href="#akademicheskaya" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-2 py-3 block">
                 Узнать больше ↓
               </Link>
             </div>
 
             {/* Personality card */}
             <div className="rounded-[28px] border p-10 flex flex-col" style={{ background: '#fffbeb', borderColor: '#fde68a' }}>
-              <p className="text-[11px] font-medium uppercase tracking-[0.12em] mb-6" style={{ color: '#D97706' }}>
-                Оценка личности
-              </p>
+              <div className="flex items-center gap-2.5 mb-6">
+                <p className="text-[11px] font-medium uppercase tracking-[0.12em]" style={{ color: '#D97706' }}>
+                  Оценка личности
+                </p>
+                <span className="text-[10px] text-white font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider" style={{ background: '#D97706' }}>
+                  Самый быстрый старт
+                </span>
+              </div>
               <h2 className="text-3xl font-bold mb-4 leading-snug tracking-tight" style={{ color: '#1d1d1f' }}>
                 Каковы настоящие сильные стороны характера вашего ребёнка?
               </h2>
@@ -280,7 +286,7 @@ export default function RussianHomePage() {
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs mb-8" style={{ color: '#92400e' }}>
                 <span>24 черты</span>
                 <span>·</span>
-                <span>6 добродетелей</span>
+                <span>~5 мин</span>
                 <span>·</span>
                 <span>6–20 лет</span>
                 <span>·</span>
@@ -291,9 +297,10 @@ export default function RussianHomePage() {
                 className="px-7 py-3 rounded-full text-sm font-medium transition-colors text-center"
                 style={{ background: '#D97706', color: '#fff' }}
               >
-                Исследовать оценку личности
+                Начать бесплатно — около 5 минут
               </Link>
-              <Link href="#lichnost" className="text-center text-xs transition-colors mt-4 py-4 block" style={{ color: '#92400e' }}>
+              <span className="text-center text-[11px] mt-3 block" style={{ color: '#92400e' }}>Без регистрации · самый быстрый способ начать</span>
+              <Link href="#lichnost" className="text-center text-xs transition-colors mt-2 py-3 block" style={{ color: '#92400e' }}>
                 Узнать больше ↓
               </Link>
             </div>
@@ -316,9 +323,9 @@ export default function RussianHomePage() {
                 Персонализированный отчёт о готовности и карьерные инсайты от ИИ.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#636366] mb-8">
-                <span>34 адаптивных вопроса</span>
-                <span>·</span>
                 <span>4 карьерных направления</span>
+                <span>·</span>
+                <span>~20 мин</span>
                 <span>·</span>
                 <span>14 лет+</span>
                 <span>·</span>

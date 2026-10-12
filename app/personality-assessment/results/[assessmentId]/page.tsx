@@ -35,6 +35,17 @@ function ageToDob(age: number): string {
   return d.toISOString().slice(0, 10)
 }
 
+// Localised academic-assessment landing slugs
+const ACADEMIC_HREF: Record<string, string> = {
+  en: '/academic-assessment',
+  tr: '/tr/akademik-degerlendirme',
+  fr: '/fr/evaluation-academique',
+  es: '/es/evaluacion-academica',
+  ar: '/ar/taqyim-acadimi',
+  ru: '/ru/akademicheskaya-otsenka',
+  zh: '/zh/xueshu-pinggu',
+}
+
 export default async function GuestResultsPage({
   params,
   searchParams,
@@ -217,17 +228,15 @@ export default async function GuestResultsPage({
         {/* Cross-sell: academic assessment */}
         <div className="bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-6 flex flex-col sm:flex-row sm:items-center gap-4">
           <div className="flex-1">
-            <p className="text-[11px] font-semibold text-[#4F46E5] uppercase tracking-wider mb-1">Next step</p>
-            <h2 className="text-base font-bold text-[#1d1d1f]">See where {childName} stands academically</h2>
-            <p className="text-sm text-[#6e6e73] mt-1">
-              A free adaptive benchmark across English, Maths, Verbal &amp; Non-Verbal Reasoning — with a standardised score and percentile.
-            </p>
+            <p className="text-[11px] font-semibold text-[#4F46E5] uppercase tracking-wider mb-1">{t.crossSellEyebrow}</p>
+            <h2 className="text-base font-bold text-[#1d1d1f]">{t.crossSellTitle(childName)}</h2>
+            <p className="text-sm text-[#6e6e73] mt-1">{t.crossSellDesc}</p>
           </div>
           <Link
-            href="/academic-assessment"
+            href={ACADEMIC_HREF[locale] ?? '/academic-assessment'}
             className="shrink-0 bg-[#4F46E5] hover:bg-indigo-700 text-white font-semibold text-sm px-5 py-3 rounded-xl transition-colors text-center"
           >
-            Try the academic assessment →
+            {t.crossSellCta}
           </Link>
         </div>
 

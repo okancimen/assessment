@@ -248,9 +248,9 @@ export default function SpanishHomePage() {
                 y clasificaciones percentiles en Inglés, Matemáticas, Razonamiento Verbal y No Verbal.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
-                <span>60 preguntas adaptativas</span>
-                <span>·</span>
                 <span>4 materias</span>
+                <span>·</span>
+                <span>~45 min</span>
                 <span>·</span>
                 <span>De 6 a 17 años</span>
                 <span>·</span>
@@ -263,7 +263,8 @@ export default function SpanishHomePage() {
               >
                 Empezar evaluación gratuita
               </CtaLink>
-              <Link href="#academica" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
+              <span className="text-center text-[11px] text-[#a1a1a7] mt-3 block">Sin cuenta · pausa cuando quieras</span>
+              <Link href="#academica" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-2 py-3 block">
                 Saber más ↓
               </Link>
             </div>
@@ -286,9 +287,9 @@ export default function SpanishHomePage() {
                 profesionales y perfil de intereses. Informe de preparación personalizado e información de IA sobre la carrera.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#636366] mb-8">
-                <span>34 preguntas adaptativas</span>
-                <span>·</span>
                 <span>4 áreas profesionales</span>
+                <span>·</span>
+                <span>~20 min</span>
                 <span>·</span>
                 <span>14+ años</span>
                 <span>·</span>
@@ -307,9 +308,14 @@ export default function SpanishHomePage() {
 
             {/* Personality card */}
             <div className="bg-[#fffbeb] rounded-[28px] border border-[#fde68a] p-10 flex flex-col">
-              <p className="text-[11px] text-[#D97706] font-medium uppercase tracking-[0.12em] mb-6">
-                Evaluación de Personalidad
-              </p>
+              <div className="flex items-center gap-2.5 mb-6">
+                <p className="text-[11px] text-[#D97706] font-medium uppercase tracking-[0.12em]">
+                  Evaluación de Personalidad
+                </p>
+                <span className="text-[10px] bg-[#D97706] text-white font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                  Lo más rápido
+                </span>
+              </div>
               <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4 leading-snug tracking-tight">
                 ¿Cuáles son las verdaderas fortalezas de carácter de tu hijo?
               </h2>
@@ -319,7 +325,7 @@ export default function SpanishHomePage() {
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#92400e] mb-8">
                 <span>24 rasgos</span>
                 <span>·</span>
-                <span>6 virtudes</span>
+                <span>~5 min</span>
                 <span>·</span>
                 <span>6–20 años</span>
                 <span>·</span>
@@ -329,9 +335,10 @@ export default function SpanishHomePage() {
                 href="/es/evaluacion-de-personalidad"
                 className="bg-[#D97706] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#B45309] transition-colors text-center"
               >
-                Explorar evaluación de personalidad
+                Empezar gratis — unos 5 minutos
               </Link>
-              <Link href="#personalidad" aria-label="Más información sobre la Evaluación de Personalidad" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-4 py-4 block">
+              <span className="text-center text-[11px] text-[#92400e] mt-3 block">Sin cuenta · la forma más rápida de empezar</span>
+              <Link href="#personalidad" aria-label="Más información sobre la Evaluación de Personalidad" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-2 py-3 block">
                 Saber más ↓
               </Link>
             </div>

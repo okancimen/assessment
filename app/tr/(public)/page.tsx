@@ -270,9 +270,9 @@ export default function TurkishHomePage() {
                 Sözel ve Sözel Olmayan Akıl Yürütme alanlarında standartlaştırılmış puanlar ve yüzdelik dilim sıralamaları.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
-                <span>60 uyarlanabilir soru</span>
-                <span>·</span>
                 <span>4 ders</span>
+                <span>·</span>
+                <span>~45 dk</span>
                 <span>·</span>
                 <span>6–17 yaş</span>
                 <span>·</span>
@@ -285,7 +285,8 @@ export default function TurkishHomePage() {
               >
                 Ücretsiz değerlendirmeyi başlat
               </CtaLink>
-              <Link href="#akademik" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
+              <span className="text-center text-[11px] text-[#a1a1a7] mt-3 block">Hesap gerekmez · istediğiniz zaman duraklatın</span>
+              <Link href="#akademik" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-2 py-3 block">
                 Daha fazla bilgi ↓
               </Link>
             </div>
@@ -308,9 +309,9 @@ export default function TurkishHomePage() {
                 Kişiselleştirilmiş hazırlık raporu ve yapay zeka kariyer içgörüleri.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#636366] mb-8">
-                <span>34 uyarlanabilir soru</span>
-                <span>·</span>
                 <span>4 kariyer alanı</span>
+                <span>·</span>
+                <span>~20 dk</span>
                 <span>·</span>
                 <span>14 yaş+</span>
                 <span>·</span>
@@ -329,9 +330,14 @@ export default function TurkishHomePage() {
 
             {/* Personality card */}
             <div className="bg-[#fffbeb] rounded-[28px] border border-[#fde68a] p-10 flex flex-col">
-              <p className="text-[11px] text-[#D97706] font-medium uppercase tracking-[0.12em] mb-6">
-                Kişilik Değerlendirmesi
-              </p>
+              <div className="flex items-center gap-2.5 mb-6">
+                <p className="text-[11px] text-[#D97706] font-medium uppercase tracking-[0.12em]">
+                  Kişilik Değerlendirmesi
+                </p>
+                <span className="text-[10px] bg-[#D97706] text-white font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                  En hızlı başlangıç
+                </span>
+              </div>
               <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4 leading-snug tracking-tight">
                 Çocuğunuzun güçlü yönleri neler?
               </h2>
@@ -341,7 +347,7 @@ export default function TurkishHomePage() {
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#92400e] mb-8">
                 <span>24 karakter özelliği</span>
                 <span>·</span>
-                <span>6 erdem</span>
+                <span>~5 dk</span>
                 <span>·</span>
                 <span>6–20 yaş</span>
                 <span>·</span>
@@ -351,9 +357,10 @@ export default function TurkishHomePage() {
                 href="/tr/kisilik-degerlendirmesi"
                 className="bg-[#D97706] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#B45309] transition-colors text-center"
               >
-                Kişilik değerlendirmesini keşfet
+                Ücretsiz başla — yaklaşık 5 dakika
               </Link>
-              <Link href="#kisilik" aria-label="Kişilik Değerlendirmesi hakkında daha fazla bilgi" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-4 py-4 block">
+              <span className="text-center text-[11px] text-[#92400e] mt-3 block">Hesap gerekmez · en hızlı başlangıç yolu</span>
+              <Link href="#kisilik" aria-label="Kişilik Değerlendirmesi hakkında daha fazla bilgi" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-2 py-3 block">
                 Daha fazla bilgi ↓
               </Link>
             </div>
@@ -539,7 +546,7 @@ export default function TurkishHomePage() {
               ))}
             </div>
             <p className="text-[11px] text-[#636366] text-center mt-4">
-              Çocukların %68'i 85–115 arasında puan alır (ortalamanın 1 standart sapma dahilinde)
+              Çocukların %68&apos;i 85–115 arasında puan alır (ortalamanın 1 standart sapma dahilinde)
             </p>
           </div>
         </div>

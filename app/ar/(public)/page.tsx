@@ -245,9 +245,9 @@ export default function ArabicHomePage() {
                 مقارنة بالمعايير البريطانية والأمريكية وPISA وIB — درجات معيارية وترتيب مئيني في الإنجليزية والرياضيات والتفكير اللفظي وغير اللفظي.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
-                <span>60 سؤالاً تكيفياً</span>
-                <span>·</span>
                 <span>4 مواد</span>
+                <span>·</span>
+                <span>~45 دقيقة</span>
                 <span>·</span>
                 <span>6-17 عاماً</span>
                 <span>·</span>
@@ -260,16 +260,22 @@ export default function ArabicHomePage() {
               >
                 ابدأ التقييم المجاني
               </CtaLink>
-              <Link href="#akadimi" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
+              <span className="text-center text-[11px] text-[#a1a1a7] mt-3 block">لا حاجة لحساب · أوقف مؤقتاً في أي وقت</span>
+              <Link href="#akadimi" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-2 py-3 block">
                 اعرف المزيد ↓
               </Link>
             </div>
 
             {/* Personality card */}
             <div className="rounded-[28px] border p-10 flex flex-col" style={{ background: '#fffbeb', borderColor: '#fde68a' }} dir="rtl">
-              <p className="text-[11px] font-medium uppercase tracking-[0.12em] mb-6" style={{ color: '#D97706' }}>
-                تقييم الشخصية
-              </p>
+              <div className="flex items-center gap-2.5 mb-6">
+                <p className="text-[11px] font-medium uppercase tracking-[0.12em]" style={{ color: '#D97706' }}>
+                  تقييم الشخصية
+                </p>
+                <span className="text-[10px] text-white font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider" style={{ background: '#D97706' }}>
+                  الأسرع
+                </span>
+              </div>
               <h2 className="text-3xl font-bold mb-4 leading-snug tracking-tight" style={{ color: '#1d1d1f' }}>
                 ما هي نقاط القوة الحقيقية لشخصية طفلك؟
               </h2>
@@ -279,7 +285,7 @@ export default function ArabicHomePage() {
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs mb-8" style={{ color: '#92400e' }}>
                 <span>24 سمة</span>
                 <span>·</span>
-                <span>6 فضائل</span>
+                <span>~5 دقائق</span>
                 <span>·</span>
                 <span>6–20 سنة</span>
                 <span>·</span>
@@ -290,9 +296,10 @@ export default function ArabicHomePage() {
                 className="px-7 py-3 rounded-full text-sm font-medium transition-colors text-center"
                 style={{ background: '#D97706', color: '#fff' }}
               >
-                استكشف تقييم الشخصية
+                ابدأ مجاناً — حوالي 5 دقائق
               </Link>
-              <Link href="#shakhsiya" className="text-center text-xs transition-colors mt-4 py-4 block" style={{ color: '#92400e' }}>
+              <span className="text-center text-[11px] mt-3 block" style={{ color: '#92400e' }}>لا حاجة لحساب · أسرع طريقة للبدء</span>
+              <Link href="#shakhsiya" className="text-center text-xs transition-colors mt-2 py-3 block" style={{ color: '#92400e' }}>
                 اعرف المزيد ↓
               </Link>
             </div>
@@ -314,9 +321,9 @@ export default function ArabicHomePage() {
                 تقييم تكيفي من 34 سؤالاً حول الكفاءة العامة والمعرفة القطاعية والمهارات المهنية وملف الاهتمامات. تقرير استعداد شخصي ورؤى مهنية بالذكاء الاصطناعي.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#636366] mb-8">
-                <span>34 سؤالاً تكيفياً</span>
-                <span>·</span>
                 <span>4 مجالات مهنية</span>
+                <span>·</span>
+                <span>~20 دقيقة</span>
                 <span>·</span>
                 <span>14+ عاماً</span>
                 <span>·</span>

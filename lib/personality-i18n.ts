@@ -64,6 +64,11 @@ export interface PersonalityI18n {
   unlockDesc: string
   createAccountBtn: string
   signInBtn: string
+  // Academic cross-sell
+  crossSellEyebrow: string
+  crossSellTitle: (n: string) => string
+  crossSellDesc: string
+  crossSellCta: string
 }
 
 const EN: PersonalityI18n = {
@@ -164,6 +169,10 @@ const EN: PersonalityI18n = {
   unlockDesc: 'Create a free account to see the full profile, save it permanently, and get personalised parenting tips from AI.',
   createAccountBtn: 'Create free account',
   signInBtn: 'Sign in',
+  crossSellEyebrow: 'Next step',
+  crossSellTitle: (n) => `See where ${n} stands academically`,
+  crossSellDesc: 'A free adaptive benchmark across English, Maths, Verbal & Non-Verbal Reasoning — with a standardised score and percentile.',
+  crossSellCta: 'Try the academic assessment →',
 }
 
 const FR: PersonalityI18n = {
@@ -264,6 +273,10 @@ const FR: PersonalityI18n = {
   unlockDesc: 'Créez un compte gratuit pour voir le profil complet, le sauvegarder et recevoir des conseils parentaux personnalisés de notre IA.',
   createAccountBtn: 'Créer un compte gratuit',
   signInBtn: 'Se connecter',
+  crossSellEyebrow: 'Étape suivante',
+  crossSellTitle: (n) => `Découvrez le niveau scolaire de ${n}`,
+  crossSellDesc: 'Un bilan adaptatif gratuit en Anglais, Maths, Raisonnement Verbal et Non Verbal — avec score standardisé et percentile.',
+  crossSellCta: 'Essayer l’évaluation académique →',
 }
 
 const ES: PersonalityI18n = {
@@ -364,6 +377,10 @@ const ES: PersonalityI18n = {
   unlockDesc: 'Crea una cuenta gratuita para ver el perfil completo, guardarlo y recibir consejos de crianza personalizados de nuestra IA.',
   createAccountBtn: 'Crear cuenta gratis',
   signInBtn: 'Iniciar sesión',
+  crossSellEyebrow: 'Siguiente paso',
+  crossSellTitle: (n) => `Descubre el nivel académico de ${n}`,
+  crossSellDesc: 'Una evaluación adaptativa gratuita de Inglés, Matemáticas, Razonamiento Verbal y No Verbal — con puntuación estandarizada y percentil.',
+  crossSellCta: 'Prueba la evaluación académica →',
 }
 
 const AR: PersonalityI18n = {
@@ -464,6 +481,10 @@ const AR: PersonalityI18n = {
   unlockDesc: 'أنشئ حساباً مجانياً لعرض الملف الكامل وحفظه والحصول على نصائح تربوية مخصصة بالذكاء الاصطناعي.',
   createAccountBtn: 'إنشاء حساب مجاني',
   signInBtn: 'تسجيل الدخول',
+  crossSellEyebrow: 'الخطوة التالية',
+  crossSellTitle: (n) => `اكتشف المستوى الأكاديمي لـ ${n}`,
+  crossSellDesc: 'تقييم تكيفي مجاني في الإنجليزية والرياضيات والتفكير اللفظي وغير اللفظي — مع درجة معيارية وترتيب مئيني.',
+  crossSellCta: 'جرّب التقييم الأكاديمي ←',
 }
 
 const TR: PersonalityI18n = {
@@ -564,6 +585,10 @@ const TR: PersonalityI18n = {
   unlockDesc: 'Tam profili görmek, kalıcı olarak kaydetmek ve yapay zekadan kişiselleştirilmiş ebeveynlik tavsiyeleri almak için ücretsiz hesap oluşturun.',
   createAccountBtn: 'Ücretsiz hesap oluştur',
   signInBtn: 'Giriş yap',
+  crossSellEyebrow: 'Sonraki adım',
+  crossSellTitle: (n) => `${n} akademik olarak nerede, görün`,
+  crossSellDesc: 'İngilizce, Matematik, Sözel ve Sözel Olmayan Akıl Yürütme alanlarında ücretsiz uyarlanabilir kıyaslama — standart puan ve yüzdelik dilim ile.',
+  crossSellCta: 'Akademik değerlendirmeyi deneyin →',
 }
 
 const RU: PersonalityI18n = {
@@ -664,6 +689,10 @@ const RU: PersonalityI18n = {
   unlockDesc: 'Создайте бесплатный аккаунт, чтобы увидеть полный профиль, сохранить его и получить персонализированные советы по воспитанию от ИИ.',
   createAccountBtn: 'Создать бесплатный аккаунт',
   signInBtn: 'Войти',
+  crossSellEyebrow: 'Следующий шаг',
+  crossSellTitle: (n) => `Узнайте академический уровень ${n}`,
+  crossSellDesc: 'Бесплатная адаптивная оценка по английскому, математике, вербальному и невербальному мышлению — со стандартизированным баллом и процентилем.',
+  crossSellCta: 'Попробовать академическую оценку →',
 }
 
 const ZH: PersonalityI18n = {
@@ -764,6 +793,10 @@ const ZH: PersonalityI18n = {
   unlockDesc: '创建免费账户，查看完整档案、永久保存，并获取AI个性化育儿建议。',
   createAccountBtn: '免费创建账户',
   signInBtn: '登录',
+  crossSellEyebrow: '下一步',
+  crossSellTitle: (n) => `了解${n}的学业水平`,
+  crossSellDesc: '免费的自适应测评，涵盖英语、数学、语言推理和非语言推理——提供标准化分数和百分位。',
+  crossSellCta: '试试学术评估 →',
 }
 
 const TRANSLATIONS: Record<PersonalityLocale, PersonalityI18n> = {
