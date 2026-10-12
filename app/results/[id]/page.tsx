@@ -44,14 +44,20 @@ export default async function ResultsPage({
   const assessment = result.assessments as {
     children: { name: string; parent_id: string; date_of_birth: string } | null
     completed_at: string
+    guest_name: string | null
   }
 
-  // Guest assessments have no child — redirect to the guest partial results page
-  if (!assessment.children) redirect(`/academic-assessment/results/${id}`)
+  // Guest assessments have no child. Admins can still view them; everyone else
+  // is sent to the guest partial results page.
+  if (!assessment.children && !adminMode) redirect(`/academic-assessment/results/${id}`)
 
-  if (!adminMode && assessment.children.parent_id !== user.id) redirect('/dashboard')
+  if (assessment.children && !adminMode && assessment.children.parent_id !== user.id) redirect('/dashboard')
 
-  const child = assessment.children
+  const child = assessment.children ?? {
+    name: assessment.guest_name ?? 'Guest',
+    parent_id: '',
+    date_of_birth: '',
+  }
   const subjectScores = result.subject_scores as Record<string, {
     raw_score: number
     standardized_score: number

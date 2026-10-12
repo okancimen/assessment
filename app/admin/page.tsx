@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
 import DateRangePicker from '@/components/admin/DateRangePicker'
 import UsersTable from '@/components/admin/UsersTable'
+import GuestAssessmentsTable from '@/components/admin/GuestAssessmentsTable'
 import { AdminGrowthChart, AdminAssessmentsChart, AdminFunnelChart } from '@/components/admin/AdminCharts'
 import type { DailyPoint } from '@/components/admin/GrowthLineChart'
 
@@ -322,53 +323,7 @@ export default async function AdminPage({
           <h2 className="text-sm font-semibold" style={{ color: '#0F172A' }}>Guest assessments</h2>
           <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>{guestAssessments.length.toLocaleString()} total — all time</p>
         </div>
-        {guestAssessments.length === 0 ? (
-          <p className="px-6 py-8 text-sm text-center" style={{ color: '#64748B' }}>No guest assessments yet.</p>
-        ) : (
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b" style={{ borderColor: '#E2E6EF' }}>
-                  <th className="text-left px-6 py-3 text-xs font-semibold uppercase tracking-wide" style={{ color: '#64748B' }}>Name</th>
-                  <th className="text-left px-6 py-3 text-xs font-semibold uppercase tracking-wide" style={{ color: '#64748B' }}>Age</th>
-                  <th className="text-left px-6 py-3 text-xs font-semibold uppercase tracking-wide" style={{ color: '#64748B' }}>Status</th>
-                  <th className="text-left px-6 py-3 text-xs font-semibold uppercase tracking-wide" style={{ color: '#64748B' }}>Date</th>
-                  <th className="px-6 py-3" />
-                </tr>
-              </thead>
-              <tbody>
-                {guestAssessments.map((g) => (
-                  <tr key={g.id} className="border-b last:border-0" style={{ borderColor: '#E2E6EF' }}>
-                    <td className="px-6 py-3 font-medium" style={{ color: '#0F172A' }}>{g.guest_name ?? '—'}</td>
-                    <td className="px-6 py-3" style={{ color: '#64748B' }}>{g.guest_age ?? '—'}</td>
-                    <td className="px-6 py-3">
-                      <span className={[
-                        'inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium',
-                        g.status === 'completed' ? 'bg-emerald-100 text-emerald-700' :
-                        g.status === 'in_progress' ? 'bg-amber-100 text-amber-700' :
-                        'bg-slate-100 text-slate-500',
-                      ].join(' ')}>
-                        {g.status === 'completed' ? 'Completed' : g.status === 'in_progress' ? 'In progress' : 'Pending'}
-                      </span>
-                    </td>
-                    <td className="px-6 py-3 text-xs" style={{ color: '#64748B' }}>
-                      {new Date(g.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
-                    </td>
-                    <td className="px-6 py-3 text-right">
-                      <a
-                        href={`/assessment/${g.id}/results`}
-                        className="text-xs font-semibold hover:underline"
-                        style={{ color: '#4F46E5' }}
-                      >
-                        View
-                      </a>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
+        <GuestAssessmentsTable assessments={guestAssessments} />
       </div>
 
     </main>
