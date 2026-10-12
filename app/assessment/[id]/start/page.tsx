@@ -1,6 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect, notFound } from 'next/navigation'
-import { SUBJECTS, SUBJECT_LABELS, SUBJECT_DESCRIPTIONS, QUESTIONS_PER_SUBJECT } from '@/types'
+import { SUBJECTS, SUBJECT_LABELS, SUBJECT_DESCRIPTIONS } from '@/types'
 import StartActions from './StartActions'
 import { getAge } from '@/lib/utils'
 
@@ -54,23 +54,23 @@ export default async function AssessmentStartPage({
 
           {/* What to expect */}
           <div className="bg-[#eef2ff] rounded-2xl p-5 space-y-3">
-            <h2 className="font-semibold text-[#1d1d1f] text-sm">What to expect</h2>
+            <h2 className="font-semibold text-[#1d1d1f] text-sm">How it works</h2>
             <ul className="space-y-2 text-sm text-[#4338CA]">
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-[#4F46E5]">✓</span>
-                <span><strong>{SUBJECTS.length} subjects</strong>, {QUESTIONS_PER_SUBJECT} questions each — {SUBJECTS.length * QUESTIONS_PER_SUBJECT} questions total</span>
+                <span><strong>{SUBJECTS.length} short subjects</strong> — answer at your own pace, there&apos;s no time limit</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-[#4F46E5]">✓</span>
-                <span>Questions <strong>adapt in difficulty</strong> based on each answer</span>
+                <span>Questions <strong>adapt to each answer</strong>, so it&apos;s never too hard or too easy</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-[#4F46E5]">✓</span>
-                <span>Takes approximately <strong>60 minutes</strong> without any breaks</span>
+                <span>Progress <strong>saves automatically</strong> — pause and pick up anytime, on any device</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-[#4F46E5]">✓</span>
-                <span>Find a <strong>quiet space</strong> and ensure a stable internet connection</span>
+                <span>Your <strong>full report unlocks</strong> as soon as you finish — no need to do it all in one sitting</span>
               </li>
             </ul>
           </div>

@@ -29,7 +29,7 @@ export default function StartActions({ assessmentId }: { assessmentId: string })
         className="flex-1 text-center bg-[#4F46E5] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#4338CA] transition-colors"
         onClick={() => trackEvent('assessment_begin', { assessment_id: assessmentId })}
       >
-        Begin assessment
+        Start — first question →
       </Link>
     </div>
   )

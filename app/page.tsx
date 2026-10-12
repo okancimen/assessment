@@ -297,9 +297,9 @@ export default function LandingPage() {
                 rankings across English, Maths, Verbal and Non-Verbal Reasoning.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
-                <span>60 adaptive questions</span>
-                <span>·</span>
                 <span>4 subjects</span>
+                <span>·</span>
+                <span>~45 min</span>
                 <span>·</span>
                 <span>Ages 6–17</span>
                 <span>·</span>
@@ -312,7 +312,8 @@ export default function LandingPage() {
               >
                 Start free assessment
               </CtaLink>
-              <Link href="#academic" aria-label="Learn more about Academic Assessment" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-4 py-4 block">
+              <span className="text-center text-[11px] text-[#a1a1a7] mt-3 block">No account needed · pause anytime</span>
+              <Link href="#academic" aria-label="Learn more about Academic Assessment" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-2 py-3 block">
                 Learn more ↓
               </Link>
             </div>
@@ -335,9 +336,9 @@ export default function LandingPage() {
                 and interest profile. Personalised readiness report and AI career insights.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#636366] mb-8">
-                <span>34 adaptive questions</span>
-                <span>·</span>
                 <span>4 career tracks</span>
+                <span>·</span>
+                <span>~20 min</span>
                 <span>·</span>
                 <span>Ages 14+</span>
                 <span>·</span>
@@ -356,9 +357,14 @@ export default function LandingPage() {
 
             {/* Personality card */}
             <div className="bg-[#fffbeb] rounded-[28px] border border-[#fde68a] p-10 flex flex-col">
-              <p className="text-[11px] text-[#D97706] font-medium uppercase tracking-[0.12em] mb-6">
-                Personality Assessment
-              </p>
+              <div className="flex items-center gap-2.5 mb-6">
+                <p className="text-[11px] text-[#D97706] font-medium uppercase tracking-[0.12em]">
+                  Personality Assessment
+                </p>
+                <span className="text-[10px] bg-[#D97706] text-white font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                  Quickest start
+                </span>
+              </div>
               <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4 leading-snug tracking-tight">
                 What are your child&apos;s true character strengths?
               </h2>
@@ -366,9 +372,9 @@ export default function LandingPage() {
                 A parent-rated survey based on the VIA Character Strengths framework — 24 traits across 6 virtues. Pinpoint top strengths and growth areas with an AI-generated development report.
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#92400e] mb-8">
-                <span>24 character traits</span>
+                <span>24 traits</span>
                 <span>·</span>
-                <span>6 virtues</span>
+                <span>~5 min</span>
                 <span>·</span>
                 <span>Ages 6–20</span>
                 <span>·</span>
@@ -378,9 +384,10 @@ export default function LandingPage() {
                 href="/personality-assessment"
                 className="bg-[#D97706] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#B45309] transition-colors text-center"
               >
-                Explore personality assessment
+                Start free — about 5 minutes
               </Link>
-              <Link href="#personality" aria-label="Learn more about Personality Assessment" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-4 py-4 block">
+              <span className="text-center text-[11px] text-[#92400e] mt-3 block">No account needed · fastest way to start</span>
+              <Link href="#personality" aria-label="Learn more about Personality Assessment" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-2 py-3 block">
                 Learn more ↓
               </Link>
             </div>

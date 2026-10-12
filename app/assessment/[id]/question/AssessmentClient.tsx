@@ -340,7 +340,12 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   }
 
   if (phase === 'break' && subjectBreak) {
-    const subjectIndex = SUBJECTS.indexOf(subjectBreak)
+    // The API advances to the next subject before the break, so the next
+    // subject's index equals the number of subjects already completed.
+    const doneCount  = SUBJECTS.indexOf(subjectBreak)
+    const total      = SUBJECTS.length
+    const remaining  = total - doneCount
+    const isLastLeg  = remaining === 1
     return (
       <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center px-4">
         <div className="w-full max-w-md bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-8 text-center space-y-6">
@@ -350,18 +355,40 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
             </svg>
           </div>
           <div>
-            <h2 className="text-xl font-bold text-[#1d1d1f] mb-2 tracking-tight">Subject complete!</h2>
+            <h2 className="text-xl font-bold text-[#1d1d1f] mb-1 tracking-tight">
+              {doneCount} of {total} subjects done
+            </h2>
             <p className="text-[#6e6e73] text-sm">
-              Take a short break before continuing to{' '}
-              <strong className="text-[#1d1d1f]">{SUBJECT_LABELS[subjectBreak]}</strong>
-              {' '}(subject {subjectIndex + 1} of {SUBJECTS.length}).
+              {isLastLeg
+                ? 'Just one subject to go — finish it to unlock the full report.'
+                : `Great progress. Next up: ${SUBJECT_LABELS[subjectBreak]}.`}
             </p>
           </div>
-          <div className="bg-[#f5f5f7] rounded-2xl p-4 text-sm text-[#6e6e73]">
-            Stretch, have some water, and come back when you&apos;re ready.
+
+          {/* Subject progress segments */}
+          <div className="flex items-center gap-1.5">
+            {Array.from({ length: total }).map((_, i) => (
+              <div
+                key={i}
+                className="flex-1 h-2 rounded-full transition-colors"
+                style={{ backgroundColor: i < doneCount ? '#22C55E' : '#E5E7EB' }}
+              />
+            ))}
           </div>
+
+          <div
+            className="rounded-2xl p-4 text-sm"
+            style={isLastLeg
+              ? { backgroundColor: '#ecfdf5', color: '#047857' }
+              : { backgroundColor: '#f5f5f7', color: '#6e6e73' }}
+          >
+            {isLastLeg
+              ? 'Your full standardised report and AI recommendations unlock the moment you finish.'
+              : 'Your progress is saved — you can pause and come back anytime.'}
+          </div>
+
           <Button className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white" size="lg" onClick={fetchNextQuestion}>
-            Continue to {SUBJECT_LABELS[subjectBreak]}
+            {isLastLeg ? `Finish with ${SUBJECT_LABELS[subjectBreak]}` : `Continue to ${SUBJECT_LABELS[subjectBreak]}`}
           </Button>
         </div>
       </div>

@@ -170,10 +170,13 @@ export default function AcademicAssessmentPage() {
             <span className="text-[#4F46E5]">Stands Academically</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            A 60-question adaptive assessment covering English, Maths, Verbal & Non-Verbal Reasoning — scored on the same standardised scale used by UK selective schools.
+            An adaptive assessment covering English, Maths, Verbal &amp; Non-Verbal Reasoning — scored on the same standardised scale used by UK selective schools. No account needed, and your progress saves as you go.
           </p>
           <GuestAcademicStartForm />
-          <p className="mt-2 text-sm text-[#6e6e73]">
+          <p className="mt-3 text-sm text-[#6e6e73]">
+            No sign-up required to start · pause and resume anytime
+          </p>
+          <p className="mt-1 text-sm text-[#6e6e73]">
             Already have an account?{' '}
             <Link href="/auth/login" className="text-[#4F46E5] hover:underline font-medium">Sign in</Link>
           </p>
