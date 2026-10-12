@@ -8,8 +8,14 @@ const PRIVATE = [
   '/api/',
   '/auth/',
   '/admin/',
-  '/internship/apply',
-  '/internship/register',
+  // Internship paths — all redirect cross-domain to eduentry.ai; prefix covers apply/register too.
+  '/internship',
+  '/tr/staj',
+  '/es/practicas',
+  '/fr/stage',
+  '/ar/tadrib',
+  '/ru/stazhirovka',
+  '/zh/shixi',
 ]
 
 const AI_BOTS = [

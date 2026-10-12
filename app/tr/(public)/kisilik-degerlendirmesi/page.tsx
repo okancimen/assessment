@@ -299,6 +299,96 @@ export default function KisilikDegerlendirmesiPage() {
         </div>
       </section>
 
+      {/* Personality + Academics */}
+      <section className="py-16 px-6 bg-[#f5f5f7]">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4">Akademik Başarı ve Kişilik: Ayrı Değil, Tamamlayıcı</h2>
+          <p className="text-base text-[#6e6e73] leading-relaxed mb-6">
+            Duckworth ve Seligman&apos;ın (2005) araştırması öz disiplinin IQ&apos;dan daha iyi GPA öngörücüsü olduğunu; Park ve Peterson&apos;ın (2009) çalışması ise öğrenme sevgisini akademik başarıyla en güçlü ilişkili kişilik özelliği olarak belirledi. Karakterin akademik sonuçlarla bağlantısı, araştırmalar tarafından tutarlı biçimde doğrulanıyor.
+          </p>
+          <p className="text-base text-[#6e6e73] leading-relaxed mb-8">
+            Akademik değerlendirme çocuğunuzun <em>şu anda nerede olduğunu</em> gösterir — hangi konular güçlü, hangilerinde boşluk var, uluslararası kıyaslamada kaçıncı yüzdelikte. Kişilik değerlendirmesi ise çocuğunuzun <em>nasıl bir öğrenci olduğunu</em> gösterir — azim, merak, öz denetim, öğrenme sevgisi. İkisi birlikte çok daha eksiksiz bir tablo oluşturur.
+          </p>
+          <div className="grid sm:grid-cols-3 gap-5">
+            {[
+              {
+                dot: 'bg-blue-500',
+                title: 'Akademik Değerlendirme',
+                sub: 'Şu an nerede?',
+                desc: 'Sözel akıl yürütme, matematik, İngilizce — yaş normuna göre standartlaştırılmış puan ve uluslararası kıyaslama.',
+                href: '/tr/akademik-degerlendirme',
+                cta: 'Akademik Değerlendirmeyi Başlat →',
+              },
+              {
+                dot: 'bg-[#4F46E5]',
+                title: 'Kişilik Değerlendirmesi',
+                sub: 'Nasıl bir öğrenci?',
+                desc: '24 VIA karakter özelliği — azim, merak, öz denetim, öğrenme sevgisi. Ebeveyn gözlemi, 5 dakika.',
+                href: null,
+                cta: null,
+              },
+              {
+                dot: 'bg-emerald-500',
+                title: 'Tam Tablo',
+                sub: 'Potansiyel nerede?',
+                desc: 'Akademik konum + kişilik profili birlikte okunduğunda yatırımın nereye yapılacağı çok daha netleşir.',
+                href: null,
+                cta: null,
+              },
+            ].map((item) => (
+              <div key={item.title} className="bg-white rounded-3xl border border-[#d2d2d7] p-6 flex flex-col">
+                <div className={`w-3 h-3 rounded-full ${item.dot} mb-4`} />
+                <h3 className="text-base font-bold text-[#1d1d1f] mb-0.5">{item.title}</h3>
+                <p className="text-xs font-semibold text-[#4F46E5] mb-2">{item.sub}</p>
+                <p className="text-sm text-[#6e6e73] leading-relaxed flex-1">{item.desc}</p>
+                {item.href && (
+                  <a href={item.href} className="mt-4 text-sm font-semibold text-[#4F46E5] hover:underline">{item.cta}</a>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Methodology */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-[#1d1d1f] mb-4">Değerlendirme Metodolojisi</h2>
+          <p className="text-base text-[#6e6e73] leading-relaxed mb-8">
+            Kişilik değerlendirmemiz, pozitif psikolojinin en kapsamlı biçimde araştırılmış çerçevesi olan VIA Karakter Güçleri metodolojisini gelişim psikolojisinden alınan yaş kademelemesiyle birleştirir.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-5">
+            {[
+              {
+                title: 'VIA Güçlü Yönler Çerçevesi',
+                body: 'Dr. Martin Seligman ve Dr. Neal Mayerson tarafından geliştirilen VIA sınıflandırması, 50\'den fazla kültürde doğrulanmış 24 evrensel karakter özelliğini tanımlar. Ölçüm, tanı değil gelişim odaklıdır: hiçbir özellik "iyi" veya "kötü" değildir; profil hangi güçlerin öne çıktığını, hangilerinin yatırım beklediğini gösterir.',
+              },
+              {
+                title: 'Ebeveyn Gözlemi Yöntemi',
+                body: 'Çocuklar kendi kişilik özelliklerini güvenilir biçimde değerlendiremez — öz algı hızla değişir, küçük çocuklar soyut sorulara tutarsız yanıtlar verir. Günlük davranışları gözlemleyen ebeveyn çok daha kararlı ve güvenilir bir kaynak sağlar. Her soru gözlemlenebilir gerçek dünya davranışlarına dayanır.',
+              },
+              {
+                title: 'Yaşa Göre Kademelendirme',
+                body: '6 yaşında ve 16 yaşında kişilik gelişimi çok farklıdır. Sistem dört kademede kalibre edilmiştir: 6–9 yaş (12 temel özellik, 24 soru), 10–13 yaş (15 özellik, 30 soru), 14–17 yaş (20 özellik, 40 soru), 18–20 yaş (tüm 24 özellik, 48 soru). Her kademe o gelişim döneminin en belirgin özelliklerini kapsar.',
+              },
+              {
+                title: 'Yapay Zeka Destekli Kişiselleştirme',
+                body: 'Ham puanlar otomatik olarak yorumlanamaz. Yapay zeka katmanı çocuğun yaş kademesine ve belirli profil kombinasyonuna göre özelleştirilmiş büyüme aktiviteleri ve ebeveynlik önerileri üretir. Aynı "merak yüksek" profili, farklı bir ikincil özellikle birleştiğinde farklı bir eylem planı üretir.',
+              },
+            ].map((item) => (
+              <div key={item.title} className="bg-[#f5f5f7] rounded-3xl border border-[#d2d2d7] p-6">
+                <h3 className="text-base font-bold text-[#1d1d1f] mb-3">{item.title}</h3>
+                <p className="text-sm text-[#6e6e73] leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-6 text-sm text-[#6e6e73] leading-relaxed">
+            Akademik değerlendirmemizin teknik metodolojisi (2 parametreli Madde Yanıt Teorisi, MAP tahmini, standartlaştırılmış puanlama) için{' '}
+            <a href="/tr/metodoloji" className="text-[#4F46E5] font-medium hover:underline">metodoloji sayfamızı</a> ziyaret edin.
+          </p>
+        </div>
+      </section>
+
       {/* Age Tiers */}
       <section className="py-16 px-6 bg-[#f5f5f7]">
         <div className="max-w-4xl mx-auto">

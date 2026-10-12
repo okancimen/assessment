@@ -6411,6 +6411,63 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <Check><strong>Bilgisayarda pratik yapın.</strong> Çoğu üstün zekâ tarama testi bilgisayar aracılıdır. Yalnızca kâğıt üzerinde pratik yapan çocuklar dijital testlerin zamanlaması ve arayüzüyle güçlük çekebilir.</Check>
         </ul>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türkiye&apos;de Üstün Zekâ Eğitimi: BİLSEM Modeli</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye&apos;de üstün zekâlı ve üstün yetenekli öğrenciler için temel kurum, Millî Eğitim Bakanlığı&apos;na bağlı <strong>Bilim ve Sanat Merkezleri (BİLSEM)</strong>&apos;dir. Türkiye genelinde 150&apos;den fazla BİLSEM bulunur; bunlar tam zamanlı ayrı okullar değil, öğrencilerin kendi okullarına devam ederken haftanın belirli günleri gittiği zenginleştirme programlarıdır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          ABD&apos;deki GT tespit sürecinden önemli ölçüde farklı olan BİLSEM seçimi, CogAT veya OLSAT gibi tek bir standartlaştırılmış testle değil, aşamalı bir gözlem ve değerlendirme süreciyle yapılır:
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border border-gray-100 rounded-xl overflow-hidden">
+            <thead className="bg-indigo-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-indigo-900">Aşama</th>
+                <th className="text-left p-4 font-semibold text-indigo-900">Yöntem</th>
+                <th className="text-left p-4 font-semibold text-indigo-900">Kim Uygular</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['1. Aşama', 'Öğretmen gözlem formu (sınıfta sergilenen davranışlar)', 'Sınıf öğretmeni'],
+                ['2. Aşama', 'Grup akademik yetenek ve yaratıcılık testleri', 'BİLSEM uzmanı'],
+                ['3. Aşama', 'Bireysel psikolojik değerlendirme (gerekli görülürse)', 'RAM psikoloğu'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-600">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tanılama genellikle ilkokul 2. ve 3. sınıfta yapılır; 1. sınıf öğrencileri kapsam dışında, ortaokul çağında tanılama ise daha az yaygındır. Bu durum, küçük yaşta tespit edilemeyen öğrenciler için kayda değer bir boşluk oluşturur.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">ABD ile temel fark:</strong> BİLSEM seçiminde öğretmen gözlemi merkezi bir rol oynar. Akademik performans belirleyicidir ama tek başına yeterli değildir; yaratıcılık, eleştirel düşünme ve bağımsız araştırma davranışları da değerlendirilir. Dolayısıyla testi &ldquo;geçmek&rdquo; yerine sınıfta bu özellikleri tutarlı biçimde sergilemek kritik önem taşır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/akademik-degerlendirme', tag: 'Değerlendirme', title: 'Ücretsiz Akademik Değerlendirme — Çocuğunuzun Dünya Genelindeki Konumu' },
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Rehber', title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor? Uluslararası Kıyaslama' },
+            { href: '/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur', tag: 'Rehber', title: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?' },
+            { href: '/tr/blog/ust-zeka-testine-nasil-hazirlanilir', tag: 'Rehber', title: 'Üstün Zekâ Testine Nasıl Hazırlanılır: Pratik Rehber' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -6510,6 +6567,53 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
               Uzamsal akıl yürütme becerileri fiziksel ve görsel nesnelerle uygulamalı uğraş yoluyla gelişir. Lego (özellikle karmaşık teknik setler), tangram bulmacaları, 3B şekil oyuncakları, satranç, origami ve görsel örüntü etkinlikleri uzamsal akıl yürütmeyi geliştirir. Bu etkinlikler özellikle uzamsal becerilerin hızla geliştiği küçük çocuklar (5–9 yaş) için etkilidir.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türkiye&apos;de BİLSEM Hazırlığı: ABD&apos;den Farklı Olan Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye&apos;nin BİLSEM seçim süreci, ABD&apos;deki CogAT veya OLSAT testlerinden yapısal olarak farklıdır. ABD&apos;de öğrenciler bilgisayar tabanlı standart bir testle değerlendirilirken, BİLSEM tanılaması öğretmen gözlemine ve çok aşamalı değerlendirmeye dayanır — bu durum &ldquo;hazırlık&rdquo; kavramını temelden değiştirir.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          <div className="border border-gray-100 rounded-xl p-5">
+            <div className="font-semibold text-gray-900 mb-2">ABD GT Testleri (CogAT, OLSAT)</div>
+            <p className="text-sm text-gray-500 leading-relaxed mb-3">Tek oturumlu, bilgisayar tabanlı, standartlaştırılmış grup testi. Soru formatına önceden aşinalık gerçekten yardımcı olur.</p>
+            <div className="text-xs font-semibold text-indigo-700 bg-indigo-50 rounded-lg px-3 py-2">Test formatı pratiği etkili</div>
+          </div>
+          <div className="border border-gray-100 rounded-xl p-5">
+            <div className="font-semibold text-gray-900 mb-2">Türkiye BİLSEM Tanılaması</div>
+            <p className="text-sm text-gray-500 leading-relaxed mb-3">Öğretmen gözlem formu + grup yetenek testi + bireysel psikolojik değerlendirme. Zaman içindeki tutarlı davranış kritik.</p>
+            <div className="text-xs font-semibold text-emerald-700 bg-emerald-50 rounded-lg px-3 py-2">Sınıf içi davranış en önemli sinyal</div>
+          </div>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          BİLSEM hazırlığında en etkili strateji, kısa vadeli test ezberinden uzak ve uzun vadeli zihinsel alışkanlık geliştirmeye odaklanır:
+        </p>
+        <ul className="space-y-4 mb-4">
+          <Check><strong>Merak davranışını besleyin.</strong> Öğretmenler &ldquo;neden?&rdquo; ve &ldquo;ya şöyle olsaydı?&rdquo; soruları soran, konuyu derinlemesine araştıran çocukları gözlemleyerek not alır. Bu alışkanlığı günlük hayatta teşvik etmek BİLSEM hazırlığının özüdür.</Check>
+          <Check><strong>Yaratıcı problem çözmeyi destekleyin.</strong> Bir probleme tek doğru cevap aramak yerine birden fazla çözüm üretme alışkanlığı — grup testi aşamasında değerlendirilecek temel becerilerden biridir.</Check>
+          <Check><strong>Akademik tabanı bağımsız değerlendirin.</strong> BİLSEM 2. aşama grup testleri akademik yeteneği de içerir. Çocuğunuzun yaş normuna göre hangi akademik konumda olduğunu önceden anlamak odaklanılacak alanları belirler.</Check>
+        </ul>
+        <Callout>
+          <strong className="text-indigo-900">Pratik başlangıç noktası:</strong> Çocuğunuzun akademik tabanını BİLSEM başvurusundan önce ölçmek istiyorsanız, Eduentry&apos;nin uyarlanabilir akademik değerlendirmesi sözel akıl yürütme, sözel olmayan akıl yürütme, matematik ve İngilizce alanlarında yaş normuna göre uluslararası kıyaslamalı standartlaştırılmış puan üretir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/akademik-degerlendirme', tag: 'Değerlendirme', title: 'Ücretsiz Akademik Değerlendirme — Çocuğunuzun Dünya Genelindeki Konumu' },
+            { href: '/tr/blog/abd-ust-zeka-programi-test-rehberi', tag: 'Rehber', title: 'ABD Üstün Zekâ Programı Test Rehberi: CogAT, WISC ve Belirleme Süreci' },
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Rehber', title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor?' },
+            { href: '/tr/kisilik-degerlendirmesi', tag: 'Değerlendirme', title: 'Ücretsiz VIA Kişilik Değerlendirmesi — 6–20 Yaş' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
         </div>
       </section>
     </>
@@ -6727,6 +6831,49 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <Callout color="emerald">
           <strong className="text-emerald-900">Kişisel beyanda nasıl yazılır:</strong> &ldquo;Bir ders verme işletmesi kurdum&rdquo; demeyin. Şunu söyleyin: &ldquo;GCSE Matematik öğrencilerine yönelik ders verme pratiğimi iki yıl boyunca yürütürken sekiz düzenli müşteriyi yönettim, bireysel boşluklara göre uyarlanmış yapılandırılmış ders planları geliştirdim ve öğrenci ilerlemeyi sınav hedeflerine göre takip ettim.&rdquo; Ayrıntılar kanıttır. Kanıt uygulamayı yığının üstüne taşıyan şeydir.
         </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türkiye&apos;de 16 Yaşında Girişimcilik: Yasal Çerçeve ve Pratik Fırsatlar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu rehber ağırlıklı olarak İngiltere bağlamını ele alıyor; ancak Türkiye&apos;deki 16–18 yaş öğrenciler için temel yasal çerçeve ve pratik fırsatlar farklı bir tablo çiziyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türk hukukunda 18 yaşına kadar bireyler tam medeni ehliyete sahip değildir; ancak bu, ticari faaliyetin tamamen dışında oldukları anlamına gelmez. Küçük ölçekli gelir elde etme pratik olarak mümkün olmakla birlikte, resmî şirket kuruluşu ve banka hesabı açma işlemleri için ebeveyn veya yasal vasi izni gerekmektedir.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          {[
+            { title: 'E-Ticaret (Trendyol, Hepsiburada)', desc: 'El yapımı ürünler, ikinci el eşya veya dijital ürünler için ebeveyn onayıyla satıcı hesabı açılabilir. Küçük ölçekli satıcılar belirli ciro eşiğine kadar vergi muafiyetinden yararlanır.' },
+            { title: 'Freelance Dijital Hizmetler', desc: 'Grafik tasarım, video düzenleme, içerik üretimi, sosyal medya yönetimi gibi hizmetleri yerel işletmelere sunmak — ebeveyn iznisiyle faturalandırılabilir.' },
+            { title: 'TÜBİTAK Gençlik Projeleri', desc: 'TÜBİTAK 2204-A (ortaokul) ve 2204-B (lise) Ar-Ge proje yarışmaları, ticari deneyimden farklı ama yurt dışı üniversite başvurularında güçlü bir diferansiyatör.' },
+            { title: 'KOSGEB Genç Girişimci', desc: '18 yaş sınırı aktif üyeliği şimdilik engelliyor; ancak programın yapısını önceden anlamak ve 18\'de hazır başlamak için değerlidir.' },
+          ].map(({ title, desc }) => (
+            <div key={title} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{title}</div>
+              <p className="text-sm text-gray-500 leading-relaxed">{desc}</p>
+            </div>
+          ))}
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">Üniversite başvurusu açısından:</strong> Boğaziçi, ODTÜ veya Koç gibi rekabetçi Türk üniversitelerinin mevcut YKS sistemi girişimciliği doğrudan ödüllendirmez; ancak İngiltere veya ABD üniversitelerine başvuruda erken girişimcilik deneyimi güçlü bir diferansiyatördür. Kayıtlı satış rakamları, müşteri sayısı veya proje sonuçları somut kanıt olarak öne çıkar.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/lise-staji-faydalari-universite', tag: 'Rehber', title: 'Lise Stajlarının Önemi: Kişilik, Hazırlık ve Üniversite Kabulü' },
+            { href: '/tr/blog/erken-yas-staj-cocuk-gelisimi-kariyer', tag: 'Rehber', title: 'Erken Yaşta Stajın Önemi: Çocuk Gelişimi ve Kariyer Avantajı' },
+            { href: '/tr/blog/is-hayatina-hazir-misin', tag: 'Rehber', title: 'İş Hayatına Hazır Mısın? Kişilik ve Beceri Analizi' },
+            { href: '/tr/kisilik-degerlendirmesi', tag: 'Değerlendirme', title: 'Ücretsiz VIA Kişilik Değerlendirmesi — Güçlü Yönlerini Keşfet' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
