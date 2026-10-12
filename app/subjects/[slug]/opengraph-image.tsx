@@ -55,7 +55,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
         <div style={{ fontSize: 62, fontWeight: 800, color: '#111827', lineHeight: 1.1, marginBottom: 24 }}>
           {subject.label}
         </div>
-        <div style={{ fontSize: 26, color: '#6b7280', marginBottom: 48, maxWidth: 800 }}>
+        <div style={{ display: 'flex', fontSize: 26, color: '#6b7280', marginBottom: 48, maxWidth: 800 }}>
           {subject.tagline} · Ages 6–17 · Standardised scores
         </div>
         <div style={{ display: 'flex', gap: 16 }}>
