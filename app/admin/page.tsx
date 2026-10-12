@@ -4,7 +4,6 @@ import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
 import DateRangePicker from '@/components/admin/DateRangePicker'
 import UsersTable from '@/components/admin/UsersTable'
-import GuestAssessmentsTable from '@/components/admin/GuestAssessmentsTable'
 import { AdminGrowthChart, AdminAssessmentsChart, AdminFunnelChart } from '@/components/admin/AdminCharts'
 import type { DailyPoint } from '@/components/admin/GrowthLineChart'
 
@@ -106,8 +105,6 @@ export default async function AdminPage({
     allAssessmentTypes,
     allLocationProfiles,
     allPersonalityAssessments,
-    guestAssessmentsResult,
-    guestPersonalityResult,
   ] = await Promise.all([
     // All users from auth.users (used for both stats and table)
     db.auth.admin.listUsers({ perPage: 1000 }),
@@ -125,20 +122,6 @@ export default async function AdminPage({
     db.from('profiles').select('id, country, city'),
     // Personality assessments
     db.from('personality_assessments').select('parent_id, status, created_at'),
-    // Guest assessments (no child_id, has guest_token)
-    db.from('assessments')
-      .select('id, guest_name, guest_age, guest_country, guest_city, assessment_type, status, created_at')
-      .not('guest_token', 'is', null)
-      .is('child_id', null)
-      .order('created_at', { ascending: false })
-      .limit(200),
-    // Guest personality assessments (separate table)
-    db.from('personality_assessments')
-      .select('id, guest_name, guest_age, guest_country, guest_city, status, created_at')
-      .not('guest_token', 'is', null)
-      .is('child_id', null)
-      .order('created_at', { ascending: false })
-      .limit(200),
   ])
 
   // Filter auth users by date range for stats
@@ -223,7 +206,7 @@ export default async function AdminPage({
     }
   }
 
-  const registeredUsers = allAuthUsers
+  const registeredUsers = usersInRange
     .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
     .map((u) => ({
       id:           u.id,
@@ -241,44 +224,7 @@ export default async function AdminPage({
         : 'none') as 'parent' | 'student' | 'both' | 'none',
     }))
 
-  type GuestRow = {
-    id: string
-    guest_name: string | null
-    guest_age: number | null
-    guest_country: string | null
-    guest_city: string | null
-    assessment_type: string
-    status: string
-    created_at: string
-  }
-
-  const academicGuests: GuestRow[] = (guestAssessmentsResult.data ?? []).map((g) => ({
-    id: g.id,
-    guest_name: g.guest_name,
-    guest_age: g.guest_age,
-    guest_country: g.guest_country,
-    guest_city: g.guest_city,
-    assessment_type: g.assessment_type ?? 'academic',
-    status: g.status,
-    created_at: g.created_at,
-  }))
-
-  const personalityGuests: GuestRow[] = (guestPersonalityResult.data ?? []).map((g) => ({
-    id: g.id,
-    guest_name: g.guest_name,
-    guest_age: g.guest_age,
-    guest_country: g.guest_country,
-    guest_city: g.guest_city,
-    assessment_type: 'personality',
-    status: g.status,
-    created_at: g.created_at,
-  }))
-
-  const guestAssessments = [...academicGuests, ...personalityGuests].sort(
-    (a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime(),
-  )
-
-  const periodLabel = `${new Date(fromISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })} – ${new Date(toISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`
+  const periodLabel =`${new Date(fromISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })} – ${new Date(toISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`
 
   return (
     <main className="px-8 py-10 space-y-6">
@@ -349,18 +295,9 @@ export default async function AdminPage({
       <div className="bg-white rounded-xl border overflow-hidden" style={{ borderColor: '#E2E6EF' }}>
         <div className="px-6 py-5 border-b" style={{ borderColor: '#E2E6EF' }}>
           <h2 className="text-sm font-semibold" style={{ color: '#0F172A' }}>Registered users</h2>
-          <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>{registeredUsers.length.toLocaleString()} total — all time</p>
+          <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>{registeredUsers.length.toLocaleString()} registered in {periodLabel}</p>
         </div>
         <UsersTable users={registeredUsers} />
-      </div>
-
-      {/* Guest assessments table */}
-      <div className="bg-white rounded-xl border overflow-hidden" style={{ borderColor: '#E2E6EF' }}>
-        <div className="px-6 py-5 border-b" style={{ borderColor: '#E2E6EF' }}>
-          <h2 className="text-sm font-semibold" style={{ color: '#0F172A' }}>Guest assessments</h2>
-          <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>{guestAssessments.length.toLocaleString()} total — all time</p>
-        </div>
-        <GuestAssessmentsTable assessments={guestAssessments} />
       </div>
 
     </main>
