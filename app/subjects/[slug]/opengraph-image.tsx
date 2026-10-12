@@ -39,6 +39,10 @@ const SUBJECTS: Record<string, { label: string; tagline: string; bg: string; acc
   },
 }
 
+export function generateStaticParams() {
+  return Object.keys(SUBJECTS).map((slug) => ({ slug }))
+}
+
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const subject = SUBJECTS[slug] ?? SUBJECTS['english']

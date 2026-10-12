@@ -1,8 +1,12 @@
 import { ImageResponse } from 'next/og'
-import { getAreaBySlug } from '../data'
+import { getAreaBySlug, GRAMMAR_AREAS } from '../data'
 
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
+
+export function generateStaticParams() {
+  return GRAMMAR_AREAS.map((a) => ({ area: a.slug }))
+}
 
 export default async function Image({ params }: { params: Promise<{ area: string }> }) {
   const { area: slug } = await params
