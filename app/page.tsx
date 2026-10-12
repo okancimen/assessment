@@ -156,7 +156,9 @@ const ORGANIZATION_SCHEMA = {
   ],
   sameAs: [
     'https://www.linkedin.com/company/eduentry',
-    'https://x.com/eduentry',
+    'https://x.com/eduentrycom',
+    'https://www.youtube.com/@eduentrycom',
+    'https://www.instagram.com/eduentrycom',
     'https://eduentry.ai',
   ],
 }

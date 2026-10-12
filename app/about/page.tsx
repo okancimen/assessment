@@ -94,7 +94,9 @@ const ORGANIZATION_SCHEMA = {
   areaServed: 'Worldwide',
   sameAs: [
     'https://www.linkedin.com/company/eduentry',
-    'https://x.com/eduentry',
+    'https://x.com/eduentrycom',
+    'https://www.youtube.com/@eduentrycom',
+    'https://www.instagram.com/eduentrycom',
   ],
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', url: 'https://eduentry.com/about' },
 }

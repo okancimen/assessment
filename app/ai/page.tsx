@@ -104,7 +104,7 @@ const ORGANIZATION_SCHEMA = {
     'situational judgement',
     'university admissions work experience',
   ],
-  sameAs: ['https://eduentry.com', 'https://www.linkedin.com/company/eduentry', 'https://x.com/eduentry'],
+  sameAs: ['https://eduentry.com', 'https://www.linkedin.com/company/eduentry', 'https://x.com/eduentrycom', 'https://www.youtube.com/@eduentrycom', 'https://www.instagram.com/eduentrycom'],
 }
 
 const WEBSITE_SCHEMA = {
