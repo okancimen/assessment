@@ -107,6 +107,7 @@ export default async function AdminPage({
     allLocationProfiles,
     allPersonalityAssessments,
     guestAssessmentsResult,
+    guestPersonalityResult,
   ] = await Promise.all([
     // All users from auth.users (used for both stats and table)
     db.auth.admin.listUsers({ perPage: 1000 }),
@@ -127,6 +128,13 @@ export default async function AdminPage({
     // Guest assessments (no child_id, has guest_token)
     db.from('assessments')
       .select('id, guest_name, guest_age, guest_country, guest_city, assessment_type, status, created_at')
+      .not('guest_token', 'is', null)
+      .is('child_id', null)
+      .order('created_at', { ascending: false })
+      .limit(200),
+    // Guest personality assessments (separate table)
+    db.from('personality_assessments')
+      .select('id, guest_name, guest_age, guest_country, guest_city, status, created_at')
       .not('guest_token', 'is', null)
       .is('child_id', null)
       .order('created_at', { ascending: false })
@@ -233,16 +241,42 @@ export default async function AdminPage({
         : 'none') as 'parent' | 'student' | 'both' | 'none',
     }))
 
-  const guestAssessments = (guestAssessmentsResult.data ?? []) as {
+  type GuestRow = {
     id: string
     guest_name: string | null
     guest_age: number | null
     guest_country: string | null
     guest_city: string | null
-    assessment_type: string | null
+    assessment_type: string
     status: string
     created_at: string
-  }[]
+  }
+
+  const academicGuests: GuestRow[] = (guestAssessmentsResult.data ?? []).map((g) => ({
+    id: g.id,
+    guest_name: g.guest_name,
+    guest_age: g.guest_age,
+    guest_country: g.guest_country,
+    guest_city: g.guest_city,
+    assessment_type: g.assessment_type ?? 'academic',
+    status: g.status,
+    created_at: g.created_at,
+  }))
+
+  const personalityGuests: GuestRow[] = (guestPersonalityResult.data ?? []).map((g) => ({
+    id: g.id,
+    guest_name: g.guest_name,
+    guest_age: g.guest_age,
+    guest_country: g.guest_country,
+    guest_city: g.guest_city,
+    assessment_type: 'personality',
+    status: g.status,
+    created_at: g.created_at,
+  }))
+
+  const guestAssessments = [...academicGuests, ...personalityGuests].sort(
+    (a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime(),
+  )
 
   const periodLabel = `${new Date(fromISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })} – ${new Date(toISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`
 

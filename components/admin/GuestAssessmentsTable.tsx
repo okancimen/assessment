@@ -44,19 +44,25 @@ export default function GuestAssessmentsTable({ assessments: initial }: { assess
   const [confirmId, setConfirmId] = useState<string | null>(null)
   const [deletingId, setDeletingId] = useState<string | null>(null)
 
-  async function handleDelete(assessmentId: string) {
+  async function handleDelete(assessmentId: string, type: string | null) {
     setDeletingId(assessmentId)
     try {
       const res = await fetch('/api/admin/assessments', {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ assessmentId }),
+        body: JSON.stringify({ assessmentId, type }),
       })
       if (res.ok) setAssessments((prev) => prev.filter((a) => a.id !== assessmentId))
     } finally {
       setDeletingId(null)
       setConfirmId(null)
     }
+  }
+
+  function resultsHref(a: GuestAssessment): string {
+    return a.assessment_type === 'personality'
+      ? `/personality-assessment/results/${a.id}`
+      : `/results/${a.id}`
   }
 
   if (assessments.length === 0) {
@@ -94,7 +100,7 @@ export default function GuestAssessmentsTable({ assessments: initial }: { assess
                 <div className="flex items-center justify-end gap-3">
                   {a.status === 'completed' && (
                     <a
-                      href={`/results/${a.id}`}
+                      href={resultsHref(a)}
                       className="text-xs font-semibold hover:underline"
                       style={{ color: '#4F46E5' }}
                     >
@@ -104,7 +110,7 @@ export default function GuestAssessmentsTable({ assessments: initial }: { assess
                   {confirmId === a.id ? (
                     <span className="flex items-center gap-2">
                       <button
-                        onClick={() => handleDelete(a.id)}
+                        onClick={() => handleDelete(a.id, a.assessment_type)}
                         disabled={deletingId === a.id}
                         className="text-[10px] font-semibold text-white bg-red-500 hover:bg-red-600 px-2.5 py-1 rounded-full transition-colors disabled:opacity-50"
                       >

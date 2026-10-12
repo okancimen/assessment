@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
+import { isAdminEmail } from '@/lib/admin'
 import { cookies } from 'next/headers'
 import { redirect, notFound } from 'next/navigation'
 import { Trait } from '@/lib/personality-questions'
@@ -51,7 +52,9 @@ export default async function GuestResultsPage({
   const guestToken = cookieStore.get('pg_tok')?.value
   const admin = createAdminClient()
 
-  if (user) {
+  const isAdmin = isAdminEmail(user?.email)
+
+  if (user && !isAdmin) {
     // If pg_tok present and matches this assessment → claim it inline
     if (guestToken) {
       const { data: guestAssessment } = await admin
@@ -91,18 +94,30 @@ export default async function GuestResultsPage({
     redirect('/personality-assessment')
   }
 
-  // Guest flow
-  if (!guestToken) redirect('/personality-assessment')
+  // Admins can view any guest result by id; guests need a matching token.
+  let assessment
+  if (isAdmin) {
+    const { data } = await admin
+      .from('personality_assessments')
+      .select('id, status, guest_name, guest_token')
+      .eq('id', assessmentId)
+      .single()
+    if (!data) notFound()
+    assessment = data
+  } else {
+    if (!guestToken) redirect('/personality-assessment')
+    const { data } = await admin
+      .from('personality_assessments')
+      .select('id, status, guest_name, guest_token')
+      .eq('id', assessmentId)
+      .eq('guest_token', guestToken)
+      .single()
+    if (!data) redirect('/personality-assessment')
+    assessment = data
+  }
 
-  const { data: assessment } = await admin
-    .from('personality_assessments')
-    .select('id, status, guest_name, guest_token')
-    .eq('id', assessmentId)
-    .eq('guest_token', guestToken)
-    .single()
-
-  if (!assessment) redirect('/personality-assessment')
   if (assessment.status !== 'completed') {
+    if (isAdmin) notFound()
     redirect(`/personality-assessment/question/${assessmentId}`)
   }
 

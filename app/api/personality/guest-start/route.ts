@@ -1,6 +1,7 @@
 import { createAdminClient } from '@/lib/supabase/admin'
 import { NextRequest, NextResponse } from 'next/server'
 import { getTier, getQuestions } from '@/lib/personality-questions'
+import { getClientIp, geolocateIp } from '@/lib/geo'
 
 function ageToDob(age: number): string {
   const d = new Date()
@@ -41,6 +42,19 @@ export async function POST(req: NextRequest) {
   if (error || !assessment) {
     return NextResponse.json({ error: error?.message ?? 'Failed to create' }, { status: 500 })
   }
+
+  // Geolocate the guest from their request IP (same source as the academic
+  // guest flow). Non-blocking and best-effort — never affects the assessment.
+  const ip = getClientIp(req.headers)
+  void geolocateIp(ip)
+    .then((geo) => {
+      if (!geo) return
+      return admin
+        .from('personality_assessments')
+        .update({ guest_country: geo.country, guest_city: geo.city })
+        .eq('id', assessment.id)
+    })
+    .catch(() => { /* geo is best-effort */ })
 
   const response = NextResponse.json({ assessmentId: assessment.id, totalQuestions })
   response.cookies.set('pg_tok', guestToken, {
