@@ -3,8 +3,12 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { isAdminEmail } from '@/lib/admin'
 import { redirect } from 'next/navigation'
 import GuestAssessmentsTable from '@/components/admin/GuestAssessmentsTable'
+import { SUBJECTS, QUESTIONS_PER_SUBJECT } from '@/types'
+import { getQuestions, Tier } from '@/lib/personality-questions'
 
 export const dynamic = 'force-dynamic'
+
+const ACADEMIC_TOTAL = SUBJECTS.length * QUESTIONS_PER_SUBJECT
 
 type GuestRow = {
   id: string
@@ -14,7 +18,25 @@ type GuestRow = {
   guest_city: string | null
   assessment_type: string
   status: string
+  progress: number
   created_at: string
+}
+
+function academicPct(
+  status: string,
+  session: { completed_subjects: string[] | null; question_index: number | null } | undefined,
+): number {
+  if (status === 'completed') return 100
+  if (!session || status === 'pending') return 0
+  const done = (session.completed_subjects?.length ?? 0) * QUESTIONS_PER_SUBJECT + (session.question_index ?? 0)
+  return Math.min(100, Math.round((done / ACADEMIC_TOTAL) * 100))
+}
+
+function personalityPct(status: string, tier: Tier, answerCount: number): number {
+  if (status === 'completed') return 100
+  const total = getQuestions(tier).length
+  if (!total) return 0
+  return Math.min(100, Math.round((answerCount / total) * 100))
 }
 
 export default async function AdminGuestsPage() {
@@ -33,14 +55,37 @@ export default async function AdminGuestsPage() {
       .order('created_at', { ascending: false })
       .limit(500),
     db.from('personality_assessments')
-      .select('id, guest_name, guest_age, guest_country, guest_city, status, created_at')
+      .select('id, guest_name, guest_age, guest_country, guest_city, age_tier, status, created_at')
       .not('guest_token', 'is', null)
       .is('child_id', null)
       .order('created_at', { ascending: false })
       .limit(500),
   ])
 
-  const academicGuests: GuestRow[] = (guestAssessmentsResult.data ?? []).map((g) => ({
+  const academicRows = guestAssessmentsResult.data ?? []
+  const personalityRows = guestPersonalityResult.data ?? []
+  const academicIds = academicRows.map((g) => g.id)
+  const personalityIds = personalityRows.map((g) => g.id)
+
+  // Live progress: academic from assessment_sessions, personality from answer counts.
+  const [sessionsResult, answersResult] = await Promise.all([
+    academicIds.length
+      ? db.from('assessment_sessions').select('assessment_id, completed_subjects, question_index').in('assessment_id', academicIds)
+      : Promise.resolve({ data: [] as { assessment_id: string; completed_subjects: string[] | null; question_index: number | null }[] }),
+    personalityIds.length
+      ? db.from('personality_answers').select('assessment_id').in('assessment_id', personalityIds)
+      : Promise.resolve({ data: [] as { assessment_id: string }[] }),
+  ])
+
+  const sessionByAssessment = new Map(
+    (sessionsResult.data ?? []).map((s) => [s.assessment_id, s]),
+  )
+  const answerCountByAssessment = new Map<string, number>()
+  for (const a of answersResult.data ?? []) {
+    answerCountByAssessment.set(a.assessment_id, (answerCountByAssessment.get(a.assessment_id) ?? 0) + 1)
+  }
+
+  const academicGuests: GuestRow[] = academicRows.map((g) => ({
     id: g.id,
     guest_name: g.guest_name,
     guest_age: g.guest_age,
@@ -48,10 +93,11 @@ export default async function AdminGuestsPage() {
     guest_city: g.guest_city,
     assessment_type: g.assessment_type ?? 'academic',
     status: g.status,
+    progress: academicPct(g.status, sessionByAssessment.get(g.id)),
     created_at: g.created_at,
   }))
 
-  const personalityGuests: GuestRow[] = (guestPersonalityResult.data ?? []).map((g) => ({
+  const personalityGuests: GuestRow[] = personalityRows.map((g) => ({
     id: g.id,
     guest_name: g.guest_name,
     guest_age: g.guest_age,
@@ -59,6 +105,7 @@ export default async function AdminGuestsPage() {
     guest_city: g.guest_city,
     assessment_type: 'personality',
     status: g.status,
+    progress: personalityPct(g.status, g.age_tier as Tier, answerCountByAssessment.get(g.id) ?? 0),
     created_at: g.created_at,
   }))
 

@@ -10,6 +10,7 @@ export interface GuestAssessment {
   guest_city: string | null
   assessment_type: string | null
   status: string
+  progress?: number
   created_at: string
 }
 
@@ -23,6 +24,22 @@ function StatusBadge({ status }: { status: string }) {
     <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${styles}`}>
       {label}
     </span>
+  )
+}
+
+function ProgressBar({ pct, status }: { pct: number; status: string }) {
+  const color =
+    status === 'completed' ? '#22C55E' :
+    status === 'in_progress' ? '#F59E0B' : '#CBD5E1'
+  return (
+    <div className="flex items-center gap-2 min-w-[90px]">
+      <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#F1F5F9' }}>
+        <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: color }} />
+      </div>
+      <span className="text-xs font-medium tabular-nums" style={{ color: pct === 0 ? '#CBD5E1' : color }}>
+        {pct}%
+      </span>
+    </div>
   )
 }
 
@@ -74,7 +91,7 @@ export default function GuestAssessmentsTable({ assessments: initial }: { assess
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b" style={{ borderColor: '#E2E6EF' }}>
-            {['Name', 'Age', 'Location', 'Assessment type', 'Status', 'Date', ''].map((h, i) => (
+            {['Name', 'Age', 'Location', 'Assessment type', 'Completion', 'Status', 'Date', ''].map((h, i) => (
               <th key={i} className="text-left px-6 py-3 text-xs font-semibold uppercase tracking-wide" style={{ color: '#64748B' }}>
                 {h}
               </th>
@@ -92,6 +109,7 @@ export default function GuestAssessmentsTable({ assessments: initial }: { assess
                   : a.guest_country ?? <span style={{ color: '#CBD5E1' }}>—</span>}
               </td>
               <td className="px-6 py-3"><TypeBadge type={a.assessment_type ?? 'academic'} /></td>
+              <td className="px-6 py-3"><ProgressBar pct={a.progress ?? 0} status={a.status} /></td>
               <td className="px-6 py-3"><StatusBadge status={a.status} /></td>
               <td className="px-6 py-3 text-xs" style={{ color: '#64748B' }}>
                 {new Date(a.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
