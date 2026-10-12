@@ -6,6 +6,9 @@ export interface GuestAssessment {
   id: string
   guest_name: string | null
   guest_age: number | null
+  guest_country: string | null
+  guest_city: string | null
+  assessment_type: string | null
   status: string
   created_at: string
 }
@@ -18,6 +21,19 @@ function StatusBadge({ status }: { status: string }) {
   const label = status === 'completed' ? 'Completed' : status === 'in_progress' ? 'In progress' : 'Pending'
   return (
     <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${styles}`}>
+      {label}
+    </span>
+  )
+}
+
+function TypeBadge({ type }: { type: string }) {
+  const styles =
+    type === 'internship' ? 'bg-purple-50 text-purple-600' :
+    type === 'personality' ? 'bg-emerald-50 text-emerald-600' :
+    'bg-blue-50 text-blue-600'
+  const label = type === 'internship' ? 'Internship' : type === 'personality' ? 'Personality' : 'Academic'
+  return (
+    <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium ${styles}`}>
       {label}
     </span>
   )
@@ -52,7 +68,7 @@ export default function GuestAssessmentsTable({ assessments: initial }: { assess
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b" style={{ borderColor: '#E2E6EF' }}>
-            {['Name', 'Age', 'Status', 'Date', ''].map((h, i) => (
+            {['Name', 'Age', 'Location', 'Assessment type', 'Status', 'Date', ''].map((h, i) => (
               <th key={i} className="text-left px-6 py-3 text-xs font-semibold uppercase tracking-wide" style={{ color: '#64748B' }}>
                 {h}
               </th>
@@ -64,6 +80,12 @@ export default function GuestAssessmentsTable({ assessments: initial }: { assess
             <tr key={a.id} className="border-b last:border-0" style={{ borderColor: '#E2E6EF' }}>
               <td className="px-6 py-3 font-medium" style={{ color: '#0F172A' }}>{a.guest_name ?? '—'}</td>
               <td className="px-6 py-3" style={{ color: '#64748B' }}>{a.guest_age ?? '—'}</td>
+              <td className="px-6 py-3 text-xs" style={{ color: '#64748B' }}>
+                {a.guest_city && a.guest_country
+                  ? `${a.guest_city}, ${a.guest_country}`
+                  : a.guest_country ?? <span style={{ color: '#CBD5E1' }}>—</span>}
+              </td>
+              <td className="px-6 py-3"><TypeBadge type={a.assessment_type ?? 'academic'} /></td>
               <td className="px-6 py-3"><StatusBadge status={a.status} /></td>
               <td className="px-6 py-3 text-xs" style={{ color: '#64748B' }}>
                 {new Date(a.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}

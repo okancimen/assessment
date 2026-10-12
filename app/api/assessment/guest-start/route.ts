@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { getInitialDifficulty } from '@/lib/assessment/adaptive'
+import { getClientIp, geolocateIp } from '@/lib/geo'
 import { SUBJECTS } from '@/types'
 
 function ageToDob(age: number): string {
@@ -55,6 +56,20 @@ export async function POST(req: NextRequest) {
   if (sessionError) {
     return NextResponse.json({ error: sessionError.message }, { status: 500 })
   }
+
+  // Geolocate the guest from their request IP (same source as registered-user
+  // location) and store it on the assessment. Non-blocking: we don't delay the
+  // response, and a failure never affects the assessment itself.
+  const ip = getClientIp(req.headers)
+  void geolocateIp(ip)
+    .then((geo) => {
+      if (!geo) return
+      return admin
+        .from('assessments')
+        .update({ guest_country: geo.country, guest_city: geo.city })
+        .eq('id', assessment.id)
+    })
+    .catch(() => { /* geo is best-effort */ })
 
   // Compute approximate dob for display purposes only — not stored
   void ageToDob(ageNum)

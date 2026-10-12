@@ -126,7 +126,7 @@ export default async function AdminPage({
     db.from('personality_assessments').select('parent_id, status, created_at'),
     // Guest assessments (no child_id, has guest_token)
     db.from('assessments')
-      .select('id, guest_name, guest_age, status, created_at')
+      .select('id, guest_name, guest_age, guest_country, guest_city, assessment_type, status, created_at')
       .not('guest_token', 'is', null)
       .is('child_id', null)
       .order('created_at', { ascending: false })
@@ -237,6 +237,9 @@ export default async function AdminPage({
     id: string
     guest_name: string | null
     guest_age: number | null
+    guest_country: string | null
+    guest_city: string | null
+    assessment_type: string | null
     status: string
     created_at: string
   }[]
