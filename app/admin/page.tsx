@@ -105,6 +105,7 @@ export default async function AdminPage({
     allAssessmentTypes,
     allLocationProfiles,
     allPersonalityAssessments,
+    guestAssessmentsResult,
   ] = await Promise.all([
     // All users from auth.users (used for both stats and table)
     db.auth.admin.listUsers({ perPage: 1000 }),
@@ -122,6 +123,13 @@ export default async function AdminPage({
     db.from('profiles').select('id, country, city'),
     // Personality assessments
     db.from('personality_assessments').select('parent_id, status, created_at'),
+    // Guest assessments (no child_id, has guest_token)
+    db.from('assessments')
+      .select('id, guest_name, guest_age, status, created_at')
+      .not('guest_token', 'is', null)
+      .is('child_id', null)
+      .order('created_at', { ascending: false })
+      .limit(200),
   ])
 
   // Filter auth users by date range for stats
@@ -224,6 +232,14 @@ export default async function AdminPage({
         : 'none') as 'parent' | 'student' | 'both' | 'none',
     }))
 
+  const guestAssessments = (guestAssessmentsResult.data ?? []) as {
+    id: string
+    guest_name: string | null
+    guest_age: number | null
+    status: string
+    created_at: string
+  }[]
+
   const periodLabel = `${new Date(fromISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })} – ${new Date(toISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`
 
   return (
@@ -298,6 +314,61 @@ export default async function AdminPage({
           <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>{registeredUsers.length.toLocaleString()} total — all time</p>
         </div>
         <UsersTable users={registeredUsers} />
+      </div>
+
+      {/* Guest assessments table */}
+      <div className="bg-white rounded-xl border overflow-hidden" style={{ borderColor: '#E2E6EF' }}>
+        <div className="px-6 py-5 border-b" style={{ borderColor: '#E2E6EF' }}>
+          <h2 className="text-sm font-semibold" style={{ color: '#0F172A' }}>Guest assessments</h2>
+          <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>{guestAssessments.length.toLocaleString()} total — all time</p>
+        </div>
+        {guestAssessments.length === 0 ? (
+          <p className="px-6 py-8 text-sm text-center" style={{ color: '#64748B' }}>No guest assessments yet.</p>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b" style={{ borderColor: '#E2E6EF' }}>
+                  <th className="text-left px-6 py-3 text-xs font-semibold uppercase tracking-wide" style={{ color: '#64748B' }}>Name</th>
+                  <th className="text-left px-6 py-3 text-xs font-semibold uppercase tracking-wide" style={{ color: '#64748B' }}>Age</th>
+                  <th className="text-left px-6 py-3 text-xs font-semibold uppercase tracking-wide" style={{ color: '#64748B' }}>Status</th>
+                  <th className="text-left px-6 py-3 text-xs font-semibold uppercase tracking-wide" style={{ color: '#64748B' }}>Date</th>
+                  <th className="px-6 py-3" />
+                </tr>
+              </thead>
+              <tbody>
+                {guestAssessments.map((g) => (
+                  <tr key={g.id} className="border-b last:border-0" style={{ borderColor: '#E2E6EF' }}>
+                    <td className="px-6 py-3 font-medium" style={{ color: '#0F172A' }}>{g.guest_name ?? '—'}</td>
+                    <td className="px-6 py-3" style={{ color: '#64748B' }}>{g.guest_age ?? '—'}</td>
+                    <td className="px-6 py-3">
+                      <span className={[
+                        'inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium',
+                        g.status === 'completed' ? 'bg-emerald-100 text-emerald-700' :
+                        g.status === 'in_progress' ? 'bg-amber-100 text-amber-700' :
+                        'bg-slate-100 text-slate-500',
+                      ].join(' ')}>
+                        {g.status === 'completed' ? 'Completed' : g.status === 'in_progress' ? 'In progress' : 'Pending'}
+                      </span>
+                    </td>
+                    <td className="px-6 py-3 text-xs" style={{ color: '#64748B' }}>
+                      {new Date(g.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                    </td>
+                    <td className="px-6 py-3 text-right">
+                      <a
+                        href={`/assessment/${g.id}/results`}
+                        className="text-xs font-semibold hover:underline"
+                        style={{ color: '#4F46E5' }}
+                      >
+                        View
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
 
     </main>
