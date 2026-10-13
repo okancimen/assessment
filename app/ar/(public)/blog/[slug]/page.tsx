@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
 import CtaLink from '@/components/ui/CtaLink'
+import BlogStickyCta from '@/components/blog/BlogStickyCta'
 import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
 import { RelatedPostsGrid } from '@/components/blog/RelatedPostsGrid'
 import { getRelatedFromPosts } from '@/lib/related-posts'
@@ -138,6 +139,7 @@ export default async function ARBlogPostPage({ params }: { params: Promise<{ slu
 
   return (
     <main lang="ar" dir="rtl" className="max-w-3xl mx-auto px-6 py-16">
+      <BlogStickyCta href={post.cta?.href ?? '/ar/taqyim-acadimi'} label={post.cta?.label ?? 'ابدأ التقييم المجاني'} note="مجاني · لا حاجة لحساب" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
 import CtaLink from '@/components/ui/CtaLink'
+import BlogStickyCta from '@/components/blog/BlogStickyCta'
 import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
 import { RelatedPostsGrid } from '@/components/blog/RelatedPostsGrid'
 import { getRelatedFromPosts } from '@/lib/related-posts'
@@ -138,6 +139,7 @@ export default async function FRBlogPostPage({ params }: { params: Promise<{ slu
 
   return (
     <main lang="fr" className="max-w-3xl mx-auto px-6 py-16">
+      <BlogStickyCta href={post.cta?.href ?? '/fr/evaluation-academique'} label={post.cta?.label ?? "Commencer l'évaluation gratuite"} note="Gratuit · sans compte" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
