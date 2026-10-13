@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { brandedTitle } from '@/lib/seo'
 import Link from 'next/link'
 import CtaLink from '@/components/ui/CtaLink'
+import BlogLocaleLinks from '@/components/blog/BlogLocaleLinks'
 import BlogStickyCta from '@/components/blog/BlogStickyCta'
 import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
 import { RelatedPostsGrid } from '@/components/blog/RelatedPostsGrid'
@@ -152,6 +153,8 @@ export default async function ESBlogPostPage({ params }: { params: Promise<{ slu
         <span className="mx-2">›</span>
         <span className="text-[#1d1d1f]">{post.shortTitle}</span>
       </nav>
+
+      <BlogLocaleLinks currentLocale="es" enSlug={post.contentSlug} />
 
       <div className="mb-12">
         <div className="flex flex-wrap gap-2 mb-5">
