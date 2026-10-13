@@ -7,9 +7,15 @@ import StartAssessmentButton from './StartAssessmentButton'
 import { getAge, formatDate } from '@/lib/utils'
 import { Assessment } from '@/types'
 import { getScoreLabel, getScoreColor } from '@/lib/assessment/adaptive'
+import GrowthChart, { type GrowthPoint } from '@/components/dashboard/GrowthChart'
 
+type SubjectScore = { standardized_score?: number }
 interface AssessmentWithResult extends Assessment {
-  results: { overall_score: number; standardized_score: number } | null
+  results: {
+    overall_score: number
+    standardized_score: number
+    subject_scores?: Record<string, SubjectScore> | null
+  } | null
 }
 
 const AVATAR_COLORS = [
@@ -78,7 +84,7 @@ export default async function ChildPage({ params }: { params: Promise<{ id: stri
 
   const { data: assessments } = await supabase
     .from('assessments')
-    .select('*, results(overall_score, standardized_score)')
+    .select('*, results(overall_score, standardized_score, subject_scores)')
     .eq('child_id', id)
     .order('created_at', { ascending: false })
 
@@ -92,6 +98,20 @@ export default async function ChildPage({ params }: { params: Promise<{ id: stri
     .reverse()
 
   const latestCompleted = completed[completed.length - 1]
+
+  // Growth chart series (overall + per-subject standardised scores over time)
+  const growthData: GrowthPoint[] = completed.map((a) => {
+    const subs = a.results!.subject_scores ?? {}
+    const sub = (k: string) => (typeof subs[k]?.standardized_score === 'number' ? subs[k]!.standardized_score! : null)
+    return {
+      date: formatDate(a.created_at),
+      overall: a.results!.standardized_score,
+      english: sub('english'),
+      mathematics: sub('mathematics'),
+      verbal_reasoning: sub('verbal_reasoning'),
+      nonverbal_reasoning: sub('nonverbal_reasoning'),
+    }
+  })
 
   function getTrend(a: AssessmentWithResult): 'up' | 'down' | 'same' | null {
     const idx = completed.findIndex((x) => x.id === a.id)
@@ -157,6 +177,26 @@ export default async function ChildPage({ params }: { params: Promise<{ id: stri
 
         {/* Assessment history */}
         <section>
+          {growthData.length >= 2 && (
+            <div className="mb-6">
+              <GrowthChart data={growthData} />
+            </div>
+          )}
+          {growthData.length === 1 && (
+            <div className="mb-6 bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-5 flex items-start gap-3">
+              <svg className="w-5 h-5 text-[#4F46E5] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 17l6-6 4 4 8-8" />
+              </svg>
+              <div>
+                <p className="text-sm font-semibold text-[#1d1d1f]">Track {child.name}&apos;s growth</p>
+                <p className="text-xs text-[#6e6e73] mt-0.5">
+                  Retake the assessment in a few months to see a progress chart here — a score trend is far more
+                  telling than a single result.
+                </p>
+              </div>
+            </div>
+          )}
+
           <h2 className="text-base font-semibold text-[#1d1d1f] mb-4">Assessment history</h2>
           {typedAssessments.length === 0 ? (
             <div className="bg-white rounded-3xl border border-dashed border-[#d2d2d7] p-10 text-center">
