@@ -3,6 +3,126 @@ import { Bullet, Callout, Check, Cross } from './blog-components'
 
 export const TR_CONTENT: Record<string, React.ReactNode> = {
 
+  'test-anxiety-in-children-strengths': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Sınav öncesi o geceyi bilirsiniz: çocuğunuz uyuyamaz, midesinin ağrıdığını söyler, &ldquo;her şeyden
+        kalacağım&rdquo; diye ısrar eder — ya da ders çalışmaya oturur ve zihni bomboş kalır. Bir veli için en
+        çaresiz hissettiren anlardan biridir ve her zamanki öğütler (&ldquo;daha çok çalış&rdquo;, &ldquo;sakin
+        ol&rdquo;) genellikle işe yaramaz. İşe yarayan bakış açısı şudur: <strong>sınav kaygısı çalışarak değil,
+        yönetilerek aşılır</strong> — ve en etkili araç çocuğunuzun zaten sahip olduğu karakter güçleridir.
+      </p>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bu sınav kaygısı mı?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sınav öncesi biraz heyecan normaldir — hatta faydalıdır. Çocuğunuzun performansını veya kendini iyi
+          hissetmesini sürekli engellemeye başladığında kaygıya dönüşür. Genellikle üç biçimde ortaya çıkar:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>Fiziksel:</strong> uyku sorunu, mide ağrısı veya baş ağrısı, kalp çarpıntısı, sınav öncesi mide bulantısı.</Bullet>
+          <Bullet><strong>Davranışsal:</strong> erteleme, kaçınma (&ldquo;sonra yaparım&rdquo;) veya konuyu bildiği halde sınavda donma.</Bullet>
+          <Bullet><strong>Duygusal:</strong> sinirlilik, ağlamaklı olma, &ldquo;yapamayacağım&rdquo; ya da &ldquo;herkes benden iyi&rdquo; gibi iç konuşmalar.</Bullet>
+        </ul>
+        <Callout>
+          <strong>Kaygı mı, hazırlıksızlık mı?</strong> Bazı çocuklar iyi hazırlandıkları halde donar — bu kaygıdır
+          ve çözüm baş etme stratejileridir. Bazıları ise aslında yeterince hazırlanmadığı için &ldquo;kaygılı&rdquo;
+          hisseder; orada çözüm çalışma düzenidir. Hangisiyle karşı karşıya olduğunuzu bilmek önemlidir.
+        </Callout>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Neden olur?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Stres altında beyin, kaynaklarını düşünen bölgelerden (prefrontal korteks) bir tehdit tepkisine yönlendirir.
+          <strong> Çalışan bellek</strong> — çocuğun bilgiyi tutup işlemek için kullandığı zihinsel alan — özellikle
+          kırılgandır; iyi çalışmış bir çocuğun bir gün önce bildiği soruda &ldquo;donması&rdquo;nın nedeni tam da
+          budur. Kaçınma durumu kötüleştirir: rahatsızlıktan kaçmak için çalışmayı ertelemek kısa vadede rahatlatır
+          ama bir sonraki sefer kaygıyı artırır. Amaç tüm heyecanı yok etmek değil — onu çocuğun hâlâ düşünebileceği
+          bir düzeyde tutmaktır.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bakış açısı: sadece çalışmak değil, güçlü yönler</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuklar stresle tek bir evrensel yolla baş etmez — sahip oldukları güçlü yönler üzerinden baş eder.
+          <em> Azim</em> yönü güçlü bir çocuk, kaygıyı <em>sosyal zeka</em> yönü güçlü bir çocuktan farklı aşar.
+          Dolayısıyla genel bir &ldquo;sakin ol&rdquo; yerine en etkili yaklaşım, çocuğunuzun gerçekten sahip olduğu
+          bir gücü belirleyip onu somut bir alışkanlıkla eşleştirmektir. İşte sınav kaygısına doğrudan uyan beş güç.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Fırtınayı dindiren 5 güçlü yön</h2>
+        <div className="space-y-4">
+          {[
+            {
+              name: 'Öz Denetim',
+              does: 'Fiziksel paniği yönetir — hızlanan kalbi ve spiral düşünceleri.',
+              tactic: 'Kısa bir sınav öncesi ritüel kurun: üç yavaş nefes (4’te al, 6’da ver), ardından tek bir topraklayıcı cümle ("Hazırlandım; tek tek, soru soru ilerleyeceğim"). Önceden çalışıldığında bir çapa hâline gelir.',
+            },
+            {
+              name: 'Azim',
+              does: 'Kaygıyı en çok büyüten şeyi — kaçınma ve ertelemeyi — kırar.',
+              tactic: '15 dakikalık başlangıçlar kullanın: sadece 15 dakika çalışmaya söz verin. Zor olan başlamaktır; başlayınca çoğu çocuk devam eder. Küçük ve tekrar eden yaklaşım, tek bir korkutucu maratondan iyidir.',
+            },
+            {
+              name: 'Cesaret',
+              does: 'Çocuğun korkulan sınavdan kaçmak yerine onunla yüzleşmesini sağlar.',
+              tactic: 'Korkuyu yüksek sesle adlandırın ("Her şeyi unutmaktan korkuyorum"), sonra evde süreli koşullarda düşük riskli bir deneme sınavıyla küçültün — maruz kalmak gerçeğini daha az korkutucu yapar.',
+            },
+            {
+              name: 'Umut',
+              does: 'Felaketleştiren düşünceyi çözer ("bundan kalırsam tüm geleceğim mahvolur").',
+              tactic: 'Birlikte yeniden çerçeveleyin: "bir sınav geleceğini belirlemez." Belirli bir sınav kötü geçse bile hâlâ doğru kalan şeyleri çocuğunuza saydırın — tünel görüşüne sıkışmış anı genişletir.',
+            },
+            {
+              name: 'Canlılık ve Sosyal Zeka',
+              does: 'Enerjiyi (canlılık) geri kazandırır ve yalnızlaşmayı (sosyal zeka) önler — kaygının sessizce aşındırdığı iki şey.',
+              tactic: 'Gece boyu çalışma yerine uykuyu, hareketi ve molaları koruyun; sizinle, bir arkadaşla veya öğretmenle konuşmayı teşvik edin. Yakında sakin bir yetişkinin olması — birlikte sakinleşme — çocuğun stresini gerçekten düşürür.',
+            },
+          ].map(({ name, does, tactic }) => (
+            <div key={name} className="rounded-2xl border border-gray-100 bg-gray-50/60 p-5">
+              <h3 className="font-bold text-gray-900 mb-1">{name}</h3>
+              <p className="text-sm text-gray-600 mb-2">{does}</p>
+              <p className="text-sm text-gray-700"><strong className="text-indigo-700">Evde deneyin:</strong> {tactic}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Çocuğunuzun beşine birden sahip olması gerekmez. Gerçekten sahip olduğu bir-iki güce yaslanmak bile, sınav
+          öncesi bir spirali yönetilebilir bir şeye dönüştürmeye genellikle yeter.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzun güçlü yönlerini nasıl bulursunuz?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İşin püf noktası: adını koymadığınız bir güce yaslanmak zordur. Birçok veli çocuğunun karakteri hakkında kaba
+          bir fikre sahiptir ama net bir haritası yoktur — ve sınav stresi altında güçlü yönleri gözden kaçırmak kolaydır.
+          Eduentry&rsquo;nin ücretsiz, VIA temelli{' '}
+          <Link href="/tr/kisilik-degerlendirmesi" className="text-indigo-600 hover:underline font-medium">kişilik testi</Link>{' '}
+          24 karakter gücünün tamamını yaklaşık beş dakikada belirler; böylece baskı en yüksekken çocuğunuzun hangi
+          güçlere başvurabileceğini tam olarak bilirsiniz. Çocuğunuzun gerçekte <em>ne kadar</em> hazır olduğuna dair
+          net bir tablo da kaygıyı azaltabilir — {' '}
+          <Link href="/tr/akademik-degerlendirme" className="text-indigo-600 hover:underline font-medium">akademik değerlendirme</Link>{' '}
+          nesnel bir okuma verir, böylece &ldquo;kalacağım&rdquo; kanıtla karşılanabilir.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ne zaman uzman desteği almalı?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yukarıdaki stratejiler günlük sınav heyecanını destekler. Profesyonel bakımın yerini <strong>tutmaz</strong>.
+          Çocuğunuzun kaygısı şiddetliyse, haftalar veya dönemler boyunca sürüyorsa, uykuyu ya da iştahı bozuyorsa, okul
+          reddine yol açıyorsa veya çocuğunuz umutsuzluk dile getiriyorsa bir hekime, okul rehber öğretmenine ya da çocuk
+          psikoloğuna başvurun. Erkenden destek istemek başlı başına bir güçtür.
+        </p>
+      </section>
+    </>
+  ),
+
   'early-internship-child-development-career': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">

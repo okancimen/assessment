@@ -2,6 +2,47 @@ import type { BlogPostMeta } from './posts'
 
 export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
+    slug: 'cocuklarda-sinav-kaygisi-guclu-yonler',
+    contentSlug: 'test-anxiety-in-children-strengths',
+    title: 'Çocuklarda Sınav Kaygısı: Güçlü Yönlerle Baş Etmenin Yolu',
+    shortTitle: 'Çocuklarda Sınav Kaygısı: Güçlü Yönlerle Baş Etme',
+    description:
+      'Çocuklarda sınav kaygısı çalışarak değil, yönetilerek aşılır. Belirtileri, nedenleri ve beş karakter gücünün — azim, cesaret, umut, canlılık ve sosyal zeka — kaygıyı nasıl azalttığını evde uygulanabilir yöntemlerle keşfedin.',
+    tldr: 'Çocuğunuz sınav öncesi donuyor, erteliyor veya çöküyorsa çözüm nadiren "daha çok çalış"tır. Sınav kaygısı çalışarak değil yönetilerek aşılır — ve en etkili araç çocuğunuzun zaten sahip olduğu karakter güçleridir. Bu rehber belirtileri, nedenleri ve beş gücün — azim, cesaret, umut, canlılık ve sosyal zeka — kaygıyı nasıl çözdüğünü evde uygulanabilir yöntemlerle anlatır. Eduentry\'nin ücretsiz kişilik testi 24 karakter gücünü dakikalar içinde belirler.',
+    date: '2026-10-14',
+    dateModified: '2026-10-14',
+    readTime: '8 dk okuma',
+    tags: ['Sınav Kaygısı', 'Karakter Güçleri', 'Veli Rehberi', 'Çocuk Gelişimi', 'Kişilik Testi', 'İyi Oluş'],
+    faqs: [
+      {
+        q: 'Çocuklarda sınav kaygısının belirtileri nelerdir?',
+        a: 'Sınav kaygısı kendini üç biçimde gösterir: fiziksel (uyku sorunu, mide ağrısı, baş ağrısı, sınav öncesi kalp çarpıntısı), davranışsal (erteleme, kaçınma, konuyu bildiği halde sınavda donma) ve duygusal (sinirlilik, ağlama, "yapamayacağım" söylemi). Bir miktar heyecan normaldir ve hatta faydalıdır; performansı veya iyi oluşu sürekli engellediğinde kaygıya dönüşür.',
+      },
+      {
+        q: 'Çocuğumun sınav kaygısını yenmesine nasıl yardımcı olabilirim?',
+        a: 'Hazırlığın ötesinde en kalıcı destek, çocuğunuzun sahip olduğu karakter güçleri üzerine inşa etmektir: öz denetim (sakinleşme rutinleri), azim (kaçınmak yerine başlamak), cesaret (sınavla yüzleşmek), umut (felaket senaryolarını çürütmek) ve sosyal zeka (yalnızlaşmak yerine destek istemek). Belirli bir gücü somut bir alışkanlıkla eşleştirmek — sınav öncesi nefes ritüeli, "15 dakikalık başlangıçlar", "bir sınav tüm geleceğimi belirlemez" diye yeniden çerçeveleme — "sakin ol" demekten çok daha etkilidir.',
+      },
+      {
+        q: 'Sınav kaygısı ile hazırlıksızlık aynı şey midir?',
+        a: 'Her zaman değil. Bazı çocuklar iyi hazırlandıkları halde donar — bu kaygıdır. Bazıları ise aslında yeterince hazırlanmadığı için "kaygılı" hisseder; burada çözüm duygusal baş etme değil, çalışma düzenidir. İkisini ayırt etmek önemlidir: gerçek hazırlık kaygıyı azaltır, ancak hazır olduğu halde paniklemeyi sürdüren bir çocuk için güçlü yönler ve baş etme stratejileri asıl araçtır.',
+      },
+      {
+        q: 'Hangi karakter güçleri sınav kaygısına en çok yardımcı olur?',
+        a: 'Beş tanesi özellikle işe yarar: öz denetim (fiziksel paniği yönetmek), azim (kaçınma ve ertelemeyi kırmak), cesaret (korkulan sınavla yüzleşmek), umut (felaketleştiren düşünceleri yeniden çerçevelemek), canlılık ve sosyal zeka (fiziksel toparlanma ve destek arama). Çocuğun hepsine sahip olması gerekmez — zaten sahip olduğu bir-iki güce yaslanmak bile güvenilir biçimde yardımcı olur.',
+      },
+      {
+        q: 'Çocuğumun sınav kaygısı için ne zaman uzman desteği almalıyım?',
+        a: 'Kaygı şiddetliyse, haftalar veya dönemler boyunca sürüyorsa, uykuya/iştaha yansıyorsa, okul reddine yol açıyorsa ya da çocuğunuz umutsuzluk dile getiriyorsa bir hekime, okul rehber öğretmenine veya çocuk psikoloğuna başvurun. Bu rehberdeki stratejiler günlük sınav heyecanını destekler; kaygı günlük yaşamı etkilediğinde profesyonel desteğin yerini tutmaz.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun yaslanabileceği güçlü yönleri keşfedin',
+      body: '6–20 yaş için VIA temelli ücretsiz kişilik testi. Çocuğunuzun karakter güçlerini — stres ve zorluklarla baş etmeye en çok yardımcı olanlar dahil — yaklaşık 5 dakikada belirler. Hesap gerekmez.',
+      label: 'Ücretsiz kişilik testini başlat',
+      href: '/tr/kisilik-degerlendirmesi',
+    },
+  },
+  {
     slug: 'erken-yas-staj-cocuk-gelisimi-kariyer',
     contentSlug: 'early-internship-child-development-career',
     title: 'Erken Yaşta Stajın Önemi: Çocuk Gelişimi, Olgunluk ve Biriken Kariyer Avantajı',

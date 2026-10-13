@@ -22,6 +22,46 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: 'test-anxiety-in-children-strengths',
+    title: 'Test Anxiety in Children: A Strengths-Based Way to Help Your Child Cope',
+    shortTitle: 'Test Anxiety in Children: A Strengths-Based Way to Help',
+    description:
+      'Exam anxiety in children is managed, not studied away. Learn the signs, why it happens, and how five character strengths — perseverance, bravery, hope, zest and social intelligence — help your child cope, with practical home tactics.',
+    tldr: 'If your child freezes, procrastinates, or melts down before exams, the answer is rarely "study more." Test anxiety is managed, not studied away — and the most effective lever is your child\'s existing character strengths. This guide covers the signs, why it happens, and how five strengths — perseverance, bravery, hope, zest and social intelligence — each defuse anxiety, with practical tactics you can use at home. Eduentry\'s free personality assessment identifies all 24 strengths in under 15 minutes.',
+    date: '2026-10-14',
+    dateModified: '2026-10-14',
+    readTime: '8 min read',
+    tags: ['Test Anxiety', 'Character Strengths', 'Parent Guide', 'Child Development', 'Personality Assessment', 'Wellbeing'],
+    faqs: [
+      {
+        q: 'What are the signs of test anxiety in children?',
+        a: 'Test anxiety shows up physically (trouble sleeping, stomach aches, headaches, racing heart before exams), behaviourally (procrastination, avoidance, going blank despite knowing the material), and emotionally (irritability, tearfulness, "I can\'t do this"). A degree of nerves is normal and even helpful; it becomes anxiety when it consistently blocks performance or wellbeing.',
+      },
+      {
+        q: 'How can I help my child overcome test anxiety?',
+        a: 'Beyond preparation, the most durable help is to build on the character strengths your child already has: self-regulation for calming routines, perseverance to approach rather than avoid, bravery to face the exam, hope to counter catastrophic thinking, and social intelligence to seek support instead of isolating. Pairing a specific strength with a concrete habit (a pre-exam breathing ritual, 15-minute study starts, reframing "one exam ≠ my whole future") works better than telling a child to "just relax."',
+      },
+      {
+        q: 'Is test anxiety the same as not being prepared?',
+        a: 'Not always. Some children are well prepared but still freeze — that is anxiety. Others feel "anxious" mainly because they are under-prepared, and the fix is study structure, not emotional coping. Telling them apart matters: genuine preparedness reduces anxiety, but for a prepared child who still panics, coping strategies and strengths are the lever.',
+      },
+      {
+        q: 'Which character strengths help most with exam anxiety?',
+        a: 'Five are especially useful: self-regulation (managing the physical panic), perseverance (beating avoidance and procrastination), bravery (facing the feared exam), hope (reframing catastrophic thoughts), and zest and social intelligence (physical recovery and seeking support). A child does not need all of them — leaning on even one or two they already have reliably helps.',
+      },
+      {
+        q: 'When should I seek professional help for my child\'s test anxiety?',
+        a: 'If anxiety is severe, persistent across weeks or terms, spills into sleep, appetite or school refusal, or your child expresses hopelessness, consult your GP, school counsellor, or a child psychologist. The strategies in this guide support everyday exam nerves; they are not a substitute for professional care when anxiety is affecting daily life.',
+      },
+    ],
+    cta: {
+      heading: 'Find the strengths your child can lean on',
+      body: 'A free VIA-backed personality assessment for ages 6–20. Identifies your child\'s character strengths — including the ones that help most with stress and setbacks — in about 5 minutes. No account needed.',
+      label: 'Start free personality assessment',
+      href: '/personality-assessment',
+    },
+  },
+  {
     slug: 'early-internship-child-development-career',
     title: 'Why Internships at Early Ages Matter: Child Development, Maturity, and the Career Advantage That Compounds',
     shortTitle: 'Internships at Early Age: Development & Career Benefits',

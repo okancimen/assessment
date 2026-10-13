@@ -9,6 +9,127 @@ import { UK_CONTENT_AUSTRALIA } from './content-uk-australia'
 
 export const UK_CONTENT: Record<string, React.ReactNode> = {
 
+  'test-anxiety-in-children-strengths': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        You know the night before an exam: your child can&rsquo;t sleep, says their stomach hurts, insists
+        they&rsquo;ll &ldquo;fail everything&rdquo; — or sits down to revise and simply goes blank. It&rsquo;s
+        one of the most helpless feelings for a parent, and the usual advice (&ldquo;just study more,&rdquo;
+        &ldquo;just relax&rdquo;) rarely works. Here is the reframe that does: <strong>test anxiety is managed,
+        not studied away</strong> — and the most effective lever is the character strengths your child already has.
+      </p>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Is this test anxiety?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A little nervousness before an exam is normal — even useful. It tips into anxiety when it consistently
+          gets in the way of how your child performs or feels. It tends to show up in three ways:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>Physical:</strong> trouble sleeping, stomach aches or headaches, racing heart, feeling sick before the exam.</Bullet>
+          <Bullet><strong>Behavioural:</strong> procrastination, avoidance (&ldquo;I&rsquo;ll do it later&rdquo;), or going blank in the room despite knowing the material.</Bullet>
+          <Bullet><strong>Emotional:</strong> irritability, tearfulness, self-talk like &ldquo;I can&rsquo;t do this&rdquo; or &ldquo;everyone&rsquo;s better than me.&rdquo;</Bullet>
+        </ul>
+        <Callout>
+          <strong>Anxiety vs. unpreparedness.</strong> Some children are well prepared and still freeze — that is
+          anxiety, and coping strategies are the lever. Others feel &ldquo;anxious&rdquo; mainly because they&rsquo;re
+          under-prepared — there, study structure is the fix. Knowing which one you&rsquo;re looking at matters.
+        </Callout>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why it happens</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Under stress, the brain diverts resources away from the thinking parts (the prefrontal cortex) toward a
+          threat response. <strong>Working memory</strong> — the mental workspace a child uses to hold and
+          manipulate information — is especially vulnerable, which is exactly why a well-revised child can &ldquo;blank&rdquo;
+          on a question they knew the day before. Avoidance makes it worse: skipping revision to escape the discomfort
+          brings short-term relief but raises anxiety next time. The goal isn&rsquo;t to remove all nerves — it&rsquo;s to
+          keep them at a level where your child can still think.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The reframe: strengths, not just study</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Children don&rsquo;t cope with stress in one universal way — they cope through the strengths they already
+          have. A child high in <em>perseverance</em> beats anxiety differently from one high in <em>social
+          intelligence</em>. So instead of a generic &ldquo;calm down,&rdquo; the most effective approach is to
+          identify a strength your child genuinely has and pair it with a concrete habit. Here are five that map
+          directly onto exam anxiety.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5 strengths that calm the storm</h2>
+        <div className="space-y-4">
+          {[
+            {
+              name: 'Self-regulation',
+              does: 'Manages the physical panic — the racing heart and spiralling thoughts.',
+              tactic: 'Build a short pre-exam ritual: three slow breaths (in for 4, out for 6), then one grounding sentence ("I’ve prepared; I’ll take it one question at a time"). Practised in advance, it becomes an anchor.',
+            },
+            {
+              name: 'Perseverance',
+              does: 'Beats avoidance and procrastination — the biggest multipliers of anxiety.',
+              tactic: 'Use 15-minute starts: agree to revise for just 15 minutes. Starting is the hard part; once begun, most children continue. Small, repeated approach beats one dreaded marathon.',
+            },
+            {
+              name: 'Bravery',
+              does: 'Lets a child face the feared exam instead of fleeing it.',
+              tactic: 'Name the fear out loud ("I’m scared I’ll forget everything"), then shrink it with a low-stakes mock under timed conditions at home — exposure makes the real thing less frightening.',
+            },
+            {
+              name: 'Hope',
+              does: 'Dissolves catastrophic thinking ("if I fail this, my whole future is ruined").',
+              tactic: 'Reframe together: "one exam does not decide your future." Help your child name what is still true even if a specific exam goes badly — it widens a tunnel-visioned moment.',
+            },
+            {
+              name: 'Zest & social intelligence',
+              does: 'Restores energy (zest) and prevents isolation (social intelligence) — two things anxiety quietly erodes.',
+              tactic: 'Protect sleep, movement and breaks instead of all-nighters; and encourage talking it through with you, a friend or a teacher. Co-regulation — a calm adult nearby — genuinely lowers a child’s stress.',
+            },
+          ].map(({ name, does, tactic }) => (
+            <div key={name} className="rounded-2xl border border-gray-100 bg-gray-50/60 p-5">
+              <h3 className="font-bold text-gray-900 mb-1">{name}</h3>
+              <p className="text-sm text-gray-600 mb-2">{does}</p>
+              <p className="text-sm text-gray-700"><strong className="text-indigo-700">Try at home:</strong> {tactic}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Your child doesn&rsquo;t need all five. Leaning on even one or two strengths they genuinely have is usually
+          enough to shift a pre-exam spiral into something manageable.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to find your child&rsquo;s strengths</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The catch: it&rsquo;s hard to lean on a strength you haven&rsquo;t named. Many parents have a rough sense of
+          their child&rsquo;s character but not a clear map — and under exam stress, strengths are easy to overlook.
+          Eduentry&rsquo;s free, VIA-backed{' '}
+          <Link href="/personality-assessment" className="text-indigo-600 hover:underline font-medium">personality assessment</Link>{' '}
+          identifies all 24 character strengths in about five minutes, so you know exactly which ones your child can
+          draw on when the pressure is highest. A clearer picture of <em>how</em> prepared your child really is can
+          also ease anxiety — our{' '}
+          <Link href="/academic-assessment" className="text-indigo-600 hover:underline font-medium">academic assessment</Link>{' '}
+          gives an objective read so &ldquo;I&rsquo;ll fail&rdquo; can be met with evidence.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">When to seek professional help</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The strategies above support everyday exam nerves. They are <strong>not</strong> a substitute for
+          professional care. If your child&rsquo;s anxiety is severe, persists across weeks or terms, disrupts sleep
+          or appetite, leads to school refusal, or your child expresses hopelessness, speak to your GP, school
+          counsellor, or a child psychologist. Reaching out early is a strength in itself.
+        </p>
+      </section>
+    </>
+  ),
+
   'global-academic-benchmarks-report-2026': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
