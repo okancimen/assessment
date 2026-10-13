@@ -393,7 +393,10 @@ export default function ElevenPlusPage() {
         {/* Score guide */}
         <section className="mb-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">What score does your child need?</h2>
-          <p className="text-gray-500 mb-6">Grammar schools typically require scores in the top 10–25% nationally. On the Eduentry scale:</p>
+          <p className="text-gray-500 mb-6">
+            Grammar schools typically require scores in the top 10–25% nationally. On the Eduentry scale
+            (see our <Link href="/11-plus-sas-scores" className="text-indigo-600 hover:underline font-medium">SAS scores explained</Link> guide):
+          </p>
           <div className="rounded-xl border border-gray-100 overflow-hidden">
             <table className="w-full text-sm">
               <thead className="bg-gray-50">

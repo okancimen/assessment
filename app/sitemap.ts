@@ -98,6 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { 'en-GB': BASE, es: `${BASE}/es`, tr: `${BASE}/tr`, fr: `${BASE}/fr`, ar: `${BASE}/ar`, ru: `${BASE}/ru`, zh: `${BASE}/zh`, 'x-default': BASE } },
     },
     { url: `${BASE}/11-plus`,         lastModified: '2026-09-23', changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/11-plus-sas-scores`, lastModified: '2026-10-13', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/grammar-schools`, lastModified: '2026-09-23', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/subjects`,        lastModified: '2026-09-09', changeFrequency: 'monthly', priority: 0.8 },
     {
