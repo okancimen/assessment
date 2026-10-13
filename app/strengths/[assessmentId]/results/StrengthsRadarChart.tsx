@@ -4,6 +4,7 @@ import {
   RadarChart,
   PolarGrid,
   PolarAngleAxis,
+  PolarRadiusAxis,
   Radar,
   ResponsiveContainer,
   Tooltip,
@@ -64,6 +65,10 @@ export default function StrengthsRadarChart({
             dataKey="trait"
             tick={{ fontSize: 10, fill: '#6e6e73', fontWeight: 500 }}
           />
+          {/* Lock the radial scale to the 1–5 trait range (0 centre) so a 5 reaches the rim
+              — without this, recharts auto-scales and rounds the max up to 6. */}
+          <PolarRadiusAxis domain={[0, 5]} tick={false} axisLine={false} />
+
           {showAvg && (
             <Radar
               name="avg"
