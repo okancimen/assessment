@@ -2,8 +2,7 @@ import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import Link from 'next/link'
 import GuestStartForm from '@/app/personality-assessment/GuestStartForm'
-import { SAMPLE_TRAIT_SCORES, SAMPLE_PEER_AVG } from '@/lib/sample-personality'
-import type { Trait } from '@/lib/personality-questions'
+import HeroRadarCard from '@/components/personality/HeroRadarCard'
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -127,31 +126,6 @@ const TIERS = [
   { label: 'Genç Yetişkin', age: '18–20 yaş', traits: 'Tüm 24 özellik', questions: '48 soru', color: 'bg-orange-50 border-orange-200 text-orange-700' },
 ]
 
-const SAMPLE_STRENGTHS = [
-  { name: 'Merak', pct: 84, color: 'bg-blue-500' },
-  { name: 'Yaratıcılık', pct: 72, color: 'bg-purple-500' },
-  { name: 'Canlılık', pct: 66, color: 'bg-orange-500' },
-  { name: 'İyilik', pct: 58, color: 'bg-pink-500' },
-  { name: 'Umut', pct: 51, color: 'bg-amber-500' },
-]
-
-// 24-trait radar geometry for the hero mockup (sample profile + age average)
-const RADAR_TRAITS = Object.keys(SAMPLE_TRAIT_SCORES) as Trait[]
-const RADAR_CX = 120
-const RADAR_CY = 120
-const RADAR_R = 92
-function radarPoint(i: number, value: number): [number, number] {
-  const angle = (-90 + i * (360 / RADAR_TRAITS.length)) * (Math.PI / 180)
-  const r = (value / 5) * RADAR_R
-  return [RADAR_CX + r * Math.cos(angle), RADAR_CY + r * Math.sin(angle)]
-}
-function radarPolygon(values: number[]): string {
-  return values.map((v, i) => radarPoint(i, v).map((n) => n.toFixed(1)).join(',')).join(' ')
-}
-const RADAR_SCORE_PTS = radarPolygon(RADAR_TRAITS.map((t) => SAMPLE_TRAIT_SCORES[t]))
-const RADAR_AVG_PTS = radarPolygon(RADAR_TRAITS.map((t) => SAMPLE_PEER_AVG[t]))
-const RADAR_AXES = RADAR_TRAITS.map((_, i) => radarPoint(i, 5))
-
 export default function KisilikDegerlendirmesiPage() {
   return (
     <>
@@ -183,60 +157,7 @@ export default function KisilikDegerlendirmesiPage() {
           </div>
 
           {/* Right: Sample Report Preview */}
-          <div className="hidden lg:block mt-10 lg:mt-0">
-            <div className="bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-6">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-9 h-9 rounded-full bg-indigo-100 flex items-center justify-center text-sm font-bold text-indigo-600 shrink-0">A</div>
-                <div>
-                  <p className="text-sm font-semibold text-[#1d1d1f]">Ali · 9 Yaş</p>
-                  <p className="text-xs text-[#6e6e73]">Örnek rapor</p>
-                </div>
-              </div>
-              <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-1">Karakter Profili · 24 özellik</p>
-              <svg viewBox="0 0 240 240" className="w-full" role="img" aria-label="24 karakter özelliği için örnek radar grafiği, çocuğun profili ve yaş ortalaması ile">
-                {/* web rings */}
-                {[0.25, 0.5, 0.75, 1].map((f) => (
-                  <circle key={f} cx={RADAR_CX} cy={RADAR_CY} r={RADAR_R * f} fill="none" stroke="#e5e7eb" strokeWidth="1" />
-                ))}
-                {/* 24 axes */}
-                <g stroke="#eef2ff" strokeWidth="1">
-                  {RADAR_AXES.map(([x, y], i) => (
-                    <line key={i} x1={RADAR_CX} y1={RADAR_CY} x2={x.toFixed(1)} y2={y.toFixed(1)} />
-                  ))}
-                </g>
-                {/* age average — dotted, no fill */}
-                <polygon points={RADAR_AVG_PTS} fill="none" stroke="#0D9488" strokeWidth="1.5" strokeDasharray="4 2" strokeLinejoin="round" />
-                {/* child's sample profile — solid */}
-                <polygon points={RADAR_SCORE_PTS} fill="rgba(79,70,229,0.15)" stroke="#4F46E5" strokeWidth="2" strokeLinejoin="round" />
-              </svg>
-              {/* legend */}
-              <div className="flex items-center justify-center gap-4 mt-1 text-[10px] text-[#6e6e73]">
-                <span className="flex items-center gap-1.5">
-                  <span className="block w-4 h-0.5 rounded-full bg-[#4F46E5]" /> Çocuğunuz
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <svg width="16" height="2" viewBox="0 0 16 2"><line x1="0" y1="1" x2="16" y2="1" stroke="#0D9488" strokeWidth="1.5" strokeDasharray="4 2" /></svg>
-                  Yaş ortalaması
-                </span>
-              </div>
-              <div className="flex flex-wrap gap-1.5 justify-center mt-3">
-                {SAMPLE_STRENGTHS.slice(0, 3).map((s) => (
-                  <span key={s.name} className="text-[10px] font-medium text-[#4338CA] bg-indigo-50 rounded-full px-2 py-0.5">
-                    {s.name} {s.pct}%
-                  </span>
-                ))}
-              </div>
-              <div className="mt-5 pt-5 border-t border-[#f5f5f7]">
-                <p className="text-xs text-[#6e6e73] leading-relaxed italic">
-                  &ldquo;Ali&rsquo;nin doğal merakı ve yaratıcı zihni, onu bağımsız düşünmeye yöneltiyor. En çok keşif odaklı etkinliklerde parlıyor.&rdquo;
-                </p>
-              </div>
-              <div className="mt-4 flex gap-2 flex-wrap">
-                <span className="text-xs bg-indigo-50 text-indigo-600 rounded-full px-3 py-1 font-medium">VIA Çerçevesi</span>
-                <span className="text-xs bg-green-50 text-green-600 rounded-full px-3 py-1 font-medium">24 Özellik</span>
-              </div>
-            </div>
-          </div>
+          <HeroRadarCard locale="tr" />
         </div>
 
         {/* Trust strip */}

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import GuestStartForm from '@/app/personality-assessment/GuestStartForm'
+import HeroRadarCard from '@/components/personality/HeroRadarCard'
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -130,8 +131,9 @@ export default function EvaluacionDePersonalidadPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#f5f3ff] to-white pt-20 pb-16 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
+      <section className="bg-gradient-to-b from-[#f5f3ff] to-white pt-16 pb-12 px-6">
+        <div className="max-w-5xl mx-auto lg:grid lg:grid-cols-[1fr_340px] lg:gap-12 lg:items-center">
+          <div>
           <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-1.5 mb-6">
             <span className="text-xs font-semibold text-indigo-700 uppercase tracking-wider">Fortalezas VIA · Edades 6–20</span>
           </div>
@@ -151,6 +153,8 @@ export default function EvaluacionDePersonalidadPage() {
             ¿Ya tienes una cuenta?{' '}
             <Link href="/es/auth/login" className="text-[#4F46E5] hover:underline font-medium">Iniciar sesión</Link>
           </p>
+          </div>
+          <HeroRadarCard locale="es" />
         </div>
       </section>
 
