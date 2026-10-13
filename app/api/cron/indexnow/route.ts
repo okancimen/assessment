@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import getSitemap from '@/app/sitemap'
 
-const INDEXNOW_KEY = '668f5830837348c9b10a615b5d3ee411'
+const INDEXNOW_KEY = 'fb555a6e825b4c729eb70c08c060e069'
 const INDEXNOW_HOST = 'eduentry.com'
 const WINDOW_DAYS = 3
 
