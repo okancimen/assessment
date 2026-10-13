@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import CtaLink from '@/components/ui/CtaLink'
@@ -46,7 +45,7 @@ export default function SampleReportPage() {
                 Alex is a fictional 10-year-old. We&rsquo;ve given Alex a deliberately mixed profile — strong in Verbal Reasoning, below average in Maths — so you can see what the report looks like when results vary across subjects. Your child&rsquo;s report will have their real scores.
               </p>
             </div>
-            <CtaLink href="/auth/register" label="sample_report_intro_cta" className="mt-6 lg:mt-0 shrink-0 inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-indigo-700 transition-colors text-sm">
+            <CtaLink href="/academic-assessment" label="sample_report_intro_cta" className="mt-6 lg:mt-0 shrink-0 inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-indigo-700 transition-colors text-sm">
               Start free assessment →
             </CtaLink>
           </div>

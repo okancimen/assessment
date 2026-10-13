@@ -51,6 +51,19 @@ const ACADEMIC_ALTERNATES = {
   },
 }
 
+const PERSONALITY_SAMPLE_ALTERNATES = {
+  languages: {
+    'en-GB': `${BASE}/sample-report/personality`,
+    es: `${BASE}/es/informe-de-ejemplo-personalidad`,
+    tr: `${BASE}/tr/kisilik-ornek-rapor`,
+    fr: `${BASE}/fr/exemple-rapport-personnalite`,
+    ar: `${BASE}/ar/namudhaj-taqrir-shakhsiya`,
+    ru: `${BASE}/ru/primer-otcheta-lichnosti`,
+    zh: `${BASE}/zh/xingge-yangben-baogao`,
+    'x-default': `${BASE}/sample-report/personality`,
+  },
+}
+
 const SUBJECTS = ['english', 'maths', 'verbal-reasoning', 'non-verbal-reasoning']
 
 // contentSlug → slug maps for cross-language hreflang
@@ -103,7 +116,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${BASE}/demo`,            lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/sample-report`,   lastModified: '2026-10-04', changeFrequency: 'monthly', priority: 0.8, alternates: SAMPLE_REPORT_ALTERNATES },
-    { url: `${BASE}/sample-report/personality`, lastModified: '2026-10-13', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/sample-report/personality`, lastModified: '2026-10-13', changeFrequency: 'monthly', priority: 0.8, alternates: PERSONALITY_SAMPLE_ALTERNATES },
     {
       url: `${BASE}/blog`,
       lastModified: latestEN,

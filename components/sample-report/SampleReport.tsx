@@ -4,8 +4,24 @@ import BellCurve from '@/components/landing/BellCurve'
 import CtaLink from '@/components/ui/CtaLink'
 import type { Locale, SampleReportContent, SubjectKey } from './types'
 import { SAMPLE_REPORT_PATHS } from './paths'
+import { SAMPLE_PERSONALITY_PATHS, type SampleLocale } from '@/lib/sample-personality-i18n'
 
 const BASE_URL = 'https://eduentry.com'
+
+// Academic assessment landing (guest flow) + personality sample cross-link, per locale.
+const ACADEMIC_LANDING: Record<Locale, string> = {
+  en: '/academic-assessment', tr: '/tr/akademik-degerlendirme', es: '/es/evaluacion-academica',
+  fr: '/fr/evaluation-academique', ar: '/ar/taqyim-acadimi', ru: '/ru/akademicheskaya-otsenka', zh: '/zh/xueshu-pinggu',
+}
+const PERSONALITY_SAMPLE_LABEL: Record<Locale, string> = {
+  en: 'See the personality sample report',
+  tr: 'Kişilik örnek raporunu görün',
+  es: 'Ver el informe de personalidad de ejemplo',
+  fr: 'Voir le rapport de personnalité exemple',
+  ar: 'اطلع على تقرير الشخصية النموذجي',
+  ru: 'Смотреть пример отчёта о личности',
+  zh: '查看性格示例报告',
+}
 
 const HREFLANG: Record<Locale, string> = {
   en: 'en-GB', tr: 'tr', es: 'es', fr: 'fr', ar: 'ar', ru: 'ru', zh: 'zh',
@@ -129,7 +145,8 @@ export default function SampleReport({ content: c }: { content: SampleReportCont
   const url = `${BASE_URL}${c.path}`
   const homeHref = c.locale === 'en' ? '/' : `/${c.locale}`
   const homeUrl = c.locale === 'en' ? BASE_URL : `${BASE_URL}/${c.locale}`
-  const registerHref = c.locale === 'en' ? '/auth/register' : `/${c.locale}/auth/register`
+  const registerHref = ACADEMIC_LANDING[c.locale]
+  const personalitySampleHref = SAMPLE_PERSONALITY_PATHS[c.locale as SampleLocale]
   const labelSuffix = c.locale === 'en' ? '' : `_${c.locale}`
   const name = c.childName
 
@@ -465,6 +482,11 @@ export default function SampleReport({ content: c }: { content: SampleReportCont
           >
             {c.ctaButton}
           </CtaLink>
+          <div className="mt-5">
+            <Link href={personalitySampleHref} className="text-sm text-indigo-100 underline underline-offset-2 hover:text-white">
+              {PERSONALITY_SAMPLE_LABEL[c.locale]} →
+            </Link>
+          </div>
         </div>
 
         {/* ── Methodology ── */}
