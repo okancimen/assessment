@@ -107,6 +107,8 @@ export default async function AdminPage({
     allAssessmentTypes,
     allLocationProfiles,
     allPersonalityAssessments,
+    guestAcademicConv,
+    guestPersonalityConv,
   ] = await Promise.all([
     // All users from auth.users (used for both stats and table)
     db.auth.admin.listUsers({ perPage: 1000 }),
@@ -124,6 +126,14 @@ export default async function AdminPage({
     db.from('profiles').select('id, country, city'),
     // Personality assessments
     db.from('personality_assessments').select('parent_id, status, created_at'),
+    // Guest-conversion funnel (all-time). A guest row keeps guest_name even after
+    // it's claimed; claimed = child_id set (token nulled). Guest-only = guest_token present.
+    db.from('assessments')
+      .select('status, guest_token, child_id, guest_name')
+      .not('guest_name', 'is', null),
+    db.from('personality_assessments')
+      .select('status, guest_token, child_id, guest_name')
+      .not('guest_name', 'is', null),
   ])
 
   // Filter auth users by date range for stats
@@ -226,6 +236,17 @@ export default async function AdminPage({
         : 'none') as 'parent' | 'student' | 'both' | 'none',
     }))
 
+  // ── Guest-conversion funnel (all-time) ─────────────────────────────────────
+  type GuestConvRow = { status: string; guest_token: string | null; child_id: string | null; guest_name: string | null }
+  const guestRows: GuestConvRow[] = [
+    ...((guestAcademicConv.data ?? []) as GuestConvRow[]),
+    ...((guestPersonalityConv.data ?? []) as GuestConvRow[]),
+  ]
+  const guestStarted   = guestRows.length
+  const guestCompleted = guestRows.filter((r) => r.status === 'completed').length
+  const guestClaimed   = guestRows.filter((r) => r.child_id != null).length // claimed → account
+  const guestConvRate  = guestStarted > 0 ? Math.round((guestClaimed / guestStarted) * 100) : 0
+
   const periodLabel =`${new Date(fromISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })} – ${new Date(toISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`
 
   return (
@@ -269,6 +290,32 @@ export default async function AdminPage({
                 {value.toLocaleString()}
               </div>
               <div className="text-xs mt-2 font-medium" style={{ color: '#64748B' }}>{label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Guest-conversion funnel (all-time) */}
+      <div className="bg-white rounded-xl border overflow-hidden" style={{ borderColor: '#E2E6EF' }}>
+        <div className="px-6 py-5 border-b flex items-center justify-between gap-4" style={{ borderColor: '#E2E6EF' }}>
+          <div>
+            <h2 className="text-sm font-semibold" style={{ color: '#0F172A' }}>Guest conversion</h2>
+            <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>No-account assessments → registered account · all time</p>
+          </div>
+          <div className="text-right">
+            <div className="text-2xl font-extrabold tabular-nums" style={{ color: '#C9883A' }}>{guestConvRate}%</div>
+            <div className="text-[11px]" style={{ color: '#64748B' }}>claim rate</div>
+          </div>
+        </div>
+        <div className="grid grid-cols-3 divide-x" style={{ borderColor: '#E2E6EF' }}>
+          {[
+            { label: 'Guests started', value: guestStarted },
+            { label: 'Completed', value: guestCompleted },
+            { label: 'Claimed (→ account)', value: guestClaimed },
+          ].map(({ label, value }) => (
+            <div key={label} className="px-6 py-4">
+              <div className="text-xl font-bold tabular-nums" style={{ color: '#0F172A' }}>{value.toLocaleString()}</div>
+              <div className="text-xs mt-1" style={{ color: '#64748B' }}>{label}</div>
             </div>
           ))}
         </div>
