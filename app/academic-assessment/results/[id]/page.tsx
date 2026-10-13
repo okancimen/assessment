@@ -190,10 +190,22 @@ export default async function GuestAcademicResultsPage({
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
               </svg>
             </div>
-            <p className="text-base font-bold text-[#1d1d1f]">Unlock Full Analysis</p>
-            <p className="text-sm text-[#6e6e73] max-w-xs">
-              Topic-level breakdowns, AI-generated insights, and personalised recommendations for each subject.
-            </p>
+            <p className="text-base font-bold text-[#1d1d1f]">Unlock the full report — free</p>
+            <ul className="text-sm text-[#3d3d3f] space-y-2 text-left max-w-xs w-full">
+              {[
+                'Topic-by-topic breakdown — your child\'s exact weak areas',
+                'AI action plan — specific next steps for each subject',
+                'Percentile ranking + UK, US, PISA & IB context',
+                'Save the report & track growth when you retake',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-[#4F46E5] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
             <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xs">
               <Link
                 href={`/auth/register?redirect=${encodeURIComponent(claimUrl)}`}

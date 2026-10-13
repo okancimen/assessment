@@ -62,6 +62,7 @@ export interface PersonalityI18n {
   viaFrameworkSubtitle: string
   unlockTitle: (n: number) => string
   unlockDesc: string
+  unlockBullets: string[]
   createAccountBtn: string
   signInBtn: string
   // Academic cross-sell
@@ -167,6 +168,12 @@ const EN: PersonalityI18n = {
   viaFrameworkSubtitle: 'Based on the VIA Character Strengths framework',
   unlockTitle: (n) => `Unlock all ${n} traits + AI growth report`,
   unlockDesc: 'Create a free account to see the full profile, save it permanently, and get personalised parenting tips from AI.',
+  unlockBullets: [
+    'All 24 character strengths — not just the top 3',
+    'AI development summary + personalised parenting tips',
+    'How your child compares to peers their age',
+    'Save the profile & track growth over time',
+  ],
   createAccountBtn: 'Create free account',
   signInBtn: 'Sign in',
   crossSellEyebrow: 'Next step',
@@ -271,6 +278,12 @@ const FR: PersonalityI18n = {
   viaFrameworkSubtitle: 'Basé sur le cadre des forces de caractère VIA',
   unlockTitle: (n) => `Débloquez les ${n} traits + rapport de croissance IA`,
   unlockDesc: 'Créez un compte gratuit pour voir le profil complet, le sauvegarder et recevoir des conseils parentaux personnalisés de notre IA.',
+  unlockBullets: [
+    'Les 24 forces de caractère — pas seulement le top 3',
+    'Résumé de développement IA + conseils parentaux personnalisés',
+    'Comparaison avec les enfants du même âge',
+    'Sauvegardez le profil et suivez les progrès dans le temps',
+  ],
   createAccountBtn: 'Créer un compte gratuit',
   signInBtn: 'Se connecter',
   crossSellEyebrow: 'Étape suivante',
@@ -375,6 +388,12 @@ const ES: PersonalityI18n = {
   viaFrameworkSubtitle: 'Basado en el marco de Fortalezas de Carácter VIA',
   unlockTitle: (n) => `Desbloquea los ${n} rasgos + informe de crecimiento IA`,
   unlockDesc: 'Crea una cuenta gratuita para ver el perfil completo, guardarlo y recibir consejos de crianza personalizados de nuestra IA.',
+  unlockBullets: [
+    'Las 24 fortalezas de carácter — no solo el top 3',
+    'Resumen de desarrollo con IA + consejos de crianza personalizados',
+    'Cómo se compara tu hijo con otros de su edad',
+    'Guarda el perfil y sigue el progreso en el tiempo',
+  ],
   createAccountBtn: 'Crear cuenta gratis',
   signInBtn: 'Iniciar sesión',
   crossSellEyebrow: 'Siguiente paso',
@@ -479,6 +498,12 @@ const AR: PersonalityI18n = {
   viaFrameworkSubtitle: 'استناداً إلى إطار نقاط قوة الشخصية VIA',
   unlockTitle: (n) => `افتح جميع ${n} سمات + تقرير النمو بالذكاء الاصطناعي`,
   unlockDesc: 'أنشئ حساباً مجانياً لعرض الملف الكامل وحفظه والحصول على نصائح تربوية مخصصة بالذكاء الاصطناعي.',
+  unlockBullets: [
+    'جميع نقاط القوة الـ 24 — وليس فقط أبرز 3',
+    'ملخص تطوّر بالذكاء الاصطناعي + نصائح تربوية مخصصة',
+    'كيف يقارن طفلك بأقرانه في نفس العمر',
+    'احفظ الملف وتابع التقدم عبر الزمن',
+  ],
   createAccountBtn: 'إنشاء حساب مجاني',
   signInBtn: 'تسجيل الدخول',
   crossSellEyebrow: 'الخطوة التالية',
@@ -583,6 +608,12 @@ const TR: PersonalityI18n = {
   viaFrameworkSubtitle: 'VIA Karakter Güçleri çerçevesine dayalıdır',
   unlockTitle: (n) => `${n} özelliğin tamamını + Yapay Zeka büyüme raporunu açın`,
   unlockDesc: 'Tam profili görmek, kalıcı olarak kaydetmek ve yapay zekadan kişiselleştirilmiş ebeveynlik tavsiyeleri almak için ücretsiz hesap oluşturun.',
+  unlockBullets: [
+    'Sadece ilk 3 değil, 24 karakter gücünün tamamı',
+    'Yapay zeka gelişim özeti + kişiselleştirilmiş ebeveynlik tavsiyeleri',
+    'Çocuğunuzun yaşıtlarıyla karşılaştırması',
+    'Profili kaydedin ve zaman içinde gelişimi izleyin',
+  ],
   createAccountBtn: 'Ücretsiz hesap oluştur',
   signInBtn: 'Giriş yap',
   crossSellEyebrow: 'Sonraki adım',
@@ -687,6 +718,12 @@ const RU: PersonalityI18n = {
   viaFrameworkSubtitle: 'На основе структуры VIA «Сильные стороны характера»',
   unlockTitle: (n) => `Откройте все ${n} черт + отчёт о росте от ИИ`,
   unlockDesc: 'Создайте бесплатный аккаунт, чтобы увидеть полный профиль, сохранить его и получить персонализированные советы по воспитанию от ИИ.',
+  unlockBullets: [
+    'Все 24 сильные стороны характера — не только топ-3',
+    'ИИ-резюме развития + персональные советы по воспитанию',
+    'Сравнение со сверстниками того же возраста',
+    'Сохраните профиль и отслеживайте прогресс со временем',
+  ],
   createAccountBtn: 'Создать бесплатный аккаунт',
   signInBtn: 'Войти',
   crossSellEyebrow: 'Следующий шаг',
@@ -791,6 +828,12 @@ const ZH: PersonalityI18n = {
   viaFrameworkSubtitle: '基于VIA性格优势框架',
   unlockTitle: (n) => `解锁全部${n}个特质 + AI成长报告`,
   unlockDesc: '创建免费账户，查看完整档案、永久保存，并获取AI个性化育儿建议。',
+  unlockBullets: [
+    '全部24项品格优势 — 不只是前3项',
+    'AI成长总结 + 个性化育儿建议',
+    '与同龄孩子的对比',
+    '保存档案并长期追踪成长',
+  ],
   createAccountBtn: '免费创建账户',
   signInBtn: '登录',
   crossSellEyebrow: '下一步',

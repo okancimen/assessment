@@ -207,7 +207,16 @@ export default async function GuestResultsPage({
           {/* Overlay */}
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/85 backdrop-blur-[2px] px-6 text-center gap-4">
             <p className="text-base font-bold text-[#1d1d1f]">{t.unlockTitle(totalTraits)}</p>
-            <p className="text-sm text-[#6e6e73] max-w-xs">{t.unlockDesc}</p>
+            <ul className="text-sm text-[#3d3d3f] space-y-2 text-start max-w-xs w-full">
+              {t.unlockBullets.map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-[#4F46E5] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
             <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xs">
               <Link
                 href={`${locale !== 'en' ? `/${locale}` : ''}/auth/register?redirect=${encodeURIComponent(`/personality-assessment/results/${assessmentId}${locale !== 'en' ? `?locale=${locale}` : ''}`)}`}
