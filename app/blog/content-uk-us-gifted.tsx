@@ -190,7 +190,8 @@ export const UK_CONTENT_US_GIFTED: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed mb-4">
           The table below shows approximate fall MAP Math RIT scores by grade and percentile, based on
           NWEA national norms. Reading and Language Usage follow similar patterns with slightly different
-          absolute values.
+          absolute values. To check a specific score, use our{' '}
+          <Link href="/tools/nwea-rit-calculator" className="text-indigo-600 hover:underline font-medium">interactive NWEA RIT calculator</Link>.
         </p>
         <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
           <table className="w-full text-sm">

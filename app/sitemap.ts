@@ -115,6 +115,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { 'en-GB': `${BASE}/methodology`, es: `${BASE}/es/metodologia`, tr: `${BASE}/tr/metodoloji`, fr: `${BASE}/fr/methodologie`, ar: `${BASE}/ar/manhajiyya`, ru: `${BASE}/ru/metodologiya`, zh: `${BASE}/zh/fangfalun`, 'x-default': `${BASE}/methodology` } },
     },
     { url: `${BASE}/demo`,            lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/tools/nwea-rit-calculator`, lastModified: '2026-10-13', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/sample-report`,   lastModified: '2026-10-04', changeFrequency: 'monthly', priority: 0.8, alternates: SAMPLE_REPORT_ALTERNATES },
     { url: `${BASE}/sample-report/personality`, lastModified: '2026-10-13', changeFrequency: 'monthly', priority: 0.8, alternates: PERSONALITY_SAMPLE_ALTERNATES },
     {

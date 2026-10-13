@@ -142,6 +142,7 @@ export async function proxy(request: NextRequest) {
     request.nextUrl.pathname.startsWith('/subjects') ||
     request.nextUrl.pathname.startsWith('/blog') ||
     request.nextUrl.pathname.startsWith('/demo') ||
+    request.nextUrl.pathname.startsWith('/tools') ||
     request.nextUrl.pathname.startsWith('/grammar-schools') ||
     request.nextUrl.pathname.startsWith('/privacy') ||
     request.nextUrl.pathname.startsWith('/terms') ||
