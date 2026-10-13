@@ -495,7 +495,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'gifted-program-testing-guide',
     title: 'Gifted Program Testing Guide: How US Gifted Identification Works and How to Prepare',
-    shortTitle: 'US Gifted Program Testing 2026: CogAT & WISC',
+    shortTitle: 'US Gifted Testing 2026: CogAT, WISC-V & Score Thresholds',
     description:
       'US gifted program identification: CogAT, WISC-V, NWEA MAP, and OLSAT explained, with score thresholds by program type and a practical preparation guide.',
     tldr: 'Most US gifted programs require an IQ of 130 or above (98th+ percentile) for formal identification. New York City\'s Gifted & Talented programme has historically required the 99th percentile. Pull-out enrichment programmes typically accept the 90th–95th percentile. The most common group screening test is the CogAT; the most common individual IQ test is the WISC-V.',
@@ -2437,7 +2437,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'what-is-the-11-plus-exam-complete-guide',
     title: 'What Is the 11+ Exam? The Complete Parent\'s Guide to Grammar School Entry',
-    shortTitle: 'What Is the 11+ Exam?',
+    shortTitle: '11+ Exam Explained 2026: Scoring, SAS & Grammar School Entry',
     description:
       'The complete parent\'s guide to the 11+ exam: what it tests, how scoring works, the 3 biggest preparation mistakes, and how to find your child\'s real level.',
     tldr: 'The 11+ tests English, Maths, Verbal Reasoning, and Non-Verbal Reasoning — but it measures reasoning ability, not curriculum knowledge. School grades are a poor predictor of 11+ performance. The three biggest preparation mistakes are drilling without a baseline, interpreting raw percentage marks, and creating early exam anxiety. The most accurate way to benchmark your child\'s real 11+ level is a 2PL IRT adaptive assessment — the same psychometric method used by PISA and GCSE.',
