@@ -238,7 +238,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'See where your child stands internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -307,7 +307,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Get your child\'s 11+ benchmark today',
       body: 'Free adaptive assessment across English, Maths, Verbal and Non-Verbal Reasoning — with a standardised score, percentile ranking, and AI-generated recommendations.',
       label: 'Start free 11+ practice test',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -367,7 +367,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Get your child\'s standardised score',
       body: 'Free adaptive assessment on the same mean-100, SD-15 scale used by PISA, GL Assessment, and professional cognitive tests.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -427,7 +427,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Test your child\'s verbal reasoning today',
       body: 'Free adaptive assessment across Verbal Reasoning, Non-Verbal Reasoning, English and Maths — with a standardised score and percentile ranking.',
       label: 'Start free 11+ practice test',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -488,7 +488,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Know your child\'s grammar school chances',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — the same scale used by grammar school entrance exams across England.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   // US
@@ -549,7 +549,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'See how your child compares internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — the same scale used by cognitive assessments internationally.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -618,7 +618,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'See how your child compares internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — the same scale used by cognitive assessments internationally.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -654,7 +654,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'See how your child compares internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -691,7 +691,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'See how your child compares internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — the same benchmarks used in gifted identification worldwide.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   // Netherlands
@@ -728,7 +728,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Benchmark your child internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — directly comparable to Cito and international PISA and IB benchmarks.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -764,7 +764,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Benchmark your child internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -800,7 +800,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Benchmark your child internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -836,7 +836,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Benchmark your child internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   // UAE
@@ -897,7 +897,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'How does your child compare internationally?',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — directly comparable to the CAT4 scale used in UAE international schools.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -933,7 +933,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'How does your child compare internationally?',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — directly comparable to the CAT4 scale used in UAE international schools.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -969,7 +969,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'How does your child compare internationally?',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — directly comparable to the CAT4 scale used in UAE international schools.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1005,7 +1005,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'How does your child compare internationally?',
       body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1041,7 +1041,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Benchmark your child before applying',
       body: 'Our free adaptive assessment gives your child a standardised score on the same mean-100, SD-15 scale as CAT4 — so you know exactly where they stand before the admissions round.',
       label: 'Start free assessment',
-      href: '/tr#akademik',
+      href: '/academic-assessment',
     },
   },
   // Canada
@@ -1078,7 +1078,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Benchmark your child against international standards',
       body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1115,7 +1115,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Benchmark your child against international standards',
       body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1152,7 +1152,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Benchmark your child against international standards',
       body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1188,7 +1188,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Benchmark your child against international standards',
       body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   // Australia
@@ -1226,7 +1226,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'See where your child stands internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — benchmarked against UK, US, PISA and IB standards for international context.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1262,7 +1262,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'See where your child stands internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — benchmarked against UK, US, PISA and IB standards for international context.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1299,7 +1299,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'See where your child stands internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — benchmarked against UK, US, PISA and IB standards for international context.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1336,7 +1336,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'See where your child stands internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — benchmarked against UK, US, PISA and IB standards for international context.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1577,7 +1577,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Find out where your child actually stands',
       body: 'Eduentry\'s free adaptive assessment produces a standardised score and global percentile comparison — not a school grade. Understand your child\'s real position within an hour.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1734,7 +1734,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Start your child\'s free 11+ practice test',
       body: 'Adaptive questions across all four subjects. Instant standardised score. No account needed to see a sample — register free to get your child\'s full results.',
       label: 'Start free 11+ test',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1773,7 +1773,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'See your child\'s 11+ Maths score — free',
       body: 'Eduentry\'s adaptive assessment includes a full 15-question Maths section with instant standardised scoring. Find out exactly where your child stands before the real test.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1900,7 +1900,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'How future-ready is your child?',
       body: 'Eduentry\'s free adaptive assessment benchmarks your child\'s verbal reasoning, numeracy, and problem-solving skills against peers internationally — and shows you exactly where their strengths lie for the careers that matter.',
       label: 'Start free assessment',
-      href: '/#academic',
+      href: '/academic-assessment',
     },
   },
   {
@@ -2034,7 +2034,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: "See your child's cognitive profile — free",
       body: "Adaptive assessment for ages 6–17. Verbal reasoning, non-verbal reasoning, maths, and English measured against international benchmarks — no registration required.",
       label: 'Start free assessment',
-      href: '/#academic',
+      href: '/academic-assessment',
     },
   },
   {
@@ -2093,7 +2093,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: "Find your child's strengths — free",
       body: "Adaptive assessment for ages 6–16. Verbal, numerical and spatial reasoning measured against international benchmarks — instant report, no registration.",
       label: 'Start free test',
-      href: '/#academic',
+      href: '/academic-assessment',
     },
   },
   {
@@ -2153,7 +2153,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Find out your child\'s true cognitive profile — free',
       body: 'Adaptive assessment for ages 6–16. Verbal, numerical, spatial reasoning and working memory measured against international benchmarks — instant report, no registration.',
       label: 'Start free assessment',
-      href: '/#academic',
+      href: '/academic-assessment',
     },
   },
   {
@@ -2281,7 +2281,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: "Find your child's strengths before summer starts — free",
       body: "Adaptive assessment for ages 6–16. Verbal, numerical and spatial reasoning measured against international benchmarks — instant report, no registration.",
       label: 'Start free test',
-      href: '/#academic',
+      href: '/academic-assessment',
     },
   },
   {
@@ -2349,7 +2349,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Know your child\'s GCSE readiness today',
       body: 'Free adaptive assessment in English, Maths, Verbal and Non-Verbal Reasoning — instant standardised score and percentile ranking against UK norms.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {
@@ -2399,7 +2399,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Find out where your child stands today',
       body: 'Free adaptive assessment for children aged 6–17. Standardised score in critical thinking, verbal and numerical reasoning — benchmarked internationally.',
       label: 'Start free assessment',
-      href: '/auth/register',
+      href: '/academic-assessment',
     },
   },
   {

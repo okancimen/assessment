@@ -199,7 +199,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun güçlü yönlerini keşfedin',
       body: '6–17 yaş arası çocuklar için ücretsiz uyarlanabilir değerlendirme. Uluslararası kıyaslamalı standartlaştırılmış puan ve konu bazlı detaylı rapor.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/auth/register',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -322,7 +322,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun dünya genelinde nerede durduğunu öğrenin',
       body: 'Dubai dahil dünyanın herhangi bir yerindeki öğrenciler için ücretsiz uyarlanabilir değerlendirme. Uluslararası kıyaslamalı standartlaştırılmış puan ve konu bazlı detaylı rapor.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/auth/register',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -364,7 +364,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun gerçekte nerede durduğunu öğrenin',
       body: "Eduentry'nin ücretsiz uyarlanabilir değerlendirmesi, bir okul notu değil standartlaştırılmış bir puan ve küresel yüzdelik dilim karşılaştırması üretir. bir saat içinde çocuğunuzun gerçek konumunu anlayın.",
       label: 'Ücretsiz değerlendirmeye başla',
-      href: '/auth/register',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1021,7 +1021,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun bilişsel profilini keşfedin — ücretsiz',
       body: 'Eduentry\'nin uyarlanabilir akademik değerlendirmesi, sözel, sayısal, çalışan bellek ve uzamsal becerileri uluslararası akranlarla kıyaslar. Bir saatten kısa sürer. Kayıt gerekmez.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/#academic',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1053,7 +1053,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuz geleceğe ne kadar hazır?',
       body: 'Eduentry\'nin ücretsiz uyarlanabilir değerlendirmesi, çocuğunuzun sözel akıl yürütme, sayısal beceri ve problem çözme performansını uluslararası akranlarıyla karşılaştırıyor — güçlü yönlerinin tam olarak nerede yattığını gösteriyor.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/#academic',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1179,7 +1179,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun bilişsel profilini görün — ücretsiz',
       body: '6–17 yaş için adaptif değerlendirme. Sözel akıl yürütme, sözel olmayan akıl yürütme, matematik ve İngilizce uluslararası kıyaslamalı olarak ölçülür — kayıt gerekmez.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr#akademik',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1239,7 +1239,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun güçlü yönlerini keşfedin — ücretsiz',
       body: '6–16 yaş için adaptif değerlendirme. Sözel, sayısal ve uzamsal akıl yürütme uluslararası kıyaslamalı olarak ölçülür — anında rapor, kayıt gerekmez.',
       label: 'Ücretsiz testi başlat',
-      href: '/tr#akademik',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1300,7 +1300,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun gerçek bilişsel profilini keşfedin — ücretsiz',
       body: '6–16 yaş için adaptif değerlendirme. Sözel, sayısal, uzamsal muhakeme ve çalışma belleği uluslararası kıyaslamalı olarak ölçülür — anında rapor, kayıt gerekmez.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr#akademik',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1422,7 +1422,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Yaz başlamadan çocuğunuzun güçlü yönlerini keşfedin — ücretsiz',
       body: '6–16 yaş için adaptif değerlendirme. Sözel, sayısal ve uzamsal akıl yürütme uluslararası kıyaslamalı olarak ölçülür — anında rapor, kayıt gerekmez.',
       label: 'Ücretsiz testi başlat',
-      href: '/tr#akademik',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1448,7 +1448,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Seçici okul kabulü için çocuğumun kaçıncı yüzdelikte olması gerekir?', a: 'Çoğu İngiltere gramer okulu için 84. yüzdelik veya üzeri (SAS 115+) gereklidir. En rekabetçi okullar için etkin giriş eşiği 97–99. yüzdeliktir. Uluslararası seçici kabuller için 90. yüzdelik genellikle minimum rekabetçi eşiktir.' },
       { q: 'Çocuğumun uluslararası kıyaslamalara göre nerede durduğunu nasıl öğrenebilirim?', a: 'Eduentry\'nin ücretsiz adaptif değerlendirmesi, çocuğunuzu PISA, GCSE, SAT ve IB standartlarına göre dört bilişsel alanda kıyaslar. Ortalaması 100, standart sapması 15 olan bir standart puan ve uluslararası yüzdelik sıralaması üretir.' },
     ],
-    cta: { heading: 'Çocuğunuzun uluslararası konumunu görün', body: 'UK, ABD, PISA ve IB standartlarına göre standart puan ve yüzdelik sıralaması ile ücretsiz adaptif değerlendirme.', label: 'Ücretsiz değerlendirmeyi başlat', href: '/tr/auth/register' },
+    cta: { heading: 'Çocuğunuzun uluslararası konumunu görün', body: 'UK, ABD, PISA ve IB standartlarına göre standart puan ve yüzdelik sıralaması ile ücretsiz adaptif değerlendirme.', label: 'Ücretsiz değerlendirmeyi başlat', href: '/tr/akademik-degerlendirme' },
   },
   {
     slug: 'standart-puan-nedir',
@@ -1477,7 +1477,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun standartlaştırılmış puanını alın',
       body: 'PISA, GL Assessment ve profesyonel bilişsel testlerin kullandığı ortalama 100, SD 15 ölçeğinde ücretsiz adaptif değerlendirme.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/auth/register',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1507,7 +1507,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun uluslararası konumunu görün',
       body: 'Uluslararası bilişsel değerlendirmelerin kullandığı ölçekle standart puan ve yüzdelik sıralaması içeren ücretsiz adaptif değerlendirme.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/auth/register',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1537,7 +1537,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun gramer okulu şansını öğrenin',
       body: 'İngiltere genelinde gramer okulu giriş sınavlarının kullandığı ölçekle standart puan ve yüzdelik sıralaması içeren ücretsiz adaptif değerlendirme.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/tr/auth/register',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1567,7 +1567,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun 11+ kıyaslamasını bugün alın',
       body: 'Standartlaştırılmış puan, yüzdelik sıralaması ve yapay zeka destekli önerilerle İngilizce, Matematik, Sözel ve Sözel Olmayan Akıl Yürütme alanlarında ücretsiz adaptif değerlendirme.',
       label: 'Ücretsiz 11+ pratik testini başlat',
-      href: '/tr/auth/register',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1618,7 +1618,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun şu an nerede durduğunu öğrenin',
       body: '6–17 yaş arası çocuklar için ücretsiz uyarlanabilir değerlendirme. Eleştirel düşünme, sözel ve sayısal akıl yürütme alanlarında uluslararası kıyaslamalı standartlaştırılmış puan.',
       label: 'Ücretsiz değerlendirmeyi başlat',
-      href: '/auth/register',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1766,7 +1766,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun uluslararası arenada nerede durduğunu görün',
       body: 'İngiltere, ABD, PISA ve IB standartlarıyla karşılaştırmalı, ücretsiz uyarlanabilir değerlendirme — standartlaştırılmış puan ve yüzdelik sıralama ile.',
       label: 'Ücretsiz Değerlendirmeyi Başlat',
-      href: '/auth/register',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1803,7 +1803,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun uluslararası arenada nerede durduğunu görün',
       body: 'Bilişsel değerlendirmeler tarafından uluslararası ölçekte kullanılan standartlaştırılmış puan ve yüzdelik sıralaması ile ücretsiz uyarlanabilir değerlendirme.',
       label: 'Ücretsiz Değerlendirmeyi Başlat',
-      href: '/auth/register',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {
@@ -1840,7 +1840,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       heading: 'Çocuğunuzun uluslararası arenada nerede durduğunu görün',
       body: 'Dünya genelindeki üstün zekâ tanılamasında kullanılan standartlarla aynı kıyaslamalı — ücretsiz uyarlanabilir değerlendirme ile standartlaştırılmış puan ve yüzdelik sıralama.',
       label: 'Ücretsiz Değerlendirmeyi Başlat',
-      href: '/auth/register',
+      href: '/tr/akademik-degerlendirme',
     },
   },
   {

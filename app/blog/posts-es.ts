@@ -200,7 +200,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: 'Descubre dónde está realmente tu hijo',
       body: 'La evaluación adaptativa gratuita de Eduentry produce una puntuación estandarizada y una comparación en percentil global — no una nota escolar. Entiende la posición real de tu hijo en menos de una hora.',
       label: 'Empezar la evaluación gratuita',
-      href: '/auth/register',
+      href: '/es/evaluacion-academica',
     },
   },
   {
@@ -496,7 +496,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: 'Descubre dónde se sitúa tu hijo a nivel mundial — gratis',
       body: 'La evaluación adaptativa de Eduentry genera una puntuación estandarizada alineada con PISA para niños de 6 a 17 años: matemáticas, comprensión lectora y razonamiento. Menos de una hora, sin registro previo.',
       label: 'Iniciar evaluación gratuita',
-      href: '/es#academica',
+      href: '/es/evaluacion-academica',
     },
   },
   {
@@ -620,7 +620,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: '¿Está su hijo preparado para el futuro?',
       body: 'La evaluación adaptativa gratuita de Eduentry compara las habilidades de razonamiento verbal, numérico y resolución de problemas de su hijo con las de sus pares a nivel internacional — y le muestra exactamente dónde están sus puntos fuertes.',
       label: 'Iniciar evaluación gratuita',
-      href: '/#academic',
+      href: '/es/evaluacion-academica',
     },
   },
   {
@@ -784,7 +784,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: 'Descubre el perfil cognitivo de tu hijo — gratis',
       body: 'Evaluación adaptativa para edades 6–17. Razonamiento verbal, no verbal, matemáticas e inglés medidos frente a referencias internacionales — sin registro.',
       label: 'Iniciar evaluación gratuita',
-      href: '/es#academica',
+      href: '/es/evaluacion-academica',
     },
   },
   {
@@ -844,7 +844,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: 'Descubre las fortalezas de tu hijo — gratis',
       body: 'Evaluación adaptativa para edades 6–16. Razonamiento verbal, numérico y espacial medido frente a referencias internacionales — informe instantáneo, sin registro.',
       label: 'Iniciar test gratuito',
-      href: '/es#academica',
+      href: '/es/evaluacion-academica',
     },
   },
   {
@@ -905,7 +905,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: 'Descubre el perfil cognitivo real de tu hijo — gratis',
       body: 'Evaluación adaptativa para edades 6–16. Razonamiento verbal, numérico, espacial y memoria de trabajo medidos frente a referencias internacionales — informe instantáneo, sin registro.',
       label: 'Iniciar evaluación gratuita',
-      href: '/es#academica',
+      href: '/es/evaluacion-academica',
     },
   },
   {
@@ -1027,7 +1027,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: 'Descubra las fortalezas de su hijo antes del verano — gratis',
       body: 'Evaluación adaptativa para edades de 6 a 16 años. Razonamiento verbal, numérico y espacial medido con referencia internacional — informe instantáneo, sin registro.',
       label: 'Iniciar prueba gratuita',
-      href: '/es#academica',
+      href: '/es/evaluacion-academica',
     },
   },
   {
@@ -1053,7 +1053,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       { q: '¿En qué percentil necesita estar mi hijo para entrar en un colegio selectivo?', a: 'Para la mayoría de los colegios selectivos del Reino Unido, el percentil 84 o superior (SAS 115+). Para los más competitivos, el umbral efectivo es el percentil 97–99. Para admisiones selectivas internacionales, el percentil 90 es generalmente el mínimo competitivo.' },
       { q: '¿Cómo puedo saber dónde se sitúa mi hijo respecto a los estándares internacionales?', a: 'La evaluación adaptativa gratuita de Eduentry compara a tu hijo con los estándares PISA, GCSE, SAT e IB en cuatro dominios cognitivos, produciendo una puntuación estandarizada y una clasificación percentil internacional.' },
     ],
-    cta: { heading: 'Descubre dónde se sitúa tu hijo a nivel internacional', body: 'Evaluación adaptativa gratuita con puntuación estandarizada y clasificación percentil según estándares del Reino Unido, EE.UU., PISA e IB.', label: 'Comenzar evaluación gratuita', href: '/es/auth/register' },
+    cta: { heading: 'Descubre dónde se sitúa tu hijo a nivel internacional', body: 'Evaluación adaptativa gratuita con puntuación estandarizada y clasificación percentil según estándares del Reino Unido, EE.UU., PISA e IB.', label: 'Comenzar evaluación gratuita', href: '/es/evaluacion-academica' },
   },
   {
     slug: 'como-prepararse-para-el-11-plus',
@@ -1113,7 +1113,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: 'Obtén hoy la referencia de tu hijo para el 11+',
       body: 'Evaluación adaptativa gratuita en Inglés, Matemáticas, Razonamiento Verbal y No Verbal — con puntuación estandarizada, clasificación percentil y recomendaciones generadas por IA.',
       label: 'Comenzar prueba práctica gratuita del 11+',
-      href: '/es/auth/register',
+      href: '/es/evaluacion-academica',
     },
   },
   {
@@ -1174,7 +1174,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: 'Evalúa el razonamiento verbal de tu hijo hoy',
       body: 'Evaluación adaptativa gratuita en Razonamiento Verbal, Razonamiento No Verbal, Inglés y Matemáticas — con puntuación estandarizada y clasificación percentil.',
       label: 'Comenzar prueba práctica gratuita del 11+',
-      href: '/es/auth/register',
+      href: '/es/evaluacion-academica',
     },
   },
   {
@@ -1211,7 +1211,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       heading: 'Descubre dónde está tu hijo hoy',
       body: 'Evaluación adaptativa gratuita para niños de 6 a 17 años. Puntuación estandarizada en pensamiento crítico, razonamiento verbal y numérico — comparada internacionalmente.',
       label: 'Comenzar evaluación gratuita',
-      href: '/es/auth/register',
+      href: '/es/evaluacion-academica',
     },
   },
   {

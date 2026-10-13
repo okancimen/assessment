@@ -658,7 +658,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez où se situe votre enfant à l\'échelle mondiale — gratuitement',
       body: 'L\'évaluation adaptative d\'Eduentry génère un score standardisé aligné sur le PISA pour les enfants de 6 à 17 ans : mathématiques, compréhension de lecture et raisonnement. 20-30 minutes, sans inscription préalable.',
       label: 'Commencer l\'évaluation gratuite',
-      href: '/fr#academique',
+      href: '/fr/evaluation-academique',
     },
   },
   {
@@ -893,7 +893,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Votre enfant est-il prêt pour l\'avenir ?',
       body: 'L\'évaluation adaptative gratuite d\'Eduentry compare les compétences de raisonnement verbal, numérique et de résolution de problèmes de votre enfant avec celles de ses pairs à l\'international — et vous montre exactement où se trouvent ses points forts.',
       label: 'Commencer l\'évaluation gratuite',
-      href: '/#academic',
+      href: '/fr/evaluation-academique',
     },
   },
   {
@@ -1019,7 +1019,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: "Découvrez le profil cognitif de votre enfant — gratuitement",
       body: "Évaluation adaptive pour les 6–17 ans. Raisonnement verbal, non verbal, mathématiques et anglais mesurés selon des références internationales — sans inscription.",
       label: "Commencer l'évaluation gratuite",
-      href: '/fr#academique',
+      href: '/fr/evaluation-academique',
     },
   },
   {
@@ -1079,7 +1079,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez les forces de votre enfant — gratuitement',
       body: "Évaluation adaptive pour les 6–16 ans. Raisonnement verbal, numérique et spatial mesuré selon des références internationales — rapport instantané, sans inscription.",
       label: 'Commencer le test gratuit',
-      href: '/fr#academique',
+      href: '/fr/evaluation-academique',
     },
   },
   {
@@ -1140,7 +1140,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez le vrai profil cognitif de votre enfant — gratuitement',
       body: 'Évaluation adaptative pour les 6–16 ans. Raisonnement verbal, numérique, spatial et mémoire de travail mesurés selon des références internationales — rapport instantané, sans inscription.',
       label: 'Commencer l\'évaluation gratuite',
-      href: '/fr#academique',
+      href: '/fr/evaluation-academique',
     },
   },
   {
@@ -1227,7 +1227,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       { q: 'À quel percentile mon enfant doit-il se situer pour entrer dans une école sélective?', a: 'Pour la plupart des grammar schools du RU, le 84e percentile ou plus (SAS 115+). Pour les plus compétitives, le seuil effectif est le 97e–99e percentile. Pour les admissions sélectives internationales, le 90e percentile est généralement le minimum compétitif.' },
       { q: 'Comment savoir où se situe mon enfant par rapport aux références internationales?', a: 'L\'évaluation adaptative gratuite d\'Eduentry compare votre enfant aux standards PISA, GCSE, SAT et IB dans quatre domaines cognitifs, produisant un score standardisé et un classement percentile international.' },
     ],
-    cta: { heading: 'Découvrez où se situe votre enfant à l\'international', body: 'Évaluation adaptative gratuite avec score standardisé et classement percentile selon les standards britanniques, américains, PISA et IB.', label: 'Commencer l\'évaluation gratuite', href: '/fr/auth/register' },
+    cta: { heading: 'Découvrez où se situe votre enfant à l\'international', body: 'Évaluation adaptative gratuite avec score standardisé et classement percentile selon les standards britanniques, américains, PISA et IB.', label: 'Commencer l\'évaluation gratuite', href: '/fr/evaluation-academique' },
   },
   {
     slug: 'activites-ete-enfants-academiquement-ambitieux',
@@ -1287,7 +1287,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: "Découvrez les forces de votre enfant avant l'été — gratuitement",
       body: "Évaluation adaptative pour les 6 à 16 ans. Raisonnement verbal, numérique et spatial mesuré par rapport à des références internationales — rapport instantané, sans inscription.",
       label: 'Commencer le test gratuit',
-      href: '/fr#academique',
+      href: '/fr/evaluation-academique',
     },
   },
   {
@@ -1347,7 +1347,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Obtenez le score de référence 11+ de votre enfant aujourd\'hui',
       body: 'Évaluation adaptative gratuite en anglais, maths, raisonnement verbal et non verbal — avec un score standardisé, un classement en percentile et des recommandations générées par l\'IA.',
       label: 'Commencer le test 11+ gratuit',
-      href: '/fr/auth/register',
+      href: '/fr/evaluation-academique',
     },
   },
   {
@@ -1407,7 +1407,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Testez le raisonnement verbal de votre enfant aujourd\'hui',
       body: 'Évaluation adaptative gratuite en raisonnement verbal, raisonnement non verbal, anglais et maths — avec un score standardisé et un classement en percentile.',
       label: 'Commencer le test 11+ gratuit',
-      href: '/fr/auth/register',
+      href: '/fr/evaluation-academique',
     },
   },
   {
@@ -1444,7 +1444,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       heading: 'Découvrez où en est votre enfant aujourd\'hui',
       body: 'Évaluation adaptative gratuite pour les enfants de 6 à 17 ans. Score standardisé en pensée critique, raisonnement verbal et numérique — comparé internationalement.',
       label: 'Commencer l\'évaluation gratuite',
-      href: '/fr/auth/register',
+      href: '/fr/evaluation-academique',
     },
   },
   {

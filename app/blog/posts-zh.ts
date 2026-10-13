@@ -39,7 +39,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '免费了解孩子的国际学术水平',
       body: 'Eduentry自适应评估按照与PISA相同的国际标准测试6-17岁儿童。一小时内获得全球百分位排名。',
       label: '开始免费评估',
-      href: '/zh/auth/register',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -76,7 +76,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '免费获取孩子的国际学术排名',
       body: 'Eduentry免费自适应评估提供标准化分数和全球百分位排名——而非学校成绩。在一小时内了解孩子的真实水平。',
       label: '开始免费评估',
-      href: '/zh/auth/register',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -504,7 +504,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '免费了解您的孩子在全球的学业位置',
       body: 'Eduentry自适应评估为6至17岁儿童生成与PISA对齐的标准化分数：数学、阅读理解和逻辑推理。一小时内完成，无需注册。',
       label: '开始免费评估',
-      href: '/zh#xueshu-pinggu',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -540,7 +540,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '免费获取孩子的标准化分数',
       body: 'Eduentry自适应评估采用与11+和CAT4相同的均值100、标准差15量表，一小时内即可获得孩子的百分位排名和各科分项表现。',
       label: '开始免费评估',
-      href: '/zh/auth/register',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -576,7 +576,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '了解孩子在OC竞争者中的位置',
       body: 'Eduentry免费自适应评估在一小时内提供孩子在思维技能、阅读理解和数学推理方面的百分位排名——让您在开始备考前就掌握正确方向。',
       label: '开始免费评估',
-      href: '/zh/auth/register',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -612,7 +612,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '用国际基准了解孩子的真实学术水平',
       body: 'Eduentry评估采用与NWEA MAP相同的项目反应理论框架，提供数学、阅读理解和逻辑推理的百分位排名，帮助家长获得全球视角。',
       label: '开始免费评估',
-      href: '/zh/auth/register',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -648,7 +648,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '了解孩子在文法学校竞争中处于什么位置',
       body: 'Eduentry评估使用与GL Assessment相同的标准化量表。一小时内获得孩子的百分位排名和各科分项成绩，为11+备考提供清晰的起点。',
       label: '开始免费评估',
-      href: '/zh/auth/register',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -684,7 +684,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '在CAT4前了解孩子的认知能力基线',
       body: 'Eduentry免费自适应评估使用与CAT4相同的量表，帮助您在申请迪拜顶尖学校前获得孩子的客观能力数据。',
       label: '开始免费评估',
-      href: '/zh/auth/register',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -721,7 +721,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '免费了解孩子的认知能力档案',
       body: 'Eduentry自适应评估在一小时内生成孩子的语言推理、数学推理和空间推理百分位排名，与OC班、11+和CAT4使用相同的标准化量表。',
       label: '开始免费评估',
-      href: '/zh/auth/register',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -753,7 +753,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '您的孩子为未来做好准备了吗？',
       body: 'Eduentry的免费自适应评估将您孩子的语言推理、数字能力和问题解决技能与国际同龄人进行对比——精确显示他们的优势所在。',
       label: '开始免费评估',
-      href: '/#academic',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -879,7 +879,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '免费了解孩子的认知图谱',
       body: '6–17岁自适应测评。语言推理、非语言推理、数学和英语对标国际基准——无需注册。',
       label: '开始免费评估',
-      href: '/zh#xueshu-pinggu',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -939,7 +939,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '免费发现孩子的优势',
       body: '6–16岁自适应测评。语言、数字和空间推理对标国际基准——即时报告，无需注册。',
       label: '开始免费测试',
-      href: '/zh#xueshu-pinggu',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -1000,7 +1000,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '免费了解孩子的真实认知特征',
       body: '6–16岁自适应测评。语言、数字、空间推理及工作记忆对标国际基准——即时生成报告，无需注册。',
       label: '开始免费评估',
-      href: '/zh#xueshu-pinggu',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -1087,7 +1087,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       { q: '我的孩子需要在哪个百分位才能进入重点学校？', a: '英国大多数文法学校需要第84百分位或以上（SAS 115+）。最具竞争力的学校实际入学门槛为第97–99百分位。国际选拔性入学通常第90百分位是最低竞争线。' },
       { q: '如何了解我的孩子在国际基准中的位置？', a: 'Eduentry免费自适应评估将您的孩子与PISA、GCSE、SAT和IB标准在四个认知领域进行比较，产生标准化分数和国际百分位排名。' },
     ],
-    cta: { heading: '了解您的孩子在国际上的位置', body: '免费自适应评估，提供标准化分数和与英国、美国、PISA和IB标准对比的百分位排名。', label: '开始免费评估', href: '/zh/auth/register' },
+    cta: { heading: '了解您的孩子在国际上的位置', body: '免费自适应评估，提供标准化分数和与英国、美国、PISA和IB标准对比的百分位排名。', label: '开始免费评估', href: '/zh/xueshu-pinggu' },
   },
   {
     slug: 'shuqi-xueye-jingjin-haizi-huodong',
@@ -1147,7 +1147,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '在暑假开始前发现孩子的优势——免费',
       body: '6至16岁适应性评估。语言、数学和空间推理根据国际基准测量——即时报告，无需注册。',
       label: '开始免费测试',
-      href: '/zh#xueshu-pinggu',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -1208,7 +1208,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '了解孩子是否已准备好参加实习',
       body: '面向14岁以上高中生的免费自适应评估。获取跨越能力、领域知识和职场技能的个性化准备情况报告。',
       label: '开始免费测评',
-      href: '/zh/auth/register',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -1269,7 +1269,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '证明你的商业就绪程度',
       body: '面向14岁以上学生的免费34题自适应评估。获取个性化准备情况报告——在每一份申请中都有具体内容可以引用。',
       label: '开始免费测评',
-      href: '/zh/auth/register',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -1330,7 +1330,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '了解孩子的11+准备情况',
       body: '面向6至16岁儿童的免费自适应评估，涵盖语言推理、非语言推理、数学和英语——即时报告，无需注册。',
       label: '开始免费测评',
-      href: '/zh/auth/register',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
@@ -1367,7 +1367,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       heading: '了解您的孩子今天的位置',
       body: '适用于6至17岁儿童的免费自适应评估。批判性思维、语言和数字推理的标准化分数——与国际标准比较。',
       label: '开始免费评估',
-      href: '/zh/auth/register',
+      href: '/zh/xueshu-pinggu',
     },
   },
   {
