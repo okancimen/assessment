@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import Link from 'next/link'
 import GuestStartForm from '@/app/personality-assessment/GuestStartForm'
+import { SAMPLE_TRAIT_SCORES, SAMPLE_PEER_AVG } from '@/lib/sample-personality'
+import type { Trait } from '@/lib/personality-questions'
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -133,6 +135,23 @@ const SAMPLE_STRENGTHS = [
   { name: 'Umut', pct: 51, color: 'bg-amber-500' },
 ]
 
+// 24-trait radar geometry for the hero mockup (sample profile + age average)
+const RADAR_TRAITS = Object.keys(SAMPLE_TRAIT_SCORES) as Trait[]
+const RADAR_CX = 120
+const RADAR_CY = 120
+const RADAR_R = 92
+function radarPoint(i: number, value: number): [number, number] {
+  const angle = (-90 + i * (360 / RADAR_TRAITS.length)) * (Math.PI / 180)
+  const r = (value / 5) * RADAR_R
+  return [RADAR_CX + r * Math.cos(angle), RADAR_CY + r * Math.sin(angle)]
+}
+function radarPolygon(values: number[]): string {
+  return values.map((v, i) => radarPoint(i, v).map((n) => n.toFixed(1)).join(',')).join(' ')
+}
+const RADAR_SCORE_PTS = radarPolygon(RADAR_TRAITS.map((t) => SAMPLE_TRAIT_SCORES[t]))
+const RADAR_AVG_PTS = radarPolygon(RADAR_TRAITS.map((t) => SAMPLE_PEER_AVG[t]))
+const RADAR_AXES = RADAR_TRAITS.map((_, i) => radarPoint(i, 5))
+
 export default function KisilikDegerlendirmesiPage() {
   return (
     <>
@@ -173,39 +192,34 @@ export default function KisilikDegerlendirmesiPage() {
                   <p className="text-xs text-[#6e6e73]">Örnek rapor</p>
                 </div>
               </div>
-              <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-1">Karakter Profili</p>
-              <svg viewBox="0 0 240 206" className="w-full" role="img" aria-label="Örnek karakter güçleri radar grafiği">
+              <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-1">Karakter Profili · 24 özellik</p>
+              <svg viewBox="0 0 240 240" className="w-full" role="img" aria-label="24 karakter özelliği için örnek radar grafiği, çocuğun profili ve yaş ortalaması ile">
                 {/* web rings */}
-                <polygon points="120,35 180.6,70 180.6,140 120,175 59.4,140 59.4,70" fill="none" stroke="#e5e7eb" strokeWidth="1" />
-                <polygon points="120,58.3 160.4,81.6 160.4,128.4 120,151.7 79.6,128.4 79.6,81.6" fill="none" stroke="#e5e7eb" strokeWidth="1" />
-                <polygon points="120,81.7 140.2,93.3 140.2,116.7 120,128.3 99.8,116.7 99.8,93.3" fill="none" stroke="#eef2ff" strokeWidth="1" />
-                {/* axes */}
-                <g stroke="#e5e7eb" strokeWidth="1">
-                  <line x1="120" y1="105" x2="120" y2="35" />
-                  <line x1="120" y1="105" x2="180.6" y2="70" />
-                  <line x1="120" y1="105" x2="180.6" y2="140" />
-                  <line x1="120" y1="105" x2="120" y2="175" />
-                  <line x1="120" y1="105" x2="59.4" y2="140" />
-                  <line x1="120" y1="105" x2="59.4" y2="70" />
+                {[0.25, 0.5, 0.75, 1].map((f) => (
+                  <circle key={f} cx={RADAR_CX} cy={RADAR_CY} r={RADAR_R * f} fill="none" stroke="#e5e7eb" strokeWidth="1" />
+                ))}
+                {/* 24 axes */}
+                <g stroke="#eef2ff" strokeWidth="1">
+                  {RADAR_AXES.map(([x, y], i) => (
+                    <line key={i} x1={RADAR_CX} y1={RADAR_CY} x2={x.toFixed(1)} y2={y.toFixed(1)} />
+                  ))}
                 </g>
-                {/* sample profile */}
-                <polygon points="120,44.8 157.6,83.3 164.9,130.9 120,145.6 90.9,121.8 80,81.9" fill="rgba(79,70,229,0.15)" stroke="#4F46E5" strokeWidth="2" strokeLinejoin="round" />
-                <g fill="#4F46E5">
-                  <circle cx="120" cy="44.8" r="2.5" /><circle cx="157.6" cy="83.3" r="2.5" />
-                  <circle cx="164.9" cy="130.9" r="2.5" /><circle cx="120" cy="145.6" r="2.5" />
-                  <circle cx="90.9" cy="121.8" r="2.5" /><circle cx="80" cy="81.9" r="2.5" />
-                </g>
-                {/* virtue labels */}
-                <g fill="#6e6e73" fontSize="9" fontWeight="600">
-                  <text x="120" y="26" textAnchor="middle">Bilgelik</text>
-                  <text x="186" y="66" textAnchor="start">Cesaret</text>
-                  <text x="186" y="150" textAnchor="start">İnsanlık</text>
-                  <text x="120" y="196" textAnchor="middle">Adalet</text>
-                  <text x="54" y="150" textAnchor="end">Denge</text>
-                  <text x="54" y="66" textAnchor="end">Aşkınlık</text>
-                </g>
+                {/* age average — dotted, no fill */}
+                <polygon points={RADAR_AVG_PTS} fill="none" stroke="#0D9488" strokeWidth="1.5" strokeDasharray="4 2" strokeLinejoin="round" />
+                {/* child's sample profile — solid */}
+                <polygon points={RADAR_SCORE_PTS} fill="rgba(79,70,229,0.15)" stroke="#4F46E5" strokeWidth="2" strokeLinejoin="round" />
               </svg>
-              <div className="flex flex-wrap gap-1.5 justify-center mt-1">
+              {/* legend */}
+              <div className="flex items-center justify-center gap-4 mt-1 text-[10px] text-[#6e6e73]">
+                <span className="flex items-center gap-1.5">
+                  <span className="block w-4 h-0.5 rounded-full bg-[#4F46E5]" /> Çocuğunuz
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <svg width="16" height="2" viewBox="0 0 16 2"><line x1="0" y1="1" x2="16" y2="1" stroke="#0D9488" strokeWidth="1.5" strokeDasharray="4 2" /></svg>
+                  Yaş ortalaması
+                </span>
+              </div>
+              <div className="flex flex-wrap gap-1.5 justify-center mt-3">
                 {SAMPLE_STRENGTHS.slice(0, 3).map((s) => (
                   <span key={s.name} className="text-[10px] font-medium text-[#4338CA] bg-indigo-50 rounded-full px-2 py-0.5">
                     {s.name} {s.pct}%
