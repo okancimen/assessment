@@ -173,18 +173,43 @@ export default function KisilikDegerlendirmesiPage() {
                   <p className="text-xs text-[#6e6e73]">Örnek rapor</p>
                 </div>
               </div>
-              <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-3">En Güçlü Yönler</p>
-              <div className="space-y-3">
-                {SAMPLE_STRENGTHS.map((s) => (
-                  <div key={s.name}>
-                    <div className="flex justify-between items-center mb-1">
-                      <span className="text-xs font-medium text-[#3d3d3f]">{s.name}</span>
-                      <span className="text-xs text-[#6e6e73]">{s.pct}%</span>
-                    </div>
-                    <div className="h-1.5 bg-[#f5f5f7] rounded-full overflow-hidden">
-                      <div className={`h-full ${s.color} rounded-full`} style={{ width: `${s.pct}%` }} />
-                    </div>
-                  </div>
+              <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-1">Karakter Profili</p>
+              <svg viewBox="0 0 240 206" className="w-full" role="img" aria-label="Örnek karakter güçleri radar grafiği">
+                {/* web rings */}
+                <polygon points="120,35 180.6,70 180.6,140 120,175 59.4,140 59.4,70" fill="none" stroke="#e5e7eb" strokeWidth="1" />
+                <polygon points="120,58.3 160.4,81.6 160.4,128.4 120,151.7 79.6,128.4 79.6,81.6" fill="none" stroke="#e5e7eb" strokeWidth="1" />
+                <polygon points="120,81.7 140.2,93.3 140.2,116.7 120,128.3 99.8,116.7 99.8,93.3" fill="none" stroke="#eef2ff" strokeWidth="1" />
+                {/* axes */}
+                <g stroke="#e5e7eb" strokeWidth="1">
+                  <line x1="120" y1="105" x2="120" y2="35" />
+                  <line x1="120" y1="105" x2="180.6" y2="70" />
+                  <line x1="120" y1="105" x2="180.6" y2="140" />
+                  <line x1="120" y1="105" x2="120" y2="175" />
+                  <line x1="120" y1="105" x2="59.4" y2="140" />
+                  <line x1="120" y1="105" x2="59.4" y2="70" />
+                </g>
+                {/* sample profile */}
+                <polygon points="120,44.8 157.6,83.3 164.9,130.9 120,145.6 90.9,121.8 80,81.9" fill="rgba(79,70,229,0.15)" stroke="#4F46E5" strokeWidth="2" strokeLinejoin="round" />
+                <g fill="#4F46E5">
+                  <circle cx="120" cy="44.8" r="2.5" /><circle cx="157.6" cy="83.3" r="2.5" />
+                  <circle cx="164.9" cy="130.9" r="2.5" /><circle cx="120" cy="145.6" r="2.5" />
+                  <circle cx="90.9" cy="121.8" r="2.5" /><circle cx="80" cy="81.9" r="2.5" />
+                </g>
+                {/* virtue labels */}
+                <g fill="#6e6e73" fontSize="9" fontWeight="600">
+                  <text x="120" y="26" textAnchor="middle">Bilgelik</text>
+                  <text x="186" y="66" textAnchor="start">Cesaret</text>
+                  <text x="186" y="150" textAnchor="start">İnsanlık</text>
+                  <text x="120" y="196" textAnchor="middle">Adalet</text>
+                  <text x="54" y="150" textAnchor="end">Denge</text>
+                  <text x="54" y="66" textAnchor="end">Aşkınlık</text>
+                </g>
+              </svg>
+              <div className="flex flex-wrap gap-1.5 justify-center mt-1">
+                {SAMPLE_STRENGTHS.slice(0, 3).map((s) => (
+                  <span key={s.name} className="text-[10px] font-medium text-[#4338CA] bg-indigo-50 rounded-full px-2 py-0.5">
+                    {s.name} {s.pct}%
+                  </span>
                 ))}
               </div>
               <div className="mt-5 pt-5 border-t border-[#f5f5f7]">
