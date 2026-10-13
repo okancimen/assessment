@@ -12,17 +12,17 @@ export const SAMPLE_PEER_COUNT = 1240
 // with self-regulation and prudence as clear areas to nurture.
 export const SAMPLE_TRAIT_SCORES: Record<Trait, number> = {
   // Wisdom
-  curiosity: 4.8, creativity: 4.6, love_of_learning: 4.2, perspective: 3.6, judgment: 3.4,
+  curiosity: 4.9, creativity: 4.7, love_of_learning: 3.2, perspective: 2.6, judgment: 3.4,
   // Courage
-  bravery: 3.8, perseverance: 3.5, honesty: 4.4, zest: 4.0,
+  bravery: 4.5, perseverance: 2.4, honesty: 4.6, zest: 2.9,
   // Humanity
-  love: 4.5, kindness: 4.7, social_intelligence: 3.9,
+  love: 4.3, kindness: 4.8, social_intelligence: 2.8,
   // Justice
-  teamwork: 4.1, fairness: 4.3, leadership: 3.2,
+  teamwork: 4.2, fairness: 3.1, leadership: 2.3,
   // Temperance
-  forgiveness: 3.3, humility: 2.8, prudence: 2.6, self_regulation: 2.3,
+  forgiveness: 3.6, humility: 2.0, prudence: 1.8, self_regulation: 1.5,
   // Transcendence
-  appreciation_of_beauty: 3.7, gratitude: 4.0, hope: 3.9, humor: 4.2, spirituality: 3.0,
+  appreciation_of_beauty: 4.1, gratitude: 3.3, hope: 4.0, humor: 2.7, spirituality: 3.5,
 }
 
 export const SAMPLE_TOP_STRENGTHS: Trait[] = ['curiosity', 'kindness', 'creativity']

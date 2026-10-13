@@ -78,7 +78,10 @@ export default function SamplePersonalityReport({ locale }: { locale: SampleLoca
     }
   })
 
-  const radarData = sortedTraits.map(([trait, score]) => ({
+  // Radar keeps traits in their fixed (virtue-grouped) order rather than sorted
+  // by score — sorting collapses the shape into a smooth spiral and hides the
+  // spread. Fixed order lets the score polygon read as scattered/wide.
+  const radarData = (Object.entries(traitScores) as [Trait, number][]).map(([trait, score]) => ({
     trait: t.traitLabels[trait],
     score,
     avg: null,
