@@ -15,6 +15,7 @@ type GaEventName =
   | 'recommendation_generate'
   | 'print_results'
   | 'cta_click'
+  | 'blog_sticky_cta'
   | 'internship_apply'
   | 'get_insights'
   | 'share_results'

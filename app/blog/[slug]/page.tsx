@@ -8,6 +8,7 @@ import { notFound, redirect } from 'next/navigation'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import CtaLink from '@/components/ui/CtaLink'
+import BlogStickyCta from '@/components/blog/BlogStickyCta'
 import { BLOG_POSTS, getPostBySlug, getRelatedPosts } from '../posts'
 import { getBlogContent } from '../content'
 import { BLOG_POSTS_TR } from '../posts-tr'
@@ -226,6 +227,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       {reviewSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />}
 
       <PublicNav />
+
+      <BlogStickyCta
+        href={post.cta?.href ?? '/academic-assessment'}
+        label={post.cta?.label ?? 'Start free assessment'}
+        note="Free · no account needed"
+      />
 
       <main className="max-w-3xl mx-auto px-6 py-16">
         <nav className="text-sm text-gray-500 mb-8">

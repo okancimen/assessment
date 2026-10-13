@@ -344,7 +344,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
                 <p className="font-semibold text-gray-900 mb-1">Is your child on track to compete internationally?</p>
                 <p className="text-sm text-gray-600">MAP measures local national norms. Discover how your child ranks against top-tier international peers in English and Maths in under 45 minutes.</p>
               </div>
-              <CtaLink href="/auth/register" label="nvr_benchmark_cta" className="shrink-0 inline-block bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors text-center">
+              <CtaLink href="/academic-assessment" label="nvr_benchmark_cta" className="shrink-0 inline-block bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors text-center">
                 Check Your Child&apos;s Benchmark →
               </CtaLink>
             </div>
@@ -355,7 +355,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
         <section className="text-center bg-indigo-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Try the free {subject.headline} assessment</h2>
           <p className="text-indigo-100 mb-8">Takes 5–8 minutes per subject. Instant standardised score and percentile ranking.</p>
-          <CtaLink href="/auth/register" label="subject_detail_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
+          <CtaLink href="/academic-assessment" label="subject_detail_cta" className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors text-lg">
             Start free assessment
           </CtaLink>
         </section>
