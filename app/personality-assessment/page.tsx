@@ -196,7 +196,11 @@ export default async function PersonalityAssessmentPage({
             An AI-powered, scientifically backed character assessment tailored perfectly to your child&apos;s developmental age.
           </p>
           <GuestStartForm />
-          <p className="mt-2 text-sm text-[#6e6e73]">
+          <p className="mt-3 text-sm text-[#6e6e73]">
+            Not sure yet?{' '}
+            <Link href="/sample-report/personality" className="text-[#4F46E5] hover:underline font-medium">See a sample report</Link>
+          </p>
+          <p className="mt-1 text-sm text-[#6e6e73]">
             Already have an account?{' '}
             <Link href="/auth/login" className="text-[#4F46E5] hover:underline font-medium">Sign in</Link>
           </p>
