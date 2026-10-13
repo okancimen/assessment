@@ -3,6 +3,103 @@ import { Bullet, Callout, Check, Cross } from './blog-components'
 
 export const ZH_CONTENT: Record<string, React.ReactNode> = {
 
+  'test-anxiety-in-children-strengths': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        你一定熟悉考试前的那个夜晚：孩子睡不着，说肚子疼，坚称自己&ldquo;全都会考砸&rdquo;——或者坐下来复习却大脑一片空白。这是为人父母最无力的感受之一，而通常的建议（&ldquo;多学一点&rdquo;、&ldquo;放轻松&rdquo;）几乎没用。真正有效的是这样的重新框定：<strong>考试焦虑靠管理，而非靠多学</strong>——最有效的杠杆是孩子已经拥有的性格优势。
+      </p>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">这是考试焦虑吗？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          考前有点紧张是正常的——甚至有益。当它持续妨碍孩子的发挥或感受时，就变成了焦虑。通常以三种方式表现：
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>身体上：</strong>难以入睡、胃痛或头痛、心跳加速、考前恶心。</Bullet>
+          <Bullet><strong>行为上：</strong>拖延、回避（&ldquo;我待会儿再做&rdquo;），或明明掌握内容却大脑空白。</Bullet>
+          <Bullet><strong>情绪上：</strong>易怒、流泪，内心独白如&ldquo;我做不到&rdquo;或&ldquo;人人都比我强&rdquo;。</Bullet>
+        </ul>
+        <Callout>
+          <strong>焦虑还是准备不足？</strong>有些孩子准备充分却仍僵住——那是焦虑，应对策略才是杠杆。另一些孩子&ldquo;焦虑&rdquo;主要是因为准备不足——那里的解决办法是学习结构。弄清你面对的是哪一种很重要。
+        </Callout>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">为什么会这样</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          在压力下，大脑会把资源从思考区域（前额叶皮层）转向威胁反应。<strong>工作记忆</strong>——孩子用来暂存和处理信息的心理空间——尤其脆弱，这正是为什么一个准备充分的孩子会在前一天还会的题目上&ldquo;卡壳&rdquo;。回避会让情况更糟：为逃避不适而跳过复习，短期内缓解，却在下一次抬高焦虑。目标不是消除所有紧张，而是把它维持在孩子仍能思考的水平。
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">重新框定：优势，而非只是学习</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          孩子应对压力并没有一种通用方式——他们通过已有的优势来应对。<em>坚韧</em>突出的孩子战胜焦虑的方式，与<em>社交智慧</em>突出的孩子不同。因此，与其泛泛地说&ldquo;冷静&rdquo;，最有效的是找出孩子真正具备的一项优势，并把它与一个具体习惯配对。以下五项直接对应考试焦虑。
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">平息风暴的 5 项优势</h2>
+        <div className="space-y-4">
+          {[
+            {
+              name: '自我调节',
+              does: '管理身体上的恐慌——心跳加速和不断盘旋的念头。',
+              tactic: '建立一个简短的考前仪式：三次慢呼吸（吸气 4 秒、呼气 6 秒），然后一句定心的话（“我准备过了；我会一题一题来”）。提前练习后，它会成为一个锚点。',
+            },
+            {
+              name: '坚韧',
+              does: '战胜最放大焦虑的东西——回避与拖延。',
+              tactic: '采用 15 分钟起步法：约定只学 15 分钟。最难的是开始；一旦开始，多数孩子会继续。小而重复的靠近，胜过一场令人畏惧的马拉松。',
+            },
+            {
+              name: '勇敢',
+              does: '让孩子面对害怕的考试，而不是逃避它。',
+              tactic: '把恐惧说出口（“我怕把全部都忘了”），然后在家用一次低风险、限时的模拟考来缩小它——暴露会让真实的考试不那么可怕。',
+            },
+            {
+              name: '希望',
+              does: '化解灾难化思维（“这科不及格，我的整个未来就毁了”）。',
+              tactic: '一起重新框定：“一场考试不会决定你的未来。”帮助孩子说出即使某场考试考砸、依然成立的事情——这能拓宽陷入隧道视野的瞬间。',
+            },
+            {
+              name: '活力与社交智慧',
+              does: '恢复精力（活力）并防止孤立（社交智慧）——这是焦虑悄悄侵蚀的两样东西。',
+              tactic: '守护睡眠、运动和休息，而不是熬夜；并鼓励与你、朋友或老师倾诉。共同调节——身边有一位平静的成年人——确实能降低孩子的压力。',
+            },
+          ].map(({ name, does, tactic }) => (
+            <div key={name} className="rounded-2xl border border-gray-100 bg-gray-50/60 p-5">
+              <h3 className="font-bold text-gray-900 mb-1">{name}</h3>
+              <p className="text-sm text-gray-600 mb-2">{does}</p>
+              <p className="text-sm text-gray-700"><strong className="text-indigo-700">在家试试：</strong>{tactic}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          孩子不必五项都有。依靠他真正具备的一两项，通常就足以把考前的恶性循环转化为可以应对的局面。
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">如何发现孩子的优势</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          难点在于：你很难依靠一项尚未命名的优势。许多家长对孩子的性格有大致印象，却没有清晰的图谱——而在考试压力下，优势很容易被忽视。Eduentry 免费的、基于 VIA 的{' '}
+          <Link href="/zh/xingge-pinggu" className="text-indigo-600 hover:underline font-medium">性格测评</Link>{' '}
+          约五分钟即可识别全部 24 项性格优势，让你清楚地知道在压力最大时孩子能依靠哪些优势。更清晰地了解孩子<em>究竟</em>准备到什么程度也能缓解焦虑——我们的{' '}
+          <Link href="/zh/xueshu-pinggu" className="text-indigo-600 hover:underline font-medium">学术评估</Link>{' '}
+          提供客观读数，于是&ldquo;我会考砸&rdquo;可以用事实来回应。
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">何时寻求专业帮助</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          上述策略支持日常的考前紧张。它们<strong>不能</strong>替代专业照护。如果孩子的焦虑严重、持续数周、扰乱睡眠或食欲、导致拒学，或孩子表达绝望，请咨询医生、学校辅导老师或儿童心理医生。及早求助本身就是一种优势。
+        </p>
+      </section>
+    </>
+  ),
+
   'pisa-2025-zhongguo-jiazhang-zhinan': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">

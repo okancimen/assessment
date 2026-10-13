@@ -3,6 +3,129 @@ import { Bullet, Callout, Check, Cross } from './blog-components'
 
 export const ES_CONTENT: Record<string, React.ReactNode> = {
 
+  'test-anxiety-in-children-strengths': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Conoces esa noche antes de un examen: tu hijo no puede dormir, dice que le duele el estómago, insiste en
+        que &ldquo;va a suspenderlo todo&rdquo; — o se sienta a repasar y simplemente se queda en blanco. Es una de
+        las sensaciones más impotentes para un padre, y el consejo habitual (&ldquo;estudia más&rdquo;,
+        &ldquo;tranquilízate&rdquo;) rara vez funciona. El replanteamiento que sí funciona: <strong>la ansiedad ante
+        los exámenes se gestiona, no se estudia</strong> — y la palanca más eficaz son las fortalezas de carácter que
+        tu hijo ya tiene.
+      </p>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Es ansiedad ante los exámenes?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un poco de nerviosismo antes de un examen es normal — incluso útil. Se convierte en ansiedad cuando
+          interfiere de forma constante en cómo rinde o se siente tu hijo. Suele aparecer de tres maneras:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>Física:</strong> problemas para dormir, dolor de estómago o de cabeza, taquicardia, náuseas antes del examen.</Bullet>
+          <Bullet><strong>Conductual:</strong> procrastinación, evitación (&ldquo;lo hago luego&rdquo;) o quedarse en blanco pese a saber la materia.</Bullet>
+          <Bullet><strong>Emocional:</strong> irritabilidad, llanto, autodiálogo como &ldquo;no puedo&rdquo; o &ldquo;todos son mejores que yo&rdquo;.</Bullet>
+        </ul>
+        <Callout>
+          <strong>Ansiedad vs. falta de preparación.</strong> Algunos niños están bien preparados y aun así se
+          bloquean — eso es ansiedad, y las estrategias de afrontamiento son la palanca. Otros se sienten
+          &ldquo;ansiosos&rdquo; sobre todo porque van poco preparados — ahí la solución es la estructura de estudio.
+          Saber cuál de las dos tienes delante importa.
+        </Callout>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Por qué ocurre</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bajo estrés, el cerebro desvía recursos de las zonas del pensamiento (la corteza prefrontal) hacia una
+          respuesta de amenaza. La <strong>memoria de trabajo</strong> — el espacio mental que usa el niño para
+          retener y manejar información — es especialmente vulnerable, y por eso un niño bien preparado puede
+          &ldquo;quedarse en blanco&rdquo; en una pregunta que sabía el día anterior. La evitación lo empeora:
+          saltarse el repaso para escapar del malestar alivia a corto plazo pero aumenta la ansiedad la próxima vez.
+          El objetivo no es eliminar todos los nervios — es mantenerlos a un nivel en el que tu hijo aún pueda pensar.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">El replanteamiento: fortalezas, no solo estudio</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Los niños no afrontan el estrés de una única manera universal — lo afrontan a través de las fortalezas que
+          ya tienen. Un niño con mucha <em>perseverancia</em> vence la ansiedad de forma distinta a uno con mucha
+          <em> inteligencia social</em>. Por eso, en lugar de un genérico &ldquo;cálmate&rdquo;, lo más eficaz es
+          identificar una fortaleza que tu hijo realmente tenga y combinarla con un hábito concreto. Aquí tienes cinco
+          que encajan directamente con la ansiedad ante los exámenes.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5 fortalezas que calman la tormenta</h2>
+        <div className="space-y-4">
+          {[
+            {
+              name: 'Autocontrol',
+              does: 'Gestiona el pánico físico — el corazón acelerado y los pensamientos en espiral.',
+              tactic: 'Crea un breve ritual previo al examen: tres respiraciones lentas (inhala 4, exhala 6) y una frase de anclaje ("Me he preparado; iré pregunta a pregunta"). Practicado de antemano, se convierte en un ancla.',
+            },
+            {
+              name: 'Perseverancia',
+              does: 'Vence lo que más amplifica la ansiedad — la evitación y la procrastinación.',
+              tactic: 'Usa arranques de 15 minutos: acordad estudiar solo 15 minutos. Empezar es lo difícil; una vez empezado, la mayoría continúa. Pequeños acercamientos repetidos superan a un único maratón temido.',
+            },
+            {
+              name: 'Valentía',
+              does: 'Permite al niño afrontar el examen temido en lugar de huir de él.',
+              tactic: 'Nombrad el miedo en voz alta ("Tengo miedo de olvidarlo todo") y luego reducidlo con un simulacro de bajo riesgo y cronometrado en casa — la exposición hace que lo real asuste menos.',
+            },
+            {
+              name: 'Esperanza',
+              does: 'Disuelve el pensamiento catastrófico ("si suspendo esto, mi futuro está arruinado").',
+              tactic: 'Replantead juntos: "un examen no decide tu futuro". Ayuda a tu hijo a nombrar lo que sigue siendo cierto aunque un examen concreto salga mal — amplía un momento de visión de túnel.',
+            },
+            {
+              name: 'Vitalidad e inteligencia social',
+              does: 'Recupera la energía (vitalidad) y evita el aislamiento (inteligencia social) — dos cosas que la ansiedad erosiona en silencio.',
+              tactic: 'Protege el sueño, el movimiento y los descansos en lugar de las noches en vela; y anima a hablarlo contigo, con un amigo o un profesor. La co-regulación — un adulto tranquilo cerca — baja de verdad el estrés del niño.',
+            },
+          ].map(({ name, does, tactic }) => (
+            <div key={name} className="rounded-2xl border border-gray-100 bg-gray-50/60 p-5">
+              <h3 className="font-bold text-gray-900 mb-1">{name}</h3>
+              <p className="text-sm text-gray-600 mb-2">{does}</p>
+              <p className="text-sm text-gray-700"><strong className="text-indigo-700">Prueba en casa:</strong> {tactic}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Tu hijo no necesita las cinco. Apoyarse en una o dos fortalezas que realmente tenga suele bastar para
+          transformar una espiral previa al examen en algo manejable.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cómo descubrir las fortalezas de tu hijo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          El truco: es difícil apoyarse en una fortaleza que no has nombrado. Muchos padres tienen una idea aproximada
+          del carácter de su hijo pero no un mapa claro — y bajo el estrés de los exámenes es fácil pasar por alto las
+          fortalezas. La{' '}
+          <Link href="/es/evaluacion-de-personalidad" className="text-indigo-600 hover:underline font-medium">evaluación de personalidad</Link>{' '}
+          gratuita de Eduentry, basada en VIA, identifica las 24 fortalezas de carácter en unos cinco minutos, para que
+          sepas exactamente en cuáles puede apoyarse tu hijo cuando la presión es máxima. Una imagen más clara de
+          <em> cuán</em> preparado está realmente también puede reducir la ansiedad — nuestra{' '}
+          <Link href="/es/evaluacion-academica" className="text-indigo-600 hover:underline font-medium">evaluación académica</Link>{' '}
+          da una lectura objetiva, de modo que al &ldquo;voy a suspender&rdquo; se le puede responder con datos.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Cuándo buscar ayuda profesional</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Las estrategias anteriores apoyan los nervios cotidianos ante los exámenes. <strong>No</strong> sustituyen la
+          atención profesional. Si la ansiedad de tu hijo es grave, persiste durante semanas, altera el sueño o el
+          apetito, provoca rechazo escolar o tu hijo expresa desesperanza, habla con tu médico, el orientador del
+          colegio o un psicólogo infantil. Pedir ayuda a tiempo es, en sí mismo, una fortaleza.
+        </p>
+      </section>
+    </>
+  ),
+
   'early-internship-child-development-career': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">

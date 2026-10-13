@@ -4,6 +4,130 @@ import { Bullet, Callout, Check, Cross } from './blog-components'
 
 export const FR_CONTENT: Record<string, React.ReactNode> = {
 
+  'test-anxiety-in-children-strengths': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Vous connaissez cette veille d’examen : votre enfant ne dort pas, dit qu’il a mal au ventre, insiste sur le
+        fait qu’il va &ldquo;tout rater&rdquo; — ou s’assoit pour réviser et a soudain un trou de mémoire. C’est l’un
+        des sentiments les plus impuissants pour un parent, et les conseils habituels (&ldquo;révise plus&rdquo;,
+        &ldquo;détends-toi&rdquo;) fonctionnent rarement. Le recadrage qui marche : <strong>l’anxiété des examens se
+        gère, elle ne se révise pas</strong> — et le levier le plus efficace, ce sont les forces de caractère que
+        votre enfant possède déjà.
+      </p>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Est-ce de l’anxiété des examens ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un peu de nervosité avant un examen est normal — voire utile. Cela bascule dans l’anxiété quand cela gêne
+          durablement la performance ou le ressenti de votre enfant. Elle se manifeste généralement de trois façons :
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>Physique :</strong> troubles du sommeil, maux de ventre ou de tête, cœur qui s’emballe, nausées avant l’examen.</Bullet>
+          <Bullet><strong>Comportementale :</strong> procrastination, évitement (&ldquo;je le ferai plus tard&rdquo;) ou trou de mémoire malgré une bonne connaissance.</Bullet>
+          <Bullet><strong>Émotionnelle :</strong> irritabilité, larmes, discours intérieur du type &ldquo;je n’y arrive pas&rdquo; ou &ldquo;tout le monde est meilleur que moi&rdquo;.</Bullet>
+        </ul>
+        <Callout>
+          <strong>Anxiété vs. manque de préparation.</strong> Certains enfants sont bien préparés et se figent quand
+          même — c’est de l’anxiété, et les stratégies d’adaptation sont le levier. D’autres se sentent
+          &ldquo;anxieux&rdquo; surtout parce qu’ils sont peu préparés — là, la solution est la structure de révision.
+          Savoir lequel des deux vous avez devant vous compte.
+        </Callout>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi cela arrive</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sous l’effet du stress, le cerveau détourne ses ressources des zones de la pensée (le cortex préfrontal)
+          vers une réponse de menace. La <strong>mémoire de travail</strong> — l’espace mental que l’enfant utilise
+          pour retenir et manipuler l’information — est particulièrement vulnérable, et c’est précisément pourquoi un
+          enfant bien préparé peut avoir un &ldquo;trou&rdquo; sur une question qu’il connaissait la veille.
+          L’évitement aggrave la situation : sauter la révision pour échapper à l’inconfort soulage à court terme mais
+          augmente l’anxiété la fois suivante. L’objectif n’est pas de supprimer toute nervosité — c’est de la
+          maintenir à un niveau où votre enfant peut encore réfléchir.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Le recadrage : les forces, pas seulement la révision</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les enfants ne gèrent pas le stress d’une seule manière universelle — ils le gèrent à travers les forces
+          qu’ils possèdent déjà. Un enfant doté d’une forte <em>persévérance</em> vainc l’anxiété autrement qu’un
+          enfant à forte <em>intelligence sociale</em>. Ainsi, plutôt qu’un &ldquo;calme-toi&rdquo; générique, le plus
+          efficace est d’identifier une force que votre enfant possède réellement et de l’associer à une habitude
+          concrète. En voici cinq qui correspondent directement à l’anxiété des examens.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5 forces qui apaisent la tempête</h2>
+        <div className="space-y-4">
+          {[
+            {
+              name: 'Maîtrise de soi',
+              does: 'Gère la panique physique — le cœur qui s’emballe et les pensées en spirale.',
+              tactic: 'Créez un court rituel avant l’examen : trois respirations lentes (inspirez 4, expirez 6) puis une phrase d’ancrage (« Je me suis préparé ; j’avancerai question par question »). Pratiqué à l’avance, il devient un point d’ancrage.',
+            },
+            {
+              name: 'Persévérance',
+              does: 'Vainc ce qui amplifie le plus l’anxiété — l’évitement et la procrastination.',
+              tactic: 'Utilisez des démarrages de 15 minutes : convenez de réviser seulement 15 minutes. Commencer est le plus dur ; une fois lancé, la plupart continuent. De petites approches répétées valent mieux qu’un seul marathon redouté.',
+            },
+            {
+              name: 'Bravoure',
+              does: 'Permet à l’enfant d’affronter l’examen redouté au lieu de le fuir.',
+              tactic: 'Nommez la peur à voix haute (« J’ai peur de tout oublier »), puis réduisez-la avec un examen blanc à faible enjeu, chronométré à la maison — l’exposition rend le vrai moins effrayant.',
+            },
+            {
+              name: 'Espoir',
+              does: 'Dissout la pensée catastrophique (« si j’échoue, tout mon avenir est fichu »).',
+              tactic: 'Recadrez ensemble : « un examen ne décide pas de ton avenir ». Aidez votre enfant à nommer ce qui reste vrai même si un examen précis se passe mal — cela élargit un moment de vision en tunnel.',
+            },
+            {
+              name: 'Enthousiasme et intelligence sociale',
+              does: 'Restaure l’énergie (enthousiasme) et évite l’isolement (intelligence sociale) — deux choses que l’anxiété érode en silence.',
+              tactic: 'Protégez le sommeil, le mouvement et les pauses plutôt que les nuits blanches ; et encouragez à en parler avec vous, un ami ou un enseignant. La co-régulation — un adulte calme à proximité — réduit vraiment le stress de l’enfant.',
+            },
+          ].map(({ name, does, tactic }) => (
+            <div key={name} className="rounded-2xl border border-gray-100 bg-gray-50/60 p-5">
+              <h3 className="font-bold text-gray-900 mb-1">{name}</h3>
+              <p className="text-sm text-gray-600 mb-2">{does}</p>
+              <p className="text-sm text-gray-700"><strong className="text-indigo-700">À essayer à la maison :</strong> {tactic}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Votre enfant n’a pas besoin des cinq. S’appuyer sur une ou deux forces qu’il possède réellement suffit
+          généralement à transformer une spirale d’avant-examen en quelque chose de gérable.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment découvrir les forces de votre enfant</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le hic : difficile de s’appuyer sur une force qu’on n’a pas nommée. Beaucoup de parents ont une idée vague du
+          caractère de leur enfant mais pas de carte claire — et sous le stress des examens, les forces sont faciles à
+          négliger. L’{' '}
+          <Link href="/fr/evaluation-de-personnalite" className="text-indigo-600 hover:underline font-medium">évaluation de personnalité</Link>{' '}
+          gratuite d’Eduentry, basée sur la VIA, identifie les 24 forces de caractère en environ cinq minutes, pour que
+          vous sachiez exactement sur lesquelles votre enfant peut compter quand la pression est maximale. Une image
+          plus claire de <em>à quel point</em> votre enfant est réellement prêt peut aussi réduire l’anxiété — notre{' '}
+          <Link href="/fr/evaluation-academique" className="text-indigo-600 hover:underline font-medium">évaluation académique</Link>{' '}
+          donne une lecture objective, de sorte qu’au &ldquo;je vais échouer&rdquo; on peut répondre par des faits.
+        </p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Quand consulter un professionnel</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les stratégies ci-dessus accompagnent le trac ordinaire des examens. Elles ne <strong>remplacent pas</strong>
+          un suivi professionnel. Si l’anxiété de votre enfant est sévère, persiste sur plusieurs semaines, perturbe le
+          sommeil ou l’appétit, entraîne un refus scolaire ou si votre enfant exprime du désespoir, parlez-en à votre
+          médecin, au conseiller scolaire ou à un psychologue pour enfants. Demander de l’aide tôt est en soi une force.
+        </p>
+      </section>
+    </>
+  ),
+
   'high-school-internship-benefits-university': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">

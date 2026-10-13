@@ -2,6 +2,47 @@ import type { BlogPostMeta } from './posts'
 
 export const BLOG_POSTS_FR: BlogPostMeta[] = [
   {
+    slug: 'anxiete-examens-enfants-forces',
+    contentSlug: 'test-anxiety-in-children-strengths',
+    title: 'Anxiété des Examens chez l’Enfant : Aider grâce aux Forces de Caractère',
+    shortTitle: 'Anxiété des Examens : Aider grâce aux Forces',
+    description:
+      'L’anxiété des examens se gère, elle ne se révise pas. Découvrez les signes, pourquoi elle survient et comment cinq forces de caractère — persévérance, bravoure, espoir, enthousiasme et intelligence sociale — aident votre enfant, avec des tactiques pour la maison.',
+    tldr: 'Si votre enfant se fige, procrastine ou s’effondre avant un examen, la réponse est rarement « réviser plus ». L’anxiété des examens se gère, elle ne se révise pas — et le levier le plus efficace, ce sont les forces de caractère que votre enfant possède déjà. Ce guide couvre les signes, les causes et la manière dont cinq forces — persévérance, bravoure, espoir, enthousiasme et intelligence sociale — réduisent l’anxiété, avec des tactiques concrètes pour la maison. L’évaluation gratuite d’Eduentry identifie les 24 forces en quelques minutes.',
+    date: '2026-10-14',
+    dateModified: '2026-10-14',
+    readTime: '8 min de lecture',
+    tags: ['Anxiété des Examens', 'Forces de Caractère', 'Guide Parents', 'Développement de l’Enfant', 'Test de Personnalité', 'Bien-être'],
+    faqs: [
+      {
+        q: 'Quels sont les signes de l’anxiété des examens chez l’enfant ?',
+        a: 'L’anxiété des examens se manifeste physiquement (difficultés à dormir, maux de ventre ou de tête, cœur qui s’emballe avant l’examen), dans le comportement (procrastination, évitement, trou de mémoire malgré une bonne préparation) et émotionnellement (irritabilité, larmes, « je n’y arrive pas »). Un peu de nervosité est normal, voire utile ; cela devient de l’anxiété quand cela bloque durablement la performance ou le bien-être.',
+      },
+      {
+        q: 'Comment aider mon enfant à surmonter l’anxiété des examens ?',
+        a: 'Au-delà de la préparation, l’aide la plus durable consiste à s’appuyer sur les forces de caractère que votre enfant possède déjà : la maîtrise de soi pour des routines de calme, la persévérance pour affronter plutôt qu’éviter, la bravoure pour se présenter à l’examen, l’espoir pour contrer les pensées catastrophiques et l’intelligence sociale pour demander de l’aide au lieu de s’isoler. Associer une force précise à une habitude concrète (un rituel de respiration avant l’examen, des démarrages de 15 minutes, recadrer « un examen n’est pas tout mon avenir ») fonctionne mieux que dire « détends-toi ».',
+      },
+      {
+        q: 'L’anxiété des examens est-elle la même chose qu’un manque de préparation ?',
+        a: 'Pas toujours. Certains enfants sont bien préparés et se figent quand même — c’est de l’anxiété. D’autres se sentent « anxieux » surtout parce qu’ils sont peu préparés, et la solution est une structure de révision, pas la gestion émotionnelle. Les distinguer compte : une vraie préparation réduit l’anxiété, mais pour un enfant préparé qui panique quand même, les stratégies d’adaptation et les forces sont le levier.',
+      },
+      {
+        q: 'Quelles forces de caractère aident le plus face à l’anxiété des examens ?',
+        a: 'Cinq sont particulièrement utiles : la maîtrise de soi (gérer la panique physique), la persévérance (vaincre l’évitement et la procrastination), la bravoure (affronter l’examen redouté), l’espoir (recadrer les pensées catastrophiques) et l’enthousiasme et l’intelligence sociale (récupération physique et recherche de soutien). L’enfant n’a pas besoin de toutes — s’appuyer sur une ou deux qu’il a déjà aide de façon fiable.',
+      },
+      {
+        q: 'Quand faut-il consulter un professionnel pour l’anxiété de mon enfant ?',
+        a: 'Si l’anxiété est sévère, persiste sur plusieurs semaines, perturbe le sommeil ou l’appétit, entraîne un refus scolaire ou si votre enfant exprime du désespoir, consultez votre médecin, le conseiller scolaire ou un psychologue pour enfants. Les stratégies de ce guide accompagnent le trac ordinaire des examens ; elles ne remplacent pas un suivi professionnel lorsque l’anxiété affecte la vie quotidienne.',
+      },
+    ],
+    cta: {
+      heading: 'Découvrez les forces sur lesquelles votre enfant peut s’appuyer',
+      body: 'Évaluation de personnalité gratuite basée sur la VIA pour les 6–20 ans. Identifie les forces de caractère de votre enfant — y compris celles qui aident le plus face au stress — en environ 5 minutes. Sans compte.',
+      label: 'Démarrer l’évaluation de personnalité gratuite',
+      href: '/fr/evaluation-de-personnalite',
+    },
+  },
+  {
     slug: 'stages-lycee-avantages-universite',
     contentSlug: 'high-school-internship-benefits-university',
     title: 'Stages au lycée : pourquoi ils comptent pour le développement personnel et l\'accès à l\'université',

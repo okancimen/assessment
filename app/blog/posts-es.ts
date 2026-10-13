@@ -2,6 +2,47 @@ import type { BlogPostMeta } from './posts'
 
 export const BLOG_POSTS_ES: BlogPostMeta[] = [
   {
+    slug: 'ansiedad-ante-examenes-ninos-fortalezas',
+    contentSlug: 'test-anxiety-in-children-strengths',
+    title: 'Ansiedad ante los Exámenes en Niños: Cómo Ayudarles desde las Fortalezas',
+    shortTitle: 'Ansiedad ante los Exámenes: Ayuda desde las Fortalezas',
+    description:
+      'La ansiedad ante los exámenes se gestiona, no se estudia. Descubre las señales, por qué ocurre y cómo cinco fortalezas de carácter — perseverancia, valentía, esperanza, vitalidad e inteligencia social — ayudan a tu hijo, con tácticas para casa.',
+    tldr: 'Si tu hijo se bloquea, procrastina o se derrumba antes de un examen, la respuesta rara vez es "estudiar más". La ansiedad ante los exámenes se gestiona, no se estudia — y la palanca más eficaz son las fortalezas de carácter que tu hijo ya tiene. Esta guía cubre las señales, por qué ocurre y cómo cinco fortalezas — perseverancia, valentía, esperanza, vitalidad e inteligencia social — reducen la ansiedad, con tácticas prácticas para casa. La evaluación gratuita de Eduentry identifica las 24 fortalezas en minutos.',
+    date: '2026-10-14',
+    dateModified: '2026-10-14',
+    readTime: '8 min de lectura',
+    tags: ['Ansiedad ante Exámenes', 'Fortalezas de Carácter', 'Guía para Padres', 'Desarrollo Infantil', 'Test de Personalidad', 'Bienestar'],
+    faqs: [
+      {
+        q: '¿Cuáles son las señales de ansiedad ante los exámenes en los niños?',
+        a: 'La ansiedad ante los exámenes aparece físicamente (problemas para dormir, dolor de estómago o cabeza, taquicardia antes del examen), en el comportamiento (procrastinación, evitación, quedarse en blanco pese a saber la materia) y emocionalmente (irritabilidad, llanto, "no puedo hacerlo"). Cierto nerviosismo es normal e incluso útil; se convierte en ansiedad cuando bloquea de forma constante el rendimiento o el bienestar.',
+      },
+      {
+        q: '¿Cómo puedo ayudar a mi hijo a superar la ansiedad ante los exámenes?',
+        a: 'Más allá de la preparación, la ayuda más duradera es apoyarse en las fortalezas de carácter que tu hijo ya tiene: autocontrol para rutinas de calma, perseverancia para afrontar en lugar de evitar, valentía para presentarse al examen, esperanza para contrarrestar el pensamiento catastrófico e inteligencia social para pedir apoyo en vez de aislarse. Combinar una fortaleza concreta con un hábito (un ritual de respiración antes del examen, arranques de 15 minutos, replantear "un examen no es todo mi futuro") funciona mejor que decir "tranquilízate".',
+      },
+      {
+        q: '¿La ansiedad ante los exámenes es lo mismo que no estar preparado?',
+        a: 'No siempre. Algunos niños están bien preparados y aun así se bloquean — eso es ansiedad. Otros se sienten "ansiosos" sobre todo porque van poco preparados, y la solución es estructura de estudio, no afrontamiento emocional. Distinguirlos importa: estar realmente preparado reduce la ansiedad, pero para un niño preparado que aun así entra en pánico, las estrategias de afrontamiento y las fortalezas son la palanca.',
+      },
+      {
+        q: '¿Qué fortalezas de carácter ayudan más con la ansiedad ante los exámenes?',
+        a: 'Cinco son especialmente útiles: autocontrol (gestionar el pánico físico), perseverancia (vencer la evitación y la procrastinación), valentía (afrontar el examen temido), esperanza (replantear pensamientos catastróficos) y vitalidad e inteligencia social (recuperación física y pedir apoyo). El niño no necesita todas — apoyarse en una o dos que ya tenga ayuda de forma fiable.',
+      },
+      {
+        q: '¿Cuándo debo buscar ayuda profesional para la ansiedad de mi hijo?',
+        a: 'Si la ansiedad es grave, persiste durante semanas, afecta al sueño o al apetito, provoca rechazo escolar o tu hijo expresa desesperanza, consulta a tu médico, al orientador del colegio o a un psicólogo infantil. Las estrategias de esta guía apoyan los nervios cotidianos ante los exámenes; no sustituyen la atención profesional cuando la ansiedad afecta a la vida diaria.',
+      },
+    ],
+    cta: {
+      heading: 'Descubre las fortalezas en las que tu hijo puede apoyarse',
+      body: 'Evaluación de personalidad gratuita basada en VIA para edades 6–20. Identifica las fortalezas de carácter de tu hijo — incluidas las que más ayudan ante el estrés — en unos 5 minutos. Sin cuenta.',
+      label: 'Iniciar evaluación de personalidad gratuita',
+      href: '/es/evaluacion-de-personalidad',
+    },
+  },
+  {
     slug: 'practicas-tempranas-desarrollo-infantil-carrera',
     contentSlug: 'early-internship-child-development-career',
     title: 'Por qué empezar antes importa: desarrollo infantil, madurez y la ventaja profesional acumulada de las prácticas tempranas',
