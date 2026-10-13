@@ -22,11 +22,10 @@ const SCORE_PTS = polygon(TRAITS.map((t) => SAMPLE_TRAIT_SCORES[t]))
 const AVG_PTS = polygon(TRAITS.map((t) => SAMPLE_PEER_AVG[t]))
 const AXES = TRAITS.map((_, i) => point(i, 5))
 
-// A few evenly-spaced axes get a label on the web (all 24 would be unreadable).
-const LABEL_INDICES = [0, 4, 8, 12, 16, 20]
+// Every trait gets a small label on the web; hover enlarges + highlights it.
 function labelFor(i: number) {
   const angle = (-90 + i * (360 / TRAITS.length)) * (Math.PI / 180)
-  const lr = R + 12
+  const lr = R + 10
   const cos = Math.cos(angle)
   return {
     x: CX + lr * cos,
@@ -72,7 +71,7 @@ export default function HeroRadarCard({ locale }: { locale: SampleLocale }) {
         <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider mb-1">{c.profileTitle}</p>
 
         {/* 24-trait radar */}
-        <svg viewBox="-36 -22 312 284" className="w-full" role="img" aria-label={c.profileTitle}>
+        <svg viewBox="-52 -30 344 300" className="w-full" role="img" aria-label={c.profileTitle}>
           {[0.25, 0.5, 0.75, 1].map((f) => (
             <circle key={f} cx={CX} cy={CY} r={R * f} fill="none" stroke="#e5e7eb" strokeWidth="1" />
           ))}
@@ -85,20 +84,20 @@ export default function HeroRadarCard({ locale }: { locale: SampleLocale }) {
           <polygon points={AVG_PTS} fill="none" stroke="#0D9488" strokeWidth="1.5" strokeDasharray="4 2" strokeLinejoin="round" />
           {/* child's sample profile — solid */}
           <polygon points={SCORE_PTS} fill="rgba(79,70,229,0.15)" stroke="#4F46E5" strokeWidth="2" strokeLinejoin="round" />
-          {/* a few trait labels — grow + highlight on hover (CSS only) */}
+          {/* all 24 trait labels — grow + highlight on hover (CSS only) */}
           <g>
-            {LABEL_INDICES.map((i) => {
+            {TRAITS.map((trait, i) => {
               const { x, y, anchor } = labelFor(i)
               return (
                 <text
-                  key={i}
+                  key={trait}
                   x={x.toFixed(1)}
                   y={y.toFixed(1)}
                   textAnchor={anchor}
                   dominantBaseline="middle"
-                  className="fill-[#94a3b8] [font-size:8px] font-medium transition-all duration-150 hover:fill-[#4F46E5] hover:[font-size:12px] hover:font-semibold cursor-default"
+                  className="fill-[#94a3b8] [font-size:6px] font-medium transition-all duration-150 hover:fill-[#4F46E5] hover:[font-size:11px] hover:font-semibold cursor-default"
                 >
-                  {t.traitLabels[TRAITS[i]]}
+                  {t.traitLabels[trait]}
                 </text>
               )
             })}

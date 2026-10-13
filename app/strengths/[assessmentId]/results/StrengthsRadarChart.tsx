@@ -93,8 +93,9 @@ export default function StrengthsRadarChart({
             dataKey="score"
             stroke="#4F46E5"
             fill="#4F46E5"
-            fillOpacity={0.18}
-            strokeWidth={2}
+            fillOpacity={0.25}
+            strokeWidth={3.5}
+            strokeLinejoin="round"
             dot={{ r: 3, fill: '#4F46E5' }}
           />
           <Tooltip
