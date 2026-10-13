@@ -91,7 +91,9 @@ export const UAE_CONTENT: Record<string, React.ReactNode> = {
           CAT4 reports Standard Age Scores (SAS) for each battery and a mean (overall) SAS.
           The SAS scale has a mean of 100 and a standard deviation of 15 — the same scale
           used by IQ tests and most professional cognitive assessments. This makes the
-          scores directly comparable to other standardised assessments.
+          scores directly comparable to other standardised assessments. For a full breakdown
+          of how the scale maps to percentiles, see our{' '}
+          <Link href="/11-plus-sas-scores" className="text-indigo-600 hover:underline font-medium">SAS scores explained</Link> guide.
         </p>
         <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
           <table className="w-full text-sm">

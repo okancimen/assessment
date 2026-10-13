@@ -267,9 +267,11 @@ export const UK_CONTENT_CANADA: Record<string, React.ReactNode> = {
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
           The CCAT produces three cluster scores — Verbal, Quantitative, and Non-Verbal — and an
-          overall Standard Age Score. A score at or above the 95th percentile on the CCAT typically
+          overall Standard Age Score (SAS). A score at or above the 95th percentile on the CCAT typically
           triggers a referral for individual assessment. Parents whose children score high on the
           CCAT should be aware that a group test score alone does not determine gifted identification.
+          (For how the SAS scale maps to percentiles, see our{' '}
+          <Link href="/11-plus-sas-scores" className="text-indigo-600 hover:underline font-medium">SAS scores explained</Link> guide.)
         </p>
         <p className="text-gray-700 leading-relaxed">
           If your child has not been screened by the school but you suspect high ability, you can
