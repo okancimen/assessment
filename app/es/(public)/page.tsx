@@ -671,6 +671,9 @@ export default function SpanishHomePage() {
               <Link href="/es/evaluacion-de-personalidad" className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors whitespace-nowrap">
                 Explorar evaluación de personalidad →
               </Link>
+              <Link href="/es/informe-de-ejemplo-personalidad" className="text-sm font-semibold text-[#92400e] hover:text-[#B45309] hover:underline underline-offset-2">
+                Ver un informe de ejemplo →
+              </Link>
               <p className="text-xs text-[#92400e] text-center">Evaluación para padres · 15 minutos · Gratis</p>
             </div>
           </div>

@@ -154,6 +154,10 @@ export default function KisilikDegerlendirmesiPage() {
             </p>
             <GuestStartForm locale="tr" />
             <p className="mt-3 text-sm text-[#6e6e73]">
+              Emin değil misiniz?{' '}
+              <Link href="/tr/kisilik-ornek-rapor" className="text-[#4F46E5] hover:underline font-medium">Örnek raporu görün</Link>
+            </p>
+            <p className="mt-1 text-sm text-[#6e6e73]">
               Zaten hesabınız var mı?{' '}
               <Link href="/tr/auth/login" className="text-[#4F46E5] hover:underline font-medium">Giriş yap</Link>
             </p>

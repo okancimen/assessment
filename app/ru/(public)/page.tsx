@@ -842,6 +842,9 @@ export default function RussianHomePage() {
             <Link href="/ru/otsenka-lichnosti" className="px-8 py-3.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
               Начать оценку личности →
             </Link>
+            <Link href="/ru/primer-otcheta-lichnosti" className="mt-3 text-sm font-semibold hover:underline" style={{ color: '#92400e' }}>
+              Посмотреть пример отчёта →
+            </Link>
           </div>
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">Оценка стажировки</p>

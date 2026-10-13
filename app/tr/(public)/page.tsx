@@ -690,6 +690,9 @@ export default function TurkishHomePage() {
               <Link href="/tr/kisilik-degerlendirmesi" className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors whitespace-nowrap">
                 Kişilik değerlendirmesini keşfet →
               </Link>
+              <Link href="/tr/kisilik-ornek-rapor" className="text-sm font-semibold text-[#92400e] hover:text-[#B45309] hover:underline underline-offset-2">
+                Örnek raporu görün →
+              </Link>
               <p className="text-xs text-[#92400e] text-center">Ebeveyn değerlendirmesi · 15 dakika · Ücretsiz</p>
             </div>
           </div>

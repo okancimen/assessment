@@ -849,6 +849,9 @@ export default function ArabicHomePage() {
             <Link href="/ar/taqyim-al-shakhsiya" className="px-8 py-3.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
               ابدأ تقييم الشخصية ←
             </Link>
+            <Link href="/ar/namudhaj-taqrir-shakhsiya" className="mt-3 text-sm font-semibold hover:underline" style={{ color: '#92400e' }}>
+              اطلع على تقرير نموذجي ←
+            </Link>
           </div>
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">
             <p className="text-[10px] text-[#4F46E5] font-semibold uppercase tracking-widest mb-4">تقييم التدريب</p>

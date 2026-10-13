@@ -143,7 +143,11 @@ export default function EvaluacionDePersonalidadPage() {
             Una evaluación de carácter científica e impulsada por IA, perfectamente adaptada a la etapa de desarrollo de tu hijo.
           </p>
           <GuestStartForm locale="es" />
-          <p className="mt-2 text-sm text-[#6e6e73]">
+          <p className="mt-3 text-sm text-[#6e6e73]">
+            ¿No estás seguro?{' '}
+            <Link href="/es/informe-de-ejemplo-personalidad" className="text-[#4F46E5] hover:underline font-medium">Ver un informe de ejemplo</Link>
+          </p>
+          <p className="mt-1 text-sm text-[#6e6e73]">
             ¿Ya tienes una cuenta?{' '}
             <Link href="/es/auth/login" className="text-[#4F46E5] hover:underline font-medium">Iniciar sesión</Link>
           </p>

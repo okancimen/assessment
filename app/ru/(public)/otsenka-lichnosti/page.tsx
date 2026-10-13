@@ -141,7 +141,11 @@ export default function OtsenkaLichnostiPage() {
             Оценка характера на базе ИИ, научно обоснованная и идеально адаптированная к возрасту вашего ребёнка.
           </p>
           <GuestStartForm locale="ru" />
-          <p className="mt-2 text-sm text-[#6e6e73]">
+          <p className="mt-3 text-sm text-[#6e6e73]">
+            Ещё не уверены?{' '}
+            <Link href="/ru/primer-otcheta-lichnosti" className="text-[#4F46E5] hover:underline font-medium">Посмотреть пример отчёта</Link>
+          </p>
+          <p className="mt-1 text-sm text-[#6e6e73]">
             Уже есть аккаунт?{' '}
             <Link href="/ru/auth/login" className="text-[#4F46E5] hover:underline font-medium">Войти</Link>
           </p>

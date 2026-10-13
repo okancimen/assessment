@@ -141,7 +141,11 @@ export default function TaqyimAlShakhsiyaPage() {
             تقييم شخصي علمي مدعوم بالذكاء الاصطناعي، مُصمَّم خصيصاً للمرحلة التطورية لطفلك.
           </p>
           <GuestStartForm locale="ar" />
-          <p className="mt-2 text-sm text-[#6e6e73]">
+          <p className="mt-3 text-sm text-[#6e6e73]">
+            لست متأكدًا بعد؟{' '}
+            <Link href="/ar/namudhaj-taqrir-shakhsiya" className="text-[#4F46E5] hover:underline font-medium">اطلع على تقرير نموذجي</Link>
+          </p>
+          <p className="mt-1 text-sm text-[#6e6e73]">
             هل لديك حساب بالفعل؟{' '}
             <Link href="/ar/auth/login" className="text-[#4F46E5] hover:underline font-medium">تسجيل الدخول</Link>
           </p>

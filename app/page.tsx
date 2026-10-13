@@ -807,6 +807,9 @@ export default function LandingPage() {
               <Link href="/personality-assessment" className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors whitespace-nowrap">
                 Explore personality assessment →
               </Link>
+              <Link href="/sample-report/personality" className="text-sm font-semibold text-[#92400e] hover:text-[#B45309] hover:underline underline-offset-2">
+                See a sample report →
+              </Link>
               <p className="text-xs text-[#92400e] text-center">Parent-rated · 15 minutes · Free</p>
             </div>
           </div>

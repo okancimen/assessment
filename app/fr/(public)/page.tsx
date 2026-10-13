@@ -668,6 +668,9 @@ export default function FrenchHomePage() {
               <Link href="/fr/evaluation-de-personnalite" className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors whitespace-nowrap">
                 Explorer l&apos;évaluation de personnalité →
               </Link>
+              <Link href="/fr/exemple-rapport-personnalite" className="text-sm font-semibold text-[#92400e] hover:text-[#B45309] hover:underline underline-offset-2">
+                Voir un rapport exemple →
+              </Link>
               <p className="text-xs text-[#92400e] text-center">Évaluation parentale · 15 minutes · Gratuit</p>
             </div>
           </div>
