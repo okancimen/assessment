@@ -37,7 +37,7 @@ function LoginForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label className="block font-mono text-[10px] text-white/40 uppercase tracking-[0.12em] mb-2">
+        <label className="block font-mono text-[10px] text-white/30 uppercase tracking-[0.15em] mb-2">
           Email
         </label>
         <input
@@ -45,13 +45,13 @@ function LoginForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-white/25 text-sm focus:outline-none focus:border-[#818CF8]/60 focus:ring-1 focus:ring-[#818CF8]/20 transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-white/20 text-sm font-mono focus:outline-none focus:border-[#818CF8]/50 focus:ring-1 focus:ring-[#818CF8]/20 transition-colors"
           placeholder="you@example.com"
         />
       </div>
 
       <div>
-        <label className="block font-mono text-[10px] text-white/40 uppercase tracking-[0.12em] mb-2">
+        <label className="block font-mono text-[10px] text-white/30 uppercase tracking-[0.15em] mb-2">
           Password
         </label>
         <input
@@ -59,13 +59,13 @@ function LoginForm() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-white/25 text-sm focus:outline-none focus:border-[#818CF8]/60 focus:ring-1 focus:ring-[#818CF8]/20 transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-white/20 text-sm font-mono focus:outline-none focus:border-[#818CF8]/50 focus:ring-1 focus:ring-[#818CF8]/20 transition-colors"
           placeholder="••••••••"
         />
       </div>
 
       {error && (
-        <div className="rounded-xl px-4 py-3 text-xs bg-red-500/10 border border-red-500/20 text-red-400">
+        <div className="rounded-lg px-4 py-3 text-xs font-mono bg-red-500/10 border border-red-500/20 text-red-400">
           {error}
         </div>
       )}
@@ -73,7 +73,7 @@ function LoginForm() {
       <button
         type="submit"
         disabled={loading}
-        className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-6 py-3 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-[0_0_24px_rgba(99,102,241,0.25)] disabled:opacity-50 disabled:cursor-not-allowed mt-2"
+        className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-6 py-3 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-[0_0_24px_rgba(99,102,241,0.3)] disabled:opacity-50 disabled:cursor-not-allowed mt-1"
       >
         {loading ? (
           <>
@@ -83,7 +83,14 @@ function LoginForm() {
             </svg>
             Signing in…
           </>
-        ) : 'Sign in'}
+        ) : (
+          <>
+            Sign in
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </>
+        )}
       </button>
     </form>
   )
@@ -91,47 +98,66 @@ function LoginForm() {
 
 export default function AILoginPage() {
   return (
-    <div className="relative bg-[#050505] flex items-center justify-center px-6 py-20 min-h-[calc(100vh-44px)]">
+    <section className="relative overflow-hidden min-h-[92vh] flex flex-col items-center justify-center px-6 pt-20 pb-24 bg-[#050505]">
       {/* Dot grid */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.25]"
-        style={{
-          backgroundImage: 'radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px)',
-          backgroundSize: '28px 28px',
-        }}
+        className="pointer-events-none absolute inset-0 opacity-[0.35]"
+        style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px)', backgroundSize: '28px 28px' }}
       />
-      {/* Glow */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[320px] rounded-full bg-[#4F46E5] opacity-[0.07] blur-[110px]" />
+      {/* Indigo glow */}
+      <div className="pointer-events-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-[#4F46E5] opacity-[0.07] blur-[120px]" />
+      {/* Violet glow */}
+      <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 w-[400px] h-[300px] rounded-full bg-[#7C3AED] opacity-[0.06] blur-[100px]" />
 
-      <div className="relative z-10 w-full max-w-sm">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 border border-white/[0.1] bg-white/[0.04] text-[11px] font-mono text-white/40 px-3 py-1.5 rounded-full tracking-[0.1em] uppercase mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#4ade80] shadow-[0_0_6px_#4ade80]" />
-            Secure sign-in
-          </div>
-          <h1 className="text-3xl font-bold text-white tracking-tight mb-2">Welcome back</h1>
-          <p className="text-sm text-white/40">Sign in to access your assessment dashboard</p>
+      <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 mb-8">
+          <span className="inline-flex items-center gap-2 border border-white/[0.12] bg-white/[0.04] text-[11px] font-mono text-white/60 px-3.5 py-1.5 rounded-full tracking-[0.12em] uppercase">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#4ade80] shadow-[0_0_6px_#4ade80] animate-pulse" />
+            Secure sign-in · Your account
+          </span>
         </div>
 
-        {/* Card */}
-        <div className="bg-white/[0.03] border border-white/[0.08] rounded-2xl p-8">
-          <Suspense fallback={null}>
-            <LoginForm />
-          </Suspense>
-        </div>
+        {/* Heading */}
+        <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-6 leading-[1.05]">
+          <span className="text-white">Welcome</span>
+          <br />
+          <span className="bg-gradient-to-r from-[#818CF8] via-[#6366F1] to-[#A78BFA] bg-clip-text text-transparent">back.</span>
+        </h1>
 
-        {/* Footer link */}
-        <p className="text-center text-xs text-white/30 mt-6">
-          Don&apos;t have an account?{' '}
-          <Link
-            href="/auth/register"
-            className="text-[#818CF8] hover:text-[#A78BFA] transition-colors font-semibold"
-          >
-            Create one free
-          </Link>
+        <p className="text-lg sm:text-xl text-white/50 max-w-md mx-auto mb-12 leading-relaxed">
+          Sign in to access your internship readiness assessment and personalised report.
         </p>
+
+        {/* Terminal-style form card */}
+        <div className="max-w-md mx-auto text-left">
+          <div className="rounded-xl border border-white/[0.08] bg-[#0a0a0a] overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.6)]">
+            {/* Window chrome */}
+            <div className="flex items-center gap-1.5 px-4 py-3 border-b border-white/[0.06] bg-white/[0.02]">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
+              <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
+              <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
+              <span className="ml-auto font-mono text-[10px] text-white/20">eduentry — sign in</span>
+            </div>
+            {/* Form body */}
+            <div className="p-6">
+              <Suspense fallback={null}>
+                <LoginForm />
+              </Suspense>
+            </div>
+          </div>
+
+          <p className="text-center text-xs text-white/30 mt-5 font-mono">
+            No account?{' '}
+            <Link
+              href="/auth/register"
+              className="bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent font-semibold hover:opacity-80 transition-opacity"
+            >
+              Create one free →
+            </Link>
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
