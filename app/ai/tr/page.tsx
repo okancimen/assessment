@@ -187,7 +187,7 @@ export default function TurkishHomePage() {
             Yapay Zeka Destekli · Ücretsiz · 20 Dakika
           </div>
           <h1 className="text-5xl sm:text-7xl font-bold text-[#1d1d1f] tracking-tight mb-6 leading-tight">
-            Gerçek bir staja<br />yer bul.
+            Gerçek bir iş tecrübesi<br />edin.
           </h1>
           <p className="text-xl text-[#6e6e73] max-w-xl mx-auto mb-10 leading-relaxed">
             14 yaş üstü lise öğrencileri için tasarlanmış 34 soruluk uyarlanabilir değerlendirme. Dört profesyonel alandaki hazırlık düzeyini keşfet ve kişiselleştirilmiş yapay zeka raporu al.
