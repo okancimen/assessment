@@ -84,7 +84,7 @@ export default function PublicNavAI() {
   const isRTL = locale === 'ar'
 
   return (
-    <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.82)] backdrop-blur-2xl border-b border-black/[0.08]">
+    <nav className="sticky top-0 z-50 bg-[rgba(5,5,5,0.85)] backdrop-blur-2xl border-b border-white/[0.07]">
       <div className="max-w-[1024px] mx-auto px-6 h-11 flex items-center justify-between relative" dir={isRTL ? 'rtl' : undefined}>
         <Link href={HOME[locale]} aria-label="Eduentry.ai — Home">
           {/* long logo — desktop */}
@@ -93,43 +93,43 @@ export default function PublicNavAI() {
           <Image src="/logo-ai-short.png" alt="Eduentry.ai" width={32} height={28} className="sm:hidden object-contain" priority />
         </Link>
 
-        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-xs text-[#1d1d1f]">
-          <Link href={HOW[locale]} className="hover:opacity-50 transition-opacity">
+        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-xs text-white/50">
+          <Link href={HOW[locale]} className="hover:text-white transition-colors">
             {nav.howItWorks}
           </Link>
 
           {/* Tracks dropdown — CSS-only, no JS */}
           <div className="relative group/tracks">
-            <span className="flex items-center gap-1 cursor-default hover:opacity-50 transition-opacity select-none">
+            <span className="flex items-center gap-1 cursor-default hover:text-white transition-colors select-none">
               {nav.tracks}
               <svg className="w-2 h-2 mt-px" viewBox="0 0 8 5" fill="currentColor" aria-hidden="true">
                 <path d="M0 0l4 5 4-5z" />
               </svg>
             </span>
             <div className="invisible opacity-0 group-hover/tracks:visible group-hover/tracks:opacity-100 transition-all duration-150 absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50 pointer-events-none group-hover/tracks:pointer-events-auto">
-              <div className="bg-white rounded-2xl border border-[#d2d2d7] shadow-xl shadow-black/[0.08] p-2 w-56">
+              <div className="bg-[#111] rounded-2xl border border-white/[0.08] shadow-xl shadow-black/50 p-2 w-56">
                 {tracks.map(({ href, label, desc }) => (
                   <Link
                     key={href}
                     href={href}
-                    className="block px-3 py-2.5 rounded-xl hover:bg-[#f5f5f7] transition-colors"
+                    className="block px-3 py-2.5 rounded-xl hover:bg-white/[0.06] transition-colors"
                   >
-                    <div className="font-semibold text-[#1d1d1f] text-xs mb-0.5">{label}</div>
-                    <div className="text-[10px] text-[#6e6e73]">{desc}</div>
+                    <div className="font-semibold text-white/80 text-xs mb-0.5">{label}</div>
+                    <div className="text-[10px] text-white/30">{desc}</div>
                   </Link>
                 ))}
               </div>
             </div>
           </div>
 
-          <Link href={BLOG[locale]} className="hover:opacity-50 transition-opacity">Blog</Link>
+          <Link href={BLOG[locale]} className="hover:text-white transition-colors">Blog</Link>
         </div>
 
         <div className="flex items-center gap-5">
-          <Link href="/auth/login" className="text-xs text-[#1d1d1f] hover:opacity-50 transition-opacity hidden sm:block">
+          <Link href="/auth/login" className="text-xs text-white/40 hover:text-white/80 transition-colors hidden sm:block">
             {nav.signIn}
           </Link>
-          <Link href="/apply" prefetch={false} className="text-xs font-medium text-[#4F46E5] hover:opacity-70 transition-opacity">
+          <Link href="/apply" prefetch={false} className="text-xs font-semibold bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent hover:opacity-80 transition-opacity">
             {nav.applyFree}
           </Link>
           <LanguagePicker />
