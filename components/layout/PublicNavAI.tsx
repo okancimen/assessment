@@ -84,7 +84,7 @@ export default function PublicNavAI() {
   const isRTL = locale === 'ar'
 
   return (
-    <nav className="sticky top-0 z-50 bg-[rgba(5,5,5,0.85)] backdrop-blur-2xl border-b border-white/[0.07]">
+    <nav className="sticky top-0 z-50 bg-black border-b border-white/[0.07]">
       <div className="max-w-[1024px] mx-auto px-6 h-11 flex items-center justify-between relative" dir={isRTL ? 'rtl' : undefined}>
         <Link href={HOME[locale]} aria-label="Eduentry.ai — Home">
           {/* long logo — desktop */}

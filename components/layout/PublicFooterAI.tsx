@@ -115,7 +115,7 @@ export default function PublicFooterAI() {
   const isRTL = locale === 'ar'
 
   return (
-    <footer className="bg-[#080808] border-t border-white/[0.06]" dir={isRTL ? 'rtl' : undefined}>
+    <footer className="bg-black border-t border-white/[0.06]" dir={isRTL ? 'rtl' : undefined}>
       <div className="max-w-6xl mx-auto px-6 pt-12 pb-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
 
