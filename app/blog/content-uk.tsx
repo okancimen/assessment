@@ -660,7 +660,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           evening routine, an early bedtime. Remind your child that their best is enough — and that
           a grammar school is one pathway, not the only one. Children who sit the 11+ believing
           their entire future depends on it underperform. Children who sit it relaxed and curious
-          perform at or above their practice level.
+          perform at or above their practice level. For practical strategies that use your child&apos;s
+          existing character strengths to manage exam anxiety, see our{' '}
+          <Link href="/blog/test-anxiety-in-children-strengths" className="text-indigo-600 hover:underline font-medium">test anxiety in children guide</Link>.
         </p>
       </section>
 
@@ -4542,7 +4544,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           During your child&apos;s school journey, you have likely noticed at least one of these patterns:
         </p>
         <ul className="space-y-4 mb-6">
-          <Bullet><strong>&ldquo;Studies hard but can&apos;t perform in exams&rdquo;:</strong> Many children who spend hours at their desk cannot translate that effort into results — because exam anxiety or poor time management, not lack of effort, stands between them and their true potential.</Bullet>
+          <Bullet><strong>&ldquo;Studies hard but can&apos;t perform in exams&rdquo;:</strong> Many children who spend hours at their desk cannot translate that effort into results — because{' '}
+            <Link href="/blog/test-anxiety-in-children-strengths" className="text-indigo-600 hover:underline">exam anxiety</Link>{' '}
+            or poor time management, not lack of effort, stands between them and their true potential.</Bullet>
           <Bullet><strong>Hidden potential (the rote-learning trap):</strong> School curricula often focus on memorising formulas and facts. A child with outstanding logical reasoning or spatial intelligence may go entirely unnoticed — because the system was not designed to find those strengths.</Bullet>
           <Bullet><strong>Wasting time on the wrong things:</strong> When parents do not know exactly where a child is struggling — whether in problem-solving itself, or simply reading and understanding the question — they apply the wrong study methods, and inadvertently put children off learning.</Bullet>
           <Bullet><strong>Future anxiety and global competition:</strong> The world is changing fast. Knowing only where your child stands in their class or school is no longer enough to prepare them for tomorrow&apos;s international landscape.</Bullet>
@@ -4843,7 +4847,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <strong>Boredom and disengagement:</strong> Gifted children placed in under-stimulating environments often disengage — not dramatically, but quietly. They stop investing full effort in work they find unchallenging, and the resulting grades bear no relationship to their actual capability. Teachers frequently describe this profile as &ldquo;not working to potential&rdquo; without identifying why.
           </Bullet>
           <Bullet>
-            <strong>Test anxiety:</strong> High-ability children are sometimes more vulnerable to exam pressure, not less. Their stronger metacognitive awareness makes them acutely conscious of what is at stake. When anxiety degrades working memory during an exam — which is the neurological mechanism that underlies test anxiety — the result is a performance ceiling that has nothing to do with knowledge.
+            <strong>Test anxiety:</strong> High-ability children are sometimes more vulnerable to exam pressure, not less. Their stronger metacognitive awareness makes them acutely conscious of what is at stake. When anxiety degrades working memory during an exam — which is the neurological mechanism that underlies test anxiety — the result is a performance ceiling that has nothing to do with knowledge. See our{' '}
+            <Link href="/blog/test-anxiety-in-children-strengths" className="text-indigo-600 hover:underline">test anxiety in children guide</Link>{' '}
+            for a strengths-based approach to managing it.
           </Bullet>
         </ul>
       </section>
@@ -5847,7 +5853,8 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           Some parents attempt to motivate preparation by emphasising the stakes: "if you don&apos;t work hard, you won&apos;t get into the grammar school." The research literature on test anxiety in children aged 10–11 is unambiguous on this point: high anxiety impairs performance, particularly on working memory tasks. Verbal and non-verbal reasoning tests depend heavily on working memory. Anxiety that is externally induced by parental pressure is harder for a child to self-regulate than the mild competitive focus that engaged learners naturally develop.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          The practical implication: manage your own anxiety first. A parent&apos;s visible concern about the outcome is the single biggest predictor of child anxiety during preparation. Keep conversations about practice results analytical — "let&apos;s look at which question types were hardest today" — rather than evaluative — "you&apos;re not trying hard enough." Normalise early low scores as diagnostic information, not failure. The first mock is supposed to show gaps. That is precisely the point of doing it.
+          The practical implication: manage your own anxiety first. A parent&apos;s visible concern about the outcome is the single biggest predictor of child anxiety during preparation. Keep conversations about practice results analytical — "let&apos;s look at which question types were hardest today" — rather than evaluative — "you&apos;re not trying hard enough." Normalise early low scores as diagnostic information, not failure. The first mock is supposed to show gaps. That is precisely the point of doing it. For a deeper look at how character strengths help children self-regulate exam anxiety, see our{' '}
+          <Link href="/blog/test-anxiety-in-children-strengths" className="text-indigo-600 hover:underline font-medium">test anxiety in children guide</Link>.
         </p>
       </section>
 
@@ -6055,7 +6062,8 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           Self-regulation, perseverance, and zest in particular are highly sensitive to environment and routine. The framing adults use around difficulty — &ldquo;you haven&apos;t mastered this yet&rdquo; versus &ldquo;you can&apos;t do this&rdquo; — the structure of a child&apos;s study environment, the presence of physical activity and adequate sleep: all of these have documented effects on character strength expression.
         </p>
         <Callout>
-          <strong className="text-indigo-900">The practical implication:</strong> Knowing your child&apos;s current character strength profile is not about labelling them. It is about knowing where targeted, evidence-based investment will produce the greatest developmental return — before an exam cycle begins, not during it. See <Link href="/blog/understanding-child-strengths-weaknesses-high-school" className="text-indigo-700 hover:underline">understanding your child&apos;s strengths and weaknesses before high school</Link> for the academic profile that sits alongside this one.
+          <strong className="text-indigo-900">The practical implication:</strong> Knowing your child&apos;s current character strength profile is not about labelling them. It is about knowing where targeted, evidence-based investment will produce the greatest developmental return — before an exam cycle begins, not during it. See <Link href="/blog/understanding-child-strengths-weaknesses-high-school" className="text-indigo-700 hover:underline">understanding your child&apos;s strengths and weaknesses before high school</Link> for the academic profile that sits alongside this one, and{' '}
+          <Link href="/blog/test-anxiety-in-children-strengths" className="text-indigo-700 hover:underline">how these same strengths defuse exam anxiety</Link>.
         </Callout>
       </section>
 
