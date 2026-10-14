@@ -26,7 +26,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Test Anxiety in Children: A Strengths-Based Way to Help Your Child Cope',
     shortTitle: 'Test Anxiety in Children: A Strengths-Based Way to Help',
     description:
-      'Exam anxiety in children is managed, not studied away. Learn the signs, why it happens, and how five character strengths — perseverance, bravery, hope, zest and social intelligence — help your child cope, with practical home tactics.',
+      'Test anxiety is managed, not studied away. Learn how five character strengths — perseverance, bravery, hope, zest and social intelligence — help your child.',
     tldr: 'If your child freezes, procrastinates, or melts down before exams, the answer is rarely "study more." Test anxiety is managed, not studied away — and the most effective lever is your child\'s existing character strengths. This guide covers the signs, why it happens, and how five strengths — perseverance, bravery, hope, zest and social intelligence — each defuse anxiety, with practical tactics you can use at home. Eduentry\'s free personality assessment identifies all 24 strengths in under 15 minutes.',
     date: '2026-10-14',
     dateModified: '2026-10-14',
@@ -421,7 +421,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'verbal-reasoning-11-plus-guide',
     title: 'Verbal Reasoning for the 11+: Question Types, Examples and Practice Tips',
-    shortTitle: 'Verbal Reasoning for the 11+',
+    shortTitle: 'Verbal Reasoning for the 11+ Exam',
     description:
       'Complete guide to verbal reasoning for the 11+ — all major question types with worked examples, common mistakes to avoid, and tips for effective practice.',
     tldr: 'Verbal reasoning in the 11+ tests logical thinking using words — not reading ability or writing skill. Question types include word analogies (HOT:COLD as FAST:?), codes, sequences, hidden words, and synonyms. It is distinct from English comprehension and can be improved through targeted practice regardless of reading level.',
@@ -1013,7 +1013,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'uae-gifted-programs-guide',
     title: 'Gifted Education in the UAE: How International Schools Identify and Support High-Ability Students',
-    shortTitle: 'UAE Gifted Programs Guide',
+    shortTitle: 'UAE Gifted & Talented Programs Guide',
     description:
       'How UAE international schools identify and support gifted students: CAT4 thresholds, KHDA expectations, Al Mawhiba and what to do if provision falls short.',
     tldr: 'UAE international schools identify gifted students using CAT4 SAS 112+ (stanine 7+) as the primary threshold. The KHDA requires Outstanding-rated schools to demonstrate measurable progress for high-ability students. Al Mawhiba is the UAE national programme for gifted Emirati students; expat families should focus on their school\'s internal gifted provision.',
@@ -1277,7 +1277,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'australia-acer-scholarship-exam',
     title: 'ACER Scholarship Exam Guide: How It Works, Scores and How to Prepare',
-    shortTitle: 'ACER Scholarship Exam Guide',
+    shortTitle: 'ACER Scholarship Exam: Guide for Parents',
     description:
       'A guide to the ACER Scholarship Exam — how this widely used Australian independent school entrance test works, how scores are reported, and how to prepare.',
     tldr: 'The ACER Scholarship Exam is used by most Australian independent schools to award merit scholarships and assess academic admissions. It tests written expression, humanities, and mathematics for Years 8–10 entry. Scores are school-specific rather than nationally standardised — each school sets its own scholarship threshold independently.',
@@ -1395,7 +1395,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'australia-naplan-guide',
     title: 'NAPLAN Guide for Parents: What It Is, How Scores Work and What to Do With the Results',
-    shortTitle: 'NAPLAN Guide for Parents',
+    shortTitle: 'NAPLAN Guide for Parents 2026',
     description:
       'A parent\'s guide to NAPLAN, Australia\'s literacy and numeracy test for Years 3, 5, 7 and 9: how band scoring works and what results mean.',
     tldr: 'NAPLAN is taken by all Australian students in Years 3, 5, 7, and 9 and results are reported on a four-level proficiency scale: Exceeding, Strong, Developing, and Needs Additional Support. NAPLAN measures curriculum standards, not IQ or cognitive ability — it does not directly predict selective school entry or gifted programme eligibility.',
@@ -1779,7 +1779,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'free-11-plus-practice-test-online',
     title: 'Free 11+ Practice Test Online: Adaptive, Scored and Instant',
-    shortTitle: 'Free 11+ Practice Test Online',
+    shortTitle: 'Free 11+ Practice Tests Online',
     description: 'Free adaptive 11+ practice test online in English, Maths, Verbal and Non-Verbal Reasoning, with an instant SAS showing grammar school readiness.',
     tldr: 'A free adaptive 11+ practice test covering all four subjects (English, Maths, Verbal Reasoning, Non-Verbal Reasoning) produces a Standardised Age Score (SAS) on the same mean-100, SD-15 scale as GL Assessment. Most grammar school entry thresholds are SAS 111–121+. Adaptive tests adjust question difficulty in real time, measuring ability more accurately than fixed-difficulty practice papers.',
     date: '2026-09-11',
@@ -2513,7 +2513,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'How to Get an Internship with No Experience in High School: A Complete Guide',
     shortTitle: 'How to Get an Internship with No Experience',
     description:
-      'No work experience? No problem. Here are 5 practical steps to land a high school internship, showcase your skills, and enter the professional world — starting today.',
+      'No work experience? No problem. 5 practical steps to land a high school internship, showcase your skills, and enter the professional world — starting today.',
     tldr: 'The solution to the experience paradox is simple: employers are not looking for your past — they are looking for your potential. Mapping your skills, using a readiness report instead of an empty CV, exploring alternative experience routes, and sending a personalised application letter are the four steps that turn a high school student with no prior work history into a credible applicant.',
     date: '2026-10-06',
     dateModified: '2026-10-06',
@@ -2589,7 +2589,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'The 5 Character Strengths That Predict School Success — And How to Spot Them in Your Child',
     shortTitle: 'Character Strengths That Predict Academic Success',
     description:
-      'Research identifies five VIA character strengths — curiosity, love of learning, perseverance, self-regulation, and zest — as the most reliable predictors of academic achievement in children.',
+      'Curiosity, love of learning, perseverance, self-regulation and zest reliably predict academic success. Here is how to build each one in your child.',
     tldr: "School grades measure performance relative to a class average — not the underlying character traits that determine whether a child will sustain effort, remain curious, and grow from setbacks. Five VIA character strengths — love of learning, curiosity, perseverance, self-regulation, and zest — consistently emerge in longitudinal research as the most predictive of academic outcomes. These strengths are not fixed: they are developable. Eduentry's free personality assessment identifies all 24 VIA character strengths in your child in under 15 minutes.",
     date: '2026-10-10',
     dateModified: '2026-10-10',
