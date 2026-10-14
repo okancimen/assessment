@@ -7,7 +7,7 @@
 import { execSync } from 'child_process'
 import { readFileSync } from 'fs'
 
-const KEY = '668f5830837348c9b10a615b5d3ee411'
+const KEY = 'fb555a6e825b4c729eb70c08c060e069'
 const HOST = 'eduentry.com'
 const BASE = `https://${HOST}`
 // Submit to multiple endpoints — Yandex is confirmed working; Bing logged but non-fatal
