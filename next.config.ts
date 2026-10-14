@@ -62,7 +62,9 @@ const nextConfig: NextConfig = {
       // /home has no route — redirect to the real homepage
       { source: '/home', destination: '/', permanent: true },
       // Strip /en/ prefix — English content lives at the root, not under /en/
-      { source: '/en/:path*', destination: '/:path*', permanent: true },
+      // Use :path+ (one-or-more) so /en alone is served by app/ai/en/page.tsx;
+      // :path* (zero-or-more) produced an empty Location header for bare /en.
+      { source: '/en/:path+', destination: '/:path+', permanent: true },
       // Locale blog slugs — redirect /blog/[locale-slug] → /[locale]/blog/[locale-slug]
       ...localeSlugRedirects,
     ]
