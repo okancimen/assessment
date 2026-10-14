@@ -54,7 +54,8 @@ export function ElevenPlusClusterBox({ current }: { current: string }) {
       <p className="text-sm text-gray-600 mb-5">
         Start at the <Link href="/grammar-schools" className="text-indigo-600 underline">grammar schools hub</Link> or
         the <Link href="/11-plus" className="text-indigo-600 underline">11+ preparation overview</Link>, then check
-        the target score for your area.
+        the target score for your area. Not sure what SAS means?{' '}
+        <Link href="/11-plus-sas-scores" className="text-indigo-600 underline">SAS scores explained →</Link>
       </p>
       <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Grammar schools by area</h3>
       <div className="mb-6"><GrammarAreaLinks /></div>

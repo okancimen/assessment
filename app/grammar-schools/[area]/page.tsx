@@ -161,7 +161,8 @@ export default async function GrammarAreaPage({ params }: { params: Promise<{ ar
               <h3 className="font-semibold text-gray-900 mb-3">Score target</h3>
               <div className="text-3xl font-bold text-indigo-700 mb-1">SAS {area.targetSAS}</div>
               <p className="text-sm text-gray-500">
-                Indicative competitive range. Individual school cut-offs vary — always check directly with your target school.
+                Indicative competitive range. Individual school cut-offs vary — always check directly with your target school.{' '}
+                <Link href="/11-plus-sas-scores" className="text-indigo-600 hover:underline">What does SAS mean?</Link>
               </p>
             </div>
             <div className="border border-gray-100 rounded-2xl p-6 sm:col-span-2">

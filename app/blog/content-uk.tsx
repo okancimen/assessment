@@ -1202,7 +1202,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed mb-5">
           The following ranges are indicative based on typical pass marks and historical competition
           levels. Individual school cut-offs change year to year based on the cohort. Always
-          check your target school&apos;s published admissions policy directly.
+          check your target school&apos;s published admissions policy directly. For a full explanation
+          of how SAS is calculated and what each score means in practice, see our{' '}
+          <Link href="/11-plus-sas-scores" className="text-indigo-600 hover:underline font-medium">interactive SAS scores guide</Link>.
         </p>
         <div className="overflow-x-auto rounded-xl border border-gray-100">
           <table className="w-full text-sm">
@@ -5807,7 +5809,8 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           <Link href="/blog/what-is-a-standardised-score" className="text-indigo-600 hover:underline">
             Our complete guide to standardised scores
           </Link>{' '}
-          explains the SAS scale, percentile equivalents, and how to interpret your child&apos;s results in practice.
+          explains the SAS scale and percentile equivalents. For 11+ SAS specifically — what the number means, how it is calculated, and what score each area requires — see our{' '}
+          <Link href="/11-plus-sas-scores" className="text-indigo-600 hover:underline font-medium">interactive SAS scores guide</Link>.
         </p>
       </section>
 

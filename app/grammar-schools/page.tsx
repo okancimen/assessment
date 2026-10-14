@@ -84,7 +84,8 @@ export default function GrammarSchoolsIndexPage() {
           </h1>
           <p className="text-xl text-gray-500 leading-relaxed max-w-2xl">
             SAS score benchmarks, exam board details and entry advice for grammar schools across England.
-            Select your area to see school-specific information.
+            Select your area to see school-specific information.{' '}
+            <Link href="/11-plus-sas-scores" className="text-indigo-600 hover:underline text-lg">What is an SAS score?</Link>
           </p>
         </div>
 
