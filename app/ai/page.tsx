@@ -201,11 +201,11 @@ export default function AIHomePage() {
           <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-6 leading-[1.05]">
             <span className="text-white">Get placed in a</span>
             <br />
-            <span className="bg-gradient-to-r from-[#818CF8] via-[#6366F1] to-[#A78BFA] bg-clip-text text-transparent">real internship.</span>
+            <span className="bg-gradient-to-r from-[#818CF8] via-[#6366F1] to-[#A78BFA] bg-clip-text text-transparent">real work life.</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-white/50 max-w-xl mx-auto mb-10 leading-relaxed">
-            A 34-question adaptive assessment for high school students aged 14+. Discover your readiness across four professional tracks and receive a personalised AI report.
+            A 34-question adaptive assessment for high school students aged 14+. Discover your readiness across four professional tracks and receive a personalised report.
           </p>
 
           {/* CTAs */}
