@@ -601,8 +601,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     tldr: 'NWEA MAP Growth uses a RIT (Rasch Unit) scale — not percentage correct. The national average RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
-    dateModified: '2026-10-09',
-    readTime: '7 min read',
+    dateModified: '2026-10-14',
+    readTime: '10 min read',
     tags: ['NWEA MAP', 'RIT Scores', 'US Education', 'Gifted Programs', 'Assessment'],
     faqs: [
       {

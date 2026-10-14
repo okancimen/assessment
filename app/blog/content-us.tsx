@@ -201,7 +201,7 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           NWEA MAP (Measures of Academic Progress) Growth is a computer-adaptive achievement test developed by the Northwest Evaluation Association. Used by more than 9 million students across US grades K–12, it measures Reading, Mathematics, Language Usage, and Science. Unlike fixed tests, MAP adapts in real time — each question adjusts to your child&apos;s level based on their previous answer, so the test is always accurately calibrated without questions that are uniformly too easy or too hard.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          If your child&apos;s school uses NWEA MAP Growth tests, you have probably received a report showing a &quot;RIT score&quot; and a percentile — and wondered what these numbers actually mean. This guide explains how to interpret RIT scores, what counts as on track or advanced, and how to use the results to support your child&apos;s learning.
+          If your child&apos;s school uses NWEA MAP Growth tests, you have probably received a report showing a &quot;RIT score&quot; and a percentile — and wondered what these numbers actually mean. This guide explains how to interpret RIT scores by grade level, what counts as average, strong, or gifted-range performance, and how to use the results to support your child&apos;s learning.
         </p>
         <p className="text-gray-700 leading-relaxed">
           Most schools administer MAP Growth two or three times a year — typically in the fall,
@@ -220,62 +220,176 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           12th grade.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          A typical kindergartner begins the year with a Math RIT score around 140–150. By the end
-          of 5th grade, the average student is around 210–215. By the end of 10th grade, the average
-          is around 220–225. The scale is continuous and consistent: a RIT score of 210 in Math means
-          exactly the same level of mathematical knowledge whether it belongs to a 4th grader or
-          a 2nd grader.
+          A typical kindergartner begins the year with a Math RIT score around 140–150. By the start
+          of 5th grade, the national average is 205. By 10th grade, the average is around 221. The scale
+          is continuous and consistent: a RIT score of 210 in Math means exactly the same level of
+          mathematical knowledge whether it belongs to a 4th grader or a 2nd grader.
         </p>
         <Callout>
           <strong className="text-indigo-900">The key insight about RIT scores:</strong> Because the scale
           is consistent across all grades, you can directly compare a child&apos;s RIT score to grade-level
           norms — and see not just whether they are at grade level, but how far ahead or behind. A 3rd grader
-          with a Math RIT of 220 is performing at a level typical of 6th graders. A 6th grader with a
-          Math RIT of 200 is performing at a level typical of 4th graders.
+          with a Math RIT of 220 is performing at a level typical of 6th or 7th graders. A 6th grader with a
+          Math RIT of 188 is performing at a level more typical of 3rd graders.
         </Callout>
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">RIT Score Benchmarks by Grade</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Math RIT Score Chart by Grade Level (2025–26)</h2>
         <p className="text-gray-700 leading-relaxed mb-5">
-          The following table shows NWEA&apos;s 2020 national norms — the average (mean) RIT scores
-          for US students at the beginning of each grade year, plus what represents strong performance
-          (approximately the 75th percentile).
+          The table below shows fall RIT score benchmarks for Math from the NWEA 2020 national norming study — the most recently published national norms, which remain the current reference for 2025–26. The columns show the 25th, 50th (national average), 75th, and 90th percentiles.
         </p>
-        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
           <table className="w-full text-sm">
             <thead className="bg-gray-50">
               <tr>
-                <th className="text-left p-4 font-semibold text-gray-700">Grade</th>
-                <th className="text-left p-4 font-semibold text-gray-700">Math (avg)</th>
-                <th className="text-left p-4 font-semibold text-gray-700">Math (75th %ile)</th>
-                <th className="text-left p-4 font-semibold text-gray-700">Reading (avg)</th>
-                <th className="text-left p-4 font-semibold text-gray-700">Reading (75th %ile)</th>
+                <th className="text-left p-3 font-semibold text-gray-700">Grade (fall)</th>
+                <th className="text-center p-3 font-semibold text-gray-500">25th %ile</th>
+                <th className="text-center p-3 font-semibold text-gray-700">50th %ile (avg)</th>
+                <th className="text-center p-3 font-semibold text-indigo-700">75th %ile</th>
+                <th className="text-center p-3 font-semibold text-purple-700">90th %ile</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-50">
               {[
-                ['K (fall)', '144', '154', '139', '150'],
-                ['Grade 1 (fall)', '163', '173', '158', '170'],
-                ['Grade 2 (fall)', '178', '188', '169', '181'],
-                ['Grade 3 (fall)', '188', '199', '177', '191'],
-                ['Grade 4 (fall)', '197', '208', '185', '199'],
-                ['Grade 5 (fall)', '205', '216', '191', '206'],
-                ['Grade 6 (fall)', '211', '222', '197', '212'],
-                ['Grade 7 (fall)', '215', '226', '201', '217'],
-                ['Grade 8 (fall)', '218', '229', '204', '220'],
+                ['Kindergarten', '137', '144', '154', '162'],
+                ['Grade 1', '155', '163', '173', '181'],
+                ['Grade 2', '170', '178', '188', '196'],
+                ['Grade 3', '180', '188', '199', '208'],
+                ['Grade 4', '190', '197', '208', '217'],
+                ['Grade 5', '197', '205', '216', '225'],
+                ['Grade 6', '203', '211', '222', '231'],
+                ['Grade 7', '207', '215', '226', '235'],
+                ['Grade 8', '211', '218', '229', '238'],
+                ['Grade 9', '212', '220', '231', '240'],
+                ['Grade 10', '213', '221', '232', '241'],
               ].map((row) => (
                 <tr key={row[0]} className="hover:bg-gray-50/50">
-                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
-                  {row.slice(1).map((cell, i) => (
-                    <td key={i} className="p-4 text-gray-600">{cell}</td>
-                  ))}
+                  <td className="p-3 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-gray-500">{row[1]}</td>
+                  <td className="p-3 text-center text-gray-700 font-medium">{row[2]}</td>
+                  <td className="p-3 text-center text-indigo-600 font-medium">{row[3]}</td>
+                  <td className="p-3 text-center text-purple-600 font-medium">{row[4]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 mb-2">Source: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth (most recently published national norms).</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Reading RIT Score Chart by Grade Level (2025–26)</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Fall Reading RIT benchmarks using the same NWEA 2020 national norms. Reading growth is faster in the early grades and slows considerably after Grade 6.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Grade (fall)</th>
+                <th className="text-center p-3 font-semibold text-gray-500">25th %ile</th>
+                <th className="text-center p-3 font-semibold text-gray-700">50th %ile (avg)</th>
+                <th className="text-center p-3 font-semibold text-indigo-700">75th %ile</th>
+                <th className="text-center p-3 font-semibold text-purple-700">90th %ile</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Kindergarten', '131', '139', '150', '160'],
+                ['Grade 1', '149', '158', '170', '180'],
+                ['Grade 2', '160', '169', '181', '192'],
+                ['Grade 3', '167', '177', '191', '202'],
+                ['Grade 4', '175', '185', '199', '210'],
+                ['Grade 5', '181', '191', '206', '217'],
+                ['Grade 6', '186', '197', '212', '223'],
+                ['Grade 7', '190', '201', '217', '228'],
+                ['Grade 8', '193', '204', '220', '232'],
+                ['Grade 9', '195', '207', '222', '234'],
+                ['Grade 10', '196', '210', '225', '236'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-gray-500">{row[1]}</td>
+                  <td className="p-3 text-center text-gray-700 font-medium">{row[2]}</td>
+                  <td className="p-3 text-center text-indigo-600 font-medium">{row[3]}</td>
+                  <td className="p-3 text-center text-purple-600 font-medium">{row[4]}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
         <p className="text-sm text-gray-500">Source: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is a Good MAP Score by Grade?</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          &quot;Good&quot; depends on what you&apos;re asking. Here is a practical grade-by-grade breakdown for the most commonly tested grades, covering Math and Reading:
+        </p>
+        <div className="space-y-4">
+          {[
+            {
+              grade: 'Grade 3 (fall)',
+              math: { avg: 188, strong: 199, gifted: 208 },
+              reading: { avg: 177, strong: 191, gifted: 202 },
+              note: 'Grade 3 is the first year most districts use MAP for formal benchmarking. A Math score above 208 (≈90th percentile) is typically enough to trigger a gifted referral.',
+            },
+            {
+              grade: 'Grade 4 (fall)',
+              math: { avg: 197, strong: 208, gifted: 217 },
+              reading: { avg: 185, strong: 199, gifted: 210 },
+              note: 'A Reading score above 210 (≈90th percentile) in Grade 4 is an early indicator of strong reading comprehension. Most gifted programs look for 90th–95th percentile.',
+            },
+            {
+              grade: 'Grade 5 (fall)',
+              math: { avg: 205, strong: 216, gifted: 225 },
+              reading: { avg: 191, strong: 206, gifted: 217 },
+              note: 'By Grade 5, MAP scores begin to inform middle school course placements in many districts. A Math score of 225+ places a student at approximately the 90th percentile.',
+            },
+            {
+              grade: 'Grade 6 (fall)',
+              math: { avg: 211, strong: 222, gifted: 231 },
+              reading: { avg: 197, strong: 212, gifted: 223 },
+              note: 'Grade 6 is a pivotal year for Math acceleration. A score of 231+ (90th percentile) often qualifies students for pre-Algebra or Algebra 1 acceleration.',
+            },
+            {
+              grade: 'Grade 7 (fall)',
+              math: { avg: 215, strong: 226, gifted: 235 },
+              reading: { avg: 201, strong: 217, gifted: 228 },
+              note: 'Growth slows in middle school — gaining 3–5 RIT points from fall to spring is typical. A student growing faster than this is pulling ahead of peers.',
+            },
+            {
+              grade: 'Grade 8 (fall)',
+              math: { avg: 218, strong: 229, gifted: 238 },
+              reading: { avg: 204, strong: 220, gifted: 232 },
+              note: 'Grade 8 MAP scores correlate strongly with high school course readiness and SAT/ACT trajectory. A Math score of 238+ (90th percentile) indicates strong algebra readiness.',
+            },
+          ].map(({ grade, math, reading, note }) => (
+            <div key={grade} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-3">{grade}</div>
+              <div className="grid grid-cols-2 gap-4 mb-3">
+                <div>
+                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Math RIT</div>
+                  <div className="space-y-1 text-sm">
+                    <div className="flex justify-between"><span className="text-gray-600">National average</span><span className="font-mono font-medium text-gray-800">{math.avg}</span></div>
+                    <div className="flex justify-between"><span className="text-indigo-600">Strong (75th %ile)</span><span className="font-mono font-medium text-indigo-600">{math.strong}</span></div>
+                    <div className="flex justify-between"><span className="text-purple-600">Gifted range (90th %ile)</span><span className="font-mono font-medium text-purple-600">{math.gifted}</span></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Reading RIT</div>
+                  <div className="space-y-1 text-sm">
+                    <div className="flex justify-between"><span className="text-gray-600">National average</span><span className="font-mono font-medium text-gray-800">{reading.avg}</span></div>
+                    <div className="flex justify-between"><span className="text-indigo-600">Strong (75th %ile)</span><span className="font-mono font-medium text-indigo-600">{reading.strong}</span></div>
+                    <div className="flex justify-between"><span className="text-purple-600">Gifted range (90th %ile)</span><span className="font-mono font-medium text-purple-600">{reading.gifted}</span></div>
+                  </div>
+                </div>
+              </div>
+              <p className="text-sm text-gray-500 leading-relaxed">{note}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section>
@@ -294,19 +408,18 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           The <strong>percentile</strong> is a relative measure — it compares your child&apos;s
           RIT score to the national norm group for students in the same grade at the same point
           in the school year. A child in 5th grade with a Math RIT of 220 is at approximately
-          the 80th percentile for 5th graders.
+          the 84th percentile for 5th graders nationally.
         </p>
         <p className="text-gray-700 leading-relaxed">
           Both are useful, but for different questions. Use the RIT to understand the level of
           content your child is ready for (what should they be learning next?). Use the percentile
-          to understand how your child compares to peers (is this child working above or below grade
-          level compared to the national average?). For gifted identification, the percentile is
-          the more commonly used metric.
+          to understand how your child compares to peers. For gifted identification and course
+          acceleration, the percentile is the more commonly used metric.
         </p>
         <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6">
           <div className="flex-1">
             <p className="font-semibold text-gray-900 mb-1">See how your child compares internationally — free</p>
-            <p className="text-sm text-gray-600">Eduentry&apos;s adaptive assessment benchmarks your child&apos;s verbal, numerical, and reasoning ability against international peers — the same scale as NWEA MAP. Takes under an hour. No registration required.</p>
+            <p className="text-sm text-gray-600">Eduentry&apos;s adaptive assessment benchmarks your child&apos;s verbal, numerical, and reasoning ability against international peers. Takes under an hour. No registration required.</p>
           </div>
           <CtaLink href="/#academic" label="content_cta_academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
             Start free assessment
@@ -315,30 +428,31 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Understanding Growth</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Understanding Growth: How Many RIT Points Should My Child Gain Per Year?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           One of MAP&apos;s most valuable features is growth tracking. NWEA publishes norms not just
           for status (where is your child now?) but for growth (how much did your child grow?).
-          The typical growth in Math RIT from fall to spring:
+          Typical Math RIT growth from fall to spring:
         </p>
         <ul className="space-y-2 mb-4">
-          <Bullet><strong>Grades K–2:</strong> approximately 10–12 RIT points per year (rapid growth in early literacy and numeracy)</Bullet>
-          <Bullet><strong>Grades 3–5:</strong> approximately 6–8 RIT points per year (growth slows as content becomes more complex)</Bullet>
-          <Bullet><strong>Grades 6–8:</strong> approximately 3–5 RIT points per year (growth slows significantly in middle school)</Bullet>
-          <Bullet><strong>Grades 9–12:</strong> approximately 1–3 RIT points per year (near the ceiling of the scale for advanced students)</Bullet>
+          <Bullet><strong>Kindergarten:</strong> approximately 11–13 RIT points (the fastest growth period — foundational numeracy develops rapidly)</Bullet>
+          <Bullet><strong>Grades 1–2:</strong> approximately 9–11 RIT points per year (continued rapid growth in early literacy and number sense)</Bullet>
+          <Bullet><strong>Grades 3–5:</strong> approximately 5–8 RIT points per year (growth slows as content becomes more complex)</Bullet>
+          <Bullet><strong>Grades 6–8:</strong> approximately 2–4 RIT points per year (growth slows significantly in middle school)</Bullet>
+          <Bullet><strong>Grades 9–12:</strong> approximately 1–2 RIT points per year (near the upper range of the scale for many students)</Bullet>
         </ul>
-        <p className="text-gray-700 leading-relaxed">
-          A child who grows more than these typical norms — who gains 12 RIT points in Math when
-          the average is 7 — is showing accelerated growth. A child who gains only 2 RIT points
-          in a year when 7 is typical may need additional support in that subject, even if their
-          absolute score is still above grade-level average.
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A child who grows more than these typical norms is accelerating relative to peers. A child who gains only 1–2 RIT points in a year when 6 is typical may need additional support in that subject, even if their absolute score is still above the grade-level average.
         </p>
+        <Callout color="amber">
+          <strong className="text-amber-800">Growth matters as much as status:</strong> A Grade 4 student at the 60th percentile who gains 12 RIT points in a year (well above typical) is on a stronger trajectory than a student at the 80th percentile who gains only 2 RIT points. The growth score predicts future performance as powerfully as the current score.
+        </Callout>
       </section>
 
       <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row sm:items-center gap-4">
         <div className="flex-1">
           <p className="font-semibold text-gray-900 mb-1">Is your child on track to compete internationally?</p>
-          <p className="text-sm text-gray-600">MAP measures local national norms. Discover how your child ranks against top-tier international peers in English and Maths in under 45 minutes.</p>
+          <p className="text-sm text-gray-600">MAP measures national norms. Discover how your child ranks against top-tier international peers in English and Maths in under 45 minutes.</p>
         </div>
         <a
           href="/your-childs-potential"
@@ -353,17 +467,17 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed mb-4">
           In many districts, a high MAP Growth score is one of the key indicators that triggers
           a gifted referral. Common thresholds are the 90th or 95th percentile in one or more
-          subjects. If your child&apos;s MAP score is at or above these thresholds, it is worth
-          asking your school explicitly whether a gifted evaluation referral is appropriate.
-          Some districts automatically trigger this process; others require a parent or teacher
-          to initiate it.
+          subjects. Using the tables above, you can see the exact RIT score that corresponds to
+          these percentiles for your child&apos;s grade. If your child is at or above the 90th
+          percentile, it is worth asking your school explicitly whether a gifted evaluation
+          referral is appropriate — some districts trigger this automatically, others require
+          a parent to initiate it.
         </p>
         <p className="text-gray-700 leading-relaxed">
           If your child scores at the 95th+ percentile on MAP, they are performing at a level
-          significantly above their grade-level peers. This is strong evidence for gifted services
-          — and if your district is not automatically acting on this, it is entirely reasonable
-          to advocate proactively for evaluation. For a full overview of how that evaluation
-          process works and which other tests are used alongside MAP, see our{' '}
+          significantly above their grade-level peers. This is strong evidence for gifted services.
+          For a full overview of how that evaluation process works and which other tests are used
+          alongside MAP, see our{' '}
           <Link href="/blog/gifted-program-testing-guide" className="text-indigo-600 hover:underline">
             gifted program testing guide
           </Link>.
@@ -374,7 +488,7 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Low MAP Scores: What to Do</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           A MAP score below the 25th percentile, or a growth trajectory that is significantly
-          below the norm, suggests your child may need additional academic support. The first
+          below the norm, suggests your child may benefit from additional academic support. The first
           step is to speak with your child&apos;s teacher to understand whether the MAP result
           is consistent with classroom performance. MAP is one data point — if classroom
           performance is strong but MAP scores are low, the discrepancy itself is worth
@@ -388,6 +502,51 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           maps each RIT score range to specific skills, making it possible to identify exactly
           what to work on.
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: 'What is the highest possible MAP RIT score?',
+              a: 'There is no hard ceiling on the RIT scale, but scores above 250 are extremely rare even among high-school students. A Grade 8 student scoring 250 in Math would be performing well above the 99th percentile. In practice, the vast majority of students score between 140 (Kindergarten start) and 240 (high-achieving high school senior). The test adapts to the student\'s level, so advanced students receive harder questions rather than the test "running out."',
+            },
+            {
+              q: 'Can you fail the MAP test?',
+              a: 'No. The MAP Growth test has no pass or fail. It is a measurement instrument, not a high-stakes exam. There is no minimum score and no consequence for a low score on the test itself — results inform instruction and identify students who may need support or acceleration. Students cannot "study" specifically for MAP; the test measures what they know at the time they take it.',
+            },
+            {
+              q: 'What MAP score is needed for gifted programs?',
+              a: 'Most districts that use MAP as part of gifted identification look for scores at or above the 90th percentile (or sometimes 95th percentile) for the student\'s grade. Using the tables above: in Grade 4, a Math RIT of 217 or higher (90th percentile) is typically enough to trigger a gifted referral. In Grade 5, Reading RIT 217 or higher meets the same threshold. Check your specific district\'s policy — thresholds vary significantly by state and district.',
+            },
+            {
+              q: 'What does a MAP RIT score of 220 mean?',
+              a: 'It depends on the grade. A Math RIT of 220 for a Grade 3 student is extraordinary — approximately the 99th percentile, equivalent to Grade 7–8 performance. For a Grade 7 student, RIT 220 is just above average (approximately the 55th percentile). For a Grade 9 student, it is below average. Always compare a RIT score to the grade-level norms in the tables above to determine what it means in context.',
+            },
+            {
+              q: 'How often is the NWEA MAP test given?',
+              a: 'Most schools administer MAP Growth two or three times per year — typically in fall (September–October), winter (January–February), and spring (April–May). Schools that test three times per year can track both mid-year growth and year-over-year growth. The fall administration is the most important for establishing a baseline and informing fall instructional planning.',
+            },
+            {
+              q: 'How do MAP scores relate to ACT and SAT scores?',
+              a: 'NWEA publishes linking studies that connect MAP Growth scores in Grades 3–8 to projected ACT and SAT performance. A Grade 8 Math RIT of 238 (90th percentile) is associated with a projected ACT Math score of approximately 24–25 (top third of test-takers). A Grade 5 Reading RIT of 217 (90th percentile) is associated with strong ACT English/Reading performance in high school. These are projections based on trajectory, not guarantees.',
+            },
+            {
+              q: 'What is the MAP for Primary Grades (MPG) vs MAP Growth?',
+              a: 'MAP Growth is designed for students in Grade 2 and above. MAP for Primary Grades (MPG) is a separate assessment for Kindergarten and Grade 1 that uses an audio-supported format, because young children cannot reliably read test questions independently. Both produce RIT scores on the same scale, allowing tracking from Kindergarten through Grade 12. If your child is in K–1, their school may use MPG rather than the standard MAP Growth test.',
+            },
+            {
+              q: 'What is a Lexile range and how does it relate to MAP Reading?',
+              a: 'MAP Reading RIT scores link directly to Lexile measures, which are used to match students to appropriately challenging books. A MAP Reading RIT of 177 (Grade 3 average) corresponds to roughly Lexile 500–650L. A Grade 5 student at the 75th percentile (RIT 206) corresponds to approximately Lexile 900–1050L. Parents can use their child\'s Lexile range from the MAP report to select books that challenge without frustrating.',
+            },
+          ].map(({ q, a }) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{q}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </>
   ),
