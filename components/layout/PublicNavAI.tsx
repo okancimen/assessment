@@ -88,9 +88,9 @@ export default function PublicNavAI() {
       <div className="max-w-[1024px] mx-auto px-6 h-11 flex items-center justify-between relative" dir={isRTL ? 'rtl' : undefined}>
         <Link href={HOME[locale]} aria-label="Eduentry.ai — Home">
           {/* long logo — desktop */}
-          <Image src="/logo-ai-long.png" alt="Eduentry.ai" width={130} height={46} className="hidden sm:block object-contain" priority />
+          <Image src="/logo-ai-long.png" alt="Eduentry.ai" width={130} height={40} className="hidden sm:block object-contain" priority />
           {/* short logo — mobile */}
-          <Image src="/logo-ai-short.png" alt="Eduentry.ai" width={32} height={28} className="sm:hidden object-contain" priority />
+          <Image src="/logo-ai-short.png" alt="Eduentry.ai" width={32} height={27} className="sm:hidden object-contain" priority />
         </Link>
 
         <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-xs text-white/70">

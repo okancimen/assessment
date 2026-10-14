@@ -160,7 +160,7 @@ export default function PublicFooterAI() {
 
         <div className="border-t border-white/[0.06] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <Link href={HOME[locale]} aria-label="Eduentry.ai — Home">
-            <Image src="/logo-ai-long.png" alt="Eduentry.ai" width={110} height={39} className="object-contain opacity-60 hover:opacity-100 transition-opacity" />
+            <Image src="/logo-ai-long.png" alt="Eduentry.ai" width={110} height={34} className="object-contain opacity-60 hover:opacity-100 transition-opacity" />
           </Link>
           <p className="text-xs text-white/25 font-mono">{L.copyright}</p>
         </div>
