@@ -3415,7 +3415,9 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
             <strong>Aburrimiento y desconexión:</strong> Los niños superdotados colocados en entornos poco estimulantes a menudo se desconectan — no dramáticamente, sino en silencio. Dejan de invertir todo su esfuerzo en trabajo que encuentran poco desafiante, y las notas resultantes no guardan relación con su capacidad real.
           </Bullet>
           <Bullet>
-            <strong>Ansiedad ante los exámenes:</strong> Los niños de alta capacidad a veces son más vulnerables a la presión de los exámenes, no menos. Su mayor conciencia metacognitiva los hace acutamente conscientes de lo que está en juego. Cuando la ansiedad degrada la memoria de trabajo durante un examen — que es el mecanismo neurológico que subyace a la ansiedad ante los exámenes — el resultado es un techo de rendimiento que no tiene nada que ver con el conocimiento.
+            <strong>Ansiedad ante los exámenes:</strong> Los niños de alta capacidad a veces son más vulnerables a la presión de los exámenes, no menos. Su mayor conciencia metacognitiva los hace acutamente conscientes de lo que está en juego. Cuando la ansiedad degrada la memoria de trabajo durante un examen — que es el mecanismo neurológico que subyace a la ansiedad ante los exámenes — el resultado es un techo de rendimiento que no tiene nada que ver con el conocimiento. Consulta nuestra{' '}
+            <Link href="/es/blog/ansiedad-ante-examenes-ninos-fortalezas" className="text-indigo-600 hover:underline">guía sobre ansiedad ante los exámenes en niños</Link>{' '}
+            para un enfoque basado en fortalezas.
           </Bullet>
         </ul>
       </section>

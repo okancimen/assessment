@@ -4750,7 +4750,9 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
             <strong>Sıkılma ve ilgisizlik:</strong> Yetersiz uyarıcı ortamlara yerleştirilen üstün zekalı çocuklar genellikle ilgisiz hale gelir — dramatik biçimde değil, sessizce. Zorlayıcı bulmadıkları çalışmalara tam çaba harcamayı bırakırlar ve ortaya çıkan notlar gerçek yetenekleriyle hiçbir ilişki taşımaz.
           </Bullet>
           <Bullet>
-            <strong>Sınav kaygısı:</strong> Yüksek yetenekli çocuklar bazen sınav baskısına karşı daha az değil daha fazla savunmasız olabilir. Daha güçlü metabilişsel farkındalıkları onları risklerin keskin biçimde farkında kılar. Kaygı sınav sırasında çalışma belleğini bozduğunda — sınav kaygısının altında yatan nörolojik mekanizma budur — sonuç bilgiyle hiçbir ilgisi olmayan bir performans tavanıdır.
+            <strong>Sınav kaygısı:</strong> Yüksek yetenekli çocuklar bazen sınav baskısına karşı daha az değil daha fazla savunmasız olabilir. Daha güçlü metabilişsel farkındalıkları onları risklerin keskin biçimde farkında kılar. Kaygı sınav sırasında çalışma belleğini bozduğunda — sınav kaygısının altında yatan nörolojik mekanizma budur — sonuç bilgiyle hiçbir ilgisi olmayan bir performans tavanıdır. Güçlü yönlere dayalı bir yaklaşım için{' '}
+            <Link href="/tr/blog/cocuklarda-sinav-kaygisi-guclu-yonler" className="text-indigo-600 hover:underline">çocuklarda sınav kaygısı rehberimize</Link>{' '}
+            bakın.
           </Bullet>
         </ul>
       </section>

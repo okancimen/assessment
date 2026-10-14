@@ -43,10 +43,43 @@ const urls = new Set()
 urls.add(BASE)
 urls.add(`${BASE}/blog`)
 
+// Maps every content file to its slug source (posts.ts or locale posts-XX.ts)
+const CONTENT_TO_POSTS = {
+  'app/blog/content.tsx':              'app/blog/posts.ts',
+  'app/blog/content-uk.tsx':           'app/blog/posts.ts',
+  'app/blog/content-uk-us-gifted.tsx': 'app/blog/posts.ts',
+  'app/blog/content-uk-netherlands.tsx': 'app/blog/posts.ts',
+  'app/blog/content-uk-uae.tsx':       'app/blog/posts.ts',
+  'app/blog/content-uk-canada.tsx':    'app/blog/posts.ts',
+  'app/blog/content-uk-australia.tsx': 'app/blog/posts.ts',
+  'app/blog/content-us.tsx':           'app/blog/posts.ts',
+  'app/blog/content-nl.tsx':           'app/blog/posts.ts',
+  'app/blog/content-uae.tsx':          'app/blog/posts.ts',
+  'app/blog/content-ca.tsx':           'app/blog/posts.ts',
+  'app/blog/content-au.tsx':           'app/blog/posts.ts',
+  'app/blog/content-tr.tsx':           'app/blog/posts-tr.ts',
+  'app/blog/content-es.tsx':           'app/blog/posts-es.ts',
+  'app/blog/content-fr.tsx':           'app/blog/posts-fr.ts',
+  'app/blog/content-ar.tsx':           'app/blog/posts-ar.ts',
+  'app/blog/content-ru.tsx':           'app/blog/posts-ru.ts',
+  'app/blog/content-zh.tsx':           'app/blog/posts-zh.ts',
+}
+
 const FILE_MAP = {
-  // EN blog
-  'app/blog/posts.ts':       s => `${BASE}/blog/${s}`,
-  'app/blog/content.tsx':    s => `${BASE}/blog/${s}`,
+  // EN blog (posts file + all content sub-files)
+  'app/blog/posts.ts':                 s => `${BASE}/blog/${s}`,
+  'app/blog/content.tsx':              s => `${BASE}/blog/${s}`,
+  'app/blog/content-uk.tsx':           s => `${BASE}/blog/${s}`,
+  'app/blog/content-uk-us-gifted.tsx': s => `${BASE}/blog/${s}`,
+  'app/blog/content-uk-netherlands.tsx': s => `${BASE}/blog/${s}`,
+  'app/blog/content-uk-uae.tsx':       s => `${BASE}/blog/${s}`,
+  'app/blog/content-uk-canada.tsx':    s => `${BASE}/blog/${s}`,
+  'app/blog/content-uk-australia.tsx': s => `${BASE}/blog/${s}`,
+  'app/blog/content-us.tsx':           s => `${BASE}/blog/${s}`,
+  'app/blog/content-nl.tsx':           s => `${BASE}/blog/${s}`,
+  'app/blog/content-uae.tsx':          s => `${BASE}/blog/${s}`,
+  'app/blog/content-ca.tsx':           s => `${BASE}/blog/${s}`,
+  'app/blog/content-au.tsx':           s => `${BASE}/blog/${s}`,
   // TR blog
   'app/blog/posts-tr.ts':    s => `${BASE}/tr/blog/${s}`,
   'app/blog/content-tr.tsx': s => `${BASE}/tr/blog/${s}`,
@@ -80,10 +113,7 @@ const LOCALE_BLOG_INDEX = {
 for (const file of changed) {
   const builder = FILE_MAP[file]
   if (builder) {
-    // Determine which posts file to read slugs from
-    const postsFile = file.startsWith('app/blog/content')
-      ? file.replace('content', 'posts').replace('.tsx', '.ts')
-      : file
+    const postsFile = CONTENT_TO_POSTS[file] ?? file
     const slugs = slugsFromFile(postsFile)
     slugs.forEach(s => urls.add(builder(s)))
 

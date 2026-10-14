@@ -2483,7 +2483,8 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
             <strong>无聊和脱离：</strong>被置于缺乏刺激环境中的天才儿童往往会脱离——不是戏剧性的，而是悄然地。他们不再在觉得不具挑战性的工作上投入全力，由此产生的成绩与其真实能力毫无关联。
           </Bullet>
           <Bullet>
-            <strong>考试焦虑：</strong>高能力儿童有时对考试压力更脆弱，而非更有韧性。他们更强的元认知意识使他们对考试风险格外敏感。当焦虑在考试中降低工作记忆时——这正是考试焦虑的神经学机制——结果是一个与知识无关的表现上限。
+            <strong>考试焦虑：</strong>高能力儿童有时对考试压力更脆弱，而非更有韧性。他们更强的元认知意识使他们对考试风险格外敏感。当焦虑在考试中降低工作记忆时——这正是考试焦虑的神经学机制——结果是一个与知识无关的表现上限。参阅我们的{' '}
+            <Link href="/zh/blog/ertong-kaoshi-jiaolu-xingge-youshi" className="text-indigo-600 hover:underline">儿童考试焦虑指南</Link>，了解基于优势的应对方法。
           </Bullet>
         </ul>
       </section>

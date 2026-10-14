@@ -2913,7 +2913,9 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
             <strong>Ennui et désengagement :</strong> Les enfants surdoués placés dans des environnements peu stimulants se désengagent souvent — pas de façon spectaculaire, mais silencieusement. Ils cessent d&apos;investir tous leurs efforts dans un travail qu&apos;ils trouvent peu stimulant, et les notes qui en résultent n&apos;ont aucun rapport avec leur capacité réelle.
           </Bullet>
           <Bullet>
-            <strong>Anxiété aux examens :</strong> Les enfants à haut potentiel sont parfois plus vulnérables à la pression des examens, pas moins. Leur conscience métacognitive plus forte les rend acutement conscients des enjeux. Quand l&apos;anxiété dégrade la mémoire de travail pendant un examen — c&apos;est le mécanisme neurologique qui sous-tend l&apos;anxiété aux examens — le résultat est un plafond de performance qui n&apos;a rien à voir avec les connaissances.
+            <strong>Anxiété aux examens :</strong> Les enfants à haut potentiel sont parfois plus vulnérables à la pression des examens, pas moins. Leur conscience métacognitive plus forte les rend acutement conscients des enjeux. Quand l&apos;anxiété dégrade la mémoire de travail pendant un examen — c&apos;est le mécanisme neurologique qui sous-tend l&apos;anxiété aux examens — le résultat est un plafond de performance qui n&apos;a rien à voir avec les connaissances. Consultez notre{' '}
+            <Link href="/fr/blog/anxiete-examens-enfants-forces" className="text-indigo-600 hover:underline">guide sur l&apos;anxiété aux examens chez les enfants</Link>{' '}
+            pour une approche par les forces.
           </Bullet>
         </ul>
       </section>
