@@ -1761,7 +1761,8 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Ориентиры RIT по классам</h2>
         <p className="text-gray-700 leading-relaxed mb-5">
-          В таблице ниже — национальные нормы NWEA 2020 года: средние (mean) баллы RIT для американских учеников в начале каждого учебного года, а также что считается сильным результатом (примерно 75-й перцентиль).
+          В таблице ниже — национальные нормы NWEA 2020 года: средние (mean) баллы RIT для американских учеников в начале каждого учебного года, а также что считается сильным результатом (примерно 75-й перцентиль). Чтобы быстро проверить конкретный балл, воспользуйтесь нашим{' '}
+          <Link href="/tools/nwea-rit-calculator" className="text-indigo-600 hover:underline font-medium">интерактивным калькулятором RIT</Link>.
         </p>
         <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
           <table className="w-full text-sm">

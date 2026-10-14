@@ -2041,7 +2041,8 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Puntuaciones RIT de referencia por curso</h2>
         <p className="text-gray-700 leading-relaxed mb-5">
-          La siguiente tabla muestra las normas nacionales de NWEA de 2020: las puntuaciones RIT medias de los estudiantes estadounidenses al inicio de cada curso, más lo que representa un rendimiento sólido (aproximadamente el percentil 75).
+          La siguiente tabla muestra las normas nacionales de NWEA de 2020: las puntuaciones RIT medias de los estudiantes estadounidenses al inicio de cada curso, más lo que representa un rendimiento sólido (aproximadamente el percentil 75). Para consultar una puntuación concreta, utiliza nuestra{' '}
+          <Link href="/tools/nwea-rit-calculator" className="text-indigo-600 hover:underline font-medium">calculadora interactiva de puntuaciones RIT NWEA</Link>.
         </p>
         <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
           <table className="w-full text-sm">

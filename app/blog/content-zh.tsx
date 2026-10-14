@@ -1264,7 +1264,8 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">各年级RIT分数基准</h2>
         <p className="text-gray-700 leading-relaxed mb-5">
-          下表显示NWEA 2020年全国常模——美国学生各年级秋季学期开始时的平均RIT分数，以及代表优秀表现的大致第75百分位分数。
+          下表显示NWEA 2020年全国常模——美国学生各年级秋季学期开始时的平均RIT分数，以及代表优秀表现的大致第75百分位分数。如需查看特定分数，请使用我们的{' '}
+          <Link href="/tools/nwea-rit-calculator" className="text-indigo-600 hover:underline font-medium">NWEA RIT互动计算器</Link>。
         </p>
         <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
           <table className="w-full text-sm">

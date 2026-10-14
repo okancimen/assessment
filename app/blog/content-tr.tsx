@@ -5319,7 +5319,8 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Sınıfa Göre RIT Puan Kıyaslamaları</h2>
         <p className="text-gray-700 leading-relaxed mb-5">
-          Aşağıdaki tablo, her sınıf yılının başındaki ABD öğrencileri için NWEA&apos;nın 2020 ulusal normlarını göstermektedir — ortalama RIT puanları ve güçlü performansın (yaklaşık 75. yüzdelik) ne olduğunu içerir.
+          Aşağıdaki tablo, her sınıf yılının başındaki ABD öğrencileri için NWEA&apos;nın 2020 ulusal normlarını göstermektedir — ortalama RIT puanları ve güçlü performansın (yaklaşık 75. yüzdelik) ne olduğunu içerir. Belirli bir puanı kontrol etmek için{' '}
+          <Link href="/tools/nwea-rit-calculator" className="text-indigo-600 hover:underline font-medium">interaktif NWEA RIT hesaplayıcımızı</Link> kullanabilirsiniz.
         </p>
         <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
           <table className="w-full text-sm">

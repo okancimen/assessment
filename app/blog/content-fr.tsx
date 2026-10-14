@@ -1472,7 +1472,8 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Repères de scores RIT par niveau scolaire</h2>
         <p className="text-gray-700 leading-relaxed mb-5">
-          Le tableau suivant présente les normes nationales NWEA 2020 — les scores RIT moyens pour les élèves américains en début d'année, ainsi que ce qui représente une performance solide (environ le 75e percentile). Les équivalences françaises sont approximatives.
+          Le tableau suivant présente les normes nationales NWEA 2020 — les scores RIT moyens pour les élèves américains en début d&apos;année, ainsi que ce qui représente une performance solide (environ le 75e percentile). Les équivalences françaises sont approximatives. Pour vérifier un score précis, utilisez notre{' '}
+          <Link href="/tools/nwea-rit-calculator" className="text-indigo-600 hover:underline font-medium">calculateur interactif de scores RIT NWEA</Link>.
         </p>
         <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
           <table className="w-full text-sm">
