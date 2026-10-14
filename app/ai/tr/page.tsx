@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import { INTERNSHIP_TRACKS } from '@/types'
 import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
 
@@ -51,13 +50,6 @@ export const metadata: Metadata = {
   },
 }
 
-const TRACK_IMAGES: Record<string, string> = {
-  tech: '/tracks/tech.jpg',
-  business: '/tracks/business.jpg',
-  data_analytics: '/tracks/data-analytics.jpg',
-  digital_marketing: '/tracks/digital-marketing.jpg',
-}
-
 const TRACK_SLUGS: Record<string, string> = {
   tech: '/tr/teknoloji',
   business: '/tr/is-dunyasi',
@@ -79,11 +71,22 @@ const TRACK_DESCRIPTIONS_TR: Record<string, string> = {
   digital_marketing: 'SEO, sosyal medya stratejisi, içerik pazarlaması ve kampanya planlaması',
 }
 
+const TRACK_ICONS: Record<string, string> = {
+  tech: '⬡', business: '◈', data_analytics: '◉', digital_marketing: '◇',
+}
+
+const TRACK_COLORS: Record<string, { border: string; glow: string; label: string }> = {
+  tech:              { border: 'group-hover:border-[#4F46E5]/50', glow: 'from-[#4F46E5]/10', label: 'text-[#818CF8]' },
+  business:          { border: 'group-hover:border-[#7C3AED]/50', glow: 'from-[#7C3AED]/10', label: 'text-[#A78BFA]' },
+  data_analytics:    { border: 'group-hover:border-[#6366F1]/50', glow: 'from-[#6366F1]/10', label: 'text-[#818CF8]' },
+  digital_marketing: { border: 'group-hover:border-[#8B5CF6]/50', glow: 'from-[#8B5CF6]/10', label: 'text-[#A78BFA]' },
+}
+
 const PHASES = [
-  { label: 'Genel Yetenek',       qs: 10, desc: 'Sözel ve sayısal muhakeme',          img: '/phases/general-aptitude.jpg' },
-  { label: 'Alan Bilgisi',         qs: 10, desc: 'Alana özgü uygulamalı bilgi',        img: '/phases/domain-knowledge.jpg' },
-  { label: 'İş Yeri Becerileri',  qs: 8,  desc: 'Gerçek iş yeri senaryoları (SJT)',   img: '/phases/workplace-skills.jpg' },
-  { label: 'İlgi Profili',         qs: 6,  desc: 'Çalışma tarzı ve tercih haritalama', img: '/phases/interest-profile.jpg' },
+  { label: 'Genel Yetenek',      qs: 10, desc: 'Sözel ve sayısal muhakeme' },
+  { label: 'Alan Bilgisi',        qs: 10, desc: 'Alana özgü uygulamalı bilgi' },
+  { label: 'İş Yeri Becerileri', qs: 8,  desc: 'Gerçek iş yeri senaryoları (SJT)' },
+  { label: 'İlgi Profili',        qs: 6,  desc: 'Çalışma tarzı ve tercih haritalama' },
 ]
 
 const FAQS = [
@@ -91,12 +94,10 @@ const FAQS = [
   { q: 'Kimler için?',                        a: 'Profesyonel deneyim kazanmak isteyen 14–18 yaş arası lise öğrencileri (9. sınıftan 12. sınıfa kadar).' },
   { q: 'Ne kadar sürer?',                     a: 'Dört aşamada 34 soru, yaklaşık 20 dakika. Değerlendirme tamamen devam ettirilebilir — istediğin zaman durdurup devam edebilirsin.' },
   { q: 'Hangi alanı seçmeliyim?',             a: 'Başvururken en fazla üç alan tercihini sıralarsın. İlgi Profili aşaması da en uygun olduğun yeri belirlemeye yardımcı olur — raporun bunu yansıtır.' },
-  { q: 'Hazırlık raporum ne zaman gelir?',    a: 'Değerlendirmeyi tamamladıktan hemen sonra. 34 sorunun tamamını bitirdiğinde yapay zeka puanlama anında çalışır ve raporun hesabında hazır olur — bekleme süresi yoktur.' },
-  { q: 'Değerlendirmemi özgeçmişimde kullanabilir miyim?', a: 'Evet. Hazırlık raporun, başvurularında doğrudan referans gösterebileceğin ölçülebilir bir puan ve alan bazlı beceri dökümü içerir. Pek çok öğrencimiz bunu kişisel beyanlara ve işe alım görüşmelerine taşıyor.' },
-  { q: 'İngilizcem yeterli olmasa da başvurabilir miyim?', a: 'Değerlendirme şu an İngilizce olarak sunulmaktadır; ancak İngiltere iş dünyasının gerçek ortamında kullanılan dil budur. Sorular sade ve anlaşılır bir dille yazılmıştır. İngilizce anlama düzeyin günlük konuşma seviyesindeyse değerlendirmeyi rahatlıkla tamamlayabilirsin.' },
+  { q: 'Hazırlık raporum ne zaman gelir?',    a: 'Değerlendirmeyi tamamladıktan hemen sonra. 34 sorunun tamamını bitirdiğinde yapay zeka puanlama anında çalışır ve raporun hesabında hazır olur.' },
+  { q: 'Değerlendirmemi özgeçmişimde kullanabilir miyim?', a: 'Evet. Hazırlık raporun, başvurularında doğrudan referans gösterebileceğin ölçülebilir bir puan ve alan bazlı beceri dökümü içerir.' },
+  { q: 'İngilizcem yeterli olmasa da başvurabilir miyim?', a: 'Değerlendirme İngilizce olarak sunulmaktadır. Sorular sade ve anlaşılır bir dille yazılmıştır. Günlük konuşma seviyesinde İngilizce yeterlidir.' },
 ]
-
-const internshipPosts = BLOG_POSTS_TR.slice(0, 3)
 
 const ORGANIZATION_SCHEMA = {
   '@context': 'https://schema.org',
@@ -136,7 +137,7 @@ const SERVICE_SCHEMA = {
   '@id': `${BASE_URL}/#service`,
   name: 'Staj Hazırlık Değerlendirmesi',
   url: PAGE_URL,
-  description: '14–18 yaş lise öğrencileri için ücretsiz yapay zeka destekli 34 soruluk uyarlanabilir değerlendirme. Teknoloji, İş Dünyası, Veri Analitiği ve Dijital Pazarlama alanlarında yetenek, alan bilgisi, iş yeri becerileri ve ilgi profili ölçülür.',
+  description: '14–18 yaş lise öğrencileri için ücretsiz yapay zeka destekli 34 soruluk uyarlanabilir değerlendirme.',
   inLanguage: 'tr',
   provider: { '@id': `${BASE_URL}/#organization` },
   audience: { '@type': 'EducationalAudience', audienceType: '14–18 yaş lise öğrencileri' },
@@ -149,14 +150,12 @@ const HOWTO_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: "Eduentry.ai ile İngiltere'de staja nasıl yerleşilir",
-  description: '14–18 yaş lise öğrencileri için ücretsiz 34 soruluk uyarlanabilir değerlendirme. Kayıttan staj yerleştirme eşleşmesine dört adım.',
   inLanguage: 'tr',
   totalTime: 'PT20M',
   step: [
-    { '@type': 'HowToStep', position: 1, name: 'Kayıt ol', text: 'Ücretsiz Eduentry.ai hesabını bir dakikadan kısa sürede oluştur — ödeme bilgisi gerekmez.' },
-    { '@type': 'HowToStep', position: 2, name: 'Başvur', text: 'Kendin, okulun ve Teknoloji, İş Dünyası, Veri Analitiği veya Dijital Pazarlama alanlarındaki tercihlerini bize anlat.' },
-    { '@type': 'HowToStep', position: 3, name: 'Değerlendirmeyi tamamla', text: 'Dört aşamada 34 uyarlanabilir soru: Genel Yetenek, Alan Bilgisi, İş Yeri Becerileri ve İlgi Profili. Yaklaşık 20 dakika. İstediğin zaman devam et.' },
-    { '@type': 'HowToStep', position: 4, name: 'Raporunu al', text: 'Hazırlık seviyesi, aşama bazlı döküm ve staj yerleştirme eşleşmesi içeren yapay zeka tarafından yazılmış kişiselleştirilmiş hazırlık raporunu al.' },
+    { '@type': 'HowToStep', position: 1, name: 'Kayıt ol', text: 'Ücretsiz Eduentry.ai hesabını oluştur.' },
+    { '@type': 'HowToStep', position: 2, name: 'Başvur', text: 'Kendin ve tercihlerini paylaş.' },
+    { '@type': 'HowToStep', position: 3, name: 'Değerlendirmeyi tamamla', text: '34 soru, 4 aşama, ~20 dakika.' },
   ],
 }
 
@@ -170,9 +169,11 @@ const FAQ_SCHEMA = {
   })),
 }
 
+const internshipPosts = BLOG_POSTS_TR.slice(0, 3)
+
 export default function TurkishHomePage() {
   return (
-    <main className="flex-1" lang="tr">
+    <main className="flex-1 bg-[#050505] text-white" lang="tr">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} />
@@ -181,83 +182,105 @@ export default function TurkishHomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="py-16 bg-white text-center px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 bg-[#eef2ff] text-[#4F46E5] text-xs font-semibold px-3 py-1.5 rounded-full mb-8 tracking-[0.1em] uppercase">
-            Yapay Zeka Destekli · Ücretsiz · 20 Dakika
+      <section className="relative overflow-hidden min-h-[92vh] flex flex-col items-center justify-center px-6 pt-20 pb-24">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.35]" style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+        <div className="pointer-events-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-[#4F46E5] opacity-[0.07] blur-[120px]" />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 w-[400px] h-[300px] rounded-full bg-[#7C3AED] opacity-[0.06] blur-[100px]" />
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 mb-8">
+            <span className="inline-flex items-center gap-2 border border-white/[0.12] bg-white/[0.04] text-[11px] font-mono text-white/60 px-3.5 py-1.5 rounded-full tracking-[0.12em] uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#4ade80] shadow-[0_0_6px_#4ade80] animate-pulse" />
+              Kişiselleştirilmiş · Ücretsiz · 20 Dakika
+            </span>
           </div>
-          <h1 className="text-5xl sm:text-7xl font-bold text-[#1d1d1f] tracking-tight mb-6 leading-tight">
-            Gerçek bir iş tecrübesi<br />edin.
+          <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-6 leading-[1.05]">
+            <span className="text-white">Gerçek bir iş tecrübesi</span>
+            <br />
+            <span className="bg-gradient-to-r from-[#818CF8] via-[#6366F1] to-[#A78BFA] bg-clip-text text-transparent">edin.</span>
           </h1>
-          <p className="text-xl text-[#6e6e73] max-w-xl mx-auto mb-10 leading-relaxed">
-            14 yaş üstü lise öğrencileri için tasarlanmış 34 soruluk uyarlanabilir değerlendirme. Dört profesyonel alandaki hazırlık düzeyini keşfet ve kişiselleştirilmiş yapay zeka raporu al.
+          <p className="text-lg sm:text-xl text-white/50 max-w-xl mx-auto mb-10 leading-relaxed">
+            14 yaş üstü lise öğrencileri için 34 soruluk uyarlanabilir değerlendirme. Dört profesyonel alandaki hazırlık düzeyini keşfet ve kişiselleştirilmiş rapor al.
           </p>
-          <div className="flex items-center justify-center gap-4 flex-wrap">
-            <Link
-              href="/apply"
-              className="bg-[#4F46E5] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#4338CA] transition-colors"
-            >
-              Ücretsiz başvur →
+          <div className="flex items-center justify-center gap-3 flex-wrap mb-12">
+            <Link href="/apply" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-7 py-3.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-[0_0_24px_rgba(99,102,241,0.3)]">
+              Ücretsiz başvur
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
             </Link>
+            <a href="https://eduentry.com/sample-report" className="inline-flex items-center gap-2 border border-white/[0.12] bg-white/[0.04] text-white/80 px-7 py-3.5 rounded-lg font-semibold text-sm hover:bg-white/[0.08] hover:border-white/[0.2] transition-all">
+              Örnek raporu gör
+            </a>
           </div>
-          <p className="text-xs text-[#6e6e73] mt-6">Öğrenciler için ücretsiz · Kart gerekmez · 20 dakikada sonuç</p>
+          <div className="max-w-md mx-auto text-left">
+            <div className="rounded-xl border border-white/[0.08] bg-[#0a0a0a] overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.6)]">
+              <div className="flex items-center gap-1.5 px-4 py-3 border-b border-white/[0.06] bg-white/[0.02]">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" /><span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" /><span className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
+                <span className="ml-auto font-mono text-[10px] text-white/20">eduentry — assessment report</span>
+              </div>
+              <div className="p-5 font-mono text-[12px] leading-relaxed space-y-1">
+                <div className="text-white/30"><span className="text-[#818CF8]">❯</span> eduentry assess --track tech --age 16</div>
+                <div className="text-white/20 text-[11px] py-1">Running 34-question adaptive assessment...</div>
+                <div className="space-y-0.5 pt-1">
+                  <div className="flex justify-between"><span className="text-white/40">General Aptitude</span><span className="text-[#4ade80]">87 / 100</span></div>
+                  <div className="flex justify-between"><span className="text-white/40">Domain Knowledge</span><span className="text-[#4ade80]">74 / 100</span></div>
+                  <div className="flex justify-between"><span className="text-white/40">Workplace Skills</span><span className="text-[#4ade80]">91 / 100</span></div>
+                  <div className="flex justify-between"><span className="text-white/40">Interest Profile</span><span className="text-[#4ade80]">88 / 100</span></div>
+                </div>
+                <div className="border-t border-white/[0.06] pt-2 mt-2 flex justify-between items-center">
+                  <span className="text-white/40">Readiness tier</span>
+                  <span className="bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent font-semibold">Internship Ready ✦</span>
+                </div>
+              </div>
+            </div>
+            <p className="text-[11px] text-white/20 text-center mt-3 font-mono">Örnek çıktı — sonuçlar sana özel</p>
+          </div>
         </div>
       </section>
 
       {/* ── Tracks ───────────────────────────────────────────────────────── */}
-      <section id="tracks" className="py-16 bg-[#f5f5f7]">
+      <section id="tracks" className="py-24 border-t border-white/[0.04]">
         <div className="max-w-5xl mx-auto px-6">
-          <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Mevcut alanlar</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8 leading-tight">
-            Dört yol.<br />Tek değerlendirme.
-          </h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
-            {INTERNSHIP_TRACKS.map((track, i) => (
-              <Link
-                key={track}
-                href={TRACK_SLUGS[track]}
-                className="group bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden hover:border-[#4F46E5]/40 hover:shadow-sm transition-all"
-              >
-                <div className="flex justify-center pt-6 pb-2">
-                  <div className="relative w-24 h-24">
-                    <Image
-                      src={TRACK_IMAGES[track]}
-                      alt={TRACK_LABELS_TR[track]}
-                      fill
-                      className="object-contain"
-                      sizes="96px"
-                      priority={i < 2}
-                    />
+          <p className="font-mono text-[11px] text-[#818CF8] uppercase tracking-[0.2em] mb-4">// Mevcut alanlar</p>
+          <div className="flex items-end justify-between mb-12 gap-6 flex-wrap">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight leading-tight">Dört yol.<br /><span className="bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent">Tek değerlendirme.</span></h2>
+            <Link href="/apply" className="text-sm font-medium text-white/40 hover:text-white/80 transition-colors whitespace-nowrap">Tüm alanları karşılaştır →</Link>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+            {INTERNSHIP_TRACKS.map((track) => {
+              const c = TRACK_COLORS[track]
+              return (
+                <Link key={track} href={TRACK_SLUGS[track]} className={`group relative bg-white/[0.02] border border-white/[0.06] rounded-2xl p-5 transition-all overflow-hidden ${c.border}`}>
+                  <div className={`absolute inset-0 bg-gradient-to-br ${c.glow} to-transparent opacity-0 group-hover:opacity-100 transition-opacity`} />
+                  <div className="relative">
+                    <div className={`font-mono text-2xl mb-4 ${c.label}`}>{TRACK_ICONS[track]}</div>
+                    <h3 className="font-bold text-white text-sm mb-2 leading-snug">{TRACK_LABELS_TR[track]}</h3>
+                    <p className="text-xs text-white/40 leading-relaxed mb-4">{TRACK_DESCRIPTIONS_TR[track]}</p>
+                    <span className={`text-xs font-mono font-semibold opacity-0 group-hover:opacity-100 transition-opacity ${c.label}`}>Daha fazla →</span>
                   </div>
-                </div>
-                <div className="p-5">
-                  <h3 className="font-bold text-[#1d1d1f] text-base mb-1.5 group-hover:text-[#4F46E5] transition-colors">{TRACK_LABELS_TR[track]}</h3>
-                  <p className="text-xs text-[#6e6e73] leading-relaxed mb-3">{TRACK_DESCRIPTIONS_TR[track]}</p>
-                  <span className="text-xs font-semibold text-[#4F46E5] opacity-0 group-hover:opacity-100 transition-opacity">Daha fazla →</span>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              )
+            })}
           </div>
         </div>
       </section>
 
       {/* ── How it works ─────────────────────────────────────────────────── */}
-      <section id="how-it-works" className="py-16 bg-white">
+      <section id="how-it-works" className="py-24 border-t border-white/[0.04] bg-[#080808]">
         <div className="max-w-5xl mx-auto px-6">
-          <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Süreç</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
-            Üç adımda yerleştirme.
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <p className="font-mono text-[11px] text-[#818CF8] uppercase tracking-[0.2em] mb-4">// Süreç</p>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-16">Üç adımda yerleştirme.</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 relative">
+            <div className="hidden sm:block absolute top-6 left-[calc(16.7%+1rem)] right-[calc(16.7%+1rem)] h-px bg-gradient-to-r from-[#4F46E5]/40 via-[#7C3AED]/40 to-[#4F46E5]/10" />
             {[
-              { n: '01', title: 'Kayıt ol ve başvur',         desc: 'Ücretsiz hesabını oluştur ve kendin, okulun ile alan tercihlerin hakkında bilgi ver.' },
-              { n: '02', title: 'Değerlendirmeyi tamamla',    desc: 'Dört aşamada 34 uyarlanabilir soru. İstediğin zaman devam et.' },
-              { n: '03', title: 'Raporunu al',                 desc: 'Yapay zeka tarafından yazılmış kişiselleştirilmiş hazırlık raporu ve yerleştirme eşleşmeni al.' },
+              { n: '01', title: 'Kayıt ol ve başvur',       desc: 'Ücretsiz hesabını oluştur. Kendin, okulun ve alan tercihlerini paylaş.' },
+              { n: '02', title: 'Değerlendirmeyi tamamla',  desc: '34 uyarlanabilir soru, dört aşama. İstediğin zaman devam et.' },
+              { n: '03', title: 'Raporunu al',               desc: 'Kişiselleştirilmiş hazırlık raporu ve staj yerleştirme eşleşmen anında hazır.' },
             ].map(({ n, title, desc }) => (
-              <div key={n}>
-                <div className="text-4xl font-bold text-[#d2d2d7] mb-4">{n}</div>
-                <div className="font-bold text-[#1d1d1f] mb-2">{title}</div>
-                <p className="text-sm text-[#6e6e73] leading-relaxed">{desc}</p>
+              <div key={n} className="relative">
+                <div className="w-12 h-12 rounded-xl border border-white/[0.08] bg-gradient-to-br from-[#4F46E5]/20 to-[#7C3AED]/10 flex items-center justify-center mb-6">
+                  <span className="font-mono text-sm font-bold bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent">{n}</span>
+                </div>
+                <h3 className="font-bold text-white mb-2">{title}</h3>
+                <p className="text-sm text-white/40 leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -265,80 +288,78 @@ export default function TurkishHomePage() {
       </section>
 
       {/* ── Assessment breakdown ──────────────────────────────────────────── */}
-      <section className="py-16 bg-[#f5f5f7]">
+      <section className="py-24 border-t border-white/[0.04]">
         <div className="max-w-5xl mx-auto px-6">
-          <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Değerlendirme</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
-            Neler beklediğini öğren.
-          </h2>
-          <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden">
+          <p className="font-mono text-[11px] text-[#818CF8] uppercase tracking-[0.2em] mb-4">// Değerlendirme yapısı</p>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-12">Neler beklediğini öğren.</h2>
+          <div className="rounded-2xl border border-white/[0.06] overflow-hidden">
             {PHASES.map((phase, i) => (
-              <div key={phase.label} className={`flex items-center gap-6 p-7 ${i < PHASES.length - 1 ? 'border-b border-[#f5f5f7]' : ''}`}>
-                <div className="w-12 h-12 rounded-2xl overflow-hidden flex-shrink-0">
-                  <Image src={phase.img} alt={phase.label} width={48} height={48} className="object-cover w-full h-full" />
-                </div>
-                <div className="flex-1">
-                  <div className="font-bold text-[#1d1d1f]">{phase.label}</div>
-                  <div className="text-sm text-[#6e6e73] mt-0.5">{phase.desc}</div>
+              <div key={phase.label} className={`flex items-center gap-6 px-7 py-5 ${i < PHASES.length - 1 ? 'border-b border-white/[0.04]' : ''} hover:bg-white/[0.02] transition-colors`}>
+                <div className="font-mono text-sm text-white/20 w-8 flex-shrink-0">{String(i + 1).padStart(2, '0')}</div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-semibold text-white text-sm mb-0.5">{phase.label}</h3>
+                  <p className="text-xs text-white/40">{phase.desc}</p>
                 </div>
                 <div className="text-right flex-shrink-0">
-                  <div className="text-2xl font-bold text-[#4F46E5]">{phase.qs}</div>
-                  <div className="text-xs text-[#6e6e73]">soru</div>
+                  <div className="font-mono text-2xl font-bold bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent">{phase.qs}</div>
+                  <div className="font-mono text-[10px] text-white/20">soru</div>
                 </div>
               </div>
             ))}
-            <div className="border-t border-[#f5f5f7] bg-[#f5f5f7] px-7 py-4">
-              <span className="text-xs text-[#6e6e73]">Toplam: 34 soru · ~20 dakika · Oturumlar arasında tam devam ettirilebilir</span>
+            <div className="px-7 py-3.5 bg-white/[0.02] border-t border-white/[0.04]">
+              <span className="font-mono text-[11px] text-white/25">Toplam: 34 soru · ~20 dakika · Tam devam ettirilebilir</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* ── What you get ─────────────────────────────────────────────────── */}
-      <section className="py-16 bg-white">
+      <section className="py-24 border-t border-white/[0.04] bg-[#080808]">
         <div className="max-w-5xl mx-auto px-6">
-          <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Sonuçlar</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
-            Neler alacaksın.
-          </h2>
-          <div className="bg-[#f5f5f7] rounded-3xl p-8">
-            <ul className="space-y-4">
+          <p className="font-mono text-[11px] text-[#818CF8] uppercase tracking-[0.2em] mb-4">// Rapor içeriği</p>
+          <div className="grid sm:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-6 leading-tight">Raporun.<br /><span className="bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent">Anında.</span></h2>
+              <p className="text-white/40 text-sm leading-relaxed mb-8">Son soruyu tamamladığın anda puanlama başlar. Bekleme yok. Saniyeler içinde hesabında hazır.</p>
+              <Link href="/apply" className="inline-flex items-center gap-2 text-sm font-semibold bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+                Değerlendirmeyi başlat
+                <svg className="w-4 h-4 text-[#7C3AED]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+              </Link>
+            </div>
+            <div className="space-y-2">
               {[
                 'Hazırlık seviyesi — Staja Hazır, Gelişmekte ya da Destek Gerekiyor',
-                'Yapay zeka tarafından yazılmış kişiselleştirilmiş özet paragraf',
-                'Her aşama için güçlü yönler ve gelişim alanları içeren içgörü kartları',
+                'Kişiselleştirilmiş özet paragraf',
+                'Her aşama için güçlü yönler ve gelişim alanları',
                 'En yüksek puan aldığın alanı gösteren alan uyum profili',
-                'Başvurular ve kişisel ifadeler için paylaşılabilir rapor bağlantısı',
-              ].map(item => (
-                <li key={item} className="flex items-start gap-3 text-sm text-[#1d1d1f] leading-relaxed">
-                  <svg className="w-5 h-5 text-[#4F46E5] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                  </svg>
-                  {item}
-                </li>
+                'Başvurular için paylaşılabilir rapor bağlantısı',
+              ].map(text => (
+                <div key={text} className="flex items-start gap-3 p-4 rounded-xl border border-white/[0.04] bg-white/[0.02] hover:border-white/[0.08] transition-colors">
+                  <span className="bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent text-xs mt-0.5 flex-shrink-0">◆</span>
+                  <span className="text-sm text-white/60 leading-snug">{text}</span>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ── Stats ────────────────────────────────────────────────────────── */}
-      <section className="py-16 bg-[#f5f5f7]">
+      <section className="py-24 border-t border-white/[0.04]">
         <div className="max-w-5xl mx-auto px-6">
-          <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Kanıt</p>
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
-            Erken deneyimin neden önemi var.
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <p className="font-mono text-[11px] text-[#818CF8] uppercase tracking-[0.2em] mb-4">// Kanıt</p>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-12">Erken deneyimin neden önemi var.</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { stat: '5×',  desc: '16 yaşından önce 4+ işveren deneyimi yaşayan öğrencilerin 19 yaşında NEET olma olasılığı 5 kat daha az', source: 'Education and Employers, 2018' },
+              { stat: '5×',  desc: '16 yaşından önce 4+ işveren deneyimi olan öğrencilerin 19 yaşında NEET olma ihtimali 5 kat daha az', source: 'Education and Employers, 2018' },
               { stat: '83%', desc: "İşverenlerin %83'ü yeni mezunları işe alırken staj deneyimini önemli buluyor", source: 'NACE, 2023' },
               { stat: '70%', desc: 'Staj deneyimi olan öğrencilerde mezuniyetten önce iş teklifi alma oranı %70 daha yüksek', source: 'NACE, 2020' },
             ].map(({ stat, desc, source }) => (
-              <div key={stat} className="bg-white rounded-3xl border border-[#d2d2d7] p-8">
-                <div className="text-5xl font-bold text-[#4F46E5] mb-3">{stat}</div>
-                <p className="text-sm text-[#1d1d1f] leading-snug mb-2">{desc}</p>
-                <p className="text-xs text-[#6e6e73]">{source}</p>
+              <div key={stat} className="relative overflow-hidden rounded-2xl border border-white/[0.06] p-8 bg-white/[0.01]">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#4F46E5]/40 to-transparent" />
+                <div className="font-mono text-5xl font-bold bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent mb-3">{stat}</div>
+                <p className="text-sm text-white/60 leading-snug mb-3">{desc}</p>
+                <p className="font-mono text-[10px] text-white/20">{source}</p>
               </div>
             ))}
           </div>
@@ -347,54 +368,42 @@ export default function TurkishHomePage() {
 
       {/* ── Blog preview ─────────────────────────────────────────────────── */}
       {internshipPosts.length > 0 && (
-        <section className="py-16 bg-white">
+        <section className="py-24 border-t border-white/[0.04] bg-[#080808]">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="text-xs font-medium tracking-[0.15em] text-[#6e6e73] uppercase mb-5">Araştırma</p>
-            <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">
-              Blogdan son yazılar.
-            </h2>
-            <div className="space-y-5">
+            <p className="font-mono text-[11px] text-[#818CF8] uppercase tracking-[0.2em] mb-4">// Araştırma</p>
+            <div className="flex items-end justify-between mb-12 gap-6 flex-wrap">
+              <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight">Blogdan son yazılar.</h2>
+              <Link href="https://eduentry.com/tr/blog" className="text-sm font-medium text-white/40 hover:text-white/70 transition-colors whitespace-nowrap">Tümünü gör →</Link>
+            </div>
+            <div className="grid sm:grid-cols-3 gap-4">
               {internshipPosts.map((post) => (
-                <Link
-                  key={post.slug}
-                  href={`https://eduentry.com/tr/blog/${post.slug}`}
-                  className="block border border-[#d2d2d7] rounded-2xl p-7 hover:border-[#4F46E5]/40 hover:shadow-sm transition-all"
-                >
-                  <div className="flex items-center gap-3 text-xs text-[#6e6e73] mb-3">
-                    <time dateTime={post.date}>
-                      {new Date(post.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}
-                    </time>
-                    <span>·</span>
-                    <span>{post.readTime}</span>
+                <Link key={post.slug} href={`https://eduentry.com/tr/blog/${post.slug}`} className="group flex flex-col border border-white/[0.06] rounded-2xl p-6 bg-white/[0.01] hover:border-white/[0.12] hover:bg-white/[0.03] transition-all">
+                  <div className="flex items-center gap-2 text-[11px] font-mono text-white/25 mb-3">
+                    <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', year: 'numeric' })}</time>
+                    <span>·</span><span>{post.readTime}</span>
                   </div>
-                  <h3 className="text-xl font-bold text-[#1d1d1f] mb-2 leading-snug">{post.title}</h3>
-                  <p className="text-sm text-[#6e6e73] leading-relaxed">{post.description}</p>
+                  <h3 className="font-bold text-white/80 text-sm leading-snug mb-2 group-hover:text-white transition-colors flex-1">{post.title}</h3>
+                  <p className="text-xs text-white/30 leading-relaxed line-clamp-2">{post.description}</p>
                 </Link>
               ))}
-            </div>
-            <div className="mt-8">
-              <Link href="https://eduentry.com/tr/blog" className="text-sm font-semibold text-[#4F46E5] hover:underline">
-                Tüm staj makalelerini görüntüle →
-              </Link>
             </div>
           </div>
         </section>
       )}
 
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 bg-[#f5f5f7]">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-8">Sorular.</h2>
-          <div className="space-y-px">
-            {FAQS.map(({ q, a }) => (
-              <details key={q} className="group bg-white first:rounded-t-3xl last:rounded-b-3xl border-b border-[#f5f5f7] last:border-0">
-                <summary className="flex items-center justify-between gap-6 px-8 py-6 cursor-pointer list-none font-semibold text-[#1d1d1f]">
+      <section className="py-24 border-t border-white/[0.04]">
+        <div className="max-w-3xl mx-auto px-6">
+          <p className="font-mono text-[11px] text-[#818CF8] uppercase tracking-[0.2em] mb-4">// SSS</p>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-12">Sorular.</h2>
+          <div className="space-y-px rounded-2xl overflow-hidden border border-white/[0.06]">
+            {FAQS.map(({ q, a }, i) => (
+              <details key={q} className={`group bg-[#080808] ${i > 0 ? 'border-t border-white/[0.04]' : ''}`}>
+                <summary className="flex items-center justify-between gap-6 px-7 py-5 cursor-pointer list-none font-medium text-white/70 hover:text-white transition-colors text-sm">
                   {q}
-                  <svg className="w-5 h-5 text-[#6e6e73] flex-shrink-0 rotate-0 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                  </svg>
+                  <svg className="w-4 h-4 text-white/30 flex-shrink-0 rotate-0 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
                 </summary>
-                <p className="px-8 pb-6 text-sm text-[#6e6e73] leading-relaxed">{a}</p>
+                <p className="px-7 pb-5 text-sm text-white/40 leading-relaxed">{a}</p>
               </details>
             ))}
           </div>
@@ -402,19 +411,20 @@ export default function TurkishHomePage() {
       </section>
 
       {/* ── Final CTA ────────────────────────────────────────────────────── */}
-      <section className="py-16 bg-white text-center px-6">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight mb-6">
-            Hemen başvur.<br />Ücretsiz.
+      <section className="relative py-28 overflow-hidden border-t border-white/[0.04]">
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#4F46E5]/10 via-transparent to-[#7C3AED]/10" />
+        <div className="pointer-events-none absolute inset-0 opacity-[0.25]" style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+        <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
+          <div className="inline-flex items-center gap-2 border border-white/[0.1] bg-white/[0.04] text-[11px] font-mono text-white/40 px-3.5 py-1.5 rounded-full tracking-[0.1em] uppercase mb-8">
+            Öğrenciler için ücretsiz · Kart gerekmez
+          </div>
+          <h2 className="text-5xl sm:text-6xl font-bold text-white tracking-tight mb-6 leading-tight">
+            Hemen başvur.<br /><span className="bg-gradient-to-r from-[#818CF8] via-[#6366F1] to-[#A78BFA] bg-clip-text text-transparent">Ücretsiz.</span>
           </h2>
-          <p className="text-lg text-[#6e6e73] mb-10">
-            34 soru. 20 dakika. Kişiselleştirilmiş yapay zeka raporu ve gerçek bir staja doğru ilk adım.
-          </p>
-          <Link
-            href="/apply"
-            className="inline-block bg-[#4F46E5] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#4338CA] transition-colors"
-          >
-            Başvuruyu başlat →
+          <p className="text-white/40 mb-10 text-lg">34 soru. 20 dakika. Kişiselleştirilmiş rapor ve gerçek bir iş tecrübesine doğru ilk adım.</p>
+          <Link href="/apply" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-10 py-4 rounded-xl font-semibold text-base hover:opacity-90 transition-opacity shadow-[0_0_40px_rgba(99,102,241,0.25)]">
+            Başvuruyu başlat
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
           </Link>
         </div>
       </section>
