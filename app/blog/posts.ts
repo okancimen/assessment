@@ -166,6 +166,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'In three ways: it gives your personal statement specific, evidence-based content instead of generic assertions about interest in business; it demonstrates commercial maturity — the ability to operate in a professional environment — which admissions teams value for competitive business, economics, law, and finance courses; and it reduces your risk of choosing the wrong course, since you will know from direct experience whether a business environment suits you before committing to a three-year degree.',
       },
     ],
+    howToSteps: [
+      { name: 'Identify your target placement type', text: 'Choose between school-arranged work experience, Spring Insight weeks at major firms (KPMG, Deloitte, Goldman Sachs), virtual programmes on Springpod or Forage, or direct applications to local SMEs. Large-firm schemes offer prestige; smaller firms give more responsibility.' },
+      { name: 'Build your evidence base before applying', text: 'Take a free aptitude assessment to produce a verified competency report. Prepare a one-paragraph answer to "why business?" that references something specific about the organisation — not just general interest.' },
+      { name: 'Research and shortlist organisations', text: 'Large-firm Spring Insight applications typically open September–November. For SMEs, direct email applications work year-round. Aim to apply to at least one structured programme and two or three smaller firms in parallel.' },
+      { name: 'Write a targeted application', text: 'Write a focused cover letter (one side of A4 maximum) naming one specific thing the company does and why it interests you commercially. Attach your assessment score — verified aptitude data distinguishes your application from generic expressions of enthusiasm.' },
+      { name: 'Prepare for the placement', text: 'Research the company thoroughly before your first day. Prepare two or three intelligent questions for professionals you will meet. Bring a notebook, arrive early, and treat every task — however small — as a real deliverable.' },
+      { name: 'Document your experience for university applications', text: 'Keep a brief daily log of what you did, what you observed, and what you learned. After the placement, write a 200-word reflection. This becomes the raw material for your UCAS personal statement and interview answers.' },
+    ],
     cta: {
       heading: 'Ready to prove your business readiness?',
       body: 'Free 34-question adaptive assessment for students aged 14+. Get a personalised readiness report — and something concrete to reference in every application.',
@@ -524,6 +532,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Super-selective grammar schools are grammar schools that admit only the very highest-scoring applicants from across a wide geographical area, regardless of proximity. Examples include King Edward\'s School Birmingham and Nonsuch High School for Girls in Surrey. These schools typically require SAS scores of 125–135 and are significantly more competitive than local-intake grammar schools with the same legal name.',
       },
     ],
+    howToSteps: [
+      { name: 'Find out which exam board your target school uses', text: 'Most schools in Kent and Essex use GL Assessment; Buckinghamshire uses CEM; some London schools set their own papers. The exam board determines your preparation materials and question style.' },
+      { name: 'Research your target school\'s score thresholds', text: 'Look up the specific pass mark and competitive SAS range for each school on your list. Most competitive schools publish historical score ranges. In oversubscribed areas, the competitive score is 5–15 points above the formal pass mark.' },
+      { name: 'Establish a baseline with a diagnostic test', text: 'Take a standardised adaptive practice test to find out your child\'s current SAS and identify which of the four subjects — English, Maths, Verbal Reasoning, Non-Verbal Reasoning — needs the most work.' },
+      { name: 'Build a structured preparation plan', text: 'Work backwards from the September exam date. Most families start 12–18 months before the 11+. Plan 3–4 hours per week in the early phase rising to 5–7 in the final three months.' },
+      { name: 'Practise each subject systematically under timed conditions', text: 'Work through question types one subject at a time before mixing them. Verbal and Non-Verbal Reasoning are usually the biggest score opportunities — children rarely encounter these at school.' },
+      { name: 'Register for the exam by the deadline', text: 'Most grammar schools require registration in the spring or early summer of Year 5 (April–June) for a September Year 6 exam. Missing the deadline means missing the exam entirely.' },
+      { name: 'Complete timed mock papers and review every error', text: 'Do at least 3–4 full mock papers in the 8 weeks before the real exam. After each mock, review every incorrect answer together — understanding why matters more than the score.' },
+    ],
     cta: {
       heading: 'Know your child\'s grammar school chances',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — the same scale used by grammar school entrance exams across England.',
@@ -727,6 +744,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'For preparation-responsive tests like the CogAT or NNAT, a 6–12 month horizon of consistent skill-building produces the best results. This includes daily reading, weekly reasoning puzzles, and monthly timed practice sessions. For IQ tests like the WISC-V, focus on reducing anxiety and familiarising your child with the testing environment rather than content preparation.',
       },
     ],
+    howToSteps: [
+      { name: 'Identify which test your child will take', text: 'Confirm the exact test name — CogAT, NNAT, OLSAT, or WISC-V. CogAT and NNAT are the most preparation-responsive; WISC-V (administered individually by a psychologist) is not. Your district or school should disclose the test used.' },
+      { name: 'Take a diagnostic practice test 6 months out', text: 'Establish a baseline across the test\'s batteries before buying any materials. For CogAT, assess all three batteries — Verbal, Quantitative, and Nonverbal — to identify which needs the most attention.' },
+      { name: 'Start gentle familiarisation with question formats', text: 'In months 4–6 before the test, introduce one battery at a time: 15–20 minutes, three to four times per week. Focus on understanding question types — not drilling. Daily reading begins now.' },
+      { name: 'Build the underlying cognitive skills', text: 'Verbal battery: wide reading and daily vocabulary practice. Quantitative battery: KenKen, Sudoku, and number puzzle books (not standard maths homework). Nonverbal battery: matrix and spatial puzzle books, tangrams, and figure-series apps.' },
+      { name: 'Begin structured timed practice across all batteries', text: 'In the 2–4 months before the test, introduce timed sessions mixing all three batteries. Review every error together — understanding why the wrong answer seemed appealing is more valuable than the score itself.' },
+      { name: 'Complete full timed practice tests in the final two months', text: 'Sit full-length timed tests that simulate real conditions. Identify remaining weak question types and do targeted drilling. Maintain consistency — 20 minutes daily beats infrequent long sessions.' },
+      { name: 'In the final two weeks, stop introducing new material', text: 'No new question types or books. Light review only. Focus on sleep, routine, and confidence. Remind your child what the test is measuring — and that there is no way to fail.' },
+    ],
     cta: {
       heading: 'See how your child compares internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — the same benchmarks used in gifted identification worldwide.',
@@ -799,6 +825,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'How does the schooladvies determine VWO entry?',
         a: 'The schooladvies is the primary factor for VWO entry. A child with a VWO or HAVO/VWO schooladvies from their group 8 teacher, confirmed by a Doorstroomtoets score in the VWO range (Cito 545+), can apply to VWO. The most prestigious schools (Gymnasium, TTO programmes) may also run additional entrance procedures including an intake interview.',
       },
+    ],
+    howToSteps: [
+      { name: 'Understand your child\'s schooladvies in Group 8', text: 'The schooladvies from the Group 8 teacher is the primary VWO entry factor. A recommendation of VWO or HAVO/VWO is needed. If the advice is HAVO/VWO, children can transfer to VWO after Year 1 (brugklas) based on performance.' },
+      { name: 'Check the Doorstroomtoets score', text: 'A Doorstroomtoets (formerly Cito) score of approximately 545–550 is typically needed for VWO placement. If the toets score is higher than the schooladvies, parents can request a heroverweging (reconsideration) from the school.' },
+      { name: 'Research VWO and Gymnasium schools in your area', text: 'Identify whether your area has Gymnasium schools (which require Latin/Greek and have a more classical curriculum), TTO programmes (bilingual VWO), or standard Atheneum VWO. Research oversubscription — in Amsterdam, Utrecht, and The Hague, some schools use a lottery among qualified applicants.' },
+      { name: 'Attend open days (open dagen)', text: 'Most secondary schools hold open days in November–January. Attend with your child — their motivation and fit matter as much as your choice. Gymnasium schools in particular often have a strong community culture that benefits from visiting.' },
+      { name: 'Submit the school preference form on time', text: 'The school preference deadline is typically in February. In oversubscribed areas, submit as early as the window allows. Rank multiple schools in case your first choice is oversubscribed.' },
+      { name: 'Plan for the brugklas assessment year if needed', text: 'If your child received a HAVO/VWO combined recommendation, the first year (brugklas) is a combined class. Placement in VWO or HAVO for Year 2 is decided by the school at the end of Year 1 based on performance.' },
     ],
     cta: {
       heading: 'Benchmark your child internationally',
@@ -1188,6 +1222,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Most Canadian independent schools follow a similar timeline: open houses in September–November, applications and ISEE/SSAT testing from October–January, student interviews in January–February, and offers issued in February–March for September entry. The most competitive schools fill quickly — begin researching and attending open houses a full year before your desired entry date.',
       },
     ],
+    howToSteps: [
+      { name: 'Confirm which test your target school requires', text: 'Check each school\'s admissions page — most specify ISEE, SSAT, or both. Upper Canada College, Havergal, and Bishop Strachan all list requirements online. A small number of junior schools use school-designed assessments instead.' },
+      { name: 'Register for the test 8–12 weeks in advance', text: 'Register through the ISEE (ERB) or SSAT (SSATB) websites. Test centres exist in Toronto, Vancouver, Calgary, and Ottawa. Some schools offer Flex testing on-site — check admissions offices directly.' },
+      { name: 'Take a diagnostic practice test to establish a baseline', text: 'ISEE and SSAT both publish official practice materials. A diagnostic test identifies your child\'s current stanine range and which sections — Verbal, Quantitative, Reading, Writing — need the most preparation.' },
+      { name: 'Prepare systematically across all test sections', text: 'Allow 10–16 weeks of structured preparation. Verbal reasoning and reading comprehension respond well to wide reading and vocabulary practice. Quantitative sections benefit from targeted problem-solving practice rather than standard school maths.' },
+      { name: 'Sit the test and request score reports sent to schools', text: 'Score reports are sent directly to schools you designate during registration. For ISEE, you can add schools after testing; for SSAT, designate schools at registration. Request reports sent to all target schools.' },
+      { name: 'Prepare the full application package', text: 'Strong test scores are necessary but not sufficient at competitive schools. Prepare for interviews (most schools interview Year 7+ applicants), request school reports from current teachers, and document extracurricular activities and achievements.' },
+    ],
     cta: {
       heading: 'Benchmark your child against international standards',
       body: 'Free adaptive assessment with a standardised score and percentile ranking against UK, US, PISA and IB standards.',
@@ -1261,6 +1303,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'How long should you prepare for the ACER Scholarship Exam?',
         a: 'For meaningful score improvement, start ACER preparation 12–18 months before the exam. The last 8–10 weeks before the exam should include full timed practice tests under exam conditions. The Written Expression component benefits most from structured weekly writing practice over an extended period.',
       },
+    ],
+    howToSteps: [
+      { name: 'Confirm your entry year level and test components', text: 'The main ACER Scholarship Exam entry point is Year 7 (child in Year 6 at time of sitting). Check whether your target school tests Written Expression, Humanities, and Mathematics — or a subset. Most schools use all three; some use Humanities and Mathematics only.' },
+      { name: 'Register through your target school', text: 'Registration is through individual schools, not through ACER directly. Applications typically open January–March and close in May for the June sitting. Apply to multiple schools if scholarship maximisation is the goal.' },
+      { name: 'Establish a baseline with a practice test', text: 'ACER publishes official practice tests. Sit a full timed practice test to find out current performance across the three components. Scores range 0–100 with a mean of 50; scholarship-competitive scores are typically 68+.' },
+      { name: 'Build topic preparation in Humanities and Mathematics', text: 'Humanities: reading comprehension, vocabulary, and verbal reasoning practice. Mathematics: arithmetic, fractions, percentages, geometry, and applied reasoning — focus on non-standard problem types, as ACER tests reasoning rather than curriculum recall.' },
+      { name: 'Practise Written Expression weekly from 6+ months out', text: 'Written Expression is the component that benefits most from extended preparation. Write one structured timed response per week, varying between narrative and persuasive tasks. Seek adult feedback on paragraph structure and vocabulary range.' },
+      { name: 'Complete full timed practice sittings in the final 8 weeks', text: 'Simulate exam conditions: time the full paper, no breaks beyond what ACER allows, no access to notes. Review every error. In the final two weeks, maintain routine and confidence rather than introducing new material.' },
     ],
     cta: {
       heading: 'See where your child stands internationally',
@@ -1526,6 +1576,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'What is the Young Enterprise Company Programme?',
         a: 'Young Enterprise is a UK charity that runs the Company Programme in secondary schools — students form a real company, elect roles, raise share capital, produce and sell a product or service, and compete at regional and national levels. It is the most widely recognised school-age business programme in the UK, active in over 5,500 schools. Participation counts as documented entrepreneurial experience and is explicitly referenced in some Russell Group university admissions guidance as evidence of commercial initiative.',
       },
+    ],
+    howToSteps: [
+      { name: 'Choose a service based on skills you already have', text: 'The most viable options for a 16-year-old are online tutoring (MyTutor, Tutorful — requires a grade 8/9 in the subject), freelance design or content creation (Fiverr, Canva), and e-commerce reselling (Depop, Vinted). Pick the option closest to your existing strengths.' },
+      { name: 'Understand the legal basics', text: 'You can trade as a sole trader from age 16 with no minimum capital. Register as self-employed with HMRC when earnings exceed £1,000 in a tax year. Income below the £12,570 personal allowance is tax-free. Under-18s cannot be company directors.' },
+      { name: 'Set up a dedicated bank account', text: 'Open a separate account for business income — Starling and Monzo offer teen account variants. A dedicated account makes tracking revenue trivial and demonstrates professional organisation.' },
+      { name: 'Acquire your first clients', text: 'For tutoring, list on a marketplace and ask satisfied students for reviews. For freelancing, send three to five personalised direct outreach messages to small local businesses. Start at market rate — do not undercut on price; compete on responsiveness and quality.' },
+      { name: 'Deliver and ask for a written testimonial', text: 'Treat every early client as a reference. After completing work, send a brief follow-up email asking for a testimonial or LinkedIn recommendation. These compound quickly and reduce the effort needed to win the next client.' },
+      { name: 'Document your experience for university applications', text: 'Keep a simple monthly revenue record and note major milestones: first client, first £100, first repeat client. These numbers give your personal statement and interview answers specific, credible detail that generic applicants cannot replicate.' },
     ],
     cta: {
       heading: 'Ready to prove your business readiness?',
@@ -1808,6 +1866,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'How long should my child practise maths for the 11+?',
         a: 'Daily practice of 20–30 minutes is more effective than longer weekend sessions. Focus on the weakest topic for 2-3 weeks before moving on. Mental arithmetic drills (times tables, factor pairs, percentage calculations) should be done little and often — 5 minutes daily compounds over months into significant fluency gains.',
       },
+    ],
+    howToSteps: [
+      { name: 'Confirm your exam board', text: 'Find out whether your target school uses GL Assessment or CEM. GL Assessment has a dedicated Maths paper with clearly labelled topic questions. CEM integrates Maths as a "Numerical Reasoning" section with real-world data tasks. The preparation differs significantly.' },
+      { name: 'Take a diagnostic timed practice paper', text: 'Sit a full timed Maths paper to identify which of the eight topic areas — Number, Fractions/Percentages, Ratio, Algebra, Geometry, Measurement, Data Handling, Word Problems — are weakest. This directs the next months of preparation.' },
+      { name: 'Build times tables fluency and mental arithmetic speed', text: 'This is the foundation. Children who do not have instant recall of times tables and factor pairs slow down across every section. Drill daily for 5 minutes — not as a test, but as low-stakes retrieval practice.' },
+      { name: 'Work through each topic area systematically', text: 'Spend 2–3 weeks per weak topic before moving on. Use topic-specific practice sheets, not full mixed papers. Children who face mixed question types too early confuse formats and learn less.' },
+      { name: 'Introduce timed drills per question type', text: 'Target 90 seconds per question for practice. Start at 2 minutes and reduce to 90 seconds once consistent accuracy is achieved. Timed drilling on specific question types closes speed gaps faster than full papers.' },
+      { name: 'Progress to full timed papers', text: 'Once individual topic speed is consistent, move to full timed papers under exam conditions. Aim for at least 4–6 full papers before the real exam. Review every error together — understanding the mistake matters more than the mark.' },
     ],
     cta: {
       heading: 'See your child\'s 11+ Maths score — free',
@@ -2467,6 +2533,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Yes. A verified third-party readiness report solves the experience paradox — you need experience to get experience, but you need an opportunity to build experience. An Eduentry assessment report gives recruiters measured data on your aptitude, domain knowledge and workplace skills before they meet you. It is the most concrete signal an employer can act on when there is no prior work history to evaluate.',
       },
     ],
+    howToSteps: [
+      { name: 'Map your current skill set', text: 'Identify your three strongest signals: Which subjects come naturally? What topics do you research independently? Where do peers ask you for help? These point towards one of four orientations — technology, marketing, business, or creative — which frames your applications.' },
+      { name: 'Replace an empty CV with a competency report', text: 'Take a free adaptive assessment that measures aptitude, domain knowledge, and workplace skills. A third-party readiness report turns "I have no experience" into "my potential has been measured" — giving recruiters something concrete to act on.' },
+      { name: 'Complete one virtual work experience programme', text: 'Platforms like Springpod, Forage, and Bright Network offer free virtual programmes with real company briefs from Barclays, Deloitte, Google, and others. Completing one takes 3–8 hours and earns a certificate — it is concrete evidence of action, not just interest.' },
+      { name: 'Write a personalised cover letter', text: 'Name one specific thing the company does and explain your interest in it commercially. Keep it to half a side. Attach your competency report. A personalised application with measured evidence outperforms a generic application every time.' },
+      { name: 'Apply to a mix of company sizes', text: 'Submit large-firm scheme applications in September–November (deadlines are strict). Apply to small and medium-sized businesses directly via email year-round — SMEs give more responsibility and respond faster to direct applications.' },
+      { name: 'Prepare for any screening test or interview', text: 'Many schemes include an online verbal or numerical reasoning test. Practise explaining your approach to a problem step by step. Prepare two or three specific examples of logical thinking, independent initiative, or problem-solving from outside school.' },
+    ],
     cta: {
       heading: 'Find out your internship readiness level — free',
       body: 'Free adaptive assessment for high school students aged 14+. Discover your readiness across aptitude, domain knowledge, and workplace skills — with a personalised AI report.',
@@ -2542,6 +2616,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         q: 'How is the VIA character strengths framework different from intelligence testing?',
         a: "Intelligence testing measures cognitive capacity — processing speed, working memory, abstract reasoning. VIA character strengths measure what a child does with that capacity over time: whether they lean into challenge (perseverance, zest), remain open to new ideas (curiosity, love of learning), and manage impulses that derail effort (self-regulation). The research suggests character strengths explain additional variance in achievement beyond IQ alone.",
       },
+    ],
+    howToSteps: [
+      { name: 'Complete a character strengths assessment for a baseline profile', text: 'Take a VIA-backed personality assessment to identify your child\'s Signature Strengths (top five) and Growth Pillars (bottom three). A parent-rated format provides the most stable baseline for children under 13.' },
+      { name: 'Address Self-Regulation gaps with structured routines', text: 'For children low in self-regulation, reduce decision-making friction: set a fixed homework time and location, remove phones from the study space, and break tasks into 20-minute segments with a short defined break. The goal is to remove the decision to start, not to force willpower.' },
+      { name: 'Develop Love of Learning through adjacent interests', text: 'Expose your child to topics adjacent to their school subjects in low-pressure contexts — podcasts, documentaries, non-fiction books in areas of natural curiosity. A child who finds something genuinely interesting outside school transfers that habit of engagement inward.' },
+      { name: 'Build Perseverance through graduated challenge', text: 'Introduce tasks at the edge of your child\'s current ability — slightly hard but completable. Emphasise effort and strategy in your feedback ("you worked through that systematically") rather than outcome ("you got it right"). This reframes difficulty as process rather than failure.' },
+      { name: 'Cultivate Curiosity by modelling follow-up questions', text: 'After reading or watching something together, ask your child one open-ended question and then leave a deliberate gap. The habit of asking "why?" and "what if?" develops through practice, not instruction. Curiosity is contagious.' },
+      { name: 'Re-assess after 6 months to track development', text: 'Character strengths are responsive to environment and deliberate practice. Re-running the assessment at a 6-month interval shows concrete progress in Growth Pillars and often reveals emergent new Signature Strengths — which reinforces both the child\'s and parent\'s effort.' },
     ],
     cta: {
       heading: "Discover your child's character strengths — free",
