@@ -193,7 +193,7 @@ export default function AIHomePage() {
           <div className="inline-flex items-center gap-2 mb-8">
             <span className="inline-flex items-center gap-2 border border-white/[0.12] bg-white/[0.04] text-[11px] font-mono text-white/60 px-3.5 py-1.5 rounded-full tracking-[0.12em] uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#4ade80] shadow-[0_0_6px_#4ade80] animate-pulse" />
-              AI-Powered · Free · 20 Minutes
+              Personalised · Free · 20 Minutes
             </span>
           </div>
 
