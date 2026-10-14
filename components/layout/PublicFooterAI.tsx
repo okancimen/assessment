@@ -124,7 +124,7 @@ export default function PublicFooterAI() {
             <ul className="space-y-2">
               {tracks.map(({ href, label }) => (
                 <li key={href}>
-                  <Link href={href} className="text-xs text-white/40 hover:text-white/80 transition-colors">
+                  <Link href={href} className="text-xs text-white/70 hover:text-white transition-colors">
                     {label}
                   </Link>
                 </li>
@@ -135,24 +135,24 @@ export default function PublicFooterAI() {
           <div>
             <p className="font-mono text-[10px] font-semibold text-white/25 uppercase tracking-[0.15em] mb-3">{L.learn}</p>
             <ul className="space-y-2">
-              <li><Link href={HOW[locale]}  className="text-xs text-white/40 hover:text-white/80 transition-colors">{L.howItWorks}</Link></li>
-              <li><Link href={BLOG[locale]} className="text-xs text-white/40 hover:text-white/80 transition-colors">{L.blog}</Link></li>
+              <li><Link href={HOW[locale]}  className="text-xs text-white/70 hover:text-white transition-colors">{L.howItWorks}</Link></li>
+              <li><Link href={BLOG[locale]} className="text-xs text-white/70 hover:text-white transition-colors">{L.blog}</Link></li>
             </ul>
           </div>
 
           <div>
             <p className="font-mono text-[10px] font-semibold text-white/25 uppercase tracking-[0.15em] mb-3">{L.account}</p>
             <ul className="space-y-2">
-              <li><Link href="/auth/login" className="text-xs text-white/40 hover:text-white/80 transition-colors">{L.signIn}</Link></li>
-              <li><Link href="/apply"      className="text-xs text-white/40 hover:text-white/80 transition-colors">{L.applyFree}</Link></li>
+              <li><Link href="/auth/login" className="text-xs text-white/70 hover:text-white transition-colors">{L.signIn}</Link></li>
+              <li><Link href="/apply"      className="text-xs text-white/70 hover:text-white transition-colors">{L.applyFree}</Link></li>
             </ul>
           </div>
 
           <div>
             <p className="font-mono text-[10px] font-semibold text-white/25 uppercase tracking-[0.15em] mb-3">{L.legal}</p>
             <ul className="space-y-2">
-              <li><Link href="/privacy" className="text-xs text-white/40 hover:text-white/80 transition-colors">{L.privacy}</Link></li>
-              <li><Link href="/terms"   className="text-xs text-white/40 hover:text-white/80 transition-colors">{L.terms}</Link></li>
+              <li><Link href="/privacy" className="text-xs text-white/70 hover:text-white transition-colors">{L.privacy}</Link></li>
+              <li><Link href="/terms"   className="text-xs text-white/70 hover:text-white transition-colors">{L.terms}</Link></li>
             </ul>
           </div>
 

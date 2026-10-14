@@ -93,7 +93,7 @@ export default function PublicNavAI() {
           <Image src="/logo-ai-short.png" alt="Eduentry.ai" width={32} height={28} className="sm:hidden object-contain" priority />
         </Link>
 
-        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-xs text-white/50">
+        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-xs text-white/70">
           <Link href={HOW[locale]} className="hover:text-white transition-colors">
             {nav.howItWorks}
           </Link>
@@ -126,7 +126,7 @@ export default function PublicNavAI() {
         </div>
 
         <div className="flex items-center gap-5">
-          <Link href="/auth/login" className="text-xs text-white/40 hover:text-white/80 transition-colors hidden sm:block">
+          <Link href="/auth/login" className="text-xs text-white/70 hover:text-white transition-colors hidden sm:block">
             {nav.signIn}
           </Link>
           <Link href="/apply" prefetch={false} className="text-xs font-semibold bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent hover:opacity-80 transition-opacity">
