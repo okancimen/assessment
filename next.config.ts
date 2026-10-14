@@ -59,6 +59,8 @@ const nextConfig: NextConfig = {
       { source: '/blog/australia-oc-test-guide', destination: '/blog/nsw-opportunity-class-test-guide', permanent: true },
       // contentSlug accidentally indexed by Google — redirect to the canonical Turkish slug
       { source: '/blog/international-internship-programs-tr', destination: '/tr/blog/uluslararasi-staj-programlari', permanent: true },
+      // /home has no route — redirect to the real homepage
+      { source: '/home', destination: '/', permanent: true },
       // Strip /en/ prefix — English content lives at the root, not under /en/
       { source: '/en/:path*', destination: '/:path*', permanent: true },
       // Locale blog slugs — redirect /blog/[locale-slug] → /[locale]/blog/[locale-slug]
