@@ -175,6 +175,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'how-to-prepare-for-gcse',
     'global-academic-benchmarks-report-2026',
     'gifted-program-testing-guide',
+    'nwea-map-scores-explained',
+    'isee-ssat-private-school-guide',
     'high-school-internship-benefits-university',
     'character-strengths-academic-success',
   ])
@@ -237,6 +239,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${BASE}/es/evaluacion-de-personalidad`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     { url: `${BASE}/es/evaluacion-academica`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
+    { url: `${BASE}/es/informe-de-ejemplo-personalidad`, lastModified: '2026-10-13', changeFrequency: 'monthly' as const, priority: 0.8, alternates: PERSONALITY_SAMPLE_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.es}`,
       lastModified: '2026-10-04',
@@ -298,6 +301,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${BASE}/tr/kisilik-degerlendirmesi`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     { url: `${BASE}/tr/akademik-degerlendirme`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
+    { url: `${BASE}/tr/kisilik-ornek-rapor`, lastModified: '2026-10-13', changeFrequency: 'monthly' as const, priority: 0.8, alternates: PERSONALITY_SAMPLE_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.tr}`,
       lastModified: '2026-10-04',
@@ -359,6 +363,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${BASE}/fr/evaluation-de-personnalite`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     { url: `${BASE}/fr/evaluation-academique`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
+    { url: `${BASE}/fr/exemple-rapport-personnalite`, lastModified: '2026-10-13', changeFrequency: 'monthly' as const, priority: 0.8, alternates: PERSONALITY_SAMPLE_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.fr}`,
       lastModified: '2026-10-04',
@@ -420,6 +425,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${BASE}/ar/taqyim-al-shakhsiya`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     { url: `${BASE}/ar/taqyim-acadimi`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
+    { url: `${BASE}/ar/namudhaj-taqrir-shakhsiya`, lastModified: '2026-10-13', changeFrequency: 'monthly' as const, priority: 0.8, alternates: PERSONALITY_SAMPLE_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.ar}`,
       lastModified: '2026-10-04',
@@ -481,6 +487,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${BASE}/ru/otsenka-lichnosti`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     { url: `${BASE}/ru/akademicheskaya-otsenka`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
+    { url: `${BASE}/ru/primer-otcheta-lichnosti`, lastModified: '2026-10-13', changeFrequency: 'monthly' as const, priority: 0.8, alternates: PERSONALITY_SAMPLE_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.ru}`,
       lastModified: '2026-10-04',
@@ -542,6 +549,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${BASE}/zh/xingge-pinggu`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     { url: `${BASE}/zh/xueshu-pinggu`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
+    { url: `${BASE}/zh/xingge-yangben-baogao`, lastModified: '2026-10-13', changeFrequency: 'monthly' as const, priority: 0.8, alternates: PERSONALITY_SAMPLE_ALTERNATES },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.zh}`,
       lastModified: '2026-10-04',
