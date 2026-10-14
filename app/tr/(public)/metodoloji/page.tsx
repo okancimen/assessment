@@ -4,9 +4,9 @@ import Link from 'next/link'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Değerlendirme Metodolojisi',
-  description: '2 parametreli Madde Yanıt Teorisi ve MAP tahmini — 6–17 yaş arası çocuklar için standartlaştırılmış akademik puanlar ve uluslararası kıyaslama.',
-  keywords: 'madde yanıt teorisi çocuklar, uyarlanabilir test MYT, standartlaştırılmış puan çocuklar, MAP tahmini, eğitim değerlendirme metodolojisi, uyarlanabilir test',
+  title: 'Değerlendirme Metodolojisi: IRT ve VIA',
+  description: '2 parametreli MYT ile uyarlanabilir akademik değerlendirme ve VIA Karakter Güçleri çerçevesiyle kişilik değerlendirmesi — 6–17 yaş için iki farklı metodoloji.',
+  keywords: 'madde yanıt teorisi çocuklar, uyarlanabilir test MYT, standartlaştırılmış puan çocuklar, MAP tahmini, VIA karakter güçleri, ebeveyn değerlendirmesi, eğitim değerlendirme metodolojisi',
   alternates: {
     canonical: `${BASE_URL}/tr/metodoloji`,
     languages: { 'en-GB': `${BASE_URL}/methodology`, es: `${BASE_URL}/es/metodologia`, fr: `${BASE_URL}/fr/methodologie`, tr: `${BASE_URL}/tr/metodoloji`, ar: `${BASE_URL}/ar/manhajiyya`, ru: `${BASE_URL}/ru/metodologiya`, zh: `${BASE_URL}/zh/fangfalun`, 'x-default': `${BASE_URL}/methodology` },
@@ -43,6 +43,8 @@ const FAQ_SCHEMA = {
     { '@type': 'Question', name: 'Madde Tepki Teorisi (MTT) nedir?', acceptedAnswer: { '@type': 'Answer', text: 'Madde Tepki Teorisi (MTT), her soruyu güçlük, ayırt edicilik ve şans faktörü gibi istatistiksel özelliklere göre modelleyen bir ölçme teorisidir. Eduentry\'nin değerlendirmeleri, uluslararası benchmarklarla karşılaştırılabilir hassas yetenek tahminleri sunmak için MTT\'ye dayanmaktadır.' } },
     { '@type': 'Question', name: 'Eduentry\'nin metodolojisi nasıl işler?', acceptedAnswer: { '@type': 'Answer', text: 'Çocuk her soruyu yanıtladıkça sistem, yetenek tahminini anlık olarak günceller ve bir sonraki sorunun güçlük seviyesini ayarlar. Bu süreç, çok daha az soruyla standart testlerden daha doğru ölçümler elde edilmesini sağlar.' } },
     { '@type': 'Question', name: 'Değerlendirmeler uluslararası standartlarla uyumlu mu?', acceptedAnswer: { '@type': 'Answer', text: 'Evet. Eduentry\'nin sonuçları PISA, İngiltere Ulusal Müfredatı ve IB gibi uluslararası standartlarla karşılaştırılabilecek şekilde tasarlanmıştır. Standart skorlar ve küresel yüzdelik dilim sıralamaları sunulmaktadır.' } },
+    { '@type': 'Question', name: 'VIA Karakter Güçleri çerçevesi nedir?', acceptedAnswer: { '@type': 'Answer', text: 'VIA Karakter Güçleri, Dr. Martin Seligman ve Dr. Neal Mayerson tarafından geliştirilen pozitif psikoloji çerçevesidir. 6 temel erdem altında gruplanmış 24 evrensel karakter özelliğini tanımlar: Bilgelik, Cesaret, İnsanlık, Adalet, Ölçülülük ve Aşkınlık. 190\'dan fazla ülkede araştırmacılar tarafından kullanılmaktadır.' } },
+    { '@type': 'Question', name: 'Kişilik değerlendirmesi neden çocuk değil ebeveyn tarafından doldurulur?', acceptedAnswer: { '@type': 'Answer', text: 'Çocukların öz algıları — özellikle 6–13 yaş grubunda — hızla değişir ve tutarsız olabilir. Ebeveyn gözlemi, her gün çocuğu gören birinin nesnel bakış açısını yansıtır ve daha istikrarlı, doğru bir karakter profili ortaya çıkarır.' } },
   ],
 }
 
@@ -60,15 +62,34 @@ export default function MetodolojiPage() {
 
       <div className="mb-12">
         <p className="text-sm font-semibold text-[#4F46E5] uppercase tracking-wide mb-3">Metodoloji</p>
-        <h1 className="text-4xl font-bold text-[#1d1d1f] mb-4 tracking-tight">Eduentry uyarlanabilir değerlendirmesi nasıl çalışır</h1>
+        <h1 className="text-4xl font-bold text-[#1d1d1f] mb-4 tracking-tight">Eduentry değerlendirmeleri nasıl çalışır</h1>
         <p className="text-xl text-[#6e6e73] leading-relaxed">
-          Eduentry, 6–17 yaş arası çocuklar için hassas ve uluslararası kıyaslamalı puanlar üretmek amacıyla
-          profesyonel bilişsel değerlendirmelerle aynı psikometrik metodolojiye —
-          uyarlanabilir sorularla Madde Yanıt Teorisi — başvurur.
+          Eduentry iki ayrı metodoloji kullanır: akademik beceriler için <strong className="text-[#1d1d1f]">Madde Yanıt Teorisi</strong> temelli
+          uyarlanabilir değerlendirme; karakter özellikleri için <strong className="text-[#1d1d1f]">VIA Karakter Güçleri</strong> çerçevesine
+          dayalı ebeveyn gözlem anketi. Her biri farklı bir soruya yanıt verir.
         </p>
       </div>
 
+      {/* Methodology switcher cards */}
+      <div className="grid sm:grid-cols-2 gap-4 mb-14">
+        <div className="rounded-2xl border-2 border-[#4F46E5] bg-[#eef2ff] p-6">
+          <p className="text-xs font-bold text-[#4F46E5] uppercase tracking-wider mb-2">Metodoloji 1</p>
+          <h2 className="text-lg font-bold text-[#1d1d1f] mb-2">IRT Akademik Değerlendirme</h2>
+          <p className="text-sm text-[#6e6e73] leading-relaxed">Uyarlanabilir sorular ve 2PL MYT ile standartlaştırılmış akademik puan — ortalama 100, SS 15 ölçeğinde, uluslararası kıyaslamalı.</p>
+        </div>
+        <div className="rounded-2xl border-2 border-violet-300 bg-violet-50 p-6">
+          <p className="text-xs font-bold text-violet-600 uppercase tracking-wider mb-2">Metodoloji 2</p>
+          <h2 className="text-lg font-bold text-[#1d1d1f] mb-2">VIA Karakter Güçleri Değerlendirmesi</h2>
+          <p className="text-sm text-[#6e6e73] leading-relaxed">Ebeveyn gözlemine dayalı anket ile 24 evrensel karakter özelliğinin profillemesi — tek bir puan yerine güçlü yönler sıralaması.</p>
+        </div>
+      </div>
+
       <div className="prose prose-gray max-w-none space-y-12">
+
+        {/* ── METHODOLOGY 1 ── */}
+        <div className="flex items-center gap-3 mb-2">
+          <span className="text-xs font-bold text-[#4F46E5] uppercase tracking-wider bg-[#eef2ff] border border-[#c7d2fe] rounded-full px-3 py-1">Metodoloji 1 — IRT Akademik Değerlendirme</span>
+        </div>
 
         {/* Adaptive Testing */}
         <section>
@@ -239,6 +260,32 @@ export default function MetodolojiPage() {
           </p>
         </section>
 
+        {/* Subjects */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Değerlendirilen dersler</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { name: 'İngilizce', icon: '📚', detail: 'Okuma anlama, dilbilgisi, kelime hazinesi, yazım ve yazılı dil kuralları.' },
+              { name: 'Matematik', icon: '🔢', detail: 'Aritmetik, cebir, geometri, istatistik ve matematiksel problem çözme.' },
+              { name: 'Sözel Akıl Yürütme', icon: '💬', detail: 'Kelime analogisi, sınıflandırma, mantık dizileri ve dil temelli problem çözme.' },
+              { name: 'Sözel Olmayan Akıl Yürütme', icon: '🔷', detail: 'Örüntü tanıma, uzamsal akıl yürütme, matris tamamlama ve görsel mantık.' },
+            ].map(({ name, icon, detail }) => (
+              <div key={name} className="bg-[#f5f5f7] rounded-2xl border border-[#d2d2d7] p-5">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xl">{icon}</span>
+                  <h3 className="font-semibold text-[#1d1d1f]">{name}</h3>
+                </div>
+                <p className="text-sm text-[#6e6e73] leading-relaxed">{detail}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── METHODOLOGY 2 ── */}
+        <div className="flex items-center gap-3 pt-4">
+          <span className="text-xs font-bold text-violet-600 uppercase tracking-wider bg-violet-50 border border-violet-200 rounded-full px-3 py-1">Metodoloji 2 — VIA Karakter Güçleri Değerlendirmesi</span>
+        </div>
+
         {/* Kişilik değerlendirmesi */}
         <section>
           <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Kişilik değerlendirmesi metodolojisi</h2>
@@ -296,6 +343,22 @@ export default function MetodolojiPage() {
             Çocuğunuzun karakter profilinin nasıl göründüğünü görmek ister misiniz?{' '}
             <Link href="/tr/kisilik-degerlendirmesi" className="text-[#4F46E5] hover:underline font-medium">Ücretsiz kişilik değerlendirmesini başlatın →</Link>
           </p>
+        </section>
+
+        {/* Şeffaflık */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Şeffaflık</h2>
+          <div className="space-y-4">
+            <p className="text-[#6e6e73] leading-relaxed">
+              Eduentry, her öğrencinin akademik yeteneklerini doğru biçimde yansıtan güçlü ve uyarlanabilir bir değerlendirme yaklaşımı sunar.
+            </p>
+            <p className="text-[#6e6e73] leading-relaxed">
+              Geleneksel değerlendirmeler çoğunlukla sabit soru setleriyle sınırlıdır; bu durum sonuçların öğrencinin gerçek yetenekten çok soruların güçlük düzeyinden etkilenmesine yol açabilir. Eduentry, her öğrencinin yanıtlarına göre soru güçlüğünü sürekli olarak ayarlayan yapay zeka destekli bir uyarlanabilir motor aracılığıyla bu sınırlamayı ortadan kaldırır. Böylece sonuçlar testin yapısından değil, öğrencinin gerçek potansiyelinden kaynaklanır.
+            </p>
+            <p className="text-[#6e6e73] leading-relaxed">
+              Eduentry&apos;nin metodolojisi CAT4, GL Assessment ve WISC&apos;ten farklılık gösterse de sonuçlar, eğitim planlaması ve karar alma süreçleri için güvenilir ve uygulanabilir bir temel sağlar. Resmi tanı değerlendirmesinin gerektiği durumlarda Eduentry, yerleşik psikometrik araçları değerli bir şekilde tamamlar.
+            </p>
+          </div>
         </section>
 
       </div>

@@ -4,8 +4,8 @@ import Link from 'next/link'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Metodología de evaluación',
-  description: 'Teoría de Respuesta al Ítem de 2 parámetros y estimación MAP — puntuaciones estandarizadas para niños de 6 a 17 años con comparación internacional.',
+  title: 'Metodología de evaluación: IRT y VIA',
+  description: 'Evaluación académica adaptativa con TRI de 2 parámetros y evaluación de la personalidad con el marco VIA de Fortalezas del Carácter — dos metodologías distintas para niños de 6 a 17 años.',
   keywords: 'Teoría de Respuesta al Ítem niños, evaluación adaptativa TRI, puntuación estandarizada niños, estimación MAP, metodología evaluación educativa, prueba adaptativa',
   alternates: {
     canonical: `${BASE_URL}/es/metodologia`,
@@ -43,6 +43,8 @@ const FAQ_SCHEMA = {
     { '@type': 'Question', name: '¿Qué es la Teoría de Respuesta al Ítem (TRI)?', acceptedAnswer: { '@type': 'Answer', text: 'La Teoría de Respuesta al Ítem (TRI) es una teoría de medición que modela cada pregunta según sus propiedades estadísticas: dificultad, discriminación y factor de azar. Las evaluaciones de Eduentry se basan en la TRI para ofrecer estimaciones de habilidad precisas y comparables con benchmarks internacionales.' } },
     { '@type': 'Question', name: '¿Cómo funciona la metodología de Eduentry?', acceptedAnswer: { '@type': 'Answer', text: 'A medida que el niño responde cada pregunta, el sistema actualiza la estimación de habilidad al instante y ajusta la dificultad de la siguiente pregunta. Esto permite obtener mediciones más precisas que los tests estándar con muchas menos preguntas.' } },
     { '@type': 'Question', name: '¿Las evaluaciones están alineadas con estándares internacionales?', acceptedAnswer: { '@type': 'Answer', text: 'Sí. Los resultados de Eduentry están diseñados para ser comparables con estándares internacionales como PISA, el Currículo Nacional del Reino Unido y el IB. Se presentan puntuaciones normalizadas y clasificaciones percentiles globales.' } },
+    { '@type': 'Question', name: '¿Qué es el marco VIA de Fortalezas del Carácter?', acceptedAnswer: { '@type': 'Answer', text: 'El marco VIA de Fortalezas del Carácter fue desarrollado por los pioneros de la psicología positiva Dr. Martin Seligman y Dr. Neal Mayerson. Identifica 24 rasgos de carácter universales agrupados en 6 virtudes fundamentales: Sabiduría, Coraje, Humanidad, Justicia, Templanza y Trascendencia. Ha sido validado entre culturas y es utilizado por investigadores en más de 190 países.' } },
+    { '@type': 'Question', name: '¿Por qué la evaluación de personalidad la completan los padres, no el niño?', acceptedAnswer: { '@type': 'Answer', text: 'Las autopercepciones de los niños — especialmente entre los 6 y 13 años — cambian rápidamente y pueden ser inconsistentes. La observación parental refleja la perspectiva objetiva de quien ve al niño cada día, produciendo un perfil de carácter más estable y preciso.' } },
   ],
 }
 
@@ -62,13 +64,32 @@ export default function MetodologiaPage() {
         <p className="text-sm font-semibold text-[#4F46E5] uppercase tracking-wide mb-3">Metodología</p>
         <h1 className="text-4xl font-bold text-[#1d1d1f] mb-4 tracking-tight">Cómo funciona la evaluación adaptativa de Eduentry</h1>
         <p className="text-xl text-[#6e6e73] leading-relaxed">
-          Eduentry utiliza la misma metodología psicométrica que las evaluaciones cognitivas profesionales —
-          la Teoría de Respuesta al Ítem con preguntas adaptativas — para producir puntuaciones precisas e
-          internacionalmente comparables para niños de 6 a 17 años.
+          Eduentry utiliza dos metodologías distintas: evaluación adaptativa basada en la <strong className="text-[#1d1d1f]">Teoría de Respuesta al Ítem</strong> para
+          competencias académicas; cuestionario de observación parental basado en el marco de <strong className="text-[#1d1d1f]">Fortalezas del Carácter VIA</strong> para
+          rasgos de carácter. Cada una responde una pregunta diferente.
         </p>
       </div>
 
+      {/* Methodology switcher cards */}
+      <div className="grid sm:grid-cols-2 gap-4 mb-14">
+        <div className="rounded-2xl border-2 border-[#4F46E5] bg-[#eef2ff] p-6">
+          <p className="text-xs font-bold text-[#4F46E5] uppercase tracking-wider mb-2">Metodología 1</p>
+          <h2 className="text-lg font-bold text-[#1d1d1f] mb-2">Evaluación académica IRT</h2>
+          <p className="text-sm text-[#6e6e73] leading-relaxed">Puntuación académica estandarizada mediante preguntas adaptativas y TRI 2PL — escala media 100, DT 15, con comparación internacional.</p>
+        </div>
+        <div className="rounded-2xl border-2 border-violet-300 bg-violet-50 p-6">
+          <p className="text-xs font-bold text-violet-600 uppercase tracking-wider mb-2">Metodología 2</p>
+          <h2 className="text-lg font-bold text-[#1d1d1f] mb-2">Evaluación VIA de Fortalezas del Carácter</h2>
+          <p className="text-sm text-[#6e6e73] leading-relaxed">Perfil de 24 rasgos de carácter universales mediante cuestionario de observación parental — clasificación de fortalezas en lugar de una puntuación única.</p>
+        </div>
+      </div>
+
       <div className="prose prose-gray max-w-none space-y-12">
+
+        {/* ── METHODOLOGY 1 ── */}
+        <div className="flex items-center gap-3 mb-2">
+          <span className="text-xs font-bold text-[#4F46E5] uppercase tracking-wider bg-[#eef2ff] border border-[#c7d2fe] rounded-full px-3 py-1">Metodología 1 — Evaluación académica IRT</span>
+        </div>
 
         {/* Adaptive Testing */}
         <section>
@@ -240,6 +261,32 @@ export default function MetodologiaPage() {
           </p>
         </section>
 
+        {/* Materias evaluadas */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Materias evaluadas</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { name: 'Inglés', icon: '📚', detail: 'Comprensión lectora, gramática, vocabulario, ortografía y convenciones del lenguaje escrito.' },
+              { name: 'Matemáticas', icon: '🔢', detail: 'Aritmética, álgebra, geometría, estadística y resolución de problemas matemáticos.' },
+              { name: 'Razonamiento Verbal', icon: '💬', detail: 'Analogías de palabras, clasificación, series lógicas y resolución de problemas basados en lenguaje.' },
+              { name: 'Razonamiento No Verbal', icon: '🔷', detail: 'Reconocimiento de patrones, razonamiento espacial, completar matrices y lógica visual.' },
+            ].map(({ name, icon, detail }) => (
+              <div key={name} className="bg-[#f5f5f7] rounded-2xl border border-[#d2d2d7] p-5">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xl">{icon}</span>
+                  <h3 className="font-semibold text-[#1d1d1f]">{name}</h3>
+                </div>
+                <p className="text-sm text-[#6e6e73] leading-relaxed">{detail}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── METHODOLOGY 2 ── */}
+        <div className="flex items-center gap-3 pt-4">
+          <span className="text-xs font-bold text-violet-600 uppercase tracking-wider bg-violet-50 border border-violet-200 rounded-full px-3 py-1">Metodología 2 — Evaluación VIA de Fortalezas del Carácter</span>
+        </div>
+
         {/* Evaluación de personalidad */}
         <section>
           <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Metodología de la evaluación de personalidad</h2>
@@ -297,6 +344,22 @@ export default function MetodologiaPage() {
             ¿Quieres ver cómo es el perfil de carácter de tu hijo?{' '}
             <Link href="/es/evaluacion-de-personalidad" className="text-[#4F46E5] hover:underline font-medium">Iniciar la evaluación de personalidad gratuita →</Link>
           </p>
+        </section>
+
+        {/* Transparencia */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Transparencia</h2>
+          <div className="space-y-4">
+            <p className="text-[#6e6e73] leading-relaxed">
+              Eduentry ofrece un enfoque de evaluación robusto y adaptativo que refleja con precisión las capacidades académicas de cada alumno.
+            </p>
+            <p className="text-[#6e6e73] leading-relaxed">
+              Las evaluaciones tradicionales suelen estar limitadas por conjuntos de preguntas fijas, lo que puede hacer que los resultados reflejen la dificultad del test en lugar de las capacidades reales del alumno. Eduentry elimina esta limitación mediante un motor adaptativo impulsado por IA que ajusta continuamente la dificultad de las preguntas según las respuestas de cada alumno. Así, los resultados reflejan el potencial real del alumno, no la estructura del test.
+            </p>
+            <p className="text-[#6e6e73] leading-relaxed">
+              Aunque la metodología de Eduentry difiere de CAT4, GL Assessment y WISC, los resultados proporcionan una base fiable y procesable para la planificación educativa y la toma de decisiones. Cuando se requiere una evaluación diagnóstica formal, Eduentry complementa de forma valiosa las herramientas psicométricas establecidas.
+            </p>
+          </div>
         </section>
 
       </div>

@@ -4,8 +4,8 @@ import Link from 'next/link'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Методология оценивания',
-  description: 'Двухпараметрическая IRT и MAP — стандартизированные баллы для детей 6–17 лет. Международное сравнение с PISA, GCSE и IB.',
+  title: 'Методология оценивания: IRT и VIA',
+  description: 'Адаптивная академическая оценка с двухпараметрической IRT и оценка личности по структуре сильных сторон характера VIA — две отдельные методологии для детей 6–17 лет.',
   keywords: 'теория ответов на задания дети, адаптивный тест IRT, стандартизированный балл дети, оценивание MAP, методология образовательной оценки, адаптивный тест',
   alternates: {
     canonical: `${BASE_URL}/ru/metodologiya`,
@@ -43,6 +43,8 @@ const FAQ_SCHEMA = {
     { '@type': 'Question', name: 'Что такое теория ответа на задание (ТОЗ)?', acceptedAnswer: { '@type': 'Answer', text: 'Теория ответа на задание (ТОЗ) — это теория измерения, которая моделирует каждый вопрос с учётом его статистических характеристик: сложности, дифференцирующей способности и фактора угадывания. Оценки Eduentry основаны на ТОЗ, что позволяет получать точные оценки способностей, сопоставимые с международными эталонами.' } },
     { '@type': 'Question', name: 'Как работает методология Eduentry?', acceptedAnswer: { '@type': 'Answer', text: 'По мере того как ребёнок отвечает на каждый вопрос, система мгновенно обновляет оценку способностей и подбирает следующий вопрос соответствующей сложности. Это позволяет получать более точные результаты, чем при стандартных тестах, задавая значительно меньше вопросов.' } },
     { '@type': 'Question', name: 'Соответствуют ли оценки международным стандартам?', acceptedAnswer: { '@type': 'Answer', text: 'Да. Результаты Eduentry разработаны таким образом, чтобы их можно было сопоставить с международными стандартами — PISA, Национальной программой Великобритании и IB. Предоставляются стандартизированные баллы и глобальные процентильные рейтинги.' } },
+    { '@type': 'Question', name: 'Что такое структура сильных сторон характера VIA?', acceptedAnswer: { '@type': 'Answer', text: 'Структура сильных сторон характера VIA разработана пионерами позитивной психологии доктором Мартином Селигманом и доктором Нилом Майерсоном. Она выделяет 24 универсальные черты характера, сгруппированные под 6 основными добродетелями: Мудрость, Смелость, Гуманность, Справедливость, Умеренность и Трансцендентность. Структура валидирована в разных культурах и используется исследователями более чем в 190 странах.' } },
+    { '@type': 'Question', name: 'Почему оценку личности заполняют родители, а не ребёнок?', acceptedAnswer: { '@type': 'Answer', text: 'Самовосприятие детей — особенно в возрасте 6–13 лет — меняется быстро и может быть непоследовательным. Родительское наблюдение отражает объективный взгляд того, кто видит ребёнка каждый день, создавая более стабильный и точный профиль характера.' } },
   ],
 }
 
@@ -62,13 +64,30 @@ export default function MetodologiyaPage() {
         <p className="text-sm font-semibold text-[#4F46E5] uppercase tracking-wide mb-3">Методология</p>
         <h1 className="text-4xl font-bold text-[#1d1d1f] mb-4 tracking-tight">Как работает адаптивная оценка Eduentry</h1>
         <p className="text-xl text-[#6e6e73] leading-relaxed">
-          Eduentry использует ту же психометрическую методологию, что профессиональные когнитивные оценки —
-          теорию ответов на задания с адаптивными вопросами — для получения точных и международно сопоставимых
-          баллов для детей 6–17 лет.
+          Eduentry использует две отдельные методологии: адаптивную оценку на основе <strong className="text-[#1d1d1f]">теории ответов на задания</strong> для академических компетенций; анкету родительского наблюдения на основе структуры <strong className="text-[#1d1d1f]">сильных сторон характера VIA</strong> для черт характера. Каждая отвечает на разный вопрос.
         </p>
       </div>
 
+      {/* Methodology switcher cards */}
+      <div className="grid sm:grid-cols-2 gap-4 mb-14">
+        <div className="rounded-2xl border-2 border-[#4F46E5] bg-[#eef2ff] p-6">
+          <p className="text-xs font-bold text-[#4F46E5] uppercase tracking-wider mb-2">Методология 1</p>
+          <h2 className="text-lg font-bold text-[#1d1d1f] mb-2">Академическая оценка IRT</h2>
+          <p className="text-sm text-[#6e6e73] leading-relaxed">Стандартизированный академический балл через адаптивные вопросы и 2PL IRT — шкала среднее 100, СО 15, с международным сравнением.</p>
+        </div>
+        <div className="rounded-2xl border-2 border-violet-300 bg-violet-50 p-6">
+          <p className="text-xs font-bold text-violet-600 uppercase tracking-wider mb-2">Методология 2</p>
+          <h2 className="text-lg font-bold text-[#1d1d1f] mb-2">Оценка сильных сторон характера VIA</h2>
+          <p className="text-sm text-[#6e6e73] leading-relaxed">Профиль 24 универсальных черт характера через анкету родительского наблюдения — рейтинг сильных сторон вместо единого балла.</p>
+        </div>
+      </div>
+
       <div className="prose prose-gray max-w-none space-y-12">
+
+        {/* ── METHODOLOGY 1 ── */}
+        <div className="flex items-center gap-3 mb-2">
+          <span className="text-xs font-bold text-[#4F46E5] uppercase tracking-wider bg-[#eef2ff] border border-[#c7d2fe] rounded-full px-3 py-1">Методология 1 — Академическая оценка IRT</span>
+        </div>
 
         {/* Adaptive Testing */}
         <section>
@@ -239,6 +258,32 @@ export default function MetodologiyaPage() {
           </p>
         </section>
 
+        {/* Оцениваемые предметы */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Оцениваемые предметы</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { name: 'Английский язык', icon: '📚', detail: 'Понимание прочитанного, грамматика, словарный запас, правописание и письменные языковые нормы.' },
+              { name: 'Математика', icon: '🔢', detail: 'Арифметика, алгебра, геометрия, статистика и математическое решение задач.' },
+              { name: 'Вербальное мышление', icon: '💬', detail: 'Словесные аналогии, классификация, логические ряды и решение задач на языковой основе.' },
+              { name: 'Невербальное мышление', icon: '🔷', detail: 'Распознавание паттернов, пространственное мышление, заполнение матриц и визуальная логика.' },
+            ].map(({ name, icon, detail }) => (
+              <div key={name} className="bg-[#f5f5f7] rounded-2xl border border-[#d2d2d7] p-5">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xl">{icon}</span>
+                  <h3 className="font-semibold text-[#1d1d1f]">{name}</h3>
+                </div>
+                <p className="text-sm text-[#6e6e73] leading-relaxed">{detail}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── METHODOLOGY 2 ── */}
+        <div className="flex items-center gap-3 pt-4">
+          <span className="text-xs font-bold text-violet-600 uppercase tracking-wider bg-violet-50 border border-violet-200 rounded-full px-3 py-1">Методология 2 — Оценка сильных сторон характера VIA</span>
+        </div>
+
         {/* Оценка личности */}
         <section>
           <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Методология оценки личности</h2>
@@ -296,6 +341,22 @@ export default function MetodologiyaPage() {
             Хотите узнать, каков профиль характера вашего ребёнка?{' '}
             <Link href="/ru/otsenka-lichnosti" className="text-[#4F46E5] hover:underline font-medium">Начать бесплатную оценку личности →</Link>
           </p>
+        </section>
+
+        {/* Прозрачность */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">Прозрачность</h2>
+          <div className="space-y-4">
+            <p className="text-[#6e6e73] leading-relaxed">
+              Eduentry предлагает надёжный и адаптивный подход к оцениванию, который точно отражает академические способности каждого ученика.
+            </p>
+            <p className="text-[#6e6e73] leading-relaxed">
+              Традиционные оценки часто ограничены фиксированными наборами вопросов, из-за чего результаты могут отражать сложность теста, а не реальные способности ученика. Eduentry устраняет это ограничение с помощью адаптивного движка на основе ИИ, который непрерывно корректирует сложность вопросов в зависимости от ответов каждого ученика. Таким образом, результаты отражают реальный потенциал ученика, а не структуру теста.
+            </p>
+            <p className="text-[#6e6e73] leading-relaxed">
+              Хотя методология Eduentry отличается от CAT4, GL Assessment и WISC, результаты обеспечивают надёжную и практически применимую основу для образовательного планирования и принятия решений. Когда требуется формальная диагностическая оценка, Eduentry ценным образом дополняет устоявшиеся психометрические инструменты.
+            </p>
+          </div>
         </section>
 
       </div>

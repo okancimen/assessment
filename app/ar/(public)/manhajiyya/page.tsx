@@ -4,8 +4,8 @@ import Link from 'next/link'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'منهجية التقييم',
-  description: 'نظرية الاستجابة للبند (IRT) ثنائية المعلمة وتقدير MAP — درجات معيارية للأطفال من 6 إلى 17 عاماً مع مقارنة دولية.',
+  title: 'منهجية التقييم: IRT وVIA',
+  description: 'تقييم أكاديمي تكيفي بنظرية IRT ثنائية المعلمة وتقييم الشخصية بإطار VIA لقوى الشخصية — منهجيتان مستقلتان للأطفال من 6 إلى 17 عاماً.',
   keywords: 'نظرية الاستجابة للبند أطفال, تقييم تكيفي IRT, درجة معيارية أطفال, تقدير MAP, منهجية تقييم تعليمية, اختبار تكيفي',
   alternates: {
     canonical: `${BASE_URL}/ar/manhajiyya`,
@@ -43,6 +43,8 @@ const FAQ_SCHEMA = {
     { '@type': 'Question', name: 'ما هي نظرية الاستجابة للفقرة (IRT)؟', acceptedAnswer: { '@type': 'Answer', text: 'نظرية الاستجابة للفقرة (IRT) هي نظرية قياس تُنمذِج كل سؤال وفق خصائصه الإحصائية: الصعوبة، والتمييز، وعامل التخمين. تعتمد تقييمات Eduentry على هذه النظرية لتقديم تقديرات دقيقة للكفاءة قابلة للمقارنة بالمعايير الدولية.' } },
     { '@type': 'Question', name: 'كيف تعمل منهجية Eduentry؟', acceptedAnswer: { '@type': 'Answer', text: 'مع إجابة الطفل عن كل سؤال، يُحدِّث النظام تقدير الكفاءة فورياً ويُعدِّل صعوبة السؤال التالي. يُتيح ذلك الحصول على قياسات أدق من الاختبارات المعيارية بعدد أسئلة أقل بكثير.' } },
     { '@type': 'Question', name: 'هل التقييمات متوافقة مع المعايير الدولية؟', acceptedAnswer: { '@type': 'Answer', text: 'نعم. صُمِّمت نتائج Eduentry لتكون قابلة للمقارنة بالمعايير الدولية كـ PISA، والمنهج الوطني البريطاني، وبرنامج البكالوريا الدولية (IB). وتُقدَّم النتائج على شكل درجات معيارية مع تصنيفات مئوية عالمية.' } },
+    { '@type': 'Question', name: 'ما هو إطار VIA لقوى الشخصية؟', acceptedAnswer: { '@type': 'Answer', text: 'طوّر إطار VIA لقوى الشخصية رائدا علم النفس الإيجابي د. مارتن سيليغمان ود. نيل مايرسون. يُحدِّد هذا الإطار 24 سمة شخصية عالمية مجمّعة تحت 6 فضائل أساسية: الحكمة، والشجاعة، والإنسانية، والعدالة، والاعتدال، والتسامي. تم التحقق منه عبر الثقافات ويستخدمه الباحثون في أكثر من 190 دولة.' } },
+    { '@type': 'Question', name: 'لماذا يُكمل الوالدان تقييم الشخصية وليس الطفل؟', acceptedAnswer: { '@type': 'Answer', text: 'تتغير الإدراكات الذاتية للأطفال — لا سيما في سن 6 إلى 13 عاماً — بسرعة وقد تكون غير متسقة. يعكس ملاحظة الوالدين المنظور الموضوعي لمن يرى الطفل كل يوم، مما يُنتج ملف شخصية أكثر استقراراً ودقة.' } },
   ],
 }
 
@@ -62,12 +64,30 @@ export default function ManhajiyyaPage() {
         <p className="text-sm font-semibold text-[#4F46E5] uppercase tracking-wide mb-3">المنهجية</p>
         <h1 className="text-4xl font-bold text-[#1d1d1f] mb-4 tracking-tight">كيف يعمل التقييم التكيفي في Eduentry</h1>
         <p className="text-xl text-[#6e6e73] leading-relaxed">
-          يستخدم Eduentry نفس المنهجية القياسية النفسية المستخدمة في التقييمات المعرفية المهنية —
-          نظرية الاستجابة للبند مع أسئلة تكيفية — لإنتاج درجات دقيقة وقابلة للمقارنة دولياً للأطفال من 6 إلى 17 عاماً.
+          يستخدم Eduentry منهجيتين مستقلتين: تقييم تكيفي قائم على <strong className="text-[#1d1d1f]">نظرية الاستجابة للبند</strong> للكفاءات الأكاديمية؛ واستبيان مراقبة الوالدين المستند إلى إطار <strong className="text-[#1d1d1f]">VIA لقوى الشخصية</strong> لسمات الشخصية. كل منهما يجيب على سؤال مختلف.
         </p>
       </div>
 
+      {/* Methodology switcher cards */}
+      <div className="grid sm:grid-cols-2 gap-4 mb-14">
+        <div className="rounded-2xl border-2 border-[#4F46E5] bg-[#eef2ff] p-6">
+          <p className="text-xs font-bold text-[#4F46E5] uppercase tracking-wider mb-2">المنهجية 1</p>
+          <h2 className="text-lg font-bold text-[#1d1d1f] mb-2">التقييم الأكاديمي IRT</h2>
+          <p className="text-sm text-[#6e6e73] leading-relaxed">درجة أكاديمية معيارية عبر أسئلة تكيفية ونموذج 2PL IRT — مقياس بمتوسط 100 وانحراف معياري 15، مع مقارنة دولية.</p>
+        </div>
+        <div className="rounded-2xl border-2 border-violet-300 bg-violet-50 p-6">
+          <p className="text-xs font-bold text-violet-600 uppercase tracking-wider mb-2">المنهجية 2</p>
+          <h2 className="text-lg font-bold text-[#1d1d1f] mb-2">تقييم VIA لقوى الشخصية</h2>
+          <p className="text-sm text-[#6e6e73] leading-relaxed">تحديد 24 سمة شخصية عالمية عبر استبيان مراقبة الوالدين — ترتيب القوى بدلاً من درجة واحدة.</p>
+        </div>
+      </div>
+
       <div className="prose prose-gray max-w-none space-y-12">
+
+        {/* ── METHODOLOGY 1 ── */}
+        <div className="flex items-center gap-3 mb-2">
+          <span className="text-xs font-bold text-[#4F46E5] uppercase tracking-wider bg-[#eef2ff] border border-[#c7d2fe] rounded-full px-3 py-1">المنهجية 1 — التقييم الأكاديمي IRT</span>
+        </div>
 
         {/* Adaptive Testing */}
         <section>
@@ -234,6 +254,32 @@ export default function ManhajiyyaPage() {
           </p>
         </section>
 
+        {/* المواد المُقيَّمة */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">المواد المُقيَّمة</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { name: 'اللغة الإنجليزية', icon: '📚', detail: 'الفهم القرائي، والقواعد، والمفردات، والإملاء، وأعراف اللغة المكتوبة.' },
+              { name: 'الرياضيات', icon: '🔢', detail: 'الحساب، والجبر، والهندسة، والإحصاء، وحل المسائل الرياضية.' },
+              { name: 'التفكير اللفظي', icon: '💬', detail: 'التماثلات اللفظية، والتصنيف، والمتسلسلات المنطقية، وحل المسائل القائمة على اللغة.' },
+              { name: 'التفكير غير اللفظي', icon: '🔷', detail: 'التعرف على الأنماط، والتفكير المكاني، واستكمال المصفوفات، والمنطق البصري.' },
+            ].map(({ name, icon, detail }) => (
+              <div key={name} className="bg-[#f5f5f7] rounded-2xl border border-[#d2d2d7] p-5">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xl">{icon}</span>
+                  <h3 className="font-semibold text-[#1d1d1f]">{name}</h3>
+                </div>
+                <p className="text-sm text-[#6e6e73] leading-relaxed">{detail}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── METHODOLOGY 2 ── */}
+        <div className="flex items-center gap-3 pt-4">
+          <span className="text-xs font-bold text-violet-600 uppercase tracking-wider bg-violet-50 border border-violet-200 rounded-full px-3 py-1">المنهجية 2 — تقييم VIA لقوى الشخصية</span>
+        </div>
+
         {/* منهجية تقييم الشخصية */}
         <section>
           <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">منهجية تقييم الشخصية</h2>
@@ -291,6 +337,22 @@ export default function ManhajiyyaPage() {
             هل تريد رؤية ملف الشخصية الخاص بطفلك؟{' '}
             <Link href="/ar/taqyim-al-shakhsiya" className="text-[#4F46E5] hover:underline font-medium">ابدأ تقييم الشخصية المجاني ←</Link>
           </p>
+        </section>
+
+        {/* الشفافية */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#1d1d1f] mb-4">الشفافية</h2>
+          <div className="space-y-4">
+            <p className="text-[#6e6e73] leading-relaxed">
+              يقدم Eduentry نهجاً قوياً وتكيفياً للتقييم يعكس بدقة القدرات الأكاديمية لكل طالب.
+            </p>
+            <p className="text-[#6e6e73] leading-relaxed">
+              كثيراً ما تكون التقييمات التقليدية مقيدة بمجموعات أسئلة ثابتة، مما قد يجعل النتائج تعكس صعوبة الاختبار بدلاً من قدرات الطالب الحقيقية. يُزيل Eduentry هذا القيد من خلال محرك تكيفي مدعوم بالذكاء الاصطناعي يُعدِّل باستمرار صعوبة الأسئلة وفق استجابات كل طالب. وبذلك تعكس النتائج الإمكانات الحقيقية للطالب، لا هيكل الاختبار.
+            </p>
+            <p className="text-[#6e6e73] leading-relaxed">
+              رغم أن منهجية Eduentry تختلف عن CAT4 وGL Assessment وWISC، فإن النتائج توفر أساساً موثوقاً وقابلاً للتطبيق للتخطيط التعليمي واتخاذ القرار. وعندما يُستدعى تقييم تشخيصي رسمي، يُكمل Eduentry بشكل قيّم الأدوات القياسية النفسية الراسخة.
+            </p>
+          </div>
         </section>
 
       </div>

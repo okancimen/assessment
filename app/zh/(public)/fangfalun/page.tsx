@@ -4,8 +4,8 @@ import Link from 'next/link'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: '评估方法论',
-  description: '两参数IRT自适应测试模型——与PISA、GCSE和SAT相同。了解自适应评估如何工作，以及标准化分数的含义。',
+  title: '评估方法论：IRT与VIA',
+  description: '两参数IRT自适应学业测试与VIA品格优势框架性格评估——针对6–17岁儿童的两种独立方法论。',
   keywords: ['自适应测试方法论', 'IRT项目反应理论', 'PISA评估标准', '标准化分数量表', '2PL模型儿童评估'],
   alternates: {
     canonical: `${BASE_URL}/zh/fangfalun`,
@@ -52,6 +52,8 @@ const FAQ_SCHEMA = {
     { '@type': 'Question', name: '什么是题目反应理论（IRT）？', acceptedAnswer: { '@type': 'Answer', text: '题目反应理论（IRT）是一种测量理论，它根据每道题目的统计特性（难度、区分度和猜测因子）进行建模。Eduentry的测评基于IRT，能够提供精准的能力估计，并与国际基准进行比较。' } },
     { '@type': 'Question', name: 'Eduentry的方法论是如何运作的？', acceptedAnswer: { '@type': 'Answer', text: '每当孩子回答一道题，系统会即时更新能力估计值，并据此调整下一道题的难度。这使得测评结果比标准测试更加精准，且所需题目数量大幅减少。' } },
     { '@type': 'Question', name: '测评结果是否与国际标准对标？', acceptedAnswer: { '@type': 'Answer', text: '是的。Eduentry的测评结果旨在与PISA、英国国家课程及IB等国际标准进行比较。系统提供标准化分数及全球百分位排名。' } },
+    { '@type': 'Question', name: '什么是VIA品格优势框架？', acceptedAnswer: { '@type': 'Answer', text: 'VIA品格优势框架由积极心理学先驱马丁·塞利格曼博士和尼尔·梅耶森博士开发。该框架识别出24项普世性格特征，归纳于6大核心美德：智慧、勇气、人性、公正、节制与超越。已在不同文化中获得验证，被190多个国家的研究人员使用。' } },
+    { '@type': 'Question', name: '为什么性格评估由家长而非孩子填写？', acceptedAnswer: { '@type': 'Answer', text: '儿童的自我认知——尤其是6至13岁——变化迅速且可能前后不一致。家长观察反映了每天陪伴孩子的人的客观视角，能产生更稳定、准确的性格档案。' } },
   ],
 }
 
@@ -67,16 +69,35 @@ export default function FangfalunPage() {
         <span className="text-[#1d1d1f]">方法论</span>
       </nav>
 
-      <div className="mb-14">
+      <div className="mb-10">
         <h1 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] mb-5 leading-tight tracking-tight">
           Eduentry如何工作
         </h1>
         <p className="text-xl text-[#636366] leading-relaxed max-w-2xl">
-          与PISA、GCSE和SAT使用相同科学体系的自适应评估——确保结果直接可与国际标准对标。
+          Eduentry采用两种独立方法论：基于<strong className="text-[#1d1d1f]">题目反应理论</strong>的自适应评估测量学业能力；基于<strong className="text-[#1d1d1f]">VIA品格优势框架</strong>的家长观察问卷评估性格特征。两者各回答不同的问题。
         </p>
       </div>
 
+      {/* Methodology switcher cards */}
+      <div className="grid sm:grid-cols-2 gap-4 mb-14">
+        <div className="rounded-2xl border-2 border-[#4F46E5] bg-[#eef2ff] p-6">
+          <p className="text-xs font-bold text-[#4F46E5] uppercase tracking-wider mb-2">方法论 1</p>
+          <h2 className="text-lg font-bold text-[#1d1d1f] mb-2">IRT学业评估</h2>
+          <p className="text-sm text-[#636366] leading-relaxed">通过自适应题目与2PL IRT得出标准化学业分数——均值100、标准差15量表，附国际对标。</p>
+        </div>
+        <div className="rounded-2xl border-2 border-violet-300 bg-violet-50 p-6">
+          <p className="text-xs font-bold text-violet-600 uppercase tracking-wider mb-2">方法论 2</p>
+          <h2 className="text-lg font-bold text-[#1d1d1f] mb-2">VIA品格优势评估</h2>
+          <p className="text-sm text-[#636366] leading-relaxed">通过家长观察问卷对24项普世性格特征进行画像——输出优势排名而非单一分数。</p>
+        </div>
+      </div>
+
       <div className="space-y-16">
+
+        {/* ── METHODOLOGY 1 ── */}
+        <div className="flex items-center gap-3 mb-2">
+          <span className="text-xs font-bold text-[#4F46E5] uppercase tracking-wider bg-[#eef2ff] border border-[#c7d2fe] rounded-full px-3 py-1">方法论 1 — IRT学业评估</span>
+        </div>
 
         <section>
           <h2 className="text-3xl font-bold text-[#1d1d1f] mb-5 tracking-tight">自适应测试：核心原理</h2>
@@ -158,6 +179,32 @@ export default function FangfalunPage() {
           </ul>
         </section>
 
+        {/* 评估科目 */}
+        <section>
+          <h2 className="text-3xl font-bold text-[#1d1d1f] mb-5 tracking-tight">评估科目</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { name: '英语', icon: '📚', detail: '阅读理解、语法、词汇、拼写及书面语言规范。' },
+              { name: '数学', icon: '🔢', detail: '算术、代数、几何、统计及数学解题。' },
+              { name: '语言推理', icon: '💬', detail: '词语类比、分类、逻辑系列及基于语言的问题解决。' },
+              { name: '非语言推理', icon: '🔷', detail: '图形规律识别、空间推理、矩阵填充及视觉逻辑。' },
+            ].map(({ name, icon, detail }) => (
+              <div key={name} className="bg-[#f5f5f7] rounded-2xl border border-[#d2d2d7] p-5">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xl">{icon}</span>
+                  <h3 className="font-semibold text-[#1d1d1f]">{name}</h3>
+                </div>
+                <p className="text-sm text-[#636366] leading-relaxed">{detail}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── METHODOLOGY 2 ── */}
+        <div className="flex items-center gap-3 pt-4">
+          <span className="text-xs font-bold text-violet-600 uppercase tracking-wider bg-violet-50 border border-violet-200 rounded-full px-3 py-1">方法论 2 — VIA品格优势评估</span>
+        </div>
+
         {/* 性格评估方法论 */}
         <section>
           <h2 className="text-3xl font-bold text-[#1d1d1f] mb-5 tracking-tight">性格评估方法论</h2>
@@ -215,6 +262,22 @@ export default function FangfalunPage() {
             想了解孩子的性格档案是什么样的？{' '}
             <Link href="/zh/xingge-pinggu" className="text-[#4F46E5] hover:underline font-medium">开始免费性格评估 →</Link>
           </p>
+        </section>
+
+        {/* 透明度 */}
+        <section>
+          <h2 className="text-3xl font-bold text-[#1d1d1f] mb-5 tracking-tight">透明度</h2>
+          <div className="space-y-4">
+            <p className="text-[#636366] leading-relaxed">
+              Eduentry提供强大的自适应评估方案，能精准反映每位学生的学业能力。
+            </p>
+            <p className="text-[#636366] leading-relaxed">
+              传统评估通常受限于固定题目集，导致结果可能反映的是试卷难度而非学生的真实能力。Eduentry通过AI驱动的自适应引擎消除了这一局限——该引擎根据每位学生的作答持续调整题目难度。因此，结果反映的是学生的真实潜力，而非试卷结构。
+            </p>
+            <p className="text-[#636366] leading-relaxed">
+              虽然Eduentry的方法论与CAT4、GL Assessment和WISC有所不同，但其结果为教育规划和决策提供了可靠且可操作的依据。当需要正式诊断性评估时，Eduentry能有效补充成熟的心理测量工具。
+            </p>
+          </div>
         </section>
 
       </div>
