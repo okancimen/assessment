@@ -115,16 +115,16 @@ export default function PublicFooterAI() {
   const isRTL = locale === 'ar'
 
   return (
-    <footer className="bg-[#f5f5f7] border-t border-[#d2d2d7]" dir={isRTL ? 'rtl' : undefined}>
+    <footer className="bg-[#080808] border-t border-white/[0.06]" dir={isRTL ? 'rtl' : undefined}>
       <div className="max-w-6xl mx-auto px-6 pt-12 pb-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
 
           <div>
-            <p className="text-xs font-semibold text-[#1d1d1f] uppercase tracking-wider mb-3">{L.tracks}</p>
+            <p className="font-mono text-[10px] font-semibold text-white/25 uppercase tracking-[0.15em] mb-3">{L.tracks}</p>
             <ul className="space-y-2">
               {tracks.map(({ href, label }) => (
                 <li key={href}>
-                  <Link href={href} className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">
+                  <Link href={href} className="text-xs text-white/40 hover:text-white/80 transition-colors">
                     {label}
                   </Link>
                 </li>
@@ -133,36 +133,36 @@ export default function PublicFooterAI() {
           </div>
 
           <div>
-            <p className="text-xs font-semibold text-[#1d1d1f] uppercase tracking-wider mb-3">{L.learn}</p>
+            <p className="font-mono text-[10px] font-semibold text-white/25 uppercase tracking-[0.15em] mb-3">{L.learn}</p>
             <ul className="space-y-2">
-              <li><Link href={HOW[locale]}  className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">{L.howItWorks}</Link></li>
-              <li><Link href={BLOG[locale]} className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">{L.blog}</Link></li>
+              <li><Link href={HOW[locale]}  className="text-xs text-white/40 hover:text-white/80 transition-colors">{L.howItWorks}</Link></li>
+              <li><Link href={BLOG[locale]} className="text-xs text-white/40 hover:text-white/80 transition-colors">{L.blog}</Link></li>
             </ul>
           </div>
 
           <div>
-            <p className="text-xs font-semibold text-[#1d1d1f] uppercase tracking-wider mb-3">{L.account}</p>
+            <p className="font-mono text-[10px] font-semibold text-white/25 uppercase tracking-[0.15em] mb-3">{L.account}</p>
             <ul className="space-y-2">
-              <li><Link href="/auth/login" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">{L.signIn}</Link></li>
-              <li><Link href="/apply"      className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">{L.applyFree}</Link></li>
+              <li><Link href="/auth/login" className="text-xs text-white/40 hover:text-white/80 transition-colors">{L.signIn}</Link></li>
+              <li><Link href="/apply"      className="text-xs text-white/40 hover:text-white/80 transition-colors">{L.applyFree}</Link></li>
             </ul>
           </div>
 
           <div>
-            <p className="text-xs font-semibold text-[#1d1d1f] uppercase tracking-wider mb-3">{L.legal}</p>
+            <p className="font-mono text-[10px] font-semibold text-white/25 uppercase tracking-[0.15em] mb-3">{L.legal}</p>
             <ul className="space-y-2">
-              <li><Link href="/privacy" className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">{L.privacy}</Link></li>
-              <li><Link href="/terms"   className="text-xs text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">{L.terms}</Link></li>
+              <li><Link href="/privacy" className="text-xs text-white/40 hover:text-white/80 transition-colors">{L.privacy}</Link></li>
+              <li><Link href="/terms"   className="text-xs text-white/40 hover:text-white/80 transition-colors">{L.terms}</Link></li>
             </ul>
           </div>
 
         </div>
 
-        <div className="border-t border-[#d2d2d7] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <Link href={HOME[locale]}>
-            <Image src="/logo-ai.png" alt="Eduentry.ai" width={48} height={48} className="object-contain" />
+        <div className="border-t border-white/[0.06] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <Link href={HOME[locale]} aria-label="Eduentry.ai — Home">
+            <Image src="/logo-ai-long.png" alt="Eduentry.ai" width={110} height={39} className="object-contain opacity-60 hover:opacity-100 transition-opacity" />
           </Link>
-          <p className="text-xs text-[#6e6e73]">{L.copyright}</p>
+          <p className="text-xs text-white/25 font-mono">{L.copyright}</p>
         </div>
       </div>
     </footer>
