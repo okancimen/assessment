@@ -72,7 +72,7 @@ export async function proxy(request: NextRequest) {
       return NextResponse.redirect(`https://eduentry.com${pathname}${request.nextUrl.search}`, 301)
     }
 
-    // Marketing, track pages, sitemap, robots → /ai/*
+    // Marketing, track pages, auth, sitemap, robots → /ai/*
     if (
       pathname === '/tech' ||
       pathname === '/business' ||
@@ -86,6 +86,7 @@ export async function proxy(request: NextRequest) {
       pathname === '/ar' || pathname.startsWith('/ar/') ||
       pathname === '/ru' || pathname.startsWith('/ru/') ||
       pathname === '/zh' || pathname.startsWith('/zh/') ||
+      pathname === '/auth' || pathname.startsWith('/auth/') ||
       pathname === '/sitemap.xml' ||
       pathname === '/robots.txt'
     ) {
