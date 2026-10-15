@@ -95,7 +95,7 @@ export default function PublicNavAI() {
           <Image src="/logo-ai-short.png" alt="Eduentry.ai" width={32} height={27} className="sm:hidden object-contain" priority />
         </Link>
 
-        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8 text-xs text-white/70">
+        <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-5 text-xs text-white/70">
           <Link href={HOW[locale]} className="hover:text-white transition-colors">
             {nav.howItWorks}
           </Link>
