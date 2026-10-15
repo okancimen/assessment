@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
@@ -29,9 +29,13 @@ export default function WorkExperienceApplyPage() {
   const [yearGroup, setYearGroup]     = useState('')
   const [track, setTrack]             = useState('')
   const [statement, setStatement]     = useState('')
+  const [cvFile, setCvFile]           = useState<File | null>(null)
+
+  const fileInputRef = useRef<HTMLInputElement>(null)
 
   const [error, setError]       = useState('')
   const [loading, setLoading]   = useState(false)
+  const [uploadStatus, setUploadStatus] = useState('')
 
   async function handleAuth(e: React.FormEvent) {
     e.preventDefault()
@@ -69,7 +73,29 @@ export default function WorkExperienceApplyPage() {
     if (!track)              { setError('Please select a career track'); return }
 
     setLoading(true)
+    let cvUrl: string | null = null
+
     try {
+      // Upload CV if provided
+      if (cvFile) {
+        setUploadStatus('Uploading CV…')
+        const supabase = createClient()
+        const { data: { user } } = await supabase.auth.getUser()
+        const path = `${user?.id ?? 'anon'}/${Date.now()}.pdf`
+        const { error: uploadError } = await supabase.storage
+          .from('fellowship-cvs')
+          .upload(path, cvFile, { contentType: 'application/pdf', upsert: true })
+        if (uploadError) {
+          setError(`CV upload failed: ${uploadError.message}`)
+          setLoading(false)
+          setUploadStatus('')
+          return
+        }
+        const { data: { publicUrl } } = supabase.storage.from('fellowship-cvs').getPublicUrl(path)
+        cvUrl = publicUrl
+        setUploadStatus('')
+      }
+
       const res = await fetch('/api/work-experience/apply', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -79,6 +105,7 @@ export default function WorkExperienceApplyPage() {
           year_group: yearGroup,
           track_preference: track,
           personal_statement: statement,
+          cv_url: cvUrl,
         }),
       })
       const data = await res.json()
@@ -87,7 +114,26 @@ export default function WorkExperienceApplyPage() {
     } catch {
       setError('Something went wrong. Please try again.')
       setLoading(false)
+      setUploadStatus('')
     }
+  }
+
+  function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0] ?? null
+    if (file && file.type !== 'application/pdf') {
+      setError('Only PDF files are accepted.')
+      setCvFile(null)
+      e.target.value = ''
+      return
+    }
+    if (file && file.size > 5 * 1024 * 1024) {
+      setError('CV must be under 5 MB.')
+      setCvFile(null)
+      e.target.value = ''
+      return
+    }
+    setError('')
+    setCvFile(file)
   }
 
   return (
@@ -96,7 +142,7 @@ export default function WorkExperienceApplyPage() {
       <div className="pointer-events-none fixed left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full opacity-[0.08] blur-[120px]" style={{ background: '#A78BFA' }} />
 
       <div className="relative w-full max-w-md">
-        {/* Logo / back */}
+        {/* Back */}
         <div className="mb-8">
           <Link href="/work-experience" className="text-sm text-white/40 hover:text-white/70 transition-colors">
             ← Back to Fellowship
@@ -269,6 +315,48 @@ export default function WorkExperienceApplyPage() {
                 </div>
               </div>
 
+              {/* CV upload */}
+              <div>
+                <label className="block text-xs text-white/50 mb-1.5">
+                  CV / Résumé <span className="text-white/25">(optional · PDF · max 5 MB)</span>
+                </label>
+                <div
+                  onClick={() => fileInputRef.current?.click()}
+                  className={`relative flex items-center gap-3 px-4 py-3.5 rounded-lg border cursor-pointer transition-colors ${
+                    cvFile
+                      ? 'border-[#A78BFA]/40 bg-[#A78BFA]/[0.06]'
+                      : 'border-white/[0.08] bg-white/[0.02] hover:border-white/20'
+                  }`}
+                >
+                  <span className="text-lg" style={{ color: cvFile ? '#A78BFA' : 'rgba(255,255,255,0.3)' }}>
+                    {cvFile ? '✓' : '↑'}
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    {cvFile ? (
+                      <p className="text-sm text-white truncate">{cvFile.name}</p>
+                    ) : (
+                      <p className="text-sm text-white/30">Click to attach your CV (PDF)</p>
+                    )}
+                  </div>
+                  {cvFile && (
+                    <button
+                      type="button"
+                      onClick={e => { e.stopPropagation(); setCvFile(null); if (fileInputRef.current) fileInputRef.current.value = '' }}
+                      className="text-white/30 hover:text-white/60 text-xs px-1 transition-colors"
+                    >
+                      ✕
+                    </button>
+                  )}
+                </div>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="application/pdf"
+                  onChange={handleFileChange}
+                  className="hidden"
+                />
+              </div>
+
               {/* Optional statement */}
               <div>
                 <label className="block text-xs text-white/50 mb-1.5">
@@ -284,6 +372,7 @@ export default function WorkExperienceApplyPage() {
               </div>
 
               {error && <p className="text-red-400 text-sm">{error}</p>}
+              {uploadStatus && <p className="text-[#A78BFA] text-sm">{uploadStatus}</p>}
 
               <button
                 type="submit"
@@ -291,7 +380,7 @@ export default function WorkExperienceApplyPage() {
                 className="w-full py-3 rounded-xl font-semibold text-black text-sm transition-all hover:opacity-90 disabled:opacity-60"
                 style={{ background: 'linear-gradient(135deg, #A78BFA 0%, #7C3AED 100%)', boxShadow: '0 0 24px rgba(167,139,250,0.25)' }}
               >
-                {loading ? 'Starting assessment…' : 'Start 20-Minute Assessment →'}
+                {loading ? (uploadStatus || 'Starting assessment…') : 'Start 20-Minute Assessment →'}
               </button>
 
               <p className="text-xs text-center text-white/25">

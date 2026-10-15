@@ -15,6 +15,7 @@ export async function POST(request: NextRequest) {
       year_group,
       track_preference,
       personal_statement,
+      cv_url,
     } = await request.json()
 
     if (!full_name || !university_name || !year_group || !track_preference) {
@@ -92,6 +93,7 @@ export async function POST(request: NextRequest) {
         year_group,
         track_preference: primaryTrack,
         personal_statement: personal_statement || null,
+        cv_url: cv_url || null,
       })
 
     if (profileError) {
