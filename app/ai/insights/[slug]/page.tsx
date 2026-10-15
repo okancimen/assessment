@@ -3,6 +3,13 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { INSIGHT_POSTS, INSIGHT_SLUGS } from '../content'
 
+function renderInline(text: string): string {
+  return text
+    .replace(/\*\*(.+?)\*\*/g, '<strong class="text-white/80">$1</strong>')
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-white/60 underline decoration-white/20 hover:text-white hover:decoration-white/50 transition-colors">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-white/60 underline decoration-white/20 hover:text-white hover:decoration-white/50 transition-colors">$1</a>')
+}
+
 interface Props { params: Promise<{ slug: string }> }
 
 export async function generateStaticParams() {
@@ -95,11 +102,7 @@ export default async function InsightPostPage({ params }: Props) {
                       {items.map((item, k) => (
                         <li key={k} className="flex gap-2">
                           <span style={{ color }} className="mt-0.5 shrink-0">·</span>
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: item.replace(/^-\s*/, '').replace(/\*\*(.+?)\*\*/g, '<strong class="text-white/80">$1</strong>'),
-                            }}
-                          />
+                          <span dangerouslySetInnerHTML={{ __html: renderInline(item.replace(/^-\s*/, '')) }} />
                         </li>
                       ))}
                     </ul>
@@ -112,11 +115,7 @@ export default async function InsightPostPage({ params }: Props) {
                       {items.map((item, k) => (
                         <li key={k} className="flex gap-2">
                           <span style={{ color }} className="shrink-0 font-mono text-xs mt-0.5">{k + 1}.</span>
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: item.replace(/^\d+\.\s*/, '').replace(/\*\*(.+?)\*\*/g, '<strong class="text-white/80">$1</strong>'),
-                            }}
-                          />
+                          <span dangerouslySetInnerHTML={{ __html: renderInline(item.replace(/^\d+\.\s*/, '')) }} />
                         </li>
                       ))}
                     </ol>
@@ -125,9 +124,7 @@ export default async function InsightPostPage({ params }: Props) {
                 return (
                   <p
                     key={j}
-                    dangerouslySetInnerHTML={{
-                      __html: para.replace(/\*\*(.+?)\*\*/g, '<strong class="text-white/80">$1</strong>'),
-                    }}
+                    dangerouslySetInnerHTML={{ __html: renderInline(para) }}
                   />
                 )
               })}
