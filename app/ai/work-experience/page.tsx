@@ -17,7 +17,15 @@ export const metadata: Metadata = {
     description: 'AI-powered career fellowship for university students. 20-min assessment → top 10% selected for 3-month hybrid fellowship with Singapore tech leads.',
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
-    images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630 }],
+    images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai University Fellowship' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@eduentrycom',
+    creator: '@eduentrycom',
+    title: 'University Work Experience & Global Fellowship — Eduentry.ai',
+    description: 'AI-powered career fellowship for university students. 20-min assessment → top 10% selected for 3-month fellowship with Singapore tech leads.',
+    images: [`${BASE_URL}/opengraph-image`],
   },
 }
 
@@ -87,9 +95,33 @@ const FAQS = [
   },
 ]
 
+const SERVICE_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Magenta Networks University Fellowship',
+  description: 'A 3-month hybrid fellowship for university students. AI assessment → top 10% selected for live Singapore tech deliverables, weekly mentorship, and a verified exit certificate.',
+  url: `${PAGE_URL}`,
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.ai' },
+  serviceType: 'Work Experience Fellowship',
+  areaServed: 'Worldwide',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
+}
+
+const FAQ_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+}
+
 export default function WorkExperiencePage() {
   return (
     <main className="flex-1 bg-black text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_JSON_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_JSON_LD) }} />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden min-h-screen flex flex-col justify-center px-6 pt-24 pb-20">

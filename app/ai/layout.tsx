@@ -44,14 +44,30 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@eduentrycom',
+    creator: '@eduentrycom',
     title: 'Eduentry.ai — Internship Readiness Assessment',
     description: 'Free AI-powered internship readiness assessment for high school students aged 14+.',
   },
 }
 
+const ORG_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Eduentry',
+  url: 'https://eduentry.ai',
+  logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo-ai-long.png` },
+  sameAs: [
+    'https://twitter.com/eduentrycom',
+    'https://www.instagram.com/eduentrycom',
+    'https://www.linkedin.com/company/eduentry',
+  ],
+}
+
 export default function AILayout({ children }: { children: React.ReactNode }) {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSON_LD) }} />
       {/* eslint-disable-next-line @next/next/no-page-custom-font */}
       <link rel="preconnect" href="https://www.googletagmanager.com" />
       <link rel="dns-prefetch" href="https://www.googletagmanager.com" />

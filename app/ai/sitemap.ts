@@ -4,17 +4,32 @@ import { INSIGHT_SLUGS_TR } from './tr/insights/content'
 
 const BASE = 'https://eduentry.ai'
 
+const POST_DATES: Record<string, string> = {
+  'high-school-internship-benefits-university':    '2026-10-01',
+  'how-to-get-tech-internship-before-university':  '2026-10-01',
+  'business-work-experience-high-school-uk':       '2026-10-02',
+  'digital-marketing-work-experience-student-reviews': '2026-10-02',
+  'how-to-get-internship-no-experience-high-school': '2026-10-03',
+  'how-to-differentiate-yourself-at-15':           '2026-10-03',
+  'oecd-teenage-work-experience-career-outcomes':  '2026-10-05',
+  'pisa-2025-work-experience-student-readiness':   '2026-10-05',
+  'how-to-find-internship-as-student':             '2026-10-07',
+  'oecd-teenage-part-time-work-benefits':          '2026-10-07',
+  'uluslararasi-staj-programi-2026':               '2026-10-15',
+  'ulusal-staj-programi-rehberi':                  '2026-10-15',
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const insightPages: MetadataRoute.Sitemap = INSIGHT_SLUGS.map(slug => ({
     url: `${BASE}/insights/${slug}`,
-    lastModified: '2026-10-15',
+    lastModified: POST_DATES[slug] ?? '2026-10-15',
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
 
   const insightPagesTR: MetadataRoute.Sitemap = INSIGHT_SLUGS_TR.map(slug => ({
     url: `${BASE}/tr/insights/${slug}`,
-    lastModified: '2026-10-15',
+    lastModified: POST_DATES[slug] ?? '2026-10-15',
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))

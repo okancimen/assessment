@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     siteName: 'Eduentry.ai',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai Üniversite Burs Programı' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@eduentrycom',
+    creator: '@eduentrycom',
+    title: 'Üniversite Çalışma Deneyimi & Global Burs Programı — Eduentry.ai',
+    description: 'AI destekli kariyer bursu. 20 dk test → ilk %10 Singapur teknoloji ekipleriyle 3 aylık hibrit burs programına seçilir.',
+    images: [`${BASE_URL}/opengraph-image`],
+  },
 }
 
 const TRACKS = [
@@ -87,9 +95,34 @@ const FAQS = [
   },
 ]
 
+const SERVICE_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Magenta Networks Üniversite Burs Programı',
+  description: 'Üniversite öğrencileri için 3 aylık hibrit burs. Yapay zeka testi → ilk %10, Singapur teknoloji projeleri, haftalık mentorluk ve doğrulanmış burs sertifikası.',
+  url: `${PAGE_URL}`,
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.ai' },
+  serviceType: 'Çalışma Deneyimi Burs Programı',
+  areaServed: 'Worldwide',
+  inLanguage: 'tr',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY', availability: 'https://schema.org/InStock' },
+}
+
+const FAQ_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+}
+
 export default function WorkExperienceTRPage() {
   return (
     <main className="flex-1 bg-black text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_JSON_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_JSON_LD) }} />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden min-h-screen flex flex-col justify-center px-6 pt-24 pb-20">

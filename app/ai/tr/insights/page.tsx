@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     siteName: 'Eduentry.ai',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai Görüşler' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@eduentrycom',
+    creator: '@eduentrycom',
+    title: 'İçgörüler — Staj & Burs Araştırması | Eduentry.ai',
+    description: 'Lise öğrencileri ve üniversite burs adayları için kanıta dayalı staj hazırlık araştırmaları ve pratik rehberler.',
+    images: [`${BASE_URL}/opengraph-image`],
+  },
 }
 
 const HIGH_SCHOOL_POSTS = [

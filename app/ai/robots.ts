@@ -14,7 +14,7 @@ const AI_BOTS = [
   'YouBot',
 ]
 
-const PRIVATE = ['/apply', '/register', '/dashboard', '/admin/']
+const PRIVATE = ['/register', '/dashboard', '/admin/']
 
 export default function robots(): MetadataRoute.Robots {
   return {

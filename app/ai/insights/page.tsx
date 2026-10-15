@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     siteName: 'Eduentry.ai',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai Insights' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@eduentrycom',
+    creator: '@eduentrycom',
+    title: 'Insights — Internship & Fellowship Research | Eduentry.ai',
+    description: 'Evidence-based research and practical guides on internship readiness for high school students and university fellowship applicants.',
+    images: [`${BASE_URL}/opengraph-image`],
+  },
 }
 
 const HIGH_SCHOOL_POSTS = [

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { INSIGHT_POSTS, INSIGHT_SLUGS } from '../content'
+import { INSIGHT_SLUGS_TR } from '../../tr/insights/content'
 
 function renderInline(text: string): string {
   return text
@@ -21,10 +22,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = INSIGHT_POSTS.find(p => p.slug === slug)
   if (!post) return {}
   const url = `https://eduentry.ai/insights/${slug}`
+  const hasTR = INSIGHT_SLUGS_TR.includes(slug)
   return {
     title: { absolute: `${post.title} | Eduentry.ai` },
     description: post.description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      ...(hasTR && {
+        languages: {
+          en: url,
+          tr: `https://eduentry.ai/tr/insights/${slug}`,
+          'x-default': url,
+        },
+      }),
+    },
     robots: { index: true, follow: true },
     openGraph: {
       type: 'article',
@@ -33,6 +44,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url,
       siteName: 'Eduentry.ai',
       images: [{ url: 'https://eduentry.ai/opengraph-image', width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@eduentrycom',
+      creator: '@eduentrycom',
+      title: post.title,
+      description: post.description,
+      images: ['https://eduentry.ai/opengraph-image'],
     },
   }
 }
