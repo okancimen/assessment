@@ -153,9 +153,9 @@ export default function WorkExperiencePage() {
           {/* Trust bar */}
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
             <span className="text-xs text-white/30 uppercase tracking-widest font-mono">Trusted by</span>
-            <a href="https://mgnnetworks.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <a href="https://mgnnetworks.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-100 opacity-80 transition-opacity cursor-pointer group">
               <Image src="/logos/magenta-networks.png" alt="Magenta Networks" width={28} height={28} className="rounded-sm opacity-90" style={{ filter: 'drop-shadow(0 0 4px rgba(255,255,255,0.1))' }} />
-              <span className="text-sm text-white/60 font-medium">Magenta Networks</span>
+              <span className="text-sm text-white/60 font-medium group-hover:text-white/90 group-hover:underline transition-colors">Magenta Networks</span>
             </a>
             <div className="flex items-center gap-1.5">
               <span className="text-[#A78BFA] text-sm">✦</span>
@@ -350,16 +350,16 @@ export default function WorkExperiencePage() {
           <div className="flex items-center gap-3">
             <span className="font-bold text-white tracking-tight">EDUENTRY.AI</span>
             <span className="text-white/20">×</span>
-            <a href="https://mgnnetworks.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <Image src="/logos/magenta-networks.png" alt="Magenta Networks" width={22} height={22} className="rounded-sm opacity-70" />
-              <span className="text-sm text-white/40">Magenta Networks</span>
+            <a href="https://mgnnetworks.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 opacity-70 hover:opacity-100 transition-opacity cursor-pointer group">
+              <Image src="/logos/magenta-networks.png" alt="Magenta Networks" width={22} height={22} className="rounded-sm" />
+              <span className="text-sm text-white/40 group-hover:text-white/70 group-hover:underline transition-colors">Magenta Networks</span>
             </a>
           </div>
           <div className="flex items-center gap-6 text-sm text-white/40">
             <Link href="/about" className="hover:text-white/70 transition-colors">About</Link>
             <Link href="/privacy" className="hover:text-white/70 transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-white/70 transition-colors">Terms</Link>
-            <a href="https://mgnnetworks.com" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors">Magenta Networks</a>
+            <a href="https://mgnnetworks.com" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 hover:underline transition-colors">Magenta Networks</a>
           </div>
         </div>
       </footer>
