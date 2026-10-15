@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     canonical: `${BASE_URL}/zh/blog`,
     languages: {
       zh: `${BASE_URL}/zh/blog`,
+      'en-GB': `${BASE_URL}/blog`,
       tr: `${BASE_URL}/tr/blog`,
       es: `${BASE_URL}/es/blog`,
-      'en-GB': `${BASE_URL}/blog`,
       fr: `${BASE_URL}/fr/blog`,
+      ar: `${BASE_URL}/ar/blog`,
       ru: `${BASE_URL}/ru/blog`,
       'x-default': `${BASE_URL}/blog`,
     },
@@ -37,6 +38,7 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/zh/blog`,
     siteName: 'Eduentry',
     locale: 'zh_CN',
+    alternateLocale: ['en_GB', 'tr_TR', 'es_ES', 'fr_FR', 'ar_AE', 'ru_RU'],
     images: [{ url: `${BASE_URL}/zh/blog/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry博客' }],
   },
   twitter: {

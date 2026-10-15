@@ -63,6 +63,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@eduentrycom",
+    creator: "@eduentrycom",
     title: "Eduentry — Academic, Personality & Internship Assessment Platform",
     description:
       "Free adaptive assessments for students aged 6–20. Academic benchmarking, VIA personality assessment, and internship readiness for students 14+.",

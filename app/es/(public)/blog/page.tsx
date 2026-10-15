@@ -24,6 +24,9 @@ export const metadata: Metadata = {
       'en-GB': `${BASE_URL}/blog`,
       tr: `${BASE_URL}/tr/blog`,
       fr: `${BASE_URL}/fr/blog`,
+      ar: `${BASE_URL}/ar/blog`,
+      ru: `${BASE_URL}/ru/blog`,
+      zh: `${BASE_URL}/zh/blog`,
       'x-default': `${BASE_URL}/blog`,
     },
   },
@@ -35,7 +38,7 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/es/blog`,
     siteName: 'Eduentry',
     locale: 'es_ES',
-    alternateLocale: ['en_GB', 'tr_TR'],
+    alternateLocale: ['en_GB', 'tr_TR', 'fr_FR', 'ar_AE', 'ru_RU', 'zh_CN'],
     images: [{ url: `${BASE_URL}/es/blog/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry Blog — Guías de Prácticas y Carrera' }],
   },
   twitter: {

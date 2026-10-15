@@ -25,6 +25,8 @@ export const metadata: Metadata = {
       tr: `${BASE_URL}/tr/blog`,
       es: `${BASE_URL}/es/blog`,
       fr: `${BASE_URL}/fr/blog`,
+      ru: `${BASE_URL}/ru/blog`,
+      zh: `${BASE_URL}/zh/blog`,
       'x-default': `${BASE_URL}/blog`,
     },
   },
@@ -36,7 +38,7 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/ar/blog`,
     siteName: 'Eduentry',
     locale: 'ar_AE',
-    alternateLocale: ['en_GB', 'tr_TR', 'es_ES', 'fr_FR'],
+    alternateLocale: ['en_GB', 'tr_TR', 'es_ES', 'fr_FR', 'ru_RU', 'zh_CN'],
     images: [{ url: `${BASE_URL}/ar/blog/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry Blog — أدلة التدريب والمهنة' }],
   },
   twitter: {
