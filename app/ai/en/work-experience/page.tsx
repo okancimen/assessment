@@ -3,18 +3,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const BASE_URL = 'https://eduentry.ai'
-const PAGE_URL = `${BASE_URL}/work-experience`
+const PAGE_URL = `${BASE_URL}/en/work-experience`
 
 export const metadata: Metadata = {
   title: { absolute: 'University Work Experience & Global Fellowship — Eduentry.ai' },
   description:
-    'Take the 20-minute AI Internship Readiness Assessment. Top 10% of university students get selected for a 3-month hybrid fellowship working on live Singapore & UK tech deliverables via Magenta Networks.',
+    'Take the 20-minute AI Internship Readiness Assessment. Top 10% of university students get selected for a 3-month hybrid fellowship working on live Singapore tech deliverables via Magenta Networks.',
   alternates: { canonical: PAGE_URL },
   robots: { index: true, follow: true },
   openGraph: {
     type: 'website',
     title: 'University Work Experience & Global Fellowship — Eduentry.ai',
-    description: 'AI-powered career fellowship for university students. 20-min assessment → top 10% selected for 3-month hybrid fellowship with Singapore & UK tech leads.',
+    description: 'AI-powered career fellowship for university students. 20-min assessment → top 10% selected for 3-month hybrid fellowship with Singapore tech leads.',
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630 }],
@@ -63,7 +63,7 @@ const FAQS = [
   },
   {
     q: 'How much time does the fellowship require?',
-    a: '10–15 hours per week across the 3-month programme. 80% is remote execution on live client deliverables (Jira, Slack, GitHub). 20% is weekly mentorship syncs and the Capstone Demo Day with Singapore and UK tech leads.',
+    a: '10–15 hours per week across the 3-month programme. 80% is remote execution on live client deliverables (Jira, Slack, GitHub). 20% is weekly mentorship syncs and the Capstone Demo Day with Singapore tech leads.',
   },
   {
     q: 'Is there a cost to apply or participate?',
@@ -122,14 +122,14 @@ export default function WorkExperiencePage() {
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
             Take the 20-minute AI Internship Readiness Assessment. Top 10% get selected for a
-            <strong className="text-white"> 3-Month Hybrid Fellowship</strong> working on live Singapore & UK
+            <strong className="text-white"> 3-Month Hybrid Fellowship</strong> working on live Singapore
             tech deliverables via Magenta Networks.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
             <Link
-              href="/work-experience/apply"
+              href="/en/work-experience/apply"
               className="px-8 py-4 rounded-xl font-semibold text-black text-base transition-all hover:opacity-90 active:scale-[0.98]"
               style={{
                 background: 'linear-gradient(135deg, #A78BFA 0%, #7C3AED 100%)',
@@ -225,10 +225,10 @@ export default function WorkExperiencePage() {
               <div className="text-5xl font-black text-[#818CF8] mb-4">20<span className="text-3xl">%</span></div>
               <h3 className="text-xl font-bold text-white mb-3">Global Mentorship & Syncs</h3>
               <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                Weekly code and strategy reviews with Singapore and UK tech leads. Culminates in a Capstone Demo Day where fellows present deliverables to Magenta Networks stakeholders.
+                Weekly code and strategy reviews with Singapore tech leads. Culminates in a Capstone Demo Day where fellows present deliverables to Magenta Networks stakeholders.
               </p>
               <ul className="space-y-2">
-                {['Weekly mentor reviews', 'Singapore & UK tech leads', 'Capstone Demo Day', 'Verified fellowship certificate'].map(item => (
+                {['Weekly mentor reviews', 'Singapore tech leads', 'Capstone Demo Day', 'Verified fellowship certificate'].map(item => (
                   <li key={item} className="flex items-center gap-2 text-sm text-white/70">
                     <span className="w-1 h-1 rounded-full bg-[#818CF8]" />{item}
                   </li>
@@ -297,7 +297,7 @@ export default function WorkExperiencePage() {
 
           <div className="mt-14 text-center">
             <Link
-              href="/work-experience/apply"
+              href="/en/work-experience/apply"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-black text-base transition-all hover:opacity-90"
               style={{ background: 'linear-gradient(135deg, #A78BFA 0%, #7C3AED 100%)', boxShadow: '0 0 32px rgba(167,139,250,0.3)' }}
             >

@@ -98,7 +98,7 @@ export default function WorkExperienceApplyPage() {
       <div className="relative w-full max-w-md">
         {/* Logo / back */}
         <div className="mb-8">
-          <Link href="/work-experience" className="text-sm text-white/40 hover:text-white/70 transition-colors">
+          <Link href="/en/work-experience" className="text-sm text-white/40 hover:text-white/70 transition-colors">
             ← Back to Fellowship
           </Link>
         </div>

@@ -79,7 +79,6 @@ export async function proxy(request: NextRequest) {
       pathname === '/data-analytics' ||
       pathname === '/digital-marketing' ||
       pathname === '/about' ||
-      pathname === '/work-experience' || pathname.startsWith('/work-experience/') ||
       pathname === '/en' || pathname.startsWith('/en/') ||
       pathname === '/fr' || pathname.startsWith('/fr/') ||
       pathname === '/es' || pathname.startsWith('/es/') ||
