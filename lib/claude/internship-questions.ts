@@ -15,6 +15,12 @@ Your task is to generate Verbal Reasoning questions for a 16-year-old internship
 Focus areas: word analogies (A:B::C:?), odd-one-out, word sequences, logical deduction, classification.
 Every question must have exactly one defensible correct answer. Distractors must be clearly wrong.`
 
+const APTITUDE_VERBAL_UNIVERSITY_PROMPT = `You are an expert question writer for graduate-level aptitude assessments.
+Your task is to generate Verbal Reasoning questions for a first-year university student applying for a competitive fellowship.
+Focus areas: critical reading comprehension (short passages with inference questions), complex analogies, logical deduction chains,
+argument analysis (identifying assumptions, conclusions, weaknesses), vocabulary in academic context.
+Difficulty should match A-level / first-year undergraduate standard. Every question must have one defensible correct answer.`
+
 const APTITUDE_MATH_PROMPT = `You are an expert question writer for standardised aptitude assessments.
 Your task is to generate Numerical Reasoning questions for a 16-year-old internship applicant.
 Focus areas: percentages, ratios, basic algebra, number sequences, data interpretation from simple tables.
@@ -33,16 +39,51 @@ QUESTION RULES:
 - Ask exactly ONE question per question_text — never two sub-questions combined into one.
 - Do not use markdown tables in question_text. Present data inline (e.g. "A costs £12, B costs £18, C costs £9") or in a short numbered list.`
 
+const APTITUDE_MATH_UNIVERSITY_PROMPT = `You are an expert question writer for graduate-level aptitude assessments.
+Your task is to generate Numerical Reasoning questions for a university student applying for a competitive fellowship.
+Focus areas: multi-step data interpretation (tables, charts, growth rates), compound percentages, index numbers,
+probability and expected value, basic statistics (standard deviation concept, correlation vs causation),
+financial ratios (ROI, margin, break-even), interpreting regression output at a conceptual level.
+Difficulty should match A-level / first-year undergraduate standard. Every question must have one numerically correct answer.
+
+OPERATOR SYMBOLS — use these exact Unicode characters, never HTML entities or LaTeX:
+- Multiplication: × (not * or \\times or &times;)
+- Division: ÷ (not / or \\div or &divide;)
+- Less than or equal: ≤ (not <= or \\leq)
+- Greater than or equal: ≥ (not >= or \\geq)
+- Not equal: ≠ (not != or \\neq)
+- Pi: π (not \\pi)
+- Square root: √ (not \\sqrt)
+
+QUESTION RULES:
+- Ask exactly ONE question per question_text — never two sub-questions combined into one.
+- Do not use markdown tables in question_text. Present data inline or in a short numbered list.`
+
 const SOFT_SKILLS_PROMPT = `You are an expert HR assessment designer writing Situational Judgement Test (SJT) questions.
 Each question describes a realistic workplace scenario for a high school internship applicant.
 Scenarios include: missing a deadline, a team conflict, receiving unclear instructions, handling a client complaint, taking initiative.
 Exactly one option must be what a professional HR manager would unanimously select as best practice.
 The other three options must be clearly suboptimal — explain in the explanation why each is wrong.`
 
+const SOFT_SKILLS_UNIVERSITY_PROMPT = `You are an expert HR assessment designer writing Situational Judgement Test (SJT) questions.
+Each question describes a realistic professional scenario for a university student entering a competitive fellowship programme.
+Scenarios include: presenting ambiguous analysis to a senior stakeholder, managing competing project deadlines,
+handling ethical dilemmas in data use, navigating cross-functional team disagreements, communicating failure upward,
+deciding when to escalate vs. solve independently, balancing speed with rigour.
+Exactly one option must be what a seasoned professional mentor would unanimously select as best practice.
+The other three options must be clearly suboptimal — explain in the explanation why each is wrong.`
+
 const INTEREST_PROFILE_PROMPT = `You are an expert careers assessor writing interest-mapping questions.
 Each question presents four work-related activities or preferences — one for each internship track.
 The four options must map to: Technology (tech), Business (business), Data Analytics (data_analytics), Digital Marketing (digital_marketing).
 Questions should be engaging preference choices a 16-year-old can relate to, with no obviously "right" answer.
+The options must always appear in THIS EXACT ORDER: A=tech, B=business, C=data_analytics, D=digital_marketing.
+Do NOT shuffle the options. Set correct_answer to whichever option requires the most analytical or systematic thinking.`
+
+const INTEREST_PROFILE_UNIVERSITY_PROMPT = `You are an expert careers assessor writing interest-mapping questions for university students.
+Each question presents four work-related activities or preferences — one for each fellowship track.
+The four options must map to: AI & Software Engineering (tech), Business Development (business), Data Analytics (data_analytics), Digital Growth (digital_marketing).
+Questions should reflect university-level professional preferences — project types, tools, problem-solving styles — with no obviously "right" answer.
 The options must always appear in THIS EXACT ORDER: A=tech, B=business, C=data_analytics, D=digital_marketing.
 Do NOT shuffle the options. Set correct_answer to whichever option requires the most analytical or systematic thinking.`
 
@@ -76,6 +117,41 @@ social media metrics (reach, engagement rate, impressions, follower growth), con
 identifying the right platform for a marketing objective. Every question must have one unambiguous correct answer.`,
 }
 
+const DOMAIN_PROMPTS_UNIVERSITY: Record<InternshipTrack, string> = {
+  tech: `You are an expert question writer for competitive technology fellowship assessments targeting university students.
+Your task is to generate Domain Knowledge questions for an AI & Software Engineering fellowship applicant.
+Focus areas rotate among: object-oriented and functional programming concepts, time/space complexity (Big-O intuition),
+system design trade-offs (monolith vs microservices, SQL vs NoSQL at a conceptual level), REST API design principles,
+machine learning fundamentals (supervised vs unsupervised, overfitting, evaluation metrics), cloud computing basics,
+reading and reasoning about code snippets (Python/JavaScript). Difficulty: first-year undergrad to advanced level.
+Every question must have one unambiguous correct answer.`,
+
+  business: `You are an expert question writer for competitive business fellowship assessments targeting university students.
+Your task is to generate Domain Knowledge questions for a Business Development & Tech Research fellowship applicant.
+Focus areas rotate among: Porter's Five Forces and competitive strategy frameworks, financial statement interpretation
+(income statement, balance sheet ratios), startup metrics (CAC, LTV, churn, runway), market sizing (Fermi estimation),
+M&A concepts, venture capital basics, reading a case study excerpt and identifying the central strategic problem,
+stakeholder analysis. Difficulty: first-year undergrad to advanced level.
+Every question must have one unambiguous correct answer.`,
+
+  data_analytics: `You are an expert question writer for competitive data analytics fellowship assessments targeting university students.
+Your task is to generate Domain Knowledge questions for a Data Analytics & Engineering fellowship applicant.
+Focus areas rotate among: SQL query reasoning (SELECT, JOIN, GROUP BY, subqueries — conceptual level),
+statistical inference (hypothesis testing, p-value interpretation, confidence intervals at a conceptual level),
+data pipeline concepts (ETL, data warehouses, streaming vs batch), A/B testing design and analysis,
+regression interpretation (coefficients, R², residuals), common BI tool concepts (dashboards, KPIs),
+data quality and cleaning strategies. Difficulty: first-year undergrad to advanced level.
+Every question must have one unambiguous correct answer.`,
+
+  digital_marketing: `You are an expert question writer for competitive digital marketing fellowship assessments targeting university students.
+Your task is to generate Domain Knowledge questions for a Digital Growth & Marketing fellowship applicant.
+Focus areas rotate among: growth hacking frameworks (AARRR funnel, cohort analysis), advanced analytics
+(multi-touch attribution models, incrementality testing), programmatic advertising mechanics (RTB, DSP, SSP),
+SEO technical concepts (crawl budget, Core Web Vitals, structured data), email deliverability and lifecycle marketing,
+marketing mix modelling concepts, privacy changes (cookieless attribution, GA4 vs UA, first-party data strategy).
+Difficulty: first-year undergrad to advanced level. Every question must have one unambiguous correct answer.`,
+}
+
 export interface InternshipQuestion {
   question_text: string
   options: QuestionOption[]
@@ -87,7 +163,7 @@ export interface InternshipQuestion {
   track_map?: Record<string, InternshipTrack>  // only for interest_profile
 }
 
-async function generateInterestQuestion(usedTexts: string[], usedOptions: string[][] = []): Promise<InternshipQuestion> {
+async function generateInterestQuestion(usedTexts: string[], usedOptions: string[][] = [], isUniversity = false): Promise<InternshipQuestion> {
   const avoidSection = usedTexts.length > 0
     ? `\nDo NOT generate any of these questions (already used):\n${usedTexts.map((t, i) => `${i + 1}. ${t}`).join('\n')}\n`
     : ''
@@ -126,7 +202,7 @@ Respond with ONLY valid JSON, no markdown fences:
     client.messages.create({
       model: 'claude-haiku-4-5-20251001',
       max_tokens: 800,
-      system: INTEREST_PROFILE_PROMPT,
+      system: isUniversity ? INTEREST_PROFILE_UNIVERSITY_PROMPT : INTEREST_PROFILE_PROMPT,
       messages: [{ role: 'user', content: prompt }],
     })
   )
@@ -174,38 +250,48 @@ export async function generateInternshipQuestion(
   track: InternshipTrack,
   difficulty: number,
   usedTexts: string[] = [],
-  usedInterestOptions: string[][] = []
+  usedInterestOptions: string[][] = [],
+  isUniversity = false
 ): Promise<InternshipQuestion> {
   if (subject === 'interest_profile') {
-    return generateInterestQuestion(usedTexts, usedInterestOptions)
+    return generateInterestQuestion(usedTexts, usedInterestOptions, isUniversity)
   }
 
   let systemPrompt: string
   let topicHint: string
 
   if (subject === 'aptitude_verbal') {
-    systemPrompt = APTITUDE_VERBAL_PROMPT
-    topicHint = 'verbal reasoning — analogies, classification, sequences, or logic'
+    systemPrompt = isUniversity ? APTITUDE_VERBAL_UNIVERSITY_PROMPT : APTITUDE_VERBAL_PROMPT
+    topicHint = isUniversity
+      ? 'verbal reasoning — critical reading, complex analogies, argument analysis, or logical deduction'
+      : 'verbal reasoning — analogies, classification, sequences, or logic'
   } else if (subject === 'aptitude_math') {
-    systemPrompt = APTITUDE_MATH_PROMPT
-    topicHint = 'numerical reasoning — percentages, ratios, sequences, or data tables'
+    systemPrompt = isUniversity ? APTITUDE_MATH_UNIVERSITY_PROMPT : APTITUDE_MATH_PROMPT
+    topicHint = isUniversity
+      ? 'numerical reasoning — data interpretation, compound percentages, statistics, or financial ratios'
+      : 'numerical reasoning — percentages, ratios, sequences, or data tables'
   } else if (subject === 'soft_skills') {
-    systemPrompt = SOFT_SKILLS_PROMPT
-    topicHint = 'workplace scenario — deadline, conflict, instructions, initiative, or client handling'
+    systemPrompt = isUniversity ? SOFT_SKILLS_UNIVERSITY_PROMPT : SOFT_SKILLS_PROMPT
+    topicHint = isUniversity
+      ? 'professional scenario — stakeholder communication, ethical dilemma, competing priorities, or escalation judgment'
+      : 'workplace scenario — deadline, conflict, instructions, initiative, or client handling'
   } else {
-    systemPrompt = DOMAIN_PROMPTS[track]
-    topicHint = `domain knowledge for ${track.replace('_', ' ')} internship`
+    systemPrompt = isUniversity ? DOMAIN_PROMPTS_UNIVERSITY[track] : DOMAIN_PROMPTS[track]
+    topicHint = isUniversity
+      ? `advanced domain knowledge for ${track.replace('_', ' ')} fellowship`
+      : `domain knowledge for ${track.replace('_', ' ')} internship`
   }
 
   const avoidSection = usedTexts.length > 0
     ? `\nDo NOT generate any of these questions (already used):\n${usedTexts.map((t, i) => `${i + 1}. ${t}`).join('\n')}\n`
     : ''
 
+  const audience = isUniversity ? 'a first/second-year university student fellowship applicant' : 'a 16-year-old internship applicant'
   const prompt = `Difficulty: ${difficulty}/10
 Topic area: ${topicHint}
 ${avoidSection}
 Generate ONE multiple-choice question with exactly 4 options. The question must be:
-- Clear and concise, appropriate for a 16-year-old internship applicant
+- Clear and concise, appropriate for ${audience}
 - At difficulty level ${difficulty}/10 (1=very easy, 10=very challenging)
 - Unambiguously correct — one right answer, three clearly wrong distractors
 - 4 options with distinct, non-overlapping answer texts (no duplicates)

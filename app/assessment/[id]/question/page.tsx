@@ -23,7 +23,7 @@ export default async function QuestionPage({
   if (!assessment) notFound()
 
   const isGuest = !assessment.child_id && !!assessment.guest_token
-  const isInternship = assessment.assessment_type === 'internship'
+  const isInternship = assessment.assessment_type === 'internship' || assessment.assessment_type === 'internship_university'
 
   if (isGuest) {
     // No server-side token check — guest auth is validated per-request in API routes

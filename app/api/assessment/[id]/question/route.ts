@@ -36,7 +36,7 @@ export async function GET(
     if (!assessment) return NextResponse.json({ error: 'Not found' }, { status: 404 })
 
     const isGuest = !assessment.child_id && !!assessment.guest_token
-    const isInternship = assessment.assessment_type === 'internship'
+    const isInternship = assessment.assessment_type === 'internship' || assessment.assessment_type === 'internship_university'
 
     if (isGuest) {
       if (!guestToken || assessment.guest_token !== guestToken) {
@@ -185,11 +185,21 @@ async function handleAcademicQuestion(id: string, supabase: any, assessment: any
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 async function handleInternshipQuestion(id: string, supabase: any, assessment: any, _child: any, session: any, _userId: string) {
-  const { data: profile } = await supabase
-    .from('internship_profiles').select('track_preferences, admin_assigned_track').eq('assessment_id', id).single()
-  if (!profile) return NextResponse.json({ error: 'Profile not found' }, { status: 404 })
+  const isUniversity = assessment.assessment_type === 'internship_university'
 
-  const track = (profile.admin_assigned_track ?? profile.track_preferences?.[0]) as InternshipTrack
+  let track: InternshipTrack | undefined
+  if (isUniversity) {
+    const { data: uProfile } = await supabase
+      .from('university_profiles').select('track_preference').eq('assessment_id', id).single()
+    if (!uProfile) return NextResponse.json({ error: 'Profile not found' }, { status: 404 })
+    track = uProfile.track_preference as InternshipTrack
+  } else {
+    const { data: profile } = await supabase
+      .from('internship_profiles').select('track_preferences, admin_assigned_track').eq('assessment_id', id).single()
+    if (!profile) return NextResponse.json({ error: 'Profile not found' }, { status: 404 })
+    track = (profile.admin_assigned_track ?? profile.track_preferences?.[0]) as InternshipTrack
+  }
+
   if (!track) return NextResponse.json({ error: 'No track assigned' }, { status: 400 })
 
   const subjects = getInternshipSubjects(track)
@@ -246,7 +256,7 @@ async function handleInternshipQuestion(id: string, supabase: any, assessment: a
         .map((q: any) => (q.questions.options as { text: string }[]).map((o) => o.text))
     : []
 
-  const questionData = await generateInternshipQuestion(currentSubject, track, session.difficulty_level, usedTexts, usedInterestOptions)
+  const questionData = await generateInternshipQuestion(currentSubject, track, session.difficulty_level, usedTexts, usedInterestOptions, isUniversity)
 
   const { data: question, error: qError } = await supabase.from('questions').insert({
     subject: currentSubject, topic: questionData.topic, difficulty: questionData.difficulty,
