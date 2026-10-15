@@ -75,7 +75,7 @@ const LABELS: Record<Locale, {
   },
   tr: {
     tracks: 'Alanlar', learn: 'Keşfet', account: 'Hesap', legal: 'Hukuki',
-    howItWorks: 'Nasıl çalışır', blog: 'Blog', insights: 'İçgörüler', fellowship: 'Fellowship',
+    howItWorks: 'Nasıl çalışır', blog: 'Blog', insights: 'Görüşler', fellowship: 'İş Tecrübesi',
     signIn: 'Giriş yap', applyFree: 'Ücretsiz başvur',
     privacy: 'Gizlilik', terms: 'Kullanım şartları', copyright: '© 2026 Eduentry. Tüm hakları saklıdır.',
   },

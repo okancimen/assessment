@@ -64,7 +64,7 @@ const TRACKS: Record<Locale, { href: string; label: string; desc: string }[]> = 
 
 const NAV: Record<Locale, { howItWorks: string; tracks: string; signIn: string; applyFree: string; insights: string; fellowship: string }> = {
   en: { howItWorks: 'How it works',        tracks: 'Tracks',       signIn: 'Sign in',         applyFree: 'Apply free',           insights: 'Insights',    fellowship: 'Fellowship' },
-  tr: { howItWorks: 'Nasıl çalışır',       tracks: 'Alanlar',      signIn: 'Giriş yap',       applyFree: 'Ücretsiz başvur',      insights: 'İçgörüler',  fellowship: 'Fellowship' },
+  tr: { howItWorks: 'Nasıl çalışır',       tracks: 'Alanlar',      signIn: 'Giriş yap',       applyFree: 'Ücretsiz başvur',      insights: 'Görüşler',   fellowship: 'İş Tecrübesi' },
   es: { howItWorks: 'Cómo funciona',       tracks: 'Áreas',        signIn: 'Iniciar sesión',   applyFree: 'Solicitar gratis',     insights: 'Insights',    fellowship: 'Fellowship' },
   fr: { howItWorks: 'Comment ça marche',   tracks: 'Filières',     signIn: 'Se connecter',     applyFree: 'Postuler gratuitement',insights: 'Insights',    fellowship: 'Fellowship' },
   ar: { howItWorks: 'كيف يعمل',            tracks: 'المسارات',     signIn: 'تسجيل الدخول',    applyFree: 'التقديم مجاناً',       insights: 'Insights',    fellowship: 'Fellowship' },
