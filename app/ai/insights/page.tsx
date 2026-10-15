@@ -160,8 +160,8 @@ export default function InsightsPage() {
               <h2 className="text-2xl font-bold text-white">University Fellowship</h2>
               <p className="mt-2 text-sm text-gray-400 max-w-lg">Research and strategy for university students applying for the 3-month Magenta Networks fellowship.</p>
             </div>
-            <Link href="/work-experience" className="shrink-0 px-5 py-2.5 rounded-xl text-sm font-semibold border border-[#A78BFA]/30 text-[#A78BFA] hover:bg-[#A78BFA]/10 transition-colors whitespace-nowrap">
-              View Fellowship →
+            <Link href="/work-experience/apply" className="shrink-0 px-5 py-2.5 rounded-xl text-sm font-semibold border border-[#A78BFA]/30 text-[#A78BFA] hover:bg-[#A78BFA]/10 transition-colors whitespace-nowrap">
+              Apply for Fellowship →
             </Link>
           </div>
 
