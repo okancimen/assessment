@@ -199,7 +199,7 @@ export default function TurkishHomePage() {
             <span className="bg-gradient-to-r from-[#818CF8] via-[#6366F1] to-[#A78BFA] bg-clip-text text-transparent">edin.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/50 max-w-xl mx-auto mb-10 leading-relaxed">
-            14 yaş üstü lise öğrencileri için 34 soruluk uyarlanabilir değerlendirme. Dört profesyonel alandaki hazırlık düzeyini keşfet ve kişiselleştirilmiş rapor al.
+            Erken atılan her adım, gelecekte seni birkaç adım öne taşır. Peki, sen profesyonel dünyaya adım atmaya ne kadar hazırsın? Lise ve üniversite öğrencileri için tasarlanan 34 soruluk akıllı staj analizi ile tanış! 4 kritik profesyonel kulvardaki yetkinliklerini ölç, sana özel gelişim raporunu al ve iş dünyasına hazır olduğunu şimdiden göster.
           </p>
           <div className="flex items-center justify-center gap-3 flex-wrap mb-12">
             <Link href="/apply" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-7 py-3.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-[0_0_24px_rgba(99,102,241,0.3)]">
