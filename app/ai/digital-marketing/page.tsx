@@ -439,6 +439,20 @@ export default function DigitalMarketingTrackPage() {
         </div>
       </section>
 
+      {/* University Fellowship backlink */}
+      <section className="py-12 px-6 border-t border-white/[0.04] bg-[#080808]">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <p className="text-xs font-mono tracking-widest text-[#A78BFA] mb-1">UNIVERSITY STUDENTS</p>
+            <p className="text-white font-semibold">Ready for a 3-month fellowship on live Singapore growth deliverables?</p>
+            <p className="text-sm text-white/40 mt-1">Top 10% of scorers get selected for a paid-equivalent, remote-first fellowship via Magenta Networks.</p>
+          </div>
+          <a href="/work-experience" className="shrink-0 px-6 py-3 rounded-xl text-sm font-semibold border border-[#A78BFA]/30 text-[#A78BFA] hover:bg-[#A78BFA]/10 transition-colors whitespace-nowrap">
+            View Fellowship →
+          </a>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-24 px-6 border-t border-white/[0.04]">
         <div className="max-w-4xl mx-auto text-center">
