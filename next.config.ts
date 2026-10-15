@@ -22,12 +22,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     const localeSlugRedirects = [
-      ...BLOG_POSTS_TR.map(p => ({ source: `/blog/${p.slug}`, destination: `/tr/blog/${p.slug}`, permanent: true })),
-      ...BLOG_POSTS_ES.map(p => ({ source: `/blog/${p.slug}`, destination: `/es/blog/${p.slug}`, permanent: true })),
-      ...BLOG_POSTS_FR.map(p => ({ source: `/blog/${p.slug}`, destination: `/fr/blog/${p.slug}`, permanent: true })),
-      ...BLOG_POSTS_AR.map(p => ({ source: `/blog/${p.slug}`, destination: `/ar/blog/${p.slug}`, permanent: true })),
-      ...BLOG_POSTS_RU.map(p => ({ source: `/blog/${p.slug}`, destination: `/ru/blog/${p.slug}`, permanent: true })),
-      ...BLOG_POSTS_ZH.map(p => ({ source: `/blog/${p.slug}`, destination: `/zh/blog/${p.slug}`, permanent: true })),
+      ...BLOG_POSTS_TR.map(p => ({ source: `/blog/${p.slug}`, destination: `https://eduentry.com/tr/blog/${p.slug}`, permanent: true })),
+      ...BLOG_POSTS_ES.map(p => ({ source: `/blog/${p.slug}`, destination: `https://eduentry.com/es/blog/${p.slug}`, permanent: true })),
+      ...BLOG_POSTS_FR.map(p => ({ source: `/blog/${p.slug}`, destination: `https://eduentry.com/fr/blog/${p.slug}`, permanent: true })),
+      ...BLOG_POSTS_AR.map(p => ({ source: `/blog/${p.slug}`, destination: `https://eduentry.com/ar/blog/${p.slug}`, permanent: true })),
+      ...BLOG_POSTS_RU.map(p => ({ source: `/blog/${p.slug}`, destination: `https://eduentry.com/ru/blog/${p.slug}`, permanent: true })),
+      ...BLOG_POSTS_ZH.map(p => ({ source: `/blog/${p.slug}`, destination: `https://eduentry.com/zh/blog/${p.slug}`, permanent: true })),
     ]
     return [
       { source: '/internship/assessment/:id/question', destination: '/assessment/:id/question', permanent: true },
@@ -44,21 +44,22 @@ const nextConfig: NextConfig = {
       { source: '/es/data-analytics',    destination: '/es/analisis-de-datos',  permanent: true },
       { source: '/es/digital-marketing', destination: '/es/marketing-digital',  permanent: true },
       // TR blog post slug redirects (old English slugs → Turkish slugs)
-      { source: '/tr/blog/early-internship-child-development-career',  destination: '/tr/blog/erken-yas-staj-cocuk-gelisimi-kariyer',    permanent: true },
-      { source: '/tr/blog/high-school-internship-benefits-university', destination: '/tr/blog/lise-staji-faydalari-universite',           permanent: true },
-      { source: '/tr/blog/business-work-experience-high-school-uk',    destination: '/tr/blog/is-deneyimi-lise-ingiltere',               permanent: true },
-      { source: '/tr/blog/how-to-get-tech-internship-before-university', destination: '/tr/blog/universiteden-once-teknoloji-staji',     permanent: true },
-      { source: '/tr/blog/how-does-your-child-compare-globally',       destination: '/tr/blog/cocugunuz-dunyada-nerede-duruyor',         permanent: true },
+      // Destinations are absolute so eduentry.ai hits these as single hops (no middleware double-hop)
+      { source: '/tr/blog/early-internship-child-development-career',    destination: 'https://eduentry.com/tr/blog/erken-yas-staj-cocuk-gelisimi-kariyer',    permanent: true },
+      { source: '/tr/blog/high-school-internship-benefits-university',   destination: 'https://eduentry.com/tr/blog/lise-staji-faydalari-universite',           permanent: true },
+      { source: '/tr/blog/business-work-experience-high-school-uk',      destination: 'https://eduentry.com/tr/blog/is-deneyimi-lise-ingiltere',                permanent: true },
+      { source: '/tr/blog/how-to-get-tech-internship-before-university', destination: 'https://eduentry.com/tr/blog/universiteden-once-teknoloji-staji',        permanent: true },
+      { source: '/tr/blog/how-does-your-child-compare-globally',         destination: 'https://eduentry.com/tr/blog/cocugunuz-dunyada-nerede-duruyor',          permanent: true },
       // ES blog post slug redirects (old English slugs → Spanish slugs)
-      { source: '/es/blog/early-internship-child-development-career',  destination: '/es/blog/practicas-tempranas-desarrollo-infantil-carrera', permanent: true },
-      { source: '/es/blog/high-school-internship-benefits-university', destination: '/es/blog/practicas-instituto-beneficios-universidad',       permanent: true },
-      { source: '/es/blog/business-work-experience-high-school-uk',    destination: '/es/blog/experiencia-empresarial-instituto-reino-unido',    permanent: true },
-      { source: '/es/blog/how-to-get-tech-internship-before-university', destination: '/es/blog/practicas-tecnologia-antes-universidad',         permanent: true },
-      { source: '/es/blog/how-does-your-child-compare-globally',       destination: '/es/blog/como-se-compara-tu-hijo-a-nivel-mundial',          permanent: true },
+      { source: '/es/blog/early-internship-child-development-career',    destination: 'https://eduentry.com/es/blog/practicas-tempranas-desarrollo-infantil-carrera', permanent: true },
+      { source: '/es/blog/high-school-internship-benefits-university',   destination: 'https://eduentry.com/es/blog/practicas-instituto-beneficios-universidad',       permanent: true },
+      { source: '/es/blog/business-work-experience-high-school-uk',      destination: 'https://eduentry.com/es/blog/experiencia-empresarial-instituto-reino-unido',    permanent: true },
+      { source: '/es/blog/how-to-get-tech-internship-before-university', destination: 'https://eduentry.com/es/blog/practicas-tecnologia-antes-universidad',           permanent: true },
+      { source: '/es/blog/how-does-your-child-compare-globally',         destination: 'https://eduentry.com/es/blog/como-se-compara-tu-hijo-a-nivel-mundial',          permanent: true },
       // Duplicate NSW OC posts — consolidate into the newer, better-optimised post
       { source: '/blog/australia-oc-test-guide', destination: '/blog/nsw-opportunity-class-test-guide', permanent: true },
-      // contentSlug accidentally indexed by Google — redirect to the canonical Turkish slug
-      { source: '/blog/international-internship-programs-tr', destination: '/tr/blog/uluslararasi-staj-programlari', permanent: true },
+      // contentSlug accidentally indexed by Google — redirect directly to canonical Turkish slug on eduentry.com
+      { source: '/blog/international-internship-programs-tr', destination: 'https://eduentry.com/tr/blog/uluslararasi-staj-programlari', permanent: true },
       // /home has no route — redirect to the real homepage
       { source: '/home', destination: '/', permanent: true },
       // Strip /en/ prefix — English content lives at the root, not under /en/
