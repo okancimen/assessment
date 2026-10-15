@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/business`,                  lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/data-analytics`,            lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/digital-marketing`,         lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/insights`,                       lastModified: '2026-10-15', changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${BASE}/work-experience`,               lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/about`,                     lastModified: '2026-10-15', changeFrequency: 'yearly',  priority: 0.6 },
     { url: `${BASE}/tr/teknoloji`,               lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.8 },

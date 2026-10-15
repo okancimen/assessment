@@ -124,9 +124,14 @@ export default function PublicNavAI() {
 
           <Link href={BLOG[locale]} className="hover:text-white transition-colors">Blog</Link>
           {locale === 'en' && (
-            <Link href="/work-experience" className="hover:text-white transition-colors text-[#A78BFA]/80 hover:text-[#A78BFA]">
-              Fellowship
-            </Link>
+            <>
+              <Link href="/insights" className="hover:text-white transition-colors">
+                Insights
+              </Link>
+              <Link href="/work-experience" className="hover:text-white transition-colors text-[#A78BFA]/80 hover:text-[#A78BFA]">
+                Fellowship
+              </Link>
+            </>
           )}
         </div>
 

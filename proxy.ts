@@ -75,6 +75,7 @@ export async function proxy(request: NextRequest) {
     // Marketing, track pages, auth, sitemap, robots → /ai/*
     if (
       pathname === '/work-experience' || pathname.startsWith('/work-experience/') ||
+      pathname === '/insights' ||
       pathname === '/tech' ||
       pathname === '/business' ||
       pathname === '/data-analytics' ||
