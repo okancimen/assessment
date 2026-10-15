@@ -344,6 +344,67 @@ export default function WorkExperiencePage() {
         </div>
       </section>
 
+      {/* ── Further Reading ─────────────────────────────────────────────── */}
+      <section className="px-6 py-24 bg-[#050505] border-t border-white/[0.04]">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-xs font-mono tracking-widest text-[#A78BFA] mb-3">FURTHER READING</p>
+            <h2 className="text-3xl font-bold text-white">Research Behind the Fellowship</h2>
+            <p className="mt-4 text-gray-400 max-w-xl mx-auto text-sm">Evidence and guides on why real work experience matters — and how to make the most of it.</p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-5">
+            {[
+              {
+                title: 'OECD Research: The Hidden Power of Teenage Work Experience on Career Outcomes',
+                desc: 'What decades of OECD data say about the long-term earnings and career trajectory of students who gained structured work experience before 20.',
+                href: 'https://eduentry.com/blog/oecd-teenage-work-experience-career-outcomes',
+                tag: 'Research',
+                color: '#A78BFA',
+              },
+              {
+                title: 'PISA 2025 Says Grades Are Falling — Here\'s Why Work Experience Is the Missing Answer',
+                desc: 'Global academic performance is declining. The data points to a structural gap that classroom learning alone cannot close.',
+                href: 'https://eduentry.com/blog/pisa-2025-work-experience-student-readiness',
+                tag: 'Data',
+                color: '#60A5FA',
+              },
+              {
+                title: 'How to Get a Tech Internship Before University: A Complete Guide',
+                desc: 'Step-by-step guide for students who want real tech experience before their first year — including what selectors actually look for.',
+                href: 'https://eduentry.com/blog/how-to-get-tech-internship-before-university',
+                tag: 'Guide',
+                color: '#34D399',
+              },
+              {
+                title: 'How to Find an Internship as a Student: The Complete Guide',
+                desc: 'Practical playbook covering applications, outreach, and the signals that separate candidates who land placements from those who don\'t.',
+                href: 'https://eduentry.com/blog/how-to-find-internship-as-student',
+                tag: 'Guide',
+                color: '#F59E0B',
+              },
+            ].map((post) => (
+              <a
+                key={post.href}
+                href={post.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col justify-between rounded-2xl p-7 border border-white/[0.07] bg-white/[0.02] hover:bg-white/[0.04] hover:border-white/[0.12] transition-all"
+              >
+                <div>
+                  <span className="inline-block text-[10px] font-mono tracking-widest px-2 py-0.5 rounded-full mb-4 border" style={{ color: post.color, borderColor: `${post.color}40`, background: `${post.color}12` }}>
+                    {post.tag}
+                  </span>
+                  <h3 className="text-white font-semibold text-sm leading-snug mb-3 group-hover:text-white/90">{post.title}</h3>
+                  <p className="text-xs text-gray-500 leading-relaxed">{post.desc}</p>
+                </div>
+                <p className="mt-5 text-xs font-medium group-hover:underline" style={{ color: post.color }}>Read on Eduentry.com →</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Footer ──────────────────────────────────────────────────────── */}
       <footer className="border-t border-white/[0.06] px-6 py-10 bg-black">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
