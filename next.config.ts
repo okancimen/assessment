@@ -68,6 +68,16 @@ const nextConfig: NextConfig = {
       { source: '/en/:path+', destination: '/:path+', permanent: true },
       // Locale blog slugs — redirect /blog/[locale-slug] → /[locale]/blog/[locale-slug]
       ...localeSlugRedirects,
+      // Catch-all: any remaining /tr/blog/* or /es/blog/* slugs (including locale-native slugs
+      // found by Google) forward to eduentry.com — specific redirects above take priority
+      { source: '/tr/blog/:path*', destination: 'https://eduentry.com/tr/blog/:path*', permanent: true },
+      { source: '/es/blog/:path*', destination: 'https://eduentry.com/es/blog/:path*', permanent: true },
+      { source: '/fr/blog/:path*', destination: 'https://eduentry.com/fr/blog/:path*', permanent: true },
+      { source: '/ar/blog/:path*', destination: 'https://eduentry.com/ar/blog/:path*', permanent: true },
+      { source: '/ru/blog/:path*', destination: 'https://eduentry.com/ru/blog/:path*', permanent: true },
+      { source: '/zh/blog/:path*', destination: 'https://eduentry.com/zh/blog/:path*', permanent: true },
+      // Legacy grammar-schools pages — old content, redirect to home
+      { source: '/grammar-schools/:path*', destination: '/', permanent: true },
     ]
   },
   compress: true,
