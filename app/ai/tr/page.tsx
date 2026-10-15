@@ -198,7 +198,7 @@ export default function TurkishHomePage() {
             <br />
             <span className="bg-gradient-to-r from-[#818CF8] via-[#6366F1] to-[#A78BFA] bg-clip-text text-transparent">edin.</span>
           </h1>
-          <p className="text-lg sm:text-xl text-white/50 max-w-xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/50 max-w-[43rem] mx-auto mb-10 leading-relaxed">
             Erken atılan her adım, gelecekte seni birkaç adım öne taşır. Peki, sen profesyonel dünyaya adım atmaya ne kadar hazırsın? Lise ve üniversite öğrencileri için tasarlanan 34 soruluk akıllı staj analizi ile tanış! 4 kritik profesyonel kulvardaki yetkinliklerini ölç, sana özel gelişim raporunu al ve iş dünyasına hazır olduğunu şimdiden göster.
           </p>
           <div className="flex items-center justify-center gap-3 flex-wrap mb-12">
