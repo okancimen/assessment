@@ -205,7 +205,7 @@ export default function AIHomePage() {
           </h1>
 
           <p className="text-lg sm:text-xl text-white/50 max-w-xl mx-auto mb-10 leading-relaxed">
-            A 34-question adaptive assessment for high school students aged 14+. Discover your readiness across four professional tracks and receive a personalised report.
+            The earlier you take action, the further ahead you'll be in the future. Are you ready to make your mark in the professional realm? Explore our 34-question adaptive internship assessment tailored for high school and university students! Gauge your potential in 4 vital professional areas, unlock a personalized performance report, and demonstrate that you are fully prepared for the workplace.
           </p>
 
           {/* CTAs */}
