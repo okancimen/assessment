@@ -29,6 +29,7 @@ const TRACKS = [
     color: '#A78BFA',
     bg: 'rgba(167,139,250,0.08)',
     border: 'rgba(167,139,250,0.2)',
+    href: 'https://eduentry.ai/tech',
   },
   {
     icon: '◉',
@@ -37,6 +38,7 @@ const TRACKS = [
     color: '#60A5FA',
     bg: 'rgba(96,165,250,0.08)',
     border: 'rgba(96,165,250,0.2)',
+    href: 'https://eduentry.ai/data-analytics',
   },
   {
     icon: '◇',
@@ -45,6 +47,7 @@ const TRACKS = [
     color: '#34D399',
     bg: 'rgba(52,211,153,0.08)',
     border: 'rgba(52,211,153,0.2)',
+    href: 'https://eduentry.ai/digital-marketing',
   },
   {
     icon: '◈',
@@ -53,6 +56,7 @@ const TRACKS = [
     color: '#F59E0B',
     bg: 'rgba(245,158,11,0.08)',
     border: 'rgba(245,158,11,0.2)',
+    href: 'https://eduentry.ai/business',
   },
 ]
 
@@ -180,15 +184,21 @@ export default function WorkExperiencePage() {
 
           <div className="grid sm:grid-cols-2 gap-5">
             {TRACKS.map((t) => (
-              <div
+              <a
                 key={t.title}
-                className="rounded-2xl p-7 backdrop-blur-sm transition-transform hover:-translate-y-0.5"
+                href={t.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded-2xl p-7 backdrop-blur-sm transition-transform hover:-translate-y-0.5 block"
                 style={{ background: t.bg, border: `1px solid ${t.border}` }}
               >
                 <div className="text-3xl mb-4" style={{ color: t.color }}>{t.icon}</div>
                 <h3 className="font-semibold text-white text-lg mb-2">{t.title}</h3>
                 <p className="text-sm text-gray-400 leading-relaxed">{t.desc}</p>
-              </div>
+                <p className="mt-4 text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: t.color }}>
+                  Learn more →
+                </p>
+              </a>
             ))}
           </div>
         </div>
