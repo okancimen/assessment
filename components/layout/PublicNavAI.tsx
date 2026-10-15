@@ -62,19 +62,21 @@ const TRACKS: Record<Locale, { href: string; label: string; desc: string }[]> = 
   ],
 }
 
-const NAV: Record<Locale, { howItWorks: string; tracks: string; signIn: string; applyFree: string }> = {
-  en: { howItWorks: 'How it works',        tracks: 'Tracks',       signIn: 'Sign in',         applyFree: 'Apply free' },
-  tr: { howItWorks: 'Nasıl çalışır',       tracks: 'Alanlar',      signIn: 'Giriş yap',       applyFree: 'Ücretsiz başvur' },
-  es: { howItWorks: 'Cómo funciona',       tracks: 'Áreas',        signIn: 'Iniciar sesión',   applyFree: 'Solicitar gratis' },
-  fr: { howItWorks: 'Comment ça marche',   tracks: 'Filières',     signIn: 'Se connecter',     applyFree: 'Postuler gratuitement' },
-  ar: { howItWorks: 'كيف يعمل',            tracks: 'المسارات',     signIn: 'تسجيل الدخول',    applyFree: 'التقديم مجاناً' },
-  ru: { howItWorks: 'Как это работает',    tracks: 'Направления',  signIn: 'Войти',            applyFree: 'Подать заявку' },
-  zh: { howItWorks: '工作原理',             tracks: '方向',          signIn: '登录',             applyFree: '免费申请' },
+const NAV: Record<Locale, { howItWorks: string; tracks: string; signIn: string; applyFree: string; insights: string; fellowship: string }> = {
+  en: { howItWorks: 'How it works',        tracks: 'Tracks',       signIn: 'Sign in',         applyFree: 'Apply free',           insights: 'Insights',    fellowship: 'Fellowship' },
+  tr: { howItWorks: 'Nasıl çalışır',       tracks: 'Alanlar',      signIn: 'Giriş yap',       applyFree: 'Ücretsiz başvur',      insights: 'İçgörüler',  fellowship: 'Fellowship' },
+  es: { howItWorks: 'Cómo funciona',       tracks: 'Áreas',        signIn: 'Iniciar sesión',   applyFree: 'Solicitar gratis',     insights: 'Insights',    fellowship: 'Fellowship' },
+  fr: { howItWorks: 'Comment ça marche',   tracks: 'Filières',     signIn: 'Se connecter',     applyFree: 'Postuler gratuitement',insights: 'Insights',    fellowship: 'Fellowship' },
+  ar: { howItWorks: 'كيف يعمل',            tracks: 'المسارات',     signIn: 'تسجيل الدخول',    applyFree: 'التقديم مجاناً',       insights: 'Insights',    fellowship: 'Fellowship' },
+  ru: { howItWorks: 'Как это работает',    tracks: 'Направления',  signIn: 'Войти',            applyFree: 'Подать заявку',        insights: 'Insights',    fellowship: 'Fellowship' },
+  zh: { howItWorks: '工作原理',             tracks: '方向',          signIn: '登录',             applyFree: '免费申请',              insights: '洞察',        fellowship: 'Fellowship' },
 }
 
 const HOME: Record<Locale, string>       = { en: '/', tr: '/tr', es: '/es', fr: '/fr', ar: '/ar', ru: '/ru', zh: '/zh' }
 const BLOG: Record<Locale, string>       = { en: 'https://eduentry.com/blog', tr: 'https://eduentry.com/tr/blog', es: 'https://eduentry.com/es/blog', fr: 'https://eduentry.com/fr/blog', ar: 'https://eduentry.com/ar/blog', ru: 'https://eduentry.com/ru/blog', zh: 'https://eduentry.com/zh/blog' }
 const HOW: Record<Locale, string>        = { en: '/#how-it-works', tr: '/tr#how-it-works', es: '/es#how-it-works', fr: '/fr#how-it-works', ar: '/ar#how-it-works', ru: '/ru#how-it-works', zh: '/zh#how-it-works' }
+const INSIGHTS: Record<Locale, string>   = { en: '/insights', tr: '/tr/insights', es: '/insights', fr: '/insights', ar: '/insights', ru: '/insights', zh: '/insights' }
+const FELLOWSHIP: Record<Locale, string> = { en: '/work-experience', tr: '/tr/work-experience', es: '/work-experience', fr: '/work-experience', ar: '/work-experience', ru: '/work-experience', zh: '/work-experience' }
 
 export default function PublicNavAI() {
   const pathname = usePathname()
@@ -123,16 +125,12 @@ export default function PublicNavAI() {
           </div>
 
           <Link href={BLOG[locale]} className="hover:text-white transition-colors">Blog</Link>
-          {locale === 'en' && (
-            <>
-              <Link href="/insights" className="hover:text-white transition-colors">
-                Insights
-              </Link>
-              <Link href="/work-experience" className="hover:text-white transition-colors text-[#A78BFA]/80 hover:text-[#A78BFA]">
-                Fellowship
-              </Link>
-            </>
-          )}
+          <Link href={INSIGHTS[locale]} className="hover:text-white transition-colors">
+            {nav.insights}
+          </Link>
+          <Link href={FELLOWSHIP[locale]} className="hover:text-white transition-colors text-[#A78BFA]/80 hover:text-[#A78BFA]">
+            {nav.fellowship}
+          </Link>
         </div>
 
         <div className="flex items-center gap-5">

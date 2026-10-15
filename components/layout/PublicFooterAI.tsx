@@ -63,49 +63,60 @@ const TRACKS: Record<Locale, { href: string; label: string }[]> = {
 
 const LABELS: Record<Locale, {
   tracks: string; learn: string; account: string; legal: string
-  howItWorks: string; blog: string; signIn: string; applyFree: string
+  howItWorks: string; blog: string; insights: string; fellowship: string
+  signIn: string; applyFree: string
   privacy: string; terms: string; copyright: string
 }> = {
   en: {
     tracks: 'Tracks', learn: 'Learn', account: 'Account', legal: 'Legal',
-    howItWorks: 'How it works', blog: 'Blog', signIn: 'Sign in', applyFree: 'Apply free',
+    howItWorks: 'How it works', blog: 'Blog', insights: 'Insights', fellowship: 'Fellowship',
+    signIn: 'Sign in', applyFree: 'Apply free',
     privacy: 'Privacy', terms: 'Terms', copyright: '© 2026 Eduentry. All rights reserved.',
   },
   tr: {
     tracks: 'Alanlar', learn: 'Keşfet', account: 'Hesap', legal: 'Hukuki',
-    howItWorks: 'Nasıl çalışır', blog: 'Blog', signIn: 'Giriş yap', applyFree: 'Ücretsiz başvur',
+    howItWorks: 'Nasıl çalışır', blog: 'Blog', insights: 'İçgörüler', fellowship: 'Fellowship',
+    signIn: 'Giriş yap', applyFree: 'Ücretsiz başvur',
     privacy: 'Gizlilik', terms: 'Kullanım şartları', copyright: '© 2026 Eduentry. Tüm hakları saklıdır.',
   },
   es: {
     tracks: 'Áreas', learn: 'Explorar', account: 'Cuenta', legal: 'Legal',
-    howItWorks: 'Cómo funciona', blog: 'Blog', signIn: 'Iniciar sesión', applyFree: 'Solicitar gratis',
+    howItWorks: 'Cómo funciona', blog: 'Blog', insights: 'Insights', fellowship: 'Fellowship',
+    signIn: 'Iniciar sesión', applyFree: 'Solicitar gratis',
     privacy: 'Privacidad', terms: 'Términos de uso', copyright: '© 2026 Eduentry. Todos los derechos reservados.',
   },
   fr: {
     tracks: 'Filières', learn: 'Apprendre', account: 'Compte', legal: 'Mentions légales',
-    howItWorks: 'Comment ça marche', blog: 'Blog', signIn: 'Se connecter', applyFree: 'Postuler gratuitement',
+    howItWorks: 'Comment ça marche', blog: 'Blog', insights: 'Insights', fellowship: 'Fellowship',
+    signIn: 'Se connecter', applyFree: 'Postuler gratuitement',
     privacy: 'Confidentialité', terms: "Conditions d'utilisation", copyright: '© 2026 Eduentry. Tous droits réservés.',
   },
   ar: {
     tracks: 'المسارات', learn: 'تعلم', account: 'الحساب', legal: 'قانوني',
-    howItWorks: 'كيف يعمل', blog: 'المدونة', signIn: 'تسجيل الدخول', applyFree: 'التقديم مجاناً',
+    howItWorks: 'كيف يعمل', blog: 'المدونة', insights: 'Insights', fellowship: 'Fellowship',
+    signIn: 'تسجيل الدخول', applyFree: 'التقديم مجاناً',
     privacy: 'الخصوصية', terms: 'الشروط والأحكام', copyright: '© 2026 Eduentry. جميع الحقوق محفوظة.',
   },
   ru: {
     tracks: 'Направления', learn: 'Узнать больше', account: 'Аккаунт', legal: 'Правовые',
-    howItWorks: 'Как это работает', blog: 'Блог', signIn: 'Войти', applyFree: 'Подать заявку',
+    howItWorks: 'Как это работает', blog: 'Блог', insights: 'Insights', fellowship: 'Fellowship',
+    signIn: 'Войти', applyFree: 'Подать заявку',
     privacy: 'Конфиденциальность', terms: 'Условия использования', copyright: '© 2026 Eduentry. Все права защищены.',
   },
   zh: {
     tracks: '方向', learn: '了解更多', account: '账户', legal: '法律',
-    howItWorks: '工作原理', blog: '博客', signIn: '登录', applyFree: '免费申请',
+    howItWorks: '工作原理', blog: '博客', insights: '洞察', fellowship: 'Fellowship',
+    signIn: '登录', applyFree: '免费申请',
     privacy: '隐私政策', terms: '使用条款', copyright: '© 2026 Eduentry. 版权所有。',
   },
 }
 
-const HOME: Record<Locale, string> = { en: '/', tr: '/tr', es: '/es', fr: '/fr', ar: '/ar', ru: '/ru', zh: '/zh' }
-const BLOG: Record<Locale, string> = { en: 'https://eduentry.com/blog', tr: 'https://eduentry.com/tr/blog', es: 'https://eduentry.com/es/blog', fr: 'https://eduentry.com/fr/blog', ar: 'https://eduentry.com/ar/blog', ru: 'https://eduentry.com/ru/blog', zh: 'https://eduentry.com/zh/blog' }
-const HOW: Record<Locale, string>  = { en: '/#how-it-works', tr: '/tr#how-it-works', es: '/es#how-it-works', fr: '/fr#how-it-works', ar: '/ar#how-it-works', ru: '/ru#how-it-works', zh: '/zh#how-it-works' }
+const HOME: Record<Locale, string>       = { en: '/', tr: '/tr', es: '/es', fr: '/fr', ar: '/ar', ru: '/ru', zh: '/zh' }
+const BLOG: Record<Locale, string>       = { en: 'https://eduentry.com/blog', tr: 'https://eduentry.com/tr/blog', es: 'https://eduentry.com/es/blog', fr: 'https://eduentry.com/fr/blog', ar: 'https://eduentry.com/ar/blog', ru: 'https://eduentry.com/ru/blog', zh: 'https://eduentry.com/zh/blog' }
+const HOW: Record<Locale, string>        = { en: '/#how-it-works', tr: '/tr#how-it-works', es: '/es#how-it-works', fr: '/fr#how-it-works', ar: '/ar#how-it-works', ru: '/ru#how-it-works', zh: '/zh#how-it-works' }
+const INSIGHTS: Record<Locale, string>   = { en: '/insights', tr: '/tr/insights', es: '/insights', fr: '/insights', ar: '/insights', ru: '/insights', zh: '/insights' }
+const FELLOWSHIP: Record<Locale, string> = { en: '/work-experience', tr: '/tr/work-experience', es: '/work-experience', fr: '/work-experience', ar: '/work-experience', ru: '/work-experience', zh: '/work-experience' }
+const APPLY: Record<Locale, string>      = { en: '/apply', tr: '/apply', es: '/apply', fr: '/apply', ar: '/apply', ru: '/apply', zh: '/apply' }
 
 export default function PublicFooterAI() {
   const pathname = usePathname()
@@ -135,16 +146,18 @@ export default function PublicFooterAI() {
           <div>
             <p className="font-mono text-[10px] font-semibold text-white/25 uppercase tracking-[0.15em] mb-3">{L.learn}</p>
             <ul className="space-y-2">
-              <li><Link href={HOW[locale]}  className="text-xs text-white/70 hover:text-white transition-colors">{L.howItWorks}</Link></li>
-              <li><Link href={BLOG[locale]} className="text-xs text-white/70 hover:text-white transition-colors">{L.blog}</Link></li>
+              <li><Link href={HOW[locale]}        className="text-xs text-white/70 hover:text-white transition-colors">{L.howItWorks}</Link></li>
+              <li><Link href={BLOG[locale]}        className="text-xs text-white/70 hover:text-white transition-colors">{L.blog}</Link></li>
+              <li><Link href={INSIGHTS[locale]}   className="text-xs text-white/70 hover:text-white transition-colors">{L.insights}</Link></li>
+              <li><Link href={FELLOWSHIP[locale]} className="text-xs text-[#A78BFA]/70 hover:text-[#A78BFA] transition-colors">{L.fellowship}</Link></li>
             </ul>
           </div>
 
           <div>
             <p className="font-mono text-[10px] font-semibold text-white/25 uppercase tracking-[0.15em] mb-3">{L.account}</p>
             <ul className="space-y-2">
-              <li><Link href="/auth/login" className="text-xs text-white/70 hover:text-white transition-colors">{L.signIn}</Link></li>
-              <li><Link href="/apply"      className="text-xs text-white/70 hover:text-white transition-colors">{L.applyFree}</Link></li>
+              <li><Link href="/auth/login"   className="text-xs text-white/70 hover:text-white transition-colors">{L.signIn}</Link></li>
+              <li><Link href={APPLY[locale]} className="text-xs text-white/70 hover:text-white transition-colors">{L.applyFree}</Link></li>
             </ul>
           </div>
 
