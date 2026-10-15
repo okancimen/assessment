@@ -197,10 +197,10 @@ export default function InsightsTRPage() {
             >
               <div>
                 <h3 className="text-white font-semibold text-sm leading-snug mb-2 group-hover:text-white/90">
-                  Ulusal Staj Programı Rehberi: Torpilsiz Kariyere Nasıl Başlarsın?
+                  Ulusal Staj Programı 2026: Nedir, Kimler Başvurabilir, Ne Zaman?
                 </h3>
                 <p className="text-xs text-gray-500 leading-relaxed">
-                  USP başvurusu nasıl yapılır, kimler katılabilir ve Kariyer Kapısı'nda öne çıkmak için neler gerekir? Kariyer koçu bakış açısıyla adım adım rehber.
+                  USP 2026 başvuru şartları, kimler başvurabilir, ne zaman başvurulur ve Kariyer Kapısı'nda nasıl öne çıkılır? Kariyer koçu bakış açısıyla adım adım rehber.
                 </p>
               </div>
               <p className="mt-4 text-xs font-medium text-[#34D399] group-hover:underline">Oku →</p>
