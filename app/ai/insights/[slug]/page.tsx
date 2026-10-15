@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       url,
       siteName: 'Eduentry.ai',
+      images: [{ url: 'https://eduentry.ai/opengraph-image', width: 1200, height: 630, alt: post.title }],
     },
   }
 }

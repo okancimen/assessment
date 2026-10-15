@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     description: 'Öğrenciler için staj hazırlığı ve iş deneyimi üzerine kanıta dayalı rehberler.',
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
+    images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai Görüşler' }],
   },
 }
 

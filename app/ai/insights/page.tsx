@@ -7,7 +7,7 @@ const PAGE_URL = `${BASE_URL}/insights`
 export const metadata: Metadata = {
   title: { absolute: 'Insights — Internship & Fellowship Research | Eduentry.ai' },
   description:
-    'Research, data, and practical guides on internship readiness for high school students and university fellowship applicants.',
+    'Evidence-based research, data, and practical guides on internship readiness for high school students aged 14–18 and university fellowship applicants.',
   alternates: { canonical: PAGE_URL },
   robots: { index: true, follow: true },
   openGraph: {
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     description: 'Evidence-based guides and research on internship readiness and work experience for students.',
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
+    images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai Insights' }],
   },
 }
 

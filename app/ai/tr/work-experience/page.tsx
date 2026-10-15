@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: 'AI destekli kariyer bursu. 20 dk test → ilk %10 Singapur teknoloji ekipleriyle 3 aylık hibrit burs programına seçilir.',
     url: PAGE_URL,
     siteName: 'Eduentry.ai',
+    images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Eduentry.ai Üniversite Burs Programı' }],
   },
 }
 
