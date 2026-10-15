@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['teknoloji stajı', 'staj değerlendirmesi lise', 'teknoloji staj hazırlığı', 'kodlama stajı öğrenci', 'yazılım stajı değerlendirmesi', 'siber güvenlik stajı lise', 'UX stajı öğrenci', 'teknoloji iş deneyimi'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { tr: TRACK_URL, es: `${BASE_URL}/es/tecnologia`, en: `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },
+    languages: { tr: TRACK_URL, es: `${BASE_URL}/es/tecnologia`, fr: `${BASE_URL}/fr/technologie`, ar: `${BASE_URL}/ar/taqniya`, ru: `${BASE_URL}/ru/tekhnologii`, zh: `${BASE_URL}/zh/keji`, en: `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

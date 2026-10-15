@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['iş dünyası stajı', 'staj değerlendirmesi lise', 'iş staj hazırlığı', 'işletme stajı öğrenci', 'finans stajı değerlendirmesi', 'ticaret stajı lise', 'iş deneyimi değerlendirmesi', 'iş dünyası iş deneyimi'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { tr: TRACK_URL, es: `${BASE_URL}/es/empresa`, en: `${BASE_URL}/business`, 'x-default': `${BASE_URL}/business` },
+    languages: { tr: TRACK_URL, es: `${BASE_URL}/es/empresa`, fr: `${BASE_URL}/fr/entreprise`, ar: `${BASE_URL}/ar/aamal`, ru: `${BASE_URL}/ru/biznes`, zh: `${BASE_URL}/zh/shangye`, en: `${BASE_URL}/business`, 'x-default': `${BASE_URL}/business` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

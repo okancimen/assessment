@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['veri analitiği stajı', 'veri staj hazırlığı', 'veri analitiği değerlendirmesi öğrenci', 'SQL stajı lise', 'istatistik stajı öğrenci', 'veri bilimi stajı değerlendirmesi', 'veri iş deneyimi lise'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { tr: TRACK_URL, es: `${BASE_URL}/es/analisis-de-datos`, en: `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },
+    languages: { tr: TRACK_URL, es: `${BASE_URL}/es/analisis-de-datos`, fr: `${BASE_URL}/fr/analyse-de-donnees`, ar: `${BASE_URL}/ar/bayanat`, ru: `${BASE_URL}/ru/analiz-dannykh`, zh: `${BASE_URL}/zh/shuju`, en: `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

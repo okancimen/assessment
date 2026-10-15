@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['prácticas análisis de datos', 'evaluación datos instituto', 'prácticas ciencia de datos estudiantes', 'test SQL bachillerato', 'prácticas estadística estudiantes', 'experiencia laboral datos', 'evaluación análisis datos'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { es: TRACK_URL, tr: `${BASE_URL}/tr/veri-analitigi`, en: `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },
+    languages: { es: TRACK_URL, tr: `${BASE_URL}/tr/veri-analitigi`, fr: `${BASE_URL}/fr/analyse-de-donnees`, ar: `${BASE_URL}/ar/bayanat`, ru: `${BASE_URL}/ru/analiz-dannykh`, zh: `${BASE_URL}/zh/shuju`, en: `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

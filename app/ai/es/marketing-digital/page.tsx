@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['prácticas marketing digital', 'evaluación marketing instituto', 'prácticas SEO estudiantes', 'test redes sociales bachillerato', 'prácticas contenido digital', 'experiencia laboral marketing', 'evaluación marketing digital'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { es: TRACK_URL, tr: `${BASE_URL}/tr/dijital-pazarlama`, en: `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },
+    languages: { es: TRACK_URL, tr: `${BASE_URL}/tr/dijital-pazarlama`, fr: `${BASE_URL}/fr/marketing-digital`, ar: `${BASE_URL}/ar/tawiq`, ru: `${BASE_URL}/ru/tsifrovoy-marketing`, zh: `${BASE_URL}/zh/yingxiao`, en: `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
