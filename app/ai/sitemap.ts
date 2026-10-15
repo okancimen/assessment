@@ -1,11 +1,19 @@
 import type { MetadataRoute } from 'next'
 import { INSIGHT_SLUGS } from './insights/content'
+import { INSIGHT_SLUGS_TR } from './tr/insights/content'
 
 const BASE = 'https://eduentry.ai'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const insightPages: MetadataRoute.Sitemap = INSIGHT_SLUGS.map(slug => ({
     url: `${BASE}/insights/${slug}`,
+    lastModified: '2026-10-15',
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  const insightPagesTR: MetadataRoute.Sitemap = INSIGHT_SLUGS_TR.map(slug => ({
+    url: `${BASE}/tr/insights/${slug}`,
     lastModified: '2026-10-15',
     changeFrequency: 'monthly' as const,
     priority: 0.7,
@@ -26,6 +34,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/insights`,                       lastModified: '2026-10-15', changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${BASE}/work-experience`,               lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/work-experience/apply`,         lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/tr/insights`,                   lastModified: '2026-10-15', changeFrequency: 'weekly',  priority: 0.8 },
+    { url: `${BASE}/tr/work-experience`,            lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/tr/work-experience/apply`,      lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/about`,                     lastModified: '2026-10-15', changeFrequency: 'yearly',  priority: 0.6 },
     { url: `${BASE}/tr/teknoloji`,               lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/tr/is-dunyasi`,              lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.8 },
@@ -54,5 +65,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Blog posts live on eduentry.com; eduentry.ai/…/blog URLs redirect there
-  return [...staticPages, ...insightPages]
+  return [...staticPages, ...insightPages, ...insightPagesTR]
 }
