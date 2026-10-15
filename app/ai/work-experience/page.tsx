@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const BASE_URL = 'https://eduentry.ai'
-const PAGE_URL = `${BASE_URL}/en/work-experience`
+const PAGE_URL = `${BASE_URL}/work-experience`
 
 export const metadata: Metadata = {
   title: { absolute: 'University Work Experience & Global Fellowship — Eduentry.ai' },
@@ -133,7 +133,7 @@ export default function WorkExperiencePage() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
             <Link
-              href="/en/work-experience/apply"
+              href="/work-experience/apply"
               className="px-8 py-4 rounded-xl font-semibold text-black text-base transition-all hover:opacity-90 active:scale-[0.98]"
               style={{
                 background: 'linear-gradient(135deg, #A78BFA 0%, #7C3AED 100%)',
@@ -307,7 +307,7 @@ export default function WorkExperiencePage() {
 
           <div className="mt-14 text-center">
             <Link
-              href="/en/work-experience/apply"
+              href="/work-experience/apply"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-black text-base transition-all hover:opacity-90"
               style={{ background: 'linear-gradient(135deg, #A78BFA 0%, #7C3AED 100%)', boxShadow: '0 0 32px rgba(167,139,250,0.3)' }}
             >
