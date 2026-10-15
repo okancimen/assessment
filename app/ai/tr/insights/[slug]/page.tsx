@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const TAG_COLOR: Record<string, string> = {
   'Lise Stajı': '#60A5FA',
   'Üniversite Burs Programı': '#A78BFA',
+  'Kariyer Rehberi': '#34D399',
 }
 
 export default async function InsightPostTRPage({ params }: Props) {

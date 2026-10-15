@@ -180,6 +180,35 @@ export default function InsightsTRPage() {
         </div>
       </section>
 
+      {/* Kariyer Rehberi */}
+      <section className="px-6 py-16 border-t border-white/[0.04]">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+            <div>
+              <p className="text-xs font-mono tracking-widest text-[#34D399] mb-2">KARİYER REHBERİ</p>
+              <h2 className="text-2xl font-bold text-white">Kariyer Rehberi</h2>
+              <p className="mt-2 text-sm text-gray-400 max-w-lg">Ulusal Staj Programı, Kariyer Kapısı ve kariyer planlaması üzerine pratik rehberler.</p>
+            </div>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link
+              href="/tr/insights/ulusal-staj-programi-rehberi"
+              className="group flex flex-col justify-between rounded-2xl p-6 border border-white/[0.07] bg-white/[0.02] hover:bg-white/[0.05] hover:border-[#34D399]/30 transition-all"
+            >
+              <div>
+                <h3 className="text-white font-semibold text-sm leading-snug mb-2 group-hover:text-white/90">
+                  Ulusal Staj Programı Rehberi: Torpilsiz Kariyere Nasıl Başlarsın?
+                </h3>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  USP başvurusu nasıl yapılır, kimler katılabilir ve Kariyer Kapısı'nda öne çıkmak için neler gerekir? Kariyer koçu bakış açısıyla adım adım rehber.
+                </p>
+              </div>
+              <p className="mt-4 text-xs font-medium text-[#34D399] group-hover:underline">Oku →</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Bölüm 3: Blogdan */}
       <section className="px-6 py-16 border-t border-white/[0.04]">
         <div className="max-w-5xl mx-auto">

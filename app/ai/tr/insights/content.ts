@@ -7,7 +7,7 @@ export interface InsightPost {
   slug: string
   title: string
   description: string
-  tag: 'Lise Stajı' | 'Üniversite Burs Programı'
+  tag: 'Lise Stajı' | 'Üniversite Burs Programı' | 'Kariyer Rehberi'
   readTime: string
   sections: InsightSection[]
   cta: { label: string; href: string }
@@ -276,6 +276,50 @@ export const INSIGHT_POSTS_TR: InsightPost[] = [
       },
     ],
     cta: { label: 'Burs yapısını gör →', href: '/work-experience' },
+  },
+
+  // ── KARİYER REHBERİ ─────────────────────────────────────────────────────
+  {
+    slug: 'ulusal-staj-programi-rehberi',
+    title: 'Ulusal Staj Programı Rehberi: Torpilsiz Kariyere Nasıl Başlarsın?',
+    description: 'Ulusal Staj Programı (USP) başvurusu nasıl yapılır, kimler katılabilir ve öne çıkmak için neler gerekir? Kariyer koçu bakış açısıyla adım adım rehber.',
+    tag: 'Kariyer Rehberi',
+    readTime: '8 dk',
+    sections: [
+      {
+        heading: '"Torpilim yok" diyorsan, bu yazı tam sana göre',
+        body: `Üniversitenin ortasında kendini bir yol ayrımında bulmak çok tanıdık bir his. Bir yanda staj zorunluluğu, öte yanda "Nereye başvursam?", "Beni kim alır ki?", "CV'm yeterince iyi mi?" soruları.\n\nSana bir şey söyleyeyim: Bu sorular, harekete geçmemiş her yetenekli öğrencinin kafasında dolaşır. Fark yaratan şey bu soruları sormak değil — doğru sistemi bulup o sistemi nasıl kullanacağını öğrenmek.\n\nUlusal Staj Programı (USP) tam da bu noktada devreye giriyor. Arkası olan, bağlantısı güçlü, CV'si parlak öğrencilere değil — yetkinliğini kanıtlayabilen herkese eşit fırsat sunan bir platform. Ve bu yazıda, o platformu en iyi şekilde nasıl kullanacağını adım adım anlatacağım.`,
+      },
+      {
+        heading: 'Ulusal Staj Programı Nedir? (Ve Neden Farklı?)',
+        body: `Ulusal Staj Programı; Cumhurbaşkanlığı İnsan Kaynakları Ofisi tarafından yürütülen, fırsat eşitliği, şeffaflık ve liyakat ilkelerini temel alan millî bir kariyer platformudur.\n\nPeki klasik staj ilanlarından farkı ne?\n\nNormal süreçte şöyle işler: İlan açılır, CV gönderirsin, işveren ismine bakar, üniversitene bakar, belki tanıdığı biri seni referans verir. Torpil işler, fırsat eşitsizliği kaçınılmaz olur.\n\nUSP'de ise sistem şöyle çalışır: Tek bir genel başvuru yaparsın. Sistem yetkinliklerini puanlar. Kimlik bilgilerin gizlenerek profil işveren havuzuna sunulur. Kurumlar seni adın, soyadın, üniversiten olmadan — yalnızca yetkinlik puanlarınla değerlendirir. Teklifler doğrudan sana gelir.\n\nBu ne demek? Demek ki burada avantaj; torpilden değil, profilini ne kadar eksiksiz ve doğru doldurduğundan geliyor. Bu da tamamen senin kontrolünde.`,
+      },
+      {
+        heading: 'Sen de Başvurabilirsin — Merak Ettiğin Şartlar',
+        body: `Başvurmadan önce aklında büyüyen "Ben uygun muyum?" sorusuna net yanıt verelim.\n\n**Lisans öğrencileri:** Örgün eğitim veren bölümlerin 2., 3. veya 4. sınıf öğrencileri başvurabilir.\n\n**Ön lisans öğrencileri:** Örgün eğitim veren programların 1. veya 2. sınıf öğrencileri uygun.\n\n**Yurt dışında okuyanlar:** Yurt dışındaki üniversitelerde yükseköğrenimine devam eden Türk vatandaşı veya Mavi Kart sahibi öğrenciler de sisteme dahil.\n\nEn çok sorulan soru ise şu: "Bölümümde zorunlu staj yok, ben de başvurabilir miyim?" Cevap: Evet. Zorunlu staj şartı olup olmaması önemli değil. Gönüllü staj yapmak isteyen her öğrenci başvurabilir.\n\nYani ne bölümün ne üniversiten ne de not ortalaman seni otomatik olarak dışarıda bırakır. Sisteme girme şansın var — soru şu: profilini nasıl oluşturacaksın?`,
+      },
+      {
+        heading: 'Adım Adım Başvuru Süreci: Kariyer Kapısı\'na Giriş\'ten Onaya',
+        body: `Başvuru sürecini beş adıma indirgedim. Her adımı okurken şunu düşün: "Bunu bugün yapabilir miyim?" Çünkü yapabilirsin.\n\n**1. Kariyer Kapısı'na Giriş Yap**\nkariyerkapisi.cbiko.gov.tr adresine giderek e-Devlet şifrenle sisteme giriş yap. e-Devlet şifren yoksa PTT'den temin edebilirsin — beş dakikalık bir işlem.\n\n**2. e-Devlet Aşamasını Tamamla**\nSistem otomatik olarak akademik verilerini çeker: not ortalaması, yabancı dil belgesi, lise bilgisi gibi. Bu verileri kontrol et, doğruysa onayla. Yanlış bir veri görürsen kaynağını (öğrenci bilgi sistemi vb.) güncellemen gerekebilir.\n\n**3. Başvuru Formunu Doldur — Eksik Bırakma**\nİşte fark yaratan adım bu. Eğitim dışı her kazanımını buraya ekle: katıldığın kulüpler, yürüttüğün projeler, aldığın sertifikalar, sportif veya sanatsal faaliyetler. Küçük gördüğün her şey bir puan. Puanların toplamı seni öne taşır.\n\n**4. Şehir ve Tarih Tercihlerini Belirle**\nStaj yapabileceğin illeri, ilçeleri ve tarih aralıklarını ekle. Ne kadar geniş tutarsan o kadar fazla kurumun önüne çıkarsın.\n\n**5. Onayla ve Takip Et**\nBaşvurunu onayladıktan sonra sistem bildirimleri ve e-posta takibini aktif hale getir. Bir teklif geldiğinde belirli bir süren var — o süreyi kaçırma.`,
+      },
+      {
+        heading: 'Öne Çıkmak İçin 3 Kritik İpucu',
+        body: `USP'de işverenler adayları değerlendirirken senin adını, üniversiteni, hatta fotoğrafını görmez. Sadece yetkinlik puanlarını ve profil verilerini görür. Bu da şu anlama geliyor: profilini en eksiksiz hale getiren kazanır.\n\n**1. Belgelerini Mutlaka Yükle**\nDil sınavı sonuçların (YDS, YÖKDİL, TOEFL vb.), Coursera/Udemy sertifikaların, proje katılım belgelerin, topluluk üyeliklerini kanıtlayan belgeler — bunların her biri puanına doğrudan yansır. Yüklemediğin belge, olmayan belge sayılır.\n\n**2. Erken Tamamla, Son Güne Bırakma**\nYüklenen belgeler yapay zeka modelleri ve yetkililer tarafından incelenir. Hatalı bir belge yüklendiğinde düzeltme yapabilmek için zamana ihtiyacın var. Başvurunu son haftaya bırakırsan, hatanı düzeltme şansını kaybedebilirsin.\n\n**3. Kariyer Kapısı'nı Haftalık Rutin Haline Getir**\nTeklif geldiğinde sistemde onay/ret için belirlenmiş bir süre var. Bu süreyi kaçıranlar tekliften düşer. Haftada bir kez Kariyer Kapısı'na girmek — bu kadar küçük bir alışkanlık — seni büyük bir fırsattan mahrum etmekten korur.`,
+      },
+      {
+        heading: 'Staj Yaparken Bilmen Gereken 3 Şey',
+        body: `Başvuru sürecini geçip stajı aldıktan sonra da bazı pratik detaylar önemli.\n\n**Sigorta:** Program kapsamında staj yapan tüm öğrencilerin iş kazası ve meslek hastalığı sigortası yasal çerçevede karşılanır. Yani sağlık güvencen var.\n\n**Ücret:** Kamu kurumlarında yapılan stajlarda asgari ücret kanunu çerçevesinde stajyer ödemesi yapılır. Ücretsiz çalışmıyorsun.\n\n**Süre:** Stajlar minimum 20 iş günü olarak planlanır. Kısa ama yoğun — ve doğru kullanılırsa özgeçmişinde çok yer kaplayan bir deneyim.`,
+      },
+      {
+        heading: 'Sana Bir Şey Soracağım',
+        body: `Kariyer koçu olarak yıllarca gördüm: Başarılı kariyer yolculukları hep küçük ama kararlı bir adımla başlar. Kimse sihirli bir günde tam hazır olarak kariyer hayatına girmez.\n\nŞu an aklında şu soru dönüyor olabilir: "Ama ben daha hazır değilim." İşte tam bu noktada sana şunu söylemek istiyorum: Hazır olmanın yolu, başlamaktan geçer. Kariyer Kapısı'na bugün giriş yapmak, sistemi incelemek, belgeleri bir yere not etmek — bunların her biri seni o "hazır" noktaya taşıyan adımlardır.\n\nGeleceğini şansa bırakma. Torpile ihtiyacın yok — ihtiyacın olan şey doğru sistemi doğru kullanmak. Ve o sistem şu an, hiçbir ayrım gözetmeksizin, seni bekliyor.`,
+      },
+      {
+        heading: 'Uluslararası Staj Deneyimi Arıyorsan',
+        body: `USP sana Türkiye'deki kamu ve özel sektör kapılarını açarken, uluslararası kariyer deneyimi peşindeysen farklı bir yol daha var.\n\nEduentry'nin Magenta Networks Fellowship programı; Singapur merkezli bir teknoloji şirketinde 3 aylık hibrit staj imkânı sunuyor. 20 dakikalık ücretsiz bir YZ değerlendirmesiyle başvuruyorsun — torpil yok, tanıdık yok. Yalnızca yetkinlik.\n\nEğer hem ulusal hem uluslararası deneyimi birleştirmek istiyorsan, iki yolu birden takip etmeni öneririm. Kariyer yolculuğunda her kapıyı açık tut.`,
+      },
+    ],
+    cta: { label: 'Uluslararası Fellowship için Başvur →', href: '/work-experience/apply' },
   },
 ]
 
