@@ -280,6 +280,48 @@ export const INSIGHT_POSTS_TR: InsightPost[] = [
 
   // ── KARİYER REHBERİ ─────────────────────────────────────────────────────
   {
+    slug: 'uluslararasi-staj-programi-2026',
+    title: 'Uluslararası Staj 2026: Yurt Dışı ve Remote Staj mı, Ulusal Staj mı?',
+    description: 'Uluslararası staj programı 2026 rehberi: yurt dışı staj ile Ulusal Staj Programı arasındaki farklar, remote staj imkânları ve hangisini seçmen gerektiği. Kariyer koçundan karşılaştırmalı rehber.',
+    tag: 'Kariyer Rehberi',
+    readTime: '9 dk',
+    sections: [
+      {
+        heading: 'Mezun olmadan önce fark yaratmak istiyorsan, bu yazı sana',
+        body: `Bir eğitim koçu olarak kampüslerde, kütüphanelerde ve kahve eşliğinde onlarca öğrenciyle konuşuyorum. Konu dönüp dolaşıp hep aynı yere geliyor: "Hocam, mezun olmadan önce nasıl fark yaratabilirim?"\n\nCevap her seferinde aynı: Doğru staj tecrübesi.\n\nAma 2026'da "herhangi bir staj" artık yetmiyor. Karşına iki farklı kulvarda iki büyük fırsat çıkıyor: Bir tarafta devletin sunduğu Ulusal Staj Programı (USP), diğer tarafta Singapur merkezli teknoloji grubu MGN Networks bünyesinde geliştirilen, yapay zeka destekli uluslararası staj platformu Eduentry.ai.\n\nHangisi sana göre? Bu yazıda lokasyon, dil, kullanılan araçlar ve kariyer hedeflerin açısından iki yolu karşılaştıracağım — ve en sonunda net bir karar çerçevesi sunacağım.`,
+      },
+      {
+        heading: "Uluslararası Staj Nedir ve 2026'da Neden Bu Kadar Önemli?",
+        body: `Uluslararası staj; Türkiye sınırlarının dışındaki bir şirkette veya uzaktan (remote) çalışarak uluslararası standartlarda deneyim kazanma sürecidir. Yurt dışı ofise gitmek zorunlu değildir — remote staj imkânları sayesinde kampüsünden ayrılmadan küresel bir ekipte yer alabilirsin.\n\n2026'da uluslararası stajın önemi neden arttı? Birkaç somut neden:\n\n**1. İşverenler araç biliyor musun diye soruyor.** Slack, Jira, GitHub, Notion — bunlar artık CV'de "bonus" değil, temel beklenti. Uluslararası staj bu araçları gerçek iş ortamında kullanmayı öğretiyor.\n\n**2. İngilizce artık yeterli değil, kanıtlanması gerekiyor.** B2 sertifikan var ama hiç İngilizce iş ortamında çalışmadın mı? İşverenler farkı anlıyor. Uluslararası staj bu boşluğu kapatıyor.\n\n**3. Küresel network, lokal ağdan daha hızlı büyüyor.** Singapur, Londra veya Amsterdam'daki bir ekiple çalışmış olmak, seni hem yurt içi hem yurt dışı fırsatlar için görünür kılıyor.`,
+      },
+      {
+        heading: "Ulusal Staj Programı (USP): Türkiye'de Güçlü Bir Başlangıç",
+        body: `Ulusal Staj Programı, Cumhurbaşkanlığı İnsan Kaynakları Ofisi koordinesinde yürütülen, liyakat esaslı ve objektif bir eşleşme sunan millî kariyer platformudur. Türkiye'de kariyerine güçlü bir zemin kurmak isteyenler için doğru adrestir.\n\n**Güçlü yönleri:**\n- Türkiye'deki kamu ve özel sektörün kapılarını açar\n- Torpilsiz, yetkinlik esaslı sistem\n- Yasal güvence: iş kazası sigortası ve stajyer ödemesi dahil\n- Türkçe kurumsal iletişim ve yerel iş hukuku deneyimi\n- Kariyer Kapısı üzerinden kolay başvuru\n\n**Dikkat edilmesi gerekenler:**\n- Çalışma modeli fiziksel ofis varlığı gerektirir\n- Kullanılan araçlar genellikle MS Office ve yerel kurumsal sistemler\n- Uluslararası network oluşturma fırsatı sınırlı\n\nKoç Notu: Türkiye piyasasında kariyer kurmak, yerel kurumsal yapıları öğrenmek ve güçlü bir CV referansı edinmek istiyorsan USP mükemmel bir ilk adım.`,
+      },
+      {
+        heading: 'Uluslararası Staj (Eduentry.ai): Sınır Ötesi Kariyer Fırsatı',
+        body: `Singapur merkezli MGN Networks teknoloji grubunun geliştirdiği Eduentry.ai, yapay zeka tabanlı değerlendirme ve eşleşme algoritmasıyla çalışan yeni nesil bir uluslararası staj platformudur. Hedefin sınırları aşmak ve uluslararası ölçekteki şirketlerin radarına girmekse bu platform tam sana göre.\n\n**Güçlü yönleri:**\n- Tamamen remote staj imkânı — kampüsten ayrılmana gerek yok\n- Singapur, Asya-Pasifik ve Avrupa merkezli projeler\n- Slack, Jira, GitHub, Notion, Figma gibi küresel araçları gerçek iş ortamında öğrenme\n- Uluslararası İngilizce iş ortamı ve çok kültürlü ekip deneyimi\n- Yapay zeka destekli adaptif değerlendirme — torpilsiz, yetkinlik odaklı seçim\n- 20 dakikalık ücretsiz bir testle başvuru\n\n**Dikkat edilmesi gerekenler:**\n- İngilizce iletişim becerisi gerektirir\n- Uzaktan çalışma disiplini ve öz motivasyon şart\n- Seçim rekabetli: en iyi %10 kabul edilir\n\nKoç Notu: Eduentry.ai sadece bir staj bulma aracı değil; uluslararası düzeyde işe hazır olup olmadığının nesnel bir aynası. MGN Networks'ün küresel ağı seni dünya standartlarında test ediyor.`,
+      },
+      {
+        heading: 'USP ile Uluslararası Staj: Detaylı Karşılaştırma',
+        body: `Hangisinin sana daha uygun olduğuna karar vermeden önce temel farkları yan yana görelim.\n\n**Lokasyon & Çalışma Modeli**\n- USP: Türkiye içi, fiziksel ofis varlığı\n- Eduentry.ai: Küresel, tam remote veya hibrit\n\n**İletişim Dili**\n- USP: Türkçe, kurumsal yerel iletişim\n- Eduentry.ai: İleri düzey İngilizce, uluslararası iş dili\n\n**Kullanılan Araçlar**\n- USP: MS Office, yerel ERP/CRM sistemleri\n- Eduentry.ai: Slack, Jira, GitHub, Notion, Figma, AI araçları\n\n**Değerlendirme Yöntemi**\n- USP: Not ortalaması ve akademik/sosyal başarı puanı\n- Eduentry.ai: Yapay zeka destekli adaptif yetkinlik testi\n\n**Kazandırdığı Vizyon**\n- USP: Türkiye iş piyasası, kurumsal mevzuat ve yerel network\n- Eduentry.ai: Küresel teknoloji kültürü, remote çalışma disiplini, uluslararası network\n\n**CV'ye Katkısı**\n- USP: Yerli işverenlere güçlü referans\n- Eduentry.ai: Hem yerli hem yabancı işverenlere doğrulanmış uluslararası deneyim`,
+      },
+      {
+        heading: 'Remote Staj İmkânları: Kampüsten Çıkmadan Dünyaya Açıl',
+        body: `"Yurt dışı staj yapmak istiyorum ama maddi imkânım yok" diyenlerin sayısı azımsanmaz. İşte tam burada remote staj imkânları devreye giriyor.\n\nEduentry.ai modelinde stajın tamamen uzaktan yürütülüyor. Singapur ofisine uçman gerekmiyor. Yurt dışı vizesi, konaklama veya uçak bileti sorunu yok. Laptop'ın ve internet bağlantın varsa, uluslararası bir ekipte yer alabilirsin.\n\nBu ne anlama geliyor? Aynı anda üniversitede okurken, hatta dönem sonu sınavlarına hazırlanırken küresel bir projede çalışmak mümkün. Remote staj imkânları, uluslararası deneyimi artık bir ayrıcalık olmaktan çıkarıp herkes için erişilebilir hale getiriyor.\n\nRemote çalışmanın getirdiği ek beceriler de CV'nde güçlü bir yer tutuyor: asenkron iletişim, zaman yönetimi, çok zaman dilimli takım koordinasyonu. Bunlar 2026 iş dünyasının en çok aradığı soft skills arasında.`,
+      },
+      {
+        heading: 'Hangisini Seçmelisin? Koçun Karar Rehberi',
+        body: `Karar vermek için sana üç soru soruyorum. Cevaplarına göre yolun netleşiyor.\n\n**"Hedefim Türkiye'de güçlü bir kurumda kariyer kurmak" diyorsan:**\nUSP birinci tercihin olmalı. Fiziksel sahada bulunmak, Türkçe kurumsal dili öğrenmek ve yerel piyasada güçlü referanslar edinmek sana sağlam bir zemin kuruyor.\n\n**"Yurt dışında veya remote çalışmak, uluslararası araçları kullanmak istiyorum" diyorsan:**\nEduentry.ai senin kulvarın. Küresel şirketlerin beklediği araçlara hakim olmak ve İngilizce iş ortamına girmek, rakiplerinin fersah fersah önüne geçirir.\n\n**"İkisini de istiyorum" diyorsan:**\nHarika. Çift kanat stratejisi seni bekliyor.`,
+      },
+      {
+        heading: 'Çift Kanat Stratejisi: Hem Ulusal Hem Uluslararası',
+        body: `En zeki kariyer hamlesi ikisini birden kullanmak. Ve bu düşündüğünden çok daha mümkün.\n\nDönem içinde USP ile Türkiye'deki köklü bir kurumda saha deneyimi edinirken, yazın veya eş zamanlı olarak Eduentry.ai üzerinden MGN Networks ağıyla uluslararası bir projeye uzaktan katkı sunabilirsin.\n\nSonuç? CV'nde hem güçlü yerel referans hem doğrulanmış uluslararası deneyim var. İşveren görüşmelerinde hem Türkçe kurumsal iletişim hem İngilizce profesyonel ortam deneyimini anlatabiliyorsun.\n\n2026'da şirketler artık sadece diplomana bakmıyor. Hangi araçları bildiğine, hangi dilde problem çözebildiğine ve nereden çalışırsan çalış verim üretip üretemediğine bakıyor. Çift kanat stratejisi bu üç soruya en güçlü yanıtı veriyor.\n\nKariyerini şansa bırakma. Seçimini yap, profilini güncelle ve harekete geç — her iki yol da seni bekliyor.`,
+      },
+    ],
+    cta: { label: 'Uluslararası Staj için Başvur →', href: '/work-experience/apply' },
+  },
+  {
     slug: 'ulusal-staj-programi-rehberi',
     title: 'Ulusal Staj Programı 2026: Nedir, Kimler Başvurabilir, Ne Zaman?',
     description: 'Ulusal Staj Programı (USP) 2026 nedir, başvuru şartları nelerdir, kimler başvurabilir ve ne zaman başvurulur? Kariyer koçu bakış açısıyla adım adım rehber.',

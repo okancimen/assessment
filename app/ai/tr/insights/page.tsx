@@ -192,6 +192,20 @@ export default function InsightsTRPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <Link
+              href="/tr/insights/uluslararasi-staj-programi-2026"
+              className="group flex flex-col justify-between rounded-2xl p-6 border border-white/[0.07] bg-white/[0.02] hover:bg-white/[0.05] hover:border-[#34D399]/30 transition-all"
+            >
+              <div>
+                <h3 className="text-white font-semibold text-sm leading-snug mb-2 group-hover:text-white/90">
+                  Uluslararası Staj 2026: Yurt Dışı ve Remote Staj mı, Ulusal Staj mı?
+                </h3>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  USP ile Eduentry.ai arasındaki farklar, remote staj imkânları ve kariyer hedeflerine göre doğru seçim. Kariyer koçundan karşılaştırmalı rehber.
+                </p>
+              </div>
+              <p className="mt-4 text-xs font-medium text-[#34D399] group-hover:underline">Oku →</p>
+            </Link>
+            <Link
               href="/tr/insights/ulusal-staj-programi-rehberi"
               className="group flex flex-col justify-between rounded-2xl p-6 border border-white/[0.07] bg-white/[0.02] hover:bg-white/[0.05] hover:border-[#34D399]/30 transition-all"
             >
