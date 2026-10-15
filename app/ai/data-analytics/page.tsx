@@ -72,7 +72,7 @@ const DOMAIN_TOPICS = [
 const FAQS = [
   {
     q: 'Do I need to know Python or SQL to take the Data Analytics track?',
-    a: 'Not at the level you might think. The SQL questions ask you to read and interpret queries — not write them from scratch. Python doesn\'t appear in the domain section. If you\'ve used Excel seriously, worked with Google Sheets formulas, or done any data work at school, you\'re well-prepared.',
+    a: "Not at the level you might think. The SQL questions ask you to read and interpret queries — not write them from scratch. Python doesn't appear in the domain section. If you've used Excel seriously, worked with Google Sheets formulas, or done any data work at school, you're well-prepared.",
   },
   {
     q: 'What companies hire student data interns in the UK?',
@@ -80,7 +80,7 @@ const FAQS = [
   },
   {
     q: 'How is data analytics different from just using Excel?',
-    a: 'Excel is a tool — data analytics is a way of thinking. The domain tests your ability to ask the right question of a dataset, spot errors, choose the right visualisation, and communicate what the data actually means. Those skills apply whether you\'re using Excel, Python, Power BI, or any other tool.',
+    a: "Excel is a tool — data analytics is a way of thinking. The domain tests your ability to ask the right question of a dataset, spot errors, choose the right visualisation, and communicate what the data actually means. Those skills apply whether you're using Excel, Python, Power BI, or any other tool.",
   },
   {
     q: 'Will the readiness report help me get into a Data Science or Statistics degree?',
@@ -153,7 +153,7 @@ export default function DataAnalyticsTrackPage() {
   }
 
   return (
-    <main className="flex-1">
+    <main className="flex-1 bg-[#050505] text-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
@@ -161,53 +161,59 @@ export default function DataAnalyticsTrackPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(programSchema) }} />
 
       {/* Hero */}
-      <section className="pt-24 pb-20 px-6 max-w-5xl mx-auto">
-        <nav className="text-sm text-[#6e6e73] mb-12">
-          <Link href="/" className="hover:text-[#1d1d1f]">Home</Link>
-          <span className="mx-2">›</span>
-          <span className="text-[#1d1d1f]">Data Analytics Track</span>
-        </nav>
+      <section className="relative overflow-hidden pt-24 pb-20 px-6">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.35]" style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] rounded-full bg-[#6366F1] opacity-[0.07] blur-[120px]" />
+        <div className="max-w-5xl mx-auto relative z-10">
+          <nav className="text-sm text-white/40 mb-12">
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <span className="mx-2">/</span>
+            <span className="text-white/80">Data Analytics Track</span>
+          </nav>
 
-        <div className="inline-flex items-center gap-2 bg-[#eef2ff] text-[#4F46E5] text-sm font-semibold px-4 py-2 rounded-full mb-8">
-          <span className="w-2 h-2 bg-[#4F46E5] rounded-full inline-block" />
-          Data Analytics Track
-        </div>
+          <div className="inline-flex items-center gap-2 mb-8">
+            <span className="inline-flex items-center gap-2 border border-white/[0.12] bg-white/[0.04] text-[11px] font-mono text-white/60 px-3.5 py-1.5 rounded-full tracking-[0.12em] uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#818CF8]" />
+              Data Analytics Track
+            </span>
+          </div>
 
-        <h1 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight leading-[1.05] mb-6 max-w-3xl">
-          Prove you can turn data into decisions.
-        </h1>
+          <h1 className="text-5xl sm:text-6xl font-bold text-white tracking-tight leading-[1.05] mb-6 max-w-3xl">
+            Prove you can turn data into decisions.
+          </h1>
 
-        <p className="text-xl text-[#6e6e73] leading-relaxed max-w-2xl mb-10">
-          Data analyst roles grew 40% in the UK between 2022 and 2024 — yet 82% of companies say they can't find candidates with the right skills. Our free assessment measures your data literacy, statistical reasoning, and insight communication, and produces a report employers can act on.
-        </p>
+          <p className="text-xl text-white/50 leading-relaxed max-w-2xl mb-10">
+            Data analyst roles grew 40% in the UK between 2022 and 2024 — yet 82% of companies say they can&apos;t find candidates with the right skills. Our free assessment measures your data literacy, statistical reasoning, and insight communication, and produces a report employers can act on.
+          </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 mb-12">
-          <CtaLink
-            href="/apply"
-            label="data_hero_cta"
-            className="bg-[#4F46E5] text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors text-lg text-center"
-          >
-            Apply free — Data Analytics track →
-          </CtaLink>
-          <Link
-            href="https://eduentry.com/blog"
-            className="border border-[#d2d2d7] text-[#1d1d1f] px-8 py-4 rounded-xl font-semibold hover:border-[#4F46E5]/50 transition-colors text-lg text-center"
-          >
-            Read internship guides
-          </Link>
-        </div>
+          <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <CtaLink
+              href="/apply"
+              label="data_hero_cta"
+              className="inline-flex items-center justify-center bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity text-lg shadow-[0_0_24px_rgba(99,102,241,0.3)]"
+            >
+              Apply free — Data Analytics track →
+            </CtaLink>
+            <Link
+              href="https://eduentry.com/blog"
+              className="border border-white/[0.12] bg-white/[0.04] text-white/80 px-8 py-4 rounded-xl font-semibold hover:bg-white/[0.08] hover:border-white/[0.2] transition-all text-lg text-center"
+            >
+              Read internship guides
+            </Link>
+          </div>
 
-        <div className="flex flex-wrap gap-6 text-sm text-[#6e6e73]">
-          <span>✓ Free for all students</span>
-          <span>✓ Ages 14–18</span>
-          <span>✓ 20 minutes</span>
-          <span>✓ AI-scored instantly</span>
-          <span>✓ Personalised readiness report</span>
+          <div className="flex flex-wrap gap-6 text-sm text-white/40">
+            <span>✓ Free for all students</span>
+            <span>✓ Ages 14–18</span>
+            <span>✓ 20 minutes</span>
+            <span>✓ AI-scored instantly</span>
+            <span>✓ Personalised readiness report</span>
+          </div>
         </div>
       </section>
 
       {/* Stats strip */}
-      <section className="bg-[#1d1d1f] py-16 px-6">
+      <section className="py-16 px-6 border-t border-white/[0.04] bg-[#080808]">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
           {[
             { stat: '40%', label: 'growth in data analyst roles in the UK 2022–2024' },
@@ -217,57 +223,59 @@ export default function DataAnalyticsTrackPage() {
           ].map(({ stat, label }) => (
             <div key={stat}>
               <div className="text-4xl font-bold text-white mb-2">{stat}</div>
-              <div className="text-[#a1a1a7] text-sm leading-snug">{label}</div>
+              <div className="text-white/40 text-sm leading-snug">{label}</div>
             </div>
           ))}
         </div>
       </section>
 
       {/* What we assess */}
-      <section className="py-24 px-6 max-w-5xl mx-auto">
-        <div className="mb-14">
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
-            What the Data Analytics domain tests.
-          </h2>
-          <p className="text-xl text-[#6e6e73] max-w-2xl leading-relaxed">
-            10 scenario-based questions covering every skill a junior data analyst uses in their first week — from reading charts to writing SQL logic to communicating a finding to a non-technical stakeholder.
+      <section className="py-24 px-6 border-t border-white/[0.04]">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-14">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-4">
+              What the Data Analytics domain tests.
+            </h2>
+            <p className="text-xl text-white/50 max-w-2xl leading-relaxed">
+              10 scenario-based questions covering every skill a junior data analyst uses in their first week — from reading charts to writing SQL logic to communicating a finding to a non-technical stakeholder.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-4">
+            {DOMAIN_TOPICS.map(({ n, topic, detail }) => (
+              <div key={n} className="border border-white/[0.08] rounded-2xl p-6 hover:border-[#4F46E5]/50 transition-colors">
+                <div className="text-xs font-mono text-[#818CF8] font-semibold mb-3">{n}</div>
+                <h3 className="font-semibold text-white mb-2">{topic}</h3>
+                <p className="text-sm text-white/50 leading-relaxed">{detail}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-sm text-white/40 mt-8">
+            Plus 24 questions across General Aptitude (verbal + numerical reasoning), Workplace Skills (situational judgement), and an Interest Profile to confirm your track fit.{' '}
+            <Link href="/" className="text-[#818CF8] hover:underline">See the full assessment breakdown →</Link>
           </p>
         </div>
-
-        <div className="grid sm:grid-cols-2 gap-4">
-          {DOMAIN_TOPICS.map(({ n, topic, detail }) => (
-            <div key={n} className="border border-[#d2d2d7] rounded-2xl p-6 hover:border-[#4F46E5]/40 transition-colors">
-              <div className="text-xs font-mono text-[#4F46E5] font-semibold mb-3">{n}</div>
-              <h3 className="font-semibold text-[#1d1d1f] mb-2">{topic}</h3>
-              <p className="text-sm text-[#6e6e73] leading-relaxed">{detail}</p>
-            </div>
-          ))}
-        </div>
-
-        <p className="text-sm text-[#6e6e73] mt-8">
-          Plus 24 questions across General Aptitude (verbal + numerical reasoning), Workplace Skills (situational judgement), and an Interest Profile to confirm your track fit.{' '}
-          <Link href="/" className="text-[#4F46E5] hover:underline">See the full assessment breakdown →</Link>
-        </p>
       </section>
 
       {/* Career paths */}
-      <section className="bg-[#f5f5f7] py-24 px-6">
+      <section className="py-24 px-6 border-t border-white/[0.04] bg-[#080808]">
         <div className="max-w-5xl mx-auto">
           <div className="mb-14">
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-4">
               Where a Data Analytics internship leads.
             </h2>
-            <p className="text-xl text-[#6e6e73] max-w-2xl leading-relaxed">
+            <p className="text-xl text-white/50 max-w-2xl leading-relaxed">
               Data literacy is the most transferable skill in the modern economy. These are the roles our top Data Analytics track candidates pursue — across sectors, not just tech.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {ROLES.map(({ title, skills, salary }) => (
-              <div key={title} className="bg-white rounded-2xl p-6 border border-[#d2d2d7]">
-                <h3 className="font-bold text-[#1d1d1f] mb-2">{title}</h3>
-                <p className="text-sm text-[#6e6e73] leading-relaxed mb-4">{skills}</p>
-                <div className="text-sm font-semibold text-[#4F46E5]">{salary}</div>
+              <div key={title} className="bg-[#0a0a0a] rounded-2xl p-6 border border-white/[0.08]">
+                <h3 className="font-bold text-white mb-2">{title}</h3>
+                <p className="text-sm text-white/50 leading-relaxed mb-4">{skills}</p>
+                <div className="text-sm font-semibold text-[#818CF8]">{salary}</div>
               </div>
             ))}
           </div>
@@ -276,7 +284,7 @@ export default function DataAnalyticsTrackPage() {
             <CtaLink
               href="/apply"
               label="data_roles_cta"
-              className="inline-block bg-[#4F46E5] text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors text-lg"
+              className="inline-block bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity text-lg shadow-[0_0_24px_rgba(99,102,241,0.3)]"
             >
               Start your Data Analytics assessment →
             </CtaLink>
@@ -285,57 +293,59 @@ export default function DataAnalyticsTrackPage() {
       </section>
 
       {/* Who it's for */}
-      <section className="py-24 px-6 max-w-5xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
-          Who the Data Analytics track is for.
-        </h2>
-        <p className="text-xl text-[#6e6e73] mb-14 max-w-2xl leading-relaxed">
-          You don't need to be a mathematician — you need to be someone who asks "what does this data actually tell us?" If that's your natural instinct, this track is your competitive advantage.
-        </p>
+      <section className="py-24 px-6 border-t border-white/[0.04]">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-4">
+            Who the Data Analytics track is for.
+          </h2>
+          <p className="text-xl text-white/50 mb-14 max-w-2xl leading-relaxed">
+            You don&apos;t need to be a mathematician — you need to be someone who asks &quot;what does this data actually tell us?&quot; If that&apos;s your natural instinct, this track is your competitive advantage.
+          </p>
 
-        <div className="grid sm:grid-cols-3 gap-6">
-          {[
-            {
-              title: 'The numbers-curious student',
-              body: 'You naturally look for patterns in information. You\'ve used Excel beyond the basics, you notice when a statistic in an article doesn\'t add up, and you find yourself asking "how do they know that?" This assessment validates that instinct with a verified score.',
-            },
-            {
-              title: 'The Maths or Science student',
-              body: 'You\'re strong in Maths, Statistics, Physics, or Biology and you\'re looking for a career path that applies those skills in a business context. Data analytics is that bridge — and employers are actively looking for analytical students with real-world exposure.',
-            },
-            {
-              title: 'The spreadsheet power user',
-              body: 'You\'ve used Google Sheets or Excel seriously — building models, tracking data, creating charts for a project or enterprise. You have practical data instincts that the assessment is specifically designed to reward.',
-            },
-          ].map(({ title, body }) => (
-            <div key={title} className="border-t-2 border-[#4F46E5] pt-6">
-              <h3 className="font-bold text-[#1d1d1f] mb-3">{title}</h3>
-              <p className="text-[#6e6e73] text-sm leading-relaxed">{body}</p>
-            </div>
-          ))}
+          <div className="grid sm:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'The numbers-curious student',
+                body: "You naturally look for patterns in information. You've used Excel beyond the basics, you notice when a statistic in an article doesn't add up, and you find yourself asking \"how do they know that?\" This assessment validates that instinct with a verified score.",
+              },
+              {
+                title: 'The Maths or Science student',
+                body: "You're strong in Maths, Statistics, Physics, or Biology and you're looking for a career path that applies those skills in a business context. Data analytics is that bridge — and employers are actively looking for analytical students with real-world exposure.",
+              },
+              {
+                title: 'The spreadsheet power user',
+                body: "You've used Google Sheets or Excel seriously — building models, tracking data, creating charts for a project or enterprise. You have practical data instincts that the assessment is specifically designed to reward.",
+              },
+            ].map(({ title, body }) => (
+              <div key={title} className="border-t-2 border-[#4F46E5] pt-6">
+                <h3 className="font-bold text-white mb-3">{title}</h3>
+                <p className="text-white/50 text-sm leading-relaxed">{body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Full assessment phases */}
-      <section className="bg-[#f5f5f7] py-24 px-6">
+      <section className="py-24 px-6 border-t border-white/[0.04] bg-[#080808]">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-4">
             All 34 questions, broken down.
           </h2>
-          <p className="text-xl text-[#6e6e73] mb-12 max-w-2xl leading-relaxed">
+          <p className="text-xl text-white/50 mb-12 max-w-2xl leading-relaxed">
             The adaptive engine learns your level as you progress, so every question is calibrated to push you accurately — not just recycle easy items.
           </p>
 
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#d2d2d7]">
-                  <th className="text-left py-4 pr-8 font-semibold text-[#1d1d1f]">Phase</th>
-                  <th className="text-left py-4 pr-8 font-semibold text-[#1d1d1f]">Questions</th>
-                  <th className="text-left py-4 font-semibold text-[#1d1d1f]">What we measure</th>
+                <tr className="border-b border-white/[0.08]">
+                  <th className="text-left py-4 pr-8 font-semibold text-white">Phase</th>
+                  <th className="text-left py-4 pr-8 font-semibold text-white">Questions</th>
+                  <th className="text-left py-4 font-semibold text-white">What we measure</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#d2d2d7]">
+              <tbody className="divide-y divide-white/[0.08]">
                 {[
                   { phase: 'General Aptitude', q: 10, measure: 'Verbal reasoning, numerical reasoning, logical inference' },
                   { phase: 'Data Analytics Domain', q: 10, measure: 'Charts, statistics, SQL, visualisation, data ethics' },
@@ -343,9 +353,9 @@ export default function DataAnalyticsTrackPage() {
                   { phase: 'Interest Profile', q: 6, measure: 'Track alignment, preferred data tools, working style' },
                 ].map(({ phase, q, measure }) => (
                   <tr key={phase}>
-                    <td className="py-4 pr-8 font-medium text-[#1d1d1f]">{phase}</td>
-                    <td className="py-4 pr-8 text-[#6e6e73]">{q}</td>
-                    <td className="py-4 text-[#6e6e73]">{measure}</td>
+                    <td className="py-4 pr-8 font-medium text-white">{phase}</td>
+                    <td className="py-4 pr-8 text-white/50">{q}</td>
+                    <td className="py-4 text-white/50">{measure}</td>
                   </tr>
                 ))}
               </tbody>
@@ -356,7 +366,7 @@ export default function DataAnalyticsTrackPage() {
             <CtaLink
               href="/apply"
               label="data_phases_cta"
-              className="inline-block bg-[#4F46E5] text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors text-lg"
+              className="inline-block bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity text-lg shadow-[0_0_24px_rgba(99,102,241,0.3)]"
             >
               Take the assessment free →
             </CtaLink>
@@ -365,42 +375,44 @@ export default function DataAnalyticsTrackPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 px-6 max-w-3xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-12">
-          Frequently asked questions.
-        </h2>
-        <div className="space-y-4">
-          {FAQS.map(({ q, a }) => (
-            <details key={q} className="border border-[#d2d2d7] rounded-xl group">
-              <summary className="cursor-pointer px-6 py-5 font-semibold text-[#1d1d1f] list-none flex items-center justify-between">
-                {q}
-                <span className="ml-4 text-[#6e6e73] text-lg transition-transform group-open:rotate-45">+</span>
-              </summary>
-              <div className="px-6 pb-5 text-[#6e6e73] leading-relaxed">{a}</div>
-            </details>
-          ))}
+      <section className="py-24 px-6 border-t border-white/[0.04]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-12">
+            Frequently asked questions.
+          </h2>
+          <div className="space-y-4">
+            {FAQS.map(({ q, a }) => (
+              <details key={q} className="border border-white/[0.08] rounded-xl group">
+                <summary className="cursor-pointer px-6 py-5 font-semibold text-white list-none flex items-center justify-between">
+                  {q}
+                  <span className="ml-4 text-white/40 text-lg transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <div className="px-6 pb-5 text-white/50 leading-relaxed">{a}</div>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Blog reading */}
       {internshipPosts.length > 0 && (
-        <section className="py-16 px-6">
+        <section className="py-16 px-6 border-t border-white/[0.04]">
           <div className="max-w-5xl mx-auto">
-            <p className="text-sm font-semibold text-[#6e6e73] uppercase tracking-widest mb-6">Further reading</p>
+            <p className="text-sm font-semibold text-white/40 uppercase tracking-widest mb-6">Further reading</p>
             <div className="grid sm:grid-cols-2 gap-4">
               {internshipPosts.map(post => (
                 <Link
                   key={post.slug}
                   href={`https://eduentry.com/blog/${post.slug}`}
-                  className="border border-[#d2d2d7] rounded-2xl p-6 hover:border-[#4F46E5]/40 hover:shadow-sm transition-all"
+                  className="border border-white/[0.08] rounded-2xl p-6 hover:border-[#4F46E5]/50 transition-all"
                 >
                   <div className="flex flex-wrap gap-2 mb-3">
                     {post.tags.slice(0, 2).map(tag => (
-                      <span key={tag} className="text-xs font-medium text-[#4F46E5] bg-[#eef2ff] rounded-full px-2.5 py-0.5">{tag}</span>
+                      <span key={tag} className="text-xs font-medium text-[#818CF8] bg-[#4F46E5]/10 rounded-full px-2.5 py-0.5">{tag}</span>
                     ))}
                   </div>
-                  <h3 className="font-bold text-[#1d1d1f] leading-snug mb-2 text-sm">{post.shortTitle}</h3>
-                  <p className="text-xs text-[#6e6e73] leading-relaxed line-clamp-2">{post.description}</p>
+                  <h3 className="font-bold text-white leading-snug mb-2 text-sm">{post.shortTitle}</h3>
+                  <p className="text-xs text-white/50 leading-relaxed line-clamp-2">{post.description}</p>
                 </Link>
               ))}
             </div>
@@ -409,18 +421,18 @@ export default function DataAnalyticsTrackPage() {
       )}
 
       {/* Other tracks */}
-      <section className="bg-[#f5f5f7] py-16 px-6">
+      <section className="py-16 px-6 border-t border-white/[0.04] bg-[#080808]">
         <div className="max-w-5xl mx-auto">
-          <p className="text-sm font-semibold text-[#6e6e73] uppercase tracking-widest mb-6">Other internship tracks</p>
+          <p className="text-sm font-semibold text-white/40 uppercase tracking-widest mb-6">Other internship tracks</p>
           <div className="grid sm:grid-cols-3 gap-4">
             {OTHER_TRACKS.map(({ href, label, desc }) => (
               <Link
                 key={href}
                 href={href}
-                className="bg-white border border-[#d2d2d7] rounded-xl p-5 hover:border-[#4F46E5]/40 transition-colors"
+                className="bg-white/[0.03] border border-white/[0.08] rounded-xl p-5 hover:border-[#4F46E5]/50 transition-colors"
               >
-                <div className="font-semibold text-[#1d1d1f] mb-1">{label}</div>
-                <div className="text-sm text-[#6e6e73]">{desc}</div>
+                <div className="font-semibold text-white mb-1">{label}</div>
+                <div className="text-sm text-white/50">{desc}</div>
               </Link>
             ))}
           </div>
@@ -428,21 +440,23 @@ export default function DataAnalyticsTrackPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-6 max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-6">
-          Your data internship starts here.
-        </h2>
-        <p className="text-xl text-[#6e6e73] mb-10 max-w-xl mx-auto leading-relaxed">
-          Free 34-question assessment. AI readiness report. Real placement opportunities. No CV required to start.
-        </p>
-        <CtaLink
-          href="/apply"
-          label="data_final_cta"
-          className="inline-block bg-[#4F46E5] text-white px-10 py-5 rounded-xl font-semibold hover:bg-indigo-700 transition-colors text-xl"
-        >
-          Apply free — Data Analytics track →
-        </CtaLink>
-        <p className="mt-6 text-sm text-[#6e6e73]">Free for all students aged 14–18 · Takes 20 minutes · Instant results</p>
+      <section className="py-24 px-6 border-t border-white/[0.04]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-6">
+            Your data internship starts here.
+          </h2>
+          <p className="text-xl text-white/50 mb-10 max-w-xl mx-auto leading-relaxed">
+            Free 34-question assessment. AI readiness report. Real placement opportunities. No CV required to start.
+          </p>
+          <CtaLink
+            href="/apply"
+            label="data_final_cta"
+            className="inline-block bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-10 py-5 rounded-xl font-semibold hover:opacity-90 transition-opacity text-xl shadow-[0_0_24px_rgba(99,102,241,0.3)]"
+          >
+            Apply free — Data Analytics track →
+          </CtaLink>
+          <p className="mt-6 text-sm text-white/40">Free for all students aged 14–18 · Takes 20 minutes · Instant results</p>
+        </div>
       </section>
     </main>
   )

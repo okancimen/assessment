@@ -126,11 +126,10 @@ export default function TrackPageTemplate({ track, locale }: Props) {
   }
 
   const homePath = `/${locale}`
-  // The blog lives on eduentry.com
   const blogPath = `https://eduentry.com/${locale}/blog`
 
   return (
-    <main className="flex-1" lang={locale} dir={locale === 'ar' ? 'rtl' : undefined}>
+    <main className="flex-1 bg-[#050505] text-white" lang={locale} dir={locale === 'ar' ? 'rtl' : undefined}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
@@ -142,95 +141,103 @@ export default function TrackPageTemplate({ track, locale }: Props) {
       <link rel="alternate" hrefLang="x-default" href={EN_URL} />
 
       {/* Hero */}
-      <section className="pt-24 pb-20 px-6 max-w-5xl mx-auto">
-        <nav className="text-sm text-[#6e6e73] mb-12">
-          <Link href={homePath} className="hover:text-[#1d1d1f]">{d.breadcrumb.home}</Link>
-          <span className="mx-2">›</span>
-          <span className="text-[#1d1d1f]">{d.breadcrumb.track}</span>
-        </nav>
+      <section className="relative overflow-hidden pt-24 pb-20 px-6">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.35]" style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] rounded-full bg-[#4F46E5] opacity-[0.07] blur-[120px]" />
+        <div className="max-w-5xl mx-auto relative z-10">
+          <nav className="text-sm text-white/40 mb-12">
+            <Link href={homePath} className="hover:text-white transition-colors">{d.breadcrumb.home}</Link>
+            <span className="mx-2">/</span>
+            <span className="text-white/80">{d.breadcrumb.track}</span>
+          </nav>
 
-        <div className="inline-flex items-center gap-2 bg-[#eef2ff] text-[#4F46E5] text-sm font-semibold px-4 py-2 rounded-full mb-8">
-          <span className="w-2 h-2 bg-[#4F46E5] rounded-full inline-block" />
-          {d.hero.badge}
-        </div>
+          <div className="inline-flex items-center gap-2 mb-8">
+            <span className="inline-flex items-center gap-2 border border-white/[0.12] bg-white/[0.04] text-[11px] font-mono text-white/60 px-3.5 py-1.5 rounded-full tracking-[0.12em] uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#818CF8]" />
+              {d.hero.badge}
+            </span>
+          </div>
 
-        <h1 className="text-5xl sm:text-6xl font-bold text-[#1d1d1f] tracking-tight leading-[1.05] mb-6 max-w-3xl">
-          {d.hero.h1}
-        </h1>
+          <h1 className="text-5xl sm:text-6xl font-bold text-white tracking-tight leading-[1.05] mb-6 max-w-3xl">
+            {d.hero.h1}
+          </h1>
 
-        <p className="text-xl text-[#6e6e73] leading-relaxed max-w-2xl mb-10">
-          {d.hero.p}
-        </p>
+          <p className="text-xl text-white/50 leading-relaxed max-w-2xl mb-10">
+            {d.hero.p}
+          </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 mb-12">
-          <CtaLink
-            href="/apply"
-            label={ctaLabel}
-            className="bg-[#4F46E5] text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors text-lg text-center"
-          >
-            {d.hero.cta}
-          </CtaLink>
-          <Link
-            href={blogPath}
-            className="border border-[#d2d2d7] text-[#1d1d1f] px-8 py-4 rounded-xl font-semibold hover:border-[#4F46E5]/50 transition-colors text-lg text-center"
-          >
-            {d.hero.blogLink}
-          </Link>
-        </div>
+          <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <CtaLink
+              href="/apply"
+              label={ctaLabel}
+              className="inline-flex items-center justify-center bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity text-lg shadow-[0_0_24px_rgba(99,102,241,0.3)]"
+            >
+              {d.hero.cta}
+            </CtaLink>
+            <Link
+              href={blogPath}
+              className="border border-white/[0.12] bg-white/[0.04] text-white/80 px-8 py-4 rounded-xl font-semibold hover:bg-white/[0.08] hover:border-white/[0.2] transition-all text-lg text-center"
+            >
+              {d.hero.blogLink}
+            </Link>
+          </div>
 
-        <div className="flex flex-wrap gap-6 text-sm text-[#6e6e73]">
-          {d.hero.trust.map(t => <span key={t}>{t}</span>)}
+          <div className="flex flex-wrap gap-6 text-sm text-white/40">
+            {d.hero.trust.map(t => <span key={t}>{t}</span>)}
+          </div>
         </div>
       </section>
 
       {/* Stats strip */}
-      <section className="bg-[#1d1d1f] py-16 px-6">
+      <section className="py-16 px-6 border-t border-white/[0.04] bg-[#080808]">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
           {d.stats.map(({ stat, label }) => (
             <div key={stat}>
               <div className="text-4xl font-bold text-white mb-2">{stat}</div>
-              <div className="text-[#a1a1a7] text-sm leading-snug">{label}</div>
+              <div className="text-white/40 text-sm leading-snug">{label}</div>
             </div>
           ))}
         </div>
       </section>
 
       {/* Domain */}
-      <section className="py-24 px-6 max-w-5xl mx-auto">
-        <div className="mb-14">
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
-            {d.domain.heading}
-          </h2>
-          <p className="text-xl text-[#6e6e73] max-w-2xl leading-relaxed">{d.domain.intro}</p>
-        </div>
+      <section className="py-24 px-6 border-t border-white/[0.04]">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-14">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-4">
+              {d.domain.heading}
+            </h2>
+            <p className="text-xl text-white/50 max-w-2xl leading-relaxed">{d.domain.intro}</p>
+          </div>
 
-        <div className="grid sm:grid-cols-2 gap-4">
-          {d.domain.topics.map(({ n, topic, detail }) => (
-            <div key={n} className="border border-[#d2d2d7] rounded-2xl p-6 hover:border-[#4F46E5]/40 transition-colors">
-              <div className="text-xs font-mono text-[#4F46E5] font-semibold mb-3">{n}</div>
-              <h3 className="font-semibold text-[#1d1d1f] mb-2">{topic}</h3>
-              <p className="text-sm text-[#6e6e73] leading-relaxed">{detail}</p>
-            </div>
-          ))}
+          <div className="grid sm:grid-cols-2 gap-4">
+            {d.domain.topics.map(({ n, topic, detail }) => (
+              <div key={n} className="border border-white/[0.08] rounded-2xl p-6 hover:border-[#4F46E5]/50 transition-colors">
+                <div className="text-xs font-mono text-[#818CF8] font-semibold mb-3">{n}</div>
+                <h3 className="font-semibold text-white mb-2">{topic}</h3>
+                <p className="text-sm text-white/50 leading-relaxed">{detail}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Career paths */}
-      <section className="bg-[#f5f5f7] py-24 px-6">
+      <section className="py-24 px-6 border-t border-white/[0.04] bg-[#080808]">
         <div className="max-w-5xl mx-auto">
           <div className="mb-14">
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-4">
               {d.roles.heading}
             </h2>
-            <p className="text-xl text-[#6e6e73] max-w-2xl leading-relaxed">{d.roles.intro}</p>
+            <p className="text-xl text-white/50 max-w-2xl leading-relaxed">{d.roles.intro}</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {d.roles.list.map(({ title, skills, salary }) => (
-              <div key={title} className="bg-white rounded-2xl p-6 border border-[#d2d2d7]">
-                <h3 className="font-bold text-[#1d1d1f] mb-2">{title}</h3>
-                <p className="text-sm text-[#6e6e73] leading-relaxed mb-4">{skills}</p>
-                <div className="text-sm font-semibold text-[#4F46E5]">{salary}</div>
+              <div key={title} className="bg-[#0a0a0a] rounded-2xl p-6 border border-white/[0.08]">
+                <h3 className="font-bold text-white mb-2">{title}</h3>
+                <p className="text-sm text-white/50 leading-relaxed mb-4">{skills}</p>
+                <div className="text-sm font-semibold text-[#818CF8]">{salary}</div>
               </div>
             ))}
           </div>
@@ -239,7 +246,7 @@ export default function TrackPageTemplate({ track, locale }: Props) {
             <CtaLink
               href="/apply"
               label={`${ctaLabel}_roles`}
-              className="inline-block bg-[#4F46E5] text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors text-lg"
+              className="inline-block bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity text-lg shadow-[0_0_24px_rgba(99,102,241,0.3)]"
             >
               {d.hero.cta}
             </CtaLink>
@@ -248,51 +255,53 @@ export default function TrackPageTemplate({ track, locale }: Props) {
       </section>
 
       {/* Who it's for */}
-      <section className="py-24 px-6 max-w-5xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
-          {d.whoFor.heading}
-        </h2>
-        <p className="text-xl text-[#6e6e73] mb-14 max-w-2xl leading-relaxed">{d.whoFor.intro}</p>
+      <section className="py-24 px-6 border-t border-white/[0.04]">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-4">
+            {d.whoFor.heading}
+          </h2>
+          <p className="text-xl text-white/50 mb-14 max-w-2xl leading-relaxed">{d.whoFor.intro}</p>
 
-        <div className="grid sm:grid-cols-3 gap-6">
-          {d.whoFor.profiles.map(({ title, body }) => (
-            <div key={title} className="border-t-2 border-[#4F46E5] pt-6">
-              <h3 className="font-bold text-[#1d1d1f] mb-3">{title}</h3>
-              <p className="text-[#6e6e73] text-sm leading-relaxed">{body}</p>
-            </div>
-          ))}
+          <div className="grid sm:grid-cols-3 gap-6">
+            {d.whoFor.profiles.map(({ title, body }) => (
+              <div key={title} className="border-t-2 border-[#4F46E5] pt-6">
+                <h3 className="font-bold text-white mb-3">{title}</h3>
+                <p className="text-white/50 text-sm leading-relaxed">{body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Phases table */}
-      <section className="bg-[#f5f5f7] py-24 px-6">
+      <section className="py-24 px-6 border-t border-white/[0.04] bg-[#080808]">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-4">
             {d.phases.heading}
           </h2>
-          <p className="text-xl text-[#6e6e73] mb-12 max-w-2xl leading-relaxed">{d.phases.intro}</p>
+          <p className="text-xl text-white/50 mb-12 max-w-2xl leading-relaxed">{d.phases.intro}</p>
 
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#d2d2d7]">
-                  <th className="text-left py-4 pr-8 font-semibold text-[#1d1d1f]">
+                <tr className="border-b border-white/[0.08]">
+                  <th className="text-left py-4 pr-8 font-semibold text-white">
                     {d.ui.phaseLabel}
                   </th>
-                  <th className="text-left py-4 pr-8 font-semibold text-[#1d1d1f]">
+                  <th className="text-left py-4 pr-8 font-semibold text-white">
                     {d.ui.questionsLabel}
                   </th>
-                  <th className="text-left py-4 font-semibold text-[#1d1d1f]">
+                  <th className="text-left py-4 font-semibold text-white">
                     {d.ui.measuresLabel}
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#d2d2d7]">
+              <tbody className="divide-y divide-white/[0.08]">
                 {d.phases.rows.map(({ phase, q, measure }) => (
                   <tr key={phase}>
-                    <td className="py-4 pr-8 font-medium text-[#1d1d1f]">{phase}</td>
-                    <td className="py-4 pr-8 text-[#6e6e73]">{q}</td>
-                    <td className="py-4 text-[#6e6e73]">{measure}</td>
+                    <td className="py-4 pr-8 font-medium text-white">{phase}</td>
+                    <td className="py-4 pr-8 text-white/50">{q}</td>
+                    <td className="py-4 text-white/50">{measure}</td>
                   </tr>
                 ))}
               </tbody>
@@ -303,7 +312,7 @@ export default function TrackPageTemplate({ track, locale }: Props) {
             <CtaLink
               href="/apply"
               label={`${ctaLabel}_phases`}
-              className="inline-block bg-[#4F46E5] text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors text-lg"
+              className="inline-block bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity text-lg shadow-[0_0_24px_rgba(99,102,241,0.3)]"
             >
               {d.ui.startCta}
             </CtaLink>
@@ -312,28 +321,30 @@ export default function TrackPageTemplate({ track, locale }: Props) {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 px-6 max-w-3xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-12">
-          {d.faq.heading}
-        </h2>
-        <div className="space-y-4">
-          {d.faq.list.map(({ q, a }) => (
-            <details key={q} className="border border-[#d2d2d7] rounded-xl group">
-              <summary className="cursor-pointer px-6 py-5 font-semibold text-[#1d1d1f] list-none flex items-center justify-between">
-                {q}
-                <span className="ml-4 text-[#6e6e73] text-lg transition-transform group-open:rotate-45">+</span>
-              </summary>
-              <div className="px-6 pb-5 text-[#6e6e73] leading-relaxed">{a}</div>
-            </details>
-          ))}
+      <section className="py-24 px-6 border-t border-white/[0.04]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-12">
+            {d.faq.heading}
+          </h2>
+          <div className="space-y-4">
+            {d.faq.list.map(({ q, a }) => (
+              <details key={q} className="border border-white/[0.08] rounded-xl group">
+                <summary className="cursor-pointer px-6 py-5 font-semibold text-white list-none flex items-center justify-between">
+                  {q}
+                  <span className="ml-4 text-white/40 text-lg transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <div className="px-6 pb-5 text-white/50 leading-relaxed">{a}</div>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Blog reading */}
       {posts.length > 0 && (
-        <section className="py-16 px-6">
+        <section className="py-16 px-6 border-t border-white/[0.04]">
           <div className="max-w-5xl mx-auto">
-            <p className="text-sm font-semibold text-[#6e6e73] uppercase tracking-widest mb-6">
+            <p className="text-sm font-semibold text-white/40 uppercase tracking-widest mb-6">
               {d.blog.heading}
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -341,15 +352,15 @@ export default function TrackPageTemplate({ track, locale }: Props) {
                 <Link
                   key={post.slug}
                   href={`${blogPath}/${post.slug}`}
-                  className="border border-[#d2d2d7] rounded-2xl p-6 hover:border-[#4F46E5]/40 hover:shadow-sm transition-all"
+                  className="border border-white/[0.08] rounded-2xl p-6 hover:border-[#4F46E5]/50 transition-all"
                 >
                   <div className="flex flex-wrap gap-2 mb-3">
                     {post.tags.slice(0, 2).map(tag => (
-                      <span key={tag} className="text-xs font-medium text-[#4F46E5] bg-[#eef2ff] rounded-full px-2.5 py-0.5">{tag}</span>
+                      <span key={tag} className="text-xs font-medium text-[#818CF8] bg-[#4F46E5]/10 rounded-full px-2.5 py-0.5">{tag}</span>
                     ))}
                   </div>
-                  <h3 className="font-bold text-[#1d1d1f] leading-snug mb-2 text-sm">{post.shortTitle}</h3>
-                  <p className="text-xs text-[#6e6e73] leading-relaxed line-clamp-2">{post.description}</p>
+                  <h3 className="font-bold text-white leading-snug mb-2 text-sm">{post.shortTitle}</h3>
+                  <p className="text-xs text-white/50 leading-relaxed line-clamp-2">{post.description}</p>
                 </Link>
               ))}
             </div>
@@ -358,9 +369,9 @@ export default function TrackPageTemplate({ track, locale }: Props) {
       )}
 
       {/* Other tracks */}
-      <section className="bg-[#f5f5f7] py-16 px-6">
+      <section className="py-16 px-6 border-t border-white/[0.04] bg-[#080808]">
         <div className="max-w-5xl mx-auto">
-          <p className="text-sm font-semibold text-[#6e6e73] uppercase tracking-widest mb-6">
+          <p className="text-sm font-semibold text-white/40 uppercase tracking-widest mb-6">
             {d.otherTracks.heading}
           </p>
           <div className="grid sm:grid-cols-3 gap-4">
@@ -368,10 +379,10 @@ export default function TrackPageTemplate({ track, locale }: Props) {
               <Link
                 key={href}
                 href={href}
-                className="bg-white border border-[#d2d2d7] rounded-xl p-5 hover:border-[#4F46E5]/40 transition-colors"
+                className="bg-white/[0.03] border border-white/[0.08] rounded-xl p-5 hover:border-[#4F46E5]/50 transition-colors"
               >
-                <div className="font-semibold text-[#1d1d1f] mb-1">{label}</div>
-                <div className="text-sm text-[#6e6e73]">{desc}</div>
+                <div className="font-semibold text-white mb-1">{label}</div>
+                <div className="text-sm text-white/50">{desc}</div>
               </Link>
             ))}
           </div>
@@ -379,21 +390,23 @@ export default function TrackPageTemplate({ track, locale }: Props) {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-6 max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-6">
-          {d.finalCta.h2}
-        </h2>
-        <p className="text-xl text-[#6e6e73] mb-10 max-w-xl mx-auto leading-relaxed">
-          {d.finalCta.p}
-        </p>
-        <CtaLink
-          href="/apply"
-          label={`${ctaLabel}_final`}
-          className="inline-block bg-[#4F46E5] text-white px-10 py-5 rounded-xl font-semibold hover:bg-indigo-700 transition-colors text-xl"
-        >
-          {d.finalCta.btn}
-        </CtaLink>
-        <p className="mt-6 text-sm text-[#6e6e73]">{d.finalCta.footnote}</p>
+      <section className="py-24 px-6 border-t border-white/[0.04]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-6">
+            {d.finalCta.h2}
+          </h2>
+          <p className="text-xl text-white/50 mb-10 max-w-xl mx-auto leading-relaxed">
+            {d.finalCta.p}
+          </p>
+          <CtaLink
+            href="/apply"
+            label={`${ctaLabel}_final`}
+            className="inline-block bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-10 py-5 rounded-xl font-semibold hover:opacity-90 transition-opacity text-xl shadow-[0_0_24px_rgba(99,102,241,0.3)]"
+          >
+            {d.finalCta.btn}
+          </CtaLink>
+          <p className="mt-6 text-sm text-white/40">{d.finalCta.footnote}</p>
+        </div>
       </section>
     </main>
   )
