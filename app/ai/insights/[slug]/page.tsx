@@ -47,9 +47,37 @@ export default async function InsightPostPage({ params }: Props) {
   if (!post) notFound()
 
   const color = TAG_COLOR[post.tag] ?? '#fff'
+  const url = `https://eduentry.ai/insights/${slug}`
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    url,
+    datePublished: '2026-10-15',
+    dateModified: '2026-10-15',
+    inLanguage: 'en',
+    author: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.ai' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Eduentry',
+      url: 'https://eduentry.ai',
+      logo: { '@type': 'ImageObject', url: 'https://eduentry.ai/logo-ai-long.png' },
+    },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home',     item: 'https://eduentry.ai' },
+        { '@type': 'ListItem', position: 2, name: 'Insights', item: 'https://eduentry.ai/insights' },
+        { '@type': 'ListItem', position: 3, name: post.title, item: url },
+      ],
+    },
+  }
 
   return (
     <main className="min-h-screen bg-black text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Glow */}
       <div
         className="pointer-events-none fixed left-1/2 top-0 -translate-x-1/2 w-[700px] h-[360px] rounded-full opacity-[0.05] blur-[120px]"
