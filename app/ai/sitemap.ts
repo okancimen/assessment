@@ -1,8 +1,16 @@
 import type { MetadataRoute } from 'next'
+import { INSIGHT_SLUGS } from './insights/content'
 
 const BASE = 'https://eduentry.ai'
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const insightPages: MetadataRoute.Sitemap = INSIGHT_SLUGS.map(slug => ({
+    url: `${BASE}/insights/${slug}`,
+    lastModified: '2026-10-15',
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE,                                lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 1.0 },
     { url: `${BASE}/tr`,                        lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.9 },
@@ -45,5 +53,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Blog posts live on eduentry.com; eduentry.ai/…/blog URLs redirect there
-  return staticPages
+  return [...staticPages, ...insightPages]
 }

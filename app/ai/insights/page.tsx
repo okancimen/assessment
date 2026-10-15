@@ -135,11 +135,9 @@ export default function InsightsPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {HIGH_SCHOOL_POSTS.map((post) => (
-              <a
+              <Link
                 key={post.slug}
-                href={`https://eduentry.com/blog/${post.slug}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`/insights/${post.slug}`}
                 className="group flex flex-col justify-between rounded-2xl p-6 border border-white/[0.07] bg-white/[0.02] hover:bg-white/[0.05] hover:border-[#60A5FA]/30 transition-all"
               >
                 <div>
@@ -147,7 +145,7 @@ export default function InsightsPage() {
                   <p className="text-xs text-gray-500 leading-relaxed">{post.desc}</p>
                 </div>
                 <p className="mt-4 text-xs font-medium text-[#60A5FA] group-hover:underline">Read →</p>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -169,11 +167,9 @@ export default function InsightsPage() {
 
           <div className="grid sm:grid-cols-2 gap-4">
             {FELLOWSHIP_POSTS.map((post) => (
-              <a
+              <Link
                 key={post.slug}
-                href={`https://eduentry.com/blog/${post.slug}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`/insights/${post.slug}`}
                 className="group flex flex-col justify-between rounded-2xl p-6 border border-white/[0.07] bg-white/[0.02] hover:bg-white/[0.05] hover:border-[#A78BFA]/30 transition-all"
               >
                 <div>
@@ -181,7 +177,7 @@ export default function InsightsPage() {
                   <p className="text-xs text-gray-500 leading-relaxed">{post.desc}</p>
                 </div>
                 <p className="mt-4 text-xs font-medium text-[#A78BFA] group-hover:underline">Read →</p>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
