@@ -85,6 +85,37 @@ export default async function InsightPostTRPage({ params }: Props) {
             <h2 className="text-lg font-semibold text-white mb-4">{section.heading}</h2>
             <div className="text-gray-400 leading-relaxed text-sm space-y-4">
               {section.body.split('\n\n').map((para, j) => {
+                if (para.startsWith('|') || para.includes('\n|')) {
+                  const rows = para.split('\n').filter(l => l.trim().startsWith('|') && !l.match(/^\|[-\s|]+\|$/))
+                  const [header, ...body] = rows
+                  const cols = header.split('|').filter(Boolean).map(c => c.trim())
+                  return (
+                    <div key={j} className="overflow-x-auto rounded-xl border border-white/[0.08] mt-2">
+                      <table className="w-full text-xs border-collapse">
+                        <thead>
+                          <tr style={{ background: `${color}12` }}>
+                            {cols.map((c, ci) => (
+                              <th key={ci} className="px-4 py-3 text-left font-semibold text-white/80 border-b border-white/[0.08] whitespace-nowrap">{c}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {body.map((row, ri) => {
+                            const cells = row.split('|').filter(Boolean).map(c => c.trim())
+                            return (
+                              <tr key={ri} className="border-b border-white/[0.04] hover:bg-white/[0.02] transition-colors">
+                                {cells.map((cell, ci) => (
+                                  <td key={ci} className={`px-4 py-3 leading-relaxed ${ci === 0 ? 'text-white/60 font-medium' : 'text-gray-500'}`}
+                                    dangerouslySetInnerHTML={{ __html: cell.replace(/\*\*(.+?)\*\*/g, '<strong class="text-white/70">$1</strong>') }} />
+                                ))}
+                              </tr>
+                            )
+                          })}
+                        </tbody>
+                      </table>
+                    </div>
+                  )
+                }
                 if (para.startsWith('- ') || para.includes('\n- ')) {
                   const items = para.split('\n').filter(Boolean)
                   return (
