@@ -139,9 +139,35 @@ export default function PublicNavAI() {
           <Link href="/auth/login" className="text-xs text-white/70 hover:text-white transition-colors hidden sm:block">
             {nav.signIn}
           </Link>
-          <Link href="/apply" prefetch={false} className="text-xs font-semibold bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-            {nav.applyFree}
-          </Link>
+          {/* Apply dropdown — CSS-only */}
+          <div className="relative group/apply">
+            <button className="flex items-center gap-1 text-xs font-semibold bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent hover:opacity-80 transition-opacity cursor-default select-none">
+              {nav.applyFree}
+              <svg className="w-2 h-2 mt-px text-[#A78BFA]" viewBox="0 0 8 5" fill="currentColor" aria-hidden="true">
+                <path d="M0 0l4 5 4-5z" />
+              </svg>
+            </button>
+            <div className="invisible opacity-0 group-hover/apply:visible group-hover/apply:opacity-100 transition-all duration-150 absolute top-full right-0 pt-3 z-50 pointer-events-none group-hover/apply:pointer-events-auto">
+              <div className="bg-[#111] rounded-2xl border border-white/[0.08] shadow-xl shadow-black/50 p-2 w-52">
+                <Link
+                  href="/apply"
+                  prefetch={false}
+                  className="block px-3 py-2.5 rounded-xl hover:bg-white/[0.06] transition-colors"
+                >
+                  <div className="font-semibold text-white/80 text-xs mb-0.5">Internship</div>
+                  <div className="text-[10px] text-white/30">High school · ages 14–18</div>
+                </Link>
+                <Link
+                  href="/work-experience/apply"
+                  prefetch={false}
+                  className="block px-3 py-2.5 rounded-xl hover:bg-white/[0.06] transition-colors"
+                >
+                  <div className="font-semibold text-[#A78BFA]/90 text-xs mb-0.5">Fellowship</div>
+                  <div className="text-[10px] text-white/30">University · Magenta Networks</div>
+                </Link>
+              </div>
+            </div>
+          </div>
           <LanguagePicker />
         </div>
       </div>
