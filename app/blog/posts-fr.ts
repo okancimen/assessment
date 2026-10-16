@@ -7,7 +7,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Anxiété des Examens chez l’Enfant : Aider grâce aux Forces de Caractère',
     shortTitle: 'Anxiété des Examens : Aider grâce aux Forces',
     description:
-      'L’anxiété des examens se gère, elle ne se révise pas. Découvrez les signes, pourquoi elle survient et comment cinq forces de caractère — persévérance, bravoure, espoir, enthousiasme et intelligence sociale — aident votre enfant, avec des tactiques pour la maison.',
+      'L’anxiété des examens se gère, elle ne se révise pas. Découvrez les signes, pourquoi elle survient et comment cinq forces de caractère aident votre enfant.',
     tldr: 'Si votre enfant se fige, procrastine ou s’effondre avant un examen, la réponse est rarement « réviser plus ». L’anxiété des examens se gère, elle ne se révise pas — et le levier le plus efficace, ce sont les forces de caractère que votre enfant possède déjà. Ce guide couvre les signes, les causes et la manière dont cinq forces — persévérance, bravoure, espoir, enthousiasme et intelligence sociale — réduisent l’anxiété, avec des tactiques concrètes pour la maison. L’évaluation gratuite d’Eduentry identifie les 24 forces en quelques minutes.',
     date: '2026-10-14',
     dateModified: '2026-10-14',
@@ -122,7 +122,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     slug: 'se-demarquer-a-15-ans',
     contentSlug: 'how-to-differentiate-yourself-at-15',
     title: 'Comment se démarquer à 15 ans : le guide complet pour lycéens ambitieux',
-    shortTitle: 'Comment se démarquer à 15 ans',
+    shortTitle: 'Comment se démarquer à 15 ans : guide complet',
     description:
       'Un guide pratique pour les lycéens qui veulent se distinguer dans leurs candidatures universitaires et professionnelles, bien avant les autres.',
     tldr: 'Les universités utilisent les activités extrascolaires et l\'expérience professionnelle pour distinguer les candidats avec des notes similaires. À 15–16 ans, les différenciateurs les plus crédibles pour les dossiers universitaires compétitifs sont : les stages structurés, les concours disciplinaires, les projets indépendants avec des résultats mesurables et les évaluations tierces fournissant des preuves vérifiables d\'aptitude.',
@@ -160,7 +160,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     slug: 'creer-son-entreprise-a-16-ans',
     contentSlug: 'how-to-start-business-at-16',
     title: 'Créer son entreprise à 16 ans : guide pratique pour lycéens entrepreneurs',
-    shortTitle: 'Créer son entreprise à 16 ans',
+    shortTitle: 'Créer son entreprise à 16 ans : guide pratique',
     description:
       'Lancer sa première activité à 16 ans : de l\'idée à la première vente, avec des conseils sur le cadre légal, le financement et l\'organisation.',
     tldr: 'Au Royaume-Uni, toute personne de 16 ans peut légalement exercer comme auto-entrepreneur sans créer de société. Les moins de 18 ans ne peuvent pas être directeur d\'entreprise, signer des contrats contraignants de façon indépendante, ni emprunter d\'argent à leur nom. L\'inscription à l\'HMRC est requise dès que les revenus annuels dépassent l\'abattement commercial de 1 000 livres.',
@@ -838,7 +838,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     slug: 'test-cat4-guide-complet',
     contentSlug: 'uae-cat4-test-guide',
     title: 'Test CAT4 : guide complet pour les parents',
-    shortTitle: 'Test CAT4 : guide complet',
+    shortTitle: 'Test CAT4 : guide complet pour les parents',
     description:
       'Qu\'est-ce que le test CAT4, que mesure-t-il et comment lire les résultats ? Guide pour les parents sur ce test cognitif des écoles internationales.',
     tldr: 'Le CAT4 mesure le raisonnement verbal, quantitatif, non verbal et spatial sur une échelle SAS (moyenne 100, écart-type 15). Utilisé dans plus de 3 000 écoles au Moyen-Orient et dans les écoles britanniques internationales, il évalue les aptitudes cognitives indépendamment des connaissances scolaires. Un SAS moyen de 90–95 est le seuil en dessous duquel certaines écoles considèrent qu\'un enfant pourrait avoir du mal avec leur programme.',
@@ -1494,7 +1494,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Comment décrocher un stage au lycée sans expérience : le guide complet',
     shortTitle: 'Stage au lycée sans expérience',
     description:
-      'Pas d\'expérience professionnelle ? Pas de problème. Cinq étapes concrètes pour obtenir un stage au lycée, valoriser vos compétences et entrer dans le monde du travail dès maintenant.',
+      'Pas d\'expérience professionnelle ? Pas de problème. Cinq étapes pour obtenir un stage au lycée, valoriser vos compétences et entrer dans le monde du travail.',
     tldr: 'La solution à la paradoxe de l\'expérience est simple : les employeurs ne cherchent pas votre passé, ils cherchent votre potentiel. Cartographier vos compétences, utiliser un rapport de compétences plutôt qu\'un CV vide, explorer des voies d\'expérience alternatives et envoyer une lettre de candidature personnalisée — ce sont les quatre étapes qui transforment un lycéen sans historique professionnel en candidat crédible.',
     date: '2026-10-06',
     dateModified: '2026-10-06',
@@ -1525,9 +1525,9 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     slug: 'quest-ce-que-lexamen-11-plus-guide-complet',
     contentSlug: 'what-is-the-11-plus-exam-complete-guide',
     title: 'Qu\'est-ce que l\'examen 11+ ? Guide complet pour les parents sur l\'accès aux grammar schools',
-    shortTitle: 'Qu\'est-ce que l\'examen 11+ ?',
+    shortTitle: 'Qu\'est-ce que l\'examen 11+ ? Guide pour les parents',
     description:
-      'Guide complet de l\'examen 11+ pour les parents : ce qu\'il évalue, comment fonctionne la notation, les 3 erreurs de préparation les plus fréquentes, et comment mesurer le niveau réel de votre enfant avant de payer des cours particuliers.',
+      'Guide complet de l\'examen 11+ pour les parents : ce qu\'il évalue, comment fonctionne la notation, les 3 erreurs les plus fréquentes et le niveau de votre enfant.',
     tldr: 'L\'examen 11+ évalue l\'anglais, les mathématiques, le raisonnement verbal et non verbal — mais il mesure les capacités de raisonnement, pas les connaissances du programme. Les notes scolaires sont un mauvais indicateur de la réussite au 11+. Les trois erreurs les plus fréquentes sont : s\'entraîner sans diagnostic préalable, interpréter les pourcentages bruts et créer une pression prématurée. La façon la plus précise d\'évaluer le niveau réel de votre enfant est un test adaptatif 2PL IRT — la même méthode psychométrique que PISA et le GCSE.',
     date: '2026-10-07',
     dateModified: '2026-10-07',
@@ -1560,7 +1560,7 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     title: 'Les 5 Forces de Caractère qui Prédisent la Réussite Scolaire — et Comment les Repérer',
     shortTitle: 'Forces de caractère et réussite scolaire',
     description:
-      'Test VIA des forces de caractère : 24 traits et 6 vertus pour analyser la personnalité de votre enfant gratuitement en ligne. Cinq forces prédisent la réussite scolaire — curiosité, amour de l\'apprentissage, persévérance, autorégulation et entrain. Évaluation parentale avec rapport de développement par IA. Pour les enfants de 6 à 17 ans.',
+      'Test VIA : 24 traits et 6 vertus de caractère. Cinq forces prédisent la réussite scolaire. Évaluation parentale gratuite pour les enfants de 6 à 17 ans.',
     tldr: 'Les notes scolaires mesurent la performance par rapport à la moyenne de la classe, pas les forces et le potentiel réel de votre enfant. Cinq forces VIA — amour de l\'apprentissage, curiosité, persévérance, autorégulation et entrain — sont les plus prédictives des résultats académiques selon les recherches longitudinales. Elles se mesurent avec un test d\'évaluation parentale gratuit en ligne et se développent avec une pratique délibérée.',
     date: '2026-10-10',
     dateModified: '2026-10-10',

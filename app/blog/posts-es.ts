@@ -6,8 +6,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     contentSlug: 'test-anxiety-in-children-strengths',
     title: 'Ansiedad ante los Exámenes en Niños: Cómo Ayudarles desde las Fortalezas',
     shortTitle: 'Ansiedad ante los Exámenes: Ayuda desde las Fortalezas',
-    description:
-      'La ansiedad ante los exámenes se gestiona, no se estudia. Descubre las señales, por qué ocurre y cómo cinco fortalezas de carácter — perseverancia, valentía, esperanza, vitalidad e inteligencia social — ayudan a tu hijo, con tácticas para casa.',
+    description: 'La ansiedad ante los exámenes se gestiona, no se estudia. Descubre las señales, por qué ocurre y cómo cinco fortalezas de carácter ayudan a tu hijo.',
     tldr: 'Si tu hijo se bloquea, procrastina o se derrumba antes de un examen, la respuesta rara vez es "estudiar más". La ansiedad ante los exámenes se gestiona, no se estudia — y la palanca más eficaz son las fortalezas de carácter que tu hijo ya tiene. Esta guía cubre las señales, por qué ocurre y cómo cinco fortalezas — perseverancia, valentía, esperanza, vitalidad e inteligencia social — reducen la ansiedad, con tácticas prácticas para casa. La evaluación gratuita de Eduentry identifica las 24 fortalezas en minutos.',
     date: '2026-10-14',
     dateModified: '2026-10-14',
@@ -248,7 +247,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'las-notas-ya-no-son-suficientes',
     contentSlug: 'how-to-differentiate-yourself-at-15',
     title: 'Las notas ya no son suficientes: cómo se diferencian realmente los estudiantes a los 15',
-    shortTitle: 'Cómo diferenciarte a los 15',
+    shortTitle: 'Cómo diferenciarte a los 15: guía para estudiantes',
     description:
       'Con más alumnos que nunca sacando las mejores notas, estas ya no diferencian. Qué distingue a una solicitud universitaria y por qué empezar a los 15.',
     tldr: 'Las universidades utilizan actividades extracurriculares y experiencia laboral para distinguir entre candidatos con notas similares. A los 15–16 años, los diferenciadores más sólidos para solicitudes universitarias competitivas son: prácticas estructuradas, competiciones por materias, proyectos independientes con resultados medibles y evaluaciones de terceros que aporten evidencia verificable de aptitud.',
@@ -361,7 +360,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
   {
     slug: 'cv-para-practicas-con-16-anos',
     title: 'Cómo escribir un CV para prácticas con 16 años (sin experiencia previa)',
-    shortTitle: 'CV para prácticas con 16 años',
+    shortTitle: 'CV para prácticas con 16 años sin experiencia',
     description: 'Cómo escribir un CV de prácticas a los 16 años sin experiencia: qué incluir, cómo estructurarlo, errores comunes y cómo destacar tus habilidades.',
     tldr: 'El currículum para prácticas de un estudiante de 16 años debe ocupar una sola página e incluir: datos de contacto, formación (centro, curso, nota media), materias y proyectos relevantes, competencias (idiomas, software) y profesores como referencias. Sin experiencia laboral, destacar proyectos escolares y actividades extracurriculares es el enfoque más efectivo.',
 
@@ -1260,8 +1259,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     contentSlug: 'how-to-get-internship-no-experience-high-school',
     title: 'Cómo conseguir prácticas en el instituto sin experiencia previa: guía completa',
     shortTitle: 'Prácticas en el instituto sin experiencia',
-    description:
-      '¿Sin experiencia laboral? Sin problema. Cinco pasos prácticos para conseguir prácticas en el instituto, destacar tus habilidades y entrar al mundo profesional desde hoy.',
+    description: '¿Sin experiencia laboral? Sin problema. Cinco pasos prácticos para conseguir prácticas en el instituto, destacar tus habilidades y entrar al mundo profesional.',
     tldr: 'La solución a la paradoja de la experiencia es sencilla: los empleadores no buscan tu historial, buscan tu potencial. Mapear tus habilidades, usar un informe de competencias en lugar de un CV vacío, explorar vías alternativas de experiencia y enviar una solicitud personalizada son los cuatro pasos que convierten a un estudiante de instituto sin historial laboral en un candidato sólido.',
     date: '2026-10-06',
     dateModified: '2026-10-06',
@@ -1292,9 +1290,8 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     slug: 'que-es-el-examen-11-plus-guia-completa',
     contentSlug: 'what-is-the-11-plus-exam-complete-guide',
     title: '¿Qué es el examen 11+ del Reino Unido? Guía completa para padres sobre el acceso a grammar schools',
-    shortTitle: '¿Qué es el examen 11+?',
-    description:
-      'Guía completa del examen 11+ para padres: qué evalúa, cómo funciona la puntuación, los 3 errores más comunes en la preparación y cómo medir el nivel real de tu hijo antes de gastar en tutores privados.',
+    shortTitle: '¿Qué es el examen 11+? Guía completa para padres',
+    description: 'Guía completa del examen 11+ para padres: qué evalúa, cómo funciona la puntuación, los 3 errores más comunes y cómo medir el nivel real de tu hijo.',
     tldr: 'El examen 11+ evalúa inglés, matemáticas, razonamiento verbal y razonamiento no verbal — pero mide capacidad de razonamiento, no conocimientos del currículo. Las notas escolares no predicen bien el rendimiento en el 11+. Los tres errores más comunes son: practicar sin diagnóstico previo, interpretar porcentajes brutos y generar ansiedad prematura. La forma más precisa de evaluar el nivel real de tu hijo es una prueba adaptativa 2PL IRT — el mismo método psicométrico que usan PISA y GCSE.',
     date: '2026-10-07',
     dateModified: '2026-10-07',
@@ -1326,8 +1323,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     contentSlug: 'character-strengths-academic-success',
     title: 'Las 5 Fortalezas de Carácter que Predicen el Éxito Escolar — y Cómo Detectarlas en tu Hijo',
     shortTitle: 'Fortalezas de carácter y éxito académico',
-    description:
-      'Test VIA de fortalezas de carácter: 24 rasgos y 6 virtudes para descubrir el potencial de tu hijo de forma gratuita. Cinco fortalezas predicen el éxito escolar — curiosidad, amor por el aprendizaje, perseverancia, autorregulación y vitalidad. Evaluación parental con informe de desarrollo por IA. Para niños de 6 a 17 años.',
+    description: 'Test VIA de fortalezas de carácter: 24 rasgos y 6 virtudes. Cinco fortalezas predicen el éxito escolar. Evaluación parental para niños de 6 a 17 años.',
     tldr: 'Las notas escolares miden el rendimiento respecto a la media de clase, no las fortalezas y el potencial real de tu hijo. Cinco fortalezas VIA — amor por el aprendizaje, curiosidad, perseverancia, autorregulación y vitalidad — emergen en la investigación longitudinal como las más predictivas del éxito académico. Se pueden medir con un test de evaluación parental gratuito online y desarrollar con práctica deliberada.',
     date: '2026-10-10',
     dateModified: '2026-10-10',

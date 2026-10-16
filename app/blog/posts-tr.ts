@@ -6,8 +6,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'test-anxiety-in-children-strengths',
     title: 'Çocuklarda Sınav Kaygısı: Güçlü Yönlerle Baş Etmenin Yolu',
     shortTitle: 'Çocuklarda Sınav Kaygısı: Güçlü Yönlerle Baş Etme',
-    description:
-      'Çocuklarda sınav kaygısı çalışarak değil, yönetilerek aşılır. Belirtileri, nedenleri ve beş karakter gücünün — azim, cesaret, umut, canlılık ve sosyal zeka — kaygıyı nasıl azalttığını evde uygulanabilir yöntemlerle keşfedin.',
+    description: 'Sınav kaygısı çalışarak değil, yönetilerek aşılır. Belirtileri, nedenlerini ve beş karakter gücünün kaygıyı nasıl azalttığını ve uygulanabilir yöntemleri öğrenin.',
     tldr: 'Çocuğunuz sınav öncesi donuyor, erteliyor veya çöküyorsa çözüm nadiren "daha çok çalış"tır. Sınav kaygısı çalışarak değil yönetilerek aşılır — ve en etkili araç çocuğunuzun zaten sahip olduğu karakter güçleridir. Bu rehber belirtileri, nedenleri ve beş gücün — azim, cesaret, umut, canlılık ve sosyal zeka — kaygıyı nasıl çözdüğünü evde uygulanabilir yöntemlerle anlatır. Eduentry\'nin ücretsiz kişilik testi 24 karakter gücünü dakikalar içinde belirler.',
     date: '2026-10-14',
     dateModified: '2026-10-14',
@@ -84,7 +83,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'lise-staji-faydalari-universite',
     contentSlug: 'high-school-internship-benefits-university',
     title: 'Lise Stajlarının Önemi: Kişilik, Hazırlık ve Üniversite Kabulü',
-    shortTitle: 'Lise Stajının Faydaları',
+    shortTitle: 'Lise Stajının Faydaları ve Üniversiteye Etkisi',
     description:
       'Lise stajları üzerine kanıta dayalı bir inceleme: 14–18 yaşta iş deneyimi öz yeterlilik, dayanıklılık ve mesleki kimlik kazandırır, başvuruları güçlendirir.',
     tldr: 'Russell Group üniversiteleri, tıp, hukuk ve teknoloji gibi rekabetçi bölümler için kabul rehberlerinde iş deneyimini açıkça belirtiyor. Araştırmalar iş deneyiminin dört temel alanda katkı sağladığını ortaya koyuyor: öz yeterlilik, dayanıklılık, profesyonel iletişim ve kariyer netliği.',
@@ -126,7 +125,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'is-deneyimi-lise-ingiltere',
     contentSlug: 'business-work-experience-high-school-uk',
     title: 'Lisede İş Dünyası Deneyimi: Nedir, Nasıl Bulunur ve Neden Önemlidir',
-    shortTitle: 'Lisede İş Dünyası Deneyimi',
+    shortTitle: 'Lisede İş Dünyası Deneyimi: Nasıl Bulunur?',
     description:
       'İngiltere\'de lise öğrencileri için iş deneyimi: neleri kapsar, yer nerede bulunur, nasıl alınır ve doğrulanmış bir puan başvuruyu nasıl güçlendirir.',
     tldr: 'İngiltere\'de lise öğrencileri için iş deneyimi genellikle bir ila iki haftalık yerleştirme veya yapılandırılmış bir işveren programı şeklinde gerçekleşir. Büyük işveren programlarının çoğu Year 10 (14–15 yaş) öğrencilerini kabul etmeye başlar. Barclays, Goldman Sachs, KPMG ve Deloitte gibi FTSE 100 şirketleri, başvuru penceresi Eylül–Kasım\'da açılan Year 12 Spring Insight programları düzenliyor.',
@@ -209,7 +208,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'en-iyi-okul-hayat-okuludur',
     title: 'En İyi Okul, Hayat Okuludur: Erken Yaşta İş Deneyiminin Çocuk Gelişimine Katkısı',
-    shortTitle: 'En İyi Okul, Hayat Okuludur',
+    shortTitle: 'En İyi Okul Hayat Okuludur: Erken İş Deneyimi',
     description:
       'Warren Buffett\'tan Sakıp Sabancı\'ya, Alman mesleki eğitiminden Montessori\'ye: en kalıcı dersler neden sınıf dışında, gerçek sorumluluklarla öğrenilir?',
     tldr: 'Okul başarısının iş hayatına geçişte en güçlü köprüyü oluşturan deneyimler staj, proje çalışması ve mesleki iletişim becerileri olarak öne çıkıyor. Araştırmalar, gerçek iş ortamında elde edilen becerilerin sınıf eğitiminin sağlayamadığı öz yeterliliği ve uyum yeteneğini geliştirdiğini gösteriyor.',
@@ -328,7 +327,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'dubai-egitim-sistemi-rehberi',
     title: 'Dubai\'de Eğitim Sistemi: Türk Aileler için Kapsamlı Rehber',
-    shortTitle: 'Dubai\'de Eğitim Sistemi',
+    shortTitle: 'Dubai\'de Eğitim Sistemi: Türk Aileler İçin Rehber',
     description:
       'Dubai\'de hangi müfredatlar var, okul nasıl seçilir, maliyetler ne kadar? Dubai\'ye taşınan Türk aileler için BAE eğitim sistemi rehberi.',
     tldr: 'Dubai okulları KHDA tarafından 5 kademede derecelendiriliyor: Outstanding (Üstün), Very Good (Çok İyi), Good (İyi), Acceptable (Kabul Edilebilir) ve Weak (Zayıf). Şehirde Britanya, Amerikan, IB ve Fransız müfredatı dahil 200\'den fazla farklı müfredat sunan özel okul bulunuyor.',
@@ -535,7 +534,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'staj-icin-cv-nasil-yazilir',
     title: 'Staj İçin CV Nasıl Yazılır: 16-18 Yaş Öğrencileri için Adım Adım Rehber',
-    shortTitle: 'Staj İçin CV Nasıl Yazılır',
+    shortTitle: 'Staj İçin CV Nasıl Yazılır: Adım Adım Rehber',
     description: 'Deneyimi olmayan 16–18 yaş öğrenciler için staj CV\'si: neler yazılır, nasıl düzenlenir, hangi hatalardan kaçınılır ve beceriler nasıl öne çıkarılır.',
     tldr: 'Staj başvurusu için hazırlanan CV şu bölümleri içermelidir: iletişim bilgileri, öğrenim (okul, sınıf, not ortalaması), ilgili dersler veya projeler, yetkinlikler (diller, yazılımlar) ve referans olarak gösterilebilecek öğretmenler. İş deneyimi olmayan lise öğrencileri için tek sayfalık bir CV en etkili format olmaya devam ediyor.',
 
@@ -625,7 +624,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'is-hayatina-hazir-misin',
     title: 'İş Hayatına Hazır mısın? Lise Öğrencileri İçin Staj Rehberi',
-    shortTitle: 'İş Hayatına Hazır mısın?',
+    shortTitle: 'İş Hayatına Hazır mısın? Lise Staj Rehberi',
     description: 'Çocuğunuz gerçekten iş hayatına hazır mı? Staj için doğru zamanı, gerekli becerileri ve ebeveyn olarak yapabileceklerinizi anlatan kapsamlı rehber.',
     tldr: 'Staj hazırlığı değerlendirmeleri dört boyutu ölçer: genel yetenek (sözel ve sayısal muhakeme), alan bilgisi (sektöre özgü kavramlar), iş yeri becerileri (durumsal yargı) ve ilgi profili (çalışma tarzı ve kariyer yönelimleri). Bu boyutlardaki güçlü sonuçlar, işe alım öncesinde somut ve güvenilir yetkinlik kanıtı sağlar.',
 
@@ -681,7 +680,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'lise-staji-nasil-bulunur',
     title: 'Lise Stajı Nasıl Bulunur? Türkiye ve Yurt Dışı İçin Tam Rehber',
-    shortTitle: 'Lise Stajı Nasıl Bulunur?',
+    shortTitle: 'Lise Stajı Nasıl Bulunur? Türkiye ve Yurt Dışı',
     description:
       'Lise öğrencisi olarak Türkiye\'de ve yurt dışında staj nasıl bulunur? Uygun sektörler, başvuru zamanı ve CV olmadan başvuru için adım adım rehber.',
     tldr: 'Türkiye\'de lise stajı için dört temel yol: okul kariyer danışmanlığı (kurumsal firmalarla resmi protokollar aracılığıyla bağlantı), doğrudan KOBİ başvurusu, LinkedIn üzerinden başvuru ve Kariyer.net ile İş Burada gibi staj platformları. Kişisel bağlantılar en yüksek dönüşüm oranına sahip yol olmaya devam ediyor.',
@@ -764,7 +763,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'erken-yasta-is-tecrubesi-kazanmak',
     title: 'Erken Yaşta İş Tecrübesi Kazanmak: Neden Önemli ve Nasıl Başlanır?',
-    shortTitle: 'Erken Yaşta İş Tecrübesi',
+    shortTitle: 'Erken Yaşta İş Tecrübesi: Neden Önemli?',
     description: 'Lise yıllarında iş tecrübesi kazanmak neden bu kadar önemli? Erken başlamanın avantajları, doğru yaklaşım ve çocuğunuzu desteklemek için ebeveyn rehberi.',
     tldr: 'NACE\'nin 2023 anketine göre işverenlerin yüzde 83\'ü yeni mezun işe alımında staj deneyimini önemli buluyor; staj yapan öğrenciler mezuniyet öncesinde iş teklifi almada akranlarına kıyasla yüzde 70 daha avantajlı konumda yer alıyor (NACE, 2020). İlk deneyim için en verimli dönem 14–16 yaştır.',
 
@@ -789,7 +788,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'stajyer-maasi-ne-kadar',
     title: 'Stajyer Maaşı Ne Kadar? Türkiye\'de Sektöre Göre Stajyer Ücretleri 2026',
-    shortTitle: 'Stajyer Maaşı 2026',
+    shortTitle: 'Stajyer Maaşı 2026: Sektöre Göre Ücretler',
     description:
       'Stajyerler ne kadar maaş alıyor? Türkiye\'de sektöre göre stajyer ücretleri, Ulusal Staj Programı ödemeleri ve vergi muafiyeti hakkında güncel bilgi.',
     tldr: 'Türkiye\'de ücretli stajlar genellikle asgari ücretin yüzde 30 ile yüzde 100\'ü arasında ödeme yapar; ücret sektöre ve şirket büyüklüğüne göre önemli ölçüde değişir. Meslek lisesi öğrencileri için asgari ücretin en az yüzde 30\'u yasal zorunluluktur; üniversite öncesi lise öğrencileri için böyle bir düzenleme bulunmuyor.',
@@ -814,8 +813,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'staj-defteri-nasil-doldurulur',
     title: 'Staj Defteri Nereden Alınır, Nedir ve Nasıl Doldurulur?',
     shortTitle: 'Staj Defteri Nereden Alınır? Fakülte, Kırtasiye veya E-Staj',
-    description:
-      'Staj defterini fakülte sekreteryasından, kırtasiyeden veya e-staj platformundan ücretsiz temin edebilirsin. Nedir, nasıl doldurulur, ne zaman teslim edilir — adım adım rehber.',
+    description: 'Staj defterini sekreteryadan, kırtasiyeden veya e-staj platformundan temin edebilirsin. Nedir, nasıl doldurulur, ne zaman teslim edilir — adım adım rehber.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
@@ -864,7 +862,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'staj-nasil-bulunur',
     title: 'Staj Nasıl Bulunur? Lise Öğrencisi İçin Adım Adım Başvuru Rehberi',
-    shortTitle: 'Staj Nasıl Bulunur?',
+    shortTitle: 'Staj Nasıl Bulunur? Lise Öğrencisi Rehberi',
     description:
       'Staj bulmak için hangi platformlara bakmalı, nasıl başvuru yapmalı ve işverene nasıl yaklaşmalısın? Lise öğrencileri için pratik, adım adım bir başvuru rehberi.',
     tldr: 'Türkiye\'de staj bulmanın temel yolları: doğrudan şirket başvurusu (KOBİ ve yerel işletmeler için etkilidir), LinkedIn, Kariyer.net ve İşKur gibi platformlar, üniversite kariyer ofisleri ve mesleki sendikalar ya da meslek odaları. Kişisel bağlantılar en yüksek dönüşüm oranına sahip yol olmaya devam ediyor.',
@@ -889,7 +887,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'yaz-staji-lise-ogrencisi',
     title: 'Yaz Stajı 2026: Lise Öğrencileri İçin Fırsatlar ve Başvuru Taktikleri',
-    shortTitle: 'Yaz Stajı 2026 Rehberi',
+    shortTitle: 'Yaz Stajı 2026: Fırsatlar ve Başvuru Taktikleri',
     description:
       'Yaz tatilini staj fırsatına çevirmek isteyenler için: başvuru takvimleri, hangi sektörler yaz programı sunuyor, uzaktan seçenekler ve pratik başvuru taktikleri.',
     tldr: 'Türkiye\'de lise öğrencileri için yaz stajı başvuruları genellikle Şubat–Nisan döneminde yapılır; stajlar Haziran–Ağustos aylarında gerçekleşir. Büyük şirketlerin yaz programları Ekim–Kasım\'da başvuruya açılır. Yerel ajanslar ve KOBİ\'ler resmi program olmaksızın daha esnek başvuru kabul ediyor.',
@@ -1029,7 +1027,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Çocuğun Güçlü ve Zayıf Yönleri: Lise Hazırlığı İçin Bilişsel Profil Rehberi',
     shortTitle: 'Çocuğun Güçlü ve Zayıf Yönleri Nasıl Belirlenir?',
     description:
-      'Çocuğunuzun güçlü ve zayıf yönlerini okul notları değil standart bilişsel değerlendirme ortaya çıkarır. Sözel, sayısal ve uzamsal alanlarda lise öncesi profil çıkarın.',
+      'Çocuğunuzun güçlü ve zayıf yönlerini okul notları değil standart bilişsel değerlendirme ortaya çıkarır. Sözel, sayısal ve uzamsal alanlarda akademik profil çıkarın.',
     tldr: 'Okul notları, öğrencilerin sınıf içindeki göreli başarısını ölçer — ancak altta yatan bilişsel profili ortaya koymaz. Sözel akıl yürütme, sayısal yetenek, çalışan bellek ve uzamsal beceri alanlarındaki güçlü ve zayıf yönleri lise öncesinde belirlemek, ebeveynlere ve öğretmenlere belirsiz bir karne yerine somut bir yol haritası sunar.',
 
     date: '2026-09-27',
@@ -1667,8 +1665,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'how-to-get-internship-no-experience-high-school',
     title: 'Hiç Deneyim Olmadan Lisede Staj ve İş Tecrübesi Nasıl Kazanılır?',
     shortTitle: 'Deneyimsiz Lisede Staj Nasıl Bulunur',
-    description:
-      'Hiç iş deneyiminiz yok mu? Lise yıllarında staj bulmanın, yeteneklerinizi öne çıkarmanın ve iş dünyasına hazır olmanın 5 adımı. Ücretsiz staj uygunluk testinizi çözün!',
+    description: 'Hiç iş deneyiminiz yok mu? Lise yıllarında staj bulmanın, yeteneklerinizi öne çıkarmanın ve iş dünyasına hazır olmanın 5 adımı — bugün başlayın.',
     tldr: 'Deneyim paradoksunun çözümü basit: işverenlerin aradığı şey geçmiş değil, potansiyeldir. Yetenek haritası çıkarmak, yetkinlik raporu kullanmak, alternatif deneyim yolları denemek ve kişiselleştirilmiş bir başvuru hazırlamak — bu dört adım, özgeçmişinde hiçbir iş deneyimi olmayan bir lise öğrencisini somut bir aday haline getiriyor.',
     date: '2026-10-06',
     dateModified: '2026-10-06',
@@ -1700,8 +1697,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'what-is-the-11-plus-exam-complete-guide',
     title: '11+ Sınavı Nedir? Gramer Okulu Girişi için Tam Ebeveyn Rehberi',
     shortTitle: '11+ Sınavı Nedir? Eksiksiz Rehber',
-    description:
-      '11+ gramer okulu sınavı hakkında eksiksiz ebeveyn rehberi: neler test edilir, puanlama nasıl çalışır, yapılan 3 büyük hata ve pahalı özel derse para harcamadan önce çocuğunuzun gerçek seviyesini nasıl ölçersiniz.',
+    description: '11+ gramer okulu sınavı hakkında eksiksiz ebeveyn rehberi: neler test edilir, puanlama nasıl çalışır, 3 büyük hata ve çocuğunuzun gerçek seviyesini nasıl ölçersiniz.',
     tldr: '11+ sınavı; İngilizce, Matematik, Sözel Akıl Yürütme ve Sözel Olmayan Akıl Yürütme olmak üzere dört alanı test eder — ancak müfredat bilgisini değil, akıl yürütme yeteneğini ölçer. Okul karnesi 11+ başarısının zayıf bir göstergesidir. En büyük üç hata: taban belirlenmeden pratik yapmak, ham yüzde puanlarını yorumlamak ve erken baskı oluşturmak. Çocuğunuzun gerçek 11+ seviyesini ölçmenin en doğru yolu, PISA ve GCSE\'nin kullandığı aynı psikometrik yöntem olan 2PL IRT uyarlanabilir değerlendirmedir.',
     date: '2026-10-07',
     dateModified: '2026-10-07',
@@ -1738,7 +1734,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'PISA 2025 Sonuçları: Küresel Eğitim Krizinde Ebeveynlerin Bilmesi Gerekenler',
     shortTitle: 'PISA 2025 Sonuçları: En Düşük Puanlar Ne Anlama Gelir',
     description:
-      'PISA 2025: 2000\'den bu yana kaydedilen en düşük matematik, okuma ve fen puanları. Sonuçların İngilizce eğitim ve uluslararası aileler için anlamı ile çocuğunuzun dünya genelindeki akademik konumunu nasıl ölçebileceğiniz.',
+      'PISA 2025: 2000\'den bu yana en düşük matematik, okuma ve fen puanları. Sonuçların uluslararası aileler için anlamı ve çocuğunuzun küresel konumunu nasıl ölçersiniz.',
     tldr: 'PISA 2025, programın başladığından bu yana en düşük OECD matematik ortalamasını kayıt altına aldı: matematik 470, okuma 474, fen 475. Birleşik Krallık matematik sıralamasında 27.\'ye, okuma sıralamasında 13.\'ye geriledi. Singapur, Japonya ve Güney Kore üç alanda da liderliği sürdürdü. OECD ülkelerinin büyük bölümünde pandemi sonrası toparlanma durdu.',
     date: '2026-10-07',
     dateModified: '2026-10-07',
@@ -1852,8 +1848,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'how-to-prepare-gifted-test',
     title: 'Üstün Zekâ Testine Nasıl Hazırlanılır: ABD\'li Aileler için Pratik Rehber',
     shortTitle: 'Üstün Zekâ Testine Nasıl Hazırlanılır 2026',
-    description:
-      'Üstün zekâ testine hazırlanılabilir mi? Bu rehber CogAT, OLSAT ve NNAT için neyin geliştirilebileceğini ve pratikle yanıt veren spesifik becerileri nasıl kazandıracağınızı ele alır.',
+    description: 'Üstün zekâ testine hazırlanılabilir mi? CogAT, OLSAT ve NNAT için neyin geliştirilebileceğini ve pratikle yanıt veren becerilerin nasıl kazandırılacağını ele alır.',
     tldr: 'ABD üstün zekâ testlerine (CogAT, OLSAT) hazırlanmak soyut akıl yürütmeye odaklanır çünkü bu testler öğrenilmiş bilgi yerine bilişsel yeteneği ölçer. En geliştirilebilir bileşenler matris akıl yürütme, uzamsal akıl yürütme ve sözel olmayan örüntü tanımadır — bunların tümü yapılandırılmış pratikle gelişim gösterir.',
     date: '2026-10-07',
     dateModified: '2026-10-07',
@@ -1927,7 +1922,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: '16 Yaşında İş Hayatına Nasıl Başlanır: Platformlar, Kazanç ve Üniversiteler Ne Düşünür',
     shortTitle: '16 Yaşında İş Hayatına Nasıl Başlanır',
     description:
-      '16 yaşında İngiltere\'de bir işletme kurulabilir mi? Evet. Erişilebilir platformlar, gerçekçi kazanç rakamları ve erken iş deneyiminin üniversite başvurularını nasıl güçlendirdiği.',
+      '16 yaşında İngiltere\'de bir işletme kurulabilir mi? Evet. Erişilebilir platformlar, gerçekçi kazanç rakamları ve erken iş deneyiminin üniversiteye etkisi.',
     tldr: 'İngiltere\'deki 16 yaşındaki bir kişi şirkete gerek kalmadan yasal olarak şahıs şirketi olarak ticaret yapabilir. Erişilebilir platformlar arasında MyTutor, Tutorful, Etsy ve Depop yer alır; kişisel muafiyet sınırı olan 12.570 £\'un altındaki kazançlar vergiden muaftır. İşletme, ekonomi ve hukuk programları için Russell Group kabul sürecinde gerçek bir işletme yürütmek — yarı zamanlı bile olsa — açıkça değer kazandırmaktadır.',
     date: '2026-10-07',
     dateModified: '2026-10-07',
@@ -1963,8 +1958,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'character-strengths-academic-success',
     title: 'Çocuğumun Güçlü Yönleri ve Akademik Başarı: Araştırmaların Ortaya Koyduğu 5 Karakter Gücü',
     shortTitle: 'Çocuğumun Güçlü Yönleri ve Akademik Başarı',
-    description:
-      'VIA karakter güçleri testine dayalı ücretsiz çocuk kişilik analizi: 24 karakter özelliği ve 6 erdem modeliyle araştırmaların ortaya koyduğu 5 güç — merak, öğrenme sevgisi, azim, öz denetim ve coşku — akademik başarıyı en güvenilir biçimde öngörüyor. 6–17 yaş için ebeveyn değerlendirmeli, yapay zeka destekli gelişim raporu.',
+    description: 'Ücretsiz VIA karakter güçleri analizi: 24 özellik ve 6 erdem. 5 güç — merak, öğrenme sevgisi, azim, öz denetim ve coşku — akademik başarıyı öngörüyor.',
     tldr: 'Okul notları sınıf ortalamasına göre başarıyı ölçer; ancak çocuğunuzun güçlü yönlerini ve potansiyelini tam olarak ortaya koymaz. Pozitif psikoloji araştırmaları, 5 VIA kişilik özelliğinin — öğrenme sevgisi, merak, azim, öz denetim ve coşku — akademik sonuçları en güvenilir biçimde öngördüğünü göstermektedir. Bu özellikler sabit değildir; ebeveyn değerlendirmeli bir testle ölçülebilir ve geliştirilebilir.',
     date: '2026-10-10',
     dateModified: '2026-10-10',

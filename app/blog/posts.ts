@@ -614,7 +614,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'NWEA MAP Scores Explained: What RIT Scores Mean and How to Interpret Your Child\'s Results',
     shortTitle: 'NWEA MAP RIT Scores by Grade Level 2026: Charts & Benchmarks',
     description:
-      'MAP RIT scores by grade level 2025–26: average reading, math and science benchmarks, gifted cut-offs and percentile chart. What\'s a good score for your child\'s grade?',
+      'MAP RIT scores by grade level 2025–26: average reading, math and science benchmarks, gifted cut-offs and percentile chart. What\'s a good score for your child?',
     tldr: 'NWEA MAP Growth uses a RIT (Rasch Unit) scale — not percentage correct. The national average RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
@@ -1322,7 +1322,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'australia-oc-test-guide',
     title: 'NSW Opportunity Class (OC) Test Guide: How It Works and How to Prepare',
-    shortTitle: 'NSW OC Test Guide',
+    shortTitle: 'NSW OC Placement Test 2026: What It Is and How to Prepare',
     description:
       'A complete guide to the NSW Opportunity Class Placement Test — what OC classes are, how the test works, score thresholds, and how to prepare your Year 4 child.',
     tldr: 'NSW Opportunity Classes run from Year 5 in public primary schools across NSW. The entry test is taken in Year 4 and covers three components: Reading, Mathematical Reasoning, and Thinking Skills. Placement is norm-referenced — there is no fixed pass mark; scores are ranked against all applicants within each placement group region.',
@@ -1395,7 +1395,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'australia-naplan-guide',
     title: 'NAPLAN Guide for Parents: What It Is, How Scores Work and What to Do With the Results',
-    shortTitle: 'NAPLAN Guide for Parents 2026',
+    shortTitle: 'NAPLAN 2026: Complete Guide for Parents of Years 3–9',
     description:
       'A parent\'s guide to NAPLAN, Australia\'s literacy and numeracy test for Years 3, 5, 7 and 9: how band scoring works and what results mean.',
     tldr: 'NAPLAN is taken by all Australian students in Years 3, 5, 7, and 9 and results are reported on a four-level proficiency scale: Exceeding, Strong, Developing, and Needs Additional Support. NAPLAN measures curriculum standards, not IQ or cognitive ability — it does not directly predict selective school entry or gifted programme eligibility.',
@@ -1977,7 +1977,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     slug: '65-jobs-ai-cannot-automate',
     contentSlug: '65-jobs-ai-cannot-automate',
     title: '65 Jobs AI and Robots Cannot Automate — What Every Parent Should Know',
-    shortTitle: '65 Jobs AI Cannot Automate',
+    shortTitle: '65 Jobs AI Cannot Replace: Future-Proof Careers',
     description: 'The WEF says 40% of jobs face AI disruption. Here are 65 professions with 0% automation probability and what they mean for your child\'s future.',
     tldr: 'Based on US Bureau of Labor Statistics employment data and automation probability scoring, 65 professions carry a 0.0% probability of automation. They share four traits AI cannot replicate: emotional intelligence, the ability to read a room, creative work, and high day-to-day task variability. Healthcare dominates the list, with nurse practitioners projected to grow 40% by 2034.',
     date: '2026-09-28',
