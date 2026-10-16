@@ -16,6 +16,11 @@ const PRIVATE = [
   '/ar/tadrib',
   '/ru/stazhirovka',
   '/zh/shixi',
+  // Next.js image generation routes — return PNG, not indexable pages
+  '/*/opengraph-image',
+  '/opengraph-image',
+  // Web manifest — JSON file, not a page
+  '/manifest.json',
 ]
 
 const AI_BOTS = [

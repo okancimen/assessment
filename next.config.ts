@@ -60,6 +60,11 @@ const nextConfig: NextConfig = {
       { source: '/blog/australia-oc-test-guide', destination: '/blog/nsw-opportunity-class-test-guide', permanent: true },
       // contentSlug accidentally indexed by Google — redirect directly to canonical Turkish slug on eduentry.com
       { source: '/blog/international-internship-programs-tr', destination: 'https://eduentry.com/tr/blog/uluslararasi-staj-programlari', permanent: true },
+      // Locale internship pages that exist in robots.txt but have no route — redirect to eduentry.ai
+      { source: '/ar/tadrib', destination: 'https://eduentry.ai/ar', permanent: true },
+      { source: '/ru/stazhirovka', destination: 'https://eduentry.ai/ru', permanent: true },
+      // Trailing slash variants
+      { source: '/privacy/', destination: '/privacy', permanent: true },
       // /home has no route — redirect to the real homepage
       { source: '/home', destination: '/', permanent: true },
       // Strip /en/ prefix — English content lives at the root, not under /en/
