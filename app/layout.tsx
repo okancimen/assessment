@@ -51,6 +51,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Eduentry" }],
   creator: "Eduentry",
   publisher: "Eduentry",
+  verification: { yandex: '291c84c62d800eac' },
   openGraph: {
     type: "website",
     locale: "en_GB",
