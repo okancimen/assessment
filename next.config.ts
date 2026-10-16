@@ -83,6 +83,15 @@ const nextConfig: NextConfig = {
       { source: '/zh/blog/:path*', destination: 'https://eduentry.com/zh/blog/:path*', permanent: true },
       // Legacy grammar-schools pages — old content, redirect to home
       { source: '/grammar-schools/:path*', destination: '/', permanent: true },
+      // Blog lives on eduentry.com — catch-all for any /blog/* hit on eduentry.ai
+      { source: '/blog/:path*', destination: 'https://eduentry.com/blog/:path*', permanent: true },
+      // Trailing slash locale homepages
+      { source: '/ru/', destination: '/ru', permanent: true },
+      { source: '/tr/', destination: '/tr', permanent: true },
+      { source: '/es/', destination: '/es', permanent: true },
+      { source: '/zh/', destination: '/zh', permanent: true },
+      { source: '/fr/', destination: '/fr', permanent: true },
+      { source: '/ar/', destination: '/ar', permanent: true },
     ]
   },
   compress: true,

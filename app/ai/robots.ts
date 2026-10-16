@@ -18,8 +18,19 @@ const PRIVATE = ['/register', '/dashboard', '/admin/']
 
 const ALWAYS_BLOCK = [
   '/*/opengraph-image',   // Next.js image generation endpoints — not indexable pages
+  '/opengraph-image',
   '/_next/',              // Next.js static assets, fonts, build files
   '/ai/',                 // Proxy leak: app/ai/ exposed under /ai/ prefix by Plesk
+  '/blog/',               // Blog lives on eduentry.com; redirects handled in next.config.ts
+  '/blog',
+  // eduentry.com-only pages accessible via Plesk proxy — canonical points to eduentry.com
+  '/subjects/',
+  '/grammar-schools/',
+  '/terms',
+  '/demo',
+  '/sample-report/',
+  '/methodology',
+  '/11-plus/',
 ]
 
 export default function robots(): MetadataRoute.Robots {
