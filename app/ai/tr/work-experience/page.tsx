@@ -131,7 +131,7 @@ export default function WorkExperienceTRPage() {
           style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px)', backgroundSize: '28px 28px' }}
         />
         <div className="pointer-events-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full opacity-[0.12] blur-[140px]" style={{ background: '#A78BFA' }} />
-        <div className="pointer-events-none absolute right-0 top-0 w-[400px] h-[400px] rounded-full opacity-[0.06] blur-[120px]" style={{ background: '#4141DD' }} />
+        <div className="pointer-events-none absolute right-0 top-0 w-[400px] h-[400px] rounded-full opacity-[0.06] blur-0 sm:blur-[120px]" style={{ background: '#4141DD' }} />
 
         <div className="max-w-4xl mx-auto relative z-10 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono font-semibold tracking-widest mb-10"

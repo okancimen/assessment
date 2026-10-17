@@ -100,7 +100,7 @@ export default async function InsightPostTRPage({ params }: Props) {
     <main className="min-h-screen bg-black text-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div
-        className="pointer-events-none fixed left-1/2 top-0 -translate-x-1/2 w-[700px] h-[360px] rounded-full opacity-[0.05] blur-[120px]"
+        className="pointer-events-none fixed left-1/2 top-0 -translate-x-1/2 w-[700px] h-[360px] rounded-full opacity-[0.05] blur-0 sm:blur-[120px]"
         style={{ background: color }}
       />
 

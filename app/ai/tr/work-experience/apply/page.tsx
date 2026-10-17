@@ -133,7 +133,7 @@ export default function WorkExperienceApplyTRPage() {
 
   return (
     <main className="min-h-screen bg-black text-white flex items-center justify-center px-4 py-16">
-      <div className="pointer-events-none fixed left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full opacity-[0.08] blur-[120px]" style={{ background: '#A78BFA' }} />
+      <div className="pointer-events-none fixed left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full opacity-[0.08] blur-0 sm:blur-[120px]" style={{ background: '#A78BFA' }} />
 
       <div className="relative w-full max-w-md">
         <div className="mb-8">

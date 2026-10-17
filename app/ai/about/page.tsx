@@ -84,7 +84,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative overflow-hidden pt-24 pb-16 px-6">
         <div className="pointer-events-none absolute inset-0 opacity-[0.35]" style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
-        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-[#4F46E5] opacity-[0.06] blur-[120px]" />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-[#4F46E5] opacity-[0.06] blur-0 sm:blur-[120px]" />
         <div className="max-w-3xl mx-auto relative z-10">
           <nav className="text-sm text-white/40 mb-12">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>

@@ -183,10 +183,8 @@ export default function AIHomePage() {
           className="pointer-events-none absolute inset-0 opacity-[0.35]"
           style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px)', backgroundSize: '28px 28px' }}
         />
-        {/* Indigo glow */}
-        <div className="pointer-events-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-[#4F46E5] opacity-[0.07] blur-[120px]" />
-        {/* Violet glow */}
-        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 w-[400px] h-[300px] rounded-full bg-[#7C3AED] opacity-[0.06] blur-[100px]" />
+        {/* Indigo + violet glow — CSS radial gradient avoids GPU-expensive blur filters */}
+        <div className="pointer-events-none absolute inset-0" style={{ background: 'radial-gradient(ellipse 700px 400px at 50% 33%, rgba(79,70,229,0.07) 0%, transparent 70%), radial-gradient(ellipse 400px 300px at 50% 50%, rgba(124,58,237,0.06) 0%, transparent 70%)' }} />
 
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           {/* Badge */}
@@ -205,7 +203,7 @@ export default function AIHomePage() {
           </h1>
 
           <p className="text-lg sm:text-xl text-white/50 max-w-[43rem] mx-auto mb-10 leading-relaxed">
-            The earlier you take action, the further ahead you'll be in the future. Are you ready to make your mark in the professional realm? Explore our 34-question adaptive internship assessment tailored for high school and university students! Gauge your potential in 4 vital professional areas, unlock a personalized performance report, and demonstrate that you are fully prepared for the workplace.
+            A free 34-question adaptive assessment for high school and university students. Measure your aptitude, domain knowledge, and workplace skills across 4 professional areas — and get placed in a real internship.
           </p>
 
           {/* CTAs */}
