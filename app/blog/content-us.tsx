@@ -418,11 +418,11 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
         </p>
         <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6">
           <div className="flex-1">
-            <p className="font-semibold text-gray-900 mb-1">See how your child compares internationally — free</p>
-            <p className="text-sm text-gray-600">Eduentry&apos;s adaptive assessment benchmarks your child&apos;s verbal, numerical, and reasoning ability against international peers. Takes under an hour. No registration required.</p>
+            <p className="font-semibold text-gray-900 mb-1">MAP tells you where your child sits in the US. How do they rank globally?</p>
+            <p className="text-sm text-gray-600">Eduentry&apos;s free adaptive assessment covers the same verbal, quantitative, and reasoning skills — benchmarked against an international peer group. Under an hour, no registration required.</p>
           </div>
-          <CtaLink href="/#academic" label="content_cta_academic" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
-            Start free assessment
+          <CtaLink href="/your-childs-potential" label="content_cta_map_international" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
+            Get the global benchmark
           </CtaLink>
         </div>
       </section>
@@ -451,14 +451,14 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
 
       <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row sm:items-center gap-4">
         <div className="flex-1">
-          <p className="font-semibold text-gray-900 mb-1">Is your child on track to compete internationally?</p>
-          <p className="text-sm text-gray-600">MAP measures national norms. Discover how your child ranks against top-tier international peers in English and Maths in under 45 minutes.</p>
+          <p className="font-semibold text-gray-900 mb-1">Strong MAP score — but how does it translate internationally?</p>
+          <p className="text-sm text-gray-600">MAP norms are US-only. Eduentry benchmarks the same reasoning skills against top international peers — so you know if your child&apos;s score is competitive beyond the US.</p>
         </div>
         <a
           href="/your-childs-potential"
           className="shrink-0 inline-block bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors text-center"
         >
-          Check Your Child&apos;s Benchmark →
+          See international ranking →
         </a>
       </div>
 
@@ -926,6 +926,268 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           right or wrong result — it is just a chance for the school to understand
           how their mind works.
         </p>
+      </section>
+    </>
+  ),
+
+  'cogat-scores-explained': (
+    <>
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is the CogAT?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The CogAT (Cognitive Abilities Test) is a group-administered reasoning assessment used by school districts across the United States to identify academically gifted students. Unlike achievement tests that measure what your child has learned, the CogAT measures how your child reasons — across verbal, quantitative, and nonverbal domains. It is developed by Riverside Assessments and is one of the most widely used gifted screening tools in American public education.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          If your child has been referred for gifted testing, or if your district conducts universal gifted screening, you will likely receive a report showing a Standard Age Score (SAS), a percentile rank, and a stanine for each of the three batteries and for the composite score. This guide explains exactly what each of those numbers means and how they relate to gifted program eligibility.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          The CogAT is available in several forms (Form 7 and Form 8 are the most commonly used), with levels ranging from Kindergarten through Grade 12. The scoring system is consistent across all levels: the SAS is always age-normalised with a mean of 100 and a standard deviation of 16.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How CogAT Scores Are Reported</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A CogAT score report typically includes three types of scores, each conveying different information:
+        </p>
+        <div className="space-y-4 mb-5">
+          {[
+            {
+              label: 'Standard Age Score (SAS)',
+              desc: 'A normalised score with a mean of 100 and a standard deviation of 16. It directly reflects how your child compares to other children of the same age. The SAS is the primary number used for gifted identification. Because the scale is fixed, an SAS of 116 always means the 84th percentile, regardless of what grade your child is in.',
+            },
+            {
+              label: 'Percentile Rank',
+              desc: 'The percentage of same-age peers who scored at or below your child\'s level. A percentile of 90 means your child scored higher than 90% of age peers. Percentiles are most useful for comparing against gifted thresholds, which are typically stated in percentile terms.',
+            },
+            {
+              label: 'Stanine',
+              desc: 'A 1–9 scale that groups scores into broad bands. Stanine 5 is average. Stanines 8 and 9 are typically required for gifted program admission. They are useful because they acknowledge that small score differences within a band don\'t represent meaningful ability differences.',
+            },
+          ].map(({ label, desc }) => (
+            <div key={label} className="flex gap-4 p-5 border border-gray-100 rounded-xl">
+              <div className="w-2 h-2 rounded-full bg-indigo-400 mt-2 flex-shrink-0" />
+              <div>
+                <p className="font-semibold text-gray-900 mb-1">{label}</p>
+                <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">CogAT SAS Score to Percentile Conversion Table</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Because the CogAT SAS uses a fixed normal distribution (mean 100, SD 16), the conversion between SAS and percentile is consistent regardless of age or grade. Use this table to interpret your child&apos;s score report.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">SAS Score</th>
+                <th className="text-center p-3 font-semibold text-gray-700">Percentile Rank</th>
+                <th className="text-center p-3 font-semibold text-gray-700">Stanine</th>
+                <th className="text-left p-3 font-semibold text-gray-700">Interpretation</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['148+',  '99.9th', '9', 'Exceptionally gifted'],
+                ['132',   '97.7th', '9', 'Highly gifted'],
+                ['128',   '96th',   '9', 'Highly gifted'],
+                ['125',   '94th',   '8', 'Gifted (most selective programs)'],
+                ['121',   '91st',   '8', 'Gifted (standard threshold)'],
+                ['116',   '84th',   '7', 'Strong — above average'],
+                ['108',   '69th',   '6', 'Above average'],
+                ['100',   '50th',   '5', 'Average (national norm)'],
+                ['92',    '31st',   '4', 'Below average'],
+                ['84',    '16th',   '3', 'Low average'],
+              ].map((row) => (
+                <tr key={row[0]} className={`hover:bg-gray-50/50 ${row[2] === '9' ? 'bg-purple-50/30' : row[2] === '8' ? 'bg-indigo-50/30' : ''}`}>
+                  <td className="p-3 font-mono font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-gray-700">{row[1]}</td>
+                  <td className={`p-3 text-center font-semibold ${row[2] === '9' ? 'text-purple-700' : row[2] === '8' ? 'text-indigo-700' : 'text-gray-600'}`}>{row[2]}</td>
+                  <td className="p-3 text-gray-600 text-sm">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500">Standard Age Score uses a fixed scale: mean 100, SD 16. Percentiles are derived from the normal distribution and are consistent across ages and grades.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What CogAT Score Is Needed for Gifted Programs?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gifted identification thresholds vary by district and program type. The most common cut-offs are the 90th and 95th percentiles, corresponding to CogAT SAS scores of approximately 121 and 126 respectively. Here is how requirements typically work across different program types:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-5">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Program type</th>
+                <th className="text-center p-3 font-semibold text-gray-700">Typical threshold</th>
+                <th className="text-center p-3 font-semibold text-gray-700">SAS equivalent</th>
+                <th className="text-center p-3 font-semibold text-gray-700">Stanine</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['District pull-out enrichment', '90th percentile', '~121', '8'],
+                ['Self-contained GT classroom', '93rd–95th percentile', '~124–126', '8–9'],
+                ['GT magnet school (district)', '95th–97th percentile', '~126–130', '8–9'],
+                ['Highly selective programs (Davidson, CTY)', '97th–99th percentile', '~130–133', '9'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 text-gray-700">{row[0]}</td>
+                  <td className="p-3 text-center text-gray-700">{row[1]}</td>
+                  <td className="p-3 text-center font-mono font-semibold text-indigo-700">{row[2]}</td>
+                  <td className="p-3 text-center font-semibold text-purple-700">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">Important:</strong> Most districts use the CogAT composite score as one input alongside achievement test scores (often NWEA MAP) and teacher recommendations. Meeting the CogAT threshold alone is not always sufficient — and some districts accept a high MAP score as an alternative pathway even without a CogAT above threshold.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Three CogAT Batteries: Verbal, Quantitative, and Nonverbal</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          The CogAT produces separate SAS scores for each of its three batteries. Understanding the battery-level profile is often more useful than the composite score alone — it reveals where your child&apos;s reasoning strengths lie and which areas respond most to preparation.
+        </p>
+        <div className="grid sm:grid-cols-3 gap-4 mb-5">
+          {[
+            {
+              battery: 'Verbal Battery (VB)',
+              color: 'border-t-indigo-400 bg-indigo-50/30',
+              subtests: 'Verbal Analogies, Sentence Completion, Verbal Classification',
+              measures: 'Language-based reasoning, vocabulary depth, ability to identify relationships between words and concepts.',
+              responsive: 'Most preparation-responsive — wide reading and deliberate vocabulary building produce genuine score gains over 6–12 months.',
+            },
+            {
+              battery: 'Quantitative Battery (QB)',
+              color: 'border-t-teal-400 bg-teal-50/30',
+              subtests: 'Number Analogies, Number Puzzles, Number Series',
+              measures: 'Numerical reasoning and quantitative relationships — not arithmetic fluency. Measures how your child spots patterns and rules in numbers.',
+              responsive: 'Moderately preparation-responsive. Number series practice and puzzle books (KenKen, Sudoku) build the relevant skills.',
+            },
+            {
+              battery: 'Nonverbal Battery (NB)',
+              color: 'border-t-violet-400 bg-violet-50/30',
+              subtests: 'Figure Matrices, Paper Folding, Figure Classification',
+              measures: 'Abstract reasoning and spatial thinking using shapes only — no reading required. Often the most reliable indicator of underlying reasoning ability.',
+              responsive: 'Preparation-responsive. Matrix reasoning books, tangrams, and spatial puzzle apps build the skills tested directly.',
+            },
+          ].map(({ battery, color, subtests, measures, responsive }) => (
+            <div key={battery} className={`border border-t-4 border-gray-100 rounded-xl p-5 ${color}`}>
+              <h3 className="font-semibold text-gray-900 mb-2">{battery}</h3>
+              <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Subtests</p>
+              <p className="text-xs text-gray-600 mb-3">{subtests}</p>
+              <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">What it measures</p>
+              <p className="text-xs text-gray-600 mb-3">{measures}</p>
+              <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Preparation</p>
+              <p className="text-xs text-gray-600">{responsive}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Understanding Battery Score Profiles</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          CogAT score reports use letter codes to describe the relationship between battery scores and the composite. This profile notation (e.g. &ldquo;7A (V+ Q- N)&rdquo;) summarises how evenly your child&apos;s abilities are distributed:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>A (no letter):</strong> All three batteries score within about 8 points of the composite. A relatively flat profile — no dramatic peaks or valleys.</Bullet>
+          <Bullet><strong>V+ or V–:</strong> The Verbal battery score is significantly above (+) or below (–) the composite. A V– profile is common in ELL students or early readers; a V+ profile suggests strong language-based reasoning.</Bullet>
+          <Bullet><strong>Q+ or Q–:</strong> The Quantitative battery is significantly above or below the composite. Q+ profiles are common in children with strong number sense.</Bullet>
+          <Bullet><strong>N+ or N–:</strong> The Nonverbal battery is significantly above or below the composite. N+ profiles often indicate strong spatial and abstract reasoning relative to verbal ability.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed">
+          Profiles matter for gifted identification because some programs weight specific batteries more heavily. A student with a composite SAS of 118 but an N+ (Nonverbal) SAS of 128 may still qualify for programmes that weight nonverbal reasoning heavily, even if the composite just misses the threshold.
+        </p>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">See how your child compares internationally</p>
+          <p className="text-sm text-gray-600">Eduentry&apos;s adaptive assessment covers verbal, mathematical, and abstract reasoning — the same domains as the CogAT. Standardised score and percentile ranking against an international peer group, free, in under an hour.</p>
+        </div>
+        <CtaLink href="/academic-assessment" label="content_cta_cogat" className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap">
+          Start free assessment
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">CogAT vs Other Gifted Tests</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          The CogAT is the most widely used gifted screening tool in US public schools, but it is not the only one. Here is how it compares to the other main tests you may encounter:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Test</th>
+                <th className="text-left p-3 font-semibold text-gray-700">Format</th>
+                <th className="text-left p-3 font-semibold text-gray-700">Score scale</th>
+                <th className="text-left p-3 font-semibold text-gray-700">Best for</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['CogAT', 'Group, 3 batteries', 'SAS 100/SD16 + percentile + stanine', 'District-wide screening, gifted identification'],
+                ['NNAT-3', 'Group, nonverbal only', 'Normalized Standard Score (NSS)', 'Language-neutral gifted screening'],
+                ['OLSAT-8', 'Group, verbal + nonverbal', 'School Ability Index (SAI)', 'Districts using Otis-Lennon Assessment'],
+                ['WISC-V', 'Individual, IQ', 'FSIQ 100/SD15 + index scores', 'Deep diagnostic cognitive assessment'],
+                ['NWEA MAP', 'Group, achievement', 'RIT scale by subject', 'Academic achievement, not reasoning'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-gray-600">{row[1]}</td>
+                  <td className="p-3 text-gray-600 font-mono text-xs">{row[2]}</td>
+                  <td className="p-3 text-gray-600">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: 'My child scored SAS 119 — is that gifted?',
+              a: 'An SAS of 119 places a child at approximately the 88th percentile, stanine 7. This is a strong score — well above average — but typically falls just below the 90th percentile threshold used by most gifted programs. Whether it qualifies depends on the specific district: some programs use the 88th percentile as their cut-off, some require 90th, and some consider the battery profile (if the Nonverbal battery is 125+, that may open additional pathways). Contact your district\'s gifted coordinator to check the specific threshold.',
+            },
+            {
+              q: 'Can my child retake the CogAT?',
+              a: 'Policies vary by district. Most districts allow a retest after a set waiting period (often 12–24 months) or after a significant life event that may have affected performance. Some districts automatically re-screen all students at certain grade levels. If you believe your child\'s score was not representative of their ability (illness on test day, significant anxiety, ELL background), speak to the school\'s gifted coordinator about retest options.',
+            },
+            {
+              q: 'What does a high Nonverbal score mean if the Verbal score is lower?',
+              a: 'A notably higher Nonverbal than Verbal score (N+ profile) often indicates strong underlying reasoning ability that is not yet fully expressed in language-based tasks. This profile is particularly common in: children who are still developing English fluency, early or reluctant readers, twice-exceptional (2e) children who have strong spatial/abstract reasoning but a language-related learning difference. A good gifted evaluator will consider the full profile rather than disqualifying a child based on a below-threshold Verbal score.',
+            },
+            {
+              q: 'How long does the CogAT take?',
+              a: 'The CogAT is typically administered over two or three sessions in a school day. Total testing time is approximately 90–120 minutes for the full form (all three batteries). Each battery takes 30–45 minutes. The test is not strictly timed in the same way as some assessments — the goal is to finish within a session, not to race against a clock.',
+            },
+            {
+              q: 'What is a "qualified" CogAT score?',
+              a: 'There is no universal meaning of "qualified" — it depends entirely on your district\'s specific gifted program criteria. The CogAT publisher does not define a gifted cut-off. Your district will specify which score(s) qualify a child for evaluation, screening, or direct placement. Always ask the district for the specific SAS or percentile threshold, not a general description like "above average."',
+            },
+          ].map(({ q, a }) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{q}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </>
   ),

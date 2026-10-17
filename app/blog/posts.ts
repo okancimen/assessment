@@ -672,10 +672,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
     ],
     cta: {
-      heading: 'See how your child compares internationally',
-      body: 'Free adaptive assessment with a standardised score and percentile ranking — the same scale used by cognitive assessments internationally.',
-      label: 'Start free assessment',
-      href: '/academic-assessment',
+      heading: 'MAP shows US norms. This shows the world.',
+      body: 'Eduentry benchmarks the same skills MAP measures — verbal, quantitative, and reasoning — against an international peer group. Free, under an hour. See exactly where your child stands beyond the US national average.',
+      label: 'Get the international benchmark',
+      href: '/your-childs-potential',
     },
   },
   {
@@ -756,6 +756,57 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     cta: {
       heading: 'See how your child compares internationally',
       body: 'Free adaptive assessment with a standardised score and percentile ranking — the same benchmarks used in gifted identification worldwide.',
+      label: 'Start free assessment',
+      href: '/academic-assessment',
+    },
+  },
+  {
+    slug: 'cogat-scores-explained',
+    title: 'CogAT Scores Explained: What Your Child\'s SAS, Percentile and Stanine Mean',
+    shortTitle: 'CogAT Scores Explained: SAS, Percentile & Stanine Guide 2026',
+    description:
+      'CogAT Standard Age Score (SAS) explained: what percentile and stanine each score represents, what scores gifted programs require, and how the three batteries compare.',
+    tldr: 'The CogAT (Cognitive Abilities Test) reports a Standard Age Score (SAS) with a mean of 100 and a standard deviation of 16. A SAS of 116 places a child at approximately the 84th percentile; 132 is the 98th percentile. Most gifted programs require the 90th percentile or above, which corresponds to a CogAT SAS of approximately 121. The test has three batteries — Verbal, Quantitative, and Nonverbal — and a child\'s composite profile matters as much as the overall score.',
+    date: '2026-10-17',
+    readTime: '10 min read',
+    tags: ['CogAT', 'Gifted Testing', 'US Education', 'SAS Score', 'Cognitive Abilities Test'],
+    faqs: [
+      {
+        q: 'What is a good CogAT score?',
+        a: 'A CogAT SAS of 100 is exactly average for a child\'s age group. A score of 116 (84th percentile) is strong; 121 (90th percentile) is gifted range in most districts; 132 (98th percentile) is highly gifted. Because the SAS is age-normalised, the same score means the same percentile regardless of grade level.',
+      },
+      {
+        q: 'What CogAT score is needed for gifted programs?',
+        a: 'Most US gifted programs require the 90th to 95th percentile on the CogAT composite score, which corresponds to an SAS of approximately 121–126. Some highly selective programs (gifted magnet schools, Davidson, Johns Hopkins CTY) set thresholds at the 97th percentile or above (SAS ~130+). Requirements also vary by battery — some programs require all three batteries above threshold, others only the composite.',
+      },
+      {
+        q: 'What is the difference between CogAT SAS and percentile?',
+        a: 'The SAS (Standard Age Score) is a normalised score on a fixed scale (mean 100, SD 16) that compares your child to their age peers. The percentile rank tells you what percentage of same-age peers scored at or below your child\'s level. An SAS of 116 means your child scored better than approximately 84% of peers. The SAS and percentile always relate to each other the same way because the SAS uses a fixed normal distribution.',
+      },
+      {
+        q: 'What is a CogAT stanine?',
+        a: 'A stanine is a 1–9 scale that groups scores into broad bands. Stanine 5 is average; stanines 7, 8, and 9 are above average (roughly the 77th, 89th, and 96th percentiles and above). Most gifted programs require stanine 8 or 9. Stanines are used alongside percentiles because they smooth out small measurement errors — two children with SAS scores of 119 and 123 may both be stanine 8, indicating similarly strong ability.',
+      },
+      {
+        q: 'What are the three CogAT batteries?',
+        a: 'The CogAT measures three reasoning domains: Verbal Battery (VB), which tests vocabulary, sentence completion, and verbal analogies; Quantitative Battery (QB), which tests number analogies, number puzzles, and number series; and Nonverbal Battery (NB), which tests figure matrices, paper folding, and figure classification using shapes only. A composite score is calculated from all three, but battery-level scores are equally important for understanding a child\'s cognitive profile.',
+      },
+      {
+        q: 'Is the CogAT the same as an IQ test?',
+        a: 'No. The CogAT measures cognitive reasoning abilities — verbal, quantitative, and nonverbal — but is not an individually administered IQ test. It is a group-administered screening tool designed for use in school settings. An IQ test like the WISC-V is administered one-on-one by a psychologist and provides more detailed diagnostic information. CogAT scores correlate with IQ scores but are not equivalent to them.',
+      },
+      {
+        q: 'Can you prepare for the CogAT?',
+        a: 'Yes, but selectively. The nonverbal and quantitative batteries respond most to preparation — matrix reasoning, spatial puzzles, and number series practice produce genuine gains. The verbal battery benefits from wide reading and vocabulary building. The test measures developed reasoning ability, not memorised knowledge, so cramming is ineffective. A structured 6–12 month preparation horizon produces the best results.',
+      },
+      {
+        q: 'How is the CogAT different from the NWEA MAP test?',
+        a: 'The CogAT measures cognitive reasoning ability (Verbal, Quantitative, Nonverbal reasoning) and is used for gifted identification. The NWEA MAP measures academic achievement in curriculum content (Reading, Maths, Language). MAP tells you what your child has learned; CogAT tells you how their mind works. Most gifted programs use both — CogAT for the reasoning screen and MAP (or other achievement tests) to confirm academic performance.',
+      },
+    ],
+    cta: {
+      heading: 'See how your child compares internationally',
+      body: 'Free adaptive assessment covering verbal, mathematical, and abstract reasoning — standardised score and percentile ranking against an international peer group.',
       label: 'Start free assessment',
       href: '/academic-assessment',
     },

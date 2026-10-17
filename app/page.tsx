@@ -313,7 +313,10 @@ export default function LandingPage() {
                 Start free assessment
               </CtaLink>
               <span className="text-center text-[11px] text-[#a1a1a7] mt-3 block">No account needed · pause anytime</span>
-              <Link href="#academic" aria-label="Learn more about Academic Assessment" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-2 py-3 block">
+              <Link href="/your-childs-potential" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-1 py-2 block">
+                What does the score mean? →
+              </Link>
+              <Link href="#academic" aria-label="Learn more about Academic Assessment" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-1 py-2 block">
                 Learn more ↓
               </Link>
             </div>

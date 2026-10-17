@@ -1259,6 +1259,16 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </section>
 
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Where does your child sit on this scale — right now?</p>
+          <p className="text-sm text-gray-600 leading-relaxed">Eduentry&apos;s free adaptive assessment gives your child a standardised score on the same GL Assessment scale (mean 100, SD 15) — so you know exactly where they stand before 11+ preparation begins.</p>
+        </div>
+        <Link href="/your-childs-potential" className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap">
+          See your child&apos;s score →
+        </Link>
+      </div>
+
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">The Borderline Zone</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
@@ -1343,6 +1353,43 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             grammar school area guides
           </Link>.
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: 'What is the pass mark for grammar school in 2026?',
+              a: 'There is no single national pass mark. Each school or consortium sets its own qualifying score (formal pass mark). In most areas this falls between SAS 108–115. However, passing the threshold is only the first step — heavily oversubscribed schools rank selective-register children by secondary admissions criteria (siblings, distance), so in practice a child in a competitive area may need SAS 118–125 to receive an offer.',
+            },
+            {
+              q: 'What SAS score do I need for grammar school?',
+              a: 'For most grammar schools outside London and the South East, an SAS of 111–115 clears the formal pass mark. For competitive schools in Kent, Essex, Buckinghamshire, or selective London areas, the effective entry score is typically SAS 118–125 due to oversubscription. The very highest-ranked London selective schools (Tiffin Girls, Wilson\'s, Nonsuch) routinely see entry at SAS 128+.',
+            },
+            {
+              q: 'What is the difference between GL Assessment and CEM 11+ scores?',
+              a: 'GL Assessment (most areas in England) reports a Standardised Age Score (SAS) with a mean of 100 and standard deviation of 15. CEM (Durham University, used in parts of Northern Ireland and some English areas) uses a similar normalised scale but different test content. A SAS of 115 means the same percentile rank (84th) on both systems, but the question style differs significantly — GL Assessment includes separate Verbal Reasoning and Non-Verbal Reasoning papers, while CEM has a different format. Check which board your target school uses before purchasing preparation materials.',
+            },
+            {
+              q: 'Can I appeal a grammar school rejection?',
+              a: 'Yes. Every family has the right to appeal to an independent admission appeal panel. Appeals are typically won on one of two grounds: (1) the admissions authority made a procedural error or misapplied its criteria; (2) a legitimate exceptional circumstances case (the most common being medical evidence that the test score was not representative of the child\'s ability). An independent standardised assessment showing a higher score than the official 11+ result is one of the strongest forms of supporting evidence in an appeal.',
+            },
+            {
+              q: 'Do grammar schools in different areas use the same exam?',
+              a: 'No. Grammar schools across England use different exam boards, test formats, and marking schemes. The most common are GL Assessment and CEM. Some schools run their own bespoke tests. A child preparing in Kent will sit a GL Assessment exam covering English and Maths; a child in parts of Berkshire may sit a CEM exam with a different question style. Research the specific exam board used by your target schools and use preparation materials designed for that board.',
+            },
+            {
+              q: 'How many grammar schools are in England?',
+              a: 'There are approximately 163 grammar schools in England as of 2026. They are concentrated in specific areas: Kent and Medway (33), Lincolnshire (15), Buckinghamshire (13), Essex (10), and selective London boroughs (around 12 across Kingston, Sutton, and Enfield). Large parts of England — including most of London, the North West, and the South West — have no grammar schools at all.',
+            },
+          ].map(({ q, a }) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{q}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section>

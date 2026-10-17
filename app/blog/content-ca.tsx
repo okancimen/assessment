@@ -192,6 +192,16 @@ export const CA_CONTENT: Record<string, React.ReactNode> = {
           If your child appears to be scoring at or near the ceiling on screening tests, ask the
           psychologist about extended norms.
         </Callout>
+
+        <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Before the WISC-V: see where your child stands</p>
+            <p className="text-sm text-gray-600 leading-relaxed">Eduentry&apos;s free adaptive assessment covers Verbal, Quantitative, and Non-Verbal reasoning — the same domains as the CCAT and CogAT. Use it to benchmark before the formal school referral process begins.</p>
+          </div>
+          <Link href="/your-childs-potential" className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap">
+            Free benchmark →
+          </Link>
+        </div>
       </section>
 
       <section>

@@ -40,9 +40,10 @@ export default function SampleReportPage() {
           </div>
           <div className="lg:grid lg:grid-cols-[1fr_auto] lg:gap-10 lg:items-end mb-8">
             <div>
-              <h1 className="text-2xl font-bold text-gray-900 mb-3">This is what you&rsquo;ll get — before you decide to start</h1>
+              <p className="text-sm text-indigo-600 font-semibold mb-2">Eduentry — free adaptive assessment for ages 6–17</p>
+              <h1 className="text-2xl font-bold text-gray-900 mb-3">This is the report your child gets — from a free, 45-minute online assessment</h1>
               <p className="text-gray-500 leading-relaxed max-w-xl">
-                Alex is a fictional 10-year-old. We&rsquo;ve given Alex a deliberately mixed profile — strong in Verbal Reasoning, below average in Maths — so you can see what the report looks like when results vary across subjects. Your child&rsquo;s report will have their real scores.
+                Eduentry measures English, Maths, Verbal Reasoning, and Non-Verbal Reasoning, then produces a standardised score benchmarked against international peers. Below is a sample — Alex is fictional, but the format and depth are exactly what you receive after the real test.
               </p>
             </div>
             <CtaLink href="/academic-assessment" label="sample_report_intro_cta" className="mt-6 lg:mt-0 shrink-0 inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-indigo-700 transition-colors text-sm">

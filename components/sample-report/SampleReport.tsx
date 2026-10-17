@@ -358,6 +358,21 @@ export default function SampleReport({ content: c }: { content: SampleReportCont
           </div>
         </section>
 
+        {/* ── Mid-report CTA ── */}
+        <div className="rounded-2xl border border-indigo-100 bg-indigo-50 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">{c.ctaHeading}</p>
+            <p className="text-sm text-gray-600 leading-relaxed">{c.ctaText}</p>
+          </div>
+          <CtaLink
+            href={registerHref}
+            label={`sample_report_mid${labelSuffix}`}
+            className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap"
+          >
+            {c.ctaButton}
+          </CtaLink>
+        </div>
+
         {/* ── Personalised recommendations ── */}
         <section>
           <div className="flex items-baseline justify-between gap-4 flex-wrap mb-4">
