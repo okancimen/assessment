@@ -7,7 +7,6 @@ import { BLOG_POSTS_FR } from './blog/posts-fr'
 import { BLOG_POSTS_AR } from './blog/posts-ar'
 import { BLOG_POSTS_RU } from './blog/posts-ru'
 import { BLOG_POSTS_ZH } from './blog/posts-zh'
-import { GRAMMAR_AREAS } from './grammar-schools/data'
 import { SAMPLE_REPORT_PATHS } from '@/components/sample-report/paths'
 
 const BASE = 'https://eduentry.com'
@@ -153,13 +152,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const subjectPages: MetadataRoute.Sitemap = SUBJECTS.map((slug) => ({
     url: `${BASE}/subjects/${slug}`,
-    lastModified: '2026-09-23',
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }))
-
-  const grammarPages: MetadataRoute.Sitemap = GRAMMAR_AREAS.map((area) => ({
-    url: `${BASE}/grammar-schools/${area.slug}`,
     lastModified: '2026-09-23',
     changeFrequency: 'monthly' as const,
     priority: 0.7,
@@ -580,5 +572,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  return [...staticPages, ...subjectPages, ...grammarPages, ...blogPages, ...tagPages, ...esPages, ...trPages, ...frPages, ...arPages, ...ruPages, ...zhPages]
+  return [...staticPages, ...subjectPages, ...blogPages, ...tagPages, ...esPages, ...trPages, ...frPages, ...arPages, ...ruPages, ...zhPages]
 }
