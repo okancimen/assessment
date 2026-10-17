@@ -13,8 +13,8 @@ export async function POST(req: NextRequest) {
   const body = await req.json().catch(() => ({}))
   const { name, age } = body
 
-  if (!name || typeof name !== 'string' || name.trim().length < 1) {
-    return NextResponse.json({ error: 'Name is required' }, { status: 400 })
+  if (name !== undefined && typeof name !== 'string') {
+    return NextResponse.json({ error: 'Invalid name' }, { status: 400 })
   }
   const ageNum = Number(age)
   if (!ageNum || ageNum < 6 || ageNum > 20) {
@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
     .from('personality_assessments')
     .insert({
       guest_token: guestToken,
-      guest_name: name.trim(),
+      guest_name: name?.trim() || null,
       guest_age: ageNum,
       age_tier: tier,
       status: 'in_progress',

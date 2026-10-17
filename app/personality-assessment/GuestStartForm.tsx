@@ -14,7 +14,7 @@ type Strings = {
 
 const STRINGS: Record<string, Strings> = {
   en: {
-    namePlaceholder: "Child's first name",
+    namePlaceholder: "Child's name (optional)",
     agePlaceholder: 'Age',
     submitLabel: 'Start Free Assessment',
     loadingLabel: 'Starting…',
@@ -22,7 +22,7 @@ const STRINGS: Record<string, Strings> = {
     errorFallback: 'Something went wrong. Please try again.',
   },
   tr: {
-    namePlaceholder: 'Çocuğun adı',
+    namePlaceholder: 'Çocuğun adı (isteğe bağlı)',
     agePlaceholder: 'Yaş',
     submitLabel: 'Ücretsiz Değerlendirmeyi Başlat',
     loadingLabel: 'Başlatılıyor…',
@@ -30,7 +30,7 @@ const STRINGS: Record<string, Strings> = {
     errorFallback: 'Bir hata oluştu. Lütfen tekrar deneyin.',
   },
   fr: {
-    namePlaceholder: "Prénom de l'enfant",
+    namePlaceholder: "Prénom de l'enfant (facultatif)",
     agePlaceholder: 'Âge',
     submitLabel: "Commencer l'évaluation gratuite",
     loadingLabel: 'Démarrage…',
@@ -38,7 +38,7 @@ const STRINGS: Record<string, Strings> = {
     errorFallback: 'Une erreur est survenue. Veuillez réessayer.',
   },
   es: {
-    namePlaceholder: 'Nombre del niño/a',
+    namePlaceholder: 'Nombre del niño/a (opcional)',
     agePlaceholder: 'Edad',
     submitLabel: 'Iniciar evaluación gratuita',
     loadingLabel: 'Iniciando…',
@@ -46,7 +46,7 @@ const STRINGS: Record<string, Strings> = {
     errorFallback: 'Algo salió mal. Por favor inténtalo de nuevo.',
   },
   ar: {
-    namePlaceholder: 'اسم الطفل',
+    namePlaceholder: 'اسم الطفل (اختياري)',
     agePlaceholder: 'العمر',
     submitLabel: 'ابدأ التقييم المجاني',
     loadingLabel: '…جارٍ البدء',
@@ -54,7 +54,7 @@ const STRINGS: Record<string, Strings> = {
     errorFallback: 'حدث خطأ ما. يرجى المحاولة مرة أخرى.',
   },
   ru: {
-    namePlaceholder: 'Имя ребёнка',
+    namePlaceholder: 'Имя ребёнка (необязательно)',
     agePlaceholder: 'Возраст',
     submitLabel: 'Начать бесплатную оценку',
     loadingLabel: 'Запуск…',
@@ -62,7 +62,7 @@ const STRINGS: Record<string, Strings> = {
     errorFallback: 'Что-то пошло не так. Попробуйте ещё раз.',
   },
   zh: {
-    namePlaceholder: '孩子的名字',
+    namePlaceholder: '孩子的名字（可选）',
     agePlaceholder: '年龄',
     submitLabel: '开始免费测评',
     loadingLabel: '启动中…',
@@ -112,9 +112,8 @@ export default function GuestStartForm({ locale = 'en' }: { locale?: string }) {
           name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          required
           placeholder={s.namePlaceholder}
-          toolparamdescription="The child's first name"
+          toolparamdescription="The child's first name (optional)"
           className="flex-1 px-4 py-3 rounded-xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-white"
         />
         <input

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import GuestStartForm from './GuestStartForm'
@@ -175,6 +176,15 @@ export default async function PersonalityAssessmentPage({
     if (user) redirect(`/strengths/${childId}/start`)
   }
 
+  const admin = createAdminClient()
+  const { count: rawCount } = await admin
+    .from('personality_assessments')
+    .select('*', { count: 'exact', head: true })
+    .eq('status', 'completed')
+  const assessmentCount = rawCount && rawCount > 10
+    ? Math.floor(rawCount / 10) * 10
+    : null
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
@@ -187,6 +197,11 @@ export default async function PersonalityAssessmentPage({
       <section id="start" className="bg-gradient-to-b from-[#f5f3ff] to-white pt-16 pb-12 px-6">
         <div className="max-w-5xl mx-auto lg:grid lg:grid-cols-[1fr_340px] lg:gap-12 lg:items-center">
           <div>
+          {assessmentCount && (
+            <p className="text-xs text-[#6e6e73] mb-3">
+              <span className="font-semibold text-[#1d1d1f]">{assessmentCount.toLocaleString()}+ parents</span> have already discovered their child&apos;s strengths
+            </p>
+          )}
           <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-1.5 mb-6">
             <span className="text-xs font-semibold text-indigo-700 uppercase tracking-wider">VIA Character Strengths · Ages 6–20</span>
           </div>
@@ -214,6 +229,20 @@ export default async function PersonalityAssessmentPage({
             Already have an account?{' '}
             <Link href="/auth/login" className="text-[#4F46E5] hover:underline font-medium">Sign in</Link>
           </p>
+
+          {/* Sample question preview */}
+          <div className="mt-6 rounded-2xl border border-indigo-100 bg-indigo-50/60 p-4 max-w-sm">
+            <p className="text-[10px] font-semibold text-indigo-400 uppercase tracking-wider mb-2">Example question</p>
+            <p className="text-sm text-[#1d1d1f] font-medium leading-snug mb-3">
+              When facing a difficult task, my child keeps trying even when it gets hard.
+            </p>
+            <div className="flex items-center gap-1.5">
+              {[1,2,3,4,5].map((s) => (
+                <span key={s} className={`text-xl leading-none ${s <= 4 ? 'text-amber-400' : 'text-[#d2d2d7]'}`}>★</span>
+              ))}
+              <span className="ml-2 text-xs text-[#6e6e73]">Quite often</span>
+            </div>
+          </div>
           </div>
           <HeroRadarCard locale="en" />
         </div>
