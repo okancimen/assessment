@@ -3,20 +3,17 @@
 import Script from 'next/script'
 import { useEffect, useState } from 'react'
 
+type Site = 'com' | 'ai' | null
+
 export default function ConditionalAnalytics() {
-  const [enabled, setEnabled] = useState(false)
+  const [site, setSite] = useState<Site>(null)
 
   useEffect(() => {
-    if (window.location.hostname.includes('eduentry.ai')) return
+    const isAI = window.location.hostname.includes('eduentry.ai')
+    const load = () => setSite(isAI ? 'ai' : 'com')
 
-    const load = () => setEnabled(true)
-
-    // Defer GTM until the first user interaction so it doesn't
-    // affect LCP/FCP scores during passive page-load audits.
     const events = ['mousedown', 'keydown', 'touchstart', 'scroll']
     events.forEach(e => window.addEventListener(e, load, { once: true, passive: true }))
-
-    // Fallback: load after 5 s even with no interaction
     const timer = setTimeout(load, 5000)
 
     return () => {
@@ -25,7 +22,20 @@ export default function ConditionalAnalytics() {
     }
   }, [])
 
-  if (!enabled) return null
+  if (!site) return null
+
+  if (site === 'ai') {
+    return (
+      <>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-K6M6LHTTR7" strategy="lazyOnload" />
+        <Script id="google-analytics-ai" strategy="lazyOnload">{`
+          gtag('js', new Date());
+          gtag('config', 'G-K6M6LHTTR7');
+        `}</Script>
+        <Script id="clarity-ai-root" strategy="lazyOnload">{`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","ygl2bx00pe");`}</Script>
+      </>
+    )
+  }
 
   return (
     <>
