@@ -71,14 +71,22 @@ export default function AILayout({ children }: { children: React.ReactNode }) {
       {/* eslint-disable-next-line @next/next/no-page-custom-font */}
       <link rel="preconnect" href="https://www.googletagmanager.com" />
       <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-      <link rel="preconnect" href="https://www.google-analytics.com" />
+      <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
       <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-K6M6LHTTR7" strategy="afterInteractive" />
-      <Script id="google-analytics-ai" strategy="afterInteractive">{`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-K6M6LHTTR7');
+      <Script id="gtm-ai" strategy="lazyOnload">{`
+        (function(){
+          var events=['mousedown','mousemove','keydown','touchstart','scroll','wheel'];
+          function load(){
+            events.forEach(function(e){document.removeEventListener(e,load,{once:true,passive:true})});
+            var s=document.createElement('script');s.async=true;
+            s.src='https://www.googletagmanager.com/gtag/js?id=G-K6M6LHTTR7';
+            document.head.appendChild(s);
+            window.dataLayer=window.dataLayer||[];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js',new Date());gtag('config','G-K6M6LHTTR7');
+          }
+          events.forEach(function(e){document.addEventListener(e,load,{once:true,passive:true})});
+        })();
       `}</Script>
       <Script id="clarity-ai" strategy="lazyOnload">{`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","ygl2bx00pe");`}</Script>
       <PublicNavAI />
