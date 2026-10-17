@@ -504,6 +504,18 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </section>
 
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">MAP tells you what your child knows — this reveals who they are</p>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Eduentry&apos;s free personality assessment uses the VIA Character Strengths framework to identify your child&apos;s top strengths and growth areas. Parent-rated, ages 6–20, ~5 minutes. No account needed.
+          </p>
+        </div>
+        <CtaLink href="/personality-assessment" label="map_post_personality_cta" className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap">
+          Discover character strengths →
+        </CtaLink>
+      </div>
+
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
         <div className="space-y-4">

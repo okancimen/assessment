@@ -333,6 +333,12 @@ export default function AcademicAssessmentPage() {
           >
             Start Free Assessment
           </a>
+          <p className="mt-5 text-indigo-200 text-sm">
+            Also want to know who your child <em>is</em>, not just how they score?{' '}
+            <Link href="/personality-assessment" className="text-white underline hover:text-indigo-100 font-medium">
+              Try the 5-minute personality assessment →
+            </Link>
+          </p>
         </div>
       </section>
 
