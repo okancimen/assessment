@@ -6014,6 +6014,308 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'via-character-strengths-children': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Most parents can name their child&apos;s academic strengths — maths or reading, science or writing.
+        But the character strengths that actually determine long-term success — perseverance, curiosity,
+        self-regulation, kindness — are much harder to pin down without a framework. The VIA Classification
+        of Character Strengths provides exactly that: a research-backed map of 24 universal human strengths
+        that can be identified, measured, and developed in children from age six upward.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is the VIA Framework?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The VIA (Values in Action) Classification was developed by psychologists Martin Seligman and Christopher
+          Peterson as part of the positive psychology movement. Published in 2004 after a six-year cross-cultural
+          research project examining virtues across history, philosophy, and religion, it identified 24 character
+          strengths that appear consistently valued across cultures and time periods.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The key insight of VIA is that these are not traits some people have and others don&apos;t. Every person
+          — every child — has all 24 strengths. What varies is degree. A child&apos;s top five strengths (their
+          Signature Strengths) are the ones that feel natural, energising, and authentically theirs. Their bottom
+          three are Growth Pillars — areas where deliberate development will have the most impact.
+        </p>
+        <Callout color="indigo">
+          <strong>Signature Strengths vs Growth Pillars:</strong> Signature Strengths are not just things your
+          child is good at — they are traits they find intrinsically motivating to use. A child with Curiosity
+          as a Signature Strength will seek out new information unprompted. Growth Pillars are bottom-ranked
+          strengths — not absent, but underdeveloped. Both matter: Signature Strengths drive engagement,
+          Growth Pillars often explain why effort breaks down.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The 24 VIA Character Strengths — Explained for Parents</h2>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          The 24 strengths are grouped into six broad virtues. Here is what each looks like in school-age children.
+        </p>
+
+        <div className="space-y-8">
+
+          <div>
+            <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+              <span className="inline-block px-3 py-0.5 rounded-full bg-indigo-100 text-indigo-700 text-sm font-bold">Wisdom</span>
+              <span className="text-gray-400 font-normal text-base">Cognitive strengths for acquiring and using knowledge</span>
+            </h3>
+            <div className="space-y-3">
+              {[
+                { name: 'Creativity', desc: 'Generates original ideas, finds unusual solutions, approaches problems from unexpected angles. Visible in art, writing, engineering challenges, and unconventional thinking in class.' },
+                { name: 'Curiosity', desc: 'Asks relentless "why" and "what if" questions. Explores topics beyond what is required. Finds ordinary things fascinating. One of the strongest predictors of academic engagement.' },
+                { name: 'Judgment (Critical Thinking)', desc: 'Thinks things through before deciding. Weighs evidence rather than accepting claims at face value. Cautious about group opinions. Appears in children who push back thoughtfully rather than going along.' },
+                { name: 'Love of Learning', desc: "Loves mastering new skills and subjects — not just for grades but for the pleasure of knowing more. Often continues exploring topics at home after school has moved on. Strongly linked to academic achievement." },
+                { name: 'Perspective (Wisdom)', desc: "Sees the big picture. Gives sensible advice to peers. Thinks about how things connect to each other. Visible in children others turn to for perspective, even at a young age." },
+              ].map(({ name, desc }) => (
+                <div key={name} className="flex gap-3 p-4 rounded-xl border border-gray-100">
+                  <div className="w-2 h-2 rounded-full bg-indigo-400 flex-shrink-0 mt-2" />
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm">{name}</p>
+                    <p className="text-sm text-gray-600 mt-0.5 leading-relaxed">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+              <span className="inline-block px-3 py-0.5 rounded-full bg-amber-100 text-amber-700 text-sm font-bold">Courage</span>
+              <span className="text-gray-400 font-normal text-base">Emotional strengths for accomplishing goals in the face of opposition</span>
+            </h3>
+            <div className="space-y-3">
+              {[
+                { name: 'Bravery', desc: "Speaks up even when uncomfortable. Tries things they might fail at. Admits mistakes. Does not avoid difficult conversations. A brave child raises their hand even when unsure of the answer." },
+                { name: 'Perseverance', desc: "Finishes what they start. Returns to difficult problems rather than abandoning them. Critical for academic success — low perseverance is the most common reason cognitively capable children underperform." },
+                { name: 'Honesty (Authenticity)', desc: "Tells the truth even when it is easier not to. Keeps promises. Behaves consistently whether or not adults are watching. Often shows up as a strong moral reaction to unfairness." },
+                { name: 'Zest (Enthusiasm)', desc: "Approaches activities with energy and excitement. Hard to tire out mentally. Brings life to group work. Zest is among the top five predictors of academic success in VIA research — engaged learners achieve more." },
+              ].map(({ name, desc }) => (
+                <div key={name} className="flex gap-3 p-4 rounded-xl border border-gray-100">
+                  <div className="w-2 h-2 rounded-full bg-amber-400 flex-shrink-0 mt-2" />
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm">{name}</p>
+                    <p className="text-sm text-gray-600 mt-0.5 leading-relaxed">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+              <span className="inline-block px-3 py-0.5 rounded-full bg-rose-100 text-rose-700 text-sm font-bold">Humanity</span>
+              <span className="text-gray-400 font-normal text-base">Interpersonal strengths for caring and befriending</span>
+            </h3>
+            <div className="space-y-3">
+              {[
+                { name: 'Love', desc: "Values close relationships deeply. Expresses and accepts affection. Has at least one close friend they are highly loyal to. Finds separation from close relationships distressing in a way that peers don't." },
+                { name: 'Kindness', desc: "Does favours, helps others, and shares without being asked. Generous with time and effort. Often puts others' needs before their own, sometimes to their own detriment." },
+                { name: 'Social Intelligence', desc: "Reads social situations accurately. Knows what to say in different contexts. Adapts to different people. High social intelligence in a child predicts both peer relationships and the ability to work effectively in group academic settings." },
+              ].map(({ name, desc }) => (
+                <div key={name} className="flex gap-3 p-4 rounded-xl border border-gray-100">
+                  <div className="w-2 h-2 rounded-full bg-rose-400 flex-shrink-0 mt-2" />
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm">{name}</p>
+                    <p className="text-sm text-gray-600 mt-0.5 leading-relaxed">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+              <span className="inline-block px-3 py-0.5 rounded-full bg-green-100 text-green-700 text-sm font-bold">Justice</span>
+              <span className="text-gray-400 font-normal text-base">Civic strengths for healthy community life</span>
+            </h3>
+            <div className="space-y-3">
+              {[
+                { name: 'Teamwork', desc: "Works well as part of a group. Subordinates personal goals for the team. Reliable in shared responsibilities. Does their part even without recognition." },
+                { name: 'Fairness', desc: "Strong sense of right and wrong. Will not cheat even when no one is watching. Advocates for peers who are treated unfairly. May become upset by perceived injustices in ways that seem disproportionate to adults." },
+                { name: 'Leadership', desc: "Organises group activities. Motivates others. Assumes responsibility naturally. Leads by inclusion rather than dominance. Distinct from dominance: a child high in leadership brings others along rather than overpowering them." },
+              ].map(({ name, desc }) => (
+                <div key={name} className="flex gap-3 p-4 rounded-xl border border-gray-100">
+                  <div className="w-2 h-2 rounded-full bg-green-400 flex-shrink-0 mt-2" />
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm">{name}</p>
+                    <p className="text-sm text-gray-600 mt-0.5 leading-relaxed">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+              <span className="inline-block px-3 py-0.5 rounded-full bg-purple-100 text-purple-700 text-sm font-bold">Temperance</span>
+              <span className="text-gray-400 font-normal text-base">Strengths for managing excess and protecting against weakness</span>
+            </h3>
+            <div className="space-y-3">
+              {[
+                { name: 'Forgiveness', desc: "Lets go of resentment after being wronged. Does not hold grudges. Willing to give people a second chance. Reduces the social friction that disrupts peer relationships and classroom dynamics." },
+                { name: 'Humility', desc: "Does not seek the spotlight. Lets accomplishments speak for themselves. Open to feedback. A humble child accepts correction from teachers without defensiveness — a significant academic advantage." },
+                { name: 'Prudence', desc: "Thinks carefully before acting. Avoids saying or doing things they might regret. Plans ahead. Rarely acts on impulse. Prudence looks like maturity and is often mistaken for introversion." },
+                { name: 'Self-Regulation', desc: "Manages emotions, impulses, and appetites. The single strongest character predictor of academic grades in multiple large studies — surpassing IQ. A child high in self-regulation can work even when they don't feel like it." },
+              ].map(({ name, desc }) => (
+                <div key={name} className="flex gap-3 p-4 rounded-xl border border-gray-100">
+                  <div className="w-2 h-2 rounded-full bg-purple-400 flex-shrink-0 mt-2" />
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm">{name}</p>
+                    <p className="text-sm text-gray-600 mt-0.5 leading-relaxed">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+              <span className="inline-block px-3 py-0.5 rounded-full bg-sky-100 text-sky-700 text-sm font-bold">Transcendence</span>
+              <span className="text-gray-400 font-normal text-base">Strengths for forging connections to the larger universe</span>
+            </h3>
+            <div className="space-y-3">
+              {[
+                { name: 'Appreciation of Beauty & Excellence', desc: "Notices and appreciates beauty in nature, art, mathematics, and everyday moments. Moved by skill and craftsmanship. Often the child who stops to look at something everyone else walks past." },
+                { name: 'Gratitude', desc: "Aware of and thankful for the good things in their life. Expresses thanks spontaneously. Research shows gratitude is one of the most trainable strengths — even a brief daily gratitude practice shows measurable increases within weeks." },
+                { name: 'Hope (Optimism)', desc: "Expects good things. Believes effort will pay off. Bounces back from setbacks by focusing forward. Hope is a strong protective factor against giving up after academic failure — hopeful children interpret a poor test result as temporary, not permanent." },
+                { name: 'Humour', desc: "Laughs and makes others laugh. Brings levity to tense situations. Sees the comic dimension of everyday life. High humour in a child often indicates social comfort and cognitive flexibility." },
+                { name: 'Spirituality', desc: "Has consistent beliefs about a higher purpose or meaning. Feels that their life has meaning beyond the immediate. In non-religious children this often manifests as a strong sense of purpose or a commitment to a cause." },
+              ].map(({ name, desc }) => (
+                <div key={name} className="flex gap-3 p-4 rounded-xl border border-gray-100">
+                  <div className="w-2 h-2 rounded-full bg-sky-400 flex-shrink-0 mt-2" />
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm">{name}</p>
+                    <p className="text-sm text-gray-600 mt-0.5 leading-relaxed">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The 5 Character Strengths That Matter Most for Academic Success</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          All 24 strengths have value, but for academic outcomes specifically, five emerge consistently across
+          longitudinal research as the most predictive:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Strength</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Why it matters academically</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Evidence</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Self-Regulation', 'Controls impulses, sustains effort, manages distractions', 'Outperforms IQ in predicting GPA (Duckworth & Seligman, 2005)'],
+                ['Perseverance', 'Returns to difficult problems rather than abandoning them', 'Predicts task completion and academic persistence across all ages'],
+                ['Love of Learning', 'Intrinsic motivation to master content, not just perform', 'Correlates with deeper learning strategies and higher retention'],
+                ['Curiosity', 'Sustains engagement beyond what is required', 'Explains variance in academic achievement independent of IQ'],
+                ['Zest', 'Brings energy to academic tasks; reduces motivational dropout', 'Among top 5 VIA strengths correlated with school engagement'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  {row.slice(1).map((cell, i) => <td key={i} className="p-4 text-gray-600">{cell}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout color="amber">
+          <strong>The self-regulation finding:</strong> In a landmark 2005 study, Duckworth and Seligman found
+          that self-discipline predicted academic performance at twice the rate of IQ. A child with moderate
+          cognitive ability and high self-regulation will systematically outperform a highly intelligent child
+          with low self-regulation — a finding replicated across countries, ages, and school types.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Identify Your Child&apos;s Strengths</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          There are three practical approaches — each with different levels of reliability:
+        </p>
+        <div className="space-y-4 mb-6">
+          {[
+            {
+              method: 'Observation',
+              detail: "Watch which activities your child chooses freely, returns to without prompting, and finds energising rather than draining. These are likely Signature Strength territory. Keep a brief note over two weeks — patterns become clear.",
+              reliability: 'Moderate — useful but subject to observer bias',
+            },
+            {
+              method: 'Ask them',
+              detail: "For children over 10: ask 'What feels most like the real you?' rather than 'What are you good at?' — strengths feel natural, not just achieved. Younger children often can't reliably self-report.",
+              reliability: 'Low for under-10s, moderate for teenagers',
+            },
+            {
+              method: 'Structured assessment',
+              detail: "A VIA-backed assessment with age-calibrated questions provides the most reliable baseline, especially for younger children where parent-rated format captures daily behaviour more accurately than self-report.",
+              reliability: 'High — validated framework, repeatable over time',
+            },
+          ].map(({ method, detail, reliability }) => (
+            <div key={method} className="flex gap-4 p-5 rounded-xl border border-gray-100">
+              <div className="px-3 py-1 rounded-full bg-indigo-100 text-indigo-600 font-bold text-sm flex-shrink-0 h-fit">{method}</div>
+              <div>
+                <p className="text-gray-700 text-sm leading-relaxed mb-1">{detail}</p>
+                <p className="text-xs text-gray-500 italic">{reliability}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Get a free character strengths profile for your child</p>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Eduentry&apos;s free VIA-backed personality assessment takes about 5 minutes. It&apos;s parent-rated
+              for ages 6–12, and produces a full Signature Strengths profile with personalised development
+              activities. No account needed.
+            </p>
+          </div>
+          <CtaLink href="/personality-assessment" label="via_post_inline_cta" className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap">
+            Start free assessment →
+          </CtaLink>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Build on Your Child&apos;s Strengths at Home</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Once you know your child&apos;s Signature Strengths, you can deploy them deliberately:
+        </p>
+        <div className="space-y-3 mb-6">
+          <Check><strong>Use Signature Strengths as a lever for weak subjects.</strong> If your child has high Curiosity but low engagement with maths, find the mathematical puzzles or real-world applications that activate their natural exploratory drive.</Check>
+          <Check><strong>Name strengths when you see them.</strong> &ldquo;That was real perseverance — you came back to that problem three times.&rdquo; Naming builds identity around the strength, not just behaviour.</Check>
+          <Check><strong>Design environments that require Growth Pillars.</strong> A child low in Self-Regulation benefits from external structure (fixed study times, phones in another room) more than from willpower training alone.</Check>
+          <Check><strong>Reassess every 6 months.</strong> Character strengths are developable. A Growth Pillar that improves over six months of deliberate practice confirms the development is working — and motivates both child and parent to continue.</Check>
+          <Cross><strong>Don&apos;t confuse strengths with skills.</strong> A child can be skilled at something they don&apos;t find energising. Skills are learnable; Signature Strengths feel natural. The distinction matters for choosing which activities to invest in.</Cross>
+          <Cross><strong>Don&apos;t focus only on Growth Pillars.</strong> Research consistently shows that building on existing Signature Strengths produces better wellbeing and engagement than trying to &ldquo;fix&rdquo; bottom-ranked strengths directly.</Cross>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-5">Continue Reading</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/blog/character-strengths-academic-success', tag: 'Guide', title: 'The 5 Character Strengths That Predict School Success' },
+            { href: '/blog/test-anxiety-in-children-strengths', tag: 'Guide', title: 'How Character Strengths Help Children Manage Exam Anxiety' },
+            { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Assessment', title: "Discover Your School-Age Child's Hidden Strengths" },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
   'character-strengths-academic-success': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">

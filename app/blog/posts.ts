@@ -2636,6 +2636,49 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'via-character-strengths-children',
+    title: 'VIA Character Strengths for Children: All 24 Strengths Explained for Parents',
+    shortTitle: 'VIA Character Strengths for Children: All 24 Explained',
+    description:
+      'The VIA framework identifies 24 universal character strengths. Learn what each one looks like in children, which six predict academic success, and how to spot and develop them at home.',
+    tldr: 'The VIA Classification of Character Strengths identifies 24 universally valued human strengths grouped into six virtues: Wisdom, Courage, Humanity, Justice, Temperance, and Transcendence. Every person has all 24 strengths in varying degrees — the top five are called Signature Strengths. For children, love of learning, curiosity, perseverance, self-regulation, and zest are most predictive of academic success. Identifying a child\'s Signature Strengths is the first step to building on them.',
+    date: '2026-10-17',
+    readTime: '12 min read',
+    tags: ['Character Strengths', 'VIA Strengths', 'Child Development', 'Positive Psychology', 'Parent Guide'],
+    faqs: [
+      {
+        q: 'What are the 24 VIA character strengths?',
+        a: 'The 24 VIA character strengths are: Creativity, Curiosity, Judgment, Love of Learning, Perspective (Wisdom); Bravery, Perseverance, Honesty, Zest (Courage); Love, Kindness, Social Intelligence (Humanity); Teamwork, Fairness, Leadership (Justice); Forgiveness, Humility, Prudence, Self-Regulation (Temperance); Appreciation of Beauty, Gratitude, Hope, Humour, Spirituality (Transcendence). Every person has all 24 in varying degrees.',
+      },
+      {
+        q: 'How do I find out my child\'s character strengths?',
+        a: "The most reliable method is a VIA-backed assessment. For children under 13, a parent-rated format is more accurate than self-report, because young children's self-perceptions change rapidly and they can misunderstand survey language. Eduentry's free personality assessment uses age-calibrated questions and can be completed by a parent in about 5 minutes.",
+      },
+      {
+        q: 'Which character strengths matter most for school?',
+        a: 'Self-regulation, perseverance, love of learning, curiosity, and zest are the five VIA strengths most consistently linked to academic outcomes in longitudinal research. Self-regulation — the ability to manage impulses and delay gratification — is the single strongest predictor of academic grades, outperforming IQ in several studies.',
+      },
+      {
+        q: 'Can character strengths be developed in children?',
+        a: 'Yes. Unlike fixed traits such as IQ, VIA character strengths are developable through environment and deliberate practice. A child low in perseverance who practises working through difficulty with appropriate support will measurably improve on re-assessment over 6–12 months. Growth is fastest in the primary and early secondary school years.',
+      },
+      {
+        q: 'What is a Signature Strength?',
+        a: "A Signature Strength is one of a person's top five VIA character strengths — the traits that feel most natural, energising, and characteristic of who they are. The term was introduced by Martin Seligman and Christopher Peterson. Research shows that identifying and using Signature Strengths in new ways increases wellbeing and academic engagement. For children, knowing their Signature Strengths helps parents and teachers leverage natural motivation.",
+      },
+      {
+        q: 'At what age can the VIA be used with children?',
+        a: 'The VIA Youth Survey is validated from age 10 upward in research settings. For younger children (ages 6–9), parent-rated adaptations are more reliable than child self-report. Eduentry\'s assessment is calibrated by developmental tier, starting from age 6.',
+      },
+    ],
+    cta: {
+      heading: "Find your child's Signature Strengths — free",
+      body: "Free VIA-backed personality assessment for ages 6–20. Identifies your child's top character strengths, growth areas, and personalised development activities in under 5 minutes.",
+      label: 'Start free character strengths assessment',
+      href: '/personality-assessment',
+    },
+  },
+  {
     slug: 'character-strengths-academic-success',
     title: 'The 5 Character Strengths That Predict School Success — And How to Spot Them in Your Child',
     shortTitle: 'Character Strengths That Predict Academic Success',

@@ -223,6 +223,22 @@ export default async function GuestAcademicResultsPage({
           </div>
         </div>
 
+        {/* Personality nudge */}
+        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6 text-center space-y-3">
+          <p className="text-xs font-semibold text-indigo-600 uppercase tracking-wider">One more thing</p>
+          <h3 className="text-base font-bold text-[#1d1d1f]">Which character strengths will drive {childName}&apos;s success?</h3>
+          <p className="text-sm text-[#6e6e73] leading-relaxed max-w-sm mx-auto">
+            Academic scores show what your child knows. Character strengths predict what they&apos;ll do with it.
+            Free 5-minute VIA-backed survey — no account needed.
+          </p>
+          <Link
+            href="/personality-assessment"
+            className="inline-block bg-indigo-50 text-indigo-700 font-semibold text-sm px-5 py-2.5 rounded-xl hover:bg-indigo-100 transition-colors"
+          >
+            Discover character strengths →
+          </Link>
+        </div>
+
       </main>
       <PublicFooter />
     </div>
