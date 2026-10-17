@@ -184,7 +184,7 @@ export default async function PersonalityAssessmentPage({
       <PublicNav />
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#f5f3ff] to-white pt-16 pb-12 px-6">
+      <section id="start" className="bg-gradient-to-b from-[#f5f3ff] to-white pt-16 pb-12 px-6">
         <div className="max-w-5xl mx-auto lg:grid lg:grid-cols-[1fr_340px] lg:gap-12 lg:items-center">
           <div>
           <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-1.5 mb-6">
@@ -194,9 +194,17 @@ export default async function PersonalityAssessmentPage({
             Discover Your Child&apos;s Unique<br />
             <span className="text-[#4F46E5]">Strengths &amp; Growth Areas</span>
           </h1>
-          <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
+          <p className="text-lg text-[#6e6e73] mb-6 leading-relaxed">
             An AI-powered, scientifically backed character assessment tailored perfectly to your child&apos;s developmental age.
           </p>
+          <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73] mb-6">
+            {['Free · no account needed', '~5 minutes', 'Instant personalised report', 'Ages 6–20'].map((t) => (
+              <span key={t} className="flex items-center gap-1">
+                <svg className="w-3 h-3 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
+                {t}
+              </span>
+            ))}
+          </div>
           <GuestStartForm />
           <p className="mt-3 text-sm text-[#6e6e73]">
             Not sure yet?{' '}
@@ -361,7 +369,7 @@ export default async function PersonalityAssessmentPage({
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">Ready to discover who your child truly is?</h2>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/personality-assessment"
+              href="#start"
               className="inline-block bg-white text-[#4F46E5] hover:bg-indigo-50 font-bold text-base px-8 py-4 rounded-xl transition-colors"
             >
               Start Free Assessment

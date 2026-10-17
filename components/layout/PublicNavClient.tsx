@@ -46,6 +46,7 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
       { href: '/subjects', label: 'Subjects' },
       { href: 'https://eduentry.ai/en', label: 'Internship', external: true },
       { href: '/academic-assessment', label: 'Academic Assessment' },
+      { href: '/personality-assessment', label: 'Personality Assessment' },
       { href: '/your-childs-potential', label: "Child's Potential" },
     ],
     blogHref: '/blog',
