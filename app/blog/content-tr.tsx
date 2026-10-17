@@ -3,6 +3,160 @@ import { Bullet, Callout, Check, Cross } from './blog-components'
 
 export const TR_CONTENT: Record<string, React.ReactNode> = {
 
+  'pisa-2025-global-education-crisis-what-parents-need-to-know': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Eylül 2026&apos;da OECD, PISA 2025 — Uluslararası Öğrenci Değerlendirme Programı — sonuçlarını açıkladı ve bu sonuçlar eğitim bakanlarını, okul yöneticilerini ve ebeveynleri derinden sarstı. Programın tarihinde ilk kez, OECD ülkeleri matematikten okuryazarlığa, fenden bilgi işlemsel problem çözmeye kadar tüm temel alanlarda aynı anda en düşük ortalama performanslarını kayıt altına aldı. 91 ülke ve ekonomiden 760.000&apos;den fazla öğrenci katıldı; bu rakam dünya genelinde 33 milyon 15 yaşındaki genci temsil ediyor.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu geçici bir düşüş değil. On yıldır birikmekte olan ve pandemi sonrasıyla gençlerin teknolojiyle ilişkisindeki yapısal değişimlerle derinleşen eğilimin ivmesini gösteriyor. OECD araştırmacıları sonuçları, yüzeysel ilgi ve eleştirисиz yapay zeka kullanımının temel becerileri aşındırmasına izin veren eğitim sistemleri için bir &ldquo;uyarı çağrısı&rdquo; olarak nitelendiriyor.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Nedir ve Neden Önemlidir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA, OECD&apos;nin 2000 yılından bu yana her üç yılda bir uyguladığı Uluslararası Öğrenci Değerlendirme Programı&apos;dır. 15 yaşındaki öğrencileri — zorunlu eğitimin sonuna yaklaşan yaş grubu — matematik, okuma okuryazarlığı ve fen alanlarında test eder. 2025&apos;te 91 ülkeden 33 milyon öğrenciyi temsil eden veriler toplandı. Hiçbir başka eğitim çalışması bu ölçeğe ya da metodolojik titizliğe yaklaşamaz.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA önemlidir çünkü tek gerçek küresel ölçüttür. Ulusal sınavlar, bir çocuğun kendi ülkesinin sistemi içinde nasıl konumlandığını gösterir — yararlı, ancak sınırlı. PISA ise her öğrenciye aynı soruları aynı koşullarda sorar ve her skoru aynı uluslararası ölçeğe yerleştirir. Singapur 575 alırken Türkiye&apos;nin matematik ortalaması 463 olduğunda bu fark ölçülebilir ve gerçektir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Matematik Krizi: On Yılda 22 Puan Kaybı</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          OECD ortalama matematik puanları 2015 ile 2025 arasında 22 puan düştü. Araştırmacılar her 20 PISA puanının yaklaşık bir yıllık okul öğrenimine karşılık geldiğini hesaplıyor. Başka bir deyişle, ortalama 15 yaşındaki on yıl önceki yaşıtının gerisine düşmüş durumda — aynı yıl sayısını okulda geçirmesine karşın. Bu sistemik, ülkeler arası bir çöküştür.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Üst sıraları Doğu Asya egemenliğini koruyarak Singapur (575), Japonya (536) ve Güney Kore (524) oluşturuyor. Türkiye ise 463 puan alarak OECD ortalamasının (472) hafif altında kaldı. Bu, 2022&apos;ye kıyasla anlamlı bir değişim sayılmaz; ancak Singapur ile aradaki yaklaşık 112 puanlık fark beş yıldan fazla öğrenme avantajına karşılık geliyor.
+        </p>
+        <Callout color="amber">
+          <strong>Yıllık öğrenim ölçütü:</strong> Her 20 PISA puanı yaklaşık bir yıllık okul öğrenimine denk gelir. OECD&apos;nin 2015&apos;ten bu yana matematikteki 22 puanlık düşüşü, bugünün ortalama çocuğunun 2015&apos;teki yaşıtından bir yılı aşkın matematik becerisinin gerisinde yetişkinliğe adım attığı anlamına gelir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Okuma Krizi: 28 Puan ve Yeni Bir Okuma Problemi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okuma düşüşü matematikten daha derin: OECD ortalaması 2015&apos;ten 2025&apos;e 28 puan geriledi; bu yaklaşık bir buçuk yıllık okul öğrenimine karşılık geliyor. Türkiye&apos;nin okuma puanı ise 479 olarak OECD ortalamasını (476) hafifçe geçti — nadir görülen olumlu bir işaret.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ancak ham rakam sorunun tamamını anlatmıyor. PISA 2025, gençlerin nasıl okuduğunda nitel bir dönüşüm de tespit etti. Hızlı ama hatalı okuyan — anlamaya değil hıza öncelik veren — öğrencilerin oranı 2018&apos;den 2025&apos;e neredeyse iki katına çıkarak OECD öğrencilerinin %9&apos;una ulaştı. Bunlar teknik okuma becerisini kazanmış ama anlamlı hiçbir şey okumayan çocuklar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA öğrencilere karşılaştıkları bilgiyi nasıl değerlendirdiklerini sorduğunda yalnızca %46&apos;sı hem kaynak güvenilirliğini kontrol ettiğini hem de iddiaları değerlendirirken bilimsel kanıtı tercih ettiğini bildirdi. Yapay zekanın ürettiği içeriklerle dolu bir bilgi ortamında bu, temel bir beceri açığıdır.
+        </p>
+        <Callout color="rose">
+          <strong>OECD öğrencilerinin yalnızca %46&apos;sı</strong> kaynak güvenilirliğini kontrol ederek bilimsel kanıtı tercih ediyor. Yapay zekanın saniyeler içinde ikna edici ama tamamen asılsız metinler üretebildiği bir çağda bu, en yüksek riskli temel beceri açığıdır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türkiye&apos;nin PISA 2025 Sonuçları</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye için tablo karmaşık ama dikkat çekici noktalara sahip. Matematik puanı 463 ile OECD ortalamasının (472) altında. Okuma puanı 479 ile OECD ortalamasını (476) geçiyor. Fen alanında ise Türkiye, 2022 döngüsüne kıyasla iyileşme kaydeden dört ülkeden biri olarak öne çıkıyor — İngiltere, Slovakya ve Kosta Rika ile birlikte.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Ülke</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Matematik</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Okuma</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Singapur', '575', '543'],
+                ['Japonya', '536', '516'],
+                ['Güney Kore', '524', '–'],
+                ['İngiltere', '495', '–'],
+                ['OECD Ortalaması', '472', '476'],
+                ['Fransa', '475', '479'],
+                ['İspanya', '472', '488'],
+                ['Türkiye', '463', '479'],
+              ].map((row) => (
+                <tr key={row[0]} className={`hover:bg-gray-50/50 ${row[0] === 'Türkiye' ? 'font-semibold bg-indigo-50/40' : ''}`}>
+                  <td className="p-4 text-gray-900">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-600">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          UAE&apos;deki Türk aileler için bu veriler özellikle anlamlıdır: çocuklar Türkiye&apos;nin ulusal müfredatından farklı, uluslararası standartlara göre değerlendirilen bir sistemde büyüyorlar. Ulusal ortalama, bireysel konumu anlatmaz.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sınıfta Yapay Zeka: İki Yönlü Keskin Bir Kılıç</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025, öğrenciler arasındaki yapay zeka kullanımını sistematik biçimde inceleyen ilk döngü oldu. OECD öğrencilerinin %46&apos;sı YZ sohbet robotlarını haftada bir ya da daha sık kullandığını bildiriyor. Veriler ise daha karmaşık bir tablo ortaya koyuyor.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>Ödev için YZ kullanımı:</strong> Özetleme, taslak yazma veya araştırma gibi belirli okul görevleri için YZ kullanan öğrenciler, bu görevleri kendi başına yapan akranlarına kıyasla fen puanında yaklaşık 20 puan — yaklaşık bir yıllık okul öğrenimine denk — geride kalıyor.</Bullet>
+          <Bullet><strong>Genel YZ kullanımı:</strong> Keşif ve açıklama amacıyla YZ kullanan öğrencilerde anlamlı bir negatif etki görülmüyor. Zarar bilişsel emeği devre dışı bırakan ikamede, kullanımın kendisinde değil.</Bullet>
+          <Bullet><strong>YZ okuryazarlığı eğitimi:</strong> Okulda YZ okuryazarlığı eğitimi alan öğrenciler, benzer akranlarından biraz daha iyi performans gösteriyor — ancak bu eğitim orantısız biçimde üst sosyoekonomik kesime ulaşıyor.</Bullet>
+          <Bullet><strong>Sınıf içi dikkat dağınıklığı:</strong> Öğrencilerin %28&apos;i, fen derslerinin büyük bölümünde ya da tamamında sınıf arkadaşlarının dijital cihazlarla dersi bölüp parçaladığını söylüyor.</Bullet>
+        </ul>
+        <Callout color="amber">
+          <strong>YZ ödev tuzağı:</strong> PISA 2025, özetleme ve taslak yazma gibi belirli okul görevleri için YZ kullanmanın, aynı görevleri kendi başına yapan akranlara kıyasla tam bir yıllık öğrenim gerisinde kalmakla ilişkili olduğunu buldu. Kısayol verimli hissettiriyor; bilişsel bedeli ise test sonuçlarına yansıyana kadar görünmüyor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuz Bu Dağılımda Nerede Duruyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA ulusal ortalamaları gösterir; bireysel çocukları değil. Ebeveyn olarak sizi ilgilendiren soru şu: çocuğunuz bu dağılımın neresinde? Ulusal ortalama bu konuda neredeyse hiçbir şey söylemez. Tipik bir OECD ülkesinde, en iyi ile en düşük performanslı öğrenciler arasındaki fark 200 PISA puanını aşıyor — tek bir yaş grubunda on yıldan fazla okul öğrenimine eşdeğer.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu fark, her kritik eğitim kararını etkiliyor: özel ders gerekli mi, hangi derste, ne yoğunlukta? Okul seçimi çocuğun gerçek düzeyine hitap ediyor mu? Üniversite hedefleri gerçekçi bir konumlandırmaya mı dayanıyor? Bireysel kıyaslama olmadan bu kararların tümü en önemli bilgi eksik alınıyor.
+        </p>
+        <Callout color="indigo">
+          PISA ortalaması sistemleri anlatır. Eduentry çocuğunuzu anlatır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ücretsiz Uluslararası Kıyaslama: Eduentry</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry, PISA&apos;nın veremediği bireysel düzey bilgiyi ebeveynlere sunmak için tasarlanmış uyarlamalı bir değerlendirme platformudur. PISA ve büyük uluslararası sınavların temelinde yatan psikometrik yöntem olan Madde Tepki Teorisi&apos;ni (IRT) kullanarak her çocuğu aynı uluslararası ölçeğe yerleştirir. Test gerçek zamanlı adapte olur, yanıtlara göre daha zor ya da daha kolay sorular sorar; böylece 6&apos;dan 20&apos;ye kadar tüm yetenek aralığında doğru kalibrasyon sağlar.
+        </p>
+        <ul className="space-y-3 mb-6">
+          <Check><strong>Matematik</strong> — PISA matematik çerçevesiyle örtüşen sayısal muhakeme ve problem çözme</Check>
+          <Check><strong>İngilizce okuryazarlığı</strong> — PISA okuma çerçevesiyle aynı değerlendirme yaklaşımı</Check>
+          <Check><strong>Sözel muhakeme</strong> — dile uygulanan mantıksal düşünme, tüm dersler için güçlü akademik potansiyel göstergesi</Check>
+          <Check><strong>Sözel olmayan muhakeme</strong> — dilden bağımsız soyut ve uzamsal muhakeme</Check>
+          <Check><strong>Küresel yüzdelik sıralama</strong> — çocuğunuzu PISA&apos;yla aynı uluslararası ölçeğe yerleştirir</Check>
+          <Check><strong>Ücretsiz · kayıt gerekmez</strong> — tam kıyaslama değerlendirmesi bir saatten kısa sürer</Check>
+        </ul>
+        <div className="mt-6 mb-2">
+          <Link href="/tr/akademik-degerlendirme" className="inline-flex items-center gap-2 bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#4338CA] transition-colors">
+            Ücretsiz Değerlendirmeyi Başlat
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sonuç: Uyarı Çağrısı, Umutsuzluk Değil</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2025 sonuçları düşündürücü. Üç temel alanda eş zamanlı gerileme, &ldquo;acele okuma&rdquo;nın neredeyse iki katına çıkması, YZ performans açığı, gençlerin yanlış bilgiye karşı kırılganlığı — bu bulgular bir arada, temel becerileri gerçek baskı altındaki bir neslin tablosunu çiziyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ancak aynı veriler neyin işe yaradığını da gösteriyor. PISA 2025&apos;te en iyi performansı sergileyen ülkeler öğretmen-öğrenci ilişkisine, yüksek akademik beklentiye, evde ve okulda derin okumanın değer gördüğü bir kültüre ve becerileri atlayıp geçmek yerine geliştiren bir teknoloji yaklaşımına sahip eğitim sistemleriyle öne çıkıyor.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Ebeveyn olarak yapabileceğiniz en güçlü eylem, ulusal istatistiklerden çocuğunuzun bireysel konumuna geçmektir. PISA küresel hikâyeyi anlatır; sizin ihtiyacınız olan ise kendi bölümünüzü bilmek. Eduentry&apos;nin uyarlamalı değerlendirmesi bir saatten kısa sürer, tamamen ücretsizdir ve çocuğunuzu PISA&apos;nın kullandığı uluslararası ölçeğe yerleştirir. Çocuğunuzun nerede durduğunu öğrendikten sonra kaygıyla değil, kesinlikle hareket edebilirsiniz.
+        </p>
+      </section>
+    </>
+  ),
+
   'test-anxiety-in-children-strengths': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
@@ -3233,6 +3387,16 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <Bullet><strong>Tatil günlerini boş bırakmak:</strong> Resmi tatil ve hafta sonları için staj defterinde genellikle "tatil" veya "çalışılmadı" notu düşülür. Tamamen boş bırakmak formata uymadığı için sorun yaratabilir.</Bullet>
         </ul>
       </section>
+
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Staj defterini doldurdun — şimdi stajı kazan</p>
+          <p className="text-sm text-gray-600 leading-relaxed">Eduentry Staj Platformu, lise öğrencilerinin uluslararası staj fırsatlarına başvurmasına yardımcı olur. Ücretsiz değerlendirme ile başvurunu güçlendir.</p>
+        </div>
+        <Link href="https://eduentry.ai/tr" className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap">
+          Staj platformuna git →
+        </Link>
+      </div>
     </>
   ),
 
@@ -6250,174 +6414,6 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <Callout color="emerald">
           <strong className="text-emerald-900">En önemli ilk adım:</strong> Herhangi bir alıştırma kitabı, özel ders veya deneme sınavından önce — çocuğunuzun gerçekte nerede durduğunu anlamak için ücretsiz bir taban değerlendirmesi yapın. Diğer her şey o veri noktasından akar.
         </Callout>
-      </section>
-    </>
-  ),
-
-  'pisa-2025-global-education-crisis-what-parents-need-to-know': (
-    <>
-      <p className="text-lg text-gray-600 leading-relaxed">
-        Eylül 2026&apos;da OECD, PISA 2025 — Uluslararası Öğrenci Değerlendirme Programı — sonuçlarını yayımladı ve bu başlık eğitim bakanlarını, okul yöneticilerini ve ebeveynleri olduğu yerde dondurdu. Değerlendirmenin tarihinde ilk kez OECD ülkeleri; matematik, okuma ve fen olmak üzere üç temel alanda aynı anda tüm zamanların en düşük ortalama performansını kayıt altına aldı. 91 ülke ve ekonomiden 760.000&apos;den fazla öğrenci bu değerlendirmeye katıldı; bu rakam dünya genelinde 33 milyon 15 yaşındaki öğrenciyi temsil ediyor.
-      </p>
-      <p className="text-gray-700 leading-relaxed">
-        Bu geçici bir düşüş değil. Pandemi yıllarıyla ivme kazanan ve teknoloji kullanımındaki yapısal değişimlerle pekişen on yıllık bir eğilimin hızlanmasıdır. OECD&apos;nin kendi araştırmacıları sonuçları, her çocuğun yetişkin yaşamında başarılı olmak için ihtiyaç duyduğu temel becerilerin aşınmasına izin veren eğitim sistemleri için bir &ldquo;uyarı çanı&rdquo; olarak tanımlıyor.
-      </p>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA Nedir ve Neden Önemlidir?</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          PISA, OECD&apos;nin 2000&apos;den bu yana her üç yılda bir yürüttüğü Uluslararası Öğrenci Değerlendirme Programı&apos;dır. Zorunlu öğrenimin sonuna yaklaşan 15 yaşındaki öğrencileri matematik, okuma okuryazarlığı ve fen alanlarında test eder. 2025&apos;te 91 ülke ve ekonomi katıldı; sonuçlar küresel olarak tahminen 33 milyon öğrenciyi temsil ediyor. Hiçbir eğitim araştırması bu ölçeğe ya da metodolojik titizliğe yaklaşamıyor.
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          PISA önemlidir çünkü tek gerçek küresel kıyaslamadır. Ulusal sınavlar çocukların kendi ülke sistemi içinde nasıl karşılaştırıldığını gösterir — faydalı ama sınırlı. PISA her öğrenciye aynı soruları aynı koşullarda yöneltir ve her puanı aynı uluslararası ölçeğe yerleştirir. Seçici üniversiteler, burs komiteleri ve uluslararası okullar &ldquo;uluslararası standartlara&rdquo; atıfta bulunduğunda kastettikleri bu değerlendirmedir.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Matematik Krizi: On Yılda 22 Puan Kaybı</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          OECD ortalama matematik puanları 2015 ile 2025 arasında 22 puan düştü. Bunu somut bir çerçeveye oturtmak gerekirse: araştırmacılar yaklaşık 20 PISA puan farkının yaklaşık bir yıllık okul eğitimine karşılık geldiğini tahmin ediyor. 22 puanlık düşüş, OECD ülkelerindeki ortalama 15 yaşındaki öğrencinin on yıl önceki yaşıtının bulunduğu matematiksel seviyenin bir yıldan fazla gerisinde performans sergilediği anlamına geliyor.
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          En iyi performans gösterenler Doğu Asya&apos;da yoğunlaşmaya devam ediyor. Singapur ve Çin&apos;in B-S-J-Z yetki alanları (Pekin, Şanghay, Jiangsu, Zhejiang) OECD ortalamasının çok üzerinde performanslarıyla dünyaya liderlik ediyor. Estonya, Japonya, Güney Kore ve Birleşik Krallık da küresel ilk 10&apos;da yer alıyor. Bu eğitim sistemlerini karakterize eden özellikler arasında yüksek beklentiler, güçlü öğretmen kalitesi ve okul saatlerinde görece sınırlı dijital dikkat dağınıklığı öne çıkıyor.
-        </p>
-        <Callout color="amber">
-          <strong>Bir yıllık eğitim ölçütü:</strong> Her 20 PISA puanı yaklaşık bir yıllık okul eğitimine eşdeğerdir. OECD&apos;nin 2015&apos;ten bu yana matematikte 22 puanlık düşüşü, bugünün ortalama çocuğunun aynı yıl sayısında okula gitmiş olmasına karşın 2015&apos;teki ortalama çocuktan bir yıldan fazla daha az matematiksel yetkinlikle yetişkinliğe adım attığı anlamına geliyor.
-        </Callout>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Okuma Çöküşü: 28 Puan ve Yeni Bir Okuma Biçimi</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Okumadaki gerileme matematikten daha dik ve sonuçları daha geniş çaplı. OECD ortalama okuma puanları 2015 ile 2025 arasında 28 puan düştü — yaklaşık bir buçuk yıllık eğitime eşdeğer. PISA 2025&apos;in ortaya koyduğu nitel değişim ise ham rakamın ötesinde bir sorun işaret ediyor: &ldquo;acele okuma&rdquo; — hızlı ama yüzeysel okuma, anlama yerine hız önceliği — oranı 2018 ile 2025 arasında neredeyse iki katına çıkarak OECD öğrencilerinin %9&apos;una ulaştı.
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          PISA öğrencilere bilgiyi nasıl değerlendirdiklerini sorduğunda yalnızca %46&apos;sı hem kaynak güvenilirliğini kontrol ettiğini hem de iddiaları değerlendirirken bilimsel kanıtı tercih ettiğini belirtti. Diğer bir deyişle, OECD ülkelerindeki 15 yaşındaki öğrencilerin yarısından azı yapay zeka çıktıları ve viral dezenformasyonla dolu bir bilgi ortamında gezinmek için gereken değerlendirme alışkanlıklarına sahip. Bu bir okuryazarlık krizi olduğu kadar epistemik bir krizdir de.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sınıfta Yapay Zeka: Çift Taraflı Kılıç</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          PISA 2025, öğrenciler arasındaki yapay zeka kullanımını sistematik biçimde ilk kez inceliyor ve bulgular çoğu yorumcunun öne sürdüğünden daha nüanslı ve daha kaygı verici. OECD öğrencilerinin %46&apos;sı yapay zeka sohbet robotlarını haftada bir veya daha sık kullandığını bildiriyor — yani gelişmiş dünyadaki 15 yaşındakilerin neredeyse yarısı yapay zeka araçlarına rutin olarak başvuruyor.
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          PISA, yapay zeka kullanımı ile akademik performans arasındaki ilişkiyi incelediğinde çarpıcı bir olumsuz ilişki saptadı: belirli okul ödevi görevleri için yapay zeka kullanan öğrenciler, bu görevleri kendi bilişsel çabasıyla yapan öğrencilerden fen puanında yaklaşık 20 puan geride kalıyor. Mekanizmayı anlamak zor değil: yapay zeka bilgi ve beceri inşa eden bilişsel işi üstlendiğinde öğrenci bu süreçten dışlanıyor. Görev tamamlanıyor ama öğrenme gerçekleşmiyor.
-        </p>
-        <ul className="space-y-4 mb-6">
-          <Bullet>
-            <strong>OECD öğrencilerinin %46&apos;sı</strong> yapay zeka sohbet robotlarını haftada bir veya daha sık kullanıyor.
-          </Bullet>
-          <Bullet>
-            <strong>~20 puan daha düşük fen puanları</strong>, özetleme, taslak oluşturma ve araştırma gibi belirli ödev görevleri için yapay zeka kullananlarla ilişkili.
-          </Bullet>
-          <Bullet>
-            <strong>Yapay zeka okuryazarlığı eğitimi</strong> okulda verilen öğrencilerin performansı biraz daha iyi — ancak bu eğitim sosyoekonomik açıdan avantajlı öğrencilerde daha yaygın, yeni bir &ldquo;yapay zeka uçurumu&rdquo; yaratıyor.
-          </Bullet>
-        </ul>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bu Sonuçlar Aileler İçin Ne Anlama Geliyor?</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          PISA ulusal ortalamaları gösterir. Bireysel çocuklar hakkında bilgi veremez. PISA&apos;nın ortaya koyduğu veriler bağlam sağlar; asıl soru çocuğunuzun bu dağılımın neresinde yer aldığıdır. Ülke içi farklılık, ebeveynlerin çoğunun bilmediği ve en önemli olan rakamdır. Tipik bir OECD ülkesinde en yüksek ve en düşük performans gösteren öğrenciler arasındaki fark 200 PISA puanının üzerindedir — aynı yaş grubunda on yıldan fazla eğitim eşdeğeri. Ulusal sıralama, bireysel çocuğunuzun konumu hakkında neredeyse hiçbir kullanışlı bilgi vermez.
-        </p>
-        <Callout color="indigo">
-          PISA ortalaması sistemleri anlatır. Eduentry çocuğunuzu anlatır.
-        </Callout>
-        <p className="text-gray-700 leading-relaxed mt-4 mb-4">
-          Aynı uluslararası ölçekte bireysel bir kıyaslama yapan ve ebeveynlere PISA&apos;nın sağlayamadığı bilgiyi sunan bir platform, ulusal istatistiklerden kişisel eyleme geçişte tam olarak ihtiyaç duyulan bilgiyi sağlar. Eduentry, 6–17 yaş arası çocukları PISA ile aynı ölçekte matematik, İngilizce, sözel ve sözel olmayan akıl yürütme alanlarında test eder. Bir saat içinde küresel yüzdelik sıranızı öğrenebilirsiniz — ücretsiz.
-        </p>
-      </section>
-    </>
-  ),
-
-  'isee-ssat-private-school-guide': (
-    <>
-      <p className="text-lg text-gray-600 leading-relaxed">
-        Çocuğunuz ABD&apos;deki bağımsız (özel) okullara başvuruyorsa büyük olasılıkla ISEE (Bağımsız Okul Giriş Sınavı) ya da SSAT (Ortaöğretim Okul Kabul Testi)&apos;nden birini alması gerekecek. Her ikisi de geniş çapta kabul görüyor, ikisi de akıl yürütme ve akademik becerileri ölçüyor ve ikisi de öğrencilerin devlet okullarında karşılaştığı çoğu standart testten önemli ölçüde daha zor. Doğru testi seçmek ve ona doğru hazırlanmak çocuğunuzun başvurusunda anlamlı bir fark yaratabilir.
-      </p>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">ISEE ve SSAT Nedir?</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          <strong>ISEE</strong>, Eğitim Kayıtları Bürosu (ERB) tarafından yönetilir ve dünya genelinde 1.200&apos;den fazla bağımsız okul tarafından kabul edilir. <strong>SSAT</strong> ise Secondary School Admission Test Board tarafından yönetilir ve 2.600&apos;ü aşkın bağımsız okul tarafından kabul edilir. Her iki test de 3. sınıftan 12. sınıfa kadar farklı kademeler için uygulanır.
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Baştan bilmeniz gereken en önemli nokta: her iki test de çocuğunuzu yalnızca diğer bağımsız okul başvurucularıyla karşılaştırır — genel öğrenci nüfusuyla değil. Bağımsız okul başvurucuları akademik açıdan oldukça seçkin bir havuz oluşturduğundan SSAT&apos;ta 50. yüzdelik bir puan, bağımsız okul başvurucularının medyanıdır; genel nüfusun medyanı değildir.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">ISEE&apos;ye Genel Bakış</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          ISEE&apos;nin her biri belirli bir giriş sınıfı aralığı için tasarlanmış beş seviyesi vardır: İlkokul (2.–4. sınıf girişi), Alt (5.–6. sınıf), Orta (7.–8. sınıf), Üst (9.–12. sınıf) ve birincil kademeler için Primary düzeyi.
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          ISEE (Alt&apos;tan Üst düzeye) beş bölümden oluşur: Sözel Akıl Yürütme (eşanlamlılar ve cümle tamamlama), Sayısal Akıl Yürütme, Okuma Anlama, Matematik Başarısı ve Deneme (puanlanmaz, ancak okullara gönderilir). Toplam test süresi yaklaşık 2 saat 40 dakikadır.
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Puanlar her bölüm için 760–940 ölçeğinde ve 1&apos;den 9&apos;a kadar stanin puanı olarak raporlanır (5 ortalama, 7–9 ortalamanın üzerinde). Okullar rekabetçi kurumlar için özellikle 7 ve üzeri staninlere odaklanır.
-        </p>
-        <Callout>
-          <strong className="text-indigo-900">Önemli ISEE kuralı:</strong> Öğrenciler ISEE&apos;yi sınav başına yalnızca bir kez alabilir (Güz, Kış, İlkbahar). Yılda en fazla üç kez girilmesi mümkündür. Bu durum stratejik hazırlığı özellikle önemli kılar.
-        </Callout>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">SSAT&apos;a Genel Bakış</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          SSAT&apos;ın 3.–11. sınıflar için üç seviyesi bulunur: İlkokul (3.–4. sınıf, ölçek 900–1800), Orta (5.–7. sınıf, ölçek 1320–2130) ve Üst (8.–11. sınıf, ölçek 1500–2400).
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          SSAT (Orta ve Üst düzey) beş bölümden oluşur: Sözel (analogiler ve eşanlamlılar), Sayısal (iki matematik bölümü), Okuma Anlama ve Deneme (puanlanmaz). Sözel bölüm SSAT&apos;ın en zorlayıcı kısmı olarak değerlendirilir; analogiler gelişmiş kelime dağarcığı ve mantıksal akıl yürütme gerektirir.
-        </p>
-        <Callout color="amber">
-          <strong className="text-amber-800">Tahmin cezası:</strong> SSAT her yanlış yanıt için ¼ puan düşer (atlanan sorular için ceza yoktur). Bir veya iki seçeneği eleyebilen öğrenciler geri kalanlar arasından tahmin etmelidir. Gerçekten hiçbir fikri olmayanlar ise rastgele tahmin yerine soruyu atlamalıdır.
-        </Callout>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">ISEE ile SSAT Arasındaki Temel Farklar</h2>
-        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
-          <table className="w-full text-sm">
-            <thead className="bg-gray-50">
-              <tr>
-                <th className="text-left p-4 font-semibold text-gray-700">Etken</th>
-                <th className="text-left p-4 font-semibold text-gray-700">ISEE</th>
-                <th className="text-left p-4 font-semibold text-gray-700">SSAT</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-50">
-              {[
-                ['Tekrar sıklığı', 'Dönem başına bir kez (maks. yılda 3×)', 'Sınır yok (aylık tekrar mümkün)'],
-                ['Tahmin cezası', 'Ceza yok', 'Yanlış başına −¼ puan'],
-                ['Sözel format', 'Eşanlamlılar + cümle tamamlama', 'Analogiler + eşanlamlılar'],
-                ['Sayısal format', 'Sayısal akıl yürütme + matematik başarısı', 'İki sayısal matematik bölümü'],
-                ['Kabul eden okul sayısı', '1.200+', '2.600+'],
-              ].map((row) => (
-                <tr key={row[0]} className="hover:bg-gray-50/50">
-                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
-                  <td className="p-4 text-gray-600">{row[1]}</td>
-                  <td className="p-4 text-gray-600">{row[2]}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Hazırlık Zaman Çizelgesi</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Çoğu öğrenci için 3–6 aylık yapılandırılmış hazırlık her iki testte de anlamlı iyileşme sağlıyor. Sözel bölüm (her iki testte) uzun vadeli kelime dağarcığı geliştirmeye iyi yanıt veriyor — testten önceki ayda yoğun tekrar yerine 6–12 aylık geniş okuma ve bilinçli kelime pratiği daha etkili.
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Sayısal bölüm hedefli konu tekrarına yanıt veriyor: tanısal değerlendirme kullanarak çocuğunuzun en zayıf olduğu matematik konularını belirleyin ve hazırlık süresini güçlü yönlere değil boşluklara orantılı biçimde ayırın.
-        </p>
-        <p className="text-gray-700 leading-relaxed">
-          Son 6 haftada, gerçek koşullarda — aynı ortam, aynı zamanlama, kesinti yok — zamanlanmış tam deneme testlerine geçin. Her hatayı sistematik olarak gözden geçirin. Amaç mükemmel puan değil, hedef okullara yönelik çocuğunuzun gerçek akademik yeteneğini yansıtan bir puan elde etmektir.
-        </p>
       </section>
     </>
   ),

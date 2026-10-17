@@ -85,10 +85,15 @@ export default function TrAkademikDegerlendirmePage() {
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
             İngilizce, Matematik, Sözel ve Sözel Olmayan Muhakemeyi kapsayan uyarlanabilir bir değerlendirme — İngiltere&apos;deki seçici okullarla aynı standart ölçekte puanlanır. Hesap gerekmez ve ilerlemeniz otomatik kaydedilir.
           </p>
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-1 text-xs text-[#6e6e73] mb-5">
+            {['Ücretsiz · kayıt gerekmez', 'Anında standardize skor', 'İstediğiniz zaman duraklatın', '6–20 yaş'].map((t) => (
+              <span key={t} className="flex items-center gap-1">
+                <svg className="w-3 h-3 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
+                {t}
+              </span>
+            ))}
+          </div>
           <GuestAcademicStartForm locale="tr" />
-          <p className="mt-3 text-sm text-[#6e6e73]">
-            Başlamak için kayıt gerekmez · istediğiniz zaman duraklatıp devam edin
-          </p>
           <p className="mt-1 text-sm text-[#6e6e73]">
             Zaten hesabınız var mı?{' '}
             <Link href="/auth/login" className="text-[#4F46E5] hover:underline font-medium">Giriş yapın</Link>
@@ -136,10 +141,11 @@ export default function TrAkademikDegerlendirmePage() {
 
       <section className="py-16 px-6 bg-[#4F46E5] text-white text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Çocuğunuzun akademik temelini bugün keşfedin</h2>
-          <Link href="/tr/akademik-degerlendirme" className="inline-block bg-white text-[#4F46E5] hover:bg-indigo-50 font-bold text-base px-8 py-4 rounded-xl transition-colors">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3">Çocuğunuzun akademik temelini bugün keşfedin</h2>
+          <p className="text-indigo-200 mb-6 text-sm">Yukarıya ad ve yaş girin — 35 dakika içinde sonuçlar hazır.</p>
+          <a href="#guest-name" className="inline-block bg-white text-[#4F46E5] hover:bg-indigo-50 font-bold text-base px-8 py-4 rounded-xl transition-colors">
             Ücretsiz Değerlendirmeyi Başlat
-          </Link>
+          </a>
         </div>
       </section>
 
