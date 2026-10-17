@@ -75,16 +75,16 @@ const nextConfig: NextConfig = {
       ...localeSlugRedirects,
       // Catch-all: any remaining /tr/blog/* or /es/blog/* slugs (including locale-native slugs
       // found by Google) forward to eduentry.com — specific redirects above take priority
-      { source: '/tr/blog/:path*', destination: 'https://eduentry.com/tr/blog/:path*', permanent: true },
-      { source: '/es/blog/:path*', destination: 'https://eduentry.com/es/blog/:path*', permanent: true },
-      { source: '/fr/blog/:path*', destination: 'https://eduentry.com/fr/blog/:path*', permanent: true },
-      { source: '/ar/blog/:path*', destination: 'https://eduentry.com/ar/blog/:path*', permanent: true },
-      { source: '/ru/blog/:path*', destination: 'https://eduentry.com/ru/blog/:path*', permanent: true },
-      { source: '/zh/blog/:path*', destination: 'https://eduentry.com/zh/blog/:path*', permanent: true },
+      { source: '/tr/blog/:path*', has: [{ type: 'host', value: 'eduentry.ai' }], destination: 'https://eduentry.com/tr/blog/:path*', permanent: true },
+      { source: '/es/blog/:path*', has: [{ type: 'host', value: 'eduentry.ai' }], destination: 'https://eduentry.com/es/blog/:path*', permanent: true },
+      { source: '/fr/blog/:path*', has: [{ type: 'host', value: 'eduentry.ai' }], destination: 'https://eduentry.com/fr/blog/:path*', permanent: true },
+      { source: '/ar/blog/:path*', has: [{ type: 'host', value: 'eduentry.ai' }], destination: 'https://eduentry.com/ar/blog/:path*', permanent: true },
+      { source: '/ru/blog/:path*', has: [{ type: 'host', value: 'eduentry.ai' }], destination: 'https://eduentry.com/ru/blog/:path*', permanent: true },
+      { source: '/zh/blog/:path*', has: [{ type: 'host', value: 'eduentry.ai' }], destination: 'https://eduentry.com/zh/blog/:path*', permanent: true },
       // Legacy grammar-schools pages — old content, redirect to home
       { source: '/grammar-schools/:path*', destination: '/', permanent: true },
       // Blog lives on eduentry.com — catch-all for any /blog/* hit on eduentry.ai
-      { source: '/blog/:path*', destination: 'https://eduentry.com/blog/:path*', permanent: true },
+      { source: '/blog/:path*', has: [{ type: 'host', value: 'eduentry.ai' }], destination: 'https://eduentry.com/blog/:path*', permanent: true },
       // Trailing slash locale homepages
       { source: '/ru/', destination: '/ru', permanent: true },
       { source: '/tr/', destination: '/tr', permanent: true },
