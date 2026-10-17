@@ -18,7 +18,7 @@ const STRINGS: Record<string, Strings> = {
     agePlaceholder: 'Age',
     submitLabel: 'Start Free Assessment',
     loadingLabel: 'Starting…',
-    disclaimer: 'No account needed · Takes ~30 minutes',
+    disclaimer: 'No account needed · Pause anytime, resume later',
     errorFallback: 'Something went wrong. Please try again.',
   },
   tr: {
@@ -107,7 +107,7 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
       toolautosubmit
       className="flex flex-col items-center gap-4 w-full max-w-sm mx-auto"
     >
-      <div className="flex flex-col sm:flex-row gap-3 w-full">
+      <div className="flex flex-row gap-3 w-full">
         <label htmlFor="guest-name" className="sr-only">{s.namePlaceholder}</label>
         <input
           id="guest-name"
@@ -119,7 +119,7 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
           required
           placeholder={s.namePlaceholder}
           toolparamdescription="The child's first name"
-          className="flex-1 px-4 py-3 rounded-xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-white"
+          className="flex-1 min-w-0 px-4 py-3 rounded-xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-white"
         />
         <label htmlFor="guest-age" className="sr-only">{s.agePlaceholder}</label>
         <input
@@ -127,6 +127,7 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
           type="number"
           name="age"
           autoComplete="off"
+          inputMode="numeric"
           value={age}
           onChange={(e) => setAge(e.target.value)}
           required
@@ -134,7 +135,7 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
           max={20}
           placeholder={s.agePlaceholder}
           toolparamdescription="The child's age in years (6 to 20)"
-          className="w-full sm:w-24 px-4 py-3 rounded-xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-white"
+          className="w-20 flex-shrink-0 px-4 py-3 rounded-xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-white"
         />
       </div>
       {error && <p className="text-xs text-red-500 text-center">{error}</p>}

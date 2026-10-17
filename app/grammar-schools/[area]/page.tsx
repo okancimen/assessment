@@ -122,6 +122,23 @@ export default async function GrammarAreaPage({ params }: { params: Promise<{ ar
           <p className="text-gray-700 leading-relaxed">{area.description}</p>
         </section>
 
+        {/* Inline benchmark CTA */}
+        <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-12">
+          <div className="flex-1">
+            <p className="font-semibold text-gray-900 mb-1">Is your child on track for SAS {area.targetSAS}?</p>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Eduentry uses the same standardised scale as {area.examBoard.split('(')[0].trim()} — mean 100, SD 15.
+              Free adaptive assessment gives a score and percentile in under 35 minutes. No account needed.
+            </p>
+          </div>
+          <Link
+            href="/academic-assessment"
+            className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap"
+          >
+            Test readiness free →
+          </Link>
+        </div>
+
         {/* Schools */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Grammar schools in {area.name}</h2>

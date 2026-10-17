@@ -172,10 +172,15 @@ export default function AcademicAssessmentPage() {
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
             An adaptive assessment covering English, Maths, Verbal &amp; Non-Verbal Reasoning — scored on the same standardised scale used by UK selective schools. No account needed, and your progress saves as you go.
           </p>
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-1 text-xs text-[#6e6e73] mb-5">
+            {['Free · no account needed', 'Instant standardised score', 'Pause & resume anytime', 'Ages 6–20'].map((t) => (
+              <span key={t} className="flex items-center gap-1">
+                <svg className="w-3 h-3 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
+                {t}
+              </span>
+            ))}
+          </div>
           <GuestAcademicStartForm />
-          <p className="mt-3 text-sm text-[#6e6e73]">
-            No sign-up required to start · pause and resume anytime
-          </p>
           <p className="mt-1 text-sm text-[#6e6e73]">
             Already have an account?{' '}
             <Link href="/auth/login" className="text-[#4F46E5] hover:underline font-medium">Sign in</Link>
@@ -320,13 +325,14 @@ export default function AcademicAssessmentPage() {
       {/* CTA Strip */}
       <section className="py-16 px-6 bg-[#4F46E5] text-white text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Ready to find your child&apos;s academic baseline?</h2>
-          <Link
-            href="/academic-assessment"
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3">Ready to find your child&apos;s academic baseline?</h2>
+          <p className="text-indigo-200 mb-6 text-sm">Enter a name and age above — results in under 35 minutes.</p>
+          <a
+            href="#guest-name"
             className="inline-block bg-white text-[#4F46E5] hover:bg-indigo-50 font-bold text-base px-8 py-4 rounded-xl transition-colors"
           >
             Start Free Assessment
-          </Link>
+          </a>
         </div>
       </section>
 
