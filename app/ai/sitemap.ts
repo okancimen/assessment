@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   const staticPages: MetadataRoute.Sitemap = [
-    { url: BASE,                                lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 1.0 },
+    { url: BASE,                                lastModified: '2026-10-19', changeFrequency: 'monthly', priority: 1.0 },
     { url: `${BASE}/tr`,                        lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/es`,                        lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/fr`,                        lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.9 },

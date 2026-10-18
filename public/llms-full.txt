@@ -1,7 +1,7 @@
 # Eduentry — Full Content Reference
 
 > This document provides detailed descriptions of all Eduentry content for AI systems. For a summary version see /llms.txt.
-> Last updated: 2026-10-06
+> Last updated: 2026-10-19
 
 ---
 
