@@ -1408,7 +1408,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { href: '/blog/what-is-the-11-plus-exam-complete-guide', tag: 'Guide', title: 'What Is the 11+ Exam?' },
+            { href: '/blog/11-plus-maths-guide', tag: 'Guide', title: '11+ Maths: Topics, Question Types and How to Practise' },
             { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+' },
             { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score?' },
           ].map((link) => (
@@ -1839,7 +1839,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/blog/high-school-internship-benefits-university', tag: 'Research', title: 'High School Internship Benefits for University' },
             { href: '/blog/how-to-get-tech-internship-before-university', tag: 'Guide', title: 'How to Get a Tech Internship Before University' },
-            { href: '/blog/how-to-get-internship-no-experience-high-school', tag: 'Guide', title: 'How to Get an Internship with No Experience' },
+            { href: '/blog/how-to-find-internship-as-student', tag: 'Guide', title: 'How to Find an Internship as a Student: The Complete Guide' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
@@ -3829,6 +3829,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           Start with a free baseline assessment to find out exactly where your child&apos;s maths score stands today.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/grammar-school-entry-requirements-2026', tag: 'Guide', title: 'Grammar School Entry Requirements 2026' },
+            { href: '/blog/how-to-prepare-for-11-plus', tag: 'Guide', title: 'How to Prepare for the 11+ at Home' },
+            { href: '/blog/what-is-a-standardised-score', tag: 'Explainer', title: 'What Is a Standardised Score?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -4886,9 +4902,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { href: '/blog/smart-child-bad-grades', tag: 'Guide', title: 'Smart Child, Bad Grades' },
-            { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: 'Discover Your Child\'s Strengths with a Free Academic Test' },
-            { href: '/blog/summer-activities-ambitious-children', tag: 'Guide', title: 'Summer Activities for Ambitious Children' },
+            { href: '/blog/gifted-program-testing-guide', tag: 'Guide', title: 'Gifted Program Testing Guide: CAT4, CogAT and What the Scores Mean' },
+            { href: '/blog/smart-child-bad-grades', tag: 'Guide', title: 'My Child Is Smart But Gets Bad Grades: What Parents Should Know' },
+            { href: '/blog/what-is-a-standardised-score', tag: 'Explainer', title: 'What Is a Standardised Score?' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
@@ -5202,10 +5218,10 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { href: '/blog/how-to-find-internship-as-student', tag: 'Guide', title: 'How to Find an Internship as a Student' },
-            { href: '/blog/how-to-prepare-for-gcse', tag: 'Guide', title: 'GCSE Revision Guide 2026: How to Prepare' },
-            { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: "Free Academic Test: Discover Your Child's Strengths" },
-            { href: '/blog/digital-marketing-work-experience-student-reviews', tag: 'Guide', title: 'Digital Marketing Work Experience: Student Reviews' },
+            { href: '/blog/early-internship-child-development-career', tag: 'Research', title: 'Why Internships at Early Ages Matter for Child Development' },
+            { href: '/blog/high-school-internship-benefits-university', tag: 'Research', title: 'High School Internships and University Admissions: The Evidence' },
+            { href: '/blog/gifted-program-testing-guide', tag: 'Guide', title: 'Gifted Program Testing Guide: CAT4, CogAT and What the Scores Mean' },
+            { href: '/blog/grammar-school-entry-requirements-2026', tag: 'Guide', title: 'Grammar School Entry Requirements 2026' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

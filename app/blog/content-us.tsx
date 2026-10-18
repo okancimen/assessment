@@ -197,7 +197,7 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/blog/smart-child-bad-grades', tag: 'Guide', title: 'My Child Is Smart But Gets Bad Grades: What Parents Should Know' },
             { href: '/blog/what-is-a-standardised-score', tag: 'Explainer', title: 'What Is a Standardised Score?' },
-            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: 'Guide', title: "Understanding Your Child's Cognitive Strengths Before Secondary School" },
+            { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Guide', title: "Discover Your School-Age Child's Hidden Strengths and Development Areas" },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
