@@ -1773,7 +1773,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
             <strong>Virtual work experience</strong> — Platforms including Springpod, Forage, and Bright Network offer structured virtual programmes run by major employers. These are less immersive than in-person placements but highly accessible, free, and increasingly recognised by employers and university admissions teams. A Springpod virtual programme at a firm like Unilever or Barclays demonstrates genuine initiative.
           </Bullet>
           <Bullet>
-            <strong>Direct approaches to local businesses</strong> — This route is underused and often more productive than competitive formal programmes for Year 10–11 students. A professional, specific email to the managing director of a local SME — explaining who you are, what you want to learn, and what you could contribute — has a surprisingly high success rate. Local accounting practices, marketing agencies, solicitors&apos; firms, and retail businesses regularly accommodate motivated students.
+            <strong>Direct approaches to local businesses</strong> — This route is underused and often more productive than competitive formal programmes for Year 10–11 students. A professional, specific email to the managing director of a local SME — explaining who you are, what you want to learn, and what you could contribute — has a surprisingly high success rate. Local accounting practices, <a href="/blog/digital-marketing-work-experience-student-reviews" className="text-indigo-600 hover:underline font-medium">marketing agencies</a>, solicitors&apos; firms, and retail businesses regularly accommodate motivated students.
           </Bullet>
           <Bullet>
             <strong>Family and network connections</strong> — Use them, without embarrassment. Every professional you can access through your parents&apos; contacts, your teachers&apos; connections, or your local community is a legitimate route to a placement. The goal is the experience and what you learn from it, not how you found your way in.
@@ -2169,6 +2169,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-gray-700 leading-relaxed">
           Students who understand this at 15 rather than 17 do not become different people. They become students with two more years of documented professional experience, deeper domain knowledge, a professional network that is already two years old, and personal statement material that contains evidence rather than assertion. In a selection process where the grade floor has risen to the point where almost everyone meets it, that is what differentiates.
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/high-school-internship-benefits-university', tag: 'Research', title: 'High School Internship Benefits for University' },
+            { href: '/blog/business-work-experience-high-school-uk', tag: 'Guide', title: 'Business Work Experience for High School UK' },
+            { href: '/blog/digital-marketing-work-experience-student-reviews', tag: 'Guide', title: 'Digital Marketing Work Experience: Student Reviews' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
