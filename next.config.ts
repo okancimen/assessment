@@ -58,6 +58,13 @@ const nextConfig: NextConfig = {
       { source: '/es/blog/how-does-your-child-compare-globally',         destination: 'https://eduentry.com/es/blog/como-se-compara-tu-hijo-a-nivel-mundial',          permanent: true },
       // Duplicate NSW OC posts — consolidate into the newer, better-optimised post
       { source: '/blog/australia-oc-test-guide', destination: '/blog/nsw-opportunity-class-test-guide', permanent: true },
+      // Malformed slug variants Google found via AI-generated queries — redirect to canonical posts
+      { source: '/blog/grammar-school-entry-requirements', destination: '/blog/grammar-school-entry-requirements-2026', permanent: true },
+      { source: '/blog/grammar-school-entry-requirements-release', destination: '/blog/grammar-school-entry-requirements-2026', permanent: true },
+      { source: '/blog/grammar-school-entry-requirements-requirements-2026-scores-percentiles-and-how-to-qualify', destination: '/blog/grammar-school-entry-requirements-2026', permanent: true },
+      { source: '/blog/nwea-map-rit-score-by-grade', destination: '/blog/nwea-map-scores-explained', permanent: true },
+      { source: '/blog/nwea-map-rit-scores-by-grade-level-2026', destination: '/blog/nwea-map-scores-explained', permanent: true },
+      { source: '/blog/us-gifted-program-testing-guide', destination: '/blog/gifted-program-testing-guide', permanent: true },
       // contentSlug accidentally indexed by Google — redirect directly to canonical Turkish slug on eduentry.com
       { source: '/blog/international-internship-programs-tr', destination: 'https://eduentry.com/tr/blog/uluslararasi-staj-programlari', permanent: true },
       // Locale internship pages that exist in robots.txt but have no route — redirect to eduentry.ai
