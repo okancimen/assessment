@@ -103,9 +103,9 @@ export default function BlogIndexPage() {
           <h2 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">Featured guides</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              'how-to-prepare-for-11-plus',
+              'understanding-child-strengths-weaknesses-high-school',
               'grammar-school-entry-requirements-2026',
-              'how-to-prepare-for-gcse',
+              'how-to-get-tech-internship-before-university',
               'gifted-program-testing-guide',
               'high-school-internship-benefits-university',
             ].map((slug) => {

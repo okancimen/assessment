@@ -183,13 +183,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'how-to-get-tech-internship-before-university',
-    title: 'How to Get a Tech Internship Before University: A Complete Guide for UK Students',
-    shortTitle: 'How to Get a Tech Internship Before University',
+    title: 'Tech Work Experience for Year 12 Students: How to Get a Placement at Google, Microsoft or a Start-up',
+    shortTitle: 'Tech Work Experience Year 12: Google, Microsoft and Start-ups',
     description:
-      'How UK students can secure a tech internship before university — where to look, how to apply without a portfolio, and what actually gets you shortlisted.',
+      'How UK students in Year 12 (and earlier) can get tech work experience — formal schemes at Google, Microsoft, BT and IBM, plus how to approach local start-ups with no portfolio.',
     tldr: 'UK students aged 14–18 can access technology work experience through formal programmes at Google, Microsoft, Amazon, IBM, BT, Sky, and BBC Technology, and via KPMG, Deloitte, PwC, and EY tech schemes. Smaller tech firms typically offer more hands-on responsibility and broader exposure than large corporates.',
     date: '2026-06-30',
-    dateModified: '2026-09-10',
+    dateModified: '2026-10-18',
     readTime: '11 min read',
     tags: ['Internship', 'Career Development', 'Work Experience'],
     faqs: [
@@ -1033,7 +1033,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       'How admissions work at top British-curriculum schools in the UAE — GEMS Wellington, JESS, Dubai College, BSAK: waiting lists, tests and KHDA ratings.',
     tldr: 'British-curriculum schools in Dubai and Abu Dhabi — GEMS Wellington, JESS, Dubai College, BSAK — are rated Outstanding or Very Good by KHDA. Waiting lists at the most popular schools extend 12–24 months or longer. CAT4 is used for admissions screening at most schools alongside previous school reports; Dubai College uses its own selective test.',
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-10-18',
     readTime: '8 min read',
     tags: ['UAE', 'Dubai', 'British Schools', 'Admissions', 'KHDA'],
     faqs: [
@@ -1561,13 +1561,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'how-to-differentiate-yourself-at-15',
-    title: 'Grades Are No Longer Enough: How Students Actually Differentiate Themselves at 15',
-    shortTitle: 'How to Differentiate Yourself at 15',
+    title: 'How to Stand Out in UCAS Applications: What to Build in Year 10 and 11',
+    shortTitle: 'How to Stand Out in UCAS Applications',
     description:
-      'Grades no longer differentiate competitive university applicants. Here is what actually separates strong applicants and why starting at 15 changes the outcome.',
+      'When 26% of A-levels are graded A or A*, grades alone no longer differentiate competitive UCAS applicants. This guide covers the four things that actually do — documented work experience, verified domain knowledge, personal projects, and network — and why Year 10 is the right time to start building them.',
     tldr: 'Grades no longer differentiate competitive university applicants — over 26% of A-level entries receive A or A*. The strongest differentiators for Russell Group courses are specific documented work experience, verified domain knowledge, and sustained personal projects with measurable outcomes. Students who start building this profile at 15 arrive at UCAS with two years of compounding evidence rather than two weeks.',
     date: '2026-09-08',
-    dateModified: '2026-09-10',
+    dateModified: '2026-10-18',
     readTime: '11 min read',
     tags: ['Internship', 'Career Development', 'Work Experience', 'University Admissions'],
     faqs: [
@@ -1936,13 +1936,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'understanding-child-strengths-weaknesses-high-school',
     contentSlug: 'understanding-child-strengths-weaknesses-high-school',
-    title: 'Understanding Your Child\'s Strengths and Weaknesses Before High School',
-    shortTitle: 'Child Strengths & Weaknesses: High School Preparation Guide',
+    title: 'Understanding Your Child\'s Cognitive Strengths and Weaknesses Before Secondary School',
+    shortTitle: 'Child Cognitive Strengths: Secondary School Preparation Guide',
     description:
-      'Identify your child\'s cognitive profile before secondary school — verbal, numerical, and spatial abilities — to guide preparation and subject choices.',
+      'Identify your child\'s cognitive profile before secondary school — verbal reasoning, numerical aptitude, working memory, and spatial ability — to guide GCSE preparation and subject choices.',
     tldr: 'School grades measure performance relative to classmates — they don\'t reveal a child\'s underlying cognitive profile. Identifying strengths and weaknesses across verbal reasoning, numerical aptitude, working memory, and spatial ability before high school gives parents and teachers a targeted roadmap, not a vague report card.',
     date: '2026-09-27',
-    dateModified: '2026-09-27',
+    dateModified: '2026-10-18',
     readTime: '12 min read',
     tags: ['Academic Assessment', 'Child Development', 'High School Preparation', 'Cognitive Profile'],
     faqs: [
@@ -2258,10 +2258,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'My Child Is Smart But Gets Bad Grades: What Parents Should Know',
     shortTitle: 'Smart Child, Bad Grades: What Parents Should Know',
     description:
-      'Why grades don\'t measure cognitive ability — and how to find your child\'s true academic ceiling across all four cognitive domains.',
+      'Research shows 12–18% of children in the top quartile for reasoning score in the bottom half for school grades. This guide explains the mismatch between intelligence and academic performance — and what parents can do to identify and close the gap.',
     tldr: 'Smart children get bad grades when there is a mismatch between their cognitive profile and how school measures performance. School grades primarily measure crystallised intelligence — what has been memorised and reproduced — while many bright children have exceptional fluid intelligence: the ability to reason, spot patterns, and solve novel problems that standardised tests rarely capture.',
     date: '2026-10-01',
-    dateModified: '2026-10-01',
+    dateModified: '2026-10-18',
     readTime: '9 min read',
     tags: ['Smart Child Bad Grades', 'Child Underperforming', 'Cognitive Assessment', 'Gifted Underachiever', 'Child Potential', 'Academic Performance', 'Working Memory', 'Parent Guide'],
     faqs: [
@@ -2511,13 +2511,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'habits-to-avoid-future-unemployment',
-    title: '8 Habits Children Should Build Now to Avoid Future Unemployment',
-    shortTitle: 'Habits Children Need Now to Avoid Future Unemployment',
+    title: 'How to Future-Proof Your Child: 8 Skills to Build Before 18',
+    shortTitle: 'How to Future-Proof Your Child: 8 Skills Before 18',
     description:
-      'Eight habits that protect children from future unemployment — AI literacy, critical thinking, money skills and real experience — backed by WEF and OECD.',
+      'The WEF ranks critical thinking and AI literacy as the top skills for 2030 — yet none are consistently taught in schools. This guide covers eight specific habits parents can build in children before 18 to protect them from automation and prepare them for careers that do not yet exist.',
     tldr: 'McKinsey estimates 375 million workers globally — 14% of the workforce — will need to change occupations by 2030. But the skills hardest for AI to replicate are consistent across every major study: critical thinking, creativity, emotional intelligence, and initiative. These are not built by grades; they are built by habits formed early.',
     date: '2026-10-04',
-    dateModified: '2026-10-04',
+    dateModified: '2026-10-18',
     readTime: '13 min read',
     tags: ['Child Development', 'Career Development', 'Future of Work', 'Digital Literacy', 'Automation', 'Parent Guide', 'Financial Literacy'],
     howToSteps: [

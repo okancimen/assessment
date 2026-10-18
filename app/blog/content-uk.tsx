@@ -1703,6 +1703,22 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           The research case is unambiguous. High school internships produce better-prepared university applicants, more grounded and resilient young adults, and graduates with a measurable advantage in the labour market. The question is not whether early professional experience matters — the evidence has settled that. The question is when a student starts.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/how-to-differentiate-yourself-at-15', tag: 'Guide', title: 'How to Stand Out in UCAS Applications' },
+            { href: '/blog/how-to-get-tech-internship-before-university', tag: 'Guide', title: 'How to Get a Tech Internship Before University' },
+            { href: '/blog/business-work-experience-high-school-uk', tag: 'Guide', title: 'Business Work Experience for High School UK' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -1822,8 +1838,8 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
             { href: '/blog/high-school-internship-benefits-university', tag: 'Research', title: 'High School Internship Benefits for University' },
+            { href: '/blog/how-to-get-tech-internship-before-university', tag: 'Guide', title: 'How to Get a Tech Internship Before University' },
             { href: '/blog/how-to-get-internship-no-experience-high-school', tag: 'Guide', title: 'How to Get an Internship with No Experience' },
-            { href: '/blog/business-work-experience-year-12', tag: 'Guide', title: 'Business Work Experience for Year 12 Students' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
@@ -2563,7 +2579,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/blog/global-academic-benchmarks-report-2026', tag: 'Report', title: 'Global Academic Benchmarks Report 2026' },
             { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score?' },
-            { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: 'Discover Your Child\'s Strengths with a Free Academic Test' },
+            { href: '/blog/high-school-internship-benefits-university', tag: 'Research', title: 'High School Internship Benefits for University Applications' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
@@ -3974,8 +3990,8 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <div className="grid sm:grid-cols-3 gap-4">
           {[
             { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score? Mean 100, Percentiles and SAS Bands Explained' },
-            { href: '/blog/character-strengths-academic-success', tag: 'Guide', title: 'Character Strengths That Predict Academic Success' },
-            { href: '/blog/how-to-differentiate-yourself-at-15', tag: 'Guide', title: 'Grades Are No Longer Enough: How Students Actually Differentiate Themselves at 15' },
+            { href: '/blog/gifted-program-testing-guide', tag: 'Guide', title: 'Gifted Program Testing Guide: CAT4, CogAT and What the Scores Mean' },
+            { href: '/blog/habits-to-avoid-future-unemployment', tag: 'Guide', title: 'How to Future-Proof Your Child: 8 Skills to Build Before 18' },
           ].map(link => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
@@ -4495,8 +4511,8 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/blog/early-internship-child-development-career', tag: 'Research', title: 'Why Internships at Early Ages Matter: Development & Career Benefits' },
             { href: '/blog/high-school-internship-benefits-university', tag: 'Guide', title: 'High School Internship Benefits for University Admissions' },
+            { href: '/blog/how-to-get-tech-internship-before-university', tag: 'Guide', title: 'How to Get a Tech Internship Before University' },
             { href: '/blog/oecd-teenage-part-time-work-benefits', tag: 'Research', title: 'Part-Time Jobs for Teenagers: OECD-Backed Benefits and How to Maximise Them' },
-            { href: '/blog/habits-to-avoid-future-unemployment', tag: 'Guide', title: 'Habits Children Need Now to Avoid Future Unemployment' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
@@ -4975,9 +4991,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: "Free Academic Test: Discover Your Child's Strengths and Weaknesses" },
-            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: 'Guide', title: "Understanding Your Child's Strengths Before High School" },
-            { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Guide', title: "Discover Your School-Age Child's Hidden Strengths" },
+            { href: '/blog/gifted-program-testing-guide', tag: 'Guide', title: 'Gifted Program Testing Guide: CAT4, CogAT and What the Scores Mean' },
+            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: 'Guide', title: "Understanding Your Child's Cognitive Strengths Before Secondary School" },
+            { href: '/blog/what-is-a-standardised-score', tag: 'Explainer', title: 'What Is a Standardised Score?' },
             { href: '/blog/character-strengths-academic-success', tag: 'Guide', title: 'Character Strengths That Predict Academic Success' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
@@ -5553,7 +5569,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <div className="grid sm:grid-cols-2 gap-4">
           {[
             { href: '/blog/early-internship-child-development-career', tag: 'Research', title: 'Why Internships at Early Ages Matter: Child Development and Career Advantage' },
-            { href: '/blog/how-to-differentiate-yourself-at-15', tag: 'Guide', title: 'Grades Aren\'t Enough: How Students Actually Differentiate at 15' },
+            { href: '/blog/gifted-program-testing-guide', tag: 'Guide', title: 'Gifted Program Testing Guide: CAT4, CogAT and What the Scores Mean' },
             { href: '/blog/how-does-your-child-compare-globally', tag: 'Benchmarks', title: 'Where Does Your Child Stand Globally? International Academic Comparison' },
             { href: '/blog/high-school-internship-benefits-university', tag: 'University', title: 'High School Internships: Character, Preparation and University Admissions' },
           ].map((link) => (

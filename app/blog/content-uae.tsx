@@ -184,98 +184,80 @@ export const UAE_CONTENT: Record<string, React.ReactNode> = {
   'uae-british-curriculum-school-admissions': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        Getting a place at a top British-curriculum school in Dubai or Abu Dhabi is one of
-        the most competitive admissions processes in global education. With demand consistently
-        outpacing supply at the most sought-after schools — GEMS Wellington, Dubai College,
-        Jumeirah English Speaking School (JESS), Dubai British School, and the British School
-        Al Khubairat in Abu Dhabi — understanding the admissions process in detail is essential
-        for families planning a move to the UAE or seeking a school transfer within it.
+        The UAE is home to some of the most competitive school admissions markets in the world. Dubai and
+        Abu Dhabi together host hundreds of international schools, but demand for places at the best
+        British-curriculum institutions significantly outstrips supply. Families who understand how the
+        admissions process actually works — what documents are required, when to apply, what assessments
+        are used, and how the KHDA rating system should be interpreted — consistently secure better
+        outcomes than those who approach the process without preparation.
       </p>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">The UAE Private School Landscape</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          The UAE has no free state schools for expatriate families — all non-UAE-national
-          children attend fee-paying private schools. This means the entire expat community
-          is channelled into a private school market that is both large (over 1,200 schools
-          in the UAE as a whole) and highly stratified. Schools vary from budget-tier institutions
-          (annual fees AED 10,000–20,000) to the most expensive and prestigious schools
-          (fees AED 80,000–100,000+ per year).
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How KHDA Ratings Work and Why They Matter</h2>
+        <p><strong>The Knowledge and Human Development Authority (KHDA) inspects every private school in Dubai on a four-level scale: Outstanding, Good, Acceptable, and Weak.</strong> These ratings are published publicly and updated after each inspection cycle, making them the single most reliable external quality signal available to families choosing a school in Dubai.</p>
+        <p className="text-gray-700 leading-relaxed mb-4 mt-4">
+          Abu Dhabi schools are inspected by ADEK (Abu Dhabi Department of Education and Knowledge) using
+          a comparable framework. In both emirates, the highest-rated schools attract the most applications,
+          meaning Outstanding-rated schools are typically oversubscribed by a factor of two or three to one.
         </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          British-curriculum schools typically occupy the upper tier of this market. They follow
-          the English National Curriculum, prepare students for GCSEs and A-levels (or the IB
-          Diploma as an alternative at Sixth Form level), and are overseen by the KHDA in Dubai
-          and ADEK (Abu Dhabi Department of Education and Knowledge) in Abu Dhabi.
-          Most receive KHDA inspection ratings of &quot;Outstanding&quot; or &quot;Very Good.&quot;
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Entry Points and Waiting Lists</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Most British-curriculum schools in the UAE have the most availability at the primary
-          entry point (FS1/FS2, equivalent to Reception/Year 1 in England). Entry into Year 7
-          (secondary school) is another common application point. Mid-year and mid-phase
-          applications (e.g., Year 4, Year 9) are the most challenging because places only
-          open up when a current student leaves.
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Waiting lists at the most desirable schools can extend 12–24 months or longer.
-          Families planning a relocation to the UAE should contact their target schools
-          as early as possible — ideally before confirming the relocation — and should
-          simultaneously apply to multiple schools to ensure at least one viable option.
-        </p>
-        <Callout color="amber">
-          <strong className="text-amber-800">Relocation advice:</strong> In the UAE, school selection
-          should inform your choice of residential area, not the other way around. Many British schools
-          have school bus networks covering specific zones, and living outside the bus zone can mean
-          daily commutes that are impractical. Map out your shortlisted schools before signing any
-          rental contract.
+        <Callout>
+          A school&apos;s KHDA rating reflects its most recent inspection. Schools can move between ratings — a school currently rated Good may have been Outstanding previously, or may be on an improvement trajectory. Always check the year of the most recent inspection report, not just the rating headline.
         </Callout>
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Admissions Process</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Top British-Curriculum Schools and Their Entry Requirements</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          The specific process varies by school, but a typical sequence for a British-curriculum
-          school in the UAE looks like this:
+          The following schools consistently attract the highest application volumes among British-curriculum
+          families in the UAE. Entry requirements, fee ranges, and assessment formats are summarised below.
+          All figures are indicative — always verify directly with the school admissions office, as these
+          change each academic year.
         </p>
         <div className="space-y-4 mb-6">
           {[
-            { step: '1', title: 'Online registration', detail: 'Submit an expression of interest or formal application via the school\'s admissions portal. This does not guarantee a place — it registers your child for consideration when a place becomes available.' },
-            { step: '2', title: 'Previous school reports', detail: 'Submit the last 2 years of school reports (in English if possible, or with certified translation). Schools look for consistent academic performance, effort ratings, and any teacher comments about learning support needs.' },
-            { step: '3', title: 'Cognitive assessment (CAT4 or equivalent)', detail: 'Many schools require applicants to sit a cognitive assessment as part of the admissions process. This is typically the CAT4 for British-curriculum schools, sometimes combined with a reading and maths assessment pitched at the child\'s age/year group.' },
-            { step: '4', title: 'Taster day or trial', detail: 'At secondary level especially, schools often invite shortlisted applicants for a taster day to observe the child in a classroom environment and assess their ability to integrate socially and academically.' },
-            { step: '5', title: 'Interview or family meeting', detail: 'Some schools — particularly those with high academic selectivity — conduct a brief interview or family meeting. This assesses the family\'s understanding of the school\'s ethos and the child\'s motivation.' },
-          ].map(({ step, title, detail }) => (
-            <div key={step} className="flex gap-4 p-5 rounded-xl border border-gray-100">
-              <div className="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 font-bold flex items-center justify-center flex-shrink-0">{step}</div>
-              <div>
-                <div className="font-semibold text-gray-900 mb-1">{title}</div>
-                <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Most Sought-After Schools</h2>
-        <div className="space-y-4 mb-6">
-          {[
-            { school: 'Dubai College', area: 'Al Sufouh, Dubai', fee: 'AED 85,000+/yr', note: 'Selective secondary school (Year 7 entry only). Admissions test required. One of the most academically competitive British schools in the UAE.' },
-            { school: 'GEMS Wellington Academy (multiple campuses)', area: 'Various, Dubai', fee: 'AED 50,000–80,000/yr', note: 'All-through British curriculum. Long waiting lists at primary level. Secondary admissions via CAT4 and interview.' },
-            { school: 'Jumeirah English Speaking School (JESS)', area: 'Jumeirah / Arabian Ranches', fee: 'AED 55,000–70,000/yr', note: 'All-through British curriculum, KHDA Outstanding. Very long waiting lists. Apply as early as possible.' },
-            { school: 'Dubai British School (DBS)', area: 'Springs, Dubai', fee: 'AED 50,000–65,000/yr', note: 'KHDA Outstanding. Popular with families in the Springs/Meadows area. Strong academic reputation.' },
-            { school: 'British School Al Khubairat (BSAK)', area: 'Abu Dhabi', fee: 'AED 60,000–80,000/yr', note: 'The original British school in Abu Dhabi. Traditionally very popular with UK expat families. Long waiting lists.' },
-          ].map(({ school, area, fee, note }) => (
+            {
+              school: 'GEMS Wellington International School, Dubai',
+              khda: 'Outstanding',
+              assessment: 'CAT4 + English and Maths assessment',
+              fees: 'AED 55,000–85,000/year',
+              note: 'One of the most oversubscribed British schools in Dubai. Waiting lists apply at most year groups.'
+            },
+            {
+              school: 'Jumeirah English Speaking School (JESS), Dubai',
+              khda: 'Outstanding',
+              assessment: 'Internal assessment + interview for some year groups',
+              fees: 'AED 50,000–72,000/year',
+              note: 'Historically selective; places at Foundation and Year 7 entry are the most competitive.'
+            },
+            {
+              school: 'Dubai College',
+              khda: 'Outstanding',
+              assessment: 'CAT4 SAS 115+ required for Year 7 entry',
+              fees: 'AED 60,000–75,000/year',
+              note: 'The most academically selective British school in Dubai. Entry is by competitive assessment only.'
+            },
+            {
+              school: 'Repton School Dubai',
+              khda: 'Outstanding',
+              assessment: 'CAT4 + English and Maths assessment',
+              fees: 'AED 65,000–82,000/year',
+              note: 'UK boarding school tradition. Strong sixth-form outcomes. Apply 12–18 months ahead.'
+            },
+            {
+              school: 'British School Al Khubairat (BSAK), Abu Dhabi',
+              khda: 'Outstanding (ADEK)',
+              assessment: 'Internal assessment + previous school reports',
+              fees: 'AED 30,000–58,000/year',
+              note: 'The most established British school in Abu Dhabi. Demand is highest at Foundation stage.'
+            },
+          ].map(({ school, khda, assessment, fees, note }) => (
             <div key={school} className="border border-gray-100 rounded-xl p-5">
-              <div className="font-bold text-gray-900 mb-0.5">{school}</div>
-              <div className="flex gap-3 text-xs font-medium mb-3">
-                <span className="text-gray-500">{area}</span>
-                <span className="text-indigo-600">{fee}</span>
+              <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
+                <div className="font-semibold text-gray-900">{school}</div>
+                <span className="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-full">{khda}</span>
               </div>
+              <div className="text-sm text-gray-500 mb-1"><strong>Assessment:</strong> {assessment}</div>
+              <div className="text-sm text-gray-500 mb-2"><strong>Fees:</strong> {fees}</div>
               <p className="text-sm text-gray-600 leading-relaxed">{note}</p>
             </div>
           ))}
@@ -283,29 +265,38 @@ export const UAE_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">GCSE and A-Level Outcomes</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Admissions Process Step by Step</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          The top British schools in the UAE consistently produce GCSE and A-level results
-          that rival or exceed leading UK independent schools. Dubai College, for example,
-          has historically produced A-level results (A*–B rates) exceeding 90%, with
-          significant proportions of students going on to Russell Group universities in the UK,
-          Ivy League universities in the US, and top universities in Canada and Australia.
+          British-curriculum school admissions in the UAE follow a broadly consistent process, though
+          the exact timeline and requirements vary by school. The following sequence applies to the
+          majority of outstanding-rated schools in Dubai and Abu Dhabi.
         </p>
-        <p className="text-gray-700 leading-relaxed">
-          When comparing schools, look beyond headline A-level results to the value-added score —
-          how much progress students make relative to their prior attainment (including CAT4
-          scores on entry). A school that achieves strong results with a highly selective intake
-          is performing differently from one that achieves similar results while taking a much
-          broader ability range. For a full explanation of the CAT4 assessment used throughout
-          this process, see our{' '}
-          <Link href="/blog/uae-cat4-test-guide" className="text-indigo-600 hover:underline">
-            UAE CAT4 test guide
-          </Link>. Once your child is enrolled, our{' '}
-          <Link href="/blog/uae-gifted-programs-guide" className="text-indigo-600 hover:underline">
-            guide to gifted programs in UAE schools
-          </Link>{' '}
-          explains how high-ability students are identified and supported.
-        </p>
+        <ul className="space-y-3 mb-6">
+          <Check>Register your interest on the school&apos;s website — most schools maintain a waiting list and contact families when a place becomes available, regardless of when in the academic year you apply.</Check>
+          <Check>Submit documentation: passport copies, Emirates ID, most recent school reports (typically the last two years), immunisation records, and any SEND or EAL documentation.</Check>
+          <Check>Attend an assessment session — typically CAT4 or an internal English and Maths test. At the Foundation stage (Reception/FS1–FS2), this is usually an informal play-based observation rather than a formal test.</Check>
+          <Check>Interview (for some schools, particularly at Year 7 entry and Sixth Form): usually a 20–30 minute conversation with the Head of Year or a senior academic.</Check>
+          <Check>Receive an offer — conditional on the assessment outcomes and place availability. Offers are typically valid for 2–3 weeks. A registration deposit (AED 1,000–5,000) is required to hold the place.</Check>
+        </ul>
+        <Callout color="amber">
+          Fee ranges quoted above are for the 2025–26 academic year. Annual fee increases of 3–6% are typical in UAE international schools, subject to KHDA/ADEK approval. Some schools charge additional fees for transport, uniform, and extracurricular activities that can add AED 5,000–15,000 per year.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { href: '/blog/uae-cat4-test-guide', tag: 'Guide', title: 'CAT4 Test Guide for UAE Parents: What the Test Measures and How Scores Work' },
+            { href: '/blog/uae-international-school-entrance-exams', tag: 'Assessment', title: 'UAE International School Entrance Exams: CAT4, ISEE, IB and What Each Curriculum Requires' },
+            { href: '/blog/uae-gifted-programs-guide', tag: 'Guide', title: 'Gifted Education in the UAE: How International Schools Identify High Ability Students' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),

@@ -63,6 +63,8 @@ const nextConfig: NextConfig = {
       // Locale internship pages that exist in robots.txt but have no route — redirect to eduentry.ai
       { source: '/ar/tadrib', destination: 'https://eduentry.ai/ar', permanent: true },
       { source: '/ru/stazhirovka', destination: 'https://eduentry.ai/ru', permanent: true },
+      // Trailing dot typo from external links
+      { source: '/blog/nwea-map-scores-explained.', destination: '/blog/nwea-map-scores-explained', permanent: true },
       // Trailing slash variants
       { source: '/privacy/', destination: '/privacy', permanent: true },
       // /home has no route — redirect to the real homepage
