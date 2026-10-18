@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { INTERNSHIP_TRACKS, INTERNSHIP_TRACK_LABELS, INTERNSHIP_TRACK_DESCRIPTIONS } from '@/types'
 import { BLOG_POSTS } from '@/app/blog/posts'
+import { INSIGHT_SLUGS } from '@/app/ai/insights/content'
 
 const BASE_URL = 'https://eduentry.ai'
 
@@ -88,9 +89,8 @@ const FAQS = [
   { q: 'Do I need to be a UK resident?',       a: 'The assessment is open to any student aged 14–18. Internship placements are currently UK-based, so you will need to be able to work in the UK for the placement itself — but the assessment and report are available to everyone.' },
 ]
 
-const INTERNSHIP_TAGS = ['Internship', 'Career Development', 'Work Experience']
 const internshipPosts = BLOG_POSTS
-  .filter(p => p.tags.some(t => INTERNSHIP_TAGS.includes(t)))
+  .filter(p => INSIGHT_SLUGS.includes(p.slug))
   .slice(0, 3)
 
 const ORGANIZATION_SCHEMA = {
@@ -439,7 +439,7 @@ export default function AIHomePage() {
             <p className="font-mono text-[11px] text-[#818CF8] uppercase tracking-[0.2em] mb-4">// Research</p>
             <div className="flex items-end justify-between mb-12 gap-6 flex-wrap">
               <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight">Latest from the blog.</h2>
-              <Link href="https://eduentry.com/blog" className="text-sm font-medium text-white/40 hover:text-white/70 transition-colors whitespace-nowrap">
+              <Link href="/insights" className="text-sm font-medium text-white/40 hover:text-white/70 transition-colors whitespace-nowrap">
                 View all →
               </Link>
             </div>
@@ -447,7 +447,7 @@ export default function AIHomePage() {
               {internshipPosts.map((post) => (
                 <Link
                   key={post.slug}
-                  href={`https://eduentry.com/blog/${post.slug}`}
+                  href={`/insights/${post.slug}`}
                   className="group flex flex-col border border-white/[0.06] rounded-2xl p-6 bg-white/[0.01] hover:border-white/[0.12] hover:bg-white/[0.03] transition-all"
                 >
                   <div className="flex items-center gap-2 text-[11px] font-mono text-white/25 mb-3">
