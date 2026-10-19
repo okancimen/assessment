@@ -54,6 +54,8 @@ export default async function ActiveUsersPage({
     allResults,
     allAssessmentTypes,
     allLocationProfiles,
+    guestAssessmentsInRange,
+    guestPersonalityInRange,
   ] = await Promise.all([
     db.auth.admin.listUsers({ perPage: 1000 }),
     // Assessments started in range, non-guest
@@ -71,6 +73,19 @@ export default async function ActiveUsersPage({
     db.from('results').select('children(parent_id)'),
     db.from('assessments').select('assessment_type, children(parent_id, student_user_id)'),
     db.from('profiles').select('id, country, city'),
+    // Guest assessments in range
+    db.from('assessments')
+      .select('id, guest_name, guest_token, status, created_at, assessment_type')
+      .gte('created_at', fromISO)
+      .lte('created_at', toISO)
+      .not('guest_token', 'is', null)
+      .is('child_id', null),
+    db.from('personality_assessments')
+      .select('id, guest_name, guest_token, status, created_at')
+      .gte('created_at', fromISO)
+      .lte('created_at', toISO)
+      .not('guest_token', 'is', null)
+      .is('child_id', null),
   ])
 
   const allAuthUsers = (allProfiles as Awaited<ReturnType<typeof db.auth.admin.listUsers>>).data?.users ?? []
@@ -152,8 +167,8 @@ export default async function ActiveUsersPage({
     }
   }
 
-  // ── Build active users array ───────────────────────────────────────────────
-  const activeUsers = allAuthUsers
+  // ── Build registered active users ─────────────────────────────────────────
+  const registeredActiveUsers = allAuthUsers
     .filter((u) => activeUserIdsInRange.has(u.id))
     .map((u) => {
       const lastAssessment = lastAssessmentDate[u.id]
@@ -176,10 +191,34 @@ export default async function ActiveUsersPage({
           : 'none') as 'parent' | 'student' | 'both' | 'none',
       }
     })
+
+  // ── Build guest rows ───────────────────────────────────────────────────────
+  type GuestRow = { id: string; guest_name: string | null; guest_token: string | null; status: string; created_at: string; assessment_type?: string }
+  const allGuestRows: GuestRow[] = [
+    ...((guestAssessmentsInRange.data ?? []) as GuestRow[]),
+    ...((guestPersonalityInRange.data ?? []).map((r) => ({ ...r, assessment_type: 'personality' })) as GuestRow[]),
+  ]
+
+  const guestUsers = allGuestRows.map((g) => ({
+    id:              g.id,
+    email:           '',
+    full_name:       g.guest_name ?? null,
+    created_at:      g.created_at,
+    last_active_at:  g.created_at,
+    children:        0,
+    completed:       g.status === 'completed' ? 1 : 0,
+    assessmentTypes: [g.assessment_type ?? 'academic'],
+    location:        null,
+    role:            'guest' as const,
+  }))
+
+  // ── Merge and sort ─────────────────────────────────────────────────────────
+  const activeUsers = [...registeredActiveUsers, ...guestUsers]
     .sort((a, b) => (b.last_active_at ?? '').localeCompare(a.last_active_at ?? ''))
 
   const periodLabel = `${new Date(fromISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })} – ${new Date(toISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`
 
+  const guestCount = guestUsers.length
   const completedInRange = activeUsers.filter((u) => u.completed > 0).length
 
   return (
@@ -200,18 +239,19 @@ export default async function ActiveUsersPage({
 
       {/* Metrics strip */}
       <div className="bg-white rounded-xl border overflow-hidden" style={{ borderColor: '#E2E6EF' }}>
-        <div className="grid grid-cols-2 sm:grid-cols-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4">
           {[
-            { label: 'Active users',          value: activeUsers.length, primary: true  },
-            { label: 'With completed assess.', value: completedInRange,  primary: false },
-            { label: 'Assessments started',    value: activeUserIdsInRange.size - completedInRange >= 0
-                ? activeUserIdsInRange.size : activeUsers.length, primary: false },
+            { label: 'Active users',      value: activeUsers.length,              primary: true  },
+            { label: 'Registered',        value: registeredActiveUsers.length,    primary: false },
+            { label: 'Guests',            value: guestCount,                      primary: false },
+            { label: 'Completed',         value: completedInRange,                primary: false },
           ].map(({ label, value, primary }, i) => (
             <div
               key={label}
               className={[
                 'px-6 py-5 relative',
-                i < 2 ? 'border-r border-[#E2E6EF]' : '',
+                i < 3 ? 'border-r border-[#E2E6EF]' : '',
+                i < 2 ? 'border-b border-[#E2E6EF] sm:border-b-0' : '',
               ].filter(Boolean).join(' ')}
             >
               {primary && (
@@ -231,7 +271,7 @@ export default async function ActiveUsersPage({
         <div className="px-6 py-5 border-b" style={{ borderColor: '#E2E6EF' }}>
           <h2 className="text-sm font-semibold" style={{ color: '#0F172A' }}>Active users</h2>
           <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>
-            {activeUsers.length.toLocaleString()} users started an assessment in {periodLabel} · any signup date · sorted by last active
+            {activeUsers.length.toLocaleString()} users started an assessment in {periodLabel} · includes guests · sorted by last active
           </p>
         </div>
         <UsersTable

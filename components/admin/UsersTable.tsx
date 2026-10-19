@@ -14,15 +14,16 @@ export interface AdminUser {
   completed: number
   assessmentTypes: string[]
   location: { country: string | null; city: string | null } | null
-  role: 'parent' | 'student' | 'both' | 'none'
+  role: 'parent' | 'student' | 'both' | 'none' | 'guest'
 }
 
 function Avatar({ name, email }: { name: string | null; email: string }) {
-  const initials = name
-    ? name.split(' ').map((w) => w[0]).slice(0, 2).join('').toUpperCase()
-    : email[0].toUpperCase()
+  const seed = name ?? email
+  const initials = seed
+    ? seed.split(' ').map((w) => w[0]).slice(0, 2).join('').toUpperCase()
+    : '?'
   let h = 0
-  for (let i = 0; i < email.length; i++) h = (h * 31 + email.charCodeAt(i)) % 360
+  for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) % 360
   return (
     <div
       className="w-7 h-7 rounded-full flex items-center justify-center text-[10px] font-bold text-white flex-shrink-0"
@@ -99,8 +100,8 @@ export default function UsersTable({ users: initialUsers, emptyMessage = 'No use
             {filtered.map((u) => (
               <tr
                 key={u.id}
-                onClick={() => router.push(`/admin/users/${u.id}`)}
-                className="border-b last:border-0 cursor-pointer transition-colors"
+                onClick={u.role !== 'guest' ? () => router.push(`/admin/users/${u.id}`) : undefined}
+                className={['border-b last:border-0 transition-colors', u.role !== 'guest' ? 'cursor-pointer' : ''].join(' ')}
                 style={{ borderColor: '#E2E6EF' }}
                 onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#F8FAFC')}
                 onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '')}
@@ -112,7 +113,9 @@ export default function UsersTable({ users: initialUsers, emptyMessage = 'No use
                       <div className="text-xs font-medium" style={{ color: '#0F172A' }}>
                         {u.full_name || <span style={{ color: '#CBD5E1' }}>No name</span>}
                       </div>
-                      <div className="text-[11px] mt-0.5" style={{ color: '#94A3B8' }}>{u.email}</div>
+                      {u.role === 'guest'
+                        ? <span className="inline-block text-[10px] font-semibold px-1.5 py-0.5 rounded mt-0.5 bg-amber-50 text-amber-600">Guest</span>
+                        : <div className="text-[11px] mt-0.5" style={{ color: '#94A3B8' }}>{u.email}</div>}
                     </div>
                   </div>
                 </td>
@@ -152,7 +155,7 @@ export default function UsersTable({ users: initialUsers, emptyMessage = 'No use
                     : <span style={{ color: '#CBD5E1' }}>0</span>}
                 </td>
                 <td className="px-5 py-3.5 text-right" onClick={(e) => e.stopPropagation()}>
-                  {confirmId === u.id ? (
+                  {u.role === 'guest' ? null : confirmId === u.id ? (
                     <div className="flex items-center justify-end gap-2">
                       <button
                         onClick={() => handleDelete(u.id)}
