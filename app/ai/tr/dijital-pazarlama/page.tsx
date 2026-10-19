@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['dijital pazarlama stajı', 'pazarlama stajı hazırlığı', 'dijital pazarlama değerlendirmesi öğrenci', 'SEO stajı lise', 'sosyal medya stajı değerlendirmesi', 'içerik pazarlama stajı', 'dijital pazarlama iş deneyimi'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { tr: TRACK_URL, es: `${BASE_URL}/es/marketing-digital`, fr: `${BASE_URL}/fr/marketing-digital`, ar: `${BASE_URL}/ar/tawiq`, ru: `${BASE_URL}/ru/tsifrovoy-marketing`, zh: `${BASE_URL}/zh/yingxiao`, en: `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },
+    languages: { tr: TRACK_URL, es: `${BASE_URL}/es/marketing-digital`, fr: `${BASE_URL}/fr/marketing-digital`, ar: `${BASE_URL}/ar/tawiq`, ru: `${BASE_URL}/ru/tsifrovoy-marketing`, zh: `${BASE_URL}/zh/yingxiao`, 'en-GB': `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['تدريب تقنية طلاب', 'تقييم تدريب تقنية', 'تدريب برمجة طالب ثانوي', 'تدريب أمن سيبراني طلاب', 'تدريب UX طلاب', 'تجربة عمل تقنية'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { ar: TRACK_URL, fr: `${BASE_URL}/fr/technologie`, tr: `${BASE_URL}/tr/teknoloji`, es: `${BASE_URL}/es/tecnologia`, zh: `${BASE_URL}/zh/keji`, ru: `${BASE_URL}/ru/tekhnologii`, en: `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },
+    languages: { ar: TRACK_URL, fr: `${BASE_URL}/fr/technologie`, tr: `${BASE_URL}/tr/teknoloji`, es: `${BASE_URL}/es/tecnologia`, zh: `${BASE_URL}/zh/keji`, ru: `${BASE_URL}/ru/tekhnologii`, 'en-GB': `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['高中生数据分析实习', '数据实习评估', 'SQL实习学生', '统计分析实习高中生', '数据可视化实习学生'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { zh: TRACK_URL, fr: `${BASE_URL}/fr/analyse-de-donnees`, tr: `${BASE_URL}/tr/veri-analitigi`, es: `${BASE_URL}/es/analisis-de-datos`, ar: `${BASE_URL}/ar/bayanat`, ru: `${BASE_URL}/ru/analiz-dannykh`, en: `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },
+    languages: { zh: TRACK_URL, fr: `${BASE_URL}/fr/analyse-de-donnees`, tr: `${BASE_URL}/tr/veri-analitigi`, es: `${BASE_URL}/es/analisis-de-datos`, ar: `${BASE_URL}/ar/bayanat`, ru: `${BASE_URL}/ru/analiz-dannykh`, 'en-GB': `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['stage entreprise lycéen', 'évaluation stage entreprise', 'stage management lycée', 'stage finance lycéen', 'stage ressources humaines lycéen', 'stage commerce lycée'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { fr: TRACK_URL, tr: `${BASE_URL}/tr/is-dunyasi`, es: `${BASE_URL}/es/empresa`, ar: `${BASE_URL}/ar/aamal`, zh: `${BASE_URL}/zh/shangye`, ru: `${BASE_URL}/ru/biznes`, en: `${BASE_URL}/business`, 'x-default': `${BASE_URL}/business` },
+    languages: { fr: TRACK_URL, tr: `${BASE_URL}/tr/is-dunyasi`, es: `${BASE_URL}/es/empresa`, ar: `${BASE_URL}/ar/aamal`, zh: `${BASE_URL}/zh/shangye`, ru: `${BASE_URL}/ru/biznes`, 'en-GB': `${BASE_URL}/business`, 'x-default': `${BASE_URL}/business` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

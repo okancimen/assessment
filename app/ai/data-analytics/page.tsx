@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     'data work experience students',
     'business intelligence internship students',
   ],
-  alternates: { canonical: TRACK_URL, languages: { 'en-GB': TRACK_URL, 'x-default': TRACK_URL } },
+  alternates: { canonical: TRACK_URL, languages: { 'en-GB': TRACK_URL, tr: `${BASE_URL}/tr/veri-analitigi`, es: `${BASE_URL}/es/analisis-de-datos`, fr: `${BASE_URL}/fr/analyse-de-donnees`, ar: `${BASE_URL}/ar/bayanat`, ru: `${BASE_URL}/ru/analiz-dannykh`, zh: `${BASE_URL}/zh/shuju`, 'x-default': TRACK_URL } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     type: 'website',

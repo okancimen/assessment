@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['高中生科技实习', '科技实习评估', '编程实习学生', '网络安全实习学生', 'UX设计实习学生', '软件开发实习高中生'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { zh: TRACK_URL, fr: `${BASE_URL}/fr/technologie`, tr: `${BASE_URL}/tr/teknoloji`, es: `${BASE_URL}/es/tecnologia`, ar: `${BASE_URL}/ar/taqniya`, ru: `${BASE_URL}/ru/tekhnologii`, en: `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },
+    languages: { zh: TRACK_URL, fr: `${BASE_URL}/fr/technologie`, tr: `${BASE_URL}/tr/teknoloji`, es: `${BASE_URL}/es/tecnologia`, ar: `${BASE_URL}/ar/taqniya`, ru: `${BASE_URL}/ru/tekhnologii`, 'en-GB': `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

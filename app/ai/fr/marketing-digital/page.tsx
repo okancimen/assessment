@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['stage marketing digital lycéen', 'évaluation stage marketing', 'stage SEO lycée', 'stage réseaux sociaux lycéen', 'stage communication digitale lycée', 'stage contenu lycéen'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { fr: TRACK_URL, tr: `${BASE_URL}/tr/dijital-pazarlama`, es: `${BASE_URL}/es/marketing-digital`, ar: `${BASE_URL}/ar/tawiq`, zh: `${BASE_URL}/zh/yingxiao`, ru: `${BASE_URL}/ru/tsifrovoy-marketing`, en: `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },
+    languages: { fr: TRACK_URL, tr: `${BASE_URL}/tr/dijital-pazarlama`, es: `${BASE_URL}/es/marketing-digital`, ar: `${BASE_URL}/ar/tawiq`, zh: `${BASE_URL}/zh/yingxiao`, ru: `${BASE_URL}/ru/tsifrovoy-marketing`, 'en-GB': `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

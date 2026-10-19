@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['стажировка IT школьники', 'оценка стажировка технологии', 'стажировка программирование старшеклассники', 'стажировка кибербезопасность школьники', 'стажировка UX школьники'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { ru: TRACK_URL, fr: `${BASE_URL}/fr/technologie`, tr: `${BASE_URL}/tr/teknoloji`, es: `${BASE_URL}/es/tecnologia`, ar: `${BASE_URL}/ar/taqniya`, zh: `${BASE_URL}/zh/keji`, en: `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },
+    languages: { ru: TRACK_URL, fr: `${BASE_URL}/fr/technologie`, tr: `${BASE_URL}/tr/teknoloji`, es: `${BASE_URL}/es/tecnologia`, ar: `${BASE_URL}/ar/taqniya`, zh: `${BASE_URL}/zh/keji`, 'en-GB': `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['стажировка аналитика школьники', 'оценка стажировка данные', 'стажировка SQL старшеклассники', 'стажировка статистика школьники', 'стажировка аналитик данных'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { ru: TRACK_URL, fr: `${BASE_URL}/fr/analyse-de-donnees`, tr: `${BASE_URL}/tr/veri-analitigi`, es: `${BASE_URL}/es/analisis-de-datos`, ar: `${BASE_URL}/ar/bayanat`, zh: `${BASE_URL}/zh/shuju`, en: `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },
+    languages: { ru: TRACK_URL, fr: `${BASE_URL}/fr/analyse-de-donnees`, tr: `${BASE_URL}/tr/veri-analitigi`, es: `${BASE_URL}/es/analisis-de-datos`, ar: `${BASE_URL}/ar/bayanat`, zh: `${BASE_URL}/zh/shuju`, 'en-GB': `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

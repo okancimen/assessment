@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     'commercial awareness assessment students',
     'business internship readiness',
   ],
-  alternates: { canonical: TRACK_URL, languages: { 'en-GB': TRACK_URL, 'x-default': TRACK_URL } },
+  alternates: { canonical: TRACK_URL, languages: { 'en-GB': TRACK_URL, tr: `${BASE_URL}/tr/is-dunyasi`, es: `${BASE_URL}/es/empresa`, fr: `${BASE_URL}/fr/entreprise`, ar: `${BASE_URL}/ar/aamal`, ru: `${BASE_URL}/ru/biznes`, zh: `${BASE_URL}/zh/shangye`, 'x-default': TRACK_URL } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     type: 'website',

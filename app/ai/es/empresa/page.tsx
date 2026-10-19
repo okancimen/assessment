@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['prácticas empresa instituto', 'evaluación prácticas empresa', 'prácticas business estudiantes', 'test aptitud empresarial', 'prácticas finanzas bachillerato', 'experiencia laboral empresa', 'evaluación comercial estudiantes'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { es: TRACK_URL, tr: `${BASE_URL}/tr/is-dunyasi`, fr: `${BASE_URL}/fr/entreprise`, ar: `${BASE_URL}/ar/aamal`, ru: `${BASE_URL}/ru/biznes`, zh: `${BASE_URL}/zh/shangye`, en: `${BASE_URL}/business`, 'x-default': `${BASE_URL}/business` },
+    languages: { es: TRACK_URL, tr: `${BASE_URL}/tr/is-dunyasi`, fr: `${BASE_URL}/fr/entreprise`, ar: `${BASE_URL}/ar/aamal`, ru: `${BASE_URL}/ru/biznes`, zh: `${BASE_URL}/zh/shangye`, 'en-GB': `${BASE_URL}/business`, 'x-default': `${BASE_URL}/business` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

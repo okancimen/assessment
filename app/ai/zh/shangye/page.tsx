@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['高中生商业实习', '商业实习评估', '管理实习学生', '金融实习高中生', '战略实习学生', '商科实习评估'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { zh: TRACK_URL, fr: `${BASE_URL}/fr/entreprise`, tr: `${BASE_URL}/tr/is-dunyasi`, es: `${BASE_URL}/es/empresa`, ar: `${BASE_URL}/ar/aamal`, ru: `${BASE_URL}/ru/biznes`, en: `${BASE_URL}/business`, 'x-default': `${BASE_URL}/business` },
+    languages: { zh: TRACK_URL, fr: `${BASE_URL}/fr/entreprise`, tr: `${BASE_URL}/tr/is-dunyasi`, es: `${BASE_URL}/es/empresa`, ar: `${BASE_URL}/ar/aamal`, ru: `${BASE_URL}/ru/biznes`, 'en-GB': `${BASE_URL}/business`, 'x-default': `${BASE_URL}/business` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

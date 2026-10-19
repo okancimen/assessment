@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['تدريب بيانات طلاب', 'تقييم تدريب تحليل بيانات', 'تدريب إحصاء طلاب', 'تدريب SQL طلاب', 'تجربة عمل بيانات'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { ar: TRACK_URL, fr: `${BASE_URL}/fr/analyse-de-donnees`, tr: `${BASE_URL}/tr/veri-analitigi`, es: `${BASE_URL}/es/analisis-de-datos`, zh: `${BASE_URL}/zh/shuju`, ru: `${BASE_URL}/ru/analiz-dannykh`, en: `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },
+    languages: { ar: TRACK_URL, fr: `${BASE_URL}/fr/analyse-de-donnees`, tr: `${BASE_URL}/tr/veri-analitigi`, es: `${BASE_URL}/es/analisis-de-datos`, zh: `${BASE_URL}/zh/shuju`, ru: `${BASE_URL}/ru/analiz-dannykh`, 'en-GB': `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

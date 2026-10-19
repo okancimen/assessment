@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['تدريب أعمال طلاب', 'تقييم تدريب أعمال', 'تدريب تجارة طلاب ثانوي', 'تدريب ريادة أعمال طلاب', 'تجربة عمل أعمال'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { ar: TRACK_URL, fr: `${BASE_URL}/fr/entreprise`, tr: `${BASE_URL}/tr/is-dunyasi`, es: `${BASE_URL}/es/empresa`, zh: `${BASE_URL}/zh/shangye`, ru: `${BASE_URL}/ru/biznes`, en: `${BASE_URL}/business`, 'x-default': `${BASE_URL}/business` },
+    languages: { ar: TRACK_URL, fr: `${BASE_URL}/fr/entreprise`, tr: `${BASE_URL}/tr/is-dunyasi`, es: `${BASE_URL}/es/empresa`, zh: `${BASE_URL}/zh/shangye`, ru: `${BASE_URL}/ru/biznes`, 'en-GB': `${BASE_URL}/business`, 'x-default': `${BASE_URL}/business` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

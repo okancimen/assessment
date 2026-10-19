@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     'tech work experience students',
     'technology internship readiness',
   ],
-  alternates: { canonical: TRACK_URL, languages: { 'en-GB': TRACK_URL, 'x-default': TRACK_URL } },
+  alternates: { canonical: TRACK_URL, languages: { 'en-GB': TRACK_URL, tr: `${BASE_URL}/tr/teknoloji`, es: `${BASE_URL}/es/tecnologia`, fr: `${BASE_URL}/fr/technologie`, ar: `${BASE_URL}/ar/taqniya`, ru: `${BASE_URL}/ru/tekhnologii`, zh: `${BASE_URL}/zh/keji`, 'x-default': TRACK_URL } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     type: 'website',

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['stage analyse données lycéen', 'évaluation stage data', 'stage statistiques lycée', 'stage SQL lycéen', 'stage data science lycée', 'stage visualisation données lycéen'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { fr: TRACK_URL, tr: `${BASE_URL}/tr/veri-analitigi`, es: `${BASE_URL}/es/analisis-de-datos`, ar: `${BASE_URL}/ar/bayanat`, zh: `${BASE_URL}/zh/shuju`, ru: `${BASE_URL}/ru/analiz-dannykh`, en: `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },
+    languages: { fr: TRACK_URL, tr: `${BASE_URL}/tr/veri-analitigi`, es: `${BASE_URL}/es/analisis-de-datos`, ar: `${BASE_URL}/ar/bayanat`, zh: `${BASE_URL}/zh/shuju`, ru: `${BASE_URL}/ru/analiz-dannykh`, 'en-GB': `${BASE_URL}/data-analytics`, 'x-default': `${BASE_URL}/data-analytics` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

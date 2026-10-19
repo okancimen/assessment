@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['стажировка маркетинг школьники', 'оценка стажировка digital', 'стажировка SMM старшеклассники', 'стажировка SEO школьники', 'стажировка контент-маркетинг'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { ru: TRACK_URL, fr: `${BASE_URL}/fr/marketing-digital`, tr: `${BASE_URL}/tr/dijital-pazarlama`, es: `${BASE_URL}/es/marketing-digital`, ar: `${BASE_URL}/ar/tawiq`, zh: `${BASE_URL}/zh/yingxiao`, en: `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },
+    languages: { ru: TRACK_URL, fr: `${BASE_URL}/fr/marketing-digital`, tr: `${BASE_URL}/tr/dijital-pazarlama`, es: `${BASE_URL}/es/marketing-digital`, ar: `${BASE_URL}/ar/tawiq`, zh: `${BASE_URL}/zh/yingxiao`, 'en-GB': `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

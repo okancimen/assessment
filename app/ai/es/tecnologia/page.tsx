@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['prácticas tecnología instituto', 'evaluación prácticas tecnología', 'prácticas informática estudiantes', 'test aptitud tecnología', 'prácticas programación bachillerato', 'prácticas ciberseguridad estudiantes', 'prácticas UX diseño'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { es: TRACK_URL, tr: `${BASE_URL}/tr/teknoloji`, fr: `${BASE_URL}/fr/technologie`, ar: `${BASE_URL}/ar/taqniya`, ru: `${BASE_URL}/ru/tekhnologii`, zh: `${BASE_URL}/zh/keji`, en: `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },
+    languages: { es: TRACK_URL, tr: `${BASE_URL}/tr/teknoloji`, fr: `${BASE_URL}/fr/technologie`, ar: `${BASE_URL}/ar/taqniya`, ru: `${BASE_URL}/ru/tekhnologii`, zh: `${BASE_URL}/zh/keji`, 'en-GB': `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

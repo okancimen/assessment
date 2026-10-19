@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     'social media manager internship students',
     'online marketing internship readiness',
   ],
-  alternates: { canonical: TRACK_URL, languages: { 'en-GB': TRACK_URL, 'x-default': TRACK_URL } },
+  alternates: { canonical: TRACK_URL, languages: { 'en-GB': TRACK_URL, tr: `${BASE_URL}/tr/dijital-pazarlama`, es: `${BASE_URL}/es/marketing-digital`, fr: `${BASE_URL}/fr/marketing-digital`, ar: `${BASE_URL}/ar/tawiq`, ru: `${BASE_URL}/ru/tsifrovoy-marketing`, zh: `${BASE_URL}/zh/yingxiao`, 'x-default': TRACK_URL } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     type: 'website',

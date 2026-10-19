@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['stage technologie lycéen', 'évaluation stage tech', 'stage informatique lycée', 'stage coding lycéen', 'stage cybersécurité lycéen', 'stage UX lycée', 'stage développement logiciel lycéen'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { fr: TRACK_URL, tr: `${BASE_URL}/tr/teknoloji`, es: `${BASE_URL}/es/tecnologia`, ar: `${BASE_URL}/ar/taqniya`, zh: `${BASE_URL}/zh/keji`, ru: `${BASE_URL}/ru/tekhnologii`, en: `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },
+    languages: { fr: TRACK_URL, tr: `${BASE_URL}/tr/teknoloji`, es: `${BASE_URL}/es/tecnologia`, ar: `${BASE_URL}/ar/taqniya`, zh: `${BASE_URL}/zh/keji`, ru: `${BASE_URL}/ru/tekhnologii`, 'en-GB': `${BASE_URL}/tech`, 'x-default': `${BASE_URL}/tech` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {

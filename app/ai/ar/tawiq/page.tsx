@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['تدريب تسويق رقمي طلاب', 'تقييم تدريب تسويق', 'تدريب سوشيال ميديا طلاب', 'تدريب SEO طلاب', 'تجربة عمل تسويق رقمي'],
   alternates: {
     canonical: TRACK_URL,
-    languages: { ar: TRACK_URL, fr: `${BASE_URL}/fr/marketing-digital`, tr: `${BASE_URL}/tr/dijital-pazarlama`, es: `${BASE_URL}/es/marketing-digital`, zh: `${BASE_URL}/zh/yingxiao`, ru: `${BASE_URL}/ru/tsifrovoy-marketing`, en: `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },
+    languages: { ar: TRACK_URL, fr: `${BASE_URL}/fr/marketing-digital`, tr: `${BASE_URL}/tr/dijital-pazarlama`, es: `${BASE_URL}/es/marketing-digital`, zh: `${BASE_URL}/zh/yingxiao`, ru: `${BASE_URL}/ru/tsifrovoy-marketing`, 'en-GB': `${BASE_URL}/digital-marketing`, 'x-default': `${BASE_URL}/digital-marketing` },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
