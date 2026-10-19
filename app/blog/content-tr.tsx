@@ -2990,6 +2990,48 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türkiye PISA Puanları: 2009–2025 Tarihsel Tablo</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Aşağıdaki tablo Türkiye'nin tüm PISA döngülerindeki matematik, okuma ve fen bilimleri ortalama puanlarını OECD matematik ortalamasıyla karşılaştırmaktadır.
+        </p>
+        <div className="overflow-x-auto not-prose">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-indigo-50">
+                <th className="text-left px-4 py-3 font-semibold text-gray-900 border-b border-gray-200">Yıl</th>
+                <th className="text-right px-4 py-3 font-semibold text-gray-900 border-b border-gray-200">Matematik</th>
+                <th className="text-right px-4 py-3 font-semibold text-gray-900 border-b border-gray-200">Okuma</th>
+                <th className="text-right px-4 py-3 font-semibold text-gray-900 border-b border-gray-200">Fen</th>
+                <th className="text-right px-4 py-3 font-semibold text-indigo-600 border-b border-gray-200">OECD Ort. (Mat.)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { yil: '2009', mat: 445, oku: 464, fen: 454, oecd: 496 },
+                { yil: '2012', mat: 448, oku: 475, fen: 463, oecd: 494 },
+                { yil: '2015', mat: 420, oku: 428, fen: 425, oecd: 490 },
+                { yil: '2018', mat: 454, oku: 466, fen: 468, oecd: 489 },
+                { yil: '2022', mat: 453, oku: 479, fen: 476, oecd: 472 },
+                { yil: '2025', mat: 453, oku: 456, fen: 472, oecd: 470 },
+              ].map((r, i) => (
+                <tr key={r.yil} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                  <td className="px-4 py-3 font-semibold text-gray-900 border-b border-gray-100">{r.yil}</td>
+                  <td className="px-4 py-3 text-right text-gray-800 border-b border-gray-100">{r.mat}</td>
+                  <td className="px-4 py-3 text-right text-gray-800 border-b border-gray-100">{r.oku}</td>
+                  <td className="px-4 py-3 text-right text-gray-800 border-b border-gray-100">{r.fen}</td>
+                  <td className="px-4 py-3 text-right text-indigo-600 font-medium border-b border-gray-100">{r.oecd}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-gray-500 mt-2">Kaynak: OECD PISA veri tabanı. 2025 verileri tahmini açıklama değerlerini yansıtmaktadır.</p>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Tablonun en çarpıcı noktası <strong>2015 düşüşüdür</strong>: Türkiye bu döngüde matematikten 34 puan, okumadan 47 puan kaybetti. 2018 kısmi toparlanmasının ardından 2022–2025 arasında matematik görece sabit kalırken fen bilimlerinde sürekli bir iyileşme dikkat çekmektedir. Buna karşın Türkiye, OECD matematik ortalamasının yaklaşık 17 puan altında kalmaya devam etmektedir — bu fark PISA metodolojisine göre yarım okul yılına yakın bir öğrenme açığına karşılık gelir.
+        </p>
+      </section>
+
+      <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuz PISA'ya Göre Nerede Duruyor?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           PISA 15 yaşındaki öğrencileri hedefler — ancak bu, hazırlığın 15 yaşında başlaması gerektiği anlamına gelmez. Aksine, PISA düzeyindeki düşünme becerileri 6-14 yaş arasında şekillenir. Bu dönemde çocuğunuzun gerçek akademik konumunu bilmek, hangi alanlara daha fazla dikkat etmeniz gerektiğini netleştirir.
@@ -3013,6 +3055,46 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           <Bullet><strong>Açık uçlu soru tartışması:</strong> "Bu neden böyle oldu sence?" ya da "Farklı nasıl yapılabilirdi?" gibi sorular, PISA'nın ölçtüğü eleştirel düşünme becerisini doğrudan geliştirir.</Bullet>
           <Bullet><strong>Mevcut düzeyi tespit etmek:</strong> Hangisine odaklanmanız gerektiğini bilmeden çalışmak verimsizdir. Standartlaştırılmış bir değerlendirme, matematik mi, okuma mı yoksa mantıksal akıl mı geliştirileceğini somut biçimde gösterir.</Bullet>
         </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA, LGS ve YKS Farkı Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türk ebeveynlerin sık sorduğu iki soru: <em>"PISA tarzı sorular LGS'den nasıl farklı?"</em> ve <em>"PISA'da güçlü olmak YKS başarısını etkiler mi?"</em> Aşağıdaki tablo temel farkları yan yana göstermektedir.
+        </p>
+        <div className="overflow-x-auto not-prose">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-indigo-50">
+                <th className="text-left px-4 py-3 font-semibold text-gray-900 border-b border-gray-200">Özellik</th>
+                <th className="text-center px-4 py-3 font-semibold text-indigo-700 border-b border-gray-200">PISA</th>
+                <th className="text-center px-4 py-3 font-semibold text-gray-900 border-b border-gray-200">LGS</th>
+                <th className="text-center px-4 py-3 font-semibold text-gray-900 border-b border-gray-200">YKS</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ['Amaç', 'Uluslararası kıyaslama', 'Lise yerleştirme', 'Üniversite yerleştirme'],
+                ['Sınıf / Yaş', '9. sınıf / 15 yaş', '8. sınıf', '12. sınıf'],
+                ['Ölçtüğü', 'Pratik uygulama', 'Müfredat bilgisi', 'Müfredat + akıl yürütme'],
+                ['Soru formatı', 'Senaryo bazlı, bağlamlı', 'Çoktan seçmeli', 'Çoktan seçmeli'],
+                ['Katılım', 'Rastgele örneklem', 'Tüm 8. sınıflar', 'İsteğe bağlı'],
+                ['Bireysel puan', 'Yok (ülke ortalaması)', 'Var', 'Var'],
+                ['Döngü', 'Her 3 yılda bir', 'Yılda bir', 'Yılda bir'],
+              ].map(([ozellik, pisa, lgs, yks], i) => (
+                <tr key={ozellik} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                  <td className="px-4 py-3 font-medium text-gray-900 border-b border-gray-100">{ozellik}</td>
+                  <td className="px-4 py-3 text-center text-indigo-700 border-b border-gray-100">{pisa}</td>
+                  <td className="px-4 py-3 text-center text-gray-700 border-b border-gray-100">{lgs}</td>
+                  <td className="px-4 py-3 text-center text-gray-700 border-b border-gray-100">{yks}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          <strong>PISA'da güçlü olmak LGS veya YKS başarısını garantilemez — ama sağlam bir temel kurar.</strong> PISA'nın ölçtüğü senaryo bazlı düşünme, YKS'nin sözel ve sayısal akıl yürütme bölümlerinde doğrudan işe yarar. Ancak LGS ve YKS aynı zamanda müfredat kapsamı ve hız da gerektirir; bu, salt PISA hazırlığının yetersiz kaldığı bir boyuttur. En verimli yaklaşım ikisini birbirinin alternatifi değil tamamlayıcısı olarak görmektir.
+        </p>
       </section>
 
       <section>

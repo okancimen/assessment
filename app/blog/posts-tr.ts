@@ -668,8 +668,8 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
 
     date: '2026-09-14',
     dateModified: '2026-10-20',
-    readTime: '10 dk okuma',
-    tags: ['PISA', 'Uluslararası Kıyaslama', 'Akademik Değerlendirme', 'Ebeveyn Rehberi'],
+    readTime: '13 dk okuma',
+    tags: ['PISA', 'Uluslararası Kıyaslama', 'Akademik Değerlendirme', 'Ebeveyn Rehberi', 'LGS', 'YKS'],
     faqs: [
       { q: 'PISA nedir, pısa ne demek?', a: 'PISA (pısa), "Programme for International Student Assessment" kelimelerinin baş harflerinden oluşan bir kısaltmadır; Türkçe karşılığı "Uluslararası Öğrenci Değerlendirme Programı"dır. OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bu sınav, matematik, okuma ve fen bilimleri yetkinliklerini ölçer. "Pısa" yazımı, PISA kısaltmasının Türkçe harf kurallarına göre küçük harfle yazılmış halidir.' },
       { q: 'PISA açılımı nedir, ingilizce karşılığı ne?', a: 'PISA\'nın açılımı "Programme for International Student Assessment" — Türkçede "Uluslararası Öğrenci Değerlendirme Programı" olarak çevrilir. İngilizce açılımın her harfi: P = Programme, I = International, S = Student, A = Assessment. 1997\'de OECD bünyesinde başlatılan program, 2000\'den bu yana her üç yılda bir uygulanmaktadır.' },
