@@ -1,7 +1,7 @@
 # Eduentry — Full Content Reference
 
 > This document provides detailed descriptions of all Eduentry content for AI systems. For a summary version see /llms.txt.
-> Last updated: 2026-10-19
+> Last updated: 2026-10-20
 
 ---
 
@@ -143,6 +143,42 @@ Calibration note: Questions have been calibrated for difficulty ordering but not
 **High School Internship Benefits** [/blog/high-school-internship-benefits-university]: Russell Group universities explicitly reference work experience in admissions guidance. Medicine, law, and technology programmes treat placement experience as near-requirement. Personal statements from students with genuine work experience contain specific observations and reflections — "evidence, not assertion" — which admissions readers are trained to recognise and reward. Big Five personality research shows conscientiousness and openness scores improve measurably in students who complete structured placements before age 17.
 
 **65 Jobs AI Cannot Automate** [/blog/65-jobs-ai-cannot-automate]: WEF Future of Jobs 2025 data on automation risk by occupation category. Lists 65 roles with low automation probability: surgeons, therapists, social workers, trial lawyers, structural engineers, primary teachers, midwives, and others requiring physical dexterity, emotional intelligence, or contextual judgement. Key finding: jobs requiring embodied physical skill, high-stakes interpersonal relationships, or contextual ethical judgement remain highly resistant to automation even with advanced LLMs.
+
+### Key blog posts — Turkish (Türkçe)
+
+**PISA Nedir? 2026 Güncel Rehber** [/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir]: PISA açılımı ve OECD'nin eğitim ölçüm sistemi. Türkiye 2009–2025 tarihsel puan tablosu (Matematik, Okuma, Fen). PISA vs LGS vs YKS karşılaştırması (7 kriter: amaç, katılım, ölçülen yetkinlikler, hazırlık yolu, puan skalası, sonuçların kullanımı). "Sınava nasıl girilir?" sorusuna tam yanıt. Çocuğun PISA düzeyini ücretsiz nasıl ölçebilirsin. Bölüm içi FAQ şeması.
+
+**PISA 2025 Sonuçları: Türkiye ve Dünya** [/tr/blog/pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler]: PISA 2025 küresel sonuçları ve Türkiye'nin matematik/okuma/fen puanları. OECD ortalamasıyla kıyaslama. Türkiye tarihsel performans trendi. Aileler için ne anlama geliyor, çocuğunu nasıl konumlandırabilirsin?
+
+**MAP Testi Nedir? NWEA MAP ve PISA Karşılaştırması** [/tr/blog/map-testi-nedir]: MAP testi (NWEA MAP Growth) açıklaması. RIT puanı nasıl okunur, hangi sınıf karşılığına denk gelir. PISA ve CAT4 ile farkları. Uluslararası okullarda MAP kullanan aileler için okuma kılavuzu.
+
+**Yurtdışı Staj 2026: Erasmus+, AIESEC, IAESTE** [/tr/blog/uluslararasi-staj-programlari]: Yurtdışı staj programlarına giriş. Erasmus+ staj hibeleri (ülkelere göre miktarlar). AIESEC değişim programı başvuru süreci. IAESTE teknik staj başvuruları. Türkiye'den lise ve üniversite öğrencileri için başvuru şartları, gerekli belgeler, mülakat hazırlığı.
+
+**Staj Defteri: Nereden Alınır, Kim İmzalar?** [/tr/blog/staj-defteri-nasil-doldurulur]: Staj defterini nereden alınır (milli eğitim, okul, internet). Kim imzalar (işyeri yetkilisi + okul öğretmeni). Ne zaman teslim edilir. Spiral ciltli olabilir mi. Doldurulurken sık yapılan hatalar.
+
+**Staj İçin CV Nasıl Yazılır** [/tr/blog/staj-icin-cv-nasil-yazilir]: İş deneyimi olmayan 16–18 yaş öğrenciler için staj CV'si yapısı. Eğitim, projeler, sertifikalar, gönüllülük ve dijital beceriler nasıl gösterilir. Kaçınılması gereken başlıca 5 hata.
+
+**Staj Mülakatına Nasıl Hazırlanılır** [/tr/blog/staj-mulakati-hazirlik-rehberi]: En sık sorulan mülakat soruları (güçlü-zayıf yön, neden bu şirket, stajdan ne beklersin). Deneyim yokken nasıl cevap verilir. Mülakat günü için pratik kontrol listesi.
+
+**Deneyimsiz Lisede Staj Nasıl Bulunur** [/tr/blog/deneyimsiz-lisede-staj-ve-is-tecrubesi]: Hiç iş deneyimi olmayan lise öğrencisi için staj bulmanın 5 adımı: yetenek haritası çıkarma, yetkinlik raporu kullanma, sanal staj ve Forage gibi alternatifler, öğretmen/aile ağını genişletme, kişiselleştirilmiş başvuru mektubu yazma.
+
+**Dubai'de Lise Eğitimi Rehberi** [/tr/blog/dubai-lise-rehberi]: Dubai'de GCSE, A Level ve IB Diploma karşılaştırması (program yapısı, üniversite başvurusu, maliyet). KHDA derecelendirmesi nedir ve okul seçerken nasıl kullanılır. Türkiye ve UK üniversitelerine Dubai'den başvuru yolu.
+
+**Dubai Eğitim Sistemi Rehberi** [/tr/blog/dubai-egitim-sistemi-rehberi]: Dubai'deki uluslararası okul türleri (British, American, IB, Türk). KHDA derecelendirme sistemi. Türk aileler için okul seçim kriterleri ve bölgelere göre okul karşılaştırması.
+
+**Çocuğunuzun Güçlü ve Zayıf Yönleri: Lise Hazırlık** [/tr/blog/cocugunuzun-guclu-zayif-yonleri-liseye-hazirlik]: Akademik güçlü/zayıf yönleri lise öncesi tespit etmenin önemi. Okul notu neden yanıltıcı olabilir. Uluslararası kıyaslamalı değerlendirmenin sağladığı avantaj. Güçlü yönlere göre ders ve okul seçimi.
+
+**VIA Karakter Güçleri ve Akademik Başarı** [/tr/blog/cocugumun-guclu-yonleri-ve-akademik-basari]: VIA karakter güçleri testi (merak, öğrenme sevgisi, azim, dürüstlük, öz-düzenleme) akademik performansı nasıl öngörür? 5 güç akademik başarıyla nasıl ilişkili? Aile olarak bu güçleri nasıl geliştirirsiniz.
+
+**Çocuklarda Sınav Kaygısı: Güçlü Yönlerle Baş Etme** [/tr/blog/cocuklarda-sinav-kaygisi-guclu-yonler]: Sınav kaygısı belirtileri ve fizyolojisi. Kaygıyı artıran yaygın ebeveyn davranışları. Umut, azim ve öz-düzenleme gibi karakter güçlerinin kaygıyı düşürmesi. Sınav öncesi ve sırasında uygulanabilir yöntemler.
+
+**Çocuğunuz Dünyada Nerede? Uluslararası Kıyaslama** [/tr/blog/cocugunuz-dunyada-nerede-duruyor]: PISA 2025 ülke sıralamaları. Türkiye'nin OECD içindeki konumu. Bireysel çocuğunuzu bu haritaya nasıl yerleştirebilirsiniz. Uluslararası okul, göç veya yurt dışı üniversite planlayanlar için fark analizleri.
+
+**Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?** [/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur]: 6–17 yaş için ücretsiz adaptif değerlendirme açıklaması. Okul notu neden akademik seviyeyi göstermez. IRT tabanlı ölçüm ile okul sınavı farkı. Sonuçları nasıl yorumlarsınız.
+
+**Yapay Zekanın Alamayacağı 65 Meslek** [/tr/blog/yapay-zekanin-alamayacagi-65-meslek]: WEF Geleceğin Meslekleri 2025 verileri. 65 düşük otomasyon riskli meslek listesi: cerrahlar, terapistler, sosyal çalışanlar, yapı mühendisleri, ilkokul öğretmenleri, ebeler. Fiziksel beceri, duygusal zeka ve bağlamsal yargı gerektiren mesleklerin neden yapay zekaya karşı dirençli kaldığı.
+
+**11+ Sınavı Nedir? Tam Rehber** [/tr/blog/11-plus-sinavi-nedir-tam-rehber]: İngiltere'de devlet seçici gramer okulu giriş sınavı açıklaması. GL Assessment vs CEM formatı. SAS puan eşikleri (115+ genel, 121–132 Londra). Dört test alanı. Hazırlıkta en yaygın 3 hata. IRT tabanlı uyarlanabilir testin mantığı.
 
 ---
 

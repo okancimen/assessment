@@ -2053,6 +2053,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'dubai-lise-rehberi',
+    contentSlug: 'dubai-high-school-gcse-ib-guide',
     title: 'Dubai\'de Lise Eğitimi: GCSE, A Level ve IB Rehberi — Türk Aileler İçin',
     shortTitle: 'Dubai\'de Lise Eğitimi Rehberi',
     description:

@@ -1026,6 +1026,46 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'dubai-high-school-gcse-ib-guide',
+    title: 'Dubai High School Guide 2026: GCSE, A Level and IB Diploma Compared',
+    shortTitle: 'Dubai High School Guide: GCSE, A Level and IB',
+    description:
+      'Dubai high school curriculum choices for international families: GCSE + A Level vs IB Diploma — KHDA school ratings, university pathways to UK, US and beyond.',
+    tldr: 'Secondary education in Dubai is delivered by KHDA-licensed private schools. The most common curriculum is British (GCSE + A Level), followed by IB Diploma and American. A Level is the strongest direct route to UK universities; IB offers broader global recognition for US, Canada and European admissions.',
+    date: '2026-10-19',
+    dateModified: '2026-10-20',
+    readTime: '9 min read',
+    tags: ['UAE', 'Dubai', 'High School', 'A Level', 'GCSE', 'IB Diploma', 'KHDA', 'International Schools'],
+    faqs: [
+      {
+        q: 'When does secondary school start in Dubai and how long does it last?',
+        a: 'In the British curriculum, secondary school (Year 7) begins at around age 11–12 and continues through Year 13 at age 18. GCSE examinations are sat in Year 10–11 (ages 14–16); A Level examinations in Year 12–13 (ages 16–18). The IB Diploma Programme covers the final two years (ages 16–18). In the American curriculum, high school runs from Grade 9 to Grade 12 (ages 14–18).',
+      },
+      {
+        q: 'Should my child do GCSE and A Level or IB in Dubai?',
+        a: 'GCSE + A Level is the most direct route to UK and Australian universities and has a well-established equivalency framework for most countries. The IB Diploma Programme offers broader international recognition, particularly for students targeting US, Canadian or continental European universities. The key decision factor is your child\'s likely university destination: A Level for a clear UK target; IB for flexible global options.',
+      },
+      {
+        q: 'Which KHDA Outstanding-rated secondary schools are in Dubai?',
+        a: 'KHDA Outstanding-rated schools offering secondary education include GEMS Wellington International School, Jumeirah English Speaking School (JESS), Dubai College, Repton School Dubai, and GEMS World Academy (IB). Ratings are updated annually — verify the current list on the KHDA official website before making school decisions.',
+      },
+      {
+        q: 'How much does secondary school cost in Dubai?',
+        a: 'Annual school fees at secondary level range from AED 50,000–80,000 at mid-range schools to AED 80,000–130,000+ at top-tier schools such as Dubai College and Repton. Fees vary by KHDA rating and curriculum type. Comparative fee data is available through the KHDA school search tool.',
+      },
+      {
+        q: 'How can I benchmark my child\'s academic level in Dubai?',
+        a: 'Standardised adaptive assessments in verbal reasoning, numerical reasoning, and spatial ability measure cognitive potential independently of school grades or curriculum. They show where a student sits against international peers and identify areas to develop before GCSE or IB begins. Eduentry\'s free assessment produces a score on the same mean-100, SD-15 scale as the CAT4 used in UAE school admissions.',
+      },
+    ],
+    cta: {
+      heading: 'How does your child compare internationally?',
+      body: 'Free adaptive assessment — accessible from any curriculum, any country. Standardised score with global percentile ranking and subject-level report.',
+      label: 'Start free assessment',
+      href: '/academic-assessment',
+    },
+  },
+  {
     slug: 'uae-british-curriculum-school-admissions',
     title: 'British Curriculum School Admissions in Dubai and Abu Dhabi: A Complete Guide',
     shortTitle: 'UAE British School Admissions Guide',

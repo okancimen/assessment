@@ -154,8 +154,25 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 
 ### Eduentry.ai blog posts — Turkish (Türkçe)
 
-- [Deneyimsiz Lisede Staj Nasıl Bulunur](https://eduentry.com/tr/blog/deneyimsiz-lisede-staj-ve-is-tecrubesi): Hiç iş deneyimi olmadan lise yıllarında staj ve iş tecrübesi kazanmanın beş adımı — yetenek haritası, yetkinlik raporu, alternatif deneyim yolları ve kişiselleştirilmiş başvuru mektubu.
-- [11+ Sınavı Nedir? Tam Rehber](https://eduentry.com/tr/blog/11-plus-sinavi-nedir-tam-rehber): GL ve CEM formatları, SAS puan eşikleri (115+ ve 127+), okul notlarının neden sonucu tahmin etmediği, dört temel alan, en yaygın 3 hazırlık hatası ve IRT tabanlı uyarlanabilir değerlendirme.
+- [PISA Nedir? 2026 Güncel Rehber](https://eduentry.com/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir): PISA açılımı, Türkiye 2009–2025 tarihsel puan tablosu, PISA vs LGS vs YKS karşılaştırması, sınava nasıl girilir ve çocuğunuzun PISA düzeyini ücretsiz nasıl ölçersiniz.
+- [PISA 2025 Sonuçları: Türkiye ve Dünya](https://eduentry.com/tr/blog/pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler): PISA 2025, OECD ülkelerinde matematik, okuma ve fende en düşük puanları gösteriyor. Sonuçlar aileler için ne anlama geliyor, çocuğunuzu neden ölçmeli?
+- [MAP Testi Nedir? NWEA MAP ve PISA Karşılaştırması](https://eduentry.com/tr/blog/map-testi-nedir): MAP testi (NWEA MAP Growth) nedir? RIT puanı nasıl okunur, PISA ve CAT4 ile farkı ne? Uluslararası okul öğrencisi aileleri için kapsamlı rehber.
+- [Yurtdışı Staj 2026: Erasmus+, AIESEC, IAESTE](https://eduentry.com/tr/blog/uluslararasi-staj-programlari): Yurtdışı staj 2026: Erasmus+ hibeleri, AIESEC, IAESTE — lise ve üniversite öğrencileri için başvuru şartları, gerekli belgeler ve adım adım rehber.
+- [Staj Defteri: Nereden Alınır, Kim İmzalar?](https://eduentry.com/tr/blog/staj-defteri-nasil-doldurulur): Staj defteri nereden alınır, kim imzalar, ne zaman teslim edilir, spiral olur mu, paralı mı? Lise ve üniversite öğrencileri için tüm sorulara tek sayfada yanıt.
+- [Lise Stajı Nasıl Bulunur? Türkiye ve Yurt Dışı](https://eduentry.com/tr/blog/lise-staji-nasil-bulunur): Lise öğrencisi olarak Türkiye'de ve yurt dışında staj nasıl bulunur? Uygun sektörler, başvuru zamanı ve CV olmadan başvuru için adım adım rehber.
+- [Staj İçin CV Nasıl Yazılır](https://eduentry.com/tr/blog/staj-icin-cv-nasil-yazilir): Deneyimi olmayan 16–18 yaş öğrenciler için staj CV'si: neler yazılır, nasıl düzenlenir, hangi hatalardan kaçınılır.
+- [Staj Mülakatına Nasıl Hazırlanılır](https://eduentry.com/tr/blog/staj-mulakati-hazirlik-rehberi): Staj mülakatına hazırlık: en sık sorulan sorular, deneyim olmadan nasıl cevap verilir, mülakat günü nasıl fark yaratılır.
+- [A Level Programları Nedir?](https://eduentry.com/tr/blog/a-level-programlari-nedir): A Level nedir, hangi programlar var? İngiltere'de lise son sınıf ve Türkiye denkliği rehberi.
+- [Dubai'de Lise Eğitimi Rehberi](https://eduentry.com/tr/blog/dubai-lise-rehberi): Dubai'de lise seçimi: GCSE, A Level ve IB karşılaştırması, KHDA derecelendirmeleri ve Türkiye ile UK üniversitelerine başvuru yolu.
+- [Dubai Eğitim Sistemi Rehberi](https://eduentry.com/tr/blog/dubai-egitim-sistemi-rehberi): Dubai'deki uluslararası okul seçimi, KHDA derecelendirmesi ve Türk aileler için okul karşılaştırması.
+- [Çocuğunuzun Güçlü ve Zayıf Yönleri: Lise Hazırlık](https://eduentry.com/tr/blog/cocugunuzun-guclu-zayif-yonleri-liseye-hazirlik): Çocuğunuzun akademik güçlü ve zayıf yönlerini lise öncesi nasıl tespit edersiniz? Uluslararası kıyaslamalı değerlendirme rehberi.
+- [VIA Karakter Güçleri ve Akademik Başarı](https://eduentry.com/tr/blog/cocugumun-guclu-yonleri-ve-akademik-basari): VIA karakter güçleri testi nedir? Merak, öğrenme sevgisi, azim — 5 güç akademik başarıyı nasıl öngörüyor?
+- [Çocuklarda Sınav Kaygısı: Güçlü Yönlerle Baş Etme](https://eduentry.com/tr/blog/cocuklarda-sinav-kaygisi-guclu-yonler): Sınav kaygısı belirtileri, nedenleri ve beş karakter gücünün kaygıyı nasıl azalttığı — uygulanabilir yöntemler.
+- [Çocuğunuz Dünyada Nerede? Uluslararası Kıyaslama](https://eduentry.com/tr/blog/cocugunuz-dunyada-nerede-duruyor): Çocuğunuzun PISA 2025 uluslararası kıyaslamadaki yeri — OECD ortalaması, Türkiye sıralaması ve bireysel değerlendirme.
+- [Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?](https://eduentry.com/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur): 6–17 yaş için ücretsiz, uluslararası kıyaslamalı değerlendirme — okul notu neden yetmez?
+- [Yapay Zekanın Alamayacağı 65 Meslek](https://eduentry.com/tr/blog/yapay-zekanin-alamayacagi-65-meslek): Otomasyon riskine karşı güvende olan 65 meslek listesi — el becerisine, empataiye ve yaratıcılığa dayalı kariyerler.
+- [Deneyimsiz Lisede Staj Nasıl Bulunur](https://eduentry.com/tr/blog/deneyimsiz-lisede-staj-ve-is-tecrubesi): Hiç iş deneyimi olmadan lise yıllarında staj ve iş tecrübesi kazanmanın beş adımı.
+- [11+ Sınavı Nedir? Tam Rehber](https://eduentry.com/tr/blog/11-plus-sinavi-nedir-tam-rehber): GL ve CEM formatları, SAS puan eşikleri, dört temel alan ve IRT tabanlı uyarlanabilir değerlendirme.
 
 ### Eduentry.ai blog posts — Spanish (Español)
 

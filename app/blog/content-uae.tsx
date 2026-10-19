@@ -674,4 +674,138 @@ export const UAE_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'dubai-high-school-gcse-ib-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Raising a secondary-school-age child in Dubai means navigating an education landscape that differs fundamentally from most home countries. With over 100 KHDA-licensed schools in the city, the curriculum choice — GCSE and A Level, or IB Diploma? — is simultaneously a university strategy decision that every family must make independently.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How Does Secondary School Work in Dubai?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Secondary education in Dubai is delivered by private international schools overseen by the KHDA (Knowledge and Human Development Authority). Government schools teach primarily in Arabic, making private international schools the only practical option for most expatriate families.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          At British-curriculum schools — the most common type in Dubai — secondary follows this structure:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>Year 7–9 (ages 11–14):</strong> Lower secondary; the years when core academic foundations are built.</Bullet>
+          <Bullet><strong>Year 10–11 (ages 14–16):</strong> GCSE stage. Students select 8–10 subjects and sit GCSE examinations at the end of Year 11.</Bullet>
+          <Bullet><strong>Year 12–13 (ages 16–18):</strong> Sixth Form / A Level. Students specialise in 3–4 A Level subjects; these results form the basis of university applications.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          At IB-curriculum schools, the IB Diploma Programme covers the final two years (ages 16–18) as an alternative to A Level.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">GCSE + A Level vs IB Diploma: Which Is Right for Your Child?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Choosing a curriculum in Dubai is effectively choosing a university pathway. Two main routes dominate:
+        </p>
+        <div className="overflow-x-auto mb-6 not-prose">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold text-gray-700">Criterion</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold text-gray-700">GCSE + A Level</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold text-gray-700">IB Diploma</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-200 px-4 py-2 font-medium">Age range</td>
+                <td className="border border-gray-200 px-4 py-2">14–18 (GCSE + A Level)</td>
+                <td className="border border-gray-200 px-4 py-2">16–18 (DP only)</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-200 px-4 py-2 font-medium">UK universities</td>
+                <td className="border border-gray-200 px-4 py-2">Direct route — strongest pathway</td>
+                <td className="border border-gray-200 px-4 py-2">Accepted; sufficient for most programmes</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-200 px-4 py-2 font-medium">US / Canada universities</td>
+                <td className="border border-gray-200 px-4 py-2">Accepted</td>
+                <td className="border border-gray-200 px-4 py-2">Strong pathway; treated like AP</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-200 px-4 py-2 font-medium">Subject breadth</td>
+                <td className="border border-gray-200 px-4 py-2">Deep specialisation (3–4 subjects)</td>
+                <td className="border border-gray-200 px-4 py-2">Broad programme (6 subjects + TOK/EE/CAS)</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-200 px-4 py-2 font-medium">Best for</td>
+                <td className="border border-gray-200 px-4 py-2">Clear target UK or Australian university</td>
+                <td className="border border-gray-200 px-4 py-2">Global options, especially US/Canada/Netherlands</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Students with a clear target — a specific UK or Australian university — generally find A Level the cleaner route. Families keeping options open across multiple countries typically benefit from the IB&apos;s wider international recognition.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Choosing a School: The KHDA Rating System</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          KHDA inspects Dubai&apos;s private schools annually and rates them across five levels: <strong>Outstanding</strong>, Very Good, Good, Acceptable, and Weak. This rating is the most reliable publicly available source for school quality comparison.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Outstanding-rated secondary schools offering British or IB curricula include:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet>GEMS Wellington International School — British curriculum, strong Sixth Form</Bullet>
+          <Bullet>Jumeirah English Speaking School (JESS) — British curriculum</Bullet>
+          <Bullet>Dubai College — British curriculum, secondary-only, selective entry</Bullet>
+          <Bullet>Repton School Dubai — British curriculum, boarding option available</Bullet>
+          <Bullet>GEMS World Academy — IB Diploma and MYP curriculum</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ratings are updated annually. Current listings are available on the KHDA&apos;s official website.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">University Pathways from Dubai Secondary Schools</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A student graduating from a Dubai school with A Level or IB Diploma results has several clear routes:
+        </p>
+        <ul className="space-y-2 mb-6">
+          <Bullet><strong>UK universities:</strong> Direct application through UCAS. A Level results are released in July; conditional offers are typically received earlier in the year.</Bullet>
+          <Bullet><strong>US / Canada:</strong> Common App or direct university application. IB Diploma is particularly well recognised at US institutions and can earn college credit.</Bullet>
+          <Bullet><strong>Netherlands / Europe:</strong> Many Dutch universities accept A Level and IB for English-taught programmes; additional language requirements may apply by country.</Bullet>
+          <Bullet><strong>Australia:</strong> Australian universities accept both A Level and IB; specific grade thresholds vary by course and institution.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Benchmarking Your Child&apos;s Academic Level in Dubai</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          School grades in Dubai vary significantly across curricula and schools. A student&apos;s readiness for GCSE or IB — measured against international peers rather than classmates — is best assessed through a standardised tool independent of school grades.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Adaptive assessments in verbal reasoning, numerical reasoning, and spatial ability measure cognitive potential independent of curriculum. They show where a student sits globally and identify areas worth developing before high-stakes examinations.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/uae-british-curriculum-school-admissions', tag: 'Guide', title: 'British Curriculum School Admissions in Dubai and Abu Dhabi' },
+            { href: '/blog/uae-cat4-test-guide', tag: 'Guide', title: 'UAE CAT4 Test Guide: SAS Bands and School Requirements' },
+            { href: '/blog/a-level-what-is-it', tag: 'Guide', title: 'What Is A Level? Complete Guide for International Families' },
+            { href: '/blog/how-does-your-child-compare-globally', tag: 'Benchmarking', title: 'How Does Your Child Compare Globally? PISA 2025 Results' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }

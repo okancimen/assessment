@@ -75,6 +75,10 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/blog/oecd-teenage-part-time-work-benefits",
     f"{BASE_URL}/blog/discover-school-age-childs-hidden-strengths",
     # ── Turkish (TR) ──────────────────────────────────────────────────────────
+    f"{BASE_URL}/tr/blog/map-testi-nedir",
+    f"{BASE_URL}/tr/blog/dubai-lise-rehberi",
+    f"{BASE_URL}/tr/blog/cocugumun-guclu-yonleri-ve-akademik-basari",
+    f"{BASE_URL}/tr/blog/cocuklarda-sinav-kaygisi-guclu-yonler",
     f"{BASE_URL}/tr/blog/erken-yas-staj-cocuk-gelisimi-kariyer",
     f"{BASE_URL}/tr/blog/lise-staji-faydalari-universite",
     f"{BASE_URL}/tr/blog/is-deneyimi-lise-ingiltere",
