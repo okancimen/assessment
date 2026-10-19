@@ -1000,17 +1000,25 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'uluslararasi-staj-programlari',
     contentSlug: 'international-internship-programs-tr',
-    title: 'Uluslararası Staj Programları 2026: Erasmus+, AIESEC, IAESTE — Türk Öğrenciler İçin Rehber',
-    shortTitle: 'Uluslararası Staj Programları 2026: Erasmus+, AIESEC ve Başvuru',
+    title: 'Yurtdışı Staj 2026: Erasmus+, AIESEC, IAESTE — Türk Öğrenciler İçin Tam Rehber',
+    shortTitle: 'Yurtdışı Staj 2026: Erasmus+, AIESEC, IAESTE ve Başvuru Rehberi',
     description:
-      'Uluslararası staj programları 2026: Erasmus+ hibeleri, AIESEC, IAESTE — başvuru şartları, gerekli belgeler ve Türk öğrenciler için adım adım rehber.',
-    tldr: 'Uluslararası staj programları için başlıca fırsatlar: AIESEC (öğrenci liderliğinde küresel staj değişimi), Erasmus+ (Avrupa çalışma yerleştirme hibeleri), IAESTE (fen ve mühendislikte uluslararası değişim), Microsoft TEALS, Google STEP ve Amazon Future Engineer gibi çok uluslu şirket programları. Başvurular genellikle 6–12 ay öncesinden yapılır.',
+      'Yurtdışı staj 2026: Erasmus+ hibeleri, AIESEC, IAESTE — lise ve üniversite öğrencileri için başvuru şartları, gerekli belgeler ve adım adım rehber.',
+    tldr: 'Yurtdışı staj için başlıca fırsatlar: AIESEC (öğrenci liderliğinde küresel staj değişimi), Erasmus+ (Avrupa çalışma yerleştirme hibeleri), IAESTE (fen ve mühendislikte uluslararası değişim), Microsoft TEALS, Google STEP ve Amazon Future Engineer gibi çok uluslu şirket programları. Başvurular genellikle 6–12 ay öncesinden yapılır.',
 
     date: '2026-09-21',
     dateModified: '2026-10-20',
     readTime: '11 dk okuma',
-    tags: ['Uluslararası Staj', 'Erasmus', 'Staj Başvurusu', 'Yurt Dışı Staj', 'Kariyer Gelişimi', 'Uluslararası Staj Programı'],
+    tags: ['Yurtdışı Staj', 'Uluslararası Staj', 'Erasmus', 'Staj Başvurusu', 'Yurt Dışında Staj', 'Kariyer Gelişimi', 'Uluslararası Staj Programı'],
     faqs: [
+      {
+        q: 'Yurtdışı staj nasıl bulunur?',
+        a: 'Yurtdışı staj bulmak için dört temel yol var: (1) Erasmus+ — üniversitenizin Erasmus ofisi aracılığıyla Avrupa\'daki kurumlara başvurun; (2) AIESEC ve IAESTE — öğrenci örgütlerinin eşleştirme platformları üzerinden başvurun; (3) Doğrudan şirket başvurusu — LinkedIn\'de "internship" anahtar kelimesiyle hedef ülkede arama yapın; (4) Uzaktan staj programları — coğrafi kısıtlama olmaksızın Magenta Networks Global Career Fellowship gibi yapılandırılmış programlara katılın. Lise öğrencileri için en erişilebilir yol uzaktan ve özel sektör programlarıdır.',
+      },
+      {
+        q: 'Yurtdışı staj maaşlı mı?',
+        a: 'Duruma göre değişir. Erasmus+ bursları ücret değil; Avrupa\'daki yaşam giderlerini kısmen karşılamak için aylık 300–600 € hibe sağlar. IAESTE teknik stajları genellikle ev sahibi kurumun belirlediği harçlık içerir. Özel şirket stajları ise ülkeye ve sektöre göre ücretli veya ücretsiz olabilir; İngiltere\'de ulusal asgari ücret koruması stajyerlere de uygulanır. Uzaktan programların büyük çoğunluğu ücretsizdir ancak sertifika ve referans mektubu sağlar.',
+      },
       {
         q: 'Uluslararası staj başvurusu nasıl yapılır?',
         a: 'Programa göre değişir. Erasmus+ için üniversitenizin Erasmus ofisine başvurarak motivasyon mektubu, transkript ve dil sertifikası sunmanız gerekir. Asgari GPA genellikle 2.5–3.0 bandındadır. IAESTE ve AIESEC gibi öğrenci örgütleri ise çevrimiçi başvuru, mülakat ve eşleştirme süreciyle işler. Tüm programlarda ortak unsur: başvuru öncesi hazırlanmış bir CV, motivasyon mektubu ve yetkinlik kanıtı.',

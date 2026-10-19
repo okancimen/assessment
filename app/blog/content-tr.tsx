@@ -3958,19 +3958,19 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
   'international-internship-programs-tr': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        Türkiye'de "staj" kelimesi arama motorlarında her yıl milyonlarca kez sorgulanıyor. Ancak son dönemde tabloda belirgin bir kayma var: aramaların giderek artan bir kısmı ulusal programların değil, <strong>uluslararası staj programlarının</strong> peşinde. Bu değişim tesadüf değil — iş piyasasının globalleşmesi, üniversite kabul kriterlerinin sertleşmesi ve CV'de "yurt dışı deneyim" satırının yarattığı somut avantaj bu ilgiyi besliyor.
+        Türkiye'de "staj" kelimesi arama motorlarında her yıl milyonlarca kez sorgulanıyor. Ancak son dönemde tabloda belirgin bir kayma var: aramaların giderek artan bir kısmı ulusal programların değil, <strong>yurtdışı staj</strong> fırsatlarının peşinde. Bu değişim tesadüf değil — iş piyasasının globalleşmesi, üniversite kabul kriterlerinin sertleşmesi ve CV'de "yurtdışı staj deneyimi" satırının yarattığı somut avantaj bu ilgiyi besliyor.
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Bu rehber, Türk lise ve üniversite öğrencilerine yönelik olarak 2026 yılı itibarıyla mevcut uluslararası staj seçeneklerini, Erasmus+ başvuru sürecini, lise öğrencilerine açık yolları ve — sıklıkla göz ardı edilen — bir değerlendirme sınavının başvuru dosyasına kattığı somut avantajı ele alıyor.
+        Bu rehber, Türk lise ve üniversite öğrencilerine yönelik olarak 2026 yılı itibarıyla mevcut yurtdışı staj seçeneklerini, Erasmus+ başvuru sürecini, lise öğrencilerine açık yolları ve — sıklıkla göz ardı edilen — bir değerlendirme sınavının başvuru dosyasına kattığı somut avantajı ele alıyor.
       </p>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Uluslararası staj programı nedir</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yurtdışı staj nedir?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Uluslararası staj, öğrencinin kendi ülkesinin dışındaki bir kuruluşta — fiziksel olarak veya uzaktan — yapılandırılmış mesleki deneyim edindiği programdır. Ulusal stajdan temel farkları şunlardır: çalışma dili genellikle İngilizcedir, değerlendirme kriterleri uluslararası standartlara göre belirlenir ve elde edilen referansın küresel tanınırlığı vardır.
+          Yurtdışı staj (uluslararası staj), öğrencinin kendi ülkesinin dışındaki bir kuruluşta — fiziksel olarak veya uzaktan — yapılandırılmış mesleki deneyim edindiği programdır. Yurt içi stajdan temel farkları şunlardır: çalışma dili genellikle İngilizcedir, değerlendirme kriterleri uluslararası standartlara göre belirlenir ve elde edilen referansın küresel tanınırlığı vardır.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          2026 itibarıyla Türk öğrencilere açık başlıca uluslararası staj kanalları şunlardır:
+          2026 itibarıyla Türk öğrencilere açık başlıca yurtdışı staj kanalları şunlardır:
         </p>
         <ul className="space-y-4 mb-6">
           <Check><strong>Erasmus+ KA131</strong> — AB üyesi veya ortak ülkelerdeki şirket ve kurumlarda 2–12 aylık ücretli staj. Türkiye'deki üniversiteler Erasmus Beyannamesi kapsamında bu programdan yararlanabiliyor. Burs katkısı ülkeye ve süriye göre değişmekle birlikte ortalama aylık 300–600 € bandındadır.</Check>
@@ -4054,7 +4054,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Uluslararası stajda CV ve motivasyon mektubu</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yurtdışı staj başvurusunda CV ve motivasyon mektubu</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Uluslararası başvurularda Türkiye'deki ulusal başvurulardan farklılaşan iki belge var: CV formatı ve motivasyon mektubunun yapısı.
         </p>
