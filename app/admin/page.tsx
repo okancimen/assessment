@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
 import DateRangePicker from '@/components/admin/DateRangePicker'
 import UsersTable from '@/components/admin/UsersTable'
+import AdminTabs from '@/components/admin/AdminTabs'
 import { AdminGrowthChart, AdminAssessmentsChart, AdminFunnelChart } from '@/components/admin/AdminCharts'
 import type { DailyPoint } from '@/components/admin/GrowthLineChart'
 
@@ -300,6 +301,8 @@ export default async function AdminPage({
         </Suspense>
       </div>
 
+      <AdminTabs />
+
       {/* Metrics strip */}
       <div className="bg-white rounded-xl border overflow-hidden" style={{ borderColor: '#E2E6EF' }}>
         <div className="grid grid-cols-2 sm:grid-cols-4">
@@ -386,16 +389,6 @@ export default async function AdminPage({
         <UsersTable key={`reg-${from}-${to}`} users={registeredUsers} />
       </div>
 
-      {/* Active users table */}
-      <div className="bg-white rounded-xl border overflow-hidden" style={{ borderColor: '#E2E6EF' }}>
-        <div className="px-6 py-5 border-b" style={{ borderColor: '#E2E6EF' }}>
-          <h2 className="text-sm font-semibold" style={{ color: '#0F172A' }}>Active users</h2>
-          <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>
-            {activeUsers.length.toLocaleString()} users started an assessment in {periodLabel} · any signup date
-          </p>
-        </div>
-        <UsersTable key={`active-${from}-${to}`} users={activeUsers} emptyMessage="No assessments started in this period" />
-      </div>
 
     </main>
   )

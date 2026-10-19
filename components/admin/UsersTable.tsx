@@ -9,6 +9,7 @@ export interface AdminUser {
   email: string
   full_name: string | null
   created_at: string
+  last_active_at?: string
   children: number
   completed: number
   assessmentTypes: string[]
@@ -38,6 +39,7 @@ export default function UsersTable({ users: initialUsers, emptyMessage = 'No use
   const [query, setQuery] = useState('')
   const [confirmId, setConfirmId] = useState<string | null>(null)
   const [deletingId, setDeletingId] = useState<string | null>(null)
+  const showLastActive = initialUsers.some((u) => u.last_active_at != null)
 
   const filtered = query.trim()
     ? users.filter((u) =>
@@ -82,7 +84,7 @@ export default function UsersTable({ users: initialUsers, emptyMessage = 'No use
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b" style={{ borderColor: '#E2E6EF' }}>
-              {['User', 'Registered', 'Location', 'Assessment types', 'Children', 'Completed', ''].map((h, i) => (
+              {['User', showLastActive ? 'Last active' : 'Registered', 'Location', 'Assessment types', 'Children', 'Completed', ''].map((h, i) => (
                 <th
                   key={i}
                   className="text-left px-5 py-3 text-xs font-medium whitespace-nowrap"
@@ -115,7 +117,8 @@ export default function UsersTable({ users: initialUsers, emptyMessage = 'No use
                   </div>
                 </td>
                 <td className="px-5 py-3.5 text-xs whitespace-nowrap" style={{ color: '#64748B' }}>
-                  {new Date(u.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                  {new Date(showLastActive && u.last_active_at ? u.last_active_at : u.created_at)
+                    .toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
                 </td>
                 <td className="px-5 py-3.5 text-xs whitespace-nowrap" style={{ color: '#64748B' }}>
                   {u.location?.city && u.location?.country

@@ -2,10 +2,11 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { LayoutDashboard, GraduationCap, Briefcase, ClipboardList } from 'lucide-react'
+import { LayoutDashboard, GraduationCap, Briefcase, ClipboardList, Users } from 'lucide-react'
 
 const NAV = [
   { href: '/admin',            label: 'Dashboard',         icon: LayoutDashboard, exact: true  },
+  { href: '/admin/active',     label: 'Active users',      icon: Users,           exact: false },
   { href: '/admin/guests',     label: 'Guest assessments', icon: ClipboardList,   exact: false },
   { href: '/admin/cohorts',    label: 'Cohorts',           icon: GraduationCap,   exact: false },
   { href: '/admin/internship', label: 'Internship',        icon: Briefcase,       exact: false },
