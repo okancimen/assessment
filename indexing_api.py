@@ -28,6 +28,7 @@ DAILY_LIMIT = 200
 
 URLS_TO_SUBMIT = [
     # ── English (EN) ──────────────────────────────────────────────────────────
+    f"{BASE_URL}/blog/dubai-high-school-gcse-ib-guide",
     f"{BASE_URL}/blog/early-internship-child-development-career",
     f"{BASE_URL}/blog/high-school-internship-benefits-university",
     f"{BASE_URL}/blog/business-work-experience-high-school-uk",
