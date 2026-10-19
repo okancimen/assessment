@@ -285,16 +285,16 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'a-level-programlari-nedir',
-    title: 'A Level Programları Nedir? İngiltere\'de Lise Son Sınıf Rehberi',
-    shortTitle: 'A Level Nedir? Dersler, GCSE Farkı ve Üniversite',
+    title: 'A Level Programları Nedir? GCSE Farkı, Ders Seçimi ve Türk Öğrenciler İçin Rehber',
+    shortTitle: 'A Level Programları Nedir? GCSE, Üniversite ve Türkiye Denkliği',
     description:
-      'A Level nedir? İngiltere\'de 16–18 yaş için iki yıllık üniversite hazırlık programı: ders seçimi, GCSE ve IB farkları, Türk öğrenciler için başvuru.',
+      'A Level nedir, hangi programlar var? İngiltere\'de 16–18 yaş için üniversite hazırlık programı: GCSE farkı, ders seçimi, puan sistemi ve Türkiye YÖK denkliği.',
     tldr: 'A-Level, İngiltere\'de 16–18 yaş arası öğrencilerin üniversite öncesinde aldığı iki yıllık bir yeterlilik programıdır. Öğrenciler tipik olarak 3 veya 4 ders seçer; her ders bağımsız sınav ve değerlendirmelerle belirlenir. Önde gelen sınav kurulları Cambridge, Edexcel ve OCR\'dır.',
 
     date: '2026-07-20',
-    dateModified: '2026-09-24',
+    dateModified: '2026-10-20',
     readTime: '10 dk okuma',
-    tags: ['A Level', 'İngiltere Eğitim Sistemi', 'Üniversite Kabulü', 'Kariyer Gelişimi', 'İş Deneyimi'],
+    tags: ['A Level', 'İngiltere Eğitim Sistemi', 'Üniversite Kabulü', 'Kariyer Gelişimi', 'İş Deneyimi', 'A Level Programları'],
     faqs: [
       {
         q: 'A Level ne zaman alınır ve kaç ders seçilmeli?',
@@ -315,6 +315,18 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       {
         q: 'A Level öğrencileri staj yapabilir mi?',
         a: 'Evet — ve bunu yapanlar üniversite başvurularında ciddi bir avantaj kazanıyor. A Level yılları (16–18 yaş) çoğu büyük şirketin Bahar Insight haftaları ve yaz staj programlarına uygunluk yaşıdır. Kişisel beyanda A Level derslerini gerçek iş deneyimiyle ilişkilendirmek, kabul ekiplerinin değer verdiği somut kanıt sağlar.',
+      },
+      {
+        q: 'A Level puan sistemi nasıl çalışır?',
+        a: 'A Level notları A*\'dan E\'ye kadar sıralanır: A* (en yüksek), A, B, C, D, E (geçer) ve U (geçemedi). Her dersin puanı ayrı değerlendirilir; final puanının büyük bölümü (genellikle %70–100) Mayıs–Haziran\'daki yazılı sınavlardan gelir. Bazı derslerde kurs içi değerlendirme (coursework) de katkıda bulunur. UCAS üniversite başvuru sisteminde A* = 56, A = 48, B = 40, C = 32, D = 24, E = 16 puan olarak hesaplanır.',
+      },
+      {
+        q: 'A Level Türkiye\'de geçerli mi, YÖK denkliği alınabilir mi?',
+        a: 'Evet, A Level diploması Türkiye\'de YÖK tarafından tanınmaktadır. En az 3 A Level dersinde C veya üzeri not alan öğrenciler YÖK denklik belgesi başvurusu yapabilir. Denklik belgesiyle Türk üniversitelerine ÖSYM sınavı yerine yurt dışı öğrenci kontenjanlarından başvurulabilir; bazı üniversiteler ek olarak YÖS veya SAT skoru talep edebilir. Denklik işlemleri YÖK\'ün resmi denklik portalı üzerinden yürütülür.',
+      },
+      {
+        q: 'A Level programları hangi okullarda var?',
+        a: 'A Level programları ağırlıklı olarak üç okul türünde sunulur: (1) İngiltere, Galler ve Kuzey İrlanda\'daki devlet ve özel sixth form okulları ile sixth form kolejleri, (2) Dubai, Singapur, Malezya ve Türkiye\'deki uluslararası özel okullar (Cambridge International veya Edexcel lisanslı), (3) online Cambridge uluslararası okul platformları. Türkiye\'de İstanbul, Ankara ve İzmir\'deki bir kısım uluslararası okul Cambridge A Level programı sunmaktadır. Hangi sınav kurulunun (Cambridge, Edexcel, OCR) kullanıldığını başvuru öncesinde doğrulamak önerilir.',
       },
     ],
     cta: {
@@ -814,15 +826,15 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'staj-defteri-nasil-doldurulur',
-    title: 'Staj Defteri Nereden Alınır, Nedir ve Nasıl Doldurulur?',
-    shortTitle: 'Staj Defteri Nereden Alınır? Fakülte, Kırtasiye veya E-Staj',
-    description: 'Staj defterini sekreteryadan, kırtasiyeden veya e-staj platformundan temin edebilirsin. Nedir, nasıl doldurulur, ne zaman teslim edilir — adım adım rehber.',
+    title: 'Staj Defteri Nedir, Nereden Alınır, Kim İmzalar? Tam Rehber',
+    shortTitle: 'Staj Defteri: Nereden Alınır, Kim İmzalar, Ne Zaman Teslim?',
+    description: 'Staj defteri nereden alınır, kim imzalar, ne zaman teslim edilir, spiral olur mu, paralı mı? Lise ve üniversite öğrencileri için tüm sorulara tek sayfada yanıt.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
-    dateModified: '2026-10-09',
+    dateModified: '2026-10-20',
     readTime: '8 dk okuma',
-    tags: ['Staj', 'Staj Defteri', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi'],
+    tags: ['Staj', 'Staj Defteri', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi', 'Lise Staj'],
     faqs: [
       { q: 'Staj dalı ne demek?', a: 'Staj dalı, staj defterinin veya resmi başvuru formunun "staj alanı / dalı" kısmında belirtilen, stajın yapıldığı mesleki alan veya uzmanlık branşıdır. Örneğin muhasebe, bilişim, elektrik, turizm ya da pazarlama gibi. Meslek liselerinde staj dalı öğrencinin okul programına bağlıdır; üniversite stajlarında ise bölüm müfredatıyla uyumlu bir dal seçilir. Staj defterine yazarken okulun veya üniversitenin belirlediği resmi dal adı kullanılmalıdır.' },
       { q: 'Staj defteri zorunlu mu?', a: 'Üniversite zorunlu stajlarında evet, zorunludur. Staj defteri olmadan zorunlu staj tamamlanmış sayılmaz ve not verilmez. Lise gönüllü stajlarında yasal bir zorunluluk yoktur ancak tutulması tavsiye edilir.' },
@@ -830,6 +842,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Staj defteri kaç günde bir doldurulur?', a: 'Staj defteri her çalışma günü doldurulur. Günlük notların detaylı olması beklenir: sabah ne yapıldı, öğrenilen yeni bilgi veya beceri, kimlerle çalışıldı. Hafta sonu ve resmi tatil günlerine ait bölüm bırakılmaz.' },
       { q: 'Gönüllü stajda staj defteri doldurulur mu?', a: 'Yasal olarak zorunlu değildir. Ancak gönüllü stajda da bir staj defteri tutmak, deneyimi belgelemek ve ileride üniversite veya iş başvurularında kanıt sunmak açısından büyük avantaj sağlar. Format resmi olmak zorunda değildir; günlük bir çalışma günlüğü yeterlidir.' },
       { q: 'Staj defteri ne zaman teslim edilir?', a: 'Üniversite zorunlu stajlarında teslim tarihi genellikle staj bitiminden 2–4 hafta sonrasıdır. Birçok fakültede ekim sonu veya güz dönemi başı teslimi geçerlidir. Kesin tarih bölüm staj koordinatöründen öğrenilmelidir; geç teslim notu düşürebilir ya da stajın geçersiz sayılmasına yol açabilir.' },
+      { q: 'Staj defteri kim imzalar?', a: 'Staj defteri üç kişi tarafından imzalanır: (1) öğrencinin kendisi — her günlük kaydı öğrenci imzalar, (2) staj yapılan kurumun sorumlu amiri ya da insan kaynakları yetkilisi — genellikle her hafta veya staj sonunda onaylar, (3) okul staj koordinatörü ya da danışman öğretmen — defteri teslim alırken imzalar. Kurum mührü de genellikle beklenir; imzasız veya mühürsüz defterler kabul edilmeyebilir.' },
+      { q: 'Staj defteri spiral olur mu?', a: 'Evet, spiral ciltli staj defteri kullanılabilir; ancak okulun belirlediği formata uymak zorunludur. Bazı fakülteler ve meslek liseleri yalnızca kendi bastırdıkları özel format defteri kabul eder — spiral, ciltli veya dosya formatı fark etmeksizin. Başlamadan önce bölüm staj koordinatöründen veya okul sekreterliğinden kabul edilen format doğrulanmalıdır.' },
+      { q: 'Staj defteri paralı mı, ücretsiz temin edilebilir mi?', a: 'Üniversitelerin çoğunda staj defteri bölüm sekreterliğinden ücretsiz veya çok düşük maliyetle (5–20 TL) temin edilir. Meslek liselerinde ise okul genellikle defteri ücretsiz dağıtır. Kırtasiyelerden satın alınan genel formatlı defterler ise 20–60 TL arasında değişebilir. Dijital (e-staj) sistemleri kullanan okullarda ek bir ücret yoktur.' },
+      { q: 'Staj defterinde daksil (düzeltici) kullanılır mı?', a: 'Hayır. Resmi staj defterlerinde daksil, karalama veya silinti kabul edilmez. Yanlış yazılan bir satırın üzeri tek çizgiyle kapatılır ve yanına ya da altına doğrusu yazılır; ardından imza veya paraf atılır. Bu kural, belgenin resmi niteliğini korumak içindir. Daksil kullanılmış sayfalar staj komisyonu tarafından geçersiz sayılabilir.' },
+      { q: 'Staj zarfı nereden alınır?', a: 'Staj zarfı, tamamlanan staj defterini ve ilgili belgeleri (staj formu, sigorta belgesi, not çizelgesi) okula teslim etmek için kullanılan kapalı zarftır. Fakülte veya meslek lisesi sekreterliğinden ücretsiz alınabilir. Bazı okullarda staj zarfı yerine klasör veya dosya teslimi istenmektedir; önceden ilgili birimden sorulmak en sağlıklı yoldur.' },
+      { q: 'Staj fişi nedir?', a: 'Staj fişi, stajyerin kurumda hangi günlerde, kaç saat çalıştığını gösteren ve staj sorumlusu tarafından imzalanan resmi katılım belgesidir. Bazı okullarda devam çizelgesi veya devam formu olarak da adlandırılır. Staj defteriyle birlikte teslim edilmesi zorunludur; eksik ya da imzasız staj fişi stajın tamamlanmış sayılmamasına yol açabilir.' },
+      { q: 'Staj devresi ne demek?', a: 'Staj devresi, özellikle meslek liselerinde kullanılan bir terimdir ve stajın yapıldığı zaman dilimini ifade eder. Örneğin yaz devresi (Haziran–Ağustos) veya güz devresi (Ekim–Ocak) gibi. Staj defterinin kapağında ya da ilgili bölümünde stajın hangi devrede yapıldığı belirtilir. Üniversite stajlarında aynı kavram için genellikle "staj dönemi" ifadesi kullanılır.' },
     ],
     cta: {
       heading: 'Staja hazır olduğundan emin misin?',
@@ -981,16 +1000,16 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'uluslararasi-staj-programlari',
     contentSlug: 'international-internship-programs-tr',
-    title: 'Uluslararası Staj Programları: Türk Lise Öğrencileri için 2026 Rehberi',
-    shortTitle: 'Uluslararası Staj Programları Rehberi',
+    title: 'Uluslararası Staj Programları 2026: Erasmus+, AIESEC, IAESTE — Türk Öğrenciler İçin Rehber',
+    shortTitle: 'Uluslararası Staj Programları 2026: Erasmus+, AIESEC ve Başvuru',
     description:
-      '2026\'da Türk lise ve üniversite öğrencileri için yurt dışı staj programları: Erasmus+ başvurusu, gerekli belgeler ve değerlendirme sınavının önemi.',
+      'Uluslararası staj programları 2026: Erasmus+ hibeleri, AIESEC, IAESTE — başvuru şartları, gerekli belgeler ve Türk öğrenciler için adım adım rehber.',
     tldr: 'Uluslararası staj programları için başlıca fırsatlar: AIESEC (öğrenci liderliğinde küresel staj değişimi), Erasmus+ (Avrupa çalışma yerleştirme hibeleri), IAESTE (fen ve mühendislikte uluslararası değişim), Microsoft TEALS, Google STEP ve Amazon Future Engineer gibi çok uluslu şirket programları. Başvurular genellikle 6–12 ay öncesinden yapılır.',
 
     date: '2026-09-21',
-    dateModified: '2026-09-22',
+    dateModified: '2026-10-20',
     readTime: '11 dk okuma',
-    tags: ['Uluslararası Staj', 'Erasmus', 'Staj Başvurusu', 'Yurt Dışı Staj', 'Kariyer Gelişimi'],
+    tags: ['Uluslararası Staj', 'Erasmus', 'Staj Başvurusu', 'Yurt Dışı Staj', 'Kariyer Gelişimi', 'Uluslararası Staj Programı'],
     faqs: [
       {
         q: 'Uluslararası staj başvurusu nasıl yapılır?',
@@ -1303,15 +1322,15 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'zeki-cocuk-neden-basarisiz-olur',
     contentSlug: 'smart-child-bad-grades',
-    title: 'Zeki Çocuk Neden Başarısız Olur? Ebeveyn Rehberi',
-    shortTitle: 'Zeki Çocuk Neden Başarısız Olur?',
+    title: 'Zeki Öğrenciler Neden Başarısız Olur? Bilişsel Profil ve Notlar Arasındaki Uçurum',
+    shortTitle: 'Zeki Öğrenciler Neden Başarısız Olur? Ebeveyn Rehberi',
     description:
-      'Çocuğunuz zeki ama notları düşük mü? Okul notları bilişsel yeteneği ölçmez. Dört bilişsel alan ve gerçek akademik potansiyel hakkında bilmeniz gerekenler.',
+      'Zeki çocuk ya da öğrenci neden başarısız olur? Okul notları bilişsel yeteneği ölçmez. Çalışan bellek, akışkan zeka ve gerçek potansiyel hakkında bilmeniz gerekenler.',
     tldr: 'Zeki çocuklar, bilişsel profilleri ile okulun performansı ölçme biçimi arasındaki uyumsuzluk nedeniyle kötü notlar alır. Okul notları ağırlıklı olarak kristalize zekayı ölçer — ezberlenmiş ve yeniden üretilmiş bilgiyi — oysa pek çok parlak çocuk olağanüstü akıcı zekaya sahiptir: standart testlerin nadiren yakaladığı mantık yürütme, örüntü bulma ve yeni problemleri çözme yeteneği.',
     date: '2026-10-01',
-    dateModified: '2026-10-01',
+    dateModified: '2026-10-20',
     readTime: '9 dk okuma',
-    tags: ['Zeki Çocuk Başarısızlık', 'Çocuk Potansiyeli', 'Bilişsel Değerlendirme', 'Üstün Zekâ', 'Akademik Performans', 'Çalışma Belleği', 'Veli Rehberi', 'Okul Başarısı'],
+    tags: ['Zeki Çocuk Başarısızlık', 'Çocuk Potansiyeli', 'Bilişsel Değerlendirme', 'Üstün Zekâ', 'Akademik Performans', 'Çalışma Belleği', 'Veli Rehberi', 'Okul Başarısı', 'Zeki Öğrenci'],
     faqs: [
       {
         q: 'Zeki çocuk neden kötü notlar alır?',
@@ -1352,6 +1371,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       {
         q: 'Adaptif bilişsel test, okul sınavından nasıl farklıdır?',
         a: 'Okul sınavı müfredat bilgisini test eder — öğrencinin öğretilenleri baskı altında ne kadar hatırlayabildiğini. Adaptif bilişsel test, altta yatan muhakeme yeteneğini ölçer — çocuğun daha önce hiç görmediği yeni problemleri çözme kapasitesini. Adaptif format, her sorunun zorluğunu önceki cevaplara göre gerçek zamanlı olarak ayarlar ve not yerine kesin bir yetenek tahmini üretir.',
+      },
+      {
+        q: 'Zeki öğrenciler neden başarısız olur?',
+        a: 'Zeki öğrenciler okulda başarısız olduğunda genellikle dört ana nedenden biri söz konusudur: (1) Akışkan zeka ile okul müfredatı arasındaki uyumsuzluk — öğrenci yeni problemleri hızla çözer ama müfredatı ezberleyemez. (2) Çalışma belleği zayıflığı — çok adımlı sorularda ara bilgiyi tutamama. (3) Sıkılma kaynaklı ilgisizlik — müfredat hız veya derinlik açısından öğrencinin kapasitesinin altında kalıyor. (4) Sınav kaygısı — bilgiye sahip olmak ama baskı altında aktaramamak. Bu nedenlerden birini tespit etmek, genel "daha çok çalış" tavsiyesinden çok daha etkili bir müdahale sağlar.',
       },
     ],
     cta: {
