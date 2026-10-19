@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import type { BlogPostMeta } from './posts'
 import { tagToSlug } from './tag-utils'
@@ -13,8 +14,19 @@ export default function BlogPostCard({ post }: { post: BlogPostMeta }) {
       tabIndex={0}
       onClick={() => router.push(`/blog/${post.slug}`)}
       onKeyDown={(e) => e.key === 'Enter' && router.push(`/blog/${post.slug}`)}
-      className="block border border-gray-100 rounded-2xl p-6 sm:p-8 hover:border-indigo-200 hover:shadow-sm transition-all cursor-pointer"
+      className="block border border-gray-100 rounded-2xl overflow-hidden hover:border-indigo-200 hover:shadow-sm transition-all cursor-pointer"
     >
+      <div className="relative aspect-[19/10]">
+        <Image
+          src={`/blog/${post.slug}/opengraph-image`}
+          alt={post.shortTitle}
+          fill
+          className="object-cover"
+          sizes="(min-width: 896px) 832px, 100vw"
+          loading="lazy"
+        />
+      </div>
+      <div className="p-6 sm:p-8">
       <div className="flex items-center gap-3 text-xs text-gray-500 mb-3">
         <time dateTime={post.date}>
           {new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
@@ -42,6 +54,7 @@ export default function BlogPostCard({ post }: { post: BlogPostMeta }) {
             </span>
           )
         })}
+      </div>
       </div>
     </div>
   )
