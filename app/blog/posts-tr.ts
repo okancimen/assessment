@@ -579,7 +579,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     tldr: 'PISA 2025, OECD tarihinde kaydedilen en düşük matematik, okuma ve fen bilimleri ortalama puanlarını ortaya koydu. PISA 2025 bulgularına göre yapay zekayı ödev süreçlerinde kullanan öğrenciler kullanmayanlara kıyasla fen bilimlerinde yaklaşık 20 puan daha düşük skor aldı; bu fark yaklaşık bir yıllık okul eğitimine denk geliyor.',
 
     date: '2026-09-10',
-    dateModified: '2026-09-10',
+    dateModified: '2026-10-20',
     readTime: '12 dakika okuma',
     tags: ['PISA', 'Küresel Eğitim', 'Akademik Değerlendirme', 'Matematik', 'Okuma'],
     faqs: [
@@ -648,14 +648,14 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'pisa-nedir-cocugunuz-nasil-hazirlanir',
-    title: 'PISA (Pısa) Nedir? Açılımı, Puanı ve Sınava Giriş — 2025 Rehberi',
-    shortTitle: 'PISA Nedir? Açılımı, Türkçe Karşılığı ve 2025 Puan Rehberi',
+    title: 'PISA (Pısa) Nedir? 2025–2026 Açılımı, Türkiye Sonuçları ve Hazırlık Rehberi',
+    shortTitle: 'PISA (Pısa) Nedir? 2026 Güncel: Açılımı, Türkiye Sonuçları ve Hazırlık',
     description:
-      'PISA (pısa) nedir, açılımı ne demek? OECD\'nin her 3 yılda bir 91 ülkede uyguladığı uluslararası sınav — Türkiye 2025 sonuçları, puan hesabı ve veli rehberi.',
-    tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2022\'de matematikte 453, okumada 440 ve fen bilimlerinde 452 puan alarak OECD ortalamasının altında kaldı.',
+      'PISA (pısa) nedir, açılımı ne demek? OECD\'nin her 3 yılda bir 91 ülkede uyguladığı uluslararası sınav — Türkiye 2025–2026 sonuçları, puan hesabı ve veli rehberi.',
+    tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2025\'te okumada OECD ortalamasını yakaladı; matematikte 463 ile OECD ortalaması (472) yakınında yer aldı.',
 
     date: '2026-09-14',
-    dateModified: '2026-10-09',
+    dateModified: '2026-10-20',
     readTime: '10 dk okuma',
     tags: ['PISA', 'Uluslararası Kıyaslama', 'Akademik Değerlendirme', 'Ebeveyn Rehberi'],
     faqs: [
@@ -669,6 +669,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'PISA\'ya hazırlanmak için evde ne yapılabilir?', a: 'PISA bir bilgi sınavı değil; edinilmiş bilgiyi gerçek yaşam problemlerine uygulama sınavıdır. Bu nedenle PISA\'ya en etkili hazırlık: günlük matematik problemleri çözmek (hesap makinesi olmadan), her gün düzenli okuma alışkanlığı oluşturmak, açık uçlu ve mantık gerektiren sorular üzerinde tartışmak ve standartlaştırılmış bir değerlendirme ile mevcut düzeyi tespit etmektir. Çocuğunuzun gerçek düzeyini bilmek, hangi alanlara odaklanmanız gerektiğini netleştirir.' },
       { q: 'PISA tarzı sorular ne demek?', a: 'PISA tarzı sorular, öğrencinin ezberden bilgi aktarması yerine bu bilgiyi gerçek yaşam bağlamına uygulamasını bekleyen sorulardır. Örneğin "6 × 7 = ?" yerine "Bir markette 6 adet ürün alan bir müşteri..." şeklinde kurgulanan alışveriş veya grafik yorumlama soruları. Bu format Türkiye\'nin ulusal sınavlarından (LGS/YKS) farklıdır; PISA\'da doğru cevap yanıtın nasıl gerekçelendirildiğine bağlıdır.' },
       { q: 'Çocuğumun PISA düzeyini ücretsiz nasıl ölçebilirim?', a: 'Eduentry, PISA ile aynı metodolojiye — madde tepki teorisi (IRT) — dayanan ücretsiz bir uyarlanabilir değerlendirme sunmaktadır. 6-17 yaş arası çocuklar matematik, İngilizce, sözel akıl yürütme ve sayısal akıl yürütme alanlarında test edilir ve ebeveynlere uluslararası kıyaslamalı bir yüzdelik dilim puanı iletilir. Kayıt gerekmez, sınav bir saatten kısa sürer.' },
+      { q: 'PISA başarısı nedir, ne anlama gelir?', a: 'PISA başarısı, bir ülkenin ya da öğrencinin PISA sınavında elde ettiği ortalama puana göre belirlenen uluslararası akademik performans düzeyidir. OECD ülkeleri için ortalama başarı puanı yaklaşık 472–476\'dır. Singapur (575), Japonya (536) ve Güney Kore (524) en yüksek başarı gösteren ülkelerdir. PISA başarısı yüksek olan ülkelerin iş gücü verimliliği ve bireysel kazanç düzeyleri de istatistiksel olarak daha yüksek çıkmaktadır.' },
+      { q: 'PISA okulu nedir?', a: '"PISA okulu" resmi bir terim değildir; ancak bazı bağlamlarda PISA sınavının uygulandığı okulları ifade etmek için kullanılır. PISA her ülkede belirli okullardan rastgele seçilen öğrenciler üzerinde uygulandığından, sınav bireysel okul başarısını değil ülke genelindeki eğitim sisteminin ortalama kalitesini ölçer. Bir okulun "PISA okulu" olarak seçilmesi, o okulun PISA örnekleminde yer alması anlamına gelir; özel bir statü ya da kalite belgesi değildir.' },
+      { q: 'PISA sonuçları ne zaman açıklanır?', a: 'PISA sonuçları, sınavın uygulandığı yılın sonunda veya takip eden yılın başında OECD tarafından kamuoyuyla paylaşılır. PISA 2025 sınavı Nisan–Haziran 2025\'te uygulandı; sonuçlar 2025 yılı sonunda açıklandı. Bu nedenle "PISA 2026 sonuçları" araması yapanlar büyük olasılıkla PISA 2025 verilerini arıyor — OECD, verileri analiz ederek yayımlamak için genellikle 6–9 ay bekler.' },
     ],
     cta: {
       heading: 'Çocuğunuzun PISA düzeyini ücretsiz ölçün',
@@ -918,7 +921,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     tldr: 'PISA, OECD\'nin her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uyguladığı bir değerlendirme programıdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan civarındadır. PISA\'nın ölçtüğü beceriler — sayısal muhakeme, okuduğunu anlama ve problem çözme — günümüz iş dünyasının en çok aradığı yetkinliklerle örtüşüyor.',
 
     date: '2026-09-21',
-    dateModified: '2026-09-21',
+    dateModified: '2026-10-20',
     readTime: '11 dk okuma',
     tags: ['PISA', 'Kariyer Gelişimi', 'Akademik Değerlendirme', 'Staj', 'Ebeveyn Rehberi'],
     faqs: [
@@ -1024,14 +1027,14 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'cocugunuzun-guclu-zayif-yonleri-liseye-hazirlik',
     contentSlug: 'understanding-child-strengths-weaknesses-high-school',
-    title: 'Çocuğun Güçlü ve Zayıf Yönleri: Lise Hazırlığı İçin Bilişsel Profil Rehberi',
-    shortTitle: 'Çocuğun Güçlü ve Zayıf Yönleri Nasıl Belirlenir?',
+    title: 'Çocuğun Güçlü ve Zayıf Yönleri Nelerdir? Lise Hazırlığı İçin Bilişsel Profil Rehberi',
+    shortTitle: 'Çocuğun Güçlü ve Zayıf Yönleri Nelerdir? Nasıl Belirlenir?',
     description:
-      'Çocuğunuzun güçlü ve zayıf yönlerini okul notları değil standart bilişsel değerlendirme ortaya çıkarır. Sözel, sayısal ve uzamsal alanlarda akademik profil çıkarın.',
+      'Çocuğun güçlü ve zayıf yönleri ücretsiz adaptif testle belirlenir — okul notları değil. Sözel, sayısal ve uzamsal alanlarda lise hazırlığı için bilişsel profil.',
     tldr: 'Okul notları, öğrencilerin sınıf içindeki göreli başarısını ölçer — ancak altta yatan bilişsel profili ortaya koymaz. Sözel akıl yürütme, sayısal yetenek, çalışan bellek ve uzamsal beceri alanlarındaki güçlü ve zayıf yönleri lise öncesinde belirlemek, ebeveynlere ve öğretmenlere belirsiz bir karne yerine somut bir yol haritası sunar.',
 
     date: '2026-09-27',
-    dateModified: '2026-10-09',
+    dateModified: '2026-10-20',
     readTime: '12 dk okuma',
     tags: ['Akademik Değerlendirme', 'Çocuk Gelişimi', 'Lise Hazırlığı', 'Bilişsel Profil'],
     faqs: [
@@ -1055,6 +1058,14 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
         q: 'Evde bilişsel profili belirlemek için ne yapılabilir?',
         a: 'Gözlem, birincil araçtır. Sözel güç: hikâye anlatımında zenginlik, kelime oyunlarında ustalık, dil oyunlarına ilgi. Sayısal güç: zihinsel hesaplama hızı, kalıp fark etme, strateji oyunlarından zevk alma. Uzamsal güç: harita okuma, üç boyutlu zihinsel döndürme, mekanik sistemleri anlama. Çalışan bellek: çok adımlı talimatları takip etme, zihinsel hazır bulunuşluk. Resmi değerlendirme bu gözlemleri onaylar ve ölçer.',
       },
+      {
+        q: 'Bir çocuğun zayıf yönleri nelerdir, nasıl anlaşılır?',
+        a: 'Akademik zayıf yönler dört alanda kümelenir: sözel akıl yürütme (okuma anlama güçlüğü, kelime dağarcığı sınırlılığı), sayısal akıl yürütme (çok adımlı problemlerde kaybolma, kalıp görememe), uzamsal düşünme (geometri, grafik okuma veya üç boyutlu görselleştirmede zorlanma) ve çalışan bellek (karmaşık yönergeleri takip edememe, birden fazla bilgiyi aynı anda tutamama). Adaptif değerlendirme, bu alanların her birini bağımsız ölçerek hangi alanda desteğe ihtiyaç olduğunu net biçimde ortaya koyar.',
+      },
+      {
+        q: 'Güçlü ve zayıf yönler örnek olarak neler sayılabilir?',
+        a: 'Güçlü yön örnekleri: kelimelerle çabuk anlam kurma (sözel güç), sayılarla örüntü görme (sayısal güç), zihinsel şekil döndürme (uzamsal güç), uzun talimatları takip edebilme (çalışan bellek). Zayıf yön örnekleri: uzun paragrafları anlayamama, çarpım tablosunu hata yapmadan uygulayamama, geometrik şekil sorularında hata oranının yüksek olması. Bu örnekler tanımlayıcıdır; standartlaştırılmış bir değerlendirme bu örüntüleri nesnel puana dönüştürür.',
+      },
     ],
     cta: {
       heading: 'Çocuğunuzun bilişsel profilini keşfedin — ücretsiz',
@@ -1066,12 +1077,12 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'yapay-zekanin-alamayacagi-65-meslek',
     contentSlug: '65-jobs-ai-cannot-automate',
-    title: 'Yapay Zekanın Alamayacağı 65 Meslek — Her Ebeveynin Bilmesi Gerekenler',
-    shortTitle: 'Yapay Zekanın Alamayacağı 65 Meslek',
-    description: 'Dünya Ekonomik Forumu\'na göre 2030\'a kadar işlerin %40\'ı yapay zekadan etkilenecek. Otomasyon riski olmayan 65 meslek ve çocuğunuz için anlamı.',
+    title: 'Yapay Zekanın Alamayacağı Meslekler: %0 Otomasyon Riski Taşıyan 65 Kariyer',
+    shortTitle: 'Yapay Zekanın Alamayacağı Meslekler: 65 Kariyer Tam Liste',
+    description: '%0 otomasyon riski taşıyan 65 mesleğin tam listesi: sağlık, yaratıcı alanlar ve mühendislik. Dünya Ekonomik Forumu verileri — çocuğunuz için YKS\'de hangi bölüm, hangi kariyer.',
     tldr: 'ABD Çalışma İstatistikleri Bürosu verileri ve otomasyon olasılığı analizine göre 65 meslek %0,0 otomasyon olasılığı taşıyor. Bu meslekler dört ortak özelliği paylaşıyor: duygusal zeka, ortamı okuma becerisi, yaratıcı çalışma ve yüksek günlük görev değişkenliği. Sağlık en büyük kategoriyi oluşturuyor; uzman hemşirelik 2034\'e kadar %40 büyümesi bekleniyor.',
     date: '2026-09-28',
-    dateModified: '2026-09-28',
+    dateModified: '2026-10-20',
     readTime: '11 dk okuma',
     tags: ['Geleceğin Meslekleri', 'Kariyer Planlaması', 'Yapay Zeka ve Eğitim', 'Çocuk Gelişimi'],
     faqs: [
@@ -1229,7 +1240,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description: 'Karne notları bilişsel potansiyeli göstermez. Ücretsiz adaptif testimiz bir saat içinde sözel, sayısal ve görsel-uzamsal yetenekleri ölçer.',
     tldr: 'Sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünmeyi bağımsız olarak ölçen ücretsiz adaptif test — bir saat içinde uluslararası yüzdelik dilim raporu. CAT ve IRT metodolojisiyle, CAT4 ve NWEA MAP ile aynı bilimsel temel.',
     date: '2026-10-01',
-    dateModified: '2026-10-01',
+    dateModified: '2026-10-20',
     readTime: '10 dk okuma',
     tags: ['Ücretsiz Akademik Test', 'Çocuk Güçlü Yönleri', 'Çocuk Zayıf Yönleri', 'Bilişsel Değerlendirme', 'Adaptif Test', 'Veli Rehberi', 'Çocuk Gelişimi'],
     faqs: [
@@ -1272,6 +1283,14 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       {
         q: 'Test raporu okul karnesinden hangi ek bilgileri verir?',
         a: 'Karneler, aynı sınıftaki akranlara göre not bazlı performansı gösterir. Bilişsel değerlendirme raporu karnenin asla gösteremediği üç şeyi sunar: (1) çocuğunuzun sadece sınıfına değil, uluslararası yaş grubuna göre nerede durduğunu; (2) her bilişsel alanın bağımsız gücünü — sözel ve uzamsal güçler birbirini bir ortalamada silerek yok etmez; (3) her alanın içinde bir sonraki adımda geliştirilecek spesifik alt becerileri.',
+      },
+      {
+        q: 'Güçlü yönlerim nelerdir, nasıl anlarım?',
+        a: 'Akademik güçlü yönlerinizi anlamanın en nesnel yolu, farklı bilişsel alanları bağımsız ölçen bir adaptif değerlendirmedir. Sözel akıl yürütmede yüksek puan, dil temelli derslerde ve yazılı anlatımda doğal bir avantajı işaret eder. Sayısal akıl yürütmede güç, matematik ve analitik problemlerde hız ve doğruluk anlamına gelir. Uzamsal güç ise görsel düşünme, mühendislik veya tasarım alanlarındaki potansiyeli gösterir. Ücretsiz test, her alanı uluslararası kıyaslamalı yüzdelik dilimiyle raporlar.',
+      },
+      {
+        q: 'Zayıf yönlerim nelerdir, nasıl geliştirebilirim?',
+        a: 'Akademik zayıf yönler, çocuğun diğer alanlara kıyasla görece daha az gelişmiş bilişsel alanlardır — mutlak bir başarısızlık değil, bir gelişim fırsatıdır. Sözel akıl yürütme zayıflığı düzenli okuma ve anlam temelli alıştırmalarla, sayısal zayıflık problem çözme pratiği ve soyut örüntü egzersizleriyle desteklenebilir. Adaptif test, zayıf yönü nedenini anlayarak değil, nerede olduğunu göstererek hedefli destek sağlamanıza olanak tanır.',
       },
     ],
     cta: {
@@ -1737,7 +1756,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       'PISA 2025: 2000\'den bu yana en düşük matematik, okuma ve fen puanları. Sonuçların uluslararası aileler için anlamı ve çocuğunuzun küresel konumunu nasıl ölçersiniz.',
     tldr: 'PISA 2025, programın başladığından bu yana en düşük OECD matematik ortalamasını kayıt altına aldı: matematik 470, okuma 474, fen 475. Birleşik Krallık matematik sıralamasında 27.\'ye, okuma sıralamasında 13.\'ye geriledi. Singapur, Japonya ve Güney Kore üç alanda da liderliği sürdürdü. OECD ülkelerinin büyük bölümünde pandemi sonrası toparlanma durdu.',
     date: '2026-10-07',
-    dateModified: '2026-10-07',
+    dateModified: '2026-10-20',
     readTime: '14 dk okuma',
     tags: ['PISA', 'Akademik Kıyaslama', 'Küresel Eğitim', 'Matematik', 'Okuma'],
     faqs: [
@@ -1956,14 +1975,14 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'cocugumun-guclu-yonleri-ve-akademik-basari',
     contentSlug: 'character-strengths-academic-success',
-    title: 'Çocuğumun Güçlü Yönleri ve Akademik Başarı: Araştırmaların Ortaya Koyduğu 5 Karakter Gücü',
-    shortTitle: 'Çocuğumun Güçlü Yönleri ve Akademik Başarı',
-    description: 'Ücretsiz VIA karakter güçleri analizi: 24 özellik ve 6 erdem. 5 güç — merak, öğrenme sevgisi, azim, öz denetim ve coşku — akademik başarıyı öngörüyor.',
+    title: 'VIA Karakter Güçleri Testi: Çocuğumun Güçlü Yönleri ve Akademik Başarı',
+    shortTitle: 'VIA Karakter Güçleri Testi: Çocuğun Güçlü Yönleri ve Akademik Başarı',
+    description: 'VIA karakter güçleri testi nedir? Ücretsiz, 24 özellik ve 6 erdem. 5 karakter gücü — merak, öğrenme sevgisi, azim, öz denetim, coşku — akademik başarıyı öngörüyor.',
     tldr: 'Okul notları sınıf ortalamasına göre başarıyı ölçer; ancak çocuğunuzun güçlü yönlerini ve potansiyelini tam olarak ortaya koymaz. Pozitif psikoloji araştırmaları, 5 VIA kişilik özelliğinin — öğrenme sevgisi, merak, azim, öz denetim ve coşku — akademik sonuçları en güvenilir biçimde öngördüğünü göstermektedir. Bu özellikler sabit değildir; ebeveyn değerlendirmeli bir testle ölçülebilir ve geliştirilebilir.',
     date: '2026-10-10',
-    dateModified: '2026-10-10',
+    dateModified: '2026-10-20',
     readTime: '9 dk okuma',
-    tags: ['Kişilik Özellikleri', 'Akademik Başarı', 'VIA Kişilik Özellikleri', 'Çocuk Gelişimi', 'Ebeveyn Rehberi', 'Kişilik Değerlendirmesi', 'Ücretsiz Çocuk Testi', 'Pozitif Psikoloji'],
+    tags: ['Kişilik Özellikleri', 'Akademik Başarı', 'VIA Kişilik Özellikleri', 'Çocuk Gelişimi', 'Ebeveyn Rehberi', 'Kişilik Değerlendirmesi', 'Ücretsiz Çocuk Testi', 'Pozitif Psikoloji', 'VIA Karakter Güçleri'],
     faqs: [
       {
         q: 'Çocuklarda akademik başarıyı en iyi öngören kişilik özelliği hangisidir?',
@@ -1988,6 +2007,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       {
         q: '6–17 yaş çocuklar için Türkçe ücretsiz karakter ve kişilik testi var mı?',
         a: "Evet. Eduentry'nin çocuk kişilik değerlendirmesi Türkçe olarak sunulmaktadır ve tamamen ücretsizdir. Pozitif psikolojinin altın standardı olan VIA modelinin 24 karakter özelliği ve 6 erdemini temel alır. 6–9, 10–13, 14–17 ve 18–20 yaş kademeleri için ayrı ayrı kalibre edilmiştir. Lise öğrencileri için karakter ve kişilik analizi ile üniversite hazırlık sürecinde güçlü yönlerin belirlenmesine de katkı sağlar.",
+      },
+      {
+        q: 'VIA karakter güçleri testi nedir, nasıl çalışır?',
+        a: "VIA (Values in Action) karakter güçleri testi, pozitif psikolog Martin Seligman ve Christopher Peterson tarafından geliştirilen, 24 karakter özelliğini 6 erdem kategorisinde ölçen bilimsel temelli bir değerlendirmedir. Altı erdem: Bilgelik, Cesaret, İnsanlık, Adalet, Ölçülülük ve Aşkınlık. Her özellik gözlemlenebilir davranışlara dayanır; IQ veya kişilik tipini değil, geliştirilmeye açık güçlü yönleri ölçer. Eduentry'nin çocuk versiyonu ebeveyn gözlem formatında uygulanır; yaklaşık 5–15 dakika sürer.",
       },
     ],
     cta: {
@@ -2037,6 +2060,50 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     cta: {
       heading: 'Dubai\'deki çocuğunuzun akademik seviyesini uluslararası standartlarla ölçün',
       body: 'Ücretsiz adaptif değerlendirme — herhangi bir müfredattan, herhangi bir ülkeden erişilebilir. Sözel, sayısal ve görsel-uzamsal alanlarda standardize edilmiş puan ve ayrıntılı rapor.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/akademik-degerlendirme',
+    },
+  },
+  {
+    slug: 'map-testi-nedir',
+    title: 'MAP Testi Nedir? NWEA MAP Ölçeği, Türkiye\'deki Yeri ve PISA ile Karşılaştırması',
+    shortTitle: 'MAP Testi Nedir? NWEA MAP Ölçeği ve PISA Karşılaştırması',
+    description:
+      'MAP testi (NWEA MAP Growth) nedir? RIT puanı nasıl okunur, PISA ve CAT4 ile farkı ne? Uluslararası okul öğrencisi aileleri için kapsamlı rehber.',
+    tldr: 'MAP (Measures of Academic Progress), NWEA\'nın geliştirdiği adaptif akademik değerlendirme sistemidir. RIT (Rasch Unit) puanlaması kullanır; her doğru yanıt bir sonraki soruyu zorlaştırır. 5 milyondan fazla öğrenciye normlanan sistem, öğrencinin gerçek öğrenme düzeyini sınıf ortalamasından bağımsız olarak ölçer. PISA ile aynı madde tepki teorisi (IRT) altyapısını paylaşır.',
+    date: '2026-10-20',
+    dateModified: '2026-10-20',
+    readTime: '9 dk okuma',
+    tags: ['MAP Testi', 'NWEA MAP', 'Akademik Değerlendirme', 'Uluslararası Okul', 'RIT Puanı', 'Adaptif Test', 'Ebeveyn Rehberi'],
+    faqs: [
+      {
+        q: 'MAP testi nedir?',
+        a: 'MAP (Measures of Academic Progress), NWEA (Northwest Evaluation Association) tarafından geliştirilen adaptif bir akademik değerlendirme sistemidir. Öncelikle ABD, Kanada ve uluslararası okullarda uygulanır. Matematik, okuma ve dil alanlarını ölçer; her soru bir önceki yanıta göre ayarlanır. Sonuç, çocuğun "gerçek öğrenme düzeyini" sınıf ortalamasına göre değil bireysel performans ölçeğine göre ortaya koyar.',
+      },
+      {
+        q: 'MAP testi RIT puanı nedir, nasıl okunur?',
+        a: 'RIT (Rasch Unit), MAP testinin puanlama ölçeğidir. Yaklaşık 100–300 arasında değişir; tipik ilkokul başlangıcı 150, ortaokul başlangıcı 200, lise mezuniyet hedefi 240 civarındadır. RIT ölçeği eşit aralıklıdır: 5. sınıfta 220 alan bir öğrenci ile 8. sınıfta 220 alan bir öğrenci aynı beceri düzeyindedir. Bu nedenle yıllar arasında gerçek öğrenme büyümesini takip etmek mümkün olur.',
+      },
+      {
+        q: 'MAP testi ile PISA arasındaki fark nedir?',
+        a: 'Her ikisi de madde tepki teorisi (IRT) kullanır ancak amaçları farklıdır. PISA, 15 yaşındaki öğrencileri ülke sistemleri arasında karşılaştırmak için her üç yılda bir yapılır; bireysel puan raporlanmaz. MAP ise yıl içinde birden fazla kez uygulanabilen bireysel büyüme takip aracıdır; hem öğrenciyi hem de öğretmeni gerçek zamanlı bilgilendirir. Bir öğrencinin PISA düzeyini anlamak için MAP puanı iyi bir başlangıç noktası sağlar.',
+      },
+      {
+        q: 'MAP testi Türkiye\'de hangi okullarda uygulanır?',
+        a: 'MAP testi Türkiye\'de çoğunlukla ABD veya uluslararası müfredat (IB, Amerikan sistemi) uygulayan özel uluslararası okullarda kullanılmaktadır. Devlet okulu müfredatına entegre edilmemiştir. Dubai, İngiltere, Kanada ve ABD\'deki Türk aileler çocuklarının MAP puanlarıyla karşılaşma olasılığı yüksektir. NWEA MAP\'e erişim okul lisansı gerektirir; bireysel kayıt yapılmaz.',
+      },
+      {
+        q: 'MAP testi yerine hangi ücretsiz alternatif kullanılabilir?',
+        a: 'Eduentry\'nin adaptif akademik değerlendirmesi, MAP ile aynı IRT altyapısını kullanır ve 6-17 yaş arası çocukları sözel akıl yürütme, sayısal akıl yürütme, matematik ve İngilizce alanlarında test eder. Puanlar PISA, CAT4 ve NWEA MAP ölçekleriyle uyumlu uluslararası normlara göre yüzdelik dilimlere dönüştürülür. Kayıt gerekmez, tamamen ücretsizdir ve bir saatten kısa sürer.',
+      },
+      {
+        q: 'MAP Growth ile MAP testi aynı şey mi?',
+        a: 'Evet. "MAP Growth" NWEA\'nın güncel ticari adıdır; "MAP testi" yaygın kullanılan kısaltmasıdır. İkisi de aynı ürünü ifade eder. NWEA ayrıca Reading Fluency (okuma akıcılığı), Skills Checklist ve MAP Accelerator gibi tamamlayıcı araçlar sunar; ancak "MAP testi" denildiğinde genellikle MAP Growth kastedilir.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun MAP düzeyini ücretsiz ölçün',
+      body: 'Eduentry\'nin adaptif değerlendirmesi MAP ile aynı IRT metodolojisini kullanır. 6-17 yaş için ücretsiz — sözel, sayısal ve İngilizce alanlarında uluslararası kıyaslamalı puan.',
       label: 'Ücretsiz değerlendirmeyi başlat',
       href: '/tr/akademik-degerlendirme',
     },

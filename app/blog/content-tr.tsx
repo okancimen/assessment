@@ -7283,6 +7283,124 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'map-testi-nedir': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Çocuğunuzun okulu MAP testi yaptırıyor ve siz RIT puanının ne anlama geldiğini anlamaya çalışıyorsunuz. Ya da uluslararası bir okula geçmeyi düşünüyorsunuz ve MAP, PISA, CAT4 arasındaki farkı merak ediyorsunuz. Her iki durumda da bu rehber doğru adres.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Testi Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP (Measures of Academic Progress), NWEA (Northwest Evaluation Association) tarafından geliştirilen adaptif bir akademik değerlendirme sistemidir. 1977&apos;den bu yana geliştirilen sistem, bugün dünya genelinde 10.000&apos;den fazla okulda, 12 milyon&apos;u aşkın öğrenciye uygulanmaktadır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          &ldquo;Adaptif&rdquo; kelimesi burada kritik: her soru bir önceki yanıta göre ayarlanır. Doğru yanıtladığınızda bir sonraki soru zorlaşır; yanlış yanıtladığınızda kolaylaşır. Sistem, sabit zorlukta 40 soruluk bir testten çok daha az soruyla çocuğun gerçek öğrenme düzeyini hassas biçimde belirler.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Growth üç temel alanı ölçer: <strong>Matematik</strong>, <strong>Okuma Okuryazarlığı</strong> ve <strong>Dil Kullanımı</strong>. Bazı okullarda fen bilgisi modülü de uygulanmaktadır. Yılda 2–3 kez yapıldığında öğrencinin büyüme hızını takip etmek mümkün olur.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">RIT Puanı Nasıl Okunur?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP testinin çıktısı RIT (Rasch Unit) puanıdır. Yaklaşık 100–300 arasında değişen bu ölçek eşit aralıklıdır: bir sonraki RIT puanına ulaşmak her seviyede aynı miktarda öğrenme gerektirmektedir.
+        </p>
+        <div className="overflow-x-auto my-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-indigo-50">
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Sınıf Düzeyi</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Tipik Matematik RIT</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Tipik Okuma RIT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td className="border border-gray-200 px-4 py-2">1. Sınıf</td><td className="border border-gray-200 px-4 py-2">~163</td><td className="border border-gray-200 px-4 py-2">~152</td></tr>
+              <tr className="bg-gray-50"><td className="border border-gray-200 px-4 py-2">3. Sınıf</td><td className="border border-gray-200 px-4 py-2">~188</td><td className="border border-gray-200 px-4 py-2">~176</td></tr>
+              <tr><td className="border border-gray-200 px-4 py-2">5. Sınıf</td><td className="border border-gray-200 px-4 py-2">~208</td><td className="border border-gray-200 px-4 py-2">~196</td></tr>
+              <tr className="bg-gray-50"><td className="border border-gray-200 px-4 py-2">8. Sınıf</td><td className="border border-gray-200 px-4 py-2">~224</td><td className="border border-gray-200 px-4 py-2">~214</td></tr>
+              <tr><td className="border border-gray-200 px-4 py-2">10. Sınıf</td><td className="border border-gray-200 px-4 py-2">~232</td><td className="border border-gray-200 px-4 py-2">~220</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          RIT ölçeğinin önemli özelliği: sınıftan bağımsızdır. 5. sınıfta 224 alan bir öğrenci ile 8. sınıfta 224 alan öğrenci aynı beceri düzeyindedir. Bu, hangi ülkede, hangi okulda olursanız olun karşılaştırılabilir bir kıyas noktası sağlar.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP, PISA ve CAT4 Arasındaki Fark</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Her üçü de madde tepki teorisi (IRT) altyapısını kullanır ancak farklı amaçlara hizmet eder:
+        </p>
+        <div className="overflow-x-auto my-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-indigo-50">
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Özellik</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">MAP Growth</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">PISA</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">CAT4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td className="border border-gray-200 px-4 py-2">Amaç</td><td className="border border-gray-200 px-4 py-2">Bireysel büyüme takibi</td><td className="border border-gray-200 px-4 py-2">Ülke karşılaştırması</td><td className="border border-gray-200 px-4 py-2">Bilişsel potansiyel</td></tr>
+              <tr className="bg-gray-50"><td className="border border-gray-200 px-4 py-2">Yaş</td><td className="border border-gray-200 px-4 py-2">K–12</td><td className="border border-gray-200 px-4 py-2">15 yaş</td><td className="border border-gray-200 px-4 py-2">6–17 yaş</td></tr>
+              <tr><td className="border border-gray-200 px-4 py-2">Uygulama sıklığı</td><td className="border border-gray-200 px-4 py-2">Yılda 2–3 kez</td><td className="border border-gray-200 px-4 py-2">3 yılda bir</td><td className="border border-gray-200 px-4 py-2">Okul kararı</td></tr>
+              <tr className="bg-gray-50"><td className="border border-gray-200 px-4 py-2">Puan tipi</td><td className="border border-gray-200 px-4 py-2">RIT (100–300)</td><td className="border border-gray-200 px-4 py-2">Yüzdelik dilim</td><td className="border border-gray-200 px-4 py-2">Standard age score</td></tr>
+              <tr><td className="border border-gray-200 px-4 py-2">Erişim</td><td className="border border-gray-200 px-4 py-2">Okul lisansı</td><td className="border border-gray-200 px-4 py-2">Seçilen okullar</td><td className="border border-gray-200 px-4 py-2">Okul lisansı</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP ve CAT4&apos;ün bireysel erişimi okul lisansına bağlı olduğundan, Türkiye&apos;deki veya uluslararası okulda olmayan aileler için doğrudan kullanım mümkün değildir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Testi Türkiye&apos;de Nerede Uygulanır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP testi Türkiye&apos;de devlet okulu müfredatına entegre değildir. Çoğunlukla şu okul türlerinde kullanılır:
+        </p>
+        <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
+          <li>ABD veya Kanada müfredatı uygulayan uluslararası özel okullar</li>
+          <li>IB (Uluslararası Bakalorya) programı yürüten okullar</li>
+          <li>Dubai, Londra veya diğer ülkelerdeki uluslararası Türk okulları</li>
+          <li>NWEA ile kurumsal anlaşması olan bazı büyük özel okullar</li>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuzun okulu MAP uygulaması yapıyorsa, sonuçları ebeveyn portalı üzerinden görüntüleyebilirsiniz. NWEA, her norm tablosunu yayımladığında (en son 2020 normları, 2024&apos;te güncellendi) puan karşılaştırmaları otomatik olarak yenilenir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzun MAP Düzeyini Ücretsiz Nasıl Anlarsınız?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuzun okulu MAP uygulamıyorsa veya siz bağımsız bir karşılaştırma noktasına ihtiyaç duyuyorsanız, aynı IRT metodolojisini kullanan bir adaptif değerlendirme iyi bir alternatiftir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry&apos;nin ücretsiz değerlendirmesi; sözel akıl yürütme, sayısal akıl yürütme, matematik ve İngilizce alanlarını MAP ile aynı adaptif test (CAT) ve IRT çerçevesinde ölçer. Sonuçlar PISA, CAT4 ve NWEA MAP ölçekleriyle uyumlu uluslararası normlara göre yüzdelik dilimlere dönüştürülür. 6–17 yaş için uygundur, kayıt gerekmez ve bir saatten kısa sürer.
+        </p>
+      </section>
+
+      <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+        {[
+          { href: '/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir', tag: 'PISA', title: 'PISA Nedir? 2026 Güncel Rehber' },
+          { href: '/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur', tag: 'Değerlendirme', title: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?' },
+          { href: '/tr/blog/cocugunuzun-guclu-zayif-yonleri-liseye-hazirlik', tag: 'Rehber', title: 'Çocuğun Güçlü ve Zayıf Yönleri Nasıl Belirlenir?' },
+          { href: '/tr/akademik-degerlendirme', tag: 'Değerlendirme', title: 'Ücretsiz Adaptif Değerlendirme — PISA & MAP Uyumlu' },
+        ].map((link) => (
+          <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+            <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+            <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+          </Link>
+        ))}
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
