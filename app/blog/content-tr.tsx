@@ -7149,6 +7149,140 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'dubai-lise-rehberi': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Dubai&apos;de lise çağındaki bir çocuk yetiştirmek, Türkiye&apos;deki sistemden köklü biçimde farklı bir eğitim ortamını anlamayı gerektirir. Yüzden fazla KHDA lisanslı okulun bulunduğu şehirde müfredat seçimi — GCSE, A Level, IB mi? — ve üniversite rotası her ailenin ayrı ayrı değerlendirmesi gereken bir karardır.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dubai&apos;de Lise Sistemi Nasıl İşler?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dubai&apos;de lise eğitimi KHDA (Bilgi ve İnsani Gelişim Kurumu) tarafından denetlenen özel uluslararası okullarda verilir. Devlet okulları büyük ölçüde Arapça eğitim verdiğinden expatriate aileler için tek pratik seçenek bu özel okullardır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İngiliz sistemini esas alan okullarda lise şu kademe yapısını izler:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet><strong>Year 7–9 (11–14 yaş):</strong> Alt ortaokul; temel akademik yapının inşa edildiği yıllar.</Bullet>
+          <Bullet><strong>Year 10–11 (14–16 yaş):</strong> GCSE sınav kademesi. Öğrenci 8–10 ders seçer ve iki yıl sonra GCSE sınavına girer.</Bullet>
+          <Bullet><strong>Year 12–13 (16–18 yaş):</strong> Sixth Form / A Level kademesi. Öğrenci 3–4 A Level dersine odaklanır; bu sonuçlar üniversite kabulünün temelini oluşturur.</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          IB müfredatı sunan okullarda ise IB Diploma Programı son iki yılı (16–18 yaş) kapsar ve A Level&apos;a alternatif olarak sunulur.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">GCSE, A Level mi IB mi? Türk Aileler İçin Karşılaştırma</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dubai&apos;deki lise öğrencileri için müfredat seçimi aynı zamanda bir üniversite stratejisi seçimidir. İki ana yol öne çıkmaktadır:
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold text-gray-700">Kriter</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold text-gray-700">GCSE + A Level</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold text-gray-700">IB Diploma</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-200 px-4 py-2 font-medium">Yaş kademesi</td>
+                <td className="border border-gray-200 px-4 py-2">14–18 (GCSE + A Level)</td>
+                <td className="border border-gray-200 px-4 py-2">16–18 (sadece DP)</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-200 px-4 py-2 font-medium">UK üniversiteleri</td>
+                <td className="border border-gray-200 px-4 py-2">Doğrudan, en güçlü yol</td>
+                <td className="border border-gray-200 px-4 py-2">Kabul ediliyor, çoğu okul için yeterli</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-200 px-4 py-2 font-medium">ABD / Kanada üniversiteleri</td>
+                <td className="border border-gray-200 px-4 py-2">Kabul ediliyor</td>
+                <td className="border border-gray-200 px-4 py-2">Güçlü yol; AP gibi etki</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-200 px-4 py-2 font-medium">Türkiye YÖK denkliği</td>
+                <td className="border border-gray-200 px-4 py-2">Mümkün; YÖS gerekebilir</td>
+                <td className="border border-gray-200 px-4 py-2">Mümkün; YÖS gerekebilir</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-200 px-4 py-2 font-medium">Ders yükü</td>
+                <td className="border border-gray-200 px-4 py-2">Derinlemesine uzmanlaşma (3–4 ders)</td>
+                <td className="border border-gray-200 px-4 py-2">Geniş program (6 ders + TOK/EE/CAS)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Belirli bir ülkedeki tek bir üniversite programını hedefleyen öğrenciler için A Level genellikle daha temiz bir yol sunar. Hedef esnek tutulacaksa ya da ABD + Avrupa seçenekleri açık bırakılacaksa IB daha geniş bir kapsam sağlar.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dubai&apos;de Lise İçin Okul Seçimi: KHDA Derecelendirmesi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          KHDA, Dubai&apos;deki özel okulları her yıl denetler ve beş kademede derecelendirir: <strong>Outstanding (Üstün)</strong>, Very Good (Çok İyi), Good (İyi), Acceptable (Kabul Edilebilir) ve Weak (Zayıf). Bu derecelendirme, okul seçiminde kullanılabilecek en güvenilir kamuya açık kaynaktır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Outstanding kategorisindeki ve İngiliz / IB müfredatı sunan lise okullarına örnekler:
+        </p>
+        <ul className="space-y-2 mb-4">
+          <Bullet>GEMS Wellington International School — İngiliz müfredatı, geniş lise programı</Bullet>
+          <Bullet>Jumeirah English Speaking School (JESS) — İngiliz müfredatı</Bullet>
+          <Bullet>Dubai College — İngiliz müfredatı, 6. sınıftan itibaren kabul</Bullet>
+          <Bullet>Repton School Dubai — İngiliz müfredatı, boarding seçeneği</Bullet>
+          <Bullet>GEMS World Academy — IB Diploma ve MYP müfredatı</Bullet>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Derecelendirmeler yıllık güncellenir. Güncel listeye KHDA&apos;nın resmi sitesinden ulaşılabilir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dubai Lisesinden Türkiye ve İngiltere&apos;de Üniversite</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dubai&apos;deki bir liseden A Level veya IB Diploma ile mezun olan öğrencinin önünde birkaç farklı yol vardır:
+        </p>
+        <ul className="space-y-2 mb-6">
+          <Bullet><strong>UK üniversiteleri:</strong> UCAS üzerinden doğrudan başvuru. A Level sonuçları Temmuz&apos;da açıklanır; koşullu teklifler genellikle o yılın başında alınır.</Bullet>
+          <Bullet><strong>Türkiye:</strong> YÖK&apos;e denklik başvurusu yapılır. Çoğu durumda YÖS sınavına girmek de beklenir. Süreç 1–3 ay sürebilir; Türk Konsolosluğu veya YÖK&apos;ün yurt dışı birimi ilk başvuru noktasıdır.</Bullet>
+          <Bullet><strong>ABD / Kanada:</strong> Common App veya doğrudan üniversite başvurusu. IB Diploma özellikle ABD&apos;de tanınırlığı yüksek bir yeterlilik olarak kabul görür.</Bullet>
+          <Bullet><strong>Hollanda / Avrupa:</strong> Birçok Hollanda üniversitesi İngilizce programları için A Level ve IB kabul eder; ek olarak ülkeye özgü dil şartı aranabilir.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Dubai&apos;deki Lise Öğrencisinin Akademik Seviyesini Ölçmek</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dubai&apos;de okul notu, müfredattan müfredata ve okuldan okula önemli ölçüde farklılaşabilir. Bir öğrencinin GCSE veya IB sürecine ne kadar hazır olduğunu, uluslararası standartlarla kıyaslamalı olarak ölçmek için okul notu dışında bağımsız bir referans noktası faydalıdır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sözel akıl yürütme, sayısal akıl yürütme ve görsel-uzamsal beceri alanlarındaki adaptif değerlendirmeler bu boşluğu doldurabilir: okul müfredatından bağımsız olarak bilişsel potansiyeli ölçer ve öğrencinin dünya genelindeki konumunu gösterir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/dubai-egitim-sistemi-rehberi', tag: 'Rehber', title: 'Dubai\'de Lise ve Eğitim Sistemi: Türk Aileler için Kapsamlı Rehber' },
+            { href: '/tr/blog/a-level-programlari-nedir', tag: 'Rehber', title: 'A Level Programları Nedir? İngiltere\'de Lise Son Sınıf Rehberi' },
+            { href: '/tr/akademik-degerlendirme', tag: 'Değerlendirme', title: 'Ücretsiz Akademik Değerlendirme — Uluslararası Kıyaslama' },
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Rehber', title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

@@ -326,10 +326,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'dubai-egitim-sistemi-rehberi',
-    title: 'Dubai\'de Eğitim Sistemi: Türk Aileler için Kapsamlı Rehber',
-    shortTitle: 'Dubai\'de Eğitim Sistemi: Türk Aileler İçin Rehber',
+    title: 'Dubai\'de Lise ve Eğitim Sistemi: Türk Aileler için Kapsamlı Rehber',
+    shortTitle: 'Dubai\'de Lise ve Eğitim Sistemi: Türk Aileler İçin Rehber',
     description:
-      'Dubai\'de hangi müfredatlar var, okul nasıl seçilir, maliyetler ne kadar? Dubai\'ye taşınan Türk aileler için BAE eğitim sistemi rehberi.',
+      'Dubai\'de hangi lise müfredatları var, okul nasıl seçilir, maliyetler ne kadar? Dubai\'ye taşınan Türk aileler için BAE lise ve eğitim sistemi rehberi.',
     tldr: 'Dubai okulları KHDA tarafından 5 kademede derecelendiriliyor: Outstanding (Üstün), Very Good (Çok İyi), Good (İyi), Acceptable (Kabul Edilebilir) ve Weak (Zayıf). Şehirde Britanya, Amerikan, IB ve Fransız müfredatı dahil 200\'den fazla farklı müfredat sunan özel okul bulunuyor.',
 
     date: '2026-07-20',
@@ -455,7 +455,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: '12. Sınıfta İş Dünyası Deneyimi: Yaşa Göre Kapsamlı İngiltere Rehberi (12–18 Yaş)',
     shortTitle: '12. Sınıf İş Deneyimi Rehberi (12–18 Yaş)',
     description:
-      'İngiltere\'de 12–18 yaş için iş deneyimi rehberi: her yıl grubu için seçenekler, büyük işveren programları, başvuru ve öne çıkmanın yolları.',
+      'İngiltere\'de lise çağı 12–18 yaş için iş deneyimi rehberi: her yıl grubu için seçenekler, büyük işveren programları, başvuru ve öne çıkmanın yolları.',
     tldr: 'Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey Insight ve BCG gibi FTSE 100 şirketleri Year 12 öğrencilerine yönelik Spring veya Summer Insight programları düzenliyor. Başvuru pencereleri tipik olarak Eylül–Kasım\'da açılıyor. Bu programlar son derece rekabetçidir; en seçici firmalarda her yer için yaklaşık 10–20 başvuru yapılıyor.',
 
     date: '2026-07-09',
@@ -1552,9 +1552,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'gramer-okulu-giris-sartlari-2026',
     contentSlug: 'grammar-school-entry-requirements-2026',
-    title: 'Gramer Okulu Giriş Şartları 2026: Puanlar, Yüzdelikler ve Nasıl Uygun Hale Gelinir',
+    title: 'Gramer Okulu (Seçici Lise) Giriş Şartları 2026: Puanlar, Yüzdelikler ve Nasıl Uygun Hale Gelinir',
     shortTitle: 'Gramer Okulu Giriş Şartları 2026: Bölgeye Göre SAS Puanları',
-    description: '2026\'da İngiltere\'de grammar school için hangi puan gerekir? Bölgelere göre SAS eşikleri, yüzdelik kıyasları ve giriş şartları bu rehberde.',
+    description: '2026\'da İngiltere\'de grammar school (seçici lise) için hangi puan gerekir? Bölgelere göre SAS eşikleri, yüzdelik kıyasları ve lise giriş şartları bu rehberde.',
     tldr: 'Kent ve Essex\'te 11+ seçici kayıt geçiş puanı yaklaşık SAS 111–113\'tür. Buckinghamshire\'da (CEM) eşik yaklaşık SAS 118\'dir. Barnet ve Sutton\'daki en rekabetçi Londra okulları SAS 121–132 gerektirir — ve yüksek puan alan çocuklar bile daha yüksek puan alan başvuru sahipleri yakın mesafede yaşıyorsa yer alamayabilir.',
     date: '2026-10-03',
     dateModified: '2026-10-03',
@@ -1582,9 +1582,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: '11-plus-sinavina-hazirlik-rehberi',
     contentSlug: 'how-to-prepare-for-11-plus',
-    title: '11+ Sınavına Evde Nasıl Hazırlanılır: Tam Ebeveyn Rehberi',
+    title: '11+ Sınavına Evde Nasıl Hazırlanılır: Seçici Lise Hazırlığı için Tam Ebeveyn Rehberi',
     shortTitle: '11+ Sınavına Evde Nasıl Hazırlanılır',
-    description: '11+ sınavına evde hazırlık rehberi: sözel ve sözel olmayan akıl yürütme, matematik ve İngilizce için önerilen 18 aylık çalışma takvimi.',
+    description: '11+ seçici lise sınavına evde hazırlık rehberi: sözel ve sözel olmayan akıl yürütme, matematik ve İngilizce için önerilen 18 aylık çalışma takvimi.',
     tldr: 'Çoğu aile sınava 12–18 ay öncesinden başlar; sınav genellikle 6. Yıl\'ın Eylül veya Ekim ayında yapılır. Etkili hazırlık, erken aşamada (4–5. Yıl) haftada 3–4 saat olup son 3 ayda haftada 5–7 saate çıkar ve 20–30 dakikalık günlük seanslar şeklinde yürütülür. Test edilen dört ders İngilizce, Matematik, Sözel Akıl Yürütme ve Sözel Olmayan Akıl Yürütme\'dir.',
     date: '2026-10-03',
     dateModified: '2026-10-03',
@@ -1695,9 +1695,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: '11-plus-sinavi-nedir-tam-rehber',
     contentSlug: 'what-is-the-11-plus-exam-complete-guide',
-    title: '11+ Sınavı Nedir? Gramer Okulu Girişi için Tam Ebeveyn Rehberi',
+    title: '11+ Sınavı Nedir? Seçici Lise (Gramer Okulu) Girişi için Tam Ebeveyn Rehberi',
     shortTitle: '11+ Sınavı Nedir? Eksiksiz Rehber',
-    description: '11+ gramer okulu sınavı hakkında eksiksiz ebeveyn rehberi: neler test edilir, puanlama nasıl çalışır, 3 büyük hata ve çocuğunuzun gerçek seviyesini nasıl ölçersiniz.',
+    description: '11+ seçici lise (gramer okulu) sınavı hakkında eksiksiz ebeveyn rehberi: neler test edilir, puanlama nasıl çalışır, 3 büyük hata ve çocuğunuzun gerçek seviyesini nasıl ölçersiniz.',
     tldr: '11+ sınavı; İngilizce, Matematik, Sözel Akıl Yürütme ve Sözel Olmayan Akıl Yürütme olmak üzere dört alanı test eder — ancak müfredat bilgisini değil, akıl yürütme yeteneğini ölçer. Okul karnesi 11+ başarısının zayıf bir göstergesidir. En büyük üç hata: taban belirlenmeden pratik yapmak, ham yüzde puanlarını yorumlamak ve erken baskı oluşturmak. Çocuğunuzun gerçek 11+ seviyesini ölçmenin en doğru yolu, PISA ve GCSE\'nin kullandığı aynı psikometrik yöntem olan 2PL IRT uyarlanabilir değerlendirmedir.',
     date: '2026-10-07',
     dateModified: '2026-10-07',
@@ -1772,10 +1772,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'isee-ssat-ozel-okul-sinavi-rehberi',
     contentSlug: 'isee-ssat-private-school-guide',
-    title: 'ISEE vs SSAT: ABD Özel Okul Giriş Sınavları İçin Eksiksiz Rehber',
-    shortTitle: 'ISEE vs SSAT Özel Okul Rehberi',
+    title: 'ISEE vs SSAT: ABD Özel Lise Giriş Sınavları İçin Eksiksiz Rehber',
+    shortTitle: 'ISEE vs SSAT Özel Lise Rehberi',
     description:
-      'ISEE ve SSAT karşılaştırması: her özel okul giriş sınavının nasıl işlediği, puanların nasıl raporlandığı, temel farklar, hangisini seçmeli ve nasıl hazırlanılmalı.',
+      'ISEE ve SSAT karşılaştırması: her özel lise giriş sınavının nasıl işlediği, puanların nasıl raporlandığı, temel farklar, hangisini seçmeli ve nasıl hazırlanılmalı.',
     tldr: 'ISEE, puanları stanin ölçeğinde (1–9) raporlar; SSAT yüzdelik sıralaması verir. ABD\'nin rekabetçi bağımsız okullarının çoğu ISEE\'de 7–9 stanin (77.–99. yüzdelik aralığı) veya SSAT\'ta 75. yüzdelik ve üzerini bekler. Bazı okullar yalnızca bir sınavı kabul ederken diğerleri her ikisini de geçerli sayar.',
     date: '2026-10-07',
     dateModified: '2026-10-07',
@@ -1995,6 +1995,50 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       body: "6–20 yaş için ücretsiz VIA destekli kişilik değerlendirmesi. Çocuğunuzun İmza Güçlerini, Gelişim Sütunlarını ve kişiselleştirilmiş gelişim aktivitelerini 15 dakika içinde belirler.",
       label: 'Ücretsiz kişilik değerlendirmesini başlat',
       href: '/tr/kisilik-degerlendirmesi',
+    },
+  },
+  {
+    slug: 'dubai-lise-rehberi',
+    title: 'Dubai\'de Lise Eğitimi: GCSE, A Level ve IB Rehberi — Türk Aileler İçin',
+    shortTitle: 'Dubai\'de Lise Eğitimi Rehberi',
+    description:
+      'Dubai\'de lise seçimi nasıl yapılır? GCSE, A Level ve IB karşılaştırması, okul derecelendirmeleri ve Türkiye ile UK üniversitelerine başvuru yolu — Dubai\'deki Türk aileler için.',
+    tldr: 'Dubai\'de lise eğitimi KHDA lisanslı özel okullarda verilir. En yaygın müfredat İngiliz sistemidir (GCSE + A Level); ardından IB Diploma Programı ve Amerikan müfredatı gelir. A Level, UK ve uluslararası üniversiteler için; IB ise ABD ve Kanada dahil küresel seçenekler için güçlü bir temeldir.',
+    date: '2026-10-19',
+    dateModified: '2026-10-19',
+    readTime: '9 dk okuma',
+    tags: ['Dubai', 'Lise', 'BAE Eğitim Sistemi', 'A Level', 'GCSE', 'IB', 'Ebeveyn Rehberi'],
+    faqs: [
+      {
+        q: 'Dubai\'de lise kaç yaşta başlar ve kaç yıl sürer?',
+        a: 'İngiliz müfredatında lise (secondary school) Year 7\'de — yaklaşık 11–12 yaşında — başlar ve Year 13\'te sona erer. GCSE sınavları Year 10–11\'de (14–16 yaş), A Level sınavları ise Year 12–13\'te (16–18 yaş) yapılır. IB Diploma Programı son iki yılı (16–18 yaş) kapsar. Amerikan müfredatında ise lise Grade 9–12\'dir (14–18 yaş).',
+      },
+      {
+        q: 'Dubai\'deki lise için GCSE mi yoksa IB mi tercih edilmeli?',
+        a: 'GCSE + A Level, İngiltere ve Avustralya başta olmak üzere İngilizce konuşan ülkelerdeki üniversitelere en doğrudan yolu sunar; Türkiye\'de YÖK denkliği de nispeten oturmuştur. IB Diploma Programı ise özellikle ABD, Kanada ve Hollanda gibi farklı ülkelerdeki üniversitelere başvuracak öğrenciler için daha esnek bir seçenektir. Öğrencinin üniversite hedefi, karar noktasının başlangıcı olmalıdır.',
+      },
+      {
+        q: 'Dubai\'deki KHDA Outstanding derecelendirmeli lise okulları hangileridir?',
+        a: 'KHDA\'nın Outstanding kategorisindeki okullar arasında GEMS Wellington International School, Jumeirah English Speaking School (JESS), Dubai College, Repton School Dubai ve Swiss International Scientific School yer alır. Derecelendirmeler her yıl güncellenir; kesin ve güncel listeye KHDA\'nın resmi web sitesinden ulaşılabilir.',
+      },
+      {
+        q: 'Dubai lisesinden Türk üniversitelerine başvuru nasıl yapılır?',
+        a: 'Dubai\'deki bir liseden mezun olan öğrencinin Türkiye\'deki bir üniversiteye başvurabilmesi için YÖK denklik belgesi alması gerekir. A Level veya IB Diploma ile mezun olan öğrenciler YÖK denkliği alabilir; ancak ek olarak YÖS sınavına da giriyor olmaları beklenir. Denklik süreci ve gereken belgeler için Türk Konsolosluğu veya YÖK\'ün yurt dışı eğitim birimi doğrudan başvurulacak yerdir.',
+      },
+      {
+        q: 'Dubai\'de lise maliyetleri ne kadar?',
+        a: 'Dubai\'de lise kademesi için yıllık okul ücretleri orta segmentte 50.000–80.000 AED, üst segmentte ise 80.000–130.000 AED arasında değişmektedir. Ücretler, okulun KHDA derecelendirmesine ve sunduğu müfredata göre farklılaşır. KHDA onaylı okul listesinde karşılaştırmalı ücret bilgilerine ulaşmak mümkündür.',
+      },
+      {
+        q: 'Dubai\'deki lise öğrencisinin akademik seviyesini nasıl ölçebilirim?',
+        a: 'Uluslararası standartlarla kıyaslamalı bir ölçüm için adaptif akademik değerlendirmeler kullanılabilir. Eduentry\'nin ücretsiz değerlendirmesi, sözel, sayısal ve görsel-uzamsal alanları test ederek öğrencinin dünya genelindeki konumunu gösterir; özellikle Dubai gibi çok müfredatlı ortamlarda okul notu dışında bir referans noktası sağlar.',
+      },
+    ],
+    cta: {
+      heading: 'Dubai\'deki çocuğunuzun akademik seviyesini uluslararası standartlarla ölçün',
+      body: 'Ücretsiz adaptif değerlendirme — herhangi bir müfredattan, herhangi bir ülkeden erişilebilir. Sözel, sayısal ve görsel-uzamsal alanlarda standardize edilmiş puan ve ayrıntılı rapor.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/akademik-degerlendirme',
     },
   },
 ]
