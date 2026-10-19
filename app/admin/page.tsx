@@ -109,6 +109,7 @@ export default async function AdminPage({
     allPersonalityAssessments,
     guestAcademicConv,
     guestPersonalityConv,
+    activeAssessmentsInRange,
   ] = await Promise.all([
     // All users from auth.users (used for both stats and table)
     db.auth.admin.listUsers({ perPage: 1000 }),
@@ -134,6 +135,12 @@ export default async function AdminPage({
     db.from('personality_assessments')
       .select('status, guest_token, child_id, guest_name')
       .not('guest_name', 'is', null),
+    // Active registered users: assessments started in range, excluding guests
+    db.from('assessments')
+      .select('children(parent_id, student_user_id)')
+      .gte('created_at', fromISO)
+      .lte('created_at', toISO)
+      .not('child_id', 'is', null),
   ])
 
   // Filter auth users by date range for stats
@@ -219,6 +226,36 @@ export default async function AdminPage({
   }
 
   const registeredUsers = usersInRange
+    .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+    .map((u) => ({
+      id:           u.id,
+      email:        u.email ?? '',
+      full_name:    (u.user_metadata?.full_name as string | undefined) ?? null,
+      created_at:   u.created_at,
+      children:     childrenByParent[u.id] ?? 0,
+      completed:    completedByParent[u.id] ?? 0,
+      assessmentTypes: Array.from(assessmentTypesByUser[u.id] ?? []),
+      location: locationMap[u.id] ?? null,
+      role: (parentIds.has(u.id) && studentIds.has(u.id)
+        ? 'both'
+        : parentIds.has(u.id) ? 'parent'
+        : studentIds.has(u.id) ? 'student'
+        : 'none') as 'parent' | 'student' | 'both' | 'none',
+    }))
+
+  // ── Active users (started an assessment in range, any signup date) ────────
+  const activeUserIdsInRange = new Set<string>()
+  for (const a of activeAssessmentsInRange.data ?? []) {
+    const child = a.children as unknown as { parent_id: string | null; student_user_id: string | null } | null
+    if (child?.parent_id) activeUserIdsInRange.add(child.parent_id)
+    if (child?.student_user_id) activeUserIdsInRange.add(child.student_user_id)
+  }
+  for (const pa of personalityInRange) {
+    if (pa.parent_id) activeUserIdsInRange.add(pa.parent_id as string)
+  }
+
+  const activeUsers = allAuthUsers
+    .filter((u) => activeUserIdsInRange.has(u.id))
     .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
     .map((u) => ({
       id:           u.id,
@@ -340,13 +377,24 @@ export default async function AdminPage({
         <AdminAssessmentsChart data={dailyData} />
       </div>
 
-      {/* Users table */}
+      {/* New registrations table */}
       <div className="bg-white rounded-xl border overflow-hidden" style={{ borderColor: '#E2E6EF' }}>
         <div className="px-6 py-5 border-b" style={{ borderColor: '#E2E6EF' }}>
-          <h2 className="text-sm font-semibold" style={{ color: '#0F172A' }}>Registered users</h2>
+          <h2 className="text-sm font-semibold" style={{ color: '#0F172A' }}>New registrations</h2>
           <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>{registeredUsers.length.toLocaleString()} registered in {periodLabel}</p>
         </div>
-        <UsersTable key={`${from}-${to}`} users={registeredUsers} />
+        <UsersTable key={`reg-${from}-${to}`} users={registeredUsers} />
+      </div>
+
+      {/* Active users table */}
+      <div className="bg-white rounded-xl border overflow-hidden" style={{ borderColor: '#E2E6EF' }}>
+        <div className="px-6 py-5 border-b" style={{ borderColor: '#E2E6EF' }}>
+          <h2 className="text-sm font-semibold" style={{ color: '#0F172A' }}>Active users</h2>
+          <p className="text-xs mt-0.5" style={{ color: '#64748B' }}>
+            {activeUsers.length.toLocaleString()} users started an assessment in {periodLabel} · any signup date
+          </p>
+        </div>
+        <UsersTable key={`active-${from}-${to}`} users={activeUsers} emptyMessage="No assessments started in this period" />
       </div>
 
     </main>

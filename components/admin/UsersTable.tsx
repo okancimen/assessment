@@ -32,7 +32,7 @@ function Avatar({ name, email }: { name: string | null; email: string }) {
   )
 }
 
-export default function UsersTable({ users: initialUsers }: { users: AdminUser[] }) {
+export default function UsersTable({ users: initialUsers, emptyMessage = 'No users registered yet' }: { users: AdminUser[]; emptyMessage?: string }) {
   const router = useRouter()
   const [users, setUsers] = useState(initialUsers)
   const [query, setQuery] = useState('')
@@ -189,7 +189,7 @@ export default function UsersTable({ users: initialUsers }: { users: AdminUser[]
             {filtered.length === 0 && (
               <tr>
                 <td colSpan={7} className="px-5 py-10 text-center text-xs" style={{ color: '#94A3B8' }}>
-                  {query ? `No users match "${query}"` : 'No users registered yet'}
+                  {query ? `No users match "${query}"` : emptyMessage}
                 </td>
               </tr>
             )}
