@@ -1518,6 +1518,23 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Dubai, eğitim açısından dünya genelinde en zengin seçenek yelpazesine sahip şehirler arasındadır. İngiliz müfredatı veya IB tercih eden Türk aileler için yüksek kaliteli ve küresel üniversitelere kapı açan okullara erişim mümkündür — ancak ücretler yüksektir ve doğru seçim için KHDA raporlarını, okul ziyaretlerini ve üniversite sicillerini dikkate almak gerekir. Çocuğun Türkçe eğitimini ve kültürel bağını korumak ise ailenin ayrıca plan yapması gereken bir konudur; IB okulları veya özel Türkçe eğitim bu ihtiyacı karşılayabilir.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/a-level-programlari-nedir', tag: 'Rehber', title: 'A Level Programları Nedir? Uluslararası Müfredat Rehberi' },
+            { href: '/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir', tag: 'Rehber', title: 'PISA Nedir? 2025 Sonuçları, Türkiye Sıralaması ve Hazırlık Rehberi' },
+            { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Kıyaslama', title: 'Çocuğunuz Dünyada Nerede? PISA 2025 Uluslararası Kıyaslama' },
+            { href: '/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur', tag: 'Rehber', title: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -2280,6 +2297,8 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir', tag: 'Rehber', title: 'PISA Nedir? 2025 Sonuçları, Türkiye Sıralaması ve Hazırlık Rehberi' },
             { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Kıyaslama', title: 'Çocuğunuz Dünyada Nerede? PISA 2025 Uluslararası Kıyaslama' },
+            { href: '/tr/blog/map-testi-nedir', tag: 'Rehber', title: 'MAP Testi Nedir? RIT Puanı ve PISA ile Karşılaştırma' },
+            { href: '/tr/blog/cocugunuzun-guclu-zayif-yonleri-liseye-hazirlik', tag: 'Rehber', title: 'Güçlü ve Zayıf Yönler: Lise Hazırlık Rehberi' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
@@ -3011,11 +3030,12 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
 
       <section>
         <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {[
             { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Kıyaslama', title: 'Çocuğunuz Dünyada Nerede? PISA 2025 Uluslararası Kıyaslama' },
             { href: '/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur', tag: 'Rehber', title: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?' },
             { href: '/tr/blog/pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler', tag: 'Analiz', title: 'PISA 2025: Ebeveynlerin Bilmesi Gerekenler' },
+            { href: '/tr/blog/map-testi-nedir', tag: 'Rehber', title: 'MAP Testi Nedir? RIT Puanı ve PISA ile Karşılaştırma' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
@@ -3397,6 +3417,23 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           Staj platformuna git →
         </Link>
       </div>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/lise-staji-nasil-bulunur', tag: 'Rehber', title: 'Lise Stajı Nasıl Bulunur? Türkiye ve Yurt Dışı İçin Tam Rehber' },
+            { href: '/tr/blog/staj-icin-cv-nasil-yazilir', tag: 'Rehber', title: 'Staj İçin CV Nasıl Yazılır: Lise Öğrencisi Adım Adım Rehberi' },
+            { href: '/tr/blog/staj-mulakati-hazirlik-rehberi', tag: 'Rehber', title: 'Staj Mülakatına Nasıl Hazırlanılır: Tam Rehber' },
+            { href: '/tr/blog/uluslararasi-staj-programlari', tag: 'Rehber', title: 'Uluslararası Staj Programları 2026: Erasmus+, AIESEC ve IAESTE' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -4030,6 +4067,23 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <Callout color="emerald">
           <strong className="text-emerald-900">Örnek cümle:</strong> "Completing a standardised readiness assessment prior to this application — scoring in the top quartile for domain knowledge and workplace skills — confirmed both my preparation for a structured professional environment and the gaps I intend to address during this placement."
         </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { href: '/tr/blog/lise-staji-nasil-bulunur', tag: 'Rehber', title: 'Lise Stajı Nasıl Bulunur? Türkiye ve Yurt Dışı İçin Tam Rehber' },
+            { href: '/tr/blog/staj-icin-cv-nasil-yazilir', tag: 'Rehber', title: 'Staj İçin CV Nasıl Yazılır: Lise Öğrencisi Adım Adım Rehberi' },
+            { href: '/tr/blog/staj-defteri-nasil-doldurulur', tag: 'Rehber', title: 'Staj Defteri Nedir, Nereden Alınır, Kim İmzalar? Tam Rehber' },
+            { href: '/tr/blog/staj-mulakati-hazirlik-rehberi', tag: 'Rehber', title: 'Staj Mülakatına Nasıl Hazırlanılır: Tam Rehber' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
@@ -7136,8 +7190,8 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         <div className="grid sm:grid-cols-2 gap-4">
           {[
             { href: '/tr/kisilik-degerlendirmesi', tag: 'Değerlendirme', title: 'Ücretsiz VIA Kişilik Özellikleri Değerlendirmesi — 6–20 Yaş' },
-            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: 'Rehber', title: 'Çocuğunuzun Güçlü ve Zayıf Yönlerini Lise Öncesinde Anlama' },
-            { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Rehber', title: 'Okul Çağındaki Çocuğunuzun Gizli Güçlerini Keşfedin' },
+            { href: '/tr/blog/cocugunuzun-guclu-zayif-yonleri-liseye-hazirlik', tag: 'Rehber', title: 'Güçlü ve Zayıf Yönler: Lise Hazırlık Rehberi' },
+            { href: '/tr/blog/cocugunuzun-gizli-guclerini-kesfetmek-yeni-nesil-veli-rehberi', tag: 'Rehber', title: 'Çocuğunuzun Gizli Güçlerini Keşfedin: Veli Rehberi' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
