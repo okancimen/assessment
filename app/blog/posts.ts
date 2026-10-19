@@ -141,7 +141,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       'How to find a business work placement in Year 10–13 in the UK — which sectors take under-18s, how to approach employers, and what makes a strong application.',
     tldr: 'Business work experience for UK school students typically means a one- or two-week placement or a structured employer programme. Most formal large-employer schemes start accepting students from Year 10 (age 14–15). FTSE 100 firms including Barclays, Goldman Sachs, KPMG, and Deloitte run dedicated Year 12 Spring Insight programmes, with application windows opening September–November.',
     date: '2026-06-30',
-    dateModified: '2026-09-23',
+    dateModified: '2026-10-19',
     readTime: '10 min read',
     tags: ['Internship', 'Career Development', 'Work Experience', 'Business'],
     faqs: [
