@@ -338,6 +338,16 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-sm text-gray-500">Source: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
       </section>
 
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">See how your child compares to NWEA norms — free 45-min assessment</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">Eduentry uses the same adaptive IRT technology as MAP Growth, benchmarked against international peers across English, Mathematics, Verbal and Non-Verbal Reasoning. No registration required. Instant results.</p>
+        </div>
+        <CtaLink href="/academic-assessment" label="map_post_assessment_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Start free assessment →
+        </CtaLink>
+      </div>
+
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is a Good MAP Score by Grade?</h2>
         <p className="text-gray-700 leading-relaxed mb-5">
