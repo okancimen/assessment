@@ -226,6 +226,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   const [subjectBreak, setSubjectBreak] = useState<Subject | null>(null)
   const [breakScore, setBreakScore]     = useState<BreakScore | null>(null)
   const [error, setError]               = useState('')
+  const [copiedLink, setCopiedLink]     = useState(false)
 
   // Section elapsed timer
   const [sectionTimeElapsed, setSectionTimeElapsed] = useState(0)
@@ -479,13 +480,19 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
           {!isLastLeg && (
             <button
-              onClick={() => {
+              onClick={async () => {
                 const isGuest = typeof window !== 'undefined' && localStorage.getItem(`guestToken_${assessmentId}`)
-                router.push(isGuest ? '/academic-assessment' : '/dashboard')
+                if (isGuest) {
+                  await navigator.clipboard.writeText(window.location.href)
+                  setCopiedLink(true)
+                  setTimeout(() => setCopiedLink(false), 3000)
+                } else {
+                  router.push('/dashboard')
+                }
               }}
               className="w-full text-sm text-[#6e6e73] hover:text-[#1d1d1f] py-2 transition-colors"
             >
-              Finish another time →
+              {copiedLink ? '✓ Link copied — paste it to resume later' : 'Finish another time →'}
             </button>
           )}
         </div>
