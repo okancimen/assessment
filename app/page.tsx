@@ -299,8 +299,6 @@ export default function LandingPage() {
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
                 <span>4 subjects</span>
                 <span>·</span>
-                <span>~45 min</span>
-                <span>·</span>
                 <span>Ages 6–17</span>
                 <span>·</span>
                 <span>Free</span>
@@ -312,7 +310,7 @@ export default function LandingPage() {
               >
                 Start free assessment
               </CtaLink>
-              <span className="text-center text-[11px] text-[#a1a1a7] mt-3 block">No account needed · pause anytime</span>
+              <span className="text-center text-[11px] text-[#a1a1a7] mt-3 block">No account needed · first results in ~10 min</span>
               <Link href="/your-childs-potential" className="text-center text-xs text-[#a1a1a7] hover:text-white transition-colors mt-1 py-2 block">
                 What does the score mean? →
               </Link>

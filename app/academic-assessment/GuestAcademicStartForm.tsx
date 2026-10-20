@@ -26,7 +26,7 @@ const STRINGS: Record<string, Strings> = {
     agePlaceholder: 'Yaş',
     submitLabel: 'Ücretsiz Değerlendirmeyi Başlat',
     loadingLabel: 'Başlatılıyor…',
-    disclaimer: 'Hesap gerekmez · ~30 dakika sürer',
+    disclaimer: 'Hesap gerekmez · ilk sonuçlar ~10 dakikada',
     errorFallback: 'Bir hata oluştu. Lütfen tekrar deneyin.',
   },
   fr: {
@@ -34,7 +34,7 @@ const STRINGS: Record<string, Strings> = {
     agePlaceholder: 'Âge',
     submitLabel: "Commencer l'évaluation gratuite",
     loadingLabel: 'Démarrage…',
-    disclaimer: 'Sans compte · ~30 minutes',
+    disclaimer: 'Sans compte · premiers résultats en ~10 min',
     errorFallback: 'Une erreur est survenue. Veuillez réessayer.',
   },
   es: {
@@ -42,7 +42,7 @@ const STRINGS: Record<string, Strings> = {
     agePlaceholder: 'Edad',
     submitLabel: 'Iniciar evaluación gratuita',
     loadingLabel: 'Iniciando…',
-    disclaimer: 'Sin cuenta · ~30 minutos',
+    disclaimer: 'Sin cuenta · primeros resultados en ~10 min',
     errorFallback: 'Algo salió mal. Por favor inténtalo de nuevo.',
   },
   ar: {
@@ -50,7 +50,7 @@ const STRINGS: Record<string, Strings> = {
     agePlaceholder: 'العمر',
     submitLabel: 'ابدأ التقييم المجاني',
     loadingLabel: '…جارٍ البدء',
-    disclaimer: 'لا حاجة لحساب · ~٣٠ دقيقة',
+    disclaimer: 'لا حاجة لحساب · أول النتائج في ~١٠ دقائق',
     errorFallback: 'حدث خطأ ما. يرجى المحاولة مرة أخرى.',
   },
   ru: {
@@ -58,7 +58,7 @@ const STRINGS: Record<string, Strings> = {
     agePlaceholder: 'Возраст',
     submitLabel: 'Начать бесплатную оценку',
     loadingLabel: 'Запуск…',
-    disclaimer: 'Без регистрации · ~30 минут',
+    disclaimer: 'Без регистрации · первые результаты через ~10 мин',
     errorFallback: 'Что-то пошло не так. Попробуйте ещё раз.',
   },
   zh: {
@@ -66,7 +66,7 @@ const STRINGS: Record<string, Strings> = {
     agePlaceholder: '年龄',
     submitLabel: '开始免费测评',
     loadingLabel: '启动中…',
-    disclaimer: '无需注册 · 约30分钟',
+    disclaimer: '无需注册 · 约10分钟获得首项结果',
     errorFallback: '出现错误，请重试。',
   },
 }

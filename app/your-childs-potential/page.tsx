@@ -100,7 +100,7 @@ const STEPS = [
   {
     n: '2',
     title: 'Your child takes the adaptive test',
-    body: 'Questions adjust to your child\'s level in real time. Four subjects, ~45 minutes total — can be paused and resumed.',
+    body: 'Questions adjust to your child\'s level in real time. Four subjects — see a result after each one (~10 min each). Can be paused and resumed.',
   },
   {
     n: '3',
@@ -139,7 +139,7 @@ const FAQS = [
   },
   {
     q: 'How long does the test take?',
-    a: 'Around 45 minutes for all four subjects. The adaptive format makes fewer but more accurate measurements than standard multiple-choice tests. The test can be saved and resumed — your child can complete it across multiple sessions.',
+    a: 'Around 10 minutes per subject — your child sees a score after each one. The full report unlocks after all four subjects (~40 min total). The adaptive format makes fewer but more accurate measurements than standard multiple-choice tests, and the test can be saved and resumed across multiple sessions.',
   },
   {
     q: 'What age group is it suitable for?',
@@ -250,7 +250,7 @@ export default function YourChildsPotentialPage() {
           <div className="flex flex-wrap gap-x-5 gap-y-1.5 text-sm text-gray-400">
             <span>4 subjects</span>
             <span>·</span>
-            <span>~45 minutes</span>
+            <span>first results in ~10 min</span>
             <span>·</span>
             <span>Standardised score + percentile</span>
             <span>·</span>
