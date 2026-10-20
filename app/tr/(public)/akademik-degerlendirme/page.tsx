@@ -5,7 +5,7 @@ import GuestAcademicStartForm from '@/app/academic-assessment/GuestAcademicStart
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Ücretsiz Çocuk Akademik Değerlendirmesi | Yapay Zeka Destekli Test — Eduentry',
+  title: 'Ücretsiz Çocuk Akademik Değerlendirmesi — Eduentry',
   description:
     'Çocuğunuzun İngilizce, Matematik, Sözel ve Sözel Olmayan Muhakeme alanlarındaki akademik düzeyini ölçün. 6–20 yaş. Kayıt gerekmez. Anında sonuçlar.',
   keywords: [
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/tr/akademik-degerlendirme`,
     siteName: 'Eduentry',
-    title: 'Ücretsiz Çocuk Akademik Değerlendirmesi | Yapay Zeka Destekli Test — Eduentry',
+    title: 'Ücretsiz Çocuk Akademik Değerlendirmesi — Eduentry',
     description: 'Çocuğunuzun akademik seviyesini 4 alanda ölçün. 6–20 yaş. Kayıt gerekmez.',
     locale: 'tr_TR',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Çocuk Akademik Değerlendirmesi — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ücretsiz Çocuk Akademik Değerlendirmesi | Yapay Zeka Destekli Test — Eduentry',
+    title: 'Ücretsiz Çocuk Akademik Değerlendirmesi — Eduentry',
     description: 'Çocuğunuzun akademik seviyesini 4 alanda ölçün. 6–20 yaş. Kayıt gerekmez.',
     images: [`${BASE_URL}/opengraph-image`],
   },

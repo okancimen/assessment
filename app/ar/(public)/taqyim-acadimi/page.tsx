@@ -5,7 +5,7 @@ import GuestAcademicStartForm from '@/app/academic-assessment/GuestAcademicStart
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'تقييم أكاديمي مجاني للأطفال | اختبار تكيفي بالذكاء الاصطناعي — Eduentry',
+  title: 'تقييم أكاديمي مجاني للأطفال | ذكاء اصطناعي — Eduentry',
   description:
     'قيّم مستوى طفلك الأكاديمي في اللغة الإنجليزية والرياضيات والاستدلال اللفظي وغير اللفظي. أعمار 6–20. بدون تسجيل. نتائج فورية.',
   keywords: [
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/ar/taqyim-acadimi`,
     siteName: 'Eduentry',
-    title: 'تقييم أكاديمي مجاني للأطفال | اختبار تكيفي بالذكاء الاصطناعي — Eduentry',
+    title: 'تقييم أكاديمي مجاني للأطفال | ذكاء اصطناعي — Eduentry',
     description: 'قيّم مستوى طفلك الأكاديمي في 4 مواد. أعمار 6–20. بدون تسجيل.',
     locale: 'ar_SA',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'تقييم أكاديمي للأطفال — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'تقييم أكاديمي مجاني للأطفال | اختبار تكيفي بالذكاء الاصطناعي — Eduentry',
+    title: 'تقييم أكاديمي مجاني للأطفال | ذكاء اصطناعي — Eduentry',
     description: 'قيّم مستوى طفلك الأكاديمي في 4 مواد. أعمار 6–20. بدون تسجيل.',
     images: [`${BASE_URL}/opengraph-image`],
   },

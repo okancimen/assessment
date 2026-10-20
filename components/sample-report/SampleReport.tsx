@@ -225,7 +225,7 @@ export default function SampleReport({ content: c }: { content: SampleReportCont
                 <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-600 bg-amber-50 border border-amber-100 rounded-full px-3 py-1 mb-4">
                   {fill(c.sampleBadge, { name, age: CHILD_AGE })}
                 </div>
-                <h1 className="text-3xl font-bold text-gray-900 tracking-tight">{fill(c.heading, { name })}</h1>
+                <h2 className="text-3xl font-bold text-gray-900 tracking-tight">{fill(c.heading, { name })}</h2>
                 <p className="text-gray-500 text-sm mt-1.5">{fill(c.completedLine, { date: c.completedDate })}</p>
 
                 {/* Quick stats row */}

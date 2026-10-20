@@ -7,7 +7,7 @@ import GuestAcademicStartForm from './GuestAcademicStartForm'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Free Child Academic Assessment | AI-Powered 11+ Practice Test — Eduentry',
+  title: 'Free Child Academic Assessment | AI-Powered — Eduentry',
   description:
     'Measure your child\'s academic ability across English, Mathematics, Verbal & Non-Verbal Reasoning with our adaptive AI assessment. Ages 6–20. No registration required. Instant results.',
   keywords: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/academic-assessment`,
     siteName: 'Eduentry',
-    title: 'Free Child Academic Assessment | AI-Powered Adaptive Test — Eduentry',
+    title: 'Free Child Academic Assessment | AI-Powered — Eduentry',
     description:
       "Measure your child's academic ability across English, Maths, Verbal & Non-Verbal Reasoning. Ages 6–20. No registration needed.",
     locale: 'en_GB',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Free Child Academic Assessment | AI-Powered Adaptive Test — Eduentry',
+    title: 'Free Child Academic Assessment | AI-Powered — Eduentry',
     description:
       "Measure your child's academic ability across English, Maths, Verbal & Non-Verbal Reasoning. Ages 6–20. No registration needed.",
     images: [`${BASE_URL}/opengraph-image`],
@@ -96,7 +96,7 @@ const PAGE_SCHEMA = {
   '@type': 'WebPage',
   '@id': `${BASE_URL}/academic-assessment#webpage`,
   url: `${BASE_URL}/academic-assessment`,
-  name: 'Free Child Academic Assessment | AI-Powered 11+ Practice Test — Eduentry',
+  name: 'Free Child Academic Assessment | AI-Powered — Eduentry',
   description: "Measure your child's academic ability across English, Mathematics, Verbal & Non-Verbal Reasoning with our adaptive AI assessment.",
   inLanguage: 'en',
   isPartOf: { '@id': `${BASE_URL}/#website` },

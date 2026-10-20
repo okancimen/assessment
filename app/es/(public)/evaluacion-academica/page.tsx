@@ -5,7 +5,7 @@ import GuestAcademicStartForm from '@/app/academic-assessment/GuestAcademicStart
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Evaluación Académica Gratuita para Niños | Test Adaptativo IA — Eduentry',
+  title: 'Evaluación Académica Gratuita para Niños — Eduentry',
   description:
     'Mide las habilidades académicas de tu hijo en inglés, matemáticas, razonamiento verbal y no verbal. 6–20 años. Sin registro. Resultados instantáneos.',
   keywords: [
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/es/evaluacion-academica`,
     siteName: 'Eduentry',
-    title: 'Evaluación Académica Gratuita para Niños | Test Adaptativo IA — Eduentry',
+    title: 'Evaluación Académica Gratuita para Niños — Eduentry',
     description: 'Mide las habilidades académicas de tu hijo en 4 materias. 6–20 años. Sin registro.',
     locale: 'es_ES',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Evaluación Académica Niños — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Evaluación Académica Gratuita para Niños | Test Adaptativo IA — Eduentry',
+    title: 'Evaluación Académica Gratuita para Niños — Eduentry',
     description: 'Mide las habilidades académicas de tu hijo en 4 materias. 6–20 años. Sin registro.',
     images: [`${BASE_URL}/opengraph-image`],
   },

@@ -6,7 +6,7 @@ import HeroRadarCard from '@/components/personality/HeroRadarCard'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: "Évaluation de la Personnalité de l'Enfant | Test de Forces de Caractère VIA — Eduentry",
+  title: "Évaluation de Personnalité Enfant | Forces VIA — Eduentry",
   description:
     "Découvrez les forces de caractère uniques de votre enfant grâce à notre évaluation de personnalité scientifique et IA. Âges 6–20. Questionnaire gratuit pour les parents. Rapport personnalisé instantané.",
   keywords: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/fr/evaluation-de-personnalite`,
     siteName: 'Eduentry',
-    title: "Évaluation de la Personnalité de l'Enfant | Test de Forces de Caractère VIA — Eduentry",
+    title: "Évaluation de Personnalité Enfant | Forces VIA — Eduentry",
     description:
       "Découvrez les forces de caractère uniques de votre enfant grâce à notre évaluation IA. Âges 6–20. Questionnaire gratuit pour les parents.",
     locale: 'fr_FR',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Évaluation de la Personnalité de l'Enfant | Test de Forces de Caractère VIA — Eduentry",
+    title: "Évaluation de Personnalité Enfant | Forces VIA — Eduentry",
     description:
       "Découvrez les forces de caractère uniques de votre enfant grâce à notre évaluation IA. Âges 6–20. Questionnaire gratuit pour les parents.",
     images: [`${BASE_URL}/opengraph-image`],
