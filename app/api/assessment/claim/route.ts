@@ -46,7 +46,7 @@ export async function GET(req: NextRequest) {
   const admin = createAdminClient()
   const { data: assessment } = await admin
     .from('assessments')
-    .select('id, guest_token, guest_name, guest_age')
+    .select('id, guest_token, guest_name, guest_age, status')
     .eq('id', assessmentId)
     .eq('guest_token', guestToken)
     .single()
@@ -74,7 +74,8 @@ export async function GET(req: NextRequest) {
       .eq('id', assessmentId)
   }
 
-  const response = NextResponse.redirect(`${origin}/results/${assessmentId}`)
+  const dest = assessment.status === 'completed' ? `/results/${assessmentId}` : '/dashboard'
+  const response = NextResponse.redirect(`${origin}${dest}`)
   response.cookies.delete('ac_tok')
   return response
 }
