@@ -602,14 +602,8 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
             questionIndex={session.question_index}
             currentSubject={session.current_subject}
             completedSubjects={session.completed_subjects}
+            elapsed={formatElapsed(sectionTimeElapsed)}
           />
-          {/* Section elapsed time */}
-          <div className="mt-3 pt-3 border-t border-[#f5f5f7] flex items-center justify-between">
-            <span className="text-xs text-[#6e6e73]">Section time</span>
-            <span className="text-xs text-[#6e6e73] tabular-nums">
-              {formatElapsed(sectionTimeElapsed)}
-            </span>
-          </div>
         </div>
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6">
           <QuestionCard
