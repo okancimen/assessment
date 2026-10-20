@@ -32,5 +32,10 @@ export async function POST(req: NextRequest) {
     claimUrl,
   })
 
+  await supabase
+    .from('assessments')
+    .update({ guest_email: email, reminder_sent_at: new Date().toISOString() })
+    .eq('id', assessmentId)
+
   return NextResponse.json({ ok: true })
 }

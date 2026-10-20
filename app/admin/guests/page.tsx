@@ -16,6 +16,8 @@ type GuestRow = {
   guest_age: number | null
   guest_country: string | null
   guest_city: string | null
+  guest_email: string | null
+  reminder_sent_at: string | null
   assessment_type: string
   status: string
   progress: number
@@ -49,7 +51,7 @@ export default async function AdminGuestsPage() {
 
   const [guestAssessmentsResult, guestPersonalityResult] = await Promise.all([
     db.from('assessments')
-      .select('id, guest_name, guest_age, guest_country, guest_city, assessment_type, status, created_at')
+      .select('id, guest_name, guest_age, guest_country, guest_city, guest_email, reminder_sent_at, assessment_type, status, created_at')
       .not('guest_token', 'is', null)
       .is('child_id', null)
       .order('created_at', { ascending: false })
@@ -91,6 +93,8 @@ export default async function AdminGuestsPage() {
     guest_age: g.guest_age,
     guest_country: g.guest_country,
     guest_city: g.guest_city,
+    guest_email: (g as Record<string, unknown>).guest_email as string | null ?? null,
+    reminder_sent_at: (g as Record<string, unknown>).reminder_sent_at as string | null ?? null,
     assessment_type: g.assessment_type ?? 'academic',
     status: g.status,
     progress: academicPct(g.status, sessionByAssessment.get(g.id)),
@@ -103,6 +107,8 @@ export default async function AdminGuestsPage() {
     guest_age: g.guest_age,
     guest_country: g.guest_country,
     guest_city: g.guest_city,
+    guest_email: null,
+    reminder_sent_at: null,
     assessment_type: 'personality',
     status: g.status,
     progress: personalityPct(g.status, g.age_tier as Tier, answerCountByAssessment.get(g.id) ?? 0),

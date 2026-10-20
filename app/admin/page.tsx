@@ -131,7 +131,7 @@ export default async function AdminPage({
     // Guest-conversion funnel (all-time). A guest row keeps guest_name even after
     // it's claimed; claimed = child_id set (token nulled). Guest-only = guest_token present.
     db.from('assessments')
-      .select('status, guest_token, child_id, guest_name')
+      .select('status, guest_token, child_id, guest_name, guest_email')
       .not('guest_name', 'is', null),
     db.from('personality_assessments')
       .select('status, guest_token, child_id, guest_name')
@@ -275,15 +275,16 @@ export default async function AdminPage({
     }))
 
   // ── Guest-conversion funnel (all-time) ─────────────────────────────────────
-  type GuestConvRow = { status: string; guest_token: string | null; child_id: string | null; guest_name: string | null }
+  type GuestConvRow = { status: string; guest_token: string | null; child_id: string | null; guest_name: string | null; guest_email?: string | null }
   const guestRows: GuestConvRow[] = [
     ...((guestAcademicConv.data ?? []) as GuestConvRow[]),
     ...((guestPersonalityConv.data ?? []) as GuestConvRow[]),
   ]
-  const guestStarted   = guestRows.length
-  const guestCompleted = guestRows.filter((r) => r.status === 'completed').length
-  const guestClaimed   = guestRows.filter((r) => r.child_id != null).length // claimed → account
-  const guestConvRate  = guestStarted > 0 ? Math.round((guestClaimed / guestStarted) * 100) : 0
+  const guestStarted        = guestRows.length
+  const guestCompleted      = guestRows.filter((r) => r.status === 'completed').length
+  const guestClaimed        = guestRows.filter((r) => r.child_id != null).length // claimed → account
+  const guestEmailCaptured  = guestRows.filter((r) => r.guest_email != null).length
+  const guestConvRate       = guestStarted > 0 ? Math.round((guestClaimed / guestStarted) * 100) : 0
 
   const periodLabel =`${new Date(fromISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })} – ${new Date(toISO).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`
 
@@ -347,10 +348,11 @@ export default async function AdminPage({
             <div className="text-[11px]" style={{ color: '#64748B' }}>claim rate</div>
           </div>
         </div>
-        <div className="grid grid-cols-3 divide-x" style={{ borderColor: '#E2E6EF' }}>
+        <div className="grid grid-cols-4 divide-x" style={{ borderColor: '#E2E6EF' }}>
           {[
             { label: 'Guests started', value: guestStarted },
             { label: 'Completed', value: guestCompleted },
+            { label: 'Email captured', value: guestEmailCaptured },
             { label: 'Claimed (→ account)', value: guestClaimed },
           ].map(({ label, value }) => (
             <div key={label} className="px-6 py-4">

@@ -8,6 +8,8 @@ export interface GuestAssessment {
   guest_age: number | null
   guest_country: string | null
   guest_city: string | null
+  guest_email: string | null
+  reminder_sent_at: string | null
   assessment_type: string | null
   status: string
   progress?: number
@@ -91,7 +93,7 @@ export default function GuestAssessmentsTable({ assessments: initial }: { assess
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b" style={{ borderColor: '#E2E6EF' }}>
-            {['Name', 'Age', 'Location', 'Assessment type', 'Completion', 'Status', 'Date', ''].map((h, i) => (
+            {['Name', 'Age', 'Location', 'Email', 'Assessment type', 'Completion', 'Status', 'Date', ''].map((h, i) => (
               <th key={i} className="text-left px-6 py-3 text-xs font-semibold uppercase tracking-wide" style={{ color: '#64748B' }}>
                 {h}
               </th>
@@ -107,6 +109,24 @@ export default function GuestAssessmentsTable({ assessments: initial }: { assess
                 {a.guest_city && a.guest_country
                   ? `${a.guest_city}, ${a.guest_country}`
                   : a.guest_country ?? <span style={{ color: '#CBD5E1' }}>—</span>}
+              </td>
+              <td className="px-6 py-3">
+                {a.guest_email ? (
+                  <div className="flex flex-col gap-0.5">
+                    <span className="text-xs font-medium" style={{ color: '#0F172A' }}>{a.guest_email}</span>
+                    {a.reminder_sent_at && (
+                      <span className="inline-flex items-center gap-1 text-[10px] font-medium text-amber-700 bg-amber-50 rounded-full px-2 py-0.5 w-fit">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                          <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        Reminder sent
+                      </span>
+                    )}
+                  </div>
+                ) : (
+                  <span style={{ color: '#CBD5E1' }}>—</span>
+                )}
               </td>
               <td className="px-6 py-3"><TypeBadge type={a.assessment_type ?? 'academic'} /></td>
               <td className="px-6 py-3"><ProgressBar pct={a.progress ?? 0} status={a.status} /></td>
