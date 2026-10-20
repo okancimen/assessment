@@ -446,9 +446,14 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
             const color = getScoreColor(breakScore.standardized)
             return (
               <div className="rounded-2xl border border-[#d2d2d7] bg-[#f5f5f7] p-5 text-left space-y-3">
-                <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider">
-                  {SUBJECT_LABELS[breakScore.completedSubject]} result
-                </p>
+                <div className="flex items-center justify-between">
+                  <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider">
+                    {SUBJECT_LABELS[breakScore.completedSubject]} result
+                  </p>
+                  <span className="text-[10px] font-medium text-[#aeaeb2] bg-[#e8e8ed] rounded-full px-2 py-0.5">
+                    Early indicator
+                  </span>
+                </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-baseline gap-2">
                     <span className="text-4xl font-bold tabular-nums" style={{ color }}>
