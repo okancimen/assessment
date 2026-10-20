@@ -267,6 +267,11 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 - [Western Australia GATE Programme Guide](https://eduentry.com/blog/australia-gate-gifted-program): Two-stage GATE assessment process, Perth Modern School entry, and PEAC programme details.
 - [NAPLAN Guide for Parents](https://eduentry.com/blog/australia-naplan-guide): Test structure, four-level proficiency scale, how results are reported, and what they do and do not indicate.
 
+## Tools
+
+- [NWEA MAP RIT Score Calculator](https://eduentry.com/tools/nwea-rit-calculator): Enter grade and Fall Math RIT score to see the percentile band (50th–99th) based on NWEA national norms. Covers grades 3–8.
+- [NWEA MAP Percentile Calculator](https://eduentry.com/tools/map-percentile-calculator): Enter grade, subject (Math or Reading), and Fall RIT score to see the exact percentile band and gifted screening eligibility. Covers grades 3–8, both subjects. Highlights when a score reaches the 95th–99th percentile used for gifted program screening.
+
 ## Blog — Singapore
 
 - [Singapore GEP Test Guide](https://eduentry.com/blog/singapore-gep-test-guide): The Gifted Education Programme selection explained — two-stage process (Stage 1: EL + Maths; Stage 2: higher-order EL + Maths + General Ability Test), ~1% selection rate, nine GEP centre schools, and what preparation actually helps for the curriculum-independent GAT.

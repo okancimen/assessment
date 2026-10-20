@@ -116,6 +116,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${BASE}/demo`,            lastModified: '2026-06-29', changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/tools/nwea-rit-calculator`, lastModified: '2026-10-13', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/tools/map-percentile-calculator`, lastModified: '2026-10-20', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/sample-report`,   lastModified: '2026-10-04', changeFrequency: 'monthly', priority: 0.8, alternates: SAMPLE_REPORT_ALTERNATES },
     { url: `${BASE}/sample-report/personality`, lastModified: '2026-10-13', changeFrequency: 'monthly', priority: 0.8, alternates: PERSONALITY_SAMPLE_ALTERNATES },
     {

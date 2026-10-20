@@ -35,6 +35,16 @@ export interface RitBand {
   color: string
 }
 
+// Fall · MAP Growth · Reading
+export const NWEA_READING_FALL: RitRow[] = [
+  { grade: 3, p50: 196, p75: 207, p90: 215, p95: 219, p99: 228 },
+  { grade: 4, p50: 207, p75: 217, p90: 225, p95: 229, p99: 238 },
+  { grade: 5, p50: 214, p75: 223, p90: 231, p95: 235, p99: 244 },
+  { grade: 6, p50: 218, p75: 227, p90: 234, p95: 238, p99: 247 },
+  { grade: 7, p50: 221, p75: 230, p90: 237, p95: 241, p99: 250 },
+  { grade: 8, p50: 223, p75: 232, p90: 239, p95: 244, p99: 253 },
+]
+
 // Classify a RIT against a grade row. Band = the highest percentile threshold met.
 export function classifyRit(rit: number, row: RitRow): RitBand {
   if (rit >= row.p99) return { key: 'p99', range: '99th percentile and above', verdict: 'Top 1% nationally — typical of the range used for gifted identification.', color: 'text-emerald-700' }
