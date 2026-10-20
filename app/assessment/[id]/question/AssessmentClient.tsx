@@ -443,7 +443,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
                   </div>
                   <div className="text-right">
                     <p className="text-xl font-bold text-[#1d1d1f]">Top {topPct}%</p>
-                    <p className="text-[11px] text-[#6e6e73]">nationally</p>
+                    <p className="text-[11px] text-[#6e6e73]">amongst same-age kids</p>
                   </div>
                 </div>
                 <p className="text-sm text-[#3d3d3f] leading-relaxed">{insight}</p>
