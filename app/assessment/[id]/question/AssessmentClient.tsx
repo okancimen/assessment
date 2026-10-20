@@ -153,28 +153,28 @@ function standardizedToPercentile(score: number): number {
 
 const SUBJECT_INSIGHTS: Record<string, Record<string, string>> = {
   english: {
-    exceptional: 'Reading comprehension and language skills are exceptional — well beyond what most children this age demonstrate.',
-    above:  'Strong vocabulary and comprehension — a real advantage for essay writing, exams, and independent reading.',
-    average: 'Solid English foundations. Consistent reading at slightly above their current level will push this score up.',
-    below:  'English is the area with the most room to grow. Daily reading aloud for 15 minutes typically produces the fastest gains.',
+    exceptional: 'Reading comprehension and language skills are exceptional — well beyond what most same-age kids demonstrate.',
+    above:  'Strong vocabulary and comprehension compared to same-age kids — a real advantage for essay writing, exams, and independent reading.',
+    average: 'Solid English foundations, in line with most same-age kids. Consistent reading at slightly above their current level will push this score up.',
+    below:  'English is behind most same-age kids right now. Daily reading aloud for 15 minutes typically produces the fastest gains.',
   },
   mathematics: {
-    exceptional: 'Numeracy is exceptional — working confidently well beyond grade level on problem-solving and reasoning.',
-    above:  'Strong number skills and mathematical thinking. Fraction fluency and word problems are the usual next lever.',
-    average: 'Steady maths foundations. Targeted work on the one or two topics where marks are dropped pays off quickly.',
-    below:  'Maths has the most headroom here. Fraction and decimal fluency are usually the highest-impact focus area.',
+    exceptional: 'Numeracy is exceptional — working confidently well ahead of most same-age kids on problem-solving and reasoning.',
+    above:  'Strong number skills and mathematical thinking ahead of most same-age kids. Fraction fluency and word problems are the usual next lever.',
+    average: 'Steady maths foundations, on par with most same-age kids. Targeted work on the one or two topics where marks are dropped pays off quickly.',
+    below:  'Maths is behind most same-age kids right now. Fraction and decimal fluency are usually the highest-impact focus area.',
   },
   verbal_reasoning: {
-    exceptional: 'Verbal logic is outstanding — this is one of the highest-weighted skills in 11+ and grammar school selection.',
-    above:  'Sharp verbal reasoning — strong predictor of 11+ and selective school success. Small technique gains compound quickly.',
-    average: 'Good verbal reasoning base. Pattern practice with analogy and sequence question types tends to lift scores fast.',
-    below:  'Verbal reasoning responds well to practice. Even four weeks of targeted question work typically shifts scores noticeably.',
+    exceptional: 'Verbal logic is outstanding compared to same-age kids — one of the highest-weighted skills in 11+ and grammar school selection.',
+    above:  'Sharp verbal reasoning, ahead of most same-age kids — a strong predictor of 11+ and selective school success.',
+    average: 'Good verbal reasoning base, in line with same-age kids. Practice with analogy and sequence question types tends to lift scores fast.',
+    below:  'Verbal reasoning is behind most same-age kids right now, but responds well to practice — four weeks of targeted work typically shifts scores noticeably.',
   },
   nonverbal_reasoning: {
-    exceptional: 'Pattern recognition is exceptional — a rare spatial intelligence score at this level.',
-    above:  'Strong spatial and pattern skills. This is also a strong foundation for STEM subjects as they progress.',
-    average: 'Solid non-verbal reasoning. This is the subject that improves fastest with repetition of question types.',
-    below:  'Non-verbal reasoning is the subject that responds most quickly to practice — improvement within weeks is common.',
+    exceptional: 'Pattern recognition is exceptional — a rare spatial intelligence score amongst same-age kids.',
+    above:  'Strong spatial and pattern skills compared to same-age kids — also a solid foundation for STEM subjects as they progress.',
+    average: 'Solid non-verbal reasoning, on par with most same-age kids. This subject improves fastest with repetition of question types.',
+    below:  'Non-verbal reasoning is behind most same-age kids right now, but it responds most quickly to practice — improvement within weeks is common.',
   },
 }
 
