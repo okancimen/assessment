@@ -14,9 +14,7 @@ export default function ProgressBar({
   currentSubject,
   completedSubjects,
 }: ProgressBarProps) {
-  const totalQuestions = SUBJECTS.length * QUESTIONS_PER_SUBJECT
-  const completedQuestions = completedSubjects.length * QUESTIONS_PER_SUBJECT + questionIndex
-  const overallPercent = Math.round((completedQuestions / totalQuestions) * 100)
+  const sectionPercent = Math.round((questionIndex / QUESTIONS_PER_SUBJECT) * 100)
 
   return (
     <div className="space-y-3">
@@ -72,7 +70,7 @@ export default function ProgressBar({
         })}
       </div>
 
-      <div className="text-xs text-gray-400 text-right">{overallPercent}% complete</div>
+      <div className="text-xs text-gray-400 text-right">{sectionPercent}% of this section</div>
     </div>
   )
 }
