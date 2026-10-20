@@ -227,6 +227,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   const [breakScore, setBreakScore]     = useState<BreakScore | null>(null)
   const [error, setError]               = useState('')
   const [copiedLink, setCopiedLink]     = useState(false)
+  const [isGuest, setIsGuest]           = useState(false)
   const [showSavePanel, setShowSavePanel] = useState(false)
   const [saveEmail, setSaveEmail]       = useState('')
   const [saveState, setSaveState]       = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
@@ -234,6 +235,18 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   // Section elapsed timer
   const [sectionTimeElapsed, setSectionTimeElapsed] = useState(0)
   const prevSubjectRef = useRef<string | null>(null)
+
+  // Detect guest after mount (localStorage unavailable on server)
+  useEffect(() => {
+    setIsGuest(!!localStorage.getItem(`guestToken_${assessmentId}`))
+  }, [assessmentId])
+
+  // Reset save panel when a new break screen appears
+  useEffect(() => {
+    setShowSavePanel(false)
+    setSaveEmail('')
+    setSaveState('idle')
+  }, [subjectBreak])
 
   // Reset elapsed timer when subject changes
   useEffect(() => {
@@ -482,8 +495,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
           </Button>
 
           {!isLastLeg && (() => {
-            const guestToken = typeof window !== 'undefined' ? localStorage.getItem(`guestToken_${assessmentId}`) : null
-            if (!guestToken) {
+            if (!isGuest) {
               return (
                 <button
                   onClick={() => router.push('/dashboard')}
@@ -505,6 +517,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
               )
             }
 
+            const guestToken = localStorage.getItem(`guestToken_${assessmentId}`) ?? ''
             const claimUrl = `/auth/register?redirect=${encodeURIComponent(`/api/assessment/claim?assessmentId=${assessmentId}&token=${guestToken}`)}`
 
             return (
