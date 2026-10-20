@@ -6,10 +6,13 @@ import InternshipClient from './InternshipClient'
 
 export default async function QuestionPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ id: string }>
+  searchParams: Promise<{ token?: string }>
 }) {
   const { id } = await params
+  const { token: urlToken } = await searchParams
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
@@ -27,10 +30,10 @@ export default async function QuestionPage({
 
   if (isGuest) {
     // No server-side token check — guest auth is validated per-request in API routes
-    // via X-Guest-Token header read from sessionStorage by AssessmentClient
+    // via X-Guest-Token header read from localStorage by AssessmentClient
     if (assessment.status === 'completed') redirect(`/assessment/${id}/results`)
     if (isInternship) return <InternshipClient assessmentId={id} />
-    return <AssessmentClient assessmentId={id} />
+    return <AssessmentClient assessmentId={id} urlGuestToken={urlToken} />
   }
 
   if (!user) redirect('/auth/login')

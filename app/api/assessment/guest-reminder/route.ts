@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
   }
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://eduentry.com'
-  const resumeUrl = `${siteUrl}/assessment/${assessmentId}/question`
+  const resumeUrl = `${siteUrl}/assessment/${assessmentId}/question?token=${encodeURIComponent(guestToken)}`
   const claimUrl = `${siteUrl}/auth/register?redirect=${encodeURIComponent(`/api/assessment/claim?assessmentId=${assessmentId}&token=${guestToken}`)}`
 
   await sendGuestResumeReminderEmail({

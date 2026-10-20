@@ -218,7 +218,7 @@ type FetchResult =
 
 // ── Main component ────────────────────────────────────────────────────────────
 
-export default function AssessmentClient({ assessmentId }: { assessmentId: string }) {
+export default function AssessmentClient({ assessmentId, urlGuestToken }: { assessmentId: string; urlGuestToken?: string }) {
   const router = useRouter()
 
   function guestHeaders(): HeadersInit {
@@ -247,10 +247,14 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   const [sectionTimeElapsed, setSectionTimeElapsed] = useState(0)
   const prevSubjectRef = useRef<string | null>(null)
 
-  // Detect guest after mount (localStorage unavailable on server)
+  // Detect guest after mount (localStorage unavailable on server).
+  // If a token arrived via URL (email reminder link), persist it first.
   useEffect(() => {
+    if (urlGuestToken) {
+      localStorage.setItem(`guestToken_${assessmentId}`, urlGuestToken)
+    }
     setIsGuest(!!localStorage.getItem(`guestToken_${assessmentId}`))
-  }, [assessmentId])
+  }, [assessmentId, urlGuestToken])
 
   // Reset save panel when a new break screen appears
   useEffect(() => {
