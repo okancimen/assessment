@@ -43,7 +43,13 @@ function RegisterForm() {
 
     trackEvent('sign_up', { method: 'email' })
     void fetch('/api/user/update-location', { method: 'POST' })
-    router.push(redirectTo)
+    // API routes need a full browser navigation so server-side cookies are sent correctly.
+    // Client-side router.push fetches API routes as XHR and won't follow server redirects.
+    if (redirectTo.startsWith('/api/')) {
+      window.location.href = redirectTo
+    } else {
+      router.push(redirectTo)
+    }
   }
 
   return (

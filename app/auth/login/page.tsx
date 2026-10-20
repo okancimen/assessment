@@ -31,8 +31,12 @@ function LoginForm() {
 
     trackEvent('login', { method: 'email' })
     const redirectTo = searchParams.get('redirect') ?? '/dashboard'
-    router.push(redirectTo)
-    router.refresh()
+    if (redirectTo.startsWith('/api/')) {
+      window.location.href = redirectTo
+    } else {
+      router.push(redirectTo)
+      router.refresh()
+    }
   }
 
   return (
