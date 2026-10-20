@@ -63,7 +63,7 @@ function LoadingQuestion() {
   return (
     <div className="min-h-screen bg-[#f5f5f7]">
       <div className="max-w-2xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-8 text-center space-y-6">
+        <div className="bg-white rounded-3xl border border-[#d2d2d7] p-5 sm:p-8 text-center space-y-6">
           {/* Spinner */}
           <div className="relative w-16 h-16 mx-auto">
             <div className="absolute inset-0 rounded-full border-4 border-[#e0e7ff]" />
@@ -469,16 +469,16 @@ export default function AssessmentClient({ assessmentId, urlGuestToken }: { asse
                     Early indicator
                   </span>
                 </div>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-4xl font-bold tabular-nums" style={{ color }}>
+                <div className="flex items-center justify-between gap-3 min-w-0">
+                  <div className="flex items-baseline gap-2 min-w-0">
+                    <span className="text-4xl font-bold tabular-nums shrink-0" style={{ color }}>
                       {breakScore.standardized}
                     </span>
-                    <span className="text-sm font-semibold" style={{ color }}>
+                    <span className="text-sm font-semibold truncate" style={{ color }}>
                       {getScoreLabel(breakScore.standardized)}
                     </span>
                   </div>
-                  <div className="text-right">
+                  <div className="text-right shrink-0">
                     <p className="text-xl font-bold text-[#1d1d1f]">Top {topPct}%</p>
                     <p className="text-[11px] text-[#6e6e73]">amongst same-age kids</p>
                   </div>
@@ -575,13 +575,13 @@ export default function AssessmentClient({ assessmentId, urlGuestToken }: { asse
                           }
                         }}
                         disabled={!saveEmail.includes('@') || saveState === 'sending'}
-                        className="w-full text-sm font-semibold bg-[#4F46E5] text-white rounded-xl py-3 disabled:opacity-40 hover:bg-[#4338CA] transition-colors"
+                        className="w-full text-sm font-semibold bg-[#4F46E5] text-white rounded-xl py-3.5 disabled:opacity-40 hover:bg-[#4338CA] transition-colors"
                       >
                         {saveState === 'sending' ? 'Sending…' : saveState === 'error' ? 'Try again' : 'Email me a reminder'}
                       </button>
                       <a
                         href={claimUrl}
-                        className="w-full text-sm font-medium text-center text-[#4F46E5] border border-[#4F46E5] rounded-xl py-3 hover:bg-indigo-50 transition-colors block"
+                        className="w-full text-sm font-medium text-center text-[#4F46E5] border border-[#4F46E5] rounded-xl py-3.5 hover:bg-indigo-50 transition-colors block"
                       >
                         Create free account →
                       </a>
