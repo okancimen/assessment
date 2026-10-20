@@ -247,7 +247,7 @@ export default function ArabicHomePage() {
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
                 <span>4 مواد</span>
                 <span>·</span>
-                <span>~45 دقيقة</span>
+                <span>أول النتائج في ~١٠ دقائق</span>
                 <span>·</span>
                 <span>6-17 عاماً</span>
                 <span>·</span>

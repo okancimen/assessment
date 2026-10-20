@@ -247,7 +247,7 @@ export default function FrenchHomePage() {
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
                 <span>4 matières</span>
                 <span>·</span>
-                <span>~45 min</span>
+                <span>premiers résultats en ~10 min</span>
                 <span>·</span>
                 <span>6–17 ans</span>
                 <span>·</span>

@@ -255,7 +255,7 @@ export default function ChineseHomePage() {
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
                 <span>4个科目</span>
                 <span>·</span>
-                <span>约45分钟</span>
+                <span>约10分钟获得首项结果</span>
                 <span>·</span>
                 <span>6–17岁</span>
                 <span>·</span>

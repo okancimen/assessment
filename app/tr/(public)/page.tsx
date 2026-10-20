@@ -272,7 +272,7 @@ export default function TurkishHomePage() {
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
                 <span>4 ders</span>
                 <span>·</span>
-                <span>~45 dk</span>
+                <span>ilk sonuçlar ~10 dk'da</span>
                 <span>·</span>
                 <span>6–17 yaş</span>
                 <span>·</span>

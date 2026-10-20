@@ -250,7 +250,7 @@ export default function SpanishHomePage() {
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a1a1a7] mb-8">
                 <span>4 materias</span>
                 <span>·</span>
-                <span>~45 min</span>
+                <span>primeros resultados en ~10 min</span>
                 <span>·</span>
                 <span>De 6 a 17 años</span>
                 <span>·</span>
