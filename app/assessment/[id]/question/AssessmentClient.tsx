@@ -227,6 +227,9 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   const [breakScore, setBreakScore]     = useState<BreakScore | null>(null)
   const [error, setError]               = useState('')
   const [copiedLink, setCopiedLink]     = useState(false)
+  const [showSavePanel, setShowSavePanel] = useState(false)
+  const [saveEmail, setSaveEmail]       = useState('')
+  const [saveState, setSaveState]       = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
 
   // Section elapsed timer
   const [sectionTimeElapsed, setSectionTimeElapsed] = useState(0)
@@ -478,23 +481,93 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
             {isLastLeg ? `Finish with ${SUBJECT_LABELS[subjectBreak]}` : `Continue to ${SUBJECT_LABELS[subjectBreak]}`}
           </Button>
 
-          {!isLastLeg && (
-            <button
-              onClick={async () => {
-                const isGuest = typeof window !== 'undefined' && localStorage.getItem(`guestToken_${assessmentId}`)
-                if (isGuest) {
-                  await navigator.clipboard.writeText(window.location.href)
-                  setCopiedLink(true)
-                  setTimeout(() => setCopiedLink(false), 3000)
-                } else {
-                  router.push('/dashboard')
-                }
-              }}
-              className="w-full text-sm text-[#6e6e73] hover:text-[#1d1d1f] py-2 transition-colors"
-            >
-              {copiedLink ? '✓ Link copied — paste it to resume later' : 'Finish another time →'}
-            </button>
-          )}
+          {!isLastLeg && (() => {
+            const guestToken = typeof window !== 'undefined' ? localStorage.getItem(`guestToken_${assessmentId}`) : null
+            if (!guestToken) {
+              return (
+                <button
+                  onClick={() => router.push('/dashboard')}
+                  className="w-full text-sm text-[#6e6e73] hover:text-[#1d1d1f] py-2 transition-colors"
+                >
+                  Finish another time →
+                </button>
+              )
+            }
+
+            if (!showSavePanel) {
+              return (
+                <button
+                  onClick={() => setShowSavePanel(true)}
+                  className="w-full text-sm text-[#6e6e73] hover:text-[#1d1d1f] py-2 transition-colors"
+                >
+                  Finish another time →
+                </button>
+              )
+            }
+
+            const claimUrl = `/auth/register?redirect=${encodeURIComponent(`/api/assessment/claim?assessmentId=${assessmentId}&token=${guestToken}`)}`
+
+            return (
+              <div className="rounded-2xl border border-[#d2d2d7] bg-[#f5f5f7] p-5 space-y-4 text-left">
+                <div>
+                  <p className="text-sm font-semibold text-[#1d1d1f]">Save your progress</p>
+                  <p className="text-xs text-[#6e6e73] mt-0.5">Get a reminder email with the resume link, or create a free account to save results.</p>
+                </div>
+
+                {saveState === 'sent' ? (
+                  <p className="text-sm text-green-700 font-medium">✓ Email sent — check your inbox to resume later.</p>
+                ) : (
+                  <>
+                    <input
+                      type="email"
+                      placeholder="your@email.com"
+                      value={saveEmail}
+                      onChange={e => setSaveEmail(e.target.value)}
+                      className="w-full text-sm border border-[#d2d2d7] rounded-xl px-4 py-3 bg-white text-[#1d1d1f] placeholder-[#aeaeb2] focus:outline-none focus:border-[#4F46E5] focus:ring-1 focus:ring-[#4F46E5]"
+                    />
+                    <div className="flex flex-col gap-2">
+                      <button
+                        onClick={async () => {
+                          if (!saveEmail.includes('@') || saveState === 'sending') return
+                          setSaveState('sending')
+                          try {
+                            const res = await fetch('/api/assessment/guest-reminder', {
+                              method: 'POST',
+                              headers: { 'Content-Type': 'application/json' },
+                              body: JSON.stringify({ email: saveEmail, assessmentId, guestToken }),
+                            })
+                            setSaveState(res.ok ? 'sent' : 'error')
+                          } catch {
+                            setSaveState('error')
+                          }
+                        }}
+                        disabled={!saveEmail.includes('@') || saveState === 'sending'}
+                        className="w-full text-sm font-semibold bg-[#4F46E5] text-white rounded-xl py-3 disabled:opacity-40 hover:bg-[#4338CA] transition-colors"
+                      >
+                        {saveState === 'sending' ? 'Sending…' : saveState === 'error' ? 'Try again' : 'Email me a reminder'}
+                      </button>
+                      <a
+                        href={claimUrl}
+                        className="w-full text-sm font-medium text-center text-[#4F46E5] border border-[#4F46E5] rounded-xl py-3 hover:bg-indigo-50 transition-colors block"
+                      >
+                        Create free account →
+                      </a>
+                    </div>
+                    <button
+                      onClick={async () => {
+                        await navigator.clipboard.writeText(window.location.href)
+                        setCopiedLink(true)
+                        setTimeout(() => setCopiedLink(false), 3000)
+                      }}
+                      className="w-full text-xs text-[#aeaeb2] hover:text-[#6e6e73] py-1 transition-colors"
+                    >
+                      {copiedLink ? '✓ Link copied' : 'or just copy the link'}
+                    </button>
+                  </>
+                )}
+              </div>
+            )
+          })()}
         </div>
       </div>
     )

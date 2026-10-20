@@ -227,6 +227,29 @@ export async function sendInternshipReminderEmail(opts: {
   await sendEmail(opts.to, subject, html)
 }
 
+export async function sendGuestResumeReminderEmail(opts: {
+  to: string
+  guestName: string
+  resumeUrl: string
+  claimUrl: string
+}): Promise<void> {
+  const { to, guestName, resumeUrl, claimUrl } = opts
+  const firstName = guestName.split(' ')[0]
+  await sendEmail(
+    to,
+    `Resume ${guestName}'s assessment — progress saved`,
+    `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
+      <h1 style="font-size:20px;font-weight:700;margin:0 0 12px">Progress saved — pick up where you left off</h1>
+      <p style="color:#6b7280;font-size:14px;margin:0 0 20px">Hi${firstName ? ' ' + firstName : ''}, you asked us to send this reminder. ${guestName}'s assessment is paused and their answers are saved.</p>
+      <p style="color:#6b7280;font-size:14px;margin:0 0 8px">Click below to continue right where they left off:</p>
+      ${BTN(resumeUrl, 'Continue assessment →')}
+      <p style="color:#6b7280;font-size:14px;margin:0 0 8px">Want to save results and track progress over time? Create a free account — we'll transfer the assessment automatically:</p>
+      ${BTN(claimUrl, 'Create free account →')}
+      <p style="color:#9ca3af;font-size:11px;text-align:center;margin:0">Eduentry · This is a one-time reminder. Your progress is saved for 30 days.</p>
+    </div>`
+  )
+}
+
 export async function sendParentLinkNotificationEmail(opts: {
   to: string
   studentName: string
