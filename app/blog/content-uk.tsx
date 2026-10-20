@@ -1340,6 +1340,16 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </section>
 
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Every child has strengths the 11+ doesn&apos;t measure</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">Curiosity, creativity, perseverance, social intelligence — these character strengths predict academic success and wellbeing regardless of selective school entry. Eduentry&apos;s free 10-minute VIA-based assessment gives your child a personalised strengths profile.</p>
+        </div>
+        <CtaLink href="/personality-assessment" label="grammar_school_personality_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Discover strengths →
+        </CtaLink>
+      </div>
+
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">How Eduentry Scores Relate to the 11+</h2>
         <p className="text-gray-700 leading-relaxed mb-4">

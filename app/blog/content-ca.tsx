@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import CtaLink from '@/components/ui/CtaLink'
 import { Bullet, Callout, Check, Cross } from './blog-components'
 
 export const CA_CONTENT: Record<string, React.ReactNode> = {
@@ -259,6 +260,16 @@ export const CA_CONTENT: Record<string, React.ReactNode> = {
           </Link>.
         </p>
       </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Beyond IQ: understand your child&apos;s character strengths too</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">Gifted identification focuses on cognitive ability — but character strengths like curiosity, perseverance, and self-regulation predict long-term success just as much. Eduentry&apos;s free VIA-based personality assessment takes 10 minutes and gives your child a personalised strengths profile.</p>
+        </div>
+        <CtaLink href="/personality-assessment" label="canada_gifted_personality_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Discover strengths →
+        </CtaLink>
+      </div>
     </>
   ),
 
