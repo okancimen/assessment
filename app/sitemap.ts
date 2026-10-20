@@ -168,6 +168,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'global-academic-benchmarks-report-2026',
     'gifted-program-testing-guide',
     'nwea-map-scores-explained',
+    'nwea-map-test-prep',
+    'singapore-gep-test-guide',
     'isee-ssat-private-school-guide',
     'high-school-internship-benefits-university',
     'character-strengths-academic-success',
