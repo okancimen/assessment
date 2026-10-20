@@ -8,7 +8,6 @@ import QuestionCard from '@/components/assessment/QuestionCard'
 import Button from '@/components/ui/Button'
 import { getScoreLabel, getScoreColor } from '@/lib/assessment/adaptive'
 
-const SECTION_TIME = QUESTIONS_PER_SUBJECT * 120 // seconds per subject
 
 // ── Loading screen (between questions) ────────────────────────────────────────
 
@@ -136,10 +135,9 @@ function WarmupCountdown({ count }: { count: number }) {
 
 // ── Section timer helper ──────────────────────────────────────────────────────
 
-function formatSectionTime(secs: number) {
+function formatElapsed(secs: number) {
   const m = Math.floor(secs / 60)
-  const s = secs % 60
-  return `${m}:${s.toString().padStart(2, '0')}`
+  return m < 1 ? '< 1 min' : `${m} min`
 }
 
 // ── Types ─────────────────────────────────────────────────────────────────────
@@ -171,7 +169,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
   function guestHeaders(): HeadersInit {
     const token = typeof window !== 'undefined'
-      ? sessionStorage.getItem(`guestToken_${assessmentId}`) ?? undefined
+      ? localStorage.getItem(`guestToken_${assessmentId}`) ?? undefined
       : undefined
     return token ? { 'X-Guest-Token': token } : {}
   }
@@ -186,24 +184,24 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
   const [breakScore, setBreakScore]     = useState<BreakScore | null>(null)
   const [error, setError]               = useState('')
 
-  // Section timer
-  const [sectionTimeLeft, setSectionTimeLeft] = useState(SECTION_TIME)
+  // Section elapsed timer
+  const [sectionTimeElapsed, setSectionTimeElapsed] = useState(0)
   const prevSubjectRef = useRef<string | null>(null)
 
-  // Reset section timer when subject changes
+  // Reset elapsed timer when subject changes
   useEffect(() => {
     if (!session) return
     if (prevSubjectRef.current !== session.current_subject) {
       prevSubjectRef.current = session.current_subject
-      setSectionTimeLeft(SECTION_TIME)
+      setSectionTimeElapsed(0)
     }
   }, [session?.current_subject])
 
-  // Count down section timer while actively answering (question + loading phases)
+  // Count up elapsed time while actively answering (question + loading phases)
   useEffect(() => {
     if (phase !== 'question' && phase !== 'loading') return
     const interval = setInterval(() => {
-      setSectionTimeLeft((t) => Math.max(0, t - 1))
+      setSectionTimeElapsed((t) => t + 1)
     }, 1000)
     return () => clearInterval(interval)
   }, [phase])
@@ -425,14 +423,24 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
           <Button className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white" size="lg" onClick={fetchNextQuestion}>
             {isLastLeg ? `Finish with ${SUBJECT_LABELS[subjectBreak]}` : `Continue to ${SUBJECT_LABELS[subjectBreak]}`}
           </Button>
+
+          {!isLastLeg && (
+            <button
+              onClick={() => {
+                const isGuest = typeof window !== 'undefined' && localStorage.getItem(`guestToken_${assessmentId}`)
+                router.push(isGuest ? '/academic-assessment' : '/dashboard')
+              }}
+              className="w-full text-sm text-[#6e6e73] hover:text-[#1d1d1f] py-2 transition-colors"
+            >
+              Finish another time →
+            </button>
+          )}
         </div>
       </div>
     )
   }
 
   if (!question || !session) return null
-
-  const sectionIsLow = sectionTimeLeft <= 300 // 5 min warning
 
   return (
     <div className="min-h-screen bg-[#f5f5f7]">
@@ -444,11 +452,11 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
             currentSubject={session.current_subject}
             completedSubjects={session.completed_subjects}
           />
-          {/* Section timer */}
+          {/* Section elapsed time */}
           <div className="mt-3 pt-3 border-t border-[#f5f5f7] flex items-center justify-between">
-            <span className="text-xs text-[#6e6e73]">Section time remaining</span>
-            <span className={`text-xs font-mono font-semibold tabular-nums ${sectionIsLow ? 'text-red-500 animate-pulse' : 'text-[#1d1d1f]'}`}>
-              {formatSectionTime(sectionTimeLeft)}
+            <span className="text-xs text-[#6e6e73]">{SUBJECT_LABELS[session.current_subject]}</span>
+            <span className="text-xs text-[#6e6e73] tabular-nums">
+              {formatElapsed(sectionTimeElapsed)}
             </span>
           </div>
         </div>

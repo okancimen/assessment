@@ -58,7 +58,7 @@ export default async function AssessmentStartPage({
             <ul className="space-y-2 text-sm text-[#4338CA]">
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-[#4F46E5]">✓</span>
-                <span><strong>{SUBJECTS.length} short subjects</strong> — answer at your own pace, there&apos;s no time limit</span>
+                <span><strong>{SUBJECTS.length} subjects · ~10 min each</strong> — answer at your own pace, there&apos;s no time limit</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-[#4F46E5]">✓</span>

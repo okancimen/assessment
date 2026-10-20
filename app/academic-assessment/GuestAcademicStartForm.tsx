@@ -18,7 +18,7 @@ const STRINGS: Record<string, Strings> = {
     agePlaceholder: 'Age',
     submitLabel: 'Start Free Assessment',
     loadingLabel: 'Starting…',
-    disclaimer: 'No account needed · Pause anytime, resume later',
+    disclaimer: 'No account needed · 4 subjects · ~10 min each',
     errorFallback: 'Something went wrong. Please try again.',
   },
   tr: {
@@ -95,7 +95,7 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
       return
     }
     // Set cookie client-side as well to guarantee it is present before navigation
-    sessionStorage.setItem(`guestToken_${data.assessmentId}`, data.guestToken)
+    localStorage.setItem(`guestToken_${data.assessmentId}`, data.guestToken)
     router.push(`/assessment/${data.assessmentId}/question`)
   }
 

@@ -19,7 +19,7 @@ export default function CompleteClient({ assessmentId, childName }: CompleteClie
     async function finalize() {
       setSubmitting(true)
       const token = typeof window !== 'undefined'
-        ? sessionStorage.getItem(`guestToken_${assessmentId}`) ?? undefined
+        ? localStorage.getItem(`guestToken_${assessmentId}`) ?? undefined
         : undefined
       const res = await fetch(`/api/assessment/${assessmentId}/complete`, {
         method: 'POST',
