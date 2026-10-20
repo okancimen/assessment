@@ -404,7 +404,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
     const isLastLeg  = remaining === 1
     return (
       <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center px-4">
-        <div className="w-full max-w-md bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-8 text-center space-y-6">
+        <div className="w-full max-w-md bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-6 sm:p-8 text-center space-y-6">
           <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto">
             <svg className="w-8 h-8 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -497,7 +497,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
 
   return (
     <div className="min-h-screen bg-[#f5f5f7]">
-      <div className="max-w-2xl mx-auto px-4 py-8 space-y-4">
+      <div className="max-w-2xl mx-auto px-4 py-5 sm:py-8 space-y-4">
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-5">
           <ProgressBar
             subjectIndex={session.subject_index}
@@ -507,7 +507,7 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
           />
           {/* Section elapsed time */}
           <div className="mt-3 pt-3 border-t border-[#f5f5f7] flex items-center justify-between">
-            <span className="text-xs text-[#6e6e73]">{SUBJECT_LABELS[session.current_subject]}</span>
+            <span className="text-xs text-[#6e6e73]">Section time</span>
             <span className="text-xs text-[#6e6e73] tabular-nums">
               {formatElapsed(sectionTimeElapsed)}
             </span>
