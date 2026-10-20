@@ -18,7 +18,7 @@ const STRINGS: Record<string, Strings> = {
     agePlaceholder: 'Age',
     submitLabel: 'Start Free Assessment',
     loadingLabel: 'Starting…',
-    disclaimer: 'No account needed · 4 subjects · ~10 min each',
+    disclaimer: 'No account needed · first results in ~10 min',
     errorFallback: 'Something went wrong. Please try again.',
   },
   tr: {

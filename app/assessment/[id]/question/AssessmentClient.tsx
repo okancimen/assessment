@@ -140,6 +140,49 @@ function formatElapsed(secs: number) {
   return m < 1 ? '< 1 min' : `${m} min`
 }
 
+// ── Break screen helpers ──────────────────────────────────────────────────────
+
+function standardizedToPercentile(score: number): number {
+  const z = (score - 100) / 15
+  const t = 1 / (1 + 0.2316419 * Math.abs(z))
+  const poly = t * (0.319381530 + t * (-0.356563782 + t * (1.781477937 + t * (-1.821255978 + t * 1.330274429))))
+  const cdf = 1 - (1 / Math.sqrt(2 * Math.PI)) * Math.exp(-0.5 * z * z) * poly
+  const p = z >= 0 ? cdf : 1 - cdf
+  return Math.round(Math.max(1, Math.min(99, p * 100)))
+}
+
+const SUBJECT_INSIGHTS: Record<string, Record<string, string>> = {
+  english: {
+    exceptional: 'Reading comprehension and language skills are exceptional — well beyond what most children this age demonstrate.',
+    above:  'Strong vocabulary and comprehension — a real advantage for essay writing, exams, and independent reading.',
+    average: 'Solid English foundations. Consistent reading at slightly above their current level will push this score up.',
+    below:  'English is the area with the most room to grow. Daily reading aloud for 15 minutes typically produces the fastest gains.',
+  },
+  mathematics: {
+    exceptional: 'Numeracy is exceptional — working confidently well beyond grade level on problem-solving and reasoning.',
+    above:  'Strong number skills and mathematical thinking. Fraction fluency and word problems are the usual next lever.',
+    average: 'Steady maths foundations. Targeted work on the one or two topics where marks are dropped pays off quickly.',
+    below:  'Maths has the most headroom here. Fraction and decimal fluency are usually the highest-impact focus area.',
+  },
+  verbal_reasoning: {
+    exceptional: 'Verbal logic is outstanding — this is one of the highest-weighted skills in 11+ and grammar school selection.',
+    above:  'Sharp verbal reasoning — strong predictor of 11+ and selective school success. Small technique gains compound quickly.',
+    average: 'Good verbal reasoning base. Pattern practice with analogy and sequence question types tends to lift scores fast.',
+    below:  'Verbal reasoning responds well to practice. Even four weeks of targeted question work typically shifts scores noticeably.',
+  },
+  nonverbal_reasoning: {
+    exceptional: 'Pattern recognition is exceptional — a rare spatial intelligence score at this level.',
+    above:  'Strong spatial and pattern skills. This is also a strong foundation for STEM subjects as they progress.',
+    average: 'Solid non-verbal reasoning. This is the subject that improves fastest with repetition of question types.',
+    below:  'Non-verbal reasoning is the subject that responds most quickly to practice — improvement within weeks is common.',
+  },
+}
+
+function getSubjectInsight(subject: Subject, score: number): string {
+  const band = score >= 130 ? 'exceptional' : score >= 115 ? 'above' : score >= 95 ? 'average' : 'below'
+  return (SUBJECT_INSIGHTS[subject] ?? SUBJECT_INSIGHTS.english)[band]
+}
+
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 interface SessionState {
@@ -378,25 +421,35 @@ export default function AssessmentClient({ assessmentId }: { assessmentId: strin
             </p>
           </div>
 
-          {/* Revealed score for the subject just completed */}
-          {breakScore && (
-            <div className="rounded-2xl border border-[#d2d2d7] bg-[#f5f5f7] p-5">
-              <p className="text-xs text-[#6e6e73] mb-1">
-                {SUBJECT_LABELS[breakScore.completedSubject]} — standardised score
-              </p>
-              <div className="flex items-baseline justify-center gap-2">
-                <span className="text-4xl font-bold tabular-nums" style={{ color: getScoreColor(breakScore.standardized) }}>
-                  {breakScore.standardized}
-                </span>
-                <span className="text-sm font-medium" style={{ color: getScoreColor(breakScore.standardized) }}>
-                  {getScoreLabel(breakScore.standardized)}
-                </span>
+          {/* Subject result teaser */}
+          {breakScore && (() => {
+            const pct = standardizedToPercentile(breakScore.standardized)
+            const topPct = Math.max(1, 100 - pct)
+            const insight = getSubjectInsight(breakScore.completedSubject, breakScore.standardized)
+            const color = getScoreColor(breakScore.standardized)
+            return (
+              <div className="rounded-2xl border border-[#d2d2d7] bg-[#f5f5f7] p-5 text-left space-y-3">
+                <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider">
+                  {SUBJECT_LABELS[breakScore.completedSubject]} result
+                </p>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-4xl font-bold tabular-nums" style={{ color }}>
+                      {breakScore.standardized}
+                    </span>
+                    <span className="text-sm font-semibold" style={{ color }}>
+                      {getScoreLabel(breakScore.standardized)}
+                    </span>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-xl font-bold text-[#1d1d1f]">Top {topPct}%</p>
+                    <p className="text-[11px] text-[#6e6e73]">nationally</p>
+                  </div>
+                </div>
+                <p className="text-sm text-[#3d3d3f] leading-relaxed">{insight}</p>
               </div>
-              <p className="text-[11px] text-[#6e6e73] mt-1">
-                {breakScore.percentage}% correct · mean 100, where 100 is average for age
-              </p>
-            </div>
-          )}
+            )
+          })()}
 
           {/* Subject progress segments */}
           <div className="flex items-center gap-1.5">
