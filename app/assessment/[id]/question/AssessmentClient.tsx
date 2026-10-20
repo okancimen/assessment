@@ -64,26 +64,37 @@ function LoadingQuestion() {
     <div className="min-h-screen bg-[#f5f5f7]">
       <div className="max-w-2xl mx-auto px-4 py-8">
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-8 text-center space-y-6">
+          {/* Spinner */}
           <div className="relative w-16 h-16 mx-auto">
             <div className="absolute inset-0 rounded-full border-4 border-[#e0e7ff]" />
             <div className="absolute inset-0 rounded-full border-4 border-[#4F46E5] border-t-transparent animate-spin" />
             <div className="absolute inset-2 rounded-full border-2 border-[#a5b4fc] border-b-transparent animate-spin [animation-direction:reverse] [animation-duration:0.8s]" />
           </div>
-          <div className="space-y-1.5">
-            <p className="text-[#1d1d1f] font-semibold text-base">Crafting your next question</p>
+
+          {/* Headline */}
+          <div className="space-y-2">
+            <p className="text-[#1d1d1f] font-bold text-lg tracking-tight">Your next question is being built</p>
             <p className="text-[#6e6e73] text-sm leading-relaxed">
-              AI is analysing your performance and generating<br />
-              a personalised question calibrated to your level.
+              Based on how you just answered, the AI is selecting<br className="hidden sm:block" /> the exact difficulty that will challenge you most.
             </p>
           </div>
+
+          {/* Personalisation callout */}
+          <div className="bg-indigo-50 border border-indigo-100 rounded-2xl px-5 py-4 text-left space-y-2">
+            <p className="text-xs font-semibold text-indigo-600 uppercase tracking-wider">Adaptive · built just for you</p>
+            <p className="text-sm text-indigo-900 leading-relaxed">
+              No two children see the same question sequence. Every answer you give shifts the difficulty — so this assessment reflects <span className="font-semibold">your</span> child's unique ability, not an average.
+            </p>
+          </div>
+
           <div className="flex items-center justify-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-[#4F46E5] animate-bounce [animation-delay:0ms]" />
             <span className="w-1.5 h-1.5 rounded-full bg-[#4F46E5] animate-bounce [animation-delay:150ms]" />
             <span className="w-1.5 h-1.5 rounded-full bg-[#4F46E5] animate-bounce [animation-delay:300ms]" />
           </div>
-          <div
-            className="border border-[#d2d2d7] rounded-2xl px-5 py-3.5 text-sm text-[#6e6e73] leading-relaxed bg-[#f5f5f7]"
-          >
+
+          {/* Fun fact */}
+          <div className="border border-[#d2d2d7] rounded-2xl px-5 py-3.5 text-sm text-[#6e6e73] leading-relaxed bg-[#f5f5f7]">
             {LOADING_FACTS[factIndex]}
           </div>
         </div>
