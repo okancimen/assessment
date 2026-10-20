@@ -234,6 +234,7 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 - [US Gifted Program Testing Guide](https://eduentry.com/blog/gifted-program-testing-guide): CogAT, WISC-V, NWEA MAP, and OLSAT explained with IQ thresholds by programme type.
 - [CogAT Scores Explained](https://eduentry.com/blog/cogat-scores-explained): CogAT Standard Age Score (SAS) explained — percentile and stanine equivalents, gifted program cut-offs (90th percentile ≈ SAS 121), and how the three batteries (Verbal, Quantitative, Nonverbal) compare.
 - [NWEA MAP Scores Explained](https://eduentry.com/blog/nwea-map-scores-explained): RIT scores, grade-level benchmarks, and gifted identification cut-offs.
+- [NWEA MAP Test Prep: What Actually Works](https://eduentry.com/blog/nwea-map-test-prep): Evidence-based MAP prep for Reading and Math K–12. What raises RIT scores (vocabulary depth, Lexile-matched reading, fraction fluency, adaptive practice), what doesn't (grade-level worksheets, test tricks), and a grade-by-grade strategy guide.
 - [ISEE vs SSAT Private School Guide](https://eduentry.com/blog/isee-ssat-private-school-guide): Structural differences, score reporting, and school-by-school test preferences.
 - [How to Prepare for a Gifted Test](https://eduentry.com/blog/how-to-prepare-gifted-test): Evidence-based preparation strategies by test type for US families.
 
@@ -265,6 +266,10 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 - [NSW Opportunity Class Test 2026](https://eduentry.com/blog/nsw-opportunity-class-test-guide): Thinking Skills and Reading components, score cutoffs by district, how offers are ranked, and preparation plan for Year 3 children.
 - [Western Australia GATE Programme Guide](https://eduentry.com/blog/australia-gate-gifted-program): Two-stage GATE assessment process, Perth Modern School entry, and PEAC programme details.
 - [NAPLAN Guide for Parents](https://eduentry.com/blog/australia-naplan-guide): Test structure, four-level proficiency scale, how results are reported, and what they do and do not indicate.
+
+## Blog — Singapore
+
+- [Singapore GEP Test Guide](https://eduentry.com/blog/singapore-gep-test-guide): The Gifted Education Programme selection explained — two-stage process (Stage 1: EL + Maths; Stage 2: higher-order EL + Maths + General Ability Test), ~1% selection rate, nine GEP centre schools, and what preparation actually helps for the curriculum-independent GAT.
 
 ## Blog — Global
 

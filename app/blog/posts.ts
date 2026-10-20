@@ -679,6 +679,80 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'nwea-map-test-prep',
+    title: 'NWEA MAP Test Prep: What Actually Works (and What Doesn\'t)',
+    shortTitle: 'NWEA MAP Test Prep: What Actually Works',
+    description:
+      'Evidence-based MAP test prep for Reading and Math across all K–12 grades. What the research says raises RIT scores — and the common mistakes that waste prep time.',
+    tldr: 'MAP Growth is an adaptive achievement test — test-taking tricks don\'t work. What raises RIT scores is genuine content mastery in the skills just above your child\'s current level. For Reading: vocabulary depth (morphology study) + daily reading at 100–200 Lexile above current level. For Math: fractions are the #1 barrier at Grades 4–7; use the NWEA Learning Continuum to target content at the next RIT band, not current grade level. Realistic improvement in one 12-16 week window: 3–6 RIT points.',
+    date: '2026-10-20',
+    readTime: '10 min read',
+    tags: ['NWEA MAP', 'Test Prep', 'US Education', 'RIT Scores', 'Assessment'],
+    faqs: [
+      {
+        q: 'How many RIT points can my child gain in one testing window?',
+        a: 'With consistent targeted practice over 12–16 weeks, 3–6 RIT points is a realistic gain. Organic growth (without targeted prep) averages 4–6 points per full year for Grade 3–5 students. A jump of 8+ points in a single window is possible but unusual — focus on the skills just above your child\'s current level rather than trying to compress a year of growth into weeks.',
+      },
+      {
+        q: 'What is the NWEA Learning Continuum and how do I use it for prep?',
+        a: 'The MAP Learning Continuum is a free NWEA resource that maps specific curriculum skills to each RIT range. Find your child\'s most recent RIT score, look up the next 5-point band above it, and the Continuum lists the exact skills they are ready to learn. This turns vague "do more practice" advice into a targeted list. It is available on the NWEA website under Resources for Families.',
+      },
+      {
+        q: 'What is the best way to prepare for MAP Reading?',
+        a: 'The most effective MAP Reading preparation is wide reading at 100–200 Lexile above the child\'s current independent reading level, combined with explicit vocabulary study focused on morphology (roots, prefixes, suffixes). NWEA research shows children who read for pleasure 30+ minutes per day gain 3–4 more RIT points per year than peers who do not. For Grades 4+, vocabulary depth is the highest-leverage single intervention.',
+      },
+      {
+        q: 'What is the best way to prepare for MAP Math?',
+        a: 'Target the content band just above your child\'s current RIT, not their school grade level. For Grades 4–7, fractions are the most common growth barrier — work on fraction operations, equivalency, and ratio/proportion conceptually, not just procedurally. For Grades 6–8, algebraic reasoning and proportional thinking unlock the RIT 215–225 range. Khan Academy grade levels map roughly to MAP RIT bands and are a strong free resource.',
+      },
+      {
+        q: 'Can students prepare for MAP Growth specifically?',
+        a: 'Yes — but preparation works differently than for fixed tests. Because MAP adapts to skill level, the only effective preparation is genuinely expanding knowledge at the next level of difficulty, not practising questions the child already knows. Adaptive practice tools that adjust difficulty to the child\'s performance are the closest simulation of actual MAP testing conditions.',
+      },
+    ],
+    cta: {
+      heading: 'Find your child\'s RIT level before you start prep',
+      body: 'Eduentry\'s free adaptive assessment uses the same IRT technology as MAP Growth — adapted to your child\'s level in real time, scored on the same standardised scale. 45 minutes. No registration.',
+      label: 'Start free adaptive assessment',
+      href: '/academic-assessment',
+    },
+  },
+  {
+    slug: 'singapore-gep-test-guide',
+    title: 'Singapore GEP Selection: What It Tests, Who Gets In, and How to Prepare',
+    shortTitle: 'Singapore GEP Test Guide 2026',
+    description:
+      'Singapore GEP selection explained: the two-stage process, what Stage 2\'s General Ability Test measures, the nine GEP centres, and what preparation actually helps.',
+    tldr: 'GEP selects approximately 1% of the Primary 3 cohort (~1,000 students). Stage 1 (August, all P3 students): English Language and Mathematics. Stage 2 (October, top ~5%): EL and Maths at a higher level, plus the General Ability Test (GAT) — a curriculum-independent test of verbal, quantitative, and spatial reasoning. Results in November. The GAT is the key differentiator and cannot be prepared for through syllabus study alone; the best long-term preparation is broad intellectual enrichment.',
+    date: '2026-10-20',
+    readTime: '9 min read',
+    tags: ['Singapore', 'GEP', 'Gifted Education', 'Assessment', 'Primary School'],
+    faqs: [
+      {
+        q: 'What percentage of students get into the Singapore GEP?',
+        a: 'Approximately 1% of each Primary 3 cohort — around 1,000 students per year — are offered GEP places. Stage 1 shortlists approximately the top 5% (around 2,000 students), who then sit Stage 2. From Stage 2, the final ~1% is selected.',
+      },
+      {
+        q: 'What is the GEP General Ability Test?',
+        a: 'The General Ability Test (GAT) is the third paper in Stage 2. It tests verbal ability (analogies, vocabulary in context), quantitative reasoning (number patterns, mathematical logic), and spatial/visual reasoning (pattern recognition, matrices, visual sequences). It is designed to be curriculum-independent — measuring underlying reasoning ability rather than taught knowledge.',
+      },
+      {
+        q: 'When should I start preparing my child for GEP?',
+        a: 'The most effective preparation is long-term enrichment that begins well before Primary 3 — wide reading, non-routine maths puzzles, and reasoning activities from Primary 1–2. Last-minute drilling close to Stage 1 is unlikely to produce significant GAT gains. English Language and Mathematics preparation focused on inference and non-routine problem-solving can be built from P2 onwards.',
+      },
+      {
+        q: 'What happens if my child doesn\'t get into GEP?',
+        a: 'Not making the GEP is not an academic verdict — the programme selects roughly the top 1%, and children just below that threshold are often in the top 2–5% nationally. Singapore\'s mainstream primary system is ranked first globally in Mathematics by PISA. Strong PSLE results open access to Integrated Programme (IP) secondary schools and other academically enriched pathways at secondary level.',
+      },
+    ],
+    cta: {
+      heading: 'See how your child scores on the same reasoning skills GEP tests',
+      body: 'Eduentry\'s free adaptive assessment covers verbal reasoning, quantitative reasoning, and non-verbal (spatial) reasoning — the three domains of the GEP General Ability Test. 45 minutes. Benchmarked against international norms.',
+      label: 'Start free assessment',
+      href: '/academic-assessment',
+    },
+  },
+  {
     slug: 'isee-ssat-private-school-guide',
     title: 'ISEE vs SSAT: The Complete Guide to Private School Entrance Exams in the US',
     shortTitle: 'ISEE vs SSAT Private School Guide',

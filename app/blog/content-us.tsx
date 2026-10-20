@@ -1229,4 +1229,429 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'nwea-map-test-prep': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Most MAP test prep advice is wrong. Parents buy fixed-format practice sheets, children work through grade-level worksheets, and the score barely moves. The reason: NWEA MAP is an adaptive achievement test — it adjusts in real time to your child&apos;s level, tests content above and below their grade, and can&apos;t be beaten with test-taking strategies. What actually raises MAP scores is genuine mastery of curriculum content — and the research on how to build that mastery efficiently is specific and actionable.
+      </p>
+      <p className="text-gray-700 leading-relaxed mb-2">
+        This guide covers what the evidence says works for Reading and Math RIT growth across all grades K–12, what the most common preparation mistakes are, and how to use your child&apos;s MAP report to target the right content.
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        New to MAP? Read our{' '}
+        <Link href="/blog/nwea-map-scores-explained" className="text-indigo-600 hover:underline">
+          NWEA MAP scores guide
+        </Link>{' '}
+        first — it covers RIT scores, grade-level benchmarks, and percentile equivalents.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why MAP Is Different from Other Tests</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Most standardised tests give every student the same questions. MAP Growth adapts: if your child answers correctly, the next question is harder; if they answer incorrectly, it gets easier. After 40–53 questions, the algorithm has located your child&apos;s exact level on the continuous RIT scale — far more accurately than a fixed test could.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This adaptive structure has one critical implication for preparation: there is no fixed set of questions to practise. A Grade 5 student scoring at RIT 220 will see questions at the Grade 6–7 level. A Grade 5 student at RIT 195 will see Grade 3–4 content. The test goes where your child is — so preparation has to genuinely expand what your child knows, not rehearse what they already know.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">The core rule of MAP prep:</strong> Every minute spent on content your child already knows is wasted. Every minute spent on content just above their current level produces measurable RIT gain. The goal is always to push the ceiling, not polish the floor.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The #1 Mistake: Preparing at Grade Level</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A Grade 4 student scoring at RIT 210 is already performing at a Grade 6–7 level in Math. Giving them Grade 4 practice packets teaches them nothing new — the MAP test will simply skip over that material and go to harder questions. The correct prep target is the content just above their current RIT, regardless of grade designation.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NWEA publishes a free resource called the{' '}
+          <strong>MAP Learning Continuum</strong> — a breakdown of which skills and concepts appear at each RIT range for Reading, Math, and Language. Look up your child&apos;s most recent RIT score, find the next 5-point band, and use the Learning Continuum to identify the specific skills they should be building. This turns vague &quot;do more practice&quot; advice into a targeted list of skills to master.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Math RIT range</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Approx. grade equivalent</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Key content at this level</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['161–180', 'Grade 1–2', 'Place value, single-digit multiplication, basic fractions'],
+                ['181–200', 'Grade 3–4', 'Multi-digit multiplication, fraction operations, area/perimeter'],
+                ['201–210', 'Grade 5', 'Decimal operations, ratio introduction, coordinate plane'],
+                ['211–220', 'Grade 6–7', 'Proportional reasoning, algebra basics, negative numbers'],
+                ['221–230', 'Grade 8', 'Linear equations, geometry proofs, statistical reasoning'],
+                ['231+', 'Grade 9–12', 'Algebra II, functions, introductory calculus concepts'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500">Reading has a parallel continuum. A child scoring RIT 215 in Reading is working with Grade 6–7 vocabulary, inference, and text structure — regardless of their school grade.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Actually Raises Reading RIT Scores</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Reading RIT gains come from two sources: vocabulary breadth and reading stamina. NWEA&apos;s own research, published in the <em>Journal of Research in Reading</em>, found that children who read for pleasure for 30 or more minutes per day gained 3–4 more RIT points per year than peers who did not — independent of instructional quality. The compounding effect over 3 years is significant: a child who consistently reads above grade level from Grade 3 will often score 10–15 RIT points above a peer who doesn&apos;t by Grade 6.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">Vocabulary depth, not breadth</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Reading questions rely heavily on academic vocabulary — words like &quot;infer,&quot; &quot;synthesise,&quot; &quot;nuanced,&quot; &quot;paradox,&quot; &quot;ambiguous.&quot; These words appear at predictable RIT levels. For Grades 4 and above, the most efficient reading prep is explicit vocabulary study focused on morphology: teaching roots, prefixes, and suffixes. A child who knows that &quot;-ject&quot; means &quot;throw&quot; can decode &quot;conjecture,&quot; &quot;dejected,&quot; and &quot;trajectory&quot; without having seen them before. This is more effective than memorising word lists, because one root unlocks 10–20 derived words.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">Reading at the right Lexile level</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Reading texts that are too easy (below current level) does not advance reading ability. The optimal zone for growth is 100–200 Lexile points above the child&apos;s independent reading level — challenging enough to require effort but not so hard they lose comprehension. NWEA RIT scores map to Lexile levels (a child scoring RIT 215 in Reading is typically reading at a Lexile of around 800–900L). Use the Lexile framework to find books slightly above your child&apos;s level, then read alongside them for harder texts.
+        </p>
+        <div className="rounded-xl bg-gray-50 border border-gray-100 p-5 mb-4">
+          <p className="font-semibold text-gray-900 mb-2 text-sm">Practical reading targets by grade</p>
+          <div className="space-y-2">
+            {[
+              ['Grades K–2', 'Focus on fluency and decoding. Decodable readers + frequent read-alouds of books above independent level.'],
+              ['Grades 3–5', 'Transition to chapter books. Series work (Harry Potter, Percy Jackson) builds stamina. Explicit vocabulary from chapter headings.'],
+              ['Grades 6–8', 'Introduce non-fiction. Science American, National Geographic, quality journalism. Expose to argument structure and evidence-based writing.'],
+              ['Grades 9–12', 'Literary criticism, primary sources, complex non-fiction. AP English reading lists are calibrated to the RIT 230+ range.'],
+            ].map(([grade, tip]) => (
+              <div key={grade} className="flex gap-3">
+                <span className="text-xs font-semibold text-indigo-600 w-24 shrink-0 pt-0.5">{grade}</span>
+                <span className="text-sm text-gray-600">{tip}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Actually Raises Math RIT Scores</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Math tests two distinct skill types: procedural fluency (can your child compute accurately?) and conceptual reasoning (can your child apply mathematical thinking to novel problems?). Most home practice over-indexes on computation and under-indexes on problem-solving. The MAP test weights these roughly equally — so a child who is computation-fast but problem-solving-weak will plateau in the low-to-mid range for their grade.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">The single biggest Math barrier: fractions</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For students in Grades 4–7, fraction fluency is the primary driver of Math RIT. NWEA data shows that fraction operations, equivalency, and ratio/proportion questions cluster heavily in the RIT 195–220 range — exactly where most students&apos; scores stall. A child who cannot fluidly add fractions with unlike denominators, convert between fractions and decimals, or work with ratios will hit a ceiling around RIT 205–210 regardless of their computation speed.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The fix is targeted fraction work — not worksheets, but conceptual understanding. Start with visual models (fraction bars, area models). Ensure understanding before introducing the standard algorithm. Khan Academy&apos;s fraction units (5th Grade and 6th Grade) cover this well. Two weeks of focused fraction work can add 3–5 RIT points for a student who was stuck on this barrier.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">Algebra and proportional reasoning for Grades 6+</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For middle and high school students, the RIT ceiling is set by algebraic reasoning. A student who can write and solve linear equations in one variable, work with proportional relationships, and interpret graphs will advance through the RIT 220–230 range. Students stuck below RIT 220 in Grade 7 are almost always missing the conceptual foundation of proportional reasoning — the transition from additive to multiplicative thinking.
+        </p>
+
+        <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+          <div className="flex-1">
+            <p className="font-bold text-white text-lg mb-1">Find exactly where your child is on the RIT scale — before you start prep</p>
+            <p className="text-indigo-100 text-sm leading-relaxed">Eduentry&apos;s free adaptive assessment uses the same IRT technology as MAP Growth, benchmarked against NWEA norms. It gives you a Reading and Math score on the standard scale in under 45 minutes — so you know precisely which content band to target.</p>
+          </div>
+          <CtaLink href="/academic-assessment" label="map_prep_mid_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+            Start free assessment →
+          </CtaLink>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Grade-by-Grade Preparation Priorities</h2>
+        <div className="space-y-4">
+          {[
+            {
+              grade: 'Kindergarten – Grade 2',
+              reading: 'Phonemic awareness and decoding fluency. A child who reads slowly at the word level cannot focus on comprehension. Daily read-alouds of books above independent level build vocabulary passively.',
+              math: 'Number sense: counting, skip-counting, place value to 1,000, basic addition and subtraction fact fluency. Do not rush to multiplication — a shaky number sense foundation causes problems at Grade 4.',
+            },
+            {
+              grade: 'Grades 3–5',
+              reading: 'Vocabulary depth (morphology) and reading stamina (30+ min/day). Transition from fiction-only to mixed fiction/non-fiction. Begin teaching inference explicitly: "what does the author imply but not state directly?"',
+              math: 'Fraction fluency is the priority. Also: multiplication fact automaticity, long division, and beginning decimal work. Students who master fractions by end of Grade 5 are well-positioned for Grades 6–8.',
+            },
+            {
+              grade: 'Grades 6–8',
+              reading: 'Complex texts: argumentative essays, scientific writing, historical primary sources. Focus on identifying author purpose, bias, and evidence quality. Advanced vocabulary study (SAT-level word families).',
+              math: 'Proportional reasoning, linear equations, integer operations, statistical reasoning. Khan Academy\'s Grade 6–8 content directly maps to MAP RIT 210–225. Introduce geometry proofs for students at RIT 220+.',
+            },
+            {
+              grade: 'Grades 9–12',
+              reading: 'AP English reading and analysis skills. Complex non-fiction at Lexile 1100L+. Focus on logical argument structure and evidence evaluation.',
+              math: 'Algebra II, functions, exponential/logarithmic relationships, introductory statistics. MAP Science gains at this level come from chemistry and physics concept mastery.',
+            },
+          ].map(({ grade, reading, math }) => (
+            <div key={grade} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-bold text-gray-900 mb-3">{grade}</div>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <div className="text-xs font-semibold text-indigo-600 mb-1">READING</div>
+                  <p className="text-sm text-gray-600 leading-relaxed">{reading}</p>
+                </div>
+                <div>
+                  <div className="text-xs font-semibold text-emerald-600 mb-1">MATH</div>
+                  <p className="text-sm text-gray-600 leading-relaxed">{math}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Use Your MAP Report for Targeted Prep</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The MAP Family Report includes a section called <strong>Goals</strong> that lists the specific skill areas your child is ready to learn next — derived directly from their RIT score and the NWEA Learning Continuum. This is the most actionable part of the report. Most parents skip it and focus on the RIT number; the Goals section is where the prep roadmap is.
+        </p>
+        <div className="space-y-3 mb-4">
+          <Check><strong>Current RIT score:</strong> Your baseline. Note which testing window (fall/winter/spring) — scores are lower in fall and higher in spring as students learn through the year.</Check>
+          <Check><strong>Projected growth:</strong> NWEA publishes expected growth per testing window by grade. If your child is growing faster than projected, they&apos;re accelerating. If slower, something is blocking progress.</Check>
+          <Check><strong>Goal areas:</strong> These are the exact skill clusters to target. A child whose Goal area lists &quot;Operations and Algebraic Thinking — Multiplication and Division&quot; needs fluency with multi-digit multiplication, not algebra.</Check>
+          <Check><strong>Lexile range:</strong> Listed on the Reading report. Use this to find books at the right level — 100–200 Lexile above the listed range for stretch reading.</Check>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Realistic improvement in one testing window (typically 12–16 weeks) is 3–6 RIT points with consistent, targeted practice. A jump of 8+ points is possible but unusual. Set expectations accordingly — MAP growth is a marathon, not a sprint.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adaptive Practice Is More Effective Than Fixed Practice</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Because MAP adapts to skill level, the closest form of effective practice is also adaptive — a system that gives harder questions when a child succeeds and easier ones when they struggle. Fixed-format worksheets at a set grade level will either be too easy (no challenge, no growth) or too hard (frustration, no learning). The adaptive approach finds and works at the productive zone automatically.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Eduentry&apos;s academic assessment uses the same 2-parameter Item Response Theory model as NWEA MAP — questions adapt in real time to your child&apos;s performance, and the final score is produced on the same standardised scale (mean 100, SD 15). Unlike MAP, which is administered at school on a schedule, you can use Eduentry any time — as a diagnostic before prep starts, and to track progress between school testing windows.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: 'How many points can my child realistically gain on MAP in one testing window?',
+              a: 'With consistent, targeted practice over 12–16 weeks, 3–6 RIT points is a realistic and meaningful gain. NWEA national norms show average organic growth of 4–6 points per year for Grade 3–5 students. Targeted preparation can accelerate this, but 8+ points in a single window is unusual. Focus on sustainable progress rather than a single-window score jump.',
+            },
+            {
+              q: 'Should I tell my child they are preparing for the MAP test?',
+              a: 'For younger children (K–3), frame it as reading and maths practice rather than test prep — the anxiety associated with testing can lower performance in adaptive assessments. For older children (Grade 4+), transparency usually helps: explain that the test is adaptive, that there are no "trick" questions, and that genuine understanding is the goal.',
+            },
+            {
+              q: 'What is the best free resource for MAP Math prep?',
+              a: 'Khan Academy is the closest free resource to NWEA\'s Learning Continuum. Use your child\'s RIT score to identify their current level (e.g., RIT 207 ≈ late Grade 5), then work through Khan\'s Grade 5–6 content rather than their school grade level. The adaptive exercises within Khan\'s Mastery Challenges are particularly good for building the procedural + conceptual balance MAP tests.',
+            },
+            {
+              q: 'Does MAP test vocabulary specifically?',
+              a: 'MAP Reading and Language tests vocabulary heavily — particularly Grades 4 and above. Questions test both direct vocabulary knowledge ("what does \'ambivalent\' mean?") and contextual usage ("which word most closely matches the author\'s meaning in paragraph 2?"). Building academic vocabulary through morphology study (root words, prefixes, suffixes) and wide reading is the most durable preparation approach.',
+            },
+            {
+              q: 'How does the MAP test affect gifted program eligibility?',
+              a: 'Many US school districts use MAP Growth scores as part of their gifted identification process. Most trigger a formal evaluation referral at the 90th or 95th percentile for the child\'s grade. The exact RIT that corresponds to these percentiles changes by grade — an 85th-percentile score in Grade 3 Reading is approximately RIT 211, while in Grade 6 it\'s approximately RIT 224. Check your district\'s specific threshold and compare your child\'s score using NWEA\'s published national norms.',
+            },
+          ].map(({ q, a }) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{q}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Know your child&apos;s RIT level before buying a single workbook</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">A free 45-minute adaptive assessment — same IRT technology as MAP Growth — tells you exactly which RIT band your child is in for Reading and Maths. No guesswork. No wasted practice time. Start with a clear baseline.</p>
+        </div>
+        <CtaLink href="/academic-assessment" label="map_prep_end_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Start free assessment →
+        </CtaLink>
+      </div>
+    </>
+  ),
+
+  'singapore-gep-test-guide': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Singapore&apos;s Gifted Education Programme (GEP) is the most selective state school enrichment programme in the world by population percentage. Approximately 1% of each Primary 3 cohort — around 1,000 students per year out of 40,000+ — gains entry. The selection process is rigorous, the cut-offs are never officially published, and most families begin thinking seriously about it after it is already too late to prepare. This guide explains how the GEP selection works, what it tests, and what preparation is actually effective.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is the GEP and What Does It Offer?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The Gifted Education Programme was introduced by the Singapore Ministry of Education (MOE) in 1984 to provide an enriched curriculum for children identified as gifted. GEP students attend one of nine designated GEP centres across Singapore, where they study an accelerated and enriched curriculum in English Language, Mathematics, and Science, alongside the General Programme taken by all Singaporean primary students.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The GEP curriculum is not simply faster — it is deeper and broader. GEP students are expected to work independently, think critically, and engage with open-ended problems that have no single correct answer. Primary 4–6 GEP students complete projects, read widely outside the standard syllabus, and develop research skills that most students encounter only at secondary level. The programme runs from Primary 4 to Primary 6 (ages 10–12).
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Key fact:</strong> GEP selection occurs in Primary 3 (age 9), with a two-stage process. There is no second chance — a child identified later as gifted may be offered enrichment within their mainstream school, but re-entry to the formal GEP is not available after Primary 3.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Selection Process: Two Stages</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          GEP selection takes place annually in Primary 3. All Primary 3 students in MOE schools are automatically eligible and do not need to be nominated — every child in the cohort takes Stage 1.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">Stage 1: Screening Exercise</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Stage 1 is administered in August of the Primary 3 year. All Primary 3 students sit two papers:
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-5">
+          {[
+            { subject: 'English Language', content: 'Comprehension passages with inference and vocabulary questions; short-answer components testing higher-order language skills. Questions are significantly more challenging than the P3 standard curriculum.' },
+            { subject: 'Mathematics', content: 'Problem-solving questions requiring multi-step reasoning. Routine computation is not the focus — MOE tests mathematical thinking, pattern recognition, and unconventional problem-solving rather than standard algorithm application.' },
+          ].map(({ subject, content }) => (
+            <div key={subject} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{subject}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{content}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Approximately the top 5% of the cohort by Stage 1 performance — around 2,000 students — are invited to Stage 2. MOE does not publish the exact cut-off score or percentage.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3 mt-6">Stage 2: Identification Exercise</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Stage 2 takes place in October, approximately two months after Stage 1 results. Students invited to Stage 2 sit three papers:
+        </p>
+        <div className="space-y-3 mb-4">
+          <Check><strong>English Language (Higher Order):</strong> Extended comprehension, vocabulary in depth, and short writing tasks. Questions test synthesis across multiple texts, figurative language interpretation, and the ability to identify implicit meaning.</Check>
+          <Check><strong>Mathematics (Higher Order):</strong> Multi-step problem-solving, non-routine heuristics, and mathematical reasoning. Problems often involve working backwards, systematic listing, or constructing logical arguments — skills not explicitly taught in the mainstream P3 syllabus.</Check>
+          <Check><strong>General Ability Test (GAT):</strong> This is the critical differentiator. The GAT is closest to an IQ-type test and measures verbal ability, quantitative reasoning, and spatial reasoning through pattern recognition, analogies, sequencing, and logical deduction. It is designed to be curriculum-independent and cannot be prepared for through syllabus study alone.</Check>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          From Stage 2, approximately 1% of the original cohort — around 1,000 students — are offered GEP places. Results are released in November. Parents who accept the offer receive a posting to one of the nine GEP centres, based on proximity and available places.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Nine GEP Centres</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">School</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Region</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Anglo-Chinese School (Primary)', 'Central'],
+                ['Catholic High School (Primary)', 'Central/East'],
+                ['Henry Park Primary School', 'West'],
+                ['Nan Hua Primary School', 'South'],
+                ['Nanyang Primary School', 'West'],
+                ['Raffles Girls&apos; Primary School', 'Central'],
+                ['Rosyth School', 'North-East'],
+                ['Singapore Chinese Girls&apos; School (Primary)', 'Central'],
+                ['Tao Nan School', 'East'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 mt-3">GEP posting is to the centre nearest the child&apos;s home, subject to availability. Families do not choose their GEP centre; MOE determines the posting.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Can Be Prepared For — and What Cannot</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The honest answer is that the General Ability Test cannot be meaningfully prepared for through curriculum study. It measures the reasoning abilities that your child has developed across their entire life — through reading, play, problem-solving, and conversation — not what they have been taught at school. Intensive tutoring for the GAT in the months before Stage 2 is unlikely to produce significant gains.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The English Language and Mathematics components are more amenable to preparation — but the preparation that works is deep, long-term enrichment, not last-minute drilling.
+        </p>
+
+        <div className="space-y-4">
+          {[
+            {
+              area: 'English Language (preparable)',
+              approach: 'Wide reading at and above P3–P4 level. Exposure to complex texts builds the vocabulary and inference skills tested. Short-answer practice on comprehension inference questions is useful from P2 onwards. The key is genuine comprehension work — identifying what the text implies, not just what it says.',
+            },
+            {
+              area: 'Mathematics (preparable)',
+              approach: 'Non-routine problem-solving heuristics: working backwards, making systematic lists, looking for patterns, drawing diagrams. The Singapore Maths curriculum already introduces these, but GEP problems are significantly harder. Books from the Mathematical Olympiad training series (e.g., Olympiad Trainer, Primary Mathematics Challenge) are calibrated to GEP-level difficulty.',
+            },
+            {
+              area: 'General Ability Test (limited preparation)',
+              approach: 'Puzzle and reasoning work — spatial puzzles, pattern recognition games, verbal analogies — can build familiarity with the test format without dramatically raising performance. The most effective long-term investment is broad intellectual enrichment: Lego, chess, strategy games, reading fiction with complex plots, and mathematical puzzles.',
+            },
+          ].map(({ area, approach }) => (
+            <div key={area} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{area}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{approach}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">See how your child measures up on the skills GEP tests</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">Eduentry&apos;s free assessment covers verbal reasoning, numerical reasoning, and non-verbal (spatial) reasoning — the same three domains as the GEP General Ability Test. Takes 45 minutes. No registration needed. Results benchmarked against international norms.</p>
+        </div>
+        <CtaLink href="/academic-assessment" label="singapore_gep_mid_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Start free assessment →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">If Your Child Doesn&apos;t Get Into GEP</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Not making the GEP is not an academic verdict. The GEP selects roughly the top 1% — children who just miss that threshold are often in the top 2–5%, highly capable, and well-served by strong mainstream schools. Singapore&apos;s mainstream primary system is itself among the highest-performing in the world; PISA consistently ranks Singapore first or second globally in Mathematics and Reading.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Children who are high-performing but outside GEP have several strong pathways. The PSLE Distinction Programme (formerly called Higher Mother Tongue streams) allows academically strong students to take more challenging language papers. Many mainstream primary schools have internal enrichment programmes. At secondary level, Integrated Programme (IP) schools — which lead directly to the IB Diploma or A-levels without the O-levels — are accessible based on PSLE results and attract many students who were not GEP.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Additionally, some families in Singapore explore international school education — particularly for children who may thrive in a less standardised curriculum. International schools in Singapore using the IB Primary Years Programme (PYP) or UK National Curriculum take a different approach to identifying and developing ability.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: 'What percentage of students get into GEP?',
+              a: 'Approximately 1% of each Primary 3 cohort — around 1,000 students — are offered GEP places each year. Stage 1 shortlists the top ~5% (around 2,000 students) for Stage 2, from which the final ~1% is selected.',
+            },
+            {
+              q: 'Can my child retake the GEP selection test?',
+              a: 'No. The GEP selection exercise is conducted once, in Primary 3. There is no second-chance testing or late entry to the GEP programme. Children who are identified as gifted in later years may be supported through enrichment within their mainstream school, but the formal GEP is only accessible through the Primary 3 process.',
+            },
+            {
+              q: 'What is the GEP General Ability Test?',
+              a: 'The General Ability Test (GAT) is the third paper in Stage 2. It tests verbal ability (word analogies, vocabulary in context), quantitative reasoning (number patterns, mathematical logic), and spatial/visual reasoning (pattern recognition, matrices, visual sequences). It is designed to be curriculum-independent — it measures underlying reasoning ability rather than taught knowledge.',
+            },
+            {
+              q: 'What happens to a GEP student at secondary school?',
+              a: 'The GEP programme ends after Primary 6. GEP students sit the PSLE like all other Primary 6 students and are posted to secondary schools based on their PSLE results. Strong PSLE scores open access to IP schools (which lead to the IB Diploma or A-levels) or the Express stream with H3 subjects at O-level. GEP status itself does not guarantee a specific secondary school placement.',
+            },
+            {
+              q: 'Are international school students eligible for GEP?',
+              a: 'GEP selection is open to Singapore Permanent Residents and Citizens attending MOE mainstream schools. International school students are not eligible for the GEP selection exercise, as they do not attend MOE primary schools where the test is administered.',
+            },
+          ].map(({ q, a }) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{q}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }
