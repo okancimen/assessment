@@ -30,6 +30,14 @@ const nextConfig: NextConfig = {
       ...BLOG_POSTS_ZH.map(p => ({ source: `/blog/${p.slug}`, destination: `https://eduentry.com/zh/blog/${p.slug}`, permanent: true })),
     ]
     return [
+      // www.eduentry.ai → eduentry.ai (no www virtual host configured; return 5xx without this)
+      { source: '/:path*', has: [{ type: 'host', value: 'www.eduentry.ai' }], destination: 'https://eduentry.ai/:path*', permanent: true },
+      // Old eduentry.ai product URLs (pre-October 2026 site) — redirect to closest equivalents
+      { source: '/join',      has: [{ type: 'host', value: 'eduentry.ai' }], destination: '/auth/register', permanent: true },
+      { source: '/solutions', has: [{ type: 'host', value: 'eduentry.ai' }], destination: '/',              permanent: true },
+      // Explicit blog post redirect — belt-and-suspenders over the host-conditional catch-all below
+      // (covers cases where Plesk doesn't forward Host: eduentry.ai exactly)
+      { source: '/blog/what-is-a-standardised-score', has: [{ type: 'host', value: 'eduentry.ai' }], destination: 'https://eduentry.com/blog/what-is-a-standardised-score', permanent: true },
       { source: '/internship/assessment/:id/question', destination: '/assessment/:id/question', permanent: true },
       { source: '/internship/assessment/:id/complete', destination: '/assessment/:id/complete', permanent: true },
       { source: '/internship/results/:id',             destination: '/assessment/:id/results',  permanent: true },

@@ -50,8 +50,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/work-experience`,               lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/work-experience/apply`,         lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/tr/insights`,                   lastModified: '2026-10-15', changeFrequency: 'weekly',  priority: 0.8 },
-    { url: `${BASE}/tr/insights/uluslararasi-staj-programi-2026`, lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE}/tr/insights/ulusal-staj-programi-rehberi`, lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/tr/work-experience`,            lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/tr/work-experience/apply`,      lastModified: '2026-10-15', changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/about`,                     lastModified: '2026-10-15', changeFrequency: 'yearly',  priority: 0.6 },
