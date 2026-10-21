@@ -15,10 +15,10 @@ const FR: Record<TrackId, TrackData> = {
       trust: ['✓ Gratuit pour les lycéens', '✓ 14–18 ans', '✓ 20 minutes', '✓ Notation par IA', '✓ Rapport de préparation personnalisé'],
     },
     stats: [
-      { stat: '1,7M', label: 'emplois tech au Royaume-Uni' },
-      { stat: '72 %', label: 'des employeurs signalent une pénurie de compétences' },
-      { stat: '£45k+', label: 'salaire moyen d\'un développeur logiciel' },
-      { stat: '10×', label: 'années consécutives de croissance de l\'emploi tech' },
+      { stat: '500k', label: 'emplois tech en France (Numeum, 2024)' },
+      { stat: '8,3Mrd€', label: 'levées de fonds des startups françaises en 2023 (La French Tech)' },
+      { stat: '38k€+', label: 'salaire moyen d\'un développeur junior en France' },
+      { stat: '#3', label: 'rang de la France dans l\'écosystème startup européen (StartupBlink 2024)' },
     ],
     domain: {
       heading: 'Ce que mesure la filière Technologie.',
@@ -118,10 +118,10 @@ const FR: Record<TrackId, TrackData> = {
       trust: ['✓ Gratuit pour les lycéens', '✓ 14–18 ans', '✓ 20 minutes', '✓ Notation par IA', '✓ Rapport de préparation personnalisé'],
     },
     stats: [
-      { stat: '68 %', label: 'des employeurs considèrent l\'expérience professionnelle comme leur principal critère de recrutement (CBI)' },
-      { stat: '100 %', label: 'des entreprises du FTSE 100 ont un programme formel pour étudiants' },
-      { stat: '85 000', label: 'diplômes en gestion délivrés chaque année au Royaume-Uni' },
-      { stat: '£38k', label: 'salaire d\'entrée moyen d\'un analyste business à Londres' },
+      { stat: '29', label: 'entreprises françaises dans le Fortune Global 500 (2024)' },
+      { stat: '#7', label: 'rang de la France dans le PIB mondial (FMI, 2024)' },
+      { stat: '32k€+', label: 'salaire d\'entrée analyste business hors Île-de-France' },
+      { stat: '230k', label: 'étudiants en école de commerce et gestion en France' },
     ],
     domain: {
       heading: 'Ce que mesure la filière Entreprise.',
@@ -221,10 +221,10 @@ const FR: Record<TrackId, TrackData> = {
       trust: ['✓ Gratuit pour les lycéens', '✓ 14–18 ans', '✓ 20 minutes', '✓ Notation par IA', '✓ Rapport de préparation personnalisé'],
     },
     stats: [
-      { stat: '40 %', label: 'croissance des postes d\'analyste de données au Royaume-Uni (2022–2024)' },
-      { stat: '2,7M', label: 'emplois data attendus au Royaume-Uni d\'ici 2028' },
-      { stat: '82 %', label: 'des entreprises ne trouvent pas de candidats à l\'aise avec les données' },
-      { stat: '£55k', label: 'salaire moyen d\'un analyste de données senior à Londres' },
+      { stat: '50 %', label: 'croissance des offres data en France (2022–2024)' },
+      { stat: '42k€+', label: 'salaire moyen data analyst junior à Paris' },
+      { stat: '180k+', label: 'professionnels de la data en France' },
+      { stat: '€5Mrd', label: 'marché de la data analytics en France (IDC, 2024)' },
     ],
     domain: {
       heading: 'Ce que mesure la filière Analyse de données.',
@@ -324,10 +324,10 @@ const FR: Record<TrackId, TrackData> = {
       trust: ['✓ Gratuit pour les lycéens', '✓ 14–18 ans', '✓ 20 minutes', '✓ Notation par IA', '✓ Rapport de préparation personnalisé'],
     },
     stats: [
-      { stat: '£29,6Mrd', label: 'dépenses en publicité digitale au Royaume-Uni en 2023 (IAB)' },
-      { stat: '32 %', label: 'croissance des postes en marketing digital (2021–2024)' },
-      { stat: '77 %', label: 'des recruteurs en marketing peinent à trouver des candidats aux compétences digitales' },
-      { stat: 'Top 5', label: 'intitulés de poste à la croissance la plus rapide : Social Media Manager (LinkedIn UK)' },
+      { stat: '55M+', label: 'internautes en France (Médiamétrie, 2024)' },
+      { stat: '7,5Mrd€', label: 'dépenses en publicité digitale en France (SRI/BUMP, 2023)' },
+      { stat: '28 %', label: 'croissance des offres en marketing digital (2021–2024)' },
+      { stat: '200k+', label: 'professionnels du marketing digital en France' },
     ],
     domain: {
       heading: 'Ce que mesure la filière Marketing digital.',

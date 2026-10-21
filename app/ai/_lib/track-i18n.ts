@@ -41,10 +41,10 @@ const TR: Record<TrackId, TrackData> = {
       trust: ['✓ Öğrenciler için ücretsiz', '✓ 14–18 yaş', '✓ 20 dakika', '✓ Yapay zeka puanlaması', '✓ Kişiselleştirilmiş hazırlık raporu'],
     },
     stats: [
-      { stat: '1,7M', label: "İngiltere'deki teknoloji iş sayısı" },
-      { stat: '%72', label: 'İşverenlerin beceri açığı yaşadığını bildirme oranı' },
-      { stat: '£45k+', label: 'Ort. yazılım geliştirici maaşı' },
-      { stat: '10×', label: 'Üst üste teknoloji istihdamı büyümesi (yıl)' },
+      { stat: '350k+', label: 'Türkiye\'deki yazılım geliştiricisi (TÜBİTAK, 2024)' },
+      { stat: '%40', label: '2021–2024 Türkiye teknoloji sektörü iş ilanı artışı' },
+      { stat: '₺80k+', label: 'Junior geliştirici ortalama aylık maaş (İstanbul, 2025)' },
+      { stat: '1M', label: 'TOBB 2030 hedefi: Türkiye yazılım geliştirici sayısı' },
     ],
     domain: {
       heading: 'Teknoloji alanı ne ölçer.',
@@ -136,10 +136,10 @@ const TR: Record<TrackId, TrackData> = {
       trust: ['✓ Öğrenciler için ücretsiz', '✓ 14–18 yaş', '✓ 20 dakika', '✓ Yapay zeka puanlaması', '✓ Kişiselleştirilmiş hazırlık raporu'],
     },
     stats: [
-      { stat: '%68', label: 'İşverenlerin iş deneyimini en önemli işe alım faktörü olarak değerlendirme oranı (CBI)' },
-      { stat: '%100', label: 'FTSE 100 şirketlerinin resmi öğrenci programı yürütme oranı' },
-      { stat: '85k', label: 'Her yıl İngiltere\'de verilen işletme derecesi sayısı' },
-      { stat: '£38k', label: "Londra'da ort. iş analisti başlangıç maaşı" },
+      { stat: '1,5M+', label: 'Türkiye\'deki aktif şirket sayısı (TÜİK)' },
+      { stat: '#17', label: 'IMF küresel ekonomi sıralamasında Türkiye (nominal GSYİH)' },
+      { stat: '₺60k+', label: 'İş analisti başlangıç maaşı (İstanbul, 2025)' },
+      { stat: '%28', label: '2022–2024 yönetim ve analiz pozisyonlarında büyüme' },
     ],
     domain: {
       heading: 'İş Dünyası alanı ne ölçer.',
@@ -231,10 +231,10 @@ const TR: Record<TrackId, TrackData> = {
       trust: ['✓ Öğrenciler için ücretsiz', '✓ 14–18 yaş', '✓ 20 dakika', '✓ Yapay zeka puanlaması', '✓ Kişiselleştirilmiş hazırlık raporu'],
     },
     stats: [
-      { stat: '%40', label: "İngiltere'de 2022–2024 veri analisti pozisyonu büyümesi" },
-      { stat: '2,7M', label: "İngiltere'de 2028'e kadar beklenen veri işi sayısı" },
-      { stat: '%82', label: 'Veri okuryazarı aday bulamayan şirket oranı' },
-      { stat: '£55k', label: "Londra'da ort. kıdemli veri analisti maaşı" },
+      { stat: '%65', label: '2022–2025 Türkiye veri analitiği iş ilanı artışı' },
+      { stat: '₺95k+', label: 'Kıdemli veri analisti ortalama aylık maaş (Türkiye)' },
+      { stat: '180k+', label: 'Türkiye\'deki veri ve analitik profesyonel tahmini' },
+      { stat: '2027', label: 'Dijital Türkiye hedefi: 300k veri ve yapay zeka uzmanı' },
     ],
     domain: {
       heading: 'Veri Analitiği alanı ne ölçer.',
@@ -326,10 +326,10 @@ const TR: Record<TrackId, TrackData> = {
       trust: ['✓ Öğrenciler için ücretsiz', '✓ 14–18 yaş', '✓ 20 dakika', '✓ Yapay zeka puanlaması', '✓ Kişiselleştirilmiş hazırlık raporu'],
     },
     stats: [
-      { stat: '£29,6Mrd', label: "İngiltere'de 2023 dijital reklam harcaması (IAB)" },
-      { stat: '%32', label: '2021–2024 yılları arasında dijital pazarlama rolü büyümesi' },
-      { stat: '%77', label: 'Dijital becerili aday bulamayan pazarlama işe alım yetkilisi oranı' },
-      { stat: 'İlk 5', label: 'En hızlı büyüyen iş unvanı: Sosyal Medya Yöneticisi (LinkedIn UK)' },
+      { stat: '52M+', label: 'Türkiye\'deki sosyal medya kullanıcısı (DataReportal, 2024)' },
+      { stat: '₺30Mrd+', label: 'Türkiye dijital reklam harcaması (IAB Türkiye, 2024)' },
+      { stat: '%38', label: '2021–2024 dijital pazarlama iş ilanı artışı (Türkiye)' },
+      { stat: 'İlk 3', label: 'Instagram kullanımında Avrupa\'nın en üst sırasındaki ülkeler (DataReportal)' },
     ],
     domain: {
       heading: 'Dijital Pazarlama alanı ne ölçer.',
@@ -425,10 +425,10 @@ const ES: Record<TrackId, TrackData> = {
       trust: ['✓ Gratuita para estudiantes', '✓ 14–18 años', '✓ 20 minutos', '✓ Puntuación con IA', '✓ Informe de preparación personalizado'],
     },
     stats: [
-      { stat: '1,7M', label: 'empleos tecnológicos en el Reino Unido' },
-      { stat: '72%', label: 'de empleadores reportan escasez de habilidades' },
-      { stat: '£45k+', label: 'salario medio de desarrollador de software' },
-      { stat: '10×', label: 'años consecutivos de crecimiento en contratación tecnológica' },
+      { stat: '280k+', label: 'empleos tecnológicos en España (Adecco Tech, 2024)' },
+      { stat: '%35', label: 'crecimiento del sector tech en España 2020–2024' },
+      { stat: '35k€+', label: 'salario medio de desarrollador junior en España' },
+      { stat: '#9', label: 'posición de España en el ecosistema startup europeo (StartupBlink 2024)' },
     ],
     domain: {
       heading: 'Qué evalúa el área de Tecnología.',
@@ -520,10 +520,10 @@ const ES: Record<TrackId, TrackData> = {
       trust: ['✓ Gratuita para estudiantes', '✓ 14–18 años', '✓ 20 minutos', '✓ Puntuación con IA', '✓ Informe de preparación personalizado'],
     },
     stats: [
-      { stat: '68%', label: 'de empleadores valoran la experiencia laboral como su principal factor de contratación (CBI)' },
-      { stat: '100%', label: 'de empresas del FTSE 100 tienen programas formales para estudiantes' },
-      { stat: '85k', label: 'títulos de empresa concedidos en el Reino Unido cada año — más que cualquier otra materia' },
-      { stat: '£38k', label: 'salario inicial medio de analista de negocio en Londres' },
+      { stat: '3,3M', label: 'pymes en España — una de las mayores densidades de Europa (INE)' },
+      { stat: '#14', label: 'posición de España en el PIB mundial (FMI, 2024)' },
+      { stat: '30k€+', label: 'salario inicial medio de analista de negocio en España' },
+      { stat: '%30', label: 'crecimiento de vacantes en análisis de negocio (2022–2024)' },
     ],
     domain: {
       heading: 'Qué evalúa el área de Empresa.',
@@ -615,10 +615,10 @@ const ES: Record<TrackId, TrackData> = {
       trust: ['✓ Gratuita para estudiantes', '✓ 14–18 años', '✓ 20 minutos', '✓ Puntuación con IA', '✓ Informe de preparación personalizado'],
     },
     stats: [
-      { stat: '40%', label: 'crecimiento en roles de analista de datos en el Reino Unido 2022–2024' },
-      { stat: '2,7M', label: 'empleos de datos previstos en el Reino Unido para 2028' },
-      { stat: '82%', label: 'de empresas no encuentran candidatos con alfabetización en datos' },
-      { stat: '£55k', label: 'salario medio de analista de datos sénior en Londres' },
+      { stat: '%48', label: 'crecimiento de vacantes en análisis de datos en España (2022–2024)' },
+      { stat: '38k€+', label: 'salario medio de analista de datos sénior en Madrid' },
+      { stat: '90k+', label: 'profesionales de datos en España' },
+      { stat: '€4Mrd', label: 'mercado de data analytics en España (IDC, 2024)' },
     ],
     domain: {
       heading: 'Qué evalúa el área de Análisis de datos.',
@@ -710,10 +710,10 @@ const ES: Record<TrackId, TrackData> = {
       trust: ['✓ Gratuita para estudiantes', '✓ 14–18 años', '✓ 20 minutos', '✓ Puntuación con IA', '✓ Informe de preparación personalizado'],
     },
     stats: [
-      { stat: '£29.600M', label: 'gasto en publicidad digital en el Reino Unido en 2023 (IAB)' },
-      { stat: '32%', label: 'crecimiento en roles de marketing digital 2021–2024' },
-      { stat: '77%', label: 'de los responsables de contratación en marketing no encuentran candidatos con habilidades digitales' },
-      { stat: 'Top 5', label: 'titulaciones de mayor crecimiento: Social Media Manager (LinkedIn UK)' },
+      { stat: '42M+', label: 'usuarios de internet en España (IAB Spain, 2024)' },
+      { stat: '€3,5Mrd', label: 'inversión en publicidad digital en España (IAB Spain, 2024)' },
+      { stat: '%32', label: 'crecimiento de vacantes en marketing digital (2021–2024)' },
+      { stat: '580M', label: 'hispanohablantes en el mundo — el mayor mercado hispanoparlante digital' },
     ],
     domain: {
       heading: 'Qué evalúa el área de Marketing digital.',
