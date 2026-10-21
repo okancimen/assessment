@@ -449,6 +449,34 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/blog/tag/university-admissions",
     f"{BASE_URL}/blog/tag/us-education",
     f"{BASE_URL}/blog/tag/work-experience",
+    # ── Tools ─────────────────────────────────────────────────────────────────
+    f"{BASE_URL}/tools/map-percentile-calculator",
+    f"{BASE_URL}/tools/nwea-rit-calculator",
+    # ── Recent blog posts ─────────────────────────────────────────────────────
+    f"{BASE_URL}/blog/nwea-map-test-prep",
+    f"{BASE_URL}/blog/singapore-gep-test-guide",
+    # ── Missing static pages ──────────────────────────────────────────────────
+    f"{BASE_URL}/11-plus-sas-scores",
+    f"{BASE_URL}/personality-assessment",
+    f"{BASE_URL}/sample-report/personality",
+    f"{BASE_URL}/es/evaluacion-de-personalidad",
+    f"{BASE_URL}/es/evaluacion-academica",
+    f"{BASE_URL}/es/informe-de-ejemplo-personalidad",
+    f"{BASE_URL}/tr/kisilik-degerlendirmesi",
+    f"{BASE_URL}/tr/akademik-degerlendirme",
+    f"{BASE_URL}/tr/kisilik-ornek-rapor",
+    f"{BASE_URL}/fr/evaluation-de-personnalite",
+    f"{BASE_URL}/fr/evaluation-academique",
+    f"{BASE_URL}/fr/exemple-rapport-personnalite",
+    f"{BASE_URL}/ar/taqyim-al-shakhsiya",
+    f"{BASE_URL}/ar/taqyim-acadimi",
+    f"{BASE_URL}/ar/namudhaj-taqrir-shakhsiya",
+    f"{BASE_URL}/ru/otsenka-lichnosti",
+    f"{BASE_URL}/ru/akademicheskaya-otsenka",
+    f"{BASE_URL}/ru/primer-otcheta-lichnosti",
+    f"{BASE_URL}/zh/xingge-pinggu",
+    f"{BASE_URL}/zh/xueshu-pinggu",
+    f"{BASE_URL}/zh/xingge-yangben-baogao",
 ]
 
 
