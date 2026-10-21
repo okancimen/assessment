@@ -35,7 +35,7 @@ export async function POST(
     if (!assessment) return NextResponse.json({ error: 'Not found' }, { status: 404 })
 
     const isGuest = !assessment.child_id && !!assessment.guest_token
-    const isInternship = assessment.assessment_type === 'internship'
+    const isInternship = assessment.assessment_type === 'internship' || assessment.assessment_type === 'internship_university'
 
     if (isGuest) {
       if (!guestToken || assessment.guest_token !== guestToken) {
