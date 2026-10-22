@@ -586,6 +586,36 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           ))}
         </div>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Next Steps</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Once you understand your child&apos;s RIT score, the natural next questions are what to do
+          with it. If their score dropped from a previous test, see{' '}
+          <Link href="/blog/nwea-map-score-dropped" className="text-indigo-600 hover:underline">
+            why MAP scores drop and what to do next
+          </Link>
+          . For targeted improvement strategies, see our subject-specific guides:{' '}
+          <Link
+            href="/blog/how-to-improve-map-reading-score"
+            className="text-indigo-600 hover:underline"
+          >
+            how to improve MAP Reading scores
+          </Link>{' '}
+          and{' '}
+          <Link
+            href="/blog/how-to-improve-map-math-score"
+            className="text-indigo-600 hover:underline"
+          >
+            how to improve MAP Math scores
+          </Link>
+          . For a full evidence-based prep framework, see our{' '}
+          <Link href="/blog/nwea-map-test-prep" className="text-indigo-600 hover:underline">
+            NWEA MAP test prep guide
+          </Link>
+          .
+        </p>
+      </section>
     </>
   ),
 
@@ -1462,6 +1492,28 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
         </div>
       </section>
 
+      <p className="text-gray-700 leading-relaxed mb-6">
+        For subject-specific improvement strategies, see{' '}
+        <Link
+          href="/blog/how-to-improve-map-reading-score"
+          className="text-indigo-600 hover:underline"
+        >
+          how to improve your child&apos;s MAP Reading score
+        </Link>{' '}
+        and{' '}
+        <Link
+          href="/blog/how-to-improve-map-math-score"
+          className="text-indigo-600 hover:underline"
+        >
+          how to improve your child&apos;s MAP Math score
+        </Link>
+        . If a score dropped unexpectedly, see{' '}
+        <Link href="/blog/nwea-map-score-dropped" className="text-indigo-600 hover:underline">
+          what a MAP score drop means and what to do
+        </Link>
+        .
+      </p>
+
       <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
         <div className="flex-1">
           <p className="font-bold text-white text-lg mb-1">Know your child&apos;s RIT level before buying a single workbook</p>
@@ -1651,6 +1703,616 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
             </div>
           ))}
         </div>
+      </section>
+    </>
+  ),
+
+  'nwea-map-score-dropped': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        A lower MAP score is alarming to see — but it doesn&apos;t always mean what parents think it
+        means. Before concluding your child has fallen behind, it&apos;s worth understanding how MAP
+        scores work, what a meaningful drop looks like, and what actually causes the most common
+        declines. This guide walks through each step.
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        Not familiar with MAP RIT scores yet? Read our{' '}
+        <Link href="/blog/nwea-map-scores-explained" className="text-indigo-600 hover:underline">
+          NWEA MAP scores guide
+        </Link>{' '}
+        first — it covers how RIT scores work and what they mean by grade level.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How Much of a Drop Is Normal?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Growth has a standard error of measurement (SEM) of approximately 3 RIT points. This
+          means a score of 215 represents &ldquo;somewhere between 212 and 218&rdquo; — the test
+          cannot resolve finer distinctions than that. A drop of 1–3 RIT points between consecutive
+          tests may reflect nothing more than this natural statistical variation, not a real change
+          in what your child knows.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Drop size</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Likely meaning</th>
+                <th className="text-left p-4 font-semibold text-gray-700">What to do</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['1–3 RIT points', 'Within measurement error; statistically indistinct from flat', 'Monitor next cycle — no immediate action needed'],
+                ['4–6 RIT points (Fall-to-Fall)', 'Summer slide — common in Math, recovers by Spring', 'Normal; targeted math fluency work through autumn'],
+                ['4–6 RIT points (Fall-to-Spring)', 'Possible specific skill gap or test-day conditions', 'Review Learning Continuum, identify stalled skill cluster'],
+                ['7+ RIT points', 'Likely genuine regression — warrants investigation', 'Request teacher consultation; targeted intervention plan'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          The Five Most Common Reasons MAP Scores Drop
+        </h2>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">1. Summer learning loss</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most frequent cause of a lower Fall score compared to the previous Spring is summer
+          learning loss — particularly in Math. NWEA research consistently shows elementary students
+          lose an average of 2–3 Math RIT points over summer, with the effect largest in grades
+          4–6. Reading scores are more resilient, especially for children who read during the
+          summer, but some vocabulary and fluency loss is normal. If your child&apos;s Fall score is
+          lower than last Spring by 4 RIT points or fewer, summer slide is the most likely
+          explanation — and most children recover to Spring levels by the following Spring.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">
+          2. Measurement error and test-day conditions
+        </h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Growth is highly sensitive to effort and test conditions. Because it&apos;s adaptive,
+          a child who clicks through questions carelessly — or who is fatigued, ill, or not engaged
+          — will reach a false floor faster than on a fixed test. A student who rushes the first 10
+          questions will be assigned easier questions for the rest of the session, artificially
+          deflating their score. Scores can vary meaningfully between morning and afternoon
+          administration, or between a motivated child and one who wasn&apos;t.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">3. A genuine skill gap at the next level</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          As students progress through the RIT scale, they eventually encounter a content cluster
+          they haven&apos;t mastered. A child who progressed steadily to RIT 210 in Math may plateau
+          or dip when the test starts sampling heavy fractions and proportional reasoning content —
+          which clusters precisely in the RIT 205–220 range. This doesn&apos;t mean they&apos;ve
+          gone backward; it means they&apos;ve reached the ceiling of what they currently know and
+          need targeted work to push through.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">
+          4. A strand change in what&apos;s being tested
+        </h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Math samples across four content strands: Operations &amp; Algebraic Thinking, Number
+          &amp; Operations, Measurement &amp; Data, and Geometry. A child strong in Algebra but weak
+          in Geometry may score lower in a test window that sampled more geometry questions. NWEA
+          provides subtest scores for each strand — compare these across tests to see if the drop is
+          concentrated in one area or spread across all four.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">
+          5. Growth plateau before a breakthrough
+        </h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Research on skill acquisition shows that progress is rarely linear — students consolidate,
+          plateau, then jump. A flat or slightly lower score in one testing window followed by a
+          larger gain in the next is common, especially at grade transitions when curriculum changes
+          significantly. If the drop is modest and your child&apos;s teacher reports normal classroom
+          performance, this is likely what&apos;s happening.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Tell Which Reason Applies</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Three questions narrow it down quickly:
+        </p>
+        <div className="space-y-4 mb-6">
+          {[
+            ['When did the drop happen?', 'Spring → Fall drops are almost always summer slide. Fall → Spring drops during the school year are more significant.'],
+            ['Which subtest dropped?', 'Request the strand-level breakdown. A drop in one strand (e.g., Operations) but not others points to a specific skill gap, not general regression.'],
+            ['Was Math or Reading affected?', 'Math drops are more common and more recoverable. A Reading drop of 4+ points in a school-year window is less common and warrants faster attention.'],
+          ].map(([q, a]) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-1 text-sm">{q}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">
+            The most useful thing to request from your child&apos;s teacher:
+          </strong>{' '}
+          the MAP Growth Learning Continuum report at your child&apos;s current RIT level. This
+          shows exactly which skills they have mastered and which they haven&apos;t — turning a
+          vague score drop into a specific list of what to work on.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Do Next: A Practical Plan</h2>
+        <div className="space-y-4 mb-6">
+          {[
+            ['Week 1–2: Diagnose', 'Request the strand-level subtest breakdown and the Learning Continuum report. Identify the specific skill cluster that dropped rather than treating the subject as a whole.'],
+            ['Week 3–8: Targeted skill work', 'Address the specific skill gap — not a general "study more" approach. For Math fraction gaps: Khan Academy 5th–6th Grade fractions and visual fraction models. For Reading vocabulary gaps: morphology roots, Newsela at current Lexile, and 30 minutes of daily reading.'],
+            ['Week 9–12: Build habits that sustain gains', 'The gains that stick are the ones built into daily routine. 20–30 minutes of subject-specific practice daily outperforms two-hour weekend sessions.'],
+            ['Next test window: Compare strategically', 'Compare Fall-to-Spring (within a school year) to assess whether targeted intervention worked. Do not compare Spring-to-Fall and panic — summer slide makes that comparison misleading.'],
+          ].map(([step, detail]) => (
+            <div key={step} className="flex gap-4 p-5 border border-gray-100 rounded-xl">
+              <div className="text-indigo-600 font-bold text-sm w-36 shrink-0 pt-0.5">{step}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For a full breakdown of what actually raises MAP scores, see our{' '}
+          <Link href="/blog/nwea-map-test-prep" className="text-indigo-600 hover:underline">
+            MAP test prep guide
+          </Link>{' '}
+          — and our subject-specific guides for{' '}
+          <Link
+            href="/blog/how-to-improve-map-reading-score"
+            className="text-indigo-600 hover:underline"
+          >
+            MAP Reading improvement
+          </Link>{' '}
+          and{' '}
+          <Link
+            href="/blog/how-to-improve-map-math-score"
+            className="text-indigo-600 hover:underline"
+          >
+            MAP Math improvement
+          </Link>
+          .
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-to-improve-map-reading-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Most MAP Reading advice is too generic to be useful: &ldquo;read more,&rdquo;
+        &ldquo;build vocabulary,&rdquo; &ldquo;practise comprehension.&rdquo; This guide is more
+        specific. It covers what MAP Reading actually tests, which interventions NWEA research shows
+        move the needle, and what to do at each grade level — with the goal of raising your
+        child&apos;s RIT score by 4–8 points in a 12–16 week window.
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        Need MAP Reading benchmarks first? See our{' '}
+        <Link href="/blog/nwea-map-scores-explained" className="text-indigo-600 hover:underline">
+          NWEA MAP scores by grade guide
+        </Link>{' '}
+        for average RIT scores and percentile equivalents. For Math strategies, see{' '}
+        <Link
+          href="/blog/how-to-improve-map-math-score"
+          className="text-indigo-600 hover:underline"
+        >
+          how to improve MAP Math scores
+        </Link>
+        .
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What MAP Reading Actually Tests</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Reading covers three main skill areas — and understanding which area your child
+          struggles with is the first step to raising their score efficiently.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Skill area</th>
+                <th className="text-left p-4 font-semibold text-gray-700">What it covers</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Starts dominating at</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Literary text', 'Story elements, character motivation, theme, figurative language, point of view', 'RIT 170–200'],
+                ['Informational text', 'Main idea, text structure, author\'s purpose, evidence and claims', 'RIT 195–220'],
+                ['Vocabulary', 'Words in context, academic language, word relationships, connotation', 'All levels, heaviest at RIT 200+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">The most important insight:</strong> above RIT 200,
+          inference questions — drawing conclusions not explicitly stated in the text — make up the
+          largest portion of the test. Students who can decode fluently but can&apos;t infer
+          reliably will plateau in the RIT 200–215 range regardless of reading volume.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          The Lexile Method: Reading at the Right Level
+        </h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NWEA RIT scores map directly to Lexile levels — the same scale used to measure text
+          complexity. Reading at the right Lexile level is probably the single most actionable thing
+          a parent can do to support MAP Reading growth.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">MAP Reading RIT</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Approx. Lexile range</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Growth reading zone</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['170–185', '200–500L', '400–600L — early chapter books, decodable series'],
+                ['185–200', '500–700L', '700–800L — mid-series fiction, basic non-fiction'],
+                ['200–215', '700–900L', '900–1000L — YA non-fiction, age-appropriate lit'],
+                ['215–225', '900–1100L', '1050–1200L — middle school non-fiction, classics'],
+                ['225+', '1100L+', '1200–1400L — AP-level non-fiction, primary sources'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The growth reading zone is 100–200 Lexile above your child&apos;s current independent
+          level. Reading only at current level maintains but does not advance reading ability.
+          The family report NWEA sends after testing often includes a Lexile range — use that to
+          select books and non-fiction articles.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Practical tools:</strong> Newsela adjusts non-fiction articles to a specific
+          Lexile level — parents can find an article at exactly the right challenge level. CommonLit
+          provides literary and informational texts with built-in comprehension questions. Both are
+          free.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          Vocabulary: The Highest-Leverage Intervention
+        </h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Reading vocabulary questions use Tier 2 academic words — words like{' '}
+          <em>infer, synthesise, ambiguous, paradox, contradict, nuance</em> — that appear across
+          subjects and are rarely taught explicitly at school. These are what separate students at
+          RIT 205 from students at RIT 215.
+        </p>
+        <h3 className="text-lg font-bold text-gray-900 mb-3">Why morphology beats word lists</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Memorising 20 words per week is inefficient. A child who learns the Latin root{' '}
+          <strong>cred</strong> (believe) can decode <em>credible, incredible, credential,
+          discredit, accredit</em> — five words unlocked by one root. One root per week, taught
+          through real examples in reading, is more effective than a weekly flashcard set.
+        </p>
+        <div className="rounded-xl bg-gray-50 border border-gray-100 p-5 mb-4">
+          <p className="font-semibold text-gray-900 mb-3 text-sm">
+            High-value roots to teach by grade level
+          </p>
+          <div className="space-y-2">
+            {[
+              ['Grades 3–4', 'pre-, re-, un-, -ful, -less, -tion — unlocks hundreds of common words'],
+              ['Grades 5–6', 'micro-, macro-, -ology, trans-, inter- — academic and science vocabulary'],
+              ['Grades 7–8', 'Latin roots: rupt, dict, ject, tract, scrib — unlocks Tier 2 academic vocabulary'],
+              ['Grades 9+', 'Greek roots: chron, graph, logy, phon, bio — unlocks advanced academic and test vocabulary'],
+            ].map(([grade, roots]) => (
+              <div key={grade} className="flex gap-3">
+                <span className="text-xs font-semibold text-indigo-600 w-24 shrink-0 pt-0.5">
+                  {grade}
+                </span>
+                <span className="text-sm text-gray-600">{roots}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Building Inference Skills</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Inference is the single most tested skill on MAP Reading above RIT 200 — and the skill
+          most poorly served by typical comprehension practice. Standard comprehension questions ask
+          &ldquo;what happened in the story?&rdquo; MAP inference questions ask &ldquo;what can you
+          conclude that the text does not directly state?&rdquo;
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most effective way to develop inference is through structured conversation during
+          read-alouds, not written exercises. The <strong>QAR method</strong> (Question-Answer
+          Relationship) teaches children to categorise questions by where the answer lives —
+          &ldquo;right there&rdquo; (literal), &ldquo;think and search&rdquo; (inference within the
+          text), or &ldquo;on my own&rdquo; (background knowledge). Practising QAR for 10 minutes
+          during shared reading sessions, two to three times per week, builds the metacognitive
+          awareness MAP Reading requires.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">A simple inference habit to build at home:</strong>{' '}
+          after reading any passage together, ask &ldquo;What did the author not say but want us to
+          understand?&rdquo; Resist answering — wait for your child to reason aloud. This single
+          question, practised consistently, develops more inference ability than most workbook
+          exercises.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          What Realistic Improvement Looks Like
+        </h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Reading gains are slower than Math gains in the short term because they depend on
+          accumulated vocabulary and schema. Typical growth with targeted effort over a 12–16 week
+          window:
+        </p>
+        <div className="space-y-3 mb-6">
+          {[
+            ['Elementary (RIT 175–205)', '4–8 RIT points per year with daily reading at the right Lexile and morphology work'],
+            ['Middle school (RIT 205–220)', '3–6 RIT points per year; vocabulary and inference work are the primary levers'],
+            ['High school (RIT 220+)', '2–4 RIT points per year; gains come from non-fiction exposure and analytical reading'],
+          ].map(([level, gain]) => (
+            <div key={level} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-semibold text-indigo-700 text-sm w-48 shrink-0">{level}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{gain}</span>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For MAP Math improvement strategies, see{' '}
+          <Link
+            href="/blog/how-to-improve-map-math-score"
+            className="text-indigo-600 hover:underline"
+          >
+            how to improve your child&apos;s MAP Math score
+          </Link>
+          . For the full test prep framework covering both subjects, see our{' '}
+          <Link href="/blog/nwea-map-test-prep" className="text-indigo-600 hover:underline">
+            NWEA MAP test prep guide
+          </Link>
+          .
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-to-improve-map-math-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        MAP Math improvement fails for one predictable reason: parents and tutors practise at the
+        wrong level. A Grade 5 student scoring RIT 218 needs Grade 7 content, not Grade 5 — but
+        most at-home practice defaults to grade-level worksheets the child already knows. This guide
+        explains where to target, what the most common barriers are at each RIT band, and how to
+        build a plan that actually moves the score.
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        Not sure what your child&apos;s RIT score means? Start with our{' '}
+        <Link href="/blog/nwea-map-scores-explained" className="text-indigo-600 hover:underline">
+          NWEA MAP scores explained guide
+        </Link>
+        . For Reading strategies, see{' '}
+        <Link
+          href="/blog/how-to-improve-map-reading-score"
+          className="text-indigo-600 hover:underline"
+        >
+          how to improve MAP Reading scores
+        </Link>
+        .
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What MAP Math Actually Tests</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Math draws from four content domains, and the mix shifts as scores increase.
+          Understanding which domain is holding your child back is more useful than general practice.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Domain</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Key skills</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Heavy RIT range</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Operations & Algebraic Thinking', 'Computation, equations, word problems, patterns', 'All levels'],
+                ['Number & Operations', 'Fractions, decimals, ratios, proportions, number sense', 'RIT 185–225'],
+                ['Measurement & Data', 'Geometry, statistics, graphing, area/volume', 'RIT 195–220'],
+                ['Real & Complex Numbers', 'Integers, rational numbers, functions, advanced algebra', 'RIT 220+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs font-mono">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Math also tests two types of thinking at every level:{' '}
+          <strong>procedural fluency</strong> (can your child compute accurately?) and{' '}
+          <strong>conceptual reasoning</strong> (can your child apply mathematical thinking to a new
+          situation?). Most at-home practice over-indexes on computation. MAP weights these roughly
+          equally — a child who can execute procedures fast but can&apos;t reason through an
+          unfamiliar problem will plateau regardless of practice volume.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          The RIT Ladder: What Holds Students Back at Each Level
+        </h2>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">
+          Below RIT 185: Number sense and fact fluency
+        </h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Students at this level are building foundational arithmetic. The barrier is usually one of
+          two things: weak place value understanding or fact fluency gaps (addition and subtraction
+          not automatic). <strong>Intervention:</strong> number line work, base-10 blocks for place
+          value, and timed-but-low-stress fact practice (3–5 minutes per day, not marathon
+          sessions). Reflex Math and similar apps provide adaptive fact practice calibrated to
+          automaticity, not just accuracy.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">
+          RIT 185–205: The multiplication and fraction transition
+        </h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Students here have basic arithmetic but are hitting two barriers simultaneously:
+          multiplication fluency and the introduction of fractions. Multi-digit multiplication errors
+          compound into fraction errors, which compound into ratio errors. Fixing multiplication
+          automaticity first — so cognitive load frees up for fractions — is the right sequence.
+          Fraction introduction should use visual models (fraction bars, area models) before any
+          procedural algorithm.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">
+          RIT 205–220: The fraction barrier
+        </h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This is where the majority of students stall. NWEA learning progression data shows that
+          fraction operations, equivalency, and ratio/proportion questions cluster precisely in this
+          range. A student who understands fractions procedurally (can execute &ldquo;flip and
+          multiply&rdquo;) but not conceptually (cannot explain why dividing by ½ gives a larger
+          number) will consistently struggle with MAP questions in this band.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">
+            The single best intervention for students stuck at RIT 205–215:
+          </strong>{' '}
+          two to three weeks of conceptual fraction work — visual fraction models, number lines, and
+          real-world ratio problems — before reintroducing any procedure. Khan Academy&apos;s 5th
+          and 6th Grade fraction units are the most efficient free resource for this.
+        </Callout>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">
+          RIT 215–225: Proportional reasoning
+        </h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The conceptual transition here is from additive thinking (&ldquo;how much more?&rdquo;)
+          to multiplicative thinking (&ldquo;how many times as much?&rdquo;). Students who cannot
+          fluently work with ratios, unit rates, and percent change will hit a ceiling at RIT
+          218–222. Algebra readiness also becomes the growth lever: students need to represent
+          mathematical relationships with variables, not just compute with numbers.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">
+          RIT 225+: Algebraic reasoning and functions
+        </h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          At this level, procedural fluency is no longer the constraint — students need to reason
+          about abstract relationships. Linear equations, slope, systems of equations, and function
+          notation dominate. Students who have memorised procedures without building algebraic
+          reasoning will score inconsistently here. The fix is problem-solving practice that requires
+          setting up equations from real-world contexts, not executing procedures from a given
+          equation.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          Word Problems: The Most Undervalued Practice Type
+        </h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Math questions are almost always presented in word problem or contextual format —
+          rarely as naked computation. A child who practises only computation exercises will score
+          significantly lower than their procedural ability justifies, because they struggle to
+          extract the mathematical structure from a real-world context.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most effective word problem practice involves <strong>problem setup</strong> as a
+          separate skill: identifying what operation is needed, what information is given, and what
+          is being asked — before calculating anything. A useful habit is requiring your child to
+          write the equation before computing, and checking that the equation matches the problem
+          rather than just that the calculation is correct. This develops the reasoning MAP tests.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Resources by RIT Band</h2>
+        <div className="space-y-3 mb-6">
+          {[
+            ['Below RIT 185', 'Reflex Math (fact fluency), Khan Academy Grade 2–3, base-10 block manipulatives'],
+            ['RIT 185–205', 'Khan Academy Grades 4–5, Zearn (fraction visual models), multiplication fluency apps'],
+            ['RIT 205–220', 'Khan Academy Grades 5–7 (fractions/ratios), NWEA Learning Continuum + Khan crosswalk, IXL Grade 6–7'],
+            ['RIT 220–230', 'Khan Academy Grades 7–8, Art of Problem Solving Introduction series, DeltaMath'],
+            ['RIT 230+', 'Art of Problem Solving, AMC 8/10 past papers (problem-solving reasoning), Khan Grade 8–9'],
+          ].map(([band, resources]) => (
+            <div key={band} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-mono font-semibold text-indigo-700 text-xs w-28 shrink-0 pt-0.5">
+                {band}
+              </span>
+              <span className="text-sm text-gray-600 leading-relaxed">{resources}</span>
+            </div>
+          ))}
+        </div>
+        <p className="text-sm text-gray-500 mb-4">
+          <strong>Khan Academy alignment note:</strong> Khan Academy grade levels correspond to MAP
+          grade equivalents, not RIT scores. A student at RIT 218 in Grade 5 should use Khan
+          Academy Grade 7–8 content — not Grade 5 — to target growth. Cross-reference with the
+          NWEA Learning Continuum for the most precise alignment.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Building a 12-Week Improvement Plan</h2>
+        <div className="space-y-3 mb-4">
+          {[
+            ['Weeks 1–2', 'Diagnose: Look up your child\'s MAP subtest scores by strand. Identify the weakest area. Find their RIT band in the NWEA Learning Continuum.'],
+            ['Weeks 3–6', 'Barrier work: Address the key skill gap identified (fractions, proportional reasoning, algebraic setup) — 20–30 min per day. Use visual models first, then procedures.'],
+            ['Weeks 7–10', 'Word problem practice: Apply the same skill area in word problem contexts. Require the child to write the equation before calculating.'],
+            ['Weeks 11–12', 'Mixed practice: Pull in skills from adjacent RIT bands. Timed but low-stress mixed review. Review any persistent errors conceptually before moving on.'],
+          ].map(([week, detail]) => (
+            <div key={week} className="flex gap-4 p-5 border border-gray-100 rounded-xl">
+              <div className="text-indigo-600 font-bold text-sm w-28 shrink-0 pt-0.5">{week}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For Reading improvement strategies, see{' '}
+          <Link
+            href="/blog/how-to-improve-map-reading-score"
+            className="text-indigo-600 hover:underline"
+          >
+            how to improve your child&apos;s MAP Reading score
+          </Link>
+          . For the full MAP preparation framework, see our{' '}
+          <Link href="/blog/nwea-map-test-prep" className="text-indigo-600 hover:underline">
+            NWEA MAP test prep guide
+          </Link>
+          .
+        </p>
       </section>
     </>
   ),

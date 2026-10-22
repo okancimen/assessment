@@ -80,6 +80,14 @@ const nextConfig: NextConfig = {
       { source: '/ru/stazhirovka', destination: 'https://eduentry.ai/ru', permanent: true },
       // Trailing dot typo from external links
       { source: '/blog/nwea-map-scores-explained.', destination: '/blog/nwea-map-scores-explained', permanent: true },
+      // Internship cluster consolidation — overlapping posts redirected to single canonical post
+      { source: '/blog/early-internship-child-development-career',            destination: '/blog/high-school-internship-benefits-university', permanent: true },
+      { source: '/blog/business-work-experience-high-school-uk',              destination: '/blog/high-school-internship-benefits-university', permanent: true },
+      { source: '/blog/business-work-experience-year-12',                     destination: '/blog/high-school-internship-benefits-university', permanent: true },
+      { source: '/blog/oecd-teenage-work-experience-career-outcomes',         destination: '/blog/high-school-internship-benefits-university', permanent: true },
+      { source: '/blog/oecd-teenage-part-time-work-benefits',                 destination: '/blog/high-school-internship-benefits-university', permanent: true },
+      // GA-recorded 404 URL — redirect to canonical internship post
+      { source: '/blog/part-time-jobs-for-teenagers-benefits-backed-by-oecd', destination: '/blog/high-school-internship-benefits-university', permanent: true },
       // Trailing slash variants
       { source: '/privacy/', destination: '/privacy', permanent: true },
       // /home has no route — redirect to the real homepage

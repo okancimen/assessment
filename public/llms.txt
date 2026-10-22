@@ -54,9 +54,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 
 ### Eduentry.ai blog posts — English
 
-- [Why Early Internships Matter](https://eduentry.com/blog/early-internship-child-development-career): Research on internship benefits at ages 14–16: NACE employment data, developmental psychology findings, and UK university admissions context.
-- [High School Internship Benefits](https://eduentry.com/blog/high-school-internship-benefits-university): Evidence on personality development, self-efficacy, and UK Russell Group admissions guidance for students with work experience.
-- [Business Work Experience UK](https://eduentry.com/blog/business-work-experience-high-school-uk): Definition of business work experience in the UK, how to find placements (direct applications, large employer schemes), and UCAS personal statement guidance.
+- [High School Internship Benefits](https://eduentry.com/blog/high-school-internship-benefits-university): Why high school internships at 14–18 build self-efficacy, resilience, and professional identity — NACE employment data, developmental psychology findings, UK business work experience guidance, and Russell Group admissions context.
 - [How to Get a Tech Internship Before University](https://eduentry.com/blog/how-to-get-tech-internship-before-university): List of UK tech employers offering school-age programmes (Google, Microsoft, KPMG), application process, and what employers expect.
 - [How Does Your Child Compare Globally](https://eduentry.com/blog/how-does-your-child-compare-globally): PISA country rankings, UK vs Singapore/Japan/South Korea score gaps, and explanation of standardised scores vs school grades.
 - [How to Get an Internship with No Experience](https://eduentry.com/blog/how-to-get-internship-no-experience-high-school): Five practical steps to land a high school internship with no prior work history — skill mapping, a readiness report instead of an empty CV, alternative experience routes, and a personalised application letter.
@@ -235,6 +233,9 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 - [CogAT Scores Explained](https://eduentry.com/blog/cogat-scores-explained): CogAT Standard Age Score (SAS) explained — percentile and stanine equivalents, gifted program cut-offs (90th percentile ≈ SAS 121), and how the three batteries (Verbal, Quantitative, Nonverbal) compare.
 - [NWEA MAP Scores Explained](https://eduentry.com/blog/nwea-map-scores-explained): RIT scores, grade-level benchmarks, and gifted identification cut-offs.
 - [NWEA MAP Test Prep: What Actually Works](https://eduentry.com/blog/nwea-map-test-prep): Evidence-based MAP prep for Reading and Math K–12. What raises RIT scores (vocabulary depth, Lexile-matched reading, fraction fluency, adaptive practice), what doesn't (grade-level worksheets, test tricks), and a grade-by-grade strategy guide.
+- [My Child's MAP Score Went Down: What It Means and What to Do Next](https://eduentry.com/blog/nwea-map-score-dropped): A drop of 1–3 RIT points is within MAP Growth's standard error. A drop of 4+ points in a Fall-to-Spring window warrants investigation. Covers summer slide, measurement error, test-day conditions, skill gaps, and a 12-week recovery plan.
+- [How to Improve Your Child's MAP Reading Score](https://eduentry.com/blog/how-to-improve-map-reading-score): Evidence-based MAP Reading strategies by grade — Lexile-matched reading, morphology-based vocabulary, inference (QAR method), and realistic timelines (4–8 RIT points/year at elementary level).
+- [How to Improve Your Child's MAP Math Score](https://eduentry.com/blog/how-to-improve-map-math-score): Grade-by-grade MAP Math strategies — the fraction barrier at RIT 205–220, proportional reasoning at RIT 215–225, resources by RIT band, word problem practice, and a 12-week improvement plan.
 - [ISEE vs SSAT Private School Guide](https://eduentry.com/blog/isee-ssat-private-school-guide): Structural differences, score reporting, and school-by-school test preferences.
 - [How to Prepare for a Gifted Test](https://eduentry.com/blog/how-to-prepare-gifted-test): Evidence-based preparation strategies by test type for US families.
 
@@ -298,16 +299,11 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 
 ## Blog — Internship
 
-- [Why Early Internships Matter](https://eduentry.com/blog/early-internship-child-development-career): Developmental research on internship benefits at ages 14–16, NACE employment data, and UK university admissions context.
-- [High School Internship Benefits](https://eduentry.com/blog/high-school-internship-benefits-university): Research on self-efficacy, personality development, and Russell Group admissions guidance for students with work experience.
-- [Business Work Experience UK](https://eduentry.com/blog/business-work-experience-high-school-uk): Definition, how to find placements (direct applications, large employer schemes), and UCAS personal statement guidance.
+- [High School Internship Benefits](https://eduentry.com/blog/high-school-internship-benefits-university): Why high school internships at 14–18 build self-efficacy, resilience, and professional identity — NACE employment data (83% of employers consider internship experience important), UK business work experience guidance, FTSE 100 Spring Insight schemes (Barclays, Goldman Sachs, KPMG), and Russell Group admissions context.
 - [How to Get a Tech Internship Before University](https://eduentry.com/blog/how-to-get-tech-internship-before-university): UK tech employers with school-age programmes, application process, and employer expectations.
 - [Digital Marketing Work Experience](https://eduentry.com/blog/digital-marketing-work-experience-student-reviews): Typical tasks, tools used, how to find placements, and what students report after completing them.
-- [Business Work Experience Year 12](https://eduentry.com/blog/business-work-experience-year-12): Year 10–12 programme timeline, FTSE 100 Spring Insight schemes (Barclays, Goldman Sachs, KPMG), application calendar.
 - [How to Stand Out in UCAS Applications: What to Build in Year 10 and 11](https://eduentry.com/blog/how-to-differentiate-yourself-at-15): When 26% of A-levels are graded A or A*, grades no longer differentiate competitive UCAS applicants. The four things that do: documented work experience, verified domain knowledge, personal projects, and network.
 - [How to Start a Business at 16](https://eduentry.com/blog/how-to-start-business-at-16): Legal requirements, registration steps, and examples of businesses started by school-age students in the UK.
-- [OECD Research: Teenage Work Experience and Career Outcomes](https://eduentry.com/blog/oecd-teenage-work-experience-career-outcomes): 47 longitudinal studies show teenagers with work experience before 16 earn 5–10% more as adults — what skills it builds and what parents can do.
-- [Part-Time Jobs for Teenagers: OECD Benefits](https://eduentry.com/blog/oecd-teenage-part-time-work-benefits): OECD research on why moderate part-time work builds financial literacy and career confidence, with hours thresholds and how to maximise it.
 - [How to Find an Internship as a Student](https://eduentry.com/blog/how-to-find-internship-as-student): How high school and university students can find an internship with no experience using an adaptive readiness assessment to build a verifiable talent profile.
 
 ## Score interpretation

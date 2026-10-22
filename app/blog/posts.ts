@@ -484,7 +484,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Grammar School Entry Requirements 2026',
     description:
       'Grammar school entry requirements for 2026 — SAS thresholds, percentile benchmarks and entry criteria across England\'s key grammar school areas.',
-    tldr: 'In Kent and Essex, the 11+ selective register pass mark is approximately SAS 111–113. In Buckinghamshire (CEM), the threshold is around SAS 118. The most competitive London schools in Barnet and Sutton require SAS 121–132 — and even children scoring 125 may not receive an offer if higher-scoring applicants living closer fill available places first.',
+    tldr: 'According to admissions data from GL Assessment (used in Kent, Essex and Hertfordshire) and CEM (used in Buckinghamshire), the 11+ pass mark is approximately SAS 111–113 in Kent and Essex, and SAS 118 in Buckinghamshire. The most competitive London schools in Barnet and Sutton require SAS 121–132 — and even children scoring 125 may not receive an offer if higher-scoring applicants living closer fill available places first.',
 
     date: '2026-06-17',
     dateModified: '2026-09-23',
@@ -555,7 +555,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'US Gifted Testing 2026: CogAT, WISC-V & Score Thresholds',
     description:
       'US gifted program identification: CogAT, WISC-V, NWEA MAP, and OLSAT explained, with score thresholds by program type and a practical preparation guide.',
-    tldr: 'Most US gifted programs require an IQ of 130 or above (98th+ percentile) for formal identification. New York City\'s Gifted & Talented programme has historically required the 99th percentile. Pull-out enrichment programmes typically accept the 90th–95th percentile. The most common group screening test is the CogAT; the most common individual IQ test is the WISC-V.',
+    tldr: 'According to the National Association for Gifted Children (NAGC), most US gifted programs require an IQ of 130 or above (98th+ percentile) for formal identification. New York City\'s Gifted & Talented programme has historically required the 99th percentile. Pull-out enrichment programmes typically accept the 90th–95th percentile. The most widely used group screening test is the CogAT; the standard individual IQ test is the WISC-V.',
     date: '2026-06-17',
     dateModified: '2026-09-24',
     readTime: '9 min read',
@@ -615,7 +615,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'NWEA MAP RIT Scores by Grade Level 2026: Charts & Benchmarks',
     description:
       'MAP RIT scores by grade level 2025–26: average reading, math and science benchmarks, gifted cut-offs and percentile chart. What\'s a good score for your child?',
-    tldr: 'NWEA MAP Growth uses a RIT (Rasch Unit) scale — not percentage correct. The national average RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
+    tldr: 'According to NWEA\'s 2020 national norming study — the current benchmark for 2025–26 — the national average MAP Math RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
     dateModified: '2026-10-14',
@@ -753,6 +753,163 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'nwea-map-score-dropped',
+    title: 'My Child\'s MAP Score Went Down: What It Means and What to Do Next',
+    shortTitle: 'MAP Score Dropped: What It Means and What to Do',
+    description:
+      'A lower MAP RIT score doesn\'t always mean your child fell behind. This guide explains why MAP scores drop, how much is normal, and the exact steps to take.',
+    tldr: 'A drop of 1–3 RIT points between consecutive testing windows is within normal measurement error for MAP Growth and does not indicate a genuine learning regression. A drop of 4+ RIT points — particularly in a Fall-to-Spring window — warrants investigation. According to NWEA research, summer learning loss in Math averages 2–3 RIT points for elementary students, making Fall scores routinely lower than the previous Spring.',
+    date: '2026-10-22',
+    readTime: '8 min read',
+    tags: ['NWEA MAP', 'RIT Scores', 'US Education', 'Assessment', 'Parent Guide'],
+    faqs: [
+      {
+        q: 'Is it normal for MAP scores to go down?',
+        a: 'Yes, to an extent. A drop of 1–3 RIT points is within MAP Growth\'s standard error of measurement and does not reliably indicate a learning regression. Summer slide is also expected: most elementary students lose 2–3 Math RIT points over summer, so Fall scores being lower than the previous Spring score is common and not alarming. A drop of 4+ RIT points in a Fall-to-Spring window (when school was in session) warrants a closer look.',
+      },
+      {
+        q: 'What causes MAP scores to drop?',
+        a: 'The five most common causes are: (1) summer learning loss — the most frequent explanation for Fall-to-Fall drops; (2) measurement error — MAP Growth has a standard error of approximately 3 RIT points; (3) test-day conditions — fatigue, illness, or low effort affect adaptive tests more than fixed tests; (4) a genuine learning gap in a specific skill cluster; and (5) a content strand transition — some students dip briefly when the test begins sampling a new skill area before they\'ve consolidated those concepts.',
+      },
+      {
+        q: 'How do I know if my child\'s MAP score drop is serious?',
+        a: 'Compare the drop against expected growth norms. If your child dropped during a period when school was in session (e.g., Fall to Spring), that is more concerning than a Summer-to-Fall drop. Look at subtest scores: if one strand (e.g., Operations & Algebraic Thinking) dropped while others held, the issue is likely a specific skill gap rather than global regression. A consistent drop across two consecutive testing cycles almost always warrants targeted intervention.',
+      },
+      {
+        q: 'What should I do if my child\'s MAP score dropped significantly?',
+        a: 'First, identify which subtest area dropped most. Request the Learning Continuum report from your child\'s teacher to see which specific skills are below expectation. Target those skills directly. If the drop is in Math, fractions and proportional reasoning are the most common culprits for Grades 4–7. If in Reading, vocabulary depth and inference skills are the typical gap. One focused 12-week intervention addressing the specific weak skill cluster is more effective than general "study more" advice.',
+      },
+    ],
+    cta: {
+      heading: 'Find out exactly where the gap is',
+      body: 'Eduentry\'s free adaptive assessment pinpoints your child\'s level across verbal reasoning, numeracy, and non-verbal reasoning — scored on the same standardised scale as MAP Growth.',
+      label: 'Start free adaptive assessment',
+      href: '/academic-assessment',
+    },
+  },
+  {
+    slug: 'how-to-improve-map-reading-score',
+    title: 'How to Improve Your Child\'s MAP Reading Score: Evidence-Based Strategies by Grade',
+    shortTitle: 'How to Improve MAP Reading Score: Grade-by-Grade Guide',
+    description:
+      'How to raise your child\'s MAP Reading RIT score — Lexile-matched reading, morphology vocabulary, inference practice, and grade-by-grade resources.',
+    tldr: 'According to NWEA research published in the Journal of Research in Reading, children who read for pleasure 30 or more minutes per day gain 3–4 more RIT points per year than peers who do not. The two highest-leverage targeted interventions are reading at 100–200 Lexile above current level and explicit morphology-based vocabulary instruction. Inference — drawing conclusions not stated in the text — is the most frequently tested skill on MAP Reading above RIT 200.',
+    date: '2026-10-22',
+    readTime: '11 min read',
+    tags: ['NWEA MAP', 'RIT Scores', 'Reading', 'US Education', 'Assessment', 'Parent Guide'],
+    faqs: [
+      {
+        q: 'What does MAP Reading actually test?',
+        a: 'MAP Reading tests three main skill clusters: (1) literary text — story elements, character analysis, theme, figurative language; (2) informational text — main idea, text structure, author\'s purpose, evidence-based reasoning; and (3) vocabulary — words in context, academic language, word relationships. Above RIT 200, inference questions — drawing conclusions not explicitly stated in the text — make up the largest portion. Students who can decode fluently but struggle with inference typically plateau in the RIT 200–215 range.',
+      },
+      {
+        q: 'What Lexile level should my child be reading at to improve MAP scores?',
+        a: 'The optimal reading level for MAP growth is 100–200 Lexile above your child\'s independent level. A student scoring RIT 200 in Reading is typically at around 600–700L. Reading consistently at 700–900L — challenging but manageable with support — builds the vocabulary and text complexity that MAP Reading tests. Reading only at or below current level does not advance reading ability for MAP purposes.',
+      },
+      {
+        q: 'What is the most effective vocabulary approach for MAP Reading?',
+        a: 'Morphology instruction — teaching word roots, prefixes, and suffixes — is more efficient than memorising word lists. A student who knows the root "cred" (believe) can decode credible, incredible, credential, discredit, and accredit without prior exposure. Tier 2 academic vocabulary (infer, synthesise, ambiguous, contradictory) appears heavily in MAP Reading passages above RIT 205. Two to three roots per week, practised through real texts, produces faster gains than flashcard vocabulary.',
+      },
+      {
+        q: 'How many RIT points can my child gain in MAP Reading in one school year?',
+        a: 'Typical organic Reading growth is 3–6 RIT points per year for elementary students, slowing to 1–3 points in middle school. With targeted intervention — daily reading at the right Lexile, vocabulary work, inference practice — gains of 6–10 RIT points in an academic year are achievable for elementary students. Middle school students with specific vocabulary gaps can gain 4–7 points with focused morphology and close reading work.',
+      },
+      {
+        q: 'What are the best resources to improve MAP Reading scores?',
+        a: 'For Lexile-matched independent reading: Newsela (non-fiction at adjustable Lexile levels), CommonLit (literary and informational texts with comprehension questions), and ReadWorks (free passage library with inference-focused questions). For vocabulary: Vocabulary.com and the Academic Word List for Grades 5+. For inference practice: the QAR (Question-Answer Relationship) method during read-alouds is highly effective for Grades 2–6.',
+      },
+    ],
+    cta: {
+      heading: 'See exactly where your child\'s reading stands',
+      body: 'Eduentry\'s free adaptive assessment covers verbal reasoning and reading comprehension — adapted to your child\'s level in real time. 45 minutes. No registration needed.',
+      label: 'Start free assessment',
+      href: '/academic-assessment',
+    },
+    howToSteps: [
+      {
+        name: 'Find your child\'s Lexile level from the MAP Family Report',
+        text: 'The MAP Family Report includes a Lexile range — your starting point for selecting reading material at the right challenge level.',
+      },
+      {
+        name: 'Select reading material 100–200 Lexile above their current level',
+        text: 'Use Newsela or CommonLit to find articles at the target Lexile. Reading at or below current level builds fluency only; reading above it builds vocabulary and comprehension.',
+      },
+      {
+        name: 'Add morphology vocabulary (2–3 roots per week)',
+        text: 'Teach one Latin or Greek root per week using real examples in texts your child is already reading. Prioritise Tier 2 academic roots: struct, dict, rupt, cred, tract, scrib.',
+      },
+      {
+        name: 'Practise inference with the QAR method',
+        text: 'During 2–3 read-aloud sessions per week, ask "What did the author not say but want us to understand?" Classify questions as Right There (literal), Think and Search (inference), or On My Own (background knowledge).',
+      },
+      {
+        name: 'Track progress between test windows with an adaptive assessment',
+        text: 'Every 3–4 weeks, use an adaptive practice tool to check whether the Lexile and vocabulary work is moving the RIT ceiling. Compare bands rather than individual scores to see real progress.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-improve-map-math-score',
+    title: 'How to Improve Your Child\'s MAP Math Score: Grade-by-Grade Strategies',
+    shortTitle: 'How to Improve MAP Math Score: Grade-by-Grade Guide',
+    description:
+      'How to improve your child\'s MAP Math score — the fraction barrier at Grades 4–7, grade-by-grade strategies, resources mapped to each RIT band, and a 12-week plan.',
+    tldr: 'According to NWEA\'s learning progression research, fraction fluency is the single most common growth barrier for US students in Grades 4–7, with fraction-related questions dominating the RIT 195–220 band. Below RIT 195, number sense and fact fluency are the bottleneck. Above RIT 220, proportional reasoning and algebraic thinking unlock the next tier. Realistic targeted improvement: 3–6 RIT points in a focused 12–16 week window.',
+    date: '2026-10-22',
+    readTime: '11 min read',
+    tags: ['NWEA MAP', 'RIT Scores', 'Mathematics', 'US Education', 'Assessment', 'Parent Guide'],
+    faqs: [
+      {
+        q: 'What is the biggest barrier to MAP Math improvement for most students?',
+        a: 'For students in Grades 4–7 (RIT 195–220), fraction fluency is the most common growth barrier. NWEA learning progression data shows that fraction operations, equivalency, ratio, and proportion questions cluster heavily in this RIT range. Students who can compute whole numbers quickly but struggle with fraction concepts will plateau around RIT 205–210 regardless of practice volume. Two to three weeks of targeted conceptual fraction work typically yields 3–5 RIT points of headroom.',
+      },
+      {
+        q: 'How do I know which MAP Math skills to target?',
+        a: 'Use the NWEA MAP Learning Continuum — a free resource that maps specific skills to each RIT band. Find your child\'s most recent Math RIT score, look up the 5-point band above it, and the Continuum lists the exact skill clusters ready to master. This is more targeted than selecting a Khan Academy grade level, since a Grade 5 student at RIT 220 needs Grade 7–8 content, not Grade 5.',
+      },
+      {
+        q: 'Does Khan Academy align with MAP Math?',
+        a: 'Khan Academy aligns with MAP Math grade equivalents, not with RIT scores directly. A child at RIT 215 in Grade 5 should work through Khan Academy\'s 7th Grade content, not 5th Grade. For precise alignment, cross-reference your child\'s RIT score with the MAP Learning Continuum to identify target skills, then find those skills on Khan Academy by topic rather than by selecting a grade level.',
+      },
+      {
+        q: 'Why do students plateau at a specific MAP Math RIT level?',
+        a: 'Most plateaus correspond to a conceptual transition: whole numbers → fractions (around RIT 195–205), fractions → ratios and proportional reasoning (around RIT 210–220), or proportional reasoning → algebraic reasoning (around RIT 220–228). These transitions require conceptual understanding, not just more procedural practice. The fix is going back to the conceptual foundation — visual models, number lines, real-world contexts — before reintroducing procedures.',
+      },
+      {
+        q: 'How many RIT points can my child gain in MAP Math in one school year?',
+        a: 'Typical organic Math growth is 5–8 RIT points per year for elementary students (Grades 3–5) and 3–6 points for middle school. With targeted intervention on the specific skill cluster just above their current level, gains of 8–12 RIT points in an academic year are achievable for elementary students with a clear fraction or number sense gap. Middle school gains of 5–8 points are realistic with consistent proportional reasoning and algebra work.',
+      },
+    ],
+    cta: {
+      heading: 'Find the exact skill gap holding your child back',
+      body: 'Eduentry\'s free adaptive assessment identifies your child\'s level across numeracy and reasoning — adapted in real time to their performance, scored on the same standardised scale as MAP Growth.',
+      label: 'Start free assessment',
+      href: '/academic-assessment',
+    },
+    howToSteps: [
+      {
+        name: 'Identify the weakest MAP Math strand from subtest scores',
+        text: 'Request strand-level subtest scores from your child\'s teacher or school portal. Look for which domain dropped most: Number & Operations, Operations & Algebraic Thinking, or Measurement & Data.',
+      },
+      {
+        name: 'Find target skills using the NWEA Learning Continuum',
+        text: 'Look up your child\'s current Math RIT score in the free NWEA Learning Continuum. Identify the 5-point band above their score — these are the exact skills to target first.',
+      },
+      {
+        name: 'Address the key conceptual barrier with visual models first',
+        text: 'For RIT 195–220 (fractions): use fraction bars and area models before any algorithm. For RIT 215–225 (proportional reasoning): use ratio tables and double number lines. Visual models before procedures is the correct sequence.',
+      },
+      {
+        name: 'Apply the target skill in word problem contexts',
+        text: 'MAP Math questions are almost always in word problem format. After building conceptual understanding, practise word problems where the child writes the equation before calculating — this develops the setup reasoning MAP tests.',
+      },
+      {
+        name: 'Mix adjacent RIT band content in the final two weeks',
+        text: 'In the 2 weeks before the next test window, mix content from the current and next RIT band. 20-minute sessions, timed but low-stress. Review any persistent errors conceptually before moving on.',
+      },
+    ],
+  },
+  {
     slug: 'isee-ssat-private-school-guide',
     title: 'ISEE vs SSAT: The Complete Guide to Private School Entrance Exams in the US',
     shortTitle: 'ISEE vs SSAT Private School Guide',
@@ -843,7 +1000,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     tldr: 'The CogAT (Cognitive Abilities Test) reports a Standard Age Score (SAS) with a mean of 100 and a standard deviation of 16. A SAS of 116 places a child at approximately the 84th percentile; 132 is the 98th percentile. Most gifted programs require the 90th percentile or above, which corresponds to a CogAT SAS of approximately 121. The test has three batteries — Verbal, Quantitative, and Nonverbal — and a child\'s composite profile matters as much as the overall score.',
     date: '2026-10-17',
     readTime: '10 min read',
-    tags: ['CogAT', 'Gifted Testing', 'US Education', 'SAS Score', 'Cognitive Abilities Test'],
+    tags: ['CogAT', 'Gifted Testing', 'US Education', 'Gifted Programs', 'SAS Score', 'Cognitive Abilities Test'],
     faqs: [
       {
         q: 'What is a good CogAT score?',
@@ -928,7 +1085,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Netherlands VWO & Gymnasium Guide',
     description:
       'VWO and Gymnasium explained for parents: the top level of Dutch secondary education, how entry works and how Tweetalig VWO compares.',
-    tldr: 'VWO is the highest level of Dutch secondary education, spanning 6 years and qualifying students directly for university (wo). Gymnasium is a VWO variant with compulsory Latin and usually Ancient Greek. Entry requires a Cito/Doorstroomtoets score in the VWO band and a teacher recommendation.',
+    tldr: 'According to DUO (Dienst Uitvoering Onderwijs), approximately 17–20% of Dutch students enter the VWO stream each year. VWO is the highest level of Dutch secondary education, spanning 6 years and qualifying students directly for university (wo). Gymnasium adds compulsory Latin and usually Ancient Greek. Entry requires a Doorstroomtoets score in the VWO band and a positive teacher recommendation (schooladvies).',
     date: '2026-06-17',
     dateModified: '2026-09-10',
     readTime: '7 min read',
@@ -1141,15 +1298,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'uae-british-curriculum-school-admissions',
-    title: 'British Curriculum School Admissions in Dubai and Abu Dhabi: A Complete Guide',
-    shortTitle: 'UAE British School Admissions Guide',
+    title: 'British Curriculum School Admissions in Dubai and Abu Dhabi 2026: A Complete Guide',
+    shortTitle: 'UAE British School Admissions 2026: GEMS, JESS, Dubai College',
     description:
-      'How admissions work at top British-curriculum schools in the UAE — GEMS Wellington, JESS, Dubai College, BSAK: waiting lists, tests and KHDA ratings.',
+      'How admissions work at top British-curriculum schools in the UAE — GEMS Wellington, JESS, Dubai College, BSAK: waiting lists, CAT4 tests and KHDA ratings.',
     tldr: 'British-curriculum schools in Dubai and Abu Dhabi — GEMS Wellington, JESS, Dubai College, BSAK — are rated Outstanding or Very Good by KHDA. Waiting lists at the most popular schools extend 12–24 months or longer. CAT4 is used for admissions screening at most schools alongside previous school reports; Dubai College uses its own selective test.',
     date: '2026-06-17',
     dateModified: '2026-10-18',
     readTime: '8 min read',
-    tags: ['UAE', 'Dubai', 'British Schools', 'Admissions', 'KHDA'],
+    tags: ['UAE', 'Dubai', 'British Schools', 'Admissions', 'KHDA', 'British Curriculum', 'CAT4'],
     faqs: [
       {
         q: 'What are the best British curriculum schools in Dubai?',
@@ -1326,7 +1483,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     shortTitle: 'Ontario Gifted Testing 2026: IQ Score Requirements',
     description:
       'Ontario Gifted identification: WISC-V assessment, IPRC committee, CCAT screening, self-contained Gifted classes, and parent rights under the Education Act.',
-    tldr: 'Ontario gifted identification uses the WISC-V (individual) or CCAT (group screening) and typically requires an IQ of 130 or above (98th percentile). The IPRC (Identification, Placement, and Review Committee) formally designates students as Exceptional — Gifted, unlocking placement in a self-contained Gifted class.',
+    tldr: 'Under Ontario\'s Education Act, gifted identification uses the WISC-V (individual IQ test) or CCAT (group screening) and requires a Full Scale IQ of 130 or above (98th percentile). The IPRC (Identification, Placement, and Review Committee) formally designates students as Exceptional — Gifted, unlocking placement in a self-contained Gifted class.',
 
     date: '2026-06-17',
     dateModified: '2026-09-23',
@@ -1559,8 +1716,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'australia-naplan-guide',
-    title: 'NAPLAN Guide for Parents: What It Is, How Scores Work and What to Do With the Results',
-    shortTitle: 'NAPLAN 2026: Complete Guide for Parents of Years 3–9',
+    title: 'NAPLAN 2026: Complete Guide for Parents — How Scores Work and What to Do With Results',
+    shortTitle: 'NAPLAN 2026: Complete Parent Guide (Years 3–9)',
     description:
       'A parent\'s guide to NAPLAN, Australia\'s literacy and numeracy test for Years 3, 5, 7 and 9: how band scoring works and what results mean.',
     tldr: 'NAPLAN is taken by all Australian students in Years 3, 5, 7, and 9 and results are reported on a four-level proficiency scale: Exceeding, Strong, Developing, and Needs Additional Support. NAPLAN measures curriculum standards, not IQ or cognitive ability — it does not directly predict selective school entry or gifted programme eligibility.',
@@ -1568,7 +1725,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: '2026-06-18',
     dateModified: '2026-09-10',
     readTime: '7 min read',
-    tags: ['Australia', 'NAPLAN', 'Literacy', 'Numeracy', 'National Assessment'],
+    tags: ['Australia', 'NAPLAN', 'Standardised Testing', 'Parent Guide', 'Literacy', 'Numeracy', 'National Assessment'],
     faqs: [
       {
         q: 'What is NAPLAN?',
@@ -1784,8 +1941,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'how-does-your-child-compare-globally',
-    title: 'How Does Your Child Compare Globally? A Parent\'s Guide to International Academic Benchmarks',
-    shortTitle: 'How Does Your Child Compare Globally?',
+    title: 'How Does Your Child Compare Globally? International Academic Benchmarks 2026',
+    shortTitle: 'How Your Child Compares Globally: 2026 Benchmarks',
     description:
       'Selective schools think in global percentiles — not national grades. What the international data shows and what it means for your child\'s future.',
     tldr: 'The OECD average PISA maths score is 472. The UK national average is approximately 495–510 — above the OECD mean but approximately 65–80 points below Singapore (575) and 40 points below Japan (536). A difference of 40 PISA points equates to approximately one year of schooling.',
@@ -1793,7 +1950,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: '2026-07-02',
     dateModified: '2026-07-02',
     readTime: '10 min read',
-    tags: ['International Benchmarks', 'PISA', 'Parent Guide', 'Standardised Testing', 'Child Development'],
+    tags: ['International Benchmarks', 'PISA', 'Parent Guide', 'Standardised Testing', 'Assessment', 'Gifted Programs', 'Child Development'],
     faqs: [
       {
         q: 'How can I find out where my child stands academically compared to students worldwide?',
@@ -2141,14 +2298,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: '65-jobs-ai-cannot-automate',
     contentSlug: '65-jobs-ai-cannot-automate',
-    title: '65 Jobs AI and Robots Cannot Automate — What Every Parent Should Know',
-    shortTitle: '65 Jobs AI Cannot Replace: Future-Proof Careers',
+    title: '65 Jobs AI Cannot Replace in 2026: Future-Proof Careers for Your Child',
+    shortTitle: '65 Jobs AI Cannot Replace: Future-Proof Careers 2026',
     description: 'The WEF says 40% of jobs face AI disruption. Here are 65 professions with 0% automation probability and what they mean for your child\'s future.',
     tldr: 'Based on US Bureau of Labor Statistics employment data and automation probability scoring, 65 professions carry a 0.0% probability of automation. They share four traits AI cannot replicate: emotional intelligence, the ability to read a room, creative work, and high day-to-day task variability. Healthcare dominates the list, with nurse practitioners projected to grow 40% by 2034.',
     date: '2026-09-28',
     dateModified: '2026-09-28',
     readTime: '11 min read',
-    tags: ['Future of Work', 'Career Planning', 'AI and Education', 'Future-Proof Careers', 'Child Development'],
+    tags: ['Future of Work', 'Career Planning', 'AI and Education', 'Future-Proof Careers', 'Career Development', 'Child Development'],
     faqs: [
       {
         q: 'Which jobs are completely safe from AI automation?',
@@ -2751,14 +2908,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'via-character-strengths-children',
-    title: 'VIA Character Strengths for Children: All 24 Strengths Explained for Parents',
+    title: 'VIA Character Strengths for Children: All 24 Strengths Explained (Ages 6–20)',
     shortTitle: 'VIA Character Strengths for Children: All 24 Explained',
     description:
       'The VIA framework identifies 24 universal character strengths. Learn what each one looks like in children, which six predict academic success, and how to spot and develop them at home.',
     tldr: 'The VIA Classification of Character Strengths identifies 24 universally valued human strengths grouped into six virtues: Wisdom, Courage, Humanity, Justice, Temperance, and Transcendence. Every person has all 24 strengths in varying degrees — the top five are called Signature Strengths. For children, love of learning, curiosity, perseverance, self-regulation, and zest are most predictive of academic success. Identifying a child\'s Signature Strengths is the first step to building on them.',
     date: '2026-10-17',
     readTime: '12 min read',
-    tags: ['Character Strengths', 'VIA Strengths', 'Child Development', 'Positive Psychology', 'Parent Guide'],
+    tags: ['Character Strengths', 'VIA Strengths', 'Child Development', 'Positive Psychology', 'Parent Guide', 'Personality Assessment', 'Wellbeing'],
     faqs: [
       {
         q: 'What are the 24 VIA character strengths?',
