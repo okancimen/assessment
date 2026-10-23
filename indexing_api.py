@@ -78,6 +78,10 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/blog/oecd-teenage-work-experience-career-outcomes",
     f"{BASE_URL}/blog/oecd-teenage-part-time-work-benefits",
     f"{BASE_URL}/blog/discover-school-age-childs-hidden-strengths",
+    f"{BASE_URL}/blog/test-anxiety-in-children-strengths",
+    f"{BASE_URL}/blog/cogat-scores-explained",
+    f"{BASE_URL}/blog/via-character-strengths-children",
+    f"{BASE_URL}/blog/character-strengths-academic-success",
     # ── Turkish (TR) ──────────────────────────────────────────────────────────
     f"{BASE_URL}/tr/blog/map-testi-nedir",
     f"{BASE_URL}/tr/blog/dubai-lise-rehberi",
@@ -151,6 +155,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/es/blog/oecd-experiencia-laboral-adolescentes-resultados-carrera",
     f"{BASE_URL}/es/blog/oecd-trabajo-parcial-adolescentes-beneficios",
     f"{BASE_URL}/es/blog/descubrir-fortalezas-ocultas-hijo-guia-moderna-padres",
+    f"{BASE_URL}/es/blog/ansiedad-ante-examenes-ninos-fortalezas",
+    f"{BASE_URL}/es/blog/fortalezas-de-caracter-exito-escolar",
     # ── French (FR) ───────────────────────────────────────────────────────────
     f"{BASE_URL}/fr/blog/stages-lycee-avantages-universite",
     f"{BASE_URL}/fr/blog/stage-experience-professionnelle-lycee",
@@ -183,6 +189,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/fr/blog/oecd-experience-professionnelle-adolescents-resultats-carriere",
     f"{BASE_URL}/fr/blog/oecd-travail-partiel-adolescents-avantages",
     f"{BASE_URL}/fr/blog/decouvrir-forces-cachees-enfant-guide-parents-moderne",
+    f"{BASE_URL}/fr/blog/anxiete-examens-enfants-forces",
+    f"{BASE_URL}/fr/blog/forces-de-caractere-reussite-scolaire",
     # ── Arabic (AR) ───────────────────────────────────────────────────────────
     f"{BASE_URL}/ar/blog/cat4-dalil-shamil",
     f"{BASE_URL}/ar/blog/madaras-britaniya-dubai-abu-dhabi",
@@ -215,6 +223,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/ar/blog/oecd-khubra-amaliyya-mubakkira-nataij-mihniyya",
     f"{BASE_URL}/ar/blog/oecd-amal-juzyi-lilmurahiqin-fawayd",
     f"{BASE_URL}/ar/blog/iktishaf-mawahib-tiflak-dalil-walidain-jadid",
+    f"{BASE_URL}/ar/blog/qalaq-alimtihan-lada-alatfal-nuqat-alquwwa",
+    f"{BASE_URL}/ar/blog/quwat-al-shakhsiya-wa-al-tafawwuq-al-dirasi",
     # ── Russian (RU) ──────────────────────────────────────────────────────────
     f"{BASE_URL}/ru/blog/ranniy-stazh-razvitie-rebyonka-karera",
     f"{BASE_URL}/ru/blog/preimushchestva-stazha-v-shkole",
@@ -248,6 +258,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/ru/blog/oecd-podrostkovaya-praktika-rezultaty-kariery",
     f"{BASE_URL}/ru/blog/oecd-podrostkovaya-podrabotka-preimushchestva",
     f"{BASE_URL}/ru/blog/obnaruzhit-skrytye-talenty-rebyonka-rukovodstvo-roditelej",
+    f"{BASE_URL}/ru/blog/sily-kharaktera-i-akademicheskiy-uspekh",
+    f"{BASE_URL}/ru/blog/trevoga-pered-ekzamenami-u-detey-silnye-storony",
     # ── Chinese (ZH) ──────────────────────────────────────────────────────────
     f"{BASE_URL}/zh/blog/pisa-2025-zhongguo-jiazhang-zhinan",
     f"{BASE_URL}/zh/blog/haizi-xueshu-shuiping-ruhe-celiang",
@@ -281,6 +293,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/zh/blog/oecd-qingshaonian-gongzuo-jingyan-zhiye-chengguo",
     f"{BASE_URL}/zh/blog/oecd-qingshaonian-jianzhi-gongzuo-yichu",
     f"{BASE_URL}/zh/blog/faxian-xueling-haizi-yincang-qianli-jiachang-zhinan",
+    f"{BASE_URL}/zh/blog/xingge-youshi-yu-xueyechengjiu",
+    f"{BASE_URL}/zh/blog/ertong-kaoshi-jiaolu-xingge-youshi",
     # Free academic test post — all 7 locales
     f"{BASE_URL}/blog/discover-child-strengths-free-academic-test",
     f"{BASE_URL}/tr/blog/cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet",
