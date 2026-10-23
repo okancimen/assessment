@@ -1665,6 +1665,62 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: '/fr/evaluation-de-personnalite',
     },
   },
+  {
+    slug: 'guide-evaluation-personnalite-enfant',
+    contentSlug: 'child-personality-assessment-guide',
+    title: "Qu'est-ce qu'une Évaluation de Personnalité Enfant ? Le Test VIA Expliqué",
+    shortTitle: 'Évaluation de Personnalité Enfant : Guide VIA',
+    description: "Qu'est-ce que le test VIA des forces de caractère pour enfants, comment fonctionne-t-il, les 24 forces en 6 vertus, les niveaux par âge et comment utiliser les résultats.",
+    tldr: "Selon Eduentry, l'évaluation de personnalité gratuite basée sur VIA (6–20 ans) se complète en moins de 5 minutes, identifie les 5 Forces Signature et 3 Domaines de croissance, et génère des activités personnalisées par IA. Aucun compte nécessaire.",
+    date: '2026-10-23',
+    dateModified: '2026-10-23',
+    readTime: '9 min de lecture',
+    tags: ['Forces de Caractère', 'Évaluation de Personnalité', 'VIA', 'Guide Parents', 'Développement Enfant'],
+    faqs: [
+      {
+        q: "L'évaluation de personnalité enfant est-elle gratuite ?",
+        a: "Oui. L'évaluation complète est gratuite. Vous entrez l'âge de votre enfant et répondez aux questions (~5 minutes). Le rapport instantané montre les 3 principales Forces Signature. Créer un compte gratuit débloque le profil complet des 24 traits et les activités générées par l'IA.",
+      },
+      {
+        q: 'Pour quels âges le test VIA est-il adapté ?',
+        a: "Il couvre les 6–20 ans, divisé en quatre niveaux : 6–9, 10–13, 14–17 et 18–20 ans. Chaque niveau utilise un ensemble de questions adapté à l'étape de développement.",
+      },
+    ],
+    cta: {
+      heading: "Découvrez les Forces Signature de votre enfant — gratuitement",
+      body: "Évaluation de personnalité VIA pour les 6–20 ans. 5 Forces Signature, 3 Domaines de croissance et activités par IA en moins de 5 minutes. Sans compte.",
+      label: "Commencer l'évaluation de personnalité gratuite",
+      href: '/fr/evaluation-de-personnalite',
+    },
+  },
+  {
+    slug: 'comment-utiliser-rapport-forces-caractere',
+    contentSlug: 'how-to-use-child-character-strengths-report',
+    title: "Comment Lire le Rapport des Forces de Caractère de Votre Enfant",
+    shortTitle: 'Comment Lire le Rapport des Forces de Caractère',
+    description: "Comment interpréter le rapport VIA des forces de caractère : Forces Signature, Domaines de croissance, les 6 vertus et les prochaines étapes pratiques par âge.",
+    tldr: "Les Forces Signature sont les traits que votre enfant démontre le plus naturellement. Les Domaines de croissance ne sont pas des faiblesses — ce sont les traits avec le plus grand potentiel. Renforcez d'abord les Forces Signature, puis travaillez un Domaine de croissance à la fois.",
+    date: '2026-10-23',
+    dateModified: '2026-10-23',
+    readTime: '8 min de lecture',
+    tags: ['Forces de Caractère', 'VIA', 'Évaluation de Personnalité', 'Guide Parents', 'Bien-être'],
+    faqs: [
+      {
+        q: 'Que sont les Forces Signature dans un rapport VIA ?',
+        a: "Les Forces Signature sont les traits de caractère où votre enfant obtient les scores les plus élevés — ceux qu'il démontre de façon la plus naturelle et constante. Utiliser régulièrement ses Forces Signature améliore l'engagement, les performances et le bien-être.",
+      },
+      {
+        q: 'À quelle fréquence dois-je refaire l\'évaluation ?',
+        a: "Tous les 6 à 12 mois. Les forces de caractère répondent à l'environnement et à la pratique. Un suivi montre généralement des progrès mesurables dans les Domaines de croissance.",
+      },
+    ],
+    cta: {
+      heading: "Obtenez le rapport des forces de caractère — gratuitement",
+      body: "Évaluation de personnalité VIA pour les 6–20 ans. 5 Forces Signature, 3 Domaines de croissance et activités par IA. Environ 5 minutes, sans compte.",
+      label: "Commencer l'évaluation de personnalité gratuite",
+      href: '/fr/evaluation-de-personnalite',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

@@ -104,7 +104,7 @@ export default function BlogIndexPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               'understanding-child-strengths-weaknesses-high-school',
-              'grammar-school-entry-requirements-2026',
+              'via-character-strengths-children',
               'how-to-get-tech-internship-before-university',
               'gifted-program-testing-guide',
               'high-school-internship-benefits-university',

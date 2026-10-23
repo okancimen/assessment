@@ -2212,6 +2212,66 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr/akademik-degerlendirme',
     },
   },
+  {
+    slug: 'cocuk-kisilik-degerlendirmesi-rehberi',
+    contentSlug: 'child-personality-assessment-guide',
+    title: 'Çocuk Kişilik Değerlendirmesi Nedir? VIA Karakter Güçleri Testi Rehberi',
+    shortTitle: 'Çocuk Kişilik Değerlendirmesi: VIA Karakter Güçleri Rehberi',
+    description: 'VIA karakter güçleri testi nedir, nasıl çalışır? 6 erdem, 24 özellik, 4 yaş kademesi ve sonuçları nasıl kullanacağınıza dair eksiksiz rehber.',
+    tldr: 'Eduentry\'nin ücretsiz VIA destekli kişilik değerlendirmesi (6–20 yaş) 5 dakikada tamamlanır, çocuğunuzun ilk 5 İmza Gücünü ve 3 Gelişim Alanını belirler, yapay zeka destekli kişisel aktiviteler üretir. Hesap gerekmez.',
+    date: '2026-10-23',
+    dateModified: '2026-10-23',
+    readTime: '9 dk okuma',
+    tags: ['Karakter Güçleri', 'Kişilik Değerlendirmesi', 'VIA Karakter Güçleri', 'Ebeveyn Rehberi', 'Çocuk Gelişimi'],
+    faqs: [
+      {
+        q: 'Çocuk kişilik değerlendirmesi ücretsiz mi?',
+        a: 'Evet. Tam değerlendirme ücretsizdir. Çocuğunuzun yaşını girip ebeveyn gözlemine dayalı soruları yanıtlarsınız (yaklaşık 5 dakika); anında rapor görsünüz: ilk 3 İmza Güç. Ücretsiz hesap oluşturarak tüm 24 özellik puanı, 3 Gelişim Alanı, yapay zeka aktiviteleri ve yaşıtlarla karşılaştırma kilidini açabilirsiniz.',
+      },
+      {
+        q: 'VIA karakter güçleri testi hangi yaşlara uygundur?',
+        a: '6–20 yaş arası çocuk ve gençler için uygundur. 6–9, 10–13, 14–17 ve 18–20 yaş olmak üzere dört kademededir. Her kademe yaş gelişimine uygun soru seti ve dil kullanır.',
+      },
+      {
+        q: 'Kişilik değerlendirmesi akademik değerlendirmeden ne farkı var?',
+        a: 'Akademik değerlendirme bilişsel yetenekleri ölçer; kişilik değerlendirmesi karakter özelliklerini. İkisi tamamlayıcıdır: akademik değerlendirme çocuğun neyi yapabildiğini, kişilik değerlendirmesi nasıl biri olduğunu ortaya koyar.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun İmza Güçlerini ücretsiz keşfedin',
+      body: 'VIA destekli kişilik değerlendirmesi — 6–20 yaş, 5 dakika, hesap gerekmez. 5 İmza Güç, 3 Gelişim Alanı ve yapay zeka aktiviteleri.',
+      label: 'Ücretsiz kişilik değerlendirmesini başlat',
+      href: '/tr/kisilik-degerlendirmesi',
+    },
+  },
+  {
+    slug: 'cocugun-karakter-guclerini-nasil-kullanirsin',
+    contentSlug: 'how-to-use-child-character-strengths-report',
+    title: 'Çocuğunuzun Karakter Güçleri Raporu Nasıl Okunur?',
+    shortTitle: 'Karakter Güçleri Raporu Nasıl Okunur?',
+    description: 'VIA karakter güçleri raporunu nasıl yorumlarsınız? İmza Güçler ve Gelişim Alanları ne anlama gelir, 6 erdemi nasıl kullanırsınız ve yaşa göre pratik adımlar.',
+    tldr: 'Eduentry\'nin VIA destekli raporunda İmza Güçler, çocuğunuzun en doğal ve tutarlı biçimde sergilediği özelliklerdir. Gelişim Alanları zayıflık değil — en fazla gelişim potansiyeli olan özelliklerdir. En etkili yaklaşım: önce İmza Güçlere odaklan, sonra tek bir Gelişim Alanı üzerinde somut aktivitelerle çalış.',
+    date: '2026-10-23',
+    dateModified: '2026-10-23',
+    readTime: '8 dk okuma',
+    tags: ['Karakter Güçleri', 'VIA Karakter Güçleri', 'Kişilik Değerlendirmesi', 'Ebeveyn Rehberi', 'Çocuk Refahı'],
+    faqs: [
+      {
+        q: 'İmza Güçler ne anlama gelir?',
+        a: 'İmza Güçler, çocuğunuzun en yüksek puan aldığı — yani en doğal ve tutarlı biçimde sergilediği — karakter özellikleridir. VIA araştırmaları, İmza Güçlerin düzenli kullanımının akademik bağlılığı, refahı ve performansı artırdığını göstermektedir.',
+      },
+      {
+        q: 'Gelişim Alanları zayıflık mı?',
+        a: 'Hayır. Gelişim Alanları, rapordaki en düşük puanlı özelliklerdir; ancak her çocuk tüm 24 özelliğe bir ölçüde sahiptir. Bunlar gelişim potansiyeli en yüksek alanlardır. Aynı anda birkaçıyla uğraşmak yerine, bir seferde bir Gelişim Alanı üzerine somut küçük bir alışkanlık geliştirmek çok daha etkilidir.',
+      },
+    ],
+    cta: {
+      heading: 'Henüz değerlendirmeyi yapmadınız mı?',
+      body: 'VIA destekli kişilik değerlendirmesi — 6–20 yaş, 5 dakika, hesap gerekmez. 5 İmza Güç, 3 Gelişim Alanı ve yapay zeka aktiviteleri.',
+      label: 'Ücretsiz kişilik değerlendirmesini başlat',
+      href: '/tr/kisilik-degerlendirmesi',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

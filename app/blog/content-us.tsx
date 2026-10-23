@@ -2316,4 +2316,313 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'child-personality-assessment-guide': (
+    <>
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is a Child Personality Assessment?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A child personality assessment measures character traits — the values, motivations, and behavioural tendencies that shape how a child engages with the world. It is not an IQ test, a clinical diagnosis, or a Myers-Briggs personality type. The most widely validated framework for children is the <strong>VIA (Values in Action) Character Strengths</strong> model, developed by positive psychologists Dr. Martin Seligman and Dr. Neal Mayerson.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Unlike academic assessments — which measure what a child <em>can do</em> — a character strengths assessment reveals <em>who they are</em>: which traits they demonstrate most naturally, which deserve more development, and how those traits interact with their academic performance and social life.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry&apos;s free personality assessment is parent-rated: you answer on behalf of your child based on observed behaviour. This makes it accessible for children as young as 6 and removes the reading burden from younger children.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The 24 VIA Character Strengths Across 6 Virtues</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The VIA framework organises 24 character strengths into 6 virtue categories. Every child has all 24 to varying degrees — the assessment identifies which are most prominent.
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-amber-50">
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Virtue</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Character Strengths</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ['Wisdom', 'Creativity, Curiosity, Judgement, Love of Learning, Perspective'],
+                ['Courage', 'Bravery, Perseverance, Honesty, Zest'],
+                ['Humanity', 'Love, Kindness, Social Intelligence'],
+                ['Justice', 'Teamwork, Fairness, Leadership'],
+                ['Temperance', 'Forgiveness, Humility, Prudence, Self-Regulation'],
+                ['Transcendence', 'Appreciation of Beauty, Gratitude, Hope, Humour, Spirituality'],
+              ].map(([virtue, strengths]) => (
+                <tr key={virtue} className="even:bg-gray-50">
+                  <td className="border border-gray-200 px-4 py-2 font-medium">{virtue}</td>
+                  <td className="border border-gray-200 px-4 py-2 text-gray-600">{strengths}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Research consistently links five of these strengths to academic outcomes: <strong>Curiosity</strong> and <strong>Love of Learning</strong> predict depth of engagement; <strong>Perseverance</strong> predicts performance under difficulty; <strong>Self-Regulation</strong> predicts study habits; and <strong>Zest</strong> predicts motivation and attendance. But all 24 matter — social intelligence drives peer collaboration, fairness shapes classroom behaviour, and hope predicts resilience after failure.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Character Strengths Matter for Children</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A 2019 meta-analysis of 38 studies found that character strengths interventions in school settings produced significant improvements in academic performance, wellbeing, and engagement — independent of cognitive ability. A child with average cognitive scores but high perseverance and self-regulation consistently outperforms a child with higher cognitive scores but low self-regulation.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The practical implication: identifying and developing character strengths is not a soft alternative to academic work. It is a direct lever on academic outcomes, particularly as curriculum demands increase through secondary school and beyond.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How the Eduentry Personality Assessment Works</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The assessment is divided into four age-calibrated tiers, each with a different question set and question count:
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-amber-50">
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Age Range</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Traits Measured</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Questions</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Approx. Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ['6–9', '12 core traits', '24 questions', '~5 min'],
+                ['10–13', '15 traits', '30 questions', '~7 min'],
+                ['14–17', '20 traits', '40 questions', '~9 min'],
+                ['18–20', 'All 24 traits', '48 questions', '~11 min'],
+              ].map(([age, traits, qs, time]) => (
+                <tr key={age} className="even:bg-gray-50">
+                  <td className="border border-gray-200 px-4 py-2 font-medium">{age}</td>
+                  <td className="border border-gray-200 px-4 py-2">{traits}</td>
+                  <td className="border border-gray-200 px-4 py-2">{qs}</td>
+                  <td className="border border-gray-200 px-4 py-2">{time}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Each question uses a 1–5 star rating scale. You rate how strongly the statement applies to your child&apos;s everyday behaviour — for example: <em>&quot;My child sticks with difficult tasks until they are finished.&quot;</em> The parent-rating format is intentional: it captures observed behaviour rather than self-reported intentions, which produces more stable and actionable results for younger children.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What You Get: Signature Strengths vs Growth Areas</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The report organises results into three layers:
+        </p>
+        <ul className="list-none space-y-3 mb-6">
+          <li className="flex gap-3">
+            <span className="text-amber-500 font-bold mt-0.5">★</span>
+            <div><strong>Signature Strengths (top 5):</strong> The traits your child demonstrates most naturally and consistently. VIA research shows that building on Signature Strengths produces faster development than targeting weaknesses directly.</div>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-blue-500 font-bold mt-0.5">↑</span>
+            <div><strong>Growth Areas (bottom 3):</strong> The traits with the most development potential. These are not deficits — every child has all 24 strengths to some degree. One focused Growth Area at a time, with a concrete activity, is the most effective approach.</div>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-gray-500 font-bold mt-0.5">≡</span>
+            <div><strong>Full 24-trait profile (account required, free):</strong> Shows scores for all 24 character strengths, peer benchmarking against your child&apos;s age group, and AI-generated development activities for each Signature Strength and Growth Area.</div>
+          </li>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The AI-generated activities are age-specific and strength-specific. For a 10-year-old whose top strength is Curiosity, a typical activity might be: <em>&quot;After reading or watching something together, ask one open-ended question and leave a deliberate pause — let your child fill the silence with their own questions.&quot;</em>
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Personality Assessment vs Academic Assessment: What&apos;s the Difference?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          These two assessments are complementary, not competing:
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold"></th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Personality Assessment</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Academic Assessment</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ['What it measures', 'Character traits and values', 'Cognitive ability and reasoning skills'],
+                ['Who answers', 'Parent (observed behaviour)', 'Child (interactive questions)'],
+                ['Output', 'Signature Strengths + Growth Areas', 'Standardised score + percentile by subject'],
+                ['Best for', 'Motivation, resilience, social skills', 'Subject readiness, 11+ prep, gifted screening'],
+                ['Ages', '6–20', '6–17'],
+              ].map(([row, a, b]) => (
+                <tr key={row} className="even:bg-gray-50">
+                  <td className="border border-gray-200 px-4 py-2 font-medium text-gray-700">{row}</td>
+                  <td className="border border-gray-200 px-4 py-2">{a}</td>
+                  <td className="border border-gray-200 px-4 py-2">{b}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Many parents run both: the academic assessment identifies <em>where</em> a child stands cognitively; the personality assessment identifies <em>how</em> they engage — their natural drive, their social approach, their resilience under pressure. Together, the two profiles give a more complete picture than either alone.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Next Steps</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Once you have the report, read our guide on{' '}
+          <Link href="/blog/how-to-use-child-character-strengths-report" className="text-indigo-600 hover:underline">
+            how to read your child&apos;s character strengths report
+          </Link>{' '}
+          — it covers how to interpret Signature Strengths, act on Growth Areas, and use the peer benchmarking data effectively. You can also explore{' '}
+          <Link href="/blog/via-character-strengths-children" className="text-indigo-600 hover:underline">
+            how VIA character strengths predict academic and life outcomes
+          </Link>{' '}
+          for the research behind the framework.
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-to-use-child-character-strengths-report': (
+    <>
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">You Have the Report — Now What?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          You&apos;ve completed the VIA character strengths assessment and you&apos;re looking at the results. The most common mistake parents make at this point is to focus immediately on the Growth Areas — the traits at the bottom of the list. This instinct is understandable but counterproductive. VIA research consistently shows that building on Signature Strengths produces faster, more sustained development than targeting weaknesses directly.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Start with the top. Understand what each Signature Strength means in practice. Find it in your child&apos;s everyday behaviour. Only then consider which Growth Area to work on — and focus on one at a time.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The 6 Virtues: What They Mean in Practice</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The 24 VIA strengths are organised into 6 virtue clusters. Understanding which virtue a strength belongs to tells you <em>how</em> it shows up in your child&apos;s life:
+        </p>
+        <div className="space-y-4 mb-6">
+          {[
+            { virtue: 'Wisdom', colour: 'bg-blue-50 border-blue-200', desc: 'Knowledge-based strengths — how your child acquires and uses information. A child dominant in Wisdom strengths is naturally drawn to learning, asks "why?" constantly, and connects ideas across domains. Curiosity and Love of Learning live here.' },
+            { virtue: 'Courage', colour: 'bg-orange-50 border-orange-200', desc: 'Emotional strengths that help children persist despite difficulty. Perseverance, Bravery, and Zest belong here. A child strong in Courage engages fully, recovers from setbacks quickly, and often takes on challenges that peers avoid.' },
+            { virtue: 'Humanity', colour: 'bg-pink-50 border-pink-200', desc: 'Interpersonal strengths — how your child relates to others one-on-one. Kindness, Love, and Social Intelligence are here. A child dominant in Humanity is deeply empathetic, forms close friendships, and is naturally attuned to others\' emotions.' },
+            { virtue: 'Justice', colour: 'bg-green-50 border-green-200', desc: 'Civic strengths — how your child operates in groups. Teamwork, Fairness, and Leadership belong here. Strong Justice strengths appear in children who take group dynamics seriously, advocate for peers, and take on organising roles.' },
+            { virtue: 'Temperance', colour: 'bg-purple-50 border-purple-200', desc: 'Protective strengths that regulate excess. Self-Regulation, Prudence, Humility, and Forgiveness live here. These strengths help children manage impulses, think before acting, and recover from interpersonal friction.' },
+            { virtue: 'Transcendence', colour: 'bg-yellow-50 border-yellow-200', desc: 'Meaning-making strengths that connect children to something larger than themselves. Gratitude, Hope, Humour, and Appreciation of Beauty are here. Strong Transcendence strengths often appear in children who find deep meaning in small things and maintain optimism through difficulty.' },
+          ].map(({ virtue, colour, desc }) => (
+            <div key={virtue} className={`border rounded-xl p-4 ${colour}`}>
+              <h3 className="font-semibold text-gray-900 mb-1">{virtue}</h3>
+              <p className="text-sm text-gray-700">{desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Act on Signature Strengths</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For each of your child&apos;s top Signature Strengths, identify one activity or context where they can use it intentionally this week. The goal is not to create extra work — it is to notice existing opportunities and name them.
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-amber-50">
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Signature Strength</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">School application</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Home activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ['Curiosity', 'Choose a rabbit-hole topic for a homework project', 'Ask one "why?" follow-up question after every read-aloud'],
+                ['Perseverance', 'Set a "hard work" goal for one subject this term', 'Play a board game or puzzle that requires sustained effort'],
+                ['Kindness', 'Identify one classmate who seems left out', 'Volunteer together for one hour per month'],
+                ['Leadership', 'Nominate for a class role or group task lead', 'Plan and run a family activity from start to finish'],
+                ['Creativity', 'Propose an alternative approach to a school project', 'One open-ended project per week — no instructions, no "correct" answer'],
+                ['Self-Regulation', 'Set a pre-homework wind-down routine', 'Build a screen-time schedule together — child sets the rules'],
+              ].map(([strength, school, home]) => (
+                <tr key={strength} className="even:bg-gray-50">
+                  <td className="border border-gray-200 px-4 py-2 font-medium">{strength}</td>
+                  <td className="border border-gray-200 px-4 py-2 text-gray-600">{school}</td>
+                  <td className="border border-gray-200 px-4 py-2 text-gray-600">{home}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Work on a Growth Area</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Growth Areas are not character flaws — they are the traits with the most development runway. The most effective approach:
+        </p>
+        <ol className="list-none space-y-3 mb-6">
+          {[
+            ['Choose one', 'Pick the Growth Area most relevant to your child\'s current biggest challenge (not the lowest score overall).'],
+            ['Find a micro-behaviour', 'Identify the smallest possible action that exercises that trait. For self-regulation: a 2-minute calm routine before a frustrating task. For humility: asking "what could I have done better?" after any competitive activity.'],
+            ['Practise daily for 30 days', 'Character strengths develop through repeated activation, not occasional big efforts. One small habit practised consistently outperforms an intensive weekend focus.'],
+            ['Use Signature Strengths as scaffolding', 'If your child\'s top strength is Creativity but their Growth Area is Prudence, introduce prudence through creative planning — designing a project timeline as a creative exercise rather than a chore.'],
+          ].map(([title, desc], i) => (
+            <li key={i} className="flex gap-3">
+              <span className="flex-shrink-0 w-6 h-6 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center text-xs font-bold mt-0.5">{i + 1}</span>
+              <div><strong>{title}:</strong> {desc}</div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Use the Peer Benchmarking</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The peer percentile in your report shows how your child&apos;s score for each trait compares to other children the same age who have taken the assessment. A few principles for interpreting it:
+        </p>
+        <ul className="list-disc list-inside space-y-2 mb-4 text-gray-700">
+          <li><strong>50th percentile is average</strong> — not a problem. Half of all children score below this, half above.</li>
+          <li><strong>Below 30th percentile</strong> in a Growth Area is worth a targeted activity, not concern.</li>
+          <li><strong>Above 80th percentile</strong> in a Signature Strength confirms a genuinely prominent trait — lean into it.</li>
+          <li><strong>Avoid comparing siblings</strong> using percentiles — different children, different profiles, different development paths.</li>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Peer benchmarking is most useful for calibrating parental expectations. A child at the 35th percentile for self-regulation is not abnormal — it&apos;s a development target with a realistic improvement path.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Common Mistakes When Reading the Report</h2>
+        <ul className="list-none space-y-3 mb-4">
+          {[
+            ['Focusing only on Growth Areas', 'Strengths-first development consistently outperforms deficit-focused approaches in VIA research. Lead with what your child does well.'],
+            ['Treating the results as fixed', 'Character strengths are not personality types. They respond to environment and deliberate practice. A low score today is a development opportunity, not a permanent label.'],
+            ['Trying to fix everything at once', 'One Growth Area, one habit, 30 days. Scattered effort across multiple traits produces no measurable change.'],
+            ['Not involving the child (for ages 10+)', 'Children who understand their own Signature Strengths are significantly more likely to use them intentionally. Frame the conversation around what they\'re already good at.'],
+            ['Not retaking after 6–12 months', 'Without a follow-up assessment, you have no way to measure whether development activities are producing results. The comparison between two reports is the most motivating data point in the process.'],
+          ].map(([mistake, fix]) => (
+            <li key={mistake} className="flex gap-3">
+              <span className="text-red-400 font-bold mt-0.5 flex-shrink-0">✗</span>
+              <div><strong>{mistake}:</strong> {fix}</div>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Haven&apos;t Taken the Assessment Yet?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The free VIA-backed personality assessment takes under 5 minutes, covers ages 6–20, and requires no account. You can also read our{' '}
+          <Link href="/blog/child-personality-assessment-guide" className="text-indigo-600 hover:underline">
+            complete guide to child personality assessments
+          </Link>{' '}
+          for an overview of the 24 VIA character strengths, the 6 virtues, and how the assessment is structured by age tier.
+        </p>
+      </section>
+    </>
+  ),
 }

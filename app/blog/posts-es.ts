@@ -1398,6 +1398,62 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: '/es/evaluacion-de-personalidad',
     },
   },
+  {
+    slug: 'guia-evaluacion-personalidad-infantil',
+    contentSlug: 'child-personality-assessment-guide',
+    title: '¿Qué es una Evaluación de Personalidad Infantil? Guía del Test VIA de Fortalezas de Carácter',
+    shortTitle: 'Evaluación de Personalidad Infantil: Guía VIA',
+    description: 'Qué es el test VIA de fortalezas de carácter para niños, cómo funciona, las 24 fortalezas en 6 virtudes, niveles por edad y cómo usar los resultados.',
+    tldr: 'Según Eduentry, la evaluación de personalidad gratuita basada en VIA (6–20 años) se completa en menos de 5 minutos, identifica las 5 Fortalezas Insignia y 3 Áreas de Crecimiento de tu hijo, y genera actividades de desarrollo personalizadas con IA. Sin cuenta necesaria.',
+    date: '2026-10-23',
+    dateModified: '2026-10-23',
+    readTime: '9 min de lectura',
+    tags: ['Fortalezas de Carácter', 'Evaluación de Personalidad', 'VIA', 'Guía para Padres', 'Desarrollo Infantil'],
+    faqs: [
+      {
+        q: '¿Es gratuita la evaluación de personalidad infantil?',
+        a: 'Sí. La evaluación completa es gratuita. Solo introduces la edad de tu hijo y respondes las preguntas de observación (~5 minutos). El informe instantáneo muestra las 3 principales Fortalezas Insignia. Crear una cuenta gratuita desbloquea el perfil completo de 24 rasgos, las 3 Áreas de Crecimiento y las actividades generadas por IA.',
+      },
+      {
+        q: '¿Para qué edades es adecuada la evaluación VIA?',
+        a: 'Cubre de 6 a 20 años, dividida en cuatro niveles calibrados por edad: 6–9, 10–13, 14–17 y 18–20 años. Cada nivel usa un conjunto de preguntas adaptado a esa etapa de desarrollo.',
+      },
+    ],
+    cta: {
+      heading: 'Descubre las Fortalezas Insignia de tu hijo — gratis',
+      body: 'Evaluación de personalidad VIA para 6–20 años. 5 Fortalezas Insignia, 3 Áreas de Crecimiento y actividades personalizadas con IA en menos de 5 minutos. Sin cuenta.',
+      label: 'Iniciar evaluación de personalidad gratuita',
+      href: '/es/evaluacion-de-personalidad',
+    },
+  },
+  {
+    slug: 'como-usar-informe-fortalezas-caracter',
+    contentSlug: 'how-to-use-child-character-strengths-report',
+    title: 'Cómo Leer el Informe de Fortalezas de Carácter de tu Hijo',
+    shortTitle: 'Cómo Leer el Informe de Fortalezas de Carácter',
+    description: 'Cómo interpretar el informe VIA de fortalezas de carácter: qué significan las Fortalezas Insignia y las Áreas de Crecimiento, las 6 virtudes y los próximos pasos por edad.',
+    tldr: 'Según el informe VIA de Eduentry, las Fortalezas Insignia son los rasgos que tu hijo demuestra más natural y consistentemente. Las Áreas de Crecimiento no son debilidades — son los rasgos con mayor potencial de desarrollo. El enfoque más efectivo: primero refuerza las Fortalezas Insignia, luego trabaja un Área de Crecimiento a la vez con actividades concretas.',
+    date: '2026-10-23',
+    dateModified: '2026-10-23',
+    readTime: '8 min de lectura',
+    tags: ['Fortalezas de Carácter', 'VIA', 'Evaluación de Personalidad', 'Guía para Padres', 'Bienestar'],
+    faqs: [
+      {
+        q: '¿Qué son las Fortalezas Insignia en un informe VIA?',
+        a: 'Las Fortalezas Insignia son los rasgos de carácter que tu hijo puntúa más alto — los que demuestra de forma más natural, consistente y enérgica. La investigación VIA muestra que los niños que usan sus Fortalezas Insignia regularmente experimentan mayor compromiso, mejor rendimiento y mayor bienestar.',
+      },
+      {
+        q: '¿Con qué frecuencia debo repetir la evaluación?',
+        a: 'La investigación VIA recomienda reevaluar cada 6–12 meses. Las fortalezas de carácter responden al entorno y a la práctica deliberada. Una evaluación de seguimiento suele mostrar avances medibles en las Áreas de Crecimiento.',
+      },
+    ],
+    cta: {
+      heading: 'Obtén el informe de fortalezas de carácter de tu hijo — gratis',
+      body: 'Evaluación de personalidad VIA para 6–20 años. 5 Fortalezas Insignia, 3 Áreas de Crecimiento y actividades con IA. Unos 5 minutos, sin cuenta.',
+      label: 'Iniciar evaluación de personalidad gratuita',
+      href: '/es/evaluacion-de-personalidad',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

@@ -1591,6 +1591,62 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       href: '/zh/xingge-pinggu',
     },
   },
+  {
+    slug: 'ertong-xingge-pinggu-zhinan',
+    contentSlug: 'child-personality-assessment-guide',
+    title: '什么是儿童性格评估？VIA品格优势测试完整指南',
+    shortTitle: '儿童性格评估：VIA品格优势指南',
+    description: '儿童VIA品格优势测试是什么、如何运作、6大美德24项优势、年龄段划分及如何使用结果的完整指南。',
+    tldr: '根据Eduentry，免费的VIA性格评估（6–20岁）不到5分钟即可完成，识别孩子最突出的5项标志性优势和3个成长领域，并生成AI个性化发展活动。无需账户。',
+    date: '2026-10-23',
+    dateModified: '2026-10-23',
+    readTime: '9分钟阅读',
+    tags: ['品格优势', '性格评估', 'VIA', '家长指南', '儿童发展'],
+    faqs: [
+      {
+        q: '儿童性格评估是免费的吗？',
+        a: '是的，完整评估免费。输入孩子年龄并回答观察问卷（约5分钟），即时报告显示前3项标志性优势。创建免费账户可解锁完整24项特质档案、3个成长领域及AI生成的发展活动。',
+      },
+      {
+        q: 'VIA测试适合哪些年龄？',
+        a: '覆盖6–20岁，分为四个年龄段：6–9、10–13、14–17和18–20岁。每个年龄段使用针对该发展阶段校准的题目。',
+      },
+    ],
+    cta: {
+      heading: '免费发现孩子的标志性优势',
+      body: 'VIA性格评估——6–20岁，不到5分钟，无需账户。5项标志性优势、3个成长领域和AI个性化活动。',
+      label: '开始免费性格评估',
+      href: '/zh/xingge-pinggu',
+    },
+  },
+  {
+    slug: 'ruhe-shiyong-xingge-youshi-baogao',
+    contentSlug: 'how-to-use-child-character-strengths-report',
+    title: '如何解读孩子的品格优势报告',
+    shortTitle: '如何解读品格优势报告',
+    description: '如何解读VIA品格优势报告：标志性优势和成长领域的含义、6大美德以及各年龄段的实用下一步建议。',
+    tldr: '根据Eduentry的VIA报告，标志性优势是孩子最自然、最一贯展现的特质。成长领域不是弱点——而是发展潜力最大的特质。最有效的方法：先专注于标志性优势，再一次处理一个成长领域。',
+    date: '2026-10-23',
+    dateModified: '2026-10-23',
+    readTime: '8分钟阅读',
+    tags: ['品格优势', 'VIA', '性格评估', '家长指南', '儿童福祉'],
+    faqs: [
+      {
+        q: 'VIA报告中的标志性优势是什么？',
+        a: '标志性优势是孩子得分最高的特质——他/她最自然、最一贯展现的品质。VIA研究表明，经常使用标志性优势的孩子会表现出更高的投入度、更好的学业成绩和更强的幸福感。',
+      },
+      {
+        q: '多久应该重新评估一次？',
+        a: 'VIA研究建议每6–12个月重新评估。品格优势对环境和有意识的练习有响应。6个月后的跟进评估通常显示成长领域有可测量的进步。',
+      },
+    ],
+    cta: {
+      heading: '免费获取孩子的品格优势报告',
+      body: 'VIA性格评估——6–20岁，5项标志性优势、3个成长领域和AI活动。约5分钟，无需账户。',
+      label: '开始免费性格评估',
+      href: '/zh/xingge-pinggu',
+    },
+  },
 ]
 
 export function getChinesePostBySlug(slug: string) {

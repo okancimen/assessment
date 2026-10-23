@@ -51,6 +51,12 @@ const SERVICE_LINKS = [
     title: 'Academic Subjects Covered',
     desc: 'English, Maths, Verbal Reasoning and Non-Verbal Reasoning — sample questions and what each subject tests.',
   },
+  {
+    tags: ['Character Strengths', 'Personality Assessment', 'VIA Strengths', 'Child Development', 'Wellbeing', 'Parent Guide'],
+    href: '/personality-assessment',
+    title: 'Free Child Personality Assessment',
+    desc: "VIA-backed character strengths test for ages 6–20. Identifies Signature Strengths, Growth Areas, and AI-generated development activities in under 5 minutes. No account needed.",
+  },
 ]
 
 function getServiceLinks(tags: string[]) {

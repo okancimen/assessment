@@ -2258,6 +2258,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Take the full standardised report to the first parents\' evening after the assessment. Present the data alongside your child\'s recent school grades and ask the teacher to help interpret discrepancies — where the cognitive score is significantly higher than school performance, there may be motivational, environmental, or specific learning factors worth investigating. Schools increasingly use standardised data (CAT4 in UK schools) for this purpose; an external assessment report on the same scale is a directly comparable and credible evidence base.',
       },
     ],
+    cta: {
+      heading: "See your child's full character strengths profile",
+      body: "Free VIA-backed personality assessment for ages 6–20. Identifies top 5 Signature Strengths and 3 Growth Areas with AI-generated activities. Takes about 5 minutes.",
+      label: 'Start free personality assessment',
+      href: '/personality-assessment',
+    },
   },
   {
     slug: 'pisa-2025-work-experience-student-readiness',
@@ -2459,10 +2465,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
     ],
     cta: {
-      heading: "See your child's cognitive profile — free",
-      body: "Adaptive assessment for ages 6–17. Verbal reasoning, non-verbal reasoning, maths, and English measured against international benchmarks — no registration required.",
-      label: 'Start free assessment',
-      href: '/academic-assessment',
+      heading: "Discover your child's character strengths — free",
+      body: "Free VIA-backed personality assessment for ages 6–20. Identifies Signature Strengths and Growth Areas with AI-personalised development tips. No account needed.",
+      label: 'Start free personality assessment',
+      href: '/personality-assessment',
     },
   },
   {
@@ -2993,6 +2999,98 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     cta: {
       heading: "Discover your child's character strengths — free",
       body: "Free VIA-backed personality assessment for ages 6–20. Identifies your child's Signature Strengths, Growth Pillars, and personalised development activities in under 15 minutes.",
+      label: 'Start free personality assessment',
+      href: '/personality-assessment',
+    },
+  },
+  {
+    slug: 'child-personality-assessment-guide',
+    title: "What Is a Child Personality Assessment? The VIA Character Strengths Test Explained",
+    shortTitle: "Child Personality Assessment: VIA Character Strengths Explained",
+    description: "What is a VIA character strengths assessment for children? How it works, what it measures, the 24 traits across 6 virtues, age tiers, and how to use the results.",
+    tldr: "According to Eduentry, the free VIA-backed personality assessment (ages 6–20) takes under 5 minutes, identifies your child's top 5 Signature Strengths and 3 Growth Areas, and generates AI-personalised development activities. No account needed to start.",
+    date: '2026-10-23',
+    dateModified: '2026-10-23',
+    readTime: '9 min read',
+    tags: ['Character Strengths', 'Personality Assessment', 'VIA Strengths', 'Parent Guide', 'Child Development'],
+    faqs: [
+      {
+        q: 'Is the child personality assessment free?',
+        a: 'Yes — the full assessment is free. You enter your child\'s age, answer the trait rating questions (about 5 minutes), and receive an instant report showing the top 3 Signature Strengths. Creating a free account unlocks the full 24-trait profile, the 3 Growth Areas, AI-generated development activities, and peer benchmarking.',
+      },
+      {
+        q: 'What age is the VIA character strengths test suitable for?',
+        a: 'The Eduentry personality assessment covers ages 6–20, divided into four age-calibrated tiers: 6–9 (12 traits, 24 questions), 10–13 (15 traits, 30 questions), 14–17 (20 traits, 40 questions), and 18–20 (all 24 traits, 48 questions). Each tier uses age-appropriate language and a different question set calibrated for that developmental stage.',
+      },
+      {
+        q: 'How long does the child personality assessment take?',
+        a: 'Approximately 5 minutes for younger children (ages 6–9) and up to 10–12 minutes for older teens (ages 18–20). The assessment is parent-rated — you answer on behalf of your child based on what you observe — so there is no reading burden on the child.',
+      },
+      {
+        q: 'What are the 24 VIA character strengths?',
+        a: 'The 24 VIA character strengths are organised across 6 virtues: Wisdom (creativity, curiosity, judgement, love of learning, perspective), Courage (bravery, perseverance, honesty, zest), Humanity (love, kindness, social intelligence), Justice (teamwork, fairness, leadership), Temperance (forgiveness, humility, prudence, self-regulation), and Transcendence (appreciation of beauty, gratitude, hope, humour, spirituality). Every person has all 24 strengths to varying degrees; the assessment identifies which are most prominent.',
+      },
+      {
+        q: 'How is a personality assessment different from an academic assessment?',
+        a: 'An academic assessment measures cognitive ability — verbal reasoning, numerical reasoning, and subject knowledge. A personality assessment (VIA character strengths) measures character traits — values, motivations, and behavioural tendencies. They are complementary: academic assessment reveals what a child can do; personality assessment reveals who they are and how they engage with the world. Neither is a clinical diagnosis or an IQ test.',
+      },
+    ],
+    howToSteps: [
+      { name: 'Go to the personality assessment and enter your child\'s age', text: 'No account is required. You only need to enter your child\'s name (optional) and age (6–20). The system automatically selects the right question tier for their developmental stage.' },
+      { name: 'Rate your child\'s character traits (parent-rated, ~5 minutes)', text: 'Answer each question on a 1–5 star scale based on what you observe in your child\'s everyday behaviour — for example, "My child asks lots of questions about how things work." The parent-rating format ensures stability and does not require your child to be present.' },
+      { name: 'Review the top 5 Signature Strengths and 3 Growth Areas', text: 'Your instant report shows the top 5 character strengths your child demonstrates most naturally (Signature Strengths) and the 3 areas with the most room for development (Growth Areas). Each trait includes a description and virtue category.' },
+      { name: 'Read the AI-generated development activities', text: 'For each Signature Strength and Growth Area, the report generates age-appropriate activities — for example, for a child whose top strength is Curiosity: "Ask one open-ended follow-up question after reading together each evening." Activities are tailored to the child\'s age tier and strength profile.' },
+      { name: 'Create a free account to unlock the full 24-trait profile', text: 'The free guest report shows 3 Signature Strengths. Creating a free account reveals all 24 trait scores, peer benchmarking (how your child compares to their age group), and the full AI-generated development plan — all at no cost.' },
+    ],
+    cta: {
+      heading: "Find your child's Signature Strengths — free",
+      body: "VIA-backed personality assessment for ages 6–20. Identifies 5 Signature Strengths, 3 Growth Areas, and AI-personalised development activities in under 5 minutes. No account needed.",
+      label: 'Start free personality assessment',
+      href: '/personality-assessment',
+    },
+  },
+  {
+    slug: 'how-to-use-child-character-strengths-report',
+    title: "How to Read Your Child's Character Strengths Report: A Parent's Guide",
+    shortTitle: "How to Read Your Child's Character Strengths Report",
+    description: "How to interpret your child's VIA character strengths report — what Signature Strengths and Growth Areas mean, how to use the 6 virtues, and practical next steps by age.",
+    tldr: "According to Eduentry's VIA-backed report, Signature Strengths are the character traits your child demonstrates most naturally and consistently. Growth Areas are not weaknesses — they are traits with the most development potential. The most effective approach is to double down on Signature Strengths first, then address one Growth Area at a time with specific, age-appropriate activities.",
+    date: '2026-10-23',
+    dateModified: '2026-10-23',
+    readTime: '8 min read',
+    tags: ['Character Strengths', 'VIA Strengths', 'Personality Assessment', 'Parent Guide', 'Wellbeing'],
+    faqs: [
+      {
+        q: 'What are Signature Strengths in a VIA report?',
+        a: 'Signature Strengths are the character traits your child scores highest on — the ones they demonstrate most naturally, consistently, and energetically. VIA research shows that children (and adults) who use their Signature Strengths regularly experience higher engagement, better performance, and greater wellbeing. The key is not to treat them as fixed labels but as a starting point for intentional development.',
+      },
+      {
+        q: 'What are Growth Areas in a child\'s character strengths report?',
+        a: "Growth Areas are the traits where your child's score is lowest relative to their other strengths. They are not deficits or problems — every child has all 24 strengths to some degree. Growth Areas simply indicate which traits benefit most from deliberate practice. The report recommends focusing on one Growth Area at a time with a specific, concrete activity rather than trying to improve everything at once.",
+      },
+      {
+        q: 'Should I share the report with my child?',
+        a: "For ages 10+, sharing the report together is generally beneficial — framed as a conversation about strengths rather than a judgement. Focus on the Signature Strengths first: \"Look, curiosity is one of your top traits — that fits with how you always want to know why things work the way they do.\" For Growth Areas, use neutral language: \"This is something we could have fun practising together.\" For ages 6–9, translate the findings into activities rather than discussing the report directly.",
+      },
+      {
+        q: 'How often should I retake the assessment?',
+        a: 'VIA research recommends reassessing every 6–12 months. Character strengths are responsive to environment, practice, and developmental stage — the profile of a 9-year-old will differ meaningfully from the same child at 13. A follow-up assessment after 6 months of intentional practice typically shows measurable movement in Growth Areas and sometimes reveals emergent Signature Strengths that were not prominent at the first assessment.',
+      },
+      {
+        q: 'What do the 6 virtues mean in the VIA framework?',
+        a: 'The 24 VIA character strengths are grouped into 6 virtues: Wisdom (knowledge-based strengths like curiosity and love of learning), Courage (emotional strengths like bravery and perseverance), Humanity (interpersonal strengths like kindness and social intelligence), Justice (civic strengths like fairness and leadership), Temperance (protective strengths like self-regulation and prudence), and Transcendence (meaning-making strengths like gratitude and hope). Understanding which virtue cluster your child\'s Signature Strengths fall into reveals how they engage with the world.',
+      },
+    ],
+    howToSteps: [
+      { name: 'Identify your child\'s top Signature Strength', text: 'The first Signature Strength listed is the trait your child scores highest on. Read its description and virtue category. Think of one time in the past two weeks when you observed this strength in action — it confirms the finding and gives you a concrete anchor for the conversation.' },
+      { name: 'Connect each Signature Strength to a specific activity', text: 'For each of the top 3 Signature Strengths, identify one activity that actively uses it. Example: if Creativity is a top strength, introduce an open-ended project once a week with no "correct" answer. If Leadership is prominent, give your child age-appropriate responsibility for organising a family activity.' },
+      { name: 'Pick one Growth Area to focus on for the next 30 days', text: 'Do not try to address all 3 Growth Areas simultaneously. Choose the one most relevant to your child\'s current challenges or goals. Identify one concrete, small behaviour to practise — for example, for self-regulation: a 3-minute wind-down routine before homework. Small, consistent practice beats intensive short bursts.' },
+      { name: 'Use the peer benchmarking to set realistic expectations', text: 'The peer percentile shows how your child\'s trait score compares to other children of the same age. A score at the 40th percentile for self-regulation is not a crisis — it means roughly 60% of children that age score higher, which is a meaningful development target. Use it to calibrate your expectations, not to create pressure.' },
+      { name: 'Re-assess in 6–12 months to track development', text: 'Character strengths change with deliberate practice and developmental milestones. Re-running the assessment 6–12 months later shows concrete movement in Growth Areas and often surfaces new Signature Strengths. The comparison between two reports is the most motivating feedback both parent and child can receive.' },
+    ],
+    cta: {
+      heading: "Get your child's character strengths report — free",
+      body: "VIA-backed personality assessment for ages 6–20. Identifies 5 Signature Strengths, 3 Growth Areas, and AI-personalised development activities. Takes about 5 minutes, no account needed.",
       label: 'Start free personality assessment',
       href: '/personality-assessment',
     },
