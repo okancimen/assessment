@@ -394,22 +394,15 @@ export default async function PersonalityAssessmentPage({
 
       {/* CTA Strip */}
       <section className="py-16 px-6 bg-[#4F46E5] text-white text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Ready to discover who your child truly is?</h2>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="#start"
-              className="inline-block bg-white text-[#4F46E5] hover:bg-indigo-50 font-bold text-base px-8 py-4 rounded-xl transition-colors"
-            >
-              Start Free Assessment
-            </Link>
-            <Link
-              href="/academic-assessment"
-              className="inline-block bg-indigo-700 text-white hover:bg-indigo-800 font-bold text-base px-8 py-4 rounded-xl transition-colors border border-indigo-400"
-            >
-              Try Academic Test
-            </Link>
-          </div>
+        <div className="max-w-lg mx-auto space-y-6">
+          <h2 className="text-2xl sm:text-3xl font-bold">Ready to discover who your child truly is?</h2>
+          <GuestStartForm />
+          <Link
+            href="/academic-assessment"
+            className="inline-block bg-indigo-700 text-white hover:bg-indigo-800 font-semibold text-sm px-6 py-3 rounded-xl transition-colors border border-indigo-400"
+          >
+            Try Academic Test instead →
+          </Link>
         </div>
       </section>
 

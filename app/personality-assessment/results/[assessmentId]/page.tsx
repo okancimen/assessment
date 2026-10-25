@@ -146,6 +146,12 @@ export default async function GuestResultsPage({
   const childName = assessment.guest_name ?? 'Your child'
   const totalTraits = Object.keys(traitScores).length
 
+  const lockedTraits = (Object.entries(traitScores) as [Trait, number][])
+    .sort(([, a], [, b]) => b - a)
+    .map(([trait]) => trait)
+    .filter((trait) => !topStrengths.includes(trait))
+    .slice(0, 5)
+
   return (
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
       <PublicNav locale={locale} />
@@ -192,17 +198,34 @@ export default async function GuestResultsPage({
 
         {/* Login gate — blurred preview + CTA */}
         <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden relative">
-          {/* Blurred preview */}
+          {/* Blurred preview — real trait data so user sees what they're missing */}
           <div className="p-6 space-y-3 blur-sm select-none pointer-events-none" aria-hidden="true">
-            {Array.from({ length: 4 }).map((_, i) => (
-              <div key={i} className="rounded-2xl bg-[#f5f5f7] border border-[#d2d2d7] p-4 flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-[#d2d2d7] shrink-0" />
-                <div className="space-y-1.5 flex-1">
-                  <div className="h-3 bg-[#d2d2d7] rounded-full w-1/3" />
-                  <div className="h-2 bg-[#e5e7eb] rounded-full w-2/3" />
+            {lockedTraits.map((trait, i) => {
+              const virtue = TRAIT_VIRTUE[trait]
+              const colorClass = VIRTUE_COLORS[virtue] ?? 'bg-[#eef2ff] text-[#4F46E5]'
+              return (
+                <div key={i} className="rounded-2xl bg-[#f5f5f7] border border-[#d2d2d7] p-4 space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${colorClass}`}>{virtue}</span>
+                    <span className="text-xs font-semibold text-[#4F46E5]">#{i + 4}</span>
+                  </div>
+                  <p className="font-bold text-sm text-[#1d1d1f]">{t.traitLabels[trait] ?? trait}</p>
+                  <div className="flex items-center gap-1.5">
+                    {[1, 2, 3, 4, 5].map((n) => (
+                      <div
+                        key={n}
+                        className={`w-4 h-4 rounded-full border ${
+                          n <= Math.round(traitScores[trait])
+                            ? 'bg-[#4F46E5] border-[#4F46E5]'
+                            : 'border-[#d2d2d7]'
+                        }`}
+                      />
+                    ))}
+                    <span className="text-xs text-[#6e6e73] ml-1">{traitScores[trait].toFixed(1)}/5</span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
           {/* Overlay */}
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/85 backdrop-blur-[2px] px-6 text-center gap-4">
