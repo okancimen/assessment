@@ -167,7 +167,7 @@ export default function QuestionCard({ question, onAnswer, onNext, onBack, quest
     const result = await onAnswer(optionId, timeTaken)
     if (result) {
       setFeedback(result)
-      await new Promise((resolve) => setTimeout(resolve, result.isCorrect ? 1000 : 1600))
+      await new Promise((resolve) => setTimeout(resolve, 1000))
     }
     onNext()
   }
@@ -177,8 +177,8 @@ export default function QuestionCard({ question, onAnswer, onNext, onBack, quest
 
   function optionBtnClass(optionId: string): string {
     if (feedback) {
-      if (optionId === feedback.correctAnswer)                            return 'border-green-500 bg-green-50 text-green-900'
-      if (optionId === feedback.selectedAnswer && !feedback.isCorrect)   return 'border-red-400 bg-red-50 text-red-900'
+      if (feedback.isCorrect && optionId === feedback.correctAnswer)     return 'border-green-500 bg-green-50 text-green-900'
+      if (!feedback.isCorrect && optionId === feedback.selectedAnswer)   return 'border-red-400 bg-red-50 text-red-900'
       return 'border-[#d2d2d7] text-[#aeaeb2] opacity-40'
     }
     if (selected === optionId) return colors.selectedBtn
@@ -187,8 +187,8 @@ export default function QuestionCard({ question, onAnswer, onNext, onBack, quest
 
   function circleBadgeClass(optionId: string): string {
     if (feedback) {
-      if (optionId === feedback.correctAnswer)                            return 'bg-green-500 text-white'
-      if (optionId === feedback.selectedAnswer && !feedback.isCorrect)   return 'bg-red-400 text-white'
+      if (feedback.isCorrect && optionId === feedback.correctAnswer)     return 'bg-green-500 text-white'
+      if (!feedback.isCorrect && optionId === feedback.selectedAnswer)   return 'bg-red-400 text-white'
       return 'bg-[#f5f5f7] text-[#aeaeb2]'
     }
     return selected === optionId ? colors.selectedCircle : 'bg-[#f5f5f7] text-[#6e6e73]'
@@ -196,8 +196,8 @@ export default function QuestionCard({ question, onAnswer, onNext, onBack, quest
 
   function circleLabel(optionId: string): string {
     if (feedback) {
-      if (optionId === feedback.correctAnswer)                            return '✓'
-      if (optionId === feedback.selectedAnswer && !feedback.isCorrect)   return '✗'
+      if (feedback.isCorrect && optionId === feedback.correctAnswer)     return '✓'
+      if (!feedback.isCorrect && optionId === feedback.selectedAnswer)   return '✗'
     }
     return optionId
   }
@@ -272,7 +272,7 @@ export default function QuestionCard({ question, onAnswer, onNext, onBack, quest
             : 'bg-red-50 border-red-200 text-red-800',
         )}>
           <p className="font-semibold mb-0.5">
-            {feedback.isCorrect ? '✓ Correct!' : `✗ The correct answer was ${feedback.correctAnswer}`}
+            {feedback.isCorrect ? '✓ Correct!' : '✗ Not quite'}
           </p>
           {feedback.explanation && <p className="text-xs mt-1 opacity-90">{feedback.explanation}</p>}
         </div>
