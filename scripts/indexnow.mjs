@@ -133,6 +133,28 @@ for (const file of changed) {
     ;['/about', '/methodology', '/subjects', '/grammar-schools', '/11-plus', '/your-childs-potential',
       '/sample-report', '/demo'].forEach(p => urls.add(BASE + p))
   }
+
+  // Tag utils changed → submit all EN + locale tag pages
+  if (file === 'app/blog/tag-utils.ts') {
+    const tagSlugs = ['11-plus','academic-assessment','australia','canada','career-development','cat4','child-development','gifted-education','grammar-schools','internship','netherlands','parent-guide','uae','uk-education','university-admissions','us-education','work-experience']
+    for (const slug of tagSlugs) {
+      urls.add(`${BASE}/blog/tag/${slug}`)
+      for (const locale of ['tr','es','fr','ar','ru','zh']) {
+        urls.add(`${BASE}/${locale}/blog/tag/${slug}`)
+      }
+    }
+  }
+
+  // Locale tag page files → submit that locale's tag pages
+  const localeTagMatch = file.match(/^app\/([a-z]{2})\/\(public\)\/blog\/tag\//)
+  if (localeTagMatch) {
+    const locale = localeTagMatch[1]
+    const tagSlugs = ['11-plus','academic-assessment','australia','canada','career-development','cat4','child-development','gifted-education','grammar-schools','internship','netherlands','parent-guide','uae','uk-education','university-admissions','us-education','work-experience']
+    for (const slug of tagSlugs) {
+      urls.add(`${BASE}/${locale}/blog/tag/${slug}`)
+    }
+    urls.add(`${BASE}/${locale}/blog`)
+  }
 }
 
 const urlList = [...urls]
