@@ -47,5 +47,5 @@ export default async function QuestionPage({
   if (assessment.status === 'completed') redirect(`/assessment/${id}/results`)
 
   if (isInternship) return <InternshipClient assessmentId={id} />
-  return <AssessmentClient assessmentId={id} />
+  return <AssessmentClient assessmentId={id} loggedIn />
 }

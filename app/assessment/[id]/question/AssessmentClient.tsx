@@ -218,7 +218,7 @@ type FetchResult =
 
 // ── Main component ────────────────────────────────────────────────────────────
 
-export default function AssessmentClient({ assessmentId, urlGuestToken }: { assessmentId: string; urlGuestToken?: string }) {
+export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn }: { assessmentId: string; urlGuestToken?: string; loggedIn?: boolean }) {
   const router = useRouter()
 
   function guestHeaders(): HeadersInit {
@@ -253,8 +253,9 @@ export default function AssessmentClient({ assessmentId, urlGuestToken }: { asse
     if (urlGuestToken) {
       localStorage.setItem(`guestToken_${assessmentId}`, urlGuestToken)
     }
-    setIsGuest(!!localStorage.getItem(`guestToken_${assessmentId}`))
-  }, [assessmentId, urlGuestToken])
+    // loggedIn overrides localStorage — assessment was claimed after account creation
+    setIsGuest(!loggedIn && !!localStorage.getItem(`guestToken_${assessmentId}`))
+  }, [assessmentId, urlGuestToken, loggedIn])
 
   // Reset save panel when a new break screen appears
   useEffect(() => {
