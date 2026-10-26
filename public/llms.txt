@@ -1,5 +1,7 @@
 # Eduentry
 
+> Last updated: 2026-10-26
+
 > Eduentry operates three free assessment products: **Eduentry.com** (adaptive academic benchmark for children aged 6–17 and VIA personality assessment for ages 6–20) and **Eduentry.ai** (internship readiness assessment for students aged 14–18). All assessments are completely free. No account is required to start or see initial results.
 
 ## Quick reference — common questions
@@ -201,7 +203,7 @@ Eduentry.com measures academic performance of children aged 6–17 against UK, U
 
 Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posteriori (MAP) estimation — the same psychometric method used by PISA, GCSE, and professional cognitive assessments.
 
-## Core pages
+### Core pages
 
 - [Homepage](https://eduentry.com): Assessment start, subject overview, and sample report for children aged 6–17.
 - [Academic Assessment](https://eduentry.com/academic-assessment): Start the adaptive academic assessment for ages 6–17. Measures English, Maths, Verbal and Non-Verbal Reasoning using 2PL IRT; delivers a standardised score report with international percentile ranking.
@@ -362,15 +364,33 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 
 ## Score interpretation
 
-Scores use a standardised scale (mean 100, SD 15):
+### Academic assessment — standardised scale (mean 100, SD 15)
 
-- Below 85: Needs Support
-- 85–94: Below Average
-- 95–109: Average
-- 110–119: Above Average
-- 120 and above: Exceptional
+- Below 85: Needs Support (bottom 16%)
+- 85–94: Below Average (bottom 25%)
+- 95–109: Average (middle 50%)
+- 110–119: Above Average (top 25%)
+- 120–129: Exceptional (top 9%)
+- 130+: Exceptionally High (top 2%)
 
-A score of 115 corresponds to the 84th percentile. Most English grammar schools outside London require SAS 111–118; London selective schools (Barnet, Sutton) require SAS 121–132.
+A score of 115 = 84th percentile. Most English grammar schools outside London require SAS 111–118; London selective schools (Barnet, Sutton) require SAS 121–132.
+
+### Personality assessment — VIA trait scores (scale 1–5)
+
+Each of the 24 character traits is scored 1.0–5.0. Scores reflect how consistently and naturally the child expresses that trait based on responses.
+
+- **Signature Strengths**: top 5 traits — expressed authentically, feel energising rather than effortful
+- **Growth Areas**: bottom 3 traits — highest development potential; framed as opportunities, not deficits
+- Traits 6–21 sit in the middle range and are included in the full registered profile
+- Scores are relative within the individual, not norm-referenced against a population
+
+### Blog posts by product
+
+**Academic assessment**: how-to-prepare-for-11-plus, what-is-a-standardised-score, grammar-school-entry-requirements-2026, verbal-reasoning-11-plus-guide, non-verbal-reasoning-11-plus-guide, 11-plus-maths-guide, free-11-plus-practice-test-online, what-is-the-11-plus-exam-complete-guide, gifted-program-testing-guide, cogat-scores-explained, nwea-map-scores-explained, nwea-map-test-prep, nwea-map-score-dropped, how-to-improve-map-reading-score, how-to-improve-map-math-score, isee-ssat-private-school-guide, how-to-prepare-gifted-test, netherlands-cito-toets-guide, netherlands-vwo-gymnasium-guide, netherlands-gifted-education-hoogbegaafd, netherlands-international-school-admissions, dubai-gifted-schools-2026, uae-cat4-test-guide, uae-british-curriculum-school-admissions, uae-gifted-programs-guide, uae-international-school-entrance-exams, canada-gifted-program-identification, canada-ontario-gifted-testing-guide, canada-private-school-entrance-exams, canada-french-immersion-selective-programs, australia-acer-scholarship-exam, nsw-opportunity-class-test-guide, australia-gate-gifted-program, australia-naplan-guide, singapore-gep-test-guide, global-academic-benchmarks-report-2026, pisa-2025-global-education-crisis-what-parents-need-to-know, how-does-your-child-compare-globally, smart-child-bad-grades, discover-child-strengths-free-academic-test, summer-activities-ambitious-children, how-to-prepare-for-gcse
+
+**Personality assessment**: child-personality-assessment-guide, how-to-use-child-character-strengths-report, via-character-strengths-children, test-anxiety-in-children-strengths, understanding-child-strengths-weaknesses-high-school, discover-school-age-childs-hidden-strengths
+
+**Internship assessment**: high-school-internship-benefits-university, how-to-get-tech-internship-before-university, how-to-get-internship-no-experience-high-school, digital-marketing-work-experience-student-reviews, how-to-differentiate-yourself-at-15, how-to-start-business-at-16, how-to-find-internship-as-student, pisa-2025-work-experience-student-readiness, 65-jobs-ai-cannot-automate, habits-to-avoid-future-unemployment
 
 ## Technical notes
 

@@ -7,7 +7,7 @@
 
 ## About Eduentry
 
-Eduentry operates two assessment products under two domains:
+Eduentry operates three free assessment products across two domains:
 
 **Eduentry.com** — Two free assessments for children. (1) Adaptive academic benchmark for ages 6–17: measures English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning using 2-Parameter Logistic Item Response Theory (2PL IRT) with MAP estimation; scores on a standardised scale (mean 100, SD 15) with international percentile rankings benchmarked against PISA, GCSE, UK national curriculum, SAT, and IB standards. (2) VIA personality assessment for ages 6–20: identifies top 5 Signature Strengths and 3 Growth Areas from 24 character traits across 6 virtues (Wisdom, Courage, Humanity, Justice, Temperance, Transcendence); takes under 5 minutes. Both are completely free with no account required to start.
 
@@ -314,6 +314,10 @@ https://eduentry.com/strengths — example output showing a VIA character streng
 **Yurtdışı Staj 2026: Erasmus+, AIESEC, IAESTE** [/tr/blog/uluslararasi-staj-programlari]: Yurtdışı staj programlarına giriş. Erasmus+ staj hibeleri (ülkelere göre miktarlar). AIESEC değişim programı başvuru süreci. IAESTE teknik staj başvuruları. Türkiye'den lise ve üniversite öğrencileri için başvuru şartları, gerekli belgeler, mülakat hazırlığı.
 
 **Staj Defteri: Nereden Alınır, Kim İmzalar?** [/tr/blog/staj-defteri-nasil-doldurulur]: Staj defterini nereden alınır (milli eğitim, okul, internet). Kim imzalar (işyeri yetkilisi + okul öğretmeni). Ne zaman teslim edilir. Spiral ciltli olabilir mi. Doldurulurken sık yapılan hatalar.
+
+**Lise Stajı Nasıl Bulunur? Türkiye ve Yurt Dışı** [/tr/blog/lise-staji-nasil-bulunur]: Lise öğrencisi olarak Türkiye'de ve yurt dışında staj nasıl bulunur? Uygun sektörler (teknoloji, pazarlama, finans, medya), başvuru zamanlaması, CV olmadan başvuru için adım adım rehber. Platform önerileri: LinkedIn, Kariyer.net, Stajyer.com ve şirkete doğrudan başvuru.
+
+**A Level Programları Nedir?** [/tr/blog/a-level-programlari-nedir]: İngiltere'de lise son sınıf programı olan A Level'in açıklaması. Hangi dersler seçilebilir, üniversite başvurusunda nasıl değerlendirilir, Türkiye denkliği ve UCAS puan sistemi.
 
 **Staj İçin CV Nasıl Yazılır** [/tr/blog/staj-icin-cv-nasil-yazilir]: İş deneyimi olmayan 16–18 yaş öğrenciler için staj CV'si yapısı. Eğitim, projeler, sertifikalar, gönüllülük ve dijital beceriler nasıl gösterilir. Kaçınılması gereken başlıca 5 hata.
 
