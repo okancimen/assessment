@@ -35,6 +35,9 @@ const AI_BOTS = [
   'Applebot-Extended',
   'CCBot',
   'YouBot',
+  'AI2Bot',
+  'Diffbot',
+  'PetalBot',
 ]
 
 export default function robots(): MetadataRoute.Robots {
