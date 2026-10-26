@@ -2625,4 +2625,472 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'wisc-v-scores-explained': (
+    <>
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is the WISC-V?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The Wechsler Intelligence Scale for Children, Fifth Edition (WISC-V) is the most widely used individually administered IQ test for children ages 6 through 16 years 11 months. It is administered one-on-one by a licensed psychologist or school psychologist and produces a Full Scale IQ (FSIQ) plus five index scores covering different cognitive domains.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Unlike group-administered tests such as the CogAT or NWEA MAP, the WISC-V is a clinical instrument. Its scores are used for gifted programme identification, learning disability diagnosis, educational planning, and special education eligibility decisions. A WISC-V report carries significant legal and diagnostic weight in US school systems.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The test was last updated in 2014 (WISC-V replaced WISC-IV), with a standardisation sample of over 2,200 children stratified to match US Census demographics. Scores are norm-referenced against children of the same age, reported on a scale with a mean of 100 and standard deviation of 15.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Full Scale IQ (FSIQ): What the Score Ranges Mean</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The FSIQ is derived from 7 of the 10 primary subtests and represents the best single-score summary of a child&apos;s overall cognitive ability. It uses the standard score scale: mean 100, standard deviation 15. Every 15 points up or down corresponds to one standard deviation — roughly the difference between the average and the 84th percentile.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="min-w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">FSIQ Range</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Classification</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Percentile Range</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Gifted Context</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {[
+                ['145–160', 'Extremely High', '99.9th', 'Profoundly gifted — highly selective programmes, Davidson Academy'],
+                ['135–144', 'Extremely High', '99th–99.8th', 'Highly gifted — most magnet GT programmes; MENSA eligible'],
+                ['130–134', 'Very High / Gifted', '98th–99th', 'Standard gifted threshold in most US districts'],
+                ['120–129', 'Superior', '91st–97th', 'High Average to Superior — borderline gifted consideration'],
+                ['110–119', 'High Average', '75th–90th', 'Above average — enrichment programmes, but below GT threshold'],
+                ['90–109', 'Average', '25th–74th', 'Typical range for general population'],
+                ['80–89', 'Low Average', '9th–24th', 'Below average'],
+                ['Below 80', 'Below Average', 'Below 9th', 'May indicate learning or cognitive differences'],
+              ].map(([range, label, pct, note]) => (
+                <tr key={range} className="hover:bg-gray-50">
+                  <td className="px-4 py-3 font-mono text-gray-800">{range}</td>
+                  <td className="px-4 py-3 text-gray-800">{label}</td>
+                  <td className="px-4 py-3 text-gray-600">{pct}</td>
+                  <td className="px-4 py-3 text-gray-600 text-xs">{note}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout>
+          The 130 threshold for gifted identification is not arbitrary — it represents two standard deviations above the mean, encompassing approximately the top 2.3% of the population. Most US gifted programmes are designed to serve roughly this proportion of students.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Five WISC-V Index Scores</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Beyond the FSIQ, the WISC-V reports five primary index scores, each measuring a distinct aspect of cognitive functioning. Like the FSIQ, each index has a mean of 100 and standard deviation of 15. Understanding these index scores is essential for interpreting a complex profile — a child&apos;s FSIQ may not tell the full story.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="min-w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Index</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Abbreviation</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">What It Measures</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Subtests</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {[
+                ['Verbal Comprehension Index', 'VCI', 'Vocabulary, word knowledge, verbal analogical reasoning, and ability to express ideas in words', 'Similarities, Vocabulary (+ Information, Comprehension)'],
+                ['Visual Spatial Index', 'VSI', 'Ability to evaluate visual details, understand spatial relationships, and rotate/manipulate visual patterns', 'Block Design, Visual Puzzles'],
+                ['Fluid Reasoning Index', 'FRI', 'Abstract problem-solving, inductive and deductive reasoning, pattern completion without prior knowledge', 'Matrix Reasoning, Figure Weights (+ Picture Concepts, Arithmetic)'],
+                ['Working Memory Index', 'WMI', 'Ability to hold, manipulate, and transform information in short-term memory', 'Digit Span, Picture Span (+ Letter-Number Sequencing)'],
+                ['Processing Speed Index', 'PSI', 'Speed and accuracy of simple visual scanning and decision-making tasks under time pressure', 'Coding, Symbol Search (+ Cancellation)'],
+              ].map(([name, abbr, desc, subtests]) => (
+                <tr key={abbr} className="hover:bg-gray-50">
+                  <td className="px-4 py-3 font-semibold text-gray-800">{name}</td>
+                  <td className="px-4 py-3 font-mono text-indigo-700 font-bold">{abbr}</td>
+                  <td className="px-4 py-3 text-gray-700 text-xs">{desc}</td>
+                  <td className="px-4 py-3 text-gray-500 text-xs">{subtests}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Among these, the <strong>Fluid Reasoning Index (FRI)</strong> is considered the strongest single predictor of academic and occupational achievement in the research literature, and the most direct measure of <em>g</em> (general cognitive ability). Many gifted coordinators pay close attention to FRI even when the FSIQ is slightly below the 130 threshold.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">WISC-V Gifted Cut-Offs by Programme Type</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gifted cut-offs vary significantly by programme selectivity. There is no single national standard — each state and district sets its own criteria. The table below reflects the most common patterns across US programmes.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="min-w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Programme Type</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Typical FSIQ Requirement</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Approx. Percentile</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {[
+                ['District GT pull-out / enrichment', '125–130+', '95th–98th'],
+                ['Self-contained GT classroom', '128–132+', '97th–98th'],
+                ['Gifted magnet school (public)', '130–135+', '98th–99th'],
+                ['Private gifted school admission', '130–140+', '98th–99.6th'],
+                ['Talent search programmes (CTY, Duke TIP)', '125+ (plus SAT/ACT above-level)', '95th+'],
+                ['Highly gifted / twice-exceptional support', '145+ (or discrepant profile)', '99.9th+'],
+              ].map(([prog, fsiq, pct]) => (
+                <tr key={prog} className="hover:bg-gray-50">
+                  <td className="px-4 py-3 text-gray-800">{prog}</td>
+                  <td className="px-4 py-3 font-mono text-gray-800">{fsiq}</td>
+                  <td className="px-4 py-3 text-gray-600">{pct}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout>
+          Always verify the specific criteria with your district&apos;s gifted coordinator. Many districts publish their gifted identification policies online. The FSIQ cut-off is often one of several criteria — MAP scores, CogAT scores, teacher ratings, and portfolio evidence may all be required.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">WISC-V vs. CogAT vs. NWEA MAP: What Each Measures</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          These three assessments frequently appear together in gifted identification discussions, but they measure fundamentally different things and serve different functions in the identification process.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="min-w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Assessment</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Type</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Administration</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Primary Use</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {[
+                ['WISC-V', 'IQ / Cognitive ability', 'Individual (psychologist)', 'Formal gifted identification, LD diagnosis, programme eligibility'],
+                ['CogAT', 'Cognitive reasoning ability', 'Group (school-administered)', 'Gifted screening, academic programme placement'],
+                ['NWEA MAP', 'Academic achievement', 'Group (school-administered)', 'Curriculum benchmarking, growth tracking, gifted referral trigger'],
+              ].map(([test, type, admin, use]) => (
+                <tr key={test} className="hover:bg-gray-50">
+                  <td className="px-4 py-3 font-semibold text-gray-800">{test}</td>
+                  <td className="px-4 py-3 text-gray-700">{type}</td>
+                  <td className="px-4 py-3 text-gray-700">{admin}</td>
+                  <td className="px-4 py-3 text-gray-600 text-xs">{use}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The typical pathway is: high MAP scores trigger a CogAT referral; strong CogAT scores lead to a WISC-V evaluation; the WISC-V FSIQ determines formal gifted eligibility. Each step narrows the population and increases the precision of the assessment. For more on how CogAT and MAP compare in the gifted identification process, see our{' '}
+          <Link href="/blog/cogat-vs-nwea-map-gifted" className="text-indigo-600 hover:underline">
+            CogAT vs. NWEA MAP comparison guide
+          </Link>.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Happens During a WISC-V Assessment?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A WISC-V evaluation is conducted one-on-one with a licensed psychologist in a quiet room, usually at the school or a private practice. The child works through 10 primary subtests, each targeting one of the five index domains. The session typically takes 65–80 minutes, with breaks as needed.
+        </p>
+        <ul className="list-none space-y-3 mb-6">
+          {[
+            ['Block Design', 'Reproducing geometric patterns using red-and-white blocks within a time limit (VSI)'],
+            ['Similarities', 'Explaining how two words are alike, e.g., "How are a dog and a cat alike?" (VCI)'],
+            ['Matrix Reasoning', 'Identifying the missing piece in a visual pattern matrix (FRI)'],
+            ['Digit Span', 'Repeating number sequences forwards, backwards, and in ascending order (WMI)'],
+            ['Coding', 'Matching symbols to numbers using a key as quickly as possible (PSI)'],
+            ['Vocabulary', 'Defining single words presented orally and visually (VCI)'],
+            ['Figure Weights', 'Determining what figure balances a scale using visual reasoning (FRI)'],
+            ['Visual Puzzles', 'Identifying three puzzle pieces that combine to make a whole figure (VSI)'],
+            ['Picture Span', 'Identifying previously shown pictures in the correct sequence (WMI)'],
+            ['Symbol Search', 'Marking whether target symbols appear in a row of symbols (PSI)'],
+          ].map(([name, desc]) => (
+            <li key={name} className="flex gap-3">
+              <span className="text-indigo-500 font-bold mt-0.5 flex-shrink-0">→</span>
+              <div><strong>{name}:</strong> {desc}</div>
+            </li>
+          ))}
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          After scoring, the psychologist produces a written report (typically 15–30 pages) and schedules a feedback session with parents. The report includes confidence intervals for each score and practical recommendations for school placement and instructional adjustments.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Interpret a Discrepant WISC-V Profile</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A &quot;discrepant profile&quot; means there is a statistically significant gap between two index scores — typically defined as 23 or more points (1.5 standard deviations). The WISC-V technical manual identifies discrepancies of this magnitude as occurring in fewer than 10% of the general population, making them clinically meaningful.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most common clinically significant discrepancy patterns and what they suggest:
+        </p>
+        <ul className="list-none space-y-3 mb-6">
+          {[
+            ['High VCI, Low PSI', 'Strong language and reasoning with slow processing speed. Common in gifted children with dyslexia or ADHD-PI (predominantly inattentive). Qualifies for extended time. FSIQ may be artificially suppressed — ask psychologist about GAI (General Ability Index) which excludes WMI and PSI.'],
+            ['High FRI, Low WMI', 'Strong fluid reasoning with limited working memory. Characteristic of gifted students with ADHD. Excels at novel problems but struggles with multi-step procedures and rote memorisation.'],
+            ['High VCI, Low FRI', 'Strong crystallised verbal knowledge with relatively weaker abstract reasoning. More common in children with rich language environments but less exposure to spatial-visual problem-solving.'],
+            ['High FRI/VSI, Low VCI', 'Strong nonverbal reasoning with lower verbal scores. Common in English language learners and students with language processing differences. Often underlies underidentification of gifted ELL students.'],
+          ].map(([pattern, meaning]) => (
+            <li key={pattern} className="flex gap-3">
+              <span className="text-amber-500 font-bold mt-0.5 flex-shrink-0">!</span>
+              <div><strong>{pattern}:</strong> {meaning}</div>
+            </li>
+          ))}
+        </ul>
+        <Callout>
+          When a large discrepancy exists, the FSIQ may not be the most meaningful score. Ask your psychologist about the General Ability Index (GAI), which is calculated from VCI and FRI only and is less affected by working memory or processing speed differences.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Do After Getting WISC-V Results</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The WISC-V report is a tool for advocacy, not just a verdict. Here is how to use it effectively:
+        </p>
+        <ul className="list-none space-y-3 mb-4">
+          {[
+            ['Submit the full report to the gifted coordinator', 'Include the complete report, not just the summary page. Coordinators reviewing borderline FSIQ scores (e.g., 128–129) often make favourable decisions when the index score pattern shows strong FRI and VCI.'],
+            ['Request a school psychologist meeting', 'If the WISC-V reveals a learning difference alongside giftedness (twice-exceptional profile), initiate an IEP or 504 process immediately. Gifted identification and special education services are not mutually exclusive.'],
+            ['Use index scores to guide teachers', 'A child with high VCI but low PSI benefits from oral rather than written assessments, and should not be penalised for slow written output. A child with high FRI benefits from open-ended problem sets, not drill practice.'],
+            ['Plan for reassessment', 'WISC-V scores are most valid for 3 years. If a child was tested in Grade 2 and scores were borderline, reassessment in Grade 4 or 5 may show higher scores reflecting developmental gains.'],
+          ].map(([action, detail]) => (
+            <li key={action} className="flex gap-3">
+              <span className="text-green-500 font-bold mt-0.5 flex-shrink-0">✓</span>
+              <div><strong>{action}:</strong> {detail}</div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </>
+  ),
+
+  'cogat-vs-nwea-map-gifted': (
+    <>
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Each Test Actually Measures</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Parents often ask whether their child needs to take both the CogAT and NWEA MAP, or whether a high score on one makes the other unnecessary. The answer starts with understanding that these two tests measure fundamentally different things — and that difference is precisely why many gifted programmes require both.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>NWEA MAP Growth</strong> is an academic achievement test. It measures what your child has learned in reading and mathematics relative to grade-level curriculum. Scores are reported as RIT (Rasch Unit) scores on a continuous scale — the same scale from Kindergarten through Grade 12. A high MAP score tells you that your child has mastered academic content significantly beyond their grade level.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>CogAT (Cognitive Abilities Test)</strong> is a cognitive reasoning test. It measures how your child thinks — specifically, verbal reasoning (analogies, sentence completion), quantitative reasoning (number series, equation building), and nonverbal reasoning (figure classification, paper folding). CogAT does not test curriculum content; it tests the cognitive machinery used to process and learn new information.
+        </p>
+        <Callout>
+          The simplest way to remember the difference: MAP measures what your child knows. CogAT measures how efficiently they can learn new things.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">CogAT vs. MAP: Side-by-Side Comparison</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="min-w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Dimension</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">CogAT</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">NWEA MAP</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {[
+                ['Test type', 'Cognitive ability / reasoning', 'Academic achievement'],
+                ['What it measures', 'How the child reasons and learns', 'What the child has already learned'],
+                ['Score scale', 'Standard Age Score (SAS), mean 100, SD 16', 'RIT score, grade-normed scale'],
+                ['Gifted threshold', 'SAS ≥ 125–130 (≈95th–97th percentile)', 'RIT at 90th–95th percentile for grade'],
+                ['Content tested', 'Verbal analogies, number series, matrix reasoning', 'Reading, mathematics curriculum (grade-adaptive)'],
+                ['Administration', 'Group (40–60 min per battery)', 'Group (45–60 min per subject)'],
+                ['Frequency', 'Once every 1–3 years', 'Two to three times per year'],
+                ['Coaching effect', 'Minimal — measures reasoning, not content', 'Directly improvable through content study'],
+                ['Role in gifted identification', 'Confirm cognitive ability (eligibility gate)', 'Initial screening / referral trigger'],
+              ].map(([dim, cogat, map]) => (
+                <tr key={dim} className="hover:bg-gray-50">
+                  <td className="px-4 py-3 font-semibold text-gray-700">{dim}</td>
+                  <td className="px-4 py-3 text-gray-700">{cogat}</td>
+                  <td className="px-4 py-3 text-gray-700">{map}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Districts Use Both Tests</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Using MAP alone for gifted identification has a known weakness: high MAP scores can result from intensive tutoring, strong prior schooling, or very high effort by an average-ability student. These students would struggle in an accelerated gifted programme designed for children with exceptional cognitive ability.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Using CogAT alone also has a weakness: it does not account for whether the child&apos;s ability is already translating into academic performance. A student with high CogAT but very average MAP may be underachieving — which is clinically meaningful — but placing them in an accelerated programme without addressing the root cause of underachievement often backfires.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The combination is more powerful than either alone: MAP confirms that exceptional cognitive ability is already producing above-grade academic performance; CogAT (or WISC-V) confirms that the performance reflects genuine cognitive capacity rather than drilling. Districts that use both tools are identifying children who are both <em>able</em> and <em>performing</em> — the group most likely to thrive in advanced placement.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">When MAP Scores Lead to CogAT Testing</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          In most US districts that use a two-stage identification model, MAP is the first-stage screener and CogAT (or WISC-V) is the second-stage confirmation. The referral trigger varies by district, but the most common patterns are:
+        </p>
+        <ul className="list-none space-y-3 mb-6">
+          {[
+            ['90th percentile threshold', 'A MAP score at or above the 90th percentile for the child\'s grade triggers automatic referral for CogAT testing. This is the most common pattern in large public school districts.'],
+            ['Two-subject threshold', 'Some districts require a child to score at the 85th+ percentile in both Reading AND Math MAP before a CogAT referral is triggered.'],
+            ['Teacher nomination + MAP', 'A teacher nominates a child, and MAP scores at the 80th+ percentile support the nomination. The CogAT then serves as the objective confirmation step.'],
+            ['Parent request + MAP', 'A parent requests evaluation, and MAP scores at or above the 85th percentile are required for the district to proceed with CogAT administration.'],
+          ].map(([trigger, desc]) => (
+            <li key={trigger} className="flex gap-3">
+              <span className="text-indigo-500 font-bold mt-0.5 flex-shrink-0">→</span>
+              <div><strong>{trigger}:</strong> {desc}</div>
+            </li>
+          ))}
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          If your child scores above the 90th percentile on MAP but has not been referred for CogAT testing, contact the gifted coordinator directly. In most districts, parent referral requests are a legitimate pathway — you do not have to wait for an automatic trigger. For context on what MAP percentile scores look like in RIT terms, see our{' '}
+          <Link href="/blog/nwea-map-scores-explained" className="text-indigo-600 hover:underline">
+            NWEA MAP RIT scores guide
+          </Link>.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Score Correspondence: Does a High MAP Score Mean a High CogAT Score?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The correlation between MAP and CogAT scores is positive and moderate — roughly r = 0.55–0.65 in published research — meaning they measure related but distinct constructs. Practically, this means:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="min-w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">MAP Percentile</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Expected CogAT SAS Range</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Interpretation</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {[
+                ['99th', '125–145+', 'Very strong CogAT result likely — gifted confirmation expected'],
+                ['95th–98th', '115–135', 'Strong CogAT likely, but not guaranteed — some students at this MAP level have CogAT SAS 110–119'],
+                ['90th–94th', '108–128', 'Variable — this range produces the most spread on CogAT; some qualify, many do not'],
+                ['80th–89th', '100–118', 'Average to above-average CogAT typical; below the gifted SAS threshold in most programmes'],
+                ['Below 80th', '85–110', 'CogAT referral unlikely; average cognitive range expected'],
+              ].map(([map, cogat, interp]) => (
+                <tr key={map} className="hover:bg-gray-50">
+                  <td className="px-4 py-3 font-mono text-gray-800">{map}</td>
+                  <td className="px-4 py-3 text-gray-700">{cogat}</td>
+                  <td className="px-4 py-3 text-gray-600 text-xs">{interp}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          These are statistical expectations, not guarantees. Individual children regularly outperform or underperform this pattern. The 90th–94th MAP percentile range is the most unpredictable — a child in this zone may have CogAT scores anywhere from average to gifted-range, which is why the CogAT step exists.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">When CogAT and MAP Results Conflict</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The two most meaningful conflict patterns have different implications and require different responses.
+        </p>
+        <ul className="list-none space-y-4 mb-6">
+          {[
+            {
+              label: 'High MAP, average CogAT',
+              badge: 'High achiever',
+              text: 'MAP at 95th percentile, CogAT SAS 105–115. Interpretation: the child is performing at a high level — strong curriculum mastery, likely engaged and motivated — but the CogAT suggests the performance is not driven by unusual cognitive capacity. Most selective GT programmes will not qualify this child, but enrichment programmes and advanced coursework (above-grade-level classes) are appropriate. This is also the most common profile for students who have received intensive academic tutoring.',
+            },
+            {
+              label: 'High CogAT, average MAP',
+              badge: 'Underachieving gifted',
+              text: 'CogAT SAS 130+, MAP at 70th–80th percentile. Interpretation: the child has strong cognitive capacity that is not yet translating into academic performance. This is the underachieving gifted pattern. Possible causes include ADHD, anxiety, a learning disability (twice-exceptional), disengagement, or poor study habits. This profile is often missed in pure-achievement-based screening systems. A district psychologist evaluation and gifted-specific intervention are strongly indicated.',
+            },
+          ].map(({ label, badge, text }) => (
+            <li key={label} className="rounded-xl border border-gray-100 p-4">
+              <div className="flex items-center gap-3 mb-2">
+                <strong className="text-gray-900">{label}</strong>
+                <span className="text-xs bg-indigo-100 text-indigo-700 rounded-full px-2 py-0.5">{badge}</span>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">{text}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Different Gifted Programmes Require</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Programme requirements vary significantly. Before preparing your child, confirm what your specific district uses:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="min-w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Programme Type</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Typically Uses MAP?</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">Typically Uses CogAT?</th>
+                <th className="px-4 py-3 text-left font-semibold text-gray-700">May Require WISC-V?</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {[
+                ['District GT enrichment', 'Yes (screener)', 'Yes (confirmation)', 'Rare'],
+                ['Gifted magnet school', 'Yes', 'Yes or NNAT/OLSAT', 'Sometimes'],
+                ['Subject acceleration', 'Yes (primary criterion)', 'Sometimes', 'Rarely'],
+                ['Grade skipping', 'Yes', 'Often', 'Often'],
+                ['Private school admission (gifted)', 'Rarely', 'Sometimes', 'Often (WISC-V preferred)'],
+                ['Talent search (CTY/Duke TIP)', 'Not directly', 'Sometimes (EXPLORE/SAT)', 'Not required'],
+              ].map(([prog, map, cogat, wisc]) => (
+                <tr key={prog} className="hover:bg-gray-50">
+                  <td className="px-4 py-3 text-gray-800">{prog}</td>
+                  <td className="px-4 py-3 text-gray-700">{map}</td>
+                  <td className="px-4 py-3 text-gray-700">{cogat}</td>
+                  <td className="px-4 py-3 text-gray-700">{wisc}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For a detailed breakdown of WISC-V score requirements and index score interpretation, see our{' '}
+          <Link href="/blog/wisc-v-scores-explained" className="text-indigo-600 hover:underline">
+            WISC-V scores explained guide
+          </Link>.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Gifted Evaluation Decision Flow</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Understanding the typical sequence helps parents know where their child is in the process and what the next step should be:
+        </p>
+        <ol className="list-none space-y-3 mb-4">
+          {[
+            ['MAP screening (Grades 2–4)', 'Most districts screen all students 2–3 times per year. Track scores after each window. A score at or above the 90th percentile puts the child in the referral pool.'],
+            ['Gifted referral', 'Either automatic (score threshold met) or by parent/teacher nomination. The child is scheduled for the next CogAT administration window, usually once per year.'],
+            ['CogAT administration', 'The school administers CogAT to all referred students in a group session. Results are typically returned within 4–6 weeks.'],
+            ['CogAT interpretation and decision', 'If CogAT SAS meets the district threshold, the child qualifies. If borderline, other evidence (teacher ratings, portfolio, MAP scores) is considered. If the CogAT is below threshold despite high MAP, the district may offer enrichment rather than GT placement.'],
+            ['WISC-V referral (selective programmes)', 'For magnet schools, highly selective GT programmes, or twice-exceptional assessments, a WISC-V administered by a licensed psychologist is the next step. Results are used alongside CogAT and MAP for final placement decisions.'],
+          ].map(([step, desc], i) => (
+            <li key={step} className="flex gap-3">
+              <span className="text-indigo-600 font-bold mt-0.5 flex-shrink-0 w-5">{i + 1}.</span>
+              <div><strong>{step}:</strong> {desc}</div>
+            </li>
+          ))}
+        </ol>
+      </section>
+    </>
+  ),
 }

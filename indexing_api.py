@@ -80,6 +80,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/blog/discover-school-age-childs-hidden-strengths",
     f"{BASE_URL}/blog/test-anxiety-in-children-strengths",
     f"{BASE_URL}/blog/cogat-scores-explained",
+    f"{BASE_URL}/blog/wisc-v-scores-explained",
+    f"{BASE_URL}/blog/cogat-vs-nwea-map-gifted",
     f"{BASE_URL}/blog/via-character-strengths-children",
     f"{BASE_URL}/blog/character-strengths-academic-success",
     # ── Turkish (TR) ──────────────────────────────────────────────────────────

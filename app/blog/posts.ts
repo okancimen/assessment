@@ -3095,6 +3095,118 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/personality-assessment',
     },
   },
+  {
+    slug: 'wisc-v-scores-explained',
+    title: 'WISC-V Scores Explained: Full Scale IQ, Index Scores, and Gifted Cut-Offs',
+    shortTitle: 'WISC-V IQ Scores Explained: FSIQ Bands & Gifted Cut-Offs',
+    description:
+      'WISC-V Full Scale IQ scores explained: what FSIQ ranges mean, the five index scores (VCI, VSI, FRI, WMI, PSI), gifted cut-offs by programme type, and how WISC-V compares to CogAT and MAP.',
+    tldr: 'A WISC-V Full Scale IQ (FSIQ) of 130 or above places a child at the 98th percentile and is the standard threshold for gifted identification in most US districts. An FSIQ of 120–129 is Superior range (91st–97th percentile). The test has five index scores: Verbal Comprehension (VCI), Visual Spatial (VSI), Fluid Reasoning (FRI), Working Memory (WMI), and Processing Speed (PSI). Most programmes use the FSIQ as the primary criterion — a child does not need to score in the gifted range on every index.',
+    date: '2026-10-26',
+    readTime: '11 min read',
+    tags: ['WISC-V', 'IQ Test', 'Gifted Testing', 'US Education', 'Gifted Programs', 'Assessment'],
+    faqs: [
+      {
+        q: 'What is a gifted score on the WISC-V?',
+        a: 'The standard gifted threshold on the WISC-V is a Full Scale IQ (FSIQ) of 130 or above, which corresponds to the 98th percentile. Some selective magnet programmes require 135+ (99th percentile). Many districts also accept a 125+ (95th percentile) combined with high MAP or CogAT scores. A few programmes qualify students through high index scores (e.g., VCI or FRI ≥ 130) even when the overall FSIQ falls below the threshold.',
+      },
+      {
+        q: 'What are the five WISC-V index scores?',
+        a: 'The five WISC-V index scores are: Verbal Comprehension Index (VCI) — measures vocabulary, analogical reasoning, and general verbal knowledge; Visual Spatial Index (VSI) — measures block design and visual-spatial processing; Fluid Reasoning Index (FRI) — measures pattern recognition and abstract problem-solving (matrix reasoning and figure weights); Working Memory Index (WMI) — measures digit span and picture span (holding and manipulating information); Processing Speed Index (PSI) — measures coding and symbol search speed. Each index has a mean of 100 and standard deviation of 15.',
+      },
+      {
+        q: 'What does a WISC-V score of 120 mean?',
+        a: 'An FSIQ of 120 on the WISC-V falls in the High Average to Superior range (typically 91st–97th percentile depending on the precise score). A score of 120 is strong — well above average — but falls below the 130 threshold required by most gifted programmes. Some districts that use a composite criterion (MAP + CogAT + teacher rating) may still qualify a child with an FSIQ of 120–124 if other measures are exceptionally high.',
+      },
+      {
+        q: 'How long does a WISC-V assessment take?',
+        a: 'A full WISC-V administration takes approximately 65–80 minutes with a licensed psychologist, not counting scoring, interpretation, and the parent feedback session. The test uses 10 primary subtests (plus 5 ancillary/substitution subtests). Younger children (ages 6–7) may complete it faster as they are given a shorter subtest battery. The full process — scheduling, testing, and written report — often spans 4–8 weeks depending on the provider.',
+      },
+      {
+        q: 'Can you prepare for the WISC-V?',
+        a: 'The WISC-V is a cognitive ability test, not an achievement test — it measures underlying reasoning ability, not learned curriculum content. Familiarity coaching (showing a child what block design tasks look like) has minimal effect on FSIQ and can invalidate results if a psychologist suspects coaching. The most defensible preparation is ensuring the child is well-rested, not anxious, and tested under standard conditions. Academic enrichment over years does support cognitive development broadly, but targeted test prep for the WISC-V is not recommended.',
+      },
+      {
+        q: 'What is the difference between the WISC-V and CogAT?',
+        a: 'The WISC-V is an individually administered IQ test given by a licensed psychologist — it produces a clinically valid Full Scale IQ and is used for formal gifted identification, learning disability diagnosis, and educational planning. The CogAT (Cognitive Abilities Test) is a group-administered screening tool used by schools to identify students likely to benefit from gifted services; it is not a clinical IQ test. WISC-V is more expensive, more precise, and carries greater diagnostic weight. Many districts use CogAT first to screen and then refer high scorers for a WISC-V.',
+      },
+      {
+        q: 'What does a discrepant WISC-V profile mean?',
+        a: 'A discrepant profile is when there is a large gap (typically 23+ points) between two index scores — for example, very high VCI (verbal) but significantly lower PSI (processing speed). This pattern is common in twice-exceptional (2e) students who are gifted in some areas but have a learning or processing difference (such as ADHD or dyslexia) in others. A discrepant profile does not disqualify a child from gifted identification but requires careful interpretation by a licensed psychologist.',
+      },
+      {
+        q: 'Is the WISC-V the only test used for gifted identification?',
+        a: 'No. Different districts use different tools. Common alternatives include the Stanford-Binet 5, the OLSAT (Otis-Lennon School Ability Test), the NNAT (Naglieri Nonverbal Ability Test), and the CogAT. Achievement tests like NWEA MAP are often used for initial screening before a cognitive assessment is ordered. The WISC-V is the most widely recognised and clinically robust individually administered option.',
+      },
+    ],
+    howToSteps: [
+      { name: 'Request a psychoeducational evaluation referral', text: 'Start by asking your child\'s school counsellor or district gifted coordinator whether your child qualifies for a WISC-V referral based on MAP or CogAT scores. Many districts will fund the assessment if screening scores are at the 90th percentile or above. If the district declines, independent evaluations with a licensed psychologist typically cost $1,500–$3,000.' },
+      { name: 'Prepare your child without coaching', text: 'Explain that the appointment is a chance to solve some interesting puzzles — not a pass/fail test. Ensure good sleep and a normal breakfast. Bring any previous assessment records (MAP reports, CogAT scores) for the psychologist. Do not show sample test items.' },
+      { name: 'Review the full report with the psychologist', text: 'Ask for a feedback session where the psychologist walks through each index score, flags any discrepancies, and explains what the profile means for your child\'s learning. The report should include confidence intervals, not just point scores.' },
+      { name: 'Use the index score profile for educational planning', text: 'A high VCI with average PSI suggests a child who thinks deeply but works slowly — extended time accommodations and open-ended projects suit this profile. A high FRI with average WMI suggests strong reasoning but limited working memory — reduce extraneous cognitive load in maths and writing tasks.' },
+      { name: 'Submit results to the gifted programme with all supporting materials', text: 'Most gifted programmes require a portfolio: WISC-V report, MAP or CogAT scores, teacher ratings, and a parent nomination form. Submit everything together. Follow up with the gifted coordinator to confirm receipt and ask about the decision timeline.' },
+    ],
+    cta: {
+      heading: 'See where your child stands before the WISC-V appointment',
+      body: 'Eduentry\'s free academic assessment benchmarks verbal, quantitative, and reasoning skills against an international peer group in under an hour. Use it to understand your child\'s profile before committing to a full psychoeducational evaluation.',
+      label: 'Start free academic assessment',
+      href: '/your-childs-potential',
+    },
+  },
+  {
+    slug: 'cogat-vs-nwea-map-gifted',
+    title: 'CogAT vs. NWEA MAP for Gifted Identification: Which Test Matters More?',
+    shortTitle: 'CogAT vs. NWEA MAP for Gifted: Key Differences Explained',
+    description:
+      'CogAT vs NWEA MAP for gifted identification: what each test measures, when districts use one or both, how scores compare, what to do when results conflict, and which programmes require which.',
+    tldr: 'CogAT measures cognitive reasoning ability — how your child thinks. NWEA MAP measures academic achievement — what they have learned. Most gifted programmes use MAP for initial screening (typically 90th–95th percentile) and then require CogAT or WISC-V to confirm underlying cognitive ability. A high MAP score without a strong CogAT may reflect academic effort rather than giftedness; a high CogAT without high MAP may signal an underachieving gifted student.',
+    date: '2026-10-26',
+    readTime: '10 min read',
+    tags: ['CogAT', 'NWEA MAP', 'Gifted Testing', 'US Education', 'Gifted Programs', 'RIT Scores', 'Assessment'],
+    faqs: [
+      {
+        q: 'Is the CogAT harder than the NWEA MAP?',
+        a: 'They test fundamentally different things, so "harder" is not the right frame. MAP is an achievement test — students are tested on curriculum content they have studied. CogAT is a reasoning ability test — it tests how the student thinks, not what they have been taught. Many students who score very high on MAP find CogAT questions more unfamiliar because verbal analogies, number series, and matrix reasoning are not explicitly taught in most elementary curricula. Students who are strong readers and do well in maths tend to do well on both, but the correlation is imperfect.',
+      },
+      {
+        q: 'What CogAT score qualifies for gifted programs?',
+        a: 'Most districts that use CogAT for gifted identification require a Standard Age Score (SAS) of 125 or above, which corresponds to approximately the 95th percentile. The CogAT SAS scale has a mean of 100 and standard deviation of 16, so a score of 132 is the 97th percentile. Some highly selective magnet programmes require the 97th–99th percentile on the SAS composite. Individual battery scores (Verbal, Quantitative, Nonverbal) can also trigger qualification — a student with a Nonverbal battery at the 99th percentile may qualify even if the verbal score is average.',
+      },
+      {
+        q: 'What NWEA MAP score triggers a CogAT referral?',
+        a: 'There is no universal standard — each district sets its own threshold. The most common pattern is: MAP at or above the 90th percentile for the student\'s grade triggers a CogAT referral during the district\'s gifted screening window, typically in Grade 2 or Grade 3. Some districts use the 85th percentile as a referral trigger and rely on the CogAT to confirm giftedness. If your child scores at the 90th+ percentile on MAP, proactively ask the gifted coordinator whether they are automatically referred.',
+      },
+      {
+        q: 'Does a high MAP score guarantee qualification for gifted programs?',
+        a: 'No. MAP measures what a child has learned (achievement); gifted programmes typically want evidence of exceptional cognitive ability. A child who scores at the 95th percentile on MAP through intensive tutoring may not qualify if their CogAT scores are in the 75th percentile range. Conversely, a child who scores at the 92nd percentile on MAP with a CogAT SAS of 130+ is a strong candidate. Districts that use both tests are specifically looking for the combination of high achievement AND high underlying ability.',
+      },
+      {
+        q: 'What happens when CogAT and MAP scores conflict?',
+        a: 'The two most common conflict patterns are: (1) High MAP, average CogAT — often indicates a high-achieving student who benefits from enrichment but may not meet the cognitive ability threshold for the most selective GT placements. The district will usually look at teacher ratings and portfolio evidence. (2) Average MAP, high CogAT — often indicates an underachieving gifted student who is not performing to potential. This pattern should trigger an investigation into learning differences, motivation, or environmental factors. A gifted coordinator can initiate a full evaluation.',
+      },
+      {
+        q: 'Do you need both CogAT and MAP for gifted identification?',
+        a: 'Not always — it depends on the district. Some districts use CogAT alone (group ability test + teacher ratings). Others use MAP alone for achievement-based gifted programmes. Many of the most selective programmes require both: MAP to demonstrate high academic performance AND CogAT (or WISC-V) to confirm cognitive ability. Always check your specific district\'s gifted identification policy.',
+      },
+      {
+        q: 'Which is a better predictor of gifted performance — CogAT or MAP?',
+        a: 'For long-term academic potential (acceleration, AP/IB performance, higher-level maths track), CogAT reasoning scores are generally considered stronger predictors because they measure underlying cognitive ability rather than current instructional level. However, MAP scores at the 95th+ percentile are also highly predictive of readiness for advanced coursework. Research by NWEA shows that high MAP scores in Grades 3–5 predict ACT/SAT readiness better than most other elementary indicators.',
+      },
+    ],
+    howToSteps: [
+      { name: 'Understand what each test measures before interpreting results', text: 'MAP tells you what your child currently knows in reading and maths relative to grade-level norms. CogAT tells you how efficiently your child reasons with verbal, quantitative, and spatial information. You need both types of evidence to make a confident case for gifted placement.' },
+      { name: 'Get MAP results first — they drive the referral process', text: 'In most districts, the gifted identification cycle starts with MAP or similar achievement screening. If your child is in Grades 2–4, check their MAP scores in the parent portal after each testing window. Scores at or above the 90th percentile are typically the entry point for a gifted evaluation referral.' },
+      { name: 'Request a CogAT administration if MAP scores are high', text: 'If MAP scores are at the 90th percentile or above but your child has not been referred for CogAT testing, contact the school\'s gifted coordinator. In most districts, referrals can come from parents as well as teachers. Ask what the district\'s current screening timeline is.' },
+      { name: 'Review CogAT battery scores, not just the composite', text: 'The CogAT reports three battery scores — Verbal (V), Quantitative (Q), and Nonverbal (N) — plus a composite Standard Age Score (SAS). Some programmes accept a high individual battery score (e.g., Nonverbal at 97th percentile) even when the composite is lower. Review all three, not just the SAS.' },
+      { name: 'Request a WISC-V referral if CogAT is positive', text: 'If CogAT results are strong, ask whether the district will fund a WISC-V psychoeducational evaluation. The WISC-V provides a more detailed cognitive profile and carries greater diagnostic weight for formal gifted identification and programme placement decisions.' },
+    ],
+    cta: {
+      heading: 'Check reasoning skills before the gifted screening window',
+      body: 'Eduentry\'s free academic assessment covers the same verbal, quantitative, and reasoning domains as CogAT — benchmarked internationally. Know exactly where your child\'s strengths are before the district\'s screening cycle begins.',
+      label: 'Start free academic assessment',
+      href: '/your-childs-potential',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {
