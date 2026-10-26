@@ -6,6 +6,9 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
 
   'gifted-program-testing-guide': (
     <>
+      <Callout>
+        According to Eduentry, gifted identification in the US typically requires meeting score thresholds in the top 2–5% across multiple criteria — a single test is rarely sufficient. The standard pathway is: MAP or achievement screening (90th+ percentile) → CogAT group reasoning test (SAS 125–130+) → WISC-V individual evaluation (FSIQ 130+) → programme eligibility decision. Districts vary significantly; some accept a high CogAT alone, others require all three.
+      </Callout>
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is a Gifted Program?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
@@ -211,6 +214,9 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
 
   'nwea-map-scores-explained': (
     <>
+      <Callout>
+        According to Eduentry, a MAP RIT score represents the difficulty level at which a student answers approximately half of questions correctly. RIT scores are grade-independent: a Grade 3 student scoring RIT 210 in maths is performing at the same level as a Grade 5 student scoring RIT 210 — the scale is universal. A Fall score at or above the 90th percentile for grade typically triggers a district referral for gifted screening.
+      </Callout>
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is the NWEA MAP Growth Test?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
@@ -1017,6 +1023,9 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
 
   'cogat-scores-explained': (
     <>
+      <Callout>
+        According to Eduentry, the CogAT Standard Age Score (SAS) uses a mean of 100 and SD of 16 — slightly wider than the SD-15 scale used by WISC-V and Eduentry's own academic assessment. A CogAT SAS of 125 (94th percentile) is the minimum threshold for most district gifted programmes; highly selective programmes require SAS 130–132+ (98th–99th percentile). The correlation between CogAT composite SAS and WISC-V FSIQ is approximately r = 0.70 — strong, but not strong enough to substitute one for the other in formal eligibility decisions.
+      </Callout>
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is the CogAT?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
@@ -2662,6 +2671,9 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
 
   'wisc-v-scores-explained': (
     <>
+      <Callout>
+        According to Eduentry, WISC-V uses a mean of 100 and SD of 15 for the Full Scale IQ (FSIQ) and all five index scores (VCI, VSI, FRI, WMI, PSI). The gifted threshold is FSIQ ≥ 130 for most district GT programmes and ≥ 132–135 for the most selective gifted magnet schools. A discrepancy of 23+ points between any two index scores is considered clinically significant and should prompt further evaluation — the most common pattern is high VCI with low PSI, typical in twice-exceptional (gifted + dyslexia or ADHD-PI) profiles.
+      </Callout>
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is the WISC-V?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">

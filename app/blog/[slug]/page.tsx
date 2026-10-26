@@ -168,11 +168,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     url,
     image: { '@type': 'ImageObject', url: `${BASE_URL}/blog/${slug}/opengraph-image`, width: 1200, height: 630 },
     author: AUTHOR_SCHEMA,
-    publisher: { '@id': 'https://eduentry.com/#organization' },
+    publisher: {
+      '@id': 'https://eduentry.com/#organization',
+      '@type': 'Organization',
+      name: 'Eduentry',
+      logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png`, width: 512, height: 512 },
+    },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     isPartOf: { '@id': 'https://eduentry.com/#website' },
+    about: post.tags.map(tag => ({ '@type': 'Thing', name: tag })),
     wordCount: Math.round((post.readTime?.match(/\d+/)?.[0] ?? 8) as number * 200),
-    inLanguage: 'en-GB',
+    inLanguage: 'en',
   }
 
   const related = getRelatedPosts(slug)

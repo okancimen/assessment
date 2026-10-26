@@ -89,6 +89,61 @@ export default async function RootLayout({
         <link type="text/plain" rel="describedby" href="/llms.txt" />
         <link type="text/plain" rel="describedby" href="/llms-full.txt" />
         <Script id="gtag-queue" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments);};`}</Script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://eduentry.com/#organization",
+              "name": "Eduentry",
+              "url": "https://eduentry.com",
+              "logo": {
+                "@type": "ImageObject",
+                "@id": "https://eduentry.com/#logo",
+                "url": "https://eduentry.com/logo.png",
+                "contentUrl": "https://eduentry.com/logo.png",
+                "width": 512,
+                "height": 512
+              },
+              "description": "Free adaptive academic, personality and internship readiness assessments for students aged 6–22, benchmarked to PISA, UK national curriculum, and IB standards. Used in 190+ countries. Available in English, Turkish, Spanish, French, Arabic, Russian, and Chinese.",
+              "foundingDate": "2023",
+              "areaServed": "Worldwide",
+              "availableLanguage": ["English", "Turkish", "Spanish", "French", "Arabic", "Russian", "Chinese"],
+              "knowsAbout": [
+                "Adaptive psychometric assessment",
+                "Item Response Theory (IRT)",
+                "PISA benchmarking",
+                "VIA Character Strengths",
+                "11+ exam preparation",
+                "NWEA MAP scores",
+                "CogAT gifted identification",
+                "WISC-V scores",
+                "Student internship readiness"
+              ],
+              "sameAs": [
+                "https://eduentry.ai",
+                "https://twitter.com/eduentrycom"
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://eduentry.com/#website",
+              "url": "https://eduentry.com",
+              "name": "Eduentry",
+              "description": "Free adaptive academic, personality and internship readiness assessments for students aged 6–22.",
+              "publisher": { "@id": "https://eduentry.com/#organization" },
+              "inLanguage": ["en", "tr", "es", "fr", "ar", "ru", "zh"],
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://eduentry.com/blog?q={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            }
+          ]
+        })}} />
       </head>
       <body className="min-h-full flex flex-col bg-white">
         {children}

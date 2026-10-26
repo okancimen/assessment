@@ -7,9 +7,26 @@ export const AUTHOR_SCHEMA = {
   name: 'Özlem Çimen',
   jobTitle: 'International Education Consultant',
   url: PROFILE_URL,
-  image: 'https://eduentry.com/authors/ozlem-cimen-600.jpg',
-  sameAs: [PROFILE_URL, 'https://eduentry.com/about#ozlem-cimen'],
-  worksFor: { '@type': 'Organization', name: 'Edualist', url: 'https://www.edualist.com' },
+  image: {
+    '@type': 'ImageObject',
+    url: 'https://eduentry.com/authors/ozlem-cimen-600.jpg',
+    width: 600,
+    height: 600,
+  },
+  description: 'Founder of Edualist. Over 20 years as a teacher, department head and administrator at TED Istanbul College, ENKA Schools and IICS. Raised her children in international schools across 5 countries.',
+  knowsAbout: [
+    'International school admissions',
+    '11+ exam preparation',
+    'Grammar school selection',
+    'PISA benchmarking',
+    'Academic assessment',
+    'Child development',
+    'University admissions',
+  ],
+  worksFor: [
+    { '@type': 'Organization', name: 'Edualist', url: 'https://www.edualist.com' },
+    { '@id': 'https://eduentry.com/#organization' },
+  ],
 }
 
 type Locale = 'en' | 'tr' | 'es' | 'fr' | 'ar' | 'ru' | 'zh'
