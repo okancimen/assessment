@@ -108,6 +108,12 @@ Calibration note: Questions have been calibrated for difficulty ordering but not
 
 [https://eduentry.com/sample-report] — Full example of a completed academic assessment report. Shows the four-subject score breakdown, composite SAS, percentile band, subject-by-subject strength/weakness analysis, and AI-generated recommendations.
 
+### Final report contents
+
+**All users (guest and registered):** Four individual subject scores (English, Maths, Verbal Reasoning, Non-Verbal Reasoning), a composite SAS, percentile band, and subject-by-subject strength/weakness profile.
+
+**Registered users only:** AI-generated personalised recommendations identifying specific topic gaps and targeted next steps for each subject. Score history dashboard for tracking progress across retakes.
+
 ### Assessment Start Pages
 
 [https://eduentry.com/academic-assessment] — Main entry point for the adaptive academic assessment. Parents enter their child's age (6–17) and start the 60-question test across English, Maths, Verbal Reasoning, and Non-Verbal Reasoning. No account required to start; results are available immediately on completion. Free.
@@ -205,6 +211,12 @@ Appreciation of Beauty, Gratitude, Hope, Humor, Spirituality
 
 https://eduentry.com/strengths — example output showing a VIA character strengths profile with virtue categories, filled dot scores (1–5), trait descriptions, and AI development activities.
 
+### Final report contents
+
+**Guest (unregistered):** Top 3 Signature Strengths in full — trait name, virtue category, 1–5 dot score, and description. The #4 strength name and score are revealed as a teaser. Remaining 20 traits are blurred.
+
+**Registered users:** Full 24-trait profile with scores and descriptions. All traits ranked. Virtue category groupings (Wisdom, Courage, Humanity, Justice, Temperance, Transcendence). AI-generated development activities tailored to each Signature Strength. Growth Area strategies with age-specific activities. Progress tracking across retakes.
+
 ---
 
 ## Eduentry.ai — Internship Readiness Assessment
@@ -224,6 +236,10 @@ https://eduentry.com/strengths — example output showing a VIA character streng
 - **Strong**: Ready for a meaningful internship placement in the selected track. Score reflects solid aptitude, relevant domain awareness, and professional situational judgement.
 - **Ready**: Suitable for an internship with a supportive supervisor. Some preparation in domain knowledge or workplace skills would strengthen outcomes.
 - **Developing**: Would benefit from additional preparation before a first placement. Report includes specific development recommendations.
+
+### Final report contents
+
+Phase-by-phase score breakdown (General Aptitude, Domain Knowledge, Workplace Skills, Interest Profile). Overall readiness tier (Developing / Ready / Strong). AI-generated narrative summary explaining performance in the context of the selected track. Specific development recommendations identifying the weakest phase. Interest Profile work-style mapping (structured vs creative, collaborative vs independent, analytical vs relational, fast-paced vs methodical).
 
 ### Tracks
 
@@ -345,6 +361,186 @@ https://eduentry.com/strengths — example output showing a VIA character streng
 
 ---
 
+### Key blog posts — French (Français)
+
+**Stages lycée et université** [/fr/blog/stages-lycee-avantages-universite]: Avantages des stages au lycée — données sur le développement personnel et l'accès aux grandes écoles.
+
+**Expérience professionnelle lycée** [/fr/blog/stage-experience-professionnelle-lycee]: Définition du stage, comment en trouver un, et comment l'utiliser dans un dossier de candidature.
+
+**Se démarquer à 15 ans** [/fr/blog/se-demarquer-a-15-ans]: Actions concrètes pour lycéens : compétitions académiques, projets personnels, et activités extrascolaires.
+
+**Créer son entreprise à 16 ans** [/fr/blog/creer-son-entreprise-a-16-ans]: Cadre légal pour les mineurs entrepreneurs en France, démarches pratiques et exemples réels.
+
+**Comparer votre enfant à l'échelle mondiale** [/fr/blog/comment-se-compare-votre-enfant]: Classements PISA par pays, écarts France vs Singapour/Japon, et interprétation des scores standardisés.
+
+**Trouver un stage lycéen en France** [/fr/blog/stage-lyceen-france-comment-trouver]: Plateformes de recherche, candidature spontanée, délais et démarches administratives pour un stage en France.
+
+**CV stage lycéen** [/fr/blog/cv-stage-lyceen-16-ans]: Structure d'un CV de stage à 16 ans avec peu ou pas d'expérience — sections, formulations types, erreurs fréquentes.
+
+**Entretien de stage lycéen** [/fr/blog/entretien-stage-lyceen-conseils]: Questions courantes en entretien de stage (motivation, points forts, attentes) et exemples de réponses sans expérience.
+
+**Stage marketing digital** [/fr/blog/stage-marketing-digital-lyceen]: Tâches typiques en stage marketing digital, outils (GA4, Meta Ads, Canva), et comment trouver des offres en France.
+
+**Stage data analyse** [/fr/blog/stage-data-analyse-lyceen]: Rôle d'un stagiaire data, outils courants (Excel, SQL, Python basique), entreprises françaises accessibles aux lycéens.
+
+**IA et futur de l'emploi** [/fr/blog/intelligence-artificielle-futur-emploi-jeunes]: Impact de l'automatisation sur les métiers selon WEF et OCDE, compétences à développer pour les jeunes d'ici 2030.
+
+**Stage d'été lycéen France** [/fr/blog/stage-ete-france-lyceen]: Calendrier des candidatures estivales, meilleures plateformes, et entreprises qui acceptent les lycéens en juillet–août.
+
+**Stage finance et banque** [/fr/blog/stage-finance-banque-lyceen]: Banques et institutions financières françaises accueillant des lycéens, tâches attendues et conseils de candidature.
+
+**Scores PISA France** [/fr/blog/score-pisa-france-analyse]: Résultats PISA France 2022 par matière, comparaison internationale et implications pour l'orientation.
+
+**Grandes écoles vs université** [/fr/blog/grandes-ecoles-orientation-lyceen]: Différences de sélection, coûts, débouchés professionnels et critères pour choisir entre grandes écoles et université.
+
+**PISA 2025 expérience professionnelle** [/fr/blog/pisa-2025-experience-professionnelle-etudiants]: Données PISA 2025 sur le lien entre expérience professionnelle précoce et performance scolaire.
+
+**PISA 2025 crise éducation mondiale** [/fr/blog/pisa-2025-crise-education-mondiale-ce-que-les-parents-doivent-savoir]: Résultats PISA 2025 par pays, causes de la baisse (pandémie, écrans, lecture rapide) et implications pour les familles.
+
+**Stage lycéen sans expérience** [/fr/blog/stage-lyceen-sans-experience]: Cinq étapes pour obtenir un stage sans expérience : cartographie des compétences, rapport de compétences, voies alternatives, réseau et lettre personnalisée.
+
+**Qu'est-ce que l'examen 11+ ?** [/fr/blog/quest-ce-que-lexamen-11-plus-guide-complet]: Guide complet sur l'examen d'entrée aux grammar schools britanniques — formats GL/CEM, seuils SAS, les quatre domaines et la préparation optimale.
+
+---
+
+### Key blog posts — Arabic (العربية)
+
+**دليل CAT4 الإمارات** [/ar/blog/cat4-dalil-shamil]: ما يقيسه اختبار CAT4، نظام التسجيل، وكيف تستخدمه المدارس الإماراتية لتحديد الموهوبين وتصنيف الطلاب.
+
+**المدارس البريطانية دبي أبوظبي** [/ar/blog/madaras-britaniya-dubai-abu-dhabi]: متطلبات القبول، تقييمات KHDA، ومقارنة بين كبرى المدارس البريطانية في الإمارات.
+
+**برامج الموهوبين الإمارات** [/ar/blog/baramij-mawhubin-imarat]: معايير تحديد الموهوبين، برامج الموهبة الحكومية الإماراتية، وحدود درجات CAT4 للقبول.
+
+**اختبارات القبول المدارس الدولية** [/ar/blog/imtihanat-qabul-madaras-dawliyya]: مقارنة بين CAT4 وISEE وSSAT — الاختلافات البنيوية وطريقة التحضير لكل منها.
+
+**التدريب المبكر وتطور الطفل** [/ar/blog/staj-mubakir-tatawwur-mahni]: أبحاث حول فوائد التدريب في سن 14–16: تحسين الكفاءة الذاتية والنضج المهني وبيانات التوظيف.
+
+**إيجاد تدريب في دبي** [/ar/blog/kayfa-tajid-staj-dubai]: قائمة بالشركات والمؤسسات في دبي التي تقبل طلاب الثانوية مع خطوات التقديم.
+
+**السيرة الذاتية للتدريب 16 سنة** [/ar/blog/sirat-dhatiyya-staj-16]: هيكل السيرة الذاتية للطلاب في المرحلة الثانوية، أمثلة على الصياغات والأخطاء الشائعة.
+
+**مقابلة التدريب** [/ar/blog/muqabala-staj-nasayih]: أسئلة المقابلات الشائعة للتدريب وكيفية الإجابة عليها دون خبرة سابقة.
+
+**تدريب التكنولوجيا الإمارات** [/ar/blog/staj-taqniya-imarat]: شركات التكنولوجيا في الإمارات التي تقبل المتدربين من طلاب الثانوية، المهام المتوقعة، وكيفية التقديم.
+
+**تدريب القطاع المالي الإمارات** [/ar/blog/staj-tamwil-imarat]: البنوك والمؤسسات المالية الإماراتية التي تقبل طلاب الثانوية وتفاصيل برامجها.
+
+**الذكاء الاصطناعي ومستقبل العمل** [/ar/blog/dhakaa-istinai-mustaqbal-amal]: بيانات WEF وOECD حول تأثير الأتمتة على الوظائف والمهارات المطلوبة في سوق العمل 2030.
+
+**برامج التدريب الصيفي الإمارات** [/ar/blog/staj-sayf-imarat]: برامج الصيف للطلاب في الإمارات، مواعيد التقديم والشركات المشاركة.
+
+**تدريب التسويق الرقمي** [/ar/blog/staj-tadwiq-raqmi]: المهام الشائعة في تدريب التسويق الرقمي، الأدوات المستخدمة وكيفية إيجاد الفرص في منطقة الشرق الأوسط.
+
+**تحليل البيانات كمسار مهني** [/ar/blog/staj-tahlil-bayanat]: أدوات تحليل البيانات الشائعة، الشركات الإماراتية التي تقبل المتدربين، وكيفية البدء.
+
+**مشروع تجاري في 16 سنة** [/ar/blog/mashruik-tijarik-16]: الإطار القانوني لتأسيس مشروع في الإمارات للقاصرين، خطوات عملية وأمثلة من الواقع.
+
+**PISA 2025 خبرة عملية** [/ar/blog/pisa-2025-khibra-amaliya-istidad-talab]: نتائج PISA 2025 وبيانات الارتباط بين الخبرة العملية المبكرة وأداء الطلاب الأكاديمي.
+
+**PISA 2025 أزمة التعليم** [/ar/blog/pisa-2025-azmat-talim-alami-ma-yahtaj-marifatuh-awaliyaa-al-umur]: نتائج PISA 2025 بالأرقام، أسباب انخفاض الدرجات، ومقارنة الدول.
+
+**تدريب ثانوي بدون خبرة** [/ar/blog/kayfa-tajid-staj-bila-khibra-thanawy]: خمس خطوات للحصول على تدريب في الثانوية دون خبرة: خريطة المهارات، تقرير الكفاءات، المسارات البديلة، والتقديم المخصص.
+
+**ما هو امتحان 11+** [/ar/blog/ma-hwa-imtihan-11-plus-dalil-shamil]: دليل شامل لامتحان المدارس الثانوية الانتقائية البريطانية — صيغ GL وCEM، معايير SAS، المجالات الأربعة والتحضير الأمثل.
+
+---
+
+### Key blog posts — Russian (Русский)
+
+**Ранняя стажировка** [/ru/blog/ranniy-stazh-razvitie-rebyonka-karera]: Исследования пользы стажировок в 14–16 лет: данные NACE о трудоустройстве, психология развития и роль опыта в университетских заявках.
+
+**Стажировка в старшей школе** [/ru/blog/preimushchestva-stazha-v-shkole]: Влияние первого рабочего опыта на самоэффективность, личностный рост и успех при поступлении в вузы.
+
+**Опыт работы в школе** [/ru/blog/rabochiy-opyt-starshaya-shkola-uk]: Определение рабочего опыта в Великобритании, где искать возможности и как использовать их в личном заявлении.
+
+**Международное сравнение** [/ru/blog/kak-vash-rebyonok-sravnivaetsya-globalno]: Рейтинги PISA по странам, разрыв Великобритания/Сингапур/Япония, и сравнение стандартизированных баллов со школьными оценками.
+
+**Как выделиться в 15 лет** [/ru/blog/kak-vydelytsya-v-15-let]: Конкурсы, проекты, внеклассные активности — конкретные шаги для школьников, желающих выделиться на фоне сверстников.
+
+**Бизнес в 16 лет** [/ru/blog/kak-nachat-biznes-v-16-let]: Правовые требования, этапы регистрации и примеры компаний, основанных школьниками в Великобритании.
+
+**PISA 2025 образовательный кризис** [/ru/blog/pisa-2025-globalnyy-obrazovatelnyy-krizis]: Результаты PISA 2025 по странам, причины снижения баллов и выводы для семей.
+
+**PISA 2025 опыт работы** [/ru/blog/pisa-2025-rabochiy-opyt-gotovnost-uchashchikhsya]: Данные PISA 2025 о связи между профессиональным опытом и академической успеваемостью учащихся.
+
+**Резюме для стажировки** [/ru/blog/kak-napisat-rezyume-dlya-stazha]: Структура резюме для школьников без опыта — разделы, формулировки, типичные ошибки.
+
+**Собеседование на стажировку** [/ru/blog/kak-proyti-sobesedovanie-na-stazh]: Частые вопросы на собеседовании при стажировке и как отвечать на них без рабочего опыта.
+
+**Стажировка в цифровом маркетинге** [/ru/blog/tsifrovoy-marketing-stazh-shkola]: Типичные задачи стажёра по маркетингу, инструменты (GA4, Canva, Meta Ads) и как найти стажировку.
+
+**Найти стажировку без опыта** [/ru/blog/kak-nayti-stazh-bez-svyazey]: Прямые заявки, платформы поиска, виртуальный опыт работы — пошаговое руководство для старшеклассников.
+
+**Сопроводительное письмо** [/ru/blog/kak-napisat-soprovoditelnoe-pismo-dlya-stazha]: Структура и шаблон сопроводительного письма для стажировки со школьным уровнем опыта.
+
+**Удалённая стажировка** [/ru/blog/udalennaya-stazh-dlya-shkolnikov]: Платформы виртуального опыта работы (Springpod, Forage), подготовка и ожидания от дистанционных стажировок.
+
+**IT-стажировка** [/ru/blog/it-stazh-dlya-shkolnikov]: Компании, принимающие школьников без опыта программирования, типичные задачи и требования.
+
+**Первый день на стажировке** [/ru/blog/pervyy-den-na-stazhirovke]: Что взять с собой, как себя вести и какие вопросы задавать наставнику в первый день.
+
+**Рекомендательное письмо** [/ru/blog/kak-poluchit-rekomendatelnoe-pismo-posle-stazha]: Когда и как просить рекомендацию после стажировки, что должно быть в письме.
+
+**Стажировка в стартапе** [/ru/blog/startap-stazh-shkolniki]: Отличия стажировки в стартапе от корпоративной, плюсы и минусы для старшеклассников.
+
+**Стажировка для школьника без опыта** [/ru/blog/kak-nayti-stazh-bez-opyta-shkolnik]: Пять шагов к первой стажировке: карта навыков, отчёт о компетентности, альтернативный опыт, сеть и персонализированное письмо.
+
+**Что такое экзамен 11+?** [/ru/blog/chto-takoe-ekzamen-11-plus-polnoye-rukovodstvo]: Полное руководство по вступительному экзамену в грамматические школы Великобритании — форматы GL и CEM, пороги SAS, четыре ключевые области и IRT-адаптивное тестирование.
+
+---
+
+### Key blog posts — Chinese (中文)
+
+**PISA 2025中国家长** [/zh/blog/pisa-2025-zhongguo-jiazhang-zhinan]: PISA 2025各国成绩、中国排名、分数下降原因及对家庭教育决策的影响。
+
+**评估孩子学术水平** [/zh/blog/haizi-xueshu-shuiping-ruhe-celiang]: 标准化测试与学校成绩的区别，如何选择适合不同年龄的评估工具。
+
+**高中生找实习** [/zh/blog/gaozhong-shixi-ruhe-xunzhao]: 招收高中生的公司类型、求职平台、申请流程及简历要点。
+
+**实习简历写作** [/zh/blog/shixi-jianlixie-zhinan]: 高中生简历结构、示例措辞、常见错误及如何在没有工作经验的情况下突出优势。
+
+**实习面试准备** [/zh/blog/shixi-mianshi-zhunbei-jiqiao]: 常见面试问题及参考回答，包括如何在没有经验的情况下应对行为面试题。
+
+**数字营销实习入门** [/zh/blog/shuzi-yingxiao-shixi-rumen]: 数字营销实习的典型任务、所用工具（GA4、Meta Ads）及申请方式。
+
+**数据分析实习** [/zh/blog/shuju-fenxi-shixi-gaoxiaosheng]: 数据分析实习常用工具（Excel、SQL、Python）及适合高中生的入门路径。
+
+**如何在15岁脱颖而出** [/zh/blog/ruhe-zai-15-sui-tuocying]: 竞赛、项目、课外活动——高中生可采取的具体行动以在申请中脱颖而出。
+
+**没有背景找实习** [/zh/blog/ruhe-zhaodao-shixi-mei-you-guanxi]: 直接申请、求职平台、虚拟实习项目——没有人脉的高中生如何找到实习的分步指南。
+
+**实习求职信写作** [/zh/blog/shixi-qiuzhixin-xiezuo-zhinan]: 求职信结构、模板及针对高中生无经验情况的示例写法。
+
+**远程实习指南** [/zh/blog/yuancheng-zaixian-shixi-zhinan]: 远程实习平台（Springpod、Forage）介绍，准备方法及预期内容。
+
+**IT科技实习** [/zh/blog/IT-keji-shixi-gaoxiao]: 无编程基础也能申请的科技公司、岗位要求及任务说明。
+
+**金融实习入门** [/zh/blog/jinrong-shixi-rumen]: 接收高中生的金融机构、申请流程及典型工作内容。
+
+**设计与创意实习** [/zh/blog/sheji-chuangyi-shixi]: 创意行业实习的岗位类型、所需工具（Figma、Adobe）及如何积累作品集。
+
+**创业公司实习** [/zh/blog/chuangye-gongsi-shixi]: 初创公司与大企业实习的对比：职责范围、学习曲线及利弊分析。
+
+**实习推荐信** [/zh/blog/tuijianxin-zenme-yao]: 何时及如何请求推荐信，推荐信应包含的关键内容。
+
+**实习第一天** [/zh/blog/shixi-di-yi-tian]: 应携带物品、行为规范及向导师提问的建议。
+
+**实习vs兼职** [/zh/blog/shixi-vs-jianzhang]: 实习与兼职的区别、各自优势及高中生的最佳选择时机。
+
+**高中无经验如何找实习** [/zh/blog/gaozhong-wu-jingyan-shixi-zhinan]: 五个步骤帮助高中生获得第一次实习：技能地图、能力报告代替空白简历及个性化申请信。
+
+**11+考试是什么？** [/zh/blog/11-plus-kaoshi-wanzheng-zhinan]: 英国文法中学入学考试完整指南 — GL与CEM格式、SAS分数基准、四大核心领域及IRT自适应评估。
+
+---
+
+### Key blog posts — Spanish (Español)
+
+**Prácticas en el instituto sin experiencia** [/es/blog/practicas-sin-experiencia-instituto]: Cinco pasos para conseguir prácticas en el instituto sin experiencia: mapa de habilidades, informe de competencias en lugar de CV vacío, vías alternativas, red de contactos y solicitud personalizada.
+
+**¿Qué es el examen 11+?** [/es/blog/que-es-el-examen-11-plus-guia-completa]: Guía completa del examen de entrada a las grammar schools británicas — formatos GL y CEM, umbrales SAS, los cuatro pilares y la evaluación adaptativa IRT.
+
+---
+
 ## Technical reference
 
 ### IRT scoring
@@ -359,6 +555,30 @@ Where θ is the student's latent ability, a is item discrimination, b is item di
 SAS = 100 + 15θ
 
 This maps the IRT ability scale (which has an arbitrary origin) to the conventional SAS scale. A student at θ = 0 scores SAS 100 (population mean). A student at θ = +1 SD scores SAS 115 (84th percentile).
+
+### Score interpretation
+
+**Academic assessment (standardised scale, mean 100, SD 15):**
+- 130+: Top 2% (Exceptionally High)
+- 120–129: Top 9% (Exceptional)
+- 110–119: Top 25% (Above Average)
+- 95–109: Middle 50% (Average)
+- 85–94: Bottom 25% (Below Average)
+- Below 85: Bottom 16% (Needs Support)
+
+Grammar school benchmarks: SAS 111–118 for most grammar schools outside London; SAS 121–132 for London selective schools. SAS 115 = 84th percentile.
+
+**Personality assessment (VIA trait scores, scale 1.0–5.0):**
+Each of the 24 traits is scored 1.0–5.0. Scores reflect how consistently and naturally the child expresses that trait.
+- **Signature Strengths** (top 5): expressed authentically — feel energising rather than effortful
+- **Growth Areas** (bottom 3): highest development potential; framed as opportunities, not deficits
+- Traits 6–21 sit in the middle range and are included in the full registered profile
+- Scores are relative within the individual, not norm-referenced against a population
+
+**Internship readiness tiers:**
+- **Strong**: solid aptitude, relevant domain awareness, and professional situational judgement — ready for a placement
+- **Ready**: suitable for a placement with a supportive supervisor; targeted preparation would strengthen outcomes
+- **Developing**: would benefit from additional preparation; report includes specific development recommendations
 
 ### Available languages
 

@@ -218,34 +218,34 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 - [Try a Sample](https://eduentry.com/demo): Four free sample questions (one per subject) with no account required.
 - [Blog](https://eduentry.com/blog): Articles on international academic benchmarks, standardised testing, school admissions, and education systems.
 
-## Eduentry.com — Locale landing pages
+### Eduentry.com — Locale landing pages
 
-### Turkish (Türkçe)
+#### Turkish (Türkçe)
 - [Ana Sayfa TR](https://eduentry.com/tr): Türkçe giriş — 6–17 yaş arası çocuklar için akademik değerlendirme ve kişilik testi.
 - [Akademik Değerlendirme TR](https://eduentry.com/tr/akademik-degerlendirme): 6–17 yaş için uyarlamalı akademik değerlendirme. İngilizce, Matematik, Sözel Muhakeme ve Sözel Olmayan Muhakeme ölçer; uluslararası yüzdelik sıralamaya sahip standart skor raporu üretir.
 - [Kişilik Değerlendirmesi TR](https://eduentry.com/tr/kisilik-degerlendirmesi): 6–20 yaş için ücretsiz VIA tabanlı kişilik değerlendirmesi. 24 karakter özelliği arasından en güçlü 5 özellik ve 3 gelişim alanını belirler; hesap gerekmez.
 
-### French (Français)
+#### French (Français)
 - [Page d'accueil FR](https://eduentry.com/fr): Accueil en français — évaluation académique et personnalité pour enfants de 6 à 17 ans.
 - [Évaluation Académique FR](https://eduentry.com/fr/evaluation-academique): Évaluation académique adaptive pour 6–17 ans. Mesure l'anglais, les mathématiques, le raisonnement verbal et non verbal ; produit un rapport de score standardisé avec classement percentile international.
 - [Évaluation de Personnalité FR](https://eduentry.com/fr/evaluation-de-personnalite): Évaluation de personnalité VIA gratuite pour 6–20 ans. Identifie les 5 principales forces de caractère et 3 axes de développement en moins de 5 minutes. Sans compte.
 
-### Spanish (Español)
+#### Spanish (Español)
 - [Página de inicio ES](https://eduentry.com/es): Inicio en español — evaluación académica y de personalidad para niños de 6 a 17 años.
 - [Evaluación Académica ES](https://eduentry.com/es/evaluacion-academica): Evaluación académica adaptativa para 6–17 años. Mide inglés, matemáticas, razonamiento verbal y no verbal; produce un informe de puntuación estandarizada con clasificación percentil internacional.
 - [Evaluación de Personalidad ES](https://eduentry.com/es/evaluacion-de-personalidad): Evaluación de personalidad VIA gratuita para 6–20 años. Identifica las 5 principales fortalezas de carácter y 3 áreas de desarrollo en menos de 5 minutos. Sin cuenta.
 
-### Arabic (العربية)
+#### Arabic (العربية)
 - [الصفحة الرئيسية AR](https://eduentry.com/ar): الصفحة الرئيسية بالعربية — تقييم أكاديمي وشخصي للأطفال من 6 إلى 17 سنة.
 - [التقييم الأكاديمي AR](https://eduentry.com/ar/taqyim-acadimi): تقييم أكاديمي تكيّفي للأعمار 6–17. يقيس الإنجليزية والرياضيات والتفكير اللفظي وغير اللفظي؛ ينتج تقريراً بدرجة معيارية مع تصنيف مئوي دولي.
 - [تقييم الشخصية AR](https://eduentry.com/ar/taqyim-al-shakhsiya): تقييم شخصية VIA مجاني للأعمار 6–20. يحدد أهم 5 نقاط قوة في الشخصية و3 مجالات تطوير في أقل من 5 دقائق. لا حساب مطلوب.
 
-### Russian (Русский)
+#### Russian (Русский)
 - [Главная RU](https://eduentry.com/ru): Главная страница на русском — академическая и личностная оценка для детей 6–17 лет.
 - [Академическая оценка RU](https://eduentry.com/ru/akademicheskaya-otsenka): Адаптивная академическая оценка для возраста 6–17 лет. Измеряет английский, математику, вербальное и невербальное мышление; создаёт отчёт со стандартизированным баллом и международным процентилем.
 - [Оценка личности RU](https://eduentry.com/ru/otsenka-lichnosti): Бесплатная личностная оценка VIA для возраста 6–20 лет. Определяет 5 главных черт характера и 3 зоны роста менее чем за 5 минут. Без регистрации.
 
-### Chinese (中文)
+#### Chinese (中文)
 - [主页 ZH](https://eduentry.com/zh): 中文主页 — 6–17岁儿童的学术和个性测评。
 - [学术测评 ZH](https://eduentry.com/zh/xueshu-pinggu): 6–17岁自适应学术测评。衡量英语、数学、语言推理和非语言推理；生成国际百分位排名的标准化分数报告。
 - [个性测评 ZH](https://eduentry.com/zh/xingge-pinggu): 6–20岁免费VIA个性测评。在5分钟内识别孩子的5大优势和3个成长领域。无需注册账户。
@@ -398,4 +398,5 @@ Assessment uses 2PL IRT with MAP estimation. Questions calibrated to difficulty 
 
 ## Sitemap
 
-- [Full sitemap](https://eduentry.com/sitemap.xml): All indexed pages in XML format.
+- [Eduentry.com sitemap](https://eduentry.com/sitemap.xml): All indexed Eduentry.com pages in XML format.
+- [Eduentry.ai sitemap](https://eduentry.ai/sitemap.xml): All indexed Eduentry.ai pages in XML format.
