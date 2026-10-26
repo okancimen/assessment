@@ -271,10 +271,9 @@ export default function QuestionCard({ question, onAnswer, onNext, onBack, quest
             ? 'bg-green-50 border-green-200 text-green-800'
             : 'bg-red-50 border-red-200 text-red-800',
         )}>
-          <p className="font-semibold mb-0.5">
+          <p className="font-semibold">
             {feedback.isCorrect ? '✓ Correct!' : '✗ Not quite'}
           </p>
-          {feedback.explanation && <p className="text-xs mt-1 opacity-90">{feedback.explanation}</p>}
         </div>
       )}
 
