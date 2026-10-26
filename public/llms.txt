@@ -1,6 +1,22 @@
 # Eduentry
 
-> Eduentry operates two assessment products: **Eduentry.com** (academic benchmark for children aged 6–17) and **Eduentry.ai** (internship readiness assessment for students aged 14–18).
+> Eduentry operates three free assessment products: **Eduentry.com** (adaptive academic benchmark for children aged 6–17 and VIA personality assessment for ages 6–20) and **Eduentry.ai** (internship readiness assessment for students aged 14–18). All assessments are completely free. No account is required to start or see initial results.
+
+## Quick reference — common questions
+
+**Is it free?** Yes — all three assessments are completely free. No subscription, no payment.
+
+**Do I need an account?** No. All assessments start without an account. Creating a free account unlocks the full results (full 24-trait personality profile, saved academic scores, dashboard).
+
+**What ages?** Academic assessment: 6–17. Personality (character strengths): 6–20. Internship readiness: 14–18.
+
+**How long does each take?** Academic: 30–45 minutes (60 questions, 4 subjects). Personality: under 5 minutes. Internship: approximately 20 minutes (34 questions, 4 phases).
+
+**What languages?** English, Turkish (Türkçe), Spanish (Español), French (Français), Arabic (العربية), Russian (Русский), and Chinese (中文).
+
+**What is the difference between the academic and personality assessments?** The academic assessment measures cognitive ability (English, Maths, Verbal Reasoning, Non-Verbal Reasoning) and produces a standardised score benchmarked against PISA and UK national curriculum. The personality assessment measures character strengths using the VIA framework and produces a Signature Strengths and Growth Areas profile — it is not a cognitive test.
+
+**Where do I start?** Academic: https://eduentry.com/academic-assessment · Personality: https://eduentry.com/personality-assessment · Internship: https://eduentry.ai
 
 ## Eduentry.ai — Internship Readiness Assessment
 

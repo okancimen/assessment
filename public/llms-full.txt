@@ -9,9 +9,33 @@
 
 Eduentry operates two assessment products under two domains:
 
-**Eduentry.com** — Free adaptive academic benchmark for children aged 6–17. Measures English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning using 2-Parameter Logistic Item Response Theory (2PL IRT) with MAP estimation. Scores reported on a standardised scale (mean 100, standard deviation 15) with international percentile rankings benchmarked against PISA, GCSE, UK national curriculum, SAT, and IB standards. Completely free, no subscriptions.
+**Eduentry.com** — Two free assessments for children. (1) Adaptive academic benchmark for ages 6–17: measures English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning using 2-Parameter Logistic Item Response Theory (2PL IRT) with MAP estimation; scores on a standardised scale (mean 100, SD 15) with international percentile rankings benchmarked against PISA, GCSE, UK national curriculum, SAT, and IB standards. (2) VIA personality assessment for ages 6–20: identifies top 5 Signature Strengths and 3 Growth Areas from 24 character traits across 6 virtues (Wisdom, Courage, Humanity, Justice, Temperance, Transcendence); takes under 5 minutes. Both are completely free with no account required to start.
 
 **Eduentry.ai** — Free AI-powered internship readiness assessment for students aged 14–18. 34 adaptive questions across four phases: General Aptitude (10 questions), Domain Knowledge (10 questions), Workplace Skills/situational judgement (8 questions), Interest Profile (6 questions). Four career tracks: Technology, Business, Data Analytics, Digital Marketing. Results include a personalised AI-generated readiness report with a readiness tier (Developing / Ready / Strong) and phase-by-phase breakdown. Takes approximately 20 minutes. Available in 7 languages.
+
+---
+
+## Quick reference — common questions
+
+**Is it free?** Yes. All three assessments (academic, personality, internship) are completely free. No subscription, no trial, no payment.
+
+**Do I need an account to start?** No. All assessments begin without an account. A free account unlocks the full results: the academic dashboard with saved scores, the full 24-trait personality profile with AI activities, and the internship readiness report.
+
+**What ages are the assessments for?** Academic: 6–17. Personality/character strengths: 6–20. Internship readiness: 14–18.
+
+**How long does each assessment take?** Academic: 30–45 minutes (60 adaptive questions across 4 subjects). Personality: under 5 minutes (trait rating statements). Internship: approximately 20 minutes (34 questions across 4 phases).
+
+**What languages are supported?** English, Turkish (Türkçe), Spanish (Español), French (Français), Arabic (العربية), Russian (Русский), Chinese (中文). All three assessments and all results pages are available in all 7 languages.
+
+**What is the difference between the academic assessment and the personality assessment?** The academic assessment measures cognitive ability across four subjects (English, Maths, Verbal Reasoning, Non-Verbal Reasoning) and produces a standardised score benchmarked to PISA, GCSE, and UK national curriculum. The personality assessment measures character strengths using the VIA framework and produces a Signature Strengths and Growth Areas profile. It is not a cognitive or clinical test — it measures who the child is, not how smart they are.
+
+**What is a Signature Strength?** A character trait the child expresses naturally and consistently — it feels energising rather than effortful. The personality assessment identifies the top 5 out of 24 VIA character traits as Signature Strengths.
+
+**What is a Growth Area?** A character trait with the most room for development. The report identifies 3 Growth Areas and provides age-specific development activities. Growth Areas are framed as opportunities, not deficits.
+
+**Can I retake an assessment?** Yes. Assessments can be retaken at any time. Registered users can track how scores change over time.
+
+**Where do I start?** Academic: https://eduentry.com/academic-assessment · Personality: https://eduentry.com/personality-assessment · Internship: https://eduentry.ai
 
 ---
 
@@ -126,6 +150,63 @@ Calibration note: Questions have been calibrated for difficulty ordering but not
 
 ---
 
+## Eduentry.com — Personality Assessment
+
+### Overview
+
+Free VIA-backed character strengths assessment for children and young adults aged 6–20. Based on the Values in Action (VIA) Classification of Character Strengths developed by Martin Seligman and Christopher Peterson — the most widely validated positive psychology framework, used in 190+ countries. Identifies a child's Signature Strengths (top traits that come naturally and energise them) and Growth Areas (traits with room for development). Takes under 5 minutes. No account required to start.
+
+Start page: https://eduentry.com/personality-assessment
+
+### How it works
+
+1. Parent (or older student) enters child's age (6–20)
+2. Rates a series of trait statements on a 1–5 scale — simple, age-appropriate language
+3. System scores all 24 character traits and surfaces the top 5 Signature Strengths and 3 Growth Areas with AI-generated development activities
+
+Guest results: top 3 Signature Strengths shown in full; the #4 strength name and score are revealed as a teaser; the remaining traits are locked behind free registration.
+Registered results: full 24-trait profile, AI-personalised development activities per strength, growth area strategies, and progress tracking over time.
+
+### Age tiers
+
+The question language adapts to the child's developmental stage:
+- **Ages 6–9**: concrete, home and school scenarios; parent-rated
+- **Ages 10–13**: peer, school, and hobby contexts; parent-rated or collaborative
+- **Ages 14–17**: adolescent identity, responsibility, and relationships; self-rated
+- **Ages 18–20**: adult framing — work, independence, and social contexts; self-rated
+
+### VIA framework — 6 virtues and 24 traits
+
+**Wisdom** (cognitive strengths that acquire and use knowledge):
+Curiosity, Creativity, Love of Learning, Perspective, Judgment
+
+**Courage** (emotional strengths involving will to accomplish goals despite obstacles):
+Bravery, Perseverance, Honesty, Zest
+
+**Humanity** (interpersonal strengths involving caring for others):
+Love, Kindness, Social Intelligence
+
+**Justice** (civic strengths underlying healthy community life):
+Teamwork, Fairness, Leadership
+
+**Temperance** (strengths that protect against excess):
+Forgiveness, Humility, Prudence, Self-Regulation
+
+**Transcendence** (strengths connecting to meaning and the larger universe):
+Appreciation of Beauty, Gratitude, Hope, Humor, Spirituality
+
+### Signature Strengths vs Growth Areas
+
+**Signature Strengths** (top 5): traits the child expresses authentically and consistently — they feel energising rather than effortful. Research shows leaning into Signature Strengths improves academic engagement, wellbeing, and resilience.
+
+**Growth Areas** (bottom 3): traits with the most development potential. Framed as growth pillars, not deficits — each has specific, age-appropriate activities in the report.
+
+### Sample report
+
+https://eduentry.com/strengths — example output showing a VIA character strengths profile with virtue categories, filled dot scores (1–5), trait descriptions, and AI development activities.
+
+---
+
 ## Eduentry.ai — Internship Readiness Assessment
 
 ### Assessment structure
@@ -153,6 +234,34 @@ Calibration note: Questions have been calibrated for difficulty ordering but not
 **Data Analytics** [https://eduentry.ai/data-analytics]: For students interested in data science, business intelligence, or research. Domain questions cover chart and table interpretation, basic SQL query logic, descriptive statistics, and data-driven decision-making.
 
 **Digital Marketing** [https://eduentry.ai/digital-marketing]: For students interested in marketing, communications, brand management, or growth. Domain questions cover SEO principles, social media advertising, campaign metrics (CTR, ROAS, CPM), and content strategy frameworks.
+
+### Eduentry.ai locale landing pages
+
+**Turkish (Türkçe)**
+- [https://eduentry.ai/tr] — Türkçe giriş sayfası. 14–18 yaş öğrenciler için staj hazırlık değerlendirmesi; dört pist, anında rapor.
+- [https://eduentry.ai/tr/teknoloji] — Teknoloji pisti — kodlama, algoritmalar, siber güvenlik, UX.
+- [https://eduentry.ai/tr/is-dunyasi] — İş Dünyası pisti — strateji, finans, operasyon, liderlik.
+- [https://eduentry.ai/tr/veri-analitigi] — Veri Analitiği pisti — grafikler, SQL, içgörüler, istatistik.
+- [https://eduentry.ai/tr/dijital-pazarlama] — Dijital Pazarlama pisti — SEO, sosyal medya, kampanyalar, içerik.
+
+**Spanish (Español)**
+- [https://eduentry.ai/es] — Página de inicio en español. Evaluación de preparación para prácticas, estudiantes 14–18 años; cuatro pistas, informe inmediato.
+- [https://eduentry.ai/es/tecnologia] — Pista Tecnología — programación, algoritmos, ciberseguridad, UX.
+- [https://eduentry.ai/es/empresa] — Pista Empresa — estrategia, finanzas, operaciones, liderazgo.
+- [https://eduentry.ai/es/analisis-de-datos] — Pista Análisis de Datos — gráficos, SQL, insights, estadística.
+- [https://eduentry.ai/es/marketing-digital] — Pista Marketing Digital — SEO, redes sociales, campañas, contenido.
+
+**French (Français)**
+- [https://eduentry.ai/fr] — Page d'accueil en français. Évaluation de préparation au stage pour lycéens 14–18 ans; quatre pistes, rapport immédiat.
+
+**Arabic (العربية)**
+- [https://eduentry.ai/ar] — الصفحة الرئيسية بالعربية. تقييم جاهزية التدريب لطلاب الثانوية 14–18 عاماً؛ أربعة مسارات، تقرير فوري.
+
+**Russian (Русский)**
+- [https://eduentry.ai/ru] — Главная страница на русском. Оценка готовности к стажировке для учащихся 14–18 лет; четыре направления, мгновенный отчёт.
+
+**Chinese (中文)**
+- [https://eduentry.ai/zh] — 中文首页。面向14至18岁高中生的实习准备评估；四个方向，即时报告。
 
 ---
 
