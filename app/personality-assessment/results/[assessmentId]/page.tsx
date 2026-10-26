@@ -229,6 +229,29 @@ export default async function GuestResultsPage({
           </div>
           {/* Overlay */}
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/85 backdrop-blur-[2px] px-6 text-center gap-4">
+            {/* #4 strength teaser */}
+            {lockedTraits[0] && (() => {
+              const t4 = lockedTraits[0]
+              const t4Virtue = TRAIT_VIRTUE[t4]
+              const t4Color = VIRTUE_COLORS[t4Virtue] ?? 'bg-[#eef2ff] text-[#4F46E5]'
+              return (
+                <div className="bg-white rounded-2xl border border-[#d2d2d7] px-4 py-3 w-full max-w-xs space-y-1.5">
+                  <p className="text-[10px] font-semibold text-[#6e6e73] uppercase tracking-wider">Your child's #4 strength</p>
+                  <p className="font-bold text-[#1d1d1f]">{t.traitLabels[t4]}</p>
+                  <span className={`inline-block text-[10px] font-bold px-2 py-0.5 rounded-full ${t4Color}`}>
+                    {t.virtueNames[t4Virtue] ?? t4Virtue}
+                  </span>
+                  <div className="flex items-center gap-1 justify-center pt-0.5">
+                    {[1, 2, 3, 4, 5].map((n) => (
+                      <div
+                        key={n}
+                        className={`w-3.5 h-3.5 rounded-full ${n <= Math.round(traitScores[t4]) ? 'bg-[#4F46E5]' : 'border border-[#d2d2d7]'}`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )
+            })()}
             <p className="text-base font-bold text-[#1d1d1f]">{t.unlockTitle(totalTraits)}</p>
             <ul className="text-sm text-[#3d3d3f] space-y-2 text-start max-w-xs w-full">
               {t.unlockBullets.map((item) => (
