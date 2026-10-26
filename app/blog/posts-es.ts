@@ -1498,6 +1498,18 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: '/es/evaluacion-academica',
     },
   },
+  {
+    slug: 'como-encontrar-practicas-estudiante',
+    contentSlug: 'how-to-find-internship-as-a-student',
+    title: 'Cómo Encontrar Prácticas como Estudiante: Guía Completa para Padres',
+    shortTitle: 'Cómo Encontrar Prácticas como Estudiante',
+    description: 'Guía práctica para padres sobre cómo encontrar prácticas y experiencia laboral para estudiantes de 14–22 años a nivel global.',
+    tldr: 'La MGN Global Career Fellowship ofrece prácticas remotas basadas en proyectos reales para estudiantes de 14–22 años, con admisión por potencial evaluado, no por historial de CV.',
+    date: '2026-10-26',
+    readTime: '10 min de lectura',
+    tags: ['Prácticas', 'Experiencia Laboral', 'Carrera Estudiantil', 'Guía para Padres', 'Preparación Universitaria'],
+    cta: { heading: 'MGN Global Career Fellowship — prácticas remotas para 14–22 años', body: 'Prácticas basadas en proyectos dentro de empresas reales. 100% remoto, cohortes anuales. Tasa de admisión inferior al 30%.', label: 'Solicitar la Fellowship', href: 'https://mgnnetworks.com/en/fellowship.html' },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

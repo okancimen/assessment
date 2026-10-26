@@ -1690,6 +1690,18 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       href: '/zh/xueshu-pinggu',
     },
   },
+  {
+    slug: 'xuesheng-ruhe-zhao-shixi',
+    contentSlug: 'how-to-find-internship-as-a-student',
+    title: '学生如何找实习：家长完整指南',
+    shortTitle: '学生如何找实习',
+    description: '为家长提供的实用指南，介绍如何在全球范围内为14–22岁学生寻找实习和工作经验。',
+    tldr: 'MGN全球职业奖学金为14–22岁学生提供基于真实项目的远程实习，以评估潜力而非简历记录作为录取依据。',
+    date: '2026-10-26',
+    readTime: '10分钟阅读',
+    tags: ['实习', '工作经验', '学生职业', '家长指南', '大学准备'],
+    cta: { heading: 'MGN全球职业奖学金——14–22岁远程实习', body: '在真实企业中进行项目实习。完全远程，全年开放队列。录取率低于30%。', label: '申请奖学金', href: 'https://mgnnetworks.com/en/fellowship.html' },
+  },
 ]
 
 export function getChinesePostBySlug(slug: string) {

@@ -76,6 +76,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [How to Get a Tech Internship Before University](https://eduentry.com/blog/how-to-get-tech-internship-before-university): List of UK tech employers offering school-age programmes (Google, Microsoft, KPMG), application process, and what employers expect.
 - [How Does Your Child Compare Globally](https://eduentry.com/blog/how-does-your-child-compare-globally): PISA country rankings, UK vs Singapore/Japan/South Korea score gaps, and explanation of standardised scores vs school grades.
 - [How to Get an Internship with No Experience](https://eduentry.com/blog/how-to-get-internship-no-experience-high-school): Five practical steps to land a high school internship with no prior work history — skill mapping, a readiness report instead of an empty CV, alternative experience routes, and a personalised application letter.
+- [How to Find an Internship as a Student](https://eduentry.com/blog/how-to-find-internship-as-a-student): Global parent's guide to finding internships for students aged 14–22 — types of placement, the experience paradox, remote structured programmes, and the MGN Global Career Fellowship (project-based, ages 14–22, under 30% acceptance rate).
 - [What Is the 11+ Exam? Complete Parent's Guide](https://eduentry.com/blog/what-is-the-11-plus-exam-complete-guide): GL vs CEM formats, SAS score benchmarks (115+ and 127+), why school grades don't predict results, the four pillars of the exam, top 3 preparation mistakes, and how adaptive IRT-based assessment measures your child's true level.
 
 ### Eduentry.ai blog posts — French (Français)
@@ -392,7 +393,7 @@ Each of the 24 character traits is scored 1.0–5.0. Scores reflect how consiste
 
 **Personality assessment**: child-personality-assessment-guide, how-to-use-child-character-strengths-report, via-character-strengths-children, test-anxiety-in-children-strengths, understanding-child-strengths-weaknesses-high-school, discover-school-age-childs-hidden-strengths
 
-**Internship assessment**: high-school-internship-benefits-university, how-to-get-tech-internship-before-university, how-to-get-internship-no-experience-high-school, digital-marketing-work-experience-student-reviews, how-to-differentiate-yourself-at-15, how-to-start-business-at-16, how-to-find-internship-as-student, pisa-2025-work-experience-student-readiness, 65-jobs-ai-cannot-automate, habits-to-avoid-future-unemployment
+**Internship assessment**: high-school-internship-benefits-university, how-to-get-tech-internship-before-university, how-to-get-internship-no-experience-high-school, how-to-find-internship-as-a-student, digital-marketing-work-experience-student-reviews, how-to-differentiate-yourself-at-15, how-to-start-business-at-16, how-to-find-internship-as-student, pisa-2025-work-experience-student-readiness, 65-jobs-ai-cannot-automate, habits-to-avoid-future-unemployment
 
 ## Technical notes
 

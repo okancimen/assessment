@@ -1628,6 +1628,18 @@ export const BLOG_POSTS_AR: BlogPostMeta[] = [
       href: '/ar/taqyim-acadimi',
     },
   },
+  {
+    slug: 'kayfa-tajid-tadreeb-li-tullab',
+    contentSlug: 'how-to-find-internship-as-a-student',
+    title: 'كيف تجد تدريبًا للطالب: دليل شامل للآباء',
+    shortTitle: 'كيف تجد تدريبًا للطالب',
+    description: 'دليل عملي للآباء حول إيجاد التدريب وخبرة العمل للطلاب الذين تتراوح أعمارهم بين 14 و22 عامًا على مستوى العالم.',
+    tldr: 'تقدم MGN Global Career Fellowship تدريبًا عن بُعد قائمًا على مشاريع حقيقية للطلاب من 14 إلى 22 عامًا، مع القبول بناءً على الإمكانات المُقيَّمة.',
+    date: '2026-10-26',
+    readTime: '10 دقائق قراءة',
+    tags: ['تدريب', 'خبرة عمل', 'مسيرة الطالب', 'دليل الآباء', 'التحضير للجامعة'],
+    cta: { heading: 'MGN Global Career Fellowship — تدريب عن بُعد للأعمار 14–22', body: 'تدريب قائم على المشاريع في شركات حقيقية. عن بُعد بالكامل، دفعات على مدار العام. معدل القبول أقل من 30%.', label: 'التقدم للزمالة', href: 'https://mgnnetworks.com/en/fellowship.html' },
+  },
 ]
 
 export function getArabicPostBySlug(slug: string): BlogPostMeta | undefined {

@@ -1764,6 +1764,18 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: '/fr/evaluation-academique',
     },
   },
+  {
+    slug: 'comment-trouver-stage-etudiant',
+    contentSlug: 'how-to-find-internship-as-a-student',
+    title: 'Comment Trouver un Stage en tant qu\'Étudiant : Guide Complet pour les Parents',
+    shortTitle: 'Comment Trouver un Stage Étudiant',
+    description: 'Guide pratique pour les parents sur la recherche de stages et d\'expériences professionnelles pour les étudiants de 14 à 22 ans à l\'échelle mondiale.',
+    tldr: 'La MGN Global Career Fellowship propose des stages à distance basés sur des projets réels pour les étudiants de 14 à 22 ans, avec admission sur le potentiel évalué.',
+    date: '2026-10-26',
+    readTime: '10 min de lecture',
+    tags: ['Stage', 'Expérience Professionnelle', 'Carrière Étudiante', 'Guide Parents', 'Préparation Universitaire'],
+    cta: { heading: 'MGN Global Career Fellowship — stage à distance pour 14–22 ans', body: 'Stage basé sur des projets dans de vraies entreprises. 100% à distance, cohortes toute l\'année. Taux d\'admission inférieur à 30%.', label: 'Postuler à la Fellowship', href: 'https://mgnnetworks.com/en/fellowship.html' },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

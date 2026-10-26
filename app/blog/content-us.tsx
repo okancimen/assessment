@@ -3127,4 +3127,173 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'how-to-find-internship-as-a-student': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Every year, parents of high-achieving students hit the same wall: their child is motivated, capable, and ready — but the internship search goes nowhere. Most programmes say "experience preferred." Cold emails go unanswered. Local options are limited. The good news is that the internship landscape has shifted significantly since 2020. Remote, structured programmes now give students in Singapore, Dubai, Toronto, São Paulo, and London equal access to the same professional opportunities. This guide walks through exactly how to find and land the right placement.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Research from the National Association of Colleges and Employers consistently shows that students with professional experience before university receive job offers at significantly higher rates than peers without it. The advantage compounds: a student who starts building their professional profile at 15 arrives at their university application with evidence, references, and vocabulary that most 17-year-olds simply cannot match.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What a Student Internship Looks Like in 2026</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          "Internship" covers a wider range of arrangements than most parents realise. Understanding the landscape before you search saves weeks of misdirected effort.
+        </p>
+        <div className="overflow-x-auto mb-4">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-indigo-50">
+                <th className="text-left p-3 font-semibold text-gray-900 border border-gray-200">Type</th>
+                <th className="text-left p-3 font-semibold text-gray-900 border border-gray-200">What it involves</th>
+                <th className="text-left p-3 font-semibold text-gray-900 border border-gray-200">Best for</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ['Local work shadowing', '1–2 weeks observing a professional in your area', 'Sector exploration, ages 14–15'],
+                ['School-arranged placement', 'Coordinated by the school, often compulsory', 'First exposure, lower competition'],
+                ['Large-company insight week', 'Structured 1-week programme at a major firm', 'Ages 16+, highly competitive'],
+                ['Remote structured programme', 'Project-based work for a real company, fully remote', 'All ages, global access, strongest credentials'],
+              ].map(([type, desc, best]) => (
+                <tr key={type} className="border-b border-gray-100">
+                  <td className="p-3 font-medium text-gray-900 border border-gray-200">{type}</td>
+                  <td className="p-3 text-gray-700 border border-gray-200">{desc}</td>
+                  <td className="p-3 text-gray-700 border border-gray-200">{best}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          For parents outside the UK or US where large-company schemes are concentrated, remote structured programmes are the most accessible and most credential-generating option available.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Most Students Struggle to Find One</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The experience paradox is real: employers want students who have already demonstrated professional behaviour, but students need an opportunity to demonstrate it for the first time. Three structural barriers reinforce it:
+        </p>
+        <Bullet>
+          <strong>Geographic concentration.</strong> The majority of formal student internship programmes are based in a handful of cities — London, New York, Singapore, Dubai. Students outside those hubs have far fewer options unless they pursue remote placements.
+        </Bullet>
+        <Bullet>
+          <strong>Competitive entry.</strong> Structured programmes at reputable organisations — even those designed for school-age students — typically accept fewer than 30% of applicants. Students who apply with a blank CV and a generic covering letter rarely progress past the first filter.
+        </Bullet>
+        <Bullet>
+          <strong>No objective evidence of potential.</strong> Without grades, references, or prior work history, it is genuinely difficult for an employer to differentiate between two equally enthusiastic 15-year-olds. Students who can supply a verified psychometric assessment score immediately separate themselves from the field.
+        </Bullet>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Global Approach: Remote Structured Programmes</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Remote project-based programmes have changed what is possible for students outside the traditional internship hubs. Instead of needing to be in London or New York, a motivated 16-year-old in Cairo, Kuala Lumpur, or Buenos Aires can now join the same cohort as a student in Singapore and work on the same live business brief.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          What distinguishes a strong remote programme from a box-ticking exercise:
+        </p>
+        <Bullet><strong>Real deliverables.</strong> Students produce work — reports, analyses, strategies — that a real organisation actually uses, rather than completing training modules or reading case studies.</Bullet>
+        <Bullet><strong>Senior feedback.</strong> Each deliverable is reviewed by an experienced professional, not an automated marking scheme. The feedback is the learning.</Bullet>
+        <Bullet><strong>Verifiable credentials.</strong> The reference letter at the end names the organisation, the director, and the specific project. It can be independently verified. This is what makes it valuable in a university personal statement or a future job application.</Bullet>
+        <Bullet><strong>Selective admission.</strong> A programme that accepts everyone is a programme that means nothing to an employer. Selectivity is what gives the credential its signal value.</Bullet>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The MGN Global Career Fellowship</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The MGN Global Career Fellowship — run by Magenta Networks, a Singapore-registered technology and talent group — places high-potential students aged 14–22 as Junior Consultants inside its portfolio companies. It is one of the few programmes of its type that is fully remote, year-round, and explicitly designed for students without prior professional experience.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">What Students Work On</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">Fellows are placed in one of four departments based on their aptitude profile and stated interest:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose mb-4">
+          {[
+            { track: 'Marketing & Growth', examples: 'Competitive analysis, content strategy, SEO audits' },
+            { track: 'Data & Research', examples: 'Market analysis, dashboards, survey design' },
+            { track: 'Strategy & Operations', examples: 'Business models, process mapping, investor materials' },
+            { track: 'Technology', examples: 'Feature specs, technical documentation, QA testing, AI direction' },
+          ].map(({ track, examples }) => (
+            <div key={track} className="border border-gray-100 rounded-xl p-4 bg-gray-50">
+              <div className="font-semibold text-gray-900 text-sm mb-1">{track}</div>
+              <div className="text-xs text-gray-600">{examples}</div>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Programme Structure</h3>
+        <Bullet><strong>Cohort size:</strong> Maximum 5 fellows per cohort — small enough for meaningful mentor contact.</Bullet>
+        <Bullet><strong>Time commitment:</strong> 8–10 hours per week, fully asynchronous.</Bullet>
+        <Bullet><strong>Cohort start dates:</strong> The 1st of every month, year-round. Students can pause during exam periods.</Bullet>
+        <Bullet><strong>Mentor feedback:</strong> Senior review within 48 hours on every deliverable submitted.</Bullet>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">What Fellows Receive</h3>
+        <Bullet><strong>International reference letter</strong> from the Managing Director — verifiable on LinkedIn.</Bullet>
+        <Bullet><strong>Compiled work portfolio</strong> of completed project deliverables.</Bullet>
+        <Bullet><strong>Professional vocabulary and frameworks</strong> transferred through real project cycles.</Bullet>
+
+        <Callout>
+          The Fellowship requires completion of an Eduentry psychometric assessment as part of the application process. The assessment (30 minutes) provides the aptitude data used to match each student to the right department track.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Prepare Your Student's Application</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Selective programmes filter applications in three stages: initial screening, aptitude review, and offer. Most unsuccessful applications fail at stage one — not because the student lacks potential, but because the application does not communicate it clearly.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Step 1: Complete the Eduentry Psychometric Assessment</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Before any application, complete the Eduentry academic assessment. It takes 30 minutes and covers verbal reasoning, quantitative reasoning, English, and mathematics — the four domains most predictive of professional performance. The score is a required component of the MGN Fellowship application and provides objective evidence of aptitude that a blank CV cannot supply.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Step 2: Build a One-Page CV</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A student CV at this stage should cover: current school and predicted or achieved grades; extracurricular activities with any leadership roles; personal projects (a coding project, a blog, a business idea they have researched); and a two-line skills summary. Keep it to one page. Programmes that accept students aged 14–18 do not expect three pages of work history — they expect clarity and confidence.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Step 3: Write a Targeted Covering Letter</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Three paragraphs is the right length. Paragraph one: which department track the student is applying for, and one specific reason why. Paragraph two: one concrete example of a skill or project that is relevant to that track. Paragraph three: what the student wants to learn and contribute during the fellowship. Generic letters that could apply to any programme are filtered out in the first pass.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Step 4: Apply for the Next Cohort</h3>
+        <p className="text-gray-700 leading-relaxed">
+          Cohorts start on the 1st of each month, with a five-business-day review after submission. Each cohort is capped at five fellows. Apply early — the next available cohort often fills before the month ends.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Your Student Walks Away With</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The tangible outputs of a completed fellowship distinguish it from most student work experience programmes:
+        </p>
+        <Bullet><strong>A verifiable reference letter.</strong> Signed by the Managing Director, verifiable on LinkedIn by any university admissions tutor or future employer who wants to check it.</Bullet>
+        <Bullet><strong>A portfolio of real deliverables.</strong> Not "I observed a team meeting" — actual outputs: a competitive analysis, a market research report, a feature specification. Something a parent can read and a university can evaluate.</Bullet>
+        <Bullet><strong>A department track credit.</strong> Students who complete the programme are designated as a Marketing Fellow, Data Fellow, Strategy Fellow, or Technology Fellow — a concrete credential that can be listed on a CV and personal statement.</Bullet>
+        <Bullet><strong>Professional confidence.</strong> The single most consistent feedback from fellows and their parents is that the programme changes how a student talks about their interests in interviews and personal statements — because they have now actually done something professional, not just read about it.</Bullet>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/early-internship-child-development-career', tag: 'Child Development', title: 'Why Internships at Early Ages Matter' },
+            { href: '/blog/high-school-internship-benefits-university', tag: 'University Prep', title: 'Why High School Internships Matter for University Admissions' },
+            { href: '/blog/how-to-get-internship-no-experience-high-school', tag: 'Application Guide', title: 'How to Get an Internship with No Experience' },
+            { href: '/blog/how-to-get-tech-internship-before-university', tag: 'Tech Career', title: 'Tech Work Experience: How to Get a Placement Before University' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }

@@ -399,6 +399,14 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/ar/blog/kayfa-tajid-staj-bila-khibra-thanawy",
     f"{BASE_URL}/ru/blog/kak-nayti-stazh-bez-opyta-shkolnik",
     f"{BASE_URL}/zh/blog/gaozhong-wu-jingyan-shixi-zhinan",
+    # How to find internship as a student — all 7 locales
+    f"{BASE_URL}/blog/how-to-find-internship-as-a-student",
+    f"{BASE_URL}/tr/blog/ogrenci-staj-nasil-bulunur",
+    f"{BASE_URL}/es/blog/como-encontrar-practicas-estudiante",
+    f"{BASE_URL}/fr/blog/comment-trouver-stage-etudiant",
+    f"{BASE_URL}/ar/blog/kayfa-tajid-tadreeb-li-tullab",
+    f"{BASE_URL}/ru/blog/kak-nayti-stazhirovku-studentu",
+    f"{BASE_URL}/zh/blog/xuesheng-ruhe-zhao-shixi",
     # 11+ exam complete guide — all 7 locales
     f"{BASE_URL}/blog/what-is-the-11-plus-exam-complete-guide",
     f"{BASE_URL}/tr/blog/11-plus-sinavi-nedir-tam-rehber",

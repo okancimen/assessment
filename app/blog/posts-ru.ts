@@ -1500,6 +1500,18 @@ export const BLOG_POSTS_RU: BlogPostMeta[] = [
       href: '/ru/akademicheskaya-otsenka',
     },
   },
+  {
+    slug: 'kak-nayti-stazhirovku-studentu',
+    contentSlug: 'how-to-find-internship-as-a-student',
+    title: 'Как найти стажировку студенту: полное руководство для родителей',
+    shortTitle: 'Как найти стажировку студенту',
+    description: 'Практическое руководство для родителей по поиску стажировок для студентов 14–22 лет по всему миру.',
+    tldr: 'MGN Global Career Fellowship предлагает удалённые стажировки на основе реальных проектов для студентов 14–22 лет с отбором по оценённому потенциалу.',
+    date: '2026-10-26',
+    readTime: '10 минут чтения',
+    tags: ['Стажировка', 'Опыт работы', 'Карьера студента', 'Руководство для родителей', 'Подготовка к университету'],
+    cta: { heading: 'MGN Global Career Fellowship — удалённая стажировка для 14–22 лет', body: 'Проектная стажировка в реальных компаниях. Полностью удалённо, круглогодичные наборы. Процент принятых — менее 30%.', label: 'Подать заявку на стажировку', href: 'https://mgnnetworks.com/en/fellowship.html' },
+  },
 ]
 
 export function getRussianPostBySlug(slug: string) {

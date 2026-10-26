@@ -2317,6 +2317,18 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr/akademik-degerlendirme',
     },
   },
+  {
+    slug: 'ogrenci-staj-nasil-bulunur',
+    contentSlug: 'how-to-find-internship-as-a-student',
+    title: 'Öğrenci Olarak Staj Nasıl Bulunur: Ebeveynler İçin Tam Rehber',
+    shortTitle: 'Öğrenci Stajı Nasıl Bulunur',
+    description: '14–22 yaş öğrenciler için küresel staj ve iş deneyimi bulma rehberi — nerede aranır, nasıl başvurulur ve MGN Global Kariyer Bursu nedir.',
+    tldr: 'MGN Global Kariyer Bursu, 14–22 yaş öğrencilere CV geçmişi yerine değerlendirilen potansiyele göre uzaktan proje deneyimi sunar.',
+    date: '2026-10-26',
+    readTime: '10 dk okuma',
+    tags: ['Staj', 'İş Deneyimi', 'Öğrenci Kariyer', 'Ebeveyn Rehberi', 'Üniversite Hazırlık'],
+    cta: { heading: 'MGN Global Kariyer Bursu — 14–22 yaş uzaktan staj', body: 'Gerçek şirketlerde proje tabanlı yerleştirme. Tamamen uzaktan, yıl boyu. Kabul oranı %30\'un altında.', label: 'Bursa Başvur', href: 'https://mgnnetworks.com/en/fellowship.html' },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

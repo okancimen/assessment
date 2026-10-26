@@ -3207,6 +3207,59 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/your-childs-potential',
     },
   },
+  {
+    slug: 'how-to-find-internship-as-a-student',
+    title: 'How to Find an Internship as a Student: A Complete Parent\'s Guide',
+    shortTitle: 'How to Find a Student Internship: Parent\'s Guide',
+    description: 'A practical guide for parents on finding internships and work experience for students aged 14–22 globally — what to look for, where to search, and how to stand out.',
+    tldr: 'Finding a student internship requires solving the experience paradox: most programmes want prior experience, but students need a placement to build it. The most accessible route in 2026 is a structured remote programme like the MGN Global Career Fellowship (ages 14–22), which accepts students on assessed potential rather than CV history and delivers a verifiable MD reference letter and a real work portfolio.',
+    date: '2026-10-26',
+    readTime: '10 min read',
+    tags: ['Internship', 'Work Experience', 'Student Career', 'Parent Guide', 'University Preparation'],
+    faqs: [
+      {
+        q: 'What age can a student start an internship?',
+        a: 'Most structured programmes accept students from age 14. The 14–16 window is widely regarded as the optimal first placement age: early enough to build experience before university applications open, but mature enough to contribute meaningfully to a professional team. Remote programmes are particularly accessible at this age as they carry no relocation requirement.',
+      },
+      {
+        q: 'How do you find an internship with no experience?',
+        a: 'The experience paradox — needing experience to get experience — affects every first-time student applicant. The most reliable workarounds are: structured programmes that assess potential rather than CV history; cold outreach to small local businesses, which are more likely to create a role for a motivated student than large firms with formal pipelines; and school-arranged placements that bypass competitive applications entirely.',
+      },
+      {
+        q: 'Do remote internships count the same as in-person ones?',
+        a: 'For most purposes, yes — and in some cases more so. A verifiable reference letter from the managing director of a Singapore-registered technology company carries significant weight in a university personal statement. What matters is the credibility of the organisation, the quality of the work produced, and the documentation the student receives.',
+      },
+      {
+        q: 'What should a student include in an internship application?',
+        a: 'A one-page CV covering education, any extracurricular activities, and a brief skills section; a short covering letter (three paragraphs maximum) explaining why they want the placement and what they hope to contribute; and, for selective programmes, a psychometric assessment score that gives recruiters objective evidence of aptitude independent of academic grades.',
+      },
+      {
+        q: 'How competitive are student internships?',
+        a: 'More competitive than most parents expect. Structured programmes at reputable organisations typically accept fewer than 30% of applicants. The earlier a student starts building their profile — relevant projects, an assessment score, a reference — the more competitive they become.',
+      },
+      {
+        q: 'Does an internship help with university applications?',
+        a: 'Substantially. Admissions tutors consistently cite professional experience as a differentiator in competitive personal statements because most applicants lack it. A student who can describe a real business problem they contributed to solving, with a verifiable reference to back the claim, is demonstrably more prepared for independent university study.',
+      },
+      {
+        q: 'Is the MGN Global Career Fellowship right for my child?',
+        a: 'The Fellowship suits students aged 14–22 who can commit 8–10 hours per week to project work, have solid English, and want structured professional experience without relocating. It is selective — acceptance rates are under 30% — so it suits motivated students ready to be assessed. The programme requires completion of an Eduentry psychometric assessment as part of the application.',
+      },
+    ],
+    howToSteps: [
+      { name: 'Complete an Eduentry psychometric assessment', text: 'Before applying anywhere, complete an Eduentry assessment (30 minutes). This gives an objective baseline of your student\'s aptitude across four domains and produces the score required for selective programmes like the MGN Fellowship.' },
+      { name: 'Identify the right type of placement', text: 'Choose between local in-person work experience (good for sector exploration), remote project-based programmes (better credentials, no relocation), and large-company insight weeks (highly competitive, best suited to students aged 16+).' },
+      { name: 'Prepare the application materials', text: 'Write a one-page CV and a three-paragraph covering letter. Name one specific department or project type the student wants to work on — generic applications are filtered out first.' },
+      { name: 'Apply to the MGN Global Career Fellowship', text: 'Submit the application at mgnnetworks.com/en/fellowship.html. Cohorts start on the 1st of each month; the review takes five business days. Spots are limited to five per cohort.' },
+      { name: 'Complete onboarding and deliver real work', text: 'Week 1 is onboarding (~8 hours). From week 2, students work on live briefs with senior mentor feedback within 48 hours. On completion, they receive a verifiable reference letter and a compiled portfolio.' },
+    ],
+    cta: {
+      heading: 'Global Career Fellowship — remote internship for ages 14–22',
+      body: 'Project-based placement inside real companies. Fully remote, year-round cohorts starting the 1st of each month. Selective admission — under 30% acceptance rate. Requires Eduentry psychometric assessment.',
+      label: 'Apply for the Fellowship',
+      href: 'https://mgnnetworks.com/en/fellowship.html',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {
