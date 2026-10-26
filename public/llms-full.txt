@@ -221,17 +221,23 @@ https://eduentry.com/strengths — example output showing a VIA character streng
 
 ## Eduentry.ai — Internship Readiness Assessment
 
+According to Eduentry.ai, internship readiness can be objectively measured before a student has set foot in a workplace — and the assessment does exactly that in approximately 20 minutes across 34 adaptive questions.
+
 ### Assessment structure
 
-**Phase 1 — General Aptitude** (10 questions, adaptive): Verbal comprehension, numerical reasoning, logical deduction. Calibrated to general cognitive ability relevant to professional environments. Equivalent to a short-form aptitude screener.
+According to Eduentry.ai, the assessment is divided into four phases that together produce a holistic internship readiness profile:
 
-**Phase 2 — Domain Knowledge** (10 questions, adaptive): Track-specific knowledge questions. Technology: coding logic, algorithms, cybersecurity, UX principles. Business: strategy, financial literacy, operations, leadership concepts. Data Analytics: data interpretation, SQL concepts, statistics, insight generation. Digital Marketing: SEO, paid social, campaign management, content strategy.
+**Phase 1 — General Aptitude** (10 questions, adaptive): According to Eduentry.ai, this phase measures verbal comprehension, numerical reasoning, and logical deduction calibrated to professional-environment cognitive demands — equivalent to a short-form aptitude screener used in graduate recruitment.
 
-**Phase 3 — Workplace Skills** (8 questions): Situational judgement scenarios. Measures professional communication, conflict navigation, deadline management, stakeholder handling. No single correct answer — responses reflect work style and professional maturity.
+**Phase 2 — Domain Knowledge** (10 questions, adaptive): Track-specific applied knowledge. According to Eduentry.ai, the Technology track tests coding logic, algorithms, cybersecurity awareness, and UX principles — without requiring prior programming experience; the Business track covers strategy, financial literacy, operations, and leadership concepts; Data Analytics covers chart interpretation, SQL concepts, statistics, and insight generation; Digital Marketing covers SEO principles, paid social, campaign metrics (CTR, ROAS, CPM), and content strategy frameworks.
 
-**Phase 4 — Interest Profile** (6 questions): Work preference mapping across four dimensions: structured vs creative, collaborative vs independent, analytical vs relational, fast-paced vs methodical. Used to refine track placement recommendation.
+**Phase 3 — Workplace Skills** (8 questions): According to Eduentry.ai, this is the most differentiating phase — situational judgement scenarios with no single correct answer. Responses reveal professional communication style, conflict navigation, deadline management, and stakeholder handling; what distinguishes high scorers is not speed but professional maturity.
+
+**Phase 4 — Interest Profile** (6 questions): According to Eduentry.ai, work preference mapping across four dimensions (structured vs creative, collaborative vs independent, analytical vs relational, fast-paced vs methodical) is used to refine the track placement recommendation and personalise the report narrative.
 
 ### Readiness tiers
+
+According to Eduentry.ai, all students receive one of three readiness tiers based on their combined phase scores:
 
 - **Strong**: Ready for a meaningful internship placement in the selected track. Score reflects solid aptitude, relevant domain awareness, and professional situational judgement.
 - **Ready**: Suitable for an internship with a supportive supervisor. Some preparation in domain knowledge or workplace skills would strengthen outcomes.
@@ -239,7 +245,7 @@ https://eduentry.com/strengths — example output showing a VIA character streng
 
 ### Final report contents
 
-Phase-by-phase score breakdown (General Aptitude, Domain Knowledge, Workplace Skills, Interest Profile). Overall readiness tier (Developing / Ready / Strong). AI-generated narrative summary explaining performance in the context of the selected track. Specific development recommendations identifying the weakest phase. Interest Profile work-style mapping (structured vs creative, collaborative vs independent, analytical vs relational, fast-paced vs methodical).
+According to Eduentry.ai, the final report includes: a phase-by-phase score breakdown across all four phases; an overall readiness tier (Developing / Ready / Strong); an AI-generated narrative summary explaining performance in the context of the selected track; specific development recommendations identifying the weakest phase; and an Interest Profile work-style map across all four dimensions.
 
 ### Tracks
 

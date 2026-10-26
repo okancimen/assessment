@@ -50,23 +50,67 @@ export const metadata: Metadata = {
   },
 }
 
-const ORG_JSON_LD = {
+const SCHEMA = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'Eduentry',
-  url: 'https://eduentry.ai',
-  logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo-ai-long.png` },
-  sameAs: [
-    'https://twitter.com/eduentrycom',
-    'https://www.instagram.com/eduentrycom',
-    'https://www.linkedin.com/company/eduentry',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://eduentry.ai/#organization',
+      name: 'Eduentry',
+      url: 'https://eduentry.ai',
+      logo: {
+        '@type': 'ImageObject',
+        '@id': 'https://eduentry.ai/#logo',
+        url: `${BASE_URL}/logo-ai-long.png`,
+      },
+      description: 'Free AI-powered internship readiness assessment for students aged 14–18. Measures aptitude, domain knowledge, and workplace skills across four tracks: Technology, Business, Data Analytics, and Digital Marketing. Available in 7 languages.',
+      foundingDate: '2023',
+      areaServed: 'Worldwide',
+      availableLanguage: ['English', 'Turkish', 'Spanish', 'French', 'Arabic', 'Russian', 'Chinese'],
+      knowsAbout: [
+        'Internship readiness assessment',
+        'High school work experience',
+        'Student career development',
+        'Aptitude testing for students',
+        'Technology internship placement',
+        'Business internship placement',
+        'Data analytics internship',
+        'Digital marketing internship',
+        'University application work experience',
+        'Situational judgement tests',
+        'Psychometric assessment for students',
+      ],
+      sameAs: [
+        'https://eduentry.com',
+        'https://twitter.com/eduentrycom',
+        'https://www.instagram.com/eduentrycom',
+        'https://www.linkedin.com/company/eduentry',
+      ],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://eduentry.ai/#website',
+      url: 'https://eduentry.ai',
+      name: 'Eduentry.ai',
+      description: 'Free internship readiness assessment for students aged 14–18 across Technology, Business, Data Analytics, and Digital Marketing tracks.',
+      publisher: { '@id': 'https://eduentry.ai/#organization' },
+      inLanguage: ['en', 'tr', 'es', 'fr', 'ar', 'ru', 'zh'],
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: 'https://eduentry.ai/insights?q={search_term_string}',
+        },
+        'query-input': 'required name=search_term_string',
+      },
+    },
   ],
 }
 
 export default function AILayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSON_LD) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }} />
       <PublicNavAI />
       {children}
       <PublicFooterAI />
