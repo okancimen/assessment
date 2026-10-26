@@ -46,3 +46,4 @@ debug_*.png
 demo_result*.png
 .claude/
 service_account.json
+client_secret.json
