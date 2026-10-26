@@ -1454,6 +1454,50 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
       href: '/es/evaluacion-de-personalidad',
     },
   },
+  {
+    slug: 'puntuaciones-wisc-v-explicadas',
+    contentSlug: 'wisc-v-scores-explained',
+    title: 'Puntuaciones WISC-V Explicadas: CI Escala Total, Índices y Puntos de Corte para Superdotados',
+    shortTitle: 'Puntuaciones WISC-V: Bandas CI y Umbrales para Superdotados',
+    description: 'Rangos del CI Escala Total (FSIQ) del WISC-V, los cinco índices (VCI, VSI, FRI, WMI, PSI), puntos de corte para programas de superdotados y cómo interpretar un perfil discrepante.',
+    tldr: 'Un FSIQ de 130 o más en el WISC-V sitúa al niño en el percentil 98 y es el umbral estándar para la identificación de superdotados en la mayoría de distritos estadounidenses. Entre 120–129 es rango Superior (percentil 91–97). El test tiene cinco índices: Comprensión Verbal (VCI), Visuoespacial (VSI), Razonamiento Fluido (FRI), Memoria de Trabajo (WMI) y Velocidad de Procesamiento (PSI). La mayoría de programas usa el FSIQ como criterio principal.',
+    date: '2026-10-26',
+    readTime: '11 min de lectura',
+    tags: ['WISC-V', 'Test de IQ', 'Test para Superdotados', 'Educación EE.UU.', 'Programas para Superdotados', 'Evaluación'],
+    faqs: [
+      { q: '¿Qué puntuación WISC-V califica para programas de superdotados?', a: 'El umbral estándar es un FSIQ de 130 o más, que corresponde al percentil 98. Algunos programas de magnet muy selectivos requieren 135+ (percentil 99). Muchos distritos también aceptan 125+ (percentil 95) combinado con puntuaciones altas en MAP o CogAT.' },
+      { q: '¿Cuáles son los cinco índices del WISC-V?', a: 'Los cinco índices primarios son: Comprensión Verbal (VCI) — vocabulario y razonamiento verbal; Visuoespacial (VSI) — diseño de bloques y procesamiento espacial; Razonamiento Fluido (FRI) — reconocimiento de patrones y resolución abstracta; Memoria de Trabajo (WMI) — retención y manipulación de información; Velocidad de Procesamiento (PSI) — velocidad de exploración visual. Cada índice tiene media 100 y desviación típica 15.' },
+      { q: '¿En qué se diferencia el WISC-V del CogAT?', a: 'El WISC-V es un test de CI administrado individualmente por un psicólogo autorizado — produce un CI clínicamente válido y se usa para la identificación formal de superdotados y el diagnóstico de dificultades de aprendizaje. El CogAT es una herramienta de cribado grupal administrada por la escuela. El WISC-V es más costoso, más preciso y tiene mayor peso diagnóstico.' },
+    ],
+    cta: {
+      heading: 'Conoce dónde está tu hijo antes de la cita con el WISC-V',
+      body: 'La evaluación académica gratuita de Eduentry compara habilidades verbales, cuantitativas y de razonamiento con un grupo internacional de referencia. Entiende el perfil de tu hijo antes de solicitar una evaluación psicoeducativa completa.',
+      label: 'Iniciar evaluación académica gratuita',
+      href: '/es/evaluacion-academica',
+    },
+  },
+  {
+    slug: 'cogat-vs-nwea-map-superdotados',
+    contentSlug: 'cogat-vs-nwea-map-gifted',
+    title: 'CogAT vs. NWEA MAP para Superdotados: ¿Qué Test Importa Más?',
+    shortTitle: 'CogAT vs. NWEA MAP para Superdotados: Diferencias Clave',
+    description: 'CogAT vs NWEA MAP para identificación de superdotados: qué mide cada prueba, por qué los distritos usan ambas, correspondencia de puntuaciones y qué hacer cuando los resultados son contradictorios.',
+    tldr: 'CogAT mide la capacidad de razonamiento cognitivo — cómo piensa tu hijo. NWEA MAP mide el rendimiento académico — qué ha aprendido. La mayoría de programas de superdotados usan MAP para el cribado inicial (percentil 90–95) y CogAT o WISC-V para confirmar la capacidad cognitiva subyacente. MAP alto con CogAT bajo suele reflejar esfuerzo académico intensivo; CogAT alto con MAP bajo puede indicar un superdotado de bajo rendimiento.',
+    date: '2026-10-26',
+    readTime: '10 min de lectura',
+    tags: ['CogAT', 'NWEA MAP', 'Test para Superdotados', 'Educación EE.UU.', 'Programas para Superdotados', 'Puntuaciones RIT', 'Evaluación'],
+    faqs: [
+      { q: '¿Una puntuación MAP alta garantiza la entrada a programas de superdotados?', a: 'No. MAP mide lo que el niño ha aprendido (rendimiento); los programas de superdotados generalmente buscan evidencia de capacidad cognitiva excepcional. Un niño que alcanza el percentil 95 en MAP mediante tutorías intensivas puede no cumplir los requisitos si sus puntuaciones en CogAT están en el percentil 75. Los distritos que usan ambos tests buscan la combinación de alto rendimiento Y alta capacidad subyacente.' },
+      { q: '¿Qué sucede cuando CogAT y MAP dan resultados contradictorios?', a: 'Hay dos patrones principales: (1) MAP alto, CogAT medio — suele indicar un estudiante de alto rendimiento por esfuerzo o tutorías, no por capacidad excepcional; generalmente no cumple el umbral para los programas GT más selectivos. (2) MAP medio, CogAT alto — perfil de superdotado de bajo rendimiento; suele requerir investigación sobre TDAH, dificultades de aprendizaje o desmotivación.' },
+      { q: '¿Qué puntuación CogAT califica para programas de superdotados?', a: 'La mayoría de distritos requieren una Puntuación de Edad Estándar (SAS) de 125 o más, que corresponde aproximadamente al percentil 95. La escala SAS tiene media 100 y desviación típica 16. Algunos programas de magnet muy selectivos exigen el percentil 97–99.' },
+    ],
+    cta: {
+      heading: 'Comprueba las habilidades de razonamiento antes del periodo de cribado',
+      body: 'La evaluación académica gratuita de Eduentry cubre los mismos dominios verbales, cuantitativos y de razonamiento que el CogAT, comparados internacionalmente. Conoce los puntos fuertes de tu hijo antes de que comience el ciclo de cribado del distrito.',
+      label: 'Iniciar evaluación académica gratuita',
+      href: '/es/evaluacion-academica',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

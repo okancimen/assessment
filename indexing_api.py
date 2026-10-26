@@ -85,6 +85,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/blog/via-character-strengths-children",
     f"{BASE_URL}/blog/character-strengths-academic-success",
     # ── Turkish (TR) ──────────────────────────────────────────────────────────
+    f"{BASE_URL}/tr/blog/wisc-v-puanlari-aciklandi",
+    f"{BASE_URL}/tr/blog/cogat-nwea-map-ustun-yetenekli",
     f"{BASE_URL}/tr/blog/map-testi-nedir",
     f"{BASE_URL}/tr/blog/dubai-lise-rehberi",
     f"{BASE_URL}/tr/blog/cocugumun-guclu-yonleri-ve-akademik-basari",
@@ -126,6 +128,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/tr/blog/oecd-ergen-yari-zamanli-calisma-faydalari",
     f"{BASE_URL}/tr/blog/cocugunuzun-gizli-guclerini-kesfetmek-yeni-nesil-veli-rehberi",
     # ── Spanish (ES) ──────────────────────────────────────────────────────────
+    f"{BASE_URL}/es/blog/puntuaciones-wisc-v-explicadas",
+    f"{BASE_URL}/es/blog/cogat-vs-nwea-map-superdotados",
     f"{BASE_URL}/es/blog/practicas-tempranas-desarrollo-infantil-carrera",
     f"{BASE_URL}/es/blog/practicas-instituto-beneficios-universidad",
     f"{BASE_URL}/es/blog/experiencia-empresarial-instituto-reino-unido",
@@ -160,6 +164,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/es/blog/ansiedad-ante-examenes-ninos-fortalezas",
     f"{BASE_URL}/es/blog/fortalezas-de-caracter-exito-escolar",
     # ── French (FR) ───────────────────────────────────────────────────────────
+    f"{BASE_URL}/fr/blog/scores-wisc-v-expliques",
+    f"{BASE_URL}/fr/blog/cogat-vs-nwea-map-surdoues",
     f"{BASE_URL}/fr/blog/stages-lycee-avantages-universite",
     f"{BASE_URL}/fr/blog/stage-experience-professionnelle-lycee",
     f"{BASE_URL}/fr/blog/se-demarquer-a-15-ans",
@@ -194,6 +200,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/fr/blog/anxiete-examens-enfants-forces",
     f"{BASE_URL}/fr/blog/forces-de-caractere-reussite-scolaire",
     # ── Arabic (AR) ───────────────────────────────────────────────────────────
+    f"{BASE_URL}/ar/blog/sharh-darjat-wisc-v",
+    f"{BASE_URL}/ar/blog/cogat-muqabil-nwea-map-mawhubin",
     f"{BASE_URL}/ar/blog/cat4-dalil-shamil",
     f"{BASE_URL}/ar/blog/madaras-britaniya-dubai-abu-dhabi",
     f"{BASE_URL}/ar/blog/baramij-mawhubin-imarat",
@@ -228,6 +236,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/ar/blog/qalaq-alimtihan-lada-alatfal-nuqat-alquwwa",
     f"{BASE_URL}/ar/blog/quwat-al-shakhsiya-wa-al-tafawwuq-al-dirasi",
     # ── Russian (RU) ──────────────────────────────────────────────────────────
+    f"{BASE_URL}/ru/blog/otsenki-wisc-v-obyasnenie",
+    f"{BASE_URL}/ru/blog/cogat-vs-nwea-map-odarennost",
     f"{BASE_URL}/ru/blog/ranniy-stazh-razvitie-rebyonka-karera",
     f"{BASE_URL}/ru/blog/preimushchestva-stazha-v-shkole",
     f"{BASE_URL}/ru/blog/rabochiy-opyt-starshaya-shkola-uk",
@@ -263,6 +273,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/ru/blog/sily-kharaktera-i-akademicheskiy-uspekh",
     f"{BASE_URL}/ru/blog/trevoga-pered-ekzamenami-u-detey-silnye-storony",
     # ── Chinese (ZH) ──────────────────────────────────────────────────────────
+    f"{BASE_URL}/zh/blog/wisc-v-fenshu-jiexi",
+    f"{BASE_URL}/zh/blog/cogat-vs-nwea-map-caisheng",
     f"{BASE_URL}/zh/blog/pisa-2025-zhongguo-jiazhang-zhinan",
     f"{BASE_URL}/zh/blog/haizi-xueshu-shuiping-ruhe-celiang",
     f"{BASE_URL}/zh/blog/gaozhong-shixi-ruhe-xunzhao",

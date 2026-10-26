@@ -1647,6 +1647,49 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
       href: '/zh/xingge-pinggu',
     },
   },
+  {
+    slug: 'wisc-v-fenshu-jiexi',
+    contentSlug: 'wisc-v-scores-explained',
+    title: 'WISC-V评分详解：全量表智商、分项指数与天才儿童录取门槛',
+    shortTitle: 'WISC-V评分详解：IQ区间与天才录取门槛',
+    description: 'WISC-V全量表智商（FSIQ）区间、五项分项指数（VCI、VSI、FRI、WMI、PSI）、各类天才项目录取门槛，以及如何解读差异化认知能力剖面图。',
+    tldr: 'WISC-V全量表智商（FSIQ）达到130分或以上，处于第98百分位，是美国大多数学区天才认定的标准门槛。120–129分为"优秀"区间（第91–97百分位）。测试包含五个分项指数：语言理解（VCI）、视觉空间（VSI）、流体推理（FRI）、工作记忆（WMI）和加工速度（PSI）。大多数项目以FSIQ作为主要评判标准。',
+    date: '2026-10-26',
+    readTime: '11分钟阅读',
+    tags: ['WISC-V', '智商测试', '天才测试', '美国教育', '天才项目', '教育评估'],
+    faqs: [
+      { q: 'WISC-V达到多少分才符合天才项目要求？', a: '标准门槛是FSIQ 130分或以上，对应第98百分位。部分竞争激烈的磁石学校项目要求135分或以上（第99百分位）。许多学区也接受125分或以上（第95百分位）结合较高的MAP或CogAT成绩。' },
+      { q: 'WISC-V的五项分项指数是什么？', a: '五项主要分项指数：语言理解指数（VCI）——词汇量和语言推理；视觉空间指数（VSI）——积木设计和空间处理；流体推理指数（FRI）——模式识别和抽象解题；工作记忆指数（WMI）——信息保持与操控；加工速度指数（PSI）——视觉扫描速度。每项指数均值为100，标准差为15。' },
+      { q: 'WISC-V与CogAT有什么区别？', a: 'WISC-V是由持证心理学家一对一施测的智商测试，产生具有临床效度的全量表智商，用于正式天才认定和学习障碍诊断。CogAT是学校集体施测的筛查工具。WISC-V更精准，诊断权重更高，但费用也更高。' },
+    ],
+    cta: {
+      heading: '在WISC-V预约前了解孩子的能力水平',
+      body: 'Eduentry免费学术评估将语言、数量和推理能力与国际同龄群体进行比较，帮助您在申请完整心理教育评估前了解孩子的能力剖面。',
+      label: '开始免费学术评估',
+      href: '/zh/xueshu-pinggu',
+    },
+  },
+  {
+    slug: 'cogat-vs-nwea-map-caisheng',
+    contentSlug: 'cogat-vs-nwea-map-gifted',
+    title: 'CogAT与NWEA MAP天才认定对比：哪个测试更重要？',
+    shortTitle: 'CogAT与NWEA MAP天才认定：关键差异解析',
+    description: 'CogAT与NWEA MAP在天才认定中的对比：各测试的测量内容、学区为何同时使用两者、分数对应关系，以及结果矛盾时的应对策略。',
+    tldr: 'CogAT测量认知推理能力——孩子如何思考。NWEA MAP测量学业成就——孩子已学到什么。大多数天才项目使用MAP进行初步筛查（第90–95百分位），再用CogAT或WISC-V确认潜在认知能力。MAP高、CogAT中等通常反映密集辅导效应；CogAT高、MAP中等可能提示低成就天才儿童。',
+    date: '2026-10-26',
+    readTime: '10分钟阅读',
+    tags: ['CogAT', 'NWEA MAP', '天才测试', '美国教育', '天才项目', 'RIT分数', '教育评估'],
+    faqs: [
+      { q: 'MAP高分能保证进入天才项目吗？', a: '不能。MAP测量的是孩子已学到的内容（学业成就）；天才项目通常寻找卓越认知能力的证据。通过密集辅导达到MAP第95百分位的孩子，如果CogAT成绩在第75百分位附近，可能无法通过资格审核。同时使用两项测试的学区，特别寻找高学业成就与高潜在能力相结合的情况。' },
+      { q: 'CogAT与MAP结果矛盾时怎么办？', a: '有两种主要模式：(1) MAP高、CogAT中等——通常反映努力学习或密集辅导带来的高成就，而非卓越认知能力；一般不符合最具选择性的GT项目门槛。(2) MAP中等、CogAT高——低成就天才儿童模式；需要排查多动症、学习障碍或缺乏动力等原因。' },
+    ],
+    cta: {
+      heading: '在筛查窗口开启前检验推理能力',
+      body: 'Eduentry免费学术评估涵盖与CogAT相同的语言、数量和推理维度，并提供国际比较。在学区筛查周期开始前，掌握孩子的优势所在。',
+      label: '开始免费学术评估',
+      href: '/zh/xueshu-pinggu',
+    },
+  },
 ]
 
 export function getChinesePostBySlug(slug: string) {

@@ -2272,6 +2272,51 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr/kisilik-degerlendirmesi',
     },
   },
+  {
+    slug: 'wisc-v-puanlari-aciklandi',
+    contentSlug: 'wisc-v-scores-explained',
+    title: 'WISC-V Puanları Açıklandı: Tam Ölçek IQ, Endeks Puanları ve Üstün Yetenekli Eşikleri',
+    shortTitle: 'WISC-V Puanları: FSIQ Bantları ve Üstün Yetenekli Eşikleri',
+    description: 'WISC-V Tam Ölçek IQ (FSIQ) aralıkları, beş endeks puanı (VCI, VSI, FRI, WMI, PSI), program türüne göre üstün yetenekli eşikleri ve tutarsız profil yorumlama rehberi.',
+    tldr: 'WISC-V Tam Ölçek IQ (FSIQ) 130 veya üzeri, çocuğu 98. yüzdeliğe yerleştirir ve ABD\'nin çoğu bölgesinde üstün yetenekli tanımlama için standart eşiktir. 120–129 arası "Üstün" aralıktır (91–97. yüzdelik). Testin beş endeks puanı vardır: Sözel Kavrama (VCI), Görsel Uzamsal (VSI), Akışkan Akıl Yürütme (FRI), Çalışma Belleği (WMI) ve İşlem Hızı (PSI). Çoğu program birincil kriter olarak FSIQ\'yı kullanır.',
+    date: '2026-10-26',
+    readTime: '11 dk okuma',
+    tags: ['WISC-V', 'IQ Testi', 'Üstün Yetenekli Test', 'ABD Eğitimi', 'Üstün Yetenekli Programlar', 'Değerlendirme'],
+    faqs: [
+      { q: 'WISC-V\'de üstün yetenekli puan nedir?', a: 'WISC-V\'deki standart üstün yetenekli eşiği, 98. yüzdeliğe karşılık gelen 130 veya üzeri Tam Ölçek IQ\'dur (FSIQ). Bazı seçici mıknatıs programları 135+ (99. yüzdelik) gerektirir. Birçok bölge, yüksek MAP veya CogAT puanlarıyla birleştirilmiş 125+ (95. yüzdelik) puanı da kabul eder.' },
+      { q: 'WISC-V\'nin beş endeks puanı nedir?', a: 'Beş birincil endeks: Sözel Kavrama Endeksi (VCI) — kelime bilgisi ve sözel akıl yürütme; Görsel Uzamsal Endeks (VSI) — blok tasarımı ve uzamsal işleme; Akışkan Akıl Yürütme Endeksi (FRI) — örüntü tanıma ve soyut problem çözme; Çalışma Belleği Endeksi (WMI) — bilgiyi tutma ve işleme; İşlem Hızı Endeksi (PSI) — görsel tarama hızı. Her endeksin ortalaması 100 ve standart sapması 15\'tir.' },
+      { q: 'Tutarsız WISC-V profili ne anlama gelir?', a: 'Tutarsız profil, iki endeks puanı arasında 23 veya daha fazla puanlık istatistiksel olarak anlamlı bir fark olduğunu ifade eder. Örneğin yüksek VCI (sözel) ve düşük PSI (işlem hızı), gifted artı öğrenme güçlüğü olan "iki kez istisnai" (2e) öğrencilerde yaygındır. Tutarsız bir profil, üstün yetenekli tanımlamayı engellemez; dikkatli yorumlama gerektirir.' },
+      { q: 'WISC-V ile CogAT arasındaki fark nedir?', a: 'WISC-V, lisanslı bir psikolog tarafından bireysel olarak uygulanan klinik bir IQ testidir; resmi üstün yetenekli tanımlama ve öğrenme güçlüğü tanısı için kullanılır. CogAT ise okulların grup halinde uyguladığı bir tarama aracıdır. WISC-V daha pahalı, daha hassas ve daha yüksek tanısal ağırlığa sahiptir.' },
+    ],
+    cta: {
+      heading: 'WISC-V randevusundan önce çocuğunuzun nerede durduğunu görün',
+      body: 'Eduentry\'nin ücretsiz akademik değerlendirmesi sözel, sayısal ve akıl yürütme becerilerini uluslararası akran grubuyla karşılaştırır. Tam bir psikoeğitimsel değerlendirme talep etmeden önce çocuğunuzun profilini anlayın.',
+      label: 'Ücretsiz akademik değerlendirmeyi başlat',
+      href: '/tr/akademik-degerlendirme',
+    },
+  },
+  {
+    slug: 'cogat-nwea-map-ustun-yetenekli',
+    contentSlug: 'cogat-vs-nwea-map-gifted',
+    title: 'CogAT ve NWEA MAP Karşılaştırması: Üstün Yetenekli Tanımlama için Hangi Test Daha Önemli?',
+    shortTitle: 'CogAT vs NWEA MAP: Üstün Yetenekli Tanımlama Farkları',
+    description: 'CogAT ve NWEA MAP arasındaki farklar: her testin ölçtüğü, bölgelerin neden ikisini de kullandığı, puan ilişkisi ve sonuçlar çeliştiğinde ne yapılacağı.',
+    tldr: 'CogAT bilişsel akıl yürütme yeteneğini ölçer — çocuğunuzun nasıl düşündüğünü. NWEA MAP akademik başarıyı ölçer — ne öğrendiğini. Çoğu üstün yetenekli program MAP\'ı ilk tarama (genellikle 90–95. yüzdelik) için, CogAT veya WISC-V\'yi altta yatan bilişsel yeteneği doğrulamak için kullanır. Yüksek MAP, düşük CogAT genellikle yoğun özel ders etkisini yansıtır; yüksek CogAT, ortalama MAP ise başarısız üstün yetenekli profili gösterir.',
+    date: '2026-10-26',
+    readTime: '10 dk okuma',
+    tags: ['CogAT', 'NWEA MAP', 'Üstün Yetenekli Test', 'ABD Eğitimi', 'Üstün Yetenekli Programlar', 'RIT Puanları', 'Değerlendirme'],
+    faqs: [
+      { q: 'CogAT, NWEA MAP\'tan daha mı zordur?', a: 'Tamamen farklı şeyler ölçtükleri için "zor" doğru bir çerçeve değildir. MAP başarı testidir — çocuk müfredatta öğrendiği içerikten sınava girer. CogAT akıl yürütme yeteneği testidir — öğretilmeyeni değil, nasıl düşündüğünü ölçer. Sözel analogiler, sayı serileri ve matris akıl yürütme çoğu ilkokul müfredatında açıkça öğretilmediğinden, birçok öğrenci CogAT sorularını daha alışılmadık bulur.' },
+      { q: 'Yüksek MAP puanı üstün yetenekli programa girişi garanti eder mi?', a: 'Hayır. MAP, çocuğun öğrendiklerini ölçer (başarı); üstün yetenekli programlar genellikle olağanüstü bilişsel yetenek kanıtı ister. Yoğun özel dersle 95. yüzdeliğe ulaşan bir çocuk, CogAT puanları 75. yüzdelik civarındaysa nitelik kazanamayabilir. Bölgeler her iki testi de kullandığında özellikle yüksek başarı VE yüksek altta yatan yetenek kombinasyonunu aramaktadır.' },
+      { q: 'CogAT ve MAP sonuçları çeliştiğinde ne olur?', a: 'İki yaygın çelişki örüntüsü vardır: (1) Yüksek MAP, ortalama CogAT — genellikle yoğun akademik çalışma veya özel ders etkisini yansıtır; seçici GT yerleştirmelerini genellikle elde edemez. (2) Ortalama MAP, yüksek CogAT — başarısız üstün yetenekli örüntüsü. Altta yatan DEHB, öğrenme güçlüğü veya motivasyon sorunlarını araştırmayı gerektirir.' },
+    ],
+    cta: {
+      heading: 'Üstün yetenekli tarama döneminden önce akıl yürütme becerilerini kontrol edin',
+      body: 'Eduentry\'nin ücretsiz akademik değerlendirmesi CogAT ile aynı sözel, sayısal ve akıl yürütme alanlarını uluslararası normlara göre karşılaştırır. Bölgenin tarama döngüsü başlamadan önce çocuğunuzun güçlü yönlerini bilin.',
+      label: 'Ücretsiz akademik değerlendirmeyi başlat',
+      href: '/tr/akademik-degerlendirme',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

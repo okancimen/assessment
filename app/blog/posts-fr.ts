@@ -1721,6 +1721,49 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
       href: '/fr/evaluation-de-personnalite',
     },
   },
+  {
+    slug: 'scores-wisc-v-expliques',
+    contentSlug: 'wisc-v-scores-explained',
+    title: 'Scores WISC-V Expliqués : QI Échelle Totale, Indices et Seuils pour Surdoués',
+    shortTitle: 'Scores WISC-V : Bandes QI et Seuils pour Surdoués',
+    description: 'Plages du QI Échelle Totale (FSIQ) du WISC-V, les cinq indices (VCI, VSI, FRI, WMI, PSI), seuils par type de programme pour surdoués et comment interpréter un profil discordant.',
+    tldr: 'Un FSIQ de 130 ou plus au WISC-V place l\'enfant au 98e percentile et constitue le seuil standard d\'identification des surdoués dans la plupart des districts américains. Entre 120 et 129 correspond à la plage Supérieure (91e–97e percentile). Le test comporte cinq indices : Compréhension Verbale (VCI), Visuospatial (VSI), Raisonnement Fluide (FRI), Mémoire de Travail (WMI) et Vitesse de Traitement (PSI). La plupart des programmes utilisent le FSIQ comme critère principal.',
+    date: '2026-10-26',
+    readTime: '11 min de lecture',
+    tags: ['WISC-V', 'Test de QI', 'Test pour Surdoués', 'Éducation États-Unis', 'Programmes pour Surdoués', 'Évaluation'],
+    faqs: [
+      { q: 'Quel score WISC-V qualifie pour les programmes surdoués ?', a: 'Le seuil standard est un FSIQ de 130 ou plus, correspondant au 98e percentile. Certains programmes magnet très sélectifs exigent 135+ (99e percentile). De nombreux districts acceptent également un score de 125+ (95e percentile) combiné à des scores MAP ou CogAT élevés.' },
+      { q: 'Quels sont les cinq indices du WISC-V ?', a: 'Les cinq indices principaux sont : Compréhension Verbale (VCI) — vocabulaire et raisonnement verbal ; Visuospatial (VSI) — conception de blocs et traitement spatial ; Raisonnement Fluide (FRI) — reconnaissance de patterns et résolution abstraite ; Mémoire de Travail (WMI) — rétention et manipulation d\'informations ; Vitesse de Traitement (PSI) — vitesse d\'exploration visuelle. Chaque indice a une moyenne de 100 et un écart-type de 15.' },
+      { q: 'Quelle est la différence entre le WISC-V et le CogAT ?', a: 'Le WISC-V est un test de QI administré individuellement par un psychologue agréé — il produit un QI cliniquement valide et est utilisé pour l\'identification formelle des surdoués et le diagnostic des troubles d\'apprentissage. Le CogAT est un outil de dépistage collectif administré par l\'école. Le WISC-V est plus coûteux, plus précis et a un poids diagnostique plus élevé.' },
+    ],
+    cta: {
+      heading: 'Découvrez où en est votre enfant avant le rendez-vous WISC-V',
+      body: 'L\'évaluation académique gratuite d\'Eduentry compare les compétences verbales, quantitatives et de raisonnement avec un groupe de référence international. Comprenez le profil de votre enfant avant de demander une évaluation psychoéducative complète.',
+      label: 'Commencer l\'évaluation académique gratuite',
+      href: '/fr/evaluation-academique',
+    },
+  },
+  {
+    slug: 'cogat-vs-nwea-map-surdoues',
+    contentSlug: 'cogat-vs-nwea-map-gifted',
+    title: 'CogAT vs. NWEA MAP pour les Surdoués : Quel Test Compte le Plus ?',
+    shortTitle: 'CogAT vs. NWEA MAP pour Surdoués : Différences Clés',
+    description: 'CogAT vs NWEA MAP pour l\'identification des surdoués : ce que chaque test mesure, pourquoi les districts utilisent les deux, correspondance des scores et que faire quand les résultats sont contradictoires.',
+    tldr: 'Le CogAT mesure la capacité de raisonnement cognitif — comment pense votre enfant. Le MAP mesure les acquis académiques — ce qu\'il a appris. La plupart des programmes pour surdoués utilisent le MAP pour le dépistage initial (90e–95e percentile) et le CogAT ou le WISC-V pour confirmer la capacité cognitive sous-jacente. Un MAP élevé avec un CogAT moyen reflète souvent un effet de soutien scolaire intensif ; un CogAT élevé avec un MAP moyen peut indiquer un surdoué sous-performant.',
+    date: '2026-10-26',
+    readTime: '10 min de lecture',
+    tags: ['CogAT', 'NWEA MAP', 'Test pour Surdoués', 'Éducation États-Unis', 'Programmes pour Surdoués', 'Scores RIT', 'Évaluation'],
+    faqs: [
+      { q: 'Un score MAP élevé garantit-il l\'entrée dans un programme surdoués ?', a: 'Non. Le MAP mesure ce que l\'enfant a appris (performance) ; les programmes pour surdoués recherchent généralement une capacité cognitive exceptionnelle. Un enfant atteignant le 95e percentile au MAP grâce à des cours particuliers intensifs peut ne pas se qualifier si ses scores au CogAT sont au 75e percentile. Les districts qui utilisent les deux tests recherchent la combinaison de haute performance ET de haute capacité sous-jacente.' },
+      { q: 'Que se passe-t-il quand les résultats du CogAT et du MAP sont contradictoires ?', a: 'Il y a deux schémas principaux : (1) MAP élevé, CogAT moyen — souvent un élève très performant grâce à l\'effort ou aux cours particuliers, pas à une capacité exceptionnelle ; généralement ne répond pas au seuil des programmes GT les plus sélectifs. (2) MAP moyen, CogAT élevé — profil de surdoué sous-performant ; nécessite une investigation sur le TDAH, les troubles d\'apprentissage ou la démotivation.' },
+    ],
+    cta: {
+      heading: 'Vérifiez les compétences de raisonnement avant la période de dépistage',
+      body: 'L\'évaluation académique gratuite d\'Eduentry couvre les mêmes domaines verbaux, quantitatifs et de raisonnement que le CogAT, comparés internationalement. Connaissez les points forts de votre enfant avant le début du cycle de dépistage du district.',
+      label: 'Commencer l\'évaluation académique gratuite',
+      href: '/fr/evaluation-academique',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

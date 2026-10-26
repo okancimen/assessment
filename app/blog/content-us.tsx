@@ -995,6 +995,23 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           how their mind works.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/wisc-v-scores-explained', tag: 'Assessment Guide', title: 'WISC-V Scores Explained: Full Scale IQ, Index Scores, and Gifted Cut-Offs' },
+            { href: '/blog/cogat-vs-nwea-map-gifted', tag: 'Comparison', title: 'CogAT vs. NWEA MAP for Gifted Identification: Which Test Matters More?' },
+            { href: '/blog/cogat-scores-explained', tag: 'Assessment Guide', title: 'CogAT Scores Explained: SAS, Percentiles, and Gifted Programme Cut-Offs' },
+            { href: '/blog/nwea-map-scores-explained', tag: 'Assessment Guide', title: 'NWEA MAP Scores Explained: RIT Scores, Grade Benchmarks, and Gifted Cut-Offs' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -1254,6 +1271,23 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
               <div className="font-semibold text-gray-900 mb-2">{q}</div>
               <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/wisc-v-scores-explained', tag: 'Assessment Guide', title: 'WISC-V Scores Explained: Full Scale IQ, Index Scores, and Gifted Cut-Offs' },
+            { href: '/blog/cogat-vs-nwea-map-gifted', tag: 'Comparison', title: 'CogAT vs. NWEA MAP for Gifted Identification: Which Test Matters More?' },
+            { href: '/blog/gifted-program-testing-guide', tag: 'Parent Guide', title: 'US Gifted Program Testing: A Complete Parent\'s Guide' },
+            { href: '/blog/nwea-map-scores-explained', tag: 'Assessment Guide', title: 'NWEA MAP Scores Explained: RIT Scores, Grade Benchmarks, and Gifted Cut-Offs' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
           ))}
         </div>
       </section>
