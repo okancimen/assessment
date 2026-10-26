@@ -1,7 +1,7 @@
 # Eduentry — Full Content Reference
 
 > This document provides detailed descriptions of all Eduentry content for AI systems. For a summary version see /llms.txt.
-> Last updated: 2026-10-20
+> Last updated: 2026-10-26
 
 ---
 
@@ -83,6 +83,46 @@ Calibration note: Questions have been calibrated for difficulty ordering but not
 ### Sample Report
 
 [https://eduentry.com/sample-report] — Full example of a completed academic assessment report. Shows the four-subject score breakdown, composite SAS, percentile band, subject-by-subject strength/weakness analysis, and AI-generated recommendations.
+
+### Assessment Start Pages
+
+[https://eduentry.com/academic-assessment] — Main entry point for the adaptive academic assessment. Parents enter their child's age (6–17) and start the 60-question test across English, Maths, Verbal Reasoning, and Non-Verbal Reasoning. No account required to start; results are available immediately on completion. Free.
+
+[https://eduentry.com/personality-assessment] — Main entry point for the VIA-backed character strengths personality assessment. Parents enter their child's age (6–20) and rate trait statements; the system scores 24 character traits across 6 virtues (Wisdom, Courage, Humanity, Justice, Temperance, Transcendence). Delivers top 5 Signature Strengths and 3 Growth Areas with AI-generated development activities. No account needed; full 24-trait profile unlocks on registration. Takes under 5 minutes. Free.
+
+[https://eduentry.com/strengths] — Sample output of the personality assessment. Shows a VIA character strengths profile with Signature Strengths, Growth Areas, virtue category breakdown, and trait score visualisations.
+
+### Locale landing pages — Eduentry.com
+
+**Turkish (Türkçe)**
+- [https://eduentry.com/tr] — Türkçe ana sayfa. 6–17 yaş çocuklar için akademik değerlendirme ve 6–20 yaş için kişilik değerlendirmesi.
+- [https://eduentry.com/tr/akademik-degerlendirme] — Türkçe akademik değerlendirme giriş sayfası. 6–17 yaş için uyarlamalı test; İngilizce, Matematik, Sözel ve Sözel Olmayan Muhakeme.
+- [https://eduentry.com/tr/kisilik-degerlendirmesi] — Türkçe kişilik değerlendirmesi giriş sayfası. 6–20 yaş için ücretsiz VIA tabanlı karakter güçleri testi; hesap gerekmez.
+
+**French (Français)**
+- [https://eduentry.com/fr] — Page d'accueil en français. Évaluation académique pour 6–17 ans et évaluation de personnalité pour 6–20 ans.
+- [https://eduentry.com/fr/evaluation-academique] — Page de démarrage de l'évaluation académique en français. Test adaptatif 6–17 ans ; anglais, maths, raisonnement verbal et non verbal.
+- [https://eduentry.com/fr/evaluation-de-personnalite] — Page de démarrage de l'évaluation de personnalité en français. Test VIA gratuit 6–20 ans ; sans compte requis.
+
+**Spanish (Español)**
+- [https://eduentry.com/es] — Página de inicio en español. Evaluación académica para 6–17 años y evaluación de personalidad para 6–20 años.
+- [https://eduentry.com/es/evaluacion-academica] — Página de inicio de la evaluación académica en español. Test adaptativo 6–17 años; inglés, matemáticas, razonamiento verbal y no verbal.
+- [https://eduentry.com/es/evaluacion-de-personalidad] — Página de inicio de la evaluación de personalidad en español. Test VIA gratuito 6–20 años; sin cuenta requerida.
+
+**Arabic (العربية)**
+- [https://eduentry.com/ar] — الصفحة الرئيسية بالعربية. تقييم أكاديمي للأعمار 6–17 وتقييم شخصية للأعمار 6–20.
+- [https://eduentry.com/ar/taqyim-acadimi] — صفحة بدء التقييم الأكاديمي بالعربية. اختبار تكيّفي للأعمار 6–17؛ الإنجليزية والرياضيات والتفكير اللفظي وغير اللفظي.
+- [https://eduentry.com/ar/taqyim-al-shakhsiya] — صفحة بدء تقييم الشخصية بالعربية. اختبار VIA مجاني للأعمار 6–20؛ لا يتطلب حساباً.
+
+**Russian (Русский)**
+- [https://eduentry.com/ru] — Главная страница на русском. Академическая оценка для 6–17 лет и оценка личности для 6–20 лет.
+- [https://eduentry.com/ru/akademicheskaya-otsenka] — Страница запуска академической оценки на русском. Адаптивный тест 6–17 лет; английский, математика, вербальное и невербальное мышление.
+- [https://eduentry.com/ru/otsenka-lichnosti] — Страница запуска оценки личности на русском. Бесплатный тест VIA 6–20 лет; регистрация не нужна.
+
+**Chinese (中文)**
+- [https://eduentry.com/zh] — 中文主页。6–17岁学术测评和6–20岁个性测评。
+- [https://eduentry.com/zh/xueshu-pinggu] — 中文学术测评起始页。6–17岁自适应测试；英语、数学、语言推理和非语言推理。
+- [https://eduentry.com/zh/xingge-pinggu] — 中文个性测评起始页。6–20岁免费VIA测试；无需注册账户。
 
 ---
 
