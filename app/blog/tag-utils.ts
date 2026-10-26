@@ -38,3 +38,12 @@ export function getPostsByTag(tag: string, posts: BlogPostMeta[]): BlogPostMeta[
 export function getAllTagSlugs(): string[] {
   return TAG_SLUGS.map(([slug]) => slug)
 }
+
+export function getLocalePostsByTag<T extends { contentSlug?: string | null }>(
+  tagName: string,
+  localePosts: T[],
+  enPosts: BlogPostMeta[],
+): T[] {
+  const enSlugsWithTag = new Set(enPosts.filter(p => p.tags.includes(tagName)).map(p => p.slug))
+  return localePosts.filter(p => p.contentSlug && enSlugsWithTag.has(p.contentSlug))
+}

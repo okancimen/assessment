@@ -573,7 +573,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: latestEN,
     changeFrequency: 'weekly' as const,
     priority: 0.6,
+    alternates: {
+      languages: {
+        'en-GB': `${BASE}/blog/tag/${slug}`,
+        tr: `${BASE}/tr/blog/tag/${slug}`,
+        es: `${BASE}/es/blog/tag/${slug}`,
+        fr: `${BASE}/fr/blog/tag/${slug}`,
+        ar: `${BASE}/ar/blog/tag/${slug}`,
+        ru: `${BASE}/ru/blog/tag/${slug}`,
+        zh: `${BASE}/zh/blog/tag/${slug}`,
+        'x-default': `${BASE}/blog/tag/${slug}`,
+      },
+    },
   }))
 
-  return [...staticPages, ...subjectPages, ...blogPages, ...tagPages, ...esPages, ...trPages, ...frPages, ...arPages, ...ruPages, ...zhPages]
+  const localeTagPages: MetadataRoute.Sitemap = ['tr', 'es', 'fr', 'ar', 'ru', 'zh'].flatMap((locale) =>
+    TAG_SLUGS.map(([slug]) => ({
+      url: `${BASE}/${locale}/blog/tag/${slug}`,
+      lastModified: latestEN,
+      changeFrequency: 'weekly' as const,
+      priority: 0.5,
+      alternates: {
+        languages: {
+          'en-GB': `${BASE}/blog/tag/${slug}`,
+          'x-default': `${BASE}/blog/tag/${slug}`,
+          [locale]: `${BASE}/${locale}/blog/tag/${slug}`,
+        },
+      },
+    }))
+  )
+
+  return [...staticPages, ...subjectPages, ...blogPages, ...tagPages, ...localeTagPages, ...esPages, ...trPages, ...frPages, ...arPages, ...ruPages, ...zhPages]
 }
