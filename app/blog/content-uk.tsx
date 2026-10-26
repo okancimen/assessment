@@ -6372,6 +6372,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="text-xl font-bold text-gray-900 mb-5">Continue Reading</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
+            { href: '/blog/child-personality-assessment-guide', tag: 'Guide', title: 'What Is a Child Personality Assessment? The Complete Parent Guide' },
             { href: '/blog/character-strengths-academic-success', tag: 'Guide', title: 'The 5 Character Strengths That Predict School Success' },
             { href: '/blog/test-anxiety-in-children-strengths', tag: 'Guide', title: 'How Character Strengths Help Children Manage Exam Anxiety' },
             { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Assessment', title: "Discover Your School-Age Child's Hidden Strengths" },
@@ -6520,9 +6521,9 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
         <div className="grid sm:grid-cols-2 gap-4">
           {[
             { href: '/personality-assessment', tag: 'Assessment', title: 'Free VIA Character Strengths Personality Assessment — Ages 6–20' },
+            { href: '/blog/child-personality-assessment-guide', tag: 'Guide', title: 'What Is a Child Personality Assessment? The Complete Parent Guide' },
+            { href: '/blog/how-to-use-child-character-strengths-report', tag: 'Guide', title: "How to Use Your Child's Character Strengths Report" },
             { href: '/blog/discover-school-age-childs-hidden-strengths', tag: 'Guide', title: "Discover Your School-Age Child's Hidden Strengths and Development Areas" },
-            { href: '/blog/understanding-child-strengths-weaknesses-high-school', tag: 'Guide', title: "Understanding Your Child's Strengths and Weaknesses Before High School" },
-            { href: '/blog/discover-child-strengths-free-academic-test', tag: 'Assessment', title: "Free Academic Test: Discover Your Child's Strengths and Weaknesses" },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
