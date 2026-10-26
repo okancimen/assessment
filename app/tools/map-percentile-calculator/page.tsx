@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     description: 'Enter grade + RIT score to see the exact percentile band for Math or Reading. Includes gifted screening context.',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'NWEA MAP Percentile Calculator — Math & Reading by Grade',
+    description: 'Enter grade + RIT score to see the exact percentile band for Math or Reading. Includes gifted screening context.',
+    images: ['/opengraph-image'],
+  },
 }
 
 const FAQ = [

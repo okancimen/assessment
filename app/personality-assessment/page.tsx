@@ -106,6 +106,37 @@ const PAGE_SCHEMA = {
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
 
+const APP_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  '@id': `${BASE_URL}/personality-assessment#app`,
+  name: 'Eduentry Child Personality Assessment',
+  applicationCategory: 'EducationalApplication',
+  operatingSystem: 'Web',
+  url: `${BASE_URL}/personality-assessment`,
+  description: 'Free VIA-backed character strengths personality assessment for children aged 6–20. Parent-rated survey (~5 min). Identifies top 5 Signature Strengths, 3 Growth Areas, and AI-generated development activities.',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
+  audience: { '@type': 'EducationalAudience', educationalRole: 'parent' },
+  provider: { '@id': `${BASE_URL}/#organization` },
+}
+
+const HOWTO_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to Take the Eduentry Child Personality Assessment',
+  description: 'Free VIA-backed character strengths test for children aged 6–20. Takes under 5 minutes.',
+  totalTime: 'PT5M',
+  supply: [],
+  tool: [],
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Enter your child\'s age', text: 'Go to /personality-assessment and enter your child\'s age to load the right question set for their developmental bracket.' },
+    { '@type': 'HowToStep', position: 2, name: 'Rate trait statements', text: 'As a parent, rate 24 trait statements on a 5-point scale based on what you observe in your child\'s everyday behaviour. Takes around 5 minutes.' },
+    { '@type': 'HowToStep', position: 3, name: 'View Signature Strengths and Growth Areas', text: 'See your child\'s top 5 Signature Strengths and 3 Growth Areas instantly — no account required.' },
+    { '@type': 'HowToStep', position: 4, name: 'Read AI-generated development activities', text: 'Each Signature Strength comes with AI-personalised development activities tailored to your child\'s age and strength profile.' },
+    { '@type': 'HowToStep', position: 5, name: 'Create a free account to unlock the full profile', text: 'Register to access the complete 24-strength profile, save results, and track changes over time.' },
+  ],
+}
+
 const FAQ_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -189,6 +220,8 @@ export default async function PersonalityAssessmentPage({
     <div className="min-h-screen bg-white flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PAGE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(APP_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(HOWTO_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <PublicNav />

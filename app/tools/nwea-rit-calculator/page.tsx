@@ -7,16 +7,22 @@ import NweaRitCalculator from '@/components/tools/NweaRitCalculator'
 const URL = 'https://eduentry.com/tools/nwea-rit-calculator'
 
 export const metadata: Metadata = {
-  title: 'NWEA MAP RIT Score Calculator 2026 — Is My Child’s Score Good by Grade?',
+  title: "NWEA MAP RIT Score Calculator 2026 — Is My Child's Score Good by Grade?",
   description:
-    'Free NWEA MAP RIT calculator: enter your child’s grade and Fall Math RIT score to see the percentile band (50th–99th) and whether it’s above or below the national average. Based on NWEA norms.',
+    "Free NWEA MAP RIT calculator: enter your child's grade and Fall Math RIT score to see the percentile band (50th–99th) and whether it's above or below the national average. Based on NWEA norms.",
   alternates: { canonical: URL },
   robots: { index: true, follow: true },
   openGraph: {
     url: URL,
-    title: 'NWEA MAP RIT Score Calculator — Is My Child’s Score Good?',
-    description: 'Enter grade + Fall Math RIT to see the percentile band and whether it’s above or below the national average.',
+    title: "NWEA MAP RIT Score Calculator — Is My Child's Score Good?",
+    description: "Enter grade + Fall Math RIT to see the percentile band and whether it's above or below the national average.",
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "NWEA MAP RIT Score Calculator — Is My Child's Score Good?",
+    description: "Enter grade + Fall Math RIT to see the percentile band and whether it's above or below the national average.",
+    images: ['/opengraph-image'],
   },
 }
 

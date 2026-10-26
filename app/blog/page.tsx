@@ -8,17 +8,17 @@ import BlogPostCard from './BlogPostCard'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: '11+, Grammar School & Gifted Testing Guides',
-  description: 'Practical guides for UK parents on 11+ preparation, grammar school admissions, GCSE revision, gifted testing and work experience for teenagers.',
+  title: 'Academic, Personality & Internship Assessment Guides',
+  description: 'Practical guides for parents on 11+ preparation, grammar school admissions, gifted testing, child personality assessment, VIA character strengths, and internship readiness for teenagers.',
   keywords: [
     '11+ preparation guide',
     'grammar school admissions 2026',
-    'GCSE revision tips',
+    'child personality assessment guide',
+    'VIA character strengths children',
     'gifted child testing UK',
+    'high school internship readiness',
     'how to prepare for 11 plus',
-    'work experience for students',
     'standardised score explained',
-    'free 11 plus practice test',
   ],
   alternates: { canonical: `${BASE_URL}/blog`, languages: { 'en-GB': `${BASE_URL}/blog`, es: `${BASE_URL}/es/blog`, tr: `${BASE_URL}/tr/blog`, fr: `${BASE_URL}/fr/blog`, ar: `${BASE_URL}/ar/blog`, ru: `${BASE_URL}/ru/blog`, zh: `${BASE_URL}/zh/blog`, 'x-default': `${BASE_URL}/blog` } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },

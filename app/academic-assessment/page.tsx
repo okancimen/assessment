@@ -102,6 +102,36 @@ const PAGE_SCHEMA = {
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
 
+const APP_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  '@id': `${BASE_URL}/academic-assessment#app`,
+  name: 'Eduentry Child Academic Assessment',
+  applicationCategory: 'EducationalApplication',
+  operatingSystem: 'Web',
+  url: `${BASE_URL}/academic-assessment`,
+  description: 'Free adaptive academic assessment for children aged 6–20 across English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning. Standardised scores benchmarked against PISA, UK National Curriculum, and IB standards.',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'GBP', availability: 'https://schema.org/InStock' },
+  audience: { '@type': 'EducationalAudience', educationalRole: 'student' },
+  provider: { '@id': `${BASE_URL}/#organization` },
+}
+
+const HOWTO_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to Take the Eduentry Child Academic Assessment',
+  description: 'Free adaptive academic assessment for children aged 6–20. Takes 25–35 minutes across four subjects.',
+  totalTime: 'PT35M',
+  supply: [],
+  tool: [],
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Enter your child\'s first name and age', text: 'No account required to start. Enter your child\'s name and age to load the right question difficulty for their age group.' },
+    { '@type': 'HowToStep', position: 2, name: 'Complete each of the four subjects', text: 'Answer 15 adaptive questions per subject (English, Maths, Verbal Reasoning, Non-Verbal Reasoning). Each subject takes around 10 minutes and can be paused and resumed.' },
+    { '@type': 'HowToStep', position: 3, name: 'View your child\'s standardised scores', text: 'After each subject you see a standardised score (mean 100, SD 15) and international percentile ranking.' },
+    { '@type': 'HowToStep', position: 4, name: 'Create a free account to unlock the full report', text: 'Register to access the complete subject-by-subject analysis, AI-generated insights, topic breakdown, and the ability to retake and track progress.' },
+  ],
+}
+
 const FAQ_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -155,6 +185,8 @@ export default function AcademicAssessmentPage() {
     <div className="min-h-screen bg-white flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PAGE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(APP_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(HOWTO_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
 
       <PublicNav />

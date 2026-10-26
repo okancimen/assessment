@@ -79,6 +79,42 @@ const TAG_META: Record<string, { title: string; description: string }> = {
     title: 'Child Development & Academic Potential Guides',
     description: 'Research on child development, cognitive testing, learning strengths and weaknesses, and how early benchmarking helps children reach their potential.',
   },
+  'Character Strengths': {
+    title: 'Child Character Strengths Guides',
+    description: 'Guides on VIA character strengths for children — how to identify your child\'s Signature Strengths and Growth Areas, and use them to boost confidence, wellbeing, and academic success.',
+  },
+  'Personality Assessment': {
+    title: 'Child Personality Assessment Guides',
+    description: 'Complete guides on child personality assessment — what VIA character strengths tests measure, how to interpret results, and how a free personality assessment can support your child\'s development.',
+  },
+  'VIA Strengths': {
+    title: 'VIA Character Strengths Guides',
+    description: 'In-depth guides on the VIA Character Strengths framework — the 24 strengths across 6 virtues, how they\'re measured, and how parents can use VIA results to support children aged 6–20.',
+  },
+  'Gifted Testing': {
+    title: 'Gifted Testing Guides for Parents',
+    description: 'How gifted testing works — CogAT, WISC-V, CAT4, and ACER explained. Score interpretation, percentile thresholds, and what gifted test results mean for your child\'s education.',
+  },
+  'Gifted Programs': {
+    title: 'Gifted Programs Guides',
+    description: 'Guides to gifted programmes worldwide — UK, US, Canada, Australia, Netherlands and UAE. Eligibility criteria, application processes, and how to prepare your child for gifted identification.',
+  },
+  'NWEA MAP': {
+    title: 'NWEA MAP Test Guides',
+    description: 'Complete guides to NWEA MAP Growth testing — how RIT scores work, percentile rankings by grade, score interpretation, and how MAP results affect gifted programme eligibility.',
+  },
+  'CogAT': {
+    title: 'CogAT Test Guides',
+    description: 'What is the CogAT, how is it scored, and how to prepare. Covers CogAT score interpretation, percentile bands, battery profiles, and how it\'s used for gifted identification in the US and Canada.',
+  },
+  'WISC-V': {
+    title: 'WISC-V IQ Test Guides',
+    description: 'Guides on the WISC-V IQ test — what the five index scores measure, gifted eligibility thresholds (130+ for most programmes), score interpretation, and what to do with WISC-V results.',
+  },
+  'Wellbeing': {
+    title: 'Child Wellbeing Guides',
+    description: 'Guides on child wellbeing, positive psychology, and character strengths — how VIA strengths research links to academic resilience, emotional health, and long-term life satisfaction.',
+  },
 }
 
 export function generateStaticParams() {
