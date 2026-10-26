@@ -9,7 +9,7 @@ import { createClient } from '@/lib/supabase/client'
 
 type Locale = 'en' | 'tr' | 'es' | 'fr' | 'ar' | 'ru' | 'zh'
 
-interface DropdownItem { href: string; label: string }
+interface DropdownItem { href: string; label: string; external?: boolean }
 interface NavLink {
   href: string
   label: string
@@ -44,9 +44,15 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
         ],
       },
       { href: '/subjects', label: 'Subjects' },
-      { href: 'https://eduentry.ai/en', label: 'Internship', external: true },
-      { href: '/academic-assessment', label: 'Academic Assessment' },
-      { href: '/personality-assessment', label: 'Personality Assessment' },
+      {
+        href: '/academic-assessment',
+        label: 'Assessments',
+        dropdown: [
+          { href: '/academic-assessment', label: 'Academic Assessment' },
+          { href: '/personality-assessment', label: 'Personality Assessment' },
+          { href: 'https://eduentry.ai/en', label: 'Internship', external: true },
+        ],
+      },
       { href: '/your-childs-potential', label: "Child's Potential" },
     ],
     blogHref: '/blog',
@@ -62,9 +68,15 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     dir: 'ltr',
     logoHref: '/tr',
     links: [
-      { href: 'https://eduentry.ai/tr', label: 'Staj', external: true },
-      { href: '/tr/akademik-degerlendirme', label: 'Akademik Test' },
-      { href: '/tr/kisilik-degerlendirmesi', label: 'Güçlü Yönleri' },
+      {
+        href: '/tr/akademik-degerlendirme',
+        label: 'Değerlendirmeler',
+        dropdown: [
+          { href: '/tr/akademik-degerlendirme', label: 'Akademik Test' },
+          { href: '/tr/kisilik-degerlendirmesi', label: 'Güçlü Yönleri' },
+          { href: 'https://eduentry.ai/tr', label: 'Staj', external: true },
+        ],
+      },
       { href: '/tr/cocugunuzun-potansiyeli', label: 'Akademik Potansiyeli' },
       { href: '/tr/hakkimizda', label: 'Hakkımızda' },
     ],
@@ -81,9 +93,15 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     dir: 'ltr',
     logoHref: '/es',
     links: [
-      { href: 'https://eduentry.ai/es', label: 'Prácticas', external: true },
-      { href: '/es/evaluacion-academica', label: 'Evaluación Académica' },
-      { href: '/es/evaluacion-de-personalidad', label: 'Evaluación de Personalidad' },
+      {
+        href: '/es/evaluacion-academica',
+        label: 'Evaluaciones',
+        dropdown: [
+          { href: '/es/evaluacion-academica', label: 'Evaluación Académica' },
+          { href: '/es/evaluacion-de-personalidad', label: 'Evaluación de Personalidad' },
+          { href: 'https://eduentry.ai/es', label: 'Prácticas', external: true },
+        ],
+      },
       { href: '/es/potencial-de-tu-hijo', label: 'Potencial' },
       { href: '/es/sobre-nosotros', label: 'Sobre nosotros' },
     ],
@@ -100,9 +118,15 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     dir: 'ltr',
     logoHref: '/fr',
     links: [
-      { href: 'https://eduentry.ai/fr', label: 'Stages', external: true },
-      { href: '/fr/evaluation-academique', label: 'Évaluation Académique' },
-      { href: '/fr/evaluation-de-personnalite', label: 'Évaluation de Personnalité' },
+      {
+        href: '/fr/evaluation-academique',
+        label: 'Évaluations',
+        dropdown: [
+          { href: '/fr/evaluation-academique', label: 'Évaluation Académique' },
+          { href: '/fr/evaluation-de-personnalite', label: 'Évaluation de Personnalité' },
+          { href: 'https://eduentry.ai/fr', label: 'Stages', external: true },
+        ],
+      },
       { href: '/fr/potentiel-de-votre-enfant', label: 'Potentiel' },
       { href: '/fr/a-propos', label: 'À propos' },
     ],
@@ -119,9 +143,15 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     dir: 'rtl',
     logoHref: '/ar',
     links: [
-      { href: 'https://eduentry.ai/ar', label: 'التدريب', external: true },
-      { href: '/ar/taqyim-acadimi', label: 'التقييم الأكاديمي' },
-      { href: '/ar/taqyim-al-shakhsiya', label: 'تقييم الشخصية' },
+      {
+        href: '/ar/taqyim-acadimi',
+        label: 'التقييمات',
+        dropdown: [
+          { href: '/ar/taqyim-acadimi', label: 'التقييم الأكاديمي' },
+          { href: '/ar/taqyim-al-shakhsiya', label: 'تقييم الشخصية' },
+          { href: 'https://eduentry.ai/ar', label: 'التدريب', external: true },
+        ],
+      },
       { href: '/ar/imkaniyat-tiflik', label: 'إمكانيات طفلك' },
       { href: '/ar/hawlana', label: 'من نحن' },
     ],
@@ -138,9 +168,15 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     dir: 'ltr',
     logoHref: '/ru',
     links: [
-      { href: 'https://eduentry.ai/ru', label: 'Стажировка', external: true },
-      { href: '/ru/akademicheskaya-otsenka', label: 'Академическая оценка' },
-      { href: '/ru/otsenka-lichnosti', label: 'Оценка личности' },
+      {
+        href: '/ru/akademicheskaya-otsenka',
+        label: 'Оценки',
+        dropdown: [
+          { href: '/ru/akademicheskaya-otsenka', label: 'Академическая оценка' },
+          { href: '/ru/otsenka-lichnosti', label: 'Оценка личности' },
+          { href: 'https://eduentry.ai/ru', label: 'Стажировка', external: true },
+        ],
+      },
       { href: '/ru/potentsial-vashego-rebyonka', label: 'Потенциал' },
       { href: '/ru/o-nas', label: 'О нас' },
     ],
@@ -157,9 +193,15 @@ const CONFIGS: Record<Locale, LocaleConfig> = {
     dir: 'ltr',
     logoHref: '/zh',
     links: [
-      { href: 'https://eduentry.ai/zh', label: '实习评估', external: true },
-      { href: '/zh/xueshu-pinggu', label: '学业测评' },
-      { href: '/zh/xingge-pinggu', label: '性格评估' },
+      {
+        href: '/zh/xueshu-pinggu',
+        label: '测评',
+        dropdown: [
+          { href: '/zh/xueshu-pinggu', label: '学业测评' },
+          { href: '/zh/xingge-pinggu', label: '性格评估' },
+          { href: 'https://eduentry.ai/zh', label: '实习评估', external: true },
+        ],
+      },
       { href: '/zh/haizi-de-qianli', label: '孩子潜力' },
       { href: '/zh/guanyu-women', label: '关于我们' },
     ],
@@ -279,24 +321,42 @@ export default function PublicNavClient({
                       if (e.key === 'Escape') setOpenDropdown(null)
                     }}
                   >
-                    <div className="bg-white rounded-2xl border border-[#d2d2d7] shadow-lg py-2 min-w-[160px]">
-                      {link.dropdown.map((item, i) => (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          tabIndex={0}
-                          onKeyDown={(e) => {
-                            const items = (e.currentTarget.closest('[role]')?.querySelectorAll('a') ??
-                              e.currentTarget.parentElement?.querySelectorAll('a')) as NodeListOf<HTMLElement>
-                            if (e.key === 'ArrowDown') { e.preventDefault(); items[i + 1]?.focus() }
-                            if (e.key === 'ArrowUp')   { e.preventDefault(); i === 0 ? setOpenDropdown(null) : items[i - 1]?.focus() }
-                          }}
-                          onClick={() => setOpenDropdown(null)}
-                          className={`block px-4 py-2 text-[13px] font-medium hover:bg-[#f5f5f7] transition-colors rounded-xl mx-1 ${isActive(item.href) ? 'text-[#4F46E5]' : 'text-[#1d1d1f] hover:text-[#4F46E5]'}`}
-                        >
-                          {item.label}
-                        </Link>
-                      ))}
+                    <div className="bg-white rounded-2xl border border-[#d2d2d7] shadow-lg py-2 min-w-[180px]">
+                      {link.dropdown.map((item, i) => {
+                        const itemCls = `block px-4 py-2 text-[13px] font-medium hover:bg-[#f5f5f7] transition-colors rounded-xl mx-1 ${isActive(item.href) ? 'text-[#4F46E5]' : 'text-[#1d1d1f] hover:text-[#4F46E5]'}`
+                        const handleKeyDown = (e: React.KeyboardEvent<HTMLAnchorElement>) => {
+                          const items = (e.currentTarget.closest('[role]')?.querySelectorAll('a') ??
+                            e.currentTarget.parentElement?.querySelectorAll('a')) as NodeListOf<HTMLElement>
+                          if (e.key === 'ArrowDown') { e.preventDefault(); items[i + 1]?.focus() }
+                          if (e.key === 'ArrowUp')   { e.preventDefault(); i === 0 ? setOpenDropdown(null) : items[i - 1]?.focus() }
+                        }
+                        if (item.external) {
+                          return (
+                            <a
+                              key={item.href}
+                              href={item.href}
+                              tabIndex={0}
+                              onKeyDown={handleKeyDown}
+                              onClick={() => setOpenDropdown(null)}
+                              className={itemCls}
+                            >
+                              {item.label}
+                            </a>
+                          )
+                        }
+                        return (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            tabIndex={0}
+                            onKeyDown={handleKeyDown}
+                            onClick={() => setOpenDropdown(null)}
+                            className={itemCls}
+                          >
+                            {item.label}
+                          </Link>
+                        )
+                      })}
                     </div>
                   </div>
                 </div>
@@ -374,16 +434,21 @@ export default function PublicNavClient({
         <div className="lg:hidden border-t border-black/[0.08] bg-white/[0.97] backdrop-blur-xl px-6 py-4 flex flex-col">
           {cfg.links.map((link) => {
             if (link.dropdown) {
-              return link.dropdown.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setMenuOpen(false)}
-                  className={`py-2.5 text-sm font-medium transition-colors border-b border-[#f5f5f7] last:border-0 ${isActive(item.href) ? 'text-[#4F46E5]' : 'text-[#1d1d1f] hover:text-[#4F46E5]'}`}
-                >
-                  {item.label}
-                </Link>
-              ))
+              return link.dropdown.map((item) => {
+                const cls = `py-2.5 text-sm font-medium transition-colors border-b border-[#f5f5f7] last:border-0 ${isActive(item.href) ? 'text-[#4F46E5]' : 'text-[#1d1d1f] hover:text-[#4F46E5]'}`
+                if (item.external) {
+                  return (
+                    <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className={cls}>
+                      {item.label}
+                    </a>
+                  )
+                }
+                return (
+                  <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className={cls}>
+                    {item.label}
+                  </Link>
+                )
+              })
             }
             if (link.external) {
               return (
