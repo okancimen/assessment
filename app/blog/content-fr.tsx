@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Bullet, Callout, Check, Cross } from './blog-components'
+import { US_CONTENT } from './content-us'
 
 export const FR_CONTENT: Record<string, React.ReactNode> = {
 
@@ -4218,5 +4219,5 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {
-  return FR_CONTENT[slug] ?? null
+  return FR_CONTENT[slug] ?? US_CONTENT[slug] ?? null
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Bullet, Callout, Check, Cross } from './blog-components'
+import { US_CONTENT } from './content-us'
 
 export const AR_CONTENT: Record<string, React.ReactNode> = {
 
@@ -3530,5 +3531,5 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
 }
 
 export function getArabicBlogContent(slug: string): React.ReactNode {
-  return AR_CONTENT[slug] ?? null
+  return AR_CONTENT[slug] ?? US_CONTENT[slug] ?? null
 }

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Bullet, Callout, Check, Cross } from './blog-components'
+import { US_CONTENT } from './content-us'
 
 export const RU_CONTENT: Record<string, React.ReactNode> = {
 
@@ -3598,9 +3599,5 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
 }
 
 export function getRussianBlogContent(slug: string): React.ReactNode {
-  return RU_CONTENT[slug] ?? (
-    <p className="text-gray-600 leading-relaxed">
-      Содержание статьи скоро появится.
-    </p>
-  )
+  return RU_CONTENT[slug] ?? US_CONTENT[slug] ?? null
 }
