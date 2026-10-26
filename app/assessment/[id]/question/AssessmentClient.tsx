@@ -257,9 +257,9 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
     setIsGuest(!loggedIn && !!localStorage.getItem(`guestToken_${assessmentId}`))
   }, [assessmentId, urlGuestToken, loggedIn])
 
-  // Reset save panel when a new break screen appears
+  // Auto-open save panel on the first break; reset for subsequent breaks
   useEffect(() => {
-    setShowSavePanel(false)
+    setShowSavePanel(subjectBreak === SUBJECTS[1])
     setSaveEmail('')
     setSaveState('idle')
   }, [subjectBreak])
@@ -553,8 +553,8 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
             return (
               <div className="rounded-2xl border border-[#d2d2d7] bg-[#f5f5f7] p-5 space-y-4 text-left">
                 <div>
-                  <p className="text-sm font-semibold text-[#1d1d1f]">Save your progress</p>
-                  <p className="text-xs text-[#6e6e73] mt-0.5">Get a reminder email with the resume link, or create a free account to save results.</p>
+                  <p className="text-sm font-semibold text-[#1d1d1f]">Don't lose your progress</p>
+                  <p className="text-xs text-[#6e6e73] mt-0.5">Enter your email — we'll send you a link to continue where you left off.</p>
                 </div>
 
                 {saveState === 'sent' ? (
