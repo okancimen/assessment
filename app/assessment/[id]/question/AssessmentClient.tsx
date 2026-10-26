@@ -511,6 +511,15 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
               : 'Your progress is saved — you can pause and come back anytime.'}
           </div>
 
+          {isGuest && (
+            <div className="rounded-2xl bg-[#eef2ff] border border-[#c7d2fe] px-4 py-3 flex items-start gap-2.5 text-sm text-[#3730a3]">
+              <svg className="w-4 h-4 shrink-0 mt-0.5 text-[#4F46E5]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+              <span>Detailed results — including AI recommendations and all four subject scores — are available once you create a free account.</span>
+            </div>
+          )}
+
           <Button className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white" size="lg" onClick={fetchNextQuestion}>
             {isLastLeg ? `Finish with ${SUBJECT_LABELS[subjectBreak]}` : `Continue to ${SUBJECT_LABELS[subjectBreak]}`}
           </Button>
