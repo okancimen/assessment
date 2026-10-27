@@ -11,6 +11,7 @@ export interface GrammarArea {
   metaTitle: string
   metaDescription: string
   registrationNote: string
+  preparationNote?: { heading: string; paragraphs: string[] }
 }
 
 export const GRAMMAR_AREAS: GrammarArea[] = [
@@ -128,11 +129,19 @@ export const GRAMMAR_AREAS: GrammarArea[] = [
       { name: 'Watford Grammar School for Boys', type: 'Boys' },
       { name: 'Watford Grammar School for Girls', type: 'Girls' },
     ],
-    description: "Hertfordshire has three selective schools — Dame Alice Owen's in Potters Bar and the two Watford Grammar schools. All three use GL Assessment papers. Dame Alice Owen's is particularly popular with families from North London who are outside the Barnet catchment, but distance from the school is a key tie-breaker once all pupils above the pass mark are identified.",
+    description: "Hertfordshire has three selective schools — Dame Alice Owen's in Potters Bar and the two Watford Grammar schools (Boys and Girls) in Watford. All three use GL Assessment papers across English, Verbal Reasoning, Maths, and Non-Verbal Reasoning. Dame Alice Owen's is particularly popular with families from North London who are outside the Barnet catchment, but distance from the school is the key tie-breaker once all children above the pass mark have been ranked. Competition is lower than in London Barnet or Sutton, but a genuine SAS 111–115 is still required.",
     keyFact: "Dame Alice Owen's is popular with North London families outside the Barnet catchment.",
     metaTitle: 'Hertfordshire Grammar Schools 2026: SAS 111–115 Guide',
     metaDescription: "Hertfordshire grammar schools — Dame Alice Owen's and Watford Grammar. GL Assessment SAS 111–115 targets, distance tie-breakers and how to prepare.",
-    registrationNote: 'Registration for Hertfordshire selective schools opens in June of Year 5.',
+    registrationNote: 'Registration for Hertfordshire selective schools opens in June of Year 5. The 11+ test is held in September of Year 6.',
+    preparationNote: {
+      heading: 'How to prepare for Hertfordshire 11+',
+      paragraphs: [
+        "All three Hertfordshire selective schools use the same GL Assessment test format: two papers, each around 45–50 minutes, covering English (reading comprehension and grammar), Verbal Reasoning, Maths (at Key Stage 2 level), and Non-Verbal Reasoning. Results are standardised to produce a Standard Age Score (SAS), which adjusts for month of birth — so summer-born children are not at a disadvantage.",
+        "The competitive range is SAS 111–115, meaning a child needs to score roughly in the top 7–10% nationally to be placed comfortably above the pass mark. Because Hertfordshire uses distance as the primary tie-breaker among qualifying children, families who live close to their target school have a structural advantage. If you are applying to Dame Alice Owen's from North London or applying to Watford from further afield, your child's raw SAS needs to be closer to 115+ to reliably secure a place regardless of distance.",
+        "Preparation should begin no later than September of Year 5, targeting a full 12-month run-up to the September Year 6 test. The GL Assessment format rewards familiarity — especially the Verbal Reasoning section, which includes 21 distinct question types (odd one out, analogies, codes, number series, and more) that are rarely taught in primary school. Non-Verbal Reasoning questions also follow predictable patterns that improve significantly with practice. Focused paper practice from GL Assessment official materials and timed mock exams in the final six weeks are strongly recommended.",
+      ],
+    },
   },
   {
     slug: 'essex',

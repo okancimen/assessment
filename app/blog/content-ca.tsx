@@ -132,6 +132,18 @@ export const CA_CONTENT: Record<string, React.ReactNode> = {
           </Link>.
         </p>
       </section>
+
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 not-prose">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Check your child&apos;s NWEA MAP RIT score</p>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            If your child&apos;s school uses NWEA MAP Growth testing, use our free calculator to see the national percentile for any RIT score and grade — and whether it reaches the 95th-percentile threshold used by most Canadian gifted programmes.
+          </p>
+        </div>
+        <Link href="/tools/nwea-rit-calculator" className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap">
+          RIT Score Calculator →
+        </Link>
+      </div>
     </>
   ),
 
@@ -260,6 +272,18 @@ export const CA_CONTENT: Record<string, React.ReactNode> = {
           </Link>.
         </p>
       </section>
+
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 not-prose">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Does your child&apos;s school use NWEA MAP?</p>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Many Ontario and Canadian schools run NWEA MAP Growth tests each term. Use our free RIT score calculator to convert your child&apos;s score into a national percentile and see whether it meets common gifted programme cut-offs.
+          </p>
+        </div>
+        <Link href="/tools/nwea-rit-calculator" className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap">
+          RIT Score Calculator →
+        </Link>
+      </div>
 
       <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
         <div className="flex-1">

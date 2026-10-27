@@ -136,7 +136,7 @@ const ORGANIZATION_SCHEMA = {
   description: 'Eduentry provides three free assessments: an academic benchmark (ages 6–17) measuring English, Maths, Verbal Reasoning, and Non-Verbal Reasoning; a VIA Character Strengths personality assessment (ages 6–20) identifying 24 traits across 6 virtues; and an internship readiness assessment (ages 14–18) across Technology, Business, Data Analytics, and Digital Marketing tracks.',
   url: 'https://eduentry.com',
   logo: { '@type': 'ImageObject', url: 'https://eduentry.com/logo.png', width: 200, height: 60 },
-  foundingDate: '2026',
+  foundingDate: '2023',
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@eduentry.com' },
   knowsAbout: [
     '11+ preparation',

@@ -1936,7 +1936,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'Find out where your child stands — for free',
       body: 'Eduentry\'s adaptive assessment tests ages 6–17 across maths, English, verbal and non-verbal reasoning on the same international scale as PISA. Get a global percentile rank within an hour.',
       label: 'Start Free Assessment',
-      href: 'https://eduentry.com',
+      href: '/academic-assessment',
     },
   },
   {

@@ -122,6 +122,18 @@ export default async function GrammarAreaPage({ params }: { params: Promise<{ ar
           <p className="text-gray-700 leading-relaxed">{area.description}</p>
         </section>
 
+        {/* Area-specific preparation guidance (optional) */}
+        {area.preparationNote && (
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">{area.preparationNote.heading}</h2>
+            <div className="space-y-4">
+              {area.preparationNote.paragraphs.map((para, i) => (
+                <p key={i} className="text-gray-700 leading-relaxed">{para}</p>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Inline benchmark CTA */}
         <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-12">
           <div className="flex-1">

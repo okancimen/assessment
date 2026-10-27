@@ -622,6 +622,21 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           .
         </p>
       </section>
+
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 not-prose">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Convert your child&apos;s RIT score to a percentile</p>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Enter any RIT score and grade into our free calculator to see the exact national percentile and whether it meets your district&apos;s gifted cut-off.
+          </p>
+        </div>
+        <Link
+          href="/tools/nwea-rit-calculator"
+          className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap"
+        >
+          Open RIT Calculator →
+        </Link>
+      </div>
     </>
   ),
 
@@ -823,6 +838,21 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           genuine academic ability for their target schools.
         </p>
       </section>
+
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 not-prose">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Start with a diagnostic benchmark</p>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Before purchasing prep materials, use a free adaptive assessment to identify your child&apos;s actual subject gaps across English, Maths, Verbal and Non-Verbal Reasoning — the four domains both tests draw on.
+          </p>
+        </div>
+        <Link
+          href="/academic-assessment"
+          className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap"
+        >
+          Free diagnostic assessment →
+        </Link>
+      </div>
     </>
   ),
 

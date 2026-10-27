@@ -46,6 +46,12 @@ const SERVICE_LINKS = [
     desc: 'Adaptive IRT scoring on the same 100-point scale used by PISA, GCSE, and CAT4.',
   },
   {
+    tags: ['NWEA MAP', 'RIT Scores'],
+    href: '/tools/nwea-rit-calculator',
+    title: 'NWEA MAP RIT Score Calculator',
+    desc: 'Enter your child\'s RIT score and grade to get a percentile ranking and gifted-programme cut-off comparison.',
+  },
+  {
     tags: ['CogAT', 'NWEA MAP', 'ISEE', 'SSAT', 'Gifted Testing', 'Netherlands', 'UAE', 'Canada', 'Australia'],
     href: '/subjects',
     title: 'Academic Subjects Covered',
@@ -75,6 +81,7 @@ const COUNTRY_LANG: Record<string, string> = {
   'uae-':         'en-AE',
   'canada-':      'en-CA',
   'australia-':   'en-AU',
+  'singapore-':   'en-SG',
 }
 
 function getCountryLang(slug: string): string | null {
