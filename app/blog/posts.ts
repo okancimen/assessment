@@ -230,6 +230,92 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'finance-work-experience-sixth-form-uk',
+    title: 'Finance Work Experience for Sixth Form Students: Investment Banking, Big 4 and How to Get In',
+    shortTitle: 'Finance Work Experience Sixth Form UK',
+    description:
+      'How UK Year 12 and Year 13 students can get finance work experience — Spring Insight weeks at Goldman Sachs, Barclays and JPMorgan, Big 4 accounting placements, and what actually makes an application stand out.',
+    tldr: 'The main routes to finance work experience for UK sixth formers are: Spring Insight weeks at investment banks (Goldman Sachs, Barclays, HSBC, JPMorgan, UBS, Deutsche Bank — applications open September–November for February/March programmes); Big 4 accounting work experience schemes (KPMG, Deloitte, PwC, EY — Year 12 preference, applications typically open October–December); and direct approaches to smaller financial services firms. Competition for named bank programmes is high — applicants with a verified numerical aptitude score and clear commercial rationale consistently outperform those with generic interest statements.',
+    date: '2026-10-27',
+    readTime: '11 min read',
+    tags: ['Internship', 'Career Development', 'Work Experience', 'Business', 'University Admissions'],
+    faqs: [
+      {
+        q: 'What finance work experience can Year 12 students get in the UK?',
+        a: 'Year 12 students have access to three main routes: (1) Spring Insight weeks at investment banks — Goldman Sachs, Barclays, HSBC, JPMorgan, UBS, and Deutsche Bank all run structured one- to two-week programmes for Year 12 students, typically held in February or March. Applications open September–November. (2) Big 4 accounting work experience — KPMG, Deloitte, PwC, and EY all offer Year 12 schemes covering audit, tax, consulting, and technology. (3) Direct applications to smaller financial services firms — asset managers, financial advisory firms, insurance companies, and fintech start-ups often take students informally with a strong direct approach.',
+      },
+      {
+        q: 'How competitive is a Goldman Sachs or JPMorgan Spring Insight week?',
+        a: 'Very. Goldman Sachs and JPMorgan Spring Insight programmes receive thousands of applications for a few hundred places — acceptance rates are typically 5–10%. The application process includes a motivation statement, numerical reasoning questions, and sometimes a video interview. The strongest applications combine: a specific and credible reason for choosing finance (not just "I like maths"), evidence of commercial awareness (awareness of what the bank actually does beyond generic descriptions), and, where possible, a verified aptitude score that quantifies the numerical ability the bank needs to infer from a CV alone.',
+      },
+      {
+        q: 'Do I need A-level Maths to get finance work experience?',
+        a: 'For investment banking Spring Insight programmes, A-level Mathematics (or Further Maths) is strongly preferred and is an implicit baseline at firms like Goldman Sachs, JPMorgan, and Barclays. Big 4 accounting schemes are more flexible — EY and Deloitte explicitly state that any A-level combination is welcome, and they recruit heavily from economics, business, history, and even English students. Smaller financial services firms and local independent financial advisers rarely require specific A-levels and are often open to any student who can demonstrate interest and basic numeracy.',
+      },
+      {
+        q: 'When should I apply for finance work experience?',
+        a: 'For Spring Insight programmes at investment banks, the application window is typically September to November of Year 12, for placements the following February or March. This means applications open before many students have received A-level predicted grades. Big 4 accounting schemes follow a similar timeline. The most common mistake is applying in January, when most competitive programmes are already closed. Set calendar reminders for September of Year 12.',
+      },
+      {
+        q: 'How does finance work experience help my university application?',
+        a: 'Finance work experience strengthens a UCAS personal statement for economics, finance, accounting, mathematics, and law courses in two specific ways: it replaces generic assertions of interest with specific observations from real commercial environments, and it demonstrates the professional maturity that admissions teams at the London School of Economics, Warwick, Bath, and similar programmes look for in candidates. For students applying to medicine or law who want to demonstrate analytical and commercial skills, a finance placement also signals the intellectual range that competitive admissions readers reward.',
+      },
+    ],
+    howToSteps: [
+      { name: 'Research the programmes available to you', text: 'Map out your target firms and check their programme eligibility (most Spring Insight weeks are Year 12 only). Goldman Sachs, Barclays, HSBC, JPMorgan, UBS, Deutsche Bank, and KPMG all have dedicated sixth-form pages.' },
+      { name: 'Set application deadline alerts for September', text: 'Most competitive programmes close October–November. Missing the window means waiting a full year. Set phone reminders for September 1st of Year 12.' },
+      { name: 'Build your commercial awareness baseline', text: 'Read the FT or BBC Business News for four weeks before applying. Know what the firm you are applying to actually does — which products, which clients, which markets. Name one specific thing the firm has done recently in your motivation statement.' },
+      { name: 'Take a verified aptitude assessment before applying', text: 'Investment banking and accounting firms screen heavily for numerical and verbal reasoning. A free aptitude assessment score gives you a verified number to reference, and tells you where to focus preparation if your numerical score is below competitive range.' },
+      { name: 'Write a targeted motivation statement', text: 'One paragraph: why finance specifically (not business generically), why this firm specifically, and one piece of evidence — a piece of news, a book, a teacher, a competition — that supports the claim. Generic statements are the most common rejection reason.' },
+      { name: 'Document and reflect on the placement', text: 'Keep a daily log: what you did, one thing you observed about how the firm makes money, one question you asked a professional. This becomes the raw material for your personal statement and future interview answers.' },
+    ],
+    cta: {
+      heading: 'Know your numerical baseline before you apply',
+      body: 'Investment banks and Big 4 firms screen for numerical aptitude. Free adaptive assessment for students aged 14+ — get a verified score across Maths, Verbal and Quantitative Reasoning before your September application deadline.',
+      label: 'Take the free assessment',
+      href: '/academic-assessment',
+    },
+  },
+  {
+    slug: 'how-to-help-child-get-work-experience',
+    title: "How to Help Your Child Get Work Experience at 15: A Parent's Complete Guide",
+    shortTitle: "How to Help Your Child Get Work Experience at 15",
+    description:
+      "What parents can actively do — from using their professional network to preparing their child for the first day — to make sure work experience at 14–16 is structured, documented, and genuinely useful for UCAS.",
+    tldr: "Parents have more leverage than they realise: your professional network is the single highest-conversion route to a Year 10 or Year 11 work experience placement. An email from a parent to a manager they know converts at a far higher rate than a cold student application. The key is matching the placement to aptitude, ensuring the employer gives a real brief (not just observation), and building a post-placement reflection document that becomes the raw material for the UCAS personal statement.",
+    date: '2026-10-27',
+    readTime: '10 min read',
+    tags: ['Internship', 'Work Experience', 'Career Development', 'Parent Guide', 'UK Education', 'University Admissions'],
+    faqs: [
+      {
+        q: 'What age should my child do their first work experience placement?',
+        a: 'Year 10 (age 14–15) is the recommended starting point for two reasons. First, it is the point at which most formal employer schemes and school-organised placements become available. Second, starting at 14–15 gives your child time to compound the experience — a student who can reference two years of documented professional exposure in a UCAS personal statement written at 17 is in a structurally stronger position than one who did a single placement at 17. Developmental research from the Journal of Vocational Behaviour identifies 14–16 as the optimal window for forming professional identity, when new experiences produce the most lasting attitudinal change.',
+      },
+      {
+        q: 'How can I use my professional network to help my child get a placement?',
+        a: 'A direct approach from a parent to a professional they know personally is the highest-conversion route to a placement — far more effective than cold applications from students. The right approach is a brief, professional email that: names your child and their year group, describes what they are interested in (specifically, not generically), makes a concrete ask (one week of work experience in [month]), and offers to make it easy for the employer (your child will not need supervision all day — they can be given a defined task). Fewer than 10% of parents systematically use their professional network for this purpose, which means the competition is far lower than it appears.',
+      },
+      {
+        q: 'What makes a good work experience placement vs a bad one?',
+        a: 'A good placement gives your child a defined brief with a real deliverable — a piece of research, an analysis, a presentation — rather than an unstructured invitation to watch. The single most useful question to ask any prospective host employer is: "What will my child actually produce or deliver during the week?" If the answer is vague, the placement is likely to be observational rather than developmental. A great placement is one where your child has to think, ask questions, and produce something that gets reviewed by a professional.',
+      },
+      {
+        q: "How do I prepare my child for their first work experience week?",
+        a: "In the week before the placement: research the organisation together — what it does, who its clients are, what problems it solves, one recent news item about it. Prepare three intelligent questions for professionals they will meet. Talk through professional norms: being early, making eye contact, writing things down, asking for tasks when idle. After day one, ask: what did you observe, what confused you, what would you have done differently? Daily debrief conversations are the most effective preparation for both the current placement and future applications.",
+      },
+      {
+        q: "How do I turn my child's work experience into a strong UCAS personal statement?",
+        a: "The gap between students who did a placement and students who write well about it in a personal statement is documentation. During the placement, encourage your child to keep a brief daily log: one task they completed, one observation about how the organisation works, one question they asked or answer they received. After the placement, sit down together and write a 200-word reflection — what they saw, what surprised them, what they want to understand more. This material, written at 14–15, becomes the specific evidence that makes a personal statement at 17 read as genuinely engaged rather than theoretically interested.",
+      },
+    ],
+    cta: {
+      heading: "Find out where your child stands before the placement",
+      body: "A free adaptive assessment gives your child a verified score across Verbal Reasoning, Maths, and Non-Verbal Reasoning — the same domains employers screen for. Takes 35 minutes. No account needed. Share the report with the host employer to show your child is serious.",
+      label: 'Start free assessment',
+      href: '/academic-assessment',
+    },
+  },
+  {
     slug: 'global-academic-benchmarks-report-2026',
     title: 'Global Academic Benchmarks Report: 2026 International Scoring and Assessment Trends',
     shortTitle: 'Global Academic Benchmarks Report 2026',
