@@ -96,6 +96,8 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [IA et futur de l'emploi](https://eduentry.com/fr/blog/intelligence-artificielle-futur-emploi-jeunes): Impact de l'automatisation sur les métiers, compétences à développer, données OCDE et WEF.
 - [Stage d'été lycéen France](https://eduentry.com/fr/blog/stage-ete-france-lyceen): Calendrier des candidatures, plateformes de recherche, entreprises qui acceptent les lycéens en été.
 - [Stage finance et banque](https://eduentry.com/fr/blog/stage-finance-banque-lyceen): Banques et institutions financières françaises acceptant les lycéens, tâches typiques, comment postuler.
+- [Stage finance en terminale au Royaume-Uni](https://eduentry.com/fr/blog/stage-finance-terminale-royaume-uni): Semaines Spring Insight chez Goldman Sachs, Barclays, JPMorgan et Big 4 — calendrier de candidature (septembre–novembre), ce qui différencie les dossiers et comment valoriser le stage dans un dossier universitaire.
+- [Aider son enfant à trouver un stage](https://eduentry.com/fr/blog/aider-enfant-trouver-stage): Guide pour les parents — comment utiliser son réseau professionnel, ce qui fait un bon stage, comment préparer son enfant et transformer l'expérience en matériel de candidature universitaire.
 - [Scores PISA France](https://eduentry.com/fr/blog/score-pisa-france-analyse): Résultats PISA France 2022 par matière, comparaison internationale, implications pour l'orientation.
 - [Grandes écoles vs université](https://eduentry.com/fr/blog/grandes-ecoles-orientation-lyceen): Différences de sélection, coûts, débouchés et critères pour choisir entre grandes écoles et université.
 - [PISA 2025 expérience professionnelle](https://eduentry.com/fr/blog/pisa-2025-experience-professionnelle-etudiants): Résultats PISA 2025 : baisse des scores et données sur le lien entre expérience professionnelle et performance scolaire.
@@ -110,6 +112,8 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [برامج الموهوبين الإمارات](https://eduentry.com/ar/blog/baramij-mawhubin-imarat): معايير تحديد الموهوبين، برامج المواهب الإماراتية، وحدود درجات CAT4.
 - [اختبارات القبول المدارس الدولية](https://eduentry.com/ar/blog/imtihanat-qabul-madaras-dawliyya): اختبارات CAT4 وISEE وSSAT — اختلافاتها وكيفية الاستعداد لها.
 - [التدريب المبكر وتطور الطفل](https://eduentry.com/ar/blog/staj-mubakir-tatawwur-mahni): أبحاث حول فوائد التدريب في سن 14–16: نمو شخصي وبيانات توظيف.
+- [تجربة العمل في المالية للمرحلة الثانوية UK](https://eduentry.com/ar/blog/tajrubat-amal-maliyya-sadat-uk): أسابيع Spring Insight في Goldman Sachs وBarclays وJPMorgan ومخططات Big 4 — توقيت التقديم (سبتمبر–نوفمبر) وما يميّز الطلبات الناجحة.
+- [كيف تساعد طفلك على الحصول على تجربة عمل](https://eduentry.com/ar/blog/kayfa-tusaid-tiflak-fi-al-husul-ala-tajrubat-amal): دليل للآباء — استخدام الشبكة المهنية، اختيار التدريب المناسب، إعداد الطالب، وتوثيق التجربة لطلبات الجامعة.
 - [إيجاد تدريب في دبي](https://eduentry.com/ar/blog/kayfa-tajid-staj-dubai): قائمة بالشركات والمؤسسات في دبي التي تقبل طلاب الثانوية، وكيفية التقديم.
 - [السيرة الذاتية للتدريب 16 سنة](https://eduentry.com/ar/blog/sirat-dhatiyya-staj-16): هيكل السيرة الذاتية للطلاب، أمثلة على الصياغات، والأخطاء الشائعة.
 - [مقابلة التدريب](https://eduentry.com/ar/blog/muqabala-staj-nasayih): أسئلة المقابلات الشائعة للتدريب وكيفية الإجابة عليها.
@@ -130,6 +134,8 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [Ранняя стажировка](https://eduentry.com/ru/blog/ranniy-stazh-razvitie-rebyonka-karera): Исследования о пользе стажировок в 14–16 лет: данные NACE, психология развития, поступление в вузы.
 - [Стажировка в старшей школе](https://eduentry.com/ru/blog/preimushchestva-stazha-v-shkole): Влияние опыта работы на самоэффективность, личностный рост и университетские заявки.
 - [Опыт работы в школе](https://eduentry.com/ru/blog/rabochiy-opyt-starshaya-shkola-uk): Определение рабочего опыта в Великобритании, где искать, как использовать в заявлении.
+- [Практика в финансах: старшая школа UK](https://eduentry.com/ru/blog/finansovaya-praktika-shestoy-klass-uk): Spring Insight недели в Goldman Sachs, Barclays, JPMorgan и схемы Big 4 — сроки подачи заявок (сентябрь–ноябрь) и что отличает сильные заявки.
+- [Как помочь ребёнку получить опыт работы](https://eduentry.com/ru/blog/kak-pomoch-rebyonku-poluchit-opyt-raboty): Руководство для родителей — как использовать профессиональную сеть, выбрать хорошую практику, подготовить ребёнка и превратить опыт в материал для поступления.
 - [Международное сравнение](https://eduentry.com/ru/blog/kak-vash-rebyonok-sravnivaetsya-globalno): Рейтинги PISA по странам, разрыв Великобритания / Сингапур / Япония, стандартизированные баллы.
 - [Как выделиться в 15 лет](https://eduentry.com/ru/blog/kak-vydelytsya-v-15-let): Конкурсы, проекты, внеклассные активности — конкретные действия для школьников.
 - [Бизнес в 16 лет](https://eduentry.com/ru/blog/kak-nachat-biznes-v-16-let): Правовые требования, этапы регистрации, примеры компаний, основанных школьниками.
@@ -153,6 +159,8 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [PISA 2025中国家长](https://eduentry.com/zh/blog/pisa-2025-zhongguo-jiazhang-zhinan): PISA 2025各国成绩、中国排名、分数下降原因及对家庭的影响。
 - [评估孩子学术水平](https://eduentry.com/zh/blog/haizi-xueshu-shuiping-ruhe-celiang): 标准化测试与学校成绩的区别，如何选择适合的评估工具。
 - [高中生找实习](https://eduentry.com/zh/blog/gaozhong-shixi-ruhe-xunzhao): 招收高中生的公司类型、求职平台、申请流程及简历要点。
+- [英国高中金融实习指南](https://eduentry.com/zh/blog/uk-caiwu-shixi-liuzhong): Goldman Sachs、Barclays、JPMorgan的Spring Insight周及四大会计师事务所计划——申请时间（9–11月）及如何让申请脱颖而出。
+- [帮孩子找实习：家长指南](https://eduentry.com/zh/blog/bang-haizi-zhao-shixi-jizhang): 家长实用指南——如何利用职业人脉、选择好的实习岗位、帮孩子做准备并将经历转化为大学申请材料。
 - [实习简历写作](https://eduentry.com/zh/blog/shixi-jianlixie-zhinan): 高中生简历结构、示例措辞及常见错误。
 - [实习面试准备](https://eduentry.com/zh/blog/shixi-mianshi-zhunbei-jiqiao): 常见面试问题及参考回答。
 - [数字营销实习入门](https://eduentry.com/zh/blog/shuzi-yingxiao-shixi-rumen): 数字营销实习的典型任务、所用工具（GA4、Meta Ads）及申请方式。
@@ -191,11 +199,15 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?](https://eduentry.com/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur): 6–17 yaş için ücretsiz, uluslararası kıyaslamalı değerlendirme — okul notu neden yetmez?
 - [Yapay Zekanın Alamayacağı 65 Meslek](https://eduentry.com/tr/blog/yapay-zekanin-alamayacagi-65-meslek): Otomasyon riskine karşı güvende olan 65 meslek listesi — el becerisine, empataiye ve yaratıcılığa dayalı kariyerler.
 - [Deneyimsiz Lisede Staj Nasıl Bulunur](https://eduentry.com/tr/blog/deneyimsiz-lisede-staj-ve-is-tecrubesi): Hiç iş deneyimi olmadan lise yıllarında staj ve iş tecrübesi kazanmanın beş adımı.
+- [Finans İş Deneyimi: Lise Son Sınıf İngiltere](https://eduentry.com/tr/blog/finans-is-deneyimi-lise-ingiltere): Goldman Sachs, Barclays, JPMorgan Spring Insight haftaları ve Big 4 muhasebe programları — başvuru takvimi (Eylül–Kasım) ve başvuruları öne çıkaran faktörler.
+- [Çocuğunuzun İş Deneyimi Bulmasına Yardım Edin](https://eduentry.com/tr/blog/cocugunuzun-is-deneyimi-bulmasina-nasil-yardim-edilir): Ebeveyn rehberi — profesyonel ağınızı nasıl kullanırsınız, iyi bir yerleştirme nasıl seçilir, çocuğunuzu nasıl hazırlarsınız ve deneyimi üniversite başvurusu materyaline nasıl dönüştürürsünüz.
 - [11+ Sınavı Nedir? Tam Rehber](https://eduentry.com/tr/blog/11-plus-sinavi-nedir-tam-rehber): GL ve CEM formatları, SAS puan eşikleri, dört temel alan ve IRT tabanlı uyarlanabilir değerlendirme.
 
 ### Eduentry.ai blog posts — Spanish (Español)
 
 - [Prácticas en el instituto sin experiencia](https://eduentry.com/es/blog/practicas-sin-experiencia-instituto): Cinco pasos para conseguir prácticas en el instituto sin experiencia laboral previa — mapa de habilidades, informe de competencias en lugar de un CV vacío, vías alternativas de experiencia y solicitud personalizada.
+- [Prácticas en finanzas para bachillerato UK](https://eduentry.com/es/blog/practicas-finanzas-bachillerato-reino-unido): Semanas Spring Insight en Goldman Sachs, Barclays, JPMorgan y esquemas Big 4 — calendario de solicitudes (septiembre–noviembre) y qué hace que una solicitud destaque.
+- [Cómo ayudar a tu hijo a conseguir prácticas](https://eduentry.com/es/blog/como-ayudar-hijo-conseguir-experiencia-laboral): Guía para padres — usar la red profesional, elegir una buena colocación, preparar al estudiante y convertir la experiencia en material para solicitudes universitarias.
 - [¿Qué es el examen 11+? Guía completa](https://eduentry.com/es/blog/que-es-el-examen-11-plus-guia-completa): Formatos GL vs CEM, umbrales SAS (115+ y 127+), por qué las notas escolares no predicen el resultado, los cuatro pilares, los 3 errores de preparación y la evaluación adaptativa IRT.
 
 ---
