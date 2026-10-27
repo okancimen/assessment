@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /results/
+Disallow: /auth/
+Disallow: /api/
+
+Sitemap: https://eduentry.com/sitemap.xml

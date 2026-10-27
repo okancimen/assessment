@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS } from '@/app/blog/posts'
 import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
-import { slugToTag, getAllTagSlugs, getLocalePostsByTag } from '@/app/blog/tag-utils'
+import { slugToTag, getAllTagSlugs, getLocalePostsByTag, TAG_META } from '@/app/blog/tag-utils'
 
 const BASE_URL = 'https://eduentry.com'
 
@@ -18,6 +18,9 @@ export async function generateMetadata({ params }: { params: Promise<{ tag: stri
   const posts = getLocalePostsByTag(tagName, BLOG_POSTS_TR, BLOG_POSTS)
   if (posts.length === 0) return {}
   const url = `${BASE_URL}/tr/blog/tag/${tagSlug}`
+  const meta = TAG_META[tagName]
+  const ogTitle = meta?.title ?? `${tagName} Guides`
+  const ogDesc = meta?.description ?? `Guides and articles about ${tagName}.`
   return {
     title: `${tagName} Rehberleri | Eduentry Blog`,
     description: `${tagName} kategorisinde ${posts.length} rehber.`,
@@ -30,6 +33,8 @@ export async function generateMetadata({ params }: { params: Promise<{ tag: stri
       },
     },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+    openGraph: { title: `${ogTitle} | Eduentry Blog`, description: ogDesc, url, images: [`${BASE_URL}/blog/opengraph-image`] },
+    twitter: { card: 'summary_large_image', title: `${ogTitle} | Eduentry Blog`, description: ogDesc, images: [`${BASE_URL}/blog/opengraph-image`] },
   }
 }
 
