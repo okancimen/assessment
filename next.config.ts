@@ -77,6 +77,8 @@ const nextConfig: NextConfig = {
       { source: '/blog/a-level-what-is-it', destination: '/blog/dubai-high-school-gcse-ib-guide', permanent: true },
       // Google crawled Cyrillic-ъ variant of this RU slug (razъyasneniye vs razyasneniye)
       { source: '/ru/blog/bally-nwea-map-raz%D1%8Ayasneniye', destination: '/ru/blog/bally-nwea-map-razyasneniye', permanent: true },
+      // ZH PISA post: Google found slug from an early draft — redirect to canonical ZH slug
+      { source: '/zh/blog/pisa-2025-gongzuo-jingyan-xuesheng-zhunbei', destination: '/zh/blog/pisa-shi-shenme-2025-chengji-yu-zhiye-fazhan', permanent: true },
       // contentSlug accidentally indexed by Google — redirect directly to canonical Turkish slug on eduentry.com
       { source: '/blog/international-internship-programs-tr', destination: 'https://eduentry.com/tr/blog/uluslararasi-staj-programlari', permanent: true },
       // Locale internship pages that exist in robots.txt but have no route — redirect to eduentry.ai
