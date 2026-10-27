@@ -660,10 +660,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'pisa-nedir-cocugunuz-nasil-hazirlanir',
-    title: 'PISA (Pısa) Nedir? 2025–2026 Açılımı, Türkiye Sonuçları ve Hazırlık Rehberi',
+    title: 'PISA Nedir? Türkiye 2025 Sonuçları, Puan Tablosu ve Veli Rehberi',
     shortTitle: 'PISA (Pısa) Nedir? 2026 Güncel: Açılımı, Türkiye Sonuçları ve Hazırlık',
     description:
-      'PISA (pısa) nedir, açılımı ne demek? OECD\'nin her 3 yılda bir 91 ülkede uyguladığı uluslararası sınav — Türkiye 2025–2026 sonuçları, puan hesabı ve veli rehberi.',
+      'Türkiye PISA 2025\'te matematik 463 puan; OECD ortalaması 472. PISA açılımı, ülke sıralaması ve çocuğunuzun PISA\'ya nasıl hazırlanabileceği — veliler için tam rehber.',
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2025\'te okumada OECD ortalamasını yakaladı; matematikte 463 ile OECD ortalaması (472) yakınında yer aldı.',
 
     date: '2026-09-14',
@@ -826,9 +826,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'staj-defteri-nasil-doldurulur',
-    title: 'Staj Defteri Nedir, Nereden Alınır, Kim İmzalar? Tam Rehber',
+    title: 'Staj Defteri Nasıl Doldurulur? Nereden Alınır, Kim İmzalar — 2026 Rehberi',
     shortTitle: 'Staj Defteri: Nereden Alınır, Kim İmzalar, Ne Zaman Teslim?',
-    description: 'Staj defteri nereden alınır, kim imzalar, ne zaman teslim edilir, spiral olur mu, paralı mı? Lise ve üniversite öğrencileri için tüm sorulara tek sayfada yanıt.',
+    description: 'Staj defteri nasıl doldurulur, nereden alınır, kim imzalar, ne zaman teslim edilir, spiral olur mu? Lise ve üniversite öğrencileri için tüm sorulara tek sayfada yanıt.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
@@ -933,10 +933,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'pisa-nedir-is-hayatini-sekillendiren-sinav',
-    title: 'PISA Nedir? 2025 Sonuçları, "PISA 2026" Sorusu ve İş Hayatındaki Gizli Bağ',
+    title: 'PISA 2025 Sonuçları ve Kariyer: Türkiye Nerede, PISA 2026 Var Mı?',
     shortTitle: 'PISA 2026 Var Mı? 2025 Sonuçları ve Kariyer',
     description:
-      'PISA nedir, 2025\'te Türkiye\'yi nasıl değerlendirdi, PISA 2026 var mı? PISA başarısı iş hayatında fark yaratır mı? Deneyimli bir eğitmenden analiz.',
+      'PISA 2025\'te Türkiye matematik 463, OECD ortalaması 472. PISA 2026 var mı? Ve en önemlisi: PISA başarısı çocuğunuzun kariyerini gerçekten etkiler mi?',
     tldr: 'PISA, OECD\'nin her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uyguladığı bir değerlendirme programıdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan civarındadır. PISA\'nın ölçtüğü beceriler — sayısal muhakeme, okuduğunu anlama ve problem çözme — günümüz iş dünyasının en çok aradığı yetkinliklerle örtüşüyor.',
 
     date: '2026-09-21',
