@@ -796,7 +796,7 @@ export const UAE_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/blog/uae-british-curriculum-school-admissions', tag: 'Guide', title: 'British Curriculum School Admissions in Dubai and Abu Dhabi' },
             { href: '/blog/uae-cat4-test-guide', tag: 'Guide', title: 'UAE CAT4 Test Guide: SAS Bands and School Requirements' },
-            { href: '/blog/a-level-what-is-it', tag: 'Guide', title: 'What Is A Level? Complete Guide for International Families' },
+            { href: '/blog/dubai-high-school-gcse-ib-guide', tag: 'Guide', title: 'Dubai High School: GCSE, A Level & IB Guide for International Families' },
             { href: '/blog/how-does-your-child-compare-globally', tag: 'Benchmarking', title: 'How Does Your Child Compare Globally? PISA 2025 Results' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">

@@ -73,6 +73,10 @@ const nextConfig: NextConfig = {
       { source: '/blog/nwea-map-rit-score-by-grade', destination: '/blog/nwea-map-scores-explained', permanent: true },
       { source: '/blog/nwea-map-rit-scores-by-grade-level-2026', destination: '/blog/nwea-map-scores-explained', permanent: true },
       { source: '/blog/us-gifted-program-testing-guide', destination: '/blog/gifted-program-testing-guide', permanent: true },
+      // Post linked from content-uae.tsx but never written — redirect to closest UAE equivalent
+      { source: '/blog/a-level-what-is-it', destination: '/blog/dubai-high-school-gcse-ib-guide', permanent: true },
+      // Google crawled Cyrillic-ъ variant of this RU slug (razъyasneniye vs razyasneniye)
+      { source: '/ru/blog/bally-nwea-map-raz%D1%8Ayasneniye', destination: '/ru/blog/bally-nwea-map-razyasneniye', permanent: true },
       // contentSlug accidentally indexed by Google — redirect directly to canonical Turkish slug on eduentry.com
       { source: '/blog/international-internship-programs-tr', destination: 'https://eduentry.com/tr/blog/uluslararasi-staj-programlari', permanent: true },
       // Locale internship pages that exist in robots.txt but have no route — redirect to eduentry.ai
