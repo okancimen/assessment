@@ -1776,6 +1776,40 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     tags: ['Stage', 'Expérience Professionnelle', 'Carrière Étudiante', 'Guide Parents', 'Préparation Universitaire'],
     cta: { heading: 'MGN Global Career Fellowship — stage à distance pour 14–22 ans', body: 'Stage basé sur des projets dans de vraies entreprises. 100% à distance, cohortes toute l\'année. Taux d\'admission inférieur à 30%.', label: 'Postuler à la Fellowship', href: 'https://mgnnetworks.com/en/fellowship.html' },
   },
+  {
+    slug: 'stage-finance-terminale-royaume-uni',
+    contentSlug: 'finance-work-experience-sixth-form-uk',
+    title: 'Stage en Finance pour les Lycéens au Royaume-Uni : Banque d\'Investissement, Big 4 et Comment être Sélectionné',
+    shortTitle: 'Stage Finance Terminale Royaume-Uni',
+    description: 'Comment les élèves de Year 12 et Year 13 au Royaume-Uni peuvent obtenir un stage en finance — semaines Spring Insight chez Goldman Sachs, Barclays et JPMorgan, programmes Big 4 et ce qui fait vraiment la différence.',
+    tldr: 'Les principales voies d\'accès au stage en finance pour les lycéens britanniques : semaines Spring Insight dans les banques d\'investissement (Goldman Sachs, Barclays, HSBC, JPMorgan — candidatures ouvertes septembre–novembre pour des programmes en février/mars) et schémas des Big 4 (KPMG, Deloitte, PwC, EY). La compétition pour les programmes des grandes banques est élevée.',
+    date: '2026-10-27',
+    readTime: '11 min de lecture',
+    tags: ['Stage', 'Développement de Carrière', 'Expérience Professionnelle', 'Business', 'Admissions Universitaires'],
+    faqs: [
+      { q: 'Quels stages en finance les élèves de Year 12 peuvent-ils faire au Royaume-Uni ?', a: 'Trois routes principales : (1) Semaines Spring Insight dans les banques d\'investissement — Goldman Sachs, Barclays, HSBC et JPMorgan proposent des programmes d\'une à deux semaines pour les Year 12, généralement en février ou mars. (2) Stages en comptabilité Big 4 — KPMG, Deloitte, PwC et EY. (3) Candidatures directes auprès de cabinets de services financiers plus petits.' },
+      { q: 'Quand dois-je postuler pour un stage en finance ?', a: 'Pour les programmes Spring Insight dans les banques d\'investissement, la fenêtre de candidature est typiquement de septembre à novembre de Year 12. L\'erreur la plus courante est de postuler en janvier, quand la plupart des programmes compétitifs sont déjà fermés.' },
+      { q: 'Comment un stage en finance aide-t-il à la candidature universitaire ?', a: 'Un stage en finance renforce une personal statement pour l\'économie, la finance, la comptabilité et les mathématiques en remplaçant les affirmations génériques d\'intérêt par des observations spécifiques tirées d\'environnements professionnels réels.' },
+    ],
+    cta: { heading: 'Connais ton niveau numérique avant de postuler', body: 'Les banques d\'investissement et les Big 4 évaluent l\'aptitude numérique. Évaluation adaptive gratuite pour les étudiants de plus de 14 ans.', label: 'Passer l\'évaluation gratuite', href: '/academic-assessment' },
+  },
+  {
+    slug: 'aider-enfant-trouver-stage',
+    contentSlug: 'how-to-help-child-get-work-experience',
+    title: 'Comment Aider son Enfant à Trouver un Stage à 15 Ans : Guide Complet pour les Parents',
+    shortTitle: 'Aider son Enfant à Trouver un Stage',
+    description: 'Ce que les parents peuvent faire activement pour décrocher un stage structuré pour un enfant de 14–16 ans : utiliser son réseau professionnel, choisir un bon placement, préparer l\'élève et documenter l\'expérience pour les candidatures universitaires.',
+    tldr: 'Les parents ont plus de pouvoir qu\'ils ne le croient : un message direct d\'un parent à un manager qu\'il connaît a un taux de conversion bien supérieur à une candidature à froid d\'un étudiant. Les meilleurs stages sont ceux qui donnent une vraie mission avec un livrable, pas seulement de l\'observation.',
+    date: '2026-10-27',
+    readTime: '10 min de lecture',
+    tags: ['Stage', 'Expérience Professionnelle', 'Développement de Carrière', 'Guide Parents', 'Éducation au Royaume-Uni', 'Admissions Universitaires'],
+    faqs: [
+      { q: 'À quel âge mon enfant devrait-il faire son premier stage ?', a: 'Year 10 (14–15 ans) est le point de départ recommandé. C\'est la première fois que la plupart des programmes formels d\'employeurs et des placements organisés par les écoles sont disponibles. Commencer à 14–15 ans laisse le temps à votre enfant de capitaliser sur l\'expérience.' },
+      { q: 'Comment utiliser mon réseau professionnel pour aider mon enfant ?', a: 'Un message direct d\'un parent à un collègue qu\'il connaît personnellement a un taux de conversion bien supérieur à une candidature à froid. Le message doit être bref : l\'année de scolarité de votre enfant, ses intérêts spécifiques et une demande concrète (une semaine en tel mois).' },
+      { q: 'Qu\'est-ce qui distingue un bon stage d\'un mauvais ?', a: 'La question la plus importante à poser à tout employeur potentiel est : "Qu\'est-ce que mon enfant produira ou livrera pendant la semaine ?" Si la réponse est vague, le stage sera probablement davantage observationnel que formateur.' },
+    ],
+    cta: { heading: 'Découvre où en est ton enfant avant le stage', body: 'Une évaluation adaptive gratuite donne à votre enfant un score vérifié en Raisonnement Verbal, Mathématiques et Raisonnement Non-Verbal. 35 minutes. Sans compte nécessaire.', label: 'Démarrer l\'évaluation gratuite', href: '/academic-assessment' },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

@@ -2329,6 +2329,40 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     tags: ['Staj', 'İş Deneyimi', 'Öğrenci Kariyer', 'Ebeveyn Rehberi', 'Üniversite Hazırlık'],
     cta: { heading: 'MGN Global Kariyer Bursu — 14–22 yaş uzaktan staj', body: 'Gerçek şirketlerde proje tabanlı yerleştirme. Tamamen uzaktan, yıl boyu. Kabul oranı %30\'un altında.', label: 'Bursa Başvur', href: 'https://mgnnetworks.com/en/fellowship.html' },
   },
+  {
+    slug: 'finans-is-deneyimi-lise-ingiltere',
+    contentSlug: 'finance-work-experience-sixth-form-uk',
+    title: 'İngiltere\'de Altıncı Sınıf Öğrencileri için Finans İş Deneyimi: Yatırım Bankacılığı, Big 4 ve Nasıl Kabul Edilirsiniz',
+    shortTitle: 'Finans İş Deneyimi: Lise Son Sınıf',
+    description: 'İngiltere\'de altıncı sınıf öğrencilerinin finans iş deneyimi nasıl alacağını açıklıyoruz — Goldman Sachs, JPMorgan, Barclays Spring Insight haftaları, Big 4 muhasebe programları ve başvuruları güçlendiren faktörler.',
+    tldr: 'İngiltere\'de altıncı sınıf öğrencileri için ana finans iş deneyimi yolları: yatırım bankalarında Spring Insight haftaları (Goldman Sachs, Barclays, HSBC, JPMorgan — başvurular Eylül–Kasım açılır) ve Big 4 muhasebe şemaları (KPMG, Deloitte, PwC, EY). Başvurular Ekim–Aralık\'ta açılır.',
+    date: '2026-10-27',
+    readTime: '11 dk okuma',
+    tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'İş Dünyası', 'Üniversite Başvurusu'],
+    faqs: [
+      { q: 'Year 12 öğrencileri İngiltere\'de hangi finans iş deneyimlerini alabilir?', a: 'Üç ana yol vardır: (1) Yatırım bankalarında Spring Insight haftaları — Goldman Sachs, Barclays, HSBC, JPMorgan\'ın tümü Year 12 öğrencilerine yönelik yapılandırılmış programlar sunuyor, genellikle Şubat veya Mart\'ta düzenleniyor. Başvurular Eylül–Kasım\'da açılıyor. (2) Big 4 muhasebe iş deneyimi — KPMG, Deloitte, PwC ve EY. (3) Küçük finansal hizmet firmalarına doğrudan başvurular.' },
+      { q: 'Goldman Sachs veya JPMorgan Spring Insight haftası ne kadar rekabetçi?', a: 'Goldman Sachs ve JPMorgan Spring Insight programlarına birkaç yüz kontenjan için binlerce başvuru yapılıyor — kabul oranları genellikle %5–10. Başvuru süreci motivasyon beyanı, sayısal muhakeme soruları ve bazen video mülakat içeriyor.' },
+      { q: 'Finans iş deneyimi için A-level Matematik almam gerekiyor mu?', a: 'Goldman Sachs, JPMorgan ve Barclays gibi firmalar için A-level Matematik güçlü bir tercih ve örtük bir temel. Big 4 muhasebe şemaları daha esnektir — EY ve Deloitte açıkça her A-level kombinasyonuna açık olduğunu belirtiyor.' },
+    ],
+    cta: { heading: 'Başvurmadan önce sayısal tabanını öğren', body: 'Yatırım bankaları ve Big 4 firmalar sayısal yeteneği değerlendiriyor. 14 yaş üstü öğrenciler için ücretsiz uyarlanabilir değerlendirme.', label: 'Ücretsiz değerlendirmeyi başlat', href: '/academic-assessment' },
+  },
+  {
+    slug: 'cocugunuzun-is-deneyimi-bulmasina-nasil-yardim-edilir',
+    contentSlug: 'how-to-help-child-get-work-experience',
+    title: '15 Yaşındaki Çocuğunuzun İş Deneyimi Bulmasına Nasıl Yardım Edilir: Ebeveynler için Kapsamlı Rehber',
+    shortTitle: 'Çocuğunuzun İş Deneyimi Bulmasına Yardım Edin',
+    description: 'Ebeveynlerin 14–16 yaş çocukları için iş deneyimi bulmada gerçekten yapabilecekleri: profesyonel ağınızı kullanmak, iyi bir yerleştirme seçmek, çocuğunuzu hazırlamak ve deneyimi UCAS materyaline dönüştürmek.',
+    tldr: 'Ebeveynler sandıklarından çok daha fazla etkiye sahip: bildiğiniz bir yöneticiye gönderilen kısa, profesyonel bir mesaj, soğuk öğrenci başvurularından çok daha yüksek dönüşüm sağlıyor. En iyi yerleştirmeler, sadece gözlem değil, gerçek bir görev ve teslimatlı brifing verenlerdir.',
+    date: '2026-10-27',
+    readTime: '10 dk okuma',
+    tags: ['Staj', 'İş Deneyimi', 'Kariyer Gelişimi', 'Ebeveyn Rehberi', 'İngiltere Eğitimi', 'Üniversite Başvurusu'],
+    faqs: [
+      { q: 'Çocuğum ilk iş deneyimini hangi yaşta yapmalı?', a: 'Year 10 (14–15 yaş) önerilen başlangıç noktasıdır. Bu, çoğu resmi işveren programının ve okul tarafından organize edilen yerleştirmelerin mevcut olmaya başladığı noktadır. 14–15\'te başlamak çocuğunuza deneyimi biriktirme zamanı tanır.' },
+      { q: 'Çocuğuma yer bulmak için profesyonel ağımı nasıl kullanabilirim?', a: 'Bir ebeveynden tanıdıkları bir meslektaşa yapılan doğrudan, profesyonel bir mesaj, çevrimiçi bir forma yapılan öğrenci soğuk başvurusundan dramatik biçimde daha yüksek dönüşüm sağlar. Mesaj kısa olmalı: çocuğunuzun sınıfı, ilgi alanları ve somut bir istek (belirli bir ayda bir haftalık iş deneyimi).' },
+      { q: 'İyi bir yerleştirmeyi kötüsünden nasıl ayırt edebilirim?', a: 'Herhangi bir potansiyel ev sahibi işverene sorulacak en önemli soru: "Çocuğum hafta boyunca gerçekte ne üretecek veya teslim edecek?" Cevap belirsizse, yerleştirme geliştirici olmaktan çok gözlemsel olacak demektir.' },
+    ],
+    cta: { heading: 'Yerleştirmeden önce çocuğunuzun nerede durduğunu öğrenin', body: 'Ücretsiz uyarlanabilir değerlendirme, Sözel Muhakeme, Matematik ve Sözel Olmayan Muhakeme\'de doğrulanmış bir puan verir. 35 dakika sürer. Hesap gerekmez.', label: 'Ücretsiz değerlendirmeyi başlat', href: '/academic-assessment' },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

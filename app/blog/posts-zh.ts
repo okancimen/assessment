@@ -1702,6 +1702,38 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
     tags: ['实习', '工作经验', '学生职业', '家长指南', '大学准备'],
     cta: { heading: 'MGN全球职业奖学金——14–22岁远程实习', body: '在真实企业中进行项目实习。完全远程，全年开放队列。录取率低于30%。', label: '申请奖学金', href: 'https://mgnnetworks.com/en/fellowship.html' },
   },
+  {
+    slug: 'uk-caiwu-shixi-liuzhong',
+    contentSlug: 'finance-work-experience-sixth-form-uk',
+    title: '英国六年级学生金融实习指南：投资银行、四大会计师事务所及如何获得录取',
+    shortTitle: '英国高中金融实习指南',
+    description: '英国Year 12和Year 13学生如何获得金融实习机会——Goldman Sachs、Barclays、JPMorgan的Spring Insight周，四大会计师事务所项目，以及如何让申请脱颖而出。',
+    tldr: '英国高中生获得金融实习的主要途径：投资银行Spring Insight周（Goldman Sachs、Barclays、HSBC、JPMorgan——9月至11月开放申请，项目在2月/3月举行）和四大会计师事务所计划（KPMG、Deloitte、PwC、EY）。知名银行项目竞争激烈，录取率约为5–10%。',
+    date: '2026-10-27',
+    readTime: '11分钟阅读',
+    tags: ['实习', '职业发展', '工作经验', '商业', '大学申请'],
+    faqs: [
+      { q: '英国Year 12学生可以获得哪些金融实习机会？', a: '三个主要途径：(1) 投资银行Spring Insight周——Goldman Sachs、Barclays、HSBC和JPMorgan均为Year 12学生提供为期一至两周的结构化项目，通常在2月或3月举行。(2) 四大会计师事务所实习——KPMG、Deloitte、PwC和EY。(3) 直接向小型金融服务公司申请。' },
+      { q: '什么时候应该申请金融实习？', a: '投资银行Spring Insight项目的申请窗口通常为Year 12的9月至11月，实习在次年2月或3月进行。最常见的错误是在1月才申请，届时大多数竞争性项目已经关闭。' },
+    ],
+    cta: { heading: '申请前了解你的数学水平', body: '投资银行和四大事务所都会评估数量推理能力。针对14岁以上学生的免费自适应测评。', label: '开始免费测评', href: '/academic-assessment' },
+  },
+  {
+    slug: 'bang-haizi-zhao-shixi-jizhang',
+    contentSlug: 'how-to-help-child-get-work-experience',
+    title: '如何帮助15岁孩子找到实习机会：家长完整指南',
+    shortTitle: '帮孩子找实习：家长指南',
+    description: '家长能为14–16岁孩子积极做什么：利用职业人脉、选择好的实习岗位、帮孩子做准备，以及将实习经历记录成大学申请材料。',
+    tldr: '家长的影响力远超自己想象：家长直接向认识的经理发送简短的专业信息，其转化率远高于学生的冷门申请。最好的实习是那些给学生分配真实任务、有具体交付成果的岗位，而不仅仅是旁观。',
+    date: '2026-10-27',
+    readTime: '10分钟阅读',
+    tags: ['实习', '工作经验', '职业发展', '家长指南', '英国教育', '大学申请'],
+    faqs: [
+      { q: '孩子应该在什么年龄开始第一次实习？', a: 'Year 10（14–15岁）是推荐的起点。这是大多数正式雇主项目和学校组织的实习开始开放的时间。在14–15岁开始，给孩子时间在大学申请前积累经验。' },
+      { q: '如何利用职业人脉帮助孩子？', a: '家长直接向认识的同事发送信息，转化率远高于学生的冷门申请。信息应简短：孩子的年级、具体兴趣，以及明确的请求（在某月实习一周）。' },
+    ],
+    cta: { heading: '实习前了解孩子的能力水平', body: '免费自适应测评可为孩子提供语言推理、数学和非语言推理的认证分数。35分钟，无需注册。', label: '开始免费测评', href: '/academic-assessment' },
+  },
 ]
 
 export function getChinesePostBySlug(slug: string) {

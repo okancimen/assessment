@@ -1849,6 +1849,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/blog/high-school-internship-benefits-university', tag: 'Research', title: 'High School Internship Benefits for University' },
             { href: '/blog/how-to-get-tech-internship-before-university', tag: 'Guide', title: 'How to Get a Tech Internship Before University' },
+            { href: '/blog/finance-work-experience-sixth-form-uk', tag: 'Guide', title: 'Finance Work Experience for Sixth Form Students' },
             { href: '/blog/how-to-find-internship-as-student', tag: 'Guide', title: 'How to Find an Internship as a Student: The Complete Guide' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
@@ -2187,6 +2188,7 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/blog/high-school-internship-benefits-university', tag: 'Research', title: 'High School Internship Benefits for University' },
             { href: '/blog/business-work-experience-high-school-uk', tag: 'Guide', title: 'Business Work Experience for High School UK' },
+            { href: '/blog/how-to-help-child-get-work-experience', tag: 'Guide', title: 'How to Help Your Child Get Work Experience at 15' },
             { href: '/blog/digital-marketing-work-experience-student-reviews', tag: 'Guide', title: 'Digital Marketing Work Experience: Student Reviews' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">

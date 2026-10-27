@@ -1510,6 +1510,40 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     tags: ['Prácticas', 'Experiencia Laboral', 'Carrera Estudiantil', 'Guía para Padres', 'Preparación Universitaria'],
     cta: { heading: 'MGN Global Career Fellowship — prácticas remotas para 14–22 años', body: 'Prácticas basadas en proyectos dentro de empresas reales. 100% remoto, cohortes anuales. Tasa de admisión inferior al 30%.', label: 'Solicitar la Fellowship', href: 'https://mgnnetworks.com/en/fellowship.html' },
   },
+  {
+    slug: 'practicas-finanzas-bachillerato-reino-unido',
+    contentSlug: 'finance-work-experience-sixth-form-uk',
+    title: 'Prácticas en Finanzas para Bachillerato en el Reino Unido: Banca de Inversión, Big 4 y Cómo Conseguirlas',
+    shortTitle: 'Prácticas en Finanzas para Bachillerato UK',
+    description: 'Cómo los estudiantes de Year 12 y Year 13 en el Reino Unido pueden conseguir prácticas en finanzas — semanas Spring Insight en Goldman Sachs, Barclays y JPMorgan, programas de las Big 4 y qué hace que una solicitud destaque.',
+    tldr: 'Las principales vías para prácticas en finanzas para bachilleres en el Reino Unido son: semanas Spring Insight en bancos de inversión (Goldman Sachs, Barclays, HSBC, JPMorgan — solicitudes de septiembre a noviembre para programas de febrero/marzo) y esquemas de prácticas de las Big 4 (KPMG, Deloitte, PwC, EY). La competencia por los programas de bancos nombrados es alta.',
+    date: '2026-10-27',
+    readTime: '11 min de lectura',
+    tags: ['Prácticas', 'Desarrollo Profesional', 'Experiencia Laboral', 'Negocios', 'Admisiones Universitarias'],
+    faqs: [
+      { q: '¿Qué prácticas en finanzas pueden hacer los estudiantes de Year 12 en el Reino Unido?', a: 'Tres rutas principales: (1) Semanas Spring Insight en bancos de inversión — Goldman Sachs, Barclays, HSBC y JPMorgan ofrecen programas de una a dos semanas para Year 12, generalmente en febrero o marzo. (2) Prácticas de las Big 4 — KPMG, Deloitte, PwC y EY. (3) Solicitudes directas a empresas de servicios financieros más pequeñas.' },
+      { q: '¿Cuándo debo solicitar las prácticas en finanzas?', a: 'Para los programas Spring Insight, la ventana de solicitud es típicamente de septiembre a noviembre del Year 12, para colocaciones en febrero o marzo del año siguiente. El error más común es solicitar en enero, cuando la mayoría de los programas competitivos ya están cerrados.' },
+      { q: '¿Cómo ayudan las prácticas en finanzas en la solicitud universitaria?', a: 'Las prácticas en finanzas fortalecen una declaración personal para economía, finanzas, contabilidad y matemáticas reemplazando afirmaciones genéricas de interés con observaciones específicas de entornos comerciales reales.' },
+    ],
+    cta: { heading: 'Conoce tu nivel numérico antes de solicitar', body: 'Los bancos de inversión y las Big 4 evalúan la aptitud numérica. Evaluación adaptativa gratuita para estudiantes mayores de 14 años.', label: 'Hacer la evaluación gratuita', href: '/academic-assessment' },
+  },
+  {
+    slug: 'como-ayudar-hijo-conseguir-experiencia-laboral',
+    contentSlug: 'how-to-help-child-get-work-experience',
+    title: 'Cómo Ayudar a tu Hijo a Conseguir Experiencia Laboral a los 15 Años: Guía Completa para Padres',
+    shortTitle: 'Cómo Ayudar a tu Hijo a Conseguir Prácticas',
+    description: 'Lo que los padres pueden hacer activamente para conseguir prácticas estructuradas para hijos de 14–16 años: usar la red profesional, elegir una buena colocación, preparar al alumno y documentar la experiencia para las solicitudes universitarias.',
+    tldr: 'Los padres tienen más poder del que creen: un mensaje directo de un padre a un manager que conoce tiene una tasa de conversión mucho mayor que una solicitud en frío de un estudiante. Las mejores prácticas son aquellas que dan un encargo real con un entregable, no solo observación.',
+    date: '2026-10-27',
+    readTime: '10 min de lectura',
+    tags: ['Prácticas', 'Experiencia Laboral', 'Desarrollo Profesional', 'Guía para Padres', 'Educación en el Reino Unido', 'Admisiones Universitarias'],
+    faqs: [
+      { q: '¿A qué edad debería hacer mi hijo sus primeras prácticas?', a: 'Year 10 (14–15 años) es el punto de partida recomendado. Es la primera vez que la mayoría de los programas formales de empleadores y las colocaciones organizadas por escuelas están disponibles. Empezar a 14–15 le da a tu hijo tiempo para acumular experiencia.' },
+      { q: '¿Cómo puedo usar mi red profesional para ayudar a mi hijo?', a: 'Un mensaje directo de un padre a un colega que conoce personalmente tiene una tasa de conversión mucho mayor que una solicitud en frío de un estudiante. El mensaje debe ser breve: el curso de tu hijo, sus intereses específicos y una solicitud concreta (una semana en determinado mes).' },
+      { q: '¿Qué distingue una buena práctica de una mala?', a: 'La pregunta más importante para cualquier empleador potencial es: "¿Qué producirá o entregará mi hijo durante la semana?" Si la respuesta es vaga, la colocación será probablemente observacional en lugar de formativa.' },
+    ],
+    cta: { heading: 'Descubre dónde está tu hijo antes de la práctica', body: 'Una evaluación adaptativa gratuita da a tu hijo una puntuación verificada en Razonamiento Verbal, Matemáticas y Razonamiento No Verbal. 35 minutos. Sin cuenta necesaria.', label: 'Iniciar evaluación gratuita', href: '/academic-assessment' },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {
