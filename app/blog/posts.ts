@@ -697,10 +697,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'nwea-map-scores-explained',
-    title: 'NWEA MAP Scores Explained: What RIT Scores Mean and How to Interpret Your Child\'s Results',
+    title: 'NWEA MAP Scores by Grade Level 2026: RIT Charts, Averages & Gifted Cut-offs',
     shortTitle: 'NWEA MAP RIT Scores by Grade Level 2026: Charts & Benchmarks',
     description:
-      'MAP RIT scores by grade level 2025–26: average reading, math and science benchmarks, gifted cut-offs and percentile chart. What\'s a good score for your child?',
+      'Average MAP RIT scores for every grade (K–12) in 2025–26 — reading, math and science benchmarks, gifted programme cut-offs, and percentile chart.',
     tldr: 'According to NWEA\'s 2020 national norming study — the current benchmark for 2025–26 — the national average MAP Math RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
@@ -1079,10 +1079,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'cogat-scores-explained',
-    title: 'CogAT Scores Explained: What Your Child\'s SAS, Percentile and Stanine Mean',
+    title: 'CogAT Score Guide 2026: SAS Chart, Gifted Cut-offs & What Your Results Mean',
     shortTitle: 'CogAT Scores Explained: SAS, Percentile & Stanine Guide 2026',
     description:
-      'CogAT Standard Age Score (SAS) explained: what percentile and stanine each score represents, what scores gifted programs require, and how the three batteries compare.',
+      'CogAT SAS to percentile chart — gifted programmes typically require SAS 121+ (90th percentile). Covers stanine, battery breakdown and what your child\'s composite score means.',
     tldr: 'The CogAT (Cognitive Abilities Test) reports a Standard Age Score (SAS) with a mean of 100 and a standard deviation of 16. A SAS of 116 places a child at approximately the 84th percentile; 132 is the 98th percentile. Most gifted programs require the 90th percentile or above, which corresponds to a CogAT SAS of approximately 121. The test has three batteries — Verbal, Quantitative, and Nonverbal — and a child\'s composite profile matters as much as the overall score.',
     date: '2026-10-17',
     readTime: '10 min read',
