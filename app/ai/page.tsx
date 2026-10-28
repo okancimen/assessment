@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { INTERNSHIP_TRACKS, INTERNSHIP_TRACK_LABELS, INTERNSHIP_TRACK_DESCRIPTIONS } from '@/types'
 import { BLOG_POSTS } from '@/app/blog/posts'
 import { INSIGHT_SLUGS } from '@/app/ai/insights/content'
+import InternshipGuestPreview from '@/components/ai/InternshipGuestPreview'
 
 const BASE_URL = 'https://eduentry.ai'
 
@@ -191,7 +192,7 @@ export default function AIHomePage() {
           <div className="inline-flex items-center gap-2 mb-8">
             <span className="inline-flex items-center gap-2 border border-white/[0.12] bg-white/[0.04] text-[11px] font-mono text-white/60 px-3.5 py-1.5 rounded-full tracking-[0.12em] uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#4ade80] shadow-[0_0_6px_#4ade80] animate-pulse" />
-              Personalised · Free · 20 Minutes
+              Free · 20 Minutes · Progress saves automatically
             </span>
           </div>
 
@@ -212,7 +213,7 @@ export default function AIHomePage() {
               href="/apply"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-7 py-3.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-[0_0_24px_rgba(99,102,241,0.3)]"
             >
-              Apply free
+              Start free assessment — 20 min
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -225,48 +226,46 @@ export default function AIHomePage() {
             </a>
           </div>
 
-          {/* Terminal card */}
-          <div className="max-w-md mx-auto text-left">
-            <div className="rounded-xl border border-white/[0.08] bg-[#0a0a0a] overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.6)]">
-              {/* Window chrome */}
-              <div className="flex items-center gap-1.5 px-4 py-3 border-b border-white/[0.06] bg-white/[0.02]">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
-                <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
-                <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
-                <span className="ml-auto font-mono text-[10px] text-white/20">eduentry — assessment report</span>
+          {/* Sample report card */}
+          <div className="max-w-sm mx-auto">
+            <div className="rounded-2xl border border-white/[0.08] bg-[#0a0a0a] overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.6)]">
+              {/* Header */}
+              <div className="px-5 pt-5 pb-4 border-b border-white/[0.06]">
+                <div className="flex items-center justify-between mb-1">
+                  <span className="text-[10px] font-mono text-white/30 uppercase tracking-widest">Internship Readiness Report</span>
+                  <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-[#4ade80] bg-[#4ade80]/10 px-2 py-0.5 rounded-full border border-[#4ade80]/20">
+                    ✦ Internship Ready
+                  </span>
+                </div>
+                <p className="text-xs text-white/40 mt-1">Alex M. · Technology · Age 16</p>
               </div>
-              {/* Terminal body */}
-              <div className="p-5 font-mono text-[12px] leading-relaxed space-y-1">
-                <div className="text-white/30">
-                  <span className="text-[#818CF8]">❯</span>
-                  {' '}eduentry assess --track tech --age 16
-                </div>
-                <div className="text-white/20 text-[11px] py-1">Running 34-question adaptive assessment...</div>
-                <div className="space-y-0.5 pt-1">
-                  <div className="flex justify-between">
-                    <span className="text-white/40">General Aptitude</span>
-                    <span className="text-[#4ade80]">87 / 100</span>
+              {/* Scores */}
+              <div className="px-5 py-4 space-y-3">
+                {[
+                  { label: 'General Aptitude',  pct: 87, color: '#818CF8' },
+                  { label: 'Domain Knowledge',  pct: 74, color: '#6366F1' },
+                  { label: 'Workplace Skills',  pct: 91, color: '#A78BFA' },
+                  { label: 'Interest Profile',  pct: 88, color: '#818CF8' },
+                ].map(({ label, pct, color }) => (
+                  <div key={label}>
+                    <div className="flex justify-between text-xs mb-1.5">
+                      <span className="text-white/50">{label}</span>
+                      <span className="font-semibold" style={{ color }}>{pct}</span>
+                    </div>
+                    <div className="h-1.5 rounded-full bg-white/[0.06]">
+                      <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, background: color }} />
+                    </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-white/40">Domain Knowledge</span>
-                    <span className="text-[#4ade80]">74 / 100</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-white/40">Workplace Skills</span>
-                    <span className="text-[#4ade80]">91 / 100</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-white/40">Interest Profile</span>
-                    <span className="text-[#4ade80]">88 / 100</span>
-                  </div>
-                </div>
-                <div className="border-t border-white/[0.06] pt-2 mt-2 flex justify-between items-center">
-                  <span className="text-white/40">Readiness tier</span>
-                  <span className="bg-gradient-to-r from-[#818CF8] to-[#A78BFA] bg-clip-text text-transparent font-semibold">Internship Ready ✦</span>
-                </div>
+                ))}
+              </div>
+              {/* AI summary */}
+              <div className="px-5 pb-5 pt-1">
+                <p className="text-[11px] text-white/30 leading-relaxed border-t border-white/[0.06] pt-3">
+                  "Strong logical reasoning and high workplace professionalism. Domain knowledge is solid — focus preparation on networking fundamentals to reach top-tier."
+                </p>
               </div>
             </div>
-            <p className="text-[11px] text-white/20 text-center mt-3 font-mono">Sample output — your results are personalised</p>
+            <p className="text-[10px] text-white/20 text-center mt-3 font-mono">Sample output — your results are personalised</p>
           </div>
         </div>
       </section>
@@ -308,6 +307,8 @@ export default function AIHomePage() {
           </div>
         </div>
       </section>
+
+      <InternshipGuestPreview />
 
       {/* ── How it works ─────────────────────────────────────────────────── */}
       <section id="how-it-works" className="py-24 border-t border-white/[0.04] bg-[#080808]">

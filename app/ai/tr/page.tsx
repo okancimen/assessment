@@ -203,7 +203,7 @@ export default function TurkishHomePage() {
           </p>
           <div className="flex items-center justify-center gap-3 flex-wrap mb-12">
             <Link href="/apply" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-7 py-3.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-[0_0_24px_rgba(99,102,241,0.3)]">
-              Ücretsiz başvur
+              Ücretsiz değerlendirmeyi başlat — 20 dk
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
             </Link>
             <a href="https://eduentry.com/sample-report" className="inline-flex items-center gap-2 border border-white/[0.12] bg-white/[0.04] text-white/80 px-7 py-3.5 rounded-lg font-semibold text-sm hover:bg-white/[0.08] hover:border-white/[0.2] transition-all">

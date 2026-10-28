@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import CtaLink from '@/components/ui/CtaLink'
 import { BLOG_POSTS } from '@/app/blog/posts'
+import { DIGITAL_EMPLOYER_BRIEF, DIGITAL_PREP_GUIDE } from '@/app/ai/track-prose-content'
 
 const INTERNSHIP_TAGS = ['Internship', 'Career Development', 'Work Experience']
 const internshipPosts = BLOG_POSTS.filter(p => p.tags.some(t => INTERNSHIP_TAGS.includes(t))).slice(0, 2)
@@ -192,7 +193,7 @@ export default function DigitalMarketingTrackPage() {
               label="dm_hero_cta"
               className="inline-flex items-center justify-center bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity text-lg shadow-[0_0_24px_rgba(99,102,241,0.3)]"
             >
-              Apply free — Digital Marketing track →
+              Start free assessment — Digital Marketing track →
             </CtaLink>
             <Link
               href="https://eduentry.com/blog"
@@ -208,6 +209,7 @@ export default function DigitalMarketingTrackPage() {
             <span>✓ 20 minutes</span>
             <span>✓ AI-scored instantly</span>
             <span>✓ Personalised readiness report</span>
+            <span>✓ Progress saves automatically</span>
           </div>
         </div>
       </section>
@@ -370,6 +372,30 @@ export default function DigitalMarketingTrackPage() {
             >
               Take the assessment free →
             </CtaLink>
+          </div>
+        </div>
+      </section>
+
+      {/* Employer brief */}
+      <section className="py-24 px-6 border-t border-white/[0.04] bg-[#080808]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-10">{DIGITAL_EMPLOYER_BRIEF.heading}</h2>
+          <div className="space-y-6">
+            {DIGITAL_EMPLOYER_BRIEF.paragraphs.map((p, i) => (
+              <p key={i} className="text-white/50 leading-relaxed text-[15px]">{p}</p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Prep guide */}
+      <section className="py-24 px-6 border-t border-white/[0.04]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-10">{DIGITAL_PREP_GUIDE.heading}</h2>
+          <div className="space-y-6">
+            {DIGITAL_PREP_GUIDE.paragraphs.map((p, i) => (
+              <p key={i} className="text-white/50 leading-relaxed text-[15px]">{p}</p>
+            ))}
           </div>
         </div>
       </section>

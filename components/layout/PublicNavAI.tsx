@@ -63,13 +63,13 @@ const TRACKS: Record<Locale, { href: string; label: string; desc: string }[]> = 
 }
 
 const NAV: Record<Locale, { howItWorks: string; tracks: string; signIn: string; applyFree: string; insights: string; fellowship: string }> = {
-  en: { howItWorks: 'How it works',        tracks: 'Tracks',       signIn: 'Sign in',         applyFree: 'Apply free',           insights: 'Insights',    fellowship: 'Fellowship' },
-  tr: { howItWorks: 'Nasıl çalışır',       tracks: 'Alanlar',      signIn: 'Giriş yap',       applyFree: 'Ücretsiz başvur',      insights: 'Görüşler',   fellowship: 'İş Tecrübesi' },
-  es: { howItWorks: 'Cómo funciona',       tracks: 'Áreas',        signIn: 'Iniciar sesión',   applyFree: 'Solicitar gratis',     insights: 'Insights',    fellowship: 'Fellowship' },
-  fr: { howItWorks: 'Comment ça marche',   tracks: 'Filières',     signIn: 'Se connecter',     applyFree: 'Postuler gratuitement',insights: 'Insights',    fellowship: 'Fellowship' },
-  ar: { howItWorks: 'كيف يعمل',            tracks: 'المسارات',     signIn: 'تسجيل الدخول',    applyFree: 'التقديم مجاناً',       insights: 'Insights',    fellowship: 'Fellowship' },
-  ru: { howItWorks: 'Как это работает',    tracks: 'Направления',  signIn: 'Войти',            applyFree: 'Подать заявку',        insights: 'Insights',    fellowship: 'Fellowship' },
-  zh: { howItWorks: '工作原理',             tracks: '方向',          signIn: '登录',             applyFree: '免费申请',              insights: '洞察',        fellowship: 'Fellowship' },
+  en: { howItWorks: 'How it works',        tracks: 'Tracks',       signIn: 'Sign in',         applyFree: 'Start free',                insights: 'Insights',    fellowship: 'Fellowship' },
+  tr: { howItWorks: 'Nasıl çalışır',       tracks: 'Alanlar',      signIn: 'Giriş yap',       applyFree: 'Ücretsiz başlat',           insights: 'Görüşler',   fellowship: 'İş Tecrübesi' },
+  es: { howItWorks: 'Cómo funciona',       tracks: 'Áreas',        signIn: 'Iniciar sesión',   applyFree: 'Empezar gratis',            insights: 'Insights',    fellowship: 'Fellowship' },
+  fr: { howItWorks: 'Comment ça marche',   tracks: 'Filières',     signIn: 'Se connecter',     applyFree: 'Commencer gratuitement',    insights: 'Insights',    fellowship: 'Fellowship' },
+  ar: { howItWorks: 'كيف يعمل',            tracks: 'المسارات',     signIn: 'تسجيل الدخول',    applyFree: 'ابدأ مجاناً',               insights: 'Insights',    fellowship: 'Fellowship' },
+  ru: { howItWorks: 'Как это работает',    tracks: 'Направления',  signIn: 'Войти',            applyFree: 'Начать бесплатно',          insights: 'Insights',    fellowship: 'Fellowship' },
+  zh: { howItWorks: '工作原理',             tracks: '方向',          signIn: '登录',             applyFree: '免费开始',                   insights: '洞察',        fellowship: 'Fellowship' },
 }
 
 const HOME: Record<Locale, string>       = { en: '/', tr: '/tr', es: '/es', fr: '/fr', ar: '/ar', ru: '/ru', zh: '/zh' }
