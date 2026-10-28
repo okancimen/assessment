@@ -3294,6 +3294,82 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     },
   },
   {
+    slug: 'what-is-a-good-nwea-map-score',
+    title: 'What Is a Good NWEA MAP Score? Grade-by-Grade Answer for Parents 2026',
+    shortTitle: 'What Is a Good NWEA MAP Score? Grade-by-Grade Guide',
+    description:
+      'What counts as a good MAP RIT score depends on your child\'s grade. Quick-reference tables for every grade K–10 — below average, on track, strong, and gifted range — for Math and Reading.',
+    tldr: 'A "good" MAP RIT score is grade-relative: RIT 220 in Math is extraordinary for a 3rd grader (≈99th percentile) but below average for an 8th grader. For Math, a strong score (75th percentile) is approximately RIT 199 at Grade 3 and RIT 226 at Grade 7. The 90th percentile in any subject for any grade typically triggers gifted programme screening in most US districts.',
+    date: '2026-10-28',
+    dateModified: '2026-10-28',
+    readTime: '8 min read',
+    tags: ['NWEA MAP', 'RIT Scores', 'US Education', 'Gifted Programs', 'Assessment', 'Parent Guide'],
+    faqs: [
+      {
+        q: 'What is a good MAP score for 3rd grade?',
+        a: 'For Grade 3 Math (fall): national average is RIT 188. A strong score (75th percentile) is approximately RIT 199. A gifted-range score (90th percentile) is approximately RIT 208. For Grade 3 Reading: average is RIT 191, strong is RIT 202, gifted range is RIT 211.',
+      },
+      {
+        q: 'What is a good MAP score for 5th grade?',
+        a: 'For Grade 5 Math (fall): national average is RIT 205. A strong score (75th percentile) is approximately RIT 216. Gifted range (90th percentile) is approximately RIT 225. For Grade 5 Reading: average is RIT 211, strong is RIT 221, gifted range is RIT 229.',
+      },
+      {
+        q: 'What is a good MAP score for 7th grade?',
+        a: 'For Grade 7 Math (fall): national average is RIT 215. A strong score (75th percentile) is approximately RIT 226. Gifted range (90th percentile) is approximately RIT 235. For Grade 7 Reading: average is RIT 219, strong is RIT 228, gifted range is RIT 235.',
+      },
+      {
+        q: 'What MAP score triggers gifted screening?',
+        a: 'Most US districts trigger a gifted evaluation referral when a student scores at or above the 90th percentile in Math or Reading. Check your district\'s specific policy — some use the 85th percentile, and some require high scores in both subjects simultaneously.',
+      },
+      {
+        q: 'Is RIT 220 a good MAP score?',
+        a: 'It depends on the grade. Math RIT 220: Grade 3 ≈ 99th percentile (exceptional), Grade 5 ≈ 93rd percentile (gifted range), Grade 7 ≈ 65th percentile (strong), Grade 9 ≈ 50th percentile (average). Always compare to the grade-level norm, not to an absolute value.',
+      },
+    ],
+    cta: {
+      heading: 'Convert any RIT score to a percentile instantly',
+      body: 'Enter your child\'s RIT score and grade into our free calculator to see the exact national percentile and whether it meets your district\'s gifted cut-off.',
+      label: 'Open RIT Calculator',
+      href: '/tools/nwea-rit-calculator',
+    },
+  },
+  {
+    slug: 'nwea-map-growth-norms',
+    title: 'NWEA MAP Growth Norms 2025–26: How Much Should My Child\'s Score Increase?',
+    shortTitle: 'NWEA MAP Growth Norms: Expected Score Gains by Grade',
+    description:
+      'Expected MAP RIT score gains by grade and subject — fall-to-spring norms for Math and Reading. Know if your child\'s growth is on track, exceptional, or needs attention.',
+    tldr: 'Expected MAP Math growth from fall to spring: roughly 11.5 RIT points in Kindergarten, slowing to 3–4 points by Grade 8. Reading growth decelerates faster: 11 points in Kindergarten, 5 points in Grade 3, and just 1–2 points by Grades 7–8. Growth rates also vary by starting percentile — students below average typically show higher absolute gains when they receive targeted support.',
+    date: '2026-10-28',
+    dateModified: '2026-10-28',
+    readTime: '9 min read',
+    tags: ['NWEA MAP', 'RIT Scores', 'MAP Growth', 'US Education', 'Assessment', 'Parent Guide'],
+    faqs: [
+      {
+        q: 'How many RIT points should my child gain in one school year?',
+        a: 'Expected annual Math growth (fall to spring, NWEA 2020 norms): Kindergarten ≈11.5, Grade 1 ≈9.9, Grade 2 ≈8.2, Grade 3 ≈7.4, Grade 4 ≈7.0, Grade 5 ≈6.4, Grade 6 ≈5.7, Grade 7 ≈4.5, Grade 8 ≈3.4. Reading: Kindergarten ≈11.0, Grade 1 ≈10.0, Grade 2 ≈8.4, Grade 3 ≈5.1, Grade 4 ≈4.2, Grade 5 ≈3.0, Grade 6 ≈2.2, Grade 7 ≈1.9, Grade 8 ≈1.3.',
+      },
+      {
+        q: 'Is my child\'s MAP growth normal?',
+        a: 'Compare their fall-to-spring gain to the expected value for their grade. Within 2 RIT points of expected = on track. Gains 3+ points below expected may warrant a teacher conversation. Gains 3+ points above expected suggest strong academic progress.',
+      },
+      {
+        q: 'Why is MAP Reading growth slower than Math?',
+        a: 'Reading growth slows after Grade 3 because comprehension depends on vocabulary breadth and world knowledge, which accumulate more slowly than curriculum-driven maths skills. By Grade 6–7, most students are reading at a level their vocabulary limits, so meaningful RIT gains require broad vocabulary expansion rather than just instructional intensity.',
+      },
+      {
+        q: 'What if my child\'s MAP score stayed the same or dropped?',
+        a: 'A small decrease (1–3 RIT points) between fall tests in consecutive years is within normal measurement error. A decrease larger than 5 points from the same testing window the prior year warrants investigation. Scores staying flat in a subject where norms expect 5+ points of growth suggest targeted support is needed.',
+      },
+    ],
+    cta: {
+      heading: 'Track your child\'s growth against international peers',
+      body: 'MAP measures US-national growth. Eduentry\'s free adaptive assessment benchmarks the same reasoning skills internationally — see where your child stands relative to peers in the UK, Singapore, and globally.',
+      label: 'Get international benchmark',
+      href: '/your-childs-potential',
+    },
+  },
+  {
     slug: 'how-to-find-internship-as-a-student',
     title: 'How to Find an Internship as a Student: A Complete Parent\'s Guide',
     shortTitle: 'How to Find a Student Internship: Parent\'s Guide',

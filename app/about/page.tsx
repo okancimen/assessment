@@ -270,6 +270,18 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Written by</h2>
           <div className="border border-gray-100 rounded-2xl p-8">
             <div className="flex flex-col sm:flex-row gap-6">
+              <div className="flex-shrink-0">
+                <picture>
+                  <source srcSet="/authors/ozlem-cimen-160.webp" type="image/webp" />
+                  <img
+                    src="/authors/ozlem-cimen-160.jpg"
+                    alt="Özlem Çimen"
+                    width={96}
+                    height={96}
+                    className="w-24 h-24 rounded-full object-cover object-top"
+                  />
+                </picture>
+              </div>
               <div className="flex-1">
                 <div className="flex items-start gap-4 mb-4">
                   <div>

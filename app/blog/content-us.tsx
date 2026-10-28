@@ -619,6 +619,14 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           <Link href="/blog/nwea-map-test-prep" className="text-indigo-600 hover:underline">
             NWEA MAP test prep guide
           </Link>
+          . To quickly check whether a specific score is good for your child&apos;s grade, see{' '}
+          <Link href="/blog/what-is-a-good-nwea-map-score" className="text-indigo-600 hover:underline">
+            what is a good NWEA MAP score
+          </Link>
+          . To understand whether your child&apos;s score is growing at the right rate, see the{' '}
+          <Link href="/blog/nwea-map-growth-norms" className="text-indigo-600 hover:underline">
+            MAP growth norms guide
+          </Link>
           .
         </p>
       </section>
@@ -3328,6 +3336,339 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
             { href: '/blog/high-school-internship-benefits-university', tag: 'University Prep', title: 'Why High School Internships Matter for University Admissions' },
             { href: '/blog/how-to-get-internship-no-experience-high-school', tag: 'Application Guide', title: 'How to Get an Internship with No Experience' },
             { href: '/blog/how-to-get-tech-internship-before-university', tag: 'Tech Career', title: 'Tech Work Experience: How to Get a Placement Before University' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'what-is-a-good-nwea-map-score': (
+    <>
+      <Callout>
+        &ldquo;Good&rdquo; is always grade-relative on MAP. A Math RIT score of 220 is at the 99th percentile for a Grade 3 student and below average for an 8th grader. Find your child&apos;s grade in the tables below before evaluating the score.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Four Bands That Matter</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Rather than memorising percentile tables, most parents find it easier to think in four bands: <strong>below average</strong> (below the 25th percentile), <strong>on track</strong> (25th–74th percentile, near the national average), <strong>strong</strong> (75th–89th percentile), and <strong>gifted range</strong> (90th percentile and above). The gifted-range band is the one most parents are asking about — it is the threshold at which most US districts automatically initiate a gifted programme referral.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          These bands are based on the NWEA 2020 national norming study — the most recently published norms, which remain the current reference for the 2025–26 school year. All scores are fall administration benchmarks.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Math: Good Scores by Grade (Fall 2025–26)</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Grade</th>
+                <th className="text-center p-3 font-semibold text-red-600">Below Average<br/><span className="font-normal text-xs">(&lt;25th %ile)</span></th>
+                <th className="text-center p-3 font-semibold text-gray-700">On Track<br/><span className="font-normal text-xs">(50th %ile avg)</span></th>
+                <th className="text-center p-3 font-semibold text-indigo-700">Strong<br/><span className="font-normal text-xs">(75th %ile)</span></th>
+                <th className="text-center p-3 font-semibold text-purple-700">Gifted Range<br/><span className="font-normal text-xs">(90th %ile)</span></th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Kindergarten', '<137', '144', '154', '162+'],
+                ['Grade 1', '<155', '163', '173', '181+'],
+                ['Grade 2', '<170', '178', '188', '196+'],
+                ['Grade 3', '<180', '188', '199', '208+'],
+                ['Grade 4', '<190', '197', '208', '217+'],
+                ['Grade 5', '<197', '205', '216', '225+'],
+                ['Grade 6', '<203', '211', '222', '231+'],
+                ['Grade 7', '<207', '215', '226', '235+'],
+                ['Grade 8', '<211', '218', '229', '238+'],
+                ['Grade 9', '<212', '220', '231', '240+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-red-500 text-xs">{row[1]}</td>
+                  <td className="p-3 text-center text-gray-700 font-medium">{row[2]}</td>
+                  <td className="p-3 text-center text-indigo-600 font-medium">{row[3]}</td>
+                  <td className="p-3 text-center text-purple-600 font-bold">{row[4]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-gray-500 mb-6">Source: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Reading: Good Scores by Grade (Fall 2025–26)</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Grade</th>
+                <th className="text-center p-3 font-semibold text-red-600">Below Average<br/><span className="font-normal text-xs">(&lt;25th %ile)</span></th>
+                <th className="text-center p-3 font-semibold text-gray-700">On Track<br/><span className="font-normal text-xs">(50th %ile avg)</span></th>
+                <th className="text-center p-3 font-semibold text-indigo-700">Strong<br/><span className="font-normal text-xs">(75th %ile)</span></th>
+                <th className="text-center p-3 font-semibold text-purple-700">Gifted Range<br/><span className="font-normal text-xs">(90th %ile)</span></th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Kindergarten', '<145', '155', '164', '172+'],
+                ['Grade 1', '<158', '167', '177', '185+'],
+                ['Grade 2', '<174', '182', '192', '201+'],
+                ['Grade 3', '<182', '191', '202', '211+'],
+                ['Grade 4', '<194', '203', '213', '222+'],
+                ['Grade 5', '<200', '211', '221', '229+'],
+                ['Grade 6', '<205', '214', '224', '231+'],
+                ['Grade 7', '<209', '219', '228', '235+'],
+                ['Grade 8', '<212', '221', '231', '237+'],
+                ['Grade 9', '<213', '222', '232', '238+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-red-500 text-xs">{row[1]}</td>
+                  <td className="p-3 text-center text-gray-700 font-medium">{row[2]}</td>
+                  <td className="p-3 text-center text-indigo-600 font-medium">{row[3]}</td>
+                  <td className="p-3 text-center text-purple-600 font-bold">{row[4]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-gray-500 mb-6">Source: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Do With Each Band</h2>
+        <div className="space-y-4 mb-6">
+          {[
+            {
+              band: 'Gifted Range (90th+ percentile)',
+              color: 'bg-purple-50 border-purple-100',
+              textColor: 'text-purple-700',
+              action: 'Ask your school\'s gifted coordinator whether your child is automatically referred for evaluation — many districts require a parent to initiate it. Bring your MAP Family Report to the conversation. If your district uses CogAT alongside MAP, request that testing as well. See our guide to gifted programme testing.',
+            },
+            {
+              band: 'Strong (75th–89th percentile)',
+              color: 'bg-indigo-50 border-indigo-100',
+              textColor: 'text-indigo-700',
+              action: 'No urgent action needed. Consider enrichment in the strong subject — a subject-specific club, competition maths, or accelerated reading — to maintain momentum. Monitor the next test window to see whether the score moves toward gifted range. A student consistently at the 80th+ percentile who is not challenged may disengage.',
+            },
+            {
+              band: 'On Track (25th–74th percentile)',
+              color: 'bg-gray-50 border-gray-100',
+              textColor: 'text-gray-700',
+              action: 'Grade-level performance is appropriate. Focus on growth: is the gain between test windows matching the expected norm for the grade? A student at the 50th percentile showing below-expected growth may need support even though the absolute score looks average.',
+            },
+            {
+              band: 'Below Average (below 25th percentile)',
+              color: 'bg-red-50 border-red-100',
+              textColor: 'text-red-700',
+              action: 'Request a teacher conference and ask which specific skill gaps MAP identified. MAP reports include a Learning Continuum that maps each RIT range to exact skills — this is more useful than the score alone. Subject-specific support (targeted tutoring or online tools at the right Lexile/difficulty) is more effective than general preparation.',
+            },
+          ].map(({ band, color, textColor, action }) => (
+            <div key={band} className={`rounded-xl border p-5 ${color}`}>
+              <div className={`font-semibold mb-2 ${textColor}`}>{band}</div>
+              <p className="text-sm text-gray-700 leading-relaxed">{action}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why RIT Scores Must Always Be Read by Grade</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The RIT scale is continuous from Kindergarten through Grade 12 — which makes it easy to misread. A parent who sees RIT 220 and looks at an adult benchmark may feel reassured, but without comparing to the grade-level norm, the number is meaningless. The tables above are the correct reference point.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          If your child&apos;s score falls exactly at the 50th percentile for their grade, it does not mean they are performing at exactly &ldquo;grade level&rdquo; in the way school grades imply. It means their MAP score matches the national average for students tested in the same grade at the same time of year. That is a different — and in some ways more useful — reference point. For a deeper explanation of how MAP scores work, see the <Link href="/blog/nwea-map-scores-explained" className="text-indigo-600 hover:underline">complete MAP scores guide</Link>.
+        </p>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 not-prose">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Convert any RIT score to a percentile instantly</p>
+          <p className="text-sm text-gray-600 leading-relaxed">Enter grade, subject, and RIT score into our free calculator — see the exact national percentile and the gifted cut-off for your district.</p>
+        </div>
+        <Link href="/tools/nwea-rit-calculator" className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap">
+          Open RIT Calculator →
+        </Link>
+      </div>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related NWEA Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/nwea-map-scores-explained', tag: 'Full Guide', title: 'NWEA MAP Scores by Grade Level: RIT Charts, Averages & Gifted Cut-offs' },
+            { href: '/blog/nwea-map-growth-norms', tag: 'Growth', title: 'NWEA MAP Growth Norms: How Much Should My Child\'s Score Increase?' },
+            { href: '/blog/how-to-improve-map-math-score', tag: 'Math', title: 'How to Improve Your Child\'s MAP Math Score' },
+            { href: '/blog/how-to-improve-map-reading-score', tag: 'Reading', title: 'How to Improve Your Child\'s MAP Reading Score' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'nwea-map-growth-norms': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        When your child&apos;s MAP score comes back, the first question is whether the score is good for their grade. But the second — and often more telling — question is whether their score is growing fast enough. A student who starts Grade 3 at the 60th percentile and ends Grade 4 at the 55th percentile has grown in absolute RIT points but lost ground relative to peers. Understanding growth norms turns a score report from a one-time snapshot into a trajectory.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Are MAP Growth Norms?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Growth norms are published by NWEA and show the expected change in RIT score between two testing windows for students at various starting points. The most recent comprehensive norms are from the 2020 NWEA norming study, which remains the current reference for the 2025–26 school year.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Growth norms are separate from status norms (which show average scores at a point in time). A student who scores at the 70th percentile in fall and stays at the 70th percentile in spring has grown exactly as expected — their RIT score increased, but so did the cohort average. Staying at the same percentile over time means growing at the national average rate.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">The key question growth norms answer:</strong> Is my child growing faster, at the same rate, or slower than the typical student who started at the same level?
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Math Growth Norms by Grade (Fall to Spring)</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Math growth is relatively consistent and predictable — each year builds on the previous year&apos;s curriculum, so well-taught students grow steadily. Growth decelerates as students move through middle school, not because learning slows, but because the RIT scale is calibrated to reflect that maths becomes denser and more difficult with each year.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Grade</th>
+                <th className="text-center p-3 font-semibold text-gray-600">Fall Average RIT</th>
+                <th className="text-center p-3 font-semibold text-gray-600">Spring Average RIT</th>
+                <th className="text-center p-3 font-semibold text-indigo-700">Expected Gain</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Kindergarten', '144', '≈156', '≈11.5'],
+                ['Grade 1', '163', '≈173', '≈9.9'],
+                ['Grade 2', '178', '≈186', '≈8.2'],
+                ['Grade 3', '188', '≈195', '≈7.4'],
+                ['Grade 4', '197', '≈204', '≈7.0'],
+                ['Grade 5', '205', '≈211', '≈6.4'],
+                ['Grade 6', '211', '≈217', '≈5.7'],
+                ['Grade 7', '215', '≈220', '≈4.5'],
+                ['Grade 8', '218', '≈221', '≈3.4'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-gray-600">{row[1]}</td>
+                  <td className="p-3 text-center text-gray-600">{row[2]}</td>
+                  <td className="p-3 text-center text-indigo-600 font-bold">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-gray-500 mb-6">Source: NWEA 2020 MAP Growth Norms. Spring averages and expected gains are approximate national mean projections.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Reading Growth Norms by Grade (Fall to Spring)</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Reading growth follows a very different pattern from Math. Growth is rapid in Kindergarten through Grade 2 — the decoding and fluency phase — then decelerates sharply after Grade 3 as comprehension and vocabulary become the limiting factors. By Grade 7–8, a gain of even 2 RIT points over a full year is normal. This is not a sign of poor teaching or low effort; it reflects the nature of how reading comprehension develops.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Grade</th>
+                <th className="text-center p-3 font-semibold text-gray-600">Fall Average RIT</th>
+                <th className="text-center p-3 font-semibold text-gray-600">Spring Average RIT</th>
+                <th className="text-center p-3 font-semibold text-indigo-700">Expected Gain</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Kindergarten', '155', '≈166', '≈11.0'],
+                ['Grade 1', '167', '≈177', '≈10.0'],
+                ['Grade 2', '182', '≈190', '≈8.4'],
+                ['Grade 3', '191', '≈196', '≈5.1'],
+                ['Grade 4', '203', '≈207', '≈4.2'],
+                ['Grade 5', '211', '≈214', '≈3.0'],
+                ['Grade 6', '214', '≈216', '≈2.2'],
+                ['Grade 7', '219', '≈221', '≈1.9'],
+                ['Grade 8', '221', '≈222', '≈1.3'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-gray-600">{row[1]}</td>
+                  <td className="p-3 text-center text-gray-600">{row[2]}</td>
+                  <td className="p-3 text-center text-indigo-600 font-bold">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-gray-500 mb-6">Source: NWEA 2020 MAP Growth Norms. Spring averages and expected gains are approximate national mean projections.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Interpret Your Child&apos;s Growth</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Compare your child&apos;s fall-to-spring RIT gain to the expected value for their grade in the tables above. A useful rule of thumb:
+        </p>
+        <div className="space-y-3 mb-6">
+          {[
+            { label: 'Within 2 points of expected gain', desc: 'Growth is on track. No action needed beyond maintaining current habits.', color: 'bg-green-50 border-green-100', text: 'text-green-700' },
+            { label: '3–5 points below expected gain', desc: 'Growth is below average. Worth discussing with the classroom teacher — ask whether MAP data showed specific skill gaps, and which subject area the shortfall was in.', color: 'bg-amber-50 border-amber-100', text: 'text-amber-700' },
+            { label: 'More than 5 points below expected', desc: 'Significant growth gap. Request a teacher conference, ask about the MAP Learning Continuum report, and consider whether subject-specific support is appropriate. One slow test window is not a crisis; two consecutive below-expected windows are worth acting on.', color: 'bg-red-50 border-red-100', text: 'text-red-700' },
+            { label: '3+ points above expected gain', desc: 'Strong growth. Maintain enrichment; consider whether the current level of challenge is sufficient. A student growing significantly faster than peers may benefit from acceleration or a gifted programme referral.', color: 'bg-indigo-50 border-indigo-100', text: 'text-indigo-700' },
+          ].map(({ label, desc, color, text }) => (
+            <div key={label} className={`rounded-xl border p-4 ${color}`}>
+              <div className={`font-semibold text-sm mb-1 ${text}`}>{label}</div>
+              <p className="text-sm text-gray-700 leading-relaxed">{desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Does Reading Growth Slow After Grade 3?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The Reading deceleration after Grade 3 catches many parents off guard. A child who gained 8 RIT points in Grade 2 and gains only 3 in Grade 5 may seem to be regressing — but they are not. The explanation is structural.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          In Grades K–2, the primary skill being measured is decoding — turning letters into sounds and sounds into words. This skill develops rapidly with instruction and produces large RIT gains. After Grade 2–3, most students can decode fluently. Reading progress from this point onward depends on vocabulary, background knowledge, and the ability to infer meaning from complex text. These skills grow slowly because they require broad experience rather than focused instruction.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          The practical implication: from Grade 4 onward, reading at a level slightly above the child&apos;s current comfort zone — books and articles that require effort but are not frustrating — produces more Reading RIT growth than anything else. For a grade-by-grade intervention plan, see our guide to <Link href="/blog/how-to-improve-map-reading-score" className="text-indigo-600 hover:underline">improving MAP Reading scores</Link>.
+        </p>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 not-prose">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">MAP tells you where your child stands in the US — this shows the world</p>
+          <p className="text-sm text-gray-600 leading-relaxed">Eduentry benchmarks the same reasoning skills against an international peer group. Free, under an hour. See where your child stands beyond the US national average.</p>
+        </div>
+        <Link href="/your-childs-potential" className="shrink-0 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap">
+          Get international benchmark →
+        </Link>
+      </div>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related NWEA Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/nwea-map-scores-explained', tag: 'Full Guide', title: 'NWEA MAP Scores by Grade Level: RIT Charts, Averages & Gifted Cut-offs' },
+            { href: '/blog/what-is-a-good-nwea-map-score', tag: 'Quick Reference', title: 'What Is a Good NWEA MAP Score? Grade-by-Grade Guide' },
+            { href: '/blog/nwea-map-score-dropped', tag: 'Troubleshooting', title: 'Why Did My Child\'s MAP Score Drop?' },
+            { href: '/blog/how-to-improve-map-reading-score', tag: 'Reading', title: 'How to Improve Your Child\'s MAP Reading Score' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
