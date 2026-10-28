@@ -42,6 +42,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/blog/grammar-school-entry-requirements-2026",
     f"{BASE_URL}/blog/gifted-program-testing-guide",
     f"{BASE_URL}/blog/nwea-map-scores-explained",
+    f"{BASE_URL}/blog/what-is-a-good-nwea-map-score",
+    f"{BASE_URL}/blog/nwea-map-growth-norms",
     f"{BASE_URL}/blog/nwea-map-score-dropped",
     f"{BASE_URL}/blog/how-to-improve-map-reading-score",
     f"{BASE_URL}/blog/how-to-improve-map-math-score",
