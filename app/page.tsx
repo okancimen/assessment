@@ -345,12 +345,12 @@ export default function LandingPage() {
                 <span>·</span>
                 <span>Free</span>
               </div>
-              <a
-                href="https://eduentry.ai/en"
+              <Link
+                href="/internship/register"
                 className="bg-[#1d1d1f] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#2d2d2f] transition-colors text-center"
               >
-                Learn about the programme
-              </a>
+                Apply free — ~20 minutes
+              </Link>
               <Link href="#internship" aria-label="Learn more about Internship Assessment" className="text-center text-xs text-[#4F46E5] hover:text-[#4338CA] transition-colors mt-4 py-4 block">
                 Learn more ↓
               </Link>

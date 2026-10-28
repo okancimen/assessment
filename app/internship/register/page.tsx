@@ -68,7 +68,8 @@ function RegisterForm() {
       sessionStorage.setItem('intern_dob', form.date_of_birth)
       sessionStorage.setItem('intern_name', form.full_name)
       void fetch('/api/user/update-location', { method: 'POST' })
-      router.push('/internship/apply')
+      const qp = new URLSearchParams({ dob: form.date_of_birth, name: form.full_name })
+      router.push(`/internship/apply?${qp.toString()}`)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong')
     } finally {
@@ -96,7 +97,9 @@ function RegisterForm() {
       sessionStorage.setItem('intern_name', form.full_name)
       if (form.parent_email) sessionStorage.setItem('intern_parent_email', form.parent_email)
       void fetch('/api/user/update-location', { method: 'POST' })
-      router.push('/internship/apply')
+      const qp = new URLSearchParams({ dob: form.date_of_birth, name: form.full_name })
+      if (form.parent_email) qp.set('parent_email', form.parent_email)
+      router.push(`/internship/apply?${qp.toString()}`)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Registration failed')
     } finally {

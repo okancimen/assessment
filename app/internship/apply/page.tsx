@@ -43,9 +43,10 @@ export default function InternshipApplyPage() {
   const needsConsent = age !== null && age < 16
 
   useEffect(() => {
-    const storedDob = sessionStorage.getItem('intern_dob')
-    const storedName = sessionStorage.getItem('intern_name')
-    const storedParent = sessionStorage.getItem('intern_parent_email')
+    const params = new URLSearchParams(window.location.search)
+    const storedDob = params.get('dob') || sessionStorage.getItem('intern_dob')
+    const storedName = params.get('name') || sessionStorage.getItem('intern_name')
+    const storedParent = params.get('parent_email') || sessionStorage.getItem('intern_parent_email')
     if (storedDob) setDob(storedDob)
     if (storedName) setFullName(storedName)
     if (storedParent) setParentEmail(storedParent)

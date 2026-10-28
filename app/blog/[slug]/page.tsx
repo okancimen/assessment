@@ -314,6 +314,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         )}
 
+        <div className="my-8 rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row items-center gap-4 justify-between not-prose">
+          <div>
+            <p className="text-white font-bold text-lg mb-1">See how your child compares internationally</p>
+            <p className="text-indigo-200 text-sm">Free adaptive assessment · no account needed · results in ~10 min</p>
+          </div>
+          <CtaLink href="/academic-assessment" label={`blog_mid_cta_${slug}`} className="shrink-0 bg-white text-indigo-600 font-semibold px-5 py-2.5 rounded-xl hover:bg-indigo-50 transition-colors text-sm whitespace-nowrap">
+            Start free assessment →
+          </CtaLink>
+        </div>
+
         <article className="prose prose-gray max-w-none space-y-12">
           {getBlogContent(slug)}
         </article>

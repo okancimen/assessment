@@ -67,8 +67,10 @@ function ScoreRing({ score, size = 56 }: { score: number; size?: number }) {
   )
 }
 
-export default async function ChildPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function ChildPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams?: Promise<{ just_added?: string }> }) {
   const { id } = await params
+  const sp = await searchParams
+  const justAdded = sp?.just_added === '1'
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/auth/login')
@@ -134,6 +136,16 @@ export default async function ChildPage({ params }: { params: Promise<{ id: stri
             ← Back to dashboard
           </Link>
         </div>
+
+        {justAdded && (
+          <div className="bg-indigo-50 border border-indigo-200 rounded-2xl px-5 py-4 flex items-center justify-between gap-4">
+            <div>
+              <p className="text-sm font-semibold text-indigo-800">{child.name}&apos;s profile is ready</p>
+              <p className="text-xs text-indigo-600 mt-0.5">Start the free assessment below — no time pressure, progress is saved automatically.</p>
+            </div>
+            <span className="text-indigo-400 text-lg shrink-0">↓</span>
+          </div>
+        )}
 
         {/* Child header */}
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6 flex items-center justify-between gap-4">

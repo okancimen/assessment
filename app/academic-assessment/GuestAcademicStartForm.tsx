@@ -132,9 +132,9 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
           onChange={(e) => setAge(e.target.value)}
           required
           min={6}
-          max={20}
+          max={17}
           placeholder={s.agePlaceholder}
-          toolparamdescription="The child's age in years (6 to 20)"
+          toolparamdescription="The child's age in years (6 to 17)"
           className="w-20 flex-shrink-0 px-4 py-3 rounded-xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-white"
         />
       </div>

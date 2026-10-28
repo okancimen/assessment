@@ -312,15 +312,16 @@ export default function AddChildPage() {
         }),
       })
 
+      const data = await res.json().catch(() => ({}))
       if (!res.ok) {
-        const data = await res.json().catch(() => ({}))
         setError(data.error || 'Something went wrong. Please try again.')
         setLoading(false)
         return
       }
 
       trackEvent('add_child')
-      router.push(`${dashHref}?success=child-added`)
+      const localePfx = locale === 'en' ? '' : `/${locale}`
+      router.push(`${localePfx}/children/${data.id}?just_added=1`)
     } catch {
       setError('Network error. Please check your connection and try again.')
       setLoading(false)

@@ -246,7 +246,7 @@ export default async function PersonalityAssessmentPage({
             An AI-powered, scientifically backed character assessment tailored perfectly to your child&apos;s developmental age.
           </p>
           <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73] mb-6">
-            {['Free · no account needed', '~5 minutes', 'Instant personalised report', 'Ages 6–20'].map((t) => (
+            {['You rate · child doesn\'t sit a test', 'Free · no account needed', '~5 minutes', 'Ages 6–20'].map((t) => (
               <span key={t} className="flex items-center gap-1">
                 <svg className="w-3 h-3 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                 {t}
