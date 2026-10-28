@@ -35,7 +35,7 @@ export const GRAMMAR_AREAS: GrammarArea[] = [
     description: "Kent has more grammar schools than any other county in England — 32 selective schools across Maidstone, Tonbridge, Tunbridge Wells, Folkestone, Canterbury, and Medway. The county's 11+ is taken in September of Year 6, and results are released before the secondary school application deadline.",
     keyFact: 'The most grammar schools in England — 32 selective schools.',
     metaTitle: 'Kent Grammar Schools 2026: SAS 115–121 & 11+ Guide',
-    metaDescription: 'What SAS score does your child need for a Kent grammar school? The 115–121 target range, the most competitive schools, deadlines and Kent 11+ prep.',
+    metaDescription: 'Kent has 32 grammar schools — the most in England. Target SAS 115–121; most competitive are Tonbridge, Maidstone and Judd. GL Assessment. 11+ in September Year 6, registration opens May Year 5.',
     registrationNote: 'Registration typically opens in May of Year 5 and closes in June. The 11+ is held in September of Year 6.',
   },
   {
@@ -76,7 +76,7 @@ export const GRAMMAR_AREAS: GrammarArea[] = [
     description: "Birmingham's grammar school landscape is dominated by the King Edward's Foundation, which operates some of the most academically selective schools in England. The Foundation schools set their own entrance papers rather than using GL Assessment or CEM, and the standard is significantly above the national curriculum. The independent KES schools require separate registration.",
     keyFact: 'King Edward\'s Foundation schools are among the most competitive in England.',
     metaTitle: 'Birmingham Grammar Schools 2026: KES SAS 119+ Guide',
-    metaDescription: "King Edward's Foundation schools in Birmingham: school-set English and Maths papers, SAS 119+ target, entry timeline and how to prepare.",
+    metaDescription: "King Edward's Foundation schools Birmingham: school-set English and Maths (not GL/CEM), SAS 119+ for KES and KEHSG. Entry timeline, application tips and what to expect on the day.",
     registrationNote: 'Registration for KE Foundation schools opens in September of Year 5. Entrance exams are held in November.',
   },
   {
@@ -197,7 +197,7 @@ export const GRAMMAR_AREAS: GrammarArea[] = [
     description: "Berkshire's grammar schools are concentrated in the Slough area and are among the most diverse selective schools in England, reflecting the area's multicultural population. All four schools use GL Assessment papers and admit students from a wide catchment. Competition is strong, with schools typically oversubscribed, and distance from home to school is a significant tie-breaker.",
     keyFact: 'Among the most ethnically diverse grammar schools in England — competition is strong.',
     metaTitle: 'Berkshire & Slough Grammar Schools 2026: SAS 114–120',
-    metaDescription: "Berkshire and Slough grammar schools — Upton Court, Langley, Herschel, St Bernard's. SAS 114–120 targets and how to prepare for the 11+.",
+    metaDescription: "Berkshire and Slough grammar schools: Upton Court, Langley, Herschel, St Bernard's. GL Assessment SAS 114–120 targets, registration deadlines and 11+ preparation guide for Slough grammar entry.",
     registrationNote: 'Registration typically opens in April/May of Year 5. The 11+ is held in September of Year 6.',
   },
   {
@@ -217,7 +217,7 @@ export const GRAMMAR_AREAS: GrammarArea[] = [
     description: "Trafford's five grammar schools are the only selective state schools in Greater Manchester and attract applications from across the region, including Cheshire, Stockport, and central Manchester. Altrincham Grammar for Boys and Altrincham Grammar for Girls are consistently ranked among the top state schools in the North of England. The Trafford 11+ is held in September of Year 6 and is administered jointly by the Trafford Consortium.",
     keyFact: 'The only grammar schools in Greater Manchester — Altrincham Boys and Girls are ranked top state schools in the North.',
     metaTitle: 'Trafford Grammar Schools 2026: SAS 116–124 & 11+ Guide',
-    metaDescription: 'Trafford grammar schools — Altrincham Boys and Girls, Sale, Stretford, Urmston. GL Assessment SAS 116–124 target scores and preparation advice.',
+    metaDescription: 'The only grammar schools in Greater Manchester: Altrincham Boys (SAS 124+), Altrincham Girls, Sale, Stretford, Urmston. GL Assessment SAS 116–124. Consortium registration opens June Year 5.',
     registrationNote: 'Trafford Consortium registration opens in June of Year 5. The 11+ is held in September of Year 6.',
   },
   {

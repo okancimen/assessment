@@ -10,19 +10,19 @@ const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
   title: 'Grammar Schools in England 2026: 11+ SAS by Area',
-  description: 'What SAS score does your child need? 11+ score thresholds, catchment areas and 2026 entry requirements for Kent, Bucks, Birmingham, London and more.',
+  description: 'Kent (SAS 115–121), Bucks (118+), Barnet (121–132), Sutton (118–125) — entry requirements, registration deadlines and 11+ preparation guides for every grammar school area in England.',
   alternates: { canonical: `${BASE_URL}/grammar-schools`, languages: { 'en-GB': `${BASE_URL}/grammar-schools`, 'x-default': `${BASE_URL}/grammar-schools` } },
   keywords: ['grammar schools England', '11 plus entry requirements', 'grammar school score', 'SAS score grammar school', '11+ preparation', 'grammar school areas England', 'grammar school SAS threshold 2026'],
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     title: 'Grammar Schools in England 2026: 11+ SAS Score Thresholds by Area',
-    description: 'What SAS score does your child need? Score thresholds, catchment areas, and 11+ entry requirements for Kent, Bucks, Birmingham, Sutton, Hertfordshire and Essex.',
+    description: 'Kent (SAS 115–121), Bucks (118+), Barnet (121–132), Sutton (118–125) — entry requirements, registration deadlines and 11+ preparation guides for every grammar school area in England.',
     url: `${BASE_URL}/grammar-schools`,
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Grammar Schools in England 2026: 11+ SAS Score Thresholds by Area',
-    description: 'What SAS score does your child need? Score thresholds, catchment areas, and 11+ entry requirements for Kent, Bucks, Birmingham, Sutton, Hertfordshire and Essex.',
+    description: 'Kent (SAS 115–121), Bucks (118+), Barnet (121–132), Sutton (118–125) — entry requirements, registration deadlines and 11+ preparation guides for every grammar school area in England.',
     images: [`${BASE_URL}/grammar-schools/opengraph-image`],
   },
 }

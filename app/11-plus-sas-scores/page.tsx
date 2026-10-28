@@ -6,15 +6,15 @@ import PublicFooter from '@/components/layout/PublicFooter'
 const URL = 'https://eduentry.com/11-plus-sas-scores'
 
 export const metadata: Metadata = {
-  title: '11+ SAS Scores Explained 2026: What a Standardised Score Means',
+  title: '11+ SAS Scores Explained 2026: What 111, 115, 121 and 130 Actually Mean',
   description:
     'What is a standardised age score (SAS) in the 11+? How the mean-100 scale works, the SAS-to-percentile table, what score grammar schools need, and why scores differ between GL and CEM.',
   alternates: { canonical: URL },
   robots: { index: true, follow: true },
   openGraph: {
     url: URL,
-    title: '11+ SAS Scores Explained: What a Standardised Score Means',
-    description: 'How the mean-100 SAS scale works, SAS-to-percentile table, and what grammar schools typically require.',
+    title: '11+ SAS Scores Explained 2026: What 111, 115, 121 and 130 Actually Mean',
+    description: 'How the mean-100 SAS scale works, SAS-to-percentile table, what Kent/Bucks/London grammar schools require, and why scores differ between GL Assessment and CEM.',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
 }

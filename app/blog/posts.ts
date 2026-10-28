@@ -806,11 +806,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'singapore-gep-test-guide',
     title: 'Singapore GEP Selection: What It Tests, Who Gets In, and How to Prepare',
-    shortTitle: 'Singapore GEP Test Guide 2026',
+    shortTitle: 'Singapore GEP Selection 2026: Stage 1, Stage 2 (GAT) and How to Prepare',
     description:
-      'Singapore GEP selection explained: the two-stage process, what Stage 2\'s General Ability Test measures, the nine GEP centres, and what preparation actually helps.',
+      'Singapore GEP selects the top 1% of Primary 3 students. Stage 1 August (English + Maths), Stage 2 October (GAT — reasoning, not curriculum). Nine GEP centres, results November. What preparation actually helps.',
     tldr: 'GEP selects approximately 1% of the Primary 3 cohort (~1,000 students). Stage 1 (August, all P3 students): English Language and Mathematics. Stage 2 (October, top ~5%): EL and Maths at a higher level, plus the General Ability Test (GAT) — a curriculum-independent test of verbal, quantitative, and spatial reasoning. Results in November. The GAT is the key differentiator and cannot be prepared for through syllabus study alone; the best long-term preparation is broad intellectual enrichment.',
     date: '2026-10-20',
+    dateModified: '2026-10-28',
     readTime: '9 min read',
     tags: ['Singapore', 'GEP', 'Gifted Education', 'Assessment', 'Primary School'],
     faqs: [
@@ -1082,9 +1083,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'CogAT Score Guide 2026: SAS Chart, Gifted Cut-offs & What Your Results Mean',
     shortTitle: 'CogAT Scores Explained: SAS, Percentile & Stanine Guide 2026',
     description:
-      'CogAT SAS to percentile chart — gifted programmes typically require SAS 121+ (90th percentile). Covers stanine, battery breakdown and what your child\'s composite score means.',
+      'CogAT 2026: SAS mean is 100, gifted cut-off is typically SAS 121+ (90th percentile). SAS-to-percentile chart, stanine bands, Verbal/Quantitative/Nonverbal battery breakdown and how to read your child\'s full profile.',
     tldr: 'The CogAT (Cognitive Abilities Test) reports a Standard Age Score (SAS) with a mean of 100 and a standard deviation of 16. A SAS of 116 places a child at approximately the 84th percentile; 132 is the 98th percentile. Most gifted programs require the 90th percentile or above, which corresponds to a CogAT SAS of approximately 121. The test has three batteries — Verbal, Quantitative, and Nonverbal — and a child\'s composite profile matters as much as the overall score.',
     date: '2026-10-17',
+    dateModified: '2026-10-28',
     readTime: '10 min read',
     tags: ['CogAT', 'Gifted Testing', 'US Education', 'Gifted Programs', 'SAS Score', 'Cognitive Abilities Test'],
     faqs: [
@@ -1285,12 +1287,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'uae-cat4-test-guide',
     title: 'CAT4 Test Guide for UAE Parents: What the Test Measures and How Scores Work',
-    shortTitle: 'UAE CAT4 Test Guide 2026: SAS Bands Explained',
+    shortTitle: 'UAE CAT4 Test 2026: SAS Scores, Gifted Cut-offs & How to Interpret Results',
     description:
-      'CAT4 SAS bands and percentile thresholds for UAE British-curriculum schools — what score qualifies for gifted programmes and selective admissions in Dubai.',
+      'CAT4 for UAE schools: SAS mean 100, 115=84th %ile, 127=96th %ile. What score qualifies for gifted sets (typically 110+), how Dubai schools use CAT4 results, and how to interpret your child\'s report.',
     tldr: 'CAT4 (Cognitive Abilities Test 4) produces a Standardised Age Score (SAS) with mean 100 and SD 15. A score of 100 is average for age; 115 is the 84th percentile; 127 is the 96th percentile. UAE schools use CAT4 scores for setting, gifted identification, and in some cases admissions — a score of 110+ typically qualifies a student for advanced teaching sets.',
     date: '2026-06-17',
-    dateModified: '2026-09-23',
+    dateModified: '2026-10-28',
     readTime: '8 min read',
     tags: ['UAE', 'CAT4', 'Dubai', 'British Curriculum', 'Cognitive Testing'],
     faqs: [
@@ -1768,11 +1770,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'GATE Western Australia: How the Gifted and Talented Programme Works',
     shortTitle: 'Western Australia GATE Program 2026',
     description:
-      'Western Australia GATE testing 2026 — eligibility criteria, Year 4 and Year 7 entry, selective school score thresholds, and how the ability test is marked.',
+      'WA GATE 2026: Year 4 entry to specialist programs, Year 7 to Perth Modern (top 3–5% in ACER test). School nomination then ACER ability test — what it covers, score thresholds and how to prepare.',
     tldr: 'Western Australia GATE (Gifted and Talented Education) uses a two-stage selection process: school nomination followed by an ACER-administered test. Perth Modern School — the flagship full-time GATE school — is one of Australia most selective state schools, with entry typically requiring a GATE test score in the top 3–5%.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-23',
+    dateModified: '2026-10-28',
     readTime: '8 min read',
     tags: ['Australia', 'Western Australia', 'GATE', 'Gifted Education', 'Perth Modern'],
     faqs: [
@@ -2090,10 +2092,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     slug: 'nsw-opportunity-class-test-guide',
     title: 'NSW Opportunity Class Test: Complete Guide for Parents (2026)',
     shortTitle: 'NSW Opportunity Classes 2026: OC Test Guide',
-    description: 'NSW Opportunity Classes are enriched Year 5–6 programs in public schools. Covers OC test format, score cutoffs, how places are ranked and how to prepare.',
+    description: 'NSW OC test 2026: taken in Year 3, for enriched Year 5–6 classes across 75 public schools. Tests Thinking Skills + Reading. ~4,200 places ranked by merit score. Typical cutoffs and how to prepare.',
     tldr: 'NSW Opportunity Classes run from Year 5 in public primary schools across NSW. The entry test is taken in Year 3 and covers two components: Thinking Skills and Reading. Offers are made on an ordered merit score combining both. Approximately 4,200 places are available annually across around 75 public schools.',
     date: '2026-09-11',
-    dateModified: '2026-09-23',
+    dateModified: '2026-10-28',
     readTime: '11 min read',
     tags: ['NSW Education', 'OC Test', 'Selective Schools', 'Australia', 'Academic Assessment'],
     faqs: [
@@ -2296,10 +2298,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Understanding Your Child\'s Cognitive Strengths and Weaknesses Before Secondary School',
     shortTitle: 'Child Cognitive Strengths: Secondary School Preparation Guide',
     description:
-      'Identify your child\'s cognitive profile before secondary school — verbal reasoning, numerical aptitude, working memory, and spatial ability — to guide GCSE preparation and subject choices.',
+      'Map your child\'s cognitive profile before Year 7: verbal reasoning, numerical aptitude, working memory and spatial ability — so you can guide GCSE subject choices before they\'re locked in, not after.',
     tldr: 'School grades measure performance relative to classmates — they don\'t reveal a child\'s underlying cognitive profile. Identifying strengths and weaknesses across verbal reasoning, numerical aptitude, working memory, and spatial ability before high school gives parents and teachers a targeted roadmap, not a vague report card.',
     date: '2026-09-27',
-    dateModified: '2026-10-18',
+    dateModified: '2026-10-28',
     readTime: '12 min read',
     tags: ['Academic Assessment', 'Child Development', 'High School Preparation', 'Cognitive Profile'],
     faqs: [
@@ -3003,9 +3005,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'VIA Character Strengths for Children: All 24 Strengths Explained (Ages 6–20)',
     shortTitle: 'VIA Character Strengths for Children: All 24 Explained',
     description:
-      'The VIA framework identifies 24 universal character strengths. Learn what each one looks like in children, which six predict academic success, and how to spot and develop them at home.',
+      'All 24 VIA character strengths for ages 6–20: which 5 predict academic success (curiosity, perseverance, love of learning, self-regulation, zest), what each looks like in children, and how to develop them at home.',
     tldr: 'The VIA Classification of Character Strengths identifies 24 universally valued human strengths grouped into six virtues: Wisdom, Courage, Humanity, Justice, Temperance, and Transcendence. Every person has all 24 strengths in varying degrees — the top five are called Signature Strengths. For children, love of learning, curiosity, perseverance, self-regulation, and zest are most predictive of academic success. Identifying a child\'s Signature Strengths is the first step to building on them.',
     date: '2026-10-17',
+    dateModified: '2026-10-28',
     readTime: '12 min read',
     tags: ['Character Strengths', 'VIA Strengths', 'Child Development', 'Positive Psychology', 'Parent Guide', 'Personality Assessment', 'Wellbeing'],
     faqs: [

@@ -547,7 +547,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'staj-icin-cv-nasil-yazilir',
     title: 'Staj İçin CV Nasıl Yazılır: 16-18 Yaş Öğrencileri için Adım Adım Rehber',
     shortTitle: 'Staj İçin CV Nasıl Yazılır: Adım Adım Rehber',
-    description: 'Deneyimi olmayan 16–18 yaş öğrenciler için staj CV\'si: neler yazılır, nasıl düzenlenir, hangi hatalardan kaçınılır ve beceriler nasıl öne çıkarılır.',
+    description: 'Staj CV\'si (16–18 yaş): öğrenim, ilgili dersler, yetkinlikler, öğretmen referansı — tek sayfa yeterli. Deneyim olmadan hangi başlıklar kullanılır, sık yapılan 3 hata ve örnek şablon.',
     tldr: 'Staj başvurusu için hazırlanan CV şu bölümleri içermelidir: iletişim bilgileri, öğrenim (okul, sınıf, not ortalaması), ilgili dersler veya projeler, yetkinlikler (diller, yazılımlar) ve referans olarak gösterilebilecek öğretmenler. İş deneyimi olmayan lise öğrencileri için tek sayfalık bir CV en etkili format olmaya devam ediyor.',
 
     date: '2026-09-09',
@@ -661,13 +661,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'pisa-nedir-cocugunuz-nasil-hazirlanir',
     title: 'PISA Nedir, Pısa Ne Demek? 2025 Türkiye Sonuçları ve Hazırlık Rehberi',
-    shortTitle: 'PISA (Pısa) Nedir? 2026 Güncel: Açılımı, Türkiye Sonuçları ve Hazırlık',
+    shortTitle: 'PISA Nedir? 2026: Türkiye Sonuçları, Puan Tablosu ve Evde Hazırlık',
     description:
-      'PISA açılımı, 2025 Türkiye sonuçları (matematik 463, OECD 472) ve çocuğunuzu evde hazırlamanın 4 yolu. Seçilme süreci, puan tablosu, ülke sıralaması — veliler için.',
+      'PISA nedir? Her 3 yılda bir 91 ülkede uygulanan matematik, okuma ve fen sınavı. 2025 Türkiye: matematik 463 (OECD 472). 4 pratik hazırlık yolu ve ülke sıralama tablosu — ebeveynler için.',
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2025\'te okumada OECD ortalamasını yakaladı; matematikte 463 ile OECD ortalaması (472) yakınında yer aldı.',
 
     date: '2026-09-14',
-    dateModified: '2026-10-20',
+    dateModified: '2026-10-28',
     readTime: '13 dk okuma',
     tags: ['PISA', 'Uluslararası Kıyaslama', 'Akademik Değerlendirme', 'Ebeveyn Rehberi', 'LGS', 'YKS'],
     faqs: [
@@ -886,7 +886,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Staj Nasıl Bulunur? Üniversite Öğrencileri İçin Kariyer Rehberi 2026',
     shortTitle: 'Staj Nasıl Bulunur? Üniversite Öğrencisi Rehberi',
     description:
-      'Üniversite öğrencisi olarak staj nasıl bulunur? Kariyer ofisi, LinkedIn, Kariyer.net, Youthall — sektöre göre başvuru takvimi, doğrudan başvuru ve motivasyon mektubu rehberi.',
+      'Staj nasıl bulunur? Büyük firma yaz stajları için Eylül–Kasım başvuru dönemi. LinkedIn, Kariyer.net, Youthall ve doğrudan başvuru — sektöre göre takvim, motivasyon mektubu ve ilk görüşme rehberi.',
     tldr: 'Üniversite öğrencileri için staj bulmanın en verimli yolları: üniversite kariyer merkezi (kurumsal anlaşmalar aracılığıyla), LinkedIn Jobs, Kariyer.net, Youthall ve doğrudan şirket başvuruları. Büyük şirketlerin yaz stajları için başvurular sonbahar döneminde (Eylül–Kasım) açılır; rekabetçi pozisyonlar için en az 6 ay öncesinden planlamak gerekir.',
 
     date: '2026-09-15',
@@ -936,11 +936,11 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'PISA 2025 ve Kariyer: Türkiye Kaçıncı? PISA 2026 Var Mı?',
     shortTitle: 'PISA 2026 Var Mı? 2025 Sonuçları ve Kariyer',
     description:
-      'PISA 2025: Türkiye matematik 463, OECD 472. PISA 2026 diye bir sınav yok — sıradaki PISA 2028. Asıl soru: PISA puanları gerçekten çocuğun kariyerini etkiliyor mu?',
+      'PISA 2026 diye bir sınav yok — sıradaki PISA 2028. 2025 Türkiye: matematik 463 (OECD 472), okuma OECD ortalamasında. PISA\'nın ölçtüğü beceriler çocuğun kariyerini etkiliyor mu? Veriye dayalı yanıt.',
     tldr: 'PISA, OECD\'nin her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uyguladığı bir değerlendirme programıdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan civarındadır. PISA\'nın ölçtüğü beceriler — sayısal muhakeme, okuduğunu anlama ve problem çözme — günümüz iş dünyasının en çok aradığı yetkinliklerle örtüşüyor.',
 
     date: '2026-09-21',
-    dateModified: '2026-10-20',
+    dateModified: '2026-10-28',
     readTime: '11 dk okuma',
     tags: ['PISA', 'Kariyer Gelişimi', 'Akademik Değerlendirme', 'Staj', 'Ebeveyn Rehberi'],
     faqs: [
@@ -1003,11 +1003,11 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Yurtdışı Staj 2026: Erasmus+, AIESEC, IAESTE — Türk Öğrenciler İçin Tam Rehber',
     shortTitle: 'Yurtdışı Staj 2026: Erasmus+, AIESEC, IAESTE ve Başvuru Rehberi',
     description:
-      'Yurtdışı staj 2026: Erasmus+ hibeleri, AIESEC, IAESTE — lise ve üniversite öğrencileri için başvuru şartları, gerekli belgeler ve adım adım rehber.',
+      'Yurtdışı staj 2026: Erasmus+ (Avrupa hibeleri), AIESEC (küresel değişim), IAESTE (fen-mühendislik). Başvurular 6–12 ay öncesinden yapılır — lise ve üniversite öğrencileri için şartlar ve takvim.',
     tldr: 'Yurtdışı staj için başlıca fırsatlar: AIESEC (öğrenci liderliğinde küresel staj değişimi), Erasmus+ (Avrupa çalışma yerleştirme hibeleri), IAESTE (fen ve mühendislikte uluslararası değişim), Microsoft TEALS, Google STEP ve Amazon Future Engineer gibi çok uluslu şirket programları. Başvurular genellikle 6–12 ay öncesinden yapılır.',
 
     date: '2026-09-21',
-    dateModified: '2026-10-20',
+    dateModified: '2026-10-28',
     readTime: '11 dk okuma',
     tags: ['Yurtdışı Staj', 'Uluslararası Staj', 'Erasmus', 'Staj Başvurusu', 'Yurt Dışında Staj', 'Kariyer Gelişimi', 'Uluslararası Staj Programı'],
     faqs: [
@@ -1264,10 +1264,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'discover-child-strengths-free-academic-test',
     title: 'Çocuğunuzun Güçlü Yönleri: Ücretsiz Akademik Test — 1 Saatte Sonuç',
     shortTitle: 'Ücretsiz Akademik Test: Güçlü ve Zayıf Yönler',
-    description: 'Karne notları potansiyeli göstermez. Adaptif test sözel, sayısal ve görsel-uzamsal zekayı ayrı ayrı ölçer; uluslararası yüzdelik dilim raporu verir. 6–16 yaş, ücretsiz.',
+    description: 'Ücretsiz adaptif test: sözel, sayısal ve görsel-uzamsal zekayı ayrı ayrı ölçer — 1 saatte uluslararası yüzdelik dilim raporu. Karne notları potansiyeli göstermez; bu test gösterir. 6–16 yaş.',
     tldr: 'Sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünmeyi bağımsız olarak ölçen ücretsiz adaptif test — bir saat içinde uluslararası yüzdelik dilim raporu. CAT ve IRT metodolojisiyle, CAT4 ve NWEA MAP ile aynı bilimsel temel.',
     date: '2026-10-01',
-    dateModified: '2026-10-20',
+    dateModified: '2026-10-28',
     readTime: '10 dk okuma',
     tags: ['Ücretsiz Akademik Test', 'Çocuk Güçlü Yönleri', 'Çocuk Zayıf Yönleri', 'Bilişsel Değerlendirme', 'Adaptif Test', 'Veli Rehberi', 'Çocuk Gelişimi'],
     faqs: [
