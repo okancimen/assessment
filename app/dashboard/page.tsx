@@ -196,6 +196,7 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
   ].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()).slice(0, 20)
 
   const hasAssessments = recentItems.length > 0
+  const hasNoAcademicStart = hasChildren && Object.keys(latestAcademicStatus).length === 0
 
   const firstName = (profile?.full_name || user.user_metadata?.full_name)?.split(' ')[0] || ''
 
@@ -220,6 +221,26 @@ export default async function DashboardPage({ locale }: { locale?: string } = {}
             {t.addChild}
           </Link>
         </div>
+
+        {/* Next-step nudge for users with children but no academic assessments yet */}
+        {hasNoAcademicStart && children && children.length > 0 && (
+          <div className="rounded-2xl border p-5 flex items-center justify-between gap-4" style={{ backgroundColor: '#EEF2FF', borderColor: '#C7D2FE' }}>
+            <div>
+              <p className="text-sm font-semibold" style={{ color: '#1E293B' }}>
+                Start {(children as Child[])[0].name}&apos;s assessment
+              </p>
+              <p className="text-xs mt-0.5" style={{ color: '#4F46E5' }}>
+                Free · no time pressure · results in ~10 min
+              </p>
+            </div>
+            <Link
+              href={`/children/${(children as Child[])[0].id}`}
+              className="shrink-0 bg-[#4F46E5] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#4338CA] transition-colors whitespace-nowrap"
+            >
+              Start now →
+            </Link>
+          </div>
+        )}
 
         {/* Children + assessment clusters */}
         {!hasChildren ? (

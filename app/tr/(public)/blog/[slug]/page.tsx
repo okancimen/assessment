@@ -188,6 +188,16 @@ export default async function TRBlogPostPage({ params }: { params: Promise<{ slu
         </div>
       )}
 
+      <div className="my-8 rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row items-center gap-4 justify-between not-prose">
+        <div>
+          <p className="text-white font-bold text-lg mb-1">Çocuğunuzun uluslararası standartlarda nerede olduğunu görün</p>
+          <p className="text-indigo-200 text-sm">Ücretsiz adaptif değerlendirme · hesap gerekmez · ~10 dakika</p>
+        </div>
+        <CtaLink href="/tr/akademik-degerlendirme" label={`tr_blog_mid_cta_${slug}`} className="shrink-0 bg-white text-indigo-600 font-semibold px-5 py-2.5 rounded-xl hover:bg-indigo-50 transition-colors text-sm whitespace-nowrap">
+          Ücretsiz değerlendirmeyi başlat →
+        </CtaLink>
+      </div>
+
       <article className="prose prose-gray max-w-none space-y-12">
         {getTurkishBlogContent(post.contentSlug ?? slug)}
       </article>

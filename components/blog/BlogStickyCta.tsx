@@ -19,7 +19,7 @@ export default function BlogStickyCta({
   const [dismissed, setDismissed] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setShow(window.scrollY > 900)
+    const onScroll = () => setShow(window.scrollY > 400)
     window.addEventListener('scroll', onScroll, { passive: true })
     onScroll()
     return () => window.removeEventListener('scroll', onScroll)
