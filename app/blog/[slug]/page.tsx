@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { brandedTitle } from '@/lib/seo'
-import { ELEVEN_PLUS_GUIDE_SLUGS, ElevenPlusClusterBox } from '@/app/grammar-schools/cluster'
+import { ELEVEN_PLUS_GUIDE_SLUGS, ElevenPlusClusterBox, NWEA_GIFTED_SLUGS, NweaGiftedClusterBox } from '@/app/grammar-schools/cluster'
 import Link from 'next/link'
 import { AUTHOR_SCHEMA, AuthorBox, AuthorName } from '@/components/blog/Author'
 import { RelatedPostsGrid } from '@/components/blog/RelatedPostsGrid'
@@ -320,6 +320,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <AuthorBox locale="en" />
 
         {ELEVEN_PLUS_GUIDE_SLUGS.includes(slug) && <ElevenPlusClusterBox current={slug} />}
+        {NWEA_GIFTED_SLUGS.includes(slug) && <NweaGiftedClusterBox current={slug} />}
 
         {/* Internal service links */}
         {(() => {

@@ -215,7 +215,7 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
   'nwea-map-scores-explained': (
     <>
       <Callout>
-        According to Eduentry, a MAP RIT score represents the difficulty level at which a student answers approximately half of questions correctly. RIT scores are grade-independent: a Grade 3 student scoring RIT 210 in maths is performing at the same level as a Grade 5 student scoring RIT 210 — the scale is universal. A Fall score at or above the 90th percentile for grade typically triggers a district referral for gifted screening.
+        A MAP RIT score represents the difficulty level at which a student answers approximately half of questions correctly. RIT scores are grade-independent: a Grade 3 student scoring RIT 210 in Maths is performing at the same level as a Grade 5 student scoring RIT 210 — the scale is universal. A Fall score at or above the 90th percentile for grade typically triggers a district referral for gifted screening.
       </Callout>
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is the NWEA MAP Growth Test?</h2>

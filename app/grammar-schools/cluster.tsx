@@ -4,6 +4,7 @@ import { GRAMMAR_AREAS } from './data'
 
 // The 11+ / grammar school topic cluster: the hub, the area pages and these guides all link to each other
 export const ELEVEN_PLUS_GUIDE_SLUGS = [
+  'what-is-the-11-plus-exam-complete-guide',
   'free-11-plus-practice-test-online',
   'how-to-prepare-for-11-plus',
   'grammar-school-entry-requirements-2026',
@@ -61,6 +62,39 @@ export function ElevenPlusClusterBox({ current }: { current: string }) {
       <div className="mb-6"><GrammarAreaLinks /></div>
       <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">More 11+ guides</h3>
       <ElevenPlusGuideLinks exclude={current} />
+    </section>
+  )
+}
+
+export const NWEA_GIFTED_SLUGS = [
+  'nwea-map-scores-explained',
+  'what-is-a-good-nwea-map-score',
+  'nwea-map-growth-norms',
+  'gifted-program-testing-guide',
+  'cogat-scores-explained',
+  'how-to-prepare-gifted-test',
+]
+
+const NWEA_GIFTED_GUIDES = NWEA_GIFTED_SLUGS
+  .map(slug => BLOG_POSTS.find(p => p.slug === slug))
+  .filter(p => p !== undefined)
+
+export function NweaGiftedClusterBox({ current }: { current: string }) {
+  return (
+    <section className="mt-12 border border-gray-100 rounded-2xl p-6 bg-gray-50/50">
+      <h2 className="text-lg font-bold text-gray-900 mb-1">NWEA MAP scores and US gifted testing: complete guide</h2>
+      <p className="text-sm text-gray-600 mb-5">
+        Start with the <Link href="/blog/nwea-map-scores-explained" className="text-indigo-600 underline">MAP scores by grade guide</Link> or use
+        the <Link href="/tools/nwea-rit-calculator" className="text-indigo-600 underline">free RIT-to-percentile calculator</Link>.
+      </p>
+      <div className="grid sm:grid-cols-2 gap-3">
+        {NWEA_GIFTED_GUIDES.filter(p => p.slug !== current).map(p => (
+          <Link key={p.slug} href={`/blog/${p.slug}`} className="border border-gray-100 rounded-xl p-4 hover:border-indigo-200 transition-colors">
+            <div className="text-xs font-semibold text-indigo-600 mb-1">Guide</div>
+            <div className="font-semibold text-gray-900 text-sm leading-snug">{p.shortTitle}</div>
+          </Link>
+        ))}
+      </div>
     </section>
   )
 }

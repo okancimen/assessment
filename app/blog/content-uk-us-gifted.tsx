@@ -144,7 +144,7 @@ export const UK_CONTENT_US_GIFTED: Record<string, React.ReactNode> = {
           {[
             { href: '/blog/nwea-map-scores-explained', tag: 'Assessment', title: 'NWEA MAP Scores Explained: What RIT Scores Mean and How to Interpret Your Child\'s Results' },
             { href: '/blog/how-to-prepare-gifted-test', tag: 'Guide', title: 'How to Prepare Your Child for a Gifted Test: A Practical Guide for US Families' },
-            { href: '/blog/what-is-a-standardised-score', tag: 'Guide', title: 'What Is a Standardised Score? A Clear Guide for Parents' },
+            { href: '/blog/what-is-a-good-nwea-map-score', tag: 'Reference', title: 'What Is a Good NWEA MAP Score? Grade-by-Grade Bands for Math and Reading' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
