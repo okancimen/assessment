@@ -380,10 +380,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'How to Prepare for the 11+ at Home: A Complete Parent\'s Guide',
     shortTitle: 'How to Prepare for the 11+ at Home',
     description:
-      'Parent guide to preparing for the 11+ at home — verbal and non-verbal reasoning, maths and English, with a recommended 18-month practice timeline.',
+      'How to prepare for the 11+ at home: 18-month timeline, which skills to build first (VR and NVR), GL vs CEM test differences, and the 3 practice mistakes that stall most children.',
     tldr: 'Most families begin 11+ preparation 12–18 months before the exam, which is typically taken in September or October of Year 6. Effective preparation is 3–4 hours per week in the early phase (Year 4–5), rising to 5–7 hours per week in the final 3 months — spread across 20–30 minute daily sessions. The four subjects tested are English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning.',
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-10-28',
     readTime: '8 min read',
     tags: ['11+', 'Grammar Schools', 'Preparation', 'Parent Guide'],
     faqs: [
@@ -569,11 +569,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Grammar School Entry Requirements 2026: Scores, Percentiles and How to Qualify',
     shortTitle: 'Grammar School Entry Requirements 2026',
     description:
-      'Grammar school entry requirements for 2026 — SAS thresholds, percentile benchmarks and entry criteria across England\'s key grammar school areas.',
+      'Grammar school entry 2026: SAS thresholds by area (Kent 111, Bucks 118, London 121–132), GL vs CEM differences, and what percentile rank means for your child\'s chances of an offer.',
     tldr: 'According to admissions data from GL Assessment (used in Kent, Essex and Hertfordshire) and CEM (used in Buckinghamshire), the 11+ pass mark is approximately SAS 111–113 in Kent and Essex, and SAS 118 in Buckinghamshire. The most competitive London schools in Barnet and Sutton require SAS 121–132 — and even children scoring 125 may not receive an offer if higher-scoring applicants living closer fill available places first.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-23',
+    dateModified: '2026-10-28',
     readTime: '7 min read',
     tags: ['Grammar Schools', '11+', 'Entry Requirements', '2026'],
     faqs: [
@@ -640,10 +640,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Gifted Program Testing Guide: How US Gifted Identification Works and How to Prepare',
     shortTitle: 'US Gifted Testing 2026: CogAT, WISC-V & Score Thresholds',
     description:
-      'US gifted program identification: CogAT, WISC-V, NWEA MAP, and OLSAT explained, with score thresholds by program type and a practical preparation guide.',
+      'US gifted programs: enrichment typically requires CogAT SAS 121+ (90th %ile); formal ID uses WISC-V IQ 130+. What each test measures, NYC G&T thresholds, and how to prepare your child.',
     tldr: 'According to the National Association for Gifted Children (NAGC), most US gifted programs require an IQ of 130 or above (98th+ percentile) for formal identification. New York City\'s Gifted & Talented programme has historically required the 99th percentile. Pull-out enrichment programmes typically accept the 90th–95th percentile. The most widely used group screening test is the CogAT; the standard individual IQ test is the WISC-V.',
     date: '2026-06-17',
-    dateModified: '2026-09-24',
+    dateModified: '2026-10-28',
     readTime: '9 min read',
     tags: ['Gifted Testing', 'CogAT', 'WISC', 'US Education', 'Gifted Programs'],
     faqs: [
@@ -700,11 +700,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'NWEA MAP Scores by Grade Level 2026: RIT Charts, Averages & Gifted Cut-offs',
     shortTitle: 'NWEA MAP RIT Scores by Grade Level 2026: Charts & Benchmarks',
     description:
-      'Average MAP RIT scores for every grade (K–12) in 2025–26 — reading, math and science benchmarks, gifted programme cut-offs, and percentile chart.',
+      '2025–26 MAP RIT averages by grade: Grade 3 Math = 200, Grade 8 = 221, gifted cut-off (95th %ile) ≈ RIT 230+. Complete K–12 charts for Math and Reading, plus a free percentile lookup.',
     tldr: 'According to NWEA\'s 2020 national norming study — the current benchmark for 2025–26 — the national average MAP Math RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
-    dateModified: '2026-10-14',
+    dateModified: '2026-10-28',
     readTime: '10 min read',
     tags: ['NWEA MAP', 'RIT Scores', 'US Education', 'Gifted Programs', 'Assessment'],
     faqs: [
@@ -1568,11 +1568,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Ontario Gifted Testing Guide: IPRC, WISC-V and How the Identification Process Works',
     shortTitle: 'Ontario Gifted Testing 2026: IQ Score Requirements',
     description:
-      'Ontario Gifted identification: WISC-V assessment, IPRC committee, CCAT screening, self-contained Gifted classes, and parent rights under the Education Act.',
+      'How Ontario\'s gifted identification works: WISC-V IQ 130+ threshold, IPRC committee process, CCAT screening, self-contained Gifted class placement, and your rights under the Education Act.',
     tldr: 'Under Ontario\'s Education Act, gifted identification uses the WISC-V (individual IQ test) or CCAT (group screening) and requires a Full Scale IQ of 130 or above (98th percentile). The IPRC (Identification, Placement, and Review Committee) formally designates students as Exceptional — Gifted, unlocking placement in a self-contained Gifted class.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-23',
+    dateModified: '2026-10-28',
     readTime: '8 min read',
     tags: ['Canada', 'Ontario', 'Gifted', 'IPRC', 'WISC-V'],
     faqs: [
@@ -1687,11 +1687,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'ACER Scholarship Exam Guide: How It Works, Scores and How to Prepare',
     shortTitle: 'ACER Scholarship Exam: Guide for Parents',
     description:
-      'A guide to the ACER Scholarship Exam — how this widely used Australian independent school entrance test works, how scores are reported, and how to prepare.',
+      'ACER Scholarship Exam 2026: tests written expression, humanities and maths for Years 8–10 entry at most Australian independent schools. School-specific scores explained and how to prepare.',
     tldr: 'The ACER Scholarship Exam is used by most Australian independent schools to award merit scholarships and assess academic admissions. It tests written expression, humanities, and mathematics for Years 8–10 entry. Scores are school-specific rather than nationally standardised — each school sets its own scholarship threshold independently.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-10-28',
     readTime: '9 min read',
     tags: ['Australia', 'ACER', 'Scholarship Exam', 'Private Schools', 'Independent Schools'],
     faqs: [
@@ -1805,11 +1805,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'NAPLAN 2026: Complete Guide for Parents — How Scores Work and What to Do With Results',
     shortTitle: 'NAPLAN 2026: Complete Parent Guide (Years 3–9)',
     description:
-      'A parent\'s guide to NAPLAN, Australia\'s literacy and numeracy test for Years 3, 5, 7 and 9: how band scoring works and what results mean.',
+      'NAPLAN 2026 proficiency levels explained: Exceeding, Strong, Developing, Needs Support — how to read your child\'s results against the national median, and when to act.',
     tldr: 'NAPLAN is taken by all Australian students in Years 3, 5, 7, and 9 and results are reported on a four-level proficiency scale: Exceeding, Strong, Developing, and Needs Additional Support. NAPLAN measures curriculum standards, not IQ or cognitive ability — it does not directly predict selective school entry or gifted programme eligibility.',
 
     date: '2026-06-18',
-    dateModified: '2026-09-10',
+    dateModified: '2026-10-28',
     readTime: '7 min read',
     tags: ['Australia', 'NAPLAN', 'Standardised Testing', 'Parent Guide', 'Literacy', 'Numeracy', 'National Assessment'],
     faqs: [
@@ -2681,10 +2681,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'How to Find an Internship as a Student: The Complete Guide',
     shortTitle: 'How to Find an Internship as a Student',
     description:
-      'How high school and university students can find an internship with no experience — using an adaptive readiness assessment to build a talent profile.',
+      'How to find a student internship with no experience: which platforms work, when to apply (Sept–Nov for large firms), how to write a cold email, and what to put on a blank CV.',
     tldr: 'Students with prior internship experience receive job offers at a 70% higher rate before graduation (NACE, 2020). The biggest barrier is the experience paradox — you need experience to get experience. An adaptive internship readiness assessment gives you a verifiable talent profile that lets employers see your potential before you have a track record.',
     date: '2026-10-01',
-    dateModified: '2026-10-01',
+    dateModified: '2026-10-28',
     readTime: '8 min read',
     tags: ['Student Internship', 'How to Find Internship', 'Internship Readiness', 'High School Internship', 'No Experience Internship', 'Internship Tips', 'Adaptive Assessment', 'Career Development'],
     faqs: [
@@ -2967,10 +2967,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'What Is the 11+ Exam? The Complete Parent\'s Guide to Grammar School Entry',
     shortTitle: '11+ Exam Explained 2026: Scoring, SAS & Grammar School Entry',
     description:
-      'The complete parent\'s guide to the 11+ exam: what it tests, how scoring works, the 3 biggest preparation mistakes, and how to find your child\'s real level.',
+      'The 11+ tests reasoning ability, not curriculum knowledge. How SAS scoring works, GL vs CEM formats, the 3 biggest prep mistakes, and how to benchmark accurately before spending on tutors.',
     tldr: 'The 11+ tests English, Maths, Verbal Reasoning, and Non-Verbal Reasoning — but it measures reasoning ability, not curriculum knowledge. School grades are a poor predictor of 11+ performance. The three biggest preparation mistakes are drilling without a baseline, interpreting raw percentage marks, and creating early exam anxiety. The most accurate way to benchmark your child\'s real 11+ level is a 2PL IRT adaptive assessment — the same psychometric method used by PISA and GCSE.',
     date: '2026-10-07',
-    dateModified: '2026-10-07',
+    dateModified: '2026-10-28',
     readTime: '12 min read',
     tags: ['11+', 'Grammar Schools', 'UK Education', 'Academic Assessment', 'Parent Guide', 'Exam Preparation'],
     faqs: [
