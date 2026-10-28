@@ -2037,6 +2037,81 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">CV Şablonu: Hazır Yapı</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Aşağıdaki şablon, iş deneyimi olmayan 16–18 yaş öğrencileri için doğrudan kopyalanabilir bir yapı sunuyor. Her bölüm için gerçek içerik örnekleri dahil edilmiştir.
+        </p>
+        <div className="border border-gray-200 rounded-xl overflow-hidden mb-6">
+          <div className="bg-gray-50 px-4 py-2 border-b border-gray-200">
+            <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Örnek CV — 16–18 Yaş Lise Öğrencisi</span>
+          </div>
+          <div className="p-6 font-mono text-sm space-y-4 text-gray-800">
+            <div>
+              <div className="font-bold text-base">AYŞE YILMAZ</div>
+              <div className="text-gray-500 text-xs mt-0.5">ayse.yilmaz@gmail.com · +90 532 000 00 00 · linkedin.com/in/ayseyilmaz</div>
+            </div>
+            <div>
+              <div className="font-semibold border-b border-gray-200 pb-1 mb-2 uppercase text-xs tracking-wider text-gray-500">Kişisel Beyan</div>
+              <div className="text-gray-700 text-xs leading-relaxed">Ankara Fen Lisesi 11. sınıf öğrencisiyim. Python ve veri analitiği üzerine okul projeleri yaptım; kulüp çalışmalarımda 15 arkadaşıma temel kodlama öğrettim. Teknoloji veya finans alanında 2–4 haftalık gözlemci staj arıyorum.</div>
+            </div>
+            <div>
+              <div className="font-semibold border-b border-gray-200 pb-1 mb-2 uppercase text-xs tracking-wider text-gray-500">Eğitim</div>
+              <div className="text-gray-700 text-xs">Ankara Fen Lisesi, 2023–devam · 11. Sınıf · Not ort: 4.8/5.0</div>
+              <div className="text-gray-500 text-xs mt-1">İlgili dersler: Matematik, Bilişim Teknolojileri, Fizik, İngilizce (C1)</div>
+            </div>
+            <div>
+              <div className="font-semibold border-b border-gray-200 pb-1 mb-2 uppercase text-xs tracking-wider text-gray-500">İlgili Deneyim</div>
+              <div className="text-gray-700 text-xs font-semibold">Okul Teknoloji Kulübü — Kurucu · Eyl 2024–devam</div>
+              <div className="text-gray-500 text-xs mt-0.5">15 üyeli kulübü kurdum; haftalık Python atölyesi düzenledim, 3. ayda 40 katılımcıya ulaştı</div>
+              <div className="text-gray-700 text-xs font-semibold mt-2">Sınıf Matematik Projesi — Grup Lideri · Oca 2025</div>
+              <div className="text-gray-500 text-xs mt-0.5">Şehir ulaşım verilerini Excel'de analiz ettim; optimizasyon önerisi "üstün çalışma" notu aldı</div>
+            </div>
+            <div>
+              <div className="font-semibold border-b border-gray-200 pb-1 mb-2 uppercase text-xs tracking-wider text-gray-500">Beceriler</div>
+              <div className="text-gray-700 text-xs">Python (temel) · Excel (pivot tablo, VLOOKUP) · İngilizce C1 · Türkçe (anadil)</div>
+            </div>
+            <div>
+              <div className="font-semibold border-b border-gray-200 pb-1 mb-2 uppercase text-xs tracking-wider text-gray-500">İlgi Alanları</div>
+              <div className="text-gray-700 text-xs">Veri analitiği — Kaggle'da üç yarışmaya katıldım · Finansal okuryazarlık — Coursera Finans modülü tamamladım</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Zayıf → Güçlü: Deneyim Maddesi Örnekleri</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En sık yapılan hata, sorumlulukları sonuç olmadan tanımlamaktır. İşte aynı deneyimin iki farklı yazımı:
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          <div className="bg-red-50 border border-red-100 rounded-xl p-4">
+            <div className="text-xs font-semibold text-red-600 mb-2 uppercase tracking-wide">✗ Zayıf</div>
+            <p className="text-sm text-gray-700 italic">"Okul projesinde çevre bilinci için kampanya yaptım."</p>
+            <p className="text-xs text-gray-500 mt-2">Sonuç yok, ölçüm yok, katkı belirsiz</p>
+          </div>
+          <div className="bg-green-50 border border-green-100 rounded-xl p-4">
+            <div className="text-xs font-semibold text-green-700 mb-2 uppercase tracking-wide">✓ Güçlü</div>
+            <p className="text-sm text-gray-700 italic">"200 öğrenciye ulaşan çevre farkındalık kampanyası koordine ettim; okul plastik tüketimini 3 ayda %40 azalttı."</p>
+            <p className="text-xs text-gray-500 mt-2">Erişim + ölçülebilir sonuç + zaman çerçevesi</p>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sektöre Göre Kişisel Beyan Örnekleri</h2>
+        <div className="space-y-3 mb-6">
+          <div className="border border-gray-100 rounded-xl p-4">
+            <div className="text-xs font-semibold text-indigo-600 mb-2 uppercase tracking-wide">Teknoloji Stajı</div>
+            <p className="text-sm text-gray-700 italic">"İstanbul Anadolu Lisesi 11. sınıf öğrencisiyim. Python ve web geliştirme üzerine kişisel projelerim var; okul kulübümüzde 20 arkadaşıma kodlama temellerini öğrettim. Yazılım veya veri analitiği alanında kısa dönemli bir stajda gerçek dünya projelerine katkı sağlamak istiyorum."</p>
+          </div>
+          <div className="border border-gray-100 rounded-xl p-4">
+            <div className="text-xs font-semibold text-indigo-600 mb-2 uppercase tracking-wide">Finans / İş Dünyası Stajı</div>
+            <p className="text-sm text-gray-700 italic">"Ankara Fen Lisesi 12. sınıf öğrencisiyim. Ekonomi olimpiyatına katıldım ve okul yatırım kulübünde sanal portföy yönettim. Finans veya muhasebe alanında 2–3 haftalık bir gözlemci stajda piyasa dinamiklerini yerinde anlamak istiyorum."</p>
+          </div>
+          <div className="border border-gray-100 rounded-xl p-4">
+            <div className="text-xs font-semibold text-indigo-600 mb-2 uppercase tracking-wide">Pazarlama / Medya Stajı</div>
+            <p className="text-sm text-gray-700 italic">"Boğaziçi Koleji 11. sınıf öğrencisiyim. Okul sosyal medya hesabını yönetiyorum; içerik stratejimizle takipçi sayısını 6 ayda 3 katına çıkardım. Dijital pazarlama veya içerik üretimi alanında kısa dönemli bir stajda gerçek kampanya süreçlerini öğrenmek istiyorum."</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">"İş Dışı" Deneyim CV İçeriğine Nasıl Dönüştürülür?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           En sık yapılan hata, ücretli iş geçmişi yoksa deneyim bölümünü boş bırakmak. Gerçekte, ücret alınıp alınmadığından bağımsız olarak ölçülebilir sonuçları olan herhangi bir gerçek sorumluluk CV materyalidir. Eylem-sonuç dili kullanılarak ifade edilebilen bir okul projesi, okul etkinliği organizasyonu, aile işine yardım, bir arkadaşa ders verme ya da yerel bir kulübün Instagram hesabını yönetme — bunların hepsi CV'de yer alabilir.
@@ -3593,87 +3668,105 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
   'staj-nasil-bulunur': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        Staj başvurusu, birçok lise öğrencisi için düşündüğünden çok daha ulaşılabilir bir süreçtir. Engel, fırsat azlığı değil; nereye bakacağını bilmemek ve nasıl başvuracağından emin olamamaktır. Bu rehber, adım adım pratik bir yol haritası sunar: doğru kaynakları bulmaktan ilk e-postayı yazmaya, ret mektuplarını nasıl değerlendireceğine kadar.
+        Üniversite stajı bulmak lise stajından yapısal olarak farklıdır: daha fazla fırsat var, ama rekabet de çok daha yüksek. Büyük şirketlerin formal programları belirli dönemlerde açılır ve hızla dolar; KOBİ'ler ise yıl boyu esnek başvuru kabul eder. Bu rehber, üniversite öğrencilerine hangi kanala ne zaman odaklanacaklarını adım adım anlatıyor.
       </p>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 1: Hangi Alana Başvurduğunu Bil</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 1: Üniversite Kariyer Merkezini Kullan</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Staj arama sürecinin en yaygın hatası, ne aradığını bilmeden arama yapmaktır. Geniş arama terimleri ile başvuran öğrenciler, genellikle ilgisiz pozisyonlara başvurarak motivasyonlarını erken kaybeder.
+          Türkiye'deki büyük üniversitelerin kariyer merkezleri, şirketlerle protokol anlaşmaları çerçevesinde belirli staj kontenjanlarını doğrudan öğrencilere iletir. Bu pozisyonlar genel ilan platformlarında görünmez — yalnızca kariyer merkezi duyurularında yer alır.
         </p>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>E-posta listesine kayıt ol:</strong> Kariyer merkezinin duyuru listesine kaydolmak, diğer öğrencilerden önce haberi almanızı sağlar. Özellikle 1. ve 2. sınıfta yapılan kayıt çok daha uzun vadeli avantaj sunar.</Bullet>
+          <Bullet><strong>Kariyer günlerine katıl:</strong> Her yarıyılda düzenlenen kariyer günlerinde şirket temsilcileriyle yüz yüze tanışmak, dijital başvurudan çok daha güçlü bir izlenim bırakır. İşe alım yöneticileri yüz yüze karşılaştıkları adayları hatırlar.</Bullet>
+          <Bullet><strong>Kariyer danışmanıyla görüşün:</strong> CV incelemesi ve sektör bağlantıları için kariyer danışmanları somut destek sağlayabilir. Birçok öğrenci bu kaynağı hiç kullanmıyor.</Bullet>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 2: Başvuru Takvimini Öğren</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Başlamadan önce kendine sor: Teknoloji, iş dünyası, veri ya da pazarlama alanlarından hangisi seni daha çok çekiyor? Bu sorunun cevabı aramanı hem daraltır hem de daha odaklı hale getirir. Henüz emin değilsen, Eduentry&apos;nin ücretsiz staj değerlendirmesi hangi ize en uygun olduğunu somut verilerle gösterir.
+          Büyük şirketlerin yaz stajı döngüsü, öğrencilerin çoğunun sandığından çok daha erken başlar. Zamanlama hatası en sık yapılan ve en kolay önlenebilir hatadır.
         </p>
-        <Callout>
-          <strong className="text-indigo-900">Önemli:</strong> Bir alan seçmek, diğer alanlara sonsuza dek kapıları kapatmak değildir. İlk stajın, ileride farklı bir yönde gitmeye karar versen bile değerlidir — işverenlere öğrenmeye istekli biri olduğunu gösterir.
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Şirket türü</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Başvuru dönemi</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Staj dönemi</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Kurumsal (KPMG, büyük bankalar, holdinglar)', 'Eylül–Kasım', 'Yaz (Haz–Ağu)'],
+                ['Orta ölçekli şirketler', 'Ocak–Mart', 'Yaz veya dönem içi'],
+                ['Startuplar ve KOBİler', 'Yıl boyu', 'Esnek'],
+                ['Kamu kurumları', 'Mart–Nisan', 'Yaz (zorunlu staj dönemi)'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 text-gray-900">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-600">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout color="amber">
+          <strong>"Yaz gelince bakarım" tuzağı:</strong> Kurumsal programların büyük çoğunluğu Kasım'da kapanır. Sonbaharı kaçıranlar için Ocak–Mart KOBİ ve orta ölçekli şirketlerde ikinci en güçlü penceredir.
         </Callout>
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 2: Doğru Platformları Kullan</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 3: Doğru Platformları Kullan</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Lise öğrencileri için staj arama platformları, genel iş arama sitelerinden farklıdır. İşte en verimli kaynaklar:
+          Türkiye'deki üniversite öğrencileri için en verimli staj arama kanalları:
         </p>
-        <ul className="space-y-3 mb-6">
-          <Bullet><strong>Springpod:</strong> Birleşik Krallık&apos;taki en büyük lise staj platformlarından biri. Büyük şirketlerin sanal iş deneyimi programlarına ev sahipliği yapar.</Bullet>
-          <Bullet><strong>Ratemyplacement.co.uk:</strong> Staj arayanlar için değerlendirmeler ve açık pozisyonlar içerir.</Bullet>
-          <Bullet><strong>Inspiring the Future:</strong> Okul koordineli programlar aracılığıyla öğrencileri işverenlerle buluşturur.</Bullet>
-          <Bullet><strong>LinkedIn:</strong> Profil oluştur ve "internship" + "work experience" ile ara. Lise öğrencisi olduğunu profilinde belirt — bu seni dezavantajlı kılmaz, aksine işverene beklenti yönetimi sağlar.</Bullet>
-          <Bullet><strong>Şirket web siteleri:</strong> İlgilendiğin şirketin kariyer sayfasını doğrudan ziyaret et. Küçük ve orta ölçekli şirketlerin staj fırsatları büyük platformlara düşmez.</Bullet>
+        <ul className="space-y-4 mb-6">
+          <Bullet><strong>Kariyer.net:</strong> Türkiye'nin en büyük iş arama platformu. "Staj" filtresiyle sektöre ve şehre göre ilanları daraltın. Büyük şirketlerin büyük çoğunluğu ilanlarını burada yayımlar.</Bullet>
+          <Bullet><strong>Youthall:</strong> Genç profesyoneller ve öğrencilere yönelik Türkiye platformu. Şirket kültürü değerlendirmeleri ve stajyer deneyimleri burada bulunur — başvurmadan önce şirket profilini okumak değerlidir.</Bullet>
+          <Bullet><strong>LinkedIn Jobs:</strong> "Staj" veya "intern" anahtar kelimesiyle filtreleyin; şehir ve sektör ekleyin. Profilinizde "staj arıyorum" belirtmek işe alım uzmanlarının sizi bulmasını da sağlar.</Bullet>
+          <Bullet><strong>Şirket kariyer sayfaları:</strong> Hedeflediğiniz 5–10 şirketin kariyer sayfasını aylık kontrol edin. Büyük şirketler öğrenci programlarını kendi sayfalarında duyurur, üçüncü taraf platformlara iletmez.</Bullet>
+          <Bullet><strong>Üniversite mezun ağı:</strong> LinkedIn'deki mezun grupları ve üniversite özel platformları, direkten bağlantı kurmak için en az değerlendirilen kaynaklardan biridir.</Bullet>
         </ul>
       </section>
 
       <section>
       <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <div className="flex-1">
-          <p className="font-semibold text-gray-900 mb-1">Şirkete ulaşmadan önce hazırlığını göster</p>
-          <p className="text-sm text-gray-600">Doğrudan e-posta ile en iyi sonucu alan başvurular somut bir yetenek kanıtı içerir. Hazırlık raporun tam bunu sağlar.</p>
+          <p className="font-semibold text-gray-900 mb-1">Başvurmadan önce hazırlığını ölç</p>
+          <p className="text-sm text-gray-600">Doğrulanmış bir yetenek skoru, motivasyon mektubuna somut bir referans noktası katar. Rekabetçi başvurularda fark yaratır.</p>
         </div>
         <Link href="https://eduentry.ai/tr" className="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors whitespace-nowrap">
-          Ücretsiz hazırlık testi
+          Ücretsiz değerlendirme
         </Link>
       </div>
 
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 3: Doğrudan Ulaşmanın Gücü</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 4: Doğrudan Başvuru — Soğuk E-posta ve LinkedIn DM</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          "Soğuk e-posta" birçok öğrenci için göz ardı edilen, ancak son derece etkili bir yöntemdir. Küçük ve orta ölçekli şirketler, özellikle yerel işletmeler, genellikle staj ilanı vermez — ancak motive bir öğrencinin kendiliğinden gönderdiği bir e-postaya açık olurlar.
+          İlan olmayan pozisyonlar için doğrudan ulaşmak, özellikle KOBİ ve startup ekosisteminde etkilidir. İki kanal işe yarıyor:
         </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Etkili bir doğrudan başvuru e-postası şu unsurları içerir:
-        </p>
-        <ul className="space-y-2 mb-6">
-          <Bullet><strong>Kısa kişisel tanıtım:</strong> Kim olduğunu, hangi okulda okuduğunu ve kaç yaşında olduğunu iki cümlede belirt.</Bullet>
-          <Bullet><strong>Neden bu şirketi seçtiğin:</strong> Şirketi araştırdığını gösteren bir veya iki spesifik cümle — "web sitenizde X projenizi gördüm" gibi.</Bullet>
-          <Bullet><strong>Net istek:</strong> Ne arıyorsun? Bir iki haftalık iş deneyimi mi, yazlık program mı? Bunu açıkça belirt.</Bullet>
-          <Bullet><strong>CV eki:</strong> Kısa, bir sayfalık bir CV. Okul projeleri ve hobiler bile bu aşamada değerli içeriklerdir.</Bullet>
+        <ul className="space-y-3 mb-6">
+          <Bullet><strong>Soğuk e-posta:</strong> Şirketi araştırdığınızı gösteren iki cümle, kim olduğunuz ve net bir istek. Konu satırı: "Staj Başvurusu — [Ad Soyad], [Okul] [Bölüm]". Eki: bir sayfalık CV. Beş cümleyi geçmesin.</Bullet>
+          <Bullet><strong>LinkedIn bağlantı isteği + mesaj:</strong> Hedef şirketin İK veya ilgili departman yöneticisine bağlantı isteği gönderin. Bağlantı kabul edilirse kısa bir mesaj: şirketi neden seçtiğinizi ve ne aradığınızı iki cümlede belirtin. CV ile başlatmayın — önce konuşma kurun.</Bullet>
         </ul>
         <Callout>
-          <strong className="text-indigo-900">Gerçekçi beklenti:</strong> 10-15 doğrudan e-postadan 1-2 olumlu yanıt almak başarı sayılır. Yanıt gelmemesi kişisel bir ret değildir — işverenin zamanı ve kapasitesiyle ilgilidir.
+          <strong className="text-indigo-900">Gerçekçi beklenti:</strong> 10–15 doğrudan başvurudan 1–2 olumlu yanıt almak başarı sayılır. 10 iş günü içinde yanıt gelmezse tek satırlık kibarca bir hatırlatma gönderilebilir.
         </Callout>
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 4: Başvuru Materyallerini Hazırla</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 5: Başvuru Materyallerini Hazırla</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          İyi hazırlanmış iki belge, neredeyse tüm lise staj başvurularını kapsar:
+          Üniversite staj başvurusu genellikle iki belgeden oluşur:
         </p>
         <ul className="space-y-3 mb-6">
-          <Bullet><strong>CV (Özgeçmiş):</strong> Bir sayfa, açık yazı tipi, net bölümler. Okul bilgileri, ilgi alanları, gönüllü çalışmalar, okul projeleri. Deneyim bölümü boşsa endişelenme — bu yaşta herkes için böyledir. <a href="/tr/blog/staj-icin-cv-nasil-yazilir" className="text-indigo-600 hover:underline font-medium">Staj CV'si nasıl yazılır rehberimiz</a> tam olarak ne ekleneceğini adım adım açıklıyor.</Bullet>
-          <Bullet><strong>Kapak mektubu veya e-posta:</strong> Neden bu şirketi seçtiğini ve stajdan ne umduğunu anlatan kısa bir metin. Jenerik şablonlar fark edilir — kişiselleştirilmiş bir paragraf çok daha etkilidir.</Bullet>
+          <Bullet><strong>CV:</strong> Bir sayfa. Eğitim, ilgili dersler veya projeler, varsa önceki deneyim, beceriler. Not ortalaması 3.0 üzerindeyse eklenmesi avantajlıdır; altındaysa zorunlu değildir. <a href="/tr/blog/staj-icin-cv-nasil-yazilir" className="text-indigo-600 hover:underline font-medium">Staj CV'si nasıl yazılır rehberimiz</a> adım adım yapıyı ve sektöre göre örnekleri açıklıyor.</Bullet>
+          <Bullet><strong>Motivasyon mektubu:</strong> Büyük şirket başvurularında neredeyse her zaman gerekli. Üç şeyi yanıtlayan bir paragraf yeterli: neden bu şirket, neden bu pozisyon, bu stajdan spesifik olarak ne öğrenmek istiyorsunuz? Genel ifadelerden kaçının — bir cümle bile özgün referans içermeli.</Bullet>
         </ul>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Adım 5: Takip Et ve Devam Et</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Başvurduğun şirketten 10 iş günü içinde yanıt gelmezse, kibarca bir hatırlatma e-postası gönderebilirsin. Tek cümlelik bir mesaj yeterli: "Başvurumun ulaşıp ulaşmadığını kontrol etmek istedim, gösterim için teşekkürler."
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Ret aldığında geri bildirim istemek hem profesyonel hem de son derece yararlıdır. "Gelecekteki başvurularım için geri bildirim alabilir miyim?" sorusu işverenler tarafından olumlu karşılanır ve gelişimine somut katkı sağlar.
-        </p>
-        <Check>Başvurduğun şirketleri, tarihlerini ve iletişim geçmişini takip etmek için basit bir tablo tut. Bu organizasyon, hem süreci yönetmeni kolaylaştırır hem de mülakatlarda hazırlıklı olmanı sağlar.</Check>
-        <p className="text-gray-700 leading-relaxed mt-4">
-          Başvurun olumlu yanıt alırsa, <a href="/tr/blog/staj-mulakati-hazirlik-rehberi" className="text-indigo-600 hover:underline font-medium">mülakat hazırlık rehberimiz</a> lise öğrencisi olarak etkili yanıtlar vermeyi adım adım anlatıyor.
+        <p className="text-gray-700 leading-relaxed">
+          Başvurunuz olumlu yanıt alırsa, <a href="/tr/blog/staj-mulakati-hazirlik-rehberi" className="text-indigo-600 hover:underline font-medium">mülakat hazırlık rehberimiz</a> iş deneyimi olmadan etkili yanıtlar vermeyi adım adım anlatıyor.
         </p>
       </section>
     </>
@@ -4064,6 +4157,45 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
         </ul>
         <Callout>
           <strong className="text-indigo-900">Önemli not:</strong> Erasmus+ ve IAESTE üniversite öğrencilerine yönelik programlardır. Lise öğrencileri için en erişilebilir yollar özel sektör uzaktan programları ve British Council değişim şemalarıdır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Program Karşılaştırması: Hangi Yol Sizin İçin?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dört ana kanalın temel boyutlarını aşağıdaki tabloda karşılaştırabilirsiniz — hedef kitle, başvuru takvimi, ödeme/hibe ve erişilebilirlik açısından.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Program</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Kimler başvurabilir</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Başvuru takvimi</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Ödeme / Hibe</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Süre</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Erasmus+ KA131', 'Üniversite öğrencileri (Erasmus Beyannameli okul)', 'Kasım–Ocak / Mart–Mayıs', 'Aylık 300–600 € hibe', '2–12 ay'],
+                ['IAESTE', 'Mühendislik, fen, BT, mimarlık öğrencileri', 'Ekim–Ocak', 'Ev sahibi kurumun belirlediği harçlık', '6 hafta–3 ay'],
+                ['AIESEC', '18+ üniversite öğrencisi (bazı ülkelerde 16+)', 'Sürekli açık', 'Genellikle ücretsiz (gönüllülük bazlı)', '6 hafta–18 ay'],
+                ['Uzaktan / Özel programlar', 'Lise (14+) ve üniversite öğrencileri', 'Sürekli açık', 'Çoğunlukla ücretsiz, sertifika sağlar', '2–12 hafta'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-medium text-gray-900">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-600">{row[2]}</td>
+                  <td className="p-4 text-gray-600">{row[3]}</td>
+                  <td className="p-4 text-gray-600">{row[4]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Lise öğrencisiyseniz:</strong> Erasmus+ ve IAESTE doğrudan başvurulabilir programlar değildir. En hızlı ve en erişilebilir yol uzaktan özel programlardır — hem İngilizce iş ortamı deneyimi hem de CV'ye uluslararası şirket adı kazandırır.
         </Callout>
       </section>
 

@@ -551,7 +551,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     tldr: 'Staj başvurusu için hazırlanan CV şu bölümleri içermelidir: iletişim bilgileri, öğrenim (okul, sınıf, not ortalaması), ilgili dersler veya projeler, yetkinlikler (diller, yazılımlar) ve referans olarak gösterilebilecek öğretmenler. İş deneyimi olmayan lise öğrencileri için tek sayfalık bir CV en etkili format olmaya devam ediyor.',
 
     date: '2026-09-09',
-    dateModified: '2026-09-09',
+    dateModified: '2026-10-28',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Lise'],
     faqs: [
@@ -660,10 +660,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'pisa-nedir-cocugunuz-nasil-hazirlanir',
-    title: 'PISA Nedir? Türkiye 2025 Sonuçları, Puan Tablosu ve Veli Rehberi',
+    title: 'PISA Nedir, Pısa Ne Demek? 2025 Türkiye Sonuçları ve Hazırlık Rehberi',
     shortTitle: 'PISA (Pısa) Nedir? 2026 Güncel: Açılımı, Türkiye Sonuçları ve Hazırlık',
     description:
-      'Türkiye PISA 2025\'te matematik 463 puan; OECD ortalaması 472. PISA açılımı, ülke sıralaması ve çocuğunuzun PISA\'ya nasıl hazırlanabileceği — veliler için tam rehber.',
+      'PISA açılımı, 2025 Türkiye sonuçları (matematik 463, OECD 472) ve çocuğunuzu evde hazırlamanın 4 yolu. Seçilme süreci, puan tablosu, ülke sıralaması — veliler için.',
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2025\'te okumada OECD ortalamasını yakaladı; matematikte 463 ile OECD ortalaması (472) yakınında yer aldı.',
 
     date: '2026-09-14',
@@ -826,9 +826,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'staj-defteri-nasil-doldurulur',
-    title: 'Staj Defteri Nasıl Doldurulur? Nereden Alınır, Kim İmzalar — 2026 Rehberi',
+    title: 'Staj Defteri Nasıl Doldurulur? Örnek + Nereden Alınır, Kim İmzalar',
     shortTitle: 'Staj Defteri: Nereden Alınır, Kim İmzalar, Ne Zaman Teslim?',
-    description: 'Staj defteri nasıl doldurulur, nereden alınır, kim imzalar, ne zaman teslim edilir, spiral olur mu? Lise ve üniversite öğrencileri için tüm sorulara tek sayfada yanıt.',
+    description: 'Staj defteri: günlük faaliyet kaydı, haftalık özet, imza süreci ve teslim tarihi adım adım. Okul ve kurum formatlarına göre doldurma rehberi + örnek ifadeler.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
@@ -883,21 +883,21 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'staj-nasil-bulunur',
-    title: 'Staj Nasıl Bulunur? Lise Öğrencisi İçin Adım Adım Başvuru Rehberi',
-    shortTitle: 'Staj Nasıl Bulunur? Lise Öğrencisi Rehberi',
+    title: 'Staj Nasıl Bulunur? Üniversite Öğrencileri İçin Kariyer Rehberi 2026',
+    shortTitle: 'Staj Nasıl Bulunur? Üniversite Öğrencisi Rehberi',
     description:
-      'Staj bulmak için hangi platformlara bakmalı, nasıl başvuru yapmalı ve işverene nasıl yaklaşmalısın? Lise öğrencileri için pratik, adım adım bir başvuru rehberi.',
-    tldr: 'Türkiye\'de staj bulmanın temel yolları: doğrudan şirket başvurusu (KOBİ ve yerel işletmeler için etkilidir), LinkedIn, Kariyer.net ve İşKur gibi platformlar, üniversite kariyer ofisleri ve mesleki sendikalar ya da meslek odaları. Kişisel bağlantılar en yüksek dönüşüm oranına sahip yol olmaya devam ediyor.',
+      'Üniversite öğrencisi olarak staj nasıl bulunur? Kariyer ofisi, LinkedIn, Kariyer.net, Youthall — sektöre göre başvuru takvimi, doğrudan başvuru ve motivasyon mektubu rehberi.',
+    tldr: 'Üniversite öğrencileri için staj bulmanın en verimli yolları: üniversite kariyer merkezi (kurumsal anlaşmalar aracılığıyla), LinkedIn Jobs, Kariyer.net, Youthall ve doğrudan şirket başvuruları. Büyük şirketlerin yaz stajları için başvurular sonbahar döneminde (Eylül–Kasım) açılır; rekabetçi pozisyonlar için en az 6 ay öncesinden planlamak gerekir.',
 
     date: '2026-09-15',
-    dateModified: '2026-09-15',
-    readTime: '9 dk okuma',
-    tags: ['Staj', 'Staj Başvurusu', 'Kariyer Rehberi', 'Lise', 'İş Dünyası'],
+    dateModified: '2026-10-28',
+    readTime: '10 dk okuma',
+    tags: ['Staj', 'Staj Başvurusu', 'Kariyer Rehberi', 'Üniversite', 'Kariyer Ofisi', 'İş Dünyası'],
     faqs: [
-      { q: 'Staj için nereye başvurabilirim?', a: 'Şirketlerin kendi kariyer sayfaları, LinkedIn, Indeed, Glassdoor gibi iş arama platformları ve Springpod, Ratemyplacement, Inspiring the Future gibi staj odaklı siteler başlangıç için en verimli kaynaklardır. Ayrıca okul kariyer danışmanın ve yerel ticaret odalarının sana yönlendirebileceği programlar da bulunabilir.' },
-      { q: 'Hiç iş deneyimim yokken nasıl başvurabilirim?', a: 'Birçok lise stajı deneyim gerektirmez — zaten bu fırsatların amacı da bu. Başvurunda merakını, neden bu sektörü seçtiğini ve öğrenmeye olan istekliğini net biçimde ortaya koy. Özgün motivasyon, birçok deneyimli adaydan daha etkilidir.' },
-      { q: 'E-posta ile doğrudan şirkete ulaşabilir miyim?', a: 'Kesinlikle. "Soğuk e-posta" olarak bilinen bu yöntem, özellikle küçük ve orta ölçekli şirketler için oldukça işe yarar. Kısa, net ve kişisel bir e-posta — şirketin ne yaptığını araştırdığını gösteren iki cümle ve net bir istek — büyük bir fark yaratır.' },
-      { q: 'Başvurularımı reddedilirse ne yapmalıyım?', a: 'Ret, sürecin normal bir parçasıdır. Geri bildirim iste (çoğu zaman işe yarar), bir sonraki başvuruna göre CV\'ni güncelle ve aramaya devam et. Ortalama olarak 10-15 başvurudan biri olumlu sonuç verir.' },
+      { q: 'Üniversite öğrencisi olarak staj için nereye başvurabilirim?', a: 'En verimli kaynaklar: üniversitenizin kariyer merkezi (şirketlerle protokol anlaşmaları çerçevesinde staj kontenjanlarını doğrudan iletir), LinkedIn Jobs, Kariyer.net ve Youthall. Büyük şirketlerin formal programları için dönemsel başvuru takvimlerine dikkat edin — çoğu, sonbahar başvurularıyla bir sonraki yaz için yerleştirme yapar.' },
+      { q: 'Staj başvurusu ne zaman yapılmalı?', a: 'Zamanlama, şirket büyüklüğüne göre değişir. KPMG, büyük bankalar ve holding şirketleri gibi kurumsal yapıların yaz stajları için başvurular Eylül–Kasım döneminde açılır. Orta ölçekli şirketler için Ocak–Mart penceresi en aktif dönemdir. KOBİ ve startuplar neredeyse yıl boyu başvuru kabul eder.' },
+      { q: 'Üniversite kariyer merkezi staj bulmama gerçekten yardımcı olur mu?', a: 'Evet — ve çoğu öğrenci bu kaynağı yeterince kullanmıyor. Türkiye\'deki büyük üniversitelerin kariyer merkezleri, kurumsal şirketlerle protokol anlaşmaları çerçevesinde belirli kontenjanları doğrudan öğrencilere iletir. Bu stajlar ilan edilmez; yalnızca kariyer merkezi üzerinden duyurulur.' },
+      { q: 'Staj başvurusunda motivasyon mektubu gerekli mi?', a: 'Büyük şirketlerin formal programlarında neredeyse her zaman gereklidir. Motivasyon mektubunda şirketi neden seçtiğinizi ve bu stajdan spesifik olarak ne öğrenmek istediğinizi bir veya iki somut cümleyle belirtin. "Uluslararası deneyim kazanmak istiyorum" gibi genel ifadelerden kaçının.' },
     ],
     cta: {
       heading: 'Hangi staja en uygunsun?',
@@ -933,10 +933,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'pisa-nedir-is-hayatini-sekillendiren-sinav',
-    title: 'PISA 2025 Sonuçları ve Kariyer: Türkiye Nerede, PISA 2026 Var Mı?',
+    title: 'PISA 2025 ve Kariyer: Türkiye Kaçıncı? PISA 2026 Var Mı?',
     shortTitle: 'PISA 2026 Var Mı? 2025 Sonuçları ve Kariyer',
     description:
-      'PISA 2025\'te Türkiye matematik 463, OECD ortalaması 472. PISA 2026 var mı? Ve en önemlisi: PISA başarısı çocuğunuzun kariyerini gerçekten etkiler mi?',
+      'PISA 2025: Türkiye matematik 463, OECD 472. PISA 2026 diye bir sınav yok — sıradaki PISA 2028. Asıl soru: PISA puanları gerçekten çocuğun kariyerini etkiliyor mu?',
     tldr: 'PISA, OECD\'nin her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uyguladığı bir değerlendirme programıdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan civarındadır. PISA\'nın ölçtüğü beceriler — sayısal muhakeme, okuduğunu anlama ve problem çözme — günümüz iş dünyasının en çok aradığı yetkinliklerle örtüşüyor.',
 
     date: '2026-09-21',
@@ -1262,9 +1262,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet',
     contentSlug: 'discover-child-strengths-free-academic-test',
-    title: 'Ücretsiz Akademik Test: Çocuğunuzun Güçlü ve Zayıf Yönlerini Bir Saat İçinde Keşfedin',
+    title: 'Çocuğunuzun Güçlü Yönleri: Ücretsiz Akademik Test — 1 Saatte Sonuç',
     shortTitle: 'Ücretsiz Akademik Test: Güçlü ve Zayıf Yönler',
-    description: 'Karne notları bilişsel potansiyeli göstermez. Ücretsiz adaptif testimiz bir saat içinde sözel, sayısal ve görsel-uzamsal yetenekleri ölçer.',
+    description: 'Karne notları potansiyeli göstermez. Adaptif test sözel, sayısal ve görsel-uzamsal zekayı ayrı ayrı ölçer; uluslararası yüzdelik dilim raporu verir. 6–16 yaş, ücretsiz.',
     tldr: 'Sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünmeyi bağımsız olarak ölçen ücretsiz adaptif test — bir saat içinde uluslararası yüzdelik dilim raporu. CAT ve IRT metodolojisiyle, CAT4 ve NWEA MAP ile aynı bilimsel temel.',
     date: '2026-10-01',
     dateModified: '2026-10-20',
@@ -1330,10 +1330,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'zeki-cocuk-neden-basarisiz-olur',
     contentSlug: 'smart-child-bad-grades',
-    title: 'Zeki Öğrenciler Neden Başarısız Olur? Bilişsel Profil ve Notlar Arasındaki Uçurum',
+    title: 'Zeki Çocuk Neden Başarısız Olur? 5 Bilimsel Neden ve Ne Yapabilirsiniz',
     shortTitle: 'Zeki Öğrenciler Neden Başarısız Olur? Ebeveyn Rehberi',
     description:
-      'Zeki çocuk ya da öğrenci neden başarısız olur? Okul notları bilişsel yeteneği ölçmez. Çalışan bellek, akışkan zeka ve gerçek potansiyel hakkında bilmeniz gerekenler.',
+      'Okul notları ezberi ölçer, zekayı değil. Akışkan zeka, çalışan bellek ve kristalize zeka farkı — parlak ama düşük notlu çocuklar için kanıta dayalı rehber.',
     tldr: 'Zeki çocuklar, bilişsel profilleri ile okulun performansı ölçme biçimi arasındaki uyumsuzluk nedeniyle kötü notlar alır. Okul notları ağırlıklı olarak kristalize zekayı ölçer — ezberlenmiş ve yeniden üretilmiş bilgiyi — oysa pek çok parlak çocuk olağanüstü akıcı zekaya sahiptir: standart testlerin nadiren yakaladığı mantık yürütme, örüntü bulma ve yeni problemleri çözme yeteneği.',
     date: '2026-10-01',
     dateModified: '2026-10-20',
@@ -2078,9 +2078,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'cocugumun-guclu-yonleri-ve-akademik-basari',
     contentSlug: 'character-strengths-academic-success',
-    title: 'VIA Karakter Güçleri Testi: Çocuğumun Güçlü Yönleri ve Akademik Başarı',
+    title: 'Çocuğumun Güçlü Yönleri: 5 Karakter Özelliği Akademik Başarıyı Öngörüyor',
     shortTitle: 'VIA Karakter Güçleri Testi: Çocuğun Güçlü Yönleri ve Akademik Başarı',
-    description: 'VIA karakter güçleri testi nedir? Ücretsiz, 24 özellik ve 6 erdem. 5 karakter gücü — merak, öğrenme sevgisi, azim, öz denetim, coşku — akademik başarıyı öngörüyor.',
+    description: 'Merak, öğrenme sevgisi, azim, öz denetim, coşku — araştırmalar bu 5 özelliğin notu öngördüğünü gösteriyor. VIA karakter testi ile çocuğunuzu ücretsiz değerlendirin.',
     tldr: 'Okul notları sınıf ortalamasına göre başarıyı ölçer; ancak çocuğunuzun güçlü yönlerini ve potansiyelini tam olarak ortaya koymaz. Pozitif psikoloji araştırmaları, 5 VIA kişilik özelliğinin — öğrenme sevgisi, merak, azim, öz denetim ve coşku — akademik sonuçları en güvenilir biçimde öngördüğünü göstermektedir. Bu özellikler sabit değildir; ebeveyn değerlendirmeli bir testle ölçülebilir ve geliştirilebilir.',
     date: '2026-10-10',
     dateModified: '2026-10-20',

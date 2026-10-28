@@ -2559,12 +2559,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'discover-child-strengths-free-academic-test',
-    title: "Free Academic Test for Children: Discover Your Child's Strengths and Weaknesses",
+    title: "Discover Your Child's Academic Strengths: Free Adaptive Test — Results in 1 Hour",
     shortTitle: "Free Academic Test: Discover Your Child's Strengths",
-    description: "Grades don't show your child's true potential. Our free adaptive test measures verbal, numerical and spatial reasoning within an hour, with a report.",
+    description: "Grades measure recall, not cognitive potential. Our free adaptive test measures verbal, numerical and spatial reasoning separately — international percentile report. Ages 6–16, results in under an hour.",
     tldr: "A free adaptive test measuring verbal reasoning, numerical reasoning, and visual-spatial thinking independently — giving parents an international-percentile report within an hour. Built on Computer Adaptive Testing (CAT) and Item Response Theory, the same methodology behind CAT4 and NWEA MAP.",
     date: '2026-10-01',
-    dateModified: '2026-10-01',
+    dateModified: '2026-10-28',
     readTime: '10 min read',
     tags: ['Free Academic Test', 'Child Strengths', 'Child Weaknesses', 'Cognitive Assessment', 'Adaptive Test', 'Parent Guide', 'CAT4', 'Child Development'],
     faqs: [
@@ -2621,7 +2621,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'My Child Is Smart But Gets Bad Grades: What Parents Should Know',
     shortTitle: 'Smart Child, Bad Grades: What Parents Should Know',
     description:
-      'Research shows 12–18% of children in the top quartile for reasoning score in the bottom half for school grades. This guide explains the mismatch between intelligence and academic performance — and what parents can do to identify and close the gap.',
+      'School grades measure recall, not intelligence. 5 scientific reasons why bright children underperform — fluid reasoning, working memory, and curriculum mismatch — and what parents can do.',
     tldr: 'Smart children get bad grades when there is a mismatch between their cognitive profile and how school measures performance. School grades primarily measure crystallised intelligence — what has been memorised and reproduced — while many bright children have exceptional fluid intelligence: the ability to reason, spot patterns, and solve novel problems that standardised tests rarely capture.',
     date: '2026-10-01',
     dateModified: '2026-10-18',
@@ -3043,13 +3043,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'character-strengths-academic-success',
-    title: 'The 5 Character Strengths That Predict School Success — And How to Spot Them in Your Child',
+    title: '5 Character Strengths That Predict Academic Success — And How to Build Them in Your Child',
     shortTitle: 'Character Strengths That Predict Academic Success',
     description:
-      'Curiosity, love of learning, perseverance, self-regulation and zest reliably predict academic success. Here is how to build each one in your child.',
+      'Curiosity, love of learning, perseverance, self-regulation and zest outpredict IQ for school grades. Research-backed guide + free VIA character assessment to identify your child\'s profile.',
     tldr: "School grades measure performance relative to a class average — not the underlying character traits that determine whether a child will sustain effort, remain curious, and grow from setbacks. Five VIA character strengths — love of learning, curiosity, perseverance, self-regulation, and zest — consistently emerge in longitudinal research as the most predictive of academic outcomes. These strengths are not fixed: they are developable. Eduentry's free personality assessment identifies all 24 VIA character strengths in your child in under 15 minutes.",
     date: '2026-10-10',
-    dateModified: '2026-10-10',
+    dateModified: '2026-10-28',
     readTime: '9 min read',
     tags: ['Character Strengths', 'Academic Success', 'VIA Strengths', 'Child Development', 'Parent Guide', 'Personality Assessment'],
     faqs: [

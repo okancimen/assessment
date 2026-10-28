@@ -5144,6 +5144,41 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">When to Apply: UK Internship Calendar</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Timing is the single most common mistake students make — many apply to large-firm schemes months after the deadline has passed. The window for competitive corporate programmes opens in September and closes before Christmas. SMEs and startups accept applications year-round.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Employer type</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Application window</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Internship period</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['FTSE 100 / large corporates (Barclays, Deloitte, KPMG Spring Insight)', 'September–November', 'Summer (Jul–Sep)'],
+                ['Mid-size firms', 'January–March', 'Summer or term-time'],
+                ['SMEs and startups', 'Year-round', 'Flexible'],
+                ['Public sector (NHS, councils, civil service)', 'March–May', 'Summer'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 text-gray-900">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-600">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout color="emerald">
+          <strong className="text-emerald-900">Strategy tip:</strong> Apply to large-firm schemes in September–October (they fill on a rolling basis, not at the deadline). Apply to SMEs by direct email in January–March. Never wait until spring to start.
+        </Callout>
+      </section>
+
+      <section>
         <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
@@ -5694,6 +5729,64 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
           <Check><strong>Domain knowledge</strong> — How well you understand core concepts in your area of interest is assessed.</Check>
           <Check><strong>Workplace skills</strong> — Data reflecting communication, teamwork and problem-solving tendencies is generated.</Check>
         </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What a High School CV Should Look Like</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A student CV with no work history should not be empty — it should be reframed. Rename sections, lead with a personal statement, and substitute an aptitude report for the work history employers cannot yet expect. Here is what that looks like in practice.
+        </p>
+        <div className="border border-gray-200 rounded-xl overflow-hidden mb-6">
+          <div className="bg-gray-50 px-4 py-2 border-b border-gray-200">
+            <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Sample CV — Year 12 High School Student (Age 16–17)</span>
+          </div>
+          <div className="p-6 font-mono text-sm space-y-4 text-gray-800">
+            <div>
+              <div className="font-bold text-base">EMILY JOHNSON</div>
+              <div className="text-gray-500">07xxx xxxxxx · emily.johnson@example.com · London, UK</div>
+            </div>
+            <div>
+              <div className="font-semibold text-gray-700 border-b border-gray-200 pb-1 mb-2">PERSONAL STATEMENT</div>
+              <div className="text-gray-600 leading-relaxed">Year 12 student (A Levels: Maths, Economics, Biology) applying for a summer placement in financial services or data analytics. Ranked in the top quartile for numerical reasoning in the Eduentry adaptive assessment (2026). Active member of the school Maths Challenge team; completed Goldman Sachs virtual work experience via Forage (2026).</div>
+            </div>
+            <div>
+              <div className="font-semibold text-gray-700 border-b border-gray-200 pb-1 mb-2">EDUCATION</div>
+              <div className="space-y-1 text-gray-600">
+                <div><span className="text-gray-400">2022–present</span> &nbsp; Oak Hill Sixth Form College | Year 12 — Maths (pred. A*), Economics (pred. A), Biology (pred. B)</div>
+                <div><span className="text-gray-400">2018–2022&nbsp;&nbsp;&nbsp;</span> &nbsp; Oak Hill Academy | GCSEs: 9 Maths, 8 English, 8 Combined Science, 7 History (8 subjects total)</div>
+              </div>
+            </div>
+            <div>
+              <div className="font-semibold text-gray-700 border-b border-gray-200 pb-1 mb-2">RELEVANT EXPERIENCE</div>
+              <div className="space-y-2 text-gray-600">
+                <div><span className="text-gray-400">2026</span> &nbsp; Goldman Sachs Virtual Internship (Forage) — completed a structured investment banking brief including DCF valuation and M&amp;A analysis; certificate awarded.</div>
+                <div><span className="text-gray-400">2025–26</span> &nbsp; Maths Challenge Club, School Representative — competed in UK Junior Mathematical Challenge; coordinated group practice sessions for Year 10 students.</div>
+              </div>
+            </div>
+            <div>
+              <div className="font-semibold text-gray-700 border-b border-gray-200 pb-1 mb-2">APTITUDE &amp; SKILLS</div>
+              <div className="space-y-1 text-gray-600">
+                <div>Analytical: top-quartile numerical reasoning — Eduentry Assessment 2026</div>
+                <div>Technical: Microsoft Excel, Python basics, Google Sheets</div>
+                <div>Languages: English (native), French (GCSE Grade 7)</div>
+              </div>
+            </div>
+            <div>
+              <div className="font-semibold text-gray-700 border-b border-gray-200 pb-1 mb-2">INTERESTS</div>
+              <div className="text-gray-600">Personal finance blog (avg. 80 readers/week since Jan 2026) · AMC 8 preparation · Chess club (regional finalist)</div>
+            </div>
+          </div>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          <div className="bg-red-50 border border-red-100 rounded-xl p-4">
+            <div className="text-xs font-semibold text-red-600 uppercase tracking-wide mb-2">✗ Weak personal statement</div>
+            <p className="text-sm text-gray-700">"I am a hardworking student interested in business. I am keen to learn and would love the opportunity to gain work experience at your company."</p>
+          </div>
+          <div className="bg-green-50 border border-green-100 rounded-xl p-4">
+            <div className="text-xs font-semibold text-green-600 uppercase tracking-wide mb-2">✓ Strong personal statement</div>
+            <p className="text-sm text-gray-700">"Year 12 student applying for a data analytics placement. Top-quartile numerical reasoning (Eduentry, 2026). Completed Goldman Sachs virtual internship on Forage. Looking to apply quantitative skills to a live business dataset."</p>
+          </div>
+        </div>
       </section>
 
       <section>
