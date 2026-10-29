@@ -6,6 +6,8 @@ export interface DashboardI18n {
   navAddChild: string
   navSignOut: string
   navAdmin: string
+  navProfile: string
+  profileHref: string
   homeHref: string
   dashboardHref: string
   // Page header
@@ -117,6 +119,8 @@ const en: DashboardI18n = {
   navAddChild: 'Add child',
   navSignOut: 'Sign out',
   navAdmin: 'Admin',
+  navProfile: 'Profile settings',
+  profileHref: '/dashboard/profile',
   homeHref: '/',
   dashboardHref: '/dashboard',
   hello: 'Hello',
@@ -213,6 +217,8 @@ const tr: DashboardI18n = {
   navAddChild: 'Çocuk ekle',
   navSignOut: 'Çıkış yap',
   navAdmin: 'Yönetim',
+  navProfile: 'Profil ayarları',
+  profileHref: '/tr/dashboard/profile',
   homeHref: '/tr',
   dashboardHref: '/tr/dashboard',
   hello: 'Merhaba',
@@ -309,6 +315,8 @@ const es: DashboardI18n = {
   navAddChild: 'Añadir hijo',
   navSignOut: 'Cerrar sesión',
   navAdmin: 'Admin',
+  navProfile: 'Ajustes de perfil',
+  profileHref: '/es/dashboard/profile',
   homeHref: '/es',
   dashboardHref: '/es/dashboard',
   hello: 'Hola',
@@ -405,6 +413,8 @@ const fr: DashboardI18n = {
   navAddChild: 'Ajouter un enfant',
   navSignOut: 'Se déconnecter',
   navAdmin: 'Admin',
+  navProfile: 'Paramètres du profil',
+  profileHref: '/fr/dashboard/profile',
   homeHref: '/fr',
   dashboardHref: '/fr/dashboard',
   hello: 'Bonjour',
@@ -501,6 +511,8 @@ const ar: DashboardI18n = {
   navAddChild: 'إضافة طفل',
   navSignOut: 'تسجيل الخروج',
   navAdmin: 'الإدارة',
+  navProfile: 'إعدادات الملف الشخصي',
+  profileHref: '/ar/dashboard/profile',
   homeHref: '/ar',
   dashboardHref: '/ar/dashboard',
   hello: 'مرحباً',
@@ -597,6 +609,8 @@ const ru: DashboardI18n = {
   navAddChild: 'Добавить ребёнка',
   navSignOut: 'Выйти',
   navAdmin: 'Админ',
+  navProfile: 'Настройки профиля',
+  profileHref: '/ru/dashboard/profile',
   homeHref: '/ru',
   dashboardHref: '/ru/dashboard',
   hello: 'Привет',
@@ -693,6 +707,8 @@ const zh: DashboardI18n = {
   navAddChild: '添加孩子',
   navSignOut: '退出登录',
   navAdmin: '管理',
+  navProfile: '个人资料设置',
+  profileHref: '/zh/dashboard/profile',
   homeHref: '/zh',
   dashboardHref: '/zh/dashboard',
   hello: '你好',

@@ -143,6 +143,14 @@ export default function Navbar({
                     <p className="text-xs truncate mt-0.5" style={{ color: '#64748B' }}>{user.email}</p>
                   </div>
                   <div className="p-1.5">
+                    <Link
+                      href={t.profileHref}
+                      onClick={() => setDropdownOpen(false)}
+                      className="block w-full text-left text-xs font-medium px-3 py-2 rounded-lg transition-colors hover:bg-[#F8FAFC]"
+                      style={{ color: '#1E293B' }}
+                    >
+                      {t.navProfile}
+                    </Link>
                     <button
                       onClick={handleSignOut}
                       className="w-full text-left text-xs font-medium px-3 py-2 rounded-lg transition-colors hover:bg-[#F8FAFC]"
@@ -231,6 +239,14 @@ export default function Navbar({
           </div>
 
           <div className="px-3 pb-4 border-t pt-2" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+            <Link
+              href={t.profileHref}
+              onClick={() => setMenuOpen(false)}
+              className="block w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium transition-colors"
+              style={{ color: '#94A3B8' }}
+            >
+              {t.navProfile}
+            </Link>
             <button
               onClick={handleSignOut}
               className="w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium transition-colors"

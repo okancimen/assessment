@@ -3,6 +3,7 @@ import Link from 'next/link'
 import CtaLink from '@/components/ui/CtaLink'
 import { BLOG_POSTS } from '@/app/blog/posts'
 import { DIGITAL_EMPLOYER_BRIEF, DIGITAL_PREP_GUIDE } from '@/app/ai/track-prose-content'
+import InternshipGuestPreview from '@/components/ai/InternshipGuestPreview'
 
 const INTERNSHIP_TAGS = ['Internship', 'Career Development', 'Work Experience']
 const internshipPosts = BLOG_POSTS.filter(p => p.tags.some(t => INTERNSHIP_TAGS.includes(t))).slice(0, 2)
@@ -399,6 +400,8 @@ export default function DigitalMarketingTrackPage() {
           </div>
         </div>
       </section>
+
+      <InternshipGuestPreview />
 
       {/* FAQ */}
       <section className="py-24 px-6 border-t border-white/[0.04]">
