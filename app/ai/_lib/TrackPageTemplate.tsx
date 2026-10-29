@@ -320,6 +320,32 @@ export default function TrackPageTemplate({ track, locale }: Props) {
         </div>
       </section>
 
+      {d.employerBrief && (
+        <section className="py-24 px-6 border-t border-white/[0.04] bg-[#080808]">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-10">{d.employerBrief.heading}</h2>
+            <div className="space-y-6">
+              {d.employerBrief.paragraphs.map((p, i) => (
+                <p key={i} className="text-white/50 leading-relaxed text-[15px]">{p}</p>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {d.prepGuide && (
+        <section className="py-24 px-6 border-t border-white/[0.04]">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-10">{d.prepGuide.heading}</h2>
+            <div className="space-y-6">
+              {d.prepGuide.paragraphs.map((p, i) => (
+                <p key={i} className="text-white/50 leading-relaxed text-[15px]">{p}</p>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* FAQ */}
       <section className="py-24 px-6 border-t border-white/[0.04]">
         <div className="max-w-3xl mx-auto">
