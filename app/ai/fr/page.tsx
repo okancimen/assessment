@@ -197,7 +197,7 @@ export default function FrenchHomePage() {
           <div className="inline-flex items-center gap-2 mb-8">
             <span className="inline-flex items-center gap-2 border border-white/[0.12] bg-white/[0.04] text-[11px] font-mono text-white/60 px-3.5 py-1.5 rounded-full tracking-[0.12em] uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#4ade80] shadow-[0_0_6px_#4ade80] animate-pulse" />
-              Personnalisé · Gratuit · 20 minutes
+              Gratuit · 20 minutes · Progression sauvegardée automatiquement
             </span>
           </div>
 
@@ -216,7 +216,7 @@ export default function FrenchHomePage() {
               href="/apply"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-7 py-3.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity shadow-[0_0_24px_rgba(99,102,241,0.3)]"
             >
-              Candidater gratuitement
+              Commencer l&apos;évaluation — 20 min
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -512,7 +512,7 @@ export default function FrenchHomePage() {
             href="/apply"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white px-10 py-4 rounded-xl font-semibold text-base hover:opacity-90 transition-opacity shadow-[0_0_40px_rgba(99,102,241,0.25)]"
           >
-            Commencer votre candidature
+            Commencer l&apos;évaluation gratuitement →
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
