@@ -257,6 +257,10 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 
 **Digital Marketing** [https://eduentry.ai/digital-marketing]: For students interested in marketing, communications, brand management, or growth. Domain questions cover SEO principles, social media advertising, campaign metrics (CTR, ROAS, CPM), and content strategy frameworks.
 
+**About** [https://eduentry.ai/about]: About the Eduentry.ai platform — free adaptive internship readiness assessment for students aged 14–18, AI-generated report, and global fellowship pathway.
+
+**University Work Experience & Fellowship** [https://eduentry.ai/work-experience]: 20-minute internship readiness assessment for university students. Top 10% selected for a 3-month hybrid fellowship working on live Singapore tech deliverables via Magenta Networks. Four tracks: Marketing & Growth, Data & Research, Strategy & Operations, Technology.
+
 ### Eduentry.ai locale landing pages
 
 **Turkish (Türkçe)**
@@ -265,6 +269,7 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 - [https://eduentry.ai/tr/is-dunyasi] — İş Dünyası pisti — strateji, finans, operasyon, liderlik.
 - [https://eduentry.ai/tr/veri-analitigi] — Veri Analitiği pisti — grafikler, SQL, içgörüler, istatistik.
 - [https://eduentry.ai/tr/dijital-pazarlama] — Dijital Pazarlama pisti — SEO, sosyal medya, kampanyalar, içerik.
+- [https://eduentry.ai/tr/work-experience] — Üniversite öğrencileri için staj hazırlık testi. İlk %10, Singapur teknoloji ortakları ile 3 aylık hibrit burs programına seçilir.
 
 **Spanish (Español)**
 - [https://eduentry.ai/es] — Página de inicio en español. Evaluación de preparación para prácticas, estudiantes 14–18 años; cuatro pistas, informe inmediato.
@@ -275,15 +280,31 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 
 **French (Français)**
 - [https://eduentry.ai/fr] — Page d'accueil en français. Évaluation de préparation au stage pour lycéens 14–18 ans; quatre pistes, rapport immédiat.
+- [https://eduentry.ai/fr/technologie] — Piste Technologie — programmation, algorithmes, cybersécurité, UX.
+- [https://eduentry.ai/fr/entreprise] — Piste Entreprise — stratégie, finance, opérations, leadership.
+- [https://eduentry.ai/fr/analyse-de-donnees] — Piste Analyse de données — graphiques, SQL, insights, statistiques.
+- [https://eduentry.ai/fr/marketing-digital] — Piste Marketing digital — SEO, réseaux sociaux, campagnes, contenu.
 
 **Arabic (العربية)**
 - [https://eduentry.ai/ar] — الصفحة الرئيسية بالعربية. تقييم جاهزية التدريب لطلاب الثانوية 14–18 عاماً؛ أربعة مسارات، تقرير فوري.
+- [https://eduentry.ai/ar/taqniya] — مسار التقنية — البرمجة، الخوارزميات، الأمن السيبراني، UX.
+- [https://eduentry.ai/ar/aamal] — مسار الأعمال — الاستراتيجية، المالية، العمليات، القيادة.
+- [https://eduentry.ai/ar/bayanat] — مسار تحليل البيانات — الرسوم البيانية، SQL، الرؤى، الإحصاء.
+- [https://eduentry.ai/ar/tawiq] — مسار التسويق الرقمي — SEO، وسائل التواصل الاجتماعي، الحملات، المحتوى.
 
 **Russian (Русский)**
 - [https://eduentry.ai/ru] — Главная страница на русском. Оценка готовности к стажировке для учащихся 14–18 лет; четыре направления, мгновенный отчёт.
+- [https://eduentry.ai/ru/tekhnologii] — Направление технологий — программирование, алгоритмы, кибербезопасность, UX.
+- [https://eduentry.ai/ru/biznes] — Направление бизнеса — стратегия, финансы, операции, лидерство.
+- [https://eduentry.ai/ru/analiz-dannykh] — Направление анализа данных — графики, SQL, аналитика, статистика.
+- [https://eduentry.ai/ru/tsifrovoy-marketing] — Направление цифрового маркетинга — SEO, соцсети, кампании, контент.
 
 **Chinese (中文)**
 - [https://eduentry.ai/zh] — 中文首页。面向14至18岁高中生的实习准备评估；四个方向，即时报告。
+- [https://eduentry.ai/zh/keji] — 科技方向 — 编程逻辑、算法、网络安全、UX。
+- [https://eduentry.ai/zh/shangye] — 商业方向 — 战略、财务、运营、领导力。
+- [https://eduentry.ai/zh/shuju] — 数据分析方向 — 图表、SQL、分析洞察、统计。
+- [https://eduentry.ai/zh/yingxiao] — 数字营销方向 — SEO、社交媒体、广告投放、内容创作。
 
 ---
 

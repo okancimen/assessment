@@ -35,6 +35,8 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [Business Track](https://eduentry.ai/business): Assessment covering strategy, finance, operations, and leadership. Produces a Business readiness score and report.
 - [Data Analytics Track](https://eduentry.ai/data-analytics): Assessment covering data interpretation, SQL, statistics, and insight generation. Produces a Data Analytics readiness score and report.
 - [Digital Marketing Track](https://eduentry.ai/digital-marketing): Assessment covering SEO, social media, campaign management, and content strategy. Produces a Digital Marketing readiness score and report.
+- [About Eduentry.ai](https://eduentry.ai/about): About the Eduentry.ai platform — free adaptive internship readiness assessment for students aged 14–18.
+- [University Work Experience & Fellowship](https://eduentry.ai/work-experience): 20-minute internship readiness assessment for university students. Top 10% selected for a 3-month hybrid fellowship working on live Singapore tech deliverables via Magenta Networks.
 - [Blog](https://eduentry.com/blog): Articles on internship preparation, work experience, career development, and university admissions for students aged 14–18.
 
 ### Eduentry.ai — Turkish (Türkçe)
@@ -44,6 +46,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 - [İş Dünyası](https://eduentry.ai/tr/is-dunyasi): İş dünyası pisti değerlendirmesi — strateji, finans, operasyon, liderlik.
 - [Veri Analitiği](https://eduentry.ai/tr/veri-analitigi): Veri analitiği pisti değerlendirmesi — grafikler, SQL, içgörüler, istatistik.
 - [Dijital Pazarlama](https://eduentry.ai/tr/dijital-pazarlama): Dijital pazarlama pisti değerlendirmesi — SEO, sosyal medya, kampanyalar, içerik.
+- [Üniversite Çalışma Deneyimi TR](https://eduentry.ai/tr/work-experience): Üniversite öğrencileri için 20 dakikalık staj hazırlık testi. İlk %10, Singapur teknoloji ortakları ile 3 aylık hibrit burs programına seçilir.
 - [Blog TR](https://eduentry.com/tr/blog): Türkçe staj ve kariyer rehberleri.
 
 ### Eduentry.ai — Spanish (Español)
@@ -58,17 +61,38 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 ### Eduentry.ai — French (Français)
 
 - [Accueil FR](https://eduentry.ai/fr): Page d'accueil en français — évaluation de préparation au stage pour lycéens 14–18 ans.
+- [Technologie FR](https://eduentry.ai/fr/technologie): Évaluation stage en technologie — programmation, algorithmes, cybersécurité, UX.
+- [Entreprise FR](https://eduentry.ai/fr/entreprise): Évaluation stage en entreprise — stratégie, finance, opérations, leadership.
+- [Analyse de données FR](https://eduentry.ai/fr/analyse-de-donnees): Évaluation stage en analyse de données — graphiques, SQL, insights, statistiques.
+- [Marketing digital FR](https://eduentry.ai/fr/marketing-digital): Évaluation stage en marketing digital — SEO, réseaux sociaux, campagnes, contenu.
 - [Blog FR](https://eduentry.com/fr/blog): Articles sur les stages, l'expérience professionnelle et l'orientation en français.
 
 ### Eduentry.ai — Arabic (العربية)
 
 - [الصفحة الرئيسية AR](https://eduentry.ai/ar): الصفحة الرئيسية بالعربية — تقييم جاهزية التدريب لطلاب الثانوية 14–18 عاماً.
+- [تقنية AR](https://eduentry.ai/ar/taqniya): مسار التقنية — البرمجة، الخوارزميات، الأمن السيبراني، UX.
+- [أعمال AR](https://eduentry.ai/ar/aamal): مسار الأعمال — الاستراتيجية، المالية، العمليات، القيادة.
+- [تحليل البيانات AR](https://eduentry.ai/ar/bayanat): مسار تحليل البيانات — الرسوم البيانية، SQL، الرؤى، الإحصاء.
+- [التسويق الرقمي AR](https://eduentry.ai/ar/tawiq): مسار التسويق الرقمي — SEO، وسائل التواصل الاجتماعي، الحملات، المحتوى.
 - [Blog AR](https://eduentry.com/ar/blog): مقالات التدريب والمسار المهني باللغة العربية.
 
 ### Eduentry.ai — Chinese (中文)
 
 - [首页 ZH](https://eduentry.ai/zh): 中文首页 — 面向14至18岁高中生的实习准备评估，含即时报告。
+- [科技 ZH](https://eduentry.ai/zh/keji): 科技方向评估 — 编程逻辑、算法、网络安全、UX。
+- [商业 ZH](https://eduentry.ai/zh/shangye): 商业方向评估 — 战略、财务、运营、领导力。
+- [数据分析 ZH](https://eduentry.ai/zh/shuju): 数据分析方向评估 — 图表、SQL、分析洞察、统计。
+- [数字营销 ZH](https://eduentry.ai/zh/yingxiao): 数字营销方向评估 — SEO、社交媒体、广告投放、内容创作。
 - [Blog ZH](https://eduentry.com/zh/blog): 实习与职业发展中文指南。
+
+### Eduentry.ai — Russian (Русский)
+
+- [Главная RU](https://eduentry.ai/ru): Главная страница на русском — оценка готовности к стажировке для школьников 14–18 лет.
+- [Технологии RU](https://eduentry.ai/ru/tekhnologii): Направление технологий — программирование, алгоритмы, кибербезопасность, UX.
+- [Бизнес RU](https://eduentry.ai/ru/biznes): Направление бизнеса — стратегия, финансы, операции, лидерство.
+- [Анализ данных RU](https://eduentry.ai/ru/analiz-dannykh): Направление анализа данных — графики, SQL, аналитика, статистика.
+- [Цифровой маркетинг RU](https://eduentry.ai/ru/tsifrovoy-marketing): Направление цифрового маркетинга — SEO, соцсети, кампании, контент.
+- [Blog RU](https://eduentry.com/ru/blog): Статьи о стажировках и карьере на русском языке.
 
 ### Eduentry.ai blog posts — English
 
