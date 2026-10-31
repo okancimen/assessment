@@ -522,6 +522,8 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/blog/how-to-use-child-character-strengths-report",
     f"{BASE_URL}/tr/blog/cocuk-kisilik-degerlendirmesi-rehberi",
     f"{BASE_URL}/tr/blog/cocugun-karakter-guclerini-nasil-kullanirsin",
+    f"{BASE_URL}/tr/blog/stajyer-maasi-ne-kadar",
+    f"{BASE_URL}/tr/blog/yaz-staji-lise-ogrencisi",
     f"{BASE_URL}/es/blog/guia-evaluacion-personalidad-infantil",
     f"{BASE_URL}/es/blog/como-usar-informe-fortalezas-caracter",
     f"{BASE_URL}/fr/blog/guide-evaluation-personnalite-enfant",
