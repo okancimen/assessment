@@ -60,11 +60,26 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const WEB_APP_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'NWEA MAP RIT Score Calculator',
+  description: 'Free calculator to see which percentile band a Fall MAP Growth Math RIT score falls in for any grade, and whether it meets gifted-programme screening thresholds. Based on NWEA national norms.',
+  url: URL,
+  applicationCategory: 'EducationApplication',
+  operatingSystem: 'Any',
+  isAccessibleForFree: true,
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  featureList: 'RIT to percentile conversion, gifted screening threshold, national average comparison, Grades 3–8',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+}
+
 export default function NweaRitCalculatorPage() {
   return (
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEB_APP_SCHEMA) }} />
       <PublicNav />
 
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 sm:px-6 py-10 space-y-8">
@@ -104,6 +119,24 @@ export default function NweaRitCalculatorPage() {
               <p className="text-sm text-[#6e6e73] leading-relaxed">{a}</p>
             </div>
           ))}
+        </section>
+
+        {/* Related guides */}
+        <section className="bg-white rounded-3xl border border-[#d2d2d7] p-6 space-y-4">
+          <h2 className="text-lg font-bold text-[#1d1d1f]">Related MAP and gifted-testing guides</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { href: '/blog/nwea-map-scores-explained', label: 'NWEA MAP RIT Scores by Grade — 2026 Charts', tag: 'Scores' },
+              { href: '/blog/cogat-scores-explained', label: 'CogAT Scores Explained: SAS, Percentile & Stanine', tag: 'CogAT' },
+              { href: '/tools/map-percentile-calculator', label: 'MAP Percentile Calculator — Math & Reading', tag: 'Tool' },
+              { href: '/blog/gifted-program-testing-guide', label: 'Gifted Program Testing: Complete Parent Guide', tag: 'Guide' },
+            ].map(({ href, label, tag }) => (
+              <Link key={href} href={href} className="flex flex-col gap-1 rounded-2xl border border-[#d2d2d7] p-4 hover:border-[#4F46E5] transition-colors">
+                <span className="text-xs font-semibold text-[#4F46E5]">{tag}</span>
+                <span className="text-sm font-medium text-[#1d1d1f] leading-snug">{label}</span>
+              </Link>
+            ))}
+          </div>
         </section>
 
         {/* CTA */}

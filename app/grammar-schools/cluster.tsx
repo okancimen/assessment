@@ -73,6 +73,7 @@ export const NWEA_GIFTED_SLUGS = [
   'gifted-program-testing-guide',
   'cogat-scores-explained',
   'cogat-vs-nwea-map-gifted',
+  'wisc-v-scores-explained',
   'how-to-prepare-gifted-test',
 ]
 

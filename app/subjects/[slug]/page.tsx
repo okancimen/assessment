@@ -269,6 +269,29 @@ export default async function SubjectPage({ params }: { params: Promise<{ slug: 
           </div>
         </section>
 
+        {/* US gifted testing cross-links — NVR and VR only */}
+        {(slug === 'non-verbal-reasoning' || slug === 'verbal-reasoning') && (
+          <section className="mb-14">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              {slug === 'non-verbal-reasoning' ? 'Also tested in US gifted identification' : 'Also tested in the CogAT Verbal Battery'}
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                { href: '/blog/cogat-scores-explained', tag: 'CogAT', title: 'CogAT Scores Explained: SAS, Percentile & Stanine Guide', time: '10 min read' },
+                { href: '/blog/gifted-program-testing-guide', tag: 'Guide', title: 'US Gifted Testing 2026: CogAT, WISC-V & Score Thresholds', time: '9 min read' },
+              ].map(({ href, tag, title, time }) => (
+                <Link key={href} href={href} className="group border border-gray-100 rounded-xl p-5 hover:border-indigo-200 hover:bg-indigo-50/40 transition-colors flex flex-col">
+                  <div className="mb-3">
+                    <span className="text-xs font-medium text-indigo-600 bg-indigo-50 rounded-full px-2.5 py-0.5">{tag}</span>
+                  </div>
+                  <div className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-indigo-700 transition-colors flex-1">{title}</div>
+                  <div className="text-xs text-gray-500">{time}</div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* 11+ link */}
         <section className="mb-14">
           <Link href="/11-plus" className="flex items-center justify-between bg-indigo-50 border border-indigo-100 rounded-xl px-6 py-4 hover:bg-indigo-100/60 transition-colors group">

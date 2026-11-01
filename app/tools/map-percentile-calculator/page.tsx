@@ -68,11 +68,26 @@ const BREADCRUMB_SCHEMA = {
   ],
 }
 
+const WEB_APP_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'NWEA MAP Percentile Calculator',
+  description: 'Free tool to look up the exact percentile band for any NWEA MAP Growth RIT score by grade and subject (Math or Reading), including gifted-screening eligibility. Based on NWEA 2020 national norms.',
+  url: URL,
+  applicationCategory: 'EducationApplication',
+  operatingSystem: 'Any',
+  isAccessibleForFree: true,
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  featureList: 'MAP percentile lookup by grade and subject, gifted-screening eligibility, Math and Reading norms, Fall testing window, Grades K–12',
+  provider: { '@type': 'Organization', name: 'Eduentry', url: 'https://eduentry.com' },
+}
+
 export default function MapPercentileCalculatorPage() {
   return (
     <div className="min-h-screen bg-[#f5f5f7] flex flex-col">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEB_APP_SCHEMA) }} />
       <PublicNav />
 
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 sm:px-6 py-10 space-y-8">
