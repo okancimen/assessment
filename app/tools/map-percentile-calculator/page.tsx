@@ -140,6 +140,24 @@ export default function MapPercentileCalculatorPage() {
           ))}
         </section>
 
+        {/* Related guides */}
+        <section className="bg-white rounded-3xl border border-[#d2d2d7] p-6 space-y-4">
+          <h2 className="text-lg font-bold text-[#1d1d1f]">Related MAP and gifted-testing guides</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { href: '/blog/nwea-map-scores-explained', label: 'NWEA MAP RIT Scores by Grade — 2026 Charts', tag: 'Scores' },
+              { href: '/blog/cogat-scores-explained', label: 'CogAT Scores Explained: SAS, Percentile & Stanine', tag: 'CogAT' },
+              { href: '/blog/cogat-vs-nwea-map-gifted', label: 'CogAT vs. NWEA MAP for Gifted Identification', tag: 'Comparison' },
+              { href: '/blog/gifted-program-testing-guide', label: 'Gifted Program Testing: Complete Parent Guide', tag: 'Guide' },
+            ].map(({ href, label, tag }) => (
+              <Link key={href} href={href} className="flex flex-col gap-1 rounded-2xl border border-[#d2d2d7] p-4 hover:border-[#4F46E5] transition-colors">
+                <span className="text-xs font-semibold text-[#4F46E5]">{tag}</span>
+                <span className="text-sm font-medium text-[#1d1d1f] leading-snug">{label}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-6 flex flex-col sm:flex-row sm:items-center gap-4">
           <div className="flex-1">

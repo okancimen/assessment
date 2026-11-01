@@ -72,6 +72,7 @@ export const NWEA_GIFTED_SLUGS = [
   'nwea-map-growth-norms',
   'gifted-program-testing-guide',
   'cogat-scores-explained',
+  'cogat-vs-nwea-map-gifted',
   'how-to-prepare-gifted-test',
 ]
 
@@ -84,8 +85,9 @@ export function NweaGiftedClusterBox({ current }: { current: string }) {
     <section className="mt-12 border border-gray-100 rounded-2xl p-6 bg-gray-50/50">
       <h2 className="text-lg font-bold text-gray-900 mb-1">NWEA MAP scores and US gifted testing: complete guide</h2>
       <p className="text-sm text-gray-600 mb-5">
-        Start with the <Link href="/blog/nwea-map-scores-explained" className="text-indigo-600 underline">MAP scores by grade guide</Link> or use
-        the <Link href="/tools/nwea-rit-calculator" className="text-indigo-600 underline">free RIT-to-percentile calculator</Link>.
+        Start with the <Link href="/blog/nwea-map-scores-explained" className="text-indigo-600 underline">MAP scores by grade guide</Link>, use
+        the <Link href="/tools/nwea-rit-calculator" className="text-indigo-600 underline">RIT-to-percentile calculator</Link>, or look up an exact score with
+        the <Link href="/tools/map-percentile-calculator" className="text-indigo-600 underline">MAP percentile calculator</Link>.
       </p>
       <div className="grid sm:grid-cols-2 gap-3">
         {NWEA_GIFTED_GUIDES.filter(p => p.slug !== current).map(p => (

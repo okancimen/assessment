@@ -1088,7 +1088,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: '2026-10-17',
     dateModified: '2026-10-28',
     readTime: '10 min read',
-    tags: ['CogAT', 'Gifted Testing', 'US Education', 'Gifted Programs', 'SAS Score', 'Cognitive Abilities Test'],
+    tags: ['CogAT', 'NWEA MAP', 'Gifted Testing', 'US Education', 'Gifted Programs', 'SAS Score', 'Cognitive Abilities Test'],
     faqs: [
       {
         q: 'What is a good CogAT score?',

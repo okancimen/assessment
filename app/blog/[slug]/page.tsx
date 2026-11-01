@@ -52,6 +52,12 @@ const SERVICE_LINKS = [
     desc: 'Enter your child\'s RIT score and grade to get a percentile ranking and gifted-programme cut-off comparison.',
   },
   {
+    tags: ['NWEA MAP', 'RIT Scores', 'Gifted Testing', 'Gifted Programs', 'US Education', 'CogAT', 'MAP Growth'],
+    href: '/tools/map-percentile-calculator',
+    title: 'NWEA MAP Percentile Calculator',
+    desc: 'Enter grade, subject and Fall RIT score to instantly see the percentile band and gifted-screening eligibility range. Based on NWEA 2020 norms.',
+  },
+  {
     tags: ['CogAT', 'NWEA MAP', 'ISEE', 'SSAT', 'Gifted Testing', 'Netherlands', 'UAE', 'Canada', 'Australia'],
     href: '/subjects',
     title: 'Academic Subjects Covered',
