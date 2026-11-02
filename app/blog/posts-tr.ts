@@ -661,13 +661,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'pisa-nedir-cocugunuz-nasil-hazirlanir',
     title: 'PISA Nedir, Pısa Ne Demek? 2025 Türkiye Sonuçları ve Hazırlık Rehberi',
-    shortTitle: 'PISA Nedir? 2026: Türkiye Sonuçları, Puan Tablosu ve Evde Hazırlık',
+    shortTitle: 'PISA Nedir? Açılımı, Pısa Ne Demek — Türkiye 2025 Sonuçları',
     description:
       'PISA nedir? Her 3 yılda bir 91 ülkede uygulanan matematik, okuma ve fen sınavı. 2025 Türkiye: matematik 463 (OECD 472). 4 pratik hazırlık yolu ve ülke sıralama tablosu — ebeveynler için.',
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2025\'te okumada OECD ortalamasını yakaladı; matematikte 463 ile OECD ortalaması (472) yakınında yer aldı.',
 
     date: '2026-09-14',
-    dateModified: '2026-10-28',
+    dateModified: '2026-11-03',
     readTime: '13 dk okuma',
     tags: ['PISA', 'Uluslararası Kıyaslama', 'Akademik Değerlendirme', 'Ebeveyn Rehberi', 'LGS', 'YKS'],
     faqs: [
