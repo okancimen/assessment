@@ -3456,6 +3456,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
         a: 'Eduentry\'s free assessment covers both dimensions in one sitting. The cognitive (aptitude) section is an adaptive test measuring verbal reasoning, numerical reasoning, and abstract reasoning — approximately 35 minutes. The personality section (VIA character strengths) is parent-rated and covers 12–24 traits depending on the child\'s age (6–22), taking 5–12 minutes. The combined report shows a cognitive percentile profile alongside the top 5 Signature Strengths and 3 Growth Areas, allowing parents and educators to see both dimensions side by side.',
       },
     ],
+    howToSteps: [
+      { name: 'Take the cognitive aptitude assessment (~35 minutes)', text: 'Complete the adaptive test covering verbal reasoning, numerical reasoning, and abstract/nonverbal reasoning. Each question adjusts based on your previous answer, producing a precise percentile score benchmarked against an international peer group. No account needed to start.' },
+      { name: 'Complete the character strengths assessment (~5–12 minutes)', text: 'Answer the parent-rated VIA character strengths questions for your child. The system selects the right age tier automatically (6–9, 10–13, 14–17, or 18–20). You rate observed behaviours on a 1–5 scale — no specialist knowledge required.' },
+      { name: 'Read the combined report and identify which quadrant your child is in', text: 'The report shows the cognitive percentile profile (verbal, numerical, abstract) alongside the top 5 Signature Strengths and 3 Growth Areas side by side. Use the four-quadrant framework — high aptitude + strong strengths, high aptitude + low self-regulation, average aptitude + high perseverance, or average aptitude + low engagement — to identify the right next steps.' },
+    ],
     cta: {
       heading: 'Get your child\'s full profile — aptitude + personality, free',
       body: 'Cognitive reasoning (verbal, numerical, abstract) + 24 VIA character strengths in one sitting. Ages 6–22. Instant report, no account needed.',
