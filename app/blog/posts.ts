@@ -698,13 +698,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'nwea-map-scores-explained',
     title: 'NWEA MAP Scores by Grade Level 2026: RIT Charts, Averages & Gifted Cut-offs',
-    shortTitle: 'NWEA MAP RIT Scores by Grade Level 2026: Charts & Benchmarks',
+    shortTitle: 'MAP Scores by Grade Level 2026: RIT Chart, K–12 Averages & Gifted Cut-offs',
     description:
-      '2025–26 MAP RIT averages by grade: Grade 3 Math = 200, Grade 8 = 221, gifted cut-off (95th %ile) ≈ RIT 230+. Complete K–12 charts for Math and Reading, plus a free percentile lookup.',
+      'Is your child on grade level? MAP Math avg: Gr 3 = 200, Gr 5 = 214, Gr 8 = 221. RIT charts for every grade K–12 in Math and Reading, gifted cut-offs (95th %ile ≈ 230+), and a free percentile calculator.',
     tldr: 'According to NWEA\'s 2020 national norming study — the current benchmark for 2025–26 — the national average MAP Math RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
-    dateModified: '2026-10-28',
+    dateModified: '2026-11-03',
     readTime: '10 min read',
     tags: ['NWEA MAP', 'RIT Scores', 'US Education', 'Gifted Programs', 'Assessment'],
     faqs: [
