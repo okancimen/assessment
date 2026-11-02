@@ -827,12 +827,12 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'staj-defteri-nasil-doldurulur',
     title: 'Staj Defteri Nasıl Doldurulur? Örnek + Nereden Alınır, Kim İmzalar',
-    shortTitle: 'Staj Defteri: Nereden Alınır, Kim İmzalar, Ne Zaman Teslim?',
-    description: 'Staj defteri: günlük faaliyet kaydı, haftalık özet, imza süreci ve teslim tarihi adım adım. Okul ve kurum formatlarına göre doldurma rehberi + örnek ifadeler.',
+    shortTitle: 'Staj Defteri Nasıl Doldurulur? Nereden Alınır, Kim İmzalar 2026',
+    description: 'Staj defterini nasıl dolduracaksınız? Günlük faaliyet, haftalık özet ve imza adımları + örnek ifadeler. Nereden alınır, kimin imzalaması gerekir, ne zaman teslim edilir.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
-    dateModified: '2026-10-20',
+    dateModified: '2026-11-03',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Staj Defteri', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi', 'Lise Staj'],
     faqs: [
