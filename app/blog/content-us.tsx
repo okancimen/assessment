@@ -2569,6 +2569,23 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           for the research behind the framework.
         </p>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Personality Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/how-to-use-child-character-strengths-report', tag: 'Practical Guide', title: 'How to Read Your Child\'s Character Strengths Report' },
+            { href: '/blog/via-character-strengths-children', tag: 'Framework', title: 'VIA Character Strengths for Children: All 24 Explained' },
+            { href: '/blog/personality-vs-aptitude-test', tag: 'Comparison', title: 'Personality Test vs Aptitude Test: What\'s the Difference?' },
+            { href: '/blog/character-strengths-academic-success', tag: 'Research', title: 'How Character Strengths Predict Academic Success' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -2703,6 +2720,23 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           </Link>{' '}
           for an overview of the 24 VIA character strengths, the 6 virtues, and how the assessment is structured by age tier.
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Personality Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/child-personality-assessment-guide', tag: 'Introduction', title: 'What Is a Child Personality Assessment? The VIA Character Strengths Test Explained' },
+            { href: '/blog/personality-vs-aptitude-test', tag: 'Comparison', title: 'Personality Test vs Aptitude Test: What\'s the Difference?' },
+            { href: '/blog/via-character-strengths-children', tag: 'Framework', title: 'VIA Character Strengths for Children: All 24 Explained' },
+            { href: '/blog/character-strengths-academic-success', tag: 'Research', title: 'How Character Strengths Predict Academic Success' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   ),
@@ -3669,6 +3703,257 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
             { href: '/blog/what-is-a-good-nwea-map-score', tag: 'Quick Reference', title: 'What Is a Good NWEA MAP Score? Grade-by-Grade Guide' },
             { href: '/blog/nwea-map-score-dropped', tag: 'Troubleshooting', title: 'Why Did My Child\'s MAP Score Drop?' },
             { href: '/blog/how-to-improve-map-reading-score', tag: 'Reading', title: 'How to Improve Your Child\'s MAP Reading Score' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'personality-vs-aptitude-test': (
+    <>
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is the Difference Between a Personality Test and an Aptitude Test?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Both tests assess your child — but they measure completely different things, answer different questions, and produce results that are most powerful when read together.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A <strong>personality test</strong> measures <em>who your child is</em>: their values, motivations, and character traits. It reveals how they typically engage with challenges, what energises them, how they relate to others, and which behavioural tendencies are most natural to them. The most widely validated personality framework for children is the <strong>VIA (Values in Action) Character Strengths</strong> model — 24 character strengths organised across 6 virtues, developed by positive psychologists Dr. Martin Seligman and Dr. Neal Mayerson.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          An <strong>aptitude test</strong> measures <em>what your child can do</em>: their cognitive ability — specifically how quickly and accurately they reason with words (verbal reasoning), numbers (numerical reasoning), and abstract patterns (nonverbal reasoning). Well-known aptitude tests include the CogAT, WISC-V, and NNAT. These tests are used for gifted programme identification, school placement, and benchmarking against national norms.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          The key distinction is this: aptitude measures the <em>ceiling</em> of what a child can achieve with a given level of effort. Personality determines how close to that ceiling they actually get.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What a Personality Test Measures</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A personality assessment for children — when grounded in the VIA framework — identifies 24 character strengths, each reflecting a core value or way of engaging with the world. These are not fixed labels: they are tendencies that can be developed with deliberate practice.
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-amber-50">
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Virtue</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Character Strengths</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ['Wisdom', 'Creativity, Curiosity, Judgement, Love of Learning, Perspective'],
+                ['Courage', 'Bravery, Perseverance, Honesty, Zest'],
+                ['Humanity', 'Love, Kindness, Social Intelligence'],
+                ['Justice', 'Teamwork, Fairness, Leadership'],
+                ['Temperance', 'Forgiveness, Humility, Prudence, Self-Regulation'],
+                ['Transcendence', 'Appreciation of Beauty, Gratitude, Hope, Humour, Spirituality'],
+              ].map(([virtue, strengths]) => (
+                <tr key={virtue} className="even:bg-gray-50">
+                  <td className="border border-gray-200 px-4 py-2 font-medium">{virtue}</td>
+                  <td className="border border-gray-200 px-4 py-2 text-gray-600">{strengths}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Five strengths have the strongest independent research links to academic performance: <strong>Self-Regulation</strong> (study habits and sustained focus), <strong>Perseverance</strong> (task completion under difficulty), <strong>Curiosity</strong> (depth of engagement), <strong>Love of Learning</strong> (intrinsic motivation), and <strong>Zest</strong> (energy and attendance). A child who scores high on these five traits consistently outperforms their cognitive test scores would predict — and a child who scores low on them consistently underperforms.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Importantly, a personality test cannot tell you how fast your child reasons or how large their working memory is. It cannot screen for giftedness. It cannot predict whether your child will pass an 11-plus or earn a place in a GT programme. For that, you need an aptitude test.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What an Aptitude Test Measures</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          An aptitude test measures cognitive ability — the raw intellectual toolkit a child uses to learn, problem-solve, and reason. Most standardised aptitude tests assess three core domains:
+        </p>
+        <div className="space-y-4 mb-6">
+          {[
+            {
+              label: 'Verbal Reasoning',
+              desc: 'The ability to understand language, draw logical inferences, identify word relationships, and reason with text-based information. Strong verbal reasoning predicts performance in English, History, Social Studies, and any subject requiring reading comprehension and written argument.',
+            },
+            {
+              label: 'Numerical Reasoning',
+              desc: 'The ability to recognise numerical patterns, apply arithmetic and algebraic logic, and interpret data. Predicts performance in Mathematics and quantitative sciences, and is assessed in most gifted identification batteries (CogAT Quantitative, WISC-V Working Memory).',
+            },
+            {
+              label: 'Abstract / Nonverbal Reasoning',
+              desc: 'The ability to identify patterns in shapes, sequences, and matrices — without relying on language or prior knowledge. This is the domain most independent of prior schooling, making it a useful measure of fluid intelligence and problem-solving potential.',
+            },
+          ].map(({ label, desc }) => (
+            <div key={label} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{label}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Aptitude tests produce a percentile rank — a number showing how your child&apos;s score compares to other children of the same age nationally. A score at the 85th percentile means your child scored higher than 85% of same-age peers. Most gifted programmes require a score at or above the 90th–95th percentile for initial screening. An aptitude test cannot, however, tell you why your child is performing below their score potential — that is where personality data becomes essential.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Personality vs Aptitude: Side-by-Side Comparison</h2>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-indigo-50">
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Dimension</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Personality Test</th>
+                <th className="border border-gray-200 px-4 py-2 text-left font-semibold">Aptitude Test</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ['What it measures', 'Character traits, values, motivations', 'Cognitive ability, reasoning speed'],
+                ['Answers the question', '"Who is my child and how do they engage?"', '"What can my child do and how do they compare?"'],
+                ['Can it change?', 'Yes — with deliberate practice over months', 'Stable in the short term; develops with age'],
+                ['Predicts', 'Engagement, resilience, wellbeing, career fit', 'Academic potential, problem-solving ceiling'],
+                ['Used for', 'Self-awareness, strength development, career direction', 'School placement, gifted identification, benchmarking'],
+                ['Format', 'Parent-rated behaviour questions', 'Timed reasoning tasks (adaptive or fixed)'],
+                ['Time', '5–12 minutes', '20–60 minutes'],
+                ['Examples', 'VIA Strengths, Big Five (OCEAN)', 'CogAT, WISC-V, NNAT, Eduentry'],
+              ].map(([dim, pers, apt]) => (
+                <tr key={dim} className="even:bg-gray-50">
+                  <td className="border border-gray-200 px-4 py-2 font-medium text-gray-900">{dim}</td>
+                  <td className="border border-gray-200 px-4 py-2 text-gray-600">{pers}</td>
+                  <td className="border border-gray-200 px-4 py-2 text-gray-600">{apt}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Can Personality Predict Academic Success?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Yes — but only through specific pathways, and not independently of cognitive ability.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A landmark 2005 meta-analysis by Angela Duckworth and Martin Seligman found that self-discipline (closely related to the VIA strength of Self-Regulation) predicted academic performance more strongly than IQ in a sample of 8th-grade students. A 2019 meta-analysis of 38 studies found that character strengths interventions in school settings produced significant improvements in academic performance and engagement, independent of cognitive ability.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The mechanism is straightforward: character strengths affect <em>how a child uses their cognitive ability</em>. A child with a high aptitude score but low perseverance skips the hard problems. A child with average aptitude but high self-regulation does every problem twice. Over a school year, the second child often outperforms the first.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          However, character strengths cannot compensate for very large cognitive gaps in highly academic settings. A child at the 20th percentile in verbal reasoning cannot write a university-level essay by working harder — the cognitive foundation is not yet there. This is why a personality test and an aptitude test answer different questions and need to be read together.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Capability vs Engagement Gap</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          When a child underperforms at school, parents and teachers usually notice the outcome (poor grades, disengagement) without knowing the cause. Two completely different problems look identical from the outside:
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+          {[
+            {
+              title: 'Capability gap',
+              desc: 'The cognitive foundation for the work being demanded is not yet in place. Verbal reasoning, working memory, or numerical reasoning is below the level required. More effort will not close this gap alone — the cognitive skills need development.',
+              color: 'border-amber-100 bg-amber-50',
+              badge: 'text-amber-700',
+            },
+            {
+              title: 'Engagement gap',
+              desc: 'The cognitive ability is present, but self-regulation, perseverance, or curiosity is low. The child has the tools but is not using them. Additional cognitive drilling makes this worse — what is needed is strength-based development.',
+              color: 'border-indigo-100 bg-indigo-50',
+              badge: 'text-indigo-700',
+            },
+          ].map(({ title, desc, color, badge }) => (
+            <div key={title} className={`rounded-xl border p-5 ${color}`}>
+              <div className={`font-semibold text-sm mb-2 ${badge}`}>{title}</div>
+              <p className="text-sm text-gray-700 leading-relaxed">{desc}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Without both assessments, parents often apply the wrong solution. A child with an engagement gap is sent for extra Maths tutoring (which treats a capability gap that does not exist) when what they actually need is to understand why Maths matters to them and to build self-regulation habits. A child with a genuine capability gap is told to &quot;work harder&quot; when targeted cognitive development and adjusted expectations would be far more effective.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Reading the aptitude profile and the personality profile together gives you a diagnostic that neither provides alone.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Use Both Results Together: A Practical Framework</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Once you have both profiles, place your child in one of four positions:
+        </p>
+        <div className="space-y-4 mb-6">
+          {[
+            {
+              label: 'High aptitude + strong key strengths (self-regulation, perseverance, curiosity)',
+              action: 'Accelerate and enrich. This child is likely underserved by standard curriculum. Explore gifted programme referral, subject acceleration, or extracurricular challenge. Focus on building on Signature Strengths rather than patching weaknesses.',
+              color: 'bg-green-50 border-green-100',
+              text: 'text-green-700',
+            },
+            {
+              label: 'High aptitude + low self-regulation or perseverance',
+              action: 'Pause academic pressure. Addressing strength development first will produce larger gains than additional academic drilling. Work on study habit systems and motivation before extending curriculum demands. Explore which Signature Strengths can be used as entry points to difficult subjects.',
+              color: 'bg-amber-50 border-amber-100',
+              text: 'text-amber-700',
+            },
+            {
+              label: 'Average aptitude + high perseverance and love of learning',
+              action: 'Maintain consistent challenge. This child is likely to catch up over time — research shows high conscientiousness increasingly outperforms raw aptitude over multi-year periods. Protect their intrinsic motivation; do not overschedule or over-pressurise.',
+              color: 'bg-blue-50 border-blue-100',
+              text: 'text-blue-700',
+            },
+            {
+              label: 'Average aptitude + low engagement strengths',
+              action: 'Address both. This child needs cognitive support (structured practice, good teaching, possibly specialist input) alongside strength-building activities. Start with one Growth Area at a time. Identify environments where their Signature Strengths activate — these are the contexts where both motivation and learning are highest.',
+              color: 'bg-gray-50 border-gray-200',
+              text: 'text-gray-700',
+            },
+          ].map(({ label, action, color, text }) => (
+            <div key={label} className={`rounded-xl border p-5 ${color}`}>
+              <div className={`font-semibold text-sm mb-2 ${text}`}>{label}</div>
+              <p className="text-sm text-gray-700 leading-relaxed">{action}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How Eduentry Covers Both in One Assessment</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Eduentry&apos;s free assessment is designed to produce both profiles in a single session:
+        </p>
+        <div className="space-y-4 mb-6">
+          {[
+            { step: '1', title: 'Cognitive aptitude assessment (~35 minutes)', detail: 'An adaptive test covering verbal reasoning, numerical reasoning, and abstract/nonverbal reasoning. The adaptive format means each question adjusts based on the previous answer, producing a precise percentile estimate with fewer questions than fixed-format tests. Results are benchmarked against an international peer group.' },
+            { step: '2', title: 'Character strengths assessment (~5–12 minutes)', detail: 'Parent-rated VIA character strengths covering 12–24 traits depending on the child\'s age (6–22). Four age-calibrated tiers (6–9, 10–13, 14–17, 18–20) use age-appropriate question language. The report identifies the top 5 Signature Strengths, 3 Growth Areas, and AI-generated development activities for each.' },
+            { step: '3', title: 'Combined report', detail: 'Both profiles appear in the same report. Cognitive percentile (verbal, numerical, abstract) alongside personality Signature Strengths and Growth Areas. This makes it straightforward to identify which of the four quadrant positions above your child sits in and what the right next steps are.' },
+          ].map(({ step, title, detail }) => (
+            <div key={step} className="flex gap-4 p-5 rounded-xl border border-gray-100">
+              <div className="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 font-bold flex items-center justify-center flex-shrink-0 text-sm">{step}</div>
+              <div>
+                <div className="font-semibold text-gray-900 mb-1">{title}</div>
+                <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Assessment Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/child-personality-assessment-guide', tag: 'Personality', title: 'What Is a Child Personality Assessment? The VIA Character Strengths Test Explained' },
+            { href: '/blog/character-strengths-academic-success', tag: 'Research', title: 'How Character Strengths Predict Academic Success' },
+            { href: '/blog/how-to-use-child-character-strengths-report', tag: 'Practical Guide', title: 'How to Read Your Child\'s Character Strengths Report' },
+            { href: '/blog/gifted-program-testing-guide', tag: 'Aptitude', title: 'Gifted Program Testing: CogAT, WISC-V, MAP and What Scores You Need' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>

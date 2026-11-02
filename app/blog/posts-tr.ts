@@ -2363,6 +2363,37 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     ],
     cta: { heading: 'Yerleştirmeden önce çocuğunuzun nerede durduğunu öğrenin', body: 'Ücretsiz uyarlanabilir değerlendirme, Sözel Muhakeme, Matematik ve Sözel Olmayan Muhakeme\'de doğrulanmış bir puan verir. 35 dakika sürer. Hesap gerekmez.', label: 'Ücretsiz değerlendirmeyi başlat', href: '/academic-assessment' },
   },
+  {
+    slug: 'kisilik-testi-vs-yetenek-testi',
+    contentSlug: 'personality-vs-aptitude-test',
+    title: 'Kişilik Testi mi Yetenek Testi mi: Fark Nedir ve Çocuğunuz Neden İkisine de İhtiyaç Duyar?',
+    shortTitle: 'Kişilik Testi vs Yetenek Testi: Temel Farklar',
+    description: 'Kişilik testi çocuğunuzun kim olduğunu ortaya koyar; yetenek testi ne yapabileceğini ölçer. Her biri neyi tahmin eder, nasıl bir arada kullanılır ve neden birinin diğerini tamamladığını anlatan rehber.',
+    tldr: 'Kişilik testi (VIA karakter güçleri gibi) motivasyonları, değerleri ve davranış eğilimlerini ölçer — zekayı değil. Yetenek testi bilişsel kapasiteyi ölçer: sözel, sayısal ve soyut muhakemeyi. Araştırmalar yüksek yetenek + düşük öz-düzenlemenin, orta yetenek + yüksek azim ile geride kaldığını gösteriyor. Her ikisi birlikte bir performans açığının kapasite sorunu mu yoksa motivasyon sorunu mu olduğunu ortaya koyar. Eduentry\'nin ücretsiz değerlendirmesi her ikisini tek oturumda kapsar: bilişsel + 24 VIA karakter gücü, 6–22 yaş.',
+    date: '2026-11-02',
+    readTime: '9 dk okuma',
+    tags: ['Kişilik Değerlendirmesi', 'Yetenek Testi', 'Çocuk Gelişimi', 'Ebeveyn Rehberi', 'Karakter Güçleri'],
+    faqs: [
+      {
+        q: 'Kişilik testi ile yetenek testi arasındaki fark nedir?',
+        a: 'Kişilik testi çocuğunuzun kim olduğunu ölçer: değerleri, motivasyonları ve karakter özellikleri. En yaygın çocuk kişilik çerçevesi VIA Karakter Güçleri modelidir (6 erdem kategorisinde 24 güç). Yetenek testi ise ne yapabileceğini ölçer: sözel muhakeme (dil ve mantık), sayısal muhakeme ve soyut/sözel olmayan muhakeme. İkisi birbirini tamamlar; biri diğerinin yerini alamaz.',
+      },
+      {
+        q: 'Kişilik testi akademik başarıyı tahmin edebilir mi?',
+        a: 'Evet — ama yalnızca belirli özellikler aracılığıyla. Öz-Düzenleme, Azim, Merak, Öğrenme Sevgisi ve Coşku karakteri akademik performansla en güçlü bağımsız ilişkiyi gösteriyor. Yüksek öz-düzenlemeli ortalama yetenekli bir çocuk, düşük öz-düzenlemeli yüksek yetenekli bir çocuğu çoğunlukla geride bırakır. Ancak kişilik testi, çocuğun belirli bir düzeyde başarmaya yetecek bilişsel araçlara sahip olup olmadığını söyleyemez — bunun için yetenek testi gerekir.',
+      },
+      {
+        q: 'Önce hangisini yaptırmalıyım — kişilik mi yetenek mi?',
+        a: 'Cevap, sormak istediğiniz soruya bağlı. Çocuğunuz neden düşük performans gösteriyor diye merak ediyorsanız her ikisini birlikte yaptırın. Kariyer yönelimi veya öğrenme stili konusunda düşünüyorsanız kişilik değerlendirmesi daha hızlı yanıt verir. Üstün yetenekli program başvurusu veya okul yerleştirmesi için yetenek testi önceliklidir.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun tam profilini ücretsiz alın — yetenek + kişilik',
+      body: 'Bilişsel muhakeme (sözel, sayısal, soyut) + 24 VIA karakter gücü tek oturumda. 6–22 yaş. Anında rapor, hesap gerekmez.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/cocugunuzun-potansiyeli',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

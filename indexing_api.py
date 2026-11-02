@@ -517,7 +517,14 @@ URLS_TO_SUBMIT = [
     f"{BASE_URL}/zh/xingge-pinggu",
     f"{BASE_URL}/zh/xueshu-pinggu",
     f"{BASE_URL}/zh/xingge-yangben-baogao",
-    # ── personality assessment blog posts (Oct 2026) ──────────────────────────
+    # ── personality assessment blog posts (Oct–Nov 2026) ─────────────────────
+    f"{BASE_URL}/blog/personality-vs-aptitude-test",
+    f"{BASE_URL}/tr/blog/kisilik-testi-vs-yetenek-testi",
+    f"{BASE_URL}/es/blog/test-personalidad-vs-test-aptitud",
+    f"{BASE_URL}/fr/blog/test-personnalite-vs-test-aptitude",
+    f"{BASE_URL}/ar/blog/ikhtibarat-shakhsiya-muqabil-ikhtibarat-qudrat",
+    f"{BASE_URL}/ru/blog/test-lichnosti-vs-test-sposobnostey",
+    f"{BASE_URL}/zh/blog/xingge-ceshi-vs-nengli-ceshi",
     f"{BASE_URL}/blog/child-personality-assessment-guide",
     f"{BASE_URL}/blog/how-to-use-child-character-strengths-report",
     f"{BASE_URL}/tr/blog/cocuk-kisilik-degerlendirmesi-rehberi",

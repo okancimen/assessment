@@ -1544,6 +1544,23 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     ],
     cta: { heading: 'Descubre dónde está tu hijo antes de la práctica', body: 'Una evaluación adaptativa gratuita da a tu hijo una puntuación verificada en Razonamiento Verbal, Matemáticas y Razonamiento No Verbal. 35 minutos. Sin cuenta necesaria.', label: 'Iniciar evaluación gratuita', href: '/academic-assessment' },
   },
+  {
+    slug: 'test-personalidad-vs-test-aptitud',
+    contentSlug: 'personality-vs-aptitude-test',
+    title: 'Test de Personalidad vs Test de Aptitud: Diferencias Clave y Por Qué Tu Hijo Necesita Ambos',
+    shortTitle: 'Test de Personalidad vs Test de Aptitud',
+    description: 'Un test de personalidad revela quién es tu hijo — valores, motivaciones y rasgos de carácter. Un test de aptitud mide lo que puede hacer — razonamiento, memoria de trabajo y capacidad cognitiva. Por qué ninguno es suficiente solo.',
+    tldr: 'Un test de personalidad (como las fortalezas de carácter VIA) identifica motivaciones, valores y tendencias conductuales — no mide la inteligencia. Un test de aptitud mide la capacidad cognitiva: razonamiento verbal, numérico y abstracto. La investigación muestra que alta aptitud con baja autorregulación rinde por debajo de aptitud moderada con alta perseverancia. Eduentry combina ambas en una sola sesión: razonamiento cognitivo + 24 fortalezas VIA, edades 6–22.',
+    date: '2026-11-02',
+    readTime: '9 min de lectura',
+    tags: ['Evaluación de Personalidad', 'Test de Aptitud', 'Desarrollo Infantil', 'Guía para Padres', 'Fortalezas de Carácter'],
+    faqs: [
+      { q: '¿Cuál es la diferencia entre un test de personalidad y un test de aptitud?', a: 'Un test de personalidad mide quién es tu hijo: sus valores, motivaciones y rasgos de carácter — cómo se enfrenta a los retos y qué le da energía. El marco VIA identifica 24 fortalezas en 6 virtudes. Un test de aptitud mide lo que puede hacer: razonamiento verbal, numérico y abstracto. Los dos se complementan y ninguno sustituye al otro.' },
+      { q: '¿Puede un test de personalidad predecir el éxito académico?', a: 'Sí, a través de rasgos específicos. La Autorregulación, la Perseverancia, la Curiosidad, el Amor al Aprendizaje y el Entusiasmo predicen el rendimiento académico de forma independiente. Un niño con aptitud media pero alta autorregulación supera con frecuencia a un niño con alta aptitud pero baja autorregulación. Sin embargo, la personalidad no puede compensar brechas cognitivas muy grandes.' },
+      { q: '¿Cuál debería hacer primero — personalidad o aptitud?', a: 'Depende de la pregunta. Si tu hijo rinde por debajo de lo esperado y quieres saber por qué, haz ambas a la vez. Para dirección profesional o estilo de aprendizaje, la evaluación de personalidad responde antes. Para programas dotados o selección escolar, el test de aptitud es prioritario.' },
+    ],
+    cta: { heading: 'Perfil completo de tu hijo — aptitud + personalidad, gratis', body: 'Razonamiento cognitivo (verbal, numérico, abstracto) + 24 fortalezas VIA en una sola sesión. Edades 6–22. Informe inmediato, sin cuenta.', label: 'Iniciar evaluación gratuita', href: '/academic-assessment' },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {

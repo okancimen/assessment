@@ -1810,6 +1810,23 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     ],
     cta: { heading: 'Découvre où en est ton enfant avant le stage', body: 'Une évaluation adaptive gratuite donne à votre enfant un score vérifié en Raisonnement Verbal, Mathématiques et Raisonnement Non-Verbal. 35 minutes. Sans compte nécessaire.', label: 'Démarrer l\'évaluation gratuite', href: '/academic-assessment' },
   },
+  {
+    slug: 'test-personnalite-vs-test-aptitude',
+    contentSlug: 'personality-vs-aptitude-test',
+    title: 'Test de Personnalité vs Test d\'Aptitude : Différences Clés et Pourquoi Votre Enfant a Besoin des Deux',
+    shortTitle: 'Test de Personnalité vs Test d\'Aptitude',
+    description: 'Un test de personnalité révèle qui est votre enfant — valeurs, motivations et traits de caractère. Un test d\'aptitude mesure ce qu\'il peut faire — raisonnement, mémoire de travail et capacité cognitive. Pourquoi aucun des deux ne suffit seul.',
+    tldr: 'Un test de personnalité (comme les forces de caractère VIA) identifie les motivations, valeurs et tendances comportementales — il ne mesure pas l\'intelligence. Un test d\'aptitude mesure la capacité cognitive : raisonnement verbal, numérique et abstrait. La recherche montre constamment qu\'une haute aptitude avec une faible autorégulation performe moins bien qu\'une aptitude modérée avec une haute persévérance. Eduentry combine les deux en une seule session : raisonnement cognitif + 24 forces VIA, âges 6–22.',
+    date: '2026-11-02',
+    readTime: '9 min de lecture',
+    tags: ['Évaluation de Personnalité', 'Test d\'Aptitude', 'Développement Enfant', 'Guide Parents', 'Forces de Caractère'],
+    faqs: [
+      { q: 'Quelle est la différence entre un test de personnalité et un test d\'aptitude ?', a: 'Un test de personnalité mesure qui est votre enfant : ses valeurs, motivations et traits de caractère. Le cadre VIA identifie 24 forces réparties en 6 vertus. Un test d\'aptitude mesure ce qu\'il peut faire : raisonnement verbal, numérique et abstrait. Les deux sont complémentaires et aucun ne remplace l\'autre.' },
+      { q: 'Un test de personnalité peut-il prédire la réussite scolaire ?', a: 'Oui, via des traits spécifiques. L\'Autorégulation, la Persévérance, la Curiosité, l\'Amour de l\'Apprentissage et l\'Enthousiasme prédisent la performance académique de façon indépendante. Un enfant avec une aptitude moyenne mais une haute autorégulation surpasse souvent un enfant très doué mais peu autorégulé.' },
+      { q: 'Lequel faire en premier — personnalité ou aptitude ?', a: 'Cela dépend de la question. Si votre enfant sous-performe et que vous voulez comprendre pourquoi, faites les deux simultanément. Pour l\'orientation professionnelle, l\'évaluation de personnalité est plus immédiatement utile. Pour les programmes surdoués ou la sélection scolaire, le test d\'aptitude est prioritaire.' },
+    ],
+    cta: { heading: 'Profil complet de votre enfant — aptitude + personnalité, gratuit', body: 'Raisonnement cognitif (verbal, numérique, abstrait) + 24 forces VIA en une session. Âges 6–22. Rapport immédiat, sans compte.', label: 'Démarrer l\'évaluation gratuite', href: '/academic-assessment' },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

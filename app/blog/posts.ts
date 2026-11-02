@@ -3425,6 +3425,44 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: 'https://mgnnetworks.com/en/fellowship.html',
     },
   },
+  {
+    slug: 'personality-vs-aptitude-test',
+    title: 'Personality Test vs Aptitude Test: What\'s the Difference and Why Your Child Needs Both',
+    shortTitle: 'Personality vs Aptitude Test: Key Differences',
+    description: 'A personality test reveals who your child is — values, motivations, character traits. An aptitude test measures what they can do — reasoning, working memory, cognitive ability. Here\'s what each predicts, how they interact, and why neither alone is enough.',
+    tldr: 'A personality test (like VIA character strengths) identifies your child\'s motivations, values, and behavioural tendencies — it does not measure intelligence. An aptitude test measures cognitive ability: verbal reasoning, numerical reasoning, and abstract thinking. Research consistently shows that high aptitude with low self-regulation underperforms moderate aptitude with high perseverance. Knowing both tells you whether a performance gap is a capability issue or an engagement issue — two problems that need entirely different solutions. Eduentry\'s free assessment covers both: cognitive reasoning + 24 VIA character strengths, ages 6–22, in one sitting.',
+    date: '2026-11-02',
+    readTime: '9 min read',
+    tags: ['Personality Assessment', 'Aptitude Test', 'Child Development', 'Parent Guide', 'Character Strengths'],
+    faqs: [
+      {
+        q: 'What is the difference between a personality test and an aptitude test?',
+        a: 'A personality test measures who your child is: their values, motivations, and character traits — how they typically behave, what energises them, and how they engage with challenges. The most widely validated personality framework for children is the VIA Character Strengths model (24 traits across 6 virtues). An aptitude test measures what your child can do: their cognitive ability — specifically verbal reasoning (language and logic), numerical reasoning (arithmetic and pattern), and abstract/nonverbal reasoning (pattern recognition without words or numbers). Both are complementary. Neither replaces the other.',
+      },
+      {
+        q: 'Can a personality test predict academic success?',
+        a: 'Yes — but only for specific traits. Research consistently identifies five character strengths that independently predict academic performance: Self-Regulation (study habits and focus), Perseverance (completing difficult tasks), Curiosity (depth of engagement), Love of Learning (intrinsic motivation), and Zest (energy and attendance). A child with high self-regulation but average cognitive ability typically outperforms a child with high cognitive ability but poor self-regulation over a school year. However, a personality test cannot tell you whether a child has the cognitive tools to succeed at a given level — that requires an aptitude test.',
+      },
+      {
+        q: 'Which should my child take first — personality or aptitude?',
+        a: 'It depends on the question you are trying to answer. If your child is underperforming and you want to know why, take both simultaneously — you need the aptitude profile to know if it is a capability gap, and the personality profile to know if it is an engagement or self-regulation gap. If you are thinking about career direction or learning style, the personality assessment is more immediately useful. If you are preparing for a gifted programme referral or school placement, the aptitude test is the priority. For a complete picture, Eduentry combines both in a single assessment session.',
+      },
+      {
+        q: 'Does personality type affect which school subjects a child does well in?',
+        a: 'Yes, through the mechanism of engagement rather than ability. A child with high Curiosity and Love of Learning tends to go deeper in subjects they find interesting, producing higher marks independent of raw ability. A child with high Social Intelligence often excels in humanities and group projects. A child with high Creativity performs well in open-ended assessment. But these tendencies are tendencies — not ceilings. A child can have low natural curiosity about mathematics and still achieve highly with strong self-regulation and a good teacher. Personality shapes the path; aptitude shapes the ceiling.',
+      },
+      {
+        q: 'How does Eduentry combine personality and aptitude testing?',
+        a: 'Eduentry\'s free assessment covers both dimensions in one sitting. The cognitive (aptitude) section is an adaptive test measuring verbal reasoning, numerical reasoning, and abstract reasoning — approximately 35 minutes. The personality section (VIA character strengths) is parent-rated and covers 12–24 traits depending on the child\'s age (6–22), taking 5–12 minutes. The combined report shows a cognitive percentile profile alongside the top 5 Signature Strengths and 3 Growth Areas, allowing parents and educators to see both dimensions side by side.',
+      },
+    ],
+    cta: {
+      heading: 'Get your child\'s full profile — aptitude + personality, free',
+      body: 'Cognitive reasoning (verbal, numerical, abstract) + 24 VIA character strengths in one sitting. Ages 6–22. Instant report, no account needed.',
+      label: 'Start free assessment',
+      href: '/your-childs-potential',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {
