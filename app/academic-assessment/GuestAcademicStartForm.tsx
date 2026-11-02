@@ -96,7 +96,7 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
     }
     // Set cookie client-side as well to guarantee it is present before navigation
     localStorage.setItem(`guestToken_${data.assessmentId}`, data.guestToken)
-    router.push(`/assessment/${data.assessmentId}/question`)
+    router.push(`/assessment/${data.assessmentId}/question?name=${encodeURIComponent(name.trim())}`)
   }
 
   return (

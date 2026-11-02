@@ -9,10 +9,10 @@ export default async function QuestionPage({
   searchParams,
 }: {
   params: Promise<{ id: string }>
-  searchParams: Promise<{ token?: string }>
+  searchParams: Promise<{ token?: string; name?: string }>
 }) {
   const { id } = await params
-  const { token: urlToken } = await searchParams
+  const { token: urlToken, name: childName } = await searchParams
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
@@ -33,7 +33,7 @@ export default async function QuestionPage({
     // via X-Guest-Token header read from localStorage by AssessmentClient
     if (assessment.status === 'completed') redirect(`/assessment/${id}/results`)
     if (isInternship) return <InternshipClient assessmentId={id} />
-    return <AssessmentClient assessmentId={id} urlGuestToken={urlToken} />
+    return <AssessmentClient assessmentId={id} urlGuestToken={urlToken} childName={childName} />
   }
 
   if (!user) redirect('/auth/login')

@@ -103,42 +103,73 @@ function LoadingQuestion() {
   )
 }
 
-// ── Warmup countdown (first question only) ────────────────────────────────────
+// ── Pre-start interstitial (replaces auto-countdown) ─────────────────────────
 
-function WarmupCountdown({ count }: { count: number }) {
+function StartInterstitial({ childName, onStart }: { childName?: string; onStart: () => void }) {
+  const name = childName || 'your child'
+  const headingName = childName || 'Your child'
+
   return (
-    <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center px-4">
-      <div className="text-center space-y-6 max-w-xs">
-        <div className="relative w-28 h-28 mx-auto">
-          <svg className="w-28 h-28 -rotate-90 absolute inset-0" viewBox="0 0 112 112">
-            <circle cx="56" cy="56" r="50" fill="none" stroke="#e0e7ff" strokeWidth="6" />
-            <circle
-              cx="56" cy="56" r="50" fill="none"
-              stroke="#4F46E5" strokeWidth="6"
-              strokeDasharray={`${2 * Math.PI * 50}`}
-              strokeDashoffset={`${2 * Math.PI * 50 * (count / 4)}`}
-              className="transition-all duration-700"
-            />
-          </svg>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span
-              key={count}
-              className="text-5xl font-bold text-[#4F46E5] animate-in zoom-in-50 duration-300"
-            >
-              {count > 0 ? count : '🚀'}
-            </span>
+    <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center px-4 py-8">
+      <div className="w-full max-w-md bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-6 sm:p-8 space-y-6">
+
+        {/* Header */}
+        <div>
+          <h1 className="text-xl font-bold text-[#1d1d1f]">Before you start</h1>
+          <p className="text-sm text-[#6e6e73] mt-1">A quick look at what {name} is about to do.</p>
+        </div>
+
+        {/* 4 subjects */}
+        <div className="space-y-3">
+          <p className="text-[10px] font-semibold text-[#aeaeb2] uppercase tracking-wider">4 subjects · ~8 min each</p>
+          <div className="grid grid-cols-2 gap-2">
+            {[
+              { label: 'English',              color: 'bg-blue-50   text-blue-700   border-blue-200'   },
+              { label: 'Mathematics',          color: 'bg-green-50  text-green-700  border-green-200'  },
+              { label: 'Verbal Reasoning',     color: 'bg-purple-50 text-purple-700 border-purple-200' },
+              { label: 'Non-Verbal Reasoning', color: 'bg-orange-50 text-orange-700 border-orange-200' },
+            ].map(({ label, color }) => (
+              <div key={label} className={`rounded-xl border px-3 py-2.5 text-xs font-semibold ${color}`}>{label}</div>
+            ))}
           </div>
+          <p className="text-xs text-[#6e6e73]">You can pause between subjects and come back any time.</p>
         </div>
-        <div className="space-y-1">
-          <p className="text-lg font-semibold text-[#1d1d1f]">
-            {count > 0 ? 'Get ready!' : "Let's go!"}
-          </p>
-          <p className="text-sm text-[#6e6e73]">
-            {count > 0
-              ? 'Your first question is being prepared…'
-              : 'Loading your question…'}
+
+        {/* Score scale */}
+        <div className="space-y-2">
+          <p className="text-[10px] font-semibold text-[#aeaeb2] uppercase tracking-wider">What the score means</p>
+          <div className="flex rounded-xl overflow-hidden border border-[#d2d2d7] text-center">
+            {[
+              { range: 'Below 85', label: 'Developing', bg: 'bg-blue-50',   text: 'text-blue-700'   },
+              { range: '85–115',   label: 'Average',    bg: 'bg-green-50',  text: 'text-green-700'  },
+              { range: '115–130',  label: 'Above avg',  bg: 'bg-purple-50', text: 'text-purple-700' },
+              { range: '130+',     label: 'Exceptional',bg: 'bg-indigo-50', text: 'text-indigo-700' },
+            ].map(({ range, label, bg, text }, i) => (
+              <div key={range} className={`flex-1 ${bg} ${text} py-2.5 px-1 flex flex-col gap-0.5 ${i > 0 ? 'border-l border-[#d2d2d7]' : ''}`}>
+                <span className="text-[10px] font-bold leading-none">{range}</span>
+                <span className="text-[9px] opacity-60 leading-none mt-0.5">{label}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-[10px] text-[#aeaeb2]">100 = national average for the age group.</p>
+        </div>
+
+        {/* Handoff */}
+        <div className="rounded-2xl bg-amber-50 border border-amber-200 px-4 py-4 space-y-1.5">
+          <p className="text-sm font-semibold text-amber-900">Hand the device to {headingName} now</p>
+          <p className="text-sm text-amber-700 leading-relaxed">
+            For accurate results, {name} should answer every question independently — no hints from adults.
           </p>
         </div>
+
+        {/* CTA */}
+        <button
+          onClick={onStart}
+          className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white font-bold text-base px-8 py-4 rounded-xl transition-colors"
+        >
+          I&apos;m ready, let&apos;s go →
+        </button>
+
       </div>
     </div>
   )
@@ -218,7 +249,7 @@ type FetchResult =
 
 // ── Main component ────────────────────────────────────────────────────────────
 
-export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn }: { assessmentId: string; urlGuestToken?: string; loggedIn?: boolean }) {
+export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn, childName }: { assessmentId: string; urlGuestToken?: string; loggedIn?: boolean; childName?: string }) {
   const router = useRouter()
 
   function guestHeaders(): HeadersInit {
@@ -231,7 +262,6 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
 
   type Phase = 'warmup' | 'loading' | 'question' | 'break' | 'error'
   const [phase, setPhase]               = useState<Phase>('warmup')
-  const [warmupCount, setWarmupCount]   = useState(4)
   const [question, setQuestion]         = useState<Question | null>(null)
   const [session, setSession]           = useState<SessionState | null>(null)
   const [subjectBreak, setSubjectBreak] = useState<Subject | null>(null)
@@ -356,36 +386,26 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
     }
   }
 
+  // Start fetching immediately so the first question is ready when the user clicks
   useEffect(() => {
-    let countdownDone = false
-
     doFetch().then((result) => {
-      if (countdownDone) {
+      if (!isFirstRef.current) {
         applyResult(result)
       } else {
         pendingRef.current = result
       }
     })
-
-    let count = 4
-    const interval = setInterval(() => {
-      count -= 1
-      setWarmupCount(count)
-      if (count <= 0) {
-        clearInterval(interval)
-        countdownDone = true
-        isFirstRef.current = false
-        if (pendingRef.current) {
-          applyResult(pendingRef.current)
-        } else {
-          setPhase('loading')
-        }
-      }
-    }, 1000)
-
-    return () => clearInterval(interval)
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+
+  function handleInterstitialDone() {
+    isFirstRef.current = false
+    if (pendingRef.current) {
+      applyResult(pendingRef.current)
+    } else {
+      setPhase('loading')
+    }
+  }
 
   useEffect(() => {
     if (!question) return
@@ -414,7 +434,7 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
 
   // ── Render ──────────────────────────────────────────────────────────────────
 
-  if (phase === 'warmup') return <WarmupCountdown count={warmupCount} />
+  if (phase === 'warmup') return <StartInterstitial childName={childName} onStart={handleInterstitialDone} />
   if (phase === 'loading') return <LoadingQuestion />
 
   if (phase === 'error') {
