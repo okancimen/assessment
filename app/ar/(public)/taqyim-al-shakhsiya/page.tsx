@@ -6,7 +6,7 @@ import HeroRadarCard from '@/components/personality/HeroRadarCard'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'تقييم شخصية الطفل | اختبار نقاط القوة VIA — Eduentry',
+  title: 'اختبار نقاط قوة الشخصية المجاني للأطفال — 24 صفة VIA، أعمار 6–20 | Eduentry',
   description:
     'اكتشف نقاط القوة الفريدة لشخصية طفلك من خلال تقييمنا العلمي المدعوم بالذكاء الاصطناعي. الأعمار 6–20. استبيان مجاني للوالدين. تقرير نمو شخصي فوري.',
   keywords: [
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/ar/taqyim-al-shakhsiya`,
     siteName: 'Eduentry',
-    title: 'تقييم شخصية الطفل | اختبار نقاط القوة VIA — Eduentry',
+    title: 'اختبار نقاط قوة الشخصية المجاني للأطفال — 24 صفة VIA، أعمار 6–20 | Eduentry',
     description: 'اكتشف نقاط القوة الفريدة لشخصية طفلك من خلال تقييمنا العلمي المدعوم بالذكاء الاصطناعي. الأعمار 6–20.',
     locale: 'ar_SA',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'تقييم شخصية الطفل — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'تقييم شخصية الطفل | اختبار نقاط القوة VIA — Eduentry',
+    title: 'اختبار نقاط قوة الشخصية المجاني للأطفال — 24 صفة VIA، أعمار 6–20 | Eduentry',
     description: 'اكتشف نقاط القوة الفريدة لشخصية طفلك من خلال تقييمنا العلمي المدعوم بالذكاء الاصطناعي. الأعمار 6–20.',
     images: [`${BASE_URL}/opengraph-image`],
   },

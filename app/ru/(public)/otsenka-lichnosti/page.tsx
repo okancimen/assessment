@@ -6,7 +6,7 @@ import HeroRadarCard from '@/components/personality/HeroRadarCard'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Оценка личности ребёнка | Тест сильных сторон VIA — Eduentry',
+  title: 'Бесплатный тест сильных сторон характера для детей — 24 качества VIA, 6–20 лет | Eduentry',
   description:
     'Откройте уникальные сильные стороны характера вашего ребёнка с помощью нашей научно обоснованной оценки личности на базе ИИ. Возраст 6–20 лет. Бесплатный опросник для родителей. Мгновенный персональный отчёт о развитии.',
   keywords: [
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/ru/otsenka-lichnosti`,
     siteName: 'Eduentry',
-    title: 'Оценка личности ребёнка | Тест сильных сторон VIA — Eduentry',
+    title: 'Бесплатный тест сильных сторон характера для детей — 24 качества VIA, 6–20 лет | Eduentry',
     description: 'Откройте уникальные сильные стороны характера вашего ребёнка с помощью ИИ-оценки. Возраст 6–20 лет.',
     locale: 'ru_RU',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Оценка личности ребёнка — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Оценка личности ребёнка | Тест сильных сторон VIA — Eduentry',
+    title: 'Бесплатный тест сильных сторон характера для детей — 24 качества VIA, 6–20 лет | Eduentry',
     description: 'Откройте уникальные сильные стороны характера вашего ребёнка с помощью ИИ-оценки. Возраст 6–20 лет.',
     images: [`${BASE_URL}/opengraph-image`],
   },

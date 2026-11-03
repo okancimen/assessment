@@ -6,7 +6,7 @@ import HeroRadarCard from '@/components/personality/HeroRadarCard'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: '儿童性格评估 | VIA性格优势测试 — Eduentry',
+  title: '儿童免费性格优势测试 — 24个VIA特质，6–20岁 | Eduentry',
   description:
     '通过我们由人工智能驱动的科学性格评估，发现您孩子独特的性格优势。适用年龄6–20岁。免费家长评分问卷。即时个性化成长报告。',
   keywords: [
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/zh/xingge-pinggu`,
     siteName: 'Eduentry',
-    title: '儿童性格评估 | VIA性格优势测试 — Eduentry',
+    title: '儿童免费性格优势测试 — 24个VIA特质，6–20岁 | Eduentry',
     description: '通过我们的人工智能性格评估，发现您孩子独特的性格优势。适用年龄6–20岁。',
     locale: 'zh_CN',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: '儿童性格评估 — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '儿童性格评估 | VIA性格优势测试 — Eduentry',
+    title: '儿童免费性格优势测试 — 24个VIA特质，6–20岁 | Eduentry',
     description: '通过我们的人工智能性格评估，发现您孩子独特的性格优势。适用年龄6–20岁。',
     images: [`${BASE_URL}/opengraph-image`],
   },

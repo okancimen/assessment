@@ -7,7 +7,7 @@ import HeroRadarCard from '@/components/personality/HeroRadarCard'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Çocuk Kişilik Değerlendirmesi | VIA Güçlü Yönler Testi — Eduentry',
+  title: 'Çocuklar İçin Ücretsiz Karakter Güçleri Testi — 24 VIA Özelliği, 6–20 Yaş | Eduentry',
   description:
     "Çocuğunuzun benzersiz güçlü yönlerini yapay zeka destekli, bilimsel kişilik değerlendirmemizle keşfedin. 6–20 yaş. Ücretsiz ebeveyn anketi. Anında kişiselleştirilmiş büyüme raporu.",
   keywords: [
@@ -40,14 +40,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/tr/kisilik-degerlendirmesi`,
     siteName: 'Eduentry',
-    title: 'Çocuk Kişilik Değerlendirmesi | VIA Güçlü Yönler Testi — Eduentry',
+    title: 'Çocuklar İçin Ücretsiz Karakter Güçleri Testi — 24 VIA Özelliği, 6–20 Yaş | Eduentry',
     description: "Çocuğunuzun benzersiz kişilik özelliklerini yapay zeka destekli değerlendirmemizle keşfedin. 6–20 yaş.",
     locale: 'tr_TR',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Çocuk Kişilik Değerlendirmesi — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Çocuk Kişilik Değerlendirmesi | VIA Güçlü Yönler Testi — Eduentry',
+    title: 'Çocuklar İçin Ücretsiz Karakter Güçleri Testi — 24 VIA Özelliği, 6–20 Yaş | Eduentry',
     description: "Çocuğunuzun benzersiz kişilik özelliklerini yapay zeka destekli değerlendirmemizle keşfedin. 6–20 yaş.",
     images: [`${BASE_URL}/opengraph-image`],
   },
