@@ -11,9 +11,9 @@ import HeroRadarCard from '@/components/personality/HeroRadarCard'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Child Personality Assessment | VIA Character Strengths Test — Eduentry',
+  title: 'Free Character Strengths Test for Children — 24 VIA Traits, Ages 6–20 | Eduentry',
   description:
-    'Discover your child\'s unique character strengths with our AI-powered, scientifically backed personality assessment. Ages 6–20. Free parent-rated survey. Instant personalised growth report.',
+    'Free character strengths test for children aged 6–20. You rate — your child doesn\'t sit a test. Identifies top 5 Signature Strengths, 3 Growth Areas, and AI-personalised development activities in under 5 minutes.',
   keywords: [
     'child personality assessment',
     'VIA character strengths test',
@@ -44,17 +44,17 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/personality-assessment`,
     siteName: 'Eduentry',
-    title: 'Child Personality Assessment | VIA Character Strengths Test — Eduentry',
+    title: 'Free Character Strengths Test for Children — 24 VIA Traits, Ages 6–20 | Eduentry',
     description:
-      'Discover your child\'s unique character strengths with our AI-powered, scientifically backed personality assessment. Ages 6–20. Free parent-rated survey.',
+      'Free character strengths test for children aged 6–20. You rate — your child doesn\'t sit a test. Top 5 Signature Strengths, 3 Growth Areas, AI-personalised report in 5 minutes.',
     locale: 'en_GB',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Child Personality Assessment — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Child Personality Assessment | VIA Character Strengths Test — Eduentry',
+    title: 'Free Character Strengths Test for Children — 24 VIA Traits, Ages 6–20 | Eduentry',
     description:
-      'Discover your child\'s unique character strengths with our AI-powered, scientifically backed personality assessment. Ages 6–20. Free parent-rated survey.',
+      'Free character strengths test for children aged 6–20. You rate — your child doesn\'t sit a test. Top 5 Signature Strengths, 3 Growth Areas, AI-personalised report in 5 minutes.',
     images: [`${BASE_URL}/opengraph-image`],
   },
 }
@@ -100,8 +100,8 @@ const PAGE_SCHEMA = {
   '@type': 'WebPage',
   '@id': `${BASE_URL}/personality-assessment#webpage`,
   url: `${BASE_URL}/personality-assessment`,
-  name: 'Child Personality Assessment | VIA Character Strengths Test — Eduentry',
-  description: "Discover your child's unique character strengths with our AI-powered, scientifically backed personality assessment. Ages 6–20.",
+  name: 'Free Character Strengths Test for Children — 24 VIA Traits, Ages 6–20 | Eduentry',
+  description: "Free character strengths test for children aged 6–20. Identifies top 5 Signature Strengths, 3 Growth Areas, and AI-personalised development activities.",
   inLanguage: 'en',
   isPartOf: { '@id': `${BASE_URL}/#website` },
 }
