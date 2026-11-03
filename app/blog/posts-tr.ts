@@ -339,13 +339,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'dubai-egitim-sistemi-rehberi',
     title: 'Dubai\'de Lise ve Eğitim Sistemi: Türk Aileler için Kapsamlı Rehber',
-    shortTitle: 'Dubai\'de Lise ve Eğitim Sistemi: Türk Aileler İçin Rehber',
+    shortTitle: 'Dubai Eğitim Sistemi 2026: Okul Seçimi, Müfredatlar ve Maliyetler',
     description:
-      'Dubai\'de hangi lise müfredatları var, okul nasıl seçilir, maliyetler ne kadar? Dubai\'ye taşınan Türk aileler için BAE lise ve eğitim sistemi rehberi.',
+      'Dubai eğitim sistemi nasıl çalışır? KHDA derecelendirmesi, İngiliz/IB/Amerikan müfredatları, yıllık okul ücretleri ve expatriate Türk aileler için okul seçimi rehberi.',
     tldr: 'Dubai okulları KHDA tarafından 5 kademede derecelendiriliyor: Outstanding (Üstün), Very Good (Çok İyi), Good (İyi), Acceptable (Kabul Edilebilir) ve Weak (Zayıf). Şehirde Britanya, Amerikan, IB ve Fransız müfredatı dahil 200\'den fazla farklı müfredat sunan özel okul bulunuyor.',
 
     date: '2026-07-20',
-    dateModified: '2026-07-20',
+    dateModified: '2026-11-03',
     readTime: '11 dk okuma',
     tags: ['Dubai', 'BAE Eğitim Sistemi', 'Uluslararası Okul', 'Ebeveyn Rehberi', 'İş Deneyimi'],
     faqs: [
@@ -2127,9 +2127,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'dubai-lise-rehberi',
     contentSlug: 'dubai-high-school-gcse-ib-guide',
     title: 'Dubai\'de Lise Eğitimi: GCSE, A Level ve IB Rehberi — Türk Aileler İçin',
-    shortTitle: 'Dubai\'de Lise Eğitimi Rehberi',
+    shortTitle: 'Dubai\'de Lise Eğitimi: GCSE mi, A Level mı, IB mi? 2026 Rehberi',
     description:
-      'Dubai\'de lise seçimi nasıl yapılır? GCSE, A Level ve IB karşılaştırması, okul derecelendirmeleri ve Türkiye ile UK üniversitelerine başvuru yolu — Dubai\'deki Türk aileler için.',
+      'Dubai\'de lise hangi müfredatla okunmalı? GCSE + A Level vs IB Diploma karşılaştırması, KHDA Outstanding okullar, Türkiye ve UK üniversitelerine başvuru yolu — Dubai\'deki Türk aileler için.',
     tldr: 'Dubai\'de lise eğitimi KHDA lisanslı özel okullarda verilir. En yaygın müfredat İngiliz sistemidir (GCSE + A Level); ardından IB Diploma Programı ve Amerikan müfredatı gelir. A Level, UK ve uluslararası üniversiteler için; IB ise ABD ve Kanada dahil küresel seçenekler için güçlü bir temeldir.',
     date: '2026-10-19',
     dateModified: '2026-10-19',
