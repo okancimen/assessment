@@ -3003,12 +3003,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'via-character-strengths-children',
     title: 'VIA Character Strengths for Children: All 24 Strengths Explained (Ages 6–20)',
-    shortTitle: 'VIA Character Strengths for Children: All 24 Explained',
+    shortTitle: 'Character Strengths in Children: 24 VIA Strengths & Which 5 Predict Academic Success',
     description:
-      'All 24 VIA character strengths for ages 6–20: which 5 predict academic success (curiosity, perseverance, love of learning, self-regulation, zest), what each looks like in children, and how to develop them at home.',
+      'What are character strengths in kids — and why do they matter? The 24 VIA strengths explained for ages 6–20: which 5 predict academic success (curiosity, perseverance, love of learning, self-regulation, zest), what each looks like in a child, and how to build them at home.',
     tldr: 'The VIA Classification of Character Strengths identifies 24 universally valued human strengths grouped into six virtues: Wisdom, Courage, Humanity, Justice, Temperance, and Transcendence. Every person has all 24 strengths in varying degrees — the top five are called Signature Strengths. For children, love of learning, curiosity, perseverance, self-regulation, and zest are most predictive of academic success. Identifying a child\'s Signature Strengths is the first step to building on them.',
     date: '2026-10-17',
-    dateModified: '2026-10-28',
+    dateModified: '2026-11-04',
     readTime: '12 min read',
     tags: ['Character Strengths', 'VIA Strengths', 'Child Development', 'Positive Psychology', 'Parent Guide', 'Personality Assessment', 'Wellbeing'],
     faqs: [
