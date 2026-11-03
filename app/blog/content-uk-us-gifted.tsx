@@ -280,6 +280,9 @@ export const UK_CONTENT_US_GIFTED: Record<string, React.ReactNode> = {
           practice, and science exposure genuinely improve scores. Cramming immediately before the test
           is ineffective; consistent engagement with learning over months is what moves the needle.
         </Callout>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          MAP measures what your child has learned — but research consistently shows that <Link href="/blog/via-character-strengths-children" className="text-indigo-600 hover:underline">character strengths such as curiosity, perseverance, and self-regulation</Link> predict how effectively a child applies that knowledge over time. Understanding both dimensions gives a more complete picture than any single academic score.
+        </p>
       </section>
 
       <section className="mt-8">
@@ -288,7 +291,7 @@ export const UK_CONTENT_US_GIFTED: Record<string, React.ReactNode> = {
           {[
             { href: '/blog/gifted-program-testing-guide', tag: 'Guide', title: 'Gifted Program Testing Guide: How US Gifted Identification Works and How to Prepare' },
             { href: '/blog/how-to-prepare-gifted-test', tag: 'Guide', title: 'How to Prepare Your Child for a Gifted Test: A Practical Guide for US Families' },
-            { href: '/blog/isee-ssat-private-school-guide', tag: 'Assessment', title: 'ISEE vs SSAT: The Complete Guide to Private School Entrance Exams in the US' },
+            { href: '/blog/via-character-strengths-children', tag: 'Character Strengths', title: 'Character Strengths in Children: 24 VIA Strengths & Which 5 Predict Academic Success' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
               <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
