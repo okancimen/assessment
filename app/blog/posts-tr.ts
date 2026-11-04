@@ -381,13 +381,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'cocugunuz-dunyada-nerede-duruyor',
     contentSlug: 'how-does-your-child-compare-globally',
     title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor? Uluslararası Akademik Kıyaslama Rehberi',
-    shortTitle: 'Çocuğunuz Dünyada Nerede? PISA 2025 Kıyaslaması',
+    shortTitle: 'Çocuğunuzun Akademik Seviyesi Dünyada Nerede? Ücretsiz Uluslararası Kıyaslama',
     description:
       'Çocuğunuzun sınıf sıralamasını değil, küresel yüzdeliğini öğrenin. PISA 2025 verileriyle Türkiye, Singapur, İngiltere ve OECD ortalaması kıyası.',
     tldr: 'OECD PISA matematik ortalaması 472 puandır. Türkiye, PISA 2022\'de matematikte 453 puan alarak OECD ortalamasının altında kaldı. Singapur (575 puan) ile Türkiye arasındaki yaklaşık 120 puanlık fark, yaklaşık 3 yıllık okul eğitimine karşılık geliyor.',
 
     date: '2026-07-02',
-    dateModified: '2026-09-23',
+    dateModified: '2026-11-04',
     readTime: '10 dk okuma',
     tags: ['Uluslararası Kıyaslama', 'PISA', 'Ebeveyn Rehberi', 'Standartlaştırılmış Test', 'Çocuk Gelişimi'],
     faqs: [
@@ -546,12 +546,12 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'staj-icin-cv-nasil-yazilir',
     title: 'Staj İçin CV Nasıl Yazılır: 16-18 Yaş Öğrencileri için Adım Adım Rehber',
-    shortTitle: 'Staj İçin CV Nasıl Yazılır: Adım Adım Rehber',
+    shortTitle: 'Staj İçin CV Nasıl Yazılır: Şablon ve Örnekler — Lise Öğrencisi Rehberi 2026',
     description: 'Staj CV\'si (16–18 yaş): öğrenim, ilgili dersler, yetkinlikler, öğretmen referansı — tek sayfa yeterli. Deneyim olmadan hangi başlıklar kullanılır, sık yapılan 3 hata ve örnek şablon.',
     tldr: 'Staj başvurusu için hazırlanan CV şu bölümleri içermelidir: iletişim bilgileri, öğrenim (okul, sınıf, not ortalaması), ilgili dersler veya projeler, yetkinlikler (diller, yazılımlar) ve referans olarak gösterilebilecek öğretmenler. İş deneyimi olmayan lise öğrencileri için tek sayfalık bir CV en etkili format olmaya devam ediyor.',
 
     date: '2026-09-09',
-    dateModified: '2026-10-28',
+    dateModified: '2026-11-04',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'Lise'],
     faqs: [
@@ -661,13 +661,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'pisa-nedir-cocugunuz-nasil-hazirlanir',
     title: 'PISA Nedir, Pısa Ne Demek? 2025 Türkiye Sonuçları ve Hazırlık Rehberi',
-    shortTitle: 'PISA Nedir? Açılımı, Pısa Ne Demek — Türkiye 2025 Sonuçları',
+    shortTitle: 'PISA Nedir? 2025 Türkiye Sonuçları ve Çocuğunuzu Nasıl Hazırlarsınız',
     description:
       'PISA nedir? Her 3 yılda bir 91 ülkede uygulanan matematik, okuma ve fen sınavı. 2025 Türkiye: matematik 463 (OECD 472). 4 pratik hazırlık yolu ve ülke sıralama tablosu — ebeveynler için.',
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2025\'te okumada OECD ortalamasını yakaladı; matematikte 463 ile OECD ortalaması (472) yakınında yer aldı.',
 
     date: '2026-09-14',
-    dateModified: '2026-11-03',
+    dateModified: '2026-11-04',
     readTime: '13 dk okuma',
     tags: ['PISA', 'Uluslararası Kıyaslama', 'Akademik Değerlendirme', 'Ebeveyn Rehberi', 'LGS', 'YKS'],
     faqs: [
@@ -827,12 +827,12 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'staj-defteri-nasil-doldurulur',
     title: 'Staj Defteri Nasıl Doldurulur? Örnek + Nereden Alınır, Kim İmzalar',
-    shortTitle: 'Staj Defteri Nasıl Doldurulur? Nereden Alınır, Kim İmzalar 2026',
+    shortTitle: 'Staj Defteri Nedir, Nasıl Doldurulur? Örnek İfadeler + 2026 Rehberi',
     description: 'Staj defterini nasıl dolduracaksınız? Günlük faaliyet, haftalık özet ve imza adımları + örnek ifadeler. Nereden alınır, kimin imzalaması gerekir, ne zaman teslim edilir.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
-    dateModified: '2026-11-03',
+    dateModified: '2026-11-04',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Staj Defteri', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi', 'Lise Staj'],
     faqs: [
@@ -1055,13 +1055,13 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'cocugunuzun-guclu-zayif-yonleri-liseye-hazirlik',
     contentSlug: 'understanding-child-strengths-weaknesses-high-school',
     title: 'Çocuğun Güçlü ve Zayıf Yönleri Nelerdir? Lise Hazırlığı İçin Bilişsel Profil Rehberi',
-    shortTitle: 'Çocuğun Güçlü ve Zayıf Yönleri Nelerdir? Nasıl Belirlenir?',
+    shortTitle: 'Lise Hazırlığı: Çocuğunuzun Güçlü ve Zayıf Yönlerini Bilişsel Testle Belirleyin',
     description:
       'Çocuğun güçlü ve zayıf yönleri ücretsiz adaptif testle belirlenir — okul notları değil. Sözel, sayısal ve uzamsal alanlarda lise hazırlığı için bilişsel profil.',
     tldr: 'Okul notları, öğrencilerin sınıf içindeki göreli başarısını ölçer — ancak altta yatan bilişsel profili ortaya koymaz. Sözel akıl yürütme, sayısal yetenek, çalışan bellek ve uzamsal beceri alanlarındaki güçlü ve zayıf yönleri lise öncesinde belirlemek, ebeveynlere ve öğretmenlere belirsiz bir karne yerine somut bir yol haritası sunar.',
 
     date: '2026-09-27',
-    dateModified: '2026-10-20',
+    dateModified: '2026-11-04',
     readTime: '12 dk okuma',
     tags: ['Akademik Değerlendirme', 'Çocuk Gelişimi', 'Lise Hazırlığı', 'Bilişsel Profil'],
     faqs: [
@@ -1263,11 +1263,11 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'cocugunuzun-guclu-yonlerini-ucretsiz-test-ile-kesfet',
     contentSlug: 'discover-child-strengths-free-academic-test',
     title: 'Çocuğunuzun Güçlü Yönleri: Ücretsiz Akademik Test — 1 Saatte Sonuç',
-    shortTitle: 'Ücretsiz Akademik Test: Güçlü ve Zayıf Yönler',
+    shortTitle: 'Çocuğunuzun Akademik Güçlü Yönleri: Ücretsiz Adaptif Test — Sözel, Sayısal, Uzamsal',
     description: 'Ücretsiz adaptif test: sözel, sayısal ve görsel-uzamsal zekayı ayrı ayrı ölçer — 1 saatte uluslararası yüzdelik dilim raporu. Karne notları potansiyeli göstermez; bu test gösterir. 6–16 yaş.',
     tldr: 'Sözel akıl yürütme, sayısal muhakeme ve görsel-uzamsal düşünmeyi bağımsız olarak ölçen ücretsiz adaptif test — bir saat içinde uluslararası yüzdelik dilim raporu. CAT ve IRT metodolojisiyle, CAT4 ve NWEA MAP ile aynı bilimsel temel.',
     date: '2026-10-01',
-    dateModified: '2026-10-28',
+    dateModified: '2026-11-04',
     readTime: '10 dk okuma',
     tags: ['Ücretsiz Akademik Test', 'Çocuk Güçlü Yönleri', 'Çocuk Zayıf Yönleri', 'Bilişsel Değerlendirme', 'Adaptif Test', 'Veli Rehberi', 'Çocuk Gelişimi'],
     faqs: [
@@ -2042,12 +2042,12 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: '16-yasinda-is-hayatina-nasil-baslanir',
     contentSlug: 'how-to-start-business-at-16',
     title: '16 Yaşında İş Hayatına Nasıl Başlanır: Platformlar, Kazanç ve Üniversiteler Ne Düşünür',
-    shortTitle: '16 Yaşında İş Hayatına Nasıl Başlanır',
+    shortTitle: '16 Yaşında İş Hayatı: Staj Bulma, CV ve İlk Deneyim Rehberi 2026',
     description:
       '16 yaşında İngiltere\'de bir işletme kurulabilir mi? Evet. Erişilebilir platformlar, gerçekçi kazanç rakamları ve erken iş deneyiminin üniversiteye etkisi.',
     tldr: 'İngiltere\'deki 16 yaşındaki bir kişi şirkete gerek kalmadan yasal olarak şahıs şirketi olarak ticaret yapabilir. Erişilebilir platformlar arasında MyTutor, Tutorful, Etsy ve Depop yer alır; kişisel muafiyet sınırı olan 12.570 £\'un altındaki kazançlar vergiden muaftır. İşletme, ekonomi ve hukuk programları için Russell Group kabul sürecinde gerçek bir işletme yürütmek — yarı zamanlı bile olsa — açıkça değer kazandırmaktadır.',
     date: '2026-10-07',
-    dateModified: '2026-10-07',
+    dateModified: '2026-11-04',
     readTime: '11 dk okuma',
     tags: ['Staj', 'Kariyer Gelişimi', 'İş Deneyimi', 'İş Girişimi'],
     faqs: [
@@ -2079,11 +2079,11 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'cocugumun-guclu-yonleri-ve-akademik-basari',
     contentSlug: 'character-strengths-academic-success',
     title: 'Çocuğumun Güçlü Yönleri: 5 Karakter Özelliği Akademik Başarıyı Öngörüyor',
-    shortTitle: 'Çocuğun Güçlü Yönleri Nelerdir? VIA Karakter Testi + Ücretsiz Değerlendirme',
+    shortTitle: '5 VIA Karakter Özelliği Akademik Başarıyı Nasıl Öngörür? Ücretsiz Değerlendirme',
     description: 'Hangi 5 karakter özelliği akademik başarıyı öngörüyor? Merak, azim, öz denetim… VIA karakter çerçevesiyle çocuğunuzu ücretsiz değerlendirin ve sonucu yorumlayın.',
     tldr: 'Okul notları sınıf ortalamasına göre başarıyı ölçer; ancak çocuğunuzun güçlü yönlerini ve potansiyelini tam olarak ortaya koymaz. Pozitif psikoloji araştırmaları, 5 VIA kişilik özelliğinin — öğrenme sevgisi, merak, azim, öz denetim ve coşku — akademik sonuçları en güvenilir biçimde öngördüğünü göstermektedir. Bu özellikler sabit değildir; ebeveyn değerlendirmeli bir testle ölçülebilir ve geliştirilebilir.',
     date: '2026-10-10',
-    dateModified: '2026-11-03',
+    dateModified: '2026-11-04',
     readTime: '9 dk okuma',
     tags: ['Kişilik Özellikleri', 'Akademik Başarı', 'VIA Kişilik Özellikleri', 'Çocuk Gelişimi', 'Ebeveyn Rehberi', 'Kişilik Değerlendirmesi', 'Ücretsiz Çocuk Testi', 'Pozitif Psikoloji', 'VIA Karakter Güçleri'],
     faqs: [

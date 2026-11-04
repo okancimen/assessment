@@ -4462,10 +4462,11 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
 
       <section>
         <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {[
             { href: '/tr/blog/cocugunuz-dunyada-nerede-duruyor', tag: 'Rehber', title: 'Çocuğunuz Dünya Genelinde Nerede Duruyor? Uluslararası Akademik Kıyaslama' },
             { href: '/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir', tag: 'Rehber', title: 'PISA Nedir? 2025 Sonuçları, Türkiye Sıralaması ve Hazırlık Rehberi' },
+            { href: '/tr/blog/a-level-programlari-nedir', tag: 'Rehber', title: 'A Level Programları Nedir? İngiltere\'de Lise Son Sınıf ve Üniversite Hazırlık Rehberi' },
             { href: '/tr/blog/cocugunuzun-akademik-seviyesi-nasil-olculur', tag: 'Rehber', title: 'Çocuğunuzun Akademik Seviyesi Nasıl Ölçülür?' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
