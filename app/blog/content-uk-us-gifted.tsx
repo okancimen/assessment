@@ -233,19 +233,6 @@ export const UK_CONTENT_US_GIFTED: Record<string, React.ReactNode> = {
         </p>
       </section>
 
-      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row sm:items-center gap-4">
-        <div className="flex-1">
-          <p className="font-semibold text-gray-900 mb-1">Is your child on track to compete internationally?</p>
-          <p className="text-sm text-gray-600">MAP measures local national norms. Discover how your child ranks against top-tier international peers in English and Maths in under 45 minutes.</p>
-        </div>
-        <a
-          href="/your-childs-potential"
-          className="shrink-0 inline-block bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors text-center"
-        >
-          Check Your Child&apos;s Benchmark →
-        </a>
-      </div>
-
       <section className="mt-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">What MAP Score Qualifies for Gifted Programs?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
@@ -300,6 +287,19 @@ export const UK_CONTENT_US_GIFTED: Record<string, React.ReactNode> = {
           ))}
         </div>
       </section>
+
+      <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-6 flex flex-col sm:flex-row sm:items-center gap-4 mt-8">
+        <div className="flex-1">
+          <p className="font-semibold text-gray-900 mb-1">Is your child on track to compete internationally?</p>
+          <p className="text-sm text-gray-600">MAP measures local national norms. Discover how your child ranks against top-tier international peers in English and Maths in under 45 minutes.</p>
+        </div>
+        <a
+          href="/your-childs-potential"
+          className="shrink-0 inline-block bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors text-center"
+        >
+          Check Your Child&apos;s Benchmark →
+        </a>
+      </div>
     </>
   ),
 
