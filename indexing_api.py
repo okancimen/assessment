@@ -56,7 +56,12 @@ def _recent_git_files():
 
 
 def _slug_dates():
-    """Dict of (locale, slug) -> dateModified parsed from every posts-*.ts file."""
+    """Dict of (locale, slug) -> most-recent date parsed from every posts-*.ts file.
+
+    Prefers dateModified over date so only genuinely updated posts are re-submitted.
+    Falls back to date (publication date) so newly created posts without dateModified
+    are still included.  Posts that have neither field are excluded (unknown = False).
+    """
     cutoff = datetime.now(timezone.utc) - timedelta(days=RECENT_DAYS)
     dates: dict[tuple[str, str], datetime] = {}
     for locale, rel_path in _LOCALE_POSTS.items():
@@ -68,9 +73,11 @@ def _slug_dates():
             slug = m.group(1)
             snippet = text[m.start(): m.start() + 900]
             dm = re.search(r"dateModified:\s*['\"](\d{4}-\d{2}-\d{2})['\"]", snippet)
-            if dm:
+            d  = re.search(r"\bdate:\s*['\"](\d{4}-\d{2}-\d{2})['\"]", snippet)
+            best = dm or d  # prefer dateModified; fall back to date
+            if best:
                 try:
-                    dates[(locale, slug)] = datetime.strptime(dm.group(1), "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                    dates[(locale, slug)] = datetime.strptime(best.group(1), "%Y-%m-%d").replace(tzinfo=timezone.utc)
                 except ValueError:
                     pass
     return dates, cutoff
@@ -91,8 +98,8 @@ def _is_recent(url: str, dates: dict, cutoff: datetime, git_files: set[str]) -> 
             dt = dates.get((locale, slug)) or dates.get(("", slug))
             if dt is not None:
                 return dt >= cutoff
-            # Slug not in any posts file → unknown, include conservatively
-            return True
+            # Slug not found in any posts-*.ts file → exclude (stale or deleted post)
+            return False
 
     # ── eduentry.ai → check app/ai/ source files ──────────────────────────────
     if is_ai:
@@ -120,8 +127,12 @@ def _is_recent(url: str, dates: dict, cutoff: datetime, git_files: set[str]) -> 
     if parts and parts[0] in _LOCALE_POSTS and len(parts) == 1:
         return any(f"app/{parts[0]}" in f for f in git_files)
 
-    # ── Everything else: check if any app/ source file for this path changed ──
-    app_path = "app/" + "/".join(parts) if parts else "app"
+    # ── Everything else: check if the specific page source file changed ──────
+    # Empty path = homepage: only re-submit if app/page.tsx itself changed,
+    # not on every blog-post commit (which also touches app/ files).
+    if not parts:
+        return any(f in {"app/page.tsx", "app/layout.tsx"} for f in git_files)
+    app_path = "app/" + "/".join(parts)
     return any(f.startswith(app_path) for f in git_files)
 
 
