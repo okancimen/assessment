@@ -125,6 +125,29 @@ def _is_recent(url: str, dates: dict, cutoff: datetime, git_files: set[str]) -> 
     return any(f.startswith(app_path) for f in git_files)
 
 
+def _all_blog_urls() -> list[str]:
+    """Auto-generate blog post URLs from every posts-*.ts file."""
+    locale_base = {
+        "":   f"{BASE_URL}/blog",
+        "tr": f"{BASE_URL}/tr/blog",
+        "fr": f"{BASE_URL}/fr/blog",
+        "es": f"{BASE_URL}/es/blog",
+        "ar": f"{BASE_URL}/ar/blog",
+        "ru": f"{BASE_URL}/ru/blog",
+        "zh": f"{BASE_URL}/zh/blog",
+    }
+    urls: list[str] = []
+    for locale, rel_path in _LOCALE_POSTS.items():
+        base = locale_base[locale]
+        try:
+            text = (REPO_ROOT / rel_path).read_text(encoding="utf-8")
+        except FileNotFoundError:
+            continue
+        for slug in re.findall(r"slug:\s*['\"]([^'\"]+)['\"]", text):
+            urls.append(f"{base}/{slug}")
+    return urls
+
+
 def filter_recent(urls: list[str]) -> list[str]:
     dates, cutoff = _slug_dates()
     git_files = _recent_git_files()
@@ -133,6 +156,8 @@ def filter_recent(urls: list[str]) -> list[str]:
     print(f"Recent filter ({RECENT_DAYS}d): {len(urls)} → {len(kept)} URLs ({removed} removed as unchanged)\n")
     return kept
 
+# Blog post URLs are auto-generated from posts-*.ts files at runtime (see _all_blog_urls).
+# Only add non-blog URLs here: static pages, tools, grammar schools, tag pages, eduentry.ai.
 URLS_TO_SUBMIT = [
     # ── Arabic (AR) ───────────────────────────────────────────────────────────
     f"{BASE_URL}/ar/blog/ma-hiya-al-daraja-al-miayriya",
@@ -729,7 +754,9 @@ def submit_urls(start: int = 0):
 
     service = build("indexing", "v3", credentials=credentials)
 
-    urls = filter_recent(URLS_TO_SUBMIT)
+    # Merge auto-generated blog URLs with manually listed non-blog URLs, deduplicated
+    combined = list(dict.fromkeys(_all_blog_urls() + URLS_TO_SUBMIT))
+    urls = filter_recent(combined)
     batch = urls[start : start + DAILY_LIMIT]
     total = len(urls)
     end = min(start + DAILY_LIMIT, total)
