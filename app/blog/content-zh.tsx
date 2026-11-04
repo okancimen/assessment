@@ -3319,6 +3319,297 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'how-to-improve-map-reading-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        大多数MAP阅读提分建议过于笼统，缺乏实际指导价值：&ldquo;多读书&rdquo;、
+        &ldquo;积累词汇&rdquo;、&ldquo;练习理解&rdquo;。本指南更具针对性——涵盖MAP阅读的实际测试内容、
+        NWEA研究证实有效的干预方法，以及各年级段的具体策略，目标是在12至16周内将孩子的RIT分数提高4至8分。
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        需要先了解MAP阅读基准分数？请参阅我们的{' '}
+        <Link href="/zh/blog/nwea-map-chengji-jiexi" className="text-indigo-600 hover:underline">
+          NWEA MAP各年级分数解析指南
+        </Link>{' '}
+        了解平均RIT分数与百分位对照。如需数学提分策略，请参阅{' '}
+        <Link href="/zh/blog/tigao-nwea-map-shuxue-chengji" className="text-indigo-600 hover:underline">
+          如何提高MAP数学成绩
+        </Link>。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP阅读实际测试哪些内容</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP阅读涵盖三大技能领域。
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">技能领域</th>
+                <th className="text-left p-4 font-semibold text-gray-700">涵盖内容</th>
+                <th className="text-left p-4 font-semibold text-gray-700">主要考查RIT段</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['文学类文本', '故事要素、人物动机、主题、比喻语言、叙述视角', 'RIT 170–200'],
+                ['信息类文本', '中心思想、文章结构、作者意图、论据与主张', 'RIT 195–220'],
+                ['词汇', '语境中的词义、学术语言、词语关系、词义色彩', '全程考查，RIT 200+权重最大'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">最重要的洞见：</strong>RIT 200分以上，
+          推断类题目占比最大。能解码文字但无法推断的学生，无论阅读量多大，往往会在RIT 200–215之间遭遇瓶颈。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lexile方法：在适当难度下阅读</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NWEA RIT分数与Lexile等级直接对应。有效的成长阅读区间，是比孩子当前独立阅读水平高出100至200 Lexile的材料。
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">MAP阅读RIT</th>
+                <th className="text-left p-4 font-semibold text-gray-700">对应Lexile范围（约）</th>
+                <th className="text-left p-4 font-semibold text-gray-700">成长阅读区间</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['170–185', '200–500L', '400–600L — 初级章节书'],
+                ['185–200', '500–700L', '700–800L — 中级系列小说、基础非虚构类'],
+                ['200–215', '700–900L', '900–1000L — 青少年非虚构类'],
+                ['215–225', '900–1100L', '1050–1200L — 初中非虚构类、经典著作'],
+                ['225+', '1100L+', '1200–1400L — AP水平非虚构类、原始资料'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>实用工具：</strong>Newsela可将文章调整至指定Lexile等级；
+          CommonLit提供带理解题的阅读材料。两者均免费使用。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">词汇：性价比最高的干预手段</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP阅读使用第二层学术词汇，例如{' '}
+          <em>infer、synthesise、ambiguous、paradox、contradict、nuance</em>。
+        </p>
+        <h3 className="text-lg font-bold text-gray-900 mb-3">为什么词素学习优于背单词表</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          孩子一旦学会拉丁词根 <strong>cred</strong>（相信），就能自行解码 <em>credible、
+          incredible、credential、discredit、accredit</em>——用一个词根掌握五个单词。
+        </p>
+        <div className="rounded-xl bg-gray-50 border border-gray-100 p-5 mb-4">
+          <p className="font-semibold text-gray-900 mb-3 text-sm">各年级段重点词根</p>
+          <div className="space-y-2">
+            {[
+              ['3–4年级', 'pre-、re-、un-、-ful、-less、-tion'],
+              ['5–6年级', 'micro-、macro-、-ology、trans-、inter-'],
+              ['7–8年级', '拉丁词根：rupt、dict、ject、tract、scrib'],
+              ['9年级+', '希腊词根：chron、graph、logy、phon、bio'],
+            ].map(([grade, roots]) => (
+              <div key={grade} className="flex gap-3">
+                <span className="text-xs font-semibold text-indigo-600 w-24 shrink-0 pt-0.5">{grade}</span>
+                <span className="text-sm text-gray-600">{roots}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">培养推断能力</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          推断是RIT 200分以上考查最多的技能。推荐使用<strong>QAR方法</strong>：
+          &ldquo;直接找到&rdquo;（字面信息）、&ldquo;思考搜索&rdquo;（推断）、
+          &ldquo;自我思考&rdquo;（背景知识）。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">在家培养推断习惯的简单方法：</strong>{' '}
+          共读后，问孩子&ldquo;作者没有直说，但希望我们理解什么？&rdquo;
+          等待孩子大声推理。
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">切实可行的提分预期</h2>
+        <div className="space-y-3 mb-6">
+          {[
+            ['小学（RIT 175–205）', '每天在适合Lexile等级下阅读，每年可提升4–8个RIT分数'],
+            ['初中（RIT 205–220）', '每年提升3–6个RIT分数；词汇和推断是主要突破口'],
+            ['高中（RIT 220+）', '每年提升2–4个RIT分数；非虚构类与分析性阅读带动增长'],
+          ].map(([level, gain]) => (
+            <div key={level} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-semibold text-indigo-700 text-sm w-48 shrink-0">{level}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{gain}</span>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          如需MAP数学提分策略，请参阅{' '}
+          <Link href="/zh/blog/tigao-nwea-map-shuxue-chengji" className="text-indigo-600 hover:underline">
+            如何提高MAP数学成绩
+          </Link>。
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-to-improve-map-math-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        MAP数学提分失败，往往是因为练习难度与孩子实际水平不匹配。一名RIT 218分的五年级学生，
+        需要的是七年级的内容，而非五年级的练习。
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        不清楚孩子的RIT分数代表什么？请参阅我们的{' '}
+        <Link href="/zh/blog/nwea-map-chengji-jiexi" className="text-indigo-600 hover:underline">
+          NWEA MAP成绩解析指南
+        </Link>。如需阅读提分策略，请参阅{' '}
+        <Link href="/zh/blog/tigao-nwea-map-yuedu-chengji" className="text-indigo-600 hover:underline">
+          如何提高MAP阅读成绩
+        </Link>。
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP数学实际测试哪些内容</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">领域</th>
+                <th className="text-left p-4 font-semibold text-gray-700">核心技能</th>
+                <th className="text-left p-4 font-semibold text-gray-700">主要RIT段</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['运算与代数思维', '计算、方程、应用题、规律', '全程'],
+                ['数与运算', '分数、小数、比率、比例、数感', 'RIT 185–225'],
+                ['测量与数据', '几何、统计、图表、面积/体积', 'RIT 195–220'],
+                ['实数与复数', '整数、有理数、函数、高级代数', 'RIT 220+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs font-mono">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP数学对<strong>程序性流利度</strong>和<strong>概念性推理</strong>的考查比重相当。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">RIT进阶阶梯：常见瓶颈</h2>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 185分以下：数感与基础计算流利度</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          瓶颈：位值概念薄弱或基础运算有漏洞。<strong>干预方法：</strong>数轴练习、
+          十进制积木，每天3至5分钟基础运算练习。Reflex Math对此很有帮助。
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 185–205：乘法与分数</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          先夯实乘法，再借助直观模型（分数条、面积模型）引入分数概念。
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 205–220：分数瓶颈</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          大多数学生在此区间停滞不前，分数与比率题目在这一范围高度集中。
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">RIT 205–215最佳干预方案：</strong>{' '}
+          先用2至3周进行分数概念训练——直观模型、数轴、生活中的比率——再接触计算程序。
+          Khan Academy 5至6年级分数单元是最好的免费资源。
+        </Callout>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 215–225：比例推理</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          从加法思维转向乘法思维，熟练掌握比率、单位速率和百分比变化。
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 225+：代数推理</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          线性方程、斜率、函数。练习从实际情境中建立方程。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">应用题</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP题目几乎全部以应用题形式呈现。训练<strong>建模能力</strong>：
+          先判断所需运算，再动手计算。
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">各RIT段推荐资源</h2>
+        <div className="space-y-3 mb-6">
+          {[
+            ['RIT 185分以下', 'Reflex Math、Khan Academy 2–3年级、十进制积木'],
+            ['RIT 185–205', 'Khan Academy 4–5年级、Zearn（分数模型）'],
+            ['RIT 205–220', 'Khan Academy 5–7年级（分数/比率）、IXL 6–7年级'],
+            ['RIT 220–230', 'Khan Academy 7–8年级、Art of Problem Solving、DeltaMath'],
+            ['RIT 230+', 'Art of Problem Solving、AMC 8/10历年真题、Khan 8–9年级'],
+          ].map(([band, resources]) => (
+            <div key={band} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-mono font-semibold text-indigo-700 text-xs w-28 shrink-0 pt-0.5">{band}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{resources}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">12周提分计划</h2>
+        <div className="space-y-3 mb-4">
+          {[
+            ['第1–2周', '诊断：查看MAP各项子测分数，找出最薄弱的考查方向。'],
+            ['第3–6周', '突破瓶颈：每天20至30分钟针对关键技能漏洞练习，优先使用直观模型。'],
+            ['第7–10周', '应用题训练：将所学技能应用于应用题情境中。'],
+            ['第11–12周', '综合练习：涵盖相邻RIT段内容，轻松复习巩固。'],
+          ].map(([week, detail]) => (
+            <div key={week} className="flex gap-4 p-5 border border-gray-100 rounded-xl">
+              <div className="text-indigo-600 font-bold text-sm w-28 shrink-0 pt-0.5">{week}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          如需阅读提分策略，请参阅{' '}
+          <Link href="/zh/blog/tigao-nwea-map-yuedu-chengji" className="text-indigo-600 hover:underline">
+            如何提高MAP阅读成绩
+          </Link>。
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

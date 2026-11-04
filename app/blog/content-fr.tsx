@@ -4216,6 +4216,325 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'how-to-improve-map-reading-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        La plupart des conseils pour améliorer le score MAP Lecture sont trop génériques pour être utiles : &ldquo;lis davantage&rdquo;,
+        &ldquo;enrichis ton vocabulaire&rdquo;, &ldquo;entraîne-toi à la compréhension.&rdquo; Ce guide est plus
+        précis. Il explique ce que le MAP Lecture évalue réellement, quelles interventions la recherche NWEA montre
+        comme efficaces, et quoi faire selon le niveau scolaire — avec pour objectif d'augmenter le
+        score RIT de votre enfant de 4 à 8 points sur une période de 12 à 16 semaines.
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        Vous avez d'abord besoin des repères MAP Lecture ? Consultez notre{' '}
+        <Link href="/fr/blog/scores-nwea-map-expliques" className="text-indigo-600 hover:underline">
+          guide des scores NWEA MAP par niveau scolaire
+        </Link>{' '}
+        pour les scores RIT moyens et leurs équivalents en percentiles. Pour les stratégies en mathématiques, consultez{' '}
+        <Link href="/fr/blog/comment-ameliorer-score-map-mathematiques" className="text-indigo-600 hover:underline">
+          comment améliorer le score MAP Mathématiques
+        </Link>.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce que le MAP Lecture évalue réellement</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le MAP Lecture couvre trois grands domaines de compétences — et comprendre dans lequel votre enfant
+          éprouve des difficultés est la première étape pour améliorer efficacement son score.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Domaine</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Ce qu&apos;il couvre</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Devient prépondérant à partir de</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Texte littéraire', 'Éléments narratifs, motivations des personnages, thème, langage figuré, point de vue', 'RIT 170–200'],
+                ['Texte informatif', 'Idée principale, structure du texte, intention de l\'auteur, preuves et affirmations', 'RIT 195–220'],
+                ['Vocabulaire', 'Mots en contexte, langage académique, relations entre mots, connotation', 'Tous niveaux, plus fort à partir de RIT 200+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">L&apos;enseignement le plus important :</strong> au-dessus de RIT 200,
+          les questions d&apos;inférence — tirer des conclusions non explicitement formulées dans le texte — constituent la
+          plus grande partie du test. Les élèves qui décodent couramment mais ne font pas d&apos;inférences de manière
+          fiable plafonneront dans la fourchette RIT 200–215, quel que soit le volume de lecture.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">La méthode Lexile : lire au bon niveau</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les scores RIT du MAP se correspondent directement aux niveaux Lexile — la même échelle utilisée pour mesurer
+          la complexité des textes. Lire au bon niveau Lexile est probablement la chose la plus concrète qu&apos;un
+          parent puisse faire pour soutenir la progression en MAP Lecture.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Score RIT MAP Lecture</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Plage Lexile approximative</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Zone de lecture pour progresser</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['170–185', '200–500L', '400–600L — premiers livres de chapitre, séries décodables'],
+                ['185–200', '500–700L', '700–800L — fiction de milieu de série, non-fiction basique'],
+                ['200–215', '700–900L', '900–1000L — non-fiction YA, littérature adaptée à l\'âge'],
+                ['215–225', '900–1100L', '1050–1200L — non-fiction collège, classiques'],
+                ['225+', '1100L+', '1200–1400L — non-fiction niveau terminale, sources primaires'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La zone de lecture pour progresser se situe 100 à 200 Lexile au-dessus du niveau de lecture autonome actuel
+          de votre enfant. Lire uniquement à son niveau actuel maintient mais ne fait pas progresser la capacité de
+          lecture. Le rapport familial envoyé par NWEA après les tests inclut souvent une plage Lexile — utilisez-la
+          pour choisir livres et articles non-fictionnels.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Outils pratiques :</strong> Newsela adapte les articles non-fictionnels à un niveau Lexile précis —
+          les parents peuvent trouver un article exactement au bon niveau de défi. CommonLit propose des textes
+          littéraires et informatifs avec des questions de compréhension intégrées. Les deux sont gratuits.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Vocabulaire : l&apos;intervention à plus fort levier</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les questions de vocabulaire du MAP Lecture utilisent des mots académiques de niveau 2 — des mots comme{' '}
+          <em>inférer, synthétiser, ambigu, paradoxe, contredire, nuance</em> — qui apparaissent dans toutes les
+          matières et sont rarement enseignés explicitement à l&apos;école.
+        </p>
+        <h3 className="text-lg font-bold text-gray-900 mb-3">Pourquoi la morphologie est plus efficace que les listes de mots</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Mémoriser 20 mots par semaine est inefficace. Un enfant qui apprend la racine latine{' '}
+          <strong>cred</strong> (croire) peut décoder <em>crédible, incrédible, crédit, discréditer, accréditer</em> —
+          cinq mots débloqués par une seule racine.
+        </p>
+        <div className="rounded-xl bg-gray-50 border border-gray-100 p-5 mb-4">
+          <p className="font-semibold text-gray-900 mb-3 text-sm">Racines à fort potentiel à enseigner par niveau scolaire</p>
+          <div className="space-y-2">
+            {[
+              ['CE1–CE2', 'pré-, re-, dé-, -tion, -ment, -ible — débloque des centaines de mots courants'],
+              ['CM1–CM2', 'micro-, macro-, -logie, trans-, inter- — vocabulaire académique et scientifique'],
+              ['6e–5e', 'Racines latines : rupt, dict, ject, tract, scrib — débloque le vocabulaire académique de niveau 2'],
+              ['4e et +', 'Racines grecques : chron, graph, logie, phon, bio — débloque le vocabulaire académique avancé et les tests'],
+            ].map(([grade, roots]) => (
+              <div key={grade} className="flex gap-3">
+                <span className="text-xs font-semibold text-indigo-600 w-24 shrink-0 pt-0.5">{grade}</span>
+                <span className="text-sm text-gray-600">{roots}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Développer les compétences d&apos;inférence</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          L&apos;inférence est la compétence la plus évaluée dans le MAP Lecture au-dessus de RIT 200. Les questions
+          de compréhension classiques demandent &ldquo;que s&apos;est-il passé dans l&apos;histoire ?&rdquo; Les questions
+          d&apos;inférence du MAP demandent &ldquo;que pouvez-vous conclure que le texte n&apos;énonce pas directement ?&rdquo;
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le moyen le plus efficace de développer l&apos;inférence est la conversation structurée pendant la lecture à
+          voix haute. La méthode <strong>QAR</strong> (Question-Answer Relationship) apprend aux enfants à classer les
+          questions selon où se trouve la réponse — &ldquo;c&apos;est écrit là&rdquo; (littéral), &ldquo;cherche et relie&rdquo;
+          (inférence dans le texte), ou &ldquo;dans ma tête&rdquo; (connaissances préalables).
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Une habitude d&apos;inférence simple à créer à la maison :</strong>{' '}
+          après avoir lu un passage ensemble, demandez &ldquo;Qu&apos;est-ce que l&apos;auteur n&apos;a pas dit mais voulait que nous comprenions ?&rdquo;
+          Résistez à la tentation de répondre — attendez que votre enfant raisonne à voix haute.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">À quoi ressemble une progression réaliste</h2>
+        <div className="space-y-3 mb-6">
+          {[
+            ['Primaire (RIT 175–205)', '4 à 8 points RIT par an avec une lecture quotidienne au bon niveau Lexile et un travail sur la morphologie'],
+            ['Collège (RIT 205–220)', '3 à 6 points RIT par an ; le vocabulaire et le travail sur l\'inférence sont les principaux leviers'],
+            ['Lycée (RIT 220+)', '2 à 4 points RIT par an ; les progrès viennent de l\'exposition à la non-fiction et de la lecture analytique'],
+          ].map(([level, gain]) => (
+            <div key={level} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-semibold text-indigo-700 text-sm w-48 shrink-0">{level}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{gain}</span>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pour les stratégies d&apos;amélioration en MAP Mathématiques, consultez{' '}
+          <Link href="/fr/blog/comment-ameliorer-score-map-mathematiques" className="text-indigo-600 hover:underline">
+            comment améliorer le score MAP Mathématiques de votre enfant
+          </Link>.
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-to-improve-map-math-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        L&apos;amélioration du score MAP Mathématiques échoue pour une raison prévisible : les parents et les tuteurs
+        s&apos;entraînent au mauvais niveau. Un élève de CM2 qui obtient RIT 218 a besoin de contenu de 5e, pas de CM2 —
+        mais la plupart des entraînements à domicile se basent par défaut sur des exercices du niveau scolaire actuel
+        que l&apos;enfant maîtrise déjà.
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        Vous ne savez pas ce que signifie le score RIT de votre enfant ? Commencez par notre{' '}
+        <Link href="/fr/blog/scores-nwea-map-expliques" className="text-indigo-600 hover:underline">
+          guide d&apos;explication des scores NWEA MAP
+        </Link>. Pour les stratégies en lecture, consultez{' '}
+        <Link href="/fr/blog/comment-ameliorer-score-map-lecture" className="text-indigo-600 hover:underline">
+          comment améliorer le score MAP Lecture
+        </Link>.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ce que le MAP Mathématiques évalue réellement</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Domaine</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Compétences clés</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Plage RIT intensive</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Opérations et pensée algébrique', 'Calcul, équations, problèmes, suites', 'Tous niveaux'],
+                ['Nombres et opérations', 'Fractions, décimaux, ratios, proportions, sens du nombre', 'RIT 185–225'],
+                ['Mesure et données', 'Géométrie, statistiques, graphiques, aire/volume', 'RIT 195–220'],
+                ['Nombres réels et complexes', 'Entiers, nombres rationnels, fonctions, algèbre avancée', 'RIT 220+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs font-mono">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le MAP Mathématiques évalue à la fois la <strong>fluidité procédurale</strong> et le{' '}
+          <strong>raisonnement conceptuel</strong> — un enfant qui exécute les procédures rapidement mais ne peut pas
+          raisonner face à un problème inédit plafonnnera quoi que soit le volume d&apos;entraînement.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">L&apos;échelle RIT : ce qui bloque les élèves à chaque niveau</h2>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">En dessous de RIT 185 : sens du nombre et fluidité de calcul</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Le blocage est généralement une mauvaise compréhension de la valeur positionnelle ou des lacunes dans la fluidité de calcul. <strong>Intervention :</strong> travail sur la droite numérique, les blocs base 10 et une pratique chronométrée mais peu stressante (3 à 5 minutes par jour). Reflex Math propose un entraînement adaptatif au calcul.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 185–205 : la transition multiplication et fractions</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les élèves se heurtent à deux obstacles simultanément : la fluidité de la multiplication et l&apos;introduction des fractions. Commencez par automatiser la multiplication, puis introduisez les fractions avec des modèles visuels (barres de fractions, modèles de surface) avant tout algorithme procédural.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 205–220 : le mur des fractions</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          C&apos;est là que la majorité des élèves stagne. Les données NWEA montrent que les questions sur les opérations avec les fractions et les ratios/proportions se concentrent dans cette plage. Un élève qui comprend les fractions de manière procédurale mais pas conceptuelle rencontrera systématiquement des difficultés.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">La meilleure intervention unique pour les élèves bloqués à RIT 205–215 :</strong>{' '}
+          deux à trois semaines de travail conceptuel sur les fractions — modèles visuels de fractions, droites
+          numériques et problèmes de ratio dans des contextes réels — avant de réintroduire tout algorithme. Les
+          unités sur les fractions de 5e et 6e année de Khan Academy sont la ressource gratuite la plus efficace.
+        </Callout>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 215–225 : le raisonnement proportionnel</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La transition de la pensée additive vers la pensée multiplicative. Les élèves doivent travailler avec fluidité sur les ratios, les taux unitaires et les variations en pourcentage, et représenter les relations à l&apos;aide de variables.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 225+ : raisonnement algébrique et fonctions</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les équations linéaires, la pente, les systèmes d&apos;équations et la notation des fonctions dominent. La solution est un entraînement à la résolution de problèmes nécessitant de poser des équations à partir de contextes réels.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Les problèmes écrits : le type d&apos;entraînement le plus sous-estimé</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les questions du MAP Mathématiques sont presque toujours sous forme de problèmes écrits. Un enfant qui ne
+          s&apos;entraîne qu&apos;au calcul obtiendra un score inférieur à ce que ses compétences procédurales justifient.
+          Entraînez la <strong>mise en place du problème</strong> comme une compétence à part entière : identifier
+          l&apos;opération nécessaire avant de calculer.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ressources par plage RIT</h2>
+        <div className="space-y-3 mb-6">
+          {[
+            ['En dessous de RIT 185', 'Reflex Math (fluidité de calcul), Khan Academy CE1–CE2, manipulatifs blocs base 10'],
+            ['RIT 185–205', 'Khan Academy CM1–CM2, Zearn (modèles visuels de fractions), applications de fluidité en multiplication'],
+            ['RIT 205–220', 'Khan Academy 5e–6e (fractions/ratios), continuum d\'apprentissage NWEA + correspondance Khan, IXL 6e–7e'],
+            ['RIT 220–230', 'Khan Academy 7e–8e, série Introduction de Art of Problem Solving, DeltaMath'],
+            ['RIT 230+', 'Art of Problem Solving, anciens sujets AMC 8/10, Khan 8e–9e'],
+          ].map(([band, resources]) => (
+            <div key={band} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-mono font-semibold text-indigo-700 text-xs w-28 shrink-0 pt-0.5">{band}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{resources}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Construire un plan de progression sur 12 semaines</h2>
+        <div className="space-y-3 mb-4">
+          {[
+            ['Semaines 1–2', 'Diagnostic : consultez les scores MAP par sous-domaine. Identifiez le point le plus faible.'],
+            ['Semaines 3–6', 'Travail sur l\'obstacle : adressez la lacune principale — 20 à 30 min par jour. Utilisez d\'abord des modèles visuels.'],
+            ['Semaines 7–10', 'Entraînement aux problèmes écrits : appliquez le même domaine dans des contextes de problèmes écrits.'],
+            ['Semaines 11–12', 'Entraînement mixte : intégrez des compétences des plages RIT adjacentes. Reprenez les erreurs de manière conceptuelle.'],
+          ].map(([week, detail]) => (
+            <div key={week} className="flex gap-4 p-5 border border-gray-100 rounded-xl">
+              <div className="text-indigo-600 font-bold text-sm w-28 shrink-0 pt-0.5">{week}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pour les stratégies d&apos;amélioration en MAP Lecture, consultez{' '}
+          <Link href="/fr/blog/comment-ameliorer-score-map-lecture" className="text-indigo-600 hover:underline">
+            comment améliorer le score MAP Lecture de votre enfant
+          </Link>.
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

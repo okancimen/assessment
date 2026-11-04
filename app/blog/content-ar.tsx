@@ -3528,6 +3528,372 @@ export const AR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'how-to-improve-map-reading-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        معظم نصائح تحسين درجة MAP للقراءة عامةٌ جداً لتكون مفيدة: &ldquo;اقرأ أكثر&rdquo;، &ldquo;وسّع مفرداتك&rdquo;،
+        &ldquo;تدرّب على الاستيعاب.&rdquo; هذا الدليل أكثر تحديداً. يشرح ما يختبره MAP للقراءة فعليًا، وأيّ التدخلات
+        تُحرّك الإبرة وفق أبحاث NWEA، وما ينبغي فعله في كل مرحلة دراسية — بهدف رفع درجة RIT لطفلك بمقدار 4–8 نقاط
+        خلال نافذة 12–16 أسبوعاً.
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        تحتاج إلى معايير MAP للقراءة أولاً؟ راجع{' '}
+        <Link href="/ar/blog/nwea-map-sharh-shaml" className="text-indigo-600 hover:underline">
+          دليل درجات NWEA MAP حسب الصف
+        </Link>{' '}
+        للاطلاع على متوسطات RIT ومكافئاتها المئوية. لاستراتيجيات الرياضيات، راجع{' '}
+        <Link href="/ar/blog/tahsin-daraja-map-riyadiyyat" className="text-indigo-600 hover:underline">
+          كيفية تحسين درجة MAP للرياضيات
+        </Link>
+        .
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">ما الذي يختبره MAP للقراءة فعليًا؟</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          يغطّي MAP للقراءة ثلاثة مجالات مهارية رئيسية — وفهم المجال الذي يواجه فيه طفلك صعوبةً هو الخطوة الأولى
+          لرفع درجته بكفاءة.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-right p-4 font-semibold text-gray-700">مجال المهارة</th>
+                <th className="text-right p-4 font-semibold text-gray-700">ما يغطّيه</th>
+                <th className="text-right p-4 font-semibold text-gray-700">يبدأ السيطرة عند</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['النص الأدبي', 'عناصر القصة، دوافع الشخصيات، الموضوع، اللغة المجازية، وجهة النظر', 'RIT 170–200'],
+                ['النص المعلوماتي', 'الفكرة الرئيسية، بنية النص، غرض المؤلف، الأدلة والادعاءات', 'RIT 195–220'],
+                ['المفردات', 'الكلمات في سياقها، اللغة الأكاديمية، علاقات الكلمات، الإيحاء', 'جميع المستويات، الأثقل عند RIT 200+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">الرؤية الأهم:</strong> فوق RIT 200، تُشكّل أسئلة الاستنتاج — استخلاص
+          نتائج غير مصرّح بها في النص — الجزء الأكبر من الاختبار. الطلاب القادرون على فكّ الشفرة بطلاقة لكنهم
+          يعجزون عن الاستنتاج بشكل موثوق سيصلون إلى سقف عند RIT 200–215 بغضّ النظر عن حجم قراءتهم.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">طريقة Lexile: القراءة على المستوى الصحيح</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          ترتبط درجات RIT في NWEA مباشرةً بمستويات Lexile — نفس المقياس المستخدم لقياس تعقيد النص. القراءة على
+          مستوى Lexile الصحيح هي على الأرجح الشيء الأكثر قابليةً للتطبيق الذي يستطيع أحد الوالدين فعله لدعم
+          نموّ درجة MAP للقراءة.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-right p-4 font-semibold text-gray-700">MAP قراءة RIT</th>
+                <th className="text-right p-4 font-semibold text-gray-700">نطاق Lexile التقريبي</th>
+                <th className="text-right p-4 font-semibold text-gray-700">منطقة القراءة للنمو</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['170–185', '200–500L', '400–600L — كتب الفصول المبكرة، سلاسل القراءة القابلة للفكّ'],
+                ['185–200', '500–700L', '700–800L — الخيال في منتصف السلسلة، الكتب غير الخيالية الأساسية'],
+                ['200–215', '700–900L', '900–1000L — الكتب غير الخيالية للشباب، الأدب المناسب للعمر'],
+                ['215–225', '900–1100L', '1050–1200L — الكتب غير الخيالية للمرحلة المتوسطة، الكلاسيكيات'],
+                ['225+', '1100L+', '1200–1400L — كتب غير خيالية بمستوى AP، المصادر الأولية'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          منطقة القراءة للنمو هي 100–200 Lexile فوق المستوى المستقل الحالي لطفلك. القراءة على المستوى الحالي فقط
+          تُحافظ على المستوى دون أن تُطوّره. كثيراً ما يتضمّن تقرير الأسرة الذي يُرسله NWEA بعد الاختبار نطاق
+          Lexile — استخدمه لاختيار الكتب والمقالات غير الخيالية.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>أدوات عملية:</strong> يُعدّل Newsela المقالات غير الخيالية لتناسب مستوى Lexile محدداً — يمكن
+          للأهل إيجاد مقال بمستوى التحدي المناسب تماماً. يوفّر CommonLit نصوصاً أدبية ومعلوماتية مع أسئلة
+          استيعاب مدمجة. كلاهما مجاني.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">المفردات: التدخل ذو التأثير الأعلى</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          أسئلة مفردات MAP للقراءة تستخدم كلمات أكاديمية من المستوى الثاني — كلمات مثل{' '}
+          <em>يستنتج، يُركّب، غامض، مفارقة، يتناقض، دقة</em> — تظهر عبر المواد وكثيراً ما لا تُدرَّس
+          صراحةً في المدرسة. هذه هي ما يفرّق بين طلاب RIT 205 وطلاب RIT 215.
+        </p>
+        <h3 className="text-lg font-bold text-gray-900 mb-3">لماذا تعلّم الجذور أفضل من قوائم الكلمات</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          حفظ 20 كلمة أسبوعياً غير فعّال. الطفل الذي يتعلم الجذر اللاتيني{' '}
+          <strong>cred</strong> (يؤمن) يستطيع فكّ شفرة{' '}
+          <em>credible، incredible، credential، discredit، accredit</em> — خمس كلمات يفتحها جذرٌ واحد.
+          جذرٌ واحد أسبوعياً مُدرَّس من خلال أمثلة حقيقية في القراءة أفضل من مجموعة بطاقات تعليمية أسبوعية.
+        </p>
+        <div className="rounded-xl bg-gray-50 border border-gray-100 p-5 mb-4">
+          <p className="font-semibold text-gray-900 mb-3 text-sm">
+            الجذور عالية القيمة حسب المرحلة الدراسية
+          </p>
+          <div className="space-y-2">
+            {[
+              ['الصفوف 3–4', 'pre-, re-, un-, -ful, -less, -tion — تفتح مئات الكلمات الشائعة'],
+              ['الصفوف 5–6', 'micro-, macro-, -ology, trans-, inter- — مفردات أكاديمية وعلمية'],
+              ['الصفوف 7–8', 'جذور لاتينية: rupt, dict, ject, tract, scrib — تفتح مفردات أكاديمية من المستوى الثاني'],
+              ['الصف 9+', 'جذور يونانية: chron, graph, logy, phon, bio — تفتح مفردات أكاديمية متقدمة ومفردات الاختبارات'],
+            ].map(([grade, roots]) => (
+              <div key={grade} className="flex gap-3">
+                <span className="text-xs font-semibold text-indigo-600 w-24 shrink-0 pt-0.5">
+                  {grade}
+                </span>
+                <span className="text-sm text-gray-600">{roots}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">بناء مهارات الاستنتاج</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          الاستنتاج هو المهارة الأكثر اختباراً في MAP للقراءة فوق RIT 200 — والمهارة الأسوأ خدمةً في تدريبات
+          الاستيعاب المعتادة. أسئلة الاستيعاب المعيارية تسأل &ldquo;ماذا حدث في القصة؟&rdquo; بينما تسأل أسئلة
+          استنتاج MAP &ldquo;ما الذي يمكنك استنتاجه مما لا يقوله النص صراحةً؟&rdquo;
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          الطريقة الأكثر فعاليةً لتنمية الاستنتاج هي من خلال المحادثة المنظّمة أثناء القراءة المشتركة بصوتٍ
+          عالٍ، لا التمارين الكتابية. تُعلّم <strong>طريقة QAR</strong> (العلاقة بين السؤال والإجابة) الأطفال
+          تصنيف الأسئلة حسب مكان تواجد الإجابة — &ldquo;موجودة هناك&rdquo; (حرفية)، &ldquo;فكّر وابحث&rdquo;
+          (استنتاج داخل النص)، أو &ldquo;من عندي&rdquo; (معرفة خلفية). ممارسة QAR لمدة 10 دقائق خلال جلسات
+          القراءة المشتركة، مرتين إلى ثلاث مرات أسبوعياً، يبني الوعي الميتامعرفي الذي يتطلبه MAP للقراءة.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">عادة استنتاج بسيطة يمكن بناؤها في المنزل:</strong>{' '}
+          بعد قراءة أي مقطع معاً، اسأل &ldquo;ما الذي لم يقله المؤلف لكنه أراد منا أن نفهمه؟&rdquo; امتنع عن
+          الإجابة — انتظر حتى يستدلّ طفلك بصوتٍ عالٍ. هذا السؤال الواحد المُمارَس باستمرار يُنمّي قدرة
+          الاستنتاج أكثر من معظم تمارين كتب الواجبات.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">كيف يبدو التحسن الواقعي؟</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          مكاسب القراءة أبطأ من مكاسب الرياضيات على المدى القصير لأنها تعتمد على المفردات والمخطط الذهني
+          المتراكمَين. النمو النموذجي مع الجهد الموجَّه خلال نافذة 12–16 أسبوعاً:
+        </p>
+        <div className="space-y-3 mb-6">
+          {[
+            ['الابتدائية (RIT 175–205)', '4–8 نقاط RIT سنوياً مع قراءة يومية على مستوى Lexile الصحيح وعمل على الجذور اللغوية'],
+            ['المتوسطة (RIT 205–220)', '3–6 نقاط RIT سنوياً؛ المفردات والاستنتاج هما الرافعتان الأساسيتان'],
+            ['الثانوية (RIT 220+)', '2–4 نقاط RIT سنوياً؛ المكاسب تأتي من التعرّض للكتب غير الخيالية والقراءة التحليلية'],
+          ].map(([level, gain]) => (
+            <div key={level} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-semibold text-indigo-700 text-sm w-48 shrink-0">{level}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{gain}</span>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          لاستراتيجيات تحسين MAP للرياضيات، راجع{' '}
+          <Link href="/ar/blog/tahsin-daraja-map-riyadiyyat" className="text-indigo-600 hover:underline">
+            كيفية تحسين درجة MAP للرياضيات لطفلك
+          </Link>
+          .
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-to-improve-map-math-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        يفشل تحسين درجة MAP للرياضيات لسببٍ واحد قابل للتنبؤ: يتدرّب الأهل والمدرّسون على المستوى الخطأ. طالب
+        الصف الخامس الذي يسجّل RIT 218 يحتاج محتوى الصف السابع، لا الصف الخامس — لكن معظم التدريب المنزلي
+        يعود تلقائياً إلى أوراق عمل بمستوى الصف يعرفها الطفل بالفعل. يشرح هذا الدليل أين تُحدّد الهدف، وما
+        أكثر العوائق شيوعاً في كل شريحة RIT، وكيف تبني خطةً تُحرّك الدرجة فعلياً.
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        غير متأكد مما تعنيه درجة RIT لطفلك؟ ابدأ بـ{' '}
+        <Link href="/ar/blog/nwea-map-sharh-shaml" className="text-indigo-600 hover:underline">
+          دليل شرح درجات NWEA MAP
+        </Link>
+        . لاستراتيجيات القراءة، راجع{' '}
+        <Link href="/ar/blog/tahsin-daraja-map-qiraah" className="text-indigo-600 hover:underline">
+          كيفية تحسين درجة MAP للقراءة
+        </Link>
+        .
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">ما الذي يختبره MAP للرياضيات فعليًا؟</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          يستقي MAP للرياضيات من أربعة مجالات للمحتوى، ويتغير التوزيع مع ارتفاع الدرجات. فهم أيّ المجالات
+          يُعيق طفلك أكثر فائدةً من التدريب العام.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-right p-4 font-semibold text-gray-700">المجال</th>
+                <th className="text-right p-4 font-semibold text-gray-700">المهارات الأساسية</th>
+                <th className="text-right p-4 font-semibold text-gray-700">نطاق RIT الأثقل</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['العمليات والتفكير الجبري', 'الحساب، المعادلات، مسائل الكلمات، الأنماط', 'جميع المستويات'],
+                ['الأعداد والعمليات', 'الكسور، الأعشار، النسب، التناسب، مفهوم الأعداد', 'RIT 185–225'],
+                ['القياس والبيانات', 'الهندسة، الإحصاء، الرسم البياني، المساحة والحجم', 'RIT 195–220'],
+                ['الأعداد الحقيقية والمركّبة', 'الأعداد الصحيحة، الأعداد النسبية، الدوال، الجبر المتقدم', 'RIT 220+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs font-mono">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          يختبر MAP للرياضيات أيضاً نوعَين من التفكير في كل مستوى:{' '}
+          <strong>الطلاقة الإجرائية</strong> (هل يستطيع طفلك الحساب بدقة؟) و{' '}
+          <strong>التفكير المفاهيمي</strong> (هل يستطيع تطبيق التفكير الرياضي على موقف جديد؟). معظم التدريب
+          المنزلي يُبالغ في التركيز على الحساب. يُساوي MAP بينهما تقريباً — الطفل الذي ينفّذ الإجراءات
+          بسرعة لكنه لا يستطيع التفكير في مسألة غير مألوفة سيصل إلى سقف بغضّ النظر عن حجم التدريب.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">سلّم RIT: ما الذي يعيق الطلاب في كل مستوى؟</h2>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">أقل من RIT 185: مفهوم الأعداد وطلاقة الحقائق</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          الطلاب في هذا المستوى يبنون الأساس الحسابي. العائق عادةً أحد أمرين: ضعف في فهم القيمة المكانية أو
+          ثغرات في طلاقة الحقائق (الجمع والطرح غير آلي). <strong>التدخل:</strong> العمل على خط الأعداد،
+          وقطع الأساس العشري لفهم القيمة المكانية، وتدريب موقوت لكن منخفض الضغط على الحقائق (3–5 دقائق يومياً،
+          لا جلسات ماراثونية). يوفّر Reflex Math وتطبيقات مشابهة تدريباً تكيّفياً على الحقائق معيارُه
+          الآلية لا مجرد الدقة.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 185–205: مرحلة انتقال الضرب والكسور</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          الطلاب هنا لديهم حساب أساسي لكنهم يصطدمون بعائقين في آنٍ واحد: طلاقة الضرب ومقدّمة الكسور. أخطاء
+          الضرب متعدد الأرقام تتراكم إلى أخطاء في الكسور، تتراكم بدورها إلى أخطاء في النسب. إصلاح آلية الضرب
+          أولاً — حتى تتفرّغ السعة المعرفية للكسور — هو التسلسل الصحيح. ينبغي تقديم الكسور باستخدام النماذج
+          البصرية (أشرطة الكسور، نماذج المساحة) قبل أي خوارزمية إجرائية.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 205–220: حاجز الكسور</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          هنا يتوقف غالبية الطلاب. تُظهر بيانات مسار التعلّم لدى NWEA أن أسئلة عمليات الكسور والتكافؤ
+          والنسبة والتناسب تتركّز بالضبط في هذا النطاق. الطالب الذي يفهم الكسور إجرائياً (يستطيع تنفيذ
+          &ldquo;اقلب واضرب&rdquo;) لكن ليس مفاهيمياً (لا يستطيع شرح لماذا يُعطي القسمة على ½ عدداً أكبر)
+          سيتعثّر باستمرار في أسئلة MAP في هذه الشريحة.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">أفضل تدخل للطلاب المتوقفين عند RIT 205–215:</strong>{' '}
+          أسبوعان إلى ثلاثة من العمل المفاهيمي على الكسور — نماذج الكسور البصرية، وخطوط الأعداد، ومسائل
+          النسبة الواقعية — قبل إعادة تقديم أي إجراء. وحدات الكسور للصفين الخامس والسادس في Khan Academy
+          هي أكثر مورد مجاني كفاءةً لهذا.
+        </Callout>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 215–225: التفكير النسبي</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          الانتقال المفاهيمي هنا هو من التفكير الإضافي (&ldquo;بكم أكثر؟&rdquo;) إلى التفكير الضربي
+          (&ldquo;بكم مرة أكثر؟&rdquo;). الطلاب الذين لا يستطيعون العمل بطلاقة مع النسب ومعدلات الوحدة
+          والتغير المئوي سيصلون إلى سقف عند RIT 218–222. كذلك تصبح جاهزية الجبر رافعةً للنمو: يحتاج
+          الطلاب إلى تمثيل العلاقات الرياضية بالمتغيرات، لا مجرد الحساب بالأرقام.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 225+: التفكير الجبري والدوال</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          في هذا المستوى، لم تعد الطلاقة الإجرائية هي القيد — يحتاج الطلاب إلى التفكير في العلاقات المجردة.
+          تسود المعادلات الخطية والميل والأنظمة المعادلات ورموز الدوال. الطلاب الذين حفظوا الإجراءات دون
+          بناء التفكير الجبري سيسجّلون بشكل غير متسق هنا. الحل هو ممارسة حل المسائل التي تتطلب إعداد
+          معادلات من سياقات واقعية، لا تنفيذ إجراءات من معادلة معطاة.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">مسائل الكلمات: نوع التدريب الأقل تقديراً</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          أسئلة MAP للرياضيات تُقدَّم دائماً تقريباً في صيغة مسائل الكلمات أو النماذج السياقية — نادراً ما
+          تكون حساباً مجرداً. الطفل الذي يتدرّب على الحساب فحسب سيسجّل أقل بكثير مما تبرّره قدرته
+          الإجرائية، لأنه يجد صعوبةً في استخلاص البنية الرياضية من سياق واقعي.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          تتضمّن أكثر ممارسات مسائل الكلمات فاعليةً تعلّم <strong>إعداد المسألة</strong> كمهارة منفصلة:
+          تحديد العملية المطلوبة، والمعلومات المعطاة، والمطلوب إيجاده — قبل إجراء أي حساب. عادة مفيدة هي
+          مطالبة طفلك بكتابة المعادلة قبل الحساب، والتحقق من أن المعادلة تطابق المسألة لا مجرد صحة الحساب.
+          هذا يُنمّي التفكير الذي يختبره MAP.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">الموارد حسب شريحة RIT</h2>
+        <div className="space-y-3 mb-6">
+          {[
+            ['أقل من RIT 185', 'Reflex Math (طلاقة الحقائق)، Khan Academy الصفوف 2–3، أدوات القطع العشرية'],
+            ['RIT 185–205', 'Khan Academy الصفوف 4–5، Zearn (نماذج الكسور البصرية)، تطبيقات طلاقة الضرب'],
+            ['RIT 205–220', 'Khan Academy الصفوف 5–7 (الكسور/النسب)، متابعة مسار تعلّم NWEA + دليل Khan، IXL الصفوف 6–7'],
+            ['RIT 220–230', 'Khan Academy الصفوف 7–8، DeltaMath'],
+            ['RIT 230+', 'Art of Problem Solving، أوراق امتحانات AMC السابقة (تفكير في حل المسائل)، Khan الصفوف 8–9'],
+          ].map(([band, resources]) => (
+            <div key={band} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-mono font-semibold text-indigo-700 text-xs w-28 shrink-0 pt-0.5">
+                {band}
+              </span>
+              <span className="text-sm text-gray-600 leading-relaxed">{resources}</span>
+            </div>
+          ))}
+        </div>
+        <p className="text-sm text-gray-500 mb-4">
+          <strong>ملاحظة حول مستويات Khan Academy:</strong> تتوافق مستويات صفوف Khan Academy مع مكافئات
+          صفوف MAP، لا مع درجات RIT. الطالب في RIT 218 بالصف الخامس يجب أن يستخدم محتوى Khan Academy
+          للصفين 7–8 — لا الصف الخامس — لاستهداف النمو. راجع مسار التعلّم NWEA للحصول على أدق توافق.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">بناء خطة تحسين من 12 أسبوعاً</h2>
+        <div className="space-y-3 mb-4">
+          {[
+            ['الأسبوعان 1–2', 'التشخيص: راجع درجات الاختبار الفرعية لطفلك في MAP حسب المحور. حدّد المجال الأضعف. ابحث عن شريحة RIT في مسار التعلّم NWEA.'],
+            ['الأسابيع 3–6', 'العمل على العائق: عالج الفجوة المهارية الرئيسية المُحدَّدة (الكسور، التفكير النسبي، الإعداد الجبري) — 20–30 دقيقة يومياً. استخدم النماذج البصرية أولاً ثم الإجراءات.'],
+            ['الأسابيع 7–10', 'تدريب مسائل الكلمات: طبّق مجال المهارة ذاته في سياق مسائل الكلمات. اشترط على الطفل كتابة المعادلة قبل الحساب.'],
+            ['الأسبوعان 11–12', 'التدريب المختلط: اسحب مهارات من شرائح RIT المجاورة. مراجعة مختلطة موقوتة لكن منخفضة الضغط. راجع الأخطاء المستمرة مفاهيمياً قبل المضي قُدُماً.'],
+          ].map(([week, detail]) => (
+            <div key={week} className="flex gap-4 p-5 border border-gray-100 rounded-xl">
+              <div className="text-indigo-600 font-bold text-sm w-28 shrink-0 pt-0.5">{week}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          لاستراتيجيات تحسين القراءة، راجع{' '}
+          <Link href="/ar/blog/tahsin-daraja-map-qiraah" className="text-indigo-600 hover:underline">
+            كيفية تحسين درجة MAP للقراءة لطفلك
+          </Link>
+          .
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getArabicBlogContent(slug: string): React.ReactNode {

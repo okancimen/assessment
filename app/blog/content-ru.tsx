@@ -3596,6 +3596,308 @@ export const RU_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'how-to-improve-map-reading-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Большинство советов по улучшению результатов MAP Reading слишком расплывчаты, чтобы быть полезными: &ldquo;читайте больше,&rdquo;
+        &ldquo;пополняйте словарный запас,&rdquo; &ldquo;тренируйте понимание прочитанного.&rdquo; Это руководство более конкретно.
+        Оно охватывает то, что MAP Reading действительно проверяет, какие методы, по данным исследований NWEA,
+        реально влияют на результат, и что делать на каждом уровне — с целью повысить
+        RIT-балл вашего ребёнка на 4–8 пунктов за 12–16 недель.
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        Сначала нужны ориентиры по MAP Reading? Смотрите наше{' '}
+        <Link href="/ru/blog/bally-nwea-map-razyasneniye" className="text-indigo-600 hover:underline">
+          руководство по баллам NWEA MAP по классам
+        </Link>{' '}
+        — средние RIT-баллы и эквиваленты перцентилей. Стратегии по математике см. в{' '}
+        <Link href="/ru/blog/kak-uluchshit-ball-map-matematika" className="text-indigo-600 hover:underline">
+          как улучшить результаты MAP по математике
+        </Link>.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Что именно проверяет MAP Reading</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Reading охватывает три основные области навыков — и понимание того, в какой области
+          ваш ребёнок испытывает затруднения, является первым шагом к эффективному повышению балла.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Область навыков</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Что проверяется</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Начинает доминировать при</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Художественный текст', 'Элементы сюжета, мотивы персонажей, тема, образный язык, точка зрения', 'RIT 170–200'],
+                ['Научно-популярный текст', 'Главная мысль, структура текста, цель автора, аргументы и доказательства', 'RIT 195–220'],
+                ['Словарный запас', 'Слова в контексте, академическая лексика, словарные связи, коннотация', 'Все уровни, сильнее всего при RIT 200+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">Важнейший вывод:</strong> выше RIT 200
+          вопросы на умозаключение — формулировка выводов, прямо не высказанных в тексте, — составляют
+          наибольшую долю теста. Дети, умеющие бегло читать, но неспособные надёжно делать выводы,
+          застрянут в диапазоне RIT 200–215 независимо от объёма прочитанного.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Метод Lexile: чтение на правильном уровне</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          RIT-баллы NWEA напрямую соответствуют уровням Lexile. Чтение на правильном уровне Lexile —
+          пожалуй, самое действенное, что родители могут сделать для поддержки роста результатов MAP Reading.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">MAP Reading RIT</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Прибл. диапазон Lexile</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Зона чтения для роста</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['170–185', '200–500L', '400–600L — ранние главы книг, серии для начинающих'],
+                ['185–200', '500–700L', '700–800L — художественная литература среднего уровня, базовая научпоп'],
+                ['200–215', '700–900L', '900–1000L — научпоп для подростков, возрастная литература'],
+                ['215–225', '900–1100L', '1050–1200L — научпоп уровня средней школы, классика'],
+                ['225+', '1100L+', '1200–1400L — научпоп уровня AP, первоисточники'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Зона чтения для роста — это 100–200 Lexile выше текущего самостоятельного уровня ребёнка.
+          Семейный отчёт NWEA, отправляемый после тестирования, часто включает диапазон Lexile.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Практические инструменты:</strong> Newsela адаптирует научно-популярные статьи до нужного уровня Lexile.
+          CommonLit предоставляет художественные и информационные тексты со встроенными вопросами на понимание. Оба ресурса бесплатны.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Словарный запас: наиболее действенное вмешательство</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Вопросы на словарный запас в MAP Reading используют академические слова второго уровня — такие как{' '}
+          <em>infer, synthesise, ambiguous, paradox, contradict, nuance</em>.
+        </p>
+        <h3 className="text-lg font-bold text-gray-900 mb-3">Почему морфология лучше списков слов</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ребёнок, выучивший латинский корень <strong>cred</strong> (верить), может расшифровать <em>credible,
+          incredible, credential, discredit, accredit</em> — пять слов из одного корня.
+        </p>
+        <div className="rounded-xl bg-gray-50 border border-gray-100 p-5 mb-4">
+          <p className="font-semibold text-gray-900 mb-3 text-sm">Ценные корни для изучения по уровням</p>
+          <div className="space-y-2">
+            {[
+              ['Классы 3–4', 'pre-, re-, un-, -ful, -less, -tion — открывает сотни распространённых слов'],
+              ['Классы 5–6', 'micro-, macro-, -ology, trans-, inter- — академическая и научная лексика'],
+              ['Классы 7–8', 'Латинские корни: rupt, dict, ject, tract, scrib — академическая лексика второго уровня'],
+              ['Классы 9+', 'Греческие корни: chron, graph, logy, phon, bio — продвинутая академическая лексика'],
+            ].map(([grade, roots]) => (
+              <div key={grade} className="flex gap-3">
+                <span className="text-xs font-semibold text-indigo-600 w-24 shrink-0 pt-0.5">{grade}</span>
+                <span className="text-sm text-gray-600">{roots}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Развитие навыков умозаключения</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Умозаключение — единственный наиболее проверяемый навык в MAP Reading выше RIT 200. <strong>Метод QAR</strong>
+          (Question-Answer Relationship) учит детей классифицировать вопросы: &ldquo;прямо в тексте&rdquo;
+          (буквальный), &ldquo;найди и поразмышляй&rdquo; (умозаключение внутри текста) или &ldquo;из собственного опыта&rdquo; (фоновые знания).
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Простая привычка для развития умозаключений дома:</strong>{' '}
+          после совместного чтения любого текста спросите: &ldquo;Что автор не сказал, но хотел, чтобы мы поняли?&rdquo;
+          Не отвечайте сами — подождите, пока ребёнок рассуждает вслух.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">На что реалистично рассчитывать</h2>
+        <div className="space-y-3 mb-6">
+          {[
+            ['Начальная школа (RIT 175–205)', '4–8 пунктов RIT в год при ежедневном чтении на нужном уровне Lexile и работе с морфологией'],
+            ['Средняя школа (RIT 205–220)', '3–6 пунктов RIT в год; словарный запас и умозаключение — главные рычаги'],
+            ['Старшая школа (RIT 220+)', '2–4 пункта RIT в год; прирост обеспечивается работой с научпоп и аналитическим чтением'],
+          ].map(([level, gain]) => (
+            <div key={level} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-semibold text-indigo-700 text-sm w-48 shrink-0">{level}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{gain}</span>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Стратегии улучшения результатов по математике MAP см. в{' '}
+          <Link href="/ru/blog/kak-uluchshit-ball-map-matematika" className="text-indigo-600 hover:underline">
+            как улучшить результат вашего ребёнка по MAP Математике
+          </Link>.
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-to-improve-map-math-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Улучшение результатов MAP Math терпит неудачу по одной предсказуемой причине: родители тренируются на неправильном уровне.
+        Ученик 5-го класса с баллом RIT 218 нуждается в материале 7-го класса, а не 5-го.
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        Не уверены, что означает RIT-балл вашего ребёнка? Начните с нашего{' '}
+        <Link href="/ru/blog/bally-nwea-map-razyasneniye" className="text-indigo-600 hover:underline">
+          руководства по баллам NWEA MAP
+        </Link>. Стратегии по чтению см. в{' '}
+        <Link href="/ru/blog/kak-uluchshit-ball-map-chteniye" className="text-indigo-600 hover:underline">
+          как улучшить результаты MAP по чтению
+        </Link>.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Что именно проверяет MAP Math</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Раздел</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Ключевые навыки</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Диапазон RIT</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Операции и алгебраическое мышление', 'Вычисления, уравнения, задачи, закономерности', 'Все уровни'],
+                ['Числа и операции', 'Дроби, десятичные, пропорции, отношения, числовое мышление', 'RIT 185–225'],
+                ['Измерения и данные', 'Геометрия, статистика, графики, площадь/объём', 'RIT 195–220'],
+                ['Действительные и комплексные числа', 'Целые числа, рациональные числа, функции, продвинутая алгебра', 'RIT 220+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs font-mono">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Math проверяет как <strong>процедурную беглость</strong>, так и{' '}
+          <strong>концептуальное мышление</strong> в равной мере.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Лестница RIT: что мешает прогрессу</h2>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">Ниже RIT 185: числовое мышление и беглость в вычислениях</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Препятствие: слабое понимание разрядности или пробелы в вычислительных навыках. <strong>Вмешательство:</strong> работа с числовой прямой,
+          блоки с основанием 10, 3–5 мин/день практики вычислений. Reflex Math предлагает адаптивную тренировку.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 185–205: умножение и переход к дробям</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Сначала доведите умножение до автоматизма, затем вводите дроби с помощью наглядных моделей (полоски дробей, площадные модели).
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 205–220: барьер дробей</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Большинство учеников застревают здесь. Данные NWEA показывают, что вопросы по дробям и пропорциям сосредоточены в этом диапазоне.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Лучший метод для RIT 205–215:</strong>{' '}
+          2–3 недели концептуальной работы с дробями — наглядные модели, числовые прямые, реальные пропорции —
+          прежде чем приступать к процедурам. Разделы 5–6 классов по дробям на Khan Academy — лучший бесплатный ресурс.
+        </Callout>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 215–225: пропорциональное мышление</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Переход от аддитивного к мультипликативному мышлению. Учащимся необходима беглость в работе с отношениями, единичными ставками, процентным изменением.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 225+: алгебраическое мышление и функции</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Линейные уравнения, наклон, системы уравнений, запись функций. Тренируйте составление уравнений по реальным контекстам.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Текстовые задачи</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Задания MAP почти всегда сформулированы как текстовые задачи. Тренируйте <strong>составление задачи</strong>:
+          определите действие до вычисления. Требуйте от ребёнка сначала записать уравнение.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ресурсы по диапазонам RIT</h2>
+        <div className="space-y-3 mb-6">
+          {[
+            ['Ниже RIT 185', 'Reflex Math (беглость вычислений), Khan Academy 2–3 класс, блоки с основанием 10'],
+            ['RIT 185–205', 'Khan Academy 4–5 класс, Zearn (наглядные модели дробей), приложения для умножения'],
+            ['RIT 205–220', 'Khan Academy 5–7 класс (дроби/пропорции), IXL 6–7 класс'],
+            ['RIT 220–230', 'Khan Academy 7–8 класс, Art of Problem Solving Introduction, DeltaMath'],
+            ['RIT 230+', 'Art of Problem Solving, задачники AMC 8/10 прошлых лет, Khan 8–9 класс'],
+          ].map(([band, resources]) => (
+            <div key={band} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-mono font-semibold text-indigo-700 text-xs w-28 shrink-0 pt-0.5">{band}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{resources}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">12-недельный план улучшения</h2>
+        <div className="space-y-3 mb-4">
+          {[
+            ['Недели 1–2', 'Диагностика: проверьте субтестовые баллы MAP по разделам, определите наиболее слабую область.'],
+            ['Недели 3–6', 'Работа над препятствием: 20–30 мин/день по ключевому пробелу в навыках. Сначала наглядные модели.'],
+            ['Недели 7–10', 'Практика текстовых задач: применяйте навык в контексте текстовых задач.'],
+            ['Недели 11–12', 'Смешанная практика: смежные диапазоны RIT, ненапряжённое повторение, разбор концептуальных ошибок.'],
+          ].map(([week, detail]) => (
+            <div key={week} className="flex gap-4 p-5 border border-gray-100 rounded-xl">
+              <div className="text-indigo-600 font-bold text-sm w-28 shrink-0 pt-0.5">{week}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Стратегии улучшения результатов по чтению MAP см. в{' '}
+          <Link href="/ru/blog/kak-uluchshit-ball-map-chteniye" className="text-indigo-600 hover:underline">
+            как улучшить результат вашего ребёнка по MAP Чтению
+          </Link>.
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getRussianBlogContent(slug: string): React.ReactNode {

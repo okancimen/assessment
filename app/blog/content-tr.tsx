@@ -7689,6 +7689,392 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'how-to-improve-map-reading-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        MAP Okuma konusundaki tavsiyelerin büyük çoğunluğu kullanışsız derecede geneldir: &ldquo;daha fazla oku,&rdquo;
+        &ldquo;kelime dağarcığını geliştir,&rdquo; &ldquo;okuduğunu anlama çalış.&rdquo; Bu rehber daha somuttur.
+        MAP Okuma&apos;nın gerçekte neyi ölçtüğünü, NWEA araştırmalarının sonuçları etkilediğini gösterdiği müdahaleleri
+        ve her sınıf düzeyinde neler yapılması gerektiğini ele alır — hedef, 12–16 haftalık süreçte çocuğunuzun
+        RIT puanını 4–8 puan artırmaktır.
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        Önce MAP Okuma kıyaslamalarına mı ihtiyacınız var? Ortalama RIT puanları ve yüzdelik dilim karşılıkları için{' '}
+        <Link href="/tr/blog/nwea-map-puanlari-aciklamasi" className="text-indigo-600 hover:underline">
+          sınıf düzeyine göre NWEA MAP puanları rehberimize
+        </Link>{' '}
+        göz atın. Matematik stratejileri için{' '}
+        <Link href="/tr/blog/nwea-map-matematik-puani-nasil-yukseltilir" className="text-indigo-600 hover:underline">
+          MAP Matematik puanı nasıl yükseltilir
+        </Link>{' '}
+        yazısını inceleyin.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Okuma Gerçekte Neyi Ölçer?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Okuma üç ana beceri alanını kapsar — çocuğunuzun hangi alanda zorlandığını anlamak,
+          puanı verimli biçimde yükseltmenin ilk adımıdır.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Beceri alanı</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Kapsam</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Ağırlık kazandığı RIT</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Edebi metin', 'Hikâye unsurları, karakter motivasyonu, tema, mecazi dil, bakış açısı', 'RIT 170–200'],
+                ['Bilgilendirici metin', 'Ana fikir, metin yapısı, yazarın amacı, kanıt ve iddialar', 'RIT 195–220'],
+                ['Kelime dağarcığı', 'Bağlamda kelimeler, akademik dil, kelime ilişkileri, çağrışım', 'Tüm düzeyler; RIT 200+ en yoğun'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">En kritik bulgu:</strong> RIT 200&apos;ün üzerinde,
+          metinde doğrudan belirtilmeyen sonuçlar çıkarmayı gerektiren çıkarım soruları testin en
+          büyük bölümünü oluşturur. Akıcı okuyabilen ancak güvenilir çıkarım yapamayan öğrenciler,
+          okuma hacminden bağımsız olarak RIT 200–215 aralığında takılıp kalır.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Lexile Yöntemi: Doğru Düzeyde Okumak</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NWEA RIT puanları, metin zorluğunu ölçmek için kullanılan Lexile ölçeğiyle doğrudan örtüşür.
+          Çocuğunuzu doğru Lexile düzeyinde okutmak, MAP Okuma gelişimini desteklemek için muhtemelen
+          bir ebeveynin yapabileceği en somut şeydir.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-4">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">MAP Okuma RIT</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Yaklaşık Lexile aralığı</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Gelişim okuma bölgesi</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['170–185', '200–500L', '400–600L — erken bölümlü kitaplar, çözülebilir seriler'],
+                ['185–200', '500–700L', '700–800L — orta seviye kurgu, temel kurgusal olmayan'],
+                ['200–215', '700–900L', '900–1000L — YA kurgusal olmayan, yaşa uygun edebi metinler'],
+                ['215–225', '900–1100L', '1050–1200L — ortaokul kurgusal olmayanı, klasikler'],
+                ['225+', '1100L+', '1200–1400L — AP düzeyi kurgusal olmayan, birincil kaynaklar'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-600">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gelişim okuma bölgesi, çocuğunuzun mevcut bağımsız düzeyinin 100–200 Lexile üzerindedir.
+          Yalnızca mevcut düzeyde okumak okuma becerisini korur ama ilerletmez. NWEA&apos;nın test
+          sonrasında gönderdiği aile raporunda genellikle bir Lexile aralığı bulunur — kitap ve
+          kurgusal olmayan makale seçiminde bu aralıktan yararlanın.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          <strong>Pratik araçlar:</strong> Newsela, kurgusal olmayan makaleleri belirli bir Lexile
+          düzeyine göre uyarlar; ebeveynler tam doğru zorluk düzeyinde makale bulabilir. CommonLit
+          ise yerleşik okuduğunu anlama soruları olan edebi ve bilgilendirici metinler sunar. Her
+          ikisi de ücretsizdir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Kelime Dağarcığı: En Yüksek Kaldıraç Etkili Müdahale</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Okuma kelime soruları, Katman 2 akademik kelimeleri kullanır — farklı derslerde
+          karşılaşılan ve okulda nadiren doğrudan öğretilen{' '}
+          <em>çıkarım yapmak, sentezlemek, belirsiz, paradoks, çelişmek, nüans</em> gibi sözcükler.
+          RIT 205&apos;teki öğrencileri RIT 215&apos;tekilerden ayıran da bu kelimelerdir.
+        </p>
+        <h3 className="text-lg font-bold text-gray-900 mb-3">Neden morfoloji kelime listelerinden daha etkilidir?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Haftada 20 kelime ezberlemek verimsizdir. Latince kökü{' '}
+          <strong>cred</strong> (inanmak) öğrenen bir çocuk <em>credible, incredible, credential,
+          discredit, accredit</em> kelimelerini çözebilir — tek bir kökle beş kelime kazanılır.
+          Haftada bir kök, gerçek okuma örnekleriyle öğretildiğinde haftalık kartlara göre çok
+          daha etkilidir.
+        </p>
+        <div className="rounded-xl bg-gray-50 border border-gray-100 p-5 mb-4">
+          <p className="font-semibold text-gray-900 mb-3 text-sm">Sınıf düzeyine göre öğretilmesi gereken yüksek değerli kökler</p>
+          <div className="space-y-2">
+            {[
+              ['3.–4. sınıf', 'ön-, ye-, -siz, -lık, -sallık — yüzlerce yaygın kelimeyi açar'],
+              ['5.–6. sınıf', 'mikro-, makro-, -loji, aşırı-, ara- — akademik ve bilim kelime dağarcığı'],
+              ['7.–8. sınıf', 'Latince kökler: rupt, dict, ject, tract, scrib — Katman 2 akademik kelime dağarcığını açar'],
+              ['9. sınıf+', 'Yunanca kökler: chron, graph, logy, phon, bio — ileri akademik ve sınav kelime dağarcığını açar'],
+            ].map(([grade, roots]) => (
+              <div key={grade} className="flex gap-3">
+                <span className="text-xs font-semibold text-indigo-600 w-24 shrink-0 pt-0.5">{grade}</span>
+                <span className="text-sm text-gray-600">{roots}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çıkarım Becerisi Geliştirme</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çıkarım, RIT 200 üzerindeki MAP Okuma&apos;da en sık test edilen beceridir — ve tipik
+          okuduğunu anlama çalışmalarının en yetersiz kaldığı alandır. Standart sorular
+          &ldquo;hikâyede ne oldu?&rdquo; diye sorarken MAP çıkarım soruları &ldquo;metnin doğrudan
+          belirtmediği ama çıkarılabilecek şey nedir?&rdquo; diye sorar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çıkarımı geliştirmenin en etkili yolu, yazılı alıştırmalar değil, sesli okuma sırasında
+          yapılan yapılandırılmış konuşmalardır. <strong>QAR yöntemi</strong> (Soru-Cevap İlişkisi),
+          çocuklara cevabın nerede bulunduğuna göre soruları sınıflandırmayı öğretir:
+          &ldquo;tam orada&rdquo; (gerçek), &ldquo;düşün ve ara&rdquo; (metin içi çıkarım) ya da
+          &ldquo;kendi başıma&rdquo; (arka plan bilgisi). Ortak okuma seanslarında haftada iki-üç
+          kez 10 dakika QAR pratiği yapmak, MAP Okuma&apos;nın gerektirdiği üstbilişsel farkındalığı
+          geliştirir.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Evde geliştirilebilecek basit bir çıkarım alışkanlığı:</strong>{' '}
+          herhangi bir metni birlikte okuduktan sonra &ldquo;Yazar doğrudan söylemeden anlatmak
+          istediği neydi?&rdquo; diye sorun. Cevabı vermeyin — çocuğunuzun sesli düşünmesini
+          bekleyin. Tutarlı biçimde uygulanan bu tek soru, çoğu çalışma kitabı alıştırmasından
+          daha fazla çıkarım becerisi geliştirir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Gerçekçi Gelişim Nasıl Görünür?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okuma kazanımları kısa vadede matematik kazanımlarından daha yavaştır; çünkü birikmiş
+          kelime dağarcığına ve şemaya dayanır. Hedefli çalışmayla 12–16 haftalık pencerede
+          tipik gelişim:
+        </p>
+        <div className="space-y-3 mb-6">
+          {[
+            ['İlkokul (RIT 175–205)', 'Yılda 4–8 RIT puanı; doğru Lexile düzeyinde günlük okuma ve morfoloji çalışmasıyla'],
+            ['Ortaokul (RIT 205–220)', 'Yılda 3–6 RIT puanı; kelime dağarcığı ve çıkarım çalışması temel kaldıraçlardır'],
+            ['Lise (RIT 220+)', 'Yılda 2–4 RIT puanı; kazanımlar kurgusal olmayan metin maruziyeti ve analitik okumadan gelir'],
+          ].map(([level, gain]) => (
+            <div key={level} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-semibold text-indigo-700 text-sm w-48 shrink-0">{level}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{gain}</span>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Matematik geliştirme stratejileri için{' '}
+          <Link href="/tr/blog/nwea-map-matematik-puani-nasil-yukseltilir" className="text-indigo-600 hover:underline">
+            çocuğunuzun MAP Matematik puanını nasıl yükseltirsiniz
+          </Link>{' '}
+          yazısına bakın.
+        </p>
+      </section>
+    </>
+  ),
+
+  'how-to-improve-map-math-score': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        MAP Matematik çalışmaları tahmin edilebilir bir nedenle başarısız olur: ebeveynler ve
+        öğretmenler yanlış düzeyde pratik yaptırır. RIT 218 alan 5. sınıf öğrencisinin 5. sınıf
+        değil 7. sınıf içeriğine ihtiyacı vardır — ama evdeki çalışmaların büyük bölümü çocuğun
+        zaten bildiği sınıf düzeyi çalışma kâğıtlarına dayanır. Bu rehber, nerede hedef almanız
+        gerektiğini, her RIT bandındaki en yaygın engellerin neler olduğunu ve puanı gerçekten
+        hareket ettiren bir planın nasıl oluşturulacağını açıklar.
+      </p>
+      <p className="text-sm text-gray-500 mb-6">
+        Çocuğunuzun RIT puanının ne anlama geldiğinden emin değil misiniz?{' '}
+        <Link href="/tr/blog/nwea-map-puanlari-aciklamasi" className="text-indigo-600 hover:underline">
+          NWEA MAP puanları açıklama rehberimizle
+        </Link>{' '}
+        başlayın. Okuma stratejileri için{' '}
+        <Link href="/tr/blog/nwea-map-okuma-puani-nasil-yukseltilir" className="text-indigo-600 hover:underline">
+          MAP Okuma puanı nasıl yükseltilir
+        </Link>{' '}
+        yazısına bakın.
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Matematik Gerçekte Neyi Ölçer?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Matematik dört içerik alanından yararlanır ve puan arttıkça bu alanların dağılımı
+          değişir. Çocuğunuzu hangi alanın engellediğini anlamak, genel pratikten çok daha
+          işlevseldir.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Alan</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Temel beceriler</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Yoğun RIT aralığı</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['İşlemler ve Cebirsel Düşünme', 'Hesaplama, denklemler, sözel problemler, örüntüler', 'Tüm düzeyler'],
+                ['Sayı ve İşlemler', 'Kesirler, ondalık sayılar, oranlar, orantılar, sayı duyusu', 'RIT 185–225'],
+                ['Ölçme ve Veri', 'Geometri, istatistik, grafik, alan/hacim', 'RIT 195–220'],
+                ['Gerçek ve Karmaşık Sayılar', 'Tam sayılar, rasyonel sayılar, fonksiyonlar, ileri cebir', 'RIT 220+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-500 text-xs font-mono">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Matematik her düzeyde iki tür düşünmeyi ölçer:{' '}
+          <strong>işlemsel akıcılık</strong> (çocuğunuz doğru hesaplama yapabiliyor mu?) ve{' '}
+          <strong>kavramsal akıl yürütme</strong> (çocuğunuz yeni bir duruma matematiksel düşünmeyi
+          uygulayabiliyor mu?). Evdeki çalışmaların büyük bölümü hesaplamaya aşırı odaklanır. MAP
+          bu ikisini neredeyse eşit ağırlıkta değerlendirir — işlemleri hızlı yapabilen ama alışılmamış
+          bir problemde akıl yürütemeyen bir çocuk, pratik hacminden bağımsız olarak bir noktada
+          takılır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">RIT Merdiveni: Her Düzeyde Öğrencileri Engelleyen Nedir?</h2>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 185 altı: Sayı duyusu ve temel işlem akıcılığı</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu düzeydeki öğrenciler temel aritmetiği inşa ediyor. Engel genellikle şu iki şeyden
+          biridir: zayıf basamak değeri anlayışı ya da temel işlem akıcılığı eksikliği (toplama
+          ve çıkarma otomatik değil). <strong>Müdahale:</strong> sayı doğrusu çalışması, basamak
+          değeri için onluk bloklar ve zamanlamalı ama düşük stresli temel işlem pratiği (günde
+          3–5 dakika, maraton seanslar değil). Reflex Math ve benzeri uygulamalar yalnızca
+          doğruluğa değil otomatikleşmeye kalibre edilmiş uyarlanabilir pratik sunar.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 185–205: Çarpma ve kesir geçişi</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu düzeydeki öğrencilerin temel aritmetiği vardır ama aynı anda iki engelle karşılaşır:
+          çarpma akıcılığı ve kesir girişi. Çok basamaklı çarpma hataları kesir hatalarına,
+          kesir hataları oran hatalarına yol açar. Çarpma otomatikleşmesini önce çözmek —
+          böylece bilişsel kapasite kesirler için serbest kalır — doğru sıradır. Kesir girişi,
+          herhangi bir işlem algoritmasından önce görsel modellerle (kesir çubukları, alan
+          modelleri) yapılmalıdır.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 205–220: Kesir engeli</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Öğrencilerin çoğunun takıldığı yer burasıdır. NWEA öğrenme süreci verileri, kesir
+          işlemleri, denklik ve oran/orantı sorularının tam olarak bu aralıkta yoğunlaştığını
+          göstermektedir. Kesirleri işlemsel olarak anlayan (½ ile bölme için &ldquo;çevir ve
+          çarp&rdquo;ı uygulayabilen) ama kavramsal olarak anlamayan (½&apos;ye bölmenin neden
+          daha büyük bir sayı verdiğini açıklayamayan) öğrenci bu banttaki MAP sorularında
+          tutarsız biçimde zorlanır.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">RIT 205–215&apos;te takılan öğrenciler için en iyi müdahale:</strong>{' '}
+          herhangi bir işlemi yeniden sunmadan önce iki-üç haftalık kavramsal kesir çalışması —
+          görsel kesir modelleri, sayı doğruları ve gerçek dünya oran problemleri. Khan Academy&apos;nin
+          5. ve 6. sınıf kesir üniteleri bunun için en verimli ücretsiz kaynaktır.
+        </Callout>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 215–225: Orantısal akıl yürütme</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Buradaki kavramsal geçiş, toplamsal düşünceden (&ldquo;ne kadar fazla?&rdquo;) çarpımsal
+          düşünceye (&ldquo;kaç kat?&rdquo;) doğrudur. Oranlarla, birim oranlarla ve yüzde
+          değişimiyle akıcı biçimde çalışamayan öğrenciler RIT 218–222&apos;de bir tavana çarpar.
+          Cebir hazırlığı da gelişimin kaldıracı haline gelir: öğrencilerin yalnızca sayılarla
+          hesaplamak yerine matematiksel ilişkileri değişkenlerle ifade etmesi gerekir.
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-3">RIT 225+: Cebirsel akıl yürütme ve fonksiyonlar</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu düzeyde işlemsel akıcılık artık kısıtlayıcı etken değildir — öğrencilerin soyut
+          ilişkiler üzerinde akıl yürütmesi gerekir. Doğrusal denklemler, eğim, denklem sistemleri
+          ve fonksiyon gösterimi baskın konular. Cebirsel akıl yürütme geliştirmeden işlemleri
+          ezberleyen öğrenciler burada tutarsız puan alır. Çözüm, verilen bir denklemden işlem
+          yapmak değil, gerçek dünya bağlamlarından denklem kurmayı gerektiren problem çözme
+          pratiğidir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sözel Problemler: En Az Değer Verilen Pratik Türü</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Matematik soruları neredeyse her zaman sözel problem ya da bağlamsal biçimde sunulur —
+          soyut hesaplama olarak nadiren. Yalnızca hesaplama alıştırması yapan bir çocuk, gerçek
+          dünya bağlamından matematiksel yapıyı çıkarmakta zorlandığı için işlemsel becerisinin
+          hak ettiğinden çok daha düşük puan alır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En etkili sözel problem pratiği, <strong>problem kurulumunu</strong> ayrı bir beceri
+          olarak ele alır: herhangi bir şey hesaplamadan önce hangi işlemin gerektiğini, hangi
+          bilgilerin verildiğini ve neyin sorulduğunu belirlemek. Faydalı bir alışkanlık, çocuğunuzdan
+          hesaplamadan önce denklemi yazmasını istemek ve yalnızca hesaplamanın doğruluğunu değil,
+          denklemin problemi yansıtıp yansıtmadığını kontrol etmektir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">RIT Bandına Göre Kaynaklar</h2>
+        <div className="space-y-3 mb-6">
+          {[
+            ['RIT 185 altı', 'Reflex Math (temel işlem akıcılığı), Khan Academy 2.–3. sınıf, onluk blok manipülatifler'],
+            ['RIT 185–205', 'Khan Academy 4.–5. sınıf, Zearn (görsel kesir modelleri), çarpma akıcılığı uygulamaları'],
+            ['RIT 205–220', 'Khan Academy 5.–7. sınıf (kesirler/oranlar), NWEA Öğrenme Sürekliliği + Khan çapraz tablo, IXL 6.–7. sınıf'],
+            ['RIT 220–230', 'Khan Academy 7.–8. sınıf, Art of Problem Solving Giriş serisi, DeltaMath'],
+            ['RIT 230+', 'Art of Problem Solving, AMC 8/10 geçmiş sınav soruları (problem çözme akıl yürütmesi), Khan 8.–9. sınıf'],
+          ].map(([band, resources]) => (
+            <div key={band} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-mono font-semibold text-indigo-700 text-xs w-28 shrink-0 pt-0.5">{band}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{resources}</span>
+            </div>
+          ))}
+        </div>
+        <p className="text-sm text-gray-500 mb-4">
+          <strong>Khan Academy hizalama notu:</strong> Khan Academy sınıf düzeyleri MAP sınıf
+          eşdeğerlerine karşılık gelir, RIT puanlarına değil. 5. sınıfta RIT 218 alan öğrenci,
+          5. sınıf değil Khan Academy 7.–8. sınıf içeriğini kullanmalıdır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">12 Haftalık Gelişim Planı Oluşturma</h2>
+        <div className="space-y-3 mb-4">
+          {[
+            ['1.–2. hafta', 'Tanı: Çocuğunuzun MAP alt test puanlarını alana göre araştırın. En zayıf alanı belirleyin. NWEA Öğrenme Sürekliliği\'nde RIT bandını bulun.'],
+            ['3.–6. hafta', 'Engel çalışması: Belirlenen temel beceri açığını giderin (kesirler, orantısal akıl yürütme, cebirsel kurulum) — günde 20–30 dakika. Önce görsel modeller, sonra işlemler.'],
+            ['7.–10. hafta', 'Sözel problem pratiği: Aynı beceri alanını sözel problem bağlamlarında uygulayın. Çocuktan hesaplamadan önce denklemi yazmasını isteyin.'],
+            ['11.–12. hafta', 'Karışık pratik: Bitişik RIT bantlarından becerileri dahil edin. Zamanlamalı ama düşük stresli karışık tekrar. Devam eden hataları ilerlemeden önce kavramsal olarak gözden geçirin.'],
+          ].map(([week, detail]) => (
+            <div key={week} className="flex gap-4 p-5 border border-gray-100 rounded-xl">
+              <div className="text-indigo-600 font-bold text-sm w-28 shrink-0 pt-0.5">{week}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{detail}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Okuma geliştirme stratejileri için{' '}
+          <Link href="/tr/blog/nwea-map-okuma-puani-nasil-yukseltilir" className="text-indigo-600 hover:underline">
+            çocuğunuzun MAP Okuma puanını nasıl yükseltirsiniz
+          </Link>{' '}
+          yazısına bakın.
+        </p>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
