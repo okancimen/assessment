@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ tag: stri
         'x-default': `${BASE_URL}/blog/tag/${tagSlug}`,
       },
     },
-    robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+    robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
     openGraph: { title: `${ogTitle} | Eduentry Blog`, description: ogDesc, url, images: [`${BASE_URL}/blog/opengraph-image`] },
     twitter: { card: 'summary_large_image', title: `${ogTitle} | Eduentry Blog`, description: ogDesc, images: [`${BASE_URL}/blog/opengraph-image`] },
   }

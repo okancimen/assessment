@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ tag: stri
     title: brandedTitle(title),
     description,
     alternates: { canonical: url },
-    robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+    robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
     openGraph: { title: `${title} | Eduentry Blog`, description, url, images: [`${BASE_URL}/blog/opengraph-image`] },
     twitter: { card: 'summary_large_image', title: `${title} | Eduentry Blog`, description, images: [`${BASE_URL}/blog/opengraph-image`] },
   }
