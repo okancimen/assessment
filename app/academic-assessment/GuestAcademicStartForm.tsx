@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 
 type Strings = {
@@ -10,6 +10,10 @@ type Strings = {
   loadingLabel: string
   disclaimer: string
   errorFallback: string
+  resumeHeading: string
+  resumeSub: string
+  resumeCta: string
+  resumeStartNew: string
 }
 
 const STRINGS: Record<string, Strings> = {
@@ -20,6 +24,10 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: 'Starting…',
     disclaimer: 'No account needed · first results in ~10 min',
     errorFallback: 'Something went wrong. Please try again.',
+    resumeHeading: "'s assessment is in progress",
+    resumeSub: 'Pick up exactly where you left off — your answers are saved.',
+    resumeCta: 'Continue assessment →',
+    resumeStartNew: 'Start a new one instead',
   },
   tr: {
     namePlaceholder: 'Çocuğun adı',
@@ -28,6 +36,10 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: 'Başlatılıyor…',
     disclaimer: 'Hesap gerekmez · ilk sonuçlar ~10 dakikada',
     errorFallback: 'Bir hata oluştu. Lütfen tekrar deneyin.',
+    resumeHeading: 'ın değerlendirmesi devam ediyor',
+    resumeSub: 'Kaldığınız yerden devam edin — cevaplarınız kaydedildi.',
+    resumeCta: 'Değerlendirmeye devam et →',
+    resumeStartNew: 'Yeni bir tane başlat',
   },
   fr: {
     namePlaceholder: "Prénom de l'enfant",
@@ -36,6 +48,10 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: 'Démarrage…',
     disclaimer: 'Sans compte · premiers résultats en ~10 min',
     errorFallback: 'Une erreur est survenue. Veuillez réessayer.',
+    resumeHeading: ' — évaluation en cours',
+    resumeSub: 'Reprenez exactement là où vous vous étiez arrêté.',
+    resumeCta: "Continuer l'évaluation →",
+    resumeStartNew: 'Recommencer depuis le début',
   },
   es: {
     namePlaceholder: 'Nombre del niño/a',
@@ -44,6 +60,10 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: 'Iniciando…',
     disclaimer: 'Sin cuenta · primeros resultados en ~10 min',
     errorFallback: 'Algo salió mal. Por favor inténtalo de nuevo.',
+    resumeHeading: ' — evaluación en curso',
+    resumeSub: 'Continúa exactamente donde lo dejaste — tus respuestas están guardadas.',
+    resumeCta: 'Continuar evaluación →',
+    resumeStartNew: 'Empezar una nueva',
   },
   ar: {
     namePlaceholder: 'اسم الطفل',
@@ -52,6 +72,10 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: '…جارٍ البدء',
     disclaimer: 'لا حاجة لحساب · أول النتائج في ~١٠ دقائق',
     errorFallback: 'حدث خطأ ما. يرجى المحاولة مرة أخرى.',
+    resumeHeading: ' — التقييم جارٍ',
+    resumeSub: 'تابع من حيث توقفت — إجاباتك محفوظة.',
+    resumeCta: '← متابعة التقييم',
+    resumeStartNew: 'ابدأ تقييماً جديداً',
   },
   ru: {
     namePlaceholder: 'Имя ребёнка',
@@ -60,6 +84,10 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: 'Запуск…',
     disclaimer: 'Без регистрации · первые результаты через ~10 мин',
     errorFallback: 'Что-то пошло не так. Попробуйте ещё раз.',
+    resumeHeading: ' — оценка в процессе',
+    resumeSub: 'Продолжите с того места, где остановились — ответы сохранены.',
+    resumeCta: 'Продолжить оценку →',
+    resumeStartNew: 'Начать заново',
   },
   zh: {
     namePlaceholder: '孩子的名字',
@@ -68,8 +96,14 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: '启动中…',
     disclaimer: '无需注册 · 约10分钟获得首项结果',
     errorFallback: '出现错误，请重试。',
+    resumeHeading: '的测评正在进行中',
+    resumeSub: '从上次中断的地方继续——您的答案已保存。',
+    resumeCta: '继续测评 →',
+    resumeStartNew: '重新开始',
   },
 }
+
+interface ResumeMeta { assessmentId: string; name: string }
 
 export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: string }) {
   const router = useRouter()
@@ -78,6 +112,22 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
   const [age, setAge] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [resumeSessions, setResumeSessions] = useState<ResumeMeta[]>([])
+  const [showForm, setShowForm] = useState(false)
+
+  useEffect(() => {
+    const sessions: ResumeMeta[] = []
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i)
+      if (!key?.startsWith('guestAcMeta_')) continue
+      try {
+        const meta = JSON.parse(localStorage.getItem(key) ?? '{}') as ResumeMeta
+        if (meta.assessmentId && meta.name) sessions.push(meta)
+      } catch { /* ignore corrupt entries */ }
+    }
+    setResumeSessions(sessions)
+    setShowForm(sessions.length === 0)
+  }, [])
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -94,9 +144,39 @@ export default function GuestAcademicStartForm({ locale = 'en' }: { locale?: str
       setLoading(false)
       return
     }
-    // Set cookie client-side as well to guarantee it is present before navigation
     localStorage.setItem(`guestToken_${data.assessmentId}`, data.guestToken)
+    localStorage.setItem(`guestAcMeta_${data.assessmentId}`, JSON.stringify({ assessmentId: data.assessmentId, name: name.trim() }))
     router.push(`/assessment/${data.assessmentId}/question?name=${encodeURIComponent(name.trim())}`)
+  }
+
+  // Show resume cards for existing sessions, with option to start fresh
+  if (resumeSessions.length > 0 && !showForm) {
+    return (
+      <div className="flex flex-col gap-3 w-full max-w-sm mx-auto">
+        {resumeSessions.map((session) => (
+          <div key={session.assessmentId} className="rounded-2xl border border-indigo-200 bg-indigo-50 p-5 text-left space-y-3">
+            <div>
+              <p className="font-bold text-[#1d1d1f] text-base">
+                {session.name}{s.resumeHeading}
+              </p>
+              <p className="text-sm text-[#6e6e73] mt-0.5">{s.resumeSub}</p>
+            </div>
+            <button
+              onClick={() => router.push(`/assessment/${session.assessmentId}/question?name=${encodeURIComponent(session.name)}`)}
+              className="w-full bg-[#4F46E5] hover:bg-indigo-700 text-white font-bold text-sm px-6 py-3 rounded-xl transition-colors"
+            >
+              {s.resumeCta}
+            </button>
+          </div>
+        ))}
+        <button
+          onClick={() => setShowForm(true)}
+          className="text-sm text-[#6e6e73] hover:text-[#1d1d1f] py-1 transition-colors"
+        >
+          {s.resumeStartNew}
+        </button>
+      </div>
+    )
   }
 
   return (

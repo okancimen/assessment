@@ -300,6 +300,8 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
     }
     // loggedIn overrides localStorage — assessment was claimed after account creation
     setIsGuest(!loggedIn && !!localStorage.getItem(`guestToken_${assessmentId}`))
+    // Clear resume meta once the user has a real account
+    if (loggedIn) localStorage.removeItem(`guestAcMeta_${assessmentId}`)
   }, [assessmentId, urlGuestToken, loggedIn])
 
   // Auto-open save panel on the first break; reset for subsequent breaks
@@ -342,6 +344,7 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
 
   function applyResult(result: FetchResult) {
     if (result.type === 'complete') {
+      localStorage.removeItem(`guestAcMeta_${assessmentId}`)
       router.push(`/assessment/${assessmentId}/complete`)
     } else if (result.type === 'error') {
       setError(result.message)
@@ -446,6 +449,7 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
     })
     const data = await res.json()
     if (data.all_complete) {
+      localStorage.removeItem(`guestAcMeta_${assessmentId}`)
       router.push(`/assessment/${assessmentId}/complete`)
       return null
     }
