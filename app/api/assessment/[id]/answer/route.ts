@@ -103,8 +103,15 @@ async function handleAcademicAnswer(id: string, supabase: any, session: any, que
   subjectScores[currentSubject] = subjectScore
 
   const currentTheta = estimateTheta(subjectScore.responses)
-  const newDifficulty = optimalDifficulty(currentTheta, session.difficulty_level)
+  const rawDifficulty = optimalDifficulty(currentTheta, session.difficulty_level)
   const newQuestionIndex = session.question_index + 1
+  // Prevent cold-start wall: cap difficulty at 6 for the first 5 questions of each subject.
+  // The Q3 spike (highest single drop-off point) is caused by the adaptive algorithm
+  // jumping to difficulty 7-8 after two correct answers, making the generation slower
+  // and the question harder, causing guests to close.
+  const newDifficulty = newQuestionIndex <= 5
+    ? Math.min(6, rawDifficulty) as typeof rawDifficulty
+    : rawDifficulty
   const subjectComplete = newQuestionIndex >= QUESTIONS_PER_SUBJECT
   const allComplete = subjectComplete && session.subject_index + 1 >= SUBJECTS.length
 

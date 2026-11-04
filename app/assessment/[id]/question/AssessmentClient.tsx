@@ -59,6 +59,14 @@ const LOADING_FACTS = [
 
 function LoadingQuestion() {
   const [factIndex] = useState(() => Math.floor(Math.random() * LOADING_FACTS.length))
+  const [elapsed, setElapsed] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => setElapsed((e) => e + 1), 1000)
+    return () => clearInterval(interval)
+  }, [])
+
+  const isSlow = elapsed >= 8
 
   return (
     <div className="min-h-screen bg-[#f5f5f7]">
@@ -74,9 +82,15 @@ function LoadingQuestion() {
           {/* Headline */}
           <div className="space-y-2">
             <p className="text-[#1d1d1f] font-bold text-lg tracking-tight">Your next question is being built</p>
-            <p className="text-[#6e6e73] text-sm leading-relaxed">
-              Based on how you just answered, the AI is selecting<br className="hidden sm:block" /> the exact difficulty that will challenge you most.
-            </p>
+            {isSlow ? (
+              <p className="text-amber-600 text-sm leading-relaxed font-medium">
+                Taking a little longer than usual — almost there, don&apos;t close the tab.
+              </p>
+            ) : (
+              <p className="text-[#6e6e73] text-sm leading-relaxed">
+                Based on how you just answered, the AI is selecting<br className="hidden sm:block" /> the exact difficulty that will challenge you most.
+              </p>
+            )}
           </div>
 
           {/* Personalisation callout */}
@@ -272,6 +286,7 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
   const [showSavePanel, setShowSavePanel] = useState(false)
   const [saveEmail, setSaveEmail]       = useState('')
   const [saveState, setSaveState]       = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
+  const [breakCountdown, setBreakCountdown] = useState<number | null>(null)
 
   // Section elapsed timer
   const [sectionTimeElapsed, setSectionTimeElapsed] = useState(0)
@@ -292,7 +307,17 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
     setShowSavePanel(subjectBreak === SUBJECTS[1])
     setSaveEmail('')
     setSaveState('idle')
+    setBreakCountdown(subjectBreak ? 15 : null)
   }, [subjectBreak])
+
+  // Countdown auto-advance on break screen
+  useEffect(() => {
+    if (breakCountdown === null || phase !== 'break') return
+    if (breakCountdown === 0) { fetchNextQuestion(); return }
+    const t = setTimeout(() => setBreakCountdown((c) => (c ?? 1) - 1), 1000)
+    return () => clearTimeout(t)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [breakCountdown, phase])
 
   // Reset elapsed timer when subject changes
   useEffect(() => {
@@ -540,15 +565,21 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
             </div>
           )}
 
-          <Button className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white" size="lg" onClick={fetchNextQuestion}>
-            {isLastLeg ? `Finish with ${SUBJECT_LABELS[subjectBreak]}` : `Continue to ${SUBJECT_LABELS[subjectBreak]}`}
-          </Button>
+          <button
+            onClick={() => { setBreakCountdown(null); fetchNextQuestion() }}
+            className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white font-bold text-base px-8 py-4 rounded-xl transition-colors flex items-center justify-center gap-2"
+          >
+            <span>{isLastLeg ? `Finish with ${SUBJECT_LABELS[subjectBreak]}` : `Continue to ${SUBJECT_LABELS[subjectBreak]}`}</span>
+            {breakCountdown !== null && breakCountdown > 0 && (
+              <span className="text-sm font-normal opacity-70 tabular-nums">({breakCountdown})</span>
+            )}
+          </button>
 
           {!isLastLeg && (() => {
             if (!isGuest) {
               return (
                 <button
-                  onClick={() => router.push('/dashboard')}
+                  onClick={() => { setBreakCountdown(null); router.push('/dashboard') }}
                   className="w-full text-sm text-[#6e6e73] hover:text-[#1d1d1f] py-2 transition-colors"
                 >
                   Finish another time →
@@ -559,7 +590,7 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
             if (!showSavePanel) {
               return (
                 <button
-                  onClick={() => setShowSavePanel(true)}
+                  onClick={() => { setBreakCountdown(null); setShowSavePanel(true) }}
                   className="w-full text-sm text-[#6e6e73] hover:text-[#1d1d1f] py-2 transition-colors"
                 >
                   Finish another time →
