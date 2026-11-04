@@ -15,7 +15,12 @@ Usage:
 Note: Google Indexing API limit is 200 URL_UPDATED requests per day per service account.
 """
 
+import re
+import subprocess
 import sys
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
@@ -24,7 +29,109 @@ SERVICE_ACCOUNT_FILE = "service_account.json"   # path to your JSON key file
 SCOPES = ["https://www.googleapis.com/auth/indexing"]
 BASE_URL = "https://eduentry.com"
 DAILY_LIMIT = 200
+RECENT_DAYS = 20          # only submit pages changed within this window
 # ─────────────────────────────────────────────────────────────────────────────
+
+# ── Recent-filter helpers ─────────────────────────────────────────────────────
+
+REPO_ROOT = Path(__file__).parent
+
+_LOCALE_POSTS = {
+    "":   "app/blog/posts.ts",
+    "tr": "app/blog/posts-tr.ts",
+    "fr": "app/blog/posts-fr.ts",
+    "es": "app/blog/posts-es.ts",
+    "ar": "app/blog/posts-ar.ts",
+    "ru": "app/blog/posts-ru.ts",
+    "zh": "app/blog/posts-zh.ts",
+}
+
+def _recent_git_files():
+    """Set of repo-relative file paths touched in the last RECENT_DAYS days."""
+    r = subprocess.run(
+        ["git", "log", f"--since={RECENT_DAYS} days ago", "--name-only", "--pretty=format:"],
+        cwd=REPO_ROOT, capture_output=True, text=True,
+    )
+    return {line.strip() for line in r.stdout.splitlines() if line.strip()}
+
+
+def _slug_dates():
+    """Dict of (locale, slug) -> dateModified parsed from every posts-*.ts file."""
+    cutoff = datetime.now(timezone.utc) - timedelta(days=RECENT_DAYS)
+    dates: dict[tuple[str, str], datetime] = {}
+    for locale, rel_path in _LOCALE_POSTS.items():
+        try:
+            text = (REPO_ROOT / rel_path).read_text(encoding="utf-8")
+        except FileNotFoundError:
+            continue
+        for m in re.finditer(r"slug:\s*['\"]([^'\"]+)['\"]", text):
+            slug = m.group(1)
+            snippet = text[m.start(): m.start() + 900]
+            dm = re.search(r"dateModified:\s*['\"](\d{4}-\d{2}-\d{2})['\"]", snippet)
+            if dm:
+                try:
+                    dates[(locale, slug)] = datetime.strptime(dm.group(1), "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                except ValueError:
+                    pass
+    return dates, cutoff
+
+
+def _is_recent(url: str, dates: dict, cutoff: datetime, git_files: set[str]) -> bool:
+    """Return True if the URL represents content changed within RECENT_DAYS."""
+    is_ai = url.startswith("https://eduentry.ai")
+    path = url.replace("https://eduentry.com", "").replace("https://eduentry.ai", "")
+    parts = [p for p in path.strip("/").split("/") if p]
+
+    # ── Blog posts (/blog/{slug} or /{locale}/blog/{slug}) ────────────────────
+    if "blog" in parts and "tag" not in parts and len(parts) >= 2:
+        blog_idx = parts.index("blog")
+        locale = parts[blog_idx - 1] if blog_idx > 0 else ""
+        if blog_idx + 1 < len(parts):
+            slug = parts[blog_idx + 1]
+            dt = dates.get((locale, slug)) or dates.get(("", slug))
+            if dt is not None:
+                return dt >= cutoff
+            # Slug not in any posts file → unknown, include conservatively
+            return True
+
+    # ── eduentry.ai → check app/ai/ source files ──────────────────────────────
+    if is_ai:
+        ai_prefix = ("app/ai/" + path.lstrip("/")).rstrip("/")
+        return any(f == ai_prefix + "/page.tsx" or f.startswith(ai_prefix + "/") or f == ai_prefix for f in git_files)
+
+    # ── Blog tag pages → check the shared tag page source ─────────────────────
+    if "blog" in parts and "tag" in parts:
+        return any("blog/tag" in f for f in git_files)
+
+    # ── Grammar school area pages ─────────────────────────────────────────────
+    if parts and parts[0] == "grammar-schools":
+        return any("grammar-schools" in f for f in git_files)
+
+    # ── Subject pages ─────────────────────────────────────────────────────────
+    if parts and parts[0] == "subjects":
+        return any("subjects" in f for f in git_files)
+
+    # ── Tools ─────────────────────────────────────────────────────────────────
+    if parts and parts[0] == "tools":
+        tool_path = "app/tools/" + "/".join(parts[1:])
+        return any(f.startswith(tool_path) for f in git_files)
+
+    # ── Locale static pages (/tr, /fr/xxx, etc.) ──────────────────────────────
+    if parts and parts[0] in _LOCALE_POSTS and len(parts) == 1:
+        return any(f"app/{parts[0]}" in f for f in git_files)
+
+    # ── Everything else: check if any app/ source file for this path changed ──
+    app_path = "app/" + "/".join(parts) if parts else "app"
+    return any(f.startswith(app_path) for f in git_files)
+
+
+def filter_recent(urls: list[str]) -> list[str]:
+    dates, cutoff = _slug_dates()
+    git_files = _recent_git_files()
+    kept = [u for u in urls if _is_recent(u, dates, cutoff, git_files)]
+    removed = len(urls) - len(kept)
+    print(f"Recent filter ({RECENT_DAYS}d): {len(urls)} → {len(kept)} URLs ({removed} removed as unchanged)\n")
+    return kept
 
 URLS_TO_SUBMIT = [
     # ── Arabic (AR) ───────────────────────────────────────────────────────────
@@ -622,11 +729,12 @@ def submit_urls(start: int = 0):
 
     service = build("indexing", "v3", credentials=credentials)
 
-    batch = URLS_TO_SUBMIT[start : start + DAILY_LIMIT]
-    total = len(URLS_TO_SUBMIT)
+    urls = filter_recent(URLS_TO_SUBMIT)
+    batch = urls[start : start + DAILY_LIMIT]
+    total = len(urls)
     end = min(start + DAILY_LIMIT, total)
 
-    print(f"Total URLs: {total}")
+    print(f"Total after filter: {total}")
     print(f"Submitting {len(batch)} URLs (index {start}–{end - 1})...\n")
     ok, failed = 0, 0
 
@@ -650,6 +758,8 @@ def submit_urls(start: int = 0):
     if end < total:
         print(f"\nRemaining: {total - end} URLs. Run tomorrow with:")
         print(f"  python3 indexing_api.py {end}")
+    else:
+        print("\nAll recent URLs submitted.")
 
 
 if __name__ == "__main__":
