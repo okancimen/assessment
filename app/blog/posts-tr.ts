@@ -809,7 +809,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     tldr: 'Türkiye\'de ücretli stajlar genellikle asgari ücretin yüzde 30 ile yüzde 100\'ü arasında ödeme yapar; ücret sektöre ve şirket büyüklüğüne göre önemli ölçüde değişir. Meslek lisesi öğrencileri için asgari ücretin en az yüzde 30\'u yasal zorunluluktur; üniversite öncesi lise öğrencileri için böyle bir düzenleme bulunmuyor.',
 
     date: '2026-09-15',
-    dateModified: '2026-09-15',
+    dateModified: '2026-11-06',
     readTime: '7 dk okuma',
     tags: ['Staj', 'Stajyer Maaşı', 'Kariyer Rehberi', 'Ulusal Staj', 'Lise'],
     faqs: [
@@ -915,7 +915,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     tldr: 'Türkiye\'de lise öğrencileri için yaz stajı başvuruları genellikle Şubat–Nisan döneminde yapılır; stajlar Haziran–Ağustos aylarında gerçekleşir. Büyük şirketlerin yaz programları Ekim–Kasım\'da başvuruya açılır. Yerel ajanslar ve KOBİ\'ler resmi program olmaksızın daha esnek başvuru kabul ediyor.',
 
     date: '2026-09-15',
-    dateModified: '2026-09-15',
+    dateModified: '2026-11-06',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Yaz Stajı', 'Kariyer Rehberi', 'Lise', 'İş Deneyimi'],
     faqs: [
