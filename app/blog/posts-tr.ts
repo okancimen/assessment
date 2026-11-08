@@ -560,6 +560,8 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'CV\'de notlarımı belirtmeli miyim?', a: 'İyiyse evet (7 üzeri ortalama veya eşdeğeri), vasat ise hayır. Teknik stajlar (teknoloji, veri, finans) için ilgili dersleri ayrıca belirt. Matematik veya fen sonuçlarından özel bir atıf, birçok bağlamda genel not ortalamasından daha fazla şey söylüyor.' },
       { q: 'Öğrenci CV\'lerindeki en yaygın hata nedir?', a: 'Sonuçsuz sorumluluk tanımları. "Okul yıl sonu etkinliği organizasyonuna yardım ettim" zayıf. "200 katılımcılı bir etkinliğin lojistiğini koordine ettim, 500£ bütçe yönettim ve katılımcı başına maliyeti bir önceki yıla göre %15 düşürdüm" güçlü. Sayılar mütevazı olsa bile her zaman ölçtür.' },
       { q: 'Staj başvurusunda kapak mektubu (motivasyon mektubu) gerekli mi?', a: 'Büyük şirketlerin yapılandırılmış programlarında genellikle evet. Küçük ve orta ölçekli şirketlere doğrudan başvurularda ise kapak mektubu yerine kişisel bir e-posta çok daha etkili. Kapak mektubu yazarken tek bir amaca odaklan: "Bu şirket için neden bu staj?" — genel bir "kendimi geliştirmek istiyorum" değil, o şirkete veya sektöre özgü bir neden.' },
+      { q: 'Staj CV şablonu var mı, nereden bulunur?', a: 'Ücretsiz şablon kaynakları: Canva (görsel şablonlar), Europass (AB standardı, özellikle yurt dışı başvurular için önerilir), LinkedIn Easy Apply profili. Ancak hazır şablonlar genellikle fazla süslü veya dolgu içeriklere yol açıyor. En iyi yaklaşım: Google Docs\'ta sade iki sütunlu bir format kurmak — başlık, iletişim, eğitim, beceriler, projeler. Görsel tasarımdan daha önemli olan içerik yoğunluğudur.' },
+      { q: 'Staj CV\'si hangi dilde hazırlanmalı?', a: 'Staj ilanı Türkçeyse Türkçe, İngilizce ilanlar ya da uluslararası şirketler için İngilizce hazırlayın. Yurt dışı staj başvurularında Europass formatı önerilir; AB kurumları ve Erasmus başvurularında standart kabul görür. Hem Türkçe hem İngilizce versiyonu hazır bulundurmak en güvenli yaklaşımdır.' },
     ],
     cta: { heading: 'Başvuruna doğrulanmış bir değerlendirme ekle', body: 'Eduentry hazırlık raporu, işe alım uzmanlarına seni tanımadan önce yeteneğini kanıtlar. Deneyim eksikliğini ölçülmüş yetenek verileriyle telafi et.', label: 'Ücretsiz değerlendirmeyi başlat', href: 'https://eduentry.ai/tr' },
   },
@@ -660,10 +662,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'pisa-nedir-cocugunuz-nasil-hazirlanir',
-    title: 'PISA Nedir, Pısa Ne Demek? 2025 Türkiye Sonuçları ve Hazırlık Rehberi',
-    shortTitle: 'PISA Nedir? 2025 Türkiye Sonuçları ve Çocuğunuzu Nasıl Hazırlarsınız',
+    title: 'Çocuğunuzu PISA\'ya Nasıl Hazırlarsınız? PISA Nedir, 2025 Türkiye Sonuçları',
+    shortTitle: 'Çocuğunuzu PISA\'ya Nasıl Hazırlarsınız? 2025 Türkiye Sonuçları',
     description:
-      'PISA nedir? Her 3 yılda bir 91 ülkede uygulanan matematik, okuma ve fen sınavı. 2025 Türkiye: matematik 463 (OECD 472). 4 pratik hazırlık yolu ve ülke sıralama tablosu — ebeveynler için.',
+      'PISA 2025 Türkiye: matematik 453, okuma 479. Çocuğunuzun PISA tarzı sorularda başarılı olması için 4 pratik strateji — test ezberini değil, gerçek hayat muhakemesini geliştirin. 15 yaş ebeveynleri için rehber.',
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2025\'te okumada OECD ortalamasını yakaladı; matematikte 463 ile OECD ortalaması (472) yakınında yer aldı.',
 
     date: '2026-09-14',
@@ -826,9 +828,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'staj-defteri-nasil-doldurulur',
-    title: 'Staj Defteri Nasıl Doldurulur? Örnek + Nereden Alınır, Kim İmzalar',
-    shortTitle: 'Staj Defteri Nedir, Nasıl Doldurulur? Örnek İfadeler + 2026 Rehberi',
-    description: 'Staj defterini nasıl dolduracaksınız? Günlük faaliyet, haftalık özet ve imza adımları + örnek ifadeler. Nereden alınır, kimin imzalaması gerekir, ne zaman teslim edilir.',
+    title: 'Staj Defteri Nasıl Doldurulur? Örnek İfadeler + 2026 Tam Rehber',
+    shortTitle: 'Staj Defteri Nasıl Doldurulur? Örnek İfadeler + 2026 Rehberi',
+    description: 'Günlük ve haftalık staj defteri nasıl tutulur? Staj fişi, staj zarfı, staj dalı açıklamalı. Kim imzalar, nereden alınır, ne zaman teslim edilir. Üniversite ve lise öğrencileri için 2026 örnek rehberi.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
@@ -890,7 +892,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     tldr: 'Üniversite öğrencileri için staj bulmanın en verimli yolları: üniversite kariyer merkezi (kurumsal anlaşmalar aracılığıyla), LinkedIn Jobs, Kariyer.net, Youthall ve doğrudan şirket başvuruları. Büyük şirketlerin yaz stajları için başvurular sonbahar döneminde (Eylül–Kasım) açılır; rekabetçi pozisyonlar için en az 6 ay öncesinden planlamak gerekir.',
 
     date: '2026-09-15',
-    dateModified: '2026-10-28',
+    dateModified: '2026-11-09',
     readTime: '10 dk okuma',
     tags: ['Staj', 'Staj Başvurusu', 'Kariyer Rehberi', 'Üniversite', 'Kariyer Ofisi', 'İş Dünyası'],
     faqs: [
@@ -898,6 +900,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'Staj başvurusu ne zaman yapılmalı?', a: 'Zamanlama, şirket büyüklüğüne göre değişir. KPMG, büyük bankalar ve holding şirketleri gibi kurumsal yapıların yaz stajları için başvurular Eylül–Kasım döneminde açılır. Orta ölçekli şirketler için Ocak–Mart penceresi en aktif dönemdir. KOBİ ve startuplar neredeyse yıl boyu başvuru kabul eder.' },
       { q: 'Üniversite kariyer merkezi staj bulmama gerçekten yardımcı olur mu?', a: 'Evet — ve çoğu öğrenci bu kaynağı yeterince kullanmıyor. Türkiye\'deki büyük üniversitelerin kariyer merkezleri, kurumsal şirketlerle protokol anlaşmaları çerçevesinde belirli kontenjanları doğrudan öğrencilere iletir. Bu stajlar ilan edilmez; yalnızca kariyer merkezi üzerinden duyurulur.' },
       { q: 'Staj başvurusunda motivasyon mektubu gerekli mi?', a: 'Büyük şirketlerin formal programlarında neredeyse her zaman gereklidir. Motivasyon mektubunda şirketi neden seçtiğinizi ve bu stajdan spesifik olarak ne öğrenmek istediğinizi bir veya iki somut cümleyle belirtin. "Uluslararası deneyim kazanmak istiyorum" gibi genel ifadelerden kaçının.' },
+      { q: 'Staj bulma için hangi siteler kullanılır?', a: 'Türkiye\'de en çok tercih edilen staj platformları: Kariyer.net (en geniş ilan havuzu), Youthall (özellikle üniversite öğrencilerine yönelik staj ve giriş seviyesi pozisyonlar), LinkedIn Jobs (uluslararası şirketler ve startup\'lar için tercih edilir), Indeed Türkiye ve Stajyer.com. Büyük holdinglerin kendi kariyer portallarını (Koç Kariyer, Sabancı Kariyer vb.) ayrıca takip etmek de önerilir.' },
+      { q: 'Staj başvurusu kaç kişiye yapılmalı?', a: 'İlk tur için en az 15–20 başvuru öneririz. Staj kontenjanları sınırlıdır ve geri bildirim oranı düşüktür; bu nedenle hacim önemlidir. Önerilen yaklaşım: tercih ettiğiniz 3–4 şirkete özelleştirilmiş başvuru + 10–15 şirkete standart ama kişiselleştirilmiş başvuru. Kapak mektubunu şirkete göre küçük ufak tefek uyarlamak kalite-adet dengesini korumak için yeterlidir.' },
+      { q: 'İngilizce staj ilanlarına Türk öğrenci başvurabilir mi?', a: 'Evet — özellikle çok uluslu şirketlerin Türkiye ofislerindeki staj ilanları ve uzaktan pozisyonlar Türk öğrencilere açıktır. LinkedIn\'de "internship Türkiye" veya "remote internship" araması yaparak ilanlara ulaşabilirsiniz. Bu tür pozisyonlar özgeçmişin İngilizce olmasını ve temel iletişim becerilerini gerektirir.' },
     ],
     cta: {
       heading: 'Hangi staja en uygunsun?',
@@ -933,14 +938,14 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'pisa-nedir-is-hayatini-sekillendiren-sinav',
-    title: 'PISA 2025 ve Kariyer: Türkiye Kaçıncı? PISA 2026 Var Mı?',
-    shortTitle: 'PISA 2026 Var Mı? 2025 Sonuçları ve Kariyer',
+    title: 'PISA 2025 Türkiye Sıralaması: Matematik ve Okuma Kariyeri Nasıl Etkiler?',
+    shortTitle: 'PISA 2025 Türkiye Sıralaması ve Çocuğunuzun Kariyerine Etkisi',
     description:
-      'PISA 2026 diye bir sınav yok — sıradaki PISA 2028. 2025 Türkiye: matematik 463 (OECD 472), okuma OECD ortalamasında. PISA\'nın ölçtüğü beceriler çocuğun kariyerini etkiliyor mu? Veriye dayalı yanıt.',
+      'Türkiye PISA 2025\'te okumada OECD ortalamasını geçti. PISA\'nın ölçtüğü problem çözme ve okuma becerileri çocuğunuzun 10 yıl içindeki kariyer olanaklarını doğrudan etkiliyor — araştırma verilerine dayalı rehber.',
     tldr: 'PISA, OECD\'nin her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uyguladığı bir değerlendirme programıdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan civarındadır. PISA\'nın ölçtüğü beceriler — sayısal muhakeme, okuduğunu anlama ve problem çözme — günümüz iş dünyasının en çok aradığı yetkinliklerle örtüşüyor.',
 
     date: '2026-09-21',
-    dateModified: '2026-10-28',
+    dateModified: '2026-11-09',
     readTime: '11 dk okuma',
     tags: ['PISA', 'Kariyer Gelişimi', 'Akademik Değerlendirme', 'Staj', 'Ebeveyn Rehberi'],
     faqs: [
