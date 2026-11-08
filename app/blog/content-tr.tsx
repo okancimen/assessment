@@ -8276,6 +8276,22 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           ))}
         </div>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/tr/blog/nwea-map-puanlari-aciklamasi', tag: 'Değerlendirme Rehberi', title: 'NWEA MAP Puanları 2026: Sınıfa Göre RIT Aralıkları' },
+            { href: '/tr/blog/map-puani-global-karsilastirma', tag: 'Uluslararası', title: 'Çocuğunuzun MAP Puanı Küresel Olarak Ne Anlama Gelir?' },
+            { href: '/tr/blog/9-yasinda-iyi-akademik-puan-nedir', tag: 'Kriter', title: '9 Yaşında İyi Akademik Puan Nedir?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -8430,6 +8446,21 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           ))}
         </div>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/tr/blog/nwea-map-puanlari-aciklamasi', tag: 'Değerlendirme Rehberi', title: 'NWEA MAP Puanları 2026: Sınıfa Göre RIT Aralıkları' },
+            { href: '/tr/blog/cocugum-sinif-duzeyinde-mi', tag: 'Sınıf Düzeyi', title: 'Çocuğum Sınıf Düzeyinde mi? Bunu Gerçekten Nasıl Öğrenirsiniz' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -8563,6 +8594,21 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
               <p className="font-semibold text-gray-900 mb-2 text-sm">{q}</p>
               <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/tr/blog/cocuklar-icin-sozel-sozel-olmayan-muhakeme-testi', tag: 'Muhakeme', title: 'Çocuklar İçin Sözel ve Sözel Olmayan Muhakeme Testi' },
+            { href: '/tr/blog/cogat-basari-testi-farki', tag: 'Karşılaştırma', title: 'CogAT ve Akademik Başarı Testi: Farkı Nedir?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
           ))}
         </div>
       </section>
@@ -8704,6 +8750,21 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           ))}
         </div>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/tr/blog/cogat-nwea-map-ustun-yetenekli', tag: 'Üstün Yetenekli', title: 'CogAT vs NWEA MAP: Üstün Yetenekli Tanımlama Farkları' },
+            { href: '/tr/blog/cogat-basari-testi-farki', tag: 'Karşılaştırma', title: 'CogAT ve Akademik Başarı Testi: Farkı Nedir?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -8837,6 +8898,22 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
               <p className="font-semibold text-gray-900 mb-2 text-sm">{q}</p>
               <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/tr/blog/cogat-nwea-map-ustun-yetenekli', tag: 'Üstün Yetenekli', title: 'CogAT vs NWEA MAP: Üstün Yetenekli Tanımlama Farkları' },
+            { href: '/tr/blog/nwea-map-puanlari-aciklamasi', tag: 'Değerlendirme Rehberi', title: 'NWEA MAP Puanları 2026: Sınıfa Göre RIT Aralıkları' },
+            { href: '/tr/blog/cocuklar-icin-sozel-sozel-olmayan-muhakeme-testi', tag: 'Muhakeme', title: 'Çocuklar İçin Sözel ve Sözel Olmayan Muhakeme Testi' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
           ))}
         </div>
       </section>
@@ -8994,6 +9071,22 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
               <p className="font-semibold text-gray-900 mb-2 text-sm">{q}</p>
               <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/tr/blog/cocugum-sinif-duzeyinde-mi', tag: 'Sınıf Düzeyi', title: 'Çocuğum Sınıf Düzeyinde mi? Bunu Gerçekten Nasıl Öğrenirsiniz' },
+            { href: '/tr/blog/nwea-map-puanlari-aciklamasi', tag: 'Değerlendirme Rehberi', title: 'NWEA MAP Puanları 2026: Sınıfa Göre RIT Aralıkları' },
+            { href: '/tr/blog/map-puani-global-karsilastirma', tag: 'Uluslararası', title: 'Çocuğunuzun MAP Puanı Küresel Olarak Ne Anlama Gelir?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
           ))}
         </div>
       </section>

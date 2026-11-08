@@ -627,6 +627,14 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           <Link href="/blog/nwea-map-growth-norms" className="text-indigo-600 hover:underline">
             MAP growth norms guide
           </Link>
+          . To see how US MAP scores compare globally, see{' '}
+          <Link href="/blog/map-score-global-benchmark" className="text-indigo-600 hover:underline">
+            what your child&apos;s MAP score means internationally
+          </Link>
+          . To determine whether your child is on grade level overall, see{' '}
+          <Link href="/blog/is-my-child-on-grade-level" className="text-indigo-600 hover:underline">
+            how to know if your child is on grade level
+          </Link>
           .
         </p>
       </section>
@@ -1328,6 +1336,8 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           {[
             { href: '/blog/wisc-v-scores-explained', tag: 'Assessment Guide', title: 'WISC-V Scores Explained: Full Scale IQ, Index Scores, and Gifted Cut-Offs' },
             { href: '/blog/cogat-vs-nwea-map-gifted', tag: 'Comparison', title: 'CogAT vs. NWEA MAP for Gifted Identification: Which Test Matters More?' },
+            { href: '/blog/cogat-vs-achievement-test', tag: 'Comparison', title: "CogAT vs. Academic Achievement Test: What's the Difference?" },
+            { href: '/blog/verbal-nonverbal-reasoning-test-children', tag: 'Reasoning', title: 'Verbal and Non-Verbal Reasoning Tests for Children: Free Online Options' },
             { href: '/blog/gifted-program-testing-guide', tag: 'Parent Guide', title: 'US Gifted Program Testing: A Complete Parent\'s Guide' },
             { href: '/blog/nwea-map-scores-explained', tag: 'Assessment Guide', title: 'NWEA MAP Scores Explained: RIT Scores, Grade Benchmarks, and Gifted Cut-Offs' },
           ].map((link) => (
@@ -4127,6 +4137,22 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           ))}
         </div>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/nwea-map-scores-explained', tag: 'Assessment Guide', title: 'NWEA MAP Scores by Grade Level 2026: RIT Charts, Averages & Gifted Cut-offs' },
+            { href: '/blog/map-score-global-benchmark', tag: 'International', title: "What Does Your Child's MAP Score Mean Globally? US vs. International Benchmarks" },
+            { href: '/blog/good-academic-score-9-year-old', tag: 'Benchmarks', title: 'What Is a Good Academic Score for a 9-Year-Old?' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -4271,6 +4297,21 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           ))}
         </div>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/nwea-map-scores-explained', tag: 'Assessment Guide', title: 'NWEA MAP Scores by Grade Level 2026: RIT Charts, Averages & Gifted Cut-offs' },
+            { href: '/blog/is-my-child-on-grade-level', tag: 'Grade Level', title: 'Is My Child on Grade Level? How to Actually Know' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -4367,6 +4408,21 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
               <div className="font-semibold text-gray-900 mb-2">{q}</div>
               <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/verbal-nonverbal-reasoning-test-children', tag: 'Reasoning', title: 'Verbal and Non-Verbal Reasoning Tests for Children: Free Online Options' },
+            { href: '/blog/cogat-vs-achievement-test', tag: 'Comparison', title: "CogAT vs. Academic Achievement Test: What's the Difference?" },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
           ))}
         </div>
       </section>
@@ -4511,6 +4567,22 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           ))}
         </div>
       </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/cogat-scores-explained', tag: 'Assessment Guide', title: 'CogAT Score Guide 2026: SAS Chart, Gifted Cut-offs & What Your Results Mean' },
+            { href: '/blog/cogat-vs-achievement-test', tag: 'Comparison', title: "CogAT vs. Academic Achievement Test: What's the Difference?" },
+            { href: '/blog/gifted-program-testing-guide', tag: 'Parent Guide', title: 'US Gifted Program Testing: A Complete Parent\'s Guide' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   ),
 
@@ -4636,6 +4708,22 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
               <div className="font-semibold text-gray-900 mb-2">{q}</div>
               <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/cogat-scores-explained', tag: 'Assessment Guide', title: 'CogAT Score Guide 2026: SAS Chart, Gifted Cut-offs & What Your Results Mean' },
+            { href: '/blog/nwea-map-scores-explained', tag: 'Assessment Guide', title: 'NWEA MAP Scores by Grade Level 2026: RIT Charts, Averages & Gifted Cut-offs' },
+            { href: '/blog/verbal-nonverbal-reasoning-test-children', tag: 'Reasoning', title: 'Verbal and Non-Verbal Reasoning Tests for Children: Free Online Options' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
           ))}
         </div>
       </section>
@@ -4802,6 +4890,22 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
               <div className="font-semibold text-gray-900 mb-2">{q}</div>
               <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {[
+            { href: '/blog/is-my-child-on-grade-level', tag: 'Grade Level', title: 'Is My Child on Grade Level? How to Actually Know' },
+            { href: '/blog/nwea-map-scores-explained', tag: 'Assessment Guide', title: 'NWEA MAP Scores by Grade Level 2026: RIT Charts, Averages & Gifted Cut-offs' },
+            { href: '/blog/map-score-global-benchmark', tag: 'International', title: "What Does Your Child's MAP Score Mean Globally?" },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="border border-gray-100 rounded-xl p-5 hover:border-indigo-100 transition-colors">
+              <div className="text-xs font-semibold text-indigo-600 mb-2">{link.tag}</div>
+              <div className="font-semibold text-gray-900 text-sm leading-snug">{link.title}</div>
+            </Link>
           ))}
         </div>
       </section>
