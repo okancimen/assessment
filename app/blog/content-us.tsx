@@ -3964,4 +3964,847 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'is-my-child-on-grade-level': (
+    <>
+      <Callout>
+        &ldquo;Grade level&rdquo; is not a fixed point — it is a range. A child is considered &ldquo;on grade level&rdquo; if they score between the 25th and 75th national percentile on a standardised test. The national average MAP Math RIT score is approximately 188 in Grade 3, 197 in Grade 4, and 205 in Grade 5. School grades are a poor proxy — a child can receive A grades while performing below the 50th national percentile. The most direct way to check is a standardised adaptive assessment.
+      </Callout>
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What &ldquo;Grade Level&rdquo; Actually Means</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          When teachers say a child is &ldquo;on grade level,&rdquo; they mean the child is performing in a range typical for students in that grade — not that they hit a precise score. In standardised testing frameworks, &ldquo;on grade level&rdquo; typically means scoring between the 25th and 75th national percentile. The 50th percentile is exactly average; a child at the 25th percentile is at the lower edge of the typical range.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This range matters because grade-level expectations vary significantly by subject and time of year. A child who is at the 40th percentile in Reading but the 72nd in Math is &ldquo;on grade level&rdquo; in both — even though one feels like a strength and one feels like a weakness. Concern begins when scores consistently fall below the 25th percentile, which typically triggers intervention in most districts.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          What many parents do not realise is that grades alone are a poor proxy for grade-level performance. A child can receive A grades while performing below grade level if the school&apos;s grading standards are not tied to national norms. Conversely, a child can receive B grades while performing significantly above grade level.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How Schools Determine Grade Level</h2>
+        <div className="space-y-3 mb-5">
+          {[
+            { name: 'NWEA MAP Growth', desc: 'Adaptive achievement test used by 9+ million US students. Produces a RIT score and national percentile for Math, Reading, Language Usage, and Science. The most widely used continuous progress monitoring tool in US K–12 education.' },
+            { name: 'State standardised tests', desc: 'Annual tests (PARCC, SBAC, STAAR, etc.) that measure grade-level standards mastery. Results are reported in proficiency bands (Below Basic, Basic, Proficient, Advanced). Proficient ≈ on grade level in most state definitions.' },
+            { name: 'DIBELS / iReady', desc: 'Early literacy and reading fluency assessments used in K–3. Measure specific foundational skills like phonemic awareness, decoding, and oral reading fluency.' },
+            { name: 'Teacher observation & portfolio', desc: 'Classroom-based assessments, running records, and writing samples. Provide a qualitative complement to test scores but are not normed against national peers.' },
+          ].map(({ name, desc }) => (
+            <div key={name} className="flex gap-4 p-5 border border-gray-100 rounded-xl">
+              <div className="w-2 h-2 rounded-full bg-indigo-400 mt-2 flex-shrink-0" />
+              <div>
+                <p className="font-semibold text-gray-900 mb-1">{name}</p>
+                <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Grade Level Benchmarks: Math and Reading by Grade</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          The table below shows MAP Growth national average RIT scores for Math and Reading by fall grade level (from the NWEA 2020 national norms). Scores between the 25th and 75th percentile indicate on-grade-level performance.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Grade</th>
+                <th className="text-center p-3 font-semibold text-gray-700">Math avg</th>
+                <th className="text-center p-3 font-semibold text-gray-500">Math on-level (25th–75th)</th>
+                <th className="text-center p-3 font-semibold text-gray-700">Reading avg</th>
+                <th className="text-center p-3 font-semibold text-gray-500">Reading on-level (25th–75th)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Grade 1', '163', '155–173', '158', '149–170'],
+                ['Grade 2', '178', '170–188', '169', '160–181'],
+                ['Grade 3', '188', '180–199', '177', '167–191'],
+                ['Grade 4', '197', '190–208', '185', '175–199'],
+                ['Grade 5', '205', '197–216', '191', '181–206'],
+                ['Grade 6', '211', '203–222', '197', '186–212'],
+                ['Grade 7', '215', '207–226', '201', '190–217'],
+                ['Grade 8', '218', '211–229', '204', '193–220'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-gray-700 font-medium">{row[1]}</td>
+                  <td className="p-3 text-center text-gray-500">{row[2]}</td>
+                  <td className="p-3 text-center text-gray-700 font-medium">{row[3]}</td>
+                  <td className="p-3 text-center text-gray-500">{row[4]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 mb-2">Source: NWEA 2020 MAP Growth Norms (fall administration). On-level range = 25th–75th percentile.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Signs Your Child May Be Ahead of Grade Level</h2>
+        <ul className="grid sm:grid-cols-2 gap-3 mb-4">
+          <Check>Consistently finishes class work early and needs extension activities</Check>
+          <Check>MAP score 10+ RIT points above grade average (approximately 75th percentile)</Check>
+          <Check>Reads books 2+ grade levels above their current grade</Check>
+          <Check>Asks questions teachers describe as &ldquo;advanced&rdquo; or &ldquo;beyond the curriculum&rdquo;</Check>
+          <Check>State test score in the &ldquo;Advanced&rdquo; band</Check>
+          <Check>Teacher recommends gifted evaluation or enrichment</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Signs Your Child May Be Behind Grade Level</h2>
+        <ul className="grid sm:grid-cols-2 gap-3 mb-4">
+          <Cross>MAP score 10+ RIT points below grade average (approximately 25th percentile or lower)</Cross>
+          <Cross>State test score in the &ldquo;Below Basic&rdquo; or &ldquo;Basic&rdquo; band</Cross>
+          <Cross>Regularly struggles with homework at the grade&apos;s expected difficulty</Cross>
+          <Cross>Teacher recommends tutoring, extra support, or retention</Cross>
+          <Cross>Reading fluency significantly below grade-level benchmarks</Cross>
+          <Cross>Math facts or computation skills behind peers at the same grade</Cross>
+        </ul>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Know exactly where your child stands — not just nationally, but globally</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">Eduentry&apos;s free adaptive assessment benchmarks your child across Math, English, Verbal and Non-Verbal Reasoning against an international peer group. 25–35 minutes. Instant standardised score and percentile. No registration required.</p>
+        </div>
+        <CtaLink href="/academic-assessment" label="grade_level_post_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Start free assessment →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Do Once You Know</h2>
+        <div className="space-y-4">
+          {[
+            {
+              heading: 'If your child is ahead of grade level',
+              body: 'Request a gifted evaluation through your school district. Ask about enrichment, acceleration options, or early access to advanced coursework. If the district does not offer referrals, consider an independent cognitive evaluation (CogAT, WISC-V). Many parents supplement with above-grade-level material at home in the specific subjects where their child is strongest.',
+            },
+            {
+              heading: 'If your child is on grade level but falling toward the lower range',
+              body: "Targeted intervention before gaps compound is significantly more effective than waiting. Identify the specific skill gaps (MAP provides a Learning Continuum that maps your child's RIT score to the next skills to work on). Consistent practice of 20–30 minutes per day on specific gap areas, rather than general tutoring, produces the fastest gains.",
+            },
+            {
+              heading: 'If your child is below grade level',
+              body: "Request a meeting with the classroom teacher to understand what specific skills are lagging. Ask whether a formal learning assessment is warranted (reading difficulties are frequently related to underlying phonological processing issues, which respond well to structured literacy instruction). Early intervention matters — gaps that are modest in Grade 2 can become significant by Grade 5 without targeted support.",
+            },
+          ].map(({ heading, body }) => (
+            <div key={heading} className="border border-gray-100 rounded-xl p-5">
+              <p className="font-semibold text-gray-900 mb-2">{heading}</p>
+              <p className="text-sm text-gray-600 leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: "How do I find out my child's MAP score if the school hasn't shared it?",
+              a: "MAP scores are typically available through the school's parent portal (PowerSchool, Infinite Campus, Skyward, or similar). If your school administers MAP but you haven't received results, contact the classroom teacher or the school's testing coordinator and request the Family Report — this is a standard NWEA document that explains the RIT score, national percentile, and projected growth.",
+            },
+            {
+              q: "My child's grades are good. Does that mean they're on grade level?",
+              a: "Not necessarily. School grades reflect performance against that school's or teacher's standards, which may not be normed against national benchmarks. A child can receive A grades at a school with below-average academic standards while performing below the 50th national percentile. And the reverse is true: a child at the 90th national percentile may receive B grades at a highly demanding school. Standardised assessments provide the national context that grades cannot.",
+            },
+            {
+              q: 'What is the fastest way to find out if my child is on grade level?',
+              a: "The fastest method is a standardised adaptive assessment. If your child's school administers NWEA MAP, request the most recent score report. If you want an independent check at home, Eduentry offers a free 25–35 minute adaptive assessment covering Math, English, Verbal Reasoning, and Non-Verbal Reasoning — it provides a standardised score and international percentile immediately after completion, with no registration.",
+            },
+          ].map(({ q, a }) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{q}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'map-score-global-benchmark': (
+    <>
+      <Callout>
+        MAP Growth scores are benchmarked against US students only. PISA 2022 data shows the US ranks 26th in Mathematics among OECD countries, scoring 465 — 7 points below the OECD average of 472. A US student at the 90th national percentile in Grade 5 Math (MAP RIT ≈ 225) would rank around the 75th international percentile. If your child is competing for university places internationally — or will work in a global economy — US-only norms tell only part of the story.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What MAP Scores Actually Measure</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NWEA MAP Growth is an excellent tool for tracking your child&apos;s academic progress within the US education system. It measures how much your child has learned relative to other American students at the same grade level, using a continuous RIT scale that covers Kindergarten through Grade 12.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          But MAP Growth is normed exclusively against US students. The 2020 national norming study — the most recently published and the current reference for 2025–26 — surveyed approximately 5.5 million US students across 27,000+ schools. These are the peers your child is being compared against.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          This matters because the US is a middle-of-the-road academic performer by international standards. A child at the 50th US national percentile is not at the 50th global percentile. And a child at the 90th US percentile may be closer to the 70th–75th percentile in the highest-performing countries.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How the US Compares Internationally (PISA 2022)</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          PISA (Programme for International Student Assessment), run by the OECD every three years, is the most rigorous international benchmark of academic performance. PISA 2022 tested 690,000 students across 81 countries in Mathematics, Reading, and Science at age 15.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-5">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Country</th>
+                <th className="text-center p-3 font-semibold text-gray-700">PISA 2022 Math</th>
+                <th className="text-center p-3 font-semibold text-gray-700">vs. OECD average (472)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Singapore', '575', '+103'],
+                ['Japan', '536', '+64'],
+                ['South Korea', '527', '+55'],
+                ['Canada', '497', '+25'],
+                ['United Kingdom', '489', '+17'],
+                ['Australia', '487', '+15'],
+                ['United States', '465', '−7'],
+                ['OECD average', '472', 'baseline'],
+              ].map((row) => (
+                <tr key={row[0]} className={`hover:bg-gray-50/50 ${row[0] === 'United States' ? 'bg-amber-50' : ''}`}>
+                  <td className="p-3 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-gray-700 font-medium">{row[1]}</td>
+                  <td className={`p-3 text-center text-sm font-medium ${row[2].startsWith('+') ? 'text-emerald-600' : row[2].startsWith('−') ? 'text-red-500' : 'text-gray-500'}`}>{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 mb-4">Source: PISA 2022 Results (OECD, 2023). Scores are for 15-year-olds.</p>
+        <p className="text-gray-700 leading-relaxed">
+          The US scores 7 points below the OECD average in Mathematics — roughly equivalent to 3–4 months of learning behind the OECD average student. Against Singapore, the gap represents approximately 2.5 years of additional schooling.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Your Child&apos;s MAP Score Means Globally</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          The table below gives approximate international context for US Grade 5 MAP Math percentiles, based on PISA–NAEP linking studies and NWEA RIT–PISA correlations. These are approximations, not official NWEA or OECD figures.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-5">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">MAP Math RIT (Grade 5)</th>
+                <th className="text-center p-3 font-semibold text-gray-700">US national %ile</th>
+                <th className="text-center p-3 font-semibold text-indigo-700">Approx. OECD %ile</th>
+                <th className="text-left p-3 font-semibold text-gray-700">International context</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['197', '50th (avg)', '~43rd', 'Below OECD average — typical US student'],
+                ['205', '60th', '~50th', 'Near OECD median'],
+                ['216', '75th', '~63rd', 'Above OECD average'],
+                ['225', '90th', '~75th', 'Strong internationally'],
+                ['235+', '99th', '~90th+', 'Top international performers'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 font-mono font-medium text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-gray-700">{row[1]}</td>
+                  <td className="p-3 text-center text-indigo-600 font-medium">{row[2]}</td>
+                  <td className="p-3 text-gray-600 text-sm">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">See where your child stands globally — not just in the US</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">Eduentry&apos;s free adaptive assessment benchmarks your child against an international peer group — calibrated against PISA, UK National Curriculum, and IB standards. 25–35 minutes. No registration required.</p>
+        </div>
+        <CtaLink href="/academic-assessment" label="map_global_post_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Get the global benchmark →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why International Benchmarking Matters</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          For most families, US national norms are sufficient context — if your child is heading to a US university and working in the US economy, knowing they are at the 90th US national percentile is very useful information.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          But parents who want global context — either because they are educating with international universities in mind, because they are expats or internationally mobile, or simply because they want the most rigorous benchmark available — benefit from an international reference point.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Key insight:</strong> A US Grade 5 student at the 90th national percentile (MAP Math RIT ≈ 225) is performing at approximately the 75th international percentile — still strong globally. But a student at the 50th US percentile (RIT ≈ 205) is performing at approximately the 43rd international percentile — slightly below the global median. The gap matters more at the average than at the top.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: 'Is MAP Growth used outside the United States?',
+              a: "MAP Growth is used in some international schools and a small number of non-US districts, but its national norms are based exclusively on US students. NWEA does not publish international norming studies. If your child attends an international school that uses MAP, their percentile rank is still relative to US national peers, not global peers.",
+            },
+            {
+              q: 'How does PISA testing differ from MAP Growth?',
+              a: "MAP Growth is an adaptive achievement test that measures curriculum mastery in Reading, Math, Language, and Science for students K–12. PISA is a literacy assessment that measures 15-year-olds' ability to apply knowledge in real-world contexts — it deliberately avoids testing rote curriculum knowledge. Despite these differences, the underlying skills correlate strongly, and high MAP performers typically also perform well on PISA-style applied questions.",
+            },
+            {
+              q: 'Which countries have the highest academic standards internationally?',
+              a: 'Singapore consistently ranks first globally across PISA subjects. East Asian education systems (Japan, South Korea, Taiwan, Hong Kong, China) dominate the top 10. Within Europe, Switzerland, the Netherlands, and Estonia perform significantly above the OECD average. Canada and Australia perform above the US average across all three PISA domains.',
+            },
+          ].map(({ q, a }) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{q}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'free-online-academic-assessment-children': (
+    <>
+      <Callout>
+        Most &ldquo;free&rdquo; online academic assessments for children fail on at least one of three criteria: they test only maths and reading (missing verbal and non-verbal reasoning entirely), they produce a percentile against their own users rather than a nationally or internationally normed reference group, or they use static rather than adaptive testing. A meaningful free assessment uses IRT adaptive technology, covers reasoning as well as curriculum subjects, and reports against a known reference population.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What a Genuine Academic Assessment Should Cover</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Academic ability has several distinct components that require separate assessment. A test that only covers maths and English tells you about curriculum knowledge but misses the reasoning skills that predict future academic success and that selective schools test for.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4 mb-5">
+          {[
+            { domain: 'Mathematics', desc: 'Number operations, algebra, geometry, data interpretation. Tests both procedural fluency and conceptual understanding — can the child do the calculation, and do they know why?' },
+            { domain: 'English / Reading Comprehension', desc: 'Vocabulary, text comprehension, grammar and language use. Predicts reading stamina, writing quality, and performance across all subjects that require text analysis.' },
+            { domain: 'Verbal Reasoning', desc: 'Language-based logical thinking: verbal analogies, word relationships, sequence completion. The domain most directly tested in gifted screening tools like CogAT and UK 11+.' },
+            { domain: 'Non-Verbal Reasoning', desc: 'Pattern recognition and abstract thinking using shapes and diagrams only — no reading required. The most culture-fair domain and a strong indicator of underlying cognitive potential.' },
+          ].map(({ domain, desc }) => (
+            <div key={domain} className="border border-gray-100 rounded-xl p-5">
+              <p className="font-semibold text-gray-900 mb-2">{domain}</p>
+              <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Look For in a Free Assessment</h2>
+        <ul className="space-y-3 mb-5">
+          <Check><strong>Adaptive testing (IRT):</strong> An Item Response Theory adaptive test adjusts question difficulty in real time to your child&apos;s performance — shorter, more accurate, and less frustrating than fixed tests.</Check>
+          <Check><strong>Standardised, normed scores:</strong> The result should be a standardised score (percentile, mean-100 score, or grade equivalent) referenced against a known population — ideally a national or international norm group, not just the tool&apos;s own users.</Check>
+          <Check><strong>Age-appropriate difficulty levels:</strong> A single test cannot cover ages 6 to 16 meaningfully. Look for tools that dynamically adjust or offer levelled versions spanning at least 2–3 developmental stages.</Check>
+          <Check><strong>Multiple domains:</strong> At minimum: maths and reading. Ideally, also verbal and non-verbal reasoning. Subject-specific results are more actionable than a single composite score.</Check>
+          <Check><strong>No purchase required for results:</strong> Some tools offer free testing but gatekeep results behind a subscription. Check whether full scores are shown immediately after completing the assessment.</Check>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Red Flags to Avoid</h2>
+        <ul className="space-y-3 mb-5">
+          <Cross>Reports percentile against &ldquo;our users&rdquo; or &ldquo;students who took this test&rdquo; — not a nationally normed reference group</Cross>
+          <Cross>Only 10–20 questions total — not enough for reliable measurement across multiple domains</Cross>
+          <Cross>Fixed difficulty: same questions for a 7-year-old and a 14-year-old</Cross>
+          <Cross>Results require an email or account to view</Cross>
+          <Cross>No explanation of what the score means or what the reference population is</Cross>
+          <Cross>Calls itself an &ldquo;IQ test&rdquo; — group online tools do not produce valid IQ scores</Cross>
+        </ul>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Free adaptive academic assessment — four subjects, 25 minutes, instant results</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">Eduentry uses IRT adaptive testing across English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning. Ages 6–20. Standardised score (mean 100, SD 15) and international percentile. No account, no purchase, no signup.</p>
+        </div>
+        <CtaLink href="/academic-assessment" label="free_assessment_post_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Start free assessment →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How Adaptive Testing Works</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Traditional fixed-length tests give every student the same questions in the same order. This is inefficient: a high-performing child spends time on easy questions that reveal nothing about their ability, while a struggling child is confronted with questions well above their level and disengages.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          IRT (Item Response Theory) adaptive testing solves this by selecting the next question based on how the child answered the previous one. If a child answers correctly, the next question is harder; if they answer incorrectly, the next question is easier. This continues until the test has precisely estimated the child&apos;s ability level, using fewer questions than a fixed test would require.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          NWEA MAP Growth uses IRT adaptive testing — it&apos;s the same technology behind the most widely trusted academic assessment tool in US K–12 education. A properly implemented adaptive assessment can achieve the same measurement precision as a 50-question fixed test with only 20–30 questions.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: 'Can a free online assessment replace a formal evaluation?',
+              a: "No. Free online assessments are screening tools — they give a useful indication of where a child is performing relative to peers, but they cannot replace a formal psycho-educational evaluation for diagnosing learning difficulties or a clinically administered cognitive assessment (like WISC-V) for formal gifted identification. Use online assessments as a first-pass tool and to decide whether a more formal evaluation is warranted.",
+            },
+            {
+              q: 'At what age can children take a valid academic assessment online?',
+              a: "Most adaptive online assessments work reliably from age 6 upward, provided the child can read independently. Below age 6, children typically need adult-read-aloud format or image-based assessments. Good assessment tools specify the age range they're designed for and offer different difficulty levels for younger vs. older children rather than applying a one-size-fits-all approach.",
+            },
+            {
+              q: 'What is the difference between an academic assessment and an IQ test?',
+              a: "Academic assessments measure learned knowledge and subject-specific skills (reading, mathematics, reasoning). IQ tests measure cognitive ability — the speed and efficiency of information processing. IQ is a clinically defined construct assessed through individual administration with trained examiners. Online tools that claim to give an IQ score are invariably measuring something different and should not be used to draw conclusions about a child's intelligence.",
+            },
+          ].map(({ q, a }) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{q}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'verbal-nonverbal-reasoning-test-children': (
+    <>
+      <Callout>
+        Verbal and non-verbal reasoning tests are among the most important assessments for understanding a child&apos;s academic potential — but most schools do not administer them routinely. The CogAT (used for US gifted identification), UK 11+ selective admissions, and ISEE/SSAT all include reasoning components. A child&apos;s verbal reasoning score reflects language-based thinking; their non-verbal score reflects abstract pattern recognition independent of language ability. The gap between the two is often as informative as either score alone.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Verbal Reasoning Measures</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Verbal reasoning assesses a child&apos;s ability to think logically using language. It goes beyond vocabulary to test whether a child can identify relationships between words and concepts, spot patterns in language, and reason through verbal analogies and logical arguments.
+        </p>
+        <div className="space-y-3 mb-5">
+          {[
+            { type: 'Verbal analogies', example: '"Dog is to kennel as bird is to ___" — tests understanding of relationships between concepts.' },
+            { type: 'Sentence completion', example: 'Complete a sentence using the most logical word from a set of options.' },
+            { type: 'Word classification', example: 'Identify which word does not belong in a group and explain the common property.' },
+            { type: 'Logic sequences', example: 'Identify the next term in a word or concept sequence.' },
+          ].map(({ type, example }) => (
+            <div key={type} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <div className="w-2 h-2 rounded-full bg-indigo-400 mt-2 flex-shrink-0" />
+              <div>
+                <p className="font-semibold text-gray-900 mb-1">{type}</p>
+                <p className="text-sm text-gray-500 italic">{example}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Verbal reasoning is the most preparation-responsive of the reasoning domains. Wide reading, deliberate vocabulary study, and exposure to varied text types all build the skills directly tested. It is also the domain most strongly correlated with academic achievement across subjects.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Non-Verbal Reasoning Measures</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Non-verbal reasoning tests abstract thinking and pattern recognition using shapes, diagrams, and matrices — no reading required. This design makes it the most language-fair and culture-fair of the reasoning domains, which is why it is used to identify children whose verbal test performance may understate their cognitive potential (ELL students, early readers, children with dyslexia).
+        </p>
+        <div className="space-y-3 mb-5">
+          {[
+            { type: 'Matrix reasoning', example: 'A 3×3 or 2×2 grid of shapes with one cell missing — identify the pattern and select the missing piece.' },
+            { type: 'Figure classification', example: 'Identify which shape in a set follows a different rule from the others.' },
+            { type: 'Paper folding', example: 'A paper is folded and punched — identify where holes appear when unfolded.' },
+            { type: 'Series completion', example: 'Identify the next shape in a sequence that transforms by rotation, reflection, or rule.' },
+          ].map(({ type, example }) => (
+            <div key={type} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <div className="w-2 h-2 rounded-full bg-violet-400 mt-2 flex-shrink-0" />
+              <div>
+                <p className="font-semibold text-gray-900 mb-1">{type}</p>
+                <p className="text-sm text-gray-500 italic">{example}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Non-verbal reasoning is moderately preparation-responsive. Spatial puzzle practice (tangrams, pattern blocks, Rubik&apos;s cube), matrix reasoning workbooks, and shape-based activities build the relevant skills over time — this domain measures more of the child&apos;s underlying processing style than accumulated knowledge.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Reasoning Tests Matter for Gifted Identification</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Achievement tests (MAP, state tests) measure what a child has learned. Reasoning tests measure how efficiently a child processes new information — their underlying cognitive potential. Gifted programmes use reasoning tests precisely because achievement tests can miss high-potential children whose school experience has not been academically rich.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A child who moves schools frequently, lives in an underserved area, or has had patchy education may show modest achievement scores — but high reasoning scores signal the capacity to accelerate quickly given the right environment.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">The score gap matters:</strong> A child with high verbal but lower non-verbal scores (V+, N– in CogAT notation) has a different profile than one with the reverse pattern. A V+/N– profile often indicates a language-rich home environment with less spatial practice; N+/V– often appears in visually-oriented learners, children who are ELL, or twice-exceptional children. Both profiles can qualify for gifted programs if specific battery thresholds are met.
+        </Callout>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Test verbal and non-verbal reasoning free — 25 minutes, international percentile</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">Eduentry&apos;s adaptive assessment covers all four domains: English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning. Ages 6–20. Standardised score and international percentile. No account required.</p>
+        </div>
+        <CtaLink href="/academic-assessment" label="reasoning_post_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Start free assessment →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Benchmarks: What to Expect at Each Age</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          On a standardised mean-100/SD-15 reasoning assessment (the same scale used by most tools including WISC-V and Eduentry), score interpretation is consistent across ages since scores are always age-normalised:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Score range</th>
+                <th className="text-center p-3 font-semibold text-gray-700">Percentile</th>
+                <th className="text-left p-3 font-semibold text-gray-700">Interpretation</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['85–115', '16th–84th', 'Average range — typical performance for age'],
+                ['115–125', '84th–95th', 'Above average — strong academic potential'],
+                ['125–130', '95th–98th', 'Gifted range — qualifies for most gifted referrals'],
+                ['130–135', '98th–99th', 'Highly gifted — selective programme threshold'],
+                ['135+', '99th+', 'Exceptionally gifted — very rare'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 font-mono font-medium text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-indigo-600 font-medium">{row[1]}</td>
+                  <td className="p-3 text-gray-600">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: 'Can verbal and non-verbal reasoning be improved with practice?',
+              a: "Yes, both are preparation-responsive, though to different degrees. Verbal reasoning responds more directly to vocabulary study and wide reading — children with richer language exposure consistently score higher. Non-verbal reasoning responds to spatial practice (puzzles, tangrams, matrix reasoning workbooks). Research suggests consistent engagement with reasoning questions over 6–12 months produces meaningful score gains, but quick cramming has limited effect compared to curriculum knowledge tests.",
+            },
+            {
+              q: 'What is the difference between verbal reasoning and reading comprehension?',
+              a: "Reading comprehension tests how well a child understands and analyses a specific text — it depends heavily on the vocabulary and background knowledge needed for that text. Verbal reasoning tests language-based logical thinking (analogies, relationships, sequences) with vocabulary controlled to avoid penalising less-advantaged readers. A strong reader can score poorly on verbal reasoning if their logical reasoning is weak, and a child with modest reading fluency can sometimes score well on verbal reasoning if their logical thinking is strong.",
+            },
+            {
+              q: 'Is there a free online verbal and non-verbal reasoning test for children?',
+              a: "Eduentry offers a free adaptive assessment that includes both Verbal Reasoning and Non-Verbal Reasoning alongside Math and English. It covers ages 6–20, takes 25–35 minutes, produces standardised scores (mean 100, SD 15) with international percentiles, and requires no registration. The verbal and non-verbal components are scored separately so you can see your child's profile across both domains.",
+            },
+          ].map(({ q, a }) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{q}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'cogat-vs-achievement-test': (
+    <>
+      <Callout>
+        The CogAT measures how your child reasons — the efficiency of their thinking. MAP Growth and state achievement tests measure what your child has learned — curriculum mastery. Both matter for gifted identification, but they catch different children: a child with a high CogAT and modest MAP scores may be an underachiever with strong potential; a child with high MAP and modest CogAT may be a diligent learner who has maximised their curriculum exposure. Most gifted programmes require strong scores on both.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Cognitive Ability Tests Measure</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Cognitive ability tests attempt to measure how efficiently a child processes information — not what they have been taught. The CogAT, OLSAT, and NNAT are the most widely used examples in US schools.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The CogAT specifically measures three reasoning domains: verbal (language-based reasoning), quantitative (numerical reasoning — not arithmetic), and nonverbal (shape-based abstract reasoning). The composite of these three scores produces a Standard Age Score (SAS) with a mean of 100 and SD of 16, normed against the child&apos;s age peers.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Cognitive tests are designed to minimise the influence of curriculum exposure. A child from an educationally rich home and one from a less-resourced background should, in theory, have more similar cognitive test scores than achievement test scores — because cognitive tests are trying to measure capacity, not accumulated knowledge.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Academic Achievement Tests Measure</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Achievement tests measure how much curriculum content your child has mastered. NWEA MAP Growth, state tests (PARCC, SBAC, STAAR), and reading fluency assessments (DIBELS, iReady) are all achievement tests.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Growth specifically tracks mastery of grade-level Reading, Mathematics, Language, and Science standards over time, using an IRT adaptive format. The RIT score it produces represents the level at which the student answers approximately half of questions correctly — a precise estimate of their current curriculum mastery level.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Achievement tests are strongly influenced by instruction quality, tutoring, and home academic environment. A child who attends a rigorous school and has strong academic support at home will typically score higher on achievement tests than a child of equivalent cognitive ability who lacks those advantages.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">How They Are Used Together in Gifted Identification</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-5">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Test type</th>
+                <th className="text-left p-3 font-semibold text-gray-700">Common tool</th>
+                <th className="text-left p-3 font-semibold text-gray-700">What it shows</th>
+                <th className="text-left p-3 font-semibold text-gray-700">Gifted threshold</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Cognitive (group)', 'CogAT', 'Reasoning speed and efficiency', 'SAS 125+ (95th %ile)'],
+                ['Cognitive (individual)', 'WISC-V', 'Full-scale IQ + 5 index scores', 'FSIQ 130+ (98th %ile)'],
+                ['Achievement', 'NWEA MAP', 'Grade-level mastery, percentile', '90th–95th %ile'],
+                ['Achievement', 'State test', 'Standards proficiency', 'Advanced band'],
+              ].map((row) => (
+                <tr key={row[1]} className="hover:bg-gray-50/50">
+                  <td className="p-3 text-gray-700">{row[0]}</td>
+                  <td className="p-3 font-semibold text-gray-900">{row[1]}</td>
+                  <td className="p-3 text-gray-600">{row[2]}</td>
+                  <td className="p-3 text-indigo-600 font-medium text-xs">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed">
+          Using both reduces false positives (a child who is well-tutored but not genuinely cognitively advanced) and false negatives (a child with high reasoning ability who attends a school with weak instruction and therefore has modest achievement scores).
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">When Scores Diverge</h2>
+        <div className="space-y-4 mb-4">
+          {[
+            {
+              pattern: 'High CogAT, modest MAP',
+              interpretation: "Academic underachievement — the child has the cognitive capacity for stronger performance but isn't demonstrating it in curriculum mastery. Common causes: disengagement, undiagnosed learning difficulty (dyslexia, ADHD), mismatch between the school's instruction style and the child's learning style.",
+            },
+            {
+              pattern: 'High MAP, modest CogAT',
+              interpretation: 'Achievement driven by diligence and instruction quality, with cognitive efficiency closer to average. These children thrive in well-structured academic environments but may struggle more than their grades suggest when curriculum difficulty increases significantly.',
+            },
+            {
+              pattern: 'Both high',
+              interpretation: 'The classic gifted profile — both cognitive potential and demonstrated curriculum mastery are strong. Most gifted programmes are designed to identify and serve these children.',
+            },
+          ].map(({ pattern, interpretation }) => (
+            <div key={pattern} className="border border-gray-100 rounded-xl p-5">
+              <p className="font-semibold text-gray-900 mb-2">{pattern}</p>
+              <p className="text-sm text-gray-600 leading-relaxed">{interpretation}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Academic achievement + reasoning — both, in one free assessment</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">Eduentry&apos;s adaptive assessment covers Math and English (achievement) alongside Verbal and Non-Verbal Reasoning — giving you a complete picture of your child&apos;s academic profile. Free, 25–35 minutes, ages 6–20. No registration required.</p>
+        </div>
+        <CtaLink href="/academic-assessment" label="cogat_vs_achievement_post_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Start free assessment →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: 'Can you prepare for the CogAT the same way you prepare for MAP?',
+              a: "No — the preparation approaches are different. MAP measures curriculum content, so content-focused study directly improves MAP scores. The CogAT measures reasoning efficiency, so targeted reasoning practice (verbal analogy, matrix reasoning questions) is more relevant. Broad content study helps very little on the CogAT. That said, 6–12 weeks of focused reasoning practice produces measurable gains for most children.",
+            },
+            {
+              q: "My child's school only gives MAP — how do I find out about their reasoning ability?",
+              a: "You can request a gifted evaluation referral from your child's school, which may include the CogAT. Alternatively, an educational psychologist can administer the WISC-V individually. For a first-pass screen at home, Eduentry's free academic assessment includes Verbal and Non-Verbal Reasoning alongside Math and English — it won't substitute for a formal CogAT result, but it gives useful context before deciding whether to pursue formal evaluation.",
+            },
+            {
+              q: 'Which test is a better predictor of academic success — CogAT or MAP?',
+              a: "Both are strong predictors, with different strengths. MAP RIT scores in Grades 3–5 are strong predictors of high school readiness and ACT/SAT performance. CogAT scores are better predictors of performance in novel, unstructured academic tasks. For standard academic outcomes, MAP is the stronger predictor; for predicting ceiling in highly challenging academic environments, cognitive ability tests add significant information.",
+            },
+          ].map(({ q, a }) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{q}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'good-academic-score-9-year-old': (
+    <>
+      <Callout>
+        A 9-year-old typically spans Grades 3–4. The national average MAP Math RIT for Grade 3 (fall) is 188; for Grade 4 it is 197. A score of 208+ in Grade 3 or 217+ in Grade 4 places a child at the 90th national percentile — the threshold for gifted referral in most US districts. For Reading: Grade 3 average is 177 (gifted range: 202+); Grade 4 average is 185 (gifted range: 210+). On a standardised reasoning assessment (mean 100, SD 15), a score of 119+ at age 9 corresponds to the 90th percentile.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Academic Performance Looks Like at Age 9</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Age 9 straddles Grades 3 and 4 — children who turn 9 by the cutoff date may be in either grade depending on when their birthday falls. This means &ldquo;a good score for a 9-year-old&rdquo; depends on which grade your child is currently in, not just their age.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Grade 3 is a pivotal academic year. It is the transition from &ldquo;learning to read&rdquo; to &ldquo;reading to learn&rdquo; — children who are not fluent decoders by the end of Grade 3 face compounding disadvantages in every subject. In Mathematics, Grade 3 introduces multiplication and division, fractions, and area — a significant step up in abstract thinking from Grades 1–2.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Grade 4 builds further: multi-digit multiplication, fraction operations, and an introduction to algebraic thinking. In Reading, Grade 4 students are expected to read and analyse complex informational texts independently. At both grades, most districts administer NWEA MAP Growth 2–3 times per year to track progress.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Score Benchmarks for a 9-Year-Old (Grades 3–4)</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Fall RIT score benchmarks from the NWEA 2020 national norming study — the current benchmark for 2025–26.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Subject</th>
+                <th className="text-center p-3 font-semibold text-gray-500">Grade 3 avg</th>
+                <th className="text-center p-3 font-semibold text-gray-500">Grade 4 avg</th>
+                <th className="text-center p-3 font-semibold text-indigo-700">Strong (75th %ile)</th>
+                <th className="text-center p-3 font-semibold text-purple-700">Gifted range (90th %ile)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Math', '188', '197', 'Gr3: 199 / Gr4: 208', 'Gr3: 208 / Gr4: 217'],
+                ['Reading', '177', '185', 'Gr3: 191 / Gr4: 199', 'Gr3: 202 / Gr4: 210'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-gray-700 font-medium">{row[1]}</td>
+                  <td className="p-3 text-center text-gray-700 font-medium">{row[2]}</td>
+                  <td className="p-3 text-center text-indigo-600 font-medium">{row[3]}</td>
+                  <td className="p-3 text-center text-purple-600 font-medium">{row[4]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 mb-2">Source: NWEA 2020 MAP Growth Norms (fall administration).</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Reading Level at Age 9: Lexile Benchmarks</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          A 9-year-old on grade level in Reading should independently read chapter books at approximately Lexile 500–900L. MAP Reading scores link directly to Lexile ranges:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">MAP Reading RIT (Grade 3)</th>
+                <th className="text-center p-3 font-semibold text-gray-700">Approximate Lexile</th>
+                <th className="text-left p-3 font-semibold text-gray-700">Equivalent to</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Below 167 (< 25th %ile)', '< 500L', 'Below grade level — targeted reading support recommended'],
+                ['167–191 (25th–75th %ile)', '500–900L', 'On grade level — age-appropriate chapter books'],
+                ['191–202 (75th–90th %ile)', '900–1100L', 'Above grade level — upper elementary / middle school texts'],
+                ['202+ (90th+ %ile)', '1100L+', 'Significantly advanced — high-school level texts accessible'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 text-gray-700 text-xs">{row[0]}</td>
+                  <td className="p-3 text-center text-indigo-600 font-mono font-medium">{row[1]}</td>
+                  <td className="p-3 text-gray-600 text-sm">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Reasoning Ability Benchmarks at Age 9</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          On a standardised reasoning assessment (mean 100, SD 15), scores are always age-normalised — the percentile interpretation is the same at every age:
+        </p>
+        <div className="space-y-3 mb-4">
+          {[
+            { score: '85–115', label: 'Average range', desc: 'Cognitive efficiency typical of age peers. Performs well in structured instruction.' },
+            { score: '115–125', label: 'Above average', desc: 'Approximately the 84th–95th percentile. Strong in structured academic environments; may need enrichment to stay engaged.' },
+            { score: '125–135', label: 'Gifted range', desc: 'Approximately the 95th–99th percentile. Qualifies for gifted programme referral in most US districts.' },
+            { score: '135+', label: 'Highly gifted', desc: 'Above the 99th percentile. Very rare. These children often need significantly modified academic programmes.' },
+          ].map(({ score, label, desc }) => (
+            <div key={score} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <div className="text-right flex-shrink-0 w-16">
+                <span className="text-sm font-mono font-bold text-indigo-600">{score}</span>
+              </div>
+              <div>
+                <p className="font-semibold text-gray-900 mb-1">{label}</p>
+                <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Know exactly where your 9-year-old stands — nationally and internationally</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">Eduentry&apos;s free adaptive assessment gives you standardised scores across Math, English, Verbal and Non-Verbal Reasoning — with an international percentile. 25–35 minutes. No registration required. Ages 6–20.</p>
+        </div>
+        <CtaLink href="/academic-assessment" label="age_9_post_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Start free assessment →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">When to Consider Additional Testing</h2>
+        <div className="space-y-3">
+          {[
+            { trigger: 'MAP score at or above the 90th percentile', action: 'Request a gifted referral from the school. Most districts require a formal teacher nomination or parent request to initiate the gifted identification process.' },
+            { trigger: 'MAP score below the 25th percentile', action: 'Request a learning support evaluation. Reading difficulties in particular benefit enormously from early identification — structured literacy intervention at Grade 3–4 is significantly more effective than the same intervention at Grade 6+.' },
+            { trigger: 'Significant discrepancy between Math and Reading scores', action: 'A 20+ RIT point gap between subjects can indicate a domain-specific learning difficulty (e.g., dyscalculia, dyslexia) or a domain-specific gift. Worth discussing with the teacher and potentially pursuing a psycho-educational evaluation.' },
+            { trigger: 'High achievement but low engagement', action: "If a 9-year-old consistently finishes work early, appears bored, or causes disruption from lack of challenge, a cognitive ability test can determine whether the issue is genuine advanced ability rather than a behavioural concern. Under-challenged gifted children are frequently misread in classroom settings.",
+            },
+          ].map(({ trigger, action }) => (
+            <div key={trigger} className="border border-gray-100 rounded-xl p-5">
+              <p className="font-semibold text-gray-900 mb-2">{trigger}</p>
+              <p className="text-sm text-gray-600 leading-relaxed">{action}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: 'What MAP score is good for a 9-year-old?',
+              a: "It depends on the grade. For Grade 3: Math RIT 188 is average; 199 is strong (75th percentile); 208+ is gifted-range (90th percentile). For Grade 4: Math RIT 197 is average; 208 is strong; 217+ is gifted-range. For Reading: Grade 3 average is 177 (strong ≈ 191, gifted ≈ 202+); Grade 4 average is 185 (strong ≈ 199, gifted ≈ 210+).",
+            },
+            {
+              q: 'How do I know if my 9-year-old is gifted?',
+              a: "Formal gifted identification requires school or privately administered tests. Indicators that warrant pursuing testing include MAP scores consistently at the 90th percentile or above, teacher comments about work being too easy, early reading (before age 5), advanced mathematical reasoning, and intense curiosity and depth of interest in specific subjects. No single indicator is definitive — gifted identification uses a portfolio approach including multiple test scores, teacher observation, and parent input.",
+            },
+            {
+              q: 'What reading level should a 9-year-old be at?',
+              a: "A 9-year-old on grade level in Reading should read chapter books at approximately Lexile 500–900L (Grade 3–4 level). A Grade 3 student at the 50th national percentile (MAP Reading RIT ≈ 177) corresponds to roughly Lexile 650–800L. At the 90th percentile (RIT ≈ 202), a Grade 3 student reads at approximately Lexile 1100L+ — equivalent to upper middle school or high school reading level.",
+            },
+          ].map(({ q, a }) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <div className="font-semibold text-gray-900 mb-2">{q}</div>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
 }

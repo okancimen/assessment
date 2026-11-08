@@ -761,7 +761,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       heading: 'MAP shows US norms. This shows the world.',
       body: 'Eduentry benchmarks the same skills MAP measures — verbal, quantitative, and reasoning — against an international peer group. Free, under an hour. See exactly where your child stands beyond the US national average.',
       label: 'Get the international benchmark',
-      href: '/your-childs-potential',
+      href: '/academic-assessment',
     },
   },
   {
@@ -1126,6 +1126,213 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     cta: {
       heading: 'See how your child compares internationally',
       body: 'Free adaptive assessment covering verbal, mathematical, and abstract reasoning — standardised score and percentile ranking against an international peer group.',
+      label: 'Start free assessment',
+      href: '/academic-assessment',
+    },
+  },
+  // Academic assessment funnel posts
+  {
+    slug: 'is-my-child-on-grade-level',
+    title: 'Is My Child on Grade Level? How to Actually Know (2026 Guide)',
+    shortTitle: 'Is My Child on Grade Level? How to Actually Know',
+    description:
+      'What does "on grade level" mean? MAP Math averages: Grade 3 = 188, Grade 4 = 197, Grade 5 = 205. Grade-by-grade benchmarks for Math and Reading, signs your child is ahead or behind, and what to do about it.',
+    tldr: '"Grade level" is not a fixed point — it is a range. A child is "on grade level" if they score between the 25th and 75th national percentile on a standardised test. The national average MAP Math RIT score is approximately 188 in Grade 3, 197 in Grade 4, and 205 in Grade 5. School grades are a poor proxy — a child can receive As while performing below the 50th national percentile. The most direct way to check is a standardised adaptive assessment.',
+    date: '2026-11-09',
+    readTime: '8 min read',
+    tags: ['Grade Level', 'NWEA MAP', 'US Education', 'Academic Assessment', 'Child Development'],
+    faqs: [
+      {
+        q: 'How do I find out if my child is on grade level?',
+        a: 'The most direct method is a standardised adaptive assessment. If your child\'s school uses NWEA MAP Growth, request the most recent Family Report — it shows the RIT score, national percentile, and grade-level comparison. If you want an independent check, Eduentry offers a free 25–35 minute adaptive assessment covering Math, English, Verbal Reasoning, and Non-Verbal Reasoning with an immediate standardised score. School grades alone are not reliable — a child can receive A grades while scoring below the 50th national percentile.',
+      },
+      {
+        q: 'What MAP RIT score is considered on grade level?',
+        a: 'On grade level = scoring between the 25th and 75th national percentile on MAP. For Math (fall administration): Grade 1 on-level range is approximately RIT 155–173; Grade 3 is 180–199; Grade 5 is 197–216; Grade 7 is 207–226. For Reading: Grade 3 on-level range is approximately 167–191; Grade 5 is 181–206; Grade 7 is 190–217. A score below the 25th percentile typically triggers intervention support in most districts.',
+      },
+      {
+        q: 'Can a child be on grade level in one subject but not another?',
+        a: 'Yes — and this is very common. A child can be at the 80th national percentile in Math while simultaneously being at the 30th percentile in Reading. These are independent skill domains with different developmental trajectories. Subject-specific performance differences are more useful than a single overall measure, because they point directly to where support or enrichment is most needed.',
+      },
+      {
+        q: 'My child gets good grades but I\'m worried they\'re not really on grade level. What should I do?',
+        a: 'Your concern is well-founded. School grades reflect performance against that school\'s or teacher\'s standards, which may not be normed against national benchmarks. A child can receive A grades at a school with below-average academic standards while performing below the 50th national percentile. And the reverse is true: a child at the 90th national percentile may receive B grades at a highly demanding school. Request your child\'s standardised test results (MAP, state test) from the school, or take a free online assessment that reports a national or international percentile.',
+      },
+    ],
+    cta: {
+      heading: 'Know exactly where your child stands — nationally and globally',
+      body: 'Eduentry\'s free adaptive assessment benchmarks your child across Math, English, Verbal and Non-Verbal Reasoning against an international peer group. 25–35 minutes. Instant standardised score and percentile. No registration required.',
+      label: 'Start free assessment',
+      href: '/academic-assessment',
+    },
+  },
+  {
+    slug: 'map-score-global-benchmark',
+    title: 'What Does Your Child\'s MAP Score Mean Globally? US vs. International Benchmarks',
+    shortTitle: 'MAP Score Global Context: US vs. International Benchmarks',
+    description:
+      'MAP scores are US-normed only. PISA 2022: the US scores 7 points below the OECD math average. A US student at the 90th national percentile (MAP RIT ≈ 225) is roughly the 75th international percentile. See where your child stands globally.',
+    tldr: 'MAP Growth benchmarks your child against US students only — not global peers. PISA 2022 data shows the US ranks 26th in Mathematics among OECD countries, scoring 7 points below the OECD average. A US student at the 90th national percentile (Grade 5 Math RIT ≈ 225) would rank around the 75th international percentile. If your child is competing for university places internationally or aims for a global career, US-only norms tell only part of the story.',
+    date: '2026-11-09',
+    readTime: '8 min read',
+    tags: ['NWEA MAP', 'PISA', 'International Education', 'Academic Assessment', 'US Education'],
+    faqs: [
+      {
+        q: 'Is MAP Growth used outside the United States?',
+        a: 'MAP Growth is used in some international schools and a small number of non-US districts, but its national norms are based exclusively on US students. NWEA does not publish international norming studies equivalent to their US norming study. If your child attends an international school that uses MAP, their percentile rank is still relative to US national peers, not global peers.',
+      },
+      {
+        q: 'How does the US compare internationally in academic performance?',
+        a: 'PISA 2022, the most recent international benchmark, shows the US scoring 465 in Mathematics — 7 points below the OECD average of 472. Singapore leads at 575. Canada scores 497, the UK 489, and Australia 487 — all above the US. The US performance gap is roughly equivalent to 3–4 months of learning behind the OECD average student, and approximately 2.5 years behind Singapore.',
+      },
+      {
+        q: 'What MAP RIT score is internationally competitive?',
+        a: 'There is no perfect MAP-to-PISA conversion, but as a rough guide for Grade 5 Math: a US 50th-percentile student (RIT ≈ 205) performs at approximately the 43rd international percentile. A 90th-percentile student (RIT ≈ 225) performs at approximately the 75th international percentile. Students above the 95th US percentile (RIT ≈ 230+) are genuinely competitive internationally. These are approximations based on PISA–NAEP linking studies, not official NWEA figures.',
+      },
+    ],
+    cta: {
+      heading: 'See where your child stands globally — not just in the US',
+      body: 'Eduentry\'s free adaptive assessment benchmarks your child against an international peer group — calibrated against PISA, UK National Curriculum, and IB standards. 25–35 minutes. No registration.',
+      label: 'Get the global benchmark',
+      href: '/academic-assessment',
+    },
+  },
+  {
+    slug: 'free-online-academic-assessment-children',
+    title: 'Free Online Academic Assessment for Children: What to Look For (2026)',
+    shortTitle: 'Free Online Academic Assessment for Children: What to Look For',
+    description:
+      'Most free online assessments test only maths and reading — missing verbal and non-verbal reasoning. What a genuine academic assessment covers, red flags to avoid, and how IRT adaptive testing works.',
+    tldr: 'Most "free" online academic assessments fail on at least one of three criteria: they test only maths and reading (missing reasoning), they report a percentile against their own users rather than a normed reference population, or they use fixed rather than adaptive testing. A meaningful free assessment uses IRT adaptive technology, covers verbal and non-verbal reasoning alongside curriculum subjects, and reports against a national or international norm group.',
+    date: '2026-11-09',
+    readTime: '7 min read',
+    tags: ['Academic Assessment', 'Online Testing', 'Child Assessment', 'Adaptive Testing', 'IRT'],
+    faqs: [
+      {
+        q: 'What is the best free online academic assessment for children?',
+        a: 'A strong free assessment covers at least four domains (Math, English, Verbal Reasoning, Non-Verbal Reasoning), uses IRT adaptive testing, and reports a standardised score against a nationally or internationally normed reference group. Eduentry offers a free adaptive assessment across all four domains for ages 6–20, with an international percentile, taking 25–35 minutes, with no account required.',
+      },
+      {
+        q: 'Can a free online assessment replace a formal evaluation?',
+        a: 'No. Free online assessments are screening tools — they give a useful indication of where a child is performing relative to peers, but they cannot replace a formal psycho-educational evaluation for diagnosing learning difficulties or a clinically administered cognitive assessment (like WISC-V) for formal gifted identification. Use online assessments as a first-pass tool to decide whether a more formal evaluation is warranted.',
+      },
+      {
+        q: 'How long should a good free academic assessment take?',
+        a: 'A meaningful adaptive assessment across four domains should take 25–45 minutes for most children. Shorter (5–15 minute) assessments sacrifice measurement precision. Longer (60+ minute) assessments cause fatigue, particularly for younger children, and affect score validity. The 25–35 minute range is optimal for children aged 6–14.',
+      },
+      {
+        q: 'What is the difference between an academic assessment and an IQ test?',
+        a: 'Academic assessments measure learned knowledge and subject-specific skills (reading, mathematics, reasoning). IQ tests measure cognitive ability — the speed and efficiency of information processing. IQ is a narrower, clinically defined construct assessed through individual administration with trained examiners. Online tools that claim to give an IQ score are invariably measuring something different and should not be used to draw conclusions about a child\'s intelligence.',
+      },
+    ],
+    cta: {
+      heading: 'Free adaptive academic assessment — four subjects, 25 minutes, instant results',
+      body: 'Eduentry uses IRT adaptive testing across English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning. Ages 6–20. Standardised score (mean 100, SD 15) and international percentile. No account, no purchase, no signup.',
+      label: 'Start free assessment',
+      href: '/academic-assessment',
+    },
+  },
+  {
+    slug: 'verbal-nonverbal-reasoning-test-children',
+    title: 'Verbal and Non-Verbal Reasoning Tests for Children: Free Online Options',
+    shortTitle: 'Verbal & Non-Verbal Reasoning Tests for Children: Free Options',
+    description:
+      'Verbal reasoning tests language-based thinking; non-verbal reasoning tests abstract pattern recognition without reading. How they\'re used in CogAT and UK 11+, what scores mean by age, and free online options.',
+    tldr: 'Verbal reasoning tests language-based logical thinking (analogies, word relationships, sequences). Non-verbal reasoning tests abstract pattern recognition using shapes only — no reading required, making it the most culture-fair domain. Both are tested in CogAT, UK 11+, and ISEE. A child\'s verbal reasoning reflects language exposure and logical thinking; non-verbal reasoning reflects abstract thinking and spatial capacity. The gap between the two is often as informative as either score alone.',
+    date: '2026-11-09',
+    readTime: '8 min read',
+    tags: ['Verbal Reasoning', 'Non-Verbal Reasoning', 'CogAT', 'Gifted Testing', 'Child Assessment'],
+    faqs: [
+      {
+        q: 'What is the difference between verbal and non-verbal reasoning?',
+        a: 'Verbal reasoning tests language-based logical thinking: verbal analogies ("dog is to kennel as bird is to ___"), word classification, and sentence completion. It measures how well a child reasons using language. Non-verbal reasoning tests abstract thinking using shapes and diagrams only — no reading required. It measures spatial pattern recognition and abstract logic, independent of language ability. Both are components of the CogAT, UK 11+, and ISEE.',
+      },
+      {
+        q: 'Can verbal and non-verbal reasoning be improved with practice?',
+        a: 'Yes, both are preparation-responsive, though to different degrees. Verbal reasoning responds to vocabulary study and wide reading. Non-verbal reasoning responds to spatial practice (puzzles, tangrams, matrix reasoning workbooks). Research suggests consistent engagement with reasoning questions over 6–12 months produces meaningful score gains, but quick cramming has limited effect compared to curriculum knowledge tests.',
+      },
+      {
+        q: 'At what age do schools test verbal and non-verbal reasoning?',
+        a: 'In the US, the CogAT is typically administered in Grade 1–2 for initial gifted screening and Grade 3–5 for formal gifted programme entry. In the UK, 11+ selective school tests (which heavily weight verbal and non-verbal reasoning) are taken at age 10–11. Some districts conduct universal reasoning screening; others only test children nominated by teachers or parents.',
+      },
+      {
+        q: 'Is there a free online verbal and non-verbal reasoning test for children?',
+        a: 'Eduentry offers a free adaptive assessment that includes both Verbal Reasoning and Non-Verbal Reasoning alongside Math and English. It covers ages 6–20, takes 25–35 minutes, produces standardised scores (mean 100, SD 15) with international percentiles, and requires no registration. The verbal and non-verbal components are scored separately so you can see your child\'s profile across both domains.',
+      },
+    ],
+    cta: {
+      heading: 'Test verbal and non-verbal reasoning free — 25 minutes, international percentile',
+      body: 'Eduentry\'s adaptive assessment covers all four domains: English, Mathematics, Verbal Reasoning, and Non-Verbal Reasoning. Ages 6–20. Standardised score and international percentile. No account required.',
+      label: 'Start free assessment',
+      href: '/academic-assessment',
+    },
+  },
+  {
+    slug: 'cogat-vs-achievement-test',
+    title: 'CogAT vs. Academic Achievement Test: What\'s the Difference and Which Does Your Child Need?',
+    shortTitle: 'CogAT vs. Achievement Test: Key Differences Explained',
+    description:
+      'CogAT measures reasoning ability (mean 100, SD 16); MAP measures curriculum mastery (RIT scale). How they\'re used together in gifted identification, what to do when scores diverge, and when to use each one.',
+    tldr: 'The CogAT measures how your child reasons — the efficiency of their cognitive processing. MAP Growth and state achievement tests measure what your child has learned — curriculum mastery. Both matter for gifted identification, but they catch different things: a child with a high CogAT and modest MAP scores may be an underachiever with strong potential; a child with high MAP and modest CogAT may be a diligent learner who has maximised their curriculum exposure. Most gifted programmes require strong scores on both.',
+    date: '2026-11-09',
+    readTime: '8 min read',
+    tags: ['CogAT', 'NWEA MAP', 'Achievement Testing', 'Gifted Programs', 'US Education'],
+    faqs: [
+      {
+        q: 'What is the main difference between the CogAT and an achievement test?',
+        a: 'Cognitive ability tests like the CogAT measure how efficiently your child processes information — their reasoning speed and capacity. Achievement tests like MAP Growth or state tests measure what your child has learned — the curriculum content they have mastered. Both are useful but capture different things. A diligent student with average reasoning can outscore a quick thinker who hasn\'t been well-taught on achievement tests. Gifted programs use both to avoid selecting purely for opportunity rather than potential.',
+      },
+      {
+        q: 'Which test is a better predictor of academic success — CogAT or MAP?',
+        a: 'Both are strong predictors, with different strengths. MAP RIT scores in Grades 3–5 are strong predictors of high school readiness and ACT/SAT performance. CogAT scores are better predictors of performance in novel, unstructured academic tasks. For standard academic outcomes, MAP is the stronger predictor; for predicting ceiling in highly challenging academic environments, cognitive ability tests add significant information.',
+      },
+      {
+        q: 'Can you prepare for the CogAT the same way you prepare for MAP?',
+        a: 'No — the preparation approaches are different. MAP measures curriculum content, so content-focused study directly improves MAP scores. The CogAT measures reasoning efficiency, so targeted reasoning practice (verbal analogy, matrix reasoning questions) is more relevant. Broad content study helps very little on the CogAT. That said, the CogAT is not entirely unprepable — 6–12 weeks of focused reasoning practice produces measurable gains for most children.',
+      },
+      {
+        q: 'My child\'s school only gives MAP — how do I find out about their reasoning ability?',
+        a: 'You can request a gifted evaluation referral from your child\'s school, which may include the CogAT. Alternatively, an educational psychologist can administer the WISC-V individually. For a first-pass screen at home, Eduentry\'s free academic assessment includes Verbal and Non-Verbal Reasoning alongside Math and English — it won\'t substitute for a formal CogAT result, but it gives useful context before deciding whether to pursue formal evaluation.',
+      },
+    ],
+    cta: {
+      heading: 'Academic achievement + reasoning — both, in one free assessment',
+      body: 'Eduentry\'s adaptive assessment covers Math and English (achievement) alongside Verbal and Non-Verbal Reasoning — giving you a complete picture of your child\'s academic profile. Free, 25–35 minutes, ages 6–20. No registration required.',
+      label: 'Start free assessment',
+      href: '/academic-assessment',
+    },
+  },
+  {
+    slug: 'good-academic-score-9-year-old',
+    title: 'What Is a Good Academic Score for a 9-Year-Old? Benchmarks for Math, Reading and Reasoning',
+    shortTitle: 'Good Academic Score for a 9-Year-Old: Grade 3–4 Benchmarks',
+    description:
+      'A 9-year-old typically spans Grades 3–4. MAP Math averages: Grade 3 = 188, Grade 4 = 197. Gifted range (90th %ile): Grade 3 = 208, Grade 4 = 217. Reading and reasoning benchmarks, plus when to consider additional testing.',
+    tldr: 'A 9-year-old typically spans Grades 3–4. The national average MAP Math RIT for Grade 3 (fall) is 188; for Grade 4 it is 197. A score of 208+ in Grade 3 or 217+ in Grade 4 places a child at the 90th national percentile — the threshold for gifted referral in most US districts. For Reading: Grade 3 average is 177 (gifted range: 202+); Grade 4 average is 185 (gifted range: 210+). On a standardised reasoning assessment (mean 100, SD 15), a score of 119+ at age 9 is at the 90th percentile.',
+    date: '2026-11-09',
+    readTime: '8 min read',
+    tags: ['Grade Level', 'NWEA MAP', 'Age 9', 'Gifted Programs', 'Academic Assessment'],
+    faqs: [
+      {
+        q: 'What MAP score is good for a 9-year-old?',
+        a: 'It depends on the grade. For Grade 3 (most 8–9 year olds): Math RIT 188 is average; 199 is strong (75th percentile); 208+ is gifted-range (90th percentile). For Grade 4: Math RIT 197 is average; 208 is strong; 217+ is gifted-range. For Reading: Grade 3 average is 177 (strong ≈ 191, gifted ≈ 202+); Grade 4 average is 185 (strong ≈ 199, gifted ≈ 210+).',
+      },
+      {
+        q: 'At age 9, is MAP or the CogAT a better measure of my child\'s ability?',
+        a: 'MAP measures what your child has learned (academic achievement). The CogAT measures how your child reasons (cognitive ability). Both are useful but measure different things. For understanding current academic performance relative to grade peers, MAP is more directly useful. For understanding cognitive potential and gifted programme eligibility, the CogAT provides different and complementary information.',
+      },
+      {
+        q: 'How do I know if my 9-year-old is gifted?',
+        a: 'Formal gifted identification requires school or privately administered tests. Indicators that warrant pursuing testing include MAP scores consistently at the 90th percentile or above, teacher comments about work being too easy, early reading (before age 5), advanced mathematical reasoning, and intense curiosity and depth of interest in specific subjects. No single indicator is definitive — gifted identification uses a portfolio approach including multiple test scores, teacher observation, and parent input.',
+      },
+      {
+        q: 'What reading level should a 9-year-old be at?',
+        a: 'A 9-year-old on grade level in Reading should read chapter books at approximately Lexile 500–900L (Grade 3–4 level). A Grade 3 student at the 50th national percentile (MAP Reading RIT ≈ 177) corresponds to roughly Lexile 650–800L. At the 90th percentile (RIT ≈ 202), a Grade 3 student reads at approximately Lexile 1100L+ — equivalent to upper middle school or high school reading level.',
+      },
+    ],
+    cta: {
+      heading: 'Know exactly where your 9-year-old stands — nationally and internationally',
+      body: 'Eduentry\'s free adaptive assessment gives you standardised scores across Math, English, Verbal and Non-Verbal Reasoning — with an international percentile. 25–35 minutes. No registration required. Ages 6–20.',
       label: 'Start free assessment',
       href: '/academic-assessment',
     },
