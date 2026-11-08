@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Lise öğrencileri için staj hazırlığına ve üniversite burs adayları için kanıta dayalı araştırma ve pratik rehberler.',
   alternates: { canonical: PAGE_URL },
-  robots: { index: true, follow: true },
+  robots: { index: false, follow: true },
   openGraph: {
     type: 'website',
     title: 'İçgörüler — Staj & Burs Araştırması | Eduentry.ai',
