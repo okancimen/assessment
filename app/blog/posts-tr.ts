@@ -2399,6 +2399,212 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr/cocugunuzun-potansiyeli',
     },
   },
+  {
+    slug: 'cocugum-sinif-duzeyinde-mi',
+    contentSlug: 'is-my-child-on-grade-level',
+    title: 'Çocuğum Sınıf Düzeyinde mi? Bunu Gerçekten Nasıl Öğrenirsiniz',
+    shortTitle: 'Çocuğum Sınıf Düzeyinde mi? Gerçekten Nasıl Anlarız',
+    description: '"Sınıf düzeyi" sabit bir nokta değil, bir aralıktır. MAP Matematik ortalamaları: 3. sınıf = RIT 188, 4. sınıf = 197, 5. sınıf = 205. Sınıf sınıf kıyaslamalar, ileri/geride olma işaretleri ve ne yapmanız gerektiği.',
+    tldr: '"Sınıf düzeyi" sabit bir nokta değil, bir aralıktır. Çocuğunuz standart bir testte ulusal 25.–75. yüzdelik dilim arasında puan alıyorsa "sınıf düzeyindedir". MAP Matematik ulusal ortalaması 3. sınıfta yaklaşık RIT 188, 4. sınıfta 197, 5. sınıfta 205\'tir. Okul notları zayıf bir göstergedir — bir çocuk A alırken ulusal 50. yüzdelik dilimin altında olabilir. En doğrudan yöntem standartlaştırılmış uyarlanabilir bir değerlendirmedir.',
+    date: '2026-11-09',
+    readTime: '8 dk okuma',
+    tags: ['Sınıf Düzeyi', 'NWEA MAP', 'ABD Eğitimi', 'Akademik Değerlendirme', 'Çocuk Gelişimi'],
+    faqs: [
+      {
+        q: 'Çocuğumun sınıf düzeyinde olup olmadığını nasıl öğrenirim?',
+        a: 'En doğrudan yöntem standartlaştırılmış uyarlanabilir bir değerlendirmedir. Okulunuz NWEA MAP Growth kullanıyorsa en son Aile Raporu\'nu isteyin — RIT puanı, ulusal yüzdelik dilim ve sınıf düzeyi karşılaştırmasını gösterir. Bağımsız bir kontrol istiyorsanız Eduentry, Matematik, İngilizce, Sözel Muhakeme ve Sözel Olmayan Muhakeme\'de anlık standartlaştırılmış puan veren ücretsiz 25–35 dakikalık uyarlanabilir bir değerlendirme sunar. Okul notları tek başına güvenilir değildir — bir çocuk A alırken ulusal 50. yüzdelik dilimin altında olabilir.',
+      },
+      {
+        q: 'Sınıf düzeyi için hangi MAP RIT puanı gerekir?',
+        a: 'Sınıf düzeyi = MAP\'ta ulusal 25.–75. yüzdelik dilim arasında puan almak. Matematik için (güz dönemi): 1. sınıf yaklaşık RIT 155–173; 3. sınıf 180–199; 5. sınıf 197–216; 7. sınıf 207–226. Okuma için: 3. sınıf yaklaşık 167–191; 5. sınıf 181–206; 7. sınıf 190–217. 25. yüzdelik dilimin altındaki bir puan çoğu okulda müdahale desteğini tetikler.',
+      },
+      {
+        q: 'Bir çocuk bir derste sınıf düzeyinde olup diğerinde olmayabilir mi?',
+        a: 'Evet — ve bu çok yaygın bir durumdur. Bir çocuk Matematik\'te ulusal 80. yüzdelik dilimde olurken Okuma\'da 30. yüzdelik dilimde olabilir. Bunlar bağımsız beceri alanlarıdır. Konuya özgü performans farkları, tek bir genel ölçümden çok daha kullanışlıdır çünkü doğrudan nerede desteğe ya da zenginleştirmeye ihtiyaç duyulduğunu gösterir.',
+      },
+      {
+        q: 'Çocuğum iyi notlar alıyor ama gerçekten sınıf düzeyinde mi diye merak ediyorum. Ne yapmalıyım?',
+        a: 'Endişeniz yerindedir. Okul notları, ulusal ölçütlere göre ayarlanmamış olabilecek o okulun ya da öğretmenin standartlarına göre performansı yansıtır. Bir çocuk, ortalamanın altındaki bir okulda A alırken ulusal 50. yüzdelik dilimin altında olabilir. Okuldan standartlaştırılmış test sonuçlarını (MAP, eyalet testi) isteyin ya da ulusal veya uluslararası bir yüzdelik dilim bildiren ücretsiz bir çevrimiçi değerlendirme yapın.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun tam olarak nerede durduğunu öğrenin — ulusal ve küresel düzeyde',
+      body: 'Eduentry\'nin ücretsiz uyarlanabilir değerlendirmesi çocuğunuzu Matematik, İngilizce, Sözel ve Sözel Olmayan Muhakeme\'de uluslararası bir akran grubuyla karşılaştırır. 25–35 dakika. Anında standartlaştırılmış puan ve yüzdelik dilim. Hesap gerekmez.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/akademik-degerlendirme',
+    },
+  },
+  {
+    slug: 'map-puani-global-karsilastirma',
+    contentSlug: 'map-score-global-benchmark',
+    title: 'Çocuğunuzun MAP Puanı Küresel Olarak Ne Anlama Gelir? ABD ve Uluslararası Karşılaştırma',
+    shortTitle: 'MAP Puanı Küresel Bağlam: ABD ve Uluslararası Kıyaslama',
+    description: 'MAP puanları yalnızca ABD\'ye göre normlara dayanır. PISA 2022: ABD, OECD matematik ortalamasının 7 puan altında. Türkiye: Matematik 453, Okuma 479. ABD\'de 90. yüzdelik dilim (MAP RIT ≈ 225) küresel 75. yüzdelik dilime karşılık gelir.',
+    tldr: 'MAP Growth çocuğunuzu yalnızca ABD öğrencileriyle karşılaştırır — küresel akranlarıyla değil. PISA 2022 verileri ABD\'nin OECD ülkeleri arasında Matematik\'te 26. sırada yer aldığını ve OECD ortalamasının 7 puan altında kaldığını gösteriyor. ABD\'de 90. yüzdelik dilimde olan bir öğrenci (5. sınıf Matematik RIT ≈ 225) küresel ölçekte yaklaşık 75. yüzdelik dilime denk gelir. Türkiye\'nin PISA 2022 Matematik puanı 453\'tür — OECD ortalamasının altında. Çocuğunuz uluslararası üniversiteye veya küresel kariyere hedef koyuyorsa yalnızca ABD normları hikâyenin tamamını anlatmaz.',
+    date: '2026-11-09',
+    readTime: '8 dk okuma',
+    tags: ['NWEA MAP', 'PISA', 'Uluslararası Eğitim', 'Akademik Değerlendirme', 'ABD Eğitimi'],
+    faqs: [
+      {
+        q: 'MAP Growth ABD dışında kullanılıyor mu?',
+        a: 'MAP Growth bazı uluslararası okullarda ve sınırlı sayıda ABD dışı bölgede kullanılıyor; ancak ulusal normları yalnızca ABD öğrencilerine dayanmaktadır. NWEA, ABD normlama çalışmasına eşdeğer uluslararası bir normlama çalışması yayımlamamıştır. Çocuğunuz MAP kullanan bir uluslararası okulda okuyorsa yüzdelik dilim sıralaması yine ABD ulusal akranlarına göredir.',
+      },
+      {
+        q: 'ABD akademik performans açısından dünyada nerede duruyor?',
+        a: 'En güncel uluslararası kıyaslama olan PISA 2022, ABD\'nin Matematik\'te 465 puan aldığını ve OECD ortalaması 472\'nin 7 puan altında kaldığını gösteriyor. Singapur 575 ile lider. Kanada 497, İngiltere 489, Avustralya 487 — hepsi ABD\'nin üzerinde. Türkiye ise 453 ile OECD ortalamasının altında. ABD-Singapur arasındaki fark yaklaşık 2,5 yıllık öğrenime karşılık geliyor.',
+      },
+      {
+        q: 'Hangi MAP RIT puanı uluslararası düzeyde rekabetçidir?',
+        a: 'Resmi bir MAP–PISA dönüşümü yoktur; ancak kabaca bir kılavuz olarak 5. sınıf Matematik için: ABD 50. yüzdelik dilim (RIT ≈ 205) uluslararası yaklaşık 43. yüzdelik dilime karşılık gelir. 90. yüzdelik dilim (RIT ≈ 225) ise uluslararası yaklaşık 75. yüzdelik dilime denk gelir. ABD 95. yüzdelik dilimin üzerindeki (RIT ≈ 230+) öğrenciler küresel ölçekte gerçekten rekabetçidir.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun küresel sıralamadaki yerini öğrenin — sadece ABD\'de değil',
+      body: 'Eduentry\'nin ücretsiz uyarlanabilir değerlendirmesi çocuğunuzu uluslararası bir akran grubuyla karşılaştırır — PISA, İngiltere Ulusal Müfredatı ve IB standartlarına göre kalibre edilmiştir. 25–35 dakika. Hesap gerekmez.',
+      label: 'Küresel kıyaslamayı başlat',
+      href: '/tr/akademik-degerlendirme',
+    },
+  },
+  {
+    slug: 'cocuklar-icin-ucretsiz-cevrimici-akademik-degerlendirme',
+    contentSlug: 'free-online-academic-assessment-children',
+    title: 'Çocuklar İçin Ücretsiz Çevrimiçi Akademik Değerlendirme: Nelere Dikkat Edilmeli',
+    shortTitle: 'Ücretsiz Çevrimiçi Akademik Değerlendirme: Nelere Dikkat Edilmeli',
+    description: 'Çoğu ücretsiz çevrimiçi değerlendirme yalnızca matematik ve okumayı test eder — muhakemeyi atlayarak. Gerçek bir akademik değerlendirmenin neleri kapsadığı, kaçınılacak kırmızı bayraklar ve IRT uyarlanabilir testin nasıl işlediği.',
+    tldr: '"Ücretsiz" çevrimiçi akademik değerlendirmelerin çoğu üç kriterden en az birinde başarısız olur: yalnızca matematik ve okumayı test ederler (muhakemeyi atlayarak), kendi kullanıcılarına kıyasla bir yüzdelik dilim bildirirler (normlara dayalı değil) ya da sabit yerine uyarlanabilir test kullanırlar. Anlamlı bir ücretsiz değerlendirme IRT uyarlanabilir teknoloji kullanır, müfredat derslerinin yanı sıra sözel ve sözel olmayan muhakemeyi de kapsar ve ulusal veya uluslararası norm grubuna göre sonuç bildirir.',
+    date: '2026-11-09',
+    readTime: '8 dk okuma',
+    tags: ['Akademik Değerlendirme', 'Çevrimiçi Test', 'Çocuk Değerlendirme', 'Uyarlanabilir Test', 'IRT'],
+    faqs: [
+      {
+        q: 'Çocuklar için en iyi ücretsiz çevrimiçi akademik değerlendirme hangisidir?',
+        a: 'Güçlü bir ücretsiz değerlendirme en az dört alanı (Matematik, İngilizce, Sözel Muhakeme, Sözel Olmayan Muhakeme) kapsar, IRT uyarlanabilir test kullanır ve ulusal ya da uluslararası normlara dayalı bir referans grubuna göre standartlaştırılmış puan bildirir. Eduentry, 6–20 yaş için tüm dört alanda ücretsiz uyarlanabilir değerlendirme sunar; uluslararası yüzdelik dilim verir, 25–35 dakika sürer ve hesap gerektirmez.',
+      },
+      {
+        q: 'Ücretsiz bir çevrimiçi değerlendirme resmi bir değerlendirmenin yerini tutabilir mi?',
+        a: 'Hayır. Ücretsiz çevrimiçi değerlendirmeler tarama araçlarıdır — bir çocuğun akranlarına kıyasla nerede performans gösterdiğine dair kullanışlı bir ipucu verirler; ancak öğrenme güçlüklerini teşhis eden resmi psikoeğitimsel değerlendirmenin ya da resmi üstün zekâ tanımlaması için klinik olarak uygulanan bilişsel değerlendirmenin (WISC-V gibi) yerini tutamazlar. Çevrimiçi değerlendirmeleri daha resmi bir değerlendirme yapılıp yapılmayacağına karar vermek için ilk tarama aracı olarak kullanın.',
+      },
+      {
+        q: 'İyi bir ücretsiz akademik değerlendirme ne kadar sürmeli?',
+        a: 'Dört alanda anlamlı bir uyarlanabilir değerlendirme çoğu çocuk için 25–45 dakika sürmeli. Daha kısa değerlendirmeler (5–15 dakika) ölçüm hassasiyetini feda eder. Daha uzun değerlendirmeler (60+ dakika) özellikle küçük çocuklarda yorgunluğa yol açar ve puan geçerliliğini etkiler. 25–35 dakikalık aralık 6–14 yaş arası çocuklar için en uygundur.',
+      },
+      {
+        q: 'Akademik değerlendirme ile IQ testi arasındaki fark nedir?',
+        a: 'Akademik değerlendirmeler öğrenilen bilgi ve konuya özgü becerileri (okuma, matematik, muhakeme) ölçer. IQ testleri bilişsel kapasiteyi — bilgi işlemin hızını ve verimliliğini — ölçer. IQ, eğitimli sınavcılar tarafından bireysel olarak uygulanan klinik olarak tanımlanmış daha dar bir yapıdır. IQ puanı verdiklerini iddia eden çevrimiçi araçlar değişmez biçimde farklı bir şey ölçer ve çocuğun zekâsı hakkında sonuç çıkarmak için kullanılmamalıdır.',
+      },
+    ],
+    cta: {
+      heading: 'Ücretsiz uyarlanabilir akademik değerlendirme — dört alan, 25 dakika, anlık sonuçlar',
+      body: 'Eduentry, İngilizce, Matematik, Sözel Muhakeme ve Sözel Olmayan Muhakeme\'de IRT uyarlanabilir test kullanır. 6–20 yaş. Standartlaştırılmış puan (ortalama 100, SD 15) ve uluslararası yüzdelik dilim. Hesap, satın alma, kayıt gerekmez.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/akademik-degerlendirme',
+    },
+  },
+  {
+    slug: 'cocuklar-icin-sozel-sozel-olmayan-muhakeme-testi',
+    contentSlug: 'verbal-nonverbal-reasoning-test-children',
+    title: 'Çocuklar İçin Sözel ve Sözel Olmayan Muhakeme Testi: Ücretsiz Çevrimiçi Seçenekler',
+    shortTitle: 'Sözel ve Sözel Olmayan Muhakeme Testi: Ücretsiz Seçenekler',
+    description: 'Sözel muhakeme dil temelli mantıksal düşünmeyi; sözel olmayan muhakeme okuma gerektirmeksizin soyut örüntü tanımayı test eder. CogAT ve İngiltere 11+ testlerinde nasıl kullanıldıkları, yaşa göre puanların anlamı ve ücretsiz çevrimiçi seçenekler.',
+    tldr: 'Sözel muhakeme dil temelli mantıksal düşünmeyi test eder (benzetmeler, kelime ilişkileri, diziler). Sözel olmayan muhakeme yalnızca şekiller kullanarak soyut örüntü tanımayı test eder — okuma gerektirmez, bu da onu en kültür-adil alan yapar. Her ikisi de CogAT, İngiltere 11+ ve ISEE\'de test edilir. Çocuğunuzun sözel muhakemesi dil maruziyetini ve mantıksal düşünmeyi yansıtır; sözel olmayan muhakeme soyut düşünme ve uzamsal kapasiteyi yansıtır. İkisi arasındaki fark çoğu zaman tek tek puanlar kadar bilgilendiricidir.',
+    date: '2026-11-09',
+    readTime: '8 dk okuma',
+    tags: ['Sözel Muhakeme', 'Sözel Olmayan Muhakeme', 'CogAT', 'Üstün Zekâ Testi', 'Çocuk Değerlendirme'],
+    faqs: [
+      {
+        q: 'Sözel ve sözel olmayan muhakeme arasındaki fark nedir?',
+        a: 'Sözel muhakeme dil temelli mantıksal düşünmeyi test eder: sözel benzetmeler ("köpek kulübeyle ilişkiliyse, kuş ___ ile ilişkilidir"), kelime sınıflandırma ve cümle tamamlama. Çocuğun dil kullanarak ne kadar iyi akıl yürütebildiğini ölçer. Sözel olmayan muhakeme, yalnızca şekil ve diyagramlar kullanarak soyut düşünmeyi test eder — okuma gerekmez. Uzamsal örüntü tanımayı ve dil becerilerinden bağımsız soyut mantığı ölçer. Her ikisi de CogAT, İngiltere 11+ ve ISEE\'nin bileşenleridir.',
+      },
+      {
+        q: 'Sözel ve sözel olmayan muhakeme pratikle geliştirilebilir mi?',
+        a: 'Evet, her ikisi de hazırlığa yanıt verir; ancak farklı derecelerde. Sözel muhakeme kelime dağarcığı çalışması ve geniş okumaya yanıt verir. Sözel olmayan muhakeme uzamsal pratiğe (bulmacalar, tangram, matris muhakeme çalışma kitapları) yanıt verir. Araştırmalar, 6–12 ay boyunca muhakeme sorularıyla tutarlı biçimde ilgilenmenin anlamlı puan kazanımları ürettiğini gösteriyor; ancak hızlı ezber, müfredat bilgi testlerine kıyasla sınırlı etkiye sahiptir.',
+      },
+      {
+        q: 'Okullar sözel ve sözel olmayan muhakemeyi hangi yaşta test eder?',
+        a: 'ABD\'de CogAT genellikle ilk üstün zekâ taraması için 1.–2. sınıfta ve resmi üstün zekâ programı girişi için 3.–5. sınıfta uygulanır. İngiltere\'de seçici okul testleri (11+, sözel ve sözel olmayan muhakemeye büyük ağırlık verir) 10–11 yaşında alınır. Bazı bölgeler evrensel muhakeme taraması yapar; diğerleri yalnızca öğretmenleri veya ebeveynleri tarafından aday gösterilen çocukları test eder.',
+      },
+      {
+        q: 'Çocuklar için ücretsiz çevrimiçi sözel ve sözel olmayan muhakeme testi var mı?',
+        a: 'Eduentry, Matematik ve İngilizce\'nin yanı sıra hem Sözel Muhakeme hem de Sözel Olmayan Muhakeme içeren ücretsiz uyarlanabilir değerlendirme sunar. 6–20 yaşı kapsar, 25–35 dakika sürer, uluslararası yüzdelik dilimleriyle standartlaştırılmış puanlar (ortalama 100, SD 15) üretir ve kayıt gerektirmez. Sözel ve sözel olmayan bileşenler ayrı ayrı puanlandırılır.',
+      },
+    ],
+    cta: {
+      heading: 'Sözel ve sözel olmayan muhakemeyi ücretsiz test edin — 25 dakika, uluslararası yüzdelik dilim',
+      body: 'Eduentry\'nin uyarlanabilir değerlendirmesi tüm dört alanı kapsar: İngilizce, Matematik, Sözel Muhakeme ve Sözel Olmayan Muhakeme. 6–20 yaş. Standartlaştırılmış puan ve uluslararası yüzdelik dilim. Hesap gerekmez.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/akademik-degerlendirme',
+    },
+  },
+  {
+    slug: 'cogat-basari-testi-farki',
+    contentSlug: 'cogat-vs-achievement-test',
+    title: 'CogAT ve Akademik Başarı Testi Arasındaki Fark: Çocuğunuzun Hangisine İhtiyacı Var?',
+    shortTitle: 'CogAT vs Akademik Başarı Testi: Temel Farklar',
+    description: 'CogAT muhakeme yeteneğini ölçer (ortalama 100, SD 16); MAP müfredat ustalığını ölçer (RIT ölçeği). Üstün zekâ tanımlamasında birlikte nasıl kullanıldıkları, puanlar ayrıştığında ne yapılacağı ve her birinin ne zaman kullanılacağı.',
+    tldr: 'CogAT çocuğunuzun nasıl düşündüğünü ölçer — bilişsel işlemin etkinliğini. MAP Growth ve eyalet başarı testleri çocuğunuzun ne öğrendiğini ölçer — müfredat ustalığını. Araştırmalar yüksek CogAT + düşük öz-düzenlemenin, orta CogAT + yüksek azim ile geride kaldığını gösteriyor. Her ikisi birlikte bir performans açığının kapasite sorunu mu yoksa öğrenme fırsatı sorunu mu olduğunu ortaya koyar.',
+    date: '2026-11-09',
+    readTime: '8 dk okuma',
+    tags: ['CogAT', 'NWEA MAP', 'Başarı Testi', 'Üstün Zekâ Programları', 'ABD Eğitimi'],
+    faqs: [
+      {
+        q: 'CogAT ve başarı testi arasındaki temel fark nedir?',
+        a: 'CogAT gibi bilişsel yetenek testleri çocuğunuzun bilgiyi ne kadar verimli işlediğini ölçer — muhakeme hızı ve kapasitesi. MAP Growth veya eyalet testleri gibi başarı testleri çocuğunuzun ne öğrendiğini ölçer — edindiği müfredat içeriği. Her ikisi de yararlıdır ancak farklı şeyleri yakalar. İyi öğretim almamış bir hızlı düşünürün önüne geçebilir. Üstün zekâ programları, salt fırsat yerine potansiyeli seçmemek için her ikisini kullanır.',
+      },
+      {
+        q: 'CogAT mi MAP mi akademik başarının daha iyi göstergesidir?',
+        a: 'Her ikisi de güçlü göstergelerdir ve farklı güçlere sahiptir. 3.–5. sınıf MAP RIT puanları, lise hazırlığı ve ACT/SAT performansının güçlü göstergeleridir. CogAT puanları ise yeni, yapılandırılmamış akademik görevlerdeki performansın daha iyi göstergesidir. Standart akademik çıktılar için MAP daha güçlü göstergedir; son derece zorlu akademik ortamlarda tavan tahmin etmek için bilişsel yetenek testleri önemli bilgi ekler.',
+      },
+      {
+        q: 'CogAT\'a MAP gibi hazırlanabilir misiniz?',
+        a: 'Hayır — hazırlık yaklaşımları farklıdır. MAP müfredat içeriğini ölçer, bu nedenle içerik odaklı çalışma doğrudan MAP puanlarını artırır. CogAT muhakeme etkinliğini ölçer, bu nedenle hedefli muhakeme pratiği (sözel benzetme, matris muhakeme soruları) daha uygundur. Geniş içerik çalışması CogAT\'ta çok az yardımcı olur. Bununla birlikte CogAT tamamen hazırlık dışı değildir — 6–12 haftalık odaklı muhakeme pratiği çoğu çocuk için ölçülebilir kazanımlar üretir.',
+      },
+      {
+        q: 'Okulumuz yalnızca MAP veriyor — muhakeme yeteneğimi nasıl öğrenebilirim?',
+        a: 'Çocuğunuzun okulundan CogAT dahil olabilecek üstün zekâ değerlendirme sevki isteyebilirsiniz. Alternatif olarak bir eğitim psikoloğu WISC-V\'yi bireysel olarak uygulayabilir. Ev ortamında ilk tarama için Eduentry\'nin ücretsiz akademik değerlendirmesi Matematik ve İngilizce\'nin yanı sıra Sözel ve Sözel Olmayan Muhakeme\'yi de içerir — resmi bir CogAT sonucunun yerini tutmaz, ancak resmi değerlendirme yapılıp yapılmayacağına karar vermeden önce yararlı bağlam sağlar.',
+      },
+    ],
+    cta: {
+      heading: 'Akademik başarı + muhakeme — ikisi birden, tek ücretsiz değerlendirmede',
+      body: 'Eduentry\'nin uyarlanabilir değerlendirmesi Sözel ve Sözel Olmayan Muhakeme\'nin yanı sıra Matematik ve İngilizce\'yi (başarı) kapsar — çocuğunuzun akademik profilinin tam resmini sunar. Ücretsiz, 25–35 dakika, 6–20 yaş. Hesap gerekmez.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/akademik-degerlendirme',
+    },
+  },
+  {
+    slug: '9-yasinda-iyi-akademik-puan-nedir',
+    contentSlug: 'good-academic-score-9-year-old',
+    title: '9 Yaşında İyi Akademik Puan Nedir? Matematik, Okuma ve Muhakeme Kriterleri',
+    shortTitle: '9 Yaşında İyi Akademik Puan: 3.–4. Sınıf Kıyaslamaları',
+    description: '9 yaşındaki bir çocuk genellikle 3.–4. sınıf aralığındadır. MAP Matematik ortalamaları: 3. sınıf = 188, 4. sınıf = 197. Üstün zekâ aralığı (90. yüzdelik dilim): 3. sınıf = 208, 4. sınıf = 217. Okuma ve muhakeme kıyaslamaları ve ek test ne zaman değerlendirilmeli.',
+    tldr: '9 yaşındaki bir çocuk genellikle 3.–4. sınıf aralığındadır. Ulusal MAP Matematik RIT ortalaması 3. sınıfta (güz) 188; 4. sınıfta 197\'dir. 3. sınıfta 208+ veya 4. sınıfta 217+ puan çocuğu ulusal 90. yüzdelik dilime yerleştirir — çoğu ABD bölgesinde üstün zekâ sevkinin eşiği. Okuma için: 3. sınıf ortalaması 177 (üstün zekâ aralığı: 202+); 4. sınıf ortalaması 185 (üstün zekâ aralığı: 210+). Standartlaştırılmış muhakeme değerlendirmesinde (ortalama 100, SD 15) 9 yaşında 119+ puan 90. yüzdelik dilime karşılık gelir.',
+    date: '2026-11-09',
+    readTime: '8 dk okuma',
+    tags: ['Sınıf Düzeyi', 'NWEA MAP', '9 Yaş', 'Üstün Zekâ Programları', 'Akademik Değerlendirme'],
+    faqs: [
+      {
+        q: '9 yaşında hangi MAP puanı iyi sayılır?',
+        a: 'Sınıfa bağlı olarak değişir. 3. sınıf için (çoğu 8–9 yaşlı): Matematik RIT 188 ortalama; 199 güçlü (75. yüzdelik dilim); 208+ üstün zekâ aralığı (90. yüzdelik dilim). 4. sınıf için: Matematik RIT 197 ortalama; 208 güçlü; 217+ üstün zekâ aralığı. Okuma için: 3. sınıf ortalaması 177 (güçlü ≈ 191, üstün zekâ ≈ 202+); 4. sınıf ortalaması 185 (güçlü ≈ 199, üstün zekâ ≈ 210+).',
+      },
+      {
+        q: '9 yaşında MAP mı CogAT mı çocuğumun yeteneğini daha iyi ölçer?',
+        a: 'MAP çocuğunuzun ne öğrendiğini ölçer (akademik başarı). CogAT ise nasıl düşündüğünü ölçer (bilişsel yetenek). Her ikisi de yararlıdır ancak farklı şeyleri ölçer. Mevcut akademik performansı sınıf arkadaşlarıyla karşılaştırmak için MAP daha doğrudan kullanışlıdır. Bilişsel potansiyeli ve üstün zekâ programı uygunluğunu anlamak için CogAT farklı ve tamamlayıcı bilgi sağlar.',
+      },
+      {
+        q: '9 yaşındaki çocuğumun üstün zekâlı olup olmadığını nasıl anlarım?',
+        a: 'Resmi üstün zekâ tanımlaması okul ya da özel olarak uygulanan testler gerektirir. Test yapmayı haklı kılabilecek göstergeler şunlardır: MAP puanlarının sürekli 90. yüzdelik dilimin üzerinde olması, öğretmenin işin çok kolay geldiğine dair yorumları, erken okuma (5 yaşından önce), ileri matematiksel muhakeme ve belirli konulara yoğun merak ve derinlemesine ilgi. Hiçbir tek gösterge kesin değildir — üstün zekâ tanımlaması birden fazla test puanı, öğretmen gözlemi ve ebeveyn görüşünü içeren bir portföy yaklaşımı kullanır.',
+      },
+      {
+        q: '9 yaşında hangi okuma düzeyi beklenir?',
+        a: 'Sınıf düzeyinde Okuma\'daki 9 yaşında bir çocuğun yaklaşık Lexile 500–900L (3.–4. sınıf düzeyi) seviyesinde roman okuması beklenir. Ulusal 50. yüzdelik dilimde 3. sınıf öğrencisi (MAP Okuma RIT ≈ 177) yaklaşık Lexile 650–800L\'ye karşılık gelir. 90. yüzdelik dilimde (RIT ≈ 202) 3. sınıf öğrencisi yaklaşık Lexile 1100L+\'de okur — ortaokul üstü veya lise okuma düzeyine eşdeğer.',
+      },
+    ],
+    cta: {
+      heading: '9 yaşındaki çocuğunuzun tam olarak nerede durduğunu öğrenin — ulusal ve uluslararası düzeyde',
+      body: 'Eduentry\'nin ücretsiz uyarlanabilir değerlendirmesi Matematik, İngilizce, Sözel ve Sözel Olmayan Muhakeme\'de standartlaştırılmış puanlar verir — uluslararası yüzdelik dilimle birlikte. 25–35 dakika. Hesap gerekmez. 6–20 yaş.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/akademik-degerlendirme',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

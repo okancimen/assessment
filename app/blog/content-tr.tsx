@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Bullet, Callout, Check, Cross } from './blog-components'
 import { US_CONTENT } from './content-us'
+import CtaLink from '@/components/ui/CtaLink'
 
 export const TR_CONTENT: Record<string, React.ReactNode> = {
 
@@ -8072,6 +8073,929 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           </Link>{' '}
           yazısına bakın.
         </p>
+      </section>
+    </>
+  ),
+
+  'cocugum-sinif-duzeyinde-mi': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        &ldquo;Sınıf düzeyi&rdquo; kavramı, pek çok ebeveynin sandığından çok daha belirsizdir.
+        Çoğu okul bu terimi tanımlamamakta ya da yalnızca yerel standartlara göre kullanmaktadır.
+        Bu rehber, standartlaştırılmış verileri temel alarak sınıf düzeyinin gerçekte ne anlama
+        geldiğini, çocuğunuzun nerede durduğunu nasıl öğreneceğinizi ve bulduklarınıza göre
+        ne yapabileceğinizi açıklamaktadır.
+      </p>
+      <Callout>
+        <strong>Temel tanım:</strong> &ldquo;Sınıf düzeyi&rdquo; ulusal 25.–75. yüzdelik
+        dilim arasında puan almak demektir. Bu sabit bir çizgi değil, bir aralıktır — ve okul
+        notları bunu ölçmek için güvenilir bir araç değildir.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sınıf Düzeyi Gerçekte Ne Demektir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çoğu eğitim sisteminde &ldquo;sınıf düzeyi&rdquo; sabit bir standart değildir. MAP
+          Growth (NWEA) gibi standartlaştırılmış testlerde sınıf düzeyi, ulusal 25.–75. yüzdelik
+          dilim aralığı olarak tanımlanır. 25. yüzdelik dilimin altına düşmek çoğu okulda müdahale
+          desteği gerektirirken, 75. yüzdelik dilimin üstü genellikle ileri düzey veya üstün
+          zekâ programı değerlendirmesi için kılavuz oluşturur.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Önemli olan şudur: Bir çocuk okul notlarına bakılarak sınıf düzeyinde sayılabilir, ancak
+          ulusal normlarla karşılaştırıldığında oldukça farklı bir tablo ortaya çıkabilir. Farklı
+          okullardaki not standartları büyük farklılıklar gösterir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sınıf Bazında MAP Matematik Kıyaslamaları</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Aşağıdaki tablo NWEA&apos;nın güz dönemi MAP Matematik ulusal norm verilerini göstermektedir.
+          RIT (Rasch Unit) puanı, sınıf düzeyinden bağımsız karşılaştırmalı bir ölçek kullanır.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Sınıf</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Ortalama (50. yüzdelik dilim)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Güçlü (75. yüzdelik dilim)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Üstün zekâ aralığı (90. yüzdelik dilim)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['1. sınıf', 'RIT 163', 'RIT 173', 'RIT 182'],
+                ['2. sınıf', 'RIT 177', 'RIT 187', 'RIT 196'],
+                ['3. sınıf', 'RIT 188', 'RIT 199', 'RIT 208'],
+                ['4. sınıf', 'RIT 197', 'RIT 208', 'RIT 217'],
+                ['5. sınıf', 'RIT 205', 'RIT 216', 'RIT 225'],
+                ['6. sınıf', 'RIT 212', 'RIT 223', 'RIT 232'],
+                ['7. sınıf', 'RIT 217', 'RIT 228', 'RIT 237'],
+                ['8. sınıf', 'RIT 220', 'RIT 232', 'RIT 242'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs font-mono">{row[1]}</td>
+                  <td className="p-4 text-gray-600 text-xs font-mono">{row[2]}</td>
+                  <td className="p-4 text-indigo-700 text-xs font-mono font-semibold">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 mb-4">
+          Kaynak: NWEA 2020 Norm Çalışması. MAP ABD normlarına dayanır; uluslararası karşılaştırma
+          için{' '}
+          <Link href="/tr/blog/map-puani-global-karsilastirma" className="text-indigo-600 hover:underline">
+            MAP puanı küresel kıyaslama rehberimize
+          </Link>{' '}
+          bakın.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sınıf Bazında MAP Okuma Kıyaslamaları</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Sınıf</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Ortalama (50. yüzdelik dilim)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Güçlü (75. yüzdelik dilim)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Üstün zekâ aralığı (90. yüzdelik dilim)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['3. sınıf', 'RIT 177', 'RIT 191', 'RIT 202'],
+                ['4. sınıf', 'RIT 185', 'RIT 199', 'RIT 210'],
+                ['5. sınıf', 'RIT 192', 'RIT 206', 'RIT 217'],
+                ['6. sınıf', 'RIT 198', 'RIT 213', 'RIT 223'],
+                ['7. sınıf', 'RIT 203', 'RIT 217', 'RIT 228'],
+                ['8. sınıf', 'RIT 207', 'RIT 222', 'RIT 232'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs font-mono">{row[1]}</td>
+                  <td className="p-4 text-gray-600 text-xs font-mono">{row[2]}</td>
+                  <td className="p-4 text-indigo-700 text-xs font-mono font-semibold">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5 my-8">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Çocuğunuz ulusal kıyaslamada nerede duruyor?</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">
+            Ücretsiz uyarlanabilir değerlendirmemiz Matematik, İngilizce, Sözel ve Sözel Olmayan
+            Muhakeme&apos;yi kapsar. 25–35 dakika. Anında uluslararası yüzdelik dilim. Hesap gerekmez.
+          </p>
+        </div>
+        <CtaLink href="/tr/akademik-degerlendirme" label="grade_level_tr_mid_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Ücretsiz değerlendirmeyi başlat →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzun İleride veya Geride Olduğunun İşaretleri</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <div className="border border-green-100 rounded-xl p-4 bg-green-50/40">
+            <p className="font-semibold text-green-800 mb-3 text-sm">Muhtemelen ileride</p>
+            <div className="space-y-2">
+              <Check>MAP puanı 75. yüzdelik dilimin üzerinde</Check>
+              <Check>Okul çalışmasını çok kolay buluyor</Check>
+              <Check>Kendiliğinden ileri düzey materyallere ilgi duyuyor</Check>
+              <Check>Sınıf düzeyinin üzerindeki kitapları okuyor</Check>
+            </div>
+          </div>
+          <div className="border border-red-100 rounded-xl p-4 bg-red-50/40">
+            <p className="font-semibold text-red-800 mb-3 text-sm">Muhtemelen geride</p>
+            <div className="space-y-2">
+              <Cross>MAP puanı 25. yüzdelik dilimin altında</Cross>
+              <Cross>Okul ödevi sürekli mücadele gerektiriyor</Cross>
+              <Cross>Temel becerileri hâlâ pekiştiremiyor</Cross>
+              <Cross>Testlerde iyi notlara rağmen puan düşük</Cross>
+            </div>
+          </div>
+        </div>
+        <Callout color="amber">
+          <strong>Önemli not:</strong> İyi okul notları çocuğunuzun sınıf düzeyinde olduğunu garanti
+          etmez. Notlar okul içi standartları yansıtır — ulusal normları değil. Çocuğunuz A alabilir
+          ve yine de ulusal 40. yüzdelik dilimde olabilir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA ve Uluslararası Bağlam</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP yalnızca ABD normlarına dayanır. Türk kökenli aileler veya çocuklarını uluslararası
+          standartlara göre ölçmek isteyenler için PISA 2022 verileri daha geniş bir bağlam sunar.
+          Türkiye&apos;nin PISA 2022 Matematik puanı 453 (OECD ortalaması 472), Okuma puanı ise
+          479&apos;dur (OECD ortalaması 476). Bu bağlamda &ldquo;sınıf düzeyinde&rdquo; olmak,
+          hangi ülkenin normlarına göre ölçüldüğüne bağlı olarak farklı anlamlar taşıyabilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuz ABD okullarında MAP testine giriyorsa ve uluslararası bir kariyere veya üniversiteye
+          hedef koyuyorsa, küresel kıyaslama rehberimize bakmanızı öneririz.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuzun Nerede Durduğunu Öğrendikten Sonra Ne Yapmalısınız?</h2>
+        <div className="space-y-3 mb-4">
+          {[
+            ['Gerideyse', 'Önce boşluk alanını belirleyin (matematik mi, okuma mı, muhakeme mi). Hedefli müdahale, genel çalışmadan çok daha etkilidir. Çocuğun mevcut RIT bandındaki becerilere odaklanın, sınıf düzeyi materyaline değil.'],
+            ['Sınıf düzeyindeyse', 'Mevcut performansı koruyun ve gelişimi izleyin. Üst düzey materyallere erken maruziyetin uzun vadeli avantajları vardır; zenginleştirme aktiviteleri değerlendirmeye alınabilir.'],
+            ['İlerideyse', 'Üstün zekâ programı uygunluğunu değerlendirin. Formal CogAT veya WISC-V testleri hakkında okulunuzla görüşün. Çocuğu doğru düzeyde zorlayan materyaller sağlayın.'],
+          ].map(([scenario, action]) => (
+            <div key={scenario} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-semibold text-indigo-700 text-sm w-36 shrink-0 pt-0.5">{scenario}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{action}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sık Sorulan Sorular</h2>
+        <div className="space-y-4">
+          {[
+            ['Çocuğumun sınıf düzeyinde olup olmadığını nasıl öğrenirim?', 'En doğrudan yöntem standartlaştırılmış uyarlanabilir bir değerlendirmedir. Okulunuz NWEA MAP kullanıyorsa Aile Raporu\'nu isteyin. Bağımsız kontrol için Eduentry\'nin ücretsiz değerlendirmesi anlık uluslararası yüzdelik dilim sağlar.'],
+            ['MAP RIT puanı ve sınıf düzeyi nasıl ilişkilidir?', 'Sınıf düzeyi = ulusal 25.–75. yüzdelik dilim arasında puan. 3. sınıf için bu aralık Matematik\'te yaklaşık RIT 180–199\'dur. 25. yüzdelik dilimin altı genellikle müdahaleyi tetikler.'],
+            ['Okul notları güvenilir bir kıyaslama mıdır?', 'Hayır. Okul notları okul içi standartları yansıtır, ulusal normları değil. Çocuğunuz A alırken ulusal 40. yüzdelik dilimde olabilir — veya tam tersi.'],
+          ].map(([q, a]) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <p className="font-semibold text-gray-900 mb-2 text-sm">{q}</p>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'map-puani-global-karsilastirma': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        MAP Growth, dünyanın en yaygın kullanılan adaptif akademik testidir — ancak bir sınırlaması
+        vardır: normları yalnızca ABD öğrencilerini kapsar. Çocuğunuz MAP&apos;ta 90. yüzdelik dilimde
+        olabilir ve bu harika bir haberdir. Ama küresel ölçekte nerede olduğunu anlatan başka bir
+        hikâye daha vardır.
+      </p>
+      <Callout>
+        <strong>Temel bulgu:</strong> ABD, PISA 2022 Matematik&apos;te OECD ülkeleri arasında 26.
+        sıradadır — OECD ortalamasının 7 puan altında. Türkiye ise 453 puanla ortalamanın altında.
+        ABD 90. yüzdelik dilimindeki bir öğrenci küresel ölçekte yaklaşık 75. yüzdelik dilime
+        karşılık gelir.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Sadece ABD Normlarına Dayanır</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          NWEA&apos;nın MAP Growth normlama çalışması ABD okullarındaki öğrencileri kapsar.
+          Bu, MAP&apos;taki yüzdelik dilim sıralamanızın ABD ulusal akran grubuna kıyasla
+          olduğu anlamına gelir — küresel akran grubuna değil. Çocuğunuz ABD&apos;de 85.
+          yüzdelik dilimde MAP puanı alıyorsa bu, onu tüm dünya öğrencilerinin %85&apos;inin
+          önüne yerleştirmez.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu neden önemli? Uluslararası üniversiteye veya küresel bir kariyer yoluna hedef
+          koyan aileler için — özellikle ABD&apos;deki Türk göçmen aileler için — ABD içi
+          sıralama yalnızca bir parçadır. Küresel tablo farklı görünmektedir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PISA 2022: ABD ve Türkiye Küresel Tablosu</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          PISA 2022 en güncel uluslararası kıyaslamadır. 81 ülkeden 690.000 15 yaşındaki
+          öğrenci katılmıştır. İşte kritik ülkeler için Matematik puanları:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Ülke</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Matematik Puanı</th>
+                <th className="text-left p-4 font-semibold text-gray-700">OECD Ortalamasına Fark</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Singapur', '575', '+103'],
+                ['Japonya', '536', '+64'],
+                ['Güney Kore', '527', '+55'],
+                ['Kanada', '497', '+25'],
+                ['İngiltere', '489', '+17'],
+                ['Avustralya', '487', '+15'],
+                ['OECD Ortalaması', '472', '—'],
+                ['ABD', '465', '−7'],
+                ['Türkiye', '453', '−19'],
+              ].map((row) => (
+                <tr key={row[0]} className={`hover:bg-gray-50/50 ${row[0] === 'Türkiye' || row[0] === 'ABD' ? 'font-semibold bg-indigo-50/40' : ''}`}>
+                  <td className="p-4 text-gray-900 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-900 text-xs font-mono">{row[1]}</td>
+                  <td className={`p-4 text-xs font-mono font-semibold ${row[2].startsWith('+') ? 'text-green-700' : row[2].startsWith('−') ? 'text-red-600' : 'text-gray-500'}`}>{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye&apos;nin PISA 2022 Matematik puanı 453, OECD ortalamasının (472) yaklaşık
+          bir yıllık öğrenime karşılık gelen 19 puan altındadır. Bu bağlam, Türk kökenli
+          aileler için özellikle önemlidir: hem ABD hem de Türkiye normlarının küresel
+          liderlerle arasında ciddi bir mesafe olduğunu gösterir.
+        </p>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5 my-8">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Çocuğunuz küresel ölçekte nerede duruyor?</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">
+            Ücretsiz değerlendirmemiz PISA, İngiltere Ulusal Müfredatı ve IB standartlarına göre
+            kalibre edilmiştir. 25–35 dakika. Hesap gerekmez.
+          </p>
+        </div>
+        <CtaLink href="/tr/akademik-degerlendirme" label="map_global_tr_mid_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Ücretsiz değerlendirmeyi başlat →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Puanı ile Küresel Yüzdelik Dilim Yaklaşık Çizelgesi</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Resmi bir MAP–PISA dönüşüm tablosu mevcut değildir. Ancak PISA–NAEP bağlantı
+          çalışmalarından elde edilen yaklaşık tahminler şunlardır:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">5. Sınıf Matematik MAP RIT</th>
+                <th className="text-left p-4 font-semibold text-gray-700">ABD Yüzdelik Dilimi</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Tahmini Küresel Yüzdelik Dilim</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['RIT 195', '25.', '~18.'],
+                ['RIT 205', '50.', '~43.'],
+                ['RIT 216', '75.', '~62.'],
+                ['RIT 225', '90.', '~75.'],
+                ['RIT 230+', '95.+', '~85.+'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-mono text-gray-900 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs">{row[1]}</td>
+                  <td className="p-4 text-indigo-700 text-xs font-semibold">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 mb-4">
+          Bu tahminler NAEP–PISA bağlantı çalışmalarına dayanmaktadır; resmi NWEA verileri değildir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">ABD Dışındaki Türk Aileler İçin Ne Anlama Gelir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İngiltere, Almanya veya başka ülkelerdeki Türk göçmen aileler için MAP muhtemelen
+          doğrudan geçerli değildir. Bu aileler için daha doğrudan uluslararası kıyaslama,
+          PISA ve İngiltere Ulusal Müfredatı standartlarına göre kalibre edilmiş değerlendirmeler
+          sunar. Çocuğun İngilizce okuma, matematiksel muhakeme ve sözel/sözel olmayan akıl
+          yürütme becerilerini küresel normlarla karşılaştırmak bu bağlamda çok daha anlamlıdır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sık Sorulan Sorular</h2>
+        <div className="space-y-4">
+          {[
+            ['MAP ABD dışında kullanılıyor mu?', 'MAP bazı uluslararası okullarda kullanılır, ancak normları yalnızca ABD öğrencileridir. Yüzdelik dilim sıralaması küresel bir sıralama değil, ABD ulusal akranlarına göre bir sıralamalardır.'],
+            ['Türkiye PISA 2022\'de Matematik\'te kaçıncı sıradadır?', 'Türkiye 453 puanla OECD ülkeleri arasında ortanın altında yer almaktadır. OECD ortalaması 472\'dir. Singapur 575 ile liderdir.'],
+            ['Çocuğum hangi MAP puanıyla uluslararası ölçekte rekabetçi sayılır?', '5. sınıf Matematik için ABD 95. yüzdelik dilimi (RIT ≈ 230+) küresel ölçekte gerçek anlamda rekabetçidir. 90. yüzdelik dilim (RIT ≈ 225) ise yaklaşık küresel 75. yüzdelik dilime karşılık gelir.'],
+          ].map(([q, a]) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <p className="font-semibold text-gray-900 mb-2 text-sm">{q}</p>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'cocuklar-icin-ucretsiz-cevrimici-akademik-degerlendirme': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        &ldquo;Çocuğum için ücretsiz çevrimiçi akademik değerlendirme&rdquo; araması yapan
+        bir ebeveyn, birbirinden çok farklı kalitede araçlarla karşılaşır. Bazıları gerçekten
+        kullanışlıdır; bazıları ise yanıltıcı puanlar üretmekten başka bir şey yapmaz. Bu
+        rehber, iyi bir değerlendirmeyi kötüsünden ayıran kriterleri açıklar.
+      </p>
+      <Callout>
+        <strong>Kritik fark:</strong> Gerçek bir akademik değerlendirme en az dört alanı
+        (Matematik, İngilizce/Okuma, Sözel Muhakeme, Sözel Olmayan Muhakeme) kapsar, IRT
+        uyarlanabilir test kullanır ve normlara dayalı bir referans grubuna göre puan bildirir.
+        Bu üç kriterden herhangi birini karşılamayan bir araç size kısmi tablo sunar.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İyi Bir Ücretsiz Değerlendirmenin Kriterleri</h2>
+        <div className="space-y-3 mb-6">
+          {[
+            ['Alan kapsamı', 'En az 4 alan: Matematik, İngilizce/Okuma, Sözel Muhakeme, Sözel Olmayan Muhakeme. Yalnızca matematik + okuma içeren araçlar bilişsel muhakeme profilini kaçırır.'],
+            ['Uyarlanabilir test (IRT)', 'Madde Tepki Teorisi (IRT) tabanlı uyarlanabilir testler, çocuğun yanıtlarına göre soru güçlüğünü ayarlar. Bu hem daha doğru hem de daha kısa ölçüm sağlar.'],
+            ['Normlara dayalı puanlar', 'Puanlar kendi kullanıcılarına değil, ulusal veya uluslararası bir norm grubuna göre bildirilmelidir. "Ortalama kullanıcıya kıyasla" anlamlı bir kıyaslama değildir.'],
+            ['Standartlaştırılmış puan formatı', 'Yüzde doğru yerine ortalama 100, SD 15 standart puan (MAP RIT benzeri) veya yüzdelik dilim sıralaması kullanılmalıdır.'],
+            ['Yaş aralığı', '6–18 veya daha geniş yaş aralığını kapsayan değerlendirmeler, farklı gelişim dönemlerinde kullanılabilir ve uzun vadeli ilerlemeyi izlemeye olanak tanır.'],
+          ].map(([criterion, detail]) => (
+            <div key={criterion} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-semibold text-indigo-700 text-sm w-44 shrink-0 pt-0.5">{criterion}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{detail}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Kaçınılacak Kırmızı Bayraklar</h2>
+        <div className="space-y-2 mb-6">
+          <Cross>Yalnızca matematik ve okumayı test eder, muhakemeyi atlar</Cross>
+          <Cross>&ldquo;IQ puanınız 142!&rdquo; gibi abartılı iddialar — geçerliliği olmayan istatistiksel numaralar</Cross>
+          <Cross>5 dakikadan kısa değerlendirmeler — hiçbir anlamlı ölçüm bu kadar kısa sürede yapılamaz</Cross>
+          <Cross>Puanları kendi kullanıcı tabanına kıyaslama — asıl norm grubunu açıklamayan araçlar</Cross>
+          <Cross>Sonuç görmek için ücretli kayıt gerektirme — ücretsiz olarak tanımlananlar için özellikle sorunlu</Cross>
+          <Cross>Sabit soru setleri — uyarlanabilir olmayan testler hassasiyeti sınırlar</Cross>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">IRT Uyarlanabilir Test Nasıl Çalışır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Madde Tepki Teorisi (IRT), bilgisayarlı uyarlanabilir testin (CAT) arkasındaki
+          istatistiksel temeldir. Temel fikir basittir: her çocuğa her soruyu sormak yerine,
+          sistem yanıtlarına göre bir sonraki soruyu seçer.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuz bir soruya doğru yanıt verdiğinde, bir sonraki soru biraz daha zor olur.
+          Yanlış yanıt verdiğinde biraz daha kolay olur. Bu süreç, test çocuğun gerçek yetenek
+          düzeyine yakınsayana kadar devam eder. Sonuç olarak daha az soruda çok daha doğru
+          bir ölçüm elde edilir.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Özellik</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Sabit Test</th>
+                <th className="text-left p-4 font-semibold text-gray-700">IRT Uyarlanabilir Test</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Soru sayısı', 'Herkes için sabit (ör. 40 soru)', 'Çocuğa göre değişir (ör. 20–30 soru)'],
+                ['Hassasiyet', 'Ortalama güçlükteki çocuklar için en yüksek', 'Tüm yetenek seviyeleri için yüksek'],
+                ['Süre', 'Herkese eşit süre', 'Genellikle daha kısa, daha verimli'],
+                ['Tavan/taban etkisi', 'Çok yüksek veya düşük yetenek sınırda kalır', 'Çok geniş aralıkta ölçer'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs">{row[1]}</td>
+                  <td className="p-4 text-green-700 text-xs font-semibold">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5 my-8">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Dört alanda IRT uyarlanabilir değerlendirme — ücretsiz</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">
+            Matematik, İngilizce, Sözel ve Sözel Olmayan Muhakeme. 6–20 yaş. Uluslararası
+            yüzdelik dilim. Hesap gerekmez.
+          </p>
+        </div>
+        <CtaLink href="/tr/akademik-degerlendirme" label="free_assessment_tr_mid_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Ücretsiz değerlendirmeyi başlat →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ücretsiz mi, Yoksa Ücretli Değerlendirme mi?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İyi bir ücretsiz değerlendirme, birkaç yüz dolara mal olan profesyonel değerlendirmenin
+          yerini tutmaz — ancak onu gerektirip gerektirmediğinize karar vermek için mükemmel
+          bir ilk adımdır. Ücretsiz bir değerlendirme şunları yapabilir:
+        </p>
+        <div className="space-y-2 mb-4">
+          <Check>Çocuğunuzun dört akademik alanda yaklaşık olarak nerede durduğunu gösterir</Check>
+          <Check>Güçlü ve zayıf alanlar arasındaki boşlukları ortaya çıkarır</Check>
+          <Check>Daha ayrıntılı değerlendirmeye yönlendirip yönlendirmeyeceğinize karar vermenizi sağlar</Check>
+          <Check>Zaman içinde ilerlemeyi takip etmenize olanak tanır</Check>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Öğrenme güçlüğü tanısı, üstün zekâ sertifikasyonu veya özel eğitim yerleştirmesi
+          için resmi psikoeğitimsel değerlendirme gerekir. Çevrimiçi araçlar bu karar süreçleri
+          için kullanılamaz.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sık Sorulan Sorular</h2>
+        <div className="space-y-4">
+          {[
+            ['Ücretsiz değerlendirme resmi psikoeğitimsel değerlendirmenin yerini tutabilir mi?', 'Hayır. Ücretsiz araçlar tarama araçlarıdır — öğrenme güçlüğü tanısı, özel eğitim kararları veya klinik üstün zekâ sertifikasyonu için kullanılamazlar.'],
+            ['İyi bir değerlendirme ne kadar sürmeli?', '25–45 dakika dört alan için idealdir. 5–15 dakika ölçüm hassasiyetini feda eder; 60+ dakika çocuklarda yorgunluk ve geçersizlik yaratır.'],
+            ['Çevrimiçi araçlar IQ puanı verebilir mi?', 'Hayır. IQ, klinik olarak tanımlanmış bir yapıdır ve bireysel yönetim gerektiren özel testlerle ölçülür. IQ puanı iddia eden çevrimiçi araçlar geçerli değildir.'],
+          ].map(([q, a]) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <p className="font-semibold text-gray-900 mb-2 text-sm">{q}</p>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'cocuklar-icin-sozel-sozel-olmayan-muhakeme-testi': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Sözel ve sözel olmayan muhakeme testleri, standart akademik değerlendirmelerin en sık
+        atlanan iki bileşenidir. Matematik ve okuma notları çocuğun ne öğrendiğini anlatır;
+        muhakeme testleri ise nasıl düşündüğünü. Bu fark özellikle üstün zekâ programı başvurusu,
+        İngiltere 11+ veya CogAT hazırlığı bağlamında kritik önem taşır.
+      </p>
+      <Callout>
+        <strong>Temel ayrım:</strong> Sözel muhakeme dil temelli mantıksal düşünmeyi ölçer.
+        Sözel olmayan muhakeme şekil ve örüntüler kullanarak soyut düşünmeyi ölçer — okuma
+        gerektirmez ve kültür bağımsızlığı bakımından en adil alandır. İkisi arasındaki fark
+        çoğu zaman tek tek puanlar kadar değerlidir.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sözel Muhakeme: Ne Ölçer?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sözel muhakeme, çocuğun dil aracılığıyla ne kadar iyi akıl yürütebildiğini ölçer.
+          Tipik sözel muhakeme soruları şunları içerir:
+        </p>
+        <div className="space-y-2 mb-4">
+          <Bullet><strong>Sözel benzetmeler:</strong> &ldquo;Köpek&apos;in kulübesi vardır, kuşun ___ vardır&rdquo; — mantıksal ilişkiyi dil üzerinden tanımlama</Bullet>
+          <Bullet><strong>Kelime sınıflandırma:</strong> Bir grup kelimeden farklı olanı bulma — kategori mantığı</Bullet>
+          <Bullet><strong>Cümle tamamlama:</strong> Bir bağlamdaki en uygun kelimeyi seçme</Bullet>
+          <Bullet><strong>Mantıksal diziler:</strong> Bir dizi kelime veya kavramda örüntüyü tanımlama</Bullet>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sözel muhakeme puanı kelime dağarcığından etkilenir, ancak yalnızca kelime dağarcığını
+          ölçmez. Geniş okuma alışkanlığı olan çocuklar genellikle bu alanda güçlüdür.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sözel Olmayan Muhakeme: Ne Ölçer?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sözel olmayan muhakeme dil gerektirmez. Tamamen şekil, diyagram ve görsel örüntülerle
+          çalışır. Bu özellik onu hem kültür bağımsız hem de ikinci dili İngilizce olan çocuklar
+          için değerli bir alan yapar.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Tipik sözel olmayan muhakeme soruları matris tamamlama (Şekil A, B, C gibi devam eden
+          örüntüde D nedir?), örüntü tanıma ve uzamsal akıl yürütme içerir. Bu alandaki yüksek
+          puan güçlü uzamsal zekâya ve soyut düşünme kapasitesine işaret eder.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sözel ve Sözel Olmayan Muhakeme Puanları Neden Farklılaşır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pek çok çocukta iki alan arasında anlamlı bir fark görülür. Bu fark çoğu zaman en
+          az puan kadar bilgi vericidir:
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Profil</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Ne anlama gelebilir?</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Önerilen adım</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Sözel yüksek, sözel olmayan orta', 'Güçlü dil temelli muhakeme; uzamsal düşünme gelişebilir', 'Görsel bulmacalar, tangram, uzamsal oyunlar'],
+                ['Sözel olmayan yüksek, sözel orta', 'Güçlü soyut düşünme; dil maruziyeti artırılabilir', 'Geniş okuma, kelime dağarcığı çalışması'],
+                ['Her ikisi de yüksek', 'Güçlü genel muhakeme profili', 'Üstün zekâ programı başvurusu değerlendirilebilir'],
+                ['Her ikisi de orta-düşük', 'Muhakeme becerileri çalışılabilir; acele karar verilmemeli', 'Tutarlı bulmaca ve akıl yürütme pratiği, yeniden değerlendirme'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5 my-8">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Çocuğunuzun sözel ve sözel olmayan muhakeme profilini ücretsiz görün</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">
+            Dört alan birden: Matematik, İngilizce, Sözel ve Sözel Olmayan Muhakeme. 6–20 yaş.
+            Ayrı ayrı puanlar ve uluslararası yüzdelik dilim.
+          </p>
+        </div>
+        <CtaLink href="/tr/akademik-degerlendirme" label="verbal_nonverbal_tr_mid_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Ücretsiz değerlendirmeyi başlat →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">CogAT ve İngiltere 11+: Nasıl Kullanılır?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          ABD&apos;de CogAT Sözel Pil, sözel muhakeme ve kelime dağarcığı bileşenlerini içerir.
+          Sözel Olmayan Pil (kısmen Nicel Pil de dahil) matris ve örüntü soruları kullanır.
+          Çoğu ABD bölgesinde üstün zekâ programı seçimi için CogAT&apos;ta en az iki pilinde
+          92–96. yüzdelik dilim gerekir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İngiltere&apos;de seçici ortaöğretim testleri (11+) büyük ölçüde sözel ve sözel
+          olmayan muhakeme ağırlıklıdır. Grammar school başvurusu yapan Türk kökenli aileler
+          için bu iki alanda güçlü puan kritik önem taşır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Muhakeme Becerileri Geliştirilebilir mi?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Evet — ancak farklı yaklaşımlar gerektirir:
+        </p>
+        <div className="space-y-3 mb-4">
+          <Check><strong>Sözel muhakeme için:</strong> Geniş okuma, kelime dağarcığı çalışması ve sözel benzetme pratiği. 6–12 aylık tutarlı çalışma anlamlı kazanımlar sağlar.</Check>
+          <Check><strong>Sözel olmayan muhakeme için:</strong> Tangram, bulmacalar, matris muhakeme alıştırmaları ve uzamsal akıl yürütme içeren dijital araçlar. Uzamsal beceriler pratiğe karşı oldukça duyarlıdır.</Check>
+          <Cross><strong>Hızlı ezber:</strong> Sözel muhakemede sınırlı etki. Muhakeme becerileri, bilgi testlerinden farklı olarak kısa süreli hazırlığa az tepki verir.</Cross>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sık Sorulan Sorular</h2>
+        <div className="space-y-4">
+          {[
+            ['Sözel ve sözel olmayan muhakeme arasındaki temel fark nedir?', 'Sözel muhakeme dil aracılığıyla mantıksal düşünmeyi ölçer — benzetmeler, kelime ilişkileri, diziler. Sözel olmayan muhakeme dil gerektirmeksizin şekil ve örüntülerle soyut düşünmeyi ölçer. İkisi farklı bilişsel süreçleri yansıtır.'],
+            ['Ücretsiz sözel/sözel olmayan muhakeme testi var mı?', 'Eduentry, hem Sözel hem Sözel Olmayan Muhakeme içeren dört alanlı ücretsiz uyarlanabilir değerlendirme sunar. 6–20 yaş, 25–35 dakika, hesap gerekmez, ayrı ayrı puanlar verir.'],
+            ['Sözel olmayan muhakeme dil bariyeri olan çocuklar için adil midir?', 'Evet — sözel olmayan muhakeme testleri okuma gerektirmez. Bu nedenle ikinci dili İngilizce olan ya da yeni bir ülkeye göç etmiş çocuklar için en kültür bağımsız alan olarak kabul edilir.'],
+          ].map(([q, a]) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <p className="font-semibold text-gray-900 mb-2 text-sm">{q}</p>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  'cogat-basari-testi-farki': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        ABD&apos;deki pek çok aile, okulunun sadece MAP Growth verdiğini ve CogAT&apos;ı hiç
+        duymadığını fark edince şaşırır. Ya da tam tersine: çocuğunun CogAT yaptığını ama bunun
+        MAP&apos;tan ne farkı olduğunu bilmez. Bu iki test farklı sorulara yanıt verir — ve her
+        ikisini anlamak, çocuğunuz için en doğru adımı atmanıza yardımcı olur.
+      </p>
+      <Callout>
+        <strong>Temel fark tek cümlede:</strong> CogAT çocuğunuzun <em>nasıl</em> düşündüğünü
+        ölçer; MAP (ve diğer başarı testleri) <em>ne</em> öğrendiğini ölçer. İkisi birbirini
+        tamamlar — biri diğerinin yerini tutmaz.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">CogAT Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          CogAT (Bilişsel Yetenekler Testi), ABD&apos;de en yaygın kullanılan bilişsel yetenek
+          testidir. Üç pil içerir: Sözel, Nicel ve Sözel Olmayan. Her pil mantıksal akıl
+          yürütmeyi ölçer — değil müfredatı. Ortalama skala puanı 100, standart sapma 16&apos;dır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          CogAT bilişsel verimliliği ölçer: çocuğunuz yeni bilgiyi ne hızla ve ne etkin biçimde
+          işler? Bu, öğrenme kapasitesinin bir göstergesidir — öğrenilenin miktarının değil.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Growth ve Diğer Başarı Testleri Nedir?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP Growth (NWEA), müfredat ustalığını ölçen bir başarı testidir. Çocuğunuzun gerçekte
+          ne öğrendiğini — hangi matematik kavramlarını edindiğini, okuma seviyesini, dil
+          becerilerini — değerlendirir. RIT ölçeği kullanır (ortalama yaklaşık 200–220, sınıfa
+          bağlı).
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          MAP&apos;ın ölçtüğü şey öğrenim tarihine bağlıdır: iyi öğretim almış çocuklar
+          müfredatı daha az alanlara kıyasla daha yüksek MAP puanı elde eder. Bu önemlidir —
+          CogAT böyle çalışmaz.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">İki Test Karşılaştırması</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Özellik</th>
+                <th className="text-left p-4 font-semibold text-gray-700">CogAT</th>
+                <th className="text-left p-4 font-semibold text-gray-700">MAP Growth</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Ne ölçer?', 'Bilişsel yetenek (muhakeme)', 'Akademik başarı (müfredat)'],
+                ['Puan formatı', 'Ortalama 100, SD 16', 'RIT ölçeği (sınıfa göre 155–240+)'],
+                ['Öğretime duyarlılık', 'Düşük — çoğunlukla ezber ile değişmez', 'Yüksek — öğrenim kalitesine göre değişir'],
+                ['Üstün zekâ seçiminde kullanım', 'Birincil araç', 'Destekleyici araç'],
+                ['Hazırlık ile iyileştirme', 'Muhakeme pratiği (6–12 ay)', 'İçerik çalışması (doğrudan iyileşir)'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-gray-900 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5 my-8">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">Başarı + muhakeme: tam profil, ücretsiz</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">
+            Matematik ve İngilizce (başarı) + Sözel ve Sözel Olmayan Muhakeme tek oturumda.
+            6–20 yaş. Hesap gerekmez. 25–35 dakika.
+          </p>
+        </div>
+        <CtaLink href="/tr/akademik-degerlendirme" label="cogat_vs_achievement_tr_mid_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Ücretsiz değerlendirmeyi başlat →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Puanlar Ayrıştığında Ne Olur?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En bilgilendirici senaryolar, CogAT ve MAP puanlarının birbirinden ciddi ölçüde farklı
+          olduğu durumlardır:
+        </p>
+        <div className="space-y-3 mb-4">
+          {[
+            ['Yüksek CogAT, düşük MAP', 'Muhtemelen eksik öğretim görmüş yüksek potansiyelli bir öğrenci. Zenginleştirme müdahalesi ve kaliteli öğretim önerilir.'],
+            ['Düşük CogAT, yüksek MAP', 'Muhtemelen çalışkan, öğretimden en iyi şekilde yararlanan bir öğrenci. Üstün zekâ programı yerine müfredat derinleştirme düşünülebilir.'],
+            ['Her ikisi de yüksek', 'Güçlü potansiyel ve başarı — üstün zekâ programı başvurusu için ideal profil.'],
+            ['Her ikisi de orta', 'Öğrenme koşullarını ve ev ortamını gözden geçirin; spesifik hedefler belirleyin.'],
+          ].map(([scenario, detail]) => (
+            <div key={scenario} className="flex gap-4 p-4 border border-gray-100 rounded-xl">
+              <span className="font-semibold text-indigo-700 text-sm w-44 shrink-0 pt-0.5">{scenario}</span>
+              <span className="text-sm text-gray-600 leading-relaxed">{detail}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türk Aileler İçin Pratik Rehber</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          ABD&apos;deki Türk göçmen aileler için birkaç pratik not:
+        </p>
+        <div className="space-y-2 mb-4">
+          <Bullet>CogAT genellikle okul tarafından yapılır ve ebeveynler doğrudan talep edemez. Üstün zekâ programı başvurusu için öğretmen sevki genellikle ilk adımdır.</Bullet>
+          <Bullet>MAP mevcut okul öğrenimini ölçer — İngilizce dil engeli bazı Türk kökenli çocuklarda Matematik&apos;te güçlü, Okuma&apos;da daha düşük bir profil yaratabilir.</Bullet>
+          <Bullet>Sözel olmayan muhakeme testleri dil bağımsız olduğu için Türkçe ana dilli çocuklar bu alanda İngilizce konuşan akranlarıyla eşit koşullarda rekabet edebilir.</Bullet>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sık Sorulan Sorular</h2>
+        <div className="space-y-4">
+          {[
+            ['CogAT ve başarı testi arasındaki temel fark nedir?', 'CogAT bilişsel verimliliği (muhakeme hızı ve kapasitesi), başarı testleri müfredat ustalığını ölçer. Her ikisi de yararlıdır ancak farklı şeyleri ölçer.'],
+            ['Çocuğumun okulunda yalnızca MAP var. Muhakeme yeteneğini nasıl ölçebilirim?', 'Üstün zekâ sevki için okul yönetimiyle görüşebilirsiniz. İlk tarama için Eduentry\'nin ücretsiz değerlendirmesi Sözel ve Sözel Olmayan Muhakeme içerir.'],
+            ['CogAT\'a hazırlanmak MAP hazırlığından farklı mıdır?', 'Evet. MAP içerik çalışmasıyla doğrudan iyileşir. CogAT muhakeme pratiği gerektirir — 6–12 aylık tutarlı çalışma. Hızlı ezber CogAT\'ta etkili değildir.'],
+          ].map(([q, a]) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <p className="font-semibold text-gray-900 mb-2 text-sm">{q}</p>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  ),
+
+  '9-yasinda-iyi-akademik-puan-nedir': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        9 yaşındaki çocuğunuz için &ldquo;iyi puan nedir?&rdquo; sorusu, hangi teste ve hangi
+        normlara göre baktığınıza bağlıdır. Bu rehber, MAP Matematik ve Okuma kıyaslamalarını,
+        Lexile okuma aralıklarını, standartlaştırılmış muhakeme puan bantlarını ve ek testlerin
+        ne zaman değerlendirileceğini açıklar.
+      </p>
+      <Callout>
+        <strong>Hızlı kılavuz:</strong> 9 yaşı genellikle 3.–4. sınıf aralığına karşılık gelir.
+        MAP Matematik ulusal ortalaması 3. sınıfta RIT 188, 4. sınıfta RIT 197&apos;dir.
+        90. yüzdelik dilim (üstün zekâ sevk eşiği) 3. sınıfta RIT 208+, 4. sınıfta RIT 217+&apos;dır.
+      </Callout>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">9 Yaşı İçin MAP Matematik Kıyaslamaları</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Puan aralığı</th>
+                <th className="text-left p-4 font-semibold text-gray-700">3. sınıf (MAP)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">4. sınıf (MAP)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Ne anlama gelir?</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['25. yüzdelik dilim altı', 'RIT < 180', 'RIT < 189', 'Müdahale desteği değerlendirin'],
+                ['Ortalama (50. yüzdelik dilim)', 'RIT 188', 'RIT 197', 'Sınıf düzeyinde'],
+                ['Güçlü (75. yüzdelik dilim)', 'RIT 199', 'RIT 208', 'Sınıf düzeyinin üzerinde'],
+                ['Üstün zekâ aralığı (90. yüzdelik dilim)', 'RIT 208+', 'RIT 217+', 'Üstün zekâ sevkini değerlendirin'],
+              ].map((row) => (
+                <tr key={row[0]} className={`hover:bg-gray-50/50 ${row[0].includes('90.') ? 'bg-indigo-50/40' : ''}`}>
+                  <td className="p-4 font-semibold text-gray-900 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs font-mono">{row[1]}</td>
+                  <td className="p-4 text-gray-600 text-xs font-mono">{row[2]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">9 Yaşı İçin MAP Okuma Kıyaslamaları</h2>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Puan aralığı</th>
+                <th className="text-left p-4 font-semibold text-gray-700">3. sınıf (MAP)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">4. sınıf (MAP)</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Lexile karşılığı</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['25. yüzdelik dilim altı', 'RIT < 167', 'RIT < 175', '~400L altı'],
+                ['Ortalama (50. yüzdelik dilim)', 'RIT 177', 'RIT 185', '~650–800L'],
+                ['Güçlü (75. yüzdelik dilim)', 'RIT 191', 'RIT 199', '~900–1000L'],
+                ['Üstün zekâ aralığı (90. yüzdelik dilim)', 'RIT 202+', 'RIT 210+', '~1100L+'],
+              ].map((row) => (
+                <tr key={row[0]} className={`hover:bg-gray-50/50 ${row[0].includes('90.') ? 'bg-indigo-50/40' : ''}`}>
+                  <td className="p-4 font-semibold text-gray-900 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs font-mono">{row[1]}</td>
+                  <td className="p-4 text-gray-600 text-xs font-mono">{row[2]}</td>
+                  <td className="p-4 text-gray-600 text-xs">{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5 my-8">
+        <div className="flex-1">
+          <p className="font-bold text-white text-lg mb-1">9 yaşındaki çocuğunuz tam olarak nerede duruyor?</p>
+          <p className="text-indigo-100 text-sm leading-relaxed">
+            Ücretsiz uyarlanabilir değerlendirmemiz Matematik, İngilizce, Sözel ve Sözel Olmayan
+            Muhakeme&apos;yi kapsar. Uluslararası yüzdelik dilim. Hesap gerekmez. 25–35 dakika.
+          </p>
+        </div>
+        <CtaLink href="/tr/akademik-degerlendirme" label="age9_tr_mid_cta" className="shrink-0 bg-white text-indigo-700 font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-50 transition-colors whitespace-nowrap text-center">
+          Ücretsiz değerlendirmeyi başlat →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">9 Yaşı İçin Muhakeme Puan Bantları</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Standartlaştırılmış muhakeme değerlendirmelerinde (ortalama 100, SD 15 ölçeği):
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Puan bandı</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Yüzdelik dilim</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Ne anlama gelir?</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['< 85', '< 16.', 'Destekten yararlanabilir'],
+                ['85–99', '16.–47.', 'Ortalamanın altı–ortalama'],
+                ['100–114', '50.–82.', 'Ortalama–ortalamanın üstü'],
+                ['115–129', '84.–97.', 'Üstün — üstün zekâ sevkini değerlendirin'],
+                ['130+', '98.+', 'Son derece üstün — formal değerlendirme önerilir'],
+              ].map((row) => (
+                <tr key={row[0]} className={`hover:bg-gray-50/50 ${row[0] === '115–129' || row[0] === '130+' ? 'bg-indigo-50/40' : ''}`}>
+                  <td className="p-4 font-mono font-semibold text-gray-900 text-xs">{row[0]}</td>
+                  <td className="p-4 text-gray-600 text-xs">{row[1]}</td>
+                  <td className="p-4 text-gray-600 text-xs leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">9 Yaşında Ne Zaman Ek Test Değerlendirmelisiniz?</h2>
+        <div className="space-y-2 mb-4">
+          <Check>MAP veya eşdeğer testte sürekli 90. yüzdelik dilimin üzerinde puan alıyorsa</Check>
+          <Check>Öğretmen çalışmanın çocuk için çok kolay geldiğini söylüyorsa</Check>
+          <Check>5 yaşından önce okumaya başladıysa veya ileri matematiksel muhakeme gösteriyorsa</Check>
+          <Check>Belirli konulara yoğun ve derin merak duyuyorsa</Check>
+          <Cross>Çocuğunuz iyi notlar alıyor ama standartlaştırılmış testte düşük puan alıyorsa — önce nedenini anlayın</Cross>
+          <Cross>Puan karışık (bazı alanda yüksek, bazılarında düşük) — ayrıntılı profil önce gereklidir</Cross>
+        </div>
+        <Callout color="amber">
+          <strong>Önemli not:</strong> Üstün zekâ tanımlaması, tek bir testten çok birden fazla
+          test puanı, öğretmen gözlemi ve ebeveyn görüşünü içeren bir portföy sürecidir. Hiçbir
+          tek puan belirleyici değildir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sık Sorulan Sorular</h2>
+        <div className="space-y-4">
+          {[
+            ['9 yaşında hangi MAP puanı iyi sayılır?', '3. sınıf için Matematik RIT 188 ortalama; 199 güçlü (75. yüzdelik dilim); 208+ üstün zekâ aralığı (90. yüzdelik dilim). Okuma için: 177 ortalama; 191 güçlü; 202+ üstün zekâ aralığı.'],
+            ['9 yaşında hangi okuma düzeyi beklenir?', 'Sınıf düzeyindeki 9 yaşlı çocuklar yaklaşık Lexile 500–900L düzeyinde kitap okumalıdır. 90. yüzdelik dilimde olanlar 1100L+ okuyabilir — bu ortaokul üstü veya lise düzeyine karşılık gelir.'],
+            ['9 yaşındaki çocuğum üstün zekâlı mı diye nasıl anlarım?', 'MAP puanlarının sürekli 90. yüzdelik dilimin üzerinde olması, öğretmen geri bildirimi ve erken gelişimsel belirtiler (erken okuma, ileri matematik) başvuruyu destekleyen göstergelerdir. Formal tanımlama okul veya özel değerlendirme gerektirir.'],
+          ].map(([q, a]) => (
+            <div key={q} className="border border-gray-100 rounded-xl p-5">
+              <p className="font-semibold text-gray-900 mb-2 text-sm">{q}</p>
+              <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </>
   ),
