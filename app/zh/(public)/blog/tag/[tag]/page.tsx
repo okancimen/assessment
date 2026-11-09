@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import { BLOG_POSTS } from '@/app/blog/posts'
 import { BLOG_POSTS_ZH } from '@/app/blog/posts-zh'
 import { slugToTag, getAllTagSlugs, getLocalePostsByTag, TAG_META } from '@/app/blog/tag-utils'
@@ -43,7 +43,7 @@ export default async function ZHTagPage({ params }: { params: Promise<{ tag: str
   const tagName = slugToTag(tagSlug)
   if (!tagName) notFound()
   const posts = getLocalePostsByTag(tagName, BLOG_POSTS_ZH, BLOG_POSTS)
-  if (posts.length === 0) notFound()
+  if (posts.length === 0) redirect('/zh/blog')
 
   const url = `${BASE_URL}/zh/blog/tag/${tagSlug}`
 

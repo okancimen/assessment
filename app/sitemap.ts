@@ -1,6 +1,5 @@
 import type { MetadataRoute } from 'next'
 import { BLOG_POSTS } from './blog/posts'
-import { TAG_SLUGS } from './blog/tag-utils'
 import { BLOG_POSTS_ES } from './blog/posts-es'
 import { BLOG_POSTS_TR } from './blog/posts-tr'
 import { BLOG_POSTS_FR } from './blog/posts-fr'
@@ -98,7 +97,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${BASE}/11-plus`,         lastModified: '2026-09-23', changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/11-plus-sas-scores`, lastModified: '2026-10-13', changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE}/grammar-schools`, lastModified: '2026-09-23', changeFrequency: 'monthly', priority: 0.8 },
+    // /grammar-schools redirects to / — omitted from sitemap
     { url: `${BASE}/subjects`,        lastModified: '2026-09-09', changeFrequency: 'monthly', priority: 0.8 },
     {
       url: `${BASE}/about`,
@@ -177,7 +176,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ])
 
   // Posts that next.config.ts redirects elsewhere don't belong in the sitemap
-  const REDIRECTED = new Set(['australia-oc-test-guide'])
+  const REDIRECTED = new Set([
+    'australia-oc-test-guide',
+    'business-work-experience-high-school-uk',
+    'business-work-experience-year-12',
+    'early-internship-child-development-career',
+    'oecd-teenage-part-time-work-benefits',
+    'oecd-teenage-work-experience-career-outcomes',
+  ])
   const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.filter((post) => !REDIRECTED.has(post.slug)).map((post) => {
     const s = post.slug
     const langs: Record<string, string> = { 'en-GB': `${BASE}/blog/${s}`, 'x-default': `${BASE}/blog/${s}` }
@@ -568,40 +574,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   ]
 
-  const tagPages: MetadataRoute.Sitemap = TAG_SLUGS.map(([slug]) => ({
-    url: `${BASE}/blog/tag/${slug}`,
-    lastModified: latestEN,
-    changeFrequency: 'weekly' as const,
-    priority: 0.6,
-    alternates: {
-      languages: {
-        'en-GB': `${BASE}/blog/tag/${slug}`,
-        tr: `${BASE}/tr/blog/tag/${slug}`,
-        es: `${BASE}/es/blog/tag/${slug}`,
-        fr: `${BASE}/fr/blog/tag/${slug}`,
-        ar: `${BASE}/ar/blog/tag/${slug}`,
-        ru: `${BASE}/ru/blog/tag/${slug}`,
-        zh: `${BASE}/zh/blog/tag/${slug}`,
-        'x-default': `${BASE}/blog/tag/${slug}`,
-      },
-    },
-  }))
+  // Tag pages are excluded from the sitemap: all have robots noindex and many
+  // locale/tag combinations have zero posts (returning 404). Including noindex
+  // pages in the sitemap creates a signal conflict that inflates GSC coverage errors.
 
-  const localeTagPages: MetadataRoute.Sitemap = ['tr', 'es', 'fr', 'ar', 'ru', 'zh'].flatMap((locale) =>
-    TAG_SLUGS.map(([slug]) => ({
-      url: `${BASE}/${locale}/blog/tag/${slug}`,
-      lastModified: latestEN,
-      changeFrequency: 'weekly' as const,
-      priority: 0.5,
-      alternates: {
-        languages: {
-          'en-GB': `${BASE}/blog/tag/${slug}`,
-          'x-default': `${BASE}/blog/tag/${slug}`,
-          [locale]: `${BASE}/${locale}/blog/tag/${slug}`,
-        },
-      },
-    }))
-  )
-
-  return [...staticPages, ...subjectPages, ...blogPages, ...tagPages, ...localeTagPages, ...esPages, ...trPages, ...frPages, ...arPages, ...ruPages, ...zhPages]
+  return [...staticPages, ...subjectPages, ...blogPages, ...esPages, ...trPages, ...frPages, ...arPages, ...ruPages, ...zhPages]
 }
