@@ -21,7 +21,6 @@ function detectLanguage(acceptLanguage: string | null): string {
 
 const INTERNSHIP_PAGES: Record<string, string> = {
   '/internship': '/en',
-  '/tr/staj': '/tr',
   '/es/practicas': '/es',
   '/fr/stage': '/fr',
   '/ar/tadrib': '/ar',
