@@ -9,12 +9,16 @@ Setup:
   4. Download the service account JSON key and set SERVICE_ACCOUNT_FILE below.
 
 Usage:
-  python3 indexing_api.py           # submits first 200 URLs (day 1)
-  python3 indexing_api.py 200       # submits from index 200 onward (day 2)
+  python3 indexing_api.py           # auto-advances through queue using indexing_state.json
+  python3 indexing_api.py 200       # override: start at index 200 (also saves state)
+
+The script persists its position in indexing_state.json. Each cron run advances by
+DAILY_LIMIT URLs; after the queue is exhausted it wraps back to 0 on the next run.
 
 Note: Google Indexing API limit is 200 URL_UPDATED requests per day per service account.
 """
 
+import json
 import re
 import subprocess
 import sys
@@ -35,6 +39,19 @@ RECENT_DAYS = 20          # only submit pages changed within this window
 # ── Recent-filter helpers ─────────────────────────────────────────────────────
 
 REPO_ROOT = Path(__file__).parent
+STATE_FILE = REPO_ROOT / "indexing_state.json"  # persists queue position across runs
+
+
+def _load_start() -> int:
+    """Read saved queue position from state file; return 0 if missing."""
+    try:
+        return int(json.loads(STATE_FILE.read_text()).get("start", 0))
+    except (FileNotFoundError, ValueError, json.JSONDecodeError):
+        return 0
+
+
+def _save_start(next_start: int) -> None:
+    STATE_FILE.write_text(json.dumps({"start": next_start}))
 
 _LOCALE_POSTS = {
     "":   "app/blog/posts.ts",
@@ -752,7 +769,13 @@ URLS_TO_SUBMIT = [
 ]
 
 
-def submit_urls(start: int = 0):
+def submit_urls(start: int | None = None):
+    """Submit up to DAILY_LIMIT URLs starting at `start` (default: load from state file).
+
+    After a successful run the next start position is saved to STATE_FILE so the
+    cron can call this with no arguments and automatically advance through the queue.
+    When the queue is exhausted the position wraps back to 0 for the next cycle.
+    """
     try:
         credentials = service_account.Credentials.from_service_account_file(
             SERVICE_ACCOUNT_FILE, scopes=SCOPES
@@ -763,13 +786,23 @@ def submit_urls(start: int = 0):
         print(f"save it as '{SERVICE_ACCOUNT_FILE}' in this directory.")
         return
 
+    if start is None:
+        start = _load_start()
+        print(f"Resuming from saved position: {start}\n")
+
     service = build("indexing", "v3", credentials=credentials)
 
     # Merge auto-generated blog URLs with manually listed non-blog URLs, deduplicated
     combined = list(dict.fromkeys(_all_blog_urls() + URLS_TO_SUBMIT))
     urls = filter_recent(combined)
-    batch = urls[start : start + DAILY_LIMIT]
     total = len(urls)
+
+    # Wrap if the saved position exceeds the current queue length (queue shrank)
+    if start >= total:
+        print(f"Start index {start} ≥ total {total} — wrapping to 0.\n")
+        start = 0
+
+    batch = urls[start : start + DAILY_LIMIT]
     end = min(start + DAILY_LIMIT, total)
 
     print(f"Total after filter: {total}")
@@ -792,14 +825,20 @@ def submit_urls(start: int = 0):
             print(f"       error: {e}")
             failed += 1
 
+    next_start = end if end < total else 0
+    _save_start(next_start)
+
     print(f"\nDone — {ok} submitted, {failed} failed.")
     if end < total:
-        print(f"\nRemaining: {total - end} URLs. Run tomorrow with:")
-        print(f"  python3 indexing_api.py {end}")
+        print(f"\nRemaining: {total - end} URLs. Next run will start at index {next_start}.")
+        print(f"  (cron will handle it automatically, or: python3 indexing_api.py)")
     else:
-        print("\nAll recent URLs submitted.")
+        print(f"\nAll recent URLs submitted. Queue wrapped to 0 for next cycle.")
 
 
 if __name__ == "__main__":
-    start_index = int(sys.argv[1]) if len(sys.argv) > 1 else 0
-    submit_urls(start_index)
+    override = int(sys.argv[1]) if len(sys.argv) > 1 else None
+    if override is not None:
+        _save_start(override)
+        print(f"State overridden to index {override}.\n")
+    submit_urls(override)

@@ -47,3 +47,4 @@ demo_result*.png
 .claude/
 service_account.json
 client_secret.json
+indexing_state.json
