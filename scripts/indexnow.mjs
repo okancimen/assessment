@@ -128,10 +128,29 @@ for (const file of changed) {
     urls.add(`${BASE}/${segment}`)
   }
 
-  // Sitemap changed → submit all static pages
+  // Sitemap changed → submit all static + locale static pages
   if (file === 'app/sitemap.ts') {
-    ;['/about', '/methodology', '/subjects', '/grammar-schools', '/11-plus', '/your-childs-potential',
-      '/sample-report', '/demo'].forEach(p => urls.add(BASE + p))
+    ;[
+      '/about', '/methodology', '/subjects', '/11-plus', '/your-childs-potential',
+      '/personality-assessment', '/academic-assessment', '/sample-report', '/demo',
+      '/tr', '/tr/hakkimizda', '/tr/metodoloji', '/tr/cocugunuzun-potansiyeli',
+      '/tr/kisilik-degerlendirmesi', '/tr/akademik-degerlendirme',
+      '/tr/kisilik-ornek-rapor', '/tr/ornek-rapor', '/tr/staj',
+      '/es', '/es/sobre-nosotros', '/es/metodologia', '/es/potencial-de-tu-hijo',
+      '/es/evaluacion-de-personalidad', '/es/evaluacion-academica',
+      '/es/informe-de-ejemplo-personalidad', '/es/informe-de-ejemplo',
+      '/fr', '/fr/a-propos', '/fr/methodologie', '/fr/potentiel-de-votre-enfant',
+      '/fr/evaluation-de-personnalite', '/fr/evaluation-academique',
+      '/fr/exemple-rapport-personnalite', '/fr/exemple-de-rapport',
+      '/ar', '/ar/hawlana', '/ar/manhajiyya', '/ar/imkaniyat-tiflik',
+      '/ar/taqyim-al-shakhsiya', '/ar/taqyim-acadimi',
+      '/ar/namudhaj-taqrir-shakhsiya', '/ar/taqrir-namudhaji',
+      '/ru', '/ru/o-nas', '/ru/metodologiya', '/ru/potentsial-vashego-rebyonka',
+      '/ru/otsenka-lichnosti', '/ru/akademicheskaya-otsenka',
+      '/ru/primer-otcheta-lichnosti', '/ru/primer-otcheta',
+      '/zh', '/zh/guanyu-women', '/zh/fangfalun', '/zh/haizi-de-qianli',
+      '/zh/xingge-pinggu', '/zh/xueshu-pinggu', '/zh/xingge-yangben-baogao', '/zh/yangben-baogao',
+    ].forEach(p => urls.add(BASE + p))
   }
 
   // Tag utils changed → submit all EN + locale tag pages
