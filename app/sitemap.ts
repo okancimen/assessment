@@ -303,6 +303,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/tr/kisilik-degerlendirmesi`, lastModified: '2026-10-10', changeFrequency: 'monthly' as const, priority: 0.9, alternates: PERSONALITY_ALTERNATES },
     { url: `${BASE}/tr/akademik-degerlendirme`, lastModified: '2026-10-11', changeFrequency: 'monthly' as const, priority: 0.9, alternates: ACADEMIC_ALTERNATES },
     { url: `${BASE}/tr/kisilik-ornek-rapor`, lastModified: '2026-10-13', changeFrequency: 'monthly' as const, priority: 0.8, alternates: PERSONALITY_SAMPLE_ALTERNATES },
+    { url: `${BASE}/tr/staj`, lastModified: '2026-11-10', changeFrequency: 'monthly' as const, priority: 0.8 },
     {
       url: `${BASE}${SAMPLE_REPORT_PATHS.tr}`,
       lastModified: '2026-10-04',
