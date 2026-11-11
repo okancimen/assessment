@@ -128,6 +128,13 @@ for (const file of changed) {
     urls.add(`${BASE}/${segment}`)
   }
 
+  // Locale static pages — map route file to URL
+  const localeStaticMatch = file.match(/^app\/([a-z]{2})\/\(public\)\/([^/]+)\/page\.tsx/)
+  if (localeStaticMatch) {
+    const [, locale, slug] = localeStaticMatch
+    urls.add(`${BASE}/${locale}/${slug}`)
+  }
+
   // Sitemap changed → submit all static + locale static pages
   if (file === 'app/sitemap.ts') {
     ;[
