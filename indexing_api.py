@@ -39,19 +39,18 @@ RECENT_DAYS = 20          # only submit pages changed within this window
 # ── Recent-filter helpers ─────────────────────────────────────────────────────
 
 REPO_ROOT = Path(__file__).parent
-STATE_FILE = REPO_ROOT / "indexing_state.json"  # persists queue position across runs
+SUBMITTED_FILE = REPO_ROOT / "indexing_submitted.json"  # URLs submitted this cycle
 
 
-def _load_start() -> int:
-    """Read saved queue position from state file; return 0 if missing."""
+def _load_submitted() -> set:
     try:
-        return int(json.loads(STATE_FILE.read_text()).get("start", 0))
+        return set(json.loads(SUBMITTED_FILE.read_text()))
     except (FileNotFoundError, ValueError, json.JSONDecodeError):
-        return 0
+        return set()
 
 
-def _save_start(next_start: int) -> None:
-    STATE_FILE.write_text(json.dumps({"start": next_start}))
+def _save_submitted(submitted: set) -> None:
+    SUBMITTED_FILE.write_text(json.dumps(sorted(submitted)))
 
 _LOCALE_POSTS = {
     "":   "app/blog/posts.ts",
@@ -770,11 +769,12 @@ URLS_TO_SUBMIT = [
 
 
 def submit_urls(start: int | None = None):
-    """Submit up to DAILY_LIMIT URLs starting at `start` (default: load from state file).
+    """Submit up to DAILY_LIMIT URLs, prioritising unsubmitted URLs first.
 
-    After a successful run the next start position is saved to STATE_FILE so the
-    cron can call this with no arguments and automatically advance through the queue.
-    When the queue is exhausted the position wraps back to 0 for the next cycle.
+    Successfully submitted URLs are tracked in SUBMITTED_FILE. Each run builds
+    the queue as [not yet submitted] + [already submitted this cycle], so new or
+    unindexed URLs always get priority. When every URL in the queue has been
+    submitted, the submitted set is cleared and the next cycle starts fresh.
     """
     try:
         credentials = service_account.Credentials.from_service_account_file(
@@ -786,10 +786,6 @@ def submit_urls(start: int | None = None):
         print(f"save it as '{SERVICE_ACCOUNT_FILE}' in this directory.")
         return
 
-    if start is None:
-        start = _load_start()
-        print(f"Resuming from saved position: {start}\n")
-
     service = build("indexing", "v3", credentials=credentials)
 
     # Merge auto-generated blog URLs with manually listed non-blog URLs, deduplicated
@@ -797,17 +793,22 @@ def submit_urls(start: int | None = None):
     urls = filter_recent(combined)
     total = len(urls)
 
-    # Wrap if the saved position exceeds the current queue length (queue shrank)
-    if start >= total:
-        print(f"Start index {start} ≥ total {total} — wrapping to 0.\n")
-        start = 0
+    # Sort: unsubmitted URLs first, already-submitted ones at the end
+    submitted = _load_submitted()
+    urls = [u for u in urls if u not in submitted] + [u for u in urls if u in submitted]
 
-    batch = urls[start : start + DAILY_LIMIT]
-    end = min(start + DAILY_LIMIT, total)
+    unsubmitted_count = sum(1 for u in urls if u not in submitted)
+    print(f"Total after filter: {total}  |  unsubmitted: {unsubmitted_count}  |  already submitted this cycle: {total - unsubmitted_count}\n")
 
-    print(f"Total after filter: {total}")
-    print(f"Submitting {len(batch)} URLs (index {start}–{end - 1})...\n")
-    ok, failed = 0, 0
+    # Manual override: honour explicit start index (python3 indexing_api.py 50)
+    if start is not None:
+        batch = urls[start : start + DAILY_LIMIT]
+        print(f"Manual override — submitting {len(batch)} URLs (index {start}–{start + len(batch) - 1})...\n")
+    else:
+        batch = urls[:DAILY_LIMIT]
+        print(f"Submitting {len(batch)} URLs...\n")
+
+    ok_urls, failed = [], 0
 
     for url in batch:
         try:
@@ -819,26 +820,27 @@ def submit_urls(start: int | None = None):
             ).get("notifyTime", "–")
             print(f"  ✓  {url}")
             print(f"       notifyTime: {notify_time}")
-            ok += 1
+            ok_urls.append(url)
         except Exception as e:
             print(f"  ✗  {url}")
             print(f"       error: {e}")
             failed += 1
 
-    next_start = end if end < total else 0
-    _save_start(next_start)
-
-    print(f"\nDone — {ok} submitted, {failed} failed.")
-    if end < total:
-        print(f"\nRemaining: {total - end} URLs. Next run will start at index {next_start}.")
-        print(f"  (cron will handle it automatically, or: python3 indexing_api.py)")
+    # Update submitted set
+    submitted.update(ok_urls)
+    all_done = all(u in submitted for u in urls)
+    if all_done:
+        print(f"\nFull cycle complete — resetting submitted list for next cycle.")
+        _save_submitted(set())
     else:
-        print(f"\nAll recent URLs submitted. Queue wrapped to 0 for next cycle.")
+        _save_submitted(submitted)
+        remaining = sum(1 for u in urls if u not in submitted)
+        print(f"\nRemaining this cycle: {remaining} URLs.")
+        print(f"  (cron will handle it automatically, or: python3 indexing_api.py)")
+
+    print(f"\nDone — {len(ok_urls)} submitted, {failed} failed.")
 
 
 if __name__ == "__main__":
     override = int(sys.argv[1]) if len(sys.argv) > 1 else None
-    if override is not None:
-        _save_start(override)
-        print(f"State overridden to index {override}.\n")
     submit_urls(override)
