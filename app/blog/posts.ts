@@ -697,10 +697,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'nwea-map-scores-explained',
-    title: 'NWEA MAP Scores by Grade Level 2026: RIT Charts, Averages & Gifted Cut-offs',
-    shortTitle: 'MAP Scores by Grade Level 2026: RIT Chart, K–12 Averages & Gifted Cut-offs',
+    title: 'MAP Scores by Grade Level 2026 — NWEA RIT Charts, Averages & Gifted Cut-offs',
+    shortTitle: 'MAP Scores by Grade Level 2026: RIT Charts, K–12 Averages & Gifted Cut-offs',
     description:
-      'Is your child on grade level? MAP Math avg: Gr 3 = 200, Gr 5 = 214, Gr 8 = 221. RIT charts for every grade K–12 in Math and Reading, gifted cut-offs (95th %ile ≈ 230+), and a free percentile calculator.',
+      '2026 MAP RIT averages by grade: Math 3rd=200, 5th=214, 8th=221. Full RIT charts K–12 for Math, Reading & Language Usage, gifted cut-offs (95th %ile ≈ 230 RIT), and a free percentile calculator.',
     tldr: 'According to NWEA\'s 2020 national norming study — the current benchmark for 2025–26 — the national average MAP Math RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
@@ -709,12 +709,16 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     tags: ['NWEA MAP', 'RIT Scores', 'US Education', 'Gifted Programs', 'Assessment'],
     faqs: [
       {
-        q: 'What are NWEA MAP RIT scores by grade level for 2025–26?',
-        a: 'Average fall 2025–26 MAP Math RIT scores by grade: Grade 3 ≈ 188, Grade 4 ≈ 197, Grade 5 ≈ 205, Grade 6 ≈ 211, Grade 7 ≈ 215, Grade 8 ≈ 219. For Reading: Grade 3 ≈ 196, Grade 4 ≈ 207, Grade 5 ≈ 214, Grade 6 ≈ 218, Grade 7 ≈ 221, Grade 8 ≈ 223. These norms are from the 2020 NWEA national norming study, which remains the current reference for 2025–26. A student scoring 10+ points above average is at approximately the 75th percentile; 15+ points above average is around the 90th percentile.',
+        q: 'What are NWEA MAP RIT scores by grade level for 2026?',
+        a: 'Average fall 2026 MAP RIT scores by grade (NWEA 2020 national norms): Math — Grade 3 ≈ 188, Grade 4 ≈ 197, Grade 5 ≈ 205, Grade 6 ≈ 211, Grade 7 ≈ 215, Grade 8 ≈ 219. Reading — Grade 3 ≈ 177, Grade 4 ≈ 185, Grade 5 ≈ 191, Grade 6 ≈ 197, Grade 7 ≈ 201, Grade 8 ≈ 204. Language Usage — Grade 3 ≈ 179, Grade 4 ≈ 187, Grade 5 ≈ 193, Grade 6 ≈ 198, Grade 8 ≈ 204. A score 10+ points above the grade average is approximately the 75th percentile; 15+ points above is around the 90th percentile.',
       },
       {
         q: 'What is a good MAP ELA/Reading score for fall 2026?',
-        a: 'For fall 2026 (which uses the same 2020 NWEA norms), a strong MAP Reading RIT score varies by grade: Grade 3 above 210 (≈85th percentile), Grade 4 above 220 (≈85th percentile), Grade 5 above 226 (≈85th percentile), Grade 6 above 228 (≈85th percentile), Grade 7 above 232 (≈85th percentile). A score of 230 in Grade 5 ELA/Reading places a student roughly at the 93rd–95th percentile nationally — well into the range that triggers gifted evaluation in most districts. NWEA does not publish separate "fall 2026" norms; the 2020 national norms apply.',
+        a: 'For fall 2026 (which uses the same 2020 NWEA norms), a strong MAP Reading RIT score varies by grade: Grade 3 above 202 (≈90th percentile), Grade 4 above 210 (≈90th percentile), Grade 5 above 217 (≈90th percentile), Grade 6 above 223 (≈90th percentile), Grade 7 above 228 (≈90th percentile). A score of 217 in Grade 5 Reading places a student roughly at the 90th percentile nationally — well into the range that triggers gifted evaluation in most districts. NWEA does not publish separate "fall 2026" norms; the 2020 national norms apply.',
+      },
+      {
+        q: 'What are MAP Language Usage scores by grade level for 2026?',
+        a: 'Average fall 2026 MAP Language Usage RIT scores by grade (from the 2020 NWEA national norms): Grade 3 ≈ 179, Grade 4 ≈ 187, Grade 5 ≈ 193, Grade 6 ≈ 198, Grade 7 ≈ 201, Grade 8 ≈ 204. The 90th percentile cut-offs are: Grade 3 ≈ 196, Grade 5 ≈ 210, Grade 8 ≈ 221. Language Usage scores typically run 5–10 RIT points below Reading scores at the same grade level and measure grammar, punctuation, sentence structure, and writing conventions.',
       },
       {
         q: 'What is a RIT score on the NWEA MAP test?',

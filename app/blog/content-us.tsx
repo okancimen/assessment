@@ -257,9 +257,9 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Math RIT Score Chart by Grade Level (2025–26)</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Math RIT Score Chart by Grade Level (2026)</h2>
         <p className="text-gray-700 leading-relaxed mb-5">
-          The table below shows fall RIT score benchmarks for Math from the NWEA 2020 national norming study — the most recently published national norms, which remain the current reference for 2025–26. The columns show the 25th, 50th (national average), 75th, and 90th percentiles.
+          The table below shows fall RIT score benchmarks for Math from the NWEA 2020 national norming study — the most recently published national norms, which remain the current reference for the 2025–26 school year. The columns show the 25th, 50th (national average), 75th, and 90th percentiles.
         </p>
         <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
           <table className="w-full text-sm">
@@ -301,7 +301,7 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Reading RIT Score Chart by Grade Level (2025–26)</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Reading RIT Score Chart by Grade Level (2026)</h2>
         <p className="text-gray-700 leading-relaxed mb-5">
           Fall Reading RIT benchmarks using the same NWEA 2020 national norms. Reading growth is faster in the early grades and slows considerably after Grade 6.
         </p>
@@ -342,6 +342,53 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
           </table>
         </div>
         <p className="text-sm text-gray-500">Source: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">MAP Language Usage RIT Score Chart by Grade Level (2025–26)</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Language Usage measures grammar, punctuation, sentence structure, and writing conventions — the mechanics of written English. These fall benchmarks are drawn from the NWEA 2020 national norms and apply to 2025–26.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-3">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-3 font-semibold text-gray-700">Grade (fall)</th>
+                <th className="text-center p-3 font-semibold text-gray-500">25th %ile</th>
+                <th className="text-center p-3 font-semibold text-gray-700">50th %ile (avg)</th>
+                <th className="text-center p-3 font-semibold text-indigo-700">75th %ile</th>
+                <th className="text-center p-3 font-semibold text-purple-700">90th %ile</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Kindergarten', '128', '139', '151', '161'],
+                ['Grade 1', '147', '157', '167', '176'],
+                ['Grade 2', '160', '169', '178', '187'],
+                ['Grade 3', '170', '179', '188', '196'],
+                ['Grade 4', '178', '187', '196', '204'],
+                ['Grade 5', '184', '193', '202', '210'],
+                ['Grade 6', '190', '198', '206', '213'],
+                ['Grade 7', '193', '201', '209', '216'],
+                ['Grade 8', '195', '204', '213', '221'],
+                ['Grade 9', '198', '207', '216', '224'],
+                ['Grade 10', '200', '209', '218', '226'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-3 font-semibold text-gray-900">{row[0]}</td>
+                  <td className="p-3 text-center text-gray-500">{row[1]}</td>
+                  <td className="p-3 text-center text-gray-700 font-medium">{row[2]}</td>
+                  <td className="p-3 text-center text-indigo-600 font-medium">{row[3]}</td>
+                  <td className="p-3 text-center text-purple-600 font-medium">{row[4]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 mb-3">Source: NWEA 2020 MAP Growth Norms for Student and School Achievement Status and Growth.</p>
+        <p className="text-sm text-gray-600 leading-relaxed bg-amber-50 border border-amber-100 rounded-lg p-4">
+          <strong className="text-amber-900">Note:</strong> Language Usage scores tend to track 5–10 RIT points below Reading scores at most grades. If your child scores significantly below grade average in Language Usage but at or above average in Reading, targeted practice in grammar and punctuation conventions — rather than general reading — is the most efficient intervention.
+        </p>
       </section>
 
       <div className="rounded-2xl bg-indigo-600 p-6 flex flex-col sm:flex-row sm:items-center gap-5">
