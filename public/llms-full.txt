@@ -1,7 +1,7 @@
 # Eduentry — Full Content Reference
 
 > This document provides detailed descriptions of all Eduentry content for AI systems. For a summary version see /llms.txt.
-> Last updated: 2026-10-26
+> Last updated: 2026-11-13
 
 ---
 
@@ -332,6 +332,10 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 
 **How to Get an Internship with No Experience** [/blog/how-to-get-internship-no-experience-high-school]: Five-step guide for high school students with no prior work history. Step 1: Skill mapping — identify academic, extracurricular, and digital skills. Step 2: Use a readiness report (Eduentry.ai) instead of an empty CV. Step 3: Alternative experience — virtual internships (Springpod, Forage), school projects, volunteering. Step 4: Network beyond parents — teachers, family friends, LinkedIn outreach. Step 5: Send a personalised application letter referencing something specific about the employer. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
 
+**Dubai High School Guide 2026: GCSE, A Level and IB Diploma Compared** [/blog/dubai-high-school-gcse-ib-guide]: Secondary education in Dubai is delivered by KHDA-licensed private schools. Most common curriculum: British (GCSE + A Level), followed by IB Diploma and American. A Level is the strongest direct route to UK universities; IB offers broader global recognition for US, Canada, and European admissions. KHDA ratings (Outstanding, Good, Acceptable, Weak, Very Weak) are the primary quality signal for school selection. Includes comparison of curriculum types, university pathway analysis, and 2026 admissions context. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
+
+**NSW Opportunity Class (OC) Test Guide** [/blog/australia-oc-test-guide]: Complete guide to the NSW OC Placement Test for Year 4 students. OC classes run from Year 5 in NSW public primary schools — approximately 76 OC schools with 30 places each, roughly 14,000 applicants for 2,100 places annually. Test components: Reading (27.5%), Mathematical Reasoning (27.5%), and Thinking Skills (45%). Thinking Skills — the largest component — covers verbal reasoning, abstract reasoning, and logical sequences, and is the most IQ-like component. Placement is norm-referenced: no fixed pass mark; scores are ranked against all applicants within each placement group region. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
+
 **What Is the 11+ Exam? Complete Parent's Guide** [/blog/what-is-the-11-plus-exam-complete-guide]: Comprehensive 2500-word guide to the 11+ grammar school entrance exam for UK families. Covers: GL Assessment vs CEM format differences and which LEAs use each; SAS score benchmarks (111–118 for most grammar schools outside London, 118–125 for selective London schools, 127–132 for the most competitive); why school grades don't predict 11+ results (curriculum vs reasoning ability); the four tested domains (English, Maths, Verbal Reasoning, Non-Verbal Reasoning) with difficulty levels and improvement potential for each; the three most common preparation mistakes (no diagnostic baseline, interpreting raw percentages, manufacturing exam anxiety); how 2PL IRT / CAT adaptive testing works and why Eduentry's SAS scores are directly comparable to GL Assessment scores; structured 12–18-month preparation timeline. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
 
 **Finance Work Experience for Sixth Form Students** [/blog/finance-work-experience-sixth-form-uk]: Guide to finance work experience for UK Year 12 and Year 13 students. Spring Insight weeks: Goldman Sachs (one week, London, 5–10% acceptance), JPMorgan Year 12 Insight, Barclays Year 12 Bespoke, HSBC Insight Week, UBS and Deutsche Bank — all applications open September–November for February/March placements. Big 4 accounting: KPMG, Deloitte, PwC, EY — more flexible A-level requirements, applications open October–December. Direct approach to smaller firms (IFAs, asset managers, fintech start-ups) advised in parallel. What differentiates applications: firm-specific motivation (naming a real deal, product, or news event), verified numerical aptitude, commercial awareness demonstrated by a specific example. How to use the experience in a UCAS personal statement: document with a daily log, write a 200-word reflection within a week, use specific observations not generic assertions. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
@@ -339,6 +343,14 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 **How to Help Your Child Get Work Experience at 15** [/blog/how-to-help-child-get-work-experience]: Parent-facing guide to securing structured work experience for children aged 14–16. Key lever: a direct professional message from a parent to a known manager converts at far higher rate than a student cold application — fewer than 10% of parents use this systematically. Year 10 (age 14–15) is the optimal starting point; starting at 15 gives the child 2+ years to compound experience before their UCAS application. What to look for: a placement with a defined brief and real deliverable, not just observation — ask "what will my child produce during the week?" Preparation: research the organisation together before day one; prepare 3 intelligent questions; run a daily 5-minute debrief. Documentation: within one week of finishing, write a 200-word reflection capturing specific observations — this becomes the raw material for personal statements written 2 years later. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
 
 **High School Internship Benefits** [/blog/high-school-internship-benefits-university]: Russell Group universities explicitly reference work experience in admissions guidance. Medicine, law, and technology programmes treat placement experience as near-requirement. Personal statements from students with genuine work experience contain specific observations and reflections — "evidence, not assertion" — which admissions readers are trained to recognise and reward. Big Five personality research shows conscientiousness and openness scores improve measurably in students who complete structured placements before age 17.
+
+**Business Work Experience at High School in the UK** [/blog/business-work-experience-high-school-uk]: How to find a business work placement in Year 10–13. Most formal large-employer schemes start accepting students from Year 10 (age 14–15). FTSE 100 firms including Barclays, Goldman Sachs, KPMG, and Deloitte run dedicated Year 12 Spring Insight programmes, with application windows opening September–November. Sectors with accessible entry points: banking, management consulting, accounting, insurance, and corporate law. Differentiators for successful applications: firm-specific motivation, numerical aptitude evidence, commercial awareness. How to use the experience in UCAS: document with daily log, write a 200-word reflection within a week. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
+
+**Business Work Experience in Year 12: The Complete UK Guide** [/blog/business-work-experience-year-12]: Year-by-year guide (ages 12–18) to business work experience in the UK. FTSE 100 Year 12 programmes: Barclays, Goldman Sachs, KPMG, Deloitte, PwC, EY, McKinsey Insight, and BCG — application windows typically September–November for the following year, approximately 10–20 applications per place at the most selective firms. Includes applications strategy, CV structure for school-age students, and how to prepare for assessment centre exercises. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
+
+**OECD Research: Teenage Work Experience and Career Outcomes** [/blog/oecd-teenage-work-experience-career-outcomes]: 40 out of 47 longitudinal studies reviewed by the OECD showed better adult employment outcomes for students who had school-based work experience. Those with early work experience earn 5–10% more as adults. Around 50% of teenagers in Spain, Italy, and Brazil have no work experience by age 15 — a gap driven more by family connections than ability. Key OECD finding: quality of placement (real tasks, supervision, reflection) matters more than brand name. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
+
+**Part-Time Jobs for Teenagers: Benefits Backed by OECD** [/blog/oecd-teenage-part-time-work-benefits]: OECD research shows students who work up to approximately 15 hours per week develop stronger professional skills, higher career confidence, and greater financial literacy than those with no work experience. Beyond this threshold, academic performance begins to decline. Key factors: supervision, career-relevance, and staying within productive hours. Financial literacy improvements: understanding tax, savings habits, hourly rate calculation. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
 
 **65 Jobs AI Cannot Automate** [/blog/65-jobs-ai-cannot-automate]: WEF Future of Jobs 2025 data on automation risk by occupation category. Lists 65 roles with low automation probability: surgeons, therapists, social workers, trial lawyers, structural engineers, primary teachers, midwives, and others requiring physical dexterity, emotional intelligence, or contextual judgement. Key finding: jobs requiring embodied physical skill, high-stakes interpersonal relationships, or contextual ethical judgement remain highly resistant to automation even with advanced LLMs.
 
@@ -352,11 +364,17 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 
 **How to Improve MAP Math Score** [/blog/how-to-improve-map-math-score]: According to Eduentry, fraction fluency is the single biggest growth barrier for students at RIT 195–220 (typically Grades 4–7) — students who cannot fluently add, subtract, multiply and divide fractions are blocked from making progress in proportional reasoning, algebra, and data handling. Eduentry's RIT growth ladder: below 185 = number sense (place value, basic operations); 185–205 = operations and fractions; 205–220 = proportional reasoning; 215–225 = algebraic thinking; 225+ = advanced. Word problem setup (identifying the operation before calculating) is treated as a separate skill from computation and must be practised independently. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
 
+**NWEA MAP Growth Norms 2025–26** [/blog/nwea-map-growth-norms]: Expected MAP RIT score gains by grade and subject — fall-to-spring norms for Math and Reading. According to Eduentry, annual Math growth (fall to spring, NWEA 2020 norms) decelerates from approximately 11.5 RIT points in Kindergarten to 3–4 points by Grade 8. Reading growth decelerates faster: 11 points in Kindergarten, 5 points in Grade 3, and just 1–2 points by Grades 7–8. A fall-to-spring gain within 2 RIT points of expected = on track; 3+ points below expected warrants investigation; 3+ points above expected indicates strong progress. Growth rates also vary by starting percentile — students below average typically show higher absolute gains when receiving targeted support. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
+
+**What Is a Good NWEA MAP Score?** [/blog/what-is-a-good-nwea-map-score]: Grade-relative RIT benchmarks for every grade K–10, Math and Reading — below average, on track, strong (75th percentile), and gifted range (90th percentile). According to Eduentry, a "good" MAP score is grade-relative: RIT 220 in Math is extraordinary for a 3rd grader (≈99th percentile) but below average for an 8th grader. For Math, a strong score (75th percentile) is approximately RIT 199 at Grade 3 and RIT 226 at Grade 7. The 90th percentile in any subject for any grade typically triggers gifted programme screening in most US districts. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
+
 **Child Personality Assessment Guide: What It Is and How It Works** [/blog/child-personality-assessment-guide]: What a VIA character strengths assessment measures vs Myers-Briggs or clinical tests. VIA framework: 24 traits across 6 virtues (table). Why character strengths matter for children (academic + wellbeing research). How the Eduentry test works: enter age, rate traits, get report (~5 min). Signature Strengths vs Growth Areas vs full 24-trait profile. Age tiers: 6–9, 10–13, 14–17, 18–20 and why they differ. CTA: free personality assessment, no account needed. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
 
 **How to Use Your Child's Character Strengths Report** [/blog/how-to-use-child-character-strengths-report]: Practical guide for parents who have the VIA report. The 6 virtues explained (Wisdom, Courage, Humanity, Justice, Temperance, Transcendence) with child examples. Signature Strengths: how to lean in, subject/activity pairing table (6 strengths). Growth Areas: reframe as development pillars, not deficits — 4-step approach. Peer benchmarking context. Age-specific strategies (school, friendships, extracurriculars). 5 common mistakes parents make reading the report. CTA: free personality assessment. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
 
 **Personality Test vs Aptitude Test: What's the Difference and Why Your Child Needs Both** [/blog/personality-vs-aptitude-test]: Explains the core distinction — personality tests measure who your child is (VIA character strengths: 24 traits, 6 virtues), aptitude tests measure what they can do (verbal, numerical, abstract reasoning, national percentile). Side-by-side comparison table across 8 dimensions. Research section: Duckworth & Seligman (2005) on self-discipline vs IQ; the capability gap vs engagement gap diagnostic framework. Four-quadrant action framework: high aptitude + strong strengths (accelerate), high aptitude + low self-regulation (address strengths first), average aptitude + high perseverance (maintain challenge), average aptitude + low engagement (dual support). How Eduentry combines both in one session — adaptive cognitive test (~35 min) + parent-rated VIA strengths (5–12 min). CTA: free combined assessment. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
+
+**5 Character Strengths That Predict Academic Success** [/blog/character-strengths-academic-success]: Longitudinal research identifies five VIA character strengths — love of learning, curiosity, perseverance, self-regulation, and zest — as the most predictive of academic outcomes, outperforming IQ in several studies. Duckworth & Seligman (2005) found self-discipline a better predictor of grades than IQ. These strengths are developable, not fixed. Guide includes how to identify each strength in a child's behaviour, targeted parent strategies for building each one, and how they translate into study habits and exam performance. Eduentry's free personality assessment identifies all 24 VIA character strengths in under 15 minutes. CTA: free personality assessment. Available in 7 languages: EN, TR, ES, FR, AR, RU, ZH.
 
 **How to Pass an Internship Aptitude Test: What the Questions Actually Measure** [/insights/how-to-pass-internship-aptitude-test]: Aptitude tests measure how you process information, not what you have revised — revising content misses the point. Verbal reasoning tests disciplined reading: evaluating statements only against the passage, without importing outside knowledge; the most common error is using world knowledge to judge a passage that is simply silent on the matter. Numerical reasoning errors are almost always reading errors rather than arithmetic errors — misreading axis units, answering the expected question rather than the asked one. Situational judgement is undermined by social desirability bias: the highest-scoring answers reflect what effective professionals do (direct conversation, appropriate escalation), not what seems nicest. Recommended prep structure: 30 minutes daily for 4 weeks — untimed verbal in week one, untimed numerical in week two, timed mixed in week three, full Eduentry assessment in week four.
 
@@ -408,6 +426,8 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 
 **11+ Sınavı Nedir? Tam Rehber** [/tr/blog/11-plus-sinavi-nedir-tam-rehber]: İngiltere'de devlet seçici gramer okulu giriş sınavı açıklaması. GL Assessment vs CEM formatı. SAS puan eşikleri (115+ genel, 121–132 Londra). Dört test alanı. Hazırlıkta en yaygın 3 hata. IRT tabanlı uyarlanabilir testin mantığı.
 
+**Kişilik Testi mi Yetenek Testi mi?** [/tr/blog/kisilik-testi-vs-yetenek-testi]: Kişilik testi çocuğunuzun kim olduğunu — değerleri, motivasyonları ve karakter özelliklerini — ortaya koyar. Yetenek testi ise ne yapabileceğini ölçer: sözel, sayısal ve soyut muhakeme. Yüksek yetenek + düşük öz-düzenleme, orta yetenek + yüksek azimden geri kalır. Eduentry her ikisini tek oturumda sunar: bilişsel adaptif test + 24 VIA karakter gücü, 6–22 yaş.
+
 ---
 
 ### Key blog posts — French (Français)
@@ -450,6 +470,8 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 
 **Qu'est-ce que l'examen 11+ ?** [/fr/blog/quest-ce-que-lexamen-11-plus-guide-complet]: Guide complet sur l'examen d'entrée aux grammar schools britanniques — formats GL/CEM, seuils SAS, les quatre domaines et la préparation optimale.
 
+**Test de Personnalité vs Test d'Aptitude** [/fr/blog/test-personnalite-vs-test-aptitude]: Un test de personnalité révèle qui est votre enfant — valeurs, motivations et traits de caractère (VIA : 24 forces, 6 vertus). Un test d'aptitude mesure ce qu'il peut faire — raisonnement verbal, numérique et abstrait. La recherche montre qu'une aptitude modérée avec haute persévérance surpasse une haute aptitude avec faible autorégulation. Eduentry combine les deux en une seule session, âges 6–22.
+
 ---
 
 ### Key blog posts — Arabic (العربية)
@@ -491,6 +513,8 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 **تدريب ثانوي بدون خبرة** [/ar/blog/kayfa-tajid-staj-bila-khibra-thanawy]: خمس خطوات للحصول على تدريب في الثانوية دون خبرة: خريطة المهارات، تقرير الكفاءات، المسارات البديلة، والتقديم المخصص.
 
 **ما هو امتحان 11+** [/ar/blog/ma-hwa-imtihan-11-plus-dalil-shamil]: دليل شامل لامتحان المدارس الثانوية الانتقائية البريطانية — صيغ GL وCEM، معايير SAS، المجالات الأربعة والتحضير الأمثل.
+
+**اختبار الشخصية مقابل اختبار القدرات** [/ar/blog/ikhtibarat-shakhsiya-muqabil-ikhtibarat-qudrat]: اختبار الشخصية (VIA) يحدد قيم الطفل، دوافعه، وسماته السلوكية — لا يقيس الذكاء. اختبار القدرات يقيس الكفاءة المعرفية: التفكير اللفظي والعددي والمجرد. القدرة العالية مع ضعف التنظيم الذاتي تُفضي لأداء أدنى من القدرة المتوسطة مع مثابرة عالية. Eduentry يجمع الاثنين في جلسة واحدة، من 6 إلى 22 سنة.
 
 ---
 
@@ -536,6 +560,8 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 
 **Что такое экзамен 11+?** [/ru/blog/chto-takoe-ekzamen-11-plus-polnoye-rukovodstvo]: Полное руководство по вступительному экзамену в грамматические школы Великобритании — форматы GL и CEM, пороги SAS, четыре ключевые области и IRT-адаптивное тестирование.
 
+**Тест личности vs тест способностей** [/ru/blog/test-lichnosti-vs-test-sposobnostey]: Тест личности (VIA) определяет ценности, мотивации и поведенческие тенденции ребёнка — не интеллект. Тест способностей измеряет когнитивные возможности: вербальное, числовое и абстрактное мышление. Исследования показывают: высокие способности с низкой саморегуляцией уступают средним способностям с высокой настойчивостью. Eduentry объединяет оба в одну сессию, возраст 6–22.
+
 ---
 
 ### Key blog posts — Chinese (中文)
@@ -580,6 +606,8 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 
 **11+考试是什么？** [/zh/blog/11-plus-kaoshi-wanzheng-zhinan]: 英国文法中学入学考试完整指南 — GL与CEM格式、SAS分数基准、四大核心领域及IRT自适应评估。
 
+**性格测试 vs 能力测试** [/zh/blog/xingge-ceshi-vs-nengli-ceshi]: 性格测试（VIA）识别孩子的价值观、动机和行为倾向——不衡量智力。能力测试衡量认知能力：语言、数字和抽象推理。研究表明，高能力搭配低自律的表现，不如中等能力搭配高坚持性。Eduentry在一次测试中涵盖两者：认知推理+24项VIA优势，适合6–22岁。
+
 ---
 
 ### Key blog posts — Spanish (Español)
@@ -587,6 +615,8 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 **Prácticas en el instituto sin experiencia** [/es/blog/practicas-sin-experiencia-instituto]: Cinco pasos para conseguir prácticas en el instituto sin experiencia: mapa de habilidades, informe de competencias en lugar de CV vacío, vías alternativas, red de contactos y solicitud personalizada.
 
 **¿Qué es el examen 11+?** [/es/blog/que-es-el-examen-11-plus-guia-completa]: Guía completa del examen de entrada a las grammar schools británicas — formatos GL y CEM, umbrales SAS, los cuatro pilares y la evaluación adaptativa IRT.
+
+**Test de Personalidad vs Test de Aptitud** [/es/blog/test-personalidad-vs-test-aptitud]: Un test de personalidad revela quién es tu hijo — valores, motivaciones y rasgos de carácter (VIA: 24 fortalezas, 6 virtudes). Un test de aptitud mide lo que puede hacer — razonamiento verbal, numérico y abstracto. La investigación muestra que la aptitud moderada con alta perseverancia supera a la alta aptitud con baja autorregulación. Eduentry combina ambos en una sola sesión, edades 6–22.
 
 ---
 
