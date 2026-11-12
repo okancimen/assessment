@@ -662,10 +662,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'pisa-nedir-cocugunuz-nasil-hazirlanir',
-    title: 'Çocuğunuzu PISA\'ya Nasıl Hazırlarsınız? PISA Nedir, 2025 Türkiye Sonuçları',
-    shortTitle: 'Çocuğunuzu PISA\'ya Nasıl Hazırlarsınız? 2025 Türkiye Sonuçları',
+    title: 'PISA Nedir, Açılımı Ne? 2025 Türkiye Sonuçları ve Hazırlık Rehberi',
+    shortTitle: 'PISA Nedir ve Açılımı Ne? 2025 Türkiye Sonuçları',
     description:
-      'PISA 2025 Türkiye: matematik 453, okuma 479. Çocuğunuzun PISA tarzı sorularda başarılı olması için 4 pratik strateji — test ezberini değil, gerçek hayat muhakemesini geliştirin. 15 yaş ebeveynleri için rehber.',
+      'PISA açılımı: Programme for International Student Assessment. 2025 Türkiye sonuçları: matematik 453, okuma 479. 15 yaşındaki öğrencilere yönelik OECD sınavı için çocuğunuzu nasıl hazırlarsınız — 4 pratik strateji.',
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2025\'te okumada OECD ortalamasını yakaladı; matematikte 463 ile OECD ortalaması (472) yakınında yer aldı.',
 
     date: '2026-09-14',
@@ -828,9 +828,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'staj-defteri-nasil-doldurulur',
-    title: 'Staj Defteri Nasıl Doldurulur? Örnek İfadeler + 2026 Tam Rehber',
-    shortTitle: 'Staj Defteri Nasıl Doldurulur? Örnek İfadeler + 2026 Rehberi',
-    description: 'Günlük ve haftalık staj defteri nasıl tutulur? Staj fişi, staj zarfı, staj dalı açıklamalı. Kim imzalar, nereden alınır, ne zaman teslim edilir. Üniversite ve lise öğrencileri için 2026 örnek rehberi.',
+    title: 'Staj Defteri Nedir, Nereden Alınır ve Nasıl Doldurulur? 2026 Rehberi',
+    shortTitle: 'Staj Defteri: Nereden Alınır, Nasıl Doldurulur? 2026 Rehberi',
+    description: 'Staj defteri nereden alınır? Okul veya kurum tarafından verilir, ücretsizdir. Günlük ve haftalık nasıl doldurulur, staj dalı ne demek, kim imzalar, ne zaman teslim edilir — lise ve üniversite öğrencileri için 2026 örnek rehberi.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
@@ -2084,8 +2084,8 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'cocugumun-guclu-yonleri-ve-akademik-basari',
     contentSlug: 'character-strengths-academic-success',
     title: 'Çocuğumun Güçlü Yönleri: 5 Karakter Özelliği Akademik Başarıyı Öngörüyor',
-    shortTitle: '5 VIA Karakter Özelliği Akademik Başarıyı Nasıl Öngörür? Ücretsiz Değerlendirme',
-    description: 'Hangi 5 karakter özelliği akademik başarıyı öngörüyor? Merak, azim, öz denetim… VIA karakter çerçevesiyle çocuğunuzu ücretsiz değerlendirin ve sonucu yorumlayın.',
+    shortTitle: 'Çocuğumun Güçlü Yönleri: 5 Karakter Özelliği ve Ücretsiz VIA Testi',
+    description: 'Merak, öğrenme sevgisi, azim, öz denetim ve coşku — çocuğunuzun akademik başarısını zekasından daha çok etkileyen 5 karakter özelliği. Ücretsiz VIA karakter testi ile çocuğunuzun profilini 10 dakikada belirleyin.',
     tldr: 'Okul notları sınıf ortalamasına göre başarıyı ölçer; ancak çocuğunuzun güçlü yönlerini ve potansiyelini tam olarak ortaya koymaz. Pozitif psikoloji araştırmaları, 5 VIA kişilik özelliğinin — öğrenme sevgisi, merak, azim, öz denetim ve coşku — akademik sonuçları en güvenilir biçimde öngördüğünü göstermektedir. Bu özellikler sabit değildir; ebeveyn değerlendirmeli bir testle ölçülebilir ve geliştirilebilir.',
     date: '2026-10-10',
     dateModified: '2026-11-04',
