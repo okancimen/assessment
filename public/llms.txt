@@ -609,6 +609,7 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 
 - [NWEA MAP RIT Score Calculator](https://eduentry.com/tools/nwea-rit-calculator): Enter grade and Fall Math RIT score to see the percentile band (50th–99th) based on NWEA national norms. Covers grades 3–8.
 - [NWEA MAP Percentile Calculator](https://eduentry.com/tools/map-percentile-calculator): Enter grade, subject (Math or Reading), and Fall RIT score to see the exact percentile band and gifted screening eligibility. Covers grades 3–8, both subjects. Highlights when a score reaches the 95th–99th percentile used for gifted program screening.
+- [CogAT Score Percentile Lookup](https://eduentry.com/tools/cogat-score-lookup): Enter a Composite SAS (Standard Age Score) to see the national percentile band and gifted-programme eligibility context. SAS is age-normed (mean 100, SD 16) — same meaning across all grades. Includes gifted threshold context (SAS 125–132 for most US districts).
 
 ## Blog — Singapore
 

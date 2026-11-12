@@ -11,7 +11,7 @@ import CtaLink from '@/components/ui/CtaLink'
 export const metadata: Metadata = {
   title: { absolute: 'Eduentry — Academic, Personality & Internship Assessments for Children' },
   description:
-    'Free adaptive academic assessments (ages 6–17), a VIA-backed character strengths personality assessment (ages 6–20), and internship readiness for students 14+. Standardised scores and AI-powered reports — free forever.',
+    'See how your child compares internationally — free. Academic benchmark ages 6–17, character strengths profile 6–20, internship readiness 14+. Standardised scores and AI-generated reports, no subscription needed.',
   keywords: [
     'free children academic assessment',
     'international benchmark children UK',

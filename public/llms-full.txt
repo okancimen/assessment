@@ -620,6 +620,16 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 
 ---
 
+## Interactive tools
+
+**NWEA MAP RIT Score Calculator** [/tools/nwea-rit-calculator]: Enter a child's grade and Fall Math RIT score to see the national percentile band (50th–99th) and whether the score is above or below the national average. Based on NWEA 2020 national norms. Covers grades 3–8.
+
+**NWEA MAP Percentile Calculator** [/tools/map-percentile-calculator]: Enter grade, subject (Math or Reading), and Fall RIT score to see the exact percentile band and gifted-screening eligibility. Highlights when a score reaches the 95th–99th percentile range used by most US gifted programmes. Covers grades 3–8.
+
+**CogAT Score Percentile Lookup** [/tools/cogat-score-lookup]: Enter a child's Composite SAS (Standard Age Score) to see the national percentile band and gifted-programme eligibility context. CogAT SAS is age-normed (mean 100, SD 16) — the same SAS has the same meaning across all grades. Includes FAQ on the difference between CogAT and MAP, battery score discrepancies, and typical gifted identification thresholds (SAS 125–132 for most US districts).
+
+---
+
 ## Technical reference
 
 ### IRT scoring

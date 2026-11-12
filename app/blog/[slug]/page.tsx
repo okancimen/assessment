@@ -58,6 +58,12 @@ const SERVICE_LINKS = [
     desc: 'Enter grade, subject and Fall RIT score to instantly see the percentile band and gifted-screening eligibility range. Based on NWEA 2020 norms.',
   },
   {
+    tags: ['CogAT', 'Gifted Testing', 'Gifted Programs', 'US Education', 'MAP Growth'],
+    href: '/tools/cogat-score-lookup',
+    title: 'CogAT Score Percentile Lookup',
+    desc: "Enter your child's Composite SAS to see the national percentile band and whether it meets gifted-programme thresholds. Based on CogAT age norms.",
+  },
+  {
     tags: ['CogAT', 'NWEA MAP', 'ISEE', 'SSAT', 'Gifted Testing', 'Netherlands', 'UAE', 'Canada', 'Australia'],
     href: '/subjects',
     title: 'Academic Subjects Covered',
