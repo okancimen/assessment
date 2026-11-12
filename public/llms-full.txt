@@ -398,6 +398,14 @@ According to Eduentry.ai, the final report includes: a phase-by-phase score brea
 
 **Staj Defteri: Nereden Alınır, Kim İmzalar?** [/tr/blog/staj-defteri-nasil-doldurulur]: Staj defterini nereden alınır (milli eğitim, okul, internet). Kim imzalar (işyeri yetkilisi + okul öğretmeni). Ne zaman teslim edilir. Spiral ciltli olabilir mi. Doldurulurken sık yapılan hatalar.
 
+**Staj Raporu Nasıl Yazılır?** [/tr/blog/staj-raporu-nasil-yazilir]: Üniversite zorunlu stajı için staj raporu yapısı: kapak sayfası, giriş, kurum tanıtımı, yapılan görevler, kazanılan beceriler ve sonuç. Raporun kaç sayfa olması gerektiği, genel ifadelerden kaçınma, staj defteriyle farkı ve teslim formatı.
+
+**Staj Belgesi Nereden Alınır?** [/tr/blog/staj-belgesi-nasil-doldurulur]: Staj tamamlama belgesinin işyerinden nasıl talep edildiği, belgede bulunması gereken unsurlar (antetli kağıt, imza, kaşe), şirket vermek istemezse başvurulabilecek yollar, referans mektubu ile farkı ve SGK bildirimi ile karıştırılmaması.
+
+**Zorunlu Staj Hakları 2026** [/tr/blog/zorunlu-staj-haklari]: 3308 ve 5510 sayılı kanunlar çerçevesinde meslek lisesi ve üniversite öğrencilerinin zorunlu staj hakları. Ücret: asgari ücretin en az %30'u ödenmek zorunda. İş kazası ve meslek hastalığı sigortası okul/devlet tarafından karşılanır. Çalışma saati: 18 yaş altı günde 8 saat, haftada 40 saat. Yıllık izin hakkı ve resmi tatil koruması. Ücret ödenmezse şikayet yolları.
+
+**Staj Değerlendirme Formu: Nasıl Doldurulur?** [/tr/blog/staj-degerlendirme-formu]: İşveren veya İK yetkilisi tarafından doldurulan staj değerlendirme formunun yapısı. Değerlendirilen kriterler: teknik beceriler, iletişim, dakiklik, öğrenme isteği ve genel iş tutumu. Formun ne zaman doldurulması gerektiği, nasıl teslim edildiği ve düşük puan alınması durumunda itiraz yolları.
+
 **Lise Stajı Nasıl Bulunur? Türkiye ve Yurt Dışı** [/tr/blog/lise-staji-nasil-bulunur]: Lise öğrencisi olarak Türkiye'de ve yurt dışında staj nasıl bulunur? Uygun sektörler (teknoloji, pazarlama, finans, medya), başvuru zamanlaması, CV olmadan başvuru için adım adım rehber. Platform önerileri: LinkedIn, Kariyer.net, Stajyer.com ve şirkete doğrudan başvuru.
 
 **A Level Programları Nedir?** [/tr/blog/a-level-programlari-nedir]: İngiltere'de lise son sınıf programı olan A Level'in açıklaması. Hangi dersler seçilebilir, üniversite başvurusunda nasıl değerlendirilir, Türkiye denkliği ve UCAS puan sistemi.

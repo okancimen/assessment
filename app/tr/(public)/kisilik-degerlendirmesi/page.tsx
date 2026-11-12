@@ -7,9 +7,9 @@ import HeroRadarCard from '@/components/personality/HeroRadarCard'
 const BASE_URL = 'https://eduentry.com'
 
 export const metadata: Metadata = {
-  title: 'Çocuklar İçin Ücretsiz Karakter Güçleri Testi — 24 VIA Özelliği, 6–20 Yaş | Eduentry',
+  title: { absolute: 'Ücretsiz VIA Karakter Güçleri Testi — Türkçe, 6–20 Yaş | Eduentry' },
   description:
-    "Çocuğunuzun benzersiz güçlü yönlerini yapay zeka destekli, bilimsel kişilik değerlendirmemizle keşfedin. 6–20 yaş. Ücretsiz ebeveyn anketi. Anında kişiselleştirilmiş büyüme raporu.",
+    "Çocuğunuzun 24 VIA karakter özelliğini Türkçe ücretsiz test edin. Ebeveyn anketi (5–10 dk), yapay zeka destekli kişiselleştirilmiş gelişim raporu. Kayıt gerekmez, 6–20 yaş için kalibre edilmiş.",
   keywords: [
     'çocuk kişilik değerlendirmesi',
     'VIA güçlü yönler testi',
@@ -40,15 +40,15 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BASE_URL}/tr/kisilik-degerlendirmesi`,
     siteName: 'Eduentry',
-    title: 'Çocuklar İçin Ücretsiz Karakter Güçleri Testi — 24 VIA Özelliği, 6–20 Yaş | Eduentry',
-    description: "Çocuğunuzun benzersiz kişilik özelliklerini yapay zeka destekli değerlendirmemizle keşfedin. 6–20 yaş.",
+    title: 'Ücretsiz VIA Karakter Güçleri Testi — Türkçe, 6–20 Yaş | Eduentry',
+    description: "24 VIA karakter özelliği — Türkçe, ücretsiz, 5–10 dakika. Kayıt gerekmez, 6–20 yaş.",
     locale: 'tr_TR',
     images: [{ url: `${BASE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'Çocuk Kişilik Değerlendirmesi — Eduentry' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Çocuklar İçin Ücretsiz Karakter Güçleri Testi — 24 VIA Özelliği, 6–20 Yaş | Eduentry',
-    description: "Çocuğunuzun benzersiz kişilik özelliklerini yapay zeka destekli değerlendirmemizle keşfedin. 6–20 yaş.",
+    title: 'Ücretsiz VIA Karakter Güçleri Testi — Türkçe, 6–20 Yaş | Eduentry',
+    description: "24 VIA karakter özelliği — Türkçe, ücretsiz, 5–10 dakika. Kayıt gerekmez, 6–20 yaş.",
     images: [`${BASE_URL}/opengraph-image`],
   },
 }

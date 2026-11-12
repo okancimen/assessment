@@ -2605,6 +2605,182 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr/akademik-degerlendirme',
     },
   },
+  {
+    slug: 'staj-raporu-nasil-yazilir',
+    title: 'Staj Raporu Nasıl Yazılır? 2026 Yapısı, Örnek İfadeler ve Sık Yapılan Hatalar',
+    shortTitle: 'Staj Raporu Nasıl Yazılır? 2026 Yapısı ve Örnek İfadeler',
+    description:
+      'Staj raporu nasıl yazılır? Giriş, işyeri tanıtımı, yapılan görevler, kazanılan beceriler ve sonuç bölümleri. Üniversite zorunlu stajı için 2026 örnek yapısı, cümleler ve sık yapılan hatalar.',
+    tldr: 'Staj raporu, staj süresinde yapılan işleri, kazanılan becerileri ve genel değerlendirmeyi belgeleyen formal bir yazıdır. Üniversite zorunlu stajlarında not almak için genellikle staj defteriyle birlikte teslim edilir. Rapor beş temel bölümden oluşur: giriş ve amaç, işyeri/kurum tanıtımı, yapılan görevler ve projeler, kazanılan beceriler ve gelişim, sonuç ve öz değerlendirme.',
+    date: '2026-11-13',
+    dateModified: '2026-11-13',
+    readTime: '8 dk okuma',
+    tags: ['Staj', 'Staj Raporu', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi'],
+    faqs: [
+      {
+        q: 'Staj raporu kaç sayfa olmalıdır?',
+        a: 'Çoğu üniversite 5–15 sayfa arası bir uzunluk bekler; bölüme göre farklılık göstebilir. Kısa ama içerik dolu bir rapor, boş sözlerle dolu uzun bir rapordan her zaman daha iyidir. Raporun uzunluğunu bölüm staj yönergesinden veya staj koordinatöründen teyit edin; bazı fakülteler kesin sayfa sınırı belirlemektedir.',
+      },
+      {
+        q: 'Staj raporunda hangi bölümler olmalıdır?',
+        a: 'Standart bir staj raporu şu bölümleri içerir: (1) Kapak sayfası — öğrenci adı, numara, bölüm, staj yeri, tarihler. (2) Giriş — raporun amacı ve stajın genel çerçevesi. (3) Kurum tanıtımı — şirketin faaliyet alanı, büyüklüğü, yapısı. (4) Yapılan çalışmalar — haftalık veya proje bazlı görev özeti. (5) Kazanılan beceriler ve gözlemler — teknik ve kişisel yetkinlikler. (6) Sonuç ve öz değerlendirme — stajın katkısı ve gelecek planları. (7) Ekler — varsa örnek belgeler, görseller veya proje çıktıları.',
+      },
+      {
+        q: 'Staj raporunda genel ifadeler neden sorun yaratır?',
+        a: '"İletişim becerilerimi geliştirdim" veya "ekip çalışması hakkında çok şey öğrendim" gibi ifadeler, komisyon üyeleri tarafından içeriksiz bulunur. Bunun yerine somut ol: hangi projeye katkı sağladın, hangi araçları kullandın, hangi zorluğu nasıl aştın. Örnek: "Şirketin müşteri veri tabanını Excel\'den Google Sheets\'e taşıma projesinde veri doğrulama adımını tek başıma yürüttüm."',
+      },
+      {
+        q: 'Staj raporu staj defterinden farkı nedir?',
+        a: 'Staj defteri günlük faaliyet kaydıdır — her çalışma günü doldurulur, kurum amiri tarafından imzalanır ve süreç odaklıdır. Staj raporu ise staj bitiminde yazılan, tüm deneyimi değerlendiren analitik bir özet belgesidir. Bazı bölümler yalnızca birini, bazıları her ikisini de ister; bölüm yönergesini kontrol edin.',
+      },
+      {
+        q: 'Staj raporu hangi programa yazılır, nasıl teslim edilir?',
+        a: 'Microsoft Word veya Google Docs en yaygın kullanılan programlardır. Teslim genellikle PDF formatında istenir. Yazı tipi 11–12 punto, satır aralığı 1,5 ve kenar boşlukları 2,5 cm standart kabul edilir. Bazı fakülteler kendi şablon dosyalarını paylaşır; bunu kullanmak hem zaman kazandırır hem de format hatalarını önler.',
+      },
+      {
+        q: 'Staj raporumu şirkete vermem gerekiyor mu?',
+        a: 'Hayır — staj raporu okula teslim edilen bir akademik belgedir, şirkete verilmez. Ancak staj süresinde hazırladığın proje çıktıları veya sunumlar şirketle paylaşılabilir; bu tamamen ayrı bir belgedir. Raporunda şirketin ticari sırlarına veya iç verilere yer vermemeye dikkat et.',
+      },
+    ],
+    cta: {
+      heading: 'Staja hazır mısın?',
+      body: 'Staj başvurusundan önce güçlü yönlerini ve ilgi alanlarını öğren. Eduentry\'nin ücretsiz değerlendirmesi hangi sektöre en uygun olduğunu 20 dakikada gösterir.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: 'https://eduentry.ai/tr',
+    },
+  },
+  {
+    slug: 'staj-belgesi-nasil-alinir',
+    title: 'Staj Belgesi Nasıl Alınır? Tamamlama Belgesini Kimden, Nasıl İstenir?',
+    shortTitle: 'Staj Belgesi Nereden Alınır? Tamamlama Belgesini Almak',
+    description:
+      'Staj belgesi (tamamlama belgesi) işyerinden resmi yazı veya e-posta ile talep edilir; okul için şirket mühürlü ve yetkili imzalı belge gerekir. Lise ve üniversite öğrencileri için adım adım rehber.',
+    tldr: 'Staj tamamlama belgesi, stajın başarıyla tamamlandığını gösteren ve stajyerin okula teslim ettiği resmi bir işyeri belgesidir. İşyerinin antetli kağıdına yazılır, yetkili kişi tarafından imzalanır ve şirket mührü taşır. Belge olmadan zorunlu staj tamamlanmış sayılmaz.',
+    date: '2026-11-13',
+    dateModified: '2026-11-13',
+    readTime: '6 dk okuma',
+    tags: ['Staj', 'Staj Belgesi', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi', 'Lise Staj'],
+    faqs: [
+      {
+        q: 'Staj belgesi nereden alınır?',
+        a: 'Staj belgesi (tamamlama belgesi veya staj bitim yazısı) staj yaptığın kurumdan alınır. İnsan kaynakları departmanına veya doğrudan yöneticine staj bitiş tarihinden birkaç gün önce talep et. Belge, şirketin antetli kağıdına yazılmalı, yetkili kişi (İK müdürü veya birim amiri) tarafından imzalanmalı ve şirket mührü taşımalıdır.',
+      },
+      {
+        q: 'Staj belgesinde neler yazmalıdır?',
+        a: 'Standart bir staj tamamlama belgesi şunları içerir: öğrencinin adı ve soyadı, okul/bölüm bilgisi, staj başlangıç ve bitiş tarihleri, staj yapılan departman veya proje, "stajını başarıyla tamamlamıştır" ifadesi, kurum yetkilisinin adı-unvanı-imzası ve şirket kaşesi. Eksik unsur varsa okulan kabul etmeyebilir.',
+      },
+      {
+        q: 'Şirket staj belgesi vermek istemezse ne yapmalıyım?',
+        a: 'Önce nazikçe hatırlat — İK departmanının staj bitim belgelerini hazırlama sorumluluğu olduğunu belirt. Hâlâ yanıt gelmezse okul staj koordinatörüne danış; koordinatör zaman zaman şirkete resmi yazı gönderebilir. Son seçenek olarak Çalışma ve Sosyal Güvenlik Bakanlığı\'na şikâyet hakkın bulunmaktadır.',
+      },
+      {
+        q: 'Staj belgesi ile SGK bildirimi aynı şey midir?',
+        a: 'Hayır. SGK bildirimi, sigorta primlerinin ödendiğini gösteren resmi bir kayıttır ve sana değil okul veya işverene aittir. Staj belgesi ise senin için hazırlanan ve okula teslim ettiğin belge türüdür. Zorunlu üniversite stajlarında okulun her ikisini de isteyip istemediğini bölüm koordinatöründen kontrol et.',
+      },
+      {
+        q: 'Referans mektubu ile staj belgesi farkı nedir?',
+        a: 'Staj belgesi, stajın yapıldığını onaylayan resmi bir belgedir; içeriği kısadır. Referans mektubu ise stajyerin performansını, güçlü yönlerini ve potansiyelini anlatan kişisel bir yazıdır. İkisi farklı amaçlara hizmet eder. Staj belgesi okul için zorunluyken referans mektubu iş veya başka bir staj başvurusunda kullanılır. Staj bitiminde her ikisini birden istemen önerilir.',
+      },
+      {
+        q: 'Staj belgesi ne kadar sürede hazırlanır?',
+        a: 'Çoğu şirket 1–5 iş günü içinde hazırlayabilir. Büyük kurumlarda onay süreçleri uzayabilir, bu nedenle staj bitiş tarihinden en az 1 hafta öncesinde talep etmek en güvenlisidir. İleride ihtiyaç duyabileceğin için belgenin dijital bir kopyasını da (taranmış PDF) kaydet.',
+      },
+    ],
+    cta: {
+      heading: 'Bir sonraki stajı daha iyi planla',
+      body: 'Güçlü yönlerini bilmek başvuru sürecini kolaylaştırır. 20 dakikalık ücretsiz değerlendirmemiz hangi sektöre en uygun olduğunu gösterir.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: 'https://eduentry.ai/tr',
+    },
+  },
+  {
+    slug: 'zorunlu-staj-haklari',
+    title: 'Zorunlu Staj Hakları 2026: Ücret Var mı, Sigorta, Çalışma Saatleri',
+    shortTitle: 'Zorunlu Staj Hakları 2026: Ücret, Sigorta, Çalışma Saatleri',
+    description:
+      'Zorunlu staj ücreti var mı? Evet — asgari ücretin en az %30\'u ödenmesi gerekir. İş kazası sigortası, çalışma saatleri ve izin hakları — 5510 ve 3308 sayılı kanunlar çerçevesinde lise ve üniversite stajyerleri için 2026 rehberi.',
+    tldr: 'Türkiye\'de zorunlu stajlar 3308 sayılı Mesleki Eğitim Kanunu ve 5510 sayılı Sosyal Sigortalar Kanunu kapsamındadır. Stajyerler iş kazası ve meslek hastalığı sigortasından yararlanır; prim ödeme yükümlülüğü ağırlıklı olarak işverene aittir. Öğrenciye ödeme yapılması yasal açıdan zorunludur ve asgari ücretin en az %30\'u kadar olmalıdır.',
+    date: '2026-11-13',
+    dateModified: '2026-11-13',
+    readTime: '9 dk okuma',
+    tags: ['Staj', 'Zorunlu Staj', 'Staj Hakları', 'Staj Ücreti', 'Lise', 'Üniversite', 'Kariyer Rehberi'],
+    faqs: [
+      {
+        q: 'Zorunlu stajda ücret ödenmek zorunda mıdır?',
+        a: '3308 sayılı Mesleki Eğitim Kanunu\'nun 25. maddesi uyarınca, aday çırak, çırak ve mesleki eğitim kapsamındaki öğrencilere (meslek lisesi öğrencileri dahil) asgari ücretin en az %30\'u kadar ödeme yapılması zorunludur. Üniversite öğrencileri için ücret zorunluluğu kanunda aynı netlikte yer almamaktadır; ancak birçok büyük şirket gönüllü olarak staj ücreti ödemektedir. Başvuru öncesinde ücret politikasını netleştirmen önerilir.',
+      },
+      {
+        q: 'Zorunlu stajda hangi sigorta hakları vardır?',
+        a: '5510 sayılı Kanun kapsamında stajyerler iş kazası ve meslek hastalığı sigortasından yararlanır. Staj süresince işyerinde ya da işe gidiş-geliş sırasında gerçekleşen kazalarda tedavi giderleri ve geçici iş göremezlik ödeneği devreye girer. Uzun vadeli sigorta kolları (emeklilik, malullük) staj döneminde işlemez. Prim ödemeleri meslek lisesi öğrencileri için Millî Eğitim Bakanlığı, üniversite öğrencileri için üniversite tarafından karşılanır.',
+      },
+      {
+        q: 'Zorunlu stajda çalışma saati kaç olmalıdır?',
+        a: 'Zorunlu stajda günlük çalışma süresi İş Kanunu\'ndaki genel kurallara tabidir: haftalık 45 saati geçemez, günlük 11 saati aşamaz. 18 yaş altı stajyerler için bu sınırlar daha da düşüktür: günde en fazla 8 saat, haftada en fazla 40 saat. Fazla mesai yaptırılıyorsa bunun yasal sınırlar dahilinde kalması ve ödenmesi gerekir.',
+      },
+      {
+        q: 'Stajyerin yıllık izin hakkı var mıdır?',
+        a: 'Zorunlu staj süresi genellikle kısadır (30–60 iş günü) ve yıllık izin hakkı doğmaz. Ancak staj dönemine denk gelen resmî tatil günleri çalışma süresinden sayılmaz ve stajyer bu günlerde çalıştırılamaz. Uzun dönemli stajlarda ücretli günlük izin talep etme hakkın olduğunu işverenle baştan netleştirmek faydalıdır.',
+      },
+      {
+        q: 'İşveren staj ücretini ödemezse ne yapabilirim?',
+        a: 'Önce yazılı olarak talep et (e-posta kaydı önemlidir). Yanıt gelmezse Çalışma ve Sosyal Güvenlik Bakanlığı\'nın ALO 170 hattını ara ya da en yakın Çalışma ve İş Kurumu (İŞKUR) iline şikâyette bulun. Meslek lisesi öğrencileri için okul staj koordinatörü de baskı uygulayabilir. Hukuki yol olarak iş mahkemesine başvurulabilir, ancak süreç uzun olabilir.',
+      },
+      {
+        q: 'Zorunlu staj iş deneyimi sayılır mı?',
+        a: 'Özgeçmişte evet — zorunlu staj, ilgili bir kurumda edinilmiş iş deneyimi olarak listelenir. Referans mektubunun alınması ve staj döneminde spesifik projelere katkı sağlanması bu deneyimi daha değerli hale getirir. İş sözleşmesi imzalanmamış olsa da stajyer çalışma süresince İş Kanunu\'nun temel koruma hükümlerinden yararlanır.',
+      },
+    ],
+    cta: {
+      heading: 'Hangi staja başvurmalısın?',
+      body: 'Güçlü yönlerini bilmek sektör seçimini ve başvuru sürecini kolaylaştırır. Ücretsiz değerlendirmemiz 20 dakikada senin için en doğru izi gösterir.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: 'https://eduentry.ai/tr',
+    },
+  },
+  {
+    slug: 'staj-degerlendirme-formu',
+    title: 'Staj Değerlendirme Formu Nasıl Doldurulur? İşveren ve Koordinatör Rehberi 2026',
+    shortTitle: 'Staj Değerlendirme Formu: Nasıl Doldurulur? 2026 Rehberi',
+    description:
+      'Staj değerlendirme formu nasıl doldurulur? Teknik beceriler, iletişim, dakiklik ve genel değerlendirme kriterleri. İşveren ve staj koordinatörü için puanlama rehberi ve sık yapılan hatalar.',
+    tldr: 'Staj değerlendirme formu, işverenin stajyerin performansını teknik beceriler, iş tutumu, iletişim ve genel başarı gibi kriterler üzerinden puanladığı resmi bir belgedir. Tamamlanan form okula teslim edilir ve öğrencinin staj notunun hesaplanmasında kullanılır.',
+    date: '2026-11-13',
+    dateModified: '2026-11-13',
+    readTime: '7 dk okuma',
+    tags: ['Staj', 'Staj Değerlendirme', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi'],
+    faqs: [
+      {
+        q: 'Staj değerlendirme formunu kim doldurur?',
+        a: 'Formu, stajyerin doğrudan çalıştığı birim amiri veya İnsan Kaynakları yetkilisi doldurur. Bazı üniversiteler formun hem birim amiri hem de İK tarafından imzalanmasını ister. Öğrenci formu kendisi dolduramaz veya doldurulan bilgileri değiştiremez.',
+      },
+      {
+        q: 'Staj değerlendirme formunda hangi kriterler değerlendirilir?',
+        a: 'Tipik bir değerlendirme formu şu başlıkları içerir: teknik/mesleki bilgi ve uygulama (görevleri ne kadar iyi tamamladı), iletişim becerileri (yazılı ve sözlü), dakiklik ve devam düzenliliği, öğrenme isteği ve inisiyatif, ekip çalışmasına uyum ve genel iş tutumu. Her kriter genellikle 1–5 veya 1–10 arası puanlanır.',
+      },
+      {
+        q: 'Değerlendirme formu ne zaman doldurulmalıdır?',
+        a: 'Staj bitiş tarihinde veya son hafta içinde doldurulması en uygundur. Öğrenci, formun son haftada hazırlanması için birim amirine hatırlatma yapmalıdır. Unutulan veya staj bittikten uzun süre sonra doldurulan formlar eksik veya yüzeysel değerlendirme içerebilir.',
+      },
+      {
+        q: 'Değerlendirme formu nasıl teslim edilir?',
+        a: 'Formun dolduran yetkili tarafından imzalanıp kaşelenmesi ve genellikle kapalı (mühürlü) zarfta öğrenciye verilmesi ya da doğrudan üniversiteye gönderilmesi beklenir. Bazı üniversiteler dijital gönderim kabul eder. Belgenin teslim usulünü staj başlamadan önce bölüm koordinatöründen öğren.',
+      },
+      {
+        q: 'Değerlendirme formunda düşük puan alırsam ne olur?',
+        a: 'Düşük puanlı değerlendirme form notu etkileyebilir, ancak tek belirleyici ölçüt değildir. Çoğu bölüm staj defteri, staj raporu ve işveren değerlendirmesini birlikte değerlendirir. Haksız veya gerçeği yansıtmayan bir değerlendirme aldığına inanıyorsan bunu bölüm staj koordinatörüne belgelerle birlikte ileterek itiraz edebilirsin.',
+      },
+      {
+        q: 'Stajyer kendi değerlendirme formundan haberdar olabilir mi?',
+        a: 'Bu üniversiteden üniversiteye değişir. Birçok bölüm değerlendirmeyi gizli tutarken bazıları öğrencinin formu görmesine olanak tanır. Staj koordinatörüne danışarak kendi kurumunun politikasını öğren. Geri bildirim almak istiyorsan, resmi formdan bağımsız olarak birim amirinden yüz yüze veya yazılı performans geri bildirimi talep edebilirsin.',
+      },
+    ],
+    cta: {
+      heading: 'Staja hazır mısın?',
+      body: 'Değerlendirme formunda öne çıkmak için güçlü yönlerini önceden bil. Ücretsiz değerlendirmemiz 20 dakikada sektörel yetkinliklerini haritalar.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: 'https://eduentry.ai/tr',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {
