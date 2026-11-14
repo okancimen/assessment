@@ -14,6 +14,7 @@ export interface GrammarArea {
   preparationNote?: { heading: string; paragraphs: string[] }
 }
 
+// last reviewed 2026-11-14
 export const GRAMMAR_AREAS: GrammarArea[] = [
   {
     slug: 'kent',
