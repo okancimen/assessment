@@ -8,7 +8,12 @@ import { slugToTag, getAllTagSlugs, getLocalePostsByTag, TAG_META } from '@/app/
 const BASE_URL = 'https://eduentry.com'
 
 export function generateStaticParams() {
-  return getAllTagSlugs().map((tag) => ({ tag }))
+  return getAllTagSlugs()
+    .filter((slug) => {
+      const tagName = slugToTag(slug)
+      return tagName !== null && getLocalePostsByTag(tagName, BLOG_POSTS_FR, BLOG_POSTS).length > 0
+    })
+    .map((tag) => ({ tag }))
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ tag: string }> }): Promise<Metadata> {
