@@ -698,7 +698,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'nwea-map-scores-explained',
     title: 'MAP Scores by Grade Level 2026 — NWEA RIT Charts, Averages & Gifted Cut-offs',
-    shortTitle: 'NWEA MAP Scores by Grade 2026 — Is Your Child Above Average?',
+    shortTitle: 'NWEA MAP Scores by Grade Level 2026 — Is Your Child Above Average?',
     description:
       "What's a good NWEA MAP score? Fall 2026 norms: Grade 3 Math = 188, Grade 5 = 205, Grade 8 = 219. K–12 RIT charts for Math, Reading & Language, gifted cut-offs, and a free percentile calculator.",
     tldr: 'According to NWEA\'s 2020 national norming study — the current benchmark for 2025–26 — the national average MAP Math RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
@@ -1087,10 +1087,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'CogAT Score Guide 2026: SAS Chart, Gifted Cut-offs & What Your Results Mean',
     shortTitle: 'CogAT Scores Explained: SAS, Percentile & Stanine Guide 2026',
     description:
-      'CogAT 2026: SAS mean is 100, gifted cut-off is typically SAS 121+ (90th percentile). SAS-to-percentile chart, stanine bands, Verbal/Quantitative/Nonverbal battery breakdown and how to read your child\'s full profile.',
+      'CogAT SAS 121 = 90th percentile — the gifted threshold for most US programs. Full 2026 SAS-to-percentile chart, stanine bands (1–9), Verbal/Quantitative/Nonverbal battery breakdown, and how to read your child\'s ability profile.',
     tldr: 'The CogAT (Cognitive Abilities Test) reports a Standard Age Score (SAS) with a mean of 100 and a standard deviation of 16. A SAS of 116 places a child at approximately the 84th percentile; 132 is the 98th percentile. Most gifted programs require the 90th percentile or above, which corresponds to a CogAT SAS of approximately 121. The test has three batteries — Verbal, Quantitative, and Nonverbal — and a child\'s composite profile matters as much as the overall score.',
     date: '2026-10-17',
-    dateModified: '2026-10-28',
+    dateModified: '2026-11-14',
     readTime: '10 min read',
     tags: ['CogAT', 'NWEA MAP', 'Gifted Testing', 'US Education', 'Gifted Programs', 'SAS Score', 'Cognitive Abilities Test'],
     faqs: [
