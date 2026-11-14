@@ -33,7 +33,7 @@ const FAQ = [
   },
   {
     q: 'What is a good MAP Reading RIT score by grade?',
-    a: 'For Fall testing, approximate national averages are: Grade 3 ≈ 196, Grade 4 ≈ 207, Grade 5 ≈ 214, Grade 6 ≈ 218, Grade 7 ≈ 221, Grade 8 ≈ 223. A score 10–15 points above the average for the grade is typically above the 75th percentile. Use the calculator above for exact bands.',
+    a: 'For Fall testing, national averages (50th percentile) are: Grade 3 ≈ 177, Grade 4 ≈ 185, Grade 5 ≈ 191, Grade 6 ≈ 197, Grade 7 ≈ 201, Grade 8 ≈ 204. A score 10+ points above average is typically at or above the 75th percentile. Use the calculator above for exact bands.',
   },
   {
     q: 'What is a good MAP Math RIT score by grade?',

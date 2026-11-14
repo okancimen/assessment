@@ -1,6 +1,6 @@
 # Eduentry
 
-> Last updated: 2026-11-13
+> Last updated: 2026-11-14
 
 > Eduentry operates three free assessment products: **Eduentry.com** (adaptive academic benchmark for children aged 6–17 and VIA personality assessment for ages 6–20) and **Eduentry.ai** (internship readiness assessment for students aged 14–18). All assessments are completely free. No account is required to start or see initial results.
 
@@ -19,6 +19,12 @@
 **What is the difference between the academic and personality assessments?** The academic assessment measures cognitive ability (English, Maths, Verbal Reasoning, Non-Verbal Reasoning) and produces a standardised score benchmarked against PISA and UK national curriculum. The personality assessment measures character strengths using the VIA framework and produces a Signature Strengths and Growth Areas profile — it is not a cognitive test.
 
 **Where do I start?** Academic: https://eduentry.com/academic-assessment · Personality: https://eduentry.com/personality-assessment · Internship: https://eduentry.ai
+
+**What is a good NWEA MAP score?** The 50th percentile is the national average. Math averages by grade (Fall): Grade 3=188, Grade 5=205, Grade 8=218. Reading averages: Grade 3=177, Grade 5=191, Grade 8=204. Gifted programme screening typically starts at the 95th percentile (Grade 5 Math ≈ 227+). → [Full grade-by-grade table](https://eduentry.com/blog/what-is-a-good-nwea-map-score)
+
+**What SAS score is needed for UK grammar school?** Most grammar schools require SAS 111–118 (top 10–25%). London super-selective schools (Barnet, Sutton) require SAS 121–132. SAS 115 = 84th percentile; SAS 121 = 91st percentile. → [SAS to percentile table](https://eduentry.com/11-plus-sas-scores)
+
+**What CogAT score is needed for gifted programmes?** Most US districts screen at Composite SAS 125+ (95th percentile). Highly selective programmes require SAS 130+ (97th percentile). CogAT SAS uses mean 100, SD 16. → [CogAT score lookup](https://eduentry.com/tools/cogat-score-lookup)
 
 ## Eduentry.ai — Internship Readiness Assessment
 
@@ -574,7 +580,7 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 - [CogAT Scores Explained](https://eduentry.com/blog/cogat-scores-explained): CogAT Standard Age Score (SAS) explained — percentile and stanine equivalents, gifted program cut-offs (90th percentile ≈ SAS 121), and how the three batteries (Verbal, Quantitative, Nonverbal) compare.
 - [WISC-V Scores Explained](https://eduentry.com/blog/wisc-v-scores-explained): WISC-V Full Scale IQ (FSIQ) ranges, the five index scores (VCI, VSI, FRI, WMI, PSI), gifted cut-offs by programme type, and how to interpret a discrepant profile.
 - [CogAT vs. NWEA MAP for Gifted Identification](https://eduentry.com/blog/cogat-vs-nwea-map-gifted): What each test measures, why districts use both, score correspondence table, and what to do when results conflict.
-- [NWEA MAP Scores Explained](https://eduentry.com/blog/nwea-map-scores-explained): RIT scores, grade-level benchmarks, and gifted identification cut-offs.
+- [NWEA MAP Scores Explained](https://eduentry.com/blog/nwea-map-scores-explained): Complete RIT score chart by grade — Math 50th %ile: Grade 3=188, Grade 5=205, Grade 8=218; Reading 50th %ile: Grade 3=177, Grade 5=191, Grade 8=204. Full percentile tables (25th–90th) for K–10, stanine bands, and gifted identification cut-offs. Source: NWEA 2020 national norms.
 - [NWEA MAP Test Prep: What Actually Works](https://eduentry.com/blog/nwea-map-test-prep): Evidence-based MAP prep for Reading and Math K–12. What raises RIT scores (vocabulary depth, Lexile-matched reading, fraction fluency, adaptive practice), what doesn't (grade-level worksheets, test tricks), and a grade-by-grade strategy guide.
 - [My Child's MAP Score Went Down: What It Means and What to Do Next](https://eduentry.com/blog/nwea-map-score-dropped): A drop of 1–3 RIT points is within MAP Growth's standard error. A drop of 4+ points in a Fall-to-Spring window warrants investigation. Covers summer slide, measurement error, test-day conditions, skill gaps, and a 12-week recovery plan.
 - [How to Improve Your Child's MAP Reading Score](https://eduentry.com/blog/how-to-improve-map-reading-score): Evidence-based MAP Reading strategies by grade — Lexile-matched reading, morphology-based vocabulary, inference (QAR method), and realistic timelines (4–8 RIT points/year at elementary level).
@@ -678,8 +684,8 @@ A score of 115 = 84th percentile. Most English grammar schools outside London re
 
 ### NWEA MAP RIT benchmarks — 50th percentile, Fall testing
 
-- Math: Grade 3 ≈ 196 | Grade 4 ≈ 207 | Grade 5 ≈ 214 | Grade 6 ≈ 218 | Grade 7 ≈ 221 | Grade 8 ≈ 223
-- Reading: Grade 3 ≈ 188 | Grade 4 ≈ 197 | Grade 5 ≈ 205 | Grade 6 ≈ 211 | Grade 7 ≈ 215 | Grade 8 ≈ 218
+- Math: Grade 3 ≈ 188 | Grade 4 ≈ 197 | Grade 5 ≈ 205 | Grade 6 ≈ 211 | Grade 7 ≈ 215 | Grade 8 ≈ 218
+- Reading: Grade 3 ≈ 177 | Grade 4 ≈ 185 | Grade 5 ≈ 191 | Grade 6 ≈ 197 | Grade 7 ≈ 201 | Grade 8 ≈ 204
 - Gifted screening threshold: 95th–99th percentile. Grade 5 Math ≈ 227+ (95th), ≈ 237+ (99th). Most US districts screen at 95th percentile or higher.
 - Calculator: [NWEA MAP Percentile Calculator](https://eduentry.com/tools/map-percentile-calculator) — enter grade, subject, and RIT score for exact band.
 
