@@ -864,11 +864,11 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Staj Sigortası Nedir? Lise ve Üniversite Öğrencileri İçin Rehber',
     shortTitle: 'Staj Sigortası Nedir? Kim Öder, Neyi Kapsar?',
     description:
-      'Staj sigortası nedir, kim öder, neyi kapsar? Zorunlu stajda ve gönüllü stajda staj sigortası uygulaması, emeklilik hesabına etkisi ve pratik bilgiler.',
+      'Staj sigortası 2026: zorunlu stajda devlet öder, gönüllü stajda okul öder. İş kazası + meslek hastalığı güvencesi, prim miktarı, emeklilik etkisi ve SGK sorgulaması.',
     tldr: 'Türkiye\'de stajyerler 5510 sayılı Kanun kapsamında iş kazası ve meslek hastalığı sigortası güvencesinden yararlanır. Prim ödemeleri okul aracılığıyla yapılan stajlarda devlete aittir. Stajyerler standart işçi haklarından yararlanamaz; ancak SGK güvencesi kapsamındadır.',
 
     date: '2026-09-15',
-    dateModified: '2026-09-24',
+    dateModified: '2026-11-14',
     readTime: '7 dk okuma',
     tags: ['Staj', 'Staj Sigortası', 'Zorunlu Staj', 'Kariyer Rehberi', 'Lise'],
     faqs: [
@@ -1114,7 +1114,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     description: '%0 otomasyon riski taşıyan 65 mesleğin tam listesi: sağlık, yaratıcı alanlar ve mühendislik. Dünya Ekonomik Forumu verileri — çocuğunuz için YKS\'de hangi bölüm, hangi kariyer.',
     tldr: 'ABD Çalışma İstatistikleri Bürosu verileri ve otomasyon olasılığı analizine göre 65 meslek %0,0 otomasyon olasılığı taşıyor. Bu meslekler dört ortak özelliği paylaşıyor: duygusal zeka, ortamı okuma becerisi, yaratıcı çalışma ve yüksek günlük görev değişkenliği. Sağlık en büyük kategoriyi oluşturuyor; uzman hemşirelik 2034\'e kadar %40 büyümesi bekleniyor.',
     date: '2026-09-28',
-    dateModified: '2026-10-20',
+    dateModified: '2026-11-14',
     readTime: '11 dk okuma',
     tags: ['Geleceğin Meslekleri', 'Kariyer Planlaması', 'Yapay Zeka ve Eğitim', 'Çocuk Gelişimi'],
     faqs: [
@@ -1338,7 +1338,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'Zeki Çocuk Neden Başarısız Olur? 5 Bilimsel Neden ve Ne Yapabilirsiniz',
     shortTitle: 'Zeki Öğrenciler Neden Başarısız Olur? Ebeveyn Rehberi',
     description:
-      'Okul notları ezberi ölçer, zekayı değil. Akışkan zeka, çalışan bellek ve kristalize zeka farkı — parlak ama düşük notlu çocuklar için kanıta dayalı rehber.',
+      'Zeki çocuğunuz neden düşük not alıyor? Sıkılma, çalışan bellek yükü, ezber sistemi, kaygı ve öğretmen uyumu — 5 bilimsel neden + her biri için ebeveyn stratejileri.',
     tldr: 'Zeki çocuklar, bilişsel profilleri ile okulun performansı ölçme biçimi arasındaki uyumsuzluk nedeniyle kötü notlar alır. Okul notları ağırlıklı olarak kristalize zekayı ölçer — ezberlenmiş ve yeniden üretilmiş bilgiyi — oysa pek çok parlak çocuk olağanüstü akıcı zekaya sahiptir: standart testlerin nadiren yakaladığı mantık yürütme, örüntü bulma ve yeni problemleri çözme yeteneği.',
     date: '2026-10-01',
     dateModified: '2026-10-20',
@@ -2085,7 +2085,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'character-strengths-academic-success',
     title: 'Çocuğumun Güçlü Yönleri: 5 Karakter Özelliği Akademik Başarıyı Öngörüyor',
     shortTitle: 'Çocuğumun Güçlü Yönleri: 5 Karakter Özelliği ve Ücretsiz VIA Testi',
-    description: 'Merak, öğrenme sevgisi, azim, öz denetim ve coşku — çocuğunuzun akademik başarısını zekasından daha çok etkileyen 5 karakter özelliği. Ücretsiz VIA karakter testi ile çocuğunuzun profilini 10 dakikada belirleyin.',
+    description: '5 dk\'da çocuğunuzun 24 VIA karakter özelliğini ücretsiz test edin. Merak, azim, öz denetim, öğrenme sevgisi ve coşku — akademik başarıyı zekadan daha çok etkileyen 5 özellik ve kişiselleştirilmiş gelişim planı.',
     tldr: 'Okul notları sınıf ortalamasına göre başarıyı ölçer; ancak çocuğunuzun güçlü yönlerini ve potansiyelini tam olarak ortaya koymaz. Pozitif psikoloji araştırmaları, 5 VIA kişilik özelliğinin — öğrenme sevgisi, merak, azim, öz denetim ve coşku — akademik sonuçları en güvenilir biçimde öngördüğünü göstermektedir. Bu özellikler sabit değildir; ebeveyn değerlendirmeli bir testle ölçülebilir ve geliştirilebilir.',
     date: '2026-10-10',
     dateModified: '2026-11-04',
@@ -2222,7 +2222,7 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     contentSlug: 'child-personality-assessment-guide',
     title: 'Çocuk Kişilik Değerlendirmesi Nedir? VIA Karakter Güçleri Testi Rehberi',
     shortTitle: 'Ücretsiz Çocuk Kişilik Testi: 24 VIA Karakter Özelliği Rehberi',
-    description: 'Ücretsiz çocuk kişilik testi nedir, nasıl çalışır? VIA çerçevesindeki 24 karakter özelliği, 4 yaş kademesi ve sonuçları nasıl yorumlayıp kullanacağınıza dair eksiksiz rehber.',
+    description: '24 VIA karakter özelliğini 5 dakikada ücretsiz test edin (6–20 yaş). Çocuğunuzun imza güçleri, gelişim alanları ve yapay zeka destekli kişisel aktiviteler — anında sonuç, kayıt gerekmez.',
     tldr: 'Eduentry\'nin ücretsiz VIA destekli kişilik değerlendirmesi (6–20 yaş) 5 dakikada tamamlanır, çocuğunuzun ilk 5 İmza Gücünü ve 3 Gelişim Alanını belirler, yapay zeka destekli kişisel aktiviteler üretir. Hesap gerekmez.',
     date: '2026-10-23',
     dateModified: '2026-11-04',
