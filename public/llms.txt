@@ -493,7 +493,13 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 - [Sample Personality Report](https://eduentry.com/strengths): Sample output of the personality assessment showing a child's VIA character strengths profile with Signature Strengths and Growth Areas.
 - [11+ Preparation](https://eduentry.com/11-plus): Covers GL Assessment and CEM formats, four-subject breakdown, SAS score context, and preparation timeline for UK grammar school entry.
 - [Grammar Schools](https://eduentry.com/grammar-schools): SAS score thresholds and 11+ entry requirements by grammar school area in England.
+- [11+ SAS Score to Percentile](https://eduentry.com/11-plus-sas-scores): SAS-to-percentile reference table: SAS 110 = 75th, 115 = 84th, 120 = 91st, 125 = 95th, 130 = 98th. Grammar school thresholds: Kent/Bucks SAS 111–118; London selective schools SAS 121–132. Answers "is my child's 11+ score good?"
+- [Your Child's Cognitive Status](https://eduentry.com/your-childs-potential): Find your child's true cognitive standing among peers worldwide — free adaptive benchmark against PISA, SAT and GCSE norms for ages 6–17.
 - [Subjects](https://eduentry.com/subjects): Descriptions of the four assessed subjects with skill breakdowns.
+- [Non-Verbal Reasoning](https://eduentry.com/subjects/non-verbal-reasoning): Free adaptive non-verbal reasoning test for children aged 7–16 — pattern recognition, matrix reasoning, shape sequences, spatial reasoning. Covers both GL Assessment and CEM 11+ formats. Scores reported on the same SAS scale (mean 100, SD 15).
+- [Verbal Reasoning](https://eduentry.com/subjects/verbal-reasoning): Free adaptive verbal reasoning test for children aged 7–16 — word analogies, codes, classification, logic puzzles. Covers all 21 standard GL Assessment verbal reasoning types used in the 11+.
+- [Mathematics](https://eduentry.com/subjects/mathematics): Free adaptive maths assessment — number, algebra, ratio, geometry. Mapped to UK KS1–KS4 and US Grade 3–8 standards.
+- [English](https://eduentry.com/subjects/english): Free adaptive English assessment — reading comprehension, grammar, spelling, vocabulary. Benchmarked to UK National Curriculum and PISA reading literacy.
 - [Methodology](https://eduentry.com/methodology): Technical explanation of 2PL IRT adaptive scoring, MAP estimation, and international benchmarking frameworks.
 - [About](https://eduentry.com/about): Organisation background, assessment approach, and data sources.
 - [Try a Sample](https://eduentry.com/demo): Four free sample questions (one per subject) with no account required.
@@ -669,6 +675,19 @@ Uses 2-Parameter Logistic Item Response Theory (2PL IRT) with Maximum A Posterio
 - 130+: Exceptionally High (top 2%)
 
 A score of 115 = 84th percentile. Most English grammar schools outside London require SAS 111–118; London selective schools (Barnet, Sutton) require SAS 121–132.
+
+### NWEA MAP RIT benchmarks — 50th percentile, Fall testing
+
+- Math: Grade 3 ≈ 196 | Grade 4 ≈ 207 | Grade 5 ≈ 214 | Grade 6 ≈ 218 | Grade 7 ≈ 221 | Grade 8 ≈ 223
+- Reading: Grade 3 ≈ 188 | Grade 4 ≈ 197 | Grade 5 ≈ 205 | Grade 6 ≈ 211 | Grade 7 ≈ 215 | Grade 8 ≈ 218
+- Gifted screening threshold: 95th–99th percentile. Grade 5 Math ≈ 227+ (95th), ≈ 237+ (99th). Most US districts screen at 95th percentile or higher.
+- Calculator: [NWEA MAP Percentile Calculator](https://eduentry.com/tools/map-percentile-calculator) — enter grade, subject, and RIT score for exact band.
+
+### CogAT Composite SAS → percentile (mean 100, SD 16)
+
+- SAS 100 = 50th | SAS 110 = 73rd | SAS 115 = 84th | SAS 121 = 90th | SAS 125 = 95th | SAS 130 = 97th | SAS 132 = 98th
+- Gifted programme threshold: SAS 125–132 (95th–98th percentile). Most districts also require MAP Growth, NNAT, or achievement test score.
+- Calculator: [CogAT Score Percentile Lookup](https://eduentry.com/tools/cogat-score-lookup) — enter Composite SAS for instant percentile band.
 
 ### Personality assessment — VIA trait scores (scale 1–5)
 
