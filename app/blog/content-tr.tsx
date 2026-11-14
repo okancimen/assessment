@@ -4142,12 +4142,12 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </p>
 
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Yurtdışı staj nedir?</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Uluslararası staj neden yurt içi stajdan farklıdır?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Yurtdışı staj (uluslararası staj), öğrencinin kendi ülkesinin dışındaki bir kuruluşta — fiziksel olarak veya uzaktan — yapılandırılmış mesleki deneyim edindiği programdır. Yurt içi stajdan temel farkları şunlardır: çalışma dili genellikle İngilizcedir, değerlendirme kriterleri uluslararası standartlara göre belirlenir ve elde edilen referansın küresel tanınırlığı vardır.
+          Yurtdışı staj (uluslararası staj), öğrencinin kendi ülkesinin dışındaki bir kuruluşta — fiziksel olarak veya uzaktan — yapılandırılmış mesleki deneyim edindiği programdır. Temel farklar üçtür: çalışma dili genellikle İngilizcedir, değerlendirme kriterleri uluslararası standartlara göre belirlenir ve edinilen referansın küresel tanınırlığı vardır — bu da üniversite başvurularında ve yurt dışı master programlarında güçlü bir özgeçmiş kalemi oluşturur. Erişilebilirlik ise programa göre büyük farklılık gösterir.
         </p>
         <p className="text-gray-700 leading-relaxed mb-4">
-          2026 itibarıyla Türk öğrencilere açık başlıca yurtdışı staj kanalları şunlardır:
+          2026 itibarıyla Türk öğrencilere açık beş ana kanal — başvuru koşulları, takvimleri, hibe/ödeme durumu ve lise-üniversite erişilebilirliği — aşağıdaki karşılaştırma tablosunda ele alınmaktadır:
         </p>
         <ul className="space-y-4 mb-6">
           <Check><strong>Erasmus+ KA131</strong> — AB üyesi veya ortak ülkelerdeki şirket ve kurumlarda 2–12 aylık ücretli staj. Türkiye'deki üniversiteler Erasmus Beyannamesi kapsamında bu programdan yararlanabiliyor. Burs katkısı ülkeye ve süriye göre değişmekle birlikte ortalama aylık 300–600 € bandındadır.</Check>
@@ -9090,6 +9090,39 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
           ))}
         </div>
       </section>
+    </>
+  ),
+
+  'staj-raporu-nasil-yazilir': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Staj raporu, staj bitiş not hesaplamasında belirleyici olan belgedir — ancak çoğu öğrenci ilk kez yazarken yapısı ve beklenen içerik hakkında net bir rehbere sahip olmadan başlar. Bu rehber, standart üniversite staj raporunun beş bölümünü, her bölüm için örnek cümle kalıplarını ve değerlendirici gözüyle sık yapılan hataları ele almaktadır.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Not: Erasmus+ veya AIESEC gibi uluslararası staj programları aracılığıyla yurt dışında staj yaptıysanız, rapor yapısı benzerdir — ancak ek olarak Learning Agreement'taki hedefler ve uluslararası bağlamda edinilen beceriler vurgulanmalıdır. <Link href="/tr/blog/uluslararasi-staj-programlari" className="text-indigo-600 hover:underline font-medium">Yurtdışı staj programları ve başvuru rehberi →</Link>
+      </p>
+    </>
+  ),
+
+  'staj-belgesi-nasil-alinir': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Zorunlu stajı tamamladıktan sonra iki temel belgeyi okula teslim etmeniz gerekir: <strong>staj defteri</strong> (süreç boyunca tuttuğunuz günlük kayıt) ve <strong>staj tamamlama belgesi</strong> (işyerinin stajın başarıyla bittiğini onaylayan resmi yazısı). Bu rehber ikincisine odaklanmaktadır: nereden alınır, neler içermeli ve şirket vermek istemezse ne yapılır.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Yurt dışında staj yaptıysanız — Erasmus+, IAESTE veya özel bir uzaktan program aracılığıyla — belge gereksinimleri farklılık gösterebilir; üniversitenizin uluslararası ofisi veya program koordinatörü hangi belgelerin kabul edileceğini belirler. <Link href="/tr/blog/uluslararasi-staj-programlari" className="text-indigo-600 hover:underline font-medium">Yurtdışı staj programları ve şartları →</Link>
+      </p>
+    </>
+  ),
+
+  'zorunlu-staj-haklari': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Türkiye'de zorunlu stajlar iki temel kanun çerçevesinde yürütülür: <strong>3308 sayılı Mesleki Eğitim Kanunu</strong> (meslek lisesi öğrencileri ve çıraklar için) ve <strong>5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu</strong> (tüm stajyerler için sigorta hakları). Bu rehber her iki kanunun stajyere sağladığı hakları — ücret, sigorta, çalışma saati ve izin — pratik düzeyde ele almaktadır.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Yurt dışında staj yapmayı değerlendiriyorsanız, Erasmus+ ve IAESTE gibi programların hak ve yükümlülükleri Türk iş hukukundan farklıdır; bu programlarda üniversiteniz ile ev sahibi kurum arasındaki Learning Agreement belirleyicidir. <Link href="/tr/blog/uluslararasi-staj-programlari" className="text-indigo-600 hover:underline font-medium">Yurtdışı staj programları — Erasmus+, AIESEC, IAESTE →</Link>
+      </p>
     </>
   ),
 
