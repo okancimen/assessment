@@ -112,8 +112,6 @@ const nextConfig: NextConfig = {
       { source: '/ar/blog/:path*', has: [{ type: 'host', value: 'eduentry.ai' }], destination: 'https://eduentry.com/ar/blog/:path*', permanent: true },
       { source: '/ru/blog/:path*', has: [{ type: 'host', value: 'eduentry.ai' }], destination: 'https://eduentry.com/ru/blog/:path*', permanent: true },
       { source: '/zh/blog/:path*', has: [{ type: 'host', value: 'eduentry.ai' }], destination: 'https://eduentry.com/zh/blog/:path*', permanent: true },
-      // Legacy grammar-schools pages — old content, redirect to home
-      { source: '/grammar-schools/:path*', destination: '/', permanent: true },
       // Blog lives on eduentry.com — catch-all for any /blog/* hit on eduentry.ai
       { source: '/blog/:path*', has: [{ type: 'host', value: 'eduentry.ai' }], destination: 'https://eduentry.com/blog/:path*', permanent: true },
       // Trailing slash locale homepages
