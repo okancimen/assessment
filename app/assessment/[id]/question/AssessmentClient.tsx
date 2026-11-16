@@ -119,7 +119,7 @@ function LoadingQuestion() {
 
 // ── Pre-start interstitial (replaces auto-countdown) ─────────────────────────
 
-function StartInterstitial({ childName, onStart }: { childName?: string; onStart: () => void }) {
+function StartInterstitial({ childName, onStart, prefetchReady }: { childName?: string; onStart: () => void; prefetchReady: boolean }) {
   const name = childName || 'your child'
   const headingName = childName || 'Your child'
 
@@ -177,12 +177,20 @@ function StartInterstitial({ childName, onStart }: { childName?: string; onStart
         </div>
 
         {/* CTA */}
-        <button
-          onClick={onStart}
-          className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white font-bold text-base px-8 py-4 rounded-xl transition-colors"
-        >
-          I&apos;m ready, let&apos;s go →
-        </button>
+        <div className="space-y-2">
+          <button
+            onClick={onStart}
+            className="w-full bg-[#4F46E5] hover:bg-[#4338CA] text-white font-bold text-base px-8 py-4 rounded-xl transition-colors"
+          >
+            I&apos;m ready, let&apos;s go →
+          </button>
+          {!prefetchReady && (
+            <p className="text-center text-[11px] text-[#aeaeb2] flex items-center justify-center gap-1.5">
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#aeaeb2] animate-pulse" />
+              Preparing first question…
+            </p>
+          )}
+        </div>
 
       </div>
     </div>
@@ -341,6 +349,7 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
 
   const pendingRef  = useRef<FetchResult | null>(null)
   const isFirstRef  = useRef(true)
+  const [prefetchReady, setPrefetchReady] = useState(false)
 
   function applyResult(result: FetchResult) {
     if (result.type === 'complete') {
@@ -417,6 +426,7 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
   // Start fetching immediately so the first question is ready when the user clicks
   useEffect(() => {
     doFetch().then((result) => {
+      setPrefetchReady(true)
       if (!isFirstRef.current) {
         applyResult(result)
       } else {
@@ -434,6 +444,17 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
       setPhase('loading')
     }
   }
+
+  // Safety timeout: if loading stalls for >30s, surface an error so the user
+  // can tap "Try again" rather than staring at a spinner indefinitely.
+  useEffect(() => {
+    if (phase !== 'loading') return
+    const timer = setTimeout(() => {
+      setError('This is taking longer than expected. Please try again.')
+      setPhase('error')
+    }, 30_000)
+    return () => clearTimeout(timer)
+  }, [phase])
 
   useEffect(() => {
     if (!question) return
@@ -463,15 +484,26 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
 
   // ── Render ──────────────────────────────────────────────────────────────────
 
-  if (phase === 'warmup') return <StartInterstitial childName={childName} onStart={handleInterstitialDone} />
+  if (phase === 'warmup') return <StartInterstitial childName={childName} onStart={handleInterstitialDone} prefetchReady={prefetchReady} />
   if (phase === 'loading') return <LoadingQuestion />
 
   if (phase === 'error') {
     return (
-      <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center">
-        <div className="text-center space-y-4 max-w-sm">
-          <p className="text-red-600 text-sm">{error}</p>
+      <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center px-4">
+        <div className="w-full max-w-sm bg-white rounded-3xl border border-[#d2d2d7] p-8 text-center space-y-5">
+          <div className="w-14 h-14 bg-red-50 rounded-full flex items-center justify-center mx-auto">
+            <svg className="w-7 h-7 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v4m0 4h.01M12 3a9 9 0 110 18A9 9 0 0112 3z" />
+            </svg>
+          </div>
+          <div className="space-y-2">
+            <p className="font-bold text-[#1d1d1f] text-base">Something went wrong</p>
+            <p className="text-[#6e6e73] text-sm leading-relaxed">
+              {error || 'We couldn\'t load the next question. Your progress is saved — tap below to try again.'}
+            </p>
+          </div>
           <Button onClick={fetchNextQuestion}>Try again</Button>
+          <p className="text-[11px] text-[#aeaeb2]">Your progress is saved. Refreshing the page also works.</p>
         </div>
       </div>
     )
@@ -671,7 +703,7 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
     )
   }
 
-  if (!question || !session) return null
+  if (!question || !session) return <LoadingQuestion />
 
   return (
     <div className="min-h-screen bg-[#f5f5f7]">
