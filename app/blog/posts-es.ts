@@ -1330,7 +1330,7 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     description: 'Guía completa del examen 11+ para padres: qué evalúa, cómo funciona la puntuación, los 3 errores más comunes y cómo medir el nivel real de tu hijo.',
     tldr: 'El examen 11+ evalúa inglés, matemáticas, razonamiento verbal y razonamiento no verbal — pero mide capacidad de razonamiento, no conocimientos del currículo. Las notas escolares no predicen bien el rendimiento en el 11+. Los tres errores más comunes son: practicar sin diagnóstico previo, interpretar porcentajes brutos y generar ansiedad prematura. La forma más precisa de evaluar el nivel real de tu hijo es una prueba adaptativa 2PL IRT — el mismo método psicométrico que usan PISA y GCSE.',
     date: '2026-10-07',
-    dateModified: '2026-10-07',
+    dateModified: '2026-11-16',
     readTime: '12 min de lectura',
     tags: ['11+', 'Grammar Schools', 'Educación Reino Unido', 'Evaluación Académica', 'Guía para Padres', 'Preparación Examen'],
     faqs: [
@@ -1357,14 +1357,14 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
   {
     slug: 'fortalezas-de-caracter-exito-escolar',
     contentSlug: 'character-strengths-academic-success',
-    title: 'Las 5 Fortalezas de Carácter que Predicen el Éxito Escolar — y Cómo Detectarlas en tu Hijo',
-    shortTitle: 'Las 5 Fortalezas que Predicen el Éxito Académico en Niños',
-    description: 'Curiosidad, amor por el aprendizaje, perseverancia, autorregulación y vitalidad predicen el rendimiento escolar mejor que el CI. Guía para padres + evaluación gratuita VIA para niños de 6 a 17 años.',
+    title: 'Las 5 Fortalezas de Carácter que Predicen el Éxito Escolar de los Niños — Guía para Padres',
+    shortTitle: 'Las 5 Fortalezas Académicas que Predicen el Éxito de los Niños',
+    description: 'Curiosidad, amor por el aprendizaje, perseverancia, autorregulación y vitalidad predicen el éxito escolar de los niños mejor que el CI. Test VIA gratuito para estudiantes de 6 a 17 años — informe de desarrollo personalizado para padres.',
     tldr: 'Las notas escolares miden el rendimiento respecto a la media de clase, no las fortalezas y el potencial real de tu hijo. Cinco fortalezas VIA — amor por el aprendizaje, curiosidad, perseverancia, autorregulación y vitalidad — emergen en la investigación longitudinal como las más predictivas del éxito académico. Se pueden medir con un test de evaluación parental gratuito online y desarrollar con práctica deliberada.',
     date: '2026-10-10',
-    dateModified: '2026-10-10',
+    dateModified: '2026-11-16',
     readTime: '9 min de lectura',
-    tags: ['Fortalezas de Carácter', 'Éxito Académico', 'VIA', 'Desarrollo Infantil', 'Guía para Padres', 'Evaluación de Personalidad', 'Test Gratuito', 'Psicología Positiva'],
+    tags: ['Fortalezas de Carácter', 'Éxito Académico', 'VIA', 'Desarrollo Infantil', 'Guía para Padres', 'Evaluación de Personalidad', 'Test Gratuito', 'Psicología Positiva', 'Fortalezas Académicas'],
     faqs: [
       {
         q: '¿Qué fortaleza de carácter predice mejor el éxito académico en los niños?',

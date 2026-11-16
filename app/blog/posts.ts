@@ -569,7 +569,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'Grammar School Entry Requirements 2026: Scores, Percentiles and How to Qualify',
     shortTitle: 'Grammar School Entry Requirements 2026',
     description:
-      'Grammar school entry 2026: SAS thresholds by area (Kent 111, Bucks 118, London 121–132), GL vs CEM differences, and what percentile rank means for your child\'s chances of an offer.',
+      'Grammar school entry requirements 2026: exact SAS pass marks by area (Kent 111, Bucks 118, London Barnet/Sutton 121–132), GL vs CEM scoring differences, and whether your child\'s percentile actually translates to an offer.',
     tldr: 'According to admissions data from GL Assessment (used in Kent, Essex and Hertfordshire) and CEM (used in Buckinghamshire), the 11+ pass mark is approximately SAS 111–113 in Kent and Essex, and SAS 118 in Buckinghamshire. The most competitive London schools in Barnet and Sutton require SAS 121–132 — and even children scoring 125 may not receive an offer if higher-scoring applicants living closer fill available places first.',
 
     date: '2026-06-17',
@@ -1380,13 +1380,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'netherlands-vwo-gymnasium-guide',
-    title: 'VWO and Gymnasium in the Netherlands: Entry Requirements and How to Qualify',
-    shortTitle: 'Netherlands VWO & Gymnasium Guide',
+    title: 'VWO and Gymnasium in the Netherlands: Entry Requirements and How to Qualify (2026)',
+    shortTitle: 'Netherlands VWO & Gymnasium Guide 2026',
     description:
-      'VWO and Gymnasium explained for parents: the top level of Dutch secondary education, how entry works and how Tweetalig VWO compares.',
+      'VWO and Gymnasium explained for parents in 2026: the top level of Dutch secondary education, Doorstroomtoets scores, schooladvies, and how Tweetalig VWO compares.',
     tldr: 'According to DUO (Dienst Uitvoering Onderwijs), approximately 17–20% of Dutch students enter the VWO stream each year. VWO is the highest level of Dutch secondary education, spanning 6 years and qualifying students directly for university (wo). Gymnasium adds compulsory Latin and usually Ancient Greek. Entry requires a Doorstroomtoets score in the VWO band and a positive teacher recommendation (schooladvies).',
     date: '2026-06-17',
-    dateModified: '2026-09-10',
+    dateModified: '2026-11-16',
     readTime: '7 min read',
     tags: ['Netherlands', 'VWO', 'Gymnasium', 'Dutch Education', 'Secondary School'],
     faqs: [
@@ -2167,13 +2167,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'how-to-start-business-at-16',
-    title: 'How to Start Business Life at 16: Platforms, Rates, and What Universities Think of It',
-    shortTitle: 'How to Start Business Life at 16',
+    title: 'How to Start a Business at 16 in the UK: Platforms, Realistic Earnings & University Impact',
+    shortTitle: 'How to Start a Business at 16 in the UK',
     description:
-      'Can a 16-year-old run a business in the UK? Yes. Platforms, realistic earnings, and how early business experience strengthens university applications.',
+      'Can a 16-year-old legally run a business in the UK? Yes. Sole trader rules, MyTutor & Etsy earnings, and how early business experience strengthens Russell Group applications.',
     tldr: 'A 16-year-old in the UK can legally trade as a sole trader without incorporating. Accessible platforms include MyTutor, Tutorful, Etsy and Depop; earnings below the £12,570 personal allowance are tax-free. Running a real business — even part-time — is explicitly valued in Russell Group admissions for business, economics, and law programmes.',
     date: '2026-09-06',
-    dateModified: '2026-09-10',
+    dateModified: '2026-11-16',
     readTime: '11 min read',
     tags: ['Internship', 'Career Development', 'Work Experience', 'Business'],
     faqs: [

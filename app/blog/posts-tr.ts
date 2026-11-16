@@ -244,14 +244,14 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   },
   {
     slug: 'siber-guvenlik-staji-nasil-bulunur',
-    title: 'Siber Güvenlik Stajı Nasıl Bulunur: Lise Öğrencileri için Kapsamlı Rehber',
-    shortTitle: 'Siber Güvenlik Stajı Nasıl Bulunur',
+    title: 'Siber Güvenlik Stajı Nasıl Bulunur: Kodlama Bilmeden Lise Öğrencisi Rehberi 2026',
+    shortTitle: 'Siber Güvenlik Stajı Nasıl Bulunur 2026',
     description:
-      'Kodlama bilmeden siber güvenlik stajı bulunur mu? Lise öğrencisi kabul eden firmalar, başvuru yolları ve stajda sizi neler bekliyor.',
+      'Kodlama bilmeden siber güvenlik stajı bulunur mu? Evet. Lise öğrencisi kabul eden firmalar, başvuru dönemleri, gerekli beceriler ve stajın üniversite başvurusuna katkısı.',
     tldr: 'Türkiye\'de lise öğrencileri için siber güvenlik stajı sunan başlıca kurumlar arasında Türk Telekom, BTK (Bilgi Teknolojileri ve İletişim Kurumu), büyük bankalar ve özel güvenlik şirketleri yer alıyor. Başvurular genellikle Ocak–Nisan döneminde yapılır; stajlar yaz aylarında başlar.',
 
     date: '2026-07-09',
-    dateModified: '2026-07-09',
+    dateModified: '2026-11-16',
     readTime: '11 dk okuma',
     tags: ['Siber Güvenlik', 'Staj', 'Kariyer Gelişimi', 'Teknoloji', 'İş Deneyimi'],
     faqs: [
@@ -2046,10 +2046,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: '16-yasinda-is-hayatina-nasil-baslanir',
     contentSlug: 'how-to-start-business-at-16',
-    title: '16 Yaşında İş Hayatına Nasıl Başlanır: Platformlar, Kazanç ve Üniversiteler Ne Düşünür',
-    shortTitle: '16 Yaşında İş Hayatı: Staj Bulma, CV ve İlk Deneyim Rehberi 2026',
+    title: '16 Yaşında İş Kurma Rehberi: İngiltere\'de Yasal Yollar, Kazanç ve Üniversite Avantajı',
+    shortTitle: '16 Yaşında İş Kurma: İngiltere Rehberi 2026',
     description:
-      '16 yaşında İngiltere\'de bir işletme kurulabilir mi? Evet. Erişilebilir platformlar, gerçekçi kazanç rakamları ve erken iş deneyiminin üniversiteye etkisi.',
+      '16 yaşında İngiltere\'de işletme kurulabilir mi? Evet — şahıs şirketi olarak. MyTutor, Etsy, Depop gibi platformlar, gerçekçi kazanç rakamları ve bu deneyimin Russell Group başvurularına katkısı.',
     tldr: 'İngiltere\'deki 16 yaşındaki bir kişi şirkete gerek kalmadan yasal olarak şahıs şirketi olarak ticaret yapabilir. Erişilebilir platformlar arasında MyTutor, Tutorful, Etsy ve Depop yer alır; kişisel muafiyet sınırı olan 12.570 £\'un altındaki kazançlar vergiden muaftır. İşletme, ekonomi ve hukuk programları için Russell Group kabul sürecinde gerçek bir işletme yürütmek — yarı zamanlı bile olsa — açıkça değer kazandırmaktadır.',
     date: '2026-10-07',
     dateModified: '2026-11-04',
@@ -2083,14 +2083,14 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'cocugumun-guclu-yonleri-ve-akademik-basari',
     contentSlug: 'character-strengths-academic-success',
-    title: 'Çocuğumun Güçlü Yönleri: 5 Karakter Özelliği Akademik Başarıyı Öngörüyor',
-    shortTitle: 'Çocuğumun Güçlü Yönleri: 5 Karakter Özelliği ve Ücretsiz VIA Testi',
-    description: '5 dk\'da çocuğunuzun 24 VIA karakter özelliğini ücretsiz test edin. Merak, azim, öz denetim, öğrenme sevgisi ve coşku — akademik başarıyı zekadan daha çok etkileyen 5 özellik ve kişiselleştirilmiş gelişim planı.',
+    title: 'VIA Karakter Güçleri Testi Türkçe: Çocuğunuzun 24 Güçlü Yönü Ücretsiz Keşfedin',
+    shortTitle: 'VIA Karakter Güçleri Testi Türkçe — Çocuğunuz için Ücretsiz',
+    description: 'VIA Karakter Güçleri Testi Türkçe — 5 dakikada 24 kişilik özelliğini ücretsiz ölçün. Merak, azim, öz denetim, öğrenme sevgisi ve coşku: akademik başarıyı zekadan daha çok belirleyen 5 güç ve kişiselleştirilmiş gelişim planı.',
     tldr: 'Okul notları sınıf ortalamasına göre başarıyı ölçer; ancak çocuğunuzun güçlü yönlerini ve potansiyelini tam olarak ortaya koymaz. Pozitif psikoloji araştırmaları, 5 VIA kişilik özelliğinin — öğrenme sevgisi, merak, azim, öz denetim ve coşku — akademik sonuçları en güvenilir biçimde öngördüğünü göstermektedir. Bu özellikler sabit değildir; ebeveyn değerlendirmeli bir testle ölçülebilir ve geliştirilebilir.',
     date: '2026-10-10',
-    dateModified: '2026-11-04',
+    dateModified: '2026-11-16',
     readTime: '9 dk okuma',
-    tags: ['Kişilik Özellikleri', 'Akademik Başarı', 'VIA Kişilik Özellikleri', 'Çocuk Gelişimi', 'Ebeveyn Rehberi', 'Kişilik Değerlendirmesi', 'Ücretsiz Çocuk Testi', 'Pozitif Psikoloji', 'VIA Karakter Güçleri'],
+    tags: ['VIA Karakter Güçleri', 'VIA Karakter Güçleri Testi', 'Kişilik Özellikleri', 'Akademik Başarı', 'Çocuk Gelişimi', 'Ebeveyn Rehberi', 'Kişilik Değerlendirmesi', 'Ücretsiz Çocuk Testi', 'Pozitif Psikoloji'],
     faqs: [
       {
         q: 'Çocuklarda akademik başarıyı en iyi öngören kişilik özelliği hangisidir?',
