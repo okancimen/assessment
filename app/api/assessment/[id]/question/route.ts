@@ -120,6 +120,40 @@ async function handleAcademicQuestion(id: string, supabase: any, assessment: any
     })
   }
 
+  // If this question slot was already generated (e.g. user refreshed while on
+  // the interstitial), return the existing unanswered question. The UNIQUE
+  // constraint on (assessment_id, subject, question_order) guarantees at most
+  // one row per slot — no ordering needed.
+  const { data: existingEntry } = await supabase
+    .from('assessment_questions')
+    .select('question_id, questions(*)')
+    .eq('assessment_id', id)
+    .eq('question_order', session.question_index)
+    .eq('subject', session.current_subject)
+    .is('selected_answer', null)
+    .maybeSingle()
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const existingQuestion = (existingEntry as any)?.questions
+  if (existingQuestion) {
+    if (assessment.status === 'pending') {
+      await supabase.from('assessments')
+        .update({ status: 'in_progress', started_at: new Date().toISOString() }).eq('id', id)
+    }
+    const age = Math.floor((Date.now() - new Date(child.date_of_birth).getTime()) / (365.25 * 24 * 60 * 60 * 1000))
+    const { correct_answer: _ca, ...safeExisting } = existingQuestion
+    void _ca
+    return NextResponse.json({
+      question: safeExisting,
+      session: {
+        current_subject: session.current_subject, subject_index: session.subject_index,
+        question_index: session.question_index, difficulty_level: session.difficulty_level,
+        completed_subjects: session.completed_subjects,
+      },
+      age,
+    })
+  }
+
   const prefetch = session.prefetched_question
   if (prefetch?.subject === session.current_subject && prefetch?.difficulty === session.difficulty_level) {
     await supabase.from('assessment_sessions')
