@@ -295,6 +295,8 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
   const [saveEmail, setSaveEmail]       = useState('')
   const [saveState, setSaveState]       = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
   const [breakCountdown, setBreakCountdown] = useState<number | null>(null)
+  const [bannerEmail, setBannerEmail] = useState('')
+  const [bannerState, setBannerState] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
 
   // Section elapsed timer
   const [sectionTimeElapsed, setSectionTimeElapsed] = useState(0)
@@ -717,6 +719,62 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
             elapsed={formatElapsed(sectionTimeElapsed)}
           />
         </div>
+        {isGuest && session.subject_index === 0 && session.question_index === 0 && bannerState !== 'sent' && (
+          <div className="bg-[#eef2ff] border border-[#c7d2fe] rounded-2xl px-5 py-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+              <div className="flex items-center gap-3 flex-1 min-w-0">
+                <div className="shrink-0 w-8 h-8 rounded-full bg-[#c7d2fe] flex items-center justify-center">
+                  <svg className="w-4 h-4 text-[#4F46E5]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                  </svg>
+                </div>
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-[#1d1d1f]">Save your progress</p>
+                  <p className="text-xs text-[#4338ca] mt-0.5">Get a link to resume if you get interrupted — takes 5 seconds.</p>
+                </div>
+              </div>
+              <form
+                onSubmit={async (e) => {
+                  e.preventDefault()
+                  if (!bannerEmail || bannerState === 'sending') return
+                  setBannerState('sending')
+                  try {
+                    const guestToken = localStorage.getItem(`guestToken_${assessmentId}`) ?? ''
+                    const res = await fetch('/api/assessment/guest-reminder', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ email: bannerEmail, assessmentId, guestToken }),
+                    })
+                    setBannerState(res.ok ? 'sent' : 'error')
+                  } catch {
+                    setBannerState('error')
+                  }
+                }}
+                className="flex items-center gap-2 w-full sm:w-auto"
+              >
+                <input
+                  type="email"
+                  required
+                  value={bannerEmail}
+                  onChange={(e) => setBannerEmail(e.target.value)}
+                  placeholder="your@email.com"
+                  className="flex-1 sm:w-44 text-sm border border-[#c7d2fe] bg-white rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent"
+                />
+                <button
+                  type="submit"
+                  disabled={bannerState === 'sending'}
+                  className="shrink-0 bg-[#4F46E5] text-white text-sm font-semibold px-4 py-2 rounded-xl hover:bg-[#4338CA] transition-colors disabled:opacity-60"
+                >
+                  {bannerState === 'sending' ? '…' : 'Save'}
+                </button>
+              </form>
+            </div>
+            {bannerState === 'error' && (
+              <p className="text-xs text-red-600 mt-2">Something went wrong — please try again.</p>
+            )}
+          </div>
+        )}
+
         <div className="bg-white rounded-3xl border border-[#d2d2d7] p-6">
           <QuestionCard
             question={question}

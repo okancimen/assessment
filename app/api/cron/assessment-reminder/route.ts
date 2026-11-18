@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
-import { sendAcademicReminderEmail, sendInternshipReminderEmail, sendNoChildReminderEmail, sendNoAssessmentReminderEmail } from '@/lib/email'
+import { sendAcademicReminderEmail, sendInternshipReminderEmail, sendNoChildReminderEmail, sendNoAssessmentReminderEmail, sendGuestResumeReminderEmail } from '@/lib/email'
 
 // Supabase admin client — bypasses RLS to read all in-progress assessments
 function adminClient() {
@@ -126,6 +126,42 @@ export async function GET(req: NextRequest) {
     }
   }
 
+  // ── Guest assessment reminders ────────────────────────────────────────────
+  // In-progress guest sessions with an email captured (via Q1 banner) but no
+  // cron reminder sent yet, started more than 24h ago.
+  let guestSent = 0
+
+  const { data: guestAssessments } = await supabase
+    .from('assessments')
+    .select('id, guest_name, guest_token, guest_email, started_at')
+    .eq('status', 'in_progress')
+    .is('child_id', null)
+    .not('guest_email', 'is', null)
+    .eq('reminder_count', 0)
+    .lt('started_at', new Date(now.getTime() - 24 * 60 * 60 * 1000).toISOString())
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://eduentry.com'
+
+  for (const a of guestAssessments ?? []) {
+    const resumeUrl = `${siteUrl}/assessment/${a.id}/question?token=${encodeURIComponent(a.guest_token)}`
+    const claimUrl  = `${siteUrl}/auth/register?redirect=${encodeURIComponent(`/api/assessment/claim?assessmentId=${a.id}&token=${a.guest_token}`)}`
+    try {
+      await sendGuestResumeReminderEmail({
+        to: a.guest_email,
+        guestName: a.guest_name ?? 'your child',
+        resumeUrl,
+        claimUrl,
+      })
+      await supabase
+        .from('assessments')
+        .update({ reminder_sent_at: now.toISOString(), reminder_count: 1 })
+        .eq('id', a.id)
+      guestSent++
+    } catch (err) {
+      console.error(`[cron/assessment-reminder] guest reminder failed for ${a.id}`, err)
+    }
+  }
+
   // ── No-child onboarding reminder ──────────────────────────────────────────
   // Users who registered > 24h ago and never added a child get one email nudge.
   let noChildSent = 0
@@ -199,6 +235,6 @@ export async function GET(req: NextRequest) {
     }
   }
 
-  console.log(`[cron/assessment-reminder] sent=${sent} skipped=${skipped} noChildSent=${noChildSent} noAssessmentSent=${noAssessmentSent}`)
-  return NextResponse.json({ sent, skipped, noChildSent, noAssessmentSent })
+  console.log(`[cron/assessment-reminder] sent=${sent} skipped=${skipped} guestSent=${guestSent} noChildSent=${noChildSent} noAssessmentSent=${noAssessmentSent}`)
+  return NextResponse.json({ sent, skipped, guestSent, noChildSent, noAssessmentSent })
 }
