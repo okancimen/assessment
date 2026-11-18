@@ -184,11 +184,54 @@ export const UK_CONTENT_NETHERLANDS: Record<string, React.ReactNode> = {
           <Bullet>Some Gymnasium schools additionally require a separate intake assessment or interview</Bullet>
           <Bullet>Where a combined HAVO/VWO recommendation is issued, children can transfer to VWO after Year 1 (brugklas) based on performance</Bullet>
         </div>
-        <p className="text-gray-700 leading-relaxed">
-          In oversubscribed areas — particularly Amsterdam, Utrecht, and parts of The Hague — some VWO
-          schools use a lottery (loting) among qualified applicants when demand exceeds places. This makes
-          early research into school preferences important, as families may need to rank multiple schools.
+
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Doorstroomtoets score</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Level indicated</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Typical schooladvies outcome</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['501–524', 'VMBO-B/K', 'Basisberoepsgerichte or Kaderberoepsgerichte leerweg'],
+                ['525–536', 'VMBO-GT', 'Theoretisch leerweg; borderline HAVO possible'],
+                ['537–544', 'HAVO', 'HAVO — HBO route after Year 5'],
+                ['545–549', 'HAVO/VWO', 'Combined advice; VWO entry after brugklas confirmation'],
+                ['550+', 'VWO / Gymnasium', 'VWO; Gymnasium (classical track) for the top band'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700 whitespace-nowrap">{row[0]}</td>
+                  <td className="p-4 font-medium text-gray-800">{row[1]}</td>
+                  <td className="p-4 text-gray-600 leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 mb-6">Score bands are indicative; exact thresholds are set annually by each school and may shift by ±2–3 points between years. The combined HAVO/VWO advice (545–549) means the schooladvies is undecided — a child in this band enters a bridging class and is placed formally in VWO or HAVO at the end of Year 1 based on school performance.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">The Amsterdam, Utrecht and The Hague Lottery</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          In the four largest Dutch cities — Amsterdam, Utrecht, The Hague, and Rotterdam — popular VWO
+          schools receive substantially more qualified applications than they have places. When a school is
+          oversubscribed, Dutch law requires it to allocate remaining places by weighted lottery
+          (<em>loting</em>), not by academic performance or early application.
         </p>
+        <div className="space-y-2 mb-6">
+          <Bullet>All children with a valid VWO schooladvies and Doorstroomtoets score in the VWO band are equally eligible to enter the lottery — scoring 560 confers no advantage over scoring 550</Bullet>
+          <Bullet>Some schools give priority to siblings of current pupils, children of alumni, or students already attending the school&apos;s brugklas — check the school&apos;s aanmeldingsbeleid (admissions policy) early</Bullet>
+          <Bullet>Families should rank three to five VWO schools, not one — a child who does not win the lottery for their first choice still has strong alternatives</Bullet>
+          <Bullet>Amsterdam&apos;s application window typically opens in late January and closes in mid-March of Group 8; Utrecht&apos;s process runs on a similar calendar</Bullet>
+          <Bullet>Gymnasium schools in Amsterdam (Vossius Gymnasium, Barlaeus, Gymnasium Felisenum) run their own intake procedures in addition to the lottery, which may include an intake interview or separate assessment</Bullet>
+        </div>
+        <Callout>
+          <strong className="text-indigo-900">Practical implication:</strong> In a lottery city, school choice strategy is more important than marginal score improvement. A child with a 548 score who ranks five realistic VWO schools is in a better position than a child with a 555 score who only applied to one oversubscribed Gymnasium. Research each school&apos;s actual place numbers and historical oversubscription rate before ranking.
+        </Callout>
       </section>
 
       <section>

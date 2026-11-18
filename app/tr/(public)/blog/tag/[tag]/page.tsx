@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { notFound, redirect } from 'next/navigation'
+import { notFound, permanentRedirect } from 'next/navigation'
 import { BLOG_POSTS } from '@/app/blog/posts'
 import { BLOG_POSTS_TR } from '@/app/blog/posts-tr'
 import { slugToTag, getAllTagSlugs, getLocalePostsByTag, TAG_META } from '@/app/blog/tag-utils'
@@ -48,7 +48,7 @@ export default async function TRTagPage({ params }: { params: Promise<{ tag: str
   const tagName = slugToTag(tagSlug)
   if (!tagName) notFound()
   const posts = getLocalePostsByTag(tagName, BLOG_POSTS_TR, BLOG_POSTS)
-  if (posts.length === 0) redirect('/tr/blog')
+  if (posts.length === 0) permanentRedirect(`/blog/tag/${tagSlug}`)
 
   const url = `${BASE_URL}/tr/blog/tag/${tagSlug}`
 

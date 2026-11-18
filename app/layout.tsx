@@ -132,15 +132,7 @@ export default async function RootLayout({
               "name": "Eduentry",
               "description": "Free adaptive academic, personality and internship readiness assessments for students aged 6–22.",
               "publisher": { "@id": "https://eduentry.com/#organization" },
-              "inLanguage": ["en", "tr", "es", "fr", "ar", "ru", "zh"],
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": {
-                  "@type": "EntryPoint",
-                  "urlTemplate": "https://eduentry.com/blog?q={search_term_string}"
-                },
-                "query-input": "required name=search_term_string"
-              }
+              "inLanguage": ["en", "tr", "es", "fr", "ar", "ru", "zh"]
             }
           ]
         })}} />

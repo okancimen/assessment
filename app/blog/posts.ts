@@ -1041,11 +1041,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'How to Prepare Your Child for a Gifted Test: A Practical Guide for US Families',
     shortTitle: 'How to Prepare for a Gifted Test 2026',
     description:
-      'Can you prepare for a gifted test? This guide covers what\'s trainable for CogAT, OLSAT and NNAT, and how to build the specific skills that respond to practice.',
+      'CogAT, OLSAT, NNAT, WISC-V — which gifted tests respond to preparation, and which don\'t? Score thresholds by district, 6-month timeline, and specific books by test.',
     tldr: 'Effective preparation for US gifted tests (CogAT, OLSAT) focuses on abstract reasoning rather than content memorisation, since these tests measure cognitive ability not learned knowledge. The most trainable components are matrix reasoning, spatial reasoning, and non-verbal pattern recognition — all of which respond to structured practice.',
 
     date: '2026-06-17',
-    dateModified: '2026-09-23',
+    dateModified: '2026-11-18',
     readTime: '8 min read',
     tags: ['Gifted Testing', 'CogAT', 'NNAT', 'US Education', 'Preparation'],
     faqs: [
@@ -1383,7 +1383,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'VWO and Gymnasium in the Netherlands: Entry Requirements and How to Qualify (2026)',
     shortTitle: 'Netherlands VWO & Gymnasium Guide 2026',
     description:
-      'VWO and Gymnasium explained for parents in 2026: the top level of Dutch secondary education, Doorstroomtoets scores, schooladvies, and how Tweetalig VWO compares.',
+      'VWO entry in 2026: Doorstroomtoets score bands (545–550+ for VWO), how the schooladvies works, Gymnasium vs Atheneum, TTO, and the Amsterdam lottery explained.',
     tldr: 'According to DUO (Dienst Uitvoering Onderwijs), approximately 17–20% of Dutch students enter the VWO stream each year. VWO is the highest level of Dutch secondary education, spanning 6 years and qualifying students directly for university (wo). Gymnasium adds compulsory Latin and usually Ancient Greek. Entry requires a Doorstroomtoets score in the VWO band and a positive teacher recommendation (schooladvies).',
     date: '2026-06-17',
     dateModified: '2026-11-16',
@@ -2052,14 +2052,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'digital-marketing-work-experience-student-reviews',
-    title: 'Digital Marketing Work Experience: Student Reviews and What to Expect',
-    shortTitle: 'Digital Marketing Work Experience: Student Reviews',
+    title: 'Digital Marketing Work Experience: What It\'s Really Like and How to Find a UK Placement',
+    shortTitle: 'Digital Marketing Work Experience UK Guide',
     description:
-      'What is digital marketing work experience really like? Students share what they did and what surprised them, plus how to find a UK placement.',
+      'What digital marketing placements actually involve — GA4, paid media, SEO, content — the metrics you need to know before arriving, and how secondary school students find UK agencies.',
     tldr: 'Digital marketing work experience for school-age students typically involves writing social media copy, analysing Google Analytics or Meta Ads performance, competitor research, and email marketing assistance. Virtual work experience through Springpod and Forage offer structured digital marketing programmes from real employers.',
 
     date: '2026-07-09',
-    dateModified: '2026-09-10',
+    dateModified: '2026-11-18',
     readTime: '9 min read',
     tags: ['Internship', 'Career Development', 'Work Experience', 'Digital Marketing'],
     faqs: [

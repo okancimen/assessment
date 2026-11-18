@@ -2680,6 +2680,42 @@ export const UK_CONTENT: Record<string, React.ReactNode> = {
       </section>
 
       <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">A Realistic Week at a Digital Marketing Agency</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The shape of a week varies by organisation size, but this schedule reflects what a typical one-week placement at a small-to-mid-size UK digital agency looks like for a secondary school student.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Day</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Morning</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Afternoon</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['Monday', 'Induction, agency overview, meet the team. Walk through one live client account — look at the GA4 dashboard together.', 'Assigned brief: write three social media captions for a client campaign. First draft reviewed and edited by a team member.'],
+                ['Tuesday', 'SEO task: keyword research using Ahrefs or Semrush for a client blog post. Identify five search terms with volume above 500/month.', 'Attend a client strategy call (listen only). Note what questions the account manager asks and why.'],
+                ['Wednesday', 'Email marketing: draft copy for a promotional email. Learn the difference between subject line testing and body copy optimisation.', 'Google Analytics 4 deep-dive: pull a weekly performance report for one channel. Present findings informally to a team member.'],
+                ['Thursday', 'Paid media: observe how a Meta Ads campaign is set up — audience targeting, creative variants, budget allocation. No live editing.', 'Work on your placement project deliverable — typically a competitor content analysis or a channel performance summary.'],
+                ['Friday', 'Finish and present your deliverable. Brief presentation (5–10 minutes) to two or three team members, with feedback.', 'Debrief with your manager. Ask what roles exist on a typical agency team and what the entry-level hiring process looks like.'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700 whitespace-nowrap">{row[0]}</td>
+                  <td className="p-4 text-gray-600 leading-relaxed">{row[1]}</td>
+                  <td className="p-4 text-gray-600 leading-relaxed">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The deliverable on Friday — however modest — is the element that makes the placement documentable. A keyword gap analysis, a competitor content matrix, or a campaign performance summary with three recommendations gives you something specific to reference in university applications and CV cover letters. Generic placements where no deliverable exists leave you describing experience in generalities.
+        </p>
+      </section>
+
+      <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">The Analytics Students Need to Know Before Arriving</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           One of the most consistent pre-placement gaps is not creative skill — it is metric literacy. Students who can follow a conversation about campaign performance without asking what every term means are assigned more interesting work faster. These are the metrics that appear in virtually every digital marketing context:

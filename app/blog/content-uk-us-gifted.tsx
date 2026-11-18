@@ -584,6 +584,76 @@ export const UK_CONTENT_US_GIFTED: Record<string, React.ReactNode> = {
       </section>
 
       <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What Score Qualifies for a Gifted Program?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Gifted program entry thresholds vary by district and test, but most US programs use the 97th or 98th percentile as the cut-off for initial identification. This translates into approximate score targets depending on which test your district uses.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mb-6">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700">Test</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Typical gifted threshold</th>
+                <th className="text-left p-4 font-semibold text-gray-700">Score format</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-50">
+              {[
+                ['CogAT', '97th–98th percentile composite (SAS ~125–130+)', 'Age Score (SAS) + Stanine per battery'],
+                ['NNAT', '95th–97th percentile (NAS ~122–128)', 'Naglieri Ability Score (NAS)'],
+                ['OLSAT (NYC G&T)', '90th %ile for Citywide; 97th for District programs', 'Scale Score + Percentile'],
+                ['WISC-V', 'FSIQ 130+ (98th percentile)', 'Full Scale IQ + five index scores'],
+                ['Iowa Assessments', '95th–99th percentile composite', 'Standard Score + Percentile'],
+              ].map((row) => (
+                <tr key={row[0]} className="hover:bg-gray-50/50">
+                  <td className="p-4 font-semibold text-indigo-700">{row[0]}</td>
+                  <td className="p-4 text-gray-800">{row[1]}</td>
+                  <td className="p-4 text-gray-600 text-sm">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Some districts use a composite formula rather than a single test — for example, combining a CogAT score with MAP RIT scores or teacher ratings. If your district does this, ask the gifted coordinator for the exact formula before allocating preparation time, since improving a low RIT score may move the composite more than marginal CogAT improvement.
+        </p>
+        <Callout>
+          <strong className="text-indigo-900">Important:</strong> Districts post their current year&apos;s qualification criteria on their gifted/talented programme web page. These change — a district that used the 90th percentile cut-off in 2023 may have raised it to the 95th by 2026 due to increased participation rates. Always check the current year&apos;s threshold before you begin preparation.
+        </Callout>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Recommended Preparation Resources by Test</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The quality of CogAT and NNAT preparation materials varies significantly. These are resources that target the specific question formats and reasoning skills each test actually measures.
+        </p>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">CogAT</h3>
+            <div className="space-y-2">
+              <Bullet><strong>Bright Kids CogAT Practice Tests</strong> — format-accurate, available by grade level (K–8); the most widely recommended by parents whose children have gone through district gifted screening</Bullet>
+              <Bullet><strong>Building Thinking Skills series (Critical Thinking Co.)</strong> — develops verbal, figural, and spatial reasoning across all three batteries; better for the 3–6 month preparation window than format drilling</Bullet>
+              <Bullet><strong>KenKen puzzles</strong> — free at kenken.com; directly builds quantitative battery reasoning (number series, number puzzle relationships) in 10–15 minute daily sessions</Bullet>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">NNAT</h3>
+            <div className="space-y-2">
+              <Bullet><strong>Bright Kids NNAT Practice Tests</strong> — grade-specific, nonverbal format only; most useful 4–8 weeks before the test for format familiarisation</Bullet>
+              <Bullet><strong>Visual-spatial puzzle books</strong> — tangram sets, pattern block activities, and IQ-style matrix puzzles (e.g., MindWare Pattern Play) are more effective for genuine skill building than format drilling at the 3–6 month horizon</Bullet>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">OLSAT (New York City)</h3>
+            <div className="space-y-2">
+              <Bullet><strong>TestingMom OLSAT Practice Tests</strong> — specifically formatted for NYC G&T admissions by level (Pre-K through Grade 2); the verbal section requires direction-following practice that is not covered by general CogAT books</Bullet>
+              <Bullet><strong>Vocabulary building</strong> — the OLSAT verbal section at younger grades heavily tests listening comprehension and following multi-step directions; reading aloud to children and asking comprehension questions is the highest-return preparation activity for pre-K and K applications</Bullet>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Reading</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
