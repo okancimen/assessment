@@ -276,6 +276,34 @@ interface ResultsEmailOptions {
   resultsUrl: string
 }
 
+export async function sendGuestResultsEmail(opts: {
+  to: string
+  guestName: string
+  overallScore: number
+  scoreLabel: string
+  resultsUrl: string
+  registerUrl: string
+}): Promise<void> {
+  const { to, guestName, overallScore, scoreLabel, resultsUrl, registerUrl } = opts
+  const firstName = guestName.split(' ')[0]
+  await sendEmail(
+    to,
+    `${guestName}'s assessment results — save your report`,
+    `<div style="font-family:sans-serif;max-width:520px;margin:0 auto;padding:32px 24px;color:#111827">
+      <h1 style="font-size:20px;font-weight:700;margin:0 0 8px">Hi${firstName ? ' ' + firstName : ''} — here are ${guestName}'s results</h1>
+      <p style="color:#6b7280;font-size:14px;margin:0 0 24px">The adaptive academic assessment is complete. The full topic-by-topic breakdown and AI action plan are waiting for you.</p>
+      <div style="background:#f5f3ff;border-radius:14px;padding:24px;text-align:center;margin-bottom:24px">
+        <div style="font-size:52px;font-weight:800;color:#4f46e5;line-height:1">${overallScore}</div>
+        <div style="color:#7c3aed;font-weight:600;margin-top:6px">${scoreLabel}</div>
+        <div style="color:#9ca3af;font-size:12px;margin-top:4px">Overall standardised score</div>
+      </div>
+      <a href="${resultsUrl}" style="display:block;background:#4f46e5;color:#fff;text-decoration:none;text-align:center;padding:14px;border-radius:10px;font-weight:600;font-size:14px;margin-bottom:12px">View full results →</a>
+      <a href="${registerUrl}" style="display:block;background:#fff;color:#4f46e5;text-decoration:none;text-align:center;padding:14px;border-radius:10px;font-weight:600;font-size:14px;border:1.5px solid #4f46e5;margin-bottom:24px">Save report &amp; create free account →</a>
+      <p style="color:#9ca3af;font-size:11px;text-align:center;margin:0">Guest results are stored for 30 days. Create a free account to keep them permanently and track progress over time.</p>
+    </div>`
+  )
+}
+
 export async function sendResultsEmail(opts: ResultsEmailOptions): Promise<void> {
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) return

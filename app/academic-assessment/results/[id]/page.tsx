@@ -6,6 +6,7 @@ import Link from 'next/link'
 import PublicNav from '@/components/layout/PublicNav'
 import PublicFooter from '@/components/layout/PublicFooter'
 import { SUBJECT_LABELS, SUBJECT_DESCRIPTIONS } from '@/types'
+import GuestResultsGate from './GuestResultsGate'
 
 type SubjectResult = {
   raw_score: number
@@ -47,14 +48,18 @@ function ScoreRing({ score }: { score: number }) {
 
 export default async function GuestAcademicResultsPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ id: string }>
+  searchParams: Promise<{ token?: string }>
 }) {
   const { id } = await params
+  const { token: tokenParam } = await searchParams
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   const cookieStore = await cookies()
-  const guestToken = cookieStore.get('ac_tok')?.value
+  // Accept token from cookie (normal flow) or ?token= query param (email link)
+  const guestToken = cookieStore.get('ac_tok')?.value ?? tokenParam
   const admin = createAdminClient()
 
   if (user) {
@@ -169,59 +174,12 @@ export default async function GuestAcademicResultsPage({
         </div>
 
         {/* Locked section — topic detail + AI insights */}
-        <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden relative">
-          {/* Blurred preview */}
-          <div className="p-6 space-y-3 blur-sm select-none pointer-events-none" aria-hidden="true">
-            {Array.from({ length: 3 }).map((_, i) => (
-              <div key={i} className="rounded-2xl bg-[#f5f5f7] border border-[#d2d2d7] p-4 space-y-2">
-                <div className="h-3 bg-[#d2d2d7] rounded-full w-1/3" />
-                <div className="grid grid-cols-3 gap-2">
-                  {[1, 2, 3].map((j) => (
-                    <div key={j} className="h-10 bg-[#e5e7eb] rounded-xl" />
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-          {/* Overlay */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/85 backdrop-blur-[2px] px-6 text-center gap-4">
-            <div className="w-10 h-10 rounded-full bg-[#eef2ff] flex items-center justify-center mx-auto">
-              <svg className="w-5 h-5 text-[#4F46E5]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-            </div>
-            <p className="text-base font-bold text-[#1d1d1f]">Unlock the full report — free</p>
-            <ul className="text-sm text-[#3d3d3f] space-y-2 text-left max-w-xs w-full">
-              {[
-                'Topic-by-topic breakdown — your child\'s exact weak areas',
-                'AI action plan — specific next steps for each subject',
-                'Percentile ranking + UK, US, PISA & IB context',
-                'Save the report & track growth when you retake',
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-[#4F46E5] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xs">
-              <Link
-                href={`/auth/register?redirect=${encodeURIComponent(claimUrl)}`}
-                className="flex-1 bg-[#4F46E5] hover:bg-indigo-700 text-white font-bold text-sm px-5 py-3 rounded-xl transition-colors text-center"
-              >
-                Create Free Account
-              </Link>
-              <Link
-                href={`/auth/login?redirect=${encodeURIComponent(claimUrl)}`}
-                className="flex-1 border border-[#d2d2d7] text-[#1d1d1f] font-semibold text-sm px-5 py-3 rounded-xl hover:bg-[#f5f5f7] transition-colors text-center"
-              >
-                Sign In
-              </Link>
-            </div>
-          </div>
-        </div>
+        <GuestResultsGate
+          assessmentId={id}
+          guestToken={guestToken!}
+          childName={childName}
+          claimUrl={claimUrl}
+        />
 
         {/* Personality nudge */}
         <div className="bg-[#fffbeb] rounded-3xl border border-[#fde68a] p-6 text-center space-y-3">
