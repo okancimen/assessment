@@ -829,8 +829,8 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'staj-defteri-nasil-doldurulur',
     title: 'Staj Defteri Nedir, Nereden Alınır ve Nasıl Doldurulur? 2026 Rehberi',
-    shortTitle: 'Staj Defteri: Nereden Alınır, Nasıl Doldurulur? 2026 Rehberi',
-    description: 'Staj defteri nereden alınır? Okul veya kurum tarafından verilir, ücretsizdir. Günlük ve haftalık nasıl doldurulur, staj dalı ne demek, kim imzalar, ne zaman teslim edilir — lise ve üniversite öğrencileri için 2026 örnek rehberi.',
+    shortTitle: 'Staj Defteri Nasıl Doldurulur? 2026 Adım Adım Rehber + Örnek',
+    description: 'Staj defteri okul veya işyerinden ücretsiz alınır. Günlük aktivite, haftalık özet ve yönetici imzası bölümleri nasıl doldurulur — lise öğrencileri için adım adım örnek rehber. Ne yazılır, ne zaman teslim edilir.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
@@ -939,9 +939,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
   {
     slug: 'pisa-nedir-is-hayatini-sekillendiren-sinav',
     title: 'PISA 2025 Türkiye Sıralaması: Matematik ve Okuma Kariyeri Nasıl Etkiler?',
-    shortTitle: 'PISA 2025 Türkiye Sıralaması ve Çocuğunuzun Kariyerine Etkisi',
+    shortTitle: 'PISA 2025 Türkiye Sıralaması: Çocuğunuzun Kariyerini Nasıl Etkiler?',
     description:
-      'Türkiye PISA 2025\'te okumada OECD ortalamasını geçti. PISA\'nın ölçtüğü problem çözme ve okuma becerileri çocuğunuzun 10 yıl içindeki kariyer olanaklarını doğrudan etkiliyor — araştırma verilerine dayalı rehber.',
+      'Türkiye PISA 2025\'te okumada OECD ortalamasını geçti — ama bu yeterli mi? PISA\'nın ölçtüğü problem çözme becerileri ile çocukların gerçek kariyer olanakları arasındaki bağlantı, verilerle açıklıyor.',
     tldr: 'PISA, OECD\'nin her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uyguladığı bir değerlendirme programıdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan civarındadır. PISA\'nın ölçtüğü beceriler — sayısal muhakeme, okuduğunu anlama ve problem çözme — günümüz iş dünyasının en çok aradığı yetkinliklerle örtüşüyor.',
 
     date: '2026-09-21',

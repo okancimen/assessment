@@ -1550,7 +1550,7 @@ export const BLOG_POSTS_ZH: BlogPostMeta[] = [
     slug: 'xingge-youshi-yu-xueyechengjiu',
     contentSlug: 'character-strengths-academic-success',
     title: '预测学业成功的5大性格优势——及如何在孩子身上识别它们',
-    shortTitle: '性格优势与学业成功',
+    shortTitle: '性格优势与学业成功：5种预测孩子成绩的关键特质',
     description:
       'VIA性格优势测试：24项性格特质与6大美德，免费在线分析孩子的性格。五项优势预测学业成功——好奇心、学习热爱、坚毅、自我调节和活力。家长填写，AI生成发展报告，适用于6–17岁儿童。',
     tldr: '学校成绩衡量的是相对于班级平均水平的表现，而非决定孩子能否持续努力、保持好奇心、从挫折中成长的性格特质。五项VIA性格优势——学习热爱、好奇心、坚毅、自我调节和活力——在纵向研究中始终作为最能预测学业结果的特质脱颖而出。这些优势可以通过免费在线测试进行测量，并通过刻意练习加以培养。',

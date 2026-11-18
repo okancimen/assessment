@@ -447,9 +447,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'what-is-a-standardised-score',
     title: 'What Is a Standardised Score? A Clear Guide for Parents',
-    shortTitle: 'What Is a Standardised Score? SAS Bands Explained',
+    shortTitle: 'What Is a Standardised Score? Plain-English Guide for Parents',
     description:
-      'Standardised scores explained: 100 is average, 115 the 84th percentile, 130 the 98th. SAS bands, good scores and grammar school thresholds.',
+      'Score of 100 = average. 115 = 84th percentile. 130 = 98th percentile (grammar school range). Understand your child\'s standardised score exactly — what it means, what\'s strong, and how the 11+, CAT4 and NWEA MAP all use the same scale.',
     tldr: 'A standardised score of 100 is exactly average for age; 115 is the 84th percentile; 130 is the 98th percentile. For 11+ grammar school entry, most areas outside London require a Standardised Age Score (SAS) of 111–118; Barnet and Sutton selective schools require 121–132.',
     date: '2026-06-17',
     dateModified: '2026-09-24',
@@ -567,9 +567,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'grammar-school-entry-requirements-2026',
     title: 'Grammar School Entry Requirements 2026: Scores, Percentiles and How to Qualify',
-    shortTitle: 'Grammar School Entry Requirements 2026',
+    shortTitle: 'Grammar School Entry Requirements 2026: Pass Marks by Area',
     description:
-      'Grammar school entry requirements 2026: exact SAS pass marks by area (Kent 111, Bucks 118, London Barnet/Sutton 121–132), GL vs CEM scoring differences, and whether your child\'s percentile actually translates to an offer.',
+      'Exact grammar school SAS pass marks: Kent 111, Buckinghamshire 118, London Barnet/Sutton 121–132. GL vs CEM differences, what percentile actually secures an offer, and what to do if your child narrowly misses.',
     tldr: 'According to admissions data from GL Assessment (used in Kent, Essex and Hertfordshire) and CEM (used in Buckinghamshire), the 11+ pass mark is approximately SAS 111–113 in Kent and Essex, and SAS 118 in Buckinghamshire. The most competitive London schools in Barnet and Sutton require SAS 121–132 — and even children scoring 125 may not receive an offer if higher-scoring applicants living closer fill available places first.',
 
     date: '2026-06-17',
@@ -638,9 +638,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'gifted-program-testing-guide',
     title: 'Gifted Program Testing Guide: How US Gifted Identification Works and How to Prepare',
-    shortTitle: 'US Gifted Testing 2026: CogAT, WISC-V & Score Thresholds',
+    shortTitle: 'US Gifted Program Testing 2026: Does Your Child Qualify?',
     description:
-      'US gifted programs: enrichment typically requires CogAT SAS 121+ (90th %ile); formal ID uses WISC-V IQ 130+. What each test measures, NYC G&T thresholds, and how to prepare your child.',
+      'CogAT SAS 121+ (90th percentile) for enrichment; WISC-V IQ 130+ (98th percentile) for formal gifted ID. NYC G&T thresholds, what each test actually measures, and how to prepare your child.',
     tldr: 'According to the National Association for Gifted Children (NAGC), most US gifted programs require an IQ of 130 or above (98th+ percentile) for formal identification. New York City\'s Gifted & Talented programme has historically required the 99th percentile. Pull-out enrichment programmes typically accept the 90th–95th percentile. The most widely used group screening test is the CogAT; the standard individual IQ test is the WISC-V.',
     date: '2026-06-17',
     dateModified: '2026-10-28',
@@ -698,9 +698,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'nwea-map-scores-explained',
     title: 'MAP Scores by Grade Level 2026 — NWEA RIT Charts, Averages & Gifted Cut-offs',
-    shortTitle: 'NWEA MAP Scores by Grade Level 2026 — Is Your Child Above Average?',
+    shortTitle: 'NWEA MAP Scores by Grade Level 2026–27: What\'s a Good RIT Score?',
     description:
-      "What's a good NWEA MAP score? Fall 2026 norms: Grade 3 Math = 188, Grade 5 = 205, Grade 8 = 219. K–12 RIT charts for Math, Reading & Language, gifted cut-offs, and a free percentile calculator.",
+      "RIT 215 in Grade 5 Math = 93rd percentile. Find your child's exact rank with 2026–27 grade-by-grade charts for K–10 Math, Reading & Language — plus gifted cut-offs and a free percentile calculator.",
     tldr: 'According to NWEA\'s 2020 national norming study — the current benchmark for 2025–26 — the national average MAP Math RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
@@ -771,9 +771,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'nwea-map-test-prep',
     title: 'NWEA MAP Test Prep: What Actually Works (and What Doesn\'t)',
-    shortTitle: 'NWEA MAP Test Prep: What Actually Works',
+    shortTitle: 'NWEA MAP Test Prep 2026: What Actually Raises RIT Scores',
     description:
-      'Evidence-based MAP test prep for Reading and Math across all K–12 grades. What the research says raises RIT scores — and the common mistakes that waste prep time.',
+      'Targeted MAP prep raises RIT scores 3–6 points per season. What works: skill targeting at the right RIT band, vocabulary depth for Reading, fractions for Grades 4–7 Math — plus the 3 mistakes that waste prep time.',
     tldr: 'MAP Growth is an adaptive achievement test — test-taking tricks don\'t work. What raises RIT scores is genuine content mastery in the skills just above your child\'s current level. For Reading: vocabulary depth (morphology study) + daily reading at 100–200 Lexile above current level. For Math: fractions are the #1 barrier at Grades 4–7; use the NWEA Learning Continuum to target content at the next RIT band, not current grade level. Realistic improvement in one 12-16 week window: 3–6 RIT points.',
     date: '2026-10-20',
     readTime: '10 min read',
@@ -1085,9 +1085,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'cogat-scores-explained',
     title: 'CogAT Score Guide 2026: SAS Chart, Gifted Cut-offs & What Your Results Mean',
-    shortTitle: 'CogAT Scores Explained: SAS, Percentile & Stanine Guide 2026',
+    shortTitle: 'CogAT Scores Explained 2026: What Does Your Child\'s SAS Score Mean?',
     description:
-      'CogAT SAS 121 = 90th percentile — the gifted threshold for most US programs. Full 2026 SAS-to-percentile chart, stanine bands (1–9), Verbal/Quantitative/Nonverbal battery breakdown, and how to read your child\'s ability profile.',
+      'Got your CogAT results? SAS of 121 = 90th percentile = gifted range for most US districts. Full 2026 chart: every SAS from 70–145 mapped to percentile, stanine and what it means for gifted placement.',
     tldr: 'The CogAT (Cognitive Abilities Test) reports a Standard Age Score (SAS) with a mean of 100 and a standard deviation of 16. A SAS of 116 places a child at approximately the 84th percentile; 132 is the 98th percentile. Most gifted programs require the 90th percentile or above, which corresponds to a CogAT SAS of approximately 121. The test has three batteries — Verbal, Quantitative, and Nonverbal — and a child\'s composite profile matters as much as the overall score.',
     date: '2026-10-17',
     dateModified: '2026-11-14',
@@ -1500,7 +1500,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'CAT4 Test Guide for UAE Parents: What the Test Measures and How Scores Work',
     shortTitle: 'UAE CAT4 Test 2026: SAS Scores, Gifted Cut-offs & How to Interpret Results',
     description:
-      'CAT4 for UAE schools: SAS mean 100, 115=84th %ile, 127=96th %ile. What score qualifies for gifted sets (typically 110+), how Dubai schools use CAT4 results, and how to interpret your child\'s report.',
+      'Got your child\'s CAT4 results from a UAE school? SAS 115 = 84th percentile, 127 = 96th percentile. How Dubai schools use CAT4 for gifted sets (typically SAS 110+) — and how to read the full battery breakdown.',
     tldr: 'CAT4 (Cognitive Abilities Test 4) produces a Standardised Age Score (SAS) with mean 100 and SD 15. A score of 100 is average for age; 115 is the 84th percentile; 127 is the 96th percentile. UAE schools use CAT4 scores for setting, gifted identification, and in some cases admissions — a score of 110+ typically qualifies a student for advanced teaching sets.',
     date: '2026-06-17',
     dateModified: '2026-10-28',
@@ -1779,9 +1779,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'canada-ontario-gifted-testing-guide',
     title: 'Ontario Gifted Testing Guide: IPRC, WISC-V and How the Identification Process Works',
-    shortTitle: 'Ontario Gifted Testing 2026: IQ Score Requirements',
+    shortTitle: 'Ontario Gifted Testing 2026: WISC-V, IPRC & How Gifted Placement Works',
     description:
-      'How Ontario\'s gifted identification works: WISC-V IQ 130+ threshold, IPRC committee process, CCAT screening, self-contained Gifted class placement, and your rights under the Education Act.',
+      'Ontario gifted placement requires WISC-V IQ 130+ and an IPRC committee decision. Full guide: CCAT screening, what the IPRC reviews, your rights under the Education Act, and how to prepare for the process.',
     tldr: 'Under Ontario\'s Education Act, gifted identification uses the WISC-V (individual IQ test) or CCAT (group screening) and requires a Full Scale IQ of 130 or above (98th percentile). The IPRC (Identification, Placement, and Review Committee) formally designates students as Exceptional — Gifted, unlocking placement in a self-contained Gifted class.',
 
     date: '2026-06-17',
@@ -1898,9 +1898,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'australia-acer-scholarship-exam',
     title: 'ACER Scholarship Exam Guide: How It Works, Scores and How to Prepare',
-    shortTitle: 'ACER Scholarship Exam: Guide for Parents',
+    shortTitle: 'ACER Scholarship Exam 2026: Score Requirements & How to Prepare',
     description:
-      'ACER Scholarship Exam 2026: tests written expression, humanities and maths for Years 8–10 entry at most Australian independent schools. School-specific scores explained and how to prepare.',
+      'ACER Scholarship 2026: written expression, humanities and maths for Year 8–10 entry to Australian independent schools. Typical pass marks, school-specific score requirements, and what actually prepares students.',
     tldr: 'The ACER Scholarship Exam is used by most Australian independent schools to award merit scholarships and assess academic admissions. It tests written expression, humanities, and mathematics for Years 8–10 entry. Scores are school-specific rather than nationally standardised — each school sets its own scholarship threshold independently.',
 
     date: '2026-06-17',
@@ -1979,9 +1979,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'australia-gate-gifted-program',
     title: 'GATE Western Australia: How the Gifted and Talented Programme Works',
-    shortTitle: 'Western Australia GATE Program 2026',
+    shortTitle: 'Western Australia GATE Program 2026: Entry Requirements, Tests & Scores',
     description:
-      'WA GATE 2026: Year 4 entry to specialist programs, Year 7 to Perth Modern (top 3–5% in ACER test). School nomination then ACER ability test — what it covers, score thresholds and how to prepare.',
+      'WA GATE: Year 4 entry to specialist programs; Year 7 to Perth Modern (top 3–5%). ACER ability test — what it covers, typical cutoff scores, school nomination process, and how to prepare.',
     tldr: 'Western Australia GATE (Gifted and Talented Education) uses a two-stage selection process: school nomination followed by an ACER-administered test. Perth Modern School — the flagship full-time GATE school — is one of Australia most selective state schools, with entry typically requiring a GATE test score in the top 3–5%.',
 
     date: '2026-06-17',
@@ -2216,8 +2216,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'pisa-2025-global-education-crisis-what-parents-need-to-know',
     title: 'PISA 2025 Results: Global Education Is in Crisis — What Every Parent Needs to Know',
-    shortTitle: 'PISA 2025 Results: What the Lowest Scores Mean',
-    description: 'PISA 2025: the lowest maths, reading and science scores since 2000. What the results mean for UK and international families, and how to benchmark your child.',
+    shortTitle: 'PISA 2025: Lowest Global Scores Since 2000 — What Parents Need to Act On',
+    description: 'PISA 2025: OECD maths average dropped to 470 — the lowest since the programme began. UK fell to 27th in maths. Where your country ranks and how to benchmark your own child against global standards.',
     tldr: 'PISA 2025 recorded the lowest average OECD maths score since the programme began — 470 in maths, 474 in reading and 475 in science. The UK fell to 27th in maths and 13th in reading. Singapore, Japan and South Korea led all three domains. Post-pandemic recovery has stalled across most OECD countries.',
     date: '2026-09-10',
     dateModified: '2026-09-23',
@@ -2302,7 +2302,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'nsw-opportunity-class-test-guide',
     title: 'NSW Opportunity Class Test: Complete Guide for Parents (2026)',
-    shortTitle: 'NSW Opportunity Classes 2026: OC Test Guide',
+    shortTitle: 'NSW Opportunity Class Test 2026: OC Guide, Cutoffs & How to Prepare',
     description: 'NSW OC test 2026: taken in Year 3, for enriched Year 5–6 classes across 75 public schools. Tests Thinking Skills + Reading. ~4,200 places ranked by merit score. Typical cutoffs and how to prepare.',
     tldr: 'NSW Opportunity Classes run from Year 5 in public primary schools across NSW. The entry test is taken in Year 3 and covers two components: Thinking Skills and Reading. Offers are made on an ordered merit score combining both. Approximately 4,200 places are available annually across around 75 public schools.',
     date: '2026-09-11',
@@ -3398,9 +3398,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'wisc-v-scores-explained',
     title: 'WISC-V Scores Explained: Full Scale IQ, Index Scores, and Gifted Cut-Offs',
-    shortTitle: 'WISC-V IQ Scores Explained: FSIQ Bands & Gifted Cut-Offs',
+    shortTitle: 'WISC-V IQ Scores Explained: What FSIQ 130 Means & Gifted Cut-Offs [2026]',
     description:
-      'WISC-V Full Scale IQ scores explained: what FSIQ ranges mean, the five index scores (VCI, VSI, FRI, WMI, PSI), gifted cut-offs by programme type, and how WISC-V compares to CogAT and MAP.',
+      'FSIQ 130 = 98th percentile = standard gifted threshold in most US programs. Plain-language guide to your child\'s WISC-V Full Scale IQ, five index scores (VCI, VSI, FRI, WMI, PSI), and what the report means for school placement.',
     tldr: 'A WISC-V Full Scale IQ (FSIQ) of 130 or above places a child at the 98th percentile and is the standard threshold for gifted identification in most US districts. An FSIQ of 120–129 is Superior range (91st–97th percentile). The test has five index scores: Verbal Comprehension (VCI), Visual Spatial (VSI), Fluid Reasoning (FRI), Working Memory (WMI), and Processing Speed (PSI). Most programmes use the FSIQ as the primary criterion — a child does not need to score in the gifted range on every index.',
     date: '2026-10-26',
     readTime: '11 min read',
@@ -3510,9 +3510,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'what-is-a-good-nwea-map-score',
     title: 'What Is a Good NWEA MAP Score? Grade-by-Grade Answer for Parents 2026',
-    shortTitle: 'What Is a Good NWEA MAP Score? Grade-by-Grade Guide',
+    shortTitle: 'What Is a Good NWEA MAP Score? 2026 Grade-Level Answers for Parents',
     description:
-      'What counts as a good MAP RIT score depends on your child\'s grade. Quick-reference tables for every grade K–10 — below average, on track, strong, and gifted range — for Math and Reading.',
+      'RIT 199 (Grade 3), 216 (Grade 5), 226 (Grade 7) = strong/75th percentile. Gifted range = 208, 225, 233. Free look-up tables for K–10 Math and Reading — find your child\'s level in 30 seconds.',
     tldr: 'A "good" MAP RIT score is grade-relative: RIT 220 in Math is extraordinary for a 3rd grader (≈99th percentile) but below average for an 8th grader. For Math, a strong score (75th percentile) is approximately RIT 199 at Grade 3 and RIT 226 at Grade 7. The 90th percentile in any subject for any grade typically triggers gifted programme screening in most US districts.',
     date: '2026-10-28',
     dateModified: '2026-10-28',
@@ -3550,9 +3550,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'nwea-map-growth-norms',
     title: 'NWEA MAP Growth Norms 2025–26: How Much Should My Child\'s Score Increase?',
-    shortTitle: 'NWEA MAP Growth Norms: Expected Score Gains by Grade',
+    shortTitle: 'NWEA MAP Growth Norms 2026: Expected RIT Gains by Grade',
     description:
-      'Expected MAP RIT score gains by grade and subject — fall-to-spring norms for Math and Reading. Know if your child\'s growth is on track, exceptional, or needs attention.',
+      'Grade 5 Math: expected fall-to-spring growth is +3.8 RIT points. Grade 3 Reading: +5.3 points. Full 2026 norms for K–10 Math and Reading — see exactly whether your child\'s MAP score gains are on track, ahead, or behind.',
     tldr: 'Expected MAP Math growth from fall to spring: roughly 11.5 RIT points in Kindergarten, slowing to 3–4 points by Grade 8. Reading growth decelerates faster: 11 points in Kindergarten, 5 points in Grade 3, and just 1–2 points by Grades 7–8. Growth rates also vary by starting percentile — students below average typically show higher absolute gains when they receive targeted support.',
     date: '2026-10-28',
     dateModified: '2026-10-28',
@@ -3639,7 +3639,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'personality-vs-aptitude-test',
     title: 'Personality Test vs Aptitude Test: What\'s the Difference and Why Your Child Needs Both',
-    shortTitle: 'Personality vs Aptitude Test: Key Differences',
+    shortTitle: 'Personality Test vs Aptitude Test: What Every Parent Needs to Know',
     description: 'A personality test reveals who your child is — values, motivations, character traits. An aptitude test measures what they can do — reasoning, working memory, cognitive ability. Here\'s what each predicts, how they interact, and why neither alone is enough.',
     tldr: 'A personality test (like VIA character strengths) identifies your child\'s motivations, values, and behavioural tendencies — it does not measure intelligence. An aptitude test measures cognitive ability: verbal reasoning, numerical reasoning, and abstract thinking. Research consistently shows that high aptitude with low self-regulation underperforms moderate aptitude with high perseverance. Knowing both tells you whether a performance gap is a capability issue or an engagement issue — two problems that need entirely different solutions. Eduentry\'s free assessment covers both: cognitive reasoning + 24 VIA character strengths, ages 6–22, in one sitting.',
     date: '2026-11-02',

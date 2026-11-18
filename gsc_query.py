@@ -26,13 +26,13 @@ def fetch_pages(start, end, limit=200):
         for row in r.get('rows', [])
     }
 
-# Recent: last 28 days | Prior: 28 days before that
-recent = fetch_pages('2026-10-06', '2026-11-02')
-prior  = fetch_pages('2026-09-08', '2026-10-05')
+# Recent: last 28 days (Oct 22 – Nov 18) | Prior: 28 days before that (Sep 24 – Oct 21)
+recent = fetch_pages('2026-10-22', '2026-11-18')
+prior  = fetch_pages('2026-09-24', '2026-10-21')
 
 all_pages = set(recent) | set(prior)
 
-drops = []
+gains = []
 for page in all_pages:
     r = recent.get(page, {})
     p = prior.get(page, {})
@@ -41,13 +41,17 @@ for page in all_pages:
     r_clicks = r.get('clicks', 0)
     p_clicks = p.get('clicks', 0)
     impr_delta = r_impr - p_impr
-    if p_impr >= 50 and impr_delta < -20:  # only meaningful drops
-        pct = round(impr_delta / p_impr * 100)
-        drops.append((pct, page, p_impr, r_impr, p_clicks, r_clicks))
+    if r_impr >= 50 and impr_delta > 20:  # only meaningful gains
+        base = p_impr if p_impr > 0 else 1
+        pct = round(impr_delta / base * 100)
+        gains.append((-pct, page, p_impr, r_impr, p_clicks, r_clicks))
 
-drops.sort()
+gains.sort()
 
-print(f'{"Page":<60} {"Prior impr":>10} {"Recent impr":>11} {"Δ%":>5}  {"Prior clk":>9} {"Recent clk":>10}')
-print('-' * 115)
-for pct, page, p_impr, r_impr, p_clicks, r_clicks in drops:
-    print(f'{page:<60} {p_impr:>10} {r_impr:>11} {pct:>4}%  {p_clicks:>9} {r_clicks:>10}')
+print(f'\n=== IMPROVEMENTS (Oct 22 – Nov 18 vs Sep 24 – Oct 21) ===\n')
+print(f'{"Page":<60} {"Prior impr":>10} {"Recent impr":>11} {"Δ%":>6}  {"Prior clk":>9} {"Recent clk":>10}')
+print('-' * 118)
+for neg_pct, page, p_impr, r_impr, p_clicks, r_clicks in gains:
+    print(f'{page:<60} {p_impr:>10} {r_impr:>11} {-neg_pct:>5}%  {p_clicks:>9} {r_clicks:>10}')
+
+print(f'\nTotal pages with meaningful impression gains: {len(gains)}')
