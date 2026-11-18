@@ -719,7 +719,7 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
             elapsed={formatElapsed(sectionTimeElapsed)}
           />
         </div>
-        {isGuest && session.subject_index === 0 && session.question_index === 0 && bannerState !== 'sent' && (
+        {isGuest && session.subject_index === 0 && session.question_index < 14 && bannerState !== 'sent' && (
           <div className="bg-[#eef2ff] border border-[#c7d2fe] rounded-2xl px-5 py-4">
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <div className="flex items-center gap-3 flex-1 min-w-0">
