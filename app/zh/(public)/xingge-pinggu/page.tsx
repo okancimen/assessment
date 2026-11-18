@@ -140,7 +140,7 @@ export default function XinggePingguPage() {
             <span className="text-[#4F46E5]">优势与成长领域</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            一项由人工智能驱动的科学性格评估，完美适配您孩子的发育阶段。
+            您来回答问题。探索孩子的个性。
           </p>
           <GuestStartForm locale="zh" />
           <p className="mt-3 text-sm text-[#6e6e73]">

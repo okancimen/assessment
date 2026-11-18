@@ -10,6 +10,7 @@ type Strings = {
   loadingLabel: string
   disclaimer: string
   errorFallback: string
+  tiers: [string, string, string, string]
 }
 
 const STRINGS: Record<string, Strings> = {
@@ -20,6 +21,7 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: 'Starting…',
     disclaimer: 'No account needed · Takes ~5 minutes',
     errorFallback: 'Something went wrong. Please try again.',
+    tiers: ['Junior (6–9)', 'Intermediate (10–13)', 'Adolescent (14–17)', 'Young Adult (18–20)'],
   },
   tr: {
     namePlaceholder: 'Çocuğun adı (isteğe bağlı)',
@@ -28,6 +30,7 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: 'Başlatılıyor…',
     disclaimer: 'Hesap gerekmez · ~5 dakika sürer',
     errorFallback: 'Bir hata oluştu. Lütfen tekrar deneyin.',
+    tiers: ['Küçük (6–9)', 'Orta (10–13)', 'Ergen (14–17)', 'Genç Yetişkin (18–20)'],
   },
   fr: {
     namePlaceholder: "Prénom de l'enfant (facultatif)",
@@ -36,6 +39,7 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: 'Démarrage…',
     disclaimer: 'Sans compte · ~5 minutes',
     errorFallback: 'Une erreur est survenue. Veuillez réessayer.',
+    tiers: ['Junior (6–9)', 'Intermédiaire (10–13)', 'Adolescent (14–17)', 'Jeune adulte (18–20)'],
   },
   es: {
     namePlaceholder: 'Nombre del niño/a (opcional)',
@@ -44,6 +48,7 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: 'Iniciando…',
     disclaimer: 'Sin cuenta · ~5 minutos',
     errorFallback: 'Algo salió mal. Por favor inténtalo de nuevo.',
+    tiers: ['Junior (6–9)', 'Intermedio (10–13)', 'Adolescente (14–17)', 'Adulto joven (18–20)'],
   },
   ar: {
     namePlaceholder: 'اسم الطفل (اختياري)',
@@ -52,6 +57,7 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: '…جارٍ البدء',
     disclaimer: 'لا حاجة لحساب · ~٥ دقائق',
     errorFallback: 'حدث خطأ ما. يرجى المحاولة مرة أخرى.',
+    tiers: ['صغار (6–9)', 'متوسط (10–13)', 'مراهق (14–17)', 'شاب بالغ (18–20)'],
   },
   ru: {
     namePlaceholder: 'Имя ребёнка (необязательно)',
@@ -60,6 +66,7 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: 'Запуск…',
     disclaimer: 'Без регистрации · ~5 минут',
     errorFallback: 'Что-то пошло не так. Попробуйте ещё раз.',
+    tiers: ['Младший (6–9)', 'Средний (10–13)', 'Подростковый (14–17)', 'Молодой взрослый (18–20)'],
   },
   zh: {
     namePlaceholder: '孩子的名字（可选）',
@@ -68,6 +75,7 @@ const STRINGS: Record<string, Strings> = {
     loadingLabel: '启动中…',
     disclaimer: '无需注册 · 约5分钟',
     errorFallback: '出现错误，请重试。',
+    tiers: ['初级（6–9岁）', '中级（10–13岁）', '青少年（14–17岁）', '青年（18–20岁）'],
   },
 }
 
@@ -116,18 +124,28 @@ export default function GuestStartForm({ locale = 'en' }: { locale?: string }) {
           toolparamdescription="The child's first name (optional)"
           className="flex-1 px-4 py-3 rounded-xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-white"
         />
-        <input
-          type="number"
+        <select
           name="age"
           value={age}
           onChange={(e) => setAge(e.target.value)}
           required
-          min={6}
-          max={20}
-          placeholder={s.agePlaceholder}
           toolparamdescription="The child's age in years (6 to 20)"
-          className="w-full sm:w-24 px-4 py-3 rounded-xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] text-[#1d1d1f] placeholder-[#6e6e73] text-sm bg-white"
-        />
+          className="w-full sm:w-36 px-4 py-3 rounded-xl border border-[#d2d2d7] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] text-[#1d1d1f] text-sm bg-white appearance-none"
+        >
+          <option value="" disabled>{s.agePlaceholder}</option>
+          <optgroup label={s.tiers[0]}>
+            {[6,7,8,9].map(n => <option key={n} value={n}>{n}</option>)}
+          </optgroup>
+          <optgroup label={s.tiers[1]}>
+            {[10,11,12,13].map(n => <option key={n} value={n}>{n}</option>)}
+          </optgroup>
+          <optgroup label={s.tiers[2]}>
+            {[14,15,16,17].map(n => <option key={n} value={n}>{n}</option>)}
+          </optgroup>
+          <optgroup label={s.tiers[3]}>
+            {[18,19,20].map(n => <option key={n} value={n}>{n}</option>)}
+          </optgroup>
+        </select>
       </div>
       {error && <p className="text-xs text-red-500 text-center">{error}</p>}
       <button

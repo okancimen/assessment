@@ -243,7 +243,7 @@ export default async function PersonalityAssessmentPage({
             <span className="text-[#4F46E5]">Strengths &amp; Growth Areas</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-6 leading-relaxed">
-            An AI-powered, scientifically backed character assessment tailored perfectly to your child&apos;s developmental age.
+            You answer the questions. Explore your child&apos;s personality.
           </p>
           <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73] mb-6">
             {['You rate · child doesn\'t sit a test', 'Free · no account needed', '~5 minutes', 'Ages 6–20'].map((t) => (

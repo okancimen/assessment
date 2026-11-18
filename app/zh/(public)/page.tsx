@@ -304,7 +304,7 @@ export default function ChineseHomePage() {
                 className="px-7 py-3 rounded-full text-sm font-medium transition-colors text-center"
                 style={{ background: '#D97706', color: '#fff' }}
               >
-                免费开始 — 约5分钟
+                发现孩子的性格优势 →
               </Link>
               <span className="text-center text-[11px] mt-3 block" style={{ color: '#92400e' }}>无需账户 · 最快的开始方式</span>
               <Link href="#xingge" className="text-center text-xs transition-colors mt-2 py-3 block" style={{ color: '#92400e' }}>
@@ -671,7 +671,7 @@ export default function ChineseHomePage() {
               className="inline-block px-10 py-4 rounded-full text-sm font-semibold transition-colors"
               style={{ background: '#D97706', color: '#fff' }}
             >
-              开始性格评估 →
+              发现孩子的性格优势 →
             </Link>
           </div>
         </div>
@@ -733,7 +733,7 @@ export default function ChineseHomePage() {
               </ul>
               <div className="mt-7 pt-6 border-t" style={{ borderColor: '#fde68a' }}>
                 <Link href="/zh/xingge-pinggu" className="inline-block px-6 py-2.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
-                  开始性格评估 →
+                  发现孩子的性格优势 →
                 </Link>
               </div>
             </div>
@@ -841,7 +841,7 @@ export default function ChineseHomePage() {
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">探索孩子真正的品格优势。</h2>
             <p className="text-sm mb-8" style={{ color: '#92400e' }}>24项特质 · 6大美德 · AI成长报告。</p>
             <Link href="/zh/xingge-pinggu" className="px-8 py-3.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
-              开始性格评估 →
+              发现孩子的性格优势 →
             </Link>
             <Link href="/zh/xingge-yangben-baogao" className="mt-3 text-sm font-semibold hover:underline" style={{ color: '#92400e' }}>
               查看示例报告 →

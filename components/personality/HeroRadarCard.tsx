@@ -57,7 +57,7 @@ export default function HeroRadarCard({ locale }: { locale: SampleLocale }) {
   const initial = SAMPLE_CHILD_NAME.charAt(0)
 
   return (
-    <div className="hidden lg:block" dir={t.dir}>
+    <div className="block mt-8 lg:mt-0" dir={t.dir}>
       <div className="bg-white rounded-3xl border border-[#d2d2d7] shadow-sm p-6">
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">

@@ -142,7 +142,7 @@ export default function EvaluacionDePersonalidadPage() {
             <span className="text-[#4F46E5]">de Tu Hijo</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            Una evaluación de carácter científica e impulsada por IA, perfectamente adaptada a la etapa de desarrollo de tu hijo.
+            Tú respondes las preguntas. Explora la personalidad de tu hijo.
           </p>
           <GuestStartForm locale="es" />
           <p className="mt-3 text-sm text-[#6e6e73]">

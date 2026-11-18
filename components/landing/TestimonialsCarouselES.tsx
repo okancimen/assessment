@@ -39,6 +39,18 @@ const TESTIMONIALS = [
     role: 'Estudiante de 2.º de Bachillerato, Leeds',
     product: 'Evaluación de prácticas',
   },
+  {
+    quote: 'El informe señaló la Autorregulación como el punto más bajo de mi hija. Cambió completamente cómo entendía sus problemas con los deberes — dejé de presionarla y empezamos a buscar soluciones juntas.',
+    name: 'Sarah M.',
+    role: 'Madre, Oxford',
+    product: 'Evaluación de personalidad',
+  },
+  {
+    quote: 'Era escéptico de que una encuesta de cinco minutos pudiera capturar algo real. Las puntuaciones de Creatividad y Curiosidad eran exactas, y las actividades de la IA eran cosas concretas que hacer, no solo etiquetas.',
+    name: 'James L.',
+    role: 'Padre, Glasgow',
+    product: 'Evaluación de personalidad',
+  },
 ]
 
 export default function TestimonialsCarouselES() {

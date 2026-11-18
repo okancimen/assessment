@@ -39,6 +39,18 @@ const TESTIMONIALS = [
     role: 'Lise Son Sınıf Öğrencisi, Leeds',
     product: 'Staj Değerlendirmesi',
   },
+  {
+    quote: 'Rapor, kızımın en düşük puanının Öz-Denetim olduğunu gösterdi. Ev ödevi kavgalarımızı tamamen farklı bir gözle görmeye başladım — artık ne istediğini anlıyorum, sadece ne kaçındığını değil.',
+    name: 'Sarah M.',
+    role: 'Anne, Oxford',
+    product: 'Kişilik Değerlendirmesi',
+  },
+  {
+    quote: 'Beş dakikalık bir anketin gerçek bir şey yakalayabileceğine şüpheyle yaklaştım. Yaratıcılık ve Merak puanları tam isabetliydi ve yapay zekanın önerdiği aktiviteler gerçekten uygulanabilir şeylerdi.',
+    name: 'James L.',
+    role: 'Baba, Glasgow',
+    product: 'Kişilik Değerlendirmesi',
+  },
 ]
 
 export default function TestimonialsCarouselTR() {

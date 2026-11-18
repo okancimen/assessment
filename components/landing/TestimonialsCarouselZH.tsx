@@ -33,6 +33,18 @@ const TESTIMONIALS = [
     role: '妈妈，布里斯托尔',
     product: '学术评估',
   },
+  {
+    quote: '报告显示自律是女儿得分最低的品质。这让我完全重新理解了她做作业时的抵触——我开始和她一起解决问题，而不只是催促她。',
+    name: '林美华',
+    role: '妈妈，牛津',
+    product: '性格评估',
+  },
+  {
+    quote: '我原本怀疑五分钟的问卷能发现什么。但创造力和好奇心的得分非常准确，AI给出的活动建议也都是实际可操作的，不只是贴标签。',
+    name: '郑建明',
+    role: '爸爸，格拉斯哥',
+    product: '性格评估',
+  },
 ]
 
 export default function TestimonialsCarouselZH() {

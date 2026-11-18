@@ -39,6 +39,18 @@ const TESTIMONIALS = [
     role: 'Year 13 Student, Leeds',
     product: 'Internship Assessment',
   },
+  {
+    quote: "The report flagged Self-Regulation as my daughter's lowest strength. It completely reframed our homework battles — I stopped pushing and started problem-solving with her instead. Big difference.",
+    name: 'Sarah M.',
+    role: 'Parent, Oxford',
+    product: 'Personality Assessment',
+  },
+  {
+    quote: "I was sceptical a five-minute survey could capture anything real. The Creativity and Curiosity scores were spot-on, and the AI activities were actual things to try — not just labels to stick on your child.",
+    name: 'James L.',
+    role: 'Parent, Glasgow',
+    product: 'Personality Assessment',
+  },
 ]
 
 export default function TestimonialsCarousel() {

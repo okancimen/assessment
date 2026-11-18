@@ -143,7 +143,7 @@ export default function KisilikDegerlendirmesiPage() {
               <span className="text-[#4F46E5]">Bilimsel Olarak Keşfedin</span>
             </h1>
             <p className="text-lg text-[#6e6e73] mb-6 leading-relaxed max-w-lg">
-              Yapay zeka destekli, VIA çerçevesine dayalı kişilik değerlendirmesi. Sadece 5 dakika. Çocuğunuzun katılımı gerekmez.
+              Sorulara siz yanıt verirsiniz. Çocuğunuzun kişiliğini keşfedin.
             </p>
             <GuestStartForm locale="tr" />
             <p className="mt-3 text-sm text-[#6e6e73]">

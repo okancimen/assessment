@@ -335,7 +335,7 @@ export default function SpanishHomePage() {
                 href="/es/evaluacion-de-personalidad"
                 className="bg-[#D97706] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#B45309] transition-colors text-center"
               >
-                Empezar gratis — unos 5 minutos
+                Descubre las fortalezas de tu hijo →
               </Link>
               <span className="text-center text-[11px] text-[#92400e] mt-3 block">Sin cuenta · la forma más rápida de empezar</span>
               <Link href="#personalidad" aria-label="Más información sobre la Evaluación de Personalidad" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-2 py-3 block">
@@ -669,7 +669,7 @@ export default function SpanishHomePage() {
             </div>
             <div className="flex flex-col justify-center items-start sm:items-center gap-3 flex-shrink-0">
               <Link href="/es/evaluacion-de-personalidad" className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors whitespace-nowrap">
-                Explorar evaluación de personalidad →
+                Descubre las fortalezas de tu hijo →
               </Link>
               <Link href="/es/informe-de-ejemplo-personalidad" className="text-sm font-semibold text-[#92400e] hover:text-[#B45309] hover:underline underline-offset-2">
                 Ver un informe de ejemplo →
@@ -736,7 +736,7 @@ export default function SpanishHomePage() {
               </ul>
               <div className="mt-7 pt-6 border-t border-[#fde68a]">
                 <Link href="/es/evaluacion-de-personalidad" className="bg-[#D97706] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors inline-block">
-                  Explorar personalidad →
+                  Descubre las fortalezas de tu hijo →
                 </Link>
               </div>
             </div>
@@ -847,7 +847,7 @@ export default function SpanishHomePage() {
               href="/es/evaluacion-de-personalidad"
               className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors"
             >
-              Explorar personalidad →
+              Descubre las fortalezas de tu hijo →
             </Link>
           </div>
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">

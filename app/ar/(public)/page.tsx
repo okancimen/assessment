@@ -296,7 +296,7 @@ export default function ArabicHomePage() {
                 className="px-7 py-3 rounded-full text-sm font-medium transition-colors text-center"
                 style={{ background: '#D97706', color: '#fff' }}
               >
-                ابدأ مجاناً — حوالي 5 دقائق
+                اكتشف مواهب طفلك ←
               </Link>
               <span className="text-center text-[11px] mt-3 block" style={{ color: '#92400e' }}>لا حاجة لحساب · أسرع طريقة للبدء</span>
               <Link href="#shakhsiya" className="text-center text-xs transition-colors mt-2 py-3 block" style={{ color: '#92400e' }}>
@@ -677,7 +677,7 @@ export default function ArabicHomePage() {
               className="inline-block px-10 py-4 rounded-full text-sm font-semibold transition-colors"
               style={{ background: '#D97706', color: '#fff' }}
             >
-              ابدأ تقييم الشخصية ←
+              اكتشف مواهب طفلك ←
             </Link>
           </div>
         </div>
@@ -739,7 +739,7 @@ export default function ArabicHomePage() {
               </ul>
               <div className="mt-7 pt-6 border-t" style={{ borderColor: '#fde68a' }}>
                 <Link href="/ar/taqyim-al-shakhsiya" className="inline-block px-6 py-2.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
-                  ابدأ تقييم الشخصية ←
+                  اكتشف مواهب طفلك ←
                 </Link>
               </div>
             </div>
@@ -847,7 +847,7 @@ export default function ArabicHomePage() {
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">اكتشف نقاط القوة الحقيقية لشخصية طفلك.</h2>
             <p className="text-sm mb-8" style={{ color: '#92400e' }}>24 سمة شخصية · 6 فضائل · تقرير بالذكاء الاصطناعي.</p>
             <Link href="/ar/taqyim-al-shakhsiya" className="px-8 py-3.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
-              ابدأ تقييم الشخصية ←
+              اكتشف مواهب طفلك ←
             </Link>
             <Link href="/ar/namudhaj-taqrir-shakhsiya" className="mt-3 text-sm font-semibold hover:underline" style={{ color: '#92400e' }}>
               اطلع على تقرير نموذجي ←

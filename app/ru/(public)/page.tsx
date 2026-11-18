@@ -297,7 +297,7 @@ export default function RussianHomePage() {
                 className="px-7 py-3 rounded-full text-sm font-medium transition-colors text-center"
                 style={{ background: '#D97706', color: '#fff' }}
               >
-                Начать бесплатно — около 5 минут
+                Откройте сильные стороны вашего ребёнка →
               </Link>
               <span className="text-center text-[11px] mt-3 block" style={{ color: '#92400e' }}>Без регистрации · самый быстрый способ начать</span>
               <Link href="#lichnost" className="text-center text-xs transition-colors mt-2 py-3 block" style={{ color: '#92400e' }}>
@@ -670,7 +670,7 @@ export default function RussianHomePage() {
               className="inline-block px-10 py-4 rounded-full text-sm font-semibold transition-colors"
               style={{ background: '#D97706', color: '#fff' }}
             >
-              Начать оценку личности →
+              Откройте сильные стороны вашего ребёнка →
             </Link>
           </div>
         </div>
@@ -732,7 +732,7 @@ export default function RussianHomePage() {
               </ul>
               <div className="mt-7 pt-6 border-t" style={{ borderColor: '#fde68a' }}>
                 <Link href="/ru/otsenka-lichnosti" className="inline-block px-6 py-2.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
-                  Начать оценку личности →
+                  Откройте сильные стороны вашего ребёнка →
                 </Link>
               </div>
             </div>
@@ -840,7 +840,7 @@ export default function RussianHomePage() {
             <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Откройте настоящие сильные стороны характера ребёнка.</h2>
             <p className="text-sm mb-8" style={{ color: '#92400e' }}>24 черты · 6 добродетелей · Отчёт ИИ.</p>
             <Link href="/ru/otsenka-lichnosti" className="px-8 py-3.5 rounded-full text-sm font-semibold transition-colors" style={{ background: '#D97706', color: '#fff' }}>
-              Начать оценку личности →
+              Откройте сильные стороны вашего ребёнка →
             </Link>
             <Link href="/ru/primer-otcheta-lichnosti" className="mt-3 text-sm font-semibold hover:underline" style={{ color: '#92400e' }}>
               Посмотреть пример отчёта →

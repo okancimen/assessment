@@ -332,7 +332,7 @@ export default function FrenchHomePage() {
                 href="/fr/evaluation-de-personnalite"
                 className="bg-[#D97706] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-[#B45309] transition-colors text-center"
               >
-                Commencer — environ 5 minutes
+                Découvrez les forces de votre enfant →
               </Link>
               <span className="text-center text-[11px] text-[#92400e] mt-3 block">Aucun compte requis · le moyen le plus rapide de commencer</span>
               <Link href="#personnalite" aria-label="En savoir plus sur l'Évaluation de Personnalité" className="text-center text-xs text-[#D97706] hover:text-[#B45309] transition-colors mt-2 py-3 block">
@@ -666,7 +666,7 @@ export default function FrenchHomePage() {
             </div>
             <div className="flex flex-col justify-center items-start sm:items-center gap-3 flex-shrink-0">
               <Link href="/fr/evaluation-de-personnalite" className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors whitespace-nowrap">
-                Explorer l&apos;évaluation de personnalité →
+                Découvrez les forces de votre enfant →
               </Link>
               <Link href="/fr/exemple-rapport-personnalite" className="text-sm font-semibold text-[#92400e] hover:text-[#B45309] hover:underline underline-offset-2">
                 Voir un rapport exemple →
@@ -733,7 +733,7 @@ export default function FrenchHomePage() {
               </ul>
               <div className="mt-7 pt-6 border-t border-[#fde68a]">
                 <Link href="/fr/evaluation-de-personnalite" className="bg-[#D97706] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors inline-block">
-                  Explorer la personnalité →
+                  Découvrez les forces de votre enfant →
                 </Link>
               </div>
             </div>
@@ -844,7 +844,7 @@ export default function FrenchHomePage() {
               href="/fr/evaluation-de-personnalite"
               className="bg-[#D97706] text-white px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B45309] transition-colors"
             >
-              Explorer la personnalité →
+              Découvrez les forces de votre enfant →
             </Link>
           </div>
           <div className="text-center bg-[#eef2ff] rounded-3xl border border-[#c7d2fe] p-10 flex flex-col items-center">

@@ -140,7 +140,7 @@ export default function OtsenkaLichnostiPage() {
             <span className="text-[#4F46E5]">Стороны Вашего Ребёнка</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            Оценка характера на базе ИИ, научно обоснованная и идеально адаптированная к возрасту вашего ребёнка.
+            Вы отвечаете на вопросы. Исследуйте личность вашего ребёнка.
           </p>
           <GuestStartForm locale="ru" />
           <p className="mt-3 text-sm text-[#6e6e73]">

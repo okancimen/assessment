@@ -140,7 +140,7 @@ export default function TaqyimAlShakhsiyaPage() {
             <span className="text-[#4F46E5]">لشخصية طفلك</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-8 leading-relaxed">
-            تقييم شخصي علمي مدعوم بالذكاء الاصطناعي، مُصمَّم خصيصاً للمرحلة التطورية لطفلك.
+            أنتَ مَن يُجيب عن الأسئلة. اكتشف شخصية طفلك.
           </p>
           <GuestStartForm locale="ar" />
           <p className="mt-3 text-sm text-[#6e6e73]">
