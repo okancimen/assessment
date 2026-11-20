@@ -57,7 +57,7 @@ const LOADING_FACTS = [
   'Fun fact: Michael Faraday — who discovered electromagnetic induction and invented the electric motor — left school at 13 with almost no education and became a bookbinder\'s apprentice. He taught himself chemistry and physics entirely from the books he was binding.',
 ]
 
-function LoadingQuestion() {
+function LoadingQuestion({ isFirst = false }: { isFirst?: boolean }) {
   const [factIndex] = useState(() => Math.floor(Math.random() * LOADING_FACTS.length))
   const [elapsed, setElapsed] = useState(0)
 
@@ -85,6 +85,10 @@ function LoadingQuestion() {
             {isSlow ? (
               <p className="text-amber-600 text-sm leading-relaxed font-medium">
                 Taking a little longer than usual — almost there, don&apos;t close the tab.
+              </p>
+            ) : isFirst ? (
+              <p className="text-[#6e6e73] text-sm leading-relaxed">
+                Getting your first question ready…
               </p>
             ) : (
               <p className="text-[#6e6e73] text-sm leading-relaxed">
@@ -169,12 +173,9 @@ function StartInterstitial({ childName, onStart, prefetchReady }: { childName?: 
         </div>
 
         {/* Handoff */}
-        <div className="rounded-2xl bg-amber-50 border border-amber-200 px-4 py-4 space-y-1.5">
-          <p className="text-sm font-semibold text-amber-900">Hand the device to {headingName} now</p>
-          <p className="text-sm text-amber-700 leading-relaxed">
-            For accurate results, {name} should answer every question independently — no hints from adults.
-          </p>
-        </div>
+        <p className="text-xs text-[#aeaeb2] text-center">
+          For best results, let {name} answer independently.
+        </p>
 
         {/* CTA */}
         <div className="space-y-2">
@@ -352,8 +353,10 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
   const pendingRef  = useRef<FetchResult | null>(null)
   const isFirstRef  = useRef(true)
   const [prefetchReady, setPrefetchReady] = useState(false)
+  const [isFirstQuestionLoading, setIsFirstQuestionLoading] = useState(false)
 
   function applyResult(result: FetchResult) {
+    setIsFirstQuestionLoading(false)
     if (result.type === 'complete') {
       localStorage.removeItem(`guestAcMeta_${assessmentId}`)
       router.push(`/assessment/${assessmentId}/complete`)
@@ -443,6 +446,7 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
     if (pendingRef.current) {
       applyResult(pendingRef.current)
     } else {
+      setIsFirstQuestionLoading(true)
       setPhase('loading')
     }
   }
@@ -487,7 +491,7 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
   // ── Render ──────────────────────────────────────────────────────────────────
 
   if (phase === 'warmup') return <StartInterstitial childName={childName} onStart={handleInterstitialDone} prefetchReady={prefetchReady} />
-  if (phase === 'loading') return <LoadingQuestion />
+  if (phase === 'loading') return <LoadingQuestion isFirst={isFirstQuestionLoading} />
 
   if (phase === 'error') {
     return (
@@ -719,7 +723,7 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
             elapsed={formatElapsed(sectionTimeElapsed)}
           />
         </div>
-        {isGuest && session.subject_index === 0 && session.question_index < 14 && bannerState !== 'sent' && (
+        {isGuest && session.subject_index === 0 && session.question_index >= 3 && session.question_index < 14 && bannerState !== 'sent' && (
           <div className="bg-[#eef2ff] border border-[#c7d2fe] rounded-2xl px-5 py-4">
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <div className="flex items-center gap-3 flex-1 min-w-0">
