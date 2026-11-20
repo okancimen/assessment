@@ -554,14 +554,9 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
             const color = getScoreColor(breakScore.standardized)
             return (
               <div className="rounded-2xl border border-[#d2d2d7] bg-[#f5f5f7] p-5 text-left space-y-3">
-                <div className="flex items-center justify-between">
-                  <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider">
-                    {SUBJECT_LABELS[breakScore.completedSubject]} result
-                  </p>
-                  <span className="text-[10px] font-medium text-[#aeaeb2] bg-[#e8e8ed] rounded-full px-2 py-0.5">
-                    Early indicator
-                  </span>
-                </div>
+                <p className="text-xs font-semibold text-[#6e6e73] uppercase tracking-wider">
+                  {SUBJECT_LABELS[breakScore.completedSubject]} result
+                </p>
                 <div className="flex items-center justify-between gap-3 min-w-0">
                   <div className="flex items-baseline gap-2 min-w-0">
                     <span className="text-4xl font-bold tabular-nums shrink-0" style={{ color }}>
@@ -577,6 +572,21 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
                   </div>
                 </div>
                 <p className="text-sm text-[#3d3d3f] leading-relaxed">{insight}</p>
+                {isGuest && (
+                  <div className="border-t border-[#d2d2d7] pt-3 flex items-start gap-2.5">
+                    <div className="w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center shrink-0 mt-0.5">
+                      <svg className="w-3.5 h-3.5 text-[#4F46E5]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-[#1d1d1f]">Want to know exactly where to focus?</p>
+                      <p className="text-xs text-[#6e6e73] mt-0.5 leading-relaxed">
+                        Register free to unlock a topic-by-topic breakdown of this score, AI-powered study recommendations, and your child&apos;s full 4-subject academic profile.
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
             )
           })()}
