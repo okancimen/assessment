@@ -700,7 +700,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'MAP Scores by Grade Level 2026 — NWEA RIT Charts, Averages & Gifted Cut-offs',
     shortTitle: 'NWEA MAP Scores by Grade Level 2026–27: What\'s a Good RIT Score?',
     description:
-      "RIT 215 in Grade 5 Math = 93rd percentile. Find your child's exact rank with 2026–27 grade-by-grade charts for K–10 Math, Reading & Language — plus gifted cut-offs and a free percentile calculator.",
+      "What's a good MAP score? Grade 3 Math avg = 198, Grade 5 = 214, Grade 7 = 221. Free 2026–27 grade-by-grade RIT tables for K–10 Math, Reading & Language — find your child's exact percentile in 30 seconds.",
     tldr: 'According to NWEA\'s 2020 national norming study — the current benchmark for 2025–26 — the national average MAP Math RIT score is approximately 200 in Grade 3 and 221 in Grade 8. A score at the 95th percentile in Grade 5 is approximately RIT 230; the 99th percentile is approximately RIT 240. Gifted identification programmes typically require the 95th–99th percentile depending on selectivity.',
 
     date: '2026-06-17',
@@ -770,12 +770,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'nwea-map-test-prep',
-    title: 'NWEA MAP Test Prep: What Actually Works (and What Doesn\'t)',
+    title: 'NWEA MAP Test Prep 2026: What Actually Raises RIT Scores (3–6 Points)',
     shortTitle: 'NWEA MAP Test Prep 2026: What Actually Raises RIT Scores',
     description:
       'Targeted MAP prep raises RIT scores 3–6 points per season. What works: skill targeting at the right RIT band, vocabulary depth for Reading, fractions for Grades 4–7 Math — plus the 3 mistakes that waste prep time.',
     tldr: 'MAP Growth is an adaptive achievement test — test-taking tricks don\'t work. What raises RIT scores is genuine content mastery in the skills just above your child\'s current level. For Reading: vocabulary depth (morphology study) + daily reading at 100–200 Lexile above current level. For Math: fractions are the #1 barrier at Grades 4–7; use the NWEA Learning Continuum to target content at the next RIT band, not current grade level. Realistic improvement in one 12-16 week window: 3–6 RIT points.',
     date: '2026-10-20',
+    dateModified: '2026-11-20',
     readTime: '10 min read',
     tags: ['NWEA MAP', 'Test Prep', 'US Education', 'RIT Scores', 'Assessment'],
     faqs: [
@@ -1084,10 +1085,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'cogat-scores-explained',
-    title: 'CogAT Score Guide 2026: SAS Chart, Gifted Cut-offs & What Your Results Mean',
-    shortTitle: 'CogAT Scores Explained 2026: What Does Your Child\'s SAS Score Mean?',
+    title: 'CogAT Scores Explained 2026: SAS → Percentile → Stanine Full Chart',
+    shortTitle: 'CogAT Scores 2026: SAS → Percentile → Stanine — What Your Results Mean',
     description:
-      'Got your CogAT results? SAS of 121 = 90th percentile = gifted range for most US districts. Full 2026 chart: every SAS from 70–145 mapped to percentile, stanine and what it means for gifted placement.',
+      'CogAT SAS 121 = 90th percentile = gifted range for most US districts. Full 2026 chart: every SAS from 70–145 mapped to percentile and stanine — plus battery breakdown and what it means for school placement.',
     tldr: 'The CogAT (Cognitive Abilities Test) reports a Standard Age Score (SAS) with a mean of 100 and a standard deviation of 16. A SAS of 116 places a child at approximately the 84th percentile; 132 is the 98th percentile. Most gifted programs require the 90th percentile or above, which corresponds to a CogAT SAS of approximately 121. The test has three batteries — Verbal, Quantitative, and Nonverbal — and a child\'s composite profile matters as much as the overall score.',
     date: '2026-10-17',
     dateModified: '2026-11-14',
@@ -1497,13 +1498,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   // UAE
   {
     slug: 'uae-cat4-test-guide',
-    title: 'CAT4 Test Guide for UAE Parents: What the Test Measures and How Scores Work',
+    title: 'UAE CAT4 Test Guide 2026: SAS Scores, Stanines & School Placement',
     shortTitle: 'UAE CAT4 Test 2026: SAS Scores, Gifted Cut-offs & How to Interpret Results',
     description:
-      'Got your child\'s CAT4 results from a UAE school? SAS 115 = 84th percentile, 127 = 96th percentile. How Dubai schools use CAT4 for gifted sets (typically SAS 110+) — and how to read the full battery breakdown.',
+      'CAT4 SAS 112 (stanine 7) = KHDA gifted threshold in UAE schools. SAS 115+ = Dubai College admission. Full 2026 score table: every SAS band mapped to stanine, percentile and UAE school implication — plus battery profile guide.',
     tldr: 'CAT4 (Cognitive Abilities Test 4) produces a Standardised Age Score (SAS) with mean 100 and SD 15. A score of 100 is average for age; 115 is the 84th percentile; 127 is the 96th percentile. UAE schools use CAT4 scores for setting, gifted identification, and in some cases admissions — a score of 110+ typically qualifies a student for advanced teaching sets.',
     date: '2026-06-17',
-    dateModified: '2026-10-28',
+    dateModified: '2026-11-20',
     readTime: '8 min read',
     tags: ['UAE', 'CAT4', 'Dubai', 'British Curriculum', 'Cognitive Testing'],
     faqs: [
@@ -1978,14 +1979,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'australia-gate-gifted-program',
-    title: 'GATE Western Australia: How the Gifted and Talented Programme Works',
-    shortTitle: 'Western Australia GATE Program 2026: Entry Requirements, Tests & Scores',
+    title: 'GATE Western Australia 2026: Entry Requirements, Tests & School Guide',
+    shortTitle: 'WA GATE Program 2026: Entry, Stage 1 & 2 Tests, Perth Modern Cutoffs',
     description:
-      'WA GATE: Year 4 entry to specialist programs; Year 7 to Perth Modern (top 3–5%). ACER ability test — what it covers, typical cutoff scores, school nomination process, and how to prepare.',
+      'WA GATE 2026: Stage 1 group reasoning test (Term 4, Year 4) → Stage 2 individual assessment (Term 1, Year 5). Threshold ~98th percentile. Perth Modern and all GATE schools — entry requirements and how to prepare.',
     tldr: 'Western Australia GATE (Gifted and Talented Education) uses a two-stage selection process: school nomination followed by an ACER-administered test. Perth Modern School — the flagship full-time GATE school — is one of Australia most selective state schools, with entry typically requiring a GATE test score in the top 3–5%.',
 
     date: '2026-06-17',
-    dateModified: '2026-10-28',
+    dateModified: '2026-11-20',
     readTime: '8 min read',
     tags: ['Australia', 'Western Australia', 'GATE', 'Gifted Education', 'Perth Modern'],
     faqs: [
@@ -2217,10 +2218,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     slug: 'pisa-2025-global-education-crisis-what-parents-need-to-know',
     title: 'PISA 2025 Results: Global Education Is in Crisis — What Every Parent Needs to Know',
     shortTitle: 'PISA 2025: Lowest Global Scores Since 2000 — What Parents Need to Act On',
-    description: 'PISA 2025: OECD maths average dropped to 470 — the lowest since the programme began. UK fell to 27th in maths. Where your country ranks and how to benchmark your own child against global standards.',
+    description: 'OECD maths fell to 470 — lowest since PISA began. UK dropped to 27th. 32 countries declined. Where your country ranks in 2025 and how to benchmark your child against global standards — with a free assessment.',
     tldr: 'PISA 2025 recorded the lowest average OECD maths score since the programme began — 470 in maths, 474 in reading and 475 in science. The UK fell to 27th in maths and 13th in reading. Singapore, Japan and South Korea led all three domains. Post-pandemic recovery has stalled across most OECD countries.',
     date: '2026-09-10',
-    dateModified: '2026-09-23',
+    dateModified: '2026-11-20',
     readTime: '14 min read',
     tags: ['PISA', 'Academic Benchmarking', 'Global Education', 'UK Education', 'Maths', 'Reading'],
     faqs: [
@@ -2301,12 +2302,12 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'nsw-opportunity-class-test-guide',
-    title: 'NSW Opportunity Class Test: Complete Guide for Parents (2026)',
-    shortTitle: 'NSW Opportunity Class Test 2026: OC Guide, Cutoffs & How to Prepare',
+    title: 'NSW Opportunity Class Test 2026: Complete Parent Guide, Cutoffs & Prep',
+    shortTitle: 'NSW OC Test 2026: Guide, Cutoffs & How to Prepare',
     description: 'NSW OC test 2026: taken in Year 3, for enriched Year 5–6 classes across 75 public schools. Tests Thinking Skills + Reading. ~4,200 places ranked by merit score. Typical cutoffs and how to prepare.',
     tldr: 'NSW Opportunity Classes run from Year 5 in public primary schools across NSW. The entry test is taken in Year 3 and covers two components: Thinking Skills and Reading. Offers are made on an ordered merit score combining both. Approximately 4,200 places are available annually across around 75 public schools.',
     date: '2026-09-11',
-    dateModified: '2026-10-28',
+    dateModified: '2026-11-20',
     readTime: '11 min read',
     tags: ['NSW Education', 'OC Test', 'Selective Schools', 'Australia', 'Academic Assessment'],
     faqs: [
@@ -3512,10 +3513,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     title: 'What Is a Good NWEA MAP Score? Grade-by-Grade Answer for Parents 2026',
     shortTitle: 'What Is a Good NWEA MAP Score? 2026 Grade-Level Answers for Parents',
     description:
-      'RIT 199 (Grade 3), 216 (Grade 5), 226 (Grade 7) = strong/75th percentile. Gifted range = 208, 225, 233. Free look-up tables for K–10 Math and Reading — find your child\'s level in 30 seconds.',
+      'A good MAP score depends on grade. Grade 3 Math: strong = RIT 199 (75th pct), gifted = 208 (90th). Grade 5: strong = 216, gifted = 225. Grade 7: strong = 226, gifted = 233. Full K–10 tables for Math and Reading.',
     tldr: 'A "good" MAP RIT score is grade-relative: RIT 220 in Math is extraordinary for a 3rd grader (≈99th percentile) but below average for an 8th grader. For Math, a strong score (75th percentile) is approximately RIT 199 at Grade 3 and RIT 226 at Grade 7. The 90th percentile in any subject for any grade typically triggers gifted programme screening in most US districts.',
     date: '2026-10-28',
-    dateModified: '2026-10-28',
+    dateModified: '2026-11-20',
     readTime: '8 min read',
     tags: ['NWEA MAP', 'RIT Scores', 'US Education', 'Gifted Programs', 'Assessment', 'Parent Guide'],
     faqs: [

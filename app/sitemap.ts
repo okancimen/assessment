@@ -184,6 +184,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'isee-ssat-private-school-guide',
     'high-school-internship-benefits-university',
     'character-strengths-academic-success',
+    'australia-gate-gifted-program',
+    'uae-cat4-test-guide',
+    'cogat-scores-explained',
+    'nsw-opportunity-class-test-guide',
   ])
 
   // Posts that next.config.ts redirects elsewhere don't belong in the sitemap
