@@ -332,6 +332,11 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [breakCountdown, phase])
 
+  // Cancel countdown the moment the save/register panel becomes visible
+  useEffect(() => {
+    if (showSavePanel) setBreakCountdown(null)
+  }, [showSavePanel])
+
   // Reset elapsed timer when subject changes
   useEffect(() => {
     if (!session) return
@@ -598,14 +603,26 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
               : 'Your progress is saved — you can pause and come back anytime.'}
           </div>
 
-          {isGuest && (
-            <div className="rounded-2xl bg-[#eef2ff] border border-[#c7d2fe] px-4 py-3 flex items-start gap-2.5 text-sm text-[#3730a3]">
-              <svg className="w-4 h-4 shrink-0 mt-0.5 text-[#4F46E5]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-              <span>Detailed results — including AI recommendations and all four subject scores — are available once you create a free account.</span>
-            </div>
-          )}
+          {isGuest && (() => {
+            const gt = typeof window !== 'undefined' ? localStorage.getItem(`guestToken_${assessmentId}`) ?? '' : ''
+            const url = `/auth/register?redirect=${encodeURIComponent(`/api/assessment/claim?assessmentId=${assessmentId}&token=${gt}`)}`
+            return (
+              <div className="rounded-2xl bg-[#eef2ff] border border-[#c7d2fe] px-4 py-4 space-y-3">
+                <div className="flex items-start gap-2.5 text-sm text-[#3730a3]">
+                  <svg className="w-4 h-4 shrink-0 mt-0.5 text-[#4F46E5]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                  <span>Detailed results — including AI recommendations and all four subject scores — are available once you create a free account.</span>
+                </div>
+                <a
+                  href={url}
+                  className="block w-full text-sm font-semibold text-center bg-[#4F46E5] text-white rounded-xl py-3 hover:bg-[#4338CA] transition-colors"
+                >
+                  Create free account →
+                </a>
+              </div>
+            )
+          })()}
 
           <button
             onClick={() => { setBreakCountdown(null); fetchNextQuestion() }}
@@ -646,14 +663,21 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
             return (
               <div className="rounded-2xl border border-[#d2d2d7] bg-[#f5f5f7] p-5 space-y-4 text-left">
                 <div>
-                  <p className="text-sm font-semibold text-[#1d1d1f]">Don't lose your progress</p>
-                  <p className="text-xs text-[#6e6e73] mt-0.5">Enter your email — we'll send you a link to continue where you left off.</p>
+                  <p className="text-sm font-semibold text-[#1d1d1f]">Save your results</p>
+                  <p className="text-xs text-[#6e6e73] mt-0.5">Create a free account for the full report, or get a resume link by email.</p>
                 </div>
 
                 {saveState === 'sent' ? (
                   <p className="text-sm text-green-700 font-medium">✓ Email sent — check your inbox to resume later.</p>
                 ) : (
                   <>
+                    <a
+                      href={claimUrl}
+                      className="block w-full text-sm font-semibold text-center bg-[#4F46E5] text-white rounded-xl py-3.5 hover:bg-[#4338CA] transition-colors"
+                    >
+                      Create free account →
+                    </a>
+                    <p className="text-center text-xs text-[#aeaeb2]">— or get a reminder by email —</p>
                     <input
                       type="email"
                       placeholder="your@email.com"
@@ -661,34 +685,26 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
                       onChange={e => setSaveEmail(e.target.value)}
                       className="w-full text-sm border border-[#d2d2d7] rounded-xl px-4 py-3 bg-white text-[#1d1d1f] placeholder-[#aeaeb2] focus:outline-none focus:border-[#4F46E5] focus:ring-1 focus:ring-[#4F46E5]"
                     />
-                    <div className="flex flex-col gap-2">
-                      <button
-                        onClick={async () => {
-                          if (!saveEmail.includes('@') || saveState === 'sending') return
-                          setSaveState('sending')
-                          try {
-                            const res = await fetch('/api/assessment/guest-reminder', {
-                              method: 'POST',
-                              headers: { 'Content-Type': 'application/json' },
-                              body: JSON.stringify({ email: saveEmail, assessmentId, guestToken }),
-                            })
-                            setSaveState(res.ok ? 'sent' : 'error')
-                          } catch {
-                            setSaveState('error')
-                          }
-                        }}
-                        disabled={!saveEmail.includes('@') || saveState === 'sending'}
-                        className="w-full text-sm font-semibold bg-[#4F46E5] text-white rounded-xl py-3.5 disabled:opacity-40 hover:bg-[#4338CA] transition-colors"
-                      >
-                        {saveState === 'sending' ? 'Sending…' : saveState === 'error' ? 'Try again' : 'Email me a reminder'}
-                      </button>
-                      <a
-                        href={claimUrl}
-                        className="w-full text-sm font-medium text-center text-[#4F46E5] border border-[#4F46E5] rounded-xl py-3.5 hover:bg-indigo-50 transition-colors block"
-                      >
-                        Create free account →
-                      </a>
-                    </div>
+                    <button
+                      onClick={async () => {
+                        if (!saveEmail.includes('@') || saveState === 'sending') return
+                        setSaveState('sending')
+                        try {
+                          const res = await fetch('/api/assessment/guest-reminder', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ email: saveEmail, assessmentId, guestToken }),
+                          })
+                          setSaveState(res.ok ? 'sent' : 'error')
+                        } catch {
+                          setSaveState('error')
+                        }
+                      }}
+                      disabled={!saveEmail.includes('@') || saveState === 'sending'}
+                      className="w-full text-sm font-medium text-[#6e6e73] border border-[#d2d2d7] rounded-xl py-3.5 hover:bg-white transition-colors disabled:opacity-40"
+                    >
+                      {saveState === 'sending' ? 'Sending…' : saveState === 'error' ? 'Try again' : 'Email me a reminder'}
+                    </button>
                     <button
                       onClick={async () => {
                         await navigator.clipboard.writeText(window.location.href)
