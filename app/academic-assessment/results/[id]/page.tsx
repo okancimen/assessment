@@ -41,7 +41,7 @@ function ScoreRing({ score }: { score: number }) {
         transform="rotate(-90 60 60)"
       />
       <text x="60" y="56" textAnchor="middle" fontSize="22" fontWeight="700" fill="#1d1d1f">{score}</text>
-      <text x="60" y="72" textAnchor="middle" fontSize="10" fill="#6e6e73">out of 130</text>
+      <text x="60" y="72" textAnchor="middle" fontSize="10" fill="#6e6e73">out of 141</text>
     </svg>
   )
 }
@@ -179,6 +179,7 @@ export default async function GuestAcademicResultsPage({
           guestToken={guestToken!}
           childName={childName}
           claimUrl={claimUrl}
+          subjectScores={subjectScores}
         />
 
         {/* Personality nudge */}

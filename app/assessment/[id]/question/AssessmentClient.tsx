@@ -355,6 +355,17 @@ export default function AssessmentClient({ assessmentId, urlGuestToken, loggedIn
     return () => clearInterval(interval)
   }, [phase])
 
+  // Warn on tab close / navigation away during active question
+  useEffect(() => {
+    if (phase !== 'question' && phase !== 'loading') return
+    const handler = (e: BeforeUnloadEvent) => {
+      e.preventDefault()
+      e.returnValue = ''
+    }
+    window.addEventListener('beforeunload', handler)
+    return () => window.removeEventListener('beforeunload', handler)
+  }, [phase])
+
   const pendingRef  = useRef<FetchResult | null>(null)
   const isFirstRef  = useRef(true)
   const [prefetchReady, setPrefetchReady] = useState(false)

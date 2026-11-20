@@ -2,15 +2,25 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { SUBJECT_LABELS } from '@/types'
+
+type SubjectResult = {
+  standardized_score: number
+  percentage: number
+  topics: Record<string, { correct: number; total: number }>
+}
 
 interface Props {
   assessmentId: string
   guestToken: string
   childName: string
   claimUrl: string
+  subjectScores?: Record<string, SubjectResult>
 }
 
-export default function GuestResultsGate({ assessmentId, guestToken, childName, claimUrl }: Props) {
+const SUBJECTS = ['english', 'mathematics', 'verbal_reasoning', 'nonverbal_reasoning'] as const
+
+export default function GuestResultsGate({ assessmentId, guestToken, childName, claimUrl, subjectScores }: Props) {
   const [email, setEmail]     = useState('')
   const [state, setState]     = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
 
@@ -32,18 +42,63 @@ export default function GuestResultsGate({ assessmentId, guestToken, childName, 
 
   return (
     <div className="bg-white rounded-3xl border border-[#d2d2d7] overflow-hidden relative">
-      {/* Blurred preview */}
-      <div className="p-6 space-y-3 blur-sm select-none pointer-events-none" aria-hidden="true">
-        {Array.from({ length: 3 }).map((_, i) => (
-          <div key={i} className="rounded-2xl bg-[#f5f5f7] border border-[#d2d2d7] p-4 space-y-2">
-            <div className="h-3 bg-[#d2d2d7] rounded-full w-1/3" />
-            <div className="grid grid-cols-3 gap-2">
-              {[1, 2, 3].map((j) => (
-                <div key={j} className="h-10 bg-[#e5e7eb] rounded-xl" />
-              ))}
+      {/* Blurred preview — real topic data */}
+      <div className="p-6 space-y-4 blur-sm select-none pointer-events-none" aria-hidden="true">
+        <p className="text-sm font-semibold text-[#1d1d1f]">Topic Breakdown</p>
+        {SUBJECTS.map((subject) => {
+          const s = subjectScores?.[subject]
+          const topics = s?.topics ? Object.entries(s.topics).slice(0, 4) : []
+          if (topics.length === 0) {
+            return (
+              <div key={subject} className="rounded-xl bg-[#f5f5f7] border border-[#d2d2d7] p-3 space-y-2">
+                <p className="text-xs font-semibold text-[#1d1d1f]">{SUBJECT_LABELS[subject]}</p>
+                <div className="space-y-2">
+                  {[70, 55, 85].map((w, i) => (
+                    <div key={i} className="flex items-center gap-2">
+                      <span className="w-28 h-2.5 bg-[#d2d2d7] rounded-full" />
+                      <div className="flex-1 h-1.5 bg-[#e5e7eb] rounded-full overflow-hidden">
+                        <div className="h-full bg-[#4F46E5] rounded-full" style={{ width: `${w}%` }} />
+                      </div>
+                      <span className="text-xs tabular-nums text-[#6e6e73] w-9 text-right">{w}%</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )
+          }
+          return (
+            <div key={subject} className="rounded-xl bg-[#f5f5f7] border border-[#d2d2d7] p-3 space-y-2">
+              <p className="text-xs font-semibold text-[#1d1d1f]">{SUBJECT_LABELS[subject]}</p>
+              <div className="space-y-2">
+                {topics.map(([topic, data]) => {
+                  const pct = data.total > 0 ? Math.round((data.correct / data.total) * 100) : 0
+                  return (
+                    <div key={topic} className="flex items-center gap-2">
+                      <span className="text-xs text-[#6e6e73] w-28 shrink-0 capitalize truncate">
+                        {topic.replace(/_/g, ' ')}
+                      </span>
+                      <div className="flex-1 h-1.5 bg-[#e5e7eb] rounded-full overflow-hidden">
+                        <div className="h-full bg-[#4F46E5] rounded-full" style={{ width: `${pct}%` }} />
+                      </div>
+                      <span className="text-xs font-medium tabular-nums text-[#6e6e73] w-9 text-right">{pct}%</span>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
-          </div>
-        ))}
+          )
+        })}
+
+        {/* AI plan placeholder */}
+        <div className="rounded-xl bg-[#eef2ff] border border-[#c7d2fe] p-4 space-y-2">
+          <p className="text-xs font-semibold text-[#4F46E5]">AI Action Plan</p>
+          <p className="text-sm text-[#3730a3] leading-relaxed">
+            Focus on Comprehension inference questions — your child is selecting plausible but surface-level answers. Practice asking &ldquo;what does the author mean, not just say?&rdquo; after each passage.
+          </p>
+          <p className="text-sm text-[#3730a3] leading-relaxed">
+            For Fractions, the error pattern suggests procedural gaps rather than conceptual ones. Fifteen minutes of mixed-denominator addition daily for two weeks should produce a measurable shift.
+          </p>
+        </div>
       </div>
 
       {/* Overlay */}
