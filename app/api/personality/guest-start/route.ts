@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
     })
     .catch(() => { /* geo is best-effort */ })
 
-  const response = NextResponse.json({ assessmentId: assessment.id, totalQuestions })
+  const response = NextResponse.json({ assessmentId: assessment.id, guestToken, totalQuestions })
   response.cookies.set('pg_tok', guestToken, {
     httpOnly: true,
     sameSite: 'lax',

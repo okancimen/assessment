@@ -243,15 +243,19 @@ export default async function PersonalityAssessmentPage({
             <span className="text-[#4F46E5]">Strengths &amp; Growth Areas</span>
           </h1>
           <p className="text-lg text-[#6e6e73] mb-6 leading-relaxed">
-            You answer the questions. Explore your child&apos;s personality.
+            You rate 24 real observations about your child. We map their character — Signature Strengths, Growth Areas, and an AI action plan. No child testing needed.
           </p>
           <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6e6e73] mb-6">
-            {['You rate · child doesn\'t sit a test', 'Free · no account needed', '~5 minutes', 'Ages 6–20'].map((t) => (
+            {['You rate — child doesn\'t sit a test', 'Free · no account needed', '24–48 questions · ~5 min', 'Ages 6–20'].map((t) => (
               <span key={t} className="flex items-center gap-1">
                 <svg className="w-3 h-3 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                 {t}
               </span>
             ))}
+          </div>
+          {/* Mobile-only radar preview — shows what the output looks like before the form */}
+          <div className="block lg:hidden mb-6">
+            <HeroRadarCard locale="en" />
           </div>
           <GuestStartForm />
           <p className="mt-3 text-sm text-[#6e6e73]">
@@ -277,7 +281,10 @@ export default async function PersonalityAssessmentPage({
             </div>
           </div>
           </div>
-          <HeroRadarCard locale="en" />
+          {/* Desktop radar — right column only */}
+          <div className="hidden lg:block">
+            <HeroRadarCard locale="en" />
+          </div>
         </div>
       </section>
 
