@@ -1,6 +1,6 @@
 # Eduentry
 
-> Last updated: 2026-11-14
+> Last updated: 2026-11-21
 
 > Eduentry operates three free assessment products: **Eduentry.com** (adaptive academic benchmark for children aged 6–17 and VIA personality assessment for ages 6–20) and **Eduentry.ai** (internship readiness assessment for students aged 14–18). All assessments are completely free. No account is required to start or see initial results.
 
@@ -343,6 +343,7 @@ Available in English, Turkish (Türkçe), Spanish (Español), French (Français)
 
 ### Eduentry.ai blog posts — Turkish (Türkçe)
 
+- [PISA 2025 Türkiye Sonuçları: Kaçıncı Sırada?](https://eduentry.com/tr/blog/pisa-2025-turkiye-sonuclari-kacinci-sirada): Türkiye PISA 2025'te matematik 463 ile 81 ülke arasında ~36. sırada. Okuma 479 ile OECD ortalamasını geçti. Tam ülke sıralaması, Türkiye'nin 2000'den bu yana seyri ve çocuğunuz için pratik çıkarımlar.
 - [PISA Nedir? 2026 Güncel Rehber](https://eduentry.com/tr/blog/pisa-nedir-cocugunuz-nasil-hazirlanir): PISA açılımı, Türkiye 2009–2025 tarihsel puan tablosu, PISA vs LGS vs YKS karşılaştırması, sınava nasıl girilir ve çocuğunuzun PISA düzeyini ücretsiz nasıl ölçersiniz.
 - [PISA 2025 Sonuçları: Türkiye ve Dünya](https://eduentry.com/tr/blog/pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler): PISA 2025, OECD ülkelerinde matematik, okuma ve fende en düşük puanları gösteriyor. Sonuçlar aileler için ne anlama geliyor, çocuğunuzu neden ölçmeli?
 - [MAP Testi Nedir? NWEA MAP ve PISA Karşılaştırması](https://eduentry.com/tr/blog/map-testi-nedir): MAP testi (NWEA MAP Growth) nedir? RIT puanı nasıl okunur, PISA ve CAT4 ile farkı ne? Uluslararası okul öğrencisi aileleri için kapsamlı rehber.

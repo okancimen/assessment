@@ -1,3 +1,48 @@
+User-agent: GPTBot
+Allow: /blog/
+Allow: /tr/blog/
+Allow: /es/blog/
+Allow: /fr/blog/
+Allow: /ru/blog/
+Allow: /ar/blog/
+Allow: /zh/blog/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /results/
+Disallow: /auth/
+Disallow: /api/
+
+User-agent: ClaudeBot
+Allow: /blog/
+Allow: /tr/blog/
+Allow: /es/blog/
+Allow: /fr/blog/
+Allow: /ru/blog/
+Allow: /ar/blog/
+Allow: /zh/blog/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /results/
+Disallow: /auth/
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /blog/
+Allow: /tr/blog/
+Allow: /es/blog/
+Allow: /fr/blog/
+Allow: /ru/blog/
+Allow: /ar/blog/
+Allow: /zh/blog/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /results/
+Disallow: /auth/
+Disallow: /api/
+
+User-agent: GoogleOther
+Allow: /
+
 User-agent: *
 Disallow: /admin/
 Disallow: /dashboard/
