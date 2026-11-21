@@ -589,11 +589,11 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'pisa-2025-kuresel-egitim-krizi-ebeveynlerin-bilmesi-gerekenler',
     title: 'PISA 2025 Sonuçları: Küresel Eğitim Krizi — Her Ebeveynin Bilmesi Gerekenler',
     shortTitle: 'PISA 2025 Sonuçları: Türkiye ve Dünya Karşılaştırması',
-    description: 'PISA 2025, OECD ülkelerinde matematik, okuma ve fende en düşük puanları gösteriyor. Sonuçlar aileler için ne anlama geliyor, çocuğunuzu neden ölçmeli?',
+    description: 'Türkiye PISA 2025: matematik 463 (OECD ort. 472), okuma 479 (OECD ort. üzerinde). 32 ülke geriledi; Türkiye fen bilimlerinde iyileşen 4 ülkeden biri. Küresel ülke sıralaması ve çocuğunuz için çıkarımlar.',
     tldr: 'PISA 2025, OECD tarihinde kaydedilen en düşük matematik, okuma ve fen bilimleri ortalama puanlarını ortaya koydu. PISA 2025 bulgularına göre yapay zekayı ödev süreçlerinde kullanan öğrenciler kullanmayanlara kıyasla fen bilimlerinde yaklaşık 20 puan daha düşük skor aldı; bu fark yaklaşık bir yıllık okul eğitimine denk geliyor.',
 
     date: '2026-09-10',
-    dateModified: '2026-10-20',
+    dateModified: '2026-11-21',
     readTime: '12 dakika okuma',
     tags: ['PISA', 'Küresel Eğitim', 'Akademik Değerlendirme', 'Matematik', 'Okuma'],
     faqs: [
@@ -665,11 +665,11 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'PISA Nedir, Açılımı Ne? 2025 Türkiye Sonuçları ve Hazırlık Rehberi',
     shortTitle: 'PISA Nedir ve Açılımı Ne? 2025 Türkiye Sonuçları',
     description:
-      'PISA açılımı: Programme for International Student Assessment. 2025 Türkiye sonuçları: matematik 453, okuma 479. 15 yaşındaki öğrencilere yönelik OECD sınavı için çocuğunuzu nasıl hazırlarsınız — 4 pratik strateji.',
+      'Türkiye PISA 2025: matematik 463 — 81 ülke arasında ~36. sıra. Okuma 479 ile OECD ortalamasını geçti. PISA\'ya bireysel başvuru yapılamaz; öğrenciler MEB örneklemeyle seçilir. Çocuğunuzun OECD ortalamasına göre yeri — ücretsiz.',
     tldr: 'PISA, OECD tarafından her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uygulanan bir sınavdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan aralığındadır. Türkiye, PISA 2025\'te okumada OECD ortalamasını yakaladı; matematikte 463 ile OECD ortalaması (472) yakınında yer aldı.',
 
     date: '2026-09-14',
-    dateModified: '2026-11-04',
+    dateModified: '2026-11-21',
     readTime: '13 dk okuma',
     tags: ['PISA', 'Uluslararası Kıyaslama', 'Akademik Değerlendirme', 'Ebeveyn Rehberi', 'LGS', 'YKS'],
     faqs: [
@@ -677,9 +677,9 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       { q: 'PISA açılımı nedir, ingilizce karşılığı ne?', a: 'PISA\'nın açılımı "Programme for International Student Assessment" — Türkçede "Uluslararası Öğrenci Değerlendirme Programı" olarak çevrilir. İngilizce açılımın her harfi: P = Programme, I = International, S = Student, A = Assessment. 1997\'de OECD bünyesinde başlatılan program, 2000\'den bu yana her üç yılda bir uygulanmaktadır.' },
       { q: 'PISA testi nedir ve kaç yılda bir yapılır?', a: 'PISA (Programme for International Student Assessment — Uluslararası Öğrenci Değerlendirme Programı), OECD tarafından her üç yılda bir düzenlenen ve 15 yaşındaki öğrencileri matematik, okuma ve fen bilimleri alanlarında değerlendiren küresel bir sınavdır. 2025 itibarıyla 91 ülkede yaklaşık 760.000 öğrenci bu sınava katılmıştır. PISA bir yarışma değil; ülkelerin eğitim sistemlerini birbirleriyle kıyaslamasına olanak tanıyan uluslararası bir kıyaslama aracıdır.' },
       { q: 'PISA sınavına nasıl girilir? Öğrenci nasıl seçilir?', a: 'PISA\'ya bireysel başvuru yapılamaz. Her katılımcı ülkede, Millî Eğitim Bakanlığı veya yetkili ulusal koordinatör, 15 yaşındaki öğrenciler arasından rastgele örnekleme yöntemiyle yaklaşık 5.000–6.000 kişilik bir grup belirler. Seçilen öğrenciler sınavı okullarında uygular. Türkiye\'den seçilen öğrencilerin haberi genellikle okul idaresi aracılığıyla ulaşır. Dolayısıyla PISA için ayrıca başvuru veya kayıt gerekmez; seçilmek tamamen örnekleme sürecine bağlıdır.' },
-      { q: 'PISA puanı nedir, nasıl hesaplanır?', a: 'PISA puanı, her alanda 0–1.000 arasında bir ölçekle ifade edilir ve ortalama 500 puan olarak kalibre edilmiştir. Türkiye\'nin 2025 matematik puanı yaklaşık 453\'tür; bu, OECD ortalamasının (472) 19 puan altındadır. Puan farkları somut anlam taşır: 38 puanlık fark (Türkiye ile OECD ortalaması arasındaki aralığın iki katı), PISA metodolojisine göre yaklaşık bir yıllık okul eğitimine eşdeğerdir. Öğrencilerin bireysel PISA puanı yoktur; yalnızca ülke ortalamaları kamuoyuyla paylaşılır.' },
+      { q: 'PISA puanı nedir, nasıl hesaplanır?', a: 'PISA puanı, her alanda 0–1.000 arasında bir ölçekle ifade edilir ve ortalama 500 puan olarak kalibre edilmiştir. Türkiye\'nin 2025 matematik puanı yaklaşık 463\'tür; bu, OECD ortalamasının (472) 9 puan altındadır. Puan farkları somut anlam taşır: 20 puanlık fark PISA metodolojisine göre yaklaşık bir yıllık okul eğitimine eşdeğerdir. Öğrencilerin bireysel PISA puanı yoktur; yalnızca ülke ortalamaları kamuoyuyla paylaşılır.' },
       { q: 'PISA 2026 ne zaman yapılacak?', a: 'PISA her üç yılda bir düzenlenir. 2025 döngüsü tamamlandığına göre bir sonraki PISA 2028 yılında gerçekleşecektir. "PISA 2026" olarak yapılan aramalar büyük olasılıkla 2025 sonuçlarını kastetmektedir — OECD, verileri sınav yılından yaklaşık bir yıl sonra yayımlar. 2025 sınavı Nisan–Haziran 2025\'te uygulanmış; sonuçlar 2025 yılı sonunda açıklanmıştır.' },
-      { q: 'Türkiye PISA 2025\'te nasıl bir performans sergiledi?', a: 'Türkiye, PISA 2025\'te OECD ortalamasının altında kalmaya devam etmiştir. Matematik puanı yaklaşık 453 (OECD ortalaması 472), okuma puanı ise 456 (OECD ortalaması 476) olarak gerçekleşmiştir. Bu sonuçlar, Türkiye\'nin Singapur (575) ve Japonya (536) gibi en yüksek performanslı ülkelerin önemli ölçüde gerisinde olduğunu, ancak bazı AB ülkeleriyle benzer düzeyde yer aldığını göstermektedir.' },
+      { q: 'Türkiye PISA 2025\'te nasıl bir performans sergiledi?', a: 'Türkiye, PISA 2025\'te okumada OECD ortalamasını geçmiştir. Matematik puanı yaklaşık 463 (OECD ortalaması 472), okuma puanı ise 479 (OECD ortalaması 476) olarak gerçekleşmiştir. Bu sonuçlar, Türkiye\'nin okumada OECD ortalamasının üzerinde olduğunu, ancak Singapur (575) ve Japonya (536) gibi en yüksek performanslı ülkelerin gerisinde kaldığını göstermektedir. Fen bilimlerinde ise 2022\'ye göre iyileşme kaydeden az sayıdaki ülkeden biridir.' },
       { q: 'PISA\'ya hazırlanmak için evde ne yapılabilir?', a: 'PISA bir bilgi sınavı değil; edinilmiş bilgiyi gerçek yaşam problemlerine uygulama sınavıdır. Bu nedenle PISA\'ya en etkili hazırlık: günlük matematik problemleri çözmek (hesap makinesi olmadan), her gün düzenli okuma alışkanlığı oluşturmak, açık uçlu ve mantık gerektiren sorular üzerinde tartışmak ve standartlaştırılmış bir değerlendirme ile mevcut düzeyi tespit etmektir. Çocuğunuzun gerçek düzeyini bilmek, hangi alanlara odaklanmanız gerektiğini netleştirir.' },
       { q: 'PISA tarzı sorular ne demek?', a: 'PISA tarzı sorular, öğrencinin ezberden bilgi aktarması yerine bu bilgiyi gerçek yaşam bağlamına uygulamasını bekleyen sorulardır. Örneğin "6 × 7 = ?" yerine "Bir markette 6 adet ürün alan bir müşteri..." şeklinde kurgulanan alışveriş veya grafik yorumlama soruları. Bu format Türkiye\'nin ulusal sınavlarından (LGS/YKS) farklıdır; PISA\'da doğru cevap yanıtın nasıl gerekçelendirildiğine bağlıdır.' },
       { q: 'Çocuğumun PISA düzeyini ücretsiz nasıl ölçebilirim?', a: 'Eduentry, PISA ile aynı metodolojiye — madde tepki teorisi (IRT) — dayanan ücretsiz bir uyarlanabilir değerlendirme sunmaktadır. 6-17 yaş arası çocuklar matematik, İngilizce, sözel akıl yürütme ve sayısal akıl yürütme alanlarında test edilir ve ebeveynlere uluslararası kıyaslamalı bir yüzdelik dilim puanı iletilir. Kayıt gerekmez, sınav bir saatten kısa sürer.' },
@@ -690,6 +690,34 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     cta: {
       heading: 'Çocuğunuzun PISA düzeyini ücretsiz ölçün',
       body: 'Eduentry\'nin uyarlanabilir değerlendirmesi, PISA ile aynı uluslararası ölçekte standartlaştırılmış puan ve küresel yüzdelik dilim karşılaştırması sunar — 6-17 yaş için, ücretsiz.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr',
+    },
+  },
+  {
+    slug: 'pisa-2025-turkiye-sonuclari-kacinci-sirada',
+    title: 'PISA 2025 Türkiye Sonuçları: Türkiye Kaçıncı Sırada?',
+    shortTitle: 'PISA 2025 Türkiye: Kaçıncı Sırada, Puan Tablosu ve Çıkarımlar',
+    description: 'Türkiye PISA 2025\'te matematik 463 ile 81 ülke arasında ~36. sırada. Okuma 479 ile OECD ortalamasını geçti. Tam ülke sıralaması, Türkiye\'nin 2000\'den bu yana yolculuğu ve çocuğunuz için pratik çıkarımlar.',
+    tldr: 'Türkiye, PISA 2025\'te matematik alanında 81 ülke arasında yaklaşık 36. sıradadır (463 puan, OECD ortalaması 472). Okuma alanında ise 479 puanla OECD ortalamasının (476) üzerine çıktı. Fen bilimlerinde 2022\'ye göre iyileşme kaydeden az sayıdaki ülkeden biridir. Matematikte Singapur (575) ile aradaki 112 puanlık fark yaklaşık beş yıllık öğrenme avantajına karşılık gelir.',
+
+    date: '2026-11-21',
+    dateModified: '2026-11-21',
+    readTime: '10 dk okuma',
+    tags: ['PISA', 'Türkiye Eğitimi', 'Uluslararası Kıyaslama', 'Akademik Değerlendirme', 'Ebeveyn Rehberi', 'LGS', 'YKS'],
+    faqs: [
+      { q: 'Türkiye PISA 2025\'te kaçıncı sırada?', a: 'Türkiye, PISA 2025\'te matematik alanında 81 ülke arasında yaklaşık 36. sıradadır (463 puan). Okuma alanında ise 479 puan ile OECD ortalamasının (476) üzerine çıkarak üst yarıda yer almaktadır. Fen bilimlerinde 2022\'ye kıyasla iyileşme gösteren dört ülkeden biridir — İngiltere, Slovakya ve Kosta Rika ile birlikte.' },
+      { q: 'Türkiye\'nin PISA 2025 matematik puanı nedir?', a: 'Türkiye\'nin PISA 2025 matematik puanı yaklaşık 463\'tür. OECD ortalaması 472\'dir; fark 9 puan — yaklaşık yarım yıllık öğrenme açığına denk gelir. Singapur (575) ve Japonya (536) ise yaklaşık beş yıllık avantajla listenin tepesindedir. İspanya (472) ve Fransa (475) OECD ortalaması civarındadır; Türkiye her ikisinin de yakınındadır.' },
+      { q: 'Türkiye\'nin PISA 2025 okuma puanı nedir?', a: 'Türkiye\'nin PISA 2025 okuma puanı yaklaşık 479\'dur; bu, OECD ortalaması 476\'nın üzerindedir. Bu olumlu bir göstergedir: Türkiye okuma alanında OECD ortalamasını geçmiş ve matematik ile okuma arasındaki dengeyi diğer birçok ülkenin tersine okuma lehine kurmuştur.' },
+      { q: 'PISA 2025\'te hangi ülkeler en yüksek puanı aldı?', a: 'PISA 2025 matematik sıralamasında ilk beş: Singapur (575), Japonya (536), Güney Kore (524), Tayvan (~519), Çin Macau (~516). Avrupa\'dan İsviçre (~508) ve Estonya (~505) öne çıkıyor. OECD ortalaması 472, Türkiye 463, Suudi Arabistan 394.' },
+      { q: 'Türkiye\'nin PISA\'daki tarihi performansı nasıl gelişti?', a: 'Türkiye PISA 2000\'de 476 ile bugünün OECD ortalamasının üzerinde bir puanla başladı; 2006\'ya kadar düştü ve sonra yavaş yavaş toparlandı. 2022 döngüsünde Türkiye PISA tarihindeki en iyi göreli performanslarından birini sergiledi; matematik ve okumada 2018\'e kıyasla iyileşme kaydederek OECD ortalamasına yaklaştı. 2025 döngüsü bu eğilimi sürdürmektedir.' },
+      { q: 'PISA\'ya bireysel başvuru yapılabilir mi?', a: 'Hayır, PISA\'ya bireysel başvuru yapılamaz. Millî Eğitim Bakanlığı her döngüde Türkiye\'den 15 yaşındaki öğrenciler arasından rastgele örnekleme yöntemiyle yaklaşık 5.000–6.000 kişilik bir grup seçer. Seçilen öğrenciler okul idaresi aracılığıyla bilgilendirilir; özel hazırlık gerekmez.' },
+      { q: 'PISA puanı ile LGS ve YKS arasındaki ilişki nedir?', a: 'PISA, LGS (Liselere Geçiş Sınavı) ve YKS\'den farklı bir şeyi ölçer. LGS ve YKS müfredat bilgisini ve soru çözme hızını ölçerken, PISA öğrenilen bilgiyi yeni ve gerçek yaşam bağlamlarına uygulama becerisini değerlendirir. Yüksek PISA puanı doğrudan yüksek LGS puanı anlamına gelmez; ancak uzun vadeli akademik başarının ve adaptif düşünce becerisinin göstergesidir.' },
+      { q: 'Çocuğumun PISA ortalamasıyla nasıl karşılaştırıldığını nasıl öğrenebilirim?', a: 'Çocuğunuz PISA\'ya katılmış olmak zorunda değil. Eduentry\'nin ücretsiz adaptif değerlendirmesi, PISA ile aynı madde tepki teorisi (IRT) altyapısını kullanarak 6-17 yaş arası çocukları matematik, İngilizce, sözel ve sayısal akıl yürütme alanlarında test eder. Sonuçlar uluslararası kıyaslamalı yüzdelik dilim puanı olarak raporlanır. Kayıt gerekmez, bir saatten kısa sürer.' },
+    ],
+    cta: {
+      heading: 'Çocuğunuz Türkiye ortalamasının neresinde?',
+      body: 'Türkiye PISA 2025 matematik ortalaması 463. Çocuğunuzun bu karşılaştırmalı ölçekte nerede durduğunu ücretsiz uyarlanabilir değerlendirme ile öğrenin — 6-17 yaş, kayıt gerekmez.',
       label: 'Ücretsiz değerlendirmeyi başlat',
       href: '/tr',
     },
@@ -830,11 +858,11 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     slug: 'staj-defteri-nasil-doldurulur',
     title: 'Staj Defteri Nedir, Nereden Alınır ve Nasıl Doldurulur? 2026 Rehberi',
     shortTitle: 'Staj Defteri Nasıl Doldurulur? 2026 Adım Adım Rehber + Örnek',
-    description: 'Staj defteri okul veya işyerinden ücretsiz alınır. Günlük aktivite, haftalık özet ve yönetici imzası bölümleri nasıl doldurulur — lise öğrencileri için adım adım örnek rehber. Ne yazılır, ne zaman teslim edilir.',
+    description: 'Staj defteri nedir: staj süresince yürütülen faaliyetleri günlük olarak belgeleyen resmi kayıt defteridir. Zorunlu stajlarda yasal gereklilik, gönüllü stajda önerilir. Okul/bölüm sekreterliğinden ücretsiz alınır. 2026 adım adım doldurma rehberi + kim imzalar.',
     tldr: 'Staj defteri okul veya kurum formatında tutulur; genellikle günlük faaliyet kaydı, haftalık özet, öğrenilen beceriler, yönetici yorumları ve genel değerlendirme bölümlerini içerir. Genel ifadeler yerine ayrıntılı gözlem ve somut örneklere yer vermek, staj defterinin kalitesini belirleyen en önemli etkendir.',
 
     date: '2026-09-15',
-    dateModified: '2026-11-04',
+    dateModified: '2026-11-21',
     readTime: '8 dk okuma',
     tags: ['Staj', 'Staj Defteri', 'Zorunlu Staj', 'Üniversite', 'Kariyer Rehberi', 'Lise Staj'],
     faqs: [
@@ -941,11 +969,11 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'PISA 2025 Türkiye Sıralaması: Matematik ve Okuma Kariyeri Nasıl Etkiler?',
     shortTitle: 'PISA 2025 Türkiye Sıralaması: Çocuğunuzun Kariyerini Nasıl Etkiler?',
     description:
-      'Türkiye PISA 2025\'te okumada OECD ortalamasını geçti — ama bu yeterli mi? PISA\'nın ölçtüğü problem çözme becerileri ile çocukların gerçek kariyer olanakları arasındaki bağlantı, verilerle açıklıyor.',
+      'Türkiye PISA 2025: okuma 479 ile 81 ülke arasında üst yarıda, OECD ort. 476. Matematik 463 (OECD: 472). PISA\'nın ölçtüğü sayısal muhakeme ve okuma becerileri gelecekteki kariyer fırsatlarını nasıl şekillendiriyor — verilerle.',
     tldr: 'PISA, OECD\'nin her üç yılda bir 91 ülkede 15 yaşındaki öğrencilere uyguladığı bir değerlendirme programıdır. Matematik, okuma ve fen bilimlerini ölçer; OECD ortalaması yaklaşık 472–476 puan civarındadır. PISA\'nın ölçtüğü beceriler — sayısal muhakeme, okuduğunu anlama ve problem çözme — günümüz iş dünyasının en çok aradığı yetkinliklerle örtüşüyor.',
 
     date: '2026-09-21',
-    dateModified: '2026-11-09',
+    dateModified: '2026-11-21',
     readTime: '11 dk okuma',
     tags: ['PISA', 'Kariyer Gelişimi', 'Akademik Değerlendirme', 'Staj', 'Ebeveyn Rehberi'],
     faqs: [
@@ -2178,10 +2206,10 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
     title: 'MAP Testi Nedir? NWEA MAP Ölçeği, Türkiye\'deki Yeri ve PISA ile Karşılaştırması',
     shortTitle: 'MAP Testi Nedir? NWEA MAP Ölçeği ve PISA Karşılaştırması',
     description:
-      'MAP testi (NWEA MAP Growth) nedir? RIT puanı nasıl okunur, PISA ve CAT4 ile farkı ne? Uluslararası okul öğrencisi aileleri için kapsamlı rehber.',
+      'MAP (NWEA MAP Growth) testi: 5. sınıf ortalaması mat RIT 208, okuma 196. 10. sınıf: mat 232, okuma 220. RIT puanı nasıl okunur, hangi uluslararası okullarda uygulanır, PISA ve CAT4\'ten farkı — Türkiye rehberi 2025–26.',
     tldr: 'MAP (Measures of Academic Progress), NWEA\'nın geliştirdiği adaptif akademik değerlendirme sistemidir. RIT (Rasch Unit) puanlaması kullanır; her doğru yanıt bir sonraki soruyu zorlaştırır. 5 milyondan fazla öğrenciye normlanan sistem, öğrencinin gerçek öğrenme düzeyini sınıf ortalamasından bağımsız olarak ölçer. PISA ile aynı madde tepki teorisi (IRT) altyapısını paylaşır.',
     date: '2026-10-20',
-    dateModified: '2026-10-20',
+    dateModified: '2026-11-21',
     readTime: '9 dk okuma',
     tags: ['MAP Testi', 'NWEA MAP', 'Akademik Değerlendirme', 'Uluslararası Okul', 'RIT Puanı', 'Adaptif Test', 'Ebeveyn Rehberi'],
     faqs: [

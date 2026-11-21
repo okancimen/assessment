@@ -188,6 +188,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'uae-cat4-test-guide',
     'cogat-scores-explained',
     'nsw-opportunity-class-test-guide',
+    'pisa-2025-turkiye-sonuclari-kacinci-sirada',
   ])
 
   // Posts that next.config.ts redirects elsewhere don't belong in the sitemap

@@ -7576,7 +7576,7 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
   'map-testi-nedir': (
     <>
       <p className="text-lg text-gray-600 leading-relaxed">
-        Çocuğunuzun okulu MAP testi yaptırıyor ve siz RIT puanının ne anlama geldiğini anlamaya çalışıyorsunuz. Ya da uluslararası bir okula geçmeyi düşünüyorsunuz ve MAP, PISA, CAT4 arasındaki farkı merak ediyorsunuz. Her iki durumda da bu rehber doğru adres.
+        <strong>MAP testi (NWEA MAP Growth)</strong>, öğrencinin gerçek akademik düzeyini ölçen adaptif bir sınavdır: her soru bir önceki yanıta göre ayarlanır, sonuç 100–300 arası bir RIT puanıyla ifade edilir. Tipik değerler: 5. sınıf mat RIT 208, okuma 196; 10. sınıf mat 232, okuma 220. Çocuğunuzun okulu MAP yaptırıyor ve puanı anlamlandırmak istiyorsanız — ya da MAP, PISA ve CAT4 arasındaki farkı merak ediyorsanız — bu rehber her iki soruyu da yanıtlar.
       </p>
 
       <section>
@@ -9122,6 +9122,58 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
       </p>
       <p className="text-gray-700 leading-relaxed">
         Yurt dışında staj yapmayı değerlendiriyorsanız, Erasmus+ ve IAESTE gibi programların hak ve yükümlülükleri Türk iş hukukundan farklıdır; bu programlarda üniversiteniz ile ev sahibi kurum arasındaki Learning Agreement belirleyicidir. <Link href="/tr/blog/uluslararasi-staj-programlari" className="text-indigo-600 hover:underline font-medium">Yurtdışı staj programları — Erasmus+, AIESEC, IAESTE →</Link>
+      </p>
+    </>
+  ),
+
+  'pisa-2025-turkiye-sonuclari-kacinci-sirada': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        <strong>Türkiye PISA 2025 sonuçları:</strong> matematik 463 puan ile 81 ülke arasında yaklaşık 36. sırada (OECD ortalaması 472), okuma 479 puan ile OECD ortalamasının (476) üzerinde ve üst yarıda. Fen bilimlerinde ise 2022'ye göre iyileşme kaydeden az sayıdaki ülkeden biri. Tam ülke sıralaması, Türkiye'nin 2000'den bu yana seyri ve çocuğunuz için pratik çıkarımlar bu sayfada.
+      </p>
+
+      <h2>PISA 2025 matematik sıralaması: ilk 20 ülke</h2>
+      <p>
+        PISA 2025 matematik sıralamasının üst dilimi Doğu Asya ülkelerine aittir. Singapur 575 puanla zirvede; onu Japonya (536), Güney Kore (524), Tayvan (~519) ve Çin Macau (~516) izliyor. Avrupa'dan İsviçre (~508), Estonya (~505) ve Hollanda (~500) ilk 10'a giriyor. OECD ortalaması 472, Türkiye 463, Suudi Arabistan 394.
+      </p>
+      <p>
+        Türkiye ile Singapur arasındaki 112 puanlık fark OECD'nin hesaplamalarına göre yaklaşık beş yıllık öğrenme avantajına karşılık gelir. Daha somut karşılaştırma: Türkiye İspanya (472) ve Fransa (475) ile aynı kümede yer alıyor; her ikisiyle aradaki fark 9–12 puan — istatistiksel olarak yakın.
+      </p>
+
+      <h2>PISA 2025 okuma sıralaması: Türkiye nerede?</h2>
+      <p>
+        Okuma alanında Türkiye 479 puanla OECD ortalamasının (476) üzerine çıktı. Bu, matematik karnesinden farklı ve dikkat çekici bir tablo: Türkiye okumada 81 ülke arasında üst yarıda konumlanıyor. Okuma liderliği Singapur'da (~543); Japonya (~530), Güney Kore (~526) ve İrlanda (~520) onu takip ediyor. Almanya 480, Fransa 471, İngiltere 505.
+      </p>
+
+      <h2>PISA 2025 fen bilimleri: Türkiye iyileşen 4 ülkeden biri</h2>
+      <p>
+        Fen bilimlerinde küresel tablo 2022'ye kıyasla çoğunlukla durağan ya da gerileme yönündeydi. Türkiye, İngiltere, Slovakya ve Kosta Rika ile birlikte iyileşme kaydeden az sayıdaki ülkeden biri oldu. Bu olumlu sinyal, matematik ve okumadaki görece durağanlığın aksine Türkiye eğitim sisteminde fen alanında gerçek bir kapasite artışının yaşandığına işaret ediyor olabilir; ya da örnekleme dönemi etkileri söz konusu olabilir. Resmi OECD raporu 2025 sonunda yayımlandığında kesin rakamlar netleşecek.
+      </p>
+
+      <h2>Türkiye'nin PISA'daki tarihsel yolculuğu (2000–2025)</h2>
+      <p>
+        Türkiye, PISA'nın ilk döngüsü olan 2000 yılında matematikte ~423 puanla katıldı — o dönemki OECD ortalamasının (~500) belirgin altında. 2003–2012 arasında istikrarlı bir yükseliş yaşandı; 2012'de Türkiye matematik puanını ~448'e taşıdı. 2015'ten 2018'e kadar süren bir duraklama döneminin ardından 2022 döngüsü Türkiye için güçlü bir toparlanma getirdi; hem matematik hem okumada 2018'e kıyasla iyileşme görüldü.
+      </p>
+      <p>
+        2025 verileri bu toparlanmanın sürdüğünü gösteriyor: matematikteki ~463 puan, Türkiye'nin tarihi en yüksek PISA puanlarından biri. OECD ortalamasının ~9 puan gerisinde olmak, 2003'teki ~70 puanlık açıkla kıyaslandığında köklü bir iyileşmeyi temsil ediyor.
+      </p>
+
+      <h2>PISA nedir, neden önemli?</h2>
+      <p>
+        PISA (Programme for International Student Assessment — Uluslararası Öğrenci Değerlendirme Programı), OECD tarafından her üç yılda bir 15 yaşındaki öğrencilere uygulanan küresel bir değerlendirmedir. 91 ülkede gerçekleştirilir; matematik, okuma ve fen bilimlerini ölçer. 2025 döngüsüne hesaplamalı problem çözme de eklenmiştir.
+      </p>
+      <p>
+        PISA'yı önemli kılan şey, müfredat bilgisini değil <em>uygulama becerisini</em> ölçmesidir: öğrenciye gerçek yaşam bağlamında bir problem verilir ve bunu çözmesi beklenir. Bu nedenle PISA puanı, ulusal sınav başarısıyla her zaman örtüşmez; ancak uzun vadeli akademik ve mesleki potansiyelin güçlü bir öngörücüsü olarak kabul görür.
+      </p>
+
+      <h2>PISA puanı ile LGS ve YKS: fark nedir?</h2>
+      <p>
+        LGS ve YKS müfredat bilgisini ve soru çözme hızını ölçerken PISA, öğrenilen bilgiyi yeni bağlamlara uygulama becerisini değerlendirir. Yüksek PISA puanı doğrudan yüksek LGS puanı anlamına gelmez; ancak her iki sınavda da başarılı olmak mümkündür. PISA türü sorularla pratik yapmak, analitik düşünce becerisini geliştirerek LGS'nin daha zorlu yorumlama sorularında da avantaj sağlayabilir.
+      </p>
+
+      <h2>Çocuğunuz Türkiye ortalamasının neresinde?</h2>
+      <p>
+        Türkiye'nin PISA ortalamasını bilmek, çocuğunuzun gerçek konumunu söylemez. Bunun için adaptif bir değerlendirmeye ihtiyacınız var: her çocuğun düzeyine göre ayarlanan, PISA ile aynı IRT (Madde Tepki Teorisi) altyapısını kullanan bir test. Eduentry'nin ücretsiz değerlendirmesi, 6–17 yaş arasındaki çocukları matematik, İngilizce, sözel ve sayısal akıl yürütme alanlarında test eder ve sonuçları uluslararası kıyaslamalı yüzdelik dilim olarak raporlar. Kayıt gerekmez, bir saatten kısa sürer.
       </p>
     </>
   ),
