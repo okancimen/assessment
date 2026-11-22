@@ -1827,6 +1827,30 @@ export const BLOG_POSTS_FR: BlogPostMeta[] = [
     ],
     cta: { heading: 'Profil complet de votre enfant — aptitude + personnalité, gratuit', body: 'Raisonnement cognitif (verbal, numérique, abstrait) + 24 forces VIA en une session. Âges 6–22. Rapport immédiat, sans compte.', label: 'Démarrer l\'évaluation gratuite', href: '/academic-assessment' },
   },
+  {
+    slug: 'points-forts-faibles-enfant-7-14-ans',
+    title: 'Points Forts et Faibles de Votre Enfant : Guide par Âge 7–14 Ans',
+    shortTitle: 'Points Forts et Faibles : Guide 7–14 Ans',
+    description: 'Comment identifier les points forts et faibles de votre enfant selon son âge ? Quelles compétences cognitives se développent à quel moment, quelles "faiblesses" sont en réalité normales, et que pouvez-vous faire en tant que parent ?',
+    tldr: 'Chaque enfant entre 7 et 14 ans possède un profil unique de points forts et faibles ; les notes scolaires ne reflètent pas ce profil. Le raisonnement verbal, numérique, visuo-spatial et la mémoire de travail se développent à des rythmes différents selon l\'âge — ce qui semble "faible" à 8 ans peut mûrir à 10 ans, et certains aspects nécessitent un soutien réel. Ce guide explique les quatre fenêtres de développement, quels points forts/faibles sont typiques à chaque étape, et comment obtenir un profil objectif pour votre enfant.',
+    date: '2026-11-22',
+    dateModified: '2026-11-22',
+    readTime: '10 min de lecture',
+    tags: ['Développement Enfant', 'Points Forts', 'Points Faibles', 'Évaluation Académique', 'Guide Parents', 'Profil Cognitif'],
+    faqs: [
+      { q: 'Quels sont les points forts d\'un enfant de 8 ans ?', a: 'À 8 ans, les forces cognitives varient beaucoup d\'un enfant à l\'autre. Les points forts typiques comprennent : la fluidité verbale (narration, vocabulaire), la pensée visuo-spatiale (puzzles, Lego, dessin), la reconnaissance de patterns numériques, et l\'apprentissage par compréhension plutôt que par mémorisation. La mémoire de travail et l\'expression écrite sont encore en développement, tandis que le raisonnement verbal peut déjà être très fort.' },
+      { q: 'Quels sont les points faibles d\'un enfant et sont-ils graves ?', a: 'Une "faiblesse" chez l\'enfant peut avoir deux sens : soit un domaine relativement moins fort dans son profil naturel (ce n\'est pas un problème — tout enfant en a), soit un retard inattendu par rapport aux normes d\'âge (cela mérite une investigation). Confondre les deux génère une anxiété inutile ou retarde un vrai soutien.' },
+      { q: 'Comment identifier les points forts et faibles de mon enfant ?', a: 'La méthode la plus fiable est l\'évaluation cognitive adaptative : un test qui s\'adapte au niveau de l\'enfant, mesure séparément les compétences verbales, numériques et spatiales, et compare les résultats aux normes d\'âge. L\'observation (qu\'est-ce que l\'enfant fait avec enthousiasme ?), les retours des enseignants et l\'opinion de l\'enfant lui-même complètent le tableau. La note scolaire seule est insuffisante car elle mesure la conformité au programme, pas la capacité cognitive.' },
+      { q: 'Comment soutenir un enfant de 11–12 ans dans ses points faibles ?', a: 'À 11–12 ans, la charge de la mémoire de travail et les exigences des fonctions exécutives augmentent considérablement. Ce qui semble être des "faiblesses" — désorganisation, difficulté à planifier, incapacité à terminer les devoirs — est souvent une surcharge du système exécutif en développement, non une intelligence faible. Stratégies de soutien : fractionner les tâches, outils de planification visuels, construire un pont depuis le point fort vers le point faible.' },
+      { q: 'Quand les points faibles d\'un enfant nécessitent-ils l\'aide d\'un spécialiste ?', a: 'Une consultation est recommandée si : la lecture est nettement en retard par rapport aux pairs (difficultés de décodage après le CE2), des problèmes d\'attention et d\'organisation affectent la vie quotidienne, l\'anxiété se transforme en refus scolaire, ou il y a un retard évident dans des compétences fondamentales. La frontière entre point faible et trouble des apprentissages ne peut être établie sans une évaluation complète.' },
+    ],
+    cta: {
+      heading: 'Découvrez le vrai profil de votre enfant en 1 heure',
+      body: 'Notre évaluation adaptative gratuite mesure les points forts verbaux, numériques et de raisonnement des enfants de 7 à 17 ans selon des normes internationales comparatives. Aucun compte requis.',
+      label: 'Démarrer l\'évaluation gratuite',
+      href: '/academic-assessment',
+    },
+  },
 ]
 
 export function getFrenchPostBySlug(slug: string): BlogPostMeta | undefined {

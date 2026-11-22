@@ -4292,6 +4292,96 @@ export const ES_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'fortalezas-debilidades-nino-7-14-anos': (
+    <>
+      <section className="mb-10">
+        <p className="text-gray-700 leading-relaxed mb-4">
+          &ldquo;Le cuesta la matemática, ¿es normal?&rdquo; &ldquo;Le encanta leer pero los números no le entran.&rdquo; &ldquo;Termina antes que todos pero no puede sentarse a escribir.&rdquo; Todas estas preguntas apuntan a lo mismo: entender dónde están las verdaderas fortalezas de tu hijo, y dónde necesita apoyo real.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La dificultad es que el cerebro entre los 7 y los 14 años cambia rápidamente. Lo que parece &ldquo;débil&rdquo; a los 8 años puede madurar espontáneamente a los 10. Y al revés: lo que parecía sin problemas en primaria puede revelar una brecha real al pasar a secundaria.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Esta guía explica cuatro ventanas de desarrollo entre los 7 y los 14 años, qué fortalezas y debilidades son típicas en cada etapa, cuáles merecen atención, y cómo construir un perfil objetivo de tu hijo.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">¿Qué significan realmente fortalezas y debilidades?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Muchos padres equiparan &ldquo;fortaleza&rdquo; con &ldquo;buena nota&rdquo;. Sin embargo, la nota escolar es un resultado; la fortaleza es la capacidad cognitiva subyacente que produce ese resultado. Las capacidades cognitivas se dividen en cuatro ejes principales:
+        </p>
+        <ul className="mb-4 space-y-2">
+          <li><strong>Razonamiento verbal:</strong> comprensión del lenguaje, relaciones entre palabras, interpretación de textos.</li>
+          <li><strong>Razonamiento numérico:</strong> patrones numéricos, relaciones matemáticas, pensamiento cuantitativo.</li>
+          <li><strong>Pensamiento visoespacial:</strong> rotación mental de formas, lectura de mapas, diseño.</li>
+          <li><strong>Memoria de trabajo y funciones ejecutivas:</strong> procesar información mientras se mantiene, planificar, gestionar la atención.</li>
+        </ul>
+        <Callout color="indigo">
+          <strong>Regla básica:</strong> Una debilidad relativa dentro del perfil no es un problema — es un mapa. Una desviación marcada respecto a las normas de edad merece atención.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">7–8 años: Grandes diferencias, sin alarmar</h2>
+        <ul className="mb-4 space-y-1">
+          <li><strong>Fortalezas comunes:</strong> fluidez verbal, pensamiento visoespacial (puzzles, Lego, dibujo), reconocimiento de patrones numéricos, aprendizaje por comprensión.</li>
+          <li><strong>Lo que es normal a esta edad:</strong> dificultad para organizar la escritura, corta duración de la atención (20–30 min máximo), lentitud para memorizar las tablas (normal hasta finales de 3.º), dificultad con lo abstracto.</li>
+        </ul>
+        <Callout color="amber">
+          <strong>¿Cuándo preocuparse?</strong> Si después de 3.º la lectura sigue siendo silábica, vale la pena investigarlo. La dislexia detectada a tiempo responde mucho mejor a la intervención.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">9–10 años: La comprensión supera a la lectura</h2>
+        <ul className="mb-4 space-y-1">
+          <li><strong>Fortalezas comunes:</strong> razonamiento lógico, argumentación verbal, puzzles espaciales, memoria para detalles.</li>
+          <li><strong>Lo que merece atención:</strong> mala comprensión a pesar de lectura fluida, dificultades persistentes con problemas matemáticos escritos, composiciones en 5.º todavía sin estructura.</li>
+        </ul>
+        <Callout color="emerald">
+          <strong>La mayor oportunidad de esta edad:</strong> Un razonamiento verbal fuerte determina el rendimiento en lengua, historia y ciencias sociales. Un fuerte razonamiento numérico es el precursor del éxito en matemáticas y ciencias.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">11–12 años: La memoria de trabajo entra en juego</h2>
+        <ul className="mb-4 space-y-1">
+          <li><strong>Fortalezas comunes:</strong> reconocimiento de patrones abstractos, razonamiento verbal profundo, pensamiento sistemático, resolución creativa de problemas.</li>
+          <li><strong>Lo que parece debilidad pero suele ser sobrecarga ejecutiva:</strong> desorganización, dificultades para planificar, deberes inacabados, &ldquo;olvidos&rdquo; repetidos.</li>
+        </ul>
+        <Callout color="amber">
+          <strong>A tener en cuenta:</strong> Lo que se interpreta como &ldquo;pereza&rdquo; o &ldquo;falta de motivación&rdquo; a esta edad suele ser la sobrecarga de un sistema ejecutivo en desarrollo, no falta de inteligencia.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">13–14 años: El perfil se vuelve legible</h2>
+        <ul className="mb-4 space-y-1">
+          <li><strong>Fortalezas comunes:</strong> razonamiento abstracto, lectura analítica, razonamiento numérico, metacognición (saber lo que se sabe).</li>
+          <li><strong>Lo que merece atención:</strong> ansiedad ante exámenes paralizante, caída de la velocidad lectora bajo presión, dificultades para integrar varios conceptos.</li>
+        </ul>
+        <Callout color="indigo">
+          <strong>Antes de elegir itinerario:</strong> Ver objetivamente el perfil verbal y numérico de tu hijo vale mucho más que &ldquo;le gustan las mates&rdquo; o &ldquo;tiene buena lengua&rdquo;.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5 pasos concretos como padre o madre</h2>
+        <ul className="mb-4 space-y-3">
+          <li><strong>1. Establece una línea base.</strong> Documenta el perfil actual mediante evaluación u observación sistemática.</li>
+          <li><strong>2. Parte del punto fuerte.</strong> Antes de reforzar lo débil, reconoce y celebra lo fuerte.</li>
+          <li><strong>3. No abordes la debilidad del mismo modo.</strong> Más ejercicios no suele bastar; otro modo de presentación o un puente desde la fortaleza es más eficaz.</li>
+          <li><strong>4. Evita comparar con hermanos y compañeros.</strong> La referencia es tu hijo ayer, no los demás.</li>
+          <li><strong>5. Reevalúa cada seis meses.</strong> El perfil cambia — lo que era cierto a los 7 puede no aplicarse a los 10.</li>
+        </ul>
+        <Callout color="emerald">
+          <strong>Para concluir:</strong> El perfil de tu hijo no es un veredicto — es un mapa. Saber dónde está ahora es la herramienta más poderosa para decidir sobre escuela, apoyo y expectativas de futuro.
+        </Callout>
+      </section>
+    </>
+  ),
+
 }
 
 export function getSpanishBlogContent(slug: string): React.ReactNode {

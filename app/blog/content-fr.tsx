@@ -4535,6 +4535,118 @@ export const FR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'points-forts-faibles-enfant-7-14-ans': (
+    <>
+      <section className="mb-10">
+        <p className="text-gray-700 leading-relaxed mb-4">
+          &ldquo;Il a du mal en maths, est-ce normal ?&rdquo; &ldquo;Elle adore lire mais les chiffres ne rentrent pas.&rdquo; &ldquo;Il finit avant tout le monde mais ne tient pas en place pour écrire.&rdquo; Ces questions pointent toutes vers la même chose : comprendre où se situent les vraies forces de votre enfant, et où il a besoin d&apos;un vrai soutien.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          La difficulté, c&apos;est que le cerveau entre 7 et 14 ans change rapidement. Ce qui semble &ldquo;faible&rdquo; à 8 ans peut mûrir spontanément à 10 ans. Et l&apos;inverse est vrai : ce qui paraissait sans problème à l&apos;école primaire peut révéler une lacune réelle au collège.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ce guide explique quatre fenêtres de développement entre 7 et 14 ans, quels points forts et faibles sont typiques à chaque étape, lesquels méritent attention, et comment construire un profil objectif de votre enfant.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Que signifient vraiment points forts et points faibles ?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Beaucoup de parents assimilent &ldquo;point fort&rdquo; à &ldquo;bonne note&rdquo;. Pourtant la note scolaire est un résultat ; le point fort est la capacité cognitive sous-jacente qui produit ce résultat. Les capacités cognitives se répartissent en quatre axes :
+        </p>
+        <ul className="mb-4 space-y-2">
+          <li><strong>Raisonnement verbal :</strong> compréhension du langage, relations entre mots, interprétation de textes.</li>
+          <li><strong>Raisonnement numérique :</strong> patterns numériques, relations mathématiques, pensée quantitative.</li>
+          <li><strong>Pensée visuo-spatiale :</strong> rotation mentale de formes, lecture de cartes, design.</li>
+          <li><strong>Mémoire de travail et fonctions exécutives :</strong> traiter l&apos;information tout en la maintenant, planifier, gérer l&apos;attention.</li>
+        </ul>
+        <Callout color="indigo">
+          <strong>Règle de base :</strong> Une faiblesse relative dans le profil n&apos;est pas un problème — c&apos;est une carte. Un écart marqué par rapport aux normes d&apos;âge mérite attention.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">7–8 ans : Grandes différences, pas de panique</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Les écarts entre enfants en CE1–CE2 sont frappants — et tout à fait normaux. La vitesse de lecture, l&apos;automatisation du calcul et l&apos;organisation écrite présentent leur plus grande dispersion à cet âge.
+        </p>
+        <ul className="mb-4 space-y-1">
+          <li><strong>Points forts courants :</strong> fluidité verbale, pensée visuo-spatiale (puzzles, Lego, dessin), reconnaissance de patterns numériques, apprentissage par compréhension.</li>
+          <li><strong>Ce qui est normal à cet âge :</strong> difficulté à organiser l&apos;écrit, courte durée d&apos;attention (20–30 min max), lenteur à mémoriser les tables (normal jusqu&apos;à la fin du CE2), difficulté avec l&apos;abstrait.</li>
+        </ul>
+        <Callout color="amber">
+          <strong>Quand s&apos;inquiéter ?</strong> Si la lecture est encore au stade du déchiffrage syllabique après le CE2, cela vaut la peine d&apos;être examiné. La dyslexie et les difficultés de lecture détectées tôt répondent beaucoup mieux à l&apos;intervention.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">9–10 ans : La compréhension dépasse la lecture</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Un tournant s&apos;opère : on ne &ldquo;apprend plus à lire&rdquo;, on &ldquo;lit pour apprendre&rdquo;. La pensée abstraite commence à s&apos;allumer, et les différences individuelles deviennent plus visibles.
+        </p>
+        <ul className="mb-4 space-y-1">
+          <li><strong>Points forts courants :</strong> raisonnement logique, argumentation verbale, puzzles spatiaux, mémoire des détails.</li>
+          <li><strong>Ce qui mérite attention :</strong> mauvaise compréhension malgré une lecture fluide, difficultés persistantes avec les problèmes écrits en maths, écrits en CM2 toujours sans structure début-milieu-fin.</li>
+        </ul>
+        <Callout color="emerald">
+          <strong>La plus grande opportunité de cet âge :</strong> Un raisonnement verbal fort détermine les performances en français, histoire et sciences humaines. Un fort raisonnement numérique est le signe avant-coureur d&apos;excellentes maths et sciences.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">11–12 ans : La mémoire de travail entre en jeu</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Beaucoup de parents sont surpris à cette période. &ldquo;Il n&apos;avait aucun problème à l&apos;école primaire, et soudain ça coince.&rdquo; La raison n&apos;est pas un recul cognitif ; c&apos;est une hausse des exigences : plus de matières, organisation plus complexe, abstraction plus poussée.
+        </p>
+        <ul className="mb-4 space-y-1">
+          <li><strong>Points forts courants :</strong> reconnaissance de patterns abstraits, raisonnement verbal approfondi, pensée systématique, résolution créative de problèmes.</li>
+          <li><strong>Ce qui ressemble à une faiblesse mais est souvent une surcharge exécutive :</strong> désorganisation, difficultés à planifier, devoirs inachevés, &ldquo;oublis&rdquo; répétés.</li>
+        </ul>
+        <Callout color="amber">
+          <strong>À noter :</strong> Ce qu&apos;on interprète comme &ldquo;paresse&rdquo; ou &ldquo;manque de motivation&rdquo; à cet âge est souvent la surcharge d&apos;un système exécutif encore en développement.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">13–14 ans : Le profil devient lisible</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En 4e et en début de lycée, le profil cognitif se stabilise et devient plus fiable à mesurer. C&apos;est l&apos;âge des choix d&apos;orientation — le moment le plus critique pour les familles.
+        </p>
+        <ul className="mb-4 space-y-1">
+          <li><strong>Points forts courants :</strong> raisonnement abstrait, lecture analytique, raisonnement numérique, métacognition (savoir ce qu&apos;on sait).</li>
+          <li><strong>Ce qui mérite attention :</strong> anxiété aux examens paralysante, chute de la vitesse de lecture sous pression, difficultés à intégrer plusieurs concepts.</li>
+        </ul>
+        <Callout color="indigo">
+          <strong>Avant de choisir la filière :</strong> Voir objectivement le profil verbal et numérique de votre enfant vaut beaucoup plus que &ldquo;il aime les maths&rdquo; ou &ldquo;son français est fort&rdquo;.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">4 façons d&apos;identifier les points forts et faibles</h2>
+        <ul className="mb-4 space-y-3">
+          <li><strong>1. Évaluation cognitive adaptative :</strong> test adapté au niveau de l&apos;enfant mesurant séparément compétences verbales, numériques et spatiales par rapport aux normes d&apos;âge.</li>
+          <li><strong>2. Observation :</strong> Qu&apos;est-ce que l&apos;enfant fait sans y être forcé, avec enthousiasme ? Les activités où il perd la notion du temps indiquent ses forces.</li>
+          <li><strong>3. L&apos;avis de l&apos;enfant :</strong> &ldquo;Dans quelle matière comprends-tu le mieux ce qu&apos;on attend de toi ?&rdquo; est plus révélateur que &ldquo;Quelle est ta matière préférée ?&rdquo;</li>
+          <li><strong>4. Le retour des enseignants (avec des questions précises) :</strong> &ldquo;Avez-vous remarqué une force ou une difficulté particulière dans la compréhension ou l&apos;expression écrite ?&rdquo; donne de bien meilleurs résultats qu&apos;une question générale.</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5 étapes concrètes en tant que parent</h2>
+        <ul className="mb-4 space-y-3">
+          <li><strong>1. Établissez une base.</strong> Documentez le profil actuel via une évaluation ou une observation systématique.</li>
+          <li><strong>2. Partez du point fort.</strong> Avant de renforcer le faible, reconnaissez et célébrez le fort.</li>
+          <li><strong>3. N&apos;abordez pas la faiblesse de la même façon.</strong> Plus d&apos;exercices ne suffit souvent pas ; un mode de présentation différent ou un pont depuis le point fort est plus efficace.</li>
+          <li><strong>4. Évitez la comparaison avec les frères et sœurs et les camarades.</strong> La référence, c&apos;est l&apos;enfant d&apos;hier, pas les autres.</li>
+          <li><strong>5. Réévaluez tous les six mois.</strong> Le profil change — ce qui était vrai à 7 ans peut ne plus l&apos;être à 10 ans.</li>
+        </ul>
+        <Callout color="emerald">
+          <strong>Pour conclure :</strong> Le profil de votre enfant n&apos;est pas un verdict — c&apos;est une carte. Savoir où il se situe maintenant est l&apos;outil le plus puissant que vous ayez pour orienter vos décisions sur l&apos;école, le soutien et les attentes futures.
+        </Callout>
+      </section>
+    </>
+  ),
+
 }
 
 export function getFrenchBlogContent(slug: string): React.ReactNode {

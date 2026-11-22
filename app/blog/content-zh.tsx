@@ -3610,6 +3610,118 @@ export const ZH_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'ertong-youshi-ruoshi-7-14-sui': (
+    <>
+      <section className="mb-10">
+        <p className="text-gray-700 leading-relaxed mb-4">
+          &ldquo;数学很难，这正常吗？&rdquo; &ldquo;她喜欢阅读但数字就是不进脑子。&rdquo; &ldquo;比所有人都先做完，但就是不能静下来写作。&rdquo; 这些问题都指向同一点：理解孩子的真正优势在哪里，哪里需要真正的支持。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          困难在于，7至14岁之间大脑变化很快。8岁时看起来&ldquo;弱&rdquo;的可能在10岁自然成熟。反过来也是——小学看起来没问题的，升入初中后可能暴露出真正的差距。
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          本指南解释7至14岁之间四个发育窗口，每个阶段哪些优势和劣势是典型的，哪些值得关注，以及如何为孩子建立客观档案。
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">优势和劣势究竟意味着什么？</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          很多家长将&ldquo;优势&rdquo;等同于&ldquo;好成绩&rdquo;。然而，学校成绩是结果；优势是产生该结果的潜在认知能力。认知能力分为四个主要维度：
+        </p>
+        <ul className="mb-4 space-y-2">
+          <li><strong>语言推理：</strong>语言理解、词汇关联、文本解读。</li>
+          <li><strong>数字推理：</strong>数字规律、数学关系、定量思维。</li>
+          <li><strong>视觉空间思维：</strong>心理旋转、地图阅读、设计。</li>
+          <li><strong>工作记忆和执行功能：</strong>边保持信息边处理、计划、管理注意力。</li>
+        </ul>
+        <Callout color="indigo">
+          <strong>基本规则：</strong>档案中的相对劣势不是问题——它是地图。与年龄规范的显著偏差才值得关注。
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">7–8岁：差异大，不必恐慌</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          小学二三年级孩子之间的差异十分显著——完全正常。阅读速度、计算自动化和写作组织在这个年龄的变异范围最大。
+        </p>
+        <ul className="mb-4 space-y-1">
+          <li><strong>常见优势：</strong>语言流利度（讲故事、词汇量）、视觉空间思维（拼图、积木、绘画）、数字规律识别、通过理解而非死记硬背学习。</li>
+          <li><strong>这个年龄正常的现象：</strong>写作组织困难、注意力持续时间短（最多20–30分钟）、乘法表记忆慢（三年级末前属正常）、抽象概念困难。</li>
+        </ul>
+        <Callout color="amber">
+          <strong>何时需要关注？</strong>三年级后阅读仍停留在拼读阶段，值得检查。早期发现的阅读困难和阅读障碍干预效果好得多。
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">9–10岁：理解超越阅读</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          转折点出现：不再是&ldquo;学习阅读&rdquo;，而是&ldquo;通过阅读学习&rdquo;。抽象思维开始点燃，个体差异变得更明显。
+        </p>
+        <ul className="mb-4 space-y-1">
+          <li><strong>常见优势：</strong>逻辑推理、语言辩论、空间谜题、细节记忆。</li>
+          <li><strong>值得关注的：</strong>尽管阅读流利但理解差、数学应用题持续困难、五年级作文仍无开头中间结尾结构。</li>
+        </ul>
+        <Callout color="emerald">
+          <strong>这个年龄最大的机会：</strong>强语言推理决定语文、历史和社会学科的表现。强数字推理是数学和理科成功的早期预兆。
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">11–12岁：工作记忆登场</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          很多家长在这个时期感到意外。&ldquo;小学没有任何问题，突然就困难了。&rdquo;原因不是认知退步，而是需求的增加：更多科目、更复杂的组织、更高层次的抽象。
+        </p>
+        <ul className="mb-4 space-y-1">
+          <li><strong>常见优势：</strong>抽象规律识别、深度语言推理、系统性思维、创意解题。</li>
+          <li><strong>看起来像劣势但往往是执行功能过载：</strong>混乱、计划困难、作业未完成、反复&ldquo;遗忘&rdquo;。</li>
+        </ul>
+        <Callout color="amber">
+          <strong>重要提示：</strong>这个年龄被解读为&ldquo;懒惰&rdquo;或&ldquo;缺乏动力&rdquo;的，往往是正在发育的执行系统的过载，而非动力不足。
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">13–14岁：档案变得可读</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          初三和高一阶段，认知档案趋于稳定，测量更可靠。这是选择学科方向的时期——对家庭最关键的时刻。
+        </p>
+        <ul className="mb-4 space-y-1">
+          <li><strong>常见优势：</strong>抽象推理、分析性阅读、数字推理、元认知（知道自己知道什么）。</li>
+          <li><strong>值得关注的：</strong>令人瘫痪的考试焦虑、压力下阅读速度下降、整合多个概念困难。</li>
+        </ul>
+        <Callout color="indigo">
+          <strong>选科前：</strong>客观了解孩子的语言和数字档案，远比&ldquo;他喜欢数学&rdquo;或&ldquo;她语文好&rdquo;更有价值。
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">识别优势和劣势的4种方法</h2>
+        <ul className="mb-4 space-y-3">
+          <li><strong>1. 适应性认知评估：</strong>根据孩子水平调整的测试，分别测量语言、数字和空间技能，并与年龄规范比较。</li>
+          <li><strong>2. 观察：</strong>孩子不被强迫时热情做什么？忘记时间的活动指向优势。</li>
+          <li><strong>3. 孩子的意见：</strong>&ldquo;哪门学科你最清楚自己要做什么？&rdquo;比&ldquo;你最喜欢哪门学科？&rdquo;更有信息量。</li>
+          <li><strong>4. 教师反馈（具体问题）：</strong>&ldquo;您注意到孩子在理解或书面表达方面有什么特别的优势或困难吗？&rdquo;比一般性问题效果好得多。</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">家长的5个具体步骤</h2>
+        <ul className="mb-4 space-y-3">
+          <li><strong>1. 建立基线。</strong>通过评估或系统观察记录当前档案。</li>
+          <li><strong>2. 从优势出发。</strong>在强化弱势之前，认可并庆祝优势。</li>
+          <li><strong>3. 不要用同样的方式处理劣势。</strong>更多练习往往不够；不同的呈现方式或从优势架桥更有效。</li>
+          <li><strong>4. 避免与兄弟姐妹和同学比较。</strong>参照是孩子昨天的自己，而不是他人。</li>
+          <li><strong>5. 每六个月重新评估。</strong>档案会变化——7岁时的真实情况可能在10岁不再适用。</li>
+        </ul>
+        <Callout color="emerald">
+          <strong>结论：</strong>孩子的档案不是判决——它是地图。知道孩子现在在哪里，是您在学校选择、支持和未来期望方面做出决策的最有力工具。
+        </Callout>
+      </section>
+    </>
+  ),
+
 }
 
 export function getChineseBlogContent(slug: string): React.ReactNode {

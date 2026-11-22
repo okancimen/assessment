@@ -1561,6 +1561,30 @@ export const BLOG_POSTS_ES: BlogPostMeta[] = [
     ],
     cta: { heading: 'Perfil completo de tu hijo — aptitud + personalidad, gratis', body: 'Razonamiento cognitivo (verbal, numérico, abstracto) + 24 fortalezas VIA en una sola sesión. Edades 6–22. Informe inmediato, sin cuenta.', label: 'Iniciar evaluación gratuita', href: '/academic-assessment' },
   },
+  {
+    slug: 'fortalezas-debilidades-nino-7-14-anos',
+    title: 'Fortalezas y Debilidades de tu Hijo: Guía por Edades 7–14 Años',
+    shortTitle: 'Fortalezas y Debilidades: Guía 7–14 Años',
+    description: '¿Cómo identificar las fortalezas y debilidades de tu hijo según su edad? ¿Qué habilidades cognitivas se desarrollan cuándo, cuáles "debilidades" son completamente normales y qué puedes hacer como padre?',
+    tldr: 'Cada niño entre 7 y 14 años tiene un perfil único de fortalezas y debilidades; las notas escolares no reflejan ese perfil. El razonamiento verbal, numérico, visoespacial y la memoria de trabajo se desarrollan a ritmos distintos — lo que parece "débil" a los 8 años puede madurar a los 10, y algo requiere apoyo real. Esta guía explica las cuatro ventanas de desarrollo, qué fortalezas/debilidades son típicas en cada etapa y cómo obtener un perfil objetivo de tu hijo.',
+    date: '2026-11-22',
+    dateModified: '2026-11-22',
+    readTime: '10 min de lectura',
+    tags: ['Desarrollo Infantil', 'Fortalezas', 'Debilidades', 'Evaluación Académica', 'Guía para Padres', 'Perfil Cognitivo'],
+    faqs: [
+      { q: '¿Cuáles son las fortalezas de un niño de 8 años?', a: 'A los 8 años las fortalezas cognitivas varían mucho de un niño a otro. Las fortalezas típicas incluyen: fluidez verbal (narración, vocabulario), pensamiento visoespacial (puzzles, Lego, dibujo), reconocimiento de patrones numéricos, y aprendizaje por comprensión en lugar de memorización. La memoria de trabajo y la expresión escrita aún están en desarrollo, mientras que el razonamiento verbal puede ser ya muy fuerte.' },
+      { q: '¿Cuáles son las debilidades de un niño y son importantes?', a: 'Una "debilidad" en los niños puede tener dos significados: un área relativamente menos fuerte en el perfil natural del niño (no es un problema — todo niño las tiene), o un retraso inesperado respecto a los estándares de edad (esto merece investigación). Confundirlos genera ansiedad innecesaria o retrasa el apoyo real.' },
+      { q: '¿Cómo identificar las fortalezas y debilidades de mi hijo?', a: 'El método más fiable es la evaluación cognitiva adaptativa: una prueba que se adapta al nivel del niño, mide por separado habilidades verbales, numéricas y espaciales, y compara los resultados con las normas de edad. Complementan el cuadro: la observación (¿qué hace el niño con entusiasmo?), el feedback del profesor y la opinión del propio niño. La nota escolar sola es insuficiente porque mide la conformidad con el programa, no la capacidad cognitiva.' },
+      { q: '¿Cómo apoyar a un niño de 11–12 años en sus debilidades?', a: 'A los 11–12 años la carga de la memoria de trabajo y las demandas de las funciones ejecutivas aumentan considerablemente. Lo que parece "debilidad" — desorganización, dificultad para planificar, no terminar los deberes — suele ser una sobrecarga del sistema ejecutivo en desarrollo, no baja inteligencia. Estrategias de apoyo: dividir tareas en partes pequeñas, herramientas de planificación visual, construir un puente desde la fortaleza hacia la debilidad.' },
+      { q: '¿Cuándo requieren las debilidades de mi hijo ayuda especializada?', a: 'Se recomienda consulta si: la lectura está claramente por detrás de los compañeros (dificultades de decodificación después de 3.º de primaria), problemas de atención y organización afectan la vida diaria, la ansiedad se convierte en rechazo escolar, o hay un retraso evidente en habilidades fundamentales. El límite entre debilidad y dificultad de aprendizaje no puede establecerse sin una evaluación completa.' },
+    ],
+    cta: {
+      heading: 'Descubre el perfil real de tu hijo en 1 hora',
+      body: 'Nuestra evaluación adaptativa gratuita mide las fortalezas verbales, numéricas y de razonamiento de niños de 7 a 17 años según normas internacionales comparativas. Sin cuenta necesaria.',
+      label: 'Iniciar evaluación gratuita',
+      href: '/academic-assessment',
+    },
+  },
 ]
 
 export function getSpanishPostBySlug(slug: string) {
