@@ -9472,6 +9472,236 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'cocugun-guclu-ve-zayif-yonleri-7-14-yas': (
+    <>
+      <section className="mb-10">
+        <p className="text-gray-700 leading-relaxed mb-4">
+          &ldquo;Matematiği çözmekte güçlük çekiyor, bu normal mi?&rdquo; &ldquo;Okumayı seviyor ama sayıları hiç tutmuyor.&rdquo; &ldquo;Herkesten önce bitiyor ama yazmaya bir türlü oturmuyor.&rdquo; Bu soruları soran her ebeveyn, aslında aynı şeyi arıyor: çocuğunun nerede gerçekten güçlü, nerede gerçek bir desteğe ihtiyacı var?
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Sorunun zorluğu şurada: 7 ile 14 yaş arasındaki beyin hızla değişir. 8 yaşında &ldquo;zayıf&rdquo; görünen bir beceri, 10 yaşında olgunlaşmış olabilir. Ya da tam tersi — erken ilkokul döneminde hiç sorun yokmuş gibi görünürken orta okula geçişte ciddi bir boşluk ortaya çıkabilir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu rehber, 7–14 yaş aralığındaki dört gelişim dönemini, her dönemde hangi güçlü ve zayıf yönlerin tipik olduğunu, hangilerinin gerçek bir dikkat gerektirdiğini ve ebeveyn olarak nasıl objectif bir profil elde edebileceğinizi açıklıyor.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Güçlü ve zayıf yön nedir gerçekte?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Pek çok ebeveyn &ldquo;güçlü yön&rdquo; ile &ldquo;iyi not&rdquo;u özdeşleştirir. Oysa akademik başarı bir çıktıdır; güçlü yön ise o çıktıyı üretmeye olanak tanıyan altta yatan bilişsel kapasitedir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bilişsel güçlü yönler dört ana başlık altında düşünülebilir:
+        </p>
+        <ul className="mb-4 space-y-2">
+          <li><strong>Sözel akıl yürütme:</strong> Dil anlama, kelime ilişkilendirme, metin yorumlama.</li>
+          <li><strong>Sayısal muhakeme:</strong> Sayı örüntüleri, matematiksel ilişkiler, nicel düşünme.</li>
+          <li><strong>Uzamsal-görsel düşünme:</strong> Şekil döndürme, harita okuma, tasarım.</li>
+          <li><strong>Çalışan bellek ve yürütücü işlev:</strong> Bilgiyi aklında tutarken işleyebilme, planlama, dikkati yönetme.</li>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Zayıf yön ise genellikle iki anlamdan birini taşır: ya kişinin profilinde diğer alanlara göre göreceli olarak daha az güçlü olan bir alan (bu bir sorun değil, her çocukta vardır), ya da yaş normlarının belirgin biçimde altında kalan bir gecikme (bu incelenmesi gereken bir durumdur). İkisini birbirine karıştırmak hem gereksiz kaygıya hem de gerçek desteğin gecikmesine yol açar.
+        </p>
+        <Callout color="indigo">
+          <strong>Temel kural:</strong> Profil içindeki göreceli zayıflık bir sorun değil, bir haritadır. Yaş normlarından belirgin sapma ise dikkat gerektiren bir sinyaldir.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">7–8 yaş: Büyük farklılık, küçük panik</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          İlkokul 2–3. sınıf döneminde çocuklar arasındaki farklılıklar dikkat çekici biçimde büyüktür — ve bu tamamen normaldir. Okuma hızındaki, sayı otomasyonundaki ve yazı organizasyonundaki dağılım bu yaşta en geniş halindedir.
+        </p>
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">Bu dönemde sık görülen güçlü yönler</h3>
+        <ul className="mb-4 space-y-1">
+          <li><strong>Sözel akıcılık:</strong> Hikaye anlatma, kelime çağrışımı, zengin sözlü dil.</li>
+          <li><strong>Görsel-uzamsal düşünme:</strong> Yapboz, inşa oyunları, çizim, lego.</li>
+          <li><strong>Örüntü fark etme:</strong> Sayı dizilerini ve tekrarlayan yapıları hızlı görme.</li>
+          <li><strong>Somut akıl yürütme:</strong> Ellerinde tutabilecekleri, görebilecekleri şeylerle öğrenme.</li>
+        </ul>
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">Bu dönemde gelişimsel olarak normal olan &ldquo;zayıflıklar&rdquo;</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Yazılı ifadeyi organize etmekte güçlük (beyindeki yazı-dil bağlantısı henüz oturtulmuştur).</li>
+          <li>Dikkat süresinin kısalığı (20–30 dakika sürekli odak bu yaşta üst sınırdır).</li>
+          <li>Matematik olgularını ezberlemekte yavaşlık (3. sınıfın sonuna dek normal kabul edilir).</li>
+          <li>Soyut kavramlarla güçlük (&ldquo;daha büyük olan sayı hangisidir&rdquo; anlaşılır ama &ldquo;değişken&rdquo; henüz soyuttur).</li>
+        </ul>
+        <Callout color="amber">
+          <strong>Ne zaman dikkat gerekir?</strong> 3. sınıf sonunda okuma hâlâ söküm düzeyindeyse (hece hece okuma, sıklıkla hata), bu mutlaka incelenmeli. Erken tespit olan disleksi ve okuma güçlükleri çok daha iyi yanıt verir.
+        </Callout>
+        <h3 className="text-lg font-semibold text-gray-800 mt-4 mb-3">Ebeveyn olarak ne yapabilirsiniz?</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Çocuğunuzla yüksek sesle okuyun — anlama üzerine konuşun.</li>
+          <li>Hafıza kartları yerine sayı oyunları (Uno, Dobble, zar oyunları).</li>
+          <li>Kısa odak süreleri ile çalışın, uzun seans zorlamayın.</li>
+          <li>Kardeşi veya sınıf arkadaşıyla kıyaslamamaya özen gösterin.</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">9–10 yaş: Anlama okumayı geçiyor</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Bu dönemde okuma becerisi bir kırılma noktasına ulaşır: artık &ldquo;okumayı öğrenme&rdquo; değil, &ldquo;öğrenmek için okuma&rdquo; evresi başlar. Soyut düşünme kıvılcımları çakılmaya başlar ve özellikle matematik alanında bireysel farklılıklar belirginleşir.
+        </p>
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">Bu dönemde sık görülen güçlü yönler</h3>
+        <ul className="mb-4 space-y-1">
+          <li><strong>Mantıksal muhakeme:</strong> &ldquo;Neden?&rdquo; sorularına sistematik yanıt verme.</li>
+          <li><strong>Sözel tartışma:</strong> Argüman kurma, karşı görüş üretme, ikna.</li>
+          <li><strong>Uzamsal bulmacalar:</strong> Rubik&apos;s küp, satranç, geometri oyunları.</li>
+          <li><strong>Hafıza kapasitesi:</strong> Hikaye detaylarını, tarihleri, bilgileri uzun süre tutma.</li>
+        </ul>
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">Bu dönemde dikkat gerektiren durumlar</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Okuma akıcı olmasına karşın okuduğunu anlamama — bu gelişimsel değil, gerçek bir güçlüktür.</li>
+          <li>Matematik kelime problemlerinde sürekli kaybolma (hesaplama iyi ama problem kuramıyor).</li>
+          <li>Yazı organizasyonunun 4. sınıfta hâlâ bir başlangıç-orta-son yapısı taşımaması.</li>
+        </ul>
+        <Callout color="emerald">
+          <strong>Bu yaşın en büyük fırsatı:</strong> Güçlü bir sözel muhakeme, ortaokuldaki Türkçe, tarih ve sosyal bilimler performansını doğrudan şekillendirir. Güçlü bir sayısal muhakeme ise matematik ve fen başarısının erken habercisidir. İkisi birlikte yüksekse, okul dışı zenginleştirme programları bu dönemde büyük etki yaratır.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">11–12 yaş: Çalışan bellek devreye giriyor</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ortaokul 6–7. sınıf, birçok ebeveyn için sürpriz bir dönemdir. &ldquo;İlkokulda hiç sorun yoktu, birden zorlandı&rdquo; şikayeti tam bu yaşta ortaya çıkar. Bunun nedeni bilişsel bir gerileme değil; ders sayısının artması, her dersin kendi organizasyon talebiyle gelmesi ve soyut düşünme beklentisinin ani yükselişidir.
+        </p>
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">Bu dönemde sık görülen güçlü yönler</h3>
+        <ul className="mb-4 space-y-1">
+          <li><strong>Soyut örüntü tanıma:</strong> Cebir, geometri, mantık problemleri.</li>
+          <li><strong>Sözel akıl yürütme:</strong> Metin analizinde derinleşme, edebiyat tartışmaları.</li>
+          <li><strong>Sistemli düşünme:</strong> Karmaşık konuları hiyerarşik olarak organize etme.</li>
+          <li><strong>Yaratıcı problem çözme:</strong> Standart yolun dışına çıkma kapasitesi.</li>
+        </ul>
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">Bu dönemde sık görülen &ldquo;zayıflıklar&rdquo;</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Zaman yönetimi (çalışan bellek yükü artınca planlama kapasitesi daralır).</li>
+          <li>Uzun ödevlerde parçalara bölme güçlüğü.</li>
+          <li>Birden fazla derste eş zamanlı deadline yönetimi.</li>
+          <li>&ldquo;Dağınıklık&rdquo; ve &ldquo;unutkanlık&rdquo; (çoğunlukla gerçek yürütücü işlev gecikmesidir, tembelllik değil).</li>
+        </ul>
+        <Callout color="amber">
+          <strong>LGS farkındalığı bu dönemde başlar.</strong> 6–7. sınıftan itibaren &ldquo;hangi konularda gerçekten güçlüm&rdquo; sorusuna yanıt aramaya başlamak, 8. sınıf hazırlığını reaktif değil proaktif kılar.
+        </Callout>
+        <h3 className="text-lg font-semibold text-gray-800 mt-4 mb-3">Ebeveyn olarak ne yapabilirsiniz?</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Haftalık görsel plan takvimi (liste değil, görsel).</li>
+          <li>Ödevleri mikro-görevlere bölün: &ldquo;3 paragraf yaz&rdquo; yerine &ldquo;ilk cümleyi yaz&rdquo;.</li>
+          <li>Güçlü alan üzerinden zayıf alana köprü kurun (sözel güçlüyse matematiği hikayeleştirin).</li>
+          <li>Öğretmenden değil, çocuğunuzdan öğrenin: &ldquo;Bu derste kendini nasıl hissediyorsun?&rdquo;</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">13–14 yaş: Profil artık okunabilir</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          8. sınıf ve lise 1. sınıfta bilişsel profil büyük ölçüde istikrar kazanır. Bu, &ldquo;artık değişmez&rdquo; anlamına gelmez; ama &ldquo;artık güvenilir biçimde ölçülebilir&rdquo; anlamına gelir. Alan seçimi kararının verildiği bu dönem, ebeveynler için en kritik noktadır.
+        </p>
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">Bu dönemde sık görülen güçlü yönler</h3>
+        <ul className="mb-4 space-y-1">
+          <li><strong>Soyut akıl yürütme:</strong> Cebir ve geometride genelleme, bilimsel hipotez kurma.</li>
+          <li><strong>Analitik okuma:</strong> Metin içindeki örtük anlam ve varsayımları çözme.</li>
+          <li><strong>Sayısal muhakeme:</strong> Verileri yorumlama, istatistiksel düşünme.</li>
+          <li><strong>Metacognition (ne bildiğini bilme):</strong> Bu yaşta gelişen en değerli beceri.</li>
+        </ul>
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">Bu dönemde dikkat gerektiren durumlar</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Sınav kaygısı — özellikle LGS baskısı altında çalışan belleği felç edebilir.</li>
+          <li>Baskı altında okuma hızının düşmesi.</li>
+          <li>Birden fazla kavramı entegre ederek yeni bir sonuç üretme güçlüğü.</li>
+          <li>Nasıl çalışılacağını bilmeme (strateji eksikliği, bilgi eksikliği değil).</li>
+        </ul>
+        <Callout color="indigo">
+          <strong>Alan seçimi öncesi en önemli adım:</strong> Çocuğunuzun sözel ve sayısal muhakeme profilini somut biçimde görmek. &ldquo;Matematiği seviyor&rdquo; veya &ldquo;Türkçe'si güçlü&rdquo; gibi gözlem temelli izlenimler alan seçimini karşılayabilecek kadar güvenilir değildir; uluslararası normlara göre ölçülmüş bir profil çok daha sağlam bir karar zemini sağlar.
+        </Callout>
+      </section>
+
+      <CtaLink href="/tr/akademik-degerlendirme" label="strengths_tr_mid_cta">
+        Çocuğunuzun akademik profilini görün → ücretsiz değerlendirme
+      </CtaLink>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Güçlü ve zayıf yönleri tespit etmenin 4 yolu</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Ebeveynler genellikle çocuklarının güçlü ve zayıf yönlerini üç kaynaktan öğrenir: karne notları, öğretmen yorumları ve çocukla sohbet. Bunların her biri değerlidir — ama yeterli değildir.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">1. Adaptif bilişsel değerlendirme</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          En güvenilir yöntem. Çocuğun düzeyine göre otomatik olarak ayarlanan, sözel, sayısal ve uzamsal becerileri ayrı ayrı ölçen ve sonuçları yaş normlarıyla karşılaştıran bir test, profil içindeki güçlü ve zayıf alanları objektif biçimde ortaya koyar. Okul notlarından farklı olarak müfredattan bağımsızdır; öğrenilmiş içeriği değil, bilişsel kapasiteyi ölçer.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">2. Gözlem: Çocuk ne zaman en enerjik?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Zorlamadan, içten gelerek ne yapıyor? Uzun süre odaklandığı, zaman geçtiğini unuttuğu, kendi kendine daha zor hale getirdiği aktiviteler güçlü yönlere işaret eder. Bu gözlemi sistematik biçimde not alın: hangi dersler, hangi oyunlar, hangi sorular?
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">3. Çocuğun kendi görüşü</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          &ldquo;Hangi dersi en çok seviyorsun?&rdquo; yerine &ldquo;Hangi derste ne yapman gerektiğini en çok anlıyorsun?&rdquo; sorusu daha açıklayıcıdır. Özellikle 11 yaşından sonra çocuklar kendi öğrenme profillerini şaşırtıcı biçimde iyi tanımlayabilir. Metacognition bu yaşta gelişmektedir — sormak onu güçlendirir.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">4. Öğretmen geri bildirimi (doğru sorularla)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          &ldquo;Nasıl gidiyor?&rdquo; yerine &ldquo;Sözel anlatımda ve yazılı ifadede farkında olduğunuz bir güç ya da güçlük var mı?&rdquo; gibi spesifik sorular çok daha işlevsel yanıtlar getirir. Öğretmenler genellikle performans aralığını ve sınıf normunu bilir; bunu sormak hem bilgi almanızı hem de destek talebinizi netleştirir.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Zayıf yönler tehlike işareti mi?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çoğu zaman değil. Profil içindeki göreceli zayıflık, her çocukta bulunur ve çoğunlukla güçlü alanlara yönelimin doğal bir sonucudur. Sözel muhakemesi çok güçlü bir çocuğun sayısal muhakemesi ortalamada kalabilir — bu onu matematikte zorlamak için değil, güçlü yönü üzerine inşa etmek için bir haritadır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Dikkat gerektiren durumlar şunlardır:
+        </p>
+        <ul className="mb-4 space-y-2">
+          <li><strong>Yaşa göre belirgin gecikme:</strong> 10 yaşında hâlâ söküm düzeyinde okuma, 12 yaşında iki basamaklı toplama hatası, 14 yaşında basit metin anlamama — bunlar incelenmeli.</li>
+          <li><strong>Günlük yaşamı etkileyen yürütücü işlev güçlüğü:</strong> Sıradan organizasyon görevlerinde kalıcı başarısızlık (sürekli kaybolan eşyalar, hiç tamamlanmayan ödevler, aşırı geç uyuma) bir nörogelişimsel değerlendirmeyi hak edebilir.</li>
+          <li><strong>Okul reddine dönüşen kaygı:</strong> Hafif sınav kaygısı normaldir; okuldan kaçınmaya dönüşen kaygı değildir.</li>
+        </ul>
+        <Callout color="rose">
+          <strong>Önemli:</strong> Zayıf yön ile öğrenme güçlüğü arasındaki sınır, kapsamlı bir değerlendirme olmadan belirlenemez. &ldquo;Sadece tembel&rdquo; ya da &ldquo;sadece dikkat dağınıklığı&rdquo; açıklamaları çoğu zaman gerçek bir nörogelişimsel tabloyu maskeler. Şüphe varsa erken müdahale her zaman beklemeyi geçer.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ebeveyn olarak 5 somut adım</h2>
+        <ul className="mb-4 space-y-3">
+          <li>
+            <strong>1. Bir temel oluşturun.</strong> Adaptif bir değerlendirme veya sistematik gözlem aracılığıyla mevcut profili belgeleyin. &ldquo;Nasıl gidiyor?&rdquo; yerine &ldquo;Nerede duruyoruz?&rdquo; sorusunu sorun.
+          </li>
+          <li>
+            <strong>2. Güçlü alandan başlayın.</strong> Zayıf alanı güçlendirmek için önce güçlü alanı tanıyın ve kutlayın. Kimlik ve özgüven bu zeminden büyür.
+          </li>
+          <li>
+            <strong>3. Zayıf alana aynı yöntemle yaklaşmayın.</strong> Daha fazla alıştırma çoğunlukla işe yaramaz. Farklı bir sunum biçimi (görsel, hareket, hikaye) veya bağlantı noktası (güçlü alandan köprü) daha etkilidir.
+          </li>
+          <li>
+            <strong>4. Kardeş ve sınıf arkadaşı kıyaslamasından kaçının.</strong> Karşılaştırma motivasyonu değil, kaygıyı besler. Referans noktanız çocuğunuzun dünkü hali olsun.
+          </li>
+          <li>
+            <strong>5. Altı ayda bir yeniden değerlendirin.</strong> Profil değişir. 7 yaşındaki tablo 10 yaşında geçerli olmayabilir. Düzenli profil takibi hem gelişimi görünür kılar hem de erken müdahale fırsatı yaratır.
+          </li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Sonuç: Profil bir kader değil, bir harita</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Çocuğunuzun güçlü ve zayıf yönlerini bilmek, onu bir kalıba sokmak için değil — ona doğru desteği zamanında vermek, güçlü yanlarını görünür kılmak ve geleceğe dair kararları (okul seçimi, alan tercihi, destek programı) sezgiyle değil somut bir temelle almak içindir.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          7 ile 14 yaş arasındaki pencere hem bilişsel esnekliğin en yüksek olduğu, hem de kimlik ve özgüvenin şekillendiği dönemdir. Bu dönemde doğru bilgi sahibi olan ebeveyn, çocuğuna en değerli katkıyı yapıyor demektir.
+        </p>
+        <Callout color="emerald">
+          <strong>Pratik öneri:</strong> Çocuğunuzun yaşına uygun adaptif bir değerlendirme, sözel, sayısal ve akıl yürütme becerilerini ayrı ayrı ve uluslararası normlara göre ölçer. Profili görmek için hesap açmak gerekmez; yaklaşık 1 saat içinde tamamlanır.
+        </Callout>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {

@@ -2848,6 +2848,45 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: '/tr/kisilik-degerlendirmesi',
     },
   },
+  {
+    slug: 'cocugun-guclu-ve-zayif-yonleri-7-14-yas',
+    title: 'Çocuğun Güçlü ve Zayıf Yönleri Nelerdir? 7–14 Yaş İçin Gelişim Rehberi',
+    shortTitle: 'Çocuğun Güçlü ve Zayıf Yönleri: 7–14 Yaş Rehberi',
+    description: 'Çocuğunuzun güçlü ve zayıf yönleri yaşa göre nasıl belirlenir? 7–14 yaş aralığında hangi bilişsel beceriler ne zaman gelişir, hangi "zayıflıklar" aslında normaldir ve ebeveyn olarak ne yapabilirsiniz?',
+    tldr: '7–14 yaş arasındaki her çocuğun benzersiz bir güçlü-zayıf yön profili vardır; okul notu bu profili göstermez. Sözel akıl yürütme, sayısal düşünme, çalışan bellek ve uzamsal beceri yaşa göre farklı hızlarda gelişir — 8 yaşında "zayıf" görünen bazı beceriler 10 yaşında olgunlaşır, bazıları gerçek bir destek gerektirir. Bu rehber 7–14 yaş arasındaki gelişim dönemlerini, hangi güçlü/zayıf yönlerin tipik olduğunu ve ebeveynlerin nasıl objectif bir profil elde edebileceğini açıklar.',
+    date: '2026-11-22',
+    dateModified: '2026-11-22',
+    readTime: '10 dk okuma',
+    tags: ['Çocuk Gelişimi', 'Güçlü Yönler', 'Zayıf Yönler', 'Akademik Değerlendirme', 'Ebeveyn Rehberi', 'Bilişsel Profil'],
+    faqs: [
+      {
+        q: '8 yaşındaki bir çocuğun güçlü yönleri nelerdir?',
+        a: '8 yaşında bilişsel güçlü yönler çocuktan çocuğa büyük farklılık gösterir. Tipik güçlü alanlar şöyle sıralanabilir: sözel akıcılık (hikaye anlatma, kelime hazinesi), görsel-uzamsal düşünme (yapboz, blok oyunları, çizim), sayı örüntülerini fark etme ve ezberden çok anlayarak öğrenme. Bu yaşta dikkat süresi ve yazılı ifade henüz gelişmekteyken sözel muhakeme oldukça güçlü olabilir. Güçlü yönleri görünür kılmanın en sağlıklı yolu, farklı beceri alanlarını ölçen adaptif bir değerlendirmedir.',
+      },
+      {
+        q: 'Bir çocuğun zayıf yönleri nelerdir ve bunlar önemli midir?',
+        a: 'Çocuklarda "zayıf yön" iki farklı anlama gelebilir: birincisi, kişinin doğal profilinin daha az güçlü olduğu alan; ikincisi, gelişimde beklenmedik bir gecikme. İkisini ayırt etmek kritiktir. Örneğin 7–8 yaşta yavaş okuma, gelişimsel olarak normaldir; ancak 10 yaşında hâlâ söküm güçlüğü varsa incelenmesi gerekir. Profil içindeki göreceli zayıflıklar (örneğin sözel puanı yüksek ama sayısal puanı orta olan bir çocuk) genellikle bir sorun değil, güçler üzerine inşa edilecek bir haritadır.',
+      },
+      {
+        q: 'Çocuğun güçlü ve zayıf yönleri nasıl tespit edilir?',
+        a: 'En güvenilir yöntem adaptif bilişsel değerlendirmedir: çocuğun düzeyine göre ayarlanan, sözel, sayısal, uzamsal ve akıl yürütme becerilerini ayrı ayrı ölçen ve sonuçları yaş normlarıyla karşılaştıran bir test. Bunun yanı sıra ebeveyn gözlemi (çocuk ne zaman en enerjik ve odaklı?), öğretmen geri bildirimi ve çocuğun kendi görüşü tamamlayıcı bilgi sağlar. Okul notu tek başına yeterli değildir çünkü müfredat uyumunu ölçer, bilişsel profili göstermez.',
+      },
+      {
+        q: '11–12 yaş çocuğun zayıf yönleri nasıl desteklenir?',
+        a: '11–12 yaşta çalışan bellek yükü ve yürütücü işlev talepleri ciddi biçimde artar. Bu yaşta sık görülen "zayıflıklar" — dağınıklık, planlamada güçlük, uzun ödevleri tamamlayamama — genellikle düşük zeka değil, gelişmekte olan yürütücü işlev sisteminin aşırı yüklenmesidir. Destek stratejileri: görevleri küçük parçalara bölmek, görsel planlama araçları, güçlü olduğu alan üzerinden zayıf alana köprü kurmak (örneğin sözel güçlü bir çocuğa matematiği hikayeleştirerek anlatmak). Kapsamlı bir bilişsel profil, hangi destekten en çok yararlanacağını netleştirir.',
+      },
+      {
+        q: 'Çocuğun zayıf yönleri ne zaman uzman desteği gerektirir?',
+        a: 'Şu durumlarda bir eğitim psikoloğu veya öğrenme uzmanına başvurmak gerekir: yaşıtlarına kıyasla okuma hızı veya okuduğunu anlama belirgin biçimde düşükse (3. sınıftan sonra hâlâ söküm güçlüğü), günlük yaşamı etkileyen dikkat ve organizasyon sorunları varsa, akademik kaygı okulu redde dönüşmüşse ya da yaşa uygun temel becerilerde (toplama/çıkarma, basit metin anlama) belirgin gecikme görülüyorsa. Zayıf yön ile öğrenme güçlüğü arasındaki sınır, kapsamlı bir değerlendirme olmadan belirlenemez.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun gerçek profilini 1 saatte görün',
+      body: 'Adaptif akademik değerlendirmemiz 7–17 yaş çocukların sözel, sayısal ve akıl yürütme güçlerini uluslararası kıyaslamalı yüzdelik dilimlerle raporlar. Güçlü ve zayıf yönleri somut biçimde görmek için hesap açmak gerekmez.',
+      label: 'Ücretsiz değerlendirmeyi başlat',
+      href: '/tr/akademik-degerlendirme',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {
