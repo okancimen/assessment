@@ -2809,6 +2809,45 @@ export const BLOG_POSTS_TR: BlogPostMeta[] = [
       href: 'https://eduentry.ai/tr',
     },
   },
+  {
+    slug: 'ib-diploma-nedir-turkiye-universite-avantaji',
+    title: 'IB Diploma Nedir? Türkiye\'de IB Okulları, MYP vs DP ve Üniversite Avantajı',
+    shortTitle: 'IB Diploma Rehberi: Türkiye\'de IB Okulları ve Üniversite Avantajı',
+    description: 'IB Diploma programı nedir, MYP\'den farkı ne, Türkiye\'de hangi okullar IB veriyor? Oxford, ABD ve Hollanda üniversitelerine başvuruda IB avantajı, A-Level ile karşılaştırma, maliyetler ve çocuğunuzun IB\'ye hazır olup olmadığını nasıl anlarsınız.',
+    tldr: 'IB Diploma Programı (DP), 16–19 yaş için iki yıllık, 6 ders + Genişletilmiş Deneme + Bilgi Teorisi + CAS\'tan oluşan uluslararası bir müfredattır. Türkiye\'den Oxford, Cambridge, ABD Ivy League ve Hollanda üniversitelerine en doğrudan yolu açar. Türkiye\'de Robert Kolej, Hisar School, Enka Schools, TED Ankara Koleji ve Bilkent Lab School dahil 20\'den fazla IB okulu bulunur. MEB diplomasından temel farkı: ezber değil eleştirel düşünce, ulusal sınav değil uluslararası tanınma. Bu rehber PYP/MYP/DP farkını, MEB ve A-Level\'larla karşılaştırmayı, üniversite avantajlarını, Türkiye\'deki okul listesini ve çocuğunuzun hazır olup olmadığını nasıl anlayacağınızı kapsar.',
+    date: '2026-11-22',
+    dateModified: '2026-11-22',
+    readTime: '12 dk okuma',
+    tags: ['IB Diploma', 'Uluslararası Bakalorya', 'Yurt Dışı Eğitim', 'Üniversite Kabulü', 'Ebeveyn Rehberi', 'Türkiye Eğitim', 'Üniversite Başvurusu', 'Oxford'],
+    faqs: [
+      {
+        q: 'IB Diploma ile hangi üniversitelere başvurabilirsiniz?',
+        a: 'IB Diploma dünyanın 90\'dan fazla ülkesindeki 2.000\'den fazla üniversite tarafından tanınır. Oxford, Cambridge ve diğer Russell Group üniversiteleri; ABD\'deki Ivy League ve elit üniversiteler; Hollanda, Almanya, Kanada ve Avustralya üniversitelerinin tamamı IB\'yi kabul eder. Birçok üniversite yüksek puanlı HL dersler (5–7) için birinci yıl ders kredisi de verebilir. Türkiye\'den ise Boğaziçi, ODTÜ ve Bilkent bazı programlarında IB öğrencilerini özel yoldan değerlendirir.',
+      },
+      {
+        q: 'IB Diploma programı kaç yıl sürer ve ne zaman başlanır?',
+        a: 'IB Diploma Programı (DP) iki yıl sürer ve genellikle 11. sınıfta (16 yaşında) başlar. Öncesinde gönüllü olarak IB Orta Yıllar Programı (MYP) 11–16 yaşları arasında alınabilir; bu program DP\'ye hazırlık açısından güçlü bir altyapı sunar ancak zorunlu değildir. Bazı okullar MYP olmadan doğrudan DP\'ye başlamaya izin verir.',
+      },
+      {
+        q: 'IB Diploma ile A-Level arasındaki temel fark nedir?',
+        a: 'A-Level, 3–4 konuda derinlemesine uzmanlaşmayı sağlar ve özellikle İngiltere üniversiteleri için güçlü bir tercih aracıdır. IB Diploma ise 6 konu grubunu kapsayan daha geniş bir müfredata sahiptir ve bunlara ek olarak Genişletilmiş Deneme, Bilgi Teorisi ve CAS ekler. ABD ve Hollanda üniversiteleri IB\'yi A-Level\'dan daha iyi tanır; Oxbridge ikisini de kabul eder ancak bazı dersler için A-Level tercihli olabilir. Türkiye\'de A-Level sunan okul sayısı çok sınırlıdır; IB\'yi sunan 20\'den fazla akredite okul mevcuttur.',
+      },
+      {
+        q: 'IB Diploma ne kadar zor? Çocuğum altından kalkabilir mi?',
+        a: 'IB Diploma dünyanın en zorlu lise programlarından biri olarak kabul edilir. Haftalık ortalama ders dışı çalışma süresi 20–25 saat civarındadır. Genişletilmiş Deneme ayrı bir araştırma projesi olarak büyük öz disiplin gerektirir. Ancak sağlam matematik ve sözel akıl yürütme becerilerine sahip, öğrenmeye gerçekten meraklı ve öz yönetimi güçlü çocuklar için IB son derece tatmin edici bir deneyimdir. Temel atlanmadan "üniversite için" seçilmesi öğrenciyi bunaltabilir.',
+      },
+      {
+        q: 'Türkiye\'deki IB okulları paralı mı? Burs imkânı var mı?',
+        a: 'Türkiye\'deki IB okullarının büyük çoğunluğu özel okuldur ve yıllık ücretler okula göre önemli ölçüde farklılık gösterir. Robert Kolej giriş sınavı ile öğrenci kabul eder ve başarılı öğrencilere kapsamlı burs sağlar; benzer programlar diğer kurumlarda da mevcuttur. Bazı okullar ihtiyaç temelli destek sunar. Başvurmadan önce ilgilendiğiniz okulun mali yardım programını doğrudan sorun.',
+      },
+    ],
+    cta: {
+      heading: 'Çocuğunuzun IB için doğru karakter güçlerine sahip olup olmadığını keşfedin',
+      body: 'IB, akademik başarının yanı sıra merak, öz disiplin, azim ve sosyal sorumluluk gibi karakter güçlerini gerektirir. Ücretsiz kişilik değerlendirmemiz çocuğunuzun 24 karakter gücünü yaklaşık 5 dakikada belirler. Hesap gerekmez.',
+      label: 'Ücretsiz kişilik değerlendirmesini başlat',
+      href: '/tr/kisilik-degerlendirmesi',
+    },
+  },
 ]
 
 export function getTurkishPostBySlug(slug: string) {

@@ -9178,6 +9178,300 @@ export const TR_CONTENT: Record<string, React.ReactNode> = {
     </>
   ),
 
+  'ib-diploma-nedir-turkiye-universite-avantaji': (
+    <>
+      <p className="text-lg text-gray-600 leading-relaxed">
+        &ldquo;Çocuğumu IB okuluna mı göndereyim?&rdquo; sorusu, birkaç yıl önce yalnızca İstanbul&apos;un belirli mahallelerinde gündeme gelirken bugün Türkiye&apos;nin dört bir yanından ebeveynlerin gündemine girmiş durumda. Sebep açık: MEB diploması Türk üniversite sınavına hazırlar, IB Diploma ise Oxford&apos;dan Hollanda&apos;ya, ABD&apos;den Kanada&apos;ya doğrudan kapı açar. Ancak &ldquo;IB iyi&rdquo; demek kolay; hangi IB programının ne anlama geldiğini, A-Level veya Türk müfredatına kıyasla neyi kazandırıp neyi kaybettirdiğini anlamak çok daha değerlidir.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Bu rehber tam olarak o soruları yanıtlar: IB ailesi nasıl işler, Türkiye&apos;de hangi okullar IB veriyor, üniversitelere başvuruda gerçek avantaj nedir ve en önemlisi — çocuğunuz IB için doğru kişi mi?
+      </p>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">IB Nedir? Uluslararası Bakalorya&apos;ya Genel Bakış</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Uluslararası Bakalorya (International Baccalaureate — IB), 1968 yılında Cenevre&apos;de kurulan, kâr amacı gütmeyen bir eğitim kuruluşudur. Bugün 160&apos;tan fazla ülkede 5.800&apos;den fazla okulda uygulanmaktadır. IB&apos;nin amacı yalnızca üniversiteye hazırlamak değil; &ldquo;eleştirel düşünen, bilgili ve ilkeli genç insanlar yetiştirmek&rdquo; olarak tanımlanmıştır.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          IB bir okul değil, bir müfredat çerçevesidir. Bir okul IB akreditasyonu almak için IBO&apos;nun (International Baccalaureate Organization) belirlediği katı standartları karşılaması ve düzenli denetimden geçmesi gerekir. Bu nedenle &ldquo;IB okulu&rdquo; etiketini taşıyan her okul gerçekten bu standartları karşılıyor demektir — sıradan bir özel okulun satabileceği bir marka değildir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">PYP, MYP ve DP: IB Programları Nasıl İşler?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          IB tek bir program değil, birbiriyle bağlantılı üç programdan oluşan bir ailedir. Çocuğun yaşına göre hangi programa girebileceği belirlidir.
+        </p>
+
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="text-left p-3 border border-gray-200 font-semibold">Program</th>
+                <th className="text-left p-3 border border-gray-200 font-semibold">Yaş aralığı</th>
+                <th className="text-left p-3 border border-gray-200 font-semibold">Türkiye&apos;deki karşılığı</th>
+                <th className="text-left p-3 border border-gray-200 font-semibold">Neden önemli?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="p-3 border border-gray-200 font-medium">PYP — İlk Yıllar</td>
+                <td className="p-3 border border-gray-200">3–12 yaş</td>
+                <td className="p-3 border border-gray-200">İlkokul dönemi</td>
+                <td className="p-3 border border-gray-200">Merak ve araştırma temelli öğrenme alışkanlığı kazandırır</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="p-3 border border-gray-200 font-medium">MYP — Orta Yıllar</td>
+                <td className="p-3 border border-gray-200">11–16 yaş</td>
+                <td className="p-3 border border-gray-200">Ortaokul + lise 9–10. sınıf</td>
+                <td className="p-3 border border-gray-200">DP&apos;ye hazırlık; zorunlu değil, güçlü avantaj</td>
+              </tr>
+              <tr>
+                <td className="p-3 border border-gray-200 font-medium text-indigo-700">DP — Diploma Programı</td>
+                <td className="p-3 border border-gray-200 font-medium text-indigo-700">16–19 yaş</td>
+                <td className="p-3 border border-gray-200 text-indigo-700">Lise 11–12. sınıf</td>
+                <td className="p-3 border border-gray-200 font-medium">Uluslararası üniversite başvurusunda kullanılan asıl belge budur</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye&apos;deki çoğu ailenin kastettiği şey <strong>IB Diploma Programı (DP)</strong>&apos;dır. PYP veya MYP, DP&apos;ye hazırlık açısından güçlü bir altyapı sunar ama asıl üniversite başvurusunda işe yarayan belge DP diplomasıdır. Bazı IB okulları üç programın tamamını sunarken bazıları yalnızca DP&apos;yi sunar — başvuru yaparken bunu netleştirin.
+        </p>
+
+        <p className="text-gray-700 leading-relaxed mb-3">
+          DP&apos;de öğrenci 6 ders grubundan birer ders seçer: Dil ve Edebiyat, Dil Edinimi, Bireyler ve Toplumlar, Fen Bilimleri, Matematik ve Sanatlar. Derslerin üçü Yüksek Düzey (HL), üçü Standart Düzey (SL) olarak alınır. Buna ek olarak üç zorunlu unsur vardır:
+        </p>
+
+        <ul className="space-y-3 mb-4">
+          <Bullet><strong>Genişletilmiş Deneme (EE):</strong> 4.000 kelimelik bağımsız araştırma makalesi. Üniversite tez yazımının bir provası; öğrenciye yönlendirilmemiş araştırma yapma deneyimi kazandırır.</Bullet>
+          <Bullet><strong>Bilgi Teorisi (TOK):</strong> &ldquo;Neyi nasıl biliyoruz?&rdquo; sorusunu sorgulayan felsefe temelli ders. Eleştirel düşüncenin omurgasıdır; üniversite görüşmelerinde sıklıkla öne çıkar.</Bullet>
+          <Bullet><strong>CAS — Yaratıcılık, Aktivite, Hizmet:</strong> Sanat, spor ve toplumsal sorumluluk projelerini kapsayan deneyimsel öğrenme. Üniversite başvuru dosyasında &ldquo;bütünsel öğrenci&rdquo; profilini somutlaştırır.</Bullet>
+        </ul>
+
+        <p className="text-gray-700 leading-relaxed">
+          Maksimum puan 45&apos;tir: 6 dersten en fazla 42 puan, TOK ve EE kombinasyonundan en fazla 3 ek puan. 24 puan diploma eşiğidir; 38–40 puan dünya genelinde üst üniversiteler için rekabetçi bir seviyedir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">IB Diploma vs Türk MEB Müfredatı: 5 Kritik Fark</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Türk ebeveynlerin en sık sorduğu soru şudur: &ldquo;MEB okulu yeterli değil mi?&rdquo; Her iki sistemin de güçlü ve zayıf yanları vardır; ancak hedef yurt dışı üniversiteyse fark belirleyicidir.
+        </p>
+
+        <div className="space-y-4 mb-6">
+          <div className="border border-gray-200 rounded-xl p-4">
+            <p className="font-semibold text-gray-900 mb-1">1. Uluslararası tanınırlık</p>
+            <p className="text-gray-600 text-sm leading-relaxed">MEB diploması Türk üniversitelerine başvuruda YKS puanıyla değerlendirilir; yurt dışı başvurularda ek belgeler, tercüme ve denklik süreçleri gerekir. IB Diploması 160+ ülkede doğrudan tanınan bir standarttır — ek denklik süreci yoktur, her üniversite ne aldığını tam olarak bilir.</p>
+          </div>
+          <div className="border border-gray-200 rounded-xl p-4">
+            <p className="font-semibold text-gray-900 mb-1">2. Öğrenme yaklaşımı</p>
+            <p className="text-gray-600 text-sm leading-relaxed">MEB müfredatı bilgi aktarımına ve sınav formatına odaklanır. IB, bilgiyi sorgulamayı, kaynakları değerlendirmeyi ve bağımsız araştırma yapmayı zorunlu kılar. Genişletilmiş Deneme bu farkın en somut göstergesidir; öğrenci 4.000 kelimelik bir araştırma makalesi yazarak bitirir.</p>
+          </div>
+          <div className="border border-gray-200 rounded-xl p-4">
+            <p className="font-semibold text-gray-900 mb-1">3. Derinlik vs genişlik</p>
+            <p className="text-gray-600 text-sm leading-relaxed">MEB daha fazla ders ve daha geniş kapsam sunar. IB 6 konuya odaklanır; HL dersleri derinlemesine işlenir. Bu, üniversitenin ilk yılında hem daha hazırlıklı olmayı hem de bazı okullarda kredi alarak ileri derslerden başlamayı sağlar.</p>
+          </div>
+          <div className="border border-gray-200 rounded-xl p-4">
+            <p className="font-semibold text-gray-900 mb-1">4. İkinci dil zorunluluğu</p>
+            <p className="text-gray-600 text-sm leading-relaxed">IB, Dil Edinimi grubu kapsamında İngilizcenin yanı sıra ikinci bir yabancı dil veya ana dilde çalışmayı gerektirir. Bu, uluslararası ortamlarda doğal olarak çok dilli bir profil oluşturur ve başvuru dosyasında belgelenmiş bir avantaj sağlar.</p>
+          </div>
+          <div className="border border-gray-200 rounded-xl p-4">
+            <p className="font-semibold text-gray-900 mb-1">5. Toplumsal katılım (CAS)</p>
+            <p className="text-gray-600 text-sm leading-relaxed">MEB&apos;de zorunlu sosyal sorumluluk veya sanat etkinliği yoktur. IB&apos;nin CAS zorunluluğu, üniversite başvuru dosyalarında giderek daha fazla aranan &ldquo;bütünsel öğrenci&rdquo; profilini somut biçimde ve belgelenmiş olarak ortaya koyar.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">IB Diploma vs A-Level: Hangisi Daha Stratejik?</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Yurt dışında lise okumak veya İngiltere&apos;yi hedeflemek isteyenler için bu karşılaştırma kritiktir. İkisi çok farklı felsefeler üzerine kuruludur.
+        </p>
+
+        <div className="overflow-x-auto mb-5">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="text-left p-3 border border-gray-200 font-semibold">Kriter</th>
+                <th className="text-left p-3 border border-gray-200 font-semibold text-indigo-700">IB Diploma</th>
+                <th className="text-left p-3 border border-gray-200 font-semibold">A-Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="p-3 border border-gray-200">Kapsam</td>
+                <td className="p-3 border border-gray-200">6 konu (geniş, dengeli)</td>
+                <td className="p-3 border border-gray-200">3–4 konu (dar, derin)</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="p-3 border border-gray-200">İngiltere üniversiteleri</td>
+                <td className="p-3 border border-gray-200">Tanınır, güçlü</td>
+                <td className="p-3 border border-gray-200">Tercih edilen standart</td>
+              </tr>
+              <tr>
+                <td className="p-3 border border-gray-200">ABD üniversiteleri</td>
+                <td className="p-3 border border-gray-200 font-medium text-indigo-700">Çok güçlü, tercih edilen</td>
+                <td className="p-3 border border-gray-200">Tanınır ama daha az yaygın</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="p-3 border border-gray-200">Hollanda / Avrupa</td>
+                <td className="p-3 border border-gray-200 font-medium text-indigo-700">Direkt kabul, ideal</td>
+                <td className="p-3 border border-gray-200">Bazı okullarda ek belge</td>
+              </tr>
+              <tr>
+                <td className="p-3 border border-gray-200">Araştırma & yazma zorunluluğu</td>
+                <td className="p-3 border border-gray-200 font-medium">Var (EE + TOK)</td>
+                <td className="p-3 border border-gray-200">Yok</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="p-3 border border-gray-200">Türkiye&apos;deki okul sayısı</td>
+                <td className="p-3 border border-gray-200 font-medium text-indigo-700">20+ akredite okul</td>
+                <td className="p-3 border border-gray-200">Yok denecek kadar az</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <Callout color="amber">
+          <strong>Pratik gerçek:</strong> A-Level&apos;ı Türkiye&apos;de bulmak neredeyse imkânsızdır. İngiltere&apos;de bir boarding school veya sixth form college&apos;a gitmeden A-Level yapmak mümkün değildir. Hedef birden fazla ülkedeyse veya yurt içinde kalarak hazırlık yapmak istiyorsanız IB açık ara daha erişilebilir ve stratejik bir seçimdir.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">IB&apos;nin Üniversite Avantajı: Oxford&apos;dan Hollanda&apos;ya</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          IB Diploması 160&apos;tan fazla ülkedeki 2.000&apos;den fazla üniversite tarafından tanınır. Ancak &ldquo;tanınma&rdquo; tek başına pek bir şey ifade etmez. Önemli olan <em>nasıl</em> tanındığıdır.
+        </p>
+
+        <div className="space-y-5 mb-6">
+          <div>
+            <p className="font-semibold text-gray-900 mb-1">Oxford ve Cambridge</p>
+            <p className="text-gray-700 text-sm leading-relaxed">Oxbridge&apos;in çoğu programı IB için 38–45 puan ve belirli HL derslerde 6–7 puan şartı koyar. Oxford Tıp için tipik şart 39 puan; Chemistry, Biology veya Physics&apos;ten HL 7. Bu rakamlar A-Level AAA* şartıyla yakın bir eşdeğerlikte değerlendirilir. Pek çok Oxbridge aday görüşmesinde IB&apos;nin EE ve TOK deneyimi olumlu karşılanır çünkü üniversite öncesi araştırma düşüncesinin somut kanıtıdır.</p>
+          </div>
+          <div>
+            <p className="font-semibold text-gray-900 mb-1">Russell Group ve İngiltere</p>
+            <p className="text-gray-700 text-sm leading-relaxed">UCL, Imperial, LSE, Edinburgh gibi okullar IB için genellikle 35–38 puan ister. Yüksek HL puanları (6–7) bazı programlarda birinci yıl muafiyeti sağlayabilir; bu hem zamandan hem öğrencinin bant genişliğinden kazanç demektir.</p>
+          </div>
+          <div>
+            <p className="font-semibold text-gray-900 mb-1">ABD Üniversiteleri</p>
+            <p className="text-gray-700 text-sm leading-relaxed">Harvard, MIT, Yale gibi elit okullarda IB, özellikle HL derslerindeki yüksek puanlarla güçlü bir dosya oluşturur. ABD üniversiteleri IB&apos;nin &ldquo;bütünsel&rdquo; yapısını — CAS, EE, TOK — değerli bulur çünkü bu unsurlar sınav notunun ötesinde karakter ve merakı belgeler. HL&apos;de 5–7 puan alanlar bazı okullarda AP (Advanced Placement) eşdeğeri kredi alabilir.</p>
+          </div>
+          <div>
+            <p className="font-semibold text-gray-900 mb-1">Hollanda Üniversiteleri</p>
+            <p className="text-gray-700 text-sm leading-relaxed">Delft, Amsterdam, Leiden, Groningen gibi üniversiteler IB Diplomasını doğrudan kabul eder. Hollanda, İngilizce öğretim programlarının bolluğu ve İngiltere&apos;ye kıyasla uygun ücretleriyle Türk aileler arasında giderek popülerleşmektedir. IB bu hedef için neredeyse ideal bir yeterlilik belgesidir — özellikle Matematik AA veya AI HL ve fen dersleri güçlüyse.</p>
+          </div>
+          <div>
+            <p className="font-semibold text-gray-900 mb-1">Türkiye&apos;deki Seçici Üniversiteler</p>
+            <p className="text-gray-700 text-sm leading-relaxed">Boğaziçi Üniversitesi, ODTÜ ve Bilkent bazı programlarında IB öğrencilerini özel yoldan değerlendirir. Yurt dışında okuyup ileride Türkiye&apos;ye dönmeyi planlayan aileler için bu önemli bir güvencedir.</p>
+          </div>
+        </div>
+      </section>
+
+      <div className="my-8 bg-indigo-50 rounded-xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <p className="font-semibold text-gray-900">Çocuğunuz IB için akademik olarak nerede duruyor?</p>
+          <p className="text-sm text-gray-600 mt-1">IB Diploma, matematik, sözel akıl yürütme ve fen bilimlerinde güçlü bir temel gerektirir. Ücretsiz değerlendirmemiz çocuğunuzun uluslararası kıyaslamalı yüzdelik dilimini yaklaşık 1 saatte belirler. Hesap gerekmez.</p>
+        </div>
+        <CtaLink href="/tr/akademik-degerlendirme" label="ib_diploma_tr_mid_cta" className="shrink-0 bg-indigo-600 text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-indigo-700 transition-colors whitespace-nowrap text-center">
+          Ücretsiz değerlendirmeyi başlat →
+        </CtaLink>
+      </div>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Türkiye&apos;de IB Okulları: Kimler Kabul Ediyor?</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          Türkiye&apos;de IBO tarafından akredite edilmiş 20&apos;den fazla okul bulunmaktadır. Aşağıda en tanınmış olanlar yer almaktadır.
+        </p>
+
+        <div className="space-y-3 mb-6">
+          <div className="border-l-4 border-indigo-200 pl-4 py-1">
+            <p className="font-semibold text-gray-900">Robert Kolej — İstanbul</p>
+            <p className="text-sm text-gray-600 mt-0.5">Türkiye&apos;nin en seçici liselerinden biri; MYP ve DP sunar. Giriş sınavla olur, güçlü burs programı vardır. Mezunlarının büyük çoğunluğu uluslararası üniversitelere yerleşir.</p>
+          </div>
+          <div className="border-l-4 border-indigo-200 pl-4 py-1">
+            <p className="font-semibold text-gray-900">Hisar School — İstanbul</p>
+            <p className="text-sm text-gray-600 mt-0.5">PYP, MYP ve DP&apos;nin tamamını sunan tam IB okulu. İngilizce ağırlıklı eğitim, kapsamlı uluslararası üniversite yönlendirmesi.</p>
+          </div>
+          <div className="border-l-4 border-indigo-200 pl-4 py-1">
+            <p className="font-semibold text-gray-900">Enka Schools — İstanbul</p>
+            <p className="text-sm text-gray-600 mt-0.5">İlkokuldan liseye tam IB müfredatı. Yabancı uyruklu aile çocukları da dahil geniş uluslararası öğrenci profili.</p>
+          </div>
+          <div className="border-l-4 border-indigo-200 pl-4 py-1">
+            <p className="font-semibold text-gray-900">TED Ankara Koleji — Ankara</p>
+            <p className="text-sm text-gray-600 mt-0.5">IB DP sunan köklü Ankara okulu. Güçlü akademik kadro ve üniversite yönlendirme desteği.</p>
+          </div>
+          <div className="border-l-4 border-indigo-200 pl-4 py-1">
+            <p className="font-semibold text-gray-900">Bilkent Laboratory School (BLIS) — Ankara</p>
+            <p className="text-sm text-gray-600 mt-0.5">Bilkent Üniversitesi bünyesindeki bu okul IB programı sunmakta ve üniversiteye geçiş açısından güçlü bir köprü oluşturmaktadır.</p>
+          </div>
+          <div className="border-l-4 border-indigo-200 pl-4 py-1">
+            <p className="font-semibold text-gray-900">Istanbul International Community School (IICS) — İstanbul</p>
+            <p className="text-sm text-gray-600 mt-0.5">Yabancı uyruklu ve Türk öğrencilere açık tam IB okulu. Yoğun uluslararası sınıf ortamı.</p>
+          </div>
+        </div>
+
+        <Callout color="indigo">
+          <strong>Not:</strong> Yukarıdaki liste örnektir; Türkiye&apos;deki tüm IB okullarını kapsamaz. Güncel akredite okul listesi için <strong>ibo.org/find-an-ib-school</strong> adresini ziyaret edin, okulun sunduğu programlar (PYP/MYP/DP) ve burs imkânları için doğrudan kurumla iletişime geçin.
+        </Callout>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">IB Ne Kadara Mal Olur?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Türkiye&apos;deki IB okullarının büyük çoğunluğu özel okuldur ve yıllık ücretler okula göre önemli ölçüde farklılık gösterir.
+        </p>
+        <ul className="space-y-3 mb-4">
+          <Bullet>Türkiye&apos;deki özel IB okulları: Yıllık yaklaşık 20.000–60.000 USD aralığında (okula ve kura göre değişir)</Bullet>
+          <Bullet>Robert Kolej sınav performansına ve ihtiyaca göre kapsamlı burs sağlar; benzer programlar diğer kurumlarda da mevcuttur</Bullet>
+          <Bullet>IBO&apos;ya ödenen sınav ücretleri: Yaklaşık 1.000–1.500 USD ek maliyet</Bullet>
+          <Bullet>Yurt dışı boarding school: Yıllık 40.000–100.000 USD ve üzeri — Türkiye&apos;deki IB okullarına kıyasla genellikle çok daha pahalı</Bullet>
+        </ul>
+        <p className="text-sm text-gray-500">* Ücretler kura ve yıla göre hızlı değişebilir; yukarıdaki rakamlar yönlendiricidir, başvuru öncesi okulla teyit edilmelidir.</p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Çocuğunuz IB için Doğru Kişi mi?</h2>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          IB, herkes için doğru tercih değildir. Bu soruyu dürüstçe yanıtlamak hem çocuğunuzu gereksiz baskıdan korur hem de doğru adımı atmanızı sağlar.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <div className="bg-green-50 rounded-xl p-5">
+            <p className="font-semibold text-green-800 mb-3">IB için güçlü işaretler</p>
+            <ul className="space-y-2">
+              <Check>Öğrenmeye gerçekten meraklı; &ldquo;neden?&rdquo; sorusunu sever</Check>
+              <Check>Birden fazla konuda güçlü; tek bir alana sıkışmak istemez</Check>
+              <Check>Öz disiplinli; ödevleri hatırlatmadan takip eder</Check>
+              <Check>Uzun vadeli proje yönetebilir (EE gibi)</Check>
+              <Check>İngilizce yeterliliği güçlü veya gelişme kapasitesi yüksek</Check>
+              <Check>Toplumsal katılıma ilgi duyar (CAS için)</Check>
+            </ul>
+          </div>
+          <div className="bg-amber-50 rounded-xl p-5">
+            <p className="font-semibold text-amber-800 mb-3">Dikkat edilmesi gereken durumlar</p>
+            <ul className="space-y-2">
+              <Cross>Akademik temel zayıf; matematik veya okuma becerisi yaş düzeyinin belirgin altında</Cross>
+              <Cross>Motivasyon tamamen dışsal; sınav baskısı altında çöküyor</Cross>
+              <Cross>Hedef yalnızca Türk üniversitesi; YKS rotası daha verimli olabilir</Cross>
+              <Cross>İngilizce B2 düzeyinin altında ve yoğun takviye planı yok</Cross>
+            </ul>
+          </div>
+        </div>
+
+        <p className="text-gray-700 leading-relaxed mb-4">
+          IB&apos;nin en zorlu yanlarından biri geniş kapsamıdır: hem fen hem sosyal bilimler hem dil hem de sanat gerektirir. Çocuğunuzun sözel ve sayısal akıl yürütme becerilerinin dengeli olduğunu bilmek bu kararı vermeden önce çok değerlidir. Güçlü bir sözel muhakeme skoru merakı ve dil yeterliliğini, güçlü bir sayısal skor ise matematik ve fen hazırlığını gösterir — IB&apos;de her ikisi de gereklidir.
+        </p>
+
+        <Callout color="emerald">
+          <strong>Pratik öneri:</strong> IB başvuru kararı vermeden önce çocuğunuzun uluslararası kıyaslamalı akademik profilini objektif biçimde görün. Sezgiyle değil, somut bir temelle başvurmanız hem okul seçimini hem de IB&apos;ye hazırlık sürecini çok daha verimli kılar.
+        </Callout>
+      </section>
+    </>
+  ),
+
 }
 
 export function getTurkishBlogContent(slug: string): React.ReactNode {
