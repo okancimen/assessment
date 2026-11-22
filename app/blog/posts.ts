@@ -3680,6 +3680,30 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       href: '/your-childs-potential',
     },
   },
+  {
+    slug: 'child-strengths-weaknesses-age-guide-7-14',
+    title: 'Child\'s Strengths and Weaknesses: Age-by-Age Guide for 7–14 Year Olds',
+    shortTitle: 'Child Strengths & Weaknesses: 7–14 Guide',
+    description: 'How do you identify your child\'s strengths and weaknesses at each age? Which cognitive skills develop when, which "weaknesses" are completely normal, and what can you do as a parent? A developmental guide for ages 7–14.',
+    tldr: 'Every child between 7 and 14 has a unique strengths and weaknesses profile; school grades don\'t reflect it. Verbal reasoning, numerical thinking, visual-spatial skills, and working memory develop at different rates — what looks "weak" at age 8 may mature by 10, and some gaps need real support. This guide covers four developmental windows (7–8, 9–10, 11–12, 13–14), what\'s typical at each stage, how to tell normal from concerning, and four methods to build an objective profile of your child.',
+    date: '2026-11-22',
+    dateModified: '2026-11-22',
+    readTime: '10 min read',
+    tags: ['Child Development', 'Strengths', 'Weaknesses', 'Academic Assessment', 'Parent Guide', 'Cognitive Profile'],
+    faqs: [
+      { q: 'What are the strengths of an 8-year-old child?', a: 'Cognitive strengths vary widely from child to child at age 8. Typical strong areas include: verbal fluency (storytelling, vocabulary), visual-spatial thinking (puzzles, building toys, drawing), recognising number patterns, and learning through understanding rather than rote memorisation. Working memory and written expression are still developing, while verbal reasoning can already be very strong. The best way to make strengths visible is an adaptive assessment that measures multiple skill domains.' },
+      { q: 'What are a child\'s weaknesses and do they matter?', a: 'A "weakness" in children can mean two things: a relatively less strong area in the child\'s natural profile (not a problem — every child has them), or unexpected lag behind age norms (worth investigating). Confusing the two generates unnecessary anxiety or delays real support. Profile-relative weaknesses are a map, not a verdict.' },
+      { q: 'How do I identify my child\'s strengths and weaknesses?', a: 'The most reliable method is adaptive cognitive assessment: a test that adjusts to the child\'s level, measures verbal, numerical, and spatial skills separately, and compares results to age norms. This is complemented by observation (what does the child do with genuine enthusiasm?), teacher feedback, and the child\'s own perspective. School grades alone are insufficient because they measure curriculum compliance, not cognitive capacity.' },
+      { q: 'How do you support an 11–12-year-old child\'s weaknesses?', a: 'At 11–12, working memory load and executive function demands increase sharply. What looks like "weaknesses" — disorganisation, planning difficulty, unfinished homework — is often an overloaded developing executive system, not low intelligence. Support strategies: break tasks into small pieces, visual planning tools, build a bridge from the strong area to the weak one (e.g., use storytelling to teach maths to a verbally strong child). A cognitive profile clarifies which kind of support will help most.' },
+      { q: 'When do a child\'s weaknesses require specialist help?', a: 'Seek a specialist if: reading is clearly behind peers (decoding difficulties after Year 3 / Grade 3), attention and organisation problems affect daily life, anxiety has turned into school refusal, or there\'s obvious lag in fundamental skills (basic arithmetic, simple text comprehension). The line between a weakness and a learning difficulty cannot be established without a comprehensive assessment.' },
+    ],
+    cta: {
+      heading: 'See your child\'s real profile in 1 hour',
+      body: 'Our free adaptive assessment measures verbal, numerical, and reasoning strengths for children aged 7–17 against international comparative norms. No account needed.',
+      label: 'Start free assessment',
+      href: '/academic-assessment',
+    },
+  },
 ]
 
 export function getPostBySlug(slug: string) {

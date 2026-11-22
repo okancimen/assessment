@@ -4958,4 +4958,184 @@ export const US_CONTENT: Record<string, React.ReactNode> = {
       </section>
     </>
   ),
+
+  'child-strengths-weaknesses-age-guide-7-14': (
+    <>
+      <section className="mb-10">
+        <p className="text-gray-700 leading-relaxed mb-4">
+          &ldquo;She struggles with maths — is that normal?&rdquo; &ldquo;He loves reading but numbers just don&apos;t stick.&rdquo; &ldquo;She finishes before everyone else but can&apos;t sit down to write.&rdquo; Every one of these questions is really the same question: where are my child&apos;s real strengths, and where do they need genuine support?
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The difficulty is that the brain between 7 and 14 changes fast. What looks &ldquo;weak&rdquo; at 8 may mature naturally by 10. And the reverse is also true — something that seemed fine in primary school can expose a real gap at secondary transition.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This guide covers four developmental windows between 7 and 14, what strengths and weaknesses are typical at each stage, which are worth acting on, and how to build an objective profile of your child.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">What do strengths and weaknesses really mean?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Many parents equate &ldquo;strength&rdquo; with &ldquo;good grade&rdquo;. But a school grade is an outcome; a strength is the underlying cognitive capacity that produces it. Cognitive strengths fall into four main categories:
+        </p>
+        <ul className="mb-4 space-y-2">
+          <li><strong>Verbal reasoning:</strong> language comprehension, word relationships, text interpretation.</li>
+          <li><strong>Numerical reasoning:</strong> number patterns, mathematical relationships, quantitative thinking.</li>
+          <li><strong>Visual-spatial thinking:</strong> mental rotation, map reading, design.</li>
+          <li><strong>Working memory and executive function:</strong> processing information while holding it, planning, managing attention.</li>
+        </ul>
+        <Callout color="indigo">
+          <strong>Key distinction:</strong> A relative weakness within a profile is not a problem — it&apos;s a map. A marked deviation from age norms is what merits attention.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ages 7–8: Big differences, no panic needed</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The variation between children in Year 2–3 / Grade 2–3 is striking — and completely normal. Reading speed, calculation automaticity, and writing organisation are at their widest spread at this age.
+        </p>
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">Common strengths</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Verbal fluency: storytelling, rich vocabulary, easy conversation.</li>
+          <li>Visual-spatial thinking: puzzles, Lego, drawing, block construction.</li>
+          <li>Pattern recognition: spotting number sequences and repeating structures.</li>
+          <li>Learning through understanding rather than memorisation.</li>
+        </ul>
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">What&apos;s developmentally normal (not a problem)</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Difficulty organising written work (the brain&apos;s writing-language connection is still cementing).</li>
+          <li>Short attention spans (20–30 minutes of sustained focus is at the upper end for this age).</li>
+          <li>Slow maths fact recall (normal until end of Year 3 / Grade 3).</li>
+          <li>Struggles with abstract concepts — &ldquo;bigger number&rdquo; makes sense; &ldquo;variable&rdquo; does not yet.</li>
+        </ul>
+        <Callout color="amber">
+          <strong>When to pay attention:</strong> If reading is still at syllable-by-syllable decoding after Year 3, that&apos;s worth investigating. Early-identified dyslexia and reading difficulties respond far better to intervention.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ages 9–10: Comprehension overtakes decoding</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          A shift happens here: the task is no longer &ldquo;learning to read&rdquo; but &ldquo;reading to learn&rdquo;. Abstract thinking begins to spark, and individual differences become more visible — particularly in maths.
+        </p>
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">Common strengths</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Logical reasoning: systematic answers to &ldquo;why&rdquo; questions.</li>
+          <li>Verbal argumentation: building cases, counter-arguments, persuasion.</li>
+          <li>Spatial puzzles: chess, Rubik&apos;s cube, geometry games.</li>
+          <li>Memory capacity: retaining story details, dates, facts over time.</li>
+        </ul>
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">What&apos;s worth watching</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Poor comprehension despite fluent reading — this is not developmental, it&apos;s a real difficulty.</li>
+          <li>Persistent failure on maths word problems despite fine calculation skills.</li>
+          <li>Writing in Year 5 / Grade 5 that still has no beginning-middle-end structure.</li>
+        </ul>
+        <Callout color="emerald">
+          <strong>The biggest opportunity at this age:</strong> Strong verbal reasoning predicts performance in English, history, and humanities. Strong numerical reasoning is the early signal for maths and science success. Both high together: the case for enrichment now is strong.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ages 11–12: Working memory steps up</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          This is the period that most surprises parents. &ldquo;No problems in primary school, then suddenly it&apos;s all hard.&rdquo; The reason is not cognitive regression; it&apos;s an increase in demands: more subjects, more complex organisation, higher-level abstraction.
+        </p>
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">Common strengths</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Abstract pattern recognition: algebra, geometry, logic problems.</li>
+          <li>Deep verbal reasoning: literary analysis, debate, structured argument.</li>
+          <li>Systematic thinking: organising complex topics hierarchically.</li>
+          <li>Creative problem-solving: approaching problems from unexpected angles.</li>
+        </ul>
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">What looks like weakness but is often executive overload</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Disorganisation and lost belongings.</li>
+          <li>Difficulty planning long assignments.</li>
+          <li>Managing multiple deadlines at once.</li>
+          <li>&ldquo;Carelessness&rdquo; and &ldquo;forgetfulness&rdquo; — usually working memory strain, not laziness.</li>
+        </ul>
+        <Callout color="amber">
+          <strong>11-plus awareness:</strong> From Year 6 onwards, knowing which subjects are genuinely strong makes preparation proactive rather than reactive. A cognitive profile here is worth its weight in tutoring hours.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Ages 13–14: The profile is now readable</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          At Year 9 / Grade 8 and the start of secondary/high school, the cognitive profile stabilises and becomes reliably measurable. This is the age of subject choice decisions — the most critical point for families.
+        </p>
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">Common strengths</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Abstract reasoning: algebraic generalisation, scientific hypothesis formation.</li>
+          <li>Analytical reading: identifying implicit meaning and assumptions in text.</li>
+          <li>Numerical reasoning: data interpretation, statistical thinking.</li>
+          <li>Metacognition (knowing what you know): the most valuable skill emerging at this age.</li>
+        </ul>
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">What&apos;s worth watching</h3>
+        <ul className="mb-4 space-y-1">
+          <li>Paralysing exam anxiety — especially under GCSE / standardised test pressure.</li>
+          <li>Reading speed dropping under timed conditions.</li>
+          <li>Difficulty integrating multiple concepts to reach a new conclusion.</li>
+          <li>Not knowing how to study (strategy gap, not knowledge gap).</li>
+        </ul>
+        <Callout color="indigo">
+          <strong>Before choosing GCSEs / subject streams:</strong> Seeing your child&apos;s verbal and numerical profile objectively is worth far more than &ldquo;she likes science&rdquo; or &ldquo;he&apos;s good at English&rdquo;. Impressions and passion are real, but a measured profile makes the decision solid.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">4 ways to identify strengths and weaknesses</h2>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">1. Adaptive cognitive assessment</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          The most reliable method. A test that adjusts to your child&apos;s level, measures verbal, numerical, and spatial skills separately, and compares results to age norms gives an objective map of the profile. Unlike school grades, it&apos;s curriculum-independent — it measures cognitive capacity, not learned content.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">2. Observation: when is your child most energised?</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Without being pushed, what do they do spontaneously? Activities where they lose track of time, make harder on their own, and return to voluntarily point toward strengths. Note these systematically: which subjects, which games, which questions they ask.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">3. Your child&apos;s own view</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Instead of &ldquo;which subject do you like best?&rdquo;, ask &ldquo;which subject do you feel you understand what&apos;s expected of you?&rdquo; Especially from age 11, children can describe their learning profile surprisingly well. Metacognition is developing — asking the question strengthens it.
+        </p>
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">4. Teacher feedback (with specific questions)</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Instead of &ldquo;how is she doing?&rdquo;, ask &ldquo;have you noticed a particular strength or difficulty in verbal expression or written organisation?&rdquo; Specific questions get specific answers — and teachers know the range and norms of the class.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">When do weaknesses need specialist input?</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Most &ldquo;weaknesses&rdquo; are developmental or profile-relative — they don&apos;t require specialist intervention. The ones that do:
+        </p>
+        <ul className="mb-4 space-y-2">
+          <li><strong>Significant reading lag:</strong> decoding difficulties after Year 3, comprehension clearly below peers despite fluent reading, persistent avoidance of reading tasks.</li>
+          <li><strong>Executive function that affects daily life:</strong> not just &ldquo;messy desk&rdquo; but persistent failure at ordinary organisation tasks — lost belongings every day, never completing homework regardless of effort, severe sleep disruption.</li>
+          <li><strong>Anxiety that has become school refusal:</strong> mild test anxiety is normal; refusing to attend is not.</li>
+        </ul>
+        <Callout color="rose">
+          <strong>Important:</strong> The boundary between a weakness and a learning difficulty cannot be established without a comprehensive assessment. &ldquo;Just lazy&rdquo; or &ldquo;just distracted&rdquo; frequently mask real neurodevelopmental profiles. When in doubt, early assessment beats waiting.
+        </Callout>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">5 practical steps for parents</h2>
+        <ul className="mb-4 space-y-3">
+          <li><strong>1. Establish a baseline.</strong> Document the current profile through assessment or systematic observation. &ldquo;How is it going?&rdquo; is not the same as &ldquo;where do we stand?&rdquo;</li>
+          <li><strong>2. Start from strength.</strong> Before strengthening what&apos;s weak, name and celebrate what&apos;s strong. Identity and confidence grow from this ground.</li>
+          <li><strong>3. Don&apos;t address weakness with more of the same.</strong> More worksheets rarely work. A different presentation mode (visual, kinaesthetic, story-based) or a bridge from the strong area is usually more effective.</li>
+          <li><strong>4. Avoid sibling and peer comparison.</strong> The only valid reference is your child yesterday, not someone else.</li>
+          <li><strong>5. Reassess every six months.</strong> Profiles change. What was true at 7 may not apply at 10. Regular tracking makes progress visible and surfaces early flags before they become entrenched.</li>
+        </ul>
+        <Callout color="emerald">
+          <strong>Bottom line:</strong> Your child&apos;s profile is not a verdict — it&apos;s a map. Knowing where they stand now is the most powerful tool you have for school choices, support decisions, and expectations about the future.
+        </Callout>
+      </section>
+    </>
+  ),
 }
