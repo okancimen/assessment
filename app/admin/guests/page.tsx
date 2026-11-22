@@ -3,8 +3,10 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { isAdminEmail } from '@/lib/admin'
 import { redirect } from 'next/navigation'
 import GuestAssessmentsTable from '@/components/admin/GuestAssessmentsTable'
+import { AdminGuestDailyChart, AdminGuestFunnelChart } from '@/components/admin/AdminCharts'
 import { SUBJECTS, QUESTIONS_PER_SUBJECT } from '@/types'
 import { getQuestions, Tier } from '@/lib/personality-questions'
+import type { DailyPoint } from '@/components/admin/GrowthLineChart'
 
 export const dynamic = 'force-dynamic'
 
@@ -49,7 +51,7 @@ export default async function AdminGuestsPage() {
 
   const db = createAdminClient()
 
-  const [guestAssessmentsResult, guestPersonalityResult] = await Promise.all([
+  const [guestAssessmentsResult, guestPersonalityResult, guestAcademicAll, guestPersonalityAll] = await Promise.all([
     db.from('assessments')
       .select('id, guest_name, guest_age, guest_country, guest_city, guest_email, reminder_sent_at, assessment_type, status, created_at')
       .not('guest_token', 'is', null)
@@ -62,6 +64,16 @@ export default async function AdminGuestsPage() {
       .is('child_id', null)
       .order('created_at', { ascending: false })
       .limit(500),
+    // All-time academic guests (including claimed) for funnel + daily chart
+    db.from('assessments')
+      .select('status, child_id, guest_email, created_at')
+      .not('guest_name', 'is', null)
+      .order('created_at', { ascending: true }),
+    // All-time personality guests (including claimed)
+    db.from('personality_assessments')
+      .select('status, child_id, created_at')
+      .not('guest_name', 'is', null)
+      .order('created_at', { ascending: true }),
   ])
 
   const academicRows = guestAssessmentsResult.data ?? []
@@ -119,6 +131,54 @@ export default async function AdminGuestsPage() {
     (a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime(),
   )
 
+  // ── All-time guest funnel ─────────────────────────────────────────────────
+  type GuestAllRow = { status: string; child_id: string | null; guest_email?: string | null; created_at: string }
+  const allGuestRows: GuestAllRow[] = [
+    ...((guestAcademicAll.data ?? []) as GuestAllRow[]),
+    ...((guestPersonalityAll.data ?? []) as GuestAllRow[]),
+  ]
+  const guestTotalStarted       = allGuestRows.length
+  const guestTotalCompleted     = allGuestRows.filter((r) => r.status === 'completed').length
+  const guestTotalEmailCaptured = (guestAcademicAll.data ?? []).filter((r) => (r as GuestAllRow).guest_email != null).length
+  const guestTotalClaimed       = allGuestRows.filter((r) => r.child_id != null).length
+
+  const guestFunnelSteps = [
+    { label: 'Started',              count: guestTotalStarted,       color: '#4F46E5' },
+    { label: 'Completed',            count: guestTotalCompleted,     color: '#7C3AED' },
+    { label: 'Email captured',       count: guestTotalEmailCaptured, color: '#0D9488' },
+    { label: 'Claimed (→ account)',  count: guestTotalClaimed,       color: '#22C55E' },
+  ]
+
+  // ── Daily guest chart (last 30 days) ─────────────────────────────────────
+  const now     = new Date()
+  const cutoff  = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000)
+  const startedByDay:   Record<string, number> = {}
+  const completedByDay: Record<string, number> = {}
+  for (const row of allGuestRows) {
+    const day = row.created_at.slice(0, 10)
+    if (new Date(day + 'T00:00:00Z') >= cutoff) {
+      startedByDay[day]   = (startedByDay[day]   ?? 0) + 1
+      if (row.status === 'completed')
+        completedByDay[day] = (completedByDay[day] ?? 0) + 1
+    }
+  }
+  const guestDailyData: DailyPoint[] = []
+  const cursor = new Date(cutoff)
+  cursor.setUTCHours(0, 0, 0, 0)
+  const end = new Date()
+  end.setUTCHours(0, 0, 0, 0)
+  while (cursor <= end) {
+    const dateStr = cursor.toISOString().slice(0, 10)
+    guestDailyData.push({
+      date: dateStr,
+      label: new Date(dateStr).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' }),
+      users: 0,
+      started:   startedByDay[dateStr]   ?? 0,
+      completed: completedByDay[dateStr] ?? 0,
+    })
+    cursor.setUTCDate(cursor.getUTCDate() + 1)
+  }
+
   return (
     <main className="px-8 py-10 space-y-6">
       <div>
@@ -126,6 +186,20 @@ export default async function AdminGuestsPage() {
         <p className="text-sm mt-0.5" style={{ color: '#64748B' }}>
           Assessments started without an account — all time
         </p>
+      </div>
+
+      {/* Daily guests chart + conversion funnel */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div className="lg:col-span-2 bg-white rounded-xl border p-6" style={{ borderColor: '#E2E6EF' }}>
+          <h2 className="text-sm font-semibold mb-1" style={{ color: '#0F172A' }}>Daily guests</h2>
+          <p className="text-xs mb-5" style={{ color: '#64748B' }}>Started vs completed · last 30 days</p>
+          <AdminGuestDailyChart data={guestDailyData} />
+        </div>
+        <div className="bg-white rounded-xl border p-6" style={{ borderColor: '#E2E6EF' }}>
+          <h2 className="text-sm font-semibold mb-1" style={{ color: '#0F172A' }}>Conversion funnel</h2>
+          <p className="text-xs mb-5" style={{ color: '#64748B' }}>Guest assessments · all time</p>
+          <AdminGuestFunnelChart steps={guestFunnelSteps} />
+        </div>
       </div>
 
       <div className="bg-white rounded-xl border overflow-hidden" style={{ borderColor: '#E2E6EF' }}>

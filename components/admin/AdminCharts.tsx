@@ -20,3 +20,11 @@ export function AdminAssessmentsChart({ data }: { data: DailyPoint[] }) {
 export function AdminFunnelChart({ steps }: { steps: FunnelStep[] }) {
   return <FunnelChart steps={steps} />
 }
+
+export function AdminGuestDailyChart({ data }: { data: DailyPoint[] }) {
+  return <AssessmentsBarChart data={data} />
+}
+
+export function AdminGuestFunnelChart({ steps }: { steps: FunnelStep[] }) {
+  return <FunnelChart steps={steps} />
+}
